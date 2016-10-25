@@ -1,13 +1,19 @@
-'DOSmag : a DOS-like portable front-end for textual content
+'DOSmag : a DOS-like portable front-end for hyperlinked textual content.
+'         copyright (C) Kroc Camen, 2016; MIT license (see LICENSE.TXT)
 '=============================================================================
+'WARNING: THIS IS A QB64.NET SOURCE FILE, ENCODED AS ANSI CODE-PAGE 437
+'         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
+'         DO NOT OPEN AND SAVE THIS FILE AS UNICODE / UTF-8!
+'=============================================================================
+
 'TODO: error check eveywhere before we attempt something so that we're water-
 '      tight and can turn off the compiled-in error checking (slow)
 ' $CHECKING:OFF
 
 ''ON ERROR GOTO error_handler
 
-'$INCLUDE: 'unicode.bas'
 '$INCLUDE: 'consts.bas'
+'$INCLUDE: 'unicode.bas'
 
 
 'our text-formatting control codes
@@ -130,7 +136,7 @@ COLOR PAGE_FGND, PAGE_BKGD: CLS
 
 'display the front-page
 clearScreen
-loadPage "PortaDOOM #01"
+loadPage "Home"
 refreshScreen
 
 'input processing: (main loop)

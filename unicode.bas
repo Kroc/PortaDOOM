@@ -1,3 +1,10 @@
+'DOSmag : a DOS-like portable front-end for hyperlinked textual content.
+'         copyright (C) Kroc Camen, 2016; MIT license (see LICENSE.TXT)
+'=============================================================================
+'WARNING: THIS IS A QB64.NET SOURCE FILE, ENCODED AS ANSI CODE-PAGE 437
+'         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
+'         DO NOT OPEN AND SAVE THIS FILE AS UNICODE / UTF-8!
+'=============================================================================
 
 'read data from the DATA statements below
 '(these must be placed before any SUBs/FUNCTIONs)
@@ -10,7 +17,7 @@ NEXT
 
 cp437:
 'https://en.wikipedia.org/wiki/Code_page_437
-DATA "00C7": '128 - €
+DATA "00C7": '128
 DATA "00FC": '129
 DATA "00E9": '130
 DATA "00E2": '131
@@ -30,7 +37,7 @@ DATA "00C9": '144
 DATA "00E6": '145
 DATA "00C6": '146
 DATA "00F4": '147
-DATA "00F6": '148'
+DATA "00F6": '148
 DATA "00F2": '149
 DATA "00FB": '150
 DATA "00F9": '151 ÿ
