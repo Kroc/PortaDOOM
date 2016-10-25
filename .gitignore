@@ -1,0 +1,15 @@
+# ignore everything, and only include the files we want
+*
+!.gitignore
+!.gitattributes
+
+!*.txt
+!*.md
+
+# QB64 source code files
+!*.bas
+
+# include the files folder where the developer can place related content
+!files
+# the DOSmag pages
+!pages
