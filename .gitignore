@@ -9,6 +9,10 @@
 # QB64 source code files
 !*.bas
 
+# include the DOSmag executable so developers wishing to
+# build their own disk-zines do not have to compile their own
+!DOSmag.exe
+
 # include the files folder where the developer can place related content
 !files
 # the DOSmag pages
