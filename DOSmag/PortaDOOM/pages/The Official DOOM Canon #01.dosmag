@@ -1,0 +1,25 @@
+$KEY:U=GOTO:The Ultimate DOOM
+$KEY:2=GOTO:DOOM II
+$KEY:F=GOTO:Final DOOM #01
+
+^*When DOOM arrived in 1993 the term "first person shooter" didn't exist. All other shooters were simply called "DOOM clones" until the genre worked out how to be "not DOOM" anymore. Sequels and updates to the original followed laying down the following "cannon" of offical iD releases, and where you should begin your Doom journey...
+
+^:^[U] The Ultimate DOOM
+    The original (1993) was expanded with a 4th episode in 1995, becoming "The Ultimate DOOM".
+
+^:^[2] DOOM II
+    The sequel followed in 1994 providing a bigger, badder game with new enemies and weapons.
+
+^:^[F] Final DOOM
+    Two new 32-level episodes by community members and released commercially by iD in 1996. These are well known for their increased difficulty.
+
+^:^[?] No Rest for the Living
+    A new 9-level DOOM II episode created for the XBLA release of DOOM II and included as part of DOOM 3: BFG Edition and the PS3 release of DOOM Classic Complete.
+
+^:^[?] The Master Levels
+    A series of 21 separate extra-difficult levels by the community and released by iD.
+
+^-
+
+^:^[?] DOOM Classic Complete
+    TODO

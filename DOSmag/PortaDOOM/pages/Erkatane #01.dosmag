@@ -1,0 +1,19 @@
+$KEY:1=SHELL:doom.bat choco-doom DOOM2 Cacowards\2015\erkatane\erkatane.wad -- Cacowards\2015\erkatane\erkatane.deh
+$KEY:2=SHELL:doom.bat zdoom DOOM2 Cacowards\2015\erkatane\erkatane.wad -- Cacowards\2015\erkatane\erkatane.deh
+
+^:Erkatt„¤¤e                                         ^** 2015 Cacoward winner! *^*
+^=
+^*Released :^* 2015>08>23   ^*Author :^* ^/Nicolas Monti^/
+^*Levels   :^* 11            ^*Modes :^* Single, Co-op, Deathmatch
+^*Requires :^* vanilla+   ^*Includes :^* +Music +Patches
+^-
+
+The main goal was to create a vanilla classic episode themed on Doom2 techbases. I was as well influenced by d2twid and 1994-1996 maps regarding to the very raw detailing employed. The maps are small to mid in size and the average enemy count is around 100 per map. There is virtually no texture alignment except for some doors and switches, taking advantage of the sector height sometimes for that work, and I made no use of support2/3 to separate different textures, using just angles as in some iwad maps. On the other hand I wanted very consistent themes so I used just 40 different textures per map as a constraint, including those for doors and keymarks as I realised some iwad maps use very few textures too.
+
+^-
+
+^:^[1] Play with ChocolateDOOM
+    66 MHz is enough for me.
+
+^:^[2] Play with ZDOOM
+    I do not know of a world without Windows.

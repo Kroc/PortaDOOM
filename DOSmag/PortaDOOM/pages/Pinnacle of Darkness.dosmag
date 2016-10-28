@@ -1,0 +1,28 @@
+$KEY:1=SHELL:doom.bat gzdoom DOOM2 Cacowards\2015\pinnacle\pinnacle.pk3
+
+^:Pinnacle of Darkness                               ^** 2015 Cacoward winner! *^*
+^=
+^*Released :^* 2015>06>17   ^*Author :^* ^/Hobomaster22^/
+^*Levels   :^* 1             ^*Modes :^* Single, Co-op
+^*Requires :^* gzdoom     ^*Includes :^* +Sounds +Music +Graphics
+^-
+
+Large hell/gothic themed map for GZDoom. Works best with the latest dev builds of GZDoom as of release - June 2015.
+
+^-
+
+^:^[1] Play (gzdoom)
+    Required for this WAD.
+    
+    
+^:Construction:
+^-
+^*Base                    :^* New from scratch 
+^*Build Time              :^* On and off for 7 years
+^*Editor(s) used          :^* Deepsea v12.15.3
+^*Known Bugs              :^* None 
+^*May Not Run With...     :^* Designed for GZDoom only 
+
+^:Credits:
+^-
+Tango for playtesting. Primeval for the awesome music.
