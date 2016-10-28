@@ -1,30 +1,24 @@
-# PortaDOOM #
+# DOSmag #
 
-A self-contained, portable [DOOM](https://en.wikipedia.org/wiki/Doom_(1993_video_game)) launcher and [WAD](https://en.wikipedia.org/wiki/Doom_WAD) collection presented as an early '90s [diskzine](https://en.wikipedia.org/wiki/Disk_magazine).
+A '90s style [disk-zine](https://en.wikipedia.org/wiki/Disk_magazine) interface for viewing portable hyper-linked documents and content. Written in [QB64](http://www.qb64.net/); a modern remake of Microsoft's classic [QuickBASIC](https://en.wikipedia.org/wiki/QuickBASIC) IDE.
 
-It's intended as a single download that people can unzip and play on any computer, targeted at people who have either never played DOOM or anything beyond the official iD canon and the thought of downloading, configuring and launching several different engines with all kinds of weird WAD files is putting them off trying stuff out.
+## Using DOSmag to create your own disk-zine: ##
 
-**WARNING: The GitHub repository does not contain the game content (besides [FreeDOOM](https://en.wikipedia.org/wiki/Freedoom)); the repository is the source base for building a redistributable package. These might be made available elsewhere at a later date.**
+You do not need to do any programming to use DOSmag to create your own "disk-zine". These are the steps you should follow:
 
-PortaDOOM is about having a single executable where you press a few keys and hey-presto! you're playing DOOM WADs in the correct engine with the correct settings.
+- Download DOSmag and extract to a folder
+- Delete the "`.bas`" files; you do not need to distribute the source code for DOSmag to work on other computers
+- Rename "`DOSmag.exe`" to whatever you want to name your disk-zine, e.g. "`Resolution-64.exe`"
+- Begin [writing pages](#how-to-write-pages) to populate the content of your disk-zine
+- When you are happy with your disk-zine, just zip-up the folder contents and distribute however you please! DOSmag is self-contained, requires no installation on other computers and will run from portable devices like USB drives
 
-The viewer is written in [QB64](http://www.qb64.net/); a modern remake of Microsoft's classic [QuickBASIC](https://en.wikipedia.org/wiki/QuickBASIC) for that DOS look and feel, but you do not need to be able to code to contribute: all the diskzine pages are just text-files that anybody can create and edit.
+## How to Write Pages: ##
 
-You can contribute the following ways:
-*   Write pages yourself using the handy guide below
-*   File GitHub Issues for suggestions and fixes
-*   E-mail me: <kroc+doom@camendesign.com>
+The pages displayed by the DOSmag viewer reside in the "`pages`" folder. Each page is simply a txt file, but with the extension "`.dosmag`". This is so that you can set custom encoding / font options for this file-type in your text editor.
 
-_NOTE: please do not send me direct links to WAD/pk3 files; point me to the project page / forum thread etc. so that I can keep track of where things comes from, who they belong to, and keep an eye on updates._
+> _Pro Tip:_ Make sure files are always saved in ANSI encoding, not UTF-8! DOSmag displays text using [code page 437](https://en.wikipedia.org/wiki/Code_page_437), sometimes called "DOS" or "OEM-US" encoding. Open [CharMap](https://en.wikipedia.org/wiki/Character_Map_(Windows)) and set the font to Terminal to access the extra symbols. 
 
-## How to Write Pages ##
-
-The pages displayed by the PortaDOOM viewer (internally "DOSmag") reside in the `pages` folder.
-Each page is simply a txt file, but with the extension ".dosmag". This is so that you can set custom encoding/font options for this file-type in your text editor.
-
-> _Pro Tip:_ Make sure files are always saved in ANSI encoding, not UTF-8! DOSmag displays text using [code page 437](https://en.wikipedia.org/wiki/Code_page_437). Open [CharMap](https://en.wikipedia.org/wiki/Character_Map_(Windows)) and set the font to Terminal to access the extra symbols. 
-
-Pages can be grouped into sets. Such sets share the same file name, but are prefixed by the page number e.g. "`#04`". The number *must* be two digits long to be recognised. This ensures that the files appear ordered correctly on your drive.
+Pages can be grouped into sets. Such sets share the same file name, but are suffixed by the page number e.g. "`#04`". The number *must* be two digits long to be recognised. This ensures that the files appear ordered correctly on your drive.
 
 Long lines will be word-wrapped for you, so it is best to just write each paragraph as a single continuous line and set your text-editor to word-wrap.
 
@@ -77,7 +71,7 @@ These draw lines across the screen. These can only appear at the beginning of a 
 ^==========
 ```
 
-> Pro Tip: You can press F5 in PortaDOOM to reload the current page!
+> Pro Tip: You can press F5 in DOSmag to reload the current page!
 
 ```
 ^( ... )
@@ -103,101 +97,16 @@ $KEY:D=GOTO:Name of a Page #01
 
 The `$KEY:` text indicates a key binding. There must be no whitespace before it and these should appear on the first lines of your page. The next letter is the key to bind, 'A' - 'Z', '0' - '9'; must be capital.
 
-After the equals sign, the word "GOTO:" indicates the action to take, i.e. navigate to a page. Give the name of the page set to load, and the page number, if the page set has more than one.
+After the equals sign, the word "GOTO:" indicates the action to take, i.e. navigate to a page. Give the name of the page set to load, and optionally, the page number if the page set has more than one.
 
-To make a key launch a DOOM game, we use the `SHELL:` action.
-
-```
-$KEY:D=SHELL:doom.bat gzdoom DOOM2
-```
-
-`SHELL:` executes a DOS command. The 'current directory' is set to the `files` folder.
-Within that is "doom.bat", a command-line DOOM launcher. The instructions for that are as follows:
+The `SHELL:` action allows you to execute batch commands or open files stored in the "`files`" folder.
 
 ```
- "doom.bat" is a command-line launcher for DOOM-based games.
- It makes it easier to create shortcuts to run a particular
- source-port with a particular WAD and particular mods etc.
-
-Usage:
-
-    doom.bat [<engine>] [<IWAD> [<PWAD>] [<options>] [ -- <files>...]]
-
-Example:
-
-    doom.bat gzdoom DOOM2 -- brutalv20b.pk3
-
-Engines:
-
-    gzdoom              : Stable version of GZDoom
-    zdoom               : ZDoom
-    zandronum           : Zandronum current (2.x)
-    zandronum-dev       : Zandronum in development (3.0)
-    prboom              : PRBoom+ (software renderer)
-    glboom              : PRBoom+ (OpenGL renderer)
-    choco-doom          : ChocolateDOOM (very vanilla, 320x200)
-    choco-doom-setup    : Displays ChocolateDOOM's configuration program first
-    choco-heretic       : As with choco-doom, but for Heretic WADs
-    choco-heretic-setup : As above, but displays configuration first
-    choco-hexen         : As with choco-doom, but for Hexen WADs
-    choco-hexen-setup   : As above, but displays configuration first
-    choco-strife        : As with choco-doom, but for Strife WADs
-    choco-strife-setup  : As above, but displays configuration first
-
-IWAD:
-
-    The IWAD (internal WAD) is the base WAD to use. This will be one of the
-    original game's WAD files which maps, mods and total conversions extend.
-    If uncertain, use "DOOM2", it's the most common one used for community
-    content. The ".WAD" / ".PK3" extension can be ommitted.
-
-    IWADs are located in the "iwads" folder.
-
-PWAD:
-
-    The PWAD (patch-WAD) is the community map / megawad you want to play.
-    These are assumed to be in the "pwads" folder, not "iwads".
-    E.g.
-
-           doom.bat gzdoom DOOM2 wolfendoom.pk3
-
-    If you just want to play an original game (e.g. DOOM, Hexen)
-    then the PWAD is not required.
-
-Options:
-
-    You can include any command line parameters here and they will be
-    passed on to the engine. Example:
-
-           doom.bat choco-doom DOOM2 -warp 21
-
-    Note that what parameters are supported will vary between engines.
-
-Files:
-
-    A list of additional files to include (from the "pwads" directory).
-    Unlike when creating Windows shortcuts, the "pwads" folder is assumed,
-    so that you don't need to include the base path on each file added.
-
-    NOTE: The "--" is required to separate the options from the list of files.
-
-    DeHackEd extensions (".deh" / ".bex") can be included in the files list,
-    and will be loaded using the correct "-deh" or "-bex" engine parameter.
-
-    Config files (".cfg" / ".ini") will likewise be loaded using the
-    correct engine parameter ("-config").
-
-Savegames:
-
-    Savegames are not saved alongside the engine as is default, but rather
-    in a "saves" folder. To prevent incompatibilites and potential data-loss
-    between engines, savegames are first separated by engine ("gzdoom" /
-    "zandronum" etc.) and then by the PWAD name (or IWAD name if no PWAD
-    is specified). I.e. for the command:
-
-           doom.bat zdoom DOOM2 breach.wad
-
-    the savegames will be located in "saves\zdoom\breach\".
+$KEY:W=SHELL:Watch This.ppt
 ```
 
-Have fun and DOOM on!
+In the case of batch commands, note that the 'current directory' will be set to the "`files`" folder.
+
+```
+$KEY:B=SHELL:some_batch_file.bat
+```
