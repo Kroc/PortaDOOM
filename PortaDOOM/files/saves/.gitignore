@@ -1,0 +1,3 @@
+# distrubute the folder, but nothing within it
+*
+!.gitignore

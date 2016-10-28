@@ -1,0 +1,21 @@
+$KEY:1=SHELL:doom.bat gzdoom DOOM2 Cacowards\2015\swideath\swideath.wad
+$KEY:2=SHELL:doom.bat glboom DOOM2 Cacowards\2015\swideath\swideath.wad
+
+^:Swift Death                                        ^** 2015 Cacoward winner! *^*
+^=
+^*Released :^* 2015>11>11   ^*Author :^* ^/franckFRAG^/ ^(guest mappers : ^/JCD^/ & ^/Memfis^/)
+^*Levels   :^* 32            ^*Modes :^* Single, Co-op, Deathmatch
+^*Requires :^* boom+      ^*Includes :^* +Sounds +Music +Graphics +Patches +Demos
+^-
+
+Swift Death is an extremely hard megawad, calibrated for speedrunners. I recommanded for novice players to play in "easy" ^("Toilet Break", or "Soft Event"). SD is realized in speedmapping sessions, for the most parts of maps. These maps are generally small, and contain on average 75 monsters. They are also compatible for the duel / deathmatch.
+
+^*Story:^* You are the puppet of Itanimulli. A powerful Evil God, which take pleasure to torture you. He sends you in different worlds since the eternity.  But you keep at the bottom of you a hope, to leave this hell. Because you know that in every death, you are so close to the exit.
+
+^-
+
+^:^[1] Play (gzdoom)
+    For higher-end PCs with dedicated GPUs.
+
+^:^[2] Play (prboom+)
+    For integrated graphics and weaker computers.

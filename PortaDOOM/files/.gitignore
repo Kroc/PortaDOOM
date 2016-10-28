@@ -1,0 +1,10 @@
+# ignore everything, and only include the files we want
+*
+!.gitignore
+
+!iwads/
+!ports/
+!pwads/
+!saves/
+
+!*.bat

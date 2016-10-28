@@ -1,0 +1,40 @@
+$REM=Set skill level?
+$KEY:1=SHELL:doom.bat gzdoom DOOM Cacowards\2015\shpo1\shpo1.wad -warp 2 1
+$KEY:2=SHELL:doom.bat glboom DOOM Cacowards\2015\shpo1\shpo1.wad -warp 2 1
+$KEY:3=SHELL:doom.bat choco-doom DOOM Cacowards\2015\shpo1\shpo1.wad -warp 2 1
+
+^:Sheer Poison                                       ^** 2015 Cacoward winner! *^*
+^=
+^*Released :^* 2015>05>11   ^*Author :^* ^/Zan-zan-zawa-veia^/
+^*Levels   :^* 1             ^*Modes :^* Single
+^*Requires :^* vanilla    ^*Includes :^* +Music +Graphics
+^-
+
+A big nonsensical challenge map; gets metaphysical in places.
+
+^*The Story:^* You're back from your victory over the gatekeeper of Hell, but upon arriving home are informed that no-one is aware of your successes or is at all willing to believe they happened. They put you in quarantine for three weeks and the stress snaps your mind, yanking you back into an imaginary hell where you don't even get to use the super shotgun. Oh no, you say. OH NO.
+
+^-
+
+^:^[1] Play (gzdoom)
+    For higher-end PCs with dedicated GPUs.
+
+^:^[2] Play (prboom+)
+    For integrated graphics and weaker computers.
+
+^:^[3] Play (chocolate-doom)
+    For the authentic 1993 feel.
+
+    
+^:Credits:
+^-
+Tarnsman's streams where he points out what is wrong about a level - I broke every rule that I could remember!
+                          
+^:Construction
+^-
+^*Base                    :^* From scratch
+^*Build Time              :^* a month
+^*Editor(s) used          :^* WinDEU 5.24; XWE; Paint.NET; Cubasis
+^*Known Bugs              :^* none
+^*May Not Run With        :^* -
+^*Tested With             :^* Ultimate Doom in DOSBox; PrBoom-Plus 2.5.1.3
