@@ -1,0 +1,26 @@
+$KEY:D=GOTO:The Official DOOM Canon #01
+$KEY:C=GOTO:The Cacowards
+$KEY:V=GOTO:Vanilla Sundae Experience
+
+^:^[D] The Official DOOM Canon ...
+    iD released several classic DOOM games, find them here.
+
+^-
+
+^:^[C] The Cacowards
+    The annual competition for DOOM creations. Quality and variety, gauranteed.
+
+^:^[?] Total Conversions ...
+
+^:^[?] MegaWADs ...
+
+^:^[?] Joke WADs ...
+
+^:^[?] FreeDOOM ...
+    A free & open Total Conversion of DOOM I/II. Intended as a legal replacement for the proliferation of mod dependence on the commercial DOOM WADs, FreeDOOM has 100% new and original textures, audio and levels.
+
+^:^[V] The Vanilla Sundae Experience
+    For the die-hard doomer -- a series of vanilla-compatible WADs played the way they were meant to be.
+
+
+What else should go here?

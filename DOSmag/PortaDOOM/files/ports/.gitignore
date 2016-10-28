@@ -1,0 +1,31 @@
+# include all the engines
+!*
+
+# (except the developer release of gzdoom I keep, nothing requires it yet)
+gzdoom-dev/
+
+# exclude any screenshots
+**screenshot*
+
+# exclude any errant save files
+**.zds
+**.dsg
+
+# exclude the copy of Breach that might be included with DoomRETRO
+**/breach/
+
+# exclude Zandronum's skins folder
+**/skins/
+
+# exclude user configs
+**/chocolate-*.cfg
+**/glboom-plus.cfg
+**/gzdoom-*.ini
+**/prboom-plus.cfg
+**/zdoom-*.ini
+**/zandronum-*.ini
+
+# other
+**/tranmap.dat
+**/stdout.txt
+**/stderr.txt

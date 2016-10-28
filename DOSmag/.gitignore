@@ -1,0 +1,18 @@
+# ignore everything, and only include the files we want
+*
+!.gitignore
+!.gitattributes
+
+# the actual PortaDOOM root; this is the part that will be redistributed,
+# the root here is for build scripts / tools and project metadata / management files
+!PortaDOOM
+
+# the working-copy of DOSmag that PortaDOOM will be built from:
+# annoyingly QB64 compiles to the same directory as the QB64 binary, or the source code you're
+# compiling so we'll need a script to copy the executable into PortaDOOM's folder
+# NOTE: this folder is a git-subtree
+!DOSmag
+
+# README, LICENSE and other such project metadata 
+!*.md
+!*.TXT
