@@ -1,0 +1,2 @@
+2016>10>25 : v1
+- First version as standalone "DOSmag" (rather than PortaDOOM, where it was incubated)
