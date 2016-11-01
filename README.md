@@ -7,7 +7,7 @@ A '90s style [disk-zine](https://en.wikipedia.org/wiki/Disk_magazine) interface 
 You do not need to do any programming to use DOSmag to create your own "disk-zine". These are the steps you should follow:
 
 - Download DOSmag and extract to a folder
-- Delete the "`.bas`" files; you do not need to distribute the source code for DOSmag to work on other computers
+- Delete the unused files: the only files you need to keep are "`DOSmag.exe`" and the two folders "`files`" & "`pages`"; you do not need to distribute the source code for DOSmag to work on other computers
 - Rename "`DOSmag.exe`" to whatever you want to name your disk-zine, e.g. "`Resolution-64.exe`"
 - Begin [writing pages](#how-to-write-pages) to populate the content of your disk-zine
 - When you are happy with your disk-zine, just zip-up the folder contents and distribute however you please! DOSmag is self-contained, requires no installation on other computers and will run from portable devices like USB drives
@@ -71,7 +71,7 @@ These draw lines across the screen. These can only appear at the beginning of a 
 ^==========
 ```
 
-> Pro Tip: You can press F5 in DOSmag to reload the current page!
+> _Pro Tip:_ You can press `F5` in DOSmag to reload the current page!
 
 ```
 ^( ... )

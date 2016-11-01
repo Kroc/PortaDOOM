@@ -3,4 +3,4 @@
 !.gitignore
 
 # include the sample pages
-!pages/*.dosmag
+!*.dosmag
