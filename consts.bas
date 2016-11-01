@@ -11,6 +11,7 @@ CONST FALSE = 0
 
 '------------------------------------------------------------------------------
 
+'the default size (in char cols/rows) of the text-mode screen (`SCREEN 0`)
 CONST SCREEN_WIDTH = 80
 CONST SCREEN_HEIGHT = 25
 
@@ -40,17 +41,17 @@ CONST ASC_NULL = 0
 CONST ASC_BKSP = 8
 CONST ASC_TAB = 9
 
-CONST ASC_ESC = 27 'escape key
+CONST ASC_ESC = 27 '      escape key
 
-CONST ASC_SPC = 32
-
-CONST ASC_LPAREN = 40 '(
-CONST ASC_RPAREN = 41 ')
+CONST ASC_SPC = 32 '      space
+CONST ASC_HASH = 35 '     #
+CONST ASC_LPAREN = 40 '   (
+CONST ASC_RPAREN = 41 '   )
 CONST ASC_ASTERISK = 42 ' *
-CONST ASC_DASH = 45 ' - (hyphen / minus)
-CONST ASC_FSLASH = 47 ' / (forward-slash)
-CONST ASC_COLON = 58 ' :
-CONST ASC_EQUALS = 61 ' =
+CONST ASC_DASH = 45 '     - (hyphen / minus)
+CONST ASC_FSLASH = 47 '   / (forward-slash)
+CONST ASC_COLON = 58 '    :
+CONST ASC_EQUALS = 61 '   =
 
 CONST ASC_A = 65
 CONST ASC_B = 66
