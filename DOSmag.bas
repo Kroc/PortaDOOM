@@ -44,8 +44,8 @@ CONST PAGE_TOP = HEAD_TOP + HEAD_HEIGHT
 'height of the page display on the screen;
 '(screen height less breadcrumb, title line, page and status bar)
 CONST PAGE_HEIGHT = SCREEN_HEIGHT - PAGE_TOP - 1
-
-CONST PAGE_WIDTH = 77
+'the page is padded either side by a column, plus the scrollbar
+CONST PAGE_WIDTH = SCREEN_WIDTH - 3
 
 CONST PAGE_FGND = LTGREY
 CONST PAGE_BKGD = BLUE
@@ -58,7 +58,9 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 
 'page data:
 '-----------------------------------------------------------------------------
-CONST PAGE_DIR = "pages\" 'path where to find the .dosmag pages
+CONST PAGE_DIR = "pages\" ' path where to find the dosmag pages
+CONST PAGE_EXT = ".dosmag" 'file extension name used for pages
+CONST PAGE_ASC = ASC_HASH ' which character is used to separate page numbers
 
 DIM SHARED PageName AS STRING 'base name of page, without page number
 DIM SHARED PageTitle AS STRING
@@ -69,8 +71,8 @@ REDIM SHARED PageLines(1) AS STRING
 DIM SHARED PageLine AS INTEGER 'line number at top of screen
 DIM SHARED PageLineCount AS INTEGER
 
-CONST ACTION_GOTO = 1
-CONST ACTION_SHELL = 2
+CONST ACTION_GOTO = 1 ' key binding action to load another page
+CONST ACTION_SHELL = 2 'key binding action to open a file
 
 'a page can define keys and their actions
 TYPE PageKey
@@ -736,7 +738,7 @@ END SUB
 SUB drawStatus
     clearStatus
     LOCATE SCREEN_HEIGHT - StatusHeight%%, 1
-    PRINT " [F1]:HELP  [BKSP]:BACK                            [F11]:FULLSCREEN  [ESC]:QUIT";
+    PRINT " F1:HELP  BKSP:BACK                                    F11:FULLSCREEN  ESC:QUIT";
 
     IF StatusHeight%% > 0 THEN
         LOCATE SCREEN_HEIGHT - StatusHeight%% + 1, 2
@@ -778,30 +780,27 @@ SUB loadPage (page_name$)
 
     'TODO: verify page number
     'is a page number attached to the name?
-    IF ASC(page_name$, LEN(page_name$) - 2) = ASC("#") THEN
+    IF ASC(page_name$, LEN(page_name$) - 2) = PAGE_ASC THEN
         'extract the page number off the end of the name
         page_number% = VAL(RIGHT$(page_name$, 2))
         'remove the page number from the name
         file_base$ = TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
-        file_path$ = PAGE_DIR + file_base$ + " " _
-                   + pageNumber$(page_number%) + ".dosmag"
+        file_path$ = pagePath$(file_base$, page_number%)
     ELSE
         'no page number
         page_number% = 0
         file_base$ = TRIM$(page_name$)
-        file_path$ = PAGE_DIR + file_base$ 'file extension omitted for now
+        file_path$ = pagePath$(file_base$, 0)
 
         'does the file exist?
-        IF NOT _FILEEXISTS(file_path$ + ".dosmag") THEN
+        IF NOT _FILEEXISTS(pagePath$(file_base$, 0)) THEN
             'if not, it may be that the page does exist, but with page number
-            IF _FILEEXISTS(file_path$ + " #01.dosmag") THEN
+            IF _FILEEXISTS(pagePath$(file_base$, 1)) THEN
                 'add a default page number
-                file_path$ = file_path$ + " #01"
+                file_path$ = pagePath$(file_base$, 1)
                 page_number% = 1
             END IF
         END IF
-
-        file_path$ = file_path$ + ".dosmag"
     END IF
 
     'does the page exist?
@@ -826,7 +825,7 @@ SUB loadPage (page_name$)
     PageCount% = PageNum%
     'look for additionally numbered pages
     DO WHILE PageCount% < 99 AND _FILEEXISTS( _
-        PAGE_DIR + file_base$ + " " + pageNumber$(PageCount% + 1) + ".dosmag" _
+        pagePath$(file_base$, PageCount% + 1) _
     )
         PageCount% = PageCount% + 1
     LOOP
@@ -914,14 +913,27 @@ SUB loadPage (page_name$)
     PageLine% = 1
 END SUB
 
+'build a path to a DOSmag page file
+'=============================================================================
+FUNCTION pagePath$ (page_name$, page_number%)
+    'if a page number is provided (0 = ignore)
+    IF page_number% > 0 THEN
+        pagePath$ = PAGE_DIR + page_name$ + " " _
+                  + pageNumber$(page_number%) + PAGE_EXT
+    ELSE
+        'no page number
+        pagePath$ = PAGE_DIR + page_name$ + PAGE_EXT
+    END IF
+END FUNCTION
+
 'convert a page number to a string for use in file names, i.e. "#01"
 '=============================================================================
 FUNCTION pageNumber$ (page_number%)
     'ensure that it's always double-digit
     IF page_number% < 10 THEN
-        pageNumber$ = "#0" + STRINT$(page_number%)
+        pageNumber$ = CHR$(PAGE_ASC) + "0" + STRINT$(page_number%)
     ELSE
-        pageNumber$ = "#" + STRINT$(page_number%)
+        pageNumber$ = CHR$(PAGE_ASC) + STRINT$(page_number%)
     END IF
 END FUNCTION
 
