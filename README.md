@@ -22,7 +22,7 @@ Pages can be grouped into sets. Such sets share the same file name, but are suff
 
 Long lines will be word-wrapped for you, so it is best to just write each paragraph as a single continuous line and set your text-editor to word-wrap.
 
-### Control Codes ###
+### Text Formatting ###
 
 Within a page file, these are the conventions you may use:
 
@@ -33,57 +33,58 @@ Within a page file, these are the conventions you may use:
 A line that begins with `^C` will be centred. If the line is too long for the screen, it will wrap and all such lines will be centred too. The centre control code *must* appear as the first thing on a line, no other control code can preceed it.
 
 ```
-^:
+:The Road Ahead
 ```
 
-A heading. This effect continues for the rest of the line. (the colon is not printed)
+A line beginning with a colon is a heading. This effect continues for the rest of the line. (the colon is not printed)
 
 ```
-^*...^*
+*bold effect*
+_italic effect_
 ```
 
-A "bold" effect. The bold control code turns the effect on and then off each time it is encountered, however it automatically turns off at the end of a line. For example:
+A "bold" or "italic" effect. The bold / italic control codes only work at word-boundaries (not within the middle of a word), however it automatically turns off at the end of a line. For example:
 
 ```
-^*This text will be bold
-^*And so will this!
+*This text will be bold
+*And so will this!
 ```
 
 This is why, in general, you should not manually word-wrap your text.
 
 ```
-^/...^/
+Use double-characters to escape the ** bold and __ italic effects.
 ```
 
-An "italic" effect. Behaves in the same manner as the bold control code.
+A double asterisk or underscore will display as a single character, without enabling the bold or italic effect.
 
 ```
-^-
-^=
+:-
+:=
 ```
 
 These draw lines across the screen. These can only appear at the beginning of a line (they cannot co-exist with the centre control code), and everything after the first dash / equals is ignored. For example:
 
 ```
-^:Heading 1
-^----------
-^:Heading 2
-^==========
+:Heading 1
+:---------
+:Heading 2
+:=========
 ```
 
 > _Pro Tip:_ You can press `F5` in DOSmag to reload the current page!
 
 ```
-^( ... )
+( ... )
 ```
 
-Parentheses can be highlighted this way. The effect will stop at the first closing parenthesis that follows. The control code will output the opening parenthesis for you.
+Parentheses are automatically highlighted.
 
 ```
-^[...]
+[...]
 ```
 
-This is intended to markup navigation keys, such as "`[D]`". The opening square bracket will be displayed and the effect will continue until the next closing square bracket. There must not be any spaces between the square brackets.
+This is intended to markup navigation keys, such as "`[D]`".
 
 NOTE: This does not actually bind the key to any action, it's purely a visual indicator. See below for how to bind keys to actions.
 
