@@ -18,23 +18,26 @@
 
 'our text-formatting control codes
 '-----------------------------------------------------------------------------
-CONST CTL_ESCAPE = ASC_CARET '  ^
-CONST CTL_HEADING = ASC_COLON ' :
-CONST CTL_BOLD = ASC_ASTERISK ' *
-CONST CTL_ITALIC = ASC_FSLASH ' /
-CONST CTL_LINE1 = ASC_EQUALS '  =
-CONST CTL_LINE2 = ASC_DASH '    -
-CONST CTL_PAREN = ASC_LPAREN '  (
-CONST CTL_KEY = ASC_LSQB '      [
+CONST CTL_ESCAPE = ASC_CARET '     ^
+CONST CTL_CENTER = ASC_C '         C
+CONST CTL_HEADING = ASC_COLON '    :
+CONST CTL_BOLD = ASC_ASTERISK '    *...*
+CONST CTL_ITALIC = ASC_USCORE '    _..._
+CONST CTL_LINE1 = ASC_EQUALS '     =
+CONST CTL_LINE2 = ASC_DASH '       -
+CONST CTL_PAREN_ON = ASC_LPAREN '  (
+CONST CTL_PAREN_OFF = ASC_RPAREN ' )
+CONST CTL_KEY_ON = ASC_LSQB '      [
+CONST CTL_KEY_OFF = ASC_RSQB '     ]
 
 
 'screen layout
 '-----------------------------------------------------------------------------
-CONST HEAD_TOP = 1 'row where the header starts
-CONST HEAD_HEIGHT = 3 'size of the header area
+CONST HEAD_TOP = 1 '    row where the header starts
+CONST HEAD_HEIGHT = 3 ' size of the header area
 
 CONST HEAD_FGND = ROSE 'header foreground colour
-CONST HEAD_BKGD = RED 'header background colour
+CONST HEAD_BKGD = RED ' header background colour
 
 CONST TABS_FGND = AQUA
 CONST TABS_BKGD = BLUE
@@ -62,22 +65,21 @@ CONST PAGE_DIR = "pages\" ' path where to find the dosmag pages
 CONST PAGE_EXT = ".dosmag" 'file extension name used for pages
 CONST PAGE_ASC = ASC_HASH ' which character is used to separate page numbers
 
-DIM SHARED PageName AS STRING 'base name of page, without page number
-DIM SHARED PageTitle AS STRING
-DIM SHARED PageGroup AS STRING
-DIM SHARED PageNum AS INTEGER
-DIM SHARED PageCount AS INTEGER
+DIM SHARED PageName AS STRING '  base name of page, without page number
+DIM SHARED PageNum AS INTEGER '  page number,
+DIM SHARED PageCount AS INTEGER 'and number of pages in the set
+
 REDIM SHARED PageLines(1) AS STRING
-DIM SHARED PageLine AS INTEGER 'line number at top of screen
 DIM SHARED PageLineCount AS INTEGER
+DIM SHARED PageLine AS INTEGER 'line number at top of screen
 
 CONST ACTION_GOTO = 1 ' key binding action to load another page
 CONST ACTION_SHELL = 2 'key binding action to open a file
 
 'a page can define keys and their actions
 TYPE PageKey
-    keycode AS INTEGER 'ASCII key code
-    action AS INTEGER 'the action to take, e.g. ACTION_GOTO
+    keycode AS INTEGER '   ASCII key code
+    action AS INTEGER '    the action to take, e.g. ACTION_GOTO
     param AS STRING * 256 'the action parameter, e.g. the page name to load
 END TYPE
 
@@ -433,8 +435,10 @@ SUB scrollBottom
     refreshScreen
 END SUB
 
+'scroll to a specific line number (used when refreshing page)
 '=============================================================================
 SUB scrollTo (line_num%)
+    'validate given number:
     IF line_num% < 1 THEN
         'can't scroll above the page!
         PageLine% = 1
@@ -771,6 +775,7 @@ SUB clearStatus
     END IF
 END SUB
 
+
 'load a page from disk
 '=============================================================================
 SUB loadPage (page_name$)
@@ -833,19 +838,22 @@ SUB loadPage (page_name$)
     '-------------------------------------------------------------------------
 
     DO UNTIL EOF(1)
-        DIM line$
-        LINE INPUT #1, line$
+        'read a line of text from source
+        DIM line$: LINE INPUT #1, line$
         'shortcut for blank lines
         IF line$ = "" THEN
             addLine ""
 
-        ELSEIF LEFT$(line$, 2) = "^C" THEN
+        ELSEIF left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE1) _
+            OR left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE2) THEN
+            'dividing lines:
+            '(the `printLine` routine handles the actual formatting of lines,
+            ' it uses only escape codes rather than the "shorthand")
+            addLine CHR$(CTL_ESCAPE) + MID$(line$, 2, 1)
+
+        ELSEIF LEFT$(line$, 2) = CHR$(CTL_ESCAPE) + CHR$(CTL_CENTER) THEN
             'centre line:
             wrapLine MID$(line$, 3), ALIGN_CENTER
-
-        ELSEIF LEFT$(line$, 2) = "^-" OR LEFT$(line$, 2) = "^=" THEN
-            'line-markers "----..." / "====..."
-            addLine LEFT$(line$, 2)
 
         ELSEIF LEFT$(line$, 5) = "$REM=" THEN
             'skip REM lines; allows authors to put comments into the page
@@ -943,11 +951,12 @@ END FUNCTION
 SUB wrapLine (line$, align%)
     'always right-trim a line as this can cause unexpected wrapping
     line$ = RTRIM$(line$)
-    'if this is a blank line,  process it quickly
+    'if this is a blank line, process it quickly
     IF line$ = "" THEN addLine "": EXIT SUB
 
+    '-------------------------------------------------------------------------
+
     DIM newline$: newline$ = "" 'the line we're building up
-    DIM word$: word$ = "" 'the current word being built
     DIM char% 'ASCII code of current character
     DIM c%: c% = 1 'current character position in the source line
     DIM l%: l% = 0 'current length of the line being built
@@ -987,86 +996,184 @@ SUB wrapLine (line$, align%)
 
     '-------------------------------------------------------------------------
 
-    'length of the current word
-    DIM w%: w% = 0
+    DIM word$: word$ = "" 'the current word being built
+    DIM w%: w% = 0 '       length of the current word (excluding escapes)
 
+    'if a line begins with ":" then it's a heading
     DIM is_heading`
-    DIM is_bold`
-    DIM is_italic`
-    DIM is_paren`
-    DIM is_key`
+    IF ASC(line$) = CTL_HEADING THEN
+        'set the mode (incase of word-wrapping)
+        is_heading` = TRUE
+        c% = c% + 1
+        'include the escape code
+        word$ = CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
+    END IF
+
+    'bold / italic are only valid on word-boundaries;
+    'the beginning of a line is always a word-boundary
+    DIM is_boundary`: is_boundary` = TRUE
 
     'we need to know if a word was already bold/italic &c. when it began,
     'so that if it's wrapped we can insert the control code on the new line
-    DIM word_paren`
-    DIM word_bold`
-    DIM word_italic`
-    DIM word_key`
+    DIM is_bold`, word_bold`
+    DIM is_italic`, word_italic`
+    DIM is_paren`, word_paren`
+    DIM is_key`, word_key`
+
+    'adding a space on the end allows us to do a 1-character look-ahead
+    'without having to avoid indexing past the end of the string
+    line$ = line$ + " "
 
     'process text:
-    FOR c% = c% TO LEN(line$)
+    FOR c% = c% TO LEN(line$) - 1
         'get current character in the source line
         char% = ASC(line$, c%)
+
+        'within key link text no formatting occurs!
+        IF is_key` = TRUE THEN
+            'is this the end of the key text?
+            IF char% = CTL_KEY_OFF THEN
+                'add the closing bracket and control code for display
+                GOSUB addChar
+                GOSUB addControlChar
+                is_key` = FALSE
+                'a word boundary occurs after the closing bracket
+                is_boundary` = TRUE
+            ELSE
+                'any other character, add as is
+                GOSUB addChar
+            END IF
+            'process next letter...
+            GOTO continue
+        END IF
+
         SELECT CASE char%
-            'is this a control code?
-            CASE CTL_ESCAPE
-                'check the control character
-                c% = c% + 1: char% = ASC(line$, c%)
+            CASE CTL_KEY_ON
+                '-------------------------------------------------------------
+                'enable the key mode and include the bracket
+                is_key` = TRUE
+                GOSUB addControlChar
+                GOSUB addChar
 
-                'add the control code to the word string,
-                'but don't include it in the length of the word (`w%`)
-                word$ = word$ + CHR$(CTL_ESCAPE) + CHR$(char%)
+            CASE CTL_PAREN_ON
+                '-------------------------------------------------------------
+                'enable the paren mode and include the bracket
+                is_paren` = TRUE
+                GOSUB addControlChar
+                GOSUB addChar
+                'a word boundary occurs within the parens
+                is_boundary` = TRUE
 
-                'manage control state
-                SELECT CASE char%
-                    CASE CTL_HEADING
-                        'a heading applies to the whole line,
-                        'so needs to be copied when wrapping the line
-                        is_heading` = TRUE
+            CASE CTL_PAREN_OFF
+                '-------------------------------------------------------------
+                'end paren mode
+                is_paren` = FALSE
+                GOSUB addChar
+                GOSUB addControlChar
+                'a word boundary occurs after the parens
+                is_boundary` = TRUE
 
-                    CASE CTL_BOLD
-                        'flip the bold mode
-                        is_bold` = NOT is_bold`
+            CASE CTL_BOLD, CTL_ITALIC
+                '-------------------------------------------------------------
+                IF char% = CTL_BOLD THEN
+                    'check the next character:
+                    SELECT CASE ASC(line$, c% + 1)
+                        CASE char%
+                            'double is an escape, treat as single literal
+                            c% = c% + 1: GOSUB addChar
 
-                    CASE CTL_ITALIC
-                        'flip the italic mode
-                        is_italic` = NOT is_italic`
+                        CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
+                             ASC_PERIOD, CTL_ITALIC
+                            'word boundary? if bold is on, flip it off
+                            IF is_bold` = TRUE THEN
+                                is_bold` = FALSE
+                                char% = CTL_BOLD
+                                GOSUB addControlChar
+                            ELSE
+                                'treat as literal
+                                GOSUB addChar
+                            END IF
 
-                    CASE CTL_PAREN
-                        'begin parentheses "^( ... )"
-                        is_paren` = TRUE
-                        'the paren will be printed
-                        word$ = word$ + CHR$(CTL_PAREN): w% = w% + 1
+                        CASE ELSE
+                            'bold can ony be enabled at a word-boundary
+                            IF is_boundary` = TRUE THEN
+                                is_bold` = TRUE
+                                GOSUB addControlChar
+                            ELSE
+                                'middle of word, treat as literal
+                                GOSUB addChar
+                            END IF
+                    END SELECT
 
-                    CASE CTL_KEY
-                        'begin key "^[ ... ]"
-                        is_key` = TRUE
-                        'the opening bracket will be printed
-                        word$ = word$ + CHR$(CTL_KEY): w% = w% + 1
+                ELSEIF char% = CTL_ITALIC THEN
+                    'check the next character:
+                    SELECT CASE ASC(line$, c% + 1)
+                        CASE char%
+                            'double is an escape, treat as single literal
+                            c% = c% + 1: GOSUB addChar
 
-                END SELECT
+                        CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
+                             ASC_PERIOD, CTL_BOLD
+                            'word boundary? if bold is on, flip it off
+                            IF is_italic` = TRUE THEN
+                                is_italic` = FALSE
+                                char% = CTL_ITALIC
+                                GOSUB addControlChar
+                            ELSE
+                                'treat as literal
+                                GOSUB addChar
+                            END IF
+
+                        CASE ELSE
+                            'italic can ony be enabled at a word-boundary
+                            IF is_boundary` = TRUE THEN
+                                is_italic` = TRUE
+                                GOSUB addControlChar
+                            ELSE
+                                'middle of word, treat as literal
+                                GOSUB addChar
+                            END IF
+                    END SELECT
+                END IF
 
             CASE ASC_SPC, ASC_TAB, ASC_DASH
+                '-------------------------------------------------------------
                 'add the word to the line and wrap if necessary
                 '(the text after a hypen is considered a new word
                 'so that it can wrap to the next line if need be)
                 GOSUB addWord
 
             CASE ELSE
-                'end of parentheses?
-                IF char% = ASC_RPAREN THEN is_paren` = FALSE
-                'end of key?
-                IF char% = ASC_RSQB THEN is_key` = FALSE
+                '-------------------------------------------------------------
                 'add character to current word
-                word$ = word$ + CHR$(char%): w% = w% + 1
+                GOSUB addChar
 
         END SELECT
+        continue:
     NEXT
 
     'add this word to the last line
-    char% = 0: GOSUB addWord: GOSUB addLine
+    char% = 0: GOSUB addWord
+    IF TRIM$(newline$) <> "" THEN GOSUB addLine
 
     EXIT SUB
+
+    addChar:
+    '-------------------------------------------------------------------------
+    'add the current character to the current word
+    word$ = word$ + CHR$(char%): w% = w% + 1
+    'we are no longer at the beginning of a word!
+    is_boundary` = FALSE
+
+    RETURN
+
+    addControlChar:
+    '-------------------------------------------------------------------------
+    'add the current character as an escape code
+    '(does not increase the current word or line length)
+    word$ = word$ + CHR$(CTL_ESCAPE) + CHR$(char%):
+
+    RETURN
 
     addWord:
     '-------------------------------------------------------------------------
@@ -1082,9 +1189,13 @@ SUB wrapLine (line$, align%)
         IF is_heading` = TRUE THEN
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
         END IF
+        'in key mode?
+        IF is_key` = TRUE THEN
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_KEY_ON)
+        END IF
         'are we currently in parentheses?
         IF word_paren` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN)
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
         END IF
         'are we currently bold?
         IF word_bold` = TRUE THEN
@@ -1115,6 +1226,9 @@ SUB wrapLine (line$, align%)
     word_bold` = is_bold`
     word_italic` = is_italic`
     word_paren` = is_paren`
+    word_key` = is_key`
+    'we are now at the beginning of a word
+    is_boundary` = TRUE
 
     RETURN
 
@@ -1148,12 +1262,12 @@ END SUB
 '=============================================================================
 SUB printLine (line$)
     'divider lines can be handled with little processing
-    IF line$ = "^=" THEN
+    IF line$ = CHR$(CTL_ESCAPE) + CHR$(CTL_LINE1) THEN
         COLOR YELLOW
         PRINT STRING$(PAGE_WIDTH, "Í");
         EXIT SUB
 
-    ELSEIF line$ = "^-" THEN
+    ELSEIF line$ = CHR$(CTL_ESCAPE) + CHR$(CTL_LINE2) THEN
         COLOR YELLOW
         PRINT STRING$(PAGE_WIDTH, "Ä");
         EXIT SUB
@@ -1168,8 +1282,8 @@ SUB printLine (line$)
     'start with the page's default colour
     GOSUB setmode
 
-    DIM is_key` '...if handling a key indicator "^[...]"
-    DIM is_paren` '.if in parentheses "^( ... )"
+    DIM is_key` '...if handling a key indicator "^[...^]"
+    DIM is_paren` '.if in parentheses "^( ... ^)"
     DIM is_bold` '..if in bold mode "^B"
     DIM is_italic` 'if in italic mode "^I"
 
@@ -1189,15 +1303,25 @@ SUB printLine (line$)
                     'heading
                     GOSUB pushmode
 
-                CASE CTL_PAREN '----------------------------------------------
+                CASE CTL_PAREN_ON '-------------------------------------------
                     'enter parentheses
                     is_paren` = TRUE
                     GOSUB pushmode
 
-                CASE CTL_KEY '------------------------------------------------
+                CASE CTL_PAREN_OFF '------------------------------------------
+                    'end parenetheses mode
+                    is_paren` = FALSE
+                    GOSUB popmode
+
+                CASE CTL_KEY_ON '--------------------------------------------
                     'set key mode on, the closing bracket will turn it off
                     is_key` = TRUE
                     GOSUB pushmode
+
+                CASE CTL_KEY_OFF '--------------------------------------------
+                    'end key mode
+                    is_key` = FALSE
+                    GOSUB popmode
 
                 CASE CTL_BOLD '-----------------------------------------------
                     'enable / disable bold
@@ -1225,16 +1349,6 @@ SUB printLine (line$)
         ELSE
             'print the character as-is to screen
             PRINT CHR$(char%);
-
-            'check for control modes that might have ended
-            IF (char% = ASC_RSQB) AND (is_key` = TRUE) THEN
-                GOSUB popmode: is_key` = FALSE
-
-            ELSEIF (char% = ASC_RPAREN) AND (is_paren`) = TRUE THEN
-                GOSUB popmode: is_paren` = FALSE
-
-            END IF
-
         END IF
     NEXT
     EXIT SUB
@@ -1255,14 +1369,14 @@ SUB printLine (line$)
     '-------------------------------------------------------------------------
     SELECT CASE mode_stack%(mode_count%)
         CASE CTL_HEADING
-            COLOR WHITE
-        CASE CTL_BOLD
             COLOR YELLOW
+        CASE CTL_BOLD
+            COLOR WHITE
         CASE CTL_ITALIC
             COLOR LIME
-        CASE ASC_LSQB
+        CASE CTL_KEY_ON
             COLOR AQUA
-        CASE CTL_PAREN
+        CASE CTL_PAREN_ON
             COLOR CYAN
         CASE ELSE
             COLOR PAGE_FGND
