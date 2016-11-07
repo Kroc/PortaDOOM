@@ -12,11 +12,11 @@ You do not need to do any programming to use DOSmag to create your own "disk-zin
 - Begin [writing pages](#how-to-write-pages) to populate the content of your disk-zine
 - When you are happy with your disk-zine, just zip-up the folder contents and distribute however you please! DOSmag is self-contained, requires no installation on other computers and will run from portable devices like USB drives
 
-## How to Write Pages: ##
+## How to Write Pages ##
 
 The pages displayed by the DOSmag viewer reside in the "`pages`" folder. Each page is simply a txt file, but with the extension "`.dosmag`". This is so that you can set custom encoding / font options for this file-type in your text editor.
 
-> _Pro Tip:_ Make sure files are always saved in ANSI encoding, not UTF-8! DOSmag displays text using [code page 437](https://en.wikipedia.org/wiki/Code_page_437), sometimes called "DOS" or "OEM-US" encoding. Open [CharMap](https://en.wikipedia.org/wiki/Character_Map_(Windows)) and set the font to Terminal to access the extra symbols. 
+> _Pro Tip:_ Even though your pages should be UTF-8, DOSmag can only display those UTF-8 characters represented in ANSI [Code Page 437](https://en.wikipedia.org/wiki/Code_page_437), sometimes called "DOS" or "OEM-US" encoding. See the [Code Page 437](https://en.wikipedia.org/wiki/Code_page_437) article for advanced characters you can copy & paste. 
 
 Pages can be grouped into sets. Such sets share the same file name, but are suffixed by the page number e.g. "`#04`". The number *must* be two digits long to be recognised. This ensures that the files appear ordered correctly on your drive.
 
