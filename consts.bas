@@ -45,6 +45,7 @@ CONST ASC_ESC = 27 '      escape key
 
 CONST ASC_SPC = 32 '      space
 CONST ASC_HASH = 35 '     #
+CONST ASC_APOS = 39 '     '
 CONST ASC_LPAREN = 40 '   (
 CONST ASC_RPAREN = 41 '   )
 CONST ASC_ASTERISK = 42 ' *
@@ -53,7 +54,9 @@ CONST ASC_DASH = 45 '     - (hyphen / minus)
 CONST ASC_PERIOD = 46 '   . (fullstop)
 CONST ASC_FSLASH = 47 '   / (forward-slash)
 CONST ASC_COLON = 58 '    :
+CONST ASC_SEMICOLON = 59 ';
 CONST ASC_EQUALS = 61 '   =
+CONST ASC_QMARK = 63 '    ?
 
 CONST ASC_A = 65
 CONST ASC_B = 66
@@ -87,6 +90,7 @@ CONST ASC_BSLASH = 92 ' \
 CONST ASC_RSQB = 93 '   ]
 CONST ASC_CARET = 94 '  ^
 CONST ASC_USCORE = 95 ' _
+CONST ASC_BAR = 124 '   |
 
 'when the result of INKEY$ begins with a NULL,
 'then the second byte is the following:

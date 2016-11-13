@@ -28,6 +28,8 @@ CONST CTL_PAREN_ON = ASC_LPAREN '  (
 CONST CTL_PAREN_OFF = ASC_RPAREN ' )
 CONST CTL_KEY_ON = ASC_LSQB '      [
 CONST CTL_KEY_OFF = ASC_RSQB '     ]
+CONST CTL_INDENT = ASC_BAR '       |
+CONST CTL_BREAK = ASC_BSLASH '     \\ (manual line-break)
 
 
 'screen layout
@@ -817,8 +819,6 @@ SUB loadPage (page_name$)
 
     '-------------------------------------------------------------------------
 
-    OPEN file_path$ FOR BINARY AS #1
-
     'clear current page in memory
     PageName$ = file_base$
     PageNum% = 0
@@ -839,6 +839,7 @@ SUB loadPage (page_name$)
 
     '-------------------------------------------------------------------------
 
+    OPEN file_path$ FOR BINARY AS #1
     DO UNTIL EOF(1)
         'read a line of text from source
         DIM line$: LINE INPUT #1, line$
@@ -978,7 +979,7 @@ SUB wrapLine (line$, align%)
         SELECT CASE ASC(line$, c%)
             CASE ASC_TAB
                 'if its a tab, account for 8 spaces in the line wrapping
-                indent$ = indent$ + CHR$(ASC_TAB)
+                indent$ = indent$ + SPACE$(8)
                 indent% = indent% + 8
                 c% = c% + 1
 
@@ -1008,9 +1009,10 @@ SUB wrapLine (line$, align%)
     IF ASC(line$) = CTL_HEADING THEN
         'set the mode (incase of word-wrapping)
         is_heading` = TRUE
-        c% = c% + 1
         'include the escape code
         word$ = CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
+        'first character can be skipped
+        c% = c% + 1
     END IF
 
     'bold / italic are only valid on word-boundaries;
@@ -1059,28 +1061,60 @@ SUB wrapLine (line$, align%)
         END IF
 
         SELECT CASE char%
+            CASE CTL_INDENT
+                '-------------------------------------------------------------
+                'set the indent to the current position
+                indent% = l% + w%: indent$ = SPACE$(indent%)
+                'word-break immediately
+                char% = 0: GOSUB addWord
+                is_boundary` = TRUE
+
+            CASE CTL_HEADING
+                '-------------------------------------------------------------
+                IF ( _
+                    ASC(line$, c% - 1) = ASC_SPC _
+                 OR ASC(line$, c% - 1) = ASC_TAB _
+                ) AND ASC(line$, c% + 1) = ASC_SPC _
+                THEN
+                    GOSUB addWord
+                    ''GOSUB addControlChar
+                    'set the indent to the current position
+                    indent% = l% + w% + 1: indent$ = SPACE$(indent%)
+                ELSE
+                    GOSUB addChar
+                END IF
+
             CASE CTL_KEY_ON
                 '-------------------------------------------------------------
-                'enable the key mode and include the bracket
-                is_key` = TRUE
-                GOSUB addControlChar
+                'don't allow within 'italic'
+                IF is_italic` = FALSE THEN
+                    'enable the key mode and include the bracket
+                    is_key` = TRUE
+                    GOSUB addControlChar
+                END IF
                 GOSUB addChar
 
             CASE CTL_PAREN_ON
                 '-------------------------------------------------------------
-                'enable the paren mode and include the bracket
-                is_paren` = TRUE
-                GOSUB addControlChar
+                'automatic paren mode will only occur on a word boundary
+                IF is_boundary` = TRUE THEN
+                    'enable the paren mode and include the bracket
+                    is_paren` = TRUE
+                    GOSUB addControlChar
+                END IF
+                'add the parenethesis to the output
                 GOSUB addChar
                 'a word boundary occurs within the parens
                 is_boundary` = TRUE
 
             CASE CTL_PAREN_OFF
                 '-------------------------------------------------------------
-                'end paren mode
-                is_paren` = FALSE
                 GOSUB addChar
-                GOSUB addControlChar
+                IF is_paren` = TRUE THEN
+                    'end paren mode
+                    is_paren` = FALSE
+                    GOSUB addControlChar
+                END IF
                 'a word boundary occurs after the parens
                 is_boundary` = TRUE
 
@@ -1094,7 +1128,9 @@ SUB wrapLine (line$, align%)
                             c% = c% + 1: GOSUB addChar
 
                         CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
-                             ASC_PERIOD, CTL_ITALIC, CTL_PAREN_OFF
+                             ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                             ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
+                             CTL_PAREN_OFF
                             'word boundary? if bold is on, flip it off
                             IF is_bold` = TRUE THEN
                                 is_bold` = FALSE
@@ -1124,7 +1160,9 @@ SUB wrapLine (line$, align%)
                             c% = c% + 1: GOSUB addChar
 
                         CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
-                             ASC_PERIOD, CTL_BOLD, CTL_PAREN_OFF
+                             ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                             ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
+                             CTL_PAREN_OFF
                             'word boundary? if bold is on, flip it off
                             IF is_italic` = TRUE THEN
                                 is_italic` = FALSE
@@ -1147,8 +1185,40 @@ SUB wrapLine (line$, align%)
                     END SELECT
                 END IF
 
+            CASE CTL_BREAK
+                '-------------------------------------------------------------
+                'double back-slash creates a manual line-break
+                IF ASC(line$, c% + 1) = CTL_BREAK THEN
+                    char% = 0: GOSUB addWord: GOSUB lineBreak
+                    'ignore the second slash
+                    c% = c% + 1
+                ELSE
+                    'treat as normal
+                    GOSUB addChar
+                END IF
+
+            CASE ASC_APOS
+                '-------------------------------------------------------------
+                'an apostrophe is a word-boundary, but not a word-break;
+                'i.e. `_bob_'s italics`
+                GOSUB addChar
+                is_boundary` = TRUE
+
+            CASE ASC_FSLASH, ASC_BSLASH
+                '-------------------------------------------------------------
+                'forward and back slash are word-breaks & word-boundaries
+                GOSUB addWord
+
             CASE ASC_SPC, ASC_TAB, ASC_DASH
                 '-------------------------------------------------------------
+                IF char% = ASC_TAB THEN
+                    'this is white-space so add the current word to the line
+                    char% = 0: GOSUB addWord
+                    'convert tab character to spaces as `_CONTROLCHR OFF`
+                    'will prevent tabs from rendering
+                    tabspc% = 8 - ((l% + w%) MOD 8)
+                    word$ = word$ + SPACE$(tabspc%): w% = w% + tabspc%
+                END IF
                 'add the word to the line and wrap if necessary
                 '(the text after a hypen is considered a new word
                 'so that it can wrap to the next line if need be)
@@ -1190,45 +1260,55 @@ SUB wrapLine (line$, align%)
     '-------------------------------------------------------------------------
     'will this word go over the end of the line?
     IF l% + w% + 1 > PAGE_WIDTH THEN
-        'line has wrapped, dispatch the current line:
-        GOSUB addLine
-
-        'begin a new line (use the indent if detected)
-        newline$ = indent$: l% = indent%
-
-        'is this a heading we're processing?
-        IF is_heading` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
-        END IF
-        'in key mode?
-        IF is_key` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_KEY_ON)
-        END IF
-        'are we currently in parentheses?
-        IF word_paren` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
-        END IF
-        'are we currently bold?
-        IF word_bold` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
-        END IF
-        'are we currently italic?
-        IF word_italic` = TRUE THEN
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_ITALIC)
-        END IF
-
-        'begin the line with the remaining word
-        newline$ = newline$ + word$: l% = l% + w%
-        IF char% > 0 THEN
-            newline$ = newline$ + CHR$(char%): l% = l% + 1
-        END IF
+        'break the line and begin the new line with the remaining word
+        GOSUB lineBreak
     ELSE
         'include the splitting character if present (e.g. space, hyphen)
         IF char% > 0 THEN word$ = word$ + CHR$(char%): w% = w% + 1
         'add the word to the end of the line:
         newline$ = newline$ + word$: l% = l% + w%
+
+        GOSUB newWord
+    END IF
+    RETURN
+
+    lineBreak:
+    '-------------------------------------------------------------------------
+    'line has wrapped, dispatch the current line:
+    GOSUB addLine
+
+    'begin a new line (use the indent if detected)
+    newline$ = indent$: l% = indent%
+
+    'is this a heading we're processing?
+    IF is_heading` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
+    END IF
+    'in key mode?
+    IF is_key` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_KEY_ON)
+    END IF
+    'are we currently in parentheses?
+    IF word_paren` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
+    END IF
+    'are we currently bold?
+    IF word_bold` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
+    END IF
+    'are we currently italic?
+    IF word_italic` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_ITALIC)
     END IF
 
+    'begin the line with the remaining word
+    newline$ = newline$ + word$: l% = l% + w%
+    IF char% > 0 THEN
+        newline$ = newline$ + CHR$(char%): l% = l% + 1
+    END IF
+
+    newWord:
+    '-------------------------------------------------------------------------
     'clear the 'current' word
     word$ = "": w% = 0
     'remember the bold/italic &c.  state at the beginning of the word;
@@ -1293,6 +1373,7 @@ SUB printLine (line$)
     'start with the page's default colour
     GOSUB setmode
 
+    DIM is_heading`
     DIM is_key` '...if handling a key indicator "^[...^]"
     DIM is_paren` '.if in parentheses "^( ... ^)"
     DIM is_bold` '..if in bold mode "^B"
@@ -1312,7 +1393,12 @@ SUB printLine (line$)
             SELECT CASE char%
                 CASE CTL_HEADING '--------------------------------------------
                     'heading
-                    GOSUB pushmode
+                    is_heading` = NOT is_heading`
+                    IF is_heading` = TRUE THEN
+                        GOSUB pushmode
+                    ELSE
+                        GOSUB popmode
+                    END IF
 
                 CASE CTL_PAREN_ON '-------------------------------------------
                     'enter parentheses
