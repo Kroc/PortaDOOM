@@ -44,6 +44,7 @@ CONST ASC_TAB = 9
 CONST ASC_ESC = 27 '      escape key
 
 CONST ASC_SPC = 32 '      space
+CONST ASC_EXCL = 33 '     !
 CONST ASC_HASH = 35 '     #
 CONST ASC_APOS = 39 '     '
 CONST ASC_LPAREN = 40 '   (

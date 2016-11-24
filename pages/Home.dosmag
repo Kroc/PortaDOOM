@@ -6,6 +6,8 @@ $KEY:W=SHELL:https://en.wikipedia.org/wiki/Code_page_437
 
 This is where your own content goes.
 
+!A warning box is created when a line begins with an exclamation mark. Other formatting effects will be adpated to suit, such as [K] key indicators, *bold*, _italic_ and (parentheses text).
+
 :Unicode Support:
 
 This is ANSI code-page 437 but written using Unicode symbols; DOSmag automatically transliterates these to the ANSI (1-byte) equivilent. For details, see [W] _<en.wikipedia.org/wiki/Code_page_437>_
