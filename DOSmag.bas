@@ -30,6 +30,7 @@ CONST CTL_KEY_ON = ASC_LSQB '      [
 CONST CTL_KEY_OFF = ASC_RSQB '     ]
 CONST CTL_INDENT = ASC_BAR '       |
 CONST CTL_BREAK = ASC_BSLASH '     \\ (manual line-break)
+CONST CTL_WARNING = ASC_EXCL '     !
 
 
 'screen layout
@@ -92,6 +93,7 @@ DIM SHARED PageKeyCount%
 CONST ALIGN_LEFT = 0
 CONST ALIGN_CENTER = 1 '"^C"
 CONST ALIGN_RIGHT = 2
+CONST ALIGN_WARN = 3 '  'warning box'
 
 'prepare a blank page in case nothing is loaded
 PageName$ = ""
@@ -849,6 +851,17 @@ SUB loadPage (page_name$)
         IF line$ = "" THEN
             addLine ""
 
+        ELSEIF ASC(line$) = CTL_WARNING THEN
+            'a line beginning with "!" will be a warning 'box':
+            'insert the top border box-graphic
+            addLine CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) _
+                  + "Ú" + STRING$(PAGE_WIDTH - 4, "Ä") + "¿"
+            'add the actual box text
+            wrapLine MID$(line$, 2), ALIGN_WARN
+            'add the bottom-border box-graphic
+            addLine CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) _
+                  + "À" + STRING$(PAGE_WIDTH - 4, "Ä") + "Ù"
+
         ELSEIF left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE1) _
             OR left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE2) THEN
             'dividing lines:
@@ -958,6 +971,14 @@ SUB wrapLine (line$, align%)
     line$ = RTRIM$(line$)
     'if this is a blank line, process it quickly
     IF line$ = "" THEN addLine "": EXIT SUB
+
+    '-------------------------------------------------------------------------
+
+    DIM line_width%
+    line_width% = PAGE_WIDTH
+    'a 'warning box' will produce shorter wrapping lines
+    'to account for the wrapping box graphic
+    IF align% = ALIGN_WARN THEN line_width% = line_width% - 5
 
     '-------------------------------------------------------------------------
 
@@ -1259,7 +1280,7 @@ SUB wrapLine (line$, align%)
     addWord:
     '-------------------------------------------------------------------------
     'will this word go over the end of the line?
-    IF l% + w% + 1 > PAGE_WIDTH THEN
+    IF l% + w% + 1 > line_width% THEN
         'break the line and begin the new line with the remaining word
         GOSUB lineBreak
     ELSE
@@ -1333,6 +1354,11 @@ SUB wrapLine (line$, align%)
             'pad the left-side with enough spaces to centre the text
             newline$ = SPACE$((PAGE_WIDTH - l%) / 2) + newline$
         END IF
+
+    ELSEIF align% = ALIGN_WARN THEN
+        'the warning box formatting is handled by the `printLine` function
+        newline$ = CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) + newline$
+
     END IF
     'add the line to the array of screen-ready converted lines
     addLine newline$
@@ -1374,6 +1400,7 @@ SUB printLine (line$)
     GOSUB setmode
 
     DIM is_heading`
+    DIM is_warning 'if printing a warning box "^!..."
     DIM is_key` '...if handling a key indicator "^[...^]"
     DIM is_paren` '.if in parentheses "^( ... ^)"
     DIM is_bold` '..if in bold mode "^B"
@@ -1391,6 +1418,25 @@ SUB printLine (line$)
 
             'which control code is it?
             SELECT CASE char%
+                CASE CTL_WARNING '--------------------------------------------
+                    'begin a warning box
+                    is_warning` = TRUE
+                    LOCATE , 3
+                    GOSUB pushmode
+                    'draw the border in flashing red
+                    COLOR 20, LTGREY
+                    'draw the top & bottom box borders in the right place
+                    PRINT "³" + SPACE$(PAGE_WIDTH - 4) + "³";
+                    IF ASC(line$, c% + 1) = ASC("Ú") _
+                    OR ASC(line$, c% + 1) = ASC("À") _
+                    THEN
+                        LOCATE , 3
+                    ELSE
+                        LOCATE , 5
+                        'return to non-flashing red for the text
+                        COLOR RED
+                    END IF
+
                 CASE CTL_HEADING '--------------------------------------------
                     'heading
                     is_heading` = NOT is_heading`
@@ -1454,6 +1500,7 @@ SUB printLine (line$)
             PRINT CHR$(char%);
         END IF
     NEXT
+    COLOR , PAGE_BKGD
     EXIT SUB
 
     pushmode:
@@ -1471,16 +1518,19 @@ SUB printLine (line$)
     setmode:
     '-------------------------------------------------------------------------
     SELECT CASE mode_stack%(mode_count%)
+        CASE CTL_WARNING
+            COLOR RED
         CASE CTL_HEADING
             COLOR YELLOW
         CASE CTL_BOLD
-            COLOR WHITE
+            IF is_warning` = TRUE THEN COLOR BLACK ELSE COLOR WHITE
         CASE CTL_ITALIC
-            COLOR LIME
+            IF is_warning` = TRUE THEN COLOR DKGREY ELSE COLOR LIME
         CASE CTL_KEY_ON
-            COLOR AQUA
+            IF is_warning` = TRUE THEN COLOR 5 ELSE COLOR AQUA
         CASE CTL_PAREN_ON
-            COLOR CYAN
+            'will remain usual text colour in a warning box
+            IF is_warning` = FALSE THEN COLOR CYAN
         CASE ASC("?")
             COLOR 28
         CASE ELSE
