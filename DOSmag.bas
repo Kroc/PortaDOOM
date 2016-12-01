@@ -35,11 +35,11 @@ CONST CTL_WARNING = ASC_EXCL '     !
 
 'screen layout
 '-----------------------------------------------------------------------------
-CONST HEAD_TOP = 1 '    row where the header starts
-CONST HEAD_HEIGHT = 3 ' size of the header area
+CONST HEAD_TOP = 1 '....row where the header starts
+CONST HEAD_HEIGHT = 3 '.size of the header area
 
 CONST HEAD_FGND = ROSE 'header foreground colour
-CONST HEAD_BKGD = RED ' header background colour
+CONST HEAD_BKGD = RED '.header background colour
 
 CONST TABS_FGND = AQUA
 CONST TABS_BKGD = BLUE
@@ -63,25 +63,25 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 
 'page data:
 '-----------------------------------------------------------------------------
-CONST PAGE_DIR = "pages\" ' path where to find the dosmag pages
+CONST PAGE_DIR = "pages\" '.path where to find the dosmag pages
 CONST PAGE_EXT = ".dosmag" 'file extension name used for pages
-CONST PAGE_ASC = ASC_HASH ' which character is used to separate page numbers
+CONST PAGE_ASC = ASC_HASH '.which character is used to separate page numbers
 
-DIM SHARED PageName AS STRING '  base name of page, without page number
-DIM SHARED PageNum AS INTEGER '  page number,
+DIM SHARED PageName AS STRING '..base name of page, without page number
+DIM SHARED PageNum AS INTEGER '..page number,
 DIM SHARED PageCount AS INTEGER 'and number of pages in the set
 
 REDIM SHARED PageLines(1) AS STRING
 DIM SHARED PageLineCount AS INTEGER
 DIM SHARED PageLine AS INTEGER 'line number at top of screen
 
-CONST ACTION_GOTO = 1 ' key binding action to load another page
+CONST ACTION_GOTO = 1 '.key binding action to load another page
 CONST ACTION_SHELL = 2 'key binding action to open a file
 
 'a page can define keys and their actions
 TYPE PageKey
-    keycode AS INTEGER '   ASCII key code
-    action AS INTEGER '    the action to take, e.g. ACTION_GOTO
+    keycode AS INTEGER '...ASCII key code
+    action AS INTEGER '....the action to take, e.g. ACTION_GOTO
     param AS STRING * 256 'the action parameter, e.g. the page name to load
 END TYPE
 
@@ -93,7 +93,7 @@ DIM SHARED PageKeyCount%
 CONST ALIGN_LEFT = 0
 CONST ALIGN_CENTER = 1 '"^C"
 CONST ALIGN_RIGHT = 2
-CONST ALIGN_WARN = 3 '  'warning box'
+CONST ALIGN_WARN = 3 '..'warning box'
 
 'prepare a blank page in case nothing is loaded
 PageName$ = ""
@@ -105,8 +105,10 @@ PageLineCount% = 0
 PageKeyCount% = 0
 
 
-'the navigation history (filenames)
-REDIM SHARED historyPages(1) AS STRING
+'the navigation history:
+REDIM SHARED historyPages(1) AS STRING '..page names
+REDIM SHARED historyScroll(1) AS INTEGER 'where the user had scrolled to
+'number of levels of history (for producing the breadcrumb)
 DIM SHARED historyDepth AS INTEGER: historyDepth% = 1
 
 
@@ -147,6 +149,7 @@ loadPage "Home"
 refreshScreen
 
 'input processing: (main loop)
+'-----------------------------------------------------------------------------
 DO
     'limit this processing loop to 30 fps to reduce CPU usage
     _LIMIT 30
@@ -233,14 +236,15 @@ DO
             END SELECT
 
         ELSEIF keycode% = ASC_BKSP THEN
-            'pressing backspace will go up a level
-            'check the history depth
+            'pressing backspace will go up a level;
+            'check the history depth:
             IF historyDepth% = 1 THEN
                 'can't go any fyrther back
                 BEEP
             ELSE
                 historyDepth% = historyDepth% - 1
                 loadPage historyPages$(historyDepth%)
+                scrollTo historyScroll%(historyDepth%)
                 refreshScreen
             END IF
 
@@ -256,14 +260,19 @@ DO
                         'which action to take?
                         SELECT CASE PageKeys(n%).action
                             CASE ACTION_GOTO
+                                'record the current scroll position:
+                                'when going back, we'll restore this
+                                historyScroll%(historyDepth%) = PageLine%
+
                                 'TODO: don't increase history for navigating
                                 '      between pages of the same set
                                 historyDepth% = historyDepth% + 1
                                 REDIM _PRESERVE historyPages$(historyDepth%)
+                                REDIM _PRESERVE historyScroll%(historyDepth%)
                                 loadPage TRIM$(PageKeys(n%).param)
                                 refreshScreen
                                 'don't check for pressed keys,
-                                'when the load will have chaged them!
+                                'when the load will have changed them!
                                 EXIT FOR
 
                             CASE ACTION_SHELL
