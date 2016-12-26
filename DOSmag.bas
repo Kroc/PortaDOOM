@@ -20,6 +20,7 @@
 CONST CTL_ESCAPE = ASC_CARET '     ^
 CONST CTL_CENTER = ASC_C '         C
 CONST CTL_HEADING = ASC_COLON '    :
+CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
 CONST CTL_ITALIC = ASC_USCORE '    _..._
 CONST CTL_LINE1 = ASC_EQUALS '     =
@@ -983,6 +984,7 @@ SUB wrapLine (line$, align%)
 
     '-------------------------------------------------------------------------
 
+    'define the width of the line:
     DIM line_width%
     line_width% = PAGE_WIDTH
     'a 'warning box' will produce shorter wrapping lines
@@ -991,15 +993,15 @@ SUB wrapLine (line$, align%)
 
     '-------------------------------------------------------------------------
 
-    DIM newline$: newline$ = "" 'the line we're building up
-    DIM char% 'ASCII code of current character
+    DIM newline$ '..the line we're building up
+    DIM char% '.....ASCII code of current character
     DIM c%: c% = 1 'current character position in the source line
     DIM l%: l% = 0 'current length of the line being built
 
     'an indent at the beginning of the line
     'will be maintained on wrapped lines
-    DIM indent$: indent$ = ""
-    DIM indent%: indent% = 0
+    DIM indent$
+    DIM indent%
 
     'check for an indent:
     DO
@@ -1031,13 +1033,30 @@ SUB wrapLine (line$, align%)
 
     '-------------------------------------------------------------------------
 
-    DIM word$: word$ = "" 'the current word being built
-    DIM w%: w% = 0 '       length of the current word (excluding escapes)
+    DIM word$ 'the current word being built
+    DIM w% '...length of the current word (excluding escapes)
+
+    'if a line begins with a "-" it's a bullet point
+    IF ASC(line$, c%) = CTL_BULLET THEN
+        'must have a following space
+        IF ASC(line$, c% + 1) = ASC_SPC THEN
+            'increase the indent (for wrapped lines) to after the bullet
+            indent$ = indent$ + "  ": indent% = indent% + 2
+            l% = l% + 2
+            'add the bullet point to the line
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
+            newline$ = newline$ + CHR$(CTL_BULLET)
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
+            newline$ = newline$ + CHR$(ASC_SPC)
+            'skip over the bullet point for the rest of processing
+            c% = c% + 2
+        END IF
+    END IF
 
     'if a line begins with ":" then it's a heading
     DIM is_heading`
-    IF ASC(line$) = CTL_HEADING THEN
-        'set the mode (incase of word-wrapping)
+    IF ASC(line$, c%) = CTL_HEADING THEN
+        'set the mode (in case of word-wrapping)
         is_heading` = TRUE
         'include the escape code
         word$ = CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
