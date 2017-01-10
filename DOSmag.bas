@@ -1,5 +1,5 @@
 'DOSmag : a DOS-like portable front-end for hyperlinked textual content.
-'         copyright (C) Kroc Camen, 2016; MIT license (see LICENSE.TXT)
+'         copyright (C) Kroc Camen, 2016-2017; MIT license (see LICENSE.TXT)
 '=============================================================================
 'WARNING: THIS IS A QB64.NET SOURCE FILE, ENCODED AS ANSI CODE-PAGE 437
 '         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
@@ -33,7 +33,6 @@ CONST CTL_INDENT = ASC_BAR '       |
 CONST CTL_BREAK = ASC_BSLASH '     \\ (manual line-break)
 CONST CTL_WARNING = ASC_EXCL '     !
 
-
 'screen layout
 '-----------------------------------------------------------------------------
 CONST HEAD_TOP = 1 '....row where the header starts
@@ -66,7 +65,7 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 '-----------------------------------------------------------------------------
 CONST PAGE_DIR = "pages\" '.path where to find the dosmag pages
 CONST PAGE_EXT = ".dosmag" 'file extension name used for pages
-CONST PAGE_ASC = ASC_HASH '.which character is used to separate page numbers
+CONST PAGE_ASC = ASC_HASH '.which char is used to separate page numbers
 
 DIM SHARED PageName AS STRING '..base name of page, without page number
 DIM SHARED PageNum AS INTEGER '..page number,
@@ -90,11 +89,9 @@ END TYPE
 REDIM SHARED PageKeys(1) AS PageKey
 DIM SHARED PageKeyCount%
 
-'alignment constants
-CONST ALIGN_LEFT = 0
-CONST ALIGN_CENTER = 1 '"^C"
-CONST ALIGN_RIGHT = 2
-CONST ALIGN_WARN = 3 '..'warning box'
+'format constants
+CONST FORMAT_LEFT = 0 '..left-align text
+CONST FORMAT_CENTER = 1 'center-align text
 
 'prepare a blank page in case nothing is loaded
 PageName$ = ""
@@ -145,7 +142,6 @@ SCREEN 0, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 COLOR PAGE_FGND, PAGE_BKGD: CLS
 
 'display the front-page
-clearScreen
 loadPage "Home"
 refreshScreen
 
@@ -306,26 +302,6 @@ fatalError _
     STRINT$(UBOUND(PageLines$))
 SLEEP: SYSTEM 1
 
-'returns zero for any number below zero
-'=============================================================================
-FUNCTION ZERO% (number%)
-    IF number% < 0 THEN ZERO% = 0 ELSE ZERO% = number%
-END FUNCTION
-
-'limit a number to a minimum or maximum
-'=============================================================================
-FUNCTION RANGE (number, min, max)
-    IF number < min THEN RANGE = min: EXIT FUNCTION
-    IF number > max THEN RANGE = max: EXIT FUNCTION
-    RANGE = number
-END FUNCTION
-
-'limit a number to a maximum
-'=============================================================================
-FUNCTION CEIL (number, max)
-    IF number > max THEN CEIL = nax: EXIT FUNCTION
-    CEIL = number
-END FUNCTION
 
 'why isn't this built-in?
 '=============================================================================
@@ -363,111 +339,9 @@ FUNCTION RTRUNCATE$ (text$, length%)
     END IF
 END FUNCTION
 
-'scroll the page down 1 line
-'=============================================================================
-SUB scrollDown
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
 
-    'can't scroll if already at the bottom
-    pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
-    IF PageLine% = pageBottom% THEN BEEP: EXIT SUB
+'$INCLUDE: 'scroll.bas'
 
-    'move the page
-    PageLine% = PageLine% + 3
-    'don't scroll past the end of the page
-    IF PageLine% > pageBottom% THEN PageLine% = pageBottom%
-    refreshScreen
-END SUB
-
-'scroll the page up 1 line
-'=============================================================================
-SUB scrollUp
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
-
-    'can't scroll up if already at the top
-    IF PageLine% = 1 THEN BEEP: EXIT SUB
-
-    'move the page
-    PageLine% = PageLine% - 3
-    'don't scroll past the top of the page
-    IF PageLine% < 1 THEN PageLine% = 1
-    refreshScreen
-END SUB
-
-'scroll down one page
-'=============================================================================
-SUB scrollPageDown
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
-
-    '(can't scroll past the last line of text)
-    pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
-
-    'can't scroll down if at the bottom already
-    IF PageLine% = pageBottom% THEN BEEP: EXIT SUB
-    'move the page and redraw
-    PageLine% = PageLine% + PAGE_HEIGHT
-    IF PageLine% > pageBottom% THEN PageLine% = pageBottom%
-    refreshScreen
-END SUB
-
-'scroll up one page
-'=============================================================================
-SUB scrollPageUp
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
-
-    'can't scroll up if at the top already
-    IF PageLine% = 1 THEN BEEP: EXIT SUB
-    'move the page and redraw
-    PageLine% = PageLine% - PAGE_HEIGHT
-    IF PageLine% < 1 THEN PageLine% = 1
-    refreshScreen
-END SUB
-
-'scroll to the top of the page
-'=============================================================================
-SUB scrollTop
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
-
-    PageLine% = 1
-    refreshScreen
-END SUB
-
-'scroll to the bottom of the page
-'=============================================================================
-SUB scrollBottom
-    'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
-
-    PageLine% = PageLineCount% - PAGE_HEIGHT + 1
-    refreshScreen
-END SUB
-
-'scroll to a specific line number (used when refreshing page)
-'=============================================================================
-SUB scrollTo (line_num%)
-    'validate given number:
-    IF line_num% < 1 THEN
-        'can't scroll above the page!
-        PageLine% = 1
-
-    ELSEIF PageLineCount% <= PAGE_HEIGHT THEN
-        'if the page has no scrollbar?
-        PageLine% = 1
-
-    ELSE
-        'can't scroll too far down (this is important when refreshing
-        'a page and the length has changed)
-        page_bottom% = PageLineCount% - PAGE_HEIGHT + 1
-        IF line_num% > page_bottom% THEN line_num% = page_bottom%
-        PageLine% = line_num%
-    END IF
-    refreshScreen
-END SUB
 
 'go to the next page in the set
 '=============================================================================
@@ -509,6 +383,7 @@ SUB helpScreen
         _DELAY 0.01
     NEXT
 
+    '-------------------------------------------------------------------------
     DO
         'wait for any key press
         SLEEP
@@ -538,6 +413,7 @@ SUB helpScreen
         END IF
     LOOP
 
+    '-------------------------------------------------------------------------
     FOR n% = UBOUND(HelpText$) + 3 TO 0 STEP -1
         StatusHeight%% = n%
         refreshScreen
@@ -567,19 +443,14 @@ SUB refreshScreen
     SCREEN 0, , 1 - buffer%, buffer%
 END SUB
 
-'clears the screen and draws the base UI used everywhere
-'=============================================================================
-SUB clearScreen
-    clearHeader
-    clearPage
-    clearStatus
-END SUB
-
 'draw the title of the current page and the navigation breadcrumb
 '=============================================================================
 SUB drawHeader
     'clear the existing page line (title and page count)
-    clearHeader
+    COLOR , HEAD_BKGD
+    FOR n% = HEAD_TOP TO HEAD_TOP + HEAD_HEIGHT
+        LOCATE n%, 1: PRINT SPACE$(SCREEN_WIDTH);
+    NEXT
 
     'draw the lines for the tab background
     COLOR HEAD_FGND, HEAD_BKGD
@@ -596,8 +467,8 @@ SUB drawHeader
     IF PageCount% > 1 THEN
         DIM tab_text$, text_len%
 
-        tab_text$ = "page " + STRINT$(PageNum%) + _
-                    " of " + STRINT$(PageCount%)
+        tab_text$ = "page " + STRINT$(PageNum%) _
+                  + " of " + STRINT$(PageCount%)
 
         'if there's previous pages, show the indicator
         ''IF PageNum% > 1 THEN tab_text$ = " " + tab_text$
@@ -670,21 +541,21 @@ SUB drawHeader
     COLOR HEAD_FGND: PRINT "Ô";
 END SUB
 
-'clear the header area and colour its background
-'=============================================================================
-SUB clearHeader
-    COLOR , HEAD_BKGD
-    FOR n% = HEAD_TOP TO HEAD_TOP + HEAD_HEIGHT
-        LOCATE n%, 1: PRINT SPACE$(SCREEN_WIDTH);
-    NEXT
-END SUB
-
 'draw the page area where the content goes
 '=============================================================================
 SUB drawPage
     'clear the background before displaying the page
     '(not all lines will fill the full 80 cols)
-    clearPage
+    COLOR , PAGE_BKGD
+    FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
+        LOCATE n%, 1
+        PRINT SPACE$(SCREEN_WIDTH);
+    NEXT
+
+    'if there's not enough text, no scroll bar is shown
+    IF PageLineCount% > PAGE_HEIGHT THEN drawScrollbar
+
+    '-------------------------------------------------------------------------
 
     _CONTROLCHR OFF
 
@@ -697,19 +568,6 @@ SUB drawPage
     NEXT
 
     _CONTROLCHR ON
-END SUB
-
-'clear the page-display area to avoid garabge when scrolling
-'=============================================================================
-SUB clearPage
-    COLOR , PAGE_BKGD
-    FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
-        LOCATE n%, 1
-        PRINT SPACE$(SCREEN_WIDTH);
-    NEXT
-
-    'if there's not enough text, no scroll bar is shown
-    IF PageLineCount% > PAGE_HEIGHT THEN drawScrollbar
 END SUB
 
 'draws the scroll bar and thumb
@@ -756,7 +614,20 @@ END SUB
 'draw the status bar at the bottom of the screen
 '=============================================================================
 SUB drawStatus
-    clearStatus
+    COLOR BLACK, CYAN
+    IF StatusHeight%% = 0 THEN
+        LOCATE SCREEN_HEIGHT, 1
+        PRINT SPACE$(SCREEN_WIDTH);
+
+    ELSEIF StatusHeight%% > 0 THEN
+        FOR n% = 0 TO StatusHeight%%
+            LOCATE SCREEN_HEIGHT - n%, 1
+            PRINT SPACE$(SCREEN_WIDTH);
+        NEXT
+    END IF
+
+    '-------------------------------------------------------------------------
+
     LOCATE SCREEN_HEIGHT - StatusHeight%%, 1
     PRINT " F1:HELP  BKSP:BACK                                    F11:FULLSCREEN  ESC:QUIT";
 
@@ -775,22 +646,6 @@ SUB drawStatus
         _CONTROLCHR ON
     END IF
 END SUB
-
-'=============================================================================
-SUB clearStatus
-    COLOR BLACK, CYAN
-    IF StatusHeight%% = 0 THEN
-        LOCATE SCREEN_HEIGHT, 1
-        PRINT SPACE$(SCREEN_WIDTH);
-
-    ELSEIF StatusHeight%% > 0 THEN
-        FOR n% = 0 TO StatusHeight%%
-            LOCATE SCREEN_HEIGHT - n%, 1
-            PRINT SPACE$(SCREEN_WIDTH);
-        NEXT
-    END IF
-END SUB
-
 
 'load a page from disk
 '=============================================================================
@@ -857,45 +712,22 @@ SUB loadPage (page_name$)
         DIM line$: LINE INPUT #1, line$
         'convert the line from UTF-8 to ANSI(cp437)
         line$ = UTF8ANSI$(line$)
-        'shortcut for blank lines
-        IF line$ = "" THEN
-            addLine ""
 
-        ELSEIF ASC(line$) = CTL_WARNING THEN
-            'a line beginning with "!" will be a warning 'box':
-            'insert the top border box-graphic
-            addLine CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) _
-                  + "Ú" + STRING$(PAGE_WIDTH - 4, "Ä") + "¿"
-            'add the actual box text
-            wrapLine MID$(line$, 2), ALIGN_WARN
-            'add the bottom-border box-graphic
-            addLine CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) _
-                  + "À" + STRING$(PAGE_WIDTH - 4, "Ä") + "Ù"
-
-        ELSEIF left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE1) _
-            OR left$(line$, 2) = CHR$(CTL_HEADING) + CHR$(CTL_LINE2) THEN
-            'dividing lines:
-            '(the `printLine` routine handles the actual formatting of lines,
-            ' it uses only escape codes rather than the "shorthand")
-            addLine CHR$(CTL_ESCAPE) + MID$(line$, 2, 1)
-
-        ELSEIF LEFT$(line$, 2) = CHR$(CTL_ESCAPE) + CHR$(CTL_CENTER) THEN
-            'centre line:
-            wrapLine MID$(line$, 3), ALIGN_CENTER
-
-        ELSEIF LEFT$(line$, 5) = "$REM=" THEN
+        IF LEFT$(line$, 5) = "$REM=" THEN
+            '.................................................................
             'skip REM lines; allows authors to put comments into the page
             'without them appearing on-screen
 
         ELSEIF LEFT$(line$, 5) = "$KEY:" THEN
+            '.................................................................
             'key definition, the key name follows
             'is there an equals sign?
             DIM keypos%: keypos% = INSTR(6, line$, "=")
             'if an equals sign doesn't follow,
             'this is not a valid key definition
             IF keypos% = 0 THEN
-                fatalError "The page '" + file_path$ + "' " +_
-                           "contains an invalid key definition"
+                        fatalError "The page '" + file_path$ + "' " +_
+                                   "contains an invalid key definition"
             END IF
             'extract the keyname
             keyname$ = MID$(line$, 6, keypos% - 6)
@@ -908,8 +740,8 @@ SUB loadPage (page_name$)
                     keycode% = ASC(keyname$)
 
                 CASE ELSE
-                    fatalError "The page '" + file_path$ + "' " +_
-                               "contains an invalid key definition"
+                    fatalError "The page '" + file_path$ + "' " _
+                             + "contains an invalid key definition"
             END SELECT
 
             'extract the action & param portion of the key definition
@@ -923,8 +755,8 @@ SUB loadPage (page_name$)
                 param$ = TRIM$(MID$(action$, 7))
                 action% = ACTION_SHELL
             ELSE
-                fatalError "The page '" + file_path$ + "' " +_
-                           "contains an invalid key definition"
+                fatalError "The page '" + file_path$ + "' " _
+                         + "contains an invalid key definition"
             END IF
 
             PageKeyCount% = PageKeyCount% + 1
@@ -934,8 +766,42 @@ SUB loadPage (page_name$)
             PageKeys(PageKeyCount%).param = param$
 
         ELSE
-            'not a code, just a line of text
-            wrapLine line$, ALIGN_LEFT
+            'not a meta line, formattable text:
+            '.................................................................
+            'an indent at the beginning of the line
+            'will be maintained on wrapped lines
+            DIM indent%: indent% = 0 'length of the indent (spaces)
+            DIM c%: c% = 1 'current character position in the source line
+
+            'check for an indent:
+            DO
+                'watch out for the possibility of a white-space only line
+                IF c% >= LEN(line$) THEN EXIT DO
+                'check the charcter
+                SELECT CASE ASC(line$, c%)
+                    CASE ASC_TAB
+                        'if it's a tab, account for 8 spaces
+                        'in the line wrapping
+                        indent% = indent% + 8
+                        c% = c% + 1
+
+                    CASE ASC_SPC
+                        indent% = indent% + 1
+                        c% = c% + 1
+
+                    CASE ELSE
+                        'we've reached a non white-space character
+                        EXIT DO
+
+                END SELECT
+            LOOP
+
+            'if there is an indent, slice it off
+            IF c% > 1 THEN line$ = MID$(line$, c%)
+
+            'process formatting-codes in the line (and word-wrap)
+            formatLine indent%, line$
+
         END IF
     LOOP
     CLOSE #1
@@ -945,7 +811,6 @@ SUB loadPage (page_name$)
     'set the current history to this page
     '(the key handling will increase history depth before loading the page)
     historyPages$(historyDepth%) = page_name$
-
     PageLine% = 1
 END SUB
 
@@ -966,103 +831,149 @@ END FUNCTION
 '=============================================================================
 FUNCTION pageNumber$ (page_number%)
     'ensure that it's always double-digit
-    IF page_number% < 10 THEN
-        pageNumber$ = CHR$(PAGE_ASC) + "0" + STRINT$(page_number%)
-    ELSE
-        pageNumber$ = CHR$(PAGE_ASC) + STRINT$(page_number%)
-    END IF
+    IF page_number% < 10 _
+        THEN pageNumber$ = CHR$(PAGE_ASC) + "0" + STRINT$(page_number%) _
+        ELSE pageNumber$ = CHR$(PAGE_ASC) + STRINT$(page_number%)
 END FUNCTION
 
-'walk throgh the line and word-wrap it
-'(control codes will not count toward word-wrapping)
 '=============================================================================
-SUB wrapLine (line$, align%)
+SUB formatLine (indent%, line$)
     'always right-trim a line as this can cause unexpected wrapping
     line$ = RTRIM$(line$)
-    'if this is a blank line, process it quickly
-    IF line$ = "" THEN addLine "": EXIT SUB
 
-    '-------------------------------------------------------------------------
-
-    'define the width of the line:
-    DIM line_width%
-    line_width% = PAGE_WIDTH
-    'a 'warning box' will produce shorter wrapping lines
-    'to account for the wrapping box graphic
-    IF align% = ALIGN_WARN THEN line_width% = line_width% - 5
+    'define the width of the line for word-wrapping: (sans-indent)
+    DIM line_width%: line_width% = PAGE_WIDTH - indent%
+    'some format codes may increase the indent on the next line
+    '(for example, bullet points)
+    DIM next_indent%: next_indent% = indent%
 
     '-------------------------------------------------------------------------
 
     DIM newline$ '..the line we're building up
     DIM char% '.....ASCII code of current character
     DIM c%: c% = 1 'current character position in the source line
-    DIM l%: l% = 0 'current length of the line being built
-
-    'an indent at the beginning of the line
-    'will be maintained on wrapped lines
-    DIM indent$
-    DIM indent%
-
-    'check for an indent:
-    DO
-        'watch out for the possibility of a white-space only line
-        IF c% >= LEN(line$) THEN EXIT DO
-        'check the charcter
-        SELECT CASE ASC(line$, c%)
-            CASE ASC_TAB
-                'if its a tab, account for 8 spaces in the line wrapping
-                indent$ = indent$ + SPACE$(8)
-                indent% = indent% + 8
-                c% = c% + 1
-
-            CASE ASC_SPC
-                indent$ = indent$ + " "
-                indent% = indent% + 1
-                c% = c% + 1
-
-            CASE ELSE
-                'we've reached a non white-space character,
-                'the line will begin with the indent we've detected
-                newline$ = indent$: l% = indent%
-                EXIT DO
-
-        END SELECT
-    LOOP
-
-    'TODO: indent not valid on centre (throw indent away?)
-
-    '-------------------------------------------------------------------------
+    DIM l%: l% = 0 'length of the line being built (sans format-codes)
 
     DIM word$ 'the current word being built
-    DIM w% '...length of the current word (excluding escapes)
+    DIM w% '...length of the current word (excluding format-codes)
 
-    'if a line begins with a "-" it's a bullet point
+    'adding a space on the end allows us to do a 1-character look-ahead
+    'without having to avoid indexing past the end of the string
+    line$ = line$ + " "
+
+    'warning box?
+    '-------------------------------------------------------------------------
+    'a line that begins with an exclamation mark produces a "warning box".
+    'we must insert the top and bottom borders of the box, but continguous
+    'lines with the marker contribute to a single box
+    STATIC is_warn`
+
+    IF ASC(line$, c%) = CTL_WARNING THEN
+        'skip the marker
+        c% = c% + 1
+        'if there is a following space, ignore it (typograhical)
+        IF ASC(line$, c%) = ASC_SPC THEN c% = c% + 1
+
+        'if this is the opening line of the warning-box, include the border
+        IF is_warn` = FALSE THEN
+            is_warn` = TRUE
+            'create the top-border
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
+            newline$ = newline$ + "Ú"
+            newline$ = newline$ + STRING$(line_width% - 4, "Ä")
+            newline$ = newline$ + "¿"
+            'dispatch the top-border line and continue with intended line
+            GOSUB addLine: newline$ = ""
+        END IF
+
+        'add the warning box formatting code
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
+
+        'reduce the width of the line to account
+        'for the box borders when word-wrapping
+        line_width% = line_width% - 6
+    ELSE
+        'if we were in a warning box, and this line doesn't continue it,
+        'we need to terminate the box with the bottom border
+        IF is_warn` = TRUE THEN
+            is_warn` = FALSE
+            'create the bottom-border
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
+            newline$ = newline$ + "À"
+            newline$ = newline$ + STRING$(line_width% - 4, "Ä")
+            newline$ = newline$ + "Ù"
+            'dispatch the bottom-border line and continue with intended line
+            GOSUB addLine: newline$ = ""
+        END IF
+    END IF
+
+    'is this a completely blank line?
+    'we need to check this after processing the warning box as a blank line
+    'following a warning box must trigger the closing warning-box border
+    'before adding the blank line itself
+    IF LTRIM$(line$) = "" THEN
+        'skip any further processing
+        addLine 0, ""
+        EXIT SUB
+    END IF
+
+    'bullet point?
+    '-------------------------------------------------------------------------
+    'if a line begins with a "-" it's a bullet point;
+    'bullet-points cannot be centred or right-aligned
     IF ASC(line$, c%) = CTL_BULLET THEN
         'must have a following space
         IF ASC(line$, c% + 1) = ASC_SPC THEN
-            'increase the indent (for wrapped lines) to after the bullet
-            indent$ = indent$ + "  ": indent% = indent% + 2
-            l% = l% + 2
             'add the bullet point to the line
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
             newline$ = newline$ + CHR$(CTL_BULLET)
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
             newline$ = newline$ + CHR$(ASC_SPC)
+            l% = l% + 2
+            'increase the indent (for wrapped lines) to after the bullet
+            next_indent% = next_indent% + 2
             'skip over the bullet point for the rest of processing
             c% = c% + 2
         END IF
     END IF
 
-    'if a line begins with ":" then it's a heading
+    'centered?
+    '-------------------------------------------------------------------------
+    DIM align%
+
+    IF ASC(line$, c%) = CTL_ESCAPE THEN
+        IF ASC(line$, c% + 1) = CTL_CENTER THEN
+            'set the mode, when a line is dispatched, it'll be centred
+            align% = FORMAT_CENTER
+            'do not display the marker
+            c% = c% + 2
+        END IF
+    END IF
+
+    'heading?
+    '-------------------------------------------------------------------------
+    'if a line begins with ":" then it's a heading or divider line
     DIM is_heading`
     IF ASC(line$, c%) = CTL_HEADING THEN
-        'set the mode (in case of word-wrapping)
-        is_heading` = TRUE
-        'include the escape code
-        word$ = CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
-        'first character can be skipped
+        'skip the heading marker
         c% = c% + 1
+        'check for the dividing lines
+        IF ASC(line$, c%) = CTL_LINE1 _
+        OR ASC(line$, c%) = CTL_LINE2 _
+        THEN
+            'just add the control code, the `printLine` sub will draw it
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(line$, c%))
+            'ignore the rest of the line!
+            GOSUB addLine: EXIT SUB
+        ELSE
+            'set the mode (in case of word-wrapping)
+            is_heading` = TRUE
+            'include the escape code
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
+        END IF
     END IF
+
+    '-------------------------------------------------------------------------
 
     'bold / italic are only valid on word-boundaries;
     'the beginning of a line is always a word-boundary
@@ -1074,10 +985,6 @@ SUB wrapLine (line$, align%)
     DIM is_italic`, word_italic`
     DIM is_paren`, word_paren`
     DIM is_key`, word_key`
-
-    'adding a space on the end allows us to do a 1-character look-ahead
-    'without having to avoid indexing past the end of the string
-    line$ = line$ + " "
 
     'process text:
     FOR c% = c% TO LEN(line$) - 1
@@ -1111,15 +1018,15 @@ SUB wrapLine (line$, align%)
 
         SELECT CASE char%
             CASE CTL_INDENT
-                '-------------------------------------------------------------
-                'set the indent to the current position
-                indent% = l% + w%: indent$ = SPACE$(indent%)
+                '.............................................................
+                'set the following indent to the current position
+                next_indent% = l% + w%
                 'word-break immediately
                 char% = 0: GOSUB addWord
                 is_boundary` = TRUE
 
             CASE CTL_HEADING
-                '-------------------------------------------------------------
+                '.............................................................
                 IF ( _
                     ASC(line$, c% - 1) = ASC_SPC _
                  OR ASC(line$, c% - 1) = ASC_TAB _
@@ -1128,13 +1035,13 @@ SUB wrapLine (line$, align%)
                     GOSUB addWord
                     ''GOSUB addControlChar
                     'set the indent to the current position
-                    indent% = l% + w% + 1: indent$ = SPACE$(indent%)
+                    next_indent% = l% + w% + 1
                 ELSE
                     GOSUB addChar
                 END IF
 
             CASE CTL_KEY_ON
-                '-------------------------------------------------------------
+                '.............................................................
                 'don't allow within 'italic'
                 IF is_italic` = FALSE THEN
                     'enable the key mode and include the bracket
@@ -1144,7 +1051,7 @@ SUB wrapLine (line$, align%)
                 GOSUB addChar
 
             CASE CTL_PAREN_ON
-                '-------------------------------------------------------------
+                '.............................................................
                 'automatic paren mode will only occur on a word boundary
                 IF is_boundary` = TRUE THEN
                     'enable the paren mode and include the bracket
@@ -1157,7 +1064,7 @@ SUB wrapLine (line$, align%)
                 is_boundary` = TRUE
 
             CASE CTL_PAREN_OFF
-                '-------------------------------------------------------------
+                '.............................................................
                 GOSUB addChar
                 IF is_paren` = TRUE THEN
                     'end paren mode
@@ -1168,7 +1075,7 @@ SUB wrapLine (line$, align%)
                 is_boundary` = TRUE
 
             CASE CTL_BOLD, CTL_ITALIC
-                '-------------------------------------------------------------
+                '.............................................................
                 IF char% = CTL_BOLD THEN
                     'check the next character:
                     SELECT CASE ASC(line$, c% + 1)
@@ -1235,7 +1142,7 @@ SUB wrapLine (line$, align%)
                 END IF
 
             CASE CTL_BREAK
-                '-------------------------------------------------------------
+                '.............................................................
                 'double back-slash creates a manual line-break
                 IF ASC(line$, c% + 1) = CTL_BREAK THEN
                     char% = 0: GOSUB addWord: GOSUB lineBreak
@@ -1247,19 +1154,19 @@ SUB wrapLine (line$, align%)
                 END IF
 
             CASE ASC_APOS
-                '-------------------------------------------------------------
+                '.............................................................
                 'an apostrophe is a word-boundary, but not a word-break;
                 'i.e. `_bob_'s italics`
                 GOSUB addChar
                 is_boundary` = TRUE
 
             CASE ASC_FSLASH, ASC_BSLASH
-                '-------------------------------------------------------------
+                '.............................................................
                 'forward and back slash are word-breaks & word-boundaries
                 GOSUB addWord
 
             CASE ASC_SPC, ASC_TAB, ASC_DASH
-                '-------------------------------------------------------------
+                '.............................................................
                 IF char% = ASC_TAB THEN
                     'this is white-space so add the current word to the line
                     char% = 0: GOSUB addWord
@@ -1274,7 +1181,7 @@ SUB wrapLine (line$, align%)
                 GOSUB addWord
 
             CASE ELSE
-                '-------------------------------------------------------------
+                '.............................................................
                 'add character to current word
                 GOSUB addChar
 
@@ -1326,9 +1233,13 @@ SUB wrapLine (line$, align%)
     'line has wrapped, dispatch the current line:
     GOSUB addLine
 
-    'begin a new line (use the indent if detected)
-    newline$ = indent$: l% = indent%
+    newline$ = "": l% = 0
+    this_indent% = next_indent%: indent% = this_indent%
 
+    'currently in a warning-box?
+    IF is_warn` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
+    END IF
     'is this a heading we're processing?
     IF is_heading` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
@@ -1375,67 +1286,57 @@ SUB wrapLine (line$, align%)
     addLine:
     '-------------------------------------------------------------------------
     'does the line need to be centred?
-    IF align% = ALIGN_CENTER THEN
+    IF (align% AND FORMAT_CENTER) > 0 THEN
         'is the line shorter than the screen?
         '(this is the width without the control code characters)
-        IF l% < PAGE_WIDTH THEN
+        IF l% < line_width% THEN
             'pad the left-side with enough spaces to centre the text
-            newline$ = SPACE$((PAGE_WIDTH - l%) / 2) + newline$
+            newline$ = SPACE$((line_width% - l%) / 2) + newline$
         END IF
-
-    ELSEIF align% = ALIGN_WARN THEN
-        'the warning box formatting is handled by the `printLine` function
-        newline$ = CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING) + newline$
-
     END IF
     'add the line to the array of screen-ready converted lines
-    addLine newline$
+    addLine indent%, RTRIM$(newline$)
 
     RETURN
 END SUB
 
 'add a single line to the page
 '=============================================================================
-SUB addLine (line$)
+SUB addLine (indent%, line$)
     'increase the number of lines stored
     PageLineCount% = PageLineCount% + 1
     REDIM _PRESERVE PageLines$(PageLineCount%)
-    PageLines$(PageLineCount%) = line$
+    PageLines$(PageLineCount%) = SPACE$(indent%) + line$
 END SUB
 
 'prints a line of text with formatting codes
 '=============================================================================
 SUB printLine (line$)
-    'divider lines can be handled with little processing
-    IF line$ = CHR$(CTL_ESCAPE) + CHR$(CTL_LINE1) THEN
-        COLOR YELLOW
-        PRINT STRING$(PAGE_WIDTH, "Í");
-        EXIT SUB
-
-    ELSEIF line$ = CHR$(CTL_ESCAPE) + CHR$(CTL_LINE2) THEN
-        COLOR YELLOW
-        PRINT STRING$(PAGE_WIDTH, "Ä");
-        EXIT SUB
-
-    END IF
-
-    '-------------------------------------------------------------------------
-
     'this will keep track of the nesting of modes
     REDIM mode_stack%(1)
     DIM mode_count%: mode_count% = 1
     'start with the page's default colour
     GOSUB setmode
 
+    '-------------------------------------------------------------------------
+    DIM line_width%: line_width% = PAGE_WIDTH
+    'current number of characters printed to screen:
+    '(a line will contain format codes, so the number of chars on screen
+    ' may not match the character index of the string)
+    DIM l%
+
     DIM is_heading`
-    DIM is_warning 'if printing a warning box "^!..."
-    DIM is_key` '...if handling a key indicator "^[...^]"
-    DIM is_paren` '.if in parentheses "^( ... ^)"
-    DIM is_bold` '..if in bold mode "^B"
-    DIM is_italic` 'if in italic mode "^I"
+    DIM is_warning` 'if printing a warning box "^!..."
+    DIM is_key` '....if handling a key indicator "^[...^]"
+    DIM is_paren` '..if in parentheses "^( ... ^)"
+    DIM is_bold` '...if in bold mode "^B"
+    DIM is_italic` '.if in italic mode "^I"
+
+    'add a space to the end to allow for a one-letter look-ahead
+    line$ = RTRIM$(line$) + " "
 
     DIM c%, char%
-    FOR c% = 1 TO LEN(line$)
+    FOR c% = 1 TO LEN(line$) - 1
         'read a character
         char% = ASC(line$, c%)
 
@@ -1446,86 +1347,105 @@ SUB printLine (line$)
 
             'which control code is it?
             SELECT CASE char%
-                CASE CTL_WARNING '--------------------------------------------
+                CASE CTL_WARNING
                     'begin a warning box
+                    '.........................................................
                     is_warning` = TRUE
-                    LOCATE , 3
-                    GOSUB pushmode
+                    line_width% = line_width% - 6
+                    LOCATE , l% + 3
                     'draw the border in flashing red
+                    GOSUB pushmode
                     COLOR 20, LTGREY
                     'draw the top & bottom box borders in the right place
-                    PRINT "³" + SPACE$(PAGE_WIDTH - 4) + "³";
+                    PRINT "³" + SPACE$(2 + line_width% - l%) + "³";
                     IF ASC(line$, c% + 1) = ASC("Ú") _
                     OR ASC(line$, c% + 1) = ASC("À") _
                     THEN
-                        LOCATE , 3
+                        LOCATE , l% + 3
                     ELSE
-                        LOCATE , 5
+                        LOCATE , l% + 5
                         'return to non-flashing red for the text
                         COLOR RED
                     END IF
 
-                CASE CTL_HEADING '--------------------------------------------
-                    'heading
-                    is_heading` = NOT is_heading`
-                    IF is_heading` = TRUE THEN
-                        GOSUB pushmode
-                    ELSE
-                        GOSUB popmode
-                    END IF
+                CASE CTL_LINE1
+                    '.........................................................
+                    GOSUB pushmode
+                    PRINT STRING$(line_width% - l%, "Í");
+                    GOSUB popmode
 
-                CASE CTL_PAREN_ON '-------------------------------------------
+                CASE CTL_LINE2
+                    '.........................................................
+                    GOSUB pushmode
+                    PRINT STRING$(line_width% - l%, "Ä");
+                    GOSUB popmode
+
+                CASE CTL_HEADING
+                    'heading:
+                    '..........................................................
+                    is_heading` = NOT is_heading`
+                    IF is_heading` = TRUE _
+                        THEN GOSUB pushmode _
+                        ELSE GOSUB popmode
+
+                CASE CTL_PAREN_ON
+                    '..........................................................
                     'enter parentheses
                     is_paren` = TRUE
                     GOSUB pushmode
 
-                CASE CTL_PAREN_OFF '------------------------------------------
+                CASE CTL_PAREN_OFF
+                    '..........................................................
                     'end parenetheses mode
                     is_paren` = FALSE
                     GOSUB popmode
 
-                CASE CTL_KEY_ON '---------------------------------------------
+                CASE CTL_KEY_ON
+                    '..........................................................
                     'set key mode on, the closing bracket will turn it off
                     is_key` = TRUE
                     GOSUB pushmode
 
-                CASE CTL_KEY_OFF '--------------------------------------------
+                CASE CTL_KEY_OFF
+                    '..........................................................
                     'end key mode
                     is_key` = FALSE
                     GOSUB popmode
 
-                CASE CTL_BOLD '-----------------------------------------------
+                CASE CTL_BOLD
+                    '.........................................................
                     'enable / disable bold
                     is_bold` = NOT is_bold`
-                    IF is_bold` = TRUE THEN
-                        GOSUB pushmode
-                    ELSE
-                        GOSUB popmode
-                    END IF
+                    IF is_bold` = TRUE _
+                        THEN GOSUB pushmode _
+                        ELSE GOSUB popmode
 
-                CASE CTL_ITALIC '---------------------------------------------
+                CASE CTL_ITALIC
+                    '..........................................................
                     'enable / disable italic
                     is_italic` = NOT is_italic`
-                    IF is_italic` = TRUE THEN
-                        GOSUB pushmode
-                    ELSE
-                        GOSUB popmode
-                    END IF
+                    IF is_italic` = TRUE _
+                        THEN GOSUB pushmode _
+                        ELSE GOSUB popmode
 
                 CASE ELSE
+                    '.........................................................
                     'not a valid control code, print as normal text
                     PRINT CHR$(CTL_ESCAPE) + CHR$(char%);
+                    l% = l% + 2
 
             END SELECT
 
         ELSEIF char% = 0 THEN
-            char% = ASC("?")
+            char% = ASC_QMARK
             GOSUB pushmode
             PRINT "?";
             GOSUB popmode
+            l% = l% + 1
         ELSE
             'print the character as-is to screen
             PRINT CHR$(char%);
+            l% = l% + 1
         END IF
     NEXT
     COLOR , PAGE_BKGD
@@ -1550,19 +1470,21 @@ SUB printLine (line$)
             COLOR RED
         CASE CTL_HEADING
             COLOR YELLOW
+        CASE CTL_LINE1, CTL_LINE2
+            IF is_warning` = TRUE THEN COLOR RED ELSE COLOR YELLOW
         CASE CTL_BOLD
             IF is_warning` = TRUE THEN COLOR BLACK ELSE COLOR WHITE
         CASE CTL_ITALIC
             IF is_warning` = TRUE THEN COLOR DKGREY ELSE COLOR LIME
         CASE CTL_KEY_ON
-            IF is_warning` = TRUE THEN COLOR 5 ELSE COLOR AQUA
+            IF is_warning` = TRUE THEN COLOR PURPLE ELSE COLOR AQUA
         CASE CTL_PAREN_ON
             'will remain usual text colour in a warning box
             IF is_warning` = FALSE THEN COLOR CYAN
-        CASE ASC("?")
+        CASE ASC_QMARK
             COLOR 28
         CASE ELSE
-            COLOR PAGE_FGND
+            COLOR PAGE_FGND, PAGE_BKGD
     END SELECT
     RETURN
 END SUB
@@ -1789,4 +1711,3 @@ FUNCTION UTF8ANSI$ (text$)
         END SELECT
     NEXT
 END FUNCTION
-

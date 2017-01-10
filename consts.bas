@@ -1,5 +1,5 @@
 'DOSmag : a DOS-like portable front-end for hyperlinked textual content.
-'         copyright (C) Kroc Camen, 2016; MIT license (see LICENSE.TXT)
+'         copyright (C) Kroc Camen, 2016-2017; MIT license (see LICENSE.TXT)
 '=============================================================================
 'WARNING: THIS IS A QB64.NET SOURCE FILE, ENCODED AS ANSI CODE-PAGE 437
 '         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
