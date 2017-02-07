@@ -1234,11 +1234,16 @@ SUB formatLine (indent%, line$)
     GOSUB addLine
 
     newline$ = "": l% = 0
+    'set the correct indent and wrap-point
     this_indent% = next_indent%: indent% = this_indent%
+    line_width% = PAGE_WIDTH - indent%
 
     'currently in a warning-box?
     IF is_warn` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
+        'reduce the width of the line to account
+        'for the box borders when word-wrapping
+        line_width% = line_width% - 6
     END IF
     'is this a heading we're processing?
     IF is_heading` = TRUE THEN
