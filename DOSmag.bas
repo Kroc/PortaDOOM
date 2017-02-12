@@ -35,6 +35,9 @@ CONST CTL_WARNING = ASC_EXCL '     !
 
 'screen layout
 '-----------------------------------------------------------------------------
+CONST ASC_SCROLL_TRACK = 176 'ASCII code for the scrolling track
+CONST ASC_SCROLL_THUMB = 219 'ASCII code for the scrolling thumb
+
 CONST HEAD_TOP = 1 '....row where the header starts
 CONST HEAD_HEIGHT = 3 '.size of the header area
 
@@ -76,7 +79,8 @@ DIM SHARED PageLineCount AS INTEGER
 DIM SHARED PageLine AS INTEGER 'line number at top of screen
 
 CONST ACTION_GOTO = 1 '.key binding action to load another page
-CONST ACTION_SHELL = 2 'key binding action to open a file
+CONST ACTION_PAGE = 2 '.key binding action to switch pages in a set
+CONST ACTION_SHELL = 3 'key binding action to open a file
 
 'a page can define keys and their actions
 TYPE PageKey
@@ -113,17 +117,17 @@ DIM SHARED historyDepth AS INTEGER: historyDepth% = 1
 'help screen
 '-----------------------------------------------------------------------------
 DIM SHARED HelpText$(14)
-HelpText$(1) = "  [F1] = Hide / show these instructions"
+HelpText$(1) = "     [F1] = Hide / show these instructions"
 HelpText$(2) = ""
 HelpText$(3) = "Press the keys indicated between square brackets to navigate to a section."
 HelpText$(4) = "Press [BKSP] (backspace) to return to the previous section."
 HelpText$(5) = ""
 HelpText$(6) = "Each section will have one or more pages:"
 HelpText$(7) = ""
-HelpText$(8) = "   [] = Previous page       [] = Next page (or right-mouse-click)"
+HelpText$(8) = "      [] = Previous page       [] = Next page (or R-CLICK)"
 HelpText$(9) = ""
-HelpText$(10) = "   [] = Scroll-up page (or mouse-wheel up)"
-HelpText$(11) = "   [] = Scroll-down page (or mouse-wheel down)"
+HelpText$(10) = "      [] = Scroll-up page (or MWHEEL-FWD)"
+HelpText$(11) = "      [] = Scroll-down page (or MWHEEL-BCK)"
 HelpText$(12) = ""
 HelpText$(13) = "   [PgUp] = scroll-up one screen-full    [HOME] = Scroll to top of page"
 HelpText$(14) = "   [PgDn] = scroll-down one screen-full   [END] = Scroll to bottom of page"
@@ -272,6 +276,16 @@ DO
                                 'when the load will have changed them!
                                 EXIT FOR
 
+                            CASE ACTION_PAGE
+                                'change to another page in the set
+                                'without increasing history
+                                loadPage PageName$ + " " + _
+                                         TRIM(PageKeys(n%).param)
+                                refreshScreen
+                                'don't check for pressed keys,
+                                'when the load will have changed them!
+                                EXIT FOR
+
                             CASE ACTION_SHELL
                                 'switch to the files directory
                                 cwd$ = _CWD$: CHDIR "files"
@@ -353,7 +367,7 @@ SUB nextPage
         'switch pages, note that this doesn't increase
         'history depth, that's only for navigation between
         'different page sets
-        loadPage PageName$ + pageNumber$(PageNum% + 1)
+        loadPage PageName$ + " " + pageNumber$(PageNum% + 1)
         refreshScreen
     END IF
 END SUB
@@ -368,7 +382,7 @@ SUB prevPage
         'switch pages, note that this doesn't increase
         'history depth, that's only for navigation between
         'different page sets
-        loadPage PageName$ + pageNumber$(PageNum% - 1)
+        loadPage PageName$ + " " + pageNumber$(PageNum% - 1)
         refreshScreen
     END IF
 END SUB
@@ -493,12 +507,19 @@ SUB drawHeader
     '-------------------------------------------------------------------------
     DIM bread_crumb$
     FOR n% = 1 TO historyDepth%
-        'get the file name from the history
-        DIM crumb$: crumb$ = historyPages$(n%)
+        'get the file name from the history;
+        DIM crumb$
+        'when on the front page we show the root name (typically "home"),
+        'but on the first level and below we don't show that
+        IF n% = 1 AND historyDepth% > 1 THEN
+            crumb$ = historyPages$(n% + 1)
+        ELSE
+            crumb$ = historyPages$(n%)
+        END IF
 
         'if it has a page number on the end, this can be removed
         'when we're display names on the breadcrumb
-        IF ASC(crumb$, LEN(crumb$) - 2) = ASC("#") THEN
+        IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
             'remove the page number from the name
             crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
         END IF
@@ -506,15 +527,12 @@ SUB drawHeader
         crumb$ = TRIM$(crumb$)
         'is this the root, or a sub-section?
         IF n% = 1 THEN
-            'when on the front page, we show that name
-            IF historyDepth% = 1 THEN
-                bread_crumb$ = bread_crumb$ + "  " + crumb$ + " "
-            ELSE
-                'but on deeper levels we don't display the root name
-                n% = n% + 1
-                bread_crumb$ = bread_crumb$ + "  " + historyPages$(n%) + " "
-            END IF
+            'display the root name
+            bread_crumb$ = bread_crumb$ + "  " + crumb$ + " "
+            'when you navigate beyond the root level we don't display it
+            IF historyDepth% > 1 THEN n% = n% + 1
         ELSE
+            'display the current crumb
             bread_crumb$ = bread_crumb$ + "® " + crumb$ + " "
         END IF
     NEXT
@@ -578,7 +596,7 @@ SUB drawScrollbar
     'draw the bar
     FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
         LOCATE n%, SCREEN_WIDTH
-        PRINT "°";
+        PRINT CHR$(ASC_SCROLL_TRACK);
     NEXT
 
     'calculate the thumb size as a representation
@@ -607,7 +625,7 @@ SUB drawScrollbar
     'draw the thumb
     COLOR LTGREY, BLACK
     FOR n% = INT(thumbpos!) TO INT(thumbpos! + thumblen!)
-        LOCATE PAGE_TOP + n%, SCREEN_WIDTH: PRINT "Û";
+        LOCATE PAGE_TOP + n%, SCREEN_WIDTH: PRINT CHR$(ASC_SCROLL_THUMB);
     NEXT
 END SUB
 
@@ -662,6 +680,7 @@ SUB loadPage (page_name$)
         'remove the page number from the name
         file_base$ = TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
         file_path$ = pagePath$(file_base$, page_number%)
+
     ELSE
         'no page number
         page_number% = 0
@@ -720,14 +739,15 @@ SUB loadPage (page_name$)
 
         ELSEIF LEFT$(line$, 5) = "$KEY:" THEN
             '.................................................................
-            'key definition, the key name follows
+            'key definition, the key name follows:
+
             'is there an equals sign?
             DIM keypos%: keypos% = INSTR(6, line$, "=")
             'if an equals sign doesn't follow,
             'this is not a valid key definition
             IF keypos% = 0 THEN
-                        fatalError "The page '" + file_path$ + "' " +_
-                                   "contains an invalid key definition"
+                fatalError "The page '" + file_path$ + "' " +_
+                           "contains an invalid key definition"
             END IF
             'extract the keyname
             keyname$ = MID$(line$, 6, keypos% - 6)
@@ -751,6 +771,9 @@ SUB loadPage (page_name$)
             IF LEFT$(action$, 5) = "GOTO:" THEN
                 param$ = TRIM$(MID$(action$, 6))
                 action% = ACTION_GOTO
+            ELSEIF LEFT$(action$, 5) = "PAGE:" THEN
+                param$ = TRIM$(MID$(action$, 6))
+                action% = ACTION_PAGE
             ELSEIF LEFT$(action$, 6) = "SHELL:" THEN
                 param$ = TRIM$(MID$(action$, 7))
                 action% = ACTION_SHELL
