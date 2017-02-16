@@ -1158,6 +1158,7 @@ SUB formatLine (indent%, line$)
 
                         CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
                              ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                             ASC_EXCL, ASC_QMARK, ASC_SMARK, _
                              ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
                              CTL_PAREN_OFF
                             'word boundary? if bold is on, flip it off
@@ -1190,6 +1191,7 @@ SUB formatLine (indent%, line$)
 
                         CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
                              ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                             ASC_EXCL, ASC_QMARK, ASC_SMARK, _
                              ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
                              CTL_PAREN_OFF
                             'word boundary? if bold is on, flip it off
@@ -1226,10 +1228,10 @@ SUB formatLine (indent%, line$)
                     GOSUB addChar
                 END IF
 
-            CASE ASC_APOS
+            CASE ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK
                 '.............................................................
-                'an apostrophe is a word-boundary, but not a word-break;
-                'i.e. `_bob_'s italics`
+                'some punctuation is a word-boundary, but not a word-break;
+                'e.g. `_bob_'s italics`
                 GOSUB addChar
                 is_boundary` = TRUE
 
