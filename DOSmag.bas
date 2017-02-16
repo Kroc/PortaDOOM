@@ -18,7 +18,7 @@
 'our text-formatting control codes
 '-----------------------------------------------------------------------------
 CONST CTL_ESCAPE = ASC_CARET '     ^
-CONST CTL_CENTER = ASC_C '         C
+CONST CTL_CENTER = ASC_C '         ^C
 CONST CTL_HEADING = ASC_COLON '    :
 CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
@@ -63,6 +63,45 @@ CONST PAGE_BKGD = BLUE
 'this is used to slide the help bar up and display the instructions
 DIM SHARED StatusHeight%%: StatusHeight%% = 0
 
+'theme colours
+'-----------------------------------------------------------------------------
+'IDs for each theme colour applicable:
+CONST THEME_PAGE_BKGD = 0 '......page default background
+CONST THEME_PAGE_FGND = 1 '......page default foreground (text)
+CONST THEME_HEADING = 2 '........headings
+CONST THEME_BOLD = 3 '...........bold text
+CONST THEME_ITALIC = 4 '.........italic text
+CONST THEME_PARENS = 5 '.........parentheses
+CONST THEME_NAVKEY = 6 '.........navigation key, e.g. "[K]"
+CONST THEME_WARNING_BKGD = 7 '...warning box background (text)
+CONST THEME_WARNING_FGND = 8 '...warning box foreground (text)
+CONST THEME_WARNING_BORDER = 9
+CONST THEME_WARNING_HEAD = 10 '..warning box headings
+CONST THEME_WARNING_BOLD = 11
+CONST THEME_WARNING_ITALIC = 12
+CONST THEME_WARNING_PARENS = 13
+CONST THEME_WARNING_NAVKEY = 14 'navigation keys within warning box
+
+DIM SHARED Themes(0, 0 TO 14) AS _BYTE
+
+CONST THEME_DEFAULT = 0
+CONST THEME_BLUE = 0
+
+Themes(THEME_BLUE, THEME_PAGE_BKGD) = BLUE
+Themes(THEME_BLUE, THEME_PAGE_FGND) = LTGREY
+Themes(THEME_BLUE, THEME_HEADING) = YELLOW
+Themes(THEME_BLUE, THEME_BOLD) = WHITE
+Themes(THEME_BLUE, THEME_ITALIC) = LIME
+Themes(THEME_BLUE, THEME_PARENS) = CYAN
+Themes(THEME_BLUE, THEME_NAVKEY) = AQUA
+Themes(THEME_BLUE, THEME_WARNING_BKGD) = LTGREY
+Themes(THEME_BLUE, THEME_WARNING_FGND) = RED
+Themes(THEME_BLUE, THEME_WARNING_HEAD) = RED
+Themes(THEME_BLUE, THEME_WARNING_BOLD) = BLACK
+Themes(THEME_BLUE, THEME_WARNING_ITALIC) = DKGREY
+Themes(THEME_BLUE, THEME_WARNING_PARENS) = RED
+Themes(THEME_BLUE, THEME_WARNING_NAVKEY) = PURPLE
+
 
 'page data:
 '-----------------------------------------------------------------------------
@@ -74,6 +113,10 @@ DIM SHARED PageName AS STRING '..base name of page, without page number
 DIM SHARED PageNum AS INTEGER '..page number,
 DIM SHARED PageCount AS INTEGER 'and number of pages in the set
 
+'page text is formatted, word-wrapped and assembled into this array of
+'strings with each entry being one on-screen line. this is done so that
+'we can display any line, correctly formatted, without having to know
+'what formatting is present on previous lines
 REDIM SHARED PageLines(1) AS STRING
 DIM SHARED PageLineCount AS INTEGER
 DIM SHARED PageLine AS INTEGER 'line number at top of screen
@@ -106,13 +149,13 @@ PageLine% = 0
 PageLineCount% = 0
 PageKeyCount% = 0
 
-
+'history / breadcrumb
+'-----------------------------------------------------------------------------
 'the navigation history:
 REDIM SHARED historyPages(1) AS STRING '..page names
 REDIM SHARED historyScroll(1) AS INTEGER 'where the user had scrolled to
 'number of levels of history (for producing the breadcrumb)
 DIM SHARED historyDepth AS INTEGER: historyDepth% = 1
-
 
 'help screen
 '-----------------------------------------------------------------------------
@@ -133,6 +176,7 @@ HelpText$(13) = "   [PgUp] = scroll-up one screen-full    [HOME] = Scroll to top
 HelpText$(14) = "   [PgDn] = scroll-down one screen-full   [END] = Scroll to bottom of page"
 
 
+'MAIN:
 '=============================================================================
 'disallow resizing of the window. this adds a great deal of complexity for
 'very little gain right now and there isn't an easy way to restore a window
@@ -146,8 +190,7 @@ SCREEN 0, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 COLOR PAGE_FGND, PAGE_BKGD: CLS
 
 'display the front-page
-loadPage "Home"
-refreshScreen
+loadPage "Home": refreshScreen
 
 'input processing: (main loop)
 '-----------------------------------------------------------------------------
@@ -158,7 +201,8 @@ DO
     'if mouse input is on the qeue then fetch and process it
     DO WHILE _MOUSEINPUT
         'scroll?
-        wheel% = _MOUSEWHEEL: IF wheel% <> 0 THEN
+        DIM wheel%: wheel% = _MOUSEWHEEL
+        IF wheel% <> 0 THEN
             'scroll up or  down?
             IF wheel% = 1 THEN scrollDown ELSE scrollUp
         END IF
@@ -172,10 +216,10 @@ DO
         DO WHILE _MOUSEINPUT: LOOP
     LOOP
 
-    key$ = UCASE$(INKEY$)
+    DIM key$: key$ = UCASE$(INKEY$)
     IF key$ <> "" THEN
         'get that as a keycode
-        keycode% = ASC(key$)
+        DIM keycode%: keycode% = ASC(key$)
 
         'ESC - quit instantly
         IF keycode% = ASC_ESC THEN SYSTEM
@@ -191,7 +235,7 @@ DO
 
                 CASE ASC_F5 'reload the current page
                     'remember the current scroll position
-                    old_line% = PageLine%
+                    DIM old_line%: old_line% = PageLine%
                     loadPage historyPages$(historyDepth%)
                     'restore the scroll position
                     scrollTo old_line%
@@ -256,6 +300,7 @@ DO
             'any page-registered keys?
             IF PageKeyCount% > 0 THEN
                 'check the keys registered by the page
+                DIM n%
                 FOR n% = 1 TO PageKeyCount%
                     IF PageKeys(n%).keycode = keycode% THEN
                         'which action to take?
@@ -288,7 +333,8 @@ DO
 
                             CASE ACTION_SHELL
                                 'switch to the files directory
-                                cwd$ = _CWD$: CHDIR "files"
+                                DIM cwd$: cwd$ = _CWD$
+                                CHDIR "files"
                                 'exeute the shell command
                                 SHELL PageKeys(n%).param
                                 'return to the previous directory
@@ -391,6 +437,7 @@ END SUB
 '=============================================================================
 SUB helpScreen
     'slide the help bar up from the bottom of the screen
+    DIM n%
     FOR n% = 0 TO UBOUND(HelpText$) + 3
         StatusHeight%% = n%
         refreshScreen
@@ -402,7 +449,7 @@ SUB helpScreen
         'wait for any key press
         SLEEP
 
-        key$ = INKEY$
+        DIM key$: key$ = INKEY$
         IF key$ <> "" THEN
             SELECT CASE ASC(key$)
                 CASE ASC_ESC
@@ -462,6 +509,7 @@ END SUB
 SUB drawHeader
     'clear the existing page line (title and page count)
     COLOR , HEAD_BKGD
+    DIM n%
     FOR n% = HEAD_TOP TO HEAD_TOP + HEAD_HEIGHT
         LOCATE n%, 1: PRINT SPACE$(SCREEN_WIDTH);
     NEXT
@@ -547,7 +595,7 @@ SUB drawHeader
 
     'walk the breadcrumb string and pick out the separators
     FOR n% = 1 TO LEN(bread_crumb$)
-        char% = ASC(bread_crumb$, n%)
+        DIM char%: char% = ASC(bread_crumb$, n%)
         SELECT CASE char%
             CASE ASC(""), ASC("®")
                 COLOR WHITE: PRINT CHR$(char%);
@@ -565,6 +613,7 @@ SUB drawPage
     'clear the background before displaying the page
     '(not all lines will fill the full 80 cols)
     COLOR , PAGE_BKGD
+    DIM n%
     FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
         LOCATE n%, 1
         PRINT SPACE$(SCREEN_WIDTH);
@@ -594,6 +643,7 @@ SUB drawScrollbar
     COLOR PAGE_FGND, PAGE_BKGD
 
     'draw the bar
+    DIM n%
     FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
         LOCATE n%, SCREEN_WIDTH
         PRINT CHR$(ASC_SCROLL_TRACK);
@@ -638,6 +688,7 @@ SUB drawStatus
         PRINT SPACE$(SCREEN_WIDTH);
 
     ELSEIF StatusHeight%% > 0 THEN
+        DIM n%
         FOR n% = 0 TO StatusHeight%%
             LOCATE SCREEN_HEIGHT - n%, 1
             PRINT SPACE$(SCREEN_WIDTH);
@@ -750,8 +801,7 @@ SUB loadPage (page_name$)
                            "contains an invalid key definition"
             END IF
             'extract the keyname
-            keyname$ = MID$(line$, 6, keypos% - 6)
-
+            DIM keyname$: keyname$ = MID$(line$, 6, keypos% - 6)
             DIM keycode%
             SELECT CASE keyname$
                 'at the moment, these are the key names supported
@@ -765,7 +815,7 @@ SUB loadPage (page_name$)
             END SELECT
 
             'extract the action & param portion of the key definition
-            DIM action$, action%
+            DIM action$, action%, param$
             action$ = MID$(line$, keypos% + 1)
 
             IF LEFT$(action$, 5) = "GOTO:" THEN
@@ -1195,7 +1245,7 @@ SUB formatLine (indent%, line$)
                     char% = 0: GOSUB addWord
                     'convert tab character to spaces as `_CONTROLCHR OFF`
                     'will prevent tabs from rendering
-                    tabspc% = 8 - ((l% + w%) MOD 8)
+                    DIM tabspc%: tabspc% = 8 - ((l% + w%) MOD 8)
                     word$ = word$ + SPACE$(tabspc%): w% = w% + tabspc%
                 END IF
                 'add the word to the line and wrap if necessary
@@ -1258,6 +1308,7 @@ SUB formatLine (indent%, line$)
 
     newline$ = "": l% = 0
     'set the correct indent and wrap-point
+    DIM this_indent%
     this_indent% = next_indent%: indent% = this_indent%
     line_width% = PAGE_WIDTH - indent%
 
@@ -1540,10 +1591,11 @@ END SUB
 '=============================================================================
 FUNCTION UTF8ANSI$ (text$)
     DIM b~%%, c~%%, d~%% '=_UNSIGNED _BYTE
-    DIM p~% '=_UNSIGNED INTEGER
+    DIM p~& '.............=_UNSIGNED LONG
 
     'we'll need to walk the string as bytes
     '(this is the assumption of QB64, it doesn't handle wide-strings)
+    DIM i%
     FOR i% = 1 TO LEN(text$)
         'read a byte
         b~%% = ASC(text$, i%)

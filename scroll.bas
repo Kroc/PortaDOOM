@@ -14,6 +14,7 @@ SUB scrollDown
     IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
 
     'can't scroll if already at the bottom
+    DIM pageBottom%
     pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
     IF PageLine% = pageBottom% THEN BEEP: EXIT SUB
 
@@ -47,6 +48,7 @@ SUB scrollPageDown
     IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
 
     '(can't scroll past the last line of text)
+    DIM pageBottom%
     pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
 
     'can't scroll down if at the bottom already
@@ -106,6 +108,7 @@ SUB scrollTo (line_num%)
     ELSE
         'can't scroll too far down (this is important when refreshing
         'a page and the length has changed)
+        DIM page_bottom%
         page_bottom% = PageLineCount% - PAGE_HEIGHT + 1
         IF line_num% > page_bottom% THEN line_num% = page_bottom%
         PageLine% = line_num%
