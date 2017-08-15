@@ -17,22 +17,22 @@ CONST SCREEN_HEIGHT = 25
 
 '------------------------------------------------------------------------------
 
-CONST BLACK = 0 'COLOR code for black
-CONST BLUE = 1 'COLOR code for dark blue
-CONST GREEN = 2 'COLOR code for dark green
-CONST CYAN = 3 'COLOR code for dark-cyan
-CONST RED = 4 'COLOR code for dark-red
-CONST PURPLE = 5 'COLOR code for purple
-CONST ORANGE = 6 'COLOR code for brown / orange
-CONST LTGREY = 7 'COLOR code for "white" (light grey)
-CONST DKGREY = 8 'COLOR code for "bright black" (dark grey), foreground ONLY
-CONST LTBLUE = 9 'COLOR code for "bright blue", foreground ONLY
-CONST LIME = 10 'COLOR code for "bright green", foreground ONLY
-CONST AQUA = 11 'COLOR code for "bright cyan", foreground ONLY
-CONST ROSE = 12 'COLOR code for "bright red" (peach), foreground ONLY
-CONST PINK = 13 'COLOR code for "bright purple" (fuscia), foreground ONLY
+CONST BLACK = 0 '..COLOR code for black
+CONST BLUE = 1 '...COLOR code for dark blue
+CONST GREEN = 2 '..COLOR code for dark green
+CONST CYAN = 3 '...COLOR code for dark-cyan
+CONST RED = 4 '....COLOR code for dark-red
+CONST PURPLE = 5 '.COLOR code for purple
+CONST ORANGE = 6 '.COLOR code for brown / orange
+CONST LTGREY = 7 '.COLOR code for "white" (light grey)
+CONST DKGREY = 8 '.COLOR code for "bright black" (dark grey), foreground ONLY
+CONST LTBLUE = 9 '.COLOR code for "bright blue", foreground ONLY
+CONST LIME = 10 '..COLOR code for "bright green", foreground ONLY
+CONST AQUA = 11 '..COLOR code for "bright cyan", foreground ONLY
+CONST ROSE = 12 '..COLOR code for "bright red" (peach), foreground ONLY
+CONST PINK = 13 '..COLOR code for "bright purple" (fuscia), foreground ONLY
 CONST YELLOW = 14 'COLOR code for "bright orange" (yellow), foreground ONLY
-CONST WHITE = 15 'COLOR code for "bright white", foreground ONLY
+CONST WHITE = 15 '.COLOR code for "bright white", foreground ONLY
 
 '------------------------------------------------------------------------------
 
@@ -94,8 +94,34 @@ CONST ASC_CARET = 94 '  ^
 CONST ASC_USCORE = 95 ' _
 CONST ASC_BAR = 124 '   |
 
+'ASCII symbols specific to the DOS codepage:
+'-----------------------------------------------------------------------------
+
+CONST ASC_DIAMOND = 4
+
+CONST ASC_ARR_UP = 24 'up-arrow
+CONST ASC_ARR_DN = 25 'down-arrow
+CONST ASC_ARR_LT = 27 'left-arrow
+CONST ASC_ARR_RT = 26 'right-arrow
+
+CONST ASC_LGLLMT = 174 'left guillemet, i.e. double angle-bracket
+
+CONST ASC_BOX_H = 196 'horizontal line
+CONST ASC_BOX_V = 179 'vertical line
+CONST ASC_BOX_TL = 218 'top-left corner
+CONST ASC_BOX_TR = 191 'top-right corner
+CONST ASC_BOX_BL = 192 'bottom-left corner
+CONST ASC_BOX_BR = 217 'bottom-right corner
+
+CONST ASC_BOX_DBL_H = 205 'horizontal double-line
+
+CONST ASC_BOX_BL_DBL_B = 212 'bottom-left corner, with double-line on bottom
+CONST ASC_BOX_BR_DBL_B = 190 'bottom-right corner, double-line on bottom
+
+
 'when the result of INKEY$ begins with a NULL,
 'then the second byte is the following:
+'-----------------------------------------------------------------------------
 CONST ASC_F1 = 59
 CONST ASC_F2 = 60
 CONST ASC_F3 = 61

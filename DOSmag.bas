@@ -65,42 +65,19 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 
 'theme colours
 '-----------------------------------------------------------------------------
-'IDs for each theme colour applicable:
-CONST THEME_PAGE_BKGD = 0 '......page default background
-CONST THEME_PAGE_FGND = 1 '......page default foreground (text)
-CONST THEME_HEADING = 2 '........headings
-CONST THEME_BOLD = 3 '...........bold text
-CONST THEME_ITALIC = 4 '.........italic text
-CONST THEME_PARENS = 5 '.........parentheses
-CONST THEME_NAVKEY = 6 '.........navigation key, e.g. "[K]"
-CONST THEME_WARNING_BKGD = 7 '...warning box background (text)
-CONST THEME_WARNING_FGND = 8 '...warning box foreground (text)
-CONST THEME_WARNING_BORDER = 9
-CONST THEME_WARNING_HEAD = 10 '..warning box headings
-CONST THEME_WARNING_BOLD = 11
-CONST THEME_WARNING_ITALIC = 12
-CONST THEME_WARNING_PARENS = 13
-CONST THEME_WARNING_NAVKEY = 14 'navigation keys within warning box
+'themes consist of various effects that can be combined,
+'these are the bit-toggles for the individual efffects:
 
-DIM SHARED Themes(0, 0 TO 14) AS _BYTE
+CONST THEME_FGND = 2 ^ 0 'background colour is given by default
+CONST THEME_BGND = 2 ^ 1 'this bit specifies background colour instead
+CONST THEME_BOLD = 2 ^ 2
+CONST THEME_ITALIC = 2 ^ 3
+CONST THEME_TITLE = 2 ^ 4
+CONST THEME_PAREN = 2 ^ 5
+CONST THEME_KEY = 2 ^ 6
+CONST THEME_WARNING = 2 ^ 7
 
-CONST THEME_DEFAULT = 0
-CONST THEME_BLUE = 0
-
-Themes(THEME_BLUE, THEME_PAGE_BKGD) = BLUE
-Themes(THEME_BLUE, THEME_PAGE_FGND) = LTGREY
-Themes(THEME_BLUE, THEME_HEADING) = YELLOW
-Themes(THEME_BLUE, THEME_BOLD) = WHITE
-Themes(THEME_BLUE, THEME_ITALIC) = LIME
-Themes(THEME_BLUE, THEME_PARENS) = CYAN
-Themes(THEME_BLUE, THEME_NAVKEY) = AQUA
-Themes(THEME_BLUE, THEME_WARNING_BKGD) = LTGREY
-Themes(THEME_BLUE, THEME_WARNING_FGND) = RED
-Themes(THEME_BLUE, THEME_WARNING_HEAD) = RED
-Themes(THEME_BLUE, THEME_WARNING_BOLD) = BLACK
-Themes(THEME_BLUE, THEME_WARNING_ITALIC) = DKGREY
-Themes(THEME_BLUE, THEME_WARNING_PARENS) = RED
-Themes(THEME_BLUE, THEME_WARNING_NAVKEY) = PURPLE
+DIM SHARED Themes(0) AS INTEGER
 
 
 'page data:
@@ -167,10 +144,10 @@ HelpText$(4) = "Press [BKSP] (backspace) to return to the previous section."
 HelpText$(5) = ""
 HelpText$(6) = "Each section will have one or more pages:"
 HelpText$(7) = ""
-HelpText$(8) = "      [] = Previous page       [] = Next page (or R-CLICK)"
+HelpText$(8) = "      [" + CHR$(ASC_ARR_LT) + "] = Previous page       [" + CHR$(ASC_ARR_RT) + "] = Next page (or R-CLICK)"
 HelpText$(9) = ""
-HelpText$(10) = "      [] = Scroll-up page (or MWHEEL-FWD)"
-HelpText$(11) = "      [] = Scroll-down page (or MWHEEL-BCK)"
+HelpText$(10) = "      [" + CHR$(ASC_ARR_UP) + "] = Scroll-up page (or MWHEEL-FWD)"
+HelpText$(11) = "      [" + CHR$(ASC_ARR_DN) + "] = Scroll-down page (or MWHEEL-BCK)"
 HelpText$(12) = ""
 HelpText$(13) = "   [PgUp] = scroll-up one screen-full    [HOME] = Scroll to top of page"
 HelpText$(14) = "   [PgDn] = scroll-down one screen-full   [END] = Scroll to bottom of page"
@@ -517,10 +494,10 @@ SUB drawHeader
     'draw the lines for the tab background
     COLOR HEAD_FGND, HEAD_BKGD
     LOCATE (HEAD_TOP + 1), 1
-    PRINT STRING$(SCREEN_WIDTH, "м")
+    PRINT STRING$(SCREEN_WIDTH, CHR$(ASC_BOX_DBL_H))
     COLOR TABS_FGND, TABS_BKGD
     LOCATE (HEAD_TOP + 2), 1
-    PRINT STRING$(SCREEN_WIDTH, "м");
+    PRINT STRING$(SCREEN_WIDTH, CHR$(ASC_BOX_DBL_H));
 
     DIM tab_width%
 
@@ -529,26 +506,41 @@ SUB drawHeader
     IF PageCount% > 1 THEN
         DIM tab_text$, text_len%
 
-        tab_text$ = "page " + STRINT$(PageNum%) _
+        tab_text$ = "pg. " + STRINT$(PageNum%) _
                   + " of " + STRINT$(PageCount%)
 
-        'if there's previous pages, show the indicator
-        ''IF PageNum% > 1 THEN tab_text$ = " " + tab_text$
-        'if there's more page that follow, show the indicator
-        ''IF PageNum% < PageCount% THEN tab_text$ = tab_text$ + "  "
-
         'generate the tab graphic (according to the width of the title text)
-        text_len% = LEN(tab_text$)
+        text_len% = LEN(tab_text$) + 2
         tab_width% = text_len% + 4
 
         'print the tab
         COLOR TABS_FGND, TABS_BKGD
         LOCATE HEAD_TOP, SCREEN_WIDTH - tab_width%
-        PRINT "зд" + STRING$(text_len%, "д") + "д©";
+        PRINT CHR$(ASC_BOX_TL) + CHR$(ASC_BOX_H) _
+            + STRING$(text_len%, CHR$(ASC_BOX_H)) _
+            + CHR$(ASC_BOX_H) + CHR$(ASC_BOX_TR);
         LOCATE (HEAD_TOP + 1), SCREEN_WIDTH - tab_width%
-        PRINT "Ё " + tab_text$ + " Ё";
+        PRINT CHR$(ASC_BOX_V);
+        IF PageNum% > 1 THEN
+            COLOR TABS_FGND + 16, TABS_BKGD
+            PRINT CHR$(ASC_ARR_LT);
+            COLOR TABS_FGND, TABS_BKGD
+        ELSE
+            PRINT " ";
+        END IF
+        PRINT " " + tab_text$ + " ";
+        IF PageNum% < PageCount% THEN
+            COLOR TABS_FGND + 16, TABS_BKGD
+            PRINT CHR$(ASC_ARR_RT);
+            COLOR TABS_FGND, TABS_BKGD
+        ELSE
+            PRINT " ";
+        END IF
+        PRINT CHR$(ASC_BOX_V);
         LOCATE (HEAD_TOP + 2), SCREEN_WIDTH - tab_width%
-        PRINT "╬ " + SPACE$(text_len%) + " т";
+        PRINT CHR$(ASC_BOX_BR_DBL_B) _
+            + " " + SPACE$(text_len%) + " " _
+            + CHR$(ASC_BOX_BL_DBL_B);
     END IF
 
     'draw the breadcrumb
@@ -576,12 +568,14 @@ SUB drawHeader
         'is this the root, or a sub-section?
         IF n% = 1 THEN
             'display the root name
-            bread_crumb$ = bread_crumb$ + "  " + crumb$ + " "
+            bread_crumb$ = bread_crumb$ _
+                         + " " + CHR$(ASC_DIAMOND) + " " _
+                         + crumb$ + " "
             'when you navigate beyond the root level we don't display it
             IF historyDepth% > 1 THEN n% = n% + 1
         ELSE
             'display the current crumb
-            bread_crumb$ = bread_crumb$ + "╝ " + crumb$ + " "
+            bread_crumb$ = bread_crumb$ + CHR$(ASC_LGLLMT) + " " + crumb$ + " "
         END IF
     NEXT
 
@@ -590,21 +584,21 @@ SUB drawHeader
 
     COLOR HEAD_FGND, HEAD_BKGD
     LOCATE HEAD_TOP, 1
-    PRINT STRING$(LEN(bread_crumb$), "д") + "©";
+    PRINT STRING$(LEN(bread_crumb$), CHR$(ASC_BOX_H)) + CHR$(ASC_BOX_TR);
     LOCATE (HEAD_TOP + 1), 1
 
     'walk the breadcrumb string and pick out the separators
     FOR n% = 1 TO LEN(bread_crumb$)
         DIM char%: char% = ASC(bread_crumb$, n%)
         SELECT CASE char%
-            CASE ASC(""), ASC("╝")
+            CASE ASC_DIAMOND, ASC_LGLLMT
                 COLOR WHITE: PRINT CHR$(char%);
             CASE ELSE
                 COLOR YELLOW: PRINT CHR$(ASC(bread_crumb$, n%));
         END SELECT
     NEXT n%
 
-    COLOR HEAD_FGND: PRINT "т";
+    COLOR HEAD_FGND: PRINT CHR$(ASC_BOX_BL_DBL_B);
 END SUB
 
 'draw the page area where the content goes
@@ -952,9 +946,9 @@ SUB formatLine (indent%, line$)
             is_warn` = TRUE
             'create the top-border
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
-            newline$ = newline$ + "з"
-            newline$ = newline$ + STRING$(line_width% - 4, "д")
-            newline$ = newline$ + "©"
+            newline$ = newline$ + CHR$(ASC_BOX_TL)
+            newline$ = newline$ + STRING$(line_width% - 4, CHR$(ASC_BOX_H))
+            newline$ = newline$ + CHR$(ASC_BOX_TR)
             'dispatch the top-border line and continue with intended line
             GOSUB addLine: newline$ = ""
         END IF
@@ -972,9 +966,9 @@ SUB formatLine (indent%, line$)
             is_warn` = FALSE
             'create the bottom-border
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
-            newline$ = newline$ + "ю"
-            newline$ = newline$ + STRING$(line_width% - 4, "д")
-            newline$ = newline$ + "ы"
+            newline$ = newline$ + CHR$(ASC_BOX_BL)
+            newline$ = newline$ + STRING$(line_width% - 4, CHR$(ASC_BOX_H))
+            newline$ = newline$ + CHR$(ASC_BOX_BR)
             'dispatch the bottom-border line and continue with intended line
             GOSUB addLine: newline$ = ""
         END IF
@@ -984,7 +978,7 @@ SUB formatLine (indent%, line$)
     'we need to check this after processing the warning box as a blank line
     'following a warning box must trigger the closing warning-box border
     'before adding the blank line itself
-    IF LTRIM$(line$) = "" THEN
+    IF TRIM$(line$) = "" THEN
         'skip any further processing
         addLine 0, ""
         EXIT SUB
@@ -1127,7 +1121,7 @@ SUB formatLine (indent%, line$)
                 '.............................................................
                 'automatic paren mode will only occur on a word boundary
                 IF is_boundary` = TRUE THEN
-                    'enable the paren mode and include the bracket
+                    'enable the paren mode
                     is_paren` = TRUE
                     GOSUB addControlChar
                 END IF
@@ -1147,74 +1141,92 @@ SUB formatLine (indent%, line$)
                 'a word boundary occurs after the parens
                 is_boundary` = TRUE
 
-            CASE CTL_BOLD, CTL_ITALIC
+            CASE CTL_BOLD
                 '.............................................................
-                IF char% = CTL_BOLD THEN
-                    'check the next character:
-                    SELECT CASE ASC(line$, c% + 1)
-                        CASE char%
-                            'double is an escape, treat as single literal
-                            c% = c% + 1: GOSUB addChar
+                'check the next character:
+                SELECT CASE ASC(line$, c% + 1)
+                    CASE char%
+                        'double is an escape, treat as single literal
+                        c% = c% + 1: GOSUB addChar
 
-                        CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
-                             ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
-                             ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                             ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
-                             CTL_PAREN_OFF
-                            'word boundary? if bold is on, flip it off
-                            IF is_bold` = TRUE THEN
-                                is_bold` = FALSE
-                                char% = CTL_BOLD
-                                GOSUB addControlChar
-                            ELSE
-                                'treat as literal
-                                GOSUB addChar
-                            END IF
+                    CASE ASC_SPC, ASC_TAB
+                        'if followed by whitespace, then it's assumed to be
+                        'a closing bold marker
+                        IF is_bold` = TRUE THEN
+                            is_bold` = FALSE
+                            GOSUB addControlChar
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
 
-                        CASE ELSE
-                            'bold can ony be enabled at a word-boundary
-                            IF is_boundary` = TRUE THEN
-                                is_bold` = TRUE
-                                GOSUB addControlChar
-                            ELSE
-                                'middle of word, treat as literal
-                                GOSUB addChar
-                            END IF
-                    END SELECT
+                    CASE ASC_COMMA, ASC_COLON, _
+                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                         ASC_EXCL, ASC_QMARK, ASC_SMARK, _
+                         ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
+                         CTL_PAREN_OFF
+                        'word boundary? if bold is on, flip it off
+                        IF is_bold` = TRUE THEN
+                            is_bold` = FALSE
+                            GOSUB addControlChar
 
-                ELSEIF char% = CTL_ITALIC THEN
-                    'check the next character:
-                    SELECT CASE ASC(line$, c% + 1)
-                        CASE char%
-                            'double is an escape, treat as single literal
-                            c% = c% + 1: GOSUB addChar
+                        ELSEIF is_bold` = FALSE THEN
+                            is_bold` = TRUE
+                            GOSUB addControlChar
 
-                        CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
-                             ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
-                             ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                             ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
-                             CTL_PAREN_OFF
-                            'word boundary? if bold is on, flip it off
-                            IF is_italic` = TRUE THEN
-                                is_italic` = FALSE
-                                char% = CTL_ITALIC
-                                GOSUB addControlChar
-                            ELSE
-                                'treat as literal
-                                GOSUB addChar
-                            END IF
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
 
-                        CASE ELSE
-                            'italic can ony be enabled at a word-boundary
-                            IF is_boundary` = TRUE THEN
-                                is_italic` = TRUE
-                                GOSUB addControlChar
-                            ELSE
-                                'middle of word, treat as literal
-                                GOSUB addChar
-                            END IF
-                    END SELECT
-                END IF
+                    CASE ELSE
+                        'bold can ony be enabled at a word-boundary
+                        IF is_boundary` = TRUE THEN
+                            is_bold` = TRUE
+                            GOSUB addControlChar
+                        ELSE
+                            'middle of word, treat as literal
+                            GOSUB addChar
+                        END IF
+                END SELECT
+
+            CASE CTL_ITALIC
+                '.............................................................
+                'check the next character:
+                SELECT CASE ASC(line$, c% + 1)
+                    CASE char%
+                        'double is an escape, treat as single literal
+                        c% = c% + 1: GOSUB addChar
+
+                    CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
+                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
+                         ASC_EXCL, ASC_QMARK, ASC_SMARK, _
+                         ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
+                         CTL_PAREN_OFF
+                        'word boundary? if italic is on, flip it off
+                        IF is_italic` = TRUE THEN
+                            is_italic` = FALSE
+                            GOSUB addControlChar
+
+                        ELSEIF is_italic` = FALSE THEN
+                            is_italic` = TRUE
+                            GOSUB addControlChar
+
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
+
+                    CASE ELSE
+                        'italic can ony be enabled at a word-boundary
+                        IF is_boundary` = TRUE THEN
+                            is_italic` = TRUE
+                            GOSUB addControlChar
+                        ELSE
+                            'middle of word, treat as literal
+                            GOSUB addChar
+                        END IF
+                END SELECT
 
             CASE CTL_BREAK
                 '.............................................................
@@ -1311,7 +1323,8 @@ SUB formatLine (indent%, line$)
     newline$ = "": l% = 0
     'set the correct indent and wrap-point
     DIM this_indent%
-    this_indent% = next_indent%: indent% = this_indent%
+    this_indent% = next_indent%
+    indent% = this_indent%: next_indent% = indent%
     line_width% = PAGE_WIDTH - indent%
 
     'currently in a warning-box?
@@ -1326,12 +1339,8 @@ SUB formatLine (indent%, line$)
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
     END IF
     'in key mode?
-    IF is_key` = TRUE THEN
+    IF word_key` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_KEY_ON)
-    END IF
-    'are we currently in parentheses?
-    IF word_paren` = TRUE THEN
-        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
     END IF
     'are we currently bold?
     IF word_bold` = TRUE THEN
@@ -1340,6 +1349,10 @@ SUB formatLine (indent%, line$)
     'are we currently italic?
     IF word_italic` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_ITALIC)
+    END IF
+    'are we currently in parentheses?
+    IF word_paren` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
     END IF
 
     'begin the line with the remaining word
@@ -1438,9 +1451,11 @@ SUB printLine (line$)
                     GOSUB pushmode
                     COLOR 20, LTGREY
                     'draw the top & bottom box borders in the right place
-                    PRINT "Ё" + SPACE$(2 + line_width% - l%) + "Ё";
-                    IF ASC(line$, c% + 1) = ASC("з") _
-                    OR ASC(line$, c% + 1) = ASC("ю") _
+                    PRINT CHR$(ASC_BOX_V) _
+                        + SPACE$(2 + line_width% - l%) _
+                        + CHR$(ASC_BOX_V);
+                    IF ASC(line$, c% + 1) = ASC_BOX_TL _
+                    OR ASC(line$, c% + 1) = ASC_BOX_BL _
                     THEN
                         LOCATE , l% + 3
                     ELSE
@@ -1452,13 +1467,13 @@ SUB printLine (line$)
                 CASE CTL_LINE1
                     '.........................................................
                     GOSUB pushmode
-                    PRINT STRING$(line_width% - l%, "м");
+                    PRINT STRING$(line_width% - l%, ASC_BOX_DBL_H);
                     GOSUB popmode
 
                 CASE CTL_LINE2
                     '.........................................................
                     GOSUB pushmode
-                    PRINT STRING$(line_width% - l%, "д");
+                    PRINT STRING$(line_width% - l%, CHR$(ASC_BOX_H));
                     GOSUB popmode
 
                 CASE CTL_HEADING
@@ -1542,7 +1557,7 @@ SUB printLine (line$)
     popmode:
     '-------------------------------------------------------------------------
     mode_count% = mode_count% - 1
-    GOTO setmode
+    ''GOTO setmode
 
     setmode:
     '-------------------------------------------------------------------------
