@@ -1,0 +1,36 @@
+$KEY:W=SHELL:https://en.wikipedia.org/wiki/Code_page_437
+
+^C:Welcome to DOSmag
+
+:=
+
+This is where your own content goes.
+
+! A warning box is created when a line begins with an exclamation mark. Other formatting effects will be adpated to suit, such as [K] key indicators, *bold*, _italic_ and (parentheses text).
+
+:Unicode Support:
+
+This is ANSI code-page 437 but written using Unicode symbols; DOSmag automatically transliterates these to the ANSI (1-byte) equivilent. For details, see [W] _<en.wikipedia.org/wiki/Code_page_437>_
+
+`       ☺  ☻  ♥  ♦  ♣  ♠  •  ◘  ○  ◙  ♂  ♀  ♪  ♫  ☼
+`    ►  ◄  ↕  ‼  ¶  §  ▬  ↨  ↑  ↓  →  ←  ∟  ↔  ▲  ▼
+`       !  "  #  $  %  &  '  (  )  *  +  ,  -  .  /
+`    0  1  2  3  4  5  6  7  8  9  :  ;  <  =  >  ?
+`    @  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O
+`    P  Q  R  S  T  U  V  W  X  Y  Z  [  \  ]  ^  _
+`    `  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o
+`    p  q  r  s  t  u  v  w  x  y  z  {  |  }  ~  ⌂
+`    Ç  ü  é  â  ä  à  å  ç  ê  ë  è  ï  î  ì  Ä  Å
+`    É  æ  Æ  ô  ö  ò  û  ù  ÿ  Ö  Ü  ¢  £  ¥  ₧  ƒ
+`    á  í  ó  ú  ñ  Ñ  ª  º  ¿  ⌐  ¬  ½  ¼  ¡  «  »
+`    ░  ▒  ▓  │  ┤  ╡  ╢  ╖  ╕  ╣  ║  ╗  ╝  ╜  ╛  ┐
+`    └  ┴  ┬  ├  ─  ┼  ╞  ╟  ╚  ╔  ╩  ╦  ╠  ═  ╬  ╧
+`    ╨  ╤  ╥  ╙  ╘  ╒  ╓  ╫  ╪  ┘  ┌  █  ▄  ▌  ▐  ▀
+`    α  ß  Γ  π  Σ  σ  µ  τ  Φ  Θ  Ω  δ  ∞  φ  ε  ∩
+`    ≡  ±  ≥  ≤  ⌠  ⌡  ÷  ≈  °  ∙  ·  √  ⁿ  ²  ■  
+
+UTF-8 characters that cannot be converted, show as flashing question marks: ¤
+    
+:-
+
+^C*For feedback, issues and suggestions use the GitLab page: _<gitlab.com/groups/dosmag/issues>_ or e-mail _<kroc+dosmag@camendesign.com>_*
