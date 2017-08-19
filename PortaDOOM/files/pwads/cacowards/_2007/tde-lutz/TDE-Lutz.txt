@@ -1,0 +1,69 @@
+================================================================
+Title                   : The Dying End
+Filename                : tde-lutz.zip
+Author                  : Christopher Lutz
+Homepage		: http://www.doomworld.com/chaoscrew
+Feedback		: chris_lutz@hotmail.com
+Description             : A remake of level 29 of Doom II
+Other Releases		: Phobos: Anomaly Reborn (par-lutz.zip)
+                        : Caverns of Darkness (cc-cod.zip)
+			: Inferno (inf-lutz.zip)
+                        : Millennium - Map30
+			: Doomworld's 10sectors.wad - Map26
+Additional Credits to   : id Software (duh)
+			: Testers: Tango, Belial, Impboy,
+                        :   Jesper Rasmussen, and Joel
+                        :   Murdoch
+			: www.DoomWorld.com for hosting
+================================================================
+
+
+* Play Information *		 
+----------------------------------------------------------------
+Game                    : Doom II
+Map Number              : Map29
+Source Port		: ZDoom/GZDoom (See Note Below)
+Single Player           : Yes 
+Cooperative             : No
+Deathmatch              : No 
+Difficulty Settings     : Yes
+New Weapons:		: No
+New Sounds              : No
+New Graphics            : No
+New Music               : No
+----------------------------------------------------------------
+
+
+* A Note on Source Ports *
+----------------------------------------------------------------
+What you really need to run this level is a BOOM/MBF-compatable,
+limit-removing source port.  I did 98% of my testing with ZDoom,
+so that is what I recommend, but have verified it also runs with
+PrBoom 2.4.8.1.  Also, there are two other things I should 
+mention:
+ - NO JUMPING!  Jumping is for losers.
+ - This level is a LOT easier if you can run under/over 
+     sprites (but not impossible if you can't).
+
+
+* Construction *
+----------------------------------------------------------------
+Base                    : New level from scratch
+Editors used            : WinDEU, DETH, BSP
+Known Bugs              : None that I know of
+Build Time              : Beats me.  A long time.
+----------------------------------------------------------------
+
+
+* Copyright / Permissions *
+----------------------------------------------------------------
+You may distribute this .WAD freely, provided you include all
+this text file with the .WAD file.  Should you want to edit or 
+include sub-portions of this level in any other project, send me
+an e-mail message and I will ponder your request.
+----------------------------------------------------------------
+
+
+* Where To Get This File *
+----------------------------------------------------------------
+http://www.doomworld.com/idgames/index.php?dir=levels/doom2/Ports/s-u/

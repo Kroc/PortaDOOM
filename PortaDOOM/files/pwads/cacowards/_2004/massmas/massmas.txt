@@ -1,0 +1,102 @@
+Date Completed         : 12/25/04
+Title                  : Massmouthmas
+Filename               : massmas.wad
+Other Works            : http://doom.vect.org:8080/
+Author                 : Cyb (mostly)
+
+Email Address          : cyb@vect.org
+
+Description            : This is a Massmouth Christmas special, as it 
+			 were.  I always wanted to make a Massmouth 
+			 hub, and a few days ago I decided I would do 
+			 it.  It's small and pretty linear, and it's 
+			 not fast paced action or anything.  In fact 
+			 it's more of a puzzle wad, so if you want some 
+			 crazy run and gun, go play Alien Vendetta.
+			 
+			 The story takes place after the events of 
+			 Massmouth 1, but before Massmouth 2, because 
+			 making it follow the events of Massmouth 2 
+			 would be a pain thanks to my genius idea of 
+			 giving it six endings.  Everything will be 
+			 explained in game, so enjoy!
+			 
+			 Also a nice thanks to various people who 
+			 played the first version I released on DW 
+			 and told me about any bugs and such.
+			 
+      ===============================================================
+
+* Play Information *
+
+Game                    : zdoom.exe 2.0.94 or higher should work fine.
+			  Anything lower that that use at your own risk.  
+			  If don't know where to get zdoom, try here: 
+			  http://zdoom.org/
+			  You also need Massmouth 2, that is, massm2.wad 
+			  which you can grab at the following link if 
+			  you don't already have it (shame on you!):
+			  http://www.doomworld.com/idgames/index.php?id=12090
+			  
+			  I can't stress this enough, YOU NEED MASSMOUTH 2 
+			  IN ORDER TO PLAY THIS.  As for the command line: 
+			  
+			  zdoom.exe -file massm2.wad massmas.wad
+			  
+			  It's also important that they be in that order, 
+			  I think it might break if they're out of order, 
+			  but I'm not sure.
+			  
+Levels                  : MAP20 - 22 hubbed (so don't skip around)
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : No
+			  
+      ===============================================================
+
+* Construction *
+
+Base                    : Maps  : Scratch
+			  GFX   : Me (simple ones)
+			  	  Scuba Steve (some sprites and a texture or two)
+			  	  Enjay (stole something from Marine Assault)
+			  	  WViperW (Q2 model used to make sprites)
+			  	  Raven Software (theft from Hexen)
+			  Music :
+				CanisLupus
+				Maim Cryogenic
+				Keypounder
+				Regin Johnson
+				and one song I couldn't find the author of
+
+Editor(s) used          : WadAuthor, Paint Shop Pro 8, XWE, UltraEdit-32, 
+			  Doom Builder, Wintex, ACC
+			  
+Build time              : Believe it or not, only 4 days
+
+Known Bugs              : Misalignments in the cave areas because I'm lazy 
+			  and they're only caves.  The rest should be okay, 
+			  but I didn't go crazy.  There's also probably 
+			  ways to break scripts if you try hard, but I'm 
+			  pretty good at keeping scripts unbreakable, so 
+			  you should be okay as long as you don't try to 
+			  break them.
+
+      ===============================================================
+      
+ * Copyright / Permissions *
+
+Authors may use the resources in this wad for whatever the want, just as 
+long as you credit the original author.  You can't use the levels because 
+I'm a big mean jerk.  You can use the scripts.  The library source is in 
+the wad as a lump named 'MXMASSRC', so go nuts.
+
+You may distrubute this file in any format (CD ROM, BBS, whatever) provided
+that you include all files included in your distribution (as in, this text 
+file and the wad) and it is not sold or traded for anything.  Same goes for 
+wads using resources from it.
+
+Where to Get this wad:
+FTP: http://doom.vect.org/
+     ftp://3darchives.in-span.net/pub/idgames/ and all mirrors

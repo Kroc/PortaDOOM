@@ -1,0 +1,83 @@
+================================================================
+Title                   : Titan Manor
+Filename                : manor.wad
+Author                  : Jim Flynn
+Email Address           : CIS: 72713,3334
+Misc. Author Info       : Programmer and Doomer
+                          Ass't Sysop for Action Games on CIS
+
+================================================================
+Description             : A strange and enigmatic building on a moon
+			  of Saturn contains the latest in alien 
+                          weapon technology. If you can survive the
+			  guards and solve the puzzles, the
+                          Federation will leapfrog in technology.
+			  Its all up to you. Oh and watch those 
+			  windows! <G>.
+================================================================
+
+Play notes:               486/66 recommended
+
+================================================================
+
+Additional Credits to   : Brendon Wyber and Raphael Quinet for DEU-GCC
+                        : Antony Burden and Simon Oke for DETH
+			: Colin Reed for BSP1.2x
+			: Olivier Montanuy for DeuTex 3.1
+			: HevKev (Kevin McGrail) for the DeuTex Manual
+			: Jens Hykkelbjerg for RMB
+			: Those folks at ID, for Doom, and especially
+                          Shawn Green for his encouragement and
+                          helpful comments.
+                        : Playtesters: Peter Zahner, John Keary, 
+			  Matt Jonelis, Dr Sleep
+
+================================================================
+
+* Play Information *
+
+Level #                 : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (untested)
+Deathmatch 2-4 Player   : Yes (untested)
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : Yes
+New Music               : No
+Demos Replaced          : None
+
+================================================================
+
+* Construction *
+
+Base                    : New level from scratch
+Tools(s) used           : For level editing: DEU 5.2 (GCC), and DETH 1.1c
+			  For node building: BSP 1.2x
+			  For reject map building: RMB 2.0
+			  For wad composition: DeuTex 3.1
+
+================================================================
+
+* Known Bugs *
+	
+	THIS SPACE INTENTIONALLY LEFT BLANK
+
+================================================================
+
+* Copyright / Permissions *
+
+This wad is the property of Id software and you are prohibited from
+doing anything with it without their express permission. Ok, you can
+play it, but thats it!
+
+================================================================
+
+* Other Doom II wads by Jim Flynn *
+
+Available on Compuserve, Action Games Forum, Doom II Levels Library
+
+DM2ITZ.ZIP	The Interdiction Zone
+DM2ORA.ZIP	The Oracle (with Scott Harper)
+ENIGMA.ZIP	The Enigma - a nine level episode
+
+

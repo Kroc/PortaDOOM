@@ -1,0 +1,67 @@
+===========================================================================
+Archive Maintainer      : This is an update version of oniria.zip.
+Update to               : 
+Advanced engine needed  : ZDOOM
+Primary purpose         : Single Player
+===========================================================================
+v1.1:
+-New Music
+-A lot of minnor bugs corrected
+v1.2:
+-A minnor bug corrected
+===========================================================================
+Title                   : Oniria   [v1.2]
+Filename                : oniria.wad
+Release date            : 12/6/2006
+Author                  : Aluqah
+Email Address           : aluqahweb@yahoo.com.ar
+Web page		: www.geocities.com/aluqahweb
+Other Files By Author   : Many.
+Misc. Author Info       : -
+
+Description             : You are having a nightmare. And nobody can wakes you up...
+
+Additional Credits to   : -
+===========================================================================
+* What is included *
+
+New levels              : 1 level.
+Sounds                  : No.
+Music                   : Yes.
+Graphics                : Yes.
+Dehacked/BEX Patch      : No.
+Demos                   : No.
+Other                   : A new playpal/colormap by Jon Dowland. It gives me the idea of this map
+Other files required    : Nothing.
+
+* Play Information *
+
+Game                    : ZDOOM with doom2.wad (so, you can jump...)
+Map #                   : MAP01
+Single Player           : Designed for.
+Cooperative 2-4 Player  : No.
+Deathmatch 2-4 Player   : No.
+Other game styles       : No.
+Difficulty Settings     : Not implemented.
+
+* Construction *
+
+Base                    : New from scratch.
+Build Time              : I Don't know.
+Editor(s) used          : ED-209 1.1, Wintex 4.4, Zeth.
+Known Bugs              : None.
+May Not Run With...     : doom2.exe
+
+
+* Copyright / Permissions *
+
+-Authors may NOT use this map as a base for modification or reuse.  Get your own ideas.
+-You can do wathever you want with the new graphics.
+-You MAY distribute this file, provided you include this text file, with no modifications.
+
+
+* Where to get my maps *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.geocities.com/aluqahweb
+	   www.arcades3d.com

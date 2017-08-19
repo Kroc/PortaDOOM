@@ -1,0 +1,31 @@
+PWAD - DVII.WAD
+FILE - dvii-31-pw-0227.lmp
+Type - UV Max
+Map  - 31
+Port - PrBoom+ 2.4.8.1
+Plr  - Belial
+
+Kills   - 100%
+Items   - 75%
+Secrets - 100%
+
+Time    - 2:27
+
+Description:
+
+I never thought I'd see a slaughter map without any health or ammo ;)
+
+Infights are of key importance so I focus on making all the cybers get
+their share of action before leaving the citadel. Surprisingly enough 
+lost monsters are a rarity here despite the large number of zombiemen
+and imps that can wander around. I clear the outside and use the invuln
+to get back inside. The time depends heavily on the number of imps that
+get killed during the infights.
+
+4th exit, started with a weak 3:00 before I realized I was wasting the
+cybers up on the walls by leaving the courtyard too quickly before they
+had a chance to attack the revs. This time most of the imps on the walls
+were dead so I managed to push it under 2:30 which was my goal.
+
+Przemyslaw "Belial" Woda
+nowylepszyszatan@wp.pl

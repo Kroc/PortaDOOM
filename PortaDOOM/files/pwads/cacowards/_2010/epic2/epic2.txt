@@ -1,0 +1,102 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : EPIC 2
+Filename                : EPIC2.WAD
+Release date            : November 25, 2010
+Author                  : Alexander "Eternal" S.
+Email Address           : etern-all@mail.ru
+Other Files By Author   : Generator of Evil, Eden, Napalm,  Remain 1,
+                          EPIC, NORDHELL, Belial's Bad Brain, Remain 3
+                          XXXI CyberSky, 32 Inch Nails, Gravity,
+                          Eternal Revelation, Nightomb (2x2 series),
+                          Eclipse (2x2 series), To Fight (2x2 series)
+                          LongDays, Hell Ground, Baker's Dozen,
+                          TNT: Renascence.
+
+Misc. Author Info       : Russia, Moscow.
+
+Description             : All levels are designed for vanilla Doom2.
+                          Recommended engines: prBoom-plus with 
+                          "-complevel 2" and (G)ZDoom in "DOOM (strict)"
+                          compatibility mode. Jumping should be disabled.
+
+                          For OpenGL ports like GZDoom and GLBoom-Plus
+                          you can add EPIC2GL.WAD after EPIC2.WAD
+                          for HI-RES skies:
+                          glboom-plus -file epic2.wad epic2gl.wad
+
+Additional Credits to   : Andrey Budko, Never_Again, Hitherto and authors
+                          of used resources.
+                          
+                          Textures and flats: Powerslave, Hexen, Hexen2,
+                          Half-life, Kingpin, DeusVult2, Eternal IV,
+                          Alice, Doom3, urbanterror, Gunman Chronicles,
+                          water flat is made by esselfortium.
+                          
+                          Sprites: Powerslave, darkimp, Realm 667.
+
+                          Sounds: Powerslave, rylayeh.wad.
+
+                          Music: "Spacehunter: Adventures in the Forbidden Zone"
+                          by Elmer Bernstein (1983) (map18).
+
+                          Midi: Daggerfall (composed by Eric Heberling),
+                          Mortal Kombat, Hexen2, Daedalus.wad, 
+                          Eternal.wad, FF8, Heroes2.wad, DV2.wad, 
+                          "The unbegotten dreams" by BUHS©2001, 
+                          "TotalRecall 1990" by Jerry Goldsmith, 
+                          Undertaker theme.
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : map01 - map32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts included but not tested
+                          and not recommended.
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       :
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 5 months
+Editor(s) used          : Doom Builder 1.68
+Known Bugs              : Savegame buffer overflows on maps 14, 26, 28,
+                          29, 31 and disappearing sprites on maps 26, 29
+                          with DOOM2.EXE
+May Not Run With        :
+Tested With             : glboom-plus 2.5.0.7, chocolate-doom
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

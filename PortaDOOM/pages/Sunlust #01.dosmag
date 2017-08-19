@@ -1,0 +1,24 @@
+$KEY:P=SHELL:pwads\megawads\sunlust\play.bat
+$KEY:T=SHELL:pwads\megawads\sunlust\sunlust.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sunlust
+
+:Sunlust                                            * 2015 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>08>07*   Author : _Ribbiks & Dannebubinga_
+:Levels   : *32*            Modes : *Single, Co-op, Deathmatch
+:Requires : *boom*       Includes : *+Sounds +Music +Graphics +Patches +Demos
+:------------------------------------------------------------------------------
+
+Sunlust is a set of 32 boom-compatible maps for Doom II, designed to be played from pistol start. The maps meander through a range of themes, from traditional bases and temples to abstract hellish, void, and tech aesthetics. UV is designed primarily for ubermensch doom-gods, thus we encourage most players to start off on HMP or lower.
+    
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : ~2 years
+*Editor(s) used*          : GZDoomBuilder, DoomBuilder2, Slade3
+
+:Credits
+:------------------------------------------------------------------------------
+_franckFRAG_ for the sexy M_DOOM pic. For playtesting and other credits see page 2.

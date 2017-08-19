@@ -1,0 +1,232 @@
+===========================================================================
+Primary purpose         : Single play
+Advanced engine needed  : None for E1-E4; playing E5 and E6 ingame requires
+                          either ZDoom or Eternity, though E5 is available
+                          as a separate add-on (DTWID-E5.wad) for vanilla.
+                          DTWID-LX.wad contains unmodified, original
+                          versions of some maps, which may not be 100%
+                          vanilla compatible, so be warned there.
+===========================================================================
+Title                   : Doom the Way id Did - The Lost Episodes
+Filename                : DTWID-LE.WAD, DTWID-E5.wad, DTWID-LX.wad
+Release date            : 3/20/16
+Version                 : 1.666
+Author                  : Various
+Email Address           : xaser.88@gmail.com (compiler's address)
+
+Description             : Six episodes of classic Doom maps, originally
+                          candidates for last year's "Doom the Way Id
+                          Did", arranged in an episodic format.
+
+                          DTWID was a long but fruitful journey, with
+                          somewhere around a hundred map submissions in
+                          total. Given the strictness of the rules, most
+                          of the maps cut were not done so for reasons
+                          of quality. On their own they're quite
+                          solid maps, deserving their own showcase.
+                          This collection, while not 100% complete,
+                          contains the vast majority of submissions
+                          to the project.
+
+                          Episodes 1-3 are an alternate take on the
+                          idea of Doom the Way Id Did, three sets of
+                          maps arranged to mimic id's original episodic
+                          styles. Several maps in these sets were
+                          very close contenders to the main project,
+                          excluded only because of withdrawals or
+                          episode length limits. You may be hard-
+                          pressed to find a difference in quality!
+
+                          Episode 4 follows partially in the same vein,
+                          with several maps that mimic the style of id's
+                          "Thy Flesh Consumed" and hell-themed levels
+                          filling out the rest of the roster.                          
+
+                          Episode 5, "Base Instinct", is a "bonus"
+                          episode of E1/E2-style maps, and can be thought
+                          of as an alternate take on the Phobos / Deimos
+                          story. The episode can be accessed in the main
+                          game menu with either ZDoom or Eternity. For
+                          vanilla or other ports, running DTWID-E5.wad
+                          will load E5's maps in place of E1's.
+
+                          Episode 6, "The Final Gate", is a ZEternity-
+                          exclusive "Boss Rush" episode consisting of
+                          E*M8 candidates. No separate wad is provided,
+                          as MAPINFO is required to make the boss exits
+                          work, though the individual maps are vanilla
+                          compatible for those willing to put the maps
+                          in the correct slots.
+
+Additional Credits to   : Project Founder:
+                               Hellbent
+                          
+                          "Lost Episode" organizer:
+                               Xaser (the lazy barstid!)
+                          
+                          Artist:
+                               Kracov (TITLEPIC)
+                          
+                          Mappers:
+                               40oz, Alfonzo, C3ON9, Captain Toenail,
+                               Mr. Chris, Daimon, Doomhero85, Ellmo,
+                               Foodles, Hellbent, Hobomaster, Mr. Freeze,
+                               Matt534dog, Marcaek, Marnetmar, Megasphere,
+                               MithranDenizen, NaturalTvventy,
+                               Phobosdeimos1, Shadesmaster, 
+                               Taedium, UltimateLorenzo, XenoNemesis
+                          
+                          Random Testing:
+                               Esselfortium (v1 playtesting)
+                               rhinoduck (tons o' fixes)
+                               All the fine folk who played the wad on
+                               ZDaemon TNS. Whoop!
+
+===========================================================================
+* What is included *
+
+New levels              : 54 (6 episodes! Egad!)
+Sounds                  : No
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E1M1-E6M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Hopefully so
+Deathmatch 2-4 Player   : Not tested
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Years in the making. Longer counting
+                          Xaser's period of compile-idleness.
+Editor(s) used          : Various
+May Not Run With...     : Versions of Doom prior to 1.9
+
+
+* Map Credits *
+
+E1M1: "Security Outpost"      by  Hobomaster + 40oz
+E1M2: "Supply Station"        by  UltimateLorenzo
+E1M3: "Nukage Dump"           by  Mr. Chris
+E1M4: "Quarantine Zone"       by  UltimateLorenzo
+E1M5: "Kepler Dorsum"         by  Alfonzo
+E1M6: "Pumping Station"       by  MithranDenizen
+E1M7: "Transport Hub"         by  40oz
+E1M8: "Darkside Lab"          by  Xaser
+E1M9: "Relay Station"         by  Marcaek
+
+E2M1: "Biosphere"             by  UltimateLorenzo
+E2M2: "Cooling Towers"        by  40oz
+E2M3: "Infirmary"             by  Marnetmar
+E2M4: "Waste Treatment"       by  Ellmo
+E2M5: "Logistics Facility"    by  Megasphere
+E2M6: "Rend of Misery"        by  Ellmo
+E2M7: "Dark Passage"          by  Mr. Chris + PhobosDeimos1 + Marnetmar
+E2M8:*"The Gate"              by  Marnetmar + Xaser
+E2M9: "Petersen Station"      by  Daimon (Walter Confalonieri)
+
+E3M1:*"Hell Breach"           by  Daimon + Marcaek
+E3M2:*"Manufactorium"         by  Marcaek
+E3M3: "Necromanteion"         by  Foodles
+E3M4:*"Tartarus"              by  XenoNemesis + Xaser
+E3M5: "Purgatorio"            by  40oz
+E3M6: "Stygian Caverns"       by  Icytux
+E3M7:*"Sheol's Descent"       by  General Rainbow Bacon + Xaser
+E3M8:*"Ninth Circle"          by  Marnetmar (original by Marnetmar + Mr. Freeze)
+E3M9: "Weeping Hollow"        by  Alfonzo + Marnetmar + Xaser
+
+E4M1: "Bridge to Nowhere"     by  Captain Toenail + Traversd
+E4M2:*"Demonic Halls"         by  C30N9 + Xaser
+E4M3: "Despair"               by  Captain Toenail
+E4M4: "Phlegethon"            by  Captain Toenail
+E4M5: "Diabolico"             by  Megasphere
+E4M6:*"The Mourning Halls"    by  Marnetmar + Alfonzo (original by General Rainbow Bacon)
+E4M7:*"Babel's Gate"          by  Matt534Dog + Xaser
+E4M8:*"Temple Guardian"       by  Taedium
+E4M9: "Bean Oversight"        by  Marcaek
+
+E5M1: "Landing Zone"          by  Ellmo
+E5M2: "Observatory"           by  Marnetmar + Hellbent
+E5M3:*"Recycling Plant"       by  Marnetmar + Xaser
+E5M4:*"Phobos Garrison"       by  40oz
+E5M5: "Science Facility"      by  40oz
+E5M6: "Disposal Area"         by  Marcaek
+E5M7: "Sanguine Refinery"     by  ShadesMaster
+E5M8:*"Like Rotten Meat"      by  Marnetmar
+E5M9:*"Wayward Outpost"       by  Marcaek
+E5M0: "Starport"              by  Marnetmar + Xaser
+
+E6M1: "Deja Vu"               by  Marnetmar
+E6M2: "Intrusion Zone"        by  UltimateLorenzo
+E6M3: "The Pain Yards"        by  40oz
+E6M4: "Deimos Fortress"       by  Matt534Dog
+E6M5: "Pit of Despair"        by  Ellmo
+E6M6: "Anomaly of Evil"       by  Toenail
+E6M7: "Land of Awe"           by  C30N9
+E6M8: "Malebolge"             by  Marcaek
+E6M9: "Hell's Mosh Pit"       by  Hellbent
+
+Note: Maps prefixed with an asterisk (*) have been modified "in post" to
+      some extent for either quality revamp or bugfixing reasons. All
+      post-production on these maps was done by Xaser, except for E3M1
+      (done by Marcaek), E4M6 (a brand-new map by Marnetmar & Alfonzo
+      that's loosely based on a layout originally by General Rainbow
+      Bacon), and E3M8 (a new map by Marnetmar replacing his original
+      submission, "Nucleo Interno".
+
+      The original versions of these maps can be played by loading
+      DTWID-LX.wad, in which they'll replace the "new" ones in their
+      respective slots. There are no guarantees of vanilla compatibility
+      for the originals, however; some, like E2M8, have overflows, and
+      at least one map (E3M4) is lacking an exit. Just be warned.
+
+Note #2: A few maps from previous versions have been cycled out of DTWID-LE
+      since they appear in other places, in order to avoid map duplication
+      (and because there were a few more maps that resurfaced). The old
+      maps along with the releases in which they currently reside are:
+
+E1M7: "Siege Headquarters" by PhobosDeimos1
+    E1M3 of PhobosDeimos Anomaly: http://static.angryscience.net/doom/pd1-anom.zip
+E1M8: "Enigma"             by NaturalTvventy
+    E1M8 of No End in Sight: http://www.doomworld.com/vb/wads-mods/60012-the-ultimate-doom-no-end-in-sight-beta-2-0-release/
+E4M6: "Forgotten Caverns"  by NaturalTvventy
+    E3M5 of No End in Sight: see above link
+E5M7: "Cold Steel"         by Mr. Chris + Mr. Freeze
+    Available standalone at: http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse without explicit permission of the original mappers.  Permissions
+have been obtained from original authors for any of their resources modified
+or included in this file.
+
+Authors of their respective maps may do with the maps as they wish. Their
+inclusion here does not exclude them from being released standalone or
+featured in other projects in modified or unmodified form.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirror mazes
+Web sites: http://dtwid.herokuapp.com/
+

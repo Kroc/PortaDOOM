@@ -1,0 +1,112 @@
+===========================================================================
+Advanced engine needed  : Boom compatible, limit removing ports
+Primary purpose         : Single player
+===========================================================================
+
+ _    _ _______ __   _  ______ _     _ _______  ______ ______ 
+  \  /  |_____| | \  | |  ____ |     | |_____| |_____/ |     \
+   \/   |     | |  \_| |_____| |_____| |     | |    \_ |_____/
+
+
+Title                   : Vanguard
+Filename                : Vanguard.zip
+Release date            : May 11 2011
+Author                  : Paul DeBruyne (skillsaw)
+Email Address           : pgdebruyne@gmail.com
+Other Files By Author   : Sector 666 (666.zip)
+			  Aeternum (Aeternum.zip)
+			  ZPack E3M1 and E3M8 (Zpack.zip)
+			  Stronghold: On the Edge of Chaos (Strhedge.zip)
+				(STR08,STR23,STR24,STR31)
+Misc. Author Info       : Makes maps for Doom
+Description             : 12 Boom format levels for PrBoom+, ZDoom, or Eternity.  A
+			  bonus 13th level is included for laughs.  Inspired by Speed
+			  of Doom, Scythe 2, Alien Vendetta, and Plutonia.
+
+			  Originally Vanguard was intended to be a 32-level speedmapped
+			  megawad inspired by Speed of Doom's development cycle and 
+			  Scythe 2's episodic structure.
+
+Additional Credits to   : Vanguard includes graphics by:
+				NiGHTMARE		Espi
+				Eriance			Fredrik Johansson
+				Janitor			DaGGeR
+				Ola Bjorling		Vader
+				XDelusion		Esselfortium
+				RottKing		Nuxius
+				Afterglow		AgentSpork
+				Enjay			Huy Pham
+				SargeBaldy		Tormentor667
+				Iikka Keranen		skillsaw
+				GothicDM Team		Requiem Team
+				Eternal Doom Team	id Software
+				Raven Software		Rogue Entertainment
+			  
+			  Vanguard includes music from:
+				Title Music :  Tales of the Abyss
+				Intermission:  Rise of the Triad
+				Map01       :  Blood
+				Map02       :  Castlevania: OoE
+				Map03       :  Duke Nukem 3d
+				Map04       :  Duke Nukem 3d
+				Map05       :  TNT Evilution
+				Map06	    :  Journey to Silius
+				Map07       :  Rise of the Triad
+				Map08       :  Gundam F-91
+				Map09	    :  Rise of the Triad
+				Map10       :  Duke Nukem 3d
+				Map11       :  Xenogears
+				Map12	    :  Xenogears				
+
+                           Everyone who has provided me with feedback in the Vanguard release
+                           thread, but especially Phml and ArmouredBlood for providing
+                           invaluable FDAs.
+			 			
+===========================================================================
+* What is included *
+
+New levels              : MAP01-MAP13
+Sounds                  : -
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes; level names only
+Demos                   : -
+Other                   : -
+Other files required    : -
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-13
+Single Player           : Designed for
+Cooperative 2-4 Player  : Untested; player starts included
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Maps new from scratch; texture wad based on CC4-tex
+Build Time              : 2 months
+Editor(s) used          : Doombuilder 2, SlumpEd
+Known Bugs              : There are slime trails that are especially pronounced
+			  in PrBoom+.  They appear less frequently when running
+			  ZDoom or Eternity.			  
+
+* Copyright / Permissions *
+
+Authors may use the remaining contents of this file as a base for 
+modification or reuse.  Permissions have been obtained from original authors 
+for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

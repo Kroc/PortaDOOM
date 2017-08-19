@@ -1,0 +1,77 @@
+===========================================================================
+Title                   : Nessus: 5th Canto of INFERNO
+Date Finished           : 06/03/1995
+Author                  : John W. Anderson (aka Dr Sleep)
+Email Address           : 76312.3415@compuserve.com
+Other Files By Author   : "And Hell Followed," Episode 4, Level 7 of *The 
+			    Ultimate DOOM* by Id Software;
+			  "Dante's Gate" v2.3 (1st Canto, INFERNO)
+			  "Crossing Acheron" v2.2 (2nd Canto)
+			  "Virgil's Lead" (3rd Canto) 
+			  "Minos' Judgement" (4th Canto)
+			  "Geryon" (6th Canto)
+			  "Vesperas" (7th Canto)
+			: For HERETIC:
+			  "Recant" v1.1 
+Misc. Author Info       : Namu Amida Butsu
+Additional Credits to   : Jim F. Flynn for support;
+			  Shawn Green, American McGee, John Romero,
+			   and everyone at Id Software;
+			  Howard "Desdinova" Rider for graphic support;
+			  Antony Burden and Simon Oke for DETH 2.3;
+			  Joshua E. Anderson for playtesting.
+
+Description		: NESSUS is the 5th Canto in my INFERNO 
+			  series.  Minos decided to grant leniency and
+			  not kill you until next week.  In the meantime,
+			  having slipped past Cerberus, the top dog, you
+			  and Virgil come to a precipice overlooking the river
+			  Phlegethon.  There, Virgil greets the Minotaur
+			  using phrases from an out-of-date "Passport 
+			  to Demonese" by Charles Berlitz. Enraged at having
+			  been asked to remove his panties, the Minotaur
+			  falls upon the ground and throws a conniption fit.
+			  You grab Virgil and climb down some boulders to
+			  the foot of the cliff where Chiron, the chief 
+			  Centaur, offers to have Nessus carry you across
+			  the river on his shoulders.
+			    "Why, that's mighty white of ya'," says Virgil.
+			    "No problem, sailor," says Nessus. "Hop on."
+			    
+			  This is primarily a deathmatch level, but it's full
+			  of enough surprises to make single play quite
+			  challenging.
+
+===========================================================================
+* Play Information *
+
+Map #                   : Map07
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes (preferred)
+Difficulty Settings     : All
+New Sounds              : No
+New Music               : No
+New Graphics            : Yes
+Demos Replaced          : None
+
+* Note on the Graphics *
+			
+			  The star sky texture was composed from scratch using
+			  Paint Shop Pro v2.0.
+
+===========================================================================
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Quite a while (over 100 hours)
+Editor(s) used          : DETH 2.3 by Antony J. Burden and Simon Oke;
+Other Utilities		: BSP v1.2x by Colin Reed;
+			  RMB v2.1 by Jens Hykkelbjerg;
+			  DOOMTex v1.0c by Steve McCrea;
+			  DOOMTex Supplement by Ben Sze;
+			  Paint Shop Pro v2.0 for Windows.
+
+Known Bugs              : Newt Gingrich
+May Not Run With...     : OS/2 WARP <g>

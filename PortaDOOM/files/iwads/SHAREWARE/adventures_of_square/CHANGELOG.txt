@@ -1,0 +1,381 @@
+The Adventures of Square CHANGELOG
+(C) 2014 - 2017 BigBrik Games
+http://adventuresofsquare.com
+----------------------------------
+
+1.4
+...
+
+- Base engine is now GZDoom 2.4.0! This will re-unify the versions into one
+  download! If you want the GL renderer, select it in the video menu and 
+  restart!
+
+- Weapon makeovers!
+- Spruced up the TITLEPIC a bit.
+- Re-did the menus to use language entries and added/changed some sections.
+  Lots of things may be reorganized from last version. Sorry if this confuses
+  people.
+- Tweaked Jetpack Jerk graphics to make less object pool pollution.
+- Ovolts revamped: New looks, better Ovolt death sounds, and they're more 
+  robotlike.
+- Adjusted damage from Ovolt explosions.
+- Slight Chatterbox sound tweaks.
+- Metal debris now has sounds to tickle the eardrums when you're blowing up robots!
+- Actors: Making sounds stop on deactivated fountains was using a deprecated 
+  method.
+- Actors: Fixed precision problems in some random value ranges.
+- All Maps: Fixed bad or garbage data causing issues in slated (G)ZDoom builds.
+- Sound: Adjusted some sounds played by exploding enemies.
+- Destructinator's "lock-on" crosshair's height was changed due to engine changes.
+  This has been fixed.
+- Adjusted damage that Square takes from green goonade goo.
+- A bunch of "modern" robots now explode with fragments of some mysterious 
+  material...
+
+- Fixed some invisible walls on cliffs in E1A3 (and still prevented the player 
+  getting up there).
+- Added a game hint about crates in E1A3.
+- Extended the ladder to the yellow key path in E1A3.
+- Some slight powerup changes in E1A6.
+- Fixed some "node holes" in E1A6.
+- Made a switch in E1A7 not locked.
+- Moved the passcode disc in E1A8 to a more findable location.
+
+- The Fishtank uses a better effect that does not wash out the vibrant colors
+  of Square's universe. You also get an audible/visual warning when you are 
+  about to run out of air!
+
+1.3.2
+.....
+
+- Square Jabber chance can now be set. Default is 15%. If you already disabled
+  this before, you'll need to set it 0 again. Sorry.
+
+- Some sprite facelifts.
+- Goonade puddles now do the damage the airborne globs do. It was different 
+  for some reason.
+- Goonade goo also always makes enemies flinch, to convey that it actually is
+  damaging and to make it slightly more useful.
+- Adjusted the "fast" speed of the Dark Ovolt attack. This makes them a tad
+  more fair in Cubular.
+
+- It was a mistake making all the NPCs extend ScriptedMarine. Now they just 
+  extend SquareMonster.
+  
+- Hellshell sub-explosions no longer thrust the player, making Hellshell-
+  jumping much more consistent.
+- The cows in E1A10 looked a little chilly, so we gave them some winter wear.
+- Some fountains that were red should have been purple due to a typo.
+- Yellow giblets are now the proper yellow for the GL ports.
+
+1.3.1
+.....
+
+- MAPINFO skill definitions changed to not interfere with existing skill 
+  definition names. Also added "clearskills" to ensure that existing behavior 
+  is not copied in the future.
+
+- Tweaked Color Cube behavior - now they won't fire the same type of attack 
+  twice in a row.
+- Tweaked Goonade damage for more overall effectiveness, not just direct hits.
+- Goonade direct hit damage varies with force of throw. Max power = max damage.
+  
+- Fixed some maps with forcefields that hurt enemies when they touched them.
+- Cleaned up some automap lines.
+- Added a hidden gag to E1A8 that we really wanted to add earlier on in 
+  development.
+
+
+1.3
+...
+
+- Core ZDoom and GZDoom version updated (2.8.1/2.1.1 respectively).
+- Distribution split into two packages due to source port fragmentation. (Sorry!)
+- Some internal reorganizing of resources for the new ZDoom versions.
+
+- Goonades are now an offhand weapon (thrown with the ALTFIRE/GOONADE button).
+  By default, this is the RIGHT Mouse Button.
+- Reloadable weapons (currently just the Quadcannon) reload with the RELOAD button.
+- Hotsauce renders you invulnerable for its duration on ALL skill levels, now.
+  We figured it was best to keep it as fun as possible.
+- Fishtanks, which can be essential, are no longer counted as "items."
+- Rectangoliers now behave properly in Cubular (which, of course, is the skill
+  setting that they are featured in. whoops). This means they'll probably be
+  more aggressive and bothersome than usual. We're not sorry.
+- Changed the "replay" button in Time Attack to RELOAD instead of FIRE.
+
+- Added a bunch of kooky adornments to Square's face for each powerup.
+- Added Goonade counter to the "block" statusbar.
+- Fixed/changed the secret area message.
+- Fixed a lemonade pickup message (picked up on low health).
+- Fixed some sprite offsets on candles and torches.
+- Status bar is now removed/changed during intermission.
+- Tweaked some VO timings for when Square dispatches a baddie.
+- Giblets now bounce off ceilings. They looked weird just stopping when hitting
+  them.
+- Slight menu and credits tweaks.
+
+- Added "ladder" game hint to another ladder in E1A1. Only one will be triggered, 
+  anyway.
+- Changed a small section of E1A3.
+- Some bars blocked projectile attacks on E1A6. Now they don't.
+- Fixed "unknown things" on E1A6.
+- Changed some Block Player lines and Walkable Lines in E1A8 to be shot through
+  or walked on.
+
+
+1.2
+...
+
+- Slightly better implementation of the "Promo" fix.
+- The ammo packs dropped by some circle guys could get crushed under doors and
+  stuff. Fixed!
+- There was a bunch of bullet ricochet sounds that weren't being used. Time to 
+  remedy that! Stuck them on some enemy bullet puffs so Square knows he's 
+  being shot at.
+- Shatterboxes explode differently now, to differentiate them from other 
+  enemies that behave similarly (or WILL behave similarly...).
+- Updated Destructinator crosshair. Slightly more informative.
+- Some powerups were not clearing when the intermission screen was reached.
+- Fishtank duration increased to 90 seconds.
+- The Locationator now shows all automap objects for 30 seconds (map is still
+  revealed for the whole level). Shows up as "Scanner" on HUD.
+- Changed around some powerup HUD labels.
+- Added some forcefield powerdown sounds.
+- A single Oozi Jerk frame had fullbright pixels on it when it shouldn't have.
+- Some maps never had all 8 Co-op starts! Guess nobody plays Co-op, or we would 
+  have heard about it!
+- Throwing Goonades and dropping crates no longer alerts enemies.
+  
+- Square now has a LOT more things to say.
+
+1.1.2
+.....
+
+- Changed some "fullbright" pixels on some sprites, notably the robotic enemies.
+- A mode called "Promo Mode" would still be active even if it were disabled. 
+  Fixed.
+- Added licensing information for end-users.
+
+1.1.1
+.....
+
+- Tweaked the output levels of some sound clips.
+- Last patch broke Square's voiceovers when picking up Defibs. Fixed!
+
+1.1
+...
+
+- Added a "strength meter" to Goonade throws so that the throw force is more 
+  easily determined.
+- Made explosions and smoke/steam effects look better (smoke billows).
+- Quadcannon fires 12 pellets instead of 10, firing spread adjusted slightly.
+- TNT crates explode a little more strongly.
+- Nuke crates damage less on initial explosion.
+- Fizzo crate explosion damage reduced dramatically, but now they blast things
+  away like the defibs!
+- NPCs now go immediately into a FRIGHTENED state when shot.
+
+- Added small boxes to the Square key balcony in E1A1 to convey rail-jumping 
+  feature.
+- Modified E1A8 slightly to convey Fizzocrate mechanic.
+- Fixed a place in E1A9 where the player could get stuck between crates.
+  
+- Enabled in-game hints by default (reminder: they can be turned off).
+- Added subtitles (and subtitle system) for some voice clips. They too can be
+  toggled in the menu.
+
+- Removed TRAINING episode. Deemed unnecessary. It's still reachable in the 
+  game via console: "map training"
+
+1.0
+...
+
+- Out of beta!
+
+- D_E1A4 and D_DM04 had doubled notes.
+- Souped up D_E1END a bit.
+- Entire statusbar now changes color with Square's color!
+- Three new player colors, maroon, beige, and orange, added.
+- Hot Sauce fireballs now translate properly.
+- Jetpack Jerks still blocked the player on death.
+- Angle Fish no longer count towards kill percentage.
+- TITLEMAP now has a name (for console messages).
+- New sprites for Square player character and all NPCs. 
+- NPCs also now have additional "frightened" frames.
+- Switch "defaultmap" to "gamedefaults" in global MAPINFO. Makes
+  better sense this way for add-on maps.
+- Adjusted some Circle health and Cylonder health. Cylonder was
+  a tad too beefy.
+  
+- Texture alignment/adjustments across all maps.
+
+- Added hint system and hints to E1A1.
+- Some ammo adjustment on E1A1 after Shotbow addition.
+- Removed E1A2 railing near Circle Key.
+- Slime corridor in E1A2 has warning signs.
+- Two secrets added to E1A2.
+- Added "Monster Block" flag to some computer inlets on E1A2.
+- Culled some health items on E1A4.
+- Added a secret to E1A4.
+- Changed a secret from an item secret to a sector secret in E1A4.
+- Highlighted the Shotbow in E1A4. It could've been easily missed.
+- Changed a trigger in a secret area.
+- Culled some health items on E1A5 - Square's gotta watch the calories.
+- Changed the appearance of the bobbing teleporter in E1A5.
+- Adjusted some lifts on E1A6.
+- Changed a powerup or two on E1A6.
+- Adjusted lighting in some places in E1A7.
+- Made a Fizzo-Pop a secret on E1A8.
+- Adjusted E1A9 monster placement for Normal/Experienced skill.
+- Changed intermission music handling at end of E1A9.
+- Adjusted comedic timing on a PA message on E1A9.
+- Changed E1A10 monster-block lines a little.
+
+
+0.9 Beta 5 (RC1)
+................
+
+- Altered handling of credits slightly for title screen.
+- Made a bunch of un-interactable effects and objects client side only
+  for one day when this is supported by ZDoom-compatible multiplayer ports.
+- Modified speed and random damage of enemy attacks.
+- Tritankle pain chance increased from 90 -> 100.
+- Fixed default "unseen lines" automap color to be more visible.
+- Adjusted ammo in CUBULAR (using actor defs). Most ammo is roughly 1.5x.
+  Hellshells are not increased.
+- Adjusted behavior of Rectangolier - it may randomly break out of the 
+  charge, now: makes for more erratic movement.
+- Adjusted behavior of Anglefish - it may randomly break out of the 
+  charge, to prevent getting stuck on walls.  
+- Changed CUBULAR to not give any ammo bonus. Good luck!
+- Changed CUBULAR warning message to be a tad more informative.
+- Adjusted/fixed sprite color translations.
+- Changed some billboard forcing for GL.
+- Changed armor graphics to something a little more in-universe; class names
+  changed to fit types.
+- ALLWHITE texture should not be fullbright.
+- Some endgame rocket textures had an incorrect palette color.
+- Fixed translation for Oozi hitscan (too dark).
+- Fixed wrong armor given in IDKFA cheat.
+- Fixed Hellshell explosions not spawning if there wasn't room - now uses
+  a better cluster method. This changes the explosion a little bit, but it
+  won't be too noticable to players.
+- Music lump D_E1A4 and D_DM04 didn't play back right in FMOD's sequencer.
+  This has been fixed.
+- Fixed some textures on E1A1.
+- Changed the bars to forcefields in the northern building, plus made
+  the Square Key more visible at all times.
+- Fixed an unreachable/un-alertable enemy on E1A3, preventing 100% kills.
+- Changed an item secret to a sector secret in E1A4.
+- Fixed a floor not rising if the player took a super-special speedrun route
+  on E1A4.
+- Fixed two enemies that should have been "deaf" on E1A4.
+- A Rectangolier was put in a place that was surrounded by "block monster" 
+  lines on E1A4. Not too effective.
+- Fixed an event not triggering if the player went a different way on E1A5.
+- Fixed Red Lift locking/repeating on E1A5 near northern plant.
+- Made a Fizz-o-Pop in E1A5 secret. It was hidden enough to be.
+- Removed railings on the eastern side of E1A8's yellow building - in order
+  to keep their blocking effect, they had to be both jump-over AND walkable
+  in two different places which makes things awkward depending on who was 
+  attacking whom from where. Removed them and added "caution" paint to the 
+  edge. OSHA would be pleased, somewhat.
+- Fixed some secrets not triggering in E1A9 (also made them sector-secrets).
+- Fixed a misaligned texture in E1A9.
+- Created a teleporter for Co-op players to use once they progressed beneath 
+  the silos in E1A9 (triggered by script).
+- Fixed E1A10 exit not triggering if the player fell a certain way down it.
+  Fake floor was too high.
+- Fixed some ceiling textures that should have been sky textures in E1A10.
+  
+0.9 Beta 4a
+...........
+
+- Fixed Time Attack "Press [use] to start" not disappearing.
+
+0.9 Beta 4
+..........
+
+- Changed game palette.
+
+- Adjusted sprite offset for Elite Oozi Jerk.
+- Adjusted speed of warping flats.
+- Fixed texture alignment issues in Warehouse in E1A9, made some lines
+  monster-block.
+- Gussied-up Squaresville a bit in E1A1.
+- Changed some textures so that some important areas stand out a little bit 
+  better.
+- Added bubble effects in fountain splashes if they end up underwater.
+- Changed E1A3's TNT dispenser to look like the others in other maps.
+- Changed bridge at E1A3 so that the barriers only go up if there are 
+  monsters.
+- Changed monster placement in E1A4.
+- Made the ending more explosive in E1A4.
+- Removed some fountains and added matching "teleport exits" in E1A5.
+- Added lower walkway in E1A6 around sludgefall - sealed up area behind it
+  for performance reasons and changed placement of cave-area powerup. 
+- Made passages under main cylinder in E1A6 glowy-lighty so that they stand 
+  out.
+- Added some more stone walls in northern area in E1A6 for performance 
+  reasons.
+- Fixed "Count as Secret" objects in E1A6 and other maps.
+- Changed monster placement in E1A6.
+- Made E1A7's color-coding more obvious.
+- Changed first Color Cube encounter in E1A8.
+- Changed sharp staircase in E1A8 to a more architecturally-sound staircase.
+- Changed E1A8 Disc area to a better Color Cube encounter.
+- Raised the Silly Sphere platform so it can't be jumped to from the annex 
+  hall in E1A8.
+- Changed green building interior a little to make the windowed outside look 
+  like it made sense with the inside on E1A8.
+- Lowered pop vats outside of yellow building in E1A8 so the player didn't
+  hurt themselves dropping off of them.
+- Changed lookout tower in E1A8 to have bars at the top so the player doesn't
+  fall off, plus an indication of its purpose in the map (exit lock).
+- Changed the ColorCube on the dropping platform to the west to two Oozi 
+  Jerks.
+- Changed positioning of a crate stack in E1A9 warehouse that would have 
+  trapped the player if they fell into it.
+- Added some floes and warping-in enemies to the map end of E1A10.
+- Tweaked Shotbow - a tiny bit less horizontal spread, 8 pellets, 5 damage.
+- Tweaked Quadcannon - a small bit more vertical/horizontal spread, 
+  10 pellets, 5 damage.
+- Tweaked Oozi - increased damage per hitscan (5 -> 6), kept spread.
+- Made the Destructinator more susceptible to Hellshell damage, since it 
+  shrugs off explosions. (1x -> 2x)
+- Weakened Anglefish health a little (50 -> 30)
+- Slowed Cannon Jerk cannonball (20 -> 18) and decreased its damage (7 -> 6).
+- Fixed some non-giblet giblets making "plop" sounds.
+- Added status bar box for Goonade count.
+  
+0.9 Beta 3
+..........
+
+- Included GZDoom (GLSquare) as part of the release.
+
+- Anglefish hitbox increased a little.
+- Default automap colors changed.
+- Fixed Quadcannon reload bug.
+- Added ending cutscene graphics drawn by Baratus (credited on titlemap roll).
+- Fixed Square key placement in E1A4.
+- Removed secret status of yellow armor in E1A4.
+- Fixed PUNCH texture not warping.
+- Changed Paintguy/Cannon spawn when entering Circle key area in E1A3.
+- Changed secret handling for Goonades in E1A3.
+- Fixed harmless goo in E1A8.
+- Fixed a tiny sector of harmless goo in E1A7.
+- E1A9 had a lot of things flagged as a secret that would have over-inflated 
+  the secret count due to a bug in ZDoom 2.7.1.
+
+0.9 Beta 2
+..........
+
+- Rebuilt the nodes in all maps. No more game-breaking node bugs!
+
+
+0.9 Beta 1
+..........
+
+- Initial release.
+

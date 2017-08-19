@@ -1,0 +1,2907 @@
+                        DEUS VULT II: The First Edition                      
+=============================================================================
+                            = Version 2008-02-25c =
+=============================================================================
+
+--------------
+C O N T E N T:
+--------------
+
+1.  INTRODUCTION
+
+2.  INSTALLATION
+    2.1  Quick and Easy Install
+    2.2  Differing Versions of DVII
+    2.3  Compatibility
+
+3.  STORYLINE
+
+4.  GAMEPLAY
+    4.1  Single Player
+    4.2  Cooperative
+    4.3  No Deathmatch
+    
+5.  DEMO RECORDING
+    5.1  Single Player Demo Recording
+    5.2  Cooperative Demo Recording
+    5.3  Demo Recording with PrBoom-Plus 2.4.8.3-Beta
+    5.4  Demo Recording with ZDoom 2.2.0
+           5.4.1: ZDoom 2.2.0 Single Player Demo-recording
+           5.4.2: ZDoom 2.2.0 Co-op Demo-recording
+
+6.  NOVELTIES
+    6.1  New Weapons
+           6.1.1 Dual Pistols
+           6.1.2 Sauron's Gauntlets
+    6.2  New Monsters
+           6.2.1 Hell Cleric
+           6.2.2 Flying Balrog
+
+7.  LEVEL INFORMATION
+
+8.  BUGS
+
+9.  AUTHOR INFORMATION
+    9.1  Self-Input
+    9.2  Favorite Games
+    9.3  Random Thoughts on Mapping
+
+10. CREDIT
+    10.1  Acknowledgements
+    10.2  Special Thanks
+    10.3  Doomers and their projects that influenced DVII 
+
+11. LEGAL STUFF
+    11.1  Original Resources
+    11.2  Modified Resources
+    11.3  Borrowed Resources
+    11.4  Usage of Resources
+
+12. QUICK OVERVIEW
+
+
+
+-----------------
+[1] INTRODUCTION
+-----------------
+
+A Doom2 modification made by a Doomer.
+
+The first edition of the sequel to the original Deus Vult. Heavily 
+emphasizes co-op play and demo recording. Offers a wide variety of gameplay
+spanning nine levels, including gun n' run maps, slaughterfests, and tight
+survival maps. From small techbases to hellish cathedrals, Deus Vult
+II's levels are diverse in architecture as they are in gameplay, and offer
+a little bit of everything for the entire family.
+
+
+
+-----------------
+[2] INSTALLATION
+-----------------
+    2.1  Quick and Easy Install
+    2.2  Differing Versions of DVII
+    2.3  Compatibility
+
+You need a sourceport to run Deus Vult II, the two main
+sourceports to use for this mod are either PrBoom-Plus or ZDoom.
+
+To download PrBoom-Plus, visit http://sourceforge.net/projects/prboom-plus
+To download ZDoom, visit http://zdoom.org/
+To download GZDoom, visit http://grafzahl.drdteam.org/
+
+Furthermore, you need Doom2.wad to run DVII properly. Doom2.wad is a
+file found in your Doom2 directory after installing a licensed copy of Doom2 
+into your computer. The sourceport will need to run Doom2.wad in 
+conjunction with DVII-1i.wad or DVII-1u.wad to execute this mod.
+
+If you have any questions regarding installation, feel free to email
+DVII's author at BusyBeaverHP@GMail.com
+
+[2.1 Quick and Easy Install]
+--------------------------------
+
+1) Download the sourceport zDoom at http://www.Zdoom.org (or GZDoom at 
+   http://grafzahl.drdteam.org). It is recommended that you run DVII
+   with the provided sourceports in DVII-1i.zip / DVII-1u.zip.
+
+2) Extract the desired sourceport to a new folder, and place 'DOOM2.WAD' in
+   that newly created folder.
+
+4) Drag "DVII-1i.wad" or "DVII-1U.wad" into the same location of the zDoom
+   folder.
+
+5) Drop and Drag the "DVII-1i.wad" or "DVII-1U.wad" onto the "Zdoom.exe" or 
+   "gzdoom.exe" file.
+
+6) The game will then automatically start with Deus Vult II.
+
+Enjoy!
+
+Note: DOOM2.WAD is found in your DOOM2 Directory. If you do not have it,
+you may purchase it from either http://www.idsoftware.com or 
+http://www.steampowered.com. For more information, visit 
+http://www.doomworld.com.
+
+
+[2.2 Differing Versions of DVII]
+--------------------------------
+
+There are two versions of DVII: First Edition floating around the net, 
+differing only in terms of music distribution. Demo playback and levelwise,
+they are all identical. The breakdown of the specific differences 
+in each version...
+
+DVII-1i.wad: The Idgames Archive Edition of DVII, music for Map12 
+             and Map22 are different from DVII-1u. The MP3 files that are 
+             present in DVII are free SPC music files converted to MP3s. 
+             The music in this version meet the conditions of files 
+             uploaded to the Idgames Archive.
+
+DVII-1u.wad: The Ultimate Edition of DVII, this version has the ideal 
+             soundtracks for Map12 and Map22 in MP3s. It makes a 
+             HUGE difference in terms of ingame atmosphere. This is the 
+             best and preferred version of DVII in the author's eyes.
+             
+             DVII-1u.wad can be obtained by specifically emailing the 
+             author (BusyBeaverHP@GMail.com) requesting a copy of such,
+             or downloaded wherever available.
+
+
+[2.3 Compatibility]
+-------------------
+
+DVII uses Boom-Compatible features in its maps.
+
+DVII has been proven to run on PrBoom-Plus 2.4.8.3-Beta, GZDoom 1.1.10 and 
+ZDoom 2.2.0. I can't account for DVII on any other versions of those ports, 
+or any other ports for that matter.
+
+ZDoom 2.2.0 runs DVII with MP3s, and shows no bugs, if you are playing DVII 
+for the first time, THIS is the port to use.
+
+GZDoom 1.1.10 basically runs DVII as solidly as ZDoom 2.2.0, but with 
+accelerated hardware, you can get smoother framerates out of this port 
+than say, ZDoom.(depending on the circumstances). This is a great port 
+to run Deus Vult II in as well.
+
+PrBoom-Plus 2.4.8.3-Beta will run DVII without crashing, thanks to Entryway's
+last minute advice, this is the port of choice for demo-recording.
+
+If newer ports of PrBoom-Plus runs DVII with less bugs and slimetrails than
+2.4.8.3-Beta, then let those ports replace PrBoom-Plus 2.4.8.3-Beta as the 
+DVII demo-recording sourceport.
+
+
+
+----------------
+[3] STORYLINE
+----------------
+
+After saving Mars from Hell's demonic invasion, you and your buddies
+went back to Earth and found it overrun with the same hellspawns. Most of
+humanity including your family and friends are safely evacuated to distant
+reaches of space while the world's military fights the demons on Earth.
+With nobody to save and a planet full of baddies, the only assignment for
+your platoon is to clean house!
+
+You will fight through rivers, dams, valleys, mountains, hills, outposts, 
+and even your backyard... you will do as you have done on Mars... kick some
+demonic butt... then, you will take the fight off Earth and bring it into
+their own backyard... it's time! RAWRGGGH!!!
+
+
+
+------------
+[4] GAMEPLAY
+------------
+
+    4.1  Single Player
+    4.2  Cooperative
+    4.3  No Deathmatch
+
+Deus Vult II's gameplay focuses on subjecting the player to a variety of
+combat scenarios across different environments. In order to survive, the
+player must fight or evade enemies and reach the exit point of each map.
+
+If you are playing Doom on a sourceport with additional options that promote
+ingame behaviors that were not part of original Doom, like jumping,
+freelook, finite actor heights, etc... that may affect DVII's gameplay
+negatively, and may even get your player to become stuck.
+
+If you don't care about the stuff related to ingame behavior as mentioned
+above, just follow this one rule for Pete's sake: NO JUMPING OR CROUCHING!
+
+Thanks to ZDoom's powerful Mapinfo, you don't need to worry about
+compatability problems. We decided to leave infinitely tall actors 
+alone regarding this, as some people do not want this limitation.
+
+
+[4.1 Single Player]
+-------------------
+
+Deus Vult II's single player gameplay have been adjusted and balanced to be
+completable from pistol start up to the Ultra-Violence skill setting.
+
+When played as a series of level, the start of many DVII levels will prove
+laughably easy as the player accumulate extra health, ammo, and weaponry 
+from the previous level(s). If the player wants to challenge himself, 
+begin all maps from pistol start. 
+
+Description of DVII difficulty settings:
+
+I'M TOO YOUNG TO DIE: Skill 1 is for newcomers to Doom. If you can read
+                      this, Brent and Jonathan, choose this skill on your
+                      first time through DVII.
+
+HEY, NOT TOO ROUGH: Skill 2 and lower are for newbies and novice Doomers. 
+                    Play on this skill setting when you want to scrutinize 
+                    the architecture of the levels without getting a rocket 
+                    in the face.
+
+HURT ME PLENTY: Skill 3 is calibrated for veteran Doomers who wants 
+                challenging, but non-frustrating play through DVII. The 
+                enemy lineup on this skill level is far more resistant than 
+                Skill 2, so you need to have decent First Person Shooter 
+                experience before starting out the game on HMP.
+
+ULTRA VIOLENCE: On skill 4, most of DVII will be about the same difficulty 
+                as Alien Vendetta's third episode on UV. It will be hard,
+                and veteran Doomers looking for a death challenge will be
+                pleased with the later levels. DVII isn't unfair on UV, but 
+                be warned now and again that some of the later Hell areas 
+                will pit you against insane opposition as you've never seen 
+                the likes.
+
+NIGHTMARE: DVII have not been tested on skill 5. Nightmare-Speed looks
+           favorable on some maps but has yet to be demonstrated. As far as 
+           Nightmare-Max goes, it probably won't be fair, in fact, I'm sure
+           you'll die trying, play it at your own risk.
+
+The general difficulty progression for all skill levels (except Nightmare)
+increases gently with every level... then Hell is introduced. The Hell levels
+are hard, probably exponentially harder than the previous levels in terms
+of fireight intensity. The DVII difficulty slope turns into an 
+asymptote the moment you reach the first hell maps. Basically, the Hell 
+levels on HURT ME PLENTY and ULTRA VIOLENCE will stop most players dead.
+Have fun!
+
+There are two exits for each level. A conventional exit and a suicide exit.
+The suicide exit will allow for a faster speedrun, but you'll have to 
+find it first, and convince one of the monsters to let you under! 
+Happy hunting!
+
+All levels can be exitable without dying from
+pistol start on Skill 4 in single-player mode.
+
+
+[4.2 Cooperative]
+-----------------
+
+In addition to a single-player, cooperative is an imperative for DVII.
+Not only for two player, but three and four player cooperative as well.
+
+The DVII levels contain mechanisms that allows for supplementation 
+of ammo exclusively into player 3 and 4 should they be present in co-op,
+without interfering with the 2-player coop ammo/health balance. 
+
+In other words, DVII's two-player co-op is gameplay-balanced to a fine 
+bpoint, but should there be a 3rd or 4th player present, they will gain
+health and ammo bonuses right from the start without having to touch any 
+ingame items.
+
+On Skill 4 (Ultra-Violence) and Skill 5 (Nightmare), Cooperative Mode will
+feature monsters that would otherwise not be present in single player. 
+Beware.
+
+All levels can be exitable without either players dying with 
+pistol start on Skill 4 in two-player cooperative.
+
+
+[4.3 No Deathmatch]
+-------------------
+
+All levels of DVII are geared towards single and cooperative play. 
+However, there are some source ports like Legacy that support X>4 player
+cooperative by spawning the extra players into Deathmatch Starts. 
+In which case, the Deathmatch Starts can accomodate the extra players
+in such ports.
+
+There are four deathmatch starts per level, but no other DM provision.
+
+
+
+------------------
+[5] DEMO RECORDING
+------------------
+
+    5.1  Single Player Demo Recording
+    5.2  Cooperative Demo Recording
+    5.3  Demo Recording with PrBoom-Plus 2.4.8.3-Beta
+    5.4  Demo Recording with ZDoom 2.2.0
+           5.4.1: ZDoom 2.2.0 Single Player Demo-recording
+           5.4.2: ZDoom 2.2.0 Co-op Demo-recording
+	   5.4.3: ZDoom compat and dmflags breakdown
+
+Both PrBoom-Plus and ZDoom are acceptable as official demo recording 
+ports for DVII. The following sections will define the conditions 
+accompanying official DVII demo-recording...
+
+
+[5.1 Single Player Demo Recording]
+----------------------------------
+
+Both PrBoom-Plus and ZDoom are acceptable as official demo recording ports
+for DVII's single player demo recording, provided they follow the 
+conditions set by 5.3 & 5.4 and their corresponding subsections.
+
+The Automap cheat (IDDT) is acceptable in DVII single player demo-recording.
+
+
+[5.2 Cooperative Demo Recording]
+--------------------------------
+
+Both PrBoom-Plus and ZDoom are acceptable as official demo recording ports
+for DVII's cooperative player demo recording, provided they follow the 
+conditions set by 5.3 & 5.4 and their corresponding subsections.
+
+
+[5.3 Demo Recording with PrBoom-Plus 2.4.8.3-Beta]
+---------------------------------------------
+
+If you plan on recording demos for DVII with PrBoom-Plus, make sure the
+following is in the .cfg:
+
+<default_compatibility_level     9>
+
+...Without the brackets.
+
+"Otherwise pain and suffering 
+lie ahead. (This is the complevel that emulates Boom 2.02. 
+The complevels aren't a minor thing - they make a massive 
+difference to how things behave in-game.)" - Graham Burgess [Grazza]
+
+Command Line for launching PrBoom-Plus with single player conditions:
+prboom-plus complevel 9 -file <filename> -skill # -record <DemoName>
+-longtic
+
+On -file <filename>, the <filename> should be replaced with DVII-1i,
+or DVII-1u, depending on the version that you have, but without the 
+<> brackets.
+
+On -skill #, set this to the skill for recording.
+
+1 = I'm Too Young To Die
+2 = Hey Not Too Rough
+3 = Hurt me plenty
+4 = Ultra Violence
+5 = Nightmare
+
+On -record <DemoName>, the <DemoName> should be replaced with whatever
+name you want your demo to be, and there should be no <> brackets.
+
+On -longtic, this command is optional, but it does make your mouse
+movement less problematic in PrBoom-Plus 2.4.8.3-Beta. In Vanilla Doom, if
+you were recording, the way the tics were saved to the demo file changed
+the accuracy of the mouse turning: small mouse movements didn't do anything
+and normal movements were more jumpy. Longtic allievates this problem.
+
+
+[5.4 Demo Recording with ZDoom 2.2.0]
+-------------------------------------
+
+ZDoom is a great sourceport and is perfectly acceptable as a demo-recording
+port for DVII. There are, however, many behaviors in ZDoom that deviate
+from original Doom behavior, such as the option to jump, crouch, or even 
+set actors to be finitely tall. Such things should be minimized through 
+adjusting compatibility and dmflags.
+
+Basically, any option in ZDoom that promote behaviors which were not
+originally in Boom 2.02 should be disabled when it comes to DVII demo
+recording. 
+
+The following subsections 5.4.1 and 5.4.2 define the official
+parameters of ZDoom demo recording in single and cooperative mode.
+
+
+5.4.1: ZDoom 2.2.0 Single Player Demo-recording
+-----------------------------------------------
+
+Mike's Input on ZDoom 2.2.0 single player demo recording 
+for DVII:
+
+With the exception of infinitely tall actors, all compatability options
+are maintained by a mapinfo lump.
+So you only need to worry about this option. The rest are taken care of.
+
+When recording demos in singleplayer, use this command line:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+zdoom.exe -file <filename> +compatflags 16501 +dmflags 267059200 
++dmflags2 32768 -skill # -record <DemoName>
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+The dmflags and dmflags2 will set zdoom to run with the gameplay 
+settings to as close as possible to boom. There is no mouselook, 
+jumping, or crouching.
+
+On -file <filename>, the <filename> should be replaced with DVII-1i,
+or DVII-1u, depending on the version that you have, but without the 
+<> brackets.
+
+On -skill #, set this to the skill for recording.
+
+1 = I'm Too Young To Die
+2 = Hey Not Too Rough
+3 = Hurt me plenty
+4 = Ultra Violence
+5 = Nightmare (insane kudos to anybody who pulls a 
+               run of map20 or map21 on NM)
+
+Skill is 4 is the ideal level for demo recording.
+
+On -record <DemoName>, the <DemoName> should be replaced with whatever
+name you want your demo to be, and there should be no <> brackets.
+
+
+5.4.2: ZDoom 2.2.0 Co-op Demo-recording
+----------------------------------------
+
+Mike's Input on ZDoom 2.2.0 co-op demo recording for DVII:
+
+Unfortunately, it is simply impractical to play PrBoom online, therefore
+the Coop demos are performed only on ZDoom 2.2.0 (unless theres a team
+of lan coop demo recorders).
+
+The variables required for coop demo recording:
+
+compatflags 16501
+dmflags 267059200
+dmflags2 32768
+teamplay true
+teamdamage 1 
+
+These settings enable Friendlyfire, and as stated in the previous
+section, there is no mouselook, jumping, or crouching.
+
+Command Line for launching ZDoom with co-op conditions:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+zdoom.exe -file <filename> +compatflags 16501 +dmflags 267059200 
++dmflags2 32768 +teamplay true +teamdamage 1 -host # -skill # 
+-record <DemoName>
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+On -file <filename>, the <filename> should be replaced with DVII-1i,
+or DVII-1u, depending on the version that you have, but without the 
+<> brackets.
+
+On -host #, set the # to the number of people who will be playing
+(including the host).
+
+On -skill #, set this to the skill for recording.
+
+1 = I'm Too Young To Die
+2 = Hey Not Too Rough
+3 = Hurt me plenty
+4 = Ultra Violence
+5 = Nightmare
+
+Skill 4 is the idela level for demo recording.
+
+On -record <DemoName>, the <DemoName> should be replaced with whatever
+name you want your demo to be, and there should be no <> brackets.
+
+5.4.3: ZDoom compatability flags breakdown
+----------------------------------------
+
+Ideally, the flags should always be set as:
+
+compatflags 16501
+------------------
+Find Shortest Textures Like Doom: Yes
+Use Buggier Stair Building: No
+Limit Pain Elementals' Lost Souls: Yes
+Don't Let Others Hear Your Pickups: No
+Actors Are Infinitely Tall: Yes
+Criplle Sound For Silent BFG Trick: Yes
+Enable Wall Running: Yes
+Spawn Item Drops On The Floor: No
+All Special Lines Can Block Use <USE>: No
+Disable Boom Door LighT Effect: No
+Raven Scrollers use Original Speed: No
+Use Original Sound Target Handling: No
+DEH HealtH Settings LIke Doom2.exe: No
+Self Ref. Sectors Don't BLock Shots: No
+Monsters Get Stuck Over Dropoffs: Yes
+Boom Scrollers Are Additive: No
+Interpolate Monster Movement: Yes
+
+Again, these flags (except infinitely tall actors) are managed 
+by the MAPINFO, so it is recommended that these settings be left alone.
+
+As far as dmflags go, just make sure crouch, jumping, and whatever
+else deviates from boom 2.02 behavior is disabled.
+
+
+
+-------------
+[6] NOVELTIES
+-------------
+
+    6.1  New Weapons
+           6.1.1 Dual Pistols
+           6.1.2 Sauron's Gauntlets
+    6.2  New Monsters
+           6.2.1 Hell Cleric
+           6.2.2 Flying Balrog
+
+With respect to Doom2, Deus Vult II feature novel gameplay elements such
+as new weapons and monsters.
+
+
+[6.1] New Weapons
+-----------------
+
+Deus Vult II feature two new weapons that are fun to use, but at the same
+time, appropriate to the gameplay balance. The Dual Pistols give a more 
+powerful, dynamic start to the level. While Sauron's Gaunlets represent 
+the ultimate melee weapon, giving the player a third melee option that's
+fun to use as it is deadly.
+
+
+6.1.1: Dual Pistols
+-------------------
+
+With the inummerable odds stacked against you and your platoon, you need all
+the firepower you can get. One pistol gets you by, two of them will
+double your chances of surviving what's around the next corner...
+
+The Dual Pistols are your default weapons when starting out the game
+on all difficulties.
+
+The Dual Pistols discharge two bullets per firing command (given that your 
+ammo count is greater than 1), has faster response time than the single 
+Doom2 pistol and firing rate is approximately 3 times as fast... effectively
+giving this default weapon approximately as much stopping power as the 
+shotgun.
+
+It should be noted that the shotgun generally inflicts a higher rate 
+of damage than the Dual Pistols, and the chaingun's rate of fire is still 
+faster. Nonetheless, the Dual Pistols are excellent for stunning individual 
+enemies in their track with their constant barrage of hot lead.
+
+
+6.1.2: Sauron's Gauntlets
+-------------------------
+
+An artifact of the Dark Lord himself. Through his terrible powers, Sauron
+poured his cruelty, his malice, and his will to dominate all life into
+these gauntlets. Many have said that Sauron's gauntlets were destroyed when 
+the Dark Lord fell in his last battle, but legends of old persisted that 
+evil lives on... that this artifact is guarded in hell, awaiting its 
+master's return...
+
+Sauron's Gauntlets are melee weapons that strike the enemy continuously 
+with death rays at close range. All but the strongest bestiaries can be
+taken down under the power of this amazing artifact without much
+resistance.
+
+
+[6.2] New Monsters
+------------------
+
+DVII feature two new bestiaries: The Hell Cleric and the Flying Balrog.
+
+The Hell Cleric is added as a fodder and anti-melee unit. DVII called
+for an in-between monster that's tougher than an imp, but not as resistant 
+as a revenant or hell knight... a bestiary that saps the player's health 
+quickly but can be killed with a single supershotgun blast. Hence the 
+Cleric was introduced into DVII.
+
+The Flying Balrog, or Red Baron, is added as a flying sub-boss unit. DVII
+called for an extremely dangerous unit that can be killed with a single,
+precise BFG blast, hence the Flying Balrog was added.
+
+
+6.2.1 Hell Cleric
+-----------------
+
+Hit Point     = 200
+Speed         = 12
+Reaction Time = 5
+Pain Chance   = 5/255
+Height        = 64
+Mass          = 200
+
+Created from the lost souls of the strongest warriors entering damnation of 
+Hell, the Hell Cleric is a warrior spirit entrapped in casings of armor. 
+Wielding maces, second to none in hand-to-hand combat, ruthless as they are 
+fast, these stealthy warriors are the Praetorian Guards of the Devil.
+
+The Hell Cleric is silent as he does not generate alert sounds when on the 
+prowl. The cleric's reaction time, movement, and especially melee speed, is 
+lightning quick. Even with a beserk, the player does not have a favorable 
+chance in melee against these warriors; their rate of attack is ungodly 
+fast.
+
+The Hell Cleric's pain chance is less than 2%, making him unlikely to flinch
+upon taking damage.
+
+The Hell Cleric has a favorable chance of killing a revenant in 
+single-combat. Quite a feat considering that the revenant possess
+150% more hitpoints than this armored lost soul.
+
+The Hell Cleric's weakness is his low hit point, which gives him a good
+chance of being killed with a single super shotgun blast and an almost 100%
+chance of being killed with a single direct rocket hit. Despite his
+quick melee, his ranged triple fireball attack is easy to dodge from afar
+as they move rather slowly.
+
+
+6.2.2 Flying Balrog
+-------------------
+
+Hit Point     = 1500
+Speed         = 8
+Reaction Time = 5
+Pain Chance   = 30/255
+Height        = unknown
+Mass          = 400
+
+Lord of shadow and flames, originating from the unknown depths of ancient 
+Hell. Shrouded by embers and darkness, the Balrog takes the physical form 
+of a fiery death satyr. Rumor whispers that the Balrog is the avatar of the 
+Devil himself. Whatever this creature may be, death and destruction follow 
+in its wake.
+
+The Flying Balrog is a deadly creature that can destroy a healthy player in
+full armor with a single volley of fireballs. Quick to attack upon sight of
+target, this agressive creature wastes no time incinerating its victim.
+
+A pair of Flying Balrogs can bring a cyberdemon down with impunity.
+
+Slow moving, the Balrog's sluggish pace allows you some time to take cover 
+and snipe him. Possessing 1.5 times the health of a Baron of Hell, the 
+Flying Balrog can take serious punishment yet can still be killed by a 
+single close-ranged BFG blast. 
+
+
+
+---------------------
+[7] LEVEL INFORMATION
+---------------------
+
+Map01                          
+Level Name              : Entryway Pass
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : December 30, 2007
+
+Inspiration             : Hoover.wad
+                          AV Map04 - Seclusion
+                          Doom2 Map23 - Barrels O' Fun
+                          Scythe's Episode 1
+                          Hellcore Map04 - Brickyard
+                          Byelomorye Dam from Goldeneye 007 (N64)
+
+Description             : A road pass ascending into a fjord. rest areas
+                          include several infested facilities. Time to
+                          clean house, move out!
+
+Author's Comment        : A speedmap, done in fifteen hours over three days.
+
+                          One of the smaller Scythe-scaled maps of DVII.
+                          Dense in weaker monsters, barrel chain reactions,
+                          infighting, and plenty of health and ammo, this
+                          map is built for fast-paced carnage.
+
+                          This level's monster lineup was inspired by AV
+                          Map04. Having only weaker fodder to mow down,
+                          the gameplay is fast moving with plenty of 
+                          opportunities for massacres.
+
+                          If you're looking for a Scythe E1-like level, 
+                          you'll love this map.                       
+
+Tester Input [Mike]     : I love small scythe-like maps like this. 
+			  They play so well and take virtually no time at 
+			  all to play.
+			
+		          I liked the dam with a bunch of zombie men on 
+			  it. 
+
+			  Just watch out for those barrels in the blue room.
+			  They are stacked by 5, so they are extremely 
+			  lethal.
+
+Fun Facts               : The SS Nightmare is a direct copy from AV Map03,
+                          I wanted DVII to have symbolic link to Alien 
+                          Vendetta, so there it is!
+
+                          The road fight leading to the Photon Decay 
+                          Detection Unit building is inspired by the 
+                          Highway of Death in the 1991 Gulf War.
+
+                          The Blue Key Room is a tribute to Ander Johnsen's
+                          AV Map26's circular slaughterpool.
+
+
+Map02
+Level Name              : Mutagen
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE 
+Finished                : Summer 2004
+
+Inspirations            : Vrack3.wad
+                          AV Map31 - Killer Colors
+                          AV Map03 - Cargo Depot
+
+Description             : A Research Facility in the middle of a reservoir.
+
+Author's Comment        : Right after the original DV was finished, I
+                          played scythe's first episode and thought about
+                          its unbelievable gameplay flow. I sketched out
+                          some
+
+                          Originally designed to be a four-minute 
+                          scythe-ish speedmap, Mutagen accumulated some 
+                          extra details and compartments over the years 
+                          that makes it less of a speedrun than a classical
+                          ten-minute map. Though you can exit in less than 
+                          two minutes if you know your route.
+                         
+                          The architecture of Mutagen is highly centralized.
+                          with gameplay pathways that weave in and out of 
+                          the main building but never too far from the 
+                          centroid of the level.
+
+Tester Input [Mike]     : This map has been through at least five 
+                          iterations that were fully acceptable maps. But 
+                          Huy is a picky bastard. Thanks to that, the level 
+                          flows unbelievably well, the monsters placement 
+                          is solid, and even after playing it for what must 
+                          be the two hundredth time, I'm still not sick of 
+                          it. 
+			  
+			  A fairly easy map, but it's a fun one.
+			  
+Fun Facts		: The Blue Area is a tribute to AV Map31 - Killer 
+                          Colors.
+
+                          The descending elevator at the end of the level
+                          is a tribute to Hell Revealed's Map31 - The
+                          Descent.
+
+                          The SS Nightmare can fit snugly into the lake. 
+                          It has been tried.
+
+
+Map03 
+Level Name              : Crouching Demon, Hidden Archvile
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : February 2008
+
+Inspiration             : Grove.wad
+                          HR Map26 - The Afterlife
+                          Scythe II Map04 - The Cellar
+                          Ninja Gaiden Sigma
+
+Description             : The foothills of Mt. Fuji have been overrun by
+                          the demonic forces, you know what to do... ready?
+                          
+Author's Comment        : Ya know, I haven't seen an Asian-themed map for
+                          Doom, so I'm going to make one... because damnit,
+                          Deus Vult II needs an Asian level!
+
+                          I read up on Edo Architecture and found in 
+                          practice that its design simplicity suited the 
+                          Doom engine perfectly, with its orthogonal wood 
+                          and panel design. All I had to do was find the 
+                          suitable wood and leather textures, modify it, 
+                          and out came this Asian graphic set for DVII.
+
+                          Another huge influence that was the basis for this
+                          map is B.P.R.D's Grove.wad, the forest that 
+                          covered Grove was a brilliant idea on B.P.R.D's 
+                          part: with some sprite replacement and 
+                          Dehacked work, creating a deciduous forest is
+                          possible in Doom. I carried this forest idea over 
+                          to DVII and based Map03 on it.
+
+                          Ammo and health are generous in this level;
+                          foraging in the woods should give the player more
+                          stuff than he'll ever need.
+
+                          Instead of having monster closets, the 
+                          monsters now "ambush" the player by jumping out 
+                          from the thickets, and it worked quite well... In
+                          some of the darker areas of the forests, it can be
+                          downright creepy.
+
+                          The Chessboards are gameplay motifs first seen in
+                          Naggay Hiv's HR26. The player can now participate
+                          in Wizard's Chess in the forest with monsters =)
+
+                          Like Grove.wad, this map will lag the hell out of
+                          underpowered CPUs due to the number of tree
+                          sprites present, and even the the Dual Core 
+                          systems will buckle under the thousand-odd trees
+                          in the forest. Strangely enough, when tested under
+                          GZDoom 1.1.10, this map ran smoother than it did
+                          in ZDoom 2.2.0. Even PrBoom-Plus 2.4.8.3-Beta was able to
+                          handle mass amounts of sprite and maintain 
+                          maximum framerates. Note that I was using a Core 
+                          2 Duo processor when testing this map out. In any
+                          case, try out the different ports and see which 
+                          ones give you the smoothest play for this map!
+
+Tester Input [Mike]     : This map beckons the usage of GZDoom. It is the
+	  		  only practical way to get a good Framerate.
+		
+		   	  This is the first Asian themed map I've ever seen
+			  in Doom. 
+
+	  		  The jungle here is full of traps. Grabbing that
+			  seemingly innocent power up or clip of ammo
+			  may be dangerous, so be on the lookout when forging
+			  for supplies.
+
+			  You require two of the three keys to exit this 
+			  place, the yellow on a Go-Board, and the others on 
+			  separate chess boards. If you feel you are a mighty
+			  chess player at this point, you could also 
+			  challenge the master himself.
+			  
+			  If you are clever, you may be able to get out of 
+			  a fight or two.
+		
+			  The chess board with the Red Key and the Blue Armor
+			  in particular is skippable, If you run towards the 
+			  edge of the invisable wall where the key/armor is,
+			  you can get it. I would say theres about a 1/20
+			  chance though, and thats if you know how. So don't
+			  be surprised if you never get it.
+
+			  I love the yin yang in the structure. The white 
+			  part has a brightness of 255, and the black 0.
+			  So as you kill monsters warping through, some are 
+			  very bright, and others completely dark.
+
+			  If your getting blood-thirsty, you could also
+			  dive into the valley. There is plenty of killing
+			  to be done down there.
+
+			  Also, bruce lee owns your face.
+
+Fun Facts               : In case you can't tell what each type of monster
+                          represent on the Chessboard, here is the cheat 
+                          sheet...
+
+                          Imp           - White Pawn
+                          Demon         - Black Pawn
+                          Hell Knight   - Knight
+                          Revenant      - Bishop
+                          Chaingunner   - Rook
+                          Baron of Hell - Queen
+                          SkullKey      - White King
+                          Blue Armor    - Black King
+                          Cacodemon     - Bobby Fischer Pawn
+                          Archvile      - Bobby Fischer King
+
+                          I considered the idea of making the Archvile 
+                          represent the Queen on the Chessboard, but seeing 
+                          how two of these Archies would fuck up the 
+                          difficulty curve, that and having to hear Mike 
+                          curse my name from several states away, I settled 
+                          for Barons as Queens... EDIT: Actually that was 
+                          an old paragraph entry... The newly added Bobby 
+                          Fischer secret now has Archies on the board, not 
+                          too hard to beat with adequate cover if you ask 
+                          me.
+
+                          The Chessboard at the northernmost area of the
+                          level containing the blue key, carries the Chess
+                          Opening Sicilian Dragon: Yugoslav Attack. A razor
+                          sharp yet dynamically balanced line of the 
+                          Sicilian Defense that encourages agressive play 
+                          on both sides. The Sicilian has always been my 
+                          black response to the Kingside opening, and the 
+                          Yugoslav attack has always been my favorite line 
+                          in Chess... Karpov-Korchnoi 1974.
+
+                          The formation on the Go Board was an actual game
+                          of Go played by Brent Cleary (a non-Doomer friend
+                          of mine) versus myself. We agreed not to put our
+                          stones on the edge of the board because it would
+                          affect Doom's gameplay negatively. After a couple 
+                          of moves, we stopped and tested our Go game
+                          formation in the ZDoom engine... He was the Bull
+                          Demon, I was the imp...
+
+                          The layout of the level was modeled after a
+                          biological cell, with the phospholipid bilayer
+                          being the the double-rock barrier. Notice the
+                          cytoplasm swirling around the cell!
+
+
+Map12                          
+Level Name              : Minas Morgul
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : February 2008
+
+Inspiration             : The Lord of the Rings (Movie)
+                          AV Map18 - Toxic Touch
+                          AV Map29 - Fire Walk with Me
+                          AV Map31 - Killer Colours
+                          Grove.wad
+                          Alhambra Granada
+                          Dome of the Rock
+
+Description             : The greenish shroud of death and decay emanates
+                          from a lair nestled deep within the valleys of
+                          Morgul. Go and shut down this source of poison.
+
+Author's Comment        : The latest DVII map before the First Edition 
+                          release.
+
+                          The Minas Morgul scene from the Return of the
+                          is one of the most awesome scene from the Lord
+                          of the Rings--or in any movie for that matters.
+
+                          With its ethereal green glow and sharp, sinister
+                          corrupted Numenorean architecture, I knew since 
+                          Christmas of 2003 that Minas Morgul had to be 
+                          translated into a Doom mod.
+
+                          I'm satisfied with the faithfulness of the
+                          entrance of Minas Morgul is to its movie 
+                          counterpart. The secret stairways is somewhat
+                          implied with the green crystal cave leading up to
+                          the BFG. 
+                          
+                          The interior of Minas Morgul was never
+                          explicitly shown in the movie, it was only
+                          through the Return of the King scene with the 
+                          Witch King donning his battle helmet were some 
+                          interior features of the evil fortress revealed. 
+                          In that brief scene, I saw some torches and metal 
+                          barricades. Piecing together a glimpse from ROTK 
+                          and the overall mordor architecture, I was able to
+                          improvise an interior of Minas Morgul to fit its 
+                          exterior.
+
+                          As DVII's first real slaughtermap, The gameplay is 
+                          inspired by Andy Johnsen's AV Map18, with the huge
+                          firefights coupled with a large excess of health 
+                          and ammo, giving the player enough resources to
+                          play agressively through this level.
+
+                          With the green theme comes the BFG, but since
+                          this level is early in the megawad, I didn't want
+                          to murder the player with ultra-tough challenges.
+                          Instead, they'll be treated to several fights
+                          in which hordes of weaker enemies get dominated 
+                          by splash damage weapons.
+
+Tester Input [Mike]     : This map is pretty much an intermission. It looks
+			  as though it could be one hell of a slaughter fest,
+			  but it isn't. Huy resisted. :P
+
+			  This map is fairly simple and short. It shows that
+			  800 monsters can be dealt with in a very short 
+			  amount of time.
+
+			  The only part to watch out for is the start. You
+			  MUST get that SSG before the specrtres overrun you.
+
+			  Most players should be able to handle this map
+			  with relative ease.
+
+Fun Facts               : MSN Messenger transcript between Mike and Belial. 
+                          2008-02-16:
+                          
+                          [19:54] Belial: is it just me or does map12s 
+                                          gameplay seem really rushed and 
+                                          subpar in quality :P
+                          [19:55] Mike: it's pretty much set up the the way 
+                                        he wants it
+                          [19:55] Mike: so I dunno
+                          [19:55] Mike: I don't think it needs a huge fight
+
+                          [19:55] Belial: the hk horde at the exit seemed 
+                                          kind of ridiculous to me
+                          [19:56] Mike: I plow in, get the invuln, and just 
+                                        kill 'em all
+                          
+                          [19:57] Mike: but yeah i get that rushed feeling 
+                                        as well
+                          [19:57] Mike: I like the map though
+
+                          [19:57] Belial: still feels weird, i wouldve 
+                                          expected stuff to pop in around 
+                                          the central room, like maybe cybers
+                                          or archies in the cages with some
+                                          support
+                          [19:58] Mike: I was thinking maybe he could at 
+                                        least make an extra fight as a secret
+                  
+
+Map13
+Level Name              : Eagle's Nest
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : Summer 2004
+
+Inspiration             : Jurassic Park 2's High Ptera
+                          Contra's Jungle & Waterfall Level 
+                          AV Map20 - Mishri Halek
+                          AV Map23 - Blood Sacrifice
+                          HR Map26 - The Afterlife 
+                          Action DooM Map02
+
+Description             : A trail up a mountainside with castle on top.
+                          Beware of hell-possessed wildlife that awaits
+                          you eagerly along the way!
+
+Author's Comment        : My second creation in the DVII series.
+                          
+                          I like climbing great heights in the Cascade 
+                          Range of the Pacific Northwest, and wanted to 
+                          express it in this map, I would've had forests
+                          made of tree sprites covering the surrounding 
+                          backdrop, but this idea would sink framerates 
+                          to unplayable. 
+
+                          Vegetation is influenced by
+                          Scuba Steve's Action DooM Map02, which had a
+                          pretty awesome Contra retro feel to it. Actually,
+                          the first open area of AD Map02 was the inspiration
+                          for this map's sheer cliffs as well.
+
+                          The green halo for the map was pretty much a spur
+                          of the moment invention, which links the mountain
+                          section with a ghoulish hall of the dead...
+
+                          The map is geared towards tight-quarter, conserve
+                          ammo gameplay, but prepare for a slight 
+                          slaughterfest upon entering the green halo. There
+                          are also two huge, completely optional secret
+                          fights if you want HR-styled slugfests. You could
+                          pretty much finish the level without killing even
+                          half the monsters present.
+
+                          I thought this map was loads of fun for 
+                          cooperative, and teaches a lesson or two about 
+                          itchy trigger fingers!
+
+                          And thanks to Richie and Mike, who supplied me
+                          with countless demos of Eagle's Nest that helped
+                          with the gameplay tweaks.
+
+Tester Input [Mike]     : Climbing a mountain. Honestly I didn't think 
+                          something like this was feasible with Doom's 
+                          limitations. It's fun to scale this mountain, 
+                          but if you fall it can be a little frustrating.
+		
+			  If you make it to the top before you fall off, 
+                          theres an elevator at the bottom to make the trip
+                          less aggravating. But be warned, in cooperative, 
+                          there is an archvile on the loose. If he catches 
+                          you while your on that lift, theres no running. 
+                          Nothing to fear in the singleplayer though. Those
+                          revenant fireballs are nowhere near fast enough 
+                          to catch you on that lift.
+
+			  For me the biggest pain in this level was that 
+                          pesky cyberdemon in the tower. If your sneaky 
+                          though, you can manage to get the barons in front
+                          of him to waste most of his health away, (I once
+			  managed to get them to kill it!) then just pick 
+                          him off with the single barrel shotgun at a safe 
+                          distance.
+
+			  Other than that, this map is pretty easy and 
+                          linear. Most mistakes are forgiven here. 
+   			
+			  However if you have more bloodlust, there are
+			  two secrets to satisfy you: The Hell Knight
+			  siege on the cliff side, and the (literally)
+			  copied and pasted.. well.. thats all I'll say
+			  for now.			
+
+Fun Facts               : This map was supposed to be scrapped, but with 
+                          Derek Braun's and Mike's insistence, it stays.
+			  Mike: This map is great, so go die in a fire huy!
+
+                          An area from the original DV is stashed away
+                          somewhere deep within the level... It's really
+                          obnoxious once you find it... heheheh.
+
+
+Map19
+Level Name              : Stargate
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : Summer 2006
+
+Inspiration             : Vrack3.wad
+                          Scythe Map19 - AD
+                          Equinox Map04
+                          Equinox Map09
+                          Stargate (Movie)
+
+Description             : A complex space station with an 
+                          Egyptian Stargate.                          
+
+Author's Comment        : My third creation in the DVII series.
+                          
+                          This map is probably my greatest effort in
+                          DVII in terms of time spent mapping and modifying 
+                          textures. Not sure whether DV or Stargate took 
+                          more of my time, probably the first option. 
+                          I'm 99% satisfied with how this map turned out.
+
+                          The starting point was derived from Vrack2. 
+                          
+                          Some architectural motifs such as the Medikit 
+                          alcoves in the green zone, or lift system, were 
+                          taken from Scythe Map19 (or just the tech of 
+                          Scythe's E2 in general). 
+                          
+                          Many of the decorations like the DVII logo, was 
+                          derived from Vrack3, same goes for the the highly
+                          partitioned yet densely connected layout of this 
+                          map.
+
+                          To help the player navigate the level, color 
+                          coding and distinct sector names were 
+                          incorporated into the map. Also added were several 
+                          landmarks to orient the player. Still no guarantee
+                          that you won't get lost though!
+
+                          Stargate's layout is nonlinear, but the gameplay
+                          pathways are fairly straightforward. Co-op is 
+                          an adventure here, especially near the end 
+                          when all hell breaks loose!
+
+Tester Input [Mike]     : This map is more or less the Vrack4 that wasn't.
+			  The detail is simply top notch.
+			  
+			  Fairly linear and straight forward.
+
+			  When dealing with that cyberdemon by the red 
+                          section, I like to get those barons to do my 
+                          dirty work. If you can maniplate them right, you 
+                          can get the cyberdemon cornered, and, well, 
+                          gang raped.
+
+			  Other than that there really isn't much else to
+			  say about this map. It's fantastic.
+			  
+Fun Facts               : Fredrik Johansson, creator of Vrack3 approved 
+                          of my efforts, and remarked that [stargate] looks 
+                          like what he would have done had he constructed 
+                          Vrack4.
+
+                          The blue biological tanks pays homage to Equinox
+                          Map04's ending bio laboratory.
+
+                          The yellow swirly laser installation pays homage
+                          to the seven-star Burj Al Arab Hotel in Dubai,
+                          United Arab Emirates. I wanna stay there someday, 
+                          if I could afford it!
+
+
+Map20
+Level Name              : Desert Temple
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : December 2007
+
+Inspiration             : AV Map05 - Crimson Tide
+                          AV Map11 - Nemesis
+                          Av Map20 - Mishri Halek
+                          Scythe II Map08 - Grave Robbers
+                          Chord3.wad
+                          ChordG.wad
+                          Doom Raider - Crypt of the Vile
+                          The Acropolis of Athens
+                          The Getty Center
+                          Lawrence of Arabia (the movie),
+                          The Mummy (the movie)
+
+Description             : An Egyptian Temple on a desert plateau.
+
+Author's Comment        : My sixth creation in the DVII series.
+
+                          My answer to all three of the mentioned AV maps 
+                          rolled into one level... with Chord gameplay!
+
+                          The layout of Desert Temple takes after AV Map05,
+                          with the atrium, upper balcony, and various rooms
+                          laid out in similar manner to said map.
+
+                          The mountain climb, Egyptian theme, and manner of 
+                          lighting, was inspired by Av Map20, the greatest
+                          Egyptian map ever made, 'nuff said.
+
+                          The presentation of Desert Temple (starting area,
+                          clifface climb, temple at the top) was inspired
+                          by AV Map11.
+
+                          I thought the Stargate level needed a definite
+                          follow-up, so I made this map.
+
+                          Malcolm Sailor's Chord series had a huge 
+                          influence on this map's gameplay. I wanted
+                          the player to count their bullets in this round.
+                          A slight departure from the rest of DVII that 
+                          encourages Rambo-styled firefights.
+
+Tester Input [Mike]     : This map focuses on tight gameplay. The intention
+			  of the author is to play from a pistol start, as
+			  you are given just enough ammo to get by, 
+                          although it isn't as unfair as chord at times.
+			
+			  ..The only problem is that coming from map19
+			  will make this map a sinch, since you'll have
+			  plenty of ammo..
+
+			  When you reach the temple, you have to decide
+			  what you value more: Bullets, or shells.
+			  If the latter, open the mancubus secret. You'll
+			  exhaust pretty much all your ammo, but you'll 
+			  have more shells in the end.
+
+			  The tomb with the Imps and Hell Knights..
+			  I have no desire to go down there. Only doing
+			  a UV-MAX would get me to.  Maybe in ZDoom, where
+			  melee is just plain easy to do.. but in Boom,
+			  not a chance in hell.
+
+			  Converve ammo whenever possible, and only grab
+			  that coffin medkit if you're feeling brave.
+
+			  As awesome as this map plays, I didn't find it
+			  much of an answer to AV Map05. Not only does
+			  it play completely different, I can't find any
+			  resemeblemce. I don't stop and think about AV
+			  even once when playing this map.
+
+Fun Facts               : The map was constructed and completed in less
+                          than fourty hours.
+
+                          The drawing of a man and woman dancing is only
+                          half mine, the other half is co-drawn by a
+                          friend.
+
+                          The boat behind the entry stargate pays homage
+                          to Equinox Map01's semi-hidden entrypoint.
+
+                          The two barons of hell near the end pays homage 
+                          the two barons of hell near the start of ChordG!
+
+                          There is an unofficial secret with
+                          a dirty message somewhere within the level...
+
+
+Map21
+Level Name              : The Unholy Cathedral
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : Summer 2007
+
+Inspiration             : The Paris Cathedral (Notre Dame) 
+                          AV Map29 - Fire Walk with Me
+                          Chord3.wad
+                          HR Map28 - Top Hell
+                          Scythe2 Map27 - The Afterlife II
+                          The Suzzallo Library of UW-Seattle
+
+Description             : A demonic cathedral embedded into the clifface of 
+                          Hell. Dark, with gloomy red flames and monumental
+                          altars. Guarded by hordes of demons in their 
+                          elements.
+
+                          Blacken Nine of Sixteen Red Pentagrams on the 
+                          floor to access the main pipe organ, and prepare 
+                          for one hell of a fight.
+
+Author's Comment        : My fourth creation in the DVII series. 
+
+                          After the completion of the first cathedral in 
+                          the original Deus Vult, I thought about 
+                          the creation of an even more complex cathedral.
+                          
+                          Before I began construction, I went on vacation
+                          in France and toured the Notre Dame Cathedral 
+                          during Summer 2005, and was able to obtain a 
+                          tour guide's blueprint of the cathedral itself. 
+
+                          Summer 2006, after completing Map13 
+                          (Stargate) I immediately went to work on DVII's
+                          Cathedral. Custom sprites and textures were made 
+                          specifically for this map, including candles and 
+                          flamewalls. I looked at architecture books and 
+                          found church stuff that aided my design. 
+                          Construction included architectural 
+                          features that you would typically see in a real 
+                          church, including aisles, apses, nave, ambulatory, 
+                          chapels, cloister, and crypts.
+
+                          The map layout is geared towards nonlinear 
+                          gameplay, with multiple entries, connections, and
+                          optional routes. The architecture of the level 
+                          allows for mixture of tight-quarters as well
+                          as open combat. You can pretty much create your
+                          own route here, making for some really creative
+                          firefights. You could choose roughly three 
+                          gameplay paths from the beginning and branch out
+                          from there:
+
+                          Easy Path: Easy compared to the other two paths.
+                                     Grab the shotty, go up, and meet 
+                                     increasingly difficult lineups of 
+                                     monsters.
+
+                          Tough Path: Made to play like Malcolm Sailor's 
+                                      Chord series, the library will 
+                                      introduce close quarter fights with 
+                                      tight health and ammo provisions. 
+                                      Don't worry about finding the enemy;
+                                      they're hunting you.
+
+                          Slaughter Path: Remember the Revenant Curve? 
+                                          Introducing The Mancubus Curve. 
+                                          Good luck!
+
+                          There are plenty of shortcuts here; even the main
+                          lobby fight can be accessed right away and can be
+                          avoidable if you know what to do. The ways that
+                          this map can be played is very much open to the
+                          player's decision.
+
+                          Despite not being a slaughtermap 
+                          (for the most part), the Unholy Cathedral carries 
+                          some psychotically heavy resistance near the end, 
+                          notably the main altar fight and the fishmouth. 
+                          Hope you enjoy those fights as much as I enjoyed 
+                          making them!
+
+Tester Input [Mike]     : More complex and demanding of your hardware than
+			  even map05 of the original Deus Vult. Thank god
+			  I got a new PC last year.
+			  
+			  You can take pretty much any route as you like,
+			  so long as you touch nine of the sixteen 
+			  pentagrams. 
+
+			  I prefer the easy path. Grab the shotgun, (and
+			  rocket launcher if your sneaky enough) and by the
+			  end of that route you'll have plenty of 
+                          provisions take on the library with little 
+                          trouble.
+
+			  Only two of three keys are requird, and only one
+			  of which you get a say in. Grabbing the yellow 
+                          key means you get to deal with a mancubus curve, 
+                          and potentially the tower of babel.
+			  
+			  After touching six pentagrams, the snake mouth 
+			  will open. A fairly easy and straight forward 
+                          fight, but don't fuck around with those 
+                          balrogs. They will cut through 200/200 like 
+                          a laser-cut knife through hot butter. Once the
+			  fight is over, the blue key appears.
+
+			  The main hallway fight is really intense. It all
+			  comes down to grabbing the invulns at the right 
+                          time. This fight eats DVmap03 alive.
+
+			  If you go through the trouble of touching all
+			  sixteen pentagrams, you'll find a nice treat
+			  at the end.
+
+Fun Facts               : At 51 thousand sidedefs, this map is more complex
+                          than Map05 of the original DV.
+
+                          The School of Athens painting was chosen as the
+                          player's entrance to this Unholy Cathedral,
+                          representing the philosophers' inquiry into evil.
+
+                          Jacques-Louis David's Oath of Horatii painting 
+                          was chosen for the Shotgun chapel, as the morally
+                          complex story behind the Horatii is fit for the
+                          oasis of ambiguous good in the (mostly evil) 
+                          Unholy Cathedral.
+
+                          The Archvile placement on the first floor of the
+                          East Library was inspired by the Archvile
+                          placement near the starting area of Chord3.
+
+                          DISCLAIMER: The crosses that are not upside down 
+                          has nothing to do with Christianity; they're 
+                          crucifixes of Hell. Don't send fundamentalist hate
+                          mail in my direction because of this, thank you.
+
+                          The crosses that are upside-down reinforces the
+                          unholy theme of the Cathedral. Once again, avoid
+                          the urge to send me hate mail, thanks.
+
+                          The highest point reachable (when jumping is
+                          disabled) in the cathedral is not the Tower of 
+                          Babel, rather, it is the secret pentagram in the 
+                          Machiavelli Library.
+
+                          Layout: The Olympic Torch, need I say more?
+
+                          Despite being red and hellish. There is no fluid
+                          lava in this level... you can check everywhere,
+                          this map is dry as a bone!
+
+
+Map22                          
+Level Name              : You shall Not Pass!
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : January 2008
+
+Inspiration             : Scythe Map28 - Run From It
+                          1Monster Map24 - The One God
+                          Doom2 Map29 - The Living End 
+                          HR Map24 - Post Mortem
+                          HR2 Map29 - Hell's Cauldron
+                          The Lord of the Rings (Movie)
+
+Description             : You have plunged into the hallowed depths of the
+                          Mines of Khazad Doom and awakened the ancient
+                          evil only known as The Balrogs. Evil has
+                          awakened... Run...
+
+Author's Comment        : A long speedrunning map.
+                          Difficulty on UV is murder, 
+                          and you have Mike to thank for this.
+
+                          My cousin attempted mapping back in 2004 and one 
+                          of his first maps involved replicating the Balrog 
+                          chase from the Fellowship of the Ring. I wasn't
+                          impressed by the quality of the map, as it was a
+                          bunch of steep angled staircases with hundreds of
+                          imps. Nonetheless, I saw potential in this idea
+                          of a Balrog chase, so I made DVII Map22.
+
+                          The Balrog chase from the Fellowship of the Ring
+                          is among the most jawdropping scene from that 
+                          movie. First it was buildup of this unworldly,
+                          demonic light emanating from one end of Moria,
+                          then it was the trek across deteriorating 
+                          staircases and platforms while dodging orcish
+                          attacks, then it was the Balrogs rising out of the
+                          flames and challenging Gandalf... You shall not
+                          pass! It's time Balrog Chase gets translated into 
+                          Doom.
+                          
+                          DVII Map22 is a speedrunning map along the lines 
+                          of Erik Alm's Scythe Map28 and Ichor's 1Monster 
+                          Map24. As much as I like speedrunning, those maps 
+                          have a strict time limit that result in the 
+                          player being killed after a set amount of time has
+                          elapsed, which restricts the gameplay option for
+                          the player. I also didn't like the idea of being 
+                          killed by some invisible force, one second you're 
+                          fine, the next some invisible crusher squashes 
+                          you without given warning; it would have been nice 
+                          to see some sign that you're about to die. 
+
+                          In DVII Map22, the signal that the player is 
+                          running out of time and about to die is expressed 
+                          by hordes of Balrogs hurling fireballs. The 
+                          Balrogs acts as a dynamic death timer, zeroing
+                          in on the player's position and forcing him to
+                          progress or die.
+
+                          This Balrog "timer" is dynamic in the sense that
+                          if you dodge well or smart enough to lure
+                          the Balrog away from your intended path, you can
+                          buy yourself extra time in the chase.
+
+                          In co-op, the team can buy extra time by having 
+                          one player stay back and distract the Balrogs, 
+                          while the point person progress with less time 
+                          pressure, thereby incurring less mishaps.
+
+                          In terms of fight choreography, this map feature
+                          some of the sharpest, tightest fight in DVII. On
+                          UV, the megasphere area with the bull demons and
+                          archies is a good demonstration of dynamic 
+                          pressure working against you in a fight, with
+                          the bull demons forcing the player to take cover
+                          inside the cave (since being outside and exposed to
+                          the Balrogs is not a good idea), the player sees
+                          a powerup and out comes two archviles, putting
+                          another wave of pressure on the player, all of
+                          awhile the Balrogs slowly moves in... and I didn't
+                          even have to resort to hordes of revenants this 
+                          time around :)
+
+                          The problem with most large underground hell maps, 
+                          including the original DV Map02, is that the large 
+                          surface area of the maps makes the ceiling, even
+                          very high ceilings, appear flat and 
+                          warehouse-like. That architectural problem is
+                          solved in this map by throwing in silhouettes of 
+                          gothic-like definition of the ceiling. The cave 
+                          surfaces are represented by a bunch of decrepit 
+                          rock formation that seems broken in... The sheets 
+                          of fingered rocks defined the extent of the 
+                          ceiling's height, while the darkness above 
+                          suggests that the ceiling continues to rise into 
+                          infinity. I took my favorite element of DV Map02, 
+                          the cavern ascention to the BFG, and made it into 
+                          a whole level, as seen here.
+
+                          You will have the opportunity to use Sauron's
+                          Gauntlet in this map, and this is where this new
+                          weapon really shines... In fact, it's probably
+                          a lifesaver in a few fights. Have fun!
+
+Tester Input [Mike]     : As far as underground hell-holes go, this is the
+			  best looking one I've ever seen. Though I find 
+                          that the starting area is kind of bland. Sure, you 
+                          see it for a very small amount of time, but thats 
+                          besides the point. If there was a huge fight with 
+                          imps and pinky demons coming out of the columns, 
+                          it would be nice. 
+			
+			  The premise of this map is that you have 24 
+                          Balrogs chasing you down, and you must navigate 
+                          this hellish cavern to escape their wrath.
+			
+			  First time players have no chance of survival, and
+			  I don't think casual doomers will have the will
+			  to keep trying. This map just doesn't target those
+			  kind of players.
+
+			  What makes this map either challenging or downright
+			  punishing comes down to your decision between speed
+			  or killing everything. Many of the enemies can be
+			  skipped.
+
+			  The only real option for speed running is to 
+                          avoid as many monsters as you can. The only ones 
+                          I highly recommend you don't skip are the two 
+                          archviles guarding the box of rockets. Those guys
+                          will chase your ass down.
+
+			  If you have atleast 150 health, another viable 
+                          option is to ignore the megasphere, and plow 
+                          through the pinky demons with your plasma rifle. 
+                          The trade off is that you don't need the rockets,
+                          therefore you can save time by not dealing with 
+                          three mancubuses.
+
+			  All in all, this is a good map, but it has limited 
+                          replay-ability. I may produce a speed demo down the
+		    	  road, but a UV-Max just won't happen from the likes
+			  of me.	
+
+			  It took anima over 200 tries to produce a demo 
+                          that he was satisified with. It took me less than
+                          50 tries before I.. well.. check out the fun 
+                          facts. :)
+
+			  But seriously, before I asked for the difficulty 
+                          to be increased, this map was just plain too 
+                          fucking easy. I'm happier that it's brutal and 
+                          devasting, and not a tame tiger. So yes, those 
+                          twenty-eight more monsters ARE necessary, Huy.
+
+Fun Facts               : Many parts of this level, including the starting
+                          pillared hallway, were created while looking at
+                          screen captures from the Fellowship of the Ring
+                          Extended DVD edition.
+
+                          "uhg fuck this, I don't care anymore. this map is
+                          FUCKING STUPID, and I'm not trying anymore. YES, 
+                          I give up, FUCK THIS SHIT" omg your rude Mike,
+                          who was the one that requested twenty-eight more
+                          monsters than was necessary? I rest my case.
+
+                          Map22 is also known as The DVII Exam, it's going 
+                          to test your Dooming skills to its limit...
+			  Mike: Not to mention your sanity.
+                          
+
+Map23                          
+Level Name              : Hell's Vendetta
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : December 2007
+
+Inspiration             : HR Map18 - Hard Attack
+                          HR Map28 - Top Hell
+                          HR2 Map32 - Playground
+                          Scythe Map26 - Fear
+                          AV Map32 - No Guts, No Glory
+                          St. Peter's Basilica
+                          St. Paul's Cathedral
+
+Description             : A basilica filled with baddies. Pack your BFG.
+
+Author's Comment        : My fifth creation in the DVII series.
+
+                          One day, Mike whined, bitched, and moaned that
+                          DVII doesn't have a real "slaughtermap" like
+                          the original DV, so I shutted him up with this 
+                          megaslaughter arena.
+
+                          With over 2700 monsters on UV packed into an area
+                          one-third the size of the original DV, this map 
+                          is borderline Nuts.
+
+                          Despite the monster count, Hell's Vendetta
+                          isn't a joke, it's serious business. The map is 
+                          balanced through rigorous testing, stuff removed, 
+                          stuff added, playtest, playtest, playtest. Because 
+                          of DVII's gametesters' hard-on for this map, ahem,
+                          Belial, the playtesting put into this map is
+                          excellent. As a result, the map appears 
+                          overwhelmingly difficult at first, but with keen 
+                          attention, you can exploit the more subtle 
+                          weaknesses in the enemy lineup to perform some 
+                          incredible runs with massive carnage.
+
+                          The layout is oversized and simplistic to direct
+                          mass amounts of monsters at the player, no matter
+                          where they are on the map. Can't run, can't hide.
+
+                          The biggest drawback to most slaughtermaps is
+                          that once intensity of the fight peaks, mopping
+                          up is a real chore. Hell's Vendetta is no 
+                          exception, but I tried to minimize mopping by 
+                          having most of the enemies mobile so they can seek
+                          you out, making it faster to UV-Max.
+
+                          If you are gutsy enough, you can perform a "circle
+                          around the world" run that wakes up a significant
+                          amount of monsters from all wings and have them
+                          tear each other apart. It's difficult but can be
+                          done, and once you complete the circle, you can 
+                          be pretty creative with the routes from there on
+                          out.
+
+                          A last note to point out in this level is that on
+                          skill 3 or above, if you played too defensively 
+                          and tried to ward off the main arena's monsters 
+                          using all 400 rockets from the red key area 
+                          (East Cleric wing) before triggering the Cleric
+                          army issuing from the Red Morgul, it will render 
+                          the fight against that Cleric army impossible, and 
+                          the only way you can exit the level under this
+                          circumstance is the death exit sector in the lava 
+                          lake... try setting up this scenario yourself if 
+                          you think I'm wrong. This odd scenario has 
+                          happened before with one of the later testers 
+                          (after Hell Vendetta's been finalized), so I need 
+                          to address it. 
+                          
+Tester Input [Mike]     : Big (or at least wide open) and the hallways are 
+			  all symmetrical. The three fights for getting the
+			  keys are pretty interesting though. I love the 
+			  cyberdemon corridor fight, and the use of clerics
+			  in this map.
+
+			  Somewhat non-linear. You can go anyway you wish, 
+			  just don't provoke more than you can swallow.
+			  
+			  Heh, I only mentioned once that there wasn't a
+	  		  slaughter map once.. I'd say roughly 12 hours 
+			  later is when Huy sent me the next build with a 
+			  layout of the map set down.
+		
+			  This guy does more actions per minute in 
+			  Doom Builder than most people do in Starcraft.
+			
+Fun Facts               : Hell's Vendetta was created and finished in less 
+                          than twenty-four hours over the period of five 
+                          days.
+
+                          More time and effort was spent playtesting this
+                          level than constructing it.
+
+                          The western cyberdemon wing with the yellow key 
+                          was designed so it somewhat resembles a Starcraft 
+                          Scourge on the automap.
+
+                          The central exit structure pays tribute to the 
+                          Baldacchino of St. Peter's Basilica, belonging to
+                          the works of my favorite architect,
+                          Gianlorenzo Bernini.
+
+                          In case you haven't figured out the theme behind
+                          each of the wings' grouping of mural villains...
+
+                          Six O'clock Left     - Starcraft
+                          Six O'clock Right    - First Person Shooters
+                          Nine O'clock Lower   - Star Wars Sith Lords
+                          Nine O'clock Upper   - Star Wars Miscellany
+                          Twelve O'clock Left  - Nintendo / Rareware
+                          Twelve O'Clock Right - Nintendo
+                          Three O'Clock Upper  - Tolkien Mythology
+                          Three O'Clock Under  - Lord of the Rings 
+                          Central Area         - Warcraft III
+
+                          My favorite megawads include Hell Revealed and 
+                          Alien Vendetta, um, you figure it out :)
+
+
+Map31                          
+Level Name              : The Manliest Fight EVER
+Author                  : Huy Pham
+Editor Used             : Doom Builder 1.68, Deepsea 11.82, XWE
+Finished                : February 20th, 2008
+
+Inspiration             : HR Map19 - Everything Dies
+                          AV Map07 - Stronghold
+                          HR2 Map32 - Playground
+
+Description             : The combined forces of Bruce Lee, Chuck Norris,
+                          Che Guevara, and even Crambo are challenging you
+                          to a fight... get ready for the manliest brawl
+                          yet!
+
+Author's Comment        : A speedmapping job. Created, tested, and finished 
+                          in six hours during one day.
+
+                          The level's theme is all about manliness, why
+                          with the pillbox-like buildings, rock walls,
+                          #MS NIGHTMARE, and four of the toughest dudes
+                          evAR. You start off in What appears to be 
+                          gladiatorial arena that eventually opens up to a 
+                          beachfront complete with the #MS NIGHTMARE cargo 
+                          ship floating in the distance.
+
+                          The level architecture, when viewed from the 
+                          beachfront, looks like a Normandy-beach styled 
+                          bunker, which just makes the level's manly theme
+                          all the manlier.                          
+
+                          Like HR Map19, the physical level doesn't have
+                          any provisions, and you're given all the health
+                          and ammunition at the start, play wisely!
+
+                          It's hard, you'll die. You might succeed... iono.
+
+                          Cooperative mode in this level is a complete 
+                          success, I'd even go as far to say that this is
+                          one of the best co-op maps in DVII, and that's
+                          saying A LOT!
+
+Tester Input [Mike]     : What we have here is pretty standard slaughter
+			  map, with 4 badasses in it. It plays fairly well,
+			  and if you know how to get the invuln it will 
+			  be fun.
+
+			  As far as creativity goes, there is only the
+			  process by which you get the invuln (pressing 4
+			  switches) and the fact that you start the map
+			  fully loaded on ammo and health, but there isn't
+			  a scrap laying around on the map.
+
+			  The best way to play this is with a friend,
+			  as the symmetrical nature of this map beckons
+			  for it (much like map23).
+
+Fun Facts               : I created this map while waiting for Mike to 
+                          revise the DVII textfile. What a wait eh?
+
+
+
+--------
+[8] BUGS
+--------                   
+
+All Maps from DVII have been tested in ZDoom 2.2.0 with virtually zero bugs, 
+so if you are a non-demo recorder, ZDoom 2.2.0 is the source port for DVII,
+and even if you are one... ZDoom is the port of choice for playing
+DVII when you're not recording.
+
+There was originally a laundry list of DVII bugs related to PrBoom-Plus 
+2.4.8.1, but since Entryway's introduction of his latest 
+PrBoom-Plus 2.4.8.3-Test, that list is effectively eliminated. PrBoom-Plus 
+is now the God of Demo-Recording.
+
+
+----------------------
+[9] AUTHOR INFORMATION
+----------------------
+
+    9.1  Self-Input
+    9.2  Favorite Games
+    9.3  Random Thoughts on Mapping
+
+Some stuff about me that's more or less irrelevant to DVII, but should be 
+written down for all the hardcore Doom geeks who are still reading this 
+textfile ;)
+
+
+[9.1 Self Input]
+----------------
+
+Doomworld Account   : Doom Marine
+NewDoom Account     : Doom Marine
+ZDoom.org Account   : Doom Marine
+FreeChess Account   : Tetranode
+Mod DB Account      : Tetranode
+Wikipedia Account   : Tetranode
+AIM Account         : BusyBeaverHP
+ICQ Account         : BusyBeaverHP, ICQ# 482557955
+GMail/GTalk Account : BusyBeaverHP@Gmail.com
+Contact Email       : BusyBeaverHP@Gmail.com
+
+Roughly 1800 hours of my life have been poured into this project. I don't
+think I have a soul anymore...
+
+True when written in Winter 2008, some stuff about me:
+
+Activities        : School, Skiing, Snowboarding, Singing
+
+Interests         : Family, friends, kendo, architecture, chess, computers,
+(outside of Doom)   mathematics, drawing, music, engineering, physics,
+                    the humanities, meteorology, astronomy, anthropology,
+                    biology, neuroscience, genetics, snowboarding, skiing,
+                    volunteering...
+
+Favorite Music    : If the song is good, I'll listen! ... Actually, I'll
+                    listen anyways! ... No wait, as long as it doesn't hurt
+                    my ears!
+
+                    Bocelli, Brightman, Groban... classical music!
+
+Favorite TV Shows : I don't watch TV anymore, lame huh?
+
+                    ... But I do like South Park, The Chappelle Show, Jon
+                    Stewart, National Geographic, the Discovery Channel,
+                    PBS, and the Science Channel
+
+Favorite Movies   : A Beautiful Mind, Austin Powers, Crash, Gladiator, 
+                    Goldeneye 007, Idiocracy, My Big Fat Greek Wedding,
+                    Starship Troopers, Surf Ninjas, Y Tu Mama Tambien,
+                    Adam Sandler movies, and those awesome Star Wars and 
+                    Lord of the Rings trilogies
+
+Favorite Books    : CARD - Ender's Game
+                    FISCHER - Bobby Fischer Teaches Chess
+                    GOLEMAN - Social Intelligence
+                    KIDDER - Mountains Beyond Mountains
+                    KRISHNAMURTI - Think on these Things
+                    LAO-TZU - Tao Te Ching
+                    LEE - Tao of Jeet Kune Do
+                    MUSASHI - The Book of Five Rings
+                    ROBBINS - The Overachievers
+                    SEIRAWAN - Winning Chess Brilliances
+                    SEIRAWAN - Winning Chess Endings
+                    SEIRAWAN - Winning Chess Tactics
+                    TOLKIEN - The Lord of the Rings
+                    TOLKIEN - The Silmarillion
+
+Favorite Quotes   : "Courage is the mastery of fear, not the absence of 
+                     fear." - Mark Twain
+
+                    "Intelligence is sexier than a miniskirt." - Josh Oakley
+
+                    "Don't anticipate. Be cool." - Rod Nobuto Omoto
+
+                    "How far that little candle throws its beams! So shines 
+                     a good deed in a naughty world." - William Shakespeare
+
+                    "Some people see things as they are and say why. I dream
+                     things that never were and say why not?" - RFK
+
+                    "Far better is it to dare mighty things, to win glorious
+                     triumphs, even though checkered by failure... than to 
+                     rank with those poor spirits who neither enjoy nor 
+                     suffer much, because they live in a gray twilight that
+                     knows not victory nor defeat." - Theodore Roosevelt
+
+                    "Every act of conscious learning requires the 
+                     willingness to suffer an injury to one’s self-esteem. 
+                     That is why young children, before they are aware of 
+                     their own self-importance, learn so easily; and why 
+                     older persons, especially if vain or important, cannot
+                     learn at all." - Thomas Szasz
+
+                    "You probably wouldn't worry about what people think of
+                     you if you could know how seldom they do." 
+                     - Olin Miller
+
+                    "Speak properly, and in as few words as you can, but 
+                     always plainly; for the end of speech is not 
+                     ostentation, but to be understood." - William Penn
+
+                    "Simplicity is the ultimate sophistication." 
+                     - Leonardo Da Vinci
+
+WORK INFO         
+
+Employer          : WebbSki
+Position          : Snowboarding Instructor
+Time Period       : February 2007 - Present
+
+Employer          : Amgen
+Position          : Amgen Scholar, Pharmaceutical Chemist Jr.
+Time Period       : June 2007 - August 2007
+Description       : Multi-Drug Resistance (MDR), Cellular Efflux, 
+                    Blood-Brain Barrier, Genetics, Enaminone 
+                    Anticonvulsants...
+
+Employer          : Tukwila Elementary / Cascade View Elementary
+Position          : Chess, 3rd Grade, & Math Tutor
+Time Period       : February 2002 - June 2003
+
+Employer          : King County Parks Recreation
+Position          : Lifeguard
+Time Period       : June 2001 - January 2003
+
+- UW-Seattle student to apply for Neurobiology in Autumn '08
+- Pre-Medical academic track
+- Amgen Biotechnology Scholar, Summer 2007
+- Snowboarding Instructor
+- Inactive Chess Player [USCF provisional = 1860]
+- Blood Donor
+- Choir Tenor
+
+As of Winter '08, I live on the UW campus, attend classes during weekday,
+work during the weekend up in Snoqualmie Pass teaching 'lil kids
+snowboarding.
+
+FREEDOM OF INFORMATION (BASED ON HACKER ETHIC)
+IN THE CONTEXT OF DOOM
+
+I believe that access to anything (i.e. tools and information) that furthers 
+the intellectual development of the individual should be completely 
+unrestricted. Furthermore, I believe that unlimited access to such things can
+free the individual's intellectual abilities from many socio-economic 
+constraints; a talented programmer in India can explore his/her potential
+just as well as any programmer in the Western world, provided the resources
+that Freedom of Information brings.
+
+Freedom of information in the context of Doom Modification, it is a virtue 
+to be generous with your work and their resources. If you created something 
+like a texture or map, allow it to be used in future projects. Try not to go
+around and limit others from using what you've made, after your work is done,
+leave it be, move on, don't clutch onto your work and render it dead with
+copyrights and self-important permission to do this and that, don't make it 
+hard on others because of ego; let it grow by giving it away so others can 
+develop it... after all, John Carmack was generous enough to give away 
+Doom's source code, from which we are able to evolve Doom as a nonprofit 
+community through many sourceports and projects that kept Doom fresh through 
+the test of time and made it all the more beautiful in the end.
+
+
+[9.2 Favorite Games]
+--------------------
+
+...'Cause you know, DV and DVII's ideas gotta come from somewhere:
+
+NES:
+----
+- Contra
+- Duck Hunt
+- Jackal
+- Legend of Kage
+- Life Force
+- Super Mario 3
+- Wild Gunmen
+
+A huge fan of co-op games, I got my early start from my dad, who 
+played Contra and Jackal with me since I was five years old. Single
+player is nice, but having a buddy to beat the game with you cranks
+up the fun factor exponentially. Co-op is the gameplay foundation of DVII.
+
+SNES:
+-----
+- Donkey Kong Country 1, 2, & 3
+- Jurassic Park 2: The Chaos Continue
+- Killer Instinct
+- Kirby's Dream Course
+- Super BomberMan
+- Super Street Fighter II
+- Super Mario World
+- Super Mario World II: Yoshi's Island
+- Tetris Attack
+
+Donkey Kong Country's art direction had a huge influence on how I color 
+my stuff, like having a dominant color for every area, and that probably 
+carried over to DV and DVII. Props to Rareware!
+
+N64:
+----
+- Banjo Kazooie 
+- Conker's Bad Fur Day
+- Goldeneye 007
+- Legend of Zelda 64: Ocarina of Time
+- Mario Kart 64
+- Mario Party 3
+- Perfect Dark
+- Starfox 64
+- Super Mario 64
+- Super Smash Bros.
+- Turok: Dinosaur Hunter
+- Turok II: Seeds of Evil
+
+Banjo Kazooie's art direction is phenomenal, I couldn't get enough of that
+Click Clock Wood level at the end. Rareware during the N64 era is totally
+on fire!
+
+Next to Age of Empires and Doom, I've probably played Goldeneye 
+more than any other games. Got the invincibility cheat run down 
+to 1:25. Oh, and racked 2003 kills on Starfox 64, top that!
+
+WII:
+----
+- Mario Party 8
+- Super Mario Galaxy
+- Trauma Center: New Blood
+
+Basically, the Wii is an excellent social gaming console.
+
+X360:
+-----
+- Halo 3
+
+I highly respect the Halo series for its implementation of co-op.
+
+PC:
+---
+- Age of Empires
+- Age of Empires II
+- Chessmaster 10th Edition
+- Desktop Tower Defense
+- Doom
+- FEAR Combat (the multiplayer component of FEAR only)
+- Fritz 7
+- Half-Life 2
+- Quake 4
+- Sim City 2000 and 3000
+- Starcraft
+- Warcraft III
+- Wolfenstein 3D
+
+I've played Doom since '95, but only since 2003 have I played it seriously 
+and started mapping.
+
+Miscellaneous:
+--------------
+- Checkers
+- Chess
+- Guesstures
+- Monopoly
+- Risk
+
+Picked up my first pawn when I was 16, won my first four rated games with 
+classical tournament time control. A year after that, age 17, got awarded 
+a WA state all-star medal for an undefeated season. The same year, won a 
+silver medal at the Washington High School State Team Championship... 
+undefeated in that tournament with a 4.5/5.0 score.
+
+Currently inactive in Chess with a USCF provisional rating of 1860(P9).
+
+Chess had a huge influence on my thought process, and this carried over
+to creating DVII. The order and method of building an attack and defense
+in Chess affected the way many of the DVII maps were laid out.
+
+Certain concepts in Chess like balanced position, Zwischenzug, Zugzwang, 
+interposition, space control, pressure, discovered attack, and forced 
+combination were considered and applied when choreographing DVII fights. 
+
+Furthermore, the chess games that I played in the past were very much
+part of my thought when I constructed DVII's maps. Recalling
+the Ruy Lopez, Maroczy's Bind, King's Indian, Sicilian Dragon, Queen's
+Gambit Declined, and the Hedgehog Defense, I constructed Doom Maps with
+Chess in mind. Many of the maps' layouts are pervaded by dynamically
+balanced designs that is learned through studying dynamic balance in Chess.
+
+Map20 of DVII is a strong example of the Chess influence, with the natural, 
+non-teleport monsters traps that simply springs from the map's sneaky 
+layout. The Beserk trap on the uppermost level of Map20 is a reflection of
+a forced combination, with low health, the player is compelled to pick up
+the stimpack, entering the trap full of imps, grabbing the beserk as a
+counterattack, and then confronting the counter-counterattacking hell 
+knight. In the yellow key complex, the two barons of hell were placed like 
+two rooks on open files, firing down the corridor and putting pressure on 
+the player's position and enducing him to make a mistake. The final archvile 
+after taking the blue armor was placed in a way that parallels the black 
+fianchettoed bishop in the Sicilian Dragon Yugoslav Attack opening, firing 
+down the most crucial control point in the room.
+
+The intense analytical process bred from studying and playing Chess built a 
+strong foundation for Doom Mapping. Each monster is a Chess Piece waiting 
+to be placed in the correct position on the mapping board. As a Chess 
+player engage in deep thought before executing a complex maneuver
+over the board, a Doom Mapper (should) ponder deeply about how a firefight 
+will unfold in his level, as this will lead to better map layout, and
+ultimately, better gameplay.
+
+Wanna get better at choreographing Doom monster fights? Play Chess, play
+lots of Chess... RIP Bobby Fischer.
+
+
+[9.3 Random thoughts on mapping]
+--------------------------------
+
++ Make sure to communicate ideas explicitly with the player,
+  for example, when expressing a laboratory, make sure
+  computers, lasers, and biological tanks are present. Like
+  writing and other media of communication, better to show it
+  than to declare it on your textfile!
+
++ A dominant color theme will turn an otherwise good looking map 
+  beautiful.
+
++ The music has got to match the environment, it shows good taste
+  and once again reinforces the communication of the level's theme
+  to the player. Example: AV Map30: Point Dreadful.
+
++ If one's eyes were nuanced enough to see the subtle tone and shading of
+  Fredrik's tech, one would recognize that Vrack3's art direction is genius.
+
++ WTF is green marble doing with redrock? They need to stop designing
+  levels like that. There is no Christmas theme in hell. 
+  RED or BLACK marble goes with REDROCK.
+
++ In Hell, you cannot run out of black and red.
+
++ With black textures and flats, you can get away with many mapping crimes, 
+  like flat ceilings for example. If you don't believe me, check out the
+  Minas Morgul map.
+
++ The secret to making a good hell map? Absorbing Alien Vendetta's Map29, 
+  remember its lighting, monster placement, and most importantly, its shape.
+
++ Yes, the looks of the level do affect gameplay, because the ingame
+  atmosphere is a part of gameplay... how much a part of the gameplay is the
+  atmosphere? How much do you feel it should be?
+
++ Windows are multipliers of details.
+
++ Altitude, whether at the top of a mountain or under the basement of a
+  tomb, is a good indicator of level progression. Use it liberally.
+
++ Skyboxes? No no, fully-scaled, 360-degree backgrounds are better!
+
++ Why would I want to go through rooms connected by a bunch of hallways? 
+  I don't get it.
+
++ There is a difference between level progression and leading the player
+  through a maze. Level progression happens when you tell a story with
+  architecture, leading the player through a maze is when the story gets
+  boring with nonsense... I hope you can tell a good story.
+
++ It's not so hard to close off the levels with four walls that has nothing
+  behind them, but the mapper who has done so has missed his chance of
+  showing the player a beautiful vista that reinforces the atmosphere
+  of the level.
+
++ Easy it is to make a level difficult, but could I trick someone else into 
+  playing it?
+
++ I don't care what anyone else thinks, the default Doom/Doom2 pistol isn't
+  fun to use in the slightest bit, not even if had a different look, not
+  even when it had a different sound, not in ANY fight, not under any 
+  circumstance.
+
++ Having the player start off with the default Doom/Doom2 pistol and asking
+  them to kill enemies with it... pisses me off.
+
++ Good traps must not only surprise the player, they must be logical
+  as well. Don't just trap the player, trap him in with a tomb and a 
+  skeleton to boot.
+
++ The best placement of the exploding barrel, ever, is located at the start
+  of Ander Johnsen's AV Map02: Rusty Rage. [I'd have to agree with Mike 
+  on this]
+
++ Enemies popping out of walls and coffins are far scarier, thus more
+  effective, than teleporting peeps.
+
++ Cyberdemons are only scary when you don't give the player enough
+  ammo and space to deal with them. Not enough space is scarier though.
+
++ You can beat an archvile to death with your bare fist, all the funner
+  with beserk.
+
++ The megasphere isn't there for you to grab like supermarket grocery,
+  it belongs to the monsters and they want it back. Did I mention that the 
+  monsters have sharp claws and hurl fireballs?
+
++ Finding a secret gives me that same feeling when I find an extra coin
+  in the phone booth.
+
++ What makes or break gameplay? Movement of the player. When the player 
+  feels good moving about in his virtual environment without even fighting
+  the enemies, that builds a foundation towards good gameplay. A strong 
+  example of this concept in action is Super Mario 64, where the player's 
+  movement feels good no matter where they are or what they're doing; Mario
+  could be romping around the castle courtyard doing triple jumps and that
+  in itself is already entertaining.
+
++ Proportions in a level is very important to player's movement and enemy
+  contact. If a given space is too big, enemy contact will feel loose and
+  sloppy; the baron of hell can be rendered harmless as a lampost with too
+  much open spaces. If a given space is too cramped, the player's movement
+  is restricted, and he will continually bump into things, making player 
+  movement an exercise in frustration rather than smooth play. Like all 
+  aspects of map design, moderation here is key. Good examples of level 
+  proportions include John Romero's maps, Anders Johnsen's maps, Kim Malde's
+  maps, Erik Alm's maps, Kama Sutra, vrack3, and even ChordG.
+
++ The above statement still holds true in the face of some supposedly 
+  open maps, like Epic Map05, where extremely large open areas are 
+  moderated by islands of fights in smaller spaces.
+
++ PV = nRT... where P = Pressure of Opposition                
+                    V = Area of a given space
+                    n = Number of monsters
+                    R = Mean monster movement speed
+                    T = Average area controlled per monsters
+
++ One of the biggest violators of player movement are 8-unit posts that
+  sticks out the wall... or even eight-unit posts... Period. 
+  Get rid of them; they are hurting gameplay.
+
++ If details get in the way of player's movement, put them on the ceiling,
+  like vrack2b.
+
++ Spending lots of time detailing that chapel room is nice, but that won't 
+  determine the optimal number of revenants to insert into that area.
+
++ What is dynamic space? A room, hallway, area, etc. that drastically 
+  alters the general vector and elevation of the player's movement.
+
++ What is beautiful space? A room, hallway, area, etc. in which the player 
+  feels good moving about.
+
++ What is beautiful dynamic space? Good map design.
+
++ Exhaustive playtesting is the only theoretically sound way to 
+  ensure that your map is fun. Game Law.
+
++ A bad gametester will tell you that "your map stinks."
+
++ A good gametester will tell you that "your map stinks, and here's why..."
+
++ A good gametester will never deem your map flawless.
+
++ Belial's, Brian's, and Mike's bitchings are worth their weight in mapping 
+  gold.
+
++ If your testers tell you that a particular fight isn't fun, quit being 
+  defensive and remove the perpetrating monster(s).
+
++ If your testers tell you that a particular fight is too easy, you know
+  what to do...
+
++ There is no fucking way I can vertically align those fucking BRIK_06J 
+  textures in the fucking Suzzallo Library, Belial... JUST BE QUIET 
+  ALREADY! =p
+
++ Listen to your gametesters, they are the canaries to your mapping
+  mine shaft.
+
+
+
+-----------
+[10] CREDIT
+-----------
+
+    10.1  Acknowledgements
+    10.2  Special Thanks
+    10.3  List of Doomers who influenced DVII 
+
+Like all game mods, Deus Vult II wasn't made by some gaming wizard with
+a magical wave of his wand. Rather, it was hours of labor build upon the 
+ideas and works of past programmers, artists, and gamers alike. There's Id 
+Sofware, Pascal vd Heiden, Jack Vermeulen, creators of Adobe Photoshop, the 
+Doomworld community, and even my parents... if I were to include everyone 
+who directly and indirectly contributed to DVII in such a trend, the list 
+would be too exhaustive to read. Instead of giving credit to 
+everyone and their village, the following sections mention those whom I feel
+is relevant to accredit within the context of the Dooming Community.
+
+
+[10.1 Acknowledgements]
+-----------------------
+
+B.P.R.D
+- creator of DVII's bio-tank textures
+
+Csabo
+- Creator of XWE
+
+Andrey Budko
+- Programmer of PrBoom+
+
+Fredrik Johansson
+- Creator of Vrack3.wad
+- Creator of the level Stargate's soundtrack
+- Creator of the level Stargate's wall & computer textures
+
+Graf Zahl
+- Programmer of GZDoom
+
+Id Software
+- Created Doom/Doom2
+
+Jack Vermeulen [Deep]
+- Creator of DeepSea
+
+Kristus
+- Creator of some tech textures
+
+Nanami
+- Creator of the Flying Balrog Sprite
+
+Pascal vd Heiden [CodeImp]
+- Creator of Doom Builder
+
+Randy Heit
+- Programmer of ZDoom
+
+Simon O'Callaghan
+- Creator of many Egyptian Textures found in Desert Temple
+
+
+[10.2 Special Thanks]
+---------------------
+
++ MIKE ESSLER / MIKE REINER for:
+  01) Years of DVII testing
+  02) Countless hours of co-op testing
+  03) Archiving numerous builds of DVII
+  04) Sparking creation of Hell's Vendetta
+  05) Not leaking DVII betas to the public :p
+  06) Being a good sport and putting up with my jest in Map20 :D
+  07) Being a good sport and putting up with me :D
+  08) Coming up with the idea for Sauron's Gauntlet
+  09) Being DVII's technical support
+  10) Organizing the release content of DVII-1i.zip/DVII-1u.zip
+
+  Mike is essentially the backbone of DVII. His technical knowledge allowed
+  me to test DVII under some ridiculous situations, like bypassing my
+  university's firewall. Between the hundreds of hours of voicechat and 
+  thousands of instant messages and scores of emails, DVII became a 
+  continually evolving project open to rigorous inspection. Mike pretty much
+  reported back the tiniest error on the map, the gameplay sticking points,
+  glitches, and many other anomalies that would have went unnoticed without 
+  a second opinion.
+
+  Due to many of his ideas and suggestions, like Sauron's Gaunlets and
+  Hell's Vendetta, DVII underwent drastic changes... in the most wonderful 
+  way.
+
+  Mike is a notorious archivist, having scores of old DVII builds burned 
+  away on DVDs. I have instructed Mike during the development of DVII to
+  release the latest build in the event of my death. Thankfully that
+  protocol has never been necessary ^_^.
+
+  Mike also served as a frequent middleman between the rest of the testers 
+  and I, relaying back the issues brought up by Belial and Anima while I 
+  was in class or at work.
+
+  Mike was the creator of batch files, installation instructions, demo
+  recording instructions and file organization structure of 
+  DVII-1i.zip/DVII-1u.zip.
+
+  I don't know how many times the words "bastard," "asshole," "faggot," 
+  and various obscenities were exchanged during the countless hours of 
+  conversation between Mike and I, but one thing is certain: in DVII, the 
+  Mapper and Tester communicated until we know each other's eating and 
+  sleeping habits. This comfortable working relationship allowed for open 
+  rapport and report on the project in depth. Because of Mike's excellent
+  communication, DVII isn't a basement laboratory experiment by some mad 
+  scientist, it is a mod subjected to thousands of trials with brutally 
+  candid feedback; if something sucks, even a just little, I'll hear it no
+  sooner than a thunderclap, and I'm certain it will show in the gameplay. 
+  Hats off to the main tester!
+
+
++ RICHIE "RAGNEW" AGNEW for:
+  1) Early DVII testing
+  2) My cheering section :)
+
+  Richie was the main tester for the original Deus Vult, and when DVII was
+  first conceived in 2004, he tested the hell out of it.
+
+  Richie's early DVII testing gave several of the earlier maps like Mutagen
+  and Eagle's Nest a good polishing. I'd also like to thank him for his 
+  constant encouragement and enthusiasm that drove my effort. Honestly,
+  many of the earlier maps for DVII was just to impress Richie and only
+  Richie... and for this, he is a huge part of DVII!
+
++ DEREK BRAUN for:
+  1) Early DVII testing
+  2) Earlier contributions to DVII (including a map that never was)
+
+  Derek was once a mapper for DVII, but later on became a cooperative tester
+  for many of DVII's map, especially Stargate. Derek is a cool guy, he's
+  pretty laid back, and was the one who introduced me to the Doom megawad
+  Kama Sutra, to which we frequently co-oped in the past. To his doing, Kama
+  Sutra's gameplay elements were eventually picked up and merged into DVII.
+
+  Derek, I hope you make good HL2 maps, because I'm hopping aboard soon!
+
+
++ PRZEMYS³AW "BELIAL" WODA for:
+  1) Playtesting the near-final version of DVII
+  2) Pointing out improvements in Map23, especially the cleric fight
+  3) Bug-catching
+  4) Crazy-ass dooming skills, I mean, who the hell UV-max DV Map04 in less
+     than 11 minutes?
+  5) Advocation of extreme difficulty increase in many maps
+  5) Providing UV-Max demos for DVII
+
+  One of the testers who jumped onto the DVII playtesting bandwagon in
+  December of 2007. Belial probably understand the DVII maps better than I
+  understand it myself. Ripping into the secrets faster than I could hide
+  them, Belial's playtesting of DVII was brief but provided potent insight
+  into the gameplay dynamic of the maps he touched upon. 
+
+  Hell's Vendetta gameplay would probably be loose as a goose if it weren't 
+  for Belial's grievances on how easy the earlier versions were in terms of 
+  enemy count and health distribution.
+
+  Looking at Belial's demos, I'd have to say his Dooming skills are insanely
+  good, no... Godlike. Belial literally tears into the hell levels like a
+  child into Christmas gift wrap. In his UV-MAXes, his ingame movements 
+  are extremely quick and precise, and takes the viewer on a first-rate
+  rampage through the most violent parts of DVII. Maps that were supposed to
+  take hours to complete were taken apart in a matter of fifteen minutes by 
+  Belial. To simply put, Belial is my current Doom God.
+
+  Thanks to Belial's testing of DVII, the later maps on UV will get really
+  nasty with extra hot sauce :)
+
+
++ BRIAN "ANIMA ZERO" NESSER for:
+  1) Playtesting the near-final version of DVII
+  2) Bug-catching
+  3) Difficulty Moderation in many maps
+  4) Providing UV-Max Demos for DVII
+  5) Passing The DVII Exam
+
+  One of the testers who jumped onto the DVII playtesting bandwagon in
+  December of 2007. Anima served as the moderator of DVII's difficulty
+  alongside Belial. Anima's grievances on the eight cyberdemons on the
+  West wing of Hell's Vendetta led to toning down on that particular part of
+  the map, which currently unleashes six (instead of eight) cybers on the
+  player's ass. A nice contribution, since DVII's extreme difficulty 
+  called for normalization at times.
+
+  Anima also discovered some neat shortcuts for many of the maps, including
+  the acid-plunge teleport leap of faith for Eagle's Nest.
+
+  Anima's runs improved as he recorded more and more demos for DVII, with 
+  his ultimate achievement resulting in a sub-six minute UV-Max for the 
+  insanely difficult Map22, which earned him the honor of being the first 
+  Doomer to pass The DVII Exam!
+
+
++ FREDRIK JOHANSSON for:
+  1) Creating Vrack3 MIDI soundtrack
+  2) Creating Vrack3, a huge influence to my Stargate Map
+  3) Creating those wonderful tech textures, without Vrack3,
+     Stargate would probably not exist. Way to pioneer new Doom
+     themes, Fredrik!
+
+  Fredrik was not directly involved in the development or testing of DVII,
+  but his works have influenced many of the design concepts of my mod that 
+  he HAS to be mentioned in my list of personal thank yous.
+
+  Fredrik's Vrack3 was the basis for Stargate, and many of Vrack3's complex
+  conveyor belt-based triggers were studied and applied to DVII's maps.
+  Vrack3's design proportions were also scrutinized down to the last unit
+  as well. In fact, when I was developing stargate, I'd have Vrack3 opened
+  side-by-side in Doom Builder just to compare corridor widths.
+
+  Fredrik's textures from Vrack3 also aided DVII's tech levels in a huge 
+  way, as its architecture benefitted from motifs such as laser grids,
+  railings, metals, computers, and many other installations that would have
+  been nonexistent without Fredrik's discoveries. 
+
+
++ HUBERT VU for:
+  1) DVII cooperative testing
+  2) Coming up with the idea for the Balrog Chase
+  3) Initiated the usage of Boom Triggers in DVII
+
+  My tricky cousin deserves credit for trying to break DVII's
+  cooperative mode, to which this prick suceeded by using the most 
+  cheesy and perverse gameplay tactics. 
+
+  When encountering a trap, Hubert basically tries to weasel his way out of
+  the fight by standing inside closing doors, whizzing past teleporting
+  enemies, and finding cheap, impenetrable alcoves for cover. Many times
+  over, his cheapo tactics would result in permanently barricaded areas that 
+  prevented any legitimate progression and ultimately break cooperative 
+  mode.
+
+  His tricky style of play is a blessing in disguise, as it exposed many
+  game-breaking moments in cooperative DVII that were eventually fixed.
+
+  The Balrog Chase was originally his idea as well, but I being his older 
+  (and wiser) cousin made sure that it was executed correctly, as seen in
+  Map22.
+
+  Actually, Hubert isn't as bad as the above passages suggest. He's actually
+  quite brilliant in pushing the extrema of the levels' gameplay mechanic, a
+  potential speedrunner who doesn't play enough Doom...
+
+  It was Hubert who first suggested the usage of Boom triggers back in 2005,
+  and ran me through it, I was impressed enough and applied them to DVII 
+  from that point on. Who knows what DVII would've been like without 
+  Hubert... The Balrog Chase would've likely been non-existent, and DVII 
+  would still be using vanilla-Doom compatible triggers... heh.
+
+
++ ANDREY "ENTRYWAY" BUDKO for:
+  1) Creating the PrBoom sourceport
+  2) Last minute help with DVII compatibility with sourceport
+  3) Last minute Tech support
+
+  Andrey came in at the last minute and helped me include a stellar version
+  of PrBoom-Plus 2.4.8.3-Test as part of the DVII release. His last minute
+  tech support ensured that DVII received the highest degree of 
+  compatibility. The UV-Max demos will live forever thanks to him and 
+  PrBoom+ :)
+
+
+[10.3 Doomers and their projects that influenced DVII]
+------------------------------------------------------
+
+Adolf "Gusta" Vojta
+- Kama Sutra
+
+Alexander "Eternal" S. (AKA Deadall)
+- Epic.wad
+
+Anders Johnsen
+- Alien Vendetta
+
+Anthony Soto
+- AV Map06: Hillside Siege
+
+B.P.R.D
+- Equinox
+- Fritter.wad
+- Grove.wad
+- Nuts2.wad
+- Nuts3.wad
+
+Brad "Vorpal" Spencer
+- Hellcore
+
+Daniel "Tormentor667" Gimmer
+- City of the Damned
+- Ultimate Torment and Torture
+
+Devon "Darkfyre" West
+- Hellcore
+
+Epsi
+- Ruma
+
+Erik Alm
+- One Bloody Night Episode 1
+- Scythe
+- Scythe II
+
+Fredrik Johansson
+- Vrack2b.wad
+- Vrack3.wad
+
+Haggay Niv
+- Hell Revealed
+
+Ichor
+- 1Monster Map24: The One God
+
+Jakub "Method" Razak
+- Kama Sutra
+
+Jonas Feragen
+- Hell Revealed II
+
+Kim "Mutator" Malde
+- Alien Vendetta
+
+Kristian Aro
+- Brotherhood of Ruin
+
+Lee Szymanski
+- AV Map06: Hillside Siege
+
+Malcolm Sailor
+- ChordG.wad
+- Chord3.wad
+
+Martin Aalen Hunsager
+- Alien Vendetta
+
+Mattias Berggren
+- Alien Vendetta
+
+Michael Reed
+- Hoover Dam
+
+Robert "Fusion" Babor
+- Hellcore
+
+Roger Ritenour
+- Phobos
+
+Russell Pearson
+- Doom Raider: Crypt of the Vile
+
+Ryathaen
+- 1Monster Map22: Triad of the Minds
+
+Stephen "Scuba Steve" Browning
+- Action DooM
+
+TeamTNT
+- The Plutonia Experiment
+
+Yonatan Donner
+- Hell Revealed
+
+
+
+----------------
+[11] LEGAL STUFF
+----------------
+
+    11.1  Original Resources
+    11.2  Modified Resources
+    11.3  Borrowed Resources
+    11.4  Usage of Resources
+
+A follower of Hacker Ethics, I'm not too big on protection of resources, 
+paperwork, and those uncool things, but I do believe in acknowledgement 
+and lots of them. The following sections describe the sources of my 
+resources.
+
+[11.1 Original Resources]
+-------------------------
+
+Original Resources pertain to stuff that I made from scratch, or 
+contributed enough effort into modifying the resource(s) to call my own.
+
+- CANDLE SPRITES: are made by me in Adobe Photoshop CS2 9.0! I always 
+  thought the default black candles look like some sort of tech light, and 
+  wasn't very convincing. And for my hell theme, red candles were called 
+  for, so I made large red candles that can't be mistaken for anything else
+  but candles, even when seen from far away.
+  
+  Anyways, if you PLAN on using this candle for your mod, it would make me 
+  happy if you GIVE ME CREDIT for it... I hope my red candle will replace 
+  that little black Doom candle in the future!
+
+- STARGATE: Made from scrap SHAWN0 metal that got melted into a donut mold. 
+            Seriously though, you'll have to see the stargate yourself. I 
+            wouldn't have made it if I didn't enjoy looking at it :)
+            Made with Adobe Photoshop
+
+- The following illustrations are hidden away ingame inside easter egg 
+  secrets are 100% original and is my work (with exception where applies), 
+  they include...
+
+  CITRIC ACID CYCLE DIAGRAM: After my biotechnology research in Howard
+  Summer 2007                University of Washington DC, I
+  Adobe Illustrator          prepared to transition from the field of
+                             architecture into molecular sciences, this
+                             diagram was one of my "practice" model for
+                             remembering and understanding the citric
+                             acid cycle, one of the major metabolic
+                             pathways of the cells of aerobic organism.
+
+  EXPLODED CELL PHONE DIAGRAM: My final project for ARCH-210. The bottom
+  Winter 2007                  part of the phone was totally made up and
+  Mechanical Pencil            looked nothing like the real thing; I
+                               temporarily lost my cell phone and had to
+                               improvise something fast. It was drawn with
+                               a mechanical pencil and ruler, hardcore
+                               eh?
+    
+  KENDOKA ILLUSTRATION: My last project related to architecture, The Kendoka
+  Spring 2007           was inspired by a similar illustration on
+  Mechanical Pencil     Wikipedia by Ningyou. It also conveyed a nonverbal
+  Adobe Illustrator     message on how I feel about the UW's architecture
+  Adobe Photoshop       program after being subjected through the stupid
+                        and tedious prerequisites! Get back! GET BACK!!!
+                        The Kendoka is first seen in the the dojo of Map03,
+                        and reappear as a high resolution mural in the
+                        secret of Eagle's Nest as well.
+ 
+  CACTUS ILLUSTRATION: ARCH-210 project. I like it, drawn from scratch, 
+  Winter 2007          prickly, green, fits the limited Doom Pallette,
+  Colored Pencils      'nuff said.
+
+  SOME BLOCK STRUCTURE ILLUSTRATION: Part of a project that involves
+  Spring 2007                        embodying an idea through a structure.
+  Mechanical Pencil                  My idea was Prometheus' Torch. Drawn
+  Adobe Photoshop                    by hand and colored in Photoshop.
+
+  DANCING COUPLE DRAWING: This drawing was created by myself and a friend of
+  Spring 2007             mine. I was responsible for the man, and her for
+  Mechanical Pencil       the woman. We implemented many of our features
+                          into the subjects we were drawing. Notice that
+                          in the earlier drafts, the man's hand is all over
+                          the woman. I had loads of fun making this one ;)
+
+  MASTER CHIEF MEETS MARIO DRAWING: Made for co-tournament of Super Smash
+  Fall 2007                         Melee and Halo3. Imitates Michaelangelo
+  Permanent Markers                 with the Finger of God and Adam. Was
+                                    extremely popular with the crowd.
+                                    This drawing is mostly mine; the hands
+                                    of Mario and Master Chief was drawn by
+                                    the same friend who helped me with the
+                                    Dancing Couple drawing. She was also
+                                    responsible for coloring the posters as
+                                    well, which explains the blonde hair
+                                    on Mario; she doesn't play video games
+                                    much. Mario's hair is brown, Ingrid!
+  
+- The SUZZALLO LIBRARY PHOTOS: Found in the secret basement of the Unholy 
+  Fall 2006                    Cathedral, I took those and darn it, they are 
+  35mm B&W Film                mine! My professor thought I did a pretty 
+                               good job with the photos and gave me an A 
+                               for his 400-level Architecture Class.
+             
+- VARIOUS BANNERS: In the Unholy Cathedral, stuff like the leatherized 
+                   portrait of Dante Alighieri, are originals from me, some 
+                   of which are in-game, some of which are in the texture 
+                   resource.
+
+- PLANET HELL: The planet you see inside the stargate exit of Map20 is a
+               Modification of a satellite photograph of the Jovian moon,
+               Io. I modified its surface, color content, and shading to
+               the point that it resembles a boiling, roiling Mars.
+
+- INTERPIC, TITLESCREEN, CREDIT, DVII AVATAR, and so forth.
+
+This list isn't all-inclusive; I probably made a bunch more stuff in DVII
+and forgot to claim them as mine... in which case, meh.
+
+
+[11.2 Modified Resources]
+-------------------------
+
+Modified Resources includes recolored textures, sprites, online images made 
+into grahics, and so forth.
+
+- The Eye of Sauron
+- The Sauron Statue
+- The Witch King Statue
+- The Angel Statue
+- The classical paintings in the cathedral
+- BioLab textures from Equinox
+- The gazillion textures that got resized
+- The bajillion textures that got recolored into Red, Green, Blue, 
+  and Yellow
+
+This list isn't all-inclusive, because I'm a scatterbrain.
+
+
+[11.3 Borrowed Resources]
+-------------------------
+
+- Afterglow's Textures
+- Alien Vendetta Textures
+- Blood Textures
+- B.P.R.D's Textures
+- Doom Raider: Crypt of the Vile's Textures
+- Duke Nukem Textures
+- Equinox Textures
+- Fredrik Johansson's Textures from Vrack3
+- Hexen Textures & Sprites
+- Quake Textures
+- Quake III Textures
+- Renaissance Paintings
+- Witchaven Textures & Sprites
+
+This list isn't all-inclusive, since I tend to borrow stuff and forget
+their source(s).
+
+
+[11.4 Usage of Resources]
+-------------------------
+
+"Authors MAY use the contents of this file as a base for modification or
+reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file."
+
+...What this essentially means is that you already have full permission to 
+take DVII's resources apart unrestrictively without asking. I support your 
+endeavor and both the text and I give you full consent to use DVII's 
+resources in your project to the fullest extent.
+
+Share DVII's resources, modify them if you want, and give credit when 
+they're due. Don't make a profit out of them, be nice, you know the basics.
+
+DVII doubles as a handy resource pack for your own usage :)
+
+
+
+-------------------
+[12] QUICK OVERVIEW
+-------------------
+
+Primary purpose         : Single + co-op play
+Title                   : Deus Vult II
+Filename                : DVII.wad
+Author                  : Huy Pham
+Email Address           : BusyBeaverHP@GMail.com
+
+
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes, exists as a lump inside DVII.WAD
+
+
+* Additional Requirements *
+
+Other files required    : Doom2.wad
+Other executables req.  : A Sourceport
+Sourceport Requirements : 32768 Limit-Removal, Boom-Compatible
+
+
+* Play Information *
+
+Game                    : Doom II
+Recommended Sourceports : ZDoom 2.2.0, GZDoom 1.1.0, PrBoom-Plus 2.4.8.3-Beta
+Single Player           : Yes
+Cooperative 2-4 Player  : As important as single-player
+Deathmatch 2-4 Player   : NOT designed for; starts only
+Other game styles       : None
+Difficulty Settings     : Adjustable for Skills 1, 2, 3, & 4
+
+Map01 : Entryway Pass
+Map02 : Mutagen
+Map03 : Crouchin Demon, Hidden Archvile
+Map12 : Minas Morgul
+Map13 : Eagle's Nest
+Map19 : Stargate
+Map20 : Desert Temple
+Map21 : The Unholy Cathedral
+Map22 : You Shall Not Pass!
+Map23 : Hell's Vendetta
+Map31 : The Manliest Fight Ever
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications. You may play with yourself as long as you want. You may 
+distribute this file in any electronic format (BBS, Diskette, CD, etc) as 
+long as you include this file intact. I have received permission from the 
+original authors to poke my special place, repeatedly. I have received 
+permission from the original authors of any modified or included content in 
+this file to allow further distribution.
+
+Textfile co-created by Huy Pham & Mike Essler
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+

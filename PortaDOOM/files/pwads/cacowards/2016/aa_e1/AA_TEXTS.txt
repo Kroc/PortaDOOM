@@ -1,0 +1,198 @@
+Alpha Accident Episode 1
+
+-----
+Story 
+-----
+
+Location: Mars, Alpha 3 Terraforming Base
+
+Exact Date: Middle of 22th Century
+
+Personal info: Marine Security Inspection Officer
+
+Privileges and Powers:
+- cooler pistol model
+- access to all corporate and personal data stored on secret servers
+
+
+Yes, this is it, baby, a rusty planet. Everything here is about rust. Equipement must be older than anyone
+maintaining it, communications are all rotten down, anything barely works here. You and your squad 
+seem stuck in this hole for sure... but not for long. A distress call recieved from Phobos an hour ago
+requests all help which could be provided. Guys happily ran to the armory, prepairing for some fun.
+-"Probably a bunch of some pirate scum lurking around". 
+-"Yeah, just another baby sitting job".
+
+But you have better things to do here hunting down some corporate rats in the offices...
+
+
+=================================
+E1M1: Surface Exit #08, Airlock B
+=================================
+
+2 hours passed since your team's dispatch on Phobos. Transmitter is still silent, no feedback. After
+loosing another bunch of credits in a card game you take your gun and decide it's better to go out or
+else someone becomes really sharp here.
+
+Walking thru old installation you see various crap around: open panels, wires and rusty pipes all around,
+exposed circuits, half-dead broken computers and machinery. Upon entering security room you see 
+two guards steering at monitor. 
+-"There's someone lying near airlock exit, anyone wants to check?". No one volunteers, meaning you
+will have to go there.
+
+The last gate opens and you prepare to step outside then suddenly... a barrier falls down right in front 
+of your nose. -"Nice joke, now let me out!". Instead, you hear noise, screams and gunfire. Then, the
+channel just goes silent...
+
+
+========================================
+E1M2: North Maintenance Tunnel, Branch 3
+========================================
+
+After miles of silence in this underground you finally start getting back in action. Screams and gunfire
+can heard in the distance. Seems that portions of main tunnel have been sealed off, making your 
+progression here a little bit harder.
+
+Anyway, what a hell is going on? Where are those monsters coming from? Are toxic mutagens from 
+nearby plant causing this? And what about people getting insane and shooting at YOU instead of those 
+creeps? Bad air, probably.. Or a virus of some sort from medlabs...
+
+
+===============================
+E1M3: Nukage Distillation Plant
+===============================
+
+Green gold... That's how corporate executives call it. This liquid serves many purposes on Mars: fuel, 
+electrolysis, smelting, fusion, biowasting, pharmacy, food production. The unfortunate side effects are 
+planets pollution, erosion, health problems, monopolization of markets by companies that control it's 
+production... And, in the end, all those mutants you've encountered today. So, you have no choice but 
+to clean up this place.
+
+
+========================================
+E1M4: Infirmary and Medical Laboratories
+========================================
+
+Lift door opens, immediately revealing sterile shine of silver paneling. In one place there is infirmary, 
+rehabilitation, reception.. as well as some science and medical experimental labs. Eggheads sure have 
+a lot of victims here to toy with - those who agreed for extra few credits or were forced to cooperate 
+(as a cost cutting measure). Rumors tell they're conducting experiments also with teleportation of 
+organic matter, so this must be the cause. It's time to suspend all scientific programs here and terminate 
+all unsuccessful results...
+
+
+================================
+E1M5: Nukage Accumulation Domain
+================================
+
+Always nice to step on a solid ground after journey thru biowaste channels, especially when your 
+protective suit is ready to meltdown completely. Since you are surrounded by green liquid this must be 
+the nukage accumulator. Well, data from medlabs shows that the eggheads have only studied those 
+creeps, so their origin remains to be under question.
+
+Control room is located inside the dome, from there an access to waste dump facility and storage area 
+can be granted, this is the only way out except to be wasted again...
+
+
+=================================
+E1M6: Dump Facility and Logistics
+=================================
+
+Well, back into the dark underground tunnel. Being the oldest complex on Mars, once it had a transport 
+pad, science labs, administration offices. Now it's reduced to be simply a toxin dump and a cargo bay. 
+Some sections are under "self decommission" process or, simply, flooded in nukage.
+
+Mapper already intensely shows some strange objects in crate yard, placed in pentagon.
+
+Access key should be somewhere there also, apparently, in a control tower.
+
+Outside area is rumored to be haunted by those creeps, they are all over the canyon. Also, those dump
+drainages exiting there could lead you somewhere close to waste gate. Nearby there is a tunnel to 
+the north from complex, leading to Colony A3. Rest of marines may be waiting for you there.
+
+
+=========================
+E1M7: Mars Colony Alpha 3
+=========================
+
+You've woken up in this cellblock with a strong headache, trying to remember how and when did you 
+get here. There is none of your gear anywhere around, except (thank god!) your trusty 15mm and 
+message tracker. Flashbacks show a horrible endless gut.. Then, some marines carrying you thru
+streets of colony A3. You remember seeing strange buildings around, more like antique...
+Terminal data tells there's a terraformation site under the colony and all reports about attacks
+point in that direction...
+
+There is noise outside, screams, gunfire. The exit seems to be blocked. You step onto the balcony 
+and... what the HELL!! You see FIRE all around, beyond SEA OF BLOOD, walls incrusted with 
+SKULLS, impaled VICTIMS moaning!!!
+
+You rush in the room trying to put your jaw back in place, then suddenly someone starts to break in! 
+If you don't act fast, this place becomes your coffin. Well, there is a backdoor...
+
+
+========================
+E1M8: Site 9 Terraformer
+========================
+
+The lift finally stops and old rusty gate opens. Stepping out, you feel that something's wrong - 
+it's really warm here for a murky dark cave. You hear a splashing water nearby and some heavy 
+machinery sounds echoing from the depths of this underworld. A terraforming outpost is located 
+somewhere on first cave level.
+
+Some highly ranked UAC mobs were conducting occult shenanigans, with sacrifices and bloodlust. 
+After today's adventure it's hard not to believe there're something in it. According to data from 
+colony files the source of all the that mess should be here.
+
+Lower cave levels have been sealed off. Rumors told about ancient ruins found deep underground. 
+Would be nice to check them...
+
+
+===========================
+E1M9: Site 5 Mining complex
+===========================
+
+Waste channel led you outside in a choky canyon. In the distance a lift installation can be seen, 
+probably leading to one of those old mining shafts. There might be some useful mining tools you 
+could borrow. Below are mine tunnels, unstable undergrond caves, vent and lift installations. 
+And a lot of those bastards waiting for your bullets...
+
+_________________________________________________________________________
+
+-------
+CREDITS
+-------
+
+Mapping:
+Wraith777
+
+Textures:
+Wraith777, Nmn
+
+Sprites:
+Wraith777
+
+Music:
+Paul Corfiatis, Kyle "Skunk" Guthrie, Nmn, Das Boot
+
+Graphics:
+Eye del Cul - awesome panoramic skies
+
+Utils:
+CodeImp - Doom Builder
+Greg Lewis - DeHackEd
+Csabo - eXtendable Wad Editor
+Exl - WhackEd
+Entryway - Doom+ patcher
+Aap - DoomWord 1.3
+Zink The Dink - ENDOOMER
+
+Testing:
+Shadowman, Memfis, Guest, kmxexii
+
+Additional help:
+cybermind
+
+DooM:
+id Software - an eternal classic
+
+-------------------------------------------------------------------------------------------------
+(c) Wraith777

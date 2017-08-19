@@ -1,0 +1,62 @@
+================================================================
+Title                   : Icebound
+Filename                : ice-lutz.zip
+Author                  : Christopher Lutz
+Homepage		: http://www.doomworld.com/chaoscrew
+Feedback		: chris_lutz@hotmail.com
+Description             : Clear the heretical forces from the
+                        : frozen caverns
+Other Releases		: Reclamation
+                        : Torture
+                        : A bunch of Doom/Doom II stuff
+Additional Credits to   : Raven Software (duh)
+			: Testers: MegaDoomer, kristus, ralphis 
+			: www.DoomWorld.com for hosting
+================================================================
+
+
+* Play Information *		 
+----------------------------------------------------------------
+Game                    : Heretic
+Map Number              : E1M3
+Source Port		: ZDoom/GZDoom (See Note Below)
+Single Player           : Yes 
+Cooperative             : No
+Deathmatch              : No 
+Difficulty Settings     : Yes
+New Weapons:		: No
+New Sounds              : No
+New Graphics            : Yes (sky)
+New Music               : No
+----------------------------------------------------------------
+
+
+* A Note on Source Ports *
+----------------------------------------------------------------
+What you really need to run this level is a BOOM/MBF-compatable,
+limit-removing source port.  I did 98% of my testing with ZDoom,
+so that is what I recommend, but have verified it also runs with
+PrBoom 2.4.8.1.  NO JUMPING!
+
+
+* Construction *
+----------------------------------------------------------------
+Base                    : New level from scratch
+Editors used            : WinDEU, DETH, BSP, DoomBuilder
+Known Bugs              : None that I know of
+Build Time              : FOREVER (seriously, like 7 years)
+----------------------------------------------------------------
+
+
+* Copyright / Permissions *
+----------------------------------------------------------------
+You may distribute this .WAD freely, provided you include all
+this text file with the .WAD file.  Should you want to edit or 
+include sub-portions of this level in any other project, send me
+an e-mail message and I will ponder your request.
+----------------------------------------------------------------
+
+
+* Where To Get This File *
+----------------------------------------------------------------
+http://www.doomworld.com/idgames/index.php

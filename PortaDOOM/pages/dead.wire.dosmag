@@ -1,0 +1,57 @@
+$KEY:P=SHELL:pwads\cacowards\2015\xa-dwire\play.bat
+$KEY:T=SHELL:pwads\cacowards\2015\xa-dwire\xa-dwire.txt
+$KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/74767-xasermap-dead-wire/
+
+:dead.wire                                          * 2015 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>09>26*   Author : _Xaser Acheron_
+:Levels   : *1*             Modes : *Single
+:Requires : *gzdoom*     Includes : *+Music +Graphics +Patches
+:------------------------------------------------------------------------------
+
+Single map for GZDoom (Doom 2), made for _Tormentor667_'s Doomja Vu. Creepazoid atmosphere with custom weapons / enemy edits. 'Nuff said.
+
+You are an engineer employed by the UAC to investigate the source of a strange signal originating from an abandoned facility.
+
+This wad tells the tale of what happens next...
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : _Tormentor667_'s Doomja Vu base map, which in turn is based on Ultimate Doom's E1M7. Little remains aside from a vague sense of layout.
+*Build Time*              : 3-ish (rather sleepless) days.
+*Editor(s) used*          : GZDoom Builder, SLADE3
+*May Not Run With...*     : ZDoom/GZDoom's software renderer. Use GL and enable dynamic lights.
+
+:Credits:
+:------------------------------------------------------------------------------
+*Map:*
+ - _Tormentor667_ (and kinda id Software) for the base, o'course
+ - _Xaser_ made the rest oh no
+
+*Textures:*
+ - a bunch from Chasm: The Rift, ripped by _zrrion the insect_
+ - couple by _Ed Cripps_ (DECOTX*), from Putrefier
+ - a few xasery things (TSTATIC*)
+ - some space sky from somewhere
+ 
+*Music:*
+ - "dead.wire" by _BouncyTEM_ (original track)
+ - "theme" by _Mortimer Twang_ (from Modarchive)
+ 
+*Sounds:*
+ - HQ doom sounds by _Per Kristian Risvik_
+ - M16 firing sound by _Kate_
+ - Laser and HRC firing sounds from Descent 2
+ 
+*Weapons:*
+ - M16 sprites from Terminator Rampage, edited by _JoeyTD_ and _Xim_
+ - Laser sprites by _FuzzballFox_ [?]
+ - HRC sprites by _zrrion the insect_
+ - Rifle and Flamethrower borrowed from ZDCMP2, but _Xaser_ made those anyway
+ - _Xaser_ did weaponcodings all around
+ 
+*Misc.Sprites:*
+ - Torches by _ravage (rf)_
+ - Candelabra by _zrrion the insect_

@@ -1,0 +1,82 @@
+===========================================================================
+Title                   : Hell Revealed II
+
+Filename                : HR2.WAD
+
+Release date            : 12/31/03
+
+Authors                 : Mattias Berggren (Levels)
+			  Ola Bjorling (Sky Graphics)
+			  Pedro A. Gomez Blanco (Levels)
+			  Jonas Feragen (Team Leader, Graphics, Levels)
+			  Martin Friberg (Levels)
+			  Yashar Garibzadeh (Levels)
+			  Grave (Graphics, Music)
+			  Eugene Kapustin (Beta Testing)
+			  Derek Mac Donald (Levels)
+			  Andy Olivera (Graphics, Levels)
+			  Michael Reid (Levels)
+			  Eric James Roberts (Levels)
+			  Mike Watson (Levels)
+			  Sam Woodman (Levels, Music)
+
+Email Address           : jonasf@stud.ntnu.no
+
+Description             : The long-awaited sequel to Yonatan Donner &
+			  Haggay Niv's "Hell Revealed".
+
+Additional Credits to   : Id Software for DooM2
+			  All the authors of the tools we used
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+
+
+* Play Information *
+
+Game                    : DooM2
+
+Map #                   : 1 - 32
+
+Single Player           : Of course
+
+Cooperative 2-4 Player  : Yes, but not tested.
+
+Deathmatch 2-4 Player   : Yes, but not tested. Many levels are altered
+			  in-game to make them more hospitable to DM play.
+
+Difficulty Settings     : Yes, so I don't want to hear any whining about it
+			  being too difficult.
+
+
+* Construction *
+
+Base                    : New Levels
+
+Build Time              : 4+ Years
+
+Known Bugs              : Savegame Buffer Overflow on many of the later
+			  levels. Use a port if you intend to save.
+
+			  Slight possibility of VPO on MAP07, MAP08, MAP26.
+
+			  Occasional HOM. Not severe enough to interfere
+			  with gameplay.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification
+or reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications. You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.

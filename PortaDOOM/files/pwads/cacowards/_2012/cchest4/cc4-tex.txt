@@ -1,0 +1,62 @@
+Community Chest 4 Resource Wad
+Compiled by esselfortium
+
+Includes textures by:
+NiGHTMARE
+Espi
+Eriance
+Fredrik Johansson
+Janitor
+DaGGeR
+Ola Bjorling
+Vader
+XDelusion
+esselfortium
+RottKing
+Nuxius
+Afterglow
+AgentSpork
+RottKing
+Enjay
+Huy Pham
+SargeBaldy
+Tormentor667
+The GothicDM Team
+The Requiem Team
+The Eternal Doom Team
+id Software
+Raven Software
+Rogue Entertainment
+
+Notable changes in version 1.5:
+Texture PLAT128B has been removed due to Boom being incompatible with
+256-tall textures. Oops! I was unaware of this when I originally compiled
+the wad. Affected maps should replace it with PLAT128A.
+
+Textures BRONZEB5, BRONZEB6, BRONZEG5, and BRONZEG6 have been replaced with
+significantly improved versions that I made more recently. My old versions
+that were there before were rather crappy; hopefully the replacement won't
+cause any problems.
+
+Flats HEXA01, HEXA02, and HEXA03 have been replaced with improved versions
+that I made more recently. The differences between these and the old ones
+shouldn't be significant enough to cause any problems.
+
+Notable changes in version 1.6:
+Replaced SKY2 with an improved sky created by esselfortium. Have fun! -TGH!
+
+Notable changes in version 1.7:
+Added updated versions of BRICKPL3, MIDVINEA-D, SKY3, and STONE2B1-3 that
+were made by esselfortium for 32in24-11.  I also added mirror versions of
+MIDVINEA, MIDVINED, and MIDVINEG (MIDVINEH-J, respectively), corrected an
+issue with the SW#DIRT textures present since the release of Doom, and
+added a BRICKPL texture (BRICKPLA) that wasn't originally present but
+which I added to one level.
+
+It also includes custom TRANMAP lumps by esselfortium used for translucent
+linedefs in some levels; you can set such a linedef as 82% (TRANS82), 65%
+(TRANS65), 35% (TRANS35), and 18% (TRANS18) translucent, /or/ you can give
+one additive blending (TRANSADD), which is useful for forcefields.
+
+This version is the basis for the resources in the final release of
+Community Chest 4.  Enjoy! -TGH!

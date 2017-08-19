@@ -1,0 +1,332 @@
+Updated Dec 2014 with lots of bug fixes and improvements of various sizes.
+==============================================================================
+		    Super Sonic DooM - The Story so Far
+==============================================================================
+
+The year is 2105.
+
+You are Julian Grant, top secret agent and second only to Jody Russell ('007')
+having risen sharply since some heroic performances on the home front during 
+Jody's mission to stop the MISSILE organisation three years ago.  Formerly a 
+tough space marine in the Fragport garrison, your call sign is 'DamaGe', as you 
+do lots of it during missions and love it, too.
+
+At the moment, Jody is on assignment somewhere, so you're the best around.
+And over the past few weeks the SSS has been monitoring the Firestorm Aerospace 
+Corporation (FAC) and their base on a huge island due to suspicious activities 
+(notably the repeated use of a flame-throwing warship on the island) and the 
+belief that they have the capability to open some of those annoying entryways 
+to the demon world.
+
+But for now it's fairly quiet.  You check your watch and realise it's nearly 
+time for the agent based in the biggest forest on the island to make a routine 
+transmission from his outpost.  You sit back in your chair, tune in to your 
+favourite pirate TV station and wait for the SSS communications centre to relay 
+any important information to you...
+
+==============================================================================
+Title                   : Super Sonic DooM
+
+Filename                : SONIC.WAD
+
+Author                  : Stephen Clark  (The Ultimate DooMer)
+
+Email Address           : theultimatedoomer@hotmail.com
+
+Other WAD's by me       : Operation: Lightning (OP-LITE2.WAD) - 11 DooM 2 levels
+			  
+			  Fragport (FRAGPORT.WAD) - 32 innovative DooM 2 levels
+
+			  Shadowcaster (SHADOW.WAD) - 9 Heretic levels
+
+			  Licence to Spell DooM (007LTSD.WAD) - 9 Ultimate ZDoom levels
+
+			  I have also contributed to the following community wads:
+
+			  Community Chest - map 01 & 20, and the off-level graphics.
+			  Mock 2 - map 39, 40 & the 'you fail it' area in map 41.
+			  Plutonia II - map 24 (all of), 25 (all except for first area) & 29 
+			  	   (final area, some detailing and thing placement/gameplay)
+					and some testing/tweaking (maps 04-22, 26, 28, 31).
+			  (unreleased as of yet)
+			  Community Chest 2 - map 15.
+			  ZDaemon CTF Map Pack 3 - map 13 (improvements) & map 29 (all of).
+
+Completion Date         : 24th December 2004 (only just in time for Chrimbo...)
+
+Misc. Author Info       : A hardcore DooMer who loves all it's similar
+			  games (esp. Quake 2, Half-Life and Unreal) but still
+			  thinks DooM is best.
+
+Description             : A DooM 2 episode with a Sonic influence throughout, courtesy of a 
+			  brainwave I had during the map drawing phase of Licence to Spell DooM.
+			  It has the Sonic layout (zones, acts, bosses) and also has some 
+			  Sonic features (monitors, springs, water).  It also uses the health 
+			  system seen in map 09 of Fragport (which was also Sonic-inspired) 
+			  but will still look and play like a normal DooM 2 megawad.
+
+Additional Credits To:    Russ Walsh (for the corrugated metal texture/flats).
+
+			  Nick Baker (for the GRAY6 and WARNING graphics).
+
+			  Josh Fallon (for the night sky).
+
+			  Jean-Serge Gagnon (for the forest portion of the skys).
+
+			  Espi (for the GRASS3,4,5 flats and the 2 larger green trees).
+
+			  Leo Martin Lim (for the excellent shuttle seen in the intro).
+
+			  Björn Ostmann (for the window textures seen in the city maps).
+
+			  Fredrik Johansson (for the GRAY3 and SUPPORT5 graphics).
+
+			  Nigel Rowand (for the marine skin that formed the base of my
+					mercenary sprites)
+
+			  John Weeks, Paul Lapensee, Katsumi No, MPS, Mike, W1P3OUT XL, 
+			  Joe Cortez, Monster Iestyn and Fredrik Johansson (for the 
+			  excellent midi music).
+
+			  Cyb, LilWhiteMouse, Ty Halderman, Randy Heit and others 
+			  (for help on scripting).
+
+			  Enjay (for help on BEX stuff).
+
+			  Graf Zahl, NiGHTMARE and Little Faith for beta testing and feedback.
+
+			  Randy Heit (for ZDoom).
+
+			  Graf Zahl (for the additional coding which made things like 
+				     new monsters possible.  I already had these in 
+				     the project using the old BEX method, but Graf's 
+				     new DECORATE method made things a lot easier and 
+				     in most cases, better as well).
+
+			  The creators of all the editors I used to make this happen.			  
+
+			  Sega for the excellent Sonic games, which this project was 
+			  inspired by.			  
+
+			  And of course, id software for the greatest game on earth!
+
+==============================================================================
+*Playing Instructions*
+
+This zip should contain the following files:
+
+  SONIC.WAD - The megawad.
+  SONIC.BAT - Batch file for playing the megawad.
+  SONIC.TXT - This file.
+  ENEMY.TXT - Details of the enemies.
+  _INTRO.ACS - Scripting for the intro.
+ _SCORES.ACS - Scripting for the scoring and timing stuff.
+  _TRANS.ACS - Scripting for the colour translations.
+_WEAPONS.ACS - Scripting for the weapons/ammo plus misc stuff.
+
+To play :  Click on sonic.bat
+
+NOTE: This wad has a rather lengthy scripted intro. You can skip the main part
+of it at any time by following the instructions on-screen when you start the game.
+The game will autosave at regular intervals during the intro, and also at the end.
+
+Even if you don't like long cutscenes, it is recommended that you watch the intro 
+when you play the wad for the first time, as it contains important information on 
+some of the enemy characters as well as the story in general, and also the other 
+cutscenes will not make sense if you haven't seen the intro at least once.
+
+You will need 50 megs of hard drive space to play Super Sonic DooM.
+
+==============================================================================
+* Play Information *
+
+Game Version Required  : DooM 2 (v1.9), running with ZDoom (2.6 and up) or 
+			 GZDoom (1.6 and up). Newer ones will probably be fine
+			 but if something breaks, use the above version.
+			 Also, make sure that you have wallrunning turned off, 
+			 or map 17 will not work at all.
+
+Episode and Level #    : Map 01-35 (yes, a mega-megawad!)
+
+Single Player          : Yes - Built for it!
+
+Cooperative            : No  - the layouts and scripting are not co-op friendly.
+
+Deathmatch             : No  - the layouts and scripting are not DM friendly.
+
+Difficulty Settings    : Yes - of course.
+
+New Sounds             : Yes - Sonic sounds plus sounds from my other wads. 
+			       Some of these are used as ambient sounds.
+
+New Graphics           : Yes - Lots!
+
+New Sprites	       : Yes - Lots!
+
+New Game Text	       : Yes - BEX patch and mapinfo lump are inside the wad.
+
+New Music              : Yes - Sonic tunes! - downloaded from www.vgmusic.com 
+			 (game midi site) and www.espiokaos.com (John Week's site)
+
+Demos Replaced         : None - ZDoom doesn't like them.
+------------------------------------------------------------------------------
+* Construction *
+
+Base                   : My creative mind (And lots of inspiration from a wide
+			 		   variety of sources)
+
+Editor(s) used         : WadAuthor, WinTex, DeHackEd, DeePsea, XWE, ZDBSP, 
+			 Paint, PSP, MD2 Viewer, AudioRack, Audio Recorder, 
+			 OggDrop XPd (Ogg Vorbis), FLAC, MooD, Doom Builder.
+
+Build Time	       : 2 years (but with some periods of downtime)
+
+Known Bugs             : One or two intro cameras don't go at the right height.
+
+			 Minor HOM during the map 12 boss, but it's unavoidable 
+			 and doesn't really affect anything anyway.
+
+			 The final skybox portal on top of the mountain in map 12
+			 doesn't display the view back in. (GZDoom only)
+
+			 For some reason the railgun cone doesn't always appear 
+			 when fired in map 20.
+
+==============================================================================
+		     Super Sonic DooM - Special Features
+==============================================================================
+
+Zones			: There are 15 zones, each with 2 acts (maps) in them. 
+			  Most of these are small/medium, with a few large ones,
+			  and there are no intermission screens between them.
+			  There are also 5 hidden bonus stages, at suitable intervals.
+			  And a 'special' secret in each zone without a bonus stage.
+
+Bosses			: In true Sonic fashion, each act has a boss at the end of it.
+			  The act 1 bosses will be tough monster-based challenges, and 
+			  the act 2 bosses will be more Sonic-like, and you will have 
+			  to shoot a target 8 times to defeat them.
+
+Springs			: Also in true Sonic fashion, there are springs in all the maps.
+			  Just walk into them (wall-mounted) or onto them (floor-based) 
+			  and fly through the air!  There are two types of spring - the
+			  yellow ones are weaker, and the red ones are stronger.
+
+Monitors		: These act like those in the Sonic games - jump on them and 
+			  you'll get a reward.  There are seven types of monitor:
+			  Health (10%), Armour (10%), Invisibility, (60 sec), Invincibility 
+			  (20 sec), Radiation suit/rebreather (60 sec), Extra Life (200% both) 
+			  and the good old Speed boots (30 sec).  Occasionally a monitor will 
+			  be needed for a puzzle or secret, but it's usually easy to tell when.
+
+Moving Platforms	: Another Sonic feature, these are groups of 4 metal plates that 
+			  move together.  When travelling on these, you must move with the 
+			  platform (very important!) as they will not carry you themselves.
+			  Also, try not to get in the way of them, as it will mess up their
+			  formation and make it impossible to travel on them!
+
+Score			: There is a proper scoring system here - points are awarded for 
+			  killing monsters, finding secrets, getting 100% kills and 
+			  100% secrets in a map, and a time bonus in each map, based on the 
+			  time taken to reach the map's exit.  (except in the last zone, 
+			  where points are scored for killing only)
+
+		    Note: Points will not be awarded for killing lost souls spawned by pain 
+			  elementals and monsters spawned by the boss spawners.
+
+			  For a full list of scores (excluding bonus stages), see scores.txt.
+
+Time			: A Sonic-esque timer will also be in use on each map.  Don't worry, 
+			  you won't die after a certain number of minutes, but the quicker 
+			  you complete a map, the more points you'll get on the time bonus.
+
+		    Note: ZDoom's automap timer is useless here, as it measures the total 
+			  game time not the individual map times. Only valid at the end.
+
+Health			: The health system is a little different here.  It is found in 
+			  rings (1%), health monitors (10%), golden potions (50%), 
+			  berserk packs (100%) and extra life monitors (200%).
+			  All can take it above 100% (except the berserk).
+
+Armour			: The armour system is similar.  It is found in helmets (1%), 
+			  armour monitors (10%), red armour suits (50%), green armour 
+			  suits (100%) and extra life monitors (200%).
+			  Helmets and monitors can take it above 100%, armour suits cannot.
+
+New Weapons		: There is one new weapon - a railgun.  This is selected by pressing 8, 
+			  and fires a single, accurate shot with lots of power and a long range.
+			  The weapon is right handed (not centred like the other weapons), 
+			  comes with it's own laser sight and uses up 10 cells per shot.
+			  None of the existing weapons have been replaced (innovation++) but as
+			  a result, the rocket launcher behaves a little differently when fired.
+
+New Enemies		: There are over 50 different enemies in Super Sonic DooM - the details 
+			  are in enemy.txt. (tons of new ones plus tweaks to some original ones)
+
+Breakable Consoles	: Many of the consoles, computers, monitors, displays etc.
+			  can be smashed with one shot.  Just for fun.
+			  (this also applies to the detailed wall lights found in some zones)
+
+Security Cameras	: These are banks of large monitors on the walls.  To operate them, 
+			  simply walk up to them and press 'use'. To stop viewing, simply 
+			  move away from them.  Unlike consoles, cameras are unbreakable.
+			  These are found in the more industrial/tech zones.
+
+Static Guns		: These are heavy guns mounted on the ground, and can be operated by 
+			  yourself - simply press the firing switch.  They can fire a variety
+			  of different projectiles at different rates, depending on the gun.
+			  Some of them can be aimed as well... (these will have glassy panels on 
+			  each side of the trigger, simply push them to move the barrel that way)
+
+Projectile Launchers	: These exist all over the place, and simply fire projectiles at 
+			  regular intervals.  The projectiles and their directions vary.
+
+Mines			: These are static hazards that will explode when you touch them, and 
+			  are found in some of the more heavily-protected areas.
+
+Barrels			: There are now 6 different types of barrels.  The two lighter-coloured 
+			  metal barrels are destructable, and all types of barrel are pushable.
+
+Keys			: Six different coloured keycards instead of three.
+
+ZDoom Features		: Everything under the sun (or thereabouts), including fully scripted 
+			  intro and victory/credit sequences!
+
+------------------------------------------------------------------------------
+
+* Copyright / Permissions *
+  
+Authors may NOT use any of these levels as a base for modification or re-use.
+The only exception is for fixing any bugs that appear with newer ZDoom versions, 
+in which case let me know and/or send over any patches etc. so I can add them in.
+
+Authors MAY use the resources (including the scripts) in your own wads as long 
+as you give the relevant author(s) credit in your text file.
+
+You may distribute this wad as long as you include this text file and the 
+other files intact.
+
+------------------------------------------------------------------------------
+
+* Where to get this WAD *
+
+ftp://archives.gamers.org/pub/idgames/themes/sonic/ (and mirrors)
+
+My DooM 2 wads are at:  /pub/idgames/levels/doom2/Ports/m-o/op-lite2.zip
+		  and:    "     "      "      "     "  /megawads/fragport.zip
+My Heretic wad is at:     "     "      "   /heretic/s-u/shadow.zip
+and Quake 2 skys at:      "     "   /graphics/q2skys-1.zip and q2skys-2.zip
+
+Licence to Spell DooM is at: /pub/idgames/levels/doom/Ports/0-9/007ltsd.zip
+
+ZDoom is at http://www.zdoom.org
+2.6      at http://zdoom.org/files/zdoom/2.6/zdoom-2.6.0.zip
+Latest   at http://devbuilds.drdteam.org/zdoom/
+
+GZDoom is at http://www.osnanet.de/c.oelckers/gzdoom/
+1.6       at http://www.osnanet.de/c.oelckers/gzdoom/download/gzdoom-bin-1-6-00.zip
+Latest    at http://devbuilds.drdteam.org/gzdoom/
+
+================================================================================
+Remember, remember that DooM lives FOREVER!
+================================================================================

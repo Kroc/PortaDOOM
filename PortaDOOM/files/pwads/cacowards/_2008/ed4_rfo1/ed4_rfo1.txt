@@ -1,0 +1,147 @@
+===========================================================================
+Advanced engine needed  : ZDooM v2.1.7 or later
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Eternal DOOM IV: Return from Oblivion
+Filename                : ed4_rfo1.wad
+Other Files Included    : ed4_rfo1.txt
+                          coop.txt
+                          hubnotes.txt
+Release date            : January 11, 2008
+Author                  : TeamTNT
+Email Address           : rfo@teamtnt.com
+Misc. Author Info       : Ty Halderman: TeamTNT head honcho, webmaster, and
+                            resource manager
+                          Chris Couleur: Maps 11-13, project manager,
+                            textures, play-testing
+                          Esa 'Espi' Repo: Map 27, textures, sounds,
+                            play-testing
+                          Rex Claussen: Maps 08-10, resource management,
+                            project management support, play-testing
+
+Description             : All maps are: 
+                          (i) medieval-themed, and generally very large 
+                            compared to typical DooM maps; 
+                          (ii) non-linear and feature multiple paths; 
+                          (iii) feature castle and fortress architecture, 
+                            fights on an epic scale, and magnificent vistas. 
+                          Maps 08-10 can be played in any order within the 
+                            hub, and powerups & enemies are different in any
+                            given map depending on whether you play it first
+                            or play it after entering from another map. This 
+                            provides additional replay value.
+                          
+                          This is a 7-map demo. TeamTNT intends to create
+                          a full megawad next.
+                          
+                          Tested with ZDooM and GZDooM
+
+IMPORTANT INFORMATION   : Maps 08-10 constitute a hub, and MUST be started 
+                            from Map 08. 
+
+                          To ensure proper gameplay do not use the IDCLEV
+                            cheat code to warp to any of the maps in the hub. 
+                            (i.e. *DO NOT* begin the game by warping to Map 09
+                            or 10). Doing so will mess up the scripts and will 
+                            leave you stuck in the map to which you warp. [You 
+                            can warp to a map just to look around if you wish]
+
+                          To ensure proper gameplay do not use the IDCLIP 
+                            cheat code to leave the intro area or the hub area
+                            in Map 08. Doing so will mess up the scripts and 
+                            will leave you stuck in the map.
+
+                          To ensure proper gameplay do not use the IDKFA cheat 
+                            code to get weapons in the hub. Doing so could mess 
+                            up the scripts and will leave youstuck in the map 
+                            in which you used the cheat code.  [This is 
+                            particularly true of the chainsaw, as once you've 
+                            gotten it through the cheat code you cannot pick it
+                            up in the map. This could prevent you from being
+                            able to leave the map.]
+
+                          For co-operative play read the text file coop.txt 
+                            before playing.
+
+Additional Credits to   : Bjorn 'Vader' Ostmann for thoroughly play-testing all
+                            the maps and for providing excellent suggestions
+                          Scott (Birdman) Bardy
+                          Paul Fleschute
+                          Daniel 'Tormentor' Gimmer
+                          Gary Gosson
+                          Gothic Team
+                          Dale 'Cadman' Harris
+                          Don Howard
+                          Sverre Kvernmo
+                          Rich Nagel
+                          Russell Pearson
+                          Paul Schmitz
+                          Dia Westerteicher
+                          
+                          The authors of the ZDooM Monster Resource Wad
+                          Randy Heit for ZDooM
+                          id Software
+===========================================================================
+* What is included *
+
+New levels              : 7
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : MAPINFO, Scripts
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom II v1.9 & ZDooM v2.1.7 or higher
+Map #                   : Map08-13, Map27
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       :  (co-op starts only in Maps 11-13, but not
+                          tested)
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Maps08-10 & 27 are from scratch
+                          Map 11 is based on a map in TeamTNT's 
+                            Eternal DooM III
+                          Maps 12 and 13 have a few reused and redone 
+                            areas from TeamTNT's Eternal DooM III.
+                          Music is from TeamTNT's Eternal DooM III
+                          The Monster Resource Wad (ZDooM community effort)
+                          Textures are from TeamTNT's Eternal DooM III; 
+                            additional textures by Chris Couleur and Esa Repo
+                          Sounds are from TeamTNT's Eternal DooM III; 
+                            additional sounds by Esa Repo
+
+Build Time              : 3 years 9 months
+Editor(s) used          : WadAuthor and Doom Builder for maps, XWE for
+                            resource and wad management, DooM Builder to
+                            merge maps into resource wad
+Known Bugs              : None
+May Not Run With...     : The Pack (cheesy reference to the classic Bad
+                            Company album)
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+

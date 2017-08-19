@@ -1,0 +1,97 @@
+****************************************************
+******** Doom64 EX Console Commands ********
+****************************************************
+
+Note that all console commands can be executed through CONFIG.CFG
+To use the in-game console, press the ~ key.
+
+
+---------------------------------------------
+Commands
+---------------------------------------------
+
+bind <input> <action> <player number>
+	- Binds a key to a specified action for a specific player.
+	Below is a list of valid actions that can be entered:
+	+fire
+	+strafe
+	+use
+	+run
+	+jump
+	nextweap
+	+forward
+	+back
+	+right
+	autorun
+	+strafeleft
+	+straferight
+	+automap_up
+	+automap_right
+	+automap_out
+	+automap_left
+	+automap_in
+	+automap_freepan
+
+unbind <input> <player number>
+	- Unbinds a key for a specific player
+
+unbindall
+	- Unbinds all keys
+
+quit
+	- Quits the game
+
+exec
+	- Executes an addtional config file
+
+listcmd
+	- Lists all console commands
+
+god
+	- Enables god mode
+
+noclip
+	- Enables no clip mode
+
+pause
+	- Pauses the game
+
+EndDemo
+	- Ends a recording demo
+
+wireframe <toggle - 0 off, 1 on>
+	- Toggles wireframe mode.
+
+spawnthing <thing number>
+	- Spawns a thing in front of the player. TODO: List of thing types.
+
+exitlevel <nextmap>
+	- Exits to the next level specified. Exiting to level 99 in the last level (level 28) will
+	trigger the finale.
+
+trigger <line special> <tag>
+	- Performs a line special trigger on a tagged sector
+
+dumpglext
+	- Dumps a text file listing supported OpenGL extenstions
+
+setcamerastatic
+	- Detach camera from player's view
+
+setcamerachase
+	- Toggle chase cam
+
+dumptextures
+	- Flushes all textures from GPU memory
+
+listcvars
+	- Lists all console variables
+
+resettextures
+	- Resets last known texture used by the game, forcing the game to re-bind that texture
+
+automap
+	- Toggle automap
+
+automap_follow
+	- Toggle automap follow mode

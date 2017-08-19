@@ -1,0 +1,91 @@
+===========================================================================
+Advanced engine needed  : Boom, see "Tested With"
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Sine Die
+Filename                : sinedie.wad
+Release date            : Oct 2007
+Author                  : Didy
+Email Address           : moontrader@gmx.de
+Other Files By Author   : some
+Description             : map01: mainly rusty metal, tech;
+			  map02: clean tech base, a bit hellish;
+			  ---------------------------------------------------
+			  Your mission: Seek three mystical skulls. Use their 
+			  collective power to destroy the Source of Evil.
+			  ---------------------------------------------------
+			  Notes: I recommend to play map02 from pistol start.
+			  No jumping.			  
+Additional Credits to   : Textures: Nick Baker for nmtext1 and mlcetex,  
+			  Danimetal for two textures, Espi for four animated
+			  textures RP2_x, id software, Tom Lelli for re4trw.wad,
+			  Lucas Arts for darkforces, Monolith and A Limes Zen Sky 
+			  for avp2tex, Monolith and Tormentor667 for bloodrpb1, 
+			  Shitbag for some plants from trees.wad, those who are 
+			  named in 2mbrown.txt (mentioned by Tormentor667), 
+			  Pawel Zarczynski for nmncorp1/2, to the one who made 
+			  the chain in gothictx.wad (adel_s05)
+			  Sound: one is taken and modified from SPZDOOM2
+			  Testers: Belial (map01), Robin (Hawkwind)
+			  Special thanks goes to Robin who did an excellent 
+			  job in testing and giving suggestions - great help. 
+			  He also included the level names and has contributed
+			  the text for the story.
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : Yes, four effects
+Music                   : Yes, (Map01 from Aliens - slightly modified)
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2 (with Boom port, see "Tested With")
+Map #                   : Map01, Map02
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : months
+Editor(s) used          : Doombuilder, XWE
+
+Known Bugs              : none seriously, mainly a few minor glitches
+			  dependently on the port		
+			  
+May Not Run With        : Edge, ZdoomGL0.75, Zdoom63a (the ending in map02) 
+
+Tested With             : Eternity 3.33.50
+			  GZdoom 1.0.26-GL
+			  PrBoom 2.47, PrBoom 2.47-GL,
+			  PrBoom+ 2.48.2, PrBoom+ 2.48.2-GL
+			  Risen3d 2.1.00/2.1.1 (Launcher: set corpse fade to 0)
+			  Zdoom 2.17
+			  advice for Eternity / prboom(+)-NON-GL:
+			  set translucency filter percentage in options 
+			  to < 60 i.e. 40 / 50
+
+
+* Copyright / Permissions *
+
+Everything is allowed except commercial use. There are also
+copyrights for the textures listed above, see 
+http://www.doomworld.com/afterglow/textures.shtml
+and text-files of listed resource-wads
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com/idgames/
+FTP sites:
+

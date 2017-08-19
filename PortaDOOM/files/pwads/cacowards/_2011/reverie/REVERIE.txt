@@ -1,0 +1,473 @@
+______ _____ _   _ ___________ _____ _____ 
+| ___ \  ___| | | |  ___| ___ \_   _|  ___|
+| |_/ / |__ | | | | |__ | |_/ / | | | |__  
+|    /|  __|| | | |  __||    /  | | |  __| 
+| |\ \| |___\ \_/ / |___| |\ \ _| |_| |___ 
+\_| \_\____/ \___/\____/\_| \_|\___/\____/ 
+                                           
+
+===========================================================================
+Archive Maintainer      : Place in /levels/doom2/megawads
+Primary purpose         : Single play
+===========================================================================
+Title			: Reverie
+Filename		: REVERIE.WAD
+Release Date		: 11/14/11
+Game			: Doom 2
+Author			: Michael Jan Krizik
+Email Address		: krizik777@yahoo.com
+Misc Author Info	: Old school doomer.
+Description		: A brand new, 32-level megawad for Vanilla Doom 2.exe. Inspired from and made in the style of 90's megawads.
+Tools used		: Doom Builder, XWE, MS Paint
+Known Bugs		: Savegame buffer on MAP08, MAP15. Possible HOM in MAP15 and possible VPO in MAP32.
+Other wads by author	: MAP13 & MAP30 of Doom II Unleashed, MAP22 of Plutonia Revisited, Marine's Folly w/Mr. Chris, Doom Core, also working on TNT2 and Interception.
+Credits			: Id Software for Doom II and all that.
+Big thanks to		: Id Software, Csabo for XWE, the guys who worked on DB2, all playtesters, PRIMEVAL for all the awesome new tracks, David J. Finnamore and especially to God who has been a constant inspiration for my work.
+===========================
+*Play Information*
+
+Level#			: 1-32
+Single Player		: yes
+Co-op			: yes
+deathmatch		: yes
+new gfx			: yes
+new sfx			: no
+new music		: yes
+Dehacked/BEX Patch      : Yes
+Difficulty Settings     : Yes
+
+The .deh file is for vanilla and the .bex is for Boom and compatible ports.
+
+=Map Listing=
+
+MAP01: Stratos Gate
+MAP02: Soldier's Stand
+MAP03: The Cup Of Wrath
+MAP04: Divine Judgement
+MAP05: Substance
+MAP06: Sledgehammer
+MAP07: Lazarus
+MAP08: Triplet II
+MAP09: Fracture
+MAP10: The Tech Towers
+MAP11: Hello, Cybie!
+MAP12: Armageddon Valley
+MAP13: Stronghold Earth
+MAP14: Tyranny
+MAP15: Blade Runner
+MAP16: Dark Zone
+MAP17: Fatality
+MAP18: Sleeping Spirits
+MAP19: Dusk Town
+MAP20: One Such Reverie
+MAP21: Sunrise
+MAP22: Egyptian Plains
+MAP23: Cyclone Rider
+MAP24: Sewer System
+MAP25: Sever Tomorrow
+MAP26: Fallen Angel
+MAP27: Godspeed!
+MAP28: Turbine Accelerator
+MAP29: Salvation
+MAP30: Final Doom
+MAP31: Metal Mansion
+MAP32: Deadlock
+
+=Track Listing=
+Title Screen - "Reverie" (PRIMEVAL)
+Intermission - "Onward" (PRIMEVAL)
+Read Message - "Through Suffering" (PRIMEVAL)
+MAP01 - "Let's Rock!" (PRIMEVAL)
+MAP02 - "Shut Up And Bleed" (PRIMEVAL)
+MAP03 - "Have A Frag On Me" (PRIMEVAL)
+MAP04 - "Haunted Corridors" (PRIMEVAL)
+MAP05 - "DOOM Funk" (PRIMEVAL)
+MAP06 - "Ashes" (PRIMEVAL)
+MAP07 - "Arachnobus Mayhem" (PRIMEVAL)
+MAP08 - "Knee Deep in DOOM" (PRIMEVAL)
+MAP09 - "Death Waltz in B Minor" (PRIMEVAL)
+MAP10 - "Locked & Loaded" (PRIMEVAL)
+MAP11 - "Guns-ablaze" (PRIMEVAL)
+MAP12 - "Burning Times" (PRIMEVAL)
+MAP13 - "The Calling" (PRIMEVAL)
+MAP14 - "Legions of the Night" (PRIMEVAL)
+MAP15 - "City Streets" (PRIMEVAL)
+MAP16 - "Dispersion" (James Paddock)
+MAP17 - "Fortress of Misery" (PRIMEVAL)
+MAP18 - "Becoming" (PRIMEVAL)
+MAP19 - "MDK" (James Paddock)
+MAP20 - "Sludgeville" (stewboy)
+MAP21 - "Darkness Calls" (James Paddock)
+MAP22 - "Aztec Gods" (James Paddock)
+MAP23 - "Relics" (James Paddock)
+MAP24 - "Fallen Sun" (James Paddock)
+MAP25 - "Killing Spree" (PRIMEVAL)
+MAP26 - "The Crypts" (PRIMEVAL)
+MAP27 - "Bound For Glory" (PRIMEVAL, stewboy & James Paddock)
+MAP28 - "Crimson Sky" (PRIMEVAL)
+MAP29 - "Hell's Last Stand" (PRIMEVAL)
+MAP30 - "After The Storm" (stewboy)
+MAP31 - "Lost In Our Dreams" (PRIMEVAL)
+MAP32 - "Stigmatism" (PRIMEVAL)
+
+===========================
+*Contributers*
+
+John Weekley (PRIMEVAL) - Original music tracks for maps 01-15, 17, 18, 25-29, 31, 32,
+and intermission sceen, text intermission, and title screen.
+
+James Paddock (Jimmy91) - Original music tracks for MAP16, 19, 21-24, 27.
+
+Stuart Rynn (stewboy) - Original music tracks for MAP20, 27, 30.
+
+Texture graphic REDMNTN by David J. Finnamore doom@elvenminstrel.com
+
+DEMO1, 3 & 4 by MegaDoomer
+DEMO2 by Katamori
+
+==========================
+*Wad description/History*
+
+IMPORTANT: Don't read the story if you don't want the plot spoiled.
+
+-=The Story=-
+
+The story of Reverie revolves around the doomguy (the player) who, as it reveals in the
+end, dreamed up the entire plot. There was never an outbreak of hell on the Earth.
+Everything about the impossible that occurs within this universe is revealed to be a
+dream. The real marine lost control of his vehicle and crashed upon driving home, of
+which knocked him into a deep sleep. Upon waking up, he finds comfort in the fact that
+none of those disasters had happened. It's as if the player is fighting their way
+through a coma in order to bring consciousness back to their true self. The reward is
+the release of all the worries surrounding the end of the world in the dream that is
+Reverie. After all, Reverie itself was based on a real dream, of which spawned the
+original idea for the last three levels (MAP28-30). So I hope everyone else can enjoy
+the beauty of this dream in the same way I did (with a nice classic 90's vibe).
+
+Levels:
+
+MAP01: Stratos Gate
+Build Time: 3 hours
+Entryway style obviously, I tried to avoid any sort of style imitations or remakes, but
+this one sort of slipped through for lack of a better MAP01 start. The original MAP01
+was going more for a Plutonia-style start up, of which was later removed and placed in
+the MAP25 slot of Doom Core. So yes, I would probably be guilty for this one in terms of
+style imitation (somewhat). I was going to sketch out MAP01 candidates in my sketchbook
+one afternoon, this was the first map I sketched out to be an entryway style opener much
+like TNT MAP01 (only much closer to entryway than I probably should have gone). I liked
+the way it looked so much I decided to try and make it that night and it came out within
+3 hours. There was a time I thought about replacing it, but after awhile I realize the
+only reason I would have wanted to replace it was that people would suspect it was too
+close to the entryway style. I agree, it probably is, but I like it enough to leave it
+there as it is, as I've grown accustomed to it as the opening of Reverie.
+
+MAP02: Soldier's Stand
+Build Time: 2 days
+I guess mostly Christen Klie comes to mind for this one, with some slight influences for
+some interesting inter-connected areas. A little tech base level built into the side of
+a mountain. Didn't take long to make, it was a nice little mapping session of mine.
+
+MAP03: The Cup Of Wrath
+Build Time: 3 days
+Structurally speaking, I was inspired by Cleimos 2 after viewing the maps numerous times
+in XWE (without the grid). So I had seen the structue of this map in my head before I
+ever had an idea of what it was actually going to look like. It's an interesting way to
+improvise when approaching the territory of level design. Some might think it takes
+inspiration from MAP03 of Doom II 'The Gantlet' due to the use of starport and metal
+textures, but this level really doesn't hold much inspiration from that level.
+
+MAP04: Divine Judgement
+Build Time: Unsure - around 5 or 6 days
+Personally, I don't think I've studied Jens Nielsen's designs closely enough to put out
+a map that could be confused for his creations, but the intent was at least to get a
+different enough map that it would seem to have come from someone else. Which was
+certainly a focus of mine when working on this megawad. If I was going to do it alone,
+I was at least going to pretend I was multiple different authors making different maps
+enough to give a good taste of variety. I can't say as to whether I've accomplished this
+or not. I was between completing this and MAP20 at the time of working on this. I
+remember being in a motel room in San Simeon viewing the two of them while the Sixth
+Sense was playing on TV - good memories. :)
+
+MAP05: Substance
+Build Time: A handful of hours, made within a day.
+Orin Flaharty comes to mind, though slightly with few given techniques (overhanging
+poles, some solid looking areas, the use of nook and crannies to house candles). Some
+slight Jens Nielsen ideas were also tossed in for added measure (narrow staircase with
+torches). The last room texture choice is a bit "Circle of Death" or maybe "Hell's
+Kitchen" given the author influence. Though the author himself (Orin Flaharty) was John
+Romero influenced - gives an odd hybrid of influence. A little bit of American McGee
+influence as well, given the use of the BROWNHUG texture surrounding the grass flats.
+It's an odd quirk but I like the old 90's vibe it gives.
+
+MAP06: Sledgehammer
+Build Time: 4-5 days
+You may have noticed the full automap structure looks much like a sledgehammer itself.
+This was done on purpose much like MAP03, as some maps weren't so much influenced in
+category of texture choice or architecture, but sometimes automap structure inspiration
+can call for some interesting results. It's a fun thing to experiment with, I really
+just imagined a MAP06 slot would look something like the way it came out. It was also
+originally more difficult, relying on some puzzles to figure out how to solve the level,
+but I was rebuked by the playtesters to make it easier, so I did.
+
+MAP07: Lazarus
+Build Time: A handful of hours
+Another one made within a day, had the picture of this map in my head for awhile before
+finally stepping up and mapping the whole thing out. It was so much fun in the early
+days of Reverie's developement, as most of the maps at the time were made within a day.
+Amazing times.
+
+MAP08: Triplet II
+Build Time: A week or so
+An unofficial sequel to Jim Flynn's episode replacement for Doom II: Enigma. Even though
+it was actually 9 levels it is definitely one of my favorite episodes ever made for Doom
+II (besides Dystopia 3). I am also a big fan of Jim Flynn's work, as he had a tendancy
+of making epic-sized maps with incredible innovations and ideas that made you feel
+overwhelmed in amazement. I tried to go for that here, not so much in the Jim Flynn
+style, but with a mix of my own ideas. I'm sorry to say that I could not conquer the
+savegame buffer of this level; you could always save it at the exit of MAP07 in any
+vanilla doom port.
+
+MAP09: Fracture
+Build Time: 2 days
+Inspired by Sverre Kvernmo's Derelict Station (CABAL2.ZIP) A smallish base with plenty
+of action to be had, while being somewhat fractured. The furious "ending" of this level
+was also inspired by the constant traps that occurred at the end of CABAL6 (Eye of the
+Storm) by Sverre Kvernmo. This was probably another one of those maps that I had doubts
+about at first when I started woring on it, but sometimes you have to push your way
+through those doubts and just make a fun level. I recall listening to King Crimson while
+working on this level, I reckon the song "Fracture" gave me the idea for the title, as
+it seemed fitting.
+
+MAP10: The Tech Towers
+Build Time: 5-6 days
+Another Enigma-inspired map; with a hint of Memento Mori II (Corporate Hell). Hope you
+guys don't get too lost in this one, as it can prove to frustrate some people not
+knowing where to go; I recommend following that red arrow in the beginning, though
+you're free to be as lost as you like in this monster, if that's your thing. I think
+most of all I thought about that level in Enigma titled "The Tower" as that was also
+somewhat of a beast to navigate, but I really love getting lost in all it's creation. I
+wanted to make an epic-sized level slightly inspired from such an idea, as it consists
+of many buildings to navigate, but with a little more direction on where to go thanks to
+the dogging of the doomworld community.
+
+MAP11: Hello, Cybie!
+Build Time: 2-3 days
+Another map purposely structured to look odd yet creative. Definitely another of the
+Christen Klie inspired maps, more specifically Subspace from The Master Levels, only
+much more difficult. If you look at the automap structure of Subspace from the Master
+Levels then you should be able to spot the influence it had on this map. Be careful upon
+the exit of this map, as it is a death exit and hitting a button during this sequence
+you may accidentally restart the level.
+
+MAP12: Armageddon valley
+Build Time: Most likely a few days.
+Just a little rocky earth level to get the next episode started up. It takes you back to
+pistol start (I'm sorry) because of your teleporting to a starship when escaping from
+MAP11. However, the ship crashes at some point, and you've lost all your weaponry again,
+so you've got to fight your way through to earn your weapons back. A bit inspired from
+The Waterway by Orin Flaharty, somewhat Cleimos 2 as well. There are some really tricky
+secrets in this level so keep your eyes open.
+
+MP13: Stronghold Earth
+Build Time: 3-5 days
+Another big map to be explored, with some rockies and some buildings. Inspiration comes
+mostly from Fortress of Death by Andrew Harvey. I thought the exit idea was hilarious,
+seeing the boat and paddles right there waiting for you. As if you were on some quick
+getaway from hell and you're yelling to yourself, "ROW!!! ROW!!!" I really enjoyed
+making this map, it's pretty big and I like running around the place. It's all in good
+fun.
+
+MAP14: Tyranny
+Build Time: Probably 3 days
+Another map built to look that way structurally on purpose. It's an interesting practice
+to make with what you have according to the shapes of sectors and such. It makes the
+maps look so pretty. Some Icarus inspirations, with Christen Klie (again) for some
+interesting quircks. The idea in this one is sort of starting from scratch (outside the
+fortress) then working your way through security (the bridge) then eventually usurping
+the fortress itself. The arch-vile could be seen as the ruler of this place, sitting on
+his throne the way he is. It feels good to feel like you're conquering enemy territory
+and you've accomplished yet another mission along the way.
+
+MAP15: Blade Runner
+Build Time: Weeks
+Another city map inspired from Industrial Zone, Corporate Hell and Karmacoma. Also
+contains a homage to another of Christen Klie's creations (The Catwalk). If you're
+extra tricky you'll find the secret exit, which isn't easy to find as it relies upon
+secret searching in this level. This also suffers from savegame buffer, so be sure to
+save at the exit of MAP14 if you're into that.
+
+MAP16: Dark Zone
+Build Time: A handful of hours
+I made that first area at night then mapped the rest out the following day. I've had
+this idea for the longest time and I'm glad to have finally mapped it out. It was a good
+stretch for my mind to work out. That one area you teleport to with the highway street
+and the street lights with a mountain view is inspired from a real place I used to visit
+quite often. In Long Beach, there's this El Dorado Park area where people like to fly
+their remote control airplanes. I used to bike ride there every afternoon (about 1 PM)
+and watch them fly their planes. Sometimes I would ride there in the late evening of a
+clear day, so you could see the mountains at sunset. This area I made looks somewhat
+similar to such an area.
+
+MAP17: Fatality
+Build Time: 2-3 days
+Took awhile to settle for some ideas surrounding the MAP17 slot. Some slight "The Five"
+influence with the starting area, followed by some mixed styles of Orin and Jens yet
+again, as they were both very creative. It was also slightly inspired by The Shaft from
+Memento Mori II, having a series of miniature battle fields to take out before
+continueing the actual level.
+
+MAP18: Sleeping Spirits
+Build Time: 4-5 days
+Obviously this one draws from Blessed Are The Quick (Icarus) with some minor hints and
+influences from The Mansion (PSX Doom). Had to try and make an animated rain texture,
+of which ended up looking exactly like the one in Icarus (whoops!) Named Sleeping
+Spirits because of the ghosts that wake upon gunfire. Keep an eye out for the television
+set, you can turn it on/off via a remote control laying on the bed of a bedroom.
+
+MAP19: Dusk Town
+Build Time: Made within a day (mostly).
+Somehow reminds me of Plutonia; I guess it's the earth feel that naturally lumps it in
+the Plutonia category. Anyway, I started this map one morning but a car ride took the
+whole day away from me, so the following day I picked up from where I was and completed
+it. Can be quite a nasty map so watch out.
+
+MAP20: One Such Reverie
+Build Time: A long time!
+I was constantly thrown away from this map, due to having to pursue other ideas I had
+that had to be made (MAP01/MAP04 for example) but eventually I came back and completed
+this map. I made the starting area and the following area in a handful of hours, but I
+wasn't really sure where to take the map. So I felt making an interconnecting map with
+teleporters would be a good way to go. Even though I already had that in mind for
+something else entirely (see Triplet II).
+
+MAP21: Sunrise
+Build Time: Probably 2 hours.
+A smallish map intended for survival. Made within a movie's length (Princess Mononoke -
+on a random trivial note). It used to be strictly that first arean you teleport to but
+I'm glad to have expanded it the way I did over time.
+
+MAP22: Egyptian Plains
+Build Time: 2-3 days
+Another Cleimos 2-inspired map, using those CLEGYPTA-D textures. I do like how it turned
+out, though ironically I really like how that sewer area turned out. Someone thought it
+was Epic 2 inspired but it actually isn't as I hadn't played that megawad until long
+after I had completed this level.
+
+MAP23: Cyclone Rider
+Build Time: 4-6 days
+Had to make that first area as I was inspired by the design of MAP26 of Memento Mori
+(Between Scattered Corpses). It had four spider masterminds and a cyberdemon at the
+begging and yet it managed not to be too overwhelming. Following this is the level
+itself, which puts the good old Doom 64 textures to use, with some further style mixing
+structurally speaking. I used some of the Doom 64 textures because the most I can do
+with texturing is either remixing existing stock Doom II textures or just taking a
+picture of something outside and making that a texture. I felt there was sort of a lack
+of new textures, in other words, that I thought Doom 64's textures would be interesting
+and fun to use for such an occasion.
+
+MAP24: Sewer System (Arch Vile's Den)
+Build Time: 3-4 days
+I think MAP24, 25 & 26 were the toughest to come up with. They were just three empty
+slots that needed to be filled to complete this megawad, and I wasn't about to stop.
+After a long while, I finally stepped up to make a sewer-themed level. Not much
+background surrounds it other than the idea that it would originally be populated by
+arch-viles (hence the subtitle "Arch Vile's Den").
+
+MAP25: Sever Tomorrow
+Build Time: 2-3 days
+I tried hard to find inspirations for these last three levels, even going as far as
+searching up old N64 classics on YouTube. Originally, I had a couple ideas for this
+map. It would either be inspired by the cruiser ship from Go For Broke (Bomberman 64)
+or possibly Mizer's Palace (Jet Force Gemini). I ended up going with something else
+completely; something that at first was inspired by Last Call from Final Doom, with a
+mix of Super Mario 64 thrown in there (the western areas, mostly inspired from inside
+the Pyramid of Super Mario 64). This is another map that can be difficult if you don't
+take your time with the monsters of the map. This was also the very last map I made for
+this megawad so you can imagine how excited I was to complete it.
+
+MAP26: Fallen Angel
+Build Time: 2-3 days
+Sort of a mix between the inspired structure of MAP25 of Cleimos 2 (Well of Fire) but
+with the style of play for something like Not That Simple (Memento Mori). A smallish,
+violent level without any worry of savegame buffers. Plenty of monsters to fight when
+navigating to and fro certain areas of the map.
+
+MAP27: Godspeed!
+Build Time: 3-4 days
+When I first got Plutonia Revisited I had to get a sneak peak of each level before
+actually playing the megawad. When I reached MAP24 (Terra Incognita by 4mer) I knew
+right away I was looking forward to playing that level, and I knew right away I wanted
+to make a Living End style level that is as free-going as it looks. I've decided to
+avoid the use of damaging floors surrounding the entire level as I would like to
+encourage further exploration as well as breaking away from the age-old tradition of
+Living End-type levels.
+
+MAP28: Turbine Accelerator
+Build Time: 3 days
+Inspired from the bigger Casali maps (Pharoah, Caribbean, The Sewers, Odyssey Of Noises)
+only this is more of a metal-themed tech map. With an outdoor area and a waterway near
+the end. This was one of the earliest map ideas I had for this megawad (of which would
+originally have been a 3-level PWAD) along with MAP29 and MAP30. Reverie was based on a
+reverie of sorts, with MAP29 & 30 following closely by.
+
+MAP29: Salvation
+Build Time: Some hours
+I really intended this level to be sort of an arena-type battle. This was actually based
+on a dream I had, with MAP28 & 30 following as part of my vision for this project. It
+really is amazing what you can do to make dreams come true. Also made within a day.
+
+MAP30: Final Doom
+Build Time: 3 days
+This last level incorporates everything I wanted Reverie to be; beautiful and action-
+packed, with a slight hint of nostalgic goodness. There are plenty megawads out there
+already that go for the hellish ending, with crazy blood caves and torture chambers. I
+wanted Reverie to have a beautiful ending with an atmosphere of hope for survival. It
+really puts a good feeling in your heart to know you've saved the world once again from
+these hellish monsters. Even if it's just a dream, of which, realistically so, could be
+associated with the idea of video games in general. We all like to feel like a hero from
+time to time; this is just the way video games should be.
+
+MAP31: Metal Mansion
+Build Time: 4-5 days
+Something inspired from Excalibur (Eternal Doom) because I was really attracted to the
+idea of a puzzle map that relies upon secret searching. It gives the option to quit and
+take the normal exit if you're too exhausted by the subtle hints of progression found
+throughout the level. Otherwise, if you're extra clever, you'll discover all the secrets
+in order to reach the super secret level.
+
+MAP32: Deadlock
+Build Time: 3-4 days
+Just a smallish map that plays violently. Another of which takes inspiration from the
+secret levels that were rather small in size (Requeim MAP32, Icarus MAP32, Cleimos 2
+MAP32). I was tempted to replace this one at one point, since it seems there isn't too
+much special about this super secret level, but I couldn't bring myself to remove a map
+that I enjoyed. Hope you guys can manage well with this one.
+
+A big thanks to PRIMEVAL, James Paddock & stewboy for the new music.
+
+Another great big thank-you to all the playtesters, MegaDoomer, hawkwind, waverider, kmxexii, Ryathaen, Joshy and ArmouredBlood.
+
+And yet another thanks to hawkwind for the DeHackEd/BEX patches for the WAD.
+
+============================
+*copyright*
+Authors may NOT use any of these levels as a base to build additional levels.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.
+
+*Doom II is copyright Id Software
+
+Textures for this WAD were taken from:
+-The Ultimate Doom
+-Final Doom (Plutonia & TNT)
+-CLEGYPTA, CLEGYPTB, CLEGYPTC, CLEGYPTD, CLMET21, CLMET22, CLMET23, CLMET24, CLMET25,
+CLMET26, CLMET27, CLMET2UP from Cleimos 2 by Rand Phares & Steven Phares.
+-Doom 64
+
+==========================
+*Miscellaneous*
+
+YouTube:
+http://www.youtube.com/user/valkiriforce?feature=mhee

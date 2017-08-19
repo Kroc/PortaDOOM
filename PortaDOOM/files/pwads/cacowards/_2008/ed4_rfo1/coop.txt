@@ -1,0 +1,38 @@
+For coop play
+
+General instructions for levels 11, 12, 13
+
+All levels are set up for coop play but have not been tested, but should play
+pretty well.  I can see the use of elevators possibly causing some problems in
+a few areas.  I have used a series of teleports to help speed up gameplay as 
+these levels are very large and without these teleports coop play would be very 
+tedious and boring.
+
+(Level 11) Return to the Forlorn Fortress
+
+At the start of this level you will see a fountain (pool of water). If you die
+during the game you will want to jump into this pool of water and you will be 
+teleported in to a small room which will become a long hallway as the game 
+progresses. As the game progresses the hallway becomes longer and more teleports
+open up on the right side of the hallway. Gather up all keys and weapons available
+and always take the last available teleport as you move down the hallway. This 
+should give you everything you have collected and get you pretty close back to 
+the action. There will be some ammo available also but don't get greedy as you may 
+need some more later.
+
+(Level 12) House at Pooneil Corners
+
+In this level you start in a narrow outdoor passage. At the first corner is a 
+teleport which is not yet available (too high). Shortly in the game after going 
+through the first locked door this teleport lowers. Once this teleport lowers 
+always use it if you die. You will be teleported into a small room. There should 
+always be only one teleport to use. Gather up all items and use it. If more than
+one teleport is available use the most currently open one (as you move clockwise
+around the room).
+
+(Level 13) 2400 Fulton Street
+
+You start in a dark cave-like room. At some point early in the game after leaving 
+the first main area a wall lowers in the start area giving access to a small 
+hallway. Gather up all items and take the last available teleport on your left.
+

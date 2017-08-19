@@ -1,0 +1,133 @@
+===========================================================================
+Archive Maintainer      : He's TNT, he's dynamite.
+Advanced engine needed  : Zdoom (2.5.0 or above)
+Primary purpose         : Single Player
+===========================================================================
+Title                   : TurboCharged ARCADE! - The Sequel Episode!
+Filename                : turbotwo.wad
+Revision                : 1,000,000
+Release Date            : 12-09-10
+Authors                 : Xaser & Jimmy
+Email Addresses         : xaser.88@gmail.com, jamespaddock@hotmail.com
+Other Files By Authors  : Xaser: Zen Dynamics, Lost Episode, TcA Episode 1
+                          Jimmy: Omega, Jenesis, Blocks of Doom II
+Miscs Authors Infos     : Xaser is a Xaser from the planet Xaser who does
+                          Xaser-y things.
+
+                          Jimmy is a pretty cool guy. Eh, makes really good
+                          music and doesn't afraid of anything.
+
+                          We apologize for using this meme. Maybe.
+
+Description             : After a loooooooooooooooooooooooooooooooooooooooong
+                          delay, the second episode (sorta) of the long-
+                          awaited (sorta) TurboCharged ARCADE! is here (sorta)!
+                          Venture across the mountainous realms of the Himalayas
+                          and the lava fields of Hell. Witness epic spectacles
+                          such as massive exploding barrel structures and
+                          semi-monumental wedding chapels. In The Sequel Episode,
+                          you do it all, from raiding a Museum to smashing
+                          yourself against rockets to bounce them into colored
+                          (and often deadly) blocks. And before it's all said
+                          and done, better prepare yourself for an epic showdown
+                          with The Man himself, (an acronym of) Satan.
+
+                          For those not in the know, TcA is a humorous adventure
+                          revolving around short, wacky levels where everything
+                          operates at 200% speed. Enemies, weapons, you name it!
+                          It's quicker, faster, deadlier and funnier.
+
+                          The Sequel Episode sports eight more maps of awesome
+                          from insanity masterminds Xaser and Jimmy, which may
+                          or may not be fit for human consumption (not that it
+                          matters to most humans anyway).
+
+
+Additional Credits to   : People! Such as:
+                          - Kate for testing and sirbelfin for almost testing
+                          - The guy who made good ol' turbo.deh
+                          - kniggit, for the MAP01 midi I stealed
+                          - Lexus Alyus, Bobby Prince, Lee Jackson, Sam Woodman
+                             for other songs that are not Jimmy's
+                          - Everyone who actually wanted to see this get done!
+===========================================================================
+* What is included *
+
+New levels              : Crazy Eight
+Sounds                  : Yes
+Music                   : Yes -- some classic TcA tunes plus new Jimmy music!
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes. Turbo, biyayatch!
+Demos                   : If by 'demo' you mean 'demolition', then yes.
+Other                   : DECORATE, DECALDEF, SNDINFO, and all that Zdoom stuff.
+Other files required    : Latest ZDoom and your local fire department.
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP08
+Single Player           : Designed for
+Cooperative 2-4 Player  : No (too scripted)
+Deathmatch 2-4 Player   : No (i dare you to FUCKIN' TRY BITCH!)
+Other game styles       : Yes (No)
+Difficulty Settings     : No need (we're lazy)
+
+
+* Construction *
+
+Base                    : Scratchy maps.
+Build Time              : Since the last release, only longer.
+Editor(s) used          : Doom Builder (2), SLumpEd, MIDI Tracker, Cakewalk Pro
+Known Bugs              : There might be, or there might not be.
+May Not Run With...     : QWOP
+
+
+* Map Information *
+
+ MAP01 - "Ask the Wise Guy" by Xaser
+ MAP02 - "Congestion 1337" by Xaser
+ MAP03 - "Balls of Steel" by Xaser
+ MAP04 - "Blocks of Doooom!"  by Jimmy
+ MAP05 - "Unholy Matrimony" by Jimmy
+ MAP06 - "Museum Raider" by Jimmy
+ MAP07 - "Blatant Demolitionism" by Xaser
+ MAP08 - "Merry Shitmas!" by Jimmy
+
+
+* Demolitionist's Handbook *
+
+ - Kill enemies with your chaingun cannon but don't let it overheat!
+ - Altfire releases a souped-up power-shot, but generates more heat.
+ - Use the rail! Press any of the arrows to use the Fast Travel system.
+ - Prioritize your targets! Pains are worth more than Souls.
+ - You'll get the opportunity to Repair buildings every 4 rounds.
+    Spend your repair points wisely, as you only get so many!
+ - A few of the buildings release special negative consequences if
+    destroyed. Keep them safe or you'll be sorry!
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse, as long as you credit us in some form.
+Just be sensible 'bout it -- if you rip entire maps and pass them
+off as your own, we will find you and eat you.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. We have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+We think.
+
+You MAY swallow a nuclear bomb whole in hopes of committing suicide, provided
+that you make sure the bomb does not have any sharp objects on the outside,
+because that may cause accidental disembowelment. Permissions have been
+obtained from manufacturers of nuclear warheads for any bombs that may
+be used in this event.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirror mazes.

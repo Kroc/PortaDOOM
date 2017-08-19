@@ -1,0 +1,178 @@
+Date Completed         : 7/3/04
+Title                  : Scuba Steve's: Action DooM
+Filename               : action.wad
+Other Works            : Ghostbusters DooM
+                         http://doomworld.com/gbd2/
+Author                 : "Scuba" Stephen Browning
+
+Email Address          : action@mancubus.net
+
+Description            : Action Doom is meant to try and bring back the run and gun
+                         feeling from the old 2D shooters like Contra and Metal Slug.
+                         In the tradition of such games there are no bullet weapons,
+                         only projectiles.  And just like Contra every enemy and
+                         subsequently you, all have but one hit point, aside from
+                         bosses and mini bosses.
+
+                         To make the game feel more 2D and less frustrating, you will
+                         never be attacked from behind, and the level is entirely
+                         linnear.
+
+Story (From the Manual): The year is 2174 and the Union Aerospace Corporation is in
+			 over its head.  On a remote island in the Gulf of Mexico,
+			 the United States Goverment funded the construction of the
+			 top secret UAC Site 4 Labs.  They were to be in charge of
+			 the work the government was unwilling to show the public.
+			 Originally, the base was constructed to investigate extra
+			 terrestrial lifeforms buried deep beneath the surface of
+			 the earth.  Recently however, scientists and army officials
+			 together have begun teleportation experiments... into other
+			 dimentions.  Using this newfound portal technology, the
+			 United States Government has created a gateway into Hell
+			 itself.
+
+			 As if things couldn't get more convoluted, the story doesn't
+			 end there.  Now, never content to just sit idle, scientists
+			 at UAC Site 4 have begun genetically altering demons brought
+			 back from hell, with the DNA from the Aliens found at the
+			 crash site.
+
+			 It has been a week since any contact has been made with
+			 Site 4, and the government has only one option left, the men
+			 and women of the most elite government task force known as
+			 I.M.P.S.E.  It's up to you to discover what happened to the
+			 UAC Installation.
+			 
+      ===============================================================
+
+* Play Information *
+
+Game                    : zdoom.exe with doom2.wad, you'll need the latest (.63 or Higher)
+			  version of ZDoom 2.0 (find it at http://zdoom.org/files/lars)
+			  It's not required, but it looks better if you go into options,
+			  Display Options, Messages and turn on "Scale Text in High Res"
+
+Levels                  : 4 maps, 2 seperate maps and a hub level of 2 maps
+Single Player           : Yes (intended)
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes.
+			  Beginner - More guns and fewer monsters, 100 hp
+			  Easy     - More guns and fewer monsters
+			  Normal   - Average
+			  Contra   - Fewer guns and more monsters
+
+New Sounds              : Yes
+New Graphics            : Yes!
+New Music:              : Yes
+		Original Music
+			  Action Doom 	 -     -     -    - Julian
+			  Ending      	 -     -     -    - Julian
+			  Funky Chase 	 -     -     -    - Julian
+			  Slasher     	 -     -     -    - Julian
+			  The Street  	 -     -     -    - Julian
+			  Da Boss    	 -     -     -    - Julian
+		Other Sources
+			  Confuzion 	 -     -     -    - Rufferto
+			  Svolkraq   	 -     -     -    - Tykrod
+			  Mario 3 (Ice world Remix)  -    - Robert Smith
+			  Super Metroid Item Area    -    - Nintendo
+			  Frozen in Time (Metroid Fusion) - Nintendo
+			  Metroid Fusion Boss theme       - Nintendo
+			  Contra Ending Theme             - Konami
+
+		Other sources include chiptunes.com and vgmusic.com
+			  
+
+      ===============================================================
+
+* Very Special Thanks To *
+
+- Mike "Cyb" Watson       : Zdoom Scripting... this wad wouldn't have worked without him
+			    most of the scripting is Cyb Script (tm)
+- Kara "Nanami" Rader     : Nami did alot of the early scripting like the score
+- Julian "Julian" Aubourg : Alot of the great music in Action DooM was provided by him
+- Andrew "Linguica" Stine : Spent countless man hours making The Doom Racer Arcade Game
+- SNK                     : Metal Slug's Explosions, and alot of inspiration
+- Konami                  : Even more inspiration
+- Banjo Software          : Breaking Glass and a Large door texture
+- Ace Team Software       : Truck Texture, and one or two others
+- 3D Realms               : A few Duke sprites, and sounds
+- Rogue                   : Strife Textures
+- Raven                   : I think I used their Ice texture...
+- id Software             : Doom, Several Quake sounds
+- Skulltag                : The Box!
+- Laz Rojas, Wolfendoom   : Large Shell Sprite, and a texture or two
+- Nintendo, Metroid       : Music
+- The cast of #youfailit  : For telling me to quit working on Action Doom to
+                            work on Zoom full time.
+- Beta Testers            : Amymaster   - Loser
+			    Mancubus II - Loser
+			    SargeBaldy  - Loser
+			    Hobo        - Looser
+			    Espi	- Loser
+                            UltraViolet - Loser(x2)
+- Sgt Crispy		  : His Doom Radio in game sound byte
+- DiluteCo		  : Repairing a mod file
+
+
+      ===============================================================
+
+* Construction *
+
+Base                    : Maps  : From Scratch
+			  GFX   : Entirely Original, aside from the few graphics and
+                                  textures mentioned above.
+			  Sounds: Misc locations or scratch
+			  Music : Julian, Misc authors
+
+Editor(s) used          : Wintex, Doom Builder, Paint Shop Pro 6, Soundforge 4.5,
+                          Photoshop 7, WadAuthor, XWE
+			  
+Build time              : Started Around September 2003, but the original "subject" had
+			  been started years ago.  It was a simple patch that had
+			  you fire projectiles from the doom pistol while everything
+			  died in one hit.
+
+Fixes			: None
+			  
+Known Bugs              : Due to extensive Dehacked work, I have encountered...
+
+			  When you pick up the clipboards, you can never select them
+			  again.  In order to avoid doom autoselecting them in battle
+			  I gave them 0 ammo, so it only allows you to pick them up
+			  but never select back to them.
+
+			  Occasionally, the shots fired by the endboss will hit and not
+			  dissappear.  This shouldn't interfere with gameplay at all.
+
+			  Any other problems are probably your fault for using God mode.
+
+      ===============================================================
+      
+ * Copyright / Permissions *
+
+Authors MAY use the maps in this wad as a base for additional maps.  Provided
+with this file is a changelog that tells all objects changed so you know what
+is used.  Please, credit me where due if you do use it as a base.
+
+Authors MAY use resources in this wad provided you give this wad a mention in 
+your text file and more importantly that you give the original author credit 
+where applicable.
+
+You may distrubute this file in any format (CD ROM, BBS, whatever) provided
+that you include all files included in your distribution (as in, this text 
+file and the wad) and it is not sold or traded for anything.  Same goes for 
+wads using resources from it.
+
+Where to Get this wad:
+
+http://action.mancubus.net
+
+     
+===========================
+
+Questions, comments, complaints, flames, and so on, don't hesitate to mail me: 
+							action@mancubus.net
+
+===========================

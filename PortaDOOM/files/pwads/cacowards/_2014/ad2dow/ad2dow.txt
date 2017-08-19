@@ -1,0 +1,114 @@
+=====================================================================
+This wad Requires action2.wad to play
+=====================================================================
+
+Date Completed         : 12/26/13
+Title                  : Urban Brawl: Dead of Winter
+Filename               : ad2dow.wad
+Other Works            : Action Doom
+Author                 : "Scuba" Stephen Browning
+
+Email Address          : urbanbrawl@gmail.com
+
+Description            : Dead of Winter is a 2 level prequel to the
+			 events of Action Doom 2.
+
+Story                  : Before he was kickin' butt to save his
+			 daughter, the hero of Urban Brawl was also
+			 kickin' butt as a police officer. Play along
+			 as he retells the story of his first
+			 detective case.
+
+      ===============================================================
+
+ * Play Information *
+
+Game                    : Zdoom version 2.7.1
+Levels                  : 2 New levels
+Single Player           : Yes 
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+
+New Sounds              : Yes
+New Graphics            : Yes
+New Music:              : Yes
+
+      ===============================================================
+
+ * Installation *
+
+Put the files in the same folder as Action DOom 2 and run the
+ad2dow.wad file with action2.wad
+
+      ===============================================================
+
+ * Credits *
+
+Action Team
+-------------------
+
+- Isle			: Was forced to do the scripting.
+- Manc			: With the help of his lovely lady, Manc
+			  returns as the voice of Action Doom Hero
+- Ralphis		: Wrote all the original music
+
+Additional Credits
+-------------------
+
+- Nash			: Nashgore(tm) Blood Decorate effect
+- Little White Mouse	: Hellhound shockwave
+- Xaser			: Ejecting bullet casing effect
+- id Software           : Creating Doom
+- Randy Heit		: Creating the ZDooM engine
+- Graf Zahl		: GZDoom compatibility and decorate repair
+- Esselfortium		: Apparently I stole artwork from btsx and
+			  didn't even realize it was in the wad.
+
+      ===============================================================
+
+ * Construction *
+
+Base                    : From Scratch
+
+Editor(s) used          : Wintex, Doom Builder, Paint Shop Pro 6, 
+			  Photoshop 7, WadAuthor, XWE and 
+			  Pencil/Ink/Paper
+			  
+Build time              : July '08 - December '13
+
+Fixes			: None
+			  
+Known Bugs              : Lots of Skybox issues if you go inside 
+			  buildings. Sometiems you miss the chopper.
+
+      ===============================================================
+      
+ * Copyright / Permissions *
+
+Authors MAY use the maps in this wad as a base for additional maps.
+Provided with this file is a changelog that tells all objects changed
+so you know what is used.  Please, credit me where due if you do use
+it as a base.
+
+Authors MAY use graphical resources in this wad provided you give me
+credit in your text file.
+
+Authors MAY NOT use music and voices from this wad.
+
+You MAY distrubute the main file, action2.wad, in any format 
+(CD ROM, BBS, whatever) provided that you include all files included
+in your distribution and it is not sold or traded for anything.
+
+Where to Get this wad:
+
+http://action.mancubus.net
+http://www.doomworld.com/idgames
+
+
+===========================
+
+Questions, comments, complaints... 
+					urbanbrawl@gmail.com
+
+===========================

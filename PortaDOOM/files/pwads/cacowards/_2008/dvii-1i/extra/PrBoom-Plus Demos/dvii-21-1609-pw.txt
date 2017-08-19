@@ -1,0 +1,54 @@
+PWAD - DVII.WAD
+FILE - dvii-21-1609-pw.lmp
+Type - UV Max
+Map  - 21
+Port - PrBoom+ 2.4.8.1
+Plr  - Belial
+
+Kills   - 103%
+Items   - 32%
+Secrets - 100%
+
+Time    - 16:09
+
+Description:
+
+Damn there sure are plenty of cathedrals in hell :P This one may be less epic
+than the one from the original DV when it comes to the sheer size of the main
+hall, but it sure is a lot more complex in both layout and architecture. This
+is the only map that can rival map19 in terms of complexity and connectivity,
+but it does so in a completely different fashion. The majority of the areas are
+instantly accessible even if you don't use the magical shortcut intended for demo
+recording, which leaves most of the route choices in the hands of the player.
+There are no limits on progressing through the map in whichever way you please
+since the only thing you are forced to do is getting two keys to open up the exit.
+All of this can be summed up in one sentence: coming up with a good route is a 
+nightmare on par with dv02.
+
+Now this is where the brief description of the route was supposed to go, but for
+this map it would be anything but brief so I'll just give some general thoughts here.
+You get the BFG right away so use it as often as you can, but keep in mind that
+outside the central section ammo for it will be scarce so make sure you make the
+shots count and keep a healthy supply of rockets to fall back on in case your cells
+start running low. Getting the main fight over with quickly will let you use the
+supplies placed there to safely restock at each visit. If you play it right you 
+should have one spare invulnerability, so use that to your advantage in whichever
+way you see fit. There's nothing more annoying that can happen in this map than 
+getting blocked by lost souls on the way to the afrit secret at the manc curve. 
+Afrit attacks hurt like hell :P The library is the easiest section of the map so I
+leave it for last. Finally, always make sure the secrets you visit get triggered.
+
+This demo is a second exit with some route improvements over the previous demo.
+I used to start with the west wing and get all the way through to the cyber tower
+section before doing the blue key fight and activating the main fight, using the
+time when the monsters keep pouring in to clear out part of the library, leaving
+the secret room with the cacos for later. I didn't like how I couldn't time it
+right with the barriers lowering in the main hall so I looked for other plays
+that would be more appropriate. I found that getting through some parts of the
+west wing take me almost as long as it takes the barriers to lower, letting me
+cut down the time spent on spamming rockets. I also deal with the manc curve
+more efficiently in this run, putting the teleporter in one of the pillars to
+some good use.
+
+Przemyslaw "Belial" Woda
+nowylepszyszatan@wp.pl

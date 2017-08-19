@@ -1,0 +1,88 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : 
+Advanced engine needed  : GZDoom 1.1.06+
+Primary purpose         : Single player only
+===========================================================================
+Title                   : Cold as Hell: Special Edition
+Filename                : cah_se.pk3 (Special Edition), cah_reducedFX.pk3
+Release date            : 11/21/08
+Author                  : Jon "JonnyFive" Washburn
+Email Address           : Jon.R.Washburn@gmail.com
+Other Files By Author   : Sacrifice in Blood, the Corrupt Priest, weatherFX, the original version of Cold as Hell
+Misc. Author Info       : 
+
+Description             : A total conversion set in the mid-50's on a weapons research base deep in the heart of
+			Greenland. You thought this would be a nice boring way to finish your career as a Marine. 
+
+			You thought wrong. (see cah_manual.pdf for the full story)
+
+Important Notes         : There are a number of new keys added that need to be bound before playing.
+
+			If the snow is slowing your computer, you can toggle it (default F12).
+
+			If you have a computer that is borderline capable of running GZDoom, you can try loading
+			cah_reducedFX.pk3 after cah_se.pk3 to run CaH without some of the more resource-hog
+			effects (namely dynamic projectile lights and the new flamethrower effect).
+
+			This mod is NOT intended to run in resolutions lower than 640 x 480.
+
+Additional Credits to   : See cah_credits.txt for full credits
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : Yes (DECORATE lump, ACS scripts, etc. etc.)
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : GZDoom with DOOM2.WAD
+Map #                   : MAP01 - MAP16 + MAP31
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About 1 year to make the original, plus another 4 months to update and enhance it.
+Editor(s) used          : Zeth, XWE, SlumpED, Doom Builder, DeHackED.
+Resource Editors	: Photoshop, Blender, Milkshape, LithUnwrap, Audacity, EditPad, Cakewalk
+Known Bugs              : Hopefully none.
+May Not Run With        : Any version of GZDoom prior to those listed.
+Note			: Technically it will RUN with GZDoom 1.1.04+, but there are numerous reported problems with 
+			  1.1.04 and 1.1.05, so download the latest release of GZDoom (1.1.06 at the time of writing).
+Tested With             : GZDoom 1.1.04 (minimal), GZDoom 1.1.05 (serious texture errors), GZDoom 1.1.06
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or reuse with proper attribution.
+Permissions have been obtained from original authors for any of their resources modified 
+or included in this file.
+
+You MAY distribute this file, provided you include this text file as
+well as cah_credits.txt, with no modifications.  You may distribute
+this file in any electronic format (BBS, Diskette, CD, etc) as long as 
+you include this file and cah_credits.txt intact.
+I have received permission from the original authors of any modified
+or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: 
+FTP sites:
+

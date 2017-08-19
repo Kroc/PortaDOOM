@@ -1,0 +1,6 @@
+This is for 1994 tune-up challenge project
+
+Author: Masayan
+E-mail: masayan_d00m@yahoo.co.jp
+
+Base  : BCS01.wad (http://www.doomworld.com/idgames/index.php?id=1630)

@@ -1,0 +1,81 @@
+PortaDOOM Alpha 3
+========================================================================================================================
+[ ] Fix build (git-archive won't work, should just use robocopy)
+[ ] dosmag : BUG: whitespace-only lines being skipped?
+[X] dosmag : Better warning box handling, allow multiple-lines / improve syntax
+[ ] dosmag : Themes
+[X] dosmag : Bullet point (remove current use of ` - |...`)
+[ ] dosmag : Right-alignment, whole line. Consider right alignment from middle of line
+[ ] dosmag : BUG: word-wrapping is one char short
+[X] dosmag : Add `PAGE` action to change to a page number in the current set
+[X] dosmag : bug with closing brackets; see Cacoward 2016 Espi page
+[X] dosmag : bug with breadcrumb showing page number!?
+[X] dosmag : speech-marks should be word-boundaries (allow `"_Romero_ style"`)
+[X] dosmag : allow exclamation / question mark as character-boundary, e.g. `_name_!`
+[ ] Finish Cacowards 2015 (DoomRL Arsenal)
+ - [ ] Does DoomRL Arsenal require g/zdoom-dev?
+ - [ ] Keybindings!
+[ ] Cacowards 2016
+[ ] File stuff from Cacowards into TCs/Megawads/Maps/Vanilla &c.
+[ ] N64 DOOM64.WAD detection / warning
+[X] Combine edit-default scripts into one and change them to delete the user-config instead
+[X] PSX Lost Levels
+[ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
+
+PortaDOOM Alpha 4
+========================================================================================================================
+
+PortaDOOM 1.0
+========================================================================================================================
+[ ] dosmag : Ability for breadcrumb to differ from history?
+    i.e. go from one WAD page to another, but not nest another level
+    this is needed if we're going to interlink WAD references in the cacowards
+[ ] Patch IWADs to be consistent?
+[ ] Include Fluidsynth? http://zdoom.org/Download
+[ ] All Cacowards
+[ ] DOOM RPG (J2ME) 1 & 2?
+[ ] Hacx / Harmony / Action DOOM
+[ ] Heretic
+ - [ ] Shareware support in doom.bat
+[ ] Hexen
+ - [ ] Shareware support in doom.bat (including HEXDD)
+[ ] Strife
+ - [ ] shareware support in doom.bat
+[ ] Action DOOM / Action DOOM 2 (-- part of Cacowards)
+[ ] Wolfenstein-3D & WolfenDoom
+[ ] Doomseeker for online play
+[ ] Secrets lists for commercial games
+
+Unknown
+========================================================================================================================
+[ ] Brutal DOOM 64? (in flux, save for later?)
+[ ] Console-Exclusive levels
+[ ] SynthDOOM (and other soundtracks)
+[ ] Alternate Plutonia MIDI
+
+PortaDOOM Alpha 2
+========================================================================================================================
+[X] doom.bat : Detect x86/x64 and launch appropriate engine
+[X] doom.bat : Use different skill names for DOOM 64 EX
+[X] doom.bat : Use shareware DOOM if registered missing and no PWAD given
+[X] doom.bat : search for Steam / GOG IWADs (requires registry access)
+ - [X] handle non-default Steam install libraries
+ - [X] handle PWADs -- NERVE.WAD and the Master Levels
+[X] Finish Master Levels
+[X] DOOM 64 page
+[X] PSX DOOM config (can be run with standard GZDoom now)
+[X] FreeDOOM page
+[X] Stub out incomplete pages:
+ - [X] "Coming soon" note for Wolf / Heretic / Hexen / Strife &c.
+ - [X] Megawads / TCs / Vanilla pages need warnings for incompleteness
+ - [X] Stub for Cacowards < 2015
+[X] doom.bat : Default config support
+ -  [X] doom.bat : handle chocolate-doom's twin config files
+ -  [X] Default configs set for all engines
+        (excluding Heretic / Hexen / Strife)
+[X] doom.bat : Set screen resolution
+    http://superuser.com/questions/270718/get-display-resolution-from-windows-command-line
+[X] DOOM 64 EX
+[X] dosmag: Remember page scroll in history
+[X] doom.bat : Ask for skill level when warping to level (Master Levels for example)
+[X] Warnings on pages for commercial WADs

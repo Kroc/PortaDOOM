@@ -1,0 +1,1027 @@
+         _          _            _             _      
+        /\ \       /\ \        /\ \           /\ \    
+       /  \ \     /  \ \      /  \ \         /  \ \   
+      / /\ \ \   / /\ \ \    / /\ \ \       / /\ \ \  
+     / / /\ \_\ / / /\ \_\  / / /\ \ \     / / /\ \_\ 
+    / / /_/ / // / /_/ / / / / /  \ \_\   / / /_/ / / 
+   / / /__\/ // / /__\/ / / / /    \/_/  / / /__\/ /  
+  / / /_____// / /_____/ / / /          / / /_____/   
+ / / /      / / /\ \ \  / / /________  / / /          
+/ / /      / / /  \ \ \/ / /_________\/ / /           
+\/_/       \/_/    \_\/\/____________/\/_/            
+
+  *******************************************
+  *PLUTONIA***REVISITED***COMMUNITY**PROJECT*
+  *******************************************
+
+
+--------------
+C O N T E N T:
+--------------
+
+1.  INTRODUCTION            4.  LEVEL INFORMATION
+                                
+    1.1 Compatibility           4.1 Map List
+    1.2 Resources               4.2 Map Info
+    1.3 MIDI Music
+                            5.  BUGS
+
+2.  STORY
+                            6.  AUTHOR INFORMATION
+
+3.  INSTALLATION                6.1 Contributors
+                                6.2 Credits/Thanks
+
+----------------
+[1] INTRODUCTION
+----------------
+
+[1.1 Compatibility]
+
+  Plutonia Revisited is designed to be vanilla compatible so it should run
+  virtually, if not, on every port. Plutonia.wad is a definite prerequisite.
+
+[1.2 Resources]
+ 
+   - Additional textures and graphics were made by Thomas van der Velden
+
+
+[1.3 Midi Music]
+
+   ** You may use these Midi tracks provided that you give credit to the
+   composer and the project**
+
+   All other music are from other sources
+  (Check map info for more details)
+
+---------
+[2] STORY
+---------
+
+  After destroying the weird looking face in the end of your last crusade against hell, you sit back and
+  relax, gloating over all the steaming carcasses you've produced. You did not know, however, that this
+  was just a gambit, a distraction. The demonic forces have posessed the ethereal architects of reality
+  and bent them to further warp your world for the past six months.
+
+  You, unaware of this, suddenly see a portal opening. Thinking it was an exit that would inevitably lead
+  you home, you jump into it without hesitation. Suddenly, you end up in some kind of cyber-reality, and
+  you feel a strong deja vu. Is hell just recycling ideas nowadays? 
+
+  Unfortunately, the gatekeeper decided to move on from his usual thirst for universal domination
+  and settled for a personal vendetta against you. Why? Well, you've kicked its arse several times so
+  there's no question that it'd like to see you gone. Gatekeeper bound his reality weaving lackeys to
+  create your own personalized hell. You grind your teeth as a result of aggravation that you cannot shake,
+  like a splinter in one of the small crevices within your body. You can only hope that killing yet another
+  flat bastard at the end of this road will mean freedom. But hey, what can you do? The last several times
+  has let you down, so what are the chances it will happen again? You think to yourself, 
+                                                                            "This time it's personal."
+
+
+----------------
+[3] INSTALLATION
+----------------
+
+  Simply either drag drop prcp.wad onto a source port executable (i.e. Zdoom or Prboom).
+  Alternatively you can type into the command line:
+
+  " chocolate-doom -iwad plutonia.wad -file prcp.wad "
+  
+  If you aren't using chocolate-doom, replace chocolate-doom with the name of your source port of choice.
+
+  *Copied from Plutonia2 txt info* Engines without internal DEHACKED support that
+   DO support DeHackEd (such as Chocolate Doom or the old PrBoom v2.02) need the
+   -deh parameter to load the DeHackEd patch (i.e -deh prcp.deh).
+
+  Engines that do not support DeHackEd (including Doom95, that is included
+  in various releases of Final DOOM) can also run the add-on, but without any
+  in-game story texts.
+
+
+---------------------
+[4] LEVEL INFORMATION
+---------------------
+[4.1 Map List]
+
+  MAP01: Stonewall
+  MAP02: Temple of Cetza
+  MAP03: Escape from Ghost Town
+  MAP04: Emerald Pools
+  MAP05: That Flooded Place
+  MAP06: Stony Halls
+  MAP07: Caughtisle
+  MAP08: Rules of Death
+  MAP09: Ruined Kingdom
+  MAP10: Bloodbath
+  MAP11: Will you be my NME?
+
+  MAP12: Velocity
+  MAP13: Slaughter Zone
+  MAP14: Undertaker
+  MAP15: Helix
+  MAP16: Gambit
+  MAP17: The Unholy Crypt
+  MAP18: Phantom Silence
+  MAP19: Venom
+  MAP20: Sinister Daybreak
+
+  MAP21: Asmodeus' Circle
+  MAP22: Suicide Mission
+  MAP23: Necrogenesis
+  MAP24: Terra Incognita
+  MAP25: Wicked Garden
+  MAP26: Poison Ivy III
+  MAP27: Planned Overload
+  MAP28: Dance with the Devil
+  MAP29: Atlatl
+  MAP30: In the Eye of the Beholder
+
+  MAP31: Cyberdemon Vertigo
+  MAP32: Have @ It
+
+
+
+[4.2 Map Info]
+
+-=-=-=--=-=|Map01|=-=-=--=-=-
+Level name          : Stonewall
+Author(s)           : Joshy
+Build time          : A week on and off
+editor(s) used      : Doombuilder 2
+                      
+                      
+Music track         : Original Project midi by PRIMEVAL.                    
+Bugs                : None
+Inspiration         : First map of plutonia1/2.
+Authors comments    : This was pretty much the first time I attempted to
+                      map in strictly vanilla only. The results turned out
+                      to be very pleasing! I wanted to achieve a similar
+                      non-linear layout like in Congo and this was how I'd
+                      imagine the first map to be.
+
+-=-=-=--=-=|Map02|=-=-=--=-=-
+Level name          : Temple of Cetza 
+Author(s)           : Paul Corfiatis (pcorf)
+Build time          : 1 Week
+editor(s) used      : DoomBuilder 1.68
+                      
+                      
+Music track         : MAP08 from Doom 2   
+Bugs                : None
+Inspiration         : 
+Authors comments    : MAP03 for the Plutonia Revisited Community
+                      Project. Medium difficulty. Save often or you
+	              will be slaughtered.
+
+-=-=-=--=-=|Map03|=-=-=--=-=-
+Level name          : Escape from the Ghost Town
+Author(s)           : UltimateLorenzo
+Build time          : Two months
+editor(s) used      : Doom Builder
+Music track         : E1M9
+Bugs                : None. Mail us if any
+Inspiration         : The original Plutonia map 05.
+Authors comments    : The original "Ghost Town" is a very fun map, full of action and enemies.
+                      I was especially inspired by the music, my favourite DooM track. I hope
+                      my map has the same feeling of the original.
+
+-=-=-=--=-=|Map04|=-=-=--=-=-
+Level name          : Emerald Pools
+Author(s)           : C30N9 and Joshy
+Build time          : 1 day
+editor(s) used      : Doombuilder 2, XWE
+
+
+Music track         : "Demons on the Prowl" a remix of Demons on the Prey by PRIMEVAL                   
+Bugs                : None
+Inspiration         : MAP16: The Omen from original Plutonia
+Authors comments    : With inspiration from The Omen's layout, Emerald Pools
+                      is named for having several nukage pools. Sometimes
+                      it is very hard. Expect some real traps! 
+                      I'd like to thank Joshy for detailing and PRIMEVAL for the music.
+                      
+                      Joshy: I offered to clean up and fix up the map for C30N9 as it was
+                      kinda behind in terms of aesthetics. It's not the best but I think it's
+                      a cute map and certainly offers plutonic nostaglia with it's simplistic
+                      design and heavy onslaughts of monsters.
+
+-=-=-=--=-=|Map05|=-=-=--=-=-
+Level name          : That Flooded Place
+Author(s)           : Keeper of Jericho
+Build time          : Couple of weeks
+editor(s) used      : Doom Builder 1
+
+
+Music track         : Dark Halls (from Doom 1 soundtrack)
+Bugs                : Yellow key area may cause that visplane overflow.
+Inspiration         : Congo and Well of Souls
+Authors comments    : This map almost mapped itself. I had no real plan in mind when I started mapping,
+                      aside from the idea of doing a non-linear map and allowing different paths the
+                      player could take while hunting for the keys. It's a small map, but I'm quite
+                      pleased with the end result.
+
+
+-=-=-=--=-=|Map06|=-=-=--=-=-
+Level name          : Stony Halls
+Author(s)           : Matt Tropiano
+Build time          : A week or two (back and forth in testing).
+editor(s) used      : Doom Builder 2, Slumped, MIDI2MUS
+                      
+                      
+Music track         : Custom track by PRIMEVAL   
+Bugs                : None that I can find.
+Inspiration         : Inspired heavily from the early maps in Plutonia. Non-linear, viney, and stony.
+Authors comments    : ...
+
+-=-=-=--=-=|Map07|=-=-=--=-=-
+Level name          : Caughtisle
+Author(s)           : Joshy
+Build time          : Two days
+editor(s) used      : Doombuilder2
+                      
+                      
+Music track         : Original Project Music by PRIMEVAL   
+Bugs                : HOMs here and there. Couldn't really find an ideal way to fix them rather
+                      than screw up the layout and details.
+Inspiration         : Plutonia1/2's map07 and Speed of Doom Map07 too.
+Authors comments    : Was trying to think of a way to change the gameplay a bit rather than
+                      merely mancubuses and arachnatrons, so I put two cybers that needs to
+                      be killed before the player can move on. Pretty cool, hey? Was aiming
+                      to have a similar outdoor kind of theme with moats and whatnot like
+                      the original caughtyard map but in the end, I was getting bored with
+                      it. Made it an island instead. It was easier to do and not to mention,
+                      looks pretty nice too! All worked out well in the end.
+
+-=-=-=--=-=|Map08|=-=-=--=-=-
+Level name          : Rules of Death
+Author(s)           : franckFRAG
+Build time          : A few months
+editor(s) used      : Doom Builder 1
+
+
+Music track         : Original Project Music by PRIMEVAL
+Bugs                : A few misalignments textures
+Inspiration         : Many maps of The Plutonia Experiment, as the map 03;
+                      map 12; map 13; map 14; map16 and the map 17.
+Authors comments    : I wanted to make a classic map, by incorporating certains aspects of the
+                      first one Plutonia, I also used only the textures of The Plutonia Experiment,
+                      for underlined the nostalgic atmosphere. I am used of to make in boom format,
+                      it's interesting to work with the constraints of Vanilla, I had to learn to
+                      avoid how the VPOs.
+
+-=-=-=--=-=|Map09|=-=-=--=-=-
+Level name          : Ruined Kingdom
+Author(s)           : Tatsurd-cacocaco
+Build time          : 1 Month
+editor(s) used      : Doom Builder 2 
+Music               : "Crypt" from Hexen
+Bugs                : Some HOMs under vanilla doom
+
+Inspiration         : Plutonia Map08 "Realm", Plutonia Map02 "Well of Souls"
+Authors comments    : This is my second map for the project. I made this map as a remake 
+                      of original Plutonia map 08. Also, I made the area outside the 
+                      castle and the area after blue key's door while considering original 
+                      Plutonia map 02. Judging from the tendency of Plutonia's maps, my 
+                      first map (Map 16) is a little longer. Therefore, I aimed to make the 
+                      same scale as original Plutonia map 08. However, I added many elements 
+                      from Plutonia too much, so this map is a little longer after all.
+                      I was really annoyed at VPOs and spent many hours to fix them in the
+                      huge area after blue key's door. The main cause was that I couldn't 
+                      delete some details by compromise easily. In the end, I was overcome
+                      by VPOs and deleted something. However, I really like this part.
+
+-=-=-=--=-=|Map10|=-=-=--=-=-
+Level name          : Bloodbath
+Author(s)           : JC
+Build time          : One week
+editor(s) used      : Doom Builder v1.68.0.385
+                      
+                      
+Music track         : Custom Track by PRIMEVAL  
+Bugs                : several HOMs in the first hall and outdoor arena in the end
+Inspiration         : Plutonia Map 4, 6 and 14
+Authors comments    : This is my first contribution in a megawad. Making a vanilla compatible wad
+                      is not easy; always check if there are not too many details so that there won't
+                      be HOMs =)
+		      The map is quite difficult for the first episode so I hope you will reach the end =p
+
+-=-=-=--=-=|Map11|=-=-=--=-=-
+Level name         : Will You Be My NME?
+Author(s)          : Darkwave0000
+Build time         : 1 month
+Editor(s) used     : Doombuilder 2
+
+
+Music track        : URmyNME.mid :: Original Project MIDI by Darkwave0000
+Bugs               : Savegame Buffer Overflow
+Map inspiration    : PL2.WAD MAP11 "Arch-Violence" by Gusta and T.V.
+Music inspiration  : PL2.WAD MAP11 "Become the Hunted" by James Paddock
+Authors comments   : This is a map which is often using Arch-Viles and Revenants.
+                     It is not having too much difficulty nonetheless.
+                     It is enjoyable hopefully. ^_^
+
+-=-=-=--=-=|Map12|=-=-=--=-=-
+Level name          : Velocity
+Author(s)           : K!r4
+Build time          : 4 or 5 evenings, I'm not sure...
+editor(s) used      : Doom Builder 2
+                      
+                      
+Music track         : "Facing the Spider" from Doom   
+Bugs                : Where? Thanks to hawkwind BTW.
+Inspiration         : Plutonia map 12, Plutonia 2 map 15
+Authors comments    : Well, I didn't make a map since 2 years before this one. Fortunately
+                      Belial and dew gave me some awesome feedback that reminded me how to
+                      make a solid gameplay, as well as new elements to think about for my
+                      next projects.
+                      Basically it's a remake of Plutonia map 12 called "Speed", early versions
+                      were more like my map 15 for Plutonia 2 though. Howewer it has evolved
+                      into an acrobatic and brutal map just as "Speed" was instead of being
+                      a quick "run and gun".
+
+-=-=-=--=-=|Map13|=-=-=--=-=-
+Level name          : Slaughter Zone
+Author(s)           : Paul Corfiatis (pcorf)
+Build time          : A few days
+editor(s) used      : DoomBuilder 1.68
+                      
+                      
+Music track         : E3M1 from Doom 1   
+Bugs                : 
+Inspiration         : 
+Authors comments    : MAP19 for the Plutonia Revisited Community
+                      Project. Fairly hard in difficulty. Save often or you
+		      will be slaughtered.
+
+-=-=-=--=-=|Map14|=-=-=--=-=-
+Level name          : Undertaker
+Author(s)           : James "Phobus" Cresswell
+Build time          : A few days spread over a month
+editor(s) used      : Doom Builder 1.67
+
+
+Music track         : Original MIDI track by stewboy
+Bugs                : None Known
+Inspiration         : None
+Authors comments    : This map formed around an idea for a trap (at the start)... which then had
+                      to be toned down twice before it was possible to survive. The rest of the map
+                      was designed to be compact and violent - with the dark areas being the safest.
+
+-=-=-=--=-=|Map15|=-=-=--=-=-
+Level name 	    : Enigma Helix
+Author(s)           : Xaser Acheron
+Build time          : Four doggamn months. I'm fast.
+editor(s) used      : Doom Builder 2, chocorenderlimits.exe, SLumpEd
+
+
+Music track         : "Dread", a custom track I wrote for something unrelated.
+Bugs                : Savegame buffer overrun. Noclipping around is likely to result in a VPO or two.
+Inspiration         : Map18 (Neurosphere) and various Plutonia bits.
+Author's comments   : Large-ish map revolving around a massive spiraling structure set in a rugged bloody	
+ 		      landscape. Plenty of buildings and interconnected areas, all of which sport a hectic
+                      gameplay style. The centerpiece and namesake of this map is shrouded in mystery (hence
+                      the name), but is thought to have been designed by a demonically posessed architect to
+                      be some sort of demonic shrine. Its corrupt influence has not only attracted demon
+                      presence but also decayed the landscape surrounding it, a fact the numerous dead trees
+                      and rivers of bloody water are likely to reflect. Rumors exist that the shrine houses a
+                      hidden portal to an unknown dimension, but one would have to be a fool to believe such a
+                      myth (if it weren't for the slot this map happens to hold, of course). The author also
+                      muses that this might just be the realization of the SHiTWADS Spiral Tower remake he's
+                      always wanted to do.
+
+-=-=-=--=-=|Map16|=-=-=--=-=-
+Level name          : Gambit
+Author(s)           : Matt Tropiano
+Build time          : A week or so.
+Editor(s) used      : Doom Builder 2, Slumped, MIDI2MUS
+Music track         : Custom track by PRIMEVAL.
+Bugs                : None, as far as I and the other testers know.
+Inspiration         : Patience is its own reward, and players shouldn't be
+                      so hasty to run into battles that they cannot hope to
+                      win. My goal for this was to create different types of
+                      obstacles that would prevent their progress other than
+                      a missing key or elusive switch - in this case, it was
+                      firepower. In this map, the player will have to find
+                      better weaponry, wait out monster infighting, and run
+                      from seemingly unstoppable hordes in order to gain
+                      advantages in battle.
+
+-=-=-=--=-=|Map17|=-=-=--=-=-
+Level name          : The Unholy Crypt
+Author(s)           : evocalvin
+Build time          : about 2 months (including testing)
+editor(s) used      : Doombuilder 2
+Music track         : 'Donna to the Rescue' (E3M2)
+Bugs                : Various texture misalignment
+Inspiration         : Plutonia Map 13
+Authors comments    : This is my first for the PRCP.
+                      It's the remake of the plutiona map13.
+                      More details and bigger,
+                      also slightly harder than original map.
+                      I hope you like the map. Have fun !!!
+
+-=-=-=--=-=|Map18|=-=-=--=-=-
+Level name          : Phantom Silence
+Author(s)           : evocalvin
+Build time          : about 1 month (including testing)
+editor(s) used      : Doombuilder 2
+Music track         : Plutonia 2 map11 "Become the Hunted" by James Paddock
+Bugs                : Various texture misalignment, slight HOMs on somewhere
+Inspiration         : sunder map5,plutonia map 3&11, Death-Destiny's map
+Authors comments    : A map combines wiht the cliff / lava and mini arch-vile maze.
+		      some nasty traps await you 
+
+-=-=-=--=-=|Map19|=-=-=--=-=-
+Level name          : Venom
+Author(s)           : Mattias Johansson (Waverider)
+Build time          : About a month
+editor(s) used      : Doombuilder 2
+                      
+                      
+Music track         : Original MIDI track by PRIMEVAL  
+Bugs                : It's not possible to save the game under vanilla/chocolate, the map is too big for that.
+                      In all other ways, the map is fully vanilla and chocolate compatible, and will function perfectly.
+
+                      Some texture alignment flaws on a couple of STONE6 textures. Also a few minor slime trails.
+Inspiration         : Plutonia 1 Map12, 19, 24 and 27. Doom 1 E2M5 & E3M7. HR1 Map16 & 24. AV Map10.
+Authors comments    : A tech base / cave complex that's partly covered in blood.
+
+-=-=-=--=-=|Map20|=-=-=--=-=-
+Level name          : Sinister Daybreak
+Author(s)           : Tatsurd-cacocaco
+Build time          : 10 Days
+editor(s) used      : Doom Builder 2 
+Music track         : "Ballad of the Demons" by PRIMEVAL
+Bugs                : Small HOMs under vanilla doom
+
+Inspiration         : Plutonia Map15 "The Twilight", Plutonia Map04 "Caged"
+Authors comments    : I made this map as a remake of original Plutonia map 15.
+                      Especially, I was inspired by the start room which is adjacent 
+                      to the exit room, the T-junction against the red sky, and areas 
+                      filled by chaingunners. At first, I made a long and flat passage
+                      to the T-junction, so you could see T-junction in the near the 
+                      start area, but this idea was hindered by terrible HOMs under 
+                      vanilla doom. As a result, I added two doors and stairs among 
+                      the passage. Also, I decided to add some elements of original 
+                      Plutonia map 04 which is a little similar to Plutonia map 15.
+                      The elements were mainly used in yellow key part, and I made 
+                      a trap in the blue key part from the yellow key room in original 
+                      map 04. You obtain the blue key and the yellow key and you push 
+                      some switches in an area is accessible by these keys. After that, 
+                      a large area appears in the front of the T-junction like original 
+                      map 15. What do you encounter in the area? Play it yourself!
+
+                      PRIMEVAL, he did a remix of "Waltz of the Demons" for this map.
+                      Really thanks for the cool music!
+
+-=-=-=--=-=|Map21|=-=-=--=-=-
+Level name          : Asmodeus' Circle
+Author(s)           : Keeper of Jericho/Belial
+Build time          : Couple of weeks
+editor(s) used      : Doom Builder 1
+
+
+Music track         : Endgame (the same music as "Slayer")
+Bugs                : Some areas might still cause a visplane overflow.
+Inspiration         : "Slayer" from the original Plutonia
+Authors comments    : This map is a tribute to the original "Slayer" from Plutonia, as
+                      it's by far one of my favourite maps ever. A lot of the architecture
+                      I made had to change to make this map vanilla compatible. Special
+                      thanks goes to Belial for that, for he really helped me making this
+                      map a vanilla map. Maybe I'll release the original map seperately
+                      someday, you'd be suprised by the differences. Still, I'm happy with
+                      the end result released here, and I think it's a good "Slayer" tribute,
+                      if I do say so myself.
+
+-=-=-=--=-=|Map22|=-=-=--=-=-
+Level name          : Suicide Mission
+Author(s)           : Michael Jan Krizik (Valkiriforce)
+Build time          : 4 days, a little bit each day.
+editor(s) used      : Doom Builder
+                           
+                       
+Music track         : Mission Possible by PRIMEVAL
+Bugs                : None that I know of.
+Inspiration         : Impossible Mission (hence title reference)
+Authors comments    : I'm actually surprised at my effort on this map. I've never really had
+                      to stay within the limits of chocolate doom before but I managed well
+                      within the limits. I thank God for all the wonderful ideas that came
+                      to me right away as I got started. :) Originally the starting area
+                      looked a lot like the end area but I changed it around due to chocolate
+                      doom's limitation of visplanes; but I'm glad I changed it now cause both
+                      areas feel original in their own way now.
+
+
+-=-=-=--=-=|Map23|=-=-=--=-=-
+Level name          : Necrogenesis
+Author              : William Huber
+Build time          : ~4 days
+Editor used         : Doom Builder 1.68
+                      
+                      
+Music track         : "Deep into the Code" by Bobby Prince, 
+			from the original Doom
+Bugs                : Small HOMs here and there maybe, hopefully all the sources of 
+			VPOs have been nailed
+Inspiration         : Plutonia map 27, Death-Destiny's "Satan's Angel",
+			Necromantic Thirst map 24
+			The blue key area is a tribute to Plutonia map 06.
+Author's comments   : Felt like doing a map for Plutonia Revisited. The cool
+			new status bar and menus were crying for green-themed
+			maps, so I tried this grey-green combo.
+
+			My first doom2.exe-compatible map. Probably the last one
+			also, unless I make something for Whoo's TNT 2, don't know
+			yet.
+			There's one cool thing about making vanilla maps : at
+			least you don't spend hours on detailing. But otherwise
+			I'm not a big fan of working under such limitations,
+			resource and engine-wise.
+
+			The overall design was much more open during the beta 
+			stages, but sadly I had to create and enlarge those rocky 
+			pillars in order to avoid massive VPOs and HOMs.
+
+			"Necrogenesis" is actually a nod to both Plutonia map
+			14 and to my own map 24 in Necromantic Thirst, which also
+			features a large greenish cavern filled with venom.
+
+-=-=-=--=-=|Map24|=-=-=--=-=-
+Level name          : Terra Incognita
+Author(s)           : 4mer
+Build time          : 4 weeks on and off
+editor(s) used      : Doom Builder 2, chocorenderlimits.exe
+
+
+Music track         : Unused Doom Music 42 "Junkhead"
+Bugs                : A few homs hopefully not noticeable.
+Inspiration         : Plutonia Map24, Map27. Memento Mori Map 24. Hell Revealed Map 24.
+Authors comments    : Thanks to the testers whose suggestions helped improve the map and spice it up a bit.
+
+
+-=-=-=--=-=|Map25|=-=-=--=-=-
+Level name          : Wicked Garden
+Author(s)           : Xaser Acheron
+Build time          : A helluva lot less time than Helix took.
+editor(s) used      : Doom Builder 2, chocorenderlimits.exe, SLumpEd
+                      
+                      
+Music track         : "After All is Gone" by Fisk
+Bugs                : Couple of seg overflows if you stand in the right spots.
+Inspiration         : Parts of Helix (how conceited) & Malcolm Sailor's maps for gameplay style.
+Author's comments   : Give a demon a few seeds and a green thumb (preferably severed), and this
+                      monstrous pile of weeds and not-quite strawberry juice is what's likely to
+                      result. The only way past this mess is through, so try not to get caught up
+                      in any of the woodwork or swept away in the bloody pipeworks that weave through
+                      the land. It would also be a very good idea to not run out of ammo. Take that to
+                      heart, will you?
+
+-=-=-=--=-=|Map26|=-=-=--=-=-
+Level name          : Poison Ivy III
+Author(s)           : Joshy and Belial
+Build time          : Hours
+editor(s) used      : Doombuilder 2
+                      
+                      
+Music track         : Original Project midi by Stewboy  
+Bugs                : None, hopefully. Probably HOMs inevitably.
+Inspiration         : All the poison themed maps in Plutonia and Tombstone.
+                      Also Speed of Doom's Map23 and Claustrophobia 1024's Map27 (the
+                      previous maps of the poison ivy series.)
+Authors comments    : In case you are still wondering why I called it Poison Ivy again.
+                      Well, I think it sounds cool and is great for levels that are fast
+                      paced and loaded with poisonous gameplay and poison/plants/viney themed
+                      levels; my favourite kind of levels. :-) Be prepared to expect another
+                      poison ivy map to come up in the near future. ;-)
+                      
+                      This map was kinda a pain to map as my mapping methods are not
+                      so vanilla-doom friendly with VPOs coming in at various areas. Many
+                      thanks to Belial for fixing those issues up and adding a little bit
+                      of his touch to the map such as the monster teleporters in the 'sewers' room.
+		      Here's something to look for when you're playing this map: See if you can
+                      find a 'homage' within the map. ;-)
+
+-=-=-=--=-=|Map27|=-=-=--=-=-
+Level name 	    : Planned Overload
+Author(s)           : ArmouredBlood
+Build time          : Not too long for the base, maybe 15 hours, but there were 5 beta passes
+                      with lots of input from hawkwind and dew as well as other testers.
+editor(s) used      : Doombuilder 2, XWE.
+
+
+Music track         : Original Project midi by Stewboy
+Bugs                : Stand in the arachnotron alcove at the beginning and there will be a HoM
+                      in chocolate. The bfg is also 'impossible' to get without re-activing the
+                      lift in zdoom/ports that fix wallrunning.
+Inspiration         : Thinking back, it was mostly free-form and experimenting with Plutonia textures,
+                      which I hadn't used before (or since).
+Authors comments    : Besides rambling on about how long I left this sitting before getting back to
+                      it as the project finishes up, I don't really have much to say. It's definitely
+                      the best and possibly only map I've done in the plutonia style, and working
+                      within the limitations of vanilla I'd have to say one of the most constricting
+                      maps I've made. Not easy to limit yourself to 130 or so viewable sidedefs,
+                      though I made it simple enough to never worry about VPOs. But the points isn't
+                      to complain about self-imposed maplimits, it's on playing the game. So have a go
+                      at the map - and since you're reading this, try getting the arch-vile to launch
+                      you out the window. A nice little surprise awaits ;)
+
+-=-=-=--=-=|Map28|=-=-=--=-=-
+Level name	    : Dance with the Devil
+Author(s)           : Matt Tropiano
+Build time          : A couple of weeks, off and on.
+Editor(s) used      : Doom Builder 2
+
+
+Music track         : Doom E2M1
+Bugs                : None that I can find. I tried REALLY hard to keep the mancubi
+                      and cyberdemon in the lava pit area from triggering the revenant
+                      lifts. I think I got it right, this time.
+Inspiration         : Always wanted to make a map in which cyberdemons were the main
+                      focus but you couldn't outright kill them yet. I think I succeeded.
+Authors comments    : Monster infighting is the key to drawing cyberdemon fire away
+                      from the player, especially in the south and western areas.
+
+-=-=-=--=-=|Map29|=-=-=--=-=-
+Level name          : Atlatl
+Author(s)           : Mechadon
+Build time          : I'd guess about 12 hours in total spread across about two weeks for
+                      the bulk. The final version was submitted a couple of months after
+                      it was started.
+editor(s) used      : Doom Builder, SLADE3, XWE
+
+
+Music track         : "They're Going to Get You" by Robert Prince (Doom E2M4)
+Bugs                : None that I know of aside from any VPOs I may have missed.
+Inspiration         : While there isn't one particular map that inspried me, I thought about
+                      my many playthroughs of Plutonia years ago while working on the map. I
+                      also listend to a lot of Aidan Baker and Tim Hecker while working on the map.
+Authors comments    : I enjoy playing non-linear maps, so from the get-go that's what I set out to
+                      make. While I have played through Plutonia many times, I wasn't exactly
+                      familiar with that style of maps it's made up of. All I could go on was what
+                      I remembered from playing it. I think I nailed the look and feel of a
+                      Plutonia map pretty good. The difficulty is up there as well and it all comes
+                      to a hectic conclusion at the end of the map. Seeing as it's in the MAP29 slot,
+                      I hope the difficulty is appropriate enough for the second to last map. My aim
+                      was to have that same feeling of playing through the original Plutonia but with
+                      flow that's more akin to my own style than that of the Iwad. I hope you guys enjoy
+                      playing it! And I would like to thank dew for his excellent advice on gameplay as well.
+
+-=-=-=--=-=|Map30|=-=-=--=-=-
+Level name          : In the Eye of the Beholder
+Author(s)           : Thomas van der Velden
+Build time          :
+editor(s) used      : Doombuilder, XWE, GIMP2
+                                          
+
+Music track         :   
+Bugs                : none known
+Inspiration         : Doom2, Plutonia(2)
+Authors comments    : Special thanks to the testers for their useful input.
+
+-=-=-=--=-=|Map31|=-=-=--=-=-
+Level name          : Cyberdemon Vertigo
+Author(s)           : Whoo
+Build time          : >30 hours
+editor(s) used      : Doom Builder 2, r2.1.0.1322
+
+Music track         : D_TENSE from Doom 2
+Bugs                : Some HOMs may appear in the large courtyard when using choco-doom. Fixing would
+                      require an entire revamp of the area.
+Inspiration         : Intensity of Plutonia's MAP31, and listening to Bob and Doug McKenzie to help get started.
+Authors comments    : My original idea was to have 7+ cyberdemons, but that was becoming way too hard for every
+                      skill level. On easy and normal modes the cyber count is relatively low(4-5), but on hard
+                      the count starts to jump high(Around 7.) I expect the ammo/health count to be controversial,
+                      since I always got mixed opinions from testers about it. Hopefully this map won't be too
+                      cramped for cooperative, and I'm also hoping that it will be decent for deathmatch.
+
+-=-=-=--=-=|Map32|=-=-=--=-=-
+Level name          : Have @ It
+Author              : William Huber
+Build time          : ~40 hours
+Editor used         : Doom Builder 1.68
+                      
+                      
+Music track         : "I Already Know About id" by John S. Weekley ( Primeval ),
+			inspired by the SNES version of "Nobody
+			Told Me About id" by Bobby Prince
+
+			This midi was created on request by me.
+			Thanks a lot to Primeval for making it :)
+Bugs                : HOMs may appear in the two open courtyards.
+			Hopefully there's no source of VPO.
+			There might be some minor texture misalignments in
+			the caves, though.
+Inspiration         : Doom II map 01, TNT Evilution map 01,
+			2high2care ( a DM map made by Lucas "Nero" Birtles 
+			from the ZDaemon community ), Plutonia map 32,
+			Hell Revealed II map 32
+Author's comments   : Plutonia's "Go 2 It" was the first slaughtermap I played.
+			At that time, when Hell Revealed didn't exist and
+			when I was still playing with a keyboard, Go 2 It
+			was an impressive monster of a map to me.
+			"For expert marines only", heh.
+
+			Thus, I think it's an honor to be given a chance to
+			create a Go 2 It sequel. Nobody had claimed the 32th
+			slot of Plutonia Revisited so far, so it was
+			a good opportunity for me to seize.
+
+			Hopefully Have @ It will be as hard now as Go 2 It was back
+			in the day.
+
+			Fun facts : the map was called "Go 4 It As Well" before
+			I was given new suggestions by the Doomworld community.
+			The map was then supposed to be called "Go 8 It", but
+			in the end Xaser convinced me to use Primeval's suggestion,
+			"Have @ It".
+
+			The map's layout went under major changes after I
+			realized VPOs couldn't be avoided. There was supposed to
+			be some huge cave behind the lowered Mancubi wall, and
+			quite a big fight there with an army of Hell Knights and
+			some Cyberdemons popping-up behind them if you went too far.
+			I had to remove this part.
+			Moreover, at first I only planned to mix parts from 
+			Doom II map 01 and TNT map 01, but when the map was 
+			halfway-done, K!r4 ( co-author of "Go 4 It" ) told me it 
+			would be nice to have pieces of E1M1 in there, so that 
+			every Go 2 It sequel could somehow add elements from 
+			new maps while keeping references to maps already included
+			in previous iterations.
+			I liked his idea and redrew the ending part to 
+			include a section from E1M1. Thanks K!r4 ;)
+
+			Anyway, enough with words, now Go Play It !
+
+--------
+[5] BUGS
+--------
+
+  There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running
+  on chocolate-doom.
+
+  Otherwise, we hope it's clean as a whistle! :-)
+
+
+--------
+[6] CONTRIBUTOR INFORMATION
+--------
+
+[6.1 Contributors]
+
+Contributor       : Josh Sealy
+Also known as     : Joshy
+Email address     : joshzfield2001 AT hotmail.com
+Webpage           : n/a
+Other files by me : gzthgs.wad, ndcp2.wad (map13,27,32, helped finish map15's layout)
+                    1024clau.wad (map13,28, helped with map26), ihic.wad, 
+                    sodfinal.wad (Speed of Doom), cc4.wad (Community Chest 4) (3 maps)
+Personal thanks   : The Doomworld community for the excellent support, enthusiasm and whatnot, you guys rock!
+                    The testers for doing an awesome job and ensuring the project is heading on the right
+                    track.
+                    Dew for being such a cool guy with his wise advices, support and inspiration and, blah,
+                    simply put, he's just a 'cool guy who is just cool and doesn't afraid of anything.'
+                    Thanks to The Green Herring (Eric Baker) for fixing up my image lump problems.
+                   
+
+Contributor         : Matt Tropiano
+Email address       : mtropiano@gmail.com
+Misc. Author Info   : Longtime mapper, infrequent releaser.
+Other files by me   : Go to the idGames Archive (www.doomworld.com/idgames),
+                      search "whole textfile" for "Tropiano". Enjoy.
+Personal thanks     : Josh Sealy for the Project Coordination and giving me
+                      an excuse for going back to Vanilla Doom,
+                      Pascal v.d. Heiden for Doom Builder,
+                      PRIMEVAL for custom music,
+                      Belial, Dew, Hawkwind, Snakes, TendaMonsta, and
+                      MegaDoomer for their testing and input. Lots of your
+                      insight will go into making my future maps better!
+                 
+
+Contributor	  : James Cresswell
+Also Known As	  : Phobus
+Email Address	  : james@mpcressy.com
+Webpage		  : www.phobus.servegame.com
+Other Files By Me : on /idgames: -Scourge (ph_scrge.zip)
+                                 -White Light (ph_wl.zip)
+                                 -Warpzone (ph_wz.zip)
+                                 -Scars of the Wounded Prey (ph_quik1.zip)
+                                 -Too Much Brown Texture Pack demo room (2mbrown.zip)
+                                 -zctcmaps MAP05 (zctc.zip)
+                                 -Twisted Joke (ph_dac.zip)
+                                 -Community Chest 3 MAP18 (cchest3.zip)
+                                 -Justice - Infernal Mechanics (ph_quik3.zip)
+                                 -ZPack - Random Maps for ZDoom E1M2, E2M1, E2M0 (zpack.zip)
+                                 -Coils of the Twisted Tale (ph_quik2.zip)
+                                 -Ten Community Project MAP05, MAP16 (TCP.zip)
+                                 -Virus Episode 1 "Shareware Demo Release" (ph_virus.zip)
+                                 -Tiny Pack 1 - "Tiny Chances of Survival" (ph_tp1.zip)
+                                 -Claws of the Enraged Beast (ph_quik4.zip)
+                                 -The Mouth of Death (ph_mod.zip)
+                                 -Phobus' Fragments of DAC2009 (ph_dac2.zip)
+                                 -White Light: 2010 Edition (ph_wlx.zip)
+Personal Thanks   : The Doom Community, for keeping going so long!
+
+
+Contributor       : Charles-Aurélien 'Charly' Goulois
+Also known as     : K!r4, Kusanageek, Mangeurdenfants, 0rw3ll and thousands of other nicknames.
+Email address     : kusanageek@gmail.com
+Webpage           : http:kusanageek.com and http://blogs.wefrag.com/Mangeurdenfants/ (both in French)
+Other files by me : Plutonia 2 maps 07, 15 and 32 ; Spira (WIP) ; Arcane Doom map 19 (WIP)
+Personal thanks   : Joshy, Belial, dew, Snakes and hawkwind for their nice feedback
+
+
+Contributor       : Thomas van der Velden
+Also known as     : t.v. / Rabotik
+Email address     : rabotik  AT gmail.com
+Webpage           : www.rabotik.nl .
+            Please  check it out to see my other art: illustrations, animations and
+            computer game Harmony.
+Other files by me : Harmony, Revolution! (TVR.wad), TV1998, contributions to: Plutonia2,
+            Community Chest 1 & 3 and Heretic Treasure Chest..
+Personal thanks   : All those involved in the making of PRcP.
+
+
+Author            : Mattias Johansson (Waverider)
+Email Address     : waverider@bredband.net
+Other Files by me : Some hard disk warmers maybe ;)
+Misc. Author Info : A hardcore Doom enthusiast :)
+Personal thanks   : Everyone who created the game, ports, editors and of course
+                    everyone involved in this project. Special thanks to
+                    the testers of this level: dew, hawkwind and Belial for  
+                    feedback and quality suggestions, and to PRIMEVAL for making
+                    the atmospheric and scary midi song.       
+
+
+Contributor       : UltimateLorenzo
+Also known as     : Toranaga, Lorenzo
+Email address     : ultimatelorenzo@gmail.com
+Webpage           : www.ultimatelorenzo.it.gg
+Other files by me : DooM 2 Episode Patch (d2ep.zip)
+		    DooM Castle (dcastle.zip) (with Ismaele)
+		    Death Is Just The Beginning (djb10.zip)
+		    Italian DooM Deathmatch (itdoomdm.zip) (with Ismaele)
+		    Enterprise NX-01 (nx01.zip)
+		    The Prometheus Experiment (promex.zip)  <== Play it! It's my best DooM wad!
+		    3 levels for the Italian DooM Megawad (itdoom1.zip)
+		    Final Heretic Chapter One: The Docks (fhc1.zip) (for Heretic)
+		    Assimilation Demo (assi_d.zip)
+		    Paradice (prdc.zip)
+		    Infernal Venice (infve.zip)
+Personal thanks   : Snake, hawkwind, dew, TendaMosta, Belial for testing and comments.
+
+
+Contributor       : Brett Harrell
+Also known as     : Mechadon
+Email address     : mekaddonn-AT-gmail.com
+Webpage           : http://mekworx.phenomer.net
+Other files by me : check my website :P
+Personal thanks   : everyone who makes stuff for Doom
+
+
+Author(s)         : JC
+Email address     : superjc@free.fr
+Webpage           : http://superjc.free.fr/
+Other files by me : Survive in hell ( not released yet )
+Personal thanks   : The Doom Community, PRIMEVAL for the music of my map
+
+
+Contributor       : evocalvin
+Email address     : ticalvin@ymail.com
+Misc. Author Info : A Doomer from Hong Kong, Been playing Doom since i'm 8 years old.
+Other files by me : No, This is my first and second map
+Personal thanks   : Joshy - comes out Plutonia Revisited Community Project.
+		    ID Software & The authors of The Plutonia Experiment.
+                    CodeImp - author of DoomBuilder
+                    Simon "Fraggle" Howard  - author of Chocolate Doom
+                    Belial and Snakes   -for testing and give me useful comments
+                    dew - gives me useful feedbacks and speed route suggestion.
+                    hawkwind     - pointed out the bugs and some mistakes from my map.
+	            t.v. - for the texture pack
+                    James Paddock - the music - Plutonia 2 map11 "Become the Hunted"
+		    4mer - to help me about the reject lump editing 
+
+
+Contributor       : Tatsurd-cacocaco
+Also known as     : Tatsuya Ito
+Email address     : tatsurd@yahoo.co.jp
+Webpage           : http://tatsurdcacocaco.ninja-web.net/
+Youtube           : http://www.youtube.com/user/tatsurdcacocaco
+Other files by me : Heretic Treasure Chest (E3M7), DEMONS BattleField
+Personal thanks   : Joshy for launching the valuable project, 
+                    T.V. for the nice texture resources,
+                    PRIMEVAL for making music for my map (Map20), 
+                    Hawkwind, Belial, Dew, and MegaDoomer for testing and feedback.
+
+
+Contributor       : William Huber
+Also known as     : [WH]-Wilou84
+Email address     : huber_w@epita.fr
+Webpage           : http://doomfrance.forumactif.com/
+Other files by me : A few maps for yet-unreleased projects ( as of this writing )
+Personal thanks   : Joshy for starting the project, Thomas van der 
+			Velden for the cool resources he made, and all the
+			testers and map authors who worked hard for 
+			Plutonia Revisited.
+
+			Fraggle for Chocolate Doom and GhostlyDeath for
+			Chocorenderlimits, my main testing engines for this map.
+
+			Last but not least, of course, id and the 
+			Casali brothers.
+
+
+Contributor       : Xaser Acheron
+Also known as     : Xaser, "The Conqueror"
+Email address     : xaser(dot)88(at)gmail(dot)com
+Webpage           : http://ionline.vectec.net
+Other files by me : Zen Dynamics, Psychic, TurboCharged ARCADE!, Lost Episode, and other junk.
+Personal thanks   : Esselfortium for telling me that Helix doesn't suck. Joshy for the chance
+                    to try and prove Essel right. Belial, dew, and hawkwind for bastard-awesome testing.
+                    Kate for & Belfin for being Kate and Belfin (respectively). Zharkov for going to the
+                    store.
+
+
+Contributor        : Darkwave0000
+Also known as      : Darkwave or Darky
+Email address      : Darkwave0000 AT aim DOT com
+Webpage            : n/a
+Other files by me  : sodfinal.WAD (Speed of Doom)
+Personal Thanks    : Many thanks to Joshy in managing Plutonia Revisited
+                     and to all test players for giving awesome ideas.
+                     I was enjoying participating to this mapset. ^_^
+
+
+Contributor        : C30N9
+Also known as      : The3091996 (YouTube)
+Email address      : c30n9doom AT gmail.com
+Webpage            : n/a
+Other files by me  : redoom.wad, pitfalls.wad (pitfall2.zip), toxin64.wad
+Personal thanks    : The Doomworld community of course.
+                     Joshy, the main leader of this project.
+                     Testers for giving a really good feedback and work, especially hawkwind, the one
+                     who tested mostly all of my maps and dew, for giving a constructive feedback for
+                     my only accepted map.
+
+
+Contributor        : Keeper of Jericho
+Also known as      : Keeper of Jericho
+Email address      : freecityofatero@gmail.com
+Webpage            : http://z4.invisionfree.com/Refia/index.php?act=idx
+Other files by me  : "A Doom 2 episode"
+Personal thanks    : All other mappers out there who inspired me. Too many to name em all.
+                     And ID for making Doom, of course.
+
+
+Contributor        : Michael Jan Krizik
+Also known as      : valkiriforce
+Email address      : krizik777(at)yahoo(dot)com
+Webpage            : http://www.youtube.com/user/valkiriforce?feature=mhw4
+Other files by me  : SPEED17.WAD (MAP03 Cold Fist) Doom II Unleashed (MAP13 Realm of Chaos MAP30 Unforgiven)
+Personal thanks    : The original Plutonia authors for inspiration/God for constant inspiration/all
+                     playtesters and MIDI composers PRIMEVAL/stewboy for being so kind as to provide
+                     awesome tracks for the levels.
+
+
+Contributor        : Whoo
+Also known as      : Whoo71
+Email address      : kmg1ATmsn.com
+Webpage            : None
+Other files by me  : None currently released
+Personal thanks    : dew and Hawkwind for their extensive and detailed testing of my map.
+
+
+Contributor        : franckFRAG
+Also known as      : franckFRAG
+Email address      : fr3nki@hotmail.fr
+Webpage            : None
+Other files by me  : FraDM 1
+Personal thanks    : Wilou and Kira for to have me to encourage to the creation of my map. MegaDoomer, Dew
+                     and Hawkwind, for to have help me on their testing of my map.
+
+
+Contributor        : Christopher Shepherd
+Also known as      : Armouredblood
+Email Address      : BTitanGamer@gmail.com
+Other files by me  : SL (shai'tan's luck), celticmansion, Newgothic - movement 1, some dwspd maps in 22-24,
+                     a few maps in pcorf's Doom II Unleashed, some more maps in the 1994 remake challenge
+                     (in-progress), a few odds-and-ends elsewhere.
+
+
+[6.2 Credits/Thanks]
+
+  Testers:
+	- Snakes
+        - Hawkwind
+	- P. Woda aka Belial
+        - Dew
+	- TendaMonsta
+
+  Musicians:
+	- Stuart Rynn
+	- PRIMEVAL
+
+  Graphics:
+	- Thomas van der Velden
+
+  Many immeasurable thanks to those credited for their contribution and
+  support to/for the project.

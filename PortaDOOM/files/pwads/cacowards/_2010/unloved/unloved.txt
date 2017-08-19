@@ -1,0 +1,74 @@
+===========================================================================
+Advanced engine needed  : GZdoom
+Primary purpose         : Single player
+===========================================================================
+Title                   : Unloved
+Filename                : unloved.pk3
+Release date            : 04/14/10
+Author                  : Paul Schneider
+Email Address           : paulinthenet@gmx.de
+Other Files By Author   : -
+Misc. Author Info       : I'm just a regular guy who likes games and making
+						  mods for them :)
+
+Description             : You wake up in your house. And you're all alone.
+						  The only thing that is with you, is your sanity.
+						  Or is it?
+
+Additional Credits to   : It's a long list. All credits regarding used 
+						  resource material listed on credits page if you
+						  wait at the title pic.
+===========================================================================
+* What is included *
+
+New levels              : five
+Sounds                  : Yes, but no original ones replaced.
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : map01 - map05
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : GZdoom only
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About 4-5 months with breaks
+Editor(s) used          : Doom Builder 2, XWE, Photoshop
+Known Bugs              : None I know of
+May Not Run With        : GZdoom only
+Tested With             : GZdoom 1.4.8
+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.paulinthenet.de
+
+

@@ -1,0 +1,12 @@
+*
+!.gitignore
+
+# 7Zip for producing the final slef-extracting archive
+!7za
+!7za/**
+
+!ignore.lst
+
+# UPX for compressing executable files
+!upx
+!upx/**

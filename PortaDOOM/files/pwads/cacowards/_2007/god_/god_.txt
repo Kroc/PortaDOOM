@@ -1,0 +1,58 @@
+===========================================================================
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Genesis of Descent
+Filename                : god_.wad
+Release date            : 03/27/07
+Authors                 : Hobomaster22
+Email Address           : hobomaster22@hotmail.com
+Website                 : http://www.hobomaster.doomwadstation.com/
+Other Files By Author   : Onslaught DM Series, Exodus, Return to Phobos, Hell Keep, The Lost Gateway, Decadence, Hell on Cheese, Lunar Outpost, Two Plutonia Maps
+Description             : A large map for the original Doom that uses a huge amount of scripting and ZDoom features while attemptimg to retain classic and fast paced Doom action.
+Additional Credits to   : Udderdude, Belial, DomRem, Whiteboy, Juggalo, and anyone else I may have forgotten for testing.
+
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Source port             : Requires latest version of ZDoom or GZDoom
+Game                    : DOOM1
+Map #                   : E1M1-E1M3
+Single Player           : Designed for
+Cooperative 2-4 Player  : None yet
+Deathmatch 2-4 Player   : None
+Other game styles       : None
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch 
+Build Time              : On and off for 2 years
+Editor(s) used          : Deepsea v11.83
+Known Bugs              : None 
+May Not Run With...     : Designed for ZDoom, tested in both ZDoom and GZDoom
+
+* Copyright / Permissions *
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+

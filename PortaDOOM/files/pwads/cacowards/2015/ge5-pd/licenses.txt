@@ -1,0 +1,36 @@
+All original work in this archive is released under the Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 Unported license. More info can be
+found at http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+All original work not authored by Ethan "GooberMan" Watson is as follows:
+
+omega_dead.mid - Custom music created by Tom "Hyena" White. Written ten years ago and intended for a Space Station Omega update, it is now used as the title music for the combined Space Station Omega/Prime Directive release.
+
+Some select third-party assets are used in this package and are under their
+own respective separate licenses. The CC BY-NC-SA 3.0 license DOES NOT APPLY
+TO THE FOLLOWING RESOURCES:
+
+paranoid.pk3 - MD3s extracted and reused, obtained from http://www.doomworld.com/idgames/?id=16290
+cage_tex.wad - Obtained from http://www.realm667.com
+DoomPotPourri.wad - Obtained from http://www.realm67.com
+femalemarine2.wad - Virtue's fully armoured Crash-style Female Marine, obtained from http://forum.zdoom.org/viewtopic.php?f=37&t=35584
+femalescientist/zombiescientist - Scaliano's scientist sprites, pulled from http://forum.zdoom.org/viewtopic.php?f=19&t=35269
+HangingCorpsePack.wad - Obtained from http://www.realm67.com
+impensce.wad - Impse sprites reused (originally by Scuba Steve), obtained from http://www.doomworld.com/idgames/?id=11927
+PhobosRocks.wad - Obtained from http://www.realm667.com
+screams.wad - Obtained from http://www.realm667.com
+Stalagmites.wad - Obtained from http://www.realm667.com
+vehiclepack_beta3.wad - NerdKoopa's voxel vehicle pack, obtained from http://forum.zdoom.org/viewtopic.php?t=36052
+doomgirl.wad - LeviathaN's modification of selene.wad, obtained from http://forum.zdoom.org/viewtopic.php?p=516812
+chatter - Edit of public domain sound http://soundbible.com/1265-Shopping-Mall-Ambiance.html
+cacoward - Pulled from Enjay's Liberation mapset/TC: http://www.doomworld.com/idgames/?id=15457
+br_* models - Obtained from http://www.blackrayne.net
+demon hands - by HellCattX, from http://forum.zdoom.org/viewtopic.php?p=664872#p664872
+status report fonts - by Jimmy, http://realm667.com/index.php/en/font-press/110-general/1538-status-report
+GorePack.wad - Obtained from http://www.realm667.com
+PDA.wad - Obtained from http://www.realm667.com
+Pterodactyl Scream - Mike Koenig, obtained from http://soundbible.com/1497-Pterodactyl-Scream.html
+Child scream - Mike Koenig, obtained from http://soundbible.com/1102-Child-Scream.html
+Coffee Table - Anonymous, obtained from http://opengameart.org/content/coffee-table
+Manhole Cover - BMacZero, obtained from http://opengameart.org/content/manhole-cover
+Food props - Vinrax, obtained from http://opengameart.org/content/food-props

@@ -1,0 +1,83 @@
+===========================================================================
+Advanced engine needed  : Boom Compatible Ports
+Primary purpose         : Single + Coop Play
+===========================================================================
+Title                   : CYBERPIE
+Filename                : pie-rmx-v2.wad
+Release date            : LOL "Release Date"
+Author                  : Walter "Daimon" Confalonieri
+Email Address           : daimon.italia983@gmail.com
+Other Files By Author   : A lot, some good, some bad
+			  
+
+Misc. Author Info       : I love spamming stupid videos on zdoom forums.
+			  I build doom maps just for fun...
+
+Description             : Second map for the pimp 1994 project.
+			  This time i remade the psycotic level PIE.WAD
+			  of James Ojaste rebuilded in a sort of "Cyber_
+			  dreams" style, fixed some bugs and errors from
+			  first version, added more new parts from the
+			  station, and reached the 10000+ linedefs count
+			  like nefcat remake stuff.
+
+Additional Credits to   : ID, for the fancy game!
+                          My family
+			  James Ojaste for original PIE.WAD
+			  Cyberdreams for inspiration
+			  Caramelldansen for Caramelldansen
+			  other people i forgot to mention
+			  
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom2
+Map #                   : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes (starts only)
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from Scratch
+Build Time              : 4 days + almost a spare month on re-editing,
+		          adding the new parts on the map and detailing
+			  the whole map
+			  
+Editor(s) used          : Doombuilder, Doombuilder 2, XWE
+Known Bugs              : none. if you found any mail me.
+May Not Run With...     : vanilla doom2.exe
+Tested Whit		: prboom 2.5.0, skulltag 0.97d2
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+NO modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

@@ -1,0 +1,382 @@
+===========================================================================
+Archive maintainer      : This is a hotfix which corrects a bug in MAP17
+                          that prevented 100% Kills, as well as a bug in
+                          MAP29 that could prevent it in coop multiplayer
+                          and a bug in MAP18 that could get you trapped.
+                          A list of the changes made in this hotfix and the
+                          second release can be seen in changes.txt.
+Update to               : levels/doom2/Ports/megawads/cchest4.zip
+Advanced engine needed  : Boom-compatible source ports with an increased
+                          SEGS limit
+                          (PrBoom+ 2.5.1.3 -complevel 9 or Eternity Engine
+                          v3.40.25 "Midgard" recommended)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Community Chest 4
+Filename                : cchest4.wad
+Release date            : August 17, 2012 (first release)
+                          September 9, 2012 (second release)
+                          September 12, 2012 (hotfix)
+                          October 19, 2012 (second release +)
+Author                  : Various (see Credits)
+
+Description             : The fourth installment of the series, Community
+                          Chest 4 boasts 32 maps made by 20 different
+                          authors from the Doom community.  After four
+                          years of work, they have been made available for
+                          your enjoyment.
+                          
+                          Included in this package is the base resource WAD
+                          compiled for the project, which can be found in
+                          cc4-tex.zip.  It may be a good starting point if
+                          you need a large, varied, and meticulously
+                          organized texture WAD for your project!
+
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes (see Credits)
+Graphics                : Yes (see Credits)
+Dehacked/BEX Patch      : Yes (for level names / intermission text;
+                               included inside the WAD)
+Demos                   : Yes (recorded with PrBoom+ 2.5.1.3)
+Other                   : OPTIONS lump (see Known Bugs)
+                          MAPINFO/ZMAPINFO for ZDoom
+                          (NOTE: jump and crouch buttons disabled
+                                 to ensure intended gameplay)
+                          EMAPINFO for Eternity Engine
+Other files required    : None
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Four years
+Editor(s) used          : Too many to list
+Known Bugs              : As of this writing, parts of MAP14 will not be
+                          rendered correctly when played in certain ports,
+                          such as GLBoom+ and Risen3D.  This is because of
+                          the use of the Mordeth bridge effect, which is
+                          currently not supported by most hardware
+                          renderers.
+                          
+                          On MAP18, crossing the bridge north of you will
+                          cause any monsters beneath it to be teleported on
+                          top of it.  This is a limitation of the bridge
+                          effect used in that area and there is nothing
+                          that can be done about it without crippling
+                          monster movement.
+                          
+                          On MAP20, in PrBoom+, dots can occasionally be
+                          seen floating in the air above the curving lasers
+                          later on in the level.  The cause of this bug is
+                          unknown to the compiler as of this writing.
+                          
+                          In addition, although this isn't a bug, it
+                          should be noted that one level requires the death
+                          of the player to exit, so if your source port
+                          does not allow dead players to exit by default,
+                          you must turn this function on (if such an option
+                          exists).  The OPTIONS lump included in this WAD
+                          serves to force this option on in the Eternity
+                          Engine, so you won't need to turn it on every
+                          time you play.
+May Not Run With...     : Doom2.exe, Boom.exe (too many SEGS on certain
+                          levels), or any source port that isn't
+                          Boom-compatible
+
+* Credits *
+
+Project Leader          : The Green Herring
+Compilation             : The Green Herring
+DeHackEd Patch          : The Green Herring
+Demos                   : The Green Herring
+New Graphics            : Status Bar:
+                            Sphagne
+                          CWILEV*, CREDIT, ENDOOM, green font:
+                            The Green Herring
+                          TITLEPIC, INTERPIC, M_DOOM, BOSSBACK:
+                            Thomas van der Velden (www.rabotik.nl)
+                          HELP:
+                            The Green Herring
+                             (based on INTERPIC by
+                              Thomas van der Velden)
+Texture Resources       : NiGHTMARE
+                          Espi
+                          Eriance
+                          Fredrik Johansson
+                          Janitor
+                          DaGGeR
+                          Ola Bjorling
+                          Vader
+                          XDelusion
+                          esselfortium
+                          RottKing
+                          Nuxius
+                          Afterglow
+                          AgentSpork
+                          RottKing
+                          Enjay
+                          Huy Pham
+                          SargeBaldy
+                          Tormentor667
+                          The GothicDM Team
+                          The Requiem Team
+                          The Eternal Doom Team
+                          id Software
+                          Raven Software
+                          Rogue Entertainment
+                          3D Realms Entertainment
+                          LucasArts
+                          H. R. Giger (converted by Stephen Renton)
+Internal Playesting Team: justanotherfool
+                          Brian Nesser (Anima Zero)
+                          RjY
+                          Alice Jameson
+                          Super Jamie
+                          William Huber
+                          Qaatar
+                          st.alfonzo
+                          azureace
+                          SonidoSpeed
+                          Jan Engelhardt (Hirogen2)
+                          Brian Knox
+                          Crusader No Regret
+External Playtesters    : dew
+                          pfl
+                          Phml
+                          j4rio
+                          Memfis
+                          hawkwind
+                          Doohnibor
+                          TimeOfDeath
+                          ZDaemon Thursday Night Survival Crew
+Level Design            : MAP01: Renewed Faith
+                            William Huber
+                          MAP02: Slugfest
+                            skillsaw
+                          MAP03: Three is a Charm
+                            James "Phobus" Cresswell
+                          MAP04: Polluted Paths
+                            Forty-Two
+                          MAP05: Installation Decrepit
+                            Alice Jameson
+                          MAP06: Survival Instincts
+                            Adam Windsor
+                          MAP07: Hoedown
+                            James "Phobus" Cresswell
+                          MAP08: Cold Reception
+                            Mithran Denizen
+                          MAP09: Ochregerde
+                            William Huber
+                          MAP10: Inner Fear
+                            Dutch Devil
+                          MAP11: The Grotto
+                            Christoph and Josh Sealy
+
+                          MAP12: Nectar of the Gods
+                            The Green Herring
+                          MAP13: Viral Implant
+                            James "Phobus" Cresswell
+                          MAP14: Downriver
+                            Processing Control
+                          MAP15: Decomposition
+                            Lord Z
+                          MAP16: The Forgotten Base
+                            Keeper of Jericho
+                          MAP17: Metastasize
+                            Andy Leaver
+                          MAP18: Suburbia
+                            James "Jimmy" Paddock (level)
+                            and Brett "Mechadon" Harrell (detailing)
+                          MAP19: Technoprison
+                            Josh Sealy
+                          MAP20: Interstellar Sickness
+                            lupinx-Kassman
+
+                          MAP21: Shaman's Device
+                            lupinx-Kassman
+                          MAP22: Hell's Limits
+                            C30N9
+                          MAP23: Melting Universe II
+                            Walter Confalonieri
+                          MAP24: Detachment
+                            Shadow Dweller
+                          MAP25: Nightmare Complex
+                            Kim "Torn" Bach
+                          MAP26: Reaper's Digest
+                            Kristian Aro
+                          MAP27: Vulcana II
+                            Paul Corfiatis
+                          MAP28: Crucifix Held Close
+                            William Huber
+                          MAP29: Spiritual Holocaust
+                            Christian Lian
+                          MAP30: Ragnarok
+                            Josh "Joshy" Sealy
+                          MAP31: Mortar Combat
+                            Forty-Two
+                          MAP32: Mutare
+                            Jeffrey Nordin
+Music                   : Title:
+                            "At Last, It Has Arrived"
+                             by The Green Herring
+                          Stats:
+                            "The Destiny of Death"
+                             by The Green Herring
+                          Story:
+                            "Victory"
+                             by Forty-Two
+                          MAP01:
+                            Final Boss Theme
+                            from "The NinjaWarriors" (SNES),
+                            sequenced for MIDI by Robert Hansson
+                          MAP02:
+                            Sand Rock's Theme
+                            from "Gundam Wing: Endless Duel"
+                                 (Super Famicom)
+                            sequenced for MIDI by cyahin
+                          MAP03:
+                            "They're Going to Get You" by Bobby Prince
+                             from "Doom" (PC)
+                          MAP04:
+                            "Few" by Forty-Two
+                          MAP05:
+                            "The Dave D. Taylor Blues" by Bobby Prince
+                             from "Doom II: Hell on Earth" (PC)
+                          MAP06:
+                            "Into Sandy's City" by Bobby Prince
+                             from "Doom II: Hell on Earth" (PC)
+                          MAP07:
+                            "Hiding the Secrets" by Bobby Prince
+                             from "Doom" (PC)
+                          MAP08:
+                            "Quad Machine" by Sonic Mayhem
+                             from "Quake II" (PC),
+                             sequenced for MIDI by Jay Reichard
+                          MAP09:
+                            "Starting Out" by Forty-Two
+                             from "Plutonia 2"
+                          MAP10:
+                            "Icicles" by James "Jimmy" Paddock
+                          MAP11:
+                            "Grotto" by Forty-Two
+
+                          MAP12:
+                            "It's Gonna Be a Rough Ride"
+                             by The Green Herring
+                          MAP13:
+                            Altantica/Aquatica Techno Music
+                             from "Need for Speed III: Hot Pursuit"
+                             sequenced for MIDI by Rapidkirby3k
+                          MAP14:
+                            "Anchor" by Mark Klem
+                             from "Memento Mori II"
+                          MAP15:
+                            "Creeping Death" by Metallica,
+                             sequenced for MIDI by "King Diamond"
+                          MAP16:
+                            "Waiting for Romero to Play"
+                             by Bobby Price
+                             from "Doom II: Hell on Earth" (PC)
+                          MAP17:
+                            "Mechanical Man" by Frank Klepacki
+                             from "Command & Conquer" (PC),
+                             sequenced for MIDI by Gecko Yamori
+                          MAP18:
+                            "Shrouded in Darkness"
+                             by James "Jimmy" Paddock;
+                             based on "In the Dark" by Bobby Prince
+                             from "Doom II: Hell on Earth" (PC)
+                          MAP19:
+                            "Technoprisoners"
+                             by James "Jimmy" Paddock
+                          MAP20:
+                            "We're the Robots"
+                             from "Mega Man 9" (Wii),
+                             sequenced for MIDI by Jace
+
+                          MAP21:
+                            "Against Nirvana"
+                             from "Steam-Heart's" [sic] (PC-98),
+                             sequenced for MIDI by MaliceX
+                          MAP22:
+                            "Hell's Limits" by Forty-Two
+                          MAP23:
+                            "Countdown to Death" by Bobby Prince
+                             from "Doom II: Hell on Earth" (PC)
+                          MAP24:
+                            Theme of MAP04: Wormhole
+                             from "TNT: Evilution"
+                          MAP25:
+                            "Fate of the Damned" by Mike Cody
+                             from "Blood" (PC)
+                          MAP26:
+                            "The Demons from Shawn's Pen remix
+                             (Doom E2M2 remix)"
+                             by Kristian Aro;
+                             based on
+                             "The Demons from Adrian's Pen"
+                              by Bobby Prince
+                              from "Doom"
+                          MAP27:
+                            "Last Man Standing
+                             (Sacraficial Symphony)" [sic]
+                             by Kristian Aro
+                             from "Whispers of Satan"
+                          MAP28:
+                            "Crucifix Held Close"
+                             from "Castlevania:
+                                   Portrait of Ruin" (DS),
+                             sequenced for MIDI by Jayster
+                          MAP29:
+                            "Crawling Vermin" by Maxime Tondreau
+                             from "Planet of Cartmans 2" (PC)
+                          MAP30:
+                            "Hell Reigns Down"
+                             by Josh "EarthQuake" Simpson
+                          MAP31:
+                            "Mortar Combat" by Forty-Two
+                          MAP32:
+                            "Jerub Baal" by Jeffrey Nordin
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  The sole exception to this is the Community Chest 4 Resource WAD,
+which is included with this file in cc4-tex.zip; you may use it as long as
+you credit the creators of the textures.  Permissions have been obtained
+from original authors for any of their resources modified or included in
+this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+This PWAD contains select texture(s) and flat(s) that can originally be
+found in GothicDM or Gothic2.  Credit and thanks go out to the artist(s)
+of said flat(s) and texture(s) and also to the rest of the Gothic Crew
+(1997/98).  The ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM.  Each
+said PKZIP archive contains thirty-two professional quality levels and
+music.
+(Ironically, CDROM.COM no longer exists; the above mentions it only
+because the conditions of the Gothic Deathmatches texture pack require you
+to print the above text verbatim.  You can, however, find the original
+GothicDM(2).zip on the idgames/ archive at gamers.org and its mirrors.)
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

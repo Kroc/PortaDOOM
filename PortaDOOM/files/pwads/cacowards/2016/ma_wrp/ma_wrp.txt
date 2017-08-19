@@ -1,0 +1,57 @@
+Title                   : Warphouse
+Filename                : ma_wrp.zip
+Release date            : 11/06/16
+Author                  : Ed C.
+Email Address           : [redacted]
+Misc. Author Info       : Author of Sin City series, Valhalla, and
+                          Putrefier.
+Beta testing            : Tormentor 667, Fonze, _mental_, zrrion the insect
+Special thanks          : Tormentor 667, Fonze, Essel, Jimmy
+
+
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Easy / Hard
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Years
+Editor(s) used          : Doombuilder
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

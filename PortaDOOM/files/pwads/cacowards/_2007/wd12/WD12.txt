@@ -1,0 +1,91 @@
+
+
+  \			 /  ____              "
+   \                    /  |    \      /\     | ---------- |     |
+    \        /\        /   |     \    /  \    |     ||     |     |
+     \      /  \      /    |     /   /    \   |     ||     |_____|
+      \    /    \    /     |____/   |------|  |     ||     |     |
+       \  /      \  /      |    \   |      |  |     ||     |     |
+        \/        \/       |     \  |      |  |     ||     |     |
+
+				presents
+
+			  \/\/ONDERFUL |)OOM
+			  ~~~~~~~~~~~~~~~~~~
+
+===========================================================================
+Primary purpose         : Single+Coop play / Coop / Deathmatch
+===========================================================================
+Title                   : Wonderful Doom, v.1.2
+Filename                : WD12.WAD
+Release date            : 04.11.2008
+Author                  : Wraith
+Email Address           : Wraith777@mail.ru
+Other Files By Author   : My School (School#9.wad), 
+			  Number7 (Num7.wad),
+			  Corrupted  Zone(Corrupt.wad), 
+			  Defractor (Defract.wad)
+			  AquaPark  (aqua.wad)
+
+
+Misc. Author Info       : Just love classic Doom
+
+Description             : I just wanted all doomers to play First Doom
+			  one more time. All maps are similar in 
+			  design and difficulty to their originals, but 
+			  they are build from scratch.
+			  Please, don`t acept it is a plagiarism, it`s 
+			  just an alternative to such things like 
+			  Mood, Randoom or modified ID levels..
+
+V.1.2 change log	: There are many changes in architecture and thing
+			  placement, so levels now differ from originals
+			  a little bit more. Also there are some bug fixes
+			  (including door bug on e1m2) 
+
+Additional Credits to   : ID for Doom, CodeImp of Doom Builder, 
+			  all testers
+===========================================================================
+
+
+* What is included *
+
+New levels              : 36
+Sounds                  : no
+Music                   : no
+Graphics                : no
+Dehacked/BEX Patch      : no
+Demos replaced          : 4
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : Ultimate Doom
+Map #                   : E1M1-E4M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : ---
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 4 years overall, 2 years of clear time
+Editor(s) used          : Doom Builder v.1.00 - 1.68, DeepSea v.12
+Known Bugs              : not detected
+May Not Run With        : ---
+Tested With             : Doom.exe, v.1.9
+
+
+* Copyright / Permissions *
+
+I don`t want from you anything exept credits))..
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

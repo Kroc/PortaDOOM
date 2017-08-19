@@ -1,0 +1,298 @@
+
+
+===========================================================================
+
+Advanced engine needed  : A limit removing source port for Map 01-04, 
+			  An extremely strong limit removing sourceport for Map 05 (41,467 Sidedefs)
+
+Primary purpose         : Single Player, Co-op
+
+===========================================================================
+
+Title                   : Deus Vult
+
+Filename                : DV.WAD
+
+Release date            : May 25th, 2004
+
+Author                  : Huy Pham, AKA Converted Doomer
+
+Email Address           : aarogance@hotmail.com
+
+Other Files By Author   : None so far.
+
+Description             : My first map.
+			  
+                          A large, two-themed level created for Co-op,
+			  inspired by Hell Revealed and Alien Vendetta.
+                          Emphasizes large, well-choreographed fights. 
+			  Exceptionally calibrated for Single Player.
+
+			  Deus Vult starts you off in an underground tech base 
+                          and will eventually plunge you into the depths of Dante's 
+                          Inferno in front of your eyes.
+		          Difficulty holds up to the extremes of HR. Legions of monsters. 
+                          150 minute [estimated] par time.
+		          
+			  The map can be played in two distinct configurations:
+			  
+			  Config 1 - Split into four sublevels for 
+			  people who do not have patience to play through
+			  large maps, or do not own a high-end PC (<1.8 GHZ).
+		  	  Also good for co-op play, since smaller levels lag less.
+                          Designed to be completable from scratch.
+			  *Runs from Map 01-04.*
+			
+			  Config 2 - The full monty, the unabridged version
+			  of Deus Vult, for people who likes big maps.
+                          Designed to be completable from scratch.
+			  WARNING: Needs an EXTREMELY STRONG LIMIT REMOVING SOURCEPORT.
+			  *Runs on Map 05.*
+
+Storyline               : Situated in the last standing UAC base on Deimos, a team of
+                          combat-hardened marines must fight their way through
+                          the brutality of Hell to save humanity and themselves... Deus Vult.
+
+Additional Credits to   : Richie Agnew - For his unbelievable 1337 DooMing skills =),
+					 testing this map like crazy, gameplay
+					 suggestions, and proving Deus Vult beatable.
+			  
+			  Id Software - Nuff' said.
+
+			  The Doomer / Kaiser - For the Doom64 textures, and Doomer for
+                                                obtaining permission to use it, and [Doomer] 
+                                                for co-op testing Deus Vult.
+
+			  Raven Software - Hexen/Heretic textures and flats.
+
+                          The Alien Vendetta team - For the graphical resources in AV.wAD,
+                                                    and the incredible maps that inspired
+						    Deus vult. AV Map20 & Map29--this is opinion--
+                                                    represents the very best in Classic Doom mapping.
+
+			  Yonatan Donner / Haggay Niv - For the legendary Hell Revealed megawad,
+                                                        which inspired Deus Vult's gameplay.
+                                                        
+			  B.P.R.D (AKA the guy who made nuts.wad) - For showing us how many 
+                                                                    bastards can be packed 
+                                                                    in a level without 
+								    crashing =p
+
+                          Cheprasov Andrey, Michael Dorfler,
+                          Alexander Hvostov, Chilvers,        
+                          Mr. Chris, WWS, Video Ripper,
+                          mmnpsrososkl, KMan,         
+                          Simon D Howard, DoomKid,
+                          Alexey, Albert, redM, Carol, Reinhard
+                          Saint, Gamedude                        - For graphical resources at
+                                                                   http://switch.to/doom2textures   
+
+                          Rick Clark, Crista Forest          - For graphical resources at
+                                                               http://www.doomworld.com/afterglow
+
+			  Konami Ltd. - Title Screen, Contra Music
+
+			  New Line Cinemas, WETA studios - Lord of the Rings stills.
+
+			  Midnight[AUS] / Doom Marine II - For additional co-op testing on 
+							   Doom Connector.
+
+Last-Minute Credit to:    Drew "stx-Vile" DeVore - For Recording a PrBoom Demo that neither Ragnew
+                                                   nor I would be willing to do (were both too
+                                                   accustomed to 60 fps :). Rich ran through map03 in
+                                                   28 minutes, I ran through map03 in 32 minutes, Vile
+                                                   demolished it in 17 minutes, incredible. Vile also 
+						   DESTROYED map04 in just over 13 minutes. A demo that
+                                                   should NOT be missed!!!
+
+                                              ...
+
+
+A Little Bit of Credit to : Shadowrunner/Ralphis - For inspiring some really stupid shit.
+                                                   (you'll understand once you've seen DV's secrets =)
+
+
+
+
+===========================================================================
+
+
+
+
+
+* What is included *
+
+New levels              : Yes
+
+Sounds                  : Yes, DSKEENDT and DSBOSSIT replaced
+
+Music                   : Yes
+
+Graphics                : Yes, Textures and Flats.
+
+Dehacked/BEX Patch      : None
+
+Demos                   : Yes, UV-MAX demos of Map01-04 are included.
+ 
+Other                   : No
+
+Other files required    : None
+
+
+
+
+* Play Information *
+
+Game                    : DOOM2
+
+Map #                   : 01-04, if you want to play Deus Vult in bite sized chunks.
+			  05, the demo recorder's worst nightmare, the full monty.
+
+Single Player           :    Ragnew and I have spent well over 150+ hours each
+                          calibrating the gameplay on UV. The fights may be extremely large-scale,
+                          but we took the time to calibrate them case-by-case, play-by-play... 
+                          the dynamics of the fight are extremely precise as a result.
+                             There are legions of monsters, but health and ammo are given at 
+                          intuitive places and isn't tight as a garrote wire, so the player can 
+                          make plenty of mistakes and redeem himself, this is speaking UV-wise. 
+                          It's more fun than cuthroat, that's for sure.
+			     All monsters behind holographic walls, including secrets, will
+                          be killed by a crusher activated by default, ensuring a fair UV-MAX.
+                          All maps are completable from scratch without the use of freelook, 
+                          access to secrets, or jumping on skill 1-4. 
+		             Be warned though, some parts of Deus Vult may require trial by fire.
+
+Cooperative 2-4 Player  : Throroughly tested.
+                             Full ammo support for a 4 player game w/o items respawn,
+			  multiplayer monsters, extremely convenient co-op shortcuts 
+                          without usage of teleports; the player should be able to reach
+                          the latest fights within 20 seconds of death (providing that
+                          he knows the shortcut, which may take some time to figure).
+			     The difficulty in co-op isn't as crushingly hard as SP, given
+                          the extra padding of ammo and health to compensate for careless deaths.
+			  All maps are completable from scratch in Co-op w/o dying, freelook, 
+                          access to secrets, or jumping on skill 1-4.
+
+Deathmatch 2-4 Player   : Player starts only. Map04 has no DM starts (oops, too late =)
+
+Demo Recording          : All monsters can be killed by one fair means or another, if a monster
+                          is out of reach, there must be a secret teleport, or viewpoint, or secret
+                          room, or powerup that enables the player to kill each monsters in all maps at least
+			  once with relative fairness. All monsters behind fake walls are killed by default 
+                          at a certain point into the game.
+                          
+			  *UV-Max possible for all maps.
+                          *UV-Speed possible for all maps.
+                          *UV-Fast should not be attempted for any map.
+                          *UV-Tyson physically impossible for all maps.
+                          *Pacifist Runs physically impossible for all maps.
+                          *Nightmare runs physically impossible for all maps.
+                          
+Difficulty Settings     : Skill 2 - Should give most casual Doomers a nice easy game.
+			  Skill 3 - Recommended for the regulars, those who played AV/HR on UV before...
+                          Skill 4 - Knowledge of the map and strong hands are required for survival.
+                          Skill 5 - Nightmare Runs are physically impossible for all maps.
+
+Map Names/Quick Info    : Map 01 - *Insurgents*
+                                   Tech base corrupted by hell.
+  
+                          Map 02 - *Torture Chamber*
+                                   The real Hell, not a representation, not a symbolic Hell, 
+                                   this is the real deal.
+
+                          Map 03 - *Cathedral*
+                                   A Cathedral in Hell, real original... *cough*
+
+                          Map 04 - *End of Days*
+                                   The last stronghold of Hell.
+                          
+                          Map 05 - *Deus Vult*
+                                   Map 01-04 in one level.
+
+
+
+
+* Construction *
+
+Base                    : New from scratch
+
+Build Time              : 600+ Hours from October 23rd, 2003 to May 10th, 2004 
+
+Editors used            : Doom Builder 1.5, Deepsea 11.76, Adobe Photoshop 7.0
+
+Known Bugs              : -Sound files may not work properly in Legacy and Prboom,
+                           can be remedied by playing on ZDoom.
+
+                          -MIDI music for Map-02 and Map-04 will not work with Legacy 1.42,
+                           So if you're a Legacy player... be sure to have version 1.41b Ready
+                          
+                          -In Open-GL mode, the "shadowcasting" effects used for different ceiling
+                           and floor lights in the same sector will look weird, 
+                           Open-GL not recommended.
+ 
+                          -PRBoom and other Doom2.exe mimmicking ports will display more slimetrails
+                           in DV, can be remedied by playing on ZDoom.
+                      
+May Not Run With...     : *Map 01-04 will run in PrBoom and higher source ports.
+			  *Map 05 will only run on source ports that supports 65,536+ sidedefs
+
+
+
+			  
+* Hypothetical Comments & Q & A *
+
+Q : What is the best port to play these maps in single player?
+A : ZDoom without a doubt, you get stuck less often, uncapped framerates, and infinite actors heights removed.
+
+Q : What is the best port to play these maps in co-op?
+A : Doom Legacy or ZDoom as of today, you can respawn items in legacy, but you get nice sync with ZDoom.
+
+Q : Why did Map-05 crash my sourceport?
+A : Your sourceport was not ZDoom, and could not handle 42,000 sidedefs.
+
+Q : Map-05 lags like crazy.
+A : Map-05 is just a summation of all the previous levels in one map, you have the choice of playing sections
+    of Map-05 via Map-01 to Map-04, or get a new PC.
+
+Q : This map is wayyyyy too hard!!! Help!!!
+A : Watch the demos included in the zip, or turn down the difficulty settings.
+
+Q : There are too many monsters in Deus Vult...
+A : The Demo Recorders and the Co-op crowd thinks otherwise. Tough.
+
+
+
+
+* Copyright / Permissions *
+
+This is the lumps in DV.WAD I've modified to an extent that credit should be given:
+------------------------------------------------------------------------------------
+1) CREDITs
+2) TITLEPIC
+3) FCANA0, FCANB0, FCANC0
+4) MORDOR
+
+You may use and modify the listed graphical lumps above, 
+provided you include my name in the credits.
+
+Do whatever you want with the rest of the graphical and audio resources, 
+just be sure to trace back those lumps to the rightful author 
+and give him/her the rightful credit.
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse. You may not butcher the author's map without his permission.  
+Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+

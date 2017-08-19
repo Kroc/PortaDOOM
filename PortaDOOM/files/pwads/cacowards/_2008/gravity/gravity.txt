@@ -1,0 +1,75 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : Gravity
+Filename                : gravity.wad
+Release date            : October 18, 2008
+Author                  : Alexander "Eternal" S. (aka Deadall):
+Email Address           : etern-all@mail.ru
+Other Files By Author   : G.o.Evil.wad, Eden.wad, Napalm.wad.
+                          Remain1.wad, Epic.wad,
+                          nordhell.wad, nhell_d2.wad, 
+                          BBB.WAD (Belial's Bad Brain),
+                          RIII, CyberSky.wad, 32innail.wad
+
+Misc. Author Info       : Russia, Moscow.
+
+Description             : Two levels for any limit removing port.
+                          PrBoom-Plus with gamma 1 or GZDoom are recommended.
+
+Additional Credits to   : id Software,
+
+                          The authors of DoomBuilder, DeePsea and DeuTex.
+
+                          MIDIes: marswar.wad, AC/DC
+                          Textures: Eternal IV, Hexen
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01 - Map02
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts included but not tested
+Deathmatch 2-4 Player   : Designed for but not tested
+Other game styles       :
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2 months
+Editor(s) used          : DoomBuilder 1.68, DeePsea
+Known Bugs              : none
+May Not Run With        :
+Tested With             : glboom-plus 2.4.8.5.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

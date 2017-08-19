@@ -1,0 +1,35 @@
+Changes from 1.0 to 1.1
+
+Overall:
++Upgraded data packaging to .pk3
++Added compatibility code for zdoom 2.1.6 and gzdoom 2.0.21
++Beta support for opengl rendering. Some elements still broken (see list below)
+
+Changes
++Added name support to identify talking actors
++Added in signs to talking actor code.
+*Converted dehacked code into decorate definitions
+-Removed dehacked patch
+*Fixed Hub dialog and fade in problems. They are now fully functional.
++Added in dialog speed changer from old code.
++Cut scenes that require normal text speed now behave properly when a faster speed is set
++Talking Nuus now randomize their behavior between chasing and wondering as not to bunch up together.
++Added in death script for grace and elegance.
++Monsters now deactivate when player talks to characters (except for fireballs)
++Added super monsters. (Colored monsters are faster and stronger than regular monsters)
+
+Bug fixes:
+-Fixed tree script would clear the line special before validating which weapon the player was using.
+-Running out of ammo caused odd results when player had karma of full good or full evil. The fix now declares the player as a neutral character and returns the plain fists.
+-all caves now have block-monster flag set
+-HUD messages now appear centered in title map for all resolutions
+-fixed karma printer for the badlands to display a graphic when entering the map
+-cleaned up maps to contain only demo related material.
+-cleaned up ACS libraries and updated various code.
+-Added Nash's fix for foreverhood.ini to display video correctly on certain resolutions
+-Added some new visual eye candy.
+
+Known bugs:
+-HUD turns bluish when player dies in software mode.
+-hi-res textures don’t display properly in opengl mode
+

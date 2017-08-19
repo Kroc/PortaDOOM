@@ -1,0 +1,139 @@
+===========================================================================
+Archive Maintainer      : Please, keep email address in this file
+Advanced engine needed  : Limit-removing port may be needed
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : Alpha Accident: Terra Nova
+Filename                : AA_E1.wad
+Release date            : 25.08.2016
+Author                  : Wraith777
+Email Address           : Wraith777@mail.ru
+Other Files By Author   : Wonderful DooM, Defragmentation Factor
+Misc. Author Info       : Classic Keeper
+
+Description             : I always wanted to make something classic but with 
+			  a new content. This wad has not only new maps, 
+			  textures and music but also new things.
+			  Also there are new monsters (boss included), 
+			  and a new (barely) map hazard - voltage...
+			  Maps in this episode are quite large and more of an 
+			  andventure sort than anything else, but there's
+			  enough monsters to shoot at.
+
+			  I hope this will not end being a cliffhanger, because
+			  there are lot of things saved for later episodes which
+			  I'd like to implement.
+
+Additional Credits to   : Testing - Shadowman, Memfis, Guest, kmxexii
+			  Music - Paul Corfiatis, Kyle "Skunk" Guthrie, Nmn, 
+				  Das Boot
+			  Tools - CodeImp, Greg Lewis, Csabo, Exl, Entryway,
+				  Aap, Zink The Dink
+		          DooM - id Software
+
+===========================================================================
+
+
+* Story so far *
+
+Set on Mars during horrific events on it's moons another marine is stranded
+on old terraformation base, suddenly under attack by unknown force. During his 
+journey he learns that there's something more serious going on than just UAC's 
+genetic experiments...
+
+
+===========================================================================
+
+
+* Instructions *
+
+Zip archive should have those files:
+AA_E1.wad - all maps and resources (sprites, textures, graphics, dehacked)
+AA_E1.deh - Dehacked patch with new monsters, objects, texts
+AA_E1.exe - DooM+ executable patched with AA_E1.deh
+AA_TEXTS.txt - intermission texts, credits
+AA_E1.txt - this file
+AA.bat - don't touch it
+AA_dosbox.bat - Run it to play in dosbox (specify paths to dosbox and doom 
+		folders) 
+
+--------------------------------------------------
+Warning!!! This wad Works only with Ultimate DooM!
+--------------------------------------------------
+
+Jumping, crouching, looking up/down is prohibited.
+
+This wad may be considered quasi-vanilla - it doesn't need a sourceport to
+be played because AA_E1.exe is provided (so, only DooM.wad is needed).
+AA_E1.exe has increased static limits (because some maps are too large and
+can cause visplane or savegame errors), so a limit-removing port should be used.
+
+Most of new objects are interactive.
+
+Voltage sometimes has a little secret about it.
+
+This time a boss fight isn't just your average baron beating.
+
+===========================================================================
+
+
+* What's New *
+
+levels                  : 9
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Ultimate DooM
+Map #                   : E1M1-E1M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-8 Player   : Yes (DM-only weapons and special rooms included)
+Other game styles       : none
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 3 years (or 1,5 without long pauses)
+Editor(s) used          : Doom Builder v.1.68, XWE, Whacked2, Dehacked 3.0
+Known Bugs              : in ZDoom v.2.8.1 and earlier objects appear in front
+			  container sprite after loading a savegame;
+			  otherwise, nothing critical
+			  
+May Not Run With        : Chocholate doom (some maps may cause savegame or 
+			  visplane errors)
+
+Tested With             : Tested in DosBOx with AA_E1.exe,
+			  prboom+ v.2.5.1.3, zdoom v.2.8.1
+
+
+===========================================================================
+
+
+* Copyright / Permissions *
+
+Permissions have been obtained from original authors for any of their resources 
+modified or included in this file.
+
+Authors may NOT use these levels as a base for modification or reuse. 
+
+You MAY use the resources in your own wads as long as you credit the appropriate 
+author. Resources made by me: most of the new sprites, some of the new textures
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format as long as you include this file intact.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+

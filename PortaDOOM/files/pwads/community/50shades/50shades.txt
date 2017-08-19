@@ -1,0 +1,71 @@
+===========================================================================
+Archive Maintainer      : An update to 50shades.zip, includes a patch wad for some moderate issues
+Update to               : (original filename if updating an existing file)
+Advanced engine needed  : "Boom" (PrBoom+ cl9)
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : 50 Shades of Graytall
+Filename                : 50shades.wad
+Release date            : September 1st, 2015
+Author                  : Various
+Email Address           : kneedeepinthebread@hotmail.ca
+Other Files By Author   : some maps in TWID wads and Mayhem
+Misc. Author Info       : CGI sucks
+
+Description             : 50 Shades of Graytall is a project designed around creating maps with interesting architecture and gameplay despite being limited to a selection of arguably hideous textures. Started in response to a silly post made in the Editing forum which led I and several others to attempt maps using the (slightly edited) rules in the post, hoping the result would be decent. Eventually opened up to the community and here we are! Hope you enjoy the maps and if you don't hey Doom projects cant be graytall the time
+
+Additional Credits to   : Gez, for the dumb joke that started an even dumber project. Pinchy for the Title and intermission music. Everyone who mapped for this thing (credits are in the level names gfx), Xaser for taking infinity years to make an infinitely cool map. Alfonzo for the BDSM (pls do not misconstrue)
+===========================================================================
+* What is included *
+
+New levels              : 18
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : Separate patch wad
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-18
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : LMS may work I guess
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Longer than it should have been
+Editor(s) used          : DB2, SLADE, GIMP
+Known Bugs              : visual tricks are broken in OpenGL. Play software, don't be a scrub
+May Not Run With        : Boom incompatible ports
+Tested With             : PrBoom+ cl9
+
+
+* Copyright / Permissions *
+
+Authors (may NOT) use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+

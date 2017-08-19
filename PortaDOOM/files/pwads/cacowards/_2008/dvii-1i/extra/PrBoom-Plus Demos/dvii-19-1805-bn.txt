@@ -1,0 +1,73 @@
+Game: Doom 2
+Pwad: Deus Vult II
+Filename: dvii-19-1805-bn.lmp
+Skill and Style: 4 (UV-Max)
+Map Level: 19 (Vrack4)
+Exe/Port used: GLBoom 2.4.8.1 (PRBoom Plus) -complevel 9
+
+Totals:
+Kills       107%
+Items        95%
+Secrets    100% and (Time- 18:05)
+
+Comments: 
+One of my favorite maps thus far to record on.  The difficulty is just right and it looks very nice as well.
+
+Not too bad of a start.  Just snag up the SG + shells, then use the Dual Pistols to kill everything except the caco while grabbing the dropped ammo (Quite important to do since ammo is a bit tight early on).  Caco is dealt with using the SG.  Make sure to get the secret with the stimpack by hitting a nearby switch to lower the platform it's on.
+
+Kill stuff as you head into the base and go left down the stairs ASAP (It's can be easy to get lost, especially later on).  It should lead to an open area with some sargent and zombiemen w/ some imps and a couple spectres trying to smack you in the back.  Hit a switch nearest to the green armor, then grab said armor and deal with the enemies as you retrace your steps backwards.  Take note of the one door in this area.  It leads to a switch that you need the BK for (Which you won't get for awhile).
+
+Head back up the stairs leading into the inner part of the base and turn left.  Follow the path while killing stuff until you reach a switch.  Hit it and retrace your steps backwards to find a new path open.  Heading down it while killing sargents makes a couple spectres teleport in nearby...and will likely keep teleporting in the relative area they're in. Teleport sound might be annoying, but for maxruns, it's best to ignore them for now.
+
+Anyways, the elevator at the end of the sargent hallway leads to a small connecting path with a HK waiting to ambush you.  Deal with it and head into the next room to take the elevator up.  Kill stuff as you approach the next open area and take the teleporter located in the area.  Go snag the CG, hit the switch, then prepare for a fun fight with HWDs and a couple cacos.  If possible, get a couple of the HWDs to infight with each other or, better yet, with the cacos.  Otherwise just quickly dispatch of them, then kill the cacos before taking the new path leading back to an elevator.
+
+Once you've taken it back up, the nearby alcove is open up.  Grab the medpack and hit the switch, then turn around and go through the new area opened up (Should lead to a couple HWDs that were on the ledge assaulting you after grabbing the CG).  Look for a switch to activate, then deal with the nearby HWDs before heading back to the teleporting spectres.  Deal with them and go through the new path revealed.
+
+At the split where you can choose a path, go straight forward to the wall and search it to find a teleporter leading to secret #2, a computer map.  Head back and turn right after exiting the secret area.  Go straight while dealing with a couple enemies en route to a switch.  Hit it and retreat to the split to take the other path.  Kill the sargents, then take the nearby elevator.
+
+If you're quick enough, you can shoot a switch on your left after the elevator ride ends and grab secret #3 (Bullets and a medpack) before the HWDs can really shoot you up.  Otherwise deal with them first, then shoot the switch on the other side of the area you can't get to just yet and then snag the secret.
+
+As you approach the next room, two HKs will appear to attack you.  Just ignore them and hit a switch to open the door.  Go straight up the boxes and look right for a switch on the back of one of the boxes.  Hit it, kill the HWD and sargent, then go through the path revealed to get to secret #4, a backpack.  Jump out the window and you should see the SSG.  Take it and prepare for a couple mancos and a rev to appear.  Deal with them and take the elevator up to the next level.
+
+Move onto the conveyor to make a couple imps appear on your side of the blockade and a couple HWDs on the other side.  Kill the imps for now and go onwards the only way you can go.  When a caco appears in front of you, turn around and kill the HWD that will attempt to shoot your back, then kill the caco before taking the nearby door to get to those HWDs from before. Kill them and follow the path while killing everything in your way.  You should eventually end up back on the other side of the blockade.
+
+Keep going along the outside and take the stairs to your left to reach the blue zone.  Look for switches to shoot and to hit while dealing with the enemies that appear until you reach the BK right before the teleporter back to the outside path from before.  Continue on it while dealing with resistance along the way until you take an elevator down a level.
+
+There are 3 switches in this area.  One opens the door nearby, but has a cybie you don't want to mess with right this moment.  Another switch activates the elevator you were just on while the final switches opens up the teleporter that lets you enter the red zone.  Kill the PE + souls before entering it.
+
+In the red zone, look for a shootable switch to lower secret #5, a invis sphere, before going on.  Activate the switch where a medpack lies on to reveal a MM.  Take cover and wait for mancos to appear.  Get the MM to infight with them while you hit switches on the boxes and collect items, then kill everything off before running for the RK and the teleporter back up to where the PE + souls were.
+
+Now comes the fun part...you have to run like hell past the cybie, hit the RK switch, then get it to infight with the barons in the area.  There's a few right by where the cybie wakes up and 4 more that are revealed after entering the alcove with the green armor and medpack.  Once the barons are dead, kill the cybie and head to the end of the room.  You should be able to get to the elevator that you took up near the 3rd secret.  Deal with the archie that appears and make way to that door I mentioned near the first green armor of the level.
+
+Inside...a BK switch.  Hit it and take the ladder upwards to a megaarmor and some health, then approach the next ladder to open up secret #6 which has some cells and some interesting to look at.
+
+After exiting the secret area, take the ladder up and hit the nearby BK switch.  Grab the cell pack before grabbing the PG since walls rise after grabbing the PG.  When they lower...you'll have to deal with revs on the path you need to take forward and cacos by the BK switch you hit earlier.  I prefer to break past all the revs, then turn around and kill them and the cacos with the PG before entering the next room.
+
+In this new room, hit the switch, grab the RL + rockets, then prepare for some mancos to appear.  One lone bull demon also teleports in with the sole purpose of running right in front of one of your rockets at point blank range so make sure to quickly dispatch of it when it comes in before resuming assault on the mancos.  Once they're all dead.  Hit the RK switch in front of the Soulsphere, then jump to it to claim the prize and head through the next couple doors while killing an archie in the process.
+
+Return to the first BK switch you hit and head through the door on your right.  Follow it while killing a couple spectres and grabbing some cells.
+
+In the next room, grab the megaarmor, health potions, and cell packs before hitting the switch to activate a conveyor belt with the YK on it.  Approaching the conveyor sets off mass chaos around the level.
+
+First off, imps, spectres, mancos, and revs will appear to block your way out of the room.  PG the lot of them away (Or use rockets, but I'd conserve any you have left ATM), then return back to the fork in the level where secret #2 was.  If you haven't triggered the nearby cacos and HWD by the teleporter, do so now and kill all of them, then head through a door that's opened now to get secret #7.  Shoot the switch to let you get to the other side while also letting you reach the cell packs, megaarmor, and soulsphere.
+
+This is where it gets fun I have to say.  Kill any archies that might come at you, then head back to the split and take the stairs down to where the first cybie was.  Deal with the enemies along the way and grab the rockets on the conveyor belt, then use your YK to open up the door that will lead to a connecting passage into another room.  Inside that one is the BFG.  Before entering it, there's a shootable switch just outside of the room that opens up secret #8.  Some health and cell packs inside.
+
+Grab the BFG, then prepare for a trap.  Plenty of HKs and mancos will teleport into the connecting passage.  BFG them out, grab any cell ammo you can get, then exit.
+
+Here comes the next fun part...there are a boatload of revs with a few archies tossed in the mix through the door to your right. It's risky to try fighting them without an invul.
+
+Thankfully, the final secret has just that.  To get it, find another shootable switch in the alcove with the cell packs and soulsphere, then take the elevator and head towards the green rings to be teleported to it.  After teleporting again, you'll be right in the midst of some enemies near an elevator leading back down to the lower level.  Kill whatever you can en route to it, take the elevator, then go kill the revs and archies by the teleporter leading to the red zone.  With the BFG, it's an easy task.
+
+Mop up everything else before heading for the YK switch, killing stuff along the way.  The YK switch is located in the room with the HWDs you ran across while opening up access to the blue zone.  Be ready for a couple revs and an archie to assault you in the room.
+
+After they're dead, make sure everything's dead and ammo you want is collected.  Taking the newly revealed teleporter after hitting the YK switch leads you to the final area.
+
+Have the BFG out to quickly kill the archies roaming around.  One teleports soon after you reach the area and 2 more appear en route to a switch you need to hit to open up the way to the exit.
+
+Once all that's said and done, approaching the exit triggers the final wave of enemies.  Plenty of cells here so go nuts with the BFG to kill everything (Watch out for the cybie and archies), then take the teleporter that leads to a cool way to end the level.
+
+Not a bad run I'd say considering the length (Hence the reason this txtfile has so much to look through).  Under 18 mins is certainly possible I'd say.
+
+Brian "Anima Zero" Nesser
+Bri8527@comcast.net

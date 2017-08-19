@@ -1,0 +1,158 @@
+===========================================================================
+Advanced engine needed  : Boom compatible
+Primary purpose         : Capture The Flag
+===========================================================================
+Title                   : 32in24 7: Return of the Night of Capture the Flag
+Filename                : 32in24-7.zip
+Release date            : 06/23/2008
+Author                  : The 32in24 team!
+Email Address           : shaikoten@hotmail.com
+			  esselfortium@gmail.com
+			  Other Files By Author   : 32in24.wad (FFA),
+                          32in24sp.wad, 32in24-3.wad
+			  (DUEL CORE EDITION), 32in24-4.wad (CTF)
+                          32in24-5.wad (FFA) 32in24-6.wad (FFA)
+
+Description             : High detail playtested non buggy CTF maps for all
+                          CTF supported ports provided for the US Military
+                          for training for the Nicaraguan Contras in
+                          conjunction with the CIA to promote freedom and
+                          low oil/cocaine prices for all Americans.
+
+			map01 - Fear and Loating in Dwango5
+                        by Rottking and Bucket
+			map02 - Bartlett's III: The Road Warrior
+                        by Esselfortium and Tango
+			map03 - Velocity Kitten Go
+                        by Mechadon and Brinks
+			map04 - The Accursed Gorge
+                        by The Green Herring
+			map05 - R.I.P. Charlton Heston
+                        by Bucket and Nautilus
+			map06 - Bedeviled Duality
+                        by Jimmy and Mechadon
+			map07 - City of Dirty Maniacs
+                        by Stewboy and Rottking
+			map08 - Really Pissed-Off Libraries
+                        by Brinks and Rottking
+			map09 - Keeping it Simple
+                        by Kassman and Worst
+			map10 - The Soviet Russian Time Travel Fortress
+                        by Worst and Kooch
+			map11 - Dastardly Dick's Dizzy Discus
+                        by Xaser and Stewboy
+			map12 - Pyramid at Baron's Gate
+                        by Impboy and Esselfortium
+			map13 - Blood and Water
+                        by The Green Herring and Icytux
+			map14 - Crazy Villagers' Ritual of Sexual Pillagers
+                        by Butts and Brinks
+			map15 - Ill Descent
+                        by Forty-Two and Mechadon
+			map16 - Oh Dear
+                        by Spadger and Mionicdonut
+			map17 - Speedy CTF
+                        by Edwart850 and Impboy
+			map18 - First We Rush Then We Crush
+                        by Nes and Death-Destiny
+			map19 - Flow over Flow
+                        by Nes and Bucket
+			map20 - Tits N' Cowbell
+                        by Mionic Donut, Lockwolf, Nuxius, Bucket
+			map21 - Conglom Lux
+                        by Mechadon and Butts
+			map22 - Gargantuan Retarded
+                        by Rottking and Mechadon
+			map23 - Birth of Headache
+                        by Kassman and Forty-Two
+			map24 - You Gotta Take the Stairs
+                        by Fisk and Nautilus
+			map25 - Satyun
+                        by Butts and Mechadon
+			map26 - Broken Bones and Shit
+                        by Rottking and Esselfortium
+			map27 - Insane Gunslinger Compound
+                        by Brinks and Kassman
+			map28 - Dropping Loads
+                        by Nautilus and Bucket
+			map29 - Major League Dooming
+                        by Nes and Impboy
+			map30 - Icon of CTF
+                        by Shaikoten
+			map31 - Luftwaffles
+                        by Jimmy and Bucket
+			map32 - LOLSMALL
+                        by Bucket, Mionicdonut, Esselfortium
+			map33 - Virgil's Leading CTF III
+                        I'm not sure anyone wants credit for this.
+			map34 - Flushhhhhhhhh
+                        by Bucket and Nuxius
+			map35 - A Bad Place to Live
+                        by Clonedpickle and Impboy
+
+Additional Credits To	: Rob Leidfield, Richard Wagner, bikini models,
+                          deathz0r for being useless.  Essel for doing
+                          too much work.  Cato for assembling.  Mech
+                          for the bigfont.  Shai for general art shit.
+                          Taradino Cassatt for his guns.
+                          
+
+Bonus Pontification     : Hey sup this is Shai and I delayed the release
+                          of this wad for like a couple of weeks because I
+                          said I wanted to write a text file.  So now that
+                          I'm writing it I have nothing to say except
+                          maybe that Impboy sucks really hard and we
+                          probably shouldn't accept his maps anymore for
+                          YEDS related projects.  Also stay tuned for
+                          bitching new YEDS projects that are slated for
+                          release in 2008, including Diet 32in24, Greenwar
+                          2, and 32in24-8 through 10.
+
+===========================================================================
+* What is included *
+
+New levels              : 35
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : CAPTURE DIE FLAG
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 24 hours for layouts, couple weeks for detail,
+                          couple months of incessant bugtesting.
+Editor(s) used          : All of them.
+Known Bugs              : Too awesome.
+May Not Run With...     : Anything that doesn't do CTF
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

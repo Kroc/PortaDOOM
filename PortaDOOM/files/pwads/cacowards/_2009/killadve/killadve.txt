@@ -1,0 +1,88 @@
+===========================================================================
+Advanced engine needed  : Source port to remove visplane errors.
+===========================================================================
+Title                   : Killing Adventure
+Author                  : Ruba
+Email Address           : rubarubyrock@hotmail.com
+Other Files By Author   : The kohe series and many more, my favroite level
+                          is KaKoKa.wad play it!
+Misc. Author Info       : 23 year old dude from Thailand, ladyboy. I have a
+                          girlfriend and love playing doom2. We get a lot
+                          of  overseas tourists to our country. 
+
+Description             : This is an all new a 32 level episode for doom2.
+                          You must adventure through many unique worlds
+                          killing awful monsters along the way. When you
+                          play this in Zdoom you get all the level names. I
+                          learnt how to use mapinfo, add new textures and
+                          add new music. The first 11 levels are on the
+                          ground and then you go into space before heading
+                          into a vivid colorful world of beauty. Many arch
+                          guys and barons and blue enemies and demons will
+                          try and stop you but you have plenty of firepower
+                          to protect you. It took me 4 months to make this
+                          and I back this up on my memory card everytime I
+                          made a level. Thailand monsoon lightning struck
+                          powerline and my laptop was fried but got it
+                          replace with warranty. After that I finish off the
+                          Killing Adventure and I drew the pictuers and the
+                          titlepic and got it scanned at my cousins house.
+                          Took me 3 hours to figure out but got it into
+                          doom finaly. I hope you enjoy the killing
+                          adventure and I also made the skys too.
+
+Additional Credits to   : my girlfriend, vgmusic.com for the awesome music,
+                          the author of midi2mus.exe so I can convert all
+                          music, the author of Doom Builder, the author of
+                          Doom2, the author of Wintex and people who like
+                          playing this.
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : MAPINFO
+Other files required    : get zdoom
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1 to 32
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : I think 4 months
+Editor(s) used          : Doom Builder, XWE, midi2mus.exe and paint
+Known Bugs              : I had problem with visplanes in some of level but
+                          it should run in zdoom with no problems and there
+                          are no bugs at all.
+May Not Run With...     : I dont know
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

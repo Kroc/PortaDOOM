@@ -1,0 +1,207 @@
+===========================================================================
+Advanced engine needed  : Limit Removing (Vanilla except with VPOs)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Mutiny (A Doomworld Community Project)
+Filename                : MUTINY.wad
+Release date            : September 13 2016
+Author                  : Various (maplist below)
+Email Address           : [redacted]
+
+Description             : Mutiny is a 16-level, Limit Removing Community 
+                          Project Episode for Doom 2 intended to be the 
+                          spiritual successor of late 90's cyberpunk themed 
+                          wads such as STRAIN, Hacx, Nimrod, Dystopia 3, 
+                          and Perdition's Gate. It features new colorful, 
+                          high contrast, (intentionally retro) textures 
+                          inspired by the works of Iika Keranen and 
+                          Anthony Czerwonka, complete with plenty 
+                          radioactive signs, warning stripes, computers, 
+                          slime, and rust.
+
+Story                   : It's 2028 AD. You're an elite cyborg marine. The 
+                          UAC has risen as the most powerful 
+                          megacorporation in the galaxy, and has 
+                          commissioned you along with its squad of crooked 
+                          super soldiers to maintain order on Earth. You 
+                          were sent on a mission to New Orleans to defend 
+                          the city from the recurring invasion of the 
+                          cybernetic mutants. When your helicopter is shot 
+                          down over the bay by friendly fire from renegade 
+                          UAC marines, you and your squad mates crash land 
+                          in the harbor and are presumably dead. At least 
+                          until the shockwave from a nearby EMP missile 
+                          explosion shocks you back to life. You swim to a 
+                          nearby submarine deployment station and begin 
+                          your rogue mission to crush the UAC, destroying 
+                          anything and anyone that crosses your path.
+
+Additional Credits to   : See Below
+===========================================================================
+* What is included *
+
+New levels              : 16 (MAP01-MAP15, and MAP31)
+Sounds                  : No
+Music                   : Yes
+Graphics                : Textures, Status bar, misc sprites
+Dehacked/BEX Patch      : Automap mapnames and Story Interlude text only
+Demos                   : No
+
+
+* Play Information *
+
+Game                    : Doom 2: Hell on Earth
+Map #                   : MAP01-MAP15, and MAP31
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Other game styles       : Survival Cooperative
+Difficulty Settings     : Yes, and tested
+
+
+* Construction *
+
+Base                    : New from scratch
+Tested With             : prboom-plus (cl2) and other limit
+                          removing source ports
+
+
+=====CREDITS=====
+
+Mutiny is a Doomworld Community Project lead by Jon "40oz" Vail.
+Below is a list of all the community members that contributed to
+Mutiny's success. Without their help and invaluable input this 
+project would not have been completed.
+
+Special Thanks to id software, John Romero for releasing unused
+Doom 2 resources in December of 2015, The Alpha Dog Alliance, 
+for STRAIN, Iika Keranen and Anthony Czerwonka for Dystopia 3, 
+The Nimrod Team for Nimrod, Wraith Corporation for Perdition's 
+Gate, Banjo Software for Hacx, and the many Doom marines whose 
+continued interest in Mutiny helped push it to completion.
+
+Additional Special thanks goes to dt_, AD_79, MrGlide, and 
+traversd, for investing so much time and dedication into the
+project and who were particularly helpful in contributing to
+the projects success. Congratulations on your newborn son,
+MrGlide! I hope your son Nicholas gets better, traversd!
+
+==MAPS==
+
+MAP01: Surface..................Fonze, Jimmy, and 40oz
+MAP02: Shipyard.................Pinchy and Tarnsman
+MAP03: Crossbug.................MrGlide and Ribbiks
+MAP04: Warzone..................joe-ilya, AD_79, and 40oz
+MAP05: Slums....................dt_
+MAP06: Faceless Corporation.....Angry Saint, Corsair, and dt_
+MAP07: Bunker Base..............40oz
+MAP08: Compactor................Pavera and jmickle66666666
+MAP09: Construction Site........Impboy4, Doomkid, and dt_
+MAP10: Generator................scifista42, NoneeLlama, and dt_
+MAP11: The Furnaces.............AD_79 and 40oz
+MAP12: Wildcard.................purist and traversd
+MAP13: Laboratory...............Egregor and 40oz
+MAP14: The Firewall.............AD_79 and Breezeep
+MAP15: Breaching The Unknown....KevinHEZ and dt_
+MAP31: The Brain................40oz
+
+Special Thanks to:
+Archi, an_mutt, Phml, Demonologist, Mithran Denizen, Springy,
+nxGangrel, SuperCupcakeTactics, Xaser, Obsidian, JCD, 
+FranckFrag, TraceofSpades, Marcaek, Lycaon, MD922, obake,
+chaingunnerx, and Vorpal for investing considerable time
+in working on the project, and/or expressed interest in
+contributing to the level building process even though their
+maps did not make the final cut. Your time and interest is
+noticed.
+
+==TESTERS==
+
+40oz
+AD_79
+Dime
+SlashBane
+Getsu Fune
+TheMionicDonut
+molten_
+TraceOfSpades
+Fonze
+Magnusblitz
+gaspe
+BaronOfStuff
+DoomMasta
+scifista42
+rdwpa
+Phobus
+MrGlide
+EffinghamHuffnagel
+hawkwind
+Veinen
+ClumsyDoomer
+Demonologist
+Firedust
+Eris Falling
+Keyboard_Doomer
+TeamTNS and various members of the ZDaemon community
+
+==GRAPHICS==
+
+Title Picture: MrGlide, 40oz
+Textures: id software, 40oz, Gothic, Jmickle666666666, and nxGangrel
+Other Graphics: id software, Jmickle666666666, 40oz, and Doomkid
+
+==MUSIC==
+
+Musical Director: Alfonzo
+
+"Mutiny definitely comes across as a call-back to the vibrant, 
+colour-rich mapsets of the late '90s like STRAIN, and so within 
+the limits of 30in30 I tried to pick out tracks that would pair 
+with this imagining. Jimmy's speedier compos tend toward strong 
+refrains and structures - sometimes cheesy, sometimes ill-suited 
+for Doom - so there was plenty of opportunity to fashion something 
+unique using angry, guitar-driven tracks and some pop-like elements, 
+without going overboard. I think it worked out okay!"
+
+MUSIC LIST:
+
+title - Conker_64 "Contra 3: Alien Wars Intro Music"
+map01 - jdagenet
+map02 - Jimmy "Drop The Wombat"
+map03 - Jimmy "Torsal Torsion"
+map04 - Jimmy "Tar"
+map05 - Jimmy "Cyanide Downpour"
+map06 - Jimmy "CHaRybdIS"
+map07 - Jimmy "Destruct"
+map08 - jmickle66666666 "Take these pills and be who you are"
+map09 - Doomkid
+map10 - Jimmy "Stairway Fairway"
+map11 - Jimmy "Potioneer"
+map12 - Jimmy "Gatorade Nightmare"
+map13 - Jimmy "Delay(0); Restart;"
+map14 - Jimmy "Iodine"
+map15 - KevinHEZ
+map31 - Viscra Maelstrom "Welcome to the New World
+inter - Leo Sieben "Sadistic"
+mread - Tom Mustaine "Horizon"
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse. Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+All graphics and textures used in Mutiny are made from scratch or use
+Doom or Doom 2 assets as a base. The green crosses on the health items
+are compliant with the Geneva Convention's request to developers to
+not misuse the protected red cross symbol. And it looks cool. 

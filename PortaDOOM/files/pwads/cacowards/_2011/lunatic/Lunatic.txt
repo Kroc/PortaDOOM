@@ -1,0 +1,93 @@
+===========================================================================
+Advanced engine needed  : Boom compatible, limit removing ports
+Primary purpose         : Single player
+===========================================================================
+
+Title                   : Lunatic
+Filename                : Lunatic.zip
+Release date            : August 11, 2011
+Author                  : Paul DeBruyne (skillsaw)
+Email Address           : pgdebruyne@gmail.com
+Other Files By Author   : Sector 666 (666.zip)
+			  Aeternum (Aeternum.zip)
+			  ZPack E3M1 and E3M8 (Zpack.zip)
+			  Stronghold: On the Edge of Chaos (Strhedge.zip)
+				(STR08,STR23,STR24,STR31)
+                          Vanguard (Vanguard.zip)
+                          Hanging Garden (hgarden.zip)
+Misc. Author Info       : Makes maps for Doom
+Description             : The moon's orbit was slowed due to a headon collision with a giant ball of demons.  
+			  Escape the moon before it crashes into the Earth!  
+
+			  Lunatic includes 5 Boom-format maps for Doom 2.
+			  Please play Lunatic with PrBoom+, Zdoom, or Eternity.
+
+Additional Credits to   : Lunatic uses graphics by:
+				NiGHTMARE		Espi
+				Fredrik Johansson	DaGGeR		
+				skillsaw		scalliano
+                                Xim			Ghastly_Dragon
+                                Captain Toenail         ItsNatureToDie
+                                neoworm                 id Software
+				Valve			3d Realms
+			  
+			  Lunatic includes music from:
+				Title Music :  Final Fantasy IV
+				Intermission:  Journey to Silius
+				Map01       :  Tyrian 2000
+				Map02       :  Lotus 3
+				Map03       :  Viper Phase 1
+				Map04       :  Tyrian 2000
+				Map05       :  Europe
+			
+			  Thanks to esselfortium for much welcomed nitpicking and DeHackEd support.
+
+			  Thanks to the Doomworld community for helping me fix bugs and improve the gameplay
+                          and visuals.  
+			  		
+===========================================================================
+* What is included *
+
+New levels              : MAP01-MAP05
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : -
+Other                   : MAPINFO/EMAPINFO
+Other files required    : -
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-05
+Single Player           : Designed for
+Cooperative 2-4 Player  : Untested; player starts included
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Maps new from scratch; texture wad based on CC4-tex
+Build Time              : About 10 weeks
+Editor(s) used          : Doombuilder 2, SlumpEd
+Known Bugs              : None known			  
+
+* Copyright / Permissions *
+
+Authors may use the remaining contents of this file as a base for 
+modification or reuse.  Permissions have been obtained from original authors 
+for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

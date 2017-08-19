@@ -1,0 +1,11 @@
+
+12 DEC 2009 - Fixed Co-op play problems in MAP29.
+	      Fixed minor bugs in MAP19 on request.	
+
+19 SEP 2009 - Some texture alignments in MAP25.
+	      A few minor changes to MAP24.
+
+17 SEP 2009 - Fixed Demon teleport bug in MAP02.
+	      Fixed a minor linedef bug in MAP19.
+
+15 SEP 2009 - Original Release.

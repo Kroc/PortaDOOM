@@ -1,0 +1,84 @@
+===========================================================================
+Advanced engine needed  : Boom-compatible with OGG music support
+Primary purpose         : Single play
+===========================================================================
+Title                   : Reconstruction/Decomposition
+Filename                : rc-dc.wad
+Release date            : April 12 2015
+Author                  : Da Werecat
+Email Address           : werecat13@gmail.com
+
+Description             : A silver spaceship with custom textures. Loosely
+                          based on Termination by mrthejoshmon. The second
+                          map in the wad is just a small "outro" level.
+
+                          This is version 4. For a changelog see the
+                          CHANGES lump inside the wad.
+
+Additional Credits to   : mrthejoshmon (map base)
+                          Aubrey Hodges (music track)
+                          Sound Ideas (second map sfx)
+                          Raven Software (landing sfx)
+                          Mechadon (wispy night sky)
+                          id Software
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : Engine-specific things
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01, MAP02
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Modified
+Build Time              : Around 3 weeks for the first version of the map
+Editor(s) used          : Doom Builder 2, Adobe Photoshop, XWE, SLADE,
+                          Boom Animation Manager, WhackEd4
+Known Bugs              : * Eternity:
+                          - Small fan shadows aren't synchronized
+                          * DOS Boom and MBF, WinMBF:
+                          - A few rare textures are too tall for these
+                          engines to display correctly; then again, music
+                          won't work there anyway
+                          * PrBoom+:
+                          - If you're a weirdo who's using the jumping
+                          feature for anything other than debugging - I
+                          hope you like sky seams
+May Not Run With...     : 3DGE, because of its incomplete set of Boom
+                          features
+Tested With             : PrBoom+ 2.5.1.4.test, Eternity Engine 3.40.46,
+                          ZDoom 2.7.1, GZDoom g2.0.04, Zandronum 2.0
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

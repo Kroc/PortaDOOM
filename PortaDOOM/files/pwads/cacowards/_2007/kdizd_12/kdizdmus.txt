@@ -1,0 +1,69 @@
+===========================================================================
+Advanced engine needed  : ZDoom or GZDoom
+Primary purpose         : No levels included
+===========================================================================
+Title                   : Knee Deep In ZDoom Soundtrack
+Filename                : kdizdmus.wad 
+Release date            : 6/2/07
+Author                  : Joseph Ritter/"dethtoll" for the wad, kinkiness
+                          for the music
+Email Address           : LHCLEGION@gmail.com
+
+Description             : This is just a simple music wad for Knee Deep in
+                          Zdoom, as a soundtrack for KDIZD was promised but
+                          not delivered. All tracks are remixes of standard
+                          Doom music, and are freely available on the
+                          author's website: http://kinkiness.de
+
+Additional Credits to   : kinkiness, a German musician, who remixed these
+                          tracks and more. If you reuse the files herein,
+                          don't give credit to me, give credit to
+                          kinkiness!
+===========================================================================
+* What is included *
+
+New levels              : none
+Sounds                  : No
+Music                   : Yes
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None (Does not actually require KDIZD.pk3, but
+                          was intended for such)
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : Music for E1M1 through E1M9, plus E3M7 which
+                          Z1M10 uses, plus title and intermission screens
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Editor(s) used          : XWE
+May Not Run With...     : Anything that doesn't have FMOD/mp3 support.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

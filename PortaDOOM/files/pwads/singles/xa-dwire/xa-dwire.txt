@@ -1,0 +1,106 @@
+===========================================================================
+Primary purpose         : Single Player
+Advanced engine required: GZDoom
+===========================================================================
+Title                   : dead.wire
+Filename                : xa-dwire.wad
+Release date            : 9/26/2015
+Version                 : 1.0
+Author                  : Xaser Acheron
+Email Address           : xaser.88@gmail.com
+
+Description             : Single map for GZDoom (Doom 2), made for
+                          Tormentor667's Doomja Vu. Creepazoid atmosphere
+                          with custom weapons / enemy edits. 'Nuff said.
+
+                          You are an engineer employed by the UAC to
+                          investigate the source of a strange signal
+                          originating from an abandoned facility.
+
+                          This wad tells the tale of what happens next...
+
+Additional Credits to   : Lots of folks -- see Credits section at the end.
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes (Textures n' sprites)
+Dehacked/BEX Patch      : Yes (DECORATE n' such, really)
+Demos                   : No
+Other                   : Yes (Stuff)
+Other files required    : None
+
+===========================================================================
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Maybe
+
+===========================================================================
+* Construction *
+
+Base                    : Tormentor667's Doomja Vu base map, which in turn
+                          is based on Ultimate Doom's E1M7. Little remains
+                          aside from a vague sense of layout.
+Build Time              : 3-ish (rather sleepless) days.
+Editor(s) used          : GZDoom Builder, SLADE3
+May Not Run With...     : ZDoom/GZDoom's software renderer. Use GL and
+                          enable dynamic lights.
+
+===========================================================================
+* Credits *
+
+Map:
+ - Tormentor667 (and kinda id Software) for the base, o'course
+ - Xaser made the rest oh no
+
+Textures:
+ - a bunch from Chasm: The Rift, ripped by zrrion the insect
+ - couple by Ed Cripps (DECOTX*), from Putrefier
+ - a few xasery things (TSTATIC*)
+ - some space sky from somewhere
+ 
+Music:
+ - "dead.wire" by BouncyTEM (original track)
+ - "theme" by Mortimer Twang (from Modarchive)
+ 
+Sounds:
+ - HQ doom sounds by Per Kristian Risvik
+ - M16 firing sound by Kate
+ - Laser and HRC firing sounds from Descent 2
+ 
+Weapons:
+ - M16 sprites from Terminator Rampage, edited by JoeyTD and Xim
+ - Laser sprites by FuzzballFox [?]
+ - HRC sprites by zrrion the insect
+ - Rifle and Flamethrower borrowed from ZDCMP2, but Xaser made those anyway
+ - Xaser did weaponcodings all around
+ 
+Misc.Sprites:
+ - Torches by ravage (rf)
+ - Candelabra by zrrion the insect
+
+===========================================================================
+* Copyright / Permissions *
+
+Authors MAY NOT use the map as a base for modification or reuse.
+
+Authors MAY use any non-map resources as a base for modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+http://static.angrysience.net/pub/doom/
+http://idgames.doomworld.com
+in your brain

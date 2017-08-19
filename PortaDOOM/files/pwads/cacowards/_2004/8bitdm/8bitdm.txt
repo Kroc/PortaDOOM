@@ -1,0 +1,150 @@
+===========================================================================
+Update to               : None
+Advanced engine needed  : zDoom, zDaemon
+Primary purpose         : Deathmatch
+===========================================================================
+Release date     : 05 Mars 2oo4
+Title            : 8 Bits Deathmatch
+Filename         : 8bitdm.wad
+Author           : G0dCells
+Email Adress     : emmanuel_rousseau at uqac dot ca
+WWW        : http://doom.8bit.at/
+Misc. Author Info       : 22 years old mapper.
+Other Files By Author   : Freedoom map E1M8
+
+Description: This is a try to recreate Doom as it would be done in the 80's 
+	     :P. 
+	     My first DM package. So it's not as great as Exec.wad, 
+ 	     brit11.wad or dwango serie... Remember 80's? Oldschool graphics 
+	     from old arcade games? Expect hyperactive graphics and music, fast 
+	     Deathmatch and a very original concept. It's just weird. Try it!
+  	     
+Additionnal Credits to :	Id Software, zDaemon Staff
+		      	Big thanks to those beta testers for their comments and suggestions : 
+				Sgt levi
+				SKULLERS
+				SONICICE
+				KALASHNIKOV
+				Il Professor
+
+			Thanks for playing the betas :
+				JASONPEL
+				ManofSteel
+				WHAT THE GOD?!
+				NABITO
+				MIST
+				Serbian Warrior
+				MIROKU
+				Kilg0re
+				(SSA)CHEIFROCKA
+				Sloughter
+				Cellphone
+				Camarade_CCCP
+				TETRONIOUS
+				RICK_TAYLOR
+				Knives69
+				jmanico
+				PSYTHOR
+
+				Thanks you very much!
+
+I hope you'll enjoy the 1h00+ playtime! Here is the listing of song's trakers, so:
+
+D_RUNNIN.XM  -- [Disturbed] by rez
+D_DM2INT.MOD -- [Red Velvet] by MrDeath
+D_STALKS.MOD -- [Central park] by Matt Gray
+D_COUNTD.s3m -- [Option (gradius2)] by virt
+D_BETWEE.s3m -- [Satellite One] by Purple Motion
+D_DOOM.mod   -- [Monday] by Rez
+2020.xm	     -- [Starcast 2020] by Rez
+autonomu.s3m -- [Autonomus] by Skaven/FC
+blast_of.s3m -- [Blast Off] by Virt
+chopper.mod  -- [Chopper 1] by ???
+delta.mod    -- [Delta] by Rez
+Fucked.mod   -- [Fucked] by Diesel
+hlp_32k.mod  -- [hlp 32k] by Dune
+analyzer.mod -- [Analyzer] by Emax
+interchi.mod -- [Interchip] by flite/$ceptic, emax, trsi! melody and virgill
+nimipaei.xm  -- [nimipaeivaelaudu] by floppi
+transu.xm    -- [transu-hansu] by floppi
+kenzalol.mod -- [kenzalol] by Rez
+bubble.mod   -- [Bubble bobble] by LizardKing & some1
+fellow.mod   -- [Fellowship.cr] by LizardKing
+ShivanD.mod  -- [Shivan Dragon] by LizardKing
+turrigol     -- [Turrigol] by Moby
+Blitz.mod    -- [Blitz] by Monty/analog
+beyond.mod   -- [Beyond Voyage] by pink of abyss^$ceptic
+motion.s3m   -- [Charts overdrive-PM] by Purple Motion/Future Crew
+rotofuel.mod -- [r0t0f3ul!] by Rez
+imploder.xm  -- [Imploder remix] by reed/fairlight! and Paul Van Der Valk
+tykrod3.s3m  -- [tykrod] by svolkraq
+track.mod    -- [Track the pattern] by goto80, quikk and drity tekkno
+give_me.mod  -- [Give me an om] by Vim/eltech
+nuffnaff.mod -- [Nuffnaffness] by Vim/eltech
+arkanoid.mod -- [arkanoid.rmx] by zalza/cs and t q l
+
+I appriciate a lot those artists who accepted to release those high quality 
+modules songs freely at http://www.chiptune.com/ for public use.
+
+Regards.
+
+===========================================================================
+* What is included *
+New levels              : 7
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No (describe if yes)
+Other files required    : None
+
+* Play Information *
+Game                    : DOOM2
+Map #                   : map01 to map07
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : Nope
+Difficulty Settings     : Not implemented
+
+
+
+* Construction *
+Base         : Totaly from scratch.
+Build Time   : 5 weeks. (about 3-4 hours a week on drawing). This is very 
+		impressing to see how Doom Builder is a great editor. It saved 
+		me a lot of time.
+Editor(s) used : Doom Builder 1.03, Wintex 5.0, XWE, Paintshop pro 6 and XM player.
+Known bug    : Some wall can hang movement... Don't know how to fix this... 
+		don't worry it don't happen often. Blinking textures aren't 
+		bugs.
+
+May not run With... : doom2.exe :)
+
+Modification after beta testing :
+		- Fixed cramped gameplay from Map04 (Pacman)
+		- Fixed visualy blocking "Welcome to 8 bit DM" on map01.
+		- Fixed the time bricks remain down on map02. (Breakout)
+		- Fixed some missing weapons, and missing jumping object on map05. Qbert's last Jump.
+		- Fixed a lot of bug from the last map, map07, added items, remove camera object.
+		- Fixed the bad placed teleport destination for the BFG9000.
+		- Added 8bit style weapons by request from Skullers and Sonicice. ;-) It's better.
+		- Slowed down the blinking frequency of PURPLE texture.
+		- Fixed the random music system, now music change for every levels.
+
+* Copyright / Permissions *
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://doom.8bit.at/
+

@@ -1,0 +1,71 @@
+Game: Doom 2
+Pwad: Deus Vult II
+Filename: dvii-13-1521-bn.lmp
+Skill and Style: 4 (UV-Max)
+Map Level: 13 (Eagle's Nest)
+Exe/Port used: GLBoom 2.4.8.1 (PRBoom Plus) -complevel 9
+
+Totals:
+Kills       105%
+Items        77%
+Secrets    100% and (Time- 15:21)
+
+Comments: 
+Here's another solid map all around.  I can't put a complaint about anything here except for one area that can be a pain in PRBoom Plus, but I'll get to that later.
+
+For now, the first third of the level consists of a climb up the mountainside.  A tricky climb since your view will be blocked by the plants and the tight space for manuerving.  Best way to handle this is to go slow and take out any monsters along the way.  
+
+Revs along the way will be the tougher parts of the climb because the minimal space to dodge without falling down the entire mountainside makes it very hard to dodge their missiles.
+
+There's 4 secrets you can get along the way, a SG right at the very beginning, a berserk pack at the teleporter surrounded by YSK pillars (But also causes a couple imps, HKs, and an archie to teleport in), a computer map up on a platform, and a plasma cell near the point where many imps teleport in.  Grab them along the way except perhaps for the berserk pack as you might want to conserve the health boost for later.
+
+Second third of the map begins when you reach the top of the mountain.  At this time, a pillar nearby rises and many revs teleport onto it.  Ignore them and go around the outside to slay the imps, then go inside the green slime pillar to be teleported to a small alcove with a HK (Whom will be telefragged) and an elevator that leads to some rockets.  Grab them and run like hell so those rev missiles don't hit you.
+
+Still on the outside is a RL on a pillar just waiting to be lowered.  Kill the 2 HKs that appear, claim the RL, then keep moving around the outside collecting rockets until you get back to where the revs on the pillar are.  Waste them before entering the main keep.
+
+There isn't too much to be overly worried about here.  Taking that archie out is the main priority, but other than that the wave of HWDs that come from the nearby doors should be easy to handle with plenty of cover to utilize.
+
+Inside one of the doors is a wall you can run over...but don't do that.  Just get on top of it and move to the alcove that had a HWD in it to get another secret.  Move in any direction and you should get teleported to the other alcove.
+
+Now you would think "What's the use of this teleporter?  It just leads to nothing".  That would be wrong.  Turn left and move forward after teleporting to get to another secret.  An interesting one indeed.  Keep going forward to be teleported back to the keep.
+
+Heading deeper inside leads to some minor resistance, then a cybie and several barons.  The cybie won't wake up until you get close to the barons.  Do that, but don't wake the barons up.  You'll want to have the cybie start infighting with the barons while you sneak into the nearby room it's guarding if at all possible.
+
+In here, you'll want to head to the way back outside that's blocked by a YSK pillar.  Look for the targetting icon outside and shoot at it to open up a nearby secret, an invul.  Don't take it just yet.  Instead, go grab the Plasma Gun.  This locks you in the room and various enemies start to appear.  
+
+Grab the invul, then spend any rockets you have left before using the Plasma Gun.  While doing this, grab the YSK when it appears and open the YSK pillars so the cybie can give some assistance in killing the enemies.  Waste the cybie only when everything else is dead.  With any luck, you should be able to take out the cybie with cells to spare.  This helps with taking out the enemies by the berserk pack secret quickly.
+
+After the action dies out, open up the way outside, then jump out of the window and run like hell back towards the keep.  A teleporter lowers by the entrance to the keep that brings you to the first of two optional areas.  You don't have to do this if you don't want to unless you're aiming for 100% kills and secrets.
+
+The optional area is dubbed the Hell Knight Siege for good reason...soon after teleporting to the large island, HKs teleport in at the opposite side of the island.
+
+This is where those using PRBoom Plus will have some difficulty.  You see, there's a giant ugly slimetrail that can block your vision here and make this fight much more painful than it should be.  It's not fixable though so unless you're playing this level in ZDoom (Which doesn't have this problem at all), you'll want to be quick about disposing of all the HKs), you'll have a tough time here.
+
+For me, once I fell back enough after intially slaughtering as many HKs as possible, I tried to hang out by the right side of the island in order to minimize interference from the slimetrail and go from there with rocket spamming until all HKs are dead.
+
+After all this is settled, you can take the warp right back up to where the RL used to be.  Activate the panel nearby with your YSK, then hit the switch behind it to lower the pillars around the teleporter near the berserk pack secret.  Head there now and grab said berserk pack if you haven't yet, then deal with the resulting enemies.  Archie should be put down quickly before worrying about the other enemies.
+
+Once everything is dead and you're ready to go, take the teleporter and keep moving forward thru more teleporters until you arrive at a connecting area leading to the final third of the level.  Kill the two HKs, then examine the cross symbol that looks right side up to open the way forward.
+
+Final third of the level...you'll get a BFG right away.  Use 1 or 2 shots to clean out a bunch of the imps, then resort to rockets to mop them and other minor enemies up.
+
+From here, the only time you'll want to use the BFG again at the rev + caco group to thin the army out some, then once again mop up with rockets.  The more cells you have when you begin the fight for the 2 remaining skull keys, the better off you'll be.
+
+Once all visible enemies are killed and supplies picked up, approach either the megaarmor or the soulsphere.  Either one will lower two walls, both with an archie in them as well as the final 2 skull keys...but also makes more monsters teleport in.  Use the BFG and put priority on killing those damned archies.
+
+As for the skull keys, both can be used nearby.  One triggers another archie to teleport in so kill it quickly.  The other one opens up the exit.  You could opt to go through it and end the level.
+
+For those who're shooting for 100% kills and secrets though, there's another optional battle area to go to.  To reach it, shoot the switch located in one of the manco alcoves to open up a teleporter.  Taking it allows you to telefrag the cybie...but after that, just move backwards into the pitch black area.  Manuever to either side of the hallway and fall downwards to reach a very familiar area.
+
+It's seems familiar because it's the revenant curve from DV Map 3 once again :P.  While running around waking up the revs, kill the lone archie by the switch, then hit it and try to grab the invul inside.  Have as many cells as possible.  600 would be great, but 500 or so oughta be fine too.
+
+By snagging the invul, the way forward opens up...all filled with HKs and archie of course :P.  Use the BFG and slay most or all of the archies.  At around 200 or so cells remaining, starting blasting your way back to the curve and collect more cells.  Once the invul wears off, keep at it with the assault and use up all cells before resorting to rockets.
+
+Once done here, take the teleporter back to the previous area and go to the exit.
+
+All in all, a fairly good run on a semi-tricky map.  Mistakes of course with the biggest one being at the berserk pack secret before going through the teleporter.  I get extremely near death's door there due to a stupid move I did.
+
+Time-wise...sub 15 oughta be a good goal to aim for.
+
+Brian "Anima Zero" Nesser
+Bri8527@comcast.net

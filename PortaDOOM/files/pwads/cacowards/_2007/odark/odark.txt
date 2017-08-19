@@ -1,0 +1,123 @@
+
+_ _ _ ____________________________ _ _ _ ____________________________ _ _ _
+
+                    T h e   O u t e r   D a r k n e s s
+      _ ________ _ _ _ ______________________________ _ _ _ _______ _
+
+
+Date Finished           : 1 August 2007
+Author                  : Varun Abhirama Krishna
+Homepage                : http://varunabhiram.com
+Email Address           : anomaly87@yahoo.com
+Misc. Author Info       : I'm 20 years old, and I'm from India. I
+			  hardly play Doom any more, you can have a
+			  look at the other stuff I do on my blog.
+
+Description             : This map is heavily inspired by Episode 4 of
+			  The Ultimate Doom, especially E4M1 and E4M6.
+			  It was originally made for a project called
+			  The Ninth Gate that never saw the light of day.
+
+			  Most of it was made (on and off) during
+			  2001-03 using DoomCAD (the exit area was built
+			  using Doom Builder though). I didn't know you
+			  could select multiple linedefs in DoomCAD back
+			  then, so I was actually insane enough to
+			  manually select each and every linedef, apply
+			  the texture and align it. If only I had that
+			  kind of patience/time now :)
+
+			  The map is very straightforward (too
+			  straightforward maybe?), so you shouldn't
+			  have any problems finding your way. The level
+			  music is from Duke Nukem 3D, the other 
+			  tracks (which are awesome IMO) were composed
+			  by Damian Lee.
+
+			  Note: The lava in the map doesn't hurt,
+			  it's used for artistic purposes only.
+
+Advanced engine needed  : Requires any limit-removing source port.
+
+Other WADs by me        : (1) The Anomaly: Part II
+                          (2) Short 'n Quick
+                          (3) Short 'n Quick 2
+                          (4) Reanimated
+
+Special Thanks to       : Pablo Dictter and Opulent for beta-testing and
+                          very useful feedback.
+
+                          Karthik Abhiram for testing the level at
+			  the lower skills and for general suggestions.
+			
+			  Damian Lee for the awesome music.
+
+                          You guys for playing!
+
+                          
+      _ ________ _ _ _ ______________________________ _ _ _ _______ _
+_ _ _ ____________________________ _ _ _ ____________________________ _ _ _
+
+
+-:.: Type of DOOM or DOOM II file :.:-
+
+New level WAD           : Yes
+
+
+-:.: Play Information :.:-
+
+Episode and Level #     : E4M1
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes, from dead easy to deadly :)
+New Sounds              : No
+New Music               : Yes - three tracks by Damian Lee, level music
+			  from Duke Nukem 3D
+New Graphics            : Titlepic (made from an image I found
+			  on the net)
+Demos Replaced          : No
+
+
+-:.: Construction :.:-
+
+Base                    : New level from scratch
+Build Time              : Roughly 2 months, during 2001-03
+Editor(s) used          : DoomCAD 6.1, ZenNode 1.0.8, XWE
+			  Doom Builder (only exit area)
+Known Bugs              : None
+May Not Run With...     : Doom2.exe
+
+
+
+
+_ _ _ ____________________________ _ _ _ ____________________________ _ _ _
+      _ ________ _ _ _ ______________________________ _ _ _ _______ _
+
+
+
+-:.: Copyrights / Permissions :.:-
+
+Authors may NOT use this level as a base to build additional
+levels.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+_ _ _ ____________________________ _ _ _ ____________________________ _ _ _
+
+
+-:.: Where to get this WAD :.:-
+
+The usual: The /idgames archives and mirrors
+	   (search for odark.zip at
+	   http://www.doomworld.com/idgames)
+
+Other: http://varunabhiram.com
+
+_ _ _ ____________________________ _ _ _ ____________________________ _ _ _
+
+
+                              [ End of file ]

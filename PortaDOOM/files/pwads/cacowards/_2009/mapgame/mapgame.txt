@@ -1,0 +1,65 @@
+===========================================================================
+Advanced engine needed  : Boom compatible (runs well on zdoom, prboom, and
+                          eternity)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Mapgame
+Release date            : now
+Author                  : rf
+Email Address           : dragon_69283@yahoo.com
+Credits                 : Wraith & Banjo for sounds (hell2pay and hacx)
+                          Jim Flynn for htranmap.lmp
+                          At least a dozen people for testing
+                          Esselfortium for being magic
+                          Quasar` for the chair
+                          Id software for the high standards
+
+===========================================================================
+* What is included *
+
+New levels              : Replaces episode one
+Sounds                  : Yes
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E1M1 - E1M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Too fucking long
+Editor(s) used          : Doombuilder, NwtPro 1.14b, Inkworks, Slumped,
+                          DeHackEd
+Known Bugs              : There better not be any D:<
+May Not Run With...     : KDIKDIZD
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

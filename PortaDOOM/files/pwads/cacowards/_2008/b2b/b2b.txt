@@ -1,0 +1,74 @@
+===========================================================================
+Title                   : Back to Basics
+Version			: 1.1
+Filename                : b2b.wad
+Release date            : 16.12.2007
+Author                  : Espi
+Email Address           : esa.repo@phnet.fi
+Other Files By Author   : A bunch.
+Misc. Author Info       : Finnish doom freak.
+
+Description             : After making a large map with slopes, scripts, all new resources
+			  and whatnot, I felt like making something very basic.
+
+			  Also used this opportunity to get some maps that were gathering
+			  dust finished and released; a very old episode 2 project (although
+			  I have released e2m1 of that project before as e2m1er.wad), and a
+			  project for EDGE that got to 1½ levels (Rust). The maps were
+		 	  converted to use vanilla resources only (except for the sky).
+
+			  E2M5-E2M9 however are brand new levels for this release. The wad is
+			  tested to be vanilla compatible, though during mapping it has mainly
+			  been tested with ZDoom for convenience's sake. Also found to work with
+			  Eternity. But as it is vanilla compatible, any port should work.
+
+			  Updated 22.12.2007:
+
+			  Fixed a trap door not working in doom.exe, the nodes were
+			  built with zennode to fix most slime trails, and there's a couple 
+			  of minor changes in level design.
+
+Additional Credits to   : Lüt for (lots of) playtesting and bugging to finish it,
+			  and CodeImp for the marvellous Doom Builder. And Esselfortium
+			  for (not) playtesting it.
+
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : No
+Music                   : No
+Graphics                : Sky, fixed support2 and doorstop to be vertically seamless.
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : The Ultimate Doom
+Map #                   : E2M1-E2M9
+Single Player           : Designed for.
+Cooperative 2-4 Player  : Player starts only.
+Deathmatch 2-4 Player   : As above.
+Difficulty Settings     : Tested on UV.
+
+
+* Construction *
+
+Base                    : New from scratch, except E2M1 is modified E2M1ER.wad.
+Build Time              : About a year.
+Editor(s) used          : Doom Builder, XWE, ZDBSP, Zennode
+Known Bugs              : E2M5-E2m7 have too many things for game saving with doom.exe.
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse, as long as I'm credited.  
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.

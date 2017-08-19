@@ -1,0 +1,41 @@
+-------------------------------
+Changelog for Community Chest 3
+Second Release
+-------------------------------
+
+General:
+- DEMO3 has been replaced with a better-looking demo.
+
+MAP05:
+- Removed a Pusher and Puller from a control sector that were both useless
+because there was no actual pinpoint wind/current effect (266) applied to
+the sector they were in, plus the conveyor belt already transfers the
+needed items properly.
+- Fixed a texturing error in the wooden part in the northwest section of
+the map.
+- Fixed a rendering error on the staircase that lowers in the center of the
+map when the invulnerability sphere in the throne room is obtained.
+- Fixed Hall of Mirrors effects in the alcove that lowers in the starting
+area when the invulnerability sphere in the throne room is obtained.
+- Fixed monster teleporters with same-line-teleport lines that were
+erroneously flagged as one-time-use instead of repeatable.
+
+MAP06:
+- Fixed a set of sky sectors that didn't have sky transfers applied to
+them.
+
+MAP10:
+- It is now much less likely, if not impossible, for you to shut the
+closing door after the red switch without having gone all the way through
+it.  If it does happen, however, the door can be opened (and could be
+opened before) through a secret switch.
+- The tripwire-activated door that you must open to reach the red door is
+now more clearly marked.
+
+MAP12:
+- Certain items changed at author's request.
+- Nazis and Commander Keens restored at author's request.
+
+Changes implemented by The Green Herring
+
+11/26/2007

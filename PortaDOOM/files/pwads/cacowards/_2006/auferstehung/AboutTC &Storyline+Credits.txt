@@ -1,0 +1,78 @@
+===============================================================
+Title                   : Nazi Auferstehung
+Foldername          : Skins (cus I couldn’t put all the wads together, especially since I have school starting and I barely had time to put toghether what you see before you)
+
+Authors                 : Princeexodus A.K.A. Darkexodus
+
+Email Address        : Princeexodus@yahoo.com
+
+Misc. Author Info      : Teen who Loves games by ID, Loves First Person Shooters, Loves Fighting Games Like Mortal Kombat, Enjoys making wads, enjoys using Computers, aside from listening to metal and rock
+
+Misc. Wad info          : This is a TC I finished working on, its purpose is to combine the themes of DukeNukem,DOOM,and Wolfenstein. I used Slige but It toook me a long time to look through all those levels and select the good ones,plus I edited a couple levels like map15 to follow the storyline. So please dont use the levels without my permision, you may email me to do so. For this wad I used graphics from a couple other TCs , which carried bugs and glitches     
+
+Known bugs: Not that I know of
+
+Ports Utilized          : Nazi Auferstehung Requires ZDOOM 1.22
+			  ======================================
+Nazi Auferstehung by Darkexodus a.k.a Princeexodus
+
+Story So Far: 2067 A.D.
+
+You are the lone survivor of the Marine squadron sent in to eliminate a Neo-Nazi take-over in a nearby city; you have been given the task of eliminating the Nazi plans of Global Domination. Earlier, while fighting through a ravaged city taken over by Neo Nazis, You and your squad members found an unbelievable discovery within a Neo Nazi vault: The remanants of Hitler's Nazi Generals had escaped to different regions of the Earth to fulfill an ancient Prophecy of Germanic Origin rewritten in the texts of Leonardo Davinci. 
+
+The Prophecy Read: "There will be a Powerful man, who is a hero to his clansmen yet a menace to the world. This man will join forces with the children of Rome and succeed in bringing into existence a massive war, in which all clans across the world shall be affected. As all powerful men shall fall, this man shall die performing a ritual which shall preserve his soul in the state in which he lived before his death allowing him to come back with the help of his resurrected army and the source of all evil, Satan. The man will have many followers which will be willing to die and kill in his name, even it means killing their fellow brethren in order to reach and kill their leader's enemy. On the day which this man is resurrected his followers shall reunite in the great land of the Red People and commence the Satanic ritual which is required to bring back their Evil Savior and once more unleash hell into an unsuspecting world. The Dark Lord of Hell shall grant these men aid, in the form of his hellish Demons. Each of these Demons shall appear on every sixth day since the ritual began, until all of the Dark Lord's legions have been summoned to help these fiendish mortals achieve their dark quest of changing the world, we mortals know as Earth. On the Day of Doom, when these men shall commence their Dark Deed, there shall emerge a Warrior of Light and Purity. His body shall be full of vengeance and rage, for his brethren would be killed by the Dark Man's servants. The Dark Lord shall yet lose his legions to this inhuman mortal.(Prophecy of "RELTIH FLODA" B.C.200. the secret writings of Jobe, servant to the Lord of Purity and Justice, Jehovah)
+
+After reading this you and your men were baffled, but after finding briefcases in the Neo Nazi vault carrying apparent documentations and photos of Satanic Rituals nothing written in this so called prophecy should ever be taken for granted. Especially since the Prophecy's name backwards is in fact Adolf Hitler, who before his death, was an evil maniac who had been bent on world domination and total annihilation of ethnicities outside of the Aryan race.
+Two hours later after encountering much resistance by the Nazi Troops, you notice something strange. All of them strangely locked their sights on your team without hesitation, as if they were possessed, because they shot through each other in crossfire in order to reach your squad! After watching your Squad members die, you have no sense of reluctance towards avenging them.....
+
+After a while, you notice something out of the corner of your eye. There is group of hellish creatures approaching you. They resembled Flying Red Skulls! As you stood there, the fiendish heads started flying towards you, you notice the glow in their eyes; there is no sense of hesitation as you pull the trigger of your shotgun. 
+As one by one they explode, you think to yourself: "If that Prophecy is true, than I better get a head start, I don’t want to wait around to see what else is going to show up from Hell to greet me after each of those Nazi freaks performs their ritual".
+You now have a mission: Cleanse the nearby areas of Possessed Nazi spawn, stop the apparent resurrection of Hitler and survive encountering whatever resurrected Nazis,Clones of Hitler, and nightmarish creatures Hell has to offer, as a "welcoming party".
+You Come to the Entrance of A Hidden Nazi Labyrinth, which you read about in the Documents You and Your Team had found earlier. Apparently It had existed undiscovered, because it was built on the private property of Nazi General's and their wicked families who were loyal to Hitler. Most of them died from Natural causes yet their children, continued to build the Labyrinth, while recruiting more troops from Neo-nazi Cults. You Know your objectives, now you must go into the Nazi Labyrinth and accomplish your tasks, in order to save the world.
+************************************************************************
+Episode and Level #	: ALL	
+Single Player		: Yes
+Difficulty Settings	                 : All
+New Sounds		: yes from other wads
+Demos Replaced		: N/A
+New Music		: Yes
+New Characters                        :Yes 
+New Weapons                          :hell yeah! Weapons that were extracted from other wads
+Note: Credit will go to other authors for making the characters and weapons graphics.
+New Textures                           : yes, some by me
+Note                                         : Credit will go to other authors for making some the textures
+Multiplayer                                : Possibly since the option of bots is available
+Note: This Wad is not meant to offend anyone. I Take No Responsibility if this Wad annoys you, damages your property/computer or anyone else’s property/computer. It is highly unlikely it will.
+
+Credits: 
+First of all, The Freedoom Team, since I used some resources from an older version of FreeDoom
+including Maps 30, 31(which I edited), and 32
+so they have credit
+and second of 
+all the authors whos' works I used.
+
+Bob Larkin and the authors who made the HELLRAISER TC are also credited for the 
+sound effects/lost soul from the HELLRAISER TC
+
+I also wanted to thank and credit
+Myself for taking the time to make this wad and some of the graphic replacements(the whole thing was a pain in the neck), ID software, APOGEE SOFTWARE, 3D REALMS ,FREEDOOM ,RAVEN SOFTWARE ,VELOCITY INC., ROGUE ENTERTAINMENT, My friends for their support, and the People who's Sounds/Graphics/wads I used, including the Makers of FREEDOOM. That means I credit all and every author whose work I used in order to make this wad. In no way should this TC promote you to commit any act of violence in the real world. The author does not claim ANY responsibility regarding ANY illegal activity concerning this(theses) file(s), or indirectly related to this(these) file(s). The author shall not be responsible for any damage done by using this TC. The author is not in any way affiliated with ID Software. If any problems should occur, do not contact them. Notify the author if you find any bugs. If you decide to redistribute this TC,  give credit where credit is due.  Also, do not change files included in the zip file. In short, don't bother the author unless you have comments, questions, or bugs to report, and don't blame the author if anything BAD should happen.
+*Copyright/Permissions*
+
+Authors may not use this level as a base to build additional levels.
+
+You may distribute this WAD as long as this read me is included.
+
+
+About the author: I am a teenager who loves metal, rock and games, especially videogames. I worked my tail off to fix every friggin’ glitch the wads I used carried(it took me a long time!) so please don’t screw around with them, unless of course you see your own previous work in them and want to see how I fixed a bug or glitch. I also spent a long time finding the right sounds and graphics to fit my vision of a true Nazi Apocalypse, which would, in reality be a nightmare.
+
+COPYRIGHT(s)
+ID SOFTWARE (c)
+APOGEE SOFTWARE (c)
+3D REALMS (c)
+FREEDOOM (c)
+RAVEN SOFTWARE (c)
+VELOCITY INC.(c)
+ROGUE ENTERTAINMENT (c)
+
+
+and all others who's work were used to make this TC

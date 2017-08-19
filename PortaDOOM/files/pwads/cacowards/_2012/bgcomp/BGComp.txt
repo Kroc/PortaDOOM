@@ -1,0 +1,83 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : Base Ganymede: Complete
+Filename                : BGComp.zip
+Release date            : 18/1/2012
+Author                  : Adam "Khorus" Woodmansey
+Email Address           : adamkw@hotmail.co.uk
+Other Files By Author   : Total Darkness 1-6
+                          Project Dark Zone
+                          Ni'mRoD: Hell on Exdeus
+                          Deadline
+                          Base Ganymede E1
+                          A World in Strife: Raiding the Dam
+                          Base Ganymede E2
+                          Revolting Rocks
+			  Khorus' Speedy Shit
+			  2 Maps for Esselfortium's "Back to Saturn X"
+
+Misc. Author Info       : Quite possibly my last major Doom project. I hope
+                          to eat my words at a later date. :)
+
+Description             : A 3 episode vanilla megawad for Doom 1 containing
+                          a total of 27 maps. Set on one of Jupiter's
+                          moons called Ganymede, this wad should provide a
+                          challenge for a wide variety of skill levels
+                          ranging from the humble newbie to veteran
+                          speedrunner. Each episode has it's own
+                          progression rather than the usual base ->
+                          hellbase -> hell.
+
+Additional Credits to   : kristus - sky, titlescreen, co-op tester and all
+                          round good chap.
+                          dsm - sky
+                          Mr. Freeze - DTWiD music (used with permission)
+                          Anyone who tested or played any of the maps up to
+                          this point. Thanks!
+===========================================================================
+* What is included *
+
+New levels              : 27
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E1M1-E3M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Two and a half years
+Editor(s) used          : Doombuilder 1, Doombuilder 2 and XWE
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

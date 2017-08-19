@@ -1,0 +1,72 @@
+===========================================================================
+Title                   : Virgil's Lead: 3rd Canto of INFERNO
+Date Finished           : 03/01/1995
+Author                  : John W. Anderson (aka Dr Sleep)
+Email Address           : 76312.3415@compuserve.com
+Other Files By Author   : "And Hell Followed," Episode 4, Level 7 of *The 
+			    Ultimate DOOM* by Id Software;
+			  "Dante's Gate" v2.3 (1st Canto, INFERNO)
+			  "Crossing Acheron" v2.2 (2nd Canto)
+			  "Minos' Judgement" (4th Canto)
+			  "Nessus" (5th Canto)
+			  "Geryon" (6th Canto)
+			  "Vesperas" (7th Canto)
+			: For HERETIC:
+			  "Recant" v1.1 
+Misc. Author Info       : 
+Additional Credits to   : Jim F. Flynn for support and friendship;
+			  Shawn Green, American McGee, John Romero,
+			   and everyone at Id Software;
+			  Howard "Desdinova" Rider for graphic support;
+			  Antony Burden for DETH 2.1;
+			  Joshua E. Anderson, for playtesting.
+
+Description		: VIRGIL'S LEAD is the 3rd Canto in my INFERNO 
+			  series.  In your search for Beatrice, you lost your
+			  guide Virgil (the beatnik space-poet) while crossing 
+			  Acheron. But you've caught up with him again,
+			  and he's agreed to lead you through the current way- 
+			  station (mostly because demons and undead sergeants
+			  are not much impressed with Virgil's way with words).
+			    "You can get a lot further with a kind word and
+			  a gun then you can a kind word."
+			    "You belong to the NRA, don't you?" Virgil asks.
+			    "No, I'm just a pessimistic pacifist."
+
+
+			  This is a deceptively small level, but you'll need to
+			  conserve ammo and try not to get shot or chewed on
+			  too much, since the stim packs are in scarce supply.
+
+===========================================================================
+* Play Information *
+
+Map #                   : Map03
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : All
+New Sounds              : No
+New Music               : No
+New Graphics            : Yes
+Demos Replaced          : None
+
+* Note on the Graphics *
+			
+			  The star SKY texture was composed from scratch using
+			  Paint Shop Pro v2.0.
+
+===========================================================================
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 10 days (over 100 hours)
+Editor(s) used          : DETH 1.2 and 2.1 by Antony Burden and Simon Oke;
+Other Utilities		: BSP v1.2x by Colin Reed;
+			  RMB v2.1 by Jens Hykkelbjerg;
+			  DOOMTex v1.0c by Steve McCrea;
+			  DOOMTex Supplement by Ben Sze;
+			  Paint Shop Pro v2.0 for Windows;
+Known Bugs              : None whatsoever
+May Not Run With...     : OS/2 WARP <g>

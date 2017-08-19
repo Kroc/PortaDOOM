@@ -1,0 +1,272 @@
+===========================================================================
+Advanced engine needed  : Doom2.exe or compatible
+Primary purpose         : Single play
+===========================================================================
+Title                   : Back to Saturn X E1: Get Out Of My Stations
+Version                 : 0.99i9
+Filename                : btsx_e1_099i9.zip
+Release date            : 08/01/2013
+
+Author                  : Esselfortium and the Back to Saturn X team
+Email Address           : esselfortium@gmail.com
+
+Misc. Author Info       : Everybody Thinks I'm A Raincloud (When I'm Not
+                          Looking)
+
+Description             : Get Out Of My Stations is the first episode of
+                          Back to Saturn X, a three-episode partial
+                          conversion for Doom II.
+
+                          Back to Saturn X is fully compatible with
+                          Doom2.exe and Chocolate Doom. It has also been
+                          tested with Eternity Engine, PrBoom-Plus,
+                          ZDoom, GZDoom, and Risen3D.
+
+                          This is still a beta release, so there may be
+                          some minor issues encountered. Send in a report
+                          if you run into anything really weird.
+                          (Hopefully not.)
+
+                          ZDoom/GZDoom users should make sure to use r3935
+                          or newer (Nov 2, 2012 or more recent) in order to
+                          avoid rendering glitches.
+
+===========================================================================
+
+The Story So Far        : The tether has been severed. A chain to the moon
+                          lies crumpled in a strewn array of blank screens
+                          and static. The Saturn X Research Station falls
+                          silent for the first time in three decades. Alarms
+                          ring out as the crisis escalates, and soon, Union
+                          Aerospace knows it can no longer ignore the
+                          deafening silence left in its wake.
+
+                          Time progresses. Three weeks. I arrive, and the
+                          director frowns as the briefing begins. When she
+                          speaks, the flag unfurls and the heavens split in
+                          half: They will send me to investigate. I'm to be
+                          sent on a blatant doom trip, a three-year journey
+                          from which there will be no return.
+
+                          My fate is irrelevant. Spit me out from your cosmos,
+                          seal me into a portable mortuary, and ship me away.
+                          As this reluctant journey begins, my goal is clear:
+                          arrive, assess, evacuate. The nightmare I had hoped
+                          would never arrive has become my sole purpose. I
+                          disembark, waking up the stars as my vision begins
+                          to blur...
+
+                          ...
+
+                          Awakening from cryo-sleep, the icy breeze is
+                          shattered and a sense of deja vu grips me in this
+                          solitary land. Although I am a newcomer to the
+                          stage, I can't help but find a sense of familiarity
+                          in this "lone space marine on the eerie rock" act.
+                          For my final performance, I have come back.
+
+                          Back to Saturn X.
+
+===========================================================================
+
+* Full Credits *
+
+             Artwork              : Michael "Esselfortium" Mancuso
+                                    Sven "ptoing" Ruthner
+
+             Music                : James "Jimmy" Paddock
+                                    Stuart "Stewboy" Rynn
+                                    Michael "Esselfortium" Mancuso
+                                    Elric "Darkhaven" Sullivan
+                                    Simon "Sirjuddington" Judd
+                                    Xaser Acheron
+
+             Playtesting and      : Boris "dew" Klimes
+             quality control        Robin "hawkwind" Palmer
+                                    Terra "Seele00" Hathaway
+                                    James "Phobus" Cresswell
+                                    "Super" Jamie Bainbridge
+                                    William "[WH]-Wilou84" Huber
+
+             Story                : Xaser Acheron
+
+             Level design         : Bjorn "Vader" Ostmann
+                                    Brett "Mechadon" Harrell
+                                    Ed Cripps
+                                    John "Tango" Oksasoglu
+                                    Kim "Torn" Bach
+                                    Matt "RottKing" Cibulas
+                                    Matthew "Foodles" Edwards
+                                    Michael "Esselfortium" Mancuso
+                                    Nick "Hobomaster22" Laurent
+                                    Paul "Skillsaw" DeBruyne
+                                    Richard "Tarnsman" Frei
+                                    Simon "Sirjuddington" Judd
+                                    Travers Dunne
+                                    Trevor "Iori" Primmett
+                                    Walker "Pavera" Wright
+
+===========================================================================
+
+* Map listing *
+
+--- EPISODE I: Get Out Of My Stations -------------------------------------
+
+01 Esselfortium/Tarnsman: Back to Saturn X Radio Report
+
+02 Torn/Esselfortium: Postal Blowfish
+03 Skillsaw: The Room Taking Shape
+04 Esselfortium: A Good Flying Bird
+05 Pavera: Total Exposure
+06 Iori: Mix Up The Satellite
+07 Vader: Metal Mothers
+
+08 Esselfortium: Episode Hub
+
+09 Esselfortium/Traversd: Some Drilling Implied
+10 Skillsaw: A Proud And Booming Industry
+11 Ed: The Colossus Crawls West
+12 Traversd/Skillsaw: Underground Initiations
+13 Esselfortium/Skillsaw: I'll Replace You With Machines
+14 Foodles/Esselfortium: Big Chief Chinese Restaurant
+15 Mechadon: Tricyclic Looper
+
+16 Esselfortium: Episode Hub
+
+17 Esselfortium: Navigating Flood Regions
+18 Sirjuddington/Esselfortium: Cyclone Utilities (Remember Your Birthday)
+19 Tarnsman/Esselfortium: Bingo Pool Hall of Blood
+20 RottKing: U.S. Mustard Company
+21 Hobomaster/Tarnsman: Failed Experiments & Trashed Aircraft
+22 RottKing/Skillsaw: Gonna Never Have To Die
+
+23 Esselfortium: Episode Hub
+
+24 Tango: Tough Skin River
+
+Secret
+31 Skillsaw: The Hard Way
+
+---------------------------
+
+Additional Credits:
+
+MAP05, MAP06, MAP20, and MAP24 feature additional mapping by Esselfortium.
+
+MAP02, MAP04, MAP06, MAP09, MAP11, MAP13, MAP14, MAP17, MAP18, and MAP24
+feature additional balancing and coop setup by Dew, who also recorded DEMO3.
+
+Various maps have had their monster teleports bugfixed for vanilla's
+savegame behavior by Tarnsman.
+
+Automap cleanup has been done by Tarnsman and Seele00TextOnly.
+
+Various OCD alignment fixes have been taken care of by Seele00TextOnly.
+
+DEMO1 and DEMO2 were recorded by The Green Herring, who also helped with
+some technical fixes.
+
+ZMAPINFO and DEHACKED were provided by Xaser.
+
+End map is by Esselfortium.
+
+---------------------------
+
+Music Credits:
+
+01 Esselfortium - Entering
+02 Esselfortium - Phobophobe
+03 Stewboy - Drilling By Night
+04 Esselfortium - Clonk
+05 Jimmy - Atmospheric Pressure
+06 Darkhaven - Nanonucleonic Cyborg Summoning
+07 Jimmy - Conductor
+08 Esselfortium - Waiting
+09 Jimmy - Untilted
+10 Jimmy - Coal
+11 Jimmy - Yaw
+12 Jimmy - Liquid Luck
+13 Jimmy - Escape Velocity
+14 Stewboy - 24
+15 Jimmy - Quicksilver
+16 Esselfortium - Waiting
+17 Esselfortium - Dirt
+18 Sirjuddington - Untitled
+19 Jimmy - Faultline
+20 Jimmy - The Cry
+21 Jimmy - Heliotrope
+22 Esselfortium - Womp
+23 Esselfortium - Waiting
+24 Jimmy - Within Reach
+31 Jimmy - Atomic
+
+Title Screen: Jimmy - Back to Saturn X Intro
+Stats Screen: Jimmy, Essel, and Xaser - BTSX Intermission
+Story Screen: Darkhaven - Wait For Dawn
+End Screen: Esselfortium - Undersea
+
+===========================================================================
+
+* What is included *
+
+New levels              : 25
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP24, MAP31
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2009-2013
+Editor(s) used          : Doom Builder, Slade, DeepSea, Photoshop, ProMotion
+
+Known Bugs              : Hopefully none, but this is a beta release.
+                          If you encounter visplane overflows or other buggy
+                          behavior when playing Back to Saturn X, please send
+                          us a report so we can look into the problem and fix
+                          it!
+
+May Not Run With...     : Back to Saturn X has not been tested with gameplay
+                          mods, and we make no guarantees that it will work
+                          as intended with one. The maps have been carefully
+                          balanced for exciting gameplay with Doom's standard
+                          monster and weapon behavior: if you're playing with
+                          mods and run into issues, well... stop doing that.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+There will be a full release of the texture resource after Back to Saturn X's
+three episodes are complete. In the meantime, please be respectful and don't
+take our stuff. Thanks!
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://essel.spork-chan.net/

@@ -1,0 +1,62 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : InstaDoom DLC Pack 1
+Filename                : Several
+Release date            : 2/22/15
+Author                  : Linguica
+Email Address           : linguica@doomworld.com
+
+Description             : InstaDoom DLC Pack 1 has arrived! Is Instagram
+                          too "mainstream" for your tastes? Do you need
+                          filters -- er, I mean, "presets" -- that really
+                          scream, "I am a hipster"? Do you not care about
+                          usability? Then you'll love the new VSCO Cam DLC
+                          pack!
+                          
+                          17 new filters (er, I mean, "presets") that
+                          emulate each of the currently-free filt- uh,
+                          presets in the VSCO Cam app! Most of them look
+                          like garbage, but they are painfully hip! Sneer
+                          at the basic bitches on Instagram with such
+                          purposely-obtusely-named presets as A4, B5, M3,
+                          and the ever-popular P5!!
+
+===========================================================================
+* What is included *
+
+New levels              : None
+Sounds                  : No
+Music                   : No
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Custom palettes and colormaps
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Any Doom game
+Single Player           : Designed for
+Cooperative 2-4 Player  : Sure
+Deathmatch 2-4 Player   : I guess
+Other game styles       : Yeah
+Difficulty Settings     : Not implemented
+
+* Construction *
+
+Base                    : New from scratch
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You may NOT distribute this file in any format.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

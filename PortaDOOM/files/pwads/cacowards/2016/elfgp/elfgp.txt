@@ -1,0 +1,70 @@
+=======================================================================
+Advanced engine needed  : ZDoom
+=======================================================================
+Title                   : Elf Gets Pissed 1.1
+Filename                : elfgp.wad
+Date Finished           : February 18th, 2016
+Author          	: RottKing
+E-Mail                  : rottking@gmail.com
+Web Page                : https://rottking.wordpress.com/
+Other Files By Author   : some crap
+Description             : An episode 1 replacement for Heretic.
+Additional Credits      : id software, raven,  essel for his Heretic texture edits, Spadger for his Heretic sprite brightmaps. Also credits for the new weapon go to:
+Neoworm, Ghastly_dragon, Xaser, Zero Prophet, Eriance, and NeuralStunner. Shoutouts to Might & Magic 6 for the Annabis.
+=======================================================================
+
+
+* Play Information *
+
+
+Source port             : ZDoom
+Map                     : E1M1 - E1M9
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 		: No
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Music               : Yes
+New Graphics            : Yes
+Demos Replaced          : None
+Other Game Styles	: N/A
+
+* Music *
+
+Song: Ys Ark of Napishtim Opening | Midi Creator: Justus Johnston.
+Song: Hurry Somebody Up - Guilty Gear Isuka | Midi Creator: Solis.
+
+* Construction *
+
+
+Base                    : New levels and one recycled speedmap
+Build Time              : TOO. LONG. (about 3 years??)
+Editors used            : Doombuilder 2, SlumpED, Slade 3.
+Known Bugs              : HAK HAK DRAKKHEN
+
+* Copyright / Permissions *
+
+
+You may distribute this WAD in any format 
+ (Internet, Diskette, CD, etc) as long as you include this file intact.
+
+
+* Where to get this Wad?
+
+
+ http://www.doomworld.com/idgames/ or any other mirrors.
+
+* What's new in 1.1???
+
+-Ammo and health additions across the board
+-Various enemy placement tweaks
+-Additional health for lower difficulties
+-The mass wizard trap in e1m6 has been reworked a bit,
+they now teleport in rapidly rather than having them all bunched up
+in one area from the start.
+-The unpowered Gold Wand now fires slightly faster like it did when
+powered up, and accordingly the powered up wand now fires slightly faster.
+-The speed of D'Sparil's lightning ball has been greatly increased.
+-The crossbow ammo that Weredragons drop no longer give 10, they now give 5 LIKE THEY SHOULD HAVE IN THE FIRST PLACE WHAT THE HECK MAN.
+-Replaced the Dragon Claw in front of the gold key door in E1M2 with a Phoenix Rod.
+-Some other minor crap

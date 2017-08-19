@@ -1,0 +1,181 @@
+===========================================================================
+Advanced engine needed  : Any limit removing port. Tested with prboom and zdoom.
+Primary purpose         : Single+Coop play
+===========================================================================
+
+Title                   : Scythe 2. Version 2
+Filename                : scythe2.wad
+Release date            : June 7, 2005, Rereleased July 10, 2009.
+Author                  : Erik Alm 
+Email Address           : erik_a80@hotmail.com
+Other Files By Author   : quite a bunch, http://www.doom2.net/~erik/ 
+Misc. Author Info       : 28 year old Doomer
+
+Description             : This is the sequel to my old megawad "Scythe". Expect better
+			  looking and bigger levels. unfortunately, the last 3 levels are 
+			  missing, because I am so lazy and I haven't been satisfied with 
+			  my attempts at making map28. I _might_ release the last 3 maps
+			  some time in the future, but do not count on it. 
+			  (Update: the last 3 maps are now completed!)
+,
+Additional Credits to   : id software, testers Qwerty, Vile, Vincent, Khaoscythe, Anima Zero and others.
+			  The gothic crew for textures (see below), Kristian Aro for
+			  compiling the Ruinbros resources. Randy Heit for zdoom,
+			  Colin Phipps and TeamTNT for prboom/boom. CodeImp for Doombuilder.
+			  Kristian "Ebola" Käll for the name "Scythe" (forgot you in scythe.txt, sorry)
+			  Anders "schepe" Åstrand for encouragement.
+			  Fredrik Johansson for some additional textures (and for making incredible levels).
+			  Wad Guru Kim "Mutator" Malde for level name graphics.
+			  Julian for intermission and titlepics.
+			  Espi for monster sprites. Lutrov71 for the BOSSBACK entry.
+			  
+			  Special thanks to Drew "stx-Vile" Devore for music selection,
+			  suggestions and bugreports, this wad would not maintain
+			  this kind of quality without his work.
+===========================================================================
+* What is included *
+New levels              : Yes, 32 new levels.
+Sounds                  : No. Face it, custom sounds almost invariably are crap.
+Music                   : Yes, various sources. Credit to stx-Vile and Torn for the compilation.
+Graphics                : Textures from gothicdm, ruinbros and Fredrik Johansson's private stash.
+Dehacked/BEX Patch      : Yes, included in wad file.
+Demos                   : No
+Other                   :  
+
+			   
+* Play Information *
+Game                    : DOOM2
+Map #                   : Map01-32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes 
+Deathmatch 2-4 Player   : No
+
+Difficulty Settings     : Yes
+
+This wad is harder than the original Scythe. I suggest
+skill 2/3 for those that enjoyed Scythe on skill 4. I am not saying that skill 4 is murder though,
+you just might need some savegames and careful play at times. Nightmare skill is as usual complete
+madness except for the pros. Shortly after map20, you WILL run into trouble on skill 4.
+ 
+* Construction *
+Base                    : New levels from scratch
+Build Time              : No idea, way way too long anyway. I started this in late 2003.
+Editor(s) used          : Deth, Doombuilder (thank you Gherkin/CodeImp), Warm, Deutex, Zennnode, Wintex, XWE
+
+Known Bugs              : Texture alignment bugs. Probably other bugs too.		 
+			    
+May Not Run With...     : Doom2.exe. Don't even try it. The new version is however compatible with pure limit removing ports.
+
+Lame story (tm):
+You travel through dimensions and kill monsters, blah blah... Use your imagination. 
+
+Here are the maps, presented in order:
+
+EPISODE I
+MAP01 - CASTLE ENTRYWAY  	- quick start, mostly easy, especially after the CG.
+MAP02 - ROOFTOP WARZONE 	- challenging moments, mostly easy though.
+MAP03 - CASTLE GARDENS II  	- bigger fights already, watch out for the open area revenants.
+MAP04 - CURSED CELLARS  	- easier again, this map is kinda similar to the original scythe maps.
+MAP05 - HALLS OF ANGUISH 	- stolen inspiration from gothic2, I hope it didn't turn out too ripoff-ish.
+				  (gothic2 map26), of course I can't match Malcolm's sense for details
+				  and perfection, plus I made this in less than 2 hours (from scratch of course).
+
+EPISODE II
+MAP06 - TEMPLE ENTRYWAY	    	- berserk action, find the secrets! not a trivial map.
+MAP07 - TEMPLE OF ISIS   	- map07 all over I suppose. A lot of space here mostly.
+MAP08 - GRAVEROBBERS		- The first "long trek" map. A good challenge and some eye candy.
+MAP09 - VALLEY OF THE QUEEN	- The worst map of the bunch no doubt, fun for RL nuts maybe. Dunno what I was thinking.
+MAP10 - PHARAOS TOMB		- this map makes up for the shortcomings of map09, not easy!
+
+EPISODE III
+MAP11 - UAC BASE X		- here we go, back to basics. A bit boring perhaps, but hey it's a base.
+MAP12 - BATTLEGROUNDS		- A good map, not too hard when handled properly.
+MAP13 - MINING PROJECT		- kinda strange map, varied action and empty space. Not a great map.
+MAP14 - THE HAUNTED MINES	- the first hard map, revenants and prettiness everywhere.
+MAP15 - END OF THE LINE		- the same style as the previous map, detail and action.
+
+EPISODE IV
+MAP16 - MR X			- ...
+MAP17 - CANYON OF BLOOD		- watch out for low fps, the most complicated (and crappiest) 3d bridge ever?
+MAP18 - LIVING LANDS		- finally a good map! balanced action and a certain amount of feel.
+MAP19 - WITHERING AWAY		- just a solid scythe II map, nothing for you sp_hot haters (yeah you Ebola).
+MAP20 - THE GATES		- time for some eye candy, but you better keep your eyes peeled for distant rockets.
+ 				  Credits to my girlfriend for the basic idea of this one.
+
+EPISODE V
+MAP21 - DOOM GARDENS		- Low ammo, medium detail. The theme is a bit unusual and pretty nice imo.
+MAP22 - THE GARDEN BASE II	- Cramped start, you will need the berserk on skill 4. Not an easy map.
+MAP23 - WHISPERING WINDS	- The first insanely hard map, the start and some of the fights later on are very very hard.
+MAP24 - GAIAS TEMPLE		- Maybe a little bit easier than map23, but there are nasty traps everywhere. High detail.
+MAP25 - FORGOTTEN CITY		- A rather grand outdoor map. Not much of a city. Very hard.
+
+EPISODE VI
+MAP26 - DEATH			- Low ammo, very hard start. Very hard and cramped map in general.
+MAP27 - AFTERLIFE II		- Huge castle/hell map. Extremely difficult and rather low ammo.
+
+The end... NOT!
+
+MAP28 - NIGHTMARE		- Slaughter map deluxe with a pretty high pace possible for the strong players out there. Quite hard.
+MAP29 - DUST TO DUST		- Much lower paced map. It doesn't really look like anything I usually create... Not insanely hard.
+MAP30 - HAUNTING DREAMS		- Thank you and goodbye! Very very hard.
+
+
+Scythe 2 version 2 changelog.
+
+New material
+maps 28-30 added
+musics for map28-30 added
+
+Bugs fixed
+map17 bridge visual glitch fixed (unclosed sectors)
+map17 lift fixed for coop (works as a normal lift after the first ascent)
+map25 linedef at red key changed to WR - open door stay
+
+map06 torch added in sector 46
+map20 hanging corpse in final room not blocking
+map21 rocket box in the void removed
+map26 doombuilder's autostitch screwed me, fixed HOM at bossroom.
+
+map14 baron teleport sector now has tag 33
+map14 fixed major slimetrail (unclosed sector?) in revenant tunnels.
+
+All nodes except map17 rebuilt using zennode (zennode doesn't like that bridge)
+Blockmaps compressed
+Reject built except for map30 which got a zero-filled reject
+
+
+Doom2 limit removing compat fixes
+map15 secret exit door switch behind yellow door fixed
+map16 crushers all over fixed
+map16 backpack secret fixed
+map17 lowering bars at cacos fixed
+map20 multi-door changed to multi-floor lowering effect
+map32 lowering exit platform fixed
+map32 rising mountain fixed
+
+map28-30 checked for compat issues, none found.
+
+
+
+  			   
+* Copyright / Permissions *
+Authors may NOT use the contents of this file as a base for
+modification or reuse unless written permission is obtained from the author.   
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. This file may not be used for any commercial purposes without the
+author's agreement.
+
+* Where to get the file that this text file describes *
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+* DISCLAIMER *
+This PWAD contains select texture(s) and flat(s) that can originally be found
+in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+ 

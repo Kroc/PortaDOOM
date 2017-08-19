@@ -1,0 +1,96 @@
+===========================================================================
+Advanced engine needed  : Zdoom compatible
+Primary purpose         : Single play
+===========================================================================
+Title                   : Strife: Absolute Order
+Filename                : sabord
+Release date            : 15/11/2012
+Author                  : Adam "Khorus" Woodmansey
+Email Address           : adamkw@hotmail.co.uk
+Other Files By Author   : Total Darkness 1-6
+                          Project Dark Zone
+                          Ni'mrod: Hell on Exdeus
+                          Deadline
+                          Base Ganymede E1
+                          Base Ganymede E2
+                          Khorus' Speedy Shit
+                          Map contributed to Back to Saturn X
+                          Base Ganymede: Complete
+                          Secret map to Snakes' project Unholy Realms
+Misc. Author Info       : Go make some Strife maps dammit.
+                          
+                          Isn't that Justin guy a greedy asshole?
+
+Description             : You wanted it, now you've got it, a 6 map hub
+                          for Strife. Requires a Zdoom compatible source
+                          port.
+                          
+                          A rough story? Well ok. Despite the main threat
+                          of the order being defeated, there are many other
+                          towns still under their fragmented rule. The
+                          front now has the resources to send agents to
+                          these outward places and attempt to destroy
+                          what's left of the tyranny. You have arrived in
+                          the small town of Sweetwater, where what few
+                          people survive live a near meaningless life that
+                          is under constant threat.
+
+Additional Credits to   : Esselfortium - The music to the map "Void"
+                          (map15) is a remix I created of a piece of music
+                          of his called "Mobildethvan".
+                          Gez - For helping me with Zdoom stuff
+                          Xaser - He seems to like my stuff
+                          Anyone that has given feedback and played this
+                          project or any of my other work over the years.
+                          
+===========================================================================
+* What is included *
+
+New levels              : 6
+Sounds                  : No
+Music                   : Yes, written by me (see credits for exception)
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Strife
+Map #                   : Map01-02, Map 04-05, Map10, Map15
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Approximately 2 and a half years, though other
+                          projects were worked on during that time.
+Editor(s) used          : Doom Builder 1 and 2 (have made the switch to
+                          using only 2), XWE, Slade 3 and Reason + DSI
+                          Mopho analogue synth for music
+Known Bugs              : None known, feel free to share any and I'll do
+                          my best to update the .wad
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

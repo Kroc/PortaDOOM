@@ -1,0 +1,309 @@
+
+
+		H A R M O N Y 
+
+		 version 1.1
+
+
+
+1: DESCRIPTION
+-------------- 
+Harmony is an independent game made by Thomas van der Velden.
+It is inspired on 3D shooter games from the nineties like Doom and
+Duke Nukem 3D. Harmony uses the free Zdoom engine, which was made 
+to mimic and enhance id Software’s Doom2 engine.
+
+Harmony works under: Windows 95/98/ME/NT/2000/XP and Vista.
+
+
+
+2: HOW TO PLAY
+--------------
+To play Harmony double click on “HARMONY.exe”.
+
+The game will then start by itself.
+
+
+
+3: STORY
+--------
+In the near future:
+Led by greed and hatred mankind drove itself into another world war.
+The forces of the Northern and Southern Hemisphere attacked 
+Each other with everything their destructive arsenal had to offer.
+Nuclear, chemical and biological weapons wiped out entire countries.
+The combined effect of the weapons resulted in an unforeseen side effect; 
+a supervirus emerged that mutated all the men on Earth. 
+For unknown reasons the women were unaffected. 
+But they weren't save either...
+
+The mutated men, though intelligent, lost touch with reality. 
+From their corrupted minds a new order was formed; 'the Pax Pox'. 
+Its first priority is to rid the world of the "impure". 
+
+The women who survived the war united to form an army against the mutant 
+aggressors and called themselves "the Amazons".  
+	
+Today one of the Amazon outposts is attacked and their leader; Amira is 
+taken captured. Her last hope is her loyal friend; Harmony.
+
+Will Harmony be able to rescue her friend and the rest of the human race?
+
+
+
+4: CHANGES SINCE VERSION 1.0.1
+------------------------------
+Harmony version 1.1 	vs 	Harmony version 1.0.1 
+[10-12-2009] 			[01-11-2009]
+
+
+- All wads (and deh) were merged into 1 wad named Harm1.wad making it:
+	1- easier to play Harmony with mods and add-ons. 
+	2- easier to play Harmony with other source ports.
+- Included autoexec.cfg to ensure compatibility (with Windows Vista).
+- Map names are now consistent.
+- Jumping and crouching is now impossible (due to 'mapinfo').
+- put "version 1.1" on the title picture.
+- Added PAR times on intermission screens.
+- Fixed missing patch errors at startup.
+- Implemented better difficulty settings (map06 had none).
+- Fixed the height of 'self-destruct' explosions in map07.
+- Cleaned up Harmony sprites.
+- Brushed up textures RW48-2 and RW48-4.
+- Fixed missing flat (cratop1) in map04.
+- Shotgun is raised instead of appearing instantly.
+- Updated the text file.
+
+
+
+5: MAP INFO
+----------- 
+map names:
+
+01: Abduction 	
+02: Harm's way 	
+03: Owt mood    	
+04: Megalapolis		
+05: the Hospital
+06: the Weapons factory	
+07: the underground lab 
+08: Airstrip one	
+09: the Launch base	
+10: the Radioactive zone		
+11: Echidna		
+
+
+
+6: EDITORS USED & CREDITS
+-------------------------
+I`d like to thank the creators of: 
+
+	DOOM2   	        (the best game ever made, without which 
+				Harmony would not exist),
+	ZDoom v2.3.1		(provided the free engine for Harmony)	
+
+	DCK             	(used for map-building),
+	Doom Builder v1.66	(used for map-building),
+     	NWT             	(used to transfer textures),	
+	XWE v1.16		(used to transfer graphics and sounds; 
+				 create palette and several features),
+	WhackEd2 v0.60		(used to create the deh file), 
+	Doomfont v2.1b		(aided with making of text graphics)
+	Imagetool		(used to make font files in 6zharm.wad)
+
+	GIMP 2.6		(use to make graphics)
+	Corel Paint     	(used to make textures),
+	Ultimate Paint [demo]   (used to edit digital photograps for 
+				the sprites),
+	MS Paint		(used to edit graphics),
+	Anim8or v0.9 		(used to create 3D models for some of
+				the sprites),
+
+	Goldwave [demo version]	(used to edit sound files),  
+	the Wav files I used	(I used Wav files from various sources, 
+				which are listed in the sounds.txt file).	
+
+	Bat to Exe Converter	(used to make old HARMONY.exe file)
+	HxD Hex Editor		(used to edit the exe file)
+	IconChanger [demo]	(used to edit the exe file)
+	
+
+
+Many thanks to playtesters:
+
+	* "Space is green"
+
+	* People of the Doomworld forums who provided additional feed-back.
+
+
+Special credits go out to:
+		
+	* Kyu for the great MP3 music. 
+	They fit the game very well and I feel lucky to use them.    
+
+	* "Space is green" for making the cool high resolution ending 
+	picture ('BOSSBACK' harm1.wad). 
+
+	* "Space is green", Tineke and Diana for assisting
+	me in making hundreds of digital pictures for the monster sprites.
+	
+	* Enjay, who helped me with the mapinfo lump and answered all my
+	Zdoom related questions. 
+
+	* The (Z)Doom community for your answers to my questions. 
+		
+	* The Doom community for your (indirect) inspiration.
+	In particular: ACE team Software, (the late) Epsi, Justin Fisher, 
+	Gusta, Metabolist, Scientist (aka Space is green) and the Ultimate
+	Doomer. Also the late graphic artist Don Punchatz who made the 
+	inspiring cover art and logo for the game Doom. 
+
+	* The people hosting websites where Harmony can be downloaded for
+	free. In particular DRD Team Share Space, from which Harmony version
+	1.0.1 has already been downloaded 6300 times.
+
+
+
+7: MUSIC
+--------
+All music tracks were made by Kyu/KERBERENES Antoine and are being 
+used for Harmony with permission. 
+
+Two weeks before the release of Harmony I was still in need of music.
+Fortunately Kyu allowed me to use 3 of his tracks which fit Harmony very well.
+Unfortunately there was no more time to add other tracks to the selection 
+so the available material had to be recycled in the game. 
+
+All music tracks fall under a Creative Commons license : 
+BY - No Commercial Use - No Modification. All tracks are under 
+copyright of Kyu/KERBERENES Antoine. Further authorizations 
+and questions can be asked at kyuu_k@hotmail.fr
+
+The tracks originate from Kyu's ablum "The Edge" (2009)
+as tracks #6 . "Unititled"; #7 . "Mercury Stripes, Blue Mess"
+and #10 . "The Edge".
+
+More information on Kyu and his music can be found on:
+http://www.myspace.com/kyuumusic
+
+
+
+8: KNOWN BUGS
+-------------
+* The player cannot swim. Harmony is inspired on games from the 
+nineties in which swimming was not common. For the same reason the 
+player cannot jump nor crouch.
+This means the player will have to RUN instead of jump to get across 
+openings. For a list of the controls press the F1 key in the game or 
+select 'customize controls' in the options menu.
+
+* Harmony has not been fully tested for multiplayer games so it will
+probably be unbalanced when playing with more than one player.
+
+
+
+9: HARMONY AND DOOM
+--------------------
+Harmony started out as an add-on for Doom2, but along the way 
+the project started a life of its own. All features except for 
+the high resolution sprites, title, help and intermission picture are 
+compatible with any Doom related source port (although some maps
+might give VPO's). All the mapping effects (iris doors/ 'solid' 
+floor over 'solid' floor in map 7 / exploding fire extinguisher / 
+etc...) are compatible with vanilla Doom2.exe! 
+In other words it should be easy to make versions of Harmony for
+every Doom related source port. I chose only to make one for Zdoom 
+because I already had some experience with it. People are free to 
+make versions for other ports as long as they follow the rules 
+discribed below in the "LEGAL PART" section below. 
+
+Harmony is distributed with the Zdoom engine, but it can also works with 
+other Doom related engines (like GZDoom). 
+
+To play Harmony with a different engine you will need to:
+1: download another source port, for example: GZDoom 
+( http://grafzahl.drdteam.org/page.php?page=230 ).
+2: Run the port with the Harm1.wad file.
+
+Note that Harmony will look and feel different from how it was intended to.
+Note: Harmony can also be played with the lastest/ future versions of 
+zdoom, by dragging the Harmony.wad file onto zdoom.exe. 
+
+
+
+10: THE MAKING OF HARMONY
+-------------------------
+Working on Harmony was creatively challenging in many ways. It involved;
+designing levels/ enemies/ weapons, sculpting, drawing,  painting, 
+creating digital images, sound editing and 3D-modelling. 
+Furthermore, for the promotion of Harmony I learned how to make a website 
+with HTML. Making Harmony was a highly challenging and learnful experience. 
+
+If you want to learn more on how Harmony was made, please visit:
+www.rabotik.nl  
+
+
+
+11: LEGAL PART
+--------------
+In the very unlikely event something goes wrong with your computer I do not 
+accept any form of liability. 
+
+
+* Maps and Graphics:
+	All resources in the harm1.wad were made by me (except for some coding
+	which is free, and the "BOSSBACK" image discussed later*). 
+	You may freely distribute these Harmony files but you are not
+	allowed to make personal profit by selling/ renting/ leasing (one
+	of) them. 
+	You may use them for your own project(s) on these 3 conditions: 
+	1: You are NOT allowed to make (personal) profit from them in any
+	way. 
+	2: You are NOT allowed to use them for racist, sexist or otherwise 
+	hateful intent.
+ 	3: You must give me (Rabotik) proper credit.
+	
+	*The picture at the end of the game (named BOSSBACK) was 
+	made by "Space is green". If you want to use this image you will need
+ 	to ask him for permission. www.spaceisgreen.nl .
+
+* Sound effects: 
+	The sound effects used in Harmony came from various sources. A list 
+	with sources belonging to each sound can be found in sounds.txt in the
+	"other-files" folder. 
+	I did my best to check if they were all completely free, and to my
+ 	best knowledge they are. 
+
+* Music:
+	The music tracks were created by Kyu. All music tracks fall under a 
+	creative Commons license : 
+	BY - No Commercial Use - No Modification. All tracks are under 
+	copyright of Kyu/KERBERENES Antoine. Further authorizations 
+	and questions can be asked at kyuu_k@hotmail.fr
+
+* harmico1.ico and txt files:
+	The harmico1.ico, autoexec.cfg, Harmony.txt, licenses.txt and 
+	sounds.txt file were made by me and are free.
+
+* Other files:
+	fmodex.dll, harmony.ini, zdoom.pk3 and licenses.zip are Zdoom related 
+	files, which were not made by me but can be distributed freely.
+ 	HARMONY.exe is a modified version of Zdoom.exe (also free). 
+	For more information read the text files in licenses.zip.
+
+
+
+12: ENDING
+----------
+I hope you enjoy Harmony,
+
+
+T.V.
+aka Rabotik
+
+e-mail: rabotik AT gmail.com
+
+ December  2009
+ www.rabotik.nl
+
+

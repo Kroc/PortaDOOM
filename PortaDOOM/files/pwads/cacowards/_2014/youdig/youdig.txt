@@ -1,0 +1,101 @@
+===========================================================================
+Engine(s) needed	: Any Boom-compatible. Zdoom accommodations added.
+===========================================================================
+Title                   : You Dig v1.7
+Filename(s)             : youdig.wad
+Release date            : July 25, 2014
+Author                  : Tuxlar
+Email Address           : webutek@gmail.com
+
+Description		: This is a map with a very unusual twist on the
+			doom experience. No spoilers here, other than
+			the name. You've just gotta see it for yourself! ;)
+
+			If you find any bugs, or record any demos, feel
+			free to send them over.
+			
+			Warning: Skill 4 is not recommended for first time
+			players! Consider it a challenge mode of sorts.
+
+Additional thanks to:	Marcaek, Dew, Jimmy_, Clonedpickle, Jmickle, 
+			Ribbiks, BlueFeena, and Officer_D for testing and
+			feedback. Also thanks to the folk in #doomtwid for
+			letting me bug them for assorted troubleshooting help.
+
+Discussion thread:	http://www.doomworld.com/vb/showthread.php?postid=1281731
+
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Zdoom ZMAPINFO data, for better compatibility
+
+* Play Information *
+
+Game                    : DooM 2
+Map #                   : Map01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Sure
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes, including one custom-ish
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : +4 weeks
+Editor(s) used          : Doom Builder 2, SLADE 3
+Known Bugs              : Minor sprite clipping. Please report any
+						others, if you find them!
+May Not Run With        : Vanilla and non-Boom
+Tested With             : PrBoom+, Zdoom, and a few others.
+
+* Changelog *
+-	v1.1b (June 26)
+	-	Eased up ammo restrictions for skill 4.
+	-	Improved cues for progression.
+	-	Minor bug fixes.
+-	v1.2 (June 27)
+	-	Slightly rebalanced ammo and monsters.
+	-	Softened Jackhammer hit sound.
+	-	Minor bug fixes.
+-	v1.3 (July 1)
+	-	Rebalanced ammo and monsters, especially for skill 1 & 2.
+	-	Removed a few "annoying" elements.
+	-	Removed unused resources, reducing file size ~1mb.
+	-	Tweaked some triggers and pieces of layout for better effect.
+	-	Slightly tweaked some aesthetics.
+	-	Implemented slightly improved color palette.
+-	v1.4 (July 2)
+	-	Fixed a crucial item teleport bug.
+-	v1.5 (July 5)
+	-	Completely removed the Revenant Riot Room. Just not fun.
+	-	Rebalanced some progression choices to be a bit less harsh.
+	-	Fixed some minor scripted event bugs.
+	-	Various balance tweaks.
+-	v1.6 (July 24)
+	-	Lightened up the 'slaughter' encounters a tad.
+	-	Freelook re-enabled for zdoom.  This was highly unpopular.
+	-	Fixed exit door trigger.
+	-	Various minor visual tweaks.
+-	v1.7 (July 25)
+	-	Fixed exit door trigger for real.
+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.

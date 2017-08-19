@@ -1,0 +1,96 @@
+===========================================================================
+Advanced engine needed  : Boom/PrBoom
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Swift Death
+Filename                : swideath.wad
+Release date            : 11/11/2015 (M/D/Y)
+Author                  : franckFRAG (guest mappers : JCD & Memfis)
+Email Address           : franck.livolant@laposte.net
+Misc. Author Info       : Mapper since 2005. Author of "Fradm1";
+			  map08 of "Plutonia Revisited";
+			  map14 of "Interception";
+			  map03, map12, map16, map18, map22 and map25 of "3 Heures d'Agonie".
+			  map04, map13 and map28 of "3 Heures d'Agonie II"
+			  New leader project of "Necromantic Thirst"
+			  Creator and admin of "Doom Staze" (http://doomstaze.free.fr/)
+
+Additional Credits to   : - id Software for Doom
+
+			  - Pascal "CodeImp" vd Heiden for Doom Builder
+
+			  - Kris Kuksi
+
+			  - The XWE team
+
+			  - The French Doom Community
+
+			  - JCD for bugs, textures misalignments and such.
+
+			  - JCD, Dislogical, and especially FSN76 for some suggestions about the duel gameplay :)
+
+			  - Ch0wW and JCD, for their incredible demos :D
+
+			  - Ch0wW; [WH]Wilou84; SidTheMeck; and Squonk for various helps :)
+
+General Description     : Swift Death is an extremely hard megawad, calibrated for speedrunners.
+			  I recommanded for novice players to play in "easy" ("Toilet Break", or "Soft Event").
+			  SD is realized in speedmapping sessions, for the most parts of maps.
+			  These maps are generally small, and contain on average 75 monsters.
+			  They are also compatible for the duel / deathmatch.
+
+Story			: You are the puppet of Itanimulli. A powerful Evil God, which take pleasure to torture you.
+                          He sends you in different worlds since the eternity.  But you keep at the bottom of you a hope,
+			  to leave this hell. Because you know that in every death, you are so close to the exit.
+			    
+
+===========================================================================
+* What is included *
+
+New levels              : 32 maps
+Sounds                  : no
+Music                   : yes
+Graphics                : yes
+Sprites			: no
+Dehacked/BEX Patch      : yes
+Demos                   : yes
+
+
+* Play Information *
+
+Game                    : Doom II Hell on Earth
+Map #                   : Map01 ==> Map32
+Single Player           : yes
+Cooperative 2-4 Player  : yes
+Deathmatch 2-4 Player   : yes
+Other game styles       : survival - deathmatch
+Difficulty Settings     : yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : With some enormous breaks of plenty months => 4 years
+Editor(s) used          : DooM Builder 1.68, EXtendable Wad Editor, Adobe Photoshop CS6
+
+Known Bugs              : If you find any bugs, let me know.
+
+
+==============================================================================
+* Copyright / Permissions *
+==============================================================================
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+http://doomstaze.free.fr/
+http://doomfrance.forumactif.com/

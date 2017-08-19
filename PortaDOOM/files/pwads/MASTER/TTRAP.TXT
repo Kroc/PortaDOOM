@@ -1,0 +1,83 @@
+================================================================
+Title                   : Trapped on Titan
+Filename                : TTRAP.WAD
+Author                  : Jim Flynn
+Email Address           : CIS: 72713,3334
+Misc. Author Info       : Programmer and Doomer
+                          Ass't Sysop for Action Games on CIS
+
+================================================================
+Description             : Every step you take may be your last.
+                          If it looks too easy, it probably isn't. 
+                          Good luck - you'll need it <G>.
+================================================================
+
+Play notes:               486/66 recommended
+
+================================================================
+
+Additional Credits to   : Brendon Wyber and Raphael Quinet for DEU-GCC
+                        : Antony Burden and Simon Oke for DETH
+			: Colin Reed for BSP
+			: Olivier Montanuy for DeuTex
+			: HevKev (Kevin McGrail) for the DeuTex Manual
+			: Jens Hykkelbjerg for RMB
+			: Those folks at ID, for Doom, and especially
+                          Shawn Green for his encouragement and
+                          helpful comments.
+                        : Playtesters: Peter Zahner, John Keary, 
+			  Matt Jonelis, Dr Sleep
+
+================================================================
+
+* Play Information *
+
+Level #                 : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (untested)
+Deathmatch 2-4 Player   : Yes (untested)
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : Yes (sky)
+New Music               : No
+Demos Replaced          : None
+
+================================================================
+
+* Construction *
+
+Base                    : New level from scratch
+Tools(s) used           : For level editing: DEU 5.2 (GCC), and DETH 2.3
+			  For node building: BSP 1.2x
+			  For reject map building: RMB 2.1
+			  For wad composition: DeuTex 3.4
+
+================================================================
+
+* Known Bugs *
+	
+	THIS SPACE INTENTIONALLY LEFT BLANK
+
+================================================================
+
+* Copyright / Permissions *
+
+This wad is the property of Id software and you are prohibited from
+doing anything with it without their express permission. Ok, you can
+play it, but thats it!
+
+================================================================
+
+* Other Doom II wads by Jim Flynn *
+
+Available on Compuserve, Action Games Forum, Doom II Levels Library
+
+DM2ITZ.ZIP	The Interdiction Zone
+DM2ORA.ZIP	The Oracle (with Scott Harper)
+ENIGMA.ZIP	The Enigma Episode
+
+
+
+
+
+

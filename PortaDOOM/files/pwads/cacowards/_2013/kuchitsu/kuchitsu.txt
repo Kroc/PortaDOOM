@@ -1,0 +1,138 @@
+===========================================================================
+Advanced engine needed  : vanilla-compatible limit removing port
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : kuchitsu
+Filename                : kuchitsu.wad
+Release date            : 01/01/2013
+Author                  : Memfis
+Email Address           : kuchitsu4@gmail.com
+Other Files By Author   : sbspd020 MAP02, ht MAP17, whitemar MAP04,
+                          vodeim21, kashimir, spd6 MAP12, stckblod,
+                          map18mem, greenday, kurogane, sf2011 MAP13, bofp,
+                          kukuku, horalky
+Misc. Author Info       : 19 years old doomer from Russia.
+                          http://myanimelist.net/profile/kuchitsu
+                          http://last.fm/user/kuchitsu
+
+Description             : 6 easy (for me anyway) levels intended to be
+                          played on UV from pistol start without saves. I
+                          didn't consider continuous playing while making
+                          this wad. The general theme is green/brown bricks
+                          and nature with some city and tech elements.
+
+Additional Credits to   : Graphic and music makers, authors of things that 
+                          inspired me. (see below for the details) GreyGhost 
+						  for removing unused graphics. Players from Doomworld
+						  and Russian Doom Community for feedback, FDAs and 
+						  let's plays. The author of "DoomWord" (sic). Sorry 
+						  dude, forgot to credit you in my previous wads.
+===========================================================================
+* What is included *
+
+New levels              : 6
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-06
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : I dunno, but the first completed map (05) was
+                          started on October 13, 2011 and the last
+                          completed map (06) was finished just a few days
+                          ago.
+Editor(s) used          : Doom Builder 1.68, XWE
+Known Bugs              : On map05 the blue door looks incorrectly in some
+                          ZDoom-based ports. But they aren't vanilla
+                          compatible so you're not supposed to use them
+                          anyway. :p
+May Not Run With...     : doom2.exe (even if you append new sprites and
+                          flats, you might get HOMs, visplane errors,
+                          tutti-fruttis and medusas)
+===========================================================================
+* Additional Information *
+
+     New graphics from: 
+Doom City (sky, Integra Bank sign, 7 Eleven sign, shelves, Pepsi machine, some windows)
+Doom 1 (some computer panels)
+Epic 2 (red laser stuff, or it might be from Scythe, I'm not sure)
+Fragport (green key stuff)
+Gothic DM 2 Textures (blue flag)
+Hexen (barrel)
+Invasion UAC (tree)
+Plutonia (green bricks with a white vent thingy, RAILING texture)
+Requiem (waterfall textures)
+The Revolution! (brown bricks with a window, new crate)
+Wolfenstein 3D (green plant thingy)
+Back To Basics (fixed DOORSTOP and SUPPORT2 textures)
+Mall of Mayhem (white torso)
+TNT 2 Texture Pack (clean METAL texture)
+Community Chest 4 Texture Pack (recolored crates, recolored lamps)
+Realm 667 Repository (acid barrel, green bloody mess
+Nathan's Toasty Technology page (photo of Yangshuo Cavern by Tom Atwood)
+
+     New music:
+map01 - map09 from Gothic DM, composed by Mark A. Klem
+map02 - map01 from The Waterfront, presumably composed by Scott F. Crank but it is not written in the *.txt for that wad
+map03 - map09 from Requiem, composed by David "Tolwyn" Shaw
+map04 - map16 from Memento Mori 2, composed by David "Tolwyn" Shaw
+map05 - map01 from Doom City, composed by Shamus Young
+map06 - "Wily's Fortress: Station 2" from Mega Man 7 (SNES), midi version by Jarel Jones
+intermission - "Instructions / Password" from Pilotwings (SNES), midi version by Chris Francis 
+story - map01 from Osiris, composed by Jeremy Doyle
+
+     Sources of inspiration:
+map01 - texturing: 2dmmaps.wad map01, the tower you can see from the exit: Eternal's wads
+map02 - lighthouse: wtrfront.wad, boats: Alien Vendetta map11
+map03 - "Doom 2 the Way id Did" (big part of this map was originally made for that project 
+         but they said that it wasn't very id-like and I didn't want to change anything), the red key area: Doom 2 map06
+map04 - first few areas: Cleimos 2, texturing: Scythe 2, last area: Whispers of Satan, green armor behind the red laser: Epic 2
+map05 - Doom City of course, it inspired the whole wad basically
+map06 - Scythe 2 map11, rocket launcher area: Alien Vendetta, scapeship at the end: Escape from Deimos
+
+     Name of the wad: I listened to the song Blood Stain Child - Ez Do Dance (TRF Cover), heard "kuchitsu" at 1:31 
+                  and liked how it sounded. It's not a proper word, just a combination of syllables.
+				  
+     Map name explanations:
+map01 - "IKUWAYO"            - it's from Japanese language, a girly way to say "Let's go!"
+map02 - "LOTUS ISLAND"       - Buckethead has a song with the same name, this map takes place on an island
+map03 - "MECHANICAL"         - no idea, I guess I was just thinking of random words and this one seemed fitting
+map04 - "WATER LEAK"         - umio has a song with the same name, there is a lot of water in this map
+map05 - "DOOM TOWN"          - uhhh it's similar to "Doom City"!
+map06 - "HAVE A NICE FLIGHT" - at the end you're boarding a spaceship and the intermission music is from a flight simulator
+
+... I enjoyed writing all this stuff for some reason. 
+						  
+						  
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

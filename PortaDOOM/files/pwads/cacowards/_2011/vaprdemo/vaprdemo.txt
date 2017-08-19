@@ -1,0 +1,140 @@
+
+  \   |  _____   _____   _____   ______           _____   ______  ______
+   \  | /_____| /_____| /     | |_____/ \   _  | /_____| |_____/ /_____
+    \_| |     | |       |_____| |    \   \_/ \_| |     | |    \  \______
+
+                           -  Preview Version  -
+
+===========================================================================
+
+Advanced engine needed  : The Eternity Engine
+Primary purpose         : Single play
+
+===========================================================================
+
+Title                   : Vaporware: Preview Version
+Filename                : vaprdemo.zip
+Release date            : 05/02/2011
+Author                  : Esselfortium
+Email Address           : esselfortium@gmail.com
+Version                 : 1.01
+
+Other Files By Author   : SpaceDM9, Testing Facility, Claust1024 map19,
+                          various contributions to Greenwar 2 and the
+                          32in24 series, Flashback, SpaceDM5
+
+Misc. Author Info       : Mapper, musician, texture art guy. Check
+                          http://essel.spork-chan.net/ for stuff, or find
+                          me on Doomworld Forums for more or different
+                          stuff.
+
+                          For more information on Vaporware itself,
+                          check out http://vapor.spork-chan.net/
+
+Description             : A preview of the Vaporware map pack for The
+                          Eternity Engine, containing the project's first
+                          map, "Cargo Transfer" by Esselfortium.
+                          
+                             MAP01: Cargo Transfer
+                             Map by Esselfortium
+                             Original Music by Esselfortium
+                          
+                          This map is actually part 1 of an in-development
+                          mini-episode that makes up part of Vaporware.
+
+                          The full Vaporware project is in glacially-paced
+                          development by a team including AgentSpork,
+                          Vader, Esselfortium, Tango, 5hfifty, Kristus,
+                          Mechadon, Brinks, and SoM.
+
+Additional Credits to   : Vaporware features textures, sprites, and
+                          sounds from the following fine folks:
+                          
+                          NiGHTMARE            Espi
+                          Perkristian          Cage
+                          Esselfortium         RottKing
+                          Vader                Eriance
+                          AgentSpork           NMN
+                          Lut                  SoM
+                          Stecki               Tormentor667
+                          Gothic Team          id Software
+                          Raven Software       Monolith Productions
+                          
+                          Thanks to Quasar and SoM for all their work on
+                          Eternity Engine.
+
+                          Thanks to AgentSpork for hosting the project
+                          website and files.
+                          
+                          Thanks to Mechadon, Phobus, Vader, AgentSpork,
+                          CSonicGo, and everyone else who's playtested or
+                          given advice on this map over the course of its
+                          development.
+
+                          (I'm sorry if you did something important and I
+                          forgot about you, whoever you are .____.)
+
+===========================================================================
+
+* What is included *
+
+New levels              : 1 (MAP01)
+Sounds                  : Yes
+Music                   : Yes (OGG format)
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+Jumping                 : Allowed
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2+ years
+Editor(s) used          : Doom Builder 2, Slade, SLumpEd
+
+Known Bugs              : Vaporware depends on some functionality that is
+                          not yet fully implemented. The map is tested and
+                          completely playable, but you may run into a few
+                          oddities, such as:
+                          
+                          * When crossing portal boundaries, it is
+                            sometimes possible to telefrag monsters that
+                            stand in your way.
+
+                          * Hitscan weapons cannot currently be fired
+                            through portals. If you're seeing your bullets
+                            disappear or hit an invisible wall, try taking
+                            a few steps forward.
+
+                          * A small blip is sometimes noticeable when
+                            riding up a lift through a portal boundary.
+
+May Not Run With...     : The ZDooms
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

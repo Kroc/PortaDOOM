@@ -1,0 +1,94 @@
+===========================================================================
+Advanced engine needed  : GLBoom-Plus 2.5.0.5 / GZDoom 1.3.13 Beta or higher
+Primary purpose         : Single play
+===========================================================================
+Title                   : Hell Ground
+Filename                : hg.wad
+Release date            : November 15, 2009, Rereleased November 20, 2009
+Author                  : Alexander "Eternal" S. (aka Deadall)
+Email Address           : etern-all@mail.ru
+Other Files By Author   : Generator of Evil, Eden, Napalm,  Remain 1,
+                          EPIC, NORDHELL, Belial's Bad Brain, Remain 3
+                          XXXI CyberSky, 32 Inch Nails, Gravity,
+                          Eternal Revelation, Nightomb (2x2 series),
+                          Eclipse (2x2 series), To Fight (2x2 series)
+                          LongDays
+
+Misc. Author Info       : Russia, Moscow.
+
+Description             : 7 levels for 'advanced' Boom compatible ports.
+
+                          You need to have a BOOM compatible OpenGL port
+                          with support of hi-res textures in wads, 
+                          tall patches and music in the OGG format.
+
+                          Currently there are only two ports which can handle
+                          this wad correctly:
+                          a) GLBoom-Plus 2.5.0.5 or higher;
+                          b) GZDoom 1.3.13 Beta or higher;
+
+                          Command lines:
+
+                          glboom-plus -iwad doom2.wad -file hg.wad -complevel 9
+
+                          gzdoom -iwad doom2.wad -file hg.wad
+
+                          Textures: American McGee's Alice, Deus Vult, Half-Life;
+                          INTERPIC graphics: O.Fronk;
+                          Sounds: Half-Life, Power Slave, Eternal III;
+                          Music: American McGee's Alice;
+                          Dehacked: Andrey "entryway" Budko;
+
+Additional Credits to   : id Software,
+
+                          The authors of DoomBuilder, DeePsea and XWE
+===========================================================================
+* What is included *
+
+New levels              : 7
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : map01-map07
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts included but not tested
+Deathmatch 2-4 Player   : Starts included but not tested
+Other game styles       :
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Two month. About 14 hours per day for the latest week.
+Editor(s) used          : DoomBuilder 1.68, DeePsea, XWE
+Known Bugs              : none with glboom-plus 2.5.0.5
+May Not Run With        : Edge, Vavoom, Doomsday, PrBoom
+Tested With             : glboom-plus 2.5.0.5
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

@@ -1,0 +1,65 @@
+===========================================================================
+Advanced engine needed  : ZDoom version 2.0.60 or higher
+Primary purpose         : Single player only
+===========================================================================
+Title                   : Daedalus: Alien Defense
+Filename                : DAEDALUS.ZIP
+Release date            : 10 December 2003
+Author                  : TeamTNT
+Email Address           : Any address starting with Daedalus at teamtnt.com 
+Other Files By Author   : Final DOOM, Icarus, Bloodlands, Reclamation,
+                          Grievance, Pursuit, Eternal DOOM, Return and the 
+                          Boom engine.
+Misc. Author Info       : Tired.
+
+Description             : The long awaited completion of Doom2000
+
+Additional Credits to   : A thousand people, at least!
+===========================================================================
+* What is included *
+
+New levels              : The equivalent of the usual full 32 level megawad
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No - ZDoom is in too much flux at the moment to make any
+Other files required    : Just ZDoom and a DOOM2 IWAD
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Hubs
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 4 1/2 years
+Editor(s) used          : All of 'em
+Known Bugs              : We don't think so, no.
+May Not Run With...     : Won't run with anything but ZDoom 2.0.60+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY not distribute this file in any format other than as a mirror
+of the primary upload site (3dgamers.com)
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.teamtnt.com
+FTP sites: ftp://3darchives.in-span.net/pub/idgames/themes/TeamTNT/
+
+

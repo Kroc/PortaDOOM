@@ -1,0 +1,273 @@
+===========================================================================
+Archive Maintainer      : Please place in levels/doom2/ports/megawads
+Advanced engine needed  : Boom compatible
+Primary purpose         : Single player
+===========================================================================
+
+Title                   : Ancient Aliens
+Filename                : aaliens.zip
+Release date            : May 8, 2016
+Author                  : Paul "skillsaw" DeBruyne
+Email Address           : [redacted]
+Other Files By Author   : Sector 666 (666.zip)
+                          Aeternum (aeternum.zip)
+                          Vanguard (vanguard.zip)
+                          Lunatic (lunatic.zip)
+                          Hanging Gardens (hgarden.zip)
+                          Valiant (valiant.zip)
+                          Valiant: Vaccinated Edition (valve.zip)
+                          Sawdust (sawdust.zip)
+                          
+                          Contributions to various community, team, and
+                          personal projects, including Back to Saturn X 
+                          Episodes 1 and 2, Stronghold: On the Edge of 
+                          Chaos, ZPack, Community Chest 4, Unholy Realms, 
+                          and various 32in24 sessions.
+                          
+Misc. Author Info       : Makes maps for Doom
+
+Description             : Ancient Aliens is a megawad featuring 32 colorful,
+                          action-packed maps for Boom compatible ports.
+                          
+                          Go on a journey to discover the truth about the 
+                          enigmatic origins of human civilization... 
+                          
+                          I'm not saying it was aliens, but... the truth
+                          is out there.
+
+===========================================================================
+
+Port Differences        : ZDoom-based ports and Eternity use MAPINFO for
+                          episode selection and story screens.
+                          
+                          Additionally, in Zdoom-based ports and Eternity,
+                          ACS is used to play sound effects occasionally.
+                          This is way more cool than it sounds.
+
+===========================================================================
+
+** Credits **
+
+Mapping                 : skillsaw
+                          AD_79
+                          esselfortium
+                          Joshy
+                          lupinx-Kassman
+                          Pinchy
+                          stewboy
+                          Tarnsman
+                          
+Music                   : stewboy
+
+Testing                 : AD_79
+                          Altazimuth
+                          dew
+                          Tarnsman
+                          
+Coop Testing            : Alfonzo
+                          Altazimuth
+                          dew
+                          esselfortium
+                          Pinchy
+                          Seele00TextOnly
+                          
+Texture Credits         : NiGHTMARE
+                          Espi
+                          Eriance
+                          Fredrik Johansson
+                          Janitor
+                          DaGGeR
+                          Ola Bjorling
+                          Vader
+                          XDelusion
+                          esselfortium
+                          RottKing
+                          Nuxius
+                          Afterglow
+                          AgentSpork
+                          Enjay
+                          Huy Pham
+                          SargeBaldy
+                          Tormentor667
+                          Iikka Keranen
+                          Cage
+                          FuzzballFox
+                          40oz
+                          Mechadon
+                          zrrion the insect
+                          Nightfall
+                          Blue Shadow
+                          Sock
+                          Roger Ritenour
+                          Spackle
+                          Tarnsman
+                          lupinx-Kassman
+                          skillsaw
+                          GothicDM Team
+                          Eternal Doom Team
+                          id Software
+                          Ion Storm
+                          Raven Software
+                          Rogue Entertainment
+                          Valve Software
+
+Sprite Credits          : Eriance                        
+                          Virtue
+                          Bloax
+                          CeeJay                          
+                          Tormentor667
+                          skillsaw
+                          3d Realms                       
+
+Fonts                   : Mechadon
+
+Status Bar Font         : AgentSpork
+
+Palette                 : skillsaw
+                          (purple range is from BTSX)
+
+ENDOOM                  : Altazimuth
+
+CR* Translation lumps   : xttl
+
+Final ending text       : dew
+
+ACS multiplayer fix     : rhinoduck
+                          
+Misc Graphics, Splash
+Screens, Status Bar     : skillsaw
+
+Sound Credits           : Eriance
+                          Raven Software
+                          Rogue Entertainment
+                          http://www.freesfx.co.uk                     
+
+Map Listing             : MAP01 - "The Ancient Navajo Wolf Warp" by skillsaw
+                          MAP02 - "Sanctum of the Wastes" by skillsaw
+                          MAP03 - "Arachnotron Arrival" by skillsaw
+                          MAP04 - "Bad Medicine Men" by skillsaw
+                          MAP05 - "Last Refuge of the Anasazi" by skillsaw
+                          MAP06 - "Sinkhole Showdown" by skillsaw
+                          MAP07 - "Dare to Fly Where Eagles Soar" by skillsaw
+                          MAP08 - "Ancient Aliens" by skillsaw
+                          MAP09 - "The Nectar Flow" by Joshy
+                          MAP10 - "Gift of Denial" by skillsaw
+                          MAP11 - "On the Origin of Spacies" by skillsaw
+                          MAP12 - "Magenta Heat" by skillsaw
+                          MAP13 - "Polychromatic Terrace" by skillsaw
+                          MAP14 - "Blazing Boulevard" by skillsaw
+                          MAP15 - "Wormhole Junction" by skillsaw
+                          MAP16 - "Leave Your Sol Behind" by skillsaw
+                          MAP17 - "Daylight Under a Dark Sol" by skillsaw
+                          MAP18 - "Illuminati Revealed" by skillsaw
+                          MAP19 - "Crash Landing" by skillsaw
+                          MAP20 - "Code" by AD_79
+                          MAP21 - "Cyberbullying: Beyond Earth" by skillsaw
+                          MAP22 - "Acerola-Orion" by esselfortium
+                          MAP23 - "Trinary Temple" by Pinchy
+                          MAP24 - "Culture Shock" by lupinx-Kassman (additional mapping by skillsaw)
+                          MAP25 - "Xenoarboreum" by skillsaw
+                          MAP26 - "Egyptian Metaphysics" by Tarnsman
+                          MAP27 - "Kingdom of the Crystal Skulls" by skillsaw
+                          MAP28 - "Floating Arena" by Joshy
+                          MAP29 - "The Ones Behind It All" by skillsaw
+                          MAP30 - "The End" by skillsaw
+                          MAP31 - "Grey Dwarf" by stewboy
+                          MAP32 - "Ossuarium Exoterre" by skillsaw
+                          
+Music Listing           : MAP01 - "Flee"
+                          MAP02 - "The Incessant Flow of Time"
+                          MAP03 - "Depth Charge"
+                          MAP04 - "Desk Lamp"
+                          MAP05 - "Toejazz"
+                          MAP06 - "Roof"
+                          MAP07 - "Featherfall"
+                          MAP08 - "Hell Jungle"
+                          MAP09 - "The Demon's Serenade"
+                          MAP10 - "Vase"
+                          MAP11 - "Space Train"
+                          MAP12 - "Web of Steel"
+                          MAP13 - "Gold Rush"
+                          MAP14 - "Moonwalk"
+                          MAP15 - "Hypercube"
+                          MAP16 - "Space Jiggle"
+                          MAP17 - "Other Side of the Moon"
+                          MAP18 - "Trapeze"
+                          MAP19 - "Long Night"
+                          MAP20 - "20 GOTO 10"
+                          MAP21 - "Basement"
+                          MAP22 - "The Last Dance"
+                          MAP23 - "The Greater Good"
+                          MAP24 - "Imaginarium"
+                          MAP25 - "Alien Forest"
+                          MAP26 - "Tales of Old"
+                          MAP27 - "Garden of Lost Souls"
+                          MAP28 - "Gigabridge"
+                          MAP29 - "Colliding Nebulae"
+                          MAP30 - "Yuletide"
+                          MAP31 - "Tribal Dance"
+                          MAP32 - "Birdsong" 
+                          Intermission - "Concentration"
+                          Title - "Welcome to Egypt"
+                          Text screen - "Martian Blues"    
+
+                          The full Ancient Aliens OST is available on
+                          Stewboy's bandcamp:
+
+                          https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost                       
+                          
+===========================================================================
+
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : MAPINFO, PLAYPAL, etc.
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Texture wad based on 32in24-14 resource
+Build Time              : 15 months
+Editor(s) used          : Doom Builder 2 , GZDoom Builder, Slade, WhackEd, 
+                          GIMP, Notepad++
+Known Bugs              : None
+May Not Run With...     : Gameplay mods that change the palette or don't 
+                          use .png graphics.
+                          
+                          If you encounter garbled texture graphics while 
+                          using a mod try changing the load order.
+                         
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file. Use aa-tex as a resource
+instead.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

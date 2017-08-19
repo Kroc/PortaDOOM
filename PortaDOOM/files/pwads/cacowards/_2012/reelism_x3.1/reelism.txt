@@ -1,0 +1,294 @@
+===========================================================================
+Advanced engine needed  : The latest version of GZDoom is recommended.
+Primary purpose         : Single player, Co-Op
+===========================================================================
+Title                   : Reelism Expansion Pack # 3: Reelism Gold
+Filename                : reelism_x3.pk3
+Release date            : 11/09/2015
+Author                  : The Kins and 300 Pounds
+Email Address           : thekins@gmail.com
+Other Files By Author   : ReDoom, Truckasaurus: The Worst Christmas Ever,
+			  and some other stupid crap.
+Misc. Author Info       : http://www.thekinsie.com/
+
+Description             : A weird, interesting take on the Invasion/Horde modes so popular lately.
+
+			  Each game is divided into five sixty-second rounds. In between rounds,
+			  a little slot machine in your HUD rolls, deciding the rules for the
+			  next round. Will you be fleeing Barons in low gravity, or running
+			  over hobos in a tank? Will you be lobbing petrol bombs at Imps,
+			  or taking magical weaponry to creepy neo-furry manchildren? The
+			  choice, for once, is not up to you.
+
+			  Expansion One adds a whopping twelve new rules, three new bosses, two
+			  maps, co-op play support, and more dogs than strictly necessary.
+
+			  Expansion Two adds nine new reels, five new maps, new gameplay mechanics
+			  like Superweapons, terrifying secrets and still even more dogs.
+
+			  Expansion Three adds six new reels, seven new maps, three new bosses,
+			  improved modding capabilities and two new modes, including the
+			  adrenaline-pumping Boss Rush!
+
+Additional Credits to   : Too many to fit in this text file! Check "View Credits" ingame.
+===========================================================================
+* Changes in Version X3.1 *
+Code Fixes:
+- Removed A_SetSpeed stuff from a secret morph for 1.8.10 compatibility (thanks Anon!)
+- Fixed a bug where Barkblasts don't work if an enemy is touching you (Thanks Mak0rz!)
+- One of the Quantum Gun's side-effects now vanishes after a while. (Thanks Beed28!)
+- Readded ZDoom network options menu to the... options menu (Thanks Edward850!)
+- Added options for disabling reflective floors and dynamic lights to Reelism Options
+
+Map Fixes:
+- Reel Stadium: Fixed a lack of multiplayer starts
+- Reel Stadium: Fixed reversed sign floating above the cash register in the gift shop (thanks Anon!)
+- JRPGVille: Minor bug fixes to the ruins just before the boss area
+- Secret: Various bug fixes, geometry tweaks and gasping at my terrible old level design
+- Fort Firestorm: Fixed a bug where two bits of barbed wire at the starting base couldn't be flown over (Thanks Horse Mans!)
+- Fort Firestorm: Made the waterfall path slightly less horrific to traverse. It's still a bit of a mess, mind, but it's easier now.
+- Planet Eioneus: Fixed bosses cheerfully letting themselves fall off the edge to an easy demise (thanks Anon!)
+
+* Changes in Version X3.0 *
+Tons of changes under the hood, including a complete conversion to "proper" PK3 format!
+- 6 new reels
+- 2½ new monsters
+- 17 new weapons
+- 3 new bosses
+- 6 new maps
+- 2 major map updates
+- 2 new morphs
+- 5 new jackpots
+- And more frequent jackpots!
+- Boss Rush mode
+- Togglable announcer
+- Enhanced co-op lobby
+- Custom boss and custom reel support
+- 13 new startling facts
+- 10 new billboards
+- A whole bunch of tweaks and polish
+- Shockingly few additional dogs
+
+* Changes in Version X2.1 *
+Lots of bugfixes, no new content.
+
+WEAPONS AND ITEMS:
+The Evanger SMG's can no longer be selected when ammo is empty, and the dualies will take precedence when auto-switching from an empty gun.
+Thrown barrels don't become solid until the player that threw them step away from them, to avoid getting stuck when throwing them straight.
+The Explosive Shotgun now has a proper pickup sprite. 
+
+MONSTERS:
+Revenants now shoot their missiles a bit higher up, to emulate the original mechanism from Doom II.
+Car crashes should now trigger Birthday Explosions during the proper reel.
+Crushed monsters no longer create infinite goo.
+Sectoid attacks reworked: ~2 sec life, can hurt other aliens, can't hurt bosses but player psionics can.
+Whoopsy's vomit will keep spraying out of its mouth instead of magically angling towards the target
+
+BOSSES:
+Bosses now become immortal when the player dies in single-play (bosses now get the TID 906 to accommodate this)
+Fixed MacGuffin missing some damage resistances.
+Fixed a bug where the Wizard would do his sight bark twice.
+
+MAPS:
+JRPGVille now has co-op starts and a roomier boss area that's easier for the bigger monsters to path around in.
+
+MISC:
+The smoke/effects toggle script will now turn off raindrops (but will not silence the ambient rainfall sounds).
+Disabled X/Y Billboarding due to visual glitches on 3D terrain
+Completely rebuilt the system for radius-based instakill crushing (tank, JERKs etc.)
+
+* Changes in Version X2.0 *
+Five new maps!
+Nine new slot rules!
+Three new bosses, plus custom boss support!
+Hordes of new guns and jackpots!
+Superweapons!
+Tons of bug fixes!
+Heaven!
+Hell!
+Let's Rock!
+
+Also, better documentation for mapmaking and multiplayer is provided for your convenience
+and her pleasure as part of the manual in the "docs" folder. Always read the label, and
+if the rash persists, please ask your vet.
+
+* Changes in Version X1.31 *
+This is where we fixed oopsies from X1.3. Our bad!
+HellKnights no longer gatecrash Night of the Shooting Dead, and Jerks no longer hunt in packs.
+
+* Changes in Version X1.3 *
+So many! Big thanks to Ed the Bat and Xutawoo for most of these! Here's the abridged version...
+
+LOBBY MAP:
+A handy, comfortable map to chill out and select your next level in. Best in co-op!
+Set the host's starting map as "lobby" to use it.
+
+BALANCE TWEAKS:
+The pistol hits nearly twice as hard, the baseball bat now kills normal enemies
+in a single mighty blow, and the flare gun now starts fires. Oh, and a bunch of
+monster spawns were removed from DISCORD, making it vaguely possible to finish.
+
+OTHER LITTLE THINGS:
+New victory playlist for when you win a round
+Environment sounds are louder and thus actually noticable
+A couple more billboards
+Slots now appear in ZDoom's alternate HUD
+Shotguns now fling enemies further backwards when used up close
+Super Shotguns fling enemies further than regular ones
+
+BUG FIXES:
+Improved how respawning works in co-op
+Tanks and Jerks no longer leave blood splatters on walls
+Tank gets pushed backwards by firing the cannon
+Coffee break jackpot freezes players in mid-air
+Find the Antidote no longer causes player anim stuttering
+Upgraded a couple of jackpot enemies
+Slot Rigging cheat is now clamped to valid values and prints the player that used it
+Fixed Railgun not switching away automatically when out of ammo
+Fist, Hammer and Laser better honor Caffeine Time
+Evened out randomness on car colour selection
+Lots of clean-ups and improvements to boss code
+Fixed the Transpo PA announcer talking over himself in multiplayer
+Added text names for maps that didn't have them, for future-proofing purposes
+Merged all map WADs into one file for convenience sake.
+Fixed Larry's Laser occasionally being silent
+Fixed Lightning Gun stunlocking bosses
+Fixed a situation that causes bosses, Jerks and jackpot enemies to sometimes not spawn
+
+* Changes in Version X1.2 *
+Re-enabled automatic weapon switching
+Fixed a possible endless loop crash in the enemy definitions
+Fixed Trackbot complaining about a "CorpseFlying" state
+Fixed dead Firebots never getting cleaned up
+Tweaked health spawning
+Added a "new" item!
+Fixed boss spawn points despawning after a boss spawns in Infinite Mode
+Added TDA's fullscreen HUD fix - thanks!
+Disabled HUD on credits map
+Added a debug cheat (Thanks Xaser!)
+
+* Changes in Version X1.1 *
+NEW(ish) GUEST MAP! By the one and only Xaser!
+Fixed Jetpack Larry complaining about a "CorpseFlying" state
+Fixed Infinite Mode bug where weapon spawners would always use the Boss Round weapons setup after a boss round
+Larry's Laser Gun is now affected by Caffeine Time
+The Archer has had his insane arrows replaced with less insane ones
+Fixed Barons and Imps' melee attacks damaging bosses and generally causing grief
+Replaced Scientist Zombie's dumb placeholder Doom64 dart sprite with a more fitting knife sprite by NeoWorm
+New sounds for the Scientist Zombie, SOAB and Baron Arm
+Fixed where I'd somehow never added Larry's sounds to the WAD. I'm good at modding, me
+Disabled Boss Test mode. Sorry! I didn't mean to keep it enabled
+Made health spawn more, and biased item spawners towards health
+Fire now does half damage to players
+Made baseball bat more hardcore
+Fixed Eye and Batghost dropping ammo twice
+Tank Alt-Fire now spews spent casings everywhere, AS IT SHOULD
+Made OpenGL sprite billboarding more consistent
+Modified a bunch of doors in Creature of Chaos so that enemies can open them
+Tweaked the secret stairs a little in Creature of Chaos to reduce the chances of the tank getting stuck on them
+Added subtle particle markers for item/weapon spawners (Thanks Torm!)
+Doubled raise/lower speed of MOST weapons
+Subtle tweaks to Jackhammer, Flare Gun and Baron Arm
+Changed Raven Hammer ammo usage to make actual sense
+Disabled auto-switch on picking up a new weapon
+Added a round timer to the HUD, among other little tweaks
+Added a range limit to the Former Humans, fixing your getting insta-sniped from across the map
+Logged reel names to the console, and made reel name/description text stick around for two more seconds
+
+* Changes in Version X1.0 *
+Twelve new slot rules!
+Three new bosses!
+Two new maps!
+New items!
+Lots of new guns and enemies!
+Co-op support!
+Lots of new jackpots!
+Mini-jackpots!
+Countless fixes and adjustments!
+Everything you know is wrong!
+
+* Changes in Version 1.3 *
+Minor player tweaks
+Skill settings added
+Fixed bug where bosses wouldn't spawn if something was in the way
+Fixed Eyes and Larry vanishing upon being killed with an explosive
+Various changes, fixes, additions and improvements to sounds
+Fixed bots spraying blood decals when shot near walls
+"Improved" 444 Jackpot
+Added capital letters to big font
+Adjusted all text to suit
+Added unique end-game messages for each boss
+Fixed a sound typo
+
+* Changes in Version 1.2 *
+Fixed Tank getting stuck in walls when morphing
+Made Tank awesomer
+Made Imp Tank boss a little less likely to kill you in a single shot
+Forced player to be the winner no matter who kills the boss
+Baseball Bat improvements
+Reelism is now Widescreen-Friendly!
+Fixed a bug where Flamethrower ammo would stay around forever
+Bosses no longer get stunlocked by fire
+Fixed a crash bug when dying from fire during the Bloody Screen So Real rule
+Less starting ammo for Flamethrower
+Minor selectionorder fixes
+
+* Changes in Version 1.1 *
+Corpse Cleanup System
+Optimised Laser Effect
+Flamethrower Improvements
+Skulltag Tags
+Spawners and Crates are Randomer
+Code Janitoring
+Fire Death Effect
+Dynamic Lighting
+Added Firebot
+===========================================================================
+* What is included *
+
+New levels              : 17
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : What is this, 1994?
+Demos                   : No
+Other                   : Yes (DECORATE et. al)
+Other files required    : 
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Not used
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes!
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Eeesh.
+Editor(s) used          : SLADE 3, GZDoom Builder, Photoshop CC, Audition CC,
+			  Goldwave, HLMV, Source Filmmaker, Trello, Evernote, Atom
+Known Bugs              : All of them.
+May Not Run With        : The software renderer, Zandronum
+Tested With             : GZDoom Dev Builds. Loads but otherwise untested in GZDoom v1.8.10.
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse. Permissions have been obtained from original 
+authors for any of their resources modified or included in this file,
+where possible.
+
+As far as distribution goes, I would prefer that you just link to the
+Reelism website so that people get the latest version. Thanks!
+
+* Where to get the file that this text file describes *
+
+Web sites: http://www.thekinsie.com/reelism/

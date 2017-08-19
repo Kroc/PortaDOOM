@@ -1,0 +1,247 @@
+Uploader: ngeorge337@gmail.com
+===========================================================================
+Advanced engine needed  : Zandronum 1.0 or above
+Primary purpose         : Murder Simulator
+===========================================================================
+Title                   : WhoDunIt: The Art of Deception
+Filename                : whodunit.pk3
+Release date            : 11/30/2012
+Author                  : Conflagrated, Theshooter7, TheMisterCat, Peanut,
+                          Zeberpal, et al.
+
+Description             : Lies. Deception. Murder.
+                          
+                          "Who is the murderer? Some never find out, if he
+                          is cunning enough to elude them for long enough.
+                          He is normal just like the rest of us, if not a
+                          little bit too normal. He is you, and he is me.
+                          He is inside the walls, and he is waiting.
+                          
+                          Even more interesting is this: If the
+                          "murderer" simply blends in and waits, keeping
+                          his knife hidden and watching as the innocents
+                          off each other one by one, is he still the
+                          monster? Sometimes the "innocents" kill more
+                          than the "murderer" does. So who is sane?
+                          
+                          Don't think about it too long, or you'll become
+                          distracted enough for him (or me, or that other
+                          guy) to sneak up behind you. Good luck."
+                          -WhiteRabbit on "WhoDunIt"
+                          
+                          WhoDunIt is a custom gamemode for Zandronum that
+                          rewards the observant, and punishes the clumsy.
+                          
+                          The game starts with all the players spawning in
+                          various locales, armed with little but their
+                          fists and an array of melee weapons scattered
+                          around the levels.
+                          After a short while, one player is chosen as the
+                          Murderer. The Murderer's goal is simple: Murder
+                          everyone. His preferred method to deliver death?
+                          A sliver of metal between the vertebrae.
+                          
+                          The Murderer has to be cautious, though! For
+                          while the knife is the most efficient and
+                          satisfying method of taking out others, drawing
+                          it is very loud and visually obvious; Marking him
+                          as the largest threat in the room, usually ending
+                          with him in a corner getting his skull bashed in
+                          by 'The Innocents'.
+                          
+                          To make matters worse, all these deaths have left
+                          the Murderer with a constantly draining sanity,
+                          eventually losing it and committing suicide when
+                          unable to watch something squirm and die.
+                          
+                          Fortunately, the trademarked knife he carries
+                          isn't the only weapon at his disposal; Poisonous
+                          chlorine gas, remote cameras, smoke bombs,
+                          poisoned first-aid kits, and even Automated
+                          trip-wire shotguns allow The Murderer to
+                          manipulate and destroy his prey.
+                          
+                          But what happens when The Murderer blends in a
+                          little too well? What happens if somebody loses
+                          it and kills someone completely innocent?
+                          Two mistakes. That's all you get before you are
+                          removed from the game instantly. After an
+                          Innocent kills one Innocent, he is marked with a
+                          Yellow Aura, enabling other players to beat him
+                          to within an inch of his life before being
+                          allowed to venture with the others.
+                          Another mistake? You won't be heard from
+                          again...
+
+                          Worse still, The Murderer has a penchant for
+                          being able to find the careless, regardless of
+                          their location.
+
+Additional Credits to   : Wartorn, Minigunner, Mooseknuckle, Tribeam,
+                          Fusion, Darkfyre, Synert, Lightman, Espi, Capt
+                          J3. DarkKnight, Cruduxy, Jimmy91, Killer2,
+                          XSnake, Marty Kirra, Jigsaw, Sicamore,
+                          WildWeasel, and anyone else possibly forgotten,
+                          it's been a long development time and keeping
+                          track of everyone who has possibly been involved
+                          at some point is near impossible.
+===========================================================================
+* What is included *
+
+New levels              : Yes, 13 stock maps
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : New Gamemode
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : WDI01 - WDI13
+Single Player           : Player starts only
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : Gamemode must be set to "Survival" for it to
+                          work properly, recommended 6-24 players
+                          See "Additional Notes"
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Roughly more than 2 years
+Editor(s) used          : Doom Builder 2, GZDoom Builder 2, XWE, Slade3,
+                          Photoshop, MSPaint, a number of others for things
+                          like models etc.
+Known Bugs              : There are likely a few map-related bugs or some
+                          odd things here or there because of Zandronum's
+                          net code and ACS behaving strangely at times, but
+                          it shouldn't cause anything to utterly break;
+                          that being said, stability cannot be guaranteed
+                          but the authors have done their best to make the
+                          experience as bug-free as possible
+May Not Run With...     : Any source port other than Zandronum
+
+===========================================================================
+
+Additional Notes:
+
+SERVER RUNNERS -- The scripts included for the game mode automatically set
+server options to optimal settings in order for the game mode to work
+as intended. However, there are some cvars that can be set on the server
+end for a bit of control, and they are as follows:
+
+wdi_blacklist_rounds <amount> -- Sets the number of rounds ex-murderers
+                                 cannot be the murderer for. (Default: 5)
+wdi_murd_healthbonus <amount> -- Sets the extra maximum health the murderer
+                                 gets per player. (Default is 10)
+wdi_murd_maxbonus <amount> -- Sets the MAXIMUM health murderer can have.
+                              (So if you don't want him to have 400 health
+                              in a 32 player game, use this)
+                              (Default: 0/unlimited)
+wdi_safety_time <time> -- Sets the time, in seconds, that players have to
+                          setup before the murderer is chosen.(Default: 30)
+
+PLAYERS -- There are help graphics that can be shown if you press F1 while
+in game. However, due to an issue with Zandronum, only the first of four
+pages will show up, which just has general play info. If this is the case,
+start the game in single player, where all F1 pages should properly show.
+There is also a cvar that can be used, but A MAJOR WARNING: It has been
+reported to cause extreme performance problems when used, especially on
+lower-end machines. Use at your own risk. The cvar is:
+
+wdi_filmgrain_level <level> -- (CLIENT) Sets the type of film grain to use.
+                               0: Off, 1: Coarse, 2: Fine. (Default: 0)
+
+Disable it if you begin to experience problems with it on. It will enable
+a cinematic-esque film grain effect.
+
+ABOUT WDI04: "CONFINEMENT" A.K.A. "WHY DOES THIS LOOK REALLY FAMILIAR? - 
+Yes, WDI04 "Confinement" is a modification of map32 from Hellcore
+(hc092604.wad, 2004 Cacoward Recipient). Permission had been obtained
+from the authors of the map for use in this project with modifications
+to suit the gameplay needs and flush it out a bit.
+
+Some other tips and things to note:
+
+*If the game is really dark, try upping your brightness in the options
+menu. The maps were designed to be mostly dark and gloomy, but not to a
+degree where they wouldn't be fun to play on. As such, if visibility
+is a problem, turning up the brightness a notch or two should help.
+
+*OpenGL mode is practically required to play this mod to it's fullest
+extent. While 3D Floors have made their way into the software renderer
+at long last, this mod relies very heavily on dynamic lighting as well,
+with several maps consisting of almost nothing but dynamic lights to
+provide illumination. There are also a few items that utilize dynamic
+lights for their primary function. Therefore, without OpenGL mode, the
+already dark maps may become impossibly dark for players who do not use
+OpenGL.
+
+*Be sure to bind the new controls in the options menu. These will allow
+you to quickly use medkits when needed, or use particular murderer items.
+However, every item in the inventory is accessible by the normal inventory
+selection means, if one were to opt for that instead. Below is provided
+an alias which will ease with inventory selection: simply hold the 'q'
+key and the mouse wheel will select inventory items. Release to have it
+select weapons again. Modify it as seen fit.
+
+The alias:
+bind q "+invselect"
+alias +invselect "bind mwheelup invnext;bind mwheeldown invprev"
+alias -invselect "bind mwheelup weapnext;bind mwheeldown weapprev"
+
+*THIS WILL NOT WORK WITH BOTS! Well, it will work, but it'll often bug
+out because Zandronum's ACS treats bots a special way or something.
+In either case, the bots won't react or do anything in survival mode
+other than blindly run around, so it won't be much fun. Needless to say
+with that, this mod is intended for online multiplayer only.
+
+===========================================================================
+MAP LIST
+===========================================================================
+
+Title:                                 Author(s)
+---------------------------------------------------------------------------
+
+WDI01: Asylum			       Peanut
+WDI02: Now Museum, Now You Don't!      TheMisterCat
+WDI03: Clock Town Chase		       Zeberpal
+WDI04: Confinement		       "Fusion" & "Darkfyre"
+WDI05: Men's Night Out		       Sicamore
+WDI06: Surrounded		       XSnake
+WDI07: Cradle Under The Star	       Conflagrated & Minigunner
+WDI08: St. Mercy Hospital	       Capt. J3
+WDI09: Sewer Showdown		       TheMisterCat
+WDI10: Slaughter Seminar	       Capt. J3
+WDI11: Bunker Down		       Theshooter7
+WDI12: Where-House		       Sicamore
+WDI13: Echo Ridge		       Peanut
+
+===========================================================================
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+Authors MAY use the content of the included source files in the /src
+directory of the pk3 for their own project, so long as proper credit is
+given.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

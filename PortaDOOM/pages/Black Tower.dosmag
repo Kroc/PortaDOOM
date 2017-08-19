@@ -1,0 +1,59 @@
+$KEY:P=SHELL:play.bat MASTER\BLACKTWR.WAD /LEVEL 25
+$KEY:T=SHELL:pwads\MASTER\BLACKTWR.TXT
+$KEY:W=SHELL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
+
+:Black Tower                                      (Master Levels for DOOM II)
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *1995>12>26*   Author : _Sverre André Kvernmo (Cranium)
+:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla*    Includes : *None
+:------------------------------------------------------------------------------
+
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "BLACKTWR.WAD":
+! :----------------------------------------------------------------------------
+! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
+$KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
+$KEY:S=SHELL:http://store.steampowered.com/sub/18397/
+
+Ok, here's the plot: Kick Butt!
+Gripping, isn't it? In case you are a little more into story-lines you can keep reading.
+
+This and the other of my wads were to be released inside a 32-level "episode" on the internet. But having id release them is about 666 times cooler. The plot in the intended episode was as follows:
+
+You once were the biggest and baddest Cyber-demon to rule hell and you spear-headed the council that governed the underworld; "the Cabal". Betrayed by the other members you find yourself not only dismantled, but also a victim of the utmost demonic humiliation: You've been morphed into a human! Of course you're out for revenge and have to kick the other members of the Cabal's butts one by one.
+
+In "Black Tower" you're nearing the end of your journey. You and Chagrin, the ruler of the Black Tower, came off the same conveyor belt as newly assembled cyber-demons a few thousand years back. "Oil runs thicker than blood" the two of you used to say. Demons don't come much closer to friendship than what you and Chagrin shared. Well now your buddy rules the hordes of hell previously under your command and have left you for dead. Your task is simple: Enter the dreaded Black Tower, the nucleus of black magic and the occult in all of Hell, get to its highest floor and slay Chagrin. Then there is the getting back out as well...
+ 
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
+
+			  - "Nukemine" (old I know, but the supreme numero uno at it's hayday)
+			  - "Castle of the Renegades".\\Best castle-type wad I've seen.
+			  - "Eternity"
+			  - "Dante's Gate"
+			  - The secret level in the AlienDoom episode was groovy as well, and "Cleimos" had some nice touches.
+                          
+*Build Time*              : Don't ask, really! First baby steps at "wadding" taken in the summer of 94. Almost dropped out of university for this bloody obsession. One reason for surviving was that I handed in a wad of my campus as one of my projects. <G>
+
+			  I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
+                          
+*Editor(s) used*          : DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
+*Bugs*                    : No way. _Shawn_ has plucked them all out and forced me to eat them. I hate you if you find some! ;)
+
+			  Hope you enjoy the wad.
+
+:Credits:
+:------------------------------------------------------------------------------
+ - The whole of id Software for DOOM & DOOM II.
+ - _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
+ - Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!
+ - A brand new BFG goes out to _Geoff Allan_ (DOOMed), _Raphael Quinet_ (DEU), _Olivier Montanuy_ (DeuTex) and _Colin Reed_ (BSP) plus whoever put together idBSP.
+ - _Shawn Green_ for including me in the project.
+ - Last but never least to all other WAD-designers who have lost themselves in the worlds of tag numbers, upper textures and vertexes as badly as me, particularily the other designers that worked on this add-on. Looking forwards to play your wads dudes!
+
+*Deathmatch bad-arse credits:
+
+_Macca_, _Hunter_, _Woah_, _Loki_ and _Pete_. You can walk over my melted bodies anytime. Don't hang around that corner for too long though. I'll silently BFG your butt!

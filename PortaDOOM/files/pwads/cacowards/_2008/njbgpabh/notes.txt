@@ -1,0 +1,204 @@
+* BGPA Missions : Liberation *
+
+* Calibration
+* Hints and Tips
+* Background
+* Further information
+* Release Notes
+
+* Calibration *
+***************
+
+The calibration map is provided from the start menu to help people
+set up their system to play the levels the way they were intended.
+
+The first few areas of the game are quite dark - intentionally - to
+represent the fact that the real-life game took place at night time.
+Don't worry, I'm not a fan of excessively dark levels and you have 
+plenty of equipment to combat the darkness including a flashlight 
+(on the alt-fire button), flares and night vision goggles.  
+If you don't set the brightness properly on your system, these 
+become redundant.
+
+The levels have been set up to accurately reflect the timing of 
+the real event.  You should ensure that sector lighting is set to 
+"Doom" in the OpenGl options and check how thing look in the 
+calibration map.
+
+Settings that are too bright totally spoil the intended effect.
+What's more, they let you see how crappy the levels are. :P
+
+As the player progresses, the levels get brighter, representing 
+the fact that by the time the real event was finished, the sun 
+had come up.  (The event ran from about 9p.m. to around 6.30 a.m.
+
+Dynamic lights must be enabled to get some important features 
+(eg your flashlight).  Jumping is allowed, as is crouching. I don't 
+think either are essential for completing the game, but they will 
+be needed for some secrets etc.
+
+
+* Hints and Tips *
+******************
+
+Please watch the briefing titlemap at least once.  It took me ages 
+to set up and it actually does tell you what the mission is all 
+about.
+
+The "Ridiculous" difficulty setting is *not* nightmare.  It is a
+slightly harder version of the hard setting.  Enemies are more 
+aggressive and do you a little more damage.
+
+There is no shortage of ammo on these maps - tailored to suit the 
+people who the maps were originally made for (some mates of mine).
+So feel free to use whichever weapons you want against whichever 
+bad guys you like.
+
+You are issued with portable night vision goggles.  These can be 
+activated at any time, will last for a limited period and then expire.
+They will take 30 seconds to recharge and then be available again.  Whilst
+the goggles are active, your rate of movement will be slowed - these 
+are clumsy old-fashioned goggles (just like the real ones that I own). :P
+
+You will have flares.  You throw these and they break bathing an area in 
+a pool of light for a limited period.
+
+You have sonic grenades.  Throw one of these and they sit on the ground 
+for a while emitting a disruptive sound.  Any enemies near the grenade
+have a high chance of being immobilised whilst it is making its noise.
+The grenades do not harm the enemies but they can be useful to delay
+the advance of a large group.
+
+You also have more tradtional frag grenades.  
+Throw them and they blow up. :)
+
+The road to Burghead is guarded by some powerful sentry guns.  These can 
+be destroyed either by hitting the gun directly or by killing the operator
+who will be stainding beside a control panel nearby.  In many cases, there 
+will be a route or vantage point that allows you to get a shot at the 
+operator without exposing yourself to the gun.
+
+The local resistance have stashed equipment in little hideouts around the 
+area.  Keep your eyes open for them.  The resistance use these hiding places
+a lot and it might just be worth returning to them if anything significant 
+about the level changes... ;)
+
+Only major powerups count as items in this game.  Minor health and armour 
+boosts do not count and you cannot pick them up when you are at max health 
+and armour.  
+
+Throughout the levels are computer terminals and pinboards. You can 
+download or steal information from these to help the war effort.  These 
+will not give you any advantage in game but you will be given a tally at
+the end to tell you how successful you were at finding the information.
+
+Similarly, there are some prisoners to rescue in the bunker level.  Just 
+let them out of their cells and they will make their way to the exit.  At
+the end, you will be given a tally of how many you managed to rescue.
+
+It is also worth pointing out that 2 weapons are actually made up of 2 
+individual weapons bound to the same key.  eg, when you pick up the grenade 
+launcher you will be given 2 launchers - one with phosphorous grenades and 
+one with hi-ex grenades.  The special weapon on button 8 is similar.
+
+
+* Background *
+**************
+
+This mod is based on a real life "Live Action Adventure Game" that took 
+place in the Summer of 2006 in the countryside around Elgin and Burghead,
+Scotland.
+
+The mod itself is part of a bigger project and the supporting resources
+for it were extracted for this release.  To that end, there are a lot of
+references in the control lumps for things that do not exist in this mod.
+This does not affect how it plays, but does make the resource files look 
+very untidy.  Sorry about that.
+
+The mod was made quickly and to satisfy the tastes of those who took part
+in the real event. To that end, some of the levels are very simplistic in
+construction and things like ammo and health availability may be considered
+excessive by seasoned Doomers.
+
+* Further information *
+***********************
+
+Some of the levels make extensive use of open spaces, 3D floors and 3D models.
+Unless you have a very fast machine, you will notice a hit to the frame rate
+when playing these levels (the second level seems particularly hard on 
+computer speed).
+
+* Release Notes *
+*****************
+
+1.4 - 27 December 2009
+Main reasons for update:
+Fixes a bug with the sonic grenade that stopped it working 90% of the time.
+This originally went unnoticed as Zdoom allowed me to get away with sloppy 
+decorate coding that I hadn't spotted but a recent change to Zdoom fixed that.
+
+Fixes a bug where one small line had the wrong tag making it possible 
+(though unlikely) that some enemies on the railway line might not activate.
+
+Defines a full screen SBARINFO HUD which was missed out of the original release 
+by accident.  It's not very pretty, but at least its there.
+
+Some full screen graphics (most importantly the gas mask) were altered to take 
+account of widescreen aspect ratios.  I did not change them all because, quite 
+frankly there are too many different screen combination possibilities and I 
+found that when I fixed one, another one would mess up.
+
+And whilst I was at it, I took the opportunity to do the following:
+Most maps tweaked a bit.  Nothing too major but a fair bit of work in some areas.
+
+Decorate for some actors tweaked (I hope I didn't miss anything out 
+- this was all copy/paste stuff from the main Aspects mod.
+
+A few sprite graphics altered.
+
+A few other graphics meddled with.
+
+A number of sounds altered and added: 
+more Inca sounds 
+explosions are often now more persussive
+a few others added/changed.
+
+Added brightmaps - these are just "rough and ready" straight copies from
+the aspects mod.  They don't disable fullbright sprites or anything.  
+The main reason for including them was to make things like cyborg eyes 
+and LEDs on weapons glow, not to replace fullbright firing frames etc.
+
+Many of the brightmaps have just been imported "wholesale" from Aspects.
+Some map to Doom default textures etc and many of these may 
+look a bit odd because in Aspects these textures have been altered.
+However, it's irrelevant as they do not appear in Burghead and weeding out
+the irrelevant ones was too big a job for too little gain.
+
+
+1.3 - 5 Feb 2009
+Minor modifications to the maps.  These were prompted by a change in
+an SVN revision of GZdoom which made me improve (I hope) a few 
+minor details in map110 and tweak a few other things whilst I was 
+at it.
+
+1.2 - 28 Sep 2009
+Bugfix - DECORATE blood colours were incorrectly entered.
+Bugfix - Mingun script incorrectly passed a map parameter 
+to a secondary-script.
+
+Minor tweaks to other areas of DECORATE including some weapons, enemies 
+and special effects.
+
+Additional enemy added.
+
+Numerous minor changes to the maps including taking into account some 
+player comments.
+
+Added calibration map.
+
+1.1 - 20 Feb 2008
+Bugfix - the specification for SBARINFO changed in GZdoomSVN versions, 
+new SBARINFO was added to take account of this.
+
+1.0 - 27 Jan 2008
+Initial release

@@ -1,0 +1,33 @@
+This is a bug-fix update,  please replace original ma_val with current version
+
+================================================================
+Title                   : Valhalla
+Filename                : ma_val.wad
+Author                  : Ed Cripps 
+Email Address           : ecripps83@yahoo.com
+Misc. Wad info          : Software mode only
+                          
+Source Ports Required	: Zdoom
+			  ======================================
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Graphics            : Yes
+New Music               : Yes.  Made by me in FL Studio
+Demos Replaced          : none
+* Construction *
+
+Base                    : New level from scratch
+Editor(s) used          : Doombuilder 2, Adobe Photoshop, FL Studio, Goldwave
+Known Bugs              : Sprite clipping,  slime trails, ect.
+
+The legal gibberish 
+and other nonsense      :
+
+Authors may NOT use this level as a base for their own creations without premission.

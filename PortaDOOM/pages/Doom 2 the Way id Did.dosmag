@@ -1,0 +1,88 @@
+$KEY:P=SHELL:pwads\megawads\D2TWID\play.bat
+$KEY:T=SHELL:pwads\megawads\D2TWID\D2TWID.txt
+$KEY:W=SHELL:http://d2twid.herokuapp.com/
+
+:Doom 2 the Way id Did
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2013>11>07*   Author : (see credits)
+:Levels   : *32*            Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla*    Includes : *+Graphics +Patches +Demoes
+:------------------------------------------------------------------------------
+
+Doom II The Way id Did is the long awaited sequel to 2011's Doom The Way id Did. It comprises 32 levels that endeavour to both look and play as though they've come from Dallas, 1994, from the very toiling hands of _Sandy_, _John_ and _American_.
+
+The idea was originally kicked about by _Jason Root_ aka _Hellbent_, whose passion for the game and knack for growing enthusiasm resulted in one of the most successful community collaborations in Doomworld history – not to mention an impressive collection of more than 100 total submissions. While not quite as successful as the first project in this regard, painstaking lengths have been made by those involved to ensure that D2TWiD is as true a doppelganger of id's Doom 2 as it could ever be. And we hope that you agree! Enjoy!
+
+:Par Times
+:------------------------------------------------------------------------------
+*Rules of Determination:
+ - Rounded down to nearest 15sec then +30sec
+ - Pistol start
+ - HMP difficulty
+ - 4 runs per map (mean average is used)
+
+ MAP01: 0:30     MAP09: 2:00    MAP17: 2:30     MAP25: 2:45
+ MAP02: 1:30     MAP10: 2:00    MAP18: 3:00     MAP26: 4:30
+ MAP03: 1:45     MAP11: 3:15    MAP19: 2:15     MAP27: 1:15
+ MAP04: 1:30     MAP12: 2:45    MAP20: 5:30     MAP28: 7:00
+ MAP05: 2:15     MAP13: 1:45    MAP21: 2:30     MAP29: 5:45
+ MAP06: 2:45     MAP14: 1:30    MAP22: 2:00     MAP30: 2:45
+ MAP07: 2:00     MAP15: 3:15    MAP23: 2:15     MAP31: 4:30
+ MAP08: 3:50     MAP16: 3:00    MAP24: 5:15     MAP32: 1:45
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : 2-ish years! Gads!
+*Editor(s) used*          : Various
+*May Not Run With...*     : Versions of Doom 2 prior to 1.9
+
+:Credits
+:------------------------------------------------------------------------------
+*Project Management:
+_Alfonzo_, _Xaser_
+
+*Level Design:
+_Alfonzo_, _Esselfortium_, _Jimmy_, _Marcaek_, _Megalyth_, _Pavera_, _Purist_, _Rottking_, _Tarnsman_, _Xaser_
+
+*Special Thanks:
+_Dew_, _xfing_, _Blackgaze_, _Hellbent_, _Zodiac_, _Kracov_, _Marnetmar_
+
+And thanks to all the Doom community testers!
+
+*Map Credits:
+
+MAP01: "Loading Bay"      by _RottKing
+MAP02: "The Compound"     by _Tarnsman
+MAP03: "Water Main"       by _Esselfortium
+MAP04: "The Siltyards"    by _Alfonzo
+MAP05: "The Boiler"       by _Pavera
+MAP06: "The Gorge"        by _Esselfortium
+MAP07: "Counterpoint"     by _Tarnsman
+MAP08: "Quarantine"       by _Purist_ & _Tarnsman
+MAP09: "The Gambit"       by _Tarnsman
+MAP10: "Reservoirs"       by _Tarnsman
+MAP11: "The Garrison"     by _Pavera
+MAP12: "The Shipyard"     by _Esselfortium
+MAP13: "The Wharf"        by _Marcaek
+MAP14: "Flooded Library"  by _Jimmy
+MAP15: "The Causeway"     by _Tarnsman
+MAP16: "Cul-de-sac"       by _Pavera
+MAP17: "The Precinct"     by _Tarnsman
+MAP18: "The Sanctum"      by _RottKing
+MAP19: "Bedlam"           by _Alfonzo
+MAP20: "Leap of Faith"    by _Esselfortium
+MAP21: "Passage to Exile" by _Megalyth
+MAP22: "Borderlands"      by _Tarnsman
+MAP23: "The Crucible"     by _Tarnsman
+MAP24: "Crushed Spirits"  by _Marcaek
+MAP25: "Dead Sea"         by _Esselfortium
+MAP26: "Damned Strait!"   by _Tarnsman
+MAP27: "The Bloodwash"    by _Alfonzo
+MAP28: "Abyss"            by _Xaser
+MAP29: "The Mortal Coil"  by _Esselfortium
+MAP30: "Hell on Earth"    by _Alfonzo
+MAP31: "Vorticon"         by _Xaser_ & _Megalyth_
+MAP32: "Well of Wishes"   by _Xaser

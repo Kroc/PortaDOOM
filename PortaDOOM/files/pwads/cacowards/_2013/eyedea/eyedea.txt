@@ -1,0 +1,79 @@
+===========================================================================
+Update to               : eyedea.wad (8/9/2013)
+Advanced engine needed  : Boom or Boom-compatible
+Primary purpose         : Deathmatch
+===========================================================================
+Title                   : Eyedea
+Filename                : eyedea.wad
+Release date            : 8/10/2013
+Author                  : AlexMax
+Email Address           : alexmax2742@gmail.com
+Other Files By Author   : Solo developer of 1nukplnt.wad and 1undbase.wad.
+                          Lead developer of zdctfmp.wad and zdctfmp2.wad.
+                          Contributor to udm3.wad, zdctfmp3-.wad, udmx.wad,
+                          idlmapcontest2011c.wad, and 32in2412.wad.
+
+Description             : A small and extremely fast-paced 1on1 arena with
+                          a few tricks up its sleeve.
+
+Additional Credits to   : Dew, Stall, Xen, Combinebobnt, and Catastrophe
+                          for giving great advice that directly lead to
+                          refinements in the map.  Also, everyone else who
+                          playtested and gave feedback.
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2 Player     : Designed for
+Deathmatch 3+ Player    : Possible, but cramped
+Other game styles       : None
+Difficulty Settings     : ITYTD/HNTR - Newschool item layout.  Fewer
+                                       health pickups, no stacked GA.
+                          HMP - FFA layout, no stacked GA, BFG replaced
+                                with Plasma Rifle.
+                          UV/NM - Original Oldschool item layout.
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : The layout was cranked out in an afternoon,
+                          detailed in an evening, and refined over the
+                          course of a week or so.
+Editor(s) used          : Doom Builder 2, SLADE 3, GIMP 2.8
+Known Bugs              : None known.  Tested extensively in Odamex and
+                          Zandronum.  Seems to work in WinMBF as well.
+May Not Run With...     : doom2.exe - The map makes use of several Boom
+                          line types.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

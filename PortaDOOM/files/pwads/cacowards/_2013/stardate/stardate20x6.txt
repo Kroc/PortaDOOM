@@ -1,0 +1,185 @@
+===========================================================================
+Advanced engine needed  : Boom-Compatible (tested in prb+ cl9, gzdoom)
+Primary purpose         : Single player
+===========================================================================
+Title                   : Stardate 20X6
+Filename                : stardate.wad
+Release date            : 06/02/2013
+Author                  : Ribbiks
+Email Address           : ribbiks@gmail.com
+Other Files By Author   : sf2012 maps 03, 17, 30,
+                          lots of maps released only on doomworld forums
+                          that probably no one cares about
+Misc. Author Info       : 
+Description             : Stardate 20X6 is a set of 8 boom-compatible
+                          levels that are all about the color purple. I
+                          couldn't think of a wad that extensively used
+                          the color so I decided to spend some time and
+                          completely overdose on it. The levels meander
+                          through underground and space-station themes,
+                          and are filled with all sorts of abstract violet
+                          goodness. Much of the gameplay resembles the
+                          arena style typically found in slaughtermaps,
+                          but the monster counts (in general) aren't
+                          overwhelmingly high. The maps are very difficult,
+                          with UV hopefully presenting a worthy challenge
+                          even for veteran doomers. HMP is also
+                          implemented, and is intended for casual
+                          playthroughs.
+
+Additional Credits to   : Many textures ripped from cc4-tex.wad, so props
+                          to anyone involved in the creation of those.
+
+                          Music:
+                          		- many miscellaneous authors from vgmusic
+                          		- James "Jimmy91" Paddock
+                          		- Myself (mostly editing / arranging)
+
+                          Thanks to other doomers for their playtesting:
+                              - Phml
+                          		- Dannebubinga
+                          		- j4rio
+                          		- gggmork
+                          
+                          Additional thanks to Pottus and Watakid for
+                          helping me balance multiplayer and fix bugs.
+===========================================================================
+* What is included *
+
+New levels              : 8 maps
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : DEHACKED and MAPINFO lumps included.
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP07, bonus: MAP31
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes. Most time was spent balancing UV play, but
+                          I also implemented HMP. HNTR is pretty much the
+                          same as HMP, but with a few slight changes. so I
+                          recommend playing ITYTD if HMP is too rough.
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Roughly 6 months
+Editor(s) used          : Doom Builder 2, Slade, XWE, Photoshop
+Known Bugs              : If you find any, let me know!
+May Not Run With...     : Any port that doesn't support:
+                             - boom linedefs / voodoo doll shennanigans
+                             - midi playback
+Other                   : Glboom+ recommended for best results!
+
+                          In gzdoom there are a few graphical quirks
+                          in the outside area of map06, but it's not too
+                          terrible. In software graphics some of the self-
+                          referencing sectors in the first map look funky.
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Authors of other materials have been credited in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  You may not
+charge for the contents of this file.
+
+* DISCLAIMER *
+
+This PWAD contains select texture(s) and flat(s) that can originally be found
+in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+ORIGINAL GothicDM(2).ZIP can be found at the idGames Archives. Each said PKZIP
+archive contains thirty-two professional quality levels and music.
+Found at your favorite idGames FTP mirror:
+idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+This WAD may use some Hexen flats/textures and some resources from Plutonia,
+and some music from TNT: Evilution.
+
+===========================================================================
+  //////////////////////////////
+ ///////   MAP LIST:   ////////
+//////////////////////////////
+===========================================================================
+
+map01: Amethyst II
+------------------
+music: marswar.wad, map 32
+
+A simple starter map, an introduction to the world of purple and brown.
+
+
+map02: Mud Bunny
+----------------
+music: "Forbidden Area" from Castlevania Aria of Sorrow
+
+An underground base surrounded by curvy caverns of brownness! This level
+gets pretty tough towards the end, several areas are slaughter-esque.
+
+
+map03: Foxhole
+--------------
+music: "icicles.mid" by James Paddock
+
+The big open caverns have been traded for claustrophobic burrows; Winding
+tunnels between larger areas, ending with a big arena.
+
+
+map04: Tanagra
+--------------
+music: Level 3 from Super R-Type
+
+Shaka, when the walls fell... Welcome to gray.
+A sizable nonlinear space-station map, this one isn't too difficult.
+
+
+map05: Sector 8
+---------------
+music: Kraken theme from Earthbound
+
+The universe is a little bit like the human hand...
+Another space-station grayfest, I went a bit overboard with the purple/
+black theme on this one. This map cranks the difficulty back up.
+
+
+map06: Vehelits
+---------------
+music: "Alien Power" from Streets of Rage 2
+
+A vicious map from start to finish. There are a plethora of routes
+to take and many dangerous rooms to explore, good luck!
+
+
+map07: Magnus
+-------------
+music: "Native" from Gubble
+
+A giant twisted purple base filled to the brim with hellspawn and
+merciless traps. Kudos to players brave enough to play this one on UV!
+
+
+map31: Hyperspace
+-----------------
+music: "Better Off Alone" by Alice Deejay
+
+A disco space-station infested with Arch-Viles, oh no!
+
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+FTP sites: idGames Archive (http://doomworld.com/idgames/)

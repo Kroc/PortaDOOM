@@ -1,0 +1,64 @@
+===========================================================================
+Advanced engine needed  : Boom Compatible Ports (-complevel 2 compatible)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Bloodstain
+Filename                : BStain.zip
+Release date            : 01/01/2016
+Author                  : Pavel 'Pipicz' Tvrzník
+Email Address           : Pipicz@seznam.cz
+Other Files By Author   : See BStainfo.txt
+Misc. Author Info       : See BStainfo.txt
+
+Description             : Full 32-map megawad.
+                          See BStainfo.txt for further information.
+
+Additional Credits to   : See BStainfo.txt
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01 - 32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About 5 years (depends on what you consider to be
+                          the start)
+Editor(s) used          : Doombuilder 1/2, XWE, Slade 3, MS Paint
+Known Bugs              : Some slime trails.
+                          Intended map32 sky texture is displayed only by
+                          ports that support MAPINFO.
+May Not Run With        : DOOM2.exe
+Tested With             : PrBoom-Plus 2.5.1.3, ZDoom 2.3.1
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.

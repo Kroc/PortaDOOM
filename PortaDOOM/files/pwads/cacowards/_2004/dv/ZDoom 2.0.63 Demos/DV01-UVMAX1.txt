@@ -1,0 +1,58 @@
+PWAD - Deus Vult (DV.WAD)
+FILE - DV01-UVMAX1.lmp
+Map  - Map01 (Insurgents)
+Type - UV MAXDEMO (100/100)
+Port - zDOOM 2.0.63
+Plr  - Converted Doomer
+
+Kills   -  100%
+Items   -   ??%
+Secrets -  100%
+
+Time    - ??
+
+Description :
+
+The owner recording his own map, I took some serious demo lessons by watching Rich's
+nutty demos, which always seems to be faster than mine, and he's a bloody keyboarder...
+Anyways, this map isn't overwhelmingly tough as it might first appear to be, just use the
+right weapons at the right time and you should be fine, here's the few sticking point if
+ur not careful:
+
+1) The Nukage Pool: Once you approach that pool, the doors shut and you're locked in! Don't 
+                    fret, there's just enough ammo and health to get you by, those chaingunners
+                    can become a serious hitpoint sapper if you don't take them out first, so
+                    take them out first! Then concentrate on blasting the mancubis up the balcony,
+                    since they guard some valuable armors and medkits. The general strategy is 
+                    to KEEP ON MOVING and DO NOT STOP, circle circle circle, not too bad...
+
+2) The Hell Temple: All hell breaks loose, literally. It's 200 to 1 odds, but you'll win if you know 
+                    when to use which weapon, as long as you have the invulnerability, rocket spam all 
+                    the time, but once it wears off, trust your old shotty and plasma gun and kill them
+                    all QUICKLY, or you'll face dire consequences later on... 
+
+3) Cyberdemon Lair: It's a large dark lair, with pulsating streams of blood and satanic icons, oh,
+                    and there's cyberdemons in it, heh. It's an oldskool game of dodgeball! Cept with
+                    rockets and the other team outnumbers you 5 to 1, but fear not, an invuln lies at
+                    the suicidal dead end, that should soften up two cyberdemons. Mop up the rest
+                    with the shotty, and the first level is finished, nothing too harsh.
+
+This first level should give the single player a nice warm up to the harder levels ahead of him.
+Hope this starts you off on ur journey to beating DV!
+
+Enjoy,
+- Huy
+
+Richie :
+
+Huy did an awesome job on this demo... Its got some pretty hairy moments in my eyes, and its hard to
+believe that he flies through it so easily. I think the hardest parts in the map would have to be....
+
+1) The Hell Temple : Geez, talk about a helluva warp here man... :) I always seem to have an attachment
+   to the rocket launcher that always ends up being my demise... :) I hate lost souls in rooms where you
+   concentrate your fire on other monsters, and they commit suicide and take you with them... :)
+
+2) The Cyberdemon Lair : Tough, tough and tough... Its one of those fights where you'll really need to 
+   use the invuln that lies near the dead end. After the invuln wears off, your bound to have an around
+   three or four of the cybos remaining.... When the invuln and plasma are gone, its time to use the old
+   ssg.... Fun, Fun.

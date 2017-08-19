@@ -1,0 +1,91 @@
+===========================================================================
+Update to               : uacultra.zip
+Advanced engine needed  : Boom-compatible. PrBoom-Plus recommended.
+Primary purpose         : Single + Coop play
+===========================================================================
+Title                   : UAC Ultra (v1.2)
+Filename                : uacultra.wad
+Release date            : 29th March 2010
+Author                  : 40oz & Super Jamie
+Email Address           : papercut1425@yahoo.com & jamie@superjamie.net
+
+Description             : You're a Space marine...
+
+                          Disease. An incurable though tangible threat. The
+                          demons prowl among the scorched barrens of Mars.
+                          Fleets of cacodemons infest every region.
+                          Spectres and imps swarming from every crevice.
+                          Deep down under Mars' subterra lies UAC's immense
+                          labyrinth of superhuman technology. The
+                          underground top secret lair of their most
+                          horrific experiments, buried in distress.
+
+                          This is UAC Ultra.
+
+                          An 11 (and a half) map levelset for Doom 2
+                          featuring all new textures, a new monster, new
+                          music and several other small touches. Difficulty
+                          will hopefully keep you on your feet without
+                          being ridiculous.
+
+                          The texture set is available as ultratex.wad
+
+                          v1.2 fixes bugs on all maps. Plus it works with
+                          Eternity. Thanks esselfortium and Doomworld!
+
+Additional Credits to   : Testers - Jodwin, Kyka, Tanner West, Randy Vail
+                          Music - Jimmy91, Nick Baker, Martin O'Donnel
+                          Resources - GRSites, Raven, Chronoteeth, Slug
+                          Software - exl, CodeImp, SlayeR, Csabo
+                          Additional - The Green Herring, esselfortium
+
+                          id Software. All contributors to PrBoom and ZDoom.
+                          All those who have made great maps with lots of
+                          brown textures for inspiration.
+===========================================================================
+* What is included *
+
+New levels              : 12
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01 - MAP12
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Four months plus some work from ages ago
+Editor(s) used          : DB1 & 2, XWE, SLumpEd, GIMP, MSPaint, WhackEd2
+Known Bugs              : Hopefully none
+May Not Run With        : Legacy, needs Voodoo Dolls
+Tested With             : PrBoom-Plus 2.5.0.6, ZDoom 2.4.1
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or 
+reuse.  Permissions have been obtained from original authors for any of
+ their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: http://www.doomworld.com/idgames/ and mirrors
+UAC Ultra v1.0: http://www.superjamie.net/doomfiles/uacultra10.zip
+UAC Ultra v1.1: http://www.superjamie.net/doomfiles/uacultra11.zip
+

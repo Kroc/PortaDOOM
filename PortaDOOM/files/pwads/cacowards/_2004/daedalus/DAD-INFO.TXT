@@ -1,0 +1,159 @@
+DAEDALUS: ALIEN DEFENSE text file 12/10/2003
+
+Happy Birthday, DOOM
+
+(and Happy 7 years old to Icarus)
+
+Contents:
+1. Announcement
+2. Installation
+3. Troubleshooting
+4. System requirements
+5. Where to find files
+6. How to get help
+7. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                   +-------------------------+
+                   | Daedalus: Alien Defense |
+                   +-------------------------+
+
+Daedalus is the long-awaited sequel to Icarus: Alien Vanguard.
+It was originally planned for release as DOOM2000 on 1/1/2000,
+and has been anticipated by players, and the developers have
+suffered/enjoyed every minute of the subsequent nearly 4 
+years.
+
+It has been released on 3dgamers, and within 4 hours of release
+should be showing up on the mirrors.  
+
+Daedalus requires the latest version of ZDoom (2.0.60 as of this
+writing) and if you don't have that you'll need to go to the
+ZDoom.org web site, Downloads link, and you'll find it there 
+under the 2.xx releases.  You also need either DOOM2.WAD, TNT.WAD
+or PLUTONIA.WAD (the latter two part of Final DOOM) to play
+Daedalus.
+
+Daedalus is a single-player, puzzle/action based game.  There are
+no multiplayer starts, either cooperative or deathmatch.
+
+Features:
+
+ - A full compliment of four hubs and a finale
+ - Each hub contains up to 7 levels, logically intertwined 
+ - Music by Rich Nagel
+ - Over 1200 completely new textures
+ - Cohesive theme and storyline
+ - All difficulty levels, including monster randomization
+ - New monsters and a new weapon
+
+
+
+---------------
+2. INSTALLATION
+---------------
+
+Daedalus comes in one WAD file, zipped into one ZIP file.  You'll
+need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+DAEDALUS.ZIP.  This will produce DAEDALUS.WAD and another copy 
+of this file.
+
+Just unzip it into your DOOM2 directory and run it with ZDoom.
+This command line should work, or you can drag and drop 
+DAEDALUS.WAD on the ZDoom icon.
+
+  zdoom daedalus
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+Not much can go wrong, since this is just one WAD file.  However,
+since not much can go wrong, something might, and maybe a few
+steps here will help.
+
+a.  First, verify that DAEDALUS.WAD is in the same directory as
+    DOOM2.WAD (or TNT.WAD or PLUTONIA.WAD), and that you've got
+    all the files that came with ZDoom installed.  
+
+b.  If it starts up and crashes with a message similar to
+
+      "Demo is from a different version"
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   Well, Daedalus is pretty intensive in some places.  You'll 
+   need to decide how you want to configure your video resolution
+   and special features in ZDoom to match the machine you're 
+   running on.  Generally all that will happen is that it'll be
+   rather choppy sometimes, and it may depend on which direction 
+   you're looking (transparent object, lots of fireballs(!) and
+   so forth can make a difference.
+
+   It runs fine on a 400MHz Pentium II, though as developers some
+   of us have spoiled ourselves and have higher-end machines.
+   You probably won't be able to use this as an excuse for a new
+   computer, in other words.
+
+   But the bigger the better.  It's really nice at 1280x1024 on
+   a 2.6GHz P4 :)
+
+   The WAD file is a bit over 50MB.  It zips up smaller, but 
+   dialup users are going to need to plan for the experience.
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Daedalus:  Alien Defense was uploaded to the archives at
+   3dgamers.com at 9:00PM CST on DOOM's 10th birthday,
+   December 10, 2003.  After 10 days in the Newstuff directory,
+   it will be moved into the TeamTNT directory under themes.
+
+   We will maintain a link on our web page to the primary 
+   download site on in-span.net once it's there.
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about ZDOOM itself, go to the forums on zdoom.org
+
+   If it's about Daedalus, there are lots of places to go,
+   including but not limited to writing to us at TeamTNT.  There
+   are forums at Doomworld that we will monitor, as well as on
+   Zdoom.org.  There probably are going to be a bunch of people
+   in the community playing this at once, so try to get peer
+   help first.
+
+   We won't give you hints via email.  Just don't even try... :)
+
+   We'll be putting a FAQ out too, and that'll answer some of
+   the more common questions
+
+------------------
+7. SOME LEGALITIES
+------------------
+
+   Daedalus: Alien Defense is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Daedalus.
+   Daedalus should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's collection or CD.  If it does, let us know right
+   away.
+
+   We thank you for trying Daedalus.  Let us know what you think
+   about it.  
+
+   Daedalus: Alien Defense and associated files are
+   (C) Copyright 2003 TeamTNT
+
+///End of file

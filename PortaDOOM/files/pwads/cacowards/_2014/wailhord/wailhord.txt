@@ -1,0 +1,123 @@
+===========================================================================
+Advanced engine needed  : Limit removing
+Primary purpose         : Single play
+===========================================================================
+
+================================================================
+
+Title                   : The Wailing Horde
+Filename                : wailhord.wad
+Date of release		: May 2014
+Author                  : Chris Hansen
+Other Files By Author   : Flay The Obscene series
+			  High/Low series
+			  CH Retro Episode
+			  Helpyourselfish
+			  In A World
+			  Rip it, Tear it, Smash it!
+			  Shoot!
+			  Meek
+			  Bloody Realms of Hell
+			  C'mon bro, I got tigerblood!
+			  Rising Blood
+			  Frontier Settlements: Distress
+			  Hellcore map15 (revamp)
+			  maps for 2002 A Doom odyssey
+			  + many more
+
+===========================================================================
+
+Misc. Author Info       : http://www.windward.dk/TDR
+			  chr.nygaard@gmail.com
+
+===========================================================================
+
+Story       		: There is no story. Just kill everything and do it
+			  well!
+
+==========================================================================
+
+Description		: Warning: This map is big! There's 400+ monsters on
+			  Ultra Violence. And the layout is non-linear. It'll
+			  probably take you an hour to complete unless you are
+			  really good. So, if you're not a fan of that
+			  combination, then... well, just don't complain
+			  about it I guess. It's all intentional :)
+
+			  This level is my interpretation of an action filled
+			  and slightly different episode 2 level. I tried to
+			  stay true to the style of eps. 2, but cranked it up
+			  a bit. It's like my "Rip it, Tear it, Smash it!",
+			  only on drugs! As I said, there's a ton of monsters,
+			  a crazy cool metal track and enough variety in the
+			  gameplay to make you dizzy! I loved making this level
+			  and I feel it's the best one I've made in a loooong
+			  time. It's on a personal top three of my own work.
+
+			  It has been tested in a variety of sourceports and
+			  we've tried to optimize it to be compatible with as
+			  many as possible.
+			  I don't know what else to say, really. Just play
+			  it. I'm sure most of you will enjoy it :)
+
+==========================================================================
+
+Testers			: SteveD, plums, Dennis K, Brad Spencer and
+			  Stormwalker for feedback, useful comments and
+			  advice! Thanks a lot guys!
+
+==========================================================================
+
+Additional Credits to   : Jimmy for the awesome midis!
+			  plums for help with optimizing the pwad.
+			  Skulltag (clouds) and Eye del Cul (mountains)
+			  for the images I used as ingredients to make the sky.
+			  The Doomworld forums and the good people there
+			  for providing answers to my stupid questions.
+			  
+===========================================================================
+
+* Play Information *
+
+Episode and Level #     : DOOM, E2M1
+Single Player           : Yes
+Cooperative 2-4 Player  : Starts are there. Untested.
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : No
+New Music               : Yes.
+New Graphics            : Yes.
+Demos Replaced          : No
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 5 months with another release in the middle of it.
+Editor(s) used          : Doom Builder, Slade, Doom Font, Paint.net
+Known Bugs              : None.
+May Not Run With...     : Works with vanilla, but you might see VPOs.
+How To Run The File	: Anyway you prefer.
+
+===========================================================================
+
+
+* Copyright / Permissions *
+
+Authors may NOT use this level as a base to build additional
+levels.  
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+===========================================================================
+
+
+* Where to get this WAD *
+
+http://www.doomworld.com/idgames
+http://www.windward.dk/TDR
+
+(end of document.)
+

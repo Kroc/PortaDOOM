@@ -1,0 +1,111 @@
+===========================================================================
+Advanced engine needed  : Yes
+Primary purpose         : Single play
+===========================================================================
+
+================================================================
+
+Title                   : High/Low 5
+Filename                : highlow5.wad
+Date of release		: July 2013
+Author                  : Chris Hansen
+Other Files By Author   : Flay The Obscene series
+			  High/Low series
+			  CH Retro Episode
+			  Helpyourselfish
+			  In A World
+			  Rip it, Tear it, Smash it!
+			  Shoot!
+			  maps for 2002 A Doom odyssey
+			  + many more
+
+===========================================================================
+
+Misc. Author Info       : http://www.windward.dk/TDR
+			  chr.nygaard@gmail.com
+
+===========================================================================
+
+Story       		: None.
+
+==========================================================================
+
+
+Description		: This map is the conclusion of my High/Low
+			  series. Where the other maps are for Ult. Doom
+			  this one is for Doom 2. I chose to make it
+			  look and feel like some of the city maps from
+			  org. game, as they have always been some of my
+			  favorite maps and what I associate with Doom 2.
+
+			  But of course, I have also made sure to put my
+			  own mark on the map, just as the other maps in
+			  the series. They are all merely interpretations
+			  of the org. games.
+
+			  Anyway, this map is full of trick, traps,
+			  ambushes and puzzles. There is also a good deal
+			  of variety in the layout, so expect to do a little
+			  base jumping and try to watch your step at all
+			  times.
+
+			  The difficulty in the map does not come from
+			  hordes of monsters. It might be a big map, but
+			  it is not stuffed with monsters.
+
+==========================================================================
+
+Testers			: Memfis, Stormwalker, Dennis K and Kristian Aro.
+==========================================================================
+
+
+Additional Credits to   : 
+			  
+===========================================================================
+
+* Play Information *
+
+Episode and Level #     : Doom2 Map01
+Single Player           : Yes
+Cooperative 2-4 Player  : Starts are there. Untested.
+Deathmatch 2-4 Player   : Yes. Untested.
+Difficulty Settings     : Yes
+New Sounds              : No
+New Music               : Yes. From Final Doom: TNT Evilution
+New Graphics            : Doom 2 city sky, titlepic
+Demos Replaced          : No
+
+* Construction *
+
+Base                    : Completely new level
+Build Time              : Many years on and off.
+Editor(s) used          : Doom Builder 2, Slade
+Known Bugs              : None, I hope. Tested primarily with zDoom,
+			  gzdoom and Prboom+.
+May Not Run With...     : Unknown.
+How To Run The File	: [port of your choice exe] -file highlow5.wad
+			  ..... or whichever way you like :)
+
+===========================================================================
+
+
+* Copyright / Permissions *
+
+Authors may NOT use this level as a base to build additional
+levels.  
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+===========================================================================
+
+
+* Where to get this WAD *
+
+http://www.doomworld.com/idgames
+http://www.windward.dk/TDR
+
+(end of document.)
+

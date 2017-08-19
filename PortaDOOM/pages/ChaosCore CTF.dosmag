@@ -1,0 +1,103 @@
+$KEY:P=SHELL:pwads\multiplayer\ChaosCoreCTFmpII-b\play.bat
+$KEY:T=SHELL:pwads\multiplayer\ChaosCoreCTFmpII-b\chaoscorectf.txt
+$KEY:W=SHELL:https://zandronum.com/forum/viewtopic.php?t=5977
+
+:ChaosCore CTF                                      * 2015 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>12>04*   Author : *(see Credits)
+:Levels   : *30*            Modes : *Capture-The-Flag only
+:Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics +Patches
+:------------------------------------------------------------------------------
+
+:Construction
+
+*Base*                  : New from scratch
+*Build Time*            : 2011 - Current
+*Editor(s) used*        : DoomBuilder, DoomBuilder2, GZDoom Builder, SLADE, XWE
+*Known Bugs*            : None that we know of
+
+:Credits
+:------------------------------------------------------------------------------
+_Agaures_, _AlexMax_, _Caution_, _Collision_, _GhoulSlayeR_, _Infer_, _RoSKing_, _Shane_, _Wideass_.
+
+*Additional Credits:
+
+ - _Fsn76_ for the trailer
+ - _Watakid_ for quality maintenance
+ - _Abbuw_ for remaking the ChaosCore decal for more texture use
+ - _Agaures_ for the Color Palette and Texture customization
+ - To everyone who Beta Tested; _Alt_Stab_, _AVC_, _Beast_, _Bwidger_, _Cecil_, _Cennou_, _Chowww_, _Darklord_, _DemonSphere_, _Dislogical_, _Edd_, _Fsn76_, _Goblin_, _JCD_, _Joseph_Hicks_, _Jwarrier_, _KaraKurt_, _Merk_, _Moti_, _Raddock_, _Saber_, _Slyfox_, _Stallion_, _Tai_, _Torvald_, _Water_, _Whopper_ and anyone else I may have forgotten
+ - _EsselFortium_, 32in24 series, _2mbrown_, _decontex_, _DGDBTXTR_, _DoomPotpourri_, _mortres_, _nb5texd2_, _nb_flats_, _NB_RECOL_, _nb_silv_, _ogrodtex_, quake1, quake2, quake3, _TXGRAY_, zdectfmp for ripped textures and flats
+
+*Map List:
+ 
+ - Core01: |Data Core Delta I by _GhoulSlayeR_
+ - Core02: |Cosmic Wall by _Caution_ (With help from _RoSKing_)
+ - Core03: |Avalon by _RoSKing_ (With help from _Wideass_)
+ - Core04: |Frozen Chaos by _AlexMax_ (With help from _Caution_)
+ - Core05: |Plan B by _Collision_
+ - Core06: |Circuit Course by _Infer_
+ - Core07: |Deimos Hazzard Zone by _GhoulSlayeR_ (With help from _RoSKing_)
+ - Core08: |Periphery of Phobos by _RoSKing_ & _GhoulSlayeR_
+ - Core09: |Obsidian Outpost by _Caution_\\(With help from _GhoulslayeR_ & _RoSKing_)
+ - Core10: |Sector S by _FranckFrag_ (With help from _RoSKing_)
+ - Core11: |Isolation by _RoSKing_ (With help from _Wideass_)
+ - Core12: |Scourge by _Collision_ (With help from _RoSKing_)
+ - Core13: |Forsaken Grounds by _Infer_
+ - Core14: |Speed of Dark by _AlexMax_ (With help from _SwordGrunt_)
+ - Core15: |Andromeda Installation by _RoSKing_
+ - Core16: |(Core)T Facility by _GhoulSlayeR_ (With help from _RoSKing_)
+ - Core17: |Sentinel by _Iced_
+ - Core18: |The Chaos Encounter by _Shane_ (With help from _RoSKing_)
+ - Core19: |Wanderlust by _RoSKing_
+ - Core20: |The Hex Core by _Infer_
+ - Core21: |Planetary Duality by _RoSKing_ (With help from _Wideass_)
+ - Core22: |Hangar of Desolation by _Caution_ (With help from _RoSKing_)
+ - Core23: |EastHaven by _Edd_ (With help from _Caution_, _Collision_, _RoSKing_, & _Sworgrunt_)
+ - Core24: |Towering Gardens by _AlexMax_
+ - Core25: |Data Core Delta II by _GhoulSlayeR_ & _RoSKing_
+ - Core26: |Mephitic Waste by _RoSKing_ (With help from _Wideass_)
+ - Core27: |Compulsive Simplicity by _Shane_
+ - Core28: |Titania Base by _JCD_
+ - Core29: |Toxic Refineries II by _Fsn76_ (With help from _RoSKing_ & _Wideass_)
+ - Core30: |Sunrise by _Oxyde_
+ - POPTART: |Poptart Cat by _Collision_
+
+*Music Credits
+
+ - Title: ChaosCoreCTF by _Brandon Egan_
+ - Intermission: "My name is Darkness" by _Haste the Day_
+ - Map00: "Main Theme" from the game One Must Fall 2097
+ - Map01: "Xenon" from the game Dance Dance Revolution
+ - Map02: "Meteor Herd" from the game Sonic Adventure 2
+ - Map03: "Danger Room" from the game One Must Fall 2097
+ - Map04: "Satellite One" by _Purple Motion_
+ - Map05: "Aquarium" by _16-bit_
+ - Map06: "look at the stars" (vibe-las.it)
+ - Map07: "Nuts and Bolts" from the game Donkey Kong Country 3
+ - Map08: "Resolve" by _Haste The Day_
+ - Map09: "Lava Reef Zone Act I" from the game Sonic the Hedgehog 3
+ - Map10: "Boomer Kwuanger" from the game MegaMan X
+ - Map11: " I saw the demons"(e2m1) from the game The Ultimate Doom
+ - Map12: "Final Boss" from the game Strife (Quest for the Sigil)
+ - Map13: "Come Clarity" by _In Flames_
+ - Map14: "Doobtro" by _Nightbeat_
+ - Map15: ChaosCoreCTF by _Brandon Egan_
+ - Map16: "Power Plant" from the game One Must Fall 2097
+ - Map17: "Beyond" from Mod Archive
+ - Map18: "Path of Destruction" by _Mark Klem_
+ - Map19: "Pumpkin Hill" from the game Sonic Adventure 2
+ - Map20: "Mad Man" by _Haste The Day_ (Looped by _Estar_)
+ - Map21: "Biolizard" from the game Sonic Adventure 2
+ - Map22: "Chemical Plant" from the game Sonic II
+ - Map23: "Overworld" from the game Golden Sun 2
+ - Map24: "R0t0f3ul" by _Rez_
+ - Map25: "Hybrid Song 220" by _Quazar_
+ - Map26: "68" by _Haste The Day_
+ - Map27: "Ryu's Theme" from the game Street Fighter II
+ - Map28: "Wolverine" by _James Paddock_
+ - Map29: "Area 1: City" from the game Mighty Morphin Power Rangers
+ - Map30: "Mansion Infiltration - Action" from the game Perfect Dark Zero (Looped by _Chow_)
+ - POPTART: "Pixeltropia" by _JosSs_

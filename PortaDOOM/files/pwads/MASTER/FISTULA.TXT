@@ -1,0 +1,30 @@
+================================================================
+Title                   : THE FISTULA
+Filename                : FISTULA.WAD
+Author                  : Christen David Klie
+Email Address           : 74767.3615@compuserve.com
+Special Thanks to       : Gerri, Mike and Megan
+                          id Software
+                          John W. Anderson
+                          Bill Ager
+                          Donald E. Bernardo
+                          Mal Blackwell
+================================================================
+
+Maps Replaced           : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+New Music               : No
+Demos Replaced          : None
+Base                    : New level from scratch
+Editor(s) used          : DEU2 by R. Quinet, B. Wyber & Adler
+                          DETH by Quinet, Wyber, Oke & Burden
+                          BSP by C. Reed
+                          RMB by J. Hykkelbjerg
+                          
+Authors may NOT use this WAD as a base to build additional levels.
+You may NOT distribute this WAD.  Created expressly for id Software.

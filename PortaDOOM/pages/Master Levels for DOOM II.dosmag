@@ -1,0 +1,47 @@
+
+The Master Levels for Doom II were released on December 26, 1995 by id Software as an expansion pack for Doom II. It was also included as a bonus on the Doom 3: Resurrection of Evil Xbox game disc in 2005, and in Doom Classic Complete on PSN. The PlayStation version of Final Doom includes 13 levels from the Master Levels.
+
+(The order here is as used on the PSN release)
+
+$KEY:A=GOTO:Attack
+:[A] Attack ..................... : _Tim Willits
+$KEY:B=GOTO:Canyon
+:[B] Canyon ..................... : _Tim Willits
+$KEY:C=GOTO:The Catwalk
+:[C] The Catwalk ................ : _Christen Klie
+$KEY:D=GOTO:The Combine
+:[D] The Combine ................ : _Christen Klie
+$KEY:E=GOTO:The Fistula
+:[E] The Fistula ................ : _Christen Klie
+$KEY:F=GOTO:The Garrison
+:[F] The Garrison ............... : _Christen Klie
+$KEY:G=GOTO:Titan Manor
+:[G] Titan Manor ................ : _Jim Flynn
+$KEY:H=GOTO:Paradox
+:[H] Paradox .................... : _Tom Mustaine
+$KEY:I=GOTO:Subspace
+:[I] Subspace ................... : _Christen Klie
+$KEY:J=GOTO:Subterra
+:[J] Subterra ................... : _Christen Klie
+$KEY:K=GOTO:Trapped on Titan
+:[K] Trapped on Titan ........... : _Jim Flynn
+$KEY:L=GOTO:Virgil's Lead
+:[L] Virgil's Lead .............. : _John Anderson (Dr.Sleep)
+$KEY:M=GOTO:Minos' Judgement
+:[M] Minos' Judgement ........... : _John Anderson (Dr.Sleep)
+$KEY:N=GOTO:Bloodsea Keep
+:[N] Bloodsea Keep .............. : _Sverre André Kvernmo (Cranium)
+$KEY:O=GOTO:Mephisto's Maosoleum
+:[O] Mephisto's Maosoleum ....... : _Sverre André Kvernmo (Cranium)
+$KEY:P=GOTO:Nessus
+:[P] Nessus ..................... : _John Anderson (Dr.Sleep)
+$KEY:Q=GOTO:Geryon
+:[Q] Geryon ..................... : _John Anderson (Dr.Sleep)
+$KEY:R=GOTO:Vesperas
+:[R] Vesperas ................... : _John Anderson (Dr.Sleep)
+$KEY:S=GOTO:Black Tower
+:[S] Black Tower ................ : _Sverre André Kvernmo (Cranium)
+$KEY:T=GOTO:The Express Elevator to Hell
+:[T] The Express Elevator to Hell : _Sverre André Kvernmo (Cranium)
+
+NOTE: The sharp-eyed of you will see that there are 20 levels listed here, not 21; there is a secret level, but I'm not going to tell you where it is, though it's not like it's 1994 and you can't just Google it.

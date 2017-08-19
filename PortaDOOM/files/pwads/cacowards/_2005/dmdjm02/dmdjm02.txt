@@ -1,0 +1,86 @@
+===========================================================================
+Advanced engine needed  : ZDOOM or Prboom-Plus, but please, no jumping!
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Jägermörder 02 : Terra Nova
+Filename                : dmdjm02.zip - dmdjm02.wad, dmdjm02.txt
+Date Finished           : July 18th, 2005
+Author                  : Derek MacDonald aka Afterglow
+Web Page                : http://www.doomworld.com/afterglow/
+Email Address           : derekmd@hotmail.com
+Other Files By Author   : - Jägermörder01     - dmdjm01.wad
+                          - The Seventh 07    - prwrsv07.wad
+                          - SacrificeDM       - dmdsacdm.wad
+                          - Lamentations      - dmdlamdm.wad
+                          - Deadly Simplified - dmd07dm.wad
+                          Contributions to:
+                          - SlaughterDM       - sldm.wad
+                          - Gothic99          - gothic99.wad
+                          - SurgeDM2          - surge2.wad
+                          - The Darkening E2  - darken2.wad
+                          - Hell Revealed II  - hr2.wad
+                          - Skull Tag         - http://www.skulltag.com/
+Misc. Author Info       : I'm Canadian, eh?
+Description             : You have been transported to a Mars laboratory to
+                          eradicate the hellspawn threat. The fourth rock
+                          from the Sun had been terraformed decades earlier
+                          to provide an isolated environment for classified
+                          experiments. It is your task to destroy every
+                          lifeform on the premises and get off the planet.
+Additional Credits to   : - Lee Szymanski, Bill "Bloodshedder" Koch,
+                            Jonathan Rimmer, Jonathan Dowland, and
+                            "Scuba Steve" Browning for playtesting.
+                          - Matt Dixon for creating the cramped hallway
+                            just beyond the red/blue key access barriers.
+                          - mewse
+Revision History        : v1.0 released on July 18th, 2005
+                              - initial public release
+                          v1.1 released on December 31st, 2005
+                              - Fixed a Boom linedef pass-thru flag problem
+                                with the exit platform that prevented the
+                                map from being finishable with PrBoom-Plus
+                                (Thanks Grazza for pointing that out).
+                              - Fixed texture misalignments.
+                              - Slightly cleaned up automap.
+                              - Removed some cell ammo near the maps' end.
+                              - Rebuilt nodes using Zednode 1.2.1.
+                                
+===========================================================================
+
+* Play Information *
+
+Map #                   : MAP02
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes, but this mode hasn't been tested.
+Difficulty Settings     : Yes
+New Sounds              : No
+New Music               : Yes, Requiem MAP15 by [Jeremy Doyle|Mark Klem]
+New Graphics            : Yes
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Started in 1999. Yeah.
+Editor(s) used          : DCK 3.62, Doom Builder 1.66, Wintex 5.0
+Known Bugs              : Won't run in most Boom ports due to the Doom's
+                          SEGS and SIDEDEF limit of 32,768 limit. The
+                          SEGS count for this map is 42,574. Oops.
+May Not Run With...     : doom2.exe, boom.exe, eternity.exe, legacy.exe
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get this WAD *
+
+ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+http://doomworld.com/afterglow/

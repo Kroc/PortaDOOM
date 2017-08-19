@@ -1,0 +1,3 @@
+iwad = doom2
+startuptitle = "Pirate Doom!"
+startupcolors = "50 10 10", "99 80 20"

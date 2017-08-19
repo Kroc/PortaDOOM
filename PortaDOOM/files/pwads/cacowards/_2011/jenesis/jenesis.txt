@@ -1,0 +1,447 @@
+===========================================================================
+Title                   : JENESIS
+Filename                : jenesis.wad
+Release date            : 28 November 2011
+Author                  : James "Jimmy" Paddock
+Email Address           : jamespaddock@hotmail.com
+Other Files By Author   : Blocks of Doom II, Omega mutator, turbotwo.wad.
+                          And of course, jenesis1-3.wad.
+Misc. Author Info       : His eyeballs taste purple.
+
+Description             : The third and final part of my solo megawad.
+                          Part 3 of 'Jenesis' adds 12 extra maps to the
+                          first twenty (which have all also been modified
+                          for the better in some way or another) and
+                          replaces the final map, as its predecessor did.
+
+                          'Jenesis' is a 32-level megawad for Boom,
+                          complete with a new final boss, a new monster,
+                          new status bar graphics and a recolored message
+                          font.
+
+                          The aim of this project was mainly to hone my
+                          skills in traditional Doom level design, but it
+                          was also to create a presentable set of maps
+                          which pulled inspiration from the great megawads
+                          like the Memento Mori duology, Hell Revealed,
+                          Alien Vendetta, Requiem and Scythe. These are
+                          just some of the mapsets out there that Jenesis
+                          pays homage to, thematically.
+
+                          This is the megawad's final release. In total it
+                          has taken about one year and one month of hard
+                          mapping, bugtesting and procrastination to
+                          complete. :P
+
+Additional Credits to   : - My beta testers, Mechadon, MegaDoomer,
+			  hawkwind, [WH]-Wilou84 and Anima Zero.
+                          - My brother Ben (aka "Baratus") and cousin Paul
+                          who also beta-tested. :)
+                          - Many musicians whose work I've used in this
+                          project, and whom I've credited below.
+                          - TheCupboard and worst-vd-plas, for the modified
+                          zombie marine monster from their WAD, The Great
+                          Bicycle Mystery 2. I stole the DEHACKED code, but
+                          I think they were okay with that. :P
+                          - All those mentioned on the CREDIT screen (they
+                          aren't listed in any particular order, BTW).
+                          - Mechadon for providing incredibly useful
+                          feedback on each release of this mapset from the
+                          very beginning, and recording demos which were
+                          awesome too. He also did the DEHACKED work for
+                          the SUPER SPECIAL NEW BOSS.
+                          - hawkwind, who helped me out tremendously with
+                          the very technical assistance he provided. He
+                          also made edits to the maps where appropriate.
+                          [Unfortunately the changes he made to the
+                          starting room of MAP18 presented problems in the
+                          source ports I tested them in. I simplified the
+                          area in the end, because the room would simply
+                          not work properly no matter how much he and I 
+                          changed it. This did unfortunately mean reworking
+                          many of his changes. Sorry, buddy - it's nothing
+                          personal. All your help was immensely appreciated
+                          so thanks a load. :D]
+                          - MegaDoomer for his frequent and detailed
+                          feedback and reports. Thanks a lot, man. :)
+                          - VortexCortex, for providing insightful feedback
+                          where he could, and migrating my and Mechadon's
+                          private discussion board's posts to a new forum.
+                          Your genius astounds me, good sir. :P
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes - mostly original
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : ZDoom MAPINFO for jumping/crouching disabling
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A few weeks + the time it took to build Part 1.
+Editor(s) used          : Doom Builder 2, SLumpEd, Cakewalk Express
+Known Bugs              : This had the smeg tested out of it.
+                          Hopefully none.
+
+May Not Run Well With...: - MBF and Eternity - not fully tested. But there
+                            is still time to address this - please contact 
+                            me before the full megawad is released if you
+                            encounter any problems.
+                          - Any complevel below 9 in PrBoom(+).
+                          - Any ZDoom compatibility mode other than
+                            "Default", "Boom" or "Boom strict".
+                          - The "Find Shortest Textures Like Doom" flag
+                            seems to screw stuff up particularly bad when
+                            set to "yes".
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.
+
+You *****MAY NOT***** include any of these maps in your own megawads.
+Don't be a bastard.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+My Phenomer webspace: http://jimmy.phenomer.net/wad-files/jenesis.zip
+
+===========================================================================
+* List of Changes Since Part 2 *
+
+  - Eleven new maps: MAP09, MAP10, MAP16, MAP17, MAP18, MAP19, MAP22,
+    MAP25, MAP28, MAP29, MAP30 (the new final map) and two new secret maps.
+  - As before, some exit rooms have been modified to make for better
+    continuity.
+  - Some extra secrets have been added to the previous maps.
+  - Three all-new songs by me: "Undisclosed Desires" (MAP09), "Prototype" -
+    a collaboration with stewboy aka Forty-Two (MAP17), and "Airport
+    Chant" (MAP18).
+  - General bugfixes/extensions to the already-existing maps.
+  - A new status bar and a recolored message font.
+  - Megawad finalized. Finally. :P
+
+===========================================================================
+* Level List *
+
+MAP01  -  Treatment Plant
+  : Music - "Into the Fire" by Nick "Theshooter7" George / 'War and Glory'
+  : Par Time - 2:00
+  : Build Time - 10 hours (?)
+  
+  : A huge refining and storage facility on the surface of Phobos. This is
+    where you have been dispatched to take out the initial hordes of
+    demons. Uses Doom 1's E1 sky (naturally).
+
+MAP02  -  The Canal
+  : Music - "River" by Stuart "Forty-Two" Rynn
+  : Par Time - 2:30
+  : Build Time - 8 hours
+
+  : An infested reservoir branching off the treatment plant, fallen into
+    disuse and decay. Lots of rock, slime and water in this map. Uses
+    Memento Mori 1's E1 sky.
+
+MAP03  -  The Oasis Facility
+  : Music - "Under the Waves" by James "Jimmy" Paddock / 'Pendulum'
+  : Par Time - 2:20
+  : Build Time - 12 hours
+  
+  : A kind of purification plant set in a watery outset on Phobos, which
+    unfortunately allows demon life to flourish. Uses TNT's E1 sky.
+
+MAP04  -  The Garden Terminal II
+  : Music - "CCCool" by Lee Jackson
+  : Par Time - 2:30
+  : Build Time - This was started back when I used DeePsea. Years ago. :O
+  
+  : In many ways a slightly redone and expanded version of the original 
+    Hell Revealed map, which still remains one of my favorite maps from the
+    WAD. Uses the HR E1 sky, presumably by either Yonatan Donner or Haggay
+    Niv.
+
+MAP05  -  Submerged Refinery
+  : Music - "Rusty Bridge" by Stuart "Forty-Two" Rynn
+  : Par Time - 1:40
+  : Build Time - 8 hours (?)
+  
+  : A UAC waste disposal outpost fallen into disuse, so excessive pools
+    of toxic waste are abundant, and there are few radsuits to be found.
+    Inspired mostly by Plutonia E2, partially by Simplicity, and partially
+    by Doom E1. Uses the gray/green sky found in Skulltag and Simplicity.
+
+MAP06  -  Waystation
+  : Music - "Pistons" by James "Jimmy" Paddock
+  : Par Time - 1:30
+  : Build Time - 10 hours (?)
+  
+  : A control point in the middle of Phobos's poisoned ocean. It's a small
+    outpost but the monsters are many - indeed, quite a few of them fly,
+    allowing them to get the drop on you, pretty much no matter where you
+    hide. Uses Doom 1's E1 sky.
+
+MAP07  -  Dead Center
+  : Music - "World Tournament II" by Jay "Zora" Reichard
+  : Par Time - 3:00
+  : Build Time - 2 hours
+  
+  : A small, evacuated storage facility set, ostensibly, in the middle
+    of nowhere. Since evacuation took place, hellspawn have set up a
+    seemingly permanent home inside and around it, and they'll throw
+    everything they've got at you in their bid to defend it. Uses
+    textures from Enjay's fantastic Marine Assault wad, and the Doom 2
+    E1 sky.
+
+MAP08  -  Plunge
+  : Music - "Sewer Chase" by Stuart "Forty-Two" Rynn
+  : Par Time - 1:40
+  : Build Time - 8 hours
+
+  : A sewer network far beneath the surface of the moon. Twisting
+    corridors and vast rocky arenas filled with pools of toxic slime
+    characterize this map. No sky.
+
+MAP09  -  Slime Vaults
+  : Music - "Undisclosed Desires" by James "Jimmy" Paddock / 'Muse'
+  : Par Time - 3:15
+  : Build Time - Freakin' ages
+
+  : You travel even further deep into the moon, where a large toxin
+    refinery resides. Looks like it'll be a little easy to get lost if
+    you're not on the ball. Uses Scientist 2 E2 sky.
+
+MAP10  -  Ruins
+  : Music - "Garden" by Stuart "Forty-Two" Rynn
+  : Par Time - 2:25
+  : Build Time - Freakin' ages
+
+  : Having escaped the underground slime caverns, you find yourself in
+    a decimated village. Who knows what happened here, but right now
+    you've got to get back on track and find a path to the UAC gateway.
+    Uses Scientist 2 E2 sky.
+
+MAP11  -  Devil's Industry
+  : Music - "Crush" by James "Jimmy" Paddock / 'Pendulum'
+  : Par Time - 2:45
+  : Build Time - 4 days
+
+  : A large, highly non-linear power plant on Deimos, crawling with
+    hellspawn and full of mechanical hazards that have been subverted by
+    the demons. Uses the foggy sky from Hexen.
+
+MAP12  -  Highway of Destruction
+  : Music - "Liar" by Yngwie Malmsteen
+  : Par Time - 1:20
+  : Build Time - 5 hours (?)
+
+  : A tarnished highway plagued with hellspawn. Completely linear, but
+    highly hectic gameplay. Uses Memento Mori 1's E3 sky.
+
+MAP13  -  Transporter Station
+  : Music - "Zerpentine" by Bobby Prince
+  : Par Time - 2:30
+  : Build Time - 2 days
+
+  : A large teleport research complex which is in the process of being
+    overrun and razed by the demons. Uses Scythe 2's E1 sky.
+
+MAP14  -  Poisoned Ocean
+  : Music - "Pathogen" by James "Jimmy" Paddock
+  : Par Time - 1:45
+  : Build Time - 8 hours
+  
+  : Takes place at an outpost set in the midst of a Martian sea polluted
+    by all manner of foul chemicals. This once habitable locale is now a
+    breeding ground for demons. Expect tricks and traps aplenty. Somewhat
+    inspired by Alien Vendetta's middle episode, and Plutonia. Uses Doom
+    1's E4 sky.
+
+MAP15  -  Alchemy
+  : Music - "Voyage I (Edit)" by James "Jimmy" Paddock
+  : Par Time - 2:40
+  : Build Time - 3 days (?)
+
+  : A massive extraction facility set on a large liquid gold mine. Full
+    of hazards, particularly due to the molten gold stored liberally
+    throughout the facility. Uses Doom 1's E4 sky.
+
+MAP16  -  Crestfallen
+  : Music - "Cliff" (Edit) by Stuart "Forty-Two" Rynn
+  : Par Time - 2:45
+  : Build Time - 2 days
+
+  : A generator complex. What it's generating is unclear, but you have to
+    get through it in order to reach the path to the overtaken gateway.
+
+MAP17  -  Deadline
+  : Music - "Prototype" by James Paddock and Stuart Rynn (collaboration)
+  : Par Time - 2:10
+  : Build Time - 12 hours
+
+  : Back underground again - and it's a defective tram network underneath
+    the generator complex. Because it's totally out of order, it looks
+    like you'll have to take a largely non-linear route to the exit.
+    No sky.
+
+MAP18  -  Mineshaft
+  : Music - "Airport Chant" by James "Jimmy" Paddock
+  : Par Time - 3:20
+  : Build Time - 2 days
+
+  : Further underground, but not far from the gateway now. Fight your way
+    through these weaving mines but be prepared for some hazardous terrain.
+    No sky.
+
+MAP19  -  Subterranean Labs
+  : Music - "In Space" by Stuart "Forty-Two" Rynn
+  : Par Time - 1:50
+  : Build Time - 1 day
+
+  : This infested underground laboratory is crawling with monsters, and the
+    lava-filled caverns will certainly not help your escape. No sky.
+
+MAP20  -  Into The Gate
+  : Music - "Duke's Domain" by Jenna Ramsey
+  : Par Time - 2:40
+  : Build Time - 12 hours
+  
+  : A big gateway control complex on Deimos, positively overrun by
+    demon swarms. Expect a lot of resistance. The gateway technicians
+    have been possessed by demons, and they appear as a new enemy. Very
+    much inspired by E2 and Plutonia's MAP23. Uses Doom 1's E2 sky.
+
+MAP21  -  The Other Side
+  : Music - "Deevine" by Xaser Acheron
+  : Par Time - 0:40
+  : Build Time - 6 hours
+
+  : A very small Scythe 2-inspired map, serving as the introduction to the
+    Hell episode. Mud and blood everywhere. Uses Doom 1's E4 sky.
+
+MAP22  -  Haunted Halls
+  : Music - "Bassline" by Mark Klem
+  : Par Time - 2:25
+  : Build Time - 1 day
+
+  : A ghostly marble and brick fortress inhabited by some pretty strong
+    hellspawn - hope you're well-prepared. Uses a custom sky by Mechadon.
+
+MAP23  -  The Atrium
+  : Music - "Distant Tranquility" by James "Jimmy" Paddock
+  : Par Time - 2:40
+  : Build Time - 3 hours (plus all fixes)
+  
+  : A hellish stone castle on the outskirts of hell, surrounded by a
+    huge moat of molten lava and guarded by a veritable army of
+    hellspawn. Dark corridors, treacherous walkways and trap after
+    trap await. Uses Doom 1's E2 sky.
+
+MAP24  -  Hades' Wall
+  : Music - "Sunset Over Babylon" by James "Jimmy" Paddock
+  : Par Time - 3:30
+  : Build Time - 3 days
+
+  : A rocky canyon bordered by a large Hellkeep. Once again, large moats of
+    lava are abound, and hellspawn stalk every nook and cranny of the area.
+    Uses ravagefox's Doom 1 E3/E4 sky combo.
+
+MAP25  -  The Carcass Pit
+  : Music - "Going Nowhere" by Revenant
+  : Par Time - 1:20
+  : Build Time - 1.5 days
+
+  : You're not out of the rocky peaks yet - you'll have to brave a huge
+    slaughtering ground first. Here's where things start to get pretty
+    hectic. Uses Memento Mori's E2 sky.
+
+MAP26  -  The Savage Abyss
+  : Music - "Song in the Key of TNT" by Jamie Robertson
+  : Par Time - 4:30
+  : Build Time - 14 hours STRAIGHT
+  
+  : A great yawning chasm set in the center of Hell itself, the
+    surroundings of which are caked in lava, fire, marble, and infested
+    with hellspawn. This is the boss map, as it were - it's
+    unquestionably the hardest (and largest) map in the whole set.
+    Uses a modified (and hopefully -improved-) version of TNT's E2 sky.
+
+MAP27  -  The Vulcanum
+  : Music - "Fallen" by Simone Mularoni / 'Symphony X'
+  : Par Time - 3:30
+  : Build Time - TOO LONG
+
+  : A massive hellish gauntlet - a bathing hole for demons. This map has
+    slaughterfest written all over it (mainly because it's Scythe-inspired)
+    and very little ground is available, so you'd better be careful.
+
+MAP28  -  Baphomet's Keep
+  : Music - "The Greater Good" by Stuart "Forty-Two" Rynn
+  : Par Time - 3:50
+  : Build Time - A few days
+
+  : This looks like where Baphomet and the worst of his legions are hiding.
+    Storm the castle and kill that bastard for all time! Uses Plutonia's E2
+    sky.
+
+MAP29  -  Mutant Jenesis
+  : Music - "Moonlight Bloodbath" by Henri "Icytux" Vuortenvirta
+  : Par Time - 3:00
+  : Build Time - Way too long
+  
+  : With Baphomet destroyed, you are catapulted back to Phobos.
+    Unfortunately your return is not a welcome one. Uses Scythe 2's E1 sky.
+
+MAP30  -  Abysm
+  : Music - "doombg" by ynxyg
+  : Par Time - 3:20
+  : Build Time - ???
+  
+  : Good luck, marine. You'll need it here.
+
+----- ( SECRET LEVELS ) -----
+
+MAP31  -  Duality
+  : Music - "Smells like Burning Corpse (Remix)" by Jay "Zora" Reichard
+  : Par Time - 4:25
+  : Build Time - 2 days
+  
+  : A hellish peak guarded by a terrible monstrosity that as yet, remains
+    undescribed. Best of luck with this ordeal.
+
+MAP32  -  Reprise
+  : Music - "River" by Stuart "Forty-Two" Rynn
+  : Par Time - 4:10
+  : Build Time - Quite a few days, but this was done several years ago
+  
+  : The strangest feeling of deja-vu sweeps over you...
+
+===========================================================================
+
+Thanks to everyone on Doomworld who helped make this megawad possible.
+You guys rock. :D
+
+This megawad was released on 28 November 2011, the final day I spent
+living in the UK before my family emmigrated to Australia. It's been a
+good twenty years, old friend. Australia, bring it on.

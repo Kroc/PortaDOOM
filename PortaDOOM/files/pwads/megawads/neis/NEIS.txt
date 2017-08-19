@@ -1,0 +1,151 @@
+===========================================================================
+Primary purpose         : Single play
+Advanced engine needed  : Limit-removing for E4; E1-E3 are vanilla-compat.
+                          Some very minor effects are Boom-compat, and
+                          an exit to a super-secret map (E4M0) has been
+                          added if playing in ZDoom or Eternity.
+===========================================================================
+Title                   : No End in Sight
+Filename                : NEIS.WAD
+Release date            : 11/28/16
+Version                 : 1.0
+Author                  : Emil "NaturalTvventy" Brundage
+                          Xaser Acheron
+                          Chris Lutz
+Email Address           : [redacted]
+
+Description             : Oldschool 4-episode adventure for The Ultimate
+                          Doom, featuring some of the most devilish map
+                          design this side of 1994. 'Nuff said... ish.
+
+                          Similar to DTWID, the spirit of id is ever-present,
+                          albeit cranked up to 11 with a devious new spin
+                          on the classic episodes' themes. Along the way,
+                          you'll enter parallel worlds, explore derelict
+                          spaceships still floating in the sky, and return
+                          to some eerily familiar locales on the far side
+                          of Phobos and beyond.
+
+Story or something      : With no end in sight(tm) to the demon presence
+                          on Earth, our hero, Doomguy McDoomperson, decides
+                          to retrace his steps through Phobos, Deimos, and
+                          Hell in order to discover a permanent solution to
+                          a certain damnatious pest problem... and also
+                          because he was bored.
+
+Additional Credits to   : Plenty of folks! See "Full Credits" below.
+===========================================================================
+* What is included *
+
+New levels              : 38 (4 episodes and 2 extra maps in ExM0 slots)
+Sounds                  : No
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : Maybe
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E1M1-E4M9 (with extras on E1M0 and E4M0)
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : N/A
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Forever and a Half.
+Editor(s) used          : Various
+May Not Run With...     : Versions of Doom prior to 1.9.
+                          E4 requires a limit-removing port.
+Known Bugs              : There's likely to be some roughness
+                          around the edges, given the wad's heritage,
+                          but hopefully nothing gamebreaking.
+
+                          Special note: the normal/secret exits are
+                          NOT swapped in some E3 maps. This is
+                          NOT a bug. ;)
+
+
+* Full Credits *
+
+	Episode 1 - 1994 Ways To Die
+E1M1: Terminal --------------- Emil "NaturalTvventy" Brundage
+E1M2: Slime Trails ----------- Emil "NaturalTvventy" Brundage
+E1M3: Logistics Center ------- Emil "NaturalTvventy" Brundage
+E1M4: Abandoned Factory ------ Emil "NaturalTvventy" Brundage
+E1M5: Warehouse -------------- Emil "NaturalTvventy" Brundage
+E1M6: Power Core ------------- Emil "NaturalTvventy" Brundage
+E1M7: Biosphere -------------- Xaser Acheron
+E1M8: Enigma ----------------- Emil "NaturalTvventy" Brundage
+E1M9: Quarantine Silos ------- Emil "NaturalTvventy" Brundage
+E1M0: Tom's Halls ------------ Emil "NaturalTvventy" Brundage
+
+	Episode 2 - The Depths of Doom
+E2M1: Recieving Station ------ Xaser Acheron
+E2M2: Proving Grounds -------- Emil "NaturalTvventy" Brundage
+E2M3: Contagion Engine ------- Xaser Acheron
+E2M4: Derelict Vessel -------- Xaser Acheron
+E2M5: Deep Storage ----------- Emil "NaturalTvventy" Brundage
+E2M6: Poison Control --------- Chris Lutz
+E2M7: Gateway Labs ----------- Emil "NaturalTvventy" Brundage
+E2M8: Rubicon ---------------- Emil "NaturalTvventy" Brundage
+E2M9: Castle of Illusion ----- Xaser Acheron
+
+	Episode 3 - Woe
+E3M1: Gates of Hades --------- Emil "NaturalTvventy" Brundage
+E3M2: Emblem of Destruction -- Emil "NaturalTvventy" Brundage
+E3M3: The Grinder ------------ Xaser Acheron
+E3M4: Fortuna Bridge --------- Xaser Acheron
+E3M5: Forgotten Caverns ------ Emil "NaturalTvventy" Brundage
+E3M6: Anomaly Retribution ---- Emil "NaturalTvventy" Brundage
+E3M7: Netherworld Citadel ---- Emil "NaturalTvventy" Brundage
+E3M8: Requiem ---------------- Emil "NaturalTvventy" Brundage
+E3M9: Lake of Fire ----------- Chris Lutz
+
+	Episode 4 - Blood Stained Earth
+E4M1: Nexus ------------------ Emil "NaturalTvventy" Brundage
+E4M2: Parallels -------------- Emil "NaturalTvventy" Brundage
+E4M3: Square Zero ------------ Xaser Acheron
+E4M4: Wartorn Precinct ------- Emil "NaturalTvventy" Brundage
+E4M5: The Blood Beneath ------ Chris Lutz
+E4M6: Sanctuary of Filth ----- Emil "NaturalTvventy" Brundage
+E4M7: Vacuum Consortium ------ Xaser Achero, Jon "40oz" Vail
+E4M8: No End In Sight -------- Emil "NaturalTvventy" Brundage, Xaser Acheron
+E4M9: Vile Cross ------------- Emil "NaturalTvventy" Brundage
+E4M0: RGC Alpha -------------- Emil "NaturalTvventy" Brundage
+
+	Miscellaneous
+Testing & Love ------ Boris "dew" Klimeš
+Status bar ---------- Steve "Kyka" Muller, Xaser Acheron
+Titlepic ------------ Xaser Acheron
+Naming Things ------- Xaser Acheron
+Alpha Textures ------ id Software, John Romero
+Misc. Texture Edits - Emil "NaturalTvventy" Brundage, Xaser Acheron
+Skies --------------- Sodaholic (E1), Cage (E3), id Software (E2/E4)
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+

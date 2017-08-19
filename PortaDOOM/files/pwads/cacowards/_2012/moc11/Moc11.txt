@@ -1,0 +1,144 @@
+Title                   : Masters of Chaos v 1.1 for Heretic
+Filename                : moc10.wad
+Author                  : Caleb & Doom_Warrior
+Email Address           : calebx@wp.pl or jedrol8@go2.pl
+Misc. Author Info       : 
+                          
+Description             : Three totally new episodes for Heretic - 31 levels, including new graphics,
+                          sounds and music. Five new weapons - 13 in all.
+                          New deadly enemies, new tricks and traps and much more.
+
+Additional credits, special thanks:
+Eriance, Tormentor667, Captain Toenail, Enjay, Esselfortium, Evil Space Tomato, Gez, Neoworm, Nightmare, Pun1sh3r, Icytux, Rottking, Vader, Xaser, DBThanatos, Ghastly Dragon, Rolls, 
+Maelstrom, StraScream, Koresiarch, Ravagefox, Croteam, Nash, Nanami, CodenniumRed, ThatOneZdoomer, Mor'Ladim, Dreadopp.
+
+Version changes:
+
+1.0
+
+First release.
+
+1.1
+
+- fixed texture alignment errors 
+- removed a trap with a bunch of butchers in e3m4
+- removed a trap door (see knight archers trap in e3m4)
+- e1m5 is about 1/4 bigger and more detailed than before
+- added more detail in e1m6 + more enemies + a hint to find a blue key
+- fixed a door in e2m9 
+- added more ammo + dragon claw in e2m9
+- removed a bunch of nitrogolems in the big room in e3m6 / added a bunch of death knighs
+- added more monsters in e3m10 final
+- some minor detail changes in most maps
+- changed some new sprites to solid objects
+- added a crossbow at the very beginning in e1m9
+- added firemace and dragon claw in e2m8 + more ammo
+
+The Story So Far:
+
+Five years after the events in heretic.
+At last Corvus is back in his home town, where he spends his normal life.
+It's so peaceful and quiet here. Until now. There's a new dangerous enemy. The one who calls himself Mighty Voltrog. He's was one of the serpent riders but his lust for ultimate power made him stronger then ever.
+He betrayed serpent riders and worked on his own. Now he's the master of chaos. He's using the chaos crystals to suck the living energy from the entire planets giving him the ultimate power. The only way to stop
+this madness is to destroy all three crystals. Your objective is to travel from your home land to the land beetween hell and earth and the land of the dead itself to find each crystal and destroy it as quictly as possible.
+This is the only way to weak the powers of Mighty Voltrog.
+ 
+ 
+Episode List
+
+Episode 1: "The Dark Tower"
+Episode 2: "Hellbound"
+Episode 3: "Shadowlands"
+
+List of Levels
+Ep lvl num      Level Name               Author
+E1M1       "Abandoned Warehouse"       - Caleb260
+E1M2       "Town of Akanoss"           - Caleb260
+E1M3       "Underground Passage"       - Caleb260
+E1M4       "Ruins of the Shadowkeep"   - Caleb260
+E1M5       "Forest of Silence"         - Caleb260
+E1M6       "Frozen Wasteland"          - Caleb260
+E1M7       "Chapel of the Fallen Moon" - Doom_Warrior
+E1M8       "The Dark Tower"            - Caleb260
+E1M9       "Bleeding"                  - Doom_Warrior
+E1M10      "Borderlands"               - Caleb260
+E2M1       "Beyond the Gate"           - Doom_Warrior
+E2M2       "Forgotten Graveyard"       - Caleb260
+E2M3       "Nightmares"                - Caleb260
+E2M4       "Going Down"                - Doom_Warrior
+E2M5       "Badlands"                  - Caleb260
+E2M6       "Abyss"                     - Doom_Warrior
+E2M7       "The Black Gate"            - Caleb260
+E2M8       "Courtyard of Destiny"      - Doom_Warrior
+E2M9       "Charnel House"             - Doom_Warrior
+E2M10      "The Fountain of Youth"     - Caleb260 & Doom_Warrior
+E3M1       "Bormoth"                   - Caleb260
+E3M2       "The Dead Marshes"          - Doom_Warrior
+E3M3       "Cargo Shaft"               - Caleb260 & Doom_Warrior
+E3M4       "The Great Library"         - Doom_Warrior
+E3M5       "Quarry"                    - Doom_Warrior & Caleb260
+E3M6       "Bright Sanktuary"          - Caleb260
+E3M7       "Altar of Pain"             - Caleb260
+E3M8       "The Residence"             - Caleb260
+E3M9       "City of the Lost Hope"     - Caleb260
+E3M10      "Fortress of Fear"          - Caleb260
+E3M11      "Cold as Ice"               - Caleb260
+
+
+
+
+WEAPONS LIST
+
+1:Staff / Gauntlets of the Nekromancer
+2:Elven Wand/Wand of Embers*
+3:Ethereal Crossbow / Jade Wand *
+4:Dragon Claw / Frost Fang
+5:Hellstaff / Blood Scepter **
+6:Phoenix Rod
+7:Firemace
+8:SkullStaff 
+
+*  Found only in Episode 2 & 3
+** Found only in Episode 3
+
+
+
+
+
+================================================================
+* Play Information *
+
+Episode and Level #     : E1M1-E3M11
+Single Player           : Yes, tested.
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : yes
+New Sounds              : yes
+New Graphics            : yes
+New Music               : yes
+Demos Replaced          : No
+
+* Construction *
+
+Base                    : New levels from scratch
+Build time              : I don't remember:P A lot
+Editor(s) used          : DoomBuilder2, Xwe, Coreldraw 14
+Known Bugs              : Nope
+
+
+* Copyright / Permissions *
+
+Authors may not use this level as a base to build additional levels.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+* Web-sites *
+
+DoomNation               www.doomnation.com
+DoomWorld                www.doomworld.com
+Wildman's Corner         www.doomworld.com/wildman
+ZDooM                    zdoom.notgod.com
+

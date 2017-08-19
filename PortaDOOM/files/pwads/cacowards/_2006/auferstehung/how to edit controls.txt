@@ -1,0 +1,12 @@
+This Text file
+is for New Beginners
+
+if you want to change the controls
+go to options
+and choose
+"Customize Controls"
+
+if you want to use the mouse to Looks Around (NOT MOVE AROUND)
+go to
+"Mouse Options"
+and enable mouse look

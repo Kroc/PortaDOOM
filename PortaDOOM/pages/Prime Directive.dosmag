@@ -1,0 +1,108 @@
+$KEY:P=SHELL:pwads\cacowards\2015\ge5-pd\play.bat
+$KEY:T=SHELL:pwads\cacowards\2015\ge5-pd\ge5-pd.txt
+$KEY:W=SHELL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
+
+:Prime Directive                                 * 2015 Cacoward runner up! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>07>23*   Author : _Ethan Watson aka GooberMan_
+:Levels   : *9*             Modes : *Single
+:Requires : *gzdoom*     Includes : *+Sounds +Graphics
+:------------------------------------------------------------------------------
+
+Bet you never thought you'd see this, eh? The next installment in the Gateway Experiments series, just in time for Doom's 22-and-a-halfth-ish Anniversary. Where's episodes 2, 3, and 4? Well, I'm not making them. I've done a George Lucas, skipped a few chapters, and tweaked Space Station Omega slightly so that it could fit in this package with the new stuff.
+
+:------------------------------------------------------------------------------
+
+*GENERAL:
+
+Reading 2012's (finally eventually there) Cacowards got me thinking - wouldn't it be cool to release a Doom map for the 20th Anniversary? Sure, I retired from mapping some years ago. But that hasn't stopped me. I've done some private mapping projects; released a few anonymously; and am even using the WAD format for prototyping purposes on a hobby project I'm coding using the D language. Why do I keep coming back to Doom mapping? Surely being a professional game programmer at a high profile company is more than enough for a guy like me? Well, to put it simply, Doom is a game I know backwards, and editing it allows me to easily prototype new ideas in a familiar framework.
+
+Prime Directive, though, isn't exactly an experiment. It takes a slice out of the Gateway Experiments story that I thought was interesting. Then it takes the speech system, expands it, and combines it all with gameplay more akin to Metroid Prime. It has become somewhat fashionable these days to make maps in an old school style, or compatible with your favourite weapons mod. I never had a hipster cred, but I'm handing it in anyway. Conversations, hubs, a complete day/night cycle, new abilities for the player, and more put this firmly in the "mod" section that was quite popular back when Space Station Omega was originally released. Further, Prime Directive is NOT compatible out of the box with any given weapons mod. This was built on, and balanced with, Vanilla Doom capabilities.
+
+I certainly didn't get this out in time for the 20th anniversary. Oh well. The original map was about three weeks or so of work spread out over 14 months, and this one was about five or so months of work spread out over two and a half years. I certainly have a precedent for taking my time.
+
+I've been programming games professionally for twelve+ years now. You'll notice the quality of my scripts has substantially increased... but they're still a bit shit. I didn't start out with a proper scripting plan, and I had to work around ACS limitations the entire time. Also, the quantity of scripts has very definitely increased. Holy crap. It's a bit messy inside each map's scripts lump, but only because I haven't gone through and ordered everything correctly.
+
+Once nice thing I've done though is put every string used in a languages lump. If you want to translate this to your own language so that others you know can enjoy the mod, go right ahead. Space Station Omega's strings are still hard-coded though...
+
+The likelihood of making another episode of The Gateway Experiments after this one is minimal, so I've tried to wrap it up as nicely as possible. It ends at a nice high point in the story.
+
+*GZDOOM:
+
+This mapset is targeting GZDoom exclusively. Lighting and sloped 3D floors are used all over the place.
+
+*SPACE STATION OMEGA
+
+Of course, the fact that Space Station Omega is a ten year old WAD these days tells me that there's a chance not many would have played it. I've taken the opportunity to repackage and give it a HD remix of sorts. The conversation scripts have been updated to use the new Prime Directive framework (mostly), and as PD targets GZDoom exclusively I've also redone the station lighting. It's darker and relies on GL lights. As such, light now becomes an important visual clue as to what's going on. Hear a gunshot or a teleport? If you see light nearby, now's the time to get shooty.  
+
+Aside from the lighting and conversation scripting updates, you shouldn't notice any real differences - the map plays exactly as it did ten years ago. Sure to be the most controversial change is that Elaine is now ACTUALLY represented by a female marine skin. I know, right?
+
+The scripts are still a mess, but they needed work to play nice with the latest ACC and the PD framework. I could clean them up, but it's not worth it.
+
+Suffice to say if you play through Space Station Omega again it will have a subtle impact on how Prime Directive plays out.
+
+*DEVELOPMENT HISTORY
+
+$KEY:A=SHELL:http://forum.zdoom.org/viewtopic.php?f=19&t=35115
+I've kept an extensive development diary on the ZDoom forums. Point your browser to [A] _<forum.zdoom.org/viewtopic.php?f=19&t=35115>_
+
+$KEY:B=SHELL:https://drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM
+I've also kept extensive revisions on my Google Drive. If seeing how this mod progressed is of interest to you, point your browser to [B] _<drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM>_ This may not stay up forever, I'd need to be running out of space on my drive to get rid of it though.
+
+$KEY:C=SHELL:http://youtu.be/B_43lSRCAIQ
+I have also recorded a playthrough detailing how to get 100% as well as providing general commentary on the development and thought process behind Prime Directive. Point your browser to [C] _<youtu.be/B_43lSRCAIQ>_ and be prepared to hear my voice for two and a half hours.
+
+*REMIXING
+
+I've made no effort to ensure compatability with weapons mods, excepting the fact that I've tried to name all my things appropriately for the Gateway Experiments. I encourage you to remix this mapset to work with your favourite weapons mod and upload the result to /idgames. Don't be lazy, though. If you're going to give yourself all the massive weapons, put the work in to give the marines you face the same weapons.
+
+Since the original release, people have complained that it doesn't work with their weapons mod. If you intend on remixing it to work with one, note that I use a custom player class and I've reimplemented the vanilla weapons to track weapon stats. 
+
+*CREATIVE COMMONS
+
+Once again, this is being released under a Creative Commons licence. This gives both you and I more freedom to do what we want with PD.
+
+:FAQ:
+:------------------------------------------------------------------------------
+*Q: Halp! I'm stuck behind locked doors!
+
+*A:* Contact Elaine. On your radio. You have checked the key bind, right? The Elaine logic has gotten a bit more complicated since Space Station Omega. You can now contact her in contextual situations, such as computers and doors that she can hack. You can also talk to her about major events that just happened. But importantly, if you're stuck, she may be able to hack that door that's in your way.
+
+*Q: So I heard map transitions are like Half-Life. Why does the screen melt between maps then? Doesn't that defeat the point?
+
+*A:* Yes it does. Go in to your display options and turn the melt off.
+
+*Q: Do I need to play Space Station Omega again?
+
+*A:* If you want a 100% rating. It is impossible otherwise.
+
+*Q: Where's the detailz?
+
+*A:* In another castle. I've focused purely on gameplay and story with this release, and relied on 3D models for detail. GZDoom's dynamic lights already incur a performance (as such I've had to split geometry up to get better performance) so I really didn't want to go overboard on the detail. Also, I'm a programmer, not an artist. I don't have the patience to perfect visual details.
+
+*Q: Cutscenes really what is this Call of Duty how do I skip this shit 0/10 worst WAD ever would not recommend
+
+*A:* Check the key bindings. There is a "Skip Cutscene" key. Pretty much every cutscene except a handful in the intro are skippable. Also of note is the "Text Delay" option found in the options menu. Smaller values speed up all text in the game.
+
+*Q: Why do none of my weapons in my weapons mod work?
+
+*A:* Because I do things that weapons mods don't like - specifically I override the player class; and I've reimplemented all the Vanilla weapons as tracked versions. If you want it to work with your weapons mod, remix it and upload it for everyone else's benefit too.
+
+*Q: Where's episodes 2, 3, and 4?
+
+*A:* Yes.
+  
+:Construction:
+:------------------------------------------------------------------------------
+*Base*                    : Mostly from scratch. Spot the skybox reuse.
+*Build Time*              : Started on December 26, 2012. Finished June 2015. There was about five months of work in total.
+*Tool(s) used*            : GZDoom Builder, SLADE 3, GIMP, Audacity, PSPad.
+*Known Bugs*              : It's probably possible to desynchronise a few things.
+*Will Not Run With...*    : Brutal Doom or any other weapons mods. Remix this project yourself if you want it to work with your favourite weapons mod. Because I won't.
+                          
+:Credits:
+:------------------------------------------------------------------------------
+$KEY:L=SHELL:pwads\cacowards\2015\ge5-pd\licenses.txt
+An extensive list of credits is kept in [L] licenses.txt. Shout outs to _Randi_, _Graf_, _Enjay_, _Nash_, _Xaser_, _ReX_, _wildweasel_, _Gez_, _Blzut3_, _Kinsie_, _Jimmy_, _Edward850_, _grouchbag_, _scalliano_, and other ZDoom forums/IRC people I've missed.

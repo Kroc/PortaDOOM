@@ -1,0 +1,31 @@
+Game: Doom 2
+Pwad: Deus Vult II
+Filename: dvii-01-0148-bn.lmp
+Skill and Style: 4 (UV-Max)
+Map Level: 1 (Entryway Pass)
+Exe/Port used: GLBoom 2.4.8.1 (PRBoom Plus) -complevel 9
+
+Totals:
+Kills       100%
+Items        67%
+Secrets    100% and (Time- 1:48)
+
+Comments: 
+First map of this sequel...and a nice one at that with a focus on fast-paced action.
+
+Starting out is simple, just kill the imp and get the CG from the secret area and head through the first door.
+
+After this, the main strat after taking the lift is to grab secret #2 (green armor), then put priority on blowing up the barrels as they are the most effective killers here.  Survivors are dealt with using the CG unless you somehow run out of bullets (Which shouldn't happen as there is plenty of bullets to work with here), then use the SG.
+
+It's like this for 2/3rds of the map until you get to the zombiemen army en route to the BK.  I just tear a path through the zombiemen to the medpacks, then make a leap of faith to secret #3, the RL.  Quickly take the teleporter and go right into the 4th and final secret, a lift that brings you to a Soulsphere.
+
+Finish off any survivors after you teleport and make way to the BK.
+
+Once there, examining the platform on where the BK is, your exit is closed up for a brief moment while a caco appears in each corner of the room.  Quickly blow up the barrels in each corner and you should be able to wipe out all of them if they were close enough to the explosions.  Use the CG if any survive before leaving.
+
+As a small note, running out of here is another trigger to open up the wall leading to the Soulsphere secret if you missed getting into it from secret #3.  Otherwise the last enemy to kill is the arach.  Use up your 3 rockets to kill it, hit the BK switch, then exit the level.
+
+All in all, a good run.  My goal was what Huy set down:  Under 2 minutes.  Met that by a good margin.
+
+Brian "Anima Zero" Nesser
+Bri8527@comcast.net

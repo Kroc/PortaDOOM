@@ -1,0 +1,131 @@
+===========================================================================
+Archive Maintainer      : -
+Update to               : -
+Advanced engine needed  : GZDoom
+Primary purpose         : Single Player.
+===========================================================================
+		* TEXTO EN ESPAÑOL AL FINAL *
+===========================================================================
+
+Title                   : Mandrill Ass Project
+
+Filename                : mandrill.wad
+Release date            : 05/2011
+
+Author                  : Aluqah
+
+Email Address           : aluqahweb@yahoo.com.ar
+Web page		: aluqahweb.blogspot.com
+Other Files By Author   : Oniria series, The transport tycoon's epic fall, Clavicula Nox
+			  Beyond the walls of the night, Horror in the Deep, etc, etc...
+Misc. Author Info       : -
+
+Description             : 9 maps with unusual/original themes. Computer circuits,
+			  virtual worlds, aircraft squadron in flight and much more!
+
+Additional Credits to   : Original textures by Aluqah.
+			  Cars of MAP03 by Scuba steve.
+			  Furniture of MAP06 by Vile1011
+			  MAP08's psycho textures from "ULTIMATE SIMPSONS DooM2".
+			  Other textures from "Mortres texture pack" and Kurt Kesler.
+  			  Virtual levels Inspired by Tron 2.0 and Tank Universal.			
+
+===========================================================================
+* What is included *
+
+New levels              : 9 levels.
+Sounds                  : Yes.
+Music                   : Yes.
+Graphics                : Yes.
+Dehacked/BEX Patch      : No.
+Demos                   : No.
+Other                   : No.
+Other files required    : Nothing.
+
+
+* Play Information *
+
+Game                    : DOOM2.wad with GZDoom.
+Map #                   : MAP01 to MAP09
+Single Player           : Designed for.
+Cooperative 		: No.
+Deathmatch 2-8 Player   : No.
+Other game styles       : No.
+Difficulty Settings     : No.
+
+
+* Construction *
+
+Base                    : Scratch, except some litle copy-paste from other WADs by myself.
+Build Time              : Many months (?).
+Editors used 	        : DoomBuilder, SLumpEd, MS paint, Photo Filtre, Wintex.
+Known Bugs              : None.
+May Not Run With...     : Only runs in GZDoom.
+			
+
+* Copyright / Permissions *
+
+Authors may use this maps and graphics as a base for new ones or reuse, but
+give the credit to the original author.
+
+You MUST distribute this file, provided you include this text file, with
+no modifications. You may distribute this file in any format.
+
+
+* Where to get my maps *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: aluqahweb.blogspot.com
+	   www.arcades3d.com
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+Título			: Mandrill Ass Project  (mandrill.wad)
+
+Autor                   : Aluqah.
+E-Mail			: aluqahweb@yahoo.com.ar
+Web			: aluqahweb.blogspot.com
+
+Créditos adicionales	: Texturas originales por Aluqah.
+			  Autos del MAP03 por Scuba steve.
+			  Sillas y mesas del MAP06 por Vile1011.
+			  Texturas psicodélicas del MAP08's del "ULTIMATE SIMPSONS DooM2".
+			  Otras texturas del "Mortres texture pack" y Kurt Kesler.
+  			  Niveles virtuales inspirados en los juegos 'Tron 2.0' y
+			   'Tank Universal'.
+
+===========================================================================
+
+Descripción		: 9 mapas de ambientación inusual/original. Circuitos
+			  de computadora, mundos virtuales, aciones en pleno
+			  vuelo, y más!
+
+Juego                   : doom2.wad con GZDoom.
+
+Niveles                 : MAP01 a MAP09.
+Un jugador              : Sí.
+Coperativo/Deathmatch	: No.
+Niveles de dificultad   : No.
+
+Bugs			: No.
+Editores usados         : DoomBuilder, SLumpEd, MS paint, Photo Filtre, Wintex.
+Terminado		: 05/2011
+
+===========================================================================
+
+* Copyright *
+
+-Puedes usar el mapa y gráficos como base de otros o reusarlos, pero
+dale el crédito que le corresponda al autor original.
+-Distribúyelo por todo el universo en cualquier formato que exista
+o se invente en el futuro.
+===========================================================================
+* Donde conseguir más mapas míos *
+
+aluqahweb.blogspot.com  :)
+www.arcades3d.com
+www.doomworld.com/idgames
+
+===========================================================================

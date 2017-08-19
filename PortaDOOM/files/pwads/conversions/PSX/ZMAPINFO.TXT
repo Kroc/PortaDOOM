@@ -1,0 +1,1224 @@
+//helegad's PSX DooM TC Lost Levels integration map order. 
+Include DefaultMap.txt
+
+Episode LOST01
+{ 
+	remove
+	Name = "$MNU_LOSTLEV"
+	Key  = "l"
+}
+
+AddDefaultMap
+{	Cluster = 1
+	Sky1 = "SKY01"
+}
+
+Map MAP01 Lookup "HUSTR_1"
+{
+	Music = "$MAPMUS_1" 
+	Next = "MAP02"
+}
+
+Map MAP02 Lookup "HUSTR_2"
+{
+	Music = "$MAPMUS_2"
+	Next = "MAP03"
+}
+
+Map MAP03 Lookup "HUSTR_3"
+{
+	Music = "$MAPMUS_3"
+	Next = "MAP04"
+	SecretNext = "MAP56"
+}
+
+		Map MAP56 Lookup "HUSTR_56"
+		{
+			Music = "$MAPMUS_56"
+			Next = "MAP04"
+		}
+
+Map MAP04 Lookup "HUSTR_4"
+{
+	Music = "$MAPMUS_4"
+	Next = "MAP05"
+}
+
+Map MAP05 Lookup "HUSTR_5"
+{
+	Music = "$MAPMUS_5"
+	Next = "MAP06"
+}
+
+Map MAP06 Lookup "HUSTR_6"
+{
+	Music = "$MAPMUS_6"
+	Next = "MAP07"
+}
+
+Map MAP07 Lookup "HUSTR_7"
+{
+	Music = "$MAPMUS_7"
+	Next = "MAP08"
+}
+
+Map MAP08 Lookup "HUSTR_8"
+{
+	Music = "$MAPMUS_8"
+	Next = "MAP09"
+}
+
+AddDefaultMap
+{
+	Sky1 = "SKY02"
+}
+
+Map MAP09 Lookup "HUSTR_9"
+{
+	Music = "$MAPMUS_9"
+	Next = "MAP10"
+}
+
+Map MAP10 Lookup "HUSTR_10"
+{
+	Music = "$MAPMUS_10"
+	Next = "MAP11"
+}
+
+Map MAP11 Lookup "HUSTR_11"
+{
+	Music = "$MAPMUS_11"
+	Next = "MAP12"
+}
+
+Map MAP12 Lookup "HUSTR_12"
+{
+	Music = "$MAPMUS_12"
+	Next = "MAP13"
+}
+
+Map MAP13 Lookup "HUSTR_13"
+{
+	Music = "$MAPMUS_13"
+	Sky1 = "FIRESK00"
+	Next = "MAP14"
+}
+
+Map MAP14 Lookup "HUSTR_14"
+{
+	Music = "$MAPMUS_14"
+	Next = "MAP15"
+}    
+                
+Map MAP15 Lookup "HUSTR_15"
+{
+	Music = "$MAPMUS_15"
+	Next = "MAP16"
+	SecretNext = "MAP55"
+}
+
+		Map MAP55 Lookup "HUSTR_55"
+		{
+			Music = "$MAPMUS_55"
+			Sky1 = "SKY01"
+			Next = "LOST06"
+		}
+
+		Map LOST06 lookup "LHUSTR_6"
+		{ 
+			Music = "$LMAPMUS_6" 
+			Sky1  = "FIRESK00" 
+			Next  = "MAP16" 
+		}
+
+AddDefaultMap
+{
+	Sky1 = "FIRESK00"
+}
+
+Map MAP16 Lookup "HUSTR_16"
+{
+	Music = "$MAPMUS_16"
+	Next = "MAP17"
+}
+
+Map MAP17 Lookup "HUSTR_17"
+{
+	Music = "$MAPMUS_17"
+	Next = "LOST01"
+}
+
+Map LOST01 lookup "LHUSTR_1"
+{
+	Music = "$LMAPMUS_1"
+	Sky1  = "FIRESK00"
+	Next  = "LOST02"
+}
+
+Map LOST02 lookup "LHUSTR_2"
+{
+	Music      = "$LMAPMUS_2"
+	Sky1       = "FIRESK00"
+	Next       = "MAP18"
+	SecretNext = "LOST62"
+}
+
+		Map LOST62 lookup "LHUSTR_62"
+		{
+			Music = "$LMAPMUS_62" 
+			Sky1  = "FIRESK00" 
+			Next  = "MAP18" 
+		}
+
+Map MAP18 Lookup "HUSTR_18"
+{
+	Music = "$MAPMUS_18"
+	Next = "MAP19"
+}
+
+Map MAP19 Lookup "HUSTR_19"
+{
+	Music = "$MAPMUS_19"
+	Next = "MAP20"
+}
+
+Map MAP20 Lookup "HUSTR_20"
+{
+	Music = "$MAPMUS_20"
+	Next = "MAP21"
+}
+
+Map MAP21 Lookup "HUSTR_21"
+{
+	Music = "$MAPMUS_21"
+	Next = "MAP22"
+}
+
+Map MAP22 Lookup "HUSTR_22"
+{
+	Music = "$MAPMUS_22"
+	Next = "MAP23"
+}
+
+Map MAP23 Lookup "HUSTR_23"
+{
+	Music = "$MAPMUS_23"
+	Next = "MAP24"
+}
+
+
+AddDefaultMap
+{
+	Sky1 = "SKY07"
+}
+
+Map MAP24 Lookup "HUSTR_24"
+{
+	Music = "$MAPMUS_24"
+	Next = "MAP25"
+}
+
+Map MAP25 Lookup "HUSTR_25"
+{
+	Music = "$MAPMUS_25"
+	Next = "MAP26"
+	SecretNext = "MAP60"
+}
+
+		Map MAP60 Lookup "HUSTR_60"
+		{
+			Music = "$MAPMUS_60"
+			Sky1 = "SKY07"
+			Next = "MAP29"
+		}
+
+		Map MAP29 Lookup "HUSTR_29"
+		{
+			Music = "$MAPMUS_29"
+			Next = "MAP26"
+			SecretNext = "MAP57"
+		}
+
+				Map MAP57 Lookup "HUSTR_57"
+				{
+					Music = "$MAPMUS_57"
+					Sky1 = "SKY04"
+					Next = "MAP26"
+				}
+
+Map MAP26 Lookup "HUSTR_26"
+{
+	Music = "$MAPMUS_26"
+	Next = "MAP27"
+}
+
+Map MAP27 Lookup "HUSTR_27"
+{
+	Music = "$MAPMUS_27"
+	Next = "LOST03"
+}
+
+Map LOST03 lookup "LHUSTR_3"
+{ 
+	Music = "$LMAPMUS_3" 
+	Sky1  = "SKY07" 
+	Next  = "LOST04" 
+}
+
+Map LOST04 lookup "LHUSTR_4"
+{ 
+	Music      = "$LMAPMUS_4" 
+	Sky1       = "SKY07" 
+	Next       = "LOST05" 
+	SecretNext = "LOST63"
+}
+
+		Map LOST63 lookup "LHUSTR_63"
+		{
+			Music = "$LMAPMUS_63" 
+			Sky1  = "FIRESK00" 
+			Next  = "LOST05" 
+		}
+
+Map LOST05 lookup "LHUSTR_5"
+{ 
+	Music      = "$LMAPMUS_5" 
+	Sky1       = "SKY07" 
+	Next       = "MAP28" 
+	SecretNext = "MAP30"
+}
+
+		Map MAP30 Lookup "HUSTR_30"
+		{
+			Music = "$MAPMUS_30"
+			Sky1 = "FIRESK00"
+			Next = "MAP28"
+		}
+
+Map MAP28 Lookup "HUSTR_28"
+{
+	Music = "$MAPMUS_28"
+	Next = "D1END"
+}
+
+Map D1END Lookup "HUSTR_31"
+{
+	Music = "$DEND_1"
+	NoIntermission
+	NoAutoSaveHint
+	Next = "MAP31"
+}
+
+AddDefaultMap
+{
+	Cluster = 2
+	Sky1 = "SKY04"
+}
+
+Map MAP31 Lookup "HUSTR_31"
+{
+	Music = "$MAPMUS_31"
+	Next = "MAP32"
+}
+
+Map MAP32 Lookup "HUSTR_32"
+{
+	Music = "$MAPMUS_32"
+	Next = "MAP33"
+}
+
+Map MAP33 Lookup "HUSTR_33"
+{
+	Music = "$MAPMUS_33"
+	Next = "MAP34"
+}
+
+Map MAP34 Lookup "HUSTR_34"
+{
+	Music = "$MAPMUS_34"
+	Sky1 = "SKY01"
+	Next = "MAP35"
+}
+
+Map MAP35 Lookup "HUSTR_35"
+{
+	Music = "$MAPMUS_35"
+	Next = "MAP36"
+}
+
+Map MAP36 Lookup "HUSTR_36"
+{
+	Music = "$MAPMUS_36"
+	Next = "MAP37"
+}
+
+Map MAP37 Lookup "HUSTR_37"
+{
+	Music = "$MAPMUS_37"
+	Next = "MAP38"
+}
+
+Map MAP38 Lookup "HUSTR_38"
+{
+	Music = "$MAPMUS_38"
+	Sky1 = "SKY01"
+	Next = "MAP39"
+}
+
+Map MAP39 Lookup "HUSTR_39"
+{
+	Music = "$MAPMUS_39"
+	Next = "MAP40"
+}
+
+Map MAP40 Lookup "HUSTR_40"
+{
+	Music = "$MAPMUS_40"
+	Next = "MAP41"
+}
+
+Map MAP41 Lookup "HUSTR_41"
+{
+	Music = "$MAPMUS_41"
+	Next = "MAP42"
+}
+
+AddDefaultMap
+{
+	Sky1 = "SKY05"
+}
+
+Map MAP42 Lookup "HUSTR_42"
+{
+	Music = "$MAPMUS_42"
+	Next = "LOST07"
+}
+
+Map LOST07 lookup "LHUSTR_7"
+{ 
+	Music = "$LMAPMUS_7" 
+	Sky1  = "SKY05" 
+	Next  = "MAP43" 
+	SecretNext = "LOST65"
+}
+		Map LOST65 lookup "LHUSTR_65"
+		{
+			Music = "$LMAPMUS_65" 
+			Sky1  = "SKY03" 
+			Next  = "MAP43" 
+		}
+	
+
+Map MAP43 Lookup "HUSTR_43"
+{
+	Music = "$MAPMUS_43"
+	Next = "LOST08"
+}
+
+Map LOST08 lookup "LHUSTR_8"
+{ 
+	Music      = "$LMAPMUS_8" 
+	Sky1       = "SKY05" 
+	Next       = "MAP44"
+	SecretNext = "LOST66"
+}
+
+		Map LOST66 lookup "LHUSTR_66"
+		{
+			Music      = "$LMAPMUS_66" 
+			Sky1       = "SKY07" 
+			Next       = "MAP44"
+			SecretNext = "LOST67"
+		}
+				Map LOST67 lookup "LHUSTR_67"
+				{
+					Music = "$LMAPMUS_67" 
+					Sky1  = "SKY07" 
+					Next  = "MAP44" 
+				}
+
+Map MAP44 Lookup "HUSTR_44"
+{
+	Music = "$MAPMUS_44"
+	Next = "MAP45"
+	SecretNext = "MAP58"
+}
+
+		Map MAP58 Lookup "HUSTR_58"
+		{
+			Music = "$MAPMUS_58"
+			Sky1 = "SKY04"
+			Next = "MAP45"
+			SecretNext = "MAP59"
+		}
+	
+				Map MAP59 Lookup "HUSTR_59"
+				{
+					Music = "$MAPMUS_59"
+					Sky1 = "SKY01"
+					Next = "MAP45"
+				}
+
+Map MAP45 Lookup "HUSTR_45"
+{
+	Music = "$MAPMUS_45"
+	Next = "MAP46"
+}
+
+Map MAP46 Lookup "HUSTR_46"
+{
+	Music = "$MAPMUS_46"
+	Next = "MAP47"
+}
+
+Map MAP47 Lookup "HUSTR_47"
+{
+	Music = "$MAPMUS_47"
+	Next = "LOST09"
+}
+
+Map LOST09 lookup "LHUSTR_9"
+{ 
+	Music = "$LMAPMUS_9" 
+	Sky1  = "FIRESK00" 
+	Next  = "MAP48" 
+}
+
+AddDefaultMap
+{
+	Sky1 = "SKY06"
+}
+
+Map MAP48 Lookup "HUSTR_48"
+{
+	Music = "$MAPMUS_48"
+	Next = "MAP49"
+}
+
+Map MAP49 Lookup "HUSTR_49"
+{
+	Music = "$MAPMUS_49"
+	Next = "MAP50"
+}
+
+Map MAP50 Lookup "HUSTR_50"
+{
+	Music = "$MAPMUS_50"
+	Next = "LOST10"
+}
+
+Map LOST10 lookup "LHUSTR_10"
+{ 
+	Music = "$LMAPMUS_10" 
+	Sky1  = "SKY06" 
+	Next  = "MAP51" 
+}
+
+Map MAP51 Lookup "HUSTR_51"
+{
+	Music = "$MAPMUS_51"
+	Next = "MAP52"
+}
+
+Map MAP52 Lookup "HUSTR_52"
+{
+	Music = "$MAPMUS_52"
+	Next = "MAP53"
+}
+
+Map MAP53 Lookup "HUSTR_53"
+{
+	Music = "$MAPMUS_53"
+	Next = "LOST11"
+}
+
+Map LOST11 lookup "LHUSTR_11"
+{ 
+	Music = "$LMAPMUS_11" 
+	Sky1  = "SKY06" 
+	Next  = "LOST12" 
+}
+
+Map LOST12 lookup "LHUSTR_12"
+{ 
+	Music = "$LMAPMUS_12" 
+	Sky1  = "SKY06" 
+	Next  = "MAP54" 
+}
+
+Map MAP54 Lookup "HUSTR_54"
+{
+	Music = "$MAPMUS_54"
+	Sky1 = "SKY07"
+	Next = "LOST61C"
+}
+
+Map LOST61C lookup "LHUSTR_61C"
+{
+	Music = "$LMAPMUS_61C" 
+	Sky1  = "FIRESK00" 
+	Next  = "D2END" 
+}
+
+Map D2END Lookup "FHUSTR_1"
+{
+	Music = "$DEND_2"
+	NoIntermission
+	NoAutoSaveHint
+	Next = "MAP61"
+}
+
+AddDefaultMap
+{
+	Cluster = 3
+}
+
+Map MAP61 Lookup "FHUSTR_1"
+{
+	Music = "$FMAPMUS_1"
+	Sky1 = "SKY04"
+	Next = "MAP62"
+}
+
+Map MAP62 Lookup "FHUSTR_2"
+{
+	Music = "$FMAPMUS_2"
+	Sky1 = "SKY08"
+	Next = "MAP63"
+}
+
+Map MAP63 Lookup "FHUSTR_3"
+{
+	Music = "$FMAPMUS_3"
+	Sky1 = "SKY04"
+	Next = "MAP64"
+}
+
+Map MAP64 Lookup "FHUSTR_4"
+{
+	Music = "$FMAPMUS_4"
+	Sky1 = "SKY08"
+	Next = "MAP65"
+}
+
+Map MAP65 Lookup "FHUSTR_5"
+{
+	Music = "$FMAPMUS_5"
+	Sky1 = "SKY04"
+	Next = "MAP66"
+}
+
+Map MAP66 Lookup "FHUSTR_6"
+{
+	Music = "$FMAPMUS_6"
+	Sky1 = "SKY04"
+	Next = "LOST13"
+}
+
+Map LOST13 lookup "LHUSTR_13"
+{ 
+	Music = "$LMAPMUS_13" 
+	Sky1  = "SKY04" 
+	Next  = "LOST14" 
+}
+
+Map LOST14 lookup "LHUSTR_14"
+{ 
+	Music = "$LMAPMUS_14" 
+	Sky1  = "SKY08" 
+	Next  = "MAP67" 
+}
+
+Map MAP67 Lookup "FHUSTR_7"
+{
+	Music = "$FMAPMUS_7"
+	Sky1 = "SKY08"
+	Next = "MAP68"
+}
+
+Map MAP68 Lookup "FHUSTR_8"
+{
+	Music = "$FMAPMUS_8"
+	Sky1 = "SKY08"
+	Next = "LOST15"
+}
+
+Map LOST15 lookup "LHUSTR_15"
+{ 
+	Music = "$LMAPMUS_15" 
+	Sky1  = "SKY04" 
+	Next  = "LOST16" 
+}
+
+Map LOST16 lookup "LHUSTR_16"
+{ 
+	Music = "$LMAPMUS_16" 
+	Sky1  = "SKY06" 
+	Next  = "LOST17" 
+}
+
+Map LOST17 lookup "LHUSTR_17"
+{ 
+	Music = "$LMAPMUS_17" 
+	Sky1  = "SKY06" 
+	Next  = "MAP69" 
+	MAP07Special
+}
+
+Map MAP69 Lookup "FHUSTR_9"
+{
+	Music = "$FMAPMUS_9"
+	Sky1 = "SKY08"
+	Next = "MAP70"
+}
+
+Map MAP70 Lookup "FHUSTR_10"
+{
+	Music = "$FMAPMUS_10"
+	Sky1 = "SKY04"
+	Next = "MAP71"
+}
+
+Map MAP71 Lookup "FHUSTR_11"
+{
+	Music = "$FMAPMUS_11"
+	Sky1 = "SKY08"
+	Next = "MAP72"
+}
+
+Map MAP72 Lookup "FHUSTR_12"
+{
+	Music = "$FMAPMUS_12"
+	Sky1 = "SKY04"
+	Next = "MAP73"
+}
+
+Map MAP73 Lookup "FHUSTR_13"
+{
+	Music = "$FMAPMUS_13"
+	Sky1 = "SKY08"
+	Next = "LOST18"
+}
+
+Map LOST18 lookup "LHUSTR_18"
+{ 
+	Music = "$LMAPMUS_18" 
+	Sky1  = "FireSK00" 
+	Next  = "LOST19" 
+}
+
+Map LOST19 lookup "LHUSTR_19"
+{ 
+	Music      = "$LMAPMUS_19" 
+	Sky1       = "SKY08" 
+	Next       = "D3END" 
+	SecretNext = "LOST68"
+}
+
+		Map LOST68 lookup "LHUSTR_68"
+		{
+			Music = "$LMAPMUS_68" 
+			Sky1  = "FIRESK00" 
+			Next  = "D3END" 
+		}
+
+Map D3END Lookup "FHUSTR_14"
+{
+	Music = "$DEND_3"
+	NoIntermission
+	NoAutoSaveHint
+	Next = "MAP74"
+}
+
+Map MAP74 Lookup "FHUSTR_14"
+{
+	Music = "$FMAPMUS_14"
+	Sky1 = "SKY04"
+	Next = "MAP75"
+}
+
+Map MAP75 Lookup "FHUSTR_15"
+{
+	Music = "$FMAPMUS_15"
+	Sky1 = "SKY04"
+	Next = "LOST20"
+}
+
+Map LOST20 lookup "LHUSTR_20"
+{ 
+	Music = "$LMAPMUS_20" 
+	Sky1  = "SKY04" 
+	Next  = "MAP76" 
+}
+
+Map MAP76 Lookup "FHUSTR_16"
+{
+	Music = "$FMAPMUS_16"
+	Sky1 = "SKY04"
+	Next = "LOST21"
+}
+
+Map LOST21 lookup "LHUSTR_21"
+{ 
+	Music = "$LMAPMUS_21" 
+	Sky1  = "SKY08" 
+	Next  = "LOST22" 
+}
+
+Map LOST22 lookup "LHUSTR_22"
+{ 
+	Music = "$LMAPMUS_22" 
+	Sky1  = "SKY04" 
+	Next  = "LOST23" 
+}
+
+Map LOST23 lookup "LHUSTR_23"
+{ 
+	Music = "$LMAPMUS_23" 
+	Sky1  = "SKY04" 
+	Next  = "LOST24" 
+}
+
+Map LOST24 lookup "LHUSTR_24"
+{ 
+	Music = "$LMAPMUS_24" 
+	Sky1  = "SKY04" 
+	Next  = "LOST25" 
+}
+
+Map LOST25 lookup "LHUSTR_25"
+{ 
+	Music = "$LMAPMUS_25" 
+	Sky1  = "SKY04" 
+	Next  = "LOST26" 
+}
+
+Map LOST26 lookup "LHUSTR_26"
+{
+    	Music = "$LMAPMUS_26"
+	Sky1  = "SKY08" 
+	Next  = "LOST27" 
+	SecretNext = "LOST73"
+}
+
+		Map LOST73 lookup "LHUSTR_73"
+		{
+    			Music = "$LMAPMUS_73"
+			Sky1  = "FIRESK00" 
+			Next  = "LOST17D" 
+		}
+
+		Map LOST17D lookup "LHUSTR_17D"
+		{ 
+			Music = "$LMAPMUS_17D" 
+			Sky1  = "FIRESK00" 
+			Next  = "LOST27" 
+		}
+
+Map LOST27 lookup "LHUSTR_27"
+{
+	Music = "$LMAPMUS_27" 
+	Sky1  = "SKY04" 
+	Next  = "MAP77" 
+}
+
+Map MAP77 Lookup "FHUSTR_17"
+{
+	Music = "$FMAPMUS_17"
+	Sky1 = "SKY08"
+	Next = "MAP78"
+}
+
+Map MAP78 Lookup "FHUSTR_18"
+{
+	Music = "$FMAPMUS_18"
+	Sky1 = "SKY06"
+	Next = "LOST28"
+}
+
+Map LOST28 lookup "LHUSTR_28"
+{
+    	Music = "$LMAPMUS_28"
+	Sky1  = "SKY08" 
+	Next  = "LOST29" 
+}
+
+Map LOST29 lookup "LHUSTR_29"
+{
+	Music      = "$LMAPMUS_29" 
+	Sky1       = "SKY08" 
+	Next       = "MAP79" 
+	SecretNext = "LOST69"
+}
+
+		Map LOST69 lookup "LHUSTR_69"
+		{
+			Music      = "$LMAPMUS_69" 
+			Sky1       = "SKY08" 
+			Next       = "MAP79" 
+			SecretNext = "LOST70"
+		}
+
+				Map LOST70 lookup "LHUSTR_70"
+				{
+					Music = "$LMAPMUS_70" 
+					Sky1  = "SKY08" 
+					Next  = "MAP79" 
+				}
+
+Map MAP79 Lookup "FHUSTR_19"
+{
+	Music = "$FMAPMUS_19"
+	Sky1 = "SKY08"
+	Next = "MAP80"
+}
+
+Map MAP80 Lookup "FHUSTR_20"
+{
+	Music = "$FMAPMUS_20"
+	Sky1 = "SKY08"
+	Next = "LOST30"
+}
+
+Map LOST30 lookup "LHUSTR_30"
+{
+	Music = "$LMAPMUS_30" 
+	Sky1  = "SKY08" 
+	Next  = "LOST31" 
+}
+
+Map LOST31 lookup "LHUSTR_31"
+{
+	Music = "$LMAPMUS_31" 
+	Sky1  = "SKY08" 
+	Next  = "LOST32" 
+}
+
+Map LOST32 lookup "LHUSTR_32"
+{
+	Music = "$LMAPMUS_32" 
+	Sky1  = "SKY08" 
+	Next  = "LOST33" 
+}
+
+Map LOST33 lookup "LHUSTR_33"
+{
+	Music = "$LMAPMUS_33" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST34" 
+}
+
+Map LOST34 lookup "LHUSTR_34"
+{
+	Music = "$LMAPMUS_34" 
+	Sky1  = "SKY03" 
+	Next  = "MAP81" 
+}
+
+Map MAP81 Lookup "FHUSTR_21"
+{
+	Music = "$FMAPMUS_21"
+	Sky1 = "SKY03"
+	Next = "MAP82"
+}
+
+Map MAP82 Lookup "FHUSTR_22"
+{
+	Music = "$FMAPMUS_22"
+	Sky1 = "SKY03"
+	Next = "LOST35"
+}
+
+Map LOST35 lookup "LHUSTR_35"
+{
+	Music = "$LMAPMUS_35" 
+	Sky1  = "SKY03" 
+	Next  = "MAP83" 
+}
+
+Map MAP83 Lookup "FHUSTR_23"
+{
+	Music = "$FMAPMUS_23"
+	Sky1 = "FIRESK00"
+	Next = "LOST36"
+}
+
+Map LOST36 lookup "LHUSTR_36"
+{
+	Music = "$LMAPMUS_36" 
+	Sky1  = "FIRESK00" 
+	Next  = "MAP84" 
+}
+
+Map MAP84 Lookup "FHUSTR_24"
+{
+	Music = "$FMAPMUS_24"
+	Sky1 = "FIRESK00"
+	Next = "LOST37"
+}
+
+Map LOST37 lookup "LHUSTR_37"
+{
+	Music = "$LMAPMUS_37" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST61A" 
+}
+
+Map LOST61A lookup "LHUSTR_61A"
+{
+	Music = "$LMAPMUS_61A" 
+	Sky1  = "FIRESK00" 
+	Next  = "D4END" 
+}
+
+Map D4END Lookup "FHUSTR_25"
+{
+	Music = "$DEND_4"
+	NoIntermission
+	NoAutoSaveHint
+	Next = "MAP85"
+}
+
+Map MAP85 Lookup "FHUSTR_25"
+{
+	Music = "$FMAPMUS_25"
+	Sky1 = "SKY04"
+	Next = "LOST38"
+}
+
+Map LOST38 lookup "LHUSTR_38"
+{ 
+	Music = "$LMAPMUS_38" 
+	Sky1  = "SKY04" 
+	Next  = "MAP86" 
+}
+
+Map MAP86 Lookup "FHUSTR_26"
+{
+	Music = "$FMAPMUS_26"
+	Sky1 = "SKY04"
+	Next = "LOST39"
+}
+
+Map LOST39 lookup "LHUSTR_39"
+{ 
+	Music = "$LMAPMUS_39" 
+	Sky1  = "SKY04" 
+	Next  = "MAP87" 
+}
+
+Map MAP87 Lookup "FHUSTR_27"
+{
+	Music = "$FMAPMUS_27"
+	Sky1 = "SKY04"
+	Next = "MAP88"
+}
+
+Map MAP88 Lookup "FHUSTR_28"
+{
+	Music = "$FMAPMUS_28"
+	Sky1 = "SKY04"
+	Next = "LOST40"
+}
+
+Map LOST40 lookup "LHUSTR_40"
+{
+	Music = "$LMAPMUS_40" 
+	Sky1  = "SKY01" 
+	Next  = "LOST41" 
+	MAP07Special
+}
+
+Map LOST41 lookup "LHUSTR_41"
+{
+	Music = "$LMAPMUS_41" 
+	Sky1  = "SKY01" 
+	Next  = "LOST42" 
+}
+
+Map LOST42 lookup "LHUSTR_42"
+{
+	Music = "$LMAPMUS_42" 
+	Sky1  = "SKY07" 
+	Next  = "MAP90" 
+}
+
+Map MAP90 Lookup "FHUSTR_30"
+{
+	Music = "$FMAPMUS_30"
+	Sky1 = "SKY01"
+	Next = "LOST43"
+}
+
+Map LOST43 lookup "LHUSTR_43"
+{
+	Music = "$LMAPMUS_43" 
+	Sky1  = "SKY04" 
+	Next  = "LOST44" 
+}
+
+Map LOST44 lookup "LHUSTR_44"
+{
+	Music = "$LMAPMUS_44" 
+	Sky1  = "SKY07" 
+	Next  = "LOST45" 
+}
+
+Map LOST45 lookup "LHUSTR_45"
+{
+	Music = "$LMAPMUS_45" 
+	Sky1  = "SKY07" 
+	Next  = "LOST46" 
+}
+
+Map LOST46 lookup "LHUSTR_46"
+{
+	Music = "$LMAPMUS_46" 
+	Sky1  = "SKY07" 
+	Next  = "LOST47" 
+}
+
+Map LOST47 lookup "LHUSTR_47"
+{
+	Music = "$LMAPMUS_47" 
+	Sky1  = "SKY07" 
+	Next  = "LOST48" 
+	SecretNext = "LOST71"
+}
+
+		Map LOST71 lookup "LHUSTR_71"
+		{
+			Music      = "$LMAPMUS_71" 
+			Sky1       = "SKY03" 
+			Next       = "LOST48"
+			SecretNext = "LOST72"
+		}
+
+				Map LOST72 lookup "LHUSTR_72"
+				{
+					Music = "$LMAPMUS_72" 
+					Sky1  = "FIRESK00" 
+					Next  = "LOST61" 
+				}
+
+				Map LOST61 lookup "LHUSTR_61"
+				{
+					Music = "$LMAPMUS_61" 
+					Sky1  = "FIRESK00" 
+					Next  = "LOST48" 
+				}
+
+Map LOST48 lookup "LHUSTR_48"
+{
+	Music = "$LMAPMUS_48" 
+	Sky1  = "SKY07" 
+	Next  = "LOST49" 
+}
+
+Map LOST49 lookup "LHUSTR_49"
+{
+	Music = "$LMAPMUS_49" 
+	Sky1  = "SKY07" 
+	Next  = "LOST50" 
+}
+
+Map LOST50 lookup "LHUSTR_50"
+{
+	Music = "$LMAPMUS_50" 
+	Sky1  = "SKY07" 
+	Next  = "LOST51" 
+}
+
+Map LOST51 lookup "LHUSTR_51"
+{
+	Music = "$LMAPMUS_51" 
+	Sky1  = "SKY07" 
+	Next  = "MAP89" 
+}
+
+Map MAP89 Lookup "FHUSTR_29"
+{
+	Music = "$FMAPMUS_29"
+	Sky1 = "SKY04"
+	Next = "LOST52"
+}
+
+Map LOST52 lookup "LHUSTR_52"
+{
+	Music = "$LMAPMUS_52" 
+	Sky1  = "SKY03" 
+	Next  = "LOST53" 
+}
+
+Map LOST53 lookup "LHUSTR_53"
+{
+	Music = "$LMAPMUS_53" 
+	Sky1  = "SKY03" 
+	Next  = "LOST54" 
+}
+
+Map LOST54 lookup "LHUSTR_54"
+{
+	Music = "$LMAPMUS_54" 
+	Sky1  = "SKY03" 
+	Next  = "LOST55" 
+}
+
+Map LOST55 lookup "LHUSTR_55"
+{
+	Music = "$LMAPMUS_55" 
+	Sky1  = "SKY03" 
+	Next  = "LOST56" 
+}
+
+Map LOST56 lookup "LHUSTR_56"
+{
+	Music = "$LMAPMUS_56" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST57" 
+}
+
+Map LOST57 lookup "LHUSTR_57"
+{
+	Music = "$LMAPMUS_57" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST58" 
+}
+
+Map LOST58 lookup "LHUSTR_58"
+{
+	Music = "$LMAPMUS_58" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST59" 
+}
+
+Map LOST59 lookup "LHUSTR_59"
+{
+	Music = "$LMAPMUS_59" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST60" 
+}
+
+Map LOST60 lookup "LHUSTR_60"
+{
+	Music = "$LMAPMUS_60" 
+	Sky1  = "FIRESK00" 
+	Next  = "LOST61B" 
+}
+
+Map LOST61B lookup "LHUSTR_61B"
+{
+	Music = "$LMAPMUS_61B" 
+	Sky1  = "FIRESK00" 
+	Next  = "D5END" 
+}
+
+
+Include "PSXCAST.TXT"
+Map D5END ""
+{
+	Music = "$DEND_5"
+	NoIntermission
+	NoAutoSaveHint
+	Next = "EndGameC"
+}

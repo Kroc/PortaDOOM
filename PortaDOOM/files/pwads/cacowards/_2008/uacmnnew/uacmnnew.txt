@@ -1,0 +1,78 @@
+===========================================================================
+Archive Maintainer      : Updated to comply with the new rules
+Update to               : N/A
+Advanced engine needed  : Skulltag or Zandronum
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : UAC Military Nightmare (updated version)
+Filename                : UACMNNEW.ZIP
+Author                  : Terry (Re-uploaded by the Neo-HC clan)
+Email Address           : neohcreups@aol.com
+
+Description             : The UAC is once again, concocting more
+                          groundbreaking experiments on teleportation. They
+                          thought they were ready to handle everything that
+                          came their way. While traveling between dimensions, 
+                          something unexpected happened. 
+                          An unknown enemy force appeared out of nowhere. 
+                          An evil, much more sinister than
+                          the last, single-handedly wiped out the first UAC
+                          Marine squadron, and is gradually killing off the
+                          remaining Marines. Everyone who has seen this
+                          evil, has been annihilated. Except, for one. You.
+                          You must take on this evil all alone. As you
+                          watch the rest of you're comrades get
+                          slaughtered by this unworldly evil, you must make
+                          your way to the sinister mastermind behind all of
+                          this destruction. Can you repel the evil before
+                          you? Load up you're weapons.
+
+Additional Credits to   : ID Software, coders of Skulltag and ZDoom, Terry
+===========================================================================
+* What is included *
+
+New levels              : 18
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : skulltag data if you're playing on Zandronum
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : UAC01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : Survival Coop(Recommended)
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Not sure, actually. But quite a while!
+Editor(s) used          : Doombuilder, XWE
+Known Bugs              : None that I know of.
+May Not Run With...     : Any port other than Skulltag or Zandronum.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

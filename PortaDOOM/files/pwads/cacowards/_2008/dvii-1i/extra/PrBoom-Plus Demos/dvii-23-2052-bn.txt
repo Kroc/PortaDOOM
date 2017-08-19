@@ -1,0 +1,37 @@
+Game: Doom 2
+Pwad: Deus Vult II
+Filename: dvii-23-2052-bn.lmp
+Skill and Style: 4 (UV-Max)
+Map Level: 23 (Hell's Vendetta)
+Exe/Port used: GLBoom 2.4.8.1 (PRBoom Plus) -complevel 9
+
+Totals:
+Kills       107%
+Items        73%
+Secrets    100% and (Time- 20:52)
+
+Comments: 
+I always have a soft spot for pure slaughterhouse maps like this one.
+
+There are a few ways to go about handling the initial wave of enemies.  The way I do it is risky, but can stir up a ton of infighting and wake up everything to maxmize the carnage.
+
+Once the fighting dies down, you'll need to visit the three wings on the western, eastern, and northern parts of the map.  Each one has a Skull Key in it as well as a trap to contend with.
+
+Western Wing= A tricky one because you get assaulted by several cybies as you approach the YSK.  BFG is the only way to go here to quickly kill them off.
+
+Northern Wing= A very close resemblance to the trap from map 1 of the original Deus Vult.  There are two invuls on top of the towers which you can utilize as you take care of various baddies...including those very deadly Flying Barons (Don't stand right in front of one unless you like to see 200 health and armor go poof in a second).  The BSK is the reward here.
+
+Eastern Wing= The Hell Cleric Wing for good reason...a massive horde of Hell Clerics teleport in as you try to approach the RSK.  Rockets aplenty here for you to use.
+
+Once the three Skull Keys are collected, you can activate the switch in the Southern Wing to open up the central part of the map.
+
+After dealing with the enemies there, hitting the four switches on the central platform causes the exit to start lowering...but also has the final wave of baddies coming in.  Holding out until 4 corners of the map lower to reveal more enemies will result in cell packs, Megaspheres, and an invul. sphere in each corner.
+
+I like to use 2 Invuls to start in order to clean out as many enemies as possible, then load up on some ammo and hit the Eastern Wing.  Reason is because archies appear in each wing with the intent of reviving tons of enemies.  Kill them off and utilize the remaining invuls to waste everything that still lives, then exit.
+
+Had a couple close calls.  One at the Cyberdemon Wing (Just watch me sit there and take a rocket like a man :D!) and the other at the final battles.  Thought I was going to die there.
+
+Optimal time is far lower than this.  15 minutes is not out of the question here.
+
+Brian "Anima Zero" Nesser
+Bri8527@comcast.net

@@ -1,0 +1,80 @@
+===============================================================================
+.::Legacy Of Suffering by Logan MTM::.
+===============================================================================
+
+Advanced engine needed  : GZDoom r(635) and SkullTag 0.98
+Primary purpose         : Single play (Coop and DM Optionally)
+
+===============================================================================
+
+Title                   : Legacy Of Suffering - v1.01
+Filename                : LOS.pk3
+Release date            : 12-01-2009
+Author                  : Logan MTM
+Email Address           : loganmtm@gmail.com
+Other Files By Author   : 101.wad, 102.wad and NDCP2 (4 Maps)
+
+Description             : Classic Doom with a Doom 3 touch!
+                          This Update includes some ZDoom members requests as
+                          Skippable Intro and biggest cutscene. 
+
+Additional Credits to   : Daniel, Jive and Osiris Legacy!
+
+                          Licínio - Art and design ( liciniosouz@gmail.com )
+
+                          Marc A Pullen - Sound Tracks. 
+                            
+                          Paul - Art and design.  
+
+===============================================================================
+
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : Several other things!
+Other files required    : ST-Patch.pk3 to run it with SkullTag.
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : LOSMAP01 - LOSMAP09 and LOSINV01
+Single Player           : Yes
+Cooperative             : Yes (8 Players)
+Deathmatch              : Yes (8 Players) - GZDoom only!
+Other game styles       : SkullTag Invasion (8 Players)
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch!
+Build Time              : +3 years!
+Editor(s) used          : Doom Builder, Slade, SLumpEd and XWE.
+Known Bugs              : Please, let me know if you find out anything.
+May Not Run With...     : ZDoom, Legacy, and stuff.
+
+
+Web site:   www.brdoom.com/mtm/los
+
+===============================================================================
+
+Como jogar: www.brdoom.com/_forum/viewtopic.php?f=38&t=3685
+
+
+
+* Copyright / Permissions *
+
+Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+
+* Where to get the file that this text file describes *
+
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

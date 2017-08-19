@@ -1,0 +1,66 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : 
+Advanced engine needed  : Limit Removing
+Primary purpose         : Single Player
+===========================================================================
+Title                   : INFINITY PLUS
+Filename                : ph_v5mal.wad
+Release date            : 
+Author                  : Malinku and James "Phobus" Cresswell
+Email Address           : james@mpcressy.com (Phobus)
+
+Description             : My reworking of Malinku's reworking of the original Vampire 5, for the 1994 Tune Up Challenge project on Doomworld. I stepped in last minute to finish this map, as it was reaching release time and this had been left undone. Intended for the MAP11 slot, as suggested. The name is based on the previous text files description, whilst the music is a homage to the original title and intentions of the original author, Darrel Bircsak, as from what I gather, Castlevania Dracula X is the 5th castlevania (vampire hunter) game. Bloody Tears being stage 3 was kind of cute too, as this is the third "stage" of this maps "evolution".
+
+Additional Credits to   : id Software (Doom); CodeImp (DB); Darrel Bircsak (VAMPIR51.WAD); Snarboo (project lead); Jorge D. Fuentes [vgmusic.com] (Castlevania Dracula X - Bloody Tears MIDI)
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : FDgfxD2_Final.wad
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player	: Tested, works well
+Deathmatch 2-4 Player   : Tested, works alright
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Vampir5mal.wad (Malinku's unfinished version)
+Build Time              : 30 hours
+Editor(s) used          : DoomBuilder 1.67 and DB 2
+Known Bugs              : None
+May Not Run With...     : N/A
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+Web sites: http://wwww.phobus.servegame.com/doom/
+FTP sites:
+

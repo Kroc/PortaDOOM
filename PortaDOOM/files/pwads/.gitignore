@@ -1,0 +1,5 @@
+# DO NOT INCLUDE WADs, it would balloon the repository to many gigs
+# Download a PortaDOOM release and unzip it into your repository to get the WADs
+**.wad
+**.pk3
+**.pk7

@@ -1,0 +1,89 @@
+-------------------------------
+Changelog for Community Chest 4
+Second Release +
+-------------------------------
+
+(Changes from the original Second Release are marked with a +.)
+
+MAP05: Installation Decrepit -
+* Fixed a nodebuilding error in a secret room.
+* The exit is now more clearly marked.
+
+MAP07: Hoedown -
+* Added some more ammo early in the level due to player complaints.
+* Added a new secret area which allows the chaingunners northeast of the nukage
+  river to be quickly dispatched without the use of free look.
+* Fixed an error with a sector next to the secret elevator erroneously being
+  given the same tag.
+
+MAP11: The Grotto -
+* You can no longer block progress by outrunning the lowering floor in the
+  yellow skull section.
+* Fixed the teleporter in the yellow keycard section, whose southern side was
+  facing the wrong direction.
+
+MAP13: Viral Implant -
+* Corrected the name entry in ZMAPINFO; it should now have the correct title in
+  recent versions of ZDoom.
+* The secret crushers no longer have stopping triggers. This is because the
+  door-opening mechanism that was implemented in case the crushers were stopped
+  low to the floor worked completely differently in different source ports, and
+  no other linedef action in existence works on a crusher sector even when it's
+  stopped.  Time your jump well or you will be crushed.
+
+MAP17: Metastasize -
++ Previously, one monster was trapped outside the level because his teleporter
+  line had the wrong tag assigned. This has been fixed, so 100% Kills is now
+  possible.
+
+MAP18: Suburbia -
+* The spider mastermind was immobilized, unable to attack, because for whatever
+  reason, Jimmy flagged the white road marks as Block Monster when he put them
+  underneath it. This flag has been removed from every road mark in the level.
+* Fixed an incorrect floor texture in the room with the jeep.
++ You can no longer jump out of the windows near the berserk pack pedestal and
+  trap yourself.
+
+MAP20: Interstellar Sickness -
+* Removed black sections of the sky, which were visible only if you looked
+  straight up in a source port with a hardware renderer.
+* Fixed blatant unknown textures that occurred in PrBoom+ and the Eternity
+  Engine, but not in ZDoom-based source ports, which would explain why
+  absolutely nobody reported them when the WAD was originally released.
+
+MAP21: Shaman's Device -
+* Fixed an alignment error with the bars alongside the first crusher hallway.
+* The textures on the barriers for the top-secret medikits now move when the
+  barriers do, and the armor bonuses no longer teleport on top of them when
+  they're activated.
+
+MAP23: Melting Universe II -
+* Fixed a flat bleeding outside its sector, a wall texture bleeding into the
+  floor, and a horribly misaligned texture, all of which were errors made by the
+  nodebuilder previously used. (Don't you just hate it when that happens?)
+* Fixed a missing texture and an incorrect one among the grid of lights in the
+  curving hallway.
+
+MAP24: Detachment -
+* Fixed a fence texture bleeding through the floor at the entrance into the
+  building.
+* Removed unnecessary sectors (i.e. zero-height sectors that can be removed
+  without affecting the level's appearance).
+
+MAP25: Nightmare Complex -
+* The final switch can now be activated more than once.  This is in case the
+  player is unlucky enough for the pillar-raising trigger to not go off before
+  they activate said switch.
+
+MAP29: Spiritual Holocaust -
+* You can now achieve 100% Items without the use of an exploit.
+* You can no longer block any monsters outside the level from teleporting in,
+  and prevent 100% Kills.
++ The above is now true for coop as well; two linedefs with erroneous types
+  assigned have been fixed, preventing the first teleporting monster from being
+  blocked in coop.
+
+Changes implemented by The Green Herring
+
+- September 9, 2012 (original) -
+- October 19, 2012 (+) -

@@ -1,0 +1,94 @@
+===========================================================================
+Advanced engine needed  : Zdoom compatible with 3D floors
+Primary purpose         : Single play
+===========================================================================
+Title                   : Doomed Space Wars
+Release date            : 1 September 2015
+Author                  : Paul Corfiatis
+Email Address           : pcorfiatis@hotmail.com
+			  pcorf@internode.on.net (secondary)
+Other Files By Author   : So many that I have lost count. Please go to my
+                          website to find out more.
+
+Description             : Doomed Space Wars is a Star Wars-inspired mapset
+                          but with mostly Doom enemies and weapons. There are
+                          9 levels divided into 3x 3 level mini episodes and
+                          3 secret levels. At the end of each 3 level mini
+                          episode there is a boss. Every map is huge and
+                          takes advantages of Zdoom's special features such
+                          as 3D floors and reverb. Also there are tons of
+                          secrets and a few top secret Easter eggs. The aim
+                          for the level design was realism and a dark
+                          atmosphere, with huge height variations and a semi
+                          linear overlapping progression. I focused hard on
+                          lighting and architecture to create a super
+                          realistic environment to go with challenging gameplay
+			  but there are no slaughtermaps, sorry guys. Also
+			  included are 10 exclusive Deathmatch levels.
+                          
+                          Also in addition are 9 new monsters thanks to
+                          Zdoom's DECORATE feature and also I cannot forget
+                          the totally original orchestral soundtrack composed
+                          by me with the songs in .mp3 format.
+
+Notes			: Please read the Space Wars Readme text file for more 
+			  info about Doomed Space Wars, etc.
+
+Additional Credits to   : id for Doom/Doom 2, Randy Heit for Zdoom, Codeimp
+                          for Doom Builder, LucasArts for the Dark Forces
+                          textures, and my wife for putting up with my
+                          creative ways, phew.
+			  
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes mostly from PSX Doom
+Music                   : Original Music in .MP3 format
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes built in
+Demos                   : No
+Other                   : No
+Other files required    : None (Just a copy of Doom 2, plus the latest Zdoom source port)
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-12 (Single player) 40-49 (Deathmatch)
+Single Player           : Designed for (MAP01-12), Player starts only (MAP40-49)
+Cooperative 2-8 Player  : Player starts only (MAP01-12, 40-49 x8)
+Deathmatch 2-8 Player   : Player starts only (MAP01-12), Designed for (MAP40-49)
+Other game styles       : None
+Difficulty Settings     : Yes indeed!
+
+
+* Construction *
+
+Base                    : New levels from scratch
+Build Time              : Bloody took forever (about 21 months)
+Editor(s) used          : Doom Builder, XWE, SLADE, Cakewalk Sonar (composing
+                          music), FL_Studio (composing and mixing music)
+Known Bugs              : Hopefully none.
+May Not Run With        : Non Zdoom compatible ports.
+Tested With             : Zdoom, Gzdoom
+
+
+* Copyright / Permissions *
+
+Authors may not use the levels of this file as a base for modification or
+reuse.  However you are welcome to use the graphics and resources to make your own
+Doomed Space Wars maps. Permissions have been obtained from original authors for 
+any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: www.paulcorfiatis.com
+FTP sites: idgames and mirrors

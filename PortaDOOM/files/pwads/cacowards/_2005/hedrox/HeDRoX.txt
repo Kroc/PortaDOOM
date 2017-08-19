@@ -1,0 +1,110 @@
+-*************************************************-
+Edicion especial: 5to Torneo de mapas de Cabro (ahora Kuso)
+-*************************************************-
+
+English:
+
+===========================================================================
+Archive Maintainer      : 
+Advanced engine needed  : ZDooM
+Primary purpose         : Single Player
+===========================================================================
+Title                   : HeDRoX
+Filename                : Hedrox.wad
+Release date            : 14/05/05
+Author                  : Rodrigo Acevedo
+Email Address           : ElRodo.Acevedo@gmail.com
+Other Files By Author   : Beta Station (find it at www.geocities.com/kusogueb(in spanish))
+			  Tanis Base (the old version of this map).
+			  Tanis Base 2k5.
+			  Some tutorials in the middle of nowhere.
+Misc. Author Info       : None.
+
+Description             : A really short but very intense single player map.
+
+Additional Credits to   : None.
+===========================================================================
+* What is included *
+
+New levels              : Yes (MAP01 of DoomII)
+Sounds                  : No
+Music                   : Yes (a midi from Duke Nukem 3d)
+Graphics                : Yes (sky texture)
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : ZDooM (doom2 doesn't support details so much.)
+
+
+* Play Information *
+
+Game                    : DooMII
+Map #                   : MAP01
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Yes
+Other game styles       : No
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch 
+Build Time              : 3 months 
+Editor(s) used          : Wadauthor, Doom builder.
+Known Bugs              : I don´t know of any, if you find one, mailme (see mail above)
+May Not Run With...     : Vanilla Doom2 (excesive detailing).
+
+
+* Copyright / Permissions *
+
+Do whatever yo want allways as you mailme for permission.  
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.doomzone.com
+
+Español:
+
+==============================================================================================================
+Titulo                  : HeDRoX: Doom 3060 Apocalipse
+Archivo	   		: hedrox.zip (hedrox.wad hedrox.txt)
+Autor                   : Rodrigo Acevedo (aka El_Rodo)
+Email 	                : ElRodo.Acevedo@gmail.com
+Creditos adicionales	: A nadie.
+==============================================================================================================
+
+* Información *
+
+Juego (Doom / Doom2)	: Doom2 (potencialmente uso de ZDoom)
+
+Episodio y nivel #      : Map01
+Un jugador              : Si
+Cooperativo 2-4         : No
+Deathmatch 2-4          : No
+Niveles de dificultad   : No
+Sonidos nuevos          : No
+Graficos nuevos         : Si (la textura de cielo.)
+Musica nueva            : Si (el midi del duke nukem3d.)
+Patche Dehacked		: No
+Demos nuevas            : No
+
+* Construcción *
+
+Base                    : Mapa desde 0.
+Editor utilizado        : 96% con wadauthor y un 4% con doombuilder.
+Tiempo de construcción  : casi 4 meses (con recesos).
+Bugs			: Algunos q no pude arreglar.
+
+Nota1: Que el mapa saliera corto fue por falta de tiempo (motivos aparte).
+
+Nota2: Si, hay bugs que no pude arreglar del mapa, si encuentran uno mas, traten de haceme saber por mail, gracias.
+* Copyright / Permissions *
+
+Y.... noc, ......... hace lo q quieras con este mapa pero avisame x mail.
+
+
+
+***********************************************************************
+(c) El_Rodo.

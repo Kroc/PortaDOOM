@@ -1,0 +1,101 @@
+===========================================================================
+Advanced engine needed  : Boom Compatible Ports
+Primary purpose         : Single Play
+===========================================================================
+Title                   : Retour en le Nefarious Chateau
+			  (sorry niggaz, i can't talk french)
+Filename                : nefcat_rmx.wad
+Release date            : fail
+Author                  : Walter "Daimon" Confalonieri
+Email Address           : daimon.italia983@gmail.com
+Other Files By Author   : A lot, some good, some bad
+			  
+
+Misc. Author Info       : I love spamming stupid videos on zdoom forums.
+			  I build doom maps just for fun...
+
+Description             : My own remake of Nefarious Chateau, a 1994 map
+			  by Denver J. Curtis, good detailing, 16000
+			  linedefs, fully works on prboom.
+
+			  EDIT: Fixed few bugs noticed from travers dunne,
+			  added few more details and improved a little the
+			  void/hell red skull key castle traps, enjoy!
+
+Story			: You was invinted at valley of the king for the
+			  reustaration of the well knowed "Nefarious Cha_
+			  teau", a place invaded by demons and ghosts 15
+			  years ago, and people still have memory of the
+			  horror. Strange, end of works happens in the
+			  same day of the first invasion... bad stuff.
+
+			  And, as usual, somenthing gone wrong.
+			  You just arrived at the castle and you heard
+			  about the king and queen death, other people
+			  become zombies or wicked demons, so the command
+			  control decide to clean the invasion one time
+			  at all from the source. Is time to figth again
+			  for the safety of the hummankind, so grab your
+			  guns and your red bull can, and GET READY TO 
+			  RUMBLE!
+
+Additional Credits to   : ID, for the fancy game!
+                          My family
+			  Denver J. Curtis for making original nefcat.wad
+			  Snarboo for the 1994 pimp project idea
+			  Iron Maiden (music)
+			  Raven Software for Hexen (mountain stuff)
+			  other people i forgot to mention
+			  
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from Scratch
+Build Time              : few months of spare work... and a pair of week
+			  for more detail and bugfixing...
+			  
+Editor(s) used          : Doombuilder, Doombuilder 2, MS Paint, XWE
+Known Bugs              : 
+May Not Run With...     : not boom-compatible ports
+Tested Whit		: prboom 2.2.0, risen3d, zdoom 2.3.1
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+NO modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

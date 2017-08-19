@@ -1,0 +1,82 @@
+===========================================================================
+Archive Maintainer      : upload to /Megawads
+Update to               : 
+Advanced engine needed  : Limit-Removing
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Unholy Realms
+Filename                : ur.wad
+Release date            : November 16, 2013
+Author                  : Brian Knox
+Email Address           : knox.brian.87@gmail.com
+Other Files By Author   : 4maps.wad, ih.wad, MAP03,
+			  MAP25 (w/ Captain Toenail) and MAP27 
+			  in PC_CP.wad, btsx.wad E3 Mapxx
+
+Misc. Author Info       : Makin' maps, makin' maps.
+
+Description             : 32 new limit-removing maps created by one author 
+			  (and 5 guest mappers). Gameplay-oriented.
+			  See urinfo.txt for more info.
+
+Additional Credits to   : The usual suspects: id software, creators of
+			  Doombuilder, source ports, SLADE, WhackEd,
+			  etc. 
+			  Adrain Hanekom, valkriforce, joshy
+			  skillsaw - maps
+			  PRIMEVAL - music
+			  Kyka, Esselfortium, dew, Joshy, dobugabumaru 
+			  Mechadon for SUPERB last-minute graphics
+			  See urinfo.txt and cc4.txt for complete credits.
+
+
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 3 1/2 years, on and off
+Editor(s) used          : Doombuilder, Slade
+Known Bugs              : Visual bugs with various sourceports
+                          Map27 has issues dude to nodebuiler
+May Not Run With        : Doom2.exe, Chocolate Doom, etc.
+Tested With             : PrBoom+  with -complevel 2, zDoom
+
+
+* Copyright / Permissions *
+
+Authors may not use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+

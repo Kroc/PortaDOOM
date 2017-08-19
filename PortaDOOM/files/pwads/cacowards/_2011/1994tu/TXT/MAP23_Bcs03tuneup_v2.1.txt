@@ -1,0 +1,8 @@
+This is for 1994 tune-up challenge project
+
+Author: Solarn
+Add. Author: Tatsuya "Tatsurd-cacocaco" Ito
+
+Last update: Jan - 13 - 2011
+
+Base  : L03.wad (http://www.doomworld.com/idgames/index.php?id=1633)

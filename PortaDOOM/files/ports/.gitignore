@@ -1,0 +1,38 @@
+# (don't include the developer release of gzdoom I keep, nothing requires it yet)
+gzdoom-dev/
+
+# exclude any screenshots
+**screenshot*
+
+# exclude any errant save files
+**.zds
+**.dsg
+
+# exclude Zandronum's skins folder
+**/skins/
+
+# exclude any possible DOOM64 ROMs/WADs
+**.N64
+**.V64
+**.Z64
+**/DOOM64.WAD
+# DOOM 64 Sound Font, as exported by wadgen.exe
+**/DOOMSND.SF2
+
+# exclude user configs
+**/default.cfg
+**/chocolate-*.cfg
+**/glboom-plus.cfg
+**/gzdoom-*.ini
+**/prboom-plus.cfg
+**/zdoom-*.ini
+**/zandronum-*.ini
+# (DOOM 64 EX)
+**/config.cfg
+**/launcher.cfg
+
+# other
+**/tranmap.dat
+**/stdout.txt
+**/stderr.txt
+**/CRASHLOG.TXT

@@ -1,0 +1,374 @@
+!WARNING! Thar be spoilers ahead!
+
+
+
+
+
+* FAQ-type thing *
+
+Yeah, some questions aren't in question form, but who cares?
+
+
+--Generic questions:
+
+Q: Help, my weapons won't fire!
+A: That's probably because you don't have any ammo in them currently.
+   You need to bind a key to reload, using the customize controls
+   menu. When you pick up a gun, it will not be loaded, so hit that
+   reload button ASAP!
+
+Q: This wad is too hard!
+A: In that case, I've succeeded. This wad is by no means a walk in
+   the park. If you find it too hard, even on "I'm too young to die",
+   then sorry. I mean, it doesn't touch wads such as Hell Revealed
+   and Alien Vendetta, but hey, the reload system makes things
+   quite a bit more challenging. :P
+
+Q: Why is there way too much ammo and not enough health?
+A: I like making my wads difficult due to lack of health, not lack
+   of ammo. Even at low health, a good enough player can still
+   survive just fine, but there are only a select few that can
+   still play good without ammo (and I don't belong to that
+   particular group). In some of the later maps in particular,
+   you'll find it nearly impossible to run out of ammo for a few
+   guns in particular. This is completely intentional, since on
+   those maps, you'll be fighting so many enemies that you'll be
+   thankful for the extra help!
+
+Q: The wad keeps crashing randomly with strange error logs!
+A: The problem is most likely your version of ZDoom. One of the
+   "unofficial" releases had a major error in the expression
+   evaluator or something, which caused completely random
+   crashes that seemed to happen on every wad. However, by the
+   time you read this text, the newest version fixes this problem,
+   so you shouldn't have to worry about random crashes. If you
+   are suffering from them, just upgrade to the newest Official
+   release (2.1.0 or later). That should fix the problem.
+
+Q: What's with this objective system I see mentioned?
+A: Ah, check your controls config window. As of version 2.5,
+   Zen features a full-fledged objectives display screen. Bind
+   a key to toggle the objectives (default is "F" if you don't
+   have anything already bound there). If you feel lost and don't
+   know what to do, give the objective screen a look-see. Maybe that
+   will help out a bit. :P
+
+
+
+--Map-specific questions:
+
+INTRO MAP:
+
+Q: Help, the text is too small to read!
+A: You need a resolution of 800x600 or higher. Any smaller, and it
+   tries to scale the text down, which never ends up looking good.
+
+Q: How do I advance to the next screen?
+A: Just the use button. Nothing special here. :P
+
+
+MAP01: LABORATORY
+
+Q: What do I do after hitting the switch past the elevator?
+A: A door has opened in the hallway next to the starting point. Just
+   hit the switch in there. :P
+
+Q: Okay, I've used the blue switch to raise the acid. Now what?
+A: That grate blocking the way is openable. After raising the acid
+   stuff, you can swing the grate open like a standard door.
+
+
+MAP02: URBAN DOOM
+
+Q: What's the purpose of re-activating the lift?
+A: Well, if you decide to jump down and get that shotgun, you can
+   get back up faster... that's about it. :P
+
+Q: What do I do after hitting the switch past the yellow door?
+A: A small door has opened outside, next to where the starting
+   point is. Just follow the sounds of the demons... :P
+
+Q: How do I get back up out the door after getting the Red Key?
+A: Look closely. You can jump up the ledge leading up to the door
+   you came in from. Just try it. :P
+
+Q: How do I get to the uber-secret exit?
+A: See the Map08 section below... it's not all that hard, really.
+
+
+MAP03: REFINERY
+
+Q: How do I get the big secret in this level?
+A: This one's kind of weird. After getting the red key and heading
+   through the teleporter, you might notice a switch on the wall
+   that wasn't there before. Press it and quickly look across the
+   computer consoles that block your path to the next room. A tiny
+   door has opened revealing another switch. Shoot it. This opens
+   a door in that room reveling a weapon and an Imp Warlord.
+
+   Now, this brings up the question of how to get back there. The
+   teleporter at the start that originally led to that part of
+   the map has been closed, so now what? Well, after you get the
+   yellow key and kill the boss, and BEFORE you open the yellow
+   door, go back to the room where you shot the switch from far
+   away. Now, the computer consoles have lowered, allowing you
+   to pass and collect the weapon: a Fusion Cannon. Don't be
+   squeamish on using up your ammo, because you'll lose all your
+   guns anyway upon entering the next level. :P
+
+
+MAP04: CITY OF DIS
+
+Q: Hey, where'd all my weapons go?
+A: Ever played Doom3? You lost all your weapons traveling through
+   the gateway to Hell. Don't worry, you'll get them back soon
+   enough. :P
+
+Q: What are these green "Plasmatic Fusion Cell" things lying around?
+A: These things are ammo for the Fusion Cannon, the most powerful
+   weapon (which you will first find in the next level, assuming you
+   didn't already find the Map03 secret. :P ). There are only 15
+   shots in the whole game (not counting Map03 and Map00), so make
+   them count! The locations of all 15 are listed below in the
+   weapons section.
+
+Q: How do I get the "Bloodsphere" mentioned at the beginning?
+A: For that, you need to find the secret level. See the Map00
+   section below for details how.
+
+
+MAP05: SHADOWRUN
+
+Q: How do I get the two Plasmatic Fusion Cells in the big dark room?
+A: There is a switch in on the side of one of the pillars in the
+   Yellow key room, which lets you access the area with the Cells.
+
+
+MAP06: THE MALEBOLGE
+
+Q: How do I reach the exit?
+A: Okay, this one's a bit tricky, so here's what you gotta do...
+   After pressing the switch behind the red door and fighting the
+   enemies, notice how there is a pathway leading to that teleporter
+   that was too high to reach. Enter the teleporter and run along
+   the red brick pathway. From here, jump down to the pit labeled
+   "Exit". That should do it. :P
+
+
+MAP07: DEATH SENTENCE
+
+Q: Why do I no longer have the Scorcher?
+A: Er, uh... Divine intervention? Actually, it's simply removed because
+   it makes the level way too easy to beat. :P
+
+Q: How do I beat the final boss?
+A: See the enemy section for a few random tips about both boss
+   fights. Just get their health bar down to zero. :P
+
+Q: How do I get the secret ending?
+A: Explore around after beating the last boss, instead of entering
+   the exit teleporter. You'll find it. :P
+
+
+MAP08: CORE ZERO
+
+Q: How do I reach this level?
+A: This level's secret exit resides in Map02: Urban Doom.
+   The path to the secret level is a bit odd, but still do-able. Right after
+   you nab your brand-new Assault Rifle, backtrack into the previous room and
+   check the central pillar. Notice how one section is lighter than the rest?
+   Shoot it. This, in turn, raises a strange object outside -- a bounce pad.
+   Use the pad to rocket up to the little niche in the building above, and
+   grab the goodies here. In this secret, once you defeat the level's boss,
+   the little panel on the floor will open up another secret passageway.
+   From here, it's a straight shot to the exit... enjoy the surprise
+   elevator ride. :P
+
+Q: Is there any possible way to skip the weapon vaporization at the start?
+A: Nope. As Agent Smith would say, it is inevitable. :P
+
+Q: The knife fight is too hard! Any tips?
+A: Firstly, get to know the ins-and-outs of the Machete, how to use it and
+   some such. Mastery of the block is not necessary to beat it, but it does
+   help. For the small groups, the rapid-stab is your friend, and for the
+   larger baddies, get used to running in, slashing, and getting back out
+   before you're toast. Practice makes perfect, my friend.
+
+Q: What's with the nonlinearity?
+A: Why not? There exist two main pathways through the level, either the
+   direct route through the complex, or the back way in, through the water
+   canals. Although you only need to travel one direction, both paths
+   eventually meet up and you need to go both ways if you want to get back
+   all your weapons again. :P
+
+Q: How do I beat this level and what the devil is the reactor for?
+A: Simple... your objective is to destroy the reactor and get out. Easy, right?
+   HELL NO. After the core is nuked, there is a mere 20-second delay before the
+   entire base (and you) go up in smoke. Although the reactor is easily
+   accessible near the beginning, you need to clear a direct path to the exit
+   hatch before you light the match... otherwise it's lights out!
+
+Q: Why does the scenery in this map put all the other maps to shame?
+A: TRICK QUESTION. Ask Zero Prophet. :P
+
+
+MAP00: LOST STATION
+
+Q: How do I reach this level?
+A: As of version 2.5, the way to find the secret exit is a lot more
+   complex, yet much less cryptic. There are three steps involved in finding
+   the exit, all of which reside in Map04: 
+
+  1: Firstly, you need to find the Soulsphere secret in the brown marble
+   building. This is done by first shooting a switch through the barred windows
+   (not really that hard to miss). In the room with the assault rifle, one of
+   the pillars now sports a brand-spanking new switch. Flick it and enter the
+   hidden door that opens. The switch here lowers an elevator that leads
+   to the adjacent room. Proceed there and take the elevator up, switching off
+   the bars. As you re-enter the room, the pillar with the soulsphere will
+   finally lower, allowing you to grab it (and the fusion cell nearby).
+
+  2: After the soulsphere is history, a new hidden door has opened... the switch
+   that raised the first bridge to the yellow key has now opened up to reveal
+   a red door. Note that this door will not appear if the yellow key has not
+   been acquired yet. Anyway, proceed through the level as usual until you get
+   the red skullkey. Now, it's backtrack time... the door opens up to reveal
+   a few goodies, as well as a real prize--a floor switch. Step on it to unlock
+   the final piece to the puzzle...
+
+  3: At the very final segment of the level (below the coffin staircase), one
+   of the formerly blocked off passages has been opened. Simply travel through
+   the newly-formed hallway until you reach another coffin staircase leading
+   upwards... head through the door in this room (to a familiar place) and
+   traverse the hallway. At the end is a transparent door... using it will
+   instead open up the one visible on the other side. Simply backtrack to that
+   position and fall through the odd hole in the floor...
+   Welcome to the Lost Station!
+
+Q: How do I get past the broken doors in the 1st building?
+A: You see those small walkways near the top of the building? You need
+   to get on the right one of those. The way to get up there is sitting
+   right in front of you. Just think for a few seconds. :P
+
+Q: I'm stuck in the part of the map after the blue door after the Blood-
+   sphere. I entered a tiny cave room, but there doesn't seem to be any
+   place to go in here!
+A: One of the metal blocks that make up the walls of the surrounding
+   rooms (the one next to the marine corpse) seems to be pushed into
+   the wall a little bit. This block can be pushed. Walk up to it and
+   press use in order to move it back a little bit. You need to push it
+   multiple times, until you can finally enter the next room.
+
+Q: Where do I get the Plasmatic Fusion Cells in this map?
+A: There are six of them, all in the room with the Yellow Key and the
+   laser trap. There is one on each of the six spots where the lasers
+   impact, so you have to time it right in order to get them all!
+
+Q: I made it back to the start of the map, but it won't let me exit!
+A: That's because you lost the bloodsphere. If you throw it and it
+   gets stuck in a position you can't reach, you're basically screwed.
+   That is completely intentional in this map, though. Just make darn
+   sure to have it by the end of the level!
+
+
+--Enemy-related questions:
+
+Q: The Cacophytes' fireballs are way too fast!
+A: Due to a couple of people constantly nagging me about this, I've
+   tuned down the speed of the Cacophyte fireballs. I changed their
+   speed from 20 to 19, so I hope you're all happy now. :P
+
+Q: The Maelstroms (white skull head things) suck badly!
+A: Yes, their electric attack is a pain, but that's what makes this
+   monster so special. Don't worry, you usually never find these
+   guys in large quantities, and at least they tend to hit other
+   monsters as well, causing major chaos. :P
+
+Q: I can't seem to kill the Hell's Batteries. I keep running out of ammo!
+A: These guys are invulnerable while they're firing at you with that
+   device attached to their back. At this point, you should probably
+   concentrate on dodging. :P
+
+Q: The final boss always kills me in one hit!
+A: Don't get hit, then! He's the final boss, he's supposed to be that
+   powerful. :P
+
+Q: How do I beat the final boss?
+A: There's nothing special you really need to do besides use your most
+   powerful weapons on him while he's in the arena (the Nailgun is a
+   good one), and when he teleports out, concentrate on the spawned
+   monsters and eliminate as many before the boss teleports in. Yes,
+   he is extremely hard. But then again, he is the final boss, so
+   that's the whole point. :P
+
+
+--Weapon-related questions:
+
+Q: Where can I find all the Plasmatic Fusion Cells?
+A: Here's a full list of their locations (Not counting Map03 or Map00):
+
+   MAP04:
+   1-Next to window in first building
+   2-Behind waterfall in "Escher-style" brick building
+   3-Brown marble building; secret soulsphere room
+   4-Brown marble building; yellow key room (behind switch pillar)
+   5-Easternmost font in Cathedral
+   MAP05:
+   6-Received upon picking up fusion cannon
+   7-Same as above
+   8-Ditto, mofo'.
+   9-Secret Area in darkroom; hit switch in yellow key room to open
+   10-Same as above
+   MAP06:
+   11-Upper floor of green building opposite of first building (take lift)
+   12-Cavelike area with teleporter to Blue key room
+   13-Top of red door-marked platform
+   14-Tower past yellow door
+   15-Lowering room right before exit (hidden in the blood)
+
+Q: How does the Bloodsphere work?
+A: The Bloodsphere is to Zen as what the Sigil was to Strife. It
+   uses your health as ammo, but does a hell of alot of damage.
+   Primary fire sends out a spray of blood that bounces around,
+   for 5 units of health, and secondary fire throws it for 20
+   units, causing an extremely massive explosion that can easily
+   damage you if you're too close!
+
+   Also, when you throw the bloodsphere, you can pick it up
+   again from the place it landed. Take care not to throw it
+   into a position you can't get it back from, since there is
+   only one Bloodsphere in the game, so if you lose it, it's
+   gone for good!
+
+Q: How the hell do I use the new Machete?
+A: The machete has now been reworked to posess different combos... If you've
+   ever played Devil May Cry, you'll get how it works. After the second swing,
+   the later you time your third swing, the different combo you'll get.
+   Executing the third swing quickly gets you a simple three-slash combo.
+   Waiting just a bit before swinging the third time is a five-hit
+   "slash-slash-slashslash-finisher" combo. Finally, if you wait for an even
+   longer time before the third swing, you'll get a very rapid stabbing
+   motion ended with a forward thrust. Although it's a bit hard to understand,
+   just experiment a while... you'll catch the drift. :P
+
+   Also, the weapon's alt-fire is a reflective block ability... it takes some
+   time getting used to, but always remember that it's better to start the block
+   too early than too late!
+
+Q: What the devil is this syringe-looking thing?
+A: I see that you have discovered the brand-new prototype "Zen-Roids"
+   performance enhancers... basically a concentrated mix of the power running
+   in your character's veins. As for its use, think Berserk Pack. A quick
+   injection with this baby will supercharge your melee attacks into something
+   much, much more powerful than humanly possible. Although its effect is
+   timed, use that extra muscle to slash away with your improved knife combos.
+   Don't say I didn't warn you. :P
+
+
+
+Okay, so that's all for the FAQ now. If I ever release any other
+versions of Zen, I'll update this FAQ, assuming it even needs it. :P
+
+In the mean time, have fun killing stuff!
+
+-Xaser

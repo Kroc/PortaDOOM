@@ -1,0 +1,197 @@
+	                          Hellcore 2.0
+=============================================================================
+Title                   : Hellcore 2.0
+Filename                : HC20.wad
+Release date            : October 29 2006
+Author			: Devon "Darkfyre" West & Robert "Fusion" Babor
+Email Address           : darkfyre_rn@hotmail.com & hellcore@prontex.ca
+Head Graphic Designers  : Esa "Espi" Repo		(espib@luukku.com)
+			: Steven "Dark Knight" Reimer	(sreimer@dccnet.com)
+MIDI Composer           : Simon "SlayeR" Judd		(slayer226@deadman.com)
+Description             : 12 levels from scratch or revamped from previous release
+Additional Credits to   : Chris Hansen, Brad Spencer, and Albert Sposito for their
+			  help on the previous version. Scuba Steve for the couple
+			  Action Doom textures I used. Bouncy for the frames to
+			  the Zombie Marine.
+Beta Testers		: Robin "Hawkwind" Palmer	(hawkwinds_messages@hotmail.com)
+			  Richie "Ragnew" Agnew		(re-aligned@comcast.net)
+			  James "Beanenator" Bean	(beanenator@gmail.com)
+			  "Belial"			(nowylepszyszatan@wp.pl)
+Other Files By Author   : Hellcore, Saydm1
+Misc. Author Info       : Wanted to make a mapset with the style of levels and
+			  gameplay that we enjoyed. Hope you enjoy playing it as
+			  much as we enjoyed making it!
+=============================================================================
+			   Changes from Last Version
+=============================================================================
+Map01 - Overhauled & revamped graphics/gameplay
+Map02 - New map, remap of old Map19
+Map03 - Old Map24, slight graphic changes
+Map04 - Is now 100% complete
+Map05 - Old Map23, complete overhaul
+Map06 - New map from scratch
+Map07 - Remake of previous Map07
+Map08 - Old Map16, slight graphic changes
+Map09 - New map from scratch
+Map10 - Old Map29, Fixed lighting error and secret for ZDoom
+Map11 - Old Map31, complete revamp
+Map12 - New map from scratch
+=============================================================================
+Advanced engine needed  : ZDoom, GZDoom (May work in other BOOM ports as they
+			  become more 'forgiving')
+Primary purpose         : Single+Coop play
+Episode and Level #     : Map01 - Map12
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (fully supported)
+Deathmatch 2-4 Player   : Starts Only
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : Yes
+New Textures            : Yes
+New music               : Yes
+Demos Replaced          : No
+=============================================================================
+Base                    : Twelve maps from scratch or revamps of previous versions
+Build Time              : Too many years, '95 to '06 apx.
+Editor(s) used          : DCK, NWT, Wintex, DeHackEd, Wadauthor, Doom Builder,
+			  WhackEd
+Known Bugs              : Occasional slime trail due to excess detail. Map02's sky
+			  lights up when shooting due to no light transfering.
+			  Will currently only work 100% in ZDoom, but is open
+			  for Boom ports with various (mainly visual) bugs.
+			  Playing this wad may cause you to lose control of
+			  semenal fluids. :D
+=============================================================================
+Map by map info:
+-----------------------------------------------------------------------------
+Level			: Map01 (On Hell's Horizion)
+Author			: Robert Babor (Ship by Devon West)
+Year Created		: Started in 1997, revamped on and off until 2005
+			  Ship made in 2004
+MIDI			: Unknown midi 
+Comments		: Went through eight redesigns until finally completed. The
+			  boat is from an old DM map of Devon's that he remade to
+			  be the start of a new version of 'Baron Streets', but
+			  due to sidedefs it was placed at the end of my map.
+-----------------------------------------------------------------------------
+Level			: Map02 (Baron Streets)
+Author			: Devon West
+Year Created		: 2005
+MIDI			: Unknown midi
+Comments		: I wanted to see how I could handle a large scale city
+			  map. Some areas aren't as nice as I'd like, but I was
+			  trying to keep it around 32,000 sides.
+-----------------------------------------------------------------------------
+Level			: Map03 (Parasite Dawn)
+Author			: Devon West
+Year Created		: 2004
+MIDI			: Resident Evil
+Comments		: Last map I made for the original Hellcore. Still
+			  very pleased with this map, especially compared to the
+			  old version that was never released :)
+-----------------------------------------------------------------------------
+Level			: Map04 (Defying the Odds)
+Author			: Robert Babor
+Year Created		: Started in 1997, finished 2006
+MIDI			: Original music by SlayeR
+Comments		: The "Not Finished" map from the original. Originally
+			  revamped by Brad Spencer, this map went through a huge
+			  revamp by Rob Babor, then another huge revamp to be at
+			  the utmost quality presented before you.
+-----------------------------------------------------------------------------
+Level			: Map05 (Vestibule of Plague)
+Author			: Devon West
+Year Created		: 2001
+MIDI			: Blood 
+Comments		: Last map I made before I became a decent author. This is
+			  when I started sticking to themes and better texturing.
+			  Redetailed and retextured the version for this release.
+			  The exit was thrown in rather hastily though, as you can
+			  probably tell.
+-----------------------------------------------------------------------------
+Level			: Map06 (Limbo)
+Author			: Devon West
+Year Created		: 2006
+MIDI			: Hexen
+Comments		: I needed a filler map for continuity and had an idea I
+			  wanted to use, getting enemies to enter a portal in the
+			  opposite direction, both achieved :) Did this tiny map
+			  in only a couple hours.
+-----------------------------------------------------------------------------
+Level			: Map07 (Tribulation)
+Author			: Devon West (Inspired by Rob Babor's old Map07)
+Year Created		: 2005
+MIDI			: Original music by SlayeR
+Comments		: Loved the gameplay of the original, figured I would try
+			  to have the same type of level layout in the new release,
+			  and well, I love arena-esque maps.
+-----------------------------------------------------------------------------
+Level			: Map08 (Tryx 'n Traps)
+Author			: Devon West
+Year Created		: 2002
+MIDI			: Blood
+Comments		: First map I made when I became good at effects. Still
+			  not 100% happy with it but it's still pretty solid.
+			  A tribute to Doom2's 'Tricks and Traps', one of my
+			  favorite maps.
+-----------------------------------------------------------------------------
+Level			: Map09 (Hobb's End Horror)
+Author			: Devon West
+Year Created		: 2006
+MP3			: Original music by SlayeR
+Comments, Darkfyre	: Wanted to make another city map, this time less techy and
+			  smaller so I could pay more attention to details. Very
+			  happy with this one, gameplay's a little nuts but
+			  relatively easy. Started to lag on my laptop, but
+			  hopefully it runs well on other systems.
+-----------------------------------------------------------------------------
+Level			: Map10 (Nightmare's Requiem)
+Author			: Devon West
+Year Created		: 2003
+MIDI			: Hexen
+Comments		: First map I ever made, so it was only suiting I should
+			  remake it to my current standards.
+-----------------------------------------------------------------------------
+Level			: Map11 (Hellcore)
+Author			: Devon West
+Year Created		: 2006
+MIDI			: Damon Albarn - The Pit, I believe?
+Comments		: Map31 in older version, needed a boss level and well,
+			  this map ain't exactly easy, so boss level it became.
+-----------------------------------------------------------------------------
+Level			: Map12 (Credits)
+Author			: Rob Babor, Devon West
+Year Created		: 2006
+MIDI			: Original music by SlayeR
+Comments		: Various rooms and sections of maps that were either never
+			  finished or never made it in to Hellcore. The Marine's
+			  frames are from the Monster Resource pack (C/O: Bouncy)
+			  and was scripted by Fusion.
+-----------------------------------------------------------------------------
+Miscellaneous MIDIs
+
+Intermission		- Original music by SlayeR
+Intro			- The 7th Guest
+Text			- Hexen
+=============================================================================
+* Copyright / Permissions *
+
+Authors MAY use these LEVELS, GRAPHICS, MUSIC, or TEXTURES as a
+base to build additional levels giving credit to their respective authors.
+
+You MAY distribute this WAD project, provided you include this file, and the
+others that are contained within the ZIP, with no modifications.  You may
+distribute this file(s) in any electronic format (BBS, Diskette, CD, etc) as
+long as you include this file intact. Thank you.
+
+If you find any bugs, have questions or comments, e-mail us.
+=============================================================================
+* Where to get this WAD *
+
+Hellcore website: http://www.prontex.ca/~hellcore/
+ID Archives at:   http://www.doomworld.com
+=============================================================================
+©2006 The Hellcore Team
+* Licensed for use with "Hellcore" *
+All Rights Reserved
+=============================================================================

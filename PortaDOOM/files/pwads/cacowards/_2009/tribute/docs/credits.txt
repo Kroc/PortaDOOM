@@ -1,0 +1,15 @@
+Weapons:
+  - Desert Eagle - WildWeasel, who borrowed it from someone else, see txt of doomos.wad
+  - Combat Shotgun - ZDoom Weapon Resource Pak, which borrowed it from Duke Nukem 3D
+  - AK47 - Scientist, sci2.wad
+  - Blade - Vorpal Blade from Demon Eclipse. Demon Eclipse by Eriance
+  
+Monsters: 
+ - Fallen, Acolyte, BruiserDemon, Ethereal Soul - http://www.realm667.com/  
+   and their coresponding authors.
+
+Testers:
+  - SuperGod
+  - Alter
+  - Wario
+  - Sosenia

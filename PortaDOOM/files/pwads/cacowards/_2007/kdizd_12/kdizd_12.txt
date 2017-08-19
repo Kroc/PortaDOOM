@@ -1,0 +1,101 @@
+===========================================================================
+Archive maintainer      : Please replace old version
+Advanced engine needed  : ZDoom 2.2.0 or later
+Primary purpose         : Single + Cooperative play
+===========================================================================
+Title                   : Knee-Deep in ZDoom
+Filename                : kdizd_12.pk3
+Release date            : 02 June, 2007 (v 1.0)
+                        : 27 December, 2008 (v 1.1)
+                        : 16 June, 2012 (v 1.2)
+Authors                 : KDIZD Team (See CREDITS.TXT inside the archive
+                          or visit http://kdizd.drdteam.org/ )
+E-mail Addresses        : webmaster@tormentor667.de
+                          TheDarkArchon.KDiZD@gmail.com
+                          twicerisen@gmail.com
+Project Website         : http://kdizd.drdteam.org/
+
+Description             : The experience of playing through Knee-Deep in
+                          the Dead is one that many gamers will never
+                          forget, but through the years the episode has
+                          become too easy for many to play through and
+                          enjoy the way they did the first time.
+
+                          Knee-Deep in ZDoom is an interpretation of Id
+                          Software's original groundbreaking production,
+                          Knee-Deep in the Dead. The team has focused on
+                          expanding the original episode by utilizing the
+                          power of Randy Heit's ZDoom port; adding new
+                          areas, features, and gameplay devices not
+                          possible under the original Doom engine.
+                          Knee-Deep in ZDoom is a new experience, but holds
+                          strong to the atmosphere of the original. Relive
+                          the fear. Relive the nightmare. Relive Phobos.
+
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : No
+Graphics                : Yes
+Dehacked/DECORATE       : Yes
+Demos                   : No
+Other                   : Custom intermission, ending sequences
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 1 ** KDIZD IS NOT FOR DOOM 2 **
+Map #                   : Z1M1-Z1M10
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Modified
+Build Time              : 2 years, 9 months
+Known Bugs              : None
+Known Issues            : The code which draws translucent flats in ZDoom
+                          gets the brightness information from the wrong
+                          sector in some cases. This causes some minor
+                          visual glitches, but does not affect gameplay.
+
+GZDoom Issues           : GZDoom does not handle sprites in the same
+                          way as ZDoom, and as such some visual effects may
+                          not look correct. In order to minimize this, it
+                          is recommended to set up GZDoom as follows:
+                          In the GL display options settings, 'Adjust
+                          Sprite clipping' should be set to 'smart'.
+
+Changes for 1.1         : Many fixes to the maps
+                          The item rotations are no longer part of the 
+                          main file. Instead they are a separate package
+                          If you want to use them you have to load
+                          enable_item_rotations.pk3 with kdizd_11.pk3.						  
+						  
+Changes for 1.2         : fixed incorrect character in DECORATE definition
+						  that was causing errors with recent ZDoom version.
+						  Removed A_CustomMissile calls with undefined actor
+						  AriCaseSmoke.
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications. You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact. I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://kdizd.drdteam.org/ ; http://www.realm667.com/

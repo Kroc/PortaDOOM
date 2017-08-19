@@ -1,0 +1,151 @@
+===========================================================================
+Tested to work on    	: HereticP, Eternity, Doom Legacy, Vavoom, Zdoom, GZdoom and Skulltag.
+May Not Run With...     : Non-Heretic source ports and any VPO limited Heretic versions.
+Primary purpose        	: Single player/Cooperative
+===========================================================================
+Title			: Heretic - Curse of D'sparil
+FileName		: curse.wad curse.txt
+Release date		: January 12, 2010.
+Author			: Kristian 'Kristus' Käll
+			  Featuring my brother Karl Käll, who made the secret map.
+Email Address           : kristustf@gmail.com
+
+Other Works by Author	: Codename Hyena: Killer machine
+(From oldest to newest)	  Pennywise (DM map)
+			  10 Sectors Megawad (Map17)
+			  Darkmatch 1 (DM map)
+			  Darkmatch 2 (DM map)
+			  Phobia
+			  Nimrod - Ixnay on the Hombre
+			  Aliens Vendetta (Part of Map31)
+			  Nimrod - Project Doom
+			  Phobia - The age
+			  Plutonia 2 (Part of Map12)
+			  + a bunch of Speedmaps...
+
+Description		: An episode 3 replacement for Heretic, playing on the story
+			  of Corvus' exile as he was under the curse of D'sparil.
+			  
+			  Read the back story under "Info" in Heretic.
+
+Author droning on	: This project was all about having fun with making the maps
+like Cosby on crack	  and resources. I didn't bother second guessing myself (that
+			  doesn't mean that I didn't still make use of critical thinking 
+			  though) and I think the project is better for it. 
+
+			  The mantra was that I worked on it because I wanted to, everytime.
+			  It wasn't about making every room the best it could be, but to 
+			  not get caught up on meaningless details. If I wanted to feel like
+			  I made progress, I would just push ahead and make a room. 
+			  If it wasn't too bad, I'd keep it. (in other words, most of the time)
+				
+			  Actually. This is the first multilevel wad I make myself that isn't
+			  a TC/PC. I suppose it's about time.
+
+			  Actually, I've been thinking of making an Heretic wad for some years
+			  now. I even did consider to make Phobia (The age) for Heretic. But
+			  for whatever reason I can't recall now, I decided against it.
+			  Probably thought tha the cartoony aspect of Heretic would blend
+			  poorly with Phobia's direction. Or maybe it was because I had already
+			  used Doom resources for a few things in Phobia, and didn't care to
+			  remake them.
+
+			  Either way, here is my Heretic wad, finally. If you've actually
+			  bothered to read this far, thanks.
+
+Additional Credits to	: -My brother Karl for making the Secret map and testing it 
+			   all in Coop with me.
+			  -Khorus, Udderdude for beta testing.
+			  -Creaphis for his hcount.wad, which I used as base 
+			   when I made the conveyorbelt scripts.
+			  -Gez for finding a bunch of bugs in the original release and telling me about them.
+			  -John Romero for Heretic and Hexen.
+			  -ID and Raven of course for the games.
+
+===========================================================================
+* What is included *
+
+New levels             	: 9
+Sounds                 	: No
+Music                  	: Yes (Rearranged Heretic music for great effect and JUSTICE)
+Graphics               	: Yes
+Hehacked Patch     	: No
+Demos                  	: No
+
+
+* Play Information *
+
+Game                   	: Heretic
+Map #                  	: E3M1-E3M9 (Notice: In most source ports, E3M4 is replaced with E3M4P in
+			  the level progression. However, if you just warp to 3 4 using the
+			  engage## or in the command line. You'll end up in the HereticP version
+			  of the map. To warp directly to E3M4P, either use the consol, or with 
+			  the command-line if you use a port that support MAPINFO use the command 
+			  "+map e3m4p")
+Single Player          	: Yes
+Cooperative 2-4 Player 	: Yes (Tested with 2 players, Survival mode included)
+Deathmatch 2-4 Player	: No
+Difficulty Settings    	: Yes
+			  If you only want to enjoy the maps and play resonably carelessly
+			  through the episode. I suggest one of the easier skill levels. 
+			  Skill 3 "Bringest them oneth" is made to be casual but still offer 
+			  something of a challenge.
+			  Skill 4 "Thou art a smite-meister" has been tested to be aggressive 
+			  and very challenging. (In other words. I died a lot while testing 
+			  these maps in this skill level).
+			  Skill 5 "Plack plague possesses thee" obviously largely the same as
+			  skill 4, however. For those who may complain about Skill 4 not having 
+			  enough ammo.
+
+* Construction *
+
+Base                   	: From scratch
+Build Time             	: On and off for about a year
+Editor(s) used         	: DB, DB2, DETH, XWE, ZENNODE.
+May Not Run With...     : Non-Heretic source ports and any VPO limited Heretic versions.
+Known Bugs             	: None that are serious, but here's a list.
+
+			  **In Legacy and HereticP**
+			  1. In some maps (E3M4 and E3M8), if you turn on No clipping mode before 
+			  moving at all, it will cause the conveyorbelt scripts to not activate.
+						  
+			  **In Legacy (software) and HereticP**			  
+			  2. In some maps the bottom of the sky can be spotted, and 
+			  there's a tutti frutti effect there because Vanilla Heretic 
+			  doesn't allow Vertical wrapping of the sky texture, and 
+			  Legacy copied this behaviour for some reason.
+
+			  **In Legacy and Eternity**
+			  3. The level name will not be showing up properly at the 
+			  'now entering' screen. It will show up in the Automap and in the 'finished'
+			  though.  It just hasn't loaded the next map yet and as such, neither the 
+			  [level info] information that is embedded in the ExMx lump.
+				
+			  **In Vavoom and Legacy OpenGL mode**
+			  4. In some place there'll be visual glitches where sector draw hacks 
+			  have been used.
+
+			  **In HereticP**
+			  5. Sometimes when changing from one map to another HereticP can run out 
+			  of allocated memory and crash. To not lose progress, make sure you save 
+			  before exiting the map.
+
+Doomsday support	: Most of the maps do work in Doomsday, but at the time of writing, Doomsday
+			  does not support Voodoo dolls, and a couple of the maps require this to function.
+			  These maps are. E3M4 and E3M8
+			  This has been promised to be fixed in future versions though.
+
+* Copyright / Permissions *
+
+You may NOT use the contents of this file as a base for
+modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: http://www.doomworld.com/idgames/

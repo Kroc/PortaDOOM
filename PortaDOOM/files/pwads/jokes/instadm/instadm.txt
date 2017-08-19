@@ -1,0 +1,98 @@
+===========================================================================
+Advanced engine needed  : None! Runs in vanilla!
+Primary purpose         : No levels included
+===========================================================================
+Title                   : InstaDoom WAD Of The Year Edition
+Filename                : 58 filenames, actually
+Author                  : Linguica
+Email Address           : linguica@doomworld.com
+Other Files By Author   : Various
+Misc. Author Info       : Does Doom stuff
+
+Description             : If you just can't get enough of taking pictures
+                          of your food and making it look more magenta,
+                          InstaDoom is for you! Play Doom with any of the
+                          40(!) official Instagram filters! Memento Mori
+                          with Mayfair! Requiem with Rise! Icarus with
+                          Inkwell! Alien Vendetta with Aden or Valencia!
+                          
+                          ALSO INCLUDES: Selfie Doom: Buddy Adding Edition!
+                          Indulge your narcissistic urges even in the deepest
+                          corners of Hell! With the new multiplayer
+                          compatibility, take group selfies in front of famous
+                          landmarks! As seen in Le Monde!
+                          
+                          Note that in any non-ZDoom-based port, the Selfie
+                          Stick replaces the BFG, and all chainsaw and BFG
+                          item placements are swapped, so you can pick up the
+                          Selfie Stick on Map01 ASAP. (Since the Doomguy
+                          doesn't have to worry about lugging around the BFG,
+                          he can also carry 50% more plasma ammo.) In
+                          ZDoom-based ports, the Selfie Stick is a special
+                          extra DECORATE weapon bound to the 7 key.
+						  
+                          ALSO ALSO INCLUDES: InstaDoom DLC Pack 1! Is
+                          Instagram too "mainstream" for your tastes? Do you
+                          need filters -- er, I mean, "presets" -- that
+                          really scream, "I am a hipster"? Do you not care
+                          about usability? Then you'll love the new VSCO Cam
+                          DLC pack!
+                          
+                          17 new filters (er, I mean, "presets") that
+                          emulate each of the currently-free filt- uh,
+                          presets in the VSCO Cam app! Most of them look
+                          like garbage, but they are painfully hip! Sneer
+                          at the basic bitches on Instagram with such
+                          purposely-obtusely-named presets as A4, B5, M3,
+                          and the ever-popular P5!!
+
+Additional Credits to   : Mike12 for lots of help with the Doomguy HUD
+                          graphics. Scuba Steve for the third-person Doomguy
+                          poses. The Chainsmokers and midimusic.de for the
+                          tunes. The Freedoom project for the Python scripts
+                          to generate the custom palettes and colormaps.
+===========================================================================
+* What is included *
+
+New levels              : None
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : Custom palettes and colormaps
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Any Doom game
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes, with Selfie Doom: BAE
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Known Bugs              : Filters probably won't work properly with
+                          hardware-accelerated ports.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

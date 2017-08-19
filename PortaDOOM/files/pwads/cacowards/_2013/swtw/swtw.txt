@@ -1,0 +1,198 @@
+===========================================================================
+Advanced engine needed  : Boom-Compatible (tested in prb+ cl9, gzdoom)
+Primary purpose         : Single player
+===========================================================================
+Title                   : Swim With The Whales
+Filename                : swtw.wad
+Release date            : 12/02/2013
+Author                  : Ribbiks
+Email Address           : ribbiks@gmail.com
+Other Files By Author   : stardate 20x6, sf2012 (maps 03, 17, 30),
+                          and lots of maps released only on doomworld
+                          forums that probably no one cares about
+Misc. Author Info       : (>'_')>
+Description             : "Swim With The Whales" is a set of 3 boom-
+                          compatible levels featuring abstract
+                          environments, very challenging gameplay, and
+                          elaborate secret areas. I spun the color wheel
+                          and landed on blue this time around, so expect
+                          plenty of it! The dynamic range of the difficulty
+                          is wider than my previous releases. That is, UV
+                          is harder and HMP / HNTR are both a bit easier.
+                          So I encourage even skilled players to start off
+                          on HMP.
+
+Additional Credits to   : *SEE BELOW*.
+                          
+===========================================================================
+* What is included *
+
+New levels              : 3 maps
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP03
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes. Use them.
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : ~5 months, off and on.
+Editor(s) used          : Doom Builder 2, Slade, Flash
+Known Bugs              : Numerous slime-trails with software graphics that
+                          I'm too lazy to fix, If you find any serious bugs
+                          let me know!
+May Not Run With...     : Any port that doesn't support:
+                             - boom linedefs / voodoo doll shennanigans
+Other                   : Glboom+ recommended for best results!
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Authors of other materials have been credited in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  You may not
+charge for the contents of this file.
+
+* DISCLAIMER *
+
+This PWAD contains select texture(s) and flat(s) that can originally be
+found in GothicDM or Gothic2. Credit and thanks go out to the artist(s)
+of said flat(s) and texture(s) and also to the rest of the Gothic Crew
+(1997/98). The ORIGINAL GothicDM(2).ZIP can be found at the idGames
+Archives. Each said PKZIP archive contains thirty-two professional
+quality levels and music. Found at your favorite idGames FTP mirror:
+idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+
+===========================================================================
+  /////////////////////////////////////////
+ ///////   NOTES ON DIFFICULTY:   ////////
+/////////////////////////////////////////
+===========================================================================
+
+
+It's worth noting that the gameplay in this wad varies quite a bit across
+the different difficulty settings, so here's a brief overview:
+
+
+HNTR - Intended to be completable by most everyone, not too aggressive.
+
+HMP  - Probably the most enjoyable experience. Enough powerups and ammo
+       to forgive a few mistakes, encounters are challenging but not
+       overly harsh.
+
+UV   - Not messing around! Ammo and health are scarcer, monster and item
+       placement are a bit trickier. On this difficulty many pits are
+       inescapable and there are even some daunting platforming sections.
+
+UV-Multiplayer - Abundant resources to facilitate several players, I also
+                 got a bit crazy in some areas and upped monster counts.
+                 So if you're looking for a different challenge feel free
+                 to give -solo-net a try!
+
+
+===========================================================================
+  //////////////////////////////
+ ///////   MAP LIST:   ////////
+//////////////////////////////
+===========================================================================
+
+ ---------------------------
+|    map01: The Deep End    |
+ ---------------------------
+Music:   "Aqua Rock" from Golden Sun: the Lost Age
+
+ - Atmosphere, can you dig it?
+
+ --------------------------------
+|    map02: Ride The Dolphins    |
+ --------------------------------
+Music:    "Underwater" from Donkey Kong Country 3 (GBA)
+
+Visuals:  When I started this project I knew I wanted a map to start with a
+          giant blue fortress surrounded by void. The outdoor detail was
+          inspired by various church / cathedral architecture.
+
+Gameplay: There are two main routes that can be played in either order,
+          each one winding back around to the start via an optional
+          dual-cyberdemon gimmick fight. I think most of this map is
+          fairly straightforward with the difficulty probably peaking
+          at the Mastermind room in the light-blue key wing. There are
+          plenty of helpful secrets, so some extra exploration will make
+          life easier with earlier weapon pickups and additional powerups.
+
+
+ -----------------------------------
+|    map03: Swim With The Whales    |
+ -----------------------------------
+Music:    "Water World" from Donkey Kong Country 3
+
+Visuals:  This was the first map I made for the set. My goal was to create
+          a surreal volcanic wasteland but with water instead of lava.
+          Towards the end I started messing around with pure black rooms
+          and bright blue accents, ideas which were revisited when I began
+          working on the other maps.
+
+Gameplay: Maybe the hardest level I've made (on UV that is, and possibly
+          excluding sf12_30). Traversing this blue wonderland will involve
+          plenty of unforgiving combat situations. Ammo and resources are
+          pretty tight in the early portions of the map, so conservative
+          play and clever infighting are practically required. There are a
+          few challenging set-pieces, including an absurd BFG fight and
+          dark-blue key arena. Secrets are numerous and diverse, including
+          alternative weapon pickups and hidden encounters. Good luck!
+
+          For those of you allergic to platforming puzzles, note that the
+          one in this map is skippable if you utilize the black-key secret!
+
+ ------------------
+|    map31: ???    |
+ ------------------
+Music: "Blue" by Eiffel 65
+
+ - According to Phml I was legally obligated to include this song somewhere
+   in the wad, so here you go!
+
+
+===========================================================================
+  ////////////////////////////////////////
+ ///////   ADDITIONAL CREDITS:   ////////
+////////////////////////////////////////
+===========================================================================
+
+Main playtesters: Phml, Dannebubinga
+
+Also thanks to those who provided demos/feedback in the dw project thread.
+
+Statbar graphics were ripped and recolored from "Green Goddess" (gg.wad),
+a mapset by Grain of Salt.
+
+Many textures were ripped/recolored from Community Chest 4, Deus Vult 2.
+
+Title Music:        "Interlude" from Fable
+Intermission Music: "Astea's Theme" from Dragon Force
+
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+FTP sites: idGames Archive (http://doomworld.com/idgames/)

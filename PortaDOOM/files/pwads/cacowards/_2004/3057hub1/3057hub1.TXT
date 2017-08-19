@@ -1,0 +1,138 @@
+Project:			RTC-3057: Blue
+Version:			Hub1
+The RTC-3057 homepage:		http://www.nautrup.com/3057/
+================================================================
+CONTENT:
+=========
+
+1. Introduction
+
+2. Author/wad details
+
+----------------
+1. Introduction
+----------------
+
+After countless hours of hard work, the first hub of RTC-3057 is complete. We are very pleased with how it has turned out, and hope you will be too. The hub consists of 7 levels and takes place on the Federal Commonwealth of Earth's flagship, "The Enforcer". It is a mod for Doom2 using the powerful port of Zdoom. You probably already know this, so...Enjoy!
+
+	-Shaviro
+	Team Future leader
+
+The believable and highly detailed environment together with quality sounds makes this wad incredibly immersive. And for once, it's a wad where you actually fear the individual monster rather than the masses of monsters - just like in the first Doom game.
+
+Get your pistol, ready your gear and prepare to enter the depths of the haunted hallways.
+
+	-dsm
+
+The combination of awesome level design, impressive scripting, and brilliant music make RTC-3057 Hub 1 the most incredibly atmospheric wad I've ever played. It's very well put together and Keeps you on your toes the whole way through. If Doom 3 is this good, I'll be happy.
+
+	-AirRaid
+
+This is Doom like never before.  Be prepared for an immersive world of thought and action with a little suspense around every corner.
+
+	-Manc
+
+RTC-3057 is a truly unique experience. It takes Doom to a higher level and it will blow you away.
+
+	-BBG
+
+----------------
+2. Author/wad details
+----------------
+
+Title                   : RTC-3057: Blue hub1 07/26/04
+Filename                : 3057hub1.WAD
+Authors			:
+
+Level design:	Shaviro
+		NiGHTMARE
+
+Textures:	Fredrik
+		NiGHTMARE
+		Shaviro
+
+Scripts:	Shaviro
+		boris_
+		Gooberman
+
+Story:		dsm
+		pritch
+		Shaviro
+
+Music:		Julian
+
+Voice acting:	Manc
+
+Sounds:		Shaviro
+		Julian
+		BBG
+		Cyb
+		Enjay
+
+Beta Testing:	AirRaid
+		dsm
+		boris_
+		Julian
+		Cyb
+		NiGHTMARE
+		Hirogen2
+		mewse
+		Torn
+		(chrozoron)
+		(fredrik)
+		SoM_
+		_Hyena_
+
+GFX:		dsm
+		ZarcyB
+		Julian
+		Shaviro
+
+Thanks so:	gex
+		_Hyena_
+
+Misc. Author Info       : Team Future. Go read up on it!
+
+Misc. Wad info          : This is a 7 level demo of RTC-3057.
+                        
+Ports Utilized          : RTC-3057 Requires ZDOOM 2.0 Beta 63 or higher.
+			  ======================================
+Thanks to		: Randy Heit for zdoom,
+			  Williston Consulting for WadAuthor,
+			  Olivier Montanuy for Wintex,
+			  JASC for Paint Shop Pro,
+			  Pascal Heiden for DoomBuilder,
+                          Doomworld
+			  SgtCrispy for his radio features,
+                          id Software and
+			  Anyone forgotten.
+
+
+			  ======================================
+* Play Information *
+
+Game                    : Doom II
+Single Player           : Yes
+Cooperative 2-8 Player  : No
+Deathmatch 2-8 Player   : No
+Difficulty Settings     : No
+New Sounds              : Lots
+New Graphics            : Lots
+New Monsters		: No
+New Music               : Lots
+Demos Replaced          : No
+
+* Construction *
+
+Base                    : New Levels from scratch
+Editor(s) used          : WadAuthor, Wintex, XWE, DoomBuilder
+Known Bugs              : The logs _can_ fuck up, but it's rare.
+
+* Copyright / Permissions * 
+
+DOOM, DOOM II, the DOOM logo, and ID are all copyright ID SOFTWARE.
+You may redistribute this file only in the original zip form. Do not add, 
+remove, or change files included in the zip file.
+
+Please do NOT extract any textures OR other files from 3057hub1.wad
+Authors may NOT use this level as a base to build additional levels.

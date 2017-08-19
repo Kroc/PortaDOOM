@@ -1,0 +1,92 @@
+Urban Brawl Frequently Asked Questions.
+
+01: I can't pick up a new weapon.
+02: I can't hear the cutscenes or voices.
+03: I find ammo but I don't have a gun.
+04: What do I do in the street after I beat the first map?
+05: I'm stuck in the escape ladder in the first map.
+06: Urban Brawl is really hard!
+07: I'm stuck, what do I do?
+08: How do I get Action Doom 1 to run?
+09: The zombie bonus map runs slow.
+10: I keep dying in the forest.
+11: I keep finding bullets but I have no gun.
+12: The game crashed when I started a level
+13: How do I run the Bonus maps?
+14: When I get to a choice screen, I can't choose one.
+15: I can only punch with my right arm.
+
+
+- 01 - I can't pick up a new weapon.
+-------------------------------------------------------------
+You have to drop your current weapon first.  Select a key to be your 'Drop Current Melee Weapon' button from OPTIONS>CUSTOMIZE CONTROLS.  Make sure you use 'Drop Melee Weapon' (originally bound as z).
+
+
+- 02 - I can't hear the cutscenes or voices.
+-------------------------------------------------------------
+Go to OPTIONS>SOUND OPTIONS and turn the music (midi & other) down or the sound effects up.  You can also toggle subtitles for the cutscenes by pressing 'x' (You can change this to any key in OPTIONS>CUSTOMIZE CONTROLS).
+
+
+- 03 - I find ammo but I don't have a gun.
+-------------------------------------------------------------
+There are several places to find a gun in the game.  Make sure, when you start, you don't leave it behind.
+
+
+- 04 - What do I do in the street after I beat the first map?
+-------------------------------------------------------------
+You have several choices, go into the taxi or listen to the player's voice... he'll give you suggestions on what else to do.
+
+
+- 05 - I'm stuck in the escape ladder in the first map.
+-------------------------------------------------------------
+Doom's clipping code is buggy and ZDoom changed it halfway through Urban Brawl's development so you may get stuck climbing the escape ladder.  The best way to avoid it is to stay on the far side of the steps and climb straight up.  If you get stuck, go to the console by pressing ` and type NOCLIP.  Once you fall through, type NOCLIP in the console again.
+
+
+- 06 - Urban Brawl is really hard!
+-------------------------------------------------------------
+Try playing on an easier setting.  Also, make sure you drink whiskey for added defense and break trash cans, tires and other objects to find additional health and weapons.
+
+
+- 07 - I'm stuck, what do I do?
+-------------------------------------------------------------
+Make sure to kill every enemy in order to advance.  Just like old beat 'em up games, you need to kill everyone on screen to continue.
+
+
+- 08 - How do I get Action Doom 1 to run?
+-------------------------------------------------------------
+You must own a copy of Doom2 (http://www.idsoftware.com) in order to play the original Action Doom.  Download ZDoom (http://www.zdoom.org) and place it in your Doom2 directory.  Browse the Urban Brawl CD and find the Action Doom folder; place the action.zip file into your Doom2 directory.  Drag the action.zip file onto the ZDoom.exe
+
+
+- 09 - The zombie bonus map runs slow.
+-------------------------------------------------------------
+The Zombie bonus map requires a pretty powerful computer to run because of hundreds of enemies moving around.  Try it for yourself and see how it runs.
+
+
+- 10 - I keep dying in the forest.
+-------------------------------------------------------------
+Watch the ground for mines... the player warns you after the first one you step on.  After the first one, you will be killed so be careful.
+
+
+- 11 - I keep finding bullets but I have no gun.
+-------------------------------------------------------------
+You can find a gun in several places in the game.  Most importantly, make sure you don't leave home without one.
+
+
+- 12 - The game crashed when I started a level
+-------------------------------------------------------------
+This happens very rarely and I was unable to track down the cause.  If you should happen to get a crash, restart the game and load from the latest save.  Not a good answer, but the best I can give you.
+
+
+- 13 - How do I run the Bonus maps?
+-------------------------------------------------------------
+First, make sure you purchased a copy of Urban Brawl, since the bonus maps only come with the purchased edition.  To run the bonus maps, run the 'Bonus Maps' file or drag bonus.zip onto the Brawl.exe
+
+
+- 14 - When I get to a choice screen, I can't choose one.
+-------------------------------------------------------------
+Selct one using the mouse and then press your 'USE' key to selct it.
+
+
+- 15 - I can only punch with my right arm.
+-------------------------------------------------------------
+Make sure you go to OPTIONS>CUSTOMIZE CONTROLS and set a SECONDARY FIRE key.  This lets you punch and uppercut; other weapons may also have a secondary fire, try them out.

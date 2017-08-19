@@ -1,0 +1,79 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : Miasma
+Filename                : miasma.wad
+Release date            : 02.03.2016
+Author                  : Thomas "tourniquet" Seifert
+Email Address           : [redacted]
+Other Files By Author   : I've contributed to Switcheroom2, Mayhem2048,
+                          DWMP2014, Ultimate Doom in the name only, Nova 2
+                          "New Dawn" and TNT Revilution
+
+Description             : One fairly large and complex map. Difficulty should
+                          be more on the challenging side, harder encounters
+                          are mostly optional though. 
+
+Additional Credits to   : Id Games for Doom
+                          Archi, Killer5 and Ribbiks for playtesting
+                          People at Doomworld for additional feedback.
+                          
+                          Sprites:
+                          Chaingunner skin by TheDarkArchon
+                          Tree Sprite taken from Retres.wad
+                          Various Keys taken from Realm6667
+                          
+                          Music Credit: 
+                          
+                          Title: "Press Fire" from Shadow of the Beast 2
+                          Map1: "The Mucus Flow" by B.P.R.D
+                          Intermission: "Save Room" from Resident Evil 1
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch 
+Build Time              : ~3 Months
+Editor(s) used          : Doombuilder 2, Slade 3
+May Not Run With        : ZDaemon due to extended nodes.
+Tested With             : Prboom+ 2.5.1.4, Zdoom 2.7.1
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NoDerivatives
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format
+for any purpose, even commercially. If you do so, you must give appropriate
+credit, provide a link to the license, and indicate if changes were made. You
+may do so in any reasonable manner, but not in any way that suggests the
+licensor endorses you or your use.  If you remix, transform, or build upon
+the material, you may not distribute the modified material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

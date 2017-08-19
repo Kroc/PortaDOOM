@@ -1,0 +1,76 @@
+===========================================================================
+Primary purpose         : Solo play
+===========================================================================
+Title                   : Sheer Poison
+Filename                : shpo1.wad
+Release date            : 05/11/2015
+Author                  : Zan-zan-zawa-veia
+Email Address           : yakfaktory@gmail.com
+Other Files By Author   : many MIDIs
+Misc. Author Info       : likes ducks
+			  likes sheep
+
+Description             : A big nonsensical challenge map; gets metaphysical in places.
+
+The Story		: You're back from your victory over the gatekeeper of Hell,
+			  but upon arriving home are informed that no-one is aware of your
+			  successes or is at all willing to believe they happened. They put
+			  you in quarantine for three weeks and the stress snaps your mind,
+			  yanking you back into an imaginary hell where you don't even get to
+			  use the super shotgun. Oh no, you say. OH NO.
+
+Additional Credits to   : Tarnsman's streams where he points out what is wrong about a level -
+			  I broke every rule that I could remember!
+
+===========================================================================
+* What is included *
+
+New levels              : Yes
+New Sounds              : No
+New Music               : Yes
+New Graphics            : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No (might be cool with CARWARZ)
+
+
+* Play Information *
+
+Game                    : Ultimate Doom
+Map #                   : E2M1
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : Not sure; lemme know if this map suits a particular speedrun style
+Difficulty Settings     : Yes (try HMP first!)
+
+
+* Construction *
+
+Base                    : From scratch
+Build Time              : a month
+Editor(s) used          : WinDEU 5.24; XWE; Paint.NET; Cubasis
+Known Bugs              : none
+May Not Run With        : -
+Tested With             : Ultimate Doom in DOSBox; PrBoom-Plus 2.5.1.3
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: yakfaktory.wordpress.com
+

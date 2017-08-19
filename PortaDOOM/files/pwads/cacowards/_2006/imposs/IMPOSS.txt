@@ -1,0 +1,149 @@
+===========================================================================
+Advanced engine needed  : Zdoom (LATEST VERSION)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Impossible: A New Reality
+Filename                : IMPOSS.WAD
+Release date            : 10/20/06
+Author                  : JK
+Email Address           : mw2shelldon@yahoo.com
+Other Files By Author   : Holy Hell (currently v. 1.1)
+Misc. Author Info       :  _0_                     _0_
+			    |    I am respnsible    |
+			    |    for the death of   |
+				    John Candy
+
+The Story So Far	: Turns out you were brainwahsed by your boss, 
+			  Mr. Oxford. That cocksucker. Normally, you're used to
+			  lounging in your hotel room at 2 a.m. abusing Vicodin 
+			  and jerking off while watching C-SPAN. But Mr. Oxford 
+			  had other things in mind. You see, Mr. Oxford's parents
+			  both molested him when he was little. So naturally, 
+			  perversion was in his blood. That's why he's been 
+			  calling you in during the wee hours to file papers that
+			  he threw on the floor. It was so he could go by your 
+			  house and bang your wife, who's blind and couldn't 
+			  figure out it wasn't you. 
+			  Tonight on the other hand, he calls you in to scrub 
+			  stains off his office floor with shampoo and a toothbrush.
+			  But in his haste to stick it to your little lady, he 
+			  forgot to fill you in on your daily brainwashing routine--
+			  a series of "corporate training videos". So naturally, you
+			  follow him out as he leaves, and you track him to your 
+			  house. You've been wondering why it smelled like your boss
+			  every time you went down on your wife. Now you know. 
+			  Time for some payback. 
+			  You've delivered packages to Mr. Oxford's house before, so
+			  it takes you no time at all to drive recklessly over there.
+			  Mrs. Oxford answers the door (after you've kicked it open)
+			  brandishing a wimpy looking pistol. You tell her you're 
+			  delivering a special package for her husband. But she 
+			  decides she wants your package all to herself. She drops 
+			  the gun and is all over you, like pastrami on rye. 
+			  The two of you get drunk on cranberry schnapps and fornicate
+			  like a couple of rabid hyenas. You decide you won't need to
+			  pistol fuck her after all. 
+			  It's about that time Mr. Oxford shows up. You tell him he 
+			  must have forgotten something, and you let him have it right
+			  between the eyes with his wife's gun. God, that gun even 
+			  sounds wimpy. Like a kid popping a paper bag. Now 
+			  Mrs. Oxford is so smashed right now she has no idea what's
+			  going on. Which suits you just fine. After finishing your
+			  session with her, you look around for a shovel and a big 
+			  bucket of lye. All you can muster up is the shovel and a 
+			  fifty round clip for your gun. 
+			  You drag your boss next door to the local Indian burial 
+			  ground (conveniently situated by a radioactive waste 
+			  compound) and dig up a grave while drinking your schnapps. 
+			  A wilted Indian woman corpse awaits Mr. Oxford's company. 
+			  Now maybe it's the schnapps talking, but that's a cute little
+			  Indian woman. You know, for a corpse, she's fucking hot. 
+			  So you have your way with her/it for a while until the stench
+			  of body rot gets to you. You carefully position your boss 
+			  next to her. And after unloading your gun into his spine, 
+			  you manage to fit his head up his own ass. You piss on them 
+			  both and bid your adieu. For good measure, you dig up the 
+			  chief in the adjacent grave and piss on him too. 
+			  A job well done. Until you realize that weird echoing tribal
+			  chanting noise is coming from the other graves. Must be some
+			  radioactive Indian zombies. 
+			  You rush drunkenly back into the house and dress into your 
+			  boss's green Hazmat suit. You shove in the fifty round clip
+			  and put on a pair of tan gloves. You stick some brass knuckles
+			  in your pocket just in case. These feather-wearing bastards 
+			  are going to get schooled. Well, maybe if there weren't 
+			  seventy of them waiting for you outside the door. Before you
+			  can get a shot off, they grab you with their gnarled, bony 
+			  hands and hoist you over to a black, bottomless pit. 
+			  Sure, they could have given you fair warning and let you go. 
+			  But boy, once they threw you in, you thought you'd be falling
+			  forever. But we won't know because your pansy ass blacked out
+			  somewhere along the way. 
+			  When you wake up (with a bad hangover), you find yourself in 
+			  an otherworldly place. Like something out of that Hexen game
+			  or something. Only weirder. The putrid aroma of rotting meat
+			  fills the air. This place just smells evil. You stand up in 
+			  your heavy Hazmat suit, and you hold out your wimpy pistol 
+			  like you're aiming at something but there isn't anything 
+			  there. You hear bells and then some sort of music plays. 
+			  You can't figure out where it's coming from, but it just 
+			  loops over and over again. Now what?
+
+Description		: Don't trust your instincts.
+			  Don't trust your sense of reality.
+			  This fall, there are more than three dimensions.
+
+Additional Credits to   : Crista Forest, aka "CD Warrior" for the cfmanson textures,
+			  the Malice Team and Raven software for the Hexen textures,
+			  submerge for the N5VTX textures, Kim Malde for the sky,
+			  the estate of M.C. Escher for the title graphics,
+			  Saiyapimp and Tim Fewell for the music, and
+			  the fine folks at www.zdoom.org.
+===========================================================================
+* What is included *
+
+New levels              : MAP01
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Nope
+Demos                   : Not included
+Other                   : This txt file!!!1
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Posilutely
+Cooperative 2-4 Player  : Supported but not tested
+Deathmatch 2-4 Player   : No way
+Other game styles       : Do wutcha like
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : More hours than I want to count... My legs hurt.
+Editor(s) used          : Doombuilder 1.3, XWE
+Known Bugs              : Not anymore!
+May Not Run With...     : Any version of Zdoom prior to 2.1.0, and anything not
+			  Zdoom
+
+
+* Copyright / Permissions *
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+====================================================================

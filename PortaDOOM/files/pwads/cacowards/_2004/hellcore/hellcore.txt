@@ -1,0 +1,401 @@
+	                          Hellcore
+=============================================================================
+Title                   : Hellcore
+Head Designers          : Robert "Fusion" Babor		(hellcore@prontex.ca)
+			: Devon "Darkfyre" West		(darkfyre_rn@hotmail.com)
+Secondary Designers     : Brad "Vorpal" Spencer		(vorpal@arsenal.net)
+			: Chris Hansen			(chr-nygaard@hansen.mail.dk)
+			: Albert "Ismaele" Sposito	(sposito.lag@tin.it)
+MIDI Composer           : Simon "SlayeR" Judd		(slayer226@deadman.com)
+Description             : 32 levels from scratch. All varied in year and quality, but
+			  what can ya do?
+			  This text is unfinished, I cannot remember where all these
+			  midis are from, frankly I don't care too much, I just want to
+			  get this damn thing off my comp, and I apologize if I cannot
+			  give credit where it is due.
+Additional Credits to   : id, dck, nwt, wintex, wadauthor, doombuilder, and whoever
+			  else I've missed in this text.
+=============================================================================
+Episode and Level #     : Map01 - Map31 *Map32 is ZDoom only, and has no exit
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Player Starts Only
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Graphics            : Yes
+New Textures            : Yes
+New music               : Yes
+Demos Replaced          : No
+=============================================================================
+Base                    : Thirty-two maps from scratch.
+Build Time              : Too many years, '95 to '04 apx.
+Editor(s) used          : DCK, NWT, Wintex, DeHackEd, Wadauthor, Doom Builder
+Known Bugs              : A lot of unfinished maps, but it should be fully playable...
+			  Ugly or not.
+=============================================================================
+Map by map info:
+-----------------------------------------------------------------------------
+Level			: Map01 (On Hell's Horizion)
+Author			: Robert Babor (Ship by Devon West)
+Year Created		: Started in 1997, revamped on and off until 2002
+			  Ship made in 2004
+MIDI			: 
+Comments		: Went through several redesigns, was never finished to
+			  expectations and probably never will. The boat is from
+			  an old DM map of Devon's that he remade to be the start
+			  of a new version of 'Baron Streets'.
+-----------------------------------------------------------------------------
+Level			: Map02 (The Forsaken)
+Author			: Robert Babor
+Year Created		: 1996
+MIDI			: Original music by Slayer
+Comments		: This level is super outdated, and it shows, the gameplay
+			  remains decent though. Did a quick re-texture though.
+-----------------------------------------------------------------------------
+Level			: Map03 (The Nether World)
+Author			: Robert Babor
+Year Created		: 1996
+MIDI			: 
+Comments		: Again another old old level, some will call it filler,
+			  I call it nostalgic.. but yeah, it's crap :P
+-----------------------------------------------------------------------------
+Level			: Map04 (Brickyard)
+Author			: Robert Babor
+Year Created		: Started in 1997, was currently under revamping
+MIDI			: Doom2
+Comments		: Again never finished.. had an original revamp done
+			  by Brad Spencer, but basically everything he did was
+			  completely revamped again.. gah, being a
+			  perfectionist sucks..
+-----------------------------------------------------------------------------
+Level			: Map05 (The Mines of Dismay)
+Author			: Robert Babor
+Year Created		: 1997
+MIDI			: Ultimate Doom
+Comments		: Theme.. there is none, but it's a decent level for
+			  it's age.
+-----------------------------------------------------------------------------
+Level			: Map06 (Conquest)
+Author			: Devon West (Great 'last second' revamp by Chris Hansen!)
+Year Created		: 1996, revamped by the almighty speed revamp master in 2004
+MIDI			: Ultimate Doom
+Comments, Devon		: The idea started off good enough, but lost it quickly.
+			  Outdated and ugly.
+Comments, Chris		: Ugly, yeah. Potential, hell yeah! This level has some
+			  interesting layouts and I love the way it varies in
+			  architecure. I also happen to love the way it reeks
+			  of classic Doom atmosphere! I just dressed it up a
+		  	  little and corrected a few no-no's. I would have loved
+			  to have spent more time on this one...
+-----------------------------------------------------------------------------
+Level			: Map07 (Death's Door)
+Author			: Robert Babor
+Year Created		: 1996
+MIDI			: 
+Comments		: Challenging gameplay, that is, if you don't jump on
+			  the demons.. again old and never revamped.
+-----------------------------------------------------------------------------
+Level			: Map08 (Stellar Phenomenon)
+Author			: Brad Spencer (original by Devon West)
+Year Created		: Started in 1997 by Devon West, revamped by Brad in
+			  2003
+MIDI			: 
+Comments, Devon		: One of the happiest revamps of any map in Hellcore. Way
+			  back when a wee lad, this was one of my best and most
+			  enjoyable maps. Of course current day standards changed
+			  along with my skill, so this map got old and decrepit.
+			  I absolutely love what Brad did to it.
+-----------------------------------------------------------------------------
+Level			: Map09 (Bloodlust)
+Author			: Devon West
+Year Created		: 1997
+MIDI			: 
+Comments		: First time I ran into visplane problems. Fun gameplay
+			  but the effects and visuals are garbage compared to what
+			  I can do now.
+-----------------------------------------------------------------------------
+Level			: Map10 (Conquest)
+Author			: Devon West
+Year Created		: 1998
+MIDI			: 
+Comments		: Rubbish
+-----------------------------------------------------------------------------
+Level			: Map11 (Jaded)
+Author			: Robert Babor
+Year Created		: 1998
+MIDI			: 
+Comments		: You may see a revamp of this map that will blow you
+			  away, that is if i ever get around to making it...
+-----------------------------------------------------------------------------
+Level			: Map12 (Too Quiet)
+Author			: Robert Babor
+Year Created		: 1998
+MIDI			: Original Music by Slayer
+Comments		: Shitty level enjoy!
+-----------------------------------------------------------------------------
+Level			: Map13 (The Wicked)
+Author			: Robert Babor
+Year Created		: 1996
+MIDI			: Ultimate Doom
+Comments		: Extremely old map, but for it's age, quite nice..	
+-----------------------------------------------------------------------------
+Level			: Map14 (Circle of Trinity)
+Author			: Devon West
+Year Created		: 1996
+MIDI			: 
+Comments		: Probably the second level I ever made. It was a fun
+			  map... 8 years ago.
+-----------------------------------------------------------------------------
+Level			: Map15 (Underworld)
+Author			: Chris Hansen (original by Robert Babor)
+Year Created		: Started in 1998 by Robert Babor, revamped by Chris
+			  Hansen in 2002
+MIDI			: 
+Comments, Chris		: I fell for this one immediately! Intrigueing layout
+			  and an evil action packed gameplay with a good
+			  and very playable way of leading the player around!
+			  I used a lot of my experiences from my Flay The Obscene
+			  series in this one and just tried to make it look like
+			  a very nasty place. Clean and polished with a few new
+			  textures and a lot of baddies!
+-----------------------------------------------------------------------------
+Level			: Map16 (Tryx 'n Traps)
+Author			: Devon West
+Year Created		: 2002
+MIDI			: Blood
+Comments		: First map I made when I became a 'good' wadauthor. Still
+			  not happy with it but it's better than my older maps.
+-----------------------------------------------------------------------------
+Level			: Map17 (Packaging/Shipping)
+Author			: Robert Babor
+Year Created		: 1998
+MIDI			: Ultimate Doom
+Comments		: You'll hate me for making this monster sized map. It
+			  will take over an hour to beat.. This map was the first
+			  to push doom2 far past it's limits and push hellcore
+			  into the realm of source ports and limitless viseplanes.
+-----------------------------------------------------------------------------
+Level			: Map18 (Sect of Power)
+Author			: Brad Spencer
+Year Created		: 2003
+MIDI			: 
+Comments, Darkfyre	: I can't find Brad, so I'll do the honor of commenting here.
+			  This, I believe, was the first map to be completed for Hellcore.
+			  An incredibly nostalgic doom1'ish map. It's big, it's appealing
+			  it's fun and a great challenge. Hope you folks enjoy it!
+-----------------------------------------------------------------------------
+Level			: Map19 (Baron Streets)
+Author			: Devon West
+Year Created		: 1998
+MIDI			: Unknown midi
+Comments		: I always wanted to make a city map. This was the next map
+			  I was going to remake to look realistic to the last detail,
+			  but I havn't had the time. A damn shame really, I still
+			  have never played a realistic 'city' doom map. Maybe someday.
+-----------------------------------------------------------------------------
+Level			: Map20 (Central Docking)
+Author			: Devon West / Some rework by Albert Sposito
+Year Created		: 1999
+MIDI			: Strife
+Comments, Devon		: I felt like making a space station. Had some good ideas but
+			  this map lacks a lot of detail to todays standards.
+Comments, Ismaele	: Of course this map was very good in the concept and had a
+			  great potential. I improved somethings, adding some more
+			  little details to get a nice ambience and a decent graphic.
+			  Since I couldn't reach high results with the previous layout,
+			  I thought to remake it, but school forced me to stop my work.
+-----------------------------------------------------------------------------
+Level			: Map21 (Toxic Waste Treatment Centre)
+Author			: Albert Sposito
+Year Created		: 2003
+MIDI			: 
+Comments		: It is my first and only attempt to make a level
+			  with a sort of urban theme. It presents challenging
+			  difficulty, fun gameplay and nice graphics.
+-----------------------------------------------------------------------------
+Level			: Map22 (Vestibule of War)
+Author			: Robert Babor
+Year Created		: 2001
+MIDI			: Blood
+Comments		: Unfinished, threw in crazy gameplay for the Hell of it.
+-----------------------------------------------------------------------------
+Level			: Map23 (Vestibule of Plague)
+Author			: Devon West
+Year Created		: 2001
+MIDI			: Blood 
+Comments		: Last map I made before I became a decent author. This is
+			  when I started sticking to themes and better texturing.
+-----------------------------------------------------------------------------
+Level			: Map24 (Parasite Dawn)
+Author			: Devon West
+Year Created		: 2004
+MIDI			: Resident Evil
+Comments		: Last map I made for Hellcore. Some areas need work, but all
+			  in all I'm happy with it. The difficulty was set to be map03.
+-----------------------------------------------------------------------------
+Level			: Map25 (Tribulation)
+Author			: Devon West
+Year Created		: 1998
+MIDI			: Hexen
+Comments		: Who loves strobing lights and viles? Again, good for it's
+			  time, crap today.
+-----------------------------------------------------------------------------
+Level			: Map26 (Sheer Chaos)
+Author			: Robert Babor
+Year Created		: 1995
+MIDI			: 
+Comments		: The map that started it all, Ah yes this was the very
+			  first doom map I made.. And the map that made me 
+			  decide to make a 32 level megawad.. oh god what a 
+			  mistake that was heh. Anyway, lack of detail, blocky,
+			  triangle corridors and poorly placed monsters will 
+			  have you cringing and wondering why you even downloaded
+			  Hellcore in the first place. Bah to hell with you all!
+			  I know it sucks, you know it sucks, there's always idclev.			  
+-----------------------------------------------------------------------------
+Level			: Map27 (UAC Compound)
+Author			: Robert Babor
+Year Created		: 1995
+MIDI			: 
+Comments		: The second level I ever created. Again you will love to 
+			  hate it. The gameplay is so brutal, that you will be 
+			  running down 64x64 corridors wondering where to go next,
+			  only to find out that you had to hit a switch on the
+			  opposite end of the map over and over again.. Please
+			  don't hate me, hate my maps instead.
+-----------------------------------------------------------------------------
+Level			: Map28 (Massacre)
+Author			: Robert Babor
+Year Created		: Started in 1996, was currently under revamping
+MIDI			: Doom2
+Comments		: Enjoyable gameplay for it's time. Unfortunately I lost
+			  the revamped version of this map, and frankly havn't felt
+			  like redoing it. Atleast I salvaged part of the beginning.
+-----------------------------------------------------------------------------
+Level			: Map29 (Nightmare's Requiem)
+Author			: Devon West
+Year Created		: 2003
+MIDI			: Freddy's theme
+Comments		: First map I ever made, so it was only suiting I should
+			  remake it to my current standards. Gameplay and enemies
+			  need work, but it's still playable and fun if you like
+		 	  challenges. What 'I' think are some nice visuals.
+-----------------------------------------------------------------------------
+Level			: Map30 (Hellcore)
+Author			: Robert Babor
+Year Created		: 1999
+MIDI			: 
+Comments		: Crappy boss level made in literaly 10 minutes, was not meant to be
+			  even in the wad, just was for fun. However it looks like it's
+			  gonna be included anyway, so enjoy this POS... and yes it is beatable.
+-----------------------------------------------------------------------------
+Level			: Map31 (Ample Prey)
+Author			: Devon West
+Year Created		: 1998
+MIDI			: Ultimate Doom
+Comments		: I just wanted to make a hard yet fun map. Looks terrible
+			  but I still find it fun to play... sort of...
+-----------------------------------------------------------------------------
+Level			: Map32 (Seclusion 'D') *ZDoom only*
+Author			: Robert Babor & Devon West
+Year Created		: 2004
+MP3			: Max Payne
+Comments, Darkfyre	: The last level me and Fusion were working on. Unfinished, glitches
+			  everywhere, no exit, but still rather appealing I think. This entire
+			  map is drawn out and scripted on paper tacked to my bulletin board, it's
+			  a shame it never got finished... You must idclev to get to this map.
+=============================================================================
+* Copyright / Permissions *
+
+Authors MAY NOT use these LEVELS, GRAPHICS, MUSIC, or TEXTURES as a
+base to build additional levels without permission from the authors.
+
+You MAY distribute this WAD project, provided you include this file, and the
+others the are contained within the ZIP, with no modifications.  You may
+distribute this file(s) in any electronic format (BBS, Diskette, CD, etc) as
+long as you include this file intact. Thank you.
+
+If you find any bugs, have questions or comments, e-mail us.
+=============================================================================
+* Where to get this WAD *
+
+Hellcore website: http://hellcore.hotcut.com
+ID Archives at:   http://www.doomworld.com
+=============================================================================
+Author                  : Robert Babor (Fusion)
+Email Address           : hellcore@prontex.ca
+Home Page               : 
+Other Files By Author   : Saydm1
+Misc. Author Info       : Yes I'm the one responsible for all this madness.. 
+			  Back in 95', i decided to create a level (level 26)..
+			  then i thought, "wouldn't it be cool if the level's
+			  connected?". (At the time, i had never seen a set of 
+			  levels do this) Anyway, after level 26 was done, i 
+			  whipped up level 27, and connected the exits.. 
+			  Hellcore was born. I told Darkfyre about my plan 
+			  and he was instantly interested in creating a megawad..
+			  Unfortunately we didn't continue to connect maps as 
+			  most of the maps had 0 planning to them initially.. 
+			  until we became more advanced.. Anyway,
+			  i hope you enjoy this old relic, as we all spent
+			  years making it. All of my levels were never completed;
+			  and i believe it's due to my biggest flaw, perfectionism.
+			  I'm rarely happy with levels i produce, as i always have
+			  much bigger ambitions for them.. Again Enjoy!
+=============================================================================
+Author                  : Devon West (Darkfyre)
+Email Address           : darkfyre_rn@hotmail.com
+Home Page               : 
+Other Files By Author   : Complexive Hell
+Misc. Author Info       : Hellcore was created roughly the same time I got into editing.
+			  Since it's start I've fallen in love with editing, and made
+			  levels for Duke3d, Half-life, Hexen and more. However they
+			  also all fell in the 'never released' file because I'm too much
+			  of a damn perfectionist. It pains me to see this being unfinished,
+			  but atleast somebody somewhere will go through it and enjoy playing
+			  my levels. My thanks goes to the team who worked hard on contributing
+			  to the project, some of the most talented minds in the doom
+			  community, and I'm flattered I was able to work with them.
+=============================================================================
+Author                  : Brad Spencer (Vorpal)
+Email Address           : vorpal@arsenal.net
+Home Page               : http://hellcore.hotcut.com/spencer/
+Other Files By Author   : Select maps from Alien Vendetta
+Misc. Author Info       : Brad is MIA, so I shall give a quick low-down on the legend.
+			  At a time when I had fallen away from editing, and Fusion later
+			  too, it was Brad who kept the project going. When he finished
+			  map18 and I saw it, the nostalgia brought me right back to
+			  good 'ol Hellcore. I quickly hopped back to the helm and basically
+			  yelled at people for not making enough maps ;) Yes, I am a
+			  hypocrite. Nonetheless, if not for Brad, there wouldn't be any
+			  'decent' levels in here at all, and the project probably would've
+			  died right then and there with ugly 1996 maps. Cheers mate!
+
+					-- Darkfyre
+=============================================================================
+Author                  : Chris Hansen
+Email Address           : chr-nygaard@hansen.mail.dk
+Home Page               : http://home13.inet.tele.dk/CNH/
+Other Files By Author   : In a World, Help Yourselfish, Rip it Tear it Smash it!,
+			  Flay the Obscene series.
+Misc. Author Info       : Danish Redneck whos philosophy persists that Sandra Bullock is hot...
+			  and coffee is great.
+=============================================================================
+Author                  : Albert Sposito (Ismaele)
+Email Address           : sposito.lag@tin.it
+Home Page               : http://utenti.lycos.it/ismaele85/
+Other Files By Author   : Blitz series, Outpost of Hell series, 'Alien' series.
+Misc. Author Info       : I would have liked "Hellcore" to be a great full MegaWAD and, when
+			  I took part in this project, I really hoped to contribute in
+			  creating a good .WAD. Unfortunately, in spite of my efforts, the
+			  project came to a deadlock and this really displeased me. Although
+			  I think that it could have been completed, if every member of the
+			  team had devoted himself to it, I must thank the bosses (Fusion and
+			  Darkfyre) for the great occasion they gave me and all the team for
+			  the very useful experience, both in real life and Doom editing.
+			  Thank you for all! =)
+=============================================================================
+©2004 The Hellcore Team
+* Licensed for use with "Hellcore" *
+All Rights Reserved
+=============================================================================

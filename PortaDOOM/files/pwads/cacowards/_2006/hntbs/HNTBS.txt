@@ -1,0 +1,50 @@
+===========================================================================
+Title                   : How Not To Be Seen!
+Filename                : HNTBS.zip
+Release date            : 15 Aug 2005
+Author                  : Wills
+Email Address           : willsh@aol.com
+Other Files By Author   : Some other ones.
+Misc. Author Info       : Hmm.
+Description             : That's right, your favorite comedy sketch by
+                          Monty Python has been converted to Doom format!
+                          It's a movie, so just sit back and watch. Don't
+                          relax, because it's only 1:59 long.
+
+Additional Credits to   : None. This is MY map, you vultures. Shoo.
+
+===========================================================================
+
+* What is included *
+
+New levels              : Yes
+Sounds                  : No
+Music                   : Yes
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+
+
+* Play Information *
+Game                    : Doom 2
+Map #                   : Map01
+Single Player           : Sorta
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : No
+
+* Construction *
+Base                    : From scratch
+Build Time              : One day
+Editor(s) used          : Doombuilder, XWE
+Known Bugs              : None
+May Not Run With...     : Others in a marathon.
+
+* Copyright / Permissions *
+
+Do whatever you want with it, just say I made the base.
+
+* Where to get the file that this text file describes *
+
+http://www.doomworld.com/idgames/

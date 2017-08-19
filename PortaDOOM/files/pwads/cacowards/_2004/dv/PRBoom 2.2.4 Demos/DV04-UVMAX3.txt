@@ -1,0 +1,60 @@
+PWAD - Deus Vult (dv.wad)
+FILE - DV04-UVMAX3.lmp
+Type - UV Max (100/100)
+Map  - Map04 (End of Days)
+Port - PrBoom 2.2.4
+Plr  - Drew DeVore "stx-Vile"
+
+Kills  - 112%
+Items  -   ??
+Secret - 100%
+
+Time   - 13:11
+
+Description: This map is a tough one to approach and come up with a decent
+	     strategy... the one I eventually used here is rather experimental
+	     but the time turned out surprisingly low.  It's a high-risk kinda
+	     deal, so it should be more interesting to watch. :)
+
+	     Some comments on the bitchy points:
+
+
+1) The Opening Fight: There's more sensible ways of handling the start, but I
+		      wanted that BFG right off the bat.  It does a good job of
+		      cleaning things up right away, but you gotta run+pray a few
+		      times before surviving with it and giving the cleanup a try.
+		      Thankfully there's just enough cells to get the job done.
+
+2) The Bloody Temple: Well, my approach to this area was the defining moment for
+		      my little experiment... I let out all the enemies in the 360
+		      degree curve, started some monster fighting, then ran for the
+		      entrance to move on to the next area.  The temple itself is
+		      highly cramped, so it's a good idea to bring some cells along
+		      so you won't have to run into the middle for the bulk cells.
+		      I mostly stay along the outsides, crossing over if I need an
+		      armor or soulsphere (the armor is especially important for
+		      surviving the fight).  As for the monstrous blood pool battle,
+		      it's apparently inspired by AV26's blue key room (the room
+		      made entirely of water) only now more difficult with the added
+		      threat of Cyberdemons and archviles.
+
+		      There's a few things to note: some time after the mancubi and
+		      knights arrive, two ledges along the outside of the arena will
+		      receive an Archvile and some revenants.  Take these out first,
+		      don't even bother with the middle hoards yet.  Some time after,
+		      the archviles and cyberdemons will arrive in the middle.
+		      Continue to circle as long as you can, but be ready to run for
+		      the invincibility at any time... with it, go for those archies. :)
+
+3) Returning Outside: Pretty much another hopeful scenario... pray that a lot of
+		      monsters died in the infighting.  Otherwise, go out and have
+		      fun with the BFG, staying away from the dark archvile towers
+		      until everything else is dead.
+
+4) The Final Battle:  As Huy advises, once you drop in, whatever ammo you brought
+		      with you is all you're gonna be able to use, so let the monsters
+		      do the dirty work first.  In the demo, the spider and cyber
+		      got dropped in a big hurry, so they weren't much help, but 600
+		      cells were. :)
+
+		      As for the Eye, well, sorry.. I had to poke it out.

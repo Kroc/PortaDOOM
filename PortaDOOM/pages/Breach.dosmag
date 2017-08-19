@@ -1,0 +1,37 @@
+$KEY:P=SHELL:pwads\singles\breach\play.bat
+$KEY:T=SHELL:pwads\singles\breach\breach.txt
+$KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/71430-breach-updated-to-beta3/
+
+:Breach                                             * 2015 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>12>28*   Author : _Viggles_
+:Levels   : *1*             Modes : *Single
+:Requires : *zdoom*      Includes : *None
+:------------------------------------------------------------------------------
+
+Sprawling techbase medley with surreal interludes in hell. Assume the usual twaddle about teleportation research gone awry.
+
+This was an exercise in using the original Doom 2 textures and specials to build something very modern: with intricate spaces, long vistas and a bunch of half-assed environmental storytelling. Inspired by No Rest for the Living, Visions of Eternity, Vaporware Demo and Metroid Prime.
+
+(This represents about half of the map I had planned before I hit the seg limit; I may finish the second half at some point before the Earth finally plunges into the Sun.)
+
+*Notes:* Moderate difficulty and designed for rambo-style play, so don't be shy. Mouselook not required. Jumping disabled in ZDoom ports to prevent some sequence-breaking. (Sorry!)
+
+100% completionists: there are several areas you cannot return to after leaving them. These areas contain no items however, and any monsters you encounter within them will always get killed or follow you out.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : About 5 months spread over 1.5 years.
+*Editor(s) used*          : Doombuilder 2, GZDoomBuilder 2.3, Slade 3
+*Known Bugs*              : Slow loading and poor performance in Doomsday. A few slime trails here and there.
+*May Not Run With*        : Vanilla/Chocolate Doom, insufficiently limit-removing ports.
+*Tested With*             : ZDoom 2.7.1, Zandronum 2.0 and 3.0alpha, Doom Retro 1.9, PrBoom+ 2.5.1.2, Eternity 3.34.37, Doomsday 1.15.0
+
+:Credits:
+:------------------------------------------------------------------------------
+ - _Jani Saarijärvi_ for playtesting and invaluable design advice.
+ - The Doomworld forums for playtesting and vital criticism.
+ - My wife, for her "unending patience" (her words).

@@ -1,0 +1,83 @@
+=============================================================================
+Title                   : ZDoom Community Map Project II
+Version			: v1.0 
+Filename                : zdcmp2.pk3
+Date Finished           : May, 19th 2014
+Author                  : Various authors
+Web Page                : http://www.realm667.com/
+E-mail adress	        : info@realm667.com
+
+Description             : As the successor to the ZDCMP1, the second take follows
+			  the same rules: Various mappers and modders are working
+			  on fixed dates/slots on the map and continueing where
+			  the prior person has stopped. Expect a high quality 
+			  Doom experience with countless surprises and numerous
+			  things that push ZDoom to its limits.
+
+Credits 		: The Core Team
+(alphabetical order)	  Apothem - Scripting 
+			  Blue Shadow - Testing, Support 
+			  CaptainToenail - Mapping, Coding 
+			  Chronoseth - Mapping  
+		  	  Deathknight - Testing, Quality Control 
+			  dj-jo - Music  
+			  DTDSphere - Mapping  
+			  Dusk - Mapping, Coding, Textures 
+			  Gez - Mapping, Quality Control 
+			  Ghastly - Coding, Quality Control 
+			  gothic - Mapping  
+			  Grymmoire - Mapping  
+			  GuardSoul - Detailing
+			  Icytux - Music  
+			  Infirnex - Mapping  
+			  Jimmy - Mapping, Music 
+			  Lupinx-Kassman - Mapping  
+			  Malinku - Mapping  
+			  Phobus - Mapping, Quality Control 
+			  Pyroscourge - Mapping  
+			  Shadesmaster - Mapping  
+			  TheDarkArchon - Mapping, Coding 
+			  Tormentor667 - Project Lead, Mapping, Graphics, Textures
+			  Vader - Mapping, Graphics 
+			  Xaser - Mapping, Coding, Quality Control 
+			  Zrrion the Insect - Mapping  
+Additional Credits	: Textures - NiGHTMARE, DrDoctor, Cage, Enjay
+			  Monsters - Scalliano, NMN, Eriance, Melvinflynt 
+			  Sourceport - Graf Zahl, Randy Heit 
+			  id Software - for the greatest game of all time 
+		 	  
+Special Thanks		: We want to thank the whole Doom community for 
+			  feedback, support and the dedication to a game
+			  that's even older than some of our members :)
+                          
+===========================================================================
+
+* Play Information *
+
+Maps                    : ZDCMP2
+Source Port		: ZDoom (latest SVN required)
+IWAD			: DOOM.WAD
+Single Player           : Yes
+Cooperative 2-8 Player  : Yes
+Deathmatch 2-8 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Music               : Yes
+New Graphics            : Yes
+
+
+* Construction *
+
+Base                    : Scratch
+Build Time              : From March 2012 till May 2014
+Editor(s) used          : Photoshop, DoomBuilder 2, GZDoomBuilder, ACC, Slade3
+Known Bugs              : Currently two portals aren't working the way they
+			  are supposed to and nobody was able to fix it until
+			  the release - though in the best case, only experienced
+		 	  Doomers will find them.
+
+* Other Information *
+
+Where to Get		: http://www.realm667.com/
+			  http://www.doomworld.com/idgames/
+Copy Information	: You MUST NOT use material from this project.

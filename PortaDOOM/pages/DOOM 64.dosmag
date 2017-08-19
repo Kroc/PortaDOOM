@@ -1,0 +1,18 @@
+$KEY:P=SHELL:doom.bat doom64ex DOOM64.WAD
+
+:DOOM 64
+:==============================================================================
+*[P] Play                         [W] Website - TC [L] Website - Lost Levels
+:------------------------------------------------------------------------------
+:Released : *1997>03>17*   Author : *Midway Games Inc., iD
+:Levels   : *32*            Modes : *Single
+:Requires : *doom64ex*   Includes : *+Sound +Music +Graphics +Patches
+:------------------------------------------------------------------------------
+
+! *NOTE:* REQUIRES NON-REDISTRIBUTABLE N64 ROM:
+! :----------------------------------------------------------------------------
+! To play, the DOOM 64 ROM named "DOOM64.V64" or "DOOM64.Z64" is required. Place the file in the "files\iwads" folder.
+
+DOOM 64, released March 31, 1997 for the Nintendo 64, is a sequel to DOOM II. The game has all new graphics and runs on a modified DOOM engine, based on the Sony PlayStation port. DOOM 64 was released by Midway, in cooperation with id Software.
+
+The plot focuses on events following the original games in the series. An evil entity known as the Mother Demon has survived and brought back the decaying dead creatures the player once killed. It is up to him, the lone space marine, to stop the legions once again.

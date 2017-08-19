@@ -1,0 +1,49 @@
+# include everything by default;
+!*
+# ignore useless system files
+Desktop.ini
+Thumbs.db
+.DS_STORE
+
+# anything beginning with an exclamation mark will be excluded
+\!*
+**\!*
+
+# don't include PortaDOOM's DOSmag as it will be pulled from the DOSmag folder
+PortaDOOM.exe
+
+# ignore UPX temporary files if left behind
+**.upx
+
+# do not include DOOM files by default (very, very large)
+**.wad
+**.pk3
+**.pk7
+**.n64
+**.v64
+**.z64
+**.bex
+**.deh
+**.lmp
+**.acs
+
+# do not include executables
+**.exe
+**.dll
+
+# do not include misc archive files
+**.zip
+**.rar
+**.7z
+
+# document types excluded
+**.png
+**.jpeg
+**.jpg
+**.rtf
+**.pdf
+**.doc
+**.docx
+**.htm
+**.html
+**.css

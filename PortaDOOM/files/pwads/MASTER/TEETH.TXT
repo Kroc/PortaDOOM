@@ -1,0 +1,166 @@
+
+	   " T H E   E X P R E S S   E L E V A T O R   T O   H E L L"
+
+===============================================================================
+File                    :"teeth.wad"  
+Author                  : Sverre Andre Kvernmo (aka "Cranium")
+Setting                 : Ok, here's the plot: Kick Butt!
+			Gripping, isn't it? In case you are a little more 
+			into story-lines you can keep reading.
+			This and the other of my wads were to be released
+			inside a 32-level "episode" on the internet. But 
+			having id release them is about 666 times cooler. 
+			The plot in the intended episode was as follows:
+			You once were the biggest and baddest Cyber-demon to
+			rule hell and you spear-headed the council that 
+			governed the underworld; "the Cabal". Betrayed by the
+			other members you find yourself not only dismantled, 
+			but also a victim of the utmost demonic humiliation:
+			You've been morphed into a human! Of course you're
+			out for revenge and have to kick the other members of 
+			the Cabal's butts one by one.
+			
+			When the "Express Elevator to Hell" starts descending 
+			the renegade Cabal has begun to realize you might be 
+			a threat to them, human or not. Half way down the 
+			shaft that should have taken you to the deepest pits 
+			of Hell, the lift first slows down before it jerks to 
+			a halt. Ambush! Survive the initial onslaught and 
+			find a gateway out of the now sealed elevator. Tough, 
+			but that's the way you like it...
+
+Credits                 : The whole of id Software for DOOM & DOOM II.
+			Andrew (& Mark) Cornes, Gregory "Acoma" Hyne, 
+			Peter "Pete" Ripley, David "Macca" Mccandless, 
+			Bj›rnar Johansen, Baard Zachariassen and 
+			Stian Danielsen for playtesting, viewpoints, 
+			help, enthusiasm and for being mad bastards. 
+			Oh, and Erling Paulsen for managing to convince me
+			that there was such a thing as a full fledged 
+			Doom-editor, back in early 94. Os!
+			A brand new BFG goes out to Geoff Allan (DOOMed), 
+			Raphael Quinet (DEU), Olivier Montanuy (DeuTex) and 
+			Colin Reed (BSP) plus whoever put together idBSP. 
+			Shawn Green for including me in the project.
+			Last but never least to all other WAD-designers who 
+			have lost themselves in the worlds of tag numbers, 
+			upper textures and vertexes as badly as me, 
+			particularily the other designers that worked on this 
+			add-on. Looking forwards to play your wads dudes!
+Deathmatch 
+bad-arse credits:        Macca, Hunter, Woah, Loki and Pete. You can walk over
+			my melted bodies anytime. Don't hang around that 
+			corner for too long though. I'll silently BFG your 
+			butt!
+
+==============================================================================
+
+* Play Information *
+
+# of Levels             : Two. You'll have a  v e r y  hard time finding the 
+			secret level though >:) (there's a hint for you at
+			bottom of this txt-file for if (when?) you give up). 
+			The secret is called "Bad Dream". Try playing it 
+			from scratch... 
+			Three other wads in this pack was created by me also. 
+			They are: 
+			
+			Black Tower                     (blacktwr.wad)
+			Bloodsea Keep                   (Bloodsea.wad)
+			Mephisto's Maosoleum            (mephisto.wad)
+
+Level Replaced          : Map 31 and 32
+
+
+* Construction *
+
+Base                    : An obsessive personality, lotsa caffeine and lotsa 
+			nicotine. :Q A twiseted mind doesn't hurt either. :)
+			An additional credit should go out to those wad-
+			designers that have inspired me greatly through their 
+			work. I don't know all their names, but the names of
+			their WADs should suffice. Hail the hall of fame:
+			"Nukemine" (old I know, but the supreme numero uno 
+			at it's hayday)
+			"Castle of the Renegades". Best castle-type wad I've 
+			seen.
+			"Eternity"
+			"Dante's Gate"
+			The secret level in the AlienDoom episode was groovy 
+			as well, and "Cleimos" had some nice touches.
+Build Time              : Don't ask, really! First baby steps at "wadding" 
+			taken in the summer of 94. Almost dropped out of 
+			university for this bloody obsession. One reason for 
+			surviving was that I handed in a wad of my campus as 
+			one of my projects. <G>
+			I would guess that I on average spend about 130 hours 
+			on each wad. And it's not because I work slow :)
+Editor(s) used          : DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
+Bugs                    : No way. Shawn has plucked them all out and forced 
+			me to eat them. I hate you if you find some! ;)
+
+			Hope you enjoy the wad.
+
+	   * All comments & questions will be highly appreciated *
+	     
+Sverre Kvernmo
+(it's a norwegian name OK? I'm from Norway smart arse)
+100551.3566@compuserve.com
+
+==============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hint:
+"You might need the help of an enemy..."
+(if that one doesn't do it there's a very unsubtle hint further down...)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hint 2:
+"Let the Arch-vile take you higher"
+You'll need all three (hidden) keys before doing this.
+

@@ -1,0 +1,119 @@
+
+===========================================================================
+Title                   : For Whom The Bell Tolls
+Filename                : belltoll.wad
+Release date            : 11/20/05
+Author                  : didy
+Email Address           : moontrader@gmx.de
+Other files by author	: blofeld x (will be updated one day in 2006)
+Description             : map01 has a metal-tech and a bit industrial style 
+			  map02 (smaller) mostly outdoor-cave style and 
+			  a bit tech style; see also the informations
+			  story: find your friends on a base on mars
+Additional Credits to   : all map-designers who gave me inspirations and tricks
+===========================================================================
+
+
+* Play Information *
+
+Advanced Engine needed  : Yes, any port (zdoom recommended)
+Game                    : DOOM II
+Episode and Level #     : MAP01, MAP02
+Single Player           : Yes 
+Cooperative 2-4 Player  : n/a
+Deathmatch 2-4 Player   : n/a
+Difficulty Settings     : Yes
+New Sounds              : Yes (3 effects in map02)
+New Graphics            : Yes
+New Music               : No
+Demos Replaced          : No
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : many weeks
+Editor(s) used          : doombuilder, wadauthor
+Known Bugs              : none
+			 
+
+
+* informations *
+
+- look in every room/area before entering a key-door
+- walking on nukage does not decrease your health, 
+  but the radiation areas do it, they are signed
+- you can lower the red cylinders
+- if you don't know how to get the blue key, look above
+  or use the computer map
+- Difficulty Settings: skill 2 (for a smooth playing) and 
+  skill 4 (not very hard) have a similar monster-setting
+  skill 3 (first built) has a different monster- and thing-setting
+- first planed to make one map, now you have two
+
+
+* story (if you like) *
+
+He recieved an SOS from his two best friends, which said that they were
+trying to escape with their spaceship from the mars-base, who they were
+working for the UAC Company. Asking them, what happend, the connection 
+interrupted. He went to the mars to help his friends and (game-start) 
+finds the space-ship left. Suddenly he is beamed - the first time in 
+his live. Everyone is angry to him. Will he find his friends? 
+We wish him good luck.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+Your are welcome to use this wad for everything you want to
+(except commercial use) - but please, let me know if you do so.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

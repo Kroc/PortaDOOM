@@ -1,0 +1,84 @@
+Title:                 Happy Time Circus ][
+File name:             circus2.wad
+Email address:         shtbag555@hotmail.com	
+Author:                Shitbag, aka Ray 
+Author info:	       Jack of all DooM trades.
+Other WADs by author:  circus666.wad, dark666.wad, yestrday.wad, many unreleased and unfinished maps.
+
+Credits:		Daniel "Tormentor667" Gimmer: for the blood texture pack (and a constant interest in this project).
+
+			Crista "CD Warrior" Forest: For the cfmansion texture pack.
+
+		 	Christopher "shaithis" Buecheler: I modified one of his mud flats from cwbdoom1.wad.
+
+			The monster resource guys: I copied the 'Hellfire' decorate code because I was
+			too lazy to write it myself.
+
+			ZDoom/ZDoom.org: Cool port, wiki, and forums full of useful information
+
+			The movies Evil Dead, IT, and Killer Clowns from Outer Space.
+
+			Cutmanmike: initial inspiration for circus666 which led to this. 
+
+			findsounds.com: various raw samples
+
+			Acid Pro: sound recording, effects, ect
+
+			CodeImp: Doombuilder, Doombuilder2
+
+			Author of SLumpEd
+
+			Csabo: XWE
+
+			That Wintex guy: for Wintex
+			
+Descrption:             Your car broke down for no apparent reason so you decide to walk to the nearest town. 
+			On your way there you notice an odd occasional balloon here and there elevated slightly
+			above the treeline running along both sides of the road. 
+				"Balloons? What the fuck. This better not be some lame joke wad," you say to 
+			yourself, not even knowing what that means. 
+			You finally arrive at what seems to be the start of a town. The sky is full of thick 
+			layers of unusual clouds. You start to turn and head back but after a few steps you run 
+			into some kind of invisible barrier that wasn't there a second ago. 
+				"I'm going to kill the author of this lame-ass wad." you mutter to yourself, again
+			not knowing what you just meant by that. You realize that the only way out is through 
+			the town. Luckily you brought along your pistol, something you grabbed just as you left your
+			car.
+
+					
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  
+                    
+PLAY INFO
+
+FOR ZDOOM ONLY (use latest version, whatever that is)
+Level requires jumping.
+
+
+New level from scratch.
+
+Game:		       Doom2 + ZDoom
+Single player:         YES
+Co op:                 NO, but player starts are there
+D-match:               NO
+New graphics:          YES
+New sound:             YES
+New music:             YES
+Demos replaced:        NO
+Levels replaced:       Map 01 DOOM2, Map 33 (test level)
+Decorate:              YES
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+CONSTRUCTION
+
+Editors used:          Doombuilder, Wintex, XWE, SLumpEd, Paintshop Pro
+                       Acid Pro 4, Cakewalk, Reason 3
+               
+Known bugs:            1. May run slow due to size of level and effects.
+			2. Some slime trails here and there.
+			3. If using the all weapons cheat, you may switch to a weapon thats not supposed to be used like the rocket launcher or plasma gun. I couldn't figure out how to remove them.
+                      
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+* Copyright / Permissions *
+
+People can use the resources I've created but I'de appreciate at least knowing about it first.

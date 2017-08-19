@@ -1,0 +1,76 @@
+Archive Maintainer      : 
+Advanced engine needed  : ZDoom 2.1.8
+Primary purpose         : Single Play
+===========================================================================
+Title                   : It Only Gets Worse
+Filename                : iogw.wad
+Release date            : Friday, July 6, 2007
+Author                  : Wills
+Email Address           : willsh@aol.com
+Other Files By Author   : Catharsis I & II, Giulio Galassi Must Die, How Not To Be Seen, The Archives Are Doomed, Untitled, Tower 1024, Weirdo Bizarre, Death of an Emo, Nucking Futs!!, etc.
+
+Misc. Author Info       : I replaced N.O.U.G.A.T. with a different level. Is it better? That's for you to decide.
+
+Description             : Jokewad scavenger hunt featuring LUDICROUS GIBS Technology! Jumping and crouching are required.
+
+Story                   :
+
+You're in deep shit. You didn't realize that those rates on "SchlongFest.com" were per-minute, not per-month. That's another few thousand dollars to add to the money you owe to that guy who you borrowed a couple of bucks from... and lost several high-stakes poker games to... and whose car you managed to get to the bottom of the Atlantic Ocean and his insurance didn't cover international waters. You promised each time you'd get him the money you owed him. 
+
+It's pay time now, and you haven't got a single cent to your name. You know this guy and the kind of stuff he does to people who owe him. But he decides to let you off scot-free if you do him a favor or two - just find some stuff for him and he'll let you go. If you decide not to do that... well, you don't value your kneecaps that much, do you?
+
+So off you go, to find his stuff. You can't help but feel this is a needless journey that will put you in unnecessary danger.  Yes, it's a long and tedious quest. Yes, it's dangerous, filled with monsters, demons, and sexual perverts. Yes, it's an immense waste of time to go get trinkets when you could be heading for the border. But consider the alternative. He's got friends in lots of places and you won't get ten feet away without someone of his noticing. So it's best for your health to just trudge off to begin your search, hoping that you'll finish this quest in mostly one piece...
+
+Additional Credits to   : 
+
+My beta testers - Xutawoo, Nutcracker, SMG, Kinsie (betatesting and graphics), and Xaser.
+
+Extra props to Xaser for music and the idea for the one of the endings.
+
+Cutmanmike. You'll see.
+
+Bobby Prince or whoever composed the unused Doom music, especially for "UN30", which I've used 
+(doubtlessly against permission - please don't sue me).
+===========================================================================
+* What is included *
+
+New levels              : 14 Normal + 3 Secret + 1 Titlemap + 1 Cinematic + 1 Hub level = 20!
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : Yes
+Other files required    : ZDoom
+
+* About the Impses *
+
+There is an impse in almost every level. Can you find them all?
+
+* Play Information *
+
+Game                    : QUAKE, DUH.
+Map #                   : Map01 - Map18, Map99 + TITLEMAP
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Noodle without the odle
+Other game styles       : Funkmatch
+Difficulty Settings     : Only so.
+
+* Construction *
+
+Base                    : Random neurons firing inside my brain
+Build Time              : Since mid-January, do the math yourself
+Editor(s) used          : Doombuilder, XWE
+Known Bugs              : That depends on your definition of 'bug'.
+May Not Run With...     : Anything
+
+* Copyright / Permissions *
+
+Do whatever you want, just tell me and give me credit.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com/idgames
+FTP sites: Yeah right

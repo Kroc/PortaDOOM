@@ -1,0 +1,72 @@
+Title                   : Paradox  
+Filename                : Paradox.zip
+Author                  : Tom Mustaine 
+                         
+Email Address           : Mustaine@usa.net / TWM2029@aol.com 
+                            IRC: Paradox _Paradox Paradox2
+
+Misc. Author Info       : *Worked on many various Doom/Doom ][/Heretic >
+Projects.  
+                          *Author Of HEU 1.0b (Heretic Editor Utilitiy.)
+                           One of the 1st Heretic editors to make
+                           use of all the special Sectors, things, and
+                           linedefs.
+                          *Author of Core Music Pack.  A collection
+                           of high quality S3M songs for a unreleased
+                           demo made for Assembly 94.
+                          *Done over 40 Wads for Doom/Doom][/Heretic.
+                           Most unreleased due to a previous lack of
+                           full internet access.  Author of #1Dwango.wad,
+                           A group of levels used by many deathmatchers on 
+                           dwango servers nationwide.
+                          *If you are looking for levels, Music, Graphics,
+Custom Coding.  Contact me.
+                          *President and Lead Designer of MMI / CORE.
+
+Description             : Extreme planning went into the play flow on this
+                          level.  The archeticture is designed around a 
+                          large castle with guard towers that hold each
+                          access key.  The level is extremtly non-linear
+                          to allow for the player to choose a varied path
+                          each time.  Ammo and Health is placed in 
+                          key positions, not enough to be wasteful, but
+                          more than enough to finish the level from
+                          a pistol start.
+                          
+
+Additional Credits to   : Bob Mustaine (Design Stuff)
+
+* Play Information *
+
+Episode and Level #     : Map01
+Single Player           : Yes - Hard level from pistol start.
+Cooperative 2-4 Player  : Yes - Slightly Harder!
+Deathmatch 2-4 Player   : Oh Yes - The non-linear layout allows for
+                                   extreme deathmatch play.
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+New Music               : No
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : From Scratch
+Editor(s) used          : Started with Deu (Ran outta memory) 
+                          Finished with DCK (Much better editor!)
+Known Bugs              : You may die, lot's.
+
+
+* Copyright / Permissions *
+
+This WAD was designed specifically for the ID Software Mission Disk.
+All copyrights and permissions are granted to ID software.
+Authors are suggested to follow federal copyright laws previous to
+editing, or re-releasing of this level in any way.
+
+* Where to get this WAD *
+
+Other: ID Software's Master Level's Disk for Doom ][
+
+<(        Tom Mustaine        )>
+<( Keeper of things developed )>

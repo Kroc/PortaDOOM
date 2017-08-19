@@ -1,0 +1,279 @@
+===========================================================================
+Update to               : hth2.wad
+
+Notice                  : A delayed fix. Hopefully got rid of Map05 startup 
+                          crash problem. Texture checks, minor script 
+                          adjustments etc. Map06 has few detail changes to 
+                          avoid texture alignment issues etc. Maps04-06 
+                          have some fake doors added to the storages (there 
+                          was only air vents as passages, which looked odd). 
+                          Map07 no longer go berzerk with GZDoom.
+
+Advanced engine needed  : Legacy 1.40 (or higher), (or GZdoom too)
+Primary purpose         : Single
+===========================================================================
+Title                   : Hi-Tech Hell 2 - Alien Tech
+Filename                : hth2.wad
+Release date            : 06.10.2006
+
+                          06.06.2005 (original release)
+                          06.16.2005 (fix)
+                          The original edition had certain map objects only 
+                          in the UV mode. Works now on all skill levels.
+
+Author                  : Simo Malinen
+Email Address           : malines24@hotmail.com
+Other Files By Author   : Mainantance Complex (2complex.wad)
+                          Desert Base (2desert.wad)
+                          Oberon Base (2oberon.wad) +some others
+
+Description             : What caused the hellspawn havoc in a remote 
+                          science base? Could it have been a strange 
+                          shipment sent from UAC teleport research 
+                          center, a place called as 'Alien Tech'? 
+                          It's time to find it out.
+
+                          hth2 is a sequel for an (yet) unreleased
+                          ZDoom wad. Featuring a storyline, dummy 
+                          actors, intro/conversations you can skip, 
+                          the very different kind of teleports you've 
+                          ever seen before... and more.
+
+Additional Credits to   : - id for DooM
+                          - Sami Mäki-Mantila (Maxspeed) for playtesting, 
+                            comments and suggestions.
+                          - creators of Legacy, DETH, WinTex & fs-scripts
+                          - creators of many great wads ... for lots of 
+                            inspiration how things should be done
+                          - creators of LaunchTool - a great application 
+                            to run wads with different sourceport versions!
+===========================================================================
+IMPORTANT:
+
+- to avoid memory troubles, run legacy with -mb XXX option, 
+  32 or more should be enough, for example:
+
+legacy.exe -iwad ..\doom2\doom2.wad -file hth2.wad -mb 64
+
+- SAVE GAMES working can't be quaranteed. There's a risk for 
+  "corrupted save game errors", can't help with them - sorry.
+
+see more important notes from the end of this file!
+
+===========================================================================
+GZDoom users:
+
+GZDoom should work nice (tried with 1.0.03). With this fix, cutscenes 
+should play nice and scripts no longer go bazooka with MAP07 (this was 
+a bug in the scripts), etc. However:
+
+- Some 3D objects' texture alignments might go bit wrong.
+
+- 3D bridges with nukage rivers (MAP05 and MAP06) seem not to carry 
+  the painful effect in some versions of GZDoom?
+
+- If you wish to use GZDoom lights, run gzlights.wad with hth2:
+
+gzdoom.exe -iwad ..\doom2\doom2.wad -file gzlights.wad hth2.wad
+
+  (It's just the old doomdefs lump with a few changes) Most of the lights 
+  should work OK, but a couple of light tricks could not be replicated. 
+  (Maybe I'll try an update with this in the future.)
+
+- Probably a trouble with older machines, if you see 3D objects' 
+  side textures being horizontally distorted, try console command 
+  "GL_RENDER_SEGS 0". (the default value = 1) Wonder if this occures 
+  or helps with every machine. (or if it creates new troubles)
+
+===========================================================================
+* What is included *
+
+New levels              : 7 (intro + 6 levels)
+Sounds                  : Yes (ambient sounds)
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (duh, deh)
+Demos                   : No
+Other                   : Yes (animated lumps + scripts)
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01 - 07
+Single Player           : Yes - Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : No?
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : started in 2002 (way too much)
+Editor(s) used          : DETH 4.24 (maps), Zennode 1.1.0, 
+                          WinTex 3.41 (textures/patches, flats, graphics, 
+                          sprites management), WinTex 4.3 (final 
+                          compilation), psp5, goldwave
+Known Bugs              : some, see "bugs/troubles" at the below.
+May Not Run With...     : will run properly only with Doom Legacy 1.40+ 
+                          or compatible. Legacy 1.32beta4 won't work.
+
+===========================================================================
+IMPORTANT NOTES:
+
+
+SKIP'ABLE INTROS
+
+- There are some scripted intros (featuring camera action, 
+conversations, etc.) If you feel you don't want to seem them, but 
+just want to skip'em (and rumble back into action), you can *DO IT*! 
+
+When such an skip'able intro starts, in the left up corner (console) 
+will shortly appear three white dots "* * *" - after that, at any time 
+during the intro just hit "use" (= the key/button you use to open doors, 
+hit switches, etc. ("space", mouse btn2 or 3 by default))
+
+You'll hear a beep. The intro might not stop right away (some 
+camera actions must be completed first) but in few seconds.
+
+NOTE: you can skip them, but they also reveal things about the 
+storyline, becoming events, objectives etc. (making them was not easy, 
+please, look at them atleast once) MAP01 is just one huge intro, 
+if you choose to skip it, you'll beam into intermission screen and 
+continue to MAP02.
+
+NOTE2: you can't skip all of them. Some camera actions take only 
+couple of seconds and you'll just have to live with them.
+
+
+GAMEPLAY
+
+- jumping is required. looking down/up can be useful. 
+  NOTE: you can jump over (almost) every railing in this level set.
+
+- all levels should be dooalble even from a pistol start.
+
+
+GAMEPLAY TIPS/HINTS
+
+- there're plenty of hidden bonuses, weapons & ammo around - some are 
+  hidden in a way only legacy can do!! (3D)
+
+- MAP02: if you feel "short handed" in the beginning (zero ammo) 
+  there're two shotguns in the entry teleport room walls. Use your 
+  fists to get them!
+
+- MAP06: if there's a vacuum inside the long-range teleport chamber, 
+  try shooting pipes. Pipes with holes usually leak air...
+
+- MAP04: (after the first section in the air vents) if there's poison 
+  gas in the air vents it's not recommended to go in there (there's 
+  a way to vent the gas out). However, if you manage to find your way 
+  through the toxic vents, it's OK - the scripts will adapt that and 
+  work a bit differently through the level.
+
+
+"BUGS/TROUBLES"
+
+- there's a risk for "corrupted save game errors" WATCH OUT!
+
+- MAP03 starts with the player automaticly getting teleported 
+  into a pool of legacy 3D water. For some reason I had Legacy having 
+  some troubles with this, a few times:
+
+1.41b - got error messages into console (they can be ignored)
+1.42 - crashed
+
+  If crashing happens to you, before teleportation (when the screen is 
+  black) three white dots "* * *" will appear in the left up corner. 
+  After that you have 2-3 seconds to hit "use", and you'll not 
+  get teleported into the pool, but next to it.
+
+
+- Scripts might not be "full-proof", (there's total 125 kb of scripts)
+  play nice and everything should work nicely.
+
+- the intros are using dummy actors having conversations etc. The green 
+  player IS REPRESENTING YOU (= our marine hero)! If you have chosen 
+  a different color, or are using a skin, you'll be wondering why 
+  in some camera actions you're having your usual outlook while in 
+  some you're a green marine... (that is: do not use skins or your 
+  own colors!)
+
+- MAP02 - 07 are all having "GRAVITY 0.75" commands in their script 
+  files, but for some reason legacy seems occasionally ignoring this 
+  command. (you'll get gravity 1.00 instead) Just nevermind, you should 
+  get everywhere with that too (minus couple of bonuses though).
+
+- if you have no gl support, you'll get a few console error messages 
+  about coronas. Just ignore them, all important scripts will still work!
+
+- legacy could have troubles with translucent walls (= solid windows)
+  Normal textures used in 2s walls could be invisible behind the 
+  window (there's few places where this might occure) Windows also 
+  tend to flash (less translucent vs. more translucent) at some viewing 
+  angles.
+
+- (with some systems) ambient sounds could have troubles, they fade 
+  when you turn and come again when you turn some more. And (with some 
+  systems) coronas might not look too good either?
+
+- in general: there are plenty of stuff I don't know should it be 
+  done like this (such as using boom generalized specials numbers in 
+  fs scripts) but everything seems to work nice with _my_ system...
+
+
+OTHER COMMENTS:
+
+- English is not my native language, so the intros/texts in the game 
+  probably have grammatical errors and expressions that'll sound 
+  "odd" (sorry)
+
+- These levels are not pitch dark! You can see in there! (sorry)
+  but instead of that the detail level is a bit more higher...
+
+- All the flats, textures, patches, graphics and sprites (minus one) 
+  were made for *this* wad. (some base to original Doom textures)
+  Almost all textures are compiled from gazillion itchy-bitchy 
+  sized tiny patches. It saved some megs of space and building 
+  this wad was a hobby (= pure fun ;)
+
+  If you want to use flats or patches in this wad - go a head!
+
+
+PLAYTESTING
+
+- These levels were developed with a "rusty" AMD Athlon 1000, 128Mb 
+  with a NVidia's postcard - and it works great... (uh, couch)
+  I guess any five years younger machine should do fine.
+
+- "Playtested" (walked through) with Legacy versions:
+
+1.40(dos) - should work fine
+1.40, 1.41b, 1.42(win32) - should work fine
+1.32beta32(win32) - does not work
+
+  Most of the developement was done with 1.40(win32).
+
+http://legacy.newdoom.com/
+
+http://prdownloads.sourceforge.net/doomlegacy/legacy_140_win32.zip
+http://prdownloads.sourceforge.net/doomlegacy/legacy_141b_win32.zip
+http://prdownloads.sourceforge.net/doomlegacy/legacy_142_win32.zip
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+

@@ -1,0 +1,306 @@
+**SPECIAL NOTES**
+
+This wad now works in both the latest Official release of
+ZDoom (2.1.x editions) as well as GZDoom.
+
+However, there seem to be some very slight issues regarding GZdoom... The
+fusion cannon's alt-fire doesn't want to work right and the Dynamic Lighting
+support is very incomplete. I would recommend standard ZDoom, although I've
+made sure that it doesn't crash insanely in GZDoom as well... or at least,
+I hope it doesn't! :P
+
+
+Because of the complex nature of this wad, some people tend to get stuck
+in places in some of the maps, so I've included a FAQ in a seperate
+texfile: zendyn_f.txt. If for some reason you get stuck, check there BEFORE
+you ask me something. If you're absolutely sure that your problem isn't
+mentioned anywhere in the FAQ, don't hesitate to e-mail me about it. :P
+
+Finally, in order to view the intro correctly, you need a resolution of
+800x600 or higher. Sorry for the inconvienience or anything. :P
+
+
+Okay, now onward with the standard textfile formation thing or whatever.
+
+===========================================================================
+Archive Maintainer      : You Are Ty.
+Advanced engine needed  : Zdoom (2.1.0 or higher)
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Zen Dynamics
+Filename                : zendyn_x.wad
+Revision                : Version 2.5
+Initial Release         : June 25, 2005
+Anniversary Release     : June 25, 2006  (Happy anniversary, Zen!)
+/Idgames Release	: November 18, 2006  (About time... !)
+Author                  : Xaser "The Conqueror"
+Email Address           : xaser.88@gmail.com
+Other Files By Author   : Tons of weapon replacements, SHiTWADS series, and
+                          I.C.T.O.A.N.
+Misc. Author Info       : Master of Weapon Mods and such.
+
+Description             : One seemingly random day, I was sitting around doing
+                          nothing... when it hit me: The perfect way to make
+                          true reloading weapons in Zdoom. It worked like a
+                          charm in an example wad I put together, but I thought
+                          that a simple demo wad with a single test level would
+                          not do the reloading trick any justice... so two weeks
+                          later, I brought you this:
+                          Zen Dynamics, a Zdoom Revolution.
+
+                          Zen is a 7-level partial conversion, with 10 new guns,
+                          complete with reloading, new baddies, music, textures,
+                          you name it. It has some pretty damn memorable
+                          moments, particularly in Map04 and Map07, and is not
+                          just some quickly thrown together wad.
+
+                          This wad was originally released on the ZDoom forums,
+                          as a "public beta" of sorts, before releasing to the
+                          /idgames archive for all you crazy people to enjoy. :P
+
+                          The initial release only took two weeks to finish, but
+                          as always, it was littered with random bugs and such.
+                          I released several revisions that fixed said bugs,
+                          but I got bored at just fixing minor stuff... so for
+                          the fabled 2.0 release, I added several things: a new
+                          level, a new weapon, and some story elements and such.
+
+                          And now, I present you with the Anniversary Edition,
+                          packed with tons and tons of new features -- Altfires,
+                          Two more new weapons, and a brand-new map, Core Zero,
+                          perfect for mass-destruction addicts! :P
+
+                          Yes, there's a small storyline involved, with the
+                          usual stuff like gateways and UAC and such, but the
+                          intro does a pretty good job at telling it, IMO. :P
+
+                          The highlight of the wad is probably the weapons,
+                          which are pretty much a first in Zdoom history. Just
+                          the combination of advanced weaponry with Zdoom
+                          features like ACS and portals (which I know you'll
+                          love so much more after you've played Map04).
+
+                          Either way, it's been way too long since I've released
+                          anything memorable, and I guarantee you will not
+                          forget this wad. :P Sorry for all the bragging and 
+                          such, but hey.... it's true. :P
+
+Additional Credits to   : SPECIFIC CREDITS:
+
+                          Maps:
+
+                          Malcolm Sailor - Mega-huge thanks for msscraps.zip
+                          (in the prefabs directory at /idgames). Most of the
+                          levels are based on something-or-other from that set.
+                          Thanks, man! :P
+
+                          B. Vanatta - Whatever the B. stands for, does it even
+                                       matter? Anyway, the base for Map02 was
+                                       obtained from his Danzig15.wad deathmatch
+                                       map. Muchas gracias y cosas!
+
+                          Zero Prophet - A bit of 'ghostwriting' in a couple
+                                         areas -- he created a the
+                                         'background' scenes in two maps:
+                                         Map08's city skyline and Map03's
+                                         outdoor fight-scene. Kick ass. :P
+
+                          Weapons:
+
+                          NMN - Kickass weapon artist. He's responsible for
+                                creating the Assault Rifle.
+                          Corrupt Marine - the Dual Plasma SMGs and the
+                                           fusion cannon are his work. Keep up
+                                           the insanely awesome work!
+                          Scero - He drew the graphics for the Scorcher weapon.
+                                  Nice work!
+                          Shinjanji - He did the hand for the Bloodsphere
+                                       weapon, which fits perfectly. Good job!
+                          Xenophon - Created the awesome bullet casing code, 
+                                     used in the game's bullet weapons.
+                                     I still can't thank you enough for that!
+                          Caligari_78 - Creation of the new and improved
+                                        bullet puffs. Your name shall live on
+                                        forever or some such! :P
+
+
+                          Monsters:
+
+                          LilWhiteMouse - The genius behind the Hell's Battery,
+                                          which is possibly the most awesome
+                                          enemy ever created! She was also the
+                                          first one to create the boss health
+                                          bar script, although I scripted my
+                                          version myself. Anyway, big huge
+                                          thanks to her!
+
+                          Misc. Graphics:
+
+                          Apothem - Created the menu graphics and such, which
+                                    kick total ass and such!
+                          MasterOFDeath - Put together the DOOMDEFS lighting
+                                          definitions for use with GZDOOM...
+                                          I can't believe I forgot about this
+                                          for 2.5's release. ;P
+
+
+                          Bug testers:
+
+                          Belial - Found LOADS of bugs everywhere, ranging from
+                                   weapons to maps, and everything in between.
+                                   Thanks a hell of alot and stuff!
+                          Zero Prophet - He's probably played the wad more than
+                                         anyone else... myself included. Nearly
+                                         everything in the wad has been
+                                         bugtested hundreds of times, so muchas
+                                         gracias, mi amigo!
+                          Pika135 - Discovered a strange bug where you could
+                                         jump through the windows to Map04's
+                                    supercharge room, therefore getting stuck.
+
+
+
+
+                          RANDOM CREDITS:
+
+                          (in no order whatsoever) Randy, Id, Graf Zahl,
+                           Grubber, Malcolm Sailor, KronoS, Vegeta, Cory Whittle,
+                          Scero, Chilvence, WildWeasel, Chronoteeth,
+                          TheDarkArchon, Xenophon, Dron, Edward, NMN,
+                          Corrupt_Marine, Maggot_Army, Nanami, Assmaster,
+                          Destroyer, Giest118, Pink, Cyber-Menace, QBasicer,
+                          BioHazard, GeeDougg, Espi, DD_133, Cyb, Bouncy,
+                          Tormentor667, LilWhiteMouse, Quasar,
+                          The Ultimate Doomer, Daniel, TeamTNT, Enjay,
+                          Shinjanji, Belial, HobbsTiger1, Phobus, Kirby, Biff,
+                          HotWax, Carnevil, Russel Pearson, Valve Software,
+                          MasterOFDeath, ACE Team Software,
+                          Rage, Purple Motion, Acidbox, Timelord, Maelcum,
+                          Capcom (for DMC, heh), Ebola, Hyena, Tom_D,
+                          Metamidnight, Jazzy, Zandor, B. Vannatta, Speed Racer,
+                          my Mom, God, and whoever operates the section of my
+                          mind that controls dreams, for that dream I had last
+                          night where I beat the crap out of that evil kid I
+                          hate so much at school... Okay, a bit off topic, but
+                          it was certainly awesome while it lasted. :P
+
+                          I don't even know why I'm thanking over half of these
+                          guys, but oh well. :P
+===========================================================================
+* What is included *
+
+New levels              : 7 or so
+Sounds                  : Yes
+Music                   : Si:
+
+                          Map01: "Numb", by Rage
+                          Map02: "Zen Dynamics", by Xaser
+                          Map03: "War Stars", by Jeroen Tel
+                          Map04: "4th Dimension", by Rage
+                          Map05: "Shadowrun", by Purple Motion
+                          Map06: "No Truth", by Rage, edited by Xaser
+                          Map07: "Rush of Freedom", by Acidbox, edited by Xaser
+                          Map08: "Guild of Sounds", by Rage
+                          Map00: "RPG-Explosion", by Cyn, edited by Xaser
+                          Title: "Yellow Movement", by Rage
+                          Intro: "Deeper Inspiration", by Acidbox
+                          Brief: "VorteX", by Timelord
+                          Inter: "Dark Sun", by Xaser
+                          Boss1: "Neutron Spirits", by Xaser
+                          Boss2: "Mundus's Theme", from Devil May Cry
+                          Speed: "Crazy Speed Mix", by Maelcum
+                          Victory: "Martian Space", by Xaser
+                          Ending: "Light-Years", by Rage
+                          Escape: "Drakk Attack", by Legend (the Unreal II Devs)
+
+Graphics                : Yes! New weapons, monsters, you name it. :P
+Dehacked/BEX Patch      : Yes
+Demos                   : No, because Zdoom is weird when it comes to demos. :P
+Other                   : DECORATE, DECALDEF, SNDINFO, and all that Zdoom stuff.
+Other files required    : Zdoom 2.1.x editions or GZDoom.
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP07 and then some.
+Single Player           : Designed for
+Cooperative 2-4 Player  : No (too scripted in some maps)
+Deathmatch 2-4 Player   : No (definately not)
+Other game styles       : Yes (No)
+Difficulty Settings     : Yes (er, at least, I think so. :)
+Extras			: Eh? What extras? Well, there are two very special files
+                          included in the release, in addition to zendyn_x.wad:
+
+                          zendyn_f.txt : The official Zen Dynamics FAQ... that's the same
+                                          one I used to tack on to the bottom of this
+                                          textfile in all the beta releases. I seperated
+                                          it "for both clarity and confusion" (Zero-ism).
+                          zenblack.wad : In case the standard Doomguy hands don't quite
+                                          tickle your fancy, this add-on is for you.
+                                          Load over the main Zen wadfile and it will add
+                                          black gloves to all the weapons instead of those
+                                          ugly fleshtone things he's always seen wearing.
+                                           :P
+
+
+* Construction *
+
+Base                    : Most are based off levels found in msscraps.zip, found
+                          in the /idgames/prefabs directory. Bigass thanks to
+                          Malcom Sailor for the maps and stuff. :P Map02 is
+                          based on danzig15.wad, so thanks to B. Vanatta for
+                          making that map. :P (Don't worry, both of the 
+                          textfiles to these wads allowed modified levels and
+                          stuff, so try not to complain or anything. :P)
+Build Time              : As of version 2.5, exactly ONE YEAR. Happy anniversary!
+Editor(s) used          : Doom Builder, XWE, Sound Recorder, Paint Shop Pro,
+                          Windows Paint, Notepad, Impulse Tracker,
+                          and so on and so forth. :P
+
+Known Bugs              : There is a minor HOM on the outdoor part of Map04, but
+                          that's due to the dodgy rendering of the portals and
+                          such. Blame Doom's quirky rendering engine. :P
+                          Hopefully, you won't even notice it's there. :P
+
+                          Also, the interior room of Map04's cathedral tends to
+                          slow down the game a hell of alot, so I hope you have
+                          a fast computer. :P
+
+                          Running the wad with GZDoom fixes both of these
+                          problems, but not the following one...
+
+                          Due to Map08's complexity, many of the outdoor areas
+                          have the infamous 'sky clipping' effect (ie, a portion
+                          of sky obscures other structures when it's blocking
+                          your view... you'll understand what I mean).
+                          Unfortunately, this is impossible to fix without
+                          spending days splicing the level and rebuilding
+                          EVERYTHING using portal effects, which would be time
+                          consuming and slow down the wad like hell on a stick.
+                          Sorry for the inconvenience... just blame Zero. :P
+
+May Not Run With...     : Anything other than Zdoom 2.1.x editions or GZDoom
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse, as long as you credit me in some form.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+You MAY swallow a nuclear bomb whole in hopes of committing suicide, provided
+that you make sure the bomb does not have any sharp objects on the outside,
+because that may cause accidental disembowelment. Permissions have been
+obtained from manufacturers of nuclear warheads for any bombs that may
+be used in this event.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirror mazes.

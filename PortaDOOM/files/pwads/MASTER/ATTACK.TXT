@@ -1,0 +1,53 @@
+============================================================
+Title                   Attack
+Filename                ATTACK.WAD
+Author                  Tim Willits
+Email Address           twillits@idsoftware.com
+Misc. Author Info       Level designer for 
+			Rogue Entertainment on Strife.  
+			Creator of the Raven Doom II pwads.
+			
+============================================================
+Features                
+			support for all 5 skill levels
+			great DEATHMATCH level 
+			great outdoor settings
+			well placed monsters
+			use of all three keys 
+			can be completed with out cheating
+			excellent texture alignment
+			great windows for sniping
+
+============================================================
+Additional Credits to   
+
+			Level Tester:   Robert Cody
+			Special Thanks: Theresa Chasar,
+			Doug Chasar, Lona Sandon
+		
+============================================================
+Play Information
+
+Level #                  MAP01
+Single Player            Yes
+Cooperative 2-4 Player   Yes 
+Deathmatch 2-4 Player    Yes 
+Difficulty Settings      Yes
+New Sounds               No
+New Graphics             No
+New Music                No
+Demos Replaced           None
+
+============================================================
+Construction
+			DoomEd ver 1.0 - John Romero,   
+			John Carmack.
+
+============================================================
+Copyright / Permissions
+
+This wad is the property of Id software and may not be
+distributed.
+
+============================================================
+

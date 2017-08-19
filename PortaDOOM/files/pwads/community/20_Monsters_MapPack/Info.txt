@@ -1,0 +1,399 @@
+//=========================================================================/
+[20 MONSTERS CHALLENGE]
+
+Thread link: http://forum.zdoom.org/viewtopic.php?f=19&t=54247
+
+Project lead: Lud
+Co-leaders: Tapwave, BillGuy
+Top guns: leodoom85, Zero X. Diamond, FishyClockwork
+Honorable mentions: Vostyok, unRyker
+Village idiot: SoulCircle
+
+//=========================================================================/
+[CREDITS]
+
+Original idea: wildweasel
+Textures: id Software, CC4 TexturePack, Kingpin Life of Crime, Jimmy, Ultimate Doom, Cage, FuzzballFox, Nick Baker, Enjay, Malinku, Earthquake, Blood, Skynet, Duke3D, Kinsie, TNT, Last Rites, Terminator: Rampage, Doom Alphas, NecroDome, Carmageddon
+Sprites: Doom64hunter, Captain Toenail, Gothic, Monolith Productions, 3D Realms, Captain Awesome, Hayabusa, Lucario, Anarchist, Ghastly_Dragon
+Software: Visual Vincent (Writer Doom)
+Non-map music: HyoChan - Rocks.
+
+//=========================================================================/
+
+User: leodoom85
+Map Name: The Beginning
+Music: N/A
+Slot: MAP01
+Format: UDMF
+Extra Notes: N/A
+Extra Quote: "This is just the beginning."
+
+===============
+
+User: Lil'Devil
+Map Name: Ambush Facility
+Music: N/A
+Slot: MAP02
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Caligari87
+Map Name: To Hell and Back
+Music: Nabernizer - Argent Facility
+Slot: MAP03
+Format: UDMF
+Extra notes: This is my first truely released and finished map. Glad to have finally contributed.
+
+===============
+
+User: Nevander
+Map Name: Underglow
+Music: Hate Machine by Jimmy (30-in-30 2)
+Slot: MAP04
+Format: UDMF
+Extra Notes: I had fun making this... you guys are probably gonna think I'm on crack or something. Lots of colored lighting is used, and so I've included a software renderer friendly version. It won't look as nice but at least everything won't look ugly.
+Lud's Note: Removed software renderer friendly version. Can't jam 2 versions in one map.
+
+===============
+
+User: ZioMcCall
+Map Name: Wrong Direction
+Music: Half life 2-Song 15
+Slot: MAP05
+Format: UDMF
+Extra Notes: More info in the text files.
+
+===============
+
+User: Jimmy
+Map Name: Polarity
+Music: "Space Storm" by Bobby Prince (Duke Nukem 3D soundtrack)
+Slot: MAP06
+Format: UDMF
+Extra notes: N/A
+
+===============
+
+User: Lud
+Map Name: Arena
+Music: UT'99 - Razorback
+Slot: MAP07
+Format: UDMF
+Extra Notes: Take cover.
+
+===============
+
+User: isaacpop23
+Map Name: The Entrance
+Music: N/A
+Slot: MAP08
+Format: UDMF
+Extra Notes: I probably focused too much on detailing the map rather than making it good.
+
+===============
+
+User: Kinsie
+Map Name: Crimes
+Music: "first level" from Fears (Amiga ver.) by Mathieu Berthaud
+Slot: MAP09
+Format: UDMF
+Extra Notes: Map may contain Crimes.
+
+===============
+
+User: Mor'ladim
+Map Name: Abandoned Depot
+Music: The Peacekeepers - Machinery
+Slot: MAP10
+Format: UDMF
+Extra Notes: A small, semi-detailed map with challenging gameplay in certain areas.
+
+===============
+
+User: Vostyok
+Map Name: Ghosts Of Mars
+Music: Custom track by Glaice/Mr.Chris
+Slot: MAP11
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Voltcom9
+Map Name: The Warehouse
+Music : Ain't Going Out Like That (Cypress Hill) Instrumental
+Slot: MAP12
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: BillGuy
+Map Name: UAC Station
+Music: Custom MIDI
+Slot: MAP13
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: FishyClockwork
+Map Name: Treacherous Library
+Music: CBLOOD10 from Blood.
+Slot: MAP14
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Tapwave
+Map Name: Cratered
+Music: Time Trax (SNES) - Level BGM 01
+Slot: MAP15
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Zero X. Diamond
+Map Name: The Mean Streets
+Music: Curt Cool/Depth - Japanese Speedghost
+Slot: MAP16
+Format: UDMF
+Extra Notes: Tried going for a BUILD feel, think I may have gone overboard.
+
+===============
+
+User: NAG
+Map Name: The Cauldron
+Music: "Chief Rebel Angel" by Entombed
+Slot: MAP17
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: SoulCircle
+Map Name: The Abandoned Mine Shaft
+Music: N/A
+Slot: MAP18
+Format: UDMF
+Extra Notes: The story is ingame. Jumping is encouraged, crouching is needed in the end.
+
+===============
+
+User: UnTrustable
+Map Name: Want A Piece Of Me
+Music: N/A
+Slot: MAP19
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Gothic
+Map Name: Lava Pits
+Music: "Nagomi Passage" from Unreal
+Slot: MAP20
+Format: UDMF
+Extra Notes: This time with ammo and health pickups, as well as a new sky and a chainsaw.
+
+===============
+
+User: Zero X. Diamond
+Map Name: The Wicked Sepulchre
+Music: "Ass Kickin'" by Antti Kauppila
+Slot: MAP21
+Format: UDMF
+Extra Notes: Kinsie says I might be a jerk, and I think he's right. Also holy shit I FINISHED A FUCKING MAP
+
+===============
+
+User: UnTrustable
+Map Name: UP
+Music: N/A
+Slot: MAP22
+Format: UDMF
+Extra Notes: Be quick at the end, don't hesitate at the end-room. You need your precious time.
+
+===============
+
+User: Titan314
+Map Name: UAC Research Facilities
+Music: N/A
+Slot: MAP23
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Luigi2600
+Map name: Doomja Vu.
+Music: N/A
+Slot: MAP24
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Vostyok
+Map Name: Tremors
+Music : None
+Slot: MAP25
+Format: UDMF
+Extra Notes: It's got deathmatch starts (why not), and is pretty nasty in UV. Quite short as well I suppose, but you can still get around some of the traps if you're clever.
+
+===============
+
+User: Deviluke Roy / unRyker
+Map Name: Metropolis of Ashes
+Music: Korn - No Place To Hide
+Slot: MAP26
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Janus3003
+Map Name: Bloodbath
+Music: "Infinite" by Tom Mustaine (TNT D_DEAD.mid)
+Slot: MAP27
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Voltcom9
+Map Name: The Crucible
+Music: Return to Castle Wolfenstein - Ravaged Town
+Slot: MAP28
+Format: UDMF
+Extra Notes: Doesn't have much ammo but it was a design choice to do so :P
+
+===============
+
+User: Crazy Toni
+Map Name: Castle Chaos
+MIDI: D_E3M5 from good ol' DOOM
+Slot: MAP29
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: UnRyker
+Map Name: Woeful Hills
+Music: Black Sabbath - Children of the Grave (MIDI)
+Slot: MAP30
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Tapwave
+Map Name: Jigoku
+Music: Dimension of Dreams by Jimmy
+Slot: MAP31
+Format: UDMF
+Extra Notes: Only one secret this time! The exit requires some pain.
+
+===============
+
+User: DrPyspy
+Map Name: Hell Crypt
+Music: Pantera - Mouth for War
+Slot: MAP32
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: Sgt. Shivers
+Map Name: Kill-O-Seum
+Music: Soldier of Chaos - TNT
+Slot: MAP33
+Format: UDMF
+Extra Notes: Has difficulty based spawns.
+
+===============
+
+User: BillGuy
+Map Name: Spawning Grounds
+Music: Custom MIDI
+Slot: MAP34
+Format: UDMF
+Extra notes: :)
+
+===============
+
+User: FishyClockwork
+Map Name: Celestial Abominations
+Music: CBLOOD7 from Blood
+Slot: MAP35
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: leodoom85
+Map Name: Unexpected Turn
+Music: N/A
+Slot: MAP36
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: BillGuy
+Map Name: Sacrifices
+Music: Custom MIDI
+Slot: MAP37
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: leodoom85
+Map Name: Ascend Beyond Hell
+Music: D_TENSE
+Slot: MAP38
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: lwks
+Map Name: The Idol Who Twists Mortal Minds
+Music: E1M8
+Slot: MAP39
+Format: UDMF
+Extra Notes: N/A
+
+===============
+
+User: BillGuy / leodoom85 / Tapwave / Lud
+Map Name: Symbols of the Demon
+Music: Custom MIDI
+Slot: MAP40
+Format: UDMF
+Extra Notes: TOOK ME LONG ENOUGH! -Lud
+
+===============
+
+User: Zero X. Diamond
+Map Name: Where Nazis Belong
+Music: Megadeth - Wake Up Dead (Aahz the Demon Cover)
+Slot: MAP41
+Format: UDMF
+Extra Notes: There's nothing more satisfying than shooting Nazis.  Map completed at the last minute in less than a day!!
+
+===============
+
+User: Zero X. Diamond
+Map Name: 2 Minutes To Midnight
+Music: "2 Minutes To Midnight" as covered by Betrayer and Gothir
+Slot: MAP42
+Format: UDMF
+Extra Notes: Needlessly cruel and with a two minute timer to boot.

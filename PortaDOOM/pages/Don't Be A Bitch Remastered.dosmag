@@ -1,0 +1,68 @@
+$KEY:P=SHELL:pwads\multiplayer\dbabrm\play.bat
+$KEY:T=SHELL:pwads\multiplayer\dbabrm\dbabrm.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
+
+:Don't Be a Bitch Remastered                        * 2015 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>08>13*   Author : *Mechanix Union (see credits section)
+:Levels   : *33*            Modes : *Last Man Standing 2-12 plays, Deathmatch
+:Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics
+:------------------------------------------------------------------------------
+
+33 maps suitable for Team/Last Man Standing.
+Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons ONLY.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                  : Blank Screens
+*Build Time*            : 8 months total
+*Editor(s) used*        : Many
+*May Not Run With...*   : Anything that does not support 3D Floors + Hexen and UDMF Format
+
+:Credits
+:------------------------------------------------------------------------------
+_Jan Van der Veken_, _Espi_, _Nightmare_, _Cage_, _Eriance_, _Vader_, _Dr3k_, GothicDM, CounterStrike, _David Gevert_, _DrDoctor_, _Ola Björling_, _psyren_, _François-Xavier Delmotte_, _GOTHMASH_, _HeavenWraith_, _Dusk_, _aguares_, and Raven Software for textures. We apologize to any possible individuals whose resources were used but who were not credited in the above list.
+
+_Tormentor667_'s Fury of Fire for 20 and 25's SkyBox. _Bloax_ for the titlepics. _Pun1sh3r_ for 'Remastered' edit.
+
+*MK Sprites:* Copyright Midway Games
+
+*Music Credits:* Full credits in mapinfo.
+
+*Level Info*
+
+*Dbab01:* Fade - _Decay_
+*Dbab02:* Azazel's Unholy Roast - _Dusk_
+*Dbab03:* Stay Alive - _Strangle_/_CombineBobNT_
+*Dbab04:* Corridor Corral - _Keo_
+*Dbab05:* Mighty Sweep - _Strangle_/_Dusk_
+*Dbab06:* Complexed Doom - _CombineBobNT_/_Ru5tK1ng_
+*Dbab07:* Eve - _Strangle_/_Decay_
+*Dbab08:* Take Two - _Ru5tK1ng_
+*Dbab09:* Complex Omega - _Decay_
+*Dbab10:* Chaotic Field - _Strangle_/_Ru5tK1ng_
+*Dbab11:* Desperate Run - _Strangle_/_Ru5tK1ng_
+*Dbab12:* Hyberbaric - _Jdagenet_
+*Dbab13:* L'Hospital's Rule - _Argentum_
+*Dbab14:* Lunar Base - _Ru5tK1ng_
+*Dbab15:* Fat Smile Sanctuary - _CombineBobNT_
+*Dbab16:* Clientside Orbiter - _Argentum_
+*Dbab17:* Anubis Machine - _Dusk_
+*Dbab18:* Overclocked Machinapolis - _Dusk_
+*Dbab19:* Prosopopoeia - _Grymmoire_
+*Dbab20:* Operation Metal Extraction - _Decay_
+*Dbab21:* Paranormal Digg Site - _HeavenWraith_
+*Dbab22:* Spirit Temple - _Decay_
+*Dbab23:* The Murder of Lord Unfinisher - _HeavenWraith_
+*Dbab23:* High Voltage - _Grymmoire_
+*Dbab24:* Final Liberation - _Ivan_
+*Dbab25:* Beyond Omega - _Decay_
+*Dbab26:* Nightfall of Premonition - _Ru5tK1ng_
+*Dbab27:* Forage - _Mobius_
+*Dbab28:* Reborn Mechanics - _Strangle_/_Decay_
+*Dbab30:* Captive Satellite - _Argentum_
+*Dbab31:* Surrender to Ivan - _Ivan_
+*Dbab32:* Azure Agony - _Ivan_
+*Dbab33:* Within the Sea of Solaris - _Argentum_

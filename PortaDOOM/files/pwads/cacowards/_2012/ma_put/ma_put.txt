@@ -1,0 +1,36 @@
+================================================================
+Title                   : Putrefier
+Filename                : ma_put.pk3
+Author                  : Ed Cripps 
+Email Address           : ecripps83@yahoo.com
+Misc. Wad info          : 
+                          
+Source Ports Required	: GZdoom
+			  ======================================
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Graphics            : Yes
+New Music               : Yes.  Made by me in FL Studio, cover of Zombi 2 theme
+Demos Replaced          : none
+* Construction *
+
+Base                    : New level from scratch
+Editor(s) used          : Doombuilder 2, Adobe Photoshop, FL Studio, Goldwave
+Known Bugs              : Large spire cut off by sky in one location - decals warp
+			  on certain 3d objects.
+* Additional Credits*
+
+Beta Testing		: Essel, Tormentor667, Mechadon
+Pustule Monster		: Captain Toenail
+
+The legal gibberish 
+and other nonsense      :
+
+Authors may NOT use this level as a base for their own creations without permission.  Any and all graphics / textures MAY be used but not sold.

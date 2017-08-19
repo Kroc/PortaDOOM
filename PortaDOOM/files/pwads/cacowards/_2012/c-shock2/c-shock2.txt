@@ -1,0 +1,105 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Combat Shock 2
+Filename                : c-shock2.wad
+Release date            : 2012-10-20
+Author                  : Daniel "dannebubinga" Jakobsson
+Email Address           : daniel.tomhet@gmail.com
+
+Description             : 7 new slaughtermaps. Hard enough to turn you into a combat wounded veteran. Use pr/gl-boom+ for
+                          best performance. Complevel 9 or die! 
+Other Files By Author   : Combat Shock
+                          Slaughterfest 2011 (map08-12)
+Misc. Author Info       : Made my first maps around 99-00 but they were
+                          crap. Picked up mapping again in 2010 and it's
+                          going pretty well now. 
+
+
+Additional Credits to   : Big thanks goes out to:
+                          
+                          -Phml and j4rio for playtesting like crazy.
+                          
+                          -gggmork, Nevan and ancalagon for playtesting
+                          some more. 
+                          
+                          -darkreaver for being overall awesome and kind.
+                          
+                          -Grain of salt (where the hell are you anyway
+                          buddy?) for the status bar.
+ 
+                          -Primeval for letting me use his awesome midi
+
+                          music credits:
+
+                          Map01: tnt - map10
+                          Map02: From: vile flesh - map18 by...?
+                          Map03: Primeval - Stigmatism
+                          Map04: Descent - d_cent06
+                          Map05: Resident Evil - The joy of life
+                          Map06: plutonia map32
+                          Map07: Kevin Schilder -- "E2M4", from Heretic.
+                          Resident evil 2 save room music
+
+                          Texture credits:
+
+                          Afterglow, CC4-tex (by various peeps), q1-tex and myself for the yellow sky in map 04 & 05. 
+
+                          Sprite credits: 
+
+                          Zombie skin by Bouncy
+
+                          Shotgunner skin by Ghastly_dragon
+
+                          Green chaingunner skin by TheDarkArchon
+===========================================================================
+* What is included *
+
+New levels              : 7 new maps from scratch
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Inside the patch
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-7
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes box!
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : On and off for 10 months
+Editor(s) used          : Doom builder 2, slade 3, doom word, paint,
+                          photoshop, whacked
+Known Bugs              : Some mis-alignments here and there
+May Not Run With...     : vanilla doom or some weird port that no one uses
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse as long as it doesn't turn out like shit. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+http://www.doomworld.com/vb/wads-mods/61564-combat-shock-2-release-candidate/

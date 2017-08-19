@@ -1,0 +1,254 @@
+===========================================================================
+Advanced engine needed  : Boom compatible
+			  (see Important note below)
+Primary purpose         : Single play
+===========================================================================
+
+ _____ _   _ _____    _____ _   _ ______ _____ _   _ _____________   __
+|_   _| | | |_   _|  |_   _| | | || ___ \  ___| \ | |  _  |  _  \ \ / /
+  | | | |_| | | |(_)   | | | |_| || |_/ / |__ |  \| | | | | | | |\ V / 
+  | | |  _  | | |      | | |  _  ||    /|  __|| . ` | | | | | | | \ /  
+  | | | | | | | | _    | | | | | || |\ \| |___| |\  \ \_/ / |/ /  | |  
+  \_/ \_| |_/ \_/(_)   \_/ \_| |_/\_| \_\____/\_| \_/\___/|___/   \_/  
+
+===========================================================================
+
+Title                   : THT: Threnody
+Filename                : thtthren.wad
+Date of release		: July 31st 2016
+Author                  : Various (see credits below)
+
+===========================================================================
+
+Credits      		: Project leader:
+			  Chris Hansen
+
+			  Level design:
+			  Angry Saint, antares031, Chris Hansen, Didy,
+			  dobu gabu maru, Doomkid, Fonze, Gothic,
+			  joe-ilya, Philip "Liberation" Brown, Mechadon,
+			  Mithran Denizen, Paul Corfiatis and Z0k		
+			  
+			  Music by:
+			  Alfonzo, CCR Inc. Doomhuntress, Digimon Online,
+			  Eris Falling, Gridlock, Jimmy, JDoyle,
+			  Joe Satriani, KevinHEZ, King Diamond, Metroid,
+			  Paul D, Paul Corfiatis and Vital.
+
+			  Intro music by:
+			  Paul Corfiatis
+
+			  Textures:
+			  Team TNT
+			  Minor edits by Fonze and didy
+
+			  Art, HUD and skies:
+			  Mechadon
+
+			  Testers:
+			  antares031, Ashstrodamus, Chris Hansen, Cynical,
+			  dobu gabu maru, Doomkid, EffinghamHuffnagel,
+			  Fonze, Gez, Keyboard_Doomer, Mithran Denizen,
+			  Obsidian, rdwpa, rhinoduck, Tritnew, schwerpunk,
+			  SteveD, Surreily, Touchdown, WH-Wilou84 and Z0k
+
+			  Compiling and stuff:
+			  Mithran Denizen, Chris Hansen
+
+			  Additional credits to:
+			  geo for starting the project!
+			  dew, Gez, Linguica and all the rest of the
+		 	  wonderful people on the Doomworld forums!
+
+===========================================================================
+
+Level credits		: MAP01 "Eirene"
+			  by Chris Hansen
+			  music "Emerencia" by King Diamond
+
+			  MAP02 "Rockage"
+			  by joe-ilya & Chris Hansen
+			  music "Atroxian Realm" by Gridlock
+
+			  MAP03 "Chemical Facility"
+			  by Paul Corfiatis
+			  music "Dream Haze" by Paul Corfiatis
+
+			  MAP04 "Manly Hatred"
+			  by Chris Hansen
+			  music "Mechanical Illuminations" by Paul Corfiatis
+
+			  MAP05 "Nukevil"
+			  by Doomkid
+			  music "On the hunt" from DOOM E1M6
+
+			  MAP06 "Cut Throat"
+			  by Doomkid
+			  music "TechFear" by Paul Corfiatis
+
+			  MAP07 "Fort Halderman"
+			  by Gothic
+			  music "Control" by Jimmy
+
+			  MAP08 "Fightnancial Crisis at Enwrong"
+			  by dobu gaby maru
+			  music "Run for your life" by Paul D.
+
+			  MAP09 "Forgotten Reaches"
+			  by Doomkid
+			  music "Kraid's Lair" by Metroid
+
+			  MAP10 "Fomalhaut"
+		   	  by Mechadon
+			  music "Gutter penny" by Alfonzo
+
+			  MAP11 "Parallel Dimension"
+			  by antares031
+			  music "Digimon Online" by CCR Inc.
+
+			  MAP12 "WormHell"
+			  by Z0k and Fonze
+			  music "Death's Bells remix" by KevinHEZ
+
+			  MAP13 "Binde Haldetmand Palae"
+			  by Paul Corfiatis
+			  music "Medi Evil" by Paul Corfiatis
+
+			  MAP14 "Labour of Despair"
+			  by Philip "Liberation" Brown
+			  music "Remix of Quarry" by JDoyle
+
+			  MAP15 "TY45-15"
+			  by didy
+			  music "Legion of the lost remix" by Doomhuntress
+
+			  MAP16 "Ayahuasca"
+			  by Chris Hansen
+			  music "Flood the city" by KevinHEZ
+
+			  MAP17 "Tyvivec"
+			  by Angry Saint
+			  music "Zoetic" by Vital
+
+			  MAP18 "Fallen Steward - Eternal Archive"
+			  by Mithran Denizen
+			  music unknown
+
+			  MAP19 "Big Freaking Guardians"
+			  by Fonze and didy
+			  music "War" by Joe Satriani
+
+			  MAP20 "Sky Pillar"
+			  by antares031
+			  music "Legion of the lost remix" by Eris Falling
+
+===========================================================================
+
+Story       		: One of the more important and highly secret UAC
+			  installations has been severely compromised by
+			  a demonic invasion from Hell. There are reports
+			  of near complete annihilation of all personnel,
+			  however the worst part is, that it is now
+			  painfully clear that the UAC executives screwed
+			  up as they stationed one the military's top
+			  generals there to oversee the completion of a
+			  multitude of secret projects. The UAC knew that
+			  these installations would be a high priority
+			  target for the next attack from Hell and sending
+			  the decorated general there - well knowing that
+			  an attack was imminent - was a bad move. The general
+			  is a skilled soldier and is most likely still
+			  alive and held as prisoner; Hell knows better than
+			  to kill him. His last transmission was sent from
+			  inside a spacecraft. It is unknown whether or not
+			  he made it off the ground. You, being one of the
+			  best and most lethal weapons of the UAC, have been
+			  tasked to go to the planet in search of answers
+			  and to bring the general home should he still be
+			  alive. If not, then your mission is clear:
+			  Kill everything and avenge the general.
+
+===========================================================================
+
+Description		: Ty Halderman, the essential pillar of the Doom
+			  community, passed away in 2015. He is greatly
+			  missed and his contributions to the Doom scene
+			  have helped keep this old game alive and kicking.
+			  This project tries to honor Ty with levels that
+			  pay tribute to his work be it in the form of
+			  his levels or contribution to the Boom sourceport.
+
+			  For more information on Ty go to this website,
+			  which has links to everything you need to know
+			  about him as well as the community's condolences:
+			  https://www.doomworld.com/vb/doomworld-news/
+			  74184-idgames-maintainer-ty-halderman-passes-away-at-69/
+			  
+			  There are 20 levels in this megawad along with
+			  plenty of new music and awesome new, original skies!
+			  The project also uses a big part of Team TNT's
+			  The Return and Final Doom: Evilution ressources.
+			  We enjoyed putting this project together and the
+			  level of commitment from all those involved should
+			  be visible in the final result. In short: We hope
+			  you enjoy playing it as much as we enjoyed making it!
+
+===========================================================================
+
+* Play Information *
+
+Episode and Level #     : DOOM2 MAP01-20
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (player starts on all maps)
+Deathmatch 2-4 Player   : Yes (not available on all maps)
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Music               : Yes
+New Graphics            : Yes
+Demos Replaced          : Yes
+
+* Construction *
+
+Base                    : New levels from scratch
+Build Time              : 1 year
+Editor(s) used          : Doom Builder 2, Slade 3, Paint.net, Gimp, Wcleaner,
+			  Doom Font Writer, WhackEd4
+Known Bugs              : None.
+May Not Run With...     : Vanilla Doom
+How To Run The File	: Anyway you prefer, like:
+			  "prboom.exe -iwad doom2.wad -file thtthren.wad"
+
+Important Note		: The maps use sky transfers so for the best and
+			  intended experience use PrBoom+ ver. 2.5.1.4
+			  with -complevel 9.
+
+			  Get your copy of PrBoom+ here:
+			  https://sourceforge.net/projects/prboom-plus/files/doom2-plus/
+
+===========================================================================
+
+
+* Copyright / Permissions *
+
+Authors may NOT use these levels as a base to build additional
+levels. If you want to use skies or music from the pwad, then please
+ask for permission first by the respective authors (see credits above).
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+===========================================================================
+
+
+* Where to get this WAD *
+
+http://www.doomworld.com/idgames
+
+
+R.I.P. Ty
+"And the stars look very different today"
+                          
+
+(end of document.)
+

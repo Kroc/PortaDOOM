@@ -1,0 +1,17 @@
+^C:Singles Only
+
+:==============================================================================
+
+!WARNING: This page is very incomplete. A lot more to come in future releases!
+
+$KEY:X=GOTO:Breach
+:Breach
+
+$KEY:X=GOTO:Pinnacle of Darkness
+:Pinnacle of Darkness
+
+$KEY:X=GOTO:Sheer Poison
+:Sheer Poison
+
+$KEY:X=GOTO:dead.wire
+:dead.wire

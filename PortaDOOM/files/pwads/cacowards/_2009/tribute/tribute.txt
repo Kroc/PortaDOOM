@@ -1,0 +1,90 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : Tribute.WAD
+Advanced engine needed  : Skulltag 0.98a or newer
+Primary purpose         : Single+Coop play
+===========================================================================
+!!! IMPORTANT !!!
+This is lite version with music of bad quality. For proper version
+see "Web sites" on the bottom of this file. Rest of this wad is exactly
+the same as the full version.
+===========================================================================
+Title                   : Tribute - This is not the best wad in the world - Lite Version
+Filename                : Tribute.WAD
+Release date            : 2009-02-26
+0.98a version release	: 2009-10-26
+Author                  : Zalewa
+Email Address           : zalewapl@gmail.com
+Other Files By Author   : Alpha & Delta Invasion (dtinv3a.pk3), Terminator 
+                          Unit-9042 (terdelux-final.wad), some single or
+                          community project maps.
+Misc. Author Info       : I'm an IT student from Poland.
+
+Description             : World War III ended with massive use of biological
+                          weaponry. 99% of Earth population died almost 
+                          immediately. Remaining people who were immune hid
+                          themselves in underground shelters escaping from the 
+                          individuals who also survived but went completely 
+                          insane. 50 years later your "family" received 
+                          an unreadable radio transmission from a nearby town.
+                          You were sent to investigate...
+                          (see docs/author.notes.txt for techincal info)
+                                                     
+
+Additional Credits to   : Read docs/credits.txt.
+===========================================================================
+* What is included *
+
+New levels              : 4 actual levels, 8 maps
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01 - MAP07, TRIBEND
+Single Player           : Designed for.
+Cooperative 2-4 Player  : Yes.
+Cooperative 4+ Player   : Not recommended. (See docs/author.notes.txt)
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes (See docs/author.notes.txt)
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 8 months
+Editor(s) used          : Doom Builder, SLumpEd
+Known Bugs              : Some cosmetic issues in multiplayer, nothing serious.
+May Not Run With        : Anything but SkullTag
+Tested With             : Skulltag 0.98a
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://skulltag.com/forum/viewtopic.php?f=12&t=17708
+           http://supergod.servegame.com/zalewa/tribute.zip
+FTP sites:
+

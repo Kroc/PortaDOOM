@@ -1,0 +1,127 @@
+================================================================
+Title                   : Decade
+Filename                : decade.wad
+Distributed As...	: decade.zip
+Release Date		: 3rd June 2004
+
+Author                  : Russell Pearson
+Email Address           : rddp@duellist.net (subject title 'DOOM')
+Website			: www.duellist.net
+                          
+Description             : A single player level for ZDoom.
+
+Additional Credits to   : Nigel 'Enjay' Rowand - playtester.
+			   Enjay's 'little place of doom' is at 
+			   http://www.btinternet.com/~Enjay001
+
+			  Sock - I used a couple of Sock's Q3A
+			   grate textures. His website can be found
+			   at http://www.planetquake.com/simland
+
+
+Other Files By Author   : Null Space     	 	(nulspace.zip)
+			  Doom Raider (lite version)	(dr1-lite.zip)
+			  Doom Raider (full version)	(dr1-full.zip)
+			  Lego Base	 	 	(legobase.zip)
+			  Lego Base Enhanced 	 	(legob-sp.zip)
+			  Tunnel Run     	 	(tun-run.zip)
+			  Blastem 2      	 	(blastem2.zip)
+			  DoomTown		 	(doomtown.zip)
+			  Deleted Scene  	 	(deleted.zip)
+			  Deleted Scene2 	 	(deleted2.zip)
+			  Okori				(okori.zip)
+			  Close Kill     	 	(c-kill.zip)
+			  Voidtest       	 	(voidtest.zip)
+			  Lego Textures  	 	(legotex.zip)
+			  Wood gfx       	 	(woodgfx.zip)
+			  Doom2 Flats    	 	(d2flats.zip)
+			  Lego Base Original Cut 	(legob-oc.zip)
+			  Fear Spirits			(fearsprt.zip)
+			  Twin Pistols			(twingun.zip)
+			  ZDoom Tooth Door		(toothy.zip)
+			  Spider Demon Railgunner 	(railspdr.zip)
+			  
+================================================================
+* Play Information *
+
+Advanced engine needed  : Yes. ZDoom (whatever the latest version is.
+				      I tested this using Zdoom cab63.)
+New Levels		: Yes
+Episode and Level #     : MAP 01
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+Recommended Difficulty	: Ultra Violence
+New Sounds              : No
+New Graphics            : Yes
+New Music               : from Doom(1)
+Dehacked/BEX Patch      : Yes
+Demos Replaced          : No
+Other files required    : None
+
+* Construction *
+
+Base                    : This was built from scratch but based on a number
+			  of sections from the original Doom1 and Doom2 maps.
+
+Editor(s) used          : Wintex, PSP, Wad Author, Dehacked, XWE and Notepad :)
+Known Bugs              : None
+
+================================================================
+* Copyright *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.
+
+This level is copyright Russell DD Pearson (2004). You may
+distribute this file in any electronic format (BBS, Diskette,
+CD, etc) as long as you include this file intact.
+================================================================
+
+* Blah de blah de blah *
+
+Decade.....
+
+11th December 2003 was Dooms 10th anniversary. I only found out about this in mid
+November but decided I should make a map to celebrate the fact anyway. I'd had this
+idea kicking around in my head for a MAP01 E1M1 hybrid for quite a while so I set
+about building that. The 3 odd weeks I had to complete the map was going to be tight
+but I though it managable. How wrong I was :)
+
+I did pretty much finish the map within the alloted time period but it was, to put
+it mildly, rubbish. So I abandoned that idea, salvaged what was good from it and
+exapanded it from there. 6 months later this is the result. It's effectively a number
+of re-interpretations of areas from Doom1 and Doom2 maps thrown together.
+
+It's probably far too linear and a lot larger than I originally planned (it'll probably
+take most people just under a hour to complete). This level throws ALOT of monsters at
+you and at certain points in the map there is the potential for the player to stand in
+the doorway and just shoot everything that comes out of the room. I realise that it's
+not going to be to everyones tastes.
+
+I designed this map to be played on UV skill setting. I have made slight modifications
+for the lower skill levels. On HMP you'll get the shotgun almost immediately and a few
+of the monsters have been removed (and I mean a FEW). On skills 1 and 2 you'll also
+get the green armour immediately and slightly more healing and ammo at certain points
+in the map (but not a great deal more). A few more monsters have been removed (or
+changed) for levels 1 and 2.
+
+Jumping is allowed. In fact you'll need to jump, but there is nothing too tricky.
+
+There are loads of areas from Doom maps that I would loved to have included in this
+map but I had to draw things to a close otherwise I'd have never finished this.
+
+The title screen doom logo was taken from a doom desktop image that was in turn a
+modification of the q3a install screen. Can't remember who did this modification.
+If the author contacts me i'll adjust this text file to credit him (or her).
+
+Finally, happy birthday to my son Matthew, who is 7 today :)
+
+-Russell Pearson (3rd June 2004)
+ 
+email: rddp@duellist.net (put 'DOOM' in the subject title or your email may be
+			  accidently deleted as spam).
+
+
+

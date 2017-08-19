@@ -1,0 +1,196 @@
+MAP CREDITS
+===========================================================================
+MAP01: BITTER SWEET by Mr. Freeze and Krispavera
+       Based on SWEET.WAD by James Bearden
+
+MAP02: TAREDONE by CodenniumRed
+       Based on TTADOM11.WAD by Bilbo, Reepicheep, Technocop, Jonnybag
+
+MAP03: HYPER-VYPER by Travers Dunne
+       Based on VIPER.WAD by Ash
+
+MAP04: HADES HOUSE OF HORRORS - PART 1 by Mr. Freeze
+       Based on HHH-21.WAD by Robert Zubek
+
+MAP05: BCS01 by Masayan
+       Based on BCS01.WAD by Brian and Craig Sparks
+
+MAP06: HADES HOUSE OF HORRORS - PART 2 by Lareman 
+       Based on HHH-22.WAD by Robert Zubek
+
+MAP07: DEAD TEMPLE by Travers Dunne
+       Based on EXECUTE.WAD by Steven Doornbos
+
+MAP08: HELIPAD by Snarboo
+       Based on HELIPAD.WAD by Sean R. Malloy
+
+MAP09: BUG HUNT! by Greyghost, DoomHero85 and Travers Dunne
+       Based on XENO11.WAD by Daniel Griffiths
+
+MAP10: MELANGE V2 by Maggot202
+       Based on MELANGE.WAD by Kenneth S. Forte
+
+MAP11: ELEMENTS by ArmouredBlood
+       Based on ELEMENTS.WAD by Henry Chang
+
+MAP12: RAWNWOOD by MajorRawne and Travers Dunne
+       Based on WOODHAL2.WAD by David Damerell
+
+MAP13: THE UNWILLING by Travers Dunne
+       Based on WILLE1M1.WAD by William Leslie
+
+MAP14: COMCON2 by Maggot202
+       Based on COMCON.WAD by Patrick Hipps
+
+MAP15: CRATEBASE by Travers Dunne
+       Based on TECHBASE.WAD by Brandon Reinhart
+            \-> Based on MINE1.WAD by Geoff Allan
+
+MAP16: INFINITY PLUS by Malinku and Phobus
+       Based on VAMPIR5.WAD by Darrell Bircsak
+
+MAP17: TUNNELS by 40oz
+       Based on TUNNEL11.WAD by Dominique Lavergne
+
+MAP18: SUBWAY REDUX by UOD
+       Based on SUBWAY.WAD by Neal Ziring
+
+MAP19: UNDERSEA by Dragonsbrethren
+       Based on UNDERSEA.WAD by Brian Plumb
+
+MAP20: OUTLAND by Tatsurd-Cacocaco
+       Based on OUTLAND.WAD by Russell Gruber
+
+MAP21: RETURN TO ULTIMA by 40oz
+       Based on ULTIMA.WAD by Jon Charlson (Chaff)
+
+MAP22: RETOUR EN LE NEFARIOUS CHATEAU by Walter Confalonieri
+       Based on NEFCAT.WAD by Denver J. Curtis
+
+MAP23: BCS03 by Tatsurd-Cacocaco and Solarn
+       Based on BCS03.WAD by Brian and Craig Sparks
+
+MAP24: FORTIFIED CASTLE by Krispavera
+       Based on FORTCSTL.WAD by Dominique Lavergne
+
+MAP25: FORT BORG by ArmouredBlood
+       Based on FORTBORG.WAD by John C. Boyle
+
+MAP26: A BEAUTIFUL DAY IN THE NEIGHBORHOOD? by Printz
+       Based on ABDITN.WAD by Grant Monroe
+
+MAP27: WETWORKD2 by rf'
+       Based on WETWRKD2.WAD by Zen Psychosis
+
+MAP28: THE NIGHTMARE by Masayan
+       Based on ICENITE2.WAD by VT Ice
+
+MAP29: THE CASTLE INVADED BY HELL by Tatsurd-Cacocaco
+       Based on HELLCAST.WAD by Richard Dignall
+
+MAP30: PURE EVIL by Walter Confalonieri and Travers Dunne
+       Based on PUREEVIL.WAD by Doug Ryerson
+
+MAP31: ORIGINAL SIN by Travers Dunne
+       Based on ORIGWAD.PWD by Jeffrey Bird
+
+MAP32: CYBERPIE by Walter Confalonieri
+       Based on PIE.WAD by James Ojaste
+
+MUSIC CREDITS
+===========================================================================
+d_runnin : d_e3m1 from bestmus.wad
+d_stalks :
+d_countd : d_e1m2 from skunkmus.zip
+d_betwee : d_betwee from draft2_1.wad
+d_doom   :
+d_the_da :
+d_shawn  : d_dead from draft2_1.wad
+d_ddtblu :
+d_in_cit :
+d_dead   : d_e1m1 from bestmus.wad
+d_stlks2 :
+d_theda2 : Roar of the Double Dragon
+d_doom2  : d_betwee from draft2_1.wad
+d_ddtbl2 :
+d_runni2 : d_in_cit from musrej1.wad
+d_dead2  :
+d_stlks3 :
+d_romero :
+d_shawn2 :
+d_messag :
+d_count2 :
+d_ddtbl3 :
+d_ampie  :
+d_theda3 :
+d_adrian :
+d_messg2 :
+d_romer2 : d_doom from draft2_1.wad
+d_tense  :
+d_shawn3 :
+d_openin :
+d_evil   : d_e1m9.mid from skunkmus.zip
+d_ultima :
+d_dm2ttl : d_introa from draft1_1.wad
+d_dm2int : d_intro from skunkmus.zip
+d_read_m : d_e1m1 from skunkmus.zip
+
+GFX CREDITS
+===========================================================================
+CREDITS, INTERPIC GFX and TITLEPIC by GreyGhost
+DOOM1 texture recreations by The Freedoom Project
+SKY1_94 by Konami (Contra 3 Cityscape)
+94_SKY13 by id Software (Doom Press Release)
+XENOSKY by Daniel Griffiths
+RAWNSKY by Rich Nagel
+SKY4 by id Software and Raven Software (Combination of Doom 2 SKY1 and Hexen sky)
+
+MAPPERS
+===========================================================================
+40oz
+ArmouredBlood
+CodenniumRed
+DoomHero85
+Dragonsbrethren
+Greyghost
+Krispavera
+Lareman
+Maggot202
+MajorRawne
+Malinku
+Masayan
+Mr. Freeze
+Phobus
+Printz
+Rf'
+Snarboo
+Solarn
+Tatsurd-Cacocaco
+Travers Dunne
+UOD
+Walter Confalonieri
+
+PLAY TESTERS
+===========================================================================
+DoomHero85
+MegaDoomer
+Memfis
+Snarboo
+Super Jamie
+Talvi
+Tatsurd-Cacocaco
+Travers Dunne
+dew
+Jodwin
+neg!ke
+
+ADDITIONAL CREDITS AND THANKS
+===========================================================================
+Project Coordinator : Snarboo
+WAD Coordinators    : Travers Dunne and GreyGhost
+
+Thanks to members of the Doomworld forums for their support, playtesting
+and feedback.
+
+Special thanks to the original authors whose work formed the base for this
+project.

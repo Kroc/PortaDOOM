@@ -1,0 +1,107 @@
+===========================================================================
+Advanced engine needed  : Limit Removing
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Absolutely Killed
+Filename                : killed.wad
+Release date            : June 30, 2016
+Author                  : Ryath/scwiba
+Email Address           : [redacted]
+Other Files By Author   : Tower of Lies (lies.wad)
+Misc. Author Info       : His spirit animal is a frog.
+
+Description             : A full episode of short, concept-oriented maps
+			  for Ultimate Doom. Beware: Not your traditional
+			  Doom WAD.
+
+Additional Credits to   : id Software
+			  CodeImp, SlayeR, and Visual Vincent -- creators
+				of Doom Builder, SLADE, and Doom Writer
+			  TITLEPIC font, "You Murderer", by Nate Piekos
+			  Playtesters:
+				DragonRider
+				Cyanosis
+				NoisyVelvet
+				Albertoni
+				Suitepee
+				AnonimVio
+				vadrig4r
+				Pirx
+				ShadesMaster
+				Magnusblitz
+				kuchitsu
+				cortlong50
+				
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : Just reused Doom midis
+Graphics                : No
+Dehacked/BEX Patch      : Included in WAD
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : E1M1-E1M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts only (untested)
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Primarily over six weeks (January and February 2016)
+			  with playtesting and polishing throughout March
+Editor(s) used          : Doom Builder 1.68, SLADE3, Doom Writer
+Known Bugs              : None
+Tested With             : PrBoom+ (complevel 2), Eternity, ZDoom
+
+
+* Map List *
+
+		M1: Barons of Fun*
+			*fun is a subjective term
+		M2: Boxed In
+			Or by its alternate title, "Just Out of Reach."
+		M3: Call Apogee Say Aardwolf
+			Do you like secrets? Have I got a map for you!
+		M4: Hold the Hots
+			There are more ways to get burned than imp fireballs.
+		M5: Battery Park
+			Never stop moving; never stop shooting.
+		M6: Don't Go Into the Light
+			Go into the light, I dare you.
+		M7: The Pain Maze
+			"That level was complete shit." -John Suitepee
+		M8: Kill or Be Killed
+			Good things come to those who kill barons.
+	
+		M9: 'O' of Oscillation
+			Where moving floors are king.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

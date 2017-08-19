@@ -1,0 +1,22 @@
+$KEY:T=SHELL:play.bat TNT
+$KEY:P=SHELL:play.bat PLUTONIA
+$KEY:W=SHELL:https://doomwiki.org/wiki/Final_Doom
+
+:Final DOOM
+:==============================================================================
+*[T] Play TNT [P] Play Plutonia   [W] Website
+:------------------------------------------------------------------------------
+:Released : *1996>06>17*   Author : *iD software
+:Levels   : *32+32*         Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla*    Includes : *+Sounds +Music +Graphics +Demos
+:------------------------------------------------------------------------------
+
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TNT.WAD" & "PLUTONIA.WAD":
+! :----------------------------------------------------------------------------
+! If you own _"Final DOOM"_ or _"DOOM Classic Complete"_ on GOG / Steam it will be detected automatically, otherwise place the files in the "files\iwads" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing Final DOOM.
+$KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
+$KEY:S=SHELL:http://store.steampowered.com/sub/18397/
+
+Final DOOM is a pair of standalone Doom II modifications, TNT: Evilution and The Plutonia Experiment, which include full sets of new levels, some new graphics and textures and some new music in the former case, in addition to most of the resources from Doom and Doom II. It was published on June 17, 1996 by id Software under the initiative of John Romero and developed by members of the fan community belonging to TeamTNT.
+
+Evilution has a much more technical theme with levels that are akin to real buildings, versus Plutonia, whose floor design tends more toward a natural landscape feel.

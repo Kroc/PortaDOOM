@@ -1,0 +1,260 @@
+==============================================================================
+		    	    Super Sonic DooM - Enemies
+==============================================================================
+
+There are lots of enemies in Super Sonic DooM, here's an overview of them:
+
+
+================================Basic Enemies=================================
+
+
+------------------------------------------------------------------------------
+			    Former Human (Score: 50)
+------------------------------------------------------------------------------
+
+Used to be human, now a zombie with a pop-gun.  Only a risk at low health.
+
+------------------------------------------------------------------------------
+			    Former Sergeant (Score: 100)
+------------------------------------------------------------------------------
+
+Also a zombie, but carrying a shotgun and quite a punch.
+
+------------------------------------------------------------------------------
+			    Former Commando (Score: 150)
+------------------------------------------------------------------------------
+
+Another zombie, but with a chaingun that's guaranteed to annoy at all ranges.
+
+------------------------------------------------------------------------------
+			    Imp (Score: 200)
+------------------------------------------------------------------------------
+
+The most basic of born monsters, these throw fireballs and scratch at you.
+
+------------------------------------------------------------------------------
+			    Lost Soul (Score: 250)
+------------------------------------------------------------------------------
+
+A flaming skull that acts as a full-body weapon, these will easily show up in 
+any light, but can attack underwater.  They favour dark and cramped places.
+
+------------------------------------------------------------------------------
+			    Demon (Score: 300)
+------------------------------------------------------------------------------
+
+Fast-moving pink thing that'll rip your head off if you get too close to it.
+Only they're now faster than ever before, so they're no pushover now.
+
+------------------------------------------------------------------------------
+			    Cacodemon (Score: 400)
+------------------------------------------------------------------------------
+
+The killer tomato.  Flies around and attacks underwater, too.  Doesn't like 
+pain though, and is fairly easy to hit, so it's not too bad.
+
+------------------------------------------------------------------------------
+			    Hell Knight (Score: 500)
+------------------------------------------------------------------------------
+
+A tough bruiser with a tough fireball and pain resistance, too.
+
+------------------------------------------------------------------------------
+			    Pain Elemental (Score: 600)
+------------------------------------------------------------------------------
+
+Not only do they fly and swim, they also throw lost souls at you!  At least 
+they have no close-range attack and they don't like pain themselves, making 
+them easy to take down.
+
+------------------------------------------------------------------------------
+			    Revenant (Score: 700)
+------------------------------------------------------------------------------
+
+A fast but fragile skeletal being, armed with a punch and homing missiles! 
+Guaranteed to have you dancing at high speeds.
+
+------------------------------------------------------------------------------
+			    Arachnotron (Score: 800)
+------------------------------------------------------------------------------
+
+A noisy mechanical spider with a plasma gun.  Dangerous if they get going, but
+also have a low pain tolerance and while their weapon is nasty, they take time
+to aim it, and the plasma stream can easily be walked into other monsters...
+
+------------------------------------------------------------------------------
+			    Mancubus (Score: 900)
+------------------------------------------------------------------------------
+
+A big fat ugly thing, packing some heavy firepower.  He's slow and easy to 
+hit, but is quite strong too, and one blast from his weapon could be too much.
+
+------------------------------------------------------------------------------
+			    Archvile (Score: 1100)
+------------------------------------------------------------------------------
+
+A truly dangerous foe.  Faster than most, tougher than most, can blow you away
+with just one spell and on top of that can resurrect other monsters!  He is 
+vulnerable when casting his spells though, and he can only resurrect certain 
+types of monster.
+
+------------------------------------------------------------------------------
+			    Mini Cyberdemon (Score: 1500)
+------------------------------------------------------------------------------
+
+Yes, the cyberdemon now has offspring.  These are a bit smaller, have bright 
+yellow circuitry and sport a rapid-fire plasma gun.  It's not all bad though, 
+as they're only half as strong as their father figures.
+
+
+==============================Enhanced Enemies================================
+
+
+------------------------------------------------------------------------------
+			    Enhanced Imp (Score: 350)
+------------------------------------------------------------------------------
+
+These are faster, stronger and slightly larger than ordinary imps, but still 
+attack with their claws and fireballs, although the fireball is more harmful.
+They come in a variety of colours, depending on the zone you're in.
+
+------------------------------------------------------------------------------
+			    Suicidal Soul (Score: 450)
+------------------------------------------------------------------------------
+
+Sporting a fiery green haircut, these skulls move faster, take more to stop 
+and they have a tendency to explode when close enough to you!
+Like their fiery red cousins, they favour dark, cramped environments and can 
+also attack underwater.
+
+------------------------------------------------------------------------------
+			    Enhanced Demon (Score: 650)
+------------------------------------------------------------------------------
+
+These are larger, faster and stronger than ordinary demons, and consequently 
+they'll annoy you more, especially in close quarters!
+They come in a variety of colours, depending on the zone you're in.
+
+------------------------------------------------------------------------------
+			    Rail Elemental (Score: 850)
+------------------------------------------------------------------------------
+
+Don't be transfixed by their bright blue eye, as when that mouth opens you'll 
+have to be quick to avoid a devastating railgun attack!  They're slightly 
+quicker than the pain elementals, but they can still attack underwater.
+
+------------------------------------------------------------------------------
+			    Baron of Hell (Score: 1000)
+------------------------------------------------------------------------------
+
+These are a lot like Hell Knights, only they're pink-chested, are twice as 
+tough, and have now evolved so they throw out multiple fireballs!
+
+------------------------------------------------------------------------------
+			    Enhanced Cacodemon (Score: 1200)
+------------------------------------------------------------------------------
+
+These are larger, faster and stronger than ordinary cacos, and throw out 3 
+fireballs instead of one.  Like their red counterparts, they also have the 
+ability to attack underwater, so beware!
+They come in a variety of colours, depending on the zone you're in.
+
+------------------------------------------------------------------------------
+			    Revenant Terminator (Score: 1400)
+------------------------------------------------------------------------------
+
+A dangerous opponent, these wear fetching orange trousers and have upgraded to
+full-sized rockets!  But despite being tougher and larger than the original 
+red version, they do have a tendency to hurt themselves as well as you.
+
+------------------------------------------------------------------------------
+			    Shadow Archvile (Score: 2000)
+------------------------------------------------------------------------------
+
+One of the worst of an even badder lot! He's partially invisible, is twice as 
+hard to take down and is quicker at casting his spell!  Fortunately these are 
+quite rare, but when you meet one you'll really have to be on your toes!
+
+------------------------------------------------------------------------------
+			    Giant Mancubus (Score: 3000)
+------------------------------------------------------------------------------
+
+Just when you thought he couldn't get any fatter, he doubles in size!  He's 
+also turned blood-red in colour, pumps out more fireballs quicker and takes 
+an awful lot more hits to puncture him. He tends to shrug off explosions, too.
+But he's still quite slow, so take advantage of this when battling him.
+
+------------------------------------------------------------------------------
+			    Spider Mastermind (Score: 4000)
+------------------------------------------------------------------------------
+
+A giant mechanical spider with a super-chaingun.  However they've now been 
+programmed to resist pain a lot better, so they're a lot tougher than before.
+
+------------------------------------------------------------------------------
+			    Cyberdemon (Score: 5000)
+------------------------------------------------------------------------------
+
+A rocket-launching skyscraper with goat legs and plenty of danger. 'Nuff said.
+
+
+===============================Mercenary Enemies==============================
+
+
+These ex-marines have been hired as mercenaries to help security at various 
+places.  They come in 11 different flavours, each one with a different colour 
+and wielding a different weapon, which they will drop when you kill them. 
+Speeds, strengths and scores vary with mercenary.  A table is below:
+
+		Fist 		  - White/Grey  	(Score: 100)
+		Berserk 	  - Purple/Blue 	(Score: 350)
+		Chainsaw 	  - Tan/Brown    	(Score: 200)
+		Pistol 	  	  - Grey/Dark Brown     (Score: 300)
+		Shotgun 	  - Orange/Dark Orange  (Score: 400)
+		Chaingun 	  - Yellow/Tan 		(Score: 500)
+		Super shotgun     - Red/Dark Red    	(Score: 600)
+		Rocket launcher   - Brown/Tan  		(Score: 700)
+		Plasma gun 	  - Blue/Indigo   	(Score: 800)
+		Railgun 	  - Indigo/Black 	(Score: 900)
+		BFG 		  - Green/Natural Green (Score: 1000)
+
+(Colours are listed as body armour/boots+shoulder pads, no helmets are worn)
+
+There are also NPC's (non player characters) that you will come up against, 
+and they will be somewhat tougher to beat than the mercenaries - notably 
+they wield multiple weapons and their armour flashes different colours.
+
+
+==============================Stealth Enemies=================================
+
+
+One of the newest inventions of FAC is the stealth pack, a state-of-the-art 
+security system that renders the wearer totally invisible!  Fortunately, an 
+attack by the wearer will disrupt the effect for a short time, and the packs 
+are issued only in the most important and heavily guarded locations.
+Only basic enemies can wear stealth packs, a score table is below:
+
+Stealth former human - 100
+Stealth former sergeant - 200
+Stealth former commando - 300
+Stealth imp - 350
+Stealth lost soul - 450
+Stealth demon - 550
+Stealth cacodemon - 650
+Stealth hell knight - 850
+Stealth pain elemental - 950
+Stealth revenant - 1150
+Stealth arachnotron - 1250
+Stealth mancubus - 1350
+Stealth archvile - 1550
+Stealth mini cyberdemon - 1950
+
+
+==============================Boss Enemies===================================
+
+
+There are also a few boss enemies present - these will flash various colours 
+and wield a deadly attack!  They're also extremely tough to knock down but 
+the reward will be worth it.
+
+=============================================================================

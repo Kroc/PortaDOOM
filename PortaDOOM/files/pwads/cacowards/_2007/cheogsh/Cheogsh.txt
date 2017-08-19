@@ -1,0 +1,75 @@
+===========================================================================
+Archive Maintainer      : -
+Update to               : -
+Advanced engine needed  : GZDoom 1-0-24 
+Primary purpose         : Single play
+===========================================================================
+Title                   : Cheogsh
+Filename                : Cheogsh.wad
+Release date            : 2.08.2007
+Authors                 : Shadowman
+			  KoLoBoK[iddqd] (he made one location in the map - his Flat) 
+Email Address           : ishadowman@mail.ru
+Other Files By Author   : Hellfire.wad
+Misc. Author Info       : http://darkwatcher.narod.ru
+
+Description             : One map - a large map! I devote this wad to KoLoBoK[iddqd], my best friend,
+			  who suddenly died in 2007, may 12.
+Additional Credits to   : ID Software for the best game Doom,
+			  3EPHOEd (for modified Doom Builder)
+			  Klon -KLBK (made a titlepic)
+			  ConsT (helped me in scripting)
+			  R_R]ASTS[-KLBK (testing), 
+			  KDIZD Team (for new monsters),
+			  http://iddqd.ru.
+			  
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (decorate objects) 
+Demos                   : No
+Other                   : No
+Other files required    : none
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : Jumps, crouch, free mouselook
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 15.06.2007 - 9.07.2007, 31.07.2007 - 2.08.2007 
+Editor(s) used          : Doom Builder 1.68v (modified by 3EPHOEd), XWE 1.16
+Known Bugs              : None
+Tested With             : GZDoom 1.0.24
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use ressources of this file as a base for
+modification or reuse.  
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://darkwatcher.narod.ru
+FTP sites: -
+

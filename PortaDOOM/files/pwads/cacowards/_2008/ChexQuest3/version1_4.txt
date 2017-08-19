@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------------------------------------------------------
+Chex Quest 3 Revision History
+--------------------------------------------------------------------------------------------------------------------------------
+
+Version 1.4 changes
+
+- updated source code to ZDoom version 2.3.1
+- "mikekoenigs" and "scottholman" cheats are now consistent with original chex.exe
+- flem mine slam no longer hurts flemoids
+- Removed unnecessary IFOG lumps
+- Adjusted exterior window pane visual effects in E1M4
+- Fixed missing LAZ Device from boss room in E1M5
+- Blocked monsters from using the lift near the red key in E2M1
+- All monster caches in E2M5 have been turned into player-activated traps
+- New textures and details added throughout
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Version 1.3 changes
+
+- Select TUCQ textures and details have been added to E1M1, E1M3, E1M4, E2M1, E2M3 and E2M4
+- Added white particle fountains to transporters
+- Tweaked the offsets of HUD key graphics
+- Made hidden tunnel with the bootspork a secret area in E1M5
+- Fixed missing diner chef prop in E2M1
+- Blocked a tunnel in E2M5 that allowed you to complete the mission without the blue key
+- Made the elevator near the armor secret in E3M2 more user-friendly
+- New slimey character set for the shell screens
+- Added IFOG sprites for respawning MP items
+- All maps have been given 8 deathmatch start locations
+- New textures and details added throughout
+- Credited Manny Cav for Quality Assurance
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Version 1.2 changes
+
+- Changed HUD graphics to accomodate flem keys
+- Fixed quick exit bug in E1M1
+- Corrected redundant secret sectors in E1M1 and E1M3
+- Reconciled E3M5's name as "Meteor Spaceship" in the language lump
+- Fixed hidden flemoids in E1M5 which could not be attacked by the player
+- Created exit locations from slime pit on E2M4
+- Eliminated the need for player to locate secrets to complete E3M2 and E3M4
+- Removed unnecessary door linedefs in several maps
+- Fixed several doors which were flagged as non-repeatable which could be progression stoppers
+- Removed secret sector tags from areas that can be reached via normal progression doors or lifts
+- Texture errors corrected throughout
+- New textures, details and secrets added in a few maps
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Version 1.1 changes
+
+- Added new music for E3M4 and E3M5 from Strife.
+- Set up all maps with player starts 1-4 for coop play
+- Created exit location from 1st balcony in the control room of E3M1
+- Restored erroneous E1M4 powerups
+- Various texture errors fixed

@@ -1,0 +1,37 @@
+$KEY:P=SHELL:play.bat pwads\MASTER\CANYON.WAD /LEVEL 1
+$KEY:T=SHELL:pwads\MASTER\CANYON.TXT
+$KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Canyon_(Master_Levels)
+
+:Canyon                                           (Master Levels for DOOM II)
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *1995>12>26*   Author : _Tim Willits_
+:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla*    Includes : *None
+:------------------------------------------------------------------------------
+
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "CANYON.WAD":
+! :----------------------------------------------------------------------------
+! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
+$KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
+$KEY:S=SHELL:http://store.steampowered.com/sub/18397/
+
+ - support for all 5 skill levels
+ - great DEATHMATCH level 
+ - great outdoor settings
+ - well placed monsters
+ - use of all three keys 
+ - can be completed with out cheating
+ - excellent texture alignment
+ - great windows for sniping
+ 
+:Construction
+:------------------------------------------------------------------------------
+DoomEd ver 1.0 - _John Romero_, _John Carmack_.
+
+:Credits:
+:------------------------------------------------------------------------------
+*Design:* _Theresa Chasar_
+*Level Tester:* _Robert Cody_
+*Special Thanks:* _Doug Chasar_, _Lona Sandon_

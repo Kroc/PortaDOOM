@@ -1,0 +1,5 @@
+0.99 -> 1.0
+* Fixed a mismatched ceiling texture near the red key on E1M2.
+* Fixed a lightlevel that was off on E1M5.
+* Set a linedef type on E1M8 to "stop crushing ceiling" that was accidentally set to turbodoor.
+* Added some stuff to the credits section in the textfile.

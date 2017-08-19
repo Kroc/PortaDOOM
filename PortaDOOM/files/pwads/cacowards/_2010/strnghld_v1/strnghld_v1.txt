@@ -1,0 +1,166 @@
+=============================================================================
+Title                   : Stronghold
+Version			: v1.0 
+Filename                : strnghld_v1.pk3
+Date Finished           : November, 8th 2010
+Author                  : Various
+			  (see below for a more detailed listing)
+Web Page                : http://www.realm667.com/
+
+Email Addresses         : webmaster@tormentor667.de
+
+Description             : You know Doom, it is always the same, get some weapons, 
+			  infiltrate the destroyed UAC base or demon hive, kill 
+			  all the monsters and hellspawn and find the exit switch. 
+			  This was Doom... until now: Stronghold is a mixture of 
+			  Unreal Tournament's Assault mode and Skulltag's Invasion 
+			  mode. Defend your Stronghold against hundreds of monsters, 
+			  divided into several waves. Earn points, get rewards between 
+			  waves and let no single enemy pass! 
+
+GZDoom Settings		: Lighting Mode MUST be "Standard" style
+				
+Credits & Special Thx   : Tormentor667 		- Project Lead & Idea, Sprites,
+(in thematical order)			 	  Portable Pickups & Powerups,
+						  Special Effects, Monsters, DECORATE,
+						  Intermap, Mapping (20 maps), Resource
+						  Management, Graphics, Custom HUD, SBARINFO
+						  Coop Playtesting
+		  
+                          Morbid Doomer 	- Mapping (support)
+			  Skillsaw		- Mapping (3 maps)
+                          MaxPower 		- Mapping (support)
+                          Morpheus 		- Mapping (4 maps)
+                          Vader 		- Mapping (3 maps), Monsters, Textures
+                          Mechadon 		- Mapping (support)
+                          Icytux 		- Sprites, Coop Playtesting
+                          Starscream 		- Mapping (3 maps)
+			  Chopkinsca		- Mapping (1 map)
+                          Keksdose 		- Mapping (2 maps), GLDefs
+                          Josh 			- Mapping (2 maps)
+                          Chilvence		- Coding, Mapping (support)
+                          Solarsnowfall 	- Coding, Special Effects
+                          Jimmy91 		- Coding, Quality Control
+                          Agent ME 		- Skulltag compatibility
+                          Lexus Alyus 		- Music
+                          AgentSpork 		- Bigfont
+                          Eriance 		- Sprites, Weapons, Monsters, Textures
+                          Okulo 		- Voice Acting
+                          wildweasel 		- Sound Replacements, Quality Control,
+						  forcing us to add him to the creSTRdits
+                          Captain Toenail 	- Sound Replacements, Monsters
+                          SoulPriestess 	- Development FTP and Forum, Tomed Weapons, 
+						  Quality Control, Miss "Numerous-Ideas",
+						  Playtesting
+			  Nightmare 		- Textures
+			  Esselfortium		- Textures
+			  Phobus		- Mapping (support)
+			  Farlowj		- Mapping (support)
+                          Graf Zahl & Randy     - Support, GZDoom/ZDoom
+                          Torr Samaho           - Playtesting, Skulltag, as well as support
+                          Enjay 		- Sprites (Marine Assault)
+                          Cutmanmike 		- Coding (Shop System)
+			  AgentME		- Coding (main script overhaul & perfection), Quality Control
+			  Ichor			- Auto Drone Powerup Base
+			  Torr Samaho		- Technical Support in terms of Skulltag
+
+			  Rex Claussen 		- Beta Testing
+			  Damage 		- Beta Testing
+			  Wartorn 		- Beta Testing
+			  Geometer 		- Beta Testing
+
+                          DRDTeam.org 		- Development Forum
+                          Ocean 		- Music (Tunnel B1)
+                          Origin 		- Music (Wing Commander)
+                          3D Realms 		- Sprites, Textures & Sounds (Duke Nukem 3D)
+                          LucasArts 		- Sprites (Dark Forces)
+                          Rogue Entertainment 	- Sprites (Strife)
+                          The ZDoom Community 	- For gWILDreat support!
+                          The Skulltag Team     - For yet another great source port!
+
+			  Additional custom monsters by Ben2K9, Neoworm, Insanity Bringer, Maelstrom, TiC
+			  Additional support by Firebrand, Hotwax, Ichor, blzut3, Carnevil
+
+			  Thanks to all that might have got lost in our chaos of giving the proper
+			  credit to everyone who helped us to finish this masterpiece!
+
+Map List		: STR01 "Introduction" (Tormentor667)
+			  STR02 "Too Young to Defend" (Tormentor667)
+			  STR03 "Swamp" (Tormentor667)
+			  STR04 "Asteroid" (Tormentor667)
+			  STR05 "Twilight" (Tormentor667)
+			  STR06 "Downtown" (Tormentor667)
+			  STR07 "Sandstorm" (Morbid Doomer / Tormentor667)
+			  STR08 "Tropical Paradox" (Skillsaw)
+			  STR09 "Volcanic Installation" (Josh / Morpheus / Tormentor667)
+			  STR10 "Skyfire Research" (Morpheus / Tormentor667)
+			  STR11 "Tunnel" (Tormentor667)
+			  STR12 "Dangoo Desert" (Vader)
+			  STR13 "Inferno" (Mechadon / Tormentor667)
+			  STR14 "Orbit" (Tormentor667)
+			  STR15 "Armageddon" (Icytux)
+			  STR16 "Frozen" (Tormentor667)
+			  STR17 "Slaughtered" (Morpheus)
+			  STR18 "Delta Bunker" (Phobus / Morpheus)
+			  STR19 "Tarstone Fortress" (Vader)
+			  STR20 "Dusk" (Keksdose)
+			  STR21 "Overmind" (Tormentor667)
+			  STR22 "Locus of Pestilence" (Josh / Vader)
+			  STR23 "Bipolar Bunker" (Skillsaw)
+			  STR24 "Aurora Emitter" (Skillsaw)
+			  STR25 "Eye of the Storm" (Tormentor667)
+			  STR26 "Deepspace 12" (Tormentor667)
+			  STR27 "Cyclone" (Tormentor667)
+			  STR28 "Terraforming" (Starscream)
+			  STR29 "Emerald Skies" (Tormentor667)
+			  STR30 "Convulsion of Nature" (Starscream / Tormentor667)
+			  STR31 "Black Gold" (Skillsaw)
+			  STR32 "Snake Corridors" (Tormentor667)
+			  STR33 "Antlion Nebula" (Vader)
+			  STR34 "Three Ways to Die" (Tormentor667)
+			  STR35 "The Final Stand" (Tormentor667 / Icytux)
+			  Secret map 1 (Chilvence / Tormentor667)
+			  Secret map 2 (Farlowj / Tormentor667)
+			  Secret map 3 (Tormentor667)
+			  Secret map 4 (Vader / Tormentor667)
+			  Intermission (Tormentor667)
+			  Title Sequence (Tormentor667)
+			  Credits / Ending Sequence (Tormentor667)´
+
+Info for Server admin	: Use "puke 766" in the console while being at the
+			  intermap to activate "Debugmode". All tiers and
+			  maps will be accessable then.
+                          
+===========================================================================
+
+* Play Information *
+
+Maps                    : 40 (STR01 - STR35) + 4 Secrets + Intermap (MAP99)
+Source Port		: GZDoom / Skulltag 
+Single Player           : Yes
+Cooperative 2-8 Player  : Yes
+Deathmatch 2-8 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Music               : Yes
+New Graphics            : Yes
+
+
+* Construction *
+
+Base                    : From scratch
+Build Time              : From May 2004 till November 2010
+Editor(s) used          : Adobe Photoshop, DoomBuilder, ACC, XWE, DecX, SlumpEd
+Known Bugs              : No major ones		
+
+
+* Other Information *
+
+Where to Get		: http://www.realm667.com/
+			  http://www.doomworld.com/idgames/
+Copy Information	: You may use material from this project for your own
+			  projects as long as you credit the respective creators
+			  You may upload this file somewhere else as long as
+			  this file stays included as it is
+			  You are encouraged to base projects on this resources, 
+			  setting and scripts

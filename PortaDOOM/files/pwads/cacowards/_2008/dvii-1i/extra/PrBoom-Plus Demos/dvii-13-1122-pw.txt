@@ -1,0 +1,50 @@
+PWAD - DVII.WAD
+FILE - dvii-13-1122-pw.lmp
+Type - UV Max
+Map  - 13
+Port - PrBoom+ 2.4.8.1
+Plr  - Belial
+
+Kills   - 102%
+Items   - 72%
+Secrets - 100%
+
+Time    - 11:22
+
+Description:
+
+At first I didn't really like the map. The linear mountain climb section with
+such limited resources and space for movement combined with the foliage textures
+blocking the view used to put me off. After some time I got used to playing that
+part a bit more cautiously just get through it and enjoy the rest of the map.
+At that point I was playing it with the 'intended' route, more or less the same
+as the route that Anima used in his demo.
+
+Then Huy introduced the speed shortcut and that opened up a new world of route
+possibilities. The time improvement over the old route wasn't that significant
+(a minute, more or less), but being able to tackle the mountain climb with full
+health and better weapons and some help from the invulnerability sphere made it
+much easier for me to enjoy playing it. Removing the tedious replaying of the
+first part of the map when the somewhat luckbased cyber infighting tactic failed
+was a nice bonus as well.
+
+From the SSG on the lift I follow the same route that I used before the shortcut
+was added. After the top of the mountain is clear I head for the yellow key,
+grabbing the invul when necessary and starting an infight between the cyber and
+the teleporting monsters. I use the remaining invul time to get rid of the archie
+which tends to be the slowest point during the mountain climb. Once done I 'restart'
+the map using the teleporter down below. When I get back to the top of the mountain
+all that's left is finishing off the cyber and any remaining monsters in the YK
+room and the HK siege. That secret isn't that hard if you know where to place
+yourself to avoid the HOMs, though I still managed to miss the rocket box and lose
+some health in the process. Once all the HKs are dead I ignore the normal way out
+of the area and instead head for another one of the teleporters down in the acid
+pool below. The archie at the berserk secret is a piece of cake without the hell
+knights to support it. The final part is BFG slaughter, but you can't go crazy 
+with it as the cell supply is quite limited to make sure the RL gets it's share 
+of action as well. I almost screwed myself over with a poorly timed BFG shot at 
+the rev curve archie, fortunately enough a wasted shot or two aren't that much 
+of a problem in that area.
+
+Przemyslaw "Belial" Woda
+nowylepszyszatan@wp.pl

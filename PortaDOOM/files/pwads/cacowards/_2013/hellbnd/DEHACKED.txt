@@ -1,0 +1,136 @@
+Patch File for DeHackEd v3.0
+# Created with WhackEd2 0.60 build 214
+
+# General version information
+Doom version = 21
+Patch format = 6
+
+# Info for WhackEd2
+Engine config = boom.cfg
+IWAD = c:\games\doom\doom2\doom2.wad
+
+
+
+
+[STRINGS]
+HUSTR_1 = map01: apartments
+HUSTR_2 = map02: canal road
+HUSTR_3 = map03: testing chambers
+HUSTR_4 = map04: processing plant
+HUSTR_5 = map05: underground
+HUSTR_6 = map06: gateway lab
+HUSTR_7 = map07: the woods
+HUSTR_8 = map08: military depo
+HUSTR_9 = map09: disposal facility
+HUSTR_10 = map10: cistern
+HUSTR_11 = map11: venom canyon
+HUSTR_12 = map12: power station
+HUSTR_13 = map13: encrus station
+HUSTR_14 = map14: doom district
+HUSTR_15 = map15: the vault
+HUSTR_16 = map16: city bounds
+HUSTR_17 = map17: starport
+HUSTR_18 = map18: computer complex
+HUSTR_19 = map19: frontier lab
+HUSTR_20 = map20: borderworld
+HUSTR_21 = map21: the gates of hell
+HUSTR_22 = map22: stygian depths
+HUSTR_23 = map23: fortress of ages
+HUSTR_24 = map24: city of pandemonium
+HUSTR_25 = map25: bastion of void
+HUSTR_26 = map26: forbidden archives
+HUSTR_27 = map27: crimson abyss
+HUSTR_28 = map28: the black citadel
+HUSTR_29 = map29: ascension
+HUSTR_30 = map30: worlds collide
+HUSTR_31 = map31: diabolus ex machina
+HUSTR_32 = map32: spear of destiny
+PHUSTR_1 = map01: apartments
+PHUSTR_2 = map02: canal road
+PHUSTR_3 = map03: testing chambers
+PHUSTR_4 = map04: processing plant
+PHUSTR_5 = map05: underground
+PHUSTR_6 = map06: gateway lab
+PHUSTR_7 = map07: the woods
+PHUSTR_8 = map08: military depo
+PHUSTR_9 = map09: disposal facility
+PHUSTR_10 = map10: cistern
+PHUSTR_11 = map11: venom canyon
+PHUSTR_12 = map12: power station
+PHUSTR_13 = map13: encrus station
+PHUSTR_14 = map14: doom district
+PHUSTR_15 = map15: the vault
+PHUSTR_16 = map16: city bounds
+PHUSTR_17 = map17: starport
+PHUSTR_18 = map18: computer complex
+PHUSTR_19 = map19: frontier lab
+PHUSTR_20 = map20: borderworld
+PHUSTR_21 = map21: the gates of hell
+PHUSTR_22 = map22: stygian depths
+PHUSTR_23 = map23: fortress of ages
+PHUSTR_24 = map24: city of pandemonium
+PHUSTR_25 = map25: bastion of void
+PHUSTR_26 = map26: forbidden archives
+PHUSTR_27 = map27: crimson abyss
+PHUSTR_28 = map28: the black citadel
+PHUSTR_29 = map29: ascension
+PHUSTR_30 = map30: worlds collide
+PHUSTR_31 = map31: diabolus ex machina
+PHUSTR_32 = map32: spear of destiny
+THUSTR_1 = map01: apartments
+THUSTR_2 = map02: canal road
+THUSTR_3 = map03: testing chambers
+THUSTR_4 = map04: processing plant
+THUSTR_5 = map05: underground
+THUSTR_6 = map06: gateway lab
+THUSTR_7 = map07: the woods
+THUSTR_8 = map08: military depo
+THUSTR_9 = map09: disposal facility
+THUSTR_10 = map10: cistern
+THUSTR_11 = map11: venom canyon
+THUSTR_12 = map12: power station
+THUSTR_13 = map13: encrus station
+THUSTR_14 = map14: doom district
+THUSTR_15 = map15: the vault
+THUSTR_16 = map16: city bounds
+THUSTR_17 = map17: starport
+THUSTR_18 = map18: computer complex
+THUSTR_19 = map19: frontier lab
+THUSTR_20 = map20: borderworld
+THUSTR_21 = map21: the gates of hell
+THUSTR_22 = map22: stygian depths
+THUSTR_23 = map23: fortress of ages
+THUSTR_24 = map24: city of pandemonium
+THUSTR_25 = map25: bastion of void
+THUSTR_26 = map26: forbidden archives
+THUSTR_27 = map27: crimson abyss
+THUSTR_28 = map28: the black citadel
+THUSTR_29 = map29: ascension
+THUSTR_30 = map30: worlds collide
+THUSTR_31 = map31: diabolus ex machina
+THUSTR_32 = map32: spear of destiny
+C1TEXT = Your path led you to a secret UAC lab\ninfested with demons. The Gateway\nlooks operational and intact, so\nyou enter into the swirling madness\nwondering where it will take you.\n\nSeems like most of your equipment\n ended up being someplace else.\nAccording to the nearby computers\nthere are several interconnecting UAC\nfacilities nearby.\n\nYou suspect the source of the invasion,\nmight be in one of them.
+C2TEXT = You made it to the UAC base.\nYou smell the stench of corruption here.\n\nFirst you will need to bring the power\nback on line.\n\nYou learn that this base contains\nexperimental weapons.\nJust the thing you need if you are\ngoing to face more hellspawn.\n\nThe structural damage seems to be minimal\nhere, but you wonder about the deeper\nsectors...
+C3TEXT = You took the Gateway and ended up in\nsome unknown place, where UAC tried to\ntake the fight to hell, without success.\n\nIn the borderworld between hell and our\ndimension you found the portal to hell.\n\nThis is it. Hell. You stand before the\nvery gates of it.\n\nYou need to replace your equipment,\nluckily you see some supply crates nearby.\n\nTime to finally take the battle to\nthem!
+C4TEXT = Not even the forces of hell could stand\nthe firepower you unleashed on them.\n\nHell almost succeeded in planting a\ndemon spitter in our world, but you\nkilled the bastard in time.\n\nEarth is saved, the hellgates dim out\nand collapse.\n\nThe remaining UAC forces should be able\nto clean up the mess now.\n\nYou return to your home, continuing your\nwatchful vigil over humanity.
+C5TEXT = Just what is this place you stumbled\nupon? Is it some virtual reality?\nIt seems to be invaded by demons, so\nyou better clear it out!
+C6TEXT = You are not only unsure where you are,\nbut also when...\n\nYou hear german talking nearby...
+P1TEXT = Your path led you to a secret UAC lab\ninfested with demons. The Gateway\nlooks operational and intact, so\nyou enter into the swirling madness\nwondering where it will take you.\n\nSeems like most of your equipment\n ended up being someplace else.\nAccording to the nearby computers\nthere are several interconnecting UAC\nfacilities nearby.\n\nYou suspect the source of the invasion,\nmight be in one of them.
+P2TEXT = You made it to the UAC base.\nYou smell the stench of corruption here.\n\nFirst you will need to bring the power\nback on line.\n\nYou learn that this base contains\nexperimental weapons.\nJust the thing you need if you are\ngoing to face more hellspawn.\n\nThe structural damage seems to be minimal\nhere, but you wonder about the deeper\nsectors...
+P3TEXT = You took the Gateway and ended up in\nsome unknown place, where UAC tried to\ntake the fight to hell, without success.\n\nIn the borderworld between hell and our\ndimension you found the portal to hell.\n\nThis is it. Hell. You stand before the\nvery gates of it.\n\nYou need to replace your equipment,\nluckily you see some supply crates nearby.\n\nTime to finally take the battle to\nthem!
+P4TEXT = Not even the forces of hell could stand\nthe firepower you unleashed on them.\n\nHell almost succeeded in planting a\ndemon spitter in our world, but you\nkilled the bastard in time.\n\nEarth is saved, the hellgates dim out\nand collapse.\n\nThe remaining UAC forces should be able\nto clean up the mess now.\n\nYou return to your home, continuing your\nwatchful vigil over humanity.
+P5TEXT = Just what is this place you stumbled\nupon? Is it some virtual reality?\nIt seems to be invaded by demons, so\nyou better clear it out!
+P6TEXT = You are not only unsure where you are,\nbut also when...\n\nYou hear german talking nearby...
+T1TEXT = Your path led you to a secret UAC lab\ninfested with demons. The Gateway\nlooks operational and intact, so\nyou enter into the swirling madness\nwondering where it will take you.\n\nSeems like most of your equipment\n ended up being someplace else.\nAccording to the nearby computers\nthere are several interconnecting UAC\nfacilities nearby.\n\nYou suspect the source of the invasion,\nmight be in one of them.
+T2TEXT = You made it to the UAC base.\nYou smell the stench of corruption here.\n\nFirst you will need to bring the power\nback on line.\n\nYou learn that this base contains\nexperimental weapons.\nJust the thing you need if you are\ngoing to face more hellspawn.\n\nThe structural damage seems to be minimal\nhere, but you wonder about the deeper\nsectors...
+T3TEXT = You took the Gateway and ended up in\nsome unknown place, where UAC tried to\ntake the fight to hell, without success.\n\nIn the borderworld between hell and our\ndimension you found the portal to hell.\n\nThis is it. Hell. You stand before the\nvery gates of it.\n\nYou need to replace your equipment,\nluckily you see some supply crates nearby.\n\nTime to finally take the battle to\nthem!
+T4TEXT = Not even the forces of hell could stand\nthe firepower you unleashed on them.\n\nHell almost succeeded in planting a\ndemon spitter in our world, but you\nkilled the bastard in time.\n\nEarth is saved, the hellgates dim out\nand collapse.\n\nThe remaining UAC forces should be able\nto clean up the mess now.\n\nYou return to your home, continuing your\nwatchful vigil over humanity.
+T5TEXT = Just what is this place you stumbled\nupon? Is it some virtual reality?\nIt seems to be invaded by demons, so\nyou better clear it out!
+T6TEXT = You are not only unsure where you are,\nbut also when...\n\nYou hear german talking nearby...
+BGFLAT06 = CEIL3_3
+BGFLAT11 = CEIL3_5
+BGFLAT20 = LAVA1
+BGFLAT30 = FLAT5_6
+BGFLAT15 = CEIL4_2
+BGFLAT31 = RROCK13
+

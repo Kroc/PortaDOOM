@@ -1,0 +1,47 @@
+$KEY:1=GOTO:Doom the Way id Did
+$KEY:2=GOTO:Doom 2 the Way id Did
+$KEY:N=GOTO:No End in Sight
+$KEY:M=GOTO:Maps of Chaos
+$KEY:S=GOTO:Sunlust
+$KEY:V=GOTO:Valiant
+
+^C:MegaWADs
+
+:==============================================================================
+
+!WARNING: This page is very incomplete. A lot more to come in future releases!
+
+What's a WAD? WAD stands for "Where's All the Data?", DOOM's archive format for storing all kinds of texture, sound and level data in a single file. When the community first began creating their own WADs for DOOM they were small in scope, limited to single maps. Soon the idea of creating a complete brand-new DOOM campaign or "episode" sprung up, something that would require a massive amount of work, and thus the "megawad" was born.
+
+:[1] Doom the Way id Did ("DTWID")
+:------------------------------------------------------------------------------
+An alternate-reality 1993 DOOM release that slipped through a wormhole and ended up in our world to enjoy. 
+
+:[2] Doom 2 the Way id Did ("D2TWID")
+:------------------------------------------------------------------------------
+Which, thankfully, the sequel managed to fall through the same wormhole as well so we wouldn't be left in the cold.
+
+:[N] No End in Sight
+:------------------------------------------------------------------------------
+Oldschool 4-episode adventure for The Ultimate Doom, featuring some of the most devilish map design this side of 1994. 'Nuff said... ish.
+
+Similar to DTWID, the spirit of id is ever-present, albeit cranked up to 11 with a devious new spin on the classic episodes' themes. Along the way, you'll enter parallel worlds, explore derelict spaceships still floating in the sky, and return to some eerily familiar locales on the far side of Phobos and beyond.
+            
+:[M] Maps of Chaos
+:------------------------------------------------------------------------------
+Maps of Chaos remixes the DOOM and DOOM II episodes, greatly expanding the size and complexity of the original levels as well as massively upping the quantity of monsters on hand.
+
+:[S] Sunlust                                        * 2015 Cacoward Winner! *
+:------------------------------------------------------------------------------
+Sunlust is a set of 32 boom-compatible maps for Doom II, designed to be played from pistol start. The maps meander through a range of themes, from traditional bases and temples to abstract hellish, void, and tech aesthetics.
+
+:[V] Valiant                                        * 2015 Cacoward Winner! *
+:------------------------------------------------------------------------------
+$REM=Need a better description once I've played this
+Valiant is a MBF megawad for Doom II featuring 32 new maps spanning 5 themed episodes.
+
+$KEY:X=GOTO:Swift Death
+:Swift Death
+
+:==============================================================================
+^C*What else should go here? Send feedback to _<kroc+doom@camendesign.com>_*

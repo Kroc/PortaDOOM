@@ -1,0 +1,107 @@
+===========================================================================
+Advanced engine needed  : Boom compatible
+Primary purpose         : Single play 
+===========================================================================
+Title                   : EPIC
+Filename                : EPIC.WAD
+Release date            : October 10, 2007
+Author                  : Alexander "Eternal" S. (aka Deadall)
+Email Address           : etern-all@mail.ru
+Other Files By Author   : g.o.evil.wad, eden.wad, napalm.wad, remain1.wad
+Misc. Author Info       : Russia, Moscow.
+
+Description             : One level for any boom compatible and
+                          limit removing ports.
+                          PrBoom-Plus or GZDoom are recommended.
+                          To play this PWAD file, unzip it into the 
+                          directory with your PWADs then start:
+                          glboom-plus.exe -file epic.wad -complevel 9
+                          (g)zdoom.exe -file epic.wad
+
+                          Important:
+
+                          Do not play map05 in the current prboom
+                          (up to 2.4.8 for now), because of:
+                          
+                          a) All existing versions of prboom are buggy on
+                          levels with big open areas - precision problems.
+                          The latest Eternity release (3.33.33) also can't
+                          handle map05 correctly - the same precision
+                          problems. Use the latest SVN alphas.
+
+                          b) The current glboom-plus (2.4.8.2.beta) is much
+                          faster on levels with sectors which have too many
+                          lines. I got 80 fps in glboom-plus instead of 50
+                          in glboom at map05.
+
+                          c) Vanilla GLBoom doesn't have an option for
+                          quality rendering and it is very noticeable on
+                          some levels, especially on the big tower at map05
+                          and in the second room at map03 - big white
+                          strips and dots on corners. The effect doubles
+                          on ATI cards. Light sky is a headache of
+                          prboom. So gl_render_precise should be 1.
+                          I hope this variable will be removed in the
+                          future versions and quality mode will be forced.
+
+                          Note: gl_depthbuffer_bits in glboom-plus.cfg
+                          should be 24 or 32 to avoid some rare small
+                          glitches.
+
+                          You can download the latest prboom-plus here:
+                          http://prboom-plus.sourceforge.net/history.html
+
+
+===========================================================================
+* What is included *
+
+New levels              : 5
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : included in wad
+Demos                   : No
+Other                   : No 
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : map01-map05
+Single Player           : Designed for 
+Cooperative 2-4 Player  : Starts included but not tested
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : 
+Difficulty Settings     : Yes 
+
+
+* Construction *
+
+Base                    : New from scratch 
+Build Time              : 6 month
+Editor(s) used          : DoomBuilder 1.68, DeePsea 12.02
+Known Bugs              : none
+May Not Run With        : 
+Tested With             : PrBoom-Plus-2.4.8.2.test
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+

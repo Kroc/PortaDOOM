@@ -1,0 +1,43 @@
+Community Chest 4 Resource Wad
+Compiled by Esselfortium
+
+Includes textures by:
+NiGHTMARE
+Espi
+Eriance
+Fredrik Johansson
+Janitor
+DaGGeR
+Ola Bjorling
+Vader
+XDelusion
+Esselfortium
+RottKing
+Nuxius
+Afterglow
+AgentSpork
+RottKing
+Enjay
+Huy Pham
+SargeBaldy
+Tormentor667
+The GothicDM Team
+The Requiem Team
+The Eternal Doom Team
+id Software
+Raven Software
+Rogue Entertainment
+
+Notable changes in version 1.5:
+Texture PLAT128B has been removed due to Boom being incompatible with
+256-tall textures. Oops! I was unaware of this when I originally compiled
+the wad. Affected maps should replace it with PLAT128A.
+
+Textures BRONZEB5, BRONZEB6, BRONZEG5, and BRONZEG6 have been replaced with
+significantly improved versions that I made more recently. My old versions
+that were there before were rather crappy; hopefully the replacement won't
+cause any problems.
+
+Flats HEXA01, HEXA02, and HEXA03 have been replaced with improved versions
+that I made more recently. The differences between these and the old ones
+shouldn't be significant enough to cause any problems.

@@ -1,0 +1,266 @@
+Title                   : Unidoom Deathmatch X
+Filename                : UDMX.WAD
+Release date            : 12/31/2008
+Author                  : Clan Unidoom
+Email Address           : Ralphis     : ralphis@unidoom.org
+
+Other Files By Author   : Unidoom Deathmatch 1, Unidoom Deathmatch 2, Unidoom Deathmatch 3, Odamex CTF 1
+
+Misc. Author Info       : Visit us at http://www.unidoom.org and #unidoom on irc.oftc.net!
+
+Description             : 32 of the best, most well-tested classic deathmatch maps ever produced. 
+
+Additional Credits to   : Toke, Assmaster, Nes, Hex_Vulture, BC as a clan, esselfortium, and all artists whose textures 
+                          were used in UDMX. 
+
+===========================================================================
+
+* What is included *
+
+===========================================================================
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : Yes
+Other files required    : No
+
+* Play Information *
+
+Game                    : DOOM2
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Yes
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+* Construction *
+
+Build Time              : Almost four years exactly
+Editor(s) used          : Wadauthor, Doombuilder, Wintex, XWE, Slumped
+Known Bugs              : None
+May Not Run With...     : doom2.exe. Requires at least a limit removing engine. Some maps use Boom specials for decoration.
+
+===========================================================================
+
+* Level Information *
+
+===========================================================================
+
+Map #                   : MAP01
+Author                  : Ralphis & Nautilus
+Name			: X Factor
+
+===========================================================================
+
+Map #                   : MAP02
+Author                  : Nautilus
+Name			: Map of the Hour
+
+===========================================================================
+
+Map #                   : MAP03
+Author                  : deathz0r & Nautilus
+Name:			: Wikid Sick
+
+===========================================================================
+
+Map #                   : MAP04
+Author                  : Ralphis
+Name:			: Outpost Delta Flashback
+
+===========================================================================
+
+Map #                   : MAP05
+Author                  : RottKing
+Name:			: Plasma Grid
+
+===========================================================================
+
+Map #                   : MAP06
+Author                  : Ralphis
+Name			: Gridlock
+
+===========================================================================
+
+Map #                   : MAP07
+Author                  : thefwf
+Name			: Valley of the Damned
+
+===========================================================================
+
+Map #                   : MAP08
+Author                  : RottKing & Nautilus
+Name			: Miami Manslaughter
+
+===========================================================================
+
+Map #                   : MAP09
+Author                  : Nautilus & RottKing
+Name			: Red Nose Reef
+
+===========================================================================
+
+Map #                   : MAP10
+Author                  : Ralphis & thefwf
+Name			: Triple Decker X
+
+===========================================================================
+
+Map #                   : MAP11
+Author                  : DOOMGUY666 & Nautilus
+Name			: The Atomic Dam
+
+===========================================================================
+
+Map #                   : MAP12
+Author                  : Nautilus & RottKing
+Name			: Gosh-Darned Keep
+
+===========================================================================
+
+Map #                   : MAP13
+Author                  : AlexMax
+Name			: At the Center
+
+===========================================================================
+
+Map #                   : MAP14
+Author                  : RottKing
+Name			: Quark
+
+===========================================================================
+
+Map #                   : MAP15
+Author                  : Ralphis
+Name			: UDM1 MAP10 Flashback
+
+===========================================================================
+
+Map #                   : MAP16
+Author                  : Harvey, Ralphis, & RottKing
+Name			: Pingabringa
+
+===========================================================================
+
+Map #                   : MAP17
+Author                  : deathz0r, Nautilus, Ralphis, & RottKing
+Name			: This was E1-Themed Once
+
+===========================================================================
+
+Map #                   : MAP18
+Author                  : Ralphis & RottKing
+Name			: The Edge Flashback
+
+===========================================================================
+
+Map #                   : MAP19
+Author                  : Alexmax & Nautilus
+Name			: The Renaissance
+
+===========================================================================
+
+Map #                   : MAP20
+Author                  : liam
+Name			: Obligatory Liam Map
+
+===========================================================================
+
+Map #                   : MAP21
+Author                  : Ralphis & RottKing
+Name			: The Cursed Library
+
+===========================================================================
+
+Map #                   : MAP22
+Author                  : RottKing
+Name			: The Brown Insanity
+
+===========================================================================
+
+Map #                   : MAP23
+Author                  : Nautilus & RottKing
+Name			: Acid Jail
+
+===========================================================================
+
+Map #                   : MAP24
+Author                  : thefwf, Ralphis, & RottKing
+Name			: Shafted Flashback
+
+===========================================================================
+
+Map #                   : MAP25
+Author                  : DD_133 (AKA Stargunner, Aguni, Nick, and Xenaero)
+Name			: Rockafella Mustard
+
+===========================================================================
+
+Map #                   : MAP26
+Author                  : Ralphis & RottKing
+Name			: Sonic X
+
+===========================================================================
+
+Map #                   : MAP27
+Author                  : RottKing
+Name			: Castlemania
+
+===========================================================================
+
+Map #                   : MAP28
+Author                  : Nautilus
+Name			: B-Ville
+
+===========================================================================
+
+Map #                   : MAP29
+Author                  : Ralphis
+Name			: UDM3 MAP01 Flashback
+
+===========================================================================
+
+Map #                   : MAP30
+Author                  : deathz0r
+Name			: Hall of Champions
+
+===========================================================================
+
+Map #                   : MAP31
+Author                  : Ralphis
+Name			: UDM: The New Challengers Turbo Tournament Edition
+
+===========================================================================
+
+Map #                   : MAP32
+Author                  : Ralphis
+Name			: Humble Beginnings 
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse. 
+
+You MAY distribute this file, provided you include this text file with
+no modifications.  You may distribute this file in any electronic
+format (BBS, diskette, CD, etc.) as long as you include this file 
+intact. 
+
+You MAY edit and release any maps contained in the WAD as you wish under the conditions that the original authors and Unidoom are credited.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.unidoom.org
+
+
+
+
+gorbly
+UD... the best clan...

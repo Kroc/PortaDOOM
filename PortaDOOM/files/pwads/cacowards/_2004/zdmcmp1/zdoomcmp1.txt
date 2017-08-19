@@ -1,0 +1,100 @@
+Archive maintainer		: This replaces the old version of this map
+
+===========================================================================
+Title                   : The [ZDoom Community Map] Project "Take 1"
+Filename                : zdoomcmp1.pk3
+Date Finished           : August, 28th 2004
+Version 2.0             : July, 10th 2006
+Version 2.1             : July, 23rd 2006
+Authors & Contributors  : BioHazard             (mapping & credits)
+ (in no special order)    Giest118           	(mapping & end boss)
+                          Xaser	            	(mapping, scripting for version 2.0)
+                          Lexus Alyus           (mapping & music)
+                          HotWax                (mapping)
+                          Graf Zahl             (mapping, bugfixing, scripting and DECORATing for version 2.0)
+                          Nanami                (monsters)
+                          Nightmare             (mapping & detailing)
+                          Enjay                 (mapping, bugfixing for version 2.0)
+                          Pablo Dictter         (mapping)
+                          DD_133                (mapping)
+                          Grubber               (mapping & weapons)
+                          Cccp_leha             (mapping)
+                          Risen                 (gfx, compiling
+                          and Tormentor667      (mapping, gfx, detailing & project leader)
+                        
+Web Page                : http://www.zdoom.org, especially http://forum.zdoom.org, 
+                          what else?
+
+Look also for           : The [ZDoom Community Map] Project "Take 2"
+                          Knee-Deep in ZDoom
+
+Description             : One evening, just about 2 months ago, I had this idea of
+                          creating just one ZDoom map together with some other mappers
+                          and friends. Well, who else could be mor qualified as the
+                          ZDoom.org community itself? :) That was the day, when I opened
+                          a new thread over at the ZDoom forums and telling those
+                          people my plans, and the rest is just history which can be
+                          read over at: 
+                            http://forum.zdoom.org/viewtopic.php?t=2935
+                          By the way, this is the longest thread ever in the history
+                          of Forums@ZDoom.org with over 1000 replies (no spam) and over
+                          10.000 views, amazing, isn't it? :)
+                          Thx goes to all the contributors, they really worked hard
+                          and also very fast, so this could be released within one
+                          month of developement!
+                          
+                          This is an updated version that takes advantage of ZDoom 2.1.1's
+                          custom weapon support and replaces the DEHSUPP-based weapons that
+                          restricted the first version to ZDoom 2.0.63a only.
+                          It also features some gameplay enhancements in a few critical
+                          areas.
+                          
+                          2.1 fixes the missing thunder sound that was accidentally omitted
+                          from 2.0.
+
+Technical Info          : Some parts of the map might slow down your system, for example
+                          the "Outdoor Pump Area" or the large "Containment Area", beware
+                          of exploding RAM components and burning processors ;)
+
+Map Data                : Vertices        = 24047
+(we are proud for)        Linedefs        = 29395
+                          Sidedefs        = 48586
+                          Sectors         = 04524
+                          Things          = 02078
+
+Thx goes to             : id Software for DooM and Quake (Quake textures were used)
+                          Randy Heit for ZDoom, the best port ever!
+                          ZDoom.org for being the host of our project
+                          Geocities.com for hosting our files
+
+Shame goes to           : Also Geocities.com for the bandwidth limit >:|
+                  
+===========================================================================
+
+* Play Information *
+
+Map #                   : Map01
+Source Port             : ZDoom 2.1.1 and higher (http://zdoom.org/files/zdoom-2.1.1.zip) or GZDoom 1.0.16 and higher
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (tested and adjusted by BioHazard & HotWax)
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+New Sounds              : Yes (ambient & monster sounds)
+New Music               : Yes (great .IT from LexusAlyus)
+New Graphics            : Yes (textures, sprites, gfx)
+
+
+* Construction *
+
+Base                    : Everything from scratch!
+Build Time              : 1 1/2 Months, 24 hours a day ;)
+Editor(s) used          : Adobe Photoshop, ZETH, DoomBuilder, ACC, WinTex, XWE, WadAuthor
+Known Bugs              : None
+
+
+* Other Information *
+
+Where to Get            : http://www.tormentor667.de and also at 3dgamers archive
+Copy Information        : You ARE ALLOWED to use this map or the data in the wad
+                          itself as base to build additional levels, as long as you
+                          include the corresponding credits.

@@ -1,0 +1,38 @@
+PortaDOOM Alpha 3
+=================
+- Improvements to pages:
+ * New styling, including bullet-points
+ * Added website links to most WAD pages
+ * Added link to original author's txt file for most WAD pages
+- Engine updates:
+  * Chocolate-Doom/Heretic/Hexen/Strife updated to v2.3.0
+  * GZDoom v2.3.2, v.2.4.0, v3.0.1, v3.1.0
+  * Zandronum-3 updated to 170806-2040
+- WAD updates:
+  * Cacowards 2016
+  * Blade of Agony updated to C2
+  * Adventures of Square updated to 1.4
+  * FreeDOOM updated to 0.11.2
+  * PSX DOOM updated to work with GZDoom 2.3+
+    Added Lost Levels and other improvements
+- Script Updates:
+  * Changed central play.bat to use named parameters for better reliability,
+    added support for GZDoom version numbers, and added Harmony IWAD support
+
+PortaDOOM Alpha 2 (17-DEC-16)
+=============================
+- Content:
+  * Complete Cacowards 2015 included
+  * Commercial DOOM : DOOM1/2/Master/Final/NERVE, PSX & N64
+  * Megawads: DTWID, D2TWID, NEIS, Maps of Chaos
+  * Total Conversions: FreeDOOM, Adventures of Square
+  * 96 DOSmag pages
+- Portable:
+  * games are launched fullscreen at the current desktop resolution
+  * configuration files for the engines are stored with PortaDOOM
+  * Find commercial WADs in Steam & GOG installs
+  * Fall back to DOOM shareware / FreeDOOM
+  
+PortaDOOM Alpha 1
+=================
+- proof-of-concept

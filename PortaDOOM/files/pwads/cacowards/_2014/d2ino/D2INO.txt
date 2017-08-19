@@ -1,0 +1,144 @@
+===========================================================================
+Archive Maintainer      : One final problem. An old version of MAP12, using
+                          a copy-pasted room from Doom II was still present
+						  in the WAD. This update removes it.
+Compatibility           : Vanilla/Chocolate Doom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Doom 2 In Name Only
+Filename                : D2INO.wad
+Release date            : 14 June 2014
+Authors                 : Various, see below
+Email Address           : erisf@outlook.com
+Other Files             : D2INO.deh
+
+Description             : Imagine a world where Doom II was never released,
+                          and the only information that ever came to light
+                          was the level titles. Then imagine that nearly 20
+                          years later, some people decided to make some
+                          levels based on how they interpreted the level
+                          name. Those very levels are in this WAD file. 
+
+Additional Credits to   : See below
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only. Use at own risk.
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Development started 17 August 2012. 666 days ago.
+Editor(s) used          : Various
+Known Bugs              : MAP07 relies on barrels killing "dummy Mancubi"
+                          to trigger the tag 666 actions. In ZDaemon,
+						  infinitely tall actors MUST be enabled, otherwise
+						  the barrels will not kill the mancubi.
+						  
+						  There may be some sneaky tutti-fruttis.
+						  While not bugs, you're bound to find some
+						  misaligned textures on your travels.
+
+May Not Run With...     : cl_run false
+
+===========================================================================
+=================================Credits===================================
+===========================================================================
+* Levels *
+
+MAP01: Entryway            - ProcessingControl
+MAP02: Underhalls          - _bruce_
+MAP03: The Gantlet         - _bruce_
+MAP04: The Focus           - Antroid
+MAP05: The Waste Tunnels   - an_mutt
+MAP06: The Crusher         - ProcessingControl
+MAP07: Dead Simple         - scifista42
+MAP08: Tricks and Traps    - an_mutt
+MAP09: The Pit             - CorSair and mouldy, based on BlueFireZ88's initial layout
+MAP10: Refuelling Base     - CorSair
+MAP11: Circle of Death     - Egregor
+MAP12: The Factory         - cannonball
+MAP13: Downtown            - glenzinho
+MAP14: The Inmost Dens     - _bruce_
+MAP15: Industrial Zone     - cannonball
+MAP16: Suburbs             - schwerpunk and Joseph Lord
+MAP17: Tenements           - an_mutt
+MAP18: The Courtyard       - kongming
+MAP19: The Citadel         - scifista42
+MAP20: Gotcha!             - mouldy
+MAP21: Nirvana             - cannonball
+MAP22: The Catacombs       - Aries "Eris Falling" Thölin
+MAP23: Barrels O' Fun      - Joseph Lord
+MAP24: The Chasm           - Antroid
+MAP25: Bloodfalls          - mouldy
+MAP26: The Abandoned Mines - Olympus
+MAP27: Monster Condo       - Joseph Lord
+MAP28: The Spirit World    - mouldy
+MAP29: The Living End      - Antroid
+MAP30: Icon of Sin         - mouldy
+
+MAP31: Wolfenstein         - Herr Xaser
+MAP32: Große               - Adam Windsor
+
+* Soundtrack *
+Maps not included in this list use the Doom II default track.
+
+MAP01: DLA - Mark Klem (Memento Mori II)
+MAP06: Crucified Dreams MAP23 music - Nicklas Linnes
+MAP07: Ah, Geez! - Lee Jackson (Duke Nukem 3D)
+MAP09: The River of Fire - Kevin Schilder (Heretic)
+MAP10: ROMA3.mid - Kevin Schilder (Hexen II)
+MAP11: Pagan's Theme - Nenad Vugrinec (Ultima VIII: Pagan)
+MAP12: Into Sandy's City - Robert Prince (Doom II)
+MAP15: Slipper - Mark Klem (Memento Mori)
+MAP18: I Choose the Stairs - Lee Jackson (Rise of the Triad)
+MAP19: MIDI of "Vampire Hunters" - Wojiciech Kilar (Dracula [film])
+MAP21: MIDI of "Eryut Village" - Hitosho Sakimoto (Final Fantasy XII)
+MAP22: Fate of the Damned - Mike Cody (Blood) [modified]
+MAP23: unidentified
+MAP24: Pseudoverum - EarthQuake(?)
+MAP31: Evil Incarcerated - Jimmy
+Story: Vengeance (shortened) - Eris Falling
+
+* Additional Credits *
+
+ella guro - Project founder
+DRDTeam  - mud and water fall textures
+Antroid - lavafall textures, bug squashing
+Alfonzo - MAP31 thing placement
+Memfis - Supplying MAP24 midi
+Doom Juan - Supplying MAP31 textures
+TNS guys + Caleb13 - Multiplayer testing
+Da Werecat - TITLEPIC and CREDIT graphics, testing
+
+Big thanks to plums and EffinghamHuffnagel for thoroughly testing the
+entire WAD!
+Cannonball would like to thank mouldy for upgrading Doomguy's flight from
+RyanAir to Virgin Atlantic. Unfortunately, the flight still ends in style
+of the former, so you don't get to skip from MAP12 to 20. Sorry.
+
+
+* Copyright / Permissions *
+
+Authors MAY NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.

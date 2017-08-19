@@ -1,0 +1,78 @@
+===========================================================================
+Advanced engine needed  : zdoom, skulltag, or zandronum.
+Primary purpose         : Single player
+===========================================================================
+Title                   : Beyond Reality
+Filename                : BRFinal.wad
+Release date            : 10/25/2012
+Author                  : Darsycho
+Email Address           : Darsycho@gmail.com
+Other Files By Author   : Epic Legendary Legends!
+Misc. Author Info       : Just a psychotic mapper. :)
+
+Description             : There is a dimension, a dimension full of
+                          nonsense and surrealism. It is a place where
+                          crates are out to kill you, and a place where
+                          logic jumps off a bridge. A journey into a
+                          wondrous land of ludicrosity, your next stop:
+                          Beyond Reality!
+                          
+                          This WAD is playable on zdoom, skulltag, and
+                          zandronum, OpenGL is recommended to remove
+                          palette issues on some textures.
+
+Additional Credits to   : Realm667, Agent Spork,
+                          UnholyPimpin(AlwaysDoomed), Mind Shear Software,
+                          Andrew Sega,
+                          Vader, JoeyTD, Mike12, CoTeCiO, Freedoom,
+                          Diodeus, Twilight Frontier, Joel Huenink, Anthony
+                          Galica and team, Insomniac Games, deathz0r, hacx,
+                          DonaldDuck(zdoom forums).
+===========================================================================
+* What is included *
+
+New levels              : 17
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   :  None
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01-19
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 3 months
+Editor(s) used          : Doom Builder 2, Slade 3, Slumped.
+Known Bugs              : Zandronum will display lots of errors on the server window when playing map06 				  and map14, the maps run fine though.
+May Not Run With...     : Older ports.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

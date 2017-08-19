@@ -1,0 +1,106 @@
+
+		     " M E P H I S T O ' S   M A O S O L E U M "
+
+===============================================================================
+File                    :"mephisto.wad"  
+Author                  : Sverre Andre Kvernmo (aka "Cranium" in the arena!)
+Setting                 : Ok, here's the plot: Kick Butt!
+			Gripping, isn't it? In case you are a little more 
+			into story-lines you can keep reading.
+			This and the other of my wads were to be released
+			inside a 32-level "episode" on the internet. But 
+			having id release them is about 666 times cooler. 
+			The plot in the intended episode was as follows:
+			You once were the biggest and baddest Cyber-demon to
+			rule hell and you spear-headed the council that 
+			governed the underworld; "the Cabal". Betrayed by the
+			other members you find yourself not only dismantled, 
+			but also a victim of the utmost demonic humiliation:
+			You've been morphed into a human! Of course you're
+			out for revenge and have to kick the other members of 
+			the Cabal's butts one by one.
+			
+			In Mephisto's Maosoleum you have reached the grave of
+			an old friend and mentor: "Mephisto". Yeah old Lucy
+			was a tough bastard. But then there was that incident 
+			with the earthling marine which lost him a lot of
+			credit in the hard-core parts of Hell. So you had to 
+			kick him off the throne of course. His immortal
+			spirit was kept as a member of the Cabal though and 
+			so he was in on the betrayal against you. Time to 
+			enter his tomb and lay the old man down to rest 
+			for good...
+
+Credits                 : The whole of id Software for DOOM & DOOM II.
+			Andrew (& Mark) Cornes, Gregory "Acoma" Hyne, 
+			Peter "Pete" Ripley, David "Macca" Mccandless, 
+			Bj›rnar Johansen, Baard Zachariassen and 
+			Stian Danielsen for playtesting, viewpoints, 
+			help, enthusiasm and for being mad bastards. 
+			Oh, and Erling Paulsen for managing to convince me
+			that there was such a thing as a full fledged 
+			Doom-editor, back in early 94. Os!
+			A brand new BFG goes out to Geoff Allan (DOOMed), 
+			Raphael Quinet (DEU), Olivier Montanuy (DeuTex) and 
+			Colin Reed (BSP) plus whoever put together idBSP. 
+			Shawn Green for including me in the project.
+			Last but never least to all other WAD-designers who 
+			have lost themselves in the worlds of tag numbers, 
+			upper textures and vertexes as badly as me, 
+			particularily the other designers that worked on this 
+			add-on. Looking forwards to play your wads dudes!
+Deathmatch 
+bad-arse credits:        Macca, Hunter, Woah, Loki and Pete. You can walk over
+			my melted bodies anytime. Don't hang around that 
+			corner for too long though. I'll silently BFG your 
+			butt!
+
+==============================================================================
+
+* Play Information *
+
+# of Levels             : One, but three other wads in this pack was created 
+			by me also. They are: 
+			Black Tower                     (blacktwr.wad)
+			Bloodsea Keep                   (Bloodsea.wad)
+			The Express Elevator To Hell    (teeth.wad)
+Level Replaced          : Map 07
+
+
+* Construction *
+
+Base                    : An obsessive personality, lotsa caffeine and lotsa 
+			nicotine. :Q A twisted mind doesn't hurt either. :)
+			An additional credit should go out to those wad-
+			designers that have inspired me greatly through their 
+			work. I don't know all their names, but the names of
+			their WADs should suffice. Hail the hall of fame:
+			"Nukemine" (old I know, but the supreme numero uno 
+			at it's hayday)
+			"Castle of the Renegades". Best castle-type wad I've 
+			seen.
+			"Eternity"
+			"Dante's Gate"
+			The secret level in the AlienDoom episode was groovy 
+			as well, and "Cleimos" had some nice touches.
+Build Time              : Don't ask, really! First baby steps at "wadding" 
+			taken in the summer of 94. Almost dropped out of 
+			university for this bloody obsession. One reason for 
+			surviving was that I handed in a wad of my campus as 
+			one of my projects. <G>
+			I would guess that I on average spend about 130 hours 
+			on each wad. And it's not because I work slow :)
+Editor(s) used          : DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
+Bugs                    : No way. Shawn has plucked them all out and forced 
+			me to eat them. I hate you if you find some! ;)
+
+			Hope you enjoy the wad.
+
+	   * All comments & questions will be highly appreciated *
+	     
+Sverre Kvernmo
+(it's a norwegian name OK? I'm from Norway smart arse)
+100551.3566@compuserve.com
+
+==============================================================================
+

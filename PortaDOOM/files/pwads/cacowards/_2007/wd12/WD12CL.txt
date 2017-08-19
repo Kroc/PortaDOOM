@@ -1,0 +1,29 @@
+Wonderfull DooM I v.1.2
+
+CHANGE LOG
+
+I have made a lot of changes since WD1`s release on DW(now, it`s marked v.1.0)
+There are changes in every map, so that they could look little more different from original. And because of that you must note: 
+it`s absolutely INCOMPATIBLE with demos from elder version.
+
+Most notable changes are in:
+E1M1 - added some lighting and toxin pool outside, blue box with stairs is turned 90 degrees, in
+last room 1 lattice wall is placed perpendiculary to exit door instead of 2 walls on each side
+E1M2 - fixed crushing door in secret section
+E1M3 - now there is a way out of north-eastern toxin pool
+E1M5 - start section is different, exit is on other side of `dark sector`)
+E1M7 - lots of small changes, including more complex secret in north section
+E2M2 - player 1 start is now at opposite side
+E2M4 - way to the big circle is different
+E2M5 - south section with staircase is turned and now leading downwards
+E2M7 - red key now is placed in a lowered techpillar with baron
+E2M9 - now you must find exit of the red secret chamber
+E3M1 - in a corridor with pinky`s the fork is added
+E3M4 - all section before downward steps is mirrored
+E3M7 - now bridges in the main hall are opposite and added 1 bridge in a middle
+E3M9 - same changes like in E1M1
+E4M5 - some architectural changes
+
+About other changes.. well.. May be, it`s a reason to play wad again to see them all))..
+
+P.S. `Wonderfull` means full of wonder )..

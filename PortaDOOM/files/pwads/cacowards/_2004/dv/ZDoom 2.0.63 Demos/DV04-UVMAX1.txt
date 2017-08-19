@@ -1,0 +1,52 @@
+PWAD - Deus Vult (DV.WAD)
+FILE - DV04-UVMAX1.lmp
+Type - UV MAXDEMO (100/100)
+Map  - Map04 (End of Days)
+Port - Zdoom 2.63
+Plr  - Ragnew
+
+Kills  - 100%
+Items  -  88%
+Secret - 100%
+
+Time   - 25:31
+
+Description :
+
+Okay, so first of all, I thought this map was WAY too hard, but then I actually sat down 
+and tried to play it... :) And low and behold, its a very, very FUN and KICK ASS level!!!
+The start can be pretty frantic, but what else would you expect after playing all of Huy's
+levels before this? There are many, many places that'll wax you if your not careful.... 
+These would have to be the hardest parts in my eyes...
+
+1) The Final Hell Temple : You'll know it when you see it!! All I can say is use the shield
+   objects to your advantage... They WILL save your life. And make sure you use the invuln.
+   at the right moment... Use it too soon, and your history... Vice versa, if you try to
+   use it too late, then bad things happen as well. Watch the damn Viles, and make sure you
+   hide whenever they start to attack you...
+
+2) The Stairway up to Upper Lava River : I don't know why this is so hard, but it is... All
+   those damn Viles popping up at the wrong times can make life miserable... And make sure
+   you use the final Invuln to kill off ALL the cyberdemons in the final area of the river.
+
+3) The Final Area where you get to "poke out the eye" : You've got to get all the ammo on 
+   the platform before you drop into the pit. There is NO ammo in the final room, and you
+   need to use the Cyberdemon and Spider Mastermind to your advantage. The only rad suit is
+   located in the back of the "Eye of Sauron" platform... Make sure you get this, but not
+   while theres a ton of monsters around it. That would be bad dying so close to finishing
+   this monster... :)
+
+Well, thats about it for me. I hope you all enjoy the demo(s), and make sure you play the
+maps before you actually have to watch these recordings... They're pretty much here to show
+that these levels are completable from a pistol start on UV... Now, get onto playing the 
+damn thing will you... :) 
+
+Laters,
+- Richie
+
+Huy: "End of Days" basically brings out what Deus Vult really is: A fun knockout map with a slight 
+     edge of difficulty to keep the players on their toes. Rich really outdid himself this time;
+     after observing his demo, I thought, "I could do that, I could do that better!!". Contrary to 
+     the easy appearance, I got creamed on this map real fast =) It's not as difficult as Map02 or Map03,
+     but should give the player a few jolts here and there if they're not careful, Right... Rich?
+

@@ -1,0 +1,51 @@
+06-29-95
+================================================================
+Title                   : Vesperas: 7th Canto of INFERNO
+Author                  : John W. Anderson (aka Dr. Sleep)
+Email Address           : 76132.3415@compuserve.com
+Other files:		: "And Hell Followed," Episode 4, Level 7 of *The 
+			    Ultimate DOOM* by Id Software;
+			  "Dante's Gate" v2.2 (1st Canto, INFERNO)
+			  "Crossing Acheron" v2.2 (2nd Canto)
+			  "Virgil's Lead" (3rd Canto)
+			  "Minos' Judgement" (4th Canto)
+			  "Nessus" (5th Canto)
+			  "Geryon" (6th Canto)
+			: For HERETIC:
+			  "Recant" v1.1 
+
+Misc Author Info	: 
+
+Additional Credits	: Antony J. Burden and Simon Oke for DETH 2.4;
+			: Shawn Green, American McGee, John Romero, and
+			    everyone at Id Software;
+			: Jim F. Flynn;
+			: Not least, my son Joshua (12) for testing<g>
+
+Description             : VESPERAS (or "vespers"): an evening ceremony. 
+			  This is the 7th Canto of INFERNO. "Now it's 
+			  dark."
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E9
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : All
+New Sounds              : No
+New Graphics            : Yes
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Three weeks
+Editors/Utilities used  : DETH 2.4 by Antony J. Burden and Simon Oke;
+			  BSP v1.1w by Colin Reed;
+			  Reject Map Builder v1.2 by Jens Hykkelbjerg;
+			  Reject 1.0 by L.M. Witek;
+			  Paint Shop Pro v2.0;
+			  DOOMTex v1.0c by Stephen McGrea;

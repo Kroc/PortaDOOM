@@ -1,0 +1,79 @@
+============================================================================
+Archive Maintainer      : Place in /levels/doom2/megawads
+Primary purpose         : Single player and cooperative play
+============================================================================
+Title                   : Plutonia 2
+Filename                : PL2.WAD
+Release                 : Version 1.0, December 31, 2008
+Author                  : Plutonia 2 team
+Email Address           : vincentds AT free . fr (coordinator)
+Other Files By Author   : Various
+Misc. Author Info       : The team came together specifically to work on
+                          Plutonia 2. Previously the project was in the
+                          hands of other authors, which gradually dropped
+                          out, led by Sam Woodman (aka Metabolist).
+
+Description             : An add-on sequel for Final DOOM's "The Plutonia
+                          Experiment". It emulates Plutonia's design and
+                          gameplay styles and follows from where it left
+                          off.
+
+Additional Credits to   : The authors of The Plutonia Experiment, Dario and
+                          Milo Casali.
+============================================================================
+* What is included *
+
+New levels              : 32 (full megawad)
+Sounds                  : No
+Music                   : Yes (mosly contributions by the team musicians)
+Graphics                : Yes (screens, misc. graphics, textures, and flats)
+Dehacked/BEX Patch      : Yes (level names, music, and intermission texts)
+Demos                   : Yes (4 Doom v1.9f recordings)
+Other                   : Yes (MAPINFO lump for some source ports)
+Other files required    : No (but see "Game" below)
+
+
+* Play Information *
+
+Game                    : The Plutonia Experiment
+Map #                   : MAP01 to MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only (some levels have DM areas)
+Other game styles       : Not really
+Difficulty Settings     : Yes (for players of all skills)
+
+* Construction *
+
+Base                    : Levels from scratch, except map32 (based on DOOM
+                          E1M1 and Dwango5 Map01)
+                          New graphics and music mostly from scratch
+Build Time              : The project began around 2001, died in 2004 and
+                          was picked up again in 2007 by the current team.
+Editor(s) used          : DCK, Doom Builder, WadAuthor, XWE, Doomfont, DETH,
+                          BSP, WinTex, Deepsea shareware, The GIMP, DeHackEd,
+                          MegaZeux, Hexplorer, and others
+Known Bugs              : In Doom2 save game overflows might occur in the
+                          larger levels, and a few HOMs may appear in some
+                          sections
+May Not Run With        : Should run with any Doom engine
+Tested With             : Doom2 v1.9f, ZDoom v2.1+, PrBoom v2.4+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification
+or reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications. You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  The team has
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.rabotik.nl/pluto2.html (official site)
+
+FTP sites: http://www.doomworld.com/idgames/ (search for pl2)

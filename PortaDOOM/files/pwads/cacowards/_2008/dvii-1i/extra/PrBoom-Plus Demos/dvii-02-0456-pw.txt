@@ -1,0 +1,24 @@
+PWAD - DVII.WAD
+FILE - dvii-02-0456-pw.lmp
+Type - UV Max
+Map  - 02
+Port - PrBoom+ 2.4.8.1
+Plr  - Belial
+
+Kills   - 100%
+Items   - 69%
+Secrets - 100%
+
+Time    - 4:56
+
+Description:
+
+Short and sweet opening map (at least it used to be the first map when I recorded
+the demo). Not too hard and fairly simple route-wise. There's more to choosing
+when to use the small supply of rockets and cells than picking where to go next.
+The YK area can be a problem if you're low on health and the chaingunners get nasty.
+The final secret can also be deadly if you make one wrong move in the HK hallway.
+A first exit with a sub-5 time was enough for me, so it's still improvable.
+
+Przemyslaw "Belial" Woda
+nowylepszyszatan@wp.pl

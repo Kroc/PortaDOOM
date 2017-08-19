@@ -1,0 +1,163 @@
+==========================================================================================
+Advanced engine needed  : ZDOOM
+Primary purpose         : singleplayer
+==========================================================================================
+Title                   : ECHELON v1.5
+Filename                : echelon.wad
+Release date            : November 28th - 2016
+Author                  : Sverre Andre Kvernmo, aka Soundblock. Msg me on Doomworld if you
+			  have feedback, or post in the WADs & mods thread for Echelon:
+			  https://www.doomworld.com/vb/wads-mods/91053-new-megawad-echelon/
+Web Page                : www.monstercute.com
+Description             : A 30-map mega wad. Yes! Finally made one... The project's chief
+			  goal was to create a full set of bite-sized maps. Some maps
+			  grew a little larger. A reimagining of the Doom II storyline.
+Additional credits to   : Noisyvelvet, for breathing life into the monsters.
+			  Fonze, for playing the beta and giving invaluable feedback.
+			  Xaser, for rescuing the wad for posterity (fixed ZDoom crash bug)
+			  Doomworld.com in general, Echelon post contributors in
+			  particular.
+Texture resource credits: About half the featured textures were done by me for this
+			  project but I also lifted a lot from "Community Chest 4" and
+			  "The Afterglow Collection";
+			  www.doomworld.com/afterglow/textures.shtml
+			  Some textures used from the "Crucified Dreams" project.
+			  "Eternal Doom" material also used, some of which I created my
+			  self. More complete texture credits at the end of the doc.
+==========================================================================================
+* What is included *
+
+New levels              : 30
+Sounds                  : new SFX for the Clusterfiend/Midasfiend.
+Music                   : Zachary "Ribbiks" Stephens - maps 01, 03, 05-09, 11-13, 15-17,
+			  20, 21, 24 & 28.
+			  Lewis "Blueworrior" Harvey - map 14
+			  Santtu "MFG" Pesonen - maps19 & 22, plus opening title.
+			  James "Jimmy" Paddock - maps 02, 04, 10, 18, 23, 25-27, 29, 30,
+			  end titles and the text intermission tune.
+			  Mark Klem, for the tally intermission tune, lifted from 
+			  Memento Mori.
+			  Extra special thanks to these MIDI masters for making their
+			  creations free to use. Complete track listing available at the
+			  end of this document...
+Graphics                : Plenty of new textures. Three new monsters - Viper, and
+			  Clusterfiend/Midasfiend. The latter have featured before in my
+			  "Plasmaplant" map. Special thanks to the participants in this 
+			  thread, which yielded much cool grafitti:
+			  www.doomworld.com/vb/wads-mods/70073-pimp-my-texture-now-downloadable/
+Other files required    : doom2.wad, zdoom.exe
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP30
+Single Player           : designed for
+Cooperative 2-8 Player  : not tested, but 4 starts have been placed in each map.
+Deathmatch 2-8 Player   : not designed or tested for this, but startpoints have been
+			  placed.
+Difficulty Settings     : Skill 1 - (Hey Not Too Rough) Early BFG/SSG. Fewer and weaker
+			  monsters.
+			  Skill 2 - (Hurt Me Plenty) BFG and SSG featured. More ammo and
+			  items.
+		          Skill 3 - (Ultra Violence) No BFG and very late SSG. Designed
+			  around this skill, for that original Doom feeling. Pistol starts
+			  from here might be the most challenging way to play this wad,
+			  beyond...
+			  Skill 4 - (Nightmare) not tested.
+Play Notes              : Feel free to use jump and duck if you so please, but these new
+			  functions aren't neccessary to finish the maps. Some shortcuts
+			  may be obtained this way.
+			  This wad is deemed complete and is not in beta, but any bug
+			  reports of note will likely spur an update. I don't predict
+			  very many changes at this point.
+
+* Construction *
+
+Base                    : New verteces, linedefs and sectors from scratch. 3 originally
+			  sprited monsters. Bunches of both new and reused textures.
+Build Time              : Started life as Project PAR, back in 2013. Morphed into Echelon.
+			  Portions of the wad's architecture date back as far as 1996.
+			  I.e. Map 12 started life as a reject for Eternal Doom MAP 01
+			  and MAP 29 was embarked upon in late 1998. Pieces of map
+			  throughout also contain some older stuff.
+Editor(s) used          : GZDoomBuilder
+			  SLADE v3.0.2
+			  Photoshop Elements
+Known Bugs              : There are some "slime" artifacts along the way, here and there.
+May Not Run With...     : Other Doom source ports than ZDOOM. Maps 28 & 29 are high detail
+			  and may not run well on slower PCs.
+
+
+* Copyright / Permissions *
+
+No strings. Author condones maps and original textures (lump category "PAR") for this
+project to be distributed (and modified, if need be). The remainder is up to the 
+respective authors, but AFAIK they've let me use it freely, so go ahead.
+
+-------------
+TRACK LISTING
+-------------
+#:		Name:				Author:
+MAP01		Op7				Ribbiks
+MAP02		Insurgence			Jimmy
+MAP03		Reaper				Ribbiks
+MAP04		Harbor				Jimmy
+MAP05		Rair				Ribbiks
+MAP06		Chiggity			Ribbiks
+MAP07		Demetria			Ribbiks
+MAP08		Night				Ribbiks
+MAP09		Toybox				Ribbiks
+MAP10		Wicked Gods			Jimmy
+MAP11		Satan				Ribbiks
+MAP12		Dark Expanse			Ribbiks
+MAP13		Shrine				Ribbiks
+MAP14		FreeDoom D_E3M2			Blueworrior
+MAP15		NESA				Ribbiks
+MAP16		Wishlist			Ribbiks
+MAP17		Beehive				Ribbiks
+MAP18		You Ain't The Boss O' Me	Jimmy
+MAP19		Shadowed Hound			MFG38
+MAP20		Djeth				Ribbiks
+MAP21		Underground			Ribbiks
+MAP22		Once Belonged			MFG38
+MAP23		Shrouded in Darkness		Jimmy
+MAP24		Psychosis			Ribbiks
+MAP25		Fire Hive			Jimmy
+MAP26		Rogue Prophets			Jimmy
+MAP27		Cosmic Clash			Jimmy
+MAP28		Triage				Ribbiks
+MAP29		Sunset Over Babylon		Jimmy
+MAP30		Baron's Province		Jimmy
+D_M2TTL		Alone In Hell			MFG38
+D_DM2INT	Memento Mori D_DM2INT		Mark Klem
+D_READ_M	In My Mind			Jimmy
+D_EVIL		Evil Hero			Jimmy
+
+----------------------
+Texture credits, cont.
+----------------------
+
+Lump category:	Project:				Author/Facilitator:	
+--------------	--------				-------------------
+2MB		Too Much Brown				various authors/Daniel "Tormentor667" Gimmer
+CRUC		Crucified Dreams			various authors - http://www.doomworld.com/crucified_dreams/credits.shtml
+CC4		Community Chest 4			various authors - https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/cchest4
+DARKB		DarkBase Texture Wad			David Gevert
+DECON		deConstruct Industrial Textures		"stecki"
+EDOOM		Eternal Doom				various authors, Raven Software - https://www.doomworld.com/idgames/themes/TeamTNT/eternal/eternal
+EPOCH		Malice Texture Pack			Nick Baker
+IKD		IK Texture Pack				Iikka "Fingers" Keränen
+JGRAF		Graphtallica Texture Pack		Sean Johnson
+MORIS		Mortres.wad				Nick Baker
+NB5		nb5texd2.wad				Nick Baker
+NBFLT		nb_flats.wad				Nick Baker
+NMN1, NMN2	NMN Corporation Texture Set		Pawel Zarczynski
+OGRO		Ogro Texture Pack			François-Xavier Delmotte
+PSY		psyren textures				J.S. "psyren" Graham
+PAR		Echelon.wad				Sverre "Soundblock" Kvernmo
+RECOL		nb_recol.wad				Nick Baker
+SILV		nb_silv.wad				Nick Baker
+Q1		q1tex.wad				id Software/Derek "Afterglow" Mac Donald
+Q2		q2tex.wad				id Software/Derek "Afterglow" Mac Donald
+SSTEX		SailorScout's Textures Pack v1.0	J.C. "SailorScout" Bengtson
+WALLY		Wally Example Textures			various authors (defunct Telefragged link)

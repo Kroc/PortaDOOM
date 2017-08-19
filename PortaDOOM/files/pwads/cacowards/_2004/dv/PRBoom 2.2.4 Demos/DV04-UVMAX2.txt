@@ -1,0 +1,67 @@
+PWAD - Deus Vult (dv.wad)
+FILE - DV04-UVMAX2.lmp
+Type - UV Max (100/100)
+Map  - Map04 (End of Days)
+Port - PrBoom 2.2.4
+Plr  - Converted Doomer
+
+Kills  - 119%
+Items  -  83%
+Secret - 100%
+
+Time   - 42:56
+
+Description: End of Days was supposed to be hard-fun, but in PrBoom, this map is absolutely brutal.
+             This may be one of the hardest map beatable, matching the toughest of HR maps blow for blow. 
+             Only after 120 tries did I yield a single UV-Max demo. I played like a coward, stretching
+             a 25-minute map into 43 minutes by cornering and resting, but I've beat it, 
+             proving DV demo-recordable for all major ports. Some parts of the map are capable of killing you
+             instantly at 200/200 if you're not careful. Here's some of the fights to watch out for:
+
+1) The Opening Fight: You will have to take on a cluster of imps, revenants, mancubis, barons, and one archvile,
+                      without a BFG in the open. The key here is to take out the double chaingunners with a flick 
+                      of the wrist and head for the cell pack corner, with good speed you should be able to shelter
+                      yourself from the archvile flame attack, and don't stay in there too long, otherwise the mancubis 
+                      will pummel you with fireballs. Focus your entire efforts on killing the archvile and dodge those
+                      close range attacks, this must be done quickly or you're toast. 
+
+2) The 360 Degree Trap: Once you come near the fourth Radiation Suit and spot the giant mouth, walls will come down and
+                        all hell breaks loose. You have two tactics. 
+
+                        The first tactic is to lure the all the baddies from the caves and make them infight one 
+                        another via circle-strafing, this carries a risk of getting flamed by archviles which 
+                        happened to be mixed in with this unfriendly crowd. 
+
+                        The second tactic is less risky, once you provoke all monsters from 360 degrees, enter the 
+                        secret room where the Cacos and PEs spawns from--it should yield a soulsphere--and give 
+                        you a chance to neutralize all the flying monsters without much opposition. The tricky part here
+                        is to time your escape from the rock island. by using your elevation and the enemy's diagonal line
+                        of fire, you should be able to get the Cyberdemons to kill off a large number of foes before they 
+                        get swamped by barons. After hearing their death roars, leave the room and target any Archviles
+                        in the crowd, the rest should be mopped up with caution. It may seem like a complicated tactic, 
+                        but it'll come naturally when you know the layout of this map.
+
+3) Blood Temple [Hallway]: When you think of this area, think of the opening fight from HR2-32, without an invuln...
+                           work fast, target those viles, always be on the move, and watch out for the duo of roving
+                           cyberdemons. You must clear the enemies out quickly without waiting, if they are alive and
+                           and control the middle, you will be out of cells and will be dead. Work fast and accurately,
+                           speed and territorial control is key here.
+
+4) Blood Temple [The Bloody Fight]: When you think of this area, think of the blue key area in AV26, cept' blood 
+                                    instead of water, and includes Archviles and cyberdemons, it's a good
+                                    thing that you have an invuln to spend tho. The strategy here is to pick up the
+                                    invuln at the right time: when the distinct third wave of attack starts warping in.
+                                    using all your BFG-spamming knowledge, you will clear out as many viles and cybos
+                                    as you can while your screen is black and white. After the invuln wears out, use 
+                                    those poolside shields; they will come in handy when your screen gets flamed. 
+                                    With fast circle-running and the ability to provoke infights, you should come out of
+                                    this fight with an excess of blue armors, good for mistakes later on :)
+
+5) Final Fight: By natural instinct, you will grab all the ammunitions and powerups before taking the big plunge.
+                This fight isn't too hard if you know there is one rad suit in the back of the Dark Tower, make a fast 
+                run for it and start the infights, won't be too hard to mop up the rest of bastards. A slight warning:
+                there is only one item down there, and that is the rad suit. Won't be too hard, and as your reward for
+                enduring hell, you get to poke an eye out!!!
+
+Don't try to record a [PRBoom] demo for this map, it's just too damn hard, it's easy fun in ZDoom tho,
+--Huy

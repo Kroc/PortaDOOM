@@ -1,0 +1,112 @@
+$KEY:P=SHELL:pwads\megawads\DTWID\play.bat
+$KEY:T=SHELL:pwads\megawads\DTWID\DTWID.txt
+$KEY:W=SHELL:http://dtwid.herokuapp.com/
+
+:Doom the Way id Did
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2011>12>10*   Author : (see credits)
+:Levels   : *27*            Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla*    Includes : *+Graphics +Patches +Demoes
+:------------------------------------------------------------------------------
+
+At some point in time I got the idea that it would be really fun if _John Romero_ dusted off the ol' doom editor and made another map for Doom episode 1 for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know.
+
+This project asks the contributors to carefully study the original maps and try to make them as _John Romero_ and _Sandy Petersen_ did.
+
+The guiding principle in the project is to pretend that id Software initially intended to release Doom as a three episode, 30 level game, but somehow lost three levels; one from each episode.
+
+The mappers for the project are trying to create those lost tenth levels, except we are extending this concept to be a full 3 episode replacement.
+
+Our goal is to make the 'lost' maps as authentically as possible to be convincingly mistaken for original levels from the game, to recreate Doom the Way id Did.
+
+- _Hellbent_
+
+:Par Times
+:------------------------------------------------------------------------------
+*Rules of Determination:
+ - Rounded down to nearest 15sec then +30sec
+ - Pistol start
+ - HMP difficulty
+ - 4 runs per map (mean average is used)
+
+NOTE from _St. Alfonzo_: "I took the fastest available route for each map, killing only those monsters that got in my way or proved too great a threat to ignore. If I became low on health, ammo or armor I would seek out items only if they were immediately accessible. I ignored all secrets - including those most convenient - and did not exploit design flaws that would aid in improving my time."
+
+ E1M1 - 0:30            E2M1 - 0:45             E3M1 - 1:15
+ E1M2 - 1:00            E2M2 - 2:30             E3M2 - 2:00
+ E1M3 - 1:45            E2M3 - 1:00             E3M3 - 1:15
+ E1M4 - 1:30            E2M4 - 3:00             E3M4 - 1:30
+ E1M5 - 2:00            E2M5 - 2:45             E3M5 - 3:30
+ E1M6 - 3:30            E2M6 - 1:30             E3M6 - 1:30
+ E1M7 - 4:00            E2M7 - 3:15             E3M7 - 1:45
+ E1M8 - 2:00            E2M8 - 2:00             E3M8 - 1:15
+ E1M9 - 2:30            E2M9 - 3:30             E3M9 - 1:30
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : 1 year (over 3 years if you count the project's unofficial start in '08!)
+*Editor(s) used*          : Various
+*May Not Run With...*     : Versions of Doom prior to 1.9
+
+:Credits
+:------------------------------------------------------------------------------
+*Founder:
+        _Hellbent_
+
+*Project Managers:
+        _Hellbent_, _Xaser_, _ellmo_
+
+*Artist:
+        _Kracov_
+
+*Mappers:
+        _Alfonzo_, _Captain Toenail_, _Daimon_, _ellmo_, _Esselfortium_, _Hobomaster_, _Icytux_, _iori_, _Lutz_, _Marcaek_, _Megalyth_, _Pcorf_, _Phobus_, _Processingcontrol_, _Stewboy_, _Use3d_, _Xaser_
+
+*Other contributors:
+        _40oz_, _Bruce_, _Bucket_, _C3ON9_, _Mr. Chris_, _Cyberturtle_, _Dannebubinga_, _Doomhero85_, _Dragonsbretheren_, _Foodles_, _Mr. Freeze_, _Lawstiker_, _Matt534dog_, _Megasphere_, _Memfis_, _MithranDenizen_, _NaturalTvventy_, _Nuxius_, _Phobosdeimos1_, _RDmonkey_, _Shadesmaster_, _UltimateCarl_, _UltimateLorenzo_, _Vaporizer_, _XenoNemesis_
+
+*Special Thanks:
+        _Balames87_, _Chubz_, _Marnetmar_, The Odamex crowd for lots of DM testing, especially _Ralphis_, _HeX9109_, _RjY_, and _Minigunner_ (for hosting, support, and showing up at nearly every session). The ZDaemon crowd for co-op testing and some frantic Nightmare Survival action.
+
+*Mapping Advice:
+        _John Romero_
+
+*Dedicated to:
+        Our friend _Engineer_, who was mapping for this project, died on September 26th, 2011 at the age of 23. May he rest in peace.
+
+*Special Note
+        .rehtie ,aedi dab a eb yltcaxe t'ndluow oremoR nhoJ gnillik tub NRGNRB dna LLAWKET fo stnuoma larebil esu tsum uoy ,emag eht niw oT
+
+*Map Credits:
+
+E1M1: "Communications Bridge" by  _Esselfortium
+E1M2: "Military Bunker"       by  _Hobomaster
+E1M3: "Fuel Synthesis"        by  _Esselfortium
+E1M4: "Treatment Plant"       by  _Hellbent
+E1M5: "Engineering Bay"       by  _ellmo
+E1M6: "Reactor Complex"       by  _Hobomaster
+E1M7: "Logic Core"            by  _iori
+E1M8: "Transport Facility"    by  _ellmo
+E1M9: "Excavation Site"       by  _Stewboy (Forty-Two)
+
+E2M1: "Receiving Station"     by  _Xaser
+E2M2: "Filtration Compound"   by  _Esselfortium_ + _Xaser
+E2M3: "Rec Facility"          by  _Captain Toenail
+E2M4: "Mental Ward"           by  _ellmo
+E2M5: "Deimos Command"        by  _Use3D
+E2M6: "Foundry"               by  _st. alfonzo
+E2M7: "Ore Processing"        by  _Megalyth
+E2M8: "Vault"                 by  _Marcaek_ + _Esselfortium
+E2M9: "Nebulous Origins"      by  _iori
+
+E3M1: 'Abyssal Stronghold"    by  _ellmo
+E3M2: "City of Corpses"       by  _Daimon (Walter Confalonieri)_ + _ellmo
+E3M3: "Malebolge"             by  _Icytux
+E3M4: "Torture Chambers"      by  _Captain Toenail + Hellbent
+E3M5: "Chapel of Scorn"       by  _Paul Corfiatis
+E3M6: "Depths"                by  _Phobus
+E3M7: "Inner Sanctum"         by  _ellmo
+E3M8: "Core"                  by  _ProcessingControl
+E3M9: "Lake of Fire"          by  _Chris Lutz

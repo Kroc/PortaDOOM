@@ -1,0 +1,60 @@
+===========================================================================
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Pinnacle of Darkness
+Filename                : pinnacle.pk3
+Release date            : 06/07/15
+Authors                 : Hobomaster22
+Email Address           : hobomaster22@gmail.com
+Other Files By Author   : Onslaught DM Series, Exodus, Return to Phobos, Hell Keep, The Lost Gateway, Decadence, Hell on Cheese, Lunar Outpost, Two Plutonia Maps, Genesis of Descent
+Description             : Large hell/gothic themed map for GZDoom. Works best with the latest dev builds of GZDoom as of release - June 2015.
+Additional Credits to   : Tango for playtesting. Primeval for the awesome music.
+
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Source port             : GZDoom
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : None
+Other game styles       : None
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch 
+Build Time              : On and off for 7 years
+Editor(s) used          : Deepsea v12.15.3
+Known Bugs              : None 
+May Not Run With...     : Designed for GZDoom only 
+
+*** GZDoom builds 2.0.05 and 1.8.10 have critical bugs that cause 3d floors to not render correctly. The April dev builds fix this bug.
+http://devbuilds.drdteam.org/gzdoom/
+
+* Copyright / Permissions *
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+

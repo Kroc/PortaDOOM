@@ -1,0 +1,67 @@
+===========================================================================
+Advanced engine needed  : ZDoom, last tested with 60
+Primary purpose         : Single player
+===========================================================================
+Title                   : Chosen 1.33
+Filename                : Ch133.wad
+Release date            : 17/06/03
+Author                  : Mouse
+Email Address           : lilwhitemo@midmaine.com
+
+Description             : In an attempt to destroy this world from within,
+		          Apophis has created Uraeusis to achieve that goal.
+			  Chosen by Seth, you must battle your way through
+			  the Underworld and defeat Uraeusis.
+
+		          **IMPORTANT**
+		          Disable "Scale Text in High Res" if you have it
+		          enabled, as this will crash the game.
+
+Additional Credits to   : Nigel Rowand for his proofing
+		          Mike Blakely for testing and level tweaks
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (Internal)
+Demos                   : No
+Other                   : Yes, KEYCONF to add dialog key, and weapons.
+
+* Play Information *
+
+Game                    : Doom2
+Map #                   : Map01 - Map10
+Single Player           : Yes
+Cooperative 2-4 Player  : Two player starts, never tested.
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes, but not effectively.
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A while.
+Editor(s) used          : Zeth, XWE, WinTex
+Known Bugs              : None known.
+
+May Not Run With...     : Older version of ZDoom.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *

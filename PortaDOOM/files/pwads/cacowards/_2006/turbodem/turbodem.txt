@@ -1,0 +1,253 @@
+===========================================================================
+Archive Maintainer      : I sure hope so.
+Advanced engine needed  : Zdoom (Newest available release, fer shizzle)
+Primary purpose         : Single Player
+===========================================================================
+Title                   : TurboCharged ARCADE!  (Demo Release)
+Filename                : turbodem.wad
+Revision                : loel first release
+Release Date            : 11-18-06
+Author                  : Xaser "The Conqueror"
+Email Address           : xaser.88@gmail.com
+Other Files By Author   : Tons of weapon replacements, SHiTWADS series,
+                          I.C.T.O.A.N., and Zen Dynamics
+Misc. Author Info       : I can never think of a bloody thing to put here, so I
+                          wind up changing it each and every time. Go figure. :P
+                          So yeah, I'm some weird guy who does weird stuff.
+
+Description             : First off, I would like to state one... statement.
+                          This is NOT a jokewad.
+
+                          Yes, the levels are not exactly the most serious. Yes,
+                          some detailing looks like it's been done by a two-year
+                          old. However, if someone asks if this is the newest
+                          successor to the SHiTWADS regime, the answer is a firm
+                          NO.
+
+                          TurboCharged ARCADE! is not intended to be screwy, but
+                          to be different. An experimental wad by nature, TcA
+                          focuses on putting the player in odd situations, which
+                          require different techniques and ideas to beat them.
+                          It's sort of a throwback to the old days of arcade
+                          games, with short, sharp levels and a bit of freedom
+                          to choose whichever type of level suits your fancy.
+
+                          In TcA, you can take a journey to foreign 
+                          hellish landscapes, dive across rooftops whilst
+                          dodging bullets in slow motion, escape from insanely
+                          overpopulated prisons, and face off against the
+                          devilish Adolf Hitler in a showdown for the ages...
+                          all in whatever sequence you desire!
+
+                          A core aspect to the gameplay in TurboCharged ARCADE!
+                          is the fact that the entire game's speed has been
+                          doubled. Enemies attack twice as fast, weapons are
+                          souped-up and speedy, and you'll be running for your
+                          life at top-speed in almost every situation. The
+                          action is non-stop, and the increased speed will test
+                          the reflexes of even the most hyperactive individuals.
+
+                          TcA's intentions don't stop there, either... on top
+                          of the wild-and-crazy gameplay aspects, this wad is
+                          also intended to be funny as all hell. With all sorts
+                          of ridiculous situations, overly-retarded parodies,
+                          and over-the-top randomness, I'm hoping that
+                          everyone will have to stop playing at least once 
+                          because they're laughing too damn hard to keep
+                          themselves alive. :P
+
+                          However... as you may have noticed, this release is
+                          only a very tiny 8-level demo release of TcA. What,
+                          you may ask, will the full version offer? Imagine,
+                          obscene amounts of levels with incredibly varied
+                          styles of gameplay and difficulty. Sporting a new
+                          interactive level-selection system and hours upon
+                          hours of random gameplay, TcA will feature just
+                          about everything but the kitchen sink!
+
+                          Anyway, enough with the salesman-type advertising...
+                          This guy may not be finished for a LONG time, but
+                          in the mean time, stay tuned at the ZDoom forums,
+                          as I'm pretty sure that the full version will feature
+                          a whole slew of levels from all over the community...
+                          as I simply can't crank out all of them on my own. :P
+
+                          In the meantime, download and enjoy this small sample
+                          of things to come. Have fun, doggamnit! :P
+
+Additional Credits to   : Oh hell... lots of people. :P
+
+                          MasterOfDeath - I came up with the idea one night when
+                                         we were chatting mindlessly about the
+                                        most insane and random stuff. :P
+                                       Basically... loads of inspiration. XD
+
+                          Giest118 - TONS of feedback and support on some early
+                                    betas. Judging from his responses, I'm
+                                    quite surprised he hasn't died laughing. :P
+
+                          Pink - I tend to get all sorts of crazy ideas when I'm
+                                about to die of sleep deprivation, so HUGE
+                               thanks to Pink for keeping me up late so many
+                              times when we found something to talk about. :P
+
+                          Zero Prophet - Betatesting, support, and a nice
+                                        guinea-pig to test out new ideas on.
+                                       After all "we've" been through during
+                                      the creation of even the demo, I wouldn't
+                                     be surprised if he's just as crazy as me.
+
+                          Nintendrone - Somebody that nobody else would know,
+                                       but yeah, he's tested and played all
+                                      sorts of stuff and contributed many of the
+                                     ideas here (Matrix, anyone?). I sure hope
+                                    the demo lives up to his expectations. :P
+
+                          More greets:
+
+                          -BioHazard, for somehow putting up with me. :P
+                          -Chronoteeth, for the same in reverse (no offense :P)
+                          -QBasicer, for somehow being around (when I'm not. :P)
+                          -Scuba Steve, for ideas and some artwork. :P
+                          -NMN, 'cause I'm sure he inspired something. :P
+                          -Randy (DZoom)
+                          -Graf (GDZoom)
+                          -Id  (MooD)
+                          -Trees, for making oxygen.
+                          
+                          And, of course, (in some way or form)
+
+                          Adolf Hitler, Sherlock Holmes, Neo, Pablo Picasso,
+                          and all those people who did something so great or
+                          terrible that they merited an appearance. :P
+===========================================================================
+* What is included *
+
+New levels              : Somewhere around 8
+Sounds                  : Yes
+Music                   : Yes, bunches of stuffage, mostly actually by me.
+Graphics                : Yes, Unofficially. :P
+Dehacked/BEX Patch      : Yes... changes the entire game's style. :P
+Demos                   : Whoops.
+Other                   : DECORATE, DECALDEF, SNDINFO, and all that Zdoom stuff.
+Other files required    : Latest ZDoom and your local fire department.
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP08
+Single Player           : Designed for
+Cooperative 2-4 Player  : No (too scripted)
+Deathmatch 2-4 Player   : No (definately not)
+Other game styles       : Yes (No)
+Difficulty Settings     : Not this time around... the full version will have
+                          individual difficulties for each map, so it won't make
+                          much of a difference in the long run. :P
+
+
+* Construction *
+
+Base                    : Scratch, though I ripped ideas from EVERYWHERE.
+Build Time              : A few months off and on... much longer if I counted
+                          the time period where I "forgot" about the wad but
+                          returned to it WAY later... :P
+Editor(s) used          : Doom Builder, XWE, MIDI Tracker (SUCK... but works) 
+
+Known Bugs              : Prolly a few glitches, but for the most part there
+                          shouldn't be anything game-breaking. It's still a
+                          demo, eh? :P
+
+May Not Run With...     : I must refrain from using a typical sharp object joke.
+
+
+
+* Map Information *
+
+Whoa, what the deuce have I done to the textfile template? Well, anyway...
+I'm going to take this time to outline the levels and provide a few tips. :P
+
+
+Map01 - "At Home"			Type: None
+	Screaming in rage, you throw the remote control against the wall in
+	disgust. "There's nothing on TV, damnit!" Argh... this means there's
+	nothing left to do but to actually venture to the unknown: outside.		
+    ProTip - Don't eat the yellow snow.
+
+Map02 - "Go To Hell"			Type: "SHOOT"
+	Not only is it not heaven, but it is also hell. Are you gonna let the
+	demons get away with taking you before your due time? Make them regret
+	the day they ever decided to steal your soul.
+    ProTip - Keep in mind that everything is twice as fast now... although it's
+	    tempting to run out with guns blazing at 2x speed, remember that the
+	    demons can do the same to you as well.
+
+Map03 - "Prison Rape!"			Type: "SPEED" 
+	After a long hard day of picking up hookers, one would hope to have a
+	chance to relax and watch the football game. However, after being
+	arrested by the police, suddenly getting an STD from a prostitute
+	becomes the least of your worries.
+    ProTip - Not much to say... just KEEP RUNNING. :P
+
+Map04 - "You Are Pablo Picasso"		Type: "STICK"
+	Whoever said that famous artists are only popular once they're dead?
+	Picasso's Back, and he's pissed and about to paint the most
+	controversial picture of all...
+    ProTip - Don't turn. Use strafe for sideways movement... it's way easier.
+
+Map05 - "Battleshit" : 			Type: "SLASH"
+	Cybies are such jerks, but sometimes they love to play a good
+	board game now and then. Battleship is a fan favorite, and when a lone
+	marine is threatened with his life, his fate resides in a simple game
+	of Battleship... with a twist!
+    ProTip - Don't get too close to the bad mother, but don't run into the
+	    arena walls, either. A happy medium is a happy victory.
+
+Map06 - "Go Eat Shit, Sherlock!" : 	Type: "STORY"
+	That pesky detective steals all the fame, the fortune, the women, the
+	the men... and so on and whatnot. He's about to begin the biggest case
+	of his entire life... but what would happen if he were to somehow call
+ 	in sick and someone else were to take over?
+    ProTip - If you're having trouble hunting down all the demons, make sure to
+	    check every room, nook and cranny. Oh, and don't be fooled...
+	    although the hallways may seem quite safe, you'd better get the hell
+	    out before you get a baron shoved down your throat. :P
+
+Map07 - "The Matrix Has You" : 		Type: "STYLE"
+	Neo, Trinity, Morpheus. The slightest mention of one of these names
+	sends cheers rippling throughout a crowd. But c'mon... these guys are
+	overrated as hell! Anyone can pull off sweet slow-motion moves and
+	ridiculously overpowered fighting techniques. All it takes is a little
+	hacking, and a little imagination...
+    ProTip - In slow motion, the bullets still move faster than you'd think.
+	    With reduced motion, make sure to always start dodging early.
+
+Map08 - "I'm Hitler" : 			Type: "SHRED"
+	He's back, and quite pissed for having lost World War II. Don't let
+	this guy start the next batch of nuclear warfare. The only Holocaust
+	should be the global extermination of all Hitlers!		
+    ProTip - If you're lucky, during certain forms Hitler has a slight chance of
+	    accidentally nailing himself with his own attack. Keep this in mind.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse, as long as you credit me in some form.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+You MAY swallow a nuclear bomb whole in hopes of committing suicide, provided
+that you make sure the bomb does not have any sharp objects on the outside,
+because that may cause accidental disembowelment. Permissions have been
+obtained from manufacturers of nuclear warheads for any bombs that may
+be used in this event.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirror mazes.

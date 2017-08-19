@@ -1,0 +1,95 @@
+****************************************************
+******** Doom64 EX Change List *********************
+****************************************************
+
+---------------------------------------------
+2.5
+---------------------------------------------
+
+* New item grab compatibility flag added (for enabling/disabling the item bump/grab bug fix)
+* Item pickup behavior now more accurate to original game
+* Make sure gameflags and compatflags are set by cvars before level is loaded (autoaim, allowjump, etc)
+* Allow demo recording and playback across multiple levels while maintaining original behavior
+  (no hud, stop playback on level exit) with title map and iwad demos.
+* Hide status bar only if playing demos from the iwad
+* Rename a demo file if it already exists
+* Store more precise angle and pitch values while recording demo
+
+---------------------------------------------
+2.4
+---------------------------------------------
+
+* Fixed doom64 logo from persisting when titlemap event re-launches
+* Addressed issue where titlemap music would de-sync when uncapped framerates are enabled
+* Fully re-bindable XInput buttons support
+* Cleaned up and improved controls menu
+* Initial implementation of RNG seeding from PrBoom for demo syncing
+* Initial implementation of nightmare things/mobjs
+* Force free look option for mapinfo
+* Fixed spinlock bug with audio system
+* Fixed bug where automap inputs would not eat the input events while shooting in automap panning mode
+* Force-clear all sources in audio channels (Z_Free error)
+* Can now take screenshots while menus are active
+* Fixed issues with external palette loading and palette animations for world textures
+* Abort loading titlemap if map33 doesn't exist in mapfino
+* Handle mouse buttons in its own event state (causing bugs with clicking on menu items with the mouse button)
+* Cleaning up fire sky code
+* Removed health and damage scale variables
+* Save and restore gameflags and compatflags when returning from a demo playback
+* Fallback to lower depth/buffer settings if can't initialize OpenGL (fullscreen)
+* Removing iwad checksum checks
+* Fixed diagonal scrolling sector thrusting
+* Blam tool now allows non-sequencial macro ordering
+
+---------------------------------------------
+2.3
+---------------------------------------------
+
+* Wadgen now extracts detune and pitch wheel sensitivity properties for soundfont
+* Checksum lump created by Wadgen to further check for IWAD versions
+* Improved console command system
+* Automap controls can now be key-binded
+* Mouse cursor feature for menus
+* Give, mapall, killall console cheats implemented
+* Skyboxes implemented for mouselook users
+* Zone allocation replaced with zative system
+* Support for 65535 sidedefs and segs
+* Sound output gain now tweakable in menu
+* Better support for handling 'drag & drop' pwads
+* Many bug fixes
+
+---------------------------------------------
+2.2
+---------------------------------------------
+
+* Support for *Unix and 64-bit operating systems
+* Fixed auto-aiming causing de-syncs for network games
+* Regional features to support Japanese & European versions of the game
+* Network menu added
+* Fixed some auto-aiming bugs
+* Fixed infrared bug where all clients were affected
+* Obituaries added for network games
+* Better soundfont file detection
+* Improvements to console cvars
+* The way lines are rendered in automap is more accurate to the original game
+* New compatibility settings - lost soul limit and walk over actors
+* Improved renderer to support video cards without texture combiner support
+* Improved screen melt/wipe effect
+* Improved menus and added hints
+* Tweaked the 'arranged' hud type
+* Game now accept IWADs for custom wads/maps
+* Fixes to monster behavior for hardcore difficulty
+* Teleport fog's z height is adjusted based on how the original game handles it
+
+---------------------------------------------
+2.1
+---------------------------------------------
+
+* Better widescreen support. Most native resolutions for 4:3, 16:9, and 16:10 aspect ratios are now supported
+* Fixed scale and offset for artifact icons for type 2 hud
+* Support for custom MIDI lumps (Handles custom DS_* markers)
+* Automap movement is no longer interpolated. This fixes the jittering when in chasecam mode
+* Fixed crash when trying to bind a non-bindable key in controls menu
+* Fixed plasma buzz from continuing randomly when switching out weapons
+* Fixed finale music not playing
+* Fixed missing map 99 crash when trying to go to main menu while in finale/cast screen

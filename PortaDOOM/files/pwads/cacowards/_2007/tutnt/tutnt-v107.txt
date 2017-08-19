@@ -1,0 +1,124 @@
+THIS IS AN UPDATE TO "tutnt-v106.zip", PLEASE REPLACE THE OLD FILE WITH THIS NEW ONE!
+===========================================================================
+Title                   : The Ultimate Torment & Torture
+Version			: v1.07
+Filename                : tutnt.pk3
+Date Finished           : September, 11th 2007
+Author                  : Daniel "Tormentor667" Gimmer
+Web Page                : http://www.realm667.com/
+			  http://www.tormentor667.de/
+Previous Work		: Original Torment & Torture Series
+			  X-Mas Deathmatch
+			  Map01 Remixes Compilation
+			  The City of the Damned
+			  Sapphire - Orbital Research
+			  Knee-Deep in ZDoom (KDiZD)
+			  Ultimate Torment & Torture : Invasion
+			  Community Chest 3 Contribution (1x)
+			  ZPack Contributions (3x)
+			  Sabbat Martyr II Contributions (2x)
+
+Look also for		: The soon to be released...
+				Netherworld : A Cursed Legacy
+				X-Mas Deathmatch 2
+				Perforated Entrails : Renaissance
+				Stronghold (working title)
+
+Email Address           : webmaster@tormentor667.de
+
+Description             : The Ultimate Torment & Torture is a compilation of all 
+			  classic episodes totally remastered and revamped for 
+			  more gameplay fun and visual candy as well as the all 
+ 			  new Episode 4 "Havoc" plus many new goodies and extra 
+			  stuff. Fight yourself through each episode seperately 
+			  or battle your way from the beginning through the whole 
+			  game until you reach "The Source" for the final Showdown!
+
+Technical Info		: Some of the maps, especially those with weather effects and
+			  the later ones in Episode 4 are huge (kinda KDiZD), filled
+			  with objects, sectors and lines. If you encounter framerate
+			  drops, you can deactivate the weather effects with "W" (or
+			  just define your own key in the menue). If this doesn't help,
+			  your machine is too old or too slow to handle UTNT and you
+			  can't do anything about it. Play the classics or buy a new
+			  computer / new components :P
+			  Beyond, "Fury of Fire" is independent from all the other
+                          episodes and isn't included in the full play from the
+			  beginning of Episode 1 to the end of Episode 4. Play it
+			  seperate.	
+			
+Info on v1.05		: The latest version of UTNT is fully operationable in
+			  Skulltag and is technically enhanced to ensure that you
+			  won't encounter lags or slowdowns due too many packets
+			  being sent and particles floating around. I changed all the
+			  visual special effects to be clientside only and without
+			  any interaction that could drop the network speed or
+			  framerate. Special thanks to Torr Samaho for making this
+			  flags reality and to Ghastly Dragon for fixing and improving
+			  the whole decorate code for monsters and special effects, you're
+			  awesome and those kind of nice guys that keep the community
+			  alive and flowing :)
+
+GZDoom Settings		: Shaders MUST be DEactivated
+			   otherwise you will get visual glitches because shaders and
+			   dynamic lights don't do good together.
+			  Lightning Mode MUST be "Standard" style
+			   to make sure that contrast and sector lights look exactly
+			   the way they were intended to!
+
+Resolution Info		: Make sure to play this in 4:3 resolutions instead of 16:9
+			  to avoid graphical errors. Most of the gfx's in UTNT are
+			  optimized for such aspect ratios.
+				
+Credits & Special Thx   : Type "changemap endmap01" in the console for a full list of
+			  contributers. Thx to all of them and sorry to those who
+			  I accidentally forgot. There were so many people who helped
+			  me with and contributed to this that I might have missed one
+			  or another.
+===========================================================================
+
+* Play Information *
+
+Maps                    : 08
+Source Port		: GZDoom 
+Single Player           : Yes
+Cooperative 2-8 Player  : Yes (up to 8 players)
+Deathmatch 2-8 Player   : No
+Difficulty Settings     : Yes (finally)
+New Sounds              : Yes
+New Music               : Yes
+New Graphics            : Yes
+
+
+* Construction *
+
+Base                    : Episode 4 from scratch, 
+			  Episode 1-3,LE based on their originals.
+Build Time              : v1.0 from September, 22th 2004 till September, 10th 2007 
+			  (with several long and short breaks)
+			  v1.01 released on September, 11th
+                          v1.02 released on September, 16th
+			  v1.02.1 released on September, 26th
+			  v1.02.2 "GZDoom Hotfix" released on November, 23rd 2007
+                          v1.02.3 another hotfix plus minor text bugfixes, May 2008
+			  v1.03 released October,2nd 2008, heavily improved client/server
+				performance (clientside actors & scripts), thx to Cutmanmike
+			  v1.03.1 final hotfix - hopefully "/me Idiot Edition"
+			  v1.05 fully operational now with Skulltag due +CLIENTSIDEONLY
+				without hundreds of packages unnecessary network traffic.
+			  v1.06 Script fixes in TNT03A1 and TNT03A2 that caused network
+				traffic
+			  v1.07 added widescreen-friendly graphics for 16:9 resolutions
+Editor(s) used          : Adobe Photoshop, DoomBuilder, ACC, WinTex, XWE, DecX, SlumpEd
+Known Bugs              : Read "GZDoom Settings" (top)		
+
+
+* Other Information *
+
+Where to Get		: http://www.realm667.com/
+			  http://www.doomworld.com/idgames/
+Copy Information	: You may use material from this project for your own
+			  projects as long as you credit the creators
+			  You may upload this file somewhere else as long as
+			  this file stays included as it is
+			  You may base projects on this resources and setting

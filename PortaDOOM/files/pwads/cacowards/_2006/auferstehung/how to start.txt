@@ -1,0 +1,34 @@
+
+*TO START:
+If You want to Run the TC as is just Click on Zdoom
+since the Iwad its running on is FREEDOOM
+-----------------------
+-----------------------
+-----------------------
+-----------------------
+-----------------------
+-----------------------
+*If you own Doom 2 and 
+IF YOU WANT TO RUN THIS TC WITH DOOM2 by ID
+YOU MUST OWN DOOM 2:
+1.Move the Doom2.wad file from your own files into NZdoom  (I suggest creating a backup of Doom2 before doing so)
+
+2.Just click on zdoom and you are ready to play (I suggest changing the control settings to fit your playing style)
+
+
+*tips:
+1.Remeber that the option to jump is available. While in the Zdoom options menu, just enable "Allow Jump" in the gameplay option section, then choose which key you want to use for jump by simply going into the Customize Controls section.
+
+2.Try using the weapons cheat if you want to try out all the weapons. The Cheat is simply: idfa, type this while playing.
+
+3. If you want to listen to the cool midis I put in better,go to the options menu, then go to the Sound options menu, after that put the "Midi Music volume" to the limit that you'd like.
+
+4.You can just click on Zdoom to run the complete TC, no dragging wads or Deh files.
+
+5.Try Playing through this the old fashioned way(actually playing) if you want to collect all the weapons without cheating.
+
+6.You can use a Third Person Chase Camera by simply going to the Customize Controls sections in the options menu and choosing a key for "ChaseCamera"
+
+
+to learn more about how to use NAZI AUFERSTEHUNG and the controls
+* Read the included text file "How To play+Controls.txt"

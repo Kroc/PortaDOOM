@@ -1,0 +1,71 @@
+===========================================================================
+Title                   : Minos' Judgement: 4th Canto of INFERNO
+Date Finished           : 05/08/1995
+Author                  : Dr Sleep (aka John W. Anderson)
+Email Address           : 76312.3415@compuserve.com
+Other Files By Author   : "And Hell Followed," Episode 4, Level 7 of *The 
+			    Ultimate DOOM* by Id Software;
+			  "Dante's Gate" v2.2 (1st Canto, INFERNO)
+			  "Crossing Acheron" v2.2 (2nd Canto)
+			  "Virgil's Lead" (3rd Canto)
+			  "Nessus" (5th Canto)
+			  "Geryon" (6th Canto)
+			  "Vesperas" (7th Canto)
+			: For HERETIC:
+			  "Recant" v1.1 
+Misc. Author Info       : Namu Amida Butsu
+Additional Credits to   : Jim F. Flynn for support;
+			  Shawn Green, American McGee, John Romero,
+			   and everyone at Id Software;
+			  Howard "Desdinova" Rider for graphic support;
+			  Antony Burden and Simon Oke for DETH 2.1;
+			  Joshua E. Anderson for playtesting.
+
+Description		: MINOS' JUDGEMENT is the 4th Canto in my INFERNO 
+			  series.  In your search for Beatrice, your
+			  guide, Virgil (the beatnik space-poet) has just
+			  successfully lead you through the First Circle of
+			  Hades -- only to bring you to the court of Minos,
+			  the Judge of Hell.  
+			    "Well," you say, "this is another fine mess
+			  you've gotten us into.  Now what?"
+			    Virgil, with his usual loquacity, replies:
+			  "Heh heh."
+
+			  This is a very large level; good luck.
+
+			  And pay attention to the lighting detail: it took
+			  me hours.
+			
+===========================================================================
+* Play Information *
+
+Map #                   : Map05
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : All
+New Sounds              : No
+New Music               : No
+New Graphics            : Yes
+Demos Replaced          : None
+
+* Note on the Graphics *
+			
+			  The star sky texture was composed from scratch using
+			  Paint Shop Pro v2.0.
+
+===========================================================================
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Quite a while (over 150 hours)
+Editor(s) used          : DETH 2.1 by Antony J. Burden and Simon Oke;
+Other Utilities		: BSP v1.2x by Colin Reed;
+			  RMB v2.1 by Jens Hykkelbjerg;
+			  DOOMTex v1.0c by Steve McCrea;
+			  DOOMTex Supplement by Ben Sze;
+			  Paint Shop Pro v2.0 for Windows;
+Known Bugs              : None whatsoever
+May Not Run With...     : OS/2 WARP <g>

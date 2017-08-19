@@ -1,0 +1,68 @@
+===========================================================================
+Advanced engine needed  : ZDoom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Luducrium
+Filename                : ludicrm.zip
+Release date            : December 8. 2015
+Author                  : antares031
+Email Address           : antares031@naver.com
+Other Files By Author   : Antaresia, Struggle(WIP)
+
+Description             : I usually don't make slaughtermaps, but I decided
+                          to create some levels that I normally hate. So here
+                          it is. Please keep in mind that I usually do not
+                          make(or play) slaughtermaps, and this is just
+                          experimental one.
+
+Additional Credits to   : The voice of angry marine was from Crysis
+===========================================================================
+* What is included *
+
+New levels              : 6
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : No
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 6
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Maybe?
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Two days
+Editor(s) used          : Doom Builder 2, Slade 3, Photoshop CS3
+Known Bugs              : MAP03 has graphical glitch, and MAP05 is just
+                          unplayable with PrBoom.
+May Not Run With        : Just run it with latest ZDoom
+Tested With             : ZDoom 2.8pre
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

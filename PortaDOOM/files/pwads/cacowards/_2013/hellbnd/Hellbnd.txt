@@ -1,0 +1,375 @@
+===========================================================================
+Advanced engine needed  : Limit Remover. Freelook is advised, but not necessary. DEH reading is only needed for mapnames
+Primary purpose         : Single+Coop play / Deathmatch (includes starts and extra weapons, but not designed for)
+===========================================================================
+Title                   : Hellbound
+Filename                : hellbnd.wad, hbfm29.wad
+Release date            : 06.29.2013
+Author                  : Zoltán Sófalvi (Z86)
+Email Address           : zeratul67@gmail.com
+Other Files By Author   : PFENH.pk3, SBrightmaps.pk3
+Misc. Author Info       : Hungarian, 27 year old Doom enthusiast
+
+Description             : 32 map megawad with collections of maps made from different periods of my
+			  doom mapping hobby, along with new ones. All old maps are re-polished to make them
+			  consistent in look with the newer ones.
+			  Maps are "progressively" chained together (so the previous map's end is
+			  more or less linked to the next one's start). Difficulty is medium, sometimes hard,
+			  but not insane. Experienced players can do it in UV without any problem.
+
+			  HBFM29.wad: the full version of MAP29. Load this if you think your port/computer
+			  can handle the awesomeness (or laggyness) of it. Barely any gameplay difference, though.
+
+Additional Credits to   : 	Id software for Doom and Doom2, textures and music files
+				Team TNT for some textures and midis
+				Apogee Software for a midi
+				Jimmy91 for some midis
+				Unknown authors who made midi versions of the following songs:
+					- Pantera: Hellbound
+					- Dark Tranquillity: Ex Nihilo
+					- Judas Priest: All Guns Blazing
+				
+===========================================================================
+* What is included *
+
+New levels              : 32 all new maps by me (Z86)
+Sounds                  : No
+Music                   : Yes, doom/doom2/tnt musics are used whenever it fits the mood, and includes custom midi files
+Graphics                : Yes, new skies and TITLEPIC/INTERPIC/BOSSBACK, HUD and map labels, and a few textures from doom1/tnt
+Dehacked/BEX Patch      : Yes (mapnames)
+Demos                   : No
+Other                   : No
+Other files required    : Doom 2 IWad
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Not made for, but starts provided
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Around 1 year for repolishing and new maps. Some maps are based on very old maps by me, never published
+Editor(s) used          : WadEd137, DoomBuilder, DoomBuilder 2
+Known Bugs              : Downward sky-pits are not visible in some ports, Objects in tall skies might be glitchy
+May Not Run With        : Vanilla Doom, or engines which keep limitations
+Tested With             : GZDoom, PRBoom+
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+
+===========================================================================
+Main Inspirations  :
+- Wads: Alien Vendetta, Scythe series, Speed of Doom, Ultimate Torment and Torture, Void
+- Other Games: Doom 3, Doom 64, Half-Life, Duke Nukem, Shadow Warrior, Quake series, Rage, Deus Ex, Enclave
+
+===========================================================================
+Story/Notes   : 
+===========================================================================
+
+Story:
+
+You are called into service from your home late at night. Even though you retired as a combatant -
+all those hellish invasions were enough for now - UAC seems to need your talents again. You grab your
+pistol you keep at home, and realize what is going on again as you hear a familiar growl from the
+corridor. Time to put that demon-slaying experience into action again...
+
+
+- MAP01 - Apartments - Difficulty: Easy
+You awake in the middle of the night as a desperate UAC message gets through on your communication devices.
+UAC installed plenty of hardware in your home for a situation just like this. You head out to the infested
+streets to reach the nearest UAC installation.
+
+Author's Notes: This is a quite old map, but it looked decent without much overhauling needed. It was started
+with an old DOS editor, and finished in DoomBuilder 2. It was kind of a shot at a "scary city map".
+
+- MAP02 - Canal Road - Difficulty: Easy
+Your path leads you through the treacherous canals, now overrun with undead and demons. Beware of the water
+below, industrial waste is known to be flushed into it. That UAC base is nearby, hopefully it is able to hold
+the invasion and you can meet some reinforcements there.
+
+A.N.: MAP01's continuation. This map was inspired by Deus Ex 1's Hong Kong Canal map. It contains a relatively
+tricky secret, hopefully not too obscure :)
+
+- MAP03 - Testing Chambers - Difficulty: Easy
+Arriving at the base you only find a few wandering zombies. No guards outside, dead crew inside. Looks like 
+no reinforcements again. The place was invaded from the inside. You wonder what's beyond those metal detectors 
+you were never admitted past...
+
+A.N.: I made this a bit later now with Doom Builder, in fact if I recall correctly this was my first Doom Builder
+map. The style was an absolute mish-mash, it has been re-done in a greyish UAC base style, but it remains varied
+enough.
+
+- MAP04 - Processing Plant - Difficulty: Easy
+The only way out was to go deeper into an industrial plant. This place is devoid of any light and likely infested
+with hellspawn. Green radioactive waste is being poured inside the pipes here. You hope it leads somewhere.
+
+A.N.: This map is inspired by Doom3's waste processing maps, in fact the Mancubus Room is almost directly taken
+from there. Contains a "hell-trip", where you get teleported to a small hellish section (only 1 player in Co-op).
+
+- MAP05 - Underground - Difficulty: Medium
+You are surprised to see the UAC having secret enterances in the underground railway system. Nevertheless you
+learn from computers that a so-called Gateway (a high-powered teleporter) is located inside. You need to locate
+the key that unlocks the path leading to it. You suspect it might have gotten lost somewhere in the underground
+system during the invasion.
+
+A.N.: An old subway themed map, extensively polished up, into almost an entirely new map. The style is 
+in-line with MAP01 and MAP02. The station and railway parts are only slightly updated, as is the park, but 
+the rest is almost brand new. Contains city vistas that were put in during the first re-polishing phase.
+
+- MAP06 - Gateway Lab - Difficulty: Medium
+You descend through the eerie layers of infested ooze into what you guess is a highly secret UAC facility.
+It seems to be sealed off and almost empty, but you suspect a nasty ambush.
+
+A.N.: This map was pretty small and non-interesting, so it was overhauled HEAVILY. I took inspiration from E2M4.
+The Ammo Storage and the Med Bay remained in. I varied with the linearity of the gameplay, and finally settled for
+allowing players to clear the majority of the map before getting the keys.
+
+- MAP07 - Woods - Difficulty: Easy
+You enter into the swirling madness of the Gateway, wondering where it will take you. Seems like most of
+your equipment ended up being someplace else, so you'll have to do with the pistol you found lying on a dead body.
+According to the nearby computers you are far away from your home city, underneath a small patch of forest. The
+map shows several interconnecting UAC facilities nearby. You suspect the source of the invasion might be in one of
+them.
+
+A.N.: A forest map. Inspired by Shadow Warrior's forest map. The start area is a newly added Quake-ish/E2-ish
+style underground base. The gameplay of this map was quite different from how it is now. It was not intended to
+be a MAP07, so the 666 and 667 features were not in originally. Note that the 667 tag works differently on some
+ports, but the map is playable with both 64 and 128 raise on the tag.
+
+- MAP08 - Military Depot - Difficulty: Medium
+You spot the UAC base outside the woods. It seems to be locked down tightly and guarded by hellspawn, but you saw
+an alternate entry: it has a sewage drain on the side. In fact that drain can lead you closer to the major UAC
+base you saw on the map. Better clear this place out quick, and unlock the other end of that drain pipe.
+
+A.N.: I almost threw this map away deeming it as not redeemable. It needed a style overhaul very badly. In the end
+I kept it as it has some interesting areas. This is directly connected to both the last and the next map. During the
+Second major overhaul the linearity has been dropped and now it can be cleared on multiple paths.
+
+- MAP09 - Disposal Facility - Difficulty: Medium
+Rivers of toxic waste flow across the landscape, courtesy of the UAC's waste management program. Those experiments
+must require an awful lot of the gooey material. You must navigate the hazardous environment of the facility to
+locate the way out. Be careful, the hellspawn seems to have something in store for you.
+
+A.N.: A Duke Nukem-esque map (think E1L4 and E1L5), this one also contains a "hell-trip". The flow of the map was
+slightly updated to contain more self-explanatory switches, since even when I replayed it after a while got lost.
+The red key and it's function has also been redesigned.
+
+- MAP10 - Cistern - Difficulty: Medium
+Seems like the only way through the area is to go down to the cistern of the nearby UAC water treatment plant.
+The place is crawling with monsters, but you intend to flush them out.
+
+A.N.: One of the first maps where I started to get the importance of trim-textures and styling. It turned out
+good enough, I only needed to replace a few ugly parts. A bit of a switch hunt map, although unreasonable
+"switch opens something on the other end of the map" was reduced to as little as possible. Second overhaul
+added some vine bits.
+
+- MAP11 - Venom Canyon - Difficulty: Medium
+A great divide lays before you. A smaller UAC complex must be crossed in order to get to the dam. Unfortunately
+the road that leads to the main UAC base seems to be destroyed, so you'll have to climb your way throgh the
+cliffs. Beware of the great slime river, it is poisonous to the touch.
+
+A.N.: A partly Half-Life inspired map. It was a bit large and empty, so quite a bit of updating was needed to get
+it into shape. The dam also received a facelift, as well as the compound before it. The second update wave touched
+the Canyon part of it, greatly improving detail, and making the nukage river escapable.
+
+- MAP12 - Power Station - Difficulty: Medium
+You made it to the UAC base. This part seems to be a power station, you'll probably need to bring it on-line to
+go any deeper. You smell the foul stench of demon infestation lingering in the air, so you prepare for a thorough
+cleansing. Structural damage seems to be minimal on this part, but you wonder about the deeper sectors.
+
+A.N.: A clear continuation of MAP12, and a sort of "prequel" to MAP13. From here on the demonic corruption fusing
+with the techbase becomes apparent. The place becomes a bit brighter once you power up the reactor. This map was
+also plagued by the "what did this switch do" problem, hopefully now it is much clearer.
+
+- MAP13 - Encrus Station - Difficulty: Medium
+The stench of corruption becomes ever more apparent here. Your train seems to be stopped by some hellish growth
+on the rail, so you need to proceed on foot. The base seems quiet, but you know they are waiting. You also learn
+that this sector contains experimental weapons, just the thing you need if you are going to face more hellspawn.
+
+A.N.: The last of the "Half-Life Train" maps, this one contains some heavy infestation and a hellish part as well.
+You also get your hands on the BFG. This map was the unfinished end of the Canyon-Power Station line. It was
+originally called "InfeStation", but I dropped the name as it was also used in a SkullTag invasion map.
+
+- MAP14 - Doom District - Difficulty: Hard
+You are unsure whether you found the source of the demons or just a simple invasion teleporter left around by them.
+You seem to emerge in a downtown area. The streets are dominated by infested military and spiders, but you are
+ever ready should a major wave of hellspawn head this way. A large UAC building also seems to be nearby, might be
+worth checking it out.
+
+A.N.: A large cityscape map, left unfinished. Originally it was intended to be a co-op map. The city itself looked
+decent, so not much alteration was needed to it, only expansion. It turned out to be a quite large map with a
+relatively large number of monsters. You can litter the streets with corpses. Has an industrial area and the
+UAC techbase-building. The second update wave added some damage to the city area, after all it's a hellish invasion.
+
+- MAP15 - The Vault - Difficulty: Medium
+The enterance to this facility was heavily infested by hell-growths, so you needed to enter through the ventillation
+shaft. You learn that this place is a showcase of the successes UAC had with the teleport experimentations. Maybe
+you'll find something useful here...
+
+A.N.: A brand new map, with some Doom3 inspired areas. You proceed by opening blast doors to the next sections. Home
+of the Demon Museum.
+
+- MAP16 - City Bounds - Difficulty: Hard
+You finally escape that horrid place, and see the eerie glow in the sky again. You seem to emerge at an emergency exit
+in an aqueduct. The boundaries of the big city are nearby. You prepare for a bloody fight, as there's no telling how
+much hellspawn has gathered outside while you were down below.
+
+A.N.: Another new map, this time it is slightly Rage inspired. Beware the lots of cacodemons, they will literally fill
+the skies. Also contains quite a few big baddies. Originally I was planning to put the Starport here, but the streets,
+canals and highway zones turned out so large that I decided to make it a completely new map.
+
+- MAP17 - Starport - Difficulty: Medium
+Looks like this city has a starport nearby. UAC usually has important installations near such places, to make cargo
+hauling easy. You need to gain enterance to that place, and you already see the way in, but it's unlikely this will
+be that easy...
+
+A.N.: Intended to fill the hole between the realistic MAP16 and the E1 style MAP18. For a long time I had no idea
+what could accomplish this, but it seems like a Starport is a perfect map for this purpose.
+
+- MAP18 - Computer Complex - Difficulty: Easy
+This place looks familiar. You are not sure where you have seen places like this before, but you are content to push
+on. You are finally on track towards the source, or maybe the demons are playing with your head.
+
+A.N.: I was so eager to make something E1 style, so I did this map. Lots of E1 like areas. Maybe a tad bit dark for
+E1, but I took a great attention to detail so it has E1 style textures. Contains only E1 monsters and some Doom2 ones
+that I thought might fit the E1 style (Revenant, Hellknight, Chaingunner)
+
+- MAP19 - Frontier Lab - Difficulty: Medium
+More familiar areas. You are now sure the demons has something to do with it. This place seems so overrun and subverted
+that you are not sure what it might contain. Computers tell you of an experimental type of gateway in the area.
+Definitely a point of interest.
+
+A.N.: The logical continuation of the E1 tribute, this is the E2 tribute, with some unique spins on the style.
+Beware of ghost monsters created by the crushers and doorways (yup, quite a few archviles here)!
+
+- MAP20 - Borderworld - Difficulty: Hard
+You took the second gateway and ended up in some unknown place. It looks like the base was built by the UAC, but
+Hell's powers have twisted it to a great extent. You learn, that this place is the frontier, where UAC tried to
+take the fight to Hell, without success it seems. This is the borderworld between Hell and our dimension, a
+failed expedition pioneered by the UAC's forces. Now you'll have to batter through the frontline of the
+hellspawn and finish what UAC could not: reach the portal to Hell itself.
+
+A.N.: A quite large and hard map. Main inspiration comes from The Ultimate Torment and Torture's second to
+last map. Has a trench action part which was something I wanted to try.
+
+- MAP21 - The Gates of Hell - Difficulty: Medium
+This is it. Hell. You stand before the very gates of it. Your equipment has gone missing again, good thing you
+see some supply crates nearby. The place looks deserted, but you know that hell never leaves it's doorstep unguarded.
+
+A.N.: A quick map with a decent ambush scene. Inspired by Doom3's hell map as well as Quake3's Hell's Gate map.
+This map has a custom midi made by combining the "Unused52" with MAP07's music.
+I call this track "South of the Shotgun"
+
+- MAP22 - Stygian Depths - Difficulty: Medium
+You descend deeper into the fortress style building. The smell becomes even worse down here. Unknown depths lie
+before you, but you are determined to get to the bottom of it.
+
+A.N.: Another Doom3 inspired area, with the "descending cage" scene, and a darker, more cavernous place. Made
+with the intent to make hell not only fire and brimstone, but a bit of slimy and dark as well.
+
+- MAP23 - Fortress of Ages - Difficulty: Hard
+As you emerge on the other side of the unholy pits, the view of a large fortress in a lava filled valley comes
+into view. It seems like this place has gathered aeons of dust and decay, and the bones of the fallen from many
+generations ago. Horrible monsters roam the area, you need to find a safe place, but there's none nearby.
+
+A.N.: The odlest map in the pack, renewed, and made much more hellish. The goodie columns are quite optional,
+the map contains plenty of ammunition otherwise, but you can stock up on rockets that way.
+
+- MAP24 - City of Pandemonium - Difficulty: Hard
+You wonder what kind of place you are going to enter through a sewer filled with blood. Seems like the demons
+also have a place to live somewhere, or the denizens of Hell are put into large blockhouses. The place is probably
+crawling with demons, so you better tread carefully. One one positive note, the blood seems not to be hazardous
+to health.
+
+A.N.: A new map. I wanted to try some really hellish and weird cityscape map, and this came to be the result.
+Lots of monsters, but also lots of ammo and health.
+
+- MAP25 - Bastion of Void - Difficulty: Hard
+Reluctantly plunging into the fiery hole, you find yourself someplace else. This area of hell seems to be out in
+the nothingness. You don't expect it, however, to be empty, judging by the animalistic sounds nearby. Bones of
+the dead are stored here, for reasons you don't want to discover. Hell seems to be playing a game with you, and
+you are lost without a hope.
+
+A.N.: An other old map, renewed and expanded. The original old map is the center part, it was a castle floating in
+space. Plenty of Cyb's Void inspired areas here, though I had to invisible-wall off the void pits, due to falling
+damage or such not existing in vanilla conditions.
+
+- MAP26 - Forbidden Archives - Difficulty: Hard
+Compared to the nasty Bastion you just escaped from, this place actually looks nice and welcoming. You know that
+this should not fool you, and you are determined to play Hell's game. Whatever they throw at you can be overcome by
+good old fashioned firepower, right? At some point they should run out of reinforcements...
+
+A.N.: Two things were in mind when designing this map: water and library. Those two unrelated concepts spawned this
+level. It is mostly symmetric. Some Doom64 inspirations here.
+
+- MAP27 - Crimson Abyss - Difficulty: Hard
+From water you tread into blood again. So much blood, you feel the warmth of it embracing you, it almost feels good.
+'Am I going crazy?' - you ask yourself. Still this building covered in ludicrous amounts of blood seems to be the
+only way. Some of it is visible from where you stand, but more is hidden deep below the floating lake of blood.
+
+A.N.: This is a sumberged style map, inspired by Enclave's underwater level, except it is in hell, so water is
+replaced with blood. I played with a lot of blood-stained textures. The structure itself is split between a wood
+and a marble part.
+
+- MAP28 - The Black Citadel - Difficulty: Medium
+You arrive in the gatehouse of a dark hellish fortress. You are getting more and more convinced, that Hell has not
+counted on you getting this far. This fortress was built to withstand massive assaults, but you feel unstoppable.
+If you have to clear every corner of Hell, so be it.
+
+A.N.: This map has a very mixed inspiration source. Probably the Doom64 or the Quake feeling prevails
+
+- MAP29 - Ascension - Difficulty: Very Hard
+Passing the Black Citadel you arrive at an ominous looking mountain fitted with a fortress. The top of this fortress
+contains a peculiar column of flesh, you suspect it might be something important. Slowly you prepare for the fight
+ahead, such a large and strange fortress must be heavily guarded.
+Once the first gunshot is fired and you hear the echo of the roar of thousands of demons. You are in for one hell of
+a hillclimb.
+
+A.N.: This took a looong time to make, and has a ginormous amount of things that show at the same time (due to being
+a very open map).
+Inspirations include: UTNT's last map (being a hillclimb and the ominous column always visible), Diablo2's Chaos
+Sanctuary (layout of the final arena, general feeling), Serious Sam SE: Grand Cathedarl (long slaughter corridors)
+
+- MAP30 - Worlds Collide - Difficulty: Very Hard
+Sweat and blood pouring from every part of your body, you jump into the flesh column, and get transported to some
+kind of hellish staging area. Ahead, you see a giant portal.
+It is your exit from hell, and also the demons' enterance to earth. On the other side, hellspawn are preparing to
+set up a demon spawner in our world. If it activates, earth is surely doomed. More so than how it is already at least...
+
+A.N.: Originally I wanted to make this map take place in the depths of hell, but I heard people liked MAP14's cityscape
+and it kinda became an icon for the wad, so the idea came to me to make a hybrid map, having hell zones and a city part
+as well as an invasion frontier setting.
+I think for a MAP30 the gameplay is pretty good. You get plenty of BFG cells to melt away the horde spawned by the 5
+Icons, also there is more than enough room not to get cornered. In the final arena, the 4 Cyberdemons can help you
+thin out the crowd (they follow you there BTW!)
+
+- MAP31 - Diabolus Ex Machina - Difficulty: Hard
+Just what is this place you stubled upon? Is it some virtual reality? It seems to be invaded by Demons, so you better
+clear it out...
+
+A.N.: Inspired by MAP31 of Speed of Doom, except I wanted some hellish twist into it. It is a virtual reality like
+setting invaded by hell. Has some pretty crowded actions...
+
+- MAP32 - Spear of Destiny - Difficulty: Medium
+You are not only unsure where you are, but also when. You hear german talking nearby...
+
+A.N.: I wanted to use Wolf textures and SS nazis. That's it.

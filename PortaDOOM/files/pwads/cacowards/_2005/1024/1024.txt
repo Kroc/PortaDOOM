@@ -1,0 +1,314 @@
+Archive Maintainer:		This replaces the previous version in /levels/doom2/Ports/0-9/
+Update to:			1024.zip
+Title:				Congestion 1024
+File:                           1024.wad
+Advanced engine needed: 	Zdoom based ports and PrBoom. Tested with Zdoom 2.0.98 and
+				PRBoom 2.02. Uses Doom2.exe linedef actions, sector specials etc.
+Primary purpose: 		Single player
+=========================================================================================
+Team Leader: 			Lutrov71
+Project founder: 		Shitbag
+=========================================================================================
+Mappers/E-Mail:			Thomas "Lutrov71" Lutrov	:thomas@hoodooguru.com
+
+				Ray "Shitbag" Schmitz		:shtbag555@hotmail.com
+
+				Nick "hobomaster" Laurent	:hobomaster22@hotmail.com
+
+				Coen "DoomedAce" Blazer		:c.g.blazer@gmail.com
+
+				Jimi				:greyjimi@hotmail.com
+
+				Lee "Fen Boi" Szymanski		:lee_szymanski@hotmail.com
+
+				Justin "StealthyIvan" Nagy      :StealthyIvan@hotmail.com
+
+				The Flange Peddler		:welshyian@hotmail.com
+
+				Mike "Cyb" Watson		:cyb@vect.org
+
+				Trevor "Iori" Primmett		:tprimmett@gmail.com
+
+                                Brandon "POTGIESSER" Potgiesser :brandon_pgie0@yahoo.ca
+
+				Richard "Cycloid" Hardacre	:cycloid@cycloid.force9.co.uk
+
+				Jeffrey "Psyren" Graham		:psyren@easy.com
+
+				Catsy				:amezuki@gmail.com
+
+				Russell Pearson			:rddp@duellist.net
+
+=========================================================================================
+=========================================================================================
+Other files by authors:
+
+	Lutrov71:		thematic.wad, CC2 map06, nobrakes.wad
+
+	Shitbag:		testsite.wad, future.wad, chaos.wad, hellhall.wad, cf.wad,
+				mancubus.wad, hltrsklt.wad, ratcage.wad, jungle.wad, 
+				magnetic.wad, LowBlow.wad, Stigmata.wad, yestrday.wad,
+				BBUSTER.wad, circus666.wad
+
+	hobomaster22:		onslaught.wad, onsl2.wad, exodus.wad, hell_kp.wad,
+				gateway.wad
+
+	DoomedAce:		blackout.wad, sfs.wad (Strayed From Sanity, Map29 of NDCP)
+
+	Jimi:			you can find all my released wads from 
+				http://koti.mbnet.fi/jeejeeje
+
+	Fen Boi			Map20 Darkening2, Sureshot, MAp28 10 sectors, AV maps 06
+				and 24, xfire series, Map07 Endgame and some example wads. 
+
+        Stealthy Ivan:          Marsbase.wad, Therion.wad, PMB.wad, Hades.wad, Crushing.wad, 
+				Desikration.wad (dskrt.zip)
+
+	The Flange Peddler:	ICDooM2, ICDM1, IC2001-IC2004, IC1Room, CC2 Maps 03, 07 
+				and 20.
+
+	Cyb:			Too many.  http://doom.vect.org:8080/
+
+	Iori:			NDCP map 11, NDCP map 17, CC2 map 02, Bitter Loathing and 
+				Songs of Stone and Shadow
+
+	Potgiesser:             Crappy shit that's best forgotten.
+
+	Cycloid:		cyc-a.wad, cyc-b.wad
+
+	Psyren:			Azagthth, Crimson Canyon, CC2 map13.
+
+	Catsy:			Mainframe Complex
+
+	Russell Pearson:	Can be found at http://www.duellist.net/	
+
+=========================================================================================
+=========================================================================================
+Playtesters:			Tom_D
+				Mephisto
+				AgentSpork
+				Doomboy
+
+Graphics:			shitbag (Titlepic)
+				Scuba Steve (Interpic)
+				NMN (Creditpic)
+
+=========================================================================================
+=========================================================================================
+Additional Credits to: 		Linguica's Excorpse project, which was the main influence
+				of Congestion 1024.
+				
+=========================================================================================
+=========================================================================================
+Description:			32 maps no bigger than 1024 X 1024. Some maps have areas
+				outside the 1024 X 1024 block but they are not part of
+				the playing area.
+				The idea was to focus on quick and fun gameplay.
+=========================================================================================
+=========================================================================================
+**File Info**
+
+Game:				- Doom2
+Levels Replaced:		- MAP01 - MAP32
+Deathmatch:                     - NO
+Single:                         - YES
+Co-op:                          - Not recommended, (for obvious reasons.)
+New graphics:                   - YES
+New Sounds:			- NO
+New Music:                      - YES
+New Demo:                       - YES
+Difficulty Settings:            - YES
+Dehacked/DEX:			- NO
+
+=========================================================================================
+=========================================================================================
+**Construction**
+
+Base:				- New levels from scratch.
+Editors Used:			- DoomBuilder, Paint Shop Pro , DeePsea, Wintex, Midi2mus,
+				  Windows' Paint, Anvil Studio, WadAuthor, XWE, ZenNode, 
+				  Image Analyzer.
+Construction time:		- Just over a year.
+Release Date:			- 25th November, 2005.
+Bugs:				- Some minor bugs may occur if using PRBoom.
+May not run with:		- Anything apart from PrBoom and Zdoom compatible ports.
+=========================================================================================
+=========================================================================================
+Note: 	These maps are all playable from pistol start. To enjoy the utmost 1024 experience
+	this is recommended.
+=========================================================================================
+=========================================================================================
+
+**Map List**
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+1.	Water Facility	:Author:	Hobomaster22
+			:Description:	A water facility themed map.					
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+2.	Garden of the 	:Author:	Iori
+	Descent		:Description:	A vertically themed canyon which combines rocky 
+					outcroppings with decaying ruins, surrounded by 
+					foliage.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+3.	Dilapidation	:Author:	shitbag
+			:Description:	Run down UAC outpost.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+4.	Outpost 1024	:Author:	The Flange Peddler
+			:Description:	Large (just kidding) techbase set in
+					a random mountainous location.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+5.	Autumn In Hell	:Author:	shitbag
+			:Description:	The map that started Congestion 1024!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+6.	Departure Point	:Author:	Hobomaster22
+			:Description:	I was listening to tool while I made this map, and 
+					then uh... I made a map, and I made it into a DM
+					map too!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+7.	Dead small	:Author:	Szymanski
+			:Description:	I was asked to make a map07 replacement.
+					I played it safe sticking to the original formula.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+8.	A Jagged Stroll	:Author:	shitbag
+			:Description:	Just trying something different, a little too cramped.
+					Rocky canyon type map.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+9.	Monday Morning	:Author:	Psyren
+			:Description:	Quick jaunt through a castle courtyard.
+
+			:Music:		Mein Herz Brennt - Rammstein
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+10.	Gothika 1024	:Author:	shitbag
+			:Description:	Just an average Gstone map.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+11.	Caco District	:Author:	Lutrov71
+			:Description:	Plutonia'ish map, set in a random decaying area
+					with a fair few of, (you guessed it!) cacodemons.
+					I put a lot of time and effort into this map, I 
+					also used a lot more detail than usual.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+12.	Warehouse 667	:Author:	shitbag
+			:Description:	This is the 667th warehouse where UAC crates
+					go when map authors don't put enough of them
+					in their maps.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+13.	The Focus II	:Author:	DoomedAce
+			:Description:	Inspired by DooM II Map04, The Focus.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+14.	House of Shadows:Author:	Psyren
+			:Description:	Straight-forward with narrow corridors, low 
+					ceilings and close encounters.  Based on a theme 
+					by Azriel.
+
+			:Music:		ALIENS Soundtrack - James Horner
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+15.	Bantam		:Author:	Cyb
+			:Description:	I used textures from my ZDoom map, Void, so
+					bricks and stuff in an outdoor area.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+16.	Deja View	:Author:	Szymanski
+			:Description:	A very basic open arena and my first attempt at 
+					a 1024 sized map.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+17.	Omega outpost	:Author:	Szymanski
+			:Description:	My usual techbase style, sans sky, crates and 
+					nukage. 
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+18.	Tutorial #99	:Author:	Hobomaster22
+			:Description:	Lutrov71 told me to make another 1024x1024
+					map. I was really too lazy to make one, but then I 
+					got the idea to take my tutorial map and turn it 
+					into a 1024 map!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+19.	Lip Service	:Author:	Potgiesser
+			:Description: 	Set in a techbase nukage filtration/transport 
+                                        facility. There may or may not still be a cyberdemon
+                                        in it, because no one has the sense to try running
+                                        past it. Map makers must assume that the player is
+                                        an idiot.
+
+                        :Music:         Mandatory Suicide - by Slayer, it's SLAYERific!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+20. Claustrophobic Sting:Author:	The Flange Peddler
+			:Description:	A dark, claustrophobic cave map with emphasis
+					on tight battles.
+			:Music:		Includes music from Blood taken from Tormentor's
+					Blood Resource Pack.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+21.	Corpse Yard	:Author:	DoomedAce
+			:Description:	Brown-color theme. Also applies to most
+					monsters used.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+22.	Prison Escape	:Author:	Jimi
+			:Description:	Escape from the stone prison.
+			:Construction time: About 5 hours
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+23.	Close Quarters	:Author:	Job
+			:Description:	This one is very tightly packed
+                          		with enemies and should keep the guns blazing
+                          		almost the whole level through. A big challenge
+                          		with slight difficulty implementations, it's
+                          		all the carnage that could be crammed into
+                          		1024x1024... Recommended for the masochistic.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+24.	Zyklon B	:Author:	Stealthy Ivan
+			:Description:	Stuck to a more classic theme/design. Oh, and
+					it's tough as nails!!!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+25.	Stein und Stahl	:Author:	Catsy	
+			:Description:	Hell/metal/marble theme. Brutal and fast-paced, heavy use
+					of monster pen teleports to fill out areas you thought
+					you already cleared.
+
+			:Music:		"Evolution (The Grand Design)" by Symphony X
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+26.	Marbelous! 	:Author:	Cycloid
+			:Description:   Marble and Blood themed with emphasis on changes
+					in height to create space and lay out the route.
+					Tried to go for a "true" 1024 so there's no monster
+					teleports but there is a little scenery outside
+					the box, inc the exit room. Door bars inspired
+					by tekbrik.wad. lowering switches taken from my
+					own megawad, which uses this theme for it's final
+					episode because I liked it so much.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+26.	Tower of Hades	:Author:	The Flange Peddler
+			:Description:	Four portals and lots of demons... Don't look
+					down.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+28.	A Bridge Too Far:Author: 	The Flange Peddler
+			:Description: 	A Hell/Gothic map set along the battlements of a 
+					random fortress.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+29.	Magus		:Author:	Potgiesser
+			:Description:	Hellish claustrophobia. It's Monolithic Baby.
+
+                        :Music:         The character theme for the bad ass spellcaster
+                                        Magus from Chrono Trigger.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+30.Nullified Departure	:Authors:	The Flange Peddler and Lutrov71
+			:Description:	A difficult Map30 with a creative approach to the 
+					use of the boss brain/shooter. It will hopefully 
+					keep you on the edge of your seat.
+					Concept by Lutrov71, mapping by The Flange Peddler.
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+31.Archville Madness	:Author:	Jimi
+			:Description:	Small UAC outpost at the shores of Hell, infected 
+					with Archvilles!
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+32. Nullspace Junior	:Author: 	Russel Pearson
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+==============================
+
+** Copyright / Permissions ** 
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format
+(BBS, Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
