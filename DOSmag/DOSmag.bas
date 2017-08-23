@@ -1100,8 +1100,8 @@ SUB formatLine (indent%, line$)
                  OR ASC(line$, c% - 1) = ASC_TAB _
                 ) AND ASC(line$, c% + 1) = ASC_SPC _
                 THEN
+                    GOSUB addChar
                     GOSUB addWord
-                    ''GOSUB addControlChar
                     'set the indent to the current position
                     next_indent% = l% + w% + 1
                 ELSE
