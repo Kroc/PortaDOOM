@@ -943,6 +943,7 @@ SUB formatLine (indent%, line$)
 
         'if this is the opening line of the warning-box, include the border
         IF is_warn` = FALSE THEN
+            'toggle the 'warning box' state
             is_warn` = TRUE
             'create the top-border
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
@@ -963,6 +964,7 @@ SUB formatLine (indent%, line$)
         'if we were in a warning box, and this line doesn't continue it,
         'we need to terminate the box with the bottom border
         IF is_warn` = TRUE THEN
+            'toggle the 'warning box' state
             is_warn` = FALSE
             'create the bottom-border
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_WARNING)
@@ -1089,8 +1091,7 @@ SUB formatLine (indent%, line$)
                 'set the following indent to the current position
                 next_indent% = l% + w%
                 'word-break immediately
-                char% = 0: GOSUB addWord
-                is_boundary` = TRUE
+                GOSUB addWord
 
             CASE CTL_HEADING
                 '.............................................................
@@ -1247,25 +1248,30 @@ SUB formatLine (indent%, line$)
                 GOSUB addChar
                 is_boundary` = TRUE
 
-            CASE ASC_FSLASH, ASC_BSLASH
+            CASE ASC_FSLASH, ASC_BSLASH, ASC_DASH, ASC_COMMA, ASC_SEMICOLON
                 '.............................................................
-                'forward and back slash are word-breaks & word-boundaries
+                'these break the word, but the character must be included
+                GOSUB addChar
+                'append the word to the line and continue
                 GOSUB addWord
 
-            CASE ASC_SPC, ASC_TAB, ASC_DASH
+            CASE ASC_SPC, ASC_TAB
                 '.............................................................
+                'append the current word
+                '(this will word-wrap as necessary)
+                GOSUB addWord
+                'if the line wrapped exactly the space will not be needed
+
                 IF char% = ASC_TAB THEN
-                    'this is white-space so add the current word to the line
-                    char% = 0: GOSUB addWord
                     'convert tab character to spaces as `_CONTROLCHR OFF`
                     'will prevent tabs from rendering
                     DIM tabspc%: tabspc% = 8 - ((l% + w%) MOD 8)
-                    word$ = word$ + SPACE$(tabspc%): w% = w% + tabspc%
+                    newline$ = newline$ + SPACE$(tabspc%): l% = l% + tabspc%
+
+                ELSEIF l% > 0 THEN
+                    'add just the space
+                    newline$ = newline$ + " ": l% = l% + 1
                 END IF
-                'add the word to the line and wrap if necessary
-                '(the text after a hypen is considered a new word
-                'so that it can wrap to the next line if need be)
-                GOSUB addWord
 
             CASE ELSE
                 '.............................................................
@@ -1277,8 +1283,8 @@ SUB formatLine (indent%, line$)
     NEXT
 
     'add this word to the last line
-    char% = 0: GOSUB addWord
-    IF TRIM$(newline$) <> "" THEN GOSUB addLine
+    GOSUB addWord
+    IF l% > 0 THEN GOSUB addLine
 
     EXIT SUB
 
@@ -1301,19 +1307,25 @@ SUB formatLine (indent%, line$)
 
     addWord:
     '-------------------------------------------------------------------------
-    'will this word go over the end of the line?
-    IF l% + w% + 1 > line_width% THEN
-        'break the line and begin the new line with the remaining word
-        GOSUB lineBreak
-    ELSE
-        'include the splitting character if present (e.g. space, hyphen)
-        IF char% > 0 THEN word$ = word$ + CHR$(char%): w% = w% + 1
-        'add the word to the end of the line:
+    'if the current word fits the line, we can line-break:
+    IF l% + w% = line_width% THEN
+        'add the word to the end of the line
         newline$ = newline$ + word$: l% = l% + w%
-
+        'word has been used, clear it
         GOSUB newWord
+        'start a new line
+        GOTO lineBreak
     END IF
-    RETURN
+
+    'would the current word overhang the line?
+    IF l% + w% > line_width% THEN
+        'end the current line and start a new line with the current word
+        GOTO lineBreak
+    END IF
+
+    'add the word to the end of the line:
+    newline$ = newline$ + word$: l% = l% + w%
+    GOTO newWord
 
     lineBreak:
     '-------------------------------------------------------------------------
@@ -1357,15 +1369,12 @@ SUB formatLine (indent%, line$)
 
     'begin the line with the remaining word
     newline$ = newline$ + word$: l% = l% + w%
-    IF char% > 0 THEN
-        newline$ = newline$ + CHR$(char%): l% = l% + 1
-    END IF
 
     newWord:
     '-------------------------------------------------------------------------
     'clear the 'current' word
     word$ = "": w% = 0
-    'remember the bold/italic &c.  state at the beginning of the word;
+    'remember the bold/italic &c. state at the beginning of the word;
     'if it gets wrapped, the bold/italic &c. state needs to be copied
     'to the new line
     word_bold` = is_bold`
