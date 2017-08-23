@@ -13,6 +13,7 @@ REM #
 REM # [/REQ engines]    specify engine requirements,
 REM #                   can be any of the following:
 REM # 
+REM #			no-limit 	- requires a limits-removing engine
 REM #			boom		- requires boom-compatibility; prboom+ and above
 REM #                   prboom          - requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
 REM #			sw		- requires a software renderer; choco-doom, prboom+, zdoom
@@ -72,12 +73,13 @@ IF /I "%~1" == "/IWAD" GOTO :iwad
 IF /I "%~1" == "/PWAD" GOTO :pwad
 IF /I "%~1" == "/REQ"  GOTO :reqs
 
-REM # options:
 REM # warp to a level (will ask for difficulty)
 IF /I "%~1" == "/LEVEL" GOTO :level
 
+REM # end of options, a straight file-list will follow
 IF "%~1" == "--" GOTO :files
 
+REM # no more parameters
 IF "%~1" == "" GOTO :engine
 
 ECHO Invalid parameter!
@@ -354,6 +356,12 @@ GOTO :params
 
 :req
 REM --------------------------------------------------------------------------------------------------------------------
+REM # requires a limit-removing engine
+IF /I "%~1" == "no-limit" (
+	REM # disable Chocolate-* engines
+	SET "ENGINE_CHOCODOOM=0"
+	SET "REQ=%~1"
+)
 REM # requires boom-compatible engine
 IF /I "%~1" == "boom" (
 	REM # disable non-boom engines
