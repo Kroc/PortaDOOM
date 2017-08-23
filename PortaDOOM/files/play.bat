@@ -53,21 +53,9 @@ SET "PARAMS="
 SET "FILES="
 SET "ENGINE="
 
-REM --------------------------------------------------------------------------------------------------------------------
-IF "%HERE%" == "%CD%" (
-	SET "BASE="
-	GOTO :iwad
-)
-REM # get the relative path from this script to the caller's location:
-SET "BASE=%CD%"
-SETLOCAL ENABLEDELAYEDEXPANSION
-REM # TODO: will this even work with directories containing "^", "&", "!" etc.
-SET "BASE=!BASE:%HERE%\pwads\=!"
-ENDLOCAL & SET "BASE=%BASE%\"
 
 :params
 REM ====================================================================================================================
-
 REM # IWAD parameter?
 IF /I "%~1" == "/IWAD" GOTO :iwad
 IF /I "%~1" == "/PWAD" GOTO :pwad
@@ -85,22 +73,6 @@ IF "%~1" == "" GOTO :engine
 ECHO Invalid parameter!
 ECHO "%~1"
 EXIT /B 1
-
-
-REM :files_local
-REM REM --------------------------------------------------------------------------------------------------------------------
-REM REM # no files to process?
-REM IF "%~1" == "" GOTO :engine
-REM REM # list of extra files to load?
-REM IF "%~1" == "--" SHIFT & GOTO :files
-REM 
-REM SET "FILE=%~1"
-REM SET "FILE=%FILE:pwads\=%"
-REM SET  FILE="%BASE%%FILE%"
-REM SET  FILES=%FILES% %FILE%
-REM 
-REM SHIFT
-REM GOTO :files_local
 
 :files
 REM --------------------------------------------------------------------------------------------------------------------
@@ -251,28 +223,28 @@ IF "%WINVER%" == "5.1" GOTO :skill_xp
 	CHOICE /C 123450 >NUL
 	REM # secret "disable all monsters" mode; can prevent levels
 	REM # from being completable and doesn't work on all engines!
-	IF %ERRORLEVEL% EQU 6 SET "SKILL=0"
+	IF %ERRORLEVEL% EQU 6 SET SKILL=0
 	REM # standard skill levels
-	IF %ERRORLEVEL% EQU 5 SET "SKILL=5"
-	IF %ERRORLEVEL% EQU 4 SET "SKILL=4"
-	IF %ERRORLEVEL% EQU 3 SET "SKILL=3"
-	IF %ERRORLEVEL% EQU 2 SET "SKILL=2"
-	IF %ERRORLEVEL% EQU 1 SET "SKILL=1"
+	IF %ERRORLEVEL% EQU 5 SET SKILL=5
+	IF %ERRORLEVEL% EQU 4 SET SKILL=4
+	IF %ERRORLEVEL% EQU 3 SET SKILL=3
+	IF %ERRORLEVEL% EQU 2 SET SKILL=2
+	IF %ERRORLEVEL% EQU 1 SET SKILL=1
 	GOTO :skill_set
 
 :skill_xp
 	REM # assume a default in case the user types nonsense
-	SET "SKILL=3"
+	SET SKILL=3
 	SET /P "CHOICE=? "
 	REM # secret "disable all monsters" mode; can prevent levels
 	REM # from being completable and doesn't work on all engines!
-	IF "%CHOICE%" == "0" SET "SKILL=0"
+	IF "%CHOICE%" == "0" SET SKILL=0
 	REM # standard skill levels
-	IF "%CHOICE%" == "5" SET "SKILL=5"
-	IF "%CHOICE%" == "4" SET "SKILL=4"
-	IF "%CHOICE%" == "3" SET "SKILL=3"
-	IF "%CHOICE%" == "2" SET "SKILL=2"
-	IF "%CHOICE%" == "1" SET "SKILL=1"
+	IF "%CHOICE%" == "5" SET SKILL=5
+	IF "%CHOICE%" == "4" SET SKILL=4
+	IF "%CHOICE%" == "3" SET SKILL=3
+	IF "%CHOICE%" == "2" SET SKILL=2
+	IF "%CHOICE%" == "1" SET SKILL=1
 
 :skill_set
 REM # add the skill to the command line
@@ -334,8 +306,6 @@ REM ============================================================================
 SHIFT
 
 SET "PWAD=%~1"
-SET "PWAD=%PWAD:pwads\=%"
-SET  PWAD="%BASE%%PWAD%"
 
 SHIFT
 GOTO :params
@@ -359,125 +329,126 @@ REM ----------------------------------------------------------------------------
 REM # requires a limit-removing engine
 IF /I "%~1" == "no-limit" (
 	REM # disable Chocolate-* engines
-	SET "ENGINE_CHOCODOOM=0"
+	SET ENGINE_CHOCODOOM=0
 	SET "REQ=%~1"
 )
 REM # requires boom-compatible engine
 IF /I "%~1" == "boom" (
 	REM # disable non-boom engines
-	SET "ENGINE_CHOCODOOM=0"
+	SET ENGINE_CHOCODOOM=0
 	SET "REQ=%~1"
 )
 REM # requires prboom+ specifically
 IF /I "%~1" == "prboom" (
 	REM # disable non prboom+ engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
+	SET "REQ=%~1"
 )
 REM # requires doom 64 capable engine; doom 64 ex only at this time
 IF /I "%~1" == "doom64" (
 	REM # disable all non DOOM-64 engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # gzdoom only
 IF /I "%~1" == "gzdoom" (
 	REM # disable all non-GZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-22" (
 	REM # disable all non-GZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-22"
 	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-23" (
 	REM # disable all non-GZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-23"
 	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-24" (
 	REM # disable all non-GZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-24"
 	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-31" (
 	REM # disable all non-GZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-31"
 	SET "REQ=%~1"
 )
 REM # hardware-renderers only
 IF /I "%~1" == "hw" (
 	REM # disable all non-hardware renderers
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # software-renderers only
 IF /I "%~1" == "sw" (
 	REM # disable all non-software renderers
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_ZANDRONUM=0
 	SET "REQ=%~1"
 )
 REM # z-based engines; zdoom, gzdoom, zandronum
 IF /I "%~1" == "z" (
 	REM # disable all non-zdoom-based engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
 	SET "REQ=%~1"
 )
 REM # zandronum only
 IF /I "%~1" == "zandronum" (
 	REM # disable all non-Zandronum engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # zandronum v2 only
@@ -485,12 +456,12 @@ IF /I "%~1" == "zandronum-2" (
 	REM # set zandronum specific version number
 	SET "VER_ZANDRONUM=zandronum-2"
 	REM # disable all non-Zandronum engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # zandronum v3 only
@@ -498,22 +469,22 @@ IF /I "%~1" == "zandronum-3" (
 	REM # set zandronum specific version number
 	SET "VER_ZANDRONUM=zandronum-3"
 	REM # disable all non-Zandronum engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_GZDOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZDOOM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # zdoom or gzdoom
 IF /I "%~1" == "zdoom" (
 	REM # disable all non-ZDoom engines
-	SET "ENGINE_CHOCODOOM=0"
-	SET "ENGINE_DOOM64EX=0"
-	SET "ENGINE_GLBOOM=0"
-	SET "ENGINE_PRBOOM=0"
-	SET "ENGINE_ZANDRONUM=0"
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOM64EX=0
+	SET ENGINE_GLBOOM=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
 	SET "REQ=%~1"
 )
 GOTO:EOF

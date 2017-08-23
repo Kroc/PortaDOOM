@@ -25,7 +25,7 @@ SET "PWADS=pwads"
 SET "PORTS=ports"
 SET "SAVES=saves"
 
-	
+
 :esc
 REM ====================================================================================================================
 REM # escape codes are supported in Windows 10; support in this script made possible by:
@@ -340,7 +340,7 @@ REM # this is where we'll build up the entire parameter string for the engine
 SET "PARAMS="
 REM # if a config file is provided in the parameters ("-config ..."),
 REM # then it overrides the use of the user config files
-SET "HAS_CONFIG=0"
+SET HAS_CONFIG=0
 
 REM # detect 32-bit or 64-bit Windows for those engines that provide both
 SET WINBIT=32
@@ -767,10 +767,12 @@ If "%PWAD%" == "%~1" SET "PWAD=%~1.wad"
 REM --------------------------------------------------------------------------------------------------------------------
 REM # if the PWAD exists go validate the IWAD, as the action taken when the IWAD is missing is affected by the presence
 REM # of a PWAD. if the PWAD is missing, the next section searches for known Steam / GOG PWADs
-IF EXIST "%PWADS%\%PWAD%" GOTO :iwad
 
-SET "PWAD_PATH="
+SET "PWAD_PATH=%PWADS%\%PWAD%"
+IF EXIST "%PWAD_PATH%" GOTO :iwad
 
+SET "PWAD_PATH=%OLD_DIR%\%PWAD%"
+IF EXIST "%PWAD_PATH%" GOTO :iwad
 
 :pwad_nerve
 REM --------------------------------------------------------------------------------------------------------------------
@@ -842,7 +844,7 @@ GOTO :iwad
 REM --------------------------------------------------------------------------------------------------------------------
 
 ECHO:
-ECHO  ERROR: the PWAD "%PWAD%" doesn't exist in the "%PWADS%" folder.
+ECHO  ERROR: the PWAD "%PWAD%" doesn't exist in the "%PWAD_PATH%" folder.
 ECHO  Command:
 ECHO:
 ECHO     doom.bat %*
@@ -1080,12 +1082,12 @@ ECHO         -iwad : %IWADS%\%IWAD%
 REM ====================================================================================================================
 REM # with the IWAD edge-cases handled we can finally print out the PWAD
 IF NOT "%PWAD%" == "" (
-	ECHO          PWAD : %PWADS%\%PWAD%
-	SET PARAMS=%PARAMS% -file "%FIX_PATH%\%PWADS%\%PWAD%"
+	ECHO          PWAD : %PWAD_PATH%
+	SET PARAMS=%PARAMS% -file "%FIX_PATH%\%PWAD_PATH%"
 	
 	REM # if a PWAD was given we can set that as the previous directory so that the first file in the files list
 	REM # will be checked for in the PWAD's directory
-	CALL :prev_dir "%PWADS%\%PWAD%"
+	CALL :prev_dir "%PWAD_PATH%"
 )
 
 REM # are there any parameters?
