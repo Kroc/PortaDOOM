@@ -255,7 +255,7 @@ IF "%~1" == "" (
         ECHO     Unlike when creating Windows shortcuts, the "%PWADS%" folder is assumed,
         ECHO     so that you don't need to include the base path on each file added.
 	ECHO:
-	ECHO     If a PWAD has been given, the PWAD's folder will also be checked so that
+	ECHO     If a PWAD has been given, that file's folder will also be checked so that
 	ECHO     you do not have to give the path for both the PWAD, and any files within
 	ECHO     the same folder. E.g.
 	ECHO:
@@ -312,9 +312,19 @@ ECHO:
 ECHO      doom.bat
 ECHO:
 
+REM # remember the current directory before we change it;
+REM # this will be used as an additional search location for finding PWADs
+SET "OLD_DIR=%CD%"
+
 REM # change current directory to that of this script;
 REM # ensures that shortcuts to this script don't end up looking elsewhere for files
 PUSHD "%~dp0"
+
+REM # if the directory this script was called from is somewhere within
+REM # the same heirarchy of this script, make the folder path relative
+SETLOCAL ENABLEDELAYEDEXPANSION
+SET "OLD_DIR=!OLD_DIR:%CD%\=!"
+ENDLOCAL & SET "OLD_DIR=%OLD_DIR%"
 
 REM # NOTE: many doom engines save their config files in the 'current directory', which is typically expected to be
 REM # that of the executable. However, we want to separate user-data (such as savegames) from the engines. whilst we
@@ -333,15 +343,15 @@ REM # then it overrides the use of the user config files
 SET "HAS_CONFIG=0"
 
 REM # detect 32-bit or 64-bit Windows for those engines that provide both
-SET "WINBIT=32"
-IF /I "%PROCESSOR_ARCHITECTURE%" == "EM64T" SET "WINBIT=64"	& REM # Itanium
-IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET "WINBIT=64"	& REM # Regular x64
-IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET "WINBIT=64"	& REM # 32-bit CMD on a 64-bit system (WOW64)
+SET WINBIT=32
+IF /I "%PROCESSOR_ARCHITECTURE%" == "EM64T" SET WINBIT=64	& REM # Itanium
+IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET WINBIT=64	& REM # Regular x64
+IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64	& REM # 32-bit CMD on a 64-bit system (WOW64)
 
 REM # default option values:
-SET "CONSOLE=0"
-SET "DEFAULT=0"
-SET "WAIT=0"
+SET CONSOLE=0
+SET DEFAULT=0
+SET WAIT=0
 
 
 :options
@@ -349,7 +359,7 @@ REM ============================================================================
 REM # echo engine output to the console
 IF /I "%~1" == "/CONSOLE" (
 	REM # set the feature flag, the launch section will handle it
-	SET "CONSOLE=1"
+	SET CONSOLE=1
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
@@ -358,7 +368,7 @@ REM # use default config?
 IF /I "%~1" == "/DEFAULT" (
 	REM # we only need to enable the flag to indicate it,
 	REM # the config section will handle the specifics
-	SET "DEFAULT=1"
+	SET DEFAULT=1
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
@@ -366,7 +376,7 @@ IF /I "%~1" == "/DEFAULT" (
 REM # wait for engine before continuing execution
 IF /I "%~1" == "/WAIT" (
 	REM # set the feature flag, the launch section will handle it
-	SET "WAIT=1"
+	SET WAIT=1
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
@@ -374,7 +384,7 @@ IF /I "%~1" == "/WAIT" (
 REM # always use 32-bit binaries on a 64-bit system?
 IF /I "%~1" == "/32" (
 	REM # force this script to believe the system is 32-bit
-	SET "WINBIT=32"
+	SET WINBIT=32
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
@@ -386,8 +396,8 @@ REM # reserve some variables:
 SET "ENGINE_DIR="	& REM # the engine directory is also used to check for PWADs
 SET "ENGINE_EXE="	& REM # executable name in the engine folder
 
-IF "%WINBIT%" == "32" SET "ENGINE_BIT=x86"
-IF "%WINBIT%" == "64" SET "ENGINE_BIT=x64"
+IF %WINBIT% EQU 32 SET "ENGINE_BIT=x86"
+IF %WINBIT% EQU 64 SET "ENGINE_BIT=x64"
 
 REM # an identifier for config files used for an engine,
 REM # i.e. "zdoom" is expanded to "config.zdoom.ini"
@@ -1090,7 +1100,7 @@ SET "ENGINE_PARAMS="
         IF "%~1" == "" GOTO :params_continue
         IF "%~1" == "--" GOTO :params_continue
 	REM # is this a config parameter? (flag this so we don't use our own)
-	IF /I "%~1" == "-config" SET "HAS_CONFIG=1"
+	IF /I "%~1" == "-config" SET HAS_CONFIG=1
         REM # add to the parameters list
         SET ENGINE_PARAMS=%ENGINE_PARAMS% %1
         SHIFT
@@ -1197,6 +1207,11 @@ IF "%ENGINE_KIN%" == "V" (
 
 :files
 REM ====================================================================================================================
+REM # keep track of which types of files have been added or not
+SET ANY_WAD=0
+SET ANY_DEH=0
+SET ANY_BEX=0
+SET ANY_CFG=0
 
 REM # are there any files to add?
 IF "%~1" == "" GOTO :launch
@@ -1223,8 +1238,6 @@ SET "FILES="
 REM # any DeHackEd patches?
 SET "DEH="
 SET "BEX="
-REM # any config files?
-SET "CONFIG="
 
 :files_loop
         REM # no more parameters remaining?
@@ -1247,15 +1260,19 @@ SET "CONFIG="
 	)
         REM # if the file doesn't exist, check the engine directory
         IF NOT EXIST "%FILE%" SET "FILE=%ENGINE_DIR%\%~1"
+	REM # also check the directory that called this script
+	IF NOT EXIST "%FILE%" SET "FILE=%OLD_DIR%\%~1"
         REM # finally, is it really there?
         IF NOT EXIST "%FILE%" (
                 ECHO:
                 ECHO  ERROR: the file "%~1" doesn't exist in either the "%PWADS%" folder,
                 ECHO         or the "%ENGINE_DIR%" folder.
+		ECHO:
                 ECHO  Command:
                 ECHO:
                 ECHO     doom.bat %*
                 ECHO:
+		ECHO %CD%
 		POPD
                 PAUSE
                 EXIT /B 1
@@ -1263,8 +1280,9 @@ SET "CONFIG="
 	
         SET FILES=%FILES% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
+	SET ANY_WAD=1
         ECHO         -file : %FILE%
-        SHIFT
+	SHIFT
         GOTO :files_loop
 	
 	:deh
@@ -1283,6 +1301,7 @@ SET "CONFIG="
 	REM # accept the file
 	SET DEH=%DEH% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
+	SET ANY_DEH=1
 	ECHO          -deh : %FILE%
 	SHIFT
 	GOTO :files_loop 
@@ -1303,6 +1322,7 @@ SET "CONFIG="
 	REM # accept the file
 	SET BEX=%BEX% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
+	SET ANY_BEX=1
 	ECHO          -bex : %FILE%
 	SHIFT
 	GOTO :files_loop
@@ -1364,6 +1384,7 @@ SET "CONFIG="
 	REM # we found it!
 	SET FILES=%FILES% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
+	SET ANY_WAD=1
 	ECHO         -file : %FILE%
 	SHIFT
 	GOTO :files_loop
@@ -1404,19 +1425,15 @@ REM ----------------------------------------------------------------------------
 REM --------------------------------------------------------------------------------------------------------------------
 
 :files_continue
-REM # config files?
-IF NOT "%CONFIG%" == "" (
-        SET "PARAMS=%PARAMS%%CONFIG%"
-)
 REM # were any files added?
-IF NOT "%FILES%" == "" (
+IF %ANY_WAD% EQU 1 (
         SET "PARAMS=%PARAMS% -file %FILES%"
 )
 REM # DeHackEd extensions?
-IF NOT "%DEH%" == "" (
+IF %ANY_DEH% EQU 1 (
         SET "PARAMS=%PARAMS% -deh %DEH%"
 )
-IF NOT "%BEX%" == "" (
+IF %ANY_BEX% EQU 1 (
         SET "PARAMS=%PARAMS% -bex %BEX%"
 )
 
