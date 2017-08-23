@@ -1,13 +1,13 @@
-$KEY:P=SHELL:play.bat NERVE.WAD
+$KEY:P=SHELL:play.bat /REQ no-limit /PWAD NERVE.WAD
 $KEY:W=SHELL:https://doomwiki.org/wiki/No_Rest_for_the_Living
 
 :No Rest for the Living
 :==============================================================================
-*[P] Play                         [W] Website
+*[P] Play                       [W] Website
 :------------------------------------------------------------------------------
 :Released : *2010>05>26*   Author : *Nerve Software
 :Levels   : *9*             Modes : *Single, Co-op, Deathmatch
-:Requires : *boom*       Includes : *?
+:Requires : *no-limit*   Includes : *?
 :------------------------------------------------------------------------------
 
 ! *NOTE:* Requires commercially-available "NERVE.WAD":
