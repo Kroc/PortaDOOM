@@ -1,0 +1,23 @@
+$KEY:T=SHELL:pwads\misc\John Romero\e1m4b.txt
+$KEY:P=SHELL:pwads\misc\John Romero\play - e1m4b.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
+
+:Phobos Mission Control
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>04>26*   Author : _John Romero_
+:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
+:Requires : *no-limit*   Includes : *None
+:------------------------------------------------------------------------------
+
+With the Toxin Refinery in the rear-view, you make your way to Phobos Mission Control where the computers crunching the data from the Phobos Anomaly are located. You need to use them to gain access to the Phobos Lab, but remember hearing that the computers were tied into all areas of the installation and that you never knew when the environment around you would change. You need to keep your eyes alert to all movement - this place is not what it seems...
+
+:Credits
+:------------------------------------------------------------------------------
+_Tom Hall_ originally created the framework for E1M4. It makes sense that if I was creating an entire E1 of just my work, this would be the level I would remake.
+
+- _John C._, _Adrian C._, _Tom H._, _Kevin C._, _Sandy P._, _Dave T._
+- _Pascal "CodeImp" vd Heiden_ for Doom Builder
+- The Doomworld Community
+- _Linguica_, _Matthias Worch_ and _Ian Dunbar_ for Testing 

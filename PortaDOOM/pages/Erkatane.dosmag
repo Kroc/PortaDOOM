@@ -1,9 +1,9 @@
 $KEY:P=SHELL:pwads\cacowards\2015\erkatane\play - erkatane.bat
+$KEY:Q=SHELL:pwads\cacowards\2015\erkatane\play - erkaknee.bat
 $KEY:T=SHELL:pwads\cacowards\2015\erkatane\erkatane.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
-$KEY:Q=SHELL:pwads\cacowards\2015\erkatane\play - erkaknee.bat
 
-:Erkattäññe                                         * 2015 Cacoward winner! *
+:Erkattäññe                                          * 2015 Cacoward winner! *
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

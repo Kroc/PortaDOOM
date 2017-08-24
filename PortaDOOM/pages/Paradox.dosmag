@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat pwads\MASTER\PARADOX.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\PARADOX.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Paradox_(Master_Levels)
 
-:Paradox                                          (Master Levels for DOOM II)
+:Paradox                                           (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

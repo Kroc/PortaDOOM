@@ -1,13 +1,11 @@
-$KEY:P=GOTO:Breach
+$KEY:1=GOTO:Breach
 
 ^C:2015 CACOWARDS : TOP 10 pt.V
 
 :------------------------------------------------------------------------------
 
-:Breach - _Viggles_
+:[1] Breach - _Viggles_
 :==============================================================================
-
-*[P] Play
 
 Detail is a word that comes with a lot of baggage, part of a balancing act between knowing that it looks great when it's done well and recognizing that it's really easy to miss the point. The crusade against "overdetailing" is thus the counter-electromotive force that keeps the community from burning out on absurd greebling. The admittedly arbitrary distinction is cut between tasteful and tacky, which is to say that having a ton of detail in a level is not intrinsically bad. It's just rare to find someone who both walks that fine line and has the determination to see things through. Fancy that _Viggles_, who returned to authorship after a nineteen-year hiatus, lays proof positive right on the table.
 
@@ -16,3 +14,6 @@ Breach looks absurdly good and it doesn't even add any new textures; it just use
 It's easy to lose sight of player mobility when you're injecting your level with breathtaking pararealism, but Breach bears few if any unsuspecting obstructions to maneuverability as you blast your way through the haunted UAC base, and while it does lay some monsters on the player, the difficulty is never what I'd call oppressive. And that's another part of what makes this level so great - the almost seamless integration of detail, architecture, atmosphere, and gameplay. When it's all done so well, it's an experience to behold. Dare we dream what sights yet unseen remain in Breach's second half?
 
 - _kmxexii_
+
+:------------------------------------------------------------------------------
+*[1] View WAD Page

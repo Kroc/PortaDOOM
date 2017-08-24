@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\SUBTERRA.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\SUBTERRA.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Subterra_(Master_Levels)
 
-:Subterra                                         (Master Levels for DOOM II)
+:Subterra                                          (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

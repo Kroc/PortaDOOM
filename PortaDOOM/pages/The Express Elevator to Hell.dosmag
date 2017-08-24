@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\TEETH.WAD /LEVEL 31
 $KEY:T=SHELL:pwads\MASTER\TEETH.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP31:_The_Express_Elevator_to_Hell_(Master_Levels)
 
-:The Express Elevator to Hell                     (Master Levels for DOOM II)
+:The Express Elevator to Hell                      (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

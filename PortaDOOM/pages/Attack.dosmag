@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat pwads\MASTER\ATTACK.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\ATTACK.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Attack_(Master_Levels)
 
-:Attack                                           (Master Levels for DOOM II)
+:Attack                                            (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat pwads\MASTER\SUBSPACE.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\SUBSPACE.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Subspace_(Master_Levels)
 
-:Subspace                                         (Master Levels for DOOM II)
+:Subspace                                          (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

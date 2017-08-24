@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\GERYON.WAD /LEVEL 8
 $KEY:T=SHELL:pwads\MASTER\GERYON.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP08:_Geryon_(Master_Levels)
 
-:Geryon                                           (Master Levels for DOOM II)
+:Geryon                                            (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

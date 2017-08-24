@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\TTRAP.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\TTRAP.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Trapped_on_Titan_(Master_Levels)
 
-:Trapped on Titan                                 (Master Levels for DOOM II)
+:Trapped on Titan                                  (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

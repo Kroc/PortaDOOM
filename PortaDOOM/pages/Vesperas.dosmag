@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\VESPERAS.WAD /LEVEL 9
 $KEY:T=SHELL:pwads\MASTER\VESPERAS.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP09:_Vesperas_(Master_Levels)
 
-:Vesperas                                         (Master Levels for DOOM II)
+:Vesperas                                          (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

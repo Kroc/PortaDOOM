@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\NESSUS.WAD /LEVEL 7
 $KEY:T=SHELL:pwads\MASTER\NESSUS.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP07:_Nessus_(Master_Levels)
 
-:Nessus                                           (Master Levels for DOOM II)
+:Nessus                                            (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

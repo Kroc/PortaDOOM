@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\VIRGIL.WAD /LEVEL 3
 $KEY:T=SHELL:pwads\MASTER\VIRGIL.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP03:_Virgil%27s_Lead_(Master_Levels)
 
-:Virgil's Lead                                    (Master Levels for DOOM II)
+:Virgil's Lead                                     (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

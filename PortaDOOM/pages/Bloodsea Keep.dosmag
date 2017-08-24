@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\BLOODSEA.WAD /LEVEL 7
 $KEY:T=SHELL:pwads\MASTER\BLOODSEA.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP07:_Bloodsea_Keep_(Master_Levels)
 
-:Bloodsea Keep                                    (Master Levels for DOOM II)
+:Bloodsea Keep                                     (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

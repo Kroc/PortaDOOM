@@ -28,7 +28,7 @@ $KEY:1=SHELL:doom.bat zdoom DOOM2 -- cacowards\2015\instadm\selfie.wad selfie.de
 $KEY:2=SHELL:doom.bat zdoom DOOM2 -- cacowards\2015\instadm\selfie.wad selfie.deh filters\x1.wad
 $KEY:3=SHELL:doom.bat zdoom DOOM2 -- cacowards\2015\instadm\selfie.wad selfie.deh filters\x-pro-ii.wad
 
-:InstaDoom                                          * 2015 Cacoward winner! *
+:InstaDoom                                           * 2015 Cacoward winner! *
 :==============================================================================
 *Play DOOM II + InstaDoom, with filter:
 

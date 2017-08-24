@@ -1,13 +1,11 @@
-$KEY:P=GOTO:dead.wire
+$KEY:1=GOTO:dead.wire
 
 ^C:2015 CACOWARDS : TOP 10 pt.IX
 
 :------------------------------------------------------------------------------
 
-:dead.wire - _Xaser_
+:[1] dead.wire - _Xaser_
 :==============================================================================
-
-*[P] Play
 
 At the beginning of the year, _Tormentor667_ played host to a competition called Doomja-vu, in which participants were made to create unique levels based on the layout of E1M7: Computer Station. The winner of this competition was _zrrion the insect_ (a name more familiar to those over at the ZDoom messaging boards) for his Mouldy Old Void, an antique marvel that is rich in atmosphere and detail, and truly worth its weight in votes - no question! Not being beholden to any contest or international law has its perks, though, and the Cacowards team had already sent out its drones to survey the Doomscape and report back any hidden gems. What they found was this map for ZDoom, later posted on Doomworld by its lonesome. The records will show that _Xaser_ was on his lunch break at the time.
 
@@ -16,3 +14,6 @@ What is dead.wire? Is it any more dangerous than a live.wire? It's certainly mor
 _Xaser_ is a modest soul and not known to flaunt his wares that much. At others' behest he will go to great lengths, donating his uniquely innovative approach to projects for which he expects - and often gets - little credit. Other than pointing out this fact wherever possible, the next best thing we can do is stand guard and prevent any of his greatest feats from flying off undetected. Hence this little wonder, plucked from the void.
 
 - _Alfonzo_
+
+:------------------------------------------------------------------------------
+*[1] View WAD Page

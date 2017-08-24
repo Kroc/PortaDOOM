@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat pwads\MASTER\CANYON.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\CANYON.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Canyon_(Master_Levels)
 
-:Canyon                                           (Master Levels for DOOM II)
+:Canyon                                            (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

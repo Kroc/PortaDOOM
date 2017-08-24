@@ -2,7 +2,7 @@ $KEY:P=SHELL:pwads\megawads\sunlust\play.bat
 $KEY:T=SHELL:pwads\megawads\sunlust\sunlust.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sunlust
 
-:Sunlust                                            * 2015 Cacoward winner! *
+:Sunlust                                             * 2015 Cacoward winner! *
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

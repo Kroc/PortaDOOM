@@ -2,7 +2,7 @@ $KEY:P=SHELL:play.bat MASTER\BLACKTWR.WAD /LEVEL 25
 $KEY:T=SHELL:pwads\MASTER\BLACKTWR.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 
-:Black Tower                                      (Master Levels for DOOM II)
+:Black Tower                                       (Master Levels for DOOM II)
 :==============================================================================
 *[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------

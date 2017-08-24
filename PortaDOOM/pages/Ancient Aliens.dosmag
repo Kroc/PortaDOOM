@@ -1,0 +1,207 @@
+$KEY:P=SHELL:pwads\megawads\aaliens\play.bat
+$KEY:T=SHELL:pwads\megawads\aaliens\aaliens.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
+
+:Ancient Aliens                                      * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>05>18*   Author : _Paul "skillsaw" DeBruyne_
+:Levels   : *32*            Modes : *Single, Co-op
+:Requires : *boom*       Includes : *+Music +Sounds +Graphics +Patches +Demos
+:------------------------------------------------------------------------------
+
+Ancient Aliens is a megawad featuring 32 colorful, action-packed maps for Boom compatible ports.
+                          
+Go on a journey to discover the truth about the enigmatic origins of human civilization... 
+
+I'm not saying it was aliens, but... the truth is out there.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : Texture wad based on 32in24-14 resource
+*Build Time*              : 15 months
+*Editor(s) used*          : Doom Builder 2 , GZDoom Builder, Slade, WhackEd, 
+                          GIMP, Notepad++
+*Known Bugs*              : None
+*May Not Run With...*     : Gameplay mods that change the palette or don't 
+                          use .png graphics.
+                          
+                          If you encounter garbled texture graphics while 
+                          using a mod try changing the load order.
+
+:Credits
+:------------------------------------------------------------------------------
+
+*Mapping*                 : _skillsaw_
+                          _AD_79_
+                          _esselfortium_
+                          _Joshy_
+                          _lupinx-Kassman_
+                          _Pinchy_
+                          _stewboy_
+                          _Tarnsman_
+                          
+*Music*                   : _stewboy_
+
+*Testing*                 : _AD_79_
+                          _Altazimuth_
+                          _dew_
+                          _Tarnsman_
+                          
+*Coop Testing*            : _Alfonzo_
+                          _Altazimuth_
+                          _dew_
+                          _esselfortium_
+                          _Pinchy_
+                          _Seele00TextOnly_
+                          
+*Texture Credits*         : _NiGHTMARE_
+                          _Espi_
+                          _Eriance_
+                          _Fredrik Johansson_
+                          _Janitor_
+                          _DaGGeR_
+                          _Ola Bjorling_
+                          _Vader_
+                          _XDelusion_
+                          _esselfortium_
+                          _RottKing_
+                          _Nuxius_
+                          _Afterglow_
+                          _AgentSpork_
+                          _Enjay_
+                          _Huy Pham_
+                          _SargeBaldy_
+                          _Tormentor667_
+                          _Iikka Keranen_
+                          _Cage_
+                          _FuzzballFox_
+                          _40oz_
+                          _Mechadon_
+                          _zrrion the insect_
+                          _Nightfall_
+                          _Blue Shadow_
+                          _Sock_
+                          _Roger Ritenour_
+                          _Spackle_
+                          _Tarnsman_
+                          _lupinx-Kassman_
+                          _skillsaw_
+                          GothicDM Team
+                          Eternal Doom Team
+                          id Software
+                          Ion Storm
+                          Raven Software
+                          Rogue Entertainment
+                          Valve Software
+
+*Sprite Credits*          : _Eriance_                        
+                          _Virtue_
+                          _Bloax_
+                          _CeeJay_
+                          _Tormentor667_
+                          _skillsaw_
+                          3d Realms                       
+
+*Fonts*                   : _Mechadon_
+
+*Status Bar Font*         : _AgentSpork_
+
+*Palette*                 : _skillsaw_
+                          (purple range is from BTSX)
+
+*ENDOOM*                  : _Altazimuth_
+
+*CR** Translation lumps*   : _xttl_
+
+*Final ending text*       : _dew_
+
+*ACS multiplayer fix*     : _rhinoduck_
+                          
+*Misc Graphics, Splash
+*Screens, Status Bar*     : _skillsaw_
+
+*Sound Credits*           : _Eriance_
+                          Raven Software
+                          Rogue Entertainment
+                          http://www.freesfx.co.uk 
+
+Map List:
+:------------------------------------------------------------------------------
+- MAP01 - *"The Ancient Navajo Wolf Warp"* by _skillsaw
+- MAP02 - *"Sanctum of the Wastes"* by _skillsaw
+- MAP03 - *"Arachnotron Arrival"* by _skillsaw
+- MAP04 - *"Bad Medicine Men"* by _skillsaw
+- MAP05 - *"Last Refuge of the Anasazi"* by _skillsaw
+- MAP06 - *"Sinkhole Showdown"* by _skillsaw
+- MAP07 - *"Dare to Fly Where Eagles Soar"* by _skillsaw
+- MAP08 - *"Ancient Aliens"* by _skillsaw
+- MAP09 - *"The Nectar Flow"* by _Joshy
+- MAP10 - *"Gift of Denial"* by _skillsaw
+- MAP11 - *"On the Origin of Spacies"* by _skillsaw
+- MAP12 - *"Magenta Heat"* by _skillsaw
+- MAP13 - *"Polychromatic Terrace"* by _skillsaw
+- MAP14 - *"Blazing Boulevard"* by _skillsaw
+- MAP15 - *"Wormhole Junction"* by _skillsaw
+- MAP16 - *"Leave Your Sol Behind"* by _skillsaw
+- MAP17 - *"Daylight Under a Dark Sol"* by _skillsaw
+- MAP18 - *"Illuminati Revealed"* by _skillsaw
+- MAP19 - *"Crash Landing"* by _skillsaw
+- MAP20 - *"Code"* by _AD_79
+- MAP21 - *"Cyberbullying: Beyond Earth"* by _skillsaw
+- MAP22 - *"Acerola-Orion"* by _esselfortium
+- MAP23 - *"Trinary Temple"* by _Pinchy
+- MAP24 - *"Culture Shock"* by _lupinx-Kassman_ (additional mapping by _skillsaw_)
+- MAP25 - *"Xenoarboreum"* by _skillsaw
+- MAP26 - *"Egyptian Metaphysics"* by _Tarnsman
+- MAP27 - *"Kingdom of the Crystal Skulls"* by _skillsaw
+- MAP28 - *"Floating Arena"* by _Joshy
+- MAP29 - *"The Ones Behind It All"* by _skillsaw
+- MAP30 - *"The End"* by _skillsaw
+- MAP31 - *"Grey Dwarf"* by _stewboy
+- MAP32 - *"Ossuarium Exoterre"* by _skillsaw
+                          
+:Music Listing
+:------------------------------------------------------------------------------
+- MAP01 - *"Flee"*
+- MAP02 - *"The Incessant Flow of Time"*
+- MAP03 - *"Depth Charge"*
+- MAP04 - *"Desk Lamp"*
+- MAP05 - *"Toejazz"*
+- MAP06 - *"Roof"*
+- MAP07 - *"Featherfall"*
+- MAP08 - *"Hell Jungle"*
+- MAP09 - *"The Demon's Serenade"*
+- MAP10 - *"Vase"*
+- MAP11 - *"Space Train"*
+- MAP12 - *"Web of Steel"*
+- MAP13 - *"Gold Rush"*
+- MAP14 - *"Moonwalk"*
+- MAP15 - *"Hypercube"*
+- MAP16 - *"Space Jiggle"*
+- MAP17 - *"Other Side of the Moon"*
+- MAP18 - *"Trapeze"*
+- MAP19 - *"Long Night"*
+- MAP20 - *"20 GOTO 10"*
+- MAP21 - *"Basement"*
+- MAP22 - *"The Last Dance"*
+- MAP23 - *"The Greater Good"*
+- MAP24 - *"Imaginarium"*
+- MAP25 - *"Alien Forest"*
+- MAP26 - *"Tales of Old"*
+- MAP27 - *"Garden of Lost Souls"*
+- MAP28 - *"Gigabridge"*
+- MAP29 - *"Colliding Nebulae"*
+- MAP30 - *"Yuletide"*
+- MAP31 - *"Tribal Dance"*
+- MAP32 - *"Birdsong"*
+- Intermission - *"Concentration"*
+- Title - *"Welcome to Egypt"*
+- Text screen - *"Martian Blues"*
+
+The full Ancient Aliens OST is available on
+_Stewboy_'s bandcamp:
+
+$KEY:B=SHELL:https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost 
+[B] _<stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost>
