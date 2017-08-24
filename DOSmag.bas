@@ -545,39 +545,51 @@ SUB drawHeader
 
     'draw the breadcrumb
     '-------------------------------------------------------------------------
-    DIM bread_crumb$
-    FOR n% = 1 TO historyDepth%
-        'get the file name from the history;
-        DIM crumb$
-        'when on the front page we show the root name (typically "home"),
-        'but on the first level and below we don't show that
-        IF n% = 1 AND historyDepth% > 1 THEN
-            crumb$ = historyPages$(n% + 1)
-        ELSE
-            crumb$ = historyPages$(n%)
-        END IF
+    DIM bread_crumb$, crumb$
+    'FOR n% = 1 TO historyDepth%
+    '    'get the file name from the history;
+    '    DIM crumb$
+    '    'when on the front page we show the root name (typically "home"),
+    '    'but on the first level and below we don't show that
+    '    IF n% = 1 AND historyDepth% > 1 THEN
+    '        crumb$ = historyPages$(n% + 1)
+    '    ELSE
+    '        crumb$ = historyPages$(n%)
+    '    END IF
 
-        'if it has a page number on the end, this can be removed
-        'when we're display names on the breadcrumb
-        IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
-            'remove the page number from the name
-            crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
-        END IF
-        'there could be a space between the name and page number
-        crumb$ = TRIM$(crumb$)
-        'is this the root, or a sub-section?
-        IF n% = 1 THEN
-            'display the root name
-            bread_crumb$ = bread_crumb$ _
-                         + " " + CHR$(ASC_DIAMOND) + " " _
-                         + crumb$ + " "
-            'when you navigate beyond the root level we don't display it
-            IF historyDepth% > 1 THEN n% = n% + 1
-        ELSE
-            'display the current crumb
-            bread_crumb$ = bread_crumb$ + CHR$(ASC_LGLLMT) + " " + crumb$ + " "
-        END IF
-    NEXT
+    '    'if it has a page number on the end, this can be removed
+    '    'when we're display names on the breadcrumb
+    '    IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
+    '        'remove the page number from the name
+    '        crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
+    '    END IF
+    '    'there could be a space between the name and page number
+    '    crumb$ = TRIM$(crumb$)
+    '    'is this the root, or a sub-section?
+    '    IF n% = 1 THEN
+    '        'display the root name
+    '        bread_crumb$ = bread_crumb$ _
+    '                     + " " + CHR$(ASC_DIAMOND) + " " _
+    '                     + crumb$ + " "
+    '        'when you navigate beyond the root level we don't display it
+    '        IF historyDepth% > 1 THEN n% = n% + 1
+    '    ELSE
+    '        'display the current crumb
+    '        bread_crumb$ = bread_crumb$ + CHR$(ASC_LGLLMT) + " " + crumb$ + " "
+    '    END IF
+    'NEXT
+
+    crumb$ = historyPages$(historyDepth%)
+    'if it has a page number on the end, this can be removed
+    'when we're display names on the breadcrumb
+    IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
+        'remove the page number from the name
+        crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
+    END IF
+    'there could be a space between the name and page number
+    crumb$ = TRIM$(crumb$)
+
+    bread_crumb$ = " " + CHR$(ASC_DIAMOND) + " " + crumb$ + " "
 
     'prevent the breadcrumb from being too long
     bread_crumb$ = RTRUNCATE$(bread_crumb$, SCREEN_WIDTH - tab_width% - 3)
