@@ -871,21 +871,19 @@ IF "%IWAD_EXT%" == "" (
 	)
 )
 
-IF EXIST "%IWADS%\%IWAD%" (
-	REM # the IWAD exists as-is and requires no special provisions
-	SET PARAMS=%PARAMS% -iwad "%FIX_PATH%\%IWADS%\%IWAD%"
-	ECHO         -iwad : %IWADS%\%IWAD%
-	REM # skip ahead, no edge-cases to handle
-	GOTO :params
-)
+REM # this is where the IWAD is assumed to be
+SET "IWAD_PATH=%IWADS%\%IWAD%"
+REM # the IWAD exists as-is and requires no special provisions,
+REM # skip ahead; no edge-cases to handle
+IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 
 REM # IWAD is missing,
 REM # now search GOG / Steam for the IWAD:
-SET "IWAD_PATH="
 
 :iwad_doomu
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "The Ultimate DOOM"?
+REM # (if not, skip ahead to DOOM II)
 IF /I NOT "%IWAD%" == "DOOM.WAD" GOTO :iwad_doom2
 
 REM # is Steam : The Ultimate DOOM installed?
@@ -910,6 +908,7 @@ IF NOT "%REG%" == "" (
 :iwad_doom2
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "DOOM II"?
+REM # (if not, skip ahead to TNT)
 IF /I NOT "%IWAD%" == "DOOM2.WAD" GOTO :iwad_tnt
 
 REM # is Steam : DOOM II installed?
@@ -934,6 +933,7 @@ IF NOT "%REG%" == "" (
 :iwad_tnt
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "Final DOOM: Evilution"?
+REM # (if not, skip ahead to Plutonia)
 IF /I NOT "%IWAD%" == "TNT.WAD" GOTO :iwad_plutonia
 	
 REM # is Steam : Final DOOM installed?
@@ -970,13 +970,7 @@ IF NOT "%REG%" == "" (
 :iwad_check
 REM # did we find the IWAD in GOG / Steam?
 REM # TODO: if IWAD was found in GOG / Steam, offer to copy it into PortaDOOM
-IF NOT "%IWAD_PATH%" == "" (
-	REM # this will an absolute path
-	SET PARAMS=%PARAMS% -iwad "%IWAD_PATH%"
-	ECHO         -iwad : %IWAD_PATH%
-	REM # skip ahead, no more edge-cases to handle
-	GOTO :params
-)
+IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 
 :iwad_missing
 REM --------------------------------------------------------------------------------------------------------------------
@@ -988,7 +982,7 @@ IF NOT "%PWAD%" == "" GOTO :iwad_freedoom
 :iwad_shareware
 REM # if the user is trying to play just DOOM as-is without a PWAD,
 REM # then the best thing to do is offer them the shareware version:
-IF /I "%SAVE_WAD%" == "DOOM" (
+IF /I "%IWAD%" == "DOOM.WAD" (
 	ECHO:
 	ECHO   WARNING! Could not find registered DOOM.WAD:
 	ECHO:
@@ -1002,7 +996,7 @@ IF /I "%SAVE_WAD%" == "DOOM" (
 	
 	REM # we keep %SAVE_WAD% as "DOOM" so that save games from
 	REM # shareware DOOM can be re-used in the full game
-	SET "IWAD=SHAREWARE\DOOM1.WAD"
+	SET "IWAD_PATH=SHAREWARE\DOOM1.WAD"
 	
 	GOTO :iwad_found
 )
@@ -1035,8 +1029,8 @@ EXIT /B 1
 REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
 SET "FREEDOOM="
 REM # TODO: check these files exist too
-IF /I "%SAVE_WAD%" == "DOOM"  SET "FREEDOOM=freedoom\freedoom1.wad"
-IF /I "%SAVE_WAD%" == "DOOM2" SET "FREEDOOM=freedoom\freedoom2.wad"
+IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%IWADS%\freedoom\freedoom1.wad"
+IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%IWADS%\freedoom\freedoom2.wad"
 
 IF NOT "%FREEDOOM%" == "" (
 	ECHO:
@@ -1044,9 +1038,10 @@ IF NOT "%FREEDOOM%" == "" (
 	ECHO   -- USING FREEDOOM AS REPLACEMENT
 	ECHO:
 	ECHO      press any key to continue
-	PAUSE >NUL
+	PAUSE  >NUL
+	ECHO:
 
-	SET "IWAD=%FREEDOOM%"
+	SET "IWAD_PATH=%FREEDOOM%"
 	
 ) ELSE (
 	REM # no other choice
@@ -1073,9 +1068,8 @@ IF NOT "%FREEDOOM%" == "" (
 )
 
 :iwad_found
-REM # at this point, the shareware / FreeDOOM substitution has occurred and we can continue
-SET PARAMS=%PARAMS% -iwad "%FIX_PATH%\%IWADS%\%IWAD%"
-ECHO         -iwad : %IWADS%\%IWAD%
+SET PARAMS=%PARAMS% -iwad "%FIX_PATH%\%IWAD_PATH%"
+ECHO         -iwad : %IWAD_PATH%
 
 
 :params
