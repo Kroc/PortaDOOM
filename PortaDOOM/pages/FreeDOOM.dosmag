@@ -1,5 +1,5 @@
-$KEY:1=SHELL:play.bat FREEDOOM1
-$KEY:2=SHELL:play.bat FREEDOOM2
+$KEY:1=SHELL:iwads\freedoom\play - freedoom1.bat
+$KEY:2=SHELL:iwads\freedoom\play - freedoom2.bat
 
 ^C:FreeDOOM
 :==============================================================================
