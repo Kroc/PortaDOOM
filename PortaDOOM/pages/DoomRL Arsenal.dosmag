@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\cacowards\2015\doomrl_arsenal\play.bat
-$KEY:T=SHELL:pwads\cacowards\2015\doomrl_arsenal\Credits.bat
+$KEY:P=SHELL:pwads\mods\doomrl_arsenal\play.bat
+$KEY:T=SHELL:pwads\mods\doomrl_arsenal\Credits.bat
 $KEY:W=SHELL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DoomRL Arsenal                                      * 2015 Cacoward winner! *

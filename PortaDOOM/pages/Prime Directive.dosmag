@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\cacowards\2015\ge5-pd\play.bat
-$KEY:T=SHELL:pwads\cacowards\2015\ge5-pd\ge5-pd.txt
+$KEY:P=SHELL:pwads\episodes\ge5-pd\play.bat
+$KEY:T=SHELL:pwads\episodes\ge5-pd\ge5-pd.txt
 $KEY:W=SHELL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
 
 :Prime Directive                                  * 2015 Cacoward runner up! *
@@ -104,5 +104,5 @@ Once again, this is being released under a Creative Commons licence. This gives 
                           
 :Credits:
 :------------------------------------------------------------------------------
-$KEY:L=SHELL:pwads\cacowards\2015\ge5-pd\licenses.txt
+$KEY:L=SHELL:pwads\episodes\ge5-pd\licenses.txt
 An extensive list of credits is kept in [L] licenses.txt. Shout outs to _Randi_, _Graf_, _Enjay_, _Nash_, _Xaser_, _ReX_, _wildweasel_, _Gez_, _Blzut3_, _Kinsie_, _Jimmy_, _Edward850_, _grouchbag_, _scalliano_, and other ZDoom forums/IRC people I've missed.

@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\cacowards\2015\crumpets\play.bat
-$KEY:T=SHELL:pwads\cacowards\2015\crumpets\crumpets.txt
+$KEY:P=SHELL:pwads\episodes\crumpets\play.bat
+$KEY:T=SHELL:pwads\episodes\crumpets\crumpets.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 
 :Crumpets                                         * 2015 Cacoward runner up! *
