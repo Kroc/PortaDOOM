@@ -777,7 +777,7 @@ IF EXIST "%PWAD_PATH%" GOTO :iwad
 :pwad_nerve
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "No Rest for the Living"?
-IF NOT /I "%PWAD%" == "NERVE.WAD" GOTO :pwad_master
+IF /I NOT "%PWAD%" == "NERVE.WAD" GOTO :pwad_master
 	
 REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
@@ -804,7 +804,7 @@ GOTO :iwad
 :pwad_master
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "Master Levels for DOOM II"?
-IF NOT /I "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_missing
+IF /I NOT "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_missing
 
 REM # extract the WAD name from that
 SET "WAD=%PWAD:~8%"
@@ -886,7 +886,7 @@ SET "IWAD_PATH="
 :iwad_doomu
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "The Ultimate DOOM"?
-IF NOT /I "%IWAD%" == "DOOM.WAD" GOTO :iwad_doom2
+IF /I NOT "%IWAD%" == "DOOM.WAD" GOTO :iwad_doom2
 
 REM # is Steam : The Ultimate DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280" "InstallLocation"
@@ -910,7 +910,7 @@ IF NOT "%REG%" == "" (
 :iwad_doom2
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "DOOM II"?
-IF NOT /I "%IWAD%" == "DOOM2.WAD" GOTO :iwad_tnt
+IF /I NOT "%IWAD%" == "DOOM2.WAD" GOTO :iwad_tnt
 
 REM # is Steam : DOOM II installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300" "InstallLocation"
@@ -934,7 +934,7 @@ IF NOT "%REG%" == "" (
 :iwad_tnt
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "Final DOOM: Evilution"?
-IF NOT /I "%IWAD%" == "TNT.WAD" GOTO :iwad_plutonia
+IF /I NOT "%IWAD%" == "TNT.WAD" GOTO :iwad_plutonia
 	
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
@@ -952,7 +952,7 @@ IF NOT "%REG%" == "" (
 :iwad_plutonia
 REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "Final DOOM: The Plutonia Experiment"?
-IF NOT /I "%IWAD%" == "PLUTONIA.WAD" GOTO :iwad_check
+IF /I NOT "%IWAD%" == "PLUTONIA.WAD" GOTO :iwad_check
 
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
@@ -1031,7 +1031,7 @@ POPD
 PAUSE
 EXIT /B 1
 
-:iwad_freedom
+:iwad_freedoom
 REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
 SET "FREEDOOM="
 REM # TODO: check these files exist too
