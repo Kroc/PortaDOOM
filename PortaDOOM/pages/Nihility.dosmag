@@ -1,0 +1,42 @@
+$KEY:P=SHELL:pwads\classic\Nihility\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/85591-nihility-infinite-teeth-shareware-episode-v1-21/
+
+:Nihility                                            * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>01>21*   Author : _Years_
+:Levels   : *9*             Modes : *Single, Co-op
+:Requires : *vanilla?*   Includes : *+Sounds +Graphics +Patches
+:------------------------------------------------------------------------------
+
+Hello everybody! I am Years and I have made a vanilla E2 replacement/PC for Ultimate Doom. It's called Nihility and I'll hopefully one day expand it into a full 36-level megawad. It's an old-school style wad with some new and replaced monsters and weapons, inspired by the Alphas/Beta but also old-school 90's partial conversions aka Strain. If you like DTWID, No End In Sight, Monti's favillesco and erkatane episodes, and Doom: The Lost Episode then you might enjoy this. If you don't like abstract, explorational and moody maps (and graytall) you should probably steer clear.
+
+*Features:
+
+- Designed and tested in and for Vanilla/Chocolate Doom (specifically -complevel 3). If you use chocodoom don't forget to turn on unlimited save file sizes due to the size of some of the maps
+- DEH file mandatory!
+- Episode 2 replacement: "Infinite Teeth", Hence a E2 inspired theme
+- 9 Levels, some quite large (8 + 1 secret)
+- medium-high difficulty (different difficulty levels are provided)
+- New and replaced monsters added via DEH, including baron variants, the rapid-fire imp, the wraith and kamikaze zombies.
+- Weapons slightly modified: Pistol replaced with the Alpha 0.4 rifle which is faster and perfectly accurate. Bayonet replaces fist, also slightly faster (so it is easier to time). Bullet capacity increased to 600. New textures for nearly all the other weapons, but generally unchanged behaviour
+- no music (yet...), instead I rely ambient sounds and drones (The alphas never had music...)
+- new graphics, textures, decorations etc.
+- pistol-start friendly
+- Co-op starts there, but untested
+
+:Credits
+:------------------------------------------------------------------------------
+- Suicide zombie: _Tormentor667_ (Bestiary)
+- Wraith: _Ghastly_dragon_ (Bestiary)
+- Sound: Blood, Quake, Doom 3
+- Heresy lord: _Vader_
+- Textures: Alpha doom, No End In Sight
+- Rifle flash sprites - _Uboa_
+- Alpha and Beta doom for sprites
+- Sky - recoloured sky from _Romero_'s early doom material dump.
+- Text: Doom Writer
+- Ambience: Blood, Quake
+- New sound effects: me
+- If I forgot anything or anyone, let me know!
