@@ -1081,15 +1081,24 @@ ECHO         -iwad : %IWADS%\%IWAD%
 :params
 REM ====================================================================================================================
 REM # with the IWAD edge-cases handled we can finally print out the PWAD
-IF NOT "%PWAD%" == "" (
-	ECHO          PWAD : %PWAD_PATH%
-	SET PARAMS=%PARAMS% -file "%FIX_PATH%\%PWAD_PATH%"
-	
-	REM # if a PWAD was given we can set that as the previous directory so that the first file in the files list
-	REM # will be checked for in the PWAD's directory
-	CALL :prev_dir "%PWAD_PATH%"
-)
+REM # (if no PWAD present, skip over this)
+IF "%PWAD%" == "" GOTO :params_begin
 
+REM # IMPORTANT NOTE: Chocolate-DOOM will not be able handle PWADs unless
+REM # the `-merge` switch is used, this is due to historical accuracy,
+REM # see <www.chocolate-doom.org/wiki/index.php/WAD_merging_capability>
+IF "%ENGINE_KIN%" == "V" (
+	SET PARAMS=%PARAMS% -merge "%FIX_PATH%\%PWAD_PATH%"
+) ELSE (
+	SET PARAMS=%PARAMS% -file "%FIX_PATH%\%PWAD_PATH%"
+)
+ECHO          PWAD : %PWAD_PATH%
+	
+REM # if a PWAD was given we can set that as the previous directory so that
+REM # the first file in the files list will be checked for in the PWAD's directory
+CALL :prev_dir "%PWAD_PATH%"
+
+:params_begin
 REM # are there any parameters?
 IF "%~1" == ""   GOTO :saves
 IF "%~1" == "--" GOTO :saves
