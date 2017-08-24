@@ -11,24 +11,24 @@ $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 :Requires : *zdoom*      Includes : *+Sounds +Music +Graphics +Patches
 :------------------------------------------------------------------------------
 
-Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes  advantages of Zdoom's special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
+Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of Zdoom's special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
                           
 Also in addition are 9 new monsters thanks to Zdoom's DECORATE feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
 
 :FEATURES:
 :------------------------------------------------------------------------------
- - 9 Huge Levels.
- - 2 Secret Levels.
- - 1 Super Secret Level.
- - 10 Deathmatch Levels.
- - Simple Scripting.
- - Designed for Single Player, but with 8 coop starts in every level.
- - Tons of secrets.
- - Top Secret Easter Eggs.
- - An original .mp3 soundtrack of dramatic orchestral music.
- - Hundreds of additional and new textures.
- - All difficulty levels.
- - All levels are Zdoom Doom in Hexen Format.
+ - 9 Huge Levels
+ - 2 Secret Levels
+ - 1 Super Secret Level
+ - 10 Deathmatch Levels
+ - Simple Scripting
+ - Designed for Single Player, but with 8 coop starts in every level
+ - Tons of secrets
+ - Top Secret Easter Eggs
+ - An original .mp3 soundtrack of dramatic orchestral music
+ - Hundreds of additional and new textures
+ - All difficulty levels
+ - All levels are Zdoom Doom in Hexen Format
  - Designed for Zdoom compatible source ports
 
 :STORY:
