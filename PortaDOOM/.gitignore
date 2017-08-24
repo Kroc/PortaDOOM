@@ -14,6 +14,8 @@ PortaDOOM.exe
 
 # ignore UPX temporary files if left behind
 **.upx
+# ignore SLADE backups
+**.bak
 
 # do not include DOOM files by default (very, very large)
 **.wad
