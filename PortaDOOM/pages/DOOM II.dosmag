@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat DOOM2
+$KEY:P=SHELL:play.bat /IWAD DOOM2
 $KEY:W=SHELL:https://doomwiki.org/wiki/Doom_II
 
 :DOOM II

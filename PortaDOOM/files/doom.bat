@@ -171,7 +171,7 @@ IF "%~1" == "" (
         ECHO %_HEADING_%IWAD:%_%
 	REM ---------------------------------------------------------------------------------
         ECHO:
-        ECHO     The IWAD ^(internal WAD^) is the base WAD to use. This will be one of the
+        ECHO     The IWAD ^(Internal WAD^) is the base WAD to use. This will be one of the
         ECHO     original game's WAD files which maps, mods and total conversions extend.
         ECHO     If uncertain, use "DOOM2", it's the most common one used for community
         ECHO     content. The ".WAD" / ".PK3" extension can be ommitted.
@@ -184,13 +184,13 @@ IF "%~1" == "" (
 	ECHO     cannot be found in the "%IWADS%" folder, doom.bat will try to locate them
 	ECHO     automatically for you in any relevant Steam or GOG installations:
 	ECHO:
-	ECHO         Steam : DOOM 3 BFG Edition    - DOOM.WAD ^& DOOM2.WAD
-	ECHO         Steam : The Ultimate DOOM     - DOOM.WAD
-	ECHO         Steam : DOOM II               - DOOM2.WAD
-	ECHO         Steam : Final DOOM            - TNT.WAD ^& PLUTONIA.WAD
-	ECHO         ^(note that "DOOM Classic Complete" contains all of the above^)
-	ECHO           GOG : The Ultimate DOOM     - DOOM.WAD
-	ECHO           GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD 
+	ECHO             Steam : The Ultimate DOOM     - DOOM.WAD
+	ECHO             Steam : DOOM II               - DOOM2.WAD
+	ECHO             Steam : Final DOOM            - TNT.WAD ^& PLUTONIA.WAD
+	ECHO             Steam : DOOM Classic Complete - ^(all of the above^)
+	ECHO       GOG / Steam : DOOM 3 BFG Edition    - DOOM.WAD ^& DOOM2.WAD
+	ECHO               GOG : The Ultimate DOOM     - DOOM.WAD
+	ECHO               GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD 
         ECHO:
 	ECHO     %_HEADING_%Shareware:%_%
 	ECHO:
@@ -220,9 +220,9 @@ IF "%~1" == "" (
 	ECHO     doom.bat will try to locate them for you in any relevant Steam or GOG
 	ECHO     installations:
 	ECHO:
-	ECHO         Steam : DOOM 3 BFG Edition    - NERVE.WAD
-	ECHO         Steam : DOOM Classic Complete - Master Levels for DOOM II
-	ECHO           GOG : DOOM II + Final DOOM  - Master Levels for DOOM II
+	ECHO       GOG / Steam : DOOM 3 BFG Edition    - NERVE.WAD
+	ECHO             Steam : DOOM Classic Complete - Master Levels for DOOM II
+	ECHO               GOG : DOOM II + Final DOOM  - Master Levels for DOOM II
 	ECHO:
 	ECHO     %_HEADING_%FreeDOOM:%_%
 	ECHO:
@@ -652,7 +652,8 @@ SET "IWAD=DOOM2.WAD"
 SET "SAVE_WAD=DOOM2"
 SET "PWAD="
 
-REM # remember the directory of the last file (used for finding side-by-side WADs)
+REM # remember the directory of the last file
+REM # (used for finding side-by-side WADs)
 SET "PREV_DIR="
 
 REM # read the IWAD first; the interpretation of the PWAD will depend upon the IWAD:
@@ -783,7 +784,13 @@ REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
 	REM # check if NERVE.WAD can be found there
-	IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD"
+	IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :iwad
+)
+REM # is GOG : DOOM 3 BFG Edition installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
+IF NOT "%REG%" == "" (
+	REM # check if NERVE.WAD can be found there
+	IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :iwad
 )
 REM # if the WAD was not found, we cannot continue, the user does not have NERVE.WAD
 IF "%PWAD_PATH%" == "" (
@@ -812,14 +819,13 @@ SET "WAD=%PWAD:~8%"
 REM # is Steam : Master Levels for DOOM II installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
 IF NOT "%REG%" == "" (
-	REM # check if the wad can be found there
+	REM # check if the WAD can be found there
 	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%"
 )
-
 REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
 IF NOT "%REG%" == "" (
-	REM # check if the wad can be found there
+	REM # check if the WAD can be found there
 	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%"
 )
 
@@ -892,17 +898,23 @@ IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
 	IF EXIST "%REG%\base\DOOM.WAD" SET "IWAD_PATH=%REG%\base\DOOM.WAD" & GOTO :iwad_check
 )
-REM # is Steam : DOOM 3 BFG Edition installed?
-CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
-IF NOT "%REG%" == "" (
-	REM # check if DOOM.WAD can be found there
-	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD"  & GOTO :iwad_check
-)
 REM # is GOG : The Ultimate DOOM installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435827232" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
 	IF EXIST "%REG%\DOOM.WAD" SET "IWAD_PATH=%REG%\DOOM.WAD" & GOTO :iwad_check
+)
+REM # is Steam : DOOM 3 BFG Edition installed?
+CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
+IF NOT "%REG%" == "" (
+	REM # check if DOOM.WAD can be found there
+	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_check
+)
+REM # is GOG : DOOM 3 BFG Edition installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
+IF NOT "%REG%" == "" (
+	REM # check if DOOM.WAD can be found there
+	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_check
 )
 
 :iwad_doom2
@@ -917,17 +929,23 @@ IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
 	IF EXIST "%REG%\base\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\DOOM2.WAD" & GOTO :iwad_check
 )
+REM # is GOG : DOOM II installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
+IF NOT "%REG%" == "" (
+	REM # check if DOOM2.WAD can be found there
+	IF EXIST "%REG%\doom2\DOOM2.WAD" SET "IWAD_PATH=%REG%\doom2\DOOM2.WAD" & GOTO :iwad_check
+)
 REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
 	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_check
 )
-REM # is GOG : DOOM II installed?
-CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
+REM # is GOG : DOOM 3 BFG Edition installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
-	IF EXIST "%REG%\doom2\DOOM2.WAD" SET "IWAD_PATH=%REG%\doom2\DOOM2.WAD" & GOTO :iwad_check
+	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_check
 )
 
 :iwad_tnt
@@ -1068,8 +1086,12 @@ IF NOT "%FREEDOOM%" == "" (
 )
 
 :iwad_found
-SET PARAMS=%PARAMS% -iwad "%FIX_PATH%\%IWAD_PATH%"
 ECHO         -iwad : %IWAD_PATH%
+
+REM # is the IWAD path absolute?
+REM # (i.e. begins with a drive letter, making ":" the second character)
+IF "%IWAD_PATH:~2,1%" == ":" SET "IWAD_PATH="%FIX_PATH%\%IWAD_PATH%"
+SET PARAMS=%PARAMS% -iwad "%IWAD_PATH%"
 
 
 :params
@@ -1078,19 +1100,24 @@ REM # with the IWAD edge-cases handled we can finally print out the PWAD
 REM # (if no PWAD present, skip over this)
 IF "%PWAD%" == "" GOTO :params_begin
 
+ECHO          PWAD : %PWAD_PATH%
+
+REM # if a PWAD was given we can set that as the previous directory so that
+REM # the first file in the files list will be checked for in the PWAD's directory
+CALL :prev_dir "%PWAD_PATH%"
+
+REM # is the PWAD path absolute?
+REM # (i.e. begins with a drive letter, making ":" the second character)
+IF "%PWAD_PATH:~2,1%" == ":" SET "PWAD_PATH="%FIX_PATH%\%PWAD_PATH%"
+
 REM # IMPORTANT NOTE: Chocolate-DOOM will not be able handle PWADs unless
 REM # the `-merge` switch is used, this is due to historical accuracy,
 REM # see <www.chocolate-doom.org/wiki/index.php/WAD_merging_capability>
 IF "%ENGINE_KIN%" == "V" (
-	SET PARAMS=%PARAMS% -merge "%FIX_PATH%\%PWAD_PATH%"
+	SET PARAMS=%PARAMS% -merge "%PWAD_PATH%"
 ) ELSE (
-	SET PARAMS=%PARAMS% -file "%FIX_PATH%\%PWAD_PATH%"
+	SET PARAMS=%PARAMS% -file "%PWAD_PATH%"
 )
-ECHO          PWAD : %PWAD_PATH%
-	
-REM # if a PWAD was given we can set that as the previous directory so that
-REM # the first file in the files list will be checked for in the PWAD's directory
-CALL :prev_dir "%PWAD_PATH%"
 
 :params_begin
 REM # are there any parameters?
