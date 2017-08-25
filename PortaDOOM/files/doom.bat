@@ -1090,7 +1090,7 @@ ECHO         -iwad : %IWAD_PATH%
 
 REM # is the IWAD path absolute?
 REM # (i.e. begins with a drive letter, making ":" the second character)
-IF "%IWAD_PATH:~2,1%" == ":" SET "IWAD_PATH="%FIX_PATH%\%IWAD_PATH%"
+IF NOT "%IWAD_PATH:~1,1%" == ":" SET "IWAD_PATH="%FIX_PATH%\%IWAD_PATH%"
 SET PARAMS=%PARAMS% -iwad "%IWAD_PATH%"
 
 
@@ -1108,7 +1108,7 @@ CALL :prev_dir "%PWAD_PATH%"
 
 REM # is the PWAD path absolute?
 REM # (i.e. begins with a drive letter, making ":" the second character)
-IF "%PWAD_PATH:~2,1%" == ":" SET "PWAD_PATH="%FIX_PATH%\%PWAD_PATH%"
+IF NOT "%PWAD_PATH:~1,1%" == ":" SET "PWAD_PATH="%FIX_PATH%\%PWAD_PATH%"
 
 REM # IMPORTANT NOTE: Chocolate-DOOM will not be able handle PWADs unless
 REM # the `-merge` switch is used, this is due to historical accuracy,
