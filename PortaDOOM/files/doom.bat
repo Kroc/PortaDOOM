@@ -585,7 +585,7 @@ IF /I "%~1" == "zandronum" (
 	REM ------------------------------------------------------------------------------------------------------------
         SET "ENGINE_DIR=%PORTS%\zandronum-3"
         SET "ENGINE_EXE=zandronum.exe"
-	SET "ENGINE_CFG=zandronum"
+	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
         SET "PORT_SAVE=zandronum"
         ECHO          port : zandronum ^(current^)
@@ -594,7 +594,7 @@ IF /I "%~1" == "zandronum-2" (
 	REM ------------------------------------------------------------------------------------------------------------
         SET "ENGINE_DIR=%PORTS%\zandronum-2"
         SET "ENGINE_EXE=zandronum.exe"
-	SET "ENGINE_CFG=zandronum"
+	SET "ENGINE_CFG=zandronum-2"
 	SET "ENGINE_KIN=Z"
         SET "PORT_SAVE=zandronum"
         ECHO          port : zandronum ^(v2.x^)
@@ -603,7 +603,7 @@ IF /I "%~1" == "zandronum-3" (
 	REM ------------------------------------------------------------------------------------------------------------
         SET "ENGINE_DIR=%PORTS%\zandronum-3"
         SET "ENGINE_EXE=zandronum.exe"
-	SET "ENGINE_CFG=zandronum-dev"
+	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
         SET "PORT_SAVE=zandronum"
         ECHO          port : zandronum ^(v3.x^)

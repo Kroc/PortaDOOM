@@ -84,13 +84,13 @@ IF /I "%$%" == "H" (
 )
 IF /I "%$%" == "I" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.zandronum.cfg" DEL "%SAVES%\config.zandronum.cfg"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.zandronum-2.cfg" DEL "%SAVES%\config.zandronum-2.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT zandronum-2 DOOM
 )
 IF /I "%$%" == "J" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.zandronum-dev.cfg" DEL "%SAVES%\config.zandronum-dev.cfg"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.zandronum-3.cfg" DEL "%SAVES%\config.zandronum-3.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT zandronum-3 DOOM
 )
