@@ -1,70 +1,70 @@
-PortaDOOM\PortaDOOM.exe
+PortaDOOM.exe
 
-PortaDOOM\files\iwads\freedoom\
-PortaDOOM\files\iwads\SHAREWARE\DOOM1.WAD
+files\iwads\freedoom\
+files\iwads\SHAREWARE\DOOM1.WAD
 
-PortaDOOM\files\play.bat
-PortaDOOM\files\doom.bat
+files\play.bat
+files\doom.bat
 
-PortaDOOM\files\config\default.choco-doom*.cfg
-PortaDOOM\files\config\default.glboom-plus.cfg
-PortaDOOM\files\config\default.gzdoom.ini
-PortaDOOM\files\config\default.prboom-plus.cfg
-PortaDOOM\files\config\default.zandronum-3.ini
-PortaDOOM\files\config\default.zdoom.ini
+files\config\default.choco-doom*.cfg
+files\config\default.glboom-plus.cfg
+files\config\default.gzdoom.ini
+files\config\default.prboom-plus.cfg
+files\config\default.zandronum-3.ini
+files\config\default.zdoom.ini
 
-PortaDOOM\files\ports\chocolate-doom\
-PortaDOOM\files\ports\gzdoom-31_*\
-PortaDOOM\files\ports\prboom+\
-PortaDOOM\files\ports\zandronum-3\
-PortaDOOM\files\ports\zdoom\
+files\ports\chocolate-doom\
+files\ports\gzdoom-31_*\
+files\ports\prboom+\
+files\ports\zandronum-3\
+files\ports\zdoom\
 
-PortaDOOM\pages\Home #??.dosmag
-PortaDOOM\pages\2015 Cacowards #??.dosmag
-PortaDOOM\pages\Sunlust #??.dosmag
-PortaDOOM\files\pwads\megawads\Sunlust\
-PortaDOOM\pages\Erkatane.dosmag
-PortaDOOM\files\pwads\classical\erkatane\
-PortaDOOM\pages\Skulldash.dosmag
-PortaDOOM\files\pwads\conversions\SKULDASH\
-PortaDOOM\pages\Swift Death.dosmag
-PortaDOOM\files\pwads\megawads\swideath\
-PortaDOOM\pages\Breach.dosmag
-PortaDOOM\files\pwads\singles\breach\
-PortaDOOM\pages\Valiant.dosmag
-PortaDOOM\files\pwads\megawads\valiant\
-PortaDOOM\pages\50 Shades of Greytall.dosmag
-PortaDOOM\files\pwads\community\50shades\
-PortaDOOM\pages\Sheer Poison.dosmag
-PortaDOOM\files\pwads\singles\shpo1\
-PortaDOOM\pages\dead.wire.dosmag
-PortaDOOM\files\pwads\singles\xa-dwire\
-PortaDOOM\pages\Return to Hadron.dosmag
-PortaDOOM\files\pwads\episodes\hadron\
-PortaDOOM\pages\Doomed Space Wars.dosmag
-PortaDOOM\files\pwads\episodes\spacwars\
-PortaDOOM\pages\Crumpets.dosmag
-PortaDOOM\files\pwads\episodes\crumpets\
-PortaDOOM\pages\Prime Directive.dosmag
-PortaDOOM\files\pwads\episodes\ge5-pd\
-PortaDOOM\pages\Pinnacle of Darkness.dosmag
-PortaDOOM\files\pwads\singles\pinnacle\
-PortaDOOM\pages\Ol' No Name.dosmag
-PortaDOOM\files\pwads\misc\Olnoname\
-PortaDOOM\pages\32in24-14.dosmag
-PortaDOOM\files\pwads\community\32in24-14\
-PortaDOOM\pages\Don't Be A Bitch Remastered.dosmag
-PortaDOOM\files\pwads\multiplayer\dbabrm\
-PortaDOOM\pages\ChaosCore CTF.dosmag
-PortaDOOM\files\pwads\multiplayer\ChaosCoreCTFmpII-b\
-PortaDOOM\pages\DoomRL Arsenal.dosmag
-PortaDOOM\files\pwads\mods\doomrl_arsenal\
-PortaDOOM\pages\InstaDoom #??.dosmag
-PortaDOOM\files\pwads\jokes\instadm\
-PortaDOOM\files\pwads\jokes\instadm\filters\
+pages\Home #??.dosmag
+pages\2015 Cacowards #??.dosmag
+pages\Sunlust #??.dosmag
+files\pwads\megawads\Sunlust\
+pages\Erkatane.dosmag
+files\pwads\classical\erkatane\
+pages\Skulldash.dosmag
+files\pwads\conversions\SKULDASH\
+pages\Swift Death.dosmag
+files\pwads\megawads\swideath\
+pages\Breach.dosmag
+files\pwads\singles\breach\
+pages\Valiant.dosmag
+files\pwads\megawads\valiant\
+pages\50 Shades of Greytall.dosmag
+files\pwads\community\50shades\
+pages\Sheer Poison.dosmag
+files\pwads\singles\shpo1\
+pages\dead.wire.dosmag
+files\pwads\singles\xa-dwire\
+pages\Return to Hadron.dosmag
+files\pwads\episodes\hadron\
+pages\Doomed Space Wars.dosmag
+files\pwads\episodes\spacwars\
+pages\Crumpets.dosmag
+files\pwads\episodes\crumpets\
+pages\Prime Directive.dosmag
+files\pwads\episodes\ge5-pd\
+pages\Pinnacle of Darkness.dosmag
+files\pwads\singles\pinnacle\
+pages\Ol' No Name.dosmag
+files\pwads\misc\Olnoname\
+pages\32in24-14.dosmag
+files\pwads\community\32in24-14\
+pages\Don't Be A Bitch Remastered.dosmag
+files\pwads\multiplayer\dbabrm\
+pages\ChaosCore CTF.dosmag
+files\pwads\multiplayer\ChaosCoreCTFmpII-b\
+pages\DoomRL Arsenal.dosmag
+files\pwads\mods\doomrl_arsenal\
+pages\InstaDoom #??.dosmag
+files\pwads\jokes\instadm\
+files\pwads\jokes\instadm\filters\
 
-PortaDOOM\pages\Doom 2 the Way id Did.dosmag
-PortaDOOM\files\pwads\megawads\D2TWID\
-PortaDOOM\pages\Doom the Way id Did.dosmag
-PortaDOOM\files\pwads\megawads\DTWID\
-PortaDOOM\pages\No Rest for the Living.dosmag
+pages\Doom 2 the Way id Did.dosmag
+files\pwads\megawads\D2TWID\
+pages\Doom the Way id Did.dosmag
+files\pwads\megawads\DTWID\
+pages\No Rest for the Living.dosmag

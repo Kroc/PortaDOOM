@@ -1,5 +1,5 @@
 $KEY:P=SHELL:pwads\mods\doomrl_arsenal\play.bat
-$KEY:T=SHELL:pwads\mods\doomrl_arsenal\Credits.bat
+$KEY:T=SHELL:pwads\mods\doomrl_arsenal\Credits.txt
 $KEY:W=SHELL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DoomRL Arsenal                                      * 2015 Cacoward winner! *
@@ -11,7 +11,7 @@ $KEY:W=SHELL:https://forum.zdoom.org/viewtopic.php?t=37044
 :Requires : *zdoom*      Includes : *+Sounds +Graphics +Patches
 :------------------------------------------------------------------------------
 
-!WARNING: This mod is currently NOT working on PortaDOOM and will be fixed in a later release! We apologise for the inconvenience.
+!WARNING: This mod requires binding some extra keys. Go to "Customize Controls" in the menu and set the DoomRL-A specific keys.
 
 This mod was inspired by the fantastic Doom Roguelike made by _Kornel Kisielewicz_. While playing DoomRL, I felt that some of the mechanics used in it could be brought over and incorporated into Doom, and started brainstorming for months on exactly how to go about it using what I know of Zdoom DECORATE coding. The end result is great for blasting through a megawad with a friend, supporting each other with each classes unique abilities and having something to work towards past just finding the BFG9000. Almost all the glorious weaponry from DoomRL makes an appearance here. I hope you enjoy this mod as much as I have enjoyed making it.
 

@@ -8,8 +8,8 @@ IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET WINBIT=64	& REM # Regular x64
 IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64	& REM # 32-bit CMD on a 64-bit system (WOW64)
 
 REM # select 7Zip executable
-IF %WINBIT% EQU 64 SET BIN_7ZA="bin\7za\7za_x64.exe"
-IF %WINBIT% EQU 32 SET BIN_7ZA="bin\7za\7za.exe"
+IF %WINBIT% EQU 64 SET "BIN_7ZA=bin\7za\7za_x64.exe"
+IF %WINBIT% EQU 32 SET "BIN_7ZA=bin\7za\7za.exe"
 REM # select WinRAR executable (if present)
 REM # it's assumed you installed 64-bit WinRAR on a 64-bit system
 SET BIN_RAR="%PROGRAMFILES%\WinRAR\rar.exe"
@@ -107,6 +107,7 @@ REM # a         : add to archive
 REM # -bso0	: disable message output
 REM # -bsp1	: display only progress
 REM # -r        : recurse sub-directories
+REM # -stl	: sets the archive's timestamp to that of the latest file
 REM # -sfx...   : Create self-extracting archive  # -sfx7z.sfx 
 REM # -xr...	: exclude files (recursively)
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
@@ -128,17 +129,31 @@ IF %CMPLVL% EQU 0 SET "RAR_LVL=%RAR_MIN%"
 IF %CMPLVL% EQU 1 SET "RAR_LVL=%RAR_MAX%"
 
 ECHO * Make PortaDOOM_Cacowards2015 ...
+REM --------------------------------------------------------------------------------------------------------------------
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+REN "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 2015.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
 
 REM # 7ZIP
-%BIN_7ZA% a -bso0 -bsp1 %ZIP_LVL% -xr@bin\ignore_7z.lst -i@bin\include_cacowards2015.lst -- releases\PortaDOOM_Cacowards2015.7z
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore_7z.lst -i@..\bin\include_cacowards2015.lst -- ..\releases\PortaDOOM_Cacowards2015.7z
 REM # WINRAR
 REM IF NOT %BIN_RAR% == "" %BIN_RAR% a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -rr3 -ts- %RAR_LVL% -x@bin\ignore_rar.lst releases\PortaDOOM_Cacowards2015.rar -- @bin\include_cacowards2015.lst
 
-PAUSE & EXIT /B
-ECHO * Make PortaDOOM ...
+REM # restore the original home page
+ERASE "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
 
+POPD
+PAUSE & EXIT /B
+
+ECHO * Make PortaDOOM ...
+REM --------------------------------------------------------------------------------------------------------------------
 REM # 7ZIP
-%BIN_7ZA% a -bso0 -bsp1 -r %ZIP_LVL% -xr@bin\ignore_7z.lst -- releases\PortaDOOM.7z PortaDOOM
+"%BIN_7ZA%" a -bso0 -bsp1 -r %ZIP_LVL% -stl -xr@bin\ignore_7z.lst -- releases\PortaDOOM.7z PortaDOOM
 REM # WINRAR
 REM IF NOT %BIN_RAR% == "" %BIN_RAR% a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -r -rr3 -ts- %RAR_LVL% -x@bin\ignore_rar.lst releases\PortaDOOM.rar -- PortaDOOM
 

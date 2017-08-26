@@ -28,9 +28,10 @@ VOICES.WAD
 
 NERVE.WAD
 NRFTL+.WAD
-PortaDOOM/files/pwads/MASTER/*.wad
+files/pwads/MASTER/*.wad
 
-PortaDOOM/files/saves/*
+# don't include any save-files
+files/saves/*
 
 # exclude any screenshots
 *screenshot*

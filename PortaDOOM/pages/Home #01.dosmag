@@ -1,3 +1,4 @@
+$KEY:X=GOTO:PortaDOOM Cacowards 2015
 
 ^C:PortaDOOM Alpha 3
 :-----------------------------------------------------------------------------
@@ -30,7 +31,7 @@ $KEY:P=GOTO:Community Projects
 :[P] Community Projects ...
     Somebody comes up with an idea, and everybody contributes a map! Insanity, and awesomeness, ensues.
 
-$KEY:E=GOTO:Mini'sodes
+$REM=$KEY:E=GOTO:Mini'sodes
 $REM=:[E] Mini'sodes ...
 $REM=    Speed mapping and creating smaller episodes with more experimentation and less focus on an overreaching story has become popular in the DOOM community. If you don't care for plot or continuity then this may be your thing.
 $REM=
