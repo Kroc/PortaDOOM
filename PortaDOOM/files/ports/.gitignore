@@ -3,6 +3,7 @@ gzdoom-dev/
 
 # exclude any screenshots
 **screenshot*
+**doom*.bmp
 
 # exclude any errant save files
 **.zds
