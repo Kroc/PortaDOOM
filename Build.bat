@@ -12,7 +12,7 @@ IF %WINBIT% EQU 64 SET "BIN_7ZA=bin\7za\7za_x64.exe"
 IF %WINBIT% EQU 32 SET "BIN_7ZA=bin\7za\7za.exe"
 REM # select WinRAR executable (if present)
 REM # it's assumed you installed 64-bit WinRAR on a 64-bit system
-SET BIN_RAR="%PROGRAMFILES%\WinRAR\rar.exe"
+SET "BIN_RAR=%PROGRAMFILES%\WinRAR\rar.exe"
 IF NOT EXIST %BIN_RAR% SET "BIN_RAR=" 
 REM # location of UPX executable
 SET BIN_UPX="bin\upx\upx.exe"
@@ -28,7 +28,7 @@ SET "ZIP_MIN=-ms=off -mhc=off -mx=0 -myx=0"
 REM # -s	: create solid archive
 REM # -m5	: best compression
 REM # -md1g	: use 1 GB dictionary (approx 6-10 GB used during compression!)
-SET "RAR_MAX=-s -m5 -md1g"
+SET "RAR_MAX=-s -m5 -md512m"
 SET "RAR_MIN=-m0"
 
 :menu
@@ -85,10 +85,10 @@ CALL :select_compression
 ECHO * Clean Up
 REM --------------------------------------------------------------------------------------------------------------------
 DEL PortaDOOM\PortaDOOM.upx		  >NUL 2>&1
-DEL releases\PortaDOOM.7z                 >NUL 2>&1
-DEL releases\PortaDOOM.rar                >NUL 2>&1
-DEL releases\PortaDOOM_Cacowards2015.7z   >NUL 2>&1
-DEL releases\PortaDOOM_Cacowards2015.rar  >NUL 2>&1
+DEL build\PortaDOOM.7z                 >NUL 2>&1
+DEL build\PortaDOOM.rar                >NUL 2>&1
+DEL build\PortaDOOM_Cacowards2015.7z   >NUL 2>&1
+DEL build\PortaDOOM_Cacowards2015.rar  >NUL 2>&1
 
 ECHO * Copy DOSmag executable
 REM --------------------------------------------------------------------------------------------------------------------
@@ -138,9 +138,9 @@ COPY "pages\PortaDOOM Cacowards 2015.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
 IF ERRORLEVEL 1 PAUSE & EXIT
 
 REM # 7ZIP
-"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore_7z.lst -i@..\bin\include_cacowards2015.lst -- ..\releases\PortaDOOM_Cacowards2015.7z
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore_7z.lst -i@..\bin\include_cacowards2015.lst -- ..\build\PortaDOOM_Cacowards2015.7z
 REM # WINRAR
-REM IF NOT %BIN_RAR% == "" %BIN_RAR% a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -rr3 -ts- %RAR_LVL% -x@bin\ignore_rar.lst releases\PortaDOOM_Cacowards2015.rar -- @bin\include_cacowards2015.lst
+IF NOT "%BIN_RAR%" == "" "%BIN_RAR%" a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -rr3 -ts- %RAR_LVL% -x@..\bin\ignore_rar.lst ..\build\PortaDOOM_Cacowards2015.rar -- @..\bin\include_cacowards2015.lst
 
 REM # restore the original home page
 ERASE "pages\Home #01.dosmag"
@@ -153,9 +153,9 @@ PAUSE & EXIT /B
 ECHO * Make PortaDOOM ...
 REM --------------------------------------------------------------------------------------------------------------------
 REM # 7ZIP
-"%BIN_7ZA%" a -bso0 -bsp1 -r %ZIP_LVL% -stl -xr@bin\ignore_7z.lst -- releases\PortaDOOM.7z PortaDOOM
+"%BIN_7ZA%" a -bso0 -bsp1 -r %ZIP_LVL% -stl -xr@bin\ignore_7z.lst -- build\PortaDOOM.7z PortaDOOM
 REM # WINRAR
-REM IF NOT %BIN_RAR% == "" %BIN_RAR% a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -r -rr3 -ts- %RAR_LVL% -x@bin\ignore_rar.lst releases\PortaDOOM.rar -- PortaDOOM
+REM IF NOT %BIN_RAR% == "" %BIN_RAR% a -cfg- -dh -k -ma5 -htb -mspng;jpeg;jpg -qo- -r -rr3 -ts- %RAR_LVL% -x@bin\ignore_rar.lst build\PortaDOOM.rar -- PortaDOOM
 
 ECHO:
 ECHO Complete.
