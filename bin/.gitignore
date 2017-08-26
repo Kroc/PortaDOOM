@@ -5,7 +5,8 @@
 !7za
 !7za/**
 
-!ignore.lst
+# list files for 7Zip/WinRAR in the build process
+!*.lst
 
 # UPX for compressing executable files
 !upx

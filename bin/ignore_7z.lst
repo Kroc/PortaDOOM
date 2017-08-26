@@ -8,9 +8,9 @@ _*
 *.upx
 *.bak
 
-**.n64
-**.v64
-**.z64
+*.n64
+*.v64
+*.z64
 
 CHEX.WAD
 DOOM.WAD
@@ -34,6 +34,7 @@ PortaDOOM/files/saves/*
 
 # exclude any screenshots
 *screenshot*
+*doom*.bmp
 
 # exclude any errant save files
 *.zds

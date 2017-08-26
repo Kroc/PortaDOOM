@@ -16,6 +16,7 @@ PortaDOOM Alpha 3
   * PSX DOOM updated to work with GZDoom 2.3+
     Added Lost Levels and other improvements
 - Script Updates:
+  * Fixed GOG / Steam WAD usage
   * Fixed PWAD usage with Chocolate-Doom
   * Changed central play.bat to use named parameters for better reliability,
     added support for GZDoom version numbers, and added Harmony IWAD support

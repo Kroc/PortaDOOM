@@ -1,0 +1,70 @@
+PortaDOOM\PortaDOOM.exe
+
+PortaDOOM\files\iwads\freedoom\
+PortaDOOM\files\iwads\SHAREWARE\DOOM1.WAD
+
+PortaDOOM\files\play.bat
+PortaDOOM\files\doom.bat
+
+PortaDOOM\files\config\default.choco-doom*.cfg
+PortaDOOM\files\config\default.glboom-plus.cfg
+PortaDOOM\files\config\default.gzdoom.ini
+PortaDOOM\files\config\default.prboom-plus.cfg
+PortaDOOM\files\config\default.zandronum-3.ini
+PortaDOOM\files\config\default.zdoom.ini
+
+PortaDOOM\files\ports\chocolate-doom\
+PortaDOOM\files\ports\gzdoom-31_*\
+PortaDOOM\files\ports\prboom+\
+PortaDOOM\files\ports\zandronum-3\
+PortaDOOM\files\ports\zdoom\
+
+PortaDOOM\pages\Home #??.dosmag
+PortaDOOM\pages\2015 Cacowards #??.dosmag
+PortaDOOM\pages\Sunlust #??.dosmag
+PortaDOOM\files\pwads\megawads\Sunlust\
+PortaDOOM\pages\Erkatane.dosmag
+PortaDOOM\files\pwads\classical\erkatane\
+PortaDOOM\pages\Skulldash.dosmag
+PortaDOOM\files\pwads\conversions\SKULDASH\
+PortaDOOM\pages\Swift Death.dosmag
+PortaDOOM\files\pwads\megawads\swideath\
+PortaDOOM\pages\Breach.dosmag
+PortaDOOM\files\pwads\singles\breach\
+PortaDOOM\pages\Valiant.dosmag
+PortaDOOM\files\pwads\megawads\valiant\
+PortaDOOM\pages\50 Shades of Greytall.dosmag
+PortaDOOM\files\pwads\community\50shades\
+PortaDOOM\pages\Sheer Poison.dosmag
+PortaDOOM\files\pwads\singles\shpo1\
+PortaDOOM\pages\dead.wire.dosmag
+PortaDOOM\files\pwads\singles\xa-dwire\
+PortaDOOM\pages\Return to Hadron.dosmag
+PortaDOOM\files\pwads\episodes\hadron\
+PortaDOOM\pages\Doomed Space Wars.dosmag
+PortaDOOM\files\pwads\episodes\spacwars\
+PortaDOOM\pages\Crumpets.dosmag
+PortaDOOM\files\pwads\episodes\crumpets\
+PortaDOOM\pages\Prime Directive.dosmag
+PortaDOOM\files\pwads\episodes\ge5-pd\
+PortaDOOM\pages\Pinnacle of Darkness.dosmag
+PortaDOOM\files\pwads\singles\pinnacle\
+PortaDOOM\pages\Ol' No Name.dosmag
+PortaDOOM\files\pwads\misc\Olnoname\
+PortaDOOM\pages\32in24-14.dosmag
+PortaDOOM\files\pwads\community\32in24-14\
+PortaDOOM\pages\Don't Be A Bitch Remastered.dosmag
+PortaDOOM\files\pwads\multiplayer\dbabrm\
+PortaDOOM\pages\ChaosCore CTF.dosmag
+PortaDOOM\files\pwads\multiplayer\ChaosCoreCTFmpII-b\
+PortaDOOM\pages\DoomRL Arsenal.dosmag
+PortaDOOM\files\pwads\mods\doomrl_arsenal\
+PortaDOOM\pages\InstaDoom #??.dosmag
+PortaDOOM\files\pwads\jokes\instadm\
+PortaDOOM\files\pwads\jokes\instadm\filters\
+
+PortaDOOM\pages\Doom 2 the Way id Did.dosmag
+PortaDOOM\files\pwads\megawads\D2TWID\
+PortaDOOM\pages\Doom the Way id Did.dosmag
+PortaDOOM\files\pwads\megawads\DTWID\
+PortaDOOM\pages\No Rest for the Living.dosmag

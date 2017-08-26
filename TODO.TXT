@@ -1,12 +1,12 @@
 PortaDOOM Alpha 3
 ========================================================================================================================
-[ ] Fix build (git-archive won't work, should just use robocopy)
+[X] Fix build (git-archive won't work, should just use robocopy)
 [ ] dosmag : BUG: whitespace-only lines being skipped?
 [X] dosmag : Better warning box handling, allow multiple-lines / improve syntax
 [ ] dosmag : Themes
 [X] dosmag : Bullet point (remove current use of ` - |...`)
 [ ] dosmag : Right-alignment, whole line. Consider right alignment from middle of line
-[ ] dosmag : BUG: word-wrapping is one char short
+[X] dosmag : BUG: word-wrapping is one char short
 [X] dosmag : Add `PAGE` action to change to a page number in the current set
 [X] dosmag : bug with closing brackets; see Cacoward 2016 Espi page
 [X] dosmag : bug with breadcrumb showing page number!?
