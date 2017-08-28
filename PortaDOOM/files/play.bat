@@ -6,6 +6,7 @@ REM # [/IWAD iwad]      specifies IWAD to load, can be any of the following:
 REM #                   (defaults to DOOM2)
 REM #
 REM #                   DOOM, DOOM2, TNT, PLUTONIA
+REM #			HERETIC, HEXEN
 REM #			FREEDOOM1, FREEDOOM2
 REM #			SQUARE1
 REM #			HARM1
@@ -52,15 +53,18 @@ SET "PWAD="
 SET "PARAMS="
 SET "FILES="
 SET "ENGINE="
+SET "CMPLVL="
 
 
 :params
 REM ====================================================================================================================
-REM # IWAD parameter?
+REM # WAD parameter?
 IF /I "%~1" == "/IWAD" GOTO :iwad
 IF /I "%~1" == "/PWAD" GOTO :pwad
+REM # engine requirements?
 IF /I "%~1" == "/REQ"  GOTO :reqs
-
+REM # compatibility-level?
+IF /I "%~1" == "/CMPLVL" GOTO :complevel
 REM # warp to a level (will ask for difficulty)
 IF /I "%~1" == "/LEVEL" GOTO :level
 
@@ -177,6 +181,11 @@ IF "%IWAD%" == "" (
 	SET "IWAD=DOOM2.WAD"
 )
 
+IF "%ENGINE%" == "%VER_BOOM%" (
+	REM # if a compatibility-level is specificed, include this for PRBoom engines
+	IF NOT "%CMPLVL%" == "" SET "PARAMS=%PARAMS% -complevel %CMPLVL%"
+)
+
 REM # customisations for gzdoom:
 IF NOT "%ENGINE%" == "%VER_GZDOOM%" GOTO :skill
 
@@ -289,6 +298,9 @@ REM # Final DOOM: TNT Evilution
 IF /I "%~1" == "TNT" SET "IWAD=TNT.WAD"
 REM # Final DOOM: The Plutonia Experiment
 IF /I "%~1" == "PLUTONIA" SET "IWAD=PLUTONIA.WAD"
+REM # Heretic, Hexen
+IF /I "%~1" == "HERETIC" SET "IWAD=HERETIC.WAD"
+IF /I "%~1" == "HEXEN" SET "IWAD=HEXEN.WAD"
 REM # FreeDOOM: Phase 1 / 2
 IF /I "%~1" == "FREEDOOM1" SET "IWAD=freedoom\freedoom1.wad"
 IF /I "%~1" == "FREEDOOM2" SET "IWAD=freedoom\freedoom2.wad"
@@ -488,3 +500,12 @@ IF /I "%~1" == "zdoom" (
 	SET "REQ=%~1"
 )
 GOTO:EOF
+
+:complevel
+REM ====================================================================================================================
+SHIFT
+
+SET "CMPLVL=%~1"
+
+SHIFT
+GOTO :params
