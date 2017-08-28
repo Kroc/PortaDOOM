@@ -4,12 +4,12 @@ Update to               :
 Advanced engine needed  : Zdoom
 Primary purpose         : Singleplay
 ===========================================================================
-Title                   : Strange Aeons 5.4
+Title                   : Strange Aeons 5.5
 Filename                : SA Download.zip
 Release date            : 2016
 Author                  : Mike MacDee (Impie @ Doomworld)
 Email Address           : mikemacdee@yahoo.com
-Other Files By Author   : Visit my site at mikestoybox.net
+Other Files By Author   : Visit my site at http://deadendsolutions.wordpress.com/
 Misc. Author Info       : Mostly a writer and artist, sometimes game designer, total Doom addict
 
 Description             : See .pdf file included in the archive.

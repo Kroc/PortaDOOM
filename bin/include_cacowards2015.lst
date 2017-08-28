@@ -21,6 +21,7 @@ files\ports\zdoom\
 
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
+
 pages\Sunlust #??.dosmag
 files\pwads\megawads\Sunlust\
 pages\Erkatane.dosmag
@@ -46,9 +47,9 @@ files\pwads\episodes\spacwars\
 pages\Crumpets.dosmag
 files\pwads\episodes\crumpets\
 pages\Prime Directive.dosmag
-files\pwads\episodes\ge5-pd\
+files\pwads\episodes\ge5-pd\**
 pages\Pinnacle of Darkness.dosmag
-files\pwads\singles\pinnacle\
+files\pwads\singles\pinnacle\**
 pages\Ol' No Name.dosmag
 files\pwads\misc\Olnoname\
 pages\32in24-14.dosmag

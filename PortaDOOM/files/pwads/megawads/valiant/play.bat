@@ -1,2 +1,2 @@
 @ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD valiant.wad
+PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /CMPLVL 11 /PWAD valiant.wad

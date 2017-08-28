@@ -39,6 +39,12 @@ PortaDOOM.exe
 **.7z
 
 # document types excluded
+**.ogg
+**.md3
+**.md2
+**.wav
+**.mid
+**.mp3
 **.png
 **.jpeg
 **.jpg
