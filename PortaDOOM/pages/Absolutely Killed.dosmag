@@ -1,0 +1,52 @@
+$KEY:P=SHELL:pwads\episodes\killed\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom/Ports/j-l/killed
+
+:Absolutely Killed                                   * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>06>30*   Author : _Ryath_/_scwiba_
+:Levels   : *9*             Modes : *Single, Co-op?
+:Requires : *no-limit*   Includes : *+Patches +Demos
+:------------------------------------------------------------------------------
+
+A full episode of short, concept-oriented maps for Ultimate Doom. 
+Beware: Not your traditional Doom WAD.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : Primarily over six weeks (January and February 2016) with playtesting and polishing throughout March
+*Editor(s) used*          : Doom Builder 1.68, SLADE3, Doom Writer
+*Known Bugs*              : None
+*Tested With*             : PrBoom+ (complevel 2), Eternity, ZDoom
+
+:Map List
+:------------------------------------------------------------------------------
+- *M1: Barons of Fun**
+  **fun is a subjective term
+- *M2: Boxed In
+  Or by its alternate title, "Just Out of Reach."
+- *M3: Call Apogee Say Aardwolf
+  Do you like secrets? Have I got a map for you!
+- *M4: Hold the Hots
+  There are more ways to get burned than imp fireballs.
+- *M5: Battery Park
+  Never stop moving; never stop shooting.
+- *M6: Don't Go Into the Light
+  Go into the light, I dare you.
+- *M7: The Pain Maze
+  "That level was complete shit." -_John Suitepee_
+- *M8: Kill or Be Killed
+  Good things come to those who kill barons.
+- *M9: 'O' of Oscillation
+  Where moving floors are king.
+
+:Credits
+:------------------------------------------------------------------------------
+- id Software, _CodeImp_, _SlayeR_, and _Visual Vincent_ -- creators of Doom Builder, SLADE, and Doom Writer
+- TITLEPIC font, "You Murderer", by _Nate Piekos_
+
+*Playtesters:
+
+_DragonRider_, _Cyanosis_, _NoisyVelvet_, _Albertoni_, _Suitepee_, _AnonimVio_, _vadrig4r_, _Pirx_, _ShadesMaster_, _Magnusblitz_, _kuchitsu_, _cortlong50_
