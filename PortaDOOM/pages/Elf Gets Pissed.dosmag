@@ -1,0 +1,32 @@
+$KEY:P=SHELL:pwads\episodes\elfgp\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
+
+:Elf Gets Pissed                                     * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>02>18*   Author : _RottKing_
+:Levels   : *9*             Modes : *Single, Co-op
+:Requires : *zdoom*      Includes : *+Sounds +Music +Graphics
+:------------------------------------------------------------------------------
+
+An episode 1 replacement for Heretic.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New levels and one recycled speedmap
+*Build Time*              : TOO. LONG. (about 3 years??)
+*Editors used*            : Doombuilder 2, SlumpED, Slade 3
+*Known Bugs*              : HAK HAK DRAKKHEN
+
+:Credits
+:------------------------------------------------------------------------------
+- id software, raven, _essel_ for his Heretic texture edits, _Spadger_ for his Heretic sprite brightmaps.
+
+- Also credits for the new weapon go to:
+  _Neoworm_, _Ghastly_dragon_, _Xaser_, _Zero Prophet_, _Eriance_, and _NeuralStunner_. Shoutouts to Might & Magic 6 for the Annabis.
+  
+*Music:
+
+- Song: *Ys Ark of Napishtim Opening*, Midi Creator: _Justus Johnston_
+- Song: *Hurry Somebody Up* - Guilty Gear Isuka, Midi Creator: _Solis_
