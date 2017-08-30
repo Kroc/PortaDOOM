@@ -1,0 +1,215 @@
+$KEY:P=SHELL:pwads\community\jpcp\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
+
+:Japanese Community Project                          * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>07>24*   Author : Various (see Credits)
+:Levels   : *32*            Modes : *Single, Co-op
+:Requires : *no-limit*   Includes : *+Music +Graphics +Patches +Demos
+:------------------------------------------------------------------------------
+
+Japanese Community Project is a 32 level megawad made by Japanese Doomers.
+
+Doom is a minor game in Japan, so Doom community in Japan is very small. The community having been weakening year by year, we started this project for strengthening our solidarity, improving mapping skill, and so on. We aimed a low-threshold project which anyone could participate. Some doomers were inexperience mappers or beginners, so _Tatsurd-Cacocaco_, a project leader, supported map's detail and port compatibility. We finally managed to complete 32  maps which are the same quality as modern maps. 
+
+We hope that you have a good time.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : 2 years
+*Editor(s) used*          : Various
+*May Not Run With...*     : Vanilla Doom
+
+:Credits
+:------------------------------------------------------------------------------
+*Project Leader*          : _Tatsurd-Cacocaco_
+
+*Level Design*            : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
+
+*New Graphics*            : TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
+                          Status bar: _Toooooasty_
+                          Map Title: _Tatsurd-Cacocaco_
+                          
+*New Music*               : _Masayan_
+
+*Episode Messages*        : _burabojunior_, _Toooooasty_, _Taro_, _TerminusEst13_
+
+*DeHackEd Edit*           : _Tatsurd-Cacocaco_
+
+*Demos*                   : _Tatsurd-Cacocaco_
+
+*Texture Resources*       : id Software, TeamTNT, and cc4-tex
+                          
+:Map List
+:------------------------------------------------------------------------------
+- Map01: First Assault                 by _Tatsurd-Cacocaco_
+- Map02: Rural Mini-Base               by _Tatsurd-Cacocaco_
+- Map03: The Sign of Armageddon        by _Masayan_ & _SkullDemon_
+- Map04: Thaumasia                     by _burabojunior_
+- Map05: Woodexial                     by _Toooooasty_
+- Map06: Riminshi Valley               by _burabojunior_
+- Map07: Confused Arena                by _Tatsurd-Cacocaco_
+- Map08: 54-pit                        by _Toooooasty_
+- Map09: The Three World               by _Tyousen121_
+- Map10: The Odd Encampment            by _Yullie_
+- Map11: My fav                        by _Nanka Kurashiki_
+- Map12: Magnetic force apparatus      by _burabojunior_
+- Map13: Bad Morning                   by _Namsan_
+- Map14: G_T_Factory                   by _toMass_
+- Map15: Nandeyanen                    by _Nanka Kurashiki_
+- Map16: Forlorn Defense Line          by _Tatsurd-Cacocaco_
+- Map17: UAC energy plant              by _burabojunior_
+- Map18: Space Port Panik              by _doom68k_
+- Map19: Remind                        by _Nanka Kurashiki_
+- Map20: Escape from UAC space base    by _burabojunior_
+- Map21: Search and Destroy            by _burabojunior_
+- Map22: A den of vice                 by _burabojunior_
+- Map23: Thermal disposal place        by _Guna_
+- Map24: Probably Maybe Certainly      by _Tyousen121_
+- Map25: Cakravartin's miscalculation  by _Nanka Kurashiki_
+- Map26: Embodiment of Maliciousness   by _Yullie_
+- Map27: A resplendent emerald green   by _burabojunior_
+- Map28: HeLLport                      by _Masa_
+- Map29: hazmat hazama                 by _Toooooasty_
+- Map30: Every beginning has an end    by _burabojunior_
+- Map31: Manufacturing Plant           by _Masayan_
+- Map32: Blood Fund Gang               by _Toooooasty_
+
+Map re-edit by _Tatsurd-Cacocaco_:
+- Map03, Map09, Map10, Map13, Map14, Map18, Map24, Map26, Map31
+
+:Author Comments
+:------------------------------------------------------------------------------
+
+*_Tatsurd-Cacocaco_:
+
+Yes, it's first successful megawad project from Japanese doom community. Actually, there were some projects before, but they were had been abandoned. It was a serious problem that there are very few skilled mappers in Japan, but I always wanted to succeed in a project. Fortunately, many Japanese doomers know me for my videos of playing doom. I thought that I was a suitable person to gather Japanese Doomers, though it might be just hubris. I started a project with low-threshold rule for inexperience mappers or beginners. Japanese Community Project (JPCP) is it. I poured my effort to the project thinking Japanese megawad would not have appeared again if I would do not the success of this project. 
+
+JPCP had some good opportunities after the first version was released. This is because JPCP was selected at ZDeamon Thursday Night Survial and Doomworld Magawad Club, so I could have valuable opportunities to get a lot of feedback. Quality of the final version was substantially improved. 
+
+By the way, map 03 is a re-edited map from an abandoned project which is called "Armageddon". _Masayan_ proposed me that I can freely use maps in Armageddom when _masayan_ joined in JPCP. This map is especially my favorite, so I have wanted to just release it from before. I inserted it to the last slot in the project instead of my 5th map. 
+
+Finally, my thanks goes to Japanese contributors, testers in Doomworld community, and all doom players. Enjoy!
+
+*_burabojunior_:
+
+This is my first time in a PWAD. To be honest, I never thought people would enjoy my maps. I joined in through pure coincidence. Two years ago, I visited Tatsurd-cacocaco's website and an item named "JPCP". Since PRCP meant Plutonia Revisited Community Project, I thought the JPCP meant it would be a Japanese community Project. I got really excited, since I could show my maps there. 
+
+Slightly off-topic, it's been about nine years since I started using Doom editors.......Like DeepSea and Doombuilder. I gained confidence that my maps hold good in the world by taking part in JPCP. Someday,I'd like to make a PWAD called "Water Spirit". Until then, See you. Bye.
+
+*_Toooooasty_:
+
+more JP-Map? (or Sprite & Weapon)
+Prepare for Hope & Dream
+
+*_Masayan_:
+
+A megawad from Japanese community? I couldn't help taking part in this project. My map was inspired by Blood. I would like to adopt map 2 or later in blood, but I did emphasize Doom-style, though I don't think I can do it well. I also provided some music which are rush works to this project. 
+
+Some long maps in the project seemed to be proceeded with difficulty, but they were worth spending much time. They are pretty exciting. Especially, _burabojunior_ is a vital mapper in the project. I send praise to him. Besides, _Toooooasty_'s map08 and _Kurashiki_'s map 15 are also very impressive. 
+
+I thank _Tatsurd-Cacocaco_ for inviting me and many others.
+
+*_Namsan_:
+
+Blowing up demons with rockets are always FANTASTIC, so I made this map. And yes, I love beds. I love huge beds. If you still wondering about purpose of that secret area, you may need to play 2002 A DOOM ODYSSEY's E2M5. ;)
+
+*_Yullie_:
+
+This is my first time mapping. Thank you for playing my poor maps. I have been playing DOOM for about 20 years, but I had never had an interest in mapping until I found JPCP recruitment. Had it not been for this opportunity, I never would have make a map, I think. I appreciate _Mr. Tatsurd_ and JPCP members. Now I found amusement of mapping, so someday I would like to present my new map in any way.
+
+I hope DOOM will never be forgotten!
+
+*_Guna_:
+
+I was allowed to participate for the first time doom project. Since it made a map for the project this is the first time, 
+it was hard enough to make a single map. However, map-making of doom was found also be fun if you get used to it. 
+
+I was surprised at the high quality of the map of the other person, but to hear your impressions from various people, also became the study of in making the map. If there is a next work of this project, we want to participate again. I am allowed to participate, thank you!
+
+*_Masa_:
+
+This is the first time to join the community mapping project. 
+I used to make doom maps by myself but now I could be a member of the community! yay!
+
+Thanks for everyone, who gives me any comments or test-play on my maps. Hopefully I can release my new project soon when 
+I have more time.
+
+*_toMass_:
+
+"Do you want something to drink ?"
+
+*_Tyousen121_:
+
+Hello. I'm beginner map designer.
+but, I will try my best map build.
+
+- map09: This map is Tribute by MAP08: Trick and Traps.
+- map24: I was the motif to "Tabun Osoraku Kitto" is indies game creator.
+
+Thank you.
+
+*_Nanka _:Kurashiki
+
+Greetings! This is my first mapping project that I join in. and it's released \(^O^)/
+below... there are comments about my maps.
+
+- map11: I like colours, foods, cacos...and doomguy!
+
+- map15: "Nandeyanen", I could say "What the hell". 
+         you already might feel wth though :P
+
+- map19: You worked at UAC? Right? You forget something.
+
+- map25: I wanted to make a map that themed buddhism. 
+         Here you can feel your worldly passions.
+
+I didn't have much experience to make maps, but I made my effort.
+I hope people play this wad. Have fun!
+
+*doom68k
+(none received)
+
+*SkullDemon
+(none received])
+
+:Music List
+:------------------------------------------------------------------------------ 
+- Map01: Memento Mori 2 MAP10
+- Map02: "Oww!!!" from Rise of the Triad
+- Map03: A music composed by _Masayan_
+- Map04: rokeleko.wad D_BETWEE
+- Map05: rockit25.wad D_MESSG2
+- Map06: Alien Vendetta Map08
+- Map07: Memento Mori MAP13
+- Map08: rockit25 E3M3.mus
+- Map09: "On the hunt" from Doom
+- Map10: "Into the Beast's Belly" from TNT
+- Map11: techwars.wad MAP07
+- Map12: rokeleko.wad 
+- Map13: Perfect Dark(N64) Carrington Villa
+- Map14: "AimShootKill" by _Tom Mustaine_
+- Map15: "Crysilis" from Jazz Jackrabbit
+- Map16: Heretic E1M8
+- Map17: harmmidi.wad D_STEAM
+- Map18: "DOOM" from Doom2
+- Map19: "Pollutants" by _James Paddock_
+- Map20: Speed of Doom Map33
+- Map21: "Night Run" from Plutonia2
+- Map22: prjfdoom.wad
+- Map23: "Chant" from Rise of the Triad
+- Map24: "BdBt4Bt" by _Wiz?R_
+- Map25: Breaking Benjamin - So Cold
+- Map26: Final Fantasy 8
+- Map27: rokeleko.wad
+- Map28: "Day of Mourning" by _Stuart Rynn_
+- Map29: Hexasketch (zzsketch)
+- Map30: Speed of Doom Map30
+- Map31: A remix of "At Doom's Gate"
+- Map32: The Binding of Isaac - piano Sacrificial.mid
+- DM2TTL: A music composed by _Masayan_
+- DM2INT: A music composed by _Masayan_
+- READ_M: A music composed by _Masayan_
