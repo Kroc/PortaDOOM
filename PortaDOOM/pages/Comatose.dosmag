@@ -1,0 +1,28 @@
+$KEY:P=SHELL:pwads\singles\comatose\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/comatose
+
+:Comatose                                            * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2015>12>19*   Author : _Lainos_
+:Levels   : *1*             Modes : *Single
+:Requires : *boom*       Includes : *+Sounds +Music +Graphics +Patches
+:------------------------------------------------------------------------------
+
+This map originally has been made for "Pain" project, but in the result I decided to cut it from there because of some reasons (which I cannot say yet). It is a continuation of the idea of "Overdose", but it's not related in terms of the story.
+
+A limit of sidedefs in LR format is achieved here, so it is not possible to draw at least one new line at all. Because of this, as well as the abundance of large open spaces with lots of sectors, map may slow down in complex sourceports like ZDoom and it's derivatives, so PrBoom-Plus is HIGHLY recommended. The biggest performance (in terms of FPS) will be in GLBoom-Plus. Also, complevel 2 is necessary. Have a great game.
+
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Editor(s) used*          : Doom Builder (1&2), XWE, MS Paint, Photoshop, MS Office Picture Manager
+*May Not Run With*        : Zdaemon
+*Tested With*             : prBoom+ 2.5.1.3
+
+:Credits
+:------------------------------------------------------------------------------
+- _lafoxxx_, _Vlad Guardian_, _[LeD]Jake Crusher_ and others
+- All authors, whose resources I used
+- Music from: Portal (game), Parasite Eve (game)
