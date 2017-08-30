@@ -660,7 +660,7 @@ REM # read the IWAD first; the interpretation of the PWAD will depend upon the I
 
 REM # if no IWAD given, assume the default;
 REM # you cannot have a PWAD without an IWAD
-IF "%~1" == "" GOTO :iwad
+IF "%~1" == ""   GOTO :iwad
 IF "%~1" == "--" GOTO :iwad
 REM # if parameter begins with "-", "+" or "/" then it's an engine param, not an IWAD,
 REM # but we still need to validate the default IWAD
@@ -879,19 +879,23 @@ IF "%IWAD_EXT%" == "" (
 
 REM # this is where the IWAD is assumed to be
 SET "IWAD_PATH=%IWADS%\%IWAD%"
-REM # the IWAD exists as-is and requires no special provisions,
+REM # if the IWAD exists as-is and requires no special provisions,
 REM # skip ahead; no edge-cases to handle
 IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 
 REM # IWAD is missing,
 REM # now search GOG / Steam for the IWAD:
 
+IF /I "%IWAD%" == "DOOM.WAD"     GOTO :iwad_doomu
+IF /I "%IWAD%" == "DOOM2.WAD"    GOTO :iwad_doom2
+IF /I "%IWAD%" == "TNT.WAD"      GOTO :iwad_tnt
+IF /I "%IWAD%" == "PLUTONIA.WAD" GOTO :iwad_plutonia
+
+REM # not a known iD / commerical IWAD
+GOTO :iwad_missing
+
 :iwad_doomu
 REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "The Ultimate DOOM"?
-REM # (if not, skip ahead to DOOM II)
-IF /I NOT "%IWAD%" == "DOOM.WAD" GOTO :iwad_doom2
-
 REM # is Steam : The Ultimate DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -908,21 +912,20 @@ REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
+	REM # TODO: this WAD is broken and censored and we should patch it automatically
 	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_check
 )
 REM # is GOG : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
+	REM # TODO: this WAD is broken and censored and we should patch it automatically
 	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_check
 )
+GOTO :iwad_check
 
 :iwad_doom2
 REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "DOOM II"?
-REM # (if not, skip ahead to TNT)
-IF /I NOT "%IWAD%" == "DOOM2.WAD" GOTO :iwad_tnt
-
 REM # is Steam : DOOM II installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -939,21 +942,20 @@ REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
+	REM # TODO: this WAD is broken and censored and we should patch it automatically
 	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_check
 )
 REM # is GOG : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
+	REM # TODO: this WAD is broken and censored and we should patch it automatically
 	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_check
 )
+GOTO :iwad_check
 
 :iwad_tnt
 REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "Final DOOM: Evilution"?
-REM # (if not, skip ahead to Plutonia)
-IF /I NOT "%IWAD%" == "TNT.WAD" GOTO :iwad_plutonia
-	
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -966,12 +968,10 @@ IF NOT "%REG%" == "" (
 	REM # check if TNT.WAD can be found there
 	IF EXIST "%REG%\TNT\TNT.WAD" SET "IWAD_PATH=%REG%\TNT\TNT.WAD" & GOTO :iwad_check
 )
+GOTO :iwad_check
 
 :iwad_plutonia
 REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "Final DOOM: The Plutonia Experiment"?
-IF /I NOT "%IWAD%" == "PLUTONIA.WAD" GOTO :iwad_check
-
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
 IF NOT "%REG%" == "" (
