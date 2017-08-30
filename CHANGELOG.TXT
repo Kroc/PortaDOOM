@@ -1,9 +1,9 @@
 PortaDOOM Alpha 3
 =================
 - Improvements to pages:
- * New styling, including bullet-points
- * Added website links to most WAD pages
- * Added link to original author's txt file for most WAD pages
+  * New styling, including bullet-points
+  * Added website links to most WAD pages
+  * Added link to original author's txt file for most WAD pages
 - Engine updates:
   * Chocolate-Doom/Heretic/Hexen/Strife updated to v2.3.0
   * GZDoom v2.3.2, v.2.4.0, v3.0.1, v3.1.0
@@ -17,9 +17,10 @@ PortaDOOM Alpha 3
     Added Lost Levels and other improvements
 - Script Updates:
   * Fixed GOG / Steam WAD usage
-  * Fixed PWAD usage with Chocolate-Doom
+  * Added support for GOG version of DOOM 3 BFG Edition
+  * Fixed PWAD usage with Chocolate-Doom (requires `-merge`)
   * Changed central play.bat to use named parameters for better reliability,
-    added support for GZDoom version numbers, and added Harmony IWAD support
+    added GZDoom version numbers, and added Harmony & HEXEN IWAD support
 
 PortaDOOM Alpha 2 (17-DEC-16)
 =============================

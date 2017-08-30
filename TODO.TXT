@@ -5,8 +5,7 @@ PortaDOOM Alpha 3
         https://zdoom.org/wiki/IWAD
         https://doomwiki.org/wiki/IWAD
         
-[ ] Heretic / Hexen from Steam / GOG
-        e.g. Elf Gets Pissed
+[ ] Heretic / Hexen from Steam / GOG e.g. Elf Gets Pissed
  - [ ] Set engine defaults for Heretic / Hexen
 
 [X] Fix build (git-archive won't work, should just use robocopy)

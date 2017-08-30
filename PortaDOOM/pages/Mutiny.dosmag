@@ -1,0 +1,88 @@
+$KEY:P=SHELL:pwads\community\mutiny\play.bat
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
+
+:Mutiny                                              * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>09>13*   Author : Various (see Credits)
+:Levels   : *16*            Modes : *Single, Co-op, Deathmatch
+:Requires : *no-limit*   Includes : *+Music +Graphics +Patches
+:------------------------------------------------------------------------------
+
+Mutiny is a 16-level, Limit Removing Community Project Episode for Doom 2 intended to be the spiritual successor of late 90's cyberpunk themed wads such as STRAIN, Hacx, Nimrod, Dystopia 3, and Perdition's Gate. It features new colorful, high contrast, (intentionally retro) textures inspired by the works of _Iika Keranen_ and _Anthony Czerwonka_, complete with plenty radioactive signs, warning stripes, computers, slime, and rust.
+
+*Story:
+
+It's 2028 AD. You're an elite cyborg marine. The UAC has risen as the most powerful megacorporation in the galaxy, and has commissioned you along with its squad of crooked super soldiers to maintain order on Earth. You were sent on a mission to New Orleans to defend the city from the recurring invasion of the cybernetic mutants. When your helicopter is shot down over the bay by friendly fire from renegade UAC marines, you and your squad mates crash land in the harbor and are presumably dead. At least until the shockwave from a nearby EMP missile explosion shocks you back to life. You swim to a nearby submarine deployment station and begin your rogue mission to crush the UAC, destroying anything and anyone that crosses your path.
+
+:Credits
+:------------------------------------------------------------------------------
+Mutiny is a Doomworld Community Project lead by _Jon "40oz" Vail_. Below is a list of all the community members that contributed to Mutiny's success. Without their help and invaluable input this project would not have been completed.
+
+Special Thanks to id software, _John Romero_ for releasing unused Doom 2 resources in December of 2015, The _Alpha Dog Alliance_, for STRAIN, _Iika Keranen_ and _Anthony Czerwonka_ for Dystopia 3, The _Nimrod Team_ for Nimrod, Wraith Corporation for Perdition's Gate, Banjo Software for Hacx, and the many Doom marines whose continued interest in Mutiny helped push it to completion.
+
+Additional Special thanks goes to _dt___, _AD_79_, _MrGlide_, and _traversd_, for investing so much time and dedication into the project and who were particularly helpful in contributing to the projects success. Congratulations on your newborn son, _MrGlide_! I hope your son Nicholas gets better, _traversd_!
+
+:Maps
+
+- MAP01: Surface.................. _Fonze_, _Jimmy_, and _40oz_
+- MAP02: Shipyard................. _Pinchy_ and _Tarnsman_
+- MAP03: Crossbug................. _MrGlide_ and _Ribbiks_
+- MAP04: Warzone.................. _joe-ilya_, _AD_79_, and _40oz_
+- MAP05: Slums.................... _dt___
+- MAP06: Faceless Corporation..... _Angry Saint_, _Corsair_, and _dt___
+- MAP07: Bunker Base.............. _40oz_
+- MAP08: Compactor................ _Pavera_ and _jmickle66666666_
+- MAP09: Construction Site........ _Impboy4_, _Doomkid_, and _dt___
+- MAP10: Generator................ _scifista42_, _NoneeLlama_, and _dt___
+- MAP11: The Furnaces............. _AD_79_ and _40oz_
+- MAP12: Wildcard................. _purist_ and _traversd_
+- MAP13: Laboratory............... _Egregor_ and _40oz_
+- MAP14: The Firewall............. _AD_79_ and _Breezeep_
+- MAP15: Breaching The Unknown.... _KevinHEZ_ and _dt___
+- MAP31: The Brain................ _40oz_
+
+*Special Thanks to:
+
+_Archi_, _an_mutt_, _Phml_, _Demonologist_, _Mithran Denizen_, _Springy_, _nxGangrel_, _SuperCupcakeTactics_, _Xaser_, _Obsidian_, _JCD_, _FranckFrag_, _TraceofSpades_, _Marcaek_, _Lycaon_, _MD922_, _obake_, _chaingunnerx_, and _Vorpal_ for investing considerable time in working on the project, and/or expressed interest in contributing to the level building process even though their maps did not make the final cut. Your time and interest is noticed.
+
+:Testers
+
+_40oz_, _AD_79_, _Dime_, _SlashBane_, _Getsu Fune_, _TheMionicDonut_, _molten___, _TraceOfSpades_, _Fonze_, _Magnusblitz_, _gaspe_, _BaronOfStuff_, _DoomMasta_, _scifista42_, _rdwpa_, _Phobus_, _MrGlide_, _EffinghamHuffnagel_, _hawkwind_, _Veinen_, _ClumsyDoomer_, _Demonologist_, _Firedust_, _Eris Falling_, _Keyboard_Doomer_, _TeamTNS_ and various members of the ZDaemon community.
+
+:Graphics
+
+- *Title Picture:* _MrGlide_, _40oz_
+- *Textures:* id software, _40oz_, Gothic, _Jmickle666666666_, and _nxGangrel_
+- *Other Graphics:* id software, _Jmickle666666666_, _40oz_, and _Doomkid_
+
+All graphics and textures used in Mutiny are made from scratch or use Doom or Doom 2 assets as a base. The green crosses on the health items are compliant with the Geneva Convention's request to developers to not misuse the protected red cross symbol. And it looks cool.
+
+:Music
+
+- *Musical Director:* _Alfonzo_
+
+  "Mutiny definitely comes across as a call-back to the vibrant, colour-rich mapsets of the late '90s like STRAIN, and so within the limits of 30in30 I tried to pick out tracks that would pair with this imagining. _Jimmy_'s speedier compos tend toward strong refrains and structures - sometimes cheesy, sometimes ill-suited for Doom - so there was plenty of opportunity to fashion something unique using angry, guitar-driven tracks and some pop-like elements, without going overboard. I think it worked out okay!"
+
+*Music List:
+
+- title - _Conker_64_ "Contra 3: Alien Wars Intro Music"
+- map01 - _jdagenet_
+- map02 - _Jimmy_ "Drop The Wombat"
+- map03 - _Jimmy_ "Torsal Torsion"
+- map04 - _Jimmy_ "Tar"
+- map05 - _Jimmy_ "Cyanide Downpour"
+- map06 - _Jimmy_ "CHaRybdIS"
+- map07 - _Jimmy_ "Destruct"
+- map08 - _jmickle66666666_ "Take these pills and be who you are"
+- map09 - _Doomkid_
+- map10 - _Jimmy_ "Stairway Fairway"
+- map11 - _Jimmy_ "Potioneer"
+- map12 - _Jimmy_ "Gatorade Nightmare"
+- map13 - _Jimmy_ "Delay(0); Restart;"
+- map14 - _Jimmy_ "Iodine"
+- map15 - _KevinHEZ_
+- map31 - _Viscra Maelstrom_ "Welcome to the New World
+- inter - _Leo Sieben_ "Sadistic"
+- mread - _Tom Mustaine_ "Horizon"
