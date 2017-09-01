@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\singles\xa-dwire\play.bat
-$KEY:T=SHELL:pwads\singles\xa-dwire\xa-dwire.txt
+$KEY:P=SHELL:pwads\onesies\xa-dwire\play.bat
+$KEY:T=SHELL:pwads\onesies\xa-dwire\xa-dwire.txt
 $KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/74767-xasermap-dead-wire/
 
 :dead.wire                                           * 2015 Cacoward winner! *

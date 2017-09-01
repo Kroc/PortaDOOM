@@ -23,8 +23,8 @@ $KEY:W=GOTO:MegaWADs
 :[W] MegaWADs ...
     DOOM, but with all new levels. If you're looking for more regular DOOM gameplay, each megawad provides a complete new single-player episode of 15 or more maps.
 
-$KEY:S=GOTO:Singles Only
-:[S] Singles Only ...
+$KEY:O=GOTO:Onesies
+:[O] Onesies ...
     When authors put everything they've got into a single map you're sure to get something good. 
 
 $KEY:P=GOTO:Community Projects

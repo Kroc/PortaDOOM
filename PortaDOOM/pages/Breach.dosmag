@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\singles\breach\play.bat
-$KEY:T=SHELL:pwads\singles\breach\breach.txt
+$KEY:P=SHELL:pwads\onesies\breach\play.bat
+$KEY:T=SHELL:pwads\onesies\breach\breach.txt
 $KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/71430-breach-updated-to-beta3/
 
 :Breach                                              * 2015 Cacoward winner! *
