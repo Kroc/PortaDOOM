@@ -1,0 +1,23 @@
+$KEY:P=SHELL:pwads\onesies\ma_wrp\play.bat
+$KEY:T=SHELL:pwads\onesies\ma_wrp\ma_wrp.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/ma_wrp
+
+:Warp House                                          * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>11>06*   Author : _Ed C._
+:Levels   : *1*             Modes : *Single
+:Requires : *gzdoom*     Includes : *+Music +Graphics
+:------------------------------------------------------------------------------
+
+:Construction
+
+*Base*                    : New from scratch
+*Build Time*              : Years
+*Editor(s) used*          : Doombuilder
+
+:Credits
+
+*Beta testing*            : _Tormentor 667_, _Fonze_, _mental_, _zrrion the insect_
+*Special thanks*          : _Tormentor 667_, _Fonze_, _Essel_, _Jimmy_
