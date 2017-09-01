@@ -1,0 +1,72 @@
+$KEY:P=SHELL:pwads\community\thtthren\play.bat
+$KEY:T=SHELL:pwads\community\thtthren\thtthren.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthren
+
+:THT: Threnody                                       * 2016 Cacoward winner! *
+:==============================================================================
+*[P] Play                         [T] .txt [W] Website
+:------------------------------------------------------------------------------
+:Released : *2016>07>31*   Author : Various (see credits below)
+:Levels   : *20*            Modes : *Single, Co-op, Deathmatch
+:Requires : *boom*       Includes : *+Sounds +Music +Graphics +Demos
+:------------------------------------------------------------------------------
+
+_Ty Halderman_, the essential pillar of the Doom community, passed away in 2015. He is greatly missed and his contributions to the Doom scene have helped keep this old game alive and kicking. This project tries to honor Ty with levels that pay tribute to his work be it in the form of his levels or contribution to the Boom sourceport.
+
+$KEY:1=SHELL:https://www.doomworld.com/vb/doomworld-news/74184-idgames-maintainer-ty-halderman-passes-away-at-69/
+For more information on Ty go to *[1] this website*, which has links to everything you need to know about him as well as the community's condolences.
+			  
+There are 20 levels in this megawad along with plenty of new music and awesome new, original skies! The project also uses a big part of _Team TNT_'s The Return and Final Doom: Evilution resources. We enjoyed putting this project together and the level of commitment from all those involved should be visible in the final result. In short: We hope you enjoy playing it as much as we enjoyed making it!
+
+    R.I.P. _Ty_
+    "And the stars look very different today"
+
+*Story:
+
+One of the more important and highly secret UAC installations has been severely compromised by a demonic invasion from Hell. There are reports of near complete annihilation of all personnel, however the worst part is, that it is now painfully clear that the UAC executives screwed up as they stationed one the military's top generals there to oversee the completion of a multitude of secret projects. The UAC knew that these installations would be a high priority target for the next attack from Hell and sending the decorated general there - well knowing that an attack was imminent - was a bad move. The general is a skilled soldier and is most likely still alive and held as prisoner; Hell knows better than to kill him. His last transmission was sent from inside a spacecraft. It is unknown whether or not he made it off the ground. You, being one of the best and most lethal weapons of the UAC, have been tasked to go to the planet in search of answers and to bring the general home should he still be alive. If not, then your mission is clear: Kill everything and avenge the general.
+    
+:Construction
+:------------------------------------------------------------------------------
+*Base*                    : New levels from scratch
+*Build Time*              : 1 year
+*Editor(s) used*          : Doom Builder 2, Slade 3, Paint.net, Gimp, Wcleaner,
+			  Doom Font Writer, WhackEd4
+*Known Bugs*              : None
+*May Not Run With...*     : Vanilla Doom
+*How To Run The File*	: Anyway you prefer, like:
+			  "prboom.exe -iwad doom2.wad -file thtthren.wad"
+
+*Important Note*		: The maps use sky transfers so for the best and
+			  intended experience use PrBoom+ ver. 2.5.1.4
+			  with -complevel 9
+                          
+:Credits
+:------------------------------------------------------------------------------
+*Project leader:
+- _Chris Hansen_
+
+*Level design:
+- _Angry Saint_, _antares031_, _Chris Hansen_, _Didy_, _dobu gabu maru_, _Doomkid_, _Fonze_, _Gothic_, _joe-ilya_, _Philip "Liberation" Brown_, _Mechadon_, _Mithran Denizen_, _Paul Corfiatis_ and _Z0k_		
+
+*Music by:
+- _Alfonzo_, _CCR Inc._ _Doomhuntress_, _Digimon Online_, _Eris Falling_, _Gridlock_, _Jimmy_, _JDoyle_, _Joe Satriani_, _KevinHEZ_, _King Diamond_, _Metroid_, _Paul D_, _Paul Corfiatis_ and _Vital_
+
+*Intro music by:
+- _Paul Corfiatis_
+
+*Textures:
+- _Team TNT_
+- Minor edits by _Fonze_ and _didy_
+
+*Art, HUD and skies:
+- _Mechadon_
+
+*Testers:
+- _antares031_, _Ashstrodamus_, _Chris Hansen_, _Cynical_, _dobu gabu maru_, _Doomkid_, _EffinghamHuffnagel_, _Fonze_, _Gez_, _Keyboard_Doomer_, _Mithran Denizen_, _Obsidian_, _rdwpa_, _rhinoduck_, _Tritnew_, _schwerpunk_, _SteveD_, _Surreily_, _Touchdown_, _WH-Wilou84_ and _Z0k_
+
+*Compiling and stuff:
+- _Mithran Denizen_, _Chris Hansen_
+
+*Additional credits to:
+- _geo_ for starting the project!
+- _dew_, _Gez_, _Linguica_ and all the rest of the wonderful people on the Doomworld forums!
