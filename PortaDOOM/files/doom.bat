@@ -6,9 +6,10 @@ REM # features:
 REM # - automatic portable config files so that you get the same configuration (per-engine) everywhere
 REM # - searches GOG & Steam installs if WAD is missing
 REM # - FreeDOOM substituted if commercial DOOM.WAD / DOOM2.WAD missing
-REM # - will search the engine's folder for WADs if not found elsewhere
-REM # - WAD file extensions can be omitted (".wad" / ".pk3" / ".pk7")
-REM # - DeHackEd extension loading (".deh", ".bex" files)
+REM # - will search the engine's folder for WADs if not found elsewhere (e.g. "lights.pk3")
+REM # - IWAD file extensions can be omitted (".WAD" / ".PK3");
+REM #   PWAD and other WAD extensions are required due to the number of locations checked
+REM # - DeHackEd extension loading (".DEH", ".BEX" files)
 REM # - files are checked to exist before being passed on to the engine
 REM # - arbitrary parameters can be passed on to the engine
 REM # - launches the engine in the native resolution of the current machine (portable)
@@ -180,9 +181,9 @@ IF "%~1" == "" (
 	ECHO:
 	ECHO     %_HEADING_%Steam ^& GOG:%_%
 	ECHO:
-	ECHO     If "DOOM.WAD", "DOOM2.WAD", "TNT.WAD" or "PLUTONIA.WAD" are specified but
-	ECHO     cannot be found in the "%IWADS%" folder, doom.bat will try to locate them
-	ECHO     automatically for you in any relevant Steam or GOG installations:
+	ECHO     If the given IWAD cannot be found in the "%IWADS%" folder, doom.bat will
+	ECHO     try to locate them automatically for you in any relevant Steam or GOG
+	ECHO     installations:
 	ECHO:
 	ECHO             Steam : The Ultimate DOOM     - DOOM.WAD
 	ECHO             Steam : DOOM II               - DOOM2.WAD
@@ -190,7 +191,9 @@ IF "%~1" == "" (
 	ECHO             Steam : DOOM Classic Complete - ^(all of the above^)
 	ECHO       GOG / Steam : DOOM 3 BFG Edition    - DOOM.WAD ^& DOOM2.WAD
 	ECHO               GOG : The Ultimate DOOM     - DOOM.WAD
-	ECHO               GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD 
+	ECHO               GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD
+	ECHO             Steam : Heretic               - HERETIC.WAD
+	ECHO             Steam : Hexen                 - HEXEN.WAD
         ECHO:
 	ECHO     %_HEADING_%Shareware:%_%
 	ECHO:
@@ -209,9 +212,7 @@ IF "%~1" == "" (
         ECHO            %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%wolfendoom.pk3%_%
         ECHO:
         ECHO     If you just want to play an original game ^(e.g. DOOM, Hexen^) then the PWAD
-        ECHO     is not required. The ".PK3" / ".PK7" / ".WAD" extension can be omitted but
-        ECHO     if two files exist with the same name but different extensions then the
-        ECHO     first file will be chosen using the order of extensions just mentioned.
+        ECHO     is not required.
 	ECHO:
 	ECHO     %_HEADING_%Steam ^& GOG:%_%
 	ECHO:    
@@ -680,53 +681,6 @@ REM # -- if playing DOOM without a PWAD, we can offer the DOOM shareware instead
 
 REM # move to the next parameter
 SHIFT
-GOTO :pwad
-
-
-:reg
-REM --------------------------------------------------------------------------------------------------------------------
-REM # a function to read a registry key and account for 32 / 64-bit differences
-REM # %1 = registry key | %2 = value name | returns %REG%, containing the value
-
-REM # SUPER IMPORTANT NOTE:
-REM # 1. if you are on a 64-bit machine, things get real screwy with the registry --
-REM #    a 64-bit process launching this batch script will access the registry as 64-bit,
-REM #    meaning that 32-bit keys will not be where you expect them to be!
-REM # 2. a 32-bit process launching this batch script will access ONLY the 32-bit registry;
-REM #    a secret route (a "sysnative" junction) will allow us to launch the 64-bit version of REG
-REM #    from a 32-bit process, granting a 64-bit view of the registry
-
-REM # check the native registry, for a native key:
-REM # -- i.e. 32-bit system, accessing 32-bit software keys or
-REM #         64-bit system, accessing 64-bit software keys
-FOR /F "tokens=2*" %%A IN (
-	'REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
-) DO (
-	SET "REG=%%B"
-	GOTO:EOF
-)
-REM # check 32-bits keys on a 64-bit system & process:
-REM # (note: this batch script could be running as a 32-bit or 64-bit process, so we need to forcefully invoke
-REM          a 32-bit REG process. on 64-bit Windows, "SYSTEM32" is actually the 64-bit software and is rewritten to
-REM          to "WINDOWS\SYSWOW64" where the 32-bit "SYSTEM32" is -- what a confusing mess)
-FOR /F "tokens=2*" %%A IN (
-	'%WINDIR%\SYSWOW64\REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
-) DO (
-	SET "REG=%%B"
-	GOTO:EOF
-)
-REM # check 64-bits keys on a 32-bit system or a 32-bit process on a 64-bit system:
-REM # thanks goes to https://ovidiupl.wordpress.com/2008/07/11/useful-wow64-file-system-trick/
-REM # for the solution to this mess!
-FOR /F "tokens=2*" %%A IN (
-	'%WINDIR%\SYSNATIVE\REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
-) DO (
-	SET "REG=%%B"
-	GOTO:EOF
-)
-REM # key not found
-SET "REG="
-GOTO:EOF
 
 
 :pwad
@@ -742,38 +696,64 @@ IF "%NEXT:~0,1%" == "-" GOTO :iwad
 IF "%NEXT:~0,1%" == "+" GOTO :iwad
 IF "%NEXT:~0,1%" == "/" GOTO :iwad
 
-REM --------------------------------------------------------------------------------------------------------------------
-
 REM # read the PWAD parameter
 SET "PWAD=%~1"
 SET "SAVE_WAD=%~n1"
 SHIFT
 
-REM # has the PWAD file extension been omitted?
-IF NOT "%~x1" == "" GOTO :pwad_check
+REM # if the PWAD exists, go validate the IWAD, as the action taken when the IWAD is missing is affected
+REM # by the presence of a PWAD. if the PWAD is missing, the next section searches for known Steam / GOG PWADs
 
-REM # check if a WAD version exists
-IF EXIST "%PWADS%\%~1.wad" SET "PWAD=%~1.wad"
-REM # check if a PK7 version exists
-IF EXIST "%PWADS%\%~1.pk7" SET "PWAD=%~1.pk7"
-REM # check if a PK3 version exists
-REM # (PK7s are slower and more resource-intensive,
-REM #  so if a user converts these to PK3, we want to prefer those)
-IF EXIST "%PWADS%\%~1.pk3" SET "PWAD=%~1.pk3"
-
-REM # if none of those are found, default to a ".WAD" extension for the Steam / GOG search
-If "%PWAD%" == "%~1" SET "PWAD=%~1.wad"
-
-:pwad_check
-REM --------------------------------------------------------------------------------------------------------------------
-REM # if the PWAD exists go validate the IWAD, as the action taken when the IWAD is missing is affected by the presence
-REM # of a PWAD. if the PWAD is missing, the next section searches for known Steam / GOG PWADs
-
+REM # check the default pwad path
 SET "PWAD_PATH=%PWADS%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
 
+REM # check the "current directory" that called this script
 SET "PWAD_PATH=%OLD_DIR%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
+
+REM # TODO: check HEXDD.WAD
+
+REM # are we looking for "No Rest for the Living?"
+REM # (part of DOOM 3 BFG Edition)
+IF "%PWAD%" == "NERVE.WAD" GOTO :pwad_nerve
+IF "%PWAD%" == "NRFTL+.WAD" GOTO :pwad_nerve
+REM # are we looking for "Master Levels for DOOM II"?
+IF /I "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_master
+
+GOTO :pwad_missing
+
+
+:pwad_master
+REM --------------------------------------------------------------------------------------------------------------------
+REM # extract the WAD name from that
+SET "WAD=%PWAD:~8%"
+
+REM # is Steam : Master Levels for DOOM II installed?
+CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
+IF NOT "%REG%" == "" (
+	REM # check if the WAD can be found there
+	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%" & GOTO :iwad
+)
+REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
+IF NOT "%REG%" == "" (
+	REM # check if the WAD can be found there
+	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%" & GOTO :iwad
+)
+
+REM # if the WAD was not found, we cannot continue
+ECHO:
+ECHO   ERROR: "%WAD%" missing:
+ECHO:
+ECHO   You must purchase either "DOOM Classic Complete" from Steam or
+ECHO   "DOOM II + Final DOOM" from GOG to get "Master Levels for DOOM II";
+ECHO   doom.bat automatically finds it, if installed. If you have the Master Levels
+ECHO   WADs elsewhere, copy them to the "%IWADS%\MASTER" folder and try again.
+ECHO:
+POPD
+PAUSE
+EXIT /B 1
 
 :pwad_nerve
 REM --------------------------------------------------------------------------------------------------------------------
@@ -793,58 +773,16 @@ IF NOT "%REG%" == "" (
 	IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :iwad
 )
 REM # if the WAD was not found, we cannot continue, the user does not have NERVE.WAD
-IF "%PWAD_PATH%" == "" (
-	ECHO:
-	ECHO   ERROR: "NERVE.WAD" missing:
-	ECHO:
-	ECHO   You must purchase "DOOM 3: BFG Edition" from Steam to get NERVE.WAD.
-	ECHO   doom.bat automatically finds it, if installed. If you have NERVE.WAD
-	ECHO   elsewhere, copy it to the "%IWADS%" folder and try again.
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-)
-REM # PWAD found, skip ahead
-GOTO :iwad
-
-:pwad_master
-REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "Master Levels for DOOM II"?
-IF /I NOT "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_missing
-
-REM # extract the WAD name from that
-SET "WAD=%PWAD:~8%"
-
-REM # is Steam : Master Levels for DOOM II installed?
-CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
-IF NOT "%REG%" == "" (
-	REM # check if the WAD can be found there
-	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%"
-)
-REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
-CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
-IF NOT "%REG%" == "" (
-	REM # check if the WAD can be found there
-	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%"
-)
-
-REM # if the WAD was not found, we cannot continue, the user does not have Master Levels
-IF "%PWAD_PATH%" == "" (
-	ECHO:
-	ECHO   ERROR: "%WAD%" missing:
-	ECHO:
-	ECHO   You must purchase either "DOOM Classic Complete" from Steam or
-	ECHO   "DOOM II + Final DOOM" from GOG to get "Master Levels for DOOM II";
-	ECHO   doom.bat automatically finds it, if installed. If you have the Master Levels
-	ECHO   WADs elsewhere, copy them to the "%IWADS%\MASTER" folder and try again.
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-)
-REM # PWAD found, skip ahead
-GOTO :iwad
+ECHO:
+ECHO   ERROR: "NERVE.WAD" missing:
+ECHO:
+ECHO   You must purchase "DOOM 3: BFG Edition" from Steam to get NERVE.WAD.
+ECHO   doom.bat automatically finds it, if installed. If you have NERVE.WAD
+ECHO   elsewhere, copy it to the "%IWADS%" folder and try again.
+ECHO:
+POPD
+PAUSE
+EXIT /B 1
 
 :pwad_missing
 REM --------------------------------------------------------------------------------------------------------------------
@@ -1009,7 +947,7 @@ IF NOT "%REG%" == "" (
 
 :iwad_check
 REM # did we find the IWAD in GOG / Steam?
-REM # TODO: if IWAD was found in GOG / Steam, offer to copy it into PortaDOOM
+REM # TODO: if IWAD was found in GOG / Steam, offer to copy it into PortaDOOM?
 IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 
 
@@ -1188,8 +1126,8 @@ IF NOT EXIST "%SAVES_WAD%" MKDIR "%SAVES_WAD%"
 REM # since the current directory will be changed to the WAD's save directory,
 REM # we can specify this parameter as just the 'current directory' (".").
 REM # NOTE: `-savedir` is for zdoom-based ports and `-save` for prboom+.
-REM #       chocolate-doom & DOOM 64 EX do not support a save directory parameter
-REM #       and will put savegames in the 'current directory'!
+REM #       chocolate-doom & DOOM 64 EX do not support a save directory
+REM #       parameter and will put savegames in the 'current directory'!
 IF "%ENGINE_KIN%" ==  "Z" (
         SET PARAMS=%PARAMS% -savedir "."
         ECHO      -savedir : %SAVES_WAD%
@@ -1297,41 +1235,50 @@ SET "BEX="
 :files_loop
         REM # no more parameters remaining?
         IF "%~1" == "" GOTO :files_continue
-
-        REM # by default this is where we'll assume the file is
-        SET "FILE=%PWADS%\%~1"
 	
-        REM # check file extension:
+	REM # check the previous directory used; we will prefer WADs in the same
+	REM # directory as the PWAD, over WADs from the base PWAD directory
+	IF NOT "%PREV_DIR%" == "" (
+		IF EXIST "%PREV_DIR%\%~1" SET "FILE=%PREV_DIR%\%~1" & GOTO :file_found
+	)
+	REM # check the default PWAD directory
+	SET "FILE=%PWADS%\%~1"
+	IF EXIST "%FILE%" GOTO :file_found
+	REM # also check the directory that called this script
+	SET "FILE=%OLD_DIR%\%~1"
+	IF EXIST "%FILE%" GOTO :file_found
+        REM # check the engine directory
+	SET "FILE=%ENGINE_DIR%\%~1"
+        IF EXIST "%FILE%" GOTO :file_found
+	
+	:file_missing
+        REM # file cannot be found!
+	ECHO:
+	ECHO  ERROR: The specified file does not exist:
+	ECHO:
+	ECHO     "%~1"
+	ECHO:
+	ECHO  The following locations were checked:
+	ECHO:
+	IF NOT "%PREV_DIR%" == "" (
+		ECHO 	 "%PREV_DIR%\%~1"
+	)
+	ECHO 	 "%PWADS%\%~1"
+	ECHO 	 "%OLD_DIR%\%~1"
+	ECHO 	 "%ENGINE_DIR%\%~1"
+	ECHO:
+	ECHO  Command:
+	ECHO:
+	ECHO     doom.bat %*
+	ECHO:
+	POPD
+	PAUSE
+	EXIT /B 1
+	
+	:file_found
+	REM # is the file a DeHackEd script?
 	IF /I "%~x1" == ".deh" GOTO :deh
 	IF /I "%~x1" == ".bex" GOTO :bex
-	IF    "%~x1" == ""     GOTO :noext
-	
-	REM ------------------------------------------------------------------------------------------------------------
-	
-	REM # check the previous directory used
-	IF NOT "%PREV_DIR%" == "" (
-		REM # this will fool the next few lines
-		IF EXIST "%PREV_DIR%\%~1" SET "FILE=%PREV_DIR%\%~1"
-	)
-        REM # if the file doesn't exist, check the engine directory
-        IF NOT EXIST "%FILE%" SET "FILE=%ENGINE_DIR%\%~1"
-	REM # also check the directory that called this script
-	IF NOT EXIST "%FILE%" SET "FILE=%OLD_DIR%\%~1"
-        REM # finally, is it really there?
-        IF NOT EXIST "%FILE%" (
-                ECHO:
-                ECHO  ERROR: the file "%~1" doesn't exist in either the "%PWADS%" folder,
-                ECHO         or the "%ENGINE_DIR%" folder.
-		ECHO:
-                ECHO  Command:
-                ECHO:
-                ECHO     doom.bat %*
-                ECHO:
-		ECHO %CD%
-		POPD
-                PAUSE
-                EXIT /B 1
-        )
 	
         SET FILES=%FILES% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
@@ -1343,17 +1290,6 @@ SET "BEX="
 	:deh
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # load a DeHackEd extension:
-	
-	REM # does it exist in the previously used directory?
-	IF NOT "%PREV_DIR%" == "" (
-		IF EXIST "%PREV_DIR%\%~1" SET "FILE=%PREV_DIR%\%~1"
-	)
-	REM # if the file doesn't exist, check the engine directory
-	IF NOT EXIST "%FILE%" SET "FILE=%ENGINE_DIR%\%~1"
-	REM # finally, is it really there?
-	IF NOT EXIST "%FILE%" GOTO :deh_error
-	
-	REM # accept the file
 	SET DEH=%DEH% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
 	SET ANY_DEH=1
@@ -1364,83 +1300,10 @@ SET "BEX="
 	:bex
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # load a Boom-enhanced DeHackEd extension:
-	
-	REM # does it exist in the previously used directory?
-	IF NOT "%PREV_DIR%" == "" (
-		IF EXIST "%PREV_DIR%\%~1" SET "FILE=%PREV_DIR%\%~1"
-	)
-	REM # if the file doesn't exist, check the engine directory
-	IF NOT EXIST "%FILE%" SET "FILE=%ENGINE_DIR%\%~1"
-	REM # finally, is it really there?
-	IF NOT EXIST "%FILE%" GOTO :deh_error
-	
-	REM # accept the file
 	SET BEX=%BEX% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
 	SET ANY_BEX=1
 	ECHO          -bex : %FILE%
-	SHIFT
-	GOTO :files_loop
-        
-	:noext
-	REM ------------------------------------------------------------------------------------------------------------
-	REM # if file extension missing, check for PK3, PK7, WAD
-        
-	REM # check if a WAD version exists
-	IF EXIST "%PWADS%\%~1.wad" SET "FILE=%PWADS%\%~1.wad"
-	REM # check if a PK7 version exists
-	IF EXIST "%PWADS%\%~1.pk7" SET "FILE=%PWADS%\%~1.pk7"
-	REM # check if a PK3 version exists
-	REM # (PK7s are slower and more resource-intensive,
-	REM #  so if a user converts these to PK3, we want to prefer those)
-	IF EXIST "%PWADS%\%~1.pk3" SET "FILE=%PWADS%\%~1.pk3"
-	
-	REM # should we check the previous folder used?
-	REM # NOTE : this implies that a WAD in the previous folder overrides one in pwads;
-	REM # 	     is this preferred over favouring root first?
-	IF NOT "%PREV_DIR%" == "" (
-		REM # check if a WAD version exists
-		IF EXIST "%PREV_DIR%\%~1.wad" SET "FILE=%PREV_DIR%\%~1.wad"
-		REM # check if a PK7 version exists
-		IF EXIST "%PREV_DIR%\%~1.pk7" SET "FILE=%PREV_DIR%\%~1.pk7"
-		REM # check if a PK3 version exists
-		REM # (PK7s are slower and more resource-intensive,
-		REM #  so if a user converts these to PK3, we want to prefer those)
-		IF EXIST "%PREV_DIR%\%~1.pk3" SET "FILE=%PREV_DIR%\%~1.pk3"
-	)
-	
-	REM # did none of those exist?
-	IF NOT "%FILE%" == "%PWADS%\%~1" GOTO :noext_found
-	
-	REM # since no extension was initially provided,
-	REM # now recheck extensions in the engine directory
-	IF EXIST "%ENGINE_DIR%\%~1.wad" SET "FILE=%ENGINE_DIR%\%~1.wad"
-	REM # check if a PK7 version exists
-	IF EXIST "%ENGINE_DIR%\%~1.pk7" SET "FILE=%ENGINE_DIR%\%~1.pk7"
-	REM # check if a PK3 version exists
-	REM # (PK7s are slower and more resource-intensive,
-	REM #  so if a user converts these to PK3, we want to prefer those)
-	IF EXIST "%ENGINE_DIR%\%~1.pk3" SET "FILE=%ENGINE_DIR%\%~1.pk3"
-
-	REM # did none of those exist either?
-	IF "%FILE%" == "%PWADS%\%~1" (
-		ECHO:
-		ECHO  ERROR: the file "%~1" doesn't exist in either the "%PWADS%" folder,
-		ECHO         or the "%ENGINE_DIR%" folder.
-		ECHO  Command:
-		ECHO:
-		ECHO     doom.bat %*
-		ECHO:
-		PAUSE
-		EXIT /B 1
-	)
-	
-	:noext_found
-	REM # we found it!
-	SET FILES=%FILES% "%FIX_PATH%\%FILE%"
-	CALL :prev_dir "%FILE%"
-	SET ANY_WAD=1
-	ECHO         -file : %FILE%
 	SHIFT
 	GOTO :files_loop
 
@@ -1452,30 +1315,6 @@ REM ----------------------------------------------------------------------------
 	SET "PREV_DIR=!PREV_DIR:~0,-1!"	& REM # strip trailing slash
 	ENDLOCAL & SET "PREV_DIR=%PREV_DIR%"
 	GOTO:EOF
-
-:deh_error
-	REM # DeHackEd (.deh / .bex) file missing:
-	ECHO:
-	ECHO  ERROR: The specified DeHackEd file does not exist:
-	ECHO:
-	ECHO     "%~1"
-	ECHO:
-	ECHO  The following locations were checked:
-	ECHO:
-	IF NOT "%PREV_DIR%" == "" (
-		ECHO 	 "%PREV_DIR%\%~1"
-	)
-	ECHO 	 "%PWADS%\%~1"
-	ECHO 	 "%ENGINE_DIR%\%~1"
-	ECHO:
-	ECHO  Command:
-	ECHO:
-	ECHO     doom.bat %*
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-	
 	
 REM --------------------------------------------------------------------------------------------------------------------
 
@@ -1552,3 +1391,50 @@ IF %CONSOLE% EQU 1 (
 
 REM # restore the current directory
 POPD
+EXIT /B
+
+
+:reg
+REM ====================================================================================================================
+REM # a function to read a registry key and account for 32 / 64-bit differences
+REM # %1 = registry key | %2 = value name | returns %REG%, containing the value
+
+REM # SUPER IMPORTANT NOTE:
+REM # 1. if you are on a 64-bit machine, things get real screwy with the registry --
+REM #    a 64-bit process launching this batch script will access the registry as 64-bit,
+REM #    meaning that 32-bit keys will not be where you expect them to be!
+REM # 2. a 32-bit process launching this batch script will access ONLY the 32-bit registry;
+REM #    a secret route (a "sysnative" junction) will allow us to launch the 64-bit version of REG
+REM #    from a 32-bit process, granting a 64-bit view of the registry
+
+REM # check the native registry, for a native key:
+REM # -- i.e. 32-bit system, accessing 32-bit software keys or
+REM #         64-bit system, accessing 64-bit software keys
+FOR /F "tokens=2*" %%A IN (
+	'REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
+) DO (
+	SET "REG=%%B"
+	GOTO:EOF
+)
+REM # check 32-bits keys on a 64-bit system & process:
+REM # (note: this batch script could be running as a 32-bit or 64-bit process, so we need to forcefully invoke
+REM          a 32-bit REG process. on 64-bit Windows, "SYSTEM32" is actually the 64-bit software and is rewritten to
+REM          to "WINDOWS\SYSWOW64" where the 32-bit "SYSTEM32" is -- what a confusing mess)
+FOR /F "tokens=2*" %%A IN (
+	'%WINDIR%\SYSWOW64\REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
+) DO (
+	SET "REG=%%B"
+	GOTO:EOF
+)
+REM # check 64-bits keys on a 32-bit system or a 32-bit process on a 64-bit system:
+REM # thanks goes to https://ovidiupl.wordpress.com/2008/07/11/useful-wow64-file-system-trick/
+REM # for the solution to this mess!
+FOR /F "tokens=2*" %%A IN (
+	'%WINDIR%\SYSNATIVE\REG QUERY "%~1" /V "%~2" 2^>^&1 ^| FIND "REG_"'
+) DO (
+	SET "REG=%%B"
+	GOTO:EOF
+)
+REM # key not found
+SET "REG="
+GOTO:EOF
