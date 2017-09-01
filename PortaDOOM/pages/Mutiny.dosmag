@@ -1,9 +1,10 @@
 $KEY:P=SHELL:pwads\community\mutiny\play.bat
+$KEY:T=SHELL:pwads\community\mutiny\mutiny.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
 
 :Mutiny                                              * 2016 Cacoward winner! *
 :==============================================================================
-*[P] Play                         [W] Website
+*[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------
 :Released : *2016>09>13*   Author : Various (see Credits)
 :Levels   : *16*            Modes : *Single, Co-op, Deathmatch

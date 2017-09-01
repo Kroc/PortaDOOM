@@ -1,9 +1,10 @@
 $KEY:P=SHELL:pwads\community\jpcp\play.bat
+$KEY:T=SHELL:pwads\community\jpcp\JPCP.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
 :Japanese Community Project                          * 2016 Cacoward winner! *
 :==============================================================================
-*[P] Play                         [W] Website
+*[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------
 :Released : *2016>07>24*   Author : Various (see Credits)
 :Levels   : *32*            Modes : *Single, Co-op

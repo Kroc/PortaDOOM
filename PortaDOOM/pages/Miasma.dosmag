@@ -1,9 +1,10 @@
 $KEY:P=SHELL:pwads\onesies\miasma\play.bat
+$KEY:T=SHELL:pwads\onesies\miasma\miasma.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 
 :Miasma                                              * 2016 Cacoward winner! *
 :==============================================================================
-*[P] Play                         [W] Website
+*[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------
 :Released : *2016>02>03*?  Author : _Thomas "tourniquet" Seifert_
 :Levels   : *1*             Modes : *Single, Co-op

@@ -1,9 +1,10 @@
 $KEY:P=SHELL:pwads\episodes\aa_e1\play.bat
+$KEY:T=SHELL:pwads\episodes\aa_e1\AA_E1.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom/Ports/a-c/aa_e1
 
 :Alpha Accident: Terra Nova                          * 2016 Cacoward winner! *
 :==============================================================================
-*[P] Play                         [W] Website
+*[P] Play                         [T] .txt [W] Website
 :------------------------------------------------------------------------------
 :Released : *2016>08>25*   Author : _Wraith777_
 :Levels   : *9*             Modes : *Single, Co-op, Deathmatch
