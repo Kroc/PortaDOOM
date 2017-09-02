@@ -1,2 +1,2 @@
 @ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\..\play.bat" SQUARE1 gzdoom
+PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD SQUARE1 /REQ gzdoom
