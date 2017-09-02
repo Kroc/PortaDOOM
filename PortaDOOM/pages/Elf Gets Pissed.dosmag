@@ -3,25 +3,30 @@ $KEY:T=SHELL:pwads\episodes\elfgp\elfgp.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 :Elf Gets Pissed                                     * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>02>18*   Author : _RottKing_
 :Levels   : *9*             Modes : *Single, Co-op
 :Requires : *zdoom*      Includes : *+Sounds +Music +Graphics
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
+
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
+! :-----------------------------------------------------------------------------
+! If you own _"Heretic: Shadow of the Serpent Riders"_ on Steam it will be detected automatically, otherwise place the file in the _"files\iwads"_ folder. Please purchase the game from Steam; you will not be able to play without purchasing Heretic.
+$KEY:S=SHELL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
 
 An episode 1 replacement for Heretic.
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New levels and one recycled speedmap
 *Build Time*              : TOO. LONG. (about 3 years??)
 *Editors used*            : Doombuilder 2, SlumpED, Slade 3
 *Known Bugs*              : HAK HAK DRAKKHEN
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - id software, raven, _essel_ for his Heretic texture edits, _Spadger_ for his Heretic sprite brightmaps.
 
 - Also credits for the new weapon go to:

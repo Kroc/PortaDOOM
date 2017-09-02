@@ -5,11 +5,11 @@ REM # play.bat [/IWAD iwad] [/REQ engines] [/PWAD pwad] [options] [-- files...]
 REM # [/IWAD iwad]      specifies IWAD to load, can be any of the following:
 REM #                   (defaults to DOOM2)
 REM #
-REM #                   DOOM, DOOM2, TNT, PLUTONIA
-REM #			HERETIC, HEXEN
-REM #			FREEDOOM1, FREEDOOM2
-REM #			SQUARE1
-REM #			HARM1
+REM #                   DOOM, DOOM1, DOOM2, TNT, PLUTONIA
+REM #                   HERETIC, HERETIC1, HEXEN
+REM #                   FREEDOOM1, FREEDOOM2
+REM #                   SQUARE1
+REM #                   HARM1
 REM #
 REM # [/REQ engines]    specify engine requirements,
 REM #                   can be any of the following:
@@ -308,6 +308,11 @@ REM # Adventures of Square (shareware)
 IF /I "%~1" == "SQUARE1" SET "IWAD=SHAREWARE\adventures_of_square\square1.pk3"
 REM # Harmony
 IF /I "%~1" == "HARM1" SET "IWAD=harmony\harm1.wad"
+
+REM # shareware, for PWADs that don't need the full IWAD
+REM # (this does not work for GZdoom)
+IF /I "%~1" == "DOOM1"    SET "IWAD=SHARWARE\DOOM1.WAD"
+IF /I "%~1" == "HERETIC1" SET "IWAD=SHAREWARE\HERETIC1.WAD"
 
 SHIFT
 GOTO :params
