@@ -3,20 +3,20 @@ $KEY:T=SHELL:pwads\mods\doomrl_arsenal\Credits.txt
 $KEY:W=SHELL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DoomRL Arsenal                                      * 2015 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2013>08>14+*  Author : _Yholl_ *et al. (see credits)
 :Levels   : *None*          Modes : *Single, Co-op
 :Requires : *zdoom*      Includes : *+Sounds +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 !WARNING: This mod requires binding some extra keys. Go to "Customize Controls" in the menu and set the DoomRL-A specific keys.
 
 This mod was inspired by the fantastic Doom Roguelike made by _Kornel Kisielewicz_. While playing DoomRL, I felt that some of the mechanics used in it could be brought over and incorporated into Doom, and started brainstorming for months on exactly how to go about it using what I know of Zdoom DECORATE coding. The end result is great for blasting through a megawad with a friend, supporting each other with each classes unique abilities and having something to work towards past just finding the BFG9000. Almost all the glorious weaponry from DoomRL makes an appearance here. I hope you enjoy this mod as much as I have enjoyed making it.
 
 :NEW WEAPON SYSTEM
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 In addition to standard Doom weapons, new weapons of various rarities appear throughout the game. Find a minigun or a missile launcher and deliver some major damage! Find a unique weapon, and you'll be grinning as you paste demons across the walls! The higher class of weapon spawn, the higher chance of exotic or unique weaponry.
 
 You'll have to make some hard choices, though, as you can only carry 6 weapons at any time. Advanced functions will tell you what keys you need to press, but the Zoom key (which has been renamed to Drop Item.) functions as a Drop key instead of a, well, zoom key. Drop DRLA specific items with it, so you can be sure to carry only what you want with you. Press Zoom twice to drop a weapon, as a precaution against accidentally dropping a valuable weapon. I'd like to thank _Wildweasel_ for his ww-magop.wad and it's weapon mechanic, which I based this system off of.
@@ -24,7 +24,7 @@ You'll have to make some hard choices, though, as you can only carry 6 weapons a
 Most weapons that appear in this mod are based off the DoomRL weapons, but are not perfect reproductions. In fact, some weapons are entirely different altogether! Weapons also now have magazines, requiring reloading, and may also be slower or less accurate than standard Doom weapons. Don't worry, because there's more to weapons than just firing them!
 
 :NEW ARMOR AND BOOTS SYSTEM!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Instead of the normal Doom armor mechanics, it's been revamped to a whole new level of awesome. You can carry multiple sets of armor or boots in your inventory at a time, in addition to any you are currently wearing, and you can drop and change any of these at any moment! Bear in mind that due to code limitations, any non-indestructible armors you stop wearing will be destroyed.
 
 To unequip a currently worn armor or set of boots, there are two commands at the bottom of the keybinds list. Bind a key to them. Simply press the appropriate key twice to remove your currently worn armor or boots.
@@ -34,27 +34,27 @@ Did I mention there's tons of new armors ingame for you to find? Boots too. Exot
 99% of the armors and boots you see here were made by the super talented _SoloSpaghetti_, who is the glorious Blacksmith of DoomRL Arsenal. He's amazing, and wherever is he is now, let's hope he's doing well for himself.
 
 :ARMOR SPECIALS!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Some armors come with an inbuilt special ability you can activate! Some will require ammo, some require a set bonus, some have cooldowns, all are pretty damn awesome, and will serve you well! You'll need to bind a key to the Armor Special command to use these.
 
 :SET BONUSES!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Some of the items in the game now form sets with other items! If you collect and wield all the pieces, you can expect an amazing bonus to be applied to you, from powering up certain weapons, to giving you strange defensive abilities! Due to the nature of the game, it'd be almost impossible to get both pieces of a set, so opening supply crates actually has a decent chance of having the other missing part of your set in it!
 
 :SKULLS!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Skulls are dangerous demonic artifacts that can be used to turn the tide of battle in your favour! Using one will detonate all nearby corpses, using them as fuel for their special ability, whatever it may be.
 
 :PHASE DEVICES!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Phase Devices can be used to teleport around the map, or out of danger! Normal Phase Devices teleport you to the start of a map, Homing Phase Devices teleport you to another player, Recall Phase Devices allow you to mark a spot and teleport to it later!
 
 :BACKPACKS!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Special rare backpacks can be found to further increase your ammo supply! These have various effects, including allowing you to specialise in an ammo type! You can only wear one backpack at a time, but you can swap to another at any point.
 
 :MODPACKS!
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Probably the most important mechanic in the mod, Modpacks allow you to modify your current weapon according to their type, with each normal or exotic weapon able to hold 4 modifications. Superior weapons can hold 2 modpacks. A unique or legendary weapon can only have a single mod applied to it, so choose wisely. Demonic weapons can hold both a single modpack, as well as up to three of demonic artifacts! The effect of a modpack differs depending on the type of weapon it is, so it won't always do exactly the same thing on every weapon. You carry modpacks as inventory items, and you can carry up to 4 at any time, while the Technician player class can carry 8. Modpacks can be found anywhere you can find a Blursphere, or randomly replacing large ammo boxes. Exotic modpacks are extremely rare, so be happy when you find one.
 
 When using a modpack, the first use selects the modpack for use. When selected, pressing Zoom will drop it, and using it again will apply it to your currently selected weapon, and switching to a different weapon will cancel.
@@ -62,7 +62,7 @@ When using a modpack, the first use selects the modpack for use. When selected, 
 Thanks to _HellCattX_ for his awesome ammopile, which I used as a base for the modpacks.
 
 *STANDARD MODPACKS
-:==============================================================================
+:===============================================================================
 *Agility Mod Pack:
  - Increases hitscan accuracy by .5 (For those unfamiliar, the Pistol has a spread of 5.6 horizontal, 0 vertical, this will reduce it to 5.1, 0)
  - Increases projectile speed on projectile-firing weapons
@@ -85,7 +85,7 @@ Thanks to _HellCattX_ for his awesome ammopile, which I used as a base for the m
  - Increases weapon switch speed on melee weapons
     
 *EXOTIC MODPACKS
-:==============================================================================
+:===============================================================================
 *Sniper Mod Pack:
  - First mod makes first hitscan shot 100% accurate and increases accuracy by 2/2
  - Second mod makes all shots 100% accurate
@@ -109,57 +109,57 @@ Thanks to _HellCattX_ for his awesome ammopile, which I used as a base for the m
 There are even secrets to the exotic modpacks that few know of...
 
 :ASSEMBLIES
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 By applying a specific combination of modpacks to a standard or exotic weapon, you can assemble an entirely new weapon! Put two Bulk mods onto a Chaingun to make the Gatling Gun! The list of assemblies is quite large, and ranges from simple two mod assemblies, all the way to Master level 4 mod assemblies, even incorporating super rare exotic mods into the construction! Try and figure out those combinations on your own, or just crack under the pressure and consult the DoomRL Wiki. Although that'll only have the original assembly recipes, hehehe...
 
 When you apply the last modpack in a correct combination, it will ask you if you want to assemble it with the Fire button, or cancel with Altfire. An assembly is not always an upgrade, so sometimes you may not want to assemble something. You can put mods on any way you like, there is no specific order to combinations, simply having the correct mods and no others will cause the game to prompt you whether you want to assemble the gun or not.
 
 :CLASSES
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Five different classes are available in the mod, three being DoomRL classes, and two being entirely new. Each of the classes starts with a powerful Master trait that affects how they play, as well as their own special passive stats.
 
 *Class*   : Marine
-:==============================================================================
+:===============================================================================
 *Trait*   : Ammochain
 *Effect*  : Rapidfire weaponry only consumes 1 ammo per 4 shots, or 1 ammo per burst, depending on the weapon
 *Passive* : Powerups last 50% longer
 *Items*   : Starts with a Chaingun
 
 *Class*   : Scout
-:==============================================================================
+:===============================================================================
 *Trait*   : Sharpshooter
 *Effect*  : Pistol weapons do between 8x to 3x damage, based on their firerate, faster weapons dealing less. Non rapid pistols have halved spread
 *Passive* : Runs 10% faster and jumps 10% higher. Always has computer map
 *Items*   : Starts with a Pistol
 
 *Class*   : Technician
-:==============================================================================
+:===============================================================================
 *Trait*   : Scavenger
 *Effect*  : Can turn exotic rarity or higher weapons into modpacks. Can also remove a mod from weapons that have been modded, but destroys the weapon
 *Passive* : Computer maps function as tracking maps. Can carry up to 8 modpacks instead of 4. Starts with all Standard assemblies shown. Has various bonuses to mechanically related things
 *Items*   : Starts with a random Basic Assembly, and a random modpack
 
 *Class*   : Renegade
-:==============================================================================
+:===============================================================================
 *Trait*   : Shellshock
 *Effect*  : Shoots an extra 50% more pellets, rounded up, with any attack that fires more than one shot in non-fixed pattern
 *Passive* : Can switch weapons instantly. Armor has 50% more protection, up to a max of 80%
 
 *Class*   : Demolitionist
-:==============================================================================
+:===============================================================================
 *Trait*   : Fireangel
 *Effect*  : Immune to splash damage
 *Passive* : Uses half ammo, rounded down on all non shell-based weapons
 
 :HUD INFORMATION
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 DRLA is filled to the brim with information to help you get the edge over your enemies! You have three sets of HUD popups, one dedicated to showing you your learnt assemblies, one to showing weapon and mod information, and the other displays armor, boot and class information. You'll need to bind keys to both of those HUD popups, and to a seperate key to change pages in them.
 
 The first two pages of the Armor/Class Hud show the stats of your currently worn armor and boots, and the stats of an activated armor or boots, respectively. Simply activate an armor or boots to show their stats on the second armor page.
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 _1337spy_
  - Edited Plasmatic Shotgun muzzleflash
  - Super Shotgun, Quad Shotgun and Revolver edited idle frames

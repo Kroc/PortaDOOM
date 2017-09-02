@@ -3,17 +3,17 @@ $KEY:T=SHELL:pwads\episodes\ge5-pd\ge5-pd.txt
 $KEY:W=SHELL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
 
 :Prime Directive                                  * 2015 Cacoward runner up! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>07>23*   Author : _Ethan Watson aka GooberMan_
 :Levels   : *9*             Modes : *Single
 :Requires : *gzdoom*     Includes : *+Sounds +Graphics
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Bet you never thought you'd see this, eh? The next installment in the Gateway Experiments series, just in time for Doom's 22-and-a-halfth-ish Anniversary. Where's episodes 2, 3, and 4? Well, I'm not making them. I've done a George Lucas, skipped a few chapters, and tweaked Space Station Omega slightly so that it could fit in this package with the new stuff.
 
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 *GENERAL:
 
@@ -65,7 +65,7 @@ Since the original release, people have complained that it doesn't work with the
 Once again, this is being released under a Creative Commons licence. This gives both you and I more freedom to do what we want with PD.
 
 :FAQ:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Q: Halp! I'm stuck behind locked doors!
 
 *A:* Contact Elaine. On your radio. You have checked the key bind, right? The Elaine logic has gotten a bit more complicated since Space Station Omega. You can now contact her in contextual situations, such as computers and doors that she can hack. You can also talk to her about major events that just happened. But importantly, if you're stuck, she may be able to hack that door that's in your way.
@@ -95,7 +95,7 @@ Once again, this is being released under a Creative Commons licence. This gives 
 *A:* Yes.
   
 :Construction:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : Mostly from scratch. Spot the skybox reuse.
 *Build Time*              : Started on December 26, 2012. Finished June 2015. There was about five months of work in total.
 *Tool(s) used*            : GZDoom Builder, SLADE 3, GIMP, Audacity, PSPad.
@@ -103,6 +103,6 @@ Once again, this is being released under a Creative Commons licence. This gives 
 *Will Not Run With...*    : Brutal Doom or any other weapons mods. Remix this project yourself if you want it to work with your favourite weapons mod. Because I won't.
                           
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 $KEY:L=SHELL:pwads\episodes\ge5-pd\licenses.txt
 An extensive list of credits is kept in [L] licenses.txt. Shout outs to _Randi_, _Graf_, _Enjay_, _Nash_, _Xaser_, _ReX_, _wildweasel_, _Gez_, _Blzut3_, _Kinsie_, _Jimmy_, _Edward850_, _grouchbag_, _scalliano_, and other ZDoom forums/IRC people I've missed.

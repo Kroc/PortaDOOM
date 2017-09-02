@@ -1,11 +1,11 @@
 $KEY:1=SHELL:pwads\jokes\instadm\play.bat
 
 :InstaDoom                                           * 2015 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 :Released : *2015>12>07*   Author : _Linguica
 :Levels   : *None*          Modes : *Single, Co-op
 :Requires : *Vanilla*    Includes : *+Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 If you just can't get enough of taking pictures of your food and making it look more magenta, InstaDoom is for you! Play Doom with any of the 40(!) official Instagram filters! Memento Mori with Mayfair! Requiem with Rise! Icarus with Inkwell! Alien Vendetta with Aden or Valencia!
 
@@ -17,19 +17,19 @@ ALSO ALSO INCLUDES: InstaDoom DLC Pack 1! Is Instagram too "mainstream" for your
 
 17 new filters (er, I mean, "presets") that emulate each of the currently-free filt- uh, presets in the VSCO Cam app! Most of them look like garbage, but they are painfully hip! Sneer at the basic bitches on Instagram with such purposely-obtusely-named presets as A4, B5, M3, and the ever-popular P5!!
 
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 :[1] Play InstaDoom (zdoom)
     See pages 2 & 3 to play using the "filters"
 
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New from scratch
 *Known Bugs*              : Filters probably won't work properly with hardware-accelerated ports.
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 _Mike12_ for lots of help with the Doomguy HUD graphics. _Scuba Steve_ for the third-person Doomguy poses. The _Chainsmokers_ and midimusic.de for the tunes. The Freedoom project for the Python scripts to generate the custom palettes and colormaps.
 
 $KEY:W=GOTO:https://www.doomworld.com/idgames/combos/instadm

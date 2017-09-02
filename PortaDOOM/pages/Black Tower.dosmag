@@ -3,16 +3,16 @@ $KEY:T=SHELL:pwads\MASTER\BLACKTWR.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 
 :Black Tower                                       (Master Levels for DOOM II)
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Sverre André Kvernmo (Cranium)
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *None
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "BLACKTWR.WAD":
-! :----------------------------------------------------------------------------
+! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
@@ -27,7 +27,7 @@ You once were the biggest and baddest Cyber-demon to rule hell and you spear-hea
 In "Black Tower" you're nearing the end of your journey. You and Chagrin, the ruler of the Black Tower, came off the same conveyor belt as newly assembled cyber-demons a few thousand years back. "Oil runs thicker than blood" the two of you used to say. Demons don't come much closer to friendship than what you and Chagrin shared. Well now your buddy rules the hordes of hell previously under your command and have left you for dead. Your task is simple: Enter the dreaded Black Tower, the nucleus of black magic and the occult in all of Hell, get to its highest floor and slay Chagrin. Then there is the getting back out as well...
  
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
 
 			  - "Nukemine" (old I know, but the supreme numero uno at it's hayday)
@@ -46,7 +46,7 @@ In "Black Tower" you're nearing the end of your journey. You and Chagrin, the ru
 			  Hope you enjoy the wad.
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - The whole of id Software for DOOM & DOOM II.
  - _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
  - Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!

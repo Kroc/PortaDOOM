@@ -3,16 +3,16 @@ $KEY:T=SHELL:pwads\MASTER\GERYON.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP08:_Geryon_(Master_Levels)
 
 :Geryon                                            (Master Levels for DOOM II)
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _John W. Anderson (aka Dr.Sleep)_
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *+Graphics
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "GERYON.WAD":
-! :----------------------------------------------------------------------------
+! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
@@ -22,7 +22,7 @@ GERYON is the 6th Canto in my INFERNO series.
 This level is a little more spread about than my previous efforts, but it provides for a nice and leisurely jaunt through Hell.
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New level from scratch
 *Build Time*              : Months
 *Editor(s) used*          : DETH 1.2 and 2.1 by _Antony Burden_ and _Simon Oke_;
@@ -35,7 +35,7 @@ This level is a little more spread about than my previous efforts, but it provid
 *May Not Run With...*     : OS/2 WARP <g>
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 The star SKY texture was composed from scratch using Paint Shop Pro v2.0.
 
 *Additional Credits to*   : _Nicholas_ and _Howard Rider_, without whom, etc;

@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\multiplayer\ChaosCoreCTFmpII-b\chaoscorectf.txt
 $KEY:W=SHELL:https://zandronum.com/forum/viewtopic.php?t=5977
 
 :ChaosCore CTF                                       * 2015 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>12>04*   Author : *(see Credits)
 :Levels   : *30*            Modes : *Capture-The-Flag only
 :Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 :Construction
 
@@ -19,7 +19,7 @@ $KEY:W=SHELL:https://zandronum.com/forum/viewtopic.php?t=5977
 *Known Bugs*            : None that we know of
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 _Agaures_, _AlexMax_, _Caution_, _Collision_, _GhoulSlayeR_, _Infer_, _RoSKing_, _Shane_, _Wideass_.
 
 *Additional Credits:

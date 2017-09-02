@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\community\thtthren\thtthren.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthren
 
 :THT: Threnody                                       * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>07>31*   Author : Various (see credits below)
 :Levels   : *20*            Modes : *Single, Co-op, Deathmatch
 :Requires : *boom*       Includes : *+Sounds +Music +Graphics +Demos
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 _Ty Halderman_, the essential pillar of the Doom community, passed away in 2015. He is greatly missed and his contributions to the Doom scene have helped keep this old game alive and kicking. This project tries to honor Ty with levels that pay tribute to his work be it in the form of his levels or contribution to the Boom sourceport.
 
@@ -26,7 +26,7 @@ There are 20 levels in this megawad along with plenty of new music and awesome n
 One of the more important and highly secret UAC installations has been severely compromised by a demonic invasion from Hell. There are reports of near complete annihilation of all personnel, however the worst part is, that it is now painfully clear that the UAC executives screwed up as they stationed one the military's top generals there to oversee the completion of a multitude of secret projects. The UAC knew that these installations would be a high priority target for the next attack from Hell and sending the decorated general there - well knowing that an attack was imminent - was a bad move. The general is a skilled soldier and is most likely still alive and held as prisoner; Hell knows better than to kill him. His last transmission was sent from inside a spacecraft. It is unknown whether or not he made it off the ground. You, being one of the best and most lethal weapons of the UAC, have been tasked to go to the planet in search of answers and to bring the general home should he still be alive. If not, then your mission is clear: Kill everything and avenge the general.
     
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New levels from scratch
 *Build Time*              : 1 year
 *Editor(s) used*          : Doom Builder 2, Slade 3, Paint.net, Gimp, Wcleaner,
@@ -41,7 +41,7 @@ One of the more important and highly secret UAC installations has been severely 
 			  with -complevel 9
                           
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Project leader:
 - _Chris Hansen_
 

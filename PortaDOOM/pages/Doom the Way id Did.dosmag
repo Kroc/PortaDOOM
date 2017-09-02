@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\megawads\DTWID\DTWID.txt
 $KEY:W=SHELL:http://dtwid.herokuapp.com/
 
 :Doom the Way id Did
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2011>12>10*   Author : (see credits)
 :Levels   : *27*            Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *+Graphics +Patches +Demoes
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 At some point in time I got the idea that it would be really fun if _John Romero_ dusted off the ol' doom editor and made another map for Doom episode 1 for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know.
 
@@ -24,7 +24,7 @@ Our goal is to make the 'lost' maps as authentically as possible to be convincin
 - _Hellbent_
 
 :Par Times
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Rules of Determination:
  - Rounded down to nearest 15sec then +30sec
  - Pistol start
@@ -44,14 +44,14 @@ NOTE from _St. Alfonzo_: "I took the fastest available route for each map, killi
  E1M9 - 2:30            E2M9 - 3:30             E3M9 - 1:30
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New from scratch
 *Build Time*              : 1 year (over 3 years if you count the project's unofficial start in '08!)
 *Editor(s) used*          : Various
 *May Not Run With...*     : Versions of Doom prior to 1.9
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Founder:
         _Hellbent_
 

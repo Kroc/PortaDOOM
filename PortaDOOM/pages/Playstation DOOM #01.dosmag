@@ -3,13 +3,13 @@ $KEY:W=SHELL:https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-v
 $KEY:L=SHELL:https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-lost-levels/
 
 :Playstation DOOM (The Total Conversion) + The Lost Levels
-:==============================================================================
+:===============================================================================
 *[P] Play                         [W] Website - TC [L] Website - Lost Levels
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2011>11>08*   Author : Various
 :Levels   : *166*           Modes : *Single, Co-op, Deathmatch
 :Requires : *gzdoom*     Includes : *+Sound +Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 *Considering that DOOM ran best on a 486 or Pentium with 4 MB of RAM,* it was then none-the-less impressive when DOOM was ported to the Playstation in 1995. Cuts had to be made given the limits of 33 MHz and less than 1 MB of RAM, but a fine job was done in both getting the game onto PSX and making it unique to the console. Coloured lighting was added, higher colour-depth, alpha-blending and a deathmatch mode over serial link.
 

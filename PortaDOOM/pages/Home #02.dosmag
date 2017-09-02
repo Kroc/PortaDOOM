@@ -1,6 +1,6 @@
 
 :Keyboard & Mouse Controls
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
         
     *Move Forward*      _W
     *Move Backward*     _S
@@ -18,7 +18,7 @@
     *Walk*              _SHIFT_         |Running is automatic, press SHIFT to slow down
     
 :Optional Controls:
-:==============================================================================
+:===============================================================================
 These are not original DOOM controls and are used only by select WADs (e.g. BrutalDoom).
     
     *Secondary Fire*    _RMB_           (right-mouse-button)
@@ -31,7 +31,7 @@ These are not original DOOM controls and are used only by select WADs (e.g. Brut
     *Grenade*           _G_             Throw a grenade
                                 
 :Map Controls:
-:==============================================================================
+:===============================================================================
     *Automap*           _TAB_           Toggle automap on & off
     *Grid*              _G_             Toggle automap grid
     
@@ -46,7 +46,7 @@ These are not original DOOM controls and are used only by select WADs (e.g. Brut
     *Clear All Marks*   _C_             Remove all markers on the map
 
 :System Controls:
-:==============================================================================
+:===============================================================================
     *Menu*              _ESC_           Brings up the in-game menu
     
     *Save Game*         _F2_            Save game menu

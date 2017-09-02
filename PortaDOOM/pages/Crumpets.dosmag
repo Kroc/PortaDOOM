@@ -3,82 +3,82 @@ $KEY:T=SHELL:pwads\episodes\crumpets\crumpets.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 
 :Crumpets                                         * 2015 Cacoward runner up! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>05>25*   Author : _Ribbiks_
 :Levels   : *9*             Modes : *Single, Co-op
 :Requires : *boom*       Includes : *+Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Crumpets is a set of 9 bite-size boom-compatible maps, designed to be played from pistol start. The levels are small,  typically 50-100 monsters a piece, and loosely follow a plutonia / marble-ruins aesthetic. UV is designed for experts, so I encourage most players to start off on HMP.
 
 :Maplist
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :MAP01: "Earl Grey"
-:==============================================================================
+:===============================================================================
 :Build Time:    *1.5 hr
 :Midi:          *"Chains of Ocean and Flame" - Xenogears
 
 I think someone put something in my drink...
 
 :MAP02: "Flutter"
-:==============================================================================
+:===============================================================================
 :Build Time:    *5.0 hr
 :Midi:          *"Dragon Roost Island" - Zelda: Wind Waker
 
 Cute little opening map. Easy fights, nothing special.
 
 :MAP03: "Tiramisu"
-:==============================================================================
+:===============================================================================
 :Build Time:    *4.5 hr
 :Midi:          *"Home Sweet Home" - The Elder Scrolls II: Daggerfall
 
 Tiny map that can be deceptively tough on UV.
 
 :MAP04: "Bocuma"
-:==============================================================================
+:===============================================================================
 :Build Time:    *3.5 hr
 :Midi:          *"Character Making" - Final Fantasy Tactics
 
 First level I made for the set. I originally was just scribbling around trying to hash out texture themes that would eventually become Sunlust map14, but I decided it would be fun to sharpen the old speedmapping claws. Thus "Crumpets" was born, a way for me to entertain myself with some relaxing mapping in between the development of maps for other projects.
 
 :MAP05: "Mint Chocolate"
-:==============================================================================
+:===============================================================================
 :Build Time:    *6.5 hr
 :Midi:          *"Subterra" - Original composition by _Ribbiks
 
 Super compact little map. A few tough fights on UV, a glimpse of what's to come. Several aesthetics were inspired by map24 of CChest2, as was the midi I made for the level.
 
 :MAP06: "Masquerade"
-:==============================================================================
+:===============================================================================
 :Build Time:    *4.5 hr
 :Midi:          *"Stage 4" - Alien Vs. Predator (SNES)
 
 A tight, slightly awkward layout with predominantly claustrobic fights. I really like this progression in this map, though I understand that many players will probably dislike it for being so cramped.
 
 :MAP07: "Frog And Toad"
-:==============================================================================
+:===============================================================================
 :Build Time:    *8.0 hr
 :Midi:          *"Trisection" - Final Fantasy Tactics
 
 A layout that was originally drawn up during a speedmapping session of some sort (one of the Tango TV ones maybe?). I didn't complete it in the alotted time so I put it on the backburner and eventually polished it up for this set. Hard as nails! You can finish it super-quick with a ballsy rush on the YK, but there's plenty of neat optional content as well.
 
 :MAP08: "Shamu"
-:==============================================================================
+:===============================================================================
 :Build Time:    *6.0 hr
 :Midi:          *"Egypt" - Original composition by _Ribbiks
 
 Delicious curves! This one ended up being more spacious than I anticipated. The enemy composition and darkened visuals introduce an oppressive atmosphere to the mapset.
 
 :MAP09: "Crackerjack"
-:==============================================================================
+:===============================================================================
 :Build Time:    *12.0 hr
 :Midi:          *"Under The Stars" - Final Fantasy Tactics
 
 Piggybacking on the darkness aesthetic, I wanted a grandiose finale chock full of dickery. I spent quite a bit longer on this map compared to the others, mostly due to its larger scale. Every perched boss monster can be telefragged, don't waste your ammo!
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New from scratch
 *Editor(s) used*          : Doombuilder 2, Slade 3

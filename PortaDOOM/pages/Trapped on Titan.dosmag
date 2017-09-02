@@ -3,16 +3,16 @@ $KEY:T=SHELL:pwads\MASTER\TTRAP.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Trapped_on_Titan_(Master_Levels)
 
 :Trapped on Titan                                  (Master Levels for DOOM II)
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Jim Flynn_
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *+Graphics
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TTRAP.WAD":
-! :----------------------------------------------------------------------------
+! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
@@ -20,7 +20,7 @@ $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
 A strange and enigmatic building on a moon of Saturn contains the latest in alien weapon technology. If you can survive the guards and solve the puzzles, the Federation will leapfrog in technology. Its all up to you. Oh and watch those windows! <G>.
  
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New level from scratch
 *Tools(s) used*           : For level editing: DEU 5.2 (GCC), and DETH 1.1c
 			  For node building: BSP 1.2x
@@ -28,7 +28,7 @@ A strange and enigmatic building on a moon of Saturn contains the latest in alie
 			  For wad composition: DeuTex 3.1
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - _Brendon Wyber_ and _Raphael Quinet_ for DEU-GCC
  - _Antony Burden_ and _Simon Oke_ for DETH
  - _Colin Reed_ for BSP1.2x

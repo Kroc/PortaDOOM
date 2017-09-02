@@ -2,7 +2,7 @@ $KEY:1=SHELL:iwads\freedoom\play - freedoom1.bat
 $KEY:2=SHELL:iwads\freedoom\play - freedoom2.bat
 
 ^C:FreeDOOM
-:==============================================================================
+:===============================================================================
 
 Freedoom is a project to create a free content game based on the Doom engine. All material in the project is released under a modified BSD license, so other projects may reuse any of the Freedoom resources for their own purposes. In fact, this is a secondary goal of the project.
 

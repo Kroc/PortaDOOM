@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\community\mutiny\mutiny.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
 
 :Mutiny                                              * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>09>13*   Author : Various (see Credits)
 :Levels   : *16*            Modes : *Single, Co-op, Deathmatch
 :Requires : *no-limit*   Includes : *+Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Mutiny is a 16-level, Limit Removing Community Project Episode for Doom 2 intended to be the spiritual successor of late 90's cyberpunk themed wads such as STRAIN, Hacx, Nimrod, Dystopia 3, and Perdition's Gate. It features new colorful, high contrast, (intentionally retro) textures inspired by the works of _Iika Keranen_ and _Anthony Czerwonka_, complete with plenty radioactive signs, warning stripes, computers, slime, and rust.
 
@@ -18,7 +18,7 @@ Mutiny is a 16-level, Limit Removing Community Project Episode for Doom 2 intend
 It's 2028 AD. You're an elite cyborg marine. The UAC has risen as the most powerful megacorporation in the galaxy, and has commissioned you along with its squad of crooked super soldiers to maintain order on Earth. You were sent on a mission to New Orleans to defend the city from the recurring invasion of the cybernetic mutants. When your helicopter is shot down over the bay by friendly fire from renegade UAC marines, you and your squad mates crash land in the harbor and are presumably dead. At least until the shockwave from a nearby EMP missile explosion shocks you back to life. You swim to a nearby submarine deployment station and begin your rogue mission to crush the UAC, destroying anything and anyone that crosses your path.
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 Mutiny is a Doomworld Community Project lead by _Jon "40oz" Vail_. Below is a list of all the community members that contributed to Mutiny's success. Without their help and invaluable input this project would not have been completed.
 
 Special Thanks to id software, _John Romero_ for releasing unused Doom 2 resources in December of 2015, The _Alpha Dog Alliance_, for STRAIN, _Iika Keranen_ and _Anthony Czerwonka_ for Dystopia 3, The _Nimrod Team_ for Nimrod, Wraith Corporation for Perdition's Gate, Banjo Software for Hacx, and the many Doom marines whose continued interest in Mutiny helped push it to completion.

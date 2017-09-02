@@ -3,19 +3,19 @@ $KEY:1=SHELL:pwads\episodes\killed\killed.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom/Ports/j-l/killed
 
 :Absolutely Killed                                   * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>06>30*   Author : _Ryath_/_scwiba_
 :Levels   : *9*             Modes : *Single, Co-op?
 :Requires : *no-limit*   Includes : *+Patches +Demos
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 A full episode of short, concept-oriented maps for Ultimate Doom. 
 Beware: Not your traditional Doom WAD.
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New from scratch
 *Build Time*              : Primarily over six weeks (January and February 2016) with playtesting and polishing throughout March
 *Editor(s) used*          : Doom Builder 1.68, SLADE3, Doom Writer
@@ -23,7 +23,7 @@ Beware: Not your traditional Doom WAD.
 *Tested With*             : PrBoom+ (complevel 2), Eternity, ZDoom
 
 :Map List
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - *M1: Barons of Fun**
   **fun is a subjective term
 - *M2: Boxed In
@@ -44,7 +44,7 @@ Beware: Not your traditional Doom WAD.
   Where moving floors are king.
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - id Software, _CodeImp_, _SlayeR_, and _Visual Vincent_ -- creators of Doom Builder, SLADE, and Doom Writer
 - TITLEPIC font, "You Murderer", by _Nate Piekos_
 

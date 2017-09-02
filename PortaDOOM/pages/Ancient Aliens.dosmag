@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\megawads\aaliens\aaliens.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 
 :Ancient Aliens                                      * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>05>18*   Author : _Paul "skillsaw" DeBruyne_
 :Levels   : *32*            Modes : *Single, Co-op
 :Requires : *boom*       Includes : *+Music +Sounds +Graphics +Patches +Demos
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Ancient Aliens is a megawad featuring 32 colorful, action-packed maps for Boom compatible ports.
                           
@@ -18,7 +18,7 @@ Go on a journey to discover the truth about the enigmatic origins of human civil
 I'm not saying it was aliens, but... the truth is out there.
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : Texture wad based on 32in24-14 resource
 *Build Time*              : 15 months
 *Editor(s) used*          : Doom Builder 2 , GZDoom Builder, Slade, WhackEd, 
@@ -31,7 +31,7 @@ I'm not saying it was aliens, but... the truth is out there.
                           using a mod try changing the load order.
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 *Mapping*                 : _skillsaw_
                           _AD_79_
@@ -128,7 +128,7 @@ I'm not saying it was aliens, but... the truth is out there.
                           http://www.freesfx.co.uk 
 
 Map List:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - MAP01 - *"The Ancient Navajo Wolf Warp"* by _skillsaw
 - MAP02 - *"Sanctum of the Wastes"* by _skillsaw
 - MAP03 - *"Arachnotron Arrival"* by _skillsaw
@@ -163,7 +163,7 @@ Map List:
 - MAP32 - *"Ossuarium Exoterre"* by _skillsaw
                           
 :Music Listing
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - MAP01 - *"Flee"*
 - MAP02 - *"The Incessant Flow of Time"*
 - MAP03 - *"Depth Charge"*

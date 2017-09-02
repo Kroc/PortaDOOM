@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\onesies\xa-dwire\xa-dwire.txt
 $KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/74767-xasermap-dead-wire/
 
 :dead.wire                                           * 2015 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>09>26*   Author : _Xaser Acheron_
 :Levels   : *1*             Modes : *Single
 :Requires : *gzdoom*     Includes : *+Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Single map for GZDoom (Doom 2), made for _Tormentor667_'s Doomja Vu. Creepazoid atmosphere with custom weapons / enemy edits. 'Nuff said.
 
@@ -18,14 +18,14 @@ You are an engineer employed by the UAC to investigate the source of a strange s
 This wad tells the tale of what happens next...
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : _Tormentor667_'s Doomja Vu base map, which in turn is based on Ultimate Doom's E1M7. Little remains aside from a vague sense of layout.
 *Build Time*              : 3-ish (rather sleepless) days.
 *Editor(s) used*          : GZDoom Builder, SLADE3
 *May Not Run With...*     : ZDoom/GZDoom's software renderer. Use GL and enable dynamic lights.
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Map:*
  - _Tormentor667_ (and kinda id Software) for the base, o'course
  - _Xaser_ made the rest oh no

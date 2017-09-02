@@ -3,16 +3,16 @@ $KEY:T=SHELL:pwads\MASTER\TEETH.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP31:_The_Express_Elevator_to_Hell_(Master_Levels)
 
 :The Express Elevator to Hell                      (Master Levels for DOOM II)
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Sverre André Kvernmo (Cranium)
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *None
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TEETH.WAD":
-! :----------------------------------------------------------------------------
+! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
@@ -27,7 +27,7 @@ You once were the biggest and baddest Cyber-demon to rule hell and you spear-hea
 When the "Express Elevator to Hell" starts descending the renegade Cabal has begun to realize you might be a threat to them, human or not. Half way down the shaft that should have taken you to the deepest pits of Hell, the lift first slows down before it jerks to a halt. Ambush! Survive the initial onslaught and find a gateway out of the now sealed elevator. Tough, but that's the way you like it...
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
 
 			  - "Nukemine" (old I know, but the supreme numero uno at it's hayday)
@@ -46,7 +46,7 @@ When the "Express Elevator to Hell" starts descending the renegade Cabal has beg
 			  Hope you enjoy the wad.
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - The whole of id Software for DOOM & DOOM II.
  - _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
  - Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!

@@ -3,16 +3,16 @@ $KEY:T=SHELL:pwads\MASTER\MEPHISTO.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP07:_Mephisto%27s_Maosoleum_(Master_Levels)
 
 :Mephisto's Maosoleum                              (Master Levels for DOOM II)
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Sverre André Kvernmo (Cranium)
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla*    Includes : *None
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "MEPHISTO.WAD":
-! :----------------------------------------------------------------------------
+! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=SHELL:http://store.steampowered.com/sub/18397/
@@ -27,7 +27,7 @@ You once were the biggest and baddest Cyber-demon to rule hell and you spear-hea
 In Mephisto's Maosoleum you have reached the grave of an old friend and mentor: "Mephisto". Yeah old Lucy was a tough bastard. But then there was that incident with the earthling marine which lost him a lot of credit in the hard-core parts of Hell. So you had to kick him off the throne of course. His immortal spirit was kept as a member of the Cabal though and so he was in on the betrayal against you. Time to enter his tomb and lay the old man down to rest for good...
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
 
 			  - "Nukemine" (old I know, but the supreme numero uno at it's hayday)
@@ -46,7 +46,7 @@ In Mephisto's Maosoleum you have reached the grave of an old friend and mentor: 
 			  Hope you enjoy the wad.
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - The whole of id Software for DOOM & DOOM II.
  - _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
  - Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!

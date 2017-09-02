@@ -3,20 +3,20 @@ $KEY:T=SHELL:pwads\episodes\spacwars\spacwars.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 
 :Doomed Space Wars                                * 2015 Cacoward runner up! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>09>01*   Author : _Paul Corfiatis_
 :Levels   : *12+9*          Modes : *Single, Co-op, Deathmatch
 :Requires : *zdoom*      Includes : *+Sounds +Music +Graphics +Patches
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of Zdoom's special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
                           
 Also in addition are 9 new monsters thanks to Zdoom's DECORATE feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
 
 :FEATURES:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - 9 Huge Levels
  - 2 Secret Levels
  - 1 Super Secret Level
@@ -32,11 +32,11 @@ Also in addition are 9 new monsters thanks to Zdoom's DECORATE feature and also 
  - Designed for Zdoom compatible source ports
 
 :STORY:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 An abandoned imperial space station named "Ondor" has been hijacked by an unknown force and is heading towards our Solar System. The UAC has sent a team of marines there to investigate and they realize that they are in the fight for their lives. Their mission is to seek, destroy and get the hell out of there.
 
 :NEW ENEMIES:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 In addition to the familiar foes you will encounter are some new beasts.
 
  - *DARK TROOPER (140 hp)
@@ -67,7 +67,7 @@ In addition to the familiar foes you will encounter are some new beasts.
    Awaiting for you at the very end of your journey is this mighty floating beast. He is super fast, shoots fireballs that can cause extreme damage and can even occasionally shoot Lost Souls at you. And he is not alone, he also has help with all the other floating terrors. Also he is well camouflaged, a true nightmare indeed. In order to prevail you need to be well loaded and have strong wits.
 
 :SINGLE PLAYER LEVELS:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  *RED ZONE (Boss Spider Mastermind)
  - MAP01: Command Admin 
  - MAP02: Chiron Sector 
@@ -86,7 +86,7 @@ In addition to the familiar foes you will encounter are some new beasts.
  - MAP12: Hitler's Theatre
 
 :DEATHMATCH LEVELS:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - MAP40: The Exitprize
  - MAP41: Slime Vault
  - MAP42: Symmetric Symphony
@@ -99,7 +99,7 @@ In addition to the familiar foes you will encounter are some new beasts.
  - MAP49: Mira
 
 :LEVEL PROGRESSION:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
  - MAP01 exit to MAP02
  - MAP02 exit to MAP03
  - MAP03 exit to MAP04
@@ -117,7 +117,7 @@ In addition to the familiar foes you will encounter are some new beasts.
  - MAP09 exit to end of episode
 
 :Construction:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New levels from scratch
 *Build Time*              : Bloody took forever (about 21 months)
 *Editor(s) used*          : Doom Builder, XWE, SLADE, Cakewalk Sonar (composing music), FL_Studio (composing and mixing music)
@@ -126,7 +126,7 @@ In addition to the familiar foes you will encounter are some new beasts.
 *Tested With*             : Zdoom, Gzdoom
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 id for Doom/Doom 2, _Randy Heit_ for Zdoom, _Codeimp_ for Doom Builder, LucasArts for the Dark Forces textures, and my wife for putting up with my creative ways, phew.
 
 *MUSIC CREDITS:

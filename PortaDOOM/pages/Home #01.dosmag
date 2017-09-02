@@ -1,7 +1,7 @@
 $KEY:X=GOTO:PortaDOOM Cacowards 2015
 
 ^C:PortaDOOM Alpha 3
-:-----------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Prepare yourself for a huge dump of DOOM's intense, buttock-clenching action! It's a good thing we're providing the entertainment because you're going to be sat in one place for a looong time... Now where's the bog roll?*
 
 ! *PRO TIP:* Use MOUSEWHEEL or keyboard to scroll. LEFT or RIGHT ARROW keys to change page (or right-click to advance one page). Press the indicated keys "[?]" to navigate, or F1 for a full list of controls.
@@ -43,5 +43,5 @@ $KEY:M=GOTO:Multiplayer
 :[M] Multiplayer ...
     DOOM invented the term deathmatch. Upon release, networks crawled to a halt and all business productivity ceased. Continue the addiction that has raged for over 20 years here.
 
-:==============================================================================
+:===============================================================================
 ^C*What else should go here? Send feedback to _<kroc+doom@camendesign.com>_*

@@ -3,13 +3,13 @@ $KEY:T=SHELL:pwads\community\jpcp\JPCP.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
 :Japanese Community Project                          * 2016 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2016>07>24*   Author : Various (see Credits)
 :Levels   : *32*            Modes : *Single, Co-op
 :Requires : *no-limit*   Includes : *+Music +Graphics +Patches +Demos
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 Japanese Community Project is a 32 level megawad made by Japanese Doomers.
 
@@ -18,14 +18,14 @@ Doom is a minor game in Japan, so Doom community in Japan is very small. The com
 We hope that you have a good time.
 
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : New from scratch
 *Build Time*              : 2 years
 *Editor(s) used*          : Various
 *May Not Run With...*     : Vanilla Doom
 
 :Credits
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Project Leader*          : _Tatsurd-Cacocaco_
 
 *Level Design*            : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
@@ -45,7 +45,7 @@ We hope that you have a good time.
 *Texture Resources*       : id Software, TeamTNT, and cc4-tex
                           
 :Map List
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 - Map01: First Assault                 by _Tatsurd-Cacocaco_
 - Map02: Rural Mini-Base               by _Tatsurd-Cacocaco_
 - Map03: The Sign of Armageddon        by _Masayan_ & _SkullDemon_
@@ -83,7 +83,7 @@ Map re-edit by _Tatsurd-Cacocaco_:
 - Map03, Map09, Map10, Map13, Map14, Map18, Map24, Map26, Map31
 
 :Author Comments
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 *_Tatsurd-Cacocaco_:
 
@@ -178,7 +178,7 @@ I hope people play this wad. Have fun!
 (none received])
 
 :Music List
-:------------------------------------------------------------------------------ 
+:------------------------------------------------------------------------------- 
 - Map01: Memento Mori 2 MAP10
 - Map02: "Oww!!!" from Rise of the Triad
 - Map03: A music composed by _Masayan_

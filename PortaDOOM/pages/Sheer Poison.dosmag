@@ -3,20 +3,20 @@ $KEY:T=SHELL:pwads\onesies\shpo1\shpo1.txt
 $KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/72721-new-song-with-level-attached/
 
 :Sheer Poison                                        * 2015 Cacoward winner! *
-:==============================================================================
+:===============================================================================
 *[P] Play                         [T] .txt [W] Website
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Released : *2015>05>11*   Author : _Zan-zan-zawa-veia_
 :Levels   : *1*             Modes : *Single
 :Requires : *vanilla*    Includes : *+Music +Graphics
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 
 A big nonsensical challenge map; gets metaphysical in places.
 
 *The Story:* You're back from your victory over the gatekeeper of Hell, but upon arriving home are informed that no-one is aware of your successes or is at all willing to believe they happened. They put you in quarantine for three weeks and the stress snaps your mind, yanking you back into an imaginary hell where you don't even get to use the super shotgun. Oh no, you say. OH NO.
                          
 :Construction
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 *Base*                    : From scratch
 *Build Time*              : a month
 *Editor(s) used*          : WinDEU 5.24; XWE; Paint.NET; Cubasis
@@ -25,5 +25,5 @@ A big nonsensical challenge map; gets metaphysical in places.
 *Tested With*             : Ultimate Doom in DOSBox; PrBoom-Plus 2.5.1.3
 
 :Credits:
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 _Tarnsman_'s streams where he points out what is wrong about a level - I broke every rule that I could remember!

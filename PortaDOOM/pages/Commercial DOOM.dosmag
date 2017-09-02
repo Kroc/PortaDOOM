@@ -7,9 +7,9 @@ $KEY:P=GOTO:Playstation DOOM
 $KEY:6=GOTO:DOOM 64
 
 ^C:Commercial DOOM and DOOM-Clones
-:------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------
 :Wolfenstein 3D
-:==============================================================================
+:===============================================================================
 *Before DOOM, there was Wolfenstein 3D.* Often cited as the grandfather of the FPS, it's impossible to talk about the history of DOOM without mentioning Wolfenstein 3D for laying the foundations of the genre that DOOM went on to define.
 
 Whilst not running on the DOOM-engine, Wolfenstein 3D has been remade in DOOM in many varieties and has spawned its own sub-community dedicated to the fight agaist the Nazis war machine.
@@ -17,7 +17,7 @@ Whilst not running on the DOOM-engine, Wolfenstein 3D has been remade in DOOM in
 (Coming in a later PortaDOOM release)
 
 :DOOM
-:==============================================================================
+:===============================================================================
 *When DOOM arrived in 1993 the term "first person shooter" didn't exist.* All other shooters were simply called "DOOM clones" until the genre worked out how to be "not DOOM" anymore. Sequels and updates to the original followed laying down the following "cannon" of offical iD releases, and where you should begin your Doom journey...
 
 :[U] The Ultimate DOOM
@@ -36,7 +36,7 @@ Whilst not running on the DOOM-engine, Wolfenstein 3D has been remade in DOOM in
     A new 9-level DOOM II episode created for the XBLA release of DOOM II and included as part of DOOM 3: BFG Edition and the PS3 release of DOOM Classic Complete.
 
 :Console DOOM
-:==============================================================================
+:===============================================================================
 With the success of DOOM, console ports were an inevitability. Somewhat limited as the PC was when it came to graphics and audio it none-the-less excelled in raw computational horse-power. Some truly awful ports were made to under-powered systems (such as the SNES) but out of this two gems shined in their own unique ways...
 
 :[P] Playstation DOOM & Final DOOM
@@ -46,18 +46,18 @@ With the success of DOOM, console ports were an inevitability. Somewhat limited 
     A complete re-think of the DOOM console experience; a fresh new campaign built specifically for the N64 hardware. New enemies and weapons were created to make up for the inability to include the complete original roster. Cartridge storage ruled out CD-quality sound so a dark ambient soundtrack helped to drastically change the mood of the game.
 
 :Heretic & Hexen
-:==============================================================================
+:===============================================================================
 (Coming in a later PortaDOOM release)
 
 :Strife ...
-:==============================================================================
+:===============================================================================
 (Coming in a later PortaDOOM release)
     
 :Chex Quest ...
-:==============================================================================
+:===============================================================================
 "We need to promote our cereal with a kid-friendly game. Let's just take this gory, murder-fest of a game called DOOM for starters ... "
     
 (Coming in a later PortaDOOM release)
 
-:==============================================================================
+:===============================================================================
 ^C*What else should go here? Send feedback to _<kroc+doom@camendesign.com>_*
