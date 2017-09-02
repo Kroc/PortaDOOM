@@ -1,0 +1,124 @@
+$KEY:P=SHELL:pwads\megawads\bstain\play.bat
+$KEY:T=SHELL:pwads\megawads\bstain\BStain.txt
+$KEY:I=SHELL:pwads\megawads\bstain\BStainfo.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/bstain
+
+:Bloodstain                                          * 2016 Cacoward winner! *
+:=================================*=============================================
+*[P] Play                         [T] .txt [I] Info [W] Website
+:---------'-*-------------------<-'-*-------------------------------------------
+:Released : *2016>01>01*   Author : *_Pavel 'Pipicz' Tvrzník_
+:Levels   : *32*            Modes : *Single, Co-op
+:Requires : *boom*       Includes : *+Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+Full 32-map megawad.
+See pg.2 for map-by-map comments.
+
+*Story:
+
+It ought to be just another boring workday of a UAC space marine. You were sent to investigate what happened to a squad gone missing while investigating a distress signal from a colony on Phobos. However, upon arriving at the drop zone you notice something isn't quite right. The missing squad can be seen shredded all over the place. You grab your trusty pistol and go investigate.
+
+:Construction
+:-------------------------'-'---------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : About 5 years (depends on what you consider to be the start)
+*Editor(s) used*          : Doombuilder 1/2, XWE, Slade 3, MS Paint
+*Known Bugs*              : Some slime trails
+                          Intended map32 sky texture is displayed only by
+                          ports that support MAPINFO
+*May Not Run With*        : DOOM2.exe
+*Tested With*             : PrBoom-Plus 2.5.1.3, ZDoom 2.3.1
+
+:Credits
+:-------------------------------------------------------------------------------
+*Additional Graphics:
+
+TITLEPIC, INTERPIC, CREDIT, BOSSBACK, M_DOOM
+
+Statusbar based on original Doom2 textures.
+Big Statusbar numbers come from Scythe 2.
+
+Regarding textures, there are a few, but they are mostly based on already existing textures by various authors.
+
+Bloodstain was compiled with textures from the following sources:
+
+- Ultimate Doom
+- Heretic & Hexen
+- Quake & Quake 2
+- Final Doom
+- Requiem
+- Alien Vendetta
+- Plutonia 2
+- Scythe 2
+- Speed of Doom
+- 5th Episode Texture Pack
+- Gothic Texture Pack
+- DarkBase Texture Pack
+- Doom Potpourri Texs
+- Recolored Doom Texture Pack
+
+It is quite possible I have forgot about something, in such case I apologize and please let me know and I'll add whatever is missing :-)
+
+*Music:
+
+There are no original MIDI tracks in Bloodstain, all tracks are collected from various sources (origin of some is unknown or I don't simply remember it, in that case I'm sorry; if you recognize any of those tracks, please let me know):
+
+- Title - Cradle of Filth - Darkness Our Bride
+- Intermission - Unknown T_T
+- Reading - Cradle of Filth - One Final Graven Kiss
+
+- MAP01 - Plutonia 2 (unused track)
+- MAP02 - Nine Inch Nails - Dead Souls
+- MAP03 - ZDCTF
+- MAP04 - Plutonia 2
+- MAP05 - Blur - Woo Hoo!
+- MAP06 - Quake 2
+
+- MAP07 - Rammstein - Du Hast
+- MAP08 - Scythe 2 (track's origin unknown)
+- MAP09 - Jenesis (TNT remix)
+- MAP10 - Rise of the Triad
+- MAP11 - Plutonia 2
+
+- MAP12 - Alien Vendetta (track's origin unknown)
+- MAP13 - Plutonia Revisited
+- MAP14 - Heretic
+- MAP15 - Alien Vendetta (track's origin unknown)
+- MAP16 - Hell Revealed 2
+- MAP17 - ZDCTF
+- MAP18 - Quake 2
+- MAP19 - Requiem
+- MAP20 - Dimensions of Time (track's origin unknown)
+
+- MAP21 - Cradle of Filth - Heaven Torn Asunder
+- MAP22 - Requiem
+- MAP23 - Plutonia 2
+- MAP24 - TNT
+- MAP25 - Plutonia Revisited
+- MAP26 - Halloween
+- MAP27 - Community Chest 3 (Ultimate Doom remix)
+- MAP28 - Metal Gear Solid
+- MAP29 - Hell Revealed 2
+- MAP30 - Cradle of Filth - From the Cradle to Enslave
+
+- MAP31 - Rise of the Triad
+- MAP32 - Scythe 2 (track's origin unknown)
+
+*Testers:
+- _Pavel "Pipicz" Tvrzník_ (yeah, that's probably me :-D)
+- _Adolf "Gusta" Vojta_
+- _Václav "Damned" Havránek_
+- _Jakub Sviták_
+- _David Sviták_
+
+Demos recorded by _Pipicz_
+
+Thanks to everyone who supported me during this looooooooooooong mapping journey. Also thanks to everyone who has playtested my wad and gave recommendations (that I had't always heeded :-)) or pointed out any errors.
+
+Also thanks to everyone for playing it and for any feedback :-) And, if you feel like supporting my cause and encouraging me in further investing my time into mapmaking (as this megawad sure has taken me a few thousand hours to finish, and that's not over-exaggerating), I'm certainly not going to discourage you from any potential donation! :-D
+
+In case you would really mean it:
+
+- *PayPal:* Pipicz@seznam.cz
+- *Bank account:* 250661012/0300
