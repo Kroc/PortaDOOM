@@ -1372,7 +1372,7 @@ ECHO    Get Psyched!
 ECHO:
 
 REM # if you need to see what the final command will be:
-ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
+REM ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
 
 REM # outputting to console?
 REM # (only has an effect on Z-based engines)

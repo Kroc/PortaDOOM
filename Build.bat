@@ -103,22 +103,7 @@ REM # -xr...	: exclude files (recursively)
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
-ECHO * Make PortaDOOM_Cacowards2016 ...
-REM --------------------------------------------------------------------------------------------------------------------
 PUSHD PortaDOOM
-
-REM # swap over the homepages
-REN "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2016.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-REM # 7ZIP
-"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards2016.lst -- ..\build\PortaDOOM_Cacowards2016.7z
-
-REM # restore the original home page
-ERASE "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
 
 ECHO * Make PortaDOOM_Cacowards2015 ...
 REM --------------------------------------------------------------------------------------------------------------------
@@ -129,6 +114,21 @@ IF ERRORLEVEL 1 PAUSE & EXIT
 
 REM # 7ZIP
 "..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards2015.lst -- ..\build\PortaDOOM_Cacowards2015.7z
+
+REM # restore the original home page
+ERASE "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+ECHO * Make PortaDOOM_Cacowards2016 ...
+REM --------------------------------------------------------------------------------------------------------------------
+REM # swap over the homepages
+REN "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 2016.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards2016.lst -- ..\build\PortaDOOM_Cacowards2016.7z
 
 REM # restore the original home page
 ERASE "pages\Home #01.dosmag"
