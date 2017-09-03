@@ -1,0 +1,75 @@
+===========================================================================
+Advanced engine needed  : Any advanced limit-removing source port (e.g. ZDoom, GZDoom, Crispy, Risen3D, PRBoom+, Eternity, Zandronum etc.) 
+Primary purpose         : Singleplayer
+===========================================================================
+Title                   : Foursite
+Filename                : Foursite.wad
+Release date            : 16th October 2016 (30th October for v3)
+Author                  : Bauul
+Contact	 	        : PM me at doomworld.com/vb/members/Bauul/
+Other Files By Author   : Tower of Babel Redux for Doom 3
+Misc. Author Info       : 
+
+Description             : 4-in-1 hub-based single-player map for vanilla Doom 2
+
+Additional Credits to   : 
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : No
+Graphics                : No
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Yes
+Estimated play-time	: At least 60 minutes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 200-300 hours over 13 months
+Editor(s) used          : GZDoom Builder, Slade 3.0, WhackEd 4
+Known Bugs              : None
+May Not Run With        : Any older source port that doesn't support Deep BSP Extended Nodes.  Other than that, it's a vanilla map.
+Tested With             : ZDoom, GZDoom, Crispy, Risen3D, PRBoom+, Eternity, Zandronum and Zandronum 3.0 (all latest versions at time of release)
+
+
+* Level Stats *
+
+Vertices		: 31,984
+Linedefs		: 38,771
+Sidedefs		: 70,518
+Sectors			: 8,820
+Things (at UV)		: 4,941 (of which 1,051 are monsters)
+Total map space covered	: circa 118 million map units
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse with permission from the athor.  
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.moddb.com
+FTP sites:

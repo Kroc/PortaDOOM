@@ -16,10 +16,11 @@ REM #                   can be any of the following:
 REM # 
 REM #			no-limit 	- requires a limits-removing engine
 REM #			boom		- requires boom-compatibility; prboom+ and above
-REM #                   prboom          - requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
+REM #			prboom          - requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
+REM #			hw		- requires a hardware renderer; glboom+, gzdoom, zandronum
 REM #			sw		- requires a software renderer; choco-doom, prboom+, zdoom
 REM #			z		- requires a z-based engine; zdoom, gzdoom, zandronum
-REM #			zdoom		- zdoom and gzdoom. use `zdoom+sw` to infer zdoom only
+REM #			zdoom		- zdoom based engines, i.e. zdoom, gzdoom (but not zandronum)
 REM #			gzdoom		- gzdoom only
 REM #			gzdoom-??	- gzdoom version ?? only, e.g. gzdoom-22
 REM #			doom64		- DOOM 64 EX only
@@ -36,15 +37,15 @@ IF "%HERE:~-1,1%" == "\" SET "HERE=%HERE:~0,-1%"
 REM # the list of available engines; the provided requirements will narrow this list down
 SET "ENGINE_CHOCODOOM=1"
 SET "ENGINE_DOOM64EX=1"
-SET "ENGINE_GLBOOM=1"
 SET "ENGINE_GZDOOM=1"
 SET "ENGINE_PRBOOM=1"
 SET "ENGINE_ZANDRONUM=1"
-SET "ENGINE_ZDOOM=1"
+
+REM # if software-rendering is required
+SET SW=0
 
 REM # when a specific version of a particular engine is required
 SET "VER_GZDOOM=gzdoom"
-SET "VER_BOOM="
 SET "VER_ZANDRONUM=zandronum"
 
 REM # param values
@@ -92,9 +93,15 @@ GOTO :files
 REM --------------------------------------------------------------------------------------------------------------------
 REM # check which engines are compatible and ask the user if more than one
 
+REM # if software is required,
+IF %SW% EQU 1 (
+	REM # and there's a choice between prboom and gzdoom (software),
+	REM # just favour prboom. e.g. 50shades.wad
+	IF "%ENGINE_PRBOOM%-%ENGINE_GZDOOM%" == "1-1" SET ENGINE_GZDOOM=0
+)
+
 REM # count the number of compatible engines:
-SET /A ENGINE_COUNT=ENGINE_CHOCODOOM+ENGINE_DOOM64EX+ENGINE_GLBOOM+ENGINE_GZDOOM+ENGINE_PRBOOM+ENGINE_ZANDRONUM ^
-                   +ENGINE_ZDOOM
+SET /A ENGINE_COUNT=ENGINE_CHOCODOOM+ENGINE_DOOM64EX+ENGINE_PRBOOM+ENGINE_GZDOOM+ENGINE_ZANDRONUM
 REM # no compatible engine?
 IF %ENGINE_COUNT% EQU 0 (
 	ECHO:
@@ -105,16 +112,15 @@ IF %ENGINE_COUNT% EQU 0 (
 	ECHO:
 	PAUSE & EXIT /B 1
 )
+
 REM # is there only one engine available?
 IF %ENGINE_COUNT% EQU 1 (
 	REM # set the engine name to pass on to the doom launcher
 	IF %ENGINE_CHOCODOOM% EQU 1 SET "ENGINE=choco-doom"
 	IF %ENGINE_DOOM64EX%  EQU 1 SET "ENGINE=doom64ex"
-	IF %ENGINE_GLBOOM%    EQU 1 SET "ENGINE=glboom"
 	IF %ENGINE_GZDOOM%    EQU 1 SET "ENGINE=%VER_GZDOOM%"
 	IF %ENGINE_PRBOOM%    EQU 1 SET "ENGINE=prboom"
 	IF %ENGINE_ZANDRONUM% EQU 1 SET "ENGINE=%VER_ZANDRONUM%"
-	IF %ENGINE_ZDOOM%     EQU 1 SET "ENGINE=zdoom"
 	REM # skip ahead
 	GOTO :launch
 )
@@ -126,32 +132,30 @@ ECHO   Please choose the option that best suits you:
 
 IF %ENGINE_GZDOOM% EQU 1 (
 	ECHO:
-	ECHO   [U]   Ultra: ^(gzdoom^)
+	ECHO   [U]   Ultra: ^(gzdoom, hardware-rendering^)
 	ECHO:
 	ECHO         Play with greatly enhanced graphics and sound.
 	ECHO         For high-end systems with a dedicated graphics-card
 )
 
-REM # PRBoom+ can be either hardware or software engine
-REM # (prefer the hardware engine if enabled)
-IF %ENGINE_PRBOOM% EQU 1 SET "VER_BOOM=prboom"
-IF %ENGINE_GLBOOM% EQU 1 SET "VER_BOOM=glboom"
-
-IF NOT "%VER_BOOM%" == "" (
+IF %ENGINE_PRBOOM% EQU 1 (
 	ECHO:
-	ECHO   [M]   Modern: ^(prboom-plus^)
+	IF %SW% EQU 0 ECHO   [M]   Modern: ^(prboom-plus, hardware-rendering^)
+	IF %SW% EQU 1 ECHO   [M]   Modern: ^(prboom-plus, software-rendering^)
 	ECHO:
 	ECHO         Play in modern resolutions and with conveniences such as mouse-look.
 	ECHO         For weaker systems with integrated graphics ^(such as laptops^)
 ) ELSE (
-	REM # if prboom is not available but zdoom is, it will take the place of prboom
-	IF %ENGINE_ZDOOM% EQU 1 (
-		SET "VER_BOOM=zdoom"
+	REM # if prboom is not available but gzdoom is, it will take the place of prboom
+	IF %ENGINE_GZDOOM% EQU 1 (
 		ECHO:
-		ECHO   [M]   Modern: ^(zdoom^)
+		ECHO   [M]   Modern: ^(gzdoom, software-rendering^)
 		ECHO:
 		ECHO         A software renderer with modern resolutions and conveniences.
 		ECHO         For weaker systems with integrated graphics ^(such as laptops^)
+		ECHO:
+		ECHO         NOTE: GZDoom's software-renderer is an exact replica of ZDoom,
+		ECHO         and is offerred in cases where ZDoom compatibility is required.
 	)
 )
 
@@ -168,9 +172,17 @@ ECHO:
 REM # TODO: XP compatibility
 CHOICE /C UMC /N  >NUL
 
+IF ERRORLEVEL 3 SET "ENGINE=choco-doom" & GOTO :launch
+IF ERRORLEVEL 2 (
+	IF "%ENGINE_PRBOOM%-%ENGINE_GZDOOM%" == "0-1" (
+		SET "ENGINE=gzdoom"
+		SET SW=1
+	) ELSE (
+		SET "ENGINE=prboom"
+	)
+	GOTO :launch
+)
 IF ERRORLEVEL 1 SET "ENGINE=%VER_GZDOOM%"
-IF ERRORLEVEL 2 SET "ENGINE=%VER_BOOM%"
-IF ERRORLEVEL 3 SET "ENGINE=choco-doom"
 
 
 :launch
@@ -181,18 +193,10 @@ IF "%IWAD%" == "" (
 	SET "IWAD=DOOM2.WAD"
 )
 
-IF "%ENGINE%" == "%VER_BOOM%" (
+IF "%ENGINE%" == "prboom" (
 	REM # if a compatibility-level is specificed, include this for PRBoom engines
 	IF NOT "%CMPLVL%" == "" SET "PARAMS=%PARAMS% -complevel %CMPLVL%"
 )
-
-REM # customisations for gzdoom:
-IF NOT "%ENGINE%" == "%VER_GZDOOM%" GOTO :skill
-
-REM # load the extra lighting information
-SET FILES=%FILES% lights.pk3 brightmaps.pk3
-REM # add PK's sound effects
-REM SET FILES=%FILES% mods\pk_doom_sfx\pk_doom_sfx_20120224.wad
 
 :skill
 REM --------------------------------------------------------------------------------------------------------------------
@@ -262,7 +266,18 @@ SET "PARAMS=%PARAMS% -skill %SKILL%"
 
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
-CALL "%HERE%\doom.bat" %ENGINE% %IWAD% %PWAD% %PARAMS% -- %FILES%
+SET "OPTIONS="
+
+REM # GZDoom requirements:
+IF "%ENGINE%" == "%VER_GZDOOM%" (
+	REM # load the extra lighting information
+	SET FILES=%FILES% lights.pk3 brightmaps.pk3
+)
+REM # hardware or software rendering?
+REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
+IF %SW% EQU 1 SET "OPTIONS=/SW"
+
+CALL "%HERE%\doom.bat" %OPTIONS% %ENGINE% %IWAD% %PWAD% %PARAMS% -- %FILES%
 
 EXIT /B
 
@@ -343,37 +358,34 @@ GOTO :params
 
 :req
 REM --------------------------------------------------------------------------------------------------------------------
-REM # requires a limit-removing engine
+REM # requires a limit-removing engine:
 IF /I "%~1" == "no-limit" (
 	REM # disable Chocolate-* engines
 	SET ENGINE_CHOCODOOM=0
 	SET "REQ=%~1"
 )
-REM # requires boom-compatible engine
+REM # requires boom-compatible engine:
 IF /I "%~1" == "boom" (
 	REM # disable non-boom engines
 	SET ENGINE_CHOCODOOM=0
 	SET "REQ=%~1"
 )
-REM # requires prboom+ specifically
+REM # requires prboom+ specifically:
 IF /I "%~1" == "prboom" (
 	REM # disable non prboom+ engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # requires doom 64 capable engine; doom 64 ex only at this time
 IF /I "%~1" == "doom64" (
 	REM # disable all non DOOM-64 engines
 	SET ENGINE_CHOCODOOM=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 REM # gzdoom only
@@ -381,20 +393,16 @@ IF /I "%~1" == "gzdoom" (
 	REM # disable all non-GZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-22" (
 	REM # disable all non-GZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-22"
 	SET "REQ=%~1"
 )
@@ -402,10 +410,8 @@ IF /I "%~1" == "gzdoom-23" (
 	REM # disable all non-GZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-23"
 	SET "REQ=%~1"
 )
@@ -413,10 +419,8 @@ IF /I "%~1" == "gzdoom-24" (
 	REM # disable all non-GZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-24"
 	SET "REQ=%~1"
 )
@@ -424,28 +428,24 @@ IF /I "%~1" == "gzdoom-31" (
 	REM # disable all non-GZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_ZDOOM=0
 	SET "VER_GZDOOM=gzdoom-31"
 	SET "REQ=%~1"
 )
-REM # hardware-renderers only
+REM # hardware-renderers only:
 IF /I "%~1" == "hw" (
 	REM # disable all non-hardware renderers
 	SET ENGINE_CHOCODOOM=0
-	SET ENGINE_PRBOOM=0
-	SET ENGINE_ZDOOM=0
+	SET SW=0
 	SET "REQ=%~1"
 )
-REM # software-renderers only
+REM # software-renderers only:
 IF /I "%~1" == "sw" (
 	REM # disable all non-software renderers
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
-	SET ENGINE_GZDOOM=0
 	SET ENGINE_ZANDRONUM=0
+	SET SW=1
 	SET "REQ=%~1"
 )
 REM # z-based engines; zdoom, gzdoom, zandronum
@@ -453,53 +453,45 @@ IF /I "%~1" == "z" (
 	REM # disable all non-zdoom-based engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET "REQ=%~1"
 )
-REM # zandronum only
+REM # zandronum only:
 IF /I "%~1" == "zandronum" (
 	REM # disable all non-Zandronum engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
-REM # zandronum v2 only
+REM # zandronum v2 only:
 IF /I "%~1" == "zandronum-2" (
 	REM # set zandronum specific version number
 	SET "VER_ZANDRONUM=zandronum-2"
 	REM # disable all non-Zandronum engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
-REM # zandronum v3 only
+REM # zandronum v3 only:
 IF /I "%~1" == "zandronum-3" (
 	REM # set zandronum specific version number
 	SET "VER_ZANDRONUM=zandronum-3"
 	REM # disable all non-Zandronum engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET ENGINE_ZDOOM=0
 	SET "REQ=%~1"
 )
-REM # zdoom or gzdoom
+REM # zdoom or gzdoom:
 IF /I "%~1" == "zdoom" (
 	REM # disable all non-ZDoom engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
-	SET ENGINE_GLBOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET "REQ=%~1"

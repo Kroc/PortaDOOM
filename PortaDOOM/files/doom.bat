@@ -140,7 +140,7 @@ IF "%~1" == "" (
 	ECHO:
 	ECHO    %_OPTIONS_%/CONSOLE%_%             : Causes the output of the engine to be echoed to the
 	ECHO                           console. This implies %_OPTIONS_%/WAIT%_%. Works only with Z-based
-	ECHO                           engines: QZDoom, GZDoom, ZDoom and Zandronum
+	ECHO                           engines: GZDoom, ZDoom and Zandronum
 	ECHO:
 	ECHO    %_OPTIONS_%/DEFAULT%_%             : Loads the engine with the default config file instead
 	ECHO                           of the current user config file. Any changes you make
@@ -148,6 +148,9 @@ IF "%~1" == "" (
 	ECHO                           configuration file
 	ECHO:
 	ECHO    %_OPTIONS_%/32%_%                  : Always use 32-bit binaries, even on a 64-bit system
+	ECHO:
+	ECHO    %_OPTIONS_%/SW%_%                  : Force software rendering. By default hardware
+	ECHO                           rendering is used in GZDoom and PRBoom+ ^("glboom-plus"^)
 	ECHO:
         ECHO %_HEADING_%Engines:%_%
 	REM ---------------------------------------------------------------------------------
@@ -161,11 +164,9 @@ IF "%~1" == "" (
         ECHO     %_ENGINE_%choco-strife%_%        : As with choco-doom, but for Strife WADs
         ECHO     %_ENGINE_%choco-strife-setup%_%  : As above, but displays configuration first
         ECHO     %_ENGINE_%doom64ex%_%            : DOOM 64 EX, specifically for DOOM 64
-	ECHO     %_ENGINE_%glboom%_%              : PRBoom+ ^(OpenGL renderer^)
-        ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current
+        ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current. Use %_OPTIONS_%/SW%_% for ZDoom software rendering
 	ECHO     %_ENGINE_%gzdoom-??%_%           : Where ?? is "22", "23", "24" or "31"
-	ECHO     %_ENGINE_%prboom%_%              : PRBoom+ ^(software renderer^)
-        ECHO     %_ENGINE_%zdoom%_%               : ZDoom
+	ECHO     %_ENGINE_%prboom%_%              : PRBoom+
         ECHO     %_ENGINE_%zandronum%_%           : Zandronum current ^(2.x^)
 	ECHO     %_ENGINE_%zandronum-?%_%         : Where ? is "2" or "3"
         ECHO:
@@ -339,9 +340,20 @@ SET "FIX_PATH=..\..\.."
 
 REM # this is where we'll build up the entire parameter string for the engine
 SET "PARAMS="
+REM # the list of files will be built here:
+SET "FILES="
+REM # any DeHackEd patches?
+SET "DEH="
+SET "BEX="
 REM # if a config file is provided in the parameters ("-config ..."),
 REM # then it overrides the use of the user config files
 SET HAS_CONFIG=0
+
+REM # keep track of which types of files have been added or not
+SET ANY_WAD=0
+SET ANY_DEH=0
+SET ANY_BEX=0
+SET ANY_CFG=0
 
 REM # detect 32-bit or 64-bit Windows for those engines that provide both
 SET WINBIT=32
@@ -353,6 +365,7 @@ REM # default option values:
 SET CONSOLE=0
 SET DEFAULT=0
 SET WAIT=0
+SET SW=0
 
 
 :options
@@ -364,7 +377,6 @@ IF /I "%~1" == "/CONSOLE" (
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
-
 REM # use default config?
 IF /I "%~1" == "/DEFAULT" (
 	REM # we only need to enable the flag to indicate it,
@@ -373,7 +385,6 @@ IF /I "%~1" == "/DEFAULT" (
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
-
 REM # wait for engine before continuing execution
 IF /I "%~1" == "/WAIT" (
 	REM # set the feature flag, the launch section will handle it
@@ -381,11 +392,17 @@ IF /I "%~1" == "/WAIT" (
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
-
 REM # always use 32-bit binaries on a 64-bit system?
 IF /I "%~1" == "/32" (
 	REM # force this script to believe the system is 32-bit
 	SET WINBIT=32
+	REM # check for any other options
+	SHIFT & GOTO :options
+)
+REM # force software rendering in engines that have that option
+IF /I "%~1" == "/SW" (
+	REM # enable the software-rendering flag
+	SET SW=1
 	REM # check for any other options
 	SHIFT & GOTO :options
 )
@@ -401,12 +418,12 @@ IF %WINBIT% EQU 32 SET "ENGINE_BIT=x86"
 IF %WINBIT% EQU 64 SET "ENGINE_BIT=x64"
 
 REM # an identifier for config files used for an engine,
-REM # i.e. "zdoom" is expanded to "config.zdoom.ini"
+REM # i.e. "gzdoom" is expanded to "config.gzdoom.ini"
 SET "ENGINE_CFG="
 
-REM # engines are grouped together by common behaviour determined by their heritage;
-REM # we use this to handle differences in command line parameters for engines.
-REM # - V = vanilla engine; uses DSG save format. chocolate-doom fits this
+REM # engines are grouped together by common behaviour determined by their heritage,
+REM # we use this to handle differences in command line parameters for engines:
+REM # - V = Vanilla engine; uses DSG save format. chocolate-doom fits this
 REM # - B = Boom engine; compatible with the features added by boom. prboom+ (and above). DSG saves
 REM # - X = Kex engine -- DOOM 64 EX. Parameters are like Vanilla and Boom. DSG saves
 REM # - Z = ZDoom engine; derived from ZDoom, i.e. ZDoom, GZDoom and Zandronum. ZDS saves
@@ -497,15 +514,6 @@ IF /I "%~1" == "doom64ex" (
         SET "PORT_SAVE=doom64ex"
         ECHO          port : DOOM 64 EX
 )
-IF /I "%~1" == "glboom" (
-	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\prboom+"
-        SET "ENGINE_EXE=glboom-plus.exe"
-	SET "ENGINE_CFG=glboom-plus"
-	SET "ENGINE_KIN=B"
-        SET "PORT_SAVE=prboom"
-        ECHO          port : prboom+ ^(OpenGL renderer^)
-)
 IF /I "%~1" == "gzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
@@ -565,11 +573,20 @@ IF /I "%~1" == "gzdoom-dev" (
 IF /I "%~1" == "prboom" (
 	REM ------------------------------------------------------------------------------------------------------------
         SET "ENGINE_DIR=%PORTS%\prboom+"
-        SET "ENGINE_EXE=prboom-plus.exe"
-	SET "ENGINE_CFG=prboom-plus"
+	REM # are we using software rendering?
+	IF %SW% EQU 1 (
+		REM # use software-rendering executable
+		SET "ENGINE_EXE=prboom-plus.exe"
+		SET "ENGINE_CFG=prboom-plus"
+		ECHO          port : prboom+ ^(software renderer^)
+	) ELSE (
+		REM # use hardware-rendering executable
+		SET "ENGINE_EXE=glboom-plus.exe"
+		SET "ENGINE_CFG=glboom-plus"
+		ECHO          port : prboom+ ^(OpenGL renderer^)
+	)
 	SET "ENGINE_KIN=B"
-        SET "PORT_SAVE=prboom"
-        ECHO          port : prboom+ ^(software renderer^)
+        SET "PORT_SAVE=prboom"        
 )
 IF /I "%~1" == "qzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -618,15 +635,6 @@ IF /I "%~1" == "zdoom" (
         SET "PORT_SAVE=zdoom"
         ECHO          port : zdoom
 )
-IF /I "%~1" == "zdoom-dev" (
-	REM ------------------------------------------------------------------------------------------------------------
-	SET "ENGINE_DIR=%PORTS%\zdoom-dev_%ENGINE_BIT%"
-        SET "ENGINE_EXE=zdoom.exe"
-	SET "ENGINE_CFG=zdoom"
-	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=zdoom"
-        ECHO          port : zdoom ^(development^)
-)
 
 REM # no engine specified? use default
 IF "%PORT_SAVE%" == "" (        
@@ -639,6 +647,18 @@ IF "%PORT_SAVE%" == "" (
 ) ELSE (
         REM # the engine parameter can be discarded
         SHIFT
+)
+
+REM # do we need to force software-mode in GZDoom?
+IF "%ENGINE_CFG%" == "gzdoom" (
+	IF %SW% EQU 1 (
+		REM # add the CCMD to switch to software-renderer
+		SET "PARAMS=%PARAMS% +vid_renderer 0"
+	) ELSE (
+		REM # add the CCMD to switch to hardware-renderer
+		REM # (GZDoom will save the last mode used, so we must force it in every instance)
+		SET "PARAMS=%PARAMS% +vid_renderer 1"
+	)
 )
 
 SET "ENGINE=%ENGINE_DIR%\%ENGINE_EXE%"
@@ -987,12 +1007,7 @@ REM # TODO: DOOM2, Final DOOM specific error messages...
 ECHO:
 ECHO   ERROR! the file:
 ECHO:
-IF "%IWAD_EXT%" == "" (
-	ECHO       "%IWADS%\%IWAD%.WAD" or
-	ECHO       "%IWADS%\%IWAD%.PK3"
-) ELSE (
-	ECHO       "%IWADS%\%IWAD%"
-)
+ECHO       "%IWADS%\%IWAD%"
 ECHO:
 ECHO   doesn't exist.
 ECHO:
@@ -1077,7 +1092,10 @@ REM # see <www.chocolate-doom.org/wiki/index.php/WAD_merging_capability>
 IF "%ENGINE_KIN%" == "V" (
 	SET PARAMS=%PARAMS% -merge "%PWAD_PATH%"
 ) ELSE (
-	SET PARAMS=%PARAMS% -file "%PWAD_PATH%"
+	REM # the PWAD should appear as the first in the `-file` list
+	SET FILES=%FILES% "%PWAD_PATH%"
+	REM # ensure that the files section is included in the end
+	SET ANY_WAD=1
 )
 
 :params_begin
@@ -1200,12 +1218,6 @@ IF "%ENGINE_KIN%" == "V" (
 
 :files
 REM ====================================================================================================================
-REM # keep track of which types of files have been added or not
-SET ANY_WAD=0
-SET ANY_DEH=0
-SET ANY_BEX=0
-SET ANY_CFG=0
-
 REM # are there any files to add?
 IF "%~1" == "" GOTO :launch
 
@@ -1225,12 +1237,6 @@ IF NOT "%~1" == "--" (
         EXIT /B 1
 )
 SHIFT
-
-REM # the list of files will be built here:
-SET "FILES="
-REM # any DeHackEd patches?
-SET "DEH="
-SET "BEX="
 
 :files_loop
         REM # no more parameters remaining?
@@ -1366,7 +1372,7 @@ ECHO    Get Psyched!
 ECHO:
 
 REM # if you need to see what the final command will be:
-REM ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
+ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
 
 REM # outputting to console?
 REM # (only has an effect on Z-based engines)
