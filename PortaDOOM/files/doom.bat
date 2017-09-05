@@ -1240,7 +1240,7 @@ SHIFT
 
 :files_loop
         REM # no more parameters remaining?
-        IF "%~1" == "" GOTO :files_continue
+        IF "%~1" == "" GOTO :launch
 	
 	REM # check the previous directory used; we will prefer WADs in the same
 	REM # directory as the PWAD, over WADs from the base PWAD directory
@@ -1322,9 +1322,9 @@ REM ----------------------------------------------------------------------------
 	ENDLOCAL & SET "PREV_DIR=%PREV_DIR%"
 	GOTO:EOF
 	
-REM --------------------------------------------------------------------------------------------------------------------
 
-:files_continue
+:launch
+REM ====================================================================================================================
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
         SET "PARAMS=%PARAMS% -file %FILES%"
@@ -1336,10 +1336,6 @@ IF %ANY_DEH% EQU 1 (
 IF %ANY_BEX% EQU 1 (
         SET "PARAMS=%PARAMS% -bex %BEX%"
 )
-
-
-:launch
-REM ====================================================================================================================
 
 REM # get the desktop screen resolution:
 REM # http://stackoverflow.com/questions/25532444/get-screen-resolution-as-a-variable-in-cmd
