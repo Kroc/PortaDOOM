@@ -1,0 +1,42 @@
+$KEY:P=SHELL:pwads\megawads\strange_aeons\play.bat
+$KEY:T=SHELL:pwads\megawads\strange_aeons\SA readme.txt
+$KEY:I=SHELL:pwads\megawads\strange_aeons\Strange Aeons.pdf
+$KEY:W=SHELL:https://mikestoybox.net/2017/01/04/strange-aeons/
+
+:Strange Aeons                                    * 2016 Cacoward runner up! *
+:===============================================================================
+*[P] Play                         [T] .txt [I] Info (.pdf) [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2016>05>10*?  Author : _Impie_
+:Levels   : *45*            Modes : *Single
+:Requires : *zdoom*      Includes : *+Sound +Music +Graphics
+:-------------------------------------------------------------------------------
+
+As the Traveler, your task is simple: survive a dream odyssey across several fearsome realms from the darkest corners of the cosmos, where even the gods fear to tread. Each environment consists of eight maps, plus one secret map, and is populated by scores of nightmarish critters out for your blood. Find the big, humming slipgate at the end of each map to escape!
+
+See the included *[I] info .pdf* for story and further instructions.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base*                    : New from scratch
+*Build Time*              : The summer of 2015 (further playtests and maps in 2016)
+*Editor(s) used*          : DoomBuilder 2, Slade, XWE
+*Known Bugs*              : None Yet (crosses fingers)
+*Tested With*             : ZDoom
+
+:Credits
+:-------------------------------------------------------------------------------
+- Map Design & Story: _Impie_
+- Textures and Sounds: Chasm: The Rift
+- Texture Ripper: _zrrion the insect_
+- Additional Assets: _zrrion the insect_, _JoeyTD_, _WildWeasel_, _Captain Ventris_, _Ghastly Dragon_, _Eriance_, _Blue Shadow_, _MagicWazard_, _Tormentor667_, _Virtue_, _Dr. Doctor_, _Vader_, _Gez_, _Melvin_, _Xaser_, _Icytux_, _Xim_, _Psyren_, _Captain Toenail_, _François-Xavier Delmotte_
+- Music: Chasm: The Rift, SystemShock2, Death Mask, F.E.A.R
+- Intermission Art: _Michael Whelan_, _David Demaret_, _Lee Edwards_
+
+*Special Thanks:
+
+- _Scifista_ for answering my incessant questions
+- Doomworld for keeping Doom alive
+- Realm667 for the awesome stuff
+- _kmxexii_, _Skepticist_, and _SuitePee_ for playtesting
+- _Ed the Bat_ forcompiling the pk3 with filters
