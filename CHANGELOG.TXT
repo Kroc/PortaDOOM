@@ -7,7 +7,7 @@ PortaDOOM Alpha 3
 - Engine updates:
   * Chocolate-Doom/Heretic/Hexen/Strife updated to v2.3.0
   * GZDoom v2.3.2, v.2.4.0, v3.0.1, v3.1.0
-  * Zandronum-3 updated to 170806-2040
+  * Zandronum-3 updated out of Alpha to release 3.0!
 - WAD updates:
   * Cacowards 2016
   * Blade of Agony updated to C2
