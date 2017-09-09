@@ -1,0 +1,84 @@
+$KEY:T=SHELL:pwads\multiplayer\aeondm\aeondm.txt
+$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
+$KEY:1=GOTO:Don't Be A Bitch Remastered
+$KEY:2=SHELL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic
+
+:Aeon Deathmatch                                     * 2016 Cacoward winner! *
+:===============================================================================
+                                 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2016>11>18*   Author : *Various (see credits)
+:Levels   : *33*            Modes : *Last Man Standing 2-64 players, Deathmatch
+:Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+$KEY:D=SHELL:http://doomseeker.drdteam.org/
+! *NOTE:* PortaDOOM does not include multiplayer-only maps!
+! :-----------------------------------------------------------------------------
+! Use *[D] Doomseeker* to play online and search for 'aeondm'
+
+- 33 maps suitable for Team/Last Man Standing
+- Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons
+- Different skill levels change the weapons. Nightmare for Eon Weapons, vanilla the rest
+- Recommended to run with *[1] DbabRM*
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base*                  : Blank Screens
+*Build Time*            : 1 Year
+*Editor(s) used*        : Many
+*May Not Run With...*   : Anything that does not support 3D Floors + Hexen and UDMF Format
+
+:Credits
+:-------------------------------------------------------------------------------
+*Authors:
+
+- _Argentum_, _Combinebobnt_, _Decay_, _Dranzer_, _Dynamo_, _Grymmoire_, _HeavenWraith_, _IvanDobrovski_, _Jdagenet_, _Razgriz_, _Ru5tK1ng_
+
+*Special Thanks:
+
+- _Jan Van der Veken_, _Espi_, _Nightmare_, _Cage_, _Eriance_, _Vader_, _Dr3k_, _GothicDM_, _CounterStrike_, _David Gevert_, _DrDoctor_, _Ola Bjorn_?
+- The many unspecified authors of the Ocarina of Time Community Retexture Project which can be found *[2] here: http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic*
+- _Esselfortium_ and _Mechadon_ (SpaceDm9 Resources), _Skillsaw_ (Ancient Aliens Textures), _[IFOC]75_, _Chukker_ and _Arch129_ (for the Chex Quest Green Metal textures), _Eriance_ made the sprites for the abyss hornet that's in the Hive map, Kingpin textures (_R667_), _KDiZD Team_ for the sitting corpses in Aeon 19, Mojang for Minecraft textures, Quake 1-3, Blood, Shadow Warrior, Space Engine for the skyboxes
+- Star Trek: TNG, American Mcgee's "Alice", Dr Dre for the "High Powered" Beat
+- We apologize for anybody's resources used but not properly credited
+
+*Music Credits:
+
+- Full credits in mapinfo
+
+*Level Info:
+
+- *Aeon01:* Vanish - _Decay_
+- *Aeon02:* Solitaire - _Razgriz_
+- *Aeon03:* Echoes of Night - _Dranzer_
+- *Aeon04:* Techno-Junky - _Decay_
+- *Aeon05:* Swept Away - _Razgriz_
+- *Aeon06:* Havoc - _Grymmoire_
+- *Aeon07:* Haven - _Combinebobnt_
+- *Aeon08:* Assault Horizon - _Razgriz_
+- *Aeon09:* Hive - _Grymmoire_/_Combinebobnt_
+- *Aeon10:* Silo - _Combinebobnt_
+- *Aeon11:* Spiritual Awakening - _Decay_
+- *Aeon12:* Hong Kong Adventure - _Combinebobnt_/_IvanDobrovski_
+- *Aeon13:* Broken Hearts - _Decay_/_Heavenwraith_
+- *Aeon14:* Temple of the Warbird - _Argentum_
+- *Aeon15:* Space Warehouse Rumbles at Night - _Dranzer_/_Decay_
+- *Aeon16:* Breakthrough - _Dranzer_
+- *Aeon17:* Midnight Temple - _Decay_/_Grymmoire_
+- *Aeon18:* Urban Desolation - _Ru5tK1ng_
+- *Aeon19:* Wrong Number - _Razgriz_/_Grymmoire_
+- *Aeon20:* Quirk of Fate - _Razgriz_
+- *Aeon21:* Lava Laboratory - _Razgriz_
+- *Aeon22:* Decayed and Conquered - _Decay_/_Dynamo_
+- *Aeon23:* At Least It's Not Vanilla - _Grymmoire_
+- *Aeon24:* Edrick's Citadel - _Decay_/_Ru5tK1ng_/_IvanDobrovski_
+- *Aeon25:* Internal Conflict - _Dranzer_
+- *Aeon26:* The Heliomancers of Orionis - _Argentum_
+- *Aeon27:* Zinbrooks - _Jdagenet_
+- *Aeon28:* Thingol's Cave - _Decay_
+- *Aeon29:* Intense Collision - _Razgriz_
+- *Aeon30:* Dusk to Dawn - _Combinebobnt_
+- *Aeon31:* Blind Corridor - _Argentum_/_Razgriz_
+- *Aeon32:* Uncapable Flight Operator - _Dranzer_/_Combinebobnt_
+- *Aeon33:* Prismatic - |_Decay_/_Razgriz_/_Combinebobnt_/_Argentum_/_Dranzer_/_Ru5tK1ng_/_Grymmoire_

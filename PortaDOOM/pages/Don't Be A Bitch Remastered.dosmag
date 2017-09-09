@@ -1,15 +1,19 @@
-$KEY:P=SHELL:pwads\multiplayer\dbabrm\play.bat
 $KEY:T=SHELL:pwads\multiplayer\dbabrm\dbabrm.txt
 $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
 
 :Don't Be a Bitch Remastered                         * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+                                 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>08>13*   Author : *Mechanix Union (see credits section)
-:Levels   : *33*            Modes : *Last Man Standing 2-12 plays, Deathmatch
+:Levels   : *33*            Modes : *Last Man Standing 2-12 players, Deathmatch
 :Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
+
+$KEY:D=SHELL:http://doomseeker.drdteam.org/
+! *NOTE:* PortaDOOM does not include multiplayer-only maps!
+! :-----------------------------------------------------------------------------
+! Use *[D] Doomseeker* to play online and search for 'dbabrm'
 
 33 maps suitable for Team/Last Man Standing.
 Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons ONLY.
