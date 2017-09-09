@@ -464,7 +464,7 @@ IF /I "%~1" == "choco-heretic-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
         SET "ENGINE_DIR=%PORTS%\chocolate-heretic"
         SET "ENGINE_EXE=chocolate-heretic-setup.exe"
-	SET "ENGINE_CFG=choco-doom"
+	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
         SET "PORT_SAVE=choco-heretic"
         ECHO          port : chocolate heretic ^(setup^)

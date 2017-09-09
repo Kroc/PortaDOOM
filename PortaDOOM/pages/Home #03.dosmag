@@ -7,22 +7,6 @@ Credits for individual WADs are provided on each page but where a mod is used br
 (In alphabetical order:)
 
 
-:Brutal DOOM - <moddb.com/mods/brutal-doom>
-:===============================================================================
-By _Sergeant_Mark_IV_
-
-*Resource Contributors:
-_Mike12_, _Captain Toenail_, _Revilution_, _David G._, _Eriance_, _Perkristian_, _Dr. Doctor_, _Crucux Duo_, _DoomNukem_, _JoeyTD_, _Das_M_, _Pa1nki113r_, _Jekyll Grim Payne_.
-
-*v20b Beta Testing team:
-_Marcin Oprzadek/Martinoz_, _OccultWarwolf666_, _Gilded_, _wretchedspawn_, _HairyHog_, _Robin "NailGrind" Halliday_, _Doom Space Marine_, _JonouchiJoestar_, _TastySnax_, _Doctor Nick_, _DeathHeadsSkull_, _Peter "Supermarauder" Phethean_, _Austin Glan_, _Anthony Preis_, _Erx_, _theundeadsoldier_, _Justin (COTC) Hill_, _Fiorello1_, _Outrageous Videos_, _Iain 'Guy from Mt. Erebus' Lockhart_, _Doomguy5th_, _Capt. StarFox_, _SikSlayer_, _LordCeno_, _Alexis Bousiges_, _Braunschweiger(TM)_, _Reverend Hammer_, _Hellstorm Archon_, _JULKIssLoGAN_, _Jason Lopez-Ota_, _Charles "Maxigose" Phethean_, _Husarious_, _Engendro Venereo_, _Mooooooooooooo_, _TreAn_, _Michael Lusty-Smith_, _MaciejMaciejewski_, _Anthony "Ace-101" Nemitz_, _RobSpratt_, _Old_Glory_1776_, _Med1evil98_, _Pockgor Kroskni_, _GhettoButta_, _Cybermarine_, _Miguel371xd_, _HigorHuann_, _Fusions_, _Neskormi_, _Levente Lukacs_, _Agh07BR_, _JinnX_, _M4cron_, _Lozkho_, _Urizen_, _David Bellis_, _JRMYXD_, _mekanchest_, _Armyghy_, _TheDoomGuy.MG_,  _KevDOOMER_, _Brutal Doomguy_, _Blasboy97_, _supra107_, _Mr. Goth_, _"lordsudo"_, _Mephisto_, _AnthRaXXX_, _Ph0b0SS_, _goldsteed_.
-
-*Brutal Doom Blood Patch (BrutalBloodPatch20b.pk3), by _ProjectRemap_:
-_<moddb.com/games/doom-ii/addons/doom-2-project-remap>_
-
-*Quiet Marines Patch (Quiet_marines.pk3), by _D3athStalker_
-_<moddb.com/mods/brutal-doom/addons/quiet-marines>_
-
 :Chocolate DOOM / Heretic / Hexen / Strife - <chocolate-doom.org>
 :===============================================================================
 Chocolate Doom is written by _Simon Howard_, with extensive help from many other people who have provided patches, bug reports and suggestions.
@@ -74,12 +58,6 @@ _Tim Willits_
         Attack (ATTACK.WAD)
         Canyon (CANYON.WAD)
 
-:DOOM Metal Vol.4
-:===============================================================================
-Heavy metal DOOM soundtrack remix by _Neurological_, _Sonic Clang_, _Evil Horde_, _PerKristian_, _JustSomeMusicGuy_, _Dimaension X_, _Jonathan McCann_, _Chris Black_, _Eriotti_, _Lashmush_, _Andrew Hulshult_, _Rasmus Mä Ansekt_.
-
-_<moddb.com/mods/brutal-doom/downloads/doom-metal-soundtrack-mod-volume-4>_
-
 :Final DOOM
 :===============================================================================
 Copyright TeamTNT, iD software: _Ty Halderman_ (TNT: Evilution), _Dario Casali_ (The Plutonia Experiment), _Jonathan El-Bizri_, _Josh Martel_, _L.A. Sieben_, _Tom Mustaine_ and the team at iD software.
@@ -102,24 +80,6 @@ _<github.com/Kroc/DOOM-Crusher>_
 :PRBoom+ - <prboom-plus.sourceforge.net>
 :===============================================================================
 By _Andrey Budko (entryway)_
-
-:SmoothDoom, SmoothTextures - <forum.zdoom.org/viewtopic.php?f=19&t=45550>
-:===============================================================================
-Extra animations for everything.
-
-_Sergeant Mark IV_ (project founder, sprites and coding), _Osjclatchford_ (across the board spritework), _Blox_ (spritework for monsters, weapons), _Eriance_ (spritework for monsters), _Itsnaturetodie/David G._ (spritework for monsters, rifle), _Vader_ (spritework for monsters), _Minigunner_ (spritework for monsters, weapons), _Perkristian_ (smooth weapons), _Z86_ (spritework for weapons), _Uboa_ (spritework for weapons), _Blue Shadow_ (spritework for weapons, massive coding help), _Mike12_ (spritework for weapons), _NeuralStunner_ (spritework for weapons), _JoeyTD_ (spritework for weapons), _Turbo_ (spritework for shell casings), _Marphy Black_ (spritework for monsters), _Zrrion the Insect_ (spritework for props, textures), _Chickenlegz_ (spritework for monsters), _Agaures_ (textures), _Taggart_ (helmeted zombie sprites), _NiGHTMARE_ (textures), _Solmyr_ (spritework for monsters, chain lightning), _Monolith_ (spritework, sounds for shell casings), _Valve_ (sounds for shell casings), _3D Realms_ (spritework for explosions), _Doom4Ever mod_ (spritework for barrels), _Xim_ (alternate zombie faces), _SidDoyle_ (coding help for blood splatters), _OnslaughtSix_ (mugshot work and general helpfulness), _IcyFreezy_ (spritework for black gloves), _Osiris Kalev_ (immense bugfixing help and putting up with my bullshit), _PK1_ (inspiration and general helpfulness)
-
-:The High Resolution DOOM Sound Effects Pack
-:===============================================================================
-_<perkristian.net/game_doom-sfx.shtml>_
-
-By _pk_.
-
-:WadSmoosh (for doom_complete.pk3)
-:===============================================================================
-_<forum.zdoom.org/viewtopic.php?f=19&t=52757>_
-
-A tool created by _JPL_ to "smoosh" the DOOM games into one WAD. This creates "doom_complete.pk3", a combination of DOOM, DOOM II, Final DOOM, No Rest for the Living and The Master Levels.
 
 :Zandronum - <zandronum.com>
 :===============================================================================
