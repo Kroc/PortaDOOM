@@ -32,17 +32,17 @@ IF %ERRORLEVEL% EQU 3  CALL ..\doom.bat /WAIT /CONSOLE     choco-heretic-setup S
 IF %ERRORLEVEL% EQU 4  CALL ..\doom.bat /WAIT /CONSOLE     choco-hexen-setup   SHAREWARE\HEXEN.WAD
 IF %ERRORLEVEL% EQU 5  CALL ..\doom.bat /WAIT /CONSOLE     choco-strife-setup  SHAREWARE\STRIFE0.WAD
 IF %ERRORLEVEL% EQU 6  CALL ..\doom.bat /WAIT /CONSOLE     doom64ex            DOOM64.WAD
-IF %ERRORLEVEL% EQU 7  CALL ..\doom.bat /WAIT /CONSOLE     prboom              DOOM
-IF %ERRORLEVEL% EQU 8  CALL ..\doom.bat /WAIT /CONSOLE /SW prboom              DOOM
-IF %ERRORLEVEL% EQU 9  CALL ..\doom.bat /WAIT /CONSOLE     zandronum-2         DOOM
-IF %ERRORLEVEL% EQU 10 CALL ..\doom.bat /WAIT /CONSOLE     zandronum-3         DOOM
-IF %ERRORLEVEL% EQU 11 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-22           DOOM
-IF %ERRORLEVEL% EQU 12 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-22           DOOM
-IF %ERRORLEVEL% EQU 13 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-23           DOOM
-IF %ERRORLEVEL% EQU 14 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-23           DOOM
-IF %ERRORLEVEL% EQU 15 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-24           DOOM
-IF %ERRORLEVEL% EQU 16 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-24           DOOM
-IF %ERRORLEVEL% EQU 17 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-31           DOOM
-IF %ERRORLEVEL% EQU 18 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-31           DOOM
+IF %ERRORLEVEL% EQU 7  CALL ..\doom.bat /WAIT /CONSOLE     prboom              SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 8  CALL ..\doom.bat /WAIT /CONSOLE /SW prboom              SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 9  CALL ..\doom.bat /WAIT /CONSOLE     zandronum-2         SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 10 CALL ..\doom.bat /WAIT /CONSOLE     zandronum-3         SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 11 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-22           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 12 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-22           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 13 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-23           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 14 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-23           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 15 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-24           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 16 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-24           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 17 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-31           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 18 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-31           SHAREWARE\DOOM1.WAD
 
 GOTO :menu
