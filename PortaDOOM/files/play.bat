@@ -14,6 +14,8 @@ REM #
 REM # [/REQ engines]    specify engine requirements,
 REM #                   can be any of the following:
 REM # 
+REM #                   vanilla         - original DOOM with limits (visplane etc.) or above
+REM #                   choco           - ONLY chocolate-doom/heretic/hexen
 REM #			no-limit 	- requires a limits-removing engine
 REM #			boom		- requires boom-compatibility; prboom+ and above
 REM #			prboom          - requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
@@ -358,17 +360,23 @@ GOTO :params
 
 :req
 REM --------------------------------------------------------------------------------------------------------------------
+REM # force chocolate-* engine only:
+IF /I "%~1" == "choco" (
+	REM # disable non Chocolate-* engines
+	SET "ENGINE_DOOM64EX=0"
+	SET "ENGINE_GZDOOM=0"
+	SET "ENGINE_PRBOOM=0"
+	SET "ENGINE_ZANDRONUM=0"
+)
 REM # requires a limit-removing engine:
 IF /I "%~1" == "no-limit" (
 	REM # disable Chocolate-* engines
 	SET ENGINE_CHOCODOOM=0
-	SET "REQ=%~1"
 )
 REM # requires boom-compatible engine:
 IF /I "%~1" == "boom" (
 	REM # disable non-boom engines
 	SET ENGINE_CHOCODOOM=0
-	SET "REQ=%~1"
 )
 REM # requires prboom+ specifically:
 IF /I "%~1" == "prboom" (
@@ -377,7 +385,6 @@ IF /I "%~1" == "prboom" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET "REQ=%~1"
 )
 REM # requires doom 64 capable engine; doom 64 ex only at this time
 IF /I "%~1" == "doom64" (
@@ -386,7 +393,6 @@ IF /I "%~1" == "doom64" (
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET "REQ=%~1"
 )
 REM # gzdoom only
 IF /I "%~1" == "gzdoom" (
@@ -395,7 +401,6 @@ IF /I "%~1" == "gzdoom" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-22" (
 	REM # disable all non-GZDoom engines
@@ -404,7 +409,6 @@ IF /I "%~1" == "gzdoom-22" (
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET "VER_GZDOOM=gzdoom-22"
-	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-23" (
 	REM # disable all non-GZDoom engines
@@ -413,7 +417,6 @@ IF /I "%~1" == "gzdoom-23" (
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET "VER_GZDOOM=gzdoom-23"
-	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-24" (
 	REM # disable all non-GZDoom engines
@@ -422,7 +425,6 @@ IF /I "%~1" == "gzdoom-24" (
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET "VER_GZDOOM=gzdoom-24"
-	SET "REQ=%~1"
 )
 IF /I "%~1" == "gzdoom-31" (
 	REM # disable all non-GZDoom engines
@@ -431,14 +433,12 @@ IF /I "%~1" == "gzdoom-31" (
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET "VER_GZDOOM=gzdoom-31"
-	SET "REQ=%~1"
 )
 REM # hardware-renderers only:
 IF /I "%~1" == "hw" (
 	REM # disable all non-hardware renderers
 	SET ENGINE_CHOCODOOM=0
 	SET SW=0
-	SET "REQ=%~1"
 )
 REM # software-renderers only:
 IF /I "%~1" == "sw" (
@@ -446,7 +446,6 @@ IF /I "%~1" == "sw" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_ZANDRONUM=0
 	SET SW=1
-	SET "REQ=%~1"
 )
 REM # z-based engines; zdoom, gzdoom, zandronum
 IF /I "%~1" == "z" (
@@ -454,7 +453,6 @@ IF /I "%~1" == "z" (
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_PRBOOM=0
-	SET "REQ=%~1"
 )
 REM # zandronum only:
 IF /I "%~1" == "zandronum" (
@@ -463,7 +461,6 @@ IF /I "%~1" == "zandronum" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET "REQ=%~1"
 )
 REM # zandronum v2 only:
 IF /I "%~1" == "zandronum-2" (
@@ -474,7 +471,6 @@ IF /I "%~1" == "zandronum-2" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET "REQ=%~1"
 )
 REM # zandronum v3 only:
 IF /I "%~1" == "zandronum-3" (
@@ -485,7 +481,6 @@ IF /I "%~1" == "zandronum-3" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_GZDOOM=0
 	SET ENGINE_PRBOOM=0
-	SET "REQ=%~1"
 )
 REM # zdoom or gzdoom:
 IF /I "%~1" == "zdoom" (
@@ -494,8 +489,8 @@ IF /I "%~1" == "zdoom" (
 	SET ENGINE_DOOM64EX=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
-	SET "REQ=%~1"
 )
+SET "REQ=%~1"
 GOTO:EOF
 
 :complevel
