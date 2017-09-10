@@ -653,11 +653,11 @@ REM # do we need to force software-mode in GZDoom?
 IF "%ENGINE_CFG%" == "gzdoom" (
 	IF %SW% EQU 1 (
 		REM # add the CCMD to switch to software-renderer
-		SET "PARAMS=%PARAMS% +vid_renderer 0"
+		SET PARAMS=%PARAMS% +vid_renderer 0
 	) ELSE (
 		REM # add the CCMD to switch to hardware-renderer
 		REM # (GZDoom will save the last mode used, so we must force it in every instance)
-		SET "PARAMS=%PARAMS% +vid_renderer 1"
+		SET PARAMS=%PARAMS% +vid_renderer 1
 	)
 )
 
@@ -1327,14 +1327,14 @@ REM ----------------------------------------------------------------------------
 REM ====================================================================================================================
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
-        SET "PARAMS=%PARAMS% -file %FILES%"
+        SET PARAMS=%PARAMS% -file %FILES%
 )
 REM # DeHackEd extensions?
 IF %ANY_DEH% EQU 1 (
-        SET "PARAMS=%PARAMS% -deh %DEH%"
+        SET PARAMS=%PARAMS% -deh %DEH%
 )
 IF %ANY_BEX% EQU 1 (
-        SET "PARAMS=%PARAMS% -bex %BEX%"
+        SET PARAMS=%PARAMS% -bex %BEX%
 )
 
 REM # get the desktop screen resolution:
@@ -1368,7 +1368,7 @@ ECHO    Get Psyched!
 ECHO:
 
 REM # if you need to see what the final command will be:
-REM ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
+ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
 
 REM # outputting to console?
 REM # (only has an effect on Z-based engines)
