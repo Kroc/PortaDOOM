@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat pwads\MASTER\FISTULA.WAD /LEVEL 1
+$KEY:P=SHELL:play.bat /PWAD pwads\MASTER\FISTULA.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\FISTULA.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_The_Fistula_(Master_Levels)
 

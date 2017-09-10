@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat MASTER\VIRGIL.WAD /LEVEL 3
+$KEY:P=SHELL:play.bat /PWAD MASTER\VIRGIL.WAD /LEVEL 3
 $KEY:T=SHELL:pwads\MASTER\VIRGIL.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP03:_Virgil%27s_Lead_(Master_Levels)
 

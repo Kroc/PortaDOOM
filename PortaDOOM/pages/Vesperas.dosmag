@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat MASTER\VESPERAS.WAD /LEVEL 9
+$KEY:P=SHELL:play.bat /PWAD MASTER\VESPERAS.WAD /LEVEL 9
 $KEY:T=SHELL:pwads\MASTER\VESPERAS.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP09:_Vesperas_(Master_Levels)
 

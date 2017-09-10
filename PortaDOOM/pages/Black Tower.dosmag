@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat MASTER\BLACKTWR.WAD /LEVEL 25
+$KEY:P=SHELL:play.bat /PWAD MASTER\BLACKTWR.WAD /LEVEL 25
 $KEY:T=SHELL:pwads\MASTER\BLACKTWR.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 

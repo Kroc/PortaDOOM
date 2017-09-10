@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat MASTER\MINOS.WAD /LEVEL 5
+$KEY:P=SHELL:play.bat /PWAD MASTER\MINOS.WAD /LEVEL 5
 $KEY:T=SHELL:pwads\MASTER\MINOS.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP05:_Minos%27_Judgement_(Master_Levels)
 

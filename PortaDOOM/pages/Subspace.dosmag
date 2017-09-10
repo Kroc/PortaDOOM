@@ -1,4 +1,4 @@
-$KEY:P=SHELL:play.bat pwads\MASTER\SUBSPACE.WAD /LEVEL 1
+$KEY:P=SHELL:play.bat /PWAD pwads\MASTER\SUBSPACE.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\SUBSPACE.TXT
 $KEY:W=SHELL:https://doomwiki.org/wiki/MAP01:_Subspace_(Master_Levels)
 
