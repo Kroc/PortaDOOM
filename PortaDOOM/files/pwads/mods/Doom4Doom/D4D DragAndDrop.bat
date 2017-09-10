@@ -1,1 +1,0 @@
-gzdoom.exe -file %1 %2 D4D.pk3 d4dMusic.pk3
