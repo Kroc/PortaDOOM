@@ -6,8 +6,6 @@ PortaDOOM Alpha 3
         https://doomwiki.org/wiki/IWAD
         
 [X] Heretic / Hexen from Steam / GOG e.g. Elf Gets Pissed
- - [ ] Set engine defaults for Heretic / Hexen
-
 [X] Fix build (git-archive won't work, should just use robocopy)
 [ ] dosmag : BUG: whitespace-only lines being skipped?
 [X] dosmag : Better warning box handling, allow multiple-lines / improve syntax
@@ -20,10 +18,8 @@ PortaDOOM Alpha 3
 [X] dosmag : bug with breadcrumb showing page number!?
 [X] dosmag : speech-marks should be word-boundaries (allow `"_Romero_ style"`)
 [X] dosmag : allow exclamation / question mark as character-boundary, e.g. `_name_!`
-[ ] Finish Cacowards 2015 (DoomRL Arsenal)
- - [ ] Does DoomRL Arsenal require g/zdoom-dev?
- - [ ] Keybindings!
-[ ] Cacowards 2016
+[X] Cacowards 2015
+[X] Cacowards 2016
 [ ] File stuff from Cacowards into TCs/Megawads/Maps/Vanilla &c.
 [ ] N64 DOOM64.WAD detection / warning
 [X] Combine edit-default scripts into one and change them to delete the user-config instead

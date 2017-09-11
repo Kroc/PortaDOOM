@@ -4,10 +4,12 @@ PortaDOOM Alpha 3
   * New styling, including bullet-points
   * Added website links to most WAD pages
   * Added link to original author's txt file for most WAD pages
+  * WAD pages can now link to other WAD pages
 - Engine updates:
   * Chocolate-Doom/Heretic/Hexen/Strife updated to v2.3.0
   * GZDoom v2.3.2, v.2.4.0, v3.0.1, v3.1.0
   * Zandronum-3 updated out of Alpha to release 3.0!
+  * ZDoom 2.8.1 removed, GZDoom's software-renderer will be used instead
 - WAD updates:
   * Cacowards 2016
   * Blade of Agony updated to C2
@@ -16,11 +18,14 @@ PortaDOOM Alpha 3
   * PSX DOOM updated to work with GZDoom 2.3+
     Added Lost Levels and other improvements
 - Script Updates:
-  * Fixed GOG / Steam WAD usage
+  * Added Harmony IWAD support
+  * Fixed broken GOG / Steam WAD usage
   * Added support for GOG version of DOOM 3 BFG Edition
+  * Added support for Steam HERETIC & HEXEN
   * Fixed PWAD usage with Chocolate-Doom (requires `-merge`)
-  * Changed central play.bat to use named parameters for better reliability,
-    added GZDoom version numbers, and added Harmony & HEXEN IWAD support
+  * Requests for ZDoom will be forwarded to GZDoom in software-mode,
+    since that's an extact replica of ZDoom and ZDoom is discontinued
+  * Added `-complevel` support
 
 PortaDOOM Alpha 2 (17-DEC-16)
 =============================

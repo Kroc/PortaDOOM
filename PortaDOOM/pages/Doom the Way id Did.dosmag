@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\megawads\DTWID\play.bat
-$KEY:T=SHELL:pwads\megawads\DTWID\DTWID.txt
+$KEY:P=SHELL:pwads\classical\DTWID\play.bat
+$KEY:T=SHELL:pwads\classical\DTWID\DTWID.txt
 $KEY:W=SHELL:http://dtwid.herokuapp.com/
 
 :Doom the Way id Did
