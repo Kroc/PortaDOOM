@@ -21,7 +21,7 @@ I'm not saying it was aliens, but... the truth is out there.
 :-------------------------------------------------------------------------------
 *Base*                    : Texture wad based on 32in24-14 resource
 *Build Time*              : 15 months
-*Editor(s) used*          : Doom Builder 2 , GZDoom Builder, Slade, WhackEd, 
+*Editor(s) used*          : Doom Builder 2, GZDoom Builder, Slade, WhackEd, 
                           GIMP, Notepad++
 *Known Bugs*              : None
 *May Not Run With...*     : Gameplay mods that change the palette or don't 
@@ -127,7 +127,7 @@ I'm not saying it was aliens, but... the truth is out there.
                           Rogue Entertainment
                           http://www.freesfx.co.uk 
 
-Map List:
+:Map List
 :-------------------------------------------------------------------------------
 - MAP01 - *"The Ancient Navajo Wolf Warp"* by _skillsaw
 - MAP02 - *"Sanctum of the Wastes"* by _skillsaw
