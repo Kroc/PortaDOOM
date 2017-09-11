@@ -98,8 +98,8 @@ REM # check which engines are compatible and ask the user if more than one
 REM # if software is required,
 IF %SW% EQU 1 (
 	REM # and there's a choice between prboom and gzdoom (software),
-	REM # just favour prboom. e.g. 50shades.wad
-	IF "%ENGINE_PRBOOM%-%ENGINE_GZDOOM%" == "1-1" SET ENGINE_GZDOOM=0
+	REM # favour gzdoom. e.g. AA_E1.wad won't work with ZScript
+	IF "%ENGINE_PRBOOM%-%ENGINE_GZDOOM%" == "1-1" SET ENGINE_PRBOOM=0
 )
 
 REM # count the number of compatible engines:

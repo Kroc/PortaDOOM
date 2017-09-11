@@ -1,5 +1,11 @@
 PortaDOOM Alpha 3
 ========================================================================================================================
+[ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to incompatibility with ZScript
+    and a visual bug -- current work-around is to limit it to software rendering
+
+[ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
+    they'll need their own config file
+
 [ ] Patch BFG WADs
         https://github.com/Doom-Utils/iwad-patches
         https://zdoom.org/wiki/IWAD
