@@ -34,6 +34,8 @@ CONST PINK = 13 '..COLOR code for "bright purple" (fuscia), foreground ONLY
 CONST YELLOW = 14 'COLOR code for "bright orange" (yellow), foreground ONLY
 CONST WHITE = 15 '.COLOR code for "bright white", foreground ONLY
 
+CONST BLINK = 16 '.add this to any colour to make it blink on & off
+
 '------------------------------------------------------------------------------
 
 CONST ASC_NULL = 0
@@ -59,6 +61,7 @@ CONST ASC_COLON = 58 '    :
 CONST ASC_SEMICOLON = 59 ';
 CONST ASC_EQUALS = 61 '   =
 CONST ASC_QMARK = 63 '    ?
+CONST ASC_AT = 64 '       @
 
 CONST ASC_A = 65
 CONST ASC_B = 66
@@ -99,21 +102,21 @@ CONST ASC_BAR = 124 '   |
 
 CONST ASC_DIAMOND = 4
 
-CONST ASC_ARR_UP = 24 'up-arrow
-CONST ASC_ARR_DN = 25 'down-arrow
-CONST ASC_ARR_LT = 27 'left-arrow
-CONST ASC_ARR_RT = 26 'right-arrow
+CONST ASC_ARR_UP = 24 '.......up-arrow
+CONST ASC_ARR_DN = 25 '.......down-arrow
+CONST ASC_ARR_LT = 27 '.......left-arrow
+CONST ASC_ARR_RT = 26 '.......right-arrow
 
-CONST ASC_LGLLMT = 174 'left guillemet, i.e. double angle-bracket
+CONST ASC_LGLLMT = 174 '......left guillemet, i.e. double angle-bracket
 
-CONST ASC_BOX_H = 196 'horizontal line
-CONST ASC_BOX_V = 179 'vertical line
-CONST ASC_BOX_TL = 218 'top-left corner
-CONST ASC_BOX_TR = 191 'top-right corner
-CONST ASC_BOX_BL = 192 'bottom-left corner
-CONST ASC_BOX_BR = 217 'bottom-right corner
+CONST ASC_BOX_H = 196 '.......horizontal line
+CONST ASC_BOX_V = 179 '.......vertical line
+CONST ASC_BOX_TL = 218 '......top-left corner
+CONST ASC_BOX_TR = 191 '......top-right corner
+CONST ASC_BOX_BL = 192 '......bottom-left corner
+CONST ASC_BOX_BR = 217 '......bottom-right corner
 
-CONST ASC_BOX_DBL_H = 205 'horizontal double-line
+CONST ASC_BOX_DBL_H = 205 '...horizontal double-line
 
 CONST ASC_BOX_BL_DBL_B = 212 'bottom-left corner, with double-line on bottom
 CONST ASC_BOX_BR_DBL_B = 190 'bottom-right corner, double-line on bottom
