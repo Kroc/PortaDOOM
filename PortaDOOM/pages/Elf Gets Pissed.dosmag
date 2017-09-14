@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\episodes\elfgp\play.bat
 $KEY:T=SHELL:pwads\episodes\elfgp\elfgp.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 :Elf Gets Pissed                                     * 2016 Cacoward winner! *
 :===============================================================================
@@ -14,7 +14,7 @@ $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
 ! :-----------------------------------------------------------------------------
 ! If you own _"Heretic: Shadow of the Serpent Riders"_ on Steam it will be detected automatically, otherwise place the file in the _"files\iwads"_ folder. Please purchase the game from Steam; you will not be able to play without purchasing Heretic.
-$KEY:S=SHELL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
+$KEY:S=URL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
 
 An episode 1 replacement for Heretic.
 

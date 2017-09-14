@@ -1,5 +1,5 @@
 $KEY:P=SHELL:iwads\SHAREWARE\adventures_of_square\play.bat
-$KEY:W=SHELL:http://adventuresofsquare.com
+$KEY:W=URL:http://adventuresofsquare.com
 
 :The Adventures of Square
 :===============================================================================

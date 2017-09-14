@@ -1,6 +1,6 @@
 $KEY:P=SHELL:play.bat /PWAD MASTER\NESSUS.WAD /LEVEL 7
 $KEY:T=SHELL:pwads\MASTER\NESSUS.TXT
-$KEY:W=SHELL:https://doomwiki.org/wiki/MAP07:_Nessus_(Master_Levels)
+$KEY:W=URL:https://doomwiki.org/wiki/MAP07:_Nessus_(Master_Levels)
 
 :Nessus                                            (Master Levels for DOOM II)
 :===============================================================================
@@ -14,8 +14,8 @@ $KEY:W=SHELL:https://doomwiki.org/wiki/MAP07:_Nessus_(Master_Levels)
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "NESSUS.WAD":
 ! :-----------------------------------------------------------------------------
 ! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
-$KEY:G=SHELL:https://www.gog.com/game/doom_ii_final_doom
-$KEY:S=SHELL:http://store.steampowered.com/sub/18397/
+$KEY:G=URL:https://www.gog.com/game/doom_ii_final_doom
+$KEY:S=URL:http://store.steampowered.com/sub/18397/
 
 NESSUS is the 5th Canto in my INFERNO series. Minos decided to grant leniency and not kill you until next week. In the meantime, having slipped past Cerberus, the top dog, you and Virgil come to a precipice overlooking the river Phlegethon. There, Virgil greets the Minotaur using phrases from an out-of-date "Passport to Demonese" by Charles Berlitz. Enraged at having been asked to remove his panties, the Minotaur falls upon the ground and throws a conniption fit. You grab Virgil and climb down some boulders to the foot of the cliff where Chiron, the chief Centaur, offers to have Nessus carry you across the river on his shoulders.
 

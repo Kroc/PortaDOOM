@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\community\mutiny\play.bat
 $KEY:T=SHELL:pwads\community\mutiny\mutiny.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
 
 :Mutiny                                              * 2016 Cacoward winner! *
 :===============================================================================

@@ -1,5 +1,5 @@
 $KEY:T=SHELL:pwads\multiplayer\ChaosCoreCTFmpII-b\chaoscorectf.txt
-$KEY:W=SHELL:https://zandronum.com/forum/viewtopic.php?t=5977
+$KEY:W=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 
 :ChaosCore CTF                                       * 2015 Cacoward winner! *
 :===============================================================================
@@ -10,7 +10,7 @@ $KEY:W=SHELL:https://zandronum.com/forum/viewtopic.php?t=5977
 :Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-$KEY:D=SHELL:http://doomseeker.drdteam.org/
+$KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use *[D] Doomseeker* to play online and search for 'ChaosCoreCTF'

@@ -1,0 +1,326 @@
+================================================================
+
+Title            : STRAIN 1.0
+Filenames        : (see below)
+
+Author           :
+		   The Alpha Dog Alliance
+		   ada@iname.com
+		   http://www.geocities.com/Area51/Cavern/8528/
+		   (Please send us email if you enjoy STRAIN!)
+
+Description      :
+		   STRAIN is THE largest DOOM II Total Conversion.
+		   And it's FREE!
+
+		   This is the product of our painstaking
+		   effort at a true successor to DOOM II.
+		   We hope you'll agree that it is much better
+		   than 90% of all those $50 shovelware first
+		   person shooters that wish they were DOOM!
+
+		   STRAIN includes 32 new levels, all new
+		   music, and a complete story which carries
+		   through the levels.  It also contains
+		   100+ new textures, and many new
+		   baddies, weapons, graphics, and sound
+		   effects.  Yes, that's right: new
+		   baddies and weapons!
+
+		   Designed for single play with special support
+		   for co-op and deathmatch play.  All difficulty
+		   levels supported - from beginner to DOOM god.
+
+		   Please visit our web site for more info
+		   and the story!
+
+================================================================
+ Where To Get This WAD 
+================================================================
+
+Please check our web site for download information/sites:
+
+    http://www.geocities.com/Area51/Cavern/8528/
+
+================================================================
+ Installation
+================================================================
+
+We have tried to make the installation as simple as possible.
+First, remember you must own DOOM II and have it installed.
+Unfortunately, there are many versions of DOOM II.   We
+recommend version 1.9.  First, we explain how to upgrade your
+DOOM II.  If you have version 1.9, or you want to try and
+use an older version (with caution), you can skip this part.
+Then we explain how to install STRAIN for DOOM II.
+
+   =============================
+    Getting DOOM II Version 1.9
+   =============================
+
+   DOOM II comes in versions 1.666, 1.7, 1.7a, 1.8 and 1.9!
+   (phew!  Actually there are TWO version 1.666 by date:
+   8-29-94 and 9-20-94.)  You can upgrade them with free patches
+   from iD.  The patches are located at
+
+     ftp://ftp.idsoftware.com/idstuff/doom2/index.txt
+
+   and they are strangely named.  All the patches entail unzipping
+   the file, and getting some instruction and a patch.zip (yes
+   a zip file inside of a zip file.)  The instruction will explain
+   how to unzip patch.zip into your DOOM II directory and run it.
+   Then you can delete it.  Sometimes a single original zip file
+   will contain multiple patches named, for instance, patcha, patchb,
+   etc.  It's not hard.  We're just kind of giving an overview.
+
+   Here are the upgrade paths:
+
+   1.8 -> 1.9
+      Use the patch in 2_18_19.zip
+   1.7a -> 1.9
+      Use the patch in d2_19.zip
+   1.7 -> 1.9
+      First use 'patchc' in doom2p.zip to upgrade to 1.7a.
+      Then use the instructions to get from 1.7a to 1.9.
+   1.666 (9-20-94) -> 1.9
+      First use 'patchb' in doom2p.zip to upgrade to 1.7a.
+      Then use the instructions to get from 1.7a to 1.9.
+   1.666 (8-29-94) -> 1.9
+      First use 'patcha' in doom2p.zip to upgrade to 1.7a.
+      Then use the instructions to get from 1.7a to 1.9.
+
+   =============================
+    Installing STRAIN
+   =============================
+
+   STRAIN comes with an installer and an 'unpacker' to do
+   the dirty work.  The steps you must follow to install
+   STRAIN are simply the following:
+
+    * Make sure that you have enough space on your computer
+    * Download the distribution files
+    * Unpack the files onto your hard drive using the included
+      file 'unpack.bat'
+    * Fire up the included front end 'strain.bat' and
+      choose 'install'
+ 
+   ----------------------------------------
+    Making Sure That You Have Enough Space
+   ----------------------------------------
+
+    STRAIN takes more space to install than to
+    keep around for playing.
+
+    During installation, STRAIN will need at least 15 MB
+    of hard drive space.  This is in addition to
+    the space required by the distribution files
+    themselves, which require about 5 MB.  In other words,
+    you will need 20 MB in the worst case.
+    
+    After installation, STRAIN will take 15 MB of space.
+ 
+   ------------------------------------
+    Downloading the Distribution Files
+   ------------------------------------
+
+    Download the STRAIN files from an FTP site.
+    
+    To find an available FTP site, go to our home site
+    "http://www.geocities.com/Area51/Cavern/8528/" and
+    follow the appropriate links.
+
+    The STRAIN distribution consists of 5 MB of files.
+
+      strain.txt
+      unpack.bat
+      strain.001
+      strain.002
+      strain.003
+      strain.004
+ 
+    If you want to make floppies from which to install STRAIN, get
+    four blank high-density diskettes and copy the files to the
+    diskettes as follows:
+
+      Disk 1 -- strain.001, strain.txt, and unpack.bat
+      Disk 2 -- strain.002
+      Disk 3 -- strain.003
+      Disk 4 -- strain.004
+ 
+ 
+   ----------------------------
+    Unpacking the Distribution
+   ----------------------------
+
+    Use the 'unpack.bat' script (which you just
+    downloaded) to unpack the distribution.
+    The command is of the form:
+
+      unpack <distribution-dir> <strain-dir>
+ 
+    "<distribution-dir>" is the location of your downloaded
+    distribution files.  If they are on floppies, use "a:"
+    for this directory.  Note that this must be a FULL path
+    name with the drive letter specified and NO trailing
+    backslash (this is due to a limitation of DOS BAT files).
+
+    "<strain-dir>" is the destination directory.  This may
+    be your DOOM II directory or a special STRAIN directory
+    or anywhere you choose.  This must also be a FULL path
+    name with the drive letter specified and NO trailing
+    backslash.
+
+    Examples:
+
+      Suppose you'd like STRAIN to be in a sub-directory of DOOM II
+      "c:\doom2\strain".  Further suppose the distribution is at
+      "c:\download".  Then you would use the following command:
+
+	unpack c:\download c:\doom2\strain
+ 
+      (Use full path names.  If you are in c:\temp at the time,
+      do NOT type "unpack ..\download ..\doom2\strain".  Instead
+      give a path starting at the drive letter.)
+
+      Or suppose you'd like STRAIN in the same place as above, but
+      the distribution is on floppies:
+
+	unpack a: c:\doom2\strain
+
+      The unpacker will prompt you for each of the disks in succession.
+      Make certain that you have at least SOME disk in the drive when
+      you press a key.  The unpacker can recover from the wrong disk
+      being inserted.  However, if there is no disk in the drive, you will
+      get the infamous "Abort, Retry, Fail" message and there is no
+      way to recover.  You will have to terminate the BAT file (with
+      ^C) and then begin unpacking again.
+
+      Note: in these cases, the unpacking will fail if there is
+      not enough free space on drive C:
+ 
+ 
+   -------------------
+    Installing STRAIN
+   -------------------
+
+    If all went well, the unpacker should have instructed you to type
+    "strain".  This would be an ideal time to type "strain". :-)
+
+    After the front end comes up, you can simply hit the "Install"
+    button.  You will be prompted for the location of your registered
+    copy of DOOM II.  The installer will do the rest.  Now you're
+    ready to play!
+ 
+    Shortcut: you can skip entering the front end program by
+    typing the 'install' option to the 'strain' program:
+
+      strain install <DOOM2-DIR>
+
+    Note: While the installer is installing STRAIN, you may get a message
+    from DeHackEd asking "Do you want to do this?"  Just hit the 'y'
+    key to confirm.
+
+    Note: The installer makes noises and plays a tune and is generally
+    cool.  If you are in Windows 95 and do not get these effects, it
+    won't hurt anything, but you'll need to set your BLASTER and SOUND
+    environment variables to get sound.
+
+   -------------
+    Cleaning Up
+   -------------
+
+    You can then delete the distribution files: strain.001 through
+    strain.004, unpack.bat, and strain.txt.
+
+    But a better suggestions would be to pass them on to a DOOM II loving
+    friend.  (-:  Or at least archive them somewhere.
+
+   ----------------
+    Playing STRAIN
+   ----------------
+
+    To play, follow these steps:
+
+    * Change to the STRAIN directory (not the DOOM II directory
+      unless you dumped STRAIN into the DOOM II directory).
+
+    * Type 'strain play' or, alternatively, you can bring up
+      the front end by typing 'strain' and then clicking the
+      'Play' button.
+
+    Note: the demos in STRAIN will look psychotic.  This is 
+    because we chose not to replace them.  What you are seeing
+    is the movements of your marine from an old demo, but now
+    in a new setting!  So he looks berserk, bouncing off walls,
+    shooting at air, and so forth.  If we had replaced the
+    demos, then using a version of DOOM II other than 1.9 would
+    have been problematic for sure.  We won't go into it.
+
+================================================================
+ Copyright / Permissions 
+================================================================
+
+Authors should write us (ada@iname.com) to inquire into the use
+of these levels.
+
+You MAY distribute this WAD, provided you include this file and
+the entire STRAIN package, with no modifications.
+
+You may distribute STRAIN in any electronic
+format (BBS, Diskette, CD, etc) but no money may be collected
+for this add-on without writing us for permission.  Not even
+if the money is just to 'recover the cost of the medium.'  This
+obviously includes software compilations.  Just write us
+already.  Also, you must keep the STRAIN package intact,
+including this file.
+
+Other than that, enjoy and please spread STRAIN as far and wide
+as possible!  And please write us to let us know what you think
+or to at least let us know how far it spread!
+
+Oh yeah, for the crazies out there who are always after an
+unearned buck: STRAIN and its installer are provided as is and
+come with no warranty of any kind, either expressed or implied.
+In no event will the copyright holders be liable for any damages
+resulting from the use of this software.
+
+================================================================
+ The Alpha Dog Alliance
+================================================================
+
+  Charlie Patterson   |    Adelusion
+  David Rotramel      |    Rich Johnston
+  Arthur Chang        |    Eric Roberts
+  Bjorn Hermans       |    Jon Landis
+  Bill McClendon      |    Holger Nathrath 
+  Chainsaw            |    Andy Badorek
+  Florian Helmberger  |    Darrell Esau
+  Ron Allen           |    Adam Windsor
+  David Graves        |    David Davidson
+  Bishop              |    Stuart Burke
+  Brian Burke         |    Will Vale
+  Iikka Keranen       |    David Shaw
+  Mark Klem           |    Justin Patterson
+  Bob Lindemann       |    Aaron Koller
+  Xenos               |    Reid Harmon
+  Frank Buckley       |
+
+  Chris Shullenbarger |    John Walker
+  Richard Church      |    Mister Bungle
+
+  For FULL credits on who did what, please see our web page
+  (listed at the beginning of this file).
+
+===============================================================
+ Additional Credits To
+===============================================================
+
+  id Software,
+  Greg Lewis (DeHackEd),
+  Ben Morris (DCK),
+  Antony J.Burden and Simon Oke (DETH),
+  Marc Rousseau (ZenNode)
+  Olivier Montanuy (WinTex)
+
+================================================================
+

@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\episodes\ge5-pd\play.bat
 $KEY:T=SHELL:pwads\episodes\ge5-pd\ge5-pd.txt
-$KEY:W=SHELL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
+$KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
 
 :Prime Directive                                  * 2015 Cacoward runner up! *
 :===============================================================================
@@ -45,13 +45,13 @@ Suffice to say if you play through Space Station Omega again it will have a subt
 
 *DEVELOPMENT HISTORY
 
-$KEY:A=SHELL:http://forum.zdoom.org/viewtopic.php?f=19&t=35115
+$KEY:A=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=35115
 I've kept an extensive development diary on the ZDoom forums. Point your browser to [A] _<forum.zdoom.org/viewtopic.php?f=19&t=35115>_
 
-$KEY:B=SHELL:https://drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM
+$KEY:B=URL:https://drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM
 I've also kept extensive revisions on my Google Drive. If seeing how this mod progressed is of interest to you, point your browser to [B] _<drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM>_ This may not stay up forever, I'd need to be running out of space on my drive to get rid of it though.
 
-$KEY:C=SHELL:http://youtu.be/B_43lSRCAIQ
+$KEY:C=URL:http://youtu.be/B_43lSRCAIQ
 I have also recorded a playthrough detailing how to get 100% as well as providing general commentary on the development and thought process behind Prime Directive. Point your browser to [C] _<youtu.be/B_43lSRCAIQ>_ and be prepared to hear my voice for two and a half hours.
 
 *REMIXING

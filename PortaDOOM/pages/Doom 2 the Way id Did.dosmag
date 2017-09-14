@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\classical\D2TWID\play.bat
 $KEY:T=SHELL:pwads\classical\D2TWID\D2TWID.txt
-$KEY:W=SHELL:http://d2twid.herokuapp.com/
+$KEY:W=URL:http://d2twid.herokuapp.com/
 
 :Doom 2 the Way id Did
 :===============================================================================

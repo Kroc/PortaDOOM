@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\jokes\ludicrm\play.bat
 $KEY:T=SHELL:pwads\jokes\ludicrm\ludicrm.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
 
 :Luducrium                                           * 2016 Cacoward winner! *
 :===============================================================================

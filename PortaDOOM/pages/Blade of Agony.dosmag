@@ -1,7 +1,7 @@
 $KEY:P=SHELL:pwads\conversions\boa\play.bat
 $KEY:T=SHELL:pwads\conversions\boa\wolf_boa.txt
 $KEY:C=SHELL:pwads\conversions\boa\wolf_boa_cr.txt
-$KEY:W=SHELL:http://boa.realm667.com/
+$KEY:W=URL:http://boa.realm667.com/
 
 :WolfenDoom: Blade of Agony                          * 2016 Cacoward winner! *
 :===============================================================================

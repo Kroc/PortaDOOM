@@ -1,12 +1,12 @@
-$KEY:1=SHELL:http://doomedsda.us/
-$KEY:2=SHELL:https://www.doomworld.com/sda/news.htm
-$KEY:3=SHELL:http://www.doom2.net/compet-n/index.cgi
-$KEY:4=SHELL:http://doomedsda.us/player1lmps.html
-$KEY:5=SHELL:http://doomedsda.us/top20.html
-$KEY:6=SHELL:https://www.doomworld.com/sda/x2.htm
-$KEY:7=SHELL:https://www.doomworld.com/vb/doom-speed-demos/55591-the-doomed-speed-demos-archive-returns/
-$KEY:8=SHELL:http://doomedsda.us/player59lmps.html
-$KEY:9=SHELL:https://www.doomworld.com/publicdang/
+$KEY:1=URL:http://doomedsda.us/
+$KEY:2=URL:https://www.doomworld.com/sda/news.htm
+$KEY:3=URL:http://www.doom2.net/compet-n/index.cgi
+$KEY:4=URL:http://doomedsda.us/player1lmps.html
+$KEY:5=URL:http://doomedsda.us/top20.html
+$KEY:6=URL:https://www.doomworld.com/sda/x2.htm
+$KEY:7=URL:https://www.doomworld.com/vb/doom-speed-demos/55591-the-doomed-speed-demos-archive-returns/
+$KEY:8=URL:http://doomedsda.us/player59lmps.html
+$KEY:9=URL:https://www.doomworld.com/publicdang/
 
 ^C:CACOWARDS 2016 : ESPI AWARD FOR LIFETIME ACHIEVEMENT
 

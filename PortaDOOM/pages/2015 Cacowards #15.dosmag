@@ -1,7 +1,7 @@
 $KEY:1=GOTO:DoomRL Arsenal
 $KEY:2=GOTO:ChaosCore CTF
 $KEY:3=GOTO:InstaDoom
-$KEY:4=SHELL:https://www.doomworld.com/idgames/index.php?search=1&field=author&word=dannebubinga&sort=time&order=asc&page=1
+$KEY:4=URL:https://www.doomworld.com/idgames/index.php?search=1&field=author&word=dannebubinga&sort=time&order=asc&page=1
 
 ^C:2015 CACOWARDS : OTHER AWARDS
 

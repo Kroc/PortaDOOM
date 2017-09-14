@@ -1,7 +1,7 @@
 $KEY:T=SHELL:pwads\multiplayer\aeondm\aeondm.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
 $KEY:1=GOTO:Don't Be A Bitch Remastered
-$KEY:2=SHELL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic
+$KEY:2=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic
 
 :Aeon Deathmatch                                     * 2016 Cacoward winner! *
 :===============================================================================
@@ -12,7 +12,7 @@ $KEY:2=SHELL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Communit
 :Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-$KEY:D=SHELL:http://doomseeker.drdteam.org/
+$KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use *[D] Doomseeker* to play online and search for 'aeondm'

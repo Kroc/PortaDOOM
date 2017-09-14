@@ -1,5 +1,5 @@
 $KEY:T=SHELL:pwads\multiplayer\32in24-16\32in24-16.txt
-$KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/91306-32in24-16-doot-ctf/
+$KEY:W=URL:https://www.doomworld.com/vb/wads-mods/91306-32in24-16-doot-ctf/
 
 :32in24-16: DOOT CTF                                 * 2016 Cacoward winner! *
 :===============================================================================
@@ -10,7 +10,7 @@ $KEY:W=SHELL:https://www.doomworld.com/vb/wads-mods/91306-32in24-16-doot-ctf/
 :Requires : *zandronum*  Includes : *?
 :-------------------------------------------------------------------------------
 
-$KEY:D=SHELL:http://doomseeker.drdteam.org/
+$KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use *[D] Doomseeker* to play online and search for '32in24-16'

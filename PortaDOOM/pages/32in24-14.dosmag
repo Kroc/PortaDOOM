@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\community\32in24-14\play.bat
 $KEY:T=SHELL:pwads\community\32in24-14\32in24-14.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/32in2414
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/32in2414
 
 :32in24-14: How the Hamburglar Stole Christmas    * 2015 Cacoward runner up! *
 :===============================================================================

@@ -1,5 +1,5 @@
 $KEY:P=SHELL:play.bat /IWAD DOOM
-$KEY:W=SHELL:https://doomwiki.org/wiki/Doom
+$KEY:W=URL:https://doomwiki.org/wiki/Doom
 
 :The Ultimate DOOM
 :===============================================================================
@@ -13,7 +13,7 @@ $KEY:W=SHELL:https://doomwiki.org/wiki/Doom
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "DOOM.WAD":
 ! :-----------------------------------------------------------------------------
 ! If you own _"Ultimate DOOM"_, _"DOOM Classic Complete"_ or _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\iwads" folder. Please purchase the game from [G] GOG or [S] Steam. You can play without purchasing DOOM, but will be limited to the Shareware release containing the first episode.
-$KEY:G=SHELL:https://www.gog.com/game/the_ultimate_doom
-$KEY:S=SHELL:http://store.steampowered.com/sub/18397/
+$KEY:G=URL:https://www.gog.com/game/the_ultimate_doom
+$KEY:S=URL:http://store.steampowered.com/sub/18397/
 
 Doom is widely regarded as one of the most important titles in gaming history. In the wake of its immense popularity, dozens of new first-person shooter titles appeared, which were more often referred to as "Doom clones" than "first-person shooters".

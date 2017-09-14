@@ -1,5 +1,5 @@
 $KEY:T=SHELL:pwads\multiplayer\dbabrm\dbabrm.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
 
 :Don't Be a Bitch Remastered                         * 2015 Cacoward winner! *
 :===============================================================================
@@ -10,7 +10,7 @@ $KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f
 :Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-$KEY:D=SHELL:http://doomseeker.drdteam.org/
+$KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use *[D] Doomseeker* to play online and search for 'dbabrm'

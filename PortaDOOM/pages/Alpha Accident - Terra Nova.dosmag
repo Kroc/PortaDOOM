@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\episodes\aa_e1\play.bat
 $KEY:T=SHELL:pwads\episodes\aa_e1\AA_E1.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom/Ports/a-c/aa_e1
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/a-c/aa_e1
 
 :Alpha Accident: Terra Nova                          * 2016 Cacoward winner! *
 :===============================================================================

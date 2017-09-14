@@ -1,7 +1,7 @@
 $KEY:P=SHELL:pwads\megawads\strange_aeons\play.bat
 $KEY:T=SHELL:pwads\megawads\strange_aeons\SA readme.txt
 $KEY:I=SHELL:pwads\megawads\strange_aeons\Strange Aeons.pdf
-$KEY:W=SHELL:https://mikestoybox.net/2017/01/04/strange-aeons/
+$KEY:W=URL:https://mikestoybox.net/2017/01/04/strange-aeons/
 
 :Strange Aeons                                    * 2016 Cacoward runner up! *
 :===============================================================================

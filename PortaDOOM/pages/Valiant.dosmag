@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\megawads\valiant\play.bat
 $KEY:T=SHELL:pwads\megawads\valiant\valiant.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 
 :Valiant                                             * 2015 Cacoward winner! *
 :===============================================================================

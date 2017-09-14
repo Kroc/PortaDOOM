@@ -1,5 +1,5 @@
 $KEY:P=SHELL:play.bat /REQ no-limit /PWAD NERVE.WAD
-$KEY:W=SHELL:https://doomwiki.org/wiki/No_Rest_for_the_Living
+$KEY:W=URL:https://doomwiki.org/wiki/No_Rest_for_the_Living
 
 :No Rest for the Living
 :===============================================================================
@@ -14,5 +14,5 @@ $KEY:W=SHELL:https://doomwiki.org/wiki/No_Rest_for_the_Living
 ! :-----------------------------------------------------------------------------
 ! If you own _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\iwads" folder. Please purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing DOOM 3 BFG Edition.
 
-$KEY:S=SHELL:https://www.gog.com/game/doom_3_bfg_edition
-$KEY:S=SHELL:http://store.steampowered.com/app/208200/
+$KEY:S=URL:https://www.gog.com/game/doom_3_bfg_edition
+$KEY:S=URL:http://store.steampowered.com/app/208200/

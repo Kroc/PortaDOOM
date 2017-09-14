@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\megawads\aaliens\play.bat
 $KEY:T=SHELL:pwads\megawads\aaliens\aaliens.txt
-$KEY:W=SHELL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 
 :Ancient Aliens                                      * 2016 Cacoward winner! *
 :===============================================================================
@@ -203,5 +203,5 @@ I'm not saying it was aliens, but... the truth is out there.
 The full Ancient Aliens OST is available on
 _Stewboy_'s bandcamp:
 
-$KEY:B=SHELL:https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost 
+$KEY:B=URL:https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost 
 [B] _<stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost>

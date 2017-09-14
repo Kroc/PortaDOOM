@@ -1,6 +1,6 @@
 $KEY:P=SHELL:pwads\conversions\PSX\play.bat
-$KEY:W=SHELL:https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/
-$KEY:L=SHELL:https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-lost-levels/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/
+$KEY:L=URL:https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-lost-levels/
 
 :Playstation DOOM (The Total Conversion) + The Lost Levels
 :===============================================================================
