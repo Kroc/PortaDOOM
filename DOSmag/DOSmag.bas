@@ -33,6 +33,20 @@ CONST CTL_INDENT = ASC_BAR '       |
 CONST CTL_BREAK = ASC_BSLASH '     \\ (manual line-break)
 CONST CTL_WARNING = ASC_EXCL '     !
 
+'formatting ruler / tabstops
+'-----------------------------------------------------------------------------
+CONST CTL_RULER = ASC_AT '         @ character for marking a ruler
+
+TYPE TabStop
+    col AS INTEGER 'column number of the tab-stop
+    type AS _BYTE
+END TYPE
+
+CONST TABSTOP_LEFT = 0 'default tabstop type, left-alignment
+
+'a ruler is just a collection of tabstops
+REDIM SHARED Ruler(0) AS TabStop
+
 'screen layout
 '-----------------------------------------------------------------------------
 CONST ASC_SCROLL_TRACK = 176 'ASCII code for the scrolling track
@@ -57,6 +71,10 @@ CONST PAGE_WIDTH = SCREEN_WIDTH - 3
 
 CONST PAGE_FGND = LTGREY
 CONST PAGE_BKGD = BLUE
+
+'colour of the status/bar, help screen and some dialog boxes
+CONST HELP_FGND = BLACK
+CONST HELP_BKGD = CYAN
 
 'extended height of the status area at the bottom of the screen;
 'note that heights above 0 actually overlap the page, not squash it.
@@ -101,6 +119,7 @@ DIM SHARED PageLine AS INTEGER 'line number at top of screen
 CONST ACTION_GOTO = 1 '.key binding action to load another page
 CONST ACTION_PAGE = 2 '.key binding action to switch pages in a set
 CONST ACTION_SHELL = 3 'key binding action to open a file
+CONST ACTION_URL = 4 '..key binding action to launch a browser URL
 
 'a page can define keys and their actions
 TYPE PageKey
@@ -151,6 +170,13 @@ HelpText$(11) = "      [" + CHR$(ASC_ARR_DN) + "] = Scroll-down page (or MWHEEL-
 HelpText$(12) = ""
 HelpText$(13) = "   [PgUp] = scroll-up one screen-full    [HOME] = Scroll to top of page"
 HelpText$(14) = "   [PgDn] = scroll-down one screen-full   [END] = Scroll to bottom of page"
+
+'dialog box
+'-----------------------------------------------------------------------------
+DIM SHARED dialogOn`: dialogOn` = FALSE
+DIM SHARED dialogWidth%
+REDIM SHARED dialogLines$(0)
+
 
 
 'MAIN:
@@ -313,9 +339,14 @@ DO
                                 DIM cwd$: cwd$ = _CWD$
                                 CHDIR "files"
                                 'exeute the shell command
-                                SHELL PageKeys(n%).param
+                                SHELL TRIM(PageKeys(n%).param)
                                 'return to the previous directory
                                 CHDIR cwd$
+
+                            CASE ACTION_URL
+                                launchURL TRIM(PageKeys(n%).param)
+                                EXIT FOR
+
                         END SELECT
                     END IF
                 NEXT
@@ -423,6 +454,8 @@ SUB helpScreen
 
     '-------------------------------------------------------------------------
     DO
+        'limit this processing loop to 30 fps to reduce CPU usage
+        _LIMIT 30
         'wait for any key press
         SLEEP
 
@@ -475,6 +508,8 @@ SUB refreshScreen
     drawHeader
     drawPage
     drawStatus
+    'draw the overlayed dialog box if one is currently present
+    IF dialogOn` THEN drawDialog
 
     'flip the display buffers
     buffer% = 1 - buffer%
@@ -522,7 +557,7 @@ SUB drawHeader
         LOCATE (HEAD_TOP + 1), SCREEN_WIDTH - tab_width%
         PRINT CHR$(ASC_BOX_V);
         IF PageNum% > 1 THEN
-            COLOR TABS_FGND + 16, TABS_BKGD
+            COLOR TABS_FGND + BLINK, TABS_BKGD
             PRINT CHR$(ASC_ARR_LT);
             COLOR TABS_FGND, TABS_BKGD
         ELSE
@@ -530,7 +565,7 @@ SUB drawHeader
         END IF
         PRINT " " + tab_text$ + " ";
         IF PageNum% < PageCount% THEN
-            COLOR TABS_FGND + 16, TABS_BKGD
+            COLOR TABS_FGND + BLINK, TABS_BKGD
             PRINT CHR$(ASC_ARR_RT);
             COLOR TABS_FGND, TABS_BKGD
         ELSE
@@ -688,7 +723,7 @@ END SUB
 'draw the status bar at the bottom of the screen
 '=============================================================================
 SUB drawStatus
-    COLOR BLACK, CYAN
+    COLOR HELP_FGND, HELP_BKGD
     IF StatusHeight%% = 0 THEN
         LOCATE SCREEN_HEIGHT, 1
         PRINT SPACE$(SCREEN_WIDTH);
@@ -720,6 +755,37 @@ SUB drawStatus
 
         _CONTROLCHR ON
     END IF
+END SUB
+
+'draw a dialogue box, if present
+'=============================================================================
+SUB drawDialog
+    'calculate the position of the border box on screen
+    DIM boxWidth%: boxWidth% = dialogWidth% + 4
+    DIM boxLeft%: boxLeft% = (SCREEN_WIDTH - boxWidth%) / 2
+    DIM boxHeight%: boxHeight% = UBOUND(dialogLines$)
+    DIM boxTop%: boxTop% = 1 + (SCREEN_HEIGHT - (boxHeight% + 2)) / 2
+
+    'draw the dialogue border and background
+    COLOR HELP_FGND + BLINK, HELP_BKGD
+    LOCATE boxTop%, boxLeft%
+    PRINT CHR$(ASC_BOX_TL) + STRING$(dialogWidth%+ 2, ASC_BOX_H) + _
+          CHR$(ASC_BOX_TR);
+    DIM i%
+    FOR i% = (boxTop% + 1) TO (boxTop% + boxHeight%)
+        LOCATE i%, boxLeft%
+        PRINT CHR$(ASC_BOX_V) + SPACE$(dialogWidth% + 2) + CHR$(ASC_BOX_V);
+    NEXT
+    LOCATE i%, boxLeft%
+    PRINT CHR$(ASC_BOX_BL) + STRING$(dialogWidth% + 2, ASC_BOX_H) + _
+          CHR$(ASC_BOX_BR);
+
+    'draw the dialogue contents
+    COLOR HELP_FGND, HELP_BKGD
+    FOR i% = 1 TO UBOUND(dialogLines$)
+        LOCATE boxTop% + i%, boxLeft% + 2
+        PRINT dialogLines$(i%)
+    NEXT
 END SUB
 
 'load a page from disk
@@ -782,6 +848,9 @@ SUB loadPage (page_name$)
 
     '-------------------------------------------------------------------------
 
+    'clear the ruler before walking the page formatting
+    REDIM Ruler(0) AS TabStop
+
     OPEN file_path$ FOR BINARY AS #1
     DO UNTIL EOF(1)
         'read a line of text from source
@@ -833,6 +902,9 @@ SUB loadPage (page_name$)
             ELSEIF LEFT$(action$, 6) = "SHELL:" THEN
                 param$ = TRIM$(MID$(action$, 7))
                 action% = ACTION_SHELL
+            ELSEIF LEFT$(action$, 4) = "URL:" THEN
+                param$ = TRIM$(MID$(action$, 5))
+                action% = ACTION_URL
             ELSE
                 fatalError "The page '" + file_path$ + "' " _
                          + "contains an invalid key definition"
@@ -914,6 +986,11 @@ FUNCTION pageNumber$ (page_number%)
         THEN pageNumber$ = CHR$(PAGE_ASC) + "0" + STRINT$(page_number%) _
         ELSE pageNumber$ = CHR$(PAGE_ASC) + STRINT$(page_number%)
 END FUNCTION
+
+'define a ruler from a formatting line
+'=============================================================================
+SUB defineRuler (line$)
+END SUB
 
 '=============================================================================
 SUB formatLine (indent%, line$)
@@ -1053,6 +1130,19 @@ SUB formatLine (indent%, line$)
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
         END IF
     END IF
+
+    'dividing lines?
+    '-------------------------------------------------------------------------
+    'if the line begins with three (or more) line marks, its a dividing line
+    'TODO: this will be converted to ruler definition
+    ''IF LEFT$(line$, 3) = CHR$(CTL_LINE1) + CHR$(CTL_LINE1) + CHR$(CTL_LINE1) _
+    ''OR LEFT$(line$, 3) = CHR$(CTL_LINE2) + CHR$(CTL_LINE2) + CHR$(CTL_LINE2) _
+    ''THEN
+    ''    'just add the control code, the `printLine` sub will draw it
+    ''    newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(line$, c%))
+    ''    'ignore the rest of the line!
+    ''    GOSUB addLine: EXIT SUB
+    ''END IF
 
     '-------------------------------------------------------------------------
 
@@ -1362,6 +1452,10 @@ SUB formatLine (indent%, line$)
     IF is_heading` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_HEADING)
     END IF
+    'are we currently in parentheses?
+    IF word_paren` = TRUE THEN
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
+    END IF
     'in key mode?
     IF word_key` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_KEY_ON)
@@ -1374,11 +1468,6 @@ SUB formatLine (indent%, line$)
     IF word_italic` = TRUE THEN
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_ITALIC)
     END IF
-    'are we currently in parentheses?
-    IF word_paren` = TRUE THEN
-        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_PAREN_ON)
-    END IF
-
     'begin the line with the remaining word
     newline$ = newline$ + word$: l% = l% + w%
 
@@ -1604,6 +1693,81 @@ SUB printLine (line$)
             COLOR PAGE_FGND, PAGE_BKGD
     END SELECT
     RETURN
+END SUB
+
+'display a confirmation screen for launching a URL
+'=============================================================================
+SUB launchURL (url$)
+    'display the URL warning
+
+    'set the width of the dialogue box
+    'NOTE: this is the internal width, 'width of text',
+    '      padding and border will be added automatically
+    dialogWidth% = 64
+
+    REDIM dialogLines$(1 TO 3)
+    dialogLines$(1) = "Do you want to launch the following URL"
+    dialogLines$(2) = "in your default web browser?"
+    dialogLines$(3) = ""
+
+    'the URL will likely need to be line-wrapped;
+    'how many lines will it take?
+    DIM urlWidth%: urlWidth% = dialogWidth%
+    DIM urlLines%: urlLines% = _CEIL(LEN(url$) / urlWidth%)
+    REDIM _PRESERVE dialogLines$(1 TO 6 + urlLines%)
+
+    DIM i%
+    FOR i% = 1 TO urlLines%
+        dialogLines$(3 + i%) = " " + _
+                               MID$(url$, urlWidth% * (i% - 1), urlWidth%)
+    NEXT i%
+
+    dialogLines$(3 + i% + 2) = SPACE$(dialogWidth% - 10) + "[Y] or [N]"
+
+    dialogOn` = TRUE
+    refreshScreen
+
+    '-------------------------------------------------------------------------
+    DO
+        'limit this processing loop to 30 fps to reduce CPU usage
+        _LIMIT 30
+        'wait for any key press
+        SLEEP
+
+        DIM key$: key$ = INKEY$
+        IF key$ <> "" THEN
+            SELECT CASE ASC(UCASE$(key$))
+                CASE ASC_Y
+                    'launch the URL
+                    SHELL url$
+                    'return the main screen
+                    EXIT DO
+
+                CASE ASC_ESC, ASC_N
+                    'cancel launching URL,
+                    'return to main screen
+                    EXIT DO
+
+                CASE 0
+                    IF ASC(key$, 2) = ASC_F11 THEN
+                        'flip the full-screen mode
+                        IF _FULLSCREEN = 0 THEN
+                            'use 1:1 pixel sizing as best as possible;
+                            '(the other option blurs the picture)
+                            _FULLSCREEN _SQUAREPIXELS
+                        ELSE
+                            _FULLSCREEN _OFF
+                        END IF
+                    END IF
+            END SELECT
+
+            'clear the keyboard buffer
+            DO WHILE INKEY$ = "": LOOP
+        END IF
+    LOOP
+
+    dialogOn` = FALSE
+    refreshScreen
 END SUB
 
 'show an error screen and stop the program
