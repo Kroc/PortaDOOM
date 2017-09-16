@@ -922,23 +922,23 @@ SUB loadPage (page_name$)
             'an indent at the beginning of the line
             'will be maintained on wrapped lines
             DIM indent%: indent% = 0 'length of the indent (spaces)
-            DIM c%: c% = 1 'current character position in the source line
+            DIM src%: src% = 1 'current character position in the source line
 
             'check for an indent:
             DO
                 'watch out for the possibility of a white-space only line
-                IF c% >= LEN(line$) THEN EXIT DO
+                IF src% >= LEN(line$) THEN EXIT DO
                 'check the charcter
-                SELECT CASE ASC(line$, c%)
+                SELECT CASE ASC(line$, src%)
                     CASE ASC_TAB
                         'if it's a tab, account for 8 spaces
                         'in the line wrapping
                         indent% = indent% + 8
-                        c% = c% + 1
+                        src% = src% + 1
 
                     CASE ASC_SPC
                         indent% = indent% + 1
-                        c% = c% + 1
+                        src% = src% + 1
 
                     CASE ELSE
                         'we've reached a non white-space character
@@ -948,7 +948,7 @@ SUB loadPage (page_name$)
             LOOP
 
             'if there is an indent, slice it off
-            IF c% > 1 THEN line$ = MID$(line$, c%)
+            IF src% > 1 THEN line$ = MID$(line$, src%)
 
             'process formatting-codes in the line (and word-wrap)
             formatLine indent%, line$
@@ -993,9 +993,12 @@ SUB defineRuler (line$)
 END SUB
 
 '=============================================================================
-SUB formatLine (indent%, line$)
+SUB formatLine (indent%, src$)
     'always right-trim a line as this can cause unexpected wrapping
-    line$ = RTRIM$(line$)
+    src$ = RTRIM$(src$)
+    'length of the input string; further down, we'll add a terminating space
+    'to allow look-ahead, but this value won't change
+    DIM src_len%: src_len% = LEN(src$)
 
     'define the width of the line for word-wrapping: (sans-indent)
     DIM line_width%: line_width% = PAGE_WIDTH - indent%
@@ -1005,17 +1008,51 @@ SUB formatLine (indent%, line$)
 
     '-------------------------------------------------------------------------
 
-    DIM newline$ '..the line we're building up
-    DIM char% '.....ASCII code of current character
-    DIM c%: c% = 1 'current character position in the source line
-    DIM l%: l% = 0 'length of the line being built (sans format-codes)
+    DIM src% '.current character position in the source line
+    DIM char% 'ASCII code of current character
 
-    DIM word$ 'the current word being built
-    DIM w% '...length of the current word (excluding format-codes)
+    'for aligning tabs, we need to know the *column* number of the current
+    'character in the original source line, this is not the same as the
+    'string index as tab characters are expanded into spaces
+    DIM src_col%: src_col% = indent%
+
+    'this will be the current line of text being formatted,
+    'since the input string may be longer than the allowed width,
+    'multiple output lines may need to be produced
+    DIM newline$
+
+    'visual length of the line being built (sans format-codes)
+    DIM line_len%: line_len% = 0
+
+    DIM word$ '....the current word being built
+    DIM word_len% 'length of the current word (excluding format-codes)
+
+    'convert tabs to spaces
+    '-------------------------------------------------------------------------
+    FOR src% = 1 TO src_len%
+        char% = ASC(src$, src%)
+        IF char% = ASC_TAB THEN
+            DIM t%: t% = 1
+            DO
+                IF (t% * 8) > indent% + LEN(newline$) THEN
+                    newline$ = newline$ + SPACE$( _
+                        (t% * 8) - (indent% + LEN(newline$)) _
+                    )
+                    EXIT DO
+                END IF
+                t% = t% + 1
+            LOOP
+        ELSE
+            newline$ = newline$ + CHR$(char%)
+        END IF
+    NEXT
+    src$ = newline$: newline$ = ""
+    src_len% = LEN(src$)
+    src% = 1
 
     'adding a space on the end allows us to do a 1-character look-ahead
     'without having to avoid indexing past the end of the string
-    line$ = line$ + " "
+    src$ = src$ + " "
 
     'warning box?
     '-------------------------------------------------------------------------
@@ -1024,11 +1061,13 @@ SUB formatLine (indent%, line$)
     'lines with the marker contribute to a single box
     STATIC is_warn`
 
-    IF ASC(line$, c%) = CTL_WARNING THEN
+    IF ASC(src$, src%) = CTL_WARNING THEN
         'skip the marker
-        c% = c% + 1
+        src% = src% + 1: src_col% = src_col% + 1
         'if there is a following space, ignore it (typograhical)
-        IF ASC(line$, c%) = ASC_SPC THEN c% = c% + 1
+        IF ASC(src$, src%) = ASC_SPC THEN
+            src% = src% + 1: src_col% = src_col% + 1
+        END IF
 
         'if this is the opening line of the warning-box, include the border
         IF is_warn` = FALSE THEN
@@ -1040,7 +1079,7 @@ SUB formatLine (indent%, line$)
             newline$ = newline$ + STRING$(line_width% - 4, CHR$(ASC_BOX_H))
             newline$ = newline$ + CHR$(ASC_BOX_TR)
             'dispatch the top-border line and continue with intended line
-            GOSUB addLine: newline$ = ""
+            GOSUB addLine
         END IF
 
         'add the warning box formatting code
@@ -1061,7 +1100,7 @@ SUB formatLine (indent%, line$)
             newline$ = newline$ + STRING$(line_width% - 4, CHR$(ASC_BOX_H))
             newline$ = newline$ + CHR$(ASC_BOX_BR)
             'dispatch the bottom-border line and continue with intended line
-            GOSUB addLine: newline$ = ""
+            GOSUB addLine
         END IF
     END IF
 
@@ -1069,7 +1108,7 @@ SUB formatLine (indent%, line$)
     'we need to check this after processing the warning box as a blank line
     'following a warning box must trigger the closing warning-box border
     'before adding the blank line itself
-    IF TRIM$(line$) = "" THEN
+    IF TRIM$(src$) = "" THEN
         'skip any further processing
         addLine 0, ""
         EXIT SUB
@@ -1079,19 +1118,19 @@ SUB formatLine (indent%, line$)
     '-------------------------------------------------------------------------
     'if a line begins with a "-" it's a bullet point;
     'bullet-points cannot be centred or right-aligned
-    IF ASC(line$, c%) = CTL_BULLET THEN
+    IF ASC(src$, src%) = CTL_BULLET THEN
         'must have a following space
-        IF ASC(line$, c% + 1) = ASC_SPC THEN
+        IF ASC(src$, src% + 1) = ASC_SPC THEN
             'add the bullet point to the line
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
             newline$ = newline$ + CHR$(CTL_BULLET)
             newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
             newline$ = newline$ + CHR$(ASC_SPC)
-            l% = l% + 2
+            line_len% = line_len% + 2
             'increase the indent (for wrapped lines) to after the bullet
             next_indent% = next_indent% + 2
             'skip over the bullet point for the rest of processing
-            c% = c% + 2
+            src% = src% + 2: src_col% = src_col% + 2
         END IF
     END IF
 
@@ -1099,12 +1138,12 @@ SUB formatLine (indent%, line$)
     '-------------------------------------------------------------------------
     DIM align%
 
-    IF ASC(line$, c%) = CTL_ESCAPE THEN
-        IF ASC(line$, c% + 1) = CTL_CENTER THEN
+    IF ASC(src$, src%) = CTL_ESCAPE THEN
+        IF ASC(src$, src% + 1) = CTL_CENTER THEN
             'set the mode, when a line is dispatched, it'll be centred
             align% = FORMAT_CENTER
             'do not display the marker
-            c% = c% + 2
+            src% = src% + 2: src_col% = src_col% + 2
         END IF
     END IF
 
@@ -1112,15 +1151,15 @@ SUB formatLine (indent%, line$)
     '-------------------------------------------------------------------------
     'if a line begins with ":" then it's a heading or divider line
     DIM is_heading`
-    IF ASC(line$, c%) = CTL_HEADING THEN
+    IF ASC(src$, src%) = CTL_HEADING THEN
         'skip the heading marker
-        c% = c% + 1
+        src% = src% + 1: src_col% = src_col% + 1
         'check for the dividing lines
-        IF ASC(line$, c%) = CTL_LINE1 _
-        OR ASC(line$, c%) = CTL_LINE2 _
+        IF ASC(src$, src%) = CTL_LINE1 _
+        OR ASC(src$, src%) = CTL_LINE2 _
         THEN
             'just add the control code, the `printLine` sub will draw it
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(line$, c%))
+            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(src$, src%))
             'ignore the rest of the line!
             GOSUB addLine: EXIT SUB
         ELSE
@@ -1135,11 +1174,11 @@ SUB formatLine (indent%, line$)
     '-------------------------------------------------------------------------
     'if the line begins with three (or more) line marks, its a dividing line
     'TODO: this will be converted to ruler definition
-    ''IF LEFT$(line$, 3) = CHR$(CTL_LINE1) + CHR$(CTL_LINE1) + CHR$(CTL_LINE1) _
-    ''OR LEFT$(line$, 3) = CHR$(CTL_LINE2) + CHR$(CTL_LINE2) + CHR$(CTL_LINE2) _
+    ''IF LEFT$(src$, 3) = CHR$(CTL_LINE1) + CHR$(CTL_LINE1) + CHR$(CTL_LINE1) _
+    ''OR LEFT$(src$, 3) = CHR$(CTL_LINE2) + CHR$(CTL_LINE2) + CHR$(CTL_LINE2) _
     ''THEN
     ''    'just add the control code, the `printLine` sub will draw it
-    ''    newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(line$, c%))
+    ''    newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(ASC(src$, src%))
     ''    'ignore the rest of the line!
     ''    GOSUB addLine: EXIT SUB
     ''END IF
@@ -1158,9 +1197,10 @@ SUB formatLine (indent%, line$)
     DIM is_key`, word_key`
 
     'process text:
-    FOR c% = c% TO LEN(line$) - 1
+    FOR src% = src% TO src_len%
         'get current character in the source line
-        char% = ASC(line$, c%)
+        char% = ASC(src$, src%)
+        src_col% = src_col% + 1
 
         'null is given by UTF8ANSI$ to mark unusable UTF8 characters
         IF char% = 0 THEN
@@ -1191,21 +1231,21 @@ SUB formatLine (indent%, line$)
             CASE CTL_INDENT
                 '.............................................................
                 'set the following indent to the current position
-                next_indent% = l% + w%
+                next_indent% = line_len% + word_len%
                 'word-break immediately
                 GOSUB addWord
 
             CASE CTL_HEADING
                 '.............................................................
                 IF ( _
-                    ASC(line$, c% - 1) = ASC_SPC _
-                 OR ASC(line$, c% - 1) = ASC_TAB _
-                ) AND ASC(line$, c% + 1) = ASC_SPC _
-                THEN
+                    ASC(src$, src% - 1) = ASC_SPC AND _
+                    ASC(src$, src% + 1) = ASC_SPC _
+                ) THEN
                     GOSUB addChar
                     GOSUB addWord
+
                     'set the indent to the current position
-                    next_indent% = l% + w% + 1
+                    next_indent% = line_len% + word_len% + 1
                 ELSE
                     GOSUB addChar
                 END IF
@@ -1247,12 +1287,13 @@ SUB formatLine (indent%, line$)
             CASE CTL_BOLD
                 '.............................................................
                 'check the next character:
-                SELECT CASE ASC(line$, c% + 1)
+                SELECT CASE ASC(src$, src% + 1)
                     CASE char%
                         'double is an escape, treat as single literal
-                        c% = c% + 1: GOSUB addChar
+                        src% = src% + 1: src_col% = src_col% + 1
+                        GOSUB addChar
 
-                    CASE ASC_SPC, ASC_TAB
+                    CASE ASC_SPC
                         'if followed by whitespace, then it's assumed to be
                         'a closing bold marker
                         IF is_bold` = TRUE THEN
@@ -1263,9 +1304,8 @@ SUB formatLine (indent%, line$)
                             GOSUB addChar
                         END IF
 
-                    CASE ASC_COMMA, ASC_COLON, _
-                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
-                         ASC_EXCL, ASC_QMARK, ASC_SMARK, _
+                    CASE ASC_COMMA, ASC_COLON, ASC_SEMICOLON, ASC_PERIOD, _
+                         ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
                          ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
                          CTL_PAREN_OFF
                         'word boundary? if bold is on, flip it off
@@ -1296,15 +1336,15 @@ SUB formatLine (indent%, line$)
             CASE CTL_ITALIC
                 '.............................................................
                 'check the next character:
-                SELECT CASE ASC(line$, c% + 1)
+                SELECT CASE ASC(src$, src% + 1)
                     CASE char%
                         'double is an escape, treat as single literal
-                        c% = c% + 1: GOSUB addChar
+                        src% = src% + 1: src_col% = src_col% + 1
+                        GOSUB addChar
 
-                    CASE ASC_SPC, ASC_TAB, ASC_COMMA, ASC_COLON, _
-                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, _
-                         ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                         ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
+                    CASE ASC_SPC, ASC_COMMA, ASC_COLON, ASC_SEMICOLON, _
+                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
+                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
                          CTL_PAREN_OFF
                         'word boundary? if italic is on, flip it off
                         IF is_italic` = TRUE THEN
@@ -1334,10 +1374,10 @@ SUB formatLine (indent%, line$)
             CASE CTL_BREAK
                 '.............................................................
                 'double back-slash creates a manual line-break
-                IF ASC(line$, c% + 1) = CTL_BREAK THEN
+                IF ASC(src$, src% + 1) = CTL_BREAK THEN
                     char% = 0: GOSUB addWord: GOSUB lineBreak
                     'ignore the second slash
-                    c% = c% + 1
+                    src% = src% + 1: src_col% = src_col% + 1
                 ELSE
                     'treat as normal
                     GOSUB addChar
@@ -1357,23 +1397,52 @@ SUB formatLine (indent%, line$)
                 'append the word to the line and continue
                 GOSUB addWord
 
-            CASE ASC_SPC, ASC_TAB
+            CASE ASC_SPC
                 '.............................................................
-                'append the current word
-                '(this will word-wrap as necessary)
+                'append the current word (this will word-wrap as necessary)
+                'if the line wrapped exactly the space will not be needed,
+                'and this GOSUB call will not return here!
                 GOSUB addWord
-                'if the line wrapped exactly the space will not be needed
 
-                IF char% = ASC_TAB THEN
-                    'convert tab character to spaces as `_CONTROLCHR OFF`
-                    'will prevent tabs from rendering
-                    DIM tabspc%: tabspc% = 8 - ((l% + w%) MOD 8)
-                    newline$ = newline$ + SPACE$(tabspc%): l% = l% + tabspc%
+                'batch together any contiguous white-space
+                DIM ws%: ws% = 0
+                DO
+                    IF line_len% > 0 THEN
+                        'add just the space
+                        ws% = ws% + 1
+                    END IF
 
-                ELSEIF l% > 0 THEN
-                    'add just the space
-                    newline$ = newline$ + " ": l% = l% + 1
+                    'was this the last character in the line?
+                    IF src% = src_len% THEN EXIT DO
+                    'is the next character not white-space?
+                    IF ASC(src$, src% + 1) <> ASC_SPC THEN EXIT DO
+                    'get next character in the source line
+                    src% = src% + 1: src_col% = src_col% + 1
+                    char% = ASC(src$, src%)
+                LOOP
+
+                'if there's more than one space, resync the columns
+                IF src% <= src_len% - 1 THEN
+                    IF ws% > 1 OR ( _
+                        (ASC(src$, src% + 1) = ASC_COLON) AND _
+                        (ASC(src$, src% + 2) = ASC_SPC) _
+                    ) THEN
+                        'calculate the difference between the source column,
+                        'and the screen colum (no formatting marks)
+                        DIM sync%
+                        sync% = src_col% - (line_len% + indent% + ws%)
+                        'adjust the whitespace to match the source column,
+                        'rather than the screen one
+                        ws% = ws% + sync%
+                        'set the next line indent to the current position
+                        next_indent% = src_col%
+
+                    END IF
                 END IF
+
+                'append the white-space to the current line
+                newline$ = newline$ + SPACE$(ws%)
+                line_len% = line_len% + ws%
 
             CASE ELSE
                 '.............................................................
@@ -1386,14 +1455,14 @@ SUB formatLine (indent%, line$)
 
     'add this word to the last line
     GOSUB addWord
-    IF l% > 0 THEN GOSUB addLine
+    IF line_len% > 0 THEN GOSUB addLine
 
     EXIT SUB
 
     addChar:
     '-------------------------------------------------------------------------
     'add the current character to the current word
-    word$ = word$ + CHR$(char%): w% = w% + 1
+    word$ = word$ + CHR$(char%): word_len% = word_len% + 1
     'we are no longer at the beginning of a word!
     is_boundary` = FALSE
 
@@ -1410,9 +1479,9 @@ SUB formatLine (indent%, line$)
     addWord:
     '-------------------------------------------------------------------------
     'if the current word fits the line, we can line-break:
-    IF l% + w% = line_width% THEN
+    IF line_len% + word_len% = line_width% THEN
         'add the word to the end of the line
-        newline$ = newline$ + word$: l% = l% + w%
+        newline$ = newline$ + word$: line_len% = line_len% + word_len%
         'word has been used, clear it
         GOSUB newWord
         'start a new line
@@ -1420,13 +1489,13 @@ SUB formatLine (indent%, line$)
     END IF
 
     'would the current word overhang the line?
-    IF l% + w% > line_width% THEN
+    IF line_len% + word_len% > line_width% THEN
         'end the current line and start a new line with the current word
         GOTO lineBreak
     END IF
 
     'add the word to the end of the line:
-    newline$ = newline$ + word$: l% = l% + w%
+    newline$ = newline$ + word$: line_len% = line_len% + word_len%
     GOTO newWord
 
     lineBreak:
@@ -1434,7 +1503,6 @@ SUB formatLine (indent%, line$)
     'line has wrapped, dispatch the current line:
     GOSUB addLine
 
-    newline$ = "": l% = 0
     'set the correct indent and wrap-point
     DIM this_indent%
     this_indent% = next_indent%
@@ -1469,12 +1537,12 @@ SUB formatLine (indent%, line$)
         newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_ITALIC)
     END IF
     'begin the line with the remaining word
-    newline$ = newline$ + word$: l% = l% + w%
+    newline$ = newline$ + word$: line_len% = line_len% + word_len%
 
     newWord:
     '-------------------------------------------------------------------------
     'clear the 'current' word
-    word$ = "": w% = 0
+    word$ = "": word_len% = 0
     'remember the bold/italic &c. state at the beginning of the word;
     'if it gets wrapped, the bold/italic &c. state needs to be copied
     'to the new line
@@ -1493,13 +1561,15 @@ SUB formatLine (indent%, line$)
     IF (align% AND FORMAT_CENTER) > 0 THEN
         'is the line shorter than the screen?
         '(this is the width without the control code characters)
-        IF l% < line_width% THEN
+        IF line_len% < line_width% THEN
             'pad the left-side with enough spaces to centre the text
-            newline$ = SPACE$((line_width% - l%) / 2) + newline$
+            newline$ = SPACE$((line_width% - line_len%) / 2) + newline$
         END IF
     END IF
     'add the line to the array of screen-ready converted lines
     addLine indent%, RTRIM$(newline$)
+    'start a fresh line
+    newline$ = "": line_len% = 0
 
     RETURN
 END SUB
@@ -1527,7 +1597,7 @@ SUB printLine (line$)
     'current number of characters printed to screen:
     '(a line will contain format codes, so the number of chars on screen
     ' may not match the character index of the string)
-    DIM l%
+    DIM line_len%
 
     DIM is_heading`
     DIM is_warning` 'if printing a warning box "^!..."
@@ -1539,15 +1609,15 @@ SUB printLine (line$)
     'add a space to the end to allow for a one-letter look-ahead
     line$ = RTRIM$(line$) + " "
 
-    DIM c%, char%
-    FOR c% = 1 TO LEN(line$) - 1
+    DIM src%, char%
+    FOR src% = 1 TO LEN(line$) - 1
         'read a character
-        char% = ASC(line$, c%)
+        char% = ASC(line$, src%)
 
         'is it a control code?
         IF char% = CTL_ESCAPE THEN
             'read the next character
-            c% = c% + 1: char% = ASC(line$, c%)
+            src% = src% + 1: char% = ASC(line$, src%)
 
             'which control code is it?
             SELECT CASE char%
@@ -1556,20 +1626,20 @@ SUB printLine (line$)
                     '.........................................................
                     is_warning` = TRUE
                     line_width% = line_width% - 6
-                    LOCATE , l% + 3
+                    LOCATE , line_len% + 3
                     'draw the border in flashing red
                     GOSUB pushmode
                     COLOR 20, LTGREY
                     'draw the top & bottom box borders in the right place
                     PRINT CHR$(ASC_BOX_V) _
-                        + SPACE$(2 + line_width% - l%) _
+                        + SPACE$(2 + line_width% - line_len%) _
                         + CHR$(ASC_BOX_V);
-                    IF ASC(line$, c% + 1) = ASC_BOX_TL _
-                    OR ASC(line$, c% + 1) = ASC_BOX_BL _
+                    IF ASC(line$, src% + 1) = ASC_BOX_TL _
+                    OR ASC(line$, src% + 1) = ASC_BOX_BL _
                     THEN
-                        LOCATE , l% + 3
+                        LOCATE , line_len% + 3
                     ELSE
-                        LOCATE , l% + 5
+                        LOCATE , line_len% + 5
                         'return to non-flashing red for the text
                         COLOR RED
                     END IF
@@ -1577,13 +1647,13 @@ SUB printLine (line$)
                 CASE CTL_LINE1
                     '.........................................................
                     GOSUB pushmode
-                    PRINT STRING$(line_width% - l%, ASC_BOX_DBL_H);
+                    PRINT STRING$(line_width% - line_len%, ASC_BOX_DBL_H);
                     GOSUB popmode
 
                 CASE CTL_LINE2
                     '.........................................................
                     GOSUB pushmode
-                    PRINT STRING$(line_width% - l%, CHR$(ASC_BOX_H));
+                    PRINT STRING$(line_width% - line_len%, CHR$(ASC_BOX_H));
                     GOSUB popmode
 
                 CASE CTL_HEADING
@@ -1638,7 +1708,7 @@ SUB printLine (line$)
                     '.........................................................
                     'not a valid control code, print as normal text
                     PRINT CHR$(CTL_ESCAPE) + CHR$(char%);
-                    l% = l% + 2
+                    line_len% = line_len% + 2
 
             END SELECT
 
@@ -1647,11 +1717,11 @@ SUB printLine (line$)
             GOSUB pushmode
             PRINT "?";
             GOSUB popmode
-            l% = l% + 1
+            line_len% = line_len% + 1
         ELSE
             'print the character as-is to screen
             PRINT CHR$(char%);
-            l% = l% + 1
+            line_len% = line_len% + 1
         END IF
     NEXT
     COLOR , PAGE_BKGD
