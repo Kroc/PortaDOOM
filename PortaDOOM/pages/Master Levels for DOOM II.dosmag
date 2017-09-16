@@ -4,44 +4,44 @@ The Master Levels for Doom II were released on December 26, 1995 by id Software 
 (The order here is as used on the PSN release)
 
 $KEY:A=GOTO:Attack
-:[A] Attack ..................... : _Tim Willits
+:[A] Attack ..................... _Tim Willits
 $KEY:B=GOTO:Canyon
-:[B] Canyon ..................... : _Tim Willits
+:[B] Canyon ..................... _Tim Willits
 $KEY:C=GOTO:The Catwalk
-:[C] The Catwalk ................ : _Christen Klie
+:[C] The Catwalk ................ _Christen Klie
 $KEY:D=GOTO:The Combine
-:[D] The Combine ................ : _Christen Klie
+:[D] The Combine ................ _Christen Klie
 $KEY:E=GOTO:The Fistula
-:[E] The Fistula ................ : _Christen Klie
+:[E] The Fistula ................ _Christen Klie
 $KEY:F=GOTO:The Garrison
-:[F] The Garrison ............... : _Christen Klie
+:[F] The Garrison ............... _Christen Klie
 $KEY:G=GOTO:Titan Manor
-:[G] Titan Manor ................ : _Jim Flynn
+:[G] Titan Manor ................ _Jim Flynn
 $KEY:H=GOTO:Paradox
-:[H] Paradox .................... : _Tom Mustaine
+:[H] Paradox .................... _Tom Mustaine
 $KEY:I=GOTO:Subspace
-:[I] Subspace ................... : _Christen Klie
+:[I] Subspace ................... _Christen Klie
 $KEY:J=GOTO:Subterra
-:[J] Subterra ................... : _Christen Klie
+:[J] Subterra ................... _Christen Klie
 $KEY:K=GOTO:Trapped on Titan
-:[K] Trapped on Titan ........... : _Jim Flynn
+:[K] Trapped on Titan ........... _Jim Flynn
 $KEY:L=GOTO:Virgil's Lead
-:[L] Virgil's Lead .............. : _John Anderson (Dr.Sleep)
+:[L] Virgil's Lead .............. _John Anderson (Dr.Sleep)
 $KEY:M=GOTO:Minos' Judgement
-:[M] Minos' Judgement ........... : _John Anderson (Dr.Sleep)
+:[M] Minos' Judgement ........... _John Anderson (Dr.Sleep)
 $KEY:N=GOTO:Bloodsea Keep
-:[N] Bloodsea Keep .............. : _Sverre André Kvernmo (Cranium)
+:[N] Bloodsea Keep .............. _Sverre André Kvernmo (Cranium)
 $KEY:O=GOTO:Mephisto's Maosoleum
-:[O] Mephisto's Maosoleum ....... : _Sverre André Kvernmo (Cranium)
+:[O] Mephisto's Maosoleum ....... _Sverre André Kvernmo (Cranium)
 $KEY:P=GOTO:Nessus
-:[P] Nessus ..................... : _John Anderson (Dr.Sleep)
+:[P] Nessus ..................... _John Anderson (Dr.Sleep)
 $KEY:Q=GOTO:Geryon
-:[Q] Geryon ..................... : _John Anderson (Dr.Sleep)
+:[Q] Geryon ..................... _John Anderson (Dr.Sleep)
 $KEY:R=GOTO:Vesperas
-:[R] Vesperas ................... : _John Anderson (Dr.Sleep)
+:[R] Vesperas ................... _John Anderson (Dr.Sleep)
 $KEY:S=GOTO:Black Tower
-:[S] Black Tower ................ : _Sverre André Kvernmo (Cranium)
+:[S] Black Tower ................ _Sverre André Kvernmo (Cranium)
 $KEY:T=GOTO:The Express Elevator to Hell
-:[T] The Express Elevator to Hell : _Sverre André Kvernmo (Cranium)
+:[T] The Express Elevator to Hell _Sverre André Kvernmo (Cranium)
 
 NOTE: The sharp-eyed of you will see that there are 20 levels listed here, not 21; there is a secret level, but I'm not going to tell you where it is, though it's not like it's 1994 and you can't just Google it.

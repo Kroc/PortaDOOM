@@ -4,7 +4,7 @@ $KEY:W=URL:http://dtwid.herokuapp.com/
 
 :Doom the Way id Did
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2011>12>10*   Author : (see credits)
 :Levels   : *27*            Modes : *Single, Co-op, Deathmatch
@@ -26,10 +26,10 @@ Our goal is to make the 'lost' maps as authentically as possible to be convincin
 :Par Times
 :-------------------------------------------------------------------------------
 *Rules of Determination:
- - Rounded down to nearest 15sec then +30sec
- - Pistol start
- - HMP difficulty
- - 4 runs per map (mean average is used)
+- Rounded down to nearest 15sec then +30sec
+- Pistol start
+- HMP difficulty
+- 4 runs per map (mean average is used)
 
 NOTE from _St. Alfonzo_: "I took the fastest available route for each map, killing only those monsters that got in my way or proved too great a threat to ignore. If I became low on health, ammo or armor I would seek out items only if they were immediately accessible. I ignored all secrets - including those most convenient - and did not exploit design flaws that would aid in improving my time."
 

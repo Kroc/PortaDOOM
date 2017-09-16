@@ -2,9 +2,9 @@ $KEY:P=SHELL:play.bat /PWAD MASTER\TTRAP.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\TTRAP.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Trapped_on_Titan_(Master_Levels)
 
-:Trapped on Titan                                  (Master Levels for DOOM II)
+:Trapped on Titan                                 (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Jim Flynn_
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
@@ -23,9 +23,9 @@ A strange and enigmatic building on a moon of Saturn contains the latest in alie
 :-------------------------------------------------------------------------------
 *Base*                    : New level from scratch
 *Tools(s) used*           : For level editing: DEU 5.2 (GCC), and DETH 1.1c
-			  For node building: BSP 1.2x
-			  For reject map building: RMB 2.0
-			  For wad composition: DeuTex 3.1
+			    For node building: BSP 1.2x
+			    For reject map building: RMB 2.0
+			    For wad composition: DeuTex 3.1
 
 :Credits:
 :-------------------------------------------------------------------------------

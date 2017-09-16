@@ -8,7 +8,7 @@ $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 $KEY:N=GOTO:No End in Sight
 
-:Doom the Way id Did - The Lost Episodes             * 2016 Cacoward winner! *
+:Doom the Way id Did - The Lost Episodes            * 2016 Cacoward winner! *
 :===============================================================================
 *[P] Play (see below for Vanilla) [T] .txt [W] Website
 :-------------------------------------------------------------------------------
@@ -80,38 +80,38 @@ E2M4: "Waste Treatment"       by  _Ellmo_
 E2M5: "Logistics Facility"    by  _Megasphere_
 E2M6: "Rend of Misery"        by  _Ellmo_
 E2M7: "Dark Passage"          by  _Mr. Chris_ + _PhobosDeimos1_ + _Marnetmar_
-E2M8:**"The Gate"              by  _Marnetmar_ + _Xaser_
+E2M8:**"The Gate"             by  _Marnetmar_ + _Xaser_
 E2M9: "Petersen Station"      by  _Daimon (Walter Confalonieri)_
 
-E3M1:**"Hell Breach"           by  _Daimon_ + _Marcaek_
-E3M2:**"Manufactorium"         by  _Marcaek_
+E3M1:**"Hell Breach"          by  _Daimon_ + _Marcaek_
+E3M2:**"Manufactorium"        by  _Marcaek_
 E3M3: "Necromanteion"         by  _Foodles_
-E3M4:**"Tartarus"              by  _XenoNemesis_ + _Xaser_
+E3M4:**"Tartarus"             by  _XenoNemesis_ + _Xaser_
 E3M5: "Purgatorio"            by  _40oz_
 E3M6: "Stygian Caverns"       by  _Icytux_
-E3M7:**"Sheol's Descent"       by  _General Rainbow Bacon_ + _Xaser_
-E3M8:**"Ninth Circle"          by  |_Marnetmar_\\(original by _Marnetmar_ + _Mr. Freeze_)
+E3M7:**"Sheol's Descent"      by  _General Rainbow Bacon_ + _Xaser_
+E3M8:**"Ninth Circle"         by  |_Marnetmar_\\(original by _Marnetmar_ + _Mr. Freeze_)
 E3M9: "Weeping Hollow"        by  _Alfonzo_ + _Marnetmar_ + _Xaser_
 
 E4M1: "Bridge to Nowhere"     by  _Captain Toenail_ + _Traversd_
-E4M2:**"Demonic Halls"         by  _C30N9_ + _Xaser_
+E4M2:**"Demonic Halls"        by  _C30N9_ + _Xaser_
 E4M3: "Despair"               by  _Captain Toenail_
 E4M4: "Phlegethon"            by  _Captain Toenail_
 E4M5: "Diabolico"             by  _Megasphere_
-E4M6:**"The Mourning Halls"    by  |_Marnetmar_ + _Alfonzo_\\(original by _General Rainbow Bacon_)
-E4M7:**"Babel's Gate"          by  _Matt534Dog_ + _Xaser_
-E4M8:**"Temple Guardian"       by  _Taedium_
+E4M6:**"The Mourning Halls"   by  |_Marnetmar_ + _Alfonzo_\\(original by _General Rainbow Bacon_)
+E4M7:**"Babel's Gate"         by  _Matt534Dog_ + _Xaser_
+E4M8:**"Temple Guardian"      by  _Taedium_
 E4M9: "Bean Oversight"        by  _Marcaek_
 
 E5M1: "Landing Zone"          by  _Ellmo_
 E5M2: "Observatory"           by  _Marnetmar_ + _Hellbent_
-E5M3:**"Recycling Plant"       by  _Marnetmar_ + _Xaser_
-E5M4:**"Phobos Garrison"       by  _40oz_
+E5M3:**"Recycling Plant"      by  _Marnetmar_ + _Xaser_
+E5M4:**"Phobos Garrison"      by  _40oz_
 E5M5: "Science Facility"      by  _40oz_
 E5M6: "Disposal Area"         by  _Marcaek_
 E5M7: "Sanguine Refinery"     by  _ShadesMaster_
-E5M8:**"Like Rotten Meat"      by  _Marnetmar_
-E5M9:**"Wayward Outpost"       by  _Marcaek_
+E5M8:**"Like Rotten Meat"     by  _Marnetmar_
+E5M9:**"Wayward Outpost"      by  _Marcaek_
 E5M0: "Starport"              by  _Marnetmar_ + _Xaser_
 
 E6M1: "Deja Vu"               by  _Marnetmar_

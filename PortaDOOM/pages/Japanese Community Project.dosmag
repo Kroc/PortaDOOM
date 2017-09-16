@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\community\jpcp\play.bat
 $KEY:T=SHELL:pwads\community\jpcp\JPCP.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
-:Japanese Community Project                          * 2016 Cacoward winner! *
+:Japanese Community Project                         * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>07>24*   Author : Various (see Credits)
 :Levels   : *32*            Modes : *Single, Co-op
@@ -31,8 +31,8 @@ We hope that you have a good time.
 *Level Design*            : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
 
 *New Graphics*            : TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
-                          Status bar: _Toooooasty_
-                          Map Title: _Tatsurd-Cacocaco_
+                            Status bar: _Toooooasty_
+                            Map Title: _Tatsurd-Cacocaco_
                           
 *New Music*               : _Masayan_
 
@@ -153,7 +153,7 @@ but, I will try my best map build.
 
 Thank you.
 
-*_Nanka _:Kurashiki
+*_Nanka Kurashiki_:
 
 Greetings! This is my first mapping project that I join in. and it's released \(^O^)/
 below... there are comments about my maps.

@@ -4,7 +4,7 @@ $KEY:W=URL:http://d2twid.herokuapp.com/
 
 :Doom 2 the Way id Did
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2013>11>07*   Author : (see credits)
 :Levels   : *32*            Modes : *Single, Co-op, Deathmatch
@@ -19,10 +19,10 @@ The idea was originally kicked about by _Jason Root_ aka _Hellbent_, whose passi
 :Par Times
 :-------------------------------------------------------------------------------
 *Rules of Determination:
- - Rounded down to nearest 15sec then +30sec
- - Pistol start
- - HMP difficulty
- - 4 runs per map (mean average is used)
+- Rounded down to nearest 15sec then +30sec
+- Pistol start
+- HMP difficulty
+- 4 runs per map (mean average is used)
 
  MAP01: 0:30     MAP09: 2:00    MAP17: 2:30     MAP25: 2:45
  MAP02: 1:30     MAP10: 2:00    MAP18: 3:00     MAP26: 4:30

@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\conversions\SKULDASH\play.bat
 $KEY:T=SHELL:pwads\conversions\SKULDASH\SKULDASH.TXT
 $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 
-:Skulldash                                           * 2015 Cacoward winner! *
+:Skulldash                                          * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>10>21*   Author : _Joshua 'Dragonfly' O'Sullivan_
 :Levels   : *32*            Modes : *Single, Co-op

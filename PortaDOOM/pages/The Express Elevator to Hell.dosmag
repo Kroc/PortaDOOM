@@ -2,9 +2,9 @@ $KEY:P=SHELL:play.bat /PWAD MASTER\TEETH.WAD /LEVEL 31
 $KEY:T=SHELL:pwads\MASTER\TEETH.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP31:_The_Express_Elevator_to_Hell_(Master_Levels)
 
-:The Express Elevator to Hell                      (Master Levels for DOOM II)
+:The Express Elevator to Hell                     (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Sverre André Kvernmo (Cranium)
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
@@ -38,21 +38,21 @@ When the "Express Elevator to Hell" starts descending the renegade Cabal has beg
                           
 *Build Time*              : Don't ask, really! First baby steps at "wadding" taken in the summer of 94. Almost dropped out of university for this bloody obsession. One reason for surviving was that I handed in a wad of my campus as one of my projects. <G>
 
-			  I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
+			    I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
                           
 *Editor(s) used*          : DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
 *Bugs*                    : No way. _Shawn_ has plucked them all out and forced me to eat them. I hate you if you find some! ;)
 
-			  Hope you enjoy the wad.
+			    Hope you enjoy the wad.
 
 :Credits:
 :-------------------------------------------------------------------------------
- - The whole of id Software for DOOM & DOOM II.
- - _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
- - Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!
- - A brand new BFG goes out to _Geoff Allan_ (DOOMed), _Raphael Quinet_ (DEU), _Olivier Montanuy_ (DeuTex) and _Colin Reed_ (BSP) plus whoever put together idBSP.
- - _Shawn Green_ for including me in the project.
- - Last but never least to all other WAD-designers who have lost themselves in the worlds of tag numbers, upper textures and vertexes as badly as me, particularily the other designers that worked on this add-on. Looking forwards to play your wads dudes!
+- The whole of id Software for DOOM & DOOM II.
+- _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Bjornar Johansen Johansen_, _Baard Zachariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
+- Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!
+- A brand new BFG goes out to _Geoff Allan_ (DOOMed), _Raphael Quinet_ (DEU), _Olivier Montanuy_ (DeuTex) and _Colin Reed_ (BSP) plus whoever put together idBSP.
+- _Shawn Green_ for including me in the project.
+- Last but never least to all other WAD-designers who have lost themselves in the worlds of tag numbers, upper textures and vertexes as badly as me, particularily the other designers that worked on this add-on. Looking forwards to play your wads dudes!
 
 *Deathmatch bad-arse credits:
 

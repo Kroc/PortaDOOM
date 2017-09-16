@@ -2,11 +2,11 @@ $KEY:P=SHELL:pwads\megawads\swideath\play.bat
 $KEY:T=SHELL:pwads\megawads\swideath\swideath.txt
 $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 
-:Swift Death                                         * 2015 Cacoward winner! *
+:Swift Death                                        * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>11>11*   Author : _franckFRAG_ (guest mappers : _JCD_ & _Memfis_)
+:Released : *2015>11>11*   Author : _franckFRAG_ (guest mappers: _JCD_ & _Memfis_)
 :Levels   : *32*            Modes : *Single, Co-op, Deathmatch
 :Requires : *boom*       Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -24,12 +24,12 @@ Swift Death is an extremely hard megawad, calibrated for speedrunners. I recomma
 
 :Credits:
 :-------------------------------------------------------------------------------
- - id Software for Doom
- - _Pascal "CodeImp" vd Heiden_ for Doom Builder
- - _Kris Kuksi_
- - The XWE team
- - The French Doom Community
- - _JCD_ for bugs, textures misalignments and such.
- - _JCD_, _Dislogical_, and especially _FSN76_ for some suggestions about the duel gameplay :)
- - _Ch0wW_ and _JCD_, for their incredible demos :D
- - _Ch0wW_; _[WH]Wilou84_; _SidTheMeck_; and _Squonk_ for various helps :)
+- id Software for Doom
+- _Pascal "CodeImp" vd Heiden_ for Doom Builder
+- _Kris Kuksi_
+- The XWE team
+- The French Doom Community
+- _JCD_ for bugs, textures misalignments and such.
+- _JCD_, _Dislogical_, and especially _FSN76_ for some suggestions about the duel gameplay :)
+- _Ch0wW_ and _JCD_, for their incredible demos :D
+- _Ch0wW_; _[WH]Wilou84_; _SidTheMeck_; and _Squonk_ for various helps :)

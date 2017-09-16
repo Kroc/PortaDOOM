@@ -1,74 +1,72 @@
 
 :Keyboard & Mouse Controls
 :===============================================================================
-        
-    *Move Forward*      _W
-    *Move Backward*     _S
-    *Strafe Left*       _A
-    *Strafe Right*      _D
-    
-    *Fire*              _CTRL_ or _LMB_   (left-mouse-button)
-    
-    *Next Weapon*       _MWDN_          (mouse-wheel-down)
-    *Previous Weapon*   _MWUP_          (mouse-wheel-up)
-    
-    *Use*               _E_             Historically _SPC_ is used, but this is
-                                    used for jump which some WADs require
 
-    *Walk*              _SHIFT_         Running is automatic,
-                                    press _SHIFT_ to slow down
+    *Move Forward*	_W
+    *Move Backward*	_S
+    *Strafe Left*	_A
+    *Strafe Right*	_D
+
+    *Fire*		_CTRL_, _LMB_	(left-mouse-button)
+
+    *Next Weapon*	_MWDN_		(mouse-wheel-down)
+    *Previous Weapon*	_MWUP_		(mouse-wheel-up)
+
+    *Use*		_E_		Historically _SPC_ is used, but this is used for jump which some WADs require
+
+    *Walk*		_SHIFT_		Running is automatic,
+					press _SHIFT_ to slow down
 
 :Inventory Controls:
 :-------------------------------------------------------------------------------
 Some games or WADs utilize an inventory.
-    
-    *Next Item*         _]_ or _MWR_      (mouse-wheel-right)
-    
-    *Previous Item*     _[_ or _MWL_      (mouse-wheel-left)
-    
-    *Use Item*          _ENTER_ or _MWB_  (mouse-wheel-button)
+
+    *Next Item*		_]_, _MWR_	(mouse-wheel-right)
+
+    *Previous Item*	_[_, _MWL_	(mouse-wheel-left)
+
+    *Use Item*		_ENTER_, _MWB_	(mouse-wheel-button)
 
 :Optional Controls:
 :-------------------------------------------------------------------------------
 These are not original DOOM controls and are used only by some WADs.
-    
-    *Secondary Fire*    _RMB_           (right-mouse-button)
-                                    Some mods provide alternate weapon fire
-                                    
-    *Reload*            _R_             For guns that require manual reloading
-    
-    *Jump*              _SPC_           Can be used to sequence-break WADs that
-                                    don't expect jumping to be possible! 
-    *Crouch*            _C_
+
+    *Secondary Fire*	_RMB_		(right-mouse-button)
+					Some mods have alternate weapon fire
+
+    *Reload*		_R_		For guns that need manual reloading
+
+    *Jump*		_SPC_		Can be used to sequence-break WADs
+					that don't expect jumping! 
+    *Crouch*		_C_
 
 :Map Controls:
 :-------------------------------------------------------------------------------
-    *Automap*           _TAB_           Toggle automap on & off
-    *Grid*              _G_             Toggle automap grid
-    
-    *Zoom In*           _+_             ("=" key, i.e. SHIFT not required)
-    *Zoom Out*          _-_
-    *Reset Zoom*        _0_
-    
-    *Follow Mode*       _F_             Toggle automap following you
-    *Pan Map*           _ARROWS_        Follow mode has to be off to pan
-    
-    *Set Mark*          _M_             Place a marker on the map
-    *Clear All Marks*   _C_             Remove all markers on the map
+    *Automap*		_TAB_		Toggle automap on & off
+    *Grid*		_G_		Toggle automap grid
+
+    *Zoom In*		_+_		("=" key, i.e. SHIFT not required)
+    *Zoom Out*		_-_
+    *Reset Zoom*	_0_
+
+    *Follow Mode*	_F_		Toggle automap following you
+    *Pan Map*		_ARROWS_	Follow mode has to be off to pan
+
+    *Set Mark*		_M_		Place a marker on the map
+    *Clear All Marks*	_C_		Remove all markers on the map
 
 :System Controls:
 :-------------------------------------------------------------------------------
-    *Menu*              _ESC_           Brings up the in-game menu
+    *Menu*		_ESC_		Brings up the in-game menu
+
+    *Help*		_F1_		Shows the help screen.
+					Some WADs provide custom help
     
-    *Help*              _F1_            Shows the help screen.
-                                    Some WADs provide custom help
+    *Save Game*		_F2_		Save game menu
+    *Load Game*		_F3_		Load game menu
+    *Quick Save*	_F6_		Instant-save
+    *Quick Load*	_F9_		Instant-load last quick save
     
-    *Save Game*         _F2_            Save game menu
-    *Load Game*         _F3_            Load game menu
-    *Quick Save*        _F6_            Instant-save
-    *Quick Load*        _F9_            Instant-load last quick save
-    
-    *Sound Volume*      _F4_            Toggles through volume levels
-    
-    *Screenshot*        _F12_           Also set to _PrtSc_ / _SysRq_, but this may
-                                    not always be detected on all machines
+    *Sound Volume*	_F4_		Toggles through volume levels
+
+    *Screenshot*	_F12_		Also set to _PrtSc_ / _SysRq_, but this may not always be detected on all machines

@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\community\thtthren\play.bat
 $KEY:T=SHELL:pwads\community\thtthren\thtthren.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthren
 
-:THT: Threnody                                    * 2016 Cacoward runner up! *
+:THT: Threnody                                   * 2016 Cacoward runner up! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>07>31*   Author : Various (see credits below)
 :Levels   : *20*            Modes : *Single, Co-op, Deathmatch
@@ -29,16 +29,13 @@ One of the more important and highly secret UAC installations has been severely 
 :-------------------------------------------------------------------------------
 *Base*                    : New levels from scratch
 *Build Time*              : 1 year
-*Editor(s) used*          : Doom Builder 2, Slade 3, Paint.net, Gimp, Wcleaner,
-			  Doom Font Writer, WhackEd4
+*Editor(s) used*          : Doom Builder 2, Slade 3, Paint.net, Gimp, Wcleaner, Doom Font Writer, WhackEd4
 *Known Bugs*              : None
 *May Not Run With...*     : Vanilla Doom
-*How To Run The File*	: Anyway you prefer, like:
-			  "prboom.exe -iwad doom2.wad -file thtthren.wad"
+*How To Run The File*     : Anyway you prefer, like:
+			    "prboom.exe -iwad doom2.wad -file thtthren.wad"
 
-*Important Note*		: The maps use sky transfers so for the best and
-			  intended experience use PrBoom+ ver. 2.5.1.4
-			  with -complevel 9
+*Important Note*          : The maps use sky transfers so for the best and intended experience use PrBoom+ ver. 2.5.1.4 with -complevel 9
                           
 :Credits
 :-------------------------------------------------------------------------------

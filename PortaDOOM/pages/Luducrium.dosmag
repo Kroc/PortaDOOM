@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\jokes\ludicrm\play.bat
 $KEY:T=SHELL:pwads\jokes\ludicrm\ludicrm.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
 
-:Luducrium                                           * 2016 Cacoward winner! *
+:Luducrium                                          * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>12>08*   Author : _antares031_
 :Levels   : *6*             Modes : *Single

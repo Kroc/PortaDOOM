@@ -2,9 +2,9 @@ $KEY:P=SHELL:play.bat /PWAD pwads\MASTER\PARADOX.WAD /LEVEL 1
 $KEY:T=SHELL:pwads\MASTER\PARADOX.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Paradox_(Master_Levels)
 
-:Paradox                                           (Master Levels for DOOM II)
+:Paradox                                          (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *1995>12>26*   Author : _Tom Mustaine_
 :Levels   : *1*             Modes : *Single, Co-op, Deathmatch
@@ -23,7 +23,7 @@ Extreme planning went into the play flow on this level. The archeticture is desi
 :-------------------------------------------------------------------------------
 *Base*                    : From Scratch
 *Editor(s) used*          : Started with Deu (Ran outta memory) 
-                          Finished with DCK (Much better editor!)
+                            Finished with DCK (Much better editor!)
 *Known Bugs*              : You may die, lot's.
 
 :Credits:

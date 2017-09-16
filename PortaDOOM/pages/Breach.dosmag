@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\onesies\breach\play.bat
 $KEY:T=SHELL:pwads\onesies\breach\breach.txt
 $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/71430-breach-updated-to-beta3/
 
-:Breach                                              * 2015 Cacoward winner! *
+:Breach                                             * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>12>28*   Author : _Viggles_
 :Levels   : *1*             Modes : *Single
@@ -33,6 +33,6 @@ This was an exercise in using the original Doom 2 textures and specials to build
 
 :Credits:
 :-------------------------------------------------------------------------------
- - _Jani Saarijärvi_ for playtesting and invaluable design advice.
- - The Doomworld forums for playtesting and vital criticism.
- - My wife, for her "unending patience" (her words).
+- _Jani Saarijärvi_ for playtesting and invaluable design advice.
+- The Doomworld forums for playtesting and vital criticism.
+- My wife, for her "unending patience" (her words).

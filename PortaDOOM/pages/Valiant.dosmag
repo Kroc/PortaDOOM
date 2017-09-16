@@ -2,16 +2,16 @@ $KEY:P=SHELL:pwads\megawads\valiant\play.bat
 $KEY:T=SHELL:pwads\megawads\valiant\valiant.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 
-:Valiant                                             * 2015 Cacoward winner! *
+:Valiant                                            * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>02>07*   Author :  _Paul "skillsaw" DeBruyne_
 :Levels   : *32*            Modes : *Single, Co-op
 :Requires : *MBF*        Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-Valiant is a MBF megawad for Doom II featuring 32 new maps spanning 5 themed episodes. Each map is designed to be played  from a pistol start, but some effort has been made to support continuous play as well.
+Valiant is a MBF megawad for Doom II featuring 32 new maps spanning 5 themed episodes. Each map is designed to be played from a pistol start, but some effort has been made to support continuous play as well.
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -21,9 +21,9 @@ Valiant is a MBF megawad for Doom II featuring 32 new maps spanning 5 themed epi
 *Known Bugs*              : There is a graphical glitch with the final boss that occurs only in non-DECORATE based ports, due to certain hard coded behaviours.
 *May Not Run With...*     : Valiant will have conflicts with gameplay mods due to its extensive use of DeHackEd.
                           
-                          Valiant will not run with versions of PrBoom-plus lower than 2.5.1.4, or any port without support for MBF code pointers OR DECORATE, or on any port that does not support ZDBSP extended nodes.
+                            Valiant will not run with versions of PrBoom-plus lower than 2.5.1.4, or any port without support for MBF code pointers OR DECORATE, or on any port that does not support ZDBSP extended nodes.
                           
-                          ZDoom, GZDoom, PrBoom-plus (complevel 11), Eternity, or Zandronum are recommended.
+                            ZDoom, GZDoom, PrBoom-plus (complevel 11), Eternity, or Zandronum are recommended.
                           
 :Credits
 :-------------------------------------------------------------------------------

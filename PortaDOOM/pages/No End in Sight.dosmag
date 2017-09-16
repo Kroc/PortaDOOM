@@ -4,7 +4,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/neis
 
 :No End in Sight
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>11>28*   Author : _Emil_, _Xaser_, _Chris Lutz_ (see credits)
 :Levels   : *38*            Modes : *Single, Co-op
@@ -26,10 +26,10 @@ With no end in sight(tm) to the demon presence on Earth, our hero, Doomguy McDoo
 *Build Time*              : Forever and a Half.
 *Editor(s) used*          : Various
 *May Not Run With...*     : Versions of Doom prior to 1.9.
-                          E4 requires a limit-removing port.
+                            E4 requires a limit-removing port.
 *Known Bugs*              : There's likely to be some roughness around the edges, given the wad's heritage, but hopefully nothing gamebreaking.
 
-                          Special note: the normal/secret exits are NOT swapped in some E3 maps. This is NOT a bug. ;)
+                            Special note: the normal/secret exits are NOT swapped in some E3 maps. This is NOT a bug. ;)
                           
 :Credits
 :-------------------------------------------------------------------------------

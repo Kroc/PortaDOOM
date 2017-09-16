@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\community\32in24-14\play.bat
 $KEY:T=SHELL:pwads\community\32in24-14\32in24-14.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/32in2414
 
-:32in24-14: How the Hamburglar Stole Christmas    * 2015 Cacoward runner up! *
+:32in24-14: How the Hamburglar Stole Christmas   * 2015 Cacoward runner up! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>01>18*   Author : _The 32in24 Team_
 :Levels   : *42*            Modes : *Single
@@ -38,138 +38,140 @@ And then he was arrested for lewd conduct with Joe-Ilya in the men's room of a M
 :-------------------------------------------------------------------------------
 The levels in this iteration of the series are:
 
-  *MAP01: "The Krusty Krab Kwanzaa Kaper"
+- MAP01: *"The Krusty Krab Kwanzaa Kaper"
          by _Wartorn_
-  *MAP02: "Santa's Got The Shotgun"
-          by _MTrop_
-  *MAP03: "Jewish Space Lizard Counter-Christmas Stronghold"
-          by _Tib_
-  *MAP04: "Krampus Academy"
-          by _NoneeLlama_
-  *MAP05: "Belligerent Bauble Bastion"
-          by _Obsidian_
-  *MAP06: "Christmas on Deimos"
-          by _Walter Confalonieri_
-  *MAP07: "Cold Coffee"
-          by _Jimmy_
-  *MAP08: "Your Subscription to Egyptian Addiction, CE"
-          by _Tib_
-  *MAP09: "I'm Dreaming of an Orange Christmas (In Space)"
-          by _Breezeep_
-  *MAP10: "Hey Guys Romero Actually Showed Up This Time"
-          by _Marcaek_
-  *MAP11: "Chapel of Christmas"
-          by _Tango_
-  *MAP12: "A Very Tyson Christmas"
-          by _The Mionic Donut_
-  *MAP13: "Reindeer Processor"
-          by _Jimmy_
-  *MAP14: "Grilled Mormons"
-          by _Gothic_
-  *MAP15: "Buntaluffigus Mountain and Generic Caps (also, Baby Jesus)"
-          by _TMD_
-  *MAP16: "Chrismrace Challengemas"
-          by _jmickle_
-  *MAP17: "Let It Snow"
-          by _JC_
-  *MAP18: "Assault on Mount Crumpet"
-          by _The Mionic Donut_
-  *MAP19: "Violent Night, Holy Shite"
-          by _Skillsaw_
-  *MAP20: "Air Jordan"
-          by _Esselfortium_
-  *MAP21: "One Flew Over The Reindeer's Nest"
-          by _Stewboy_
-  *MAP22: "Rockets on the Fir Tree"
-          by _franckFRAG_
-  *MAP23: "Walken in a Winter Wonderland"
-          by _Shadow Hog_
-  *MAP24: "All I Want For Christmas is a Masterbowl"
-          by _AlexMax_
-  *MAP25: "Winterfresh Gum Dictatorship"
-          by _RottKing_
-  *MAP26: "A Very Patrick Swayze Christmas"
-          by _Zakurum_
-  *MAP27: "No Festivus For the Living"
-          by _Xaser_
-  *MAP28: "Christmas Eve in the Pie in the Sky Diner"
-          by _lupinx-Kassman_
-  *MAP29: "Missiletow"
-          by _Mechadon_
-  *MAP30: "Christmas Dinner Pizza"
-          by _Nub Hat_ & _Esselfortium_
-  *MAP31: "How Santa Claus Screwed Up Keycard Valley's Water Supply"
-          by _Dusk_
-  *MAP32: "Jingle Hell"
-          by _Tango_
-  *MAP33: "Raging Red Yuletide"
-          by _Baratus_
-  *MAP34: "Milk and Sugar"
-          by _Cacowad_
-  *MAP35: "Egyptian XMas Party (That You're Not Invited To)"
-          by _BlackFish_
-  *MAP36: "Fuck Christmas, I Just Want To Read!"
-          by _Philnemba_
-  *MAP37: "It Came Upon a Midnight Blackout"
-          by _Getsu Fune_
-  *MAP38: "Christmas The Flag"
-          by _Nub Hat_
-  *MAP39: "Candy Base"
-          by _joe-ilya_
-  *MAP40: "Chocolate Swamp"
-          by _joe-ilya_
-  *MAP41: "The Day When Santa Captured The Flags"
-          by _Dusk_
-  *MAP42: "Plumbing Work on Christmas Eve"
-          by _Nub Hat_
+- MAP02: *"Santa's Got The Shotgun"
+         by _MTrop_
+- MAP03: *"Jewish Space Lizard Counter-Christmas Stronghold"
+         by _Tib_
+- MAP04: *"Krampus Academy"
+         by _NoneeLlama_
+- MAP05: *"Belligerent Bauble Bastion"
+         by _Obsidian_
+- MAP06: *"Christmas on Deimos"
+         by _Walter Confalonieri_
+- MAP07: *"Cold Coffee"
+         by _Jimmy_
+- MAP08: *"Your Subscription to Egyptian Addiction, CE"
+         by _Tib_
+- MAP09: *"I'm Dreaming of an Orange Christmas (In Space)"
+         by _Breezeep_
+- MAP10: *"Hey Guys Romero Actually Showed Up This Time"
+         by _Marcaek_
+- MAP11: *"Chapel of Christmas"
+         by _Tango_
+- MAP12: *"A Very Tyson Christmas"
+         by _The Mionic Donut_
+- MAP13: *"Reindeer Processor"
+         by _Jimmy_
+- MAP14: *"Grilled Mormons"
+         by _Gothic_
+- MAP15: *"Buntaluffigus Mountain and Generic Caps (also, Baby Jesus)"
+         by _TMD_
+- MAP16: *"Chrismrace Challengemas"
+         by _jmickle_
+- MAP17: *"Let It Snow"
+         by _JC_
+- MAP18: *"Assault on Mount Crumpet"
+         by _The Mionic Donut_
+- MAP19: *"Violent Night, Holy Shite"
+         by _Skillsaw_
+- MAP20: *"Air Jordan"
+         by _Esselfortium_
+- MAP21: *"One Flew Over The Reindeer's Nest"
+         by _Stewboy_
+- MAP22: *"Rockets on the Fir Tree"
+         by _franckFRAG_
+- MAP23: *"Walken in a Winter Wonderland"
+         by _Shadow Hog_
+- MAP24: *"All I Want For Christmas is a Masterbowl"
+         by _AlexMax_
+- MAP25: *"Winterfresh Gum Dictatorship"
+         by _RottKing_
+- MAP26: *"A Very Patrick Swayze Christmas"
+         by _Zakurum_
+- MAP27: *"No Festivus For the Living"
+         by _Xaser_
+- MAP28: *"Christmas Eve in the Pie in the Sky Diner"
+         by _lupinx-Kassman_
+- MAP29: *"Missiletow"
+         by _Mechadon_
+- MAP30: *"Christmas Dinner Pizza"
+         by _Nub Hat_ & _Esselfortium_
+- MAP31: *"How Santa Claus Screwed Up Keycard Valley's Water Supply"
+         by _Dusk_
+- MAP32: *"Jingle Hell"
+         by _Tango_
+- MAP33: *"Raging Red Yuletide"
+         by _Baratus_
+- MAP34: *"Milk and Sugar"
+         by _Cacowad_
+- MAP35: *"Egyptian XMas Party (That You're Not Invited To)"
+         by _BlackFish_
+- MAP36: *"Fuck Christmas, I Just Want To Read!"
+         by _Philnemba_
+- MAP37: *"It Came Upon a Midnight Blackout"
+         by _Getsu Fune_
+- MAP38: *"Christmas The Flag"
+         by _Nub Hat_
+- MAP39: *"Candy Base"
+         by _joe-ilya_
+- MAP40: *"Chocolate Swamp"
+         by _joe-ilya_
+- MAP41: *"The Day When Santa Captured The Flags"
+         by _Dusk_
+- MAP42: *"Plumbing Work on Christmas Eve"
+         by _Nub Hat_
 
 :Music Used in This WAD:
-  *Title, Intermission:
-        "How the Grinch Stole Christmas (theme)"
-  *MAP01:* kof98
-  *MAP02:* "If You Love Christmas So Much Why Don't You Merry It" by _Jimmy
-  *MAP03:* "Ryuichi_Sakamoto_Merry_christmas_mr_lawrence1.mid"
-  *MAP04:* David Hasselhoff - I've Been Looking for Freedom
-  *MAP05:* Snow Go theme from Crash Bandicoot (edited by _FuzzballFox_)
-  *MAP06:* King Diamond - A mansion in the darkness
-  *MAP07:* "Blizzard" by _Jimmy
-  *MAP08:* "SNES_Toki_Memo_Lonely_Christmas.mid"
-  *MAP09:* "Pursuit" by _stewboy (Forty-Two)_
-  *MAP10:* "Lost In Place (Lippeth)"
-  *MAP11:* Chapel of Dissonance, from Castlevania: Harmony of Dissonance
-  *MAP12:* "9:00 AM" from Animal Crossing: City Folk, arranged by _Andrew Shand
-  *MAP13:* "Time Bomb" by _Jimmy
-  *MAP14:* TNT MAP20
-  *MAP15:* Whatever song is in 32in24-4 map13
-  *MAP16:* Rihanna - Shut up and drive
-  *MAP17:* ???
-  *MAP18:* Ice Cap Act 2 from Sanic3
-  *MAP19:* Shade Man's stage from Megaman 7, sequenced by _Jarel Jones
-  *MAP20:* some bagpipe remix of a papa roach song
-  *MAP21:* Descent Level 13 (Europa Mining Colony)
-  *MAP22:* ???
-  *MAP23:* "Walking in a Winter Wonderland",
+
+- Title, Intermission:
+         *"How the Grinch Stole Christmas (theme)"*
+- MAP01: kof98
+- MAP02: *"If You Love Christmas So Much Why Don't You Merry It"* by _Jimmy
+- MAP03: *"Ryuichi_Sakamoto_Merry_christmas_mr_lawrence1.mid"*
+- MAP04: David Hasselhoff - I've Been Looking for Freedom
+- MAP05: Snow Go theme from Crash Bandicoot (edited by _FuzzballFox_)
+- MAP06: King Diamond - A mansion in the darkness
+- MAP07: *"Blizzard"* by _Jimmy
+- MAP08: *"SNES_Toki_Memo_Lonely_Christmas.mid"*
+- MAP09: *"Pursuit"* by _stewboy (Forty-Two)_
+- MAP10: *"Lost In Place (Lippeth)"*
+- MAP11: Chapel of Dissonance, from Castlevania: Harmony of Dissonance
+- MAP12: "9:00 AM" from Animal Crossing: City Folk, arranged by _Andrew Shand
+- MAP13: *"Time Bomb"* by _Jimmy
+- MAP14: TNT MAP20
+- MAP15: Whatever song is in 32in24-4 map13
+- MAP16: Rihanna - Shut up and drive
+- MAP17: ???
+- MAP18: Ice Cap Act 2 from Sanic3
+- MAP19: Shade Man's stage from Megaman 7, sequenced by _Jarel Jones
+- MAP20: some bagpipe remix of a papa roach song
+- MAP21: Descent Level 13 (Europa Mining Colony)
+- MAP22: ???
+- MAP23: *"Walking in a Winter Wonderland"*,
          arranged by Roland Corporation in 1991
-  *MAP24:* "Fillmore" from ActRaiser
-  *MAP25:* Ristar, Planet Freon: Act 1 - "Ring Rink"
-  *MAP26:* Descent Level 12 (Callisto Tower Colony)
-  *MAP27:* Weird Al Yankovic - Jurassic Park
-  *MAP28:* Ending Music from Bomberman Hero, sequenced by _Jace
-  *MAP29:* "Tidal Tempest: Present" from Sonic CD, sequenced by _King Meteor
-  *MAP30:* Junior - Mama Used to Say
-  *MAP31:* something from "SUPER DODGEBALL"
-  *MAP32:* Opposing Bloodlines, from Castlevania: Rondo of Blood
-  *MAP33:* "Bloodpool" from Actraiser, sequenced by _PJ Barnes
-  *MAP34:* Ice Palace theme from Secret of Mana (sequenced by _Teck_)
-  *MAP35:* "Jolly Egyptian" by Blackfish
-  *MAP36:* some midi of "the 12 days of Christmas"
-  *MAP37:* sangy2.mid from NOVA: The Birth
-  *MAP38:* The Police - Every Breath You Take
-  *MAP39:* Weezer - Hash Pipe
-  *MAP40:* Green Day - Brain Stew
-  *MAP41:* Blade Man theme from Mega Man 10
-  *MAP42:* Take That - Patience
-  *ReadM:* DETUNED DRAGONFORCE OH GOD
+- MAP24: *"Fillmore"* from ActRaiser
+- MAP25: Ristar, Planet Freon: Act 1 - *"Ring Rink"*
+- MAP26: Descent Level 12 (Callisto Tower Colony)
+- MAP27: Weird Al Yankovic - Jurassic Park
+- MAP28: Ending Music from Bomberman Hero, sequenced by _Jace
+- MAP29: *"Tidal Tempest: Present"* from Sonic CD, sequenced by _King Meteor
+- MAP30: Junior - Mama Used to Say
+- MAP31: something from *"SUPER DODGEBALL"*
+- MAP32: Opposing Bloodlines, from Castlevania: Rondo of Blood
+- MAP33: *"Bloodpool"* from Actraiser, sequenced by _PJ Barnes
+- MAP34: Ice Palace theme from Secret of Mana (sequenced by _Teck_)
+- MAP35: *"Jolly Egyptian"* by Blackfish
+- MAP36: some midi of *"the 12 days of Christmas"*
+- MAP37: sangy2.mid from NOVA: The Birth
+- MAP38: The Police - Every Breath You Take
+- MAP39: Weezer - Hash Pipe
+- MAP40: Green Day - Brain Stew
+- MAP41: Blade Man theme from Mega Man 10
+- MAP42: Take That - Patience
+- ReadM: DETUNED DRAGONFORCE OH GOD
 
 :Additional Credits to:
+
 _esselfortium_ for getting the resource wad set up, and making some super sick textures, _Shaikoten_ in his usual hosting and TITLE/INTERPIC duties, _Xaser_ and _nub_hat_ for tireless compilation and dealing with last minute changes, _dew_ for being basically the gameplay director. Pretty much the same as last time!

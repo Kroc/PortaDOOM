@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\onesies\comatose\play.bat
 $KEY:T=SHELL:pwads\onesies\comatose\Comatose.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/comatose
 
-:Comatose                                            * 2016 Cacoward winner! *
+:Comatose                                           * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>12>19*   Author : _Lainos_
 :Levels   : *1*             Modes : *Single

@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\mods\doomrl_arsenal\play.bat
 $KEY:T=SHELL:pwads\mods\doomrl_arsenal\Credits.txt
 $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 
-:DoomRL Arsenal                                      * 2015 Cacoward winner! *
+:DoomRL Arsenal                                     * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2013>08>14+*  Author : _Yholl_ *et al. (see credits)
 :Levels   : *None*          Modes : *Single, Co-op
@@ -64,47 +64,47 @@ Thanks to _HellCattX_ for his awesome ammopile, which I used as a base for the m
 *STANDARD MODPACKS
 :===============================================================================
 *Agility Mod Pack:
- - Increases hitscan accuracy by .5 (For those unfamiliar, the Pistol has a spread of 5.6 horizontal, 0 vertical, this will reduce it to 5.1, 0)
- - Increases projectile speed on projectile-firing weapons
- - Increases accuracy on multi-projectile weapons
+- Increases hitscan accuracy by .5 (For those unfamiliar, the Pistol has a spread of 5.6 horizontal, 0 vertical, this will reduce it to 5.1, 0)
+- Increases projectile speed on projectile-firing weapons
+- Increases accuracy on multi-projectile weapons
 
 *Bulk Mod Pack:
- - Increases clip size by 30% or at least 1
- - Increases pellet count on single shot multi-projectile weapons
- - Increases impact damage on single shot projectiles
- - Increases damage on melee weapons
+- Increases clip size by 30% or at least 1
+- Increases pellet count on single shot multi-projectile weapons
+- Increases impact damage on single shot projectiles
+- Increases damage on melee weapons
 
 *Power Mod Pack:
- - Increases damage
- - Increases explosive damage on rockets
- - Increases damage of rays dealt by BFG attacks
- - Increases damage randomization on melee weapons
+- Increases damage
+- Increases explosive damage on rockets
+- Increases damage of rays dealt by BFG attacks
+- Increases damage randomization on melee weapons
 
 *Technical Mod Pack:
- - Increases reload speed
- - Increases weapon switch speed on melee weapons
+- Increases reload speed
+- Increases weapon switch speed on melee weapons
     
 *EXOTIC MODPACKS
 :===============================================================================
 *Sniper Mod Pack:
- - First mod makes first hitscan shot 100% accurate and increases accuracy by 2/2
- - Second mod makes all shots 100% accurate
- - Gives velocity scaling on projectiles and 100% accuracy
+- First mod makes first hitscan shot 100% accurate and increases accuracy by 2/2
+- Second mod makes all shots 100% accurate
+- Gives velocity scaling on projectiles and 100% accuracy
 
 *Firestorm Mod Pack:
- - Increases firerate on rapidfire weapons and pistols
- - Increases AOE radius on explosives
- - Increases number of BFG rays
- - Increases knockback and gives increases close combat damage to shotguns
+- Increases firerate on rapidfire weapons and pistols
+- Increases AOE radius on explosives
+- Increases number of BFG rays
+- Increases knockback and gives increases close combat damage to shotguns
 
 *Nano Mod Pack:
- - Gun makes 1 ammo per half a second while held, cannot be reloaded manually
+- Gun makes 1 ammo per half a second while held, cannot be reloaded manually
 
 *Onyx Mod Pack:
- - Makes your currently worn armor indestructible
+- Makes your currently worn armor indestructible
 
 *Armor Mod Pack:
- - Allows you to change armor from one color to another. Change security armor to commando armor, for instance. Works with all three color armors.
+- Allows you to change armor from one color to another. Change security armor to commando armor, for instance. Works with all three color armors.
     
 There are even secrets to the exotic modpacks that few know of...
 
@@ -161,338 +161,338 @@ The first two pages of the Armor/Class Hud show the stats of your currently worn
 :Credits
 :-------------------------------------------------------------------------------
 _1337spy_
- - Edited Plasmatic Shotgun muzzleflash
- - Super Shotgun, Quad Shotgun and Revolver edited idle frames
- - Edited High Power Pistol recoil frames
- - Edited Unarmed sprites
+- Edited Plasmatic Shotgun muzzleflash
+- Super Shotgun, Quad Shotgun and Revolver edited idle frames
+- Edited High Power Pistol recoil frames
+- Edited Unarmed sprites
 
 _Archon_
- - Adding the nuclear symbol from Hacx onto the Nuclear weapons
+- Adding the nuclear symbol from Hacx onto the Nuclear weapons
 
 _abbuw_
- - High Power BFG9000 sprite
+- High Power BFG9000 sprite
 
 _amv2k9_
- - A huge amount of work on the HUD!
- - The special anti-console spam code used by all weapons, armors, boots and modpacks in the game now
- - Demolitionist select animation
- - Widowmaker SMG and Demolition Ammo Battle Rifle sprites
+- A huge amount of work on the HUD!
+- The special anti-console spam code used by all weapons, armors, boots and modpacks in the game now
+- Demolitionist select animation
+- Widowmaker SMG and Demolition Ammo Battle Rifle sprites
 
 _Alex_Mercer_
- - High Power Chaingun sprites
+- High Power Chaingun sprites
 
 _Bane_
- - Cluster Bomb Launcher sprites
+- Cluster Bomb Launcher sprites
 
 _BatteryBlack_
- - Tower Shield sprite
+- Tower Shield sprite
 
 _Bgraybr_
- - Quad Shotgun sprites
+- Quad Shotgun sprites
 
 _Blox_
- - Made the Grammaton Cleric Beretta super pretty
- - Fixing up the Nanofiber Skin Armor
- - Creating the Necroarmor
+- Made the Grammaton Cleric Beretta super pretty
+- Fixing up the Nanofiber Skin Armor
+- Creating the Necroarmor
 
 _Blue Shadow_
- - Helped fix all my timed powerups
+- Helped fix all my timed powerups
 
 _Bren__
- - Chaingun pickup sprite
+- Chaingun pickup sprite
 
 _BouncyTEM_
- - New Pistol firing sound
+- New Pistol firing sound
 
 _Carbine Dioxide_
- - High Power Hunting Revolver sprites
+- High Power Hunting Revolver sprites
 
 _Captain Toenail_
- - Starflash muzzle flash
- - Jackhammer edit, Uzi edit
- - Commando armor sprites
- - Tech Barrel sprites
+- Starflash muzzle flash
+- Jackhammer edit, Uzi edit
+- Commando armor sprites
+- Tech Barrel sprites
 
 _Captain J_
- - Suss Gun, Shrapnel Cannon, Cyclone Cannon sprites
- - Uzi edit, Marine punching frames edit
+- Suss Gun, Shrapnel Cannon, Cyclone Cannon sprites
+- Uzi edit, Marine punching frames edit
 
 _Crudux Cruo_
- - Handcannon sprites
+- Handcannon sprites
 
 _Daniel_
- - Base sprite for the Nuclear BFG9000
+- Base sprite for the Nuclear BFG9000
 
 _DBThanatos_
- - Minigun sprites
+- Minigun sprites
 
 _DoomNukem_
- - Hunting Revolver sprites
+- Hunting Revolver sprites
 
 _Edward850_
- - Helping me to make weapons into less horrifying code conglomerations
- - Helping in cutting down on intensive scripts
+- Helping me to make weapons into less horrifying code conglomerations
+- Helping in cutting down on intensive scripts
 
 _Eriance_
- - DE explosions, BFG10K, VBFG9000, Biggest Fucking Gun, Gatling Gun, High Power Plasma Rifle and Bulletstorm Chaingun sprites
- - Part of the Particle Beam Cannon
- - High Power Nuclear Plasma Rifle, Widowmaker SMG and Conqueror Shotgun base sprites
- - Assault Chaingun sprites
- - Zeus Cannon, Nuclear Onslaught and Burst Plasma Rifle projectile sprites
+- DE explosions, BFG10K, VBFG9000, Biggest Fucking Gun, Gatling Gun, High Power Plasma Rifle and Bulletstorm Chaingun sprites
+- Part of the Particle Beam Cannon
+- High Power Nuclear Plasma Rifle, Widowmaker SMG and Conqueror Shotgun base sprites
+- Assault Chaingun sprites
+- Zeus Cannon, Nuclear Onslaught and Burst Plasma Rifle projectile sprites
 
 *Freedoom
- - Super Shotgun sounds. Bits of the High Power Nuclear BFG9000
+- Super Shotgun sounds. Bits of the High Power Nuclear BFG9000
 
 _Geonightman_
- - Geo's Golden Gauntlet sprites
+- Geo's Golden Gauntlet sprites
 
 _GAA1992_
- - High Power Tristar Blaster sprites
+- High Power Tristar Blaster sprites
 
 _HellCattX_
- - Base sprites for mod packs
- - Hurricane Cannon and Judge of the Dead sprites
+- Base sprites for mod packs
+- Hurricane Cannon and Judge of the Dead sprites
 
 _InsanityBringer_
- - BEHOLD THE POWER OF PDA PONG
+- BEHOLD THE POWER OF PDA PONG
 
 _IMX_
- - High Power BFG9000 and Zeus Cannon sprites
+- High Power BFG9000 and Zeus Cannon sprites
 
 _IskatuMesk_
- - Sounds from his Black Sun sound resource
+- Sounds from his Black Sun sound resource
 
 _JoeyTD_
- - Jackhammer base sprites
- - Elephant Gun, Combat Pistol, Double Shotgun, Assault Shotgun, Tactical Shotgun, and High Power Pistol sprites
+- Jackhammer base sprites
+- Elephant Gun, Combat Pistol, Double Shotgun, Assault Shotgun, Tactical Shotgun, and High Power Pistol sprites
 
 _Kate_
- - Nukage pool sprites
- - Massive help with horrible complex things, thank you very much
- - Blank sphere template sprite
- - Rarity Beam sprite
+- Nukage pool sprites
+- Massive help with horrible complex things, thank you very much
+- Blank sphere template sprite
+- Rarity Beam sprite
 
 _Kribbulous_
- - Massive amounts of playtesting and bughunting
+- Massive amounts of playtesting and bughunting
 
 _Kyle873_
- - Armor and Boots removal keybinds
- - Supaa compatibility teamwork, ho~!
- - Did a huge amount of scripting work, what a frisbee
- - Was tortured horribly in a basement at some point
+- Armor and Boots removal keybinds
+- Supaa compatibility teamwork, ho~!
+- Did a huge amount of scripting work, what a frisbee
+- Was tortured horribly in a basement at some point
 
 _Marrub_
- - Helping me with a crapton of scripting stuff
- - Fixing horrible bugs that have plagued the mod for ages
- - Making cool spin-o-rockets. They're super cool
+- Helping me with a crapton of scripting stuff
+- Fixing horrible bugs that have plagued the mod for ages
+- Making cool spin-o-rockets. They're super cool
 
 _Marty Kirra_
- - Making himself
- - Voicing himself
- - ???? ???? ?? ???????
+- Making himself
+- Voicing himself
+- ???? ???? ?? ???????
 
 _Mike12_
- - Soulstorm Rifle, Storm Pistol, Ripper, Uzi, Battle Rifle, Revenant's Launcher and High Power Minigun
+- Soulstorm Rifle, Storm Pistol, Ripper, Uzi, Battle Rifle, Revenant's Launcher and High Power Minigun
 
 _Minigunner_
- - Redone Combat Shotgun ready sprite frames, and Combat Pistol sprites
- - Minigun and Assault/Burst Minigun sprites
- - Smooth explosion sprites
- - Zeus Cannon sprite edits
+- Redone Combat Shotgun ready sprite frames, and Combat Pistol sprites
+- Minigun and Assault/Burst Minigun sprites
+- Smooth explosion sprites
+- Zeus Cannon sprite edits
 
 _NeuralStunner_
- - Recoil code for heavy weapons
+- Recoil code for heavy weapons
 
 _NMN_
- - Plasma Redirection Cannon, Shredder Pistol and Heavy Double Shotgun sprites
- - Onslaught Six
- - Super Shotgun sprites
- - Mini-missile Pistol reload frame edit
+- Plasma Redirection Cannon, Shredder Pistol and Heavy Double Shotgun sprites
+- Onslaught Six
+- Super Shotgun sprites
+- Mini-missile Pistol reload frame edit
 
 _osjclatchford_
- - Railgun sprites
- - Explosive barrel sprites
- - Doom-style ground flames
+- Railgun sprites
+- Explosive barrel sprites
+- Doom-style ground flames
 
 _Per Kristian_
- - Smooth vanilla weapon sprites
+- Smooth vanilla weapon sprites
 
 _PillowBlaster_
- - Drunk missile code
- - Helping me to make weapons into less horrifying code conglomerations
+- Drunk missile code
+- Helping me to make weapons into less horrifying code conglomerations
 
 _QuickShotGunman_
- - Pistol pickup sprite
+- Pistol pickup sprite
 
 _Ranik_
- - Excellent beta testing. Thanks!
+- Excellent beta testing. Thanks!
 
 _Ryan Cordell_
- - Made the PDA system! This thing is a monster and it made him cry many times
- - Combat Shotgun, Baron Blaster, Reality Distortion Array, Plasma Handcannon, Rigelatin Assault Weapon, Voltgun, Megaton Shotgun, Super Machinegun, Plascharge Launcher, MIRV Launcher sprites
- - Tons of work on the HUDs, including making a completely new one from scratch!
- - Nuclear Power Armor sprites
- - Demonic Artifact sprite edit
- - Nuclear Onslaught base sprites
- - Revamped Fireproof Armor, Steel Beast pickup, The Bee, Reactive Shield System, BFG Infinity sprites
- - Converted all of DRLA into .pk3s because he's a gigaton monster frisbee of motivation and things
- - Also helped continue to streamline the placement of all things within the .pk3s
- - Enhancing your experience
+- Made the PDA system! This thing is a monster and it made him cry many times
+- Combat Shotgun, Baron Blaster, Reality Distortion Array, Plasma Handcannon, Rigelatin Assault Weapon, Voltgun, Megaton Shotgun, Super Machinegun, Plascharge Launcher, MIRV Launcher sprites
+- Tons of work on the HUDs, including making a completely new one from scratch!
+- Nuclear Power Armor sprites
+- Demonic Artifact sprite edit
+- Nuclear Onslaught base sprites
+- Revamped Fireproof Armor, Steel Beast pickup, The Bee, Reactive Shield System, BFG Infinity sprites
+- Converted all of DRLA into .pk3s because he's a gigaton monster frisbee of motivation and things
+- Also helped continue to streamline the placement of all things within the .pk3s
+- Enhancing your experience
 
 _Scalliano_
- - Dead scientist sprites
+- Dead scientist sprites
 
 _Seryder_
- - The fancy-pants title image used in this thread now
- - Plasma Uzi and Silenced Pistol sprites
- - Plasteel Boots sprite
- - Phase Device sprite edits
- - Death by his own creations
- - Techno-Lord and Cybruiser blood edits
- - Conqueror Shotgun color edit
- - Unused M_Doom title graphic
- - BFG Spider Mastermind variant sprites
+- The fancy-pants title image used in this thread now
+- Plasma Uzi and Silenced Pistol sprites
+- Plasteel Boots sprite
+- Phase Device sprite edits
+- Death by his own creations
+- Techno-Lord and Cybruiser blood edits
+- Conqueror Shotgun color edit
+- Unused M_Doom title graphic
+- BFG Spider Mastermind variant sprites
 
 _Sgt. Mark IV_
- - Micro Launcher sprites
- - Part of the Particle Beam Cannon
+- Micro Launcher sprites
+- Part of the Particle Beam Cannon
 
 _Sgt. Shivers_
- - Marksman Rifle, High Power Marksman Rifle, Vanguard Rifle, High Power Vanguard Rifle, Tommygun, PP7, RC-P90, RC-P120, Hunting Shotgun, Shredder Shotgun, Chameleon Rifle, Anti-Freak Jackal, Hellsign ARMS Casull, Single WSTE-M5 Shotgun, Stealth Rifle, Sniper Rifle, Nuclear Plasma Revolver, Marksman Pistol, High Power Marksman Pistol, Plasma Marksman Pistol, Bulletstorm Rifle, Plasma Shotgun Mk.II, Nuclear Plasma Rifle Mk.II, Nuclear Plasma Shotgun, Laser Shotgun, Scoped Rifle, Assault Plasma Rifle, Assault Laser Rifle, Burst-fire Rifle, Burst Plasma Rifle, Burst Uzi, Nano Shotgun, Nano Super Shotgun, Anti-materiel Rifle, Gauss Rifle, Energysaw, Plasma Cannon, Heavy Pulse Blaster, Laser Minigun, Defence Drone Launcher, Incineration Device Launcher, High Power Battle Rifle, Nanomachic Pistol, Nanomachich Battle Rifle, Nanomachic Rocket Launcher, Nanomachic Tristar Blaster, BFG Infinity, High Power Combat Pistol, High Power Handcannon, Lightweaver, Quantum Tantrum Cannon, Grammaton Cleric Beretta, Anti-Freak Jackal, Trigun, Overcharged Blaster, Demolition Ammo Pistol, Demolition Ammo Combat Pistol, Demolition Ammo Handcannon, Demolition Ammo Uzi, Plasma Combat Pistol Nuclear Plasma Pistol, Storm Nuclear Plasma Pistol and Heavy Assault Shotgun sprites
- - Armor Mod Pack sprites
- - Reloading sprites for the Shotgun, Double Shotgun, Super Shotgun, Heavy Shotgun, Elephant Gun, Heavy Double Shotgun, Heavy Super Shotgun, Hunting Revolver, High Power Hunting Revolver. Soulstorm Rifle, MA-75B Assault Rifle, Super Machinegun, Conqueror Shotgun, Revolver, Combat Translocator, Plasma Pistol, Plasma Combat Pistol, Plasma Handcannon, High Power Minigun, Assault Shotgun, Storm Pistol, Handcannon, Plasma Shotgun, Tactical Shotgun, Uzi, Dual Uzis, Laser Rifle, Jackhammer, Grammaton Cleric Beretta, Anti-Freak Jackal and Unknown Herald
- - Pickup sprites for the Plascharge Launcher, Reality Distortion Array, Death's Gaze, Micro Launcher, Shredder Pistol, Plasma Uzi, Plasma Handcannon and Storm Handcannon
- - Edit of the Shredder Pistol sprites
- - Nuclear Armor sprite
- - Laser decals
- - Demolitionist sprites
- - Onyx-modded Armors
- - Phase Device sprites
- - Weapon Mod hovering digit sprites
- - Lit flame on Flamethrower
- - Rehanded Hunting Revolver and High Power Hunting Revolver
- - The culprit behind the Nanomachic Armament Generator
- - All the special Backpacks
+- Marksman Rifle, High Power Marksman Rifle, Vanguard Rifle, High Power Vanguard Rifle, Tommygun, PP7, RC-P90, RC-P120, Hunting Shotgun, Shredder Shotgun, Chameleon Rifle, Anti-Freak Jackal, Hellsign ARMS Casull, Single WSTE-M5 Shotgun, Stealth Rifle, Sniper Rifle, Nuclear Plasma Revolver, Marksman Pistol, High Power Marksman Pistol, Plasma Marksman Pistol, Bulletstorm Rifle, Plasma Shotgun Mk.II, Nuclear Plasma Rifle Mk.II, Nuclear Plasma Shotgun, Laser Shotgun, Scoped Rifle, Assault Plasma Rifle, Assault Laser Rifle, Burst-fire Rifle, Burst Plasma Rifle, Burst Uzi, Nano Shotgun, Nano Super Shotgun, Anti-materiel Rifle, Gauss Rifle, Energysaw, Plasma Cannon, Heavy Pulse Blaster, Laser Minigun, Defence Drone Launcher, Incineration Device Launcher, High Power Battle Rifle, Nanomachic Pistol, Nanomachich Battle Rifle, Nanomachic Rocket Launcher, Nanomachic Tristar Blaster, BFG Infinity, High Power Combat Pistol, High Power Handcannon, Lightweaver, Quantum Tantrum Cannon, Grammaton Cleric Beretta, Anti-Freak Jackal, Trigun, Overcharged Blaster, Demolition Ammo Pistol, Demolition Ammo Combat Pistol, Demolition Ammo Handcannon, Demolition Ammo Uzi, Plasma Combat Pistol Nuclear Plasma Pistol, Storm Nuclear Plasma Pistol and Heavy Assault Shotgun sprites
+- Armor Mod Pack sprites
+- Reloading sprites for the Shotgun, Double Shotgun, Super Shotgun, Heavy Shotgun, Elephant Gun, Heavy Double Shotgun, Heavy Super Shotgun, Hunting Revolver, High Power Hunting Revolver. Soulstorm Rifle, MA-75B Assault Rifle, Super Machinegun, Conqueror Shotgun, Revolver, Combat Translocator, Plasma Pistol, Plasma Combat Pistol, Plasma Handcannon, High Power Minigun, Assault Shotgun, Storm Pistol, Handcannon, Plasma Shotgun, Tactical Shotgun, Uzi, Dual Uzis, Laser Rifle, Jackhammer, Grammaton Cleric Beretta, Anti-Freak Jackal and Unknown Herald
+- Pickup sprites for the Plascharge Launcher, Reality Distortion Array, Death's Gaze, Micro Launcher, Shredder Pistol, Plasma Uzi, Plasma Handcannon and Storm Handcannon
+- Edit of the Shredder Pistol sprites
+- Nuclear Armor sprite
+- Laser decals
+- Demolitionist sprites
+- Onyx-modded Armors
+- Phase Device sprites
+- Weapon Mod hovering digit sprites
+- Lit flame on Flamethrower
+- Rehanded Hunting Revolver and High Power Hunting Revolver
+- The culprit behind the Nanomachic Armament Generator
+- All the special Backpacks
 
 _SidDoyle_
- - One of the secrets of the supply crate
- - Maximum Cvar teaching! Thank you for helping me!
+- One of the secrets of the supply crate
+- Maximum Cvar teaching! Thank you for helping me!
 
 _SladeEXE_
- - Plasma Shotgun sprites
+- Plasma Shotgun sprites
 
 _Slax_
- - For being a giant glorious ball of ultra inspiration and helping design the player classes
- - Also, for being _Slax_
+- For being a giant glorious ball of ultra inspiration and helping design the player classes
+- Also, for being _Slax_
 
 _Solmyr_
- - Skull of the Abyss sprites
+- Skull of the Abyss sprites
 
 _SoloSpaghetti_
- - All the armors and boots except for the standard Doom armors, Commando Armor, Necroarmor, Nuclear Armor and Nuclear Power Armor
- - Scout, Technician and Renegade sprites and mugshots
- - Demolitionist mugshots
- - Marine, Scout, Technician and Renegade class select sprites
- - Base punching frames for Marine
- - Pickups for the Plasma Rifle Mk.II, Charch's Null Pointer, Napalm Launcher and another weapon I haven't decided on naming yet
- - Blueprint Computer sprites
- - Sentry variant sprites
- - Death's Gaze sprites
+- All the armors and boots except for the standard Doom armors, Commando Armor, Necroarmor, Nuclear Armor and Nuclear Power Armor
+- Scout, Technician and Renegade sprites and mugshots
+- Demolitionist mugshots
+- Marine, Scout, Technician and Renegade class select sprites
+- Base punching frames for Marine
+- Pickups for the Plasma Rifle Mk.II, Charch's Null Pointer, Napalm Launcher and another weapon I haven't decided on naming yet
+- Blueprint Computer sprites
+- Sentry variant sprites
+- Death's Gaze sprites
 
 _That_One_Doom_Mod_
- - Fist sprites and base code
+- Fist sprites and base code
 
 _TerminusEst13_
- - Provided accurate values for the Marathon weapons
- - Enhanced Marathon Sounds
- - Death's Gaze background sounds
- - Beefy as fuck Quad Shotgun sounds
- - Anti-Freak Jackal firing sound
- - Demonic Artifact sounds
- - Help with horrifying maths. Thanks a bunch
- - Helping me reliably host DRLA from now on
+- Provided accurate values for the Marathon weapons
+- Enhanced Marathon Sounds
+- Death's Gaze background sounds
+- Beefy as fuck Quad Shotgun sounds
+- Anti-Freak Jackal firing sound
+- Demonic Artifact sounds
+- Help with horrifying maths. Thanks a bunch
+- Helping me reliably host DRLA from now on
 
 *The Skulltag Team
- - BFG10K Sounds
+- BFG10K Sounds
 
 _torridGristle_
- - Recoloring the Unknown Herald
- - Cooldown frames on the Laser Rifle
- - Plasma Rifle Mk.II projectile sprites
- - Parts of the Super Shotgun and Battle Rifle sprites
+- Recoloring the Unknown Herald
+- Cooldown frames on the Laser Rifle
+- Plasma Rifle Mk.II projectile sprites
+- Parts of the Super Shotgun and Battle Rifle sprites
 
 _Turbo_
- - Frag Shotgun, Focused Double Shotgun and Gothic Arms melee punch sprites
+- Frag Shotgun, Focused Double Shotgun and Gothic Arms melee punch sprites
 
 _Warhawk_
- - Quad shotgun sprites
+- Quad shotgun sprites
 
 _WhiteFang_
- - Fist base code
+- Fist base code
 
 _Wildweasel_
- - For making ww-magop, whose weapon system inspired this mod entirely
- - The Patriot machinegun equip sound used for master assemblies
- - Storm Blaster sprites
- - Mixing the new Chameleon Rifle firing sounds
- - Awesome beta testing, thanks!
+- For making ww-magop, whose weapon system inspired this mod entirely
+- The Patriot machinegun equip sound used for master assemblies
+- Storm Blaster sprites
+- Mixing the new Chameleon Rifle firing sounds
+- Awesome beta testing, thanks!
 
 _Xim_
- - Double Chainsaw sprites
- - Tactical Rocket sprites
+- Double Chainsaw sprites
+- Tactical Rocket sprites
 
 _Yholl_
- - 99% of the DECORATE code
- - A lot of the base SBARINFO, expanded greatly on by _amv2k9_
- - Modpacks and Supply Crate sprite edits
- - Random minor gun edits, mostly muzzleflashes and basic Goldeneye-style reloads
- - Corrupted player class edits
+- 99% of the DECORATE code
+- A lot of the base SBARINFO, expanded greatly on by _amv2k9_
+- Modpacks and Supply Crate sprite edits
+- Random minor gun edits, mostly muzzleflashes and basic Goldeneye-style reloads
+- Corrupted player class edits
 
 _Zedek the Plague Doctor / Uboa_
- - Rehanding of _JoeyTD_'s Double Shotgun and Combat Shotgun
- - Double Shotgun and Napalm Launcher sprites
+- Rehanding of _JoeyTD_'s Double Shotgun and Combat Shotgun
+- Double Shotgun and Napalm Launcher sprites
 
 _Zrrion the Insect_
- - Base graphics and font used for the Status Bar hud!
- - Charch's Null Pointer, Heavy Shotgun, Blaster, High Power Blaster, Tristar Blaster, Pistol, Plasma Refractor, Mother-In-Law, High Power Nuclear Plasma Pistol, High Power Nuclear BFG9000, Particle Beam Cannon, Plasma Rifle Mk.II and Hell's Reign sprites
- - Chaingun muzzle flash sprites
- - Assistance with revamped muzzleflashes for many weapons
+- Base graphics and font used for the Status Bar hud!
+- Charch's Null Pointer, Heavy Shotgun, Blaster, High Power Blaster, Tristar Blaster, Pistol, Plasma Refractor, Mother-In-Law, High Power Nuclear Plasma Pistol, High Power Nuclear BFG9000, Particle Beam Cannon, Plasma Rifle Mk.II and Hell's Reign sprites
+- Chaingun muzzle flash sprites
+- Assistance with revamped muzzleflashes for many weapons
 
 _Zero X. Diamond_
- - Sprites and sounds for the Neural Stunner
+- Sprites and sounds for the Neural Stunner
 
 _ZikShadow_
- - Heavy Combat Shotgun sprites
+- Heavy Combat Shotgun sprites
 
 And some companies for making a lot of stuff in the first place.
 
- - Monolith Productions
- - Lobotomy Software
- - 3d Realms
- - Epic Games
- - Banjo Software
- - Infinity Ward
- - Id Software
- - Valve Software
- - STUDIO RADI-8
+- Monolith Productions
+- Lobotomy Software
+- 3d Realms
+- Epic Games
+- Banjo Software
+- Infinity Ward
+- Id Software
+- Valve Software
+- STUDIO RADI-8
 
 _KINSIE_ GAVE ME SOUNDS AND I CAN'T BE BOTHERED SORTING THEM
 I HAVE CODE TO UNFUCK AND MONSTERS TO EMIT
 
- - armor break 1: self-explanatory. from hollywood edge collection.
- - armor break big: ditto. from max payne 2, mirror's edge and l4d2
- - armor state #: for putting on or taking off generic armor. from insurgency
- - boots land generic: for thrown boots. from sound ideas
- - boots land metal: for techy thrown boots. from sound ideas and mortal kombat 9
- - boots put on base: for putting on boots. from insurgency.
- - chest open: for shooting those chests that make weapons pop out. from csgo and fallout 3
- - light armor land #: for thrown lighter types of armor. from insurgency.
- - weapon pistol #: from fallout 4.
- - weapon big #: from fallout 4.
- - weapon huge #: from fallout 3 & 4 and tf2
+- armor break 1: self-explanatory. from hollywood edge collection.
+- armor break big: ditto. from max payne 2, mirror's edge and l4d2
+- armor state #: for putting on or taking off generic armor. from insurgency
+- boots land generic: for thrown boots. from sound ideas
+- boots land metal: for techy thrown boots. from sound ideas and mortal kombat 9
+- boots put on base: for putting on boots. from insurgency.
+- chest open: for shooting those chests that make weapons pop out. from csgo and fallout 3
+- light armor land #: for thrown lighter types of armor. from insurgency.
+- weapon pistol #: from fallout 4.
+- weapon big #: from fallout 4.
+- weapon huge #: from fallout 3 & 4 and tf2
 
 Source sounds for the chameleon rifle:
 
- - System Shock 2 (assault rifle)
- - Wolfenstein 3D for Macintosh (machine gun)
- - Killing Floor IJC Weapon Pack (M7A3 reload)
+- System Shock 2 (assault rifle)
+- Wolfenstein 3D for Macintosh (machine gun)
+- Killing Floor IJC Weapon Pack (M7A3 reload)

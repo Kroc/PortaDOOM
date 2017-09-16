@@ -2,9 +2,9 @@ $KEY:P=SHELL:pwads\episodes\elfgp\play.bat
 $KEY:T=SHELL:pwads\episodes\elfgp\elfgp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
-:Elf Gets Pissed                                     * 2016 Cacoward winner! *
+:Elf Gets Pissed                                    * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                         [T] .txt [W] Website
+*[P] Play                        [T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>02>18*   Author : _RottKing_
 :Levels   : *9*             Modes : *Single, Co-op
