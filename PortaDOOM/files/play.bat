@@ -324,7 +324,7 @@ IF /I "%~1" == "FREEDOOM2" SET "IWAD=conversions\freedoom\freedoom2.wad"
 REM # Adventures of Square (shareware)
 IF /I "%~1" == "SQUARE1" SET "IWAD=SHAREWARE\adventures_of_square\square1.pk3"
 REM # Harmony
-IF /I "%~1" == "HARM1" SET "IWAD=harmony\harm1.wad"
+IF /I "%~1" == "HARM1" SET "IWAD=conversions\harmony\harm1.wad"
 
 REM # shareware, for PWADs that don't need the full IWAD
 REM # (this does not work for GZdoom)
