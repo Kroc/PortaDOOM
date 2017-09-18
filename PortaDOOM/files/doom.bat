@@ -1023,8 +1023,8 @@ EXIT /B 1
 REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
 SET "FREEDOOM="
 REM # TODO: check these files exist too
-IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%IWADS%\freedoom\freedoom1.wad"
-IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%IWADS%\freedoom\freedoom2.wad"
+IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%IWADS%\conversions\freedoom\freedoom1.wad"
+IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%IWADS%\conversions\freedoom\freedoom2.wad"
 
 IF NOT "%FREEDOOM%" == "" (
 	ECHO:

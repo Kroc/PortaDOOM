@@ -319,8 +319,8 @@ REM # Heretic, Hexen
 IF /I "%~1" == "HERETIC" SET "IWAD=HERETIC.WAD"
 IF /I "%~1" == "HEXEN" SET "IWAD=HEXEN.WAD"
 REM # FreeDOOM: Phase 1 / 2
-IF /I "%~1" == "FREEDOOM1" SET "IWAD=freedoom\freedoom1.wad"
-IF /I "%~1" == "FREEDOOM2" SET "IWAD=freedoom\freedoom2.wad"
+IF /I "%~1" == "FREEDOOM1" SET "IWAD=conversions\freedoom\freedoom1.wad"
+IF /I "%~1" == "FREEDOOM2" SET "IWAD=conversions\freedoom\freedoom2.wad"
 REM # Adventures of Square (shareware)
 IF /I "%~1" == "SQUARE1" SET "IWAD=SHAREWARE\adventures_of_square\square1.pk3"
 REM # Harmony
