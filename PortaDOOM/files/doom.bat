@@ -17,12 +17,11 @@ REM # - coloured usage text in Windows 10
 
 REM # todo:
 REM # - option to launch windowed -- will need to choose reasonable window size
-REM # - Heretic, Hexen & Strife sharewares & GOG/Steam detection
+REM # - Strife shareware & GOG/Steam detection
 
 REM # default folder names
 SET "CONFIGS=config"
-SET "IWADS=wads"
-SET "PWADS=wads"
+SET "WADS=wads"
 SET "PORTS=ports"
 SET "SAVES=saves"
 
@@ -116,21 +115,21 @@ SET     "USAGE=%USAGE% %_MISC_%[%_% %_--_% %_FILES_%files%_%%_MISC_%...]%_%
 SET "USAGE=%USAGE%%_MISC_%]%_%"
 
 IF "%~1" == "" (
-        ECHO:
-        ECHO  "doom.bat" is a command-line launcher for DOOM-based games.
-        ECHO  It makes it easier to create shortcuts to run a particular
-        ECHO  source-port with a particular WAD and particular mods etc.
-        ECHO:
-        ECHO %_HEADING_%Usage:%_%
+	ECHO:
+	ECHO  "doom.bat" is a command-line launcher for DOOM-based games.
+	ECHO  It makes it easier to create shortcuts to run a particular
+	ECHO  source-port with a particular WAD and particular mods etc.
+	ECHO:
+	ECHO %_HEADING_%Usage:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
-        ECHO     %USAGE%
-        ECHO:
-        ECHO %_HEADING_%Example:%_%
+	ECHO:
+	ECHO     %USAGE%
+	ECHO:
+	ECHO %_HEADING_%Example:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
-        ECHO     %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_--_% %_FILES_%brutalv20b.pk3%_%
-        ECHO:
+	ECHO:
+	ECHO     %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_--_% %_FILES_%brutalv20b.pk3%_%
+	ECHO:
 	ECHO %_HEADING_%Options:%_%
 	REM ---------------------------------------------------------------------------------
 	ECHO:
@@ -152,37 +151,37 @@ IF "%~1" == "" (
 	ECHO    %_OPTIONS_%/SW%_%                  : Force software rendering. By default hardware
 	ECHO                           rendering is used in GZDoom and PRBoom+ ^("glboom-plus"^)
 	ECHO:
-        ECHO %_HEADING_%Engines:%_%
+	ECHO %_HEADING_%Engines:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:		
+	ECHO:
 	ECHO     %_ENGINE_%choco-doom%_%          : ChocolateDOOM ^(very vanilla, 320x200^)
-        ECHO     %_ENGINE_%choco-doom-setup%_%    : Displays ChocolateDOOM's configuration program first
-        ECHO     %_ENGINE_%choco-heretic%_%       : As with choco-doom, but for Heretic WADs
-        ECHO     %_ENGINE_%choco-heretic-setup%_% : As above, but displays configuration first
-        ECHO     %_ENGINE_%choco-hexen%_%         : As with choco-doom, but for Hexen WADs
-        ECHO     %_ENGINE_%choco-hexen-setup%_%   : As above, but displays configuration first
-        ECHO     %_ENGINE_%choco-strife%_%        : As with choco-doom, but for Strife WADs
-        ECHO     %_ENGINE_%choco-strife-setup%_%  : As above, but displays configuration first
-        ECHO     %_ENGINE_%doom64ex%_%            : DOOM 64 EX, specifically for DOOM 64
-        ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current. Use %_OPTIONS_%/SW%_% for ZDoom software rendering
+	ECHO     %_ENGINE_%choco-doom-setup%_%    : Displays ChocolateDOOM's configuration program first
+	ECHO     %_ENGINE_%choco-heretic%_%       : As with choco-doom, but for Heretic WADs
+	ECHO     %_ENGINE_%choco-heretic-setup%_% : As above, but displays configuration first
+	ECHO     %_ENGINE_%choco-hexen%_%         : As with choco-doom, but for Hexen WADs
+	ECHO     %_ENGINE_%choco-hexen-setup%_%   : As above, but displays configuration first
+	ECHO     %_ENGINE_%choco-strife%_%        : As with choco-doom, but for Strife WADs
+	ECHO     %_ENGINE_%choco-strife-setup%_%  : As above, but displays configuration first
+	ECHO     %_ENGINE_%doom64ex%_%            : DOOM 64 EX, specifically for DOOM 64
+	ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current. Use %_OPTIONS_%/SW%_% for ZDoom software rendering
 	ECHO     %_ENGINE_%gzdoom-??%_%           : Where ?? is "22", "23", "24" or "31"
 	ECHO     %_ENGINE_%prboom%_%              : PRBoom+
-        ECHO     %_ENGINE_%zandronum%_%           : Zandronum current ^(2.x^)
+	ECHO     %_ENGINE_%zandronum%_%           : Zandronum current ^(2.x^)
 	ECHO     %_ENGINE_%zandronum-?%_%         : Where ? is "2" or "3"
-        ECHO:
-        ECHO %_HEADING_%IWAD:%_%
+	ECHO:
+	ECHO %_HEADING_%IWAD:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
-        ECHO     The IWAD ^(Internal WAD^) is the base WAD to use. This will be one of the
-        ECHO     original game's WAD files which maps, mods and total conversions extend.
-        ECHO     If uncertain, use "DOOM2", it's the most common one used for community
-        ECHO     content. The ".WAD" / ".PK3" extension can be ommitted.
-        ECHO:
-        ECHO     IWADs are located in the "%IWADS%" folder.
+	ECHO:
+	ECHO     The IWAD ^(Internal WAD^) is the base WAD to use. This will be one of the
+	ECHO     original game's WAD files which maps, mods and total conversions extend.
+	ECHO     If uncertain, use "DOOM2", it's the most common one used for community
+	ECHO     content. The ".WAD" / ".PK3" extension can be ommitted.
+	ECHO:
+	ECHO     IWADs are located in the "%WADS%" folder.
 	ECHO:
 	ECHO     %_HEADING_%Steam ^& GOG:%_%
 	ECHO:
-	ECHO     If the given IWAD cannot be found in the "%IWADS%" folder, doom.bat will
+	ECHO     If the given IWAD cannot be found in the "%WADS%" folder, doom.bat will
 	ECHO     try to locate them automatically for you in any relevant Steam or GOG
 	ECHO     installations:
 	ECHO:
@@ -195,30 +194,29 @@ IF "%~1" == "" (
 	ECHO               GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD
 	ECHO             Steam : Heretic               - HERETIC.WAD
 	ECHO             Steam : Hexen                 - HEXEN.WAD
-        ECHO:
+	ECHO:
 	ECHO     %_HEADING_%Shareware:%_%
 	ECHO:
 	ECHO     If the IWAD is "DOOM" and no PWAD is specified ^(see below^), i.e. you are
 	ECHO     trying to play the the original DOOM rather than a user-map, and "DOOM.WAD"
 	ECHO     cannot be found ^(inclduing in Steam or GOG, above^) then the DOOM shareware
 	ECHO     will be used instead which is limited to the first episode.
-        ECHO:
-        ECHO %_HEADING_%PWAD:%_%
+	ECHO:
+	ECHO %_HEADING_%PWAD:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
-        ECHO     The PWAD ^(patch-WAD^) is the community map / megawad you want to play.
-        ECHO     These are assumed to be in the "%PWADS%" folder, not "%IWADS%".
-        ECHO     E.g.
-        ECHO:
-        ECHO            %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%wolfendoom.pk3%_%
-        ECHO:
-        ECHO     If you just want to play an original game ^(e.g. DOOM, Hexen^) then the PWAD
-        ECHO     is not required.
+	ECHO:
+	ECHO     The PWAD ^(patch-WAD^) is the community map / megawad you want to play.
+	ECHO     These are assumed to be in the "%WADS%" folder. E.g.
+	ECHO:
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%wolfendoom.pk3%_%
+	ECHO:
+	ECHO     If you just want to play an original game ^(e.g. DOOM, Hexen^) then the PWAD
+	ECHO     is not required.
 	ECHO:
 	ECHO     %_HEADING_%Steam ^& GOG:%_%
 	ECHO:    
 	ECHO     If "NERVE.WAD" or any of the "Master Levels for DOOM II" ^("MASTER\*.WAD"^)
-	ECHO     are specified as the PWAD and cannot be found in the "%PWADS%" folder,
+	ECHO     are specified as the PWAD and cannot be found in the "%WADS%" folder,
 	ECHO     doom.bat will try to locate them for you in any relevant Steam or GOG
 	ECHO     installations:
 	ECHO:
@@ -236,50 +234,46 @@ IF "%~1" == "" (
 	ECHO     FreeDOOM is intended as a drop-in replacement, maintaining compatibility
 	ECHO     with DOOM.WAD ^& DOOM2.WAD allowing you to play most community content
 	ECHO     without having to actually purchase DOOM.
-        ECHO:
-        ECHO %_HEADING_%Params:%_%
+	ECHO:
+	ECHO %_HEADING_%Params:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
-        ECHO     You can include any command line parameters here and they will be
-        ECHO     passed on to the engine. Example:
-        ECHO:
-        ECHO            %_MISC_%doom.bat%_% %_ENGINE_%choco-doom%_% %_IWAD_%DOOM2%_% %_PARAMS_%-warp 21%_%
-        ECHO:
-        ECHO     Note that what parameters are supported will vary between engines.
-        ECHO:
-        ECHO %_HEADING_%Files:%_%
+	ECHO:
+	ECHO     You can include any command line parameters here and they will be
+	ECHO     passed on to the engine. Example:
+	ECHO:
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%choco-doom%_% %_IWAD_%DOOM2%_% %_PARAMS_%-warp 21%_%
+	ECHO:
+	ECHO     Note that what parameters are supported will vary between engines.
+	ECHO:
+	ECHO %_HEADING_%Files:%_%
 	REM ---------------------------------------------------------------------------------
-        ECHO:
+	ECHO:
 	ECHO     NOTE: The "--" is required to separate the parameters from the list
-        ECHO     of files.
-        ECHO:
-        ECHO     A list of additional files to include ^(from the "%PWADS%" directory^).
-        ECHO     Unlike when creating Windows shortcuts, the "%PWADS%" folder is assumed,
-        ECHO     so that you don't need to include the base path on each file added.
+	ECHO     of files.
+	ECHO:
+	ECHO     A list of additional files to include ^(from the "%WADS%" directory^).
+	ECHO     Unlike when creating Windows shortcuts, the "%WADS%" folder is assumed,
+	ECHO     so that you don't need to include the base path on each file added.
 	ECHO:
 	ECHO     If a PWAD has been given, that file's folder will also be checked so that
 	ECHO     you do not have to give the path for both the PWAD, and any files within
 	ECHO     the same folder. E.g.
 	ECHO:
-	ECHO		%_MISC_%doom.bat%_% %_ENGINE_%zdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%doomrl_arsenal\doomrl_arsenal.wad%_%
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%zdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%doomrl_arsenal\doomrl_arsenal.wad%_%
 	ECHO                                          %_--_% %_FILES_%doomrl_arsenal_hud.wad%_%
-        ECHO:
-        ECHO     The ".PK3" / ".PK7" / ".WAD" extension can be omitted but if two files
-        ECHO     exist with the same name but different extensions then the first file
-        ECHO     will be chosen using the order of extensions just mentioned.
 	ECHO:
 	ECHO     After one file is included, the same folder will be checked for the
 	ECHO     next file. This is handy for including multiple WADs located in the
 	ECHO     same folder, e.g.
 	ECHO:
-	ECHO		%_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_--_% %_FILES_%BrutalDoom\Brutalv20b.pk3 ExtraTextures.wad%_%
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_--_% %_FILES_%BrutalDoom\Brutalv20b.pk3 ExtraTextures.wad%_%
 	ECHO:
 	ECHO     Where "ExtraTextures.wad" is in the "BrutalDoom" folder, and if it isn't
-	ECHO     the base "%PWADS%" folder will be checked and then the engine's folder.
-        ECHO:
-        ECHO     DeHackEd extensions ^(".deh" / ".bex"^) can be included in the files list,
-        ECHO     and will be loaded using the correct "-deh" or "-bex" engine parameter.
-        ECHO:
+	ECHO     the base "%WADS%" folder will be checked and then the engine's folder.
+	ECHO:
+	ECHO     DeHackEd extensions ^(".deh" / ".bex"^) can be included in the files list,
+	ECHO     and will be loaded using the correct "-deh" or "-bex" engine parameter.
+	ECHO:
 	ECHO %_HEADING_%Config File:%_%
 	ECHO:
 	ECHO     For portability doom.bat has default configuration files for each engine
@@ -289,22 +283,21 @@ IF "%~1" == "" (
 	ECHO:
 	ECHO     if a %_PARAMS_%-config%_% parameter has already been given then that config file will
 	ECHO     be used as intended and doom.bat will not supply its own.
+	ECHO:
+	ECHO %_HEADING_%Savegames:%_%
+	ECHO:
+	ECHO     Savegames are not saved alongside the engine as is default, but rather
+	ECHO     in a "%SAVES%" folder. To prevent incompatibilites and potential data-loss
+	ECHO     between engines, savegames are first separated by engine ^("gzdoom" /
+	ECHO     "zandronum" etc.^) and then by the PWAD name ^(or IWAD name if no PWAD
+	ECHO     is specified^). I.e. for the command:
+	ECHO:
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%zdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%breach.wad%_%
+	ECHO:
+	ECHO     the savegames will be located in "%SAVES%\zdoom\breach\".
 	
-        ECHO:
-        ECHO %_HEADING_%Savegames:%_%
-        ECHO:
-        ECHO     Savegames are not saved alongside the engine as is default, but rather
-        ECHO     in a "%SAVES%" folder. To prevent incompatibilites and potential data-loss
-        ECHO     between engines, savegames are first separated by engine ^("gzdoom" /
-        ECHO     "zandronum" etc.^) and then by the PWAD name ^(or IWAD name if no PWAD
-        ECHO     is specified^). I.e. for the command:
-        ECHO:
-        ECHO            %_MISC_%doom.bat%_% %_ENGINE_%zdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%breach.wad%_%
-        ECHO:
-        ECHO     the savegames will be located in "%SAVES%\zdoom\breach\".
-        
-        ECHO %ESC_OFF%
-        PAUSE & EXIT /B 0
+	ECHO %ESC_OFF%
+	PAUSE & EXIT /B 0
 )
 
 REM ====================================================================================================================
@@ -435,144 +428,144 @@ SET "PORT_SAVE="
 
 IF /I "%~1" == "choco-doom" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-doom"
-        SET "ENGINE_EXE=chocolate-doom.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-doom"
+	SET "ENGINE_EXE=chocolate-doom.exe"
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-doom"
-        ECHO          port : chocolate doom
+	SET "PORT_SAVE=choco-doom"
+	ECHO          port : chocolate doom
 )
 IF /I "%~1" == "choco-doom-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-doom"
-        SET "ENGINE_EXE=chocolate-doom-setup.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-doom"
+	SET "ENGINE_EXE=chocolate-doom-setup.exe"
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-doom"
-        ECHO          port : chocolate doom ^(setup^)
+	SET "PORT_SAVE=choco-doom"
+	ECHO          port : chocolate doom ^(setup^)
 )
 IF /I "%~1" == "choco-heretic" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-heretic"
-        SET "ENGINE_EXE=chocolate-heretic.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-heretic"
+	SET "ENGINE_EXE=chocolate-heretic.exe"
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-heretic"
-        ECHO          port : chocolate heretic
+	SET "PORT_SAVE=choco-heretic"
+	ECHO          port : chocolate heretic
 )
 IF /I "%~1" == "choco-heretic-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-heretic"
-        SET "ENGINE_EXE=chocolate-heretic-setup.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-heretic"
+	SET "ENGINE_EXE=chocolate-heretic-setup.exe"
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-heretic"
-        ECHO          port : chocolate heretic ^(setup^)
+	SET "PORT_SAVE=choco-heretic"
+	ECHO          port : chocolate heretic ^(setup^)
 )
 IF /I "%~1" == "choco-hexen" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-hexen"
-        SET "ENGINE_EXE=chocolate-hexen.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-hexen"
+	SET "ENGINE_EXE=chocolate-hexen.exe"
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-hexen"
-        ECHO          port : chocolate hexen
+	SET "PORT_SAVE=choco-hexen"
+	ECHO          port : chocolate hexen
 )
 IF /I "%~1" == "choco-hexen-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-hexen"
-        SET "ENGINE_EXE=chocolate-hexen-setup.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-hexen"
+	SET "ENGINE_EXE=chocolate-hexen-setup.exe"
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-hexen"
-        ECHO          port : chocolate hexen ^(setup^)
+	SET "PORT_SAVE=choco-hexen"
+	ECHO          port : chocolate hexen ^(setup^)
 )
 IF /I "%~1" == "choco-strife" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-strife"
-        SET "ENGINE_EXE=chocolate-strife.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-strife"
+	SET "ENGINE_EXE=chocolate-strife.exe"
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-strife"
-        ECHO          port : chocolate strife
+	SET "PORT_SAVE=choco-strife"
+	ECHO          port : chocolate strife
 )
 IF /I "%~1" == "choco-strife-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\chocolate-strife"
-        SET "ENGINE_EXE=chocolate-strife-setup.exe"
+	SET "ENGINE_DIR=%PORTS%\chocolate-strife"
+	SET "ENGINE_EXE=chocolate-strife-setup.exe"
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
-        SET "PORT_SAVE=choco-strife"
-        ECHO          port : chocolate strife ^(setup^)
+	SET "PORT_SAVE=choco-strife"
+	ECHO          port : chocolate strife ^(setup^)
 )
 IF /I "%~1" == "doom64ex" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\doom64ex"
-        SET "ENGINE_EXE=DOOM64.exe"
+	SET "ENGINE_DIR=%PORTS%\doom64ex"
+	SET "ENGINE_EXE=DOOM64.exe"
 	SET "ENGINE_CFG=doom64ex"
 	SET "ENGINE_KIN=X"
-        SET "PORT_SAVE=doom64ex"
-        ECHO          port : DOOM 64 EX
+	SET "PORT_SAVE=doom64ex"
+	ECHO          port : DOOM 64 EX
 )
 IF /I "%~1" == "gzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
-        SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(current^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(current^)
 )
 IF /I "%~1" == "gzdoom-31" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
-        SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(v3.1.x^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(v3.1.x^)
 )
 IF /I "%~1" == "gzdoom-24" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-24_%ENGINE_BIT%"
-        SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(v2.4.x^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(v2.4.x^)
 )
 IF /I "%~1" == "gzdoom-23" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-23_%ENGINE_BIT%"
-        SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(v2.3.x^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(v2.3.x^)
 )
 IF /I "%~1" == "gzdoom-22" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\gzdoom-22_%ENGINE_BIT%"
-        SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(v2.2.x^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(v2.2.x^)
 )
 IF /I "%~1" == "gzdoom-dev" (
 	REM ------------------------------------------------------------------------------------------------------------
-        REM # shh, this is a secret...
-        REM # (but you'll have to supply your own copy)
-        SET "ENGINE_DIR=%PORTS%\gzdoom-dev"
-        SET "ENGINE_EXE=gzdoom.exe"
+	REM # shh, this is a secret...
+	REM # (but you'll have to supply your own copy)
+	SET "ENGINE_DIR=%PORTS%\gzdoom-dev"
+	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(development^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(development^)
 )
 IF /I "%~1" == "prboom" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\prboom+"
+	SET "ENGINE_DIR=%PORTS%\prboom+"
 	REM # are we using software rendering?
 	IF %SW% EQU 1 (
 		REM # use software-rendering executable
@@ -586,54 +579,54 @@ IF /I "%~1" == "prboom" (
 		ECHO          port : prboom+ ^(OpenGL renderer^)
 	)
 	SET "ENGINE_KIN=B"
-        SET "PORT_SAVE=prboom"        
+	SET "PORT_SAVE=prboom"
 )
 IF /I "%~1" == "qzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
 	SET "ENGINE_DIR=%PORTS%\qzdoom_%ENGINE_BIT%"
 	REM # shh, this is a secret...
-        REM # (but you'll have to supply your own copy)
-        SET "ENGINE_EXE=qzdoom.exe"
+	REM # (but you'll have to supply your own copy)
+	SET "ENGINE_EXE=qzdoom.exe"
 	SET "ENGINE_CFG=qzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=qzdoom"
-        ECHO          port : qzdoom
+	SET "PORT_SAVE=qzdoom"
+	ECHO          port : qzdoom
 )
 IF /I "%~1" == "zandronum" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\zandronum-3"
-        SET "ENGINE_EXE=zandronum.exe"
+	SET "ENGINE_DIR=%PORTS%\zandronum-3"
+	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=zandronum"
-        ECHO          port : zandronum ^(current^)
+	SET "PORT_SAVE=zandronum"
+	ECHO          port : zandronum ^(current^)
 )
 IF /I "%~1" == "zandronum-2" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\zandronum-2"
-        SET "ENGINE_EXE=zandronum.exe"
+	SET "ENGINE_DIR=%PORTS%\zandronum-2"
+	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-2"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=zandronum"
-        ECHO          port : zandronum ^(v2.x^)
+	SET "PORT_SAVE=zandronum"
+	ECHO          port : zandronum ^(v2.x^)
 )
 IF /I "%~1" == "zandronum-3" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\zandronum-3"
-        SET "ENGINE_EXE=zandronum.exe"
+	SET "ENGINE_DIR=%PORTS%\zandronum-3"
+	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=zandronum"
-        ECHO          port : zandronum ^(v3.x^)
+	SET "PORT_SAVE=zandronum"
+	ECHO          port : zandronum ^(v3.x^)
 )
 IF /I "%~1" == "zdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
-        SET "ENGINE_DIR=%PORTS%\zdoom"
-        SET "ENGINE_EXE=zdoom.exe"
+	SET "ENGINE_DIR=%PORTS%\zdoom"
+	SET "ENGINE_EXE=zdoom.exe"
 	SET "ENGINE_CFG=zdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=zdoom"
-        ECHO          port : zdoom
+	SET "PORT_SAVE=zdoom"
+	ECHO          port : zdoom
 )
 
 REM # no engine specified? use default
@@ -642,11 +635,11 @@ IF "%PORT_SAVE%" == "" (
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
-        SET "PORT_SAVE=gzdoom"
-        ECHO          port : gzdoom ^(default^)
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(default^)
 ) ELSE (
-        REM # the engine parameter can be discarded
-        SHIFT
+	REM # the engine parameter can be discarded
+	SHIFT
 )
 
 REM # do we need to force software-mode in GZDoom?
@@ -725,7 +718,7 @@ REM # if the PWAD exists, go validate the IWAD, as the action taken when the IWA
 REM # by the presence of a PWAD. if the PWAD is missing, the next section searches for known Steam / GOG PWADs
 
 REM # check the default pwad path
-SET "PWAD_PATH=%PWADS%\%PWAD%"
+SET "PWAD_PATH=%WADS%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
 
 REM # check the "current directory" that called this script
@@ -769,7 +762,7 @@ ECHO:
 ECHO   You must purchase either "DOOM Classic Complete" from Steam or
 ECHO   "DOOM II + Final DOOM" from GOG to get "Master Levels for DOOM II";
 ECHO   doom.bat automatically finds it, if installed. If you have the Master Levels
-ECHO   WADs elsewhere, copy them to the "%IWADS%\MASTER" folder and try again.
+ECHO   WADs elsewhere, copy them to the "%WADS%\MASTER" folder and try again.
 ECHO:
 POPD
 PAUSE
@@ -798,7 +791,7 @@ ECHO   ERROR: "NERVE.WAD" missing:
 ECHO:
 ECHO   You must purchase "DOOM 3: BFG Edition" from Steam to get NERVE.WAD.
 ECHO   doom.bat automatically finds it, if installed. If you have NERVE.WAD
-ECHO   elsewhere, copy it to the "%IWADS%" folder and try again.
+ECHO   elsewhere, copy it to the "%WADS%" folder and try again.
 ECHO:
 POPD
 PAUSE
@@ -824,7 +817,7 @@ REM # some ports require the file extensions for IWADs,
 REM # check if it's missing:
 IF "%IWAD_EXT%" == "" (
 	REM # check if a PK3 version exists
-	IF EXIST "%IWADS%\%IWAD%.pk3" (
+	IF EXIST "%WADS%\%IWAD%.pk3" (
 		SET "IWAD=%IWAD%.pk3"
 	) ELSE (
 		REM # if both WAD & PK3 files exist with the same name, the WAD will be preferred
@@ -836,7 +829,7 @@ IF "%IWAD_EXT%" == "" (
 )
 
 REM # this is where the IWAD is assumed to be
-SET "IWAD_PATH=%IWADS%\%IWAD%"
+SET "IWAD_PATH=%WADS%\%IWAD%"
 REM # if the IWAD exists as-is and requires no special provisions,
 REM # skip ahead; no edge-cases to handle
 IF EXIST "%IWAD_PATH%" GOTO :iwad_found
@@ -988,7 +981,7 @@ IF /I "%IWAD%" == "DOOM.WAD" (
 	ECHO   -- The shareware version will be launched instead which is limited to the
 	ECHO      first episode. Please purchase either "The Ultimate DOOM", "DOOM Classic
 	ECHO      Complete" or "DOOM 3 BFG Edition" on GOG / Steam, or place your own copy
-	ECHO      of "DOOM.WAD" in the "%IWADS%" folder.
+	ECHO      of "DOOM.WAD" in the "%WADS%" folder.
 	ECHO:
 	ECHO      press any key to continue
 	PAUSE >NUL
@@ -1007,7 +1000,7 @@ REM # TODO: DOOM2, Final DOOM specific error messages...
 ECHO:
 ECHO   ERROR! the file:
 ECHO:
-ECHO       "%IWADS%\%IWAD%"
+ECHO       "%WADS%\%IWAD%"
 ECHO:
 ECHO   doesn't exist.
 ECHO:
@@ -1023,18 +1016,18 @@ EXIT /B 1
 REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
 SET "FREEDOOM="
 REM # TODO: check these files exist too
-IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%IWADS%\conversions\freedoom\freedoom1.wad"
-IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%IWADS%\conversions\freedoom\freedoom2.wad"
+IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom1.wad"
+IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom2.wad"
 
 IF NOT "%FREEDOOM%" == "" (
 	ECHO:
-	ECHO   WARNING! COULD NOT FIND "%IWADS%\%IWAD%"
+	ECHO   WARNING! COULD NOT FIND "%WADS%\%IWAD%"
 	ECHO   -- USING FREEDOOM AS REPLACEMENT
 	ECHO:
 	ECHO      press any key to continue
 	PAUSE  >NUL
 	ECHO:
-
+	
 	SET "IWAD_PATH=%FREEDOOM%"
 	
 ) ELSE (
@@ -1044,10 +1037,10 @@ IF NOT "%FREEDOOM%" == "" (
 	ECHO   ERROR! the file:
 	ECHO:
 	IF "%IWAD_EXT%" == "" (
-		ECHO       "%IWADS%\%IWAD%.WAD" or
-		ECHO       "%IWADS%\%IWAD%.PK3"
+		ECHO       "%WADS%\%IWAD%.WAD" or
+		ECHO       "%WADS%\%IWAD%.PK3"
 	) ELSE (
-		ECHO       "%IWADS%\%IWAD%"
+		ECHO       "%WADS%\%IWAD%"
 	)
 	ECHO:
 	ECHO   doesn't exist.
@@ -1107,21 +1100,21 @@ REM # anything that isn't "--" is added to the command line for the engine
 SET "ENGINE_PARAMS="
 
 :params_loop
-        REM # no more parameters remaining?
-        IF "%~1" == "" GOTO :params_continue
-        IF "%~1" == "--" GOTO :params_continue
+	REM # no more parameters remaining?
+	IF "%~1" == "" GOTO :params_continue
+	IF "%~1" == "--" GOTO :params_continue
 	REM # is this a config parameter? (flag this so we don't use our own)
 	IF /I "%~1" == "-config" SET HAS_CONFIG=1
-        REM # add to the parameters list
-        SET ENGINE_PARAMS=%ENGINE_PARAMS% %1
-        SHIFT
-        GOTO :params_loop
+	REM # add to the parameters list
+	SET ENGINE_PARAMS=%ENGINE_PARAMS% %1
+	SHIFT
+	GOTO :params_loop
 
 :params_continue
 IF NOT "%ENGINE_PARAMS%" == "" (
-        ECHO        params :%ENGINE_PARAMS%
-        REM # add the parameters to the final command line
-        SET PARAMS=%PARAMS% %ENGINE_PARAMS%
+	ECHO        params :%ENGINE_PARAMS%
+	REM # add the parameters to the final command line
+	SET PARAMS=%PARAMS% %ENGINE_PARAMS%
 )
 
 
@@ -1147,12 +1140,12 @@ REM # NOTE: `-savedir` is for zdoom-based ports and `-save` for prboom+.
 REM #       chocolate-doom & DOOM 64 EX do not support a save directory
 REM #       parameter and will put savegames in the 'current directory'!
 IF "%ENGINE_KIN%" ==  "Z" (
-        SET PARAMS=%PARAMS% -savedir "."
-        ECHO      -savedir : %SAVES_WAD%
+	SET PARAMS=%PARAMS% -savedir "."
+	ECHO      -savedir : %SAVES_WAD%
 )
 IF "%ENGINE_KIN%" == "B" (
-        SET PARAMS=%PARAMS% -save "."
-        ECHO         -save : %SAVES_WAD%
+	SET PARAMS=%PARAMS% -save "."
+	ECHO         -save : %SAVES_WAD%
 )
 
 
@@ -1165,9 +1158,9 @@ IF %HAS_CONFIG% EQU 1 GOTO :files
 REM # zdoom based engines (q/g/zdoom, zandronum) use ".ini" config files,
 REM # the other engines use ".cfg"
 IF "%ENGINE_KIN%" == "Z" ( SET "CFG=ini" ) ELSE ( SET "CFG=cfg" )
-	
+
 SET "CONFIG="
-	
+
 REM # if the option to use the default config (`/DEFAULT`) has been given:
 IF %DEFAULT% EQU 1 (
 	REM # we will launch the engine using the actual default config file rather than a copy
@@ -1223,24 +1216,24 @@ IF "%~1" == "" GOTO :launch
 
 REM # the files list must be separated by "--"
 IF NOT "%~1" == "--" (
-        ECHO:
-        ECHO  ERROR: too many parameters; "--" expected:
-        ECHO:
-        ECHO     doom.bat %*
-        ECHO:
-        ECHO  Usage:
-        ECHO:
-        ECHO     %USAGE%
-        ECHO:
+	ECHO:
+	ECHO  ERROR: too many parameters; "--" expected:
+	ECHO:
+	ECHO     doom.bat %*
+	ECHO:
+	ECHO  Usage:
+	ECHO:
+	ECHO     %USAGE%
+	ECHO:
 	POPD
-        PAUSE
-        EXIT /B 1
+	PAUSE
+	EXIT /B 1
 )
 SHIFT
 
 :files_loop
-        REM # no more parameters remaining?
-        IF "%~1" == "" GOTO :launch
+	REM # no more parameters remaining?
+	IF "%~1" == "" GOTO :launch
 	
 	REM # check the previous directory used; we will prefer WADs in the same
 	REM # directory as the PWAD, over WADs from the base PWAD directory
@@ -1248,17 +1241,17 @@ SHIFT
 		IF EXIST "%PREV_DIR%\%~1" SET "FILE=%PREV_DIR%\%~1" & GOTO :file_found
 	)
 	REM # check the default PWAD directory
-	SET "FILE=%PWADS%\%~1"
+	SET "FILE=%WADS%\%~1"
 	IF EXIST "%FILE%" GOTO :file_found
 	REM # also check the directory that called this script
 	SET "FILE=%OLD_DIR%\%~1"
 	IF EXIST "%FILE%" GOTO :file_found
-        REM # check the engine directory
+	REM # check the engine directory
 	SET "FILE=%ENGINE_DIR%\%~1"
-        IF EXIST "%FILE%" GOTO :file_found
+	IF EXIST "%FILE%" GOTO :file_found
 	
 	:file_missing
-        REM # file cannot be found!
+	REM # file cannot be found!
 	ECHO:
 	ECHO  ERROR: The specified file does not exist:
 	ECHO:
@@ -1269,7 +1262,7 @@ SHIFT
 	IF NOT "%PREV_DIR%" == "" (
 		ECHO 	 "%PREV_DIR%\%~1"
 	)
-	ECHO 	 "%PWADS%\%~1"
+	ECHO 	 "%WADS%\%~1"
 	ECHO 	 "%OLD_DIR%\%~1"
 	ECHO 	 "%ENGINE_DIR%\%~1"
 	ECHO:
@@ -1286,12 +1279,12 @@ SHIFT
 	IF /I "%~x1" == ".deh" GOTO :deh
 	IF /I "%~x1" == ".bex" GOTO :bex
 	
-        SET FILES=%FILES% "%FIX_PATH%\%FILE%"
+	SET FILES=%FILES% "%FIX_PATH%\%FILE%"
 	CALL :prev_dir "%FILE%"
 	SET ANY_WAD=1
-        ECHO         -file : %FILE%
+	ECHO         -file : %FILE%
 	SHIFT
-        GOTO :files_loop
+	GOTO :files_loop
 	
 	:deh
 	REM ------------------------------------------------------------------------------------------------------------
@@ -1327,14 +1320,14 @@ REM ----------------------------------------------------------------------------
 REM ====================================================================================================================
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
-        SET PARAMS=%PARAMS% -file %FILES%
+	SET PARAMS=%PARAMS% -file %FILES%
 )
 REM # DeHackEd extensions?
 IF %ANY_DEH% EQU 1 (
-        SET PARAMS=%PARAMS% -deh %DEH%
+	SET PARAMS=%PARAMS% -deh %DEH%
 )
 IF %ANY_BEX% EQU 1 (
-        SET PARAMS=%PARAMS% -bex %BEX%
+	SET PARAMS=%PARAMS% -bex %BEX%
 )
 
 REM # get the desktop screen resolution:
@@ -1342,7 +1335,7 @@ REM # http://stackoverflow.com/questions/25532444/get-screen-resolution-as-a-var
 REM # note that this will be the 'primary monitor', which may not be desired by some users,
 REM # but that's hardly our fault since many ports don't support fullscreen anywhere else anyway
 FOR /F %%i IN (
-        'wmic path Win32_VideoController get CurrentHorizontalResolution^,CurrentVerticalResolution /value ^| find "="'
+	'wmic path Win32_VideoController get CurrentHorizontalResolution^,CurrentVerticalResolution /value ^| find "="'
 ) DO SET "%%i"
 
 REM # TODO: how to handle failures here?

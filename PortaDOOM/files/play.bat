@@ -2,23 +2,23 @@
 
 REM # play.bat [/IWAD iwad] [/REQ engines] [/PWAD pwad] [options] [-- files...]
 
-REM # [/IWAD iwad]      specifies IWAD to load, can be any of the following:
-REM #                   (defaults to DOOM2)
+REM # [/IWAD iwad]	specifies IWAD to load, can be any of the following:
+REM #			(defaults to DOOM2)
 REM #
-REM #                   DOOM, DOOM1, DOOM2, TNT, PLUTONIA
-REM #                   HERETIC, HERETIC1, HEXEN
-REM #                   FREEDOOM1, FREEDOOM2
-REM #                   SQUARE1
-REM #                   HARM1
+REM #			DOOM, DOOM1, DOOM2, TNT, PLUTONIA
+REM #			HERETIC, HERETIC1, HEXEN
+REM #			FREEDOOM1, FREEDOOM2
+REM #			SQUARE1
+REM #			HARM1
 REM #
-REM # [/REQ engines]    specify engine requirements,
-REM #                   can be any of the following:
+REM # [/REQ engines]	specify engine requirements,
+REM #			can be any of the following:
 REM # 
-REM #                   vanilla         - original DOOM with limits (visplane etc.) or above
-REM #                   choco           - ONLY chocolate-doom/heretic/hexen
+REM #			vanilla		- original DOOM with limits (visplane etc.) or above
+REM #			choco		- ONLY chocolate-doom/heretic/hexen
 REM #			no-limit 	- requires a limits-removing engine
 REM #			boom		- requires boom-compatibility; prboom+ and above
-REM #			prboom          - requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
+REM #			prboom		- requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
 REM #			hw		- requires a hardware renderer; glboom+, gzdoom, zandronum
 REM #			sw		- requires a software renderer; choco-doom, prboom+, zdoom
 REM #			z		- requires a z-based engine; zdoom, gzdoom, zandronum
@@ -26,9 +26,9 @@ REM #			zdoom		- zdoom based engines, i.e. zdoom, gzdoom (but not zandronum)
 REM #			gzdoom		- gzdoom only
 REM #			gzdoom-??	- gzdoom version ?? only, e.g. gzdoom-22
 REM #			doom64		- DOOM 64 EX only
-REM #                   zandronum	- zandronum only (latest version)
+REM #			zandronum	- zandronum only (latest version)
 REM #			zandronum-2	- zandronum v2 only 
-REM #                   zandronum-3     - zandronum v3 only
+REM #			zandronum-3	- zandronum v3 only
 
 
 REM # path of this script
