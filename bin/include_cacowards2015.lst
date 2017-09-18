@@ -1,7 +1,7 @@
 PortaDOOM.exe
 
-files\iwads\freedoom\
-files\iwads\SHAREWARE\DOOM1.WAD
+files\wads\freedoom\
+files\wads\SHAREWARE\DOOM1.WAD
 
 files\play.bat
 files\doom.bat

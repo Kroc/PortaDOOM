@@ -13,7 +13,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"Heretic: Shadow of the Serpent Riders"_ on Steam it will be detected automatically, otherwise place the file in the _"files\iwads"_ folder. Please purchase the game from Steam; you will not be able to play without purchasing Heretic.
+! If you own _"Heretic: Shadow of the Serpent Riders"_ on Steam it will be detected automatically, otherwise place the file in the _"files\wads"_ folder. Please purchase the game from Steam; you will not be able to play without purchasing Heretic.
 $KEY:S=URL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
 
 An episode 1 replacement for Heretic.

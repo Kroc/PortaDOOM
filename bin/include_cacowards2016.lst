@@ -1,8 +1,8 @@
 PortaDOOM.exe
 
-files\iwads\freedoom\
-files\iwads\SHAREWARE\DOOM1.WAD
-files\iwads\SHAREWARE\HERETIC1.WAD
+files\wads\freedoom\
+files\wads\SHAREWARE\DOOM1.WAD
+files\wads\SHAREWARE\HERETIC1.WAD
 
 files\play.bat
 files\doom.bat

@@ -12,7 +12,7 @@ $KEY:W=URL:https://doomwiki.org/wiki/Doom_II
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "DOOM2.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM II"_, _"DOOM Classic Complete"_ or _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\iwads" folder. Please purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing DOOM II.
+! If you own _"DOOM II"_, _"DOOM Classic Complete"_ or _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\wads" folder. Please purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing DOOM II.
 
 $KEY:G=URL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=URL:http://store.steampowered.com/sub/18397/

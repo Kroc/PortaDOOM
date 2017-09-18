@@ -21,7 +21,7 @@ REM # - Heretic, Hexen & Strife sharewares & GOG/Steam detection
 
 REM # default folder names
 SET "CONFIGS=config"
-SET "IWADS=iwads"
+SET "IWADS=wads"
 SET "PWADS=wads"
 SET "PORTS=ports"
 SET "SAVES=saves"

@@ -11,7 +11,7 @@ $KEY:P=SHELL:doom.bat doom64ex DOOM64.WAD
 
 ! *NOTE:* REQUIRES NON-REDISTRIBUTABLE N64 ROM:
 ! :-----------------------------------------------------------------------------
-! To play, the DOOM 64 ROM named "DOOM64.V64" or "DOOM64.Z64" is required. Place the file in the "files\iwads" folder.
+! To play, the DOOM 64 ROM named "DOOM64.V64" or "DOOM64.Z64" is required. Place the file in the "files\wads" folder.
 
 DOOM 64, released March 31, 1997 for the Nintendo 64, is a sequel to DOOM II. The game has all new graphics and runs on a modified DOOM engine, based on the Sony PlayStation port. DOOM 64 was released by Midway, in cooperation with id Software.
 

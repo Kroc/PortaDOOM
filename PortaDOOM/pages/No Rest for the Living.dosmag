@@ -12,7 +12,7 @@ $KEY:W=URL:https://doomwiki.org/wiki/No_Rest_for_the_Living
 
 ! *NOTE:* Requires commercially-available "NERVE.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\iwads" folder. Please purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing DOOM 3 BFG Edition.
+! If you own _"DOOM 3 BFG Edition"_ on GOG / Steam it will be detected automatically, otherwise place the file in the "files\wads" folder. Please purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing DOOM 3 BFG Edition.
 
 $KEY:S=URL:https://www.gog.com/game/doom_3_bfg_edition
 $KEY:S=URL:http://store.steampowered.com/app/208200/
