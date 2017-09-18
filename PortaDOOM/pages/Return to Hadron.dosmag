@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\episodes\hadron\play.bat
-$KEY:T=SHELL:pwads\episodes\hadron\hadronf.txt
+$KEY:P=SHELL:wads\episodes\hadron\play.bat
+$KEY:T=SHELL:wads\episodes\hadron\hadronf.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadron
 
 :Return to Hadron                                   * 2015 Cacoward winner! *

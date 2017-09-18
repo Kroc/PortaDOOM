@@ -1,5 +1,5 @@
 $KEY:P=SHELL:play.bat /PWAD MASTER\BLACKTWR.WAD /LEVEL 25
-$KEY:T=SHELL:pwads\MASTER\BLACKTWR.TXT
+$KEY:T=SHELL:wads\MASTER\BLACKTWR.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 
 :Black Tower                                      (Master Levels for DOOM II)
@@ -13,7 +13,7 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "BLACKTWR.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\pwads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
+! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\wads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
 $KEY:G=URL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=URL:http://store.steampowered.com/sub/18397/
 

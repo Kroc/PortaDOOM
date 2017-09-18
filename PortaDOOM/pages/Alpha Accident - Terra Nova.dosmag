@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\episodes\aa_e1\play.bat
-$KEY:T=SHELL:pwads\episodes\aa_e1\AA_E1.txt
+$KEY:P=SHELL:wads\episodes\aa_e1\play.bat
+$KEY:T=SHELL:wads\episodes\aa_e1\AA_E1.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/a-c/aa_e1
 
 :Alpha Accident: Terra Nova                         * 2016 Cacoward winner! *
@@ -34,7 +34,7 @@ Set on Mars during horrific events on it's moons another marine is stranded on o
 *Build Time*              : 3 years (or 1,5 without long pauses)
 *Editor(s) used*          : Doom Builder v.1.68, XWE, Whacked2, Dehacked 3.0
 *Known Bugs*              : in ZDoom v.2.8.1 and earlier objects appear in front container sprite after loading a savegame; otherwise, nothing critical
-			  
+
 *May Not Run With*        : Chocholate doom (some maps may cause savegame or visplane errors)
 
 *Tested With*             : Tested in DosBOx with AA_E1.exe, prboom+ v.2.5.1.3, zdoom v.2.8.1

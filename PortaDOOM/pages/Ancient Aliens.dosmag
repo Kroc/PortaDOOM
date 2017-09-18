@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\megawads\aaliens\play.bat
-$KEY:T=SHELL:pwads\megawads\aaliens\aaliens.txt
+$KEY:P=SHELL:wads\megawads\aaliens\play.bat
+$KEY:T=SHELL:wads\megawads\aaliens\aaliens.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 
 :Ancient Aliens                                     * 2016 Cacoward winner! *

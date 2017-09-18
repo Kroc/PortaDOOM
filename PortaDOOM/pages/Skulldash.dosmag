@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\conversions\SKULDASH\play.bat
-$KEY:T=SHELL:pwads\conversions\SKULDASH\SKULDASH.TXT
+$KEY:P=SHELL:wads\conversions\SKULDASH\play.bat
+$KEY:T=SHELL:wads\conversions\SKULDASH\SKULDASH.TXT
 $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 
 :Skulldash                                          * 2015 Cacoward winner! *

@@ -1,6 +1,6 @@
-$KEY:P=SHELL:pwads\megawads\bstain\play.bat
-$KEY:T=SHELL:pwads\megawads\bstain\BStain.txt
-$KEY:I=SHELL:pwads\megawads\bstain\BStainfo.txt
+$KEY:P=SHELL:wads\megawads\bstain\play.bat
+$KEY:T=SHELL:wads\megawads\bstain\BStain.txt
+$KEY:I=SHELL:wads\megawads\bstain\BStainfo.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/bstain
 
 :Bloodstain                                      * 2016 Cacoward runner up! *

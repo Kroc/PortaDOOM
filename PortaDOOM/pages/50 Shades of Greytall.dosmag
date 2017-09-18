@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\community\50shades\play.bat
-$KEY:T=SHELL:pwads\community\50shades\50shades.txt
+$KEY:P=SHELL:wads\community\50shades\play.bat
+$KEY:T=SHELL:wads\community\50shades\50shades.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shades
 
 :50 Shades of Greytall                              * 2015 Cacoward winner! *

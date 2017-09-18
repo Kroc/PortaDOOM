@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\megawads\neis\play.bat
-$KEY:T=SHELL:pwads\megawads\neis\NEIS.bat
+$KEY:P=SHELL:wads\megawads\neis\play.bat
+$KEY:T=SHELL:wads\megawads\neis\NEIS.bat
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/neis
 
 :No End in Sight

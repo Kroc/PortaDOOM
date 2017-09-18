@@ -28,7 +28,7 @@ VOICES.WAD
 
 NERVE.WAD
 NRFTL+.WAD
-files/pwads/MASTER/*.wad
+files/wads/MASTER/*.wad
 
 # don't include any save-files
 files/saves/*

@@ -74,11 +74,9 @@ CALL :select_compression
 
 ECHO * Clean Up
 REM --------------------------------------------------------------------------------------------------------------------
-DEL PortaDOOM\PortaDOOM.upx		  >NUL 2>&1
-DEL build\PortaDOOM.7z                 >NUL 2>&1
-DEL build\PortaDOOM.rar                >NUL 2>&1
-DEL build\PortaDOOM_Cacowards2015.7z   >NUL 2>&1
-DEL build\PortaDOOM_Cacowards2015.rar  >NUL 2>&1
+DEL PortaDOOM\PortaDOOM.upx		>NUL 2>&1
+DEL build\PortaDOOM.7z			>NUL 2>&1
+DEL build\PortaDOOM_Cacowards2015.7z	>NUL 2>&1
 
 ECHO * Copy DOSmag executable
 REM --------------------------------------------------------------------------------------------------------------------

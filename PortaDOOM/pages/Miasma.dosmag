@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\onesies\miasma\play.bat
-$KEY:T=SHELL:pwads\onesies\miasma\miasma.txt
+$KEY:P=SHELL:wads\onesies\miasma\play.bat
+$KEY:T=SHELL:wads\onesies\miasma\miasma.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 
 :Miasma                                             * 2016 Cacoward winner! *

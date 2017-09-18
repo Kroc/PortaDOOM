@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\megawads\echelon\play.bat
-$KEY:T=SHELL:pwads\megawads\echelon\echelon.txt
+$KEY:P=SHELL:wads\megawads\echelon\play.bat
+$KEY:T=SHELL:wads\megawads\echelon\echelon.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon
 $KEY:1=URL:https://www.doomworld.com/afterglow/textures/
 

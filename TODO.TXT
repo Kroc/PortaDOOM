@@ -17,8 +17,7 @@ Scripts:
     i.e. go from one WAD page to another, but not nest another level
     this is needed if we're going to interlink WAD references in the cacowards
 
-[ ] dosmag : rulers, to greatly reduce the amount of ad-hoc spacing    
-[ ] dosmag : BUG: whitespace-only lines being skipped?
+[ ] dosmag : rulers, to greatly reduce the amount of ad-hoc spacing
 [ ] dosmag : Themes
 [ ] dosmag : Right-alignment, whole line. Consider right alignment from middle of line (rulers?)
 [ ] N64 DOOM64.WAD detection / warning

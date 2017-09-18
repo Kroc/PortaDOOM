@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\community\jpcp\play.bat
-$KEY:T=SHELL:pwads\community\jpcp\JPCP.txt
+$KEY:P=SHELL:wads\community\jpcp\play.bat
+$KEY:T=SHELL:wads\community\jpcp\JPCP.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
 :Japanese Community Project                         * 2016 Cacoward winner! *

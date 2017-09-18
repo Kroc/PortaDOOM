@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\community\thtthren\play.bat
-$KEY:T=SHELL:pwads\community\thtthren\thtthren.txt
+$KEY:P=SHELL:wads\community\thtthren\play.bat
+$KEY:T=SHELL:wads\community\thtthren\thtthren.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthren
 
 :THT: Threnody                                   * 2016 Cacoward runner up! *

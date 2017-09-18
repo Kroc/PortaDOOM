@@ -1,5 +1,5 @@
-$KEY:P=SHELL:pwads\episodes\elfgp\play.bat
-$KEY:T=SHELL:pwads\episodes\elfgp\elfgp.txt
+$KEY:P=SHELL:wads\episodes\elfgp\play.bat
+$KEY:T=SHELL:wads\episodes\elfgp\elfgp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 :Elf Gets Pissed                                    * 2016 Cacoward winner! *
