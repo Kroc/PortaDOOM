@@ -1,3 +1,7 @@
+21-SEP-17:
+- Improved tab handling in page formatting. tabs were changed to 4 in DOSmag,
+  so the pages were reformatted to use actual tabs instead of spaces
+
 20-SEP-17:
 - Added demo playback (`-playdemo`) support to scripts
 - Added speedrun demos on Cacowards 2016

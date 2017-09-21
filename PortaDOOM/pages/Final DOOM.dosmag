@@ -6,9 +6,9 @@ $KEY:W=URL:https://doomwiki.org/wiki/Final_Doom
 :===============================================================================
 *[T] Play TNT [P] Play Plutonia  *[W] Website
 :-------------------------------------------------------------------------------
-:Released : *1996>06>17    Author : *iD software
-:Levels   : *32+32          Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla     Includes : *+Sounds +Music +Graphics +Demos
+:Released : *1996>06>17	  Author : *iD software
+:Levels   : *32+32		   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Demos
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TNT.WAD" & "PLUTONIA.WAD":

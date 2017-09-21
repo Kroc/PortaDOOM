@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
 :Japanese Community Project                         * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>07>24    Author : Various (see Credits)
-:Levels   : *32             Modes : *Single, Co-op
-:Requires : *no-limit    Includes : *+Music +Graphics +Patches +Demos
+:Released : *2016>07>24	  Author : Various (see Credits)
+:Levels   : *32			   Modes : *Single, Co-op
+:Requires : *no-limit	Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Japanese Community Project is a 32 level megawad made by Japanese Doomers.
@@ -19,65 +19,65 @@ We hope that you have a good time.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : 2 years
-*Editor(s) used           : Various
-*May Not Run With...      : Vanilla Doom
+*Base					: New from scratch
+*Build Time				: 2 years
+*Editor(s) used			: Various
+*May Not Run With...	: Vanilla Doom
 
 :Credits
 :-------------------------------------------------------------------------------
-*Project Leader           : _Tatsurd-Cacocaco_
+*Project Leader			: _Tatsurd-Cacocaco_
 
-*Level Design             : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
+*Level Design			: _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
 
-*New Graphics             : TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
-                            Status bar: _Toooooasty_
-                            Map Title: _Tatsurd-Cacocaco_
+*New Graphics			: TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
+						  Status bar: _Toooooasty_
+						  Map Title: _Tatsurd-Cacocaco_
 
-*New Music                : _Masayan_
+*New Music				: _Masayan_
 
-*Episode Messages         : _burabojunior_, _Toooooasty_, _Taro_, _TerminusEst13_
+*Episode Messages		: _burabojunior_, _Toooooasty_, _Taro_, _TerminusEst13_
 
-*DeHackEd Edit            : _Tatsurd-Cacocaco_
+*DeHackEd Edit			: _Tatsurd-Cacocaco_
 
-*Demos                    : _Tatsurd-Cacocaco_
+*Demos					: _Tatsurd-Cacocaco_
 
-*Texture Resources        : id Software, TeamTNT, and cc4-tex
+*Texture Resources		: id Software, TeamTNT, and cc4-tex
 
 :Map List
 :-------------------------------------------------------------------------------
-- Map01: First Assault                 by _Tatsurd-Cacocaco_
-- Map02: Rural Mini-Base               by _Tatsurd-Cacocaco_
-- Map03: The Sign of Armageddon        by _Masayan_ & _SkullDemon_
-- Map04: Thaumasia                     by _burabojunior_
-- Map05: Woodexial                     by _Toooooasty_
-- Map06: Riminshi Valley               by _burabojunior_
-- Map07: Confused Arena                by _Tatsurd-Cacocaco_
-- Map08: 54-pit                        by _Toooooasty_
-- Map09: The Three World               by _Tyousen121_
-- Map10: The Odd Encampment            by _Yullie_
-- Map11: My fav                        by _Nanka Kurashiki_
-- Map12: Magnetic force apparatus      by _burabojunior_
-- Map13: Bad Morning                   by _Namsan_
-- Map14: G_T_Factory                   by _toMass_
-- Map15: Nandeyanen                    by _Nanka Kurashiki_
-- Map16: Forlorn Defense Line          by _Tatsurd-Cacocaco_
-- Map17: UAC energy plant              by _burabojunior_
-- Map18: Space Port Panik              by _doom68k_
-- Map19: Remind                        by _Nanka Kurashiki_
-- Map20: Escape from UAC space base    by _burabojunior_
-- Map21: Search and Destroy            by _burabojunior_
-- Map22: A den of vice                 by _burabojunior_
-- Map23: Thermal disposal place        by _Guna_
-- Map24: Probably Maybe Certainly      by _Tyousen121_
-- Map25: Cakravartin's miscalculation  by _Nanka Kurashiki_
-- Map26: Embodiment of Maliciousness   by _Yullie_
-- Map27: A resplendent emerald green   by _burabojunior_
-- Map28: HeLLport                      by _Masa_
-- Map29: hazmat hazama                 by _Toooooasty_
-- Map30: Every beginning has an end    by _burabojunior_
-- Map31: Manufacturing Plant           by _Masayan_
-- Map32: Blood Fund Gang               by _Toooooasty_
+- Map01  *First Assault					by _Tatsurd-Cacocaco_
+- Map02  *Rural Mini-Base				by _Tatsurd-Cacocaco_
+- Map03  *The Sign of Armageddon		by _Masayan_ & _SkullDemon_
+- Map04  *Thaumasia						by _burabojunior_
+- Map05  *Woodexial						by _Toooooasty_
+- Map06  *Riminshi Valley				by _burabojunior_
+- Map07  *Confused Arena				by _Tatsurd-Cacocaco_
+- Map08  *54-pit						by _Toooooasty_
+- Map09  *The Three World				by _Tyousen121_
+- Map10  *The Odd Encampment			by _Yullie_
+- Map11  *My fav						by _Nanka Kurashiki_
+- Map12  *Magnetic force apparatus		by _burabojunior_
+- Map13  *Bad Morning					by _Namsan_
+- Map14  *G_T_Factory					by _toMass_
+- Map15  *Nandeyanen					by _Nanka Kurashiki_
+- Map16  *Forlorn Defense Line			by _Tatsurd-Cacocaco_
+- Map17  *UAC energy plant				by _burabojunior_
+- Map18  *Space Port Panik				by _doom68k_
+- Map19  *Remind						by _Nanka Kurashiki_
+- Map20  *Escape from UAC space base	by _burabojunior_
+- Map21  *Search and Destroy			by _burabojunior_
+- Map22  *A den of vice					by _burabojunior_
+- Map23  *Thermal disposal place		by _Guna_
+- Map24  *Probably Maybe Certainly		by _Tyousen121_
+- Map25  *Cakravartin's miscalculation	by _Nanka Kurashiki_
+- Map26  *Embodiment of Maliciousness	by _Yullie_
+- Map27  *A resplendent emerald green	by _burabojunior_
+- Map28  *HeLLport						by _Masa_
+- Map29  *hazmat hazama					by _Toooooasty_
+- Map30  *Every beginning has an end	by _burabojunior_
+- Map31  *Manufacturing Plant			by _Masayan_
+- Map32  *Blood Fund Gang				by _Toooooasty_
 
 Map re-edit by _Tatsurd-Cacocaco_:
 - Map03, Map09, Map10, Map13, Map14, Map18, Map24, Map26, Map31

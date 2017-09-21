@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadron
 
 :Return to Hadron                                   * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>06>19    Author : _Matt "cannonball" Powell_
-:Levels   : *9              Modes : *Single, Co-op, Deathmatch
-:Requires : *boom        Includes : *+Patches +Demos
+:Released : *2015>06>19	  Author : _Matt "cannonball" Powell_
+:Levels   : *9			   Modes : *Single, Co-op, Deathmatch
+:Requires : *boom		Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
 
 A few days after the events of Concerned, another hero tries to breach the C.E.R.N facility, things have changed though, nukage is flooding everywhere including the surrounding mountains, things are really going downhill. The objective is simple, to try and halt the invasion by closing the portal discovered by our previous hero whos location and life signs remain unknown.........
@@ -55,12 +55,12 @@ I remade the main playing area into something more modern, this map plays very v
 
 :Construction:
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : 3 months
-*Editor(s) used           : Doom builder 2 and Slade 3
-*Known Bugs               : Not any I have found. There are likely to be visplane overflows in Vanilla
-*May Not Run With         : Vanilla
-*Tested With              : Pr-boom plus V2.5.1.3
+*Base				: New from scratch
+*Build Time			: 3 months
+*Editor(s) used		: Doom builder 2 and Slade 3
+*Known Bugs			: Not any I have found. There are likely to be visplane overflows in Vanilla
+*May Not Run With	: Vanilla
+*Tested With		: Pr-boom plus V2.5.1.3
 
 :Credits:
 :-------------------------------------------------------------------------------

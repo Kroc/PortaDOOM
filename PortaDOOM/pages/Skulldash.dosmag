@@ -4,11 +4,11 @@ $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 
 :Skulldash                                          * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>10>21    Author : _Joshua 'Dragonfly' O'Sullivan_
-:Levels   : *32             Modes : *Single, Co-op
-:Requires : *zandronum3  Includes : *+Sounds +Music +Graphics
+:Released : *2015>10>21	  Author : _Joshua 'Dragonfly' O'Sullivan_
+:Levels   : *32			   Modes : *Single, Co-op
+:Requires : *zandronum3	Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
 :Skulldash Overview
@@ -38,26 +38,26 @@ At the end of each Tier (except the 1st) there is an action packed boss map. Eac
 
 :Construction:
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : Over Seven Years
-*Editor(s) used           : DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE, SLumpEd, Slade3, MS Paint, Adobe Fireworks, GraphicsGale, FruityLoops Trial
-*Known Bugs               : Hopefully none. Email any found to _<josh@joshuaosullivan.co.uk>_
-*May Not Run With         : Any port other than Zandronum - must be Zandronum 3.0 OR HIGHER. (3.0 is in alpha at the time of writing)
-*Tested With              : Zandronum V3.0-alpha-r150831-1814
+*Base				: New from scratch
+*Build Time			: Over Seven Years
+*Editor(s) used		: DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE, SLumpEd, Slade3, MS Paint, Adobe Fireworks, GraphicsGale, FruityLoops Trial
+*Known Bugs			: Hopefully none. Email any found to _<josh@joshuaosullivan.co.uk>_
+*May Not Run With	: Any port other than Zandronum - must be Zandronum 3.0 OR HIGHER. (3.0 is in alpha at the time of writing)
+*Tested With		: Zandronum V3.0-alpha-r150831-1814
 
 :Credits:
 :-------------------------------------------------------------------------------
 *MAPPERS:
 _Joshua 'Dragonfly' O'Sullivan_ (All maps except:), _Capt. J3_ (Water Station, 100%), _Slyor 64_ (Frostbound, 50%)
-                          
+
 *SCRIPTERS:
 _Joshua 'Dragonfly' O'Sullivan_, _HexaDoken_
- 
+
 *BETATESTERS:
 _Dreadopp_, _HexaDoken_, _Sodaholic_, _Eonfge_, _YellowTail_, _Tuxy_, _Parad0x_
 
 *RESOURCES:
 Realm667, Hexen II, Gothic DM, _Sodaholic_, Blood, Skulltag Resources, _TheMisterCat_, _Joshua 'Dragonfly' O'Sullivan_
-                          
+
 *MUSIC RESOURCES:
 ToxicxEternity, _<rock.freemidis.net>_, _<VGMusic.com>_, 1024.wad, Scythe II, Other WADs

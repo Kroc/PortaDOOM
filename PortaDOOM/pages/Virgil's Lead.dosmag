@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP03:_Virgil%27s_Lead_(Master_Levels)
 
 :Virgil's Lead                                    (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26    Author : _John W. Anderson (aka Dr.Sleep)_
-:Levels   : *1              Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla     Includes : *+Graphics
+:Released : *1995>12>26	  Author : _John W. Anderson (aka Dr.Sleep)_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *+Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "VIRGIL.WAD":
@@ -19,31 +19,31 @@ $KEY:S=URL:http://store.steampowered.com/sub/18397/
 
 VIRGIL'S LEAD is the 3rd Canto in my INFERNO series. In your search for Beatrice, you lost your guide Virgil (the beatnik space-poet) while crossing Acheron. But you've caught up with him again, and he's agreed to lead you through the current way-station (mostly because demons and undead sergeants are not much impressed with Virgil's way with words). 
 
-    "You can get a lot further with a kind word and a gun then you can a kind word."
-    "You belong to the NRA, don't you?" Virgil asks.
-    "No, I'm just a pessimistic pacifist."
+	"You can get a lot further with a kind word and a gun then you can a kind word."
+	"You belong to the NRA, don't you?" Virgil asks.
+	"No, I'm just a pessimistic pacifist."
 
 This is a deceptively small level, but you'll need to conserve ammo and try not to get shot or chewed on too much, since the stim packs are in scarce supply.
  
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New level from scratch
-*Build Time               : 10 days (over 100 hours)
-*Editor(s) used           : DETH 1.2 and 2.1 by _Antony Burden_ and _Simon Oke_;
-*Other Utilities          : BSP v1.2x by _Colin Reed_;
-			    RMB v2.1 by _Jens Hykkelbjerg_;
-			    DOOMTex v1.0c by _Steve McCrea_;
-			    DOOMTex Supplement by _Ben Sze_;
-			    Paint Shop Pro v2.0 for Windows;
-*Known Bugs               : None whatsoever
-*May Not Run With...      : OS/2 WARP <g>
+*Base					: New level from scratch
+*Build Time				: 10 days (over 100 hours)
+*Editor(s) used			: DETH 1.2 and 2.1 by _Antony Burden_ and _Simon Oke_;
+*Other Utilities		: BSP v1.2x by _Colin Reed_;
+						  RMB v2.1 by _Jens Hykkelbjerg_;
+						  DOOMTex v1.0c by _Steve McCrea_;
+						  DOOMTex Supplement by _Ben Sze_;
+						  Paint Shop Pro v2.0 for Windows;
+*Known Bugs				: None whatsoever
+*May Not Run With...	: OS/2 WARP <g>
 
 :Credits:
 :-------------------------------------------------------------------------------
 The star SKY texture was composed from scratch using Paint Shop Pro v2.0.
 
-*Additional Credits to    : _Jim F. Flynn_ for support and friendship;
-			    _Shawn Green_, _American McGee_, _John Romero_, and everyone at Id Software;
-			    _Howard "Desdinova" Rider_ for graphic support;
-			    _Antony Burden_ for DETH 2.1;
-			    _Joshua E. Anderson_, for playtesting.
+*Additional Credits to	: _Jim F. Flynn_ for support and friendship;
+						  _Shawn Green_, _American McGee_, _John Romero_, and everyone at Id Software;
+						  _Howard "Desdinova" Rider_ for graphic support;
+						  _Antony Burden_ for DETH 2.1;
+						  _Joshua E. Anderson_, for playtesting.

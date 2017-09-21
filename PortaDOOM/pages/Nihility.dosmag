@@ -3,11 +3,11 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/85591-nihility-infinite-teeth-
 
 :Nihility                                           * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [W] Website
+*[P] Play						*[W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>01>21    Author : _Years_
-:Levels   : *9              Modes : *Single, Co-op
-:Requires : *vanilla?    Includes : *+Sounds +Graphics +Patches
+:Released : *2016>01>21	  Author : _Years_
+:Levels   : *9			   Modes : *Single, Co-op
+:Requires : *vanilla?	Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 $KEY:1=GOTO:Doom the Way id Did

@@ -4,25 +4,25 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/88555-shadow-of-the-wool-ball-
 
 :Shadow Of The Wool Ball                         * 2016 Cacoward runner up! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>06>09    Author : _MSPaintR0cks_ aka _WatchDaToast_
-:Levels   : *18             Modes : *Single
-:Requires : *zdoom       Includes : *+Sound +Music +Graphics
+:Released : *2016>06>09	  Author : _MSPaintR0cks_ aka _WatchDaToast_
+:Levels   : *18			   Modes : *Single
+:Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
 A cartoony doom mod that makes you shoot evil kittehs :3
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : started somewhere in 2013, didn`t do anything from 2014 to 2015, but finished everything in 2016 :3 
-*Editor(s) used           : Doom Builder 2, XWE, Audacity, Microsoft Paint, Guitar Pro 5
-*Known Bugs               : there still may be a few
-*May Not Run With         : anything but ZDoom
-*Tested With              : ZDoom
+*Base					: New from scratch
+*Build Time				: started somewhere in 2013, didn`t do anything from 2014 to 2015, but finished everything in 2016 :3 
+*Editor(s) used			: Doom Builder 2, XWE, Audacity, Microsoft Paint, Guitar Pro 5
+*Known Bugs				: there still may be a few
+*May Not Run With		: anything but ZDoom
+*Tested With			: ZDoom
 
 :Credits
 :-------------------------------------------------------------------------------
-*Additional Credits to*   : _Almonds_, _Albertoni_, _Mumblemumble_, _Big C_, _Joe-Ilya_, _StatisticalHourglass_, _Sodaholic_, _Hellbent_, _Lizardcommando_, _xxBiowarfare11_ for their interest in the project and for playtesting!
-                            Also, _Captain J_ for creating that awesome explosion animation I was always too lazy to do!
+*Additional Credits to	: _Almonds_, _Albertoni_, _Mumblemumble_, _Big C_, _Joe-Ilya_, _StatisticalHourglass_, _Sodaholic_, _Hellbent_, _Lizardcommando_, _xxBiowarfare11_ for their interest in the project and for playtesting!
+						  Also, _Captain J_ for creating that awesome explosion animation I was always too lazy to do!

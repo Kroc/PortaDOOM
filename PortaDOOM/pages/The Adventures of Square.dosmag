@@ -3,11 +3,11 @@ $KEY:W=URL:http://adventuresofsquare.com
 
 :The Adventures of Square
 :===============================================================================
-*[P] Play                        [W] Website
+*[P] Play						*[W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>04>22    Author : *Big Brik Games
-:Levels   : *9              Modes : *Single, Co-op?, Deathmatch
-:Requires : *gzdoom      Includes : *+Sound +Music +Graphics
+:Released : *2017>04>22	  Author : *Big Brik Games
+:Levels   : *9			   Modes : *Single, Co-op?, Deathmatch
+:Requires : *gzdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
 The brilliant Doctor Octagon has been kidnapped! Square must find him, and rescue him from the clutches of the Circle of Evil, a mysterious cult hellbent on the domination of Shape Land. He will square off against terrible monsters and impossible traps in order to prove that he's no square when it comes to justice. Guide him to the center of the Circles' domain, unravel their malicious plot, and win the day fair and square!
@@ -41,25 +41,25 @@ Once complete, the FULL VERSION of the game will include:
 :Credits:
 :-------------------------------------------------------------------------------
 _James "Jimmy" Paddock
-    Creative Director, Project Lead, Mapping, Spriting, Texturing, Music
+	Creative Director, Project Lead, Mapping, Spriting, Texturing, Music
 
 _Matt "MTrop" Tropiano
-    Project Coordinator, Mapping, Spriting, Sound, Coding, QA, Writing
+	Project Coordinator, Mapping, Spriting, Sound, Coding, QA, Writing
 
 _Xaser Acheron
-    Mapping, Music, Spriting, Coding
+	Mapping, Music, Spriting, Coding
 
 _Richard "Tarnsman" Frei
-    Mapping, QA
+	Mapping, QA
 
 _Augustus "Alfonzo" Knezevich
-    Mapping, Music, Writing
+	Mapping, Music, Writing
 
 _Conor "ClonedPickle" Maddin
-    Mapping, QA, Spriting
+	Mapping, QA, Spriting
 
 _Jerry "jmickle" Mickle
-    Promotion, Marketing, Music, QA
+	Promotion, Marketing, Music, QA
 
 _Walker "Pavera" Wright
-    Mapping
+	Mapping

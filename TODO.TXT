@@ -3,6 +3,7 @@ Pages:
 [ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to incompatibility with ZScript
     and a visual bug -- current work-around is to limit it to software rendering
 [ ] Create pages for the speedruns so that the author notes can be displayed
+[ ] Help page to explain WAD page headers, glossary
 
 Scripts:
 ================================================================================
@@ -19,13 +20,14 @@ Scripts:
     this is needed if we're going to interlink WAD references in the cacowards
 
 [ ] dosmag : fix tab-expansion
-[ ] dosmag : rulers, to greatly reduce the amount of ad-hoc spacing
+[ ] dosmag : replace smilies and other potential ANSI characters
 [ ] dosmag : Themes
-[ ] dosmag : Right-alignment, whole line. Consider right alignment from middle of line (rulers?)
+[ ] dosmag : Right-alignment, whole line
+    Consider right alignment from middle of line (rulers?)
 [ ] N64 DOOM64.WAD detection / warning
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?
-[ ] Demo playback in doom.bat
+[ ] dosmag : shadow behind dialog box
 
 WADs:
 ================================================================================

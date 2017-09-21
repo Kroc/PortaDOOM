@@ -5,11 +5,11 @@ $KEY:1=URL:https://www.doomworld.com/afterglow/textures/
 
 :Echelon                                         * 2016 Cacoward runner up! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>11>28    Author : _Sverre Andre Kvernmo_, aka _Soundblock_
-:Levels   : *30             Modes : *Single, Co-op, Deathmatch
-:Requires : *zdoom       Includes : *+Sound +Music +Graphics
+:Released : *2016>11>28	  Author : _Sverre Andre Kvernmo_, aka _Soundblock_
+:Levels   : *30			   Modes : *Single, Co-op, Deathmatch
+:Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
 A 30-map mega wad. Yes! Finally made one... The project's chief goal was to create a full set of bite-sized maps. Some maps grew a little larger. A reimagining of the Doom II storyline.
@@ -20,14 +20,14 @@ Feel free to use jump and duck if you so please, but these new functions aren't 
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New verteces, linedefs and sectors from scratch. 3 originally sprited monsters. Bunches of both new and reused textures.
-*Build Time               : Started life as Project PAR, back in 2013. Morphed into Echelon. Portions of the wad's architecture date back as far as 1996. I.e. Map 12 started life as a reject for Eternal Doom MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff.
-*Editor(s) used           : GZDoomBuilder, SLADE v3.0.2, Photoshop Elements
-*Known Bugs               : There are some "slime" artifacts along the way, here and there.
-*May Not Run With...      : Other Doom source ports than ZDOOM. Maps 28 & 29 are high detail and may not run well on slower PCs.
+*Base					: New verteces, linedefs and sectors from scratch. 3 originally sprited monsters. Bunches of both new and reused textures.
+*Build Time				: Started life as Project PAR, back in 2013. Morphed into Echelon. Portions of the wad's architecture date back as far as 1996. I.e. Map 12 started life as a reject for Eternal Doom MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff.
+*Editor(s) used			: GZDoomBuilder, SLADE v3.0.2, Photoshop Elements
+*Known Bugs				: There are some "slime" artifacts along the way, here and there.
+*May Not Run With...	: Other Doom source ports than ZDOOM. Maps 28 & 29 are high detail and may not run well on slower PCs.
 
 :Credits
 :-------------------------------------------------------------------------------
-*Additional credits to    : _Noisyvelvet_, for breathing life into the monsters. _Fonze_, for playing the beta and giving invaluable feedback. _Xaser_, for rescuing the wad for posterity (fixed ZDoom crash bug) Doomworld.com in general, Echelon post contributors in particular.
+*Additional credits to	: _Noisyvelvet_, for breathing life into the monsters. _Fonze_, for playing the beta and giving invaluable feedback. _Xaser_, for rescuing the wad for posterity (fixed ZDoom crash bug) Doomworld.com in general, Echelon post contributors in particular.
 
-*Texture credits          : About half the featured textures were done by me for this project but I also lifted a lot from "Community Chest 4" and "The Afterglow Collection"; *[1] www.doomworld.com/afterglow/textures/* Some textures used from the "Crucified Dreams" project. "Eternal Doom" material also used, some of which I created myself. More complete texture credits at the end of the *[T] doc*.
+*Texture credits		: About half the featured textures were done by me for this project but I also lifted a lot from "Community Chest 4" and "The Afterglow Collection"; *[1] www.doomworld.com/afterglow/textures/* Some textures used from the "Crucified Dreams" project. "Eternal Doom" material also used, some of which I created myself. More complete texture credits at the end of the *[T] doc*.

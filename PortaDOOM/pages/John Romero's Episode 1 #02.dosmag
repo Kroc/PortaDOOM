@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
 
 :Phobos Mission Control
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>04>26    Author : _John Romero_
-:Levels   : *1              Modes : *Single, Co-op, Deathmatch
-:Requires : *no-limit    Includes : *None
+:Released : *2016>04>26	  Author : _John Romero_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *no-limit	Includes : *None
 :-------------------------------------------------------------------------------
 
 With the Toxin Refinery in the rear-view, you make your way to Phobos Mission Control where the computers crunching the data from the Phobos Anomaly are located. You need to use them to gain access to the Phobos Lab, but remember hearing that the computers were tied into all areas of the installation and that you never knew when the environment around you would change. You need to keep your eyes alert to all movement - this place is not what it seems...

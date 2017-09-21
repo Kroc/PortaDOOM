@@ -4,23 +4,23 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
 
 :Luducrium                                          * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>08    Author : _antares031_
-:Levels   : *6              Modes : *Single
-:Requires : *zdoom       Includes : *+Sound +Music +Patches
+:Released : *2015>12>08	  Author : _antares031_
+:Levels   : *6			   Modes : *Single
+:Requires : *zdoom		Includes : *+Sound +Music +Patches
 :-------------------------------------------------------------------------------
 
 I usually don't make slaughtermaps, but I decided to create some levels that I normally hate. So here it is. Please keep in mind that I usually do not make (or play) slaughtermaps, and this is just experimental one.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : Two days
-*Editor(s) used           : Doom Builder 2, Slade 3, Photoshop CS3
-*Known Bugs               : MAP03 has graphical glitch, and MAP05 is just unplayable with PrBoom.
-*May Not Run With         : Just run it with latest ZDoom
-*Tested With              : ZDoom 2.8pre
+*Base				: New from scratch
+*Build Time			: Two days
+*Editor(s) used		: Doom Builder 2, Slade 3, Photoshop CS3
+*Known Bugs			: MAP03 has graphical glitch, and MAP05 is just unplayable with PrBoom.
+*May Not Run With	: Just run it with latest ZDoom
+*Tested With		: ZDoom 2.8pre
 
 :Credits
 :-------------------------------------------------------------------------------

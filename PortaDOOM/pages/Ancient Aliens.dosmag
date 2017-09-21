@@ -4,125 +4,123 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 
 :Ancient Aliens                                     * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>05>18    Author : _Paul "skillsaw" DeBruyne_
-:Levels   : *32             Modes : *Single, Co-op
-:Requires : *boom        Includes : *+Music +Sounds +Graphics +Patches +Demos
+:Released : *2016>05>18	  Author : _Paul "skillsaw" DeBruyne_
+:Levels   : *32			   Modes : *Single, Co-op
+:Requires : *boom		Includes : *+Music +Sounds +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Ancient Aliens is a megawad featuring 32 colorful, action-packed maps for Boom compatible ports.
-                          
+
 Go on a journey to discover the truth about the enigmatic origins of human civilization... 
 
 I'm not saying it was aliens, but... the truth is out there.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : Texture wad based on 32in24-14 resource
-*Build Time               : 15 months
-*Editor(s) used           : Doom Builder 2, GZDoom Builder, Slade, WhackEd, GIMP, Notepad++
-*Known Bugs               : None
-*May Not Run With...      : Gameplay mods that change the palette or don't use .png graphics.
-
-                            If you encounter garbled texture graphics while using a mod try changing the load order.
+*Base					: Texture wad based on 32in24-14 resource
+*Build Time				: 15 months
+*Editor(s) used			: Doom Builder 2, GZDoom Builder, Slade, WhackEd, GIMP, Notepad++
+*Known Bugs				: None
+*May Not Run With...	: Gameplay mods that change the palette or don't use .png graphics. If you encounter garbled texture graphics while using a mod try changing the load order.
 
 :Credits
 :-------------------------------------------------------------------------------
 
-*Mapping                  : _skillsaw_
-                            _AD_79_
-                            _esselfortium_
-                            _Joshy_
-                            _lupinx-Kassman_
-                            _Pinchy_
-                            _stewboy_
-                            _Tarnsman_
-                          
-*Music                    : _stewboy_
+*Mapping				: _skillsaw_
+						  _AD_79_
+						  _esselfortium_
+						  _Joshy_
+						  _lupinx-Kassman_
+						  _Pinchy_
+						  _stewboy_
+						  _Tarnsman_
 
-*Testing                  : _AD_79_
-                            _Altazimuth_
-                            _dew_
-                            _Tarnsman_
-                          
-*Coop Testing             : _Alfonzo_
-                            _Altazimuth_
-                            _dew_
-                            _esselfortium_
-                            _Pinchy_
-                            _Seele00TextOnly_
-                          
-*Texture Credits          : _NiGHTMARE_
-                            _Espi_
-                            _Eriance_
-                            _Fredrik Johansson_
-                            _Janitor_
-                            _DaGGeR_
-                            _Ola Bjorling_
-                            _Vader_
-                            _XDelusion_
-                            _esselfortium_
-                            _RottKing_
-                            _Nuxius_
-                            _Afterglow_
-                            _AgentSpork_
-                            _Enjay_
-                            _Huy Pham_
-                            _SargeBaldy_
-                            _Tormentor667_
-                            _Iikka Keranen_
-                            _Cage_
-                            _FuzzballFox_
-                            _40oz_
-                            _Mechadon_
-                            _zrrion the insect_
-                            _Nightfall_
-                            _Blue Shadow_
-                            _Sock_
-                            _Roger Ritenour_
-                            _Spackle_
-                            _Tarnsman_
-                            _lupinx-Kassman_
-                            _skillsaw_
-                            GothicDM Team
-                            Eternal Doom Team
-                            id Software
-                            Ion Storm
-                            Raven Software
-                            Rogue Entertainment
-                            Valve Software
+*Music					: _stewboy_
 
-*Sprite Credits           : _Eriance_                        
-                            _Virtue_
-                            _Bloax_
-                            _CeeJay_
-                            _Tormentor667_
-                            _skillsaw_
-                            3d Realms                       
+*Testing				: _AD_79_
+						  _Altazimuth_
+						  _dew_
+						  _Tarnsman_
 
-*Fonts                    : _Mechadon_
+*Coop Testing			: _Alfonzo_
+						  _Altazimuth_
+						  _dew_
+						  _esselfortium_
+						  _Pinchy_
+						  _Seele00TextOnly_
 
-*Status Bar Font          : _AgentSpork_
+*Texture Credits		: _NiGHTMARE_
+						  _Espi_
+						  _Eriance_
+						  _Fredrik Johansson_
+						  _Janitor_
+						  _DaGGeR_
+						  _Ola Bjorling_
+						  _Vader_
+						  _XDelusion_
+						  _esselfortium_
+						  _RottKing_
+						  _Nuxius_
+						  _Afterglow_
+						  _AgentSpork_
+						  _Enjay_
+						  _Huy Pham_
+						  _SargeBaldy_
+						  _Tormentor667_
+						  _Iikka Keranen_
+						  _Cage_
+						  _FuzzballFox_
+						  _40oz_
+						  _Mechadon_
+						  _zrrion the insect_
+						  _Nightfall_
+						  _Blue Shadow_
+						  _Sock_
+						  _Roger Ritenour_
+						  _Spackle_
+						  _Tarnsman_
+						  _lupinx-Kassman_
+						  _skillsaw_
+						  GothicDM Team
+						  Eternal Doom Team
+						  id Software
+						  Ion Storm
+						  Raven Software
+						  Rogue Entertainment
+						  Valve Software
 
-*Palette                  : _skillsaw_
-                            (purple range is from BTSX)
+*Sprite Credits			: _Eriance_
+						  _Virtue_
+						  _Bloax_
+						  _CeeJay_
+						  _Tormentor667_
+						  _skillsaw_
+						  3d Realms
 
-*ENDOOM                   : _Altazimuth_
+*Fonts					: _Mechadon_
 
-*CR** Translation lumps   : _xttl_
+*Status Bar Font		: _AgentSpork_
 
-*Final ending text        : _dew_
+*Palette				: _skillsaw_
+						  (purple range is from BTSX)
 
-*ACS multiplayer fix      : _rhinoduck_
+*ENDOOM					: _Altazimuth_
+
+*CR** Translation lumps	: _xttl_
+
+*Final ending text		: _dew_
+
+*ACS multiplayer fix	: _rhinoduck_
 
 *Misc Graphics, Splash
-*Screens, Status Bar      : _skillsaw_
+*Screens, Status Bar	: _skillsaw_
 
-*Sound Credits            : _Eriance_
-                            Raven Software
-                            Rogue Entertainment
-                            http://www.freesfx.co.uk 
+*Sound Credits			: _Eriance_
+						  Raven Software
+						  Rogue Entertainment
+						  http://www.freesfx.co.uk 
 
 :Map List
 :-------------------------------------------------------------------------------
@@ -158,7 +156,7 @@ I'm not saying it was aliens, but... the truth is out there.
 - MAP30 - *"The End"* by _skillsaw
 - MAP31 - *"Grey Dwarf"* by _stewboy
 - MAP32 - *"Ossuarium Exoterre"* by _skillsaw
-                          
+
 :Music Listing
 :-------------------------------------------------------------------------------
 - MAP01 - *"Flee"*

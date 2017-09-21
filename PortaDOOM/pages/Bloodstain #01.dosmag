@@ -5,11 +5,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/bstain
 
 :Bloodstain                                      * 2016 Cacoward runner up! *
 :===============================================================================
-*[P] Play                        *[T] .txt [I] Info [W] Website
+*[P] Play						*[T] .txt [I] Info [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>01>01    Author : *_Pavel 'Pipicz' Tvrzník_
-:Levels   : *32             Modes : *Single, Co-op
-:Requires : *boom        Includes : *+Music +Graphics +Patches +Demos
+:Released : *2016>01>01	  Author : *_Pavel 'Pipicz' Tvrzník_
+:Levels   : *32			   Modes : *Single, Co-op
+:Requires : *boom		Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Full 32-map megawad.
@@ -21,13 +21,13 @@ It ought to be just another boring workday of a UAC space marine. You were sent 
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : About 5 years (depends on what you consider to be the start)
-*Editor(s) used           : Doombuilder 1/2, XWE, Slade 3, MS Paint
-*Known Bugs               : Some slime trails
-                            Intended map32 sky texture is displayed only by ports that support MAPINFO
-*May Not Run With         : DOOM2.exe
-*Tested With              : PrBoom-Plus 2.5.1.3, ZDoom 2.3.1
+*Base				: New from scratch
+*Build Time			: About 5 years (depends on what you consider to be the start)
+*Editor(s) used		: Doombuilder 1/2, XWE, Slade 3, MS Paint
+*Known Bugs			: Some slime trails
+					  Intended map32 sky texture is displayed only by ports that support MAPINFO
+*May Not Run With	: DOOM2.exe
+*Tested With		: PrBoom-Plus 2.5.1.3, ZDoom 2.3.1
 
 :Credits
 :-------------------------------------------------------------------------------

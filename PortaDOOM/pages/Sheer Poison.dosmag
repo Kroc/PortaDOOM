@@ -4,25 +4,25 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/72721-new-song-with-level-atta
 
 :Sheer Poison                                       * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>05>11    Author : _Zan-zan-zawa-veia_
-:Levels   : *1              Modes : *Single
-:Requires : *vanilla     Includes : *+Music +Graphics
+:Released : *2015>05>11	  Author : _Zan-zan-zawa-veia_
+:Levels   : *1			   Modes : *Single
+:Requires : *vanilla	Includes : *+Music +Graphics
 :-------------------------------------------------------------------------------
 
 A big nonsensical challenge map; gets metaphysical in places.
 
 *The Story:* You're back from your victory over the gatekeeper of Hell, but upon arriving home are informed that no-one is aware of your successes or is at all willing to believe they happened. They put you in quarantine for three weeks and the stress snaps your mind, yanking you back into an imaginary hell where you don't even get to use the super shotgun. Oh no, you say. OH NO.
-                         
+
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : From scratch
-*Build Time               : a month
-*Editor(s) used           : WinDEU 5.24; XWE; Paint.NET; Cubasis
-*Known Bugs               : none
-*May Not Run With         : -
-*Tested With              : Ultimate Doom in DOSBox; PrBoom-Plus 2.5.1.3
+*Base				: From scratch
+*Build Time			: a month
+*Editor(s) used		: WinDEU 5.24; XWE; Paint.NET; Cubasis
+*Known Bugs			: none
+*May Not Run With	: -
+*Tested With		: Ultimate Doom in DOSBox; PrBoom-Plus 2.5.1.3
 
 :Credits:
 :-------------------------------------------------------------------------------

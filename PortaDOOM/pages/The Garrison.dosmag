@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_The_Garrison_(Master_Levels)
 
 :The Garrison                                     (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26    Author : _Christen Klie_
-:Levels   : *1              Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla     Includes : *None
+:Released : *1995>12>26	  Author : _Christen Klie_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "GARRISON.WAD":
@@ -19,16 +19,16 @@ $KEY:S=URL:http://store.steampowered.com/sub/18397/
  
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New level from scratch
-*Editor(s) used           : DETH by _Quinet_, _Wyber_, _Oke_ & _Burden_
-                            BSP by _C. Reed_
-                            RMB by _J. Hykkelbjerg_
+*Base				: New level from scratch
+*Editor(s) used		: DETH by _Quinet_, _Wyber_, _Oke_ & _Burden_
+					  BSP by _C. Reed_
+					  RMB by _J. Hykkelbjerg_
 
 :Credits:
 :-------------------------------------------------------------------------------
-*Special Thanks to        : _Gerri_, _Mike_ and _Megan_
-                            id Software
-                            _John W. Anderson_
-                            _Bill Ager_
-                            _Donald E. Bernardo_
-                            _Mal Blackwell_
+*Special Thanks to	: _Gerri_, _Mike_ and _Megan_
+					  id Software
+					  _John W. Anderson_
+					  _Bill Ager_
+					  _Donald E. Bernardo_
+					  _Mal Blackwell_

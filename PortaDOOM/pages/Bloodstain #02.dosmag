@@ -1,196 +1,196 @@
 
 :Map commentary:
 :===============================================================================
-:MAP01        : Inception
+:MAP01			: Inception
 :-------------------------------------------------------------------------------
-*Theme        : Base
-*Inspiration  : Scythe MAP01, KS2 MAP01
-*Comments     : Although this is MAP01, it by far isn't the oldest one.
-                I wanted MAP01 to be a good-looking one, with catchy layout and fast-paced and straightforward gameplay. I consider this one to be an adequate introduction to the megawad.
+*Theme			: Base
+*Inspiration	: Scythe MAP01, KS2 MAP01
+*Comments		: Although this is MAP01, it by far isn't the oldest one.
+				  I wanted MAP01 to be a good-looking one, with catchy layout and fast-paced and straightforward gameplay. I consider this one to be an adequate introduction to the megawad.
 
-:MAP02        : Brass Square
+:MAP02			: Brass Square
 :-------------------------------------------------------------------------------
-*Theme        : Town
-*Inspiration  : KS map01, AV map03
-*Comments     : An old and probably the smallest map in the whole megawad.
-                A few buildings closing in on the square. Nothing special, really.
+*Theme			: Town
+*Inspiration	: KS map01, AV map03
+*Comments		: An old and probably the smallest map in the whole megawad.
+				  A few buildings closing in on the square. Nothing special, really.
 
-:MAP03        : Conquered Quarters
+:MAP03			: Conquered Quarters
 :-------------------------------------------------------------------------------
-*Theme        : Town
-*Inspiration  : Various town-themed maps.
-*Comments     : Another fast-paced map with a central square and a few buildings around. Longer than the previous one, but still quite a short one. The secret with an SSG was changed from the Demo. Introduction of a new Z-Sec zombie at the map's ending.
+*Theme			: Town
+*Inspiration	: Various town-themed maps.
+*Comments		: Another fast-paced map with a central square and a few buildings around. Longer than the previous one, but still quite a short one. The secret with an SSG was changed from the Demo. Introduction of a new Z-Sec zombie at the map's ending.
 
-:MAP04        : Fallout Shelter
+:MAP04			: Fallout Shelter
 :-------------------------------------------------------------------------------
-*Theme        : Doom 1 base
-*Inspiration  : Ultimate Doom Episode 1
-*Comments     : The version released in the Demo felt a bit too much Doom 1-ish that it didn't really fit into the megawad's concept, so I decided to redo most of the second half of the map. Now I'm way more satisfied with it.
+*Theme			: Doom 1 base
+*Inspiration	: Ultimate Doom Episode 1
+*Comments		: The version released in the Demo felt a bit too much Doom 1-ish that it didn't really fit into the megawad's concept, so I decided to redo most of the second half of the map. Now I'm way more satisfied with it.
 
-:MAP05        : The Intersection
+:MAP05			: The Intersection
 :-------------------------------------------------------------------------------
-*Theme        : Doom 1 base
-*Inspiration  : Ultimate Doom Episode 1
-*Comments     : When I think back, this might be the oldest map in the megawad. Quite many time redone and improved, of course. The basic layout idea remains the smae though.
+*Theme			: Doom 1 base
+*Inspiration	: Ultimate Doom Episode 1
+*Comments		: When I think back, this might be the oldest map in the megawad. Quite many time redone and improved, of course. The basic layout idea remains the smae though.
 
-:MAP06        : Anomaly Entrance
+:MAP06			: Anomaly Entrance
 :-------------------------------------------------------------------------------
-*Theme        : Base, more in Scythe2 style
-*Inspiration  : Scythe2 base maps
-*Comments     : First longer map requiring all three keys to finish. However it's not really complex and the pathway is rather straight-forward from the start to the exit. It can be divided into four parts - mostly symmetrical central part that interconnects the other three parts, each one necessary to go through to get the key. The last part features the introduction of slightly modified Baron in a little and pretty easy boss fight to close up the first episode.
+*Theme			: Base, more in Scythe2 style
+*Inspiration	: Scythe2 base maps
+*Comments		: First longer map requiring all three keys to finish. However it's not really complex and the pathway is rather straight-forward from the start to the exit. It can be divided into four parts - mostly symmetrical central part that interconnects the other three parts, each one necessary to go through to get the key. The last part features the introduction of slightly modified Baron in a little and pretty easy boss fight to close up the first episode.
 
-:MAP07        : The Amphitheater
+:MAP07			: The Amphitheater
 :-------------------------------------------------------------------------------
-*Theme        : Neo-Plutonic arena
-*Inspiration  : Various maps 07, AV map07 and KS map07 the most
-*Comments     : Gameplay-wise, it's not anyhow unusual map07. I wanted to have all the monsters teleport in and so I did. In the end it might look a bit awkward, but hey. Possibly the only gameplay element that could be considered innovative a little is that I used tags 666 and 667 to make a sort of waves of monster spawning right after killing the previous wave. However what I am quite satisfied with is the color theme of the map - quite unusual combination of grey Plutonia bricks with green camo textures, grey marble, and sandy colours.              
+*Theme			: Neo-Plutonic arena
+*Inspiration	: Various maps 07, AV map07 and KS map07 the most
+*Comments		: Gameplay-wise, it's not anyhow unusual map07. I wanted to have all the monsters teleport in and so I did. In the end it might look a bit awkward, but hey. Possibly the only gameplay element that could be considered innovative a little is that I used tags 666 and 667 to make a sort of waves of monster spawning right after killing the previous wave. However what I am quite satisfied with is the color theme of the map - quite unusual combination of grey Plutonia bricks with green camo textures, grey marble, and sandy colours.              
 
-:MAP08        : Toxic Sea
+:MAP08			: Toxic Sea
 :-------------------------------------------------------------------------------
-*Theme        : Scythe2 base
-*Inspiration  : Scythe2 base maps
-*Comments     : Another base-themed map, this time surrounded by the sea, as the title suggests, made of acid. Could be water, but hey, what would be the title then? The panorama features a steamship as a reference to AV map03 and some KS maps. And, if you look to the right while on the bridge leading to the exit tower, you'll be able to see a little wooden KS-style boat. :-)
+*Theme			: Scythe2 base
+*Inspiration	: Scythe2 base maps
+*Comments		: Another base-themed map, this time surrounded by the sea, as the title suggests, made of acid. Could be water, but hey, what would be the title then? The panorama features a steamship as a reference to AV map03 and some KS maps. And, if you look to the right while on the bridge leading to the exit tower, you'll be able to see a little wooden KS-style boat. :-)
 
-:MAP09        : Mountain Outpost
+:MAP09			: Mountain Outpost
 :-------------------------------------------------------------------------------
-*Theme        : Mostly outdoor base with orange rock landscapes
-*Inspiration  : Various base-themed maps
-*Comments     : The first map of the megawad using an open, complex and somewhat interconnected layout. I actually started drawing the map on the chequered paper and I think that is the reason why it turned this well. There are multiple possible routes to take while finishing the map and not all the areas need to be explored. However it is quite action packed, especially at the beginning and in the areas where you pick up any important item. I am really satisfied with it, both with its gameplay and color theme and looks.
+*Theme			: Mostly outdoor base with orange rock landscapes
+*Inspiration	: Various base-themed maps
+*Comments		: The first map of the megawad using an open, complex and somewhat interconnected layout. I actually started drawing the map on the chequered paper and I think that is the reason why it turned this well. There are multiple possible routes to take while finishing the map and not all the areas need to be explored. However it is quite action packed, especially at the beginning and in the areas where you pick up any important item. I am really satisfied with it, both with its gameplay and color theme and looks.
 
-:MAP10        : Shimmering Grotto
+:MAP10			: Shimmering Grotto
 :-------------------------------------------------------------------------------
-*Theme        : Brown caverns
-*Inspiration  : KS map05
-*Comments     : Quite an old one, originally with a different color theme in the outdoor areas. Before having been replaced by the darker brown textures the outdoor areas' texture was exclusively ROCK4. All in all, I'm glad I decided to use DB2's find and replace feature here. :-) The title comes from a Magic: the Gathering card.
+*Theme			: Brown caverns
+*Inspiration	: KS map05
+*Comments		: Quite an old one, originally with a different color theme in the outdoor areas. Before having been replaced by the darker brown textures the outdoor areas' texture was exclusively ROCK4. All in all, I'm glad I decided to use DB2's find and replace feature here. :-) The title comes from a Magic: the Gathering card.
 
-:MAP11        : Verdant
+:MAP11			: Verdant
 :-------------------------------------------------------------------------------
-*Theme        : Green moss landscapes and caverns
-*Inspiration  : Primarily a dream I had one night :-) besides that PL2 map16, SOD map17
-*Comments     : An idea for this map indeed came in a dream and I just had to hear out the inception. The dream did actually show only a bit with the cavern right after the opening valley where you start, but I made the whole map in this theme - with an intention to keep sort of dreamy feel for the whole map. I think that a few landmarks have turned out quite nice, but I don't really like this map's layout and gameplay. It's basically just a tunnel that leads the player right from the start to the exit. 
+*Theme			: Green moss landscapes and caverns
+*Inspiration	: Primarily a dream I had one night :-) besides that PL2 map16, SOD map17
+*Comments		: An idea for this map indeed came in a dream and I just had to hear out the inception. The dream did actually show only a bit with the cavern right after the opening valley where you start, but I made the whole map in this theme - with an intention to keep sort of dreamy feel for the whole map. I think that a few landmarks have turned out quite nice, but I don't really like this map's layout and gameplay. It's basically just a tunnel that leads the player right from the start to the exit. 
 
-:MAP12        : The Slimy Dens
+:MAP12			: The Slimy Dens
 :-------------------------------------------------------------------------------
-*Theme        : Brown stone
-*Inspiration  : Doom2 map14, AV map05, Scythe map15
-*Comments     : Probably the second oldest map here - of course again changed and renovated a million times from its original version. The original version was pretty plain and ugly, but I had been a bit encouraged about this map by _Gusta_ and _MethoD_ when I was about 14 years old and in my mapping beginnings.              
+*Theme			: Brown stone
+*Inspiration	: Doom2 map14, AV map05, Scythe map15
+*Comments		: Probably the second oldest map here - of course again changed and renovated a million times from its original version. The original version was pretty plain and ugly, but I had been a bit encouraged about this map by _Gusta_ and _MethoD_ when I was about 14 years old and in my mapping beginnings.              
 
-:MAP13        : Autumn
+:MAP13			: Autumn
 :-------------------------------------------------------------------------------
-*Theme        : Brown stone, orange rocks and leaves
-*Inspiration  : PL2 map01, some Hexen maps that feature orange leaves
-*Comments     : I had always wanted to make a brown stone map with a significant Hexen orange leaf sub-theme that would be named Autumn (or somehow similar). This is the map. I think worked out pretty well. Many areas here are rather cramped but aesthetically good looking. Or at least in my book. The map's beginning is heavily influenced by the beginning of PL2 map01.
+*Theme			: Brown stone, orange rocks and leaves
+*Inspiration	: PL2 map01, some Hexen maps that feature orange leaves
+*Comments		: I had always wanted to make a brown stone map with a significant Hexen orange leaf sub-theme that would be named Autumn (or somehow similar). This is the map. I think worked out pretty well. Many areas here are rather cramped but aesthetically good looking. Or at least in my book. The map's beginning is heavily influenced by the beginning of PL2 map01.
 
-:MAP14        : Dryad's Garden
+:MAP14			: Dryad's Garden
 :-------------------------------------------------------------------------------
-*Theme        : Brown stone, green vines, green rocks
-*Inspiration  : AV map05, Scythe2 maps 21-25
-*Comments     : Another map I don't like a lot. I was even considering cutting it out, but in the end I decided to keep it in. Although open in the design, the layout is a plain tunnel - no complexity and only one route to take. Well, it just sucks, but there might at least be a few good-looking environments.
+*Theme			: Brown stone, green vines, green rocks
+*Inspiration	: AV map05, Scythe2 maps 21-25
+*Comments		: Another map I don't like a lot. I was even considering cutting it out, but in the end I decided to keep it in. Although open in the design, the layout is a plain tunnel - no complexity and only one route to take. Well, it just sucks, but there might at least be a few good-looking environments.
 
-:MAP15        : Secluded Stronghold
+:MAP15			: Secluded Stronghold
 :-------------------------------------------------------------------------------
-*Theme        : Outdoor open goth castle
-*Inspiration  : Primarily Castle level from 2004 video game Painkiller, Scythe2 maps 01-05
-*Comments     : Rather atypical map. On automap it might look somewhat similar to MAP14, but actually is very different. At some points in the past I disliked this map as well, but eventually I came to a conclusion that it is actually quite good, maybe mainly because of its rather unique open layout. I wanted to convey the feeling of mysteriousness of secret exit. So you can see the exit sign in the central keep, but you have to hunt down several switches on the castle walls and the red key to reach it.
+*Theme			: Outdoor open goth castle
+*Inspiration	: Primarily Castle level from 2004 video game Painkiller, Scythe2 maps 01-05
+*Comments		: Rather atypical map. On automap it might look somewhat similar to MAP14, but actually is very different. At some points in the past I disliked this map as well, but eventually I came to a conclusion that it is actually quite good, maybe mainly because of its rather unique open layout. I wanted to convey the feeling of mysteriousness of secret exit. So you can see the exit sign in the central keep, but you have to hunt down several switches on the castle walls and the red key to reach it.
 
-:MAP16        : Malleus Maleficarum
+:MAP16			: Malleus Maleficarum
 :-------------------------------------------------------------------------------
-*Theme        : Gothic town
-*Inspiration  : Town level from Painkiller, Scythe2 maps 01-05, some parts of KS map29
-*Comments     : I wanted to create a gothic/town-themed map inspired by the Town level from Painkiller, with the square that is in the above mentioned Painkiller level close to the end. The remake of the square makes a focal point of the map with two main routes leading from it and nearing the ending you have to come back. Again there are multiple routes to take. This is another example of a map where I used a chequered paper to draw the layout - it helped especially in the eastern area that turned out pretty well imho.
+*Theme			: Gothic town
+*Inspiration	: Town level from Painkiller, Scythe2 maps 01-05, some parts of KS map29
+*Comments		: I wanted to create a gothic/town-themed map inspired by the Town level from Painkiller, with the square that is in the above mentioned Painkiller level close to the end. The remake of the square makes a focal point of the map with two main routes leading from it and nearing the ending you have to come back. Again there are multiple routes to take. This is another example of a map where I used a chequered paper to draw the layout - it helped especially in the eastern area that turned out pretty well imho.
 
-:MAP17        : The Eerie Keep
+:MAP17			: The Eerie Keep
 :-------------------------------------------------------------------------------
-*Theme        : Gothic town, gothic castle
-*Inspiration  : Mainly Bloodstain map16 - Malleus Maleficiarum :-) Besides that some Quake 1 maps, but none in particular. And of course Bono Publico stairway in Hradec Králové - see the comments.
-*Comments     : For quite a while I had wanted to make another map with gothic/town theme with a characteristic central part, this time inspired by an edifice in Hradec Králové, specifically Bono Publico, an indoor stairway that interconnects the town's main square with a not unimportant street. The part of the map inspired by it is the stairway corridor you are facing right at the start. Actually it is the first part of the map I made. And I was pretty sure I wanted to put those lanterns hanging from the ceiling there. :-) So I had to do some texture-making to achieve it, and luckily it turned out quite well. That's it about the stairway. Other than that, I'm really satisfied with this map. It is quite a complex multi-pathwayed one with many interconnections and some rooms whose design I'm really proud of - and outdoor areas I find even better. :-)
+*Theme			: Gothic town, gothic castle
+*Inspiration	: Mainly Bloodstain map16 - Malleus Maleficiarum :-) Besides that some Quake 1 maps, but none in particular. And of course Bono Publico stairway in Hradec Králové - see the comments.
+*Comments		: For quite a while I had wanted to make another map with gothic/town theme with a characteristic central part, this time inspired by an edifice in Hradec Králové, specifically Bono Publico, an indoor stairway that interconnects the town's main square with a not unimportant street. The part of the map inspired by it is the stairway corridor you are facing right at the start. Actually it is the first part of the map I made. And I was pretty sure I wanted to put those lanterns hanging from the ceiling there. :-) So I had to do some texture-making to achieve it, and luckily it turned out quite well. That's it about the stairway. Other than that, I'm really satisfied with this map. It is quite a complex multi-pathwayed one with many interconnections and some rooms whose design I'm really proud of - and outdoor areas I find even better. :-)
 
-:MAP18        : Terracotta Palace
+:MAP18			: Terracotta Palace
 :-------------------------------------------------------------------------------
-*Theme        : Terracotta town and palace
-*Inspiration  : Quake E1M5 and mainly E4M4
-*Comments     : I believe Doom really lacks Quake 1-style terracotta-themed maps badly. And I came to a conclusion Bloodstain needs one badly. This is it. I know that the texture inventory here is really thin, and some people may say that it would need some other textures to enliven it, but to use almost exclusively Quake's terracotta textures was actually my intention. Besides the texture choice, layout is rather open and again complex with various intercon nections.
+*Theme			: Terracotta town and palace
+*Inspiration	: Quake E1M5 and mainly E4M4
+*Comments		: I believe Doom really lacks Quake 1-style terracotta-themed maps badly. And I came to a conclusion Bloodstain needs one badly. This is it. I know that the texture inventory here is really thin, and some people may say that it would need some other textures to enliven it, but to use almost exclusively Quake's terracotta textures was actually my intention. Besides the texture choice, layout is rather open and again complex with various intercon nections.
 
-:MAP19        : Icebreaker
+:MAP19			: Icebreaker
 :-------------------------------------------------------------------------------
-*Theme        : Ice and metallic base
-*Inspiration  : Requiem map03, PL2 map25
-*Comments     : Started mainly as a snow-themed map, this one turned to have way more base in it that initially intended. The metallic sub-theme can be reminiscent of the maps mentioned above and to be honest, the two maps are probably the reason why I strayed to this theme. The metallic base building in the central area has some rather unusual and nice structures in the roof parts or how would you call it.
+*Theme			: Ice and metallic base
+*Inspiration	: Requiem map03, PL2 map25
+*Comments		: Started mainly as a snow-themed map, this one turned to have way more base in it that initially intended. The metallic sub-theme can be reminiscent of the maps mentioned above and to be honest, the two maps are probably the reason why I strayed to this theme. The metallic base building in the central area has some rather unusual and nice structures in the roof parts or how would you call it.
 
-:MAP20        : The Great Furnace
+:MAP20			: The Great Furnace
 :-------------------------------------------------------------------------------
-*Theme        : Ice, grey caverns, metallic structures, lava
-*Inspiration  : Fortress town from Heroes of Might & Magic V
-*Comments     : Although it might seem a bit strange, this map's aesthetics is really heavily influenced by Heroes V's Fortress town and its surroundings - sort of Nordic snowy landscape at the beginning and a lot of lava are probably the first things the player notices in this map. Initially the caverns part was meant to look somewhat different and mainly, the metallic forge part was intended to be more reminiscent of the Fortress town, being like a huge deep hole in the snowy landscape with the player descending deeper, but it would probably comprise gameplay and layout problems, so I abandoned this idea. However, the map still contains a few rather unusual Doom engine tricks that can hopefully give joy to the player. Nearing the end there is a sort of BFG rape-fest, which is not really my style, but hey, it's the end of the episode.
+*Theme			: Ice, grey caverns, metallic structures, lava
+*Inspiration	: Fortress town from Heroes of Might & Magic V
+*Comments		: Although it might seem a bit strange, this map's aesthetics is really heavily influenced by Heroes V's Fortress town and its surroundings - sort of Nordic snowy landscape at the beginning and a lot of lava are probably the first things the player notices in this map. Initially the caverns part was meant to look somewhat different and mainly, the metallic forge part was intended to be more reminiscent of the Fortress town, being like a huge deep hole in the snowy landscape with the player descending deeper, but it would probably comprise gameplay and layout problems, so I abandoned this idea. However, the map still contains a few rather unusual Doom engine tricks that can hopefully give joy to the player. Nearing the end there is a sort of BFG rape-fest, which is not really my style, but hey, it's the end of the episode.
 
-:MAP21        : Gateway to Purgatory
+:MAP21			: Gateway to Purgatory
 :-------------------------------------------------------------------------------
-*Theme        : White hell, blood, dark castle
-*Inspiration  : Ultimate Doom E4M6
-*Comments     : An opening of the third episode. The level starts in a white rocky crag, soon you encounter some hellish buildings, nothing really special regarding the gameplay etc. But what I'm kinda proud of is the black cathedral where the level ends - especially the ceiling structure and the outer buttress.
+*Theme			: White hell, blood, dark castle
+*Inspiration	: Ultimate Doom E4M6
+*Comments		: An opening of the third episode. The level starts in a white rocky crag, soon you encounter some hellish buildings, nothing really special regarding the gameplay etc. But what I'm kinda proud of is the black cathedral where the level ends - especially the ceiling structure and the outer buttress.
 
-:MAP22        : Chambers of Suffering
+:MAP22			: Chambers of Suffering
 :-------------------------------------------------------------------------------
-*Theme        : Red hell, blood, dark castle
-*Inspiration  : Various hellish-themed maps and Doom E3M4
-*Comments     : So, how Doom E3M4? Well, besides the name that pays a slight reference to 'House of Pain', this map contains three areas that are modern more hell-like remakes of the most defining (or at least in my opinion) areas from the above mentioned E3M4. Well, I kind of modified them to my taste, but I think that they are rather recognizable than not. There are also a few 'execution devices' to kill Imps (to make the title more fitting :-)). The layout of this map isn't cool as it is totally straightforward map with no digressions.
+*Theme			: Red hell, blood, dark castle
+*Inspiration	: Various hellish-themed maps and Doom E3M4
+*Comments		: So, how Doom E3M4? Well, besides the name that pays a slight reference to 'House of Pain', this map contains three areas that are modern more hell-like remakes of the most defining (or at least in my opinion) areas from the above mentioned E3M4. Well, I kind of modified them to my taste, but I think that they are rather recognizable than not. There are also a few 'execution devices' to kill Imps (to make the title more fitting :-)). The layout of this map isn't cool as it is totally straightforward map with no digressions.
 
-:MAP23        : The Perdition
+:MAP23			: The Perdition
 :-------------------------------------------------------------------------------
-*Theme        : White hell, blood, dark castle
-*Inspiration  : Quake E1M5 and E4M4
-*Comments     : From red hell back to white hell. Once again, probably nothing in particular to say about this map. It's rather spontaneously made one. There are a few moments that can be memorable (usually when getting a key), but nothing that was really planned in advance. However, the map is not bad at all, I think.
+*Theme			: White hell, blood, dark castle
+*Inspiration	: Quake E1M5 and E4M4
+*Comments		: From red hell back to white hell. Once again, probably nothing in particular to say about this map. It's rather spontaneously made one. There are a few moments that can be memorable (usually when getting a key), but nothing that was really planned in advance. However, the map is not bad at all, I think.
 
-:MAP24        : Sulfur
+:MAP24			: Sulfur
 :-------------------------------------------------------------------------------
-*Theme        : Red hell, lava
-*Inspiration  : KS map11, Scythe maps 21-24
-*Comments     : Well, again no really cool backstory about this map. I think that some paper-drawing preceded the process of making this map, but in the end it probably digressed a bit from it. But the intended idea of being mostly red rock outdoor map with some dark rock areas that included some heaps of sandy textures that should embody sulfur was accomplished. But many parts of this map were a result of spontaneous map-drawing.
+*Theme			: Red hell, lava
+*Inspiration	: KS map11, Scythe maps 21-24
+*Comments		: Well, again no really cool backstory about this map. I think that some paper-drawing preceded the process of making this map, but in the end it probably digressed a bit from it. But the intended idea of being mostly red rock outdoor map with some dark rock areas that included some heaps of sandy textures that should embody sulfur was accomplished. But many parts of this map were a result of spontaneous map-drawing.
 
-:MAP25        : The Disciples of Babel
+:MAP25			: The Disciples of Babel
 :-------------------------------------------------------------------------------
-*Theme        : Dark hellish town and palaces, bloody sewers
-*Inspiration  : Various hellish castle-themed maps, Scythe2 map27 probably the most
-*Comments     : This map I consider to be one of the two great masterpieces I made for Bloodstain. Huge, complex, detailed. It is likely to take an hour or more to finish. I wanted this map to be hellish but completely without the traditional use of ROCKRED texture. It had worked out really well in my opinion. Although very large map with quite many monsters and many possible routes to take, I invested a plenty of time into creating some rather nice sceneries. There are also a few tricks used that are really uncommon in Doom, for example fake second floor above the gate to the final arena or the exit lift, which is an effect cool as fuck in vanilla format imho. The first room is in fact retextured version of the initial room from The Fallen, my map28 from Zones of Fear, but I started makind this map by redoing that room, so it is this map's heart, so to speak. :-)
+*Theme			: Dark hellish town and palaces, bloody sewers
+*Inspiration	: Various hellish castle-themed maps, Scythe2 map27 probably the most
+*Comments		: This map I consider to be one of the two great masterpieces I made for Bloodstain. Huge, complex, detailed. It is likely to take an hour or more to finish. I wanted this map to be hellish but completely without the traditional use of ROCKRED texture. It had worked out really well in my opinion. Although very large map with quite many monsters and many possible routes to take, I invested a plenty of time into creating some rather nice sceneries. There are also a few tricks used that are really uncommon in Doom, for example fake second floor above the gate to the final arena or the exit lift, which is an effect cool as fuck in vanilla format imho. The first room is in fact retextured version of the initial room from The Fallen, my map28 from Zones of Fear, but I started makind this map by redoing that room, so it is this map's heart, so to speak. :-)
 
-:MAP26        : The Corrupted Mill
+:MAP26			: The Corrupted Mill
 :-------------------------------------------------------------------------------
-*Theme        : Dark base, lava
-*Inspiration  : Idoom mapping contest - Quake World map07, Plutonia map04, NDCP2 map01, some Doom 3 stuff too
-*Comments     : You return from Hell back to some darker and hellish base. The opening sequence is just run-through and then Tyson-like punch-out part in the sewers comes. It's not really easy, but it is doable. The part where you pick up the SSG and afterwards the yellow key was originally a bit cooler, with some pretty complicated tag combos that I couldn't believe were working. Then during the final testing with complevel 2 I found out they don't work that well - actually not at all with complevel 2. So I had to redo the room a bit. Well, it's not that different and at least it does work.
+*Theme			: Dark base, lava
+*Inspiration	: Idoom mapping contest - Quake World map07, Plutonia map04, NDCP2 map01, some Doom 3 stuff too
+*Comments		: You return from Hell back to some darker and hellish base. The opening sequence is just run-through and then Tyson-like punch-out part in the sewers comes. It's not really easy, but it is doable. The part where you pick up the SSG and afterwards the yellow key was originally a bit cooler, with some pretty complicated tag combos that I couldn't believe were working. Then during the final testing with complevel 2 I found out they don't work that well - actually not at all with complevel 2. So I had to redo the room a bit. Well, it's not that different and at least it does work.
 
-:MAP27        : Slaughterworks
+:MAP27			: Slaughterworks
 :-------------------------------------------------------------------------------
-*Theme        : Dark base, lava, flesh, blood
-*Inspiration  : NDCP2 map01, PL2 map19 and 27. The idea for the Arch-Vile resurrecting the dead army at the map's end comes from BTSX_E1 map06 
-*Comments     : Another map in dark base style, and quite a good one imho, not entirely whole in the same style. The last fight is quite unique I think. Not that monsters initially dead and then being reanimated by ArchViles is an idea of mine, as mentioned above, it was inspired by Back to Saturn X, but here it is a whole BFG rape-fest that carries out in this spirit. After the fight there originally was a little puzzle with a don't-step-on-the-wrong-tile puzzle, but I have come to a conclusion that it might be considered a little bit retarded thing to put into a Doom wad like this, so I removed it and just put timed doors there.
+*Theme			: Dark base, lava, flesh, blood
+*Inspiration	: NDCP2 map01, PL2 map19 and 27. The idea for the Arch-Vile resurrecting the dead army at the map's end comes from BTSX_E1 map06 
+*Comments		: Another map in dark base style, and quite a good one imho, not entirely whole in the same style. The last fight is quite unique I think. Not that monsters initially dead and then being reanimated by ArchViles is an idea of mine, as mentioned above, it was inspired by Back to Saturn X, but here it is a whole BFG rape-fest that carries out in this spirit. After the fight there originally was a little puzzle with a don't-step-on-the-wrong-tile puzzle, but I have come to a conclusion that it might be considered a little bit retarded thing to put into a Doom wad like this, so I removed it and just put timed doors there.
 
-:MAP28        : Descent into Madness
+:MAP28			: Descent into Madness
 :-------------------------------------------------------------------------------
-*Theme        : Flesh, blood, dark base
-*Inspiration  : Phyrexia from Magic: the Gathering; Clive Barker's Jericho, Hellraiser films, The Fly; simply various body-horror films and other media that revolve around combining flesh with metal; Idea for the portals comes from a map in Stronghold: On the Edge of Chaos.
-*Comments     : I wanted map28 to be a mixture of a dark metallic base and flesh, skin, and intestines textures. To look somewhat Phyrexian, for those who have an idea what that means. :-D I also wanted to add a theme of warped reality to make the title more fitting. I achieved it by including those portals that embody sort of rifts between two dimensions. Another thing I must mention is the secret with the red key. I had carried an idea for it in my head for about two years before realizing it. I wanted to add a certain mysterious feel to it too as the red key allows you to get to a few other secret locations. The title comes from a Magic: the Gathering card.
+*Theme			: Flesh, blood, dark base
+*Inspiration	: Phyrexia from Magic: the Gathering; Clive Barker's Jericho, Hellraiser films, The Fly; simply various body-horror films and other media that revolve around combining flesh with metal; Idea for the portals comes from a map in Stronghold: On the Edge of Chaos.
+*Comments		: I wanted map28 to be a mixture of a dark metallic base and flesh, skin, and intestines textures. To look somewhat Phyrexian, for those who have an idea what that means. :-D I also wanted to add a theme of warped reality to make the title more fitting. I achieved it by including those portals that embody sort of rifts between two dimensions. Another thing I must mention is the secret with the red key. I had carried an idea for it in my head for about two years before realizing it. I wanted to add a certain mysterious feel to it too as the red key allows you to get to a few other secret locations. The title comes from a Magic: the Gathering card.
 
-:MAP29        : Ov Fire and the Void
+:MAP29			: Ov Fire and the Void
 :-------------------------------------------------------------------------------
-*Theme        : Black hell, lava
-*Inspiration  : Doom 2 map29, Plutonia maps 23 and 27, Plutonia Revisited map23, Scythe2 map26, some Speed of Doom maps too I guess. Besides the Doom maps, I think had been inspired by Underworld and Stone Pit levels from Painkiller: Battle out of Hell, and Doom 3 hell. And I believe that some music I listened to at some points while creating the map inspired me quite a lot too - namely the bands are mainly Obscure Sphinx and, as the title implies, Behemoth; but I really adore these two bands anyway, but while listening to them I just got some good ideas and the mapping went really well :-)
-*Comments     : I had quite a clear idea about the theme of the last two maps of Bloodstain. I converted RROCK1 and ROCKRED textures to shades of gray and darkened them to get what you see all around you in these two maps. I certainly like this Black hell theme and I think it makes the megawad's ending a bit more unique than those mainstream REDROCK textures. :-) And darker too, of course. Which correlates with the __BLACK textures which invokes the feeling of total darkness and void. These dark textures are combined with lava that adds some light to the darkness of black rock and black hellish buildings. Overall, I consider the name 'Ov Fire and the Void' to fit nicely. Or possibly that this map fits the name well? I'm not completely sure if the idea for the map's theme or decision to name the map after that wonderful Behemoth song came first. Be it one way or the other, I find this map epic as fuck and I'm really proud of it. Maybe even more than of map25. :-)
+*Theme			: Black hell, lava
+*Inspiration	: Doom 2 map29, Plutonia maps 23 and 27, Plutonia Revisited map23, Scythe2 map26, some Speed of Doom maps too I guess. Besides the Doom maps, I think had been inspired by Underworld and Stone Pit levels from Painkiller: Battle out of Hell, and Doom 3 hell. And I believe that some music I listened to at some points while creating the map inspired me quite a lot too - namely the bands are mainly Obscure Sphinx and, as the title implies, Behemoth; but I really adore these two bands anyway, but while listening to them I just got some good ideas and the mapping went really well :-)
+*Comments		: I had quite a clear idea about the theme of the last two maps of Bloodstain. I converted RROCK1 and ROCKRED textures to shades of gray and darkened them to get what you see all around you in these two maps. I certainly like this Black hell theme and I think it makes the megawad's ending a bit more unique than those mainstream REDROCK textures. :-) And darker too, of course. Which correlates with the __BLACK textures which invokes the feeling of total darkness and void. These dark textures are combined with lava that adds some light to the darkness of black rock and black hellish buildings. Overall, I consider the name 'Ov Fire and the Void' to fit nicely. Or possibly that this map fits the name well? I'm not completely sure if the idea for the map's theme or decision to name the map after that wonderful Behemoth song came first. Be it one way or the other, I find this map epic as fuck and I'm really proud of it. Maybe even more than of map25. :-)
 
-:MAP30        : The Deepest Abyss
+:MAP30			: The Deepest Abyss
 :-------------------------------------------------------------------------------
-*Theme        : Black hell
-*Inspiration  : Mostly Bloodstain map29 I suppose :-) And various maps 30 probably, Plutonia2 the most I guess 
-*Comments     : I wanted to have the final map in the same style as map29 but even a little bit darker, so to speak. That has been for certain for quite a long time. However, one thing I wasn't really sure before finishing the map was its format. I had an idea of making it in Boom format to have conveyor belts for voodoo dolls at disposal to be able to make various tag sequences, but in the end I abandoned this idea, both for the consistency of the megawad, and because I kind of lost inspiration. Or because I was lazy or something. I don't know... :-D But the fact is that it stayed in limit-removing Doom2 format, maybe for the best. After short intro-part you get to dark ruins filled with Arch-Viles, where you have to find eight switches for the main switch to do something and then you teleport to the final arena. Regarding the boss fight, I initially wanted something more unique, but ended up creating just another Icon of Sin variant... hopefully not so dull, there is no lift and Icon of Sin you must shoot into DBRAIN1-filled hole in the middle of its forehead, but it definitely isn't anything hyper-miraculous. :-D I just had an idea about needing to get all three keys and then nothing really special I think. Well, I've definitely seen worse boss fights... :-D By the way, if you are interested, check the inside of the boss's head... :-)
+*Theme			: Black hell
+*Inspiration	: Mostly Bloodstain map29 I suppose :-) And various maps 30 probably, Plutonia2 the most I guess 
+*Comments		: I wanted to have the final map in the same style as map29 but even a little bit darker, so to speak. That has been for certain for quite a long time. However, one thing I wasn't really sure before finishing the map was its format. I had an idea of making it in Boom format to have conveyor belts for voodoo dolls at disposal to be able to make various tag sequences, but in the end I abandoned this idea, both for the consistency of the megawad, and because I kind of lost inspiration. Or because I was lazy or something. I don't know... :-D But the fact is that it stayed in limit-removing Doom2 format, maybe for the best. After short intro-part you get to dark ruins filled with Arch-Viles, where you have to find eight switches for the main switch to do something and then you teleport to the final arena. Regarding the boss fight, I initially wanted something more unique, but ended up creating just another Icon of Sin variant... hopefully not so dull, there is no lift and Icon of Sin you must shoot into DBRAIN1-filled hole in the middle of its forehead, but it definitely isn't anything hyper-miraculous. :-D I just had an idea about needing to get all three keys and then nothing really special I think. Well, I've definitely seen worse boss fights... :-D By the way, if you are interested, check the inside of the boss's head... :-)
 
-:MAP31        : Labyrinthe
+:MAP31			: Labyrinthe
 :-------------------------------------------------------------------------------
-*Theme        : Hedge maze, underground tunnels
-*Inspiration  : Hedge maze is probably mostly inspired by the hedge maze at Lara Croft's mansion from Tomb Raider II :-) Besides that the maze from Harry Potter and the Goblet of Fire movie :-D Underground tunnels are inspired by various dungeons from Might & Magic series
-*Comments     : Yup, I wanted to make a map containing a hedge maze; at the beginning you can see what seems to be the exit from the maze, but when you reach it, well, you'll see- Once again, I wanted the super secret exit to exert sort of mysterious influence and look epic. Hopefully, I've succeeded. :-)
+*Theme			: Hedge maze, underground tunnels
+*Inspiration	: Hedge maze is probably mostly inspired by the hedge maze at Lara Croft's mansion from Tomb Raider II :-) Besides that the maze from Harry Potter and the Goblet of Fire movie :-D Underground tunnels are inspired by various dungeons from Might & Magic series
+*Comments		: Yup, I wanted to make a map containing a hedge maze; at the beginning you can see what seems to be the exit from the maze, but when you reach it, well, you'll see- Once again, I wanted the super secret exit to exert sort of mysterious influence and look epic. Hopefully, I've succeeded. :-)
 
-:MAP32        : Heavenly
+:MAP32			: Heavenly
 :-------------------------------------------------------------------------------
-*Theme        : Heaven :-)
-*Inspiration  : Might & Magic VIII - Plane of Air
-*Comments     : Yup, really Heaven. When you play it in a port that supports MAPINFO it's fine. But e.g. in PrBoom there is a problem - I didn't find out if it's possible to change the sky texture in Doom2 format using DeHackEd. But if you can cope with the sky in Heaven being red as in whole Episode 3, then enjoy those happy-looking textures and structures :-) BTW I know I could've squeezed more out of it, but I somehow found this theme somewhat weird to follow. Maybe with a wider texture inventory and if more monsters fit there it could be better, but dunno. I kind of lost my imaginativness here... :-)
+*Theme			: Heaven :-)
+*Inspiration	: Might & Magic VIII - Plane of Air
+*Comments		: Yup, really Heaven. When you play it in a port that supports MAPINFO it's fine. But e.g. in PrBoom there is a problem - I didn't find out if it's possible to change the sky texture in Doom2 format using DeHackEd. But if you can cope with the sky in Heaven being red as in whole Episode 3, then enjoy those happy-looking textures and structures :-) BTW I know I could've squeezed more out of it, but I somehow found this theme somewhat weird to follow. Maybe with a wider texture inventory and if more monsters fit there it could be better, but dunno. I kind of lost my imaginativness here... :-)

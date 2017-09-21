@@ -2,11 +2,11 @@ $KEY:P=SHELL:doom.bat doom64ex DOOM64.WAD
 
 :DOOM 64
 :===============================================================================
-*[P] Play                        *[W] Website - TC [L] Website - Lost Levels
+*[P] Play						*[W] Website - TC [L] Website - Lost Levels
 :-------------------------------------------------------------------------------
-:Released : *1997>03>17    Author : *Midway Games Inc., iD
-:Levels   : *32             Modes : *Single
-:Requires : *doom64ex    Includes : *+Sound +Music +Graphics +Patches
+:Released : *1997>03>17	  Author : *Midway Games Inc., iD
+:Levels   : *32			   Modes : *Single
+:Requires : *doom64ex	Includes : *+Sound +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES NON-REDISTRIBUTABLE N64 ROM:

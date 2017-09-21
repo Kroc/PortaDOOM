@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 
 :Black Tower                                      (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                        *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26    Author : _Sverre André Kvernmo (Cranium)
-:Levels   : *1              Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla     Includes : *None
+:Released : *1995>12>26	  Author : _Sverre André Kvernmo (Cranium)
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "BLACKTWR.WAD":
@@ -28,22 +28,22 @@ In "Black Tower" you're nearing the end of your journey. You and Chagrin, the ru
  
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
+*Base				: An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
 
-			  - "Nukemine" (old I know, but the supreme numero uno at it's hayday)
-			  - "Castle of the Renegades".\\Best castle-type wad I've seen.
-			  - "Eternity"
-			  - "Dante's Gate"
-			  - The secret level in the AlienDoom episode was groovy as well, and "Cleimos" had some nice touches.
-                          
-*Build Time               : Don't ask, really! First baby steps at "wadding" taken in the summer of 94. Almost dropped out of university for this bloody obsession. One reason for surviving was that I handed in a wad of my campus as one of my projects. <G>
+					- "Nukemine" (old I know, but the supreme numero uno at it's hayday)
+					- "Castle of the Renegades".\\Best castle-type wad I've seen.
+					- "Eternity"
+					- "Dante's Gate"
+					- The secret level in the AlienDoom episode was groovy as well, and "Cleimos" had some nice touches.
 
-			    I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
-                          
-*Editor(s) used           : DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
-*Bugs                     : No way. _Shawn_ has plucked them all out and forced me to eat them. I hate you if you find some! ;)
+*Build Time			: Don't ask, really! First baby steps at "wadding" taken in the summer of 94. Almost dropped out of university for this bloody obsession. One reason for surviving was that I handed in a wad of my campus as one of my projects. <G>
 
-			    Hope you enjoy the wad.
+					  I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
+
+*Editor(s) used		: DoomED 4, DEU2, BSP1.1, DeepBSP and idBSP.
+*Bugs				: No way. _Shawn_ has plucked them all out and forced me to eat them. I hate you if you find some! ;)
+
+					  Hope you enjoy the wad.
 
 :Credits:
 :-------------------------------------------------------------------------------

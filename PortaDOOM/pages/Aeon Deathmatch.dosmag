@@ -5,11 +5,11 @@ $KEY:2=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-
 
 :Aeon Deathmatch                                    * 2016 Cacoward winner! *
 :===============================================================================
-                                 *[T] .txt [W] Website
+								*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>11>18    Author : *Various (see credits)
-:Levels   : *33             Modes : *Last Man Standing 2-64 players, Deathmatch
-:Requires : *Zandronum   Includes : *+Sounds +Music +Graphics
+:Released : *2016>11>18	  Author : *Various (see credits)
+:Levels   : *33			   Modes : *Last Man Standing 2-64 players, Deathmatch
+:Requires : *Zandronum	Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
 $KEY:D=URL:http://doomseeker.drdteam.org/
@@ -24,10 +24,10 @@ $KEY:D=URL:http://doomseeker.drdteam.org/
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                   : Blank Screens
-*Build Time             : 1 Year
-*Editor(s) used         : Many
-*May Not Run With...    : Anything that does not support 3D Floors + Hexen and UDMF Format
+*Base					: Blank Screens
+*Build Time				: 1 Year
+*Editor(s) used			: Many
+*May Not Run With...	: Anything that does not support 3D Floors + Hexen and UDMF Format
 
 :Credits
 :-------------------------------------------------------------------------------

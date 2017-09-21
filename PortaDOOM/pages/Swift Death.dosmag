@@ -4,11 +4,11 @@ $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 
 :Swift Death                                        * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                       *[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>11>11    Author : _franckFRAG_ (guest mappers: _JCD_ & _Memfis_)
-:Levels   : *32             Modes : *Single, Co-op, Deathmatch
-:Requires : *boom        Includes : *+Sounds +Music +Graphics +Patches +Demos
+:Released : *2015>11>11	  Author : _franckFRAG_ (guest mappers: _JCD_ & _Memfis_)
+:Levels   : *32			   Modes : *Single, Co-op, Deathmatch
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Swift Death is an extremely hard megawad, calibrated for speedrunners. I recommanded for novice players to play in "easy" ("Toilet Break", or "Soft Event"). SD is realized in speedmapping sessions, for the most parts of maps. These maps are generally small, and contain on average 75 monsters. They are also compatible for the duel / deathmatch.
@@ -17,10 +17,10 @@ Swift Death is an extremely hard megawad, calibrated for speedrunners. I recomma
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base                     : New from scratch
-*Build Time               : With some enormous breaks of plenty months => 4 years
-*Editor(s) used           : DooM Builder 1.68, EXtendable Wad Editor, Adobe Photoshop CS6
-*Known Bugs               : If you find any bugs, let me know.
+*Base				: New from scratch
+*Build Time			: With some enormous breaks of plenty months => 4 years
+*Editor(s) used		: DooM Builder 1.68, EXtendable Wad Editor, Adobe Photoshop CS6
+*Known Bugs			: If you find any bugs, let me know.
 
 :Credits:
 :-------------------------------------------------------------------------------
