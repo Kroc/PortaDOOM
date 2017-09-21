@@ -1436,7 +1436,18 @@ SUB formatLine (indent%, src$)
                         ws% = ws% + sync%
                         'set the next line indent to the current position
                         next_indent% = src_col%
-
+                        'clear the bold/italic state;
+                        'this removes the need for a *lot* of fiddly typing
+                        IF is_bold` = TRUE THEN
+                            newline$ = newline$ + CHR$(CTL_ESCAPE) _
+                                     + CHR$(CTL_BOLD)
+                            is_bold` = FALSE
+                        END IF
+                        IF is_italic` = TRUE THEN
+                            newline$ = newline$ + CHR$(CTL_ESCAPE) _
+                                     + CHR$(CTL_ITALIC)
+                            is_italic` = FALSE
+                        END IF
                     END IF
                 END IF
 
