@@ -1,0 +1,41 @@
+This is a Doom .LMP "Competition" Entry
+
+e2nm0452.txt
+e2nm0452.zip
+
+e2nm0452.lmp
+
+Recorded using Ultimate Doom Version 1.9
+Ultimate Doom -PlayDemo with Version 1.9
+
+Ultimate Doom - "The Shores of Hell" on Nightmare! skill
+
+E2M1 - Deimos Anomaly      -  :45
+E2M2 - Containment Area    -  :17
+E2M3 - Refinery            -  :52
+E2M4 - Deimos Lab          -  :46
+E2M5 - Command Center      -  :37
+E2M6 - Halls of the Damned - 1:22
+E2M7 - Spawning Vats       -  :13
+E2M8 - Tower of Babel      - excluded
+
+Total - 4:52
+
+C-N entry #200(?), movie run #34.
+
+Includes the e2m7 RJ, and that's about it.
+Not having sound is an inconvenience
+without certain audio cues, but at the
+same time rather relaxing for speedruns.
+
+Choice mp3s for this run:
+Deus Ex - Chateau
+Deus Ex - Synapse (the Hong Kong music)
+
+Those are my two favorite pieces from the
+game, available for download at Planet
+Deus Ex.  Other pieces were a lot of misc
+stuff from different sources.
+
+Author: Drew DeVore "stx-Vile"
+E-mail: drwdevore@aol.com

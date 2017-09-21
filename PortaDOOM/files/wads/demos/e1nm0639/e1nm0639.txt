@@ -1,0 +1,74 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: NM-Speed
+Map: Episode 1 (E1M1-E1M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 6:39 (06:41.63)
+Time With    M8: 7:52 (07:54.80)
+
+----------------------------------------------------------------
+Level			Map	Time		e1nm0646
+
+Hangar                  E1M1 -	0:13		 0:00
+Nuclear Plant  	        E1M2 -	0:39		+0:02
+Toxin Refinery 	        E1M3 -	0:55		+0:02
+Command Control		E1M4 -	0:19		-0:03
+Phobos Lab 	        E1M5 -	1:28		+0:02
+Central Processing	E1M6 -	1:28		-0:05
+Computer Station	E1M7 -	1:37		-0:05
+Phobos Anomaly		E1M8 -	1:13		-0:36
+----------------------------------------------------------------
+			TOTAL -	7:52		-0:43
+E1M8 comparison is not relevant. E1M1-E1M7 time is improved by 7 seconds.
+
+Description: There you have it, proof of the existence of some higher being, 
+and turns out whatever that might be really likes doom, because there is no 
+way this should have ever made it to the end. There was so much that went 
+wrong in this run, but I somehow had just enough health to get through. 
+
+E1M1: It's not difficult to get 12 seconds here, but I can't be bothered 
+to reset over something like that on nightmare. Usually I reset if my 
+armor drops below 160%, because I'm unlikely to reach E1M3 with enough 
+health\armor to make it even worth attempting. 
+
+E1M2: Annoying map due to all the hitscan since again I need to keep
+some health\armor for the next map. Straightforward otherwise, not a 
+good time though.
+
+E1M3: Very difficult map, not too bad if you have 100\100 at least. 
+I was thinking to myself that this is the luckiest run to the blue key
+I've ever had, I took almost no damage during some parts which is crazy.
+Manage to survive just barely in the end. 55 seconds is a good time for me,
+still 2 seconds lost.
+
+E1M4: Very easy map, because I almost never failed the jump to yellow key.
+Sometimes I would die at the yellow key door because it didn't open for 
+several seconds. Decent time.
+
+E1M5: Demons... I really had enough of them when I did E2 and E3, but at least
+that was on the first map. This map is very hard to get a good time on UV, on 
+nightmare the yellow key door room is a bit easier, but the rest is a pain.
+Should have died a few times on this map. Terrible time.
+
+E1M6: I was 100% sure I would never make it with what I had planned to do here,
+as my health was too low. I really didn't even bother practicing a different method 
+since I figured it would be a waste of time because it would be impossible to 
+get any consistency. I know there is some health nearby and so if I grab it
+then at least I would have a chance greater than 0% to make it, then somehow the
+shotgunner was perfectly placed under that wall. 
+
+Got lucky again at the blue key area, didn't take too much damage. 
+Lucky after yellow key as well, then there is plenty of health, though
+I need to keep that for the next map. It's quite easy to rocket yourself 
+during the last part of the map. Time is ok.
+
+E1M7: Decent health for this map, could have been better though. I noticed
+you could fire a rocket at the imp by the red key, might even be useful in UV.
+I expect to save time easily on this map, time could have been even better.
+
+E1M8: I accidently did really well on this map, I had some rockets left and 
+the barons even got close to one another. I also did the jump to the exit, 
+on nightmare that was something I didn't want to do because spectres will
+kill you very very quickly, but I had enough space between them to do so 
+this time.
+

@@ -1,0 +1,84 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: NM-Speed
+Map: Episode 3 (E3M1-E3M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 4:08 (04:13.03)
+Time With    M8: 4:21 (04:26.23)
+
+----------------------------------------------------------------
+Level			Map	Time		e3nm-410
+
+Hell Keep               E3M1 -	0:36		 0:00
+Slough of Despair  	E3M2 -	0:17		-0:01
+Pandemonium  	        E3M3 -	0:31		-0:01
+House of Pain 		E3M4 -	0:47		-0:02
+Unholy Cathedral	E3M5 -	0:26		-0:01
+Mt. Erebus 	        E3M6 -	0:29		+0:02
+Gate to Limbo 	        E3M7 -	1:02		+0:01
+Dis 		        E3M8 -	0:13		 0:00
+----------------------------------------------------------------
+			TOTAL -	4:21		-0:02
+E3M8 comparison is not relevant. E3M1-E3M7 time is improved by 2 second.
+
+Description: Usually I don't do too many runs per day for something like this, 
+however before I got this time I managed to lose 3 runs at the very end of E3M7.
+2 of them were to failing the jump to the exit, the 3rd 1 was .11 seconds that
+tied the previous record by stx-vile at 5:10. So what happens when I am so close
+to getting it I just have to keep going, no matter how annoying it gets to fail 
+over and over again. 
+
+Both E3M6 and E3M7 are terrible, but getting a better start than this is difficult.
+Then again this really isn't that hard of a run, once you know what you are doing.
+
+E3M1: At the start of the map you can do a linedef skip to grab the shotgun and get
+out quicker. There are actually different ways you can skip this linedef, since you are 
+running west you have a chance of skipping it if you run fast enough, however that is
+very unreliable. The second way is to actually run around it.
+
+The main reason this run is annoying is because of the demons that comes after.
+Usually you'll take some fireballs getting through the door and then the demon will 
+push you far enough back so you take more fireballs, unless you want him to bite you.  
+Of course that isn't too much of a problem if you kill him in 2 shotgun shells, but 
+obviously something like that never really happens (ok, maybe 1 out of 4 times).
+
+The imps aren't too bad, depends on how quick you want to go. So if I get some good
+luck with the demons I will slow things down there, or speed things up if I need to 
+save some time. Best time I got here is 35 seconds, but my goal is to just get 
+through this map alive without losing 3 or more seconds and save time elsewhere.
+
+E3M2: Amazing time here, rarely do I have enough health to skip the medikit at the end.
+Really lucky with the cacodemon damage rolls, 5 and 20, then only hit once by the lost souls.
+
+E3M3: Another good time, even though it's not too hard to save a second here. 
+I try to kill the 2 demons and 5 imps so I never get blocked after mega armor, 
+can't be bothered dying to getting blocked from below like that. On nightmare grabbing
+the BFG saves quite a bit of time.
+
+E3M4: Really bad start, but everything else was good, so 2 seconds saved is good.
+Sometimes you manage to get by the demon at the start, feels about 50/50.
+Died a couple of times by the invurnability because of barrels or already low health.
+I played really badly for most of my attempts, so I also failed the keygrab on this map
+a few too many times. I use the BFG a bit more to make the map a bit easier and faster.
+
+E3M5: Easy map, should always get 26-27 seconds here, this time I got 26 seconds so this
+is a really amazing run at this point. I use the BFG to clear the spectres, getting blocked 
+by them can be dangerous to both your health and time.
+
+E3M6: 29 seconds is bad, usually I always get 28 seconds here, though if everything goes
+really well then 27 seconds is possible. Now my route is obviously slower since I grab
+the 200 cells, but from my time running doom 2 uv-speed I felt like 1 BFG shot = 1 second saved.
+For example map 15 of doom 2 I would BFG the cacodemons at the invurnability secret just to
+save a single second. So even though I lose 2 seconds grabbing those cells, I would except 
+to save at least 3-4 seconds, of course you could just hope everything goes perfect anyways,
+but that never really happens. I lost a second to the imp on the blue key, unfortunate
+that he was standing so far back.
+
+E3M7: I keep track of the time differences compared to the previous record, so 
+I know I'm at -3 seconds and I only have to avoid dying and failing the last jump 
+for the 4th time today. I got blocked a lot more than I usually do by the demons, 
+some 3 seconds lost to that, which is a real shame, could have been an amazing run
+if I dealt with it better.
+
+E3M8: Very easy map, grab mega armor and cells and charge the mastermind and hope
+you have enough health :)

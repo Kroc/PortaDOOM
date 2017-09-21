@@ -1,0 +1,98 @@
+Runner: Zero-Master
+Date: 2016-12-08
+IWAD: DOOM2.WAD
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 19:36 (19:50.43)
+
+Map 	Time	
+01	00:06	:)
+02	00:39	:|
+03	00:33	:(
+04	00:27	:)))
+05	00:26	:))
+06	00:57	:(
+07	00:12	:)
+08	00:25	:)
+09	01:02	:((
+10	00:34	:|
+11	00:35	:(
+12	00:43	:))
+13	01:15	:(((
+14	00:21	:(
+15	00:34	:(
+31	00:32	:(
+16	00:16	:(
+17	01:47	:(
+18	00:24	:)
+19	00:42	:)
+20	00:35	:))
+21	00:11	:)))
+22	00:27	:))
+23	00:42	:|
+24	00:41	:|
+25	00:46	:(
+26	00:38	:))
+27	00:17	:)))
+28	00:42	:))
+29	01:35	:(
+30	00:32	:)
+
+Description:
+I won't say too much about this run, I'll try to bring it under 19:30.
+
+There's a lot of new stuff compared to 30uv1959, some of those changes
+are not too noticable. Some might save at most a second, other just make 
+things a bit easier.
+
+One of the bigger changes is map 21, as already shown by eLim in 30uv1951.
+The trick was first shown by Looper in his unfinished nomo tas, so some
+explanation can be found in the TAS thread on doomworld. This trick can
+be very annoying to do as it requires some cooperation with the monsters.
+There are monsters all over the place and you cannot get hit by a fireball
+when attempting to do the second glide. If you fire then you will only wake 
+up more monsters, perhaps a BFG on the closest imps\hell knights might
+improve your chances, but you can't waste cells either.
+
+A few other obvious changes on map 10 and 28\29, these were also done by 
+Looper when he attempted sub 20, I didn't like those for a few reasons back 
+then, but I was wrong. For map 10 you skip the invulnerability and about 120 cells,
+this saves about 5 seconds. I figured before that you can save 3 seconds with
+those 120 cells by using the BFG somewhere else, and 2 seconds isn't worth it 
+because you'll sometimes die to the cyberdemon. But I have done many changes to 
+how I use cells so it's no longer an issue, and 5 seconds for the risk of
+getting killed by the cyberdemon is a risk you have to take at this point. 
+I got lucky this time by him not firing immidately after teleporting.
+
+As for map 28\29, you save 3 seconds by skipping the 600 cells and
+invulnerability I figured again you'd save those seconds back with
+the additonal cells (even though you grab 400 at map 29), but the 
+pain elementals on map 28 don't really get in your way if you just ignore
+the cells. You do however need 80 cells to clear the demons. You shouldn't 
+lose any time on map 29 if you lack cells either, so it's 3 seconds faster,
+but it's a bit more difficult to do than the other way.
+
+Many other differences as well, I might write more about them if I get 
+a better time. One of the things I had planned that I didn't do here
+is to hit the switch for the elevator\bridge on map 11 from the other side.
+
+Most notable about this run:
+Map 04 and 20 matched my best ever time from practice.
+
+Map 12, 21 and 27 were also very good (usually quite luck based).
+
+Biggest timeloss on map 13, had 1:02 on this map just before (which died on map 14).
+This was my own fault, fired the rocket too late which didn't push me far enough back.
+The yellow key elevator either goes up or down and it costs 3 seconds when it goes up first, 
+so that is luck based.
+
+Second biggest timeloss on map 09, not too often that I get blocked by the imps there.
+Made a good choice of going back and trying to get down on the left side.
+
+Failed the jump on map 22, costs a few seconds, instant glide was very lucky.
+
+I don't think there were any other major timeloss\mistake, just a lot of smaller things.
+On both of the longest maps (17,29) I lost several seconds. Also a lot of bad movement, 
+bumped into walls a bit more often than usual.
+

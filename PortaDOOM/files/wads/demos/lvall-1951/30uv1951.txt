@@ -1,0 +1,244 @@
+Doom II (DOOM2.WAD)
+D2ALL (30uv / Full run)
+------------------------------------
+Author: eLim [twitch.tv/elimzke]
+Date: 10/10/2016
+UV-Speed in 19:51
+Recorded with: GlBoom-plus 2.5.1.4 [2key SR50 disabled, CNDoom mouse code enabled]
+-complevel 2
+
+[ Don't forget to hang out at our Discord server! Message me on DoomWorld or tweet to @elim2g for a link! ]
+
+ _______________________________________________________________________________
+|           MAP NAME          | ZM's Time | My Time | Difference | Satisfaction |
+| --------------------------- | --------- | ------- | ---------- | ------------ |
+|Map 01 - Entryway 	      |	   0:06   |   0:06  |     0      |     :)       |
+|Map 02 - Underhalls	      |	   0:40   |   0:39  |    -0:01   |     :D       |
+|Map 03 - The Gantlet	      |	   0:32   |   0:31  |    -0:01   |     :)	|
+|Map 04 - The Focus    	      |    0:29   |   0:28  |    -0:01   |     :o	|
+|Map 05 - The Waste Tunnels   |	   0:27   |   0:28  |    +0:01   |     :|	|
+|Map 06 - The Crusher	      |    0:58   |   0:55  |    -0:03   |     :))	|
+|Map 07 - DeAd SiMpLe	      |    0:14   |   0:12  |    -0:02   |     :)))	|
+|Map 08 - Tricks and Traps    |	   0:24   |   0:26  |    +0:02   |     :)	|
+|Map 09 - The Pit 	      |	   1:01   |   0:54  |    -0:07   |     PogChamp	|
+|Map 10 - Refueling Base      |	   0:39   |   0:38  |    -0:01   |     :)	|
+|Map 11 - Circle of Death     |	   0:35   |   0:34  |    -0:01   |     :)	|
+|Map 12 - The Factory	      |    0:47   |   0:47  |     0   	 |     :))	|
+|Map 13 - Downtown	      |	   1:08   |   1:06  |    -0:02   |     PogChamp	|
+|Map 14 - The Inmost Dens     |	   0:21   |   0:22  |    +0:01   |     :)	|
+|Map 15 - Industrial Zone     |	   0:32   |   0:31  |    -0:01   |     :)	|
+|Map 31 - Wolfenstein 	      |    0:31	  |   0:32  | 	 +0:01	 |     :|	|
+|Map 16 - Suburbs	      |	   0:14   |   0:16  |    +0:02   |     :)	|
+|Map 17 - Tenements	      |	   1:48   |   1:53  |    +0:05   |     :(((	|
+|Map 18 - The Courtyard	      |    0:24   |   0:25  |    +0:01   |     :|	|
+|Map 19 - The Citadel	      |    0:39   |   0:43  |    +0:04   |     :(	|
+|Map 20 - Gotcha!   	      |	   0:36   |   0:37  |    +0:01   |     :|	|
+|Map 21 - Nirvana	      |	   0:20   |   0:17  |    -0:03   |     :))	|
+|Map 22 - The Catacombs	      |	   0:30   |   0:27  |    -0:03   |     PogChamp	|
+|Map 23 - Barrels o' Fun      |	   0:41   |   0:45  |    +0:04   |     :(	|
+|Map 24 - The EBOLAAA (Chasm) |	   0:40   |   0:39  |    -0:01   |     :)	|
+|Map 25 - Bloodfalls	      |	   0:44   |   0:44  |     0	 |     :)	|
+|Map 26 - The Abandoned Mines |	   0:43   |   0:37  |    -0:06   |     PogChamp	|
+|Map 27 - Monster Condo       |	   0:19   |   0:20  |    +0:01   |     :)	|
+|Map 28 - The Spirit World    |	   0:52   |   0:48  |    -0:04   |     :))	|
+|Map 29 - The Living End      |	   1:33   |   1:40  |    +0:07   |     so bad	|
+|Map 30 - Icon of Sin         |	   0:32   |   0:31  |    -0:01   |     :)))))))	|
+|-----------------------------|-----------|---------|------------|--------------|
+|          TOTAL TIME         |   19:59   |  19:51  |  -8 (0:08) |     :)       |
+|-----------------------------|-----------|---------|------------|--------------|
+
+Comments:
+Yooo sup wdup
+
+I've been running 30uv since the middle of 2014. Back in the glorious 30uv2325 days when Looper still
+held the record with his at-the-time mindblowing strategies. Boy have we come a fair way since then!
+Anyway I've always been on the slow side of these runs. When Zero-master got 23:03, I actually got
+23:08 the same day, albeit a few hours later. I hadn't checked DoomWorld and was not aware I had already
+lost! What a crushing defeat.
+
+Fast forward to the ZM-vs-Looper battles and I had always been lingering a good 20 - 30 seconds behind
+their times. I'm not a fast learner. I'm not creative. But I do have an abundance of time! So I do the
+only thing I know how to do - grind. Maybe I don't grind as much as 4shockblast, but I'd like to think
+I'm pretty close :D. 
+
+So yeah after 30nm2409, I started looking at 30uv again. I had some new tricks to learn, and my movement 
+was absolutely abysmal. It still is (as obvious in this demo) but I'd like to think I have improved a
+fair bit. I started attempts all the way back in June of this year (roughly 4 months ago) but hadn't
+been getting far as I was practicing very hard in my Overwatch teams. I've since quit OW, and I'm glad
+I was able to get this very lucky run mere weeks after quitting.
+
+This demo is proof that you don't need to have insane talent to achieve your goals. Maybe I won't hold this
+record for long since Zero-Master is insanely talented and could take this back when he chooses to,
+but all that matters is I set out to one day get the 30uv record, and that day came. It's a good feeling.
+
+As per usual here are my thanks:
+Zero-Master: 	For being the bane of my existence! Haha, thanks for your run. Gave lots of new strategies,
+		and a means for me to compete.
+
+4shockblast:	For constantly harassing me on Discord to play the game (and stream - sorry!) and always
+		answering my questions to do with the more finnicky details of the Doom engine.
+
+Looper:		For being a complete badass and giving me the quick tip to shoot on map10 at the cyber area
+		in order for the imps to open the next door for me. Also his ridiculous find on map21 with
+		the rocket glide - I happily stole that strat!
+
+Kraflab:	For putting up with me when I constantly complain about how much I suck at the game.
+   
+
+Map Comments:
+Map2
+So for whatever reason, you only need to be moving under a certain speed to increase your chances massively
+of falling inside of the glide gap. Using this knowledge, I found a lineup which allows me to hit the wall
+TL1 left of being perpendicular. I use that to move very slightly left then correct the angle, which allows
+me to drift over the gap within the speed range (most of the time) granting me fast glides!
+
+Map3
+Blue key switch was very messy. Other than that it was a pretty standard map03. I stole the elevator boost
+from watching 4shockblast stream map03 nomo :D
+
+Map4
+My strategy for this run was to heavily out-run ZM on episode 1. I knew that I would lose time on episodes
+2 and 3. So on map4 it's common for me to attempt the faster exit jump if I'm slower than 1:15 after map03.
+I've done it a lot in nomo, so it's not too difficult to achieve now. Maybe a 50% success rate if I take it
+somewhat slow like I did here.
+
+Map5
+Hit a lot of walls and stuff. 
+
+Map6
+Only had one instance of getting unlucky in this map where the imps blocked me on my way to the red door.
+Everything else went pretty much perfect! Shame I didn't get the yellow keybump, but it doesn't save a
+great deal of time anyway. I'm just glad I didn't fall into the slime at the end :)
+
+Map7
+Pretty much the fastest time I can get. I never bother checking for projectiles to dodge here because I
+don't want to get slower than 13s. Using ZM's strat you can get 11s if you don't need to dodge any fireballs.
+
+Map8
+Until a few weeks ago, I was unaware that ZM and Looper were closing the cyber door on their way in, meaning
+they could hit the door switch as soon as they picked up the key. I'm embarrassed. Anyway although I got
+pretty lucky at the yellow key, I was still slower overall losing two seconds. Nothing to stress about.
+
+Map9
+I had a few variations of this map to choose from. I could do the yellow key jump (from top platform to
+yellow key), the blue key jump (which I did) or both. After testing all three strats for a couple of weeks,
+this one became the most consistent and saved me the most time. I got extremely lucky with monster blocks
+in the yellow key room, and I almost overshot the blue key rocket jump haha. This is the fastest time I've
+ever achieved on this map.
+
+Map10
+Almost lost the run at the BFG room. I've always been uncertain what to do versus those arachnotrons around
+the blue key. I should probably kill them. Fast-switching on the BFG is also a trick worth doing, however I
+forgot it in this run. I assumed I was going slow by the time I got to the cyber room, so I skipped some cells
+in order to shave a second off the map. I end up severely regretting this later on in the run. Only main change
+to this route over ZM's is I fire a shot in the cyber room (at Looper's recommendation) which moves the imps
+to the next door and opens it before I get there.
+
+Map11
+Standard run. Few little bumps, but otherwise a great time. I somehow killed BOTH elevator imps with my BFG 
+blast entering the Caco room. That was pretty neat hahaha
+
+Map12
+Finally got the yellow keybump. I failed that trick in every attempt leading up to it today. I almost forgot
+the cell pack in the dimeCaco room which would've ended the run instantly. I'm glad I remembered. Was still a
+good time, too!
+
+Map13
+Blocked by the dumb Caco after getting the blue key. Stupid monster spawn, and I wish it would go away.
+Everything else went smoothly. I was lucky not to get blocked in the street just after exiting the yellow key
+room.
+
+Map14
+Watching the demo it appears I let the shotgunner live on the platform next to the one I rocket jump off.
+That is definitely a mistake, and I'm extremely surprised I wasn't knocked by him while I was setting up.
+Nonetheless, the time was fine. Still somehow slower than ZM's even though he made a mistake, but hey that's
+life!
+
+Map15
+Almost screwed up the BFG blast in the secret. Other than that the map was alright.
+
+Map31
+Slow time as usual for me. I used plasma for no reason and had bad movement at a few of the doors.
+
+Map16
+Stole ZM's strategy in its entirety for this map, however I prefer doing guided glides sideways. I don't think
+I'll ever beat ZM's time on this map (even in nomo :P)
+
+Map17
+This is where I regret not picking up the cells on map10. I don't have enough rockets or cells to complete
+this map efficiently. Luckily for me, I've practiced this map ammo-starved many many times. So I knew exactly
+what I needed to do. It didn't stop the map being slow though. Also I made sure to get in my Linguica Seal of
+Approval with the silent BFG!
+
+Map18
+Bad movement costs me a second, but otherwise it was okay.
+
+Map19
+Holy moly. Very, very lucky glide at the end. I screwed up with my mouse strafes and overshot the gap many times.
+The fact I didn't need vertmouse to slide through right at the last moment saved this run. I'm not sure how that
+works but I'm not mad about it! :D
+
+Map20
+Not much to comment here. Stock standard run of the map.
+
+Map21
+Oh boy. What a juicy strat! Thank Looper for this one. It took me a few hours to find a decent setup for this,
+and even then I'm not guaranteed to get into the teleporter on the first rocket. Originally I didn't kill any
+enemies for this to save time, but for the sake of consistency that first HK just had to go. It also gave time
+for other projectiles to head towards the yellow key doors instead of the red key ones where I was trying to
+glide, reducing the risk of being knocked around while gliding. Very happy with this time :D
+
+Map22
+In the heat of the moment, I decided skipping the soulsphere was going to save me enough time to get the WR.
+I wish I was keeping track of my time at this point because skipping it was objectively the incorrect decision.
+The bar glide happened quickly, and I took my time with the red key RJ as I usually do. The strafejump at the
+end should've happened a second or so later after clearing the chaingunners. I definitely should've died here,
+but the Doom Gods favoured me this day. Having the soulsphere here would've made the map much easier.
+
+Map23
+Absolutely appalling movement and reactions on the pain elementals. I'm glad the manc didn't destroy the
+barrels at the start because I lacked the resources to complete a proper barrel rocket jump. Anyway yeah my
+atrocious movement before the thingrun ruined my time on this map.
+
+Map24
+Quite a fast time! Been trying a new strat in the red key room where I only use one BFG blast to escape the
+room. It seems quite easy to manipulate the demons as they stream out of the corridoors. Some annoying timing
+windows to move within, but it's not terribly difficult. Everything worked out and the lost souls didn't
+block me on my wallrun to the exit. Happy times!
+
+Map25
+Got lucky in the blue key room as per usual. This map seems to like me. I take risks here and they pay off
+most of the time. The strat is almost identical to ZM's, only difference is how I tackle the BFG blast after
+the blue door.
+
+Map26
+One of my faster times on this map for sure. Not entirely convinced using the SSG to clear the imps after
+the blue key was the correct thing to do, but it paid off. The cacos posed a threat on my way to the exit,
+but pushing them around with the chaingun seems to yield promising results most of the time. Even got the
+swag double-press on the yellow bar at the end, but not the SuPeRSwAG triple press because I suck.
+
+Map27
+Identical strat to ZM. I did it a second slower. 'Nuff said.
+
+Map28
+Main difference on this map is I leave the closet monsters alive. The reason I do this is so once I come back
+to the exit room, I let the chaingunners open the exit room for me with their recoil. This saves a couple of
+seconds as I don't need to switch weapons before shooting the spectres, and also don't need to switch weapons
+to enter the exit room.
+
+Map29
+Uh by this point I had so much adrenaline in my body that I started making obvious mistakes. Using plasma
+where I needed to use BFG, missing enemies on easy BFG shots, wasting rockets etc etc. Thankfully I've
+practiced the end rocket jump so many times that I got it even with my hands shaking. Still, I lose a great
+deal of time here due to the compounding mistakes. I'll forever regret leaving that one cacodemon alive.
+
+Map30
+Truth be told I thought I missed the one cycle, which is why you see me go for a megasphere + rad suit.
+I thought I lost the run. When I heard Romero cry out, I kicked my desk in joy :D Top5 greatest moments of
+my life.
+
+
+
+Now we wait to see what more crazy shennanigans Zero-Master has in store for us!
+
+Until next time, pce.

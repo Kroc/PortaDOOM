@@ -1,0 +1,198 @@
+Runner: Zero-Master
+Date: 2016-09-14
+IWAD: DOOM2.wad
+Category: NM100s
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 47:52 (48:08.17)
+
+Map	Time	
+01	00:46	:)
+02	01:01	:)
+03	00:38	:(
+04	00:43	:|
+05	01:19	:)
+06	01:25	:(
+07	00:28	:)
+08	01:34	:)
+09	02:05	:)
+10	02:52	:(
+11	01:16	:)
+12	01:42	:)
+13	02:36	:)
+14	00:29	:|
+15	03:31	:(
+31	01:06	:|
+32	00:36	:|
+16	00:53	:)
+17	02:36	:|
+18	01:41	:)
+19	01:56	:)
+20	01:32	:)
+21	00:35	:)
+22	00:40	:)
+23	01:31	:(
+24	02:35	:|
+25	01:06	:)
+26	01:11	:)
+27	02:56	:(
+28	01:39	:)
+29	02:12	:(
+30	00:42	:|
+
+
+Description:
+stx-Vile's 30ns5600 was done in 2004, over 12 years ago! Before that it was 
+completed by 3 other people: Henning, Vincent and Ryback. It was first done in 
+2001 by Henning, who is the only one to have more than one exit (3 times).
+
+Finding a route for 30ns was quick, for a few reasons. I already know a lot from 30nm, 
+and many maps require none to just a few adjustments. The chance of losing over 10 seconds 
+on a map is very high for a lot of the maps, so a greater focus on survival is better. 
+I used 1313ns01 by Ancalagon and 30ns5600 by stx-vile to figure out where the secrets are 
+and in which order to grab them. 30ns5600 is probably based on work by Henning and Vincent, 
+so big thanks to those guys. Also have to mention Ryback's 30ns7155 which is keyboard only! 
+that's really something crazy.
+
+Some notes about the secrets:
+Secrets are activated by standing inside the secret area, so some care need to be taken not to 
+skip them. Most notable would be map 16 megasphere, as it's easy to run over it and not actually 
+trigger the secret. There are several other places where this can happen too. On map 15 you can 
+only get 9/10 secrets, the last secret is "below" the teleporter by the stairs inside the YK door, 
+since you immediately get lifted when you enter the teleporter you never stand on the secret area 
+and so it doesn't trigger. On map 27 I do a skip on an east facing teleport linedef to grab 100%. 
+Maps 14,21,29,30 have no secrets.
+
+Map description:
+Map 01: This map is one of the biggest differences from 30nm. It is much more difficult as 
+it comes down to the damage roll from the imp fireballs mostly. However you do exit the map 
+with green armor making map 02 a bit easier and a rocket launcher which will be useful for map 04.
+
+Map 02: I have to do this map the old way, since doing the glide with respawn is not worth it 
+(saves very little time here anyways). I still skip the SSG since I don't really need it at 
+this point, too used to the single barrel shotgun. I get to use a rocket at the exit this time.
+
+Map 03: There's no need to do anything different from 30nm. Mega armor from map 02 means I'm 
+less likely to lose too much health at the start.
+
+Map 04: A few more rockets this time, so it's a bit easier. The secrets are quick and easy to 
+grab here, need to be careful of the last one, since it's possible to go from RK to teleporter 
+without triggering the secret. SSG for the demon at the exit is a nice change.
+
+Map 05: This used to be one of the most difficult maps, but it's made a lot easier with the 
+plasma rifle. Still not too easy, but it's much less dependent on luck now. I grab the mega 
+armor before the second soulsphere to maintain my health.
+
+Map 06: Only difference here is the secret down by the elevator and having a plasma rifle, 
+kind of evens out since you're more likely to take damage from the mastermind. Terrible
+mistake missing the platform, I don't think it costs any time but then I had to go and 
+miss the elevator on its way up, making it 3 cycles instead of 2.
+
+Map 07: Doing the RJ will skip the secret, so you need to make sure to bump the middle 
+platform to activate the secret. Almost forgot about it this time.
+
+Map 08: This map is completely different, fortunately you get a BFG and you have 2 invurnabilties. 
+A bit confusing at first at which doors to go through and in which order, but once you get the 
+hang of it this map is easy. Very easy to lose a lot of time by getting blocked.
+
+Map 09: Plenty of lost souls and pain elementals, you can take a lot of damage here quickly which 
+makes it a bit dangerous. Though there are a lot of resources and you'll probably start this map 
+with 200\200 and 600 cells with the BFG. I save some plasma by using a few rockets since I'm so 
+used to it from 30nm, and because I need the cells elsewhere. Best to grab the elevator secret after 
+the yellow key since the PE at YK can't spawn any lost souls as there are too many of them.
+
+Map 10: There are lots of secrets on this map, a lot of resources and 2 invurnabilties too. 
+So it's not that difficult unless you have low health at the start, once you reach the green 
+armor everything should be fine. Also the megasphere is 3 secrets, need to be careful not to 
+skip any of them. Lost a lot of time to the cyberdemon, I handled that badly, also I lost
+so much to getting blocked, maybe more practice could prevent some of it.
+
+Map 11: It's possible to take a lot of damage at the start, but it's a lot easier than 30nm which 
+requires so much luck with the cacodemons. Here the invurnability will make the last part easy, 
+you still want some health for the next map.
+
+Map 12: Very difficult map, I don't really have any easier way of doing the cacodemon room 
+and that room can already be too much for 30nm. You don't really get much use for the 
+soulsphere since the imps will take a lot of your health before grabbing it. There's a couple 
+of berserk packs so you'll probably have enough health. 
+
+Map 13: You'll always start this map with low health which is no fun. Luckily there aren't 
+any hitscan at all on this map. For some reason I can't quite explain I managed to rocket myself,
+it wasn't a miss click since I actually held fire and fired 2 rockets, I guess I just lost concentration
+for a moment. Almost died because of it, so really dumb mistake.
+
+Map 14: The same as 30nm, grab some more health because I needed it.
+
+Map 15: I consider this to be the last hard map, and also one of the biggest changes from 30nm. 
+Not much to say about it though, one thing I do is to fire after picking up yellow key so it
+wakes up the pain elementals and cacodemons, then fire 2 BFG's to kill all of them. There's 
+a chance they will block you when you go for the invurnability.
+
+Map 31: As long as I have the plasma ammo to clear the demons this map is easy.
+
+Map 32: I don't even need all the resources on this map since you get so much on the next one anyways.
+
+Map 16: Plenty of cells and a megasphere.
+
+Map 17: This map pretty much the same all the way up to the last elevator where I start grabbing the 3 secrets. 
+
+Map 18: The route for the last section of this map in 30ns5600 was very strange, I had to check 
+the other 30ns runs to see if the same "mistake" were made. After grabbing the last secret they 
+all take a longer route instead, but during a practice attempt the exit actually closed on me once.
+And since you cannot open it you would have to take the long way, I can't remember if the way was open
+in the other 30ns runs, but usually it always is. This was the only part that had me a bit confused. 
+
+Map 19: No need to do the glide anymore, but there's a different glide! The glide between the wall 
+and the torch is very easy to do once you know it. I grab the invurnability straight away, this is much faster. 
+I also do the torch glide at the end to save some cells.
+
+Map 20: As always need to be careful not to step into the teleporter too quickly.
+
+Map 21: This map is the same, well, I grab the invurnability now because saving a few seconds 
+here is simply not worth it. The next map is a lot easier with a lot of health.
+
+Map 22: Completely the same, just have to make sure not to skip triggering the secrets.
+
+Map 23: Only difference is you have to grab a soulsphere. I got "stuck" in the barrels while doing
+the wallrun, this can happen sometimes, but very rarely after I found a setup of some sort for it.
+I was sure it was going to kill me, as I didn't hear the barrels go down in the second room, but
+they did and the pain elementals will move out of the way when you do it like this so it's not too
+bad.
+
+Map 24: The wallrun just simply isn't worth it, say it saves 5 seconds and it fails 10% of the time, 
+it would be better to have 10 runs that are on average 5 seconds slower than having 9 runs go past 
+this map, since there would be a better chance of having one with an overall good time. I probably
+lost more than 5 seconds with the slow speed I had :)
+
+Map 25: Almost the same, there's a pointless secret by the end. Close call again on this map.
+
+Map 26: This map is a lot easier the old way, which happens to grab 2 secrets. The other 2 are right at the start.
+
+Map 27: Usually you won't get 100% on this map because you never activate the secret which is on the 
+first used teleporter. It's possible to grab it by skipping the teleport linedef which is facing north.
+Skipping north linedefs are much more difficult, but with either a wallrun or rocket boost they are 
+possible. No rocket is needed here, lucky for me there happened to be a very easy position to find. 
+I use a certain angle and move into the corner, but even then it might still fail!, so I actually 
+look at a "large" pixel on the wall. Depending on my position even though I can't move any further it 
+will be either 3 or 4 pixels wide. If it is 3 pixels wide, the linedef skip will fail, if it is 4 pixels 
+it will work! So once I am in the right spot I use SR50 (MB50 SL50) (sometimes it will still fail, 
+but I will then be stuck in the wall straight away instead of going through the teleporter.) I failed it 
+the first time here because I didn't do SR50 properly.
+
+Map 28: BFG spam everything at the start, no need to keep any remaining cells. Only 80 for grabbing the 600. 
+Had a few practice runs of this map were I would forget the last 2 secrets, so I wasted some time here to make
+sure I got them.
+
+Map 29: No secrets so almost the same, no RJ this time, absolutely not worth it. Terrible mistake forgetting
+the switch, I just completely forgot about it. Also missed the mancubus, could have easily died had I gotten
+blocked by the barons afterwards.
+
+Map 30: I don't care if I fail a 1 cycle here, I even spent some more time familiarizing myself with the 
+cubespawn spots so I wouldn't get telefragged. Again I kind of forgot how to do this, fired way too early,
+I had a new setup for 30uv that I was planning so it confused me.
+
+Overall a lot of safe strategies compared to 30nm, it would just be better to get more attempts done 
+than to go for 1 reckless run. This is because the timeloss from colliding with monsters is just ridiculous 
+throughout a run like this, respawn being one of the main reasons. Saving 30 seconds on risky tricks when 
+you could have saved 60 seconds by having more luck is just better since you'll have so many more successful runs.
+

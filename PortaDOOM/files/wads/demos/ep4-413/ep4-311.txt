@@ -1,0 +1,97 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 4 (E4M1-E4M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 3:11 (03:14.77)
+Time With    M8: 4:13 (04:17.34)
+
+----------------------------------------------------------------
+Level			Map	Time		ep4-0342
+
+Hell Beneath  	        E4M1 -	0:29		-0:04
+Perfect Hatred  	E4M2 -	0:23		-0:04
+Sever The Wicked	E4M3 -	0:09		-0:01
+Unruly Evil		E4M4 -	0:40		+0:01
+They Will Repent	E4M5 -	0:31		-0:08
+Against Thee Wickedly	E4M6 -	0:43		-0:12
+And Hell Followed	E4M7 -	0:16		-0:03
+Unto The Cruel		E4M8 -	1:02		-0:06
+----------------------------------------------------------------
+			TOTAL -	4:13		-0:37
+E4M8 comparison is not relevant. E4M1-E4M7 time is improved by 31 seconds.
+
+
+Description: A very good episode 4 run, I didn't have any big mistake
+in my previous run, but I still managed to improve on it by 31 seconds.
+E4M5 was quite bad in the previous run, and I also did a small skip
+on that map to save time, then I also use more plasma before reaching
+the cyberdemon on E4M6 and I got a lot better at E4M1 and E4M2.
+
+
+E4M1: 29 seconds here would be a really good time for me when I did this 
+episode run last time, but I often get 28 seconds or even 27 now so
+it could have been even better. This time the map went a bit unusual,
+I missed to grab the green armor and I didn't fire a rocket after
+grabbing the blue key, but I got lucky and got past anyways.
+
+
+E4M2: A really good time here, my best time is 22 seconds.
+The IL record is 16 seconds, but I need to grab the cells and 
+I need to take things a bit safe. A really annoying thing that
+can happen on this map is to skip the trigger that opens the 
+last door.
+
+
+E4M3: Very good time, well, I always either get 9 or 10 seconds. 
+The rocket jump here isn't too difficult, however I frequently get 
+blocked by monsters. Sometimes the lost souls move too far too the 
+right or it even dies to my rocket splash damage sometimes. 
+
+
+E4M4: I always seem to get 39 or 40 seconds on this map, so not
+the best time. The IL is 33 seconds done by me, so I know how
+to do the map, but it uses the glide and I can't afford to lose
+any health to the shotgunners. Losing health and armor will reduce 
+my chances of getting through E4M6. Obviously I lost at least a second
+here by the imps on the second elevator, might be the biggest mistake
+of the run really, even though it isn't that big of a deal :)
+
+
+E4M5: Very good time here, I think my best time from attempts is
+32 seconds, I might have had faster times during practice, not sure.
+I need to take things careful in some places, because I can lose a 
+lot of time if I fall down in the wrong place.
+
+
+E4M6: Amazing time here, and this is by far the hardest map in the run.
+There are ways to do this map even faster, but you really need to take
+care of your health so you can survive the splash damage from the cyber.
+If you get really lucky you can have infighting where the cyberdemon
+is fighting cacodemons behind him, in which case you can sneak you
+and kill him in 2 BFG's. That never really happens, and sometimes he
+might just be blocking the entire way and hit you immediately with
+a rocket.
+
+
+E4M7: 43 health is good enough, anything lower and I get a bit
+afraid of shotgunners killing me in a single hit or something. 
+There's a trick at the end which can sometimes fail if you take
+any damage, though invisibility helps a lot. 16 seconds is also
+really good for me. 
+
+
+E4M8: There's some health at the start and I have plenty of 
+plasma ammo to deal with all the hitscanners. I skip the red key
+so I can try to throw in a nice rocket jump in the end, which worked :)
+It's easy to do, but it's really easy to fail it as well if you get 
+the wrong angle\position. I don't think too much about it so I'd
+say it's 50\50 if I get it or not, but if I fail there shouldn't
+be any problem surviving with the health I had.
+
+
+Now the episode 4 run should be on the same level as the E1,E2 and E3 records.
+It's now the shortest run, current E2 record is 3:27, but it is just
+around the same difficulty as E1, main reason because of the cyberdemon.
+I would say E2 is the easiest to improve right now, if anyone is interested :)
+

@@ -1,0 +1,290 @@
+Runner: Zero-Master
+Date: 2016-10-03
+IWAD: TNT.wad
+Category: NM-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 1:23:37 (01:23:51.00)
+
+Map	Time	
+01	01:10	:))
+02	02:08	:))
+03	03:07	:))
+04	00:32	:))
+05	02:50	:))
+06	03:35	:))
+07	01:16	:))
+08	03:33	:))
+09	04:02	:))
+10	04:10	:))
+11	00:32	:))
+12	01:21	:))
+13	02:18	:))
+14	04:12	:))
+15	00:44	:))
+31	00:59	:))
+16	02:31	:))
+17	01:38	:))
+18	03:59	:))
+19	02:41	:))
+20	05:08	:))
+21	05:06	:))
+22	00:29	:))
+23	01:17	:))
+24	00:47	:))
+25	05:04	:))
+26	04:18	:))
+27	04:21	:))
+28	02:38	:))
+29	04:19	:))
+30	02:51	:))
+
+Description:
+I never thought I would do this, but here it is. To my surprise this was somewhat fun to do, 
+I didn't like the UV run too much because of the long and easy levels. Almost all my time
+on attempts have been spent on the first 9 levels, since this was my first attempt to go
+past stronghold. 
+
+This is my 50th d2all! the majority of them being 30uv\30nm.
+
+Like plutonia I once again get very lucky, of course luck is badly needed on both map 08 and 09.
+I expected maps like 14, 21 and 27 to be the major obstacles, only 21 went smoothly here. 
+
+There are very few tricks done in this run, most notable would be on map 05 where I grab a key
+through the wall. Some other tricks done here are linedef skips to avoid some monster ambushes, 
+but nothing major like those done in Doom 2 or The Plutonia Experiment.
+
+I've been playing some random WADs lately, and for the first time I've felt like nightmare 
+is the normal difficulty. It feels strange to see fireballs and demons move so slowly.
+
+Thanks to Xit-Vono and Ancalagon, especially Xit-Vono who did most of the work with the first 
+completed episode 2 and 3 on nightmare and individual levels.
+
+
+Map 01: Not that difficult of a map, there's lots of health and armor on it. Obviously I want 
+to save the mega armor for map 02 and so on, so I grab it as late as I can. I also try to save 
+as many bullets as I can. 
+
+Map 02: One of the hardest maps, luckily it's only the second map. The start is straightforward, 
+the problem starts when you enter the large room with YK\BK. Killing the hitscanners can be annoying 
+sometimes since they are very far away and therefore the chaingun just can't hit them. Next there's 
+all the demons\spectres which are very quick on nightmare... Then it all comes down to if you can 
+reach the yellow key or not. Infinite height will often mean the end here with either the imps or 
+demons getting a block in either on the way over or the way back. The rest isn't too bad if you have 
+enough health or just don't take any bad hits.
+
+Map 03: Definitely not a very difficult map, but it still has its challenges. Lots of random hits 
+from hitscanners and unlucky fireballs can remove your health quickly here. If I have the health 
+for it I will grab a pack of rockets near the end to make the next map easier.
+
+Map 04: Usually I will have very low health for this map, in that case it's completely random. 
+If I do have enough health than it shouldn't be difficult at all. If I have the 10 additional 
+rockets I can kill everything before respawn sets in. Bad movement at the end caused me to take 
+a melee hit from the hell knight.
+
+Map 05: There is quite a bit of health on this map, so if I can avoid making any dumb mistakes 
+I should be fine. Do the yellow key grab trick here. I grab the soulsphere since it's easy to 
+do and will overall give me a better chance of making it further. Grab the invisibility to help 
+with hitscanners. Grabbing the red key before the mega armor opens up monster closets, which is 
+not a problem due to infighting and I need the bullets from the chaingunners.
+
+Map 06: Not difficult either, so much resources on it.
+
+Map 07: I get a mega armor at the start of this map, if possible I'd like to keep it to map 09, 
+but it's really not. 162 armor before invurnability was quite good, I usually have around that 
+if everything goes right. I kill the spectres in the pit to avoid them from blocking me later, 
+and open the secret. Once I opened the secret I don't fire to avoid waking up the baron for a 
+few seconds so I can push him in with the RL before my invurn runs out, close one this time. 
+Very good health and armor, probably my best 07 ever.
+
+Map 08: This is the second hardest map of the run, and it is almost completely luck based. Of course 
+the hardest part is the very last area, which just so happens to be right before stronghold, what a mess...
+
+The start is not too bad, a couple of hitscanners that can be dealt with slowly. I discovered it's 
+possible to do a linedef skip by the switch which lowers the barricade to the red key. It's not much, 
+but it prevents the 2 monster closests from opening, giving me some more time before respawn can 
+occur and saving me some plasma ammo. I grab the soulsphere as usually you'll get away with more 
+health, more likely than not I have to grab the green armor anyways. 
+
+Very good health going for red key door. I wake up the first shotgunners in the last room as I think 
+it helps a bit. I can't shoot in the last room since it wakes up a lot of hitscanners and it would 
+waste ammo which I can't afford. After activating the last switch I wait for the arachnotrons to move 
+out of the exit area. This was also the best map 08 I've ever had, very lucky here. 
+
+Map 09: First of all I start by killing the shotgunner and then clearing the barrels. The zombiemen 
+can't hit me if I stay in the middle so I use rockets to quicly kill them. After clearing out the 
+next 2 rooms and hitting the switch I clear one of the barrels which will destroy a second barrel, 
+then the barrel on the corner, this is so you don't get killed by them from hitscanners destroying 
+them. There's a switch in the next room that does almost nothing for me, and a deaf shotgunner behind 
+the lowering wall. Usually this shotgunner won't wake up, sometimes he gets hit somehow and die 
+like this time, sometimes he would survive and hit me in the back even though I thought he was not 
+awake, so I have to kill him. 
+
+I delay picking up the invisibility, as it will last just to the section with all the doors. I open 
+and close the door from the right to cause infighting on the top left, I then use SSG to clear anything 
+infront of the door. Wait for the large door to close before grabbing the invisibility and switch to 
+plasma rifle. At red key switch enemies that teleport will instantly fire so it's important to pain 
+chance\kill them asap. I wasn't sure if I pressed the red key switch, so after getting the secret green 
+armor I had to double check, which probably cost me some health. I clear my way through using rockets 
+for the most part, I was too low on health so I grabbed the 25% medikit secret, that worked out fortunately. 
+I manage to clear almost everything with rockets and so I have some health left for when I go for the 
+blue key which is very dangerous. A very convenient berserk here and I get lucky with the respawns. 
+I use more rockets at blue key switch, things aren't looking good with this health, but once I hit the 
+last switch I get all the luck. I take almost no damage going through blue key door, I've died with 
+100/33 earlier because there was just so much shit blocking it. 
+
+The last 2 rooms are not too bad, rockets deal with a lot of it. 
+Chaingun for the rest... that 1 barrel however, I have no idea.
+
+Once I hit the exit switch I had to sit up in my chair, it's really 
+late and I was not prepared to actually make it this far. 
+
+Map 10: This can also be a difficult map, always possible to take a lot of damage if you are unlucky. 
+Thankfully there are 3x25% medikits at the very start of this map, because there is absolutely no way 
+that you have good enough health after stronghold. After clearing out the lower tier enemies it is 
+possible to do a linedef skip on the monster closets, which helps a lot, I however somehow failed it 
+and almost died! Next it is possible to grab the mega armor without activating more monsters. Not too 
+much ammo left at this point, luckily I have lots of shells, so I take things slow and clear out the 
+pain elementals since they don't respawn. I kill the revenants in the red key room from a place they 
+have a hard time hitting me, though respawning demons can be a problem. I took a lot more damage than 
+I would like at red key, luckily the rest of the map went fine. There are 2x25% medikits at the mega 
+armor that I could grab.
+
+Map 11: Hopefully have enough health to reach the megasphere on this map, which I did so no problems here. 
+What I didn't like was that 1 random fireball from a manc at the very end.
+
+Map 12: Straightforward map, take it a bit slow to not waste any health and grab some rockets.
+
+Map 13: This map can be dangerous, but there is a mega armor and invurnability which helps a lot. 
+Everything went wrong after I grabbed the red key, there was a good chance I could have died. 
+After opening red key door I decided to go for 10% health at the right, nearly got hit by the revenant, 
+so that wasn't a good choice.
+
+Map 14: I made so many mistakes on this map, it's difficult, but not too bad if you know what you 
+are doing. Clearly I had no idea because I even managed to forget to hit the switch for the secret 
+soulsphere. The start went well, used plasma to clear out the crusher room, activated the wall for 
+the switch, and then just ran straight past it. I didn't realize before I reached lost souls maze, 
+"wait, did I hit that switch?... fuck!" and so I made this more difficult than it should have been. 
+Then the next mistake was to grab the rad suit so early and clear out more hitscanners, this nearly 
+killed me when it ran out after I had to waste more time grabbing health by the green armor. 
+Fortunately I got really luck in the crusher room again, taking little damage. The last area was a 
+complete mess again, I wanted to jump down to the right side, because I don't want to get blocked 
+by the mastermind. Now I am stuck here between the mastermind, the hitscanner that is blocking me 
+on the right and a possible chaingun respawn behind me at anytime. I am also afraid to rocket myself 
+to clear the hitscanner out. Eventually something hits me in the back, and so I panic and just go 
+for it. I get extremly lucky as I manage to miss the mastermind with the SSG which is supposed to 
+pain state him and still reach the exit with some health.
+
+Map 15: This is were the run gets kind of easy for the next few maps, there's a bit of health and 
+the start here so it should be impossible to die on this map. I only have to reach the invurnability, 
+where only a single cacodemon can hit me on the way. Once I got it I can grab the BFG and exit the 
+map to the secret level.  
+
+Map 31: Similar to map 32 of doom 2 where you get a stockpile of ammo and health without there being 
+any danger at all. Spam a few BFGs to clear out any hitscanners at the start, grab all the resources 
+and exit with 200\200 and full ammo.
+
+Map 16: There is a megasphere and a mega armor on this map, and since you start with 200\200 it should 
+be impossible to die here as well. 
+
+Map 17: Should take things a bit slow on this map, quite a few hitscanners and demons, also a couple 
+of revenants and an arch-vile. They can do a lot of damage in a very short amount of time, but not 
+very likely if you don't rush things. I completely messed up again at the blue key, I gambled on the 
+arch-vile not respawning that quickly, I wasn't sure if the revenant could hit me and push me into 
+the pit which I would have no idea how to get out of.  Complete panic mode again, I know I have 25% health 
+in the starting area, then I just need to reach the invurnability and grab whatever I can before I exit.
+
+Map 18: Very large map, but few enemies. I want to have 100 health going for the blue key, so I will grab 
+the red key first if I don't have that. At the blue key teleporter room I make sure to BFG the arch-vile 
+and there is a chance he respawns so I need to keep the lookout for that. Grabbing yellow key is straightforward. 
+In 30ev I would grab the invurnability and rocket jump over to the soulsphere, here I actually do the 
+opposite. There is a soulsphere by the exit area and with the invurnability it's impossible to die to the 
+cyberdemon. Also the rocket jump is probably the easiest trick I know. I told myself not to forget the yellow key, 
+and I still forgot to grab it, luckily I remembered before the invurnability.
+
+Map 19: A lot of annoying hitscan at the start, but taking things slow it shouldn't be too bad. Grab key 
+and then megasphere, grab soulsphere while I wait for the demons to gather up by the blue key door. 
+Use rockets to clear everything and then try to get to the exit with as much health as possible.
+
+Map 20: The start of this map is the most dangerous, once I reach the red key door it should be impossible 
+to die. I do the last area pacifist because it prevents monsters from teleporting in the central water area. 
+The mastermind or arch-vile might be able to deal a lot of damage, so I can avoid that, the downside are the 
+chaingunners which I cannot kill. Very lucky this time, they were busy infighting, of course getting killed 
+here should be impossible, but I need that health for the next map.
+
+Map 21: Very dangerous map, lots of enemies that can slowly pick off your health. I make sure to 
+clear anything inside the room which you enter once you go through the teleporter in the centre pit. 
+I've had a 30ev run die because I got hit by 2 hell knights at the same tic after teleporting. 
+I have to clear this room a total of 3 times, and I also try to run around the longer side to drag 
+all the monsters that respawn in the centre away from the teleporter when I can. I also need to avoid 
+having them block me from jumping down.
+
+Map 22: Easiest map in the run, nothing to say here.
+
+Map 23: A few hitscanners are the start so no need to rush things, just pick them off with the chaingun. 
+Then you get an invurnability which lasts to the exit. I messed this part up to, well, that was the most 
+bullshit thing I've seen to be fair. I had no idea where to go and I was so surprised I ended up in the 
+correct room, so I was confussed if I even grabbed the right key for a moment. That would eventually lead 
+to me taking some bad damage at the end of the map. 
+
+Map 24: Another invurnability which lasts to the end of the map.
+
+Map 25: Lots of resources on this map, so it should be easy. I played badly here, the first 2 revenants 
+somehow wouldn't die, then the second pair gave me trouble as well. My health dropped a lot lower than 
+I would like, but the mega sphere isn't too far away. I was afraid of rocketing myself in the next room, 
+I wasn't sure where the respawns could happen. The last part of the map went terrible, took so much damage, 
+I think I did everything right here and just got really unlucky. I knew there was a berserk on the next map.
+
+Map 26: Annoying map, shouldn't be too much of a problem, but with my health it is one. Dumb mistake 
+trying to kill the first 2 spectres with SSG, that could have killed me if I get blocked by the imp 
+from behind and don't manage to kill the spectres somehow. I need all the health I can get for the next 
+map, so surviving isn't enough. Everything goes really well up until the yellow key, not much I can do 
+to avoid the damage there. I know about the soulsphere, but grabbing it is just more dangerous. Slowly 
+I loss most my health, but if I exit at about a 100 I'll take it. 
+
+Map 27: Mount pain, the last barrier for 30tn really, the last section is very dangerous. The start will 
+depend on how much health I have. Small mistake using chaingun to clear the chaingunners at the start, 
+then I get hit by a few fireballs in the next section. When I took a fireball hit after grabbing the rad 
+suit I was telling myself not to die like this, not in this god damn sewer of all places, so I started 
+focusing and managed to get to the next section without taking more hits. Once I grab the green armor it's 
+usually straightforward until my invurnability runs out, and then it's all about the next part, feels 
+like the entire run has been leading up to here. Slowly clear out everything with chaingun, after grabbing 
+the key I took so much damage which I probably could have avoided. I wasn't 100% sure the 2 BFGs would 
+clear out the enemies infront of me, if I get stuck then I'm dead. The second BFG was several times fired 
+to early for me too open the door in time during practice. I then made some huge mistakes by taking damage 
+from the imp, and when I opened up the door to the last section I was supposed to stand in the corner, at 
+this point I was sure I was going to die because the vile could even be awake if the outer area didn't 
+kill me. I was so happy to make it through this map, it really is awful.
+
+Map 28: Dying at this point is unaccaptable, should be straightforward from here. Mega armor and some health 
+at the start before a mega sphere, so plenty of health right away. After grabbing the red key then go through 
+the maze and grab the blue key, before grabbing the last key and another mega sphere.
+
+Map 29: I can take the start as slow as I want, grab a soulsphere as well. The next area I make sure not to 
+wake up the arch-vile and clear out the lost souls. I don't want to get blocked in the crushers as they will 
+kill me no matter how much health I have. I use the SSG to kill the mastermind since I don't lose any health 
+that way. Second to last room I go pacifist until going through the teleporter to the yellow key as to not 
+wake up the arch-vile, the rest should be easy.
+
+Map 30: A bit afraid of everything here, so much that could instantly kill you, but all of them unlikely. 
+The first obstacle is the puzzle platforms, just do it the normal way, should be impossible to fail it. 
+I make sure to kill the lost souls because I don't want them to do anything unexpected like they did on 
+map 27 for 30pn which should have killed me. The next area is also dangerous, revenant rockets have the 
+possibility to knock me off. I told myself to just don't fall off running back from the switch, I refuse 
+to die to a mistake at this point, it's possible to take damage from the revenants and then to get killed 
+by the cyberdemon. I really have no 100% method to hit the switch by the cyberdemon, but it should work 
+9 out of 10 times and anything else is probably worse. Even if I should get hit I have enough health to 
+survive this time. There is also another problem with this particular room, if I stand in certain areas 
+and look in certain directions my game will exit\crash, and I wouldn't even have a failed demo. When I 
+turned around after the switch it might have been close. Apparently it's all the pillars in the room that 
+causes it in cndoom sourceport. 
+
+I use chaingun just to avoid any dumb self rockets, make sure to clear out everything because telefrag can happen. 
+I look around to see if the demon has respawned before going to the last room. I get the baron to infight the 
+cacodemon, I don't want him flying around when I try to kill the IoS. My strategy worked perfect here, kind of miss 
+timed my first BFG after the barons, but I got the hit on the cube spawn so it didn't matter. I knew it was over 
+when I didn't see anything in front of me, I can just spam BFGs and I only need 300 damage, so about 75% chance of 
+1 BFG being enough, 3 would be 100%. Barons respawning would be the worst, as I would have to kill them and probably 
+wait for the next cube spawn.
+
+There we go, Final Doom has been completed on nightmare!

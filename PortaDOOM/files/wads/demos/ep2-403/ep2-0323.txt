@@ -1,0 +1,46 @@
+Runner: Zero-Master
+Date: 2016-11-17
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 2 (E2M1-E2M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 3:23 (03:26.06)
+Time With    M8: 4:03 (04:06.86)
+
+----------------------------------------------------------------
+Level			Map	Time		ep2-0327
+
+Deimos Anomaly		E2M1 -	0:39		 0:00
+Containment Area	E2M2 -	0:16		 0:00
+Refinery		E2M3 -	0:32		 0:00
+Deimos Lab		E2M4 -	0:43		 0:00
+Command Center		E2M5 -	0:31		-0:03
+Halls of the Damned	E2M6 -	0:29		-0:01
+Spawning Vats		E2M7 -	0:13		 0:00
+Tower of Babel		E2M8 -	0:40		-0:05
+----------------------------------------------------------------
+			TOTAL -	4:03		-0:09
+E2M8 comparison is not relevant. E2M1-E2M7 time is improved by 4 seconds.
+
+Description: 
+This didn't take very long, I've been meaning to improve this episode since it was never any good.
+Not that this run is great, but it's at least a bit better :)
+
+Mostly comes down to E2M6, it's all about that void glide + switch press, everything else is easy.
+Standard times on M1,M2 and M3, dumb mistake on M4 costing me a second from the usual 42 seconds I get here.
+I made up for it by getting 31 seconds on M5, usually get 32 seconds there.
+
+Actually E2M6 is all about the switch press now, found a quick way to do the void glide, works most the 
+time if I do it correctly, but it has been 50\50 during attempts. Got 29.17, so close to 28 seconds
+which would have been amazing for me, but I'd take 29 seconds any day.
+
+Also a standard time on E2M7, but usually it's also 50\50 if I get 12 or 13 seconds, not sure
+if this setup I use can do 11 seconds, it always works if done correctly at the cost of a second.
+I had no idea if I had the correct angle\position and so I actually just got lucky here.
+Of course the normal way of doing the RJ works everytime if done correctly too, but it's much
+harder to time the rocket.
+
+Didn't mean to take a rocket on E2M8, scared me for a bit, at least I didn't have to go and pick 
+up extra rockets this time, time doesn't matter though.
+
+Still the easiest of the ultimate doom uv-speed episodes to improve further.

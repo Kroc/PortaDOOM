@@ -10,6 +10,7 @@ REM # - will search the engine's folder for WADs if not found elsewhere (e.g. "l
 REM # - IWAD file extensions can be omitted (".WAD" / ".PK3");
 REM #   PWAD and other WAD extensions are required due to the number of locations checked
 REM # - DeHackEd extension loading (".DEH", ".BEX" files)
+REM # - demo playback support
 REM # - files are checked to exist before being passed on to the engine
 REM # - arbitrary parameters can be passed on to the engine
 REM # - launches the engine in the native resolution of the current machine (portable)
@@ -151,6 +152,9 @@ IF "%~1" == "" (
 	ECHO    %_OPTIONS_%/SW%_%                  : Force software rendering. By default hardware
 	ECHO                           rendering is used in GZDoom and PRBoom+ ^("glboom-plus"^)
 	ECHO:
+	ECHO    %_OPTIONS_%/DEMO file%_%           : Play the specified demo file. See the section on demo
+	ECHO                           playback further down for details
+	ECHO:
 	ECHO %_HEADING_%Engines:%_%
 	REM ---------------------------------------------------------------------------------
 	ECHO:
@@ -165,7 +169,7 @@ IF "%~1" == "" (
 	ECHO     %_ENGINE_%doom64ex%_%            : DOOM 64 EX, specifically for DOOM 64
 	ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current. Use %_OPTIONS_%/SW%_% for ZDoom software rendering
 	ECHO     %_ENGINE_%gzdoom-??%_%           : Where ?? is "22", "23", "24" or "31"
-	ECHO     %_ENGINE_%prboom%_%              : PRBoom+
+	ECHO     %_ENGINE_%prboom%_%              : PRBoom+ defaults to OpenGL. Use %_OPTIONS_%/SW%_% for software
 	ECHO     %_ENGINE_%zandronum%_%           : Zandronum current ^(2.x^)
 	ECHO     %_ENGINE_%zandronum-?%_%         : Where ? is "2" or "3"
 	ECHO:
@@ -275,6 +279,7 @@ IF "%~1" == "" (
 	ECHO     and will be loaded using the correct "-deh" or "-bex" engine parameter.
 	ECHO:
 	ECHO %_HEADING_%Config File:%_%
+	REM ---------------------------------------------------------------------------------
 	ECHO:
 	ECHO     For portability doom.bat has default configuration files for each engine
 	ECHO     which will be copied to the save folder for that engine when one does not
@@ -285,6 +290,7 @@ IF "%~1" == "" (
 	ECHO     be used as intended and doom.bat will not supply its own.
 	ECHO:
 	ECHO %_HEADING_%Savegames:%_%
+	REM ---------------------------------------------------------------------------------
 	ECHO:
 	ECHO     Savegames are not saved alongside the engine as is default, but rather
 	ECHO     in a "%SAVES%" folder. To prevent incompatibilites and potential data-loss
@@ -292,9 +298,21 @@ IF "%~1" == "" (
 	ECHO     "zandronum" etc.^) and then by the PWAD name ^(or IWAD name if no PWAD
 	ECHO     is specified^). I.e. for the command:
 	ECHO:
-	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%zdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%breach.wad%_%
+	ECHO            %_MISC_%doom.bat%_% %_ENGINE_%gzdoom%_% %_IWAD_%DOOM2%_% %_PWAD_%breach.wad%_%
 	ECHO:
-	ECHO     the savegames will be located in "%SAVES%\zdoom\breach\".
+	ECHO     the savegames will be located in "%SAVES%\gzdoom\breach\".
+	ECHO:
+	ECHO %_HEADING_%Demo Playback:%_%
+	REM ---------------------------------------------------------------------------------
+	ECHO:
+	ECHO     Doom play sessions can be recorded and played back later. These are often
+	ECHO     distributed as ".lmp" files. The %_OPTIONS_%/DEMO%_% option specifies the file to play.
+	ECHO:
+	ECHO     Unlike the %_PARAMS_%-playdemo%_% engine parameter that requires the path to be valid,
+	ECHO     doom.bat will look for the demo file in the 'current' directory from which
+	ECHO     doom.bat has been called, the "%WADS%" directory, and if a PWAD is given,
+	ECHO     in its directory too.
+	ECHO:
 	
 	ECHO %ESC_OFF%
 	PAUSE & EXIT /B 0
@@ -309,7 +327,7 @@ ECHO:
 
 REM # remember the current directory before we change it;
 REM # this will be used as an additional search location for finding PWADs
-SET "OLD_DIR=%CD%"
+SET "CUR_DIR=%CD%"
 
 REM # change current directory to that of this script;
 REM # ensures that shortcuts to this script don't end up looking elsewhere for files
@@ -318,8 +336,8 @@ PUSHD "%~dp0"
 REM # if the directory this script was called from is somewhere within
 REM # the same heirarchy of this script, make the folder path relative
 SETLOCAL ENABLEDELAYEDEXPANSION
-SET "OLD_DIR=!OLD_DIR:%CD%\=!"
-ENDLOCAL & SET "OLD_DIR=%OLD_DIR%"
+SET "CUR_DIR=!CUR_DIR:%CD%\=!"
+ENDLOCAL & SET "CUR_DIR=%CUR_DIR%"
 
 REM # NOTE: many doom engines save their config files in the 'current directory', which is typically expected to be
 REM # that of the executable. However, we want to separate user-data (such as savegames) from the engines. whilst we
@@ -359,6 +377,7 @@ SET CONSOLE=0
 SET DEFAULT=0
 SET WAIT=0
 SET SW=0
+SET "DEMO="
 
 
 :options
@@ -398,6 +417,15 @@ IF /I "%~1" == "/SW" (
 	SET SW=1
 	REM # check for any other options
 	SHIFT & GOTO :options
+)
+REM # demo file playback?
+IF /I "%~1" == "/DEMO" (
+	REM # fetch the demo file
+	SET DEMO=%~2
+	REM # check for any other options;
+	REM # we'll defer the validation of the demo file until we know the IWAD/PWAD
+	SHIFT & SHIFT
+	GOTO :options
 )
 
 
@@ -722,7 +750,7 @@ SET "PWAD_PATH=%WADS%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
 
 REM # check the "current directory" that called this script
-SET "PWAD_PATH=%OLD_DIR%\%PWAD%"
+SET "PWAD_PATH=%CUR_DIR%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
 
 REM # TODO: check HEXDD.WAD
@@ -1074,6 +1102,8 @@ ECHO          PWAD : %PWAD_PATH%
 REM # if a PWAD was given we can set that as the previous directory so that
 REM # the first file in the files list will be checked for in the PWAD's directory
 CALL :prev_dir "%PWAD_PATH%"
+REM # remember the PWAD directory specifically for looking for a demo file
+SET "PWAD_DIR=%PREV_DIR%"
 
 REM # is the PWAD path absolute?
 REM # (i.e. begins with a drive letter, making ":" the second character)
@@ -1244,7 +1274,7 @@ SHIFT
 	SET "FILE=%WADS%\%~1"
 	IF EXIST "%FILE%" GOTO :file_found
 	REM # also check the directory that called this script
-	SET "FILE=%OLD_DIR%\%~1"
+	SET "FILE=%CUR_DIR%\%~1"
 	IF EXIST "%FILE%" GOTO :file_found
 	REM # check the engine directory
 	SET "FILE=%ENGINE_DIR%\%~1"
@@ -1263,7 +1293,7 @@ SHIFT
 		ECHO 	 "%PREV_DIR%\%~1"
 	)
 	ECHO 	 "%WADS%\%~1"
-	ECHO 	 "%OLD_DIR%\%~1"
+	ECHO 	 "%CUR_DIR%\%~1"
 	ECHO 	 "%ENGINE_DIR%\%~1"
 	ECHO:
 	ECHO  Command:
@@ -1330,7 +1360,63 @@ IF %ANY_BEX% EQU 1 (
 	SET PARAMS=%PARAMS% -bex %BEX%
 )
 
+:demo
+REM # demo playback?
+IF "%DEMO%" == "" GOTO :screenres
+
+REM # is the demo file path absolute?
+IF "%DEMO:~1,1%" == ":" (
+	REM # for an absolute path, paths do not need to be adjusted
+	SET "DEMO_PATH=%DEMO%"
+	GOTO :demo_check
+)
+
+:demo_dir
+REM # construct a path based on the 'current' directory
+SET "DEMO_PATH=%CUR_DIR%\%DEMO%"
+REM # is it there?
+IF EXIST "%DEMO_PATH%" GOTO :demo_found
+
+:demo_pwad
+REM # if no PWAD, try the WADs directory
+IF "%PWAD%" == "" GOTO :demo_wad
+
+REM # construct a path based on the PWAD directory
+SET "DEMO_PATH=%PWAD_DIR%\%DEMO%"
+REM # is it there?
+IF EXIST "%DEMO_PATH%" GOTO :demo_found
+
+:demo_wad
+REM # construct a path based on the WADs directory
+SET "DEMO_PATH=%WADS%\%DEMO%"
+
+:demo_check
+IF EXIST "%DEMO_PATH%" GOTO :demo_found
+
+:demo_missing
+	ECHO:
+	ECHO  ERROR: The demo file does not exist:
+	ECHO:
+	ECHO     "%DEMO_PATH%"
+	ECHO:
+	ECHO  Command:
+	ECHO:
+	ECHO     doom.bat %*
+	ECHO:
+	POPD
+	PAUSE
+	EXIT /B 1
+
+:demo_found
+REM # if the demo file is relative, we'll need to fix the relative path
+REM # to account for what will be the current directory once we launch
+IF NOT "%DEMO:~1,1%" == ":" SET "DEMO_PATH=%FIX_PATH%\%DEMO_PATH%"
+REM # add to the command line and notify user
+SET PARAMS=%PARAMS% -playdemo "%DEMO_PATH%"
+ECHO     -playdemo : %DEMO%
+
 REM # get the desktop screen resolution:
+:screenres
 REM # http://stackoverflow.com/questions/25532444/get-screen-resolution-as-a-variable-in-cmd
 REM # note that this will be the 'primary monitor', which may not be desired by some users,
 REM # but that's hardly our fault since many ports don't support fullscreen anywhere else anyway

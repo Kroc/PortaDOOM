@@ -1,0 +1,79 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: NM-Speed
+Map: Episode 4 (E4M1-E4M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 5:42 (05:44.66)
+Time With    M8: 6:54 (06:57.23)
+
+----------------------------------------------------------------
+Level			Map	Time		e4nm0554
+
+Hell Beneath  	        E4M1 -	0:44		-0:01
+Perfect Hatred  	E4M2 -	0:36		-0:05
+Sever The Wicked	E4M3 -	0:51		 0:00
+Unruly Evil		E4M4 -	0:49		+0:02
+They Will Repent	E4M5 -	0:40		-0:02
+Against Thee Wickedly	E4M6 -	1:28		+0:11
+And Hell Followed	E4M7 -	0:34		-0:17
+Unto The Cruel		E4M8 -	1:12		-0:12
+----------------------------------------------------------------
+			TOTAL -	6:54		-0:24
+E4M8 comparison is not relevant. E4M1-E4M7 time is improved by 12 seconds.
+
+Description: This was a very fun episode to run, I might improve this further.
+I do E4M6 a bit differently to the way stx-vile does it, my way is much safer, 
+but also a few seconds slower. I use the same idea I used for 30pn4357 on map 24,
+I kill the cyberdemon with BFG plasma balls (some tracers hit too this time). 
+However, I make up for the time loss with a much better route for E4M7.
+
+Unlike episode 2 and 3 this episode has very little luck involved with the 
+route that I use, E4 on UV is also the hardest of the episodes, mostly
+because I use the same strategy to kill the cyber as stx-vile used in his
+NM run, which is to run up to the cyber and try to BFG him before he kills you.
+There is no way I am going through the same pain as I went through with ep4-0311
+by dying over and over to the cyber.
+
+E4M1: This whole episode is just fun to run, this map isn't too bad on 
+nightmare if you don't get unlucky with the spectres running off or really
+bad respawns. Lucky with 2 rockets killing 3 imps by the key, unlucky with
+the trigger skip on the exit.
+
+E4M2: Start off with some infighting and grab 2 medikits and hope you don't
+get killed as you jump into the other room. Several times have I gotten pushed
+just as I try to clear that small gap after the switch which kills the run.
+
+Sometimes the cacodemons will kill you really quickly when you try to grab
+the BFG through the wall. 
+
+E4M3: Grab the invurnability, get some health, armor and ammo and just exit.
+So an easy map, but you will probably get blocked a lot on the way, so not
+too easy to get a good time.
+
+E4M4: Yet another invurnability, I take the start a bit slow to not waste any 
+health, I will need it for E4M6, otherwise an easy map.
+
+E4M5: Straightforward map.
+
+E4M6: I was supposed to grab the plasma ammo, but I got pushed off. That doesn't
+cost a lot of time since I also grab a soulsphere. This left me with more plasma 
+ammo then I usually have, which was fortunate since it looks like I wasted a few
+BFG's on the cyber that missed. This map can be done a lot faster if you just do
+it like on UV difficulty, though I am not sure if I can be bothered with a run
+like that anytime soon. Perhaps just skipping the soulsphere could work if you
+have decent health from the previous level, I might look into that if I do this 
+again.
+
+E4M7: The route here depends on how much health you have, in this case I figured
+I'd have enough to go quick at the start and grab the mega armor before grabbing
+the berserk. If I have 100 health I would just skip the mega and go straight for
+the red key and green armor. There's enough health on the next map to survive the 
+start. If I should have almost no health then you could take the start really slow
+and go for the soulsphere. 
+
+The rest is just plasma and BFG spam, then do the skip to the exit. I make
+sure to kill the shotgunners in the gap to the exit so I don't get blocked.
+The rest should just be avoiding any fireballs.
+
+E4M8: This map can be dangerous, since you can take a lot of damage really quickly.
+Shouldn't be a problem if you don't waste cells.

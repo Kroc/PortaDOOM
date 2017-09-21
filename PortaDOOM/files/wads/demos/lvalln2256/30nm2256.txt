@@ -1,0 +1,258 @@
+Runner: Zero-Master
+Date: 2016-07-31
+IWAD: DOOM2.wad
+Category: NM-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 22:56 (23:11.89)
+	
+Map	Time	
+01	00:06	:)
+02	00:49	:)
+03	00:33	:))
+04	00:36	:))
+05	00:32	:))
+06	01:03	:)
+07	00:21	:)
+08	00:29	:|
+09	01:03	:)
+10	00:40	:)
+11	00:37	:)
+12	00:51	:)))
+13	01:18	:((
+14	00:24	:)
+15	00:39	:|
+31	00:35	:(
+16	00:17	:)
+17	01:56	:(
+18	00:26	:|
+19	00:49	:)
+20	00:39	:)
+21	00:27	:((
+22	00:37	:)
+23	00:49	:)
+24	00:45	:|
+25	01:01	:)
+26	00:40	:))
+27	00:30	:))
+28	00:54	:(
+29	01:47	:)
+30	00:43	:(((
+
+	
+Description:
+Finally this nightmare comes to an end!
+
+This *should* be the last minute barrier for 30nm, while there is always time to
+be saved in doom, I cannot imagine the amount of luck you'd need for a time under
+22 minutes. 
+
+At first I thought the time wasn't going to be good enough, but the first 12 maps 
+went extremely well, the first 10 maps were only 4 seconds slower than my best, 
+with map 11 and 12 I think this might have been my best run up until map 13. 
+Unfortuntately I got blocked by an arachnotron on map 13, that's very rare.
+It might have been because I fired my chaingun a frame or so too early\late, I'm
+not sure, either way this usually never happens. 
+
+The second big time loss was map 21, I need to get that glide very quickly, 
+this time I failed to kill the imps with the SSG, so I also failed the glide 
+costing 5 seconds. The biggest time loss was on map 30, again I get some bad 
+luck here... last time I got an arch-vile which just straight up threw me off 
+the elevator and that's it. So a revenant isn't the worst, I also believe the 
+chance of homing rockets are 50%, it would never had hit me if it wasn't a homing rocket.
+Finally it also did 60 damage so I barely missed the rocket, I think with a lower damage 
+roll it would have worked, though I could maybe have stood a bit further too the right on 
+the platform.
+
+
+Map comments:
+Map 01: The shortest map, usually quite easy. Might even be easier on NM than 
+on UV since monsters attack immidiatly and so they don't move to block you. 
+Only once did I manage to get 5.97, but that required me to get past the imp faster, 
+which is more likely to cause you to take damage so I avoid even going for it.
+
+
+Map 02: The map I am most likely to die on, for obvious reasons. No weapons and no armor, 
+plenty of hitscan and not too much health pickups. My best time ever on this map is 38 seconds. 
+Current IL record is 42 seconds (obviously easy to improve), and you can even skip the 
+shotgunners that aren't next to the 32-unit gap. So I would say 36 seconds would be possible for an IL, 
+would require some insane luck though.
+
+
+Map 03: I do a setup on the elevator which gives me the best chance of reaching the secret while 
+at the same time not waking up the chaingunner by the teleport exit. This will prevent him from 
+moving around and also cause infighting with the other chaingunner. Not shooting will also prevent 
+the shotgunner by the blue key door window from waking up, makes the blue key skip easier. 
+Even if I fail skipping the blue key I don't lose too much time, as I don't have to run past 
+the spectres again. Usually I would really like to avoid running on the rising bridge, 
+as there is no air control you have no control of your movement and moving too fast or taking a 
+projectile can push you off very easily then. 
+
+
+Map 04: I don't shoot a rocket at the initial shotgunners since it doesn't really do anything, 
+and instead I let the infight first before running past them. I then instead use 2 rockets to 
+make sure the chaingunner dies and try to hit the 3rd rocket on the other chaingunners. 
+Since I never woke up some of the imps the 4th rocket will usually always do plenty of damage. 
+
+
+Map 05: This is also a difficult map, good chance I will die here. I tried a lot of different 
+things for this map, now I pretty much just skip the mega armor every time and hope for the best.
+It's faster anyways, but grabbing the mega armor might actually be a good idea if you're already
+on a good time and would like to survive. This time my health was good.
+
+
+Map 06: There are 3 "jumps" here that can be quite annoying. I made a small change to the way I do
+the last jump, it works a lot better. 
+
+
+Map 07: My current route for this map is pretty good, sometimes you can ignore a manc or two if you want to.
+One of the mancs on the left side didn't move far enough down so I had to kill him. My time was pretty decent
+so I didn't want to risk anything. 
+
+
+Map 08: This map is very easy, only way to die on this map is for the barons to push you into 
+the acid at the exit. However, it is also easy to lose time by getting blocked by a baron not 
+moving, or worse the cyberdemon. 
+
+
+Map 09: Skipping the mega armor at the start of this map will make map 10 and 11 a lot easier, 
+also map 12 if you can keep at least 100 of it until to pass the green armor. 
+This map used to be very dangerous when I go through the door before the mega armor, 
+as there can be pain elementals, cacodemons, shotgunners or imps blocking your way while 
+you are getting shot at by everything including some mancubi. However, I managed to find 
+a way to remove that problem, by introducing a rocket jump at the start to skip hitting 
+all the switches opening up the monster closets. Took quite some time before I found an 
+angle that will give me a high enough success rate, but luckily it existed! This rocket 
+jump is done a bit differently, I use strafe right for a few tics before I fire and 
+then straferun backwards. 
+
+
+Map 10: Much easier with mega armor, you still need to keep some health for the next map 
+so you can skip the soulsphere.
+
+
+Map 11: Also much easier with mega armor. I've seen a lot of stupid shit kill me on this map, 
+like lost souls managing to block me from hitting the first switch, cacodemon blocking the 
+pathway, going from moving forwards to directly backwards after colliding with the wall\PE 
+before the jump down to the cacodemons, lost soul getting in more amazing blocks down by the cacodemons, 
+respawns in the last sections, imps on the elevator.... 
+
+
+Map 12: One of the few sections where you get a short break at the start. It's very rare to 
+die before reaching the cacodemons, but it can happen after green armor by the shotgunners. 
+My strategy for the cacodemon room works very well, make sure to clear the 3 cacodemons in 
+the middle before taking the one in the upper right corner. You will always have to wait for 
+the elevator at the upper left so you kill that one and the upper middle caco before hitting 
+those switches. The only other switch you have to wait for the elevator is the upper right one, 
+and it should always be up if you do things correctly.
+
+
+Map 13: Just had to get blocked by the arachnotron... Easy map to survive, 
+impossible to get a good time.
+
+
+Map 14: I don't like this map, nothing more annoying than dying here, because it is such an easy map. 
+There's plenty of health around so that's not the issue, it's the wallrun trick that sometimes fail. 
+I've been doing it wrong several times before, my current method should work all the time, stupid of 
+me not to use it earlier and before I wasted a few runs here. One of the most random ways was to lose 
+the wall woble state was while I had a certain angle and was using SR40 which suddenly bounced me 
+off from a flat wall. I took me some time to be able to reproduce the mistake so it was a very rare occurence, 
+so I didn't discover it while I practiced it, and instead it ruined one of my attempts.
+
+
+Map 15: I hate this map too, the jump down to the switch\cells is always really scary. 
+Not much I can do and run forward, and so it's all up to the hitscan if they will push me off, 
+or even just kill me. Doesn't happen too often though.
+
+
+Map 31: One thing I noticed on this map is that the SS soldiers can face you, but shoot backwards when infighting. 
+It was kind of confussing at first because it looks like they are always trying to shoot you. 
+I'll use the plasma rifle by the 4th last door and a BFG in the last room to minimize damage taken. 
+
+
+Map 16: BFG to clear everything and just do the glide quickly... usually works... usually.
+
+
+Map 17: There is a lot of health and armor throughout the map, so it is not that difficult, 
+but I have died a few more times that I would like on this map. Usually it's after yellow key switch to 
+the chaingunner, which should be really uneccsary if I just try to kill him with the SSG first. 
+I use 2 BFG's at the yellow key area, which makes things faster and easier, as it kills the chaingunner 
+on top who usually goes hiding and pops back out to kill you.
+
+
+Map 18: This map is straightforward, unless I have really bad health I will skip the soulsphere here, 
+since often it is not necessary. Of course I have actually died on this map 3 times, one of them was when 
+I grabbed the soulsphere anyways. 
+
+
+Map 19: This map used to be very easy, but I've died 3 times on this map, all after the first teleporter. 
+Demons are really fast on nightmare, one of them managed to get between me and the door while there was 
+another one infront of me and they killed me very quickly. 
+
+
+Map 20: This map should be easy, but it's nightmare so anything can happen. The cacodemon after the 
+first teleporter sometimes leaves the room which wastes a BFG and several seconds because he has to die. 
+I've died going through the next teleporter because you can't kill the hitscan before they start shooting you.
+I've died the most by the pain elemental, but that was before I started using a BFG on him every time. 
+The rest is straigtforward, I move to the right right after the last teleporter to wake up the 
+revenants so they are in a more favourable position which makes them less likely to hit.
+
+
+Map 21: Some new strategy here, previously I would go back through the teleporter, 
+but then I started using a BFG to clear the imps. Now I just use the SSG and line up 
+the best angle to get the glide as quickly as possible instead. Projectiles will hit 
+you very soon so you have to get the glide quickly, which I didn't manage to do this time.
+
+
+Map 22: Very difficult map, it's possible to do a rocket jump and a jump to skip the last elevator, 
+each saving 3 seconds. This map fails so often that I try to take it as safe as I can while still 
+getting a consistent decent time. I need the health for the next map anyways. I have spent so many hours 
+trying to find a good route for this map, more than any other map I think at this point 
+(though probably not nearly as much as some maps of plutonia). I also accidently switched
+to the SSG here, cost me a lot of health.
+
+
+Map 23: You will always take damage from the chaingunners after the first teleporter, 
+so depending on your health you can decide if you want to use a BFG to clear everything 
+and grab the berzerk and 2 backpacks, which costs about 4-5 seconds. The barrel wallrun can be done 
+if you skip the linedef at the start on nightmare, see 30nm2620.txt for more info.
+Also that damn arch-vile got me, small mistake from me.
+
+
+Map 24: Ah map 24, how many times have I failed that wallrun... I've even died to the demons.
+The lost souls are pretty much everything here, I fire a BFG before going into the area as it will 
+usually clear a couple of them which have a decent chance of blocking me and thus killing me.
+I missed a demon with the BFG which cost me a lot of time since I used the SSG to kill him.
+Only 2 lost souls after I spent another BFG to clear ever more of them, I make sure to fire
+the BFG in the left direction as lost souls on the right side should never be a problem.
+
+Map 25: I grab some extra cells here, I was already low on health so it's just safer to do it like that.
+
+Map 26: I died here twice not too long ago, and wow is that annoying. Both of them to failed jump over
+to the yellow key. 
+
+Map 27: Around 15% chance he doesn't open the door, this time he did.
+
+Map 28: Should have skipped the megasphere I think.
+
+Map 29: I changed this route a bit, without losing any time. I can't do both rocket jumps since
+that would never work on nightmare. This way I don't have to worry about keeping so much health 
+for the rocket jump to the last teleporter. I still have to lower 1 barricade and make it using SR50, 
+but I found a new setup which makes it a bit easier and just barely beats respawn. 
+
+Map 30: Everything was fine until the revenant spawned on the 4th spawn. I always kill the 1st 
+spawn and the 5th spawn never has the time to do anything. That leaves me with 3 possiblities.
+Pain elementals aren't too bad, more often than not when I practice I would get the 1-cycle.
+Still a bit close to 50/50, a revenant however is very unpredictable as you never know
+what the rockets will do. If they aren't homing rockets they do nothing, if they do almost no 
+damage it's also fine. This time I got hit by 60 damage which pushed me a bit too far. 
+
+Earlier I had an even better run, and that gave me an arch-vile on the 4th spawn... there was
+no chance at all. Eventually I died to a cube\telefrag there.
+
+Many years ago now there used to be some back and forth competition between Vile and Henning,
+it's awesome to once again have a bit of back and forth for this category with eLim!
+
+Thanks to all of them and of course I learned a lot from Looper as well from UV...
+which reminds me, all this nightmare should make UV easy... should.. we'll see if
+doom 2 can't be pushed maybe a bit further in the future as well.
