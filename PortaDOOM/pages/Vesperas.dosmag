@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP09:_Vesperas_(Master_Levels)
 
 :Vesperas                                         (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26*   Author : _John W. Anderson (aka Dr.Sleep)_
-:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *+Graphics
+:Released : *1995>12>26    Author : _John W. Anderson (aka Dr.Sleep)_
+:Levels   : *1              Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *+Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "VESPERAS.WAD":
@@ -21,9 +21,9 @@ VESPERAS (or "vespers"): an evening ceremony. This is the 7th Canto of INFERNO. 
  
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New level from scratch
-*Build Time*              : Three weeks
-*Editors/Utilities used*  : DETH 2.4 by _Antony J. Burden_ and _Simon Oke_;
+*Base                     : New level from scratch
+*Build Time               : Three weeks
+*Editors/Utilities used   : DETH 2.4 by _Antony J. Burden_ and _Simon Oke_;
 			    BSP v1.1w by _Colin Reed_;
 			    Reject Map Builder v1.2 by _Jens Hykkelbjerg_;
 			    Reject 1.0 by _L.M. Witek_;
@@ -32,6 +32,6 @@ VESPERAS (or "vespers"): an evening ceremony. This is the 7th Canto of INFERNO. 
 
 :Credits:
 :-------------------------------------------------------------------------------
-*Additional Credits*      : _Antony J. Burden_ and _Simon Oke_ for DETH 2.4;
+*Additional Credits       : _Antony J. Burden_ and _Simon Oke_ for DETH 2.4;
 			    _Shawn Green_, _American McGee_, _John Romero_, and everyone at Id Software; _Jim F. Flynn_;
 			    Not least, my son _Joshua_ (12) for testing <g>

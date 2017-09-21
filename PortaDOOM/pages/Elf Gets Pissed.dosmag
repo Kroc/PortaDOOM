@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 :Elf Gets Pissed                                    * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>02>18*   Author : _RottKing_
-:Levels   : *9*             Modes : *Single, Co-op
-:Requires : *zdoom*      Includes : *+Sounds +Music +Graphics
+:Released : *2016>02>18    Author : _RottKing_
+:Levels   : *9              Modes : *Single, Co-op
+:Requires : *zdoom       Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
@@ -20,10 +20,10 @@ An episode 1 replacement for Heretic.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New levels and one recycled speedmap
-*Build Time*              : TOO. LONG. (about 3 years??)
+*Base                     : New levels and one recycled speedmap
+*Build Time               : TOO. LONG. (about 3 years??)
 *Editors used*            : Doombuilder 2, SlumpED, Slade 3
-*Known Bugs*              : HAK HAK DRAKKHEN
+*Known Bugs               : HAK HAK DRAKKHEN
 
 :Credits
 :-------------------------------------------------------------------------------

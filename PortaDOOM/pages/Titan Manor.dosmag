@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Titan_Manor_(Master_Levels)
 
 :Titan Manor                                      (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26*   Author : _Jim Flynn_
-:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *+Graphics
+:Released : *1995>12>26    Author : _Jim Flynn_
+:Levels   : *1              Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *+Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "MANOR.WAD":
@@ -21,19 +21,19 @@ A strange and enigmatic building on a moon of Saturn contains the latest in alie
  
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New level from scratch
-*Tools(s) used*           : For level editing: DEU 5.2 (GCC), and DETH 1.1c
+*Base                     : New level from scratch
+*Tools(s) used            : For level editing: DEU 5.2 (GCC), and DETH 1.1c
 			    For node building: BSP 1.2x
 			    For reject map building: RMB 2.0
 			    For wad composition: DeuTex 3.1
 
 :Credits:
 :-------------------------------------------------------------------------------
- - _Brendon Wyber_ and _Raphael Quinet_ for DEU-GCC
- - _Antony Burden_ and _Simon Oke_ for DETH
- - _Colin Reed_ for BSP1.2x
- - _Olivier Montanuy_ for DeuTex 3.1
- - _HevKev (Kevin McGrail)_ for the DeuTex Manual
- - _Jens Hykkelbjerg_ for RMB
- - Those folks at ID, for Doom, and especially _Shawn Green_ for his encouragement and helpful comments.
- - Playtesters: _Peter Zahner_, _John Keary_, _Matt Jonelis_, _Dr Sleep_
+- _Brendon Wyber_ and _Raphael Quinet_ for DEU-GCC
+- _Antony Burden_ and _Simon Oke_ for DETH
+- _Colin Reed_ for BSP1.2x
+- _Olivier Montanuy_ for DeuTex 3.1
+- _HevKev (Kevin McGrail)_ for the DeuTex Manual
+- _Jens Hykkelbjerg_ for RMB
+- Those folks at ID, for Doom, and especially _Shawn Green_ for his encouragement and helpful comments.
+- Playtesters: _Peter Zahner_, _John Keary_, _Matt Jonelis_, _Dr Sleep_

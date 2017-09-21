@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/71430-breach-updated-to-beta3/
 
 :Breach                                             * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>28*   Author : _Viggles_
-:Levels   : *1*             Modes : *Single
-:Requires : *zdoom*      Includes : *None
+:Released : *2015>12>28    Author : _Viggles_
+:Levels   : *1              Modes : *Single
+:Requires : *zdoom       Includes : *None
 :-------------------------------------------------------------------------------
 
 Sprawling techbase medley with surreal interludes in hell. Assume the usual twaddle about teleportation research gone awry.
@@ -24,12 +24,12 @@ This was an exercise in using the original Doom 2 textures and specials to build
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : About 5 months spread over 1.5 years.
-*Editor(s) used*          : Doombuilder 2, GZDoomBuilder 2.3, Slade 3
-*Known Bugs*              : Slow loading and poor performance in Doomsday. A few slime trails here and there.
-*May Not Run With*        : Vanilla/Chocolate Doom, insufficiently limit-removing ports.
-*Tested With*             : ZDoom 2.7.1, Zandronum 2.0 and 3.0alpha, Doom Retro 1.9, PrBoom+ 2.5.1.2, Eternity 3.34.37, Doomsday 1.15.0
+*Base                     : New from scratch
+*Build Time               : About 5 months spread over 1.5 years.
+*Editor(s) used           : Doombuilder 2, GZDoomBuilder 2.3, Slade 3
+*Known Bugs               : Slow loading and poor performance in Doomsday. A few slime trails here and there.
+*May Not Run With         : Vanilla/Chocolate Doom, insufficiently limit-removing ports.
+*Tested With              : ZDoom 2.7.1, Zandronum 2.0 and 3.0alpha, Doom Retro 1.9, PrBoom+ 2.5.1.2, Eternity 3.34.37, Doomsday 1.15.0
 
 :Credits:
 :-------------------------------------------------------------------------------

@@ -4,23 +4,23 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shade
 
 :50 Shades of Greytall                              * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                        *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>09>01*   Author : *Various (see Credits)
-:Levels   : *18*            Modes : *Single, Co-op
-:Requires : *boom*       Includes : *+Music +Graphics +Patches
+:Released : *2015>09>01    Author : *Various (see Credits)
+:Levels   : *18             Modes : *Single, Co-op
+:Requires : *boom        Includes : *+Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 50 Shades of Graytall is a project designed around creating maps with interesting architecture and gameplay despite being limited to a selection of arguably hideous textures. Started in response to a silly post made in the Editing forum which led I and several others to attempt maps using the (slightly edited) rules in the post, hoping the result would be decent. Eventually opened up to the community and here we are! Hope you enjoy the maps and if you don't hey Doom projects cant be graytall the time.
     
 :Construction:
 :-------------------------------------------------------------------------------
-*Base*             : New from scratch
-*Build Time*       : Longer than it should have been
-*Editor(s) used*   : DB2, SLADE, GIMP
-*Known Bugs*       : visual tricks are broken in OpenGL.\\Play software, don't be a scrub
-*May Not Run With* : Boom incompatible ports
-*Tested With*      : PrBoom+ cl9
+*Base              : New from scratch
+*Build Time        : Longer than it should have been
+*Editor(s) used    : DB2, SLADE, GIMP
+*Known Bugs        : visual tricks are broken in OpenGL.\\Play software, don't be a scrub
+*May Not Run With  : Boom incompatible ports
+*Tested With       : PrBoom+ cl9
 
 :Credits:
 :-------------------------------------------------------------------------------

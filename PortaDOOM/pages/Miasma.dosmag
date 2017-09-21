@@ -4,22 +4,22 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 
 :Miasma                                             * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>02>03*?  Author : _Thomas "tourniquet" Seifert_
-:Levels   : *1*             Modes : *Single, Co-op
-:Requires : *boom*       Includes : *+Sounds +Music +Graphics +Patches
+:Released : *2016>02>03?   Author : _Thomas "tourniquet" Seifert_
+:Levels   : *1              Modes : *Single, Co-op
+:Requires : *boom        Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 One fairly large and complex map. Difficulty should be more on the challenging side, harder encounters are mostly optional though.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch 
-*Build Time*              : ~3 Months
-*Editor(s) used*          : Doombuilder 2, Slade 3
-*May Not Run With*        : ZDaemon due to extended nodes
-*Tested With*             : Prboom+ 2.5.1.4, Zdoom 2.7.1
+*Base                     : New from scratch 
+*Build Time               : ~3 Months
+*Editor(s) used           : Doombuilder 2, Slade 3
+*May Not Run With         : ZDaemon due to extended nodes
+*Tested With              : Prboom+ 2.5.1.4, Zdoom 2.7.1
 
 :Credits
 :-------------------------------------------------------------------------------

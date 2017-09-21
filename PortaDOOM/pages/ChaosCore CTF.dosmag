@@ -5,9 +5,9 @@ $KEY:W=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 :===============================================================================
                                  *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>04*   Author : *(see Credits)
-:Levels   : *30*            Modes : *Capture-The-Flag only
-:Requires : *Zandronum*  Includes : *+Sounds +Music +Graphics +Patches
+:Released : *2015>12>04    Author : *(see Credits)
+:Levels   : *30             Modes : *Capture-The-Flag only
+:Requires : *Zandronum   Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 $KEY:D=URL:http://doomseeker.drdteam.org/
@@ -17,10 +17,10 @@ $KEY:D=URL:http://doomseeker.drdteam.org/
 
 :Construction
 
-*Base*                  : New from scratch
-*Build Time*            : 2011 - Current
-*Editor(s) used*        : DoomBuilder, DoomBuilder2, GZDoom Builder, SLADE, XWE
-*Known Bugs*            : None that we know of
+*Base                   : New from scratch
+*Build Time             : 2011 - Current
+*Editor(s) used         : DoomBuilder, DoomBuilder2, GZDoom Builder, SLADE, XWE
+*Known Bugs             : None that we know of
 
 :Credits
 :-------------------------------------------------------------------------------

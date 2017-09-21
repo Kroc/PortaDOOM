@@ -5,9 +5,9 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 :===============================================================================
                                  *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>10>31*   Author : *Various (see credits)
-:Levels   : *None*          Modes : *Single
-:Requires : *gzdoom*     Includes : *+Sounds +Graphics
+:Released : *2016>10>31    Author : *Various (see credits)
+:Levels   : *None           Modes : *Single
+:Requires : *gzdoom      Includes : *+Sounds +Graphics
 :-------------------------------------------------------------------------------
 
 A gameplay mod bringing some of the Doom4 mechanics and its weapons, with mods included.
@@ -16,12 +16,12 @@ A gameplay mod bringing some of the Doom4 mechanics and its weapons, with mods i
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch 
-*Build Time*              : Something like 6 months
-*Editor(s) used*          : Slade, Programmer's notepad, GIMP, Audacity, Notepad++, Paint.net, FL Studio, GitKraken
-*Known Bugs*              : Sometimes glory kills will only do a quick punch of death instead of the GK animation. Mastermind GK will never show full animation due to tech limitations. Sometimes glory killing will make monsters clip through walls, floors or celings while being executed. If you use GZDoom devbuilds, HUD elements might look off. GZDoom 2.2 is recommended.
-*May Not Run With*        : GZDoom current devbuilds. Will NOT work with Zandronum. It might run in ZDoom but it will look like crap due to color limitations.
-*Tested With*             : GZDoom v2.2
+*Base                     : New from scratch 
+*Build Time               : Something like 6 months
+*Editor(s) used           : Slade, Programmer's notepad, GIMP, Audacity, Notepad++, Paint.net, FL Studio, GitKraken
+*Known Bugs               : Sometimes glory kills will only do a quick punch of death instead of the GK animation. Mastermind GK will never show full animation due to tech limitations. Sometimes glory killing will make monsters clip through walls, floors or celings while being executed. If you use GZDoom devbuilds, HUD elements might look off. GZDoom 2.2 is recommended.
+*May Not Run With         : GZDoom current devbuilds. Will NOT work with Zandronum. It might run in ZDoom but it will look like crap due to color limitations.
+*Tested With              : GZDoom v2.2
 
 :Credits
 :-------------------------------------------------------------------------------

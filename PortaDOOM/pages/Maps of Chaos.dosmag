@@ -5,9 +5,9 @@ $KEY:4=SHELL:doom.bat glboom DOOM2 megawads\MapsOfChaos\mapsofchaos-hc.wad
 
 :Maps of Chaos
 :===============================================================================
-:Released : *2012>05>27*   Author : _Glaice_
-:Levels   : *32*            Modes : *Single, Co-op
-:Requires : *boom*       Includes : *None
+:Released : *2012>05>27    Author : _Glaice_
+:Levels   : *32             Modes : *Single, Co-op
+:Requires : *boom        Includes : *None
 :-------------------------------------------------------------------------------
 
 This is a project that originally stemmed from a file I named "Doom Co-op" which started off way back in 2006 or 2007 with increased monster count more or less plus a few sound and minor graphics visuals but I eventually moved into actually adding new sections to both original sets of maps (except episode 4 of Doom) on top of making it suitable for single and co-op multiplayer.

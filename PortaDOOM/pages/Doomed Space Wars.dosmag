@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 
 :Doomed Space Wars                               * 2015 Cacoward runner up! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>09>01*   Author : _Paul Corfiatis_
-:Levels   : *12+9*          Modes : *Single, Co-op, Deathmatch
-:Requires : *zdoom*      Includes : *+Sounds +Music +Graphics +Patches
+:Released : *2015>09>01    Author : _Paul Corfiatis_
+:Levels   : *12+9           Modes : *Single, Co-op, Deathmatch
+:Requires : *zdoom       Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of Zdoom's special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
@@ -109,21 +109,21 @@ In addition to the familiar foes you will encounter are some new beasts.
 - MAP05 exit to MAP06
 - MAP06 exit to MAP07
 - MAP07 exit to MAP08
-	 secret exit to MAP11
+        secret exit to MAP11
 - MAP11 exit to MAP08
-	 secret exit to MAP12
+        secret exit to MAP12
 - MAP12 exit to MAP08
 - MAP08 exit to MAP09
 - MAP09 exit to end of episode
 
 :Construction:
 :-------------------------------------------------------------------------------
-*Base*                    : New levels from scratch
-*Build Time*              : Bloody took forever (about 21 months)
-*Editor(s) used*          : Doom Builder, XWE, SLADE, Cakewalk Sonar (composing music), FL_Studio (composing and mixing music)
-*Known Bugs*              : Hopefully none.
-*May Not Run With*        : Non Zdoom compatible ports.
-*Tested With*             : Zdoom, Gzdoom
+*Base                     : New levels from scratch
+*Build Time               : Bloody took forever (about 21 months)
+*Editor(s) used           : Doom Builder, XWE, SLADE, Cakewalk Sonar (composing music), FL_Studio (composing and mixing music)
+*Known Bugs               : Hopefully none.
+*May Not Run With         : Non Zdoom compatible ports.
+*Tested With              : Zdoom, Gzdoom
 
 :Credits:
 :-------------------------------------------------------------------------------

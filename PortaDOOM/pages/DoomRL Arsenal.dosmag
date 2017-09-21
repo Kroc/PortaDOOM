@@ -4,11 +4,11 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DoomRL Arsenal                                     * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2013>08>14+*  Author : _Yholl_ *et al. (see credits)
-:Levels   : *None*          Modes : *Single, Co-op
-:Requires : *zdoom*      Includes : *+Sounds +Graphics +Patches
+:Released : *2013>08>14+   Author : _Yholl_ *et al. (see credits)
+:Levels   : *None           Modes : *Single, Co-op
+:Requires : *zdoom       Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 !WARNING: This mod requires binding some extra keys. Go to "Customize Controls" in the menu and set the DoomRL-A specific keys.
@@ -118,38 +118,38 @@ When you apply the last modpack in a correct combination, it will ask you if you
 :-------------------------------------------------------------------------------
 Five different classes are available in the mod, three being DoomRL classes, and two being entirely new. Each of the classes starts with a powerful Master trait that affects how they play, as well as their own special passive stats.
 
-*Class*   : Marine
+*Class    : Marine
 :===============================================================================
-*Trait*   : Ammochain
-*Effect*  : Rapidfire weaponry only consumes 1 ammo per 4 shots, or 1 ammo per burst, depending on the weapon
-*Passive* : Powerups last 50% longer
-*Items*   : Starts with a Chaingun
+*Trait    : Ammochain
+*Effect   : Rapidfire weaponry only consumes 1 ammo per 4 shots, or 1 ammo per burst, depending on the weapon
+*Passive  : Powerups last 50% longer
+*Items    : Starts with a Chaingun
 
-*Class*   : Scout
+*Class    : Scout
 :===============================================================================
-*Trait*   : Sharpshooter
-*Effect*  : Pistol weapons do between 8x to 3x damage, based on their firerate, faster weapons dealing less. Non rapid pistols have halved spread
-*Passive* : Runs 10% faster and jumps 10% higher. Always has computer map
-*Items*   : Starts with a Pistol
+*Trait    : Sharpshooter
+*Effect   : Pistol weapons do between 8x to 3x damage, based on their firerate, faster weapons dealing less. Non rapid pistols have halved spread
+*Passive  : Runs 10% faster and jumps 10% higher. Always has computer map
+*Items    : Starts with a Pistol
 
-*Class*   : Technician
+*Class    : Technician
 :===============================================================================
-*Trait*   : Scavenger
-*Effect*  : Can turn exotic rarity or higher weapons into modpacks. Can also remove a mod from weapons that have been modded, but destroys the weapon
-*Passive* : Computer maps function as tracking maps. Can carry up to 8 modpacks instead of 4. Starts with all Standard assemblies shown. Has various bonuses to mechanically related things
-*Items*   : Starts with a random Basic Assembly, and a random modpack
+*Trait    : Scavenger
+*Effect   : Can turn exotic rarity or higher weapons into modpacks. Can also remove a mod from weapons that have been modded, but destroys the weapon
+*Passive  : Computer maps function as tracking maps. Can carry up to 8 modpacks instead of 4. Starts with all Standard assemblies shown. Has various bonuses to mechanically related things
+*Items    : Starts with a random Basic Assembly, and a random modpack
 
-*Class*   : Renegade
+*Class    : Renegade
 :===============================================================================
-*Trait*   : Shellshock
-*Effect*  : Shoots an extra 50% more pellets, rounded up, with any attack that fires more than one shot in non-fixed pattern
-*Passive* : Can switch weapons instantly. Armor has 50% more protection, up to a max of 80%
+*Trait    : Shellshock
+*Effect   : Shoots an extra 50% more pellets, rounded up, with any attack that fires more than one shot in non-fixed pattern
+*Passive  : Can switch weapons instantly. Armor has 50% more protection, up to a max of 80%
 
-*Class*   : Demolitionist
+*Class    : Demolitionist
 :===============================================================================
-*Trait*   : Fireangel
-*Effect*  : Immune to splash damage
-*Passive* : Uses half ammo, rounded down on all non shell-based weapons
+*Trait    : Fireangel
+*Effect   : Immune to splash damage
+*Passive  : Uses half ammo, rounded down on all non shell-based weapons
 
 :HUD INFORMATION
 :-------------------------------------------------------------------------------

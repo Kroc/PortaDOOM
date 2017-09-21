@@ -4,11 +4,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Subspace_(Master_Levels)
 
 :Subspace                                         (Master Levels for DOOM II)
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26*   Author : _Christen Klie_
-:Levels   : *1*             Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *None
+:Released : *1995>12>26    Author : _Christen Klie_
+:Levels   : *1              Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *None
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "SUBSPACE.WAD":
@@ -19,15 +19,15 @@ $KEY:S=URL:http://store.steampowered.com/sub/18397/
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New level from scratch
-*Editor(s) used*          : DEU2 by _R. Quinet_, _B. Wyber_ & _Adler_
+*Base                     : New level from scratch
+*Editor(s) used           : DEU2 by _R. Quinet_, _B. Wyber_ & _Adler_
                             DETH by _Quinet_, _Wyber_, _Oke_ & _Burden_
                             BSP by _C. Reed_
                             RMB by _J. Hykkelbjerg_
-                          
+
 :Credits:
 :-------------------------------------------------------------------------------
-*Special Thanks to*       : _Gerri_, _Mike_ and _Megan_
+*Special Thanks to        : _Gerri_, _Mike_ and _Megan_
                             id Software
                             _John W. Anderson_
                             _Bill Ager_

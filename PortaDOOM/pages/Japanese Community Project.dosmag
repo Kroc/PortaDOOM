@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/jpcp
 
 :Japanese Community Project                         * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>07>24*   Author : Various (see Credits)
-:Levels   : *32*            Modes : *Single, Co-op
-:Requires : *no-limit*   Includes : *+Music +Graphics +Patches +Demos
+:Released : *2016>07>24    Author : Various (see Credits)
+:Levels   : *32             Modes : *Single, Co-op
+:Requires : *no-limit    Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Japanese Community Project is a 32 level megawad made by Japanese Doomers.
@@ -19,31 +19,31 @@ We hope that you have a good time.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : 2 years
-*Editor(s) used*          : Various
-*May Not Run With...*     : Vanilla Doom
+*Base                     : New from scratch
+*Build Time               : 2 years
+*Editor(s) used           : Various
+*May Not Run With...      : Vanilla Doom
 
 :Credits
 :-------------------------------------------------------------------------------
-*Project Leader*          : _Tatsurd-Cacocaco_
+*Project Leader           : _Tatsurd-Cacocaco_
 
-*Level Design*            : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
+*Level Design             : _Tatsurd-Cacocaco_, _burabojunior_, _Toooooasty_, _Masayan_, _Namsan_, _Yullie_, _Guna_, _Masa_, _toMass_, _doom68k_, _Tyousen121_, _SkullDemon_, _Nanka Kurashiki_
 
-*New Graphics*            : TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
+*New Graphics             : TITLE, CREDIT INTERPIC, BOSSBACK: _Nanka Kurashiki_
                             Status bar: _Toooooasty_
                             Map Title: _Tatsurd-Cacocaco_
-                          
-*New Music*               : _Masayan_
 
-*Episode Messages*        : _burabojunior_, _Toooooasty_, _Taro_, _TerminusEst13_
+*New Music                : _Masayan_
 
-*DeHackEd Edit*           : _Tatsurd-Cacocaco_
+*Episode Messages         : _burabojunior_, _Toooooasty_, _Taro_, _TerminusEst13_
 
-*Demos*                   : _Tatsurd-Cacocaco_
+*DeHackEd Edit            : _Tatsurd-Cacocaco_
 
-*Texture Resources*       : id Software, TeamTNT, and cc4-tex
-                          
+*Demos                    : _Tatsurd-Cacocaco_
+
+*Texture Resources        : id Software, TeamTNT, and cc4-tex
+
 :Map List
 :-------------------------------------------------------------------------------
 - Map01: First Assault                 by _Tatsurd-Cacocaco_

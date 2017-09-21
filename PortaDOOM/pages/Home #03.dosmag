@@ -1,4 +1,4 @@
-        
+
 ^C:CREDITS
 
 :-------------------------------------------------------------------------------
@@ -26,37 +26,37 @@ Copyright Nerve Software: _Richard Heath_ and _Russell Meakim_.
 Copyright iD software, contributors:
 
 _John Anderson (Dr.Sleep)
-        Geryon: 6th Canto of Inferno (GERYON.WAD)
-        Minos' Judgement: 4th Canto of Inferno (MINOS.WAD)
-        Nessus: 5th Canto of Inferno (NESSUS.WAD)
-        Vesperas: 7th Canto of Inferno (VESPERAS.WAD)
-        Virgil's Lead: 3rd Canto of Inferno (VIRGIL.WAD)
+	Geryon: 6th Canto of Inferno (GERYON.WAD)
+	Minos' Judgement: 4th Canto of Inferno (MINOS.WAD)
+	Nessus: 5th Canto of Inferno (NESSUS.WAD)
+	Vesperas: 7th Canto of Inferno (VESPERAS.WAD)
+	Virgil's Lead: 3rd Canto of Inferno (VIRGIL.WAD)
 
 _Jim Flynn
-        Titan Manor (MANOR.WAD)
-        Trapped on Titan (TTRAP.WAD)
+	Titan Manor (MANOR.WAD)
+	Trapped on Titan (TTRAP.WAD)
 
 _Christen Klie
-        The Catwalk (CATWALK.WAD)
-        The Combine (COMBINE.WAD)
-        The Fistula (FISTULA.WAD)
-        The Garrison (GARRISON.WAD)
-        Subspace (SUBSPACE.WAD)
-        Subterra (SUBTERRA.WAD)
+	The Catwalk (CATWALK.WAD)
+	The Combine (COMBINE.WAD)
+	The Fistula (FISTULA.WAD)
+	The Garrison (GARRISON.WAD)
+	Subspace (SUBSPACE.WAD)
+	Subterra (SUBTERRA.WAD)
 
 _Sverre André Kvernmo (Cranium)
-        Black Tower (BLACKTWR.WAD)
-        Bloodsea Keep (BLOODSEA.WAD)
-        Mephisto's Maosoleum (MEPHISTO.WAD)
-        The Express Elevator to Hell (TEETH.WAD)
-        Bad Dream (TEETH.WAD)
+	Black Tower (BLACKTWR.WAD)
+	Bloodsea Keep (BLOODSEA.WAD)
+	Mephisto's Maosoleum (MEPHISTO.WAD)
+	The Express Elevator to Hell (TEETH.WAD)
+	Bad Dream (TEETH.WAD)
 
 _Tom Mustaine_
-        Paradox (PARADOX.WAD)
+	Paradox (PARADOX.WAD)
 
 _Tim Willits_
-        Attack (ATTACK.WAD)
-        Canyon (CANYON.WAD)
+	Attack (ATTACK.WAD)
+	Canyon (CANYON.WAD)
 
 :Final DOOM
 :===============================================================================
@@ -89,7 +89,7 @@ _Dusk_ - Port Developer, Forum Moderator
 _Edward-san_ - Tester
 _bond_ - IDE Developer
 _Zalewa_ - Doomseeker Developer
-        
+
 :ZDoom - <zdoom.org>
 :===============================================================================
 By _Randy Heit_, _Christoph Oelckers (Graf Zahl)_ & _Braden Obrzut (Blzut3)_.

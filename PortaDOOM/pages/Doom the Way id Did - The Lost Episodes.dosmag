@@ -10,11 +10,11 @@ $KEY:N=GOTO:No End in Sight
 
 :Doom the Way id Did - The Lost Episodes            * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play (see below for Vanilla) [T] .txt [W] Website
+*[P] Play (see below for Vanilla) *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>03>20*   Author : *Various (see credits)
-:Levels   : *54*            Modes : *Single, Co-op?
-:Requires : *zdoom*      Includes : *+Graphics +Patches +Demos
+:Released : *2016>03>20    Author : *Various (see credits)
+:Levels   : *54             Modes : *Single, Co-op?
+:Requires : *zdoom       Includes : *+Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Six episodes of classic Doom maps, originally candidates for last year's *[1] "Doom the Way Id Did"*, arranged in an episodic format.
@@ -37,10 +37,10 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
                           
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : Years in the making. Longer counting _Xaser_'s period of compile-idleness
-*Editor(s) used*          : Various
-*May Not Run With...*     : Versions of Doom prior to 1.9
+*Base                     : New from scratch
+*Build Time               : Years in the making. Longer counting _Xaser_'s period of compile-idleness
+*Editor(s) used           : Various
+*May Not Run With...      : Versions of Doom prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------

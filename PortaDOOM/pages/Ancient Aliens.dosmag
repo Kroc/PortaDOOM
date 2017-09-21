@@ -4,11 +4,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 
 :Ancient Aliens                                     * 2016 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                        *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>05>18*   Author : _Paul "skillsaw" DeBruyne_
-:Levels   : *32*            Modes : *Single, Co-op
-:Requires : *boom*       Includes : *+Music +Sounds +Graphics +Patches +Demos
+:Released : *2016>05>18    Author : _Paul "skillsaw" DeBruyne_
+:Levels   : *32             Modes : *Single, Co-op
+:Requires : *boom        Includes : *+Music +Sounds +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Ancient Aliens is a megawad featuring 32 colorful, action-packed maps for Boom compatible ports.
@@ -19,18 +19,18 @@ I'm not saying it was aliens, but... the truth is out there.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : Texture wad based on 32in24-14 resource
-*Build Time*              : 15 months
-*Editor(s) used*          : Doom Builder 2, GZDoom Builder, Slade, WhackEd, GIMP, Notepad++
-*Known Bugs*              : None
-*May Not Run With...*     : Gameplay mods that change the palette or don't use .png graphics.
-                          
+*Base                     : Texture wad based on 32in24-14 resource
+*Build Time               : 15 months
+*Editor(s) used           : Doom Builder 2, GZDoom Builder, Slade, WhackEd, GIMP, Notepad++
+*Known Bugs               : None
+*May Not Run With...      : Gameplay mods that change the palette or don't use .png graphics.
+
                             If you encounter garbled texture graphics while using a mod try changing the load order.
 
 :Credits
 :-------------------------------------------------------------------------------
 
-*Mapping*                 : _skillsaw_
+*Mapping                  : _skillsaw_
                             _AD_79_
                             _esselfortium_
                             _Joshy_
@@ -39,21 +39,21 @@ I'm not saying it was aliens, but... the truth is out there.
                             _stewboy_
                             _Tarnsman_
                           
-*Music*                   : _stewboy_
+*Music                    : _stewboy_
 
-*Testing*                 : _AD_79_
+*Testing                  : _AD_79_
                             _Altazimuth_
                             _dew_
                             _Tarnsman_
                           
-*Coop Testing*            : _Alfonzo_
+*Coop Testing             : _Alfonzo_
                             _Altazimuth_
                             _dew_
                             _esselfortium_
                             _Pinchy_
                             _Seele00TextOnly_
                           
-*Texture Credits*         : _NiGHTMARE_
+*Texture Credits          : _NiGHTMARE_
                             _Espi_
                             _Eriance_
                             _Fredrik Johansson_
@@ -93,7 +93,7 @@ I'm not saying it was aliens, but... the truth is out there.
                             Rogue Entertainment
                             Valve Software
 
-*Sprite Credits*          : _Eriance_                        
+*Sprite Credits           : _Eriance_                        
                             _Virtue_
                             _Bloax_
                             _CeeJay_
@@ -101,25 +101,25 @@ I'm not saying it was aliens, but... the truth is out there.
                             _skillsaw_
                             3d Realms                       
 
-*Fonts*                   : _Mechadon_
+*Fonts                    : _Mechadon_
 
-*Status Bar Font*         : _AgentSpork_
+*Status Bar Font          : _AgentSpork_
 
-*Palette*                 : _skillsaw_
+*Palette                  : _skillsaw_
                             (purple range is from BTSX)
 
-*ENDOOM*                  : _Altazimuth_
+*ENDOOM                   : _Altazimuth_
 
-*CR** Translation lumps*  : _xttl_
+*CR** Translation lumps   : _xttl_
 
-*Final ending text*       : _dew_
+*Final ending text        : _dew_
 
-*ACS multiplayer fix*     : _rhinoduck_
-                          
+*ACS multiplayer fix      : _rhinoduck_
+
 *Misc Graphics, Splash
-*Screens, Status Bar*     : _skillsaw_
+*Screens, Status Bar      : _skillsaw_
 
-*Sound Credits*           : _Eriance_
+*Sound Credits            : _Eriance_
                             Raven Software
                             Rogue Entertainment
                             http://www.freesfx.co.uk 

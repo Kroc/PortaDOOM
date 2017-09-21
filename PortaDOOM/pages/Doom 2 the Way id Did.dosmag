@@ -4,11 +4,11 @@ $KEY:W=URL:http://d2twid.herokuapp.com/
 
 :Doom 2 the Way id Did
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2013>11>07*   Author : (see credits)
-:Levels   : *32*            Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *+Graphics +Patches +Demoes
+:Released : *2013>11>07    Author : (see credits)
+:Levels   : *32             Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *+Graphics +Patches +Demoes
 :-------------------------------------------------------------------------------
 
 $KEY:1=GOTO:Doom the Way id Did
@@ -35,10 +35,10 @@ The idea was originally kicked about by _Jason Root_ aka _Hellbent_, whose passi
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : 2-ish years! Gads!
-*Editor(s) used*          : Various
-*May Not Run With...*     : Versions of Doom 2 prior to 1.9
+*Base                     : New from scratch
+*Build Time               : 2-ish years! Gads!
+*Editor(s) used           : Various
+*May Not Run With...      : Versions of Doom 2 prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------

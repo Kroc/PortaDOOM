@@ -5,11 +5,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
 
 :Erkattäññe                                         * 2015 Cacoward winner! *
 :===============================================================================
-*[P] Play                        [T] .txt [W] Website
+*[P] Play                       *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>08>23*   Author : _Nicolas Monti_
-:Levels   : *11*            Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *+Music +Patches
+:Released : *2015>08>23    Author : _Nicolas Monti_
+:Levels   : *11             Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *+Music +Patches
 :-------------------------------------------------------------------------------
 
 $KEY:1=GOTO:Doom 2 the Way id Did
@@ -23,11 +23,11 @@ This Wad additionally comes with erkaknee.wad a complete conversion of the main 
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : 1.5 months, on and off (from 7/4/2015 to 8/8/2015 for the main episode and 2 weeks more for testing and the E1 remake)
-*Editor(s) used*          : Doombuilder, Slade, Doomword.
-*Known Bugs*              : Map09 may crash on vanilla when crossing some linedefs due to very tall sectors. I'd recommend saving before taking big jumps, otherwise it's fully compatible.
-*Tested With*             : Chocolate doom (if something is broken using another port, blame that port, because this is a vanilla wad ;).
+*Base                     : New from scratch
+*Build Time               : 1.5 months, on and off (from 7/4/2015 to 8/8/2015 for the main episode and 2 weeks more for testing and the E1 remake)
+*Editor(s) used           : Doombuilder, Slade, Doomword.
+*Known Bugs               : Map09 may crash on vanilla when crossing some linedefs due to very tall sectors. I'd recommend saving before taking big jumps, otherwise it's fully compatible.
+*Tested With              : Chocolate doom (if something is broken using another port, blame that port, because this is a vanilla wad ;).
 
 :Credits
 :-------------------------------------------------------------------------------

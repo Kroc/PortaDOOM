@@ -5,11 +5,11 @@ $KEY:W=URL:https://mikestoybox.net/2017/01/04/strange-aeons/
 
 :Strange Aeons                                   * 2016 Cacoward runner up! *
 :===============================================================================
-*[P] Play                        [T] .txt [I] Info (.pdf) [W] Website
+*[P] Play                       *[T] .txt [I] Info (.pdf) [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>05>10*?  Author : _Impie_
-:Levels   : *45*            Modes : *Single
-:Requires : *zdoom*      Includes : *+Sound +Music +Graphics
+:Released : *2016>05>10?   Author : _Impie_
+:Levels   : *45             Modes : *Single
+:Requires : *zdoom       Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
 As the Traveler, your task is simple: survive a dream odyssey across several fearsome realms from the darkest corners of the cosmos, where even the gods fear to tread. Each environment consists of eight maps, plus one secret map, and is populated by scores of nightmarish critters out for your blood. Find the big, humming slipgate at the end of each map to escape!
@@ -18,11 +18,11 @@ See the included *[I] info .pdf* for story and further instructions.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Build Time*              : The summer of 2015 (further playtests and maps in 2016)
-*Editor(s) used*          : DoomBuilder 2, Slade, XWE
-*Known Bugs*              : None Yet (crosses fingers)
-*Tested With*             : ZDoom
+*Base                     : New from scratch
+*Build Time               : The summer of 2015 (further playtests and maps in 2016)
+*Editor(s) used           : DoomBuilder 2, Slade, XWE
+*Known Bugs               : None Yet (crosses fingers)
+*Tested With              : ZDoom
 
 :Credits
 :-------------------------------------------------------------------------------

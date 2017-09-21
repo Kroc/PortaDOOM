@@ -2,9 +2,9 @@ $KEY:1=SHELL:wads\jokes\instadm\play.bat
 
 :InstaDoom                                          * 2015 Cacoward winner! *
 :===============================================================================
-:Released : *2015>12>07*   Author : _Linguica
-:Levels   : *None*          Modes : *Single, Co-op
-:Requires : *Vanilla*    Includes : *+Graphics +Patches
+:Released : *2015>12>07    Author : _Linguica
+:Levels   : *None           Modes : *Single, Co-op
+:Requires : *Vanilla     Includes : *+Graphics +Patches
 :-------------------------------------------------------------------------------
 
 If you just can't get enough of taking pictures of your food and making it look more magenta, InstaDoom is for you! Play Doom with any of the 40(!) official Instagram filters! Memento Mori with Mayfair! Requiem with Rise! Icarus with Inkwell! Alien Vendetta with Aden or Valencia!
@@ -25,8 +25,8 @@ ALSO ALSO INCLUDES: InstaDoom DLC Pack 1! Is Instagram too "mainstream" for your
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base*                    : New from scratch
-*Known Bugs*              : Filters probably won't work properly with hardware-accelerated ports.
+*Base                     : New from scratch
+*Known Bugs               : Filters probably won't work properly with hardware-accelerated ports.
 
 :Credits
 :-------------------------------------------------------------------------------

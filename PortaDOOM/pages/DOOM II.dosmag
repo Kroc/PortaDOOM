@@ -3,11 +3,11 @@ $KEY:W=URL:https://doomwiki.org/wiki/Doom_II
 
 :DOOM II
 :===============================================================================
-*[P] Play                        [W] Website
+*[P] Play                        *[W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>09>30*   Author : *iD software
-:Levels   : *32*            Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla*    Includes : *+Sounds +Music +Graphics +Demos
+:Released : *1995>09>30    Author : *iD software
+:Levels   : *32             Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla     Includes : *+Sounds +Music +Graphics +Demos
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "DOOM2.WAD":
