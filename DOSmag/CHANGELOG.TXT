@@ -1,2 +1,7 @@
+2017-SEP-17:
+- Changed tabs to 4
+- A tab will always cause a column sync, even if it only expands to one space
+  (previously a tab that aligned to one space would not sync the column)
+
 2016>10>25 : v1
 - First version as standalone "DOSmag" (rather than PortaDOOM, where it was incubated)

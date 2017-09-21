@@ -33,19 +33,8 @@ CONST CTL_INDENT = ASC_BAR '       |
 CONST CTL_BREAK = ASC_BSLASH '     \\ (manual line-break)
 CONST CTL_WARNING = ASC_EXCL '     !
 
-'formatting ruler / tabstops
-'-----------------------------------------------------------------------------
-CONST CTL_RULER = ASC_AT '         @ character for marking a ruler
-
-TYPE TabStop
-    col AS INTEGER 'column number of the tab-stop
-    type AS _BYTE
-END TYPE
-
-CONST TABSTOP_LEFT = 0 'default tabstop type, left-alignment
-
-'a ruler is just a collection of tabstops
-REDIM SHARED Ruler(0) AS TabStop
+'number of spaces between tab-stops
+CONST TAB_SIZE = 4
 
 'screen layout
 '-----------------------------------------------------------------------------
@@ -848,9 +837,6 @@ SUB loadPage (page_name$)
 
     '-------------------------------------------------------------------------
 
-    'clear the ruler before walking the page formatting
-    REDIM Ruler(0) AS TabStop
-
     OPEN file_path$ FOR BINARY AS #1
     DO UNTIL EOF(1)
         'read a line of text from source
@@ -931,9 +917,9 @@ SUB loadPage (page_name$)
                 'check the charcter
                 SELECT CASE ASC(line$, src%)
                     CASE ASC_TAB
-                        'if it's a tab, account for 8 spaces
-                        'in the line wrapping
-                        indent% = indent% + 8
+                        'if it's a tab, account for extra
+                        'spaces in the line wrapping
+                        indent% = indent% + TAB_SIZE
                         src% = src% + 1
 
                     CASE ASC_SPC
@@ -987,11 +973,6 @@ FUNCTION pageNumber$ (page_number%)
         ELSE pageNumber$ = CHR$(PAGE_ASC) + STRINT$(page_number%)
 END FUNCTION
 
-'define a ruler from a formatting line
-'=============================================================================
-SUB defineRuler (line$)
-END SUB
-
 '=============================================================================
 SUB formatLine (indent%, src$)
     'always right-trim a line as this can cause unexpected wrapping
@@ -1027,32 +1008,10 @@ SUB formatLine (indent%, src$)
     DIM word$ '....the current word being built
     DIM word_len% 'length of the current word (excluding format-codes)
 
-    'convert tabs to spaces
-    '-------------------------------------------------------------------------
-    FOR src% = 1 TO src_len%
-        char% = ASC(src$, src%)
-        IF char% = ASC_TAB THEN
-            DIM t%: t% = 1
-            DO
-                IF (t% * 8) > indent% + LEN(newline$) THEN
-                    newline$ = newline$ + SPACE$( _
-                        (t% * 8) - (indent% + LEN(newline$)) _
-                    )
-                    EXIT DO
-                END IF
-                t% = t% + 1
-            LOOP
-        ELSE
-            newline$ = newline$ + CHR$(char%)
-        END IF
-    NEXT
-    src$ = newline$: newline$ = ""
-    src_len% = LEN(src$)
-    src% = 1
-
     'adding a space on the end allows us to do a 1-character look-ahead
     'without having to avoid indexing past the end of the string
     src$ = src$ + " "
+    src% = 1
 
     'warning box?
     '-------------------------------------------------------------------------
@@ -1118,33 +1077,32 @@ SUB formatLine (indent%, src$)
     '-------------------------------------------------------------------------
     'if a line begins with a "-" it's a bullet point;
     'bullet-points cannot be centred or right-aligned
-    IF ASC(src$, src%) = CTL_BULLET THEN
-        'must have a following space
-        IF ASC(src$, src% + 1) = ASC_SPC THEN
-            'add the bullet point to the line
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
-            newline$ = newline$ + CHR$(CTL_BULLET)
-            newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
-            newline$ = newline$ + CHR$(ASC_SPC)
-            line_len% = line_len% + 2
-            'increase the indent (for wrapped lines) to after the bullet
-            next_indent% = next_indent% + 2
-            'skip over the bullet point for the rest of processing
-            src% = src% + 2: src_col% = src_col% + 2
-        END IF
+    IF ASC(src$, src%) = CTL_BULLET AND _
+       ASC(src$, src% + 1) = ASC_SPC _
+    THEN
+        'add the bullet point to the line
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
+        newline$ = newline$ + CHR$(CTL_BULLET)
+        newline$ = newline$ + CHR$(CTL_ESCAPE) + CHR$(CTL_BOLD)
+        newline$ = newline$ + CHR$(ASC_SPC)
+        line_len% = line_len% + 2
+        'increase the indent (for wrapped lines) to after the bullet
+        next_indent% = next_indent% + 2
+        'skip over the bullet point for the rest of processing
+        src% = src% + 2: src_col% = src_col% + 2
     END IF
 
     'centered?
     '-------------------------------------------------------------------------
     DIM align%
 
-    IF ASC(src$, src%) = CTL_ESCAPE THEN
-        IF ASC(src$, src% + 1) = CTL_CENTER THEN
-            'set the mode, when a line is dispatched, it'll be centred
-            align% = FORMAT_CENTER
-            'do not display the marker
-            src% = src% + 2: src_col% = src_col% + 2
-        END IF
+    IF ASC(src$, src%) = CTL_ESCAPE AND _
+       ASC(src$, src% + 1) = CTL_CENTER _
+    THEN
+        'set the mode, when a line is dispatched, it'll be centred
+        align% = FORMAT_CENTER
+        'do not display the marker
+        src% = src% + 2: src_col% = src_col% + 2
     END IF
 
     'heading?
@@ -1173,7 +1131,6 @@ SUB formatLine (indent%, src$)
     'dividing lines?
     '-------------------------------------------------------------------------
     'if the line begins with three (or more) line marks, its a dividing line
-    'TODO: this will be converted to ruler definition
     ''IF LEFT$(src$, 3) = CHR$(CTL_LINE1) + CHR$(CTL_LINE1) + CHR$(CTL_LINE1) _
     ''OR LEFT$(src$, 3) = CHR$(CTL_LINE2) + CHR$(CTL_LINE2) + CHR$(CTL_LINE2) _
     ''THEN
@@ -1200,6 +1157,9 @@ SUB formatLine (indent%, src$)
     FOR src% = src% TO src_len%
         'get current character in the source line
         char% = ASC(src$, src%)
+        'this moves the column in the source text forward, however
+        'if this is a tab character this will be adjusted further down
+        '(this is why src% and src_col% may not be the same)
         src_col% = src_col% + 1
 
         'null is given by UTF8ANSI$ to mark unusable UTF8 characters
@@ -1237,10 +1197,15 @@ SUB formatLine (indent%, src$)
 
             CASE CTL_HEADING
                 '.............................................................
+                'look for the " : " pattern
                 IF ( _
-                    ASC(src$, src% - 1) = ASC_SPC AND _
-                    ASC(src$, src% + 1) = ASC_SPC _
+                    ASC(src$, src% - 1) = ASC_SPC OR _
+                    ASC(src$, src% - 1) = ASC_TAB _
+                ) AND ( _
+                    ASC(src$, src% + 1) = ASC_SPC OR _
+                    ASC(src$, src% + 1) = ASC_TAB _
                 ) THEN
+                    'push the colon alone
                     GOSUB addChar
                     GOSUB addWord
 
@@ -1293,9 +1258,9 @@ SUB formatLine (indent%, src$)
                         src% = src% + 1: src_col% = src_col% + 1
                         GOSUB addChar
 
-                    CASE ASC_SPC
-                        'if followed by whitespace, then it's assumed to be
-                        'a closing bold marker
+                    CASE ASC_SPC, ASC_TAB
+                        'if followed by whitespace, then it's
+                        'assumed to be a closing bold marker
                         IF is_bold` = TRUE THEN
                             is_bold` = FALSE
                             GOSUB addControlChar
@@ -1342,10 +1307,10 @@ SUB formatLine (indent%, src$)
                         src% = src% + 1: src_col% = src_col% + 1
                         GOSUB addChar
 
-                    CASE ASC_SPC, ASC_COMMA, ASC_COLON, ASC_SEMICOLON, _
-                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
-                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, CTL_BOLD, _
-                         CTL_PAREN_OFF
+                    CASE ASC_SPC, ASC_TAB, _
+                         ASC_COMMA, ASC_COLON, ASC_SEMICOLON, ASC_PERIOD, _
+                         ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
+                         ASC_FSLASH, ASC_BSLASH, CTL_BOLD, CTL_PAREN_OFF
                         'word boundary? if italic is on, flip it off
                         IF is_italic` = TRUE THEN
                             is_italic` = FALSE
@@ -1386,7 +1351,7 @@ SUB formatLine (indent%, src$)
             CASE ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK
                 '.............................................................
                 'some punctuation is a word-boundary, but not a word-break;
-                'e.g. `_bob_'s italics`
+                'e.g. "_bob_'s italics"
                 GOSUB addChar
                 is_boundary` = TRUE
 
@@ -1397,43 +1362,85 @@ SUB formatLine (indent%, src$)
                 'append the word to the line and continue
                 GOSUB addWord
 
-            CASE ASC_SPC
+            CASE ASC_SPC, ASC_TAB
                 '.............................................................
                 'append the current word (this will word-wrap as necessary)
                 'if the line wrapped exactly the space will not be needed,
                 'and this GOSUB call will not return here!
                 GOSUB addWord
+                'if the line wrapped, we don't want to add the whitespace
+                'to the beginning of the new line, identation has already
+                'been handled
+                IF line_len% = 0 GOTO continue
+
+                'the source column has already been moved forward by one,
+                'but this might be wrong due to a tab character
+                src_col% = src_col% - 1
 
                 'batch together any contiguous white-space
-                DIM ws%: ws% = 0
+                DIM ws%: ws% = 0 'number of spaces
+                'this will be used to calculate the difference between
+                'the on-screen column and the column in the source text
+                DIM adjust%: adjust% = 0
+                'two spaces will cause a column sync, but a single tab
+                'will always cause a column sync even if the tab character
+                'only expands to one space
+                DIM is_sync`: is_sync` = FALSE
                 DO
-                    IF line_len% > 0 THEN
-                        'add just the space
+                    'if this is a tab
+                    IF ASC(src$, src%) = ASC_TAB THEN
+                        'walk along the tabstops
+                        DIM t%: t% = 1
+                        DO
+                            'if this tabstop comes after the current column
+                            IF (t% * TAB_SIZE) > src_col% THEN
+                                'calc the number of spaces
+                                'to reach the tab stop
+                                adjust% = (t% * TAB_SIZE) - src_col%
+                                EXIT DO
+                            END IF
+                            t% = t% + 1
+                        LOOP
+                        'move things along
+                        src_col% = src_col% + adjust%
+                        ws% = ws% + adjust%
+                        'a tab always causes a column-sync,
+                        'even if the tab only expands to one space
+                        is_sync` = TRUE
+
+                    ELSE
+                        'not a tab, just a space
                         ws% = ws% + 1
+                        src_col% = src_col% + 1
+                        'columns will sync after two or more spaces
+                        IF ws% > 1 THEN is_sync` = TRUE
                     END IF
 
                     'was this the last character in the line?
                     IF src% = src_len% THEN EXIT DO
                     'is the next character not white-space?
-                    IF ASC(src$, src% + 1) <> ASC_SPC THEN EXIT DO
+                    IF ASC(src$, src% + 1) <> ASC_SPC AND _
+                       ASC(src$, src% + 1) <> ASC_TAB _
+                    THEN
+                        EXIT DO
+                    END IF
                     'get next character in the source line
-                    src% = src% + 1: src_col% = src_col% + 1
-                    char% = ASC(src$, src%)
+                    src% = src% + 1
                 LOOP
 
                 'if there's more than one space, resync the columns
                 IF src% <= src_len% - 1 THEN
-                    IF ws% > 1 OR ( _
+                    IF is_sync` = TRUE _
+                    OR ( _
                         (ASC(src$, src% + 1) = ASC_COLON) AND _
                         (ASC(src$, src% + 2) = ASC_SPC) _
                     ) THEN
                         'calculate the difference between the source column,
                         'and the screen colum (no formatting marks)
-                        DIM sync%
-                        sync% = src_col% - (line_len% + indent% + ws%)
+                        adjust% = src_col% - (line_len% + indent% + ws%)
                         'adjust the whitespace to match the source column,
                         'rather than the screen one
-                        ws% = ws% + sync%
+                        ws% = ws% + adjust%
                         'set the next line indent to the current position
                         next_indent% = src_col%
                         'clear the bold/italic state;
