@@ -914,14 +914,14 @@ CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 20
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
 	REM # TODO: this WAD is broken and censored and we should patch it automatically
-	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_found
+	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_patchbfg
 )
 REM # is GOG : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM2.WAD can be found there
 	REM # TODO: this WAD is broken and censored and we should patch it automatically
-	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_found
+	IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_patchbfg
 )
 GOTO :iwad_check
 
@@ -1081,7 +1081,7 @@ ECHO:
 
 REM # get the folder of the DOOM 3 BFG Edition WADs;
 REM # the patched file will be saved there to avoid unintentional "stealing" of IWADs off of computers
-FOR %%G IN ("%IWAD_PATH%") DO SET "BFG_PATH=%%~pG"
+FOR %%G IN ("%IWAD_PATH%") DO SET "BFG_PATH=%%~dpG"
 
 REM # DOOM or DOOM2?
 IF /I "%IWAD%" == "DOOM.WAD" (
