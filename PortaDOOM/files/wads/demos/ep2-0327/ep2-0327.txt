@@ -1,0 +1,59 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 2 (E2M1-E2M8)
+Source Port: Competition Doom v2.0.3.2
+Time 4:12 (04:15.06)
+
+----------------------------------------------------------------
+Level			Map	Time		ep2-0333
+
+Deimos Anomaly		E2M1 -	0:39		 0:00
+Containment Area	E2M2 -	0:16		-0:02
+Refinery		E2M3 -	0:32		 0:00
+Deimos Lab		E2M4 -	0:43		-0:03
+Command Center		E2M5 -	0:34		-0:01
+Halls of the Damned	E2M6 -	0:30		 0:00
+Spawning Vats		E2M7 -	0:13		 0:00
+Tower of Babel		E2M8 -	0:45		+0:04
+----------------------------------------------------------------
+			TOTAL -	4:12		-0:02
+E2M8 comparison is not relevant. E2M1-E2M7 time is improved by 6 seconds.
+
+Description: 
+Copied the timetable format above from the previous record. 
+
+My first episode record for doom 1, and my first demo recorded in CNDoom v2.0.3.2 (previously used v2.0.2.1)
+
+Still lots of room for improvement, E2M5 was really bad, 31 seconds shouldn't be too difficult.
+My M6 time was really really good, best time I've had is a 28, I fail this map over 
+half the time because I can't get the void glide, and the rest is usually a slow switch press.
+
+E2M1: I reset at 41 seconds, my best time was 38. 
+I don't really have a plan for the demons on the lift, I just try to kill 2 of them and get through somehow.
+
+E2M2: 15 seconds is my best time, I always go for the berzerk pack, 
+though it should be a bit faster to go the other way if you have the health.
+
+E2M3: Very close to 31, but I'm happy with 32(.06).
+Shooting at the start of the map helps with some monsters moving out of the way.
+I am not sure if the wallrun by the blue door saves any time. I Shoot once I open the door
+to wake up the monsters on the inside and sometimes I get lucky like this time and run past everything.
+
+E2M4: You can close\open the door instead of hoping the imps opens it for you by the blue key.
+I shoot at the last teleporter so I can get past the demon on the left. Not the best time.
+
+E2M5: I shoot when I get to the stairs to wake up imps, I also pick up the 20 cells, as I don't
+think I lose any time on it, not quite sure. Time is really bad here.
+
+E2M6: Hardest map to get a good time on, need luck to get the void glide, well, it 
+might not be too random, right angle and right speed and it might work every time.
+Really close to 29 here (30.09).
+
+E2M7: Had a run that was -10 up to this map earlier, shame I failed the RJ, was looking to be 12 too.
+Happy to actually get it this time, 13 seconds is fine.
+
+E2M8: Maybe I should have practiced this more, almost died! I don't care about time here.
+
+I might (or someone else should!) improve this further someday, 
+and try to bring it to the same quality as E1 by stx-vile and E3 by kimo xvirus

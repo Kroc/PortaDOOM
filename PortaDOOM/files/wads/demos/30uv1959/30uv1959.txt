@@ -1,0 +1,350 @@
+Runner: Zero-Master
+Date: 2015-08-11
+IWAD: DOOM2.WAD
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 19:59 (20:13.71)
+
+
+Map	Time	
+01	00:06	:)
+02	00:40	:|
+03	00:32	:)
+04	00:29	:)
+05	00:27	:)
+06	00:58	:(
+07	00:14	:|
+08	00:24	:))
+09	01:01	:)
+10	00:39	:(
+11	00:35	:|
+12	00:47	:)
+13	01:08	:)
+14	00:21	:(
+15	00:32	:)
+31	00:31	:)
+16	00:14	:))
+17	01:48	:)
+18	00:24	:)
+19	00:39	:))
+20	00:36	:)
+21	00:20	:)
+22	00:30	:|
+23	00:41	:))
+24	00:40	:))
+25	00:44	:)
+26	00:43	:(
+27	00:19	:)))
+28	00:52	:(
+29	01:33	:))))
+30	00:32	:)
+
+
+Description:
+First of all I would like to give a big thanks to Looper, this would never have happened if 
+it wasn't for his efforts in the 30uv category. Looper managed to improve the Doom 2 record 
+to 23:25 back in 2010, the record stood for almost 4 years before I tried to replicate 
+what he did, with some adjustments, and managed to get 23:03. At the time I got 23:03 
+it was obvious that sub 23 wouldn't be too hard to get, and I imagined that a really solid run 
+would perhaps go under 22 minutes. A few months later Looper picked it up again and managed to get 21:55.
+
+I have always been working on improving the route for 30uv since I started even 
+though I have been doing other runs as well, and I've also been practicing a lot for this run. 
+For example trying to improve my movement and ability to do tricks in a consistent matter. 
+After a lot of work I saw that getting below 21 minutes would actually be possible, 
+and after several attempts I managed to not only get below 21 minutes, but a time of 20:32, 
+a full 27 seconds faster than my goal. I really thought that this would be it for Doom 2 UV-Speed, 
+but Looper decided to go for sub 20 minutes, and I saw that perhaps it would be possible as well.
+With some small adjustments several places in the route thanks to Looper and a ton of practice 
+I figured I would attempt to bring this time down a bit further :) 
+
+This has been one of the demos I have worked the hardest on, the last days I was so close 
+to achieving my goal of a time below 20 minutes. Sometimes you just have one of those days 
+where almost everything seems to go right, and today I was playing very well compared to 
+how I usually play. Earlier I failed several attempts on the episode 3 (map 21-30), 
+I kept on going because of how frequently I would reach the later maps of the run this day.
+
+I then had some absolutely devastating runs which failed on the very last maps, 
+on 1 attempt I had gotten in a bit of trouble on map 28 where I failed to grab enough plasma ammo, 
+which forced me to use more rockets which cost me a lot of time. I then made a huge mistake by using 
+all my rockets on the cacodemons on map 29, because I needed 1 rocket to do the rocket jump. 
+I then managed to get 32 seconds on map 30, but the time was 20:00, a single second away from my goal. 
+Even though this was very frustrating I decided to continue due to my consistency today.
+
+And what happened next is unbelievable, yet again I failed, this time on the very very last input I had to make. 
+A single frame was the difference between 19:53 and 20:06, I pressed fire 1 frame before I pressed move forward, 
+this could have still worked I think if I was standing closer to the edge of the platform like I usually try to do. 
+
+Needless to say, I am extremely happy to be able to now bring this time below 20 minutes, 
+especially today after my earlier failed attempts.
+
+Since I started I have managed to get the following exits: 
+30uv2021, 30uv2019, 30uv2151, 30uv2117, 30uv2038, 30uv2016, 
+30uv2013, 30uv2013 (second time), 30uv2015, 30uv2006, 
+30uv2032 (same time as previous listed record), 30uv2000, 30uv2006 (second time).
+
+The times above are in the order of which I got them, the slower times 
+like 21:51 and 21:17 are because of failed RJ on map 29 or really bad IoS.
+
+The list of exits is only a small part of it, there are tons of failed attempts, 
+many of which were in episode 3. Nothing is worse than having a very good run 
+and not managing to do the wallrun on map 24, or seeing the arch vile on map 27
+decide to go full nightmare mode on my ass and just keep on attacking without moving. 
+I guess the only thing I actually haven't seen is the arch vile going through the teleporter.
+
+This run isn't perfect either, there are some obvious mistakes on map 06, 14 and 22. 
+It is simply not possible to get a run where you are happy with every map, but in these cases 
+the mistakes were rather small, around 3 seconds or so each. Just having bad luck with for example
+map 08 or map 27 can cost you 10+ seconds each. Of course there are smaller 1 second mistakes all over the place.
+
+I am not sure if this is as difficult as Plutonia NM-Speed, though the difficulty is completely different,
+one is a race against time while the other is just trying to survive, and as I mentioned in 30pn4357.txt:
+"This could have happened on the first run, or the 10.000th run" 
+For plutonia NM-speed I had incredible amount of luck early on, and the same thing could have happened here.
+In the end 30uv1959 took a lot more attempts than 30pn4357, but both these demos will probably be the 
+best I'll ever make, as I don't think I will ever find the motivation and time to push something this far.
+
+
+
+
+Description of the run itself:
+For every map I have a time that I usually expect to get, I then take whatever time I actually get 
+and subtract the expected time to know how good (or usually bad) the run is going. 
+I add up all the time differences as I go through every map up until map 15, if 
+the run is going bad I know I have to do better or just reset if I fail even more. 
+Once I reach map 15 with a decent time I never reset, usually it only takes another 11-12 minutes 
+from here to finish the game or I die earlier, which is not too bad when you've spent hours trying to get to this point. 
+
+
+Map 01: Every attempt starts here, and after 1000's of them this map gets kinda easier. 
+But then it got harder because I think I can just run straight through everything, 
+so I sometimes get through very often and other times I make dumb mistakes over and over again 
+so I have to reset because I don't want 7 seconds. Even after all this time I still don't really know how 
+to deal with the imp at the exit, he sometimes blocks the entrance completely.
+
+Best time I've had here is 5 seconds, I reset on 7 seconds.
+
+
+Map 02: The same goes with this map, after so many attempts it gets a bit easier, 
+but this map requires a lot of luck. Mostly you need to not get hit while trying to do the 
+glide, because it will push you away from the 32 unit gap. Then we have the barrels, 
+sometimes I've been shooting at them with 7 or so shells without them going down, 
+most common is 2 shots though. Then we have the position of the monsters in BK room, 
+and how many shots it takes to get the 3-4 barrels.
+
+The best time I've ever had on this map is 33 seconds (30uv2006), 
+which is 1 second slower than my IL record where I use a more 
+aggressive route. I reset this map if I get 43+ seconds. 
+
+
+Map 03: Found this nice setup for going to the secret, works almost every time, sometimes 
+I get stuck between the imps but then I simply have to fire. Then comes the jump into the "window" to skip the blue key, 
+I fail this like 3 out of 10 times or so, quite annoying. I think it might be better to go through the corner window on the way out, 
+because sometimes the spectres won't wake up, obviously spectres have a lot of health compared to hitscanners, 
+you then want hitscanners to block the way so you can go through them instead of getting stuck in the spectres. 
+
+My best time here is 30 seconds, 29 is possible, I reset if the total time adds up to more than 90 seconds.
+
+
+Map 04: Sometimes you just get killed by the hitscanners in the start here, 
+but once you get past with an ok amount of health the map isn't too bad. 
+You can also get lucky and just run past the demon at the end. 
+
+
+Map 05: If you play this map almost perfectly you can get 26 seconds, most likely 27 seconds 
+if you don't have to use an extra SSG shot anywhere. I don't think you need any luck here at all, 
+though the zombiemen might find a way to block you if you aren't paying attention to where they are when you use the SSG.
+
+
+Map 06: I've switched to chaingun when I go up the elevator here instead of SSG, 
+since it's more reliable. SSG would be faster if you get through in a single shot, 
+but if not you might get stuck next to the revenant which can really hurt your health. 
+
+For some reason I always play like shit on this map, losing some 3 seconds every time. 
+I often screw up the last jump to the exit like this time, and sometimes I even fail the first elevator skip.
+
+
+Map 07: I've had several different ideas to do this map, but this route works very often as I am usually 
+able to manipulate 2 of the mancubi on the left side to a position where they can't see me, 
+and kill 2 on the right side. This leaves the one on the megasphere, usually he won't fire and hit, 
+if he does the run is probably over as you can't see him fire. This time I actually got the chance 
+to see him firing in my direction, so I lost 2 seconds but managed to actually exit :) 
+
+
+Map 08: This map is pure luck, I've spent a lot of time to reduce the chance of getting locked in 
+by the cyberdemon and barons. I run over to the invurnability and shoot and wait for the cyberdemon to shoot, 
+if he doesn't shoot I wait for my SSG reload to finish and count to 2-3 and go for it usually. 
+Works nicely most the time now, when it fails the run is over, too much time lost.
+
+I make sure to have at least 6 rockets for the next map, usually I want 7, 
+so sometimes I go for the rockets in the YK room. 
+
+
+Map 09: There is a door by the shotgunners at the start here, sometimes one of them will actually 
+open the door, so when you fire it wakes up the hell knight, which is a very fun way to 
+ruin a run when he manages to position himself at a non-ideal place...
+
+If I have the rockets I try to use some on the imps on the right side, as they have managed to block me a few times. 
+Sometimes you can get really lucky with the demons here, other times not. 
+I had to use the first elevator this time after YK, almost never happens actually, but it only costs about 1 second.
+
+
+Map 10: I hate everything about this map. First of we need to grab the BFG, and with all 
+these arachnotrons and revenants around it goes without saying that if you get a stuck for 
+a moment here you can just die. Arachnotrons by the blue key can block you from getting out, 
+sometimes you lose a few seconds trying to reach the cyberdemon, and in the end we might have 
+the cyberdemon completely block the exit, that might have been the most frustrating moment I had.
+
+It's might be worth to skip the cells on this map like Looper does it, but I'm so used to 
+doing it my way and I didn't want to look into where I have to save cells, and of course I 
+don't want to lose any runs to the cyberdemon... which sometimes with invurnability doesn't 
+matter anyways when he teleports to block the entire exit area, wasting so much time 
+that you have to reset anyways :) 
+
+
+
+Map 11: This one time I had the shotgunner land a perfect hit just enough to push me from 
+doing the jump to the backpack, unbelievable. I've often died on this map too, cacodemons 
+sometimes manage to block me twice so that the BFG doesn't always do the job. 
+Having the imp scratch you from above the elevator is another fun feature of this map. 
+
+
+Map 12: I take the fastest route here for the keygrab by going on the right side instead 
+of the left after bumping the wall. Keygrab works half the time. I hate the elevators here, 
+often I lose a lot of time.
+
+
+Map 13: This is one of the worst maps in the run, entirely because of the jump down to the BK door. 
+I even use the BFG here to clear the revenants, but often it's not enough. One time I even saw all 
+the 4 revenants past the BK door when I wanted to BFG them, but I don't want to run up to them to kill 
+them since it wastes too much time, so I go through teleporter, jump down, and just fucking die... 
+got no choice really when you aim for sub 20.
+
+Often I get blocked by imps, in rare cases even cacodemons. And if that isn't enough, 
+we have the elevator to the YK, this is pure luck so I sometimes lose 4 seconds waiting for it to start going down.
+
+
+Map 14: I've had some of the most frustrating moments on this map, all of them to failed RJ for 
+some of the most bullshit reasons. I line up for the rocket jump, SR50, fire the rocket and 
+just as the rocket is about to land I get hit by a shotgunner from the back that pushes me into the wall, 
+and then the run is instantly over even though I survive it. 
+
+This rocketjump was discovered by Looper, so it's one of the bigger changes compared to 30uv2032. 
+It saves a few seconds and plasma, and it's not very difficult, but as written above, it can sometimes go badly. 
+
+
+Map 15: Straightforward map, activating the switch is sometimes annoying. 
+Also the pain elemental doesn't always die, so you have to just push him until you grab YK.
+
+
+Map 31: Pure luck, well mostly, as long as you go as quick as possible and don't get stuck in the hitscanners.
+I've never had 30 seconds on this map, I've been very close. 
+
+
+Map 16: I got a really good method for this glide now, very often I get instant glide, if not I get the glide quickly anyways. 
+I have however lost a lot of runs here, usually because I have the wrong angle going into the gap. Lost my best run on this map.
+
+
+Map 17: Very difficult to get a good time on this map, probably because it's the longest map in the run. 
+
+
+Map 18: Easiest map in the run, I have never died on this map. Usual time here is 23-25 seconds.
+
+
+Map 19:
+Well I've got a really "funny" story for this map, because some time ago I figured out something very interesting 
+regarding the glide on this map. The glide on this map is not too bad. There is an easy way to set the correct
+angle since you can use the corner by the bars so you don't move around too much, another thing that makes this 
+glide a bit easier is that I can just tap strafe left (2xSL24 commands) once and very quickly get into the gap 
+by using move forward. The biggest problem with this glide is that you HAVE to do it quickly, because there are spectres 
+coming your way and if they get too close the run is 100% over. Now, one thing that sometimes happens is that 
+when I strafe left is that I get stuck and lose all my speed and I then have to set it up again which is really really bad.
+ 
+So every time I would get to this glide I get a bit nervous at the very moment I am about to strafe left, 
+because for some "random" reason I would get stuck and probably die. But, since everytime I would practice 
+this part I had absolutely no problem, maybe 1 out of 20 times or less, so I figured I would just 
+ignore the problem since it happens so rarely. Now it turns out that the "random" reason for this is actually 
+that I make a MF1 command just after pressing strafe left, so because I am a bit nervous I unintenonally make the 
+smallest possible move forward command that I can with my mouse which then completely screws me over! 
+
+So what I do now is that I get to the corner, get the right angle and just lift my hand off the mouse and strafe left, 
+and since it's impossible to make any MF1 commands without moving the mouse, well, it works every time! I have no idea 
+how many runs I've wasted because of this, but at least the only sub 20 attempt that I lost was just a few seconds ahead 
+of my best time at the time, 30uv2019 (so a bad run because I had a really good E3 in 30uv2019), which was 
+the run that caused me to investigate the reason for it. 
+
+I got lucky this time since I didn't have to use any vertical mouse movement, same as in map 16.
+
+
+Map 20: This map isn't too bad, I usually always get 36 seconds here now, 35 isn't too hard either. 
+
+
+Map 21: Easiest glide in the game. I hope not to take too much damage here so I can skip the soulsphere on the next map.
+It should be enough to only use 2 rockets on the chaingunners. Sometimes the barrel by the imps doesn't explode, and it's hard
+to notice so that can be very bad. 
+
+
+Map 22: Unfortunately I managed to fail the last trick on this map, so not the best time.
+Everything else went pretty fine though... heh, well, I survived I guess, so it went fine :)
+
+
+Map 23: I absolutely hate this mancubus, fortunately this time he didn't destroy the barrels!
+The pain elemental at the end of the barrels didn't get in my way either.. that's a fun way to lose a run.
+
+
+Map 24: I absolutely hate this... whole map. Getting across all the ledges without falling down, 
+not getting stuck in the demons and managing to do the wallrun is as perfect as it gets for me.
+
+
+Map 25: I have a lot of health here which makes this map very comfortable, I try to aim for 43 seconds here
+which is my best time, but I'm happy with 44 seconds, and I also really need to get that plasma ammo in the end.
+I failed a run earlier today where I missed it, obviously because of the lack of plasma. I also had a run
+end because the pain elemental filled the elevator with lost souls while I had the SSG up. I didn't want to switch
+to plasma rifle and I couldn't clear them, and once you lose 10 seconds it's over.
+
+
+Map 26: This map did not go well, the BFG at the start didn't clear all the chaingunners, 
+which then means that I am too late to reach the switch before the cacodemon teleports in.
+
+I was also paying close attention to my plasma ammo here, I really want 120 cells for the next 2 maps.
+80 cells would still do, but since I already killed a cacodemon I decided to go with chaingun instead
+after I grabbed the yellow key, I didn't lose too much time on that, but it was very risky.
+
+
+Map 27: Well, holy hell did you play nice arch vile. 19 seconds is unbelievable, 
+my best time is 15 seconds, but I will take 19 seconds any day. 
+
+
+Map 28: Complete disaster, I would say that I was mostly unlucky here, but the BFG's could also maybe have been better placed.
+
+
+Map 29: This is by far the best map in this entire run! A time of 1:33 is insane, my best time ever on this map 
+is 1:32 (when practicing!!), if you do the RJ without any setup it should be around 1:30, I don't think I could ever 
+manage 1:32 in a single segment simply because I need an extra second to make sure I have the right position for the RJ.
+
+I have a lot of cells for this map, so I can even afford to spend a BFG on a single imp so that I can avoid switching weapons.
+Also a very nice kill on that arch vile, he can get in a position that will cost you some 2 seconds if you are unlucky.
+
+
+Map 30: At this point I had no idea if I was on sub 20 minute pace, I knew I hadn't made any terribly big mistake 
+earlier on, but I didn't have the greatest E1\E2 either. 
+
+The strategy I have for this map works quite often, but of course I have failed this map a few times.
+I think the worst possible spawns would be arch vile, revenant then pain elemental. There's really nothing you 
+can do if the arch vile attacks at a bad moment, or if a seeker missile from the revenant is coming for you.
+
+A pain elemental can be dealt with, as in 30uv2032, but still very very dangerous.
+This map can also be done in 30 seconds, obviously I should have tried that in 30uv2000, but I don't know the exact 
+time of the run and going for 30 seconds is a 2 frame window I think, which is something that I don't want to risk going for.
+
+
+So, this was quite the wall of text, however writing this didn't exactly take much time compared to the run itself :) 
+
+Again huge credits to Looper, without him I would not have had a good enough route or the motivation to push it this far!
+And also thanks to everyone at doomworld.
+
+
+
+
+

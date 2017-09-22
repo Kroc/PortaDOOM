@@ -1,0 +1,186 @@
+Runner: Zero-Master
+Date: 2015-07-12
+IWAD: DOOM2.wad
+Category: NM-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.3.2
+Time: 27:21 (27:37.14)
+
+MAP 	Time	
+01	00:06	:)
+02	01:13	:|
+03	00:36	:)
+04	00:36	:))
+05	00:50	:(
+06	01:24	:((
+07	00:24	:)
+08	00:30	:)
+09	01:12	:)
+10	00:49	:(
+11	00:46	:)
+12	00:58	:))
+13	01:16	:))
+14	00:26	:))
+15	00:43	:|
+31	00:35	:)
+16	00:19	:))
+17	02:06	:(
+18	00:35	:)
+19	00:54	:(
+20	00:43	:|
+21	00:36	:))
+22	00:48	:|
+23	01:12	:(
+24	01:05	:((
+25	01:08	:)
+26	00:57	:)
+27	00:50	:((
+28	00:58	:(
+29	01:59	:)
+30	00:47	:((
+
+
+Description:
+This is my second 30nm exit, over 2 minutes faster than my previous time, 
+and 1:18 faster than the previous record (30nm2839) by eLim.
+
+Big mistake on map 6, this trick isn't even difficult, something was off and I went into the acid with the spectres.
+I was on so low health I figured I'd die, but I got lucky and managed to get out quickly.
+
+Then I had a really solid run up until map 24 when things started going downhill.
+I had just recently lost a run on map 24 to a lost soul blocking me from reaching the red key room teleporter
+(and that is the second time that has happened!) thankfully that run was shit, but I get a bit shaky when I 
+reach that part of the map, so I end up just taking the whole last section really slow which costs a lot of time.
+
+Map 27 was a disaster, the hell knight kinda threw me off I guess, I got very lucky having that arch-vile
+open the door twice, sometimes he just goes to the door and goes back, wasting 10-15 seconds each time.
+
+Map 30 is the usual, I fired a bit too early and so I didn't get a 1-cycle, at least I got it second try 
+and it wouldn't have been sub 27 anyways because of map 27.
+
+Still very far from happy with this route, every time I die or take a lot of damage somewhere I end up
+using some different strategy that sacrifices a few seconds for a more safe route. One example would
+be the very end of map 20, usually I would just fire a rocket and run straight to the exit after the last
+teleporter, but now I take a step to the right to wake up the revenant so that he will be in a better position
+that decreases the chances that he will hit me. I had 2 runs where he managed to hit me with almost full
+damage rockets, which is unlikely to happen, but it's so annoying that I just had to make this change.
+
+I make these small changes that costs me seconds everywhere, but I only needed 22 seconds to get my goal of 
+sub 27 minutes which would have happened if it wasn't for mistakes on map 27+30. With a much more aggressive route,
+and just being better at the game (I lose on average 10 seconds to 30nm2939 by Henning on underhalls!) I could 
+see 30nm possibly going below 25 minutes with a near perfect run, something with as few mistakes as a UV run below 
+20 minutes, which should happen someday. So, perhaps at least 10x or so as hard to get sub 25 nm-speed compared to 
+getting sub 20 uv-speed, but possible. 
+
+For now sub 27 minutes should be the next goal, after that I would need to use a better (more aggressive) route.
+
+
+Map 01: Straightforward map, sometimes you take too much damage which is not good for the next map.
+It's usually very easy to get a low 6 second time because monsters attack instead of moving on NM.
+
+Map 02: Hardest map, I feel like 50% of my time is spent on this map alone. Usually I get a time
+just above 1:10, the IL record is 44 seconds, so there is potential to save a lot of time here.
+
+Map 03: Good time, everything went fine.
+
+Map 04: A lot of health so I can go pretty fast here.
+
+Map 05: I am horrible at this map, I also pick up some rockets here, though it's not really needed.
+I can save 10 seconds on this map if I just rush through it.
+
+Map 06: The start of this map is quite easy and everything goes ok, but then I miss
+everything after red key door and I don't even get the exit jump. Got lucky and managed to
+get past the spectres without taking too much damage and make the jump second try.
+
+Map 07: While I am likely to die with this kind of health, this map is actually really easy when
+I have decent health from 06. I don't have any trouble getting the rocket jump after countless practice attempts.
+This map would be really hard\annoying doing it the normal way, as all the arachnotrons needs to be dead,
+which is not too easy with -respawn.
+
+Map 08: Time here is usually dependent on how much luck you get in the yellow key room. 
+This could have gone better, but not a complete disaster. I don't grab the BFG here,
+since I can do well with rockets on map 09, save plasma ammo and grab BFG on the start of map 10.
+
+Map 09: This map went well, I have mega armor left which is nice for map 10.
+
+Map 10: This map used to be quite difficult, but I haven't had much trouble with it recently. 
+Most dangerous part is going for the BFG, hopefully a lot of infighting going on. 
+I was really low on health so I decided to grab 25 health for map 11.
+
+Map 11: Almost died here, not sure if I should kill the chaingunner at the start
+and also if I should use plasma instead of chaingun, lucky to survive.
+
+Map 12: Somehow accidently switched to chaingun instead of BFG. I very recently decided
+to use BFG to kill the manc right away, after I died because he came out to block me once.
+I suppose that's why Henning does it as well in 30nm2939, because if he stays in place 
+it's better to just grab yellow key because you don't wake up the mancubi since
+they can shoot through walls at times. I usually don't have trouble with the cacodemons,
+I also got some luck with the lift pattern, time could have been better.
+
+Map 13: I used to do SL50 like I do in UV-speed once I go through first teleporter, but then 
+sometimes I would get hit by the imp which would give me a speed boost so I fail the jump.
+Now I do SR40 and then SL40 which gives me enough speed to make it, but also not too much if I get hit.
+
+The elevator started to go down straight away, amazing, as I always seem to have to wait 3+ seconds.
+
+Map 14: I never fail this map anymore, like I did in my previous exit. Also I don't grab soulsphere,
+since it's not needed at all and I don't have to deal with the lost souls.
+
+Map 15: I grab the 400 plasma ammo here, doesn't take too much time and I don't have to deal with the damage floor.
+
+Map 31: I do some wallruns, not sure if it helps preventing taking damage, doesn't really save time.
+I use some plasma to clear out hitscanners, so I have no trouble on this map.
+
+Map 16: This map went perfect! I don't grab the invurnability anymore, as it costs time and it's more dangerous!
+
+Map 17: I love it when that arachnotron infights with that 1 shotgunner, happens 50% of the time.
+possible to save a lot of time here.
+
+Map 18: Straightforward map, tried to grab as much health as I could.
+
+Map 19: Bad time here, I usually always get 51-52 seconds.
+
+Map 20: So close to dying, I messed up with the pain elemental\chaingunner section.
+In the last room I go to the right torch to wake up the revenant so that he goes to the right.
+Worked out perfectly as he was not in position to hit me with a rocket.
+
+Map 21: There are 3 groups of monsters that can hit you when you go through the teleporter,
+by moving to the corner first and then behind the wall and then into the gap I am able to 
+shoot the SSG twice without getting hit! 
+
+Map 22: Dangerous map if you make a single mistake, so I use a very safe strategy here.
+I have no idea what's up with the chaingunners behind the red key door, they don't wake up
+even if you are right in front of them, kind of like the 2 shotgunners in underhalls.
+
+Map 23: A lot of health here makes the start very comfortable, I make sure to blow up the barrels 
+that are in my way, as they can take away a lot of your health easily. I also wake up the arch vile
+and take a step back so that I can more easily kill him with the BFG without taking damage from the revenants.
+
+Map 24: I don't do the wallrun here like I do in uv-speed, because if I fail to hit 3 buttons at the
+same time I end the run by going straight down into the acid. If I ever go for sub 26 or if it's already
+a terrible run I would consider using it. I also messed up with which weapon to use about 3 times on this map
+which cost a lot of time, I was afraid I wouldn't have enough plasma to get clear of the demons.
+
+Map 25: Easy map with this kind of health.
+
+Map 26: I died here not too long ago, got hit in the back just as I was about to go through to the exit door.
+Made a really dumb mistake this time by grabbing the green armor when I had 99% mega armor left, but it didn't matter.
+
+Map 27: Not quite sure what happened here really, bad movement I guess. Lucky with the arch vile opening the door.
+
+Map 28: I skipped the invurnability last time, almost got me killed, since it only takes 2-3 seconds to pick it up
+I figured I'd just grab it rather than dying trying to save 2-3 seconds.
+Also not crazy enough to skip megasphere.
+
+Map 29: Almost everything goes well here, plenty of health through all of it.
+
+Map 30: No bad spawns from the IoS this time, however I can deal with a lot of things with the strategy I use here.
+Unfortunately I fired a bit too early with the rockets so I failed to do a 1 cycle, 
+again that doesn't bother me too much as time would still be above 27 minutes.
+
+
+So, not done with this category yet, not sure if I will focus more time on improving route or going for sub 27 
+without making any changes. I might start doing 30uv again instead for a while, I am quite sure (for like 
+the 100th time, so who knows) that my 30uv route is as good as it can get. 
+
+

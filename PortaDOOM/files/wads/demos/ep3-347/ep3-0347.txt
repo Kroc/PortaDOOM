@@ -1,0 +1,137 @@
+Runner: Zero-Master
+Date: 2015-10-06
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 3 (E3M1-E3M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 3:47 (03:50.94)
+Time With    M8: 4:42 (04:46.09)
+
+----------------------------------------------------------------
+Level			Map	Time		ep3-0348
+
+Hell Keep               E3M1 -	0:30		-0:01
+Slough of Despair  	E3M2 -	0:16		-0:01
+Pandemonium  	        E3M3 -	0:29		+0:01
+House of Pain 		E3M4 -	0:43		-0:00
+Unholy Cathedral	E3M5 -	0:26		-0:01
+Mt. Erebus 	        E3M6 -	0:26		-0:01
+Gate to Limbo 	        E3M7 -	0:57		+0:02
+Dis 		        E3M8 -	0:55		+0:24
+----------------------------------------------------------------
+			TOTAL -	4:42		+0:23
+E3M8 comparison is not relevant. E3M1-E3M7 time is improved by 1 second.
+
+Description: 
+This was done only a few days after I took the episode 1 record, 
+from before I had ep2,4 and 30uv,30pl and 30ev records, so it seems
+only natural I would eventually improve this one as well. 
+
+However, before I started practicing this I was expecting it to be very difficult.
+E3M1 is a really annoying map, though it turned out to be slightly less annoying
+than I had first thought. When I looked closely I noticed that E3M2-E3M6 is not too 
+hard, I have found ways to get through a lot of monsters consistently. 
+There are a few places were you need luck, but obviously you just have to give
+it some attempts before it goes your way. And E3M8 either gives me 56 seconds
+or I just straight up fail half the time like the exit jump. 
+
+I decided I might as well give it a go, and this is the episode record
+I have spent the least amount of time on, and it might be easier to improve
+than ep1 and ep2, because the void glide + switch press on ep2 can kill a lot of runs. 
+ep4 is probably the easiest to improve, it should be possible without too much 
+effort to save another 20 seconds if you know what you are doing :)
+
+So for anyone up for it, I don't think this is too hard to beat if you 
+learn how to properly move through these maps and manipulate the monsters. 
+
+My movement was quite bad throughout this demo, but I got the luck that I needed.
+
+Thanks to Kimo Xvirus and those who contributed to the episode 3 route.
+
+
+E3M1: First of all a time of 30 seconds is beyond incredible for me,
+I have never even had 31 seconds! 
+
+There is a trick here where you skip a linedef so that you can grab
+the shotgun and get out quickly. I thought you had to have a certain speed
+and angle to skip it, which is possible, but I noticed you could actually
+run around the linedef itself. This is what both Xit-Vono (e3m1-028) 
+and Kimo Xvirus (ep3-0348) did, I just never noticed. This makes the map
+a lot less annoying for me. The demons are just pure luck afaik, perhaps
+there is some way you can increase your chances of getting past them by 
+bumping into them or something, but how many shots it takes to kill them 
+is random as long as you can aim down a straight corridor :)
+
+I then practiced the last room quite a bit, usually I just kill 2 imps
+before I run into the room and try to get through, as I should usually
+survive if I kill 2. Then I just try to kill those who are blocking me 
+completely. This didn't take too many attempts so I don't know how well 
+it works. This time I just got very lucky compared to usual.
+
+
+E3M2: I got stuck in that tree in the start, was afraid I'd get 17 seconds,
+but the rest was solid so I got 16, which is my best time. Needless to say 
+this run is going really well so far.
+
+
+E3M3: The worst thing that can happen on this map is that you get blocked 
+after mega armor. The second worst is to have the spectre block you like that.
+In every single practice attempt I have never gotten blocked by him, 
+but somehow I started getting blocked a few times in the last runs I did.
+This should be easily avoidable, as in it's not luck based. So a really dumb mistake.
+
+Moving through the short maze or whatever after mega armor is quite easy with
+the technique I use here, I use strafe on while facing some 45 degree angle 
+and just change SR50 direction whenever I bump into the walls instead of turning 
+with mouse. I found a really awesome way to deal with the last room as well, 
+usually I only have to kill a single imp. The imp always runs away from me
+(at least as far as I've seen) and I only need to kill the imp on the left.
+
+I switch to shotgun before I exit.
+
+
+E3M4: I only grab 1 rocket here, feels like 50\50 if the demon will go
+to the right and just let me run straight through, or if he will block the way.
+Since I have the shotgun up I can switch the plasma when I pick up the rocket launcher.
+Second option is to do like Kimo did and just grab the second rocket and use the RL,
+but sometimes a rocket isn't enough to kill him.
+
+I think my best time here is 41 seconds, I make sure to find the correct angle
+when I do the keygrab though so with better movement or faster keygrab you can
+save a lot of time here, the IL by Hi Jango is 38 seconds for example.
+
+I found a very nice and consistent way to deal with the cacodemon in the exit room, 
+it works very often, unfortunately I lost some 2-3 seconds in a different run because
+it failed. So it doesn't always work but quite often I just run straight past him like this.
+
+
+E3M5: Not a good time, lost a second here. Quite an easy map to get 0:35 on.
+
+Thanks to Adam_AK for the blue keygrab setup, works every time so I am always 
+able to reach the teleporter as the crusher gives me room to move to it.
+Also very easy to get around the spectres like this. 
+
+
+E3M6: 25 seconds is my best time here, but it's a bit difficult, 
+so I am happy with 26 seconds. Needs some luck with the spectre dying 
+in a single rocket (which I got this time) and the other rockets as well.
+
+
+E3M7: Not a good time, though it's not a disaster since I didn't get blocked 
+badly by some demons or anything. Usually I get 56 seconds here, my best
+time is a low 55, but it's difficult to get in a run. Also the jump in the
+end here is often blocked off by lost souls, I don't have any plan to dealing with them.
+I can't really stop to kill them because it costs too much time, so I can just
+hope that they aren't in my way, which they weren't this time.
+
+
+E3M8: Only lost 26 seconds to ep3-0348 here... 
+Obviously if I was going for best E3M1-E3M8 time I would just grab the BFG on E3M3.
+It costs about 3 seconds, I don't think it can be used anywhere in the run to save any time.
+So with the BFG this map is straightforward and takes about 8-9 seconds. Kimo got a 31 here.
+
+I still try to put some effort into M8, but that mastermind is scary when I don't really have
+enough plasma ammo to take him down, no need to throw away a run for a map that doesn't matter.
+
+
+Never would I have imagined that I would improve ep3 record because I got 30 seconds on E3M1.

@@ -1,0 +1,252 @@
+Runner: Zero-Master
+IWAD: Plutonia.wad
+Category: NM-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.2.1
+Time: 43:57 (44:12.69)
+
+Map	Time	
+01	01:05	:))
+02	01:59	:))
+03	02:05	:))
+04	02:09	:))
+05	01:55	:))
+06	02:32	:))
+07	00:56	:))
+08	01:11	:))
+09	01:29	:))
+10	01:24	:))
+11	01:19	:))
+12	00:33	:))
+13	01:59	:))
+14	01:01	:))
+15	00:54	:))
+16	00:47	:))
+17	00:19	:))
+18	00:35	:))
+19	00:38	:))
+20	02:19	:))
+21	00:49	:))
+22	02:26	:))
+23	02:34	:))
+24	01:49	:))
+25	01:28	:))
+26	01:23	:))
+27	01:31	:))
+28	02:08	:))
+29	01:32	:))
+30	01:08	:))
+
+
+It's been just over a year since I picked up doom speedrunning after watching inspiring runs like 30nm2939 by Henning and
+watching Dime stream his plutonia UV-Speed attempts. This will probably be the best demo I will ever make, even
+though it didn't take as many attempts as Doom 2 UV-Speed in 20:32, The work that I put into finding a route that
+is survivable and practice to make sure I have everything accounted for has been tremendous. This could have
+happened on the first run, or the 10.000th run, it all comes down to playing well and having a lot of luck on the way,
+which is exactly what I had this time. 
+
+No previous episode\d2all runs non-TAS existed before I started. 
+The induvidual level runs for plutonia on nightmare are not very useful in planning this run, since weapons from
+the previous levels make a lot of difference, and time is not a factor for me. There is a TAS by Istvan Pataki which is 1:11:04 
+long and done in 1999, I haven't even watched most of it. So most of the planning comes from things I learned while doing UV.
+So thanks to all those who discovered the tricks for this run, without most of them this would have been impossible.
+
+There are several glides, rocket jumps, arch vile jumps, keygrabs, and a ton of trigger skips. 
+This run is 27 minutes faster than the TAS (done in 1999), and even a few minutes faster than the first UV-Speed exit by stx-vile.
+
+
+Map descriptions:
+Map 01: Mega armor is easily avaliable at the start which makes the start of this run a lot more comftorable.
+I only grab the Rocket Launcher (RL) before going for the exit, where I clear out everything as quickly as possible
+so that I can do the SR50 trick to jump to the exit without getting disturbed by respawning chaingunners.
+
+
+Map 02:	RL is pretty useful here to clear out the hitscanners, I also grab some plasma cell\backpack on this map
+so that I'll have an easier time on map 4. Invisible bridge can be annoying at times, need to move quick not
+to get hit by revenants.
+
+
+Map 03: I hit the arch-vile with 3 rockets hoping that he will survive, because I don't want him to respawn
+by the time I get back, as it costs a lot of time to kill him again. Thankfully there is another mega armor
+on this map which I can grab before going for the exit, as I really need it for map 4, which is also why I 
+grab the soulsphere secret. I skip the red key by doing a glide to hit the switch that lowers the exit.
+
+
+Map 04: One of the hardest maps in the run, for any consistency on this map you have to grab the plasma rifle.
+It will allow you to rush from the blue key to the exit, as there are revenants that are able to hit you very quickly
+which means you're dead if you get stuck in a cacodemon\pain elemental. I cleared out the barons earlier on which
+makes them respawn in an area they can't get out of. Close call on blue key.
+
+
+Map 05: I do a glide here to skip 2 barons, and just take it slow since there are so many hitscanners\demons ready to 
+kill you at the start. If the mastermind doesn't infight then I am usually dead, this time I was very lucky to take hardly any damage 
+from him. I kill 2 barons at the exit area so I can reach the switch, still almost died even though I didn't even get hit by arch-vile.
+
+
+Map 06: So many revenants... they just keep a constant stream of missiles going, some which are homing, making it very difficult
+to move forward. Lots of plasma ammo on this map, will come in use later. The last room is one of the hardest places to get past,
+simply due to the amount of shit that will respawn... chaingunners hitting you from the high ground, revenants respawning to block 
+the switches, and of course demons to block you in no time, or even worse, take a rocket to the face, oh and, let’s not forget the cyberdemon.
+
+
+Map 07: Short but very dangerous map, just lost 2 runs on this map before this run. 
+
+
+Map 08: There's a glide here to skip a large part of the map, making it a lot easier. 
+Impossible to avoid taking a hit from the arch-vile, though it usually allows me to reach the exit quicker, 
+which is nice when there are either barons\revenants trying to hit you. Very easy to get pushed off here, also by the arch-vile.
+
+
+Map 09: If there wasn't a soulsphere on this map I wouldn't even bother with this run, the invurnability usually never lasts to the 
+last room and I take tons of damage from the hitscanners. This was pretty much perfect up to the last room, 
+but a major fuck up in the end cost me a lot of armor, which I need to keep all the way to the end of map 12. 
+I set up for a trigger skip so I avoid activating the elevator for the mancubi, it's near impossible to hit the switch
+with getting pushed off. 152% armor at the end is horrible, since it's so difficult to keep it past map 10. 
+
+
+Map 10: Very dangerous map, again I need to keep my armor high, surviving this map is not enough.
+The window skip doesn't work all the time, which means I'm dead if it fails. I got really really lucky on this map at times, 
+going for the red key switch and back, nothing short of a miracle. 87% armor is not a complete disaster.
+If I have around 50% or less I might as well just end demo and take a new episode 1 record instead :)
+
+
+Map 11: I try to skip waking up the arch viles by running out on the left side of the switch as quickly as possible. 
+If I don't get it correctly than this goes from being an easy map to one of the hardest maps. So, it's better to
+hit the switch too early rather than too late, since it does nothing, while hitting it too late will wake them up,
+which is why I failed this a few times.
+
+
+Map 12: Extremely hard map, there's a really long list of shit that can go wrong here. Everything is planned very carefully.
+I let the chaingunner hit the hell knight in the start so I can get around, then I get in line of sight of caco so that I can
+drag him to the left and run around him without getting hit. I need to avoid firing at the start so I don't wake up the 2 cacodemons
+by the exit, even though it could look like it kinda backfired this time considering how close it was in the end. I then BFG
+my way through so I can kill that damn pain elemental, he will fuck things up so quickly that I just need to kill him asap. 
+This route is very effective in dealing with him, I also try to avoid killing the demon and spectre up to this point, 
+so that I can run back to the mancubus and kill them from there. If either of them respawns the run is over, since there is a 12
+second delay before they can respawn I need to kill them as late as possible. They will just instantly block any attempt of a rocket jump.
+then I kill the imps last, obviously I can't have any of them respawning, so if there were several cacodemons left alive
+I would very likely have to deal with respawns of imps\demons which would not work. 
+
+The arch-vile is a pain in the ass once you go through the teleporter, because he will force you to hug the wall, which makes it near
+impossible to dodge any projectiles from cacos\imps left alive. After all of this you have the "easy" part where you just do a rocket jump.
+During UV-speed attempts less than a year ago this was one of the most scary parts, same goes for map 25 RJ :)
+
+I took almost no damage which is very very rare up to the point where I do the rocket jump, and in the end I exit with 14% after
+kind of messing up, though it's hard to avoid taking damage from the cacodemons.
+
+
+Map 13: The lost souls would have killed me here with 14% at least 50% of the time, I got lucky again. Last time
+I reached this map I had 24% health and got killed, that was my best attempt until this one.
+I take things really carefully in the start, then I skip the trigger for the mancubi elevators on the key.
+I do two glides here, since this is the furthest I've ever gotten so my hands are shaking a bit at this point,
+making the glides a lot more difficult than they needed to be, but I didn't fuck up by turning left\right or moving past the gap
+which would cost a lot of time, and the baron can respawn and just kill me.
+
+I clear out the hitscanners and grab the mega armor, luckily 1 of the mancubi is facing the wall and doesn't wake up.
+Try to avoid waking up the revenants that are behind me when entering the last room, so that I can safely reach the megasphere.
+
+
+Map 14: I kill the cacodemon since I don't want him to disturb me when I go for the key grab. Slightly difficult trick,
+if I miss it then I can take a lot of damage, fortunately I got it first try. I take it really safe in the end since there
+are a lot of revenants. I take a lot less damage than usual this time.
+
+
+Map 15: One of the very few easy maps in this run, invurnability allows me to go through this without any problem.
+Sometimes the large amount of hitscanners can push me off the platforms at times, or the archviles can throw me off.
+If the invurnability runs out you take damage very quickly.
+
+
+Map 16: I kill both the damn arch-viles here, makes it a lot easier. Very dangerous map, I only get 1 attempt 
+on the elevators, If I fall down the respawn will kill me 100% of the time. I lost several episode 2 attempts here.
+Revenants can push you off the elevator or spectre can block you going for the teleporter.
+
+
+Map 17: Plenty of health and enough plasma ammo, making this a very easy map, and here I do a death exit, meaning I die, exit the map 
+and start the next map with 100% health and no weapons.
+
+
+Map 18: I take a step back and run forward to counter a shotgunner. Sometimes you get an imp or shotgunner teleport 
+right in front of you at the start, a shotgunner is way too dangerous so the imp will throw a fireball 
+that can hit him getting them to infight. Everything went perfect this time, arch-vile jump to the exit skipping the whole map.
+
+
+Map 19: I grab the secret here, and BFG, so just missing plasma\RL which I pick up on next map.
+I do a glide here to reach the exit. In this map there is a cyberdemon in a very small space, I don't even
+want to think about the difficulty if there was no glide here.
+
+
+Map 20: Quite a dangerous map, I take a lot of things slow here to make sure I get through alive. 
+I killed some chaingunners by using rocket splash damage by the invisibility sphere. 
+You cannot fire after you pass the arachnotrons, I make sure to pass the trigger that opens the wall there.
+I need to wait for the barons to leave so I can hit the switch. Kind of close to missing the jump to the pit, which would end the run.
+
+
+Map 21: Here starts episode 3, I have a lot of health\weapons\ammo at the start, and there's plenty of it, so not the most difficult map
+However, I need some luck with the pain elementals, which I got, since you can't see them, they are actually busy infighting each other.
+If they are able to exit and spawn lost souls then they can block me going for the glide which ends the run. 
+Happened several times during episode 3 attempts.
+
+
+Map 22: Impossible mission, a really hard map indeed. The start is fine, but I have spent a lot of time figuring out how to do grab 
+yellow key and exit without getting killed. There is so much shit that can go wrong here, I got lucky with the yellow key by taking very little
+damage, then I do the trigger skip on the teleporter which means I grab the red key without too much trouble. The baron\AV are trapped, 
+but they can still hit if I get to close.
+
+Complete panic at the end of this map, I wanted to hit the switch from the other side since it opens a secret to 2x25 health, 
+but decided to just go for the health on the inside instead. There are some chaingunners nearby, I really wasn't sure
+if they would kill me, and I need at least 50% health\armor to feel comfortable on the start of next map.
+
+
+Map 23: Tombstone... This is by far the hardest map in this entire run, and it's only map 23 of 30!!
+Incredible luck by grabbing blue key, I took no damage at all! 
+
+I have run through this map in so many different ways, practiced it over and over and over again, yet getting through alive 
+is less than a 50% chance on a good day. Almost everything went my way this time. The list of things that could go wrong here is too long,
+respawn being one of the major contributors. The arch vile in the start will almost certainly respawn, and you never know where
+he will show up to kill you. There are also 2 arch viles in a room leading into the red key, you pretty much just hope that the 
+revenants will hit them both, which is happens about 4 out of 5 times, of course when it doesn't happen you take a lot of damage at the
+wrong time. Revenants are everywhere, and luck is a major factor if you get through alive, you can get missiles going straight or homing missiles  
+which are impossible to dodge in small corridors, and they can do 10% to 80% damage.
+
+Everything went exactly as I would like it to go, which left me at a lot of health in the end which is unusual.
+
+
+Map 24: Thankfully there's a megasphere at the start of this map as well, and even an invurnability! 
+without either of them I wouldn't even bother with this run. I do an arch-vile jump so that I can deal damage to the cyberdemon using 
+the BFG, I don't want to kill him since he can respawn. If he is alive when I go through the teleporter he will 100% of the time hit me
+unless he is infighting. Even if he is infighting something it doesn't take long for him to kill his target. I exit with a lot of health.
+
+
+Map 25: So many hitscanners on the start of this map, they really drain my health quickly. I do 2 tricks on this map, the first is a glide, 
+and a RJ to exit. I messed up badly trying to BFG the 2 revenants , I had to rush that megasphere since it's 20% damage floor, so I took 
+70% damage which is really bad, luckily the rest of the map went really good so I had plenty of health for map 26. If I miss that RJ the run 
+would be over, and considering the nerves at this point there's no guarantee I will make it.
+
+
+Map 26: Enough health and plasma to make this map straightforward, even then a small mistake can kill you.
+
+
+Map 27: Massive fuck up on this map, complete panic in the end almost... This is what getting a NM run this far does to you, 
+having the invurnability run out before you even make any progress is a complete disaster. If I would have missed that jump
+to the second invurnability I would have died, the hitscanners and projectiles coming your way makes it difficult.
+
+
+Map 28: I grab soulsphere at the start, rest of the map is straighforward with this kind of health and plasma ammo.
+I make sure to exit at 200\200.
+
+
+Map 29: Perfect start to this map, took no damage before I went to YK door. Not to well in the end, I almost fell off
+by the blue key door if that missile from revenant would have hit, and mistakes like that can be hard to recover 
+from since things aren't going exactly as you planned. A relief to see the revenants die and that I still have plenty of health.
+
+
+Map 30: And here it is, the very last map of the run, I've died here on episode 3 attempt before. The start is not too bad,
+make sure to kill the arch viles and have 600 cells with plenty of health. Then I kill the cyberdemon from a safe spot. If it wasn't
+possible to kill him like this I would never even bother to look at this run, not even an episode 3 run. 
+
+Once the cyberdemon dies I have to quickly run to the elevator, as he can respawn, even before I am able to fire both rockets!!
+I do what I needed to do, both rockets hit in on first try. My fingers were shaking like crazy when I was waiting for the elevator to go up.
+I need to hit fire and walk forward at the same time, at a specific time, if any of them are off then I am in a really really bad spot. 
+I wasn't supposed to  drop down after firing the rockets, but I felt confident they would hit, thankfully I didn't have to worry,
+since both of them went in.
+

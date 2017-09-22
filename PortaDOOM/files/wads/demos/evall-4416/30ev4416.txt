@@ -1,0 +1,154 @@
+Runner: Zero-Master
+IWAD: TNT.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.2.1
+Time: 44:16 (44:31.31)
+
+Map	Time	
+01	00:41	:(
+02	01:01	:((
+03	01:27	:(
+04	00:19	:|
+05	01:33	:((
+06	02:34	:((
+07	00:59	:)
+08	02:08	:))
+09	02:54	:|
+10	01:18	:)
+11	00:26	:)
+12	00:46	:(
+13	01:16	:(
+14	01:57	:((
+15	00:19	:)
+16	01:31	:)
+17	00:58	:(((
+18	01:32	:)
+19	01:06	:|
+20	03:24	:(
+21	02:44	:)
+22	00:28	:|
+23	00:37	:)
+24	00:24	:|
+25	01:38	:))
+26	02:26	:((
+27	02:14	:))
+28	01:49	:(
+29	02:00	:((
+30	01:47	:(
+
+
+This is my second exit for TNT:Evilution, first exit was 45:08 with a massive (40+ seconds) mistake on map 25.
+This is the 3rd attempt that has gone past map 10, that is, 2 out of my 3 runs that reached map 11 went all the way.
+
+I don't like speedrunning this WAD too much, well, the reason is because I have spent at least 50% of 
+my time running this wad on map 1-3. I don't like tyson, and the second map is so random when
+trying to grab the yellow key. The 3rd map is also painful when it comes to rng, how many of 
+the hitscanners are going to hit you? is the revenant going to hit you? and spectres get in your way?
+Though I figure most of it comes from making mistakes simply because I'm tired of trying to get past these maps.
+
+Thanks to previous runners of this WAD: stx-Vile, Dime and j4rio, as well as the TAS by Istvan Pataki
+and IL\episode runners. Primarily I have followed 30ev-4434 by j4rio.
+
+
+Map 01: I really don't like tyson, and since I struggle so much with getting past the inital maps
+I grab mega armor first, 41 seconds is average with my route and tyson skills, but obviosly
+losing 11 seconds already on the first map to 30ev-4434 is not ideal.
+
+Map 02: So after failing to grab yellow key by the jump about 10 times in a row because some
+demon or that 1 imp I didn't kill managed to block me I decided I'd do it the intended way.
+Not the only thing that went wrong, so terrible time.
+
+Map 03: Difficult map, managed to get blocked by revenant, never happened before.
+
+Map 04: Very short map, usually quite easy, but with low health this map can end right away.
+
+Map 05: Terrible time, and very close to dying, however my method for doing this map is usually quite good.
+I figured you can skip the teleporter spawns by not firing after entering the blue key room.
+You can fire after get back to the centre room. I skip the soulsphere as well. Should go at least 10 seconds faster.
+
+j4rio also mentioned the possibility the grab yellow key, ev05o037-Looper.lmp shows this trick.
+Very cool trick, highly recommend to watch it if you haven't. I only managed to do this trick twice,
+but I don't think there is any consistent way to do it.
+
+Map 06: I have never been able to match j4rio's time here, even before I started going for mega armor.
+I grab mega armor because I want to get through this map alive.
+
+Map 07: Straightforward map, thought need to keep as much armor as possible.
+At the end of this map I had to sit up properly in my chair because a run is starting to go somewhere finally :)
+
+Map 08: So I want to have as much health as possible for the last sector of this map, 
+because I skip the invisibility. Saves a lot of time.
+
+Map 09: Stronghold, so many hitscanners, but with careful planning this map isn't too hard. 
+Terrible time though, as I ignore monsters in the 1 room before the exit which should save 
+quite some time compared to 30ev-4434.
+
+Map 10: I don't like this map, damn revenants get in my way usually. I just want to get past this
+map since there is a megasphere waiting for me on map 11.
+
+Map 11: I told myself the first time I reach this map I am going to get an exit, 
+because almost every map from now on is very easy, and I did, and this was 3rd time I reached this map.
+
+Map 12: Straightforward map, I still managed to mess it up very badly.
+First time I've ever gotten hit by archvile.
+
+Map 13: Not too happy about 100\100 at the start of this map, but there is green armor + berzerk in RK room.
+
+Map 14: I've never once missed that jump to the second crusher, well, I have now. Terrible time. 
+For a moment there I thought I was going to get killed by the last crusher.
+
+Map 15: Very easy map, and a BFG!
+
+Map 16: Mega sphere on the start of the map, this map went ok, really nice amount of health at the end.
+
+Map 17: Complete disaster, and my biggest mistake in this entire run, should get 25 seconds on this map.
+I did this map differently because I had so much armor, of course I should stick to what I know,
+instead of trying different routes in attempts that make it this far.
+
+Map 18: So, just a couple of days ago I figured out how to do this map... worked perfect! That cyberdemon though... 
+Thanks to stx-Vile for discovering this amazing trick! -50 compared to 30ev-4434
+
+Map 19: Another megapshere here, straightforward map.
+
+Map 20: Shit map, not a good time but what ever. Also I don't shoot in the last ... half of the map, 
+but I'm not sure if it paid off, I do it because it doesn't teleport in the arch vile\mastermind etc.
+Make sure to spend all cells, since you get 600 here.
+
+Map 21: This used to be the worst damn map in the entire wad, it's still terrible, but I don't 
+find it too difficult anymore at least. Very unfortunate about that linedef skip in 30ev-4434, so -30 here.
+
+Map 22: I haven't played through this map normally, I don't plan to either.
+
+Map 23: Straightforward map, some crazy jump you can do on this map, I never manged to get it.
+
+Map 24: Same. The IL for this map has a very... intresting trick.
+
+Map 25: My first exit had a really big mistake here, I missed the switch in the room that 
+teleports you to the exit, and I paniced when I had chaingunners + a couple of barons around me
+wasting a lot of plasma and I didn't really figure out how to hit the switch again, even though 
+it was quite obvious you had to press the wall to lower it. This time it went fine.
+
+Map 26: That is what I get for missing a spectre in a narrow corridor, never happened before.
+Bad time, but a lot of health which is very nice.
+
+Map 27: With this much health this map is easy, however such a long and boring map.
+
+Map 28: Garbage time, got lost in the maze, lol.
+Also remember not to skip the linedef by the archvile, I don't think there is a way up!
+
+Map 29: Just playing really bad at this point. Figured I'd just grab the soulsphere in the start since
+this wasn't going to be a great demo anyways, but enough to be an improvement if I exit.
+And thank god those crushers have a fixed pattern.
+
+Map 30: Was about time I got that chainsaw!
+For a moment there I wasn't sure which platform to go on, would make one hell of a fail demo if I went the wrong way.
+Figured I had enough health to just tank those revenants hits, I didn't want to fall off here.
+Using rockets to kill lost souls is obviously a complete waste of time, but I didn't want to get telefragged.
+Lucky with the IoS, I had a baron alive behind me but I got the BFG plasma ball in quickly.
+
+Overall this was an awful run, I could save almost 130 seconds on map 17, 18 and 21 compared to j4rio's 30ev-4434,
+since I know of a couple of tricks and making sure I knew where the linedef on 21 was. So, hopefully someone is 
+up for improving this one. 
+
+

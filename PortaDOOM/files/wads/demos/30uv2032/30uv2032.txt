@@ -1,0 +1,196 @@
+Runner: Zero-Master
+Date: 2015-03-13
+IWAD: DOOM2.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.2.1
+Time: 20:32 (20:49.26)
+
+Map	Time	
+01	00:06	:)
+02	00:41	:)
+03	00:32	:)
+04	00:29	:)
+05	00:28	:)
+06	01:02	:(
+07	00:13	:))
+08	00:30	:(
+09	00:59	:))
+10	00:39	:|
+11	00:35	:)
+12	00:50	:)
+13	01:09	:)
+14	00:20	:)
+15	00:34	:)
+31	00:34	:)
+16	00:14	:)
+17	01:55	:|
+18	00:24	:)
+19	00:42	:))
+20	00:38	:)
+21	00:20	:)
+22	00:27	:)))
+23	00:40	:))
+24	00:40	:)
+25	00:46	:)
+26	00:40	:)
+27	00:22	:)
+28	00:48	:)
+29	01:43	:)
+30	00:32	:))
+
+
+
+Description:
+This run was started about 1-2 hours after I had an absolutely devastating mistake on map 30 
+in a previous run, I shot the first rocket about 0.1 seconds to early so I ended up with
+a time above 21 minutes. 
+
+I felt I was playing really well before that mistake and I figured I should just continue
+and forget about my failed efforts earlier on. And then I got this run so quickly,
+if it wasn't for the failed map 30 I would never have gotten this ridiculous time of 20:32.
+
+My goal was to get 20:59 or lower, so I am very happy to get 20:32.
+
+
+Map 01: I always aim for 6 seconds here, even though I have gotten 5 seconds a few times 
+I feel like aiming for 5 seconds decreases my chances of getting through in less than 7 seconds.
+
+Map 02: I reset at 46 seconds and my best time is 37 seconds, so 41 seconds is good.
+
+Map 03: In my route I choose to grab the RL, 100 plasma and soulsphere. 
+This cost at most 5 seconds, the RL should save time on map 4, the plasma ammo should save 1-2 seconds
+later on with using BFG, and the soulsphere will increase your chances of getting through the 
+next maps. Having the RL means you also don't have to pick it up on map 07. Solid time here.
+
+Map 04: I run past the hitscanners in the start and use RL on the imps. Sometimes you can take 
+over 200% damage trying to run past them, so several runs end there. Sometimes it's possible
+to run past the demon by the exit, didn't happen this time, but still a very good time.
+
+Map 05: I really like this map, if you do everything correctly you can get 26-27 seconds every time, 
+though mistakes happen and I got 28, still good though. 
+
+Map 06: Skipping past the elevator is a really easy trick, skipping to the exit is probably
+the trick I hate the most in the whole game, even though if you fail this trick it doesn't directly end
+your run :) So what I tried to do here was to first skip the trigger that opens the doors, 
+then I went through the teleporter and get a certain angle when facing the wall and just SR50 
+across to the exit, but I messed up the easy part of getting the right position so I didn't make it.
+
+A time of 1:02 is pretty bad, but it's just a difficult map for me.
+
+Map 07: This map went perfect.
+
+Map 08: Stuck by the barons... again... I've spent a lot of time trying to find some consistent way
+to get through here, but after some time I have just accepted that some runs will go really badly here.
+I missed the rockets in baron\cyber room so I picked them up in the other room, as i have to wait
+for the elevator anyways.
+
+My best time on this map is 22 seconds, 23-24 seconds isn't too hard to get if you get lucky.
+
+Map 09: Almost perfect, best time I've had is 57 seconds.
+
+Map 10: So here is a pretty big change in the route. Been quite some time since I wondered what
+that random light texture in the middle of this room was, and I was really surprised when I found
+that it opened up the wall to a BFG. At first I wondered if it could be useful to save time,
+but I didn't see any use for it besides the demons on map 10... turns out it can save some time on the next maps. 
+
+After picking up the BFG I was kind of in a bad spot since I usually run around on the right side,
+but I was able to run around on the left side without taking too much damage. 
+
+Map 11: 35 seconds is really good here since I didn't manage to kill the imps by the exit area 
+before I got on the elevator.
+
+Map 12: Missed the yellow key grab trick unfortunately, though I usually never get it anyways 
+and it doesn't really cost too much time to go for it. Happy to not get stuck in any of the elevators.
+
+Map 13: Pretty big change here as well, I skip both invurnabilities to save time. 
+
+I kill the arachnotron in the start, because he will block you very often when you don't drag
+him further down like when you go for the invurnability. I then BFG the mancubus (it is possible
+to skip past the manc without waking him up, but it works only about 50% of the time) and 
+I then don't go through the teleporter and instead BFG the revenants. This increases my chances of
+getting past significantly even though I lose about 1-2 seconds on it. Even with invurnability 
+you can get blocked by them and you'd lose several seconds. 1:09 is not the best time, but better than
+what I get from the old route.
+
+Map 14: One day I decided to just BFG the revenant past the first door, and so completely by accident
+did I discover how effective it was to kill him with the plasma ball and everything else with the 
+secondary BFG attack. This saves time and plasma, my best time on this map is 19 seconds with this method.
+
+Map 15: Yet another use for the BFG, I clear out the cacodemons to save 1 second, but if I
+wouldn't have picked up the BFG by now I would pick it up after going through the teleporter. 
+But then I would have to wait for the weapon change animation, but since I already have 
+the BFG I can fire before I pick it up. This saves time, but also it prevents waking up 
+the pain elementals and cacodemons which saves plasma + time :)
+
+Map 31: 34 seconds is good, at least it's not 35.
+
+Map 16: Different approach here, I skip using the BFG to save plasma ammo compared to older runs.
+I drag the revenants out and just ignore them, this also usually means I don't get hit by the revenant behind
+me since I am almost moving. The imps in the end should not have enough time to kill me anyways so 
+I don't BFG them either. Good time here.
+
+Map 17: Just had to miss that skip in yellow key room, oh well, doesn't cost too much time.
+In the run I had just before this one I had 1:48, so this could have gone better.
+
+Map 18: Straightforward map, 24 seconds is fine.
+
+Map 19: This map is always very scary, if you don't glide quick enough the run is over.
+Luckily I didn't even have to apply any vertical mouse movement here and I just went straight through.
+Sometimes I get stuck when strafing to the left, very annoying but thankfully that didn't happen.
+
+Map 20: Usually I always get 37 seconds here, but 38 seconds is fine. Made sure not to run 
+too quickly into the teleporter, or else I can get stuck with no chance of escaping.
+
+Map 21: Easiest glide in the game, decent time.
+
+Map 22: Incredible time here, everything went perfect. Whoever attempts to improve
+on this run will have a lot of "fun" on this map, because getting something like 27 seconds is 
+very very difficult, so happy to get such a time here. 
+
+There are 3 tricks to this map, first there is a glide that can be very random. 
+I've spent several hours trying to figure out how to do it quickly, because it's not 
+uncommon to just completely end your run right here because you can't get through fast enough.
+Then I do a rocket jump, should save 3 seconds if done quickly enough, and last there is a SR50
+jump across to the exit area, I use a BFG here to make sure I always get this trick, as it fails
+if something blocks you.
+
+Map 23: The barrels stayed up! So I get to do another trick here and run across the barrels saving 
+quite a few seconds. I also skip picking up the BFG and just run around the demons.
+
+Map 24: I always get nervous here, a small mistake and it's over. A bit of bad luck with the lost souls and it's over.
+Everything went good here, of course my movement could be better though.
+
+Map 25: With this amount of health I expect no trouble here, usual time for me is 45-46 seconds.
+I skip the 200 plasma ammo as it saves 5 seconds.
+
+Map 26: I BFG at the start to reach the switch as quickly as possible, so I can get there before the 
+cacodemon teleports in. I then wallrun on a lost soul to grab yellow key, sometimes it can fail if you get hit
+by cacodemon\imp from behind which gives you a speedboost.
+
+Map 27: Insane, I swear that arch vile could have ended that run if he didn't attack.
+I try to avoid bumping into him since it can change his direction and he can walk straight into the teleporter.
+Very happy with getting through this map, 22 seconds is fine.
+
+Map 28: I BFG before I enter the room with the arachnotrons, so I don't wake up the mastermind.
+I skip the invurnability in the start to save time, can be very risky if you miss with the BFG
+and get stuck in there, because the aranchotrons will tear you apart very quickly.
+
+Map 29: Kind of stupid start to the map, where I failed to get the speed boost from walking against the torch.
+I took quite a deal of damage in the start, and the cacodemons weren't too friendly. I also
+messed up with the BFG a couple of times, but I have so much plasma ammo that it didn't matter.
+
+I then clear everything with 3 BFG's in the second last area, unlucky that 1 shotgunner survived so I had
+to use plasma rifle. I then setup for a rocket jump, it took me several hours to find this setup. 
+It works really well, but there is still a significant chance that I might fuck it up, in which case
+the run is completely over.
+
+Map 30: Just 1-2 hours ago I fucked up big time on this map, naturally I was very nervous thinking:
+"You're not going to fuck this up twice in a row are you?". The first spawn that I got was a pain elemental. 
+That is very unlucky, still better than an archvile. The lost souls were very distracting, so I wouldn't blame
+myself if I missed any rockets, but somehow they all hit.
+
+
+Final time is 20:32, close to 20 minutes, but I will never be able to find 33 seconds on top of this.
+
+

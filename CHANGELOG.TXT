@@ -4,8 +4,10 @@
 
 22-SEP-17:
 + DOOM3 BFG WADs are now automatically patched!
-* Fixed GZDoom-hardware being listed as a choice in play.bat
-  when requirement was software only
++ Added demos to Cacowards 2015
+  (had to hunt these down manually)
+* Fixed GZDoom-hardware being listed as a choice in play.bat when requirement
+  was software only
 * Fixed "InstaDoom" launch scripts
 
 21-SEP-17:

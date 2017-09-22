@@ -1,0 +1,134 @@
+Runner: Zero-Master
+Date: 2015-10-03
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 1 (E1M1-E1M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 4:57 (05:01.00)
+Time With    M8: 6:08 (06:12.34)
+
+----------------------------------------------------------------
+Level			Map	Time		ep1-0500
+
+Hangar                  E1M1 -	0:12		 0:00
+Nuclear Plant  	        E1M2 -	0:23		-0:01
+Toxin Refinery 	        E1M3 -	0:45		+0:02
+Command Control		E1M4 -	0:17		-0:02
+Phobos Lab 	        E1M5 -	1:01		 0:00
+Central Processing	E1M6 -	1:04		-0:01
+Computer Station	E1M7 -	1:15		-0:01
+Phobos Anomaly		E1M8 -	1:11		-0:06
+----------------------------------------------------------------
+			TOTAL -	6:08		-0:09
+E1M8 comparison is not relevant. E1M1-E1M7 time is improved by 3 seconds.
+
+Description: 
+This is a 3 second improvement over ep1-0500 by stx-Vile, a record set over 10 years ago.
+
+The episode 1 run is very complicated, as it has a high monster density in many places.
+A great deal of time is needed to figure out how to properly manipulate the monsters 
+and which weapons to use so that you can as quickly and consistent as possible move through everything.
+
+So if you don't plan this very carefully you will get blocked off by monsters at
+every hallway and every corner. 
+
+Many who pick up doom speedrunning for the first time start with this run,
+a terrible choice in my opinion :) I would rather recommend episode 2, or
+maybe episode 3 if you don't care too much about your time on the first map.
+They are both easier and more forgiving in terms of difficulty, as in
+reaching the exit alive.
+
+It's common to use the ExM1-ExM7 times even though it's no longer needed with sourceports, 
+I write down all the times for easy comparison with the previous record in competn.
+E1M1-E1M8 is easy to beat using a different route, though since the M8 time doesn't
+appear in vanilla it's the ExM1-ExM7 time which is considered for episode record. 
+
+Thanks to the previous runners like stx-Vile and Adam Williamson, the route is largely
+based on their runs.
+
+E1M1: Not too difficult to get 12 seconds here, my best time was a 12.11 
+I think, so it is possible to get 11 seconds, but it's very difficult, 
+much harder than for example 5 seconds on map 1 of doom 2.
+
+I shoot before grabbing mega armor since 1 of the shotgunners wakes up,
+I like his position better in this case, not really necessary.
+
+
+E1M2: The first door is really luck based, this time I kind of got it. 
+A time of 23 seconds here is my best time, though I could have 
+easily had some 22 seconds at some point in my attempts.
+
+There is a good possiblity the imp at the exit goes down the elevator, 
+which is really annoying. Though it might be possible to prevent it if you go 
+slowly from the right side since it wakes up the zombieman first which
+should prevent the imp from bumping into him and going down the elevator.
+
+
+E1M3: Before and after blue key door was a mess here. I got really luck 
+in BK area so I didn't lose too much time. Quite a hard map, and a lot of 
+it has to do with the demons being very good at blocking you. 
+
+
+E1M4: So a pretty "big" change here to the route used by stx-Vile and Adam Williamson, 
+Every single person I've watched try episode 1 always follows the route that goes 
+to the right, this is a big mistake. No doubt that everyone that does this has had
+several times where they lose time to not being able to open the yellow key door.
+
+There is an elevator in the room forward to the left from where you start, if the 
+elevator is activated you cannot open the yellow key door. However, you never
+actually use the elevator so obviously there are some monsters that activate it.
+These monsters are the ones that you pass at the start, so I try to kill 1 of 
+them while going past them, that leaves 4 of them that would have to wander 
+to the room, but since I also went to left at the start so they take more time to 
+reach that room, and I almost always get to open the yellow key door this way. 
+
+16 seconds is not hard to get, usually it's 50\50 if I get 16 or 17, assuming I don't fail the trick.
+
+There is also a different route for this map, which skips the YK, you can run to the right
+instead of trying to go for the jump, and you can instead go for a much harder trick. 
+
+With SR50 you can make the jump to the exit door, though it is quite random at times.
+It's very difficult since you can get blocked and you need to find the right angle,
+and even then it might fail.
+
+
+E1M5: Insane time for me, I never expect to match Vile's time on this map.
+It all comes down to getting the elevator, and this was perfect luck.
+
+It's impossible to get consistent good times on this map, there is simply
+no way to manipulate the demons to let you through more often than not.
+ 
+I even threw away about 2 seconds in the end, so could have been a really amazing time.
+
+
+E1M6: I almost let the shotgunner go too far, if he doesn't block the door you have
+to wait some 30 seconds, obviously ending the run.
+
+And where the hell did that spectre come from, I have never had him block me there before.
+Also I've made quite some changes regarding rocket usage at the end of the map.
+
+I expect to save a few seconds on this map if everything goes well, not too happy about this time.
+Usually I get 1:00 if everything goes really well, which never happens in a run anyways :)
+
+
+E1M7: Insane time again for me, I did not expect to save time here, 
+but I don't expect to lose much time either.
+
+Really good luck with the red key area, that went a lot more smooth that it usually does.
+I also managed to hit a really good rocket on the imps before I went on the elevator after RK.
+
+I used a rocket close to the exit, not supposed to do that. When I went for the YK 
+on E1M7 I used 4 rockets instead of 5, which means I usually don't pick up the backpack 
+behind the yellow key, but since I did I had 1 left over. So I used it and maybe wasted a second.
+
+
+E1M8: I pick up the bullets at the start, as I don't want to use the shotgun. 
+No rockets leftover either. A E1M1-E1M8 route would pick up 11 rockets at E1M6, 
+which should save about 20+ seconds or so on total time, I'm not sure.
+
+It felt like these barons had a lot more health than usual, watching the demo in a 
+different sourceport it was pretty obvious it was the spectres taking a lot of the bullets. 
+
+I got jump in the end, though it's very easy to make. I haven't looked into the 
+new void glide that has been discovered for this map, but since it requires some monsters
+cooperation I don't expect it to be any consistent.

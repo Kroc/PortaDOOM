@@ -1,0 +1,56 @@
+Runner: Zero-Master
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 4 (E4M1-E4M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 3:42 (03:46.14)
+Time With    M8: 4:50 (04:54.94)
+
+----------------------------------------------------------------
+Level			Map	Time		ep4-0419
+
+Hell Beneath  	        E4M1 -	0:33		-0:09
+Perfect Hatred  	E4M2 -	0:27		-0:03
+Sever The Wicked	E4M3 -	0:10		-0:17
+Unruly Evil		E4M4 -	0:39		-0:07
+They Will Repent	E4M5 -	0:39		+0:04
+Against Thee Wickedly	E4M6 -	0:55		-0:03
+And Hell Followed	E4M7 -	0:19		-0:02
+Unto The Cruel		E4M8 -	1:08		-0:10
+----------------------------------------------------------------
+			TOTAL -	4:50		-0:47
+E4M8 comparison is not relevant. E2M1-E2M7 time is improved by 37 seconds.
+
+Description: 
+No major mistake, so a solid run, but plenty of room for improvement.
+
+E4M1: 30 seconds isn't too difficult to get with this route. Weapon switch mistake by red key cost some time.
+Very random map, but it's pretty much just the first 10 seconds, so I don't mind too much.
+
+E4M2: I grab 20 plasma ammo at the start so I can use 2 BFG's without switching weapons in the last room.
+I also grab BFG before mega armor, since I don't want to lose any mega armor before killing cacos.
+27 seconds is better than average, 25 isn't too difficult.
+
+E4M3: I use a rocket jump on a lost soul to reach the exit, works 50% of the time or so.
+I don't think I've ever had anything besides 10 seconds on this map, 9 is possible.
+
+E4M4: Standard route here, I don't feel like wasting a run on this map, 
+I do however skip the invurnability and soulsphere. My IL record is 32 seconds with glide.
+
+E4M5: Terrible time here, easy map though.
+
+E4M6: Wohoo! finally, this cyberdemon does nothing but kill every run, except this one apparently!
+Some infighting going on, I've died well over 15 times to this cyberdemon. At some point I had to re-think
+my strategy, I thought I had tried everything when I told myself:
+
+"Well, you could try something really stupid, like running past him straight away and try to BFG from that small room"
+Cyberdemons aren't my speciality, so what I thought was a stupid idea actually worked like 50% of the time :)
+
+This is my best time on this map I think, very happy with it.
+
+E4M7: It's possible to jump across to the exit platform going directly from the door, 
+but I don't know to do that consistently, I could still have gotten 16 seconds here.
+There were a couple of fireballs coming my way, I just lost a run by failing this trick
+a few attempts before this one actually, so I took it really safe.
+
+E4M8: I have hardly played this map, time is unimportant. So, I play it safe as well.
