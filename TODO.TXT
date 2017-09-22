@@ -10,16 +10,10 @@ Scripts:
 [ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
 
-[ ] Patch BFG WADs
-        https://github.com/Doom-Utils/iwad-patches
-        https://zdoom.org/wiki/IWAD
-        https://doomwiki.org/wiki/IWAD
-
 [ ] dosmag : Ability for breadcrumb to differ from history?
     i.e. go from one WAD page to another, but not nest another level
     this is needed if we're going to interlink WAD references in the cacowards
 
-[ ] dosmag : fix tab-expansion
 [ ] dosmag : replace smilies and other potential ANSI characters
 [ ] dosmag : Themes
 [ ] dosmag : Right-alignment, whole line

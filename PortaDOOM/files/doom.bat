@@ -5,6 +5,7 @@ REM # doom batch launcher - (c) copyright Kroc Camen 2016-2017
 REM # features:
 REM # - automatic portable config files so that you get the same configuration (per-engine) everywhere
 REM # - searches GOG & Steam installs if WAD is missing
+REM # - automatically patches DOOM 3 BFG Edition WADs 
 REM # - FreeDOOM substituted if commercial DOOM.WAD / DOOM2.WAD missing
 REM # - will search the engine's folder for WADs if not found elsewhere (e.g. "lights.pk3")
 REM # - IWAD file extensions can be omitted (".WAD" / ".PK3");
@@ -647,18 +648,10 @@ IF /I "%~1" == "zandronum-3" (
 	SET "PORT_SAVE=zandronum"
 	ECHO          port : zandronum ^(v3.x^)
 )
-IF /I "%~1" == "zdoom" (
-	REM ------------------------------------------------------------------------------------------------------------
-	SET "ENGINE_DIR=%PORTS%\zdoom"
-	SET "ENGINE_EXE=zdoom.exe"
-	SET "ENGINE_CFG=zdoom"
-	SET "ENGINE_KIN=Z"
-	SET "PORT_SAVE=zdoom"
-	ECHO          port : zdoom
-)
 
-REM # no engine specified? use default
-IF "%PORT_SAVE%" == "" (        
+REM # no engine specified?
+IF "%PORT_SAVE%" == "" (
+	REM # use default engine
 	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
@@ -671,7 +664,7 @@ IF "%PORT_SAVE%" == "" (
 )
 
 REM # do we need to force software-mode in GZDoom?
-IF "%ENGINE_CFG%" == "gzdoom" (
+IF "%PORT_SAVE%" == "gzdoom" (
 	IF %SW% EQU 1 (
 		REM # add the CCMD to switch to software-renderer
 		SET PARAMS=%PARAMS% +vid_renderer 0
@@ -689,7 +682,7 @@ ECHO        engine : %ENGINE%
 REM # IWAD & PWAD:
 REM ====================================================================================================================
 REM # the save directory is based on the IWAD or PWAD.
-REM # we default to DOOM2
+REM # we default to DOOM2 (most common IWAD used for PWADs)
 SET "IWAD=DOOM2.WAD"
 SET "SAVE_WAD=DOOM2"
 SET "PWAD="
@@ -757,7 +750,7 @@ REM # TODO: check HEXDD.WAD
 
 REM # are we looking for "No Rest for the Living?"
 REM # (part of DOOM 3 BFG Edition)
-IF "%PWAD%" == "NERVE.WAD" GOTO :pwad_nerve
+IF "%PWAD%" == "NERVE.WAD"  GOTO :pwad_nerve
 IF "%PWAD%" == "NRFTL+.WAD" GOTO :pwad_nerve
 REM # are we looking for "Master Levels for DOOM II"?
 IF /I "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_master
@@ -798,9 +791,6 @@ EXIT /B 1
 
 :pwad_nerve
 REM --------------------------------------------------------------------------------------------------------------------
-REM # are we looking for "No Rest for the Living"?
-IF /I NOT "%PWAD%" == "NERVE.WAD" GOTO :pwad_master
-	
 REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -893,15 +883,15 @@ REM # is Steam : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
-	REM # TODO: this WAD is broken and censored and we should patch it automatically
-	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_found
+	REM # NOTE: this WAD is broken and censored and we will patch it automatically
+	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_patchbfg
 )
 REM # is GOG : DOOM 3 BFG Edition installed?
 CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 IF NOT "%REG%" == "" (
 	REM # check if DOOM.WAD can be found there
-	REM # TODO: this WAD is broken and censored and we should patch it automatically
-	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_found
+	REM # NOTE: this WAD is broken and censored and we will patch it automatically
+	IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_patchbfg
 )
 GOTO :iwad_check
 
@@ -1081,6 +1071,36 @@ IF NOT "%FREEDOOM%" == "" (
 	PAUSE
 	EXIT /B 1
 )
+
+:iwad_patchbfg
+REM # patch DOOM 3 BFG Edition IWADs
+SET "BFG_PATCH="
+ECHO:
+ECHO     DOOM 3 BFG Edition found -- automatically patching "%IWAD%"
+ECHO:
+
+REM # get the folder of the DOOM 3 BFG Edition WADs;
+REM # the patched file will be saved there to avoid unintentional "stealing" of IWADs off of computers
+FOR %%G IN ("%IWAD_PATH%") DO SET "BFG_PATH=%%~pG"
+
+REM # DOOM or DOOM2?
+IF /I "%IWAD%" == "DOOM.WAD" (
+	SET "BFG_PATCH=bfg-to-ud.vcdiff"
+	SET "BFG_PATCH_WAD=DOOMU_BFG_PATCHED.WAD"
+)
+IF /I "%IWAD%" == "DOOM2.WAD" (
+	SET "BFG_PATCH=bfg-to-1.9.vcdiff"
+	SET "BFG_PATCH_WAD=DOOM2_BFG_PATCHED.WAD"
+)
+
+REM # check if already patched
+SET "BFG_WADPATH=%BFG_PATH%%BFG_PATCH_WAD%"
+IF EXIST "%BFG_WADPATH%" SET "IWAD_PATH=%BFG_WADPATH%" & GOTO :iwad_found
+
+REM # run the patcher
+"tools\xdelta3\xdelta3-3.0.11-i686.exe" -d -s "%IWAD_PATH%" "tools\xdelta3\%BFG_PATCH%" "%BFG_WADPATH%"
+REM # now use the patched IWAD
+SET "IWAD_PATH=%BFG_WADPATH%"
 
 :iwad_found
 ECHO         -iwad : %IWAD_PATH%

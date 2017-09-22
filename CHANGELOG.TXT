@@ -1,10 +1,156 @@
+* = Fix / Change
++ = New feature / addition
+- = Removal
+
+22-SEP-17:
++ DOOM3 BFG WADs are now automatically patched!
+* Fixed GZDoom-hardware being listed as a choice in play.bat
+  when requirement was software only
+* Fixed "InstaDoom" launch scripts
+
 21-SEP-17:
-- Improved tab handling in page formatting. tabs were changed to 4 in DOSmag,
+* Improved tab handling in page formatting. tabs were changed to 4 in DOSmag,
   so the pages were reformatted to use actual tabs instead of spaces
 
 20-SEP-17:
-- Added demo playback (`-playdemo`) support to scripts
-- Added speedrun demos on Cacowards 2016
++ Added demo playback (`-playdemo`) support to scripts
++ Added speedrun demos on Cacowards 2016
+
+18-SEP-17:
+* Merged "iwads" & "pwads" folders into a single "wads" folder
+  (there are quite a few community IWADs out there)
+* Harmony & FreeDOOM were moved to "conversions"
+
+16-SEP-17:
++ DOSmag now syncs columns between source and screen when encountering at least
+  two spaces or more. This allows easy formatting of columns in the source,
+  without having to manually manage spacing differences between source & screen
+
+14-SEP-17:
++ Added a warning dialogue box when launching a URL so that you can see the URL
+  and cancel if desired. No more sudden unexpected browser pop-up!
+
+11-SEP-17:
++ Added "DOOM(4) DooM" WAD page. The WAD isn't included yet due to no
+  infrastructure to properly support gameplay-only mods
+* Change to play.bat to favour GZDoom-software over PRBoom+ software.
+  This is a quick work-around for a compatibility issue with Alpha Accident
+  that needs to be resolved more fully in the future
+* "DTWiD", "D2TWiD" moved to "classical"
+  Whilst megawads, "classical" will hold vanilla WADs specifically replicating
+  the original DOOM style
+* Some fixes to Master Levels launch scripts
+* Fix in doom.bat for file paths containing spaces
+
+10-SEP-17:
++ Add "Doom The Way id Did - The Lost Levels" WAD page
++ play.bat can now force Chocolate-Doom with `/REQ choco`
+* Fixed up the UPX compression script
+* "config\edit_defaults.bat" was not deleting z-engine config files correctly
+
+09-SEP-17:
++ Added "Ludicrium" WAD page
++ Added "Aeon Deathmatch", "32in24-16" WAD pages
+* Redone some of the default configs
+- Cleaned out "mods" folder. Until a proper mod-loader is created,
+  there's no point carrying this extra weight around
+- Removed multiplayer WADs
+  There's no method to simply launch a server list with a WAD filter already
+  applied, so it's a waste of space to include these WADs in the package
+- Removed Zandronum-3 from Cacowards 2016 bundle. Since multiplayer WADs are no
+  longer being included, we do not need to ship Zandronum. Cacowards 2015 still
+  requires it for Skull Dash.
+
+07-SEP-17:
++ Added "Shadow of the Wool Ball" WAD page
++ Added "Echelon" WAD page
++ Added "Strange Aeons" WAD page
+
+03-SEP-17:
++ Added `/SW` option to doom.bat to use a software renderer where possible.
+  doom.bat no longer treats HW & SW engines as separate engines, instead
+  favouring hardware rendering unless software mode is requested
+- Removed ZDoom (deprecated).
+  GZDoom can be launched in software-mode instead
+
+02-SEP-17:
++ Added "Bloodstain" WAD page
++ Allow specific use of shareware files in play.bat
+* Fixed "Adventures of Square" launch script
+
+01-SEP-17:
++ Added "THT: Threnody" WAD page
++ Added "Warp House" WAD page
++ Added "Blade of Agony" WAD page
+* Fixed "50 Shades of Greytall" launch script
+  (software renderer must be used)
+* "Singles" renamed to "Onesies"
+* "Strange Aeons" moved from "episodes" to "megawads"
+- Removed ability to exclude file-extensions from PWADs/files in doom.bat.
+  This was becoming way too complex with the increasing number of locations
+
+31-AUG-17:
++ Added Steam "HERETIC.WAD" & "HEXEN.WAD" detection
+
+30-AUG-17:
++ Added "Japanese Community Project" WAD page
++ Added "Alpha Accident: Terra Nova" WAD page
++ Added "Miasma" WAD page
++ Added "Comatose" WAD page
++ Added "Elf Gets Pissed" WAD page
+  (this is a Heretic PWAD)
++ Added "Absolutely Killed" WAD page
++ Added "Mutiny" WAD page
+
+28-AUG-17:
++ Created Cacowards 2016 package
++ Added `/CMPLVL` to play.bat to set compatibility level on PRBoom+
++ Added "HERETIC" & "HEXEN" IWAD support to play.bat
+
+26-AUG-17:
++ Created Cacowards 2015 package
+- Exclude PRBoom+ screenshots from repository
+
+25-AUG-17:
++ Added GOG DOOM 3 BFG Edition support
+* Fixed launch scripts for IWADs
+* Fixed broken logic on relative/absolute paths in doom.bat
+* Renamed Zandronum config files to "-2" and "-3" instead of "" & "-dev"
+
+24-AUG-17:
++ Added "Nihility" WAD page
++ Added "John Romero's Episode 1" WAD pages ("E1M4b" & "E1M8b")
++ Added "Ancient Aliens" WAD page
++ Created first interlinks between WAD pages
+* Fixed PWAD handling with Chocolate-Doom
+  (requires `-merge` instead of `-file`)
+* Fixed missing IWAD handling in doom.bat
+* Fixed FreeDOOM launch scripts
+* Moved WADs out of "cacowards\2015" and into the category folders
+- Neuter current bread-crumb display until later replacement
+
+23-AUG-17:
++ doom.bat now also checks the 'current directory' for PWADs / files
++ Added "no-limit" engine requirement to play.bat
+* Finally fixed the word-wrapping / line-breaking issues
+* Fixed "No Rest For the Living" launch script
+
+=== Project was moved to GitHub ===
+
+10-FEB-17:
++ Added PRBoom+ specific engine requirement for play.bat
+
+09-FEB-17:
++ Added "ports\test.bat" to test-launch each engine
++ Added `/32` option to doom.bat to always launch 32-bit executables,
+  even on a 64-bit system
+
+
+
+
+
+
+
 
 PortaDOOM Alpha 3
 =================

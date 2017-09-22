@@ -81,6 +81,12 @@ _<github.com/Kroc/DOOM-Crusher>_
 :===============================================================================
 By _Andrey Budko (entryway)_
 
+:xdelta - <xdelta.com>
+:===============================================================================
+"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams."
+
+Xdelta is used to patch IWADs to canonical versions, i.e. remove censoring from DOOM 3 BFG Edition's WADs. The patches themselves are provided by _<github.com/Doom-Utils/iwad-patches>_.
+
 :Zandronum - <zandronum.com>
 :===============================================================================
 _Torr Samaho_ - Lead Developer

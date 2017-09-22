@@ -132,7 +132,7 @@ REM ----------------------------------------------------------------------------
 ECHO:
 ECHO   Please choose the option that best suits you:
 
-IF %ENGINE_GZDOOM% EQU 1 (
+IF "%ENGINE_GZDOOM%-%SW%" == "1-0" (
 	ECHO:
 	ECHO   [U]   Ultra: ^(gzdoom, hardware-rendering^)
 	ECHO:
