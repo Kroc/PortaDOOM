@@ -4,6 +4,7 @@
 
 24-SEP-17:
 + Added navigation titles & categories
++ Right-alignment was added to DOSmag; some minor page reformatting
 * Moved "demos" folder out of "wads"
 
 22-SEP-17:

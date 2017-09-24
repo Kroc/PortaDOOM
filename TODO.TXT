@@ -13,8 +13,7 @@ Scripts:
 
 [ ] dosmag : replace smilies and other potential ANSI characters
 [ ] dosmag : Themes
-[ ] dosmag : Right-alignment, whole line
-    Consider right alignment from middle of line (rulers?)
+[ ] Consider right alignment from middle of line (rulers?)
 [ ] N64 DOOM64.WAD detection / warning
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?
