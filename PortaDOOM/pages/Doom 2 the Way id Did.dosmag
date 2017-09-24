@@ -1,3 +1,4 @@
+$NAV=Classical
 $KEY:P=SHELL:wads\classical\D2TWID\play.bat
 $KEY:T=SHELL:wads\classical\D2TWID\D2TWID.txt
 $KEY:W=URL:http://d2twid.herokuapp.com/

@@ -1,3 +1,4 @@
+$NAV=Multiplayer
 $KEY:T=SHELL:wads\multiplayer\aeondm\aeondm.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
 $KEY:1=GOTO:Don't Be A Bitch Remastered

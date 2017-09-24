@@ -1,3 +1,5 @@
+$NAV=Commercial DOOM
+$NAV=Master Levels for DOOM II
 $KEY:P=SHELL:play.bat /PWAD MASTER\BLOODSEA.WAD /LEVEL 7
 $KEY:T=SHELL:wads\MASTER\BLOODSEA.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP07:_Bloodsea_Keep_(Master_Levels)

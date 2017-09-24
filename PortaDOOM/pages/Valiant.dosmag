@@ -1,3 +1,4 @@
+$NAV=MegaWADs
 $KEY:P=SHELL:wads\megawads\valiant\play.bat
 $KEY:T=SHELL:wads\megawads\valiant\valiant.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant

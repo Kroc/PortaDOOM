@@ -1,3 +1,4 @@
+$NAV=Episodes
 $KEY:P=SHELL:wads\episodes\hadron\play.bat
 $KEY:T=SHELL:wads\episodes\hadron\hadronf.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadron

@@ -1,3 +1,5 @@
+$NAV=Commercial DOOM
+$NAV=Master Levels for DOOM II
 $KEY:P=SHELL:play.bat /PWAD MASTER\MINOS.WAD /LEVEL 5
 $KEY:T=SHELL:wads\MASTER\MINOS.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP05:_Minos%27_Judgement_(Master_Levels)

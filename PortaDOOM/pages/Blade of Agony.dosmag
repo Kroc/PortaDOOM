@@ -1,3 +1,4 @@
+$NAV=Total Conversions
 $KEY:P=SHELL:wads\conversions\boa\play.bat
 $KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
 $KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt

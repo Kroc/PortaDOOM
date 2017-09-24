@@ -1,3 +1,4 @@
+$NAV=MegaWADs
 $KEY:1=SHELL:doom.bat gzdoom DOOM2 megawads\MapsOfChaos\mapsofchaos.wad
 $KEY:2=SHELL:doom.bat glboom DOOM2 megawads\MapsOfChaos\mapsofchaos.wad
 $KEY:3=SHELL:doom.bat gzdoom DOOM2 megawads\MapsOfChaos\mapsofchaos-hc.wad

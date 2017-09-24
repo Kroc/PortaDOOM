@@ -1,21 +1,20 @@
+$KEY:G=GOTO:50 Shades of Greytall
+$KEY:2=GOTO:20 Monsters
+$KEY:J=GOTO:Japanese Community Project
 
 ^C:Community Projects
 
 :===============================================================================
+Community projects are long-standing tradition in the DOOM community, either as a means to encourage new mappers to contribute to a megawad (e.g. 'DUMP', the Doom Upstart Mapping Project) or as a way of answering a "what if?" with as many varying takes as possible.
 
-!WARNING: This page is very incomplete. A lot more to come in future releases!
-
-:The 32-in-24 Series
-
-$KEY:X=GOTO:32in24-14
-:32in24-14: How the Hamburglar Stole Christmas
-
-:[G] 50 Shades of Graytall
-:-------------------------------------------------------------------------------
-$KEY:G=GOTO:50 Shades of Greytall
-    Can a map still be good if limited to only the worst possible textures
-    in DOOM??
+:[G] 50 Shades of Graytall                          * 2015 Cacoward winner! *
+	:---------------------------------------------------------------------------
+	Can a map still be good if limited to only the worst textures in DOOM??
 
 :[2] 20 Monsters
-:-------------------------------------------------------------------------------
-    What can be done with a hard-limit of only 20 monsters per map?
+	:---------------------------------------------------------------------------
+	What can be done with a hard-limit of only 20 monsters per map?
+
+:[J] Japanese Community Project                     * 2016 Cacoward winner! *
+	:---------------------------------------------------------------------------
+	The Japanese DOOM community are separated from us by vast physical, cultural and language barriers, so they extended a bridge to us with their first community project; see DOOM mapping with fresh eyes and a 'cheeky' twist!

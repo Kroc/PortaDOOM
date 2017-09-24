@@ -1,3 +1,4 @@
+$NAV=Episodes
 $KEY:P=SHELL:wads\episodes\crumpets\play.bat
 $KEY:T=SHELL:wads\episodes\crumpets\crumpets.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars

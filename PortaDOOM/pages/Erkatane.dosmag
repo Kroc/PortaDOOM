@@ -1,3 +1,4 @@
+$NAV=Classical
 $KEY:P=SHELL:wads\classical\erkatane\play - erkatane.bat
 $KEY:Q=SHELL:wads\classical\erkatane\play - erkaknee.bat
 $KEY:T=SHELL:wads\classical\erkatane\erkatane.txt

@@ -1,3 +1,4 @@
+$NAV=Mods
 $KEY:P=SHELL:wads\mods\doomrl_arsenal\play.bat
 $KEY:T=SHELL:wads\mods\doomrl_arsenal\Credits.txt
 $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044

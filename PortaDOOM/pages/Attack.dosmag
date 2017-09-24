@@ -1,3 +1,5 @@
+$NAV=Commercial DOOM
+$NAV=Master Levels for DOOM II
 $KEY:P=SHELL:play.bat /PWAD MASTER\ATTACK.WAD /LEVEL 1
 $KEY:T=SHELL:wads\MASTER\ATTACK.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Attack_(Master_Levels)

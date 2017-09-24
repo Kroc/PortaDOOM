@@ -1,3 +1,5 @@
+$NAV=Commercial DOOM
+$NAV=Master Levels for DOOM II
 $KEY:P=SHELL:play.bat /PWAD MASTER\GERYON.WAD /LEVEL 8
 $KEY:T=SHELL:wads\MASTER\GERYON.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP08:_Geryon_(Master_Levels)

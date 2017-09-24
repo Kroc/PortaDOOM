@@ -1,3 +1,4 @@
+$NAV=Episodes
 $KEY:P=SHELL:wads\episodes\spacwars\play.bat
 $KEY:T=SHELL:wads\episodes\spacwars\spacwars.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
@@ -12,7 +13,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 :-------------------------------------------------------------------------------
 
 Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of Zdoom's special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
-                          
+
 Also in addition are 9 new monsters thanks to Zdoom's DECORATE feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
 
 :FEATURES:
@@ -61,7 +62,7 @@ In addition to the familiar foes you will encounter are some new beasts.
   You thought fatso was bad? .... Just wait until you meet his cousin the Hectebus. He is harder to kill and his powerful green fireballs inflict serious damage. Even a Cyberdemon often struggles against a pair of these very well camouflaged beasts.
 
 - *AFRIT (2,000 hp)
-  This floating legless Baron of Hell has a variety of attacks and can devastate your plans if you  are not careful. He is also very hard to kill.
+  This floating legless Baron of Hell has a variety of attacks and can devastate your plans if you are not careful. He is also very hard to kill.
 
 - *CHAOS ELEMENTAL (6,000 hp)
   Awaiting for you at the very end of your journey is this mighty floating beast. He is super fast, shoots fireballs that can cause extreme damage and can even occasionally shoot Lost Souls at you. And he is not alone, he also has help with all the other floating terrors. Also he is well camouflaged, a true nightmare indeed. In order to prevail you need to be well loaded and have strong wits.

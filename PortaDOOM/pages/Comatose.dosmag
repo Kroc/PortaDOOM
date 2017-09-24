@@ -1,3 +1,4 @@
+$NAV=Onesies
 $KEY:P=SHELL:wads\onesies\comatose\play.bat
 $KEY:T=SHELL:wads\onesies\comatose\Comatose.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/comatose

@@ -3,6 +3,7 @@
 - = Removal
 
 24-SEP-17:
++ Added navigation titles & categories
 * Moved "demos" folder out of "wads"
 
 22-SEP-17:

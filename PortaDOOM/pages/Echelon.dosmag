@@ -1,3 +1,4 @@
+$NAV=MegaWADs
 $KEY:P=SHELL:wads\megawads\echelon\play.bat
 $KEY:T=SHELL:wads\megawads\echelon\echelon.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon

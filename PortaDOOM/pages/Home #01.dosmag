@@ -1,3 +1,4 @@
+$TITLE=Welcome
 $KEY:D=GOTO:Commercial DOOM
 $KEY:C=GOTO:The Cacowards
 $KEY:T=GOTO:Total Conversions
@@ -35,7 +36,7 @@ $REM=$KEY:E=GOTO:Episodes
 $REM=:[E] Episodes ...
 $REM=    Shorter, more tighter experiences in the 5 - 15 map range.
 $REM=
-:[V] The Vanilla Sundae Experience
+:[V] The Vanilla Sundae Experience ...
 	For the die-hard doomer -- a series of vanilla-compatible WADs played the way they were meant to be.
 
 :===============================================================================

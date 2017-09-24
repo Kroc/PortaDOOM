@@ -1,3 +1,4 @@
+$NAV=Commercial DOOM
 $KEY:P=SHELL:doom.bat doom64ex DOOM64.WAD
 
 :DOOM 64
