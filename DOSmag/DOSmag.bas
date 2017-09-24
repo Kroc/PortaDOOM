@@ -94,6 +94,8 @@ CONST PAGE_EXT = ".dosmag" 'file extension name used for pages
 CONST PAGE_ASC = ASC_HASH '.which char is used to separate page numbers
 
 DIM SHARED PageName AS STRING '..base name of page, without page number
+DIM SHARED PageTitle AS STRING '.nav title as defined by `$TITLE=`
+DIM SHARED PageNav AS STRING '..,nav path as defined by `$NAV=`
 DIM SHARED PageNum AS INTEGER '..page number,
 DIM SHARED PageCount AS INTEGER 'and number of pages in the set
 
@@ -127,6 +129,8 @@ CONST FORMAT_CENTER = 1 'center-align text
 
 'prepare a blank page in case nothing is loaded
 PageName$ = ""
+PageTitle = ""
+PageNav = ""
 PageNum% = 0
 PageCount% = 0
 PageLines$(1) = ""
@@ -139,7 +143,7 @@ PageKeyCount% = 0
 'the navigation history:
 REDIM SHARED historyPages(1) AS STRING '..page names
 REDIM SHARED historyScroll(1) AS INTEGER 'where the user had scrolled to
-'number of levels of history (for producing the breadcrumb)
+'number of levels of history
 DIM SHARED historyDepth AS INTEGER: historyDepth% = 1
 
 'help screen
@@ -569,40 +573,16 @@ SUB drawHeader
 
     'draw the breadcrumb
     '-------------------------------------------------------------------------
-    DIM bread_crumb$, crumb$
-    'FOR n% = 1 TO historyDepth%
-    '    'get the file name from the history;
-    '    DIM crumb$
-    '    'when on the front page we show the root name (typically "home"),
-    '    'but on the first level and below we don't show that
-    '    IF n% = 1 AND historyDepth% > 1 THEN
-    '        crumb$ = historyPages$(n% + 1)
-    '    ELSE
-    '        crumb$ = historyPages$(n%)
-    '    END IF
+    DIM nav$, crumb$
+    'begin with the 'root' mark
+    nav$ = " " + CHR$(ASC_DIAMOND) + " "
 
-    '    'if it has a page number on the end, this can be removed
-    '    'when we're display names on the breadcrumb
-    '    IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
-    '        'remove the page number from the name
-    '        crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
-    '    END IF
-    '    'there could be a space between the name and page number
-    '    crumb$ = TRIM$(crumb$)
-    '    'is this the root, or a sub-section?
-    '    IF n% = 1 THEN
-    '        'display the root name
-    '        bread_crumb$ = bread_crumb$ _
-    '                     + " " + CHR$(ASC_DIAMOND) + " " _
-    '                     + crumb$ + " "
-    '        'when you navigate beyond the root level we don't display it
-    '        IF historyDepth% > 1 THEN n% = n% + 1
-    '    ELSE
-    '        'display the current crumb
-    '        bread_crumb$ = bread_crumb$ + CHR$(ASC_LGLLMT) + " " + crumb$ + " "
-    '    END IF
-    'NEXT
+    'is there a parent category / folder?
+    IF PageNav <> "" THEN
+        nav$ = nav$ + PageNav$ + " " + CHR$(ASC_LGLLMT) + " "
+    END IF
 
+    'get the name of the page from the history stack
     crumb$ = historyPages$(historyDepth%)
     'if it has a page number on the end, this can be removed
     'when we're display names on the breadcrumb
@@ -611,26 +591,29 @@ SUB drawHeader
         crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
     END IF
     'there could be a space between the name and page number
-    crumb$ = TRIM$(crumb$)
+    nav$ = nav$ + TRIM$(crumb$) + " "
 
-    bread_crumb$ = " " + CHR$(ASC_DIAMOND) + " " + crumb$ + " "
+    'if the page has its own title, append that
+    IF PageTitle$ <> "" THEN
+        nav$ = nav$ + ": " + PageTitle$ + " "
+    END IF
 
     'prevent the breadcrumb from being too long
-    bread_crumb$ = RTRUNCATE$(bread_crumb$, SCREEN_WIDTH - tab_width% - 3)
+    nav$ = RTRUNCATE$(nav$, SCREEN_WIDTH - tab_width% - 3)
 
     COLOR HEAD_FGND, HEAD_BKGD
     LOCATE HEAD_TOP, 1
-    PRINT STRING$(LEN(bread_crumb$), CHR$(ASC_BOX_H)) + CHR$(ASC_BOX_TR);
+    PRINT STRING$(LEN(nav$), CHR$(ASC_BOX_H)) + CHR$(ASC_BOX_TR);
     LOCATE (HEAD_TOP + 1), 1
 
     'walk the breadcrumb string and pick out the separators
-    FOR n% = 1 TO LEN(bread_crumb$)
-        DIM char%: char% = ASC(bread_crumb$, n%)
+    FOR n% = 1 TO LEN(nav$)
+        DIM char%: char% = ASC(nav$, n%)
         SELECT CASE char%
             CASE ASC_DIAMOND, ASC_LGLLMT
                 COLOR WHITE: PRINT CHR$(char%);
             CASE ELSE
-                COLOR YELLOW: PRINT CHR$(ASC(bread_crumb$, n%));
+                COLOR YELLOW: PRINT CHR$(ASC(nav$, n%));
         END SELECT
     NEXT n%
 
@@ -819,6 +802,8 @@ SUB loadPage (page_name$)
 
     'clear current page in memory
     PageName$ = file_base$
+    PageTitle$ = ""
+    PageNav$ = ""
     PageNum% = 0
     PageCount% = 0
     PageLine% = 0
@@ -848,6 +833,22 @@ SUB loadPage (page_name$)
             '.................................................................
             'skip REM lines; allows authors to put comments into the page
             'without them appearing on-screen
+
+        ELSEIF LEFT$(line$, 7) = "$TITLE=" THEN
+            '.................................................................
+            'title of the page, for the navigation bread crumb
+            PageTitle$ = TRIM$(MID$(line$, 8))
+
+        ELSEIF LEFT$(line$, 5) = "$NAV=" THEN
+            '.................................................................
+            'category / folder of the page, for the navigation bread crumb
+            '(if already defined, a second definition appends to the first)
+            IF PageNav$ = "" THEN
+                PageNav$ = TRIM$(MID$(line$, 6))
+            ELSE
+                PageNav$ = PageNav$ + " " + CHR$(ASC_LGLLMT) + " " _
+                         + TRIM$(MID$(line$, 6))
+            END IF
 
         ELSEIF LEFT$(line$, 5) = "$KEY:" THEN
             '.................................................................
