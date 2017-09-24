@@ -25,18 +25,18 @@ Don't let the prospect of a re-release or the redundancy of "The Original" prefi
 
 :Zero Seconds
 :===============================================================================
-$KEY:1=SHELL:wads\demos\30uv2155\playdemo.bat
-$KEY:2=SHELL:wads\demos\30uv2032\playdemo.bat
-$KEY:3=SHELL:wads\demos\30uv1959\playdemo.bat
-$KEY:4=SHELL:wads\demos\30nm2721\playdemo.bat
-$KEY:5=SHELL:wads\demos\ep2-0327\playdemo.bat
-$KEY:6=SHELL:wads\demos\ep4-0342\playdemo.bat
-$KEY:7=SHELL:wads\demos\ep1-457\playdemo.bat
-$KEY:8=SHELL:wads\demos\ep3-347\playdemo.bat
-$KEY:9=SHELL:wads\demos\evall-4416\playdemo.bat
+$KEY:1=SHELL:demos\30uv2155\playdemo.bat
+$KEY:2=SHELL:demos\30uv2032\playdemo.bat
+$KEY:3=SHELL:demos\30uv1959\playdemo.bat
+$KEY:4=SHELL:demos\30nm2721\playdemo.bat
+$KEY:5=SHELL:demos\ep2-0327\playdemo.bat
+$KEY:6=SHELL:demos\ep4-0342\playdemo.bat
+$KEY:7=SHELL:demos\ep1-457\playdemo.bat
+$KEY:8=SHELL:demos\ep3-347\playdemo.bat
+$KEY:9=SHELL:demos\evall-4416\playdemo.bat
 _ZeroMaster_ had a very busy year raising the bar on Doom speedrunning. The war for Doom II UV marched on immediately after last year's Cacowards, with _Looper_ sounding the *[1] first shot* with more than a minute's worth of improvement at 21:55. _ZM_ *[2] followed* some time later with 20:32, which _Looper_ beat, but _ZeroMaster_ *[3] countered* in the best way possible, by pushing the time below the unthinkable 20 minute barrier at 19:59. What a battle! He also went so far as to make a bit of a clean sweep, *[4] taking* the Doom II Nightmare record (27:21) on two occasions with a bit of back-and-forth between himself and _eLim_; *[5] besting Doom's E2* by two seconds (3:27); *[6] throttling the E4 record* by 37 (3:42); shaving *[7] three seconds off of E1* (4:57); *[8] ending E3* at a whopping one second improvement (3:47); and *[9] eking out* a sixteen second victory (44:16) over _j4rio_'s TNT: Evilution record.
 
-$KEY:0=SHELL:wads\demos\plalln4357\playdemo.bat
+$KEY:0=SHELL:demos\plalln4357\playdemo.bat
 $KEY:A=URL:https://www.youtube.com/watch?v=BI_pGsOVW2s
 Of course, the absolute craziest thing was the establishment of the *[0] Plutonia Nightmare record*, which didn't even exist until June of this year - 43:57 of nail-biting, plasma-spouting, wild-ass action, not to mention wresting the *[A] Scythe UV-speed record* from _Dime_ at a solid 14:53. Best of luck to anyone who wants to chase these records down, and thank you, _ZeroMaster_, for some incredible performances.
 

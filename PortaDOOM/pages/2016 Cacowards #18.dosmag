@@ -17,23 +17,23 @@
 :===============================================================================
 This used to be the speedrunning section, but it turned a bit one key. Zero key? The Overlord of Naught decided to complete an IWAD grandslam and at various points of this year added the following records to his previous hoard:
 
-$KEY:1=SHELL:wads\demos\e1nm0639\playdemo.bat
+$KEY:1=SHELL:demos\e1nm0639\playdemo.bat
 - [1] *Doom E1 NM* in *6:39*/*7:52*\\(without/with the boss map... historic reasons)
 $KEY:2=SHELL:wads\demos\ep2-403\playdemo.bat
 - [2] *Doom E2 UV* in *3:23*/*4:03*
-$KEY:3=SHELL:wads\demos\e2nm0452\playdemo.bat
+$KEY:3=SHELL:demos\e2nm0452\playdemo.bat
 - [3] *Doom E2 NM* in *3:45*/*5:25*
-$KEY:4=SHELL:wads\demos\ep3n421\playdemo.bat
+$KEY:4=SHELL:demos\ep3n421\playdemo.bat
 - [4] *Doom E3 NM* in *4:08*/*4:21*
-$KEY:5=SHELL:wads\demos\ep4-413\playdemo.bat
+$KEY:5=SHELL:demos\ep4-413\playdemo.bat
 - [5] *Doom E4 UV* in *3:11*/*4:13*
-$KEY:6=SHELL:wads\demos\ep4n564\playdemo.bat
+$KEY:6=SHELL:demos\ep4n564\playdemo.bat
 - [6] *Doom E4 NM* in *5:42*/*6:54*
-$KEY:7=SHELL:wads\demos\lvalln2256\playdemo.bat
+$KEY:7=SHELL:demos\lvalln2256\playdemo.bat
 - utterly insane [7] *Doom 2 NM* in *22:56*
-$KEY:8=SHELL:wads\demos\lvalls4752\playdemo.bat
+$KEY:8=SHELL:demos\lvalls4752\playdemo.bat
 - [8] *Doom 2 NM100S* in *47:52*
-$KEY:9=SHELL:wads\demos\evalln8336\playdemo.bat
+$KEY:9=SHELL:demos\evalln8336\playdemo.bat
 - [9] first time ever *TNT NM* in *1:23:36*
 $KEY:0=URL:https://www.youtube.com/watch?v=NqYH27_4ZPk
 - [0] *Hexen* on Berserker in *26:45*
@@ -42,8 +42,8 @@ $KEY:A=URL:https://www.youtube.com/watch?v=P6J352J_RG8
 I won't even bother to comment in depth. To set the hurdle even higher, he was also the first player to ever beat Doom 2016 on Ultra Nightmare!
 *[A] Multitasking!*
 
-$KEY:B=SHELL:wads\demos\lvall-1951\playdemo.bat
-$KEY:C=SHELL:wads\demos\30uv1936\playdemo.bat
+$KEY:B=SHELL:demos\lvall-1951\playdemo.bat
+$KEY:C=SHELL:demos\30uv1936\playdemo.bat
 The beacon of hope in all this booooring one-man rampage came in October when _eLim_ beat perhaps the most prestigious record and improved Doom 2 UV to 19:51, including a [B] *brand new shortcut on map21*. But _ZeroMaster_ wouldn't allow such excitement and [C] *posted a rebuttal* in 19:36 yesterday, making me rewrite this article, goddamit. I'll be wise to your tricks next year, _ZM_!
 
 $KEY:D=URL:https://www.youtube.com/watch?v=Y9Di39wwAmY

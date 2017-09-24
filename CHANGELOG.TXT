@@ -2,6 +2,9 @@
 + = New feature / addition
 - = Removal
 
+24-SEP-17:
+* Moved "demos" folder out of "wads"
+
 22-SEP-17:
 + DOOM3 BFG WADs are now automatically patched!
 + Added demos to Cacowards 2015
