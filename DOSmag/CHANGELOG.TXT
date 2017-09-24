@@ -1,5 +1,6 @@
 24-SEP-17:
 + Added `$TITLE=` & `$NAV=` page definitions to build a new bread crumb
++ Added `^R` right alignment (whole line)
 
 17-SEP-17:
 * Changed tabs to 4
