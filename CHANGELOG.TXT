@@ -2,6 +2,9 @@
 + = New feature / addition
 - = Removal
 
+25-SEP-17:
++ Added a glossary page
+
 24-SEP-17:
 + Added navigation titles & categories
 + Right-alignment was added to DOSmag; some minor page reformatting

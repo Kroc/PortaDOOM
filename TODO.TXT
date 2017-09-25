@@ -10,8 +10,6 @@ Scripts:
 ================================================================================
 [ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
-
-[ ] dosmag : replace smilies and other potential ANSI characters
 [ ] dosmag : Themes
 [ ] Consider right alignment from middle of line (rulers?)
 [ ] N64 DOOM64.WAD detection / warning

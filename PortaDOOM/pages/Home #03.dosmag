@@ -1,102 +1,173 @@
-$TITLE=Credits
+$TITLE=A Useful DOOM Glossary
 
-^C:CREDITS
+:A Useful DOOM Glossary
+:===============================================================================
+Early 90s computer limits and over 20 years of community-driven history will naturally generate a lot of unique language! Here's a list of the most pertinent terms you'll come across throughout PortaDOOM.
 
+:* # *
 :-------------------------------------------------------------------------------
-Credits for individual WADs are provided on each page but where a mod is used broadly across many pages (such as enhancements, fixes and gameplay modifications), as best as is possible, a list of credits and sources is provided here. This information has been taken from whatever public sources are available; apologies for any mistakes.
+:* A *
+:-------------------------------------------------------------------------------
 
-(In alphabetical order:)
+*ACS				"Action Code Script", a scripting (macro) system invented for *Hexen*, used to add interactivity. ACS was extended further by *ZDoom* and still forms the basis of many DOOM mods today. ACS has been superseded by *ZScript*. See *DeHackEd* for original DOOM modding.
 
+:* B *
+:-------------------------------------------------------------------------------
 
-:Chocolate DOOM / Heretic / Hexen / Strife - <chocolate-doom.org>
-:===============================================================================
-Chocolate Doom is written by _Simon Howard_, with extensive help from many other people who have provided patches, bug reports and suggestions.
+*BEX				*Boom* Extended *DeHackEd* script. An early means of modifying the behaviour of DOOM.
 
-Chocolate Strife was developed by _James Haley_ and _Samuel Villarreal_ as part of a painstaking reverse engineering project.
+*Boom				An early *source-port* that expanded limits and added new capabilities to the DOOM engine. A modern version of the port is *PRBoom+*, but the boom extensions are support by most modern engines. There are many maps released even today that require "boom" compatibility.
 
-:DOOM, DOOM II
-:===============================================================================
-Copyright iD software: _Adrian Carmack_, _American McGee_, _Dave Taylor_, _John Carmack_, _John Romero_, _Kevin Cloud_, _Rob Prince_, _Sandy Peterson_, _Shawn Green_ and _Tom Hall_.
+*BSP				"Binary Space Partition", a technical aspect of how DOOM stores and renders maps. A BSP tree is a pre-calculated database of all the *linedefs* in a map, dividing the map into halves over and over until no more lines remain. This allows the DOOM engine to very quickly and easily determine what is and isn't visible from any given position, with the caveat that walls cannot move sideways, only up and down.
 
-:DOOM II: No Rest for the Living
-:===============================================================================
-Copyright Nerve Software: _Richard Heath_ and _Russell Meakim_.
+:* C *
+:-------------------------------------------------------------------------------
 
-:DOOM II: The Master Levels
-:===============================================================================
-Copyright iD software, contributors:
+*Chocolate-Doom,	*Source-ports* created by _Simon Howard_, with the purpose
+*Chocolate-Heretic,	to remain as faithful as possible to the behaviour of the
+*Chocolate-Hexen,	original MS-DOS executables for DOOM, *Heretic*, *Hexen* &
+*Chocolate-Strife	*Strife*, including *visplane* limits.
 
-_John Anderson (Dr.Sleep)
-	Geryon: 6th Canto of Inferno (GERYON.WAD)
-	Minos' Judgement: 4th Canto of Inferno (MINOS.WAD)
-	Nessus: 5th Canto of Inferno (NESSUS.WAD)
-	Vesperas: 7th Canto of Inferno (VESPERAS.WAD)
-	Virgil's Lead: 3rd Canto of Inferno (VIRGIL.WAD)
+:* D *
+:-------------------------------------------------------------------------------
 
-_Jim Flynn
-	Titan Manor (MANOR.WAD)
-	Trapped on Titan (TTRAP.WAD)
+*DECORATE			Scripting and content definition language in *ZDoom*. Superseded by *ZScript*. See also *ACS*, *DeHackEd*.
 
-_Christen Klie
-	The Catwalk (CATWALK.WAD)
-	The Combine (COMBINE.WAD)
-	The Fistula (FISTULA.WAD)
-	The Garrison (GARRISON.WAD)
-	Subspace (SUBSPACE.WAD)
-	Subterra (SUBTERRA.WAD)
+*DeHackEd, DEH		An early editor created to modify the behaviour of the original DOOM executable, through 'patches'. Even though designed for *vanilla* DOOM, DeHackEd patches (".DEH") are supported by modern *source ports*. *Boom* enhanced DeHackEd further with *BEX*, Boom-EXtended script.
 
-_Sverre André Kvernmo (Cranium)
-	Black Tower (BLACKTWR.WAD)
-	Bloodsea Keep (BLOODSEA.WAD)
-	Mephisto's Maosoleum (MEPHISTO.WAD)
-	The Express Elevator to Hell (TEETH.WAD)
-	Bad Dream (TEETH.WAD)
+*DOOM.WAD			A *WAD* (package) file containing all the data/sound/graphic resources for the original DOOM (or The Ultimate DOOM) game.
 
-_Tom Mustaine_
-	Paradox (PARADOX.WAD)
+*DOOM1.WAD			The Shareware version of DOOM, containing only the first episode.
 
-_Tim Willits_
-	Attack (ATTACK.WAD)
-	Canyon (CANYON.WAD)
+*DOOM2.WAD			The *WAD* (package) file containing all the data/sound/graphic resources for DOOM II. This is the most common *IWAD* used for community content (*PWAD*).
 
-:Final DOOM
-:===============================================================================
-Copyright TeamTNT, iD software: _Ty Halderman_ (TNT: Evilution), _Dario Casali_ (The Plutonia Experiment), _Jonathan El-Bizri_, _Josh Martel_, _L.A. Sieben_, _Tom Mustaine_ and the team at iD software.
+*DOOM-Clone			The term "First Person Shooter" didn't exist at the launch of DOOM in 1993 because DOOM is what popularised the genre in the first place. For a long time FPSes were called "DOOM-clones". It's only with the advent of story-driven narrative (i.e. Half Life) that the term FPS took hold.
 
-:FreeDOOM - <freedoom.github.io>
-:===============================================================================
-"The Freedoom project aims to create a complete free content game based on the Doom engine."
+:* E *
+:-------------------------------------------------------------------------------
+:* F *
+:-------------------------------------------------------------------------------
 
-:GZDoom - <gzdoom.drdteam.org>
-:===============================================================================
-By _Graf Zahl_ and contributors.
+*Final DOOM			A stand-alone expansion pack for DOOM released in June 1997. Final DOOM contains two 32-map *megawads*, *"TNT: Evilution"* and *"The Plutonia Experiment"*, both created by *TeamTNT*.
 
-:PortaDOOM - <gitlab.com/dosmag/PortaDOOM>
-:===============================================================================
-PortaDOOM is the work of _Kroc Camen_ and contributors and made possible only by the awesomeness of the DOOM community.
+*FreeDOOM			An open-source project to create a drop-in replacement for the original DOOM *IWADs*. FreeDOOM is essentially a *total conversion* using copyleft resources.
 
-The WADs distributed with PortaDOOM may not match their original source downloads (i.e. checksum) due to extra compression applied by DOOM-Crusher, a tool for automatically optimizing WAD files and resources:
-_<github.com/Kroc/DOOM-Crusher>_
+:* G *
+:-------------------------------------------------------------------------------
 
-:PRBoom+ - <prboom-plus.sourceforge.net>
-:===============================================================================
-By _Andrey Budko (entryway)_
+*GLBoom+			The hardware-accelerated OpenGL version of *PRBoom+*.
 
-:xdelta - <xdelta.com>
-:===============================================================================
-"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams."
+*GZDoom				A modern *source port* with many additional capabilites including 3D floors, 3D models and enhanced OpenGL graphics. Created and maintained by _Graf Zahl_. See also *ZDoom*.
 
-Xdelta is used to patch IWADs to canonical versions, i.e. remove censoring from DOOM 3 BFG Edition's WADs. The patches themselves are provided by _<github.com/Doom-Utils/iwad-patches>_.
+:* H *
+:-------------------------------------------------------------------------------
 
-:Zandronum - <zandronum.com>
-:===============================================================================
-_Torr Samaho_ - Lead Developer
-_Blzut3_ - Port, Doomseeker Developer, Webmaster
-_Dusk_ - Port Developer, Forum Moderator
-_Edward-san_ - Tester
-_bond_ - IDE Developer
-_Zalewa_ - Doomseeker Developer
+*Heretic			High-fantasy commercial *'doom-clone'* released Decemeber 1994. Notable for adding an inventory system to the DOOM engine.
 
-:ZDoom - <zdoom.org>
-:===============================================================================
-By _Randy Heit_, _Christoph Oelckers (Graf Zahl)_ & _Braden Obrzut (Blzut3)_.
+*Hexen				Sequel to *Heretic* released October 1995. Created *ACS* for defining interactivity. Notable for its "hub" system that let you choose the order of maps to play.
+
+:* I *
+:-------------------------------------------------------------------------------
+
+*/idgames			An online archive of DOOM content started in 1994. It is the single biggest repository of classic DOOM levels, mods and general content in the world.
+
+*IWAD				"Internal WAD"; a type of *WAD* (package) file containing the entire resources for a DOOM game, unlike a *PWAD* ("patch WAD") that contains additional resources to add and replace over an IWAD. The commercial DOOM WADs *DOOM.WAD*, *DOOM2.WAD*, *TNT.WAD* & *PLUTONIA.WAD* are all IWADs.
+
+:* J *
+:-------------------------------------------------------------------------------
+
+*Joke WAD			A *WAD* created as an ironic or satiric joke, the most famous of which is probably *NUTS.WAD*.
+
+:* K *
+:-------------------------------------------------------------------------------
+:* L *
+:-------------------------------------------------------------------------------
+
+*Linedef			Technical detail of DOOM mapping, a linedef is a line between two points in a map. Meta-data known as a *sidedef* determines if the line is a wall (and which textures to use) or a division between two *segments*
+
+*Lump, LMP			A block of data in a *WAD* file, e.g. a single texture, a sound, a map and so on. Often abbreviated "LMP"
+
+:* M *
+:-------------------------------------------------------------------------------
+
+*Master Levels
+*for DOOM II		Expansion pack for DOOM II released December 1995 consisting of 21 extra-difficult levels created by the community.
+
+*MBF				"Marine's Best Friend", a *source-port* that came after *boom*. Extended some limits and *DeHackEd* support further. Most modern engines support the MBF additions.
+
+*MegaWAD			A single *WAD* containing 15 or more maps. Typically the work of multiple mappers, a megawad can take years to make and perfect. Depending on the level of divergence from standard DOOM gameplay a megawad might be classed as a *total conversion*.
+
+:* N *
+:-------------------------------------------------------------------------------
+
+*NUTS.WAD			A *joke WAD* containing 10'617 monsters. Can bring even modern computers to their knees.
+
+:* O *
+:-------------------------------------------------------------------------------
+:* P *
+:-------------------------------------------------------------------------------
+
+*PLUTONIA.WAD		The *IWAD* for *The Plutonia Experiment*, part of *Final DOOM*.
+
+*Port				A port of the DOOM game engine. See *source port*.
+
+*PRBoom+			Modern *source-port* notable for very high frame rates compared to other ports. Supports *boom* and *MBF* levels of compatibility.
+
+*PWAD				"Patch WAD"; a type of *WAD* (package) file containing additional resources to add and replace over a base-game *IWAD*. This is how most community levels and mods are distributed.
+
+:* Q *
+:-------------------------------------------------------------------------------
+:* R *
+:-------------------------------------------------------------------------------
+:* S *
+:-------------------------------------------------------------------------------
+
+*Segment			Technical detail of DOOM mapping, a segment is a polygon made from a selection of *linedefs*. A segment defines a floor and ceiling height & texture as well as an overall light-level.
+
+*Sidedef			Technical detail of DOOM mapping, a sidedef is meta-data added to a *linedef* to select which textures should be displayed on the wall.
+
+*Source port		After the DOOM source code was made available, the game engine was ported to numerous platforms and expanded to include new features. The most popular ports are *GZDoom*, *PRBoom+*, *Zandronum* and *Chocolate-Doom*.
+
+*Strife				Commercial RPG/FPS hybrid released May 1996. Notable for adding RPG elements and a conversation system to the DOOM engine.
+
+:* T *
+:-------------------------------------------------------------------------------
+
+*TeamTNT			A team of mappers founded by _Ty Halderman_. TeamTNT created *TNT: Evilution* and *The Plutonia Experiment*, the *megawads* that made up *Final DOOM*. Also responsible for the highly influential *"boom"* *source-port*
+
+*The Ultimate DOOM	Commercial re-release of the original DOOM with an additional episode "Thy Flesh Consumed".
+
+*TNT: Evilution,
+*TNT.WAD			One of the two *megawads* in *Final DOOM*, created by *TeamTNT*.
+
+*Total Conversion	A *PWAD* that changes so much of DOOMs content and gameplay so as to be a new, different game.
+
+*The Plutonia
+*Experiment			One of the two *megawads* in *Final DOOM*, created by *TeamTNT*. Notable for its extreme difficulty.
+
+:* U *
+:-------------------------------------------------------------------------------
+:* V *
+:-------------------------------------------------------------------------------
+
+*Vanilla			Refers to the original gameplay and behaviour of the original DOOM executable. *Chocolate-Doom* is a *source-port* that faithfully recreates the behaviour of the original MS-DOS DOOM on modern systems. Vanilla implies a set of strict limits on the size of the map, the number of things in them and the level of detail possible -- see *visplane*.
+
+*visplane			Technical detail of how the original DOOM renders graphics to the screen. Visplanes are contiguous horizontal slices of floor & ceiling. *Vanilla* DOOM is limited to a maximum of 128 visplanes on screen; too many texture / lighting changes on the screen will cause the game to crash. Almost all *source-ports* remove this limit, except *Chocolate-Doom* which replicates the original behaviour on modern systems.
+
+:* W *
+:-------------------------------------------------------------------------------
+
+*WAD				"Where's All the Data", a file format DOOM uses for packaging together all the resources (*Lumps*) of a game. See also *IWAD* & *PWAD*
+
+:* X *
+:-------------------------------------------------------------------------------
+:* Y *
+:-------------------------------------------------------------------------------
+:* Z *
+:-------------------------------------------------------------------------------
+
+*Zandronum			A strongly multi-player focused *source port*, based on an older version of *GZDoom*.
+
+*ZDoom				A software-rendering *source port* with numerous additional enhancements. Written by _Randy Heit_, _Graf Zahl_ & _Braden Obrzut (Blzut3)_. It was discontinued in 2017. *GZDoom* is based on ZDoom and its software-renderer is an exact replica of ZDoom.
+
+*ZScript			Recent low-level scripting language in *GZDoom* designed to enhance and replace many numerous historical scripting systems in use including *ACS*, *DeHackEd* & *DECORATE*.
