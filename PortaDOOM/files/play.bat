@@ -207,6 +207,9 @@ REM # TODO: if -skill is already provided, skip this?
 
 IF "%LEVEL%" == "" GOTO :exe
 
+REM # TODO: provide descriptions of the effects skill levels have;
+REM #       see: https://doomwiki.org/wiki/Skill_level
+
 ECHO:
 ECHO -------------------------------------------------------------------------------
 ECHO:
@@ -218,6 +221,27 @@ IF "%ENGINE%" =="doom64ex" (
 	ECHO          [2]  Bring It On!
 	ECHO          [3]  I Own Doom!
 	ECHO          [4]  Watch Me Die!
+	
+REM # Or Heretic:
+REM # TODO: Also recognise HERETIC1.WAD (shareware)
+REM # TODO: Hexen skill level names are based on class
+) ELSE IF /I "%IWAD%" == "HERETIC.WAD" (
+	ECHO          [1] Thou needeth a wet-nurse
+	ECHO          [2] Yellowbellies-r-us
+	ECHO          [3] Bringest them oneth
+	ECHO          [4] Thou art a smite-meister
+	ECHO          [5] Black plague possesses thee
+
+REM # Or Strife:
+REM # TODO: Also recognise STRIFE0.WAD (shareware)
+) ELSE IF /I "%IWAD%" == "STRIFE1.WAD" (
+	ECHO          [1] Training
+	ECHO          [2] Rookie
+	ECHO          [3] Veteran
+	ECHO          [4] Elite
+	ECHO          [5] Bloodbath
+
+REM # Lastly, DOOM:
 ) ELSE (
 	ECHO          [1]  I'm Too Young To Die
 	ECHO          [2]  Hey, Not Too Rough

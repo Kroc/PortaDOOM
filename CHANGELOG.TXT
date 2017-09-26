@@ -2,6 +2,10 @@
 + = New feature / addition
 - = Removal
 
+26-SEP-17:
++ Added skill level names for Heretic & Strife in play.bat
+  (support for shareware and Hexen to be added in the future)
+
 25-SEP-17:
 + Added a glossary page
 
