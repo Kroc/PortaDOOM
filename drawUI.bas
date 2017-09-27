@@ -135,7 +135,7 @@ END SUB
 SUB drawPage
     'clear the background before displaying the page
     '(not all lines will fill the full 80 cols)
-    COLOR , PAGE_BKGD
+    COLOR , Themes(PageTheme, COLOR_BGND)
     DIM n%
     FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
         LOCATE n%, 1
@@ -163,7 +163,7 @@ END SUB
 'draws the scroll bar and thumb
 '=============================================================================
 SUB drawScrollbar
-    COLOR PAGE_FGND, PAGE_BKGD
+    COLOR Themes(PageTheme, COLOR_FGND) , Themes(PageTheme, COLOR_BGND)
 
     'draw the bar
     DIM n%
@@ -196,7 +196,7 @@ SUB drawScrollbar
     END IF
 
     'draw the thumb
-    COLOR LTGREY, BLACK
+    COLOR Themes(PageTheme, COLOR_FGND)
     FOR n% = INT(thumbpos!) TO INT(thumbpos! + thumblen!)
         LOCATE PAGE_TOP + n%, SCREEN_WIDTH: PRINT CHR$(ASC_SCROLL_THUMB);
     NEXT

@@ -78,20 +78,54 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 
 'theme colours
 '-----------------------------------------------------------------------------
-'themes consist of various effects that can be combined,
-'these are the bit-toggles for the individual efffects:
+CONST COLOR_BGND = 0 '..background colour
+CONST COLOR_FGND = 1 '..foreground colour
+CONST COLOR_BOLD = 2 '..*bold* text
+CONST COLOR_ITALIC = 3 '_italic_ text
+CONST COLOR_HEAD = 4 '..heading and other structural elements
+CONST COLOR_PAREN = 5 '.parentheses (...)
+CONST COLOR_KEY = 6 '...key marker [...]
 
-CONST THEME_FGND = 2 ^ 0 'background colour is given by default
-CONST THEME_BGND = 2 ^ 1 'this bit specifies background colour instead
-CONST THEME_BOLD = 2 ^ 2
-CONST THEME_ITALIC = 2 ^ 3
-CONST THEME_TITLE = 2 ^ 4
-CONST THEME_PAREN = 2 ^ 5
-CONST THEME_KEY = 2 ^ 6
-CONST THEME_WARNING = 2 ^ 7
+DIM SHARED Themes(0 TO 3, 0 TO 6) AS _BYTE
 
-DIM SHARED Themes(0) AS INTEGER
+'define the colours used by the blue theme:
+CONST THEME_BLACK = 0
+Themes(THEME_BLACK, COLOR_BGND) = BLACK
+Themes(THEME_BLACK, COLOR_FGND) = DKGREY
+Themes(THEME_BLACK, COLOR_BOLD) = LTGREY
+Themes(THEME_BLACK, COLOR_ITALIC) = LIME
+Themes(THEME_BLACK, COLOR_HEAD) = RED
+Themes(THEME_BLACK, COLOR_PAREN) = CYAN
+Themes(THEME_BLACK, COLOR_KEY) = AQUA
 
+CONST THEME_BLUE = 1
+Themes(THEME_BLUE, COLOR_BGND) = BLUE
+Themes(THEME_BLUE, COLOR_FGND) = LTGREY
+Themes(THEME_BLUE, COLOR_BOLD) = WHITE
+Themes(THEME_BLUE, COLOR_ITALIC) = LIME
+Themes(THEME_BLUE, COLOR_HEAD) = YELLOW
+Themes(THEME_BLUE, COLOR_PAREN) = CYAN
+Themes(THEME_BLUE, COLOR_KEY) = AQUA
+
+CONST THEME_RED = 2
+Themes(THEME_RED, COLOR_BGND) = RED
+Themes(THEME_RED, COLOR_FGND) = LTGREY
+Themes(THEME_RED, COLOR_BOLD) = WHITE
+Themes(THEME_RED, COLOR_ITALIC) = LIME
+Themes(THEME_RED, COLOR_HEAD) = YELLOW
+Themes(THEME_RED, COLOR_PAREN) = ROSE
+Themes(THEME_RED, COLOR_KEY) = PINK
+
+CONST THEME_WARNING = 3
+Themes(THEME_WARNING, COLOR_BGND) = LTGREY
+Themes(THEME_WARNING, COLOR_FGND) = RED
+Themes(THEME_WARNING, COLOR_BOLD) = BLACK
+Themes(THEME_WARNING, COLOR_ITALIC) = DKGREY
+Themes(THEME_WARNING, COLOR_HEAD) = RED
+Themes(THEME_WARNING, COLOR_PAREN) = RED
+Themes(THEME_WARNING, COLOR_KEY) = PURPLE
+
+CONST THEME_DEFAULT = THEME_BLUE
 
 'page data:
 '-----------------------------------------------------------------------------
@@ -102,6 +136,7 @@ CONST PAGE_ASC = ASC_HASH '.which char is used to separate page numbers
 DIM SHARED PageName AS STRING '..base name of page, without page number
 DIM SHARED PageTitle AS STRING '.nav title as defined by `$TITLE=`
 DIM SHARED PageNav AS STRING '..,nav path as defined by `$NAV=`
+DIM SHARED PageTheme AS INTEGER 'which colour theme to use
 DIM SHARED PageNum AS INTEGER '..page number,
 DIM SHARED PageCount AS INTEGER 'and number of pages in the set
 
@@ -133,6 +168,7 @@ DIM SHARED PageKeyCount%
 PageName$ = ""
 PageTitle = ""
 PageNav = ""
+PageTheme = THEME_DEFAULT
 PageNum% = 0
 PageCount% = 0
 PageLines$(1) = ""
@@ -535,6 +571,7 @@ SUB loadPage (page_name$)
     PageName$ = file_base$
     PageTitle$ = ""
     PageNav$ = ""
+    PageTheme = THEME_DEFAULT
     PageNum% = 0
     PageCount% = 0
     PageLine% = 0
@@ -1349,11 +1386,15 @@ END SUB
 'prints a line of text with formatting codes
 '=============================================================================
 SUB printLine (line$)
-    'this will keep track of the nesting of modes
-    REDIM mode_stack%(1)
-    DIM mode_count%: mode_count% = 1
-    'start with the page's default colour
-    GOSUB setmode
+
+    REDIM LineThemes%(1)
+    REDIM LineColors%(1)
+    LineThemes%(1) = PageTheme%
+    LineColors%(1) = Themes(PageTheme%, COLOR_FGND)
+    DIM CurTheme%, CurColor%
+    CurTheme% = LineThemes%(1)
+    CurColor% = LineColors%(1)
+    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
 
     '-------------------------------------------------------------------------
     DIM line_width%: line_width% = PAGE_WIDTH
@@ -1362,7 +1403,7 @@ SUB printLine (line$)
     ' may not match the character index of the string)
     DIM line_len%
 
-    DIM is_heading`
+    DIM is_heading` 'if printing a heading
     DIM is_warning` 'if printing a warning box "^!..."
     DIM is_key` '....if handling a key indicator "^[...^]"
     DIM is_paren` '..if in parentheses "^( ... ^)"
@@ -1391,20 +1432,19 @@ SUB printLine (line$)
                     line_width% = line_width% - 6
                     LOCATE , line_len% + 3
                     'draw the border in flashing red
-                    GOSUB pushmode
-                    COLOR 20, LTGREY
-                    'draw the top & bottom box borders in the right place
+                    GOSUB pushmode: COLOR CurColor% + BLINK
+                    'draw the left and right box borders
                     PRINT CHR$(ASC_BOX_V) _
                         + SPACE$(2 + line_width% - line_len%) _
                         + CHR$(ASC_BOX_V);
+                    'draw the top and bottom borders in the correct place
                     IF ASC(line$, src% + 1) = ASC_BOX_TL _
                     OR ASC(line$, src% + 1) = ASC_BOX_BL _
                     THEN
                         LOCATE , line_len% + 3
                     ELSE
                         LOCATE , line_len% + 5
-                        'return to non-flashing red for the text
-                        COLOR RED
+                        COLOR CurColor%
                     END IF
 
                 CASE CTL_LINE1
@@ -1423,9 +1463,11 @@ SUB printLine (line$)
                     'heading:
                     '..........................................................
                     is_heading` = NOT is_heading`
-                    IF is_heading` = TRUE _
-                        THEN GOSUB pushmode _
-                        ELSE GOSUB popmode
+                    IF is_heading` = TRUE THEN
+                        GOSUB pushmode
+                    ELSE
+                        GOSUB popmode
+                    END IF
 
                 CASE CTL_PAREN_ON
                     '..........................................................
@@ -1455,17 +1497,21 @@ SUB printLine (line$)
                     '.........................................................
                     'enable / disable bold
                     is_bold` = NOT is_bold`
-                    IF is_bold` = TRUE _
-                        THEN GOSUB pushmode _
-                        ELSE GOSUB popmode
+                    IF is_bold` = TRUE THEN
+                        GOSUB pushmode
+                    ELSE
+                        GOSUB popmode
+                    END IF
 
                 CASE CTL_ITALIC
                     '..........................................................
                     'enable / disable italic
                     is_italic` = NOT is_italic`
-                    IF is_italic` = TRUE _
-                        THEN GOSUB pushmode _
-                        ELSE GOSUB popmode
+                    IF is_italic` = TRUE THEN
+                        GOSUB pushmode
+                    ELSE
+                        GOSUB popmode
+                    END IF
 
                 CASE ELSE
                     '.........................................................
@@ -1477,9 +1523,9 @@ SUB printLine (line$)
 
         ELSEIF char% = 0 THEN
             char% = ASC_QMARK
-            GOSUB pushmode
+            ''GOSUB pushmode
             PRINT "?";
-            GOSUB popmode
+            ''GOSUB popmode
             line_len% = line_len% + 1
         ELSE
             'print the character as-is to screen
@@ -1487,44 +1533,51 @@ SUB printLine (line$)
             line_len% = line_len% + 1
         END IF
     NEXT
-    COLOR , PAGE_BKGD
+    COLOR , Themes(PageTheme, COLOR_BGND)
     EXIT SUB
-
-    pushmode:
-    '-------------------------------------------------------------------------
-    mode_count% = mode_count% + 1
-    REDIM _PRESERVE mode_stack%(mode_count%)
-    mode_stack%(mode_count%) = char%
-    GOTO setmode
 
     popmode:
     '-------------------------------------------------------------------------
-    mode_count% = mode_count% - 1
-    ''GOTO setmode
+    REDIM _PRESERVE LineThemes%(UBOUND(LineThemes%) - 1)
+    REDIM _PRESERVE LineColors%(UBOUND(LineColors%) - 1)
+    CurTheme% = LineThemes%(UBOUND(LineThemes%))
+    CurColor% = LineColors%(UBOUND(LineColors%))
+    'set the text colours
+    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
 
-    setmode:
+    RETURN
+
+    pushmode:
     '-------------------------------------------------------------------------
-    SELECT CASE mode_stack%(mode_count%)
+    SELECT CASE char%
         CASE CTL_WARNING
-            COLOR RED
-        CASE CTL_HEADING
-            COLOR YELLOW
-        CASE CTL_LINE1, CTL_LINE2
-            IF is_warning` = TRUE THEN COLOR RED ELSE COLOR YELLOW
-        CASE CTL_BOLD
-            IF is_warning` = TRUE THEN COLOR BLACK ELSE COLOR WHITE
-        CASE CTL_ITALIC
-            IF is_warning` = TRUE THEN COLOR DKGREY ELSE COLOR LIME
-        CASE CTL_KEY_ON
-            IF is_warning` = TRUE THEN COLOR PURPLE ELSE COLOR AQUA
+            CurTheme% = THEME_WARNING
+            CurColor% = Themes(CurTheme%, COLOR_FGND)
+
+        CASE CTL_LINE1, CTL_LINE2, CTL_HEADING
+            CurColor% = Themes(CurTheme%, COLOR_HEAD)
+
         CASE CTL_PAREN_ON
-            'will remain usual text colour in a warning box
-            IF is_warning` = FALSE THEN COLOR CYAN
-        CASE ASC_QMARK
-            COLOR 28
-        CASE ELSE
-            COLOR PAGE_FGND, PAGE_BKGD
+            CurColor% = Themes(CurTheme%, COLOR_PAREN)
+
+        CASE CTL_KEY_ON
+            CurColor% = Themes(CurTheme%, COLOR_KEY)
+
+        CASE CTL_BOLD
+            CurColor% = Themes(CurTheme%, COLOR_BOLD)
+
+        CASE CTL_ITALIC
+            CurColor% = Themes(CurTheme%, COLOR_ITALIC)
+
     END SELECT
+
+    REDIM _PRESERVE LineThemes%(UBOUND(LineThemes%) + 1)
+    REDIM _PRESERVE LineColors%(UBOUND(LineColors%) + 1)
+    LineThemes%(UBOUND(LineThemes%)) = CurTheme%
+    LineColors%(UBOUND(LineColors%)) = CurColor%
+    'set the text colours
+    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
+
     RETURN
 END SUB
 
