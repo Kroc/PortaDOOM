@@ -1,3 +1,4 @@
+$THEME=BLUE
 $TITLE=Welcome
 $KEY:D=GOTO:Commercial DOOM
 $KEY:C=GOTO:The Cacowards

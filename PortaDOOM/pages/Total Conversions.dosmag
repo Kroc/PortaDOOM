@@ -1,3 +1,4 @@
+$THEME=BLUE
 $KEY:F=GOTO:FreeDOOM
 $KEY:P=GOTO:Playstation DOOM
 $KEY:S=GOTO:The Adventures of Square
