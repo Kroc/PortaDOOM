@@ -22,18 +22,24 @@ END SUB
 'draw the title of the current page and the navigation breadcrumb
 '=============================================================================
 SUB drawHeader
+    DIM HeadBack%, HeadFore%, HeadText%, HeadBold%
+    HeadBack% = Themes(Themes(PageTheme%).themeHeader).colorBack
+    HeadFore% = Themes(Themes(PageTheme%).themeHeader).colorPageTab
+    HeadText% = Themes(Themes(PageTheme%).themeHeader).colorHead
+    HeadBold% = Themes(Themes(PageTheme%).themeHeader).colorBold
+
     'clear the existing page line (title and page count)
-    COLOR , HEAD_BKGD
+    COLOR , HeadBack%
     DIM n%
     FOR n% = HEAD_TOP TO HEAD_TOP + HEAD_HEIGHT
         LOCATE n%, 1: PRINT SPACE$(SCREEN_WIDTH);
     NEXT
 
     'draw the lines for the tab background
-    COLOR HEAD_FGND, HEAD_BKGD
+    COLOR HeadFore%, HeadBack%
     LOCATE (HEAD_TOP + 1), 1
     PRINT STRING$(SCREEN_WIDTH, CHR$(ASC_BOX_DBL_H))
-    COLOR TABS_FGND, TABS_BKGD
+    COLOR Themes(PageTheme%).colorPageTab, Themes(PageTheme%).colorBack
     LOCATE (HEAD_TOP + 2), 1
     PRINT STRING$(SCREEN_WIDTH, CHR$(ASC_BOX_DBL_H));
 
@@ -52,7 +58,7 @@ SUB drawHeader
         tab_width% = text_len% + 4
 
         'print the tab
-        COLOR TABS_FGND, TABS_BKGD
+        COLOR Themes(PageTheme%).colorPageTab, Themes(PageTheme%).colorBack
         LOCATE HEAD_TOP, SCREEN_WIDTH - tab_width%
         PRINT CHR$(ASC_BOX_TL) + CHR$(ASC_BOX_H) _
             + STRING$(text_len%, CHR$(ASC_BOX_H)) _
@@ -60,17 +66,17 @@ SUB drawHeader
         LOCATE (HEAD_TOP + 1), SCREEN_WIDTH - tab_width%
         PRINT CHR$(ASC_BOX_V);
         IF PageNum% > 1 THEN
-            COLOR TABS_FGND + BLINK, TABS_BKGD
+            COLOR Themes(PageTheme%).colorPageTab + BLINK
             PRINT CHR$(ASC_ARR_LT);
-            COLOR TABS_FGND, TABS_BKGD
+            COLOR Themes(PageTheme%).colorPageTab
         ELSE
             PRINT " ";
         END IF
         PRINT " " + tab_text$ + " ";
         IF PageNum% < PageCount% THEN
-            COLOR TABS_FGND + BLINK, TABS_BKGD
+            COLOR Themes(PageTheme%).colorPageTab + BLINK
             PRINT CHR$(ASC_ARR_RT);
-            COLOR TABS_FGND, TABS_BKGD
+            COLOR Themes(PageTheme%).colorPageTab
         ELSE
             PRINT " ";
         END IF
@@ -111,7 +117,7 @@ SUB drawHeader
     'prevent the breadcrumb from being too long
     nav$ = RTRUNCATE$(nav$, SCREEN_WIDTH - tab_width% - 3)
 
-    COLOR HEAD_FGND, HEAD_BKGD
+    COLOR HeadFore%, HeadBack%
     LOCATE HEAD_TOP, 1
     PRINT STRING$(LEN(nav$), CHR$(ASC_BOX_H)) + CHR$(ASC_BOX_TR);
     LOCATE (HEAD_TOP + 1), 1
@@ -121,13 +127,13 @@ SUB drawHeader
         DIM char%: char% = ASC(nav$, n%)
         SELECT CASE char%
             CASE ASC_DIAMOND, ASC_LGLLMT
-                COLOR WHITE: PRINT CHR$(char%);
+                COLOR HeadBold%: PRINT CHR$(char%);
             CASE ELSE
-                COLOR YELLOW: PRINT CHR$(ASC(nav$, n%));
+                COLOR HeadText%: PRINT CHR$(ASC(nav$, n%));
         END SELECT
     NEXT n%
 
-    COLOR HEAD_FGND: PRINT CHR$(ASC_BOX_BL_DBL_B);
+    COLOR HeadFore%: PRINT CHR$(ASC_BOX_BL_DBL_B);
 END SUB
 
 'draw the page area where the content goes
@@ -135,7 +141,7 @@ END SUB
 SUB drawPage
     'clear the background before displaying the page
     '(not all lines will fill the full 80 cols)
-    COLOR , Themes(PageTheme, COLOR_BGND)
+    COLOR , Themes(PageTheme).colorBack
     DIM n%
     FOR n% = PAGE_TOP TO PAGE_TOP + PAGE_HEIGHT
         LOCATE n%, 1
@@ -163,7 +169,7 @@ END SUB
 'draws the scroll bar and thumb
 '=============================================================================
 SUB drawScrollbar
-    COLOR Themes(PageTheme, COLOR_FGND) , Themes(PageTheme, COLOR_BGND)
+    COLOR Themes(PageTheme).colorFore , Themes(PageTheme).colorBack
 
     'draw the bar
     DIM n%
@@ -196,7 +202,7 @@ SUB drawScrollbar
     END IF
 
     'draw the thumb
-    COLOR Themes(PageTheme, COLOR_FGND)
+    COLOR Themes(PageTheme).colorFore
     FOR n% = INT(thumbpos!) TO INT(thumbpos! + thumblen!)
         LOCATE PAGE_TOP + n%, SCREEN_WIDTH: PRINT CHR$(ASC_SCROLL_THUMB);
     NEXT

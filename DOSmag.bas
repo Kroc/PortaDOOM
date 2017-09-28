@@ -50,12 +50,6 @@ CONST ASC_SCROLL_THUMB = 219 'ASCII code for the scrolling thumb
 CONST HEAD_TOP = 1 '....row where the header starts
 CONST HEAD_HEIGHT = 3 '.size of the header area
 
-CONST HEAD_FGND = ROSE 'header foreground colour
-CONST HEAD_BKGD = RED '.header background colour
-
-CONST TABS_FGND = AQUA
-CONST TABS_BKGD = BLUE
-
 'row number where the page begins (immediately after the header)
 CONST PAGE_TOP = HEAD_TOP + HEAD_HEIGHT
 'height of the page display on the screen;
@@ -86,46 +80,89 @@ CONST COLOR_HEAD = 4 '..heading and other structural elements
 CONST COLOR_PAREN = 5 '.parentheses (...)
 CONST COLOR_KEY = 6 '...key marker [...]
 
-DIM SHARED Themes(0 TO 3, 0 TO 6) AS _BYTE
+TYPE Theme
+    name AS STRING * 15
+    colorBack AS _BYTE
+    colorFore AS _BYTE
+    colorBold AS _BYTE
+    colorItalic AS _BYTE
+    colorHead AS _BYTE
+    colorParen AS _BYTE
+    colorKey AS _BYTE
+    colorPageTab AS _BYTE 'foreground colour of the page tab border
+    themeHeader AS _BYTE '.which theme to get the header colours from
+    themeWarning AS _BYTE 'which theme to switch to for warning boxes
+END TYPE
 
-'define the colours used by the blue theme:
-CONST THEME_BLACK = 0
-Themes(THEME_BLACK, COLOR_BGND) = BLACK
-Themes(THEME_BLACK, COLOR_FGND) = DKGREY
-Themes(THEME_BLACK, COLOR_BOLD) = LTGREY
-Themes(THEME_BLACK, COLOR_ITALIC) = LIME
-Themes(THEME_BLACK, COLOR_HEAD) = RED
-Themes(THEME_BLACK, COLOR_PAREN) = CYAN
-Themes(THEME_BLACK, COLOR_KEY) = AQUA
+DIM SHARED Themes(0 TO 4) AS Theme
 
-CONST THEME_BLUE = 1
-Themes(THEME_BLUE, COLOR_BGND) = BLUE
-Themes(THEME_BLUE, COLOR_FGND) = LTGREY
-Themes(THEME_BLUE, COLOR_BOLD) = WHITE
-Themes(THEME_BLUE, COLOR_ITALIC) = LIME
-Themes(THEME_BLUE, COLOR_HEAD) = YELLOW
-Themes(THEME_BLUE, COLOR_PAREN) = CYAN
-Themes(THEME_BLUE, COLOR_KEY) = AQUA
+CONST THEME_WARNING = 0
+CONST THEME_BLACK = 1
+CONST THEME_BLUE = 2
+CONST THEME_RED = 3
+CONST THEME_GREY = 4
 
-CONST THEME_RED = 2
-Themes(THEME_RED, COLOR_BGND) = RED
-Themes(THEME_RED, COLOR_FGND) = LTGREY
-Themes(THEME_RED, COLOR_BOLD) = WHITE
-Themes(THEME_RED, COLOR_ITALIC) = LIME
-Themes(THEME_RED, COLOR_HEAD) = YELLOW
-Themes(THEME_RED, COLOR_PAREN) = ROSE
-Themes(THEME_RED, COLOR_KEY) = PINK
+Themes(THEME_WARNING).name = "WARNING"
+Themes(THEME_WARNING).colorBack = LTGREY
+Themes(THEME_WARNING).colorFore = RED
+Themes(THEME_WARNING).colorBold = BLACK
+Themes(THEME_WARNING).colorItalic = DKGREY
+Themes(THEME_WARNING).colorHead = RED
+Themes(THEME_WARNING).colorParen = RED
+Themes(THEME_WARNING).colorKey = PURPLE
+Themes(THEME_WARNING).colorPageTab = RED
+Themes(THEME_WARNING).themeHeader = THEME_RED
+Themes(THEME_WARNING).themeWarning = THEME_RED
 
-CONST THEME_WARNING = 3
-Themes(THEME_WARNING, COLOR_BGND) = LTGREY
-Themes(THEME_WARNING, COLOR_FGND) = RED
-Themes(THEME_WARNING, COLOR_BOLD) = BLACK
-Themes(THEME_WARNING, COLOR_ITALIC) = DKGREY
-Themes(THEME_WARNING, COLOR_HEAD) = RED
-Themes(THEME_WARNING, COLOR_PAREN) = RED
-Themes(THEME_WARNING, COLOR_KEY) = PURPLE
+Themes(THEME_BLACK).name = "BLACK"
+Themes(THEME_BLACK).colorBack = BLACK
+Themes(THEME_BLACK).colorFore = DKGREY
+Themes(THEME_BLACK).colorBold = WHITE
+Themes(THEME_BLACK).colorItalic = PURPLE
+Themes(THEME_BLACK).colorHead = RED
+Themes(THEME_BLACK).colorParen = LTGREY
+Themes(THEME_BLACK).colorKey = YELLOW
+Themes(THEME_BLACK).colorPageTab = PINK
+Themes(THEME_BLACK).themeHeader = THEME_RED
+Themes(THEME_BLACK).themeWarning = THEME_WARNING
 
-CONST THEME_DEFAULT = THEME_BLUE
+Themes(THEME_BLUE).name = "BLUE"
+Themes(THEME_BLUE).colorBack = BLUE
+Themes(THEME_BLUE).colorFore = LTGREY
+Themes(THEME_BLUE).colorBold = WHITE
+Themes(THEME_BLUE).colorItalic = LIME
+Themes(THEME_BLUE).colorHead = YELLOW
+Themes(THEME_BLUE).colorParen = CYAN
+Themes(THEME_BLUE).colorKey = AQUA
+Themes(THEME_BLUE).colorPageTab = AQUA
+Themes(THEME_BLUE).themeHeader = THEME_RED
+Themes(THEME_BLUE).themeWarning = THEME_WARNING
+
+Themes(THEME_RED).name = "RED"
+Themes(THEME_RED).colorBack = RED
+Themes(THEME_RED).colorFore = LTGREY
+Themes(THEME_RED).colorBold = WHITE
+Themes(THEME_RED).colorItalic = LIME
+Themes(THEME_RED).colorHead = YELLOW
+Themes(THEME_RED).colorParen = ROSE
+Themes(THEME_RED).colorKey = PINK
+Themes(THEME_RED).colorPageTab = ROSE
+Themes(THEME_RED).themeHeader = THEME_BLUE
+Themes(THEME_RED).themeWarning = THEME_WARNING
+
+Themes(THEME_GREY).name = "GREY"
+Themes(THEME_GREY).colorBack = LTGREY
+Themes(THEME_GREY).colorFore = DKGREY
+Themes(THEME_GREY).colorBold = BLACK
+Themes(THEME_GREY).colorItalic = PURPLE
+Themes(THEME_GREY).colorHead = BLUE
+Themes(THEME_GREY).colorParen = WHITE
+Themes(THEME_GREY).colorKey = RED
+Themes(THEME_GREY).colorPageTab = RED
+Themes(THEME_GREY).themeHeader = THEME_RED
+Themes(THEME_GREY).themeWarning = THEME_RED
+
+CONST THEME_DEFAULT = THEME_RED
 
 'page data:
 '-----------------------------------------------------------------------------
@@ -601,6 +638,15 @@ SUB loadPage (page_name$)
             '.................................................................
             'skip REM lines; allows authors to put comments into the page
             'without them appearing on-screen
+
+        ELSEIF LEFT$(line$, 7) = "$THEME=" THEN
+            '.................................................................
+            'change the theme for this page?
+            DIM i%: FOR i% = LBOUND(Themes) TO UBOUND(Themes)
+                IF TRIM$(MID$(line$, 8)) = TRIM$(Themes(i%).name) THEN
+                    PageTheme = i%: EXIT FOR
+                END IF
+            NEXT i%
 
         ELSEIF LEFT$(line$, 7) = "$TITLE=" THEN
             '.................................................................
@@ -1390,11 +1436,11 @@ SUB printLine (line$)
     REDIM LineThemes%(1)
     REDIM LineColors%(1)
     LineThemes%(1) = PageTheme%
-    LineColors%(1) = Themes(PageTheme%, COLOR_FGND)
+    LineColors%(1) = Themes(PageTheme%).colorFore
     DIM CurTheme%, CurColor%
     CurTheme% = LineThemes%(1)
     CurColor% = LineColors%(1)
-    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
+    COLOR CurColor%, Themes(CurTheme%).colorBack
 
     '-------------------------------------------------------------------------
     DIM line_width%: line_width% = PAGE_WIDTH
@@ -1533,7 +1579,7 @@ SUB printLine (line$)
             line_len% = line_len% + 1
         END IF
     NEXT
-    COLOR , Themes(PageTheme, COLOR_BGND)
+    COLOR , Themes(PageTheme).colorBack
     EXIT SUB
 
     popmode:
@@ -1543,7 +1589,7 @@ SUB printLine (line$)
     CurTheme% = LineThemes%(UBOUND(LineThemes%))
     CurColor% = LineColors%(UBOUND(LineColors%))
     'set the text colours
-    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
+    COLOR CurColor%, Themes(CurTheme%).colorBack
 
     RETURN
 
@@ -1551,23 +1597,23 @@ SUB printLine (line$)
     '-------------------------------------------------------------------------
     SELECT CASE char%
         CASE CTL_WARNING
-            CurTheme% = THEME_WARNING
-            CurColor% = Themes(CurTheme%, COLOR_FGND)
+            CurTheme% = Themes(CurTheme%).themeWarning
+            CurColor% = Themes(CurTheme%).colorFore
 
         CASE CTL_LINE1, CTL_LINE2, CTL_HEADING
-            CurColor% = Themes(CurTheme%, COLOR_HEAD)
+            CurColor% = Themes(CurTheme%).colorHead
 
         CASE CTL_PAREN_ON
-            CurColor% = Themes(CurTheme%, COLOR_PAREN)
+            CurColor% = Themes(CurTheme%).colorParen
 
         CASE CTL_KEY_ON
-            CurColor% = Themes(CurTheme%, COLOR_KEY)
+            CurColor% = Themes(CurTheme%).colorKey
 
         CASE CTL_BOLD
-            CurColor% = Themes(CurTheme%, COLOR_BOLD)
+            CurColor% = Themes(CurTheme%).colorBold
 
         CASE CTL_ITALIC
-            CurColor% = Themes(CurTheme%, COLOR_ITALIC)
+            CurColor% = Themes(CurTheme%).colorItalic
 
     END SELECT
 
@@ -1576,7 +1622,7 @@ SUB printLine (line$)
     LineThemes%(UBOUND(LineThemes%)) = CurTheme%
     LineColors%(UBOUND(LineColors%)) = CurColor%
     'set the text colours
-    COLOR CurColor%, Themes(CurTheme%, COLOR_BGND)
+    COLOR CurColor%, Themes(CurTheme%).colorBack
 
     RETURN
 END SUB
