@@ -5,6 +5,8 @@
 29-SEP-17:
 * "Master Levels for DOOM II" combined into a single page-set.
   You can now switch between levels much more easily
+* "misc" folder renamed to "people" and "olnoname" moved into
+  "people\Octavarium" accordingly
 
 28-SEP-17:
 + Pages now support alternate coloured themes
