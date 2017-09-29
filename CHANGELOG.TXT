@@ -2,6 +2,13 @@
 + = New feature / addition
 - = Removal
 
+29-SEP-17:
+* "Master Levels for DOOM II" combined into a single page-set.
+  You can now switch between levels much more easily
+
+28-SEP-17:
++ Pages now support alternate coloured themes
+
 26-SEP-17:
 + Added skill level names for Heretic & Strife in play.bat
   (support for shareware and Hexen to be added in the future)

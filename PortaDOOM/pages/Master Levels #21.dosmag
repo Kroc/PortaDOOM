@@ -1,10 +1,10 @@
 $NAV=Commercial DOOM
-$NAV=Master Levels for DOOM II
-$KEY:P=SHELL:play.bat /PWAD MASTER\BLACKTWR.WAD /LEVEL 25
-$KEY:T=SHELL:wads\MASTER\BLACKTWR.TXT
-$KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
+$TITLE=The Express Elevator to Hell
+$KEY:P=SHELL:play.bat /PWAD MASTER\TEETH.WAD /LEVEL 31
+$KEY:T=SHELL:wads\MASTER\TEETH.TXT
+$KEY:W=URL:https://doomwiki.org/wiki/MAP31:_The_Express_Elevator_to_Hell_(Master_Levels)
 
-:Black Tower                                      (Master Levels for DOOM II)
+:The Express Elevator to Hell                     (Master Levels for DOOM II)
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
@@ -13,9 +13,9 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 :Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
 
-! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "BLACKTWR.WAD":
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TEETH.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM II + Final DOOM"_ (GOG) or _"DOOM Classic Complete"_ (Steam) it will be detected automatically, otherwise place the file in the "files\wads\MASTER" folder. You can purchase the game from [G] GOG or [S] Steam. You will not be able to play without purchasing The Master Levels for DOOM II.
+! If you own _"DOOM II + Final DOOM"_ (*[G] GOG*) or _"DOOM Classic Complete"_ (*[S] Steam*) it will be detected automatically, otherwise place the file in the "files\wads\MASTER" folder.
 $KEY:G=URL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=URL:http://store.steampowered.com/sub/18397/
 
@@ -26,8 +26,8 @@ This and the other of my wads were to be released inside a 32-level "episode" on
 
 You once were the biggest and baddest Cyber-demon to rule hell and you spear-headed the council that governed the underworld; "the Cabal". Betrayed by the other members you find yourself not only dismantled, but also a victim of the utmost demonic humiliation: You've been morphed into a human! Of course you're out for revenge and have to kick the other members of the Cabal's butts one by one.
 
-In "Black Tower" you're nearing the end of your journey. You and Chagrin, the ruler of the Black Tower, came off the same conveyor belt as newly assembled cyber-demons a few thousand years back. "Oil runs thicker than blood" the two of you used to say. Demons don't come much closer to friendship than what you and Chagrin shared. Well now your buddy rules the hordes of hell previously under your command and have left you for dead. Your task is simple: Enter the dreaded Black Tower, the nucleus of black magic and the occult in all of Hell, get to its highest floor and slay Chagrin. Then there is the getting back out as well...
- 
+When the "Express Elevator to Hell" starts descending the renegade Cabal has begun to realize you might be a threat to them, human or not. Half way down the shaft that should have taken you to the deepest pits of Hell, the lift first slows down before it jerks to a halt. Ambush! Survive the initial onslaught and find a gateway out of the now sealed elevator. Tough, but that's the way you like it...
+
 :Construction
 :-------------------------------------------------------------------------------
 *Base				: An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:

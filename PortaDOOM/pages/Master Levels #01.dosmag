@@ -4,45 +4,45 @@ The Master Levels for Doom II were released on December 26, 1995 by id Software 
 
 (The order here is as used on the PSN release)
 
-$KEY:A=GOTO:Attack
+$KEY:A=PAGE:#02
 :[A] Attack ..................... _Tim Willits
-$KEY:B=GOTO:Canyon
+$KEY:B=PAGE:#03
 :[B] Canyon ..................... _Tim Willits
-$KEY:C=GOTO:The Catwalk
+$KEY:C=PAGE:#04
 :[C] The Catwalk ................ _Christen Klie
-$KEY:D=GOTO:The Combine
+$KEY:D=PAGE:#05
 :[D] The Combine ................ _Christen Klie
-$KEY:E=GOTO:The Fistula
+$KEY:E=PAGE:#06
 :[E] The Fistula ................ _Christen Klie
-$KEY:F=GOTO:The Garrison
+$KEY:F=PAGE:#07
 :[F] The Garrison ............... _Christen Klie
-$KEY:G=GOTO:Titan Manor
+$KEY:G=PAGE:#08
 :[G] Titan Manor ................ _Jim Flynn
-$KEY:H=GOTO:Paradox
+$KEY:H=PAGE:#09
 :[H] Paradox .................... _Tom Mustaine
-$KEY:I=GOTO:Subspace
+$KEY:I=PAGE:#10
 :[I] Subspace ................... _Christen Klie
-$KEY:J=GOTO:Subterra
+$KEY:J=PAGE:#11
 :[J] Subterra ................... _Christen Klie
-$KEY:K=GOTO:Trapped on Titan
+$KEY:K=PAGE:#12
 :[K] Trapped on Titan ........... _Jim Flynn
-$KEY:L=GOTO:Virgil's Lead
+$KEY:L=PAGE:#13
 :[L] Virgil's Lead .............. _John Anderson (Dr.Sleep)
-$KEY:M=GOTO:Minos' Judgement
+$KEY:M=PAGE:#14
 :[M] Minos' Judgement ........... _John Anderson (Dr.Sleep)
-$KEY:N=GOTO:Bloodsea Keep
+$KEY:N=PAGE:#15
 :[N] Bloodsea Keep .............. _Sverre André Kvernmo (Cranium)
-$KEY:O=GOTO:Mephisto's Maosoleum
+$KEY:O=PAGE:#16
 :[O] Mephisto's Maosoleum ....... _Sverre André Kvernmo (Cranium)
-$KEY:P=GOTO:Nessus
+$KEY:P=PAGE:#17
 :[P] Nessus ..................... _John Anderson (Dr.Sleep)
-$KEY:Q=GOTO:Geryon
+$KEY:Q=PAGE:#18
 :[Q] Geryon ..................... _John Anderson (Dr.Sleep)
-$KEY:R=GOTO:Vesperas
+$KEY:R=PAGE:#19
 :[R] Vesperas ................... _John Anderson (Dr.Sleep)
-$KEY:S=GOTO:Black Tower
+$KEY:S=PAGE:#20
 :[S] Black Tower ................ _Sverre André Kvernmo (Cranium)
-$KEY:T=GOTO:The Express Elevator to Hell
+$KEY:T=PAGE:#21
 :[T] The Express Elevator to Hell _Sverre André Kvernmo (Cranium)
 
-NOTE: The sharp-eyed of you will see that there are 20 levels listed here, not 21; there is a secret level, but I'm not going to tell you where it is, though it's not like it's 1994 and you can't just Google it.
+NOTE: The sharp-eyed of you will see that there are 20 levels listed here, not 21; there is a secret level, but I'm not going to tell you where it is, though it's not like it's 1995 and you can't just Google it.
