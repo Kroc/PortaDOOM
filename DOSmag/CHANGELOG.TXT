@@ -1,3 +1,9 @@
+30-SEP-17:
++ Linking between pages in the same set now more intelligently handles history.
+  Pressing BKSP will return to the original page number, but navigating left or
+  right to a different page will now forget the jump from a different page and
+  BKSP will now take you out of the page-set
+
 28-SEP-17:
 + Added themes! `$THEME=` & either "BLACK", "RED", "BLUE" or "GREY"
 
