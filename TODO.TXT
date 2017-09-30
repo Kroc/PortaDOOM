@@ -8,12 +8,6 @@ Pages:
 
 Scripts:
 ================================================================================
-[ ] Linking pages in a set adds a history step, but then paging clears it.
-	I.e. the ability to press a key to go to another page in a set and then
-	pressing either backspace to return to the page you were on, or pressing
-	left/right to go to another page, without the backspace snapping back to
-	the old page number. Example in 5 Years of Doom: John Romero
-
 [ ] Mods
 	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
         selected; e.g. "strangeaeonsexp+HighNoonDrifter"

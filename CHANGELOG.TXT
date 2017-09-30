@@ -7,6 +7,10 @@
 + Expanded "5 Years of Doom" section; still incomplete
 + Added Tim Willits' "The Complete Raven Series" WAD page
 + Added Maclom Sailor's "NoSun Series" & "Chord Series" WAD pages
++ Linking between pages in the same set now more intelligently handles history.
+  Pressing BKSP will return to the original page number, but navigating left or
+  right to a different page will now forget the jump from a different page and
+  BKSP will now take you out of the page-set
 
 29-SEP-17:
 * "Master Levels for DOOM II" combined into a single page-set.
