@@ -1,0 +1,78 @@
+================================================================
+Title                   : CHORD3.WAD  
+Author                  : Malcolm Sailor
+Email Address           : msailor@home.com
+Misc. Author Info       : Previous levels have earned me acclaim.
+                          9th on the Doomworld top ten of level editing.
+                          Many many other levels out, the only good ones are
+                          the other levels in this series (chord1, chord2,
+                          chord_ng and chordg... if anyone's wondering where
+                          the chord name came from... so am I!)
+
+                          This will almost definitely be my last map ever.
+                          Please drop me a line with your opinions of this or
+                          any of my other maps before I drop out of the doom
+                          community forever. (Though has anyone noticed, the
+                          chord series now extends from map25 to map 29...
+                          all thats left is the finale!)
+            			
+Description             : MAP27
+                          It took way too long to make. Detailed, dificult,
+                          you know the drill... just download it and play it,
+                          trust me.
+                          It requires a source port (any source port that
+                          removes VPO and HOM, ie. almost any source
+                          port) to run, though jumping etc. is cheating.
+
+MEANT TO BE PLAYED SEPERATELY FROM ITS PREQUELS/SEQUELS!
+
+Additional Credits to   : All the usual suspects plus:
+                          Matt Dixon and Martin Friberg for testing/input
+                          throughout the maps development.
+                          Myk Helnyte and Anthony soto for additional
+                          playtesting.
+			  Eric james roberts for offering to feature it on his
+			  page.
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : MAP27
+Single Player           : Yes, built for it. 
+Cooperative 2-4 Player  : sure, but not tested.
+Deathmatch 2-4 Player   : Special deathmatch arena included! Try it out with
+                          all your friends!!! I'm looking for someone to run
+                          a csdoom server of this.
+Difficulty Settings     : Yes. UV is _not_ for the average player.
+                          I make my levels as hard as I personally enjoy
+                          playing them, but I spend just as much time tweaking
+                          the easier skill levels so lesser players can still
+                          enjoy. If skill 4 is too hard for you, its very
+                          easy to switch to an easier skill level. (Do you
+                          detect a hint of annoyment in my voice???)
+New Sounds              : No
+New Graphics            : No
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : From scratch.
+Build Time              : A long, long time.
+Editor(s) used          : Dck 3.62 By Ben Morris
+Nodebuilders            : Bsp 5.0 By Lee Killough and Colin Phipps
+                          RMB 2.1 By Jens Hykkelbjerg
+Known Bugs              : There are a few occasional errors in monster
+                          behaviour, but these are bugs in the source ports
+                          and not in my level. It took me a lot of effort and
+                          annoyance to finally figure that out. (Ie. Cacos
+                          getting stuck on top of each other and monsters
+                          falling off tall ledges, hopefully someday this
+                          stuff will get fixed!)
+
+
+* Copyright / Permissions *
+
+This level can be distributed freely, so long as this text file accompanies
+it and it is not for profit. Feel free to modify this map, but email me about
+it and give me credit in the relevant text file.

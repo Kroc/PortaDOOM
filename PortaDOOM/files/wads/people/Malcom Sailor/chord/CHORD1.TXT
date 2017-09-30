@@ -1,0 +1,156 @@
+================================================================
+Title                   : CHORD1.WAD  
+Author                  : Malcolm Sailor
+Email Address           : sailorm@muhammad.usask.ca (Nothing to do with
+				sailor moon)
+Misc. Author Info       : Member of the Black Star Coven. We Design
+			  Good Levels...
+			  We also like to play good levels, so if your stuff
+			  is good, mail me... 
+			  If you think your stuff is good enough, mail John
+			  Bye at jb54@le.ac.uk. You may get accepted for
+			  membership. Note: we need QuakeC and Texture Artists
+
+			  I would greatly appreciate feedback on:
+			  ammo/health: there's more than I need but I know
+			  where everything is.
+			  difficulty: too easy/hard
+			  how much you loved it/hated it.
+			  SO SEND ME MAIL
+
+			  I used to put a long list of all the wads I ever made
+			  Including a description, but that got awfully long so
+			  I'm just going to describe my newer (and better)
+			  ones.
+			  Bad Stuff (by my standards, these are still better than 
+			  alot):
+			  darker.zip
+			  3_pack1.zip(Contains three levels, obviously).
+			  ds-61-3.zip(Contains seven levels.) 
+			  Skull.zip
+			  Good stuff:
+			  quikisgd.zip and quikisg2.zip; Short kick ass wads.
+			  Nosun*.zip; Some of my best ever. Two long, one mid,
+			  and one short -length levels out so far. Get 'em now!
+			  Shrthard.zip; should be out by now; short real hard 
+			  kick ass wads.
+			  >dk.zip: dk.wad, a high quality fortress level<
+			  !This last zip was postponed. I get an error about
+			  an unknown thing class before the level starts.
+			  According to Dck, there are no unknown things.
+			  If anyone knows how to solve this problem, Help
+			  is _Much_ appreciated.
+			  
+			  Soon to come:
+			  Work in The Black Star Covens The Talosian Incident
+			  Web Page: Http://www.geocities.com/timesquare/8666/bscoven.html
+			  (Doubtful) Other Nosuns
+			  Sequel to this.
+			  Probably some other stuff.
+
+					THE BEST WADS:
+					Darkcvnt.wad. By keith phipps (I think thats his name)
+					Cabal*.wad By Sverre Kvernmo
+
+
+Description             : MAP25
+			  Hooee is this one hard. Start out in a room with                          
+			  yer pistol and a berserk up against two revenants...
+			  and thats just the beginning<G>
+
+			  I would _not_ recommend UV for the "average player"
+			  UV is for very good players, much harder than doom2.
+			  (For one thing there aren't unnecessary invulnerabilitys
+			  everywhere...)
+
+			  Okay, so you want to know what this one looks like.
+			  I guess it could be a satanic mansion of some sort,
+			  I dunno, but it uses the Pan* textures a lot and
+			  has wicked lighting (at least according to testers)
+
+Additional Credits to   : Patrick Martin for testing and constructive criticism.
+			  Check out his "Blakgate.wad"
+			  It kicks ass.
+
+			  Ben Morris for dck3.61
+			  It kicks ass! I designed two maps in one week that
+			  together total over 500 sectors, all thanks to his
+			  editor.
+
+			  All the good wads I ever played for giving me inspiration.
+			  (Especially those mentioned above.)
+
+			  John Bye for boosting my ego a little and letting
+			  me into the Black Star Coven. Check out the
+			  homepage at the top (or close). Mail john and become
+			  a beta tester and you get to play a bunch of mine and
+			  Many other Top-Quality wad designers before anyone else.
+			  Also, play johns cygnusiv.zip.
+			  He's at jb54@le.ac.uk
+
+			  Sverre Andre Kvernmo for designing the best levels
+			  ever (cabal and others, some in the master levels).
+			  He's also a pretty cool guy.
+			  "Eternal Doom II just ain't the same without him."
+			  Be sure to mail him (if you play his levels) and tell him
+			  how good a level designer he is.
+
+			  My dad for fixing (and breaking) the computer.
+			  And testing my levels on skill 3.
+
+			  Whoever made Zennode.
+
+			  And a big Thank-You-Very-Fucking-Much to anyone who
+			  emailed me and told me my wads kick ass (actually,
+			  no ones ever mailed me to tell me other wise, so
+			  play this wad and agree and mail me.)
+			  It pisses me off to see all those mid-quality wads
+			  (which will remain nameless, except for Raven.wad.
+			  Dumb Fucker's now at Id, and his stuff is _UGH_).
+			  get so much attention cause of their distribution.
+			  Me and a million others, such as Patrick Martin or
+			  Michael Krause or others (These guys get mentioned
+			  cause they're cool) are much better level designers...
+			  Oh well..,
+
+			  Also thanks to those who tested this wad... I definitely
+			  got some good criticism that made this wad better.
+
+PS: IF YOU STILL USE THE KEYBOARD; MAKE THE SWITCH (I RECENTLY DID).
+YOU'LL KICK ASS TWICE AS MUCH AS BEFORE!
+(This is non-critical of you keyboarders, though... I always hated cocky
+mousers when I was a keyboarder...)
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : Map25
+Single Player           : Yes, built for it. No FUCKING (there did I piss
+			  off you yuppies yet) multiplayer switches.
+Cooperative 2-4 Player  : Yes-Extra Monsters-not tested though. Skill 4 recommended
+Deathmatch 2-4 Player   : Yes... should work. Try and stay out of the keyed areas
+			  and should be fine (there are no weapons there anyway)
+			  Play skill 2 for this.
+Difficulty Settings     : Yes. UV is _not_ for the average player.
+			  Skill 3 is meant to equal doom2 on UV, and skill 2
+			  is doom2 on HMP.
+New Sounds              : No
+New Graphics            : No.
+Demos Replaced          : None
+
+
+* Construction *
+
+Base                    : An alienated and psychopathic weirdo.
+Build Time              : Over three days or so. 
+Editor(s) used          : Dck 3.61, by far the very best editor. Try it, it 
+			  kicks deu's (and all the others) ass. Read the docs.  
+Known Bugs              : Possibly, if you find any, email me, please!
+
+
+* Copyright / Permissions *
+
+IM AN ANARCHIST! YOU CAN DO WHATEVER THE FUCK YOU WANT WITH THIS WAD
+BUT ONLY SO LONG AS YOU GIVE ME CREDIT FOR WHAT IVE DONE!!!
+(Mail me too, please!)

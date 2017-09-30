@@ -8,14 +8,29 @@ Pages:
 
 Scripts:
 ================================================================================
+[ ] Linking pages in a set adds a history step, but then paging clears it.
+	I.e. the ability to press a key to go to another page in a set and then
+	pressing either backspace to return to the page you were on, or pressing
+	left/right to go to another page, without the backspace snapping back to
+	the old page number. Example in 5 Years of Doom: John Romero
+
+[ ] Mods
+	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
+        selected; e.g. "strangeaeonsexp+HighNoonDrifter"
+		
+[ ] DOSmag: Themes
+    [ ] Fix "?" invalid character
+	[ ] Convert the statusbar/dialogue to a theme set
+	[ ] Allow printing of text in any theme
+	    (i.e. to allow printing of formatted text in statusbar/dialog)
+	[ ] Add shadow to dialog box
+	
 [ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
-[ ] dosmag : Themes
 [ ] Consider right alignment from middle of line (rulers?)
 [ ] N64 DOOM64.WAD detection / warning
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?
-[ ] dosmag : shadow behind dialog box
 
 WADs:
 ================================================================================

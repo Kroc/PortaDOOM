@@ -1,0 +1,223 @@
+================================================================
+Title                   : nosun.WAD  
+Author                  : Malcolm Sailor
+Email Address           : sailorm@muhammad.usask.ca
+Misc. Author Info       : From E-mail messages about 3_pack1.zip
+			  Thanks. I needed that. 
+			  -richard@radar.demon. something.
+			  I have one thing to say: cooool. 
+			  -Rob doell (doell@sklib.usask.sk.ca
+
+			  I would greatly appreciate feedback on:
+			  ammo/health: there's more than I need but I know
+			  where everything is.
+			  difficulty: too easy/hard
+			  how much you loved it/hated it.
+
+			  .zips I have made:
+			  darker.zip: contains darker.wad, my first level
+			  3_pack1.zip: contains ruler.wad, omelet.wad
+			  and tekrkbrn.wad, better than most stuff
+			  out there but nothing special
+			  ds-61-2.zip: contains seven high-quality maps
+			  alapolgy.wad: two very short levels
+			  fromdrem.wad: a very short level from a dream
+			  lab.wad: a high-tech lab
+			  boom.wad: a ghost-town. The first room is
+			  practically copied right out of dante's gate.
+			  It's good though.
+			  wasteme.wad: an untested (at point of release)
+			  wad. I left out the exit switch (blush).
+			  sinferno.wad: a okay hell wad.
+			  quikisgd.zip: one of my more recent releases.
+			  Short, high quality, and action packed.
+		-...good, high quality level. Reminds me of e4m1
+		-cmarti39@icon.net
+
+			  Soon to come:
+			  Skull.zip: skull.wad for doom 1
+			  DS-61-3.zip: update of ds-61-2.zip
+			  nosun2.zip: second of this series: the space ship at
+			  the end (oh, so that's what it was)
+			  
+
+			  My fav. wads: Raven.wad (you know it)
+					Mtfactor.wad. It's incredible!
+					get it now!
+					Darkcvnt.wad. The best!
+
+Description             : This is the first of a series of .wads I am making.
+			  I'm going to divide this into two parts:
+
+Story                   : 2090: some research station orbiting earth.
+			  "Um, professer," says a slave.
+			  "What," snarls a half-man half-ape that couldn't
+			  have passed grade school.
+			  "The heat on earth is gradually decreasing. Less
+			  light is coming this way each day. It appears
+			  the sun is going out."
+			  "That's impossible!" The professer kicks the slave.
+			  "Look for yourself!" Says the slave a little to
+			  quickly.
+			  "You know I can't read!" The slave recieves another
+			  kick.
+			  Another slave somewhere down the corridor rolls
+			  his eyes. The professer may have noticed yet is
+			  already shouting into his comlink to get someone
+			  "reputable" who _can_ read.
+
+			  The nextday, same place.
+			  "Welcome, Doctor appleberry." Says the apeman.
+			  What a stupid name, thinks the slave, whose name
+			  was recently changed to "shithead" by the professer.
+			  "Read this," says shithead.
+			  "Yes, he's right."
+
+			  Several weeks later, you, a prisoner of war, get 
+			  called in your cell somewhere in one of the less 
+			  habitible places on earth. (Pollution has destroyed
+			  nearly half the landcovered portion of the world,
+			  with North America a cesspool of burning waste. The
+			  ozone layer is so thin, 3 weeks of exposure
+			  throughout your life would kill you.)
+			  "You're going on a mission, you worthless piece of
+			  shit. You better not fail me this time. Three strikes
+			  and you're out."
+			  You remember failing your first two impossible
+			  missions and barely escaping with your life.
+			  "Go to room 3a960236548079b.5 for briefing at 3:00"
+			  (97% of earths population is now in prison.)
+
+			  At 3:00 you wander down the long hall way towards
+			  the room . "3a960236548079b.44, .46, .48, here we
+			  are." You say to yourself. One stray step and you
+			  would be toast: the walls are adorned with automatic
+			  plasma cannons and other weapons trained on your
+			  every move. You sigh and enter the room.
+			  "Hello, sit down."
+			  "Enough pleasantries. What mission have you got to
+			  kill me off this time?"
+			  "A mission to the sun. A few weeks ago we found out
+			  that the sun is giving off less and less heat so
+			  through the wonders of modern technology we sent
+			  some spies in" says the hitler lookalike. "They
+			  found some sort of alien space station that was
+			  somehow poisoning our sun. Once it burns out they
+			  know there will be no resistence from us, and they
+			  can take our solar systems resources for free."
+			  "Wait a minute," you say. "I know we can get to the
+			  sun, and build materials strong enough to resist 
+			  its heat, but its gravity's too strong. How did
+			  you get this information. You can't even transmit
+			  off it, let alone fly a ship off."
+			  "Yes, but the aliens have much more advanced tech-
+			  nology than us. They snuck on a saucer headed away
+			  from us, and transmitted something off the ship.
+			  Yet the aliens found them immediately thereafter
+			  and, we believe, killed them.
+			  "Your ship will be on automatic pilot until you are
+			  too close to get away from the sun. There you will 
+			  get on a saucer headed for their home planet. Then 
+			  you will destroy their society from the inside out."
+			  "WHAT! YOU'RE CRAZY!" you shout.
+			  "We can kill you right here if you'd prefer."
+
+		       
+Layout                  : Large level. You start in some smaller hallways of
+			  the space station, find the blue and red keys and
+			  then jump out into a huge hallway where an old
+			  service train used to run. you follow its path over
+			  to some computer terminals. Then out to the surface
+			  of the sun (YES, I know it wouldn't have walls but
+			  how else was I supposed to do it.)
+	 |                You get the yellow key and back to the beginning
+   |\    |    /           where you exit the space station and into a docking
+   |  \  |  /             bay where you get on a ship.
+   |    \|/               I made special effort to make this a level with a
+   |    /|\               view. By that I mean not only great textures where
+   |  /  |  \             you are but also views into cool rooms that you can't
+   |/    |    \           get to (in most cases).
+	 |                There are four secrets: two are hidden doors and two
+			  must be run to (over ledges etc.) One is only visible
+			  on the map (not marked), one contains an automap.
+			  And oh, yes, those marbfac4 posts at the beginning
+			  (for those of you who aren't level designers, the 
+			  faces with horns on them) are switches.
+			  Anywhere outside hurts, whether you're in lava or
+			  not. Get a suit or an invulnerability before you go
+			  outside.
+
+Additional Credits to   : Canada, Myself, iD, and the makers of dck. Without
+			  it, I would still be trying to close a sector in 
+			  deu.
+================================================================
+
+* Play Information *
+
+Episode and Level #     : Map01
+Single Player           : Yes, built for it. No FUCKING (there did I piss
+			  off you yuppies yet) multiplayer switches.
+Cooperative 2-4 Player  : Yes, Extra Monsters-not tested though
+Deathmatch 2-4 Player   : Yes, Extra Weapons, Closed off to a certain portion
+			  of the map -not tested though
+Difficulty Settings     : Yes. Play it in UV for the full experience.
+New Sounds              : No
+New Graphics            : No. Just imagine the sky is whatever it would look
+			  like on the sun. Or if you have dante's gate and
+			  dck you can add dante's gate to your list of 
+			  textures and then play and it will have a starry
+			  sky which looks a lot better.
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : I would guess 10 hours. I have noticed that a lot of 
+			  people design levels in forty hours that I design in
+			  ten and there is a reason: choice of level editor.
+			  Dck works with speed yet hides nothing from you.
+			  You mat have noticed that this is a ridiculous
+			  time for this size of level but it went by _very_
+			  fast
+Editor(s) used          : Dck 3.4, by far the very best editor. Try it, it 
+			  kicks deus (and all the others) ass. Read the docs.  
+Known Bugs              : nah!
+
+Body count:
+		| f | f | i | h | a | m | a | s | c | c | r | h | b |
+		| h | h | m |   | r | a | r | p | a | b | e | w | a |
+		| t | s | p | k | c | n | a | e | c | r | v | d | r |
+		-----------------------------------------------------
+		|11 |14 |27 |16 | 3 | 1 | 7 |11 | 3 | 3 | 5 |11 | 7 |
+This mightt change: the level isn't _completely_ through playtesting as I type
+fht and fhs: former human trooper and sergeant.
+imp: obvious enough.
+h k: hell knight
+arc: arch-vile
+man: mancubus
+ara: arachnotrons
+spe: spectre
+cac: cacodemon
+cbr: cyber demon (don't worry about it, it's easy enough)
+rev: revenants
+bar: barons of hell
+hwd: heavy weapons dude
+These are for ultra violence
+
+In the map there are:
+524 sectors
+400 things
+2002 vertices
+2492 linedefs
+3786 sidedefs
+
+
+* Copyright / Permissions *
+
+Authors MAY use this level as a base to build additional
+levels.  But if you do give me credit.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.

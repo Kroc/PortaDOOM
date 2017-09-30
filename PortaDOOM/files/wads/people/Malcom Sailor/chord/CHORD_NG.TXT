@@ -1,0 +1,95 @@
+================================================================
+Title                   : CHORD_NG.WAD  
+Author                  : Malcolm Sailor
+Email Address           : sailorm@cs.usask.ca (Nothing to do with
+				sailor moon)
+Misc. Author Info       : Currently tied for Third on the Ultimate Wad Page:
+			  http://www.geocities.com/TimeSquare/8666/top32.html
+
+			  Over 30 levels released, plus 11 megs of unfinished
+			  ones on hard drive.
+
+			  Levels by me: (ones marked with a * not worth
+			  checking out)
+			  darker*       3_pack1* (zip w/ 3) ds-61-3* (zip /w 7)
+			  quikisgd      qukisg2         nosun
+			  nosun2        nosun3          nosun4
+			  nosun5        9 levels in the Talosian Incident
+			  chord1/2      shrthard (zip w/ 3)
+
+			  Quake levels:
+			  Hayduke1
+			  
+			  Soon to come:
+				Some stuff in Gothic2
+			  For Quake:
+				More Hayduke's
+				A dm level pack with Matt, hopefully.
+
+Description             : MAP28
+			  A level with (as always) vicious gameplay. SInce
+			  I've been doing a lot of Quake lately I tried to
+			  add in a lot of cool architecture on the roof and
+			  stuff... nothing compared to my Quake levels but
+			  relative to the average doom level the architecture
+			  is pretty good. I like the look: metal2/brown96
+			  /teklite texturing scheme, a large tower/building
+			  which somehow survived the apocalypse.
+
+			  I would _not_ recommend UV for the "average player"
+			  UV is for very good players, much harder than doom2.
+			  (For one thing there aren't unnecessary
+			  invulnerabilitys everywhere...)
+
+			  Has very cool lighting/architecture and a ton of 
+			  monsters...
+			  Enjoy!
+
+BEST WHEN PLAYED SEPERATELY FROM ITS PREQUEL(s)!
+
+Additional Credits to   : Ben Morris for dck
+			  All the good authors for giving me
+			  inspiration. Too list a few:
+			  Sverre Kvernmo Iikka Keranan Ola Bjorling
+			  Dr Sleep Myscha Patrick Martin Adelusion
+			  Dennis Moeller Matt Dixon American Mcgee...
+			  Whoever made Zennode.
+			  Also thanks to those who tested this wad... 
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : MAP28
+Single Player           : Yes, built for it. 
+Cooperative 2-4 Player  : sure, but not tested.
+Deathmatch 2-4 Player   : No... 
+			  If you wanna have a bitchin DM check out +Gothic+
+			  Dm, and when it comes out, its sequel.
+Difficulty Settings     : Yes. UV is _not_ for the average player.
+			  Skill 3 is meant to equal doom2 on UV, and skill 2
+			  is doom2 on HMP.
+New Sounds              : No
+New Graphics            : No.
+Demos Replaced          : None
+			  Me and some friends may record Demoes, as we did
+			  for chord1.
+
+
+* Construction *
+
+Base                    : An alienated and psychopathic weirdo.
+Build Time              : A week, prolly 10-20 hours, I was working on other
+                          stuff. I'm getting pretty fast. Always have been,
+                          actually.
+Editor(s) used          : Dck 3.62, by far the very best editor. Try it, it 
+			  kicks deu's (and all the others) ass. Read the docs.  
+Nodebuilders            : Zennode 0.92, BSP 2.2
+Known Bugs              : Possibly, if you find any, email me, please!
+
+
+* Copyright / Permissions *
+
+IM AN ANARCHIST! YOU CAN DO WHATEVER THE FUCK YOU WANT WITH THIS WAD
+BUT ONLY SO LONG AS ITS NON PROFIT!!!
+(Mail me too, please!)

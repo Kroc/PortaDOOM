@@ -1,0 +1,48 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=NOSUN2
+$KEY:P=SHELL:wads\people\Malcom Sailor\nosun\play - nosun2.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\nosun\NOSUN2.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/m-o/nosun2
+
+:NOSUN2.WAD                                               * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>04>25	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+This is the second of a series of .wads I am making.
+I'm going to divide this into two parts:
+
+*Story:
+The Spaceship to the alien planet...
+
+*Layout:
+Small level...
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New level from scratch
+*Build Time				: Who knows? Its taken me months to actually finish testing it, but it didn't take all that long to build.
+*Editor(s) used			: Dck 3.61, by far the very best editor. Try it, it kicks deus (and all the others) ass. Read the docs.
+*Known Bugs				: Possibly, if you find any, email me, please!
+
+:Credits
+:-------------------------------------------------------------------------------
+_Patrick Martin_ for testing and constructive criticism.
+Check out his "Blakgate.wad"
+It kicks ass.
+
+_Ben Morris_ for dck3.61
+It kicks ass! I designed two maps this week that together total over 500 sectors, all thanks to his editor.
+
+All the good wads I ever played for giving me inspiration.
+
+_John Bye_ for boosting my ego a little and letting me into the Black Star Coven.
+
+_Sverre Andre Kvernmo_ for designing the best levels ever (cabal and others, some in the master levels).
+
+Whoever made Zennode.

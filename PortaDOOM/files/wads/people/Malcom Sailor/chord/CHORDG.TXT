@@ -1,0 +1,88 @@
+================================================================
+Title                   : CHORDG.WAD  
+Author                  : Malcolm Sailor
+Email Address           : sailorm@shaw.wave.ca (Nothing to do with
+				sailor moon <shudder>)
+Misc. Author Info       : Currently tied for fourth on the Ultimate Wad Page:
+			  http://www.geocities.com/TimeSquare/8666/top32.html
+
+			  Level reviewer at the Doomster:
+			  http://www.doomshack.com/doomster/
+
+			  Over 30 levels released, plus 11 megs of unfinished
+			  ones on hard drive.
+
+			  Levels by me: (ones marked with a * not worth
+			  checking out)
+			  darker*       3_pack1* (zip w/ 3) ds-61-3* (zip /w 7)
+			  quikisgd      quikisg2        nosun
+			  nosun2        nosun3          nosun4
+			  nosun5        9 levels in the Talosian Incident
+			  chord1/2/ng   shrthard (zip w/ 3)
+			  Gothic +DM+ 2 (5 levels, one more coauthored with 2
+			  others)
+
+			  Quake levels:
+			  Hayduke1
+			
+Description             : MAP29
+			  Dark underground marble/rock thing covered in vines
+			  with detailed lighting, balanced and ridiculously
+			  dificult gameplay (most people will want to play on
+			  skill 3). One of my best maps, I'd have to say. You
+			  can judge for yourself.
+
+			  There is a miniscule HOM by the yellow key... if
+			  anyone knows what causes it, mail me.
+
+			  I'd really appreciate any feedback. Please!
+							     
+BEST WHEN PLAYED SEPERATELY FROM ITS PREQUEL(s)!
+
+Additional Credits to   : Ben Morris for dck
+			  Matt Dixon for testing/input throughout the maps
+			  development.
+			  Patrick Martin and Cocoon for playtesting.
+			  Eric james roberts for offering to feature it on his
+			  page.
+			  All the good authors for giving me
+			  inspiration. 
+			  Whoever made Zennode and whoever made RMB.
+			  Lee Killough for BSP.
+			  Also thanks to those who tested this wad. 
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : MAP29
+Single Player           : Yes, built for it. 
+Cooperative 2-4 Player  : sure, but not tested.
+Deathmatch 2-4 Player   : No... 
+			  If you wanna have an awesome DM check out +Gothic+
+			  Dm (2) ...
+Difficulty Settings     : Yes. UV is _not_ for the average player. If you play
+			  this skill, expect to get your ass whupped. It is
+			  meant to be an extreme challenge. Most people will
+			  probably want to play Skill 3 which is meant to
+			  equal doom2 on UV, and skill 2
+			  is doom2 on HMP.
+New Sounds              : No
+New Graphics            : No.
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : An alienated and psychopathic weirdo.
+Build Time              : No idea whatsoever.
+Editor(s) used          : Dck 3.62, by far the very best editor. Try it, it 
+			  kicks deu's (and all the others) ass. Read the docs.  
+Nodebuilders            : Zennode 0.92, BSP 2.2
+Known Bugs              : Possibly, if you find any, email me, please!
+
+
+* Copyright / Permissions *
+
+IM AN ANARCHIST! YOU CAN DO WHATEVER THE FUCK YOU WANT WITH THIS WAD
+BUT ONLY SO LONG AS ITS NON PROFIT!!!
+(Mail me too, please!)

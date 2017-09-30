@@ -1,0 +1,40 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=CHORDG
+$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chordg.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORDG.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/chordg
+
+:CHORDG.WAD                                               * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1999>04>03	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Dark underground marble/rock thing covered in vines with detailed lighting, balanced and ridiculously dificult gameplay (most people will want to play on skill 3). One of my best maps, I'd have to say. You can judge for yourself.
+
+There is a miniscule HOM by the yellow key... if anyone knows what causes it, mail me.
+
+I'd really appreciate any feedback. Please!
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: An alienated and psychopathic weirdo.
+*Build Time				: No idea whatsoever.
+*Editor(s) used			: Dck 3.62, by far the very best editor. Try it, it kicks deu's (and all the others) ass. Read the docs.
+*Nodebuilders			: Zennode 0.92, BSP 2.2
+*Known Bugs				: Possibly, if you find any, email me, please!
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Ben Morris_ for dck
+- _Matt Dixon_ for testing/input throughout the maps development.
+- _Patrick Martin_ and _Cocoon_ for playtesting.
+- _Eric james roberts_ for offering to feature it on his page.
+- All the good authors for giving me inspiration. 
+- Whoever made Zennode and whoever made RMB.
+- _Lee Killough_ for BSP.
+- Also thanks to those who tested this wad. 

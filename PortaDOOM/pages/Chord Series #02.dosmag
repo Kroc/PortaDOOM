@@ -1,0 +1,43 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=CHORD2
+$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chord2.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD2.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/chord2
+
+:CHORD2.WAD                                               * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>09>27	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Large quasi-castle, very detailed, definitely one of my better levels, (Ola would disagree:() I spent ages on this one. It is longer than I would've liked though:(
+
+I would __not__ recommend UV for the "average player"
+UV is for very good players, much harder than doom2.
+(For one thing there aren't unnecessary invulnerabilitys everywhere...)
+
+Has very cool lighting and a ton of monsters...
+Enjoy!
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: An alienated and psychopathic weirdo.
+*Build Time				: Months of "hard" work... I didn't spend very much time on it though... Prolly altogether 40-60 hours...
+*Editor(s) used			: Dck 3.61, by far the very best editor. Try it, it kicks deu's (and all the others) ass. Read the docs.
+*Known Bugs				: Possibly, if you find any, email me, please!
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Ben Morris_ for dck
+
+All the good authors for giving me inspiration.
+To list a few:
+
+- _Sverre Kvernmo_, _Iikka Keranan_, _Ola Bjorling_, _Dr Sleep_, _Myscha_, _Patrick Martin_, _Adelusion_, _Dennis Moeller_, _Matt Dixon_, _American Mcgee_...
+- Whoever made Zennode.
+
+Also thanks to those who tested this wad... I definitely got some good criticism that made this wad better. (especially _Matt Dixon_)

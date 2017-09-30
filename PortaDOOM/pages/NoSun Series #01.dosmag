@@ -1,0 +1,104 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=NOSUN
+$KEY:P=SHELL:wads\people\Malcom Sailor\nosun\play - nosun.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\nosun\NOSUNUP.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/m-o/nosun
+$KEY:R=GOTO:The Complete Raven Series
+
+:NOSUN.WAD                                                * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>04>25	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+This is the first of a series of .wads I am making.
+I'm going to divide this into two parts:
+
+*Story:
+
+- 2090: some research station orbiting earth.
+- "Um, professer," says a slave.
+- "What," snarls a half-man half-ape that couldn't have passed grade school.
+- "The heat on earth is gradually decreasing. Less light is coming this way each day. It appears the sun is going out."
+- "That's impossible!" The professer kicks the slave.
+- "Look for yourself!" Says the slave a little too quickly.
+- "You know I can't read!" The slave recieves another kick.
+- Another slave somewhere down the corridor rolls his eyes. The professer may have noticed yet is already shouting into his comlink to get someone "reputable" who __can__ read.
+
+- The nextday, same place.
+- "Welcome, Doctor appleberry." Says the apeman.
+- What a stupid name, thinks the slave, whose name was recently changed to "shithead" by the professer.
+- "Read this," says shithead.
+- "Yes, he's right."
+
+- Several weeks later, you, a prisoner of war, get called in your cell somewhere in one of the less habitible places on earth. (Pollution has destroyed nearly half the landcovered portion of the world, with North America a cesspool of burning waste. The ozone layer is so thin, 3 weeks of exposure throughout your life would kill you.)
+- "You're going on a mission, you worthless piece of shit. You better not fail me this time. Three strikes and you're out."
+- You remember failing your first two impossible missions and barely escaping with your life.
+- "Go to room 3a960236548079b.5 for briefing at 3:00"
+- (97% of earths population is now in prison.)
+
+- At 3:00 you wander down the long hall way towards the room . "3a960236548079b.44, .46, .48, here we are." You say to yourself. One stray step and you would be toast: the walls are adorned with automatic plasma cannons and other weapons trained on your every move. You sigh and enter the room.
+- "Hello, sit down."
+- "Enough pleasantries. What mission have you got to kill me off this time?"
+- "A mission to the sun. A few weeks ago we found out that the sun is giving off less and less heat so through the wonders of modern technology we sent some spies in" says the hitler lookalike. "They found some sort of alien space station that was somehow poisoning our sun. Once it burns out they know there will be no resistence from us, and they can take our solar systems resources for free."
+- "Wait a minute," you say. "I know we can get to the sun, and build materials strong enough to resist its heat, but its gravity's too strong. How did you get this information. You can't even transmit off it, let alone fly a ship off."
+- "Yes, but the aliens have much more advanced technology than us. They snuck on a saucer headed away from us, and transmitted something off the ship.
+- Yet the aliens found them immediately thereafter and, we believe, killed them.
+- "Your ship will be on automatic pilot until you are too close to get away from the sun. There you will get on a saucer headed for their home planet. Then you will destroy their society from the inside out."
+- "WHAT! YOU'RE CRAZY!" you shout.
+- "We can kill you right here if you'd prefer."
+
+*Layout:
+
+Large level. You start in some smaller hallways of the space station, find the blue and red keys and then jump out into a huge hallway where an old service train used to run. you follow its path over to some computer terminals. Then out to the surface of the sun (YES, I know it wouldn't have walls but how else was I supposed to do it.)
+
+You get the yellow key and back to the beginning where you exit the space station and into a docking bay where you get on a ship.
+
+I made special effort to make this a level with a view. By that I mean not only great textures where you are but also views into cool rooms that you can't get to (in most cases).
+There are four secrets: two are hidden doors and two must be run to (over ledges etc.) One is only visible on the map (not marked), one contains an automap. And oh, yes, those marbfac4 posts at the beginning (for those of you who aren't level designers, the faces with horns on them) are switches.
+Anywhere outside hurts, whether you're in lava or not. Get a suit or an invulnerability before you go outside.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: An alienated and psychopathic weirdo.
+*Build Time				: Over the past week. 
+*Editor(s) used			: Dck 3.61, by far the very best editor. Try it, it kicks deu's (and all the others) ass. Read the docs.  
+*Known Bugs				: Possibly, if you find any, email me, please!
+
+:Credits
+:-------------------------------------------------------------------------------
+_Patrick Martin_ for testing and constructive criticism.
+Check out his "Blakgate.wad" It kicks ass.
+
+_Ben Morris_ for dck3.61
+It kicks ass! I designed two maps in one week that together total over 500 sectors, all thanks to his editor.
+
+All the good wads I ever played for giving me inspiration.
+
+_John Bye_ for boosting my ego a little and letting me into the Black Star Coven. Check out the homepage at the top (or close). Mail john and become a beta tester and you get to play a bunch of mine and Many other Top-Quality wad designers before anyone else.
+Also, play _john_'s cygnusiv.zip.
+He's at jb54@le.ac.uk
+
+_Sverre Andre Kvernmo_ for designing the best levels ever (cabal and others, some in the master levels).
+He's also a pretty cool guy.
+"Eternal Doom II just ain't the same without him."
+Be sure to mail him (if you play his levels) and tell him how good a level designer he is.
+
+My dad for fixing (and breaking) the computer.
+And testing my levels on skill 3.
+
+Whoever made Zennode.
+
+And a big Thank-You-Very-Fucking-Much to anyone who emailed me and told me my wads kick ass (actually, no ones ever mailed me to tell me other wise, so play this wad and agree and mail me.)
+
+It pisses me off to see all those mid-quality wads (which will remain nameless, except for *[R] Raven.wad*. Dumb Fucker's now at Id, and his stuff is __UGH__). get so much attention cause of their distribution.
+
+Me and a million others, such as _Patrick Martin_ or _Michael Krause_ or others (These guys get mentioned cause they're cool) are much better level designers...
+Oh well..,
+
+PS: IF YOU STILL USE THE KEYBOARD; MAKE THE SWITCH (I RECENTLY DID).
+YOU'LL KICK ASS TWICE AS MUCH AS BEFORE!

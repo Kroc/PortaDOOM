@@ -103,6 +103,21 @@ IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
 PUSHD PortaDOOM
 
+ECHO * Make PortaDOOM_5YearsOfDoom ...
+REM --------------------------------------------------------------------------------------------------------------------
+REM # swap over the homepages
+REN "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 5 Years of Doom.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards5years.lst -- ..\build\PortaDOOM_5YearsOfDoom.7z
+
+REM # restore the original home page
+ERASE "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
 ECHO * Make PortaDOOM_Cacowards2015 ...
 REM --------------------------------------------------------------------------------------------------------------------
 REM # swap over the homepages

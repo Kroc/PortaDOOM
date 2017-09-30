@@ -1,0 +1,33 @@
+PortaDOOM.exe
+
+files\wads\conversions\freedoom\
+files\wads\SHAREWARE\DOOM1.WAD
+
+files\play.bat
+files\doom.bat
+
+files\tools\**
+
+files\config\default.choco-doom*.cfg
+files\config\default.glboom-plus.cfg
+files\config\default.gzdoom.ini
+files\config\default.prboom-plus.cfg
+
+files\ports\chocolate-doom\
+files\ports\gzdoom-31_*\
+files\ports\prboom+\
+
+pages\Home #??.dosmag
+pages\5 Years of Doom #??.dosmag
+
+files\wads\people\Tom Hall\doombible.pdf
+
+pages\Master Levels #??.dosmag
+files\wads\MASTER\*.txt
+
+pages\The Complete Raven Series.dosmag
+files\wads\people\Tim Willits\
+pages\NoSun Series #??.dosmag
+files\wads\people\Malcom Sailor\nosun\
+pages\Chord Series #??.dosmag
+files\wads\people\Malcom Sailor\chord\

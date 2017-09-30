@@ -1,0 +1,36 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=CHORD3
+$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chord3.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD3.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
+
+:CHORD3.WAD                                               * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2000>09>05	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *no-limit	Includes : *None
+:-------------------------------------------------------------------------------
+
+It took way too long to make. Detailed, dificult, you know the drill... just download it and play it, trust me.
+
+It requires a source port (any source port that removes VPO and HOM, ie. almost any source port) to run, though jumping etc. is cheating.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: From scratch.
+*Build Time				: A long, long time.
+*Editor(s) used			: Dck 3.62 By Ben Morris
+*Nodebuilders			: Bsp 5.0 By Lee Killough and Colin Phipps
+						  RMB 2.1 By Jens Hykkelbjerg
+*Known Bugs				: There are a few occasional errors in monster behaviour, but these are bugs in the source ports and not in my level. It took me a lot of effort and annoyance to finally figure that out. (Ie. Cacos getting stuck on top of each other and monsters falling off tall ledges, hopefully someday this stuff will get fixed!)
+
+:Credits
+:-------------------------------------------------------------------------------
+All the usual suspects plus:
+
+- _Matt Dixon_ and _Martin Friberg_ for testing/input throughout the maps development.
+- _Myk Helnyte_ and _Anthony soto_ for additional playtesting.
+- _Eric james roberts_ for offering to feature it on his page.

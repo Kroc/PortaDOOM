@@ -2,6 +2,12 @@
 + = New feature / addition
 - = Removal
 
+30-SEP-17:
++ Added PortaDOOM_5YearsOfDoom package (incomplete)
++ Expanded "5 Years of Doom" section; still incomplete
++ Added Tim Willits' "The Complete Raven Series" WAD page
++ Added Maclom Sailor's "NoSun Series" & "Chord Series" WAD pages
+
 29-SEP-17:
 * "Master Levels for DOOM II" combined into a single page-set.
   You can now switch between levels much more easily

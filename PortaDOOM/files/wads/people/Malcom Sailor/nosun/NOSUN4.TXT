@@ -1,0 +1,144 @@
+================================================================
+Title                   : nosun4.WAD  
+Author                  : Malcolm Sailor
+Email Address           : sailorm@muhammad.usask.ca
+Misc. Author Info       : Member of the black star coven
+
+			  I would greatly appreciate feedback on:
+			  ammo/health: there's more than I need but I know
+			  where everything is.
+			  difficulty: too easy/hard
+			  how much you loved it/hated it.
+
+			  .zips I have made:
+			  darker.zip: contains darker.wad, my first level
+			  3_pack1.zip: contains ruler.wad, omelet.wad
+			  and tekrkbrn.wad, better than most stuff
+			  out there but nothing special
+			  ds-61-2.zip: contains seven high-quality maps
+			  alapolgy.wad: two very short levels
+			  fromdrem.wad: a very short level from a dream
+			  lab.wad: a high-tech lab
+			  boom.wad: a ghost-town. The first room is
+			  practically copied right out of dante's gate.
+			  It's good though.
+			  wasteme.wad: an untested (at point of release)
+			  wad. I left out the exit switch (blush).
+			  sinferno.wad: a okay hell wad.
+			  quikisgd.zip: one of my more recent releases.
+			  Short, high quality, and action packed.
+		-...good, high quality level. Reminds me of e4m1
+		-cmarti39@icon.net
+			  quikisg2.zip: Sequel to quikisgd
+			  -Definitely got the adrenaline going
+				-Eric Luke
+			  Skull.zip: skull.wad for doom 1
+			  DS-61-3.zip: update of ds-61-2.zip
+			  nosun.zip: first of this series. Kicks ass
+			  -I love it sooooooooooooooooo
+				-Michael Krause
+			  nosun2.zip: second of this series: the space ship at
+			  the end of nosun (oh, so that's what it was)
+			  nosun3.zip: wad of the day at Macdoom 
+			  -I'm sorry but this level is just to cool. superb
+				- Elf66
+			  >dk.zip: dk.wad, a high quality fortress level<
+			  !This last zip was postponed. I get an error about
+			  an unknown thing class before the level starts.
+			  According to Dck, there are no unknown things.
+			  If anyone knows how to solve this problem, Help
+			  is _Much_ appreciated.
+			  
+			  Soon to come:
+			  Work in The Black Star Covens The Talosian Incident
+			  Web Page: Http://www.geocities.com/timesquare/8666/bscoven.html
+			  (Maybe) Other Nosuns
+			  Probably some other stuff.
+
+					THE BEST WADS:
+					Darkcvnt.wad. By keith phipps
+					Cabal*.wad By Sverre Kvernmo
+
+MEANT TO BE PLAYED SEPERATELY FROM NOSUN 1-3!!!!!
+
+Description             : This is the fourth of a series of .wads I am making.
+			  I'm going to divide this into two parts:
+
+Story                   : You got out of the city. You liked those breaths of
+			  fresh air, but now you gotta go back underground
+			  again.
+
+			  (See the original nosun for the story)
+
+Layout                  : Medium size level.
+			  Alien Temple to their demonic god. Kill all the baddies
+			  you find and kick ass outta there.
+			  As always, good texture alignment, fancy lighting, and
+			  beautiful textures, although I think this is one of the
+			  weaker of the nosun series.
+			  The best are 1 and 3
+
+Additional Credits to   : Patrick Martin for testing and constructive criticism.
+			  Check out his "Blakgate.wad"
+			  It kicks ass.
+
+			  Ben Morris for dck3.61
+			  It kicks ass! I designed two maps in one week that
+			  together total over 500 sectors, all thanks to his
+			  editor.
+
+			  All the good wads I ever played for giving me inspiration.
+			  (Especially those mentioned above.)
+
+			  John Bye for boosting my ego a little and letting
+			  me into the Black Star Coven. Check out the
+			  homepage at the top (or close). Mail john and become
+			  a beta tester and you get to play a bunch of mine and
+			  Many other Top-Quality wad designers before anyone else.
+			  Also, play johns cygnusiv.zip.
+
+			  Sverre Andre Kvernmo for designing the best levels
+			  ever (cabal and others, some in the master levels).
+			  He's also a pretty cool guy.
+			  "Eternal Doom II just ain't the same without him."
+
+			  My dad for fixing (and breaking) the computer.
+			  And testing my levels on skill 3.
+
+			  Whoever made Zennode.
+
+PS: IF YOU STILL USE THE KEYBOARD; MAKE THE SWITCH (I RECENTLY DID).
+YOU'LL KICK ASS TWICE AS MUCH AS BEFORE!
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : Map07
+Single Player           : Yes, built for it. No FUCKING (there did I piss
+			  off you yuppies yet) multiplayer switches.
+Cooperative 2-4 Player  : Yes, Extra Monsters-not tested though
+Deathmatch 2-4 Player   : Closed off in the last little portion of the map
+			  It would be a real fragfest. To much of one, in
+			  my opinion. You can try it, but there'd be no way
+			  to exit unless you played with monsters.
+Difficulty Settings     : Yes. Play it in UV for the full experience.
+New Sounds              : No
+New Graphics            : No.
+Demos Replaced          : None
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Who knows? Its taken me months to actually finish 
+			  testing it, but it didn't take all that long to
+			  build.
+Editor(s) used          : Dck 3.61, by far the very best editor. Try it, it 
+			  kicks deus (and all the others) ass. Read the docs.  
+Known Bugs              : Possibly, if you find any, email me, please!
+
+
+* Copyright / Permissions *
+
+IM AN ANARCHIST! YOU CAN DO WHATEVER THE FUCK YOU WANT WITH THIS WAD
+BUT ONLY SO LONG AS YOU GIVE ME CREDIT FOR WHAT IVE DONE!!!

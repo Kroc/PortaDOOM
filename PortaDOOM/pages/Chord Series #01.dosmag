@@ -1,0 +1,68 @@
+$NAV=People
+$NAV=Malcom Sailor
+$TITLE=CHORD1
+$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chord1.bat
+$KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD1.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/chord1
+$KEY:R=GOTO:The Complete Raven Series
+
+:CHORD1.WAD                                               * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>05>15	  Author : _Malcom Sailor_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Hooee is this one hard. Start out in a room with yer pistol and a berserk up against two revenants... and thats just the beginning <G>
+
+I would __not__ recommend UV for the "average player".
+UV is for very good players, much harder than doom2.
+(For one thing there aren't unnecessary invulnerabilitys everywhere...)
+
+Okay, so you want to know what this one looks like.
+I guess it could be a satanic mansion of some sort, I dunno, but it uses the Pan* textures a lot and has wicked lighting (at least according to testers)
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: An alienated and psychopathic weirdo.
+*Build Time				: Over three days or so. 
+*Editor(s) used			: Dck 3.61, by far the very best editor. Try it, it kicks deu's (and all the others) ass. Read the docs.
+*Known Bugs				: Possibly, if you find any, email me, please!
+
+:Credits
+:-------------------------------------------------------------------------------
+_Patrick Martin_ for testing and constructive criticism.
+Check out his "Blakgate.wad"
+It kicks ass.
+
+_Ben Morris_ for dck3.61
+It kicks ass! I designed two maps in one week that together total over 500 sectors, all thanks to his editor.
+
+All the good wads I ever played for giving me inspiration.
+
+_John Bye_ for boosting my ego a little and letting me into the Black Star Coven. Check out the homepage at the top (or close). Mail _john_ and become a beta tester and you get to play a bunch of mine and Many other Top-Quality wad designers before anyone else.
+Also, play _john_'s cygnusiv.zip.
+
+_Sverre Andre Kvernmo_ for designing the best levels ever (cabal and others, some in the master levels). He's also a pretty cool guy.
+"Eternal Doom II just ain't the same without him."
+Be sure to mail him (if you play his levels) and tell him how good a level designer he is.
+
+My dad for fixing (and breaking) the computer.
+And testing my levels on skill 3.
+
+Whoever made Zennode.
+
+And a big Thank-You-Very-Fucking-Much to anyone who emailed me and told me my wads kick ass (actually, no ones ever mailed me to tell me other wise, so play this wad and agree and mail me.)
+
+It pisses me off to see all those mid-quality wads (which will remain nameless, except for *[R] Raven.wad*. Dumb Fucker's now at Id, and his stuff is __UGH__). get so much attention cause of their distribution.
+
+Me and a million others, such as Patrick Martin or Michael Krause or others (These guys get mentioned cause they're cool) are much better level designers...
+Oh well..,
+
+Also thanks to those who tested this wad... I definitely got some good criticism that made this wad better.
+
+PS: IF YOU STILL USE THE KEYBOARD; MAKE THE SWITCH (I RECENTLY DID).
+YOU'LL KICK ASS TWICE AS MUCH AS BEFORE!
+(This is non-critical of you keyboarders, though... I always hated cocky mousers when I was a keyboarder...)

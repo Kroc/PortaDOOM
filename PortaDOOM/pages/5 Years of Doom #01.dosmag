@@ -7,12 +7,16 @@ $TITLE=Table of Contents
 
 :Table of Contents:
 $KEY:2=PAGE:#02
+$KEY:3=PAGE:#03
+$KEY:4=PAGE:#04
+$KEY:5=PAGE:#05
+$KEY:A=PAGE:#06
 
  - [2] *The Doom Bible*.............................................. pg.2
- - [3] *The Top Ten Doom Level Makers*............................... pg.
- - [4] *ZDoom Preview*............................................... pg.
- - [5] *glDoom Preview*.............................................. pg.
- - [A] *Interview: _John Romero_*...................................... pg.
+ - [3] *The Top Ten Doom Level Makers*............................... pg.3
+ - [4] *ZDoom Preview*............................................... pg.4
+ - [5] *glDoom Preview*.............................................. pg.5
+ - [A] *Interview: _John Romero_*...................................... pg.6
  - [B] *Interview: _Ty Halderman_*..................................... pg.
  - [C] *Interview: _Justin Fisher_*.................................... pg.
  - [D] *Interview: _Tim Willits_*...................................... pg.
@@ -27,4 +31,24 @@ $KEY:2=PAGE:#02
  - [M] *Interview: _Mike Gummelt_*..................................... pg.
  - [N] *Interview: _Joel Huenink_*..................................... pg.
 
+:Credits:
 :-------------------------------------------------------------------------------
+ 
+- _Linguica (Andrew Stine)_		Original idea, site design, research, interviews, previews, site maintenance, promotion
+- _Covaro (Scott Cover)_		Interviews, promotion, site maintenance
+- _Mordeth (Gaston Lahaut)_		Interviews, promotion, site maintenance
+- _Steve Friedrichs_			CGI coding
+- _Gestalt (John Bye)_			Original "Top Ten" list
+- _vinkka (Armando Carmona)_	Logo
+- _Dukrous (Javier Heredia)_	Face
+
+:Legal:
+:-------------------------------------------------------------------------------
+ 
+This page and every other page on _<http://5years.doomworld.com>_ is (C) 1998, Doomworld. All rights reserved.
+
+All editorial content and graphics on this site are protected by U.S. copyright and international treaties and may not be copied without the written permission of Doomworld, which reserves all rights. Re-use of any of Doomworld's editorial content and graphics online for any purpose is strictly prohibited. The materials from Doomworld's sites are available for informational and noncommercial uses offline only, provided the content and/or graphics are not modified in any way, all copyright and other notices on any copy are retained, and permission is granted by Doomworld. 
+
+Do not copy or adapt the HTML that Doomworld creates to generate pages. It also is covered by Doomworld's copyright. 
+
+You can download third-party software that Doomworld indexes on its sites, but please remember that Doomworld does not create, endorse, or sponsor that software. If you download any third-party materials that Doomworld indexes or supports, you do so completely at your own risk. If you plan to download any software, please be sure to read the copyright and licensing information first.

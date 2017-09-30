@@ -63,6 +63,9 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :* H *
 :-------------------------------------------------------------------------------
 
+*Hall of Mirrors,
+*HOM				A visual glitch caused by surfaces without a texture assigned, showing the frame-buffer underneath; an infinite-mirror like effect of previous frames.
+
 *Heretic			High-fantasy commercial *'doom-clone'* released Decemeber 1994. Notable for adding an inventory system to the DOOM engine.
 
 *Hexen				Sequel to *Heretic* released October 1995. Created *ACS* for defining interactivity. Notable for its "hub" system that let you choose the order of maps to play.
