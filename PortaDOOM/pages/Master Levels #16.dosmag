@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Mephisto's Maosoleum
-$KEY:P=SHELL:play.bat /PWAD MASTER\MEPHISTO.WAD /LEVEL 7
+$KEY:P=SHELL:play.bat /PWAD MASTER\MEPHISTO.WAD /WARP 7
 $KEY:T=SHELL:wads\MASTER\MEPHISTO.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP07:_Mephisto%27s_Maosoleum_(Master_Levels)
 

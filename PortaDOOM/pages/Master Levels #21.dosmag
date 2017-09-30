@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=The Express Elevator to Hell
-$KEY:P=SHELL:play.bat /PWAD MASTER\TEETH.WAD /LEVEL 31
+$KEY:P=SHELL:play.bat /PWAD MASTER\TEETH.WAD /WARP 31
 $KEY:T=SHELL:wads\MASTER\TEETH.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP31:_The_Express_Elevator_to_Hell_(Master_Levels)
 

@@ -11,6 +11,7 @@
   Pressing BKSP will return to the original page number, but navigating left or
   right to a different page will now forget the jump from a different page and
   BKSP will now take you out of the page-set
+* Changed `/LEVEL` to `/WARP` in play.bat to better reflect DOOM terminology
 
 29-SEP-17:
 * "Master Levels for DOOM II" combined into a single page-set.

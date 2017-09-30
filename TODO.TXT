@@ -5,6 +5,7 @@ Pages:
     limit it to software rendering
 [ ] Create pages for the speedruns so that the author notes can be displayed
 [ ] Help page to explain WAD page headers, glossary
+[ ] A People section to cross-section all WADs
 
 Scripts:
 ================================================================================
@@ -22,6 +23,7 @@ Scripts:
 [ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
 [ ] Consider right alignment from middle of line (rulers?)
+[ ] Tabs in Warning Boxes are broken
 [ ] N64 DOOM64.WAD detection / warning
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?

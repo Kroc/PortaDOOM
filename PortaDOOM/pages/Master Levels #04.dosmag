@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=The Catwalk
-$KEY:P=SHELL:play.bat /PWAD MASTER\CATWALK.WAD /LEVEL 1
+$KEY:P=SHELL:play.bat /PWAD MASTER\CATWALK.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\CATWALK.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_The_Catwalk_(Master_Levels)
 

@@ -1,2 +1,2 @@
 @ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ gzdoom /PWAD xa-dwire.wad /LEVEL 1
+PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ gzdoom /PWAD xa-dwire.wad /WARP 1

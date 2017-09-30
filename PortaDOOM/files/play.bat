@@ -68,8 +68,8 @@ REM # engine requirements?
 IF /I "%~1" == "/REQ"  GOTO :reqs
 REM # compatibility-level?
 IF /I "%~1" == "/CMPLVL" GOTO :complevel
-REM # warp to a level (will ask for difficulty)
-IF /I "%~1" == "/LEVEL" GOTO :level
+REM # warp to a map number (will ask for difficulty)
+IF /I "%~1" == "/WARP" GOTO :warp
 
 REM # end of options, a straight file-list will follow
 IF "%~1" == "--" GOTO :files
@@ -202,10 +202,10 @@ IF "%ENGINE%" == "prboom" (
 
 :skill
 REM --------------------------------------------------------------------------------------------------------------------
-REM # warping to a level? ask for difficulty level
+REM # warping to a map number? ask for difficulty level
 REM # TODO: if -skill is already provided, skip this?
 
-IF "%LEVEL%" == "" GOTO :exe
+IF "%WARP%" == "" GOTO :exe
 
 REM # TODO: provide descriptions of the effects skill levels have;
 REM #       see: https://doomwiki.org/wiki/Skill_level
@@ -308,20 +308,20 @@ CALL "%HERE%\doom.bat" %OPTIONS% %ENGINE% %IWAD% %PWAD% %PARAMS% -- %FILES%
 EXIT /B
 
 
-:level
+:warp
 REM ====================================================================================================================
 SHIFT
 
-REM # the next parameter should be the level number
-SET "LEVEL=%~1"
+REM # the next parameter should be the map number
+SET "WARP=%~1"
 
-REM # is this a DOOM.WAD "e.m" format level number?
+REM # is this a DOOM.WAD "e.m" format map number?
 REM # (replace the dot with a space for the engines)
-SET "LEVEL=%LEVEL:.= %"
+SET "WARP=%WARP:.= %"
 
 REM # the option will occur first so that if another "-warp" parameters appears,
 REM # it'll override this one
-SET "PARAMS=%PARAMS% -warp %LEVEL%"
+SET "PARAMS=%PARAMS% -warp %WARP%"
 
 SHIFT
 GOTO :params

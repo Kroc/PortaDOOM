@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Paradox
-$KEY:P=SHELL:play.bat /PWAD MASTER\PARADOX.WAD /LEVEL 1
+$KEY:P=SHELL:play.bat /PWAD MASTER\PARADOX.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\PARADOX.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Paradox_(Master_Levels)
 
