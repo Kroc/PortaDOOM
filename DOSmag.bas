@@ -393,6 +393,13 @@ DO
                                 EXIT FOR
 
                             CASE ACTION_PAGE
+                                'record the current scroll position:
+                                'when going back, we'll restore this
+                                historyScroll%(historyDepth%) = PageLine%
+                                historyDepth% = historyDepth% + 1
+                                REDIM _PRESERVE historyPages$(historyDepth%)
+                                REDIM _PRESERVE historyScroll%(historyDepth%)
+
                                 'change to another page in the set
                                 'without increasing history
                                 loadPage PageName$ + " " + _
@@ -486,9 +493,11 @@ SUB nextPage
     IF PageNum% = PageCount% THEN
         BEEP
     ELSE
-        'switch pages, note that this doesn't increase
-        'history depth, that's only for navigation between
-        'different page sets
+        'switching pages cancels a history step that would return to
+        'a different page in the same set
+        checkSamePageHistory
+        'switch pages, note that this doesn't increase history depth,
+        'that's only for navigation between different page sets
         loadPage PageName$ + " " + pageNumber$(PageNum% + 1)
         refreshScreen
     END IF
@@ -501,11 +510,23 @@ SUB prevPage
     IF PageNum% < 2 THEN
         BEEP
     ELSE
-        'switch pages, note that this doesn't increase
-        'history depth, that's only for navigation between
-        'different page sets
+        'switching pages cancels a history step that would return to
+        'a different page in the same set
+        checkSamePageHistory
+        'switch pages, note that this doesn't increase history depth,
+        'that's only for navigation between different page sets
         loadPage PageName$ + " " + pageNumber$(PageNum% - 1)
         refreshScreen
+    END IF
+END SUB
+
+'=============================================================================
+SUB checkSamePageHistory
+    'can't do anything if history is not deep enough
+    IF historyDepth% < 2 THEN EXIT SUB
+    'check if the previous page in the history is the same as the current
+    IF getPageName$(historyPages(historyDepth% - 1)) = PageName$ THEN
+        historyDepth% = historyDepth% - 1
     END IF
 END SUB
 
@@ -765,6 +786,18 @@ SUB loadPage (page_name$)
     historyPages$(historyDepth%) = page_name$
     PageLine% = 1
 END SUB
+
+'strip the page number off of a page name, if present
+'=============================================================================
+FUNCTION getPageName$ (page_name$)
+    'is a page number attached to the name?
+    IF ASC(page_name$, LEN(page_name$) - 2) = PAGE_ASC THEN
+        'remove the page number from the name
+        getPageName$ = TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
+    ELSE
+        getPageName$ = page_name$
+    END IF
+END FUNCTION
 
 'build a path to a DOSmag page file
 '=============================================================================
