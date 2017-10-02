@@ -702,7 +702,7 @@ SUB loadPage (page_name$)
             DIM keycode%
             SELECT CASE keyname$
                 'at the moment, these are the key names supported
-                CASE "A" TO "Z", "0" TO "9"
+                CASE "A" TO "Z", "0" TO "9", "#"
                     'just use the ASCII code
                     keycode% = ASC(keyname$)
 
