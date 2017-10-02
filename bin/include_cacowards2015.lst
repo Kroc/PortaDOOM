@@ -38,7 +38,7 @@ pages\FreeDOOM.dosmag
 pages\Sunlust #??.dosmag
 files\wads\megawads\Sunlust\
 pages\Erkatane.dosmag
-files\wads\classical\erkatane\
+files\wads\episodes\erkatane\
 pages\Skulldash.dosmag
 files\wads\conversions\SKULDASH\
 pages\Swift Death.dosmag
@@ -78,7 +78,7 @@ files\wads\jokes\instadm\
 files\wads\jokes\instadm\filters\
 
 pages\Doom 2 the Way id Did.dosmag
-files\wads\classical\D2TWID\
+files\wads\megawads\D2TWID\
 pages\Doom the Way id Did.dosmag
-files\wads\classical\DTWID\
+files\wads\megawads\DTWID\
 pages\No Rest for the Living.dosmag

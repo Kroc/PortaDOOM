@@ -2,7 +2,11 @@
 + = New feature / addition
 - = Removal
 
-1-SEP-17:
+02-OCT-17:
+- Removed "classical" folder, moving "erkatane" & "Nihility" to "episodes",
+  and "DTWID", "D2TWID" & "DTWID-LE" to "megawads"
+
+01-OCT-17:
 + Added "Mordeth" WAD page
 
 30-SEP-17:

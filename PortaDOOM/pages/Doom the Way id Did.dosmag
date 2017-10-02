@@ -1,6 +1,6 @@
 $NAV=Classical
-$KEY:P=SHELL:wads\classical\DTWID\play.bat
-$KEY:T=SHELL:wads\classical\DTWID\DTWID.txt
+$KEY:P=SHELL:wads\megawads\DTWID\play.bat
+$KEY:T=SHELL:wads\megawads\DTWID\DTWID.txt
 $KEY:W=URL:http://dtwid.herokuapp.com/
 
 :Doom the Way id Did
