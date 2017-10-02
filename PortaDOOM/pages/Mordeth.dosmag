@@ -1,0 +1,34 @@
+$NAV=People
+$NAV=Gaston Lahaut
+$KEY:P=SHELL:wads\people\Gaston Lahaut\play.bat
+$KEY:T=SHELL:wads\people\Gaston Lahaut\MORDETH.TXT
+$KEY:W=URL:http://mordeth.doomworld.com/
+
+:Mordeth                                           * 20 years and counting! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>02>22	  Author : *_Gaston Lahaut_
+:Levels   : *6			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+The first six levels of the Mordeth TC, with lots of new monsters and great playability! Please refer to the *[W] Mordeth Home Page* for extensive information about all features.
+
+! *NOTE:* Due to the way Mordeth was originally compiled, PortaDOOM does not yet support running Mordeth in Chocolate-Doom ("vanilla").
+
+Find your way through infernal forts and take the fight to Hell, again. Battle your way through ancient cities, with fog swirling in dark streets illuminated by gaslights. Enter the foggy swamps, filled with rotting trees and the eerie cries of the Wyverns... Solve the puzzles, enjoy the great playability, admire the new monsters, fight the Boss Swamp Dragons in the last level... Yeah, you're going to **love** Mordeth..!
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: Designed from scratch.
+*Editors used			: Edmap v1.31; NWT v1.2a; DeHackEd v3.0; 
+						  Neopaint v3.2; TED v1.2; RMB.
+*Known Bugs				: None
+*Unknown Bugs			: Sod off :)
+
+:Credits
+:-------------------------------------------------------------------------------
+_Joel Huenink_ for lending me the intermission music.
+The creators of those lovely 3D games.
+Unknown author of the hero-wearing-glasses gfx.

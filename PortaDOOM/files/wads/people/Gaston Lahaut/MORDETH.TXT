@@ -1,0 +1,81 @@
+
+=========================================================================
+Title                   : Mordeth - FEB'97 version 
+Filename                : MORDETH.ZIP
+Author                  : Gaston Lahaut
+Email Address           : g.lahaut@stud.warande.ruu.nl
+Misc. Author Info       : The Mordeth Home Page can be found at:
+                          http://www.warande.ruu.nl/~glahaut/mordeth.htm
+Description             : The first six levels of the Mordeth TC, with
+                          lots of new monsters and great playability!
+                          Please refer to the Mordeth Home Page for 
+                          extensive information about all features.
+Additional Credits to   : Joel Huenink for lending me the intermission
+                          music. The creators of those lovely 3D games.
+                          Unknown author of the hero-wearing-glasses gfx.
+=========================================================================
+
+* Play Information *
+
+Episode and Level #     : DOOM2 Level 01-06
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : All
+New Sounds              : Yes
+New Graphics            : Yes
+New Music               : Some
+New Sprites             : Yes!!
+New Monsters            : Yes!!
+Demos Replaced          : All
+
+*Installation*
+
+Download the archive MORDETH.ZIP. Make a subdirectory within your Doom2
+directory (eg "C:\DOOM2\MORDETH") and unzip the files in there. Then, put
+the file 'mordeth.bat' into your doom2 directory (eg "C:\DOOM2") and start
+by typing 'mordeth' at the DOS doom2 prompt. First time players will be
+confronted with an installation batch file, which will make a functional
+Mordeth game by extracting sprites&flats to a Mordeth WAD file, and by
+making an alternative .exe file. Installation is required to play Mordeth.
+Installation of Mordeth will never comprise or even *touch* your original
+Doom2 game. This installation only has to be done once, after which you can
+play Mordeth indefinetely. More info on installation in the README.TXT.
+
+* Level Descriptions *
+
+Find your way through infernal forts and take the fight to Hell, again.
+Battle your way through ancient cities, with fog swirling in dark streets
+illuminated by gaslights. Enter the foggy swamps, filled with rotting trees
+and the eerie cries of the Wyverns... Solve the puzzles, enjoy the great
+playability, admire the new monsters, fight the Boss Swamp Dragons in the
+last level... Yeah, you're going to *love* Mordeth..!
+
+* Construction *
+
+Base                    : Designed from scratch.
+Editors used            : Edmap v1.31; NWT v1.2a; DeHackEd v3.0; 
+                          Neopaint v3.2; TED v1.2; RMB.
+Known Bugs              : None
+Unknown Bugs            : Sod off :)
+
+* Copyright / Permissions *
+
+Mordeth, by Gaston Lahaut, glahaut@stud.warande.ruu.nl
+
+Authors MAY NOT use Mordeth, or a part of it, as a base to build additional
+levels. Mordeth, or part of it, MAY NOT be included in a megawad/compilation.
+ 
+This archive MAY NOT be sold from any commercial web/internet/public site, 
+this to the judgement of the Author.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. All files of the original archive should be present.
+
+* Where to get this WAD *
+
+The Mordeth Home Page at http://www.warande.ruu.nl/~glahaut/mordeth.htm .
+Look here for the latest news and of course the next episodes! Also
+available at http://ftp.cdrom.com/pub/doom and it's many mirrors.

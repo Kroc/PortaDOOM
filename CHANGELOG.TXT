@@ -2,6 +2,9 @@
 + = New feature / addition
 - = Removal
 
+1-SEP-17:
++ Added "Mordeth" WAD page
+
 30-SEP-17:
 + Added PortaDOOM_5YearsOfDoom package (incomplete)
 + Expanded "5 Years of Doom" section; still incomplete
