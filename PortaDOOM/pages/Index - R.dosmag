@@ -1,0 +1,10 @@
+$THEME=BLUE
+$KEY:A=GOTO:The Complete Raven Series
+$KEY:B=GOTO:Return to Hadron
+
+^C:INDEX :: R
+
+:-------------------------------------------------------------------------------
+
+- [A] *Raven Series, (The Complete)						5 Years of Doom
+- [B] *Return to Hadron									Episodes

@@ -7,6 +7,7 @@ $KEY:M=GOTO:MegaWADs
 $KEY:O=GOTO:Onesies
 $KEY:P=GOTO:Community Projects
 $KEY:V=GOTO:Vanilla Sundae Experience
+$KEY:I=GOTO:Index
 
 ^C:PortaDOOM Alpha 3
 :-------------------------------------------------------------------------------
@@ -39,6 +40,9 @@ $REM=    Shorter, more tighter experiences in the 5 - 15 map range.
 $REM=
 :[V] The Vanilla Sundae Experience ...
 	For the die-hard doomer -- a series of vanilla-compatible WADs played the way they were meant to be.
+
+:[I] The Index
+	Every WAD in PortaDOOM in a list!
 
 :===============================================================================
 ^C*What else should go here? Send feedback to _<kroc@camendesign.com>_*

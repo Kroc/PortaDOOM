@@ -1,0 +1,12 @@
+$THEME=BLUE
+$KEY:A=GOTO:Master Levels #07
+$KEY:B=GOTO:Master Levels #18
+
+^C:INDEX :: G
+
+:-------------------------------------------------------------------------------
+
+- [A] *Master Levels: Garrison, (The)					Commercial DOOM
+- [B] *Master Levels: Geryon							Commercial DOOM
+
+

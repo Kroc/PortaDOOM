@@ -1,0 +1,22 @@
+$THEME=BLUE
+$KEY:A=GOTO:Shadow Of The Wool Ball
+$KEY:B=GOTO:Sheer Poison
+$KEY:C=GOTO:Skulldash
+$KEY:D=GOTO:Strange Aeons
+$KEY:E=GOTO:Master Levels #10
+$KEY:F=GOTO:Sunlust
+$KEY:G=GOTO:Master Levels #11
+$KEY:H=GOTO:Swift Death
+
+^C:INDEX :: S
+
+:-------------------------------------------------------------------------------
+
+- [A] *Shadow Of The Wool Ball							Total Conversions
+- [B] *Sheer Poison										Onesies
+- [C] *Skulldash										Total Conversions
+- [D] *Strange Aeons									MegaWADs
+- [E] *Master Levels: Subspace							Commercial DOOM
+- [F] *Sunlust											MegaWADs
+- [G] *Master Levels: Subterra							Commercial DOOM
+- [H] *Switft Death										MegaWADs

@@ -1,0 +1,26 @@
+$THEME=BLUE
+$KEY:A=GOTO:dead.wire
+$KEY:B=GOTO:Don't Be A Bitch Remastered
+$KEY:C=GOTO:Doom 2 the Way id Did
+$KEY:D=GOTO:DOOM 64
+$KEY:E=GOTO:DOOM II
+$KEY:F=GOTO:Doom the Way id Did
+$KEY:G=GOTO:Doom the Way id Did - The Lost Episodes
+$KEY:H=GOTO:DOOM(4) for DooM
+$KEY:I=GOTO:Doomed Space Wars
+$KEY:J=GOTO:DoomRL Arsenal
+
+^C:INDEX :: D
+
+:-------------------------------------------------------------------------------
+
+- [A] *dead.wire										Onesies
+- [B] *Don't Be A Bitch Remastered						Multiplayer
+- [C] *Doom 2 the Way id Did							MegaWADs
+- [D] *DOOM 64											Commercial DOOM
+- [E] *DOOM II											Commercial DOOM
+- [F] *Doom the Way id Did								MegaWADs
+- [G] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [H] *DOOM(4) for DooM									Mods
+- [I] *Doomed Space Wars								Episodes
+- [J] *DoomRL Arsenal									Mods

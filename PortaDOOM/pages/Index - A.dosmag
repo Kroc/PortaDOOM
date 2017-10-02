@@ -1,0 +1,18 @@
+$THEME=BLUE
+$KEY:A=GOTO:Absolutely Killed
+$KEY:B=GOTO:The Adventures of Square
+$KEY:C=GOTO:Aeon Deathmatch
+$KEY:D=GOTO:Alpha Accident - Terra Nova
+$KEY:E=GOTO:Ancient Aliens
+$KEY:F=GOTO:Master Levels #01
+
+^C:INDEX :: A
+
+:-------------------------------------------------------------------------------
+
+- [A] *Absolutely Killed								Episodes
+- [B] *Adventures of Square, (The)						Total Conversions
+- [C] *Aeon Deathmatch									Multiplayer
+- [D] *Alpha Accident: Terra Nova						Episodes
+- [E] *Ancient Aliens									MegaWADs
+- [G] *Master Levels: Attack							Commercial DOOM

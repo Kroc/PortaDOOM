@@ -1,0 +1,21 @@
+$THEME=BLUE
+$KEY:A=GOTO:John Romero's Episode 1 #02
+$KEY:B=GOTO:John Romero's Episode 1 #03
+$KEY:C=GOTO:Echelon
+$KEY:D=GOTO:Elf Gets Pissed
+$KEY:E=GOTO:Erkatane
+$KEY:F=GOTO:Eternal Doom III
+$KEY:G=GOTO:Master Levels #21
+
+^C:INDEX :: E
+
+:-------------------------------------------------------------------------------
+
+- [A] *E1M4b (John Romero's Episode 1)					Cacowards 2016
+- [B] *E1M8b (John Romero's Episode 1)					Cacowards 2016
+- [C] *Echelon											MegaWADs
+- [D] *Elf Gets Pissed									Episodes
+- [E] *Erkatane											Episodes
+- [F] *Eternal Doom III									MegaWADs
+- [G] *Master Levels: Express Elevator to Hell, (The)	Commercial DOOM
+

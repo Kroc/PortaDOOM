@@ -1,3 +1,4 @@
+$NAV=Community Projects
 $KEY:P=SHELL:wads\community\20_Monsters_MapPack\play.bat
 $KEY:T=SHELL:wads\community\20_Monsters_MapPack\Info.txt
 $KEY:W=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
@@ -6,7 +7,7 @@ $KEY:W=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>03>24	  Author : Various (see Credits)
+:Released : *2016>03>24	  Author : *Various (see Credits)
 :Levels   : *42			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------

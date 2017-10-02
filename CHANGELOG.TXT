@@ -3,6 +3,7 @@
 - = Removal
 
 02-OCT-17:
++ Added A-Z index of WADs!
 - Removed "classical" folder, moving "erkatane" & "Nihility" to "episodes",
   and "DTWID", "D2TWID" & "DTWID-LE" to "megawads"
 
