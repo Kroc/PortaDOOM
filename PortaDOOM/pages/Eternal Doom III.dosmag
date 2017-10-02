@@ -1,0 +1,86 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:wads\megawads\eternal\play.bat
+$KEY:T=SHELL:wads\megawads\eternal\ETERNAL.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/themes/TeamTNT/eternal/eternal
+
+:Eternal Doom III
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1997>11>26	  Author : *Various (see credits)
+:Levels   : *34			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+(NB: Eternal was upgraded twice, thus the "III" in the title;\\it's not the 3rd in a series as it might look)
+
+*Features:
+
+- 6 new single-player levels, two bonus levels
+- All difficulty settings
+- co-op starts everywhere (untested).
+- More custom textures
+- New status-bar (same from ED1).
+- Many other new and totally new graphics
+- Over 32 tunes to put you in that Eternal mood.
+- A few select new sounds (those from ED1).
+
+*Story:
+
+The government, in its infinite wisdom, reopened the Mars project. The same tired old assurances given by the same tired old politicians ring hollow. "This time it's different", they said. "We will no longer teleport in space. Instead, we will teleport in time."
+
+Right. As if that made any damn difference.
+
+As the boundaries of time were broken down by earth's best scientists the children of Hell eyed a new way into man's domain. Not long after the first successful experiments, the first deformed shape stepped out from the spinning blue void of the time gate.
+
+History's worst nightmare revisited; demonic invasion.
+
+This is why you exist. A warrior, bred for combat, ready to trade your life for earth's safety. You and your comrades have at least learned from your superiors' catastrophic past endeavors. And so you fought, and were repelling the invasion once more.
+
+Or so it seemed...
+
+Alas, Hell had also gained wisdom from the last war. Now, while the marines are slaughtering and being slaughtered, the rulers of hell use the captured time gate to slip into earth's past. If they can't defeat the humans of the present, then at least their medieval ancestors will be easy prey...
+
+Earth's past is about to be shaped by demons...
+
+Your platoon's briefing is simple, your mission suicidal:
+
+Use stealth and firepower to infiltrate the time gate complex. You will deploy a set of teleporters to get as close as possible to the infected gate. Still, several hell-spawn strongholds will be between you and the time-rift. When you have secured the gate, follow the demons into the vortex, back to the dark ages. Of what awaits you there little is known, other than this:
+
+This is not just a deadly threat to the billions currently populating earth. It is much more; All previous generations will perish if Hell wins our past. The word "human" will be eradicated from existence!!!
+
+If you fail to destroy all of Hell's strongholds and eradicate all demons you need not look for a way back home;
+
+There will be hell to pay...
+
+(of course something goes wrong with the teleporters and only you come out alive on the other side, pistol in hand ;)
+
+:DeHackEd Patch:
+:-------------------------------------------------------------------------------
+PortaDOOM has included Team Eternal's DeHackEd script to improve the play experience. Bear in mind that all of the playability of the game will be the same, only certain text and cheat codes have been modified:
+
+ 1: The startup screen's text has been modified.
+
+ 2: When you hit <tab> to go to map view from
+    within the game, the text will now reflect
+    the Eternal Doom III level's name.
+
+ 3: The cheat codes have been modified. Simply
+    type "TE" for the prefix of the cheat instead
+    of "ID" (i.e. "TEBEHOLD").
+
+ 4: The "BEHOLD" menu has been modified slightly
+    to make more sense.
+
+ 5: All of the "between episode" screen's text
+    has been modified.
+
+ 6: Other miscellaneous game text has been
+    modified.
+
+Enjoy!
+
+_Rich "Weeds" Nagel_ - Team Eternal 
+
+:Credits
+:-------------------------------------------------------------------------------

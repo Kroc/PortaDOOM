@@ -1,0 +1,400 @@
+
+
+                      Team Eternal Proudly Presents:
+
+
+                       ›ﬂ› €€› ›ﬂ› ›ﬂ›  › ﬁ› ›ﬂﬂ› ›
+                       ›    ›  ›   › ›  ›› › ›  › ›
+                       €ﬁ›  ›  €ﬁ› ›ﬂﬂ  ›€›› ›ﬂﬂ› ›
+                       ›    ›  ›   ›  › › ›› ›  › ›
+                       ›‹›  ›  ›‹› ›  € €  › ›  € ›‹›
+
+                           ›ﬂﬂ‹  ›ﬂ›  ›ﬂ› ›    ›
+                           ›  €  › ›  › › ››  ››
+                           ›  €  ﬂﬂ   ﬂﬂ  ›€›€››
+                           ›  €           › ›› ›
+                           ›‹‹€ €€›€€›€€› €   ﬁ›
+                                 ›  ›  ›
+                                 ›  ›  ›
+                                €€›€€›€€›
+
+
+
+=========
+FEATURES:
+=========
+
+- 6 new single-player levels, two bonus levels.
+- All difficulty settings
+- co-op starts everywhere (untested).
+- More custom textures
+- New status-bar (same from ED1).
+- Many other new and totally new graphics
+- Over 32 tunes to put you in that Eternal mood.
+  (A CD-Soundtrack will be released soon!).
+- A few select new sounds (those from ED1).
+
+- Final DOOM compatible - single wad configuration
+- No boot disk required with EMM386 and low memory
+- No changes to DOOM2 or Final DOOM directories
+
+- A easy to use yet powerful install/start-up shell.
+    * Play as episode starting at title screen
+    * Play any level directly with pistol (warp)
+    * As many save games as needed
+    * Demo playback and recording fully supported
+    * Saves and demos deleteable by file, level, episode
+    * Full warp options, and general option control
+    * Supports future revisions and additions to Eternal
+    * Configurable resources (choice of sky, e.g.)
+
+- Made lovingly by an assortment of crazies dedicated to driving
+  wad players mad (and pretty fair at it too <g>).
+
+
+The upgrade package E3UPG.ZIP
+------------------------------
+
+The download package E3UPG.ZIP contains E3UPG.WAD and the files listed
+below. Any individual file, FILE.EXT, say can be (re-)extracted with:
+
+PKUNZIP E3UPG FILE.EXT
+
+You must already have a working Eternal II installation prior to installing
+the upgrade software - otherwise you need the new full Eternal package,
+called ETERNAL.ZIP.
+
+The full Eternal package ETERNAL.ZIP
+------------------------------------
+
+The download package ETERNAL.ZIP contains ETERNALL.WAD and the common files
+listed below.
+
+This package contains everything you need except a working DOOM II
+installation.
+
+Files common to both release packages
+-------------------------------------
+
+ETERNAL.TXT     This is the one you're looking at now
+SHELL.TXT       Instructions for the shell
+SHELLKEY.TXT    Quick key reference for shell
+GENERAL.TXT     Some general help
+ED-MUSIC.TXT    The complete Eternal music playlist
+CONTACT.TXT     Where to get information or support
+CREDITS.TXT     Information on who contributed to Eternal
+INSTALL.TXT     Detailed installation instructions
+RELEASE.NOT     Details on what is different from Eternal I
+ETERNAL.BAT     Used to play Eternal through shell.
+ETERNAL.LEV     List of level, author, music names
+
+NULL.WAD        Used to build wads
+SEPI3.BMP       Image of standard sky
+UDSKY.BMP       Image of Ultimate DOOM based sky
+STARS.BMP       Image of starry sky
+
+ESHELL.EXE      Installation program and play shell
+PATCHER.EXE     Installation/configuration/patching tools
+CWSDPMI.EXE     DJGPP v2 runtime
+RANCY.EXE       CSWEEPER randomizer
+
+CSWEEPER.WAD    Bonus level
+CREDITS.WAD     Bonus level
+
+
+-----------------------------------------------------------------------------
+
+==========
+THE STORY:
+==========
+
+The government, in its infinite wisdom, reopened the Mars project. The same
+tired old assurances given by the same tired old politicians ring hollow.
+"This time it's different", they said. "We will no longer teleport in space.
+Instead, we will teleport in time."
+
+Right. As if that made any damn difference.
+
+As the boundaries of time were broken down by earth's best scientists the
+children of Hell eyed a new way into man's domain. Not long after the first
+successful experiments, the first deformed shape stepped out from the
+spinning blue void of the time gate.
+
+History's worst nightmare revisited; demonic invasion.
+
+This is why you exist. A warrior, bred for combat, ready to trade your life
+for earth's safety. You and your comrades have at least learned from your
+superiors' catastrophic past endeavors. And so you fought, and were
+repelling the invasion once more.
+
+Or so it seemed...
+
+Alas, Hell had also gained wisdom from the last war. Now, while the marines
+are slaughtering and being slaughtered, the rulers of hell use the captured
+time gate to slip into earth's past. If they can't defeat the humans of the
+presence, then at least their medieval ancestors will be easy prey...
+
+Earth's past is about to be shaped by demons...
+
+Your platoon's briefing is simple, your mission suicidal:
+
+Use stealth and firepower to infiltrate the time gate complex. You will
+deploy a set of teleporters to get as close as possible to the infected
+gate.  Still, several hell-spawn strongholds will be between you and the
+time-rift.  When you have secured the gate, follow the demons into the
+vortex, back to the dark ages. Of what awaits you there little is known,
+other than this:
+
+This is not just a deadly threat to the billions currently populating
+earth.  It is much more; All previous generations will perish if Hell
+wins our past.  The word "human" will be eradicated from existence!!!
+
+If you fail to destroy all of Hell's strongholds and eradicate all demons
+you need not look for a way back home;
+
+There will be hell to pay...
+
+(of course something goes wrong with the teleporters and only you come out
+alive on the other side, pistol in hand ;)
+
+============================
+LIMITED DISTRIBUTION RIGHTS:
+============================
+
+Contact Team Eternal if you wish information on editing Eternal levels.
+
+ - Keep ETERNAL.WAD intact. Do not extract anything from it.
+ - Ask us for the EEK (Eternal Editor Kit) which makes it possible to extract
+   all you need to edit from Eternal.wad
+ - Do not include ETERNAL.WAD or materials extracted from it with any levels
+   you distribute. Please ask them to download ETERNAL.ZIP and/or E3UPG.ZIP
+   from either CompuServe, Action Forum or at ftp.cdrom.com, id Games.
+ - Give Team Eternal a mention in your text file.
+ - ETERNAL.WAD is for your viewing pleasure only. We wouldn't like it if you
+   messed with it.
+
+ Thank you :)
+
+=================
+PLAY INFORMATION:
+=================
+
+Eternal Levels                                          Eternal Music
+
+Map:    Name:                   Author:                 Music score:
+                                                        by Rich ùWeedsù Nagel
+Eternal I
+
+Map01   Genesis                 Alex Mayberry           Searching!
+Map02   Tower of Hell           Adam Landefeld          Deathmarch Reprise
+Map03   Inter-Base              Dia Westerteicher       Mission Possible
+Map04   Nucleus                 Sverre Kvernmo          Suspense!
+Map05   Time Gate               Sverre Kvernmo          Eternal Doom
+Map06   Pathos                  Alex Mayberry           Mysterious
+Map07   The Abbey               Paul Schmitz            Barabbas
+Map08   Woodhead                Dia Westerteicher       Spectres
+Map09   Forlorn Fortress        Chris Couleur           Hellspawn
+Map10   Crimson Tide            Kathy & David Bruni     Suspense Reprise
+Map11   Dawn of the Dead        Chris Couleur           The Lost Souls
+Map12   Darkdome                Sverre Kvernmo          Death March
+
+Eternal II
+
+Map13   Drop 'Em!               Dia Westerteicher       Instant Death!
+Map14   Pistol Only             Dia Westerteicher       Fugue In A Minor
+Map15*  Halls of Disarray       Matt Bollier            Cacophage
+Map16   Guardstation            Adam Landefeld          Impending Death
+Map17   The Crypt               Dia Westerteicher       InDIAn Song
+Map18   Stands                  Dave Brachman           Death Assured
+Map19   Warheros                Chris Couleur           Psychopathic Evil
+Map20   Silures                 Bob Evans               Simple Death
+Map21   Fire and Stone          Adam Landefeld          The Battle
+Map22   The Seeker              Chris Couleur           Death In D Minor
+Map23   Time Gate 2             Dia Westerteicher       Trooper Procession
+Map24   Rainbow Bridge          Chris Couleur           Hell's Bells
+Map25   Beginner's End          Jim Flynn               Death Jam
+Map26   No Parking              Jim Flynn               Doomin'
+Map27*  Credits                 Dia Westerteicher       Eternal Medley
+
+* Halls of Disarray has moved to Map32 in Eternal III
+  Credits has become a standalone bonus level in Eternal III
+
+Thanks to David Bruni for his contributions to Warheroes.
+
+Eternal III
+
+Map15   Celebration of Evil     Adam Landefeld          DETH Bells
+Map31   Monster Mansion         Jim Flynn               UAC 5-0
+
+Map27   Paldorian               Dave Brachman           Barabbas Reprise
+Map28   Timeslip                Paul Schmitz            War Cry
+Map29   Dominion                Chris Couleur           Death Assured Reprise
+Map30   Excalibur               Bob Evans               Death Sword
+
+Map33   CyberSweeper            Jim Flynn               Cyber Hunt
+Map34   Credits                 Ty Halderman            Eternal Medley
+
+General Music
+
+Main Menu Screen                                 Introduction To Death
+Between Map Status Screens                       Intermission From Death
+Episode Transition Storyline Screens             Intermission From Death II
+
+Shell welcome sound by Rich ùWeedsù Nagel
+
+-----------------------------------------------------------------------------
+
+File Name              : E3UPG.ZIP or ETERNAL.ZIP
+
+HD Requirements        : ~30 MB once completely installed.
+                         ~50 MB required for installation of revisions (if any)
+
+System Requirements    : Pentium or high-end DX2 recommended.
+
+New art                : Some of the things we've added to Doom2 were
+                         snatched from other sources (i.e. Hexen) but by far
+                         the greater part of the new stuff is original art.
+
+Play modes             : Eternal Doom was specifically designed for engrossing
+                         single-player games. If you have powerful systems you
+                         might want to try it out in co-op but deathmatch is
+                         definitely not recommended.  Some levels can lead to
+                         unresolvable situations in coop, Map02, Map 23, and
+                         Map32 in particular. There may also be HOMS in co-op
+                         mode that are impossible to view in single-player.Some
+                         levels are also too large to save at start in co-op
+                         mode due to added multiplayer support.
+
+Difficulty Settings    : Implemented and thoroughly tested.
+
+Demos Replaced         : Demos are included, built-in and full solutions. The
+                         demos are converted to your DOOM version as part of
+                         installation.
+
+Build Time             : We didn't call it "Eternal" just for fun you know.
+                         Don't expect to play it much faster than we wrote it
+                         either!
+
+Bugs                   : No bugs known at the time of release. Feel free to
+                         report bugs if you should be better at finding them
+                         than us. The fact that the level names on the automap
+                         remain unchanged is not a bug, but a simplification.
+
+Where to get Eternal   : FTP ftp.cdrom.com/pub/doom2/themes/TeamTNT
+                         Homepage http://www.neosoft/~teamtnt
+                         CompuServe (Action Games Forum).
+                         
+
+Support                : If you have problems solving a level, feel free to
+                         contact the author, or send mail thru the homepage
+                         above. Or view the solution demo. Do NOT contact
+                         Id Software about this software.
+
+
+================
+HOW TO UNINSTALL
+================
+
+Please see INSTALL.TXT for un-install instructions.
+
+
+========
+THE TEAM
+========
+
+These  are the people that you can thank for taking up all that space on your
+hard-disk. In alphabetical order:
+
+Matt Bollier            : (103220.3302@compuserve.com)
+                           Level Designer
+Dave Brachman           : (76614.1014@compuserve.com)
+                           Level Designer
+                           Play-tester
+David & Kathy Bruni     : (74353.357@compuserve.com)
+                           Level Designers
+Christopher Couleur     : (74002.2540@compuserve.com)
+                           Level Designer
+                           Play-tester
+Yonatan Donner          : (ruthd@post.tau.ac.il)
+                           EDIII quick demo team manager
+                           Play-tester
+Bob (Odessa) Evans      : (103011.623@compuserve.com)
+                           Level Designer
+                           Graphics for EDIII
+Jim Flynn               : (jflynn@pacbell.net)
+                           Level Designer
+                           Installation and shell for EDII and EDIII
+                           Custom tools
+Stan (SkullBane) Gula   : (70007.6046@compuserve.com)
+                           EDII and EDIII Solution demo maker
+                           Play-tester
+                           Quality control for EDII and EDIII
+Ty Halderman            : (thldrmn@neosoft.com)
+                           Project manager for EDIII
+                           Wad builder for EDIII
+Sverre Andre Kvernmo    : (100755.2032@compuserve.com)
+                           Main Graphic Artist,
+                           EDI Solution demo maker
+                           Play-tester
+                           Level Designer
+Adam Landefeld          : (75611.1626@compuserve.com)
+                           Installation and menu for EDI
+                           Play-tester
+                           Level Designer
+Alex Mayberry           : (74724.3545@compuserve.com)
+                           Producer
+                           Assistant Graphic Artist
+                           Play-tester
+                           Level Designer
+Rich ùWeedsù Nagel      : (72672.1450@compuserve.com)
+                          (RFNagel@juno.com)
+                           Music
+                           Play-test support
+Paul Schmitz            : (106057.2725@compuserve.com)
+                           Project Manager/Producer EDI
+                           Bug Killer
+                           Play-tester
+                           Level Designer
+Dia Westerteicher       : (100740.560@compuserve.com)
+                           Project Manager/Producer EDII
+                           Bug Killer
+                           Play-tester
+                           Level designer
+Peter Zahner            : (100416.1054@compuserve.com)
+                           Technical Support
+                           Quality Control for EDI
+                           Play-tester
+Play Testers            :  Tom Apel
+                           David Armstrong
+                           Cerri James Stian Bergum Hammond
+                           David Brachman
+                           Derek (NFSfreak) Cadwell
+                           Stan Gula
+                           Torgeir Von Knag
+                           Robyn Michelle Lorber
+                           Erling Paulsen
+                           Juergen Petz
+                           Don Webb of Bakersfield
+                           Adrian Worthey
+                           Baard Zakariassen
+                           Heather
+Thanx to                 : id Software
+                           Raven Software
+                           Olivier Montanuy (DEUTEX, DEUSF)
+                           Colin Reed, Lee Killough (BSP)
+                           Antony Burden (DETH)
+                           Sensor Based Sysems (DeePBSP, DeeP)
+                           Marc Rousseau (ZenNode)
+                           Jens Hykkelbjerg (RMB)
+                           Ben Morris (DCK 3.X)
+                           John Williston (WadAuthor)
+                           Scott (Psycho) Warren
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+August 1st, 1996.
+Revised Jan 31,1997
+Revised Oct 26,1997
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+---End of file---
+
+

@@ -1,0 +1,242 @@
+อออออออออออออออออออออออออออออออออออออออออ
+The Complete Eternal Doom Musical Score
+อออออออออออออออออออออออออออออออออออออออออ
+(c)1994-97 by Rich Weeds Nagel -Team Eternal
+
+
+Send Email to:
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+72672.1450@compuserve.com
+RFNagel@compuserve.com
+RFNagel@juno.com
+
+Weeds' Home Page:
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+http://ourworld.compuserve.com/homepages/RFNagel
+
+TeamTNT/Team Eternal's Home Page:
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+http://www.neosoft.com/~teamtnt
+
+
+The music listed below was created for Team Eternal's "Eternal Doom", a thirty
+four level add-on pack for id Software's Doom II. Eternal Doom can be found in
+the Action Games Forum on Compuserve (CIS: GO ACTION) and on the Internet at
+ftp.cdrom.com/pub/idgames/themes/TeamTNT.
+
+
+ Main Menu Screen / D_DM2TTL
+ "Introduction To Death"
+  0:10
+  INTRODTH.MID         2,270 11-01-96 12:00a
+
+ Between Map Status Screens / D_DM2INT
+ "Intermission From Death"
+  0:13
+  INTERDTH.MID         2,611 07-28-96 12:00a
+
+ Episode Transition Storyline Screens / D_READ_M
+ "Intermission From Death II"
+  0:14 
+  INTEDTH2.MID         7,159 11-25-96 12:00a
+
+ Map01 / D_RUNNIN
+ "Searching!"
+  0:54
+  SEARCH.MID          13,468 07-23-96 12:00a
+
+ Map02 / D_STALKS
+ "Death March Reprise"
+  1:52
+  DEATHMRR.MID         6,513 07-29-96 12:00a
+
+ Map03 / D_COUNTD
+ "Mission Possible"
+  0:50
+  MISSIONP.MID        14,841 07-27-96 12:00a
+
+ Map04 / D_BETWEE
+ "Suspense!"
+  0:55
+  SUSPENSE.MID        14,453 07-23-96 12:00a
+
+ Map05 / D_DOOM
+ "Eternal Doom"
+  2:57
+  ETERNALD.MID        11,926 07-23-96 12:00a
+
+ Map06 / D_THE_DA
+ "Mysterious"
+  1:08
+  MYSTERY.MID         13,467 07-27-96 12:00a
+
+ Map07 / D_SHAWN
+ "Barabbas"
+  1:26
+  BARABBAS.MID        16,099 07-25-96 12:00a
+
+ Map08 / D_DDTBLU
+ "Spectres"
+  1:25
+  SPECTRES.MID         3,845 07-11-94 12:00a
+
+ Map09 / D_IN_CIT
+ "Hellspawn"
+  1:36
+  HELLSPWN.MID         9,816 07-28-96 12:00a
+
+ Map10 / D_DEAD
+ "Suspense Reprise"
+  1:27
+  SUSPENSR.MID        22,458 07-29-96 12:00a
+
+ Map11 / D_STLKS2
+ "The Lost Souls"
+  2:53
+  LOSTSOUL.MID        10,464 07-03-94 12:00a
+
+ Map12 / D_THEDA2
+ "Death March"
+  1:19
+  DEATHMAR.MID         3,958 05-29-94 12:00a
+
+ Map13 / D_DOOM2
+ "Instant Death!"
+  0:09
+  INSTANTD.MID         3,079 07-28-96 12:00a
+
+ Map14 / D_DDTBL2
+ "Fugue In A Minor"
+  1:01
+  FUGUE-AM.MID         6,005 08-06-94 12:00a
+
+ Map15 / D_RUNNI2
+ "DETH Bells"
+  1:25
+  DETHBELL.MID         8,504 10-05-97 12:00a
+
+ Map16 / D_DEAD2
+ "Impending Death"
+  2:00
+  IMPENDTH.MID        14,104 12-19-96 12:00a
+
+ Map17 / D_STLKS3
+ "InDIAn Song"
+  2:16
+  INDIAN.MID          16,115 02-14-96 12:00a
+
+ Map18 / D_ROMERO
+ "Death Assured"
+  2:00
+  DEATHASR.MID        12,205 12-13-96 12:00a
+
+ Map19 / D_SHAWN2
+ "Psychopathic Evil"
+  2:31
+  PSYCEVIL.MID        14,978 11-15-96 12:00a
+
+ Map20 / D_MESSAG
+ "Simple Death"
+  1:36
+  SIMPLDTH.MID         7,783 12-02-96 12:00a
+
+ Map21 / D_COUNT2
+ "The Battle"
+  1:02
+  BATTLE.MID           6,676 08-05-94 12:00a
+
+ Map22 / D_DDTBL3
+ "Death In D Minor"
+  1:14
+  DEATH-DM.MID         5,763 11-06-96 12:00a
+
+ Map23 / D_AMPIE
+ "Trooper Procession"
+  1:45
+  TROOPER.MID          8,701 08-12-95 12:00a
+
+ Map24 / D_THEDA3
+ "Hell's Bells"
+  1:36
+  HELLBELL.MID         5,398 12-14-96 12:00a
+
+ Map25 / D_ADRIAN
+ "Death Jam"
+  1:22
+  DEATHJAM.MID        24,370 11-24-96 12:00a
+
+ Map26 / D_MESSG2
+ "Doomin'"
+  1:38
+  DOOMIN'.MID         27,943 01-14-95 12:00a
+
+ Map27 / D_ROMER2
+ "Barabbas Reprise"
+  1:32
+  BARABASR.MID        13,059 10-08-97 12:00a
+
+ Map28 / D_TENSE
+ "War Cry"
+  1:13
+  WARCRY.MID           8,968 10-07-97 12:00a
+
+ Map29 / D_SHAWN3
+ "Death Assured Reprise"
+  1:48
+  DEATHADR.MID        13,271 09-03-97 12:00a
+
+ Map30 / D_OPENIN
+ "Death Sword"
+  1:23
+  DEATHSRD.MID         7,408 09-17-97 12:00a
+
+ Map31 / D_EVIL
+ "UAC 5-0"
+  1:31
+  UAC50.MID           17,526 10-06-97 12:00a
+
+ Map32 / D_ULTIMA
+ "Cacophage"
+  1:36
+  CACOPHGE.MID        22,259 11-28-96 12:00a
+
+ Map33 (CyberSweeper) / D_RUNNIN
+ "Cyber Hunt"
+  1:11
+  CYBERHNT.MID         4,082 09-12-97 12:00a
+
+ Map34 (Credits) / D_RUNNIN
+ "Eternal Medley"
+  9:07
+  ETERNALM.MID        72,653 12-18-96 12:00a
+
+
+All music was composed on a Creative Labs' WaveBlaster I and an AWE-32, an 8mb
+EMU Technologies soundbank loaded into 8mb of on-board AWE-32 ram, a Casio
+CZ-1 keyboard (yeah I know it's old, damn thing weighs a ton too <g>), and
+using Twelve Tone Systems' Cakewalk Professional v3.01.
+
+For information on distribution rights, read the "ETERNAL.TXT" file that is
+included with Eternal Doom.
+
+"Team Eternal", "Eternal Doom", "Weeds", and their likenesses are not
+supported nor endorsed by id Software.
+
+
+Rich Weeds Nagel
+10/29/97
+
+
+P.S. Doom Music/Sound Bonus Info!
+
+When using a modern Sound Blaster compatable sound card, if you set the
+enviroment variable "DMXOPTION" to "-opl3", you will hear STEREO music in
+Doom. If the same enviroment variable is set to "-phase" you will hear
+SURROUND SOUND in Doom. The stereo music and surround sound is best heard
+through headphones. To set the enviroment variables, at the DOS prompt type:
+"SET DMXOPTION=-opl3", "SET DMXOPTION=-phase", or "SET DMXOPTION=-opl3-phase"
+(minus the quotes) and hit the <enter> key before running Eternal Doom.
+
+Enjoy!
+
+---End of file---                                                            

@@ -1,0 +1,125 @@
+Detailed information about who did what in the creation
+of Eternal DOOM:
+--------------------------------------------
+
+Matt Bollier
+
+        MAP32   "Halls of Disarray"
+
+David Brachman
+
+        MAP18   "Stands"
+        MAP27   "Paldorian"
+
+David Bruni
+
+        MAP10   "Crimson Tide"
+
+Chris Couleur
+
+        MAP09   "Forlorn Fortress"
+        MAP11   "Dawn of the Dead"
+        MAP19   "Warheroes"
+        MAP22   "The Seeker"
+        MAP24   "Rainbow Bridge"
+        MAP29   "Dominion"
+
+Bob Evans
+
+        MAP20   "Silures"
+        MAP30   "Excalibur"
+        Other Graphics
+
+Jim Flynn
+
+        MAP25   "Beginner's End"
+        MAP26   "No Parking"
+        MAP31   "Monster Mansion"
+        Level   "CyberSweeper"
+        Utilities
+        Shell program
+
+Ty Halderman
+
+        Level   "Credits"
+        Eternal 3 Project Coordinator
+        Other Graphics
+
+Sverre Kvernmo
+
+        MAP04   "Nucleus"
+        MAP05   "Time Gate"
+        MAP12   "Darkdome"
+        Graphics
+
+Adam Landefeld
+
+        MAP02   "Tower of Hell"
+        MAP15   "Celebration of Evil"
+        MAP16   "Guardstation"
+        MAP21   "Fire and Stone"
+
+Alex Mayberry
+
+        MAP01   "Genesis"
+        MAP06   "Pathos"
+
+Rich Nagel
+
+        All of the Eternal DOOM Music
+
+Paul Schmitz
+
+        MAP07   "The Abbey"
+        MAP28   "Timeslip"
+        Eternal I Project Coordinator
+
+Dia Westerteicher
+
+        MAP03   "Inter-Base"
+        MAP08   "Woodhead"
+        MAP13   "Drop 'Em!"
+        MAP14   "Pistol Only"
+        MAP17   "The Crypt"
+        MAP23   "Time Gate II"
+        Level   "Credits"
+        Eternal II Project Coordinator
+
+Testing and Quality Assurance
+
+        Tom Apel
+        Dave Armstrong
+        Dave Brachmann
+        Derek Cadwell
+        Nancy Canadian
+        Stan Gula
+        Cerri James Stian Bergum Hammond
+        Matt Jonelis
+        Jim Kennedy
+        Lee Killough
+        Torgeir Von Knag
+        Robyn Michelle Lorber
+        Lisa Moore
+        Drake O'Brien
+        Erling Paulsen
+        Juergen Petz
+        Don Webb
+        Adrian Worthey
+        Peter Zahner
+        Baard Zakariassen
+        Heather
+
+Demos
+
+        Dave Armstrong
+        Yonatan Donner
+        Michael Grube
+        Stan Gula
+        Jason Henry
+        Kai-Uwe Humpert
+        Sverre Kvernmo
+        Adam Landefeld
+        Istvan Pataki
+        Peo Sjoblom
+
+---End of file---                                                            
