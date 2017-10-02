@@ -1,3 +1,6 @@
+02-OCT-17:
++ Add "#" to usable key defines
+
 30-SEP-17:
 + Linking between pages in the same set now more intelligently handles history.
   Pressing BKSP will return to the original page number, but navigating left or
