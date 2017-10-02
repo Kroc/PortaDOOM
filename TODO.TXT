@@ -5,7 +5,18 @@ Pages:
     limit it to software rendering
 [ ] Create pages for the speedruns so that the author notes can be displayed
 [ ] Help page to explain WAD page headers, glossary
-[ ] A People section to cross-section all WADs
+[ ] Index pages at the end of each Cacowards; allows the separate Cacowards
+    packages to have an index
+
+PortaDOOM Alpha 3:
+
+[ ] N64 DOOM64.WAD detection / warning
+[ ] Total Conversions page ...
+[ ] MegaWADs page ...
+[ ] Episodes page ...
+[ ] Onesies page ...
+[X] Community Projects page ...
+[ ] Vanilla page ...
 
 Scripts:
 ================================================================================
@@ -24,7 +35,6 @@ Scripts:
     they'll need their own config file
 [ ] Consider right alignment from middle of line (rulers?)
 [ ] Tabs in Warning Boxes are broken
-[ ] N64 DOOM64.WAD detection / warning
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?
 
