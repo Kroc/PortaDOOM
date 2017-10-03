@@ -7,9 +7,12 @@ Pages:
 [ ] Help page to explain WAD page headers, glossary
 [ ] Index pages at the end of each Cacowards; allows the separate Cacowards
     packages to have an index
+[ ] Need launchers for bonus levels on Eternal Doom III
 
 PortaDOOM Alpha 3:
 
+[ ] Harmony IWAD page
+[ ] Hacx IWAD page
 [ ] N64 DOOM64.WAD detection / warning
 [ ] Total Conversions page ...
 [ ] MegaWADs page ...
@@ -20,6 +23,9 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[X] Internally determine which 'game' (DOOM/HERETIC/HEXEN &c.) is being played
+	[ ] Add Strife, Adventures of Square and Chex support
+
 [ ] Mods
 	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
         selected; e.g. "strangeaeonsexp+HighNoonDrifter"
@@ -33,7 +39,7 @@ Scripts:
 	
 [ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
-[ ] Consider right alignment from middle of line (rulers?)
+[ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Patch IWADs to be consistent?
@@ -41,7 +47,6 @@ Scripts:
 WADs:
 ================================================================================
 [ ] DOOM RPG (J2ME) 1 & 2?
-[ ] Hacx / Harmony / Action DOOM
 [ ] Heretic
 [ ] Hexen
 [ ] Strife

@@ -2,6 +2,10 @@
 + = New feature / addition
 - = Removal
 
+03-OCT-17:
++ Added Heretic, Hexen shareware substitution in doom.bat
+* Improved IWAD/PWAD logic throughout doom.bat
+
 02-OCT-17:
 + Added A-Z index of WADs!
 + Added "Eternal Doom III" WAD page

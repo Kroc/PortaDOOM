@@ -367,6 +367,10 @@ SET ANY_DEH=0
 SET ANY_BEX=0
 SET ANY_CFG=0
 
+REM # which game to be played. defaults to "DOOM2",
+REM # but can also be "DOOM", "DOOM64", "HERETIC", "HEXEN" or "STRIFE"
+SET "GAME=DOOM2"
+
 REM # detect 32-bit or 64-bit Windows for those engines that provide both
 SET WINBIT=32
 IF /I "%PROCESSOR_ARCHITECTURE%" == "EM64T" SET WINBIT=64	& REM # Itanium
@@ -435,6 +439,8 @@ REM ============================================================================
 REM # reserve some variables:
 SET "ENGINE_DIR="	& REM # the engine directory is also used to check for PWADs
 SET "ENGINE_EXE="	& REM # executable name in the engine folder
+REM # no PWAD yet
+SET "PWAD="
 
 IF %WINBIT% EQU 32 SET "ENGINE_BIT=x86"
 IF %WINBIT% EQU 64 SET "ENGINE_BIT=x64"
@@ -448,7 +454,7 @@ REM # we use this to handle differences in command line parameters for engines:
 REM # - V = Vanilla engine; uses DSG save format. chocolate-doom fits this
 REM # - B = Boom engine; compatible with the features added by boom. prboom+ (and above). DSG saves
 REM # - X = Kex engine -- DOOM 64 EX. Parameters are like Vanilla and Boom. DSG saves
-REM # - Z = ZDoom engine; derived from ZDoom, i.e. ZDoom, GZDoom and Zandronum. ZDS saves
+REM # - Z = ZDoom engine; derived from ZDoom, i.e. GZDoom and Zandronum. ZDS saves
 SET "ENGINE_KIN="
 
 REM # the engine's folder within the "saves" folder; it's the place for the user's config file for that engine
@@ -481,6 +487,8 @@ IF /I "%~1" == "choco-heretic" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-heretic"
 	ECHO          port : chocolate heretic
+	REM # game *has* to be HERETIC for this engine
+	SET "GAME=HERETIC"
 )
 IF /I "%~1" == "choco-heretic-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -490,6 +498,8 @@ IF /I "%~1" == "choco-heretic-setup" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-heretic"
 	ECHO          port : chocolate heretic ^(setup^)
+	REM # game *has* to be HERETIC for this engine
+	SET "GAME=HERETIC"
 )
 IF /I "%~1" == "choco-hexen" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -499,6 +509,8 @@ IF /I "%~1" == "choco-hexen" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-hexen"
 	ECHO          port : chocolate hexen
+	REM # game *has* to be HEXEN for this engine
+	SET "GAME=HEXEN"
 )
 IF /I "%~1" == "choco-hexen-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -508,6 +520,8 @@ IF /I "%~1" == "choco-hexen-setup" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-hexen"
 	ECHO          port : chocolate hexen ^(setup^)
+	REM # game *has* to be HEXEN for this engine
+	SET "GAME=HEXEN"
 )
 IF /I "%~1" == "choco-strife" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -517,6 +531,8 @@ IF /I "%~1" == "choco-strife" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-strife"
 	ECHO          port : chocolate strife
+	REM # game *has* to be STRIFE for this engine
+	SET "GAME=STRIFE"
 )
 IF /I "%~1" == "choco-strife-setup" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -526,6 +542,8 @@ IF /I "%~1" == "choco-strife-setup" (
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-strife"
 	ECHO          port : chocolate strife ^(setup^)
+	REM # game *has* to be STRIFE for this engine
+	SET "GAME=STRIFE"
 )
 IF /I "%~1" == "doom64ex" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -535,6 +553,8 @@ IF /I "%~1" == "doom64ex" (
 	SET "ENGINE_KIN=X"
 	SET "PORT_SAVE=doom64ex"
 	ECHO          port : DOOM 64 EX
+	REM # game *has* to be DOOM64 for this engine
+	SET "GAME=DOOM64"
 )
 IF /I "%~1" == "gzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -681,17 +701,21 @@ ECHO        engine : %ENGINE%
 
 REM # IWAD & PWAD:
 REM ====================================================================================================================
-REM # the save directory is based on the IWAD or PWAD.
-REM # we default to DOOM2 (most common IWAD used for PWADs)
-SET "IWAD=DOOM2.WAD"
-SET "SAVE_WAD=DOOM2"
-SET "PWAD="
+REM # the save directory is based on the IWAD or PWAD. The deafault IWAD may depend on engine selection,
+REM # but for "DOOM2" we default to DOOM2.WAD (most common IWAD used for PWADs)
+IF "%GAME%" == "DOOM"    SET "IWAD=DOOM.WAD"    & SET "SAVE_WAD=DOOM"
+IF "%GAME%" == "DOOM2"   SET "IWAD=DOOM2.WAD"   & SET "SAVE_WAD=DOOM2"
+IF "%GAME%" == "DOOM64"  SET "IWAD=DOOM64.WAD"  & SET "SAVE_WAD=DOOM64"
+IF "%GAME%" == "HERETIC" SET "IWAD=HERETIC.WAD" & SET "SAVE_WAD=HERETIC"
+IF "%GAME%" == "HEXEN"   SET "IWAD=HEXEN.WAD"   & SET "SAVE_WAD=HEXEN"
+IF "%GAME%" == "STRIFE"  SET "IWAD=STRIFE1.WAD" & SET "SAVE_WAD=STRIFE1"
 
-REM # remember the directory of the last file
+REM # we will remember the directory of the last file
 REM # (used for finding side-by-side WADs)
 SET "PREV_DIR="
 
-REM # read the IWAD first; the interpretation of the PWAD will depend upon the IWAD:
+REM # read the IWAD first;
+REM # the interpretation of the PWAD will depend upon the IWAD:
 
 REM # if no IWAD given, assume the default;
 REM # you cannot have a PWAD without an IWAD
@@ -710,8 +734,38 @@ SET "IWAD=%~1"
 SET "IWAD_EXT=%~x1"	& REM # remember the file extension (if any) for later
 SET "SAVE_WAD=%~n1"	& REM # the save games will be separated by IWAD/PWAD names
 
+REM # some ports require the file extensions for IWADs,
+REM # check if it's missing:
+IF "%IWAD_EXT%" == "" (
+	REM # check if a PK3 version exists
+	IF EXIST "%WADS%\%IWAD%.pk3" (
+		SET "IWAD=%IWAD%.pk3"
+	) ELSE (
+		REM # if both WAD & PK3 files exist with the same name, the WAD will be preferred
+		REM # -- this is for broader source-port compatibility but we also need to presume
+		REM #    ".WAD" going forward when searching for GOG / Steam installs
+		REM # TODO: Could do an engine check for support of PK3 / WAD?
+		SET "IWAD=%IWAD%.WAD"
+	)
+)
+
 REM # we delay checking the IWAD exists until we know the PWAD
 REM # -- if playing DOOM without a PWAD, we can offer the DOOM shareware instead of FreeDOOM
+
+REM # common IWADs will determine the type of game being played
+REM # (this includes launching the sharewares directly)
+FOR %%G IN ("%IWAD%") DO SET "IWAD_NAME=%%~nxG"
+IF /I "%IWAD_NAME%" == "DOOM.WAD"     SET "GAME=DOOM"
+IF /I "%IWAD_NAME%" == "DOOM1.WAD"    SET "GAME=DOOM"
+IF /I "%IWAD_NAME%" == "DOOM2.WAD"    SET "GAME=DOOM2"
+IF /I "%IWAD_NAME%" == "TNT.WAD"      SET "GAME=DOOM2"
+IF /I "%IWAD_NAME%" == "PLUTONIA.WAD" SET "GAME=DOOM2"
+IF /I "%IWAD_NAME%" == "DOOM64.WAD"   SET "GAME=DOOM64"
+IF /I "%IWAD_NAME%" == "HERETIC.WAD"  SET "GAME=HERETIC"
+IF /I "%IWAD_NAME%" == "HERETIC1.WAD" SET "GAME=HERETIC"
+IF /I "%IWAD_NAME%" == "HEXEN.WAD"    SET "GAME=HEXEN"
+IF /I "%IWAD_NAME%" == "STRIFE1.WAD"  SET "GAME=STRIFE"
+IF /I "%IWAD_NAME%" == "STRIFE0.WAD"  SET "GAME=STRIFE"
 
 REM # move to the next parameter
 SHIFT
@@ -733,6 +787,7 @@ IF "%NEXT:~0,1%" == "/" GOTO :iwad
 REM # read the PWAD parameter
 SET "PWAD=%~1"
 SET "SAVE_WAD=%~n1"
+SET "PWAD_NAME=%~nx1"
 SHIFT
 
 REM # if the PWAD exists, go validate the IWAD, as the action taken when the IWAD is missing is affected
@@ -746,44 +801,41 @@ REM # check the "current directory" that called this script
 SET "PWAD_PATH=%CUR_DIR%\%PWAD%"
 IF EXIST "%PWAD_PATH%" GOTO :iwad
 
-REM # TODO: check HEXDD.WAD
-
+REM # PWAD is missing, check Steam / GOG
+REM --------------------------------------------------------------------------------------------------------------------
 REM # are we looking for "No Rest for the Living?"
 REM # (part of DOOM 3 BFG Edition)
-IF "%PWAD%" == "NERVE.WAD"  GOTO :pwad_nerve
-IF "%PWAD%" == "NRFTL+.WAD" GOTO :pwad_nerve
+IF /I "%PWAD_NAME%" == "NERVE.WAD"  GOTO :pwad_nerve
+IF /I "%PWAD_NAME%" == "NRFTL+.WAD" GOTO :pwad_nerve
 REM # are we looking for "Master Levels for DOOM II"?
-IF /I "%PWAD:~0,7%" == "MASTER\" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "ATTACK.WAD"   GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "BLACKTWR.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "BLOODSEA.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "CANYON.WAD"   GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "CATWALK.WAD"  GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "COMBINE.WAD"  GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "FISTULA.WAD"  GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "GARRISON.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "GERYON.WAD"   GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "MANOR.WAD"    GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "MEPHISTO.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "MINOS.WAD"    GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "NESSUS.WAD"   GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "PARADOX.WAD"  GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "SUBSPACE.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "SUBTERRA.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "TEETH.WAD"    GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "TTRAP.WAD"    GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "VESPERAS.WAD" GOTO :pwad_master
+IF /I "%PWAD_NAME%" == "VIRGIL.WAD"   GOTO :pwad_master
+REM # TODO: check HEXDD.WAD
 
-GOTO :pwad_missing
-
-
-:pwad_master
-REM --------------------------------------------------------------------------------------------------------------------
-REM # extract the WAD name from that
-SET "WAD=%PWAD:~8%"
-
-REM # is Steam : Master Levels for DOOM II installed?
-CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
-IF NOT "%REG%" == "" (
-	REM # check if the WAD can be found there
-	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%" & GOTO :iwad
-)
-REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
-CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
-IF NOT "%REG%" == "" (
-	REM # check if the WAD can be found there
-	IF EXIST "%REG%\master\wads\%WAD%" SET "PWAD_PATH=%REG%\master\wads\%WAD%" & GOTO :iwad
-)
-
-REM # if the WAD was not found, we cannot continue
+REM # PWAD is missing and can't be substituted
 ECHO:
-ECHO   ERROR: "%WAD%" missing:
+ECHO  ERROR: the PWAD "%PWAD%" doesn't exist in the "%PWAD_PATH%" folder.
+ECHO  Command:
 ECHO:
-ECHO   You must purchase either "DOOM Classic Complete" from Steam or
-ECHO   "DOOM II + Final DOOM" from GOG to get "Master Levels for DOOM II";
-ECHO   doom.bat automatically finds it, if installed. If you have the Master Levels
-ECHO   WADs elsewhere, copy them to the "%WADS%\MASTER" folder and try again.
+ECHO     doom.bat %*
 ECHO:
 POPD
 PAUSE
@@ -815,14 +867,29 @@ POPD
 PAUSE
 EXIT /B 1
 
-:pwad_missing
+:pwad_master
 REM --------------------------------------------------------------------------------------------------------------------
+REM # is Steam : Master Levels for DOOM II installed?
+CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
+IF NOT "%REG%" == "" (
+	REM # check if the WAD can be found there
+	IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :iwad
+)
+REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
+CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
+IF NOT "%REG%" == "" (
+	REM # check if the WAD can be found there
+	IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :iwad
+)
 
+REM # if the WAD was not found, we cannot continue
 ECHO:
-ECHO  ERROR: the PWAD "%PWAD%" doesn't exist in the "%PWAD_PATH%" folder.
-ECHO  Command:
+ECHO   ERROR: "%PWAD%" missing:
 ECHO:
-ECHO     doom.bat %*
+ECHO   You must purchase either "DOOM Classic Complete" from Steam or
+ECHO   "DOOM II + Final DOOM" from GOG to get "Master Levels for DOOM II";
+ECHO   doom.bat automatically finds it, if installed. If you have the Master Levels
+ECHO   WADs elsewhere, copy them to the "%WADS%\MASTER" folder and try again.
 ECHO:
 POPD
 PAUSE
@@ -831,22 +898,7 @@ EXIT /B 1
 
 :iwad
 REM ====================================================================================================================
-REM # some ports require the file extensions for IWADs,
-REM # check if it's missing:
-IF "%IWAD_EXT%" == "" (
-	REM # check if a PK3 version exists
-	IF EXIST "%WADS%\%IWAD%.pk3" (
-		SET "IWAD=%IWAD%.pk3"
-	) ELSE (
-		REM # if both WAD & PK3 files exist with the same name, the WAD will be preferred
-		REM # -- this is for broader source-port compatibility but we also need to presume
-		REM #    ".WAD" going forward when searching for GOG / Steam installs
-		REM # TODO: Could do an engine check for support of PK3 / WAD?
-		SET "IWAD=%IWAD%.wad"
-	)
-)
-
-REM # this is where the IWAD is assumed to be
+REM # this is where the IWAD is first assumed to be
 SET "IWAD_PATH=%WADS%\%IWAD%"
 REM # if the IWAD exists as-is and requires no special provisions,
 REM # skip ahead; no edge-cases to handle
@@ -855,18 +907,22 @@ IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 REM # IWAD is missing,
 REM # now search GOG / Steam for the IWAD:
 
-IF /I "%IWAD%" == "DOOM.WAD"     GOTO :iwad_doomu
-IF /I "%IWAD%" == "DOOM2.WAD"    GOTO :iwad_doom2
-IF /I "%IWAD%" == "TNT.WAD"      GOTO :iwad_tnt
-IF /I "%IWAD%" == "PLUTONIA.WAD" GOTO :iwad_plutonia
-IF /I "%IWAD%" == "HERETIC.WAD"  GOTO :iwad_heretic
-IF /I "%IWAD%" == "HEXEN.WAD"    GOTO :iwad_hexen
+IF /I "%IWAD_NAME%" == "DOOM.WAD"     GOTO :iwad_doomu
+IF /I "%IWAD_NAME%" == "DOOM2.WAD"    GOTO :iwad_doom2
+IF /I "%IWAD_NAME%" == "TNT.WAD"      GOTO :iwad_tnt
+IF /I "%IWAD_NAME%" == "PLUTONIA.WAD" GOTO :iwad_plutonia
+IF /I "%IWAD_NAME%" == "HERETIC.WAD"  GOTO :iwad_heretic
+IF /I "%IWAD_NAME%" == "HEXEN.WAD"    GOTO :iwad_hexen
+REM # TODO: STRIFE
 
 REM # not a known iD / commerical IWAD
 GOTO :iwad_missing
 
 :iwad_doomu
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is DOOM
+SET "GAME=DOOM"
+
 REM # is Steam : The Ultimate DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -897,6 +953,9 @@ GOTO :iwad_check
 
 :iwad_doom2
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is DOOM2
+SET "GAME=DOOM2"
+
 REM # is Steam : DOOM II installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -927,6 +986,9 @@ GOTO :iwad_check
 
 :iwad_tnt
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is DOOM2
+SET "GAME=DOOM2"
+
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -943,6 +1005,9 @@ GOTO :iwad_check
 
 :iwad_plutonia
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is DOOM2
+SET "GAME=DOOM2"
+
 REM # is Steam : Final DOOM installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -959,6 +1024,9 @@ GOTO :iwad_check
 
 :iwad_heretic
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is HERETIC
+SET "GAME=HERETIC"
+
 REM # is Steam : Heretic installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2390" "InstallLocation"
 IF NOT "%REG%" == "" (
@@ -969,30 +1037,29 @@ GOTO :iwad_check
 
 :iwad_hexen
 REM --------------------------------------------------------------------------------------------------------------------
+REM # this implies the type of game being played is HEXEN
+SET "GAME=HEXEN"
+
 REM # is Steam : Hexen installed?
 CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2360" "InstallLocation"
 IF NOT "%REG%" == "" (
-	REM # check if HERETIC.WAD can be found there
+	REM # check if HEXEN.WAD can be found there
 	IF EXIST "%REG%\base\HEXEN.WAD" SET "IWAD_PATH=%REG%\base\HEXEN.WAD" & GOTO :iwad_found
 )
 
+REM --------------------------------------------------------------------------------------------------------------------
+
 :iwad_check
 REM # did we find the IWAD in GOG / Steam?
-REM # TODO: if IWAD was found in GOG / Steam, offer to copy it into PortaDOOM?
 IF EXIST "%IWAD_PATH%" GOTO :iwad_found
 
-
-:iwad_missing
-REM --------------------------------------------------------------------------------------------------------------------
-REM # IWAD really cannot be found, substitute for shareware or FreeDOOM:
-
-REM # if playing a PWAD, FreeDOOM can be substituted
-IF NOT "%PWAD%" == "" GOTO :iwad_freedoom
+REM # IWAD really cannot be found,
+REM # substitute for shareware or FreeDOOM:
 
 :iwad_shareware
 REM # if the user is trying to play just DOOM as-is without a PWAD,
 REM # then the best thing to do is offer them the shareware version:
-IF /I "%IWAD%" == "DOOM.WAD" (
+IF "%GAME%-%PWAD%" == "DOOM-" (
 	ECHO:
 	ECHO   WARNING! Could not find registered DOOM.WAD:
 	ECHO:
@@ -1010,11 +1077,71 @@ IF /I "%IWAD%" == "DOOM.WAD" (
 	
 	GOTO :iwad_found
 )
+REM # likewise, Heretic
+IF "%GAME%-%PWAD%" == "HERETIC-" (
+	ECHO:
+	ECHO   WARNING! Could not find registered HERETIC.WAD:
+	ECHO:
+	ECHO   -- The shareware version will be launched instead which is limited to the
+	ECHO      first episode. Please purchase "Heretic: Shadow of the Serpent Riders"
+	ECHO      from Steam, or place your own copy of "HERETIC.WAD" in the
+	ECHO      "%WADS%" folder.
+	ECHO:
+	ECHO      press any key to continue
+	PAUSE >NUL
+	
+	REM # we keep %SAVE_WAD% as "HERETIC" so that save games from
+	REM # shareware Heretic can be re-used in the full game
+	SET "IWAD_PATH=SHAREWARE\HERETIC1.WAD"
+	
+	GOTO :iwad_found
+)
+REM # and Hexen
+IF "%GAME%-%PWAD%" == "HEXEN-" (
+	ECHO:
+	ECHO   WARNING! Could not find registered HEXEN.WAD:
+	ECHO:
+	ECHO   -- The shareware version will be launched instead which is limited to the
+	ECHO      first episode. Please purchase "Hexen: Beyond Heretic" from Steam,
+	ECHO      or place your own copy of "HEXEN.WAD" in the "%WADS%" folder.
+	ECHO:
+	ECHO      press any key to continue
+	PAUSE >NUL
+	
+	REM # Hexen does not have different WAD names for shareware/registered
+	SET "IWAD_PATH=SHAREWARE\HEXEN.WAD"
+	
+	GOTO :iwad_found
+)
 
-REM # TODO: Heretic, Hexen & Strife Sharewares
+REM # TODO: Strife Shareware
+
+:iwad_freedoom
+REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
+SET "FREEDOOM="
+REM # TODO: check these files exist too
+IF /I "%IWAD_NAME%" == "DOOM.WAD"  SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom1.wad"
+IF /I "%IWAD_NAME%" == "DOOM2.WAD" SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom2.wad"
+
+IF NOT "%FREEDOOM%" == "" (
+	ECHO:
+	ECHO   WARNING! COULD NOT FIND "%WADS%\%IWAD%"
+	ECHO   -- USING FREEDOOM AS REPLACEMENT
+	ECHO:
+	ECHO      press any key to continue
+	PAUSE  >NUL
+	ECHO:
+	
+	SET "IWAD_PATH=%FREEDOOM%"
+	GOTO :wad_found
+)
+
+REM # TODO: this is where we'd substitute HERETIC.WAD for BLASPHEMER.WAD,
+REM # but that's not complete yet
 
 REM # IWAD doesn't exist and there isn't a substitution
 REM # TODO: DOOM2, Final DOOM specific error messages...
+:iwad_missing
 ECHO:
 ECHO   ERROR! the file:
 ECHO:
@@ -1030,49 +1157,8 @@ POPD
 PAUSE
 EXIT /B 1
 
-:iwad_freedoom
-REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
-SET "FREEDOOM="
-REM # TODO: check these files exist too
-IF /I "%IWAD%" == "DOOM.WAD"  SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom1.wad"
-IF /I "%IWAD%" == "DOOM2.WAD" SET "FREEDOOM=%WADS%\conversions\freedoom\freedoom2.wad"
-
-IF NOT "%FREEDOOM%" == "" (
-	ECHO:
-	ECHO   WARNING! COULD NOT FIND "%WADS%\%IWAD%"
-	ECHO   -- USING FREEDOOM AS REPLACEMENT
-	ECHO:
-	ECHO      press any key to continue
-	PAUSE  >NUL
-	ECHO:
-	
-	SET "IWAD_PATH=%FREEDOOM%"
-	
-) ELSE (
-	REM # no other choice
-	REM # TODO: support Blasphemer.wad
-	ECHO:
-	ECHO   ERROR! the file:
-	ECHO:
-	IF "%IWAD_EXT%" == "" (
-		ECHO       "%WADS%\%IWAD%.WAD" or
-		ECHO       "%WADS%\%IWAD%.PK3"
-	) ELSE (
-		ECHO       "%WADS%\%IWAD%"
-	)
-	ECHO:
-	ECHO   doesn't exist.
-	ECHO:
-	ECHO   Command:
-	ECHO:
-	ECHO     doom.bat %*
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-)
-
 :iwad_patchbfg
+REM --------------------------------------------------------------------------------------------------------------------
 REM # patch DOOM 3 BFG Edition IWADs
 SET "BFG_PATCH="
 ECHO:
@@ -1084,11 +1170,11 @@ REM # the patched file will be saved there to avoid unintentional "stealing" of 
 FOR %%G IN ("%IWAD_PATH%") DO SET "BFG_PATH=%%~dpG"
 
 REM # DOOM or DOOM2?
-IF /I "%IWAD%" == "DOOM.WAD" (
+IF /I "%GAME%" == "DOOM" (
 	SET "BFG_PATCH=bfg-to-ud.vcdiff"
 	SET "BFG_PATCH_WAD=DOOMU_BFG_PATCHED.WAD"
 )
-IF /I "%IWAD%" == "DOOM2.WAD" (
+IF /I "%GAME%" == "DOOM2" (
 	SET "BFG_PATCH=bfg-to-1.9.vcdiff"
 	SET "BFG_PATCH_WAD=DOOM2_BFG_PATCHED.WAD"
 )
@@ -1103,6 +1189,7 @@ REM # now use the patched IWAD
 SET "IWAD_PATH=%BFG_WADPATH%"
 
 :iwad_found
+REM --------------------------------------------------------------------------------------------------------------------
 ECHO         -iwad : %IWAD_PATH%
 
 REM # is the IWAD path absolute?
