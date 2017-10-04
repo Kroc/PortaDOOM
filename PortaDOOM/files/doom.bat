@@ -1225,17 +1225,11 @@ REM # is the PWAD path absolute?
 REM # (i.e. begins with a drive letter, making ":" the second character)
 IF NOT "%PWAD_PATH:~1,1%" == ":" SET "PWAD_PATH=%FIX_PATH%\%PWAD_PATH%"
 
-REM # IMPORTANT NOTE: Chocolate-DOOM will not be able handle PWADs unless
-REM # the `-merge` switch is used, this is due to historical accuracy,
-REM # see <www.chocolate-doom.org/wiki/index.php/WAD_merging_capability>
-IF "%ENGINE_KIN%" == "V" (
-	SET PARAMS=%PARAMS% -merge "%PWAD_PATH%"
-) ELSE (
-	REM # the PWAD should appear as the first in the `-file` list
-	SET FILES=%FILES% "%PWAD_PATH%"
-	REM # ensure that the files section is included in the end
-	SET ANY_WAD=1
-)
+REM # the PWAD should appear as the first in the `-file` list
+SET FILES=%FILES% "%PWAD_PATH%"
+REM # ensure that the files section is included in the end
+REM # (i.e. if no other files are included)
+SET ANY_WAD=1
 
 :params_begin
 REM # are there any parameters?
@@ -1466,7 +1460,14 @@ REM ----------------------------------------------------------------------------
 REM ====================================================================================================================
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
-	SET PARAMS=%PARAMS% -file %FILES%
+	REM # IMPORTANT NOTE: Chocolate-DOOM will not be able handle PWADs unless
+	REM # the `-merge` switch is used, this is due to historical accuracy,
+	REM # see <www.chocolate-doom.org/wiki/index.php/WAD_merging_capability>
+	IF "%ENGINE_KIN%" == "V" (
+		SET PARAMS=%PARAMS% -merge %FILES%
+	) ELSE (
+		SET PARAMS=%PARAMS% -file %FILES%
+	)
 )
 REM # DeHackEd extensions?
 IF %ANY_DEH% EQU 1 (

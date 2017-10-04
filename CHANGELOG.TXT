@@ -6,6 +6,7 @@
 + Added GZDoom 3.2, replaces 3.1 as the default
 - Removed separate "UPX Compress DOOM Engines" script and re-integrated it back
   into "Build.bat"
+* Fixed chocolate-doom IWAD merging with multiple included files
 * Build script improved to allow choosing which release to build
 
 03-OCT-17:
