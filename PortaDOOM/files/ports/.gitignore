@@ -37,3 +37,4 @@ gzdoom-dev/
 **/stdout.txt
 **/stderr.txt
 **/CRASHLOG.TXT
+**/*.sf2

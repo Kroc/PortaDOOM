@@ -23,6 +23,10 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] GZDoom 3.2+ supports Rise of the Wool Ball as an IWAD
+[ ] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
+[ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when inputting text, even when using a mouse"
+
 [X] Internally determine which 'game' (DOOM/HERETIC/HEXEN &c.) is being played
 	[ ] Add Strife, Adventures of Square and Chex support
 

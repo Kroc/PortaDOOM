@@ -14,7 +14,7 @@ files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
 
 files\ports\chocolate-doom\
-files\ports\gzdoom-31_*\
+files\ports\gzdoom-32_*\
 files\ports\prboom+\
 
 pages\Home #??.dosmag

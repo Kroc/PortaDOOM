@@ -23,8 +23,9 @@ ECHO    [J] GZDoom v2.2.x : 32-bit      [K] GZDoom v2.2.x : 64-bit
 ECHO    [L] GZDoom v2.3.x : 32-bit      [M] GZDoom v2.3.x : 64-bit
 ECHO    [N] GZDoom v2.4.x : 32-bit      [O] GZDoom v2.4.x : 64-bit
 ECHO    [P] GZDoom v3.1.x : 32-bit      [Q] GZDoom v3.1.x : 64-bit
+ECHO    [R] GZDoom v3.2.x : 32-bit      [S] GZDoom v3.2.x : 64-bit
 ECHO:
-CHOICE /C XABCDEFGHIJKLMNOPQR /N
+CHOICE /C XABCDEFGHIJKLMNOPQRS /N
 
 IF %ERRORLEVEL% EQU 1  EXIT /B
 IF %ERRORLEVEL% EQU 2  CALL ..\doom.bat /WAIT /CONSOLE     choco-doom-setup    SHAREWARE\DOOM1.WAD
@@ -44,5 +45,7 @@ IF %ERRORLEVEL% EQU 15 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-24           S
 IF %ERRORLEVEL% EQU 16 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-24           SHAREWARE\DOOM1.WAD
 IF %ERRORLEVEL% EQU 17 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-31           SHAREWARE\DOOM1.WAD
 IF %ERRORLEVEL% EQU 18 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-31           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 19 CALL ..\doom.bat /WAIT /CONSOLE /32 gzdoom-32           SHAREWARE\DOOM1.WAD
+IF %ERRORLEVEL% EQU 20 CALL ..\doom.bat /WAIT /CONSOLE     gzdoom-32           SHAREWARE\DOOM1.WAD
 
 GOTO :menu

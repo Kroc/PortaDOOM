@@ -169,7 +169,7 @@ IF "%~1" == "" (
 	ECHO     %_ENGINE_%choco-strife-setup%_%  : As above, but displays configuration first
 	ECHO     %_ENGINE_%doom64ex%_%            : DOOM 64 EX, specifically for DOOM 64
 	ECHO     %_ENGINE_%gzdoom%_%              : GZDoom current. Use %_OPTIONS_%/SW%_% for ZDoom software rendering
-	ECHO     %_ENGINE_%gzdoom-??%_%           : Where ?? is "22", "23", "24" or "31"
+	ECHO     %_ENGINE_%gzdoom-??%_%           : Where ?? is "22", "23", "24", "31" or "32"
 	ECHO     %_ENGINE_%prboom%_%              : PRBoom+ defaults to OpenGL. Use %_OPTIONS_%/SW%_% for software
 	ECHO     %_ENGINE_%zandronum%_%           : Zandronum current ^(2.x^)
 	ECHO     %_ENGINE_%zandronum-?%_%         : Where ? is "2" or "3"
@@ -558,12 +558,21 @@ IF /I "%~1" == "doom64ex" (
 )
 IF /I "%~1" == "gzdoom" (
 	REM ------------------------------------------------------------------------------------------------------------
-	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
+	SET "ENGINE_DIR=%PORTS%\gzdoom-32_%ENGINE_BIT%"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	ECHO          port : gzdoom ^(current^)
+)
+IF /I "%~1" == "gzdoom-32" (
+	REM ------------------------------------------------------------------------------------------------------------
+	SET "ENGINE_DIR=%PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	ECHO          port : gzdoom ^(v3.2.x^)
 )
 IF /I "%~1" == "gzdoom-31" (
 	REM ------------------------------------------------------------------------------------------------------------
@@ -672,7 +681,7 @@ IF /I "%~1" == "zandronum-3" (
 REM # no engine specified?
 IF "%PORT_SAVE%" == "" (
 	REM # use default engine
-	SET "ENGINE_DIR=%PORTS%\gzdoom-31_%ENGINE_BIT%"
+	SET "ENGINE_DIR=%PORTS%\gzdoom-32_%ENGINE_BIT%"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"

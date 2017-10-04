@@ -22,7 +22,7 @@ SET "ZIP_MAX=-ms=on -mqs=on -mhc=on -mx=9 -myx=9"
 SET "ZIP_MIN=-ms=off -mhc=off -mx=0 -myx=0"
 
 :menu
-CLS
+CLS & TITLE PortaDOOM Build Tools:
 ECHO:
 ECHO  Build PortaDOOM:
 ECHO:
@@ -43,6 +43,7 @@ SET /P "$=Enter choice: "
 
 IF "%$%" == "1" GOTO :do_release
 IF "%$%" == "2" GOTO :do_dosmag_copy
+IF "%$%" == "3" GOTO :do_upx
 IF "%$%" == "8" GOTO :do_dosmag_pull
 IF "%$%" == "9" GOTO :do_dosmag_push
 
@@ -117,6 +118,7 @@ REM # restore the original home page
 ERASE "pages\Home #01.dosmag"
 REN "pages\Home #01.old" "Home #01.dosmag"
 IF ERRORLEVEL 1 PAUSE & EXIT
+PAUSE & EXIT
 
 ECHO * Make PortaDOOM_Cacowards2015 ...
 REM --------------------------------------------------------------------------------------------------------------------
@@ -195,7 +197,6 @@ EXIT /B
 
 :do_dosmag_push
 REM ====================================================================================================================
-
 CLS
 ECHO Pushing DOSmag changes to GitHub:
 ECHO:
@@ -205,3 +206,36 @@ git subtree push --prefix DOSmag dosmag master
 ECHO:
 PAUSE
 EXIT /B
+
+:do_upx
+REM ====================================================================================================================
+CLS & TITLE UPX Compress DOOM Engines...
+ECHO:
+ECHO Compress DOOM Engines using UPX:
+ECHO - This may take a long time
+ECHO - This will permenantly alter the EXEs!
+ECHO - Already compressed EXEs will be skipped;
+ECHO   only run this script when the engines are updated
+ECHO:
+
+SET "FILES="
+
+FOR /R ".\PortaDOOM\files\ports" %%F IN (*.exe) DO (
+	REM # test if the exeutable is already compressed
+	SET EXE_FILE=%%~F
+	SET "EXE_INFO="
+	CALL :upx
+)
+
+ECHO:
+PAUSE & GOTO:EOF
+
+:upx
+REM --------------------------------------------------------------------------------------------------------------------
+REM # check if the file is already compressed
+FOR /F "delims=" %%G IN ('bin\upx\upx.exe -qqq -l "%EXE_FILE%"') DO @SET EXE_INFO=%%G
+REM # if not compressed, run UPX on the executable
+IF "%EXE_INFO%" == "" (
+	bin\upx\upx.exe --all-methods --all-filters --ultra-brute "%EXE_FILE%"
+)
+GOTO:EOF

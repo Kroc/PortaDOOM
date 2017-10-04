@@ -2,6 +2,11 @@
 + = New feature / addition
 - = Removal
 
+04-OCT-17:
++ Added GZDoom 3.2, replaces 3.1 as the default.
+- Removed separate "UPX Compress DOOM Engines" script and re-integrated it back
+  into "Build.bat"
+
 03-OCT-17:
 + Added Heretic, Hexen shareware substitution in doom.bat
 * Improved IWAD/PWAD logic throughout doom.bat

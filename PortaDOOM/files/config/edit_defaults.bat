@@ -61,19 +61,19 @@ IF /I "%$%" == "C" (
 )
 IF /I "%$%" == "D" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.zandronum-3.cfg" DEL "%SAVES%\zandronum\config.zandronum-3.ini"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.zandronum-3.ini" DEL "%SAVES%\zandronum\config.zandronum-3.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT zandronum-3 SHAREWARE\DOOM1.WAD
 )
 IF /I "%$%" == "E" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.zandronum-2.cfg" DEL "%SAVES%\zandronum\config.zandronum-2.ini"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.zandronum-2.ini" DEL "%SAVES%\zandronum\config.zandronum-2.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT zandronum-2 SHAREWARE\DOOM1.WAD
 )
 IF /I "%$%" == "F" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.gzdoom.cfg" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.gzdoom.ini" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT gzdoom SHAREWARE\DOOM1.WAD
 )
@@ -95,7 +95,7 @@ IF /I "%$%" == "H" (
 )
 IF /I "%$%" == "I" (
 	REM # delete the user's config that would override the default
-	IF EXIST "%SAVES%\config.gzdoom.cfg" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.gzdoom.ini" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT gzdoom SHAREWARE\HERETIC1.WAD
 )
