@@ -38,10 +38,10 @@ ECHO:
 ECHO     [8]  `git pull` DOSmag
 ECHO     [9]  `git push` DOSmag
 ECHO:
+
+SET "P="
 SET /P "$=Enter choice: "
-
-
-IF "%$%" == "1" GOTO :do_release
+IF "%$%" == "1" GOTO :do_release_menu
 IF "%$%" == "2" GOTO :do_dosmag_copy
 IF "%$%" == "3" GOTO :do_upx
 IF "%$%" == "8" GOTO :do_dosmag_pull
@@ -51,7 +51,6 @@ GOTO :menu
 
 :select_compression
 REM ====================================================================================================================
-CLS
 ECHO:
 ECHO  Select Compression Level:
 ECHO:
@@ -59,39 +58,11 @@ ECHO     [0]  None
 ECHO     [1]  Maximum
 ECHO:
 SET /P "$=Enter choice: "
-ECHO:
 
 SET CMPLVL=0
 IF "%$%" == "0" SET CMPLVL=0
 IF "%$%" == "1" SET CMPLVL=1
 
-GOTO:EOF
-
-
-:do_release
-REM ====================================================================================================================
-CLS & TITLE Creating PortaDOOM release...
-CALL :select_compression
-
-ECHO * Clean Up
-REM --------------------------------------------------------------------------------------------------------------------
-DEL PortaDOOM\PortaDOOM.upx		>NUL 2>&1
-DEL build\PortaDOOM.7z			>NUL 2>&1
-DEL build\PortaDOOM_Cacowards2015.7z	>NUL 2>&1
-
-ECHO * Copy DOSmag executable
-REM --------------------------------------------------------------------------------------------------------------------
-COPY /Y DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
-ECHO:
-
-IF %CMPLVL% EQU 1 (
-	ECHO * Compress DOSmag executable
-	ECHO:
-	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
-	ECHO:
-)
-
-REM --------------------------------------------------------------------------------------------------------------------
 REM # a         : add to archive
 REM # -bso0	: disable message output
 REM # -bsp1	: display only progress
@@ -102,67 +73,170 @@ REM # -xr...	: exclude files (recursively)
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
-PUSHD PortaDOOM
+COPY /Y DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
+ECHO:
 
-ECHO * Make PortaDOOM_5YearsOfDoom ...
-REM --------------------------------------------------------------------------------------------------------------------
-REM # swap over the homepages
-REN "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 5 Years of Doom.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF %CMPLVL% EQU 1 (
+	ECHO * Compress DOSmag executable
+	ECHO:
+	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
+	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
+	ECHO:
+)
 
-REM # 7ZIP
-"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards5years.lst -- ..\build\PortaDOOM_5YearsOfDoom.7z
+GOTO:EOF
 
-REM # restore the original home page
-ERASE "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
-PAUSE & EXIT
 
-ECHO * Make PortaDOOM_Cacowards2015 ...
-REM --------------------------------------------------------------------------------------------------------------------
-REM # swap over the homepages
-REN "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2015.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
+:do_release_menu
+REM ====================================================================================================================
+CLS & TITLE PortaDOOM Build Tools:
+ECHO:
+ECHO  Select Release to Build:
+ECHO:
+ECHO     [A]  All
+ECHO:
+ECHO     [B]  Cacowards: 2016
+ECHO     [C]  Cacowards: 2015
+ECHO     [D]  Cacowards: 5 Years of Doom
+ECHO:
 
-REM # 7ZIP
-"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards2015.lst -- ..\build\PortaDOOM_Cacowards2015.7z
+SET "P="
+SET /P "$=Enter choice: "
+IF /I "%$%" == "A" GOTO :do_release_all
+IF /I "%$%" == "B" GOTO :do_release_cacowards2016
+IF /I "%$%" == "C" GOTO :do_release_cacowards2015
+IF /I "%$%" == "D" GOTO :do_release_5yearsofdoom
 
-REM # restore the original home page
-ERASE "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
+GOTO :menu
 
-ECHO * Make PortaDOOM_Cacowards2016 ...
-REM --------------------------------------------------------------------------------------------------------------------
-REM # swap over the homepages
-REN "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2016.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
 
-REM # 7ZIP
-"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl -xr@..\bin\ignore.lst -i@..\bin\include_cacowards2016.lst -- ..\build\PortaDOOM_Cacowards2016.7z
+:do_release_all
+REM ====================================================================================================================
+CLS & TITLE Creating PortaDOOM release...
+CALL :select_compression
 
-REM # restore the original home page
-ERASE "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-POPD
-PAUSE & EXIT /B
+CALL :do_5yearsofdoom
+CALL :do_cacowards2015
+call :do_cacowards2016
 
 ECHO * Make PortaDOOM ...
 REM --------------------------------------------------------------------------------------------------------------------
 REM # 7ZIP
-"%BIN_7ZA%" a -bso0 -bsp1 -r %ZIP_LVL% -stl -xr@bin\ignore.lst -- build\PortaDOOM.7z PortaDOOM
+"%BIN_7ZA%" a -bso0 -bsp1 -r %ZIP_LVL% -stl ^
+	-xr@bin\ignore.lst ^
+	-- build\PortaDOOM.7z PortaDOOM
 
 ECHO:
 ECHO Complete.
 ECHO:
 PAUSE
 EXIT /B
+
+
+:do_release_cacowards2016
+REM ====================================================================================================================
+TITLE Creating PortaDOOM release...
+CALL :select_compression
+CALL :do_cacowards2016
+PAUSE & GOTO:EOF
+
+:do_cacowards2016
+REM --------------------------------------------------------------------------------------------------------------------
+ECHO * Make PortaDOOM_Cacowards2016 ...
+
+REM # the archive will be built without a base folder
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+REN  "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 2016.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl ^
+	-xr@..\bin\ignore.lst ^
+	-i@..\bin\include_cacowards2016.lst ^
+	-- ..\build\PortaDOOM_Cacowards2016.7z
+IF ERRORLEVEL 1 PAUSE
+
+REM # restore the original home page
+DEL "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+POPD
+GOTO:EOF
+
+
+:do_release_cacowards2015
+REM ====================================================================================================================
+TITLE Creating PortaDOOM release...
+CALL :select_compression
+CALL :do_cacowards2015
+PAUSE & GOTO:EOF
+
+:do_cacowards2015
+REM --------------------------------------------------------------------------------------------------------------------
+ECHO * Make PortaDOOM_Cacowards2015 ...
+
+REM # the archive will be built without a base folder
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+REN  "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 2015.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl ^
+	-xr@..\bin\ignore.lst ^
+	-i@..\bin\include_cacowards2015.lst ^
+	-- ..\build\PortaDOOM_Cacowards2015.7z
+IF ERRORLEVEL 1 PAUSE
+
+REM # restore the original home page
+DEL "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+POPD
+GOTO:EOF
+
+
+:do_release_5yearsofdoom
+REM ====================================================================================================================
+TITLE Creating PortaDOOM release...
+CALL :select_compression
+CALL :do_5yearsofdoom
+PAUSE & GOTO:EOF
+
+:do_5yearsofdoom
+REM --------------------------------------------------------------------------------------------------------------------
+ECHO * Make PortaDOOM_5YearsOfDoom ...
+DEL build\PortaDOOM_5YearsOfDoom.7z	>NUL 2>&1
+
+REM # the archive will be built without a base folder
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+REN  "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM Cacowards 5 Years of Doom.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl ^
+	-xr@..\bin\ignore.lst ^
+	-i@..\bin\include_cacowards5years.lst ^
+	-- ..\build\PortaDOOM_5YearsOfDoom.7z
+IF ERRORLEVEL 1 PAUSE
+
+REM # restore the original home page
+DEL "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+POPD
+GOTO:EOF
 
 
 :do_dosmag_copy

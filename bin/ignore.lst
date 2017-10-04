@@ -28,10 +28,10 @@ VOICES.WAD
 
 NERVE.WAD
 NRFTL+.WAD
-files/wads/MASTER/*.wad
+MASTER/*.wad
 
 # don't include any save-files
-files/saves/*
+saves/*
 
 # exclude any screenshots
 *screenshot*
