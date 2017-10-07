@@ -1,8 +1,10 @@
 $THEME=BLUE
-$KEY:A=GOTO:InstaDoom
+$KEY:A=GOTO:Cabal Series #08
+$KEY:B=GOTO:InstaDoom
 
 ^C:INDEX :: I
 
 :-------------------------------------------------------------------------------
 
-- [A] *InstaDoom										Jokes
+- [A] *Cabal Series: Image of Evil						5 Years of Doom
+- [B] *InstaDoom										Jokes

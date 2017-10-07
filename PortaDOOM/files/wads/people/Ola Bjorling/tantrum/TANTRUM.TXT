@@ -1,0 +1,96 @@
+================================================================
+Title                   : Tantrum
+Filename                : TANTRUM.WAD
+Author                  : Ola Bj”rling (aka "mokum")
+Email Address           : ola.bjorling@pocab.se
+Misc. Author Info       : DOOM II addict, perfectionist (see the level...)
+                          17 years old (young) , from Krokom, near ™stersund
+                          in Sweden. Proud of his level. :-)
+
+Description             : Lots of different brick walls and corrosed metal.
+                          (Excuse my english, I think it's called corrosed,
+                          what I mean is metal with corrosion.)
+                          Dark, (not TOO dark) sunset-like feeling. Lots of 
+                          brilliant light shadings. Clever setup, very good 
+                          looking and fun to play. 
+                          There's no story, just go out there and kick some 
+                          daemon butt!
+
+Additional Credits to   : Jeff Rabenhurst for the brilliant EdMap 1.40 id for 
+                          making that game, what's it called... :) 
+                          I think this level is at least as good as any other 
+                          I have ever played, even though this is only my 
+                          second release level.
+                          Lots of inspiration from Andre Sverre Kvernmo,
+                          one of the "The Master Levels" authors. His level
+                          "The Image Of Evil" is an incredible piece of art,
+                          but not much fun to play...
+
+                          I also got some inspiration from the Quake Screen-
+                          shots.
+                          
+                          Jeff, please make EdMap able to deal with maps
+                          bigger than 150K! It keeps hanging up! (Even though
+                          I have 629K free!)
+================================================================
+
+* Play Information *
+
+Game                    : DOOM II
+Episode and Level #     : MAP 01
+Single Player           : Yes that was my original intention.
+Cooperative 2-4 Player  : Yes, could be fun. A few places perfect for coop.
+                          NOT TESTED!!!!
+Deathmatch 2-4 Player   : Yes, the starting points are there, but for you who 
+                          like to blast someone every 3 seconds, this level
+                          is a bit big. NOT TESTED!!!!
+Difficulty Settings     : Yes, UV only for people with a deathwish. 
+New Sounds              : No. Tantrum is just pure ass-kicking level!
+New Graphics            : No. id did a great job. 
+New Music               : No, but IDMUS16 gives moody music.  
+Demos Replaced          : None 
+
+* Construction *
+
+Base                    : New level from scratch with inspiration from 
+                          several different pwads. (And my own sick mind...)
+
+Editor(s) used          : In the beginning I used DoomEd v2.60 beta 4 but
+                          as soon as I got EdMap 1.20 I used that one.
+                          IDBSP 1.0 was also used. (Better that 1.0.1)
+                          When the level got bigger than 150K IDBSP crashed
+                          and I had to use WARM (another bsp), but it did
+                          something strange - the map disappeared! (Not the
+                          level - the map you get when you press TAB.)
+                          (Fixed that now, but I don't know how I did it.=)
+
+Known Bugs              : Perhaps there are a few cosmetic errors etc, but
+                          I've playtested it a *LOT* and couldn't find 
+                          anything that could be called a bug. Runs a bit slow
+                          in the bloodfalls room on full screen on my DX4 100
+                          but that is due to over 200 2S lines in sight, 
+                          nothing else. (Well, the overall map size has an
+                          effect on the speed, but not that much. WARM is 
+                          a bsp that gives really fast levels.)
+
+
+* Copyright / Permissions *
+
+Authors may NOT use this level as a base to build additional
+levels. Please, if you would like to, I can help you with your PWAD instead of 
+you stealing from tantrum.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.
+
+
+* Where to get this WAD *
+
+FTP sites: ftp.cdrom.com and its mirrors
+
+BBS numbers: ?
+
+Other: Why is this part included? The one who reads it has obviously allready
+got the damn thing! Now play it! (Tha DooM Shack has got it.)

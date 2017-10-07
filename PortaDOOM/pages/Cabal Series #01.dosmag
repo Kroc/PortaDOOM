@@ -1,0 +1,39 @@
+$NAV=People
+$NAV=Sverre Kvernmo
+$KEY:M=GOTO:Master Levels
+$KEY:A=PAGE:#02
+$KEY:B=GOTO:Master Levels #15
+$KEY:C=PAGE:#03
+$KEY:D=PAGE:#04
+$KEY:E=GOTO:Master Levels #16
+$KEY:F=PAGE:#05
+$KEY:G=GOTO:Master Levels #21
+$KEY:H=PAGE:#06
+$KEY:I=PAGE:#07
+$KEY:J=GOTO:Master Levels #20
+$KEY:K=PAGE:#08
+$KEY:#=URL:https://doomwiki.org/wiki/Cabal
+
+^C:Cabal Series
+:===============================================================================
+
+*Cabal* is a series of maps by _Sverre André Kvernmo (Cranium)_. They were to eventually become a 32-map megawad, but when he was contracted to contribute to the *[M] Master Levels for Doom II*, he sent the twelve maps he had already finished for this project. Five were kept, and the other seven were later released as the Cabal series.
+
+The protagonist in the Cabal series' story is not the usual space marine, but a cyberdemon lord betrayed by his peers and transformed into a human. Driven by the desire for revenge, he sets out to slaughter the conspirators and all those who now serve them instead of him.
+
+The level progression would probably have been something relatively similar to this:
+
+- [A] CABAL1	*Bloodflood
+- [B] BLOODSEA	*Bloodsea Keep (Master Levels)
+- [C] CABAL2	*Derelict Station
+- [D] CABAL3	*The Watchtower
+- [E] MEPHISTO	*Mephisto's Maosoleum (Master Levels)
+- [F] CABAL4	*Temple of Death
+- [G] TEETH		*The Express Elevator to Hell (Master Levels)
+- [H] CABAL5	*We Who are About to Die
+- [I] CABAL6	*Eye of the Storm
+- [J] BLACKTWR	*Black Tower (Master Levels)
+- [K] CABAL7	*The Image of Evil
+
+:===============================================================================
+^CContent of this page taken from: [#] _doomwiki.org/wiki/Cabal_

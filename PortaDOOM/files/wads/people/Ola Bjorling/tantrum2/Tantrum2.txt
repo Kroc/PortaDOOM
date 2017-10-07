@@ -1,0 +1,149 @@
+================================================================
+Title                   : Tantrum 2
+Filename                : TANTRUM2.WAD
+Author                  : Ola Bjorling (With funky dots over the o
+                          in Bjorling.)
+Email Address           : ola@techno.org
+Homepage		: http://members.xoom.com/bjorling
+Misc. Author Info       : Sported a full 10 fingers at the last count.
+			  Go see the homepage for more essential info.
+
+Description             : Sweet level with bricks and corroded metal as its
+                          main texture theme. Some wood and marble too. 
+			  I've pushed the engine to its very limit in just
+			  about every damn area - enormous level of detail.
+			  A LOT harder on UV than the first version, but
+                          lower skills should suit mortal players fine.
+                          The level is now highly non-linear. Woohoo.
+
+			  There's no silly plot, just kill stuff.
+
+Other files by author   : A few:
+			  venom.zip		SP level
+			  talosian.zip		SP level (map08)
+			  gothic2.zip		Did some graphics
+			  darken.zip		Did some graphics
+
+			  Coming up (as of writing this):
+			  overload.zip		DM level pack with new graphics
+                          http://members.xoom.com/bjorling
+
+			  darken2.zip		DM level and loads of graphics
+                          http://www.doomworld.com/darkening
+
+			  mordeth 3		Some graphics
+                          http://www.warande.ruu.nl/~glahaut/mordeth.htm
+
+			  Slaughter DM		Some graphics
+                          http://www.doomworld.com/slaughterdm
+
+			  Crucified Dreams	One level, some graphics
+                          http://www.doomworld.com/crucified_dreams
+
+			  And some minor work on:
+			  Hell Revealed 2	Sky texture
+			  Mortality		Sky texture
+
+			  I might have forgotten some, but these are the main
+			  ones. Check out my homepage for the latest news on
+			  whats released.
+
+Additional Credits to   : * Jeff Rabenhorst for the brilliant EdMap.
+
+                          * Kurt Kessler for a LOT of inspiration.
+
+                          * Nick Baker, Scott Cover, and Mike Reid for
+			    testing. Eric James Roberts and Mike Watson
+			    for pointing out small flaws.
+
+                          * id for making YEAHYEAHYEAH you know what I was
+                            going to write. 
+
+                          * Lee Killough for teaching me a lot about VPOs
+                            and slime-trails. Also thanks for letting me
+                            use BSP 2.4 beta.
+
+                          * Jim Flynn for VERY essential help when EdMap was
+                            acting strange and screwing up my level. The level
+                            might not have been released if it wasn`t for him.
+
+                          * Julia.
+
+Pointless greetings to
+(in total lack of order): Tom "Mystican" Robinson, Mike "Cyberdemon" Watson,
+                          Nick "NiGHTMARE" Baker, Jonas "Chrozoron" Feragen,
+                          Gaston "Mordeth" Lahaut, Eric James "Ricrob"
+                          Roberts, Malcolm Sailor, Scott "Covaro" Cover,
+                          Andrew "Linguica" Stine, Mike "Prower" Reid and
+                          all those other oddballs hanging in EFnet #DOOM2.
+                          You're all guilty for making my phonebills so darn
+                          big. I'll make you pay.
+
+================================================================
+
+* Play Information *
+
+Game                    : DOOM II
+Episode and Level #     : MAP 01
+Single Player           : Yes that was my original intention.
+Cooperative 2-4 Player  : Nope, haven't had the chance to test
+Deathmatch 2-4 Player   : Yah right. Pffft.
+Difficulty Settings     : Yes, UV is kinda tricky, lower skills for
+                          people with real lives. You wont actually
+                          miss out on anything on skill 3 or 2, it'll
+                          just be a bit easier.
+New Sounds              : No
+New Graphics            : No 
+New Music               : No  
+Demos Replaced          : None - tantrum2.lmp included as a separate
+			  file. Recorded by Andy "Aurican" Kempling,
+			  kempling@challenger.net
+
+			  Skill 4, 100% kills 100% secrets 17:13
+			  Recorded using mouse+keyboard on a P200
+
+* Construction *
+
+Base                    : New level from scratch with inspiration from 
+                          several different pwads and other games.
+
+Build time		: Some 250 hours I guess. Hard to estimate though.
+			  A lot of that time was learning and just running
+                          around in the level. Most areas have been rebuilt
+                          about 3 times, some as much as 7, before I was
+                          satisfied.
+
+editor(s) used          : In the beginning I used DoomEd v2.60 beta 4 but
+                          as soon as I got EdMap 1.20 I used that one.
+                          IDBSP 1.0 was also used. (Better than 1.0.1)
+                          When the level got bigger than 150K IDBSP crashed
+                          and I had to use WARM (another bsp), but it did
+                          something strange - the map disappeared! (Not the
+                          level - the map you get when you press TAB.)
+			  Got rid of it using BSP.
+
+			  For the new version I used EdMap 1.40, EdMap 1.31, 
+			  WinDEU 5.24 and BSP 2.4 beta.
+
+                          Jim Flynn applied some magic with DETH 3.92.
+
+Known Bugs              : Pffft, silly.
+
+
+* Copyright / Permissions *
+
+Yeh yeh, go on, use this as a base for another level if you want to, but
+it would be nice if you included this text file and a pointer to the
+original version. Also, you should send me lots of money.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact and dont make any profit from it. 
+
+
+* Where to get this WAD *
+
+FTP sites: ftp.cdrom.com and its mirrors
+
+BBS numbers: aaaw, come on

@@ -1,0 +1,13 @@
+$NAV=Community Projects
+$KEY:P=SHELL:wads\community\dump3\play.bat
+$KEY:T=SHELL:wads\community\dump3\Credits.txt
+$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?f=42&t=52276
+
+:DUMP Episode 3: BFG Edition
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2016>10>13	  Author : *Various (see credits)
+:Levels   : *80			   Modes : *Single
+:Requires : *zdoom		Includes : *?
+:-------------------------------------------------------------------------------

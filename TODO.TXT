@@ -23,12 +23,19 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] Search 'current directory' for IWADs
+[ ] Search for PWAD in IWAD directory too (since WADs folder is combined now)
 [ ] GZDoom 3.2+ supports Rise of the Wool Ball as an IWAD
-[ ] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
-[ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when inputting text, even when using a mouse"
+[X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
+[ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
+     inputting text, even when using a mouse"
+[ ] Support NWT merging in Chocolate-doom, e.g. Mordeth
+[ ] Skill select should be in doom.bat since it knows the most about which
+    game is being played
+[ ] Need a "dotted tab" for contents and index pages
 
 [X] Internally determine which 'game' (DOOM/HERETIC/HEXEN &c.) is being played
-	[ ] Add Strife, Adventures of Square and Chex support
+	[ ] Add Strife, Adventures of Square and Chex support / skill level names
 
 [ ] Mods
 	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
@@ -46,7 +53,6 @@ Scripts:
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
-[ ] Patch IWADs to be consistent?
 
 WADs:
 ================================================================================

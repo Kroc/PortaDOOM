@@ -1,0 +1,83 @@
+===========================================================================
+Title                   : VENOM
+Filename                : venom.wad, venom.txt
+Date Finished           : march 28, 1998
+Developer               : Ola Bjorling
+Email Address           : ola@techno.org
+                          PLEASE mail me your comments! I love mail about
+                          my levels.
+Other Releases          : TANTRUM      
+                          TALOSIAN (did map08)
+                          THE DARKENING (did some graphics)
+                          more coming soon, keep looking in /newstuff
+                          Also, GOTHIC DM 2 will have some graphics by me,
+                          as will Mordeth 2 & 3. None of those are released
+                          when writing this.
+Misc. Developer Info    : 19 years old (born 1979), from Sweden,
+                          heavily into techno music and computer graphics.
+                          No new graphics in this WAD though.
+Description             : Quite similar to the theme of most Ultimate DOOM
+                          E4 levels. As always loads of cool lighting,
+                          traps and state-of-the-art architecture.
+                          This is my finest piece of DOOM level art to date,
+                          without a doubt.
+                          HOWEVER, this is a linear level. Sorry all lovers
+                          of non-linear maps out there, but you might just
+                          enjoy it anyway.
+                          This is a HARD level. Hard and big. You'll
+                          probably want to save quite a lot, and this
+                          is the kind of level you only play once I think.
+                          A bit like the Eternal levels, but perhaps not
+                          quite as enormous. VERY detailed though.
+
+Additional Credits to   : * Jeff Rabenhurst for the incredibly nice EdMap
+                          * id for DOOM and its sequels
+                          * UrHash for picking on me enough to ever finish
+                            this level :)
+                          * UrHash (again) , Nick Baker and Chrozoron for
+                            playtesting.
+                          * All my friends in real life for being... er..
+                            well, friends.
+===========================================================================
+* Play Information *
+
+Map #                   : MAP01 (DOOM2)
+Single Player           : Yes
+Cooperative             : Yes, not tested but should be a blast!
+                          If anyone want to help testing ammo balance
+                          for coop, drop me a line.
+Deathmatch              : No, didn't add any starts.
+Difficulty Settings     : Yes, all should be equally fun I hope
+                          Skill 1&2 are for poor shooters - loads of ammo.
+New Sounds              : No
+New Music               : No
+New Graphics            : No
+Demos Replaced          : None
+
+This is just 400309 bytes of pure level!
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : On and off for about a year :-)
+                          I'd guess 200-300 hours or something, including
+                          playtesting.
+Editor(s) used          : EdMap 1.40  <- I just love it
+                          EdMap 1.31  <- Uses less memory, enabled me to
+                                         build this huge fucker. Used for
+                                         the last 15% of the level.
+                          WARM 1.6    <- started with this one
+                          BSP 2.2     <- used during 70% of the time
+                          BSP 2.3     <- used for final build
+Known Bugs              : I was able to produce a visplane overflow once,
+                          but I guess I fixed it somehow.
+                          There are a few misaligned textures too,
+                          but I'm too lazy to fix it :-)
+                          Otherwise no bugs. Please report any you can find.
+May Not Run With...     : wolf3d.exe
+
+* Where to get this WAD *
+
+FTP sites:
+ftp.cdrom.com
+http://ftp.sunet.se/idgames/

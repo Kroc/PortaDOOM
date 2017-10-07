@@ -1,26 +1,30 @@
 $THEME=BLUE
 $KEY:A=GOTO:dead.wire
-$KEY:B=GOTO:Don't Be A Bitch Remastered
-$KEY:C=GOTO:Doom 2 the Way id Did
-$KEY:D=GOTO:DOOM 64
-$KEY:E=GOTO:DOOM II
-$KEY:F=GOTO:Doom the Way id Did
-$KEY:G=GOTO:Doom the Way id Did - The Lost Episodes
-$KEY:H=GOTO:DOOM(4) for DooM
-$KEY:I=GOTO:Doomed Space Wars
-$KEY:J=GOTO:DoomRL Arsenal
+$KEY:B=GOTO:Cabal Series #03
+$KEY:C=GOTO:Don't Be A Bitch Remastered
+$KEY:D=GOTO:Doom 2 the Way id Did
+$KEY:E=GOTO:DOOM 64
+$KEY:F=GOTO:DOOM II
+$KEY:G=GOTO:Doom the Way id Did
+$KEY:H=GOTO:Doom the Way id Did - The Lost Episodes
+$KEY:I=GOTO:DOOM(4) for DooM
+$KEY:J=GOTO:Doomed Space Wars
+$KEY:K=GOTO:DoomRL Arsenal
+$KEY:L=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
 :-------------------------------------------------------------------------------
 
 - [A] *dead.wire										Onesies
-- [B] *Don't Be A Bitch Remastered						Multiplayer
-- [C] *Doom 2 the Way id Did							MegaWADs
-- [D] *DOOM 64											Commercial DOOM
-- [E] *DOOM II											Commercial DOOM
-- [F] *Doom the Way id Did								MegaWADs
-- [G] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [H] *DOOM(4) for DooM									Mods
-- [I] *Doomed Space Wars								Episodes
-- [J] *DoomRL Arsenal									Mods
+- [B] *Cabal Series: Derelict Station					5 Years of Doom
+- [C] *Don't Be A Bitch Remastered						Multiplayer
+- [D] *Doom 2 the Way id Did							MegaWADs
+- [E] *DOOM 64											Commercial DOOM
+- [F] *DOOM II											Commercial DOOM
+- [G] *Doom the Way id Did								MegaWADs
+- [H] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [I] *DOOM(4) for DooM									Mods
+- [J] *Doomed Space Wars								Episodes
+- [K] *DoomRL Arsenal									Mods
+- [L] *DUMP Episode 3: BFG Edition						Community Projects

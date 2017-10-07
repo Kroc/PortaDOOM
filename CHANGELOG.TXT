@@ -2,6 +2,22 @@
 + = New feature / addition
 - = Removal
 
+07-OCT-17:
++ Added Index page to Cacowards 2015
++ Fixed inconsistent naming of "50 Shades of Graytall" ("a", not "e" in "gray")
++ Added "Tantrum" & "Tantrum 2" WAD pages
++ Added "Cabal Series" WAD pages
+* play.bat will no longer default to DOOM2.WAD if "/IWAD" parameter is missing.
+  doom.bat will handle the default based on the selected engine
+* Rewrite of doom.bat parameter handling & logic; parameters are no longer
+  position dependent and instead use switches, i.e. "/IWAD" /"PWAD"
+  + Added support for ".ipk3" & ".IWAD" file extensions
+  + Added "/CMPLVL" support to set prboom compatibility level
+  + Added "/WARP" to warp to a level number
+  + Added "/SKILL" to set difficulty level
+  + Added "/EXEC" to load additional engine parameters from a file;
+    this prevents the permenant changing of config files by the launch scripts
+
 04-OCT-17:
 + Added GZDoom 3.2, replaces 3.1 as the default
 - Removed separate "UPX Compress DOOM Engines" script and re-integrated it back

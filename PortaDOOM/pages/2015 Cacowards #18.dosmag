@@ -1,0 +1,84 @@
+$THEME=BLACK
+
+^C:2015 CACOWARDS :: INDEX
+
+:-------------------------------------------------------------------------------
+(Indented pages are cross-references and not a direct part of Cacowards 2015)
+
+:TOP TEN:
+
+$KEY:A=GOTO:Sunlust
+- [A] *Sunlust* 									_Ribbiks_ & _Dannebubinga_
+
+$KEY:B=GOTO:Erkatane
+$KEY:C=GOTO:Doom 2 the Way id Did
+$KEY:D=GOTO:Doom the Way id Did
+- [B] *Erkattäññe									_Nicholas Monti_
+   └→ [C] *Doom 2 the Way id Did
+       └→ [D] *Doom the Way id Did
+
+$KEY:E=GOTO:Skulldash
+- [E] *Skulldash									_Joshua O'Sullivan_
+
+$KEY:F=GOTO:Swift Death
+- [F] *Swift Death									_franckFRAG_
+
+$KEY:G=GOTO:Breach
+- [G] *Breach										_Viggles_
+
+$KEY:H=GOTO:Valiant
+- [H] *Valiant										_Paul "skillsaw" DeBruyne_
+
+$KEY:I=GOTO:50 Shades of Graytall
+- [I] *50 Shades of Graytall						Various
+
+$KEY:J=GOTO:Sheer Poison
+- [J] *Sheer Poison									_zan-zan-zawa-veia
+
+$KEY:K=GOTO:dead.wire
+- [K] *dead.wire									_Xaser_
+
+$KEY:L=GOTO:Return to Hadron
+- [L] *Return to Hadron								_Matt "cannonball" Powell_
+
+:RUNNERS UP:
+
+$KEY:M=GOTO:Doomed Space Wars
+- [M] *Doomed Space Wars							_Paul Corfiatis_
+
+$KEY:N=GOTO:Crumpets
+- [N] *Crumpets										_Ribbiks_
+
+$KEY:O=GOTO:Prime Directive
+- [O] *Prime Directive								_Ethan "Gooberman" Watson_
+
+$KEY:P=GOTO:Pinnacle of Darkness
+- [P] *Pinnacle of Darkness							_Hobomaster22_
+
+$KEY:Q=GOTO:Ol' No Name
+- [Q] *Ol' No Name									_Octavarium_
+
+$KEY:R=GOTO:32in24-14
+- [R] *32in24-14									_Yeoman Engineers_
+
+:MULTIPLAYER AWARDS:
+
+$KEY:S=GOTO:Don't Be A Bitch Remastered
+- [S] *Don't Be A Bitch Remastered					_Mechanix Union_
+
+$KEY:T=GOTO:ChaosCore CTF
+- [T] *ChaosCore CTF								_RoSKing_ et al.
+
+:MORDETH AWARD:
+
+- [T] *ChaosCore CTF								_RoSKing_ et al.
+
+:BEST GAMEPLAY MOD:
+
+$KEY:U=GOTO:DoomRL Arsenal
+- [U] *DoomRL Arsenal								_Yholl_ et al.
+
+:MOCKAWARD:
+
+$KEY:V=GOTO:InstaDoom
+- [V] *InstaDoom									_Linguica_

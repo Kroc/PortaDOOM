@@ -1,28 +1,30 @@
 $THEME=BLUE
-$KEY:A=GOTO:Master Levels #03
-$KEY:B=GOTO:Master Levels #04
-$KEY:C=GOTO:ChaosCore CTF
-$KEY:D=GOTO:Chord Series #01
-$KEY:E=GOTO:Chord Series #02
-$KEY:F=GOTO:Chord Series #03
-$KEY:G=GOTO:Chord Series #04
-$KEY:H=GOTO:Chord Series #05
-$KEY:I=GOTO:Comatose
-$KEY:J=GOTO:Master Levels #05
-$KEY:K=GOTO:Crumpets
+$KEY:A=GOTO:Cabal Series
+$KEY:B=GOTO:Master Levels #03
+$KEY:C=GOTO:Master Levels #04
+$KEY:D=GOTO:ChaosCore CTF
+$KEY:E=GOTO:Chord Series #01
+$KEY:F=GOTO:Chord Series #02
+$KEY:G=GOTO:Chord Series #03
+$KEY:H=GOTO:Chord Series #04
+$KEY:I=GOTO:Chord Series #05
+$KEY:J=GOTO:Comatose
+$KEY:K=GOTO:Master Levels #05
+$KEY:L=GOTO:Crumpets
 
 ^C:INDEX :: C
 
 :-------------------------------------------------------------------------------
 
-- [A] *Master Levels: Canyon							Commercial DOOM
-- [B] *Master Levels: Catwalk, (The)					Commercial DOOM
-- [C] *ChaosCore CTF									Multiplayer
-- [D] *Chord Series: CHORD1								5 Years of Doom
-- [E] *Chord Series: CHORD2								5 Years of Doom
-- [F] *Chord Series: CHORD_NG							5 Years of Doom
-- [G] *Chord Series: CHORDG								5 Years of Doom
-- [H] *Chord Series: CHORD3								5 Years of Doom
-- [I] *Comatose											Onesies
-- [J] *Master Levels: Combine, (The)					Commercial DOOM
-- [K] *Crumpets											Episodes
+- [A] *Cabal Series										5 Years of Doom
+- [B] *Master Levels: Canyon							Commercial DOOM
+- [C] *Master Levels: Catwalk, (The)					Commercial DOOM
+- [D] *ChaosCore CTF									Multiplayer
+- [E] *Chord Series: CHORD1								5 Years of Doom
+- [F] *Chord Series: CHORD2								5 Years of Doom
+- [G] *Chord Series: CHORD_NG							5 Years of Doom
+- [H] *Chord Series: CHORDG								5 Years of Doom
+- [I] *Chord Series: CHORD3								5 Years of Doom
+- [J] *Comatose											Onesies
+- [K] *Master Levels: Combine, (The)					Commercial DOOM
+- [L] *Crumpets											Episodes

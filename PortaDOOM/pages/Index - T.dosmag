@@ -1,12 +1,18 @@
 $THEME=BLUE
-$KEY:A=GOTO:THT - Threnody
-$KEY:B=GOTO:Master Levels #08
-$KEY:C=GOTO:Master Levels #12
+$KEY:A=GOTO:Tantrum
+$KEY:B=GOTO:Tantrum 2
+$KEY:C=GOTO:Cabal Series #05
+$KEY:D=GOTO:THT - Threnody
+$KEY:E=GOTO:Master Levels #08
+$KEY:F=GOTO:Master Levels #12
 
 ^C:INDEX :: T
 
 :-------------------------------------------------------------------------------
 
-- [A] *THT: Threnody									Community Projects
-- [B] *Master Levels: Titan Manor						Commercial DOOM
-- [C] *Master Levels: Trapped on Titan					Commercial DOOM
+- [A] *Tantrum											5 Years of Doom
+- [B] *Tantrum 2										5 Years of Doom
+- [C] *Cabal Series: Temple of Death					5 Years of Doom
+- [D] *THT: Threnody									Community Projects
+- [E] *Master Levels: Titan Manor						Commercial DOOM
+- [F] *Master Levels: Trapped on Titan					Commercial DOOM

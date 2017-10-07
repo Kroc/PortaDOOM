@@ -1,0 +1,41 @@
+$NAV=People
+$NAV=Ola Björling
+$KEY:P=SHELL:wads\people\ola bjorling\tantrum\play.bat
+$KEY:T=SHELL:wads\people\ola bjorling\tantrum\TANTRUM.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum
+
+:Tantrum                                                  * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1996>08>04	  Author : _Ola Björling_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Lots of different brick walls and corrosed metal.
+(Excuse my english, I think it's called corrosed, what I mean is metal with corrosion.)
+Dark, (not TOO dark) sunset-like feeling. Lots of brilliant light shadings. Clever setup, very good looking and fun to play.
+There's no story, just go out there and kick some daemon butt!
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New level from scratch with inspiration from several different pwads. (And my own sick mind...)
+
+*Editor(s) used			: In the beginning I used DoomEd v2.60 beta 4 but as soon as I got EdMap 1.20 I used that one.
+						  IDBSP 1.0 was also used. (Better that 1.0.1)
+						  When the level got bigger than 150K IDBSP crashed and I had to use WARM (another bsp), but it did something strange - the map disappeared! (Not the level - the map you get when you press TAB.)
+						  (Fixed that now, but I don't know how I did it.=)
+
+*Known Bugs				: Perhaps there are a few cosmetic errors etc, but I've playtested it a *LOT* and couldn't find anything that could be called a bug. Runs a bit slow in the bloodfalls room on full screen on my DX4 100 but that is due to over 200 2S lines in sight, nothing else. (Well, the overall map size has an effect on the speed, but not that much. WARM is a bsp that gives really fast levels.)
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Jeff Rabenhurst_ for the brilliant EdMap 1.40
+- id for making that game, what's it called... :) 
+
+I think this level is at least as good as any other I have ever played, even though this is only my second release level. Lots of inspiration from _Andre Sverre Kvernmo_, one of the "The Master Levels" authors. His level "The Image Of Evil" is an incredible piece of art, but not much fun to play...
+
+I also got some inspiration from the Quake Screenshots.
+
+_Jeff_, please make EdMap able to deal with maps bigger than 150K! It keeps hanging up! (Even though I have 629K free!)

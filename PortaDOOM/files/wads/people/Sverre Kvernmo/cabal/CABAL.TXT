@@ -1,0 +1,264 @@
+			   ษอออออออออออออออออออออป              
+อออออออออออออออออออออออออออนÛฒฒฑฐ C A B A L ฐฑฒฒÛฬอออออออออออออออออออออออออออออออ
+			   ศอออออออออออออออออออออผ
+
+File                    : Depending on what zip you've down-loaded. This 
+			text file accompanies all CABAL files.
+
+	CABAL1=          flood.wad      (Bloodflood)                map 03     
+	CABAL2=          derelict.wad   (Derelict station)          map 02  
+	CABAL3=          watchtower.wad (The Watchtower)            map 04          
+	CABAL4=          todeath.wad    (Temple of Death)           map 05    
+	CABAL5=          arena.wad      (We who are About to Die)   map 06       
+	CABAL6=          storm.wad      (Eye of the Storm)          map 09
+	CABAL7=          the_evil.wad   (The Image of Evil)         map 30
+
+Author                  : Sverre Andre Kvernmo (aka "Cranium")
+Misc. info              : This and the other of my wads were initially 
+			intended released inside a 32-level "episode" on the 
+			internet. I got drafted for id's project 
+			"DOOM2: The Master Levels" though, and having Id 
+			release four of my wads is about 666 times cooler<G>. 
+			The remaining seven, now known as the CABAL series 
+			didn't make it into that project, most of them due to 
+			the deadline (I came into TML just as it was about to 
+			be finished). After premiering on the coverdisks of 
+			PC Zone and GIGA they are now available to all you 
+			CIS & GAMESNET users.
+
+			If you like these wads and want some more of my
+			stuff, together with the excellent wads of Jim Flynn,
+			John "Dr. Sleep" Anderson, Tom Mustaine and 
+			Chris Klie you can go and get The Master Levels when 
+			they come out. Very likely they'll be the best wads 
+			you have _ever_ played...
+			
+Setting                 : Ok, here's the plot: Kick Butt!
+			Gripping, isn't it? In case you are a little more
+			into story-lines you can keep on reading <g>:
+			The plot in the intended episode was as follows:
+			
+			: You once were the biggest and baddest Cyber-demon 
+			to rule hell and you spear-headed the council that 
+			governed the underworld; "the Cabal". Betrayed by the
+			other members you find yourself not only dismantled, 
+			but also a victim of the utmost demonic humiliation:
+			You've been morphed into a human! Of course you're
+			out for revenge and have to kick the other members of 
+			the Cabal's butts one by one.
+			There's a short low-down on the story of each wad at 
+			the end of this document (additional info).
+			
+
+Credits                 : The whole of id Software for DOOM & DOOM II.
+			: Andrew (& Mark) Cornes, Gregory "Acoma" Hyne, 
+			Peter "Pete" Ripley, David "Macca" Mccandless, 
+			Jim F Flynn, Bjrnar Johansen, Baard Zakariassen and 
+			Stian Danielsen for playtesting, viewpoints, 
+			help, enthusiasm and for being mad bastards. 
+			: Oh, and Erling Paulsen for managing to convince me
+			that there was such a thing as a full fledged 
+			Doom-editor, back in early 94. Os!
+			: A brand new BFG goes out to Geoff Allan (DOOMed), 
+			Raphael Quinet (DEU), Olivier Montanuy (DeuTex) and 
+			Colin Reed (BSP) plus whoever put together idBSP. 
+			These guys gave us tremendous tools of joy without
+			claiming a buck for it. Keep going guys, you are much
+			admired and respected. About a thousand times more
+			so than those who are deeply doomed...;)
+			: Shawn Green for sending me the picture of that 
+			very friendly pizza-girl. Oh, and for including me in
+			"DOOM2: The Master Levels" project.<G>
+			: A humongous round of applause to those doom-players
+			who still play without cheating. I made these wads
+			for you guys! :)
+			: Last but never least to all other WAD-designers who 
+			have lost themselves in the worlds of tag numbers, 
+			upper textures and vertexes as badly as me. Quake
+			will be the end of what's left of our social lives.
+			<G>
+
+Deathmatch 
+bad-arse credits        : Macca, Escher, Loki, Woof and Pete. You can 
+			walk over my melted bodies anytime. Don't hang around 
+			that corner for too long though. I'll silently BFG 
+			your butt!
+
+ษออออออออออออออออออป              
+น*Play Information*ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+ศออออออออออออออออออผ
+
+How to play             : Load up, choose difficulty from the menu and use 
+			the IDCLEVxx cheat when level 1 of Doom2 starts.
+			xx being the map number of the relevant wad.
+Map #                   : See top of text file
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Whadda ya mean? Of course there is!
+Difficulty Settings     : A new setting (Total Carnage) has been implemented 
+			to challenge the most hardened of Doom assassins. 
+			Cabal's Ultra Violence is ment to equal Doom2's
+New Sounds              :No
+New Graphics            :Yes, though only in the difficulty setting menu.
+Demos Replaced          :None
+
+
+ษออออออออออออออป              
+น*Construction*ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+ศออออออออออออออผ
+
+Base                    : An obsessive personality, lotsa caffeine and lotsa 
+			nicotine. :Q A twiseted mind doesn't hurt either. :)
+			An additional credit should go out to those wad-
+			designers that have inspired me greatly through their 
+			work. I don't know all their names, but the names of
+			their WADs should suffice. Hail the hall of fame:
+			"Nukemine" (old I know, but the supreme numero uno 
+			at it's hayday)
+			"Castle of the Renegades". Best castle-type wad I've 
+			seen.
+			"Eternity"
+			"Dante's Gate"
+			The secret level in the AlienDoom episode was groovy 
+			as well, and "Cleimos" had some nice touches.
+Build Time              : Don't ask, really! First baby steps at "wadding" 
+			taken in the summer of 94. Almost dropped out of 
+			university for this bloody obsession. One reason for 
+			surviving was that I handed in a wad of my campus as 
+			one of my projects. <G>
+			I would guess that I on average spend about 130 hours 
+			on each wad. And it's not because I work slow :)
+Editor(s) used          : DoomED 4, DEU2, DETH, BSP1.2, idBSP and DEUTEX.
+Bugs                    : No way. If you should find some then get in touch,
+			but know that I will forever hate you!!! ;)
+
+Where to get the 
+CABAL wads              : Download it from Compuserve or get them from the 
+			October issue of either PC Zone or GIGA (GIGA is only 
+			sold in Norway). 
+			Also available from the London GAMESNET server. 
+			ftp:cdrom.com?
+
+			Hope you enjoy the wads!
+	  
+	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออป
+	  ื All comments & questions will be highly appreciated ื
+	  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออผ   
+
+Sverre Andre Kvernmo
+(it's a norwegian name OK? I'm from Norway smart arse)
+100755.2032@compuserve.com
+
+
+ษอออออออออออออออออป              
+น*Additional info*ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+ศอออออออออออออออออผ
+			
+			Bloodflood (map 03)
+			
+			: I set out to make the ultimate deathmatch level in 
+			this one. Once the players are fimiliar with the 
+			level it kicks b u t t, ala big time. Works well
+			as a 1player as well.
+			
+			"You have come upon one of the Cabal's blood-depoes. 
+			An important element in any powerful black magic is 
+			huge amounts of blood. Emptying the depoe's tanks 
+			into the nearby river you will have struck your first 
+			blow against the Cabal."  
+
+==============================================================================
+			
+			Derelict Station (map 02)
+			Co-author: Greg "Acoma" Hyne
+			
+			: Should you tire of Bloodflood (What!?) then try 
+			this smaller, even faster frag-machine on for size. 
+			Quite playable as a single game as well.
+
+			"Just having escaped the Sea of Blood you have sought
+			out a derelict building in the search for arms &
+			equipment. Unfortunately the station isn't as 
+			abandoned as you thought."
+
+==============================================================================
+   
+			The Watchtower (map 04)
+			Co-designer: Greg "Acoma" Hyne
+			
+			: Me and Greg wanted to do an awesome Deathmatch 
+			level but with all the ideas we had it kinda grew a 
+			little large <G>. Still very good if you have the 
+			incentive to learn it. Good for 3 & 4 player network.
+
+			
+===============================================================================
+
+			Temple of Death (map 05)
+
+			:My first wad <blush>. Don't worry you won't have to 
+			struggle with mis-aligned textures and collaged 
+			colours, as I recently went over the thing and
+			polished it a bit.
+
+			
+===============================================================================
+			
+			We who are About to Die (map 06)
+
+			:Ok for Deathmatch but v e r y playable as one 
+			player, judging by the response of play-testers.
+
+			"The Cabal has started striking back at you. That 
+			last gateway should have taken you... well somewhere 
+			else. Not to an arena where thousands of humans have 
+			lost their souls to hungry demons. As you get ready
+			for the first wave of hellspawned gladiators you
+			swear to blast the emperor's thumbs off before he can
+			even think about turning them down on you..."
+
+===============================================================================
+
+			Eye of the Storm (map 09)
+
+			: Made the whole level design with the thought of one
+			encounter only (you'll know wich one when you 
+			encounter it:). The level is an exercise in how to 
+			dodge and use the BFG to full effect. If big-weapon 
+			blasts are your thing in Deathmatch then you'll want to 
+			live inside STORM.<G>
+
+			"You find yourself in the remains of an old forttress                  
+			after ascending a lift shaft from the mines where you
+			were trapped. Signs of unlife is evident but from 
+			what you know of this place it should pose no great 
+			threat to you. It used to be the centre of a 
+			Cacodemon empire that perished some 665 yeaes ago. 
+			Oh, by the way, it's new years eve..."
+
+==============================================================================                        
+			
+			The Image of Evil (map 30)
+			
+			: This was to be the final showdown in Cabal.
+			Wanted to see how far I could take the design of the
+			map view with it. Cowards go IDBEHOLDA as soon as they
+			enter. Good players will see it evolve.
+			
+			"The Image of Evil is a humongous temple created 
+			to the honour of the first Demon to slay an angel;
+			Lithlaar. In it you will find the Cybo that now is
+			known as the lord of Hell and his two Soulguards."
+
+
+ษออออออออออออออออออออออออป              
+น*Copyrights/Permissions*ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+ศออออออออออออออออออออออออผ
+
+Authors may not use these levels as a base to build additional levels.
+It will be greatly appreciated if you distribute these WADs, provided you 
+include this file, with no modifications.
+
+
+
+				   

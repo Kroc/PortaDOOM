@@ -1,0 +1,58 @@
+$NAV=People
+$NAV=Sverre Kvernmo
+$TITLE=Derelict Station
+$KEY:P=SHELL:wads\people\Sverre Kvernmo\cabal\play - cabal2.bat
+$KEY:T=SHELL:wads\people\Sverre Kvernmo\cabal\CABAL.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/cabal2
+
+:Derelict Station                                              (Cabal Series)
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1995>11>08	  Author : _Sverre André Kvernmo_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Should you tire of Bloodflood (What!?) then try this smaller, even faster frag-machine on for size. Quite playable as a single game as well.
+
+"Just having escaped the Sea of Blood you have sought out a derelict building in the search for arms & equipment. Unfortunately the station isn't as abandoned as you thought."
+
+*Story:
+
+Ok, here's the plot: Kick Butt! Gripping, isn't it? In case you are a little more into story-lines you can keep on reading <g>: The plot in the intended episode was as follows:
+
+You once were the biggest and baddest Cyber-demon to rule hell and you spear-headed the council that governed the underworld; "the Cabal". Betrayed by the other members you find yourself not only dismantled, but also a victim of the utmost demonic humiliation:
+
+You've been morphed into a human! Of course you're out for revenge and have to kick the other members of the Cabal's butts one by one.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base				: An obsessive personality, lotsa caffeine and lotsa nicotine. :Q A twisted mind doesn't hurt either. An additional credit should go out to those wad-designers that have inspired me greatly through their work. I don't know all their names, but the names of their WADs should suffice. Hail the hall of fame:
+
+					- "Nukemine" (old I know, but the supreme numero uno at it's hayday)
+					- "Castle of the Renegades".\\Best castle-type wad I've seen.
+					- "Eternity"
+					- "Dante's Gate"
+					- The secret level in the AlienDoom episode was groovy as well, and "Cleimos" had some nice touches.
+
+*Build Time			: Don't ask, really! First baby steps at "wadding" taken in the summer of 94. Almost dropped out of university for this bloody obsession. One reason for surviving was that I handed in a wad of my campus as one of my projects. <G>
+
+					  I would guess that I on average spend about 130 hours on each wad. And it's not because I work slow :)
+
+*Editor(s) used		: DoomED 4, DEU2, DETH, BSP1.1, idBSP and DEUTEX
+*Bugs				: No way. If you should find some then get in touch, but know that I will forever hate you!!! ;)
+
+:Credits:
+:-------------------------------------------------------------------------------
+- The whole of id Software for DOOM & DOOM II.
+- _Andrew (& Mark) Cornes_, _Gregory "Acoma" Hyne_, _Peter "Pete" Ripley_, _David "Macca" Mccandless_, _Jim F Flynn_, _Bjornar Johansen_, _Baard Zakariassen_ and _Stian Danielsen_ for playtesting, viewpoints, help, enthusiasm and for being mad bastards.
+- Oh, and _Erling Paulsen_ for managing to convince me that there was such a thing as a full fledged Doom-editor, back in early 94. Os!
+- A brand new BFG goes out to _Geoff Allan_ (DOOMed), _Raphael Quinet_ (DEU), _Olivier Montanuy_ (DeuTex) and _Colin Reed_ (BSP) plus whoever put together idBSP. These guys gave us tremendous tools of joy without claiming a buck for it. Keep going guys, you are much admired and respected. About a thousand times more so than those who are deeply doomed...;)
+- _Shawn Green_ for sending me the picture of that very friendly pizza-girl. Oh, and for including me in "DOOM2: The Master Levels" project. <G>
+- A humongous round of applause to those doom-players who still play without cheating. I made these wads for you guys! :)
+- Last but never least to all other WAD-designers who have lost themselves in the worlds of tag numbers, upper textures and vertexes as badly as me. Quake will be the end of what's left of our social lives. <G>
+
+*Deathmatch bad-arse credits:
+
+_Macca_, _Escher_, _Loki_, _Woof_ and _Pete_. You can walk over my melted bodies anytime. Don't hang around that corner for too long though. I'll silently BFG your butt!

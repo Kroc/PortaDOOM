@@ -1,0 +1,45 @@
+$NAV=People
+$NAV=Ola Björling
+$KEY:P=SHELL:wads\people\ola bjorling\venom\play.bat
+$KEY:T=SHELL:wads\people\ola bjorling\venom\Venom.TXT
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/v-z/venom
+$KEY:E=GOTO:Eternal Doom III
+
+:Venom                                                    * 5 Years of Doom *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *1998>03>27	  Author : _Ola Björling_
+:Levels   : *1			   Modes : *Single, Co-op, Deathmatch
+:Requires : *vanilla	Includes : *None
+:-------------------------------------------------------------------------------
+
+Quite similar to the theme of most Ultimate DOOM E4 levels. As always loads of cool lighting, traps and state-of-the-art architecture.
+
+This is my finest piece of DOOM level art to date, without a doubt. HOWEVER, this is a linear level. Sorry all lovers of non-linear maps out there, but you might just enjoy it anyway.
+
+This is a HARD level. Hard and big. You'll probably want to save quite a lot, and this is the kind of level you only play once I think. A bit like the *[E] Eternal* levels, but perhaps not quite as enormous. VERY detailed though.
+
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New level from scratch
+*Build Time				: On and off for about a year :-)
+						  I'd guess 200-300 hours or something, including playtesting.
+*Editor(s) used			: EdMap 1.40  <- I just love it
+						  EdMap 1.31  <- Uses less memory, enabled me to
+										 build this huge fucker. Used for
+										 the last 15% of the level.
+						  WARM 1.6    <- started with this one
+						  BSP 2.2     <- used during 70% of the time
+						  BSP 2.3     <- used for final build
+*Known Bugs				: I was able to produce a visplane overflow once, but I guess I fixed it somehow. There are a few mis-aligned textures too, but I'm too lazy to fix it\\:-) Otherwise no bugs. Please report any you can find.
+*May Not Run With...	: wolf3d.exe
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Jeff Rabenhurst_ for the incredibly nice EdMap
+- id for DOOM and its sequels
+- _UrHash_ for picking on me enough to ever finish this level :)
+- _UrHash_ (again) , _Nick Baker_ and _Chrozoron_ for playtesting.
+- All my friends in real life for being... er.. well, friends.

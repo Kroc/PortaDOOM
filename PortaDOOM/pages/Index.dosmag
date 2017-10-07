@@ -28,7 +28,7 @@ $KEY:W=GOTO:Index - W
 	- *20 Monsters
 	- *32in24-14: How the Hamburglar Stole Christmas
 	- *32in24-16: DOOT CTF
-	- *50 Shades of Greytall
+	- *50 Shades of Graytall
 
    [A]
 	- *Absolutely Killed
@@ -41,11 +41,13 @@ $KEY:W=GOTO:Index - W
    [B]
 	- *Blade of Agony									Wolfendoom
 	- *Black Tower										Master Levels
+	- *Bloodflood										Cabal Series
 	- *Bloodsea Keep									Master Levels
 	- *Bloodstain
 	- *Breach
 
    [C]
+	- *Cabal Series
 	- *Canyon											Master Levels
 	- *Catwalk, (The)									Master Levels
 	- *ChaosCore CTF
@@ -60,6 +62,7 @@ $KEY:W=GOTO:Index - W
 
    [D]
 	- *dead.wire
+	- *Derelict Station									Cabal Series
 	- *Don't Be A Bitch Remastered
 	- *Doom 2 the Way id Did
 	- *DOOM 64
@@ -69,6 +72,7 @@ $KEY:W=GOTO:Index - W
 	- *DOOM(4) for DooM
 	- *Doomed Space Wars
 	- *DoomRL Arsenal
+	- *DUMP Episode 3: BFG Edition						DUMP Series
 
    [E]
 	- *E1M4b (John Romero's Episode 1)
@@ -77,6 +81,7 @@ $KEY:W=GOTO:Index - W
 	- *Elf Gets Pissed
 	- *Erkatane
 	- *Eternal Doom III
+	- *Eye of the Storm									Cabal Series
 	- *Express Elevator to Hell, (The)					Master Levels
 
    [F]
@@ -89,6 +94,7 @@ $KEY:W=GOTO:Index - W
 	- *Geryon											Master Levels
 
    [I]
+	- *Image of Evil, (The)								Cabal Series
 	- *InstaDoom
 
    [L]
@@ -137,6 +143,9 @@ $KEY:W=GOTO:Index - W
 	- *Switft Death
 
    [T]
+	- *Tantrum
+	- *Tantrum 2
+	- *Temple of Death									Cabal Series
 	- *THT: Threnody
 	- *Titan Manor										Master Levels
 	- *Trapped on Titan									Master Levels
@@ -146,8 +155,11 @@ $KEY:W=GOTO:Index - W
 
    [V]
 	- *Valiant
+	- *Venom
 	- *Vesperas											Master Levels
 	- *Virgil's Lead									Master Levels
 
    [W]
 	- *Warp House
+	- *Watchtower, (The)								Cabal Series
+	- *We Who are About to Die							Cabal Series

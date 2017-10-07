@@ -22,6 +22,12 @@ files\ports\zandronum-3\
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
+pages\Doom 2 the Way id Did.dosmag
+files\wads\megawads\D2TWID\
+pages\Doom the Way id Did.dosmag
+files\wads\megawads\DTWID\
+pages\No Rest for the Living.dosmag
+
 files\demos\30uv2155\
 files\demos\30uv2032\
 files\demos\30uv1959\
@@ -47,7 +53,7 @@ pages\Breach.dosmag
 files\wads\onesies\breach\
 pages\Valiant.dosmag
 files\wads\megawads\valiant\
-pages\50 Shades of Greytall.dosmag
+pages\50 Shades of Graytall.dosmag
 files\wads\community\50shades\
 pages\Sheer Poison.dosmag
 files\wads\onesies\shpo1\
@@ -76,9 +82,3 @@ files\wads\mods\doomrl_arsenal\
 pages\InstaDoom #??.dosmag
 files\wads\jokes\instadm\
 files\wads\jokes\instadm\filters\
-
-pages\Doom 2 the Way id Did.dosmag
-files\wads\megawads\D2TWID\
-pages\Doom the Way id Did.dosmag
-files\wads\megawads\DTWID\
-pages\No Rest for the Living.dosmag

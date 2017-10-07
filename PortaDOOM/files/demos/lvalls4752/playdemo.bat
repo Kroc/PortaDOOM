@@ -1,2 +1,2 @@
 @ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\doom.bat" /DEMO 30ns4752.lmp prboom DOOM2
+PUSHD "%~dp0" & CALL "..\..\doom.bat" /USE prboom /DEMO 30ns4752.lmp

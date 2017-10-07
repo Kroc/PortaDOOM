@@ -1,12 +1,14 @@
 $THEME=BLUE
 $KEY:A=GOTO:Valiant
-$KEY:B=GOTO:Master Levels #19
-$KEY:C=GOTO:Master Levels #13
+$KEY:B=GOTO:Venom
+$KEY:C=GOTO:Master Levels #19
+$KEY:D=GOTO:Master Levels #13
 
 ^C:INDEX :: V
 
 :-------------------------------------------------------------------------------
 
 - [A] *Valiant											MegaWADs
-- [B] *Mater Levels: Vesperas							Commercial DOOM
-- [C] *Mater Levels: Virgil's Lead						Commercial DOOM
+- [B] *Venom											5 Years of Doom
+- [C] *Mater Levels: Vesperas							Commercial DOOM
+- [D] *Mater Levels: Virgil's Lead						Commercial DOOM

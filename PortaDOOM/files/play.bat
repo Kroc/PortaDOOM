@@ -189,17 +189,6 @@ IF ERRORLEVEL 1 SET "ENGINE=%VER_GZDOOM%"
 
 :launch
 REM ====================================================================================================================
-REM # IWAD parameter missing?
-IF "%IWAD%" == "" (
-	REM # default to DOOM2
-	SET "IWAD=DOOM2.WAD"
-)
-
-IF "%ENGINE%" == "prboom" (
-	REM # if a compatibility-level is specificed, include this for PRBoom engines
-	IF NOT "%CMPLVL%" == "" SET "PARAMS=%PARAMS% -complevel %CMPLVL%"
-)
-
 :skill
 REM --------------------------------------------------------------------------------------------------------------------
 REM # warping to a map number? ask for difficulty level
@@ -288,11 +277,25 @@ IF "%WINVER%" == "5.1" GOTO :skill_xp
 :skill_set
 REM # add the skill to the command line
 REM # (this will override any `-skill` parameter previously provided)
-SET "PARAMS=%PARAMS% -skill %SKILL%"
+SET PARAMS=%PARAMS% /SKILL %SKILL%
 
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
 SET "OPTIONS="
+
+REM # was an IWAD specified?
+IF NOT "%IWAD%" == "" (
+	SET OPTIONS=%OPTIONS% /IWAD "%IWAD%"
+)
+REM # was a PWAD specified?
+IF NOT "%PWAD%" == "" (
+	SET OPTIONS=%OPTIONS% /PWAD "%PWAD%"
+)
+
+IF "%ENGINE%" == "prboom" (
+	REM # if a compatibility-level is specificed, include this for PRBoom engines
+	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
+)
 
 REM # GZDoom requirements:
 IF "%ENGINE%" == "%VER_GZDOOM%" (
@@ -301,9 +304,9 @@ IF "%ENGINE%" == "%VER_GZDOOM%" (
 )
 REM # hardware or software rendering?
 REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
-IF %SW% EQU 1 SET "OPTIONS=/SW"
+IF %SW% EQU 1 SET OPTIONS=%OPTIONS% /SW
 
-CALL "%HERE%\doom.bat" %OPTIONS% %ENGINE% %IWAD% %PWAD% %PARAMS% -- %FILES%
+CALL "%HERE%\doom.bat" /USE %ENGINE% %OPTIONS% %PARAMS% -- %FILES%
 
 EXIT /B
 
@@ -313,15 +316,8 @@ REM ============================================================================
 SHIFT
 
 REM # the next parameter should be the map number
-SET "WARP=%~1"
-
-REM # is this a DOOM.WAD "e.m" format map number?
-REM # (replace the dot with a space for the engines)
-SET "WARP=%WARP:.= %"
-
-REM # the option will occur first so that if another "-warp" parameters appears,
-REM # it'll override this one
-SET "PARAMS=%PARAMS% -warp %WARP%"
+SET WARP=%~1
+SET PARAMS=%PARAMS% /warp %WARP%
 
 SHIFT
 GOTO :params
@@ -330,6 +326,8 @@ GOTO :params
 :iwad
 REM ====================================================================================================================
 SHIFT
+
+SET IWAD=%~1
 
 REM # The Ultimate DOOM
 IF /I "%~1" == "DOOM" SET "IWAD=DOOM.WAD"
@@ -363,7 +361,7 @@ GOTO :params
 REM ====================================================================================================================
 SHIFT
 
-SET "PWAD=%~1"
+SET PWAD=%~1
 
 SHIFT
 GOTO :params

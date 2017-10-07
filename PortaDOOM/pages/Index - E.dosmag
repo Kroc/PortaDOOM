@@ -5,7 +5,8 @@ $KEY:C=GOTO:Echelon
 $KEY:D=GOTO:Elf Gets Pissed
 $KEY:E=GOTO:Erkatane
 $KEY:F=GOTO:Eternal Doom III
-$KEY:G=GOTO:Master Levels #21
+$KEY:G=GOTO:Cabal Series #07
+$KEY:H=GOTO:Master Levels #21
 
 ^C:INDEX :: E
 
@@ -17,5 +18,6 @@ $KEY:G=GOTO:Master Levels #21
 - [D] *Elf Gets Pissed									Episodes
 - [E] *Erkatane											Episodes
 - [F] *Eternal Doom III									MegaWADs
-- [G] *Master Levels: Express Elevator to Hell, (The)	Commercial DOOM
+- [G] *Cabal Series: Eye of the Storm					5 Years of Doom
+- [H] *Master Levels: Express Elevator to Hell, (The)	Commercial DOOM
 
