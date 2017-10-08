@@ -5,7 +5,7 @@ Pages:
     limit it to software rendering
 [ ] Create pages for the speedruns so that the author notes can be displayed
 [ ] Help page to explain WAD page headers, glossary
-[ ] Index pages at the end of each Cacowards; allows the separate Cacowards
+[-] Index pages at the end of each Cacowards; allows the separate Cacowards
     packages to have an index
 [ ] Need launchers for bonus levels on Eternal Doom III
 
