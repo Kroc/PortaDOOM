@@ -2,6 +2,9 @@
 + = New feature / addition
 - = Removal
 
+08-OCT-17:
++ Added Index page to Cacowards 2016
+
 07-OCT-17:
 + Added Index page to Cacowards 2015
 + Fixed inconsistent naming of "50 Shades of Graytall" ("a", not "e" in "gray")

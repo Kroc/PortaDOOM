@@ -1,0 +1,90 @@
+$THEME=BLACK
+
+^C:2016 CACOWARDS :: INDEX
+
+:-------------------------------------------------------------------------------
+(Indented pages are cross-references and not a direct part of Cacowards 2016)
+
+:TOP TEN:
+
+$KEY:A=GOTO:John Romero's Episode 1 #03
+- [A] *Tech Gone Bad* 								_John Romero_
+
+$KEY:B=GOTO:Ancient Aliens
+- [B] *Ancient Aliens								_Paul "skillsaw" DeBruyne_
+
+$KEY:C=GOTO:Nihility
+- [C] *Nihility: Infinite Teeth						_Years_
+
+$KEY:D=GOTO:Mutiny
+- [D] *Mutiny										Various
+
+$KEY:E=GOTO:Absolutely Killed
+- [E] *Absolutely Killed							_Ryath_/_scwiba_
+
+$KEY:F=GOTO:Elf Gets Pissed
+- [F] *Elf Gets Pissed								_RottKing_
+
+$KEY:G=GOTO:Comatose
+- [G] *Comatose										_Lainos_
+
+$KEY:H=GOTO:Miasma
+- [H] *Miasma										_tourniquet_
+
+$KEY:I=GOTO:Alpha Accident - Terra Nova
+- [I] *Alpha Accident: Terra Nova					_Wraith777_
+
+$KEY:J=GOTO:Japanese Community Project
+- [J] *Japanese Community Project					Various
+
+$KEY:K=GOTO:Blade of Agony
+- [K] *WolfenDoom - Blade of Agony Ep.1				_Daniel Gimmer_ et al
+
+:RUNNERS UP:
+
+$KEY:L=GOTO:Warp House
+- [L] *Warp House									_Ed C._
+
+$KEY:M=GOTO:THT - Threnody
+- [M] *THT: Threnody								Various
+
+$KEY:N=GOTO:Bloodstain
+- [N] *Bloodstain									_Pavel 'Pipicz' Tvrzník_
+
+$KEY:O=GOTO:Strange Aeons
+- [O] *Strange Aeons								_Impie_
+
+$KEY:P=GOTO:Echelon
+- [P] *Echelon										_Sverre Andre Kvernmo_
+
+$KEY:Q=GOTO:Shadow of the Wool Ball
+- [Q] *Shadow of the Wool Ball						_MSPaintR0cks_
+
+:MULTIPLAYER AWARDS:
+
+$KEY:R=GOTO:Aeon Deathmatch
+$KEY:S=GOTO:Don't Be a Bitch Remastered
+- [R] *AeonDM										_Mechanix Union_
+   └→ [S] *Don't Be a Bitch Remastered
+
+$KEY:T=GOTO:32in24-16
+- [T] *32in24-16									_YEDS gang_
+
+:BEST GAMEPLAY MOD:
+
+$KEY:U=GOTO:DOOM(4) for DooM
+- [U] *Doom 4 Doom									_DBThanatos_ et al.
+
+:MORDETH AWARD:
+
+$KEY:V=GOTO:Doom the Way id Did - The Lost Episodes
+$KEY:W=GOTO:Doom the Way id Did
+$KEY:X=GOTO:No End in Sight
+- [V] *Doom the Way id Did - The Lost Episodes		Various
+   └→ [W] *Doom the Way id Did
+      [X] *No End in Sight
+
+:MOCKAWARD:
+
+$KEY:Y=GOTO:Luducrium
+- [Y] *Luducrium									_antares031_
