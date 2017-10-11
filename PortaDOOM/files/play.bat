@@ -1,15 +1,72 @@
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
-REM # play.bat [/IWAD iwad] [/REQ engines] [/PWAD pwad] [options] [-- files...]
+REM # any parameters?
+REM # whilst all parameters would be optional (and DOOM2 would be launched by
+REM # default, we do want to echo the help text)
+IF NOT "%~1" == "" GOTO :init
 
-REM # [/IWAD iwad]	specifies IWAD to load, can be any of the following:
-REM #			(defaults to DOOM2)
-REM #
-REM #			DOOM, DOOM1, DOOM2, TNT, PLUTONIA
-REM #			HERETIC, HERETIC1, HEXEN
-REM #			FREEDOOM1, FREEDOOM2
-REM #			SQUARE1
-REM #			HARM1
+ECHO:
+ECHO  "play.bat" is a command-line utility for selecting and launching DOOM engines.
+ECHO  Given a set of requirements for a DOOM WAD, "play.bat" will present you with
+ECHO  choices available (if any) and launch the game with the correct configuration
+ECHO  through its sister script "doom.bat".
+ECHO:
+ECHO  Usage:
+ECHO:
+ECHO     play.bat [/IWAD ^<iwad^>] [/REQ ^<engines^>]
+ECHO              [/PWAD ^<file^>] [/DEH ^<file^>] [/BEX ^<file^>]
+ECHO              [/WARP ^<map-number^>] [/SKILL ^<skill-level^>]
+ECHO              [-- ^<files^>...]
+ECHO:
+ECHO  /IWAD ^<iwad^>
+ECHO:
+ECHO  Specifies the IWAD to use. Note that unlike "doom.bat", some shorthand terms
+ECHO  are available and "play.bat" will provide the file path for you. These are:
+ECHO:
+ECHO    ^<iwad^>      Description          File path "wads\*"
+ECHO    -----------------------------------------------------------------------------
+ECHO    "DOOM"      Registerd DOOM       "DOOM.WAD"
+ECHO    "DOOM1"     DOOM Shareware       "SHAREWARE\DOOM1.WAD"
+ECHO    "DOOM2"     DOOM II              "DOOM2.WAD"
+ECHO    "FREEDOOM1" FreeDOOM Phase I     "conversions\FreeDOOM\FREEDOOM1.WAD"
+ECHO    "FREEDOOM2" FreeDOOM Phase II    "conversions\FreeDOOM\FREEDOOM2.WAD"
+ECHO    "HERETIC"   Registered Heretic   "HERETIC.WAD"
+ECHO    "HERETIC1"  Heretic Shareware    "SHAREWARE\HERETIC1.WAD"
+ECHO    "HEXEN"     Hexen                "HEXEN.WAD"
+ECHO    "SQUARE1"   Adventures of Square "SHAREWARE\adventures_of_square\square1.pk3"
+ECHO    "HARM1"     Harmony              "conversions\harmony\harm1.wad"
+ECHO:
+ECHO  /DEH ^<file^>
+ECHO  /BEX ^<file^>
+REM ---------------------------------------------------------------------------------
+ECHO:
+ECHO     Early DOOM modifications were done by way of a live patching system known as
+ECHO     DeHackEd. These ".deh" files are common, even today, as the lowest-common-
+ECHO     denominator of DOOM modding.
+ECHO:
+ECHO     Boom, a highly-influential early source-port, enhanced this format further
+ECHO     with "Boom-EXtended" DeHackEd files.
+ECHO:
+ECHO     These parameters specify a DEH or BEX file to load alongside any WADs.
+ECHO:
+ECHO  /WARP ^<map-number^>
+REM ---------------------------------------------------------------------------------
+ECHO:
+ECHO     Warp to the given map number. For games with episodes, such as DOOM and
+ECHO     Heretic, this is in the format "e.m" where "e" is the Episode number and
+ECHO     "m" is the Map number, e.g. "/WARP 2.4". For games without episodes like
+ECHO     DOOM II, it's just a single number e.g. "/WARP 21"
+ECHO:
+ECHO  /SKILL ^<skill-level^>
+REM ---------------------------------------------------------------------------------
+ECHO:
+ECHO     Set skill (difficulty) level. This is a number nominally 1 to 5, but this
+ECHO     may vary with mods. A value of 0 disables monsters on some engines, but this
+ECHO     can sometimes prevent a level from being compleatable.
+
+ECHO:
+PAUSE & EXIT /B 0
+
 REM #
 REM # [/REQ engines]	specify engine requirements,
 REM #			can be any of the following:
@@ -31,12 +88,14 @@ REM #			zandronum-2	- zandronum v2 only
 REM #			zandronum-3	- zandronum v3 only
 
 
+:init
 REM # path of this script
 REM # (do this before using `SHIFT`)
 SET "HERE=%~dp0"
 IF "%HERE:~-1,1%" == "\" SET "HERE=%HERE:~0,-1%"
 
-REM # the list of available engines; the provided requirements will narrow this list down
+REM # the list of available engines;
+REM # the provided requirements will narrow this list down
 SET "ENGINE_CHOCODOOM=1"
 SET "ENGINE_DOOM64EX=1"
 SET "ENGINE_GZDOOM=1"
@@ -51,8 +110,13 @@ SET "VER_GZDOOM=gzdoom"
 SET "VER_ZANDRONUM=zandronum"
 
 REM # param values
+SET "REQS="
 SET "IWAD="
 SET "PWAD="
+SET "DEH="
+SET "BEX="
+SET "WARP="
+SET "SKILL="
 SET "PARAMS="
 SET "FILES="
 SET "ENGINE="
@@ -61,21 +125,71 @@ SET "CMPLVL="
 
 :params
 REM ====================================================================================================================
-REM # WAD parameter?
-IF /I "%~1" == "/IWAD" GOTO :iwad
-IF /I "%~1" == "/PWAD" GOTO :pwad
 REM # engine requirements?
-IF /I "%~1" == "/REQ"  GOTO :reqs
+IF /I "%~1" == "/REQ" (
+	REM # this needs to be broken down into particles
+	SET REQS=%~2
+	GOTO :reqs
+)
+REM # WAD parameter?
+IF /I "%~1" == "/IWAD" (
+	REM # just capture the parameter, validation happens after all parameters are gathered
+	SET IWAD=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+IF /I "%~1" == "/PWAD" (
+	REM # just capture the parameter
+	SET PWAD=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+IF /I "%~1" == "/DEH" (
+	REM # just capture the parameter
+	SET DEH=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+IF /I "%~1" == "/BEX" (
+	REM # just capture the parameter
+	SET BEX=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
 REM # compatibility-level?
-IF /I "%~1" == "/CMPLVL" GOTO :complevel
-REM # warp to a map number (will ask for difficulty)
-IF /I "%~1" == "/WARP" GOTO :warp
+IF /I "%~1" == "/CMPLVL" (
+	REM # just capture the parameter
+	SET CMPLVL=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+REM # warp to a map number
+IF /I "%~1" == "/WARP" (
+	REM # just capture the parameter
+	SET WARP=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+REM # set skill (difficulty) level
+IF /I "%~1" == "/SKILL" (
+	REM # just capture the parameter
+	SET SKILL=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
 
-REM # end of options, a straight file-list will follow
+REM # end of parameters, a straight file-list will follow
 IF "%~1" == "--" GOTO :files
 
 REM # no more parameters
-IF "%~1" == "" GOTO :engine
+IF "%~1" == "" GOTO :validate
 
 ECHO Invalid parameter!
 ECHO "%~1"
@@ -85,11 +199,57 @@ EXIT /B 1
 REM --------------------------------------------------------------------------------------------------------------------
 SHIFT
 
-IF "%~1" == "" GOTO :engine
+IF "%~1" == "" GOTO :validate
 
 SET FILES=%FILES% "%~1"
 
 GOTO :files
+
+
+:validate
+REM =====================================================================================================================
+
+REM # The Ultimate DOOM
+IF /I "%IWAD%" == "DOOM"	SET "IWAD=DOOM.WAD"
+REM # DOOM II
+IF /I "%IWAD%" == "DOOM2"	SET "IWAD=DOOM2.WAD"
+REM # Final DOOM: TNT Evilution
+IF /I "%IWAD%" == "TNT"		SET "IWAD=TNT.WAD"
+REM # Final DOOM: The Plutonia Experiment
+IF /I "%IWAD%" == "PLUTONIA"	SET "IWAD=PLUTONIA.WAD"
+REM # Heretic, Hexen
+IF /I "%IWAD%" == "HERETIC"	SET "IWAD=HERETIC.WAD"
+IF /I "%IWAD%" == "HEXEN"	SET "IWAD=HEXEN.WAD"
+REM # FreeDOOM: Phase 1 / 2
+IF /I "%IWAD%" == "FREEDOOM1"	SET "IWAD=conversions\freedoom\freedoom1.wad"
+IF /I "%IWAD%" == "FREEDOOM2"	SET "IWAD=conversions\freedoom\freedoom2.wad"
+REM # Harmony
+IF /I "%IWAD%" == "HARM1"	SET "IWAD=conversions\harmony\harm1.wad"
+
+REM # shareware:
+IF /I "%IWAD%" == "DOOM1"	SET "IWAD=SHARWARE\DOOM1.WAD"
+IF /I "%IWAD%" == "HERETIC1"	SET "IWAD=SHAREWARE\HERETIC1.WAD"
+IF /I "%IWAD%" == "SQUARE1"	SET "IWAD=SHAREWARE\adventures_of_square\square1.pk3"
+
+REM # was an IWAD specified?
+REM # it can be excluded so that doom.bat will do the selection based on engine used
+IF NOT "%IWAD%" == "" (
+	SET PARAMS=%PARAMS% /IWAD "%IWAD%"
+)
+
+REM # was a PWAD specified?
+IF NOT "%PWAD%" == "" (
+	SET PARAMS=%PARAMS% /PWAD "%PWAD%"
+)
+
+REM # was a DeHackEd / BEX script specified?
+REM # TODO: limit this to engines that support it, select best option
+IF NOT "%DEH%" == "" (
+	SET PARAMS=%PARAMS% /DEH "%DEH%"
+)
+IF NOT "%BEX%" == "" (
+	SET PARAMS=%PARAMS% /BEX "%BEX%"
+)
 
 :engine
 REM --------------------------------------------------------------------------------------------------------------------
@@ -110,7 +270,7 @@ IF %ENGINE_COUNT% EQU 0 (
 	ECHO  No compatible engine available.
 	ECHO  Please check the REQuired parameter
 	ECHO:
-	ECHO      "/REQ %REQ%"
+	ECHO      "/REQ %REQS%"
 	ECHO:
 	PAUSE & EXIT /B 1
 )
@@ -189,11 +349,21 @@ IF ERRORLEVEL 1 SET "ENGINE=%VER_GZDOOM%"
 
 :launch
 REM ====================================================================================================================
-:skill
+:warp
 REM --------------------------------------------------------------------------------------------------------------------
-REM # warping to a map number? ask for difficulty level
-REM # TODO: if -skill is already provided, skip this?
+REM # if /WARP is specified, pass it on as is, doom.bat will handle the specifics
+IF NOT "%WARP%" == "" (
+	SET PARAMS=%PARAMS% /WARP %WARP%
+)
 
+:skill
+REM # if skill is specified, it can be set without asking user
+IF NOT "%SKILL%" == "" (
+	SET PARAMS=%PARAMS% /SKILL %SKILL%
+	GOTO :exe
+)
+
+REM # if /WARP is specified, but not a skill-level we ask the user for it
 IF "%WARP%" == "" GOTO :exe
 
 REM # TODO: provide descriptions of the effects skill levels have;
@@ -281,17 +451,7 @@ SET PARAMS=%PARAMS% /SKILL %SKILL%
 
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
-SET "OPTIONS="
-
-REM # was an IWAD specified?
-IF NOT "%IWAD%" == "" (
-	SET OPTIONS=%OPTIONS% /IWAD "%IWAD%"
-)
-REM # was a PWAD specified?
-IF NOT "%PWAD%" == "" (
-	SET OPTIONS=%OPTIONS% /PWAD "%PWAD%"
-)
-
+REM # prboom+ requirements:
 IF "%ENGINE%" == "prboom" (
 	REM # if a compatibility-level is specificed, include this for PRBoom engines
 	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
@@ -302,69 +462,15 @@ IF "%ENGINE%" == "%VER_GZDOOM%" (
 	REM # load the extra lighting information
 	SET FILES=%FILES% lights.pk3 brightmaps.pk3
 )
+
 REM # hardware or software rendering?
 REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
-IF %SW% EQU 1 SET OPTIONS=%OPTIONS% /SW
+IF %SW% EQU 1 SET PARAMS=%PARAMS% /SW
 
-CALL "%HERE%\doom.bat" /USE %ENGINE% %OPTIONS% %PARAMS% -- %FILES%
+CALL "%HERE%\doom.bat" /USE %ENGINE% %PARAMS% -- %FILES%
 
 EXIT /B
 
-
-:warp
-REM ====================================================================================================================
-SHIFT
-
-REM # the next parameter should be the map number
-SET WARP=%~1
-SET PARAMS=%PARAMS% /warp %WARP%
-
-SHIFT
-GOTO :params
-
-
-:iwad
-REM ====================================================================================================================
-SHIFT
-
-SET IWAD=%~1
-
-REM # The Ultimate DOOM
-IF /I "%~1" == "DOOM" SET "IWAD=DOOM.WAD"
-REM # DOOM II
-IF /I "%~1" == "DOOM2" SET "IWAD=DOOM2.WAD"
-REM # Final DOOM: TNT Evilution
-IF /I "%~1" == "TNT" SET "IWAD=TNT.WAD"
-REM # Final DOOM: The Plutonia Experiment
-IF /I "%~1" == "PLUTONIA" SET "IWAD=PLUTONIA.WAD"
-REM # Heretic, Hexen
-IF /I "%~1" == "HERETIC" SET "IWAD=HERETIC.WAD"
-IF /I "%~1" == "HEXEN" SET "IWAD=HEXEN.WAD"
-REM # FreeDOOM: Phase 1 / 2
-IF /I "%~1" == "FREEDOOM1" SET "IWAD=conversions\freedoom\freedoom1.wad"
-IF /I "%~1" == "FREEDOOM2" SET "IWAD=conversions\freedoom\freedoom2.wad"
-REM # Adventures of Square (shareware)
-IF /I "%~1" == "SQUARE1" SET "IWAD=SHAREWARE\adventures_of_square\square1.pk3"
-REM # Harmony
-IF /I "%~1" == "HARM1" SET "IWAD=conversions\harmony\harm1.wad"
-
-REM # shareware, for PWADs that don't need the full IWAD
-REM # (this does not work for GZdoom)
-IF /I "%~1" == "DOOM1"    SET "IWAD=SHARWARE\DOOM1.WAD"
-IF /I "%~1" == "HERETIC1" SET "IWAD=SHAREWARE\HERETIC1.WAD"
-
-SHIFT
-GOTO :params
-
-
-:pwad
-REM ====================================================================================================================
-SHIFT
-
-SET PWAD=%~1
-
-SHIFT
-GOTO :params
 
 
 :reqs
@@ -372,11 +478,12 @@ REM ============================================================================
 SHIFT
 
 REM # split the requirements list by "+" (up to three)
-FOR /F "tokens=1-3 delims=+" %%A IN ("%~1") DO (
+FOR /F "tokens=1-3 delims=+" %%A IN ("%REQS%") DO (
 	IF NOT "%%A" == "" CALL :req "%%A"
 	IF NOT "%%B" == "" CALL :req "%%B"
 	IF NOT "%%C" == "" CALL :req "%%C"
 )
+
 SHIFT
 GOTO :params
 
@@ -522,12 +629,3 @@ IF /I "%~1" == "zdoom" (
 )
 SET "REQ=%~1"
 GOTO:EOF
-
-:complevel
-REM ====================================================================================================================
-SHIFT
-
-SET "CMPLVL=%~1"
-
-SHIFT
-GOTO :params

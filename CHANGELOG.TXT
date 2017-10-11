@@ -1,6 +1,22 @@
-* = Fix / Change
 + = New feature / addition
+* = Fix / Change
 - = Removal
+
+11-10-17:
++ IWAD, PWAD and all other files given to doom.bat are checked for in multiple
+  locations, consistently. These directories are, in order of precedence:
+  = The previous directory used
+  = The 'current directory' doom.bat was called from
+  = The PWAD's directory, if a PWAD was selected
+  = The IWAD's directory
+  = The base "/wads" directory
+  = The engine's directory (for things like "lights.pk3")
+
++ Added "/DEH" & "/BEX" switches to doom.bat, removing the ability to load
+  DeHackEd files from the files list. This was done for more reliable behaviour
+  between engines, and for easing potential future improvements
++ play.bat updated to included "/WARP", "/SKILL", "/DEH" & "/BEX"
+* Fixed broken PWAD GOG/Steam detection!
 
 08-OCT-17:
 + Added Index page to Cacowards 2016

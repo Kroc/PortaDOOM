@@ -23,8 +23,10 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
-[ ] Search 'current directory' for IWADs
-[ ] Search for PWAD in IWAD directory too (since WADs folder is combined now)
+[ ] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
+    based on engine support -- e.g. ALIENS TC
+[X] Search 'current directory' for IWADs
+[X] Search for PWAD in IWAD directory too (since WADs folder is combined now)
 [ ] GZDoom 3.2+ supports Rise of the Wool Ball as an IWAD
 [X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when

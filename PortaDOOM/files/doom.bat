@@ -43,7 +43,9 @@ SET "USAGE=%USAGE% [/32]"
 SET "USAGE=%USAGE% [/DEFAULT]%NEWLINE%            "
 SET "USAGE=%USAGE% [/IWAD ^<file^>]"
 SET "USAGE=%USAGE% [/PWAD ^<file^>]"
-SET "USAGE=%USAGE% [/DEMO ^<file^>]%NEWLINE%            "
+SET "USAGE=%USAGE% [/DEH ^<file^>]"
+SET "USAGE=%USAGE% [/BEX ^<file^>]%NEWLINE%            "
+SET "USAGE=%USAGE% [/DEMO ^<file^>]"
 SET "USAGE=%USAGE% [/WARP ^<map-number^>]"
 SET "USAGE=%USAGE% [/SKILL ^<skill-level^>]%NEWLINE%            "
 SET "USAGE=%USAGE% [/CMPLVL ^<complevel^>]"
@@ -197,10 +199,23 @@ ECHO     FreeDOOM is intended as a drop-in replacement, maintaining compatibilit
 ECHO     with DOOM.WAD ^& DOOM2.WAD allowing you to play most community content
 ECHO     without having to actually purchase DOOM.
 ECHO:
+ECHO  /DEH ^<file^>
+ECHO  /BEX ^<file^>
+REM ---------------------------------------------------------------------------------
+ECHO:
+ECHO     Early DOOM modifications were done by way of a live patching system known as
+ECHO     DeHackEd. These ".deh" files are common, even today, as the lowest-common-
+ECHO     denominator of DOOM modding.
+ECHO:
+ECHO     Boom, a highly-influential early source-port, enhanced this format further
+ECHO     with "Boom-EXtended" DeHackEd files.
+ECHO:
+ECHO     These parameters specify a DEH or BEX file to load alongside any WADs.
+ECHO:
 ECHO  /DEMO ^<file^>
 REM ---------------------------------------------------------------------------------
 ECHO:
-ECHO     Doom play sessions can be recorded and played back later. These are often
+ECHO     DOOM play sessions can be recorded and played back later. These are often
 ECHO     distributed as ".lmp" files. The /DEMO option specifies the file to play.
 ECHO:
 ECHO     Unlike the -playdemo engine parameter that requires the path to be valid,
@@ -211,17 +226,39 @@ ECHO:
 ECHO  /WARP ^<map-number^>
 REM ---------------------------------------------------------------------------------
 ECHO:
-ECHO     Warp to the given map number.
+ECHO     Warp to the given map number. For games with episodes, such as DOOM and
+ECHO     Heretic, this is in the format "e.m" where "e" is the Episode number and
+ECHO     "m" is the Map number, e.g. "/WARP 2.4". For games without episodes like
+ECHO     DOOM II, it's just a single number e.g. "/WARP 21"
 ECHO:
 ECHO  /SKILL ^<skill-level^>
 REM ---------------------------------------------------------------------------------
 ECHO:
-ECHO     Set skill (difficulty) level.
+ECHO     Set skill (difficulty) level. This is a number nominally 1 to 5, but this
+ECHO     may vary with mods. A value of 0 disables monsters on some engines, but this
+ECHO     can sometimes prevent a level from being compleatable.
 ECHO:
 ECHO  /CMPLVL ^<complevel^>
 REM ---------------------------------------------------------------------------------
 ECHO:
-ECHO     Specifies the compatibility level.
+ECHO     Specifies the compatibility level, a feature provided by PrBoom+ to emulate
+ECHO     the behaviour of different versions of the DOOM executable. The complevel
+ECHO     can be:
+ECHO:
+ECHO         0     = Doom v1.2
+ECHO         1     = Doom v1.666
+ECHO         2     = Doom v1.9
+ECHO         3     = Ultimate Doom ^& Doom95
+ECHO         4     = Final Doom
+ECHO         5     = DOSDoom
+ECHO         6     = TASDOOM
+ECHO         7     = Boom's inaccurate vanilla compatibility mode
+ECHO         8     = Boom v2.01
+ECHO         9     = Boom v2.02
+ECHO         10    = LxDoom
+ECHO         11    = MBF
+ECHO         12-16 = PrBoom (old versions)
+ECHO         17    = Current PrBoom 
 ECHO:
 ECHO  /EXEC ^<file^>
 REM ---------------------------------------------------------------------------------
@@ -254,10 +291,7 @@ ECHO:
 ECHO     Where "ExtraTextures.wad" is in the "BrutalDoom" folder, and if it isn't
 ECHO     the base "%DIR_WADS%" folder will be checked and then the engine's folder.
 ECHO:
-ECHO     DeHackEd extensions ^(".deh" / ".bex"^) can be included in the files list,
-ECHO     and will be loaded using the correct "-deh" or "-bex" engine parameter.
-ECHO:
-ECHO Config File:
+ECHO  Config File:
 REM ---------------------------------------------------------------------------------
 ECHO:
 ECHO     For portability doom.bat has default configuration files for each engine
@@ -317,19 +351,17 @@ SET "FIX_PATH=..\..\.."
 REM # we will remember the directory of the last file
 REM # (used for finding side-by-side WADs)
 SET "DIR_PREV="
+REM # other directories that will be remembered as we go
+SET "DIR_IWAD="
+SET "DIR_PWAD="
 
 REM # this is where we'll build up the entire parameter string for the engine
 SET "PARAMS="
 REM # the list of files will be built here:
 SET "FILES="
-REM # any DeHackEd patches?
-SET "DEH="
-SET "BEX="
 
-REM # keep track of which types of files have been added or not
+REM # any files included?
 SET ANY_WAD=0
-SET ANY_DEH=0
-SET ANY_BEX=0
 
 REM # which game to be played. defaults to "DOOM2",
 REM # but can also be "DOOM", "DOOM64", "HERETIC", "HEXEN" or "STRIFE"
@@ -343,6 +375,8 @@ SET SW=0
 SET DEFAULT=0
 SET "IWAD="
 SET "PWAD="
+SET "DEH="
+SET "BEH="
 SET "DEMO="
 SET "WARP="
 SET "SKILL="
@@ -408,6 +442,22 @@ REM # select PWAD to use
 IF /I "%~1" == "/PWAD" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
 	SET PWAD=%~2
+	REM # check for any other options
+	SHIFT & SHIFT
+	GOTO :params
+)
+REM # DeHackEd file?
+IF /I "%~1" == "/DEH" (
+	REM # just capture the parameter, validation happens after all parameters are gathered
+	SET DEH=%~2
+	REM # check for any other options
+	SHIFT & SHIFT
+	GOTO :params
+)
+REM # Boom-EXtended DeHackEd file?
+IF /I "%~1" == "/BEX" (
+	REM # just capture the parameter, validation happens after all parameters are gathered
+	SET BEX=%~2
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -762,7 +812,7 @@ IF "%IWAD_EXT%" == "" (
 	REM # all ZDoom-based engines support ".pk3"
 	IF EXIST "%DIR_WADS%\%IWAD%.pk3" SET "IWAD=%IWAD%.pk3"
 	REM # lastly, the most common is ".WAD"
-	IF EXIST "%DIR_WADS%\%IWAD%.WAD" SET "IWAD=%IWAD%.WAD"
+	SET "IWAD=%IWAD%.WAD"
 	REM # if the IWAD extension was omitted, and it wasn't found in the "wads" folder,
 	REM # then it will now have a ".WAD" extension required for searching GOG / Steam for it
 )
@@ -782,11 +832,14 @@ IF /I "%IWAD_NAME%" == "HEXEN.WAD"    SET "GAME=HEXEN"
 IF /I "%IWAD_NAME%" == "STRIFE1.WAD"  SET "GAME=STRIFE"
 IF /I "%IWAD_NAME%" == "STRIFE0.WAD"  SET "GAME=STRIFE"
 
-REM # this is where the IWAD is first assumed to be
-SET "IWAD_PATH=%DIR_WADS%\%IWAD%"
-REM # if the IWAD exists as-is and requires no special provisions,
-REM # skip ahead; no edge-cases to handle
-IF EXIST "%IWAD_PATH%" GOTO :iwad_found
+REM # search for the IWAD:
+SET FILE=%IWAD%
+CALL :find_file
+REM # found?
+IF %ERRORLEVEL% EQU 0 (
+	SET IWAD_PATH=%FILE%
+	GOTO :iwad_found
+)
 
 REM # IWAD is missing,
 REM # now search GOG / Steam for the IWAD:
@@ -1080,30 +1133,17 @@ REM ============================================================================
 REM # PWAD:
 REM ====================================================================================================================
 REM # if no PWAD was specified, skip ahead
-IF "%PWAD%" == "" GOTO :saves
+IF "%PWAD%" == "" GOTO :deh_bex
 
 REM # get the PWAD file name (ignore any path)
 FOR %%G IN ("%PWAD%") DO SET "PWAD_NAME=%%~nxG"
 
-REM # if a PWAD was given we can set that as the previous directory so that the first file in the files list will be
-REM # checked for in the PWAD's directory. note that this is done before checking the PWAD exists so that in the case
-REM # of commercial PWADs like NERVE.WAD, we look for additional files in the _intended_ directory rather than ending
-REM # up in Steam or GOG's paths!
-SET "PWAD_PATH=%DIR_WADS%\%PWAD%"
-CALL :prev_dir "%PWAD_PATH%"
-
-REM # check the default pwad path
-IF EXIST "%PWAD_PATH%" (
-	REM # additional files will be checked for in the proven PWAD directory
-	CALL :prev_dir "%PWAD_PATH%"
-	GOTO :pwad_found
-)
-
-REM # check the "current directory" that called this script
-SET "PWAD_PATH=%DIR_CUR%\%PWAD%"
-IF EXIST "%PWAD_PATH%" (
-	REM # additional files will be checked for in the proven PWAD directory
-	CALL :prev_dir "%PWAD_PATH%"
+REM # search for the file
+SET FILE=%PWAD%
+CALL :find_file
+REM # found?
+IF %ERRORLEVEL% EQU 0 (
+	SET PWAD_PATH=%FILE%
 	GOTO :pwad_found
 )
 
@@ -1152,13 +1192,13 @@ EXIT /B 1
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
 	IF NOT "%REG%" == "" (
 		REM # check if NERVE.WAD can be found there
-		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :saves
+		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :pwad_found
 	)
 	REM # is GOG : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
 	IF NOT "%REG%" == "" (
 		REM # check if NERVE.WAD can be found there
-		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :saves
+		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :pwad_found
 	)
 	REM # if the WAD was not found, we cannot continue, the user does not have NERVE.WAD
 	ECHO:
@@ -1177,13 +1217,13 @@ EXIT /B 1
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
 	IF NOT "%REG%" == "" (
 		REM # check if the WAD can be found there
-		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :saves
+		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :pwad_found
 	)
 	REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
 	IF NOT "%REG%" == "" (
 		REM # check if the WAD can be found there
-		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :saves
+		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :pwad_found
 	)
 	
 	REM # if the WAD was not found, we cannot continue
@@ -1200,8 +1240,8 @@ EXIT /B 1
 
 :pwad_found
 REM --------------------------------------------------------------------------------------------------------------------
-REM # remember the PWAD directory specifically for looking for a demo file
-SET "DIR_PWAD=%DIR_PREV%"
+REM # remember the PWAD directory for looking for other files, including demos
+SET DIR_PWAD=%DIR_PREV%
 
 REM # with the IWAD/PWAD edge-cases handled we can finally print out the PWAD
 ECHO          PWAD : %PWAD_PATH%
@@ -1217,8 +1257,52 @@ REM # (i.e. if no other files are included)
 SET ANY_WAD=1
 
 
-:saves
 REM ====================================================================================================================
+REM # DEHACKED:
+REM ====================================================================================================================
+:deh_bex
+REM # was there any /DEH or /BEX parameters?
+IF "%DEH%-%BEX%" == "-" GOTO :saves
+
+:deh
+REM # was there a /DEH parameter?
+IF "%DEH%" == "" GOTO :bex
+
+SET FILE=%DEH%
+CALL :find_file_or_fail
+
+REM # path confirmed, put on screen
+SET DEH_PATH=%FILE%
+ECHO          -deh : %DEH_PATH%
+
+REM # if the DEH file is relative, we'll need to fix the relative path
+REM # to account for what will be the current directory once we launch
+IF NOT "%DEH_PATH:~1,1%" == ":" SET "DEH_PATH=%FIX_PATH%\%DEH_PATH%"
+REM # add to the command line
+SET PARAMS=%PARAMS% -deh "%DEH_PATH%"
+
+:bex
+REM # was there a /BEX parameter?
+IF "%BEX%" == "" GOTO :saves
+
+SET FILE=%BEX%
+CALL :find_file_or_fail
+
+REM # path confirmed, put on screen
+SET BEX_PATH=%FILE%
+ECHO          -bex : %BEX_PATH%
+
+REM # if the BEX file is relative, we'll need to fix the relative path
+REM # to account for what will be the current directory once we launch
+IF NOT "%BEX_PATH:~1,1%" == ":" SET "BEX_PATH=%FIX_PATH%\%BEX_PATH%"
+REM # add to the command line
+SET PARAMS=%PARAMS% -bex "%BEX_PATH%"
+
+
+REM ====================================================================================================================
+REM # SAVE FILES:
+REM ====================================================================================================================
+:saves
 REM # savegames are separated by port (gzdoom / zandronum &c.)
 REM # and then by IWAD or PWAD (if present)
 IF NOT "%PWAD%" == "" (
@@ -1257,7 +1341,7 @@ IF "%ENGINE_KIN%" == "B" (
 
 
 REM ====================================================================================================================
-REM # Config:
+REM # CONFIG:
 REM ====================================================================================================================
 REM # zdoom based engines (q/g/zdoom, zandronum) use ".ini" config files,
 REM # the other engines use ".cfg"
@@ -1316,65 +1400,27 @@ IF "%ENGINE_KIN%" == "V" (
 
 
 REM ====================================================================================================================
-REM # Demo
+REM # DEMO:
 REM ====================================================================================================================
 REM # demo playback?
 IF "%DEMO%" == "" GOTO :warp
 
-REM # is the demo file path absolute?
-IF "%DEMO:~1,1%" == ":" (
-	REM # for an absolute path, paths do not need to be adjusted
-	SET DEMO_PATH=%DEMO%
-	GOTO :demo_check
-)
+SET FILE=%DEMO%
+CALL :find_file_or_fail
 
-:demo_dir
-REM # construct a path based on the 'current' directory
-SET "DEMO_PATH=%DIR_CUR%\%DEMO%"
-REM # is it there?
-IF EXIST "%DEMO_PATH%" GOTO :demo_found
+REM # path confirmed, put on screen
+SET DEMO_PATH=%FILE%
+ECHO     -playdemo : %DEMO_PATH%
 
-:demo_pwad
-REM # if no PWAD, try the WADs directory
-IF "%PWAD%" == "" GOTO :demo_wad
-
-REM # construct a path based on the PWAD directory
-SET "DEMO_PATH=%DIR_PWAD%\%DEMO%"
-REM # is it there?
-IF EXIST "%DEMO_PATH%" GOTO :demo_found
-
-:demo_wad
-REM # construct a path based on the WADs directory
-SET "DEMO_PATH=%DIR_WADS%\%DEMO%"
-
-:demo_check
-IF EXIST "%DEMO_PATH%" GOTO :demo_found
-
-:demo_missing
-	ECHO:
-	ECHO  ERROR: The demo file does not exist:
-	ECHO:
-	ECHO     "%DEMO_PATH%"
-	ECHO:
-	ECHO  Command:
-	ECHO:
-	ECHO     doom.bat %*
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-
-:demo_found
 REM # if the demo file is relative, we'll need to fix the relative path
 REM # to account for what will be the current directory once we launch
-IF NOT "%DEMO:~1,1%" == ":" SET "DEMO_PATH=%FIX_PATH%\%DEMO_PATH%"
-REM # add to the command line and notify user
+IF NOT "%DEMO_PATH:~1,1%" == ":" SET "DEMO_PATH=%FIX_PATH%\%DEMO_PATH%"
+REM # add to the command line
 SET PARAMS=%PARAMS% -playdemo "%DEMO_PATH%"
-ECHO     -playdemo : %DEMO%
 
 
 REM ====================================================================================================================
-REM # Warp & Skill:
+REM # WARP & SKILL:
 REM ====================================================================================================================
 :warp
 IF "%WARP%" == "" GOTO :skill
@@ -1383,45 +1429,30 @@ REM # is this a DOOM.WAD "e.m" format map number?
 REM # (replace the dot with a space for the engines)
 SET "WARP=%WARP:.= %"
 REM # add to the command line
+ECHO         -warp : %WARP%
 SET PARAMS=%PARAMS% -warp %WARP%
 
 :skill
 IF "%SKILL%" == "" GOTO :exec
-SET PARAMS=%PARAMS% -skill %SKILL% 
+ECHO        -skill : %SKILL% 
+SET PARAMS=%PARAMS% -skill %SKILL%
 
 
 REM ====================================================================================================================
-REM # Execute Script:
+REM # EXEC:
 REM ====================================================================================================================
 :exec
 IF "%EXEC%" == "" GOTO :files
 
-REM # check the 'current' directory for the script
-SET EXEC_PATH=%DIR_CUR%\%EXEC%
-IF EXIST "%EXEC_PATH%" GOTO :exec_found
+SET FILE=%EXEC%
+CALL :find_file_or_fail
+SET EXEC_PATH=%FILE%
 
-REM # if there's a PWAD, check its directory
-IF NOT "%PWAD%" == "" GOTO :exec_missing
-
-:exec_pwad
-	SET EXEC_PATH=%DIR_PWAD%\%EXEC%
-	IF EXIST "%EXEC_PATH%" GOTO :exec_found
-
-:exec_missing
-	ECHO:
-	ECHO  ERROR: The exec file does not exist:
-	ECHO:
-	ECHO     "%EXEC_PATH%"
-	ECHO:
-	ECHO  Command:
-	ECHO:
-	ECHO     doom.bat %*
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-
-:exec_found
+REM # if the exec file is relative, we'll need to fix the relative path
+REM # to account for what will be the current directory once we launch
+IF NOT "%EXEC_PATH:~1,1%" == ":" SET "EXEC_PATH=%FIX_PATH%\%EXEC_PATH%"
+REM # add to the command line
+ECHO         -exec : %EXEC_PATH%
 SET PARAMS=%PARAMS% -exec "%EXEC_PATH%"
 
 
@@ -1435,74 +1466,18 @@ SHIFT
 	REM # no more parameters remaining?
 	IF "%~1" == "" GOTO :launch
 	
-	REM # check the previous directory used; we will prefer WADs in the same
-	REM # directory as the PWAD, over WADs from the base PWAD directory
-	IF NOT "%DIR_PREV%" == "" (
-		IF EXIST "%DIR_PREV%\%~1" SET "FILE=%DIR_PREV%\%~1" & GOTO :file_found
-	)
-	REM # check the default PWAD directory
-	SET "FILE=%DIR_WADS%\%~1"
-	IF EXIST "%FILE%" GOTO :file_found
-	REM # also check the directory that called this script
-	SET "FILE=%DIR_CUR%\%~1"
-	IF EXIST "%FILE%" GOTO :file_found
-	REM # check the engine directory
-	SET "FILE=%ENGINE_DIR%\%~1"
-	IF EXIST "%FILE%" GOTO :file_found
+	SET FILE=%~1
+	CALL :find_file_or_fail
 	
-	:file_missing
-	REM # file cannot be found!
-	ECHO:
-	ECHO  ERROR: The specified file does not exist:
-	ECHO:
-	ECHO     "%~1"
-	ECHO:
-	ECHO  The following locations were checked:
-	ECHO:
-	IF NOT "%DIR_PREV%" == "" (
-		ECHO 	 "%DIR_PREV%\%~1"
-	)
-	ECHO 	 "%DIR_WADS%\%~1"
-	ECHO 	 "%DIR_CUR%\%~1"
-	ECHO 	 "%ENGINE_DIR%\%~1"
-	ECHO:
-	ECHO  Command:
-	ECHO:
-	ECHO     doom.bat %*
-	ECHO:
-	POPD
-	PAUSE
-	EXIT /B 1
-	
-	:file_found
-	REM # is the file a DeHackEd script?
-	IF /I "%~x1" == ".deh" GOTO :deh
-	IF /I "%~x1" == ".bex" GOTO :bex
-	
-	SET FILES=%FILES% "%FIX_PATH%\%FILE%"
-	CALL :prev_dir "%FILE%"
-	SET ANY_WAD=1
+	REM # display on screen, before 'fixing' relative path
 	ECHO         -file : %FILE%
-	SHIFT
-	GOTO :files_loop
 	
-	:deh
-	REM ------------------------------------------------------------------------------------------------------------
-	REM # load a DeHackEd extension:
-	SET DEH=%DEH% "%FIX_PATH%\%FILE%"
-	CALL :prev_dir "%FILE%"
-	SET ANY_DEH=1
-	ECHO          -deh : %FILE%
-	SHIFT
-	GOTO :files_loop 
-	
-	:bex
-	REM ------------------------------------------------------------------------------------------------------------
-	REM # load a Boom-enhanced DeHackEd extension:
-	SET BEX=%BEX% "%FIX_PATH%\%FILE%"
-	CALL :prev_dir "%FILE%"
-	SET ANY_BEX=1
-	ECHO          -bex : %FILE%
+	REM # if the file is relative, we'll need to fix the relative path
+	REM # to account for what will be the current directory once we launch
+	IF NOT "%FILE:~1,1%" == ":" SET "FILE=%FIX_PATH%\%FILE%"
+	REM # add to the command line
+	SET FILES=%FILES% "%FILE%"
+	SET ANY_WAD=1
 	SHIFT
 	GOTO :files_loop
 
@@ -1532,14 +1507,6 @@ IF %ANY_WAD% EQU 1 (
 		SET PARAMS=%PARAMS% -file %FILES%
 	)
 )
-REM # DeHackEd extensions?
-IF %ANY_DEH% EQU 1 (
-	SET PARAMS=%PARAMS% -deh %DEH%
-)
-IF %ANY_BEX% EQU 1 (
-	SET PARAMS=%PARAMS% -bex %BEX%
-)
-
 
 REM # get the desktop screen resolution:
 :screenres
@@ -1599,6 +1566,136 @@ IF %CONSOLE% EQU 1 (
 REM # restore the current directory
 POPD
 EXIT /B
+
+
+
+
+:find_file_or_fail
+REM ====================================================================================================================
+CALL :find_file
+IF ERRORLEVEL 1 (
+	ECHO:
+	ECHO  ERROR: The specified file does not exist:
+	ECHO:
+	ECHO     "%FILE%"
+	ECHO:
+	REM # if it was not an absolute path, list the places checked
+	IF NOT "%FILE:~1,1%" == ":" (
+		ECHO  The following locations were checked:
+		ECHO:
+		IF NOT "%DIR_PREV%" == "" (
+			ECHO 	 "%DIR_PREV%\%~1"
+		)
+		ECHO 	 "%DIR_CUR%\%~1"
+		IF NOT "%DIR_PWAD%" == "" (
+			ECHO 	 "%DIR_PWAD%\%~1"
+		)
+		IF NOT "%DIR_IWAD%" == "" (
+			ECHO 	 "%DIR_IWAD%\%~1"
+		)
+		ECHO 	 "%DIR_WADS%\%~1"
+		ECHO 	 "%ENGINE_DIR%\%~1"
+		ECHO:
+	)
+	ECHO  Command:
+	ECHO:
+	ECHO     doom.bat %*
+	ECHO:
+	POPD
+	PAUSE
+	EXIT /B 1
+)
+EXIT /B 0
+
+:find_file
+REM ====================================================================================================================
+REM # given a `FILE` path, checks possible locations for it:
+REM #
+REM #    1. the 'previous directory' used, e.g. WADs in the same folder
+REM #    2. the 'current directory' that doom.bat was called from
+REM #    3. the PWAD's directory, if a PWAD was selected
+REM #    4. the IWAD's directory
+REM #    5. the base WAD directory
+REM #    6. the selected engine's directory
+REM #
+REM # returns the following ERRORLEVELs
+REM # 
+REM #    0 = file wad found at one of the locations, `FILE` updated to match
+REM #    1 = file not found
+
+REM # is the file path absolute?
+IF "%FILE:~1,1%" == ":" (
+	REM # check if the file exists at the absolute location
+	IF EXIST "%FILE%" EXIT /B 0
+	REM # an absolute path file cannot be searched for elsewhere
+	GOTO :find_file__missing
+)
+
+REM # [1] check 'previous directory'
+IF NOT "%DIR_PREV%" == "" (
+	IF EXIST "%DIR_PREV%\%FILE%" (
+		SET FILE=%DIR_PREV%\%FILE%
+		CALL :find_file__rel
+		CALL :prev_dir "%DIR_PREV%\%FILE%"
+		EXIT /B 0
+	)
+)
+
+REM # [2] check 'current directory' that doom.bat was called from
+IF EXIST "%DIR_CUR%\%FILE%" (
+	SET FILE=%DIR_CUR%\%FILE%
+	CALL :find_file__rel
+	CALL :prev_dir "%DIR_CUR%\%FILE%"
+	EXIT /B 0
+)
+
+REM # [3] check the PWAD's directory if one was specified
+IF NOT "%DIR_PWAD%" == "" (
+	IF EXIST "%DIR_PWAD%\%FILE%" (
+		SET FILE=%DIR_PWAD%\%FILE%
+		CALL :find_file__rel
+		CALL :prev_dir "%DIR_PWAD%\%FILE%"
+		EXIT /B 0
+	)
+)
+
+REM # [4] check the IWAD's directory (if we've got that far yet)
+IF NOT "%DIR_IWAD%" == "" (
+	IF EXIST "%DIR_IWAD%\%FILE%" (
+		SET FILE=%DIR_IWAD%\%FILE%
+		CALL :find_file__rel
+		CALL :prev_dir "%DIR_IWAD%\%FILE%"
+		EXIT /B 0
+	)
+)
+
+REM # [5] check the base WADs directory
+IF EXIST "%DIR_WADS%\%FILE%" (
+	SET FILE=%DIR_WADS%\%FILE%
+	CALL :find_file__rel
+	CALL :prev_dir "%DIR_WADS%\%FILE%"
+	EXIT /B 0
+)
+
+REM # [4] check the engine's directory (if we've got that far yet)
+IF NOT "%ENGINE_DIR%" == "" (
+	IF EXIST "%ENGINE_DIR%\%FILE%" (
+		SET FILE=%ENGINE_DIR%\%FILE%
+		CALL :find_file__rel
+		CALL :prev_dir "%ENGINE_DIR%\%FILE%"
+		EXIT /B 0
+	)
+)
+
+REM # nope, cannot find it
+EXIT /B 1
+
+:find_file__rel
+REM # if the final path is below this script, clip the path to relative
+SETLOCAL ENABLEDELAYEDEXPANSION
+SET "FILE=!FILE:%CD%\=!"
+ENDLOCAL & SET "FILE=%FILE%"
+GOTO:EOF
 
 
 :reg
