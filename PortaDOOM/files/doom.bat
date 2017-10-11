@@ -389,7 +389,7 @@ REM ============================================================================
 REM # select engine to use
 IF /I "%~1" == "/USE" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET USE=%~2
+	SET "USE=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -433,7 +433,7 @@ IF /I "%~1" == "/DEFAULT" (
 REM # select IWAD to use
 IF /I "%~1" == "/IWAD" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET IWAD=%~2
+	SET "IWAD=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -441,7 +441,7 @@ IF /I "%~1" == "/IWAD" (
 REM # select PWAD to use
 IF /I "%~1" == "/PWAD" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET PWAD=%~2
+	SET "PWAD=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -449,7 +449,7 @@ IF /I "%~1" == "/PWAD" (
 REM # DeHackEd file?
 IF /I "%~1" == "/DEH" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET DEH=%~2
+	SET "DEH=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -457,7 +457,7 @@ IF /I "%~1" == "/DEH" (
 REM # Boom-EXtended DeHackEd file?
 IF /I "%~1" == "/BEX" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET BEX=%~2
+	SET "BEX=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -465,7 +465,7 @@ IF /I "%~1" == "/BEX" (
 REM # demo file playback?
 IF /I "%~1" == "/DEMO" (
 	REM # fetch the demo file
-	SET DEMO=%~2
+	SET "DEMO=%~2"
 	REM # check for any other options;
 	REM # we'll defer the validation of the demo file until we know the IWAD/PWAD
 	SHIFT & SHIFT
@@ -474,7 +474,7 @@ IF /I "%~1" == "/DEMO" (
 REM # warp to a map number?
 IF /I "%~1" == "/WARP" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET WARP=%~2
+	SET "WARP=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -482,7 +482,7 @@ IF /I "%~1" == "/WARP" (
 REM # set difficulty level?
 IF /I "%~1" == "/SKILL" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET SKILL=%~2
+	SET "SKILL=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -490,7 +490,7 @@ IF /I "%~1" == "/SKILL" (
 REM # compatibility level?
 IF /I "%~1" == "/CMPLVL" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET CMPLVL=%~2
+	SET "CMPLVL=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -498,7 +498,7 @@ IF /I "%~1" == "/CMPLVL" (
 REM # execute script file?
 IF /I "%~1" == "/EXEC" (
 	REM # just capture the parameter, validation happens after all parameters are gathered
-	SET EXEC=%~2
+	SET "EXEC=%~2"
 	REM # check for any other options
 	SHIFT & SHIFT
 	GOTO :params
@@ -833,11 +833,11 @@ IF /I "%IWAD_NAME%" == "STRIFE1.WAD"  SET "GAME=STRIFE"
 IF /I "%IWAD_NAME%" == "STRIFE0.WAD"  SET "GAME=STRIFE"
 
 REM # search for the IWAD:
-SET FILE=%IWAD%
+SET "FILE=%IWAD%"
 CALL :find_file
 REM # found?
 IF %ERRORLEVEL% EQU 0 (
-	SET IWAD_PATH=%FILE%
+	SET "IWAD_PATH=%FILE%"
 	GOTO :iwad_found
 )
 
@@ -1139,11 +1139,11 @@ REM # get the PWAD file name (ignore any path)
 FOR %%G IN ("%PWAD%") DO SET "PWAD_NAME=%%~nxG"
 
 REM # search for the file
-SET FILE=%PWAD%
+SET "FILE=%PWAD%"
 CALL :find_file
 REM # found?
 IF %ERRORLEVEL% EQU 0 (
-	SET PWAD_PATH=%FILE%
+	SET "PWAD_PATH=%FILE%"
 	GOTO :pwad_found
 )
 
@@ -1241,7 +1241,7 @@ EXIT /B 1
 :pwad_found
 REM --------------------------------------------------------------------------------------------------------------------
 REM # remember the PWAD directory for looking for other files, including demos
-SET DIR_PWAD=%DIR_PREV%
+SET "DIR_PWAD=%DIR_PREV%"
 
 REM # with the IWAD/PWAD edge-cases handled we can finally print out the PWAD
 ECHO          PWAD : %PWAD_PATH%
@@ -1268,11 +1268,11 @@ IF "%DEH%-%BEX%" == "-" GOTO :saves
 REM # was there a /DEH parameter?
 IF "%DEH%" == "" GOTO :bex
 
-SET FILE=%DEH%
+SET "FILE=%DEH%"
 CALL :find_file_or_fail
 
 REM # path confirmed, put on screen
-SET DEH_PATH=%FILE%
+SET "DEH_PATH=%FILE%"
 ECHO          -deh : %DEH_PATH%
 
 REM # if the DEH file is relative, we'll need to fix the relative path
@@ -1285,11 +1285,11 @@ SET PARAMS=%PARAMS% -deh "%DEH_PATH%"
 REM # was there a /BEX parameter?
 IF "%BEX%" == "" GOTO :saves
 
-SET FILE=%BEX%
+SET "FILE=%BEX%"
 CALL :find_file_or_fail
 
 REM # path confirmed, put on screen
-SET BEX_PATH=%FILE%
+SET "BEX_PATH=%FILE%"
 ECHO          -bex : %BEX_PATH%
 
 REM # if the BEX file is relative, we'll need to fix the relative path
@@ -1405,11 +1405,11 @@ REM ============================================================================
 REM # demo playback?
 IF "%DEMO%" == "" GOTO :warp
 
-SET FILE=%DEMO%
+SET "FILE=%DEMO%"
 CALL :find_file_or_fail
 
 REM # path confirmed, put on screen
-SET DEMO_PATH=%FILE%
+SET "DEMO_PATH=%FILE%"
 ECHO     -playdemo : %DEMO_PATH%
 
 REM # if the demo file is relative, we'll need to fix the relative path
@@ -1444,9 +1444,9 @@ REM ============================================================================
 :exec
 IF "%EXEC%" == "" GOTO :files
 
-SET FILE=%EXEC%
+SET "FILE=%EXEC%"
 CALL :find_file_or_fail
-SET EXEC_PATH=%FILE%
+SET "EXEC_PATH=%FILE%"
 
 REM # if the exec file is relative, we'll need to fix the relative path
 REM # to account for what will be the current directory once we launch
@@ -1466,7 +1466,7 @@ SHIFT
 	REM # no more parameters remaining?
 	IF "%~1" == "" GOTO :launch
 	
-	SET FILE=%~1
+	SET "FILE=%~1"
 	CALL :find_file_or_fail
 	
 	REM # display on screen, before 'fixing' relative path
@@ -1494,7 +1494,7 @@ REM ----------------------------------------------------------------------------
 :launch
 REM ====================================================================================================================
 REM # if a compatibility-level is specificed, include this
-IF NOT "%CMPLVL%" == "" SET "PARAMS=%PARAMS% -complevel %CMPLVL%"
+IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% -complevel %CMPLVL%
 
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
@@ -1634,7 +1634,7 @@ IF "%FILE:~1,1%" == ":" (
 REM # [1] check 'previous directory'
 IF NOT "%DIR_PREV%" == "" (
 	IF EXIST "%DIR_PREV%\%FILE%" (
-		SET FILE=%DIR_PREV%\%FILE%
+		SET "FILE=%DIR_PREV%\%FILE%"
 		CALL :find_file__rel
 		CALL :prev_dir "%DIR_PREV%\%FILE%"
 		EXIT /B 0
@@ -1643,7 +1643,7 @@ IF NOT "%DIR_PREV%" == "" (
 
 REM # [2] check 'current directory' that doom.bat was called from
 IF EXIST "%DIR_CUR%\%FILE%" (
-	SET FILE=%DIR_CUR%\%FILE%
+	SET "FILE=%DIR_CUR%\%FILE%"
 	CALL :find_file__rel
 	CALL :prev_dir "%DIR_CUR%\%FILE%"
 	EXIT /B 0
@@ -1652,7 +1652,7 @@ IF EXIST "%DIR_CUR%\%FILE%" (
 REM # [3] check the PWAD's directory if one was specified
 IF NOT "%DIR_PWAD%" == "" (
 	IF EXIST "%DIR_PWAD%\%FILE%" (
-		SET FILE=%DIR_PWAD%\%FILE%
+		SET "FILE=%DIR_PWAD%\%FILE%"
 		CALL :find_file__rel
 		CALL :prev_dir "%DIR_PWAD%\%FILE%"
 		EXIT /B 0
@@ -1671,7 +1671,7 @@ IF NOT "%DIR_IWAD%" == "" (
 
 REM # [5] check the base WADs directory
 IF EXIST "%DIR_WADS%\%FILE%" (
-	SET FILE=%DIR_WADS%\%FILE%
+	SET "FILE=%DIR_WADS%\%FILE%"
 	CALL :find_file__rel
 	CALL :prev_dir "%DIR_WADS%\%FILE%"
 	EXIT /B 0
@@ -1680,7 +1680,7 @@ IF EXIST "%DIR_WADS%\%FILE%" (
 REM # [4] check the engine's directory (if we've got that far yet)
 IF NOT "%ENGINE_DIR%" == "" (
 	IF EXIST "%ENGINE_DIR%\%FILE%" (
-		SET FILE=%ENGINE_DIR%\%FILE%
+		SET "FILE=%ENGINE_DIR%\%FILE%"
 		CALL :find_file__rel
 		CALL :prev_dir "%ENGINE_DIR%\%FILE%"
 		EXIT /B 0
