@@ -1,0 +1,502 @@
+
+                                 A L | E N S 
+                                 ===========                    
+                            The Total Conversion.
+                               by Justin Fisher    
+                      
+                      With Secret Level by Richard Love
+                      Installation by Olivier Montanuy
+                Ultimate DOOM compatibility by Cale McCallum
+
+
+My Internet address is: MISC335@cantva.canterbury.ac.nz, so send
+heaps of feedback everyone. 
+
+In this file:
+First, a brief guide to getting ALIENS-TC to work,
+Second, a guide on how to play it. (ALIENS-TC doesn't play like
+     DOOM, and there are a few fundamental differences, I
+     strongly recommend you read this before playing Aliens
+     the first time.)
+Third, everything else. 
+
+PART ONE - Setting up Aliens TC.
+================================
+You need Doom version 1.666, 1.9 or Ultimate 1.9, and it must be registered.
+
+ This part was written by Cale McCallum (he fixed ALIENS-TC so it would
+ work properly with Ultimate DOOM).  It's pretty much the same as what was in
+ the ALIENS-TC for DOOM v1.666 text file.  The installation program is just
+ a modified version of the one Olivier Montanuy wrote.  If you have any   
+ problems with the installation, annoy Cale McCallum at: 
+ bi174@freenet.carleton.ca or _MAYBE_ Olivier Montanuy at: montanuy@dmi.ens.fr
+ Do not bother Justin Fisher.
+
+ NOTE: This install does not change the DeHackED/string patches.  To make the 
+ installation of Alien-TC completely safe, the modified DOOM.EXE appears as 
+ ALIENTC.EXE. It can only run (properly) ALIENS-TC files.  Your DOOM.WAD will 
+ be only read, and not modified at all. 
+
+ All the files that make up ALIENS-TC should be put in the same
+ directory that DOOM 1.666 or 1.9 is in.
+ All of the following files must be present:
+
+     ALIEN.BAT           -Batch to play ALIENS-TC
+     ALITCP16.DEH        -DOOM 1.666 .EXE patch
+     ALITCP19.DEH        -DOOM 1.9 .EXE patch
+     ALITCPUD.DEH        -Ultimate DOOM 1.9 .EXE patch
+     ALITCSF.WAD         -PWAD for sprites and flats.
+     ALITCSND.WAD        -PWAD for sounds.
+     ALIENTC.TXT         -You're reading it.
+     ALITCWAD.WAD        -PWAD for levels, demos and wall textures.
+     DEHACKED.EXE        -.Exe editor for DOOM.
+     DEUSF.EXE           -A sprite & flat appending utility. 
+     INSTALL.BAT         -The ALIENS-TC Installation program.
+     TC-LEVEL.TXT        -Teachs you how to make ALIENS-TC levels
+  
+ NOTE: When distributing ALIENS-TC, you need only include the 
+ above files, the files listed below will be created during 
+ the installation, but you must give ALL of the above files to 
+ get the desired result. However, If Alien-TC has been installed,
+ you will need to restore ALITCSF.WAD by typing:  DeuSF -restore ALITCSF.WAD
+ before you distribute it again, else it will contains copyrighted data.
+
+ To install on Ultimate DOOM 1.9, type: INSTALL 1
+ To install on DOOM 1.9, type: INSTALL 2
+ To install on DOOM 1.666, type: INSTALL 3
+ 
+ To play, after installation simply type ALIEN, and hit enter.
+
+ You should not have any problems. I successfully tested this 
+ install more than once, and heaven knows my PC is bug prone.
+ Even if installation fails, bear in mind that your precious
+ DOOM files are *not* affected :-)
+
+ WARNING: If you lack space on your disk, the modification of ALITCSF.WAD 
+ will fail. ALITCSF.WAD will still be usable, but some junk data might
+ have been appended at the end, making it unsuitable for distribution.
+ Replace by the original one.
+
+  ************************Shameless*Plug*************************************
+  * This install makes use of a excellent sprite appended tool called DeuSF *
+  * If this tool suits your need, also check out Olivier's PWAD composer    *
+  * named DeuTex, which he used to rip off and rebuild ALIENS-TC and his    *
+  * excellent WinTEX, a Windows DOOM editing tool.  They're both available  *
+  * at:                                                                     *
+  *                                                                         *
+  * ftp.cdrom.com/pub/idgames/doom/utils/graphics_edit/deutex/wintx341.zip  * 
+  * ftp.cdrom.com/pub/idgames/doom/utils/graphics_edit/deutex/deutex36.zip  * 
+  *******************************So*Flame*Me*********************************
+
+ NOTE FOR DOOM ][ USERS: ALIENS-TC cannot work under DOOM2.  Justin Fisher and 
+ Olivier Montanuy are working on ATC2 right now.  Email them for more info.
+
+ Supporting Justin Fisher:
+
+ For those interested, here is his snail mail address.
+
+   Justin Fisher
+   7 Nepal pl
+   Christchurch 5
+   New Zealand
+
+ (hey, id, it might be still time to ask him for a C.V...)
+
+
+PART TWO - Playing the game!
+============================
+
+
+ The Story so far...    (skip this if you want to)
+
+     LB4-26. The terra forming colony has stopped transmitting
+ or responding. There is a possibility that this is the result
+ of an unknown parasitic alien species. Against this possibility, 
+ a military force has been mobilised to investigate. 
+
+     This information comes from Flight Officer Ripley, she claims
+ the Nostramos set down on LB4-26 in order to investigate a
+ transmission, an unidentified alien ship was discovered. While
+ exploring the ship, a crew member was disabled by an alien
+ parasite, which deposited an egg inside him before dying.
+ He became host to an embryo and was killed as it exited his
+ body. The alien quickly grew and began to attack crew, usually
+ capturing them, we assume for food. Flight Officer Ripley was
+ the only survivor, she destroyed the xenomorph by opening an
+ airlock when the alien was inside. 
+     
+     According to Officer Ripley, the original parasite came
+ from a large "egg", and that there were thousands of such eggs
+ in the hold of the alien vessel. If this is correct, and
+ members of the colony found the alien ship, there may be
+ hostile alien activity in or around the colony. Your job is to
+ find out why the colony has stopped responding, and if a
+ xenomorph is involved, destroy it.
+
+ [CLASSIFIED] Ensure that live samples are secured for laboratory study.  
+
+
+ Firstly, this game is built around suspense and atmosphere,
+ you can completely destroy this by using cheats to find out in
+ advance what everything is (ooh, I wanna see an alien, Light
+ Amp cheat, degreelessness, happy ammo, etc). RESIST THE
+ TEMPTATION! The first time you play this will be the best. Not
+ knowing what is around the next corner is what DOOM is all
+ about, in other words, when you use cheats, there is only one
+ possible outcome - you complete the level, there is absolutely
+ no challenge, which means there is no FUN.
+ As I said, the first time you play a level is the best, I've
+ put a lot of work into this conversion and I require that you
+ enjoy it :-), these are a few basic requirements
+ 1) Pull the curtains and turn out the lights
+ 2) Turn down the monitor brightness so that what is meant to
+    be dark is actually dark.
+ 3) Set aside at least an hour when there will be little
+    distracting background noise.
+ 4) Set the music to about half the volume of the sound FX (so
+    it's there, but not consciously there).
+ 5) Read the rest of this file :-)
+ 6) Play until your nervous system is overriding your motor
+    control and you can't stop shaking long enough to calm your
+    heart...
+ Now, back to the subject.
+
+
+ALIENS-TC differs from DOOM in a few ways;
+
+ For starters, some standard DOOM tactics either don't work, or
+ result in quick and messy death, don't approach this as
+ another DOOM conversion, treat it like something new, pay
+ attention, don't slip into Auto-kill-&-Collect mode and finish
+ the game while thinking of other things, get immersed, look at
+ the architecture, predict the layout and how it affects your
+ plans etc. 
+ 
+     Switches - they don't automatically do something good,
+     think before switching them, you should be able to work out
+     what they do. A switch next to a door operates that door,
+     there are three obvious types: 
+     
+     -Green switch; opens the door for either 6 seconds or
+       until it is closed with another switch.
+     -Green and Red switch; same as above, but usually only
+       opens for 6 seconds.
+     -Red switch; these operate security doors, once hit, the
+       door closes permanently. These can be used to seal
+       off areas of the colony, forcing the aliens to find
+       an alternative route, and allowing much better
+       defense planning, even adding and element of
+       strategy to the game (also, in some cases these
+       will show up on your automap at the start of the
+       game, make use of the automap).
+ Switches usually operate something in the immediate
+ vicinity (ie; a lift, door, landing platform), if you can't see
+ anything for it to operate, take a risk. :-)
+
+ Weapons - you can have up to six weapons at any one time, they
+ are: -Fists: Not a good idea.
+      -Pistol: Still not a good idea.
+      -Shotgun: For close encounters... Good all purpose weapon.
+      -Pulse Rifle: Combination weapon - 10mm Assault rifle with
+       underslung grenade launcher.  Press 4 to use the
+       rifle, or 5 to use its grenade launcher (generally
+       not a good idea... (BTW I used some artistic
+       license on this one, you can tell which setting
+       you're using by the colour of the LCD display,    
+       green = rifle, red = grenades)).
+      -Smart Gun: The 2 metre electric monsters on the
+       suspension-arms, carried by Drake and Vasquez. These
+       are pretty specialised and there isn't much ammo for
+       them, so save it for those special moments.
+      -Cargo bay loader: Not designed for combat but pretty
+       intimidating, a last ditch attack when you've run
+       out of ammo (replaces the Fists when you get it).
+
+ I have left a few of these weapon changes pretty superficial,
+ as they are nicely balanced, but there are still a few subtle
+ changes. Note: I have disabled weapon 7 in such a way as to be
+ a liability to those who cheat :)  (ie, it will slow you down when
+ you can least afford it)
+
+ The Missions - Each level roughly corresponds to a part of the
+ film (ALIENS.  If you haven't seen it, it doesn't matter but it
+ is a great film), and you will find each level a lot more
+ coherent if you know what you're meant to be doing.
+     Level 1 - Secure the area before moving on further into
+            the complex.
+     Level 2 - Atmospheric Processor; find the colonists,
+            their PDTs indicate they are all deep in the 
+            lower levels of the plant.
+     Level 3 - Medlabs & Operations; seal off medlabs and
+            operations closing the security doors and
+            blowing away whatever gets through. Caution -
+            there are too many aliens to take out yourself
+            so _use_ the security doors and don't be afraid
+            to retreat (stealth is a good idea).  When
+            Medlabs is secure, crawl down the main         
+            pipeline to the landing pad. (to patch         
+            in the colony transmitter.)                    
+     Level 4 - Escape from Medlabs; like a normal DOOM level,
+            retreat from medlabs and try to get to the
+            landing pads. 
+     Level 5 - In the film, the marines made their escape from
+            the Atmospheric Processor on the APC. You
+            don't have one, slog it out on foot. (This
+            level is designed for Deathmatch, and is big, 
+            to aid in "The Hunt", there are proximity
+            indicators scattered throughout. This was meant
+            to be E2M3, but I had to shift it to allow the
+            secret level to work properly.
+     Level 6 - Atmospheric Processor; the search for Newt,
+            find the sector indicated on your automap (red
+            square). This is another good deathmatch
+            scenario - very non-linear.
+     Level 7 - Atmospheric Processor; escape from the hive
+            and try to make it back to the Processor
+            landing pad.             
+     Level 8 - The Sulacco; Destroy the Queen and complete the
+            episode!
+     Secret Level - The derelict alien host ship. This level was
+            made by Richard Love, hence is the only level 
+            I have played in which I didn't know what is 
+            coming next - ie playing my creation the way 
+            others will. It was terrifying. It was great.
+     Extra Levels - (E3M1), originally part of E2M5 D-match wad,
+            the wad was so huge it didn't run at a playable
+            speed, let alone networked. I split it, and
+            made this half a level on it's own.
+            Play this on Ultra Violence to see what yer
+            made of! It's probably the hardest level, even
+            I find this one a challenge.
+
+            (E3M2), Level one with a slightly larger
+            populace...
+            Just a bit o' fun.
+
+ There is no unstable nukage in Aliens, the nearest thing is 
+ filthy water. Hence barrels do NOT explode (I know you'll all
+ hate that one, but I had no choice - Doom just doesn't have
+ enough damage frames.), and lakes of water will not harm you 
+ either. Sorry :)
+
+          
+ That's all you _need_ to know.            
+
+ The Aliens - There are five main types; Warriors, Drones,
+ Queens, Face Huggers, and Eggs. Be warned, the aliens have
+ extremely corrosive internal fluids, if you fill them with too
+ much lead or grenades, the result will be a shower of lethal
+ bio-acid. Eggs hatch, so shoot them quick. Drones can spit
+ bio-acid at you (I put that in for more variety, it can get
+ monotonous if all the foes are too similar), you've proved
+ yourselves to dangerous to the hive to be captured, the
+ warriors will just concentrate on ripping you to shreds, but
+ that doesn't mean a frontal assault...
+       
+ Proximity indicators - These are blue panels inset in the
+ walls of some levels. When you walk past one, two red lights
+ flash back and forth for 30 seconds. These are for Deathmatch.
+ I like _big_ D-match levels, the concept of The Hunt, the
+ problem is, players leave so little evidence of passage - the
+ occasional sound, or corpse (which could have been there since
+ who knows when.) The proximity indicators just make the
+ hunting a little easier (and introduce new tactics with
+ players who use them).
+
+ Speaking of Deathmatch....
+ All levels in TC are designed with deathmatch in mind, ie E2M2
+ is a fairly linear level, but in d-match, you start with all
+ keys which changes the level into the non-linear style so
+ vital to d-match. Most levels (with the possible exception of
+ E2M7) work well for D-match without needing the remove-
+ monsters option, as you do not _have_ to encounter them to 
+ meet your opponent, but the option is there...
+
+ Now play the game! 
+ Type INSTALL to install, and ALIENS to play ALIENS-TC!
+
+
+PART THREE - Everything else.
+=============================
+
+More background information:
+
+     The Xenomorph - There appear to be several stages to the
+ xenomorph's life cycle, and two, possibly three distinct types.
+ Comparison to an ant colony is a suitable analogy, using that
+ analogy, the types are Warriors, Queens, and Drones. It is not
+ known whether drones exist differently to warriors, it is
+ possible that the warriors perform the tasks of drones, but in
+ most other similar observed social structures, both warriors
+ and drones exist and are of a different makeup. In xenomorph
+ hives, we suspect that when a warrior (or drone) is removed
+ from it's queen for a long period of time, it develops into a
+ queen, able to lay eggs and hence create a new hive. This
+ suggests that a queen somehow limits the growth of aliens
+ around it, probably a secreted chemical. 
+     
+     The life cycle is equally fascinating. The queen "lays"
+ large eggs, these eggs are capable of staying dormant for
+ extremely long periods of time (how long is unknown), and yet
+ still hatch quickly after being disturbed. a fully developed
+ "face-hugger" hatches from them. These are the parasitic
+ element of the life cycle, they are like large fleshy spiders.
+ When a host is found, the parasite attaches itself over the
+ face (hence the name) by means of its long legs and tail
+ (which is wrapped around the neck), where upon it inserts a
+ tube down the trachea, and deposits an egg or embryo under the
+ rib cage. The egg will grow for about a week before leaving
+ the host body by breaking through the ribcage (resulting in
+ the death of the host).  The small "chest-burster" then rapidly
+ grows into either a queen or warrior. 
+
+     The Warriors capture hosts and immobilize them in the hive for
+ the face-huggers (from eggs lain by the queen, and presumably
+ nurtured by the drones).
+     
+     At all stages in the life cycle, the alien has extremely
+ corrosive body fluids, pressurised under the exoskeleton or
+ skin. The fluids are a sort of biological acid, and is much
+ stronger than concentrated HCl. 
+
+ I'm tempted to give more detailed account of the hardware in
+ the film, but I won't.
+
+
+Bugs in ALIENS-TC.
+
+ There are none. My work is flawless :-) 
+ No, the effects of selecting weapon 7 under the ammo cheat is 
+ not a bug, it's me being nasty to people who cheat.
+ 
+ Alright, there are a few inconsistencies, most notably Apone and others
+ giving advice when, in the movie analog, they wouldn't be present 
+ (or alive). 
+
+ In E2M4, at the start where the aliens fall through the roof, 
+ some of them don't...  When that happens, if you walk to close
+ to them, you will run against them like an obstacle, and start
+ taking damage as they merrily rake you. I can't figure out why 
+ they don't fall like the rest, so you're stuck with it.
+ I suspect there are a few other minor bugs, but none spring to
+ mind right now.
+
+ It's not really a bug, but the queen alien graphics are a bit of 
+ a mess.  I have a good excuse.  The queen graphics were made from
+ video shots of a model, the problem was, I don't own any of the
+ equipment necessary, which resulted in time and other constraints,
+ the most destructive being the lack of light control (it wasn't in
+ a studio), resulting in different light effects through different
+ frames. I was able to compensate to a degree on the resulting 
+ images by converting them to 24 bit and using light filters, but 
+ the resulting queen is still very patchy and irregular.
+
+ Things-I-didn't-have-time-to-put-in-but-will-in-the-supplement:
+ LOTS of things. The episode map at the end of each level, a
+ better smartgun explosion, lots more destroyable scenery, an
+ egg-laying queen hanging from the nest roof, a proper sky   
+ texture, better sounds, lots of things...
+
+
+ Making your own ALIENS-TC levels:
+ If anyone wants to make an ALIENS-TC level, read the file TC-LEVEL.TXT. 
+ It tells you which monsters are which aliens, which wall textures are
+ which in ALIENS-TC, etc.
+
+
+ Weird and inconsistent things:
+ I ran out of graphics and Things when making this conversion, 
+ the result is massive and chaotic frame table patches (so I 
+ could steal every sprite not otherwise in use), if you want
+ to see how DOOM runs without the graphics patches, but _with_
+ the .EXE patches, just run DOOM instead of ALIEN.  The 
+ results are...  strange    
+
+
+ Thanks to: (in no particular order)
+
+ Me - For doing all the hard work! (Nobody reads this bit
+       anyway, so why not :-)
+ Richard Love - For creating level 9, (the secret level) and
+       the textures peculiar to it.
+ Olivier Montanuy - For writing the ALIENS-TC install program, 
+       and writing DeuSF.
+ Cale McCallum - For fixing ALIENS-TC so it works with Ultimate 
+       DOOM, and a couple of other misc. things (demos, sound, etc.).
+ Glenn Fisher - For writing the custom editors, and the 
+       ALIENTC.EXE file.
+ Darryn Pat - For the use of the Video Blaster (to scan the 
+       queen model).
+ Darryn Yee - For supplying all sorts of things necessary for
+       scanning a model, including his home :-)   
+ Jordan Yee - For supplying the model alien queen to be 
+       scanned.
+ My 486 - For being so reliable, fast and having 24 bit graphics
+       Vesa is an absolute _must_.         
+ Morpheus - For sending me node builders, and giving me extra D/L
+       time on his BBS.
+ IKON Attendants - For giving the beta a thorough play testing. 
+       (It's much better now) :-)
+ Id Software - Take a guess... a wild stab in the dark, you
+       shouldn't miss at point blank.
+ Terry Pratchett - For giving DOOM exemption from the idea that
+       VR should complement rather than replace reality.
+ Brent Hall - The Indigo marine in the two player demo.
+ The authors of all the editors, viewers, node builders, hacks, 
+       FAQ's, out there. 
+ The many people who have aided by telling me where I could
+       find various utilities, giving me new editors etc.
+ To anyone even remotely connected with this, who would like a
+       mention. (That was it.  Oh, you blinked?)
+ Me, Again...
+
+ That's it for now, and in case you missed my name and net
+ address (which I've blatantly plastered everywhere I could), 
+ send feedback, comments, problems, criticism etc to:
+
+ MISC335@cantva.canterbury.ac.nz
+
+ And above all, DISTRIBUTE ALIENS-TC! (I want to see how far 
+ it will get) :-)
+ 
+ BTW, if anyone is interested in what I'm doing next (The hope 
+ is that everyone says "WOW, this guy is a GENIUS!, I can't 
+ _wait_ to see what he does next... :-)" ), but if anyone _is_
+ interested, with the advent of Doom v1.666, which allows 64
+ instead of just 16 two-sided linedefs, it's time to make some
+ M C Escher style rooms, probably as a part of a larger
+ wad loosely based on the film "Labyrinth" (no, I have no idea how 
+ you spell it) where they can form rooms of Jareths castle.
+ Another thing I would like to do is actually make a wad which
+ uses the _original_ DOOM textures, they are incredible graphics
+ and it seems such a shame to continually over-write them, and
+ I'm sure I can use them in ways people never thought of before.
+ (no offence all you level builders, but in my (not excessively vast) 
+ experience of PWAD levels, the true DOOM levels, especially episode
+ one, still reign supreme in pure imagination). Especially when 
+ you compare them to the ever growing number of PWADs that are
+ just based on a simplistic concept, ie when viewed in automap, the
+ rooms form words, or the whole wad is so repetitive that you only
+ need to see a tiny bit to be able to draw the whole thing - a circle
+ divided into pie slices, four rooms that connect through the middle
+ (popular idea in many D-match wads, the reason invariably being
+ "equal starting points" (I prefer more varied hunting grounds). etc
+ As you can see from reading this, I really like interesting locations
+ and architecture, (rather than levels made up of rooms connected by
+ doors and corridors, of which I am often guilty) Even with it's 
+ limits, DOOM can make fantastic worlds, places that have never 
+ existed, or ever will. The power to experience a world of your own 
+ creation is what I like about making DOOM locations, (and I'm getting 
+ better too :-), I know a few will disagree - there are many PWAD 
+ levels in which the effort has been put into game play, rather than 
+ environment, leaving default textures, not worrying about unpegging 
+ doorways etc. I hope ALIENS-TC has a high level of both elements, 
+ let me know what you thought. 
+
+ 'Till the next virtual creation then...
+ (If I can find some free time...) :-(
+
+
+
+
+

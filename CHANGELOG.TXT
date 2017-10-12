@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+12-10-17:
++ Added "Aliens TC" & "Aliens (TC) 2017" WAD pages
+
 11-10-17:
 + IWAD, PWAD and all other files given to doom.bat are checked for in multiple
   locations, consistently. These directories are, in order of precedence:

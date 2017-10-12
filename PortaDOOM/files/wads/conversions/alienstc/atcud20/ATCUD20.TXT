@@ -1,0 +1,49 @@
+AL|ENS TOTAL CONVERSION for Ultimate DOOM, Revision 2.0
+=======================================================
+
+This is an updated version of the classic Aliens Total Conversion designed
+to work with modern DOOM source ports.
+
+This version remedies texture problems including the hand rails and HOMs,
+critical bugs such as bad sidedefs and non-functional doors, addresses a few
+playability issues such the one-use switch in E2M7, fixes not being able to
+win the game in E2M8, includes a few minor balance tweaks such as amount of
+ammo/health in different difficulty levels, and a few minor aesthetic repairs
+have been made.
+
+I have NOT gone out of the way to change texture alignment or theme in any
+but a few minor cases. I feel the appearance of the levels is part of the
+true atmosphere of this total conversion and shouldn't be altered.
+
+The ATCUD19.DEH file is intact from the original version and includes no
+fixes except for changing the cyberdemon into an alien queen. The ATCUD19.BEX
+file is for use with BOOM-derived source ports, and includes fixes for
+various problems along with BEX-style text strings. You should use the BEX
+patch if your port supports it. ZDOOM is known to have issues with the
+original DEH patch, and has not been tested with the BEX patch. Functionality
+with the ZDOOM port is *NOT* guaranteed. This TC has been tested with BOOM,
+MBF, and SMMU.
+
+This TC *REQUIRES* the Ultimate DOOM v1.9 IWAD to play, it is NOT compatible
+with DOOM II. This TC does not make use of any extended port features in the
+wad files themselves.
+
+To play the TC, launch your favorite port with the following command-line
+options. A response file may be necessary, and if your port's dehacked
+command-line parameter is different, you should substitute it for -deh:
+
+-file alitcsf.wad alitcsnd.wad atclev.wad -deh [atcud19.deh | atcud19.bex]
+
+Where [atcud19.deh | atcud19.bex] means you should choose one or the other.
+
+Other options can be provided at your discretion. See your port's
+documentation for other things you can do.
+
+Information on this TC can be found in some ports by pressing the F1 key.
+In BOOM-derived ports you may cycle through multiple screens to see info on
+some other upcoming projects... :)
+
+Please do *NOT* attempt to email Justin Fisher or xeno@ovnet.com with
+questions about this version of Aliens TC. Address all correspondence to
+haleyjd@hotmail.com. This is unsupported software, and no warranties
+apply, implicit or otherwise.

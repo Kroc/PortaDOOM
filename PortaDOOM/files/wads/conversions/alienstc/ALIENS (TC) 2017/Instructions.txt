@@ -1,0 +1,15 @@
+INSTRUCTIONS
+
+This is a stand-alone mod, you don't need to combine it with Aliens (TC), or any other mod.
+
+Works exclusively with episodes 2 and 3 of Ultimate Doom. This mod is not meant to be played with other levels.
+
+After you unzip the file, select all of the files in the "ALIENS (TC) 2017" folder. Drag and drop the files over an up-to-date version of GZDoom.
+
+For more recent versions of GZdoom, I also recommend turning on the bloom-effect.It gives the flashlight a clearer, and more realistic look.
+
+////
+
+1.2 update:
+
+Sprite clipping issues.

@@ -1,0 +1,27 @@
+$NAV=Total Conversions
+$KEY:1=PAGE:#02
+$KEY:2=PAGE:#03
+
+^C:A L │ E N S
+:=
+^C*The Total Conversion
+
+
+*Aliens TC* is a total conversion based on the movie Aliens, created in 1994 by _Justin Fisher_. It was the first total conversion and is one of the most famous. In the week following the release of Doom II, there was more discussion in the Doom newsgroups related to Aliens TC than to Doom II.
+
+The Aliens TC is noted for its suspenseful atmosphere. The first level is devoid of enemies, a surprising feature considering the fast-paced action of Doom. Later on, however, the player faces the aliens and even gets to use the powerloader from Aliens as a weapon.
+
+
+[1] *Aliens TC (original, fixed)
+	:---------------------------------------------------------------------------
+	The original, updated to work with Ultimate DOOM and some bug fixes.
+
+[2] *Aliens TC 2017
+	:---------------------------------------------------------------------------
+	A modern update with enhanced lighting, weapons and a real radar,
+	although some might find the manual wepaon reloading a nuisence.
+
+
+:===============================================================================
+$KEY:#=URL:https://doomwiki.org/wiki/Aliens_TC
+(Some page content from: [#] doomwiki.org/wiki/Aliens_TC)
