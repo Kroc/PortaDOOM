@@ -12,12 +12,10 @@ files\config\default.choco-doom*.cfg
 files\config\default.glboom-plus.cfg
 files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
-files\config\default.zandronum-3.ini
 
 files\ports\chocolate-doom\
 files\ports\gzdoom-32_*\
 files\ports\prboom+\
-files\ports\zandronum-3\
 
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag

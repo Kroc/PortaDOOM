@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+23-10-17:
+* Updated Skulldash to Expanded Edition
+
 12-10-17:
 + Added "Aliens TC" & "Aliens (TC) 2017" WAD pages
 

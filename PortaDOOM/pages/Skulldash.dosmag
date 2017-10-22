@@ -1,64 +1,173 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:wads\conversions\SKULDASH\play.bat
-$KEY:T=SHELL:wads\conversions\SKULDASH\SKULDASH.TXT
+$KEY:T=SHELL:wads\conversions\SKULDASH\SkulldashExpandedEdition.txt
 $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 
-:Skulldash                                          * 2015 Cacoward winner! *
+:Skulldash (Expanded Edition)                       * 2015 Cacoward winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>10>21	  Author : _Joshua 'Dragonfly' O'Sullivan_
-:Levels   : *32			   Modes : *Single, Co-op
-:Requires : *zandronum3	Includes : *+Sounds +Music +Graphics
+:Released : *2017>20>22	  Author : _Joshua 'Dragonfly' O'Sullivan_
+:Levels   : *50			   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-:Skulldash Overview
+*SKULLDASH OVERVIEW:
 
-*Welcome to Skulldash, the fast-paced speedrun arcade mod For Doom II.*
-The objective in skulldash is to collect the Skulltokens scattered around each level to unlock the exit.
+Welcome to Skulldash, the fast-paced speedrun arcade mod For Doom II. The objective in skulldash is to collect the Skulltokens scattered around each level to unlock the exit.
 
 While collecting the Skulltokens you have to race against the clock, as there is a time limit to beat - all while defending yourself from the hordes of monsters from hell.
 
-:Fast paced gameplay:
+*FAST PACED GAMEPLAY:
 
 While on the hunt for the hundreds of Skulltokens scattered across the various realms, you're having to race against the clock! Failure to beat the level in the permitted time will cause you, the player, to be splattered into many pieces.
 
 Fear not, however, hidden throughout most levels are many secret areas containing blue Skulltokens, which add a precious five seconds to the clock.
 
-:Large level selection:
+*LARGE LEVEL SELECTION:
 
 With twenty standard levels, four boss levels, five bonus levels, a giant level-hub (and a tutorial) you've got plenty of hours of gameplay available!
 
 Skulldash takes you to many realms & locations, including but not limited to technical bases, aztec temples, icy caverns, in a submarine, on a series of treetops, in hell, a haunted mansion, a medieval castle, a jungle altar, high in the sky and even in space!
 
-:Bosses, secrets & bonus maps:
+*BOSSES, SECRETS & BONUS MAPS:
 
 Every level has a plethora of secret areas, containing bonus equipment and Skulltokens - keep your eye out if you want to go for 100% completion - when you 100% a full tier of levels, you unlock a bonus level!
 
 At the end of each Tier (except the 1st) there is an action packed boss map. Each boss is found in an environment crafted around their strengths and weaknesses. Bosses are often accompanied by hordes of hellspawn to assist them in taking you out. Prepare yourself to face the Lava Golem, the Dark Inquisitor, the Gate Keeper & the Overlord!
 
+*WHAT'S NEW: (Expanded Edition)
+
+SCORING SYSTEM
+- Gain score by collecting tokens and killing enemies
+- Score is multiplied by 2 if you get 100% tokens!
+- Play on higher difficulties for more multipliers
+
+21 NEW LEVELS
+- 2 Bonus maps from original game have been replaced
+- 19 NEW maps in the Community tier
+  - 2 of which are intense boss fights, good luck!
+- Including the hub map, there are 50 playable levels!
+
+MAJOR LEVEL RE-WORKS
+- Bosses have been improved
+- Frostbound has had a major make-over
+- General visual improvements on every level
+
+HUB MAP IMPROVED
+- Teleports to later tiers
+- Brand new Community Tier
+- 'Modern style' portals
+
+OPTIONS ROOM ADDED
+- Change your difficulty mid-game
+- Remove reflections (lag reduction)
+- View your high scores
+
+CONTINUE SCREEN ADDED
+- When you die you are given 5 seconds to re-try
+- Let the countdown hit 0 to return to the hub map
+
+PORTED AWAY FROM ZANDRONUM TO GZDOOM
+- Much more features, etc.
+
+HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
+
 :Construction:
 :-------------------------------------------------------------------------------
-*Base				: New from scratch
-*Build Time			: Over Seven Years
-*Editor(s) used		: DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE, SLumpEd, Slade3, MS Paint, Adobe Fireworks, GraphicsGale, FruityLoops Trial
-*Known Bugs			: Hopefully none. Email any found to _<josh@joshuaosullivan.co.uk>_
-*May Not Run With	: Any port other than Zandronum - must be Zandronum 3.0 OR HIGHER. (3.0 is in alpha at the time of writing)
-*Tested With		: Zandronum V3.0-alpha-r150831-1814
+*Base					: New from scratch
+*Build Time				: Over Nine Years
+*Editor(s) used			: DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE, SLumpEd, Slade3, MS Paint, Adobe Fireworks, GraphicsGale, FruityLoops Trial, Photoshop
+*Known Bugs				: Hopefully none. Email any found to josh@joshuaosullivan.co.uk
+*May Not Run With		: Any port other than GZDoom - must be GZDoom 3.2.0 OR HIGHER
+*Tested With			: GZDoom 3.2.0
 
 :Credits:
 :-------------------------------------------------------------------------------
 *MAPPERS:
-_Joshua 'Dragonfly' O'Sullivan_ (All maps except:), _Capt. J3_ (Water Station, 100%), _Slyor 64_ (Frostbound, 50%)
+
+_Dragonfly_
+- ALL MAPS, Except the following:
+
+_Capt. J3_
+- Water Facility
+
+_Slyor 64_
+- 1st half of Frostbound
+
+_Remmirath_
+- Token Refinery
+- Mayan Mayhem
+- Outpost 25/A Foundry
+- Luminescence
+- The Nightmare Realm
+- The Skyhold
+
+_Dreadopp_
+- World Devastation
+
+_Tormentor667_
+- Sekhmet's Fury
+
+_Bauul_
+- Mournful Dawn
+
+_Jimmy_
+- The Cauldron
+
+_Xyzzy01_
+- Abstract Zone
+
+_AtroNx_
+- Molten Core
+
+_Poohlyash_
+- Whiteout
+
+_kyle2959_
+- Fight Club
 
 *SCRIPTERS:
-_Joshua 'Dragonfly' O'Sullivan_, _HexaDoken_
 
-*BETATESTERS:
-_Dreadopp_, _HexaDoken_, _Sodaholic_, _Eonfge_, _YellowTail_, _Tuxy_, _Parad0x_
+- _Dragonfly_
+- _HexaDoken_
+- _Remmirath_
 
 *RESOURCES:
-Realm667, Hexen II, Gothic DM, _Sodaholic_, Blood, Skulltag Resources, _TheMisterCat_, _Joshua 'Dragonfly' O'Sullivan_
+
+- _Blastfrog
+- Realm667
+- Hexen II
+- Gothic DM
+- Scythe II
+- Blood
+- Skulltag
+- _TheMisterCat
+- _Scuba Steve
+- CC4-Tex
+- _Xyzzy01
+- _Dragonfly
 
 *MUSIC RESOURCES:
-ToxicxEternity, _<rock.freemidis.net>_, _<VGMusic.com>_, 1024.wad, Scythe II, Other WADs
+
+- _Jimmy
+- rock.freemidis.net
+- VGMusic.com
+- 1024.wad
+- Scythe II
+- _yakfak
+- _Aion
+- Other WADs
+
+*BETATESTERS:
+
+- _YellowTail
+- _Tux
+- _Dreadopp
+- _HexaDoken
+- _Eonfge
+- _Parad0x
+- _Blastfrog
+- _antares031
+- _Phade
+- _leodoom85

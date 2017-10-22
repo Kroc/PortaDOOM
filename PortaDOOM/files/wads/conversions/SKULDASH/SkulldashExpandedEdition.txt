@@ -1,0 +1,262 @@
+===========================================================================
+Archive Maintainer      : -
+Update to               : -
+Advanced engine needed  : GZDoom 3.2.0 or Higher
+Primary purpose         : Single play
+===========================================================================
+Title                   : Skulldash: Expanded Edition (Version 1.1)
+Filename                : SkulldashExpandedEdition.pk3
+Release date            : 22/10/2017
+Author                  : Joshua 'Dragonfly' O'Sullivan
+Email Address           : josh@joshuaosullivan.co.uk
+Other Files By Author   : 2 Maps in Stronghold:-
+                          STR09 - Volcanic Installation
+                          STR22 - Locus of Pestilence
+                          
+                          2 maps for the TEN Community Project
+                          
+                          1 Map for Pcorf Community Project 2
+
+                          1 Map for MAYHem 2016
+
+                          1 Map for Super MAYHem 2017
+
+                          1 Map for Doomworld Mega Project 2017
+						  
+						  1 Map for Confinement 256
+						  (As well as assistant project manager)
+                          
+                          Atmosfear
+                          (https://www.dropbox.com/s/mefwfoy4icutsaa/AtmosFear.pk3?dl=1)
+                          
+                          Tons of old, much less notable projects.
+						  
+Misc. Author Info       : Web & Graphic Designer, Drummer, Doom Mapper since 2005.
+
+Description             : WHAT'S NEW:
+
+                            SCORING SYSTEM
+                              - Gain score by collecting tokens and killing enemies
+                              - Score is multiplied by 2 if you get 100% tokens!
+                              - Play on higher difficulties for more multipliers
+
+                            21 NEW LEVELS
+                              - 2 Bonus maps from original game have been replaced
+                              - 19 NEW maps in the Community tier
+                                - 2 of which are intense boss fights, good luck!
+                              - Including the hub map, there are 50 playable levels!
+
+                            MAJOR LEVEL RE-WORKS
+                              - Bosses have been improved
+                              - Frostbound has had a major make-over
+                              - General visual improvements on every level
+
+                            HUB MAP IMPROVED
+                              - Teleports to later tiers
+                              - Brand new Community Tier
+                              - 'Modern style' portals
+
+                            OPTIONS ROOM ADDED
+                              - Change your difficulty mid-game
+                              - Remove reflections (lag reduction)
+                              - View your high scores
+
+                            CONTINUE SCREEN ADDED
+                              - When you die you are given 5 seconds to re-try
+                              - Let the countdown hit 0 to return to the hub map
+
+                            PORTED AWAY FROM ZANDRONUM TO GZDOOM
+                              - Much more features, etc.
+
+                            HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
+
+
+
+                          -------------------------------------------------------------
+
+
+
+                          SKULLDASH OVERVIEW:
+                          Welcome to Skulldash, the fast-paced speedrun arcade mod For
+                          Doom II. The objective in skulldash is to collect the
+            						  Skulltokens scattered around each level to unlock the exit.
+            						  
+            						  While collecting the Skulltokens you have to race against the
+            						  clock, as there is a time limit to beat – all while defending
+            						  yourself from the hordes of monsters from hell.
+            						  
+            						  
+            						  FAST PACED GAMEPLAY:
+            						  While on the hunt for the hundreds of Skulltokens scattered
+            						  across the various realms, you’re having to race against the
+            						  clock! Failure to beat the level in the permitted time will
+            						  cause you, the player, to be splattered into many pieces.
+            						  
+            						  Fear not, however, hidden throughout most levels are many
+            						  secret areas containing blue Skulltokens, which add a precious
+            						  five seconds to the clock.
+            						  
+            						  
+            						  LARGE LEVEL SELECTION:
+            						  With twenty standard levels, four boss levels, five bonus
+            						  levels, a giant level-hub (and a tutorial) you’ve got plenty
+            						  of hours of gameplay available!
+            						  
+            						  Skulldash takes you to many realms & locations, including but
+            						  not limited to technical bases, aztec temples, icy caverns, in
+            						  a submarine, on a series of treetops, in hell, a haunted
+            						  mansion, a medieval castle, a jungle altar, high in the sky
+            						  and even in space!
+            						  
+            						  
+            						  BOSSES, SECRETS & BONUS MAPS:
+            						  Every level has a plethora of secret areas, containing bonus
+            						  equipment and Skulltokens – keep your eye out if you want to
+            						  go for 100% completion – when you 100% a full tier of
+            						  levels, you unlock a bonus level!
+            						  
+            						  At the end of each Tier (except the 1st) there is an action
+            						  packed boss map. Each boss is found in an environment
+            						  crafted around their strengths and weaknesses. Bosses are
+            						  often accompanied by hordes of hellspawn to assist them in
+            						  taking you out. Prepare yourself to face the Lava Golem, the
+            						  Dark Inquisitor, the Gate Keeper & the Overlord!
+
+Additional Credits to   : MAPPERS:
+                            Dragonfly
+                              - ALL MAPS, Except the following:
+
+                            Capt. J3 
+                              - Water Facility
+
+                            Slyor 64
+                              - 1st half of Frostbound
+
+                            Remmirath 
+                              - Token Refinery
+                              - Mayan Mayhem
+                              - Outpost 25/A Foundry
+                              - Luminescence
+                              - The Nightmare Realm
+                              - The Skyhold
+
+                            Dreadopp
+                              - World Devastation
+
+                            Tormentor667
+                              - Sekhmet's Fury
+
+                            Bauul
+                              - Mournful Dawn
+
+                            Jimmy
+                              - The Cauldron
+
+                            Xyzzy01
+                              - Abstract Zone
+
+                            AtroNx
+                              - Molten Core
+
+                            Poohlyash
+                              - Whiteout
+
+                            kyle2959
+                              - Fight Club
+
+                          SCRIPTERS:
+                            Dragonfly
+                            HexaDoken
+                            Remmirath
+
+                          RESOURCES:
+                            Blastfrog
+                            Realm667
+                            Hexen II
+                            Gothic DM
+                            Scythe II
+                            Blood
+                            Skulltag
+                            TheMisterCat
+                            Scuba Steve
+                            CC4-Tex
+                            Xyzzy01
+                            Dragonfly
+
+                          MUSIC RESOURCES:
+                            Jimmy
+                            rock.freemidis.net
+                            VGMusic.com
+                            1024.wad
+                            Scythe II
+                            yakfak
+                            Aion
+                            Other WADs
+
+                          BETATESTERS:
+                            YellowTail
+                            Tux
+                            Dreadopp
+                            HexaDoken
+                            Eonfge
+                            Parad0x
+                            Blastfrog
+                            antares031
+                            Phade
+                            leodoom85
+
+===========================================================================
+* What is included *
+
+New levels              : 52 (50 playable + 1 titlemap & 1 credits )
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : -
+Other files required    : None
+
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01 (map01 is a hub map for level selection)
+Single Player           : Designed for
+Cooperative 2-4 Player  : If Zandronum catches up to GZDoom, yes.
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Over Nine Years
+Editor(s) used          : DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE,
+                          SLumpEd, Slade3, MS Paint, Adobe Fireworks,
+                          GraphicsGale, FruityLoops Trial, Photoshop.
+Known Bugs              : Hopefully none. Email any found to
+                          josh@joshuaosullivan.co.uk
+May Not Run With        : Any port other than GZDoom - must be GZDoom
+                          3.2.0 OR HIGHER.
+Tested With             : GZDoom 3.2.0
+
+
+
+* Copyright / Permissions *
+
+Authors MAY NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file. Contact me if you need help
+regarding specific assets from this project.
+
+You MAY NOT distribute this file.
+
+
+
+* Where to get the file that this text file describes *
+
+http://www.joshuaosullivan.co.uk/skulldash/
