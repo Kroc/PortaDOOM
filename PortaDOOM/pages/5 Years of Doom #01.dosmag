@@ -11,25 +11,40 @@ $KEY:3=PAGE:#03
 $KEY:4=PAGE:#04
 $KEY:5=PAGE:#05
 $KEY:A=PAGE:#06
+$KEY:B=PAGE:#07
+$KEY:C=PAGE:#08
+$KEY:D=PAGE:#09
+$KEY:E=PAGE:#10
+$KEY:F=PAGE:#11
+$KEY:G=PAGE:#12
+$KEY:H=PAGE:#13
+$KEY:I=PAGE:#14
+$KEY:J=PAGE:#15
+$KEY:K=PAGE:#16
+$KEY:L=PAGE:#17
+$KEY:M=PAGE:#18
+$KEY:N=PAGE:#19
+$KEY:Z=PAGE:#20
 
  - [2] *The Doom Bible*.............................................. pg.2
  - [3] *The Top Ten Doom Level Makers*............................... pg.3
  - [4] *ZDoom Preview*............................................... pg.4
  - [5] *glDoom Preview*.............................................. pg.5
  - [A] *Interview: _John Romero_*...................................... pg.6
- - [B] *Interview: _Ty Halderman_*..................................... pg.
- - [C] *Interview: _Justin Fisher_*.................................... pg.
- - [D] *Interview: _Tim Willits_*...................................... pg.
- - [E] *Interview: _Dario Casali_*..................................... pg.
- - [F] *Interview: Banjo Software*................................... pg.
- - [G] *Interview: _Anthony Czerwonka_*................................ pg.
- - [H] *Interview: _Iikka Keranen_*.................................... pg.
- - [I] *Interview: _Harry Teasley_*.................................... pg.
- - [J] *Interview: _Sverre Kvernmo_*................................... pg.
- - [K] *Interview: _John Bye_*......................................... pg.
- - [L] *Interview: _T. Eliot Cannon_*.................................. pg.
- - [M] *Interview: _Mike Gummelt_*..................................... pg.
- - [N] *Interview: _Joel Huenink_*..................................... pg.
+ - [B] *Interview: _Ty Halderman_*..................................... pg.7
+ - [C] *Interview: _Justin Fisher_*.................................... pg.8
+ - [D] *Interview: _Tim Willits_*...................................... pg.9
+ - [E] *Interview: _Dario Casali_*..................................... pg.10
+ - [F] *Interview: Banjo Software*................................... pg.11
+ - [G] *Interview: _Anthony Czerwonka_*................................ pg.12
+ - [H] *Interview: _Iikka Keranen_*.................................... pg.13
+ - [I] *Interview: _Harry Teasley_*.................................... pg.14
+ - [J] *Interview: _Sverre Kvernmo_*................................... pg.15
+ - [K] *Interview: _John Bye_*......................................... pg.16
+ - [L] *Interview: _T. Eliot Cannon_*.................................. pg.17
+ - [M] *Interview: _Mike Gummelt_*..................................... pg.18
+ - [N] *Interview: _Joel Huenink_*..................................... pg.19
+ - [Z] *Index* ...................................................... pg.20
 
 :Credits:
 :-------------------------------------------------------------------------------

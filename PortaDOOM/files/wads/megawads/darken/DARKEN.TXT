@@ -1,0 +1,491 @@
+                          = THE DARKENING =
+               = Episode 1 : The Nameless Project v1.01=
+======================================================================
+= The Darkening homepage: http://gallery.uunet.be/jan.van.der.veken/ =
+======================================================================
+
+Finally, it's here. After many months of hard work, The Darkening
+team proudly presents Episode 1: The Nameless Project, featuring ...
+
+ + 11 single player levels
+ + 11 deathmatch levels
+ + tweaked for optimal gameplay
+ + stunning new graphics
+
+New in version 1.01:
+
+ + fixed a missing flat bug that caused [DM Map 08] to crash.
+ + fixed animation sequence FIREBLUA from 2 frames to 3 frames.
+
+=============================== STORY ================================
+
+It has been 3 years since the destruction of the huge demon that
+masterminded the invasion of Earth. Your journey back home was almost
+as difficult and bloodthirsty as your journey into hell, but you made
+it. You had expected to be made a hero; after all, you had saved Earth
+and all it's worlds from a fate worse than death. But it was not to be
+that way.
+
+Upon your return, you discovered that things had begun to change. The
+UAC, deprived of some of it's key personnel, had become more secretive
+and shadowy. You could swear that the Mars station's light levels were
+lower than you remember them. . . Instead of briefings by the top
+brass, troops were given datapads for their missions. Sometimes people
+would go missing. . . Some of the other marines decided that they
+would leave. Their ship blew up shortly after departure.
+
+Recently, things have gotten worse. All remaining marines have been
+confined to quarters for weeks, and contact with Earth has been cut
+off for months. Some of your closest friends have started to disappear
+Perhaps hell won the fight after all. . .
+
+Then, one night, it is your turn. Your dreams suddenly turn to
+nightmares, a Spider Mastermind strafing your body, it's manic
+laughter the only thing you can hear ... As the last bullet pierces
+your skin, your eyes blink open. Something is wrong. . . it seems even
+colder and darker than it did before. . . Suddenly, everything goes
+black. Fearing the worst, you reach under your bed for the pistol you
+always keep there. Your chaingun and shotgun are in the other room,
+but it is too late and too far.
+
+Your sight begins to return to you. But where are you? You are in a
+tiny brick room, a silver door the only way out. Tightening your grip
+on the pistol, you open it and step through and prepare to discover
+the purpose of this ... this Nameless Project.
+
+============================ INSTALLATION ============================
+
+   - Unzip the file darken.exe into your doom2 directory WITH THE 
+     OPTION -d !!! 
+     example: pkunzip -d darken.zip c:\doom2
+   - Go to your doom2 directory and type darken to start.
+
+The Darkening comes with a dehacked patch as well. This patch changes 
+the map names that are displayed on the automap as well as the texts 
+at the end of map 06 and map 11. The patch is optional, so you don't 
+HAVE to load it to be able to play the levels. It is however *nice* to
+have, and we feel The Darkening is more complete with it. 
+
+To install this patch you need to run the batch file "exepatch.bat" 
+which you can find in the "\darkening" subdirectory.
+
+No original Doom2 files are modified during the install.
+
+============================ LEVEL CREDITS ===========================
+
+[ Map 01 ]
+
+Level name      : Scary
+Author          : Jan Van der Veken
+Description     : Short but sweet map. This level more or less defined
+                  the typical metal 'n' bricks style for this episode.
+                  It started off as a regular Doom2 level without new 
+                  textures. Later I picked it up again, I radically 
+                  changed the texturing and made some structural 
+                  changes too. The title? Oh yeah, it's a dark and 
+                  _scary_ level. =)
+                  
+[ Map 02 ]
+
+Level name      : Bloody Hell
+Author          : Jan Van der Veken
+Description     : Another shorty. Made this one right after Scary.
+                  It took me less than 3 days (or should I say
+                  nights?) to finish.
+
+[ Map 03 ]
+
+Level name      : Entropia
+Author          : John "Gestalt666" Bye
+Description     : A tightly packed little stone complex built around 
+                  a courtyard...  Just a little 'un.
+
+[ Map 04 ]
+
+Level name      : Relentless
+Author          : Travers Dunne
+Description     : Started out doing the start room, then came the 
+                  fenced area which i thought looked cool. soon all 
+                  the gauntlet was drawn up, as well as the exit 
+                  room and a few other bits. And i hadnt even started 
+                  texturing ANYTHING!
+
+[ Map 05 ]
+
+Level name      : Hand of Doom
+Author          : Jan Van der Veken
+Description     : One of the larger levels in this episode. The layout
+                  is pretty complex and non-linear with some nice
+                  architecture. It's pretty tough on a pistol start
+                  too. The title comes from a Black Sabbath song.
+
+[ Map 06 ]
+
+Level name      : The Mines of Death
+Author          : Nick Baker
+Description     : This started out in a similar style to TNP Map 07, 
+                  but then I decided to do something a little 
+                  different. . . I've always been a fan of mine type 
+                  levels, so I let Mark Klem's MKMINES and Iikka 
+                  Keranen's two mine levels (Dystopia 3/Requiem) be
+                  my main source of influence for most of the level.
+                  There are several original ideas too though. Oh, 
+                  thanks to Travers for doing up this level a bit!
+
+[ Map 07 ]
+
+Level name      : Dead Simple ][
+Author          : Nick Baker
+Description     : OK, so the only visual similarity to Dead Simple is
+                  the first tiny little room.  It's not what it looks 
+                  like that gives it's name, but what you have to do 
+                  - kill the Mancubi, then the Arachnotrons.  This 
+                  time, though, there are plenty more monsters too, 
+                  including some nasty traps.  Thanks once again to 
+                  Travers for touching this level up a bit, and to 
+                  Daniel, my brother, for suggesting the "Interactive 
+                  Box" (you'll know it when you see it).
+
+[ Map 08 ]
+
+Level name      : Discordia
+Author          : John "Gestalt666" Bye
+Description     : A large metallic base making full use of the 
+                  excellent new Darkening textures.  Probably the 
+                  schmmmoothest level I've ever made for Doom!
+
+[ Map 09 ]
+
+Level name      : Military Complex
+Author          : Jan Van der Veken
+Description     : A Dodead/Knee Deep in the Dead style level: my 
+                  favorite style... It's very challenging on UV. At 
+                  one point there are 8 barons chasing you around ...
+                  But it's still possible. Other things to notice:
+                  the open roof architecture looks cool and there 
+                  are some nice lighting effects. IMO this is the 
+                  best of my  Darkening single player maps. Special
+                  thanks to Lee Killough. The visplane overflow
+                  protection in BSP 2.2 saved my ass on this level.
+
+[ Map 10 ]
+
+Level name      : Under Earth
+Author          : Travers Dunne
+Description     : Got inspired by, believe it or not, one of the very
+                  cool levels in the Quake mission pack Scourge of 
+                  Armagon. Funnily enough the part that was closely 
+                  related to that inspiration was dropped coz it lead 
+                  the level into parts that were really spinning my 
+                  head as to what to do.
+
+[ Map 11 ]
+ 
+Level name      : Stone Tyrant
+Author          : Adam Windsor
+Description     : This place of brick and rock is silent, shadowed.  
+                  Your footsteps echo softly as you walk slowly toward
+                  a pair of angled doors.  Readying yourself for
+                  action, you reach for the switch .....
+
+----------------------------------------------------------------------
+[ DM Map 01 ]
+
+Level name      : The Spine of Evil
+Author          : Jan Van der Veken
+Description     : Actually this is my first deathmatch level ever.
+                  I started it as a tech/base style level. Later
+                  I decided to experiment a bit and I completely
+                  changed the texturing while keeping the lay-out
+                  pretty much intact. It is now a hellish/medieval
+                  style level. A bit like the original id episode 4
+                  levels. Thanks should go to Matt Dixon for giving
+                  me useful tips for item placement. Oh, I made
+                  a single player version of this level too that
+                  might show up in a future release ...
+
+[ DM Map 02 ]
+
+Level name      : Devil's Dungeon
+Author          : Jan Van der Veken
+Description     : A rather large deathmatch level. Best for 3-4
+                  players. The architecture is very detailed.
+                  Some structures were heavily inspired by Quake,
+                  like the teleporters and the *glowing* lava.
+                  Notice how the lava is full brightness, but the
+                  walls surrounding it are dark. 
+
+[ DM Map 03 ]
+
+Level name      : Fragmentation/Quake DM
+Author          : Travers Dunne
+Description     : Large DM level (Almost epic-like), with plenty of 
+                  eye candy.
+
+[ DM Map 04 ]
+
+Level name      : Relentless until death
+Author          : Travers Dunne
+Description     : A small section of Relentess... now go kill.
+
+[ DM Map 05 ]
+
+Level name      : Sulphur
+Author          : Jan Van der Veken
+Description     : Atmospheric medieval style level. 1 on 1 is very
+                  cool on this one, although I think it will also
+                  support 3 or 4 players. I took the lava effect
+                  a bit further this time and once again I borrowed
+                  some Quake elements. 
+                  
+[ DM Map 06 ]
+
+Level name      : Return to the Realms
+Author          : Nick Baker
+Description     : What can I say? I took parts from all my Realms of 
+                  Pain levels (except, for stylistic reasons, Map 05),
+                  fixed them up a bit, added some more stuff, and put 
+                  it all together. This is now IMHO one of my best DM 
+                  levels.
+
+[DM Map 07]
+
+Level name      : Valley of the Lost
+Author          : Travers Dunne/Nick Baker
+Description     : I was stuck for inspiration for awhile, so Jan sent
+                  me (Nick) Traver's "Lost WADs" with several levels
+                  varying from half-finished to barely started. This 
+                  level is one of the former - apparently Travers 
+                  originally started it as a Duke Nukem 3D level! 
+                  Anyway, I fixed it up a bit, mainly just in the 
+                  visuals department, and handed it back to him, where
+                  he did a bit more work on it.
+
+[ DM Map 08 ]
+
+Level name      : Vertigo
+Author          : Jan Van der Veken
+Description     : Some kind of evil temple. I got my inspiration from
+                  a program I saw on TV where archeologists dug up
+                  an ancient Egyptian temple.
+
+[ DM Map 09]
+
+Level name      : Interrogation Central
+Author          : Jan Van der Veken
+Description     : A dark metallic tech base. I wanted it to look like
+                  a hi-tech torture base/prison. I got my inspiration
+                  from DaPak and Quake2 this time. No plasma weapons
+                  or chainguns here. Just shotguns 'n' explosives =). 
+                  One of  my best DM levels I think, and I made it in 
+                  only one  night! (I was in the mood, hehe) This is 
+                  more or less the style I'd like to use for episode 2
+                  of The Darkening.
+
+[ DM Map 10 ]
+
+Level name      : Death awaits 6-feet Under Earth
+Author          : Travers Dunne
+Description     : Ok, so it isnt a new level (kill me) but I put in 
+                  some nicely positioned teleporters to make the level
+                  more open, fast and very accessable.
+
+[ DM Map 11]
+ 
+Level name      : Stone Tyrant
+Author          : Adam Windsor
+Description     : This place of brick and rock is silent, shadowed.  
+                  Your footsteps echo softly as you walk slowly toward
+                  a pair of angled doors.  Readying yourself for 
+                  action, you reach for the switch .....
+
+========================= AUTHOR INFORMATION =========================
+
+Name               : Nick Baker
+Nickname           : NiGHTMARE
+E-mail             : Nbaker1@compuserve.com
+Homepage           : None right now (coming soon?)
+Work done on TNP   : Maps 06 and 07, various textures & flats (all
+                     those beginning with an "N"), the storyline
+Other WADs         : Realms of Pain DM (rlmspain.wad)
+                     Gothic DM 2
+                     Paradox TC
+                     Twice Risen TC
+How I got involved : 
+
+ In July 1997, I was e-mailed by M. Scott Harlan, who congratulated 
+ me on my newly released Realms of Pain DM episode, and said that he 
+ knew a couple of guys who were looking for people to help out a 
+ single player project. He offered to put me in touch with them, and 
+ I accepted. I agreed to do two levels - Map 06 and Map 07, and a 
+ few textures drawn with my (then) limited artistic talents. Inspired 
+ by the awesome artwork available in many Doom2 WADs, I've now created
+ hundreds of high quality textures, some of which you'll find in the 
+ Darkening episode 1, with more to come in future episodes. 
+
+Misc. author info  : I'm English, and most people here have just 
+                     moved from Quake to Quake 2 ;)
+Editors used       : Deep '97 v9.30, Wintex 4.3
+Doom Greetings     : Sir Alien, Rick Clark, Anthony Czerwonka, Matt
+                     Dixon, Paul F, M. Scott Harlan, Ingo Kirsch, 
+                     Mark Klem, Gaston Lahaut, Chris Martin, Michal 
+                     Mesko, Lisa Moore, Rich Nagel, Mike Nigel, Mike 
+                     Reid, Malcom Sailor,  Anthony Soto, Dan Twomey
+Non-Doom Greetings : Dan Baker, Matt Buzzard, Adam Durly, Chris 
+                     Getliffe, Oli Newton, Nick Phillips, John Shanks
+
+----------------------------------------------------------------------
+Name               : Jan Van der Veken
+Nickname           : BhadTrip
+E-mail             : jan.van.der.veken@village.uunet.be
+Homepage           : http://gallery.uunet.be/jan.van.der.veken
+Work done on TNP   : Level design, moderating, site maintaining,
+                     a few textures and flats.
+Other WADs         : Dawn of the Dead (Dodead.wad)
+                     = a cool episode 1 replacement for Doom I
+
+How I got involved :
+
+ Somewhere in the spring of 1997 I read an article in rgcd.editing
+ from a guy called Travers Dunne who eagerly wanted everyone to
+ check out his levels. I did and I liked them. He liked my dodead
+ too, which I had just released at that time. So he decided we should
+ work on a project together. Well here we are =)
+
+Misc. author info  : I live in Belgium. The land of serial killers,
+                     great beer and lousy weather. I graduated as an 
+                     industrial engineer earlier in 1997 and I now 
+                     work as IT manager in a small company.
+Editors used       : WinDEU, Yade, DeuTex, Wintex 4.3
+Doom Greetings     : + Andre Majorel, my personal wad tester and 
+                       author of Yade.
+                     + Lee Killough, for fixing some bugs in BSP that
+                       I ran into.
+                     + Matt Dixon and all the Gothic guys.
+                     + David Shaw for allowing us to use his music.
+
+----------------------------------------------------------------------
+Name               : Travers Dunne
+Nickname           : Hobbes
+E-mail             : tjdun2@mugc.cc.monash.edu.au
+Homepage           : http://www-mugc.cc.monash.edu.au/~tjdun2
+Work done on TNP   : Maps 03 and 10, a few textures, converted some of
+                     Nick's and Ola's textures to flats
+Other WADs         : ftp://ftp.cdrom.com/pub/idgames/levels
+                     ../doom2/deathmatch/a-c/afterlfe.zip <--- good
+                     ../doom2/deathmatch/s-u/techcntr.zip <--- good
+                     ../doom/s-u/t_dunn01.zip <--- good in parts
+                     ../doom2/s-u/t_dunn02.zip <--- tad dodgey
+                     ../heretic/s-u/t_dunn03.zip <--- great
+
+How I got involved : 
+
+ Me and Jan got together shortly after he released Dawn of the Dead 
+ and decided on making a "hellish" set of levels. Well after we put 
+ that on hold =) Jan drew up the first level for The Darkening which 
+ then defined the theme/style for the rest... Slowly the boat got 
+ laiden down in sailors and we were off!
+
+Misc. author info  : 19yr old Australian uni student having a
+                     blast with the uni's network
+Editors used       : DCK v2.2-f, Wintex 4.3
+
+----------------------------------------------------------------------
+Name               : Ola Bjorling
+Nickname           : citrus on IRC, otherwise none
+E-mail             : ola@techno.org
+Homepage           : I'm a web designer, but I dont have one actually 
+                     :)
+Work done on TNP   : No maps, but a bunch textures. Browse the wad with
+                     some nice WAD tool, such as NWT or wintex to see 
+                     which ones are mine - all beginning with an O 
+                     are, and the statbar, intermission graphics, 
+                     titlescreen, credits, ENDOOM acsii art and The
+                     Darkening homepage.
+                     Will have loads more textures in episode 2.
+Other WADs         : None containing any graphics previously released,
+                     but I have done these:
+                     + Tantrum - single player, 1 map
+                     + Talosian Incident - did map 8 with John Bye
+                     + Did some graphics for Gothic DM 2 (not out 
+                       when writing this)
+                     + Doing some graphics for Mordeth episode 2 (as 
+                       above)
+
+How I got involved : Honestly, I have no idea :)
+
+Misc. author info  : 18 years old when writing this, studying computer
+                     graphics, journalism and sound engineering.
+                     From Sweden.
+Editors used       : Adobe Photoshop 3.0.5, Metatools KPT Bryce 2,
+                     Wintex 4.3, NWTpro
+Doom Greetings     : The rest of the crew, Gothic DM 2 crew, id,
+                     Gaston Lahaut, all at EFNet #DOOM2, all who I 
+                     forgot.
+Non-Doom Greetings : Julia
+
+----------------------------------------------------------------------
+Name               : John Bye
+Nickname           : Gestalt666
+E-mail             : gestalt666@easynet.co.uk
+Homepage           : Gestalt666 Resource - 
+                     http://www.geocities.com/~gestalt666
+Work done on TNP   : Level design
+Other WADs         : CyberDoom II
+                     Cygnus IV
+                     Gardens of Delight
+                     story, music and levels for The Talosian Incident
+                     others I'd rather forget!
+
+How I got involved : 
+
+ Which project is this again?  The Darkening?  Oh, right...
+ 
+Misc. author info  : Another British designer - 20 years old, Doom 
+                     fanatic, maintainer of the world's biggest 
+                     Deathmatch Database, and president of the 
+                     computer games company, The Coven...
+
+Editors used       : DCK 2.2 and DCK3.61
+Doom Greetings     : John "Doc Sleep" Anderson, Rich Brennan, Travers
+                     Dunne, Ty Halderman, Lee Killough, Patrick 
+                     Martin, Malcolm Sailor,  Jan "The Man" Van der 
+                     Veken and others too numerous to mention (well, 
+                     you did want to download this text file today 
+                     didn't you???)
+
+Non-Doom Greetings : Lianna for keeping me insane, everyone else for 
+                     leaving me alone long enough to get on with 
+                     it ...
+
+----------------------------------------------------------------------
+Name               : Adam Windsor
+E-mail             : s339890@student.uq.edu.au
+Homepage           : Nope
+Work done on TNP   : Map 11
+Other WADs         : Memento Mori II (MAP15)
+		     Requiem  (MAPS 11, 20, 25, 26, 30, 32)
+		     TBEAST.WAD
+Editors used       : DETH 3.87
+Misc. author Info  : 24 yo who still prefers Doom2 to any other 3d 
+                     shooter. Babylon 5 and Red Dwarf Fan. Part time 
+                     student, full time Mortgagee.
+
+============================ LEGAL STUFF =============================
+
+Authors may NOT use these levels as a base to build additional
+levels or the textures/flats/other graphics for your own levels
+without written permission. 
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+It may NOT be included with any other software product.
+
+NO fee or payment may be charged or accepted for this episode.
+
+Basically: don't rip us off, or you'll go to hell.
+
+========================== TRANSMISSION ENDS==========================

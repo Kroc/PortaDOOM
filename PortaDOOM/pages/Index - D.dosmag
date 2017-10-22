@@ -1,30 +1,32 @@
 $THEME=BLUE
-$KEY:A=GOTO:dead.wire
-$KEY:B=GOTO:Cabal Series #03
-$KEY:C=GOTO:Don't Be A Bitch Remastered
-$KEY:D=GOTO:Doom 2 the Way id Did
-$KEY:E=GOTO:DOOM 64
-$KEY:F=GOTO:DOOM II
-$KEY:G=GOTO:Doom the Way id Did
-$KEY:H=GOTO:Doom the Way id Did - The Lost Episodes
-$KEY:I=GOTO:DOOM(4) for DooM
-$KEY:J=GOTO:Doomed Space Wars
-$KEY:K=GOTO:DoomRL Arsenal
-$KEY:L=GOTO:DUMP Episode 3
+$KEY:A=GOTO:The Darkening Episode 2
+$KEY:B=GOTO:dead.wire
+$KEY:C=GOTO:Cabal Series #03
+$KEY:D=GOTO:Don't Be A Bitch Remastered
+$KEY:E=GOTO:Doom 2 the Way id Did
+$KEY:F=GOTO:DOOM 64
+$KEY:G=GOTO:DOOM II
+$KEY:H=GOTO:Doom the Way id Did
+$KEY:I=GOTO:Doom the Way id Did - The Lost Episodes
+$KEY:J=GOTO:DOOM(4) for DooM
+$KEY:K=GOTO:Doomed Space Wars
+$KEY:L=GOTO:DoomRL Arsenal
+$KEY:M=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
 :-------------------------------------------------------------------------------
 
-- [A] *dead.wire										Onesies
-- [B] *Cabal Series: Derelict Station					5 Years of Doom
-- [C] *Don't Be A Bitch Remastered						Multiplayer
-- [D] *Doom 2 the Way id Did							MegaWADs
-- [E] *DOOM 64											Commercial DOOM
-- [F] *DOOM II											Commercial DOOM
-- [G] *Doom the Way id Did								MegaWADs
-- [H] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [I] *DOOM(4) for DooM									Mods
-- [J] *Doomed Space Wars								Episodes
-- [K] *DoomRL Arsenal									Mods
-- [L] *DUMP Episode 3: BFG Edition						Community Projects
+- [A] *Darkening Episode 2, (The)						MegaWADs
+- [B] *dead.wire										Onesies
+- [C] *Cabal Series: Derelict Station					5 Years of Doom
+- [D] *Don't Be A Bitch Remastered						Multiplayer
+- [E] *Doom 2 the Way id Did							MegaWADs
+- [F] *DOOM 64											Commercial DOOM
+- [G] *DOOM II											Commercial DOOM
+- [H] *Doom the Way id Did								MegaWADs
+- [I] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [J] *DOOM(4) for DooM									Mods
+- [K] *Doomed Space Wars								Episodes
+- [L] *DoomRL Arsenal									Mods
+- [M] *DUMP Episode 3: BFG Edition						Community Projects

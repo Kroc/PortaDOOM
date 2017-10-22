@@ -1,0 +1,72 @@
+$THEME=BLACK
+$TITLE=Banjo Software
+
+^C:5 YEARS OF DOOM :: BANJO SOFTWARE
+
+:-------------------------------------------------------------------------------
+
+Banjo Software is a relative unknown in the world of gaming. With only one game under their belt and comprised of part-time employees, they can easily be underestimated. However, with an inriguing storyline and some great-looking screenshots, their upcoming game HACX 2 could make waves. Banjo Software first came into existence with their premiere game, a 21-level addon for Doom 2 entitled HACX. Aside from the cereal-box-stuffer game Chex Quest, HACX was the only "total" TC for Doom ever attempted. Every single texture, monster, weapon, sound, and level was completely and totally new. HACX featured levels by such noted level authors as _Anthony Czerwonka_, _Iikka Keranen_ and _Adam Williamson_. How was this TC conceived? What's in the future for our Deliverance buddies here? Banjo Software co-founder _Bow_ answers these questions, and more...
+
+:-------------------------------------------------------------------------------
+
+*Doomworld	How was Banjo Software formed? Who were the original members?
+
+_Bow		Banjo was formed by _John Herndon_, _Randy Lee_ and myself about 5 years ago in my apartment in New Orleans. We just decided that we liked playing Doom so much that we wanted to know it inside and out. We had discussed a number of different ideas and game styles. At the time, we were all playing MUDs also. One of the things I wanted to attempt was a graphic version of a MUD, but _John_ thought that we should go with something that was basically already programmed and work on the things that we knew how to change. Although _John_ has dabbled some, none of us are programmers, so it was our only real choice. I enjoyed the artwork, _John_ was into level building and _Randy_ was into the music and sounds. Once we had gathered enough of the doom editors together, we decided we should take a stab at a full blown add-on. So, we formed Banjo. Banjo was really kind of a simple idea; I just grabbed parts of our names and made it up. _(B)ow_, _R(an)dy_, & _(Jo)hn_. Once we were formed, we started recruiting from the internet which is still the way we get people for our projects.
+
+*Doomworld	Hacx was an excellent add-on for Doom2, that some often say never really got the attention it deserved. Would you just say that Hacx was released just a little to late to hit the prime of Doom's life?
+
+_Bow		Yes, and unfortunately, about the same time as Quake.
+
+*Doomworld	How was the original idea for Hacx formed? The premise, the enemies, everything? We want the whole background to the project?
+
+_Bow		Hacx, the storyline, was written by _Holt Satterfield_, Banjo's one and only writer. One of the earliest items we insisted upon was a good storyline, and _Holt_ put a great one together. Of course, we had to hold him back a little, such were the limitations of the technology. If we could have done everything _Holt_ wanted, we'd still be the hottest game on the market, hehe. But, alas we were without code :(
+
+*Doomworld	Why did you guys decide to contract out the levels on Hacx instead of doing them in house? Was it to save time, or maybe to give it a feel of purity with the community itself?
+
+_Bow		Certainly a lot was to save time. With only three of us, working after hours (we all have full time jobs elsewhere) we'd still be working on Hacx if we hadn't brought more people in. We weren't fooling ourselves into thinking we were the greatest at what we were doing either. There's always someone with a new idea or who is a little better at modeling, etc. So we set out to bring those people together. _John_, _Randy_ and I are probably more promoters than game developers :)
+
+*Doomworld	As a small developer trying to make it in the world, how would you compare the images that most people probably conceive a gaming company as to reality? Do you guys really all go around driving Ferraris?
+
+_Bow		Personally I drive an old beat up '89 pick-up truck. It's foreign....but not Italian :)
+
+*Doomworld	What are the plans for Banjo after the release of Hacx2? A totally new game utilizing your own engine or is that still a ways off for you guys? Or Are you looking into using another engine like the Lithtech engine?
+
+_Bow		Wow, hard one to answer. Hacx2, although still in production, has undergone a few major renovations as of late. We actually started work on it in the Quake engine. Then, when Quake 2 came out, we quickly converted to it so that we would have a demo ready to show at the CGDC in Long Beach back in May. Recently, however we have converted a lot of stuff over to the Unreal engine and are trying out some ideas with it. What we might do with the Unreal engine I'm not willing to say yet as we have not negotiated a deal with the owners, but I am willing to say that it has renewed my faith in the Banjo team and their ability to adapt to whatever the latest technology is. We've already done some killer work with that engine and are currently considering a few different engines for the final release of Hacx 2. Preferably, the engine we choose will be previously unmarketed and tailored to our needs.
+
+*Doomworld	How is your relationship with id Software? You guys have already finished one add-on for their games, and are currently working on your second. I'm going to assume that it must be pretty good considering they have allowed to develop two products for their games.
+
+_Bow		Currently we have no "relationship" with id, other than our add-on license for Hacx. Although we started construction of Hacx 2 around their engines, it may not be finally released in that form, so whether or not we will wish to negotiate for licensing of another id engine is still up in the air.
+
+*Doomworld	Would you say the best course of action for someone who wants to get into the game industry in their own company would be to go the way that Banjo did and start with an add-on to a major game? It would seem to me to be most prudent because there would be a much much smaller overhead cost for a project like that.
+
+_Bow		Certainly for us, it has been the only way. Most of what we have done so far was with little or no money at all. We have had some small investments by family and friends but we are hoping to impress someone enough to invest more in us based on our abilities. Banjo wasn't formed around a plan to make tons of money, either. Initially it was about doing what we enjoy most - playing games. The rest of the story, though, is if you don't have capital, it's impossible to employ people full time. At the current speed of breaking technology, it's difficult to keep up on a part time basis. So basically we need to start making money to support our hobby.
+
+:-------------------------------------------------------------------------------
+
+*Doomworld	If a person wanted to go into the game business, what would you recommend they work on and or study in school. Are there things they should prepare for if they want to run their own gaming company?
+
+_Bow		Programming. One of the key items that has hindered us from breaking into the money making side of this industry is that we don't have our own engine. Build the engine first, then plug in the art is the way the big guys are doing it, not vice versa. There are a lot more great artists out there than there are engines. If you build it, they will come :)
+
+*Doomworld	Why was the decision made to cut the Hacx add-on from a full 32 level TC to 21 levels?
+
+_Bow		Time - We knew that we needed to get something on the market, and hoped that we might make it with a little time before Q2. We did... a little.
+
+*Doomworld	With the recent release of the Doom source and all the wonderful things that have been done with it, are you wishing now that you had been able to rebuild the Doom engine as has been done recently instead of patching it with Dehacked? Thus in terms, making a whole new gameplay experience that was at its core Doom, but had so much that was new as to make it a step beyond what the original engine could do.
+
+_Bow		Sure, but it wasn't available for the current price when we started... or finished, even :) We DID feel like we pushed the engine a lot farther than Doom had though, even with Dehacked.
+
+*Doomworld	How much longer are we looking at until the release of Hacx2? What are going to be some of the new things that we are going to see in the game besides weapons, monsters, textures, sounds and such? Any new gameplay items?
+
+_Bow		Too early to say. Although a lot of the preliminary work is done, these questions will be better answered once we have decided on it's final engine.
+
+*Doomworld	Did you ever get a chance to look at some of the Hacx add-on levels that were released after Banjo had released the game? If so what did you think of the way people handled the things you had added to Doom?
+
+_Bow		I personally haven't had time. We moved right out of Hacx into Hacx 2. No breaks. When you're trying to catch up, there's no time to stop and play :) I will say though, we are always flattered when people find our game enjoyable enough to want to modify it and play it more. I'm sure the guys at id feel the same way about add-ons for their games. It's the greatest thing about these games. The ability to modify and do add-ons. How many people would be playing Doom or Hacx now if this had not been the case? Certainly none would be playing Hacx, because it wouldn't have existed. So, in answer to your question, I have to love the idea of any change that people make to our game, or else I would be a hypocrite :)
+
+*Doomworld	How was the deal to release projects such as S*T*R*A*I*N and GothicDM with Hacx formed? Was it because you had members of each team working with you on the project that thought it would be cool to release the levels with a commercial project?
+
+_Bow		Yes, we wanted to credit the people that worked on Hacx by allowing them to also showcase their other works. We had members of S*T*R*A*I*N and GothicDM working on Hacx and they contacted the other members of S*T*R*A*I*N and GothicDM to get everyone involved in those projects permission to include S*T*R*A*I*N and GothicDM (and the other add-ons included in HacX). So, it was just a showcase of the talented involved in the making of Hacx.
+
+*Doomworld	Any final comments as to why you think Doom has been able to keep a strong community with it for the past 5 years? Probably much longer than anyone ever expected.
+
+_Bow		Again, there is no doubt in my mind that because it can be modified so that you can always play a new game. That, and the ability to play deathmatch, which in effect makes a new game every time. Without those two items, I believe people would have grown bored long ago. There are other items that can be added such as it's speed, and many more that have made Doom a household name. From all of us here at Banjo we'd like to thank everyone that have supported us. Keep your eyes open more Banjo games!

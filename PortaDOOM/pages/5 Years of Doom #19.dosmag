@@ -1,0 +1,69 @@
+$THEME=BLACK
+$TITLE=Joel Huenik
+
+^C:5 YEARS OF DOOM :: JOEL HUENIK
+
+:-------------------------------------------------------------------------------
+
+_Joel Huenik_ doesn't play Doom much anymore. As the president of 4D Rulers, he's busy heading his design team towards the completion of their first commercial game, entitled Gore. While Gore, when completed, will be at the front of the technology curve (featuring all the latest refinements that today's 3D shooters have to offer), it won't be the first groundbreaking game that _Joel_ has put together. Three years ago, he started his first foray into the world of game editing with All Hell's Breaking Loose, a partial conversion for Doom 2 which featured all-new monsters, levels, and weapons, as well as some incredible Dehacked work which made enemies ten times as lethal.
+
+:-------------------------------------------------------------------------------
+
+*Doomworld	When did you first play Doom?
+
+_Joel		Actually not till some time after I played Doom2, which was fairly new at
+the time.
+
+*Doomworld	When did you first start All Hell's Breaking Loose?
+
+_Joel		December 95.
+
+*Doomworld	What gave you the idea for it?
+
+_Joel		Well, I always wanted to make games, since the atari days in the late 70's as a young teen, and doom editing a TC was a perfect place to start, because even then, I knew I would someday have my own company. I knew that I needed to know something about every phase of game creation, so the TC was the perfect answer, since there were so many helpful people out there on the net, it was like a free course to game making. I was loving it!
+
+*Doomworld	From the beginning, were you planning an entirely new weapon/monster/level set?
+
+_Joel		Yes, but I soon learned one guy can only do so much, especially lacking experience and quality tools.
+
+*Doomworld	How did working in a sign shop help you make the TC?
+
+_Joel		Well, it was a family sign shop, so I had flexibility to work on All Hell part of the day. I had told my brothers when All Hell was done, I was going to get an engine, and we could make a full game. Also it was the foundation of my computer and graphic design skills. And the computer was helpful too!
+
+*Doomworld	What was your favorite monster in the TC?
+
+_Joel		The fiend (the gargoyle I modeled).
+
+*Doomworld	Your favorite weapon?
+
+_Joel		The auto shotgun (streetsweeper) was so much fun to mow down the hundreds of imps in the streets.
+
+:-------------------------------------------------------------------------------
+
+*Doomworld	I especially liked the gargoyle monster that flipped you off when it finally died. Is there a story behind that?
+
+_Joel		Yeah, I was in _Rick_'s (my brother) recording studio recording the flap sounds and fiend wake up sounds, and we got to do the death sounds, and just started messing around, and I yelled that through the mic, and we laughed our asses off, just cause it sounded so funny. So then we started talking about it would be cool for the fiend to flip you off as he dies, saying "aaaahhhhhhhhh f**K youuuuuuuu!!!" so I just changed the death anim to match the vocal, and it was just too cool to take out. It was freeware, and aside from that, the project stayed fairly professional.
+
+*Doomworld	All Hell's Breaking Loose had lots of Dehacking tricks in it. I remember the super-Cyberdemon which had rocket launchers on **both** arms, as well as a helicopter from which evil marines would jump out in order to kill you. Were these tricks worked out beforehand, or did they just sort of evolve slowly?
+
+_Joel		I had the graphics done, but had to find a programmer who could pull those things off. _Mike Gummelt_ (before his employment at Raven) started the project and got quite a bit done, then he got busy doing other things. (duke3d and quake just came out) and I went through a few guys, and finally found a guy (_Ted_) that could finish it.
+
+*Doomworld	How did the final product compare to what you had originally planned?
+
+_Joel		Well, I originally wanted more levels but the net help was just becoming harder to find, with exciting new titles like quake and duke3d coming out, summer was here, etc, so I just scaled the thing down and finished it.
+
+*Doomworld	Are there any other funny stories you'd like to share about this TC?
+
+_Joel		Well, aside from the fiends death sequence, I used to get a lot of shit from everyone around the shop, and my girlfriend for staying up till 2 am every night working on it. I was pretty much obsessed with making games.
+
+*Doomworld	Do you think that Doom is reponsible for you now working on a commercial game?
+
+_Joel		Yes, very much so. Before Doom, I always wanted to make games, but never knew how or where to start. Then I found out you could actually make add on levels for doom, and spent an entire weekend getting my first room to work, with this really un-user friendly interface, but it was soooo cool. Then I found a better doom editor, and started making deathmatch levels. Then I started messing with replacing textures and skies, then characters and animations. Then came the TC. I got tons of emails from people all over the world, thanking me for making it, and saying how cool this or that was it confirmed my belief all along that I could someday make my own game. Shortly after All Hell, I did some duke and quake editing, then got the acknex engine, worked with that for a year, meanwhile building our team of guys, texture library, software, all the machines, and then we really got going in Dec 97 when we licensed the amp engine by slam software, and gained support from our banker.
+
+*Doomworld	I've noticed that a lot of workers at 4D Rulers have the same last name as you. Big family, huh? How's the atmosphere at work?
+
+_Joel		Yeah, well, we have always worked together in the sign company and other businesses, and we played in a band together as well, so we are used to doing everything together. Its pretty cool here at 4D Rulers, we give each other shit all the time, and provide plenty of criticism to each other. We scheme together all the time on how to make things better or cooler.
+
+*Doomworld	Have there been any elements of Doom that you've tried to capture in Gore?
+
+_Joel		Yeah, we want Gore to be scary, and have some fast opening doors for that moment of surprise with a powerful double barrel. Large monsters like the cyberdemon will be seen in Gore, and playability on a wide range of systems.

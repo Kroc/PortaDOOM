@@ -16,43 +16,29 @@ _Romero		The original concept was created right after we finished shipping Spear
 
 			Originally, we wanted to do a game based on the Aliens license and we actually were in negotiations to do it and at the last minute we bailed out because we wanted total creative control and that was not going to happen with a licensed property. So, _John Carmack_ basically said, "What if we did the same thing, except with hellspawn instead of Aliens?" It would be the same thing, essentially and get the fear factor across. That decision may have also been slightly influenced by the aftermath of our last D&D campaign, the end of which came about because demons had overrun the entire planet and destroyed the whole game.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Who came up with the name "Doom" itself?
 
 _Romero		_John Carmack_ came up with the name DOOM.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Was there a definite plan for Doom as it was being started, or was it more of a "some sort of techno-hellish game, let's go from there" deal?
  
 _Romero		_Tom Hall_ started crafting the storyline in November 1992 and created the *[B] DOOM Bible*, which turned out to be his initial ideas of where the story should go. After that point, he mostly made lots of notes about ideas, drawings of the World Map, sketches of game characters, etc. So, yes, there was a definite storyline created at the beginning of the project and we all started following that design.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What sort of features does DoomED has? Does it have a texture viewer within the program, like QuakeED does? Also, is it vertex- or sector-based? (I.E. are sectors laid down first which are then edited, or are vectors laid down and then grouped into sectors.)
  
 _Romero		DoomEd was a pretty cool map editor, if I say so myself. :) _John Carmack_ did the initial superstructure of the program because I was just starting to learn how to code on the NeXT and under Objective-C. He got the actual editing working, where you draw lines and pick-up/put-down sector information, and I did everything else, which included a Texture Inspector which showed all the wall textures available, a Sector Inspector (my pirate handle back in the Apple II days) which showed all the flats available, and various other browsers. The editor was sector based; you drew lines, made sure they all created an enclosed space, then "filled" that area with the information contained in the Sector Inspector. There were tons of options in DoomEd, but sadly I didn't think to put in automatic texture alignment. I couldn't spend all of my time working on it because I had maps to do and game balancing issues to work on. BTW: I just got myself a new NeXT Computer and will be getting DoomEd up and running so I can take screenshots for you all.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Doom originally had a very indoor look, and was fairly flat (no skies, not very many height changes). How and why did it change?
 
 _Romero		When we started designing maps for DOOM, we were still in Wolfenstein 3D mode -- 90 degree square blocks and consistent lighting for the levels. But as we started being more creative with the editor and exploring all the things we could do with the engine, then we started designing more interesting levels. The alpha versions of DOOM that were released showed our map designing skills still in the Wolf3D mode, while later Beta version showed how far we were stretching.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What happened to things mentioned in the initial Doom press release, such as bullet holes in walls as well visible monster damage (which didn't actually surface until Quake 2)?
 
 _Romero		Well, technology happened. Look how long it took for those features to be implemented after our original idea. It took more memory, which requires cash. Memory prices coming down over the last few years means everyone's machines have more memory in them, which means we can take up more memory with cool features like that.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What happened to the hub system found in one of the early alphas which allowed players to go back and forth between levels?
 
 _Romero		We had to make the game linear because doing a hub system that early in the genre would have probably steered the genre away from its pure action beginnings. It was too much to accomplish at that early of a date with the time frame we were aiming at.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	In the Doom press release there were treasures which could be collected (Demonic Dagger, Skull Chest, etc). When was the decision made to cut these out of the game? Why?
  
@@ -66,43 +52,29 @@ _Romero		I now believe that a USE key is an important concept to keep in FPS gam
 
 			As for having locking mechanisms in FPS games, they are still useful but are becoming less used as designers find more fun and clever ways of having the player get through the maps.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Many people claim that Doom2 has the best balance of any deathmatch game ever created. Are you surprised by this? Was deathmatch considered at all when the weapons were designed and, if so, in what respect?
 
 _Romero		We did not think about the weapon balance when we added deathmatch; the weapons were designed in ascending order of firepower for a single-player game. Our plan was to use them as-is for the deathmatch part of the game and they worked perfectly because they were designed correctly for single-player. As for DOOM2 being the best DM game ever created, I would have to say that I am pretty surprised to see that it is still the most hardcore DM game still out there, despite its age. Especially for one-on-one games.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Why wasn't Doom coded in C++?
  
 _Romero		I believe the reason was because DOOM was our first game that used a DOS Extender and there were no C++ compilers available at that time that used DOS Extenders. Another reason could have been because we were doing all the code on NeXT computers under NEXTSTEP and there was no C++ compiler, only Objective-C. We would compile and link the code (typed on the NeXT systems) on the Intel systems and then run the game.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What were some of the weapons that were cut/never seen in alphas?
  
 _Romero		The knife, bayonet, machine gun, Unmaker and Dark Claw. Anything else you see in the design doc was not seriously considered; they were weapons that would have made it in if there was enough time and the balance would work out.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Was Doom originally supposed to be more RPG-ish? Early betas and screenshots, which show the inside of the marine's helmet with weapon readouts and automaps, as well as inventory lists ("Heart of Lothar," "Captain's hand," etc) seem to point to this.
 
 _Romero		No, it was still going to be an action game, we were just going to have a more elaborate "status bar" that was going to be a detailed HUD. But it took up way too much screen real estate. The "Heart" and "Hand" were basically different-looking keys for doors.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Why was high resolution/high color cut?
 
 _Romero		I believe it was a decision made because of compatibility issues. The hicolor mode was not something initialized the same way on all graphic cards at that time and it also halved the resolution. We would rather have more resolution with less colors.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What were you expecting to be done with the Doom source after its release? Have these expectations been realized?
 
 _Romero		I was hoping for a 3D accelerated version to be made, mostly. Also, I thought that there might be more detailed TC's attempted since new weapons and items could be added easily. I was just glad that it was released so people could see what made it tick.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	In the Doom source, there are a number of quit messages that are... well... off-color (Such as 'Hey Ron, can we say f*** in the game?' and 'Don't leave yet! We're still spending your money!') that are commented out by default. Any comments about these?
  
@@ -114,31 +86,21 @@ _Romero		Hahaha, those are all mine. Those are the "development mode only" quit 
  
 _Romero		Removing the concept of lives ensured that the player would get through the game without becoming too frustrated.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	What did the marines who were playing cards in the alpha version do? Do they follow you?
 
 _Romero		They don't follow you. I don't think they ever were supposed to do that. I think they were just supposed to die as soon as a horde of demons swarmed into the room at the start of the game. We took them out because it would have been Special Case code to get that to happen the right way and we also had no time.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Why was the BFG changed? The "eight billion fireballs" one in the press pre-beta looks cool :)
 
 _Romero		The 8,000,000,000 fireballs (1) looked like Christmas and (2) slowed the engine down on a 386/33 because there were too many sprites on the screen. Additionally, it was cooler the way it turned out because it didn't look like we just modified the Plasma gun to make a more powerful weapon.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Who came up with the idea of Ultimate Doom?
 
 _Romero		At one of our company meetings, we decided when we were going to release the full version of DOOM into the stores and in this meeting we decided to rename it Ultimate DOOM and to give the buyer more incentive to purchase the game by adding another episode. For our customers who bought the full version of DOOM through our 800 number, we made a patch for them that would upgrade them to the Ultimate DOOM product.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Why are there no level par times in the DOOM II intermission screen? On that note, where did the ridiculous par times for Doom 1 come from?
 
 _Romero		I didn't have time to set all the par times for DOOM2 because there were so many levels and we only took 8 months to make DOOM2. I set all the par times for DOOM 1 by starting the level, running to the exit as fast as possible, rounding off the resulting time, then adding 30 seconds for padding. I actually got those levels done faster than the par times.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Some of the Episode 4 levels are great, but why no new boss at E4M8?
 
@@ -146,13 +108,9 @@ _Romero		We didn't plan on adding anything major for the fourth episode, just ne
 
 			In fact, I finished E4M2 in a record time for me. There was never a DOOM/DOOM2 map that I ever made from concept to finish faster than E4M2. It took me 6 hours and I started at midnight and worked until 6 AM and it was done.
 
-:-------------------------------------------------------------------------------
-
 *Doomworld	Doom's Episode 1 was one of the first (and one of the last) widely distributed shareware programs. Why was there no Doom2 demo/shareware of any sort?
 
 _Romero		GT Interactive never asked us for a demo and we didn't think about putting one out.
-
-:-------------------------------------------------------------------------------
 
 *Doomworld	Who's idea was it for the "The End" bunny scroller at the E3M8 ending, and why was it kept around in Ultimate Doom?
 

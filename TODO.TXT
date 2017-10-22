@@ -23,7 +23,6 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
-[ ] Support NWT merging in Chocolate-doom, e.g. Mordeth
 [ ] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
     based on engine support -- e.g. ALIENS TC
 [X] Search 'current directory' for IWADs

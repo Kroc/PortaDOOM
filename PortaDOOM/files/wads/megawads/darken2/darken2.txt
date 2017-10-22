@@ -1,0 +1,652 @@
+                          = THE DARKENING =
+                            = Episode 2 =
+			     = ver 1.1 =
+======================================================================
+=     The Darkening homepage: http://www.doomworld.com/darkening     =
+======================================================================
+
+
+--------------
+C O N T E N T:
+--------------
+
+1.  INTRODUCTION
+    1.x Version History
+
+2.  STORY
+
+3.  INSTALLATION
+
+4.  LEVEL INFORMATION
+    4.1   Single player levels
+    4.2   Deathmatch levels
+
+5.  BUGS
+
+6.  AUTHOR INFORMATION
+    6.1  Levels
+    6.2  Music
+    6.3  Testers
+
+7.  LEGAL STUFF
+    7.1   Textures
+    7.2   Levels
+
+
+
+----------------
+[1] INTRODUCTION
+----------------
+
+After being in production for waaaay too long, here is episode 2 of
+The Darkening, sadly also the last episode. There will be no third one.
+
+Don't cut your wrists just yet though, because in episode 2 you'll get:
+
+ + 12 single player levels, spiffy ones too
+ + 12 deathmatch levels, for all types of play
+ + tweaked for optimal gameplay
+ + over 600 new textures
+ + all new musical score
+
+Sounds cool, eh?
+
+
+[1.x Version History]
+
+Version 1.1: * Fixed some nasty bugs: VPO in map 04, faulty 
+             	 coop support, and texture mis-alignments
+	     * Tweaked maps - 02, 04, 09, 12, 14
+	     * Complete nodebuild and "perfect" reject
+	     * New music
+             
+Version 1.0: * Original release 3/8/2000
+
+
+
+---------
+[2] STORY
+---------
+
+After a hard nights driving about in the galaxy, your trusted space vessel 
+"Margie" runs out of fuel and you crash on some ugly planet. 
+
+Uhm... thats it I think. 
+
+Oh yeah; You have to kill stuff too.
+
+(If you depserately need a storyline, go play something else or think of
+one yourself.)
+
+
+
+----------------
+[3] INSTALLATION
+----------------
+
+Oooh, this is easy. Unpack the files contained in darken2.zip into your
+doom2 directory (or whatever directory you want actually) and start the
+game like this:
+
+SINGLE PLAYER:
+doom2.exe -file darken2.wad
+
+DEATHMATCH:
+dm.exe -file darken2.wad -warp 13
+
+The deathmatch levels start at map13, as the least retared of you might be
+able to figure out from the above example. Heh.
+
+
+
+---------------------
+[4] LEVEL INFORMATION
+---------------------
+
+[4.1 Single player levels]
+
+map01
+Level name          : Outpost Mortem
+Author(s)           : Ola Björling
+Build time          : I'd say about 80 hours. (yeah I'm slow...)
+editor(s) used      : EdMap 1.31
+                      EdMap 1.40
+                      DETH 4.23
+                      BSP 3.0
+Bugs                : pffft.
+Inspiration         : Quake 2 DM maps by Sten Uusvali
+Authors comments    : Designed especially to be map01: Nice intro, quite
+                      easy, small.
+
+
+map02
+Level name          : Biotech Terror
+Author(s)           : Jan Van Der Veken, Derek "Afterglow" Mac Donald
+Build time          : approximately 10 hours for Derek
+editor(s) used      : DCK 3.62, Zennode 0.98a
+                      WinDEU 5.24
+Bugs                : Uh no.
+Inspiration         : AG Cranium Circuits (TM)
+Authors comments    : Short & sweet map with most done by Jan, pretty much just
+                      a tech base with computers and monitors around the place...
+
+
+map03
+Level name          : Binary Compound
+Author(s)           : Adam Windsor
+Build time          : twice as long as half the time
+editor(s) used      : DETH, BSP, RMB
+Bugs                : ...
+Inspiration:        : The other Darkening maps, mainly.
+Authors comments    : A two-stage compound built at either end of a short canyon.  
+                      Kill stuff, marvel at cool Darkening E2 textures. The usual.
+
+
+map04
+Level name          : Vindication
+Author(s)           : Anthony Soto
+Build time          : I had to sacrifice "Real Life(TM)" for this one...
+editor(s) used      : DCK 3.62, DETH 4.16b, DMTHA, and RMB.
+Bugs                : Did I remember to add a player one start?
+Inspiration:        : Just about everything I've seen. It for some reason something 
+                      resembles a pair of .... oops I've said too much.
+Authors comments    : Your first run through may seem tough and the level may seem 
+                      low on ammo. Learn the map and all it's secrets. Use ammo wisely 
+                      and don't miss an enemy more than once. Also optimized for 
+                      death/botmatch with 4 players.
+
+
+map05
+Level name          : Melt-Down
+Author              : Richard Wiles
+Build time          : ??
+editor(s) used      : DoomCAD 6.1, bsp2.3x (nodes)
+Bugs                : sod off...
+Inspiration:        : When I fist saw Jan's map & Ola's textures...drool...drool...
+Authors comments    : My first map on this project.  Lots of brown textures to fit in 
+                      with what was available at the time.
+
+
+map06
+Level name          : At The Heart Of Decay
+Author(s)           : Jan Van der Veken
+Build time          : ?? hours
+editor(s) used      : WinDEU 5.24
+Bugs                : 
+Inspiration         : 
+Authors comments    : 
+
+
+map07
+Level name          : Waste Processing
+Author(s)           : Nick Baker
+Build time          : xx hours
+editor(s) used      : Deep '97 v9.30
+Bugs                : VPO, HOM and stuff. Beware.
+Inspiration         : This space for rent
+Authors comments    : The continuation of the previous level.  Find the
+		      teleporter that'll get you the hell out of here...
+
+
+map08
+Level name          : Lucifer's Laboratory
+Author              : Richard Wiles
+Build time          : ??
+editor(s) used      : DoomCAD 6.1, bsp2.3x (nodes)
+Bugs                : sod off...
+Inspiration:        : 
+Authors comments    : Started off as a sp conversion of my DM map but just grew &
+                      grew & grew...
+
+
+map09 SP
+Level name          : Hard Core
+Author(s)           : Jan Van der Veken, Ola Björling, Anthony Soto
+Build time          : xx hours
+editor(s) used      : Edmap 1.40
+                      Edmap 1.31
+                      Wadauthor 1.30
+                      WinDEU 5.24
+                      BSP 3.0
+Bugs                : 
+Inspiration         : 
+Authors comments    : Lots of bits and pieces merged together into one
+                      huge level. The largest in darkening 2.
+
+
+map10
+Level name          : Plasmorgasm
+Author              : Richard Wiles
+Build time          : ??
+editor(s) used      : DoomCAD 6.1, bsp2.3x (nodes)
+Bugs                : sod off...
+Inspiration:        : 
+Authors comments    : Started life as a jailbreak theme but, well, who needs 
+                      bloody themes? This one has a nice plasma gun 'melt-down' 
+                      at the end.
+
+
+map11
+Level name          : Powerplant 
+Author              : Ben Davies (Item placement by Anthony Soto)
+Build time          : Too long... maybe about 100 hours?
+Editor(s) used      : DCK and minor edits with Wintex
+Bugs                : None that I know of
+Inspiration:        : Nothing that I can put a finger on
+Authors comments    : Just play the wads!
+
+
+map12
+Level name          : toxicity
+Author(s)           : Ola Björling
+Build time          : About 200 hours including drawing stuff out on paper,
+                      running around in the level while feeling bored and
+                      trying to make all the damn crate jumps in a row.
+editor(s) used      : EdMap 1.31
+                      EdMap 1.40
+                      DETH 4.23
+                      WadAuthor 1.30
+                      BSP 3.0
+Bugs                : Oh come on
+Inspiration         : "Dawn Of The Dead" by Jan Van der Veken
+                      The other Darkening episode 2 maps
+                      DOOM episode 1: "Knee-Deep In The Dead"
+                      Quake 2
+                      Half-Life
+                      Telepathic contacts with various extra terrestrials
+                      ...And the music of the following artists/bands/whatever:
+                      Richard D. James (Aphex Twin, Polygon Window)
+                      Krister Linder (Yeti), Future Sound Of London, Björk 
+                      Gudmundsðottír, Autechre, Henrik B (I once listened to his 
+                      track "Älta" over 50 times in a row while working on this 
+                      level... perverse, aint it? :)
+Authors comments    : Biggest map I've ever done, about 600k in size.
+		      This is a quite a hard map, beware. I'd love to see some of you
+                      demo freaks try to do really fast 100/100 UV runs in this one!
+Also thanks to      : Eric James "Ricrob" Robert - Thanks a million times 
+                      to him for troubleshooting and helping when my editors 
+                      ate the map.
+                      Matt "Mattrim"/"_Hello98" Dixon for saving this map 
+                      from certain damnation when I wrecked it yet again.
+                      Both these guys rule.
+
+
+
+[4.2 Deathmatch levels]
+
+map13
+Level name          : outpost mortem
+Author(s)           : Ola Björling
+Build time          : 40 hours
+editor(s) used      : EdMap 1.31
+                      EdMap 1.40
+                      BSP 3.0
+Bugs                : some slimetrails
+Inspiration         : Sten Uusvalis Quake 2 DM maps
+Authors comments    : Probably my best map ever.
+
+
+map14
+Level name          : Mortal Mayhem
+Author(s)           : Derek "Afterglow" Mac Donald
+Build time          : 8 hours give or take a few weeks ;)
+editor(s) used      : DCK 3.62, Zennode 0.98a
+Bugs                : Wee little HOM in the plasma area. Play with Boom. :)
+Inspiration         : Quake E1M2 influence around the plasma. Quake causes the HOM! :P
+Authors comments    : Dandy flat 2 player deathmatch map, includes all weapons except
+                      chainsaw (all those people that use it)
+                      Thanks to mewse for the map name, that whore.
+
+
+map15
+Level name          : Broken Circuit
+Author(s)           : Adam Windsor
+Build time          : not much
+editor(s) used      : DETH, BSP
+Bugs                : ...
+Inspiration:        : too much to do in too little time ...
+Authors comments    : This map is designed with Skill 5 Old Deathmatch in
+                      mind.
+
+
+map16
+Level name          : deva station (yeah yeah yeah there is a map called
+                      deva station in Q3A as well, but I did this one well 
+                      over a year before that damn game was released. HA!)
+Author(s)           : Ola Björling
+Build time          : 50 hours
+editor(s) used      : EdMap 1.40
+		      BSP 3.0
+Bugs                : None
+Inspiration         : Jans/Anthonys DM map "An Eye For An Eye" (map18)
+Authors comments    : Originally made to demonstrate texture usage for the 
+                      rest of the team, but turned out good enough to be in.
+
+
+map17
+Level name          : Magic Roundabout
+Author              : Richard Wiles
+Build time          : ??
+editor(s) used      : DoomCAD 6.1, bsp2.3x (nodes)
+Bugs                : sod off...
+Inspiration:        : 
+Authors comments    : My first true DM map.  I hope it plays ok?
+
+
+
+map18
+Level name          : An Eye For An Eye
+Author(s)           : Jan Van der Veken, Anthony Soto
+Build time          : ?? hours
+editor(s) used      : WinDEU 5.24
+Bugs                : We tried to fit some in but there was no room.
+Inspiration         : 
+Authors comments    : Level by Jan, extra connectivity by Anthony.
+
+
+map19
+Level name          : Tight Fight
+Author(s)           : Jan Van der Veken
+Build time          : ?? hours
+editor(s) used      : WinDEU 5.24
+Bugs                : 
+Inspiration         : 
+Authors comments    :
+
+
+map20
+Level name          : Annihilator
+Author(s)           : Lee Szymanski
+Build time          : 8 hours total plus learning tools  
+editor(s) used      : Windeu, Wadauthor, BSP
+Bugs                : Nope 
+Inspiration         : Hours of doom/quake DM play
+Authors comments    : The level was designed for fast 3/4 player gaming. Id like 
+                      to thank Derek for the superb texturing work on this map.
+
+map21
+Level name          : rest in pieces
+Author(s)           : Ola Björling & Anthony Soto
+Build time          : 40 hours
+editor(s) used      : EdMap 1.40
+		      BSP 3.0
+Bugs                : Bugs, schmugs.
+Inspiration         : Unknown
+Authors comments:     Map by Ola, HOM removal and fine tuning
+                      by Anthony.
+
+
+map22
+Level name          : The Edge
+Author(s)           : Jan Van der Veken
+Build time          : xx hours
+editor(s) used      : WinDEU 5.24
+Bugs                : None, as far as you know.
+Inspiration:        : See below.
+Authors comments    : This is a partial remake of the Quake 2 DM map
+                      "The Edge".
+
+
+map23
+Level name          : banger hangar
+Author(s)           : Ola Björling & Derek MacDonald
+Build time          : 30 hours
+editor(s) used      : EdMap 1.31
+                      EdMap 1.40
+                      BSP 3.0
+Bugs                : Is carrot a bug? I think there's a carrot in there.
+Inspiration         : Unknown
+Authors comments    : Basic structures and gameflow design by Ola, detailing 
+                      and texturing by Derek.
+
+
+
+map24
+Level name          : Interrogation Central II
+Author(s)           : Jan Van der Veken & Derek MacDonald
+Build time          : xx hours
+editor(s) used      : WinDEU 5.24
+                      DCK
+Bugs                : 
+Inspiration:        : 
+Authors comments    : Modified by Derek Mac Donald.
+
+
+
+--------
+[5] BUGS
+--------
+
+* The sky isn't working with MLOOK yet. You're not supposed to look up and 
+  down in DOOM anyway.
+
+* map09 overrides the savegame buffer, so don't try to save until you're well
+  into that map unless you use a source port. Sorry...
+
+
+
+----------------------
+[6] AUTHOR INFORMATION
+----------------------
+
+
+[6.1 Level authors]
+
+Author              : Nick Baker
+Aliases             : NiGHTMARE
+Email Address(es)   : nick@frad.org
+Webpage             : http://haunt.8m.com/doom
+Other files by me   : I've contributed to the Darkening E1, GothicDM
+                      2 and SlaughterDM, and have levels in 		
+                      numerous upcoming projects, including 
+                      Execution, Hellstorm, Mordeth E2, Twice 
+                      Risen and Ultimate Invasion.
+                      I am also the moderator of the Surge series,
+                      Paradox and Wrath.
+Thanks/Greetings to : Derek and Anthony for spotting all those VPOs and HOMs 
+                      everywhere; Ola for some killer textures; anyone else who 
+                      wants thanks or wants to be greeted :)
+Comments            : I _hate_ being limited to doom2.exe ;)
+
+
+Author              : Ola Björling
+Aliases             : o-tech, citrus
+Email Address(es)   : ola@techno.org
+Webpage             : http://doomnation.com/ola
+                      http://ola.nool.nu
+Other files by me   : Tantrum
+                      Tantrum 2
+                      Venom
+                      Overload DM (textures and 7 or so maps)
+                      Talosian Incident (map08)
+                      Gothic DM 2 (some ugly textures)
+                      I also did some textures for Mordeth episode 3.
+Thanks/Greetings to : * The rest of the team for their efforts, especially
+                        Derek for saving me when my inspiration was running
+                        low. 
+                      * I'd also like to thank Eric James "ricrob" Roberts
+                        and Matthew Dixon for saving me when I managed to fuck
+                        up some levels. 
+                      * My employer for letting me use office hardware for
+                        this, and for their encouragement (!) in my efforts.
+                      * The music of Bjork Gudmundsdottir, Autechre, Aphex 
+                        Twin, Phlegm, Psychonauts and Yeti has helped me
+                        tremendously.
+                      * Anyone that I might have forgotten. If you feel you've
+                        been left out, drop me a line and I'll have you in the
+                        next version, if there will ever be one.
+                      * Julia.
+Comments            : It's over. It's finally over.
+
+
+Author              :  Ben Davies
+Aliases             : 
+Email Address(es)   :  sendmoneytoben@excite.com or
+                       s3095027@student.anu.edu.au
+Webpage             :  none yet
+Other files by me   :  INNRGATE (on cdrom.com)
+Thanks/Greetings to :  Andre Majorel for level testing and a load of comments.
+                       Anthony Soto for level testing, thing placement and some 
+                       edits on the level. More importantly, for pushing me to 
+                       finally finish the level.
+                       The Darkening Team for letting me in :-)
+Comments            :  I'm glad thats over! :-) 
+
+
+Author              : Derek Mac Donald
+Aliases             : Afterglow, Afterglew, `g, derekmd
+Email Address(es)   : derekmd@frad.org, derekmd@hotmail.com (backup)
+Webpage             : http://doomnation.com/afterglow/
+Other files by me   : - Jägermörder, Boom SP series (1 map released thus far)
+                        * levels/doom2/Ports/d-f/dmdjm01.zip
+                      - SacrificeDM series (6 maps released)
+                        * levels/doom2/deathmatch/Ports/d-f/dmdsac0*.zip with
+                                                             * being 1 thru 6
+                      - Gothic99 (contributed 1 map)
+                        * levels/doom2/deathmatch/Ports/g-i/gothic99.zip
+                      - SlaughterDM (contributed in a few maps, 1 solo one)
+                        * levels/doom2/deathmatch/Ports/s-u/sldm.zip
+                      - SurgeDM2 (contributed 5 maps)
+                        * levels/doom2/Ports/s-u/surge2.zip
+                      - Co-author of The Seventh 07 with Prower
+                        * levels/doom2/Ports/p-r/prwrsv07.zip
+                      - Deadly Simplified, Doom2 map07 modification
+                        * Available on my web site
+                      - Converted many textures for use with Doom II
+                        * Available on my web site
+Thanks/Greetings to : Mattrim Dixon for harassing me on ICQ, Martin Friberg
+                      for not doing what he's told, mystican for being
+                      moderator of #doomroom so I have to say hello or he'll
+                      ban me... & Ricrob for his praise keeps me alive. ;)
+                      mewse for giving good hea-- lthy mapping tips.
+Comments            : Ola needed help to get some things done so I came
+                      aboard. Simple as that. :) One more note... doom2.exe
+                      is the devil! The devil I tell ya! (just like foozball)
+
+
+Author              : Anthony Soto
+Aliases             : Swedish Fish
+Email Address(es)   : neworderdatabase@hotmail.com
+Webpage             : http://thefish.8m.com
+Other files by me   : Early DM work in TWC* series (cdrom.com\..\themes\TWC)
+                      Dchronix.zip (1 Level SP map)
+                      Coauthor of map2 in Gothic2.zip
+                      Next Project: mapping for Mordeth Episode 3
+Thanks/Greetings to : Anthony Czerwonka "Adelusion" for putting faith in
+                      my map skills before I had even proven myself. The
+                      experience and exposure I recieved were invaluable.
+                      Thanks to Jan for letting me be part of this very
+                      talented team and Ola for keeping this project going.
+                      Thanks to Ben for getting me interested in this
+                      project by a screenshot of his map and NO thanks for
+                      stealing 150+ precious hours of my life. J/k. :-)
+                      My worthy playtesters: Doug Merrill, Ismail Saeed
+Comments            : DOOM dead? Pfft. If you said DOOM was dead yesterday,
+     		      look what you would have missed today!
+
+
+Author              : Lee Szymanski
+Aliases             : Fen boi
+Email Address(es)   : lee.szymanski@cambridge.simoco.com
+Webpage             : N/A
+Other files by me   : Nope
+Thanks/Greetings to : iD for everything. The Darkening Team, Kurt Kesler, 
+                      Ace team and the Covert ops guys for the excellent maps. 
+                      My ever increasing family and Simoco for keeping me 
+                      solvent :) Randy Heit and Kokak for zdoom goodness.
+Comments            : I hope everyone enjoys Darkening 2, I welcome any 
+                      comments on the map.
+
+
+Author              : Richard Wiles
+Aliases             : None that I would own up to.
+Email Address(es)   : wilesr@totalise.co.uk
+Webpage             : none
+Other files by me   : The 'Dickie' Series (10 DooM2 maps)
+                      Nessy (2 maps for DooM2 Plutonia)
+                      Spooky01-05 (DooM1 individual maps)
+                      "The Crusades" - a complete e4 replacement for Ultimate DooM
+Thanks/Greetings to : My wife Ness for tolerating my doom 'habit'.			  
+                      idsoftware for DooM - best game ever!
+                      All you wacky DooMers out there who never quite grew up either...
+                      ...and, of course, the rest of the Darkening Team for their
+                      hard work in putting this wad together.  
+Comments            : 
+
+
+Author Name         : Adam Windsor
+Nickname(s)         : Capellan
+Email address(es)   : s339890@student.uq.edu.au
+Homepage            : eh, sorta ... http://student.uq.edu.au/~s339890
+Other files by me   : Demonfear
+                      Contributor:  Memento Mori 2, STRAIN, Requiem,
+                      Darkening Ep1
+Thanks/Greetings    : everyone who submitted a level for the Darkening E2,
+                      whether it was included or not
+
+
+
+
+[6.2 Music authors]
+
+Author Name         : S. Woodman 
+Nickname(s)         : Metabolist
+E-Mail address(es)  : sewoodman@talk21.com
+Homepage            : http://www.angelfire.com/indie/metabolist/
+Other files by me   : doom/s-u/toj_e1m1.zip <--- good
+                      doom2/ports/s-u/toj_15b.zip <--- not good
+                      Music in Twice Risen (not released)
+Misc Author Info    : 24-year old Englishman with passions for DOOM editing, NIN,
+                      MIDIs, Red Dwarf and going totally psychotic for no reason.
+Thanks/Greetings    : TiC, Adelusion, Bjorn Hermans, Nostromo, Matt Fell, Jeremy 
+                      Doyle, Mark Klem, David Shaw, Kniggit, Adam Windsor, Ty 
+                      Halderman etc.
+
+
+Author Name         : Kniggit
+Nickname(s)         : Kniggit
+Email address(es)   : kniggit@planetquake.com
+Homepage            : http://www.doomworld.com/kniggit/
+Other files by me   : Music in:
+                      SlaughterDM
+                      Mordeth E2
+Thanks/Greetings    : 
+
+
+
+
+[6.3 Testers]
+* Everyone in the team
+* Matthew Dixon
+* Tom Robinson
+* Andy Kempling
+* Doug Merrill
+* Ismail Saeed
+
+...and any poors sods we forgot.
+
+
+
+
+---------------
+[7] LEGAL STUFF
+---------------
+
+
+[7.1 Textures]
+
+Please do NOT extract textures from darken2.wad and do NOT create levels that
+are depending on darken2.wad to run. If you want to create a level that uses
+the textures from The Darkening Episode 2, use the standalone texture WAD. See
+http://www.doomworld.com/darkening for more information.
+
+
+
+[7.2 Levels]
+
+Authors may NOT use these levels as a base to build additional levels.   
+
+You may distribute this WAD, provided you include this file, with no 
+modifications. You may distribute this file in any electronic format (BBS, 
+Diskette, CD, etc) as long as you include this textfile intact.
+

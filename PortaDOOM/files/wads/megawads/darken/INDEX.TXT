@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Contents
+----------------------------------------------------------------------
+resource.wad : contains all resources needed to run the levels, ie. 
+               textures, flats, music and graphics.
+darken.wad   : contains 11 single player levels.
+darkdm.wad   : contains 11 deathmatch levels.
+dark.deh     : optional dehacked patch with level names and 
+               intermission text.
+darken.bat   : batch file to run the single player episode.
+darkdm.bat   : batch file to run the deathmatch episode in single 
+               player modus (to check it out).
+exepatch.bat : installs the optional dehacked patch.
+darken.txt   : text file with some information about this project.
+index.txt    : this file
+dehacked.exe : Dehacked. Program needed to install patch.
+----------------------------------------------------------------------
