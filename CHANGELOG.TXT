@@ -3,6 +3,7 @@
 - = Removal
 
 23-10-17:
+* Updated GZDoom to 3.2.1
 * Updated Skulldash to Expanded Edition
 
 12-10-17:
