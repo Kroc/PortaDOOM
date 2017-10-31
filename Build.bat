@@ -99,6 +99,8 @@ ECHO     [B]  Cacowards: 2016
 ECHO     [C]  Cacowards: 2015
 ECHO     [D]  Cacowards: 5 Years of Doom
 ECHO:
+ECHO     [P]  PSX DOOM TC
+ECHO:
 
 SET "P="
 SET /P "$=Enter choice: "
@@ -106,6 +108,7 @@ IF /I "%$%" == "A" GOTO :do_release_all
 IF /I "%$%" == "B" GOTO :do_release_cacowards2016
 IF /I "%$%" == "C" GOTO :do_release_cacowards2015
 IF /I "%$%" == "D" GOTO :do_release_5yearsofdoom
+IF /I "%$%" == "P" GOTO :do_release_psxdoomtc
 
 GOTO :menu
 
@@ -117,7 +120,14 @@ CALL :select_compression
 
 CALL :do_5yearsofdoom
 CALL :do_cacowards2015
-call :do_cacowards2016
+CALL :do_cacowards2016
+CALL :do_psxdoomtc
+
+ECHO:
+ECHO Complete.
+ECHO:
+PAUSE
+EXIT /B
 
 ECHO * Make PortaDOOM ...
 REM --------------------------------------------------------------------------------------------------------------------
@@ -228,6 +238,42 @@ REM # 7ZIP
 	-xr@..\bin\ignore.lst ^
 	-i@..\bin\include_cacowards5years.lst ^
 	-- ..\build\PortaDOOM_5YearsOfDoom.7z
+IF ERRORLEVEL 1 PAUSE
+
+REM # restore the original home page
+DEL "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+POPD
+GOTO:EOF
+
+
+:do_release_psxdoomtc
+REM ====================================================================================================================
+TITLE Creating PortaDOOM release...
+CALL :select_compression
+CALL :do_psxdoomtc
+PAUSE & GOTO:EOF
+
+:do_psxdoomtc
+REM --------------------------------------------------------------------------------------------------------------------
+ECHO * Make PortaDOOM_PSXDOOMTC ...
+DEL build\PortaDOOM_PSXDOOMTC.7z	>NUL 2>&1
+
+REM # the archive will be built without a base folder
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+REN  "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM PSX DOOM TC.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 PAUSE & EXIT
+
+REM # 7ZIP
+"..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_LVL% -stl ^
+	-xr@..\bin\ignore.lst ^
+	-i@..\bin\include_psxdoomtc.lst ^
+	-- ..\build\PortaDOOM_PSXDOOMTC.7z
 IF ERRORLEVEL 1 PAUSE
 
 REM # restore the original home page

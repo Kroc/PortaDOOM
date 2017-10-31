@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+29-10-17:
++ Added a PSX DOOM TC package
+
 23-10-17:
 * Updated GZDoom to 3.2.1
 * Updated Skulldash to Expanded Edition

@@ -1,0 +1,17 @@
+PortaDOOM.exe
+
+files\wads\conversions\freedoom\
+files\wads\SHAREWARE\DOOM1.WAD
+
+files\play.bat
+files\doom.bat
+
+files\tools\**
+
+files\config\default.gzdoom.ini
+
+files\ports\gzdoom-32_*\
+
+pages\Home #??.dosmag
+pages\Playstation DOOM #??.dosmag
+files\wads\conversions\PSX\
