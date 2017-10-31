@@ -19,7 +19,9 @@ PortaDOOM.exe
 
 # do not include DOOM files by default (very, very large)
 **.wad
+**.iwad
 **.pk3
+**.ipk3
 **.pk7
 **.n64
 **.v64
