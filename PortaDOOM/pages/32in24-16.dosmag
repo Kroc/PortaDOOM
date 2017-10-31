@@ -1,12 +1,12 @@
 $NAV=Multiplayer
-$KEY:T=SHELL:wads\multiplayer\32in24-16\32in24-16.txt
+$KEY:T=SHELL:wads\multiplayer\32in24-16\32in24-16_v1.txt
 $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/91306-32in24-16-doot-ctf/
 
 :32in24-16: DOOT CTF                                * 2016 Cacoward winner! *
 :===============================================================================
 								*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>11>23?  Author : _The 32in24 Team_
+:Released : *2017>10>24	  Author : _The 32in24 Team_
 :Levels   : *34			   Modes : *Capture-The-Flag only
 :Requires : *zandronum	Includes : *?
 :-------------------------------------------------------------------------------
