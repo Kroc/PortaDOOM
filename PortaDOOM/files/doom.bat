@@ -810,7 +810,7 @@ IF "%IWAD_EXT%" == "" (
 	REM # ... and ".IWAD"
 	IF EXIST "%DIR_WADS%\%IWAD%.IWAD" SET "IWAD=%IWAD%.IWAD"
 	REM # all ZDoom-based engines support ".pk3"
-	IF EXIST "%DIR_WADS%\%IWAD%.pk3" SET "IWAD=%IWAD%.pk3"
+	IF EXIST "%DIR_WADS%\%IWAD%.pk3"  SET "IWAD=%IWAD%.pk3"
 	REM # lastly, the most common is ".WAD"
 	SET "IWAD=%IWAD%.WAD"
 	REM # if the IWAD extension was omitted, and it wasn't found in the "wads" folder,
@@ -1423,6 +1423,7 @@ REM ============================================================================
 REM # WARP & SKILL:
 REM ====================================================================================================================
 :warp
+REM # if no warp has been given, skip ahead
 IF "%WARP%" == "" GOTO :skill
 
 REM # is this a DOOM.WAD "e.m" format map number?
@@ -1432,9 +1433,91 @@ REM # add to the command line
 ECHO         -warp : %WARP%
 SET PARAMS=%PARAMS% -warp %WARP%
 
+REM # if warping, and a skill-level is already given we don't need to ask the user
+IF NOT "%SKILL%" == "" GOTO :skill
+
+REM # TODO: provide descriptions of the effects skill levels have?
+REM #       see: https://doomwiki.org/wiki/Skill_level
+
+ECHO:
+ECHO -------------------------------------------------------------------------------
+ECHO:
+ECHO          CHOOSE YOUR SKILL LEVEL:
+ECHO:
+REM # DOOM 64 EX has different skill names:
+IF "%GAME%" =="DOOM64" (
+	ECHO          [1]  Be Gentle!
+	ECHO          [2]  Bring It On!
+	ECHO          [3]  I Own Doom!
+	ECHO          [4]  Watch Me Die!
+	
+REM # Or Heretic:
+REM # TODO: Hexen skill level names are based on class
+) ELSE IF "%GAME%" == "HERETIC" (
+	ECHO          [1] Thou needeth a wet-nurse
+	ECHO          [2] Yellowbellies-r-us
+	ECHO          [3] Bringest them oneth
+	ECHO          [4] Thou art a smite-meister
+	ECHO          [5] Black plague possesses thee
+
+REM # Or Strife:
+) ELSE IF "%GAME%" == "STRIFE" (
+	ECHO          [1] Training
+	ECHO          [2] Rookie
+	ECHO          [3] Veteran
+	ECHO          [4] Elite
+	ECHO          [5] Bloodbath
+
+REM # Lastly, DOOM:
+) ELSE (
+	ECHO          [1]  I'm Too Young To Die
+	ECHO          [2]  Hey, Not Too Rough
+	ECHO          [3]  Hurt Me Plenty
+	ECHO          [4]  Ultra-Violence
+	ECHO          [5]  Nightmare!
+)
+ECHO:
+ECHO -------------------------------------------------------------------------------
+ECHO:
+
+REM # split the Windows version string and look for the number
+FOR /F "tokens=4-5 delims=. " %%V IN ('VER') DO SET WINVER=%%V.%%W
+REM # CHOICE is not available in Windows XP, detect this and use `SET /P` instead
+IF "%WINVER%" == "5.1" GOTO :skill_xp
+
+:skill_choice
+	REM # Windows Vista and above include CHOICE again
+	CHOICE /C 123450 >NUL
+	REM # secret "disable all monsters" mode; can prevent levels
+	REM # from being completable and doesn't work on all engines!
+	IF %ERRORLEVEL% EQU 6 SET SKILL=0
+	REM # standard skill levels
+	IF %ERRORLEVEL% EQU 5 SET SKILL=5
+	IF %ERRORLEVEL% EQU 4 SET SKILL=4
+	IF %ERRORLEVEL% EQU 3 SET SKILL=3
+	IF %ERRORLEVEL% EQU 2 SET SKILL=2
+	IF %ERRORLEVEL% EQU 1 SET SKILL=1
+	GOTO :skill
+
+:skill_xp
+	REM # assume a default in case the user types nonsense
+	SET SKILL=3
+	SET /P "CHOICE=? "
+	REM # secret "disable all monsters" mode; can prevent levels
+	REM # from being completable and doesn't work on all engines!
+	IF "%CHOICE%" == "0" SET SKILL=0
+	REM # standard skill levels
+	IF "%CHOICE%" == "5" SET SKILL=5
+	IF "%CHOICE%" == "4" SET SKILL=4
+	IF "%CHOICE%" == "3" SET SKILL=3
+	IF "%CHOICE%" == "2" SET SKILL=2
+	IF "%CHOICE%" == "1" SET SKILL=1
+
 :skill
+REM # was a skill-level given?
 IF "%SKILL%" == "" GOTO :exec
-ECHO        -skill : %SKILL% 
+REM # set the skill-level
+ECHO        -skill : %SKILL%
 SET PARAMS=%PARAMS% -skill %SKILL%
 
 
@@ -1540,7 +1623,7 @@ ECHO    Get Psyched!
 ECHO:
 
 REM # if you need to see what the final command will be:
-REM ECHO  "doom.bat" /D "%SAVES_WAD%" %FIX_PATH%\%ENGINE% %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
+REM ECHO  "doom.bat" /D "%SAVES_WAD%" "%FIX_PATH%\%ENGINE%" %SCREENRES% %FULLSCREEN% %PARAMS% & PAUSE
 
 REM # outputting to console?
 REM # (only has an effect on Z-based engines)
@@ -1677,7 +1760,7 @@ IF EXIST "%DIR_WADS%\%FILE%" (
 	EXIT /B 0
 )
 
-REM # [4] check the engine's directory (if we've got that far yet)
+REM # [6] check the engine's directory (if we've got that far yet)
 IF NOT "%ENGINE_DIR%" == "" (
 	IF EXIST "%ENGINE_DIR%\%FILE%" (
 		SET "FILE=%ENGINE_DIR%\%FILE%"

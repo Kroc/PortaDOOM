@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+01-11-17:
+* Moved asking user for skill-level from play.bat to doom.bat since doom.bat
+  has better knowledge of what game / engine is being used
+
 29-10-17:
 + Added a PSX DOOM TC package
 

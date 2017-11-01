@@ -352,102 +352,11 @@ REM ============================================================================
 :warp
 REM --------------------------------------------------------------------------------------------------------------------
 REM # if /WARP is specified, pass it on as is, doom.bat will handle the specifics
-IF NOT "%WARP%" == "" (
-	SET PARAMS=%PARAMS% /WARP %WARP%
-)
+IF NOT "%WARP%" == "" SET PARAMS=%PARAMS% /WARP %WARP%
 
 :skill
 REM # if skill is specified, it can be set without asking user
-IF NOT "%SKILL%" == "" (
-	SET PARAMS=%PARAMS% /SKILL %SKILL%
-	GOTO :exe
-)
-
-REM # if /WARP is specified, but not a skill-level we ask the user for it
-IF "%WARP%" == "" GOTO :exe
-
-REM # TODO: provide descriptions of the effects skill levels have;
-REM #       see: https://doomwiki.org/wiki/Skill_level
-
-ECHO:
-ECHO -------------------------------------------------------------------------------
-ECHO:
-ECHO          CHOOSE YOUR SKILL LEVEL:
-ECHO:
-REM # DOOM 64 EX has different skill names:
-IF "%ENGINE%" =="doom64ex" (
-	ECHO          [1]  Be Gentle!
-	ECHO          [2]  Bring It On!
-	ECHO          [3]  I Own Doom!
-	ECHO          [4]  Watch Me Die!
-	
-REM # Or Heretic:
-REM # TODO: Also recognise HERETIC1.WAD (shareware)
-REM # TODO: Hexen skill level names are based on class
-) ELSE IF /I "%IWAD%" == "HERETIC.WAD" (
-	ECHO          [1] Thou needeth a wet-nurse
-	ECHO          [2] Yellowbellies-r-us
-	ECHO          [3] Bringest them oneth
-	ECHO          [4] Thou art a smite-meister
-	ECHO          [5] Black plague possesses thee
-
-REM # Or Strife:
-REM # TODO: Also recognise STRIFE0.WAD (shareware)
-) ELSE IF /I "%IWAD%" == "STRIFE1.WAD" (
-	ECHO          [1] Training
-	ECHO          [2] Rookie
-	ECHO          [3] Veteran
-	ECHO          [4] Elite
-	ECHO          [5] Bloodbath
-
-REM # Lastly, DOOM:
-) ELSE (
-	ECHO          [1]  I'm Too Young To Die
-	ECHO          [2]  Hey, Not Too Rough
-	ECHO          [3]  Hurt Me Plenty
-	ECHO          [4]  Ultra-Violence
-	ECHO          [5]  Nightmare!
-)
-ECHO:
-ECHO -------------------------------------------------------------------------------
-
-REM # split the Windows version string and look for the number
-FOR /F "tokens=4-5 delims=. " %%V IN ('VER') DO SET WINVER=%%V.%%W
-REM # CHOICE is not available in Windows XP, detect this and use `SET /P` instead
-IF "%WINVER%" == "5.1" GOTO :skill_xp
-
-:skill_choice
-	REM # Windows Vista and above include CHOICE again
-	CHOICE /C 123450 >NUL
-	REM # secret "disable all monsters" mode; can prevent levels
-	REM # from being completable and doesn't work on all engines!
-	IF %ERRORLEVEL% EQU 6 SET SKILL=0
-	REM # standard skill levels
-	IF %ERRORLEVEL% EQU 5 SET SKILL=5
-	IF %ERRORLEVEL% EQU 4 SET SKILL=4
-	IF %ERRORLEVEL% EQU 3 SET SKILL=3
-	IF %ERRORLEVEL% EQU 2 SET SKILL=2
-	IF %ERRORLEVEL% EQU 1 SET SKILL=1
-	GOTO :skill_set
-
-:skill_xp
-	REM # assume a default in case the user types nonsense
-	SET SKILL=3
-	SET /P "CHOICE=? "
-	REM # secret "disable all monsters" mode; can prevent levels
-	REM # from being completable and doesn't work on all engines!
-	IF "%CHOICE%" == "0" SET SKILL=0
-	REM # standard skill levels
-	IF "%CHOICE%" == "5" SET SKILL=5
-	IF "%CHOICE%" == "4" SET SKILL=4
-	IF "%CHOICE%" == "3" SET SKILL=3
-	IF "%CHOICE%" == "2" SET SKILL=2
-	IF "%CHOICE%" == "1" SET SKILL=1
-
-:skill_set
-REM # add the skill to the command line
-REM # (this will override any `-skill` parameter previously provided)
-SET PARAMS=%PARAMS% /SKILL %SKILL%
+IF NOT "%SKILL%" == "" SET PARAMS=%PARAMS% /SKILL %SKILL%
 
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
