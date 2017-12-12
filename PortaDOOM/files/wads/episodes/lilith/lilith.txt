@@ -1,0 +1,95 @@
+===========================================================================
+Advanced engine needed  : ZDoom 2.8.1+ or ZDoom LE (will NOT work with
+                          QZDoom/GZDoom/Zandronum)
+Primary purpose         : Single play
+===========================================================================
+Title                   : lilith.pk3
+Filename                : lilith.pk3
+Author                  : anotak
+Email Address           : [redacted]
+Other Files By Author   : akuma.wad, aspdmps.wad, solid.pke
+Misc. Author Info       : 7F2384772B6825127F2B84BB77EEA1D who am i
+
+Description             : i like to keep my doom 2 installation floppies
+                          attached to my computer with magnets so i don't
+                          lose them
+                          
+                          some can experience seizures when exposed
+                          to flashing lights or other visual stimuli.
+                          even if you've never been diagnosed,
+                          please be stop playing this wad if you encounter
+                          disorientation, lightheadedness, altered vision,
+                          involuntary twitching/jerking movements,
+                          or momentary loss of awareness/consciousness.
+                          i tried very hard to avoid
+                          anything that would cause physical discomfort
+                          but everyone is different
+                          
+                          this wad does not work with qz/gz/zandronum
+                          as it relies on the old zdoom software renderer
+                          and other quirks specific to zdoom (or zdoomLE).
+                          you need 2.8.1 or newer
+
+Additional Credits to   : testing/feedback from Alfonzo, Altazimuth,
+                          Belthegor, Breezeep, Dew, Esselfortium,
+                          Generic, Gobolt, Jazz, Luker, Marnetmar,
+                          Mauve, Mizuki, Mountainmanjed, RottKing,
+                          Saotome Kaneda, Spadger, StanHansen, Tulpa,
+                          Xaser
+                          
+                          Additional RC1 bug reports & feedback from
+                          Albertoni, An_mutt, Breezeep, everennui,
+                          Gez, Jimmy, leodoom85, Ryath
+                          
+                          MAP01 D_RUNNN music by Xaser
+===========================================================================
+* What is included *
+
+New levels              : 7 (8 if you count the "intro")
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : mild DECORATE
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP08
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes+
+
+
+* Construction *
+
+Base                    : New + heavily altered doom2.wad assets
+Build Time              : Months
+Editor(s) used          : Audacity, Doom Builder 2, FL Studio, Hexplorer,
+                          Notepad++, SLADE, Visual Studio, XWE
+Known Bugs              : ALL OF THEM
+May Not Run With        : QZDoom/GZDoom/Zandronum
+Tested With             : ZDoom 2.8.1
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

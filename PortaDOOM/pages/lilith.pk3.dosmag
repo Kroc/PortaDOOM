@@ -1,0 +1,39 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\lilith\play.bat
+$KEY:T=SHELL:wads\episodes\lilith\lilith.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/lilith
+
+:lilith.pk3                                         * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>08>27	  Author : _anotak_
+:Levels   : *7			   Modes : *Single
+:Requires : *zdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+i like to keep my doom 2 installation floppies attached to my computer with magnets so i don't lose them
+
+some can experience seizures when exposed to flashing lights or other visual stimuli.
+even if you've never been diagnosed, please be stop playing this wad if you encounter disorientation, lightheadedness, altered vision, involuntary twitching/jerking movements, or momentary loss of awareness/consciousness.
+
+i tried very hard to avoid anything that would cause physical discomfort but everyone is different
+
+this wad does not work with qz/gz/zandronum as it relies on the old zdoom software renderer and other quirks specific to zdoom (or zdoomLE). you need 2.8.1 or newer
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New + heavily altered doom2.wad assets
+*Build Time				: Months
+*Editor(s) used			: Audacity, Doom Builder 2, FL Studio, Hexplorer, Notepad++, SLADE, Visual Studio, XWE
+*Known Bugs				: ALL OF THEM
+*May Not Run With		: QZDoom/GZDoom/Zandronum
+*Tested With			: ZDoom 2.8.1
+
+:Credits
+:-------------------------------------------------------------------------------
+testing/feedback from _Alfonzo_, _Altazimuth_, _Belthegor_, _Breezeep_, _Dew_, _Esselfortium_, _Generic_, _Gobolt_, _Jazz_, _Luker_, _Marnetmar_, _Mauve_, _Mizuki_, _Mountainmanjed_, _RottKing_, _Saotome Kaneda_, _Spadger_, _StanHansen_, _Tulpa_, _Xaser_
+
+Additional RC1 bug reports & feedback from _Albertoni_, _An_mutt_, _Breezeep_, _everennui_, _Gez_, _Jimmy_, _leodoom85_, _Ryath_
+
+MAP01 D_RUNNN music by _Xaser_
