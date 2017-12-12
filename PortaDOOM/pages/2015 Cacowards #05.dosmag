@@ -1,18 +1,18 @@
 $THEME=BLACK
 $TITLE=Top 10 pt.III
-$KEY:1=GOTO:Skulldash
-$KEY:2=URL:https://www.doomworld.com/forum/topic/69813-doom-the-golden-souls-even-more-definitive-edition-released/
+$KEY:3=GOTO:Skulldash
+$KEY:G=URL:https://www.doomworld.com/forum/topic/69813-doom-the-golden-souls-even-more-definitive-edition-released/
 
 ^C:2015 CACOWARDS :: TOP 10 pt.III
 
 :-------------------------------------------------------------------------------
 
-:[1] Skulldash - _Joshua "Dragonfly" O'Sullivan_
+:[3] Skulldash - _Joshua "Dragonfly" O'Sullivan_
 :===============================================================================
 
 I think that you could argue that Skulldash takes some pre-existing aspects of Doom's gameplay and takes them to one of their logical ends. id already included a timer and par times, of course, so having a level timer that kills the player once it expires is just the next step. You've also got all those little health and armor bonuses laying all over the place and contributing to your items percentage, so why not require players to pick them up in order to exit? Except, uh, they're floating coins called Skull tokens, and their bonuses vary by color. They could give you health, armor, or even more time on the clock. Throw it all together in the UAC base equivalent of Princess Peach's castle and you've got Skulldash.
 
-_O'Sullivan_'s level design excels in fast, fun, and disposable gameplay. The positioning of the tokens naturally draws you through the maps and suggests the routes you'll be taking as you zip around the place. It isn't quite as easy as that, though. While you only need 75% of the tokens to leave the levels, a number of them will be hemmed up in secrets or hard-to-reach places, and accessing the bonus maps (and, ultimately, the secret level) requires getting every token in the megawad. Skulldash's death timer and collectibles deliberately evoke a sort of Doom-meets-platforming environment that feels like the other side of the same coin that *[2] The Golden Souls* explored in 2014, but with a greater emphasis on action and speed over exploration.
+_O'Sullivan_'s level design excels in fast, fun, and disposable gameplay. The positioning of the tokens naturally draws you through the maps and suggests the routes you'll be taking as you zip around the place. It isn't quite as easy as that, though. While you only need 75% of the tokens to leave the levels, a number of them will be hemmed up in secrets or hard-to-reach places, and accessing the bonus maps (and, ultimately, the secret level) requires getting every token in the megawad. Skulldash's death timer and collectibles deliberately evoke a sort of Doom-meets-platforming environment that feels like the other side of the same coin that *[G] The Golden Souls* explored in 2014, but with a greater emphasis on action and speed over exploration.
 
 There's also a wide variety of environments and level gimmicks to experience as you make your way toward the final challenge, from low gravity to frozen time, slippery floors, rocket jumping, underwater submersibles, treetop villages, medieval castles, and even some boss maps. _Dragonfly_ does a great job at making his big bads feel less like overpowered bullet sponges and more integrated into the world in which you fight them, even if it's as simple as gradually opening the environment and introducing some backup monsters. The way he exploits the "Rage" rune in the battle against the gate keeper shows that he's well aware of how the different elements of a battle can interact, regardless of how straightforward the rest of Skulldash may seem.
 
@@ -21,4 +21,4 @@ And that's part of what makes this release such a splash. _O'Sullivan_ worked th
 ^R- _kmxexii_
 
 :-------------------------------------------------------------------------------
-*[1] View WAD Page
+*[3] View WAD Page

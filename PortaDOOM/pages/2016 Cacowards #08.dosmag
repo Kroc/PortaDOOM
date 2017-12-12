@@ -1,12 +1,12 @@
 $THEME=BLACK
-$TITLE=Top 10 pt.VI
-$KEY:1=GOTO:Elf Gets Pissed
+$TITLE=Top 10 pt.V
+$KEY:5=GOTO:Elf Gets Pissed
 
-^C:2016 CACOWARDS :: TOP 10 pt.VI
+^C:2016 CACOWARDS :: TOP 10 pt.V
 
 :-------------------------------------------------------------------------------
 
-:[1] Elf Gets Pissed - _RottKing_
+:[5] Elf Gets Pissed - _RottKing_
 :===============================================================================
 
 Elf Gets Pissed Like its sister peculiars HeXen and Strife, Heretic is a game that survives mostly by the grace of its cooler predecessor. To some it's not even a game but a total conversion that has staked its claim to relevance in the grounds of history, an understandable sentiment given the backdrop of the 2010s modding rollout, though also ignorant: Heretic has been working up some depth over the last decade or so. It has drafted slowly from the community expertise names like _Lutz_, _TheCupboard_, _Worst-vd-Plas_, _kristus_, and now _Rottking_, who have all decided to pay more than just a passing interest to the prospect. Piece by piece, Heretic is starting to reveal more of what it could be, if were allowed to grow. Upon the slopes of Doom? Yes - but with life of its own!
@@ -18,4 +18,4 @@ Elf Gets Pissed is one of the few earnest attempts to let loose with the game an
 ^R- _Alfonzo_
 
 :-------------------------------------------------------------------------------
-*[1] View WAD Page
+*[5] View WAD Page

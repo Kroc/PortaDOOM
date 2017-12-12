@@ -1,12 +1,12 @@
 $THEME=BLACK
-$TITLE=Top 10 pt.VII
-$KEY:1=GOTO:Comatose
+$TITLE=Top 10 pt.VI
+$KEY:6=GOTO:Comatose
 
-^C:2016 CACOWARDS :: TOP 10 pt.VII
+^C:2016 CACOWARDS :: TOP 10 pt.VI
 
 :-------------------------------------------------------------------------------
 
-:[1] Comatose - _Lainos_
+:[6] Comatose - _Lainos_
 :===============================================================================
 
 In a sense, Comatose may be the weirdest, least Doom-like project on the list this year. Sure, it's got standard Doom weapons and monsters, it targets vanilla limit-removing ports, so all of the classic game mechanisms remain the same, but it's also categorically different from most of the community production in core conceptual and a few more tangible aspects as well.
@@ -20,4 +20,4 @@ The map builds a small world, heavily inspired by Silent Hill, and it's actually
 ^R- _dew_
 
 :-------------------------------------------------------------------------------
-*[1] View WAD Page
+*[6] View WAD Page

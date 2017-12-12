@@ -1,12 +1,12 @@
 $THEME=BLACK
-$TITLE=Top 10 pt.VIII
-$KEY:1=GOTO:Miasma
+$TITLE=Top 10 pt.VII
+$KEY:7=GOTO:Miasma
 
-^C:2016 CACOWARDS :: TOP 10 pt.VIII
+^C:2016 CACOWARDS :: TOP 10 pt.VII
 
 :-------------------------------------------------------------------------------
 
-:[1] Miasma - _tourniquet_
+:[7] Miasma - _tourniquet_
 :===============================================================================
 
 	*"It's like _Ribbiks_ got drunk and banged Jade Earth"
@@ -21,4 +21,4 @@ That _tourniquet_ has stepped up and delivered something so brilliant after just
 ^R- _Alfonzo_
 
 :-------------------------------------------------------------------------------
-*[1] View WAD Page
+*[7] View WAD Page
