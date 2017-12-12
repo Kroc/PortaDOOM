@@ -1,0 +1,33 @@
+PortaDOOM.exe
+
+files\wads\conversions\freedoom\
+files\wads\SHAREWARE\DOOM1.WAD
+
+files\play.bat
+files\doom.bat
+
+files\tools\**
+
+files\config\default.choco-doom*.cfg
+files\config\default.glboom-plus.cfg
+files\config\default.gzdoom.ini
+files\config\default.prboom-plus.cfg
+files\config\default.zdoom.ini
+
+files\ports\chocolate-doom\
+files\ports\gzdoom-32_*\
+files\ports\prboom+\
+files\ports\zdoom\
+
+pages\Home #??.dosmag
+pages\2017 Cacowards #??.dosmag
+
+pages\lilith.pk3.dosmag
+files\wads\episodes\lilith\
+pages\Shadows of the Nightmare Realm.dosmag
+files\wads\episodes\sotnr\
+
+pages\No End in Sight.dosmag
+files\wads\megawads\neis\
+pages\Doom the Way id Did.dosmag
+files\wads\megawads\DTWID\
