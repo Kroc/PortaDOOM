@@ -1,0 +1,167 @@
+===========================================================================
+Archive Maintainer      :
+Update to               :
+Advanced engine needed  : GZDoom
+Primary purpose         : Single player
+===========================================================================
+Title                   : Shadows of The Nightmare Realm
+Filename                : sotnr.pk3
+Release date            : 27 May 2017
+Author                  : Alexa "YukiRaven" Jones-Gonzales
+Email Address           : [redacted]
+Other Files By Author   : Extreme Terror, One Doomed Marine, Kill
+Misc. Author Info       : ***DO NOT JUMP***
+                          ***DO NOT CROUCH***
+
+                          Unbind jump and crouch before playing if you're used
+                          to using them.  No rocket jumping on purpose, either.
+
+                          **ALWAYS LOAD LIGHTS.PK3 AND BRIGHTMAPS.PK3 ALONG WITH
+                          THIS ADDON**  These files come with GZDoom.  Failure
+                          to do so will result in the levels not looking right,
+                          or being unplayable due to being too dark.
+
+                          Mouselook is required for the last map.
+
+                          This is designed for -complevel 0
+
+                          Please also ensure that you have dynamic lights, 3d
+                          models, and high resolution textures enabled before
+                          playing.  Bloom is also recommended, but not required.
+
+                          Each map takes place in one of the Doomguy's dreams,
+                          so you lose all your inventory and your health is
+                          reset after each map.
+
+                          One last thing, if you want to change levels, you'll
+                          want to do so in the console.  Type "map corax##" to
+                          go to that level; I didn't use the usual "MAP##"
+                          format for the levels.
+
+Description             : Hell was defeated by a lone marine.  But what no one
+                          knew was that there was a far greater and nigh
+                          inconceivable evil lurking beyond our realm: the Elder
+                          Gods.  They saw how Hell had failed and felt it was
+                          now their time to succeed.  They knew of the Doomguy's
+                          strength, and decided to attack him in the one place
+                          he's vulnerable: in his nightmares.
+
+                          Shadows of The Nightmare Realm takes place within the
+                          dreams of the Doomguy, each one manipulated by the
+                          Elder Gods.
+
+Additional Credits to   : Nine Inch Heels, MrGlide, Fonze, everennui, and all
+                          the other playtesters for their invaluable time and
+                          feedback.  Thank you all <3
+
+                          Realm667 for their repositories.
+
+                          Additional credits are listed below since they're
+                          pretty long.
+===========================================================================
+* What is included *
+
+New levels              : 6 (four normal, one start map, one secret map)
+Sounds                  : Yes
+Music                   : Yes (written by me, available at www.partition36.com)
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Some new brightmaps
+Other files required    : lights.pk3 and brightmaps.pk3, both of which come with
+                          GZDoom
+
+
+* Play Information *
+
+Game                    : Doom2
+Map #                   : corax-start, corax01, corax02, corax03, corax04, and
+                          corax31
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes: easy, medium, and hard.  Designed for hard.
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A bit over a year, on and off
+Editor(s) used          : GZDoomBuilder, SLADE, GoldWave, Reaper, Renoise, The
+                          Gimp, Blender, some custom tools, and probably  a few
+                          others.
+Known Bugs              : None that I'm aware of
+May Not Run With        : GZDoom versions earlier than v2.4, or anything other
+                          than GZDoom.
+Tested With             : GZDoom 2.4, GZDoom 3.0
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse with proper credit.  Permissions have been obtained
+from original authors for any of their resources modified or included in
+this file.  All music is under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 license and is Copyright 2017
+Alexa Jones-Gonzales (the author of these levels).
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+This PWAD contains select texture(s) and flat(s) that can originally be found
+in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://alexa.partition36.com/files/doom/
+Gopher sites: gopher://nanako.mooo.com/1/doom
+
+
+* Additional Credits *
+
+A lot of resources were taken from Realm667's site.  I've tried to keep track of
+everything I've used, so I sincerely apologize if I miss anyone here.
+
+* The creators of gothictx.wad.
+* Jonathan Rimmer for Erratic Texture Pack 1.
+* François-Xavier Delmotte aka OgrO_FiX for Ogro Texture Pack for Doom 2.
+* Cage, Fox666, NeuralStunner, Zero X, and Diamond for CageTex2.wad.
+* Various authors for the decoration wads: Ghastly_dragon, Yuyu3, JoeyTD, JMAA,
+  MagicWazard, Captain Toenail, Gez, ShadesMaster, Shtbag667, Lucario, Captain
+  Awesome, Xaser, Necrodome, DavidRaven, zrrion the insect, Hexx, ETTiNGRiNDER.
+* Eriance, Blue Shadow, Keksdose, and Sandypaper for the Wicked.
+* Xaser, Eriance, Sandypaper, and NMN for the Grell.
+* Eriance, Dredopp, and SandyPaper for the cultist.
+* Gothic for the Blood Skull.
+* Tormentor667, Eriance, Ghastly Dragon, and Sandypaper for the Archon of Hell.
+* Tormentor667, Eriance, and Ghastly Dragon for the Acolyte.
+* Captain Toenail and Dreadopp for the Rictus.
+* Tormentor667, Vader, and Nanami for the Satyr.
+* Eriance, Blue Shadow, MagicWazard, Dreadopp, Ghastly Dragon, and Keksdose for
+  the Overlord.
+* Eriance, Blue Shadow, MagicWazard, Ghastly Dragon, Keksdose, and Sandypaper
+  for the Helemental.
+
+
+* Music Information *
+
+All music was written by YukiRaven.  The song titles are as follows:
+
+Title music:            The Corax
+Start Map and Level 4:  Suspense (Partition 36 Remix)
+Level 1:                Dead Star
+Level 2:                The Temple of Death
+Level 3:                Stay
+
+Full metadata information is embedded in the Ogg files themselves.

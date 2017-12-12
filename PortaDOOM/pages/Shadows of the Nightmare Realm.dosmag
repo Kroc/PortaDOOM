@@ -1,0 +1,79 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\sotnr\play.bat
+$KEY:T=SHELL:wads\episodes\sotnr\sotnr.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/sotnr
+
+:Shadows of the Nightmare Realm                     * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>05>26	  Author : _Alexa "YukiRaven" Jones-Gonzales_
+:Levels   : *6			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+Hell was defeated by a lone marine. But what no one knew was that there was a far greater and nigh inconceivable evil lurking beyond our realm: the Elder Gods. They saw how Hell had failed and felt it was now their time to succeed. They knew of the Doomguy's strength, and decided to attack him in the one place he's vulnerable: in his nightmares.
+
+Shadows of The Nightmare Realm takes place within the dreams of the Doomguy, each one manipulated by the Elder Gods.
+
+*Notes:
+
+***DO NOT JUMP***
+***DO NOT CROUCH***
+
+Unbind jump and crouch before playing if you're used to using them.
+No rocket jumping on purpose, either.
+
+Mouselook is required for the last map.
+
+This is designed for -complevel 0
+
+Please also ensure that you have dynamic lights, 3d models, and high resolution textures enabled before playing. Bloom is also recommended, but not required.
+
+Each map takes place in one of the Doomguy's dreams, so you lose all your inventory and your health is reset after each map.
+
+One last thing, if you want to change levels, you'll want to do so in the console. Type "map corax##" to go to that level; I didn't use the usual "MAP##" format for the levels.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: A bit over a year, on and off
+*Editor(s) used			: GZDoomBuilder, SLADE, GoldWave, Reaper, Renoise, The Gimp, Blender, some custom tools, and probably a few others.
+*Known Bugs				: None that I'm aware of
+*May Not Run With		: GZDoom versions earlier than v2.4, or anything other than GZDoom.
+*Tested With			: GZDoom 2.4, GZDoom 3.0
+
+:Credits
+:-------------------------------------------------------------------------------
+_Nine Inch Heels_, _MrGlide_, _Fonze_, _everennui_, and all the other playtesters for their invaluable time and feedback. Thank you all <3
+
+A lot of resources were taken from Realm667's site. I've tried to keep track of everything I've used, so I sincerely apologize if I miss anyone here.
+
+- The creators of gothictx.wad
+- _Jonathan Rimmer_ for Erratic Texture Pack 1
+- _François-Xavier Delmotte_ aka _OgrO_FiX_ for Ogro Texture Pack for Doom 2
+- _Cage_, _Fox666_, _NeuralStunner_, _Zero X_, and _Diamond_ for CageTex2.wad
+- Various authors for the decoration wads: _Ghastly_dragon_, _Yuyu3_, _JoeyTD_, _JMAA_, _MagicWazard_, _Captain Toenail_, _Gez_, _ShadesMaster_, _Shtbag667_, _Lucario_, _Captain Awesome_, _Xaser_, _Necrodome_, _DavidRaven_, _zrrion the insect_, _Hexx_, _ETTiNGRiNDER_
+- _Eriance_, _Blue Shadow_, _Keksdose_, and _Sandypaper_ for the Wicked
+- _Xaser_, _Eriance_, _Sandypaper_, and _NMN_ for the Grell
+- _Eriance_, _Dredopp_, and _SandyPaper_ for the cultist
+- Gothic for the Blood Skull
+- _Tormentor667_, _Eriance_, _Ghastly Dragon_, and _Sandypaper_ for the Archon of Hell
+- _Tormentor667_, _Eriance_, and _Ghastly Dragon_ for the Acolyte
+- _Captain Toenail_ and _Dreadopp_ for the Rictus
+- _Tormentor667_, _Vader_, and _Nanami_ for the Satyr
+- _Eriance_, _Blue Shadow_, _MagicWazard_, _Dreadopp_, _Ghastly Dragon_, and _Keksdose_ for the Overlord
+- _Eriance_, _Blue Shadow_, _MagicWazard_, _Ghastly Dragon_, _Keksdose_, and Sandypaper_ for the Helemental
+
+*Music Information:
+
+All music was written by _YukiRaven_.
+The song titles are as follows:
+
+*Title music			: The Corax
+*Start Map and Level 4	: Suspense (Partition 36 Remix)
+*Level 1				: Dead Star
+*Level 2				: The Temple of Death
+*Level 3				: Stay
+
+Full metadata information is embedded in the Ogg files themselves.
