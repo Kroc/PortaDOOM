@@ -88,6 +88,7 @@ ECHO     gzdoom-??           : Where ?? is "22", "23", "24", "31" or "32"
 ECHO     prboom              : PRBoom+ defaults to OpenGL. Use /SW for software
 ECHO     zandronum           : Zandronum current ^(2.x^)
 ECHO     zandronum-?         : Where ? is "2" or "3"
+ECHO     zdoom               : deprecated. use gzdoom with software `/SW` instead
 ECHO:
 ECHO  /WAIT
 REM ---------------------------------------------------------------------------------
@@ -742,6 +743,14 @@ IF /I "%USE%" == "zandronum-3" (
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=zandronum"
 	SET "PORT_TITLE=zandronum ^(v3.x^)"
+)
+IF /I "%USE%" == "zdoom" (
+	SET "ENGINE_DIR=%DIR_PORTS%\zdoom"
+	SET "ENGINE_EXE=zdoom.exe"
+	SET "ENGINE_CFG=zdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=zdoom"
+	SET "PORT_TITLE=ZDoom ^(v2.8.1^)"
 )
 
 REM # if an engine wasn't specified, provide a default
