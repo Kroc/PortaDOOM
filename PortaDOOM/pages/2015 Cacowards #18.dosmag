@@ -12,76 +12,74 @@ $KEY:A=GOTO:Sunlust
 - [A] *Sunlust* 									_Ribbiks_ & _Dannebubinga_
 
 $KEY:B=GOTO:Erkatane
-$KEY:C=GOTO:Doom 2 the Way id Did
-$KEY:D=GOTO:Doom the Way id Did
+$KEY:C=GOTO:DTWiD Series
 - [B] *Erkattäññe									_Nicholas Monti_
-   └→ [C] *Doom 2 the Way id Did					Various
-       └→ [D] *Doom the Way id Did					Various
+   └→ [C] *Doom the Way id Did Series				Various
 
-$KEY:E=GOTO:Skulldash
-- [E] *Skulldash									_Joshua O'Sullivan_
+$KEY:D=GOTO:Skulldash
+- [D] *Skulldash									_Joshua O'Sullivan_
 
-$KEY:F=GOTO:Swift Death
-- [F] *Swift Death									_franckFRAG_
+$KEY:E=GOTO:Swift Death
+- [E] *Swift Death									_franckFRAG_
 
-$KEY:G=GOTO:Breach
-$KEY:H=GOTO:No Rest for the Living
-- [G] *Breach										_Viggles_
-   └→ [H] *No Rest for the Living					Nerve Software
+$KEY:F=GOTO:Breach
+$KEY:G=GOTO:No Rest for the Living
+- [F] *Breach										_Viggles_
+   └→ [G] *No Rest for the Living					Nerve Software
 
-$KEY:I=GOTO:Valiant
-- [I] *Valiant										_Paul "skillsaw" DeBruyne_
+$KEY:H=GOTO:Valiant
+- [H] *Valiant										_Paul "skillsaw" DeBruyne_
 
-$KEY:J=GOTO:50 Shades of Graytall
-- [J] *50 Shades of Graytall						Various
+$KEY:I=GOTO:50 Shades of Graytall
+- [I] *50 Shades of Graytall						Various
 
-$KEY:K=GOTO:Sheer Poison
-- [K] *Sheer Poison									_zan-zan-zawa-veia
+$KEY:J=GOTO:Sheer Poison
+- [J] *Sheer Poison									_zan-zan-zawa-veia
 
-$KEY:L=GOTO:dead.wire
-- [L] *dead.wire									_Xaser_
+$KEY:K=GOTO:dead.wire
+- [K] *dead.wire									_Xaser_
 
-$KEY:M=GOTO:Return to Hadron
-- [M] *Return to Hadron								_Matt "cannonball" Powell_
+$KEY:L=GOTO:Return to Hadron
+- [L] *Return to Hadron								_Matt "cannonball" Powell_
 
 :RUNNERS UP:
 
-$KEY:N=GOTO:Doomed Space Wars
-- [N] *Doomed Space Wars							_Paul Corfiatis_
+$KEY:M=GOTO:Doomed Space Wars
+- [M] *Doomed Space Wars							_Paul Corfiatis_
 
-$KEY:O=GOTO:Crumpets
-- [O] *Crumpets										_Ribbiks_
+$KEY:N=GOTO:Crumpets
+- [N] *Crumpets										_Ribbiks_
 
-$KEY:P=GOTO:Prime Directive
-- [P] *Prime Directive								_Ethan "Gooberman" Watson_
+$KEY:O=GOTO:Prime Directive
+- [O] *Prime Directive								_Ethan "Gooberman" Watson_
 
-$KEY:Q=GOTO:Pinnacle of Darkness
-- [Q] *Pinnacle of Darkness							_Hobomaster22_
+$KEY:P=GOTO:Pinnacle of Darkness
+- [P] *Pinnacle of Darkness							_Hobomaster22_
 
-$KEY:R=GOTO:Ol' No Name
-- [R] *Ol' No Name									_Octavarium_
+$KEY:Q=GOTO:Ol' No Name
+- [Q] *Ol' No Name									_Octavarium_
 
-$KEY:S=GOTO:32in24-14
-- [S] *32in24-14									_Yeoman Engineers_
+$KEY:R=GOTO:32in24-14
+- [R] *32in24-14									_Yeoman Engineers_
 
 :MULTIPLAYER AWARDS:
 
-$KEY:T=GOTO:Don't Be A Bitch Remastered
-- [T] *Don't Be A Bitch Remastered					_Mechanix Union_
+$KEY:S=GOTO:Don't Be A Bitch Remastered
+- [S] *Don't Be A Bitch Remastered					_Mechanix Union_
 
-$KEY:U=GOTO:ChaosCore CTF
-- [U] *ChaosCore CTF								_RoSKing_ et al.
+$KEY:T=GOTO:ChaosCore CTF
+- [T] *ChaosCore CTF								_RoSKing_ et al.
 
 :MORDETH AWARD:
 
-- [U] *ChaosCore CTF								_RoSKing_ et al.
+- [T] *ChaosCore CTF								_RoSKing_ et al.
 
 :BEST GAMEPLAY MOD:
 
-$KEY:V=GOTO:DoomRL Arsenal
-- [V] *DoomRL Arsenal								_Yholl_ et al.
+$KEY:U=GOTO:DoomRL Arsenal
+- [U] *DoomRL Arsenal								_Yholl_ et al.
 
 :MOCKAWARD:
 
-$KEY:W=GOTO:InstaDoom
-- [W] *InstaDoom									_Linguica_
+$KEY:V=GOTO:InstaDoom
+- [V] *InstaDoom									_Linguica_

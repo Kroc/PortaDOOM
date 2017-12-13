@@ -1,7 +1,7 @@
 $THEME=BLACK
 $TITLE=Other Awards
 $KEY:1=GOTO:DOOM(4) for DooM
-$KEY:2=GOTO:Doom the Way id Did - The Lost Episodes
+$KEY:2=GOTO:DTWiD Series #03
 $KEY:3=GOTO:Luducrium
 $KEY:4=URL:https://www.doomworld.com/idgames/index.php?search=1&field=author&word=Lainos&sort=time&order=desc&page=1
 

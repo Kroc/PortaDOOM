@@ -2,6 +2,18 @@
 * = Fix / Change
 - = Removal
 
+13-12-17:
+* Created a Doom the Way id Did Series page set
+
+11-12-17:
++ Added Cacowards 2017 build target (incomplete)
++ Added ZDoom v2.8.1 back to doom.bat, required for lilith.pk3
++ Added "Shadows of the Nightmare Realm" WAD page
+
+10-12-17:
++ Began work on the Cacoward 2017
++ Added "lilith.pk3" WAD page
+
 04-12-17:
 + Added The Darkening E2 WAD page
 * Upgraded GZDoom latest to 3.2.3

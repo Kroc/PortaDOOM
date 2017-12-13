@@ -20,11 +20,10 @@ files\ports\prboom+\
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
-pages\Doom 2 the Way id Did.dosmag
-files\wads\megawads\D2TWID\
-pages\Doom the Way id Did.dosmag
-files\wads\megawads\DTWID\
+pages\DTWiD Series #??.dosmag
+files\wads\megawads\DTWiD\**
 pages\No Rest for the Living.dosmag
+files\wads\megawads\neis\
 
 files\demos\30uv2155\
 files\demos\30uv2032\

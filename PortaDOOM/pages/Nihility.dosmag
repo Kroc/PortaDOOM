@@ -11,7 +11,7 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/85591-nihility-infinite-teeth-
 :Requires : *vanilla?	Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-$KEY:1=GOTO:Doom the Way id Did
+$KEY:1=GOTO:DTWiD Series #01
 $KEY:2=GOTO:No End in Sight
 $KEY:3=GOTO:Erkatane
 $KEY:4=GOTO:50 Shades of Graytall

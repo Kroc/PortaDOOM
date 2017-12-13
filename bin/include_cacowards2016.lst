@@ -39,14 +39,12 @@ files\wads\megawads\aaliens\
 pages\Nihility.dosmag
 files\wads\episodes\Nihility\
 
-pages\Doom the Way id Did.dosmag
-files\wads\megawads\DTWID\
+pages\DTWiD Series #??.dosmag
+files\wads\megawads\DTWiD\**
 pages\No End in Sight.dosmag
 files\wads\megawads\neis\
 pages\Erkatane.dosmag
 files\wads\episodes\erkatane\
-pages\Doom 2 the Way id Did.dosmag
-files\wads\megawads\D2TWID\
 pages\50 Shades of Graytall.dosmag
 files\wads\community\50shades\
 
@@ -89,9 +87,6 @@ files\wads\multiplayer\32in24-16
 
 pages\DOOM(4) for DooM.dosmag
 files\wads\mods\Doom4Doom\
-
-pages\Doom the Way id Did - The Lost Episodes.dosmag
-files\wads\megawads\dtwid-le\
 
 pages\Luducrium.dosmag
 files\wads\jokes\ludicrm\

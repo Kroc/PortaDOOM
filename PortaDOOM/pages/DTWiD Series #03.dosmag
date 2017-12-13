@@ -1,10 +1,11 @@
-$NAV=Classical
-$KEY:P=SHELL:wads\megawads\dtwid-le\play.bat
-$KEY:T=SHELL:wads\megawads\dtwid-le\DTWID-LE.txt
+$NAV=MegaWADs
+$TITLE=The Lost Episodes
+$KEY:P=SHELL:wads\megawads\DTWiD\dtwid-le\play.bat
+$KEY:T=SHELL:wads\megawads\DTWiD\dtwid-le\DTWID-LE.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
-$KEY:1=GOTO:Doom the Way id Did
-$KEY:V=SHELL:wads\megawads\dtwid-le\play - vanilla e1-4.bat
-$KEY:5=SHELL:wads\megawads\dtwid-le\play - vanilla e5.bat
+$KEY:1=PAGE:#01
+$KEY:V=SHELL:wads\megawads\DTWiD\dtwid-le\play - vanilla e1-4.bat
+$KEY:5=SHELL:wads\megawads\DTWiD\dtwid-le\play - vanilla e5.bat
 $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 $KEY:N=GOTO:No End in Sight

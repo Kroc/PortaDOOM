@@ -123,6 +123,7 @@ CALL :select_compression
 CALL :do_5yearsofdoom
 CALL :do_cacowards2015
 CALL :do_cacowards2016
+CALL :do_cacowards2017
 CALL :do_psxdoomtc
 
 ECHO:

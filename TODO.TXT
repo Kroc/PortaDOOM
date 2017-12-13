@@ -1,5 +1,7 @@
 Pages:
 ================================================================================
+[X] Create a DTWiD page set
+   (easier to handle dependencies bundling these together)
 [ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
     incompatibility with ZScript and a visual bug -- current work-around is to
     limit it to software rendering
@@ -23,6 +25,10 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] Make doom.bat insert "lights.pk3" & "brightmaps.pk3" instead of "play.bat";
+    This will allow PWADs to override these instead of the other way around
+[ ] DOSmag: Trap ALT+ENTER and override built in fullscreen swith with our own
+[X] lilith.pk3 will work *only* with actual ZDoom2.8.1
 [ ] "Castlevania Simon's Destiny" is an IWAD so requires its own configiuration
     (set defaults script)
 [ ] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
