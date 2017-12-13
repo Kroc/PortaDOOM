@@ -1,2 +1,1 @@
-@ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD miasma.wad
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD miasma.wad

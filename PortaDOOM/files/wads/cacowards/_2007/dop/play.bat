@@ -1,2 +1,1 @@
-@ECHO OFF
-PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ zdoom /PWAD dop.pk3
+@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ zdoom /PWAD dop.pk3
