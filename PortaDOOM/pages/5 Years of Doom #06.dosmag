@@ -22,7 +22,7 @@ _Romero		_John Carmack_ came up with the name DOOM.
 
 *Doomworld	Was there a definite plan for Doom as it was being started, or was it more of a "some sort of techno-hellish game, let's go from there" deal?
  
-_Romero		_Tom Hall_ started crafting the storyline in November 1992 and created the *[B] DOOM Bible*, which turned out to be his initial ideas of where the story should go. After that point, he mostly made lots of notes about ideas, drawings of the World Map, sketches of game characters, etc. So, yes, there was a definite storyline created at the beginning of the project and we all started following that design.
+_Romero		_Tom Hall_ started crafting the storyline in November 1992 and created the [B: DOOM Bible], which turned out to be his initial ideas of where the story should go. After that point, he mostly made lots of notes about ideas, drawings of the World Map, sketches of game characters, etc. So, yes, there was a definite storyline created at the beginning of the project and we all started following that design.
 
 *Doomworld	What sort of features does DoomED has? Does it have a texture viewer within the program, like QuakeED does? Also, is it vertex- or sector-based? (I.E. are sectors laid down first which are then edited, or are vectors laid down and then grouped into sectors.)
  

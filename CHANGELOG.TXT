@@ -4,6 +4,7 @@
 
 13-12-17:
 * Created a Doom the Way id Did Series page set
+* Changed a number of links from `*[N] Name*` to `[N: Name]`
 
 11-12-17:
 + Added Cacowards 2017 build target (incomplete)
