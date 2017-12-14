@@ -1,0 +1,87 @@
+===========================================================================
+Advanced engine needed  : Any that support extended nodes
+Primary purpose         : Single Player
+===========================================================================
+Title                   : The Given
+Filename                : TheGiven.wad
+Release date            : ??????????????
+Author                  : dobu gabu maru
+Email Address           : edemaomega@yahoo.com
+Other Files By Author   : Saturnine Chapel, Moonlight, Panophobia.
+                          Co-leader of NOVA & NOVA 2. Got a variety of
+                          other maps elsewhere (MAYhems, THT, UDINO, TNT:R)
+
+Description             : The Given is a monsterless puzzle map with an
+                          emphasis on exploration.
+
+Additional Credits to   : Mouldy, dew, Demon of the Well, & Magnusblitz
+                          for the invaluable feedback, Eris for the
+                          gorgeous music, Jimmy for the excellent sprite
+                          edits, Mechadon for the sky bits.
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes (UI/interface)
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : No (Don't use mods please)
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : ~80 hours.
+Editor(s) used          : Doom Builder 2
+Known Bugs              : Some ports will struggle with the map.
+May Not Run With        : Engines that don't support extended nodes.
+Tested With             : Zdoom 2.6.1, PrBoom+ 2.5.1, GZDoom 3.1
+Music Tracks            : All music composed by Eris Falling
+                          Title Screen: "Raglavar (Introduction)"
+                          MAP01: "The Village that Time Forgot"
+                          MAP02: "Diwedh (Epilogue)"
+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+===========================================================================
+
+Author's notes: There are no difficulties in THE GIVEN so it doesn't matter
+what you "choose" on the difficulty screen with the scroll. If you get lost
+or don't know what to do, look for the red torches. There's six puzzles
+around the map that you'll need to complete in order to unlock the bridge
+to the center. Keep in mind that you shouldn't need to "guess" the solution
+to any of them. If you *still* feel lost, perhaps the symbol before the 
+bridge will point you in the right directions...
+
+I'm sorry in advance to how slow this will play on some computers!
