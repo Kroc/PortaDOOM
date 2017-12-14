@@ -5,6 +5,7 @@ $KEY:C=GOTO:Cabal Series #02
 $KEY:D=GOTO:Master Levels #15
 $KEY:E=GOTO:Bloodstain
 $KEY:F=GOTO:Breach
+$KEY:G=GOTO:Brigandine
 
 ^C:INDEX :: B
 
@@ -16,3 +17,4 @@ $KEY:F=GOTO:Breach
 - [D] *Master Levels: Bloodsea Keep						Commercial DOOM
 - [E] *Bloodstain										MegaWADs
 - [F] *Breach											Onsies
+- [G] *Brigandine										Onesies
