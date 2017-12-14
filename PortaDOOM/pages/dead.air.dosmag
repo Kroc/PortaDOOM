@@ -1,0 +1,68 @@
+$NAV=Onesies
+$KEY:P=SHELL:wads\onesies\dead-air\play.bat
+$KEY:T=SHELL:wads\onesies\dead-air\dead-air.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/92135-deadair-v2/
+$KEY:D=GOTO:dead.wire
+
+:dead.air                                           * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>12>27	  Author : _Xaser Acheron_
+:Levels   : *1			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+Single map for (G)ZDoom (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to [D: "dead.wire"], with plenty of new weapons, baddies, and bizarro creep factor.
+
+The UAC's global news network is down for repairs following some rather unusual signal interference. As one of the company's top network engineers, it falls on your shoulders to debug the system. All in a day's work, right?
+
+This map tells the tale of what happens next...
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: Record scratch.
+*Build Time				: 2 weeks for the contest draft; many months polish.
+*Editor(s) used			: GZDoom Builder, SLADE3
+*May Not Run With...	: Non-ZDoom stuff. Software renderer is supported, but GL is recommended for better color fidelity.
+
+:Credits:
+:-------------------------------------------------------------------------------
+- _Xaser_ (das me)
+  mapping, music (original score yay!), actor code, going insane
+
+- _RNG Breadbug_
+  weapon, enemy, and prop sprites + a shitton of inspiration!
+
+- _ijon tichy_
+  quake-style grenade code, from Samsara
+
+- _Alfonzo_ & _dew_
+  early testing and nitpickeroonies
+
+- _BouncyTEM_
+  testing n' support n' the Fusion Mortar concept ;D
+
+- _rf`_ (_ravage_)
+  AM-Driver explosion sprites (or at least the rip :P)
+  
+- _Amuscaria_ (nee _Eriance_)
+  Nail projectile sprites, "Grafter" base sprite
+
+- _Cage_, _NiGHTMARE_, _zrrion the insect_, & _NMN_
+  Textures of Awesome
+
+- _Enjay_
+  the kickass palette, from his Marine Assault mod
+
+- _FuzzballFox_
+  Flickering computer textures (FF****), Mosaic texture
+
+- _illuknisaa_
+  End room computer textures (ILLU**)
+
+- _Abbuw_
+  TV texture (ABBUWTV**)
+
+- _GreenActionFootage_
+  TV turn off animation

@@ -1,32 +1,34 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Darkening Episode 2
-$KEY:B=GOTO:dead.wire
-$KEY:C=GOTO:Cabal Series #03
-$KEY:D=GOTO:Don't Be A Bitch Remastered
-$KEY:E=GOTO:DTWiD Series #02
-$KEY:F=GOTO:DOOM 64
-$KEY:G=GOTO:DOOM II
-$KEY:H=GOTO:DTWiD Series #01
-$KEY:I=GOTO:DTWiD Series #03
-$KEY:J=GOTO:DOOM(4) for DooM
-$KEY:K=GOTO:Doomed Space Wars
-$KEY:L=GOTO:DoomRL Arsenal
-$KEY:M=GOTO:DUMP Episode 3
+$KEY:B=GOTO:dead.air
+$KEY:C=GOTO:dead.wire
+$KEY:D=GOTO:Cabal Series #03
+$KEY:E=GOTO:Don't Be A Bitch Remastered
+$KEY:F=GOTO:DTWiD Series #02
+$KEY:G=GOTO:DOOM 64
+$KEY:H=GOTO:DOOM II
+$KEY:I=GOTO:DTWiD Series #01
+$KEY:J=GOTO:DTWiD Series #03
+$KEY:K=GOTO:DOOM(4) for DooM
+$KEY:L=GOTO:Doomed Space Wars
+$KEY:M=GOTO:DoomRL Arsenal
+$KEY:N=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
 :-------------------------------------------------------------------------------
 
 - [A] *Darkening Episode 2, (The)						MegaWADs
-- [B] *dead.wire										Onesies
-- [C] *Cabal Series: Derelict Station					5 Years of Doom
-- [D] *Don't Be A Bitch Remastered						Multiplayer
-- [E] *Doom 2 the Way id Did							MegaWADs
-- [F] *DOOM 64											Commercial DOOM
-- [G] *DOOM II											Commercial DOOM
-- [H] *Doom the Way id Did								MegaWADs
-- [I] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [J] *DOOM(4) for DooM									Mods
-- [K] *Doomed Space Wars								Episodes
-- [L] *DoomRL Arsenal									Mods
-- [M] *DUMP Episode 3: BFG Edition						Community Projects
+- [B] *dead.air											Onesies
+- [C] *dead.wire										Onesies
+- [D] *Cabal Series: Derelict Station					5 Years of Doom
+- [E] *Don't Be A Bitch Remastered						Multiplayer
+- [F] *Doom 2 the Way id Did							MegaWADs
+- [G] *DOOM 64											Commercial DOOM
+- [H] *DOOM II											Commercial DOOM
+- [I] *Doom the Way id Did								MegaWADs
+- [J] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [K] *DOOM(4) for DooM									Mods
+- [L] *Doomed Space Wars								Episodes
+- [M] *DoomRL Arsenal									Mods
+- [N] *DUMP Episode 3: BFG Edition						Community Projects

@@ -1,0 +1,92 @@
+===========================================================================
+Primary purpose         : Single Player
+Advanced engine required: ZDoom
+===========================================================================
+Title                   : dead.air
+Filename                : dead-air.pk3
+Release date            : 12/24/2016 (v1)
+                          12/27/2016 (v2)
+Version                 : Beta v2
+Author                  : Xaser Acheron
+Email Address           : xaser.88@gmail.com
+
+Description             : Single map for (G)ZDoom (Doom 2), made for the
+                          Vinesauce mapping contest. Spiritual sequel
+                          to "dead.wire", with plenty of new weapons,
+                          baddies, and bizarro creep factor.
+
+                          The UAC's global news network is down for
+                          repairs following some rather unusual
+                          signal interference. As one of the company's
+                          top network engineers, it falls on your shoulders
+                          to debug the system. All in a day's work, right?
+
+                          This map tells the tale of what happens next...
+
+Additional Credits to   : Lots of folks -- see Credits section at the end.
+===========================================================================
+* What is included *
+
+New levels              : Yes
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes (Textures n' sprites)
+Dehacked/BEX Patch      : Yes (DECORATE n' such, really)
+Demos                   : No
+Other                   : Yes (Stuff)
+Other files required    : None
+
+===========================================================================
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Maybe
+
+===========================================================================
+* Construction *
+
+Base                    : Record scratch.
+Build Time              : 2 weeks for the contest draft; many months polish.
+Editor(s) used          : GZDoom Builder, SLADE3
+May Not Run With...     : Non-ZDoom stuff. Software renderer is supported,
+                          bit GL is recommended for better color fidelity.
+
+===========================================================================
+* Credits *
+
+ - Xaser (das me): mapping, music (original score yay!), actor code, going insane
+ - RNG Breadbug  : weapon, enemy, and prop sprites + a shitton of inspiration!
+ - ijon tichy    : quake-style grenade code, from Samsara
+ - Alfonzo & dew : early testing and nitpickeroonies
+ - BouncyTEM     : testing n' support n' the Fusion Mortar concept ;D
+ - rf` (ravage)  : AM-Driver explosion sprites (or at least the rip :P)
+ - Amuscaria (nee Eriance): Nail projectile sprites, "Grafter" base sprite
+ - Cage, NiGHTMARE, zrrion the insect, & NMN : Textures of Awesome
+ - Enjay         : the kickass palette, from his Marine Assault mod
+ - FuzzballFox   : Flickering computer textures (FF**), Mosaic texture
+ - illuknisaa    : End room computer textures (ILLU*)
+ - Abbuw         : TV texture (ABBUWTV*)
+ - GreenActionFootage: TV turn off animation
+
+===========================================================================
+* Copyright / Permissions *
+
+Authors MAY NOT use the map as a base for modification or reuse.
+
+Authors MAY use any non-map resources as a base for modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+http://static.angrysience.net/pub/doom/
+http://idgames.doomworld.com
+your trusty local news network

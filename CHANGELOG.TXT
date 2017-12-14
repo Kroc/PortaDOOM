@@ -4,6 +4,7 @@
 
 14-12-17:
 + Added "3 Heures d'agonie" series by the French Doom Community
++ Added "dead.air" WAD page
 
 13-12-17:
 * Created a Doom the Way id Did Series page set
