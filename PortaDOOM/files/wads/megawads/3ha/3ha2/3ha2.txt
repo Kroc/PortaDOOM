@@ -1,0 +1,68 @@
+===========================================================================
+Advanced engine needed  : Vanilla
+Primary purpose         : Single Player + Cooperative
+===========================================================================
+Title                   : 3 Heures d'agonie 2
+Filename                : 3ha2.wad
+Release date            : November, the 30th 2014
+Authors                 : 3ha2 Team
+Email Address           : jcdoom@hotmail.fr
+General Description     : 3 Heures d'agonie 2 is a collection of 32 vanilla
+			speedmaps designed by members of the French Doom Community. 
+			The general rule was that each map layout was to be made 
+			within a time limit of 3 hours.
+Additional Credits to   : See 3ha2info.txt
+
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (Map Name)
+Demos                   : Yes
+Other                   : Mapinfo, Gameinfo, Wadinfo, Authinfo lump
+Other files required    : Doom2.wad
+
+
+* Play Information *
+
+Game                    : Doom II Hell on Earth
+Map #                   : Map01 ==> Map32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Implemented but not optimal
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 11 months
+Editor(s) used          : See 3ha2info.txt
+Known Bugs              : See 3ha2info.txt
+May Not Run With        : Heretic
+Tested With             : PrBoom 2.5.0, Prboom-Plus 2.5.1.3, Zdaemon 1.10b, Doom2.exe
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+http://doomfrance.forumactif.com/forum
+http://doomstaze.free.fr/
+http://Straff50.free.fr/Files/Wads
+http://dl.baseq.fr/doom/wads/

@@ -1,0 +1,497 @@
+===========================================================================
+Advanced engine needed  : vanilla-compatible limit removing port
+Primary purpose         : Single Player
+===========================================================================
+Title                   : 3 Heures d'agonie
+Filename                : 3hafinal.wad
+Release date            : January, the 26nd 2013
+Authors                 : JC
+			  Zyklonb
+			  Darkwave0000
+			  Necrotikflesh
+			  Impulse
+			  [WH]-Wilou84
+			  Franckfrag
+			  Subject_119
+			  Oxyde
+Email Address           : superjc@free.fr
+
+General Description     : 3 Heures d'agonie is a collection of 32 vanilla /
+			limit-removing speedmaps designed by members of the 
+			French Doom Community. The general rule was that 
+			each map was to be made within a time limit of 3 hours.
+
+===========================================================================
+* What is included *
+
+New levels              : 32 maps
+Sounds                  : no
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes (in order of appearance : Oxyde, JC, Oxyde & JC)
+Other                   : no
+Other files required    : Doom2.wad
+
+
+* Play Information *
+
+Game                    : Doom II Hell on Earth
+Map #                   : Map01 ==> Map32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Implemented but not optimal
+Other game styles       : none
+Difficulty Settings     : no
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 1 year and a half
+Editor(s) used          : DooM Builder, eXtendable Wad Editor
+Known Bugs              : see "Maps information"
+May Not Run With        : heretic
+Tested With             : PrBoom 2.4.7 / 2.5.0, Zdaemon 1.09, doom2.exe and doom2plus.exe
+
+
+* Maps information *
+
+
+-=-=-=--=-=|Map01|=-=-=--=-=-
+Level name : Upsilon-Synth
+Author(s) : William Huber ( [WH]-Wilou84 )
+Build time : 5 hours
+Editor(s) used : Doom Builder 1.68, Adobe Photoshop CS 5.5, XWE 1.16
+                     
+                     
+Music track : "Hiding the Secrets " by Bobby Prince ( Doom E1M8 )
+Bugs : Hopefully none
+Inspiration : Nothing in particular... The visual theme may evoke Suspended in Dusk, I guess
+Author comments : My second offering for this project. Upsilon-Synth is a short, brutal map made with The Ultimate Doom in mind. It should provide a solid warm-up for the megawad.
+Additional credits to : Adelusion, Afterglow & The GothicTX team
+ 			Cage
+    			Eriance
+    			Espi
+    			Esselfortium (1)
+    			Nick Baker
+    			Nihilism Unlimited
+    			Speedy ( CR8 texture pack )
+
+(1) : Written permission has been obtained from esselfortium to use his textures. However, please note that you MAY NOT use these textures in your own projects.
+
+
+-=-=-=--=-=|Map02|=-=-=--=-=-
+Level name          : Unité de Traitement
+Author(s)          : Riad ''ZyklonB'' Cherigui
+Build time          : Less than 2 Hours
+Editor(s) used      : Doom builder 1.68
+                   
+                   
+Music track        : Doom II Map02...
+
+Bugs                : None
+Inspiration        : An old map I made for Lan-dooming...
+Author comments    : A Square polygon with a square shape as a main hall and some corridors -- A very simple map overall, but remmember to not step on those good old slime pits, you might not get out off 'em! Still, this map is pretty easy...
+
+
+-=-=-=--=-=|Map03|=-=-=--=-=-
+Level name : Cubicombe
+Author(s) : franckFRAG
+Build time : 1 hour
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None.
+Author comments : Very little map, which ended in a few seconds Smile Adapted for the duel.
+
+
+-=-=-=--=-=|Map04|=-=-=--=-=-
+Level name : Petite Mort
+Author(s) : Christophe "Necrotikflesh" Calamoneri
+Build time : 2h45
+Editor(s) used : Doom Builder 1.68
+Music track : d_e2m6
+
+
+-=-=-=--=-=|Map05|=-=-=--=-=-
+Level name : Experience Interdite
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+
+
+Music track : DOOM2 Map05
+Bugs : None.
+Inspiration : None.
+Author comments : gl :)
+
+
+-=-=-=--=-=|Map06|=-=--=-=-=-
+Level name : Embuscades
+Author(s) : Gwenvael Le Bihan (subject_119)
+Build time : between 3 and 4 hours
+Editor(s) used : Doom builder 2.1.1.1466
+
+Music track : Doom II map18
+Bugs : None
+Inspiration : My house xD
+Author comments : my map is short and easy, but i hope you'll like it
+
+
+-=-=-=--=-=|Map07|=-=-=--=-=-
+Level name          : Chambre des supplices
+Author(s)          : Riad ''ZyklonB'' Cherigui
+Build time          : 2 Hours and Half
+Editor(s) used      : Doom builder 1.68
+                   
+                   
+Music track        : MIDI version of the Amiga game "Shadow of the Beast" Cavern's theme
+
+Bugs                : None
+Inspiration        : Nothing...
+Author comments    : What's more annoying than a corridor full of shotgunner? A cross-shaped corridor full off shotgunner AND Mancubus! Just don't let them burn your brand new kevlar pants if you want to get out off here in one bit. The best map I've made for this Megawad IMO.
+
+
+-=-=-=--=-=|Map08|=-=-=--=-=-
+Level name : Canyon
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Unused Doom music (un19)                 
+Bugs : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map09|=-=-=--=-=-
+Level name : Zone85
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+
+
+Music track : DOOM2 Map09
+Bugs : None.
+Inspiration : Quake? Maybe...
+Author comments : Be ingenious :)
+
+
+-=-=-=--=-=|Map10|=-=-=--=-=-
+Level name : Surchauffe
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Hr2's Map19                 
+Bugs : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map11|=-=-=--=-=-
+Level name : Obscurite
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+
+Music track : Brit10 Map03
+Bugs : None.
+Inspiration : ''Pitch Black''.
+Author comments : If you like Pown imp with RL ! Enjoy :)
+
+
+-=-=-=--=-=|Map12|=-=-=--=-=-
+Level name : Fourbe
+Author(s) : franckFRAG
+Build time : 2 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None.
+Author comments : Hard for the beginning, it is necessary to negotiate the traps. Adapted for the duel.
+
+
+-=-=-=--=-=|Map13|=-=-=--=-=-
+Level name : Le Souterrain
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Unused Doom music (un20)                 
+Bugs : none
+Inspiration : zdctfmp map15
+
+
+-=-=-=--=-=|Map14|=-=-=--=-=-
+Level name : L'Arene de la Douleur -
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+
+
+Music track : HR2
+Bugs : None.
+Inspiration : Serious Sam 3 (a bit)
+Author comments : I think its a nice challenge for Novice to survive on this
+
+
+-=-=-=--=-=|Map15|=-=-=--=-=-
+Level name : Secteur Delta
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Unused Doom music (un51)                 
+Bugs : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map16|=-=-=--=-=-
+Level name : Metalocauste
+Author(s) : franckFRAG
+Build time : 2 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None.
+Author comments : Map rather fun, possibility to take two differents roads, warning for crushers !! Adapted for the duel.
+
+
+-=-=-=--=-=|Map17|=-=--=-=-=-
+--Map17--
+Level name : Place Abandonnée
+Author(s) : Christophe "Necrotikflesh" Calamoneri
+Build time : 3h20
+Editor(s) used : Doom Builder 1.68
+Music track : dmap10
+
+
+-=-=-=--=-=|Map18|=-=-=--=-=-
+Level name : Stupide Dilemme
+Author(s) : franckFRAG
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None.
+Author comments : My first map for 3ha, slightly awkward in her conception. Adapted for the duel.
+
+
+-=-=-=--=-=|Map19|=-=-=--=-=-
+Level name : Terrible Technologies
+Author(s) : Arnaud "Oxyde" Florian
+Build time : 9 hours
+Editor(s) used : Doom Builder 1.68 & XWE
+
+
+Music track : zdctfmp map27 - Exophase III
+Bugs : Floors lamps in the Knight's underground move when the Chaingunners raise, not game breaking.
+Inspiration : Nothing specific, just a set of ideas I had for a while.
+Author comments : I crafted this level because I felt this whole project had a great potential, seems I was right. :)
+This level is small, a bit cramped for multiplayer, but plays smooth in Single Player mode. Ammo & health seems to be well balanced, hopefully you will like it. :)
+Additional credits to : zdectf team ( textures )
+
+
+-=-=-=--=-=|Map20|=-=-=--=-=-
+Level name : Archeologie
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Unused Doom music (un42)                 
+Bugs : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map21|=-=-=--=-=-
+Level name : On t'as eu !
+Author(s) : Maxime Bisiaux (Datacore) (its an abandon map created by MC Arm for the Deathmatch's Wad: ''Rage07.wad'' i added Things, monsters , End's Sectors and Archviles's Sectors).
+Build time : 1 hours
+Editor(s) used : Doom Builder 1.68
+
+Music track : DOOM2 Map30.
+Bugs : None.
+Inspiration : Rage07.Wad
+Author comments : Adapted for the deathmatch.
+
+
+-=-=-=--=-=|Map22|=-=-=--=-=-
+Level name : Désastre
+Author(s) : franckFRAG
+Build time : 2 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None, although, maybe a memfis's map.
+Author comments : Map of simple conception. adapted for 1-on-1 duels.
+
+
+-=-=-=--=-=|Map23|=-=-=--=-=-
+Level name : Après Les Restes
+Author(s) : Christophe "Necrotikflesh" Calamoneri
+Build time : 2h50
+Editor(s) used : Doom Builder 1.68
+Music track : dmap07
+
+
+-=-=-=--=-=|Map24|=-=-=--=-=-
+Level name : Ruin-Tech
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+                     
+                     
+Music track : Duke nukem 3D - Plasma 
+Bugs : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map25|=-=-=--=-=-
+Level name : Le "Q"
+Author(s) : franckFRAG
+Build time : 2 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+
+
+Music track : Requiem's music.
+Bugs : None.
+Inspiration : None.
+Author comments : Map of simple conception. Adapted for the duel.
+
+
+-=-=-=--=-=|Map26|=-=-=--=-=-
+Level name : Le Village Maudit
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 2 hours
+Editor(s) used : Doom Builder 1.68
+
+
+Music track : rjumpq.wad Map08
+.
+Bugs : None.
+Inspiration : Doom E3M6.
+Author comments : My First Hellish maps for 3HA.
+
+
+-=-=-=--=-=|Map27|=-=-=--=-=-
+Level name : Sang Innocent
+Author(s) : William Huber ( [WH]-Wilou84 )
+Build time : 4, maybe 5 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+                     
+                     
+Music track : "Dance of Death" by Sam Woodman ( Hell Revealed II Map06 )
+Bugs : Hopefully none
+Inspiration : Hell Revealed II, Quake
+Author comments : A tight arena with a few deadly traps. This level was made a few days after Quake's 12th birthday, so I had to pay a tribute of some sort.
+Additional credits to : Adelusion, Afterglow & The GothicTX team
+ 			Cage
+    			Eriance
+    			Espi
+    			Esselfortium (1)
+    			Nick Baker
+    			Nihilism Unlimited
+    			Speedy ( CR8 texture pack )
+
+(1) : Written permission has been obtained from esselfortium to use his textures. However, please note that you MAY NOT use these textures in your own projects.
+
+
+-=-=-=--=-=|Map28|=-=-=--=-=-
+Level name : Impulsion
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3,5 hours
+Editor(s) used : Doom Builder 1.68
+
+Music track : DOOM E1M8
+Bugs : None.
+Inspiration : Doom.
+Author comments : Can you do a UV MAX There ? :D
+
+
+-=-=-=--=-=|Map29|=-=-=--=-=-
+Level name : Dernier Voeu
+Author(s) : Darkwave0000
+Build time : 7 hours
+Editor(s) used : Doom Builder 2
+                     
+                     
+Music track : From Tides 2
+Bugs : Visspite overflow and possible seg and visplane overflows.
+Inspiration : No specific inspiration.
+Author comments : This is a large map with many enemies. Hopefully it is enjoyable. ^_^
+
+
+-=-=-=--=-=|Map30|=-=-=--=-=-
+Level name : Quarante-deux
+Author(s) : JC
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68, XWE 1.16
+                     
+                     
+Music track : Doom Endgame Music                 
+Bug : none
+Inspiration : New from scratch
+
+
+-=-=-=--=-=|Map31|=-=-=--=-=-
+Level name          : Casemate
+Author(s)          : Riad ''ZyklonB'' Cherigui
+Build time          : 3 Hours
+Editor(s) used      : Doom builder 1.68
+                   
+                   
+Music track        : MIDI version of the Amiga game "Alien Breed: Tower Assault" Title screen music
+
+Bugs                : None
+Inspiration        : Some random Bunker's map found on Google image... :P
+Author comments    : Welcome to my lair! Be my guest! Another day, another cry. But remmember -- Shoot or DIE!!! ?
+Just try your best to avoid the showers, they smell a bit... :P
+
+
+-=-=-=--=-=|Map32|=-=-=--=-=-
+Level name : Ta Mitralleuse
+Author(s) : Maxime Bisiaux (Datacore)
+Build time : 3 hours
+Editor(s) used : Doom Builder 1.68
+
+Music track : rjumpq.wad map 01
+Bugs : None.
+Inspiration : Super Mario World (Really ^^).
+Author comments : If you can win only with the Chaingun...You are a Super Player :D
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+http://doomfrance.forumactif.com/forum
+http://doomstaze.free.fr/
+http://Straff50.free.fr/Files/Wads
+http://dl.baseq.fr/doom/wads/

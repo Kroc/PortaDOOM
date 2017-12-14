@@ -1,7 +1,5 @@
 Pages:
 ================================================================================
-[X] Create a DTWiD page set
-   (easier to handle dependencies bundling these together)
 [ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
     incompatibility with ZScript and a visual bug -- current work-around is to
     limit it to software rendering

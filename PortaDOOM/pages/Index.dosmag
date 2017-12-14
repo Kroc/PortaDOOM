@@ -1,5 +1,15 @@
 $THEME=BLUE
 $KEY:#=GOTO:Index - #
+$KEY:1=GOTO:Index - #
+$KEY:2=GOTO:Index - #
+$KEY:3=GOTO:Index - #
+$KEY:4=GOTO:Index - #
+$KEY:5=GOTO:Index - #
+$KEY:6=GOTO:Index - #
+$KEY:7=GOTO:Index - #
+$KEY:8=GOTO:Index - #
+$KEY:9=GOTO:Index - #
+$KEY:0=GOTO:Index - #
 $KEY:A=GOTO:Index - A
 $KEY:B=GOTO:Index - B
 $KEY:C=GOTO:Index - C
@@ -26,6 +36,9 @@ $KEY:W=GOTO:Index - W
 
    [#]
 	- *20 Monsters
+	- *3 Heures d'agonie I								3 Heures Series
+	- *3 Heures d'agonie II								3 Heures Series
+	- *3 Heures d'agonie III							3 Heures Series
 	- *32in24-14: How the Hamburglar Stole Christmas
 	- *32in24-16: DOOT CTF
 	- *50 Shades of Graytall

@@ -1,14 +1,20 @@
 $THEME=BLUE
 $KEY:A=GOTO:20 Monsters
-$KEY:B=GOTO:32in24-14
-$KEY:C=GOTO:32in24-16
-$KEY:D=GOTO:50 Shades of Graytall
+$KEY:B=GOTO:3 Heures Series #01
+$KEY:C=GOTO:3 Heures Series #02
+$KEY:D=GOTO:3 Heures Series #03
+$KEY:E=GOTO:32in24-14
+$KEY:F=GOTO:32in24-16
+$KEY:G=GOTO:50 Shades of Graytall
 
 ^C:INDEX :: 0-9
 
 :-------------------------------------------------------------------------------
 
 - [A] *20 Monsters										Community Projects
-- [B] *32in24-14: How the Hamburglar Stole Christmas	Community Projects
-- [C] *32in24-16: DOOT CTF								Multiplayer
-- [D] *50 Shades of Graytall							Community projects
+- [B] *3 Heures d'agonie I								MegaWADs
+- [C] *3 Heures d'agonie II								MegaWADs
+- [D] *3 Heures d'agonie III							MegaWADs
+- [E] *32in24-14: How the Hamburglar Stole Christmas	Community Projects
+- [F] *32in24-16: DOOT CTF								Multiplayer
+- [G] *50 Shades of Graytall							Community projects
