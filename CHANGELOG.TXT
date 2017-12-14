@@ -6,6 +6,7 @@
 + Added "3 Heures d'agonie" series by the French Doom Community
 + Added "dead.air" WAD page
 + Added "Brigandine" WAD page
++ Added "Counterattack" WAD page
 + Added "The Given" WAD page
 
 13-12-17:

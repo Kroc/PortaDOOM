@@ -10,7 +10,8 @@ $KEY:H=GOTO:Chord Series #04
 $KEY:I=GOTO:Chord Series #05
 $KEY:J=GOTO:Comatose
 $KEY:K=GOTO:Master Levels #05
-$KEY:L=GOTO:Crumpets
+$KEY:L=GOTO:Counterattack
+$KEY:M=GOTO:Crumpets
 
 ^C:INDEX :: C
 
@@ -27,4 +28,5 @@ $KEY:L=GOTO:Crumpets
 - [I] *Chord Series: CHORD3								5 Years of Doom
 - [J] *Comatose											Onesies
 - [K] *Master Levels: Combine, (The)					Commercial DOOM
-- [L] *Crumpets											Episodes
+- [L] *Counterattack									Episodes
+- [M] *Crumpets											Episodes

@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD mek-catk.wad /CMPLVL 9 -- ca_wsbar.wad

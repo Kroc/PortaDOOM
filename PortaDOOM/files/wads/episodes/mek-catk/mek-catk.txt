@@ -1,0 +1,329 @@
+===========================================================================
+Advanced engine needed  : Boom
+                  (Strong limit removing support and ZDoom's extended node 
+                  format are required for a couple of these maps).
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Counterattack
+Filename                : mek-catk.wad
+                          ca_wsbar.wad (widescreen statusbar gfx)
+Release date            : February 12th, 2017
+Author                  : Brett "Mechadon" Harrell
+Email Address           : [redacted]
+Other Files By Author   : A bunch of junk 
+                          (see: http://mekworx.the-powerhouse.net/design/)
+Misc. Author Info       : Lazytron
+
+Description             : Counterattack is a 7-map mini episode for 
+                          Doom II.  Each map was designed to be played from 
+                          pistol-start; continuous play is fine but will
+                          make the play through much easier.  This map set 
+                          originally started out as a single map 
+                          contribution to the Vinesauce map contest held 
+                          in 2016 by Joel "Vargskelethor".  The map in 
+                          question (MAP02) was started on in early 
+                          September, and finished on September 9th.
+                          Afterwards, I officially started the project
+                          on October 10th (shortly after finishing MAP04).
+
+                          My goal with this project was to exercise with
+                          the Doom II texture assets, and to create some 
+                          maps for practice.  All maps use stock Doom II 
+                          textures (aside from skies and minor extras).  
+                          The maps are medium-to-large in size and have 
+                          many different paths that you can take.  
+                          Replayability was a design goal I tried to aim 
+                          for.  Difficulty is somewhat middling, but should 
+                          ramp up a bit towards the end.
+
+                          There is no way to exit to MAP31, so you will
+                          have to warp to it in order to play it.  There
+                          is a secret exit in MAP31 that leads to MAP32,
+                          so have fun hunting for it!
+
+                          Note that MAP06 and MAP30 are not meant to be
+                          a part of the main campaign.  MAP06 is for
+                          story purposes for ports that can't display
+                          the ending text.  MAP30 is there as a way to
+                          keep the game from [potentially] crashing
+                          because I replaced some of the IoS things in
+                          the DEHACKED (its also a dumb in-joke).
+
+                          Also note that you shouldn't use jumping or
+                          crouching in these maps.  It has been disabled
+                          in ZDoom, but some ports will still allow it.
+                          If you do use jumping or crouching, you may
+                          break the maps.  Mouselook is ok but it may
+                          make certain secret triggers easier than 
+                          intended.
+
+                          Note for PrBoom+ users: Use complevel 9
+
+Story                   : "The Earth burns.  Humanity's only hope of
+                          salvation, the Flux Gate, is in the hands of
+                          the unfathomable hellish hordes.
+
+                          Off-world, the UAC spot the source of the 
+                          demon's immense power; a massive gate of fire in 
+                          a dark corner of the universe which has ripped a 
+                          hole in space-time.  Gargantuan levels of energy 
+                          are detected.  It seems a nearby pulsar is 
+                          powering the festering demonic gate.
+
+                          A plan is devised.  The only way to put an end
+                          to the eternal demonic war is to go to the
+                          source.  The UAC has chosen you to travel back
+                          to Earth and reclaim the Flux Gate."
+===========================================================================
+Texture Credits         : Mechadon
+						  
+                          Sky textures for MAP01, MAP02, MAP03, and MAP4 
+                          were composed of various stock images that I do 
+                          not have credits or sources for.
+						  
+                          Both sky textures for MAP05 were edited from 
+                          stock space images from NASA.
+						  
+                          MAP32 textures come from the game "The Adventures 
+                          of MicroMan, Adventure 1: Crazy Computers" by 
+                          Brian Goble.  I ripped and edited them to work 
+                          in Doom.
+						  
+                          COOP sign is an edit of the Doom exit sign.
+						  
+                          Vargskelethor Vinesauce mushroom texture is by
+                          Joel (with slight edits by me to get it to
+                          look decent in the Doom palette).
+
+						  
+Sprite Credits          : Gate Master Sprites
+                            id Software
+                            3DRealms
+                            Jimmy91
+                            Jimmy
+						
+                          Skull Turret Sprites
+                            id Software
+                            Mechadon
+							
+                          Bubble Ship Sprites
+                            Brian Goble
+                            Mechadon
+							
+							
+Graphic Credits         : Mechadon
+
+                          id Software
+						  
+                          TITLEPIC city skyline comes from the game "Last 
+                          Resort" by SNK.
+						  
+                          CWILV and M_DOOM font comes from a font set
+                          called "Dragon" and comes from this link 
+                          (with no credit given): 
+                http://bmf.php5.cz/bmf03.php?filename=dragon.bmf&t=DRAGON
+
+                          MAP32 CWILV comes from "The Adventures of 
+                          Microman" by Brain Goble.
+
+
+Music Credits           : MAP01 - "Central Command" 
+                            (Deadwing, from Moonblood Midi Pack)
+
+                          MAP02 - "Lands_17.mid" 
+                            (Frank Klepacki, from Lands of Lore)
+
+                          MAP03 - "D_STLKS2.mid"
+                            (Marc Pullen, from Crucified Dreams)
+
+                          MAP04 - "Fight the Logic If You Can" 
+                            (Chris Laverdure, from Alien Vendetta)
+
+                          MAP05 - "Kar2explor.mid" 
+                            (Eric Brosius & Terri Brosius, 
+                            from Terra Nova: Strike Force Centauri)
+
+                          MAP06 - Intermission music - "D_MAP99.mid"
+                            (Marc Pullen, from Crucified Dreams)
+
+                          MAP30 - "CHARMENU.mid" 
+                            (Dan Kehler & Victor Crews, from The Realm)
+
+                          MAP31 - "Field Wandering" 
+                            (Psychedelic Eyeball, from the Max Project)
+
+                          MAP32 - "Micromidi" 
+                            (Original track by John "Cotichelli" Ames, from 
+                            The Adventures of MicroMan.  Recomposed to midi 
+                            by James "Jimmy" Paddock)
+
+                          Title music - "D_MAP98.mid"
+                            (Nicklas Linnes, from Crucified Dreams)
+
+                          Intermission music - "D_MAP99.mid"
+                            (Marc Pullen, from Crucified Dreams)
+
+                          Castcall music - "D_MAP99.mid"
+                            (Marc Pullen, from Crucified Dreams)
+						  
+						  
+Sound Credits           : id Software
+
+                          Monolith Productions
+
+                          Brian Goble
+
+
+Testers/Demo Recorders  : 00_Zombie_00
+
+                          Cage
+
+                          dew
+
+                          Fonze
+
+                          JCD
+
+                          Killer5
+
+                          leodoom85
+
+                          Memfis
+
+                          rdwpa
+
+                          tourniquet
+
+                          Vargskelethor
+
+                          Veinen
+
+                          WH-Wilou84
+
+                          Xenaero
+
+
+Special Thanks          : Joel "Vargskelethor" for doing the Vinesauce Doom 
+                          mapping contest which spawned this project!  And 
+                          for making me laugh my ass off for the past couple 
+                          of years :D
+
+                          Jimmy91 for surprising me with a recomposed music 
+                          track of The Adventures of MicroMan!  Thanks a ton
+                          man, it really made me smile :D
+
+                          Fonze for his early testing and feedback.
+
+                          dew for using his expertise to give me some
+                          excellent feedback and demos to help me out.
+
+                          Wildweasel for the tip on how to make the
+                          statusbar wide-screen friendly.
+
+                          floatRand for spotting a really terrible bug in
+                          MAP01 (resulting in me making a quick fix).
+
+                          Everyone at Doomworld and ZDoom who recorded demos,
+                          videos, and streamed the beta and gave me feedback.
+
+                          All of the fine folks in the Doom community who 
+                          help keep the game alive and keep me entertained 
+                          and inspired!
+
+
+Author Note             : Anything made by me in this project (aside from 
+                          the maps) is free for use in any way you see fit.  
+                          If you have any questions, just send me an email.  
+                          If you do use something that I made in a project, 
+                          lemme know!  And please give credit if you can 
+                          remember.  Thanks!
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (included inside wad)
+Demos                   : No
+Other                   : ca_wsbar.wad (widescreen statusbar gfx)
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP06, MAP30-MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Player starts only; untested
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : From scratch
+Build Time              : 6 months
+Editor(s) used          : GZDoom Builder, SLADE, GIMP, WhackEd4, Notepad++,
+                          Sid2Mid
+Known Bugs              : In MAP01, the Red Keycard crusher section doesn't
+                          time properly in ZDoom because of some difference
+                          with voodoo doll scrollers.  It doesn't break the
+                          sequence, it just makes it possible to get stuck
+                          under one of them if your not careful.  Sorry I
+                          couldn't figure out a way to fix this :(
+
+                          In MAP04, at the Yellow Skull fight, a large
+                          section of the floor lowers into some steps.
+                          Monsters like to get stuck on the edges and
+                          I don't know of a good way to get around this.
+                          So use it to your advantage I guess.
+
+                          The final boss's death & sight sounds don't 
+                          play at full volume (this is fixed in ZDoom).
+
+                          Multi-part lifts are used in numerous places
+                          throughout all of the maps.  I have tried to
+                          mitigate the possibility of them breaking as
+                          much as possible.  But a busted lift is
+                          still something that may happen.
+
+                          The wide-screen statusbar graphic replacement
+                          currently doesn't look right in Zandronum 2.1.2,
+                          Odamex, and Doom Retro (and maybe others).
+
+                          Some of the later maps may cause lag in certain
+                          ports and/or on certain machines.
+
+                          There are probably lots of little slimetrails
+                          in many of the maps.  Don't worry, they won't
+                          hurt you.
+May Not Run With        : Non-Boom compatible ports and/or ports that 
+                          can't run maps with ZDoom's extended node format.
+
+                          Gameplay altering mods may encounter conflicts 
+                          from the DEHACKED and DECORATE.  So run them at
+                          your own risk.
+Tested With             : PrBoom+, ZDoom, GZDoom, and Eternity
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes. If you remix, transform, or build upon the
+material, you must distribute your contributions under the same license as
+the original.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: http://mekworx.the-powerhouse.net/
