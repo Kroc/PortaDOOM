@@ -1,0 +1,51 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\legher\play.bat
+$KEY:T=SHELL:wads\episodes\legher\legher.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/legher
+
+:Legacy of Heroes                                   * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>02>11	  Author : _Gaspe_
+:Levels   : *11			   Modes : *Single, Co-op?
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+*Legacy of Heroes* is a Boom compatible episode for Doom 2 with 11 levels. The maps use the textures from Eternal Doom and the themes for the most are fantasy oriented. The maps also feature a more adventurous style and the level progression was made to make feel the episode like a continuous journey. Some levels are very long and all of them were desgned with pistol starts in mind.
+
+The last level has a custom dehacked boss. This is the first wad I started to work on it, the development started in March 2015 and ended in October 2016 though works weren't continuous.
+
+*Story:
+
+Along with its experiments on the teleportation, the UAC on Earth started to make studies and experiments on the time travel. One of the oldest bases that was shut down and ready to be disbanded after being too unsuccessful for the researches suddenly started to work on its own. A mysterious force from the other side took control of the time gate and from there it started a hellspawn invasion. Breaching into the infested base you are able to reach the time gate, but it can't be sealed from there. The only thing you can do is to step into the time gate...
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: I don't know exactly, approximately 10 months
+*Editor(s) used			: Doom Builder 2, Slade3, Gimp 2
+*Known Bugs				: some little slime trails and some textures misalignments have probably remained, MAP08 bridge may have some homs if you use a GL port
+*May Not Run With		: Vanilla
+*Tested With			: PrBoom+ 2.5.1.4 with complevel 9
+
+:Credits
+:-------------------------------------------------------------------------------
+The Return texture pack, Hexen, Heretic, Quake 1, Hexen 2, Gothictx, _Plum_'s Skystravaganza, _Baker_'s Legacy, Esseltx1, Deus Vult II.
+
+*Music	: MAP01: Eternal Doom -  MAP01
+		  MAP02: Eternal Doom -  MAP05
+		  MAP03: Daggerfall - Dungeon N.22
+		  MAP04: Hexen - Forsaken Outpost
+		  MAP05: Eternal Doom -  MAP12
+		  MAP06: Equinox - Atlena
+		  MAP07: Final Fantasy VII - City of the Ancients
+		  MAP08: Eternal Doom -  MAP24
+		  MAP09: Doom64 - Watch your Step
+		  MAP10: Heretic - E2M8
+		  MAP11: Eternal Doom -  MAP02
+		  Title: Eternal Doom -  MAP11
+		  Message: Eternal Doom -  MAP15
+		  Intermission: Eternal Doom - Intermission
+
+And thanks to the guys at Doomworld for their support and assistance.

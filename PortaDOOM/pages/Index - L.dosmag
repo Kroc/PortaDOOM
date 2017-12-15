@@ -1,10 +1,12 @@
 $THEME=BLUE
-$KEY:A=GOTO:lilith.pk3
-$KEY:B=GOTO:Luducrium
+$KEY:A=GOTO:Legacy of Heroes
+$KEY:B=GOTO:lilith.pk3
+$KEY:C=GOTO:Luducrium
 
 ^C:INDEX :: L
 
 :-------------------------------------------------------------------------------
 
-- [A] *lilith.pk3										Episodes
-- [B] *Luducrium										Jokes
+- [A] *Legacy of Heroes									Episodes
+- [B] *lilith.pk3										Episodes
+- [C] *Luducrium										Jokes
