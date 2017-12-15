@@ -4,6 +4,7 @@
 
 15-12-17:
 + Added "Legacy of Heroes" WAD page
++ Added "Saturnine Chapel" WAD page
 
 14-12-17:
 + Added "3 Heures d'agonie" series by the French Doom Community

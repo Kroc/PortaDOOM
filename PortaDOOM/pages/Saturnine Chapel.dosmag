@@ -1,0 +1,37 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\onesies\satchap\play.bat
+$KEY:T=SHELL:wads\onesies\satchap\SatChap.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/satchap
+
+:Saturnine Chapel (MNENMA 0)                        * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>01>13	  Author : _dobu gabu maru_
+:Levels   : *2			   Modes : *Single, Co-op?
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+	"What does fear taste like?
+	 May I savor yours?"
+
+*Dreamer:* Foslanp Lakob
+*Intended Difficulty:* Skill 3 "Normal"
+
+Entry from *"Rending of the Veil: Journals and Diaries from the Astral Plane"*, Chapter 6:
+
+	"I write of sorrow, yes, I write of things most ill.
+
+	A wild sickness has consumed me; my fever dreams have broken into a delirium far worse than I thought possible. And yet therein those rancid visions I have found it--the monument; my muse; the twilight tower. My eyes ne'er stray from its enchaned floors and page-encrusted walls, my soul kept rapt amidst tomes of forbidden knowledge. I truly swear that I had once wished to be free--this a delicate, erstwhile truth--but brought low am I, on boneless knees before the profane glory of the saturnine chapel! My fingernails bend and crook into the shape of pens, my crimson blood congealing into a tarry ink. I stand as scribe eternal to the wonders that have been revealed to me, my sick and aching body the perfect vessel for corporeal transcriptions.
+
+	So I shall write of sorrow, yes, I shall craft things most ill!"
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: Two months
+*Editor(s) used			: Doom Builder 2
+*Known Bugs				: Slime trails everywhere
+*May Not Run With		: Any port that does not support extended nodes, old ports of PrBoom/Zdoom
+*Tested With			: Zdoom 2.6.1, PrBoom 2.5.0, PrBoom+ 2.5.1
+*Music track			: "Egypt" by _Ribbiks_

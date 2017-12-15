@@ -1,0 +1,95 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Singleplayer
+===========================================================================
+Title                   : Saturnine Chapel (MNENMA 0)
+Filename                : SatChap.wad
+Release date            : 1/13/17
+Author                  : dobu gabu maru
+Email Address           : edemaomega@yahoo.com
+Other Files By Author   : Co-leader of NOVA & NOVA 2. Got a variety of
+                          other maps elsewhere (MAYhems, THT, UDINO, TNT:R)
+
+Description             : "What does fear taste like?
+
+May I savor yours?"
+
+Additional Credits to   : All of the playtesters--thanks guys!
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes (UI/titlescreen stuff)
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Two months
+Editor(s) used          : Doom Builder 2
+Known Bugs              : Slime trails everywhere
+May Not Run With        : Any port that does not support extended nodes,
+                          old ports of PrBoom/Zdoom
+Tested With             : Zdoom 2.6.1, PrBoom 2.5.0, PrBoom+ 2.5.1
+Music track             : "Egypt" by Ribbiks
+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+===========================================================================
+
++-+-+SATURNINE CHAPEL+-+-+
+(Or, if you will, MNENMA 0)
+Dreamer: Foslanp Lakob
+Intended Difficulty: Skill 3 "Normal"
+Entry from "Rending of the Veil: Journals and Diaries from the Astral
+Plane", Chapter 6:
+
+"I write of sorrow, yes, I write of things most ill.
+
+A wild sickness has consumed me; my fever dreams have broken into a
+delirium far worse than I thought possible. And yet therein those rancid
+visions I have found it--the monument; my muse; the twilight tower. My 
+eyes ne'er stray from its enchaned floors and page-encrusted walls, my 
+soul kept rapt amidst tomes of forbidden knowledge. I truly swear that 
+I had once wished to be free--this a delicate, erstwhile truth--but brought 
+low am I, on boneless knees before the profane glory of the saturnine 
+chapel! My fingernails bend and crook into the shape of pens, my crimson 
+blood congealing into a tarry ink. I stand as scribe eternal to the wonders 
+that have been revealed to me, my sick and aching body the perfect vessel 
+for corporeal transcriptions.
+
+So I shall write of sorrow, yes, I shall craft things most ill!"
