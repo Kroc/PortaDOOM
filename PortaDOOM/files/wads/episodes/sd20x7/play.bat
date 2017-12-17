@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD sd20x7.wad /CMPLVL 19

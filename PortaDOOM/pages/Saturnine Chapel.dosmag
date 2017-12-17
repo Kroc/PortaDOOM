@@ -1,4 +1,4 @@
-$NAV=Episodes
+$NAV=Onesies
 $KEY:P=SHELL:wads\onesies\satchap\play.bat
 $KEY:T=SHELL:wads\onesies\satchap\SatChap.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/satchap

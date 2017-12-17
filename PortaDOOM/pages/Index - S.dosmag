@@ -3,11 +3,12 @@ $KEY:A=GOTO:Shadow Of The Wool Ball
 $KEY:B=GOTO:Shadows of the Nightmare Realm
 $KEY:C=GOTO:Sheer Poison
 $KEY:D=GOTO:Skulldash
-$KEY:E=GOTO:Strange Aeons
-$KEY:F=GOTO:Master Levels #10
-$KEY:G=GOTO:Sunlust
-$KEY:H=GOTO:Master Levels #11
-$KEY:I=GOTO:Swift Death
+$KEY:E=GOTO:Stardate 20x7
+$KEY:F=GOTO:Strange Aeons
+$KEY:G=GOTO:Master Levels #10
+$KEY:H=GOTO:Sunlust
+$KEY:I=GOTO:Master Levels #11
+$KEY:J=GOTO:Swift Death
 
 ^C:INDEX :: S
 
@@ -17,8 +18,9 @@ $KEY:I=GOTO:Swift Death
 - [B] *Shadows of the Nightmare Realm					Episodes
 - [C] *Sheer Poison										Onesies
 - [D] *Skulldash										Total Conversions
-- [E] *Strange Aeons									Total Conversions
-- [F] *Master Levels: Subspace							Commercial DOOM
-- [G] *Sunlust											MegaWADs
-- [H] *Master Levels: Subterra							Commercial DOOM
-- [I] *Switft Death										MegaWADs
+- [E] *Stardate 20x7									Episodes
+- [F] *Strange Aeons									Total Conversions
+- [G] *Master Levels: Subspace							Commercial DOOM
+- [H] *Sunlust											MegaWADs
+- [I] *Master Levels: Subterra							Commercial DOOM
+- [J] *Switft Death										MegaWADs

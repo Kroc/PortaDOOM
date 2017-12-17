@@ -1,0 +1,121 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\sd20x7\play.bat
+$KEY:T=SHELL:wads\episodes\sd20x7\sd20x7.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/sd20x7
+
+:Stardate 20x7                                      * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>05>24	  Author : _Ribbiks_
+:Levels   : *11			   Modes : *Single, Co-op
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demoes
+:-------------------------------------------------------------------------------
+
+*** PLAY ON HMP/HNTR ***
+
+9 Boom-compatible maps (i.e. prb+ cl9). Explore a mostly-purple world of villages, space bases, temples, and beyond!! These maps are really god damn hard. I put most of my time and effort into making HMP the intended difficulty setting, it's by far the most fun and balanced. Think of Stardate20x7's HMP as everyone else's UV. Similarly, HNTR was balanced to be comparable to other challenging mapsets on HMP. UV is NOT the intended way to play the levels on a first playthrough, but rather was intended to be a "bonus" setting reserved for hardcore sadomasochists that are already familiar with the maps and want pure challenge. Anyhow, this set is a mix of "casual" maps, cramped maps, and some slaughtermaps (surprise!). Good luck!
+
+*** PLAY ON HMP/HNTR ***
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New
+*Build Time				: A while
+*Editor(s) used			: DB2, Slade3
+*Known Bugs				: Some slime trails, etc.
+*May Not Run With		: Ports other than...
+*Tested With			: prb+ 2.5.1.4,  Zdoom 2.8.1
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Esselfortium_: Sexy base textures
+- _40oz_: For some recolored UAC Ultra assets
+- _NiGHTMARE_: Resources from his "Hellish texture pack"
+- Here's the obligatory list that accompanies any cc4-tex assets:
+  - _NiGHTMARE_
+  - _Espi_
+  - _Eriance_
+  - _Fredrik Johansson_
+  - _Janitor_
+  - _DaGGeR_
+  - _Ola Bjorling_
+  - _Vader_
+  - _XDelusion_
+  - _esselfortium_
+  - _RottKing_
+  - _Nuxius_
+  - _Afterglow_
+  - _AgentSpork_
+  - _RottKing_
+  - _Enjay_
+  - _Huy Pham_
+  - _SargeBaldy_
+  - _Tormentor667_
+  - The GothicDM Team
+  - The Requiem Team
+  - The Eternal Doom Team
+  - id Software
+  - Raven Software
+  - Rogue Entertainment
+  - 3D Realms Entertainment
+  - LucasArts
+  - H. R. Giger (converted by Stephen Renton)
+
+*Playtesting:
+
+- _Dannebubinga_
+- _Killer5_
+- _Demonologist_
+- _rdwpa_
+- _Cynical_
+- _Phml_
+- _Archi_
+
+:Map List
+:===============================================================================
+$KEY:L=URL:http://www.ultimate-guitar.com/forum/showthread.php?t=1615822
+*MAP01	: Sun/Moon/Stars
+*Music	: "The Journey" by _Kafiolet_, rearranged by _Ribbiks_.
+		  This midi is a frankenstein rearrangement of an interesting composition called "The Journey" by the user _Kafiolet_ over on Ultimate Guitar forums. I edited it without his permission, I'm a bad person, my apologies. As consolation here's a [L: link to the forum thread] where I ripped the song.
+*About	: A leisurely camping getaway with your heterosexual life-partner Chris is abruptly cut short by a gaggle of imps. When you come to you find the town isn't quite how you remember it...
+:-------------------------------------------------------------------------------
+*MAP02	: Eastern Sun
+*Music	: "Eastern Sun" by _SeraphSnake_
+*About	: Your adventure lands you in a cavernous grassy complex ornamented with mysterious bits of technological riffraff. There must be something going on under the surface...
+:-------------------------------------------------------------------------------
+*MAP03	: Amethyst III
+*Music	: "Funky Stars" by _Quasar of Sanxion_, sequenced by _James Paddock_
+*About	: Launched into space! Specifically, to the prequel of "Amethyst 4: In Space" and perhaps "Amethyst: In The Hood" later down the line. It's a cramped and tightly interwoven space station, chock full of bring-your-cpu-to-a-crawl decor. A brief affair.
+:-------------------------------------------------------------------------------
+*MAP04	: Velvet Blood Mission
+*Music	: "Psylocke Theme" from X-men Mutant Apocalypse, rearranged by _Ribbiks_
+*About	: Welcome to the blood bank, Senator Trent.
+:-------------------------------------------------------------------------------
+*MAP05	: Sphinx Rising
+*Music	: "Arcadia, Arcadia Demade" by _John Weekly_ (_PRIMEVAL_)
+*About	: An ominous tech-complex ensconced in the violet core of an alien planet, where the rocks are bleeding...
+:-------------------------------------------------------------------------------
+*MAP06	: The Other Side
+*Music	: "Ivor Tower" from the game "Secret of Evermore"
+*About	: You seemed to have slipped into another dimension entirely. Mysterious techno-ruins adrift in an ocean of Ribena. Proto-slaughter set-pieces aplenty, you know the drill...
+:-------------------------------------------------------------------------------
+*MAP07	: Lotus Keep
+*Music	: "Collosia, Chamber 2" from the game "Secret of Evermore"
+*About	: A cramped and prickly sequence of hair-triggered skirmishes stuffed into the windy innards of a dark alien temple.
+:-------------------------------------------------------------------------------
+*MAP08	: Grand Ballroom
+*Music	: Midi rendition of "Abyss" by _DJ Taka_, rearranged by _Ribbiks_
+*About	: A hardcore frolic in an expansive pandimensional dance hall.
+:-------------------------------------------------------------------------------
+*MAP09	: Do You Believe?
+*Music	: "It's in C-minor too?" by _Ribbiks_
+*About	: You've reached the HEART of it all. The usual suspects line the walls of this twisted menagerie of slaughter set-pieces and nonsensical puzzles. Do you believe?
+:-------------------------------------------------------------------------------
+*MAP31	: Hopscotch
+*Music	: "Ocean" from the game Vectorman
+*About	: The files are inside the computer.
+:-------------------------------------------------------------------------------
+*MAP32	: Issai Perfect
+*Music	: "Think About Me" - Artful Dodger / "Manoria Cathedral" from the game Crono Trigger
+*About	: A brief hunk of slaughter. A partial reinvisioning of an old map of mine called "cg.wad" that probably no one has played.
