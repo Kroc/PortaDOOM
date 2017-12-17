@@ -1,0 +1,25 @@
+$NAV=Onesies
+$KEY:P=SHELL:wads\onesies\RAINBOW\play.bat
+$KEY:W=URL:https://www.doomworld.com/forum/topic/97787-void-and-rainbow/
+
+:Void and Rainbow                                   * 2017 Cacoward winner! *
+:===============================================================================
+*[P] Play						*[W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>10>31	  Author : _Serious_MOod_
+:Levels   : *11			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+As once listening to Annihilator and playing one old game, I thought: what if I make mountains hovering in space that will shimmer with the colors of the rainbow? As a result, having threatened for one year and one month to some extent, I realized what I had planned. It was difficult for me alone to do everything, and so I called for help _TheSkyBug_, who made weapons, some monsters, and a bunch of different trifles, and also _ZZYZX_, who made a new lighting system. Big thanks to them. Also thanks to _ChaingunnerX_, _DOOMGABR_, _Dagamon_, _VladGuardian_ and other people for help of various kinds - without you this wad would come out much later.
+
+It's absolutely necessary to enable the OpenGL, it's very desirable to include the dinamic lights (well, some settings to them, so that they do not shine through the walls, and that looks bad) and Bloom, Sector Light Mode: Doom (if it's too dark, it's better to correct the contrast), jumps and squats are mandatory, tested in GZDoom 3.2, IWAD: DOOM2.WAD
+
+It is better to turn off texture filtering. That is, put it on "none", otherwise the lighting will be buggy.
+
+:Credits
+:-------------------------------------------------------------------------------
+*Music:
+- Angel Beats OST - Kanade
+- Akira OST - Illusion
+- Serious Sam TSE OST - Fight 2 

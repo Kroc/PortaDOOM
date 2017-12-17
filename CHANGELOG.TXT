@@ -2,10 +2,13 @@
 * = Fix / Change
 - = Removal
 
+17-12-17:
++ Added "Stardate 20x7" WAD page
++ Added "Void and Rainbow" WAD page
+
 15-12-17:
 + Added "Legacy of Heroes" WAD page
 + Added "Saturnine Chapel" WAD page
-+ Added "Stardate 20x7" WAD page
 
 14-12-17:
 + Added "3 Heures d'agonie" series by the French Doom Community

@@ -3,6 +3,7 @@ $KEY:A=GOTO:Valiant
 $KEY:B=GOTO:Venom
 $KEY:C=GOTO:Master Levels #19
 $KEY:D=GOTO:Master Levels #13
+$KEY:E=GOTO:Void and Rainbow
 
 ^C:INDEX :: V
 
@@ -12,3 +13,4 @@ $KEY:D=GOTO:Master Levels #13
 - [B] *Venom											5 Years of Doom
 - [C] *Mater Levels: Vesperas							Commercial DOOM
 - [D] *Mater Levels: Virgil's Lead						Commercial DOOM
+- [E] *Void and Rainbow									Onesies
