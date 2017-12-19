@@ -1,0 +1,11 @@
+wads\conversions\freedoom\
+wads\SHAREWARE\*.WAD
+
+play.bat
+doom.bat
+
+tools\**
+
+config\
+
+ports\**

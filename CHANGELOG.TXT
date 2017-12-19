@@ -3,6 +3,7 @@
 - = Removal
 
 19-12-17:
++ Added a build target for just the launcher ("doom.bat" / "play.bat")
 + Added "Rise of the Wool Ball" WAD page
 
 17-12-17:

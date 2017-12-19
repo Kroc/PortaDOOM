@@ -102,6 +102,8 @@ ECHO     [E]  Cacowards: 5 Years of Doom
 ECHO:
 ECHO     [P]  PSX DOOM TC
 ECHO:
+ECHO     [X]  Launcher only ^(doom.bat / play.bat^)
+ECHO:
 
 SET "P="
 SET /P "$=Enter choice: "
@@ -111,6 +113,7 @@ IF /I "%$%" == "C" GOTO :do_release_cacowards2016
 IF /I "%$%" == "D" GOTO :do_release_cacowards2015
 IF /I "%$%" == "E" GOTO :do_release_5yearsofdoom
 IF /I "%$%" == "P" GOTO :do_release_psxdoomtc
+IF /I "%$%" == "X" GOTO :do_release_launcher
 
 GOTO :menu
 
@@ -125,6 +128,7 @@ CALL :do_cacowards2015
 CALL :do_cacowards2016
 CALL :do_cacowards2017
 CALL :do_psxdoomtc
+CALL :do_launcher
 
 ECHO:
 ECHO Complete.
@@ -320,6 +324,29 @@ REN "pages\Home #01.old" "Home #01.dosmag"
 IF ERRORLEVEL 1 PAUSE & EXIT
 
 POPD
+GOTO:EOF
+
+
+:do_release_launcher
+REM ====================================================================================================================
+TITLE Creating PortaDOOM Launcher release...
+ECHO:
+ECHO * Make PortaDOOM_Launcher ...
+DEL build\PortaDOOM_Launcher.7z  >NUL 2>&1
+
+REM # the archive will be built without a base folder
+REM # and without the PortaDOOM executable / pages
+PUSHD PortaDOOM\files
+
+REM # Launcher is always maximum compression as it doesn't use the PortaDOOM executable
+"..\..\%BIN_7ZA%" a -bso0 -bsp1 %ZIP_MAX% -stl ^
+	-xr@..\..\bin\ignore.lst ^
+	-i@..\..\bin\include_launcher.lst ^
+	-- ..\..\build\PortaDOOM_Launcher.7z
+IF ERRORLEVEL 1 PAUSE
+
+POPD
+PAUSE
 GOTO:EOF
 
 
