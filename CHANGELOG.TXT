@@ -5,6 +5,7 @@
 19-12-17:
 + Added a build target for just the launcher ("doom.bat" / "play.bat")
 + Added "Rise of the Wool Ball" WAD page
+- Removed GZDoom v3.1 due to security issue in version 3.0-3.2.3
 
 17-12-17:
 * Upgraded GZDoom to 3.2.4

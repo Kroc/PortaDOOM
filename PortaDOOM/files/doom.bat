@@ -8,14 +8,14 @@ REM # - searches GOG & Steam installs if WAD is missing
 REM # - automatically patches DOOM 3 BFG Edition WADs 
 REM # - FreeDOOM substituted if commercial DOOM.WAD / DOOM2.WAD missing
 REM # - will search the engine's folder for WADs if not found elsewhere (e.g. "lights.pk3")
-REM # - IWAD file extensions can be omitted (".WAD" / ".PK3");
-REM #   PWAD and other WAD extensions are required due to the number of locations checked
+REM # - IWAD file extensions can be omitted: ".WAD" / ".PK3" / ".IWAD" / ".IPK3";
+REM #   (PWAD and other WAD extensions are required due to the number of locations checked)
 REM # - DeHackEd extension loading (".DEH", ".BEX" files)
 REM # - demo playback support
 REM # - files are checked to exist before being passed on to the engine
 REM # - launches the engine in the native resolution of the current machine (portable)
 
-REM # todo:
+REM # TODO:
 REM # - option to launch windowed -- will need to choose reasonable window size
 REM # - Strife shareware & GOG/Steam detection
 
@@ -83,8 +83,8 @@ ECHO     choco-hexen-setup   : As above, but displays configuration first
 ECHO     choco-strife        : As with choco-doom, but for Strife WADs
 ECHO     choco-strife-setup  : As above, but displays configuration first
 ECHO     doom64ex            : DOOM 64 EX, specifically for DOOM 64
-ECHO     gzdoom              : GZDoom current. Use /SW for ZDoom software rendering
-ECHO     gzdoom-??           : Where ?? is "22", "23", "24", "31" or "32"
+ECHO     gzdoom              : GZDoom current. Use /SW for software rendering
+ECHO     gzdoom-??           : Where ?? is "22", "23", "24", "32"
 ECHO     prboom              : PRBoom+ defaults to OpenGL. Use /SW for software
 ECHO     zandronum           : Zandronum current ^(2.x^)
 ECHO     zandronum-?         : Where ? is "2" or "3"
@@ -127,17 +127,18 @@ ECHO:
 ECHO     The IWAD ^(Internal WAD^) is the base WAD to use. This will be one of the
 ECHO     original game's WAD files which maps, mods and total conversions extend.
 ECHO:
+ECHO     IWADs are located in the "%DIR_WADS%" folder.
+ECHO:
 ECHO     If this option is ommitted the default IWAD will be based on the selected
 ECHO     engine. Some engines support only a certain game, i.e.
 ECHO:
 ECHO         chocolate-heretic[-setup] : HERETIC.WAD
 ECHO         chocolate-hexen[-setup]   : HEXEN.WAD
 ECHO         chocolate-strife[-setup]  : STRIFE1.WAD
+ECHO         doom64ex                  : DOOM64.WAD
 ECHO:
 ECHO     All other engines default to DOOM2.WAD as this is the most common one used
 ECHO     for community content.
-ECHO:
-ECHO     IWADs are located in the "%DIR_WADS%" folder.
 ECHO:
 ECHO     Steam ^& GOG:
 ECHO:
@@ -166,7 +167,7 @@ ECHO         Heretic : HERETIC.WAD ^> HERETIC1.WAD (episode 1 only)
 ECHO         Hexen   : HEXEN.WAD   ^> HEXEN.WAD    (shareware version)
 ECHO         Strife  : STRIFE1.WAD ^> STRIFE0.WAD  (shareware version)
 ECHO:
-ECHO     NOTE: There was no shareware version for DOOM II.
+ECHO     NOTE: There was no shareware release for DOOM II.
 ECHO:
 ECHO  /PWAD ^<file^>
 REM ---------------------------------------------------------------------------------
@@ -330,11 +331,11 @@ REM # this will be used as an additional search location for finding PWADs
 SET "DIR_CUR=%CD%"
 
 REM # change current directory to that of this script;
-REM # ensures that shortcuts to this script don't end up looking elsewhere for files
+REM # ensures that short-cuts to this script don't end up looking elsewhere for files
 PUSHD "%~dp0"
 
 REM # if the directory this script was called from is somewhere within
-REM # the same heirarchy of this script, make the folder path relative
+REM # the same hierarchy of this script, make the folder path relative
 SETLOCAL ENABLEDELAYEDEXPANSION
 SET "DIR_CUR=!DIR_CUR:%CD%\=!"
 ENDLOCAL & SET "DIR_CUR=%DIR_CUR%"
@@ -650,14 +651,6 @@ IF /I "%USE%" == "gzdoom-32" (
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v3.2.x^)"
-)
-IF /I "%USE%" == "gzdoom-31" (
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-31_%ENGINE_BIT%"
-	SET "ENGINE_EXE=gzdoom.exe"
-	SET "ENGINE_CFG=gzdoom"
-	SET "ENGINE_KIN=Z"
-	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v3.1.x^)"
 )
 IF /I "%USE%" == "gzdoom-24" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-24_%ENGINE_BIT%"
