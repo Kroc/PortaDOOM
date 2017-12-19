@@ -1,0 +1,753 @@
+12. Feb. 2006
+- Made the previous -nogl option a CVAR so that it can be saved and controlled
+  from the menu. Now it is possible to set GZDoom to permanent software
+  rendering.
+  
+11. Feb. 2006
+- Changed light handling for weapons in Doom lighting mode so that their
+  brightness better fits the surroundings.
+- Fixed: The LineID hash chain used signed short for its indices. This
+  made it impossible to manipulate lines with an index higher than 32767
+
+9. Feb. 2006
+- Fixed: GL nodes created by GLBSP can contain partner seg references that
+  are not what is expected of them. To avoid problems I have to explicitly
+  check for both back sector and partner seg to make sure there is something
+  valid on the back side of a seg.
+
+7. Feb. 2006
+- Fixed: The Inquisitor can be hurt by explosive damage but only if it comes
+  from non Inquisitors. 
+- Fixed The inquisitor's grenades must not teleport.
+
+5. Feb. 2006
+- Fixed: The flame thrower parts were missing their spawn state.
+
+4. Feb 2006
+- Added fake contrast handling to the GL renderer, including a menu option to
+  switch it off.
+- Added a Transfer_WallLight special which is doing for walls what
+  Transfer_CeilingLight and Transfer_FloorLight are doing for sectors.
+- Fixed: GL nodes v5 didn't check properly for minisegs.
+- Added a new hires texture namespace: Everything between HI_START/HI_END
+  will replace any previously defined texture of the same name and take
+  its scaling/positioning information.
+- Made the texture scaling factor a float so that hires scaling is more
+  precise.
+
+3. Feb 2006
+- Removed the debug messages for moving torches out of walls.
+
+31. Jan 2006
+- Fixed: Macil can't be killed by the first Sigil stage.
+
+28. Jan 2006
+- Fixed: bot_observer cleared the MF_FRIENDLY flag off the player.
+
+27. Jan 2006
+- Fixed: Strife log messages should zero-terminate the text in the lump.
+- Fixed: Warped textures with translucency must clear the texture buffer first.
+
+24. Jan 2006
+- Fixed: Due to some code reorganization the fuzz effect used incorrect
+  translucency settings.
+- Fixed: Particles used incorrect coordinates for drawing.
+- Fixed: Unless the model code can sort polygons models must not use
+  translucency.
+- Fixed: Objects with RenderStyle 'Normal' must not assume that the actor's 
+  translucency setting is 1.
+- Extended hires texture code to look in subfolders named as in Doomsday in
+  addition to ones named as in ZDoomGL.
+  
+22. Jan 2006
+- Fixed: Decals weren't affected by dynamic lights.
+- Fixed: Dumpmap didn't work with GL nodes. It doesn't crash anymore but
+  the written nodes will be invalid.
+
+20. Jan 2006
+- Fixed: The new FS text format function needs to know which is the first 
+  argument to print.
+
+19. Jan 2006
+- Fixing the clamp bug finally allowed me to activate the multisampling
+  (antialiasing) option. But since it requires a complete engine restart
+  it isn't in the menu yet. Set gl_vid_multisample manually to the value you
+  want. 0 is off.
+- Fixed: GLWall::GLWF_CLAMPX had the value 0 so the flag could not be checked.
+  This could cause some texturing artifacts with non-wrappable textures.
+- Replaced the std::string class used in the GL lightdata parser with ZDoom's
+  own string class. There is no immediate benefit but why use two different
+  implementations for the same thing?
+- Cleaned up the GL code so that the upcoming transition to floating point will
+  get somewhat easier.
+  
+18. Jan 2006
+- Added 'Smooth sprite edges' option to the menu. Thanks to DaniJ for a suggestion
+  to make this more efficient.
+- Fixed: P_RipperBlood tried to get the blood color from the missile, not the
+  victim.
+
+16. Jan 2006
+- Changed the coordinate system of the renderer so that one map unit is one
+  rendering unit and that the orientation is the same. The old scale is a 
+  remnant of PrBoom's renderer which was more concerned with 'correctness' than
+  is really necessary. All the needed translations can be handled with
+  the translation matrix much easier.
+- Swapped y and z in all coordinate variable names I could find to bring the
+  naming of axes in line with the rest of the code.
+  
+15. Jan 2006
+- Removed some obsolete code from t_script.cpp
+- Fixed no water damage hack for Legacy maps. Now it can be overridden in
+  the FS lump and it only gets activated when playing Doom format maps.
+- Replaced all string format commands in FS source with ZDoom's string class.
+  The old code was horrendously inefficient and not particularly robust.
+- Major restructuring of FraggleScript code so that the parameter checks
+  output the correct function name. Most functions just outputted a lame
+  generic message that was of no help.
+- Fixed: FraggleScript should be loaded after determining the map format, not
+  before it.
+  
+14. Jan 2006
+- Removed NOSECTOR flag from hate target. Now that this flag gets remapped to
+  RF_INVISIBLE it affects the visibility of this thing for monsters. Having
+  a TNT1 sprite is enough to make invisible so the flag isn't really necessary.
+  
+13. Jan 2006
+- Added some code to compensate for geometry imprecisions in the mirror code.
+
+12. Jan 2006
+- Fixed: COMP_LIMITPAIN was broken when support for shooting other things than
+  Lost Souls was added to the PE functions.
+
+11. Jan 2006
+- Fixed: The local SNDINFO loading code tried to load a nameless lump when no local
+  SNDINFO was specified.
+- The ultimate 'ATI sucks' fix: Some of ATIs graphics cards are so unprecise when 
+  rendering geometry that each and every border between polygons must be seamless, 
+  otherwise there are rendering artifacts worse than anything that could be seen 
+  on Geforce 2's! Made this a menu option because the speed impact is quite severe
+  and this special handling is not necessary on modern NVidia cards.
+
+10. Jan 2006
+- Fixed: Throwing a Dark Servant's summoning doll against a wall could infinitely
+  replicate it.
+- Fixed: Picking up a Soulsphere could reduce your health to 200 if it was above.
+- Fixed: Scrollers must exclude items flagged with MF_NOBLOCKMAP.
+
+9. Jan 2006
+- Fixed: DevIL is apparently not robust enough to handle unidentifiable data without
+  crashing in all cases. Therefore I enclosed the call to ilLoadL in an exception 
+  handler.
+  
+7. Jan 2006
+- Fixed: Specifying an invalid model frame did not output an error.
+- Removed the MF_NOSECTOR flag from everything except the decal and the regular
+  map spot. This flag was only causing problems because any check depending on
+  the sector lists were skipped for thse things. Unlike Doom there's much more
+  that uses these lists today.
+- Fixed: The obituary code could crash when a player was killed by another
+  player who happened not to have a ready weapon at the precise moment of death.
+- Added an MD3 renderer.
+
+6. Jan 2006
+- Moved Pickup, Use and Drop states into a CustomInventory subclass to bring
+  the behavior in line with upcoming ZDoom versions.
+- Added an MD3 loader and cleaned up the model code.
+
+5. Jan 2006
+- Added support for true color textures as raw graphics and in the TX_ namespace.
+  These textures will only work in GL mode.
+  
+3. Jan 2006
+- Fixed: Added some NULL pointer checks to the texture code. Several places 
+  where it was possible that no texture was selected checked some texture 
+  properties with this invalid pointer.
+
+30. Dec 2005
+- Moved some previously hard coded icon definitions for the alternative HUD
+  into the ALTHUDCF lump.
+
+27. Dec 2005
+- Added special escape character handling to SC_GetString. Normally it should be
+  on but for sprite frame sequences in DECORATE it must not be used at all because
+  they have to treat the backslash as a regular character.
+  
+25. Dec 2005
+- Fixed: dynamic lights used the hub timer, not the level timer.
+- Fixed: Floatbobbing used the hub timer, not the level timer.
+- Fixed: Gravity calculations for floatbobbing objects had to be reverted
+  to ZDoom's method because it is able to reset the timer if it desyncs.
+
+23. Dec 2005
+- Fixed: The fixed colormap selection code didn't properly check the player's
+  camera.
+- Fixed: The calculations for desaturation never fully desaturated the picture
+  because they treated a value of 32 as fully desaturated, not 31 as was intended.
+  
+21. Dec 2005
+- Added MF2_NOTELEPORT to ABlood.
+
+20. Dec 2005
+- Fixed: Some scaling calculations for the alternative HUD were wrong.
+- Fixed: Handling of the outsidefog MAPINFO option was broken.
+
+16. Dec 2005
+- Fixed: The alternate HUD didn't update the inventory's start item
+- Fixed: The model lookup code didn't use the hash chains properly.
+
+
+14. Dec 2005
+- Fixed: The code that moved objects out of walls contained several
+  serious bugs.
+- Fixed: save and load CCMDs didn't use the savedir CVAR.
+- Fixed: Hexen's wall torch was missing the FIXMAPTHINGPOS flag.
+
+
+13. Dec 2005
+- Fixed: The player could use things through closed doors if the door was
+  farther away than 64 map units.
+
+
+12. Dec 2005
+- Fixed: The order of checks in the model parser was incorrect and could
+  crash if it tried to access a non-existing actor class.
+- Added drag&drop for *.pk3 and *.zip files.
+- Fixed: Lump names with '.' in them weren't handled when loading from ZIPs.
+
+
+10. Dec 2005
+- Fixed: 2-sided mid texture offsets were broken by a non functioning bug fix.
+- Fixed: The intermission background drawer must clear the screen in widescreen mode.
+
+
+8. Dec 2005
+- Fixed: The order of gravity application and calculation were reversed from
+  Doom's original method.
+- Fixed: Portals that don't draw anything due to exceeded recursive depth
+  have to clear the screen to avoid HOM.
+- Fixed: Intermission texts from external lumps weren't 0-terminated.
+- Added NULL pointer check to the path follower's interpolation method.
+
+
+6. Dec 2005
+- Added more flexible color correction options to the menu.
+- Added first stage of model support: Assignment to sprite frames
+- Fixed: resurrect and powerup cheats crashed when used outside a game.
+
+
+5. Dec 2005
+- Fixed: Any sky change must reset the sky's scroll position.
+
+
+4. Dec 2005
+- Fixed: 4 digit ammo numbers weren't displayed correctly on the HUD.
+- Added support for loading sounds from packed ZIPs.
+
+
+3. Dec 2005
+- Fixed: The code to fill texturing gaps didn't properly check for skies.
+- Added handling for escaped quotation marks to sc_man.cpp
+- Fixed: The PNG decoder always wrote as many pixels as a byte could contain,
+  even if it was the last byte and the width not a multiple of the pixels per byte.
+- Fixed: All of Doom's monster corpses didn't clear MF3_ISMONSTER so the
+  massacre cheat made them disappear.
+- Removed support for my private PicZ texture format. I never released a tool
+  that could create it and I finally got rid of the last WAD that used it.
+  
+
+1. Dec - 3. Dec 2005
+- Added support for ZIPs as replacements for WADs because for model support
+  I need the longer paths. 8 characters simply aren't enough.
+ 
+
+29. Nov 2005
+- Fixed: The rendering code didn't copy the desaturation information for 3D-floors.
+ 
+  
+27. Nov 2005
+- Fixed: sky boxes interfered with mirrored planes and during rendering.
+
+
+26. Nov 2005
+- Added option to assign a 3D-floor definition line a line id.
+
+
+25. Nov 2005
+- Fixed: Sound lookup for FraggleScript must look for d_sound and sound if it
+  wants to play a sound.
+- Fixed: The bouncing code for Strife's grenades could make them explode at the
+  ceiling.
+- Fixed: The HateTarget couldn't die.
+- Made a slight change to the wall rendering code because the code didn't preserve
+  some important values properly.
+
+
+24. Nov 2005
+- Fixed: A_VileChase must clear the MF3_CRASHED flag for resurrected monsters
+- Added check for split doors to sound traversal code.
+- Copied a few 2.0.98 fixes I overlooked.
+
+
+23. Nov 2005
+- Fixed: Shooting Heretic's mace straight up caused weird effects because the
+  vertical speed wasn't clamped to reasonable values.
+- Fixed: Wiping didn't work in the software renderer.
+  
+  
+20. Nov 2005
+- Fixed a ZDoom bug: Cameras were always cleared when loading a savegame.
+- Added support for GL_ARB_OCCLUSION_QUERY to the portal code. This gives a 
+  significant speed boost to SSD's MAP03.
+- Added -nogl command line switch which completely disables all GL related code.
+- Added gl_vid_compatibility CVAR to force the system to use a GL mode that is
+  compatible with OpenGL 1.1. Some drivers don't report hardware support properly
+  so with those this has to be used to disable any more modern features.
+  
+  
+19. Nov 2005
+- Added reflective planes. They are defined by the new line special 159:
+  Sector_SetPlaneReflection(tag, floor_reflect, ceiling_reflect).
+  This does not work for slopes!
+- Fixed: Some translucent 3D-floor-walls weren't rendered.
+- Fixed: Exiting a level while crouched destroyed the view height information
+  for the next level.
+- Added gl_render_segs CVAR for those who happen to own a graphics card that
+  likes to create white dots at the edges of sectors.
+- Fixed: The different pitch handling between hardware and software renderer
+  could cause desyncs in netgames. Now netgames force the limited pitch of
+  the software renderer.
+- Fixed: When upgrading to ZDoom 2.0.98 I forgot to copy some code to handle
+  the 'right' key in the menu.
+- Fixed: FlickerLight2 didn't work when the secondary size was smaller than 
+  the primary size.
+- Fixed: ZDoom's new scrolling code was doing some incorrect comparisons which
+  resulted in the player being stuck in one place in Strife's MAP11.
+
+
+17. Nov 2005
+- Reduced the intensity of the berserk effect.
+
+
+13. Nov. 2005
+- Fixed: Setting a software renderer mode didn't clear the setmodeneeded variable.
+  This caused various strange effects in the console.
+  
+
+12. Nov. 2005
+- Fixed: Static_Init to set a sector's color was broken when using ZDoom format.
+- Fixed: The deep water splash code was missing a NULL pointer check.
+- Fixed: Hub intermission data wasn't serialized properly if the hub was empty.
+- Fixed: The GL initialization code forgot to clear its vertex array when a 
+  new level was started.
+- Fixed: Some enhanced vision effects were active even when gl_enhanced_lightamp
+  was off.
+- Fixed: When upgrading to ZDoom 2.0.98 I accidentally deleted the
+  HealState handling in A_VileChase. ZDoom really needs to upgrade as well. :(
+  
+
+10. Nov. 2005
+- Fixed: A_ThrowGrenade was missing some MF4_RANDOMIZE checks.
+
+
+6. Nov. 2005
+- Fixed: Sector color assignment with Static_Init was broken.
+- Fixed: Dynamic lights affected weapon sprites when nightvision was on.
+- Fixed: Transparent textures on 3D-floors were drawn with black holes.
+- Fixed: non-existent weapon sprites crashed the software renderer.
+
+
+4. Nov. 2005
+- Fixed some bugs introduced by ZDoom 2.0.98.
+- Fixed: The sloped 3D-light code coulds cause an infinite recursion.
+
+
+3. Nov 2005
+- Upgraded to ZDoom 2.0.98
+
+
+2. Nov 2005 
+- Implemented a Strife log viewer for the alternate HUD.
+- Added sloped 3D lighting support
+
+
+1. Nov 2005
+- Fixed a sector assignment problem in the GL nodes loader.
+
+
+31. Oct 2005
+- Allowed GLDEFS as a generic name for DOOMDEFS/HTICDEFS etc.
+- Added support for Quake2/Unreal style skyboxes
+- Fixed a few texture type problems
+
+
+28. Oct 2005
+- Fixed: The crouching code broke a player sprite's y-scaling.
+
+
+27. Oct 2005
+- Fixed: Two-sided walls weren't affected by a weapon's extralight.
+- Fixed: Floor skies with height differences between sectors had holes.
+
+
+25. Oct 2005
+- Fixed: The game crashed when r_opengl.dll was not found. Now it aborts
+  with a fatal error.
+  
+
+23. Oct 2005
+- Added rocket smoke sprites to GZDoom wad and created another actor
+  instead of using LavaSmoke.
+- Fixed: Weapons with WIF_NOAUTOFIRE didn't start to fire when selected
+  manually and pressing the fire button before the weapon was fully raised.
+
+
+22. Oct 2005
+- Fixed: Using masked textures on one-sided walls created rendering holes.
+
+
+21. Oct 2005
+- Added support for the BLOODLESSIMPACT flag on puffs
+- Fixed: Ripper missiles ignored the BLOODLESSIMPACT flag.
+- Fixed: Explosions directly above another object had incorrect damage
+  calculations.
+  
+  
+20. Oct 2005
+- Changed screenshot type for the GL renderer from BMP to PNG.
+  The screenshot_type CVAR still has no effect though.
+
+
+19. Oct 2005
+- Changed the sector lighting to be closer to the way Doom is doing it.
+  I kept the old method as an option though.
+
+
+18. Oct 2005
+- Fixed: Making a screenshot crashed when screenshot_dir didn't exist.
+
+
+17. Oct 2005
+- Fixed: Movement collision checks failed when inside a sector with lower
+  height than the actor being tested.
+- Fixed: Loading GL nodes from a WAD failed.
+  
+
+16. Oct 2005
+- Fixed Doom2's boss shooter so that it works with Dehacked again.
+- Fixed: ACS_Suspend crashed when no scripts had been started.
+
+
+15. Oct 2005
+- Fixed: Drawing a skybox interfered with flooding texture gaps.
+- Fixed: Negative frags were displayed without sign.
+
+
+13. Oct 2005
+- Fixed: Sprite sorting was broken when multiple translucent 3D-floors were involved
+- Fixed: The fixes for missing textures done yesterday introduced some unwanted side effects.
+
+
+12. Oct 2005
+- Fixed: Recalculation of the light list wasn't done properly when a sector's height
+  was interpolated by the renderer.
+- Fixed: Sorting of translucent flats was done incorrectly
+- Fixed: Missing texture render hacks with sky flats didn't work.
+- Fixed: Flooding texture gaps must not write into the Z-buffer.
+- Fixed: The speed for crouching down was applied inconsistently.
+
+
+10. Oct 2005
+- Changed: Removed all player error messages from FraggleScript and let them silently
+  fail instead. 
+
+
+9. Oct 2005
+- Fixed: FraggleScript's ceiling height changer did not stop the sector interpolation.
+- Fixed: Dynamic lights were not properly cleared when deactivated
+- Fixed: The enhanced light amplification handling was broken.
+- Fixed the Inventory code that got broken by an improper bug fix in ZDoom 2.0.97.
+- Added a crouch button in addition to the toggle.
+
+
+7. Oct 2005
+- Fixed: FloorAndCeiling_LowerRaise couldn't activate both movers at the same time.
+- Fixed: The boss brain was effectively deaf because it didn't get linked into
+  the sector's thing list
+- Reactivated HIRESTEX.
+- Fixed: The horizon code treated viewz as float instead of fixed_t.
+- Changed texture deletion to delete each texture separetely. Apparently some
+  ATI drivers don't like deleting lists with invalud textures.
+- More crouching fixes.
+
+
+6. Oct 2005
+- Fixed: A_SpawnBishop and A_GenWizard didn't keep track of the monster count
+  properly.
+- Fixed: AMinotaur::Die didn't properly check for valid friendly Minotaurs
+- Fixed: The FraggleScript actor translation table had Megasphere misspelled.
+- Released 0.9.8 because the particle crash is rather serious.
+- Fixed: Particles in sectors with 3D-floors caused a crash because I read
+  the sector from an incorrect variable.
+- Fixed: Crouching outside of a game crashed
+
+
+5. Oct 2005
+- Did a few minor adjustments to the crouching code. It's still not polished
+  enough for an official feature though.
+- Released 0.9.7
+- Fixed: 3D floors could block switches.
+
+
+4. Oct 2005
+- Fixed: Levels with no normal nodes whatsoever ignored accompanying GWA files.
+- Finished the adjustments for crouching.
+
+
+3. Oct 2005
+- Added crouching because Enjay sent me a PM that took at least an hour to type. ;)
+
+
+2. Oct 2005
+- Added support for viewheight command in FraggleScript's runcommand handler
+
+
+30. Sep. 2005
+- Fixed: Did some sanity checks for partner segs because GLBSP can create incorrect
+  references
+  
+  
+28. Sep. 2005
+- Fixed: Decals on walls that don't cover the entire linedef were not drawn.
+- Fixed: The sky cap was drawn in an incorrect color when enhanced nigh vision
+  was on.
+
+
+27. Sep. 2005
+- Moved the OpenGL initialization code into a separate DLL. Hopefully that allows
+  me to implement a Direct3D renderer.
+  
+
+26. Sep. 2005
+- Fixed: 2-sided polyobjects used the wrong sector to align their textures.
+- Fixed: Mirrors on two-sided walls do not block the view. Instead they won't
+  get displayed as mirrors.
+
+
+25. Sep. 2005
+- Fixed: The clipping code could misinterpret certain sloped lines as obstructing
+  the view even though they were not.
+  
+  
+23. Sep. 2005
+- Did some optimizations to the portal clipping code. Unfortunately it didn't speed
+  up such problem maps as SSD or TNT4 as much as I hoped but it's at least a little
+  better now.
+ 
+
+22. Sep. 2005
+- Fixed: Translucent flats in stacked sectors were drawn with the incorrect amount
+  of translucency.
+- Did some performance tests with levels that use sky boxes in an abusive manner.
+  I had to conclude that there is no way to improve performance to a tolerable
+  level.
+  
+
+21. Sep. 2005
+- Improved handling of stacked sectors. MAP04 of Zen Dynamics now displays
+  as intended.
+  
+
+20. Sep. 2005
+- Fixed: The color parser for Static_Init was broken.
+- Fixed: The decal creation code can create invalid decals. These should
+  not be rendered of course.
+- Fixed: Sector_Set3DFloor ignored the 'draw all sides' bit.
+- Fixed: The insides of a 3D floor were only rendered when the back side of 
+  the linedef in question also had 3D-floors defined
+- Fixed: The SpawnedThings array for FraggleScript was not saved.
+- Added configuration lump for the alternative HUD so icons can be selectively
+  replaced or removed
+
+
+19. Sep. 2005
+- Fixed: FraggleScript instant sector movers didn't clear the sector's
+  floor or ceilingdata right away.
+
+
+17. Sep. 2005
+- Added support for GL nodes V5.
+- Disabled HIRESTEX pending the outcome of an ongoing discussion about texture
+  management at the forums of newdoom.com. If that works out it should offer
+  all the required functionality in a manner that would be compatible across
+  source ports so I won't do a non-standard implementation for now.
+
+
+16. Sep. 2005
+- Fixed: The flickering dynamcic light types had some properties mixed up.
+
+
+14. Sep. 2005
+- Added support for ZDoomGL's HIRESTEX lump
+
+
+11. Sep. 2005
+
+- Fixed: If non-power-of-2 textures are not supported a patch's scaling
+  factor has to be retrieved before the texture can be used to set
+  texture coordinates.
+- Fixed: Legacy doesn't have water damage so it has to be disabled when
+  FraggleScript is found. Maybe I'll add an option later.
+- Fixed: Sprites should be precached as patches, not textures.
+- Added support for Legacy's digital music names which start with 'O_'.
+  But since ZDoom already handles all music types it can be any format, not
+  just MP3 or OGG.
+- Relaxed: Legacy ignores duplicate variable definitions so I turned the
+  error into a warning
+- Fixed: The token buffer for FraggleScript was too small. That caused a
+  crash in DSV4(Legacy)'s MAP01.
+- Fixed: I forgot to recompile the latest changes so line type 272 wasn't
+  working
+- Time for 0.9.4!
+- To have some more test material I converted the XG scripts of the first 3 
+  Doom64 maps to FS. For that I also added some new functions and options.
+- Fixed: Owner-less missiles could crash the game when trying to activate
+  a shootable line special.
+- Finished adding all Legacy FS commands and all quick tests done so far
+  look good.
+
+
+10. Sep. 2005
+- Started adding the missing Legacy FS commands. Fortunately most is
+  rather trivial stuff that should be easy to do.
+- Added some rudimentary parsing of the level info block. The important
+  options should work but don't expect this to be a perfect emulation.
+  Some of it is being done too late to have any effect where it should.
+  
+  
+9. Sep. 2005
+- added a third timer to the HUD: It counts the time spent in the
+  current level and is only visible in hubs.
+- Finished adjusting the Eternity FraggleScript source. I can play
+  the Eternity version of DSV4 except it seems that Eternity isn't
+  handling Boom colormaps correctly. The maps were clearly designed
+  for a different behavior. After checking with Legacy I noticed that
+  it can't handle the colormap command properly either so I made it no-op.
+
+
+8. Sep. 2005
+- Fixed: Light types weren't transferred for associated lights.
+- Fixed: Undefined dynamic lights weren't properly detected and crashed.
+- Did a first quick FS check with Nimrod. Noticed that I had to modify
+  the sound and music commands because the way they work is far too
+  hard coded to Doom's naming conventions and are logically not aware
+  of SNDINFO.
+  For sounds it first checks whether a sound of that name already exists.
+  If not 'DS' is prepended to the name and a new logical sound defined.
+  For music it first checks for an exact name match. If that fails it
+  prepends 'D_' to the name and checks again.
+- Continued with FraggleScript. Most importantly cameras, moving floors
+  and ceilings and light level changers are working now.
+
+
+7. Sep. 2005
+- Finished with the deep sector hack code. 
+- Did some work on FraggleScript's t_func.cpp. Approx 15% of it are
+  done and I can run some simple scripts.
+
+
+6. Sep. 2005
+- Started adding code to handle vanilla deep sector hacks like
+  in Strain MAP21. It mostly works but still has a few bugs.
+- Fixed: The GWA loader didn't set the subsector for minisegs.
+- Added some fallback options to the OpenGL startup code so that
+  it runs on older cards.
+- Fixed: Hitscan decals didn't show on 3D-floor faces.
+- Added support for sector action things in 3D-floor control sectors.
+
+
+5. Sep. 2005
+- Fixed: Before drawing any 2D stuff the fragment programs must be
+  disabled.
+- Changed DElevator to be aware of 3D floors
+- Fixed several issues from adding hires texture support.
+
+
+4. Sep. 2005
+- Fixed: The depth fog menu option had incorrect parameter settings.
+- Added support for Doomsday hires texture packs. Also added precaching
+  for GL textures because loading the hires textures when needed causes
+  quite noticable delays.
+- Fixed: The r_drawplayersprites CVAR was ignored by the GL renderer.
+- Added support for Hexen's standard fog table. This doesn't support
+  custom fog tables though.
+- Continued with FraggleScript. Loading/Saving and actor management are
+  done. Actor management was particularly ugly and only possible by using
+  some intermediate class derived from DObject to handle the automatic
+  pointer cleanup.
+- Fixed: The parser for Legacy's linedef color format was broken.
+
+
+3. Sep. 2005
+- Changed the horizon renderer again. Now it draws a large set of 256x256
+  tiles across the entire level. I hope this solves all the fog issues I had.
+- Changed ZDoom.wad to GZDoom.wad because some people tried to put both
+  ports into the same directory. Now they can.
+- Started with the integration of FraggleScript. So far it compiles and
+  I can link but it doesn't work yet. I hope the memory management works.
+  FS depends so heavily on the zone heap (which ZDoom has thrown away
+  quite some time ago) that there are probably a few leaks that remain
+  undiscovered. I hope it isn't too bad.
+  
+  
+2. Sep. 2005
+-fixed: Volume changes for streamed sound formats did not work because
+  it didn't store the channel's ID.
+-added some checking code to the GWA loader to verify the validity of
+  the loaded GL nodes. If the first seg in one subsector is found to
+  be a miniseg the nodes will be considered invalid now.
+-added code that handles the absence of wglChoosePixelFormatARB because
+  There appaer to be drivers which still don't support it.
+-fixed: The horizon code did not check for invulnerability colormaps.
+-fixed: The code that handles missing upper/lower textures by flooding
+  the gap with a flat texture did not remove its rotation matrix from
+  the texture matrix stack.
+
+
+1. Sep. 2005
+-fixed a bug in the distance calculation of ADynamicLight::LinkLights.  
+-reverted to my original horizon code with a few changes. Drawing the
+  entire plane with one large polygon caused fog inaccuracies.
+-fixed: The portal initialization code forgot so save the view area.
+-fixed: Flooding gaps caused by missing lower textures checked for the
+  ceiling height instead of the floor height.
+-added: Dynamic lights now affect the player's weapon sprite.
+-fixed: Lighting actors with dynamic lights did not work correctly.
+-fixed: Fog state check was done incorrectly resulting in fog not being
+ switched off properly if required.
+-added: 3D floors can now use transparent textures without screwing up
+  dynamic lighting.
+-fixed: Invalid light definitions were not removed properly.
+-fixed: Decals smaller than 2 map units didn't get displayed properly.
+-fixed: GZDoom was still using DECORATE code from the buggy 7.8. release of
+  ZDoom .96x
+-changed: Fullbright items under water no longer override the sector's color.
+  Same for the player's weapon sprite.
+-changed GL_FOG_HINT to GL_FASTEST because it appears to work better on ATI cards.
+
+
+31. Aug. 2005
+- fixed: The top sides of 3D floors were drawn one unit too low.
+- added gl_depthfog CVar for graphics cards that have problems with fog
+- fixed: The code that adds the missing segs left out by the node builder
+  forgot to relocate all pointers to the old array.
+  
+
+30. Aug. 2005
+- added gl_spriteclip option so that the user can specify how sprites are
+  clipped to the floor.
+- fixed: Translations must not map to palette index 0. 0 is always transparent.
+- fixed: After purging all textures Doom's status bar must be reinitialized as
+  well so that it can set up its background texture again.
+- fixed some screen size issues regarding automap and alt_hud.
+- updated thingdef_exp.cpp to the latest version

@@ -74,21 +74,43 @@ ECHO  /USE ^<engine^>
 ECHO:
 ECHO     Which engine to use. Can be any of the following:
 ECHO:
-ECHO     choco-doom          : ChocolateDOOM ^(very vanilla, 320x200^)
-ECHO     choco-doom-setup    : Displays ChocolateDOOM's configuration program first
-ECHO     choco-heretic       : As with choco-doom, but for Heretic WADs
-ECHO     choco-heretic-setup : As above, but displays configuration first
-ECHO     choco-hexen         : As with choco-doom, but for Hexen WADs
-ECHO     choco-hexen-setup   : As above, but displays configuration first
-ECHO     choco-strife        : As with choco-doom, but for Strife WADs
-ECHO     choco-strife-setup  : As above, but displays configuration first
-ECHO     doom64ex            : DOOM 64 EX, specifically for DOOM 64
-ECHO     gzdoom              : GZDoom current. Use /SW for software rendering
-ECHO     gzdoom-??           : Where ?? is "22", "23", "24", "32"
-ECHO     prboom              : PRBoom+ defaults to OpenGL. Use /SW for software
-ECHO     zandronum           : Zandronum current ^(2.x^)
-ECHO     zandronum-?         : Where ? is "2" or "3"
-ECHO     zdoom               : deprecated. use gzdoom with software `/SW` instead
+ECHO       choco-doom          : ChocolateDOOM ^(very vanilla, 320x200^)
+ECHO       choco-doom-setup    : Displays ChocolateDOOM's configuration program first
+ECHO       choco-heretic       : As with choco-doom, but for Heretic WADs
+ECHO       choco-heretic-setup : As above, but displays configuration first
+ECHO       choco-hexen         : As with choco-doom, but for Hexen WADs
+ECHO       choco-hexen-setup   : As above, but displays configuration first
+ECHO       choco-strife        : As with choco-doom, but for Strife WADs
+ECHO       choco-strife-setup  : As above, but displays configuration first
+ECHO       doom64ex            : DOOM 64 EX, specifically for DOOM 64
+ECHO       gzdoom              : GZDoom current. Use /SW for software rendering
+ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)
+ECHO       prboom              : PRBoom+ defaults to OpenGL. Use /SW for software
+ECHO       zandronum           : Zandronum current ^(2.x^)
+ECHO       zandronum-?         : Where ? is a version number, "2" or "3"
+ECHO       zdoom               : deprecated. use gzdoom with software `/SW` instead
+ECHO:
+ECHO     For GZDoom, specific versions can be invoked with the following:
+ECHO:
+ECHO       gzdoom-09           : GZDoom v0.9.28 ^(AUG-2005+^)
+ECHO       gzdoom-10           : GZDoom v1.0.32 ^(FEB-2006+^)
+ECHO       gzdoom-11           : GZDoom v1.1.06 ^(FEB-2008+^)
+ECHO       gzdoom-12           : GZDoom v1.2.01 ^(MAR-2009+^)
+ECHO       gzdoom-13           : GZDoom v1.3.17 ^(OCT-2009+^)
+ECHO       gzdoom-14           : GZDoom v1.4.08 ^(JAN-2010+^)
+ECHO       gzdoom-15           : GZDoom v1.5.06 ^(AUG-2010+^)
+ECHO       gzdoom-16           : GZDoom v1.6.00 ^(JUL-2012+^)
+ECHO       gzdoom-17           : GZDoom v1.7.01 ^(DEC-2012+^)
+ECHO       gzdoom-18           : GZDoom v1.8.10 ^(JUN-2013+^)
+ECHO       gzdoom-19           : GZDoom v1.9.1  ^(FEB-2016+^)
+ECHO       gzdoom-20           : GZDoom v2.0.05 ^(SEP-2014+^)
+ECHO       gzdoom-21           : GZDoom v2.1.1  ^(FEB-2016+^)
+ECHO       gzdoom-22           : GZDoom v2.2.0  ^(SEP-2016+^)
+ECHO       gzdoom-23           : GZDoom v2.3.0  ^(JAN-2017+^)
+ECHO       gzdoom-24           : GZDoom v2.4.0  ^(MAR-2017+^)
+ECHO       gzdoom-32           : GZDoom v3.2.4  ^(OCT-2017+^);
+ECHO                             versions 3.0 ^(APR-2017+^), 3.1 ^(JUN-2017+^) and 3.2.0
+ECHO                             ^(OCT-2017+^) are excluded due to a security concern
 ECHO:
 ECHO  /WAIT
 REM ---------------------------------------------------------------------------------
@@ -675,6 +697,110 @@ IF /I "%USE%" == "gzdoom-22" (
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.2.x^)"
+)
+IF /I "%USE%" == "gzdoom-21" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-21_%ENGINE_BIT%"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v2.1.x^)"
+)
+IF /I "%USE%" == "gzdoom-20" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-20"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v2.0.x^)"
+)
+IF /I "%USE%" == "gzdoom-19" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-19"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.9.x^)"
+)
+IF /I "%USE%" == "gzdoom-18" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-18"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.8.x^)"
+)
+IF /I "%USE%" == "gzdoom-17" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-17"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.7.x^)"
+)
+IF /I "%USE%" == "gzdoom-16" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-16"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.6.x^)"
+)
+IF /I "%USE%" == "gzdoom-15" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-15"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.5.x^)"
+)
+IF /I "%USE%" == "gzdoom-14" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-14"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.4.x^)"
+)
+IF /I "%USE%" == "gzdoom-13" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-13"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.3.x^)"
+)
+IF /I "%USE%" == "gzdoom-12" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-12"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.2.x^)"
+)
+IF /I "%USE%" == "gzdoom-11" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-11"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.1.x^)"
+)
+IF /I "%USE%" == "gzdoom-10" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-10"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v1.0.x^)"
+)
+IF /I "%USE%" == "gzdoom-09" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-09"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=gzdoom ^(v0.9.x^)"
 )
 IF /I "%USE%" == "gzdoom-dev" (
 	REM # shh, this is a secret...
