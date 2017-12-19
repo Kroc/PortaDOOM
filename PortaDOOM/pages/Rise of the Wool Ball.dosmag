@@ -1,0 +1,27 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:wads\conversions\ROTWB\play.bat
+$KEY:T=SHELL:wads\conversions\ROTWB\Readme.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/94330-rise-of-the-wool-ball-3-v12-now-gzdoom-compatible/
+
+:Rise of the Wool Ball                           * 2017 Cacoward runner up! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>06>09	  Author : _MSPaintR0cks_
+:Levels   : *18			   Modes : *Single
+:Requires : *zdoom		Includes : *+Sound +Music +Graphics
+:-------------------------------------------------------------------------------
+
+A *Rise Of The Triad* styled retro shooter with cute, but evil kittehs :3
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: roughly a year - started in July 2016 and finished sometime in June 2017
+*Editor(s) used			: Doom Builder 2, XWE (it was a nightmare, aaaaah), MSPaint, Guitar Pro 5
+*May Not Run With		: anything except ZDoom 2.8.1
+*Tested With			: ZDoom 2.8.1
+
+:Credits
+:-------------------------------------------------------------------------------
+Thanks to _Almonds_, _MondoBizarro_, _Big Ol Billy_, _Spectra_, _JohnnyTheWolf_, _Captain J_, _Redead-Ita_, for their interest in the project and playtesting! Especially a big thanks to _SanyaWaffles_, who helped me out in countless scripting related problems! Also _Almonds_, who drew some beautiful decorative wall paintings! And of course _Captain J_, for drawing me these cool explosion sprites!

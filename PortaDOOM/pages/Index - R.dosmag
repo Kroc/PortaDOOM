@@ -1,6 +1,7 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Complete Raven Series
 $KEY:B=GOTO:Return to Hadron
+$KEY:C=GOTO:Rise of the Wool Ball
 
 ^C:INDEX :: R
 
@@ -8,3 +9,4 @@ $KEY:B=GOTO:Return to Hadron
 
 - [A] *Raven Series, (The Complete)						5 Years of Doom
 - [B] *Return to Hadron									Episodes
+- [C] *Rise of the Wool Ball							Total Conversions

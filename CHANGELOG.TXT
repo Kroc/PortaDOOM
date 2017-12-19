@@ -2,7 +2,11 @@
 * = Fix / Change
 - = Removal
 
+19-12-17:
++ Added "Rise of the Wool Ball" WAD page
+
 17-12-17:
+* Upgraded GZDoom to 3.2.4
 + Added "Stardate 20x7" WAD page
 + Added "Void and Rainbow" WAD page
 
