@@ -26,7 +26,7 @@ Scripts:
 [ ] dosmag: "^_^" not escaping properly
 [X] dosmag: Allow key-defs (links) to colour their link-text so that we don't
     have to use "bold" for these
-[ ] Make doom.bat insert "lights.pk3" & "brightmaps.pk3" instead of "play.bat";
+[X] Make doom.bat insert "lights.pk3" & "brightmaps.pk3" instead of "play.bat";
     This will allow PWADs to override these instead of the other way around
 [ ] DOSmag: Trap ALT+ENTER and override built in fullscreen swith with our own
 [X] lilith.pk3 will work *only* with actual ZDoom2.8.1

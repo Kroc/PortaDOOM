@@ -2,6 +2,13 @@
 * = Fix / Change
 - = Removal
 
+21-12-17:
++ "brightmaps.pk3" & "lights.pk3" (GZDoom), or "skulltag_actors.pk3" &
+  "skulltag_data.pk3" (Zandronum) inserted automatically, before the PWAD,
+  allowing these to be correctly replaced by the PWAD
+- Removed the insertion of "brightmaps.pk3" / "lights.pk3" from play.bat,
+  as these would come _after_ the PWAD, causing potential problems
+
 19-12-17:
 + Added GZDoom versions 0.9 to 2.1!
 + Added a build target for just the launcher ("doom.bat" / "play.bat")

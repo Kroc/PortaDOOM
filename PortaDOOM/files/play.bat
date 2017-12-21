@@ -366,12 +366,6 @@ IF "%ENGINE%" == "prboom" (
 	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
 )
 
-REM # GZDoom requirements:
-IF "%ENGINE%" == "%VER_GZDOOM%" (
-	REM # load the extra lighting information
-	SET FILES=%FILES% lights.pk3 brightmaps.pk3
-)
-
 REM # hardware or software rendering?
 REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
 IF %SW% EQU 1 SET PARAMS=%PARAMS% /SW

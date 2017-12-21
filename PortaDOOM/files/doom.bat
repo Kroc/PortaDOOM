@@ -7,7 +7,8 @@ REM # - automatic portable config files so that you get the same configuration (
 REM # - searches GOG & Steam installs if WAD is missing
 REM # - automatically patches DOOM 3 BFG Edition WADs 
 REM # - FreeDOOM substituted if commercial DOOM.WAD / DOOM2.WAD missing
-REM # - will search the engine's folder for WADs if not found elsewhere (e.g. "lights.pk3")
+REM # - automatically includes "brightmaps.pk3" & "lights.pk3" (GZDoom) or "skulltag_actors.pk3" &
+REM     "skulltag_data.pk3" (Zandronum), placing them before the PWAD
 REM # - IWAD file extensions can be omitted: ".WAD" / ".PK3" / ".IWAD" / ".IPK3";
 REM #   (PWAD and other WAD extensions are required due to the number of locations checked)
 REM # - DeHackEd extension loading (".DEH", ".BEX" files)
@@ -111,6 +112,10 @@ ECHO       gzdoom-24           : GZDoom v2.4.0  ^(MAR-2017+^)
 ECHO       gzdoom-32           : GZDoom v3.2.4  ^(OCT-2017+^);
 ECHO                             versions 3.0 ^(APR-2017+^), 3.1 ^(JUN-2017+^) and 3.2.0
 ECHO                             ^(OCT-2017+^) are excluded due to a security concern
+ECHO:
+ECHO     NOTE: Additional engine resource files will be included automatically, that is
+ECHO           "brightmaps.pk3" ^& "lights.pk3" for GZDoom versions 1.0 and above, or
+ECHO           "skulltag_actors.pk3" ^& "skulltag_data.pk3" for Zandronum
 ECHO:
 ECHO  /WAIT
 REM ---------------------------------------------------------------------------------
@@ -546,6 +551,8 @@ REM ============================================================================
 REM # reserve some variables:
 SET "ENGINE_DIR="	& REM # the engine directory is also used to check for PWADs
 SET "ENGINE_EXE="	& REM # executable name in the engine folder
+SET "ENGINE_INC="	& REM # default files to include for an engine (e.g. "brightmaps.pk3", "lights.pk3")
+SET "VER_GZDOOM="	& REM # version number of GZDoom, if chosen engine
 
 REM # detect 32-bit or 64-bit Windows for those engines that provide both
 SET WINBIT=32
@@ -660,6 +667,7 @@ IF /I "%USE%" == "doom64ex" (
 )
 IF /I "%USE%" == "gzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
@@ -668,149 +676,186 @@ IF /I "%USE%" == "gzdoom" (
 )
 IF /I "%USE%" == "gzdoom-32" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v3.2.x^)"
+	SET VER_GZDOOM=32
 )
 IF /I "%USE%" == "gzdoom-24" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-24_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.4.x^)"
+	SET VER_GZDOOM=24
 )
 IF /I "%USE%" == "gzdoom-23" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-23_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.3.x^)"
+	SET VER_GZDOOM=23
 )
 IF /I "%USE%" == "gzdoom-22" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-22_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.2.x^)"
+	SET VER_GZDOOM=22
 )
 IF /I "%USE%" == "gzdoom-21" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-21_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.1.x^)"
+	SET VER_GZDOOM=21
 )
 IF /I "%USE%" == "gzdoom-20" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-20"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v2.0.x^)"
+	SET VER_GZDOOM=20
 )
 IF /I "%USE%" == "gzdoom-19" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-19"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.9.x^)"
+	SET VER_GZDOOM=19
 )
 IF /I "%USE%" == "gzdoom-18" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-18"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.8.x^)"
+	SET VER_GZDOOM=18
 )
 IF /I "%USE%" == "gzdoom-17" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-17"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.7.x^)"
+	SET VER_GZDOOM=17
 )
 IF /I "%USE%" == "gzdoom-16" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-16"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.6.x^)"
+	SET VER_GZDOOM=16
 )
 IF /I "%USE%" == "gzdoom-15" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-15"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.5.x^)"
+	SET VER_GZDOOM=15
 )
 IF /I "%USE%" == "gzdoom-14" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-14"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.4.x^)"
+	SET VER_GZDOOM=14
 )
 IF /I "%USE%" == "gzdoom-13" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-13"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.3.x^)"
+	SET VER_GZDOOM=13
 )
 IF /I "%USE%" == "gzdoom-12" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-12"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.2.x^)"
+	SET VER_GZDOOM=12
 )
 IF /I "%USE%" == "gzdoom-11" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-11"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.1.x^)"
+	SET VER_GZDOOM=11
 )
 IF /I "%USE%" == "gzdoom-10" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-10"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v1.0.x^)"
+	SET VER_GZDOOM=10
 )
 IF /I "%USE%" == "gzdoom-09" (
+	REM # GZDoom 0.9 does not have brightmaps/lights files
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-09"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(v0.9.x^)"
+	SET VER_GZDOOM=9
+	
 )
 IF /I "%USE%" == "gzdoom-dev" (
 	REM # shh, this is a secret...
 	REM # (but you'll have to supply your own copy)
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-dev"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(development^)"
+	SET VER_GZDOOM=99
 )
 IF /I "%USE%" == "prboom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\prboom+"
@@ -831,6 +876,7 @@ IF /I "%USE%" == "prboom" (
 )
 IF /I "%USE%" == "qzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\qzdoom_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	REM # shh, this is a secret...
 	REM # (but you'll have to supply your own copy)
 	SET "ENGINE_EXE=qzdoom.exe"
@@ -841,6 +887,7 @@ IF /I "%USE%" == "qzdoom" (
 )
 IF /I "%USE%" == "zandronum" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-3"
+	SET "ENGINE_INC=skulltag_actors.pk3 skulltag_data.pk3"
 	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
@@ -849,6 +896,7 @@ IF /I "%USE%" == "zandronum" (
 )
 IF /I "%USE%" == "zandronum-2" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-2"
+	SET "ENGINE_INC=skulltag_actors.pk3 skulltag_data.pk3"
 	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-2"
 	SET "ENGINE_KIN=Z"
@@ -857,6 +905,7 @@ IF /I "%USE%" == "zandronum-2" (
 )
 IF /I "%USE%" == "zandronum-3" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-3"
+	SET "ENGINE_INC=skulltag_actors.pk3 skulltag_data.pk3"
 	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
@@ -875,11 +924,13 @@ IF /I "%USE%" == "zdoom" (
 REM # if an engine wasn't specified, provide a default
 IF "%USE%" == "" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=gzdoom ^(default^)"
+	SET VER_GZDOOM=32
 )
 
 REM # no recognised engine name?
@@ -913,10 +964,30 @@ REM # the user will never know how complicated this is
 ECHO          port : %PORT_TITLE%
 ECHO        engine : %ENGINE%
 
+REM # include the default engine files?
+IF NOT DEFINED ENGINE_INC GOTO :iwad
+
+CALL :engine_inc %ENGINE_INC%
+GOTO :iwad
+
+:engine_inc
+IF "%~1" == "" GOTO:EOF
+
+SET FILES=%FILES% "%FIX_PATH%\%ENGINE_DIR%\%1"
+REM # ensure that the files section is included in the end
+REM # (i.e. if no other files are included)
+SET ANY_WAD=1
+
+ECHO  ^(auto^) -file : %ENGINE_DIR%\%1
+
+SHIFT
+GOTO :engine_inc
+
 
 REM ====================================================================================================================
 REM # IWAD:
 REM ====================================================================================================================
+:iwad
 REM # if no IWAD was sepecified, select the default
 IF "%IWAD%" == "" (
 	REM # The deafault IWAD depends on engine selection
@@ -980,7 +1051,7 @@ IF /I "%IWAD_NAME%" == "HERETIC.WAD"  GOTO :iwad_heretic
 IF /I "%IWAD_NAME%" == "HEXEN.WAD"    GOTO :iwad_hexen
 REM # TODO: STRIFE
 
-REM # not a known commerical IWAD
+REM # not a known commercial IWAD
 GOTO :iwad_missing
 
 :iwad_doomu
@@ -1688,6 +1759,8 @@ SHIFT
 	IF NOT "%FILE:~1,1%" == ":" SET "FILE=%FIX_PATH%\%FILE%"
 	REM # add to the command line
 	SET FILES=%FILES% "%FILE%"
+	REM # ensure that the files section is included in the end
+	REM # (i.e. if no other files are included)
 	SET ANY_WAD=1
 	SHIFT
 	GOTO :files_loop
