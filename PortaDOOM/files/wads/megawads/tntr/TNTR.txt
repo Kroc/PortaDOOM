@@ -1,0 +1,197 @@
+========================================================================================
+Advanced engine needed: No. For Demos use TNT.wad
+Primary purpose       : SP, CO-OP, & DM
+========================================================================================
+Title                 : TNT: Revilution
+Filename              : TNTR.WAD
+Version               : 1.20
+Release date          : 05/29/2017
+Updated               : 07/08/2017
+Author                : Various, see below.
+Email Address         : [redacted]
+
+Description           : TNT: Revilution is a fan made community project that acts as a
+                        sequel to TeamTNT's Evilution. The goal of this project was to
+                        capture the spirit of what made Evilution so great, while at
+                        the same time bringing the quality of the visuals & game play
+                        up to modern standards.
+
+Additional Credits to : Project Founders: Kyka, Ragnor "Devalaous" Berntsen, & Megamur
+                        Project Leaders: Micah "Jaws In Space" Petersen, Kyka, & Eris
+                                         Falling
+                        Quality Control: Dobu Gabu Maru, Steve D, Demon of the
+                                         Well, Ragnor, Megamur, rdwpa, & AD_79
+                        Multiplayer Testing: Doomkid (DM) & TeamTNS (CO-OP)
+                        TITLEPIC, CREDIT, INTERPIC, & BOSSBACK: Eternal
+                        M_DOOM: Scientist & Jaws In Space
+                        Status bar & CWILV's: Jaws In Space
+                        HELP: MLW
+                        ENDOOM: Revae
+                        Midis: Bucket, Eradrop, Eris Falling, Jeremy Doyle, Viscra
+                               Maelstrom
+                        DeHackEd by: Obsidian
+                        Story by: Jaws In Space
+*Textures by* : 4ooz, Afterglow, Cage, Covaro, DEFCONRAZOR22, Enjay, Espi, esselfortium,
+                FuzzballFox, jazzmaster9, Jimmy, Kaiser,Matthias Worch, minigunner,
+                Mutator, NaturalTvventy, Nightfall, NiGHTMARE, NMN, OrangePikmin33,
+                ProcessingControl, Roger Ritenour, Russell Pearson, Scifista42,
+                Submerge, Super Jamie, Thomas Möller, Thomas van der Velden,
+                Vincent CatalaE
+
+                *Jaws In Space - Due to the nature of how I took over the project this
+                 Textures by list may not be totally accurate. This list was taken from
+                 a 2 year old post made by Kyka.
+========================================================================================
+With the death of the Demon-Spitter, the army of the damned loses their gateway to our
+world, and they slowly evaporate around you, writhing with screams of agony. Then,
+everything is silent, and the hellish red sky and the stench of sulfur fade away almost
+as if nothing had ever happened at all.
+
+Have you won? Is this another victory for mankind? No, something isn't right, there's a
+blue glow coming from the inside of the Demon-Spitter's head. You crawl into the now
+exposed brain and find a mix of technology and organic material fused so that you can't
+tell where one stops and the other begins. The glow is coming from a nearby computer
+panel. A look of horror spreads across your face as you realize what has happened: by
+killing the Demon-Spitter, you have activated some sort of locating device. Now an even
+bigger fleet of ships full of demons is on its way to Io.
+
+The yearly supply ship from Mars is still weeks away from your position. Looks like
+you're the only one standing between the demons and Earth. There's no way for you to
+make a stand at the now completely destroyed UAC base, so you head for a nearby thermal
+power station that taps into one of Io's many active volcanoes. Since it's several
+miles' walk, you need to travel light. Looks like you'll only be taking your pistol for
+protection, but hopefully you'll resupply on weapons before the demons arrive.
+
+Hours later, you find yourself at the walls of the power station. Suddenly you hear
+rumbling from above, and a great explosion fills the sky as the moon Ganymede explodes
+into several pieces. Once the dust clears, you see a great skull where the moon used to
+be. A fleet of hell ships materialize from the skull. Most of the ships head on a course
+for Earth, but one heads directly for your position. So much for finding weapons before
+they arrive. It's up to you to make it to the Communications Center before the demons
+destroy the satellite array so that you can send a message to Earth warning humanity of
+its impending Doom. Good luck, marine.
+========================================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+
+* Play Information *
+
+Game                    : TNT
+Map #                   : Maps 1-32
+Single Player           : Designed for both Continuous & Pistol Start
+Cooperative 2-4 Player  : Designed for with modern source ports in mind
+Deathmatch 3-6 Player   : Designed for with modern source ports in mind
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : August 28, 2009 - May 26, 2017
+                          Developed as TNT2: Devilution Starting August 28, 2009
+                          Developed as TNT: Revilution Starting February 19. 2014
+                          Developed by Eris Falling Starting August 22, 2015
+                          Developed by Jaws In Space Starting January 31, 2016
+Editors used            : Doom Builder, Slade, Whacked
+Known Bugs              : On Map 16 & Map 22 Arch-Viles can launch the player into
+                          positions that can cause Vanilla to crash due to Visplanes.
+                          Savegame overflow on 3, 10, 12, 17, 20, 21, 22, 24, 28, 29, 31.
+			  In map30, monsters are required to telefrag a certain object,
+			  in ports like PRBoom, GLBoom and Doom Retro, you need to
+			  activate this option manually (check setup>compatibility on 
+			  pr/glboom). Gameplay modifications like Complex Doom will also
+                          change the custom monsters on map30.
+May Not Run With        : Scissors.
+Tested With             : Chocolate Doom, Crispy Doom, Doom Retro, CRL, PRBoom, GZDoom,
+			  ZDAEMON.
+========================================================================================
+Map Information
+Map 01: Uprising - SFoZ911
+Map 02: Geothermal - AD_79
+Map 03: Access Denied - Chris Hansen
+Map 04: Blood Factory - Steve D
+Map 05: Graveyard Shift - Jaws in Space
+Map 06: Communications Relay - XenoNemesis, Kyka, dobu gabu maru, & Jaws In Space
+Map 07: No Man's Station - cannonball
+Map 08: Fortress of Bullets - sincity2100 & dobu gabu maru
+Map 09: Bunker Complex - Whoo, Kyka, & Jaws In Space
+Map 10: Underground Activity - Gothic & Kyka
+Map 11: Pourriture - tourniquet
+Map 12: Transduction - StupidBunny, Kyka, Megamur, & dobu gabu maru
+Map 13: Hangman's Curse - Jaws in Space
+Map 14: Abandoned Port - Steve D
+Map 15: Nugake Zone - D_GARG & Jaws In Space
+Map 16: Devil's Den - dobu gabu maru
+Map 17: Spider Colony - purist
+Map 18: Hell's Signs - Eternal
+Map 19: The Crash Site - gaspe
+Map 20: Portal Facility - Phobus
+Map 21: Bloody Garden - Eradrop
+Map 22: Pharaoh's Claim - Olympus, Kyka, & dobu gabu maru
+Map 23: Desolation - Jaws in Space
+Map 24: REDRUM - valkiriforce
+Map 25: Malware - cannonball
+Map 26: Revengineer - The Mionic Donut
+Map 27: The Visage of Time - Tarnsman & Alfonzo
+Map 28: Superweapon Facility - Pinchy
+Map 29: Across the Blood Sea - Eradrop
+Map 30: Malignata - Obsidian & dobu gabu maru
+Map 31: Anubis - valkiriforce
+Map 32: Duality - Kyka & Jaws In Space
+
+Midi's
+Map 01: TiN Toker - Bucket
+Map 02: Neato - Jeremy Doyle
+Map 03: Trial aNd Terror Bucket
+Map 04: Sea Bats - Viscra Maelstrom
+Map 05: (Here Comes) The Night Train - Bucket
+Map 06: Contempt (I Hate You) - Viscra Maelstrom
+Map 07: Target NeuTralized - Bucket
+Map 08: Crazy Castle Killer - Viscra Maelstrom
+Map 09: Total NoThingness - Bucket
+Map 10: Your Last Resort - Viscra Maelstrom
+Map 11: Rushing Headlong - Jeremy Doyle
+Map 12: Ionian Isolation - Eris Falling
+Map 13: ThirteeNTh hour - Bucket
+Map 14: Crawl - Jeremy Doyle
+Map 15: Tell No Tales - Bucket
+Map 16: Avec Vous - Viscra Maelstrom
+Map 17: TaraNTulas - Bucket
+Map 18: Reaching Deeper - Eris Falling
+Map 19: ToNgue Tied - Bucket
+Map 20: Hell's Furnace - Eris Falling
+Map 21: Becoming a Machine - Eradrop
+Map 22: TermiNate and Torture - Viscra Maelstrom
+Map 23: REQ-JD10 - Jeremy Doyle
+Map 24: The Arcane - Viscra Maelstrom
+Map 25: And So, She Fell - Viscra Maelstrom
+Map 26: God Ov Julenca - Viscra Maelstrom
+Map 27: Grandfather Clocktower - Viscra Maelstrom
+Map 28: TiNTinnabulation - Bucket
+Map 29: Last Deep Breath - Eradrop
+Map 30: Trampled uNderneaTh - Bucket
+Map 31: Atmosphere - Eris Falling
+Map 32: I Don't Want You To Leave (Regretful Edit) - Viscra Maelstrom
+Title screen: Cataclysmic Impact - Viscra Maelstrom
+Intermission screen: Darkest Hour - Eris Falling
+Story text screen: The Revolution Continues - Eris Falling
+========================================================================================
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *

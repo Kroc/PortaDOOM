@@ -4,7 +4,8 @@ $KEY:B=GOTO:Tantrum 2
 $KEY:C=GOTO:Cabal Series #05
 $KEY:D=GOTO:THT - Threnody
 $KEY:E=GOTO:Master Levels #08
-$KEY:F=GOTO:Master Levels #12
+$KEY:F=GOTO:TNT - Revilution
+$KEY:G=GOTO:Master Levels #12
 
 ^C:INDEX :: T
 
@@ -15,4 +16,5 @@ $KEY:F=GOTO:Master Levels #12
 - [C] *Cabal Series: Temple of Death					5 Years of Doom
 - [D] *THT: Threnody									Community Projects
 - [E] *Master Levels: Titan Manor						Commercial DOOM
-- [F] *Master Levels: Trapped on Titan					Commercial DOOM
+- [F] *TNT: Revilution									MegaWADs
+- [G] *Master Levels: Trapped on Titan					Commercial DOOM

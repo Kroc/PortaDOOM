@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD TNT /REQ vanilla /PWAD TNTR.wad /DEH TNTR.deh

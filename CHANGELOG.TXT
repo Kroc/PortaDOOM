@@ -4,6 +4,7 @@
 
 22-12-17:
 + Added "Return to Hadron Episode 2" WAD page
++ Added "TNT: Revilution" WAD page
 
 21-12-17:
 + "brightmaps.pk3" & "lights.pk3" (GZDoom), or "skulltag_actors.pk3" &
