@@ -1,57 +1,66 @@
 $NAV=Episodes
 $KEY:P=SHELL:wads\episodes\hadron\play.bat
-$KEY:T=SHELL:wads\episodes\hadron\hadronf.txt
+$KEY:T=SHELL:wads\episodes\hadron\Hadronf.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadron
 
-:Return to Hadron                                   * 2015 Cacoward winner! *
+:Return to Hadron                                   * 2015 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>06>19	  Author : _Matt "cannonball" Powell_
 :Levels   : *9			   Modes : *Single, Co-op, Deathmatch
-:Requires : *boom		Includes : *+Patches +Demos
+:Requires : *no-limit	Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
 
-A few days after the events of Concerned, another hero tries to breach the C.E.R.N facility, things have changed though, nukage is flooding everywhere including the surrounding mountains, things are really going downhill. The objective is simple, to try and halt the invasion by closing the portal discovered by our previous hero whos location and life signs remain unknown.........
+A few days after the events of *Concerned*, another hero tries to breach the C.E.R.N facility, things have changed though, nukage is flooding everywhere including the surrounding mountains, things are really going downhill. The objective is simple, to try and halt the invasion by closing the portal discovered by our previous hero whose location and life signs remain unknown.........
 
 It is all up to you.
 
-:Maplist:
+:Map List:
 :-------------------------------------------------------------------------------
 *E1M1 - The breach
-Music used - Suck this from Rise of the triad (Lee Jackson/Robert Prince)
+(Music used - Suck this from Rise of the Triad, _Lee Jackson_/_Robert Prince_)
+
 This is pretty much the original but with the visuals and designed modernised for faster gameplay. 
 
 *E1M2 - Nukage disaster
-Music used -  From blood
+(Music used -  From blood)
+
 After some thought I decided to scrap the previous effort for this slot, so here is a 6 hour speedmap, though visually and gameplay wise it should be solid.
 
 *E1M3 - Toxic Treatment
-Music used - Smoke and mirrors from Rise of the Triad by Lee Jackson/Robert Prince
+(Music used - Smoke and mirrors from Rise of the Triad by _Lee Jackson_/_Robert Prince_)
+
 The first half is redesigned off the original plan, again the layout is more open and hence more volatile. The second half is pretty similar to the original, except with cleaner visuals and some areas removed. Also a new method to obtain the secret blue key has been designed based on the new layout.
 
 *E1M4 - Withered Gardens
-Music used - Under Death by Mark Klem from Requiem Map08
+(Music used - Under Death by _Mark Klem_ from Requiem Map08)
+
 The start is pretty similar, but the building contents and the level progression have been changed. I really like the result for this.
 
 *E1M5 - The IMP Crowd
-Music used - Path of Destruction by Mark Klem
+(Music used - Path of Destruction by _Mark Klem_)
+
 The start area has been completely opened up, the side wings whilst progressed in the same order have been completely redesigned. Also of course the visuals have been stamped in the computer/grey brick theme.
 
 *E1M6 - Gateway lab
-Music used - Infinite by Tom Mustaine (TNT Map10/18)
+(Music used - Infinite by _Tom Mustaine_, TNT Map10/18)
+
 This map was redesigned from scratch with a particular gimmick at hand. I won't go any further.
 
 *E1M7 - CB Reactor INC
-Music Used - future military conquests by Lee Jackson (Duke Nukem 3D)
+(Music Used - future military conquests by _Lee Jackson_, Duke Nukem 3D)
+
 Apart from the start area, the rest is brand new with greater interconnectivity and height variation.
 
 *E1M8 - Collider control
-Music used - Sign of Evil by Robert Prince (original track for this slot)
+(Music used - Sign of Evil by _Robert Prince_, original track for this slot)
+
 I made a proper start area this time. The main battled has been changed as well as the ending. Again no more things to tell.
 
 *E1M9 -  Prototype
-Music Used - Descent (d cent06)
+(Music Used - Descent, d cent06)
+
 I remade the main playing area into something more modern, this map plays very very quick now which was the ultimate intention, as well as introducing the plasma gun of course.
 
 :Construction:

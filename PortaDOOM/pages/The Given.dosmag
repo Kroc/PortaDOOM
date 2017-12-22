@@ -3,13 +3,13 @@ $KEY:P=SHELL:wads\onesies\TheGiven\play.bat
 $KEY:T=SHELL:wads\onesies\TheGiven\TheGiven.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/95543-the-given-a-large-monsterless-puzzle-map-rc1/
 
-:The Given                                          * 2017 Cacoward winner! *
+:The Given                                          * 2017 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2017>08>15?  Author : _dobu gabu maru_
 :Levels   : *1			   Modes : *Single
-:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches +Demoes
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 The Given is a monsterless puzzle map with an emphasis on exploration.

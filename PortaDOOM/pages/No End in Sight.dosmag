@@ -3,13 +3,13 @@ $KEY:P=SHELL:wads\megawads\neis\play.bat
 $KEY:T=SHELL:wads\megawads\neis\NEIS.bat
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/neis
 
-:No End in Sight                                    * 2017 Cacoward winner! *
+:No End in Sight                                    * 2017 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>11>28	  Author : _Emil_, _Xaser_, _Chris Lutz_ (see credits)
 :Levels   : *38			   Modes : *Single, Co-op
-:Requires : *boom		Includes : *+Music +Graphics +Patches +Demoes
+:Requires : *boom		Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 Oldschool 4-episode adventure for The Ultimate Doom, featuring some of the most devilish map design this side of 1994. 'Nuff said... ish.

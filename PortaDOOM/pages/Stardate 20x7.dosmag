@@ -3,13 +3,13 @@ $KEY:P=SHELL:wads\episodes\sd20x7\play.bat
 $KEY:T=SHELL:wads\episodes\sd20x7\sd20x7.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/sd20x7
 
-:Stardate 20x7                                      * 2017 Cacoward winner! *
+:Stardate 20x7                                      * 2017 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2017>05>24	  Author : _Ribbiks_
 :Levels   : *11			   Modes : *Single, Co-op
-:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demoes
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 *** PLAY ON HMP/HNTR ***

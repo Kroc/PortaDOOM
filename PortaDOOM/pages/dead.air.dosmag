@@ -4,7 +4,7 @@ $KEY:T=SHELL:wads\onesies\dead-air\dead-air.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/92135-deadair-v2/
 $KEY:D=GOTO:dead.wire
 
-:dead.air                                           * 2017 Cacoward winner! *
+:dead.air                                           * 2017 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------

@@ -30,7 +30,7 @@ $KEY:1=SHELL:play.bat /REQ sw /IWAD DOOM2 /DEH selfie.deh -- jokes\instadm\selfi
 $KEY:2=SHELL:play.bat /REQ sw /IWAD DOOM2 /DEH selfie.deh -- jokes\instadm\selfie.wad filters\x1.wad
 $KEY:3=SHELL:play.bat /REQ sw /IWAD DOOM2 /DEH selfie.deh -- jokes\instadm\selfie.wad filters\x-pro-ii.wad
 
-:InstaDoom                                          * 2015 Cacoward winner! *
+:InstaDoom                                          * 2015 Cacoward Winner! *
 :===============================================================================
 *Play DOOM II + InstaDoom, with filter:
 

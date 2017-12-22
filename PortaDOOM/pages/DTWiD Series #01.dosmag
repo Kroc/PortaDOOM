@@ -4,13 +4,13 @@ $KEY:P=SHELL:wads\megawads\DTWiD\DTWID\play.bat
 $KEY:T=SHELL:wads\megawads\DTWiD\DTWID\DTWID.txt
 $KEY:W=URL:http://dtwid.herokuapp.com/
 
-:Doom the Way id Did                                * 2012 Cacoward winner! *
+:Doom the Way id Did                                * 2012 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2011>12>10	  Author : *Various (see credits)
 :Levels   : *27			   Modes : *Single, Co-op, Deathmatch
-:Requires : *vanilla	Includes : *+Graphics +Patches +Demoes
+:Requires : *vanilla	Includes : *+Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 At some point in time I got the idea that it would be really fun if _John Romero_ dusted off the ol' doom editor and made another map for Doom episode 1 for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know.

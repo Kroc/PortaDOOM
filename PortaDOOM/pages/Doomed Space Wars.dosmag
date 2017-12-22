@@ -3,7 +3,7 @@ $KEY:P=SHELL:wads\episodes\spacwars\play.bat
 $KEY:T=SHELL:wads\episodes\spacwars\spacwars.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 
-:Doomed Space Wars                               * 2015 Cacoward runner up! *
+:Doomed Space Wars                               * 2015 Cacoward Runner Up! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
