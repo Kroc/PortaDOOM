@@ -75,22 +75,23 @@ ECHO  /USE ^<engine^>
 ECHO:
 ECHO     Which engine to use. Can be any of the following:
 ECHO:
-ECHO       choco-doom          : ChocolateDOOM ^(very vanilla, 320x200^)
-ECHO       choco-doom-setup    : Displays ChocolateDOOM's configuration program first
+ECHO       choco-doom          : Chocolate Doom ^(very vanilla, 320x200^)
+ECHO       choco-doom-setup    : Displays Chocolate Doom's configuration program first
 ECHO       choco-heretic       : As with choco-doom, but for Heretic WADs
 ECHO       choco-heretic-setup : As above, but displays configuration first
 ECHO       choco-hexen         : As with choco-doom, but for Hexen WADs
 ECHO       choco-hexen-setup   : As above, but displays configuration first
 ECHO       choco-strife        : As with choco-doom, but for Strife WADs
 ECHO       choco-strife-setup  : As above, but displays configuration first
-ECHO       crispy-doom         : Fork of ChocolateDOOM. 640x400, limits removed
+ECHO       crispy-doom         : Fork of Chocolate Doom; 640x400, limits removed
 ECHO       crispy-doom-setup   : As above, but displays configuration first
-ECHO       doom64ex            : DOOM 64 EX, specifically for DOOM 64
-ECHO       gzdoom              : GZDoom current. Use /SW for software rendering
+ECHO       doomretro           : Similar to Crispy Doom, but supports boom extensions
+ECHO       prboom              : PRBoom+ defaults to OpenGL. Use `/SW` for software
+ECHO       gzdoom              : GZDoom current. Use `/SW` for software rendering
 ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)
-ECHO       prboom              : PRBoom+ defaults to OpenGL. Use /SW for software
 ECHO       zandronum           : Zandronum current ^(2.x^)
 ECHO       zandronum-?         : Where ? is a version number, "2" or "3"
+ECHO       doom64ex            : DOOM 64 EX, specifically for DOOM 64
 ECHO       zdoom               : deprecated. use gzdoom with software `/SW` instead
 ECHO:
 ECHO     For GZDoom, specific versions can be invoked with the following:
@@ -587,7 +588,7 @@ IF /I "%USE%" == "choco-doom" (
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-doom"
-	SET "PORT_TITLE=chocolate doom"
+	SET "PORT_TITLE=Chocolate Doom"
 )
 IF /I "%USE%" == "choco-doom-setup" (
 	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-doom"
@@ -595,7 +596,7 @@ IF /I "%USE%" == "choco-doom-setup" (
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-doom"
-	SET "PORT_TITLE=chocolate doom ^(setup^)"
+	SET "PORT_TITLE=Chocolate Doom ^(Setup^)"
 )
 IF /I "%USE%" == "choco-heretic" (
 	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-heretic"
@@ -603,7 +604,7 @@ IF /I "%USE%" == "choco-heretic" (
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-heretic"
-	SET "PORT_TITLE=chocolate heretic"
+	SET "PORT_TITLE=Chocolate Heretic"
 	REM # game *has* to be HERETIC for this engine
 	SET "GAME=HERETIC"
 )
@@ -613,7 +614,7 @@ IF /I "%USE%" == "choco-heretic-setup" (
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-heretic"
-	SET "PORT_TITLE=chocolate heretic ^(setup^)"
+	SET "PORT_TITLE=Chocolate Heretic ^(Setup^)"
 	REM # game *has* to be HERETIC for this engine
 	SET "GAME=HERETIC"
 )
@@ -623,7 +624,7 @@ IF /I "%USE%" == "choco-hexen" (
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-hexen"
-	SET "PORT_TITLE=chocolate hexen"
+	SET "PORT_TITLE=Chocolate Hexen"
 	REM # game *has* to be HEXEN for this engine
 	SET "GAME=HEXEN"
 )
@@ -633,7 +634,7 @@ IF /I "%USE%" == "choco-hexen-setup" (
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-hexen"
-	SET "PORT_TITLE=chocolate hexen ^(setup^)"
+	SET "PORT_TITLE=Chocolate Hexen ^(Setup^)"
 	REM # game *has* to be HEXEN for this engine
 	SET "GAME=HEXEN"
 )
@@ -643,7 +644,7 @@ IF /I "%USE%" == "choco-strife" (
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-strife"
-	SET "PORT_TITLE=chocolate strife"
+	SET "PORT_TITLE=Chocolate Strife"
 	REM # game *has* to be STRIFE for this engine
 	SET "GAME=STRIFE"
 )
@@ -653,7 +654,7 @@ IF /I "%USE%" == "choco-strife-setup" (
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=choco-strife"
-	SET "PORT_TITLE=chocolate strife ^(setup^)"
+	SET "PORT_TITLE=Cocolate Strife ^(Setup^)"
 	REM # game *has* to be STRIFE for this engine
 	SET "GAME=STRIFE"
 )
@@ -663,7 +664,7 @@ IF /I "%USE%" == "crispy-doom" (
 	SET "ENGINE_CFG=crispy-doom"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=crispy-doom"
-	SET "PORT_TITLE=crispy doom"
+	SET "PORT_TITLE=Crispy Doom"
 )
 IF /I "%USE%" == "crispy-doom-setup" (
 	SET "ENGINE_DIR=%DIR_PORTS%\crispy-doom"
@@ -671,17 +672,32 @@ IF /I "%USE%" == "crispy-doom-setup" (
 	SET "ENGINE_CFG=crispy-doom"
 	SET "ENGINE_KIN=V"
 	SET "PORT_SAVE=crispy-doom"
-	SET "PORT_TITLE=crispy doom ^(setup^)"
+	SET "PORT_TITLE=Crispy Doom ^(Setup^)"
 )
-IF /I "%USE%" == "doom64ex" (
-	SET "ENGINE_DIR=%DIR_PORTS%\doom64ex"
-	SET "ENGINE_EXE=DOOM64.exe"
-	SET "ENGINE_CFG=doom64ex"
-	SET "ENGINE_KIN=X"
-	SET "PORT_SAVE=doom64ex"
-	SET "PORT_TITLE=DOOM 64 EX"
-	REM # game *has* to be DOOM64 for this engine
-	SET "GAME=DOOM64"
+IF /I "%USE%" == "doomretro" (
+	SET "ENGINE_DIR=%DIR_PORTS%\doomretro"
+	SET "ENGINE_EXE=doomretro.exe"
+	SET "ENGINE_CFG=doomretro"
+	SET "ENGINE_KIN=B"
+	SET "PORT_SAVE=doomretro"
+	SET "PORT_TITLE=DOOM Retro"
+)
+IF /I "%USE%" == "prboom" (
+	SET "ENGINE_DIR=%DIR_PORTS%\prboom+"
+	REM # are we using software rendering?
+	IF %SW% EQU 1 (
+		REM # use software-rendering executable
+		SET "ENGINE_EXE=prboom-plus.exe"
+		SET "ENGINE_CFG=prboom-plus"
+		SET "PORT_TITLE=PrBoom+ ^(Software Renderer^)"
+	) ELSE (
+		REM # use hardware-rendering executable
+		SET "ENGINE_EXE=glboom-plus.exe"
+		SET "ENGINE_CFG=glboom-plus"
+		SET "PORT_TITLE=PrBoom+ ^(OpenGL Renderer^)"
+	)
+	SET "ENGINE_KIN=B"
+	SET "PORT_SAVE=prboom"
 )
 IF /I "%USE%" == "gzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
@@ -690,7 +706,7 @@ IF /I "%USE%" == "gzdoom" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(current^)"
+	SET "PORT_TITLE=GZDoom ^(current^)"
 )
 IF /I "%USE%" == "gzdoom-32" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
@@ -699,7 +715,7 @@ IF /I "%USE%" == "gzdoom-32" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v3.2.x^)"
+	SET "PORT_TITLE=GZDoom ^(v3.2.x^)"
 	SET VER_GZDOOM=32
 )
 IF /I "%USE%" == "gzdoom-24" (
@@ -709,7 +725,7 @@ IF /I "%USE%" == "gzdoom-24" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v2.4.x^)"
+	SET "PORT_TITLE=GZDoom ^(v2.4.x^)"
 	SET VER_GZDOOM=24
 )
 IF /I "%USE%" == "gzdoom-23" (
@@ -719,7 +735,7 @@ IF /I "%USE%" == "gzdoom-23" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v2.3.x^)"
+	SET "PORT_TITLE=GZDoom ^(v2.3.x^)"
 	SET VER_GZDOOM=23
 )
 IF /I "%USE%" == "gzdoom-22" (
@@ -739,7 +755,7 @@ IF /I "%USE%" == "gzdoom-21" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v2.1.x^)"
+	SET "PORT_TITLE=GZDoom ^(v2.1.x^)"
 	SET VER_GZDOOM=21
 )
 IF /I "%USE%" == "gzdoom-20" (
@@ -749,7 +765,7 @@ IF /I "%USE%" == "gzdoom-20" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v2.0.x^)"
+	SET "PORT_TITLE=GZDoom ^(v2.0.x^)"
 	SET VER_GZDOOM=20
 )
 IF /I "%USE%" == "gzdoom-19" (
@@ -759,7 +775,7 @@ IF /I "%USE%" == "gzdoom-19" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.9.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.9.x^)"
 	SET VER_GZDOOM=19
 )
 IF /I "%USE%" == "gzdoom-18" (
@@ -769,7 +785,7 @@ IF /I "%USE%" == "gzdoom-18" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.8.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.8.x^)"
 	SET VER_GZDOOM=18
 )
 IF /I "%USE%" == "gzdoom-17" (
@@ -779,7 +795,7 @@ IF /I "%USE%" == "gzdoom-17" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.7.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.7.x^)"
 	SET VER_GZDOOM=17
 )
 IF /I "%USE%" == "gzdoom-16" (
@@ -789,7 +805,7 @@ IF /I "%USE%" == "gzdoom-16" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.6.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.6.x^)"
 	SET VER_GZDOOM=16
 )
 IF /I "%USE%" == "gzdoom-15" (
@@ -799,7 +815,7 @@ IF /I "%USE%" == "gzdoom-15" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.5.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.5.x^)"
 	SET VER_GZDOOM=15
 )
 IF /I "%USE%" == "gzdoom-14" (
@@ -809,7 +825,7 @@ IF /I "%USE%" == "gzdoom-14" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.4.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.4.x^)"
 	SET VER_GZDOOM=14
 )
 IF /I "%USE%" == "gzdoom-13" (
@@ -819,7 +835,7 @@ IF /I "%USE%" == "gzdoom-13" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.3.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.3.x^)"
 	SET VER_GZDOOM=13
 )
 IF /I "%USE%" == "gzdoom-12" (
@@ -829,7 +845,7 @@ IF /I "%USE%" == "gzdoom-12" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.2.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.2.x^)"
 	SET VER_GZDOOM=12
 )
 IF /I "%USE%" == "gzdoom-11" (
@@ -839,7 +855,7 @@ IF /I "%USE%" == "gzdoom-11" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.1.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.1.x^)"
 	SET VER_GZDOOM=11
 )
 IF /I "%USE%" == "gzdoom-10" (
@@ -849,7 +865,7 @@ IF /I "%USE%" == "gzdoom-10" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v1.0.x^)"
+	SET "PORT_TITLE=GZDoom ^(v1.0.x^)"
 	SET VER_GZDOOM=10
 )
 IF /I "%USE%" == "gzdoom-09" (
@@ -859,7 +875,7 @@ IF /I "%USE%" == "gzdoom-09" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(v0.9.x^)"
+	SET "PORT_TITLE=GZDoom ^(v0.9.x^)"
 	SET VER_GZDOOM=9
 	
 )
@@ -872,25 +888,8 @@ IF /I "%USE%" == "gzdoom-dev" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(development^)"
+	SET "PORT_TITLE=GZDoom ^(Development^)"
 	SET VER_GZDOOM=99
-)
-IF /I "%USE%" == "prboom" (
-	SET "ENGINE_DIR=%DIR_PORTS%\prboom+"
-	REM # are we using software rendering?
-	IF %SW% EQU 1 (
-		REM # use software-rendering executable
-		SET "ENGINE_EXE=prboom-plus.exe"
-		SET "ENGINE_CFG=prboom-plus"
-		SET "PORT_TITLE=prboom+ ^(software renderer^)"
-	) ELSE (
-		REM # use hardware-rendering executable
-		SET "ENGINE_EXE=glboom-plus.exe"
-		SET "ENGINE_CFG=glboom-plus"
-		SET "PORT_TITLE=prboom+ ^(OpenGL renderer^)"
-	)
-	SET "ENGINE_KIN=B"
-	SET "PORT_SAVE=prboom"
 )
 IF /I "%USE%" == "qzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\qzdoom_%ENGINE_BIT%"
@@ -901,7 +900,7 @@ IF /I "%USE%" == "qzdoom" (
 	SET "ENGINE_CFG=qzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=qzdoom"
-	SET "PORT_TITLE=qzdoom"
+	SET "PORT_TITLE=QZDoom"
 )
 IF /I "%USE%" == "zandronum" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-3"
@@ -910,7 +909,7 @@ IF /I "%USE%" == "zandronum" (
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=zandronum"
-	SET "PORT_TITLE=zandronum ^(current^)"
+	SET "PORT_TITLE=Zandronum ^(Current^)"
 )
 IF /I "%USE%" == "zandronum-2" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-2"
@@ -919,7 +918,7 @@ IF /I "%USE%" == "zandronum-2" (
 	SET "ENGINE_CFG=zandronum-2"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=zandronum"
-	SET "PORT_TITLE=zandronum ^(v2.x^)"
+	SET "PORT_TITLE=Zandronum ^(v2.x^)"
 )
 IF /I "%USE%" == "zandronum-3" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-3"
@@ -928,7 +927,17 @@ IF /I "%USE%" == "zandronum-3" (
 	SET "ENGINE_CFG=zandronum-3"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=zandronum"
-	SET "PORT_TITLE=zandronum ^(v3.x^)"
+	SET "PORT_TITLE=Zandronum ^(v3.x^)"
+)
+IF /I "%USE%" == "doom64ex" (
+	SET "ENGINE_DIR=%DIR_PORTS%\doom64ex"
+	SET "ENGINE_EXE=DOOM64.exe"
+	SET "ENGINE_CFG=doom64ex"
+	SET "ENGINE_KIN=X"
+	SET "PORT_SAVE=doom64ex"
+	SET "PORT_TITLE=DOOM 64 EX"
+	REM # game *has* to be DOOM64 for this engine
+	SET "GAME=DOOM64"
 )
 IF /I "%USE%" == "zdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zdoom"
@@ -947,7 +956,7 @@ IF "%USE%" == "" (
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=gzdoom ^(default^)"
+	SET "PORT_TITLE=GZDoom ^(Default^)"
 	SET VER_GZDOOM=32
 )
 

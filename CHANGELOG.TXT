@@ -3,7 +3,8 @@
 - = Removal
 
 23-12-17:
-+ Added Crispy Doom to "doom.bat"
++ Added Crispy Doom engine to "doom.bat" -- vanilla, no-limits
++ Added DOOM Retro engine to "doom.bat"  -- boom
 
 22-12-17:
 + Added "Return to Hadron Episode 2" WAD page
