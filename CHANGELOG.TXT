@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+23-12-17:
++ Added Crispy Doom to "doom.bat"
+
 22-12-17:
 + Added "Return to Hadron Episode 2" WAD page
 + Added "TNT: Revilution" WAD page

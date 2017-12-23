@@ -18,21 +18,22 @@ ECHO  Note that this will delete your current user-config for an engine!
 ECHO:
 ECHO  Doom:
 ECHO    [A] Chocolate-Doom
-ECHO    [B] PRBoom+ ^(hardware^)       [C] PRBoom+ ^(software^)
-ECHO    [D] Zandronum ^(v3^)           [E] Zandronum ^(v2^)
-ECHO    [F] DOOM 64 EX
-ECHO    [G] GZDoom
-ECHO    [H] ZDoom ^(v2.8.1^)
+ECHO    [B] Crispy-Doom
+ECHO    [C] PRBoom+ ^(hardware^)       [D] PRBoom+ ^(software^)
+ECHO    [E] Zandronum ^(v3^)           [F] Zandronum ^(v2^)
+ECHO    [G] DOOM 64 EX
+ECHO    [H] GZDoom
+ECHO    [I] ZDoom ^(v2.8.1^)
 ECHO:
 ECHO  Heretic:
-ECHO    [I] Chocolate-Heretic
-ECHO    [J] GZDoom
+ECHO    [J] Chocolate-Heretic
+ECHO    [K] GZDoom
 ECHO:
 ECHO  Hexen:
-ECHO    [K] Chocolate-Hexen
+ECHO    [L] Chocolate-Hexen
 ECHO:
 ECHO  Strife:
-ECHO    [L] Chocolate-Strife
+ECHO    [M] Chocolate-Strife
 ECHO:
 SET "$="
 SET /P "$=? "
@@ -50,41 +51,48 @@ IF /I "%$%" == "A" (
 )
 IF /I "%$%" == "B" (
 	REM # delete the user's config that would override the default
+	IF EXIST "%SAVES%\config.crispy-doom.cfg" DEL "%SAVES%\crispy-doom\config.crispy-doom.cfg"  >NUL 2>&1
+	IF EXIST "%SAVES%\config.crispy-doom.extra.cfg" DEL "%SAVES%\crispy-doom\config.crispy-doom.extra.cfg"  >NUL 2>&1
+	REM # launch the engine using our default config file
+	CALL %DOOM% /DEFAULT /WAIT /USE crispy-doom-setup /IWAD DOOM.WAD
+)
+IF /I "%$%" == "C" (
+	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.glboom-plus.cfg" DEL "%SAVES%\prboom\config.glboom-plus.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE prboom /IWAD DOOM.WAD
 )
-IF /I "%$%" == "C" (
+IF /I "%$%" == "D" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.prboom-plus.cfg" DEL "%SAVES%\prboom\config.prboom-plus.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE prboom /SW /IWAD DOOM.WAD
 )
-IF /I "%$%" == "D" (
+IF /I "%$%" == "E" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.zandronum-3.ini" DEL "%SAVES%\zandronum\config.zandronum-3.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT zandronum-3 /IWAD DOOM.WAD
 )
-IF /I "%$%" == "E" (
+IF /I "%$%" == "F" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.zandronum-2.ini" DEL "%SAVES%\zandronum\config.zandronum-2.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE zandronum-2 /IWAD DOOM.WAD
 )
-IF /I "%$%" == "F" (
+IF /I "%$%" == "G" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.doom64ex.cfg" DEL "%SAVES%\doom64ex\config.doom64ex.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE doom64ex
 )
-IF /I "%$%" == "G" (
+IF /I "%$%" == "H" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.gzdoom.ini" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE gzdoom /IWAD DOOM.WAD
 )
-IF /I "%$%" == "H" (
+IF /I "%$%" == "I" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.zdoom.ini" DEL "%SAVES%\gzdoom\config.zdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
@@ -93,14 +101,14 @@ IF /I "%$%" == "H" (
 
 REM # Heretic:
 REM --------------------------------------------------------------------------------------------------------------------
-IF /I "%$%" == "I" (
+IF /I "%$%" == "J" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.choco-heretic.cfg" DEL "%SAVES%\choco-heretic\config.choco-heretic.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\config.choco-heretic.extra.cfg" DEL "%SAVES%\choco-heretic\config.choco-heretic.extra.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
 	CALL %DOOM% /DEFAULT /WAIT /USE choco-heretic-setup /IWAD SHAREWARE\HERETIC1.WAD
 )
-IF /I "%$%" == "J" (
+IF /I "%$%" == "K" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.gzdoom.ini" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
@@ -109,7 +117,7 @@ IF /I "%$%" == "J" (
 
 REM # Hexen:
 REM --------------------------------------------------------------------------------------------------------------------
-IF /I "%$%" == "K" (
+IF /I "%$%" == "L" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.choco-hexen.cfg" DEL "%SAVES%\choco-hexen\config.choco-hexen.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\config.choco-hexen.extra.cfg" DEL "%SAVES%\choco-hexen\config.choco-hexen.extra.cfg"  >NUL 2>&1
@@ -119,7 +127,7 @@ IF /I "%$%" == "K" (
 
 REM # Strife:
 REM --------------------------------------------------------------------------------------------------------------------
-IF /I "%$%" == "L" (
+IF /I "%$%" == "M" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\config.choco-strife.cfg" DEL "%SAVES%\choco-strife\config.choco-strife.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\config.choco-strife.extra.cfg" DEL "%SAVES%\choco-strife\config.choco-strife.extra.cfg"  >NUL 2>&1

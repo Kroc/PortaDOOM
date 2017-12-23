@@ -83,6 +83,8 @@ ECHO       choco-hexen         : As with choco-doom, but for Hexen WADs
 ECHO       choco-hexen-setup   : As above, but displays configuration first
 ECHO       choco-strife        : As with choco-doom, but for Strife WADs
 ECHO       choco-strife-setup  : As above, but displays configuration first
+ECHO       crispy-doom         : Fork of ChocolateDOOM. 640x400, limits removed
+ECHO       crispy-doom-setup   : As above, but displays configuration first
 ECHO       doom64ex            : DOOM 64 EX, specifically for DOOM 64
 ECHO       gzdoom              : GZDoom current. Use /SW for software rendering
 ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)
@@ -655,6 +657,22 @@ IF /I "%USE%" == "choco-strife-setup" (
 	REM # game *has* to be STRIFE for this engine
 	SET "GAME=STRIFE"
 )
+IF /I "%USE%" == "crispy-doom" (
+	SET "ENGINE_DIR=%DIR_PORTS%\crispy-doom"
+	SET "ENGINE_EXE=crispy-doom.exe"
+	SET "ENGINE_CFG=crispy-doom"
+	SET "ENGINE_KIN=V"
+	SET "PORT_SAVE=crispy-doom"
+	SET "PORT_TITLE=crispy doom"
+)
+IF /I "%USE%" == "crispy-doom-setup" (
+	SET "ENGINE_DIR=%DIR_PORTS%\crispy-doom"
+	SET "ENGINE_EXE=crispy-doom-setup.exe"
+	SET "ENGINE_CFG=crispy-doom"
+	SET "ENGINE_KIN=V"
+	SET "PORT_SAVE=crispy-doom"
+	SET "PORT_TITLE=crispy doom ^(setup^)"
+)
 IF /I "%USE%" == "doom64ex" (
 	SET "ENGINE_DIR=%DIR_PORTS%\doom64ex"
 	SET "ENGINE_EXE=DOOM64.exe"
@@ -988,7 +1006,7 @@ REM ============================================================================
 REM # IWAD:
 REM ====================================================================================================================
 :iwad
-REM # if no IWAD was sepecified, select the default
+REM # if no IWAD was specified, select the default
 IF "%IWAD%" == "" (
 	REM # The deafault IWAD depends on engine selection
 	IF "%GAME%" == "DOOM"    SET "IWAD=DOOM.WAD"
@@ -1319,7 +1337,7 @@ REM # TODO: DOOM2, Final DOOM specific error messages?
 
 :iwad_found
 REM --------------------------------------------------------------------------------------------------------------------
-REM # iwad confirmed
+REM # IWAD confirmed
 ECHO         -iwad : %IWAD_PATH%
 
 REM # is the IWAD path absolute?
@@ -1814,7 +1832,7 @@ IF "%ENGINE_KIN%" == "Z" (
 	REM # `+fullscreen 1` for ZDOOM-based ports
 	SET "FULLSCREEN=+fullscreen 1"
 ) ELSE (
-	REM # `-fullscreen` for Chocolate DOOM, PRBoom+ and DOOM 64 EX
+	REM # `-fullscreen` for Chocolate DOOM/ Crispy Doom, PRBoom+ and DOOM 64 EX
 	SET "FULLSCREEN=-fullscreen"
 )
 

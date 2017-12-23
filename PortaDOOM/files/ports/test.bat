@@ -9,31 +9,33 @@ ECHO    [A] chocolate-doom ^(with setup^)
 ECHO    [B] chocolate-heretic ^(with setup^)
 ECHO    [C] chocolate-hexen ^(with setup^)
 ECHO    [D] chocolate-strife ^(with setup^)
+ECHO    [E] crispy-doom ^(with setup^)
 ECHO:
-ECHO    [E] DOOM 64 EX
+ECHO    [F] DOOM 64 EX
 ECHO:
-ECHO    [F] PRBoom+ hardware            [G] PRBoom+ software
+ECHO    [G] PRBoom+ hardware            [H] PRBoom+ software
 ECHO:
-ECHO    [H] Zandronum v2.x
-ECHO    [I] Zandronum v3.x
+ECHO    [I] Zandronum v2.x
+ECHO    [J] Zandronum v3.x
 ECHO:
-ECHO    [J] GZDoom ...
+ECHO    [K] GZDoom ...
 ECHO:
 ECHO    [Z] ZDoom v2.8.1
 ECHO:
-CHOICE /C ABCDEFGHIJZ /N
+CHOICE /C ABCDEFGHIJKZ /N
 
 IF %ERRORLEVEL% EQU 1  CALL ..\doom.bat /WAIT /CONSOLE     /USE choco-doom-setup    /IWAD DOOM.WAD
 IF %ERRORLEVEL% EQU 2  CALL ..\doom.bat /WAIT /CONSOLE     /USE choco-heretic-setup /IWAD HERETIC.WAD
 IF %ERRORLEVEL% EQU 3  CALL ..\doom.bat /WAIT /CONSOLE     /USE choco-hexen-setup   /IWAD HEXEN.WAD
 IF %ERRORLEVEL% EQU 4  CALL ..\doom.bat /WAIT /CONSOLE     /USE choco-strife-setup  /IWAD STRIFE1.WAD
-IF %ERRORLEVEL% EQU 5  CALL ..\doom.bat /WAIT /CONSOLE     /USE doom64ex            /IWAD DOOM64.WAD
-IF %ERRORLEVEL% EQU 6  CALL ..\doom.bat /WAIT /CONSOLE     /USE prboom              /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 7  CALL ..\doom.bat /WAIT /CONSOLE /SW /USE prboom              /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 8  CALL ..\doom.bat /WAIT /CONSOLE     /USE zandronum-2         /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 9  CALL ..\doom.bat /WAIT /CONSOLE     /USE zandronum-3         /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 10 GOTO :gzdoom
-IF %ERRORLEVEL% EQU 11 CALL ..\doom.bat /WAIT /CONSOLE     /USE zdoom               /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 5  CALL ..\doom.bat /WAIT /CONSOLE     /USE crispy-doom-setup   /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 6  CALL ..\doom.bat /WAIT /CONSOLE     /USE doom64ex            /IWAD DOOM64.WAD
+IF %ERRORLEVEL% EQU 7  CALL ..\doom.bat /WAIT /CONSOLE     /USE prboom              /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 8  CALL ..\doom.bat /WAIT /CONSOLE /SW /USE prboom              /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 9  CALL ..\doom.bat /WAIT /CONSOLE     /USE zandronum-2         /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 10 CALL ..\doom.bat /WAIT /CONSOLE     /USE zandronum-3         /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 11 GOTO :gzdoom
+IF %ERRORLEVEL% EQU 12 CALL ..\doom.bat /WAIT /CONSOLE     /USE zdoom               /IWAD DOOM.WAD
 
 GOTO :menu
 
