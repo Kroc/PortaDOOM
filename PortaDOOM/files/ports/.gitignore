@@ -23,6 +23,8 @@ gzdoom-dev/
 # exclude user configs
 **/default.cfg
 **/chocolate-*.cfg
+**/crispy-*.cfg
+**/doomretro.cfg
 **/glboom-plus.cfg
 **/gzdoom-*.ini
 **/prboom-plus.cfg

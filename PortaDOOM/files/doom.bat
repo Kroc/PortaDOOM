@@ -1559,8 +1559,14 @@ REM #       parameter and will put savegames in the 'current directory'!
 IF "%ENGINE_KIN%" ==  "Z" (
 	SET PARAMS=%PARAMS% -savedir "."
 	ECHO      -savedir : %SAVES_WAD%
-)
-IF "%ENGINE_KIN%" == "B" (
+	
+REM # DOOM Retro uses `-savedir`
+) ELSE IF "%PORT_SAVE%" == "doomretro" (
+	SET PARAMS=%PARAMS% -savedir "."
+	ECHO      -savedir : %SAVES_WAD%
+	
+REM # PrBoom+ uses `-save`
+) ELSE IF "%ENGINE_KIN%" == "B" (
 	SET PARAMS=%PARAMS% -save "."
 	ECHO         -save : %SAVES_WAD%
 )
@@ -1585,11 +1591,11 @@ IF %DEFAULT% EQU 1 (
 	REM # launch the engine to create and set a new default configuration
 	IF NOT EXIST "%DIR_CONFIGS%\default.%ENGINE_CFG%.%CFG%" (
 		ECHO:
-		ECHO     WARNING: The default configuration file ^(for this engine^) is missing.
-		ECHO              The engine will be launched with a new default configuration
-		ECHO              file; please configure the engine to desired defaults.
+		ECHO       WARNING : The default configuration file ^(for this engine^) is missing.
+		ECHO                 The engine will be launched with a new default configuration
+		ECHO                 file; please configure the engine to desired defaults.
 		ECHO:
-		ECHO     press any key to continue
+		ECHO       press any key to continue
 		ECHO:
 		PAUSE >NUL
 		
@@ -1601,11 +1607,11 @@ IF %DEFAULT% EQU 1 (
 		IF NOT EXIST "%SAVES_PORT%\config.%ENGINE_CFG%.%CFG%" (
 			REM # copy across the default configuration (from "config" folder)
 			COPY /Y "%DIR_CONFIGS%\default.%ENGINE_CFG%.%CFG%" ^
-			        "%SAVES_PORT%\config.%ENGINE_CFG%.%CFG%" >NUL
+			          "%SAVES_PORT%\config.%ENGINE_CFG%.%CFG%"  >NUL
 			REM # chocolate-doom's extra config file too
 			IF "%ENGINE_KIN%" == "V" (
 				COPY /Y "%DIR_CONFIGS%\default.%ENGINE_CFG%.extra.%CFG%" ^
-					"%SAVES_PORT%\config.%ENGINE_CFG%.extra.%CFG%" >NUL
+				          "%SAVES_PORT%\config.%ENGINE_CFG%.extra.%CFG%"  >NUL
 			)
 		)
 		REM # use the user's personal config file

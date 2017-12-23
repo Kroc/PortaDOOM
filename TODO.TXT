@@ -23,21 +23,25 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] DOOM Retro's `-config` parameter is not working
+[ ] A method to inject default controls into any engine ver.
+    For Z-based engines, we can do this on the command line,
+    For most other engines, we'll have to modify the .cfg file
+[ ] dosmag: Reinstate blinking with the event loop?
 [ ] dosmag: "^_^" not escaping properly
-[X] dosmag: Allow key-defs (links) to colour their link-text so that we don't
-    have to use "bold" for these
-[X] Make doom.bat insert "lights.pk3" & "brightmaps.pk3" instead of "play.bat";
-    This will allow PWADs to override these instead of the other way around
-[ ] DOSmag: Trap ALT+ENTER and override built in fullscreen swith with our own
-[X] lilith.pk3 will work *only* with actual ZDoom2.8.1
-[ ] "Castlevania Simon's Destiny" is an IWAD so requires its own configiuration
-    (set defaults script)
+[ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
+    http://www.qb64.net/forum/index.php?topic=12306.msg108013#msg108013
+[ ] dosmag: Can we fix mousewheel scrolling with:
+    http://www.qb64.net/wiki/index.php/Controller_Devices
+[ ] "Castlevania Simon's Destiny" & "Shadow of the Wool Ball" are IWADs,
+    so require own configuration (set defaults script, GZDoom 3.2+)
+[X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
+    [ ] Do not allow play.bat / doom.bat select an .ipk3 / .iwad file for
+        GZDoom < 3.2 or other engines?
 [ ] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
     based on engine support -- e.g. ALIENS TC
 [X] Search 'current directory' for IWADs
 [X] Search for PWAD in IWAD directory too (since WADs folder is combined now)
-[ ] GZDoom 3.2+ supports Rise of the Wool Ball as an IWAD
-[X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
      inputting text, even when using a mouse"
 [X] Skill select should be in doom.bat since it knows the most about which
