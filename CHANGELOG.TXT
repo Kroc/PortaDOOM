@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+24-12-17:
+* Fixed sound in DOOM 64 EX not working.
+  Binaries were updated to fix mouse issue in Windows 10
+
 23-12-17:
 + Added Crispy Doom engine to "doom.bat" -- vanilla, no-limits
 + Added DOOM Retro engine to "doom.bat"  -- boom

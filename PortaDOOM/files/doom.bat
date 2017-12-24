@@ -949,7 +949,7 @@ IF /I "%USE%" == "zdoom" (
 )
 
 REM # if an engine wasn't specified, provide a default
-IF "%USE%" == "" (
+IF NOT DEFINED USE (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
 	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
@@ -961,7 +961,7 @@ IF "%USE%" == "" (
 )
 
 REM # no recognised engine name?
-IF "%PORT_SAVE%" == "" (
+IF NOT DEFINED PORT_SAVE (
 	ECHO  ERROR: "%USE%" is not a valid engine name.
 	ECHO:
 	ECHO  Command:
@@ -969,6 +969,12 @@ IF "%PORT_SAVE%" == "" (
 	ECHO     doom.bat %*
 	ECHO:
 	POPD & PAUSE & EXIT /B 1
+)
+
+REM # DOOM 64 EX: fix for Sound Font not being found
+REM # (it's looking in the 'current directory' rather than the executable's directory?)
+IF "%PORT_SAVE%" == "doom64ex" (
+	SET PARAMS=%PARAMS% -setvars s_soundfont "%FIX_PATH%\%ENGINE_DIR%\DOOMSND.SF2"
 )
 
 REM # do we need to force software-mode in GZDoom?
@@ -1016,7 +1022,7 @@ REM # IWAD:
 REM ====================================================================================================================
 :iwad
 REM # if no IWAD was specified, select the default
-IF "%IWAD%" == "" (
+IF NOT DEFINED IWAD (
 	REM # The deafault IWAD depends on engine selection
 	IF "%GAME%" == "DOOM"    SET "IWAD=DOOM.WAD"
 	IF "%GAME%" == "DOOM2"   SET "IWAD=DOOM2.WAD"
@@ -1030,7 +1036,7 @@ REM # some ports require the file extensions for IWADs:
 REM # get just the file name / extension from the IWAD (ignore any path)
 FOR %%G IN ("%IWAD%") DO SET "IWAD_EXT=%%~xG"
 REM # check if the extension is missing
-IF "%IWAD_EXT%" == "" (
+IF NOT DEFINED IWAD_EXT (
 	REM # GZDoom v3.2+ supports ".ipk3"...
 	IF EXIST "%DIR_WADS%\%IWAD%.ipk3" SET "IWAD=%IWAD%.ipk3"
 	REM # ... and ".IWAD"
@@ -1085,29 +1091,29 @@ GOTO :iwad_missing
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # this implies the type of game being played is DOOM
 	SET "GAME=DOOM"
-
+	
 	REM # is Steam : The Ultimate DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM.WAD can be found there
 		IF EXIST "%REG%\base\DOOM.WAD" SET "IWAD_PATH=%REG%\base\DOOM.WAD" & GOTO :iwad_found
 	)
 	REM # is GOG : The Ultimate DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435827232" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM.WAD can be found there
 		IF EXIST "%REG%\DOOM.WAD" SET "IWAD_PATH=%REG%\DOOM.WAD" & GOTO :iwad_found
 	)
 	REM # is Steam : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM.WAD can be found there
 		REM # NOTE: this WAD is broken and censored and we will patch it automatically
 		IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_patchbfg
 	)
 	REM # is GOG : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM.WAD can be found there
 		REM # NOTE: this WAD is broken and censored and we will patch it automatically
 		IF EXIST "%REG%\base\wads\DOOM.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM.WAD" & GOTO :iwad_patchbfg
@@ -1121,26 +1127,26 @@ GOTO :iwad_missing
 	
 	REM # is Steam : DOOM II installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM2.WAD can be found there
 		IF EXIST "%REG%\base\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\DOOM2.WAD" & GOTO :iwad_found
 	)
 	REM # is GOG : DOOM II installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM2.WAD can be found there
 		IF EXIST "%REG%\doom2\DOOM2.WAD" SET "IWAD_PATH=%REG%\doom2\DOOM2.WAD" & GOTO :iwad_found
 	)
 	REM # is Steam : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if DOOM2.WAD can be found there
 		REM # TODO: this WAD is broken and censored and we should patch it automatically
 		IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_patchbfg
 	)
 	REM # is GOG : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINDE REG (
 		REM # check if DOOM2.WAD can be found there
 		REM # TODO: this WAD is broken and censored and we should patch it automatically
 		IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_patchbfg
@@ -1154,13 +1160,13 @@ GOTO :iwad_missing
 	
 	REM # is Steam : Final DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if TNT.WAD can be found there
 		IF EXIST "%REG%\base\TNT.WAD" SET "IWAD_PATH=%REG%\base\TNT.WAD" & GOTO :iwad_found
 	)
 	REM # is GOG : Final DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848742" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if TNT.WAD can be found there
 		IF EXIST "%REG%\TNT\TNT.WAD" SET "IWAD_PATH=%REG%\TNT\TNT.WAD" & GOTO :iwad_found
 	)
@@ -1173,13 +1179,13 @@ GOTO :iwad_missing
 	
 	REM # is Steam : Final DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if PLUTONIA.WAD can be found there
 		IF EXIST "%REG%\base\PLUTONIA.WAD" SET "IWAD_PATH=%REG%\base\PLUTONIA.WAD" & GOTO :iwad_found
 	)
 	REM # is GOG : Final DOOM installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848742" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if PLUTONIA.WAD can be found there
 		IF EXIST "%REG%\PLUTONIA\PLUTONIA.WAD" SET "IWAD_PATH=%REG%\PLUTONIA\PLUTONIA.WAD" & GOTO :iwad_found
 	)
@@ -1192,7 +1198,7 @@ GOTO :iwad_missing
 	
 	REM # is Steam : Heretic installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2390" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if HERETIC.WAD can be found there
 		IF EXIST "%REG%\base\HERETIC.WAD" SET "IWAD_PATH=%REG%\base\HERETIC.WAD" & GOTO :iwad_found
 	)
@@ -1205,7 +1211,7 @@ GOTO :iwad_missing
 	
 	REM # is Steam : Hexen installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2360" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if HEXEN.WAD can be found there
 		IF EXIST "%REG%\base\HEXEN.WAD" SET "IWAD_PATH=%REG%\base\HEXEN.WAD" & GOTO :iwad_found
 	)
@@ -1279,7 +1285,7 @@ GOTO :iwad_missing
 	IF /I "%IWAD_NAME%" == "DOOM.WAD"  SET "FREEDOOM=%DIR_WADS%\conversions\freedoom\freedoom1.wad"
 	IF /I "%IWAD_NAME%" == "DOOM2.WAD" SET "FREEDOOM=%DIR_WADS%\conversions\freedoom\freedoom2.wad"
 	
-	IF NOT "%FREEDOOM%" == "" (
+	IF DEFINED FREEDOOM (
 		ECHO:
 		ECHO   WARNING! COULD NOT FIND "%DIR_WADS%\%IWAD%"
 		ECHO   -- USING FREEDOOM AS REPLACEMENT
@@ -1359,7 +1365,7 @@ REM ============================================================================
 REM # PWAD:
 REM ====================================================================================================================
 REM # if no PWAD was specified, skip ahead
-IF "%PWAD%" == "" GOTO :deh_bex
+IF NOT DEFINED PWAD GOTO :deh_bex
 
 REM # get the PWAD file name (ignore any path)
 FOR %%G IN ("%PWAD%") DO SET "PWAD_NAME=%%~nxG"
@@ -1416,13 +1422,13 @@ EXIT /B 1
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # is Steam : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if NERVE.WAD can be found there
 		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :pwad_found
 	)
 	REM # is GOG : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if NERVE.WAD can be found there
 		IF EXIST "%REG%\base\wads\NERVE.WAD" SET "PWAD_PATH=%REG%\base\wads\NERVE.WAD" & GOTO :pwad_found
 	)
@@ -1441,13 +1447,13 @@ EXIT /B 1
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # is Steam : Master Levels for DOOM II installed?
 	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160" "InstallLocation"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if the WAD can be found there
 		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :pwad_found
 	)
 	REM # is GOG : DOOM II + Final DOOM (including Master Levels) installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1435848814" "Path"
-	IF NOT "%REG%" == "" (
+	IF DEFINED REG (
 		REM # check if the WAD can be found there
 		IF EXIST "%REG%\master\wads\%PWAD_NAME%" SET "PWAD_PATH=%REG%\master\wads\%PWAD_NAME%" & GOTO :pwad_found
 	)
@@ -1492,7 +1498,7 @@ IF "%DEH%-%BEX%" == "-" GOTO :saves
 
 :deh
 REM # was there a /DEH parameter?
-IF "%DEH%" == "" GOTO :bex
+IF NOT DEFINED DEH GOTO :bex
 
 SET "FILE=%DEH%"
 CALL :find_file_or_fail
@@ -1509,7 +1515,7 @@ SET PARAMS=%PARAMS% -deh "%DEH_PATH%"
 
 :bex
 REM # was there a /BEX parameter?
-IF "%BEX%" == "" GOTO :saves
+IF NOT DEFINED BEX GOTO :saves
 
 SET "FILE=%BEX%"
 CALL :find_file_or_fail
@@ -1529,9 +1535,9 @@ REM ============================================================================
 REM # SAVE FILES:
 REM ====================================================================================================================
 :saves
-REM # savegames are separated by port (gzdoom / zandronum &c.)
+REM # savegames are separated by port (GZDoom / Zandronum &c.)
 REM # and then by IWAD or PWAD (if present)
-IF NOT "%PWAD%" == "" (
+IF DEFINED PWAD (
 	REM # remove extension from PWAD name
 	FOR %%G IN ("%PWAD_NAME%") DO SET "SAVE_WAD=%%~nG"
 ) ELSE (
@@ -1635,7 +1641,7 @@ REM ============================================================================
 REM # DEMO:
 REM ====================================================================================================================
 REM # demo playback?
-IF "%DEMO%" == "" GOTO :warp
+IF NOT DEFINED DEMO GOTO :warp
 
 SET "FILE=%DEMO%"
 CALL :find_file_or_fail
@@ -1656,7 +1662,7 @@ REM # WARP & SKILL:
 REM ====================================================================================================================
 :warp
 REM # if no warp has been given, skip ahead
-IF "%WARP%" == "" GOTO :skill
+IF NOT DEFINED WARP GOTO :skill
 
 REM # is this a DOOM.WAD "e.m" format map number?
 REM # (replace the dot with a space for the engines)
@@ -1666,7 +1672,7 @@ ECHO         -warp : %WARP%
 SET PARAMS=%PARAMS% -warp %WARP%
 
 REM # if warping, and a skill-level is already given we don't need to ask the user
-IF NOT "%SKILL%" == "" GOTO :skill
+IF DEFINED SKILL GOTO :skill
 
 REM # TODO: provide descriptions of the effects skill levels have?
 REM #       see: https://doomwiki.org/wiki/Skill_level
@@ -1747,7 +1753,8 @@ IF "%WINVER%" == "5.1" GOTO :skill_xp
 
 :skill
 REM # was a skill-level given?
-IF "%SKILL%" == "" GOTO :exec
+IF NOT DEFINED SKILL GOTO :exec
+
 REM # set the skill-level
 ECHO        -skill : %SKILL%
 SET PARAMS=%PARAMS% -skill %SKILL%
@@ -1757,7 +1764,7 @@ REM ============================================================================
 REM # EXEC:
 REM ====================================================================================================================
 :exec
-IF "%EXEC%" == "" GOTO :files
+IF NOT DEFINED EXEC GOTO :files
 
 SET "FILE=%EXEC%"
 CALL :find_file_or_fail
@@ -1810,8 +1817,8 @@ REM ----------------------------------------------------------------------------
 
 :launch
 REM ====================================================================================================================
-REM # if a compatibility-level is specificed, include this
-IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% -complevel %CMPLVL%
+REM # if a compatibility-level is specified, include this
+IF DEFINED CMPLVL SET PARAMS=%PARAMS% -complevel %CMPLVL%
 
 REM # were any files added?
 IF %ANY_WAD% EQU 1 (
@@ -1900,14 +1907,14 @@ IF ERRORLEVEL 1 (
 	IF NOT "%FILE:~1,1%" == ":" (
 		ECHO  The following locations were checked:
 		ECHO:
-		IF NOT "%DIR_PREV%" == "" (
+		IF DEFINED DIR_PREV (
 			ECHO 	 "%DIR_PREV%\%~1"
 		)
 		ECHO 	 "%DIR_CUR%\%~1"
-		IF NOT "%DIR_PWAD%" == "" (
+		IF DEFINED DIR_PWAD (
 			ECHO 	 "%DIR_PWAD%\%~1"
 		)
-		IF NOT "%DIR_IWAD%" == "" (
+		IF DEFINED DIR_IWAD (
 			ECHO 	 "%DIR_IWAD%\%~1"
 		)
 		ECHO 	 "%DIR_WADS%\%~1"
@@ -1949,7 +1956,7 @@ IF "%FILE:~1,1%" == ":" (
 )
 
 REM # [1] check 'previous directory'
-IF NOT "%DIR_PREV%" == "" (
+IF DEFINED DIR_PREV (
 	IF EXIST "%DIR_PREV%\%FILE%" (
 		SET "FILE=%DIR_PREV%\%FILE%"
 		CALL :find_file__rel
@@ -1967,7 +1974,7 @@ IF EXIST "%DIR_CUR%\%FILE%" (
 )
 
 REM # [3] check the PWAD's directory if one was specified
-IF NOT "%DIR_PWAD%" == "" (
+IF DEFINED DIR_PWAD (
 	IF EXIST "%DIR_PWAD%\%FILE%" (
 		SET "FILE=%DIR_PWAD%\%FILE%"
 		CALL :find_file__rel
@@ -1977,7 +1984,7 @@ IF NOT "%DIR_PWAD%" == "" (
 )
 
 REM # [4] check the IWAD's directory (if we've got that far yet)
-IF NOT "%DIR_IWAD%" == "" (
+IF DEFINED DIR_IWAD (
 	IF EXIST "%DIR_IWAD%\%FILE%" (
 		SET FILE=%DIR_IWAD%\%FILE%
 		CALL :find_file__rel
@@ -1995,7 +2002,7 @@ IF EXIST "%DIR_WADS%\%FILE%" (
 )
 
 REM # [6] check the engine's directory (if we've got that far yet)
-IF NOT "%ENGINE_DIR%" == "" (
+IF DEFINED ENGINE_DIR (
 	IF EXIST "%ENGINE_DIR%\%FILE%" (
 		SET "FILE=%ENGINE_DIR%\%FILE%"
 		CALL :find_file__rel

@@ -23,10 +23,14 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] doom.bat: Add `-shotdir`, supported by a number of engines
+
 [ ] DOOM Retro's `-config` parameter is not working
 [ ] A method to inject default controls into any engine ver.
     For Z-based engines, we can do this on the command line,
-    For most other engines, we'll have to modify the .cfg file
+    For most other engines, we'll have to modify the .cfg file.
+    - DOOM Retro has no setup program, will *require* the above!
+
 [ ] dosmag: Reinstate blinking with the event loop?
 [ ] dosmag: "^_^" not escaping properly
 [ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
@@ -44,8 +48,6 @@ Scripts:
 [X] Search for PWAD in IWAD directory too (since WADs folder is combined now)
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
      inputting text, even when using a mouse"
-[X] Skill select should be in doom.bat since it knows the most about which
-    game is being played
 [ ] Need a "dotted tab" for contents and index pages
 
 [X] Internally determine which 'game' (DOOM/HERETIC/HEXEN &c.) is being played
