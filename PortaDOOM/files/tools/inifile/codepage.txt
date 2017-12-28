@@ -1,0 +1,29 @@
+CodePage issues (CMD command file) 
+
++++
+If your command only consist of ASCII (plain English) characters, or if you type the command at the command prompt, you do not have to read this.
++++
+
+When you run a CMD or BAT script, you must take care that the text of the script is written with the same encoding ("code page") as the console. Usually, you write text with Windows "ANSI" (ISO) encoding, while the console runs with the legacy "OEM" character set.
+
+The best solution for this issue is changing the console code page, for example:
+
+         CHCP 1252
+
+The CHCP command sets the code page to normal Windows text encoding (Western Europe in this example), so the console can read the CMD file as "ANSI" text, as you have written it with a Windows editor. 
+
+For "Code Page" see http://en.wikipedia.org/wiki/Code_page
+See also: http://blogs.msdn.com/b/oldnewthing/archive/2005/03/08/389527.aspx
+
+CHCP (without parameter) displays the current console code page. To find out your Windows code page you may use this tool: www.horstmuc.de/win/getacp.zip
+
+Note: Windows' CMD.exe cannot handle UNICODE or UTF-8 scripts. 
+
+
++++ Console output
+
+The output is encoded as normal Windows text, which will work when you redirect it to a file, or when you have changed the console code page with the CHCP command (see above).
+
+*** 30 Oct 2016
+
+
