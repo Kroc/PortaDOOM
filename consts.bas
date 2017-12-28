@@ -11,12 +11,6 @@ CONST FALSE = 0
 
 '------------------------------------------------------------------------------
 
-'the default size (in char cols/rows) of the text-mode screen (`SCREEN 0`)
-CONST SCREEN_WIDTH = 80
-CONST SCREEN_HEIGHT = 25
-
-'------------------------------------------------------------------------------
-
 CONST BLACK = 0 '..COLOR code for black
 CONST BLUE = 1 '...COLOR code for dark blue
 CONST GREEN = 2 '..COLOR code for dark green
@@ -42,6 +36,7 @@ CONST ASC_NULL = 0
 
 CONST ASC_BKSP = 8
 CONST ASC_TAB = 9
+CONST ASC_ENTER = 13
 
 CONST ASC_ESC = 27 '      escape key
 

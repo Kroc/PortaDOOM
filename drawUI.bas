@@ -4,7 +4,7 @@ SUB refreshScreen
     STATIC buffer%
 
     'switch focus to the backbuffer
-    SCREEN 0, , 1 - buffer%, buffer%
+    SCREEN , , 1 - buffer%, buffer%
 
     'draw in the textual content;
     'each of these clear their respective backgrounds themselves
@@ -16,7 +16,7 @@ SUB refreshScreen
 
     'flip the display buffers
     buffer% = 1 - buffer%
-    SCREEN 0, , 1 - buffer%, buffer%
+    SCREEN , , 1 - buffer%, buffer%
 END SUB
 
 'draw the title of the current page and the navigation breadcrumb
@@ -66,7 +66,7 @@ SUB drawHeader
         LOCATE (HEAD_TOP + 1), SCREEN_WIDTH - tab_width%
         PRINT CHR$(ASC_BOX_V);
         IF PageNum% > 1 THEN
-            COLOR Themes(PageTheme%).colorPageTab + BLINK
+            COLOR Themes(PageTheme%).colorPageTab ''+ BLINK
             PRINT CHR$(ASC_ARR_LT);
             COLOR Themes(PageTheme%).colorPageTab
         ELSE
@@ -74,7 +74,7 @@ SUB drawHeader
         END IF
         PRINT " " + tab_text$ + " ";
         IF PageNum% < PageCount% THEN
-            COLOR Themes(PageTheme%).colorPageTab + BLINK
+            COLOR Themes(PageTheme%).colorPageTab ''+ BLINK
             PRINT CHR$(ASC_ARR_RT);
             COLOR Themes(PageTheme%).colorPageTab
         ELSE
@@ -255,7 +255,8 @@ SUB drawDialog
     DIM boxTop%: boxTop% = 1 + (SCREEN_HEIGHT - (boxHeight% + 2)) / 2
 
     'draw the dialogue border and background
-    COLOR HELP_FGND + BLINK, HELP_BKGD
+    ''COLOR HELP_FGND + BLINK, HELP_BKGD
+     COLOR HELP_FGND, HELP_BKGD
     LOCATE boxTop%, boxLeft%
     PRINT CHR$(ASC_BOX_TL) + STRING$(dialogWidth%+ 2, ASC_BOX_H) + _
           CHR$(ASC_BOX_TR);

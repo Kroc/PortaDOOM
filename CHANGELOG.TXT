@@ -1,3 +1,7 @@
+28-DEC-17:
+* Increased screen height to 30 rows (640x480), though this currently
+  removes the blinking text ability (this may be restored later)
+
 02-OCT-17:
 + Add "#" to usable key defines
 

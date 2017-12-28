@@ -12,6 +12,11 @@
 
 ''ON ERROR GOTO error_handler
 
+'the default size (in char cols/rows) of the screen
+CONST SCREEN_MODE = 12 '=640x480
+CONST SCREEN_WIDTH = 80
+CONST SCREEN_HEIGHT = 30
+
 '$INCLUDE: 'consts.bas'
 
 
@@ -257,7 +262,7 @@ $RESIZE:OFF
 _TITLE "DOSmag"
 
 'set graphics mode, screen size, colour and clear screen
-SCREEN 0, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
+SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 COLOR PAGE_FGND, PAGE_BKGD: CLS
 
 'display the front-page
@@ -311,7 +316,7 @@ DO
                     'restore the scroll position
                     scrollTo old_line%
 
-                CASE ASC_F11 'F11 = FULLSCREEN ENTER/EXIT
+                CASE ASC_F11, ASC_ENTER 'F11 or ALT+ENTER
                     'flip the full-screen mode
                     IF _FULLSCREEN = 0 THEN
                         'use 1:1 pixel sizing as best as possible;
@@ -1034,6 +1039,19 @@ SUB formatLine (indent%, src$)
                 is_key` = FALSE
                 'a word boundary occurs after the closing bracket
                 is_boundary` = TRUE
+
+            ELSEIF char% = ASC_SPC THEN
+                'append the current word (this will word-wrap as necessary)
+                'if the line wrapped exactly the space will not be needed,
+                'and this GOSUB call will not return here!
+                GOSUB addWord
+                'if the line wrapped, we don't want to add the whitespace
+                'to the beginning of the new line, identation has already
+                'been handled
+                IF line_len% > 0 THEN
+                    newline$ = newline$ + " "
+                    line_len% = line_len% + 1
+                END IF
             ELSE
                 'any other character, add as is
                 GOSUB addChar
@@ -1511,7 +1529,7 @@ SUB printLine (line$)
                     line_width% = line_width% - 6
                     LOCATE , line_len% + 3
                     'draw the border in flashing red
-                    GOSUB pushmode: COLOR CurColor% + BLINK
+                    GOSUB pushmode: COLOR CurColor% ''+ BLINK
                     'draw the left and right box borders
                     PRINT CHR$(ASC_BOX_V) _
                         + SPACE$(2 + line_width% - line_len%) _
