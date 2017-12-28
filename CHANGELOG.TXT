@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+28-12-17:
++ Added STRIFE Steam / GOG detection and shareware substitution
+
 24-12-17:
 * Fixed sound in DOOM 64 EX not working.
   Binaries were updated to fix mouse issue in Windows 10

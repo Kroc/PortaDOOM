@@ -1004,6 +1004,7 @@ CALL :engine_inc %ENGINE_INC%
 GOTO :iwad
 
 :engine_inc
+REM --------------------------------------------------------------------------------------------------------------------
 IF "%~1" == "" GOTO:EOF
 
 SET FILES=%FILES% "%FIX_PATH%\%ENGINE_DIR%\%1"
@@ -1069,7 +1070,7 @@ SET "FILE=%IWAD%"
 CALL :find_file
 REM # found?
 IF %ERRORLEVEL% EQU 0 (
-	SET "IWAD_PATH=%FILE%"
+	SET IWAD_PATH=%FILE%
 	GOTO :iwad_found
 )
 
@@ -1082,7 +1083,7 @@ IF /I "%IWAD_NAME%" == "TNT.WAD"      GOTO :iwad_tnt
 IF /I "%IWAD_NAME%" == "PLUTONIA.WAD" GOTO :iwad_plutonia
 IF /I "%IWAD_NAME%" == "HERETIC.WAD"  GOTO :iwad_heretic
 IF /I "%IWAD_NAME%" == "HEXEN.WAD"    GOTO :iwad_hexen
-REM # TODO: STRIFE
+IF /I "%IWAD_NAME%" == "STRIFE1.WAD"  GOTO :iwad_strife
 
 REM # not a known commercial IWAD
 GOTO :iwad_missing
@@ -1215,7 +1216,26 @@ GOTO :iwad_missing
 		REM # check if HEXEN.WAD can be found there
 		IF EXIST "%REG%\base\HEXEN.WAD" SET "IWAD_PATH=%REG%\base\HEXEN.WAD" & GOTO :iwad_found
 	)
+
+:iwad_strife
+	REM ------------------------------------------------------------------------------------------------------------
+	REM # this implies the type of game being played is STRIFE
+	SET "GAME=STRIFE"
 	
+	REM # is Steam : "The Original Strife: Veteran Edition" installed?
+	CALL :reg "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 317040" "InstallLocation"
+	IF DEFINED REG (
+		REM # check if STRIFE1.WAD can be found there
+		IF EXIST "%REG%\strife1.wad" SET "IWAD_PATH=%REG%\strife1.wad" & GOTO :iwad_found
+	)
+	REM # is GOG : "The Original Strife: Veteran Edition" installed?
+	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1432899949" "Path"
+	IF DEFINED REG (
+		REM # check if STRIFE1.WAD can be found there
+		IF EXIST "%REG%\strife1.wad" SET "IWAD_PATH=%REG%\strife1.wad" & GOTO :iwad_found
+	)
+	GOTO :iwad_check
+
 :iwad_check
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # did we find the IWAD in GOG / Steam?
@@ -1277,7 +1297,22 @@ GOTO :iwad_missing
 		GOTO :iwad_found
 	)
 	
-	REM # TODO: Strife Shareware
+	REM # and Strife
+	IF "%GAME%-%PWAD%" == "STRIFE-" (
+		ECHO:
+		ECHO   WARNING! Could not find registered STRIFE1.WAD:
+		ECHO:
+		ECHO   -- The shareware version will be launched instead. Please purchase
+		ECHO      "The Original Strife: Veteran Edition" from GOG or Steam,
+		ECHO      or place your own copy of "STRIFE1.WAD" in the "%DIR_WADS%" folder.
+		ECHO:
+		ECHO      press any key to continue
+		PAUSE >NUL
+		
+		SET "IWAD_PATH=SHAREWARE\STRIFE0.WAD"
+		
+		GOTO :iwad_found
+	)
 	
 	REM # if this was DOOM or DOOM2, we could use FreeDOOM instead
 	SET "FREEDOOM="
@@ -1328,7 +1363,8 @@ REM # TODO: DOOM2, Final DOOM specific error messages?
 	ECHO:
 	
 	REM # get the folder of the DOOM 3 BFG Edition WADs;
-	REM # the patched file will be saved there to avoid unintentional "stealing" of IWADs off of computers
+	REM # the patched file will be saved there to avoid
+	REM # unintentional "stealing" of IWADs off of computers
 	FOR %%G IN ("%IWAD_PATH%") DO SET "BFG_PATH=%%~dpG"
 	
 	REM # DOOM or DOOM2?

@@ -112,13 +112,13 @@ IF /I "%$%" == "K" (
 	IF EXIST "%SAVES%\choco-heretic\config.choco-heretic.cfg"       DEL "%SAVES%\choco-heretic\config.choco-heretic.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\choco-heretic\config.choco-heretic.extra.cfg" DEL "%SAVES%\choco-heretic\config.choco-heretic.extra.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
-	CALL %DOOM% /DEFAULT /WAIT /USE choco-heretic-setup /IWAD SHAREWARE\HERETIC1.WAD
+	CALL %DOOM% /DEFAULT /WAIT /USE choco-heretic-setup
 )
 IF /I "%$%" == "L" (
 	REM # delete the user's config that would override the default
 	IF EXIST "%SAVES%\gzdoom\config.gzdoom.ini" DEL "%SAVES%\gzdoom\config.gzdoom.ini"  >NUL 2>&1
 	REM # launch the engine using our default config file
-	CALL %DOOM% /DEFAULT /WAIT /USE gzdoom /IWAD SHAREWARE\HERETIC1.WAD
+	CALL %DOOM% /DEFAULT /WAIT /USE gzdoom /IWAD
 )
 
 REM # Hexen:
@@ -128,7 +128,7 @@ IF /I "%$%" == "M" (
 	IF EXIST "%SAVES%\choco-hexen\config.choco-hexen.cfg"       DEL "%SAVES%\choco-hexen\config.choco-hexen.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\choco-hexen\config.choco-hexen.extra.cfg" DEL "%SAVES%\choco-hexen\config.choco-hexen.extra.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
-	CALL %DOOM% /DEFAULT /WAIT /USE choco-hexen-setup /IWAD SHAREWARE\HEXEN.WAD
+	CALL %DOOM% /DEFAULT /WAIT /USE choco-hexen-setup /IWAD
 )
 
 REM # Strife:
@@ -138,7 +138,7 @@ IF /I "%$%" == "N" (
 	IF EXIST "%SAVES%\choco-strife\config.choco-strife.cfg"       DEL "%SAVES%\choco-strife\config.choco-strife.cfg"  >NUL 2>&1
 	IF EXIST "%SAVES%\choco-strife\config.choco-strife.extra.cfg" DEL "%SAVES%\choco-strife\config.choco-strife.extra.cfg"  >NUL 2>&1
 	REM # launch the engine using our default config file
-	CALL %DOOM% /DEFAULT /WAIT /USE choco-strife-setup /IWAD SHAREWARE\STRIFE0.WAD
+	CALL %DOOM% /DEFAULT /WAIT /USE choco-strife-setup
 )
 
 ECHO:
