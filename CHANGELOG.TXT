@@ -4,6 +4,7 @@
 
 28-12-17:
 + Added STRIFE Steam / GOG detection and shareware substitution
+* "play.bat" changed to use "," as `/REQ` tag separator and new tags added
 
 24-12-17:
 * Fixed sound in DOOM 64 EX not working.
