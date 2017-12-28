@@ -1,0 +1,90 @@
+$THEME=BLACK
+$TITLE=Index
+
+^C:2017 CACOWARDS :: INDEX
+
+:-------------------------------------------------------------------------------
+(Indented pages are cross-references and not a direct part of Cacowards 2017)
+
+:TOP TEN:
+
+$KEY:A=GOTO:lilith.pk3
+- [A] *lilith.pk3 									_anotak_
+
+$KEY:B=GOTO:Shadows of the Nightmare Realm
+- [B] *Shadows of the Nightmare Realm				_YukiRaven 
+
+$KEY:C=GOTO:No End in Sight
+$KEY:D=GOTO:DTWiD Series
+- [C] *No End in Sight								_Years_
+   └→ [D] *Doom the Way id Did Series				Various
+
+$KEY:E=GOTO:dead.air
+$KEY:F=GOTO:dead.wire
+- [E] *dead.air										_Xaser_
+   └→ [F] *dead.wire								_Xaser_
+
+$KEY:G=GOTO:Brigandine
+- [G] *Brigandine									_Viggles_
+
+$KEY:H=GOTO:Counterattack
+- [H] *Counterattack								_Mechadon_
+
+$KEY:I=GOTO:Legacy of Heroes
+- [I] *Legacy of Heroes								_Gaspe_
+
+$KEY:J=GOTO:Saturnine Chapel
+- [J] *Saturnine Chapel								_dobu gabu maru_
+
+$KEY:K=GOTO:Stardate 20x7
+- [K] *Stardate 20x7								_Ribbiks_
+
+$KEY:L=GOTO:Void and Rainbow
+- [L] *Void and Rainbow								_Serious_MOod_
+
+:RUNNERS UP:
+
+$KEY:M=GOTO:Rise of the Wool Ball
+- [M] *Rise of the Wool Ball						_MSPaintR0cks_
+
+- [?] *Return to Hadron Episode 					_cannonball_
+
+- [?] *TNT: Revilution								Various
+
+- [?] *Waterlab GZD									_Enjay_
+
+- [?] *Disjunction									_floatRand_
+
+- [?] *Hexen - Curse of the Lost Gods				_Kristus_
+
+- [?] *Water Spirit									_Manbou_
+
+- [?] *Hellscape									_Chris Lutz_
+
+- [?] *Dark Tide									_Chris Lutz_
+
+:MULTIPLAYER AWARDS:
+
+- [?] *Pyrrhic										_hobomaster_
+
+- [?] *Progressive Duel 2							_Mechanix Union_
+
+:GAMEPLAY MOD AWARDS:
+
+- [?] *Doom Delta									_DrPyspy_
+
+- [?] *Final Doomer									_Sgt. Shivers_, _Yholl_, &c.
+
+- [?] *High Noon Drifter							_TerminusEst13_
+
+:CODEAWARD:
+
+- [?] *OBLIGE										_Andrew Apted_
+
+:MORDETH AWARD:
+
+- [?] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
+
+:MACHAWARD:
+
+- [?] *The Given									_dobu gabu maru_

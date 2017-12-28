@@ -1,0 +1,89 @@
+===========================================================================
+Designed to work on    	: Zdoom
+Primary purpose        	: Single player/Cooperative
+===========================================================================
+Title			: Hexen - Curse of the lost gods
+FileName		: curse2.wad curse2.txt
+Release date		: 2017 - 06 -07
+Author			: Kristian 'Kristus' Käll
+Email Address          	: [redacted]
+
+Other Works by Author	: Codename Hyena: Killer machine
+(From oldest to newest)   Pennywise (DM map)
+			  10 Sectors Megawad (Map17)
+			  Darkmatch 1 (DM map)
+			  Darkmatch 2 (DM map)
+			  Phobia
+			  Nimrod - Ixnay on the Hombre
+			  Aliens Vendetta (Part of Map31)
+			  Nimrod - Project Doom
+			  Phobia - The age
+			  Plutonia 2 (Part of Map12)
+			  Heretic - Curse of D'sparil
+			  + a bunch of Speedmaps...
+
+Description		: An expansion episode for Hexen, taking place long after the events of the
+			  original.
+
+Additional Credits to	: -Khorus, for playtesting and comments.
+			  -St. Alfonzo, for playtesting and comments.
+			  -Gez for helping with decorate.
+			  -Fighter widescreen punch sprites by MG_Man.
+			  -Cleric widescreen fire sprites by Neoworm.
+			  -All other widescreen weapon sprite mods by Doorhenge.
+			  -Entryway for making and helping with HexenP hacking.
+			  -Vermil for Doomsday code help.
+			  -John Romero for Heretic and Hexen.
+			  -ID and Raven of course for the games.
+
+===========================================================================
+* What is included *
+
+New levels             	: 5
+Sounds                 	: Yes
+Music                  	: No (Rearranged Hexen music for great effect and JUSTICE)
+Graphics               	: Yes
+Decorate				: Yes (though unused)
+Demos                  	: No
+
+
+* Play Information *
+
+Game                   	: Hexen
+Map #                  	: Map01-03
+Single Player          	: Yes
+Cooperative 2-4 Player 	: Yes (Tested with up to 3 players, Survival mode included)
+Deathmatch 2-4 Player	: No
+Difficulty Settings    	: Yes
+			If you only want to enjoy the maps and play resonably carelessly
+			through the episode. I suggest one of the easier skill levels. 
+			Skill 3 is made to be casual but still offer 
+			something of a challenge.
+			Skill 4 has been tested to be aggressive 
+			and very challenging. (In other words. I died a lot while testing 
+			these maps in this skill level).
+			Skill 5 even more aggressive and challenging.
+
+* Construction *
+
+Base                   		: From scratch
+Build Time             		: On and off for about a year
+Editor(s) used         	: DB, DB2, XWE, ZENNODE, ACC.
+May Not Run With...     : Anything not Zdoom compatible.
+Known Bugs             	: None that are I am aware of.
+
+
+* Copyright / Permissions *
+
+You may NOT use the contents of this file as a base for
+modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: http://www.doomworld.com/idgames/

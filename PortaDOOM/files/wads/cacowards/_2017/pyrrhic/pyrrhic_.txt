@@ -1,0 +1,86 @@
+===========================================================================
+Advanced engine needed  : Limit removing
+Primary purpose         : Deathmatch
+===========================================================================
+Title                   : Pyrrhic
+Filename                : pyrrhic.zip
+Release date            : 11/18/2017
+Author                  : hobomaster22
+Email Address           : [redacted]
+Other Files By Author   : Onslaught DM Series, Uroburos, Pinnacle of Darkness, Exodus, Return to Phobos, Hell Keep, The Lost Gateway, Decadence, Hell on Cheese, Lunar Outpost, Two Plutonia Maps, Genesis of Descent
+Misc. Author Info       : Yes, I hid cats in some of the levels.
+
+Description             : 15 tested and finely tuned maps for duel. Uses stock Doom 2 textures for a clean old school style. Hard difficulty includes BFG. 
+Other difficulties remove the BFG with some weapon rearrangement, possibly for FFA applications where BFG spam is unwanted.
+Requires a limit removing port.
+
+Additional Credits to   : 
+Faad3e_ and Decay for play testing. AlexMax and Doomkid for server hosting on Zandronum and ZDaemon, respectively.
+
+Track List:
+1. Job For A Cowboy - Sun of Nihility
+2. Job For A Cowboy - Ruination
+3. Dark Tranquillity - White Noise Black Silence
+4. Allegaeon - Atrophy of Hipocrites
+5. Revocation - Madness Opus
+6. Hypocrisy - Dead Sky Dawning
+7. Hypocrisy - Reversed Reflections
+8. Testament - Native Blood
+9. Omnium Gatherum - Ophidian Sunrise
+10. Allegaeon - A Path Disclosed
+11. Omnium Gatherum - New Dynamic
+12. Hypocrisy - Weed Out The Weak
+13. Omnium Gatherum - Frontiers
+14. Hypocrisy - Until the End
+15. Hypocrisy - Fusion Programmed Minds
+
+Title - Revocation - Spastic
+Intermission - Nightwish - Song of Myself (chorus)
+===========================================================================
+* What is included
+
+New levels              : 15
+Sounds                  : No
+Music                   : No
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : 
+
+
+* Play Information *
+
+Game                    : DOOM2.WAD
+Map #                   : MAP01- MAP15
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : 
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch. MAP08 is a reworked DTWID reject.
+Build Time              : Few months
+Editor(s) used          : Deepsea, Doom Builder
+Known Bugs              : 
+May Not Run With        : Limit removing only
+Tested With             : Zandronum, ZDaemon
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY not distribute this file in any format.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: 
+FTP sites: 
