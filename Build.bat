@@ -406,7 +406,7 @@ ECHO:
 SET "FILES="
 
 FOR /R ".\PortaDOOM\files\ports" %%F IN (*.exe) DO (
-	REM # test if the exeutable is already compressed
+	REM # test if the executable is already compressed
 	SET EXE_FILE=%%~F
 	SET "EXE_INFO="
 	CALL :upx
