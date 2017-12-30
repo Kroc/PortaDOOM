@@ -1617,7 +1617,7 @@ REM # PrBoom+ uses `-save`
 REM ====================================================================================================================
 REM # CONFIG:
 REM ====================================================================================================================
-REM # zdoom based engines (q/g/zdoom, zandronum) use ".ini" config files,
+REM # ZDoom based engines (Q/G/ZDoom, Zandronum) use ".ini" config files,
 REM # the other engines use ".cfg"
 IF "%ENGINE_KIN%" == "Z" ( SET "CFG=ini" ) ELSE ( SET "CFG=cfg" )
 REM # config file path/name as we build it

@@ -11,17 +11,17 @@ SET "CONFIG=..\..\..\config"
 
 CLS
 ECHO:
+
+REM # Chocolate Doom / Crispy Doom
+REM ----------------------------------------------------------------------------
+REM # delete the default config files
+DEL "default.choco-doom.cfg"         >NUL 2>&1
+DEL "default.choco-doom.extra.cfg"   >NUL 2>&1
+DEL "default.crispy-doom.cfg"        >NUL 2>&1
+DEL "default.crispy-doom.extra.cfg"  >NUL 2>&1
+
 ECHO Chocolate Doom             DOOM.WAD
 CALL :start "choco-doom" "DOOM.WAD"
-
-ECHO Chocolate Doom             DOOM2.WAD
-CALL :start "choco-doom" "DOOM2.WAD"
-
-ECHO Chocolate Doom             TNT.WAD
-CALL :start "choco-doom" "TNT.WAD"
-
-ECHO Chocolate Doom             PLUTONIA.WAD
-CALL :start "choco-doom" "PLUTONIA.WAD"
 
 ECHO Chocolate Heretic          HERETIC.WAD
 CALL :start "choco-heretic" "HERETIC.WAD"
@@ -35,11 +35,38 @@ CALL :start "choco-strife" "STRIFE1.WAD"
 ECHO Crispy Doom                DOOM.WAD
 CALL :start "crispy-doom" "DOOM.WAD"
 
+REM # PrBoom+ (hardware / software)
+REM ----------------------------------------------------------------------------
+REM # delete the default config file
+DEL "default.glboom-plus.cfg"        >NUL 2>&1
+DEL "default.prboom-plus.cfg"        >NUL 2>&1
+
+ECHO PrBoom+ ^(hardware^)         DOOM.WAD
+CALL :start "prboom" "DOOM.WAD"
+
+ECHO PrBoom+ ^(software^)         DOOM.WAD
+CALL :start_sw "prboom" "DOOM.WAD"
+
+REM # 
+
 ECHO:
 PAUSE
 EXIT /B
 
-
 :start
-START "" /WAIT "%DOOM%" "/WAIT /USE %~1 /DEFAULT /IWAD %~2 & EXIT"
+REM #
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM ----------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+GOTO:EOF
+
+:start_sw
+REM #
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM ----------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2" & EXIT"
 GOTO:EOF
