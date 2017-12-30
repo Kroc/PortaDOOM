@@ -231,7 +231,7 @@ CALL :start "gzdoom-16" "STRIFE1.WAD"
 
 :gzdoom-17
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-17.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-17.ini" GOTO :gzdoom-18
 
 ECHO GZDoom v1.7                DOOM.WAD
 CALL :start "gzdoom-17" "DOOM.WAD"
@@ -244,6 +244,22 @@ CALL :start "gzdoom-17" "HEXEN.WAD"
 
 ECHO GZDoom v1.7                STRIFE1.WAD
 CALL :start "gzdoom-17" "STRIFE1.WAD"
+
+:gzdoom-18
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-18.ini" GOTO :gzdoom
+
+ECHO GZDoom v1.8                DOOM.WAD
+CALL :start "gzdoom-18" "DOOM.WAD"
+
+ECHO GZDoom v1.8                HERETIC.WAD
+CALL :start "gzdoom-18" "HERETIC.WAD"
+
+ECHO GZDoom v1.8                HEXEN.WAD
+CALL :start "gzdoom-18" "HEXEN.WAD"
+
+ECHO GZDoom v1.8                STRIFE1.WAD
+CALL :start "gzdoom-18" "STRIFE1.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
