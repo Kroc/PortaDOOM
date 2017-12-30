@@ -37,7 +37,7 @@ CALL :start "crispy-doom" "DOOM.WAD"
 
 REM # PrBoom+ (hardware / software)
 REM ----------------------------------------------------------------------------
-REM # delete the default config file
+REM # delete the default config files
 DEL "default.glboom-plus.cfg"        >NUL 2>&1
 DEL "default.prboom-plus.cfg"        >NUL 2>&1
 
@@ -47,7 +47,17 @@ CALL :start "prboom" "DOOM.WAD"
 ECHO PrBoom+ ^(software^)         DOOM.WAD
 CALL :start_sw "prboom" "DOOM.WAD"
 
-REM # 
+REM # Zandronum
+REM ----------------------------------------------------------------------------
+REM # delete the default config files
+DEL "default.zandronum-2.cfg"        >NUL 2>&1
+DEL "default.zandronum-3.cfg"        >NUL 2>&1
+
+ECHO Zandronum-2                DOOM.WAD
+CALL :start "zandronum-2" "DOOM.WAD"
+
+ECHO Zandronum-3                DOOM.WAD
+CALL :start "zandronum-3" "DOOM.WAD"
 
 ECHO:
 PAUSE

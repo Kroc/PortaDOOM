@@ -913,7 +913,7 @@ IF /I "%USE%" == "zandronum" (
 )
 IF /I "%USE%" == "zandronum-2" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-2"
-	SET "ENGINE_INC=skulltag_actors.pk3 skulltag_data.pk3"
+	SET "ENGINE_INC=skulltag_actors.pk3"
 	SET "ENGINE_EXE=zandronum.exe"
 	SET "ENGINE_CFG=zandronum-2"
 	SET "ENGINE_KIN=Z"
