@@ -14,44 +14,62 @@ ECHO:
 
 REM # Chocolate Doom / Crispy Doom
 REM ----------------------------------------------------------------------------
-REM # delete the default config files
-DEL "default.choco-doom.cfg"         >NUL 2>&1
-DEL "default.choco-doom.extra.cfg"   >NUL 2>&1
-DEL "default.crispy-doom.cfg"        >NUL 2>&1
-DEL "default.crispy-doom.extra.cfg"  >NUL 2>&1
+:choco-doom
+REM # delete the file in order to re-build it
+IF EXIST "default.choco-doom.cfg" GOTO :choco-heretic
 
 ECHO Chocolate Doom             DOOM.WAD
 CALL :start "choco-doom" "DOOM.WAD"
 
+:choco-heretic
+REM # delete the file in order to re-build it
+IF EXIST "default.choco-heretic.cfg" GOTO :choco-hexen
+
 ECHO Chocolate Heretic          HERETIC.WAD
 CALL :start "choco-heretic" "HERETIC.WAD"
+
+:choco-hexen
+REM # delete the file in order to re-build it
+IF EXIST "default.choco-hexen.cfg" GOTO :choco-strife
 
 ECHO Chocolate Hexen            HEXEN.WAD
 CALL :start "choco-hexen" "HEXEN.WAD"
 
+:choco-strife
+REM # delete the file in order to re-build it
+IF EXIST "default.choco-strife.cfg" GOTO :crispy-doom
+
 ECHO Chocolate Strife           STRIFE1.WAD
 CALL :start "choco-strife" "STRIFE1.WAD"
+
+:crispy-doom
+REM # delete the file in order to re-build it
+IF EXIST "default.crispy-doom.cfg" GOTO :glboom-plus
 
 ECHO Crispy Doom                DOOM.WAD
 CALL :start "crispy-doom" "DOOM.WAD"
 
 REM # PrBoom+ (hardware / software)
 REM ----------------------------------------------------------------------------
-REM # delete the default config files
-DEL "default.glboom-plus.cfg"        >NUL 2>&1
-DEL "default.prboom-plus.cfg"        >NUL 2>&1
+:glboom-plus
+REM # delete the file in order to re-build it
+IF EXIST "default.glboom-plus.cfg" GOTO :prboom-plus
 
 ECHO PrBoom+ ^(hardware^)         DOOM.WAD
 CALL :start "prboom" "DOOM.WAD"
+
+:prboom-plus
+REM # delete the file in order to re-build it
+IF EXIST "default.prboom-plus.cfg" GOTO :zandronum-2
 
 ECHO PrBoom+ ^(software^)         DOOM.WAD
 CALL :start_sw "prboom" "DOOM.WAD"
 
 REM # Zandronum
 REM ----------------------------------------------------------------------------
-REM # delete the default config files
-DEL "default.zandronum-2.cfg"        >NUL 2>&1
-DEL "default.zandronum-3.cfg"        >NUL 2>&1
+:zandronum-2
+REM # delete the file in order to re-build it
+IF EXIST "default.zandronum-2.ini" GOTO :zandronum-3
 
 ECHO Zandronum-2                DOOM.WAD
 CALL :start "zandronum-2" "DOOM.WAD"
@@ -65,6 +83,10 @@ CALL :start "zandronum-2" "HEXEN.WAD"
 ECHO Zandronum-2                STRIFE1.WAD
 CALL :start "zandronum-2" "STRIFE1.WAD"
 
+:zandronum-3
+REM # delete the file in order to re-build it
+IF EXIST "default.zandronum-3.ini" GOTO :gzdoom
+
 ECHO Zandronum-3                DOOM.WAD
 CALL :start "zandronum-3" "DOOM.WAD"
 
@@ -77,9 +99,31 @@ CALL :start "zandronum-3" "HEXEN.WAD"
 ECHO Zandronum-3                STRIFE1.WAD
 CALL :start "zandronum-3" "STRIFE1.WAD"
 
+REM # GZDoom
+REM ----------------------------------------------------------------------------
+:gzdoom
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom.ini" GOTO :exit
+
+ECHO GZDoom                     DOOM.WAD
+CALL :start "gzdoom" "DOOM.WAD"
+
+ECHO GZDoom                     HERETIC.WAD
+CALL :start "gzdoom" "HERETIC.WAD"
+
+ECHO GZDoom                     HEXEN.WAD
+CALL :start "gzdoom" "HEXEN.WAD"
+
+ECHO GZDoom                     STRIFE1.WAD
+CALL :start "gzdoom" "STRIFE1.WAD"
+
+:exit
 ECHO:
 PAUSE
 EXIT /B
+
+
+
 
 :start
 REM #
