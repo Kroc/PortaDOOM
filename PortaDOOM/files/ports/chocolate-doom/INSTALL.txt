@@ -44,7 +44,7 @@ with numbered extensions (eg. "doom_se.1").
 From the command line it is possible to combine these files into a
 single large file, using a command similar to the following:
 
-   copy doom_se.1+doom_se.2+doom_se.3+doom_se.4+doom_se.5 doom_se.lha
+   copy doom_se.1+doom_se.2+doom_se.3+doom_se.4+doom_se.5 doom_se.lzh
 
 The resulting file is an LHA archive file, and it can be extracted
 using an LHA archive tool (there is one available for almost every
@@ -70,6 +70,20 @@ do one of the following:
    environment variable DOOMWADPATH to be a semicolon-separated list
    of directories to search (similar to the PATH environment
    variable).
+
+== Playing with Freedoom ==
+
+Freedoom is an open content project to create a Doom engine-based game
+that is entirely free software. The website can be found here:
+
+  https://freedoom.github.io/
+
+The main Freedoom IWAD files are not currently compatible with
+Chocolate Doom. However, you can play using FreeDM, the
+deathmatch spinoff project. If you want to play single player games,
+you'll need to download additional fan-made WAD files to use in
+conjunction with it. Check out the Chocolate Doom wiki's page on
+Freedoom for some suggestions.
 
 == Playing with Chex Quest ==
 

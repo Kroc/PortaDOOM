@@ -3,6 +3,7 @@
 - = Removal
 
 30-12-17:
+* Upgraded Chocolate Doom to 3.0
 * Changed "doom.bat" to separate different GZDoom versions' config files
 
 28-12-17:

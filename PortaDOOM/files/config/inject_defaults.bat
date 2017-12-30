@@ -20,6 +20,7 @@ REM # Chocolate / Crispy Doom:
 %BIN_FART% -w "default.*.extra.cfg" "show_endoom                   1"  "show_endoom                   0"
 %BIN_FART% -w "default.*.extra.cfg" "vanilla_savegame_limit        1"  "vanilla_savegame_limit        0"
 %BIN_FART% -w "default.*.extra.cfg" "vanilla_demo_limit            1"  "vanilla_demo_limit            0"
+%BIN_FART% -w "default.*.extra.cfg" "png_screenshots               0" "png_screenshots               1"
 
 %BIN_FART% -w "default.*.extra.cfg" "mouseb_prevweapon             -1" "mouseb_prevweapon             4"
 %BIN_FART% -w "default.*.extra.cfg" "mouseb_nextweapon             -1" "mouseb_nextweapon             3"

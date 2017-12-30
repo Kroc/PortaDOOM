@@ -49,6 +49,10 @@ version.
 
   -respawn                     Monsters respawn after being killed.  
 
+  -savedir <directory>         Specify a path from which to load and save 
+                               games. If the directory does not exist then 
+                               it will automatically be created.  
+
   -skill <skill>               Set the game skill, 1-5 (1: easiest, 5: 
                                hardest). A skill of 0 disables all 
                                monsters.  
@@ -114,44 +118,31 @@ version.
 
 === Display options ===
 
-  -1                   Don't scale up the screen.  
+  -1               Don't scale up the screen. Implies -window.  
 
-  -2                   Double up the screen to 2x its normal size.  
+  -2               Double up the screen to 2x its normal size. Implies 
+                   -window.  
 
-  -3                   Double up the screen to 3x its normal size.  
+  -3               Double up the screen to 3x its normal size. Implies 
+                   -window.  
 
-  -8in32               Set the color depth of the screen to 32 bits per 
-                       pixel.  
+  -fullscreen      Run in fullscreen mode.  
 
-  -bpp <bpp>           Specify the color depth of the screen, in bits per 
-                       pixel.  
+  -geometry <WxY>  Specify the dimensions of the window. Implies -window.  
 
-  -fullscreen          Run in fullscreen mode.  
+  -height <y>      Specify the screen height, in pixels. Implies -window.  
 
-  -geometry <WxY>[wf]  Specify the dimensions of the window or fullscreen 
-                       mode. An optional letter of w or f appended to the 
-                       dimensions selects windowed or fullscreen mode.  
+  -noblit          Disable blitting the screen.  
 
-  -grabmouse           Grab the mouse when running in windowed mode.  
+  -nodraw          Disable rendering the screen entirely.  
 
-  -height <y>          Specify the screen height, in pixels.  
+  -nograbmouse     Don't grab the mouse when running in windowed mode.  
 
-  -noblit              Disable blitting the screen.  
+  -nomouse         Disable the mouse.  
 
-  -nodraw              Disable rendering the screen entirely.  
+  -width <x>       Specify the screen width, in pixels. Implies -window.  
 
-  -nograbmouse         Don't grab the mouse when running in windowed mode. 
-                        
-
-  -nomouse             Disable the mouse.  
-
-  -nonovert            Enable vertical mouse movement.  
-
-  -novert              Disable vertical mouse movement.  
-
-  -width <x>           Specify the screen width, in pixels.  
-
-  -window              Run in a window.
+  -window          Run in a window.
 
 === Networking options ===
 
@@ -176,12 +167,6 @@ version.
 
   -extratics <n>      Send n extra tics in every packet as insurance 
                       against dropped packets.  
-
-  -ignoreversion      When running a netgame server, ignore version 
-                      mismatches between the server and the client. Using 
-                      this option may cause game desyncs to occur, or 
-                      differences in protocol may mean the netgame will 
-                      simply not function at all.  
 
   -left               Run as the left screen in three screen mode.  
 

@@ -185,6 +185,7 @@ ECHO               GOG : The Ultimate DOOM     - DOOM.WAD
 ECHO               GOG : DOOM II + Final DOOM  - DOOM2.WAD, TNT.WAD ^& PLUTONIA.WAD
 ECHO             Steam : Heretic               - HERETIC.WAD
 ECHO             Steam : Hexen                 - HEXEN.WAD
+ECHO       GOG / Steam : The Original Strife   - STRIFE1.WAD
 ECHO:
 ECHO     Shareware:
 ECHO:
@@ -573,7 +574,7 @@ SET "ENGINE_CFG="
 REM # engines are grouped together by common behaviour determined by their heritage,
 REM # we use this to handle differences in command line parameters for engines:
 REM # - V = Vanilla engine; uses DSG save format. chocolate-doom fits this
-REM # - B = Boom engine; compatible with the features added by boom. prboom+ (and above). DSG saves
+REM # - B = Boom engine; compatible with the features added by boom. PrBoom+ (and above). DSG saves
 REM # - X = Kex engine -- DOOM 64 EX. Parameters are like Vanilla and Boom. DSG saves
 REM # - Z = ZDoom engine; derived from ZDoom, i.e. GZDoom and Zandronum. ZDS saves
 SET "ENGINE_KIN="
@@ -1593,22 +1594,19 @@ IF NOT EXIST "%SAVES_WAD%" MKDIR "%SAVES_WAD%"
 
 REM # since the current directory will be changed to the WAD's save directory,
 REM # we can specify this parameter as just the 'current directory' (".").
-REM # NOTE: `-savedir` is for zdoom-based ports and `-save` for prboom+.
-REM #       chocolate-doom & DOOM 64 EX do not support a save directory
-REM #       parameter and will put savegames in the 'current directory'!
-IF "%ENGINE_KIN%" ==  "Z" (
-	SET PARAMS=%PARAMS% -savedir "."
-	ECHO      -savedir : %SAVES_WAD%
-	
-REM # DOOM Retro uses `-savedir`
-) ELSE IF "%PORT_SAVE%" == "doomretro" (
-	SET PARAMS=%PARAMS% -savedir "."
-	ECHO      -savedir : %SAVES_WAD%
-	
+REM # NOTE: DOOM 64 EX does not support a save directory parameter
+REM # and will put savegames in the 'current directory'!
+
 REM # PrBoom+ uses `-save`
-) ELSE IF "%ENGINE_KIN%" == "B" (
+IF "%PORT_SAVE%" == "prboom" (
 	SET PARAMS=%PARAMS% -save "."
 	ECHO         -save : %SAVES_WAD%
+	
+REM # All other engines use `-savedir`,
+REM # except doom64x which has no support yet
+) ELSE IF NOT "%PORT_SAVE%" == "doom64ex" (
+	SET PARAMS=%PARAMS% -savedir "."
+	ECHO      -savedir : %SAVES_WAD%
 )
 
 
@@ -1866,8 +1864,13 @@ IF %ANY_WAD% EQU 1 (
 	)
 )
 
-REM # get the desktop screen resolution:
 :screenres
+REM # get the desktop screen resolution:
+REM --------------------------------------------------------------------------------------------------------------------
+REM # Chocolate Doom v3 (and derivatives) default to screen display resolution
+REM # and don't need this specified
+IF "%ENGINE_KIN%" == "V" GOTO :fullscreen
+
 REM # http://stackoverflow.com/questions/25532444/get-screen-resolution-as-a-variable-in-cmd
 REM # note that this will be the 'primary monitor', which may not be desired by some users,
 REM # but that's hardly our fault since many ports don't support fullscreen anywhere else anyway
@@ -1883,12 +1886,14 @@ REM # this needs to be combined with fullscreen below, or you'll get a window bi
 REM # TODO: get desktop size ("ActiveWorkspace") and use a window size that fills the screen correctly?
 SET "SCREENRES=-width %CurrentHorizontalResolution% -height %CurrentVerticalResolution%"
 
+:fullscreen
+REM --------------------------------------------------------------------------------------------------------------------
 REM # command line parameters for fullscreen:
 IF "%ENGINE_KIN%" == "Z" (
-	REM # `+fullscreen 1` for ZDOOM-based ports
+	REM # `+fullscreen 1` for ZDoom-based ports
 	SET "FULLSCREEN=+fullscreen 1"
 ) ELSE (
-	REM # `-fullscreen` for Chocolate DOOM/ Crispy Doom, PRBoom+ and DOOM 64 EX
+	REM # `-fullscreen` for Chocolate Doom / Crispy Doom, PRBoom+ and DOOM 64 EX
 	SET "FULLSCREEN=-fullscreen"
 )
 
