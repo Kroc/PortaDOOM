@@ -85,7 +85,7 @@ CALL :start "zandronum-2" "STRIFE1.WAD"
 
 :zandronum-3
 REM # delete the file in order to re-build it
-IF EXIST "default.zandronum-3.ini" GOTO :gzdoom
+IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-09
 
 ECHO Zandronum-3                DOOM.WAD
 CALL :start "zandronum-3" "DOOM.WAD"
@@ -101,6 +101,22 @@ CALL :start "zandronum-3" "STRIFE1.WAD"
 
 REM # GZDoom
 REM ----------------------------------------------------------------------------
+:gzdoom-09
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-09.ini" GOTO :gzdoom
+
+ECHO GZDoom v0.9                DOOM.WAD
+CALL :start "gzdoom-09" "DOOM.WAD"
+
+ECHO GZDoom v0.9                HERETIC.WAD
+CALL :start "gzdoom-09" "HERETIC.WAD"
+
+ECHO GZDoom v0.9                HEXEN.WAD
+CALL :start "gzdoom-09" "HEXEN.WAD"
+
+ECHO GZDoom v0.9                STRIFE1.WAD
+CALL :start "gzdoom-09" "STRIFE1.WAD"
+
 :gzdoom
 REM # delete the file in order to re-build it
 IF EXIST "default.gzdoom.ini" GOTO :exit
@@ -116,6 +132,9 @@ CALL :start "gzdoom" "HEXEN.WAD"
 
 ECHO GZDoom                     STRIFE1.WAD
 CALL :start "gzdoom" "STRIFE1.WAD"
+
+
+REM ----------------------------------------------------------------------------
 
 :exit
 ECHO:
