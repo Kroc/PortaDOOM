@@ -56,8 +56,26 @@ DEL "default.zandronum-3.cfg"        >NUL 2>&1
 ECHO Zandronum-2                DOOM.WAD
 CALL :start "zandronum-2" "DOOM.WAD"
 
+ECHO Zandronum-2                HERETIC.WAD
+CALL :start "zandronum-2" "HERETIC.WAD"
+
+ECHO Zandronum-2                HEXEN.WAD
+CALL :start "zandronum-2" "HEXEN.WAD"
+
+ECHO Zandronum-2                STRIFE1.WAD
+CALL :start "zandronum-2" "STRIFE1.WAD"
+
 ECHO Zandronum-3                DOOM.WAD
 CALL :start "zandronum-3" "DOOM.WAD"
+
+ECHO Zandronum-3                HERETIC.WAD
+CALL :start "zandronum-3" "HERETIC.WAD"
+
+ECHO Zandronum-3                HEXEN.WAD
+CALL :start "zandronum-3" "HEXEN.WAD"
+
+ECHO Zandronum-3                STRIFE1.WAD
+CALL :start "zandronum-3" "STRIFE1.WAD"
 
 ECHO:
 PAUSE
