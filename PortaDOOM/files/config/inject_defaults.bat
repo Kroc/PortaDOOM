@@ -46,4 +46,35 @@ REM # PrBoom+:
 %BIN_FART% -w "default.*-plus.cfg" "mouse_doubleclick_as_use      1" "mouse_doubleclick_as_use      0"
 %BIN_FART% -w "default.*-plus.cfg" "movement_mouselook            0" "movement_mouselook            1"
 
+REM # GZDoom
+
+REM # Texture Filtering: Nearest (Linear Mipmap) is supported from v1.5 onwards;
+REM # (graphics break if this is applied to earlier versions)
+%BIN_FART% -w "default.gzdoom.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-15.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-16.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-17.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-18.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-19.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-2*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% -w "default.gzdoom-3*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+
+REM # use "Mipmapped" for earlier versions
+%BIN_FART% -w "default.gzdoom-09.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+%BIN_FART% -w "default.gzdoom-10.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+%BIN_FART% -w "default.gzdoom-11.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+%BIN_FART% -w "default.gzdoom-12.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+%BIN_FART% -w "default.gzdoom-13.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+%BIN_FART% -w "default.gzdoom-14.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+
+%BIN_FART% -w "default.gzdoom*.ini" "mouse2=+strafe" "mouse2=+altattack"
+
+%BIN_FART% -w "default.gzdoom*.ini" "vid_vsync=false" "vid_vsync=true"
+%BIN_FART% -w "default.gzdoom*.ini" "freelook=false" "freelook=true"
+%BIN_FART% -w "default.gzdoom*.ini" "cl_run=false" "cl_run=true"
+%BIN_FART% -w "default.gzdoom*.ini" "queryiwad=true" "queryiwad=false"
+%BIN_FART% -w "default.gzdoom*.ini" "gender=male" "gender=other"
+%BIN_FART% -w "default.gzdoom*.ini" "name=Player" "name=PortaDOOM"
+%BIN_FART% -w "default.gzdoom*.ini" "vid_cursor=None" "vid_cursor=-"
+
 PAUSE
