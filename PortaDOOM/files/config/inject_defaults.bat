@@ -119,6 +119,8 @@ REM # change controls
 %BIN_FART% "default.gzdoom*.ini" "name=Player" "name=PortaDOOM"
 %BIN_FART% "default.gzdoom*.ini" "vid_cursor=None" "vid_cursor=-"
 
+REM # full-screen HUD
+%BIN_FART% "default.gzdoom*.ini" "screenblocks=10" "screenblocks=11"
 REM # HUD auto-scale
 %BIN_FART% "default.gzdoom*.ini" "hud_scale=0" "hud_scale=-1"
 REM # status bar auto-scale
