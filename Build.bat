@@ -31,7 +31,7 @@ ECHO:
 ECHO  Tools:
 ECHO:
 ECHO     [2]  Update PortaDOOM with DOSmag executable
-ECHO     [3]  Compress executables ^(UPX^)
+REM ECHO     [3]  Compress executables ^(UPX^)
 ECHO:
 ECHO  Source Control:
 ECHO:
