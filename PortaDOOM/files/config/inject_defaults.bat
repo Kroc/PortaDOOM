@@ -121,7 +121,9 @@ REM # change controls
 
 REM # full-screen HUD
 %BIN_FART% "default.gzdoom*.ini" "screenblocks=10" "screenblocks=11"
-REM # HUD auto-scale
+REM # HUD auto-scale (v2.1<)
+%BIN_FART% "default.gzdoom*.ini" "hud_scale=false" "hud_scale=true"
+REM # HUD auto-scale (v2.2+)
 %BIN_FART% "default.gzdoom*.ini" "hud_scale=0" "hud_scale=-1"
 REM # status bar auto-scale
 %BIN_FART% "default.gzdoom*.ini" "st_scale=0" "st_scale=-1"
