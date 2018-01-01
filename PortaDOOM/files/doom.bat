@@ -1,6 +1,6 @@
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
-REM # doom batch launcher - (c) copyright Kroc Camen 2016-2017
+REM # doom batch launcher - (c) copyright Kroc Camen 2016-2018
 
 REM # features:
 REM # - automatic portable config files so that you get the same configuration (per-engine) everywhere
