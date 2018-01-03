@@ -631,4 +631,70 @@ REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
+REM # VSync ON
+%BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
+
+REM # controls
+IF "%~2" == "DOOM.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] d=+moveright
+)
+IF "%~2" == "HERETIC.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] d=+moveright
+)
+IF "%~2" == "HEXEN.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] d=+moveright
+)
+IF "%~2" == "STRIFE1.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
+)
+
+REM # change controls
+%BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
+%BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
+%BIN_FART% "default.%~1.ini" "mouse2=+strafe" "mouse2=+altattack"
+
+%BIN_FART% "default.%~1.ini" "cl_run=false" "cl_run=true"
+%BIN_FART% "default.%~1.ini" "queryiwad=true" "queryiwad=false"
+%BIN_FART% "default.%~1.ini" "gender=male" "gender=other"
+%BIN_FART% "default.%~1.ini" "name=Player" "name=PortaDOOM"
+%BIN_FART% "default.%~1.ini" "vid_cursor=None" "vid_cursor=-"
+
+REM # full-screen HUD
+%BIN_FART% "default.%~1.ini" "screenblocks=10" "screenblocks=11"
+REM # HUD auto-scale
+%BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
+%BIN_FART% "default.%~1.ini" "con_scaletext=0" "con_scaletext=1"
+
 GOTO:EOF
