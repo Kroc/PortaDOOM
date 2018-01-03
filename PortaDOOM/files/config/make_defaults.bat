@@ -356,7 +356,7 @@ REM # ZDoom
 REM ============================================================================
 :zdoom
 REM # delete the file in order to re-build it
-IF EXIST "default.zdoom.ini" GOTO :exit
+IF EXIST "default.zdoom.ini" GOTO :doom64
 
 ECHO * ZDoom v2.8.1               DOOM.WAD
 CALL :make_zdoom "zdoom" "DOOM.WAD"
@@ -366,6 +366,18 @@ ECHO * ZDoom v2.8.1               HEXEN.WAD
 CALL :make_zdoom "zdoom" "HEXEN.WAD"
 ECHO * ZDoom v2.8.1               STRIFE1.WAD
 CALL :make_zdoom "zdoom" "STRIFE1.WAD"
+
+
+
+REM # DOOM 64
+REM ============================================================================
+:doom64
+REM # delete the file in order to re-build it
+IF EXIST "default.doom64ex.cfg" GOTO :exit
+
+ECHO * DOOM 64 EX                 DOOM64.WAD
+CALL :make_doom64 "doom64ex" "DOOM64.WAD"
+
 
 REM ----------------------------------------------------------------------------
 
@@ -696,5 +708,16 @@ REM # full-screen HUD
 REM # HUD auto-scale
 %BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
 %BIN_FART% "default.%~1.ini" "con_scaletext=0" "con_scaletext=1"
+
+GOTO:EOF
+
+
+:make_doom64
+REM #
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM ----------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 GOTO:EOF

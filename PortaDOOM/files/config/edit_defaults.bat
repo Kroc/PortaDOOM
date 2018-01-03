@@ -22,6 +22,8 @@ ECHO     [B] HERETIC
 ECHO     [C] HEXEN
 ECHO     [D] STRIFE
 ECHO:
+ECHO     [E] DOOM 64 ^(DOOM 64 EX^)
+ECHO:
 
 SET "$="
 SET /P "$=? "
@@ -32,6 +34,9 @@ IF /I "%$%" == "A" CALL :menu_doom
 IF /I "%$%" == "B" CALL :menu_heretic
 IF /I "%$%" == "C" CALL :menu_hexen
 IF /I "%$%" == "D" CALL :menu_strife
+
+REM # don't need a menu for DOOM 64, there's only one engine
+IF /I "%$%" == "E" CALL :launch_engine "doom64ex" "DOOM64.WAD"
 
 GOTO :menu
 
