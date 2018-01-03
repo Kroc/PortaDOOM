@@ -629,8 +629,6 @@ IF "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
 )
 
-
-
 REM # change controls
 %BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
 %BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
