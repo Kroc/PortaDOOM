@@ -55,6 +55,8 @@ ECHO     [3] Zandronum v3               DOOM.WAD
 ECHO:
 ECHO     [G] GZDoom ...                 DOOM.WAD
 ECHO:
+ECHO     [Z] ZDoom                      DOOM.WAD
+ECHO:
 
 SET "$="
 SET /P "$=? "
@@ -68,6 +70,7 @@ IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "DOOM.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "DOOM.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "DOOM.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "DOOM.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "DOOM.WAD"
 
 GOTO :menu_doom
 
@@ -90,6 +93,8 @@ ECHO     [3] Zandronum v3               HERETIC.WAD
 ECHO:
 ECHO     [G] GZDoom ...                 HERETIC.WAD
 ECHO:
+ECHO     [Z] ZDoom                      HERETIC.WAD
+ECHO:
 
 SET "$="
 SET /P "$=? "
@@ -102,6 +107,7 @@ IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "HERETIC.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HERETIC.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HERETIC.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HERETIC.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "HERETIC.WAD"
 
 GOTO :menu_heretic
 
@@ -124,6 +130,8 @@ ECHO     [3] Zandronum v3               HEXEN.WAD
 ECHO:
 ECHO     [G] GZDoom ...                 HEXEN.WAD
 ECHO:
+ECHO     [Z] ZDoom                      HEXEN.WAD
+ECHO:
 
 SET "$="
 SET /P "$=? "
@@ -136,6 +144,7 @@ IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "HEXEN.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HEXEN.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HEXEN.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HEXEN.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "HEXEN.WAD"
 
 GOTO :menu_hexen
 
@@ -148,15 +157,17 @@ ECHO  Edit STRIFE Engine Defaults:
 ECHO  ============================
 ECHO  Select engine:
 ECHO:
-ECHO     [C] Chocolate Strife           STRIFE.WAD
+ECHO     [C] Chocolate Strife           STRIFE1.WAD
 ECHO:
-ECHO     [H] PrBoom+ Hardware           STRIFE.WAD
-ECHO     [S] PrBoom+ Software           STRIFE.WAD
+ECHO     [H] PrBoom+ Hardware           STRIFE1.WAD
+ECHO     [S] PrBoom+ Software           STRIFE1.WAD
 ECHO:
-ECHO     [2] Zandronum v2               STRIFE.WAD
-ECHO     [3] Zandronum v3               STRIFE.WAD
+ECHO     [2] Zandronum v2               STRIFE1.WAD
+ECHO     [3] Zandronum v3               STRIFE1.WAD
 ECHO:
-ECHO     [G] GZDoom ...                 STRIFE.WAD
+ECHO     [G] GZDoom ...                 STRIFE1.WAD
+ECHO:
+ECHO     [Z] ZDoom                      STRIFE1.WAD
 ECHO:
 
 SET "$="
@@ -164,12 +175,13 @@ SET /P "$=? "
 
 IF "%$%" == "" GOTO:EOF
 
-IF /I "%$%" == "C" CALL :launch_engine    "choco-strife-setup"   "STRIFE.WAD"
-IF /I "%$%" == "H" CALL :launch_engine    "prboom"               "STRIFE.WAD"
-IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "STRIFE.WAD"
-IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "STRIFE.WAD"
-IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "STRIFE.WAD"
-IF /I "%$%" == "G" CALL :menu_gzdoom                             "STRIFE.WAD"
+IF /I "%$%" == "C" CALL :launch_engine    "choco-strife-setup"   "STRIFE1.WAD"
+IF /I "%$%" == "H" CALL :launch_engine    "prboom"               "STRIFE1.WAD"
+IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "STRIFE1.WAD"
+IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "STRIFE1.WAD"
+IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "STRIFE1.WAD"
+IF /I "%$%" == "G" CALL :menu_gzdoom                             "STRIFE1.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "STRIFE1.WAD"
 
 GOTO :menu_strife
 

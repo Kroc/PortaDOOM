@@ -93,13 +93,10 @@ IF EXIST "default.zandronum-2.ini" GOTO :zandronum-3
 
 ECHO * Zandronum-2                DOOM.WAD
 CALL :make_zandronum "zandronum-2" "DOOM.WAD"
-
 ECHO * Zandronum-2                HERETIC.WAD
 CALL :make_zandronum "zandronum-2" "HERETIC.WAD"
-
 ECHO * Zandronum-2                HEXEN.WAD
 CALL :make_zandronum "zandronum-2" "HEXEN.WAD"
-
 ECHO * Zandronum-2                STRIFE1.WAD
 CALL :make_zandronum "zandronum-2" "STRIFE1.WAD"
 
@@ -109,13 +106,10 @@ IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-09
 
 ECHO * Zandronum-3                DOOM.WAD
 CALL :make_zandronum "zandronum-3" "DOOM.WAD"
-
 ECHO * Zandronum-3                HERETIC.WAD
 CALL :make_zandronum "zandronum-3" "HERETIC.WAD"
-
 ECHO * Zandronum-3                HEXEN.WAD
 CALL :make_zandronum "zandronum-3" "HEXEN.WAD"
-
 ECHO * Zandronum-3                STRIFE1.WAD
 CALL :make_zandronum "zandronum-3" "STRIFE1.WAD"
 
@@ -129,13 +123,10 @@ IF EXIST "default.gzdoom-09.ini" GOTO :gzdoom-10
 
 ECHO * GZDoom v0.9                DOOM.WAD
 CALL :make_gzdoom "gzdoom-09" "DOOM.WAD"
-
 ECHO * GZDoom v0.9                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-09" "HERETIC.WAD"
-
 ECHO * GZDoom v0.9                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-09" "HEXEN.WAD"
-
 ECHO * GZDoom v0.9                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-09" "STRIFE1.WAD"
 
@@ -145,13 +136,10 @@ IF EXIST "default.gzdoom-10.ini" GOTO :gzdoom-11
 
 ECHO * GZDoom v1.0                DOOM.WAD
 CALL :make_gzdoom "gzdoom-10" "DOOM.WAD"
-
 ECHO * GZDoom v1.0                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-10" "HERETIC.WAD"
-
 ECHO * GZDoom v1.0                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-10" "HEXEN.WAD"
-
 ECHO * GZDoom v1.0                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-10" "STRIFE1.WAD"
 
@@ -161,13 +149,10 @@ IF EXIST "default.gzdoom-11.ini" GOTO :gzdoom-12
 
 ECHO * GZDoom v1.1                DOOM.WAD
 CALL :make_gzdoom "gzdoom-11" "DOOM.WAD"
-
 ECHO * GZDoom v1.1                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-11" "HERETIC.WAD"
-
 ECHO * GZDoom v1.1                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-11" "HEXEN.WAD"
-
 ECHO * GZDoom v1.1                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-11" "STRIFE1.WAD"
 
@@ -177,13 +162,10 @@ IF EXIST "default.gzdoom-12.ini" GOTO :gzdoom-13
 
 ECHO * GZDoom v1.2                DOOM.WAD
 CALL :make_gzdoom "gzdoom-12" "DOOM.WAD"
-
 ECHO * GZDoom v1.2                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-12" "HERETIC.WAD"
-
 ECHO * GZDoom v1.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-12" "HEXEN.WAD"
-
 ECHO * GZDoom v1.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-12" "STRIFE1.WAD"
 
@@ -193,13 +175,10 @@ IF EXIST "default.gzdoom-13.ini" GOTO :gzdoom-14
 
 ECHO * GZDoom v1.3                DOOM.WAD
 CALL :make_gzdoom "gzdoom-13" "DOOM.WAD"
-
 ECHO * GZDoom v1.3                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-13" "HERETIC.WAD"
-
 ECHO * GZDoom v1.3                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-13" "HEXEN.WAD"
-
 ECHO * GZDoom v1.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-13" "STRIFE1.WAD"
 
@@ -209,13 +188,10 @@ IF EXIST "default.gzdoom-14.ini" GOTO :gzdoom-15
 
 ECHO * GZDoom v1.4                DOOM.WAD
 CALL :make_gzdoom "gzdoom-14" "DOOM.WAD"
-
 ECHO * GZDoom v1.4                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-14" "HERETIC.WAD"
-
 ECHO * GZDoom v1.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-14" "HEXEN.WAD"
-
 ECHO * GZDoom v1.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-14" "STRIFE1.WAD"
 
@@ -225,13 +201,10 @@ IF EXIST "default.gzdoom-15.ini" GOTO :gzdoom-16
 
 ECHO * GZDoom v1.5                DOOM.WAD
 CALL :make_gzdoom "gzdoom-15" "DOOM.WAD"
-
 ECHO * GZDoom v1.5                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-15" "HERETIC.WAD"
-
 ECHO * GZDoom v1.5                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-15" "HEXEN.WAD"
-
 ECHO * GZDoom v1.5                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-15" "STRIFE1.WAD"
 
@@ -241,13 +214,10 @@ IF EXIST "default.gzdoom-16.ini" GOTO :gzdoom-17
 
 ECHO * GZDoom v1.6                DOOM.WAD
 CALL :make_gzdoom "gzdoom-16" "DOOM.WAD"
-
 ECHO * GZDoom v1.6                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-16" "HERETIC.WAD"
-
 ECHO * GZDoom v1.6                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-16" "HEXEN.WAD"
-
 ECHO * GZDoom v1.6                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-16" "STRIFE1.WAD"
 
@@ -257,13 +227,10 @@ IF EXIST "default.gzdoom-17.ini" GOTO :gzdoom-18
 
 ECHO * GZDoom v1.7                DOOM.WAD
 CALL :make_gzdoom "gzdoom-17" "DOOM.WAD"
-
 ECHO * GZDoom v1.7                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-17" "HERETIC.WAD"
-
 ECHO * GZDoom v1.7                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-17" "HEXEN.WAD"
-
 ECHO * GZDoom v1.7                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-17" "STRIFE1.WAD"
 
@@ -273,13 +240,10 @@ IF EXIST "default.gzdoom-18.ini" GOTO :gzdoom-19
 
 ECHO * GZDoom v1.8                DOOM.WAD
 CALL :make_gzdoom "gzdoom-18" "DOOM.WAD"
-
 ECHO * GZDoom v1.8                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-18" "HERETIC.WAD"
-
 ECHO * GZDoom v1.8                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-18" "HEXEN.WAD"
-
 ECHO * GZDoom v1.8                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-18" "STRIFE1.WAD"
 
@@ -289,13 +253,10 @@ IF EXIST "default.gzdoom-19.ini" GOTO :gzdoom-20
 
 ECHO * GZDoom v1.9                DOOM.WAD
 CALL :make_gzdoom "gzdoom-19" "DOOM.WAD"
-
 ECHO * GZDoom v1.9                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-19" "HERETIC.WAD"
-
 ECHO * GZDoom v1.9                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-19" "HEXEN.WAD"
-
 ECHO * GZDoom v1.9                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-19" "STRIFE1.WAD"
 
@@ -305,13 +266,10 @@ IF EXIST "default.gzdoom-20.ini" GOTO :gzdoom-21
 
 ECHO * GZDoom v2.0                DOOM.WAD
 CALL :make_gzdoom "gzdoom-20" "DOOM.WAD"
-
 ECHO * GZDoom v2.0                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-20" "HERETIC.WAD"
-
 ECHO * GZDoom v2.0                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-20" "HEXEN.WAD"
-
 ECHO * GZDoom v2.0                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-20" "STRIFE1.WAD"
 
@@ -321,13 +279,10 @@ IF EXIST "default.gzdoom-21.ini" GOTO :gzdoom-22
 
 ECHO * GZDoom v2.1                DOOM.WAD
 CALL :make_gzdoom "gzdoom-21" "DOOM.WAD"
-
 ECHO * GZDoom v2.1                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-21" "HERETIC.WAD"
-
 ECHO * GZDoom v2.1                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-21" "HEXEN.WAD"
-
 ECHO * GZDoom v2.1                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-21" "STRIFE1.WAD"
 
@@ -337,13 +292,10 @@ IF EXIST "default.gzdoom-22.ini" GOTO :gzdoom-23
 
 ECHO * GZDoom v2.2                DOOM.WAD
 CALL :make_gzdoom "gzdoom-22" "DOOM.WAD"
-
 ECHO * GZDoom v2.2                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-22" "HERETIC.WAD"
-
 ECHO * GZDoom v2.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-22" "HEXEN.WAD"
-
 ECHO * GZDoom v2.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-22" "STRIFE1.WAD"
 
@@ -353,13 +305,10 @@ IF EXIST "default.gzdoom-23.ini" GOTO :gzdoom-24
 
 ECHO * GZDoom v2.3                DOOM.WAD
 CALL :make_gzdoom "gzdoom-23" "DOOM.WAD"
-
 ECHO * GZDoom v2.3                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-23" "HERETIC.WAD"
-
 ECHO * GZDoom v2.3                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-23" "HEXEN.WAD"
-
 ECHO * GZDoom v2.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-23" "STRIFE1.WAD"
 
@@ -369,13 +318,10 @@ IF EXIST "default.gzdoom-24.ini" GOTO :gzdoom-32
 
 ECHO * GZDoom v2.4                DOOM.WAD
 CALL :make_gzdoom "gzdoom-24" "DOOM.WAD"
-
 ECHO * GZDoom v2.4                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-24" "HERETIC.WAD"
-
 ECHO * GZDoom v2.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-24" "HEXEN.WAD"
-
 ECHO * GZDoom v2.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-24" "STRIFE1.WAD"
 
@@ -385,32 +331,41 @@ IF EXIST "default.gzdoom-32.ini" GOTO :gzdoom
 
 ECHO * GZDoom v3.2                DOOM.WAD
 CALL :make_gzdoom "gzdoom-32" "DOOM.WAD"
-
 ECHO * GZDoom v3.2                HERETIC.WAD
 CALL :make_gzdoom "gzdoom-32" "HERETIC.WAD"
-
 ECHO * GZDoom v3.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-32" "HEXEN.WAD"
-
 ECHO * GZDoom v3.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-32" "STRIFE1.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom.ini" GOTO :exit
+IF EXIST "default.gzdoom.ini" GOTO :zdoom
 
 ECHO * GZDoom                     DOOM.WAD
 CALL :make_gzdoom "gzdoom" "DOOM.WAD"
-
 ECHO * GZDoom                     HERETIC.WAD
 CALL :make_gzdoom "gzdoom" "HERETIC.WAD"
-
 ECHO * GZDoom                     HEXEN.WAD
 CALL :make_gzdoom "gzdoom" "HEXEN.WAD"
-
 ECHO * GZDoom                     STRIFE1.WAD
 CALL :make_gzdoom "gzdoom" "STRIFE1.WAD"
 
+
+REM # ZDoom
+REM ============================================================================
+:zdoom
+REM # delete the file in order to re-build it
+IF EXIST "default.zdoom.ini" GOTO :exit
+
+ECHO * ZDoom v2.8.1               DOOM.WAD
+CALL :make_zdoom "zdoom" "DOOM.WAD"
+ECHO * ZDoom v2.8.1               HERETIC.WAD
+CALL :make_zdoom "zdoom" "HERETIC.WAD"
+ECHO * ZDoom v2.8.1               HEXEN.WAD
+CALL :make_zdoom "zdoom" "HEXEN.WAD"
+ECHO * ZDoom v2.8.1               STRIFE1.WAD
+CALL :make_zdoom "zdoom" "STRIFE1.WAD"
 
 REM ----------------------------------------------------------------------------
 
@@ -664,5 +619,16 @@ REM # enable cross-hair (type 2)
 %BIN_FART% "default.%~1.ini" "crosshair=0" "crosshair=2"
 REM # cross hair 1:1 pixels (no-scale)
 %BIN_FART% "default.%~1.ini" "crosshairscale=1" "crosshairscale=0"
+
+GOTO:EOF
+
+
+:make_zdoom
+REM #
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM ----------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 GOTO:EOF
