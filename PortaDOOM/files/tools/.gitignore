@@ -1,0 +1,2 @@
+# allow the inclusion of executables in the tools directory
+!*.exe
