@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+04-01-18:
+* Engine default configuration files re-done with a new script to automatically
+  modify the multitude of config files with our desired settings
+
 30-12-17:
 * Upgraded Chocolate Doom to 3.0
 * Changed "doom.bat" to separate different GZDoom versions' config files
