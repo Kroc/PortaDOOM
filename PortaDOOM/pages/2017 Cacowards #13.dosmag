@@ -1,6 +1,7 @@
 $THEME=BLACK
 $TITLE=Runners Up
 $KEY:1=GOTO:Rise of the Wool Ball
+$KEY:S=GOTO:Shadow Of The Wool Ball
 $KEY:2=GOTO:Return to Hadron Episode 2
 $KEY:3=GOTO:TNT - Revilution
 $KEY:4=GOTO:Waterlab GZD
@@ -9,7 +10,6 @@ $KEY:6=GOTO:Curse of the Lost Gods
 $KEY:7=GOTO:Water Spirit
 $KEY:8=GOTO:Hellscape
 $KEY:9=GOTO:Dark Tide
-$KEY:S=GOTO:Shadow Of The Wool Ball
 
 ^C:2017 CACOWARDS :: RUNNERS UP
 

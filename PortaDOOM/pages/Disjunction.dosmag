@@ -1,0 +1,56 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\disjunct\play.bat
+$KEY:T=SHELL:wads\episodes\disjunct\disjunct.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/disjunct
+
+:Disjunction                                     * 2017 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>02>23	  Author : _floatRand_
+:Levels   : *11			   Modes : *Single, Co-op?
+:Requires : *boom		Includes : *+Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+A small mapset containing 11 thematically and visually diverse maps.
+Bit challenging, but hope you have fun!
+
+I would love to receive some hard spanking for whatever bugs, errors and mistakes in maps, as well as critique from gameplay/visual perspective.
+Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify me. The conveyors unfortunately don't function properly on ZDaemon, so have that in mind.
+
+1.01 - quick fixes
+1.10 - alterations to maps 04 and 06.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: dunno
+*Editor(s) used			: GZDoomBuilder, Slade3
+*May Not Run With		: ZDaemon
+*Tested With			: GZDoom/Pr-Boom
+
+:Credits
+:-------------------------------------------------------------------------------
+- cc4tex, compiled by _Esselfortium_. Some custom textures added.
+
+*Music:
+
+- Title: The Shade by _Cyber Rainforce_
+- Intermission: Storm by _Cyber Rainforce_
+- 01: Jazz Castle ( Jazz Jackrabbit 2 ), sequenced by _MaliceX_
+- 02: Volcano ( Megaman Zero 3 ), sequenced by _King Meteor_.
+- 03: Submerged Memory from Mega Man Zero 3  ( midi by _King Meteor_ )
+- 04: Sorrow by _Cyber Rainforce_
+- 05: Top Floor ( Castlevania: Aria Of Sorrow ), sequenced by _Jorge D. Fuentes_
+- 06: Lower Brinstar - MGS remix ( Super Metroid ), sequenced by _King Meteor_
+- 07: Battle ( Parasite Eve ), sequenced by ???
+- 08: Nuts N Bolts from Donkey Kong Country 3 ( midi by _JILost_ )
+- 09: Hi-Depth Elevator by _Cyber Rainforce_
+- 10: From Shadowgate (NES), midi remix by _John Kuzma_ (_Wraith Arranged_), additional changes by _Benjogami_
+- 11: MAP15 theme remix from Icarus: Alien Vanguard
+
+*Special thanks to:
+- _Dew_
+- _Alter_
+- _TerminusEst13_
+- /vr/

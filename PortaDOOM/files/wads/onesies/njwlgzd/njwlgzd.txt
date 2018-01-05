@@ -1,0 +1,83 @@
+===========================================================================
+Advanced engine needed  : GZDoom 2.4.0+
+Primary purpose         : Single play
+===========================================================================
+Title                   : Waterlab GZD
+Filename                : NJWLGZD.WAD
+Release date            : 19 March 2017
+Author                  : Nigel Rowand (Enjay)
+Email Address           : enjay001@hotmail.com
+Other Files By Author   : Quite a few.
+Misc. Author Info       : Not the real Slim Shady.
+
+Description             : A map inspired by a feature (and demo map) that
+           originally appeared in/for Doom Legacy v1.28
+          
+           Far too much metal texturing.
+
+Additional Credits to   : See credits folder inside the PK3 or the forum thread.
+          
+           I don't think I forgot anyone, but if I did, let me know.
+===========================================================================
+* What is included *
+
+New levels              : MAP01
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+DECORATE            : Yes
+Models         : Yes (not many)
+Demos                   : No
+Other files required    : none
+
+
+* Play Information *
+
+Game                    : Doom2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-8 Player  : Player starts present.  Should work but has not been blanaced.
+Deathmatch 2-4 Player   : No - probably too big and not really suited to it generally
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Small Demo map called WATERLAB used to showcase a feature
+           in Doom Legacy v1.28
+          ( https://www.youtube.com/watch?v=4I2RNWQDD5w )
+Build Time              : Not sure.  3-4 weeks I think. 
+Editor(s) used          : DeePsea, Slade, Paint Shop Pro, GoldWave, Audacity,
+           Misfit3D, Milkshape3D, Anvil Studio, Textpad.
+Known Bugs              : Nothing I know of.
+May Not Run With        : Anything other than GZdoom 2.4.0+
+
+Tested With             : GZdoom 2.4.0 pre releases
+
+* General information *
+
+* For a long time I've been interested in a feature that existed for a few
+versions of Doom Legacy and then vanished. The feature was translucent water
+that warped the view through the water giving a more convincing effect than
+is usually seen in Doom. There was also a demo map that showcased the feature.
+As demo maps often are, it was a simple affair with no real gameplay.
+
+There was a minor fault with the map so I fixed it up so that I could record a
+video of it (link above) but then I got to thinking "what if I made the map
+worth playing properly". I started working on it but after a while, the limits
+of such an old version of Legacy and some rendering bugs with the feature that
+I was specifically editing for (the water effect) started to make things creak
+around the edges so I cut my losses and jumped ship to GZDoom and an
+approximation of the water effect using 3D floors. Once I'd made the move to
+GZDoom, my lack of restraint meant that it was no longer going to be an
+almost-vanilla (except for the water effect) map.
+
+* Jumping and crouching?  Sure, why not?  There shouldn't be anything that needs
+either of these features.  Jumping may make a few areas a bit easier to reach
+and ducking may save your skin at some point but nothing should be inaccessible
+if you don't jump or duck.
+
+* Copyright / Permissions *
+
+Anything that I (Enjay) have produced for this is up for grabs if you want to
+use it (credit would be nice). Anything else, ask the original authors.

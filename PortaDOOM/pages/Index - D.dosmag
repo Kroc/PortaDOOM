@@ -3,16 +3,17 @@ $KEY:A=GOTO:The Darkening Episode 2
 $KEY:B=GOTO:dead.air
 $KEY:C=GOTO:dead.wire
 $KEY:D=GOTO:Cabal Series #03
-$KEY:E=GOTO:Don't Be A Bitch Remastered
-$KEY:F=GOTO:DTWiD Series #02
-$KEY:G=GOTO:DOOM 64
-$KEY:H=GOTO:DOOM II
-$KEY:I=GOTO:DTWiD Series #01
-$KEY:J=GOTO:DTWiD Series #03
-$KEY:K=GOTO:DOOM(4) for DooM
-$KEY:L=GOTO:Doomed Space Wars
-$KEY:M=GOTO:DoomRL Arsenal
-$KEY:N=GOTO:DUMP Episode 3
+$KEY:E=GOTO:Disjunction
+$KEY:F=GOTO:Don't Be A Bitch Remastered
+$KEY:G=GOTO:DTWiD Series #02
+$KEY:H=GOTO:DOOM 64
+$KEY:I=GOTO:DOOM II
+$KEY:J=GOTO:DTWiD Series #01
+$KEY:K=GOTO:DTWiD Series #03
+$KEY:L=GOTO:DOOM(4) for DooM
+$KEY:M=GOTO:Doomed Space Wars
+$KEY:N=GOTO:DoomRL Arsenal
+$KEY:O=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
@@ -22,13 +23,14 @@ $KEY:N=GOTO:DUMP Episode 3
 - [B] *dead.air											Onesies
 - [C] *dead.wire										Onesies
 - [D] *Cabal Series: Derelict Station					5 Years of Doom
-- [E] *Don't Be A Bitch Remastered						Multiplayer
-- [F] *Doom 2 the Way id Did							MegaWADs
-- [G] *DOOM 64											Commercial DOOM
-- [H] *DOOM II											Commercial DOOM
-- [I] *Doom the Way id Did								MegaWADs
-- [J] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [K] *DOOM(4) for DooM									Mods
-- [L] *Doomed Space Wars								Episodes
-- [M] *DoomRL Arsenal									Mods
-- [N] *DUMP Episode 3: BFG Edition						Community Projects
+- [E] *Disjunction										Episodes
+- [F] *Don't Be A Bitch Remastered						Multiplayer
+- [G] *Doom 2 the Way id Did							MegaWADs
+- [H] *DOOM 64											Commercial DOOM
+- [I] *DOOM II											Commercial DOOM
+- [J] *Doom the Way id Did								MegaWADs
+- [K] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [L] *DOOM(4) for DooM									Mods
+- [M] *Doomed Space Wars								Episodes
+- [N] *DoomRL Arsenal									Mods
+- [O] *DUMP Episode 3: BFG Edition						Community Projects

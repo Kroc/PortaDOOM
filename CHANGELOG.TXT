@@ -2,6 +2,11 @@
 * = Fix / Change
 - = Removal
 
+05-01-18:
++ Added "Disjunction" WAD page
++ Added "Waterlab GZD" WAD page
+* Updated GZDoom to 3.2.5
+
 04-01-18:
 * Engine default configuration files re-done with a new script to automatically
   modify the multitude of config files with our desired settings

@@ -1,0 +1,36 @@
+$NAV=Onesies
+$KEY:P=SHELL:wads\onesies\njlwgzd\play.bat
+$KEY:T=SHELL:wads\onesies\njlwgzd\njlwgzd.txt
+$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=55741
+$KEY:V=URL:https://www.youtube.com/watch?v=4I2RNWQDD5w
+
+:Waterlab GZD                                    * 2017 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>03>19	  Author : _Nigel Rowand_ (_Enjay_)
+:Levels   : *1			   Modes : *Single, Co-op?
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+A map inspired by a feature (and demo map) that originally appeared in/for Doom Legacy v1.28. Far too much metal texturing.
+
+For a long time I've been interested in a feature that existed for a few versions of Doom Legacy and then vanished. The feature was translucent water that warped the view through the water giving a more convincing effect than is usually seen in Doom. There was also a demo map that showcased the feature. As demo maps often are, it was a simple affair with no real gameplay.
+
+There was a minor fault with the map so I fixed it up so that I could record a [V: video of it] but then I got to thinking "what if I made the map worth playing properly". I started working on it but after a while, the limits of such an old version of Legacy and some rendering bugs with the feature that I was specifically editing for (the water effect) started to make things creak around the edges so I cut my losses and jumped ship to GZDoom and an approximation of the water effect using 3D floors. Once I'd made the move to GZDoom, my lack of restraint meant that it was no longer going to be an almost-vanilla (except for the water effect) map.
+
+Jumping and crouching? Sure, why not? There shouldn't be anything that needs either of these features. Jumping may make a few areas a bit easier to reach and ducking may save your skin at some point but nothing should be inaccessible if you don't jump or duck.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: Small Demo map called WATERLAB used to showcase a feature in Doom Legacy v1.28 [V: https://www.youtube.com/watch?v=4I2RNWQDD5w]
+*Build Time				: Not sure. 3-4 weeks I think. 
+*Editor(s) used			: DeePsea, Slade, Paint Shop Pro, GoldWave, Audacity, Misfit3D, Milkshape3D, Anvil Studio, Textpad.
+*Known Bugs				: Nothing I know of.
+*May Not Run With		: Anything other than GZdoom 2.4.0+
+*Tested With			: GZdoom 2.4.0 pre releases
+
+:Credits
+:-------------------------------------------------------------------------------
+See credits folder inside the PK3 or the forum thread.
+I don't think I forgot anyone, but if I did, let me know.
