@@ -1,0 +1,36 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\curse2\play.bat
+$KEY:T=SHELL:wads\episodes\curse2\curse2.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
+
+:Hexen: Curse of the Lost Gods                   * 2017 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>06>07	  Author : _Kristian 'Kristus' Käll_
+:Levels   : *5			   Modes : *Single, Co-op
+:Requires : *zdoom		Includes : *+Sounds +Graphics
+:-------------------------------------------------------------------------------
+
+An expansion episode for Hexen, taking place long after the events of the original.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: From scratch
+*Build Time				: On and off for about a year
+*Editor(s) used			: DB, DB2, XWE, ZENNODE, ACC
+*May Not Run With...	: Anything not Zdoom compatibl.
+*Known Bugs				: None that are I am aware of
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Khorus_, for playtesting and comments
+- _St. Alfonzo_, for playtesting and comments
+- _Gez_ for helping with decorate
+- Fighter widescreen punch sprites by _MG_Man_
+- Cleric widescreen fire sprites by _Neoworm_
+- All other widescreen weapon sprite mods by _Doorhenge_
+- _Entryway_ for making and helping with HexenP hacking
+- _Vermil_ for Doomsday code help
+- _John Romero_ for Heretic and Hexen
+- ID and Raven of course for the games

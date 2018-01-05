@@ -5,6 +5,7 @@
 05-01-18:
 + Added "Disjunction" WAD page
 + Added "Waterlab GZD" WAD page
++ Added "Hexen - Curse of the Lost Gods" WAD page
 * Updated GZDoom to 3.2.5
 
 04-01-18:

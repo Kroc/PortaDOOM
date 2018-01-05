@@ -26,7 +26,7 @@ Scripts:
 [ ] doom.bat: Add `-shotdir`, supported by a number of engines
 
 [ ] DOOM Retro's `-config` parameter is not working
-[ ] A method to inject default controls into any engine ver.
+[X] A method to inject default controls into any engine ver.
     For Z-based engines, we can do this on the command line,
     For most other engines, we'll have to modify the .cfg file.
     - DOOM Retro has no setup program, will *require* the above!
