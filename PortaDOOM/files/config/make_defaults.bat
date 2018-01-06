@@ -467,6 +467,7 @@ REM # turn off texture filtering
 %BIN_FART% "default.%~1.cfg" "key_screenshot            0x2a"		"key_screenshot            0xd8"
 
 %BIN_FART% "default.%~1.cfg" "hudadd_crosshair              0"		"hudadd_crosshair              1"
+%BIN_FART% "default.%~1.cfg" "hudadd_secretarea             0"		"hudadd_secretarea             1"
 %BIN_FART% "default.%~1.cfg" "mouse_doubleclick_as_use      1"		"mouse_doubleclick_as_use      0"
 %BIN_FART% "default.%~1.cfg" "movement_mouselook            0"		"movement_mouselook            1"
 
