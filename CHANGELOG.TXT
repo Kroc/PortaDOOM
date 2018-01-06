@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+06-01-18:
++ Added "Water Spirit" WAD page
+
 05-01-18:
 + Added "Disjunction" WAD page
 + Added "Waterlab GZD" WAD page

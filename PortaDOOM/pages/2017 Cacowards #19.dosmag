@@ -47,17 +47,23 @@ $KEY:L=GOTO:Void and Rainbow
 $KEY:M=GOTO:Rise of the Wool Ball
 - [M] *Rise of the Wool Ball						_MSPaintR0cks_
 
-- [?] *Return to Hadron Episode 					_cannonball_
+$KEY:N=GOTO:Return to Hadron Episode 2
+- [N] *Return to Hadron Episode 2					_cannonball_
 
-- [?] *TNT: Revilution								Various
+$KEY:O=GOTO:TNT - Revilution
+- [O] *TNT: Revilution								Various
 
-- [?] *Waterlab GZD									_Enjay_
+$KEY:P=GOTO:Waterlab GZD
+- [P] *Waterlab GZD									_Enjay_
 
-- [?] *Disjunction									_floatRand_
+$KEY:Q=GOTO:Disjunction
+- [Q] *Disjunction									_floatRand_
 
-- [?] *Hexen - Curse of the Lost Gods				_Kristus_
+$KEY:R=GOTO:Hexen - Curse of the Lost Gods
+- [R] *Hexen: Curse of the Lost Gods				_Kristus_
 
-- [?] *Water Spirit									_Manbou_
+$KEY:S=GOTO:Water Spirit
+- [S] *Water Spirit									_Manbou_
 
 - [?] *Hellscape									_Chris Lutz_
 

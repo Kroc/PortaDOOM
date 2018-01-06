@@ -2,7 +2,8 @@ $THEME=BLUE
 $KEY:A=GOTO:Warp House
 $KEY:B=GOTO:Cabal Series #03
 $KEY:C=GOTO:Waterlab GZD
-$KEY:D=GOTO:Cabal Series #06
+$KEY:D=GOTO:Water Spirit
+$KEY:E=GOTO:Cabal Series #06
 
 ^C:INDEX :: W
 
@@ -11,4 +12,5 @@ $KEY:D=GOTO:Cabal Series #06
 - [A] *Warp House										Onesies
 - [B] *Cabal Series: Watchtower, (The)					5 Years of Doom
 - [C] *Waterlab GZD										Onesies
-- [D] *Cabal Series: We Who are About to Die			5 Years of Doom
+- [D] *Water Spirit										People
+- [E] *Cabal Series: We Who are About to Die			5 Years of Doom

@@ -1,0 +1,76 @@
+===========================================================================
+Title                   : Water Spirit
+Filename                : watrsp.wad
+Release date            : January 9th 2017 (first release)
+                                   January 12th 2017
+                                   January 14th 2017 
+                                   January 31th 2017
+                                   February 2th 2017(final release)
+Author                  : Manbou(burabojunior)
+
+E-Mail address          : [redacted]
+
+Description             : Water Spirit is three maps I have made for a year,
+                                  with lots of enemies and detailed architecture.
+                                  The feel is intended to be slightly moody, but with lots
+                                  of action and danger that will test the player.
+
+                                  I hope this wad will be a memorable and fun experience.
+                                  I'm really confident about the maps in this wad.
+                                  I believe you will enjoy them if you check them out!
+                                  Water Spirit has been tested in prboom-plus-2.5.1.4, zdoom-2.8.1 and gzdoom-bin-2-2-0-x64.
+                                  I recommend you should use them.
+
+===========================================================================
+* What is included *
+
+New levels              : 3
+Sounds                  : No
+Music                   : Yes 
+Graphics                : No 
+Demos                   : No
+Other                   : MAPINFO(NOTE: Jump and crouch are unsupported.)
+
+Other files required    : None
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-03
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : None
+Other game styles       : None
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : One year
+Editor(s) used          : Doombuilder2 GZDoombuilder Slade
+Known Bugs              : I believe there is no serious bug but there may be some compatibility problems.
+
+*MAP*
+
+MAP01:Aquarius       
+MAP02:The shrine of Water Spirit part1
+MAP03:The shrine of Water Spirit part2
+
+*Music Listing*
+
+MAP01:rokeleko.wad D_DDTBL2
+MAP02:rokeleko.wad D_E1M3
+MAP03:"The Mucus Flow" by B.P.R.D
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
