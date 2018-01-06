@@ -105,7 +105,7 @@ ECHO:
 ECHO     [X]  Launcher only ^(doom.bat / play.bat^)
 ECHO:
 
-SET "P="
+SET "$="
 SET /P "$=Enter choice: "
 IF /I "%$%" == "A" GOTO :do_release_all
 IF /I "%$%" == "B" GOTO :do_release_cacowards2017
@@ -331,6 +331,11 @@ GOTO:EOF
 REM ====================================================================================================================
 TITLE Creating PortaDOOM Launcher release...
 ECHO:
+CALL :do_launcher
+PAUSE & GOTO:EOF
+
+:do_launcher
+REM --------------------------------------------------------------------------------------------------------------------
 ECHO * Make PortaDOOM_Launcher ...
 DEL build\PortaDOOM_Launcher.7z  >NUL 2>&1
 
@@ -346,7 +351,6 @@ REM # Launcher is always maximum compression as it doesn't use the PortaDOOM exe
 IF ERRORLEVEL 1 PAUSE
 
 POPD
-PAUSE
 GOTO:EOF
 
 

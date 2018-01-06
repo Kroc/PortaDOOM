@@ -18,7 +18,7 @@ REM # - launches the engine in the native resolution of the current machine (por
 
 REM # TODO:
 REM # - option to launch windowed -- will need to choose reasonable window size
-REM # - Strife shareware & GOG/Steam detection
+REM # - DOOM64.WAD handling
 
 REM # default folder names
 SET "DIR_CONFIGS=config"
@@ -85,7 +85,6 @@ ECHO       choco-strife        : As with choco-doom, but for Strife WADs
 ECHO       choco-strife-setup  : As above, but displays configuration first
 ECHO       crispy-doom         : Fork of Chocolate Doom; 640x400, limits removed
 ECHO       crispy-doom-setup   : As above, but displays configuration first
-ECHO       doomretro           : Similar to Crispy Doom, but supports boom extensions
 ECHO       prboom              : PRBoom+ defaults to OpenGL. Use `/SW` for software
 ECHO       gzdoom              : GZDoom current. Use `/SW` for software rendering
 ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)

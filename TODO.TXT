@@ -66,7 +66,7 @@ Scripts:
 	    (i.e. to allow printing of formatted text in statusbar/dialog)
 	[ ] Add shadow to dialog box
 	
-[ ] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
+[X] Pre GZDoom-31 engines won't work with the configuration set to FluidSynth,
     they'll need their own config file
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
