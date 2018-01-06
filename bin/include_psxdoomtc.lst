@@ -1,12 +1,11 @@
 PortaDOOM.exe
 
 files\wads\conversions\freedoom\
-files\wads\SHAREWARE\DOOM1.WAD
 
 files\play.bat
 files\doom.bat
 
-files\tools\**
+files\tools\xdelta3\
 
 files\config\default.gzdoom.ini
 
