@@ -1,0 +1,94 @@
+
+================================================================
+
+  DOOM II :: HELLSCAPE
+ - - - - - - - - - - - - -
+  Version 1.1 "Dew Wins the Internet Edition"
+
+================================================================
+
+Title                   : DOOM II: Hellscape
+Filename                : d2hs.wad & d2hs.bex
+Author                  : Chris Lutz of The Chaos Crew
+Email Address           : [redacted]
+Homepage		: http://www.doomworld.com/chaoscrew
+Other Releases		: Phobos: Anomaly Reborn (par-lutz.zip)
+                        : Caverns of Darkness (cc-cod.zip)
+			: Inferno (inf-lutz.zip)
+                        : Millennium - Map30
+			: Doomworld's 10sectors.wad - Map26
+			: Misc. single levels
+Description             : A re-imagining those Doom II levels
+			: that take place in Hell (21-30).  As
+                        : such, these maps will probably be
+                        : a lot more entertaining if you have
+                        : a reasonable working knowledge of
+                        : the original IWAD levels...
+Additional Credits to   : id Software
+                        : dew, for going WAY above and beyond
+			: 40oz, joe-ilya, Dime for beta-testing
+			: www.Doomworld.com for forums, hosting,
+			:  and community
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Files Included:
+D2HS.WAD:	Why you downloaded this in the first place.
+D2HS.BEX:	Dehacked file (for level names).
+D2HS-LUTZ.TXT:	This file.
+
+================================================================
+
+
+
+* Play Information *		 
+----------------------------------------------------------------
+Game                    : Doom II
+Map Number              : Map21 - Map30
+Source Port		: ZDoom/GZDoom (See Note Below)
+Single Player           : Yes 
+Cooperative             : No
+Deathmatch              : No 
+Difficulty Settings     : Yes
+New Weapons:		: No
+New Sounds              : No
+New Graphics            : Sky / Titlepic
+New Music               : No
+----------------------------------------------------------------
+
+
+* A Note on Source Ports *
+----------------------------------------------------------------
+What you really need to run this level is a BOOM/MBF-compatable,
+limit-removing source port.  I did 98% of my testing with ZDoom,
+so that is what I recommend, but have verified it also runs with
+PrBoom 2.4.8.1.  Also, there are two other things I should 
+mention:
+ - NO JUMPING!  Jumping is for losers.
+ - These levels are a LOT easier if you can run under/over 
+     sprites (but not impossible if you can't); still, if
+     you have the option to turn off infinitely-tall actors,
+     I highly recommend you do so.
+
+
+* Construction *
+----------------------------------------------------------------
+Base                    : New level from scratch
+Editors used            : DoomBuilder2, Whacked, WinTex
+Known Bugs              : None that I know of
+Build Time              : Beats me.  A long time.
+----------------------------------------------------------------
+
+
+* Copyright / Permissions *
+----------------------------------------------------------------
+You may distribute this .WAD freely, provided you include all
+this text file with the .WAD file.  Should you want to edit or 
+include sub-portions of this level in any other project, send me
+an e-mail message and I will ponder your request.
+----------------------------------------------------------------
+
+
+================================================================
+
+Enjoy!

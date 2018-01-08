@@ -65,9 +65,11 @@ $KEY:R=GOTO:Hexen - Curse of the Lost Gods
 $KEY:S=GOTO:Water Spirit
 - [S] *Water Spirit									_Manbou_
 
-- [?] *Hellscape									_Chris Lutz_
+$KEY:T=GOTO:DOOM II - Hellscape
+- [T] *DOOM II: Hellscape							_Chris Lutz_
 
-- [?] *Dark Tide									_Chris Lutz_
+$KEY:U=GOTO:Dark Tide
+- [U] *Dark Tide									_Chris Lutz_
 
 :MULTIPLAYER AWARDS:
 

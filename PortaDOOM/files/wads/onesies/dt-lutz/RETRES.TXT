@@ -1,0 +1,126 @@
+So what is "The Return"?
+
+It's several things, but it's mostly a set of resources
+from the folks who brought you Eternal DOOM and the BOOM
+engine.  In addition there will be levels from a variety of
+people, and you can be one of those yourself.  Read on.
+
+Note: No levels are included in this ZIP file.
+
+We have received many requests over the years to use material
+from the mega-release Eternal DOOM.  You know what we mean -
+the cool railings, breakable glass, and awesome textures - 
+everything from Medieval to High Tech.
+
+So here is our gift to you:
+
+We are releasing the entire Eternal DOOM Resource WAD as a
+publicly available resource.  That's right!  Now you can use
+the entire Eternal DOOM resource (plus all the new resources
+released for "The Return") to decorate your levels.
+
+Now for the REALLY cool part:  We will be setting up a special
+directory on ftp.cdrom.com for levels made with The Return
+resources.  Ours will be there, and if you make some too, just 
+go to our web page to submit them.  The details are there, and
+we'll put them in that special Return directory too.  There
+will be an index to your levels on our web page, and you can
+use the handy standard text template file we provide.
+
+Just to to http://www.teamtnt.com for details (click on the
+link for The Return).
+
+We hope everyone will use the new Eternal DOOM resources to
+contribute a level of their own - whether it's SP, DM or COOP,
+BOOM, ZDOOM, or more. :)
+
+Go get it now at:
+
+http://www.teamtnt.com
+
+=========
+FEATURES:
+=========
+
+- Separate resource WAD now publicly available for use
+- New status-bar (the one from Eternal Doom).
+- Many other new and totally new graphics
+- A few select new sounds (those from Eternal Doom).
+
+- Made lovingly by an assortment of crazies dedicated to driving
+  wad players mad (and pretty fair at it too <g>).
+
+The RETRES (RETurn RESources) package RETRES.ZIP
+------------------------------------------------
+
+The download package RETRES.ZIP contains contains everything you 
+need except a working DOOM II installation.
+
+ZIP File contents:
+
+   RETRES.WAD   - The Return resource wad, contains the textures,
+                  flats, sprites, graphics and sounds.  This is the
+                  part that you can use things from.
+   RETRES.TXT   - This file
+   RESTEMPL.TXT - Template file to use when you upload your levels
+
+============================
+LIMITED DISTRIBUTION RIGHTS:
+============================
+
+Contact TeamTNT if you wish information on editing RETURN levels.
+
+ - We ask you not to include RETRES.WAD with any levels you 
+   distribute. Please ask them to download RETRES.ZIP from either 
+   CompuServe, Action Forum or at ftp.cdrom.com, id Games.
+ - Give Team Eternal and TeamTNT a mention in your text file.
+
+So what does this really mean?  We are taking a very relaxed attitude 
+on the resource WAD.  You can extract the portions of the resource 
+you wish to use as long as you give proper credit.  But if you 
+require the entire resource WAD for your level do not distribute the
+resource WAD on your own.  Have them download the resource WAD from:
+
+http://www.teamtnt.com
+
+ Thank you :)
+
+-----------------------------------------------------------------------------
+File Name              : RETRES.ZIP
+DOOM 2 Engine	       : Tested with BOOM ver 2.02 and PRBOOM ver 2.02
+Play modes             : "The Return" is a resource wad file with no levels.
+New Art		       : The Eternal Resources.
+Difficulty Settings    : n/a
+Demos Replaced         : n/a
+Where to get RETRES    : FTP ftp.cdrom.com...
+                         Homepage http://www.teamtnt.com
+                         CompuServe (Action Games Forum).
+Support                : If you have problems feel free to send mail thru the 
+                         homepage above. Do NOT contact id Software about 
+                         The Return.
+
+========
+THE TEAM
+========
+
+These  are the people that you can thank for taking up all that space on your
+hard disk. In alphabetical order:
+
+Jim Flynn               : (jflynn@pacbell.net)
+Ty Halderman            : (thldrmn@teamtnt.com)
+Paul Schmitz            : (106057.2725@compuserve.com)
+
+Play Testers            :  Ky "Rez" Moffet
+                           Other TeamTNT members
+
+Thanks to               :  id Software
+                           Raven Software
+                           Olivier Montanuy (DEUTEX, DEUSF)
+			   To all the folks who made up Team Eternal,
+			   especially the artists:
+
+				Sverre Andre Kvernmo (Main Graphic Artist)
+				Alex Mayberry (Assistant Graphic Artist)
+				Bob Evans (Graphics for EDIII)
+
+/// End of file, last updated 5:55 AM 9/26/99

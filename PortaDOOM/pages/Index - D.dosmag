@@ -1,36 +1,40 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Darkening Episode 2
-$KEY:B=GOTO:dead.air
-$KEY:C=GOTO:dead.wire
-$KEY:D=GOTO:Cabal Series #03
-$KEY:E=GOTO:Disjunction
-$KEY:F=GOTO:Don't Be A Bitch Remastered
-$KEY:G=GOTO:DTWiD Series #02
-$KEY:H=GOTO:DOOM 64
-$KEY:I=GOTO:DOOM II
-$KEY:J=GOTO:DTWiD Series #01
-$KEY:K=GOTO:DTWiD Series #03
-$KEY:L=GOTO:DOOM(4) for DooM
-$KEY:M=GOTO:Doomed Space Wars
-$KEY:N=GOTO:DoomRL Arsenal
-$KEY:O=GOTO:DUMP Episode 3
+$KEY:B=GOTO:Dark Tide
+$KEY:C=GOTO:dead.air
+$KEY:D=GOTO:dead.wire
+$KEY:E=GOTO:Cabal Series #03
+$KEY:F=GOTO:Disjunction
+$KEY:G=GOTO:Don't Be A Bitch Remastered
+$KEY:H=GOTO:DTWiD Series #02
+$KEY:I=GOTO:DOOM 64
+$KEY:J=GOTO:DOOM II
+$KEY:K=GOTO:DOOM II - Hellscape
+$KEY:L=GOTO:DTWiD Series #01
+$KEY:M=GOTO:DTWiD Series #03
+$KEY:N=GOTO:DOOM(4) for DooM
+$KEY:O=GOTO:Doomed Space Wars
+$KEY:P=GOTO:DoomRL Arsenal
+$KEY:Q=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
 :-------------------------------------------------------------------------------
 
 - [A] *Darkening Episode 2, (The)						MegaWADs
-- [B] *dead.air											Onesies
-- [C] *dead.wire										Onesies
-- [D] *Cabal Series: Derelict Station					5 Years of Doom
-- [E] *Disjunction										Episodes
-- [F] *Don't Be A Bitch Remastered						Multiplayer
-- [G] *Doom 2 the Way id Did							MegaWADs
-- [H] *DOOM 64											Commercial DOOM
-- [I] *DOOM II											Commercial DOOM
-- [J] *Doom the Way id Did								MegaWADs
-- [K] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [L] *DOOM(4) for DooM									Mods
-- [M] *Doomed Space Wars								Episodes
-- [N] *DoomRL Arsenal									Mods
-- [O] *DUMP Episode 3: BFG Edition						Community Projects
+- [B] *Dark Tide										Onesies
+- [C] *dead.air											Onesies
+- [D] *dead.wire										Onesies
+- [E] *Cabal Series: Derelict Station					5 Years of Doom
+- [F] *Disjunction										Episodes
+- [G] *Don't Be A Bitch Remastered						Multiplayer
+- [H] *Doom 2 the Way id Did							MegaWADs
+- [I] *DOOM 64											Commercial DOOM
+- [J] *DOOM II											Commercial DOOM
+- [K] *DOOM II: Hellscape								Episodes
+- [L] *Doom the Way id Did								MegaWADs
+- [M] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [N] *DOOM(4) for DooM									Mods
+- [O] *Doomed Space Wars								Episodes
+- [P] *DoomRL Arsenal									Mods
+- [Q] *DUMP Episode 3: BFG Edition						Community Projects

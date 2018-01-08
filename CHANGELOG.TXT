@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+08-01-18:
++ Added "Dark Tide" WAD page
++ Added "DOOM II: Hellscape" WAD page
+
 06-01-18:
 + Added "Water Spirit" WAD page
 

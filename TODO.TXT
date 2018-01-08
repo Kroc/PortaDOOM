@@ -23,6 +23,9 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.
+    I.e. we need to control load order or have `/MOD` option or some-such
+
 [ ] doom.bat: Add `-shotdir`, supported by a number of engines
 
 [ ] DOOM Retro's `-config` parameter is not working

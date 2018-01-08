@@ -1,0 +1,48 @@
+================================================================
+THIS WAD FILE USES "The Return" RESOURCES
+Get RETRES.ZIP from TeamTNT at http://www.teamtnt.com
+================================================================
+Title                   : 
+Filename                : 
+Author                  : (required)
+Email Address           : (required)
+Description             : 
+Additional Credits to   : 
+                          TeamTNT (http://www.teamtnt.com) and Team Eternal
+                          =================================================
+
+* Play Information *
+
+Game                    : DOOM/DOOM2
+Engine Required         : DOOM2/BOOM/ZDOOM...
+Command line            : boom -file retres mywad...
+MAP #                   : MAP01
+Single Player           : Yes/No
+Cooperative 2-4 Player  : Yes/No
+Deathmatch 2-4 Player   : Yes/No
+Difficulty Settings     : Yes/Not Implemented
+New Sounds              : No
+New Graphics            : No
+New Music               : No
+Demos Replaced          : None
+Requires RETRES.WAD     : Yes/No--some of the resources from RETRES.WAD are 
+                              included in this wad instead.
+
+* Construction *
+
+Base                    : New levels from scratch.
+Editor(s) used          : 
+Utilities used          : 
+Known Bugs              : 
+
+* Copyright / Permissions *
+
+Authors (MAY)(MAY NOT) use this level as a base to build additional
+levels.  
+
+You MAY distribute this WAD, provided you include this file , with no 
+modifications.  You may distribute this file in any electronic format 
+(BBS, Diskette, CD, etc) as long as you include this file intact.
+
+All distribution of The Return resources must follow the specifications
+in RETRES.TXT from TeamTNT.  See http://www.teamtnt.com for details.

@@ -1,0 +1,91 @@
+
+================================================================
+
+ DARK TIDE
+
+================================================================
+
+ Requires the Return Resource Pack:
+ https://www.doomworld.com/idgames/themes/TeamTNT/return/retres
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+ Command line: 
+ zdoom.exe -iwad [doom2.wad] -file retres.wad dt-lutz.wad
+
+================================================================
+
+Title                   : Dark Tide
+Filename                : dt-lutz.wad
+Author                  : Chris Lutz of The Chaos Crew
+Email Address           : [redacted]
+Homepage		: http://www.doomworld.com/chaoscrew
+Other Releases		: Doom II - Hellscape (d2h-lutz.zip)
+                        : Phobos: Anomaly Reborn (par-lutz.zip)
+                        : Caverns of Darkness (cc-cod.zip)
+			: Inferno (inf-lutz.zip)
+                        : Millennium - Map30
+			: Doomworld's 10sectors.wad - Map26
+			: Misc. single levels
+Description             : A sprawling coastal castle swarming
+                        : with Hellspawn
+Additional Credits to   : id Software
+                        : TeamTNT
+                        : dew for incredible testing
+                        : Mechadon for an awesome sky
+			: www.Doomworld.com for forums, hosting,
+			:  and community
+
+================================================================
+
+
+
+* Play Information *		 
+----------------------------------------------------------------
+Game                    : Doom II
+Map Number              : Map01
+Source Port		: ZDoom/GZDoom (See Note Below)
+Single Player           : Yes 
+Cooperative             : No
+Deathmatch              : No 
+Difficulty Settings     : Yes
+New Weapons:		: No
+New Sounds              : Return Resource Pack
+New Graphics            : Return Resource Pack / Sky (Mechadon)
+New Music               : No
+----------------------------------------------------------------
+
+
+* A Note on Source Ports *
+----------------------------------------------------------------
+What you really need to run this level is a BOOM/MBF-compatable,
+limit-removing source port.  I did 98% of my testing with ZDoom,
+so that is what I recommend, but have verified it also runs with
+PrBoom 2.4.8.1.  Also, there are two other things I should 
+mention:
+ - NO JUMPING!  Jumping is for losers.
+ - This level is a LOT easier if you can run under/over 
+     sprites (but not impossible if you can't).
+ - Mouselook is HIGHLY RECOMMENDED (lest you get shredded by
+     hitscanners in high towers).
+
+
+* Construction *
+----------------------------------------------------------------
+Base                    : New level from scratch
+Editors used            : DoomBuilder2, Slade 3
+Known Bugs              : None that I know of
+Build Time              : Six months
+----------------------------------------------------------------
+
+
+* Copyright / Permissions *
+----------------------------------------------------------------
+You may distribute this .WAD freely, provided you include all
+this text file with the .WAD file.  Should you want to edit or 
+include sub-portions of this level in any other project, send me
+an e-mail message and I will ponder your request.
+----------------------------------------------------------------
+
+
+================================================================
+
+Enjoy!
