@@ -1,13 +1,14 @@
 *
 !.gitignore
 
+# DOSmag, our viewer/launcher
+!DOSmag
+
 # 7Zip for producing the final slef-extracting archive
 !7za
-!7za/**
 
 # list files for 7Zip/WinRAR in the build process
 !*.lst
 
 # UPX for compressing executable files
 !upx
-!upx/**

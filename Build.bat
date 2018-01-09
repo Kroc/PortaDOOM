@@ -64,16 +64,16 @@ IF "%$%" == "0" SET CMPLVL=0
 IF "%$%" == "1" SET CMPLVL=1
 
 REM # a         : add to archive
-REM # -bso0	: disable message output
-REM # -bsp1	: display only progress
+REM # -bso0     : disable message output
+REM # -bsp1     : display only progress
 REM # -r        : recurse sub-directories
-REM # -stl	: sets the archive's timestamp to that of the latest file
+REM # -stl      : sets the archive's timestamp to that of the latest file
 REM # -sfx...   : Create self-extracting archive  # -sfx7z.sfx 
-REM # -xr...	: exclude files (recursively)
+REM # -xr...    : exclude files (recursively)
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
-COPY /Y DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
+COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
 ECHO:
 
 IF %CMPLVL% EQU 1 (
@@ -130,11 +130,11 @@ CALL :do_cacowards2017
 CALL :do_psxdoomtc
 CALL :do_launcher
 
-ECHO:
-ECHO Complete.
-ECHO:
-PAUSE
-EXIT /B
+REM ECHO:
+REM ECHO Complete.
+REM ECHO:
+REM PAUSE
+REM EXIT /B
 
 ECHO * Make PortaDOOM ...
 REM --------------------------------------------------------------------------------------------------------------------
@@ -357,7 +357,7 @@ GOTO:EOF
 :do_dosmag_copy
 REM ====================================================================================================================
 CLS
-COPY /Y DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe
+COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe
 
 START "" PortaDOOM\PortaDOOM.exe
 
@@ -375,9 +375,9 @@ ECHO Pulling DOSmag updates from GitHub:
 ECHO (working copy must be clean!)
 ECHO:
 
-git subtree pull --prefix DOSmag --squash dosmag master
+git subtree pull --prefix bin\DOSmag --squash dosmag master
 
-COPY /Y DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe >NUL
+COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe >NUL
 
 ECHO:
 PAUSE
@@ -390,7 +390,7 @@ CLS
 ECHO Pushing DOSmag changes to GitHub:
 ECHO:
 
-git subtree push --prefix DOSmag dosmag master
+git subtree push --prefix bin\DOSmag dosmag master
 
 ECHO:
 PAUSE

@@ -562,7 +562,6 @@ SET WINBIT=32
 IF /I "%PROCESSOR_ARCHITECTURE%" == "EM64T" SET WINBIT=64	& REM # Itanium
 IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET WINBIT=64	& REM # Regular x64
 IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64	& REM # 32-bit CMD on a 64-bit system (WOW64)
-
 IF %WINBIT% EQU 32 SET "ENGINE_BIT=x86"
 IF %WINBIT% EQU 64 SET "ENGINE_BIT=x64"
 
@@ -572,8 +571,8 @@ SET "ENGINE_CFG="
 
 REM # engines are grouped together by common behaviour determined by their heritage,
 REM # we use this to handle differences in command line parameters for engines:
-REM # - V = Vanilla engine; uses DSG save format. chocolate-doom fits this
-REM # - B = Boom engine; compatible with the features added by boom. PrBoom+ (and above). DSG saves
+REM # - V = Vanilla engine; uses DSG save format. Chocolate Doom fits this
+REM # - B = Boom engine; compatible with the features added by Boom. PrBoom+ (and above). DSG saves
 REM # - X = Kex engine -- DOOM 64 EX. Parameters are like Vanilla and Boom. DSG saves
 REM # - Z = ZDoom engine; derived from ZDoom, i.e. GZDoom and Zandronum. ZDS saves
 SET "ENGINE_KIN="
