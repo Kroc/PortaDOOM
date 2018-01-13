@@ -1,0 +1,216 @@
+CHANGELOG FOR 24.12.2002 RELEAS
+*******************************
+
+GENERAL CHANGES:
+----------------
+*Old map25 replaced with new creation by Lee Szymanski and Anthony Soto
+*Former map24 have been moved to map25, new map filling in as 24
+*Graphic change on intermission screen
+*Added a few more custom textures
+*Slight touch up on statusbar
+*Menu now works with ports
+*Automap "0" font fixed
+*Added new startup demos
+*Misc textfile updates
+
+*MAP01:
+-Detail level greatly raised in general, some retexturing
+-Removed one stub in switch garden and rearanged the others to not inflict with running
+-Added monster block line in the imp/chaingunner tower to prevent roaming
+-New midi to better suit the new mood
+-Removed unused sector
+
+*MAP02:
+-Added chainsaw to garden after yellowdoor
+-Devided imp towers with monster impassible lines to prevent roaming
+-Made exit door fast open
+-Support2 metal posts aligned
+-Removed unused sectors
+-Fixed unclosed sector
+
+*MAP03:
+-Added location feel and scenary; yellowkey cave area & bluekey garden reconstructed
+-Detail level greatly raised in general
+-Complete retexturing, refined lightlevels
+-Removed some superfluous medkits
+-Removed three spectres from skill 3 and nine from skill 4
+-Rremoved some hellknights and an arachnotron from multi only settings
+-Removed some superfluous ssg and cg ammo
+
+*MAP04:
+-Replaced megasphere with berserk, blue armor and supercharge
+-Each (otherwise identical) building in dm arena now have different texture theme
+-Changed textures on railroad track to match the new map03 look
+-Removed unused sectors
+
+*MAP05:
+-Fixed wrong sector height on red carpet step in redkey room
+-Fixed alignment problem above lift leading to exit
+-Changed wrong lower texture on torch ledge near plasma
+
+*MAP06:
+-Erroneous textures replaced all over the map 
+-Changed lighting levels in certain areas
+-Misc. texture alignments
+-Slight change to cyberdemon/invuln teleport area to potentially make frag more reproducible
+-Added 1 more rad suit in coop
+-Added coop health in 3 places (bottom of hill, red-key door, upper level near gallows)
+-Relocated a multi-only SSG as well as misc. multi-only ammo
+-Seperated a box of rockets and invisibility that overlapped
+-Removed unused control sectors
+
+*MAP07
+-Replaced plasma with bfg in dm section
+-Aligned mountain texture and upegged lower texture on a building in dm arena
+-Removed unused sectors
+
+*MAP08:
+-Soulsphere secret inconsistency bug fixed
+-Made imp teleport ambush in grey cave area more efficient
+
+*MAP10:
+-Made demon teleporter with plasma more efficient
+-Added exit to dm arena
+-Added one more teleport in lower half of dm arena to prevent camping
+-Swapped around and added some weapons to dm arena
+-Fixed some alignment problem in dm arena
+-Removed two superfluous tags from dm arena
+
+*MAP11:
+-Fixed missing lower texture in cave near bluekey
+-Fixed alignment on stairs in temple garden
+-Changed ceiling texture on doorway in temple garden
+-Added a small tree to block players from getting to unused area near temple garden
+-Added 4 shells to skill 2 and 20 to skill 4 on multi only, late half of map
+
+*MAP12:
+-Removed leftover exit wall trigger after blue door
+-Made lift near start twice as wide and thus more coop friendly
+-Fixed various alignment problems
+-Windows near exit made impassible to avoid possible archevile jump
+-Rebalanced ammo somewhat, less cells and rockets
+-Made monster teleporter in exit section more effective
+-Changed wrong ceiling texture on ambush doors in hallway near end
+-Added one shell box to skill 3 and two to skill 4 in first half of map, multi only
+-Removed unused sectors
+
+*MAP13:
+-Added a bfg to blue door secret area near start on multiplayer
+-Made red door leading to yellowkey section stay open
+-Fixed various missalignments, changed a lower texture
+-Removed unused sectors
+
+*MAP14:
+-Changed supercharge on secret pillar to berserk
+-Added 5 more boxes of ammo to possibly improve tyson play
+-No longer possible to grab bluekey w/o triggering 30 sec door trap
+-30 sec door trap now only activates once
+-Made monster teleporters with bluekey trap more efficient
+-Added two ssg's in centre of dm arena, removed a superfluous plasma
+
+*MAP15:
+-Removed dark maze and crusher room, replaced with new areas
+-Reconstructed cyber-teleport hall
+-No longer possible to get stuck by archie jump in arena
+-Fixed rl lift bug
+-Moved berserk to lava cave, removed some medkits in this area
+-Made one biosuit multi only
+-Retextured parts of arena and exit area
+-Added two pillars in exit area
+-Added two soulspheres in supersecret exit
+-Changed floor texture in start area
+-Adjusted light level under door in startroom
+-Adjusted light level in entry of decending shaft
+-Aligened rock textures in garden
+-Changed from Support3 to Metal texture above lift leading to garden
+-Changed wrongly textured flat after yellowdoor
+-Added some fading light to ceiling decoration in start room
+-Added a sg to start room on multiplayer
+-Removed a multi only rocket launcher from courtyard
+-General gameplay adjustment
+
+*MAP16:
+-Removed unused sectors
+
+*MAP17:
+-Fixed two unclosed sectors
+
+*MAP18:
+-Removed one multi only cyber from start area
+
+*MAP19
+-Added blue armor in late half of map
+-Removed unused sectors
+
+*MAP20:
+-Removed stuck spiderdemon on mountain
+-Moved stuck spiderdemon from corridor after yellowdoor to exit hall
+-Fixed stuck hellknight in redkey cave
+-Added soulsphere on top of mountain
+-Seperated shell packs to avoid picking up more than one at the time
+-Added a missing torch
+
+*MAP22
+-No longer possible to get stuck in bookcase secret
+
+*MAP23:
+-No longer possible to get stuck in bfg room
+-Bfg room is now marked secret
+-Fixed wrong tag on switch triggering bfg secret
+-Yellowkey now have a function
+-Fixed accidently dragged vertex
+-Added missing torch
+-Misc alignment fixes
+-Secret door in castle changed to stay open
+-Somewhat rearanged weapon placement in dm arena
+
+*MAP25 (former map24)
+-Church area now functions for dm play too
+-Removed some tedious monsters
+-Redesigned lava cave end section
+-Removed a few multi only monsters
+-Altered misc details
+
+*MAP27
+-Fixed secret inconsistency bug caused by mistakingly marked and too thin sector
+-Redkey now used on door after green tp
+-Door after green tp changed to stay open
+-Swapped around some secret area values to less risky sectors
+-Rearanged ammo somewhat in late half of map
+-Made window near start impassible to avoid possible archevile jump
+-Changed some door lines to show as normal on automap instead of secret
+-Changed floor texture below switch in redkey garden
+-Added two supercharges on skill 3 & 4 in exit room
+-Fixed some unclosed sectors
+
+*MAP28
+-Removed unused sector
+
+*MAP29
+-Removed unused sectors
+-Removed 0 length lines
+-Removed bogus texture names
+
+*MAP30
+-Removed unused sectors; keen dolls no longer crash Zdoom
+-Changed flat texture in core of dm arena
+
+*MAP32
+-Removed tag that sealed off last half of map in dm
+-Now uses the old av25 midi track
+-Removed unused sectors
+-Removed 0 length line
+
+
+****
+Changes implented by Anders Johnsen, Kim Malde, Anthony Soto, Lee Szymanski
+Miguel Folatelli and Vincent Catalaa
+
+Special thanks to the following people for giving usefull input:
+
+Martin Aalen Hunsaker, Crhis "DevastatioN" Felix,
+Casey "Altima Mantoid" Alvis, Juho "Ocelot" Ruohonen,
+Drew "stx-Vile" DeVore, Amarande, Chris "Ryback" Ratcliff
+
+...and everyone who posted bugs/suggestions on Compet-N & Doomworld forums.
+

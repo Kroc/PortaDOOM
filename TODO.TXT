@@ -23,6 +23,8 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
+[ ] doom.bat : Cannot substitute IWADs when playing demos!
+
 [ ] IWADs: (including Skill Names)
     [ ] Harmony
     [ ] Hacx

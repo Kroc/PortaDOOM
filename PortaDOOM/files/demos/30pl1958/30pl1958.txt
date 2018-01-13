@@ -1,0 +1,327 @@
+Runner: Zero-Master
+Date: 2017-07-09
+IWAD: plutonia.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Crispy Doom v4.0
+Time: 19:58
+	
+Map	Time	      30pl2523        
+01	00:15	:))	-00:08
+02	00:56	:)	-00:05
+03	00:59	:)	-00:10
+04	00:51	:)	-00:22
+05	00:31	:)	-00:12
+06	01:05	:)	-00:19
+07	00:26	:)	-00:01
+08	00:20	:)	-00:06
+09	00:50	:))	-00:18
+10	00:23	:)	-00:07
+11	00:58	:)	-00:08
+12	00:13	:))	-00:21
+13	00:35	:)))	-00:16
+14	00:18	:)	-00:13
+15	00:31	:(	-00:07
+16	00:27	:)	 00:00
+17	00:08	:)	-00:06
+18	00:10	:)))	-00:07
+19	00:28	:|	-00:05
+20	00:50	:)	-00:09
+21	00:08	:)	-00:01
+22	01:00	:))	-00:19
+23	01:35	:(	-00:17
+24	00:44	:)	-00:32
+25	00:18	:)	-00:14
+26	00:48	:)	-00:03
+27	00:55	:)	-00:03
+28	01:34	:(	-00:02
+29	01:13	:(	-00:16
+30	00:29	:)	-00:18
+
+Description:
+Having worked on this for 11 months now and had some of the worst luck I have ever seen, I finally 
+manage to bring plutonia under 20 minutes with a run that has some incredibly lucky moments. Not sure 
+if I'm happy because I finished this, or because the bad luck streak did actually come to an end!
+
+30pl2523 was done in 7 weeks and it was the first demo that I uploaded. It's also my favorite WAD, 
+and considering I've done about 45 exits (UV and NM) for doom 2, it makes sense I would eventually 
+improve this. Hell, I've even had 4 exits for TNT Evilution and only 2 for Plutonia on UV before I 
+started this. 30pl2523 was a very solid run for my skill at the time, my by far 2 biggest timelosses 
+on map 4 and 29 were both due to bad luck which cost me 8 and 10 seconds. After that I did 30uv2303, 
+which was decent for me except for major time losses which were my own fault on map 24 and 30 with 
+about 20 and 15 seconds lost. 
+
+I think overall doom 2 has seen more time saves from tricks since then, there were several smaller 
+things that could be included from the TAS in 30uv while not so much in 30pl. Not only does it seem 
+more likely that a better route would benefit doom 2 more, it's also significantly easier than plutonia 
+to get through, on top of that my plutonia time was then 2 minutes and 22 seconds behind doom 2 already.
+
+So, just how low could plutonia go? Some time after the nightmare run I looked to improve 30pl, I looked 
+at a lot of different improvements and I figured that with better movement I could probably go under 24 minutes. 
+Instead I worked on more doom 2 runs where I got 30uv1959 a couple of months after 30pn. A few months 
+later I started to look at tricks like skipping down to the teleporter on pl12, doing glides on pl13, 
+and doing a RJ on pl24 to the cyberdemon. Some more refinement of the route and I thought under 23 minutes 
+was looking good, perhaps if I got everything really well than maybe a 21:5X, but definitely no more than that. 
+It seemed to make sense that plutonia would be around 2 minutes behind doom 2 like 30uv2303 to 30pl2523.
+
+Then came about the 4th time that I looked at the plutonia UV route (about 11 months ago), and I figured it was time 
+to complete it. Unlike doom 2 which has gone 23:25 -> 23:03 -> 21:55 -> 20:32 -> 19:59 -> 19:51 -> 19:28 I wanted 
+to just do a single leap to the point where it would be very difficult to beat with a route improvement. So I spent 
+an eternity trying to optimize everything, after some time the goal was to get at least under 22 minutes, and an 
+incredible run would be just under 21 minutes. But then I would only need another minute to get 19:5X, so it 
+became more or less an obsession to take my favorite wad under the 20 minute barrier. 
+
+I spent a lot of time looking for other possible skips, because if nobody noticed something like pl14 before 
+now there could always be something else. Nothing useful was found, only a co-op trick for Caged, JCD and Ch0wW then 
+did the map in 16 seconds! Another possibility was to AVJ to either yellow key or red key on map 23, useless non-TAS, 
+and very likely doesn't save any time in a TAS either. Less than a week ago I actually discovered a new trick that is 
+definitely useful for TAS on map 20, but way to precise (even significantly harder than ev26 skip).. you can do a 
+rocket jump from the blue key door into the teleporter and skip half the map!
+
+While there aren't many major differences compared to 30pl2523, there are countless smaller things I do now 
+to both save time and consistently get through maps, much more aggressive play and also better movement is 
+the reason for this 5 minute and 25 second improvement. These (30pl2523, 30pl1958) demos is an excellent 
+way to see how much I have improved over almost exactly 3 years.
+
+While I feel I have still unfinished business with doom 2 on both UV and NM, I am confident that I will
+never touch this category again. Also considering my previous time has stood for almost 3 years, I don't
+expect anyone to improve this anytime soon either :)
+
+Anyways, here's some more wall of text to describe the levels, enjoy!
+
+Map description:
+Map 01: I was planning on grabbing the rocket launcher on this map instead of map 03, as it didn't really 
+cost much time as I could kill the chaingunners with it and skip it on map 03. Then I realized I don't 
+actually need to use it before map 04 where I can pick it up easily without any time loss. The fastest and 
+somewhat reliable way of doing this map is to just rush the 4 chaingunners and hope you can clear them before 
+they kill you, saves several seconds over the old way which is to clear the first 2 chaingunners.
+
+Good movement and activating the elevator as soon as possible will give you 14 seconds here, but 15 seconds 
+is really good and so was the health, I'd reset at 18 seconds.
+
+I did find a consistent way for doing the wallrun to the exit. It worked 5 times in a row, didn't bother to 
+check it any further (might still fail at times). Unfortunately, the setup takes too much time: go in the 
+corner and face the corner (closest to a 45 degree angle), do a SL2 input (smallest possible amount with mouse sideways), 
+TL10 followed by a SR2 input, TR10 and then finally SR50 backwards. This skip is just impossible to do in a d2all, 
+4 chaingunners and 3 mancs mean you have to do it immediately, and that's not going to work.
+
+
+Map 02: Not much different on this map, I avoid firing at certain points to allow me to get through smoothly. 
+I got a bit unlucky here having the hallway completely blocked like that... I think this is the only attempt 
+where I actually went down to the teleporter, usually I get 55 seconds here, so overall it was acceptable.
+
+
+Map 03: I can ignore the RL and mega armor, also I don't want to kill the arch-vile and instead hope to run 
+around him on the way back. I couldn't see anything and I am surprised I made it across considering his 
+position this time. The mancubus trap elevator(s) are a bit annoying, there's no easy and fast way to 
+skip them quickly, so I activate them and do a quick setup as it is saves time on average. Unfortunately you 
+also bounce around a lot in those hallways which means you might miss the jump, here I just screwed up the angle 
+or something. The glide at the end is also a bit annoying, it's not difficult, but there's no reliable way to 
+do it quickly because you can bounce off the wall sometimes because the wall is at an angle.
+
+
+Map 04: I just rush through until I get the rocket launcher, I'll use it to clear cacodemons in the hallway if 
+they are not by the fence (as I can't run past in that case). I'll also use it to clear the chaingunners by the 
+exit most of the time, since there is a very good chance they deal a lot of damage or block me. I used to only 
+kill 1 of the mancubus by the blue key, as I hoped going faster would give me a better chance at avoiding the 
+barons blocking the way to the blue key door. However the barons are either blocking the way or not even close by, 
+and the mancubus would end too many of my attempts so I kill all 3 of them. One of the hardest maps to get a good 
+time on, and if I don't get past the map after a while it might reduce my motivation to keep trying.
+
+
+Map 05: Grabbing the megasphere first at the start is probably best since it will guarantee to survive the mastermind, 
+and it's not too important for map 06. I also rush the arch-vile now with the SSG which can be dangerous sometimes if 
+he doesn't let you hit the switch, as the barons will block your escape eventually. One of the more bizarre ways to 
+lose a run is to actually go past him (since it's south-west and you get damage boosted from the barons), this happened twice.
+
+
+Map 06: Not too big of a difference, just some small improvements all over the place. Used to kill everything except 
+the cyber in the last room before, now I leave some of the revenants alive. The spectres still have to die though, 
+according to my attempts there's a 100% chance a single surviving spectre will screw me over and block me.
+
+
+Map 07: Nothing different here, the fence clip is too difficult to be done in a d2all and doesn't save much time anyways. 
+I played horrible here and got away with it because of lucky damage rolls, I really should not have survived.
+
+
+Map 08: Nothing different, except using the SSG to hit the vile to push him back and hopefully block revenants from 
+teleporting in and blocking the path. Some bad luck with the barons not moving out of the way, but then I got lucky 
+getting through on the left side in time.
+
+
+Map 09: A difficult glide which makes it hard to get a good time, quite a few small changes to the route. I fire 3 rockets 
+at the start while I run forward, since the cacodemon is lined up with me he will not move left or right, so as long as 
+I keep going towards him he will get hit by all 3 rockets. I ignore the spectres since it's hard to kill any of them 
+without losing time. There is an invulnerability that only takes a second or so to grab, I didn't grab it before, but 
+I use it for clearing out the spectres now because I can just run up to them and use rockets, and they aren't hard to see. 
+I have no idea why, but the glide is slightly different from other south directed guideless glides (lv19, pl13). The glide 
+on map 13 for example is much easier as I never go past it when I apply vertical mouse movement, why there is a difference 
+makes no sense to me. 
+
+
+Map 10: I discovered you can easily skip the linedef to the revenant closet here with a quick setup on the wall. It requires 
+some luck, if you get hit in the back for the 1 or so second you move towards the linedef then you'll probably fail it. With 
+the revenants gone there's very little chance of actually dying (failing the yellow door skip can end the run as the revenants 
+can block you). Also greatly increases your chances of getting through the door before it closes, so while the setup costs about 
+a second, it should on average save more. 
+
+
+6:36 is a really good episode 1 time. The next 7-8 maps can easily end the run.
+
+
+Map 11: The safest way of doing this map is to do a setup so that you manage to run out of the room on the left side of 
+the switch as quickly as possible, and then taking the longer way around to avoid waking up additional arch-viles. There's 
+no linedef skip or anything and monsters wake up based on the RNG index or current tic (I don't know how it actually works), 
+either way, how many viles wake up is luck based. It was very difficult to decide how to do this map, do 1 or 2 of the 
+safer ways (1.5 + 3-4 seconds wasted) for a better chance of having less viles, or use neither and hope you don't get blocked 
+badly by the viles. A few attempts before this I died on this map, I could not believe how unlucky I got.. I got blocked by 
+an arch-vile by 0.006 units, or close to 1/200th of a unit, then again nothing really surprises me anymore as I've seen too 
+much shit during these attempts. So combined with an amazing ep1 time I decided to take the long way around. 58 seconds is 
+quite ok for the slower route.
+
+After map 11 I should be at 600 cells, they are to be used on map 12-15.
+
+Map 12: A very difficult map now, I spend a lot less cells here. Jumping straight down into the teleporter saves a good deal of 
+time (5 seconds), but the demon and spectre can block you going to the imp cage or the RJ this way. If I should miss the teleporter 
+I go the normal way, but I don't BFG everything like I used to. This map has given me nothing besides pain, I could write a wall of 
+text of the things that can go wrong, but I better not.
+
+Everything went perfect this time, best time I can get here is 12 seconds.
+
+
+Map 13: I need to save time and cells, and the best way to do so would be to skip blue key, unfortunately that means doing a 
+north directed guideless glide. This is a very easy way to piss away a good run because you can easily waste lots of time trying 
+to get through. It requires very careful movement and a really steady hand, but if I can do it during nightmare I should be able 
+to do it during UV :) Unfortunately I have wasted several attempts here. This time I got an amazing time, really lucky 
+glide in the south direction, I actually think that was the only time I got it without vertical mouse movement. 
+
+
+Map 14: The route for this map is completely different, a new trick was discovered by fredrik on doomworld forums who suggested 
+jumping from the secret area to the exit was possible. This new trick could save several seconds over the old route which was to 
+do a keybump on the yellow key and then go through a secret area and grab additional cells. Unfortunately, this trick is very 
+precise, in fact after trying many different angles and positions I could never find anything that would allow me to fire the 
+rocket on more than 1 specific tic. There might still be some angle\position where you have 2 tics to fire the rocket, but I 
+assume the position would be too precise to find quickly. So for a d2all attempt it would be too much to take such a major risk 
+as I would die very frequently on this map. But this was not a trick I could ignore if I wanted to go under 20 minutes and so 
+I eventually discovered that this trick can be done without a rocket jump, but instead by doing it like lv14! Unfortunately again, 
+this was even more difficult, however, if I combine these 2 methods then the trick is much easier to do!
+
+Figuring out how to do the trick was only half the problem for this map, getting past the monsters and not getting interrupted 
+for the RJ while still getting a decent time took a lot of time since there where so many options that always seemed to have 
+some big flaw. I've spent many hours here trying to find a quick and safe method, I feel like I've tried everything and so 
+I eventually just went with the fastest method. This was after I've wasted several attempts on trying to do it a safer way 
+(using rockets to clear the revenants) and having it fail anyways. So here I use a BFG to clear the 2 chaingunners to the 
+left of the starting area, and then a BFG to get past the revenants. There is a decent chance I either get blocked by the 
+revenants from making that short jump, or getting hit by high damage projectiles which forces me to go back for health 
+(I can never afford that time loss). Here I took 2 projectiles and got lucky damage rolls for once! 
+
+
+Map 15: On this map I used to grab an invulnerability and so it would be quite easy, unfortunately I don't have time for 
+that. Hellknights, revenants, viles and cacodemons fill up the hallways and so there is potential to take a lot of damage. 
+I just try to BFG my way through and grab the health until the yellow key, then I drop down and take the teleporter and 
+avoid shooting in hopes of the vile infighting something else. Should I get blocked I have the BFG ready, but sometimes 
+it might be too late. 
+
+Got blocked going for the yellow key, unfortunate, and I was quite certain I was going to die on an otherwise really 
+good attempt. I got lucky and survived, and overall the attempt at sub 20 is very much alive too.
+
+
+Map 16: Nothing new, the elevator at the start of the map can cost you 3 seconds, which it did this time, if you are 
+at the wrong RNG index or tic since it starts going up (again I don't know how it works, but it's luck based). The arch-vile 
+is as unpredictable as always, I just hope he doesn't get attacked by anything. It's possible to get blocked when 
+going for the arch-vile jump, as I use plasma to clear the way instead of BFG. A BFG would usually guarantee you don't 
+get blocked, but it's difficult to time it and run in the correct direction.
+
+
+Map 17: A lot faster than before because I just run past everything without trying to clear the way first.
+
+
+Map 18: Nothing new, slightly different position for the AVJ to the exit. Perfect time really, though having that 
+chaingunner alive by the exit could have been a disaster.
+
+
+Map 19: First of 3 easy maps, I shoot the imp at the start because he will sometimes block me. Firing here will cause 
+monsters to teleport into the next room once I hit the switch, not really a big deal. I ignore the RL and grab it on the next map instead.
+
+
+Map 20: Nothing new, I couldn't figure out a way to hit the last switch by the barons any quicker without taking major risks, 
+but I need to grab the RL there now anyways.
+
+
+Map 21: I shoot at the start of the map to wake up a spectre to remove any chance of getting blocked, I also try not to miss 
+the plasma rifle this time as I need the cells for map 23. Slow glide cost me a second.
+
+
+After a break of easier maps we then have 4 really hard maps.
+
+Map 22: Back when I did 30pl2523 this was the only map where I had a lot of trouble trying to match Dime's time (1:18), 
+my best time is now 0:58. A few changes, I ignore everything by the teleporter to red key and instead BFG the chaingunners 
+in the yellow key area. Everything else is almost the same. I've lost way too many attempts here, stupid shit like 
+linedef skip on the elevator to yellow key area threw me off once, really unlucky monster positions\movement (things I 
+never saw when I practiced) also messed me up several times. As an example, the revenants by the switch in the last area, 
+I could run past them 10 of 10 times in practice, and then on one attempt one of them managed to get by the wall and the 
+other by my side, blocking me in and then just beating me up with high damage melee rolls. 
+
+
+Map 23: A small change to the route, I go through the yellow key door after grabbing YK instead of going to blue key switch 
+and getting the mega armor. I've also included the guided glide so I can skip the arch-viles. Neither make a huge difference 
+in time saved, but better movement and use of plasma helps a lot. This map was actually the biggest time loss, the switch 
+in YK area really screwed me over, so many monsters in that room compared to practice\other attempts.
+
+
+Map 24: Another big change, I discovered you can jump down to the cyberdemon without having to use a rocket. This also removes 
+the completely random part where you can get hit by a rocket when going through the teleporter. Using the vile to skip to 
+the exit is the biggest timesave possible in this run, but it is extremely difficult and too late to ever be worth it. This 
+map has been an absolute nightmare, when I did 30pl2523 the backup was to just wait for the bridge to raise should I fail 
+the AVJ. Fail the AVJ here and the run is over, and it turns out there are a lot of things that can hit the vile when he is 
+targeting you. At first I looked at doing this map as aggressively as possible, but because I failed so often I had to keep 
+clearing more and more monsters. At some point I was back to clearing everything except the initial revenant and the AV in 
+the right cage. It looked stupid, it was slow, and I just simply could not have that in this run, so if I have to die on this 
+map a lot then so be it. Luckily I did find a really good strategy in the end, which is to wait for about 2 seconds to get 
+all the cacodemons and pain elementals to hopefully move out of the way. 
+
+I also clear out the chaingunners by the elevator in the last room, this is because the cacodemon will infight and have a 
+high chance of blocking you. Took a really bad melee hit from the baron, if I have enough health I could get 2 chances at 
+the RJ on the next map, but this gives me just 1.
+
+And how god damn lucky was I to avoid that rocket by the cyber? him targeting the mancubus could have easily hit me instead.
+
+
+Map 25: Even more luck here, turns out I really needed that minimum damage roll from the hell knight. No need to kill the 
+baron after the teleporter, just do the glide immediately. Also a quicker rocket jump, though there's a risk of getting 
+shot which might push you to fail the RJ. 
+
+
+Map 26: Nothing new here, just really nervous and should have died, "haha".. If I died after red key it would have been my 
+fault, as I could have done something to prevent taking damage there, but I couldn't afford to grab the 2x25% medikits behind 
+the chaingunners.
+
+
+Map 27: It's possible to skip the yellow key here, but it's too difficult without a setup. With a setup you save no time, 
+no need to take such risks this late. Kinda screwed up by the revenant, but it's possible to do a linedef skip here so I 
+don't want to rush it. Fall down anywhere and it's over.
+
+
+Map 28: I found a setup for the linedef skip on the elevator at the blue key. Previously I would activate the elevator and 
+go behind it to activate it again instead of doing it the normal way. Turns out those are almost equally slow and the best 
+option would be to go for the linedef skip no matter what. I think there's about a 25% chance you get the skip without a 
+setup with enough speed, and I was relying on that because I completely forgot to get the right position here and screwed up. 
+This small mistake caused this map to have the 3rd biggest timeloss with 4 seconds.
+
+
+Map 29: Luuuuuuuuuucky, I can't believe this, when I did 30pl2523 I got screwed over by having something block me even with 
+an 8 unit wide edge, this time I somehow made a jump I shouldn't have as I run straight into a chaingunner standing very close 
+to the edge. Nothing new for the route, spent a few hours looking for the possibility of grabbing the blue key without the 
+other keys. You can easily get out of the blue key room, but that's in the south-west direction, so obviously you need to go 
+either north-east or south-east to get in which is probably impossible. Also terrible time, throwing away several seconds on 
+these last 2-3 maps, but I knew my time was on pace for under 20 minutes.
+
+
+Map 30: In 30pl2535 I had a time of 47 seconds, I managed to bring it down quite a bit. I try to activate the wall as quickly 
+as possible, then kill the viles. Need to make sure I have the cells to kill the cyberdemon, depending on the time of the run 
+I can take a massive risk and gain 3-4 seconds here by rushing the cyber. Usually I'll get 28 seconds here, but because 
+I actually lost a run due to the cyberdemon surviving 8 BFG's I was a bit cautious. This time he actually died in 6 BFG's
+from the 6th. At the bottom of the elevator you can actually see my hands shaking as I am moving around slightly by moving the 
+mouse when I'm not supposed to. My best time here is 24 seconds with just rushing the cyberdemon, but with a high chance of death.
+
+

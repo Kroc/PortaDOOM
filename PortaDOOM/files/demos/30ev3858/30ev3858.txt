@@ -1,0 +1,123 @@
+Runner: Zero-Master
+Date: 2017-11-20
+IWAD: TNT.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Crispy Doom v4.3
+Time: 38:58
+	
+Map     Time    30ev3957
+01	00:40	-00:03
+02	01:02 	 00:03
+03	01:23	-00:04
+04	00:18	 00:04
+05	00:37	 00:00
+06	02:23	-00:23
+07	00:59	 00:01
+08	02:04	 00:03
+09	02:32	-00:10
+10	00:34	-00:51
+11	00:25	 00:01
+12	00:45	 00:02
+13	01:17	 00:03
+14	01:46	-00:01
+15	00:19	 00:00
+16	01:33	 00:02
+17	00:58	 00:32
+18	01:40	 00:11
+19	01:00	-00:05
+20	03:13	 00:02
+21	02:47	 00:12
+22	00:27	-00:01
+23	00:36	 00:00
+24	00:19	-00:05
+25	00:21	-00:04
+26	02:00	-00:19
+27	02:10	 00:00
+28	01:26	-00:10
+29	01:46	 00:06
+30	01:38	-00:05
+
+
+Description:
+This took about 15 attempts, 10 of which were maps 01-02. I said 
+I would never do this again, but I wanted to do a quick improvement 
+without putting any effort into it with the new trick. I still wish 
+it would have been below 38 minutes though. I got bullied around 
+a lot on map 17, and then I failed the RJ on map 18 combined with me 
+messing up map 21 cost me over a minute.
+
+Map 01: I don't like tyson.
+
+Map 02: Missed the red key, happens sometimes when I'm not paying attention.
+Also grabbed the mega armor because I don't feel like doing the inital maps
+more than I have to.
+
+Map 03: Quite easy with mega armor, so should be easy to save time.
+
+Map 04: Unlucky revenant, sometimes he goes down the elevator.
+
+Map 05: Went ok.
+
+Map 06: Nice not to screw it up this time, still lot of time to save here.
+
+Map 07: The usual.
+
+Map 08: Went ok.
+
+Map 09: Surprised I saved 10 seconds here, felt really slow and I think
+I could have used my cells better.
+
+Map 10: New switch trick here, quite easy to do, setup was too slow.
+
+Map 11: Sometimes you can get the imp to open the first door.
+
+Map 12: Straightforward map.
+
+Map 13: Screwed up the jump to red key.
+
+Map 14: Died here on my attempt before this one, almost died again...
+
+Map 15: Easiest level.
+
+Map 16: Probably slow.
+
+Map 17: I don't think this could have been any worse, every monster on the map
+decided to come and visit me as I tried to get through the bars.
+
+Map 18: Messed up the rocket jump, would have been decent otherwise. 
+Kind of a close call during the end.
+
+Map 19: Was a bit afraid with my health, but the chaingunner had me covered.
+
+Map 20: The second worst level in the iwads.
+
+Map 21: Worst level in the iwads. Completely missed that first key, just awful.
+
+Map 22: Maybe this map is even worse, I don't know, haven't played it.
+
+Map 23: Try not to lose too much health during the end of the level.
+
+Map 24: Hope not to get unlucky and take damage by the hell knight or revenants.
+
+Map 25: Fun trick to skip the map.
+
+Map 26: It's possible to skip this map as well, it's the hardest non-tas trick 
+that I know of. You would need enough health to survive a rocket jump to the window,
+then you need to do the same trick as on map 05, get a certain angle and position
+and then finally hold move forward for 7 tics before you fire and SL50 on the 8th tic.
+
+I did about 30 IL attempts and didn't manage to do it, it's annoying because
+it takes almost 2 minutes and so you'll only save a few second over the current
+record.
+
+Map 27: Didn't lose or gain time...
+
+Map 28: I don't know how this was 10 seconds faster.
+
+Map 29: I know exactly why this was 6 seconds slower, there were just too many
+monsters after the mastermind.
+
+Map 30: Hitting the IoS with the BFG is quite difficult.
+
+I will never improve this.. at least I think so :)

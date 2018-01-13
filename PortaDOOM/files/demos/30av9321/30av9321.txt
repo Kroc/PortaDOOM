@@ -1,0 +1,222 @@
+Runner: Zero-Master
+Date: 2017-11-07
+PWAD: AV.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Crispy Doom v4.3
+Time: 1:33:21
+	
+Map 	Time
+01	00:49
+02	00:54
+03	00:49
+04	02:06
+05	01:38
+06	02:09
+07	01:26
+08	03:00
+09	01:19
+10	03:26
+11	01:19
+12	01:46
+13	04:12
+14	07:10
+15	04:06
+16	03:53
+17	02:14
+18	03:48
+19	04:54
+20	02:48
+21	02:34
+22	02:11
+23	01:13
+24	01:47
+25	01:40
+26	06:14
+27	06:45
+28	11:01
+29	04:26
+30	01:44
+
+Description:
+This was my first attempt at this category, not sure if practice paid off
+or if I practiced too much :) A few close calls, some lucky moments which
+made certain areas seem easy, some terrible mistakes and alot of careful 
+(slow) play during the end. 
+
+I was hoping it would be under 90 minutes after my last practice run was 
+just above it, maybe I could revisit this category in the future and play a bit
+more aggressive towards the end. The first levels were not too bad, but definitely
+a lot of time wasted on the later levels.
+
+Map 01: I grab some of the secrets here to make the start a bit easier.
+
+Map 02: Just SSG down everything and do a yellow key grab, which is easier
+with SR40.
+
+Map 03: It's probably possible to do this map much faster by trying to get
+the glide before getting killed.
+
+Map 04: I very much expect to die at the end of this map, so I wanted to take
+it slower as well so that I have enough armor for the last section. Of course
+I end up with no armor and instead just get really lucky by taking almost no damage.
+
+Map 05: Again I clear a lot of monsters, if I try to rush this I'm probably dead,
+and I did drop to 20 health after a max damage revenant rocket.
+
+Map 06: I'd say this is the map I'm most likely do die on. The start went pretty
+well, but then I got to the part where I wanted to grab the invulnerability and 
+I dropped to 4 health. Then I got blasted off by the cyberdemon before I could pick
+up the berserk and the cells.
+
+Map 07: Good start, didn't waste too many rockets. The plan was to BFG the revenants,
+but I was low on cells so I didn't want to waste any, almost got me killed.
+The jump at the end isn't too difficult, but if I don't hit SR50 then I die.
+
+Map 08: Dropped down to 10 health after hitting the wall with a rocket. I pressed
+fire and saw the demon getting really close, so I knew I was going to take damage 
+if I hit him and my instinct is to turn away in those situations. Obviously I had 
+nowhere to turn to so I probably took more damage than if I just hit the demon.
+
+Could have easily died trying to get to the other area from there. 
+
+Map 09: Could have skipped the soulsphere here, or maybe grabbed the mega armor on 
+this map instead of the other one.
+
+Map 10: Took some time to get the right setup for the RJ, because you bounce around
+so much and there aren't any other corners that work well nearby. It's also possible
+to get the jump by going along the edges, but it's 20% damage floor.
+
+Quite a long map, but mostly straightforward, 2 BFG's on the mastermind always to 
+make sure I don't lose too much health for the RJ on the next level.
+
+Map 11: I would have no idea what to do on this map if I don't get the rocket jump. 
+
+Map 12: During practice I once managed to run past the 2 barons in the hallway
+on this level and have 1 of them remain idle. I had no idea you could run past
+such a large gap (160 units?) and not wake up a monster, this is what got me
+to a pa02 discussion thread on doomworld and got me to look into and eventually
+finish pa02.
+
+This middle part of the level is very dangerous, but good use of plasma should
+make it easy.
+
+Map 13: I have to admit I'm a bit afraid of cyberdemons, they will end your run
+instantly if they hit you and you never know when you can get blocked by some random 
+demon. The further I am into a run the more I fear them, as map 28 will show.
+
+I manage to grab the megasphere with a wallrun. The arch-vile that spawn after the
+yellow key can throw you off which would be very unfortunate.
+
+Map 14: I grab yellow key first so that I can grab the megasphere before going 
+for the other keys, I don't need to save it for the next map.
+
+Not sure how many of the demons I actually need to kill in the acid pit, but I 
+leave some alive so that I can both get through and have them take a few cyberdemon 
+rockets. After that I go and grab the blue key where I activate the door first 
+and just wait for it to open. It's possible to grab the blue key without activating 
+the door by doing 2 linedef skips, but this requires a quick setup for the first one 
+and the somewhat precise rocket boost for the second one.
+
+Red key cyberdemon was not too bad, the arch-viles however were just stupid, 
+terrible BFG's and just a bad weapon choice, pointless waste of time and I still got hit.
+
+Map 15: Messed up some simple skip here with the wall, must have gone too far 
+forward and triggered it. Everything here is straightforward until the last area 
+where I just activate the linedef for the wall first and just wait for it to go down.
+I wake up the cyberdemon and wait for him to move to a part of the map where he is
+hopefully blocked by demons.
+
+Map 16: The start was not the best, but I cleared the revenants without taking too much
+damage and I got past the cyberdemons without getting blocked too much.
+
+Map 17: There's just so little room to deal with this cyberdemon, I prefer to just try 
+and keep him locked in. I felt confident he wouldn't be able to hit me even though
+it looked kind of close at the end.
+
+Map 18: I have lots of health and ammo for this map, so everything went well until
+the end where I wasn't concentrating and nearly died. Overall very lucky as I didn't 
+take much if any damage from the mastermind, then at 67 health I took 56 damage which 
+would have to have been a fireball, if I was a bit closer it would be melee and I could
+take 70 or 80 damage. Then I nearly died before the megasphere, overall just really lucky.
+
+After the megasphere I usually have 200\200 with 100 rocket and 600 cells.
+
+Map 19: At this point I have to manage my rockets and cells a bit. Not much to say about 
+this map, it's possible to get the red key with a rocket jump. I was hoping to include most 
+tricks in this run even if it is more dangerous, but this was just too precise. I couldn't
+manage to find a setup which gave me 2 tics to time the rocket.
+
+Not sure how close I was from taking a cyberdemon rocket at the end.
+
+Map 20: Save some ammo at the start by just using SSG and I grab some rockets by
+the hellknights near the "end" of the map. I feel a bit bad by skipping such a large 
+part of this map, but at least I don't have to deal with any cyberdemon or do any rocket
+jumps. 
+
+This uses the recently discovered trick which is to activate switches through walls. 
+The gap is 40 units from the switch to the wall that I am facing, which is the largest 
+gap that I am aware of that is actually possible. In order to do this I have to get 
+perfectly close to the wall so that I am at the .000000 coordinate, then I turn to a 
+certain angle where I push my mouse the smallest amount possible to do a MF1 command.
+
+I failed this first and so I had to do it again, I pushed just a bit too much.
+
+Map 21: Not a big fan of this map, long corridors packed with mid-tier monsters. 
+Mostly afraid I'll rocket myself at some point.
+
+Map 22: I never press the right switch first, hell I could have pressed both since 
+nothing will teleport into the room as I don't wake up the monsters.
+
+Map 23: A bit slow start, but I want to make sure I get the arch-vile jump without
+getting blocked.
+
+Map 24: Also a slow start, I want to make sure everything is dead so they don't hit me
+while I setup for the rocket jump, or especially in the middle of the rocket jump.
+
+Map 25: 1300+ monsters and I just skip everything. Probably didn't need to waste so
+much time with the first cyberdemon.
+
+Map 26: I cannot believe how amazing the glide on the way out of the blue room was,
+I was expecting to easily waste minutes here trying to get through. 
+
+Very dangerous map, I start by getting the blue key by doing gliding through. 
+I took more damage than what I would have liked, but nothing too bad. The problem 
+with the glide getting out is that it is in the east direction, and not only that, it 
+also has some dark moving water textures which makes finding the correction position
+a really annoying task, truly the ultimate glide test.
+
+I then grab an invulnerability to clear some shit out and kill the cyberdemon that 
+is on the last invulnerability that I will be taking. Then I get the second one and go 
+for the yellow key, grab the last one and the last key and exit. Hopefully I don't
+get delayed anywhere or I might be dead.
+
+Map 27: Enormous map, fortunately I can skip most of the ending. Most of it is quite easy, 
+Try not to get hit by the cyberdemon or take too make projectiles from the mancs\HKs.
+
+Map 28: I get the imp to infight the cyberdemon, of course I completely screwed up the BFG's 
+and then I decided to waste 50 rockets trying to kill him. Mostly just taking things slow from 
+here and try to save rockets\cells. I was thinking of skipping the second cyberdemon by just 
+activating the switch from below, but 1 time during practice I bounced off the entrance to
+the room above and straight into his rockets, so he had to die.
+
+Not much to say about everything up to the next cyberdemon, which I tried to kill, but
+he moved too far away after the first BFG. I wanted to kill him, but I had the opportunity
+to get around safely in the end. So at this point I'm low on health and ammo, then I manage
+to take get surprised by one of the revenants. 
+
+The last cyberdemon was very lucky, I killed the demons outside of the room so I could
+sneak up on the switch. I then screwed up my movement and I am quite sure he could have easily 
+killed me there.
+
+Map 29: Very confused on this map, after the ledge at the start of the map I skipped a linedef
+which opens up a wall. Connected to that room is the arch-viles and chaingunners and since it was
+closed they never woke up. I had no idea and I really didn't want to get surprised so I spent too
+much time making sure they wouldn't spawn. Had I known I would have used it intentionally like 
+the one at the green armor room.
+
+Map 30: I wasn't sure if I wanted to go for the 2 or 3 cycle here. I figured maybe I'd screw up
+the 2 cycle more often then if I just do it in 3 cycles. Just avoid the telefrag and don't waste 
+cells too often (and don't run off the edge!), shouldn't be that difficult.
+
+

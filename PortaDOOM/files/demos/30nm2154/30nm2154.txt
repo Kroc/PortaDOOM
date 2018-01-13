@@ -1,0 +1,102 @@
+Runner: Zero-Master
+Date: 2017-10-28
+IWAD: DOOM2.wad
+Category: NM-Speed
+Map: Movie 1-30
+Source Port: Crispy Doom v4.3
+Time: 21:54
+	
+Map	Time	
+01	00:06	:)
+02	00:47	:)
+03	00:31	:)))
+04	00:37	:)
+05	00:36	:)
+06	01:02	:)
+07	00:18	:))
+08	00:25	:))
+09	01:00	:)
+10	00:36	:))
+11	00:36	:)
+12	00:56	:|
+13	01:16	:(
+14	00:24	:|
+15	00:36	:))
+31	00:34	:)
+16	00:16	:))
+17	01:18	:|
+18	00:29	:|
+19	00:49	:))
+20	00:38	:)
+21	00:20	:))
+22	00:35	:)
+23	00:52	:|
+24	00:41	:)
+25	00:59	:((
+26	00:40	:)
+27	00:41	:((
+28	00:49	:))
+29	01:42	:(
+30	00:45	:(((
+
+Description:
+I cannot believe how unlucky I am, for the second time the arch-vile 
+collides with the door twice without opening it. He collided with 
+the door at 24 and 28 seconds, and then finally at 35 seconds to 
+open it, I only lost 11 seconds this time instead of 35 because he 
+bounced off a lost soul 3 times. Then getting a pain elemental at the 
+Icon of Sin didn't help either.
+
+Unlucky elevators on map 12 and 13 with a couple of times where I got blocked
+cost a lot of time, dumb mistake on map 25 by missing the cells and hell knight 
+survived BFG+SSG on map 29 cost about 3 seconds as well.
+
+Map 01-09: Pretty good.
+
+Map 10: New route here, I go directly for the soulsphere and skip invulnerability.
+The cyberdemon is no problem since he will fire immidiately and he doesn't teleport
+if I give him line of sight when he has fired his first set of rockets. This saves 
+about 4 seconds, it's a bit more dangerous to do, but it's safe enough to be worth doing.
+
+Map 12: Not the best elevator patern, and I went a bit too early on the last elevator and 
+so I got blocked by the caco corpse.
+
+Map 13: Got blocked by a demon and unlucky elevator again.
+
+Map 14: In rare cases I will bounce off the wall when I am about to lower the
+platform, 2-3 seconds lost here to that.
+
+Map 15-22: Mostly good.
+
+Map 23: Took too much damage on map 22 so I had to take the start slow. If I try
+to run past the barrels with 70 health then I might end up with no health after
+the chaingunners and there is no way I make it to the megasphere. This is about 
+4-5 seconds lost
+
+Map 24: The usual time, got kind of lucky with the demons at red key, thought
+I was going to get trapped there for a moment. I need to switch weapon here next
+time in case that happens.
+
+Map 25: Missed the damn cells, can't remember the last time I've made that mistake.
+To be fair this was done perfectly, but because of a very unfortunate position and 
+with my momentum it was just enough to prevent me from getting close to the fence. 
+
+Map 26: Just happy to survive this map, 40 seconds is as expected.
+
+Map 27: Looks like I made a big mistake by firing right after activating the switch.
+However, that didn't really make any difference as a lost soul was perfectly placed.
+Unfortunately, for the second time in a row he collided with the door and doesn't
+open it. 11 seconds lost and I knew it was too slow to get under 21:30.
+
+Map 28: Went well.
+
+Map 29: I've already thrown away 2 bad attempts at this map, so I made sure the first
+hell knight was dead before jumping across. Messed up the first setup for the RJ, 
+so overall a bad time.
+
+Map 30: My strategy for this map worked perfectly, arch-vile on first spawn does nothing.
+Nothing I can do about a pain elemental on the second spawn except spam BFG, none of which
+hit because a lost soul will block the plasma ball. They pushed me around too much so I wasn't
+sure of my position on the platform, difficult to time the last rocket since it needs to be fired
+quite early and I wasn't prepared for how quickly I fell down and thus missed it.
+

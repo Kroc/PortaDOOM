@@ -1,0 +1,230 @@
+Doom II (DOOM2.WAD)
+D2ALL (30uv / Full run)
+------------------------------------
+Author: eLim [twitch.tv/elimzke]
+Date: 07/11/2017
+UV-Speed in 18:45
+Recorded with: PrBoom-plus 2.5.1.5r4526
+-complevel 2
+
+[ Don't forget to hang out at our Discord server! Message me on DoomWorld or tweet to @elim2g for a link! ]
+
+ _______________________________________________________________________________
+|           MAP NAME          |  My Time  | ZM's Time | Difference | Satisfaction |
+| --------------------------- | --------- | --------- | ---------- | ------------ |
+|Map 01 - Entryway 	      |	   0:06   |    0:06   |     0      |     :)       |
+|Map 02 - Underhalls	      |	   0:38   |    0:37   |    +0:01   |     :D       |
+|Map 03 - The Gantlet	      |	   0:31   |    0:30   |    +0:01   |     :|	  |
+|Map 04 - The Focus    	      |    0:27   |    0:31   |    -0:04   |     :))	  |
+|Map 05 - The Waste Tunnels   |	   0:28   |    0:27   |    +0:01   |     :)	  |
+|Map 06 - The Crusher	      |    0:54   |    0:58   |    -0:04   |     :)))	  |
+|Map 07 - DeAd SiMpLe	      |    0:12   |    0:11   |    +0:01   |     :))	  |
+|Map 08 - Tricks and Traps    |	   0:27   |    0:28   |    -0:01   |     :))))	  |
+|Map 09 - The Pit 	      |	   0:55   |    0:55   |     0      |     :))      |
+|Map 10 - Refueling Base      |	   0:35   |    0:41   |    -0:06   |     PogChamp |
+|Map 11 - Circle of Death     |	   0:35   |    0:35   |     0      |     :)	  |
+|Map 12 - The Factory	      |    0:45   |    0:45   |     0      |     :))!!	  |
+|Map 13 - Downtown	      |	   1:04   |    1:04   |     0      |     :))!!)!)!|
+|Map 14 - The Inmost Dens     |	   0:20   |    0:18   |    +0:02   |     :|	  |
+|Map 15 - Industrial Zone     |	   0:58   |    0:54   |    +0:04   |     :|	  |
+|Map 16 - Suburbs	      |	   0:13   |    0:13   |     0      |     :)))))))))))))|
+|Map 17 - Tenements	      |	   1:15   |    1:14   |    +0:01   |     :)))	  |
+|Map 18 - The Courtyard	      |    0:24   |    0:24   |     0      |     :)))	  |
+|Map 19 - The Citadel	      |    0:42   |    0:41   |    +0:01   |     :|	  |
+|Map 20 - Gotcha!   	      |	   0:37   |    0:36   |    +0:01   |     :|	  |
+|Map 21 - Nirvana	      |	   0:11   |    0:10   |    +0:01   |     POGCHAMP |
+|Map 22 - The Catacombs	      |	   0:27   |    0:28   |    -0:01   |     PogChamp |
+|Map 23 - Barrels o' Fun      |	   0:43   |    0:40   |    +0:03   |     :(	  |
+|Map 24 - The EBOLAAA (Chasm) |	   0:40   |    0:39   |    +0:01   |     :(	  |
+|Map 25 - Bloodfalls	      |	   0:44   |    0:44   |     0	   |     :|	  |
+|Map 26 - The Abandoned Mines |	   0:38   |    0:40   |    -0:02   |     :))      |
+|Map 27 - Monster Condo       |	   0:17   |    0:19   |    -0:02   |     :)))??	  |
+|Map 28 - The Spirit World    |	   0:47   |    0:43   |    +0:04   |     :(((	  |
+|Map 29 - The Living End      |	   1:41   |    1:34   |    +0:07   |     kill me  |
+|Map 30 - Icon of Sin         |	   0:31   |    0:43   |    -0:12   |     :))??    |
+|-----------------------------|-----------|-----------|------------|--------------|
+|          TOTAL TIME         |   18:45   |   18:48   |  -3 (0:03) |     :)?      |
+|-----------------------------|-----------|-----------|------------|--------------|
+
+Comments:
+Yooo sup wdup
+
+It has been over a year since I last got the 30uv record, and possibly almost a year since Zero-Master took
+it back off me, and then smashed it down to sub19 times!
+
+After abusing the new Zero-Press trick to obtain an easy 30nm record, I started immediately practicing 30uv
+since I knew ZM had 2cycled the IoS on map30, which means provided I didn't screw up a run too hard, I
+should be able to get a record. That indeed was the case with this run, however my map28 and map29 were so
+bad that I could only scrape 3 seconds off his time, even though a 2nd cycle costs 11 - 12 seconds hahaha
+
+Anyway my movement is as wobbly as ever, and I had way too many lucky moments! So let's get into it :)
+
+As per usual here are my thanks for this run:
+Zero-Master: 	Gives me a reason to keep running (by owning me), discovered Zero-Press, constantly
+		creating and optimising strategies on a per-encounter basis. Dude is the smartest
+		Doom player around.
+
+Linguica: 	For helping us understand the weird technicalities behind tricks
+
+Looper, j4rio, 4shockblast, Ancalagon, and a few more:
+		Giving me skillsets to aspire towards. You guys are insane 
+
+MrZzul and Loveless: 
+		For entertaining Doom streams!
+   
+
+Map Comments:
+Map1
+I will not grind for 5 seconds.
+
+Map2
+Pretty fast glide, took way too long at the blue key, but otherwise quite the acceptable time.
+
+Map3
+A bit slow, but quite lucky in that I was not blocked too much on my way to the teleporter.
+I almost miss the red key elevator though! Hahaha, it has happened a few times before 
+
+Map4
+I did quite the aggressive strategy here to make up for lost seconds on map2 and map3. I'm
+usually pretty good at them, but it also relies on a little luck from the chaingunners
+hoping they don't snipe me while I'm picking up the blue key. I do the fast yellow key jump
+because I have a setup for it, and I also lure the exit pinky out to cop some damage from
+the chaingunners, which basically guarantees a 2 shot from the shotgun.
+
+Map5
+Pretty terrible movement, but the red key door onwards was pretty standard. Happy with this!
+
+Map6
+Extremely good time. Not blocked by any monsters, only hitches were in my movement. 
+
+Map7
+Took a little too long to setup, but otherwise a pretty clean Map07! One day I'd like to do
+the Zero-Press on this map for a sub10 time.
+
+Map8
+A little messy with how I killed imps in the imp room, but otherwise it was fine.
+
+Map9
+Luckily I checked my rockets just as the map started, so I had to get this blue key jump
+first go. I've practiced that jump for well over 10 hours so I'm pretty consistent at it now.
+Took a lot of damage at the yellow key room which was unfortunate, but otherwise I think it
+was a really good time!
+
+Map10
+I kinda lost my mind a little bit here. Usually on this amount of health and armour I'll take
+the safe route with the invuln at the end, but I had practiced this risky route so much that
+I just did it by default. It relies on hitscan luck to grab the yellow key, then pinky luck
+to avoid dying while picking up BFG. After that you're completely in the hands of the cyber.
+I did hear him teleport, which is why I do such a long run up to the exit door. He doesn't
+fire a rocket and that keeps this run going! Really good time.
+
+Map11
+Not a lot to say here. Very standard time.
+
+Map12
+I've been consistently getting the yellow keybump lately, so that's nice. Pretty much only 
+using SR40 for it as well :D Caco room was quite scary as I was taking a lot of damage, but
+ultimately I didn't get stuck in any pits so the time was pretty reasonable. A decent trade
+of resources for time I think.
+
+Map13
+My decisions were a little bit skitz on this map, and I usually grab the 2nd invuln to make
+the lift fight easier at the cost of 1 second (assuming I hit the same elevator cycle).
+However, I skipped the invuln for some UNKNOWN reason and I end up having the strangest
+encounter of my life in the elevator room where I clearly have no idea what I'm doing.
+Still, I make it out and get a really nice time!
+
+Map14
+I've failed this rocket jump many times over the last few months, so you'll see me take the
+time to ensure I've got a proper setup going. I can't do it as fast as Zero-Master due to 
+poor movement, and so I'll always lose a few seconds here. Not a huge issue, though.
+
+Map15
+Uh I'm still pretty new to how to play this map. I feel like I overuse plasma, and since I
+skip plasma on map10 and waste more plasma than ZM does, this is quite detrimental to my
+ability to get through the end of ep2 and ep3. The end of the map was quite messy even for
+my standards, but I got through with 260 plasma or so. Not ideal, but it was okay.
+
+Map16
+Somehow got 13 seconds. Pretty mind boggled, actually.
+
+Map17
+Alright so the big thing to note here besides the Zero-Press is that I unleash the dimeCacos
+at the red key. This is just simply to make my time a bit faster with the SR50 down and back
+up. If you play fast enough the cacos won't be around to bother you by the time you go for 
+the Zero-Press. Don't really need to use the teleporter (and take damage from the floor)
+anymore! Linguica Certified.
+
+Map18
+Start was a little flakey with the chaingun vs the imps, but otherwise still pulled off the
+swag rocket as I fly into the exit ^_^
+
+Map19
+Run was great until the guideless glide. Overshot the gap many times and screwed up the time.
+
+Map20
+Could have potentially died to the 4 chaingunners around the darkroom teleporter, as well
+as the hitscanners after that teleporter. Got lucky.
+
+Map21
+I've never gotten under 13 seconds before. All my glides were instant! What the heck!!!!!!
+Still a second slower than ZM, but by god am I happy with that time :D:D:D
+
+Map22
+Needed soulsphere for safe red key RJ. I learned to do that RJ without needing the 180 key
+so it's a bit more swaggy now. Hit the strafejump for a nice time too!
+
+Map23
+Half way to the first door I heard the sound that no speedrunner wants to here - exploding
+barrels behind me. I have practiced the rocket jump across the gap many times, but at the
+end of the day my health is still in the PRNG's hands, and it did let me live this time
+which was pretty nuts. Firing before entering the first teleporter apparently moves the
+monsters away from where I RJ'd, so perhaps that played a part in it. I then get blocked
+by the fucking arachnotrons later on at the yellow skull and that kinda killed the time.
+Lost a lot of health too blegh
+
+Map24
+Good enough I suppose. One day I'll be man enough to SR40/SR50 across those beams like
+Looper does :P
+
+Map25
+This is where my low plasma count really starts to hurt me. I don't have enough plasma
+to keep firing at the monsters while I'm waiting for the bloodfall elevator with the
+revenant on it. That leaves me trying to get lucky with rockets to kill the chaingunner
+during the waiting time. After that there's quite a few health packs so health wasn't
+the issue, but we all know how much plasma you want for Map26!
+
+Map26
+Quite clean, but at the expense of my plasma yet again. Hit a really nice BFG shot after
+picking up yellow key which killed TWO cacos blocking the way immediately. That
+instantly reduces the likelihood of getting owned by a teleporting caco later, so that was
+very nice.
+
+Map27
+This was completely luck. I only had one BFG shot and basically just HOPED the lost souls
+wouldn't come over and fuck everything up. Somehow Barney complies, and we get a really
+slick 17 second time. Probably a once in a lifetime event in my runs.
+
+Map28
+Had to improvise. No plasma here meant bad news. Decided to take a really old route
+with an initial invuln to pick up some plasma. It works out, but really cuts into the
+seconds.
+
+Map29
+As per usual I was very slow on this map. Adrenaline, poor decisions, slow setups...
+The entire map was a travesty. Regardless, I just needed to get through and hit a 1cycle
+on Map30 to get a record. That's all that was running through my head.
+
+Map30
+My heart was beating like crazy. Even though I knew my time was bad, I can't help it!
+I almost screw up the 1cycle by firing the first rocket in my setup too early, and then
+I thought I fired the 3rd brain rocket too late, but when I heard Romero's cry of death,
+everything settled down and I had like a really calming moment. GG!
+
+
+
+Zero-Master should be able to shave another 15 seconds at least off of this time. That's
+the bare minimum. 12 Seconds can be saved from the IoS 1cycle alone, so the next time
+he puts out will be sub 18:30. Get hype!
+
+Until next time, pce.

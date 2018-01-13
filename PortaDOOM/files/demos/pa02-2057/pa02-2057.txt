@@ -1,0 +1,41 @@
+Runner: Zero-Master
+IWAD: Doom2.wad
+Category: UV-Pacifist
+Map: 02 (Underhalls)
+Source Port: Crispy Doom v3.2
+
+Kills    :   40%
+Items    :   30%
+Secrets  :    0%
+Time     : 20:57
+
+Description:
+I was practicing for 30av when I ran past a baron and he didn't wake up... in a 160 unit 
+wide corridor, which was ridiculous to me. So I looked up some discussion on how many tics 
+there were for monsters to wake up and to fire in a thread about pa02. I had been looking 
+at this map earlier, and I had the idea of doing the glide and dropping down on the right side 
+could a potential strategy. So I decided to yet again take a look at this map, and I made several
+major breakthroughs when I discovered how you could clear these 2 rooms out with some reliability.
+
+Still requires absurds amount of luck, but it was very much doable in the end. Not everything went
+perfect here, the barrels on the top part going down was unexpected, as that usually never happened,
+and I also didn't remember hearing it so I was never sure if they were still up. Besides that the
+start was perfect, though more health would have been nice. 
+
+I can stand in a corner by the place I drop down and be perfectly safe, and let all but 1 hitscanner
+remain alive this way. This is why I stand here for quite some time, to make sure it's just 1 alive.
+
+I then had perfect luck when opening up the door to blue key, infighting could not have been better.
+The imp gets dragged into the other room while I was going to wait for the shotgunner above to 
+destroy the barrel, but it was already down so I was essentially wasting time. At least I was able
+to calm my nerves at this point :)
+
+The 4 remaining monsters aren't too hard to deal with, but you can easily get unlucky. The surviving 
+shotgunner above was the major concern, and after the shotgunner+pinky below died I made a major mistake
+in going down towards blue key, as I would easily get trapped by the 2 imps if the barrels don't get destroyed.
+I got extremely lucky with the imp taking down a barrel and dying while the other one decided to infight the
+shotgunner and win the fight. This was perfect, and I only had 3 imps to deal with, which is still quite difficult
+as a fireball has about 50% chance of killing me. 
+
+Once I managed to drag all imps into the blue key room the rest is straightforward. I wake up the hitscanners
+1 by 1 and let them kill eachother, while I can safely get in and out of the safe spot.

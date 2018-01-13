@@ -562,6 +562,8 @@ SET WINBIT=32
 IF /I "%PROCESSOR_ARCHITECTURE%" == "EM64T" SET WINBIT=64	& REM # Itanium
 IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET WINBIT=64	& REM # Regular x64
 IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64	& REM # 32-bit CMD on a 64-bit system (WOW64)
+
+REM # for engines with both 32 and 64-bit executables, select the relevant one
 IF %WINBIT% EQU 32 SET "ENGINE_BIT=x86"
 IF %WINBIT% EQU 64 SET "ENGINE_BIT=x64"
 

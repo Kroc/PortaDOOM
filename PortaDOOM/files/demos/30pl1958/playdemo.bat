@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & CALL "..\..\doom.bat" /USE prboom /IWAD PLUTONIA.WAD /DEMO 30pl1958.lmp /CMPLVL 4

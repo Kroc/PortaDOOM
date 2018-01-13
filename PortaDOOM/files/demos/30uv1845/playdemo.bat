@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & CALL "..\..\doom.bat" /USE prboom /DEMO 30uv1845.lmp

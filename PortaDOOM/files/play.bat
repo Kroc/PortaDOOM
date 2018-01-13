@@ -70,8 +70,6 @@ REM ECHO     chocolate-doom/heretic/hexen/strife     original DOOM-engine limits
 REM ECHO     prboom+                                 no-limits, boom and MBF extensions
 REM ECHO:
 REM ECHO     choco       chocolate-doom/heretic/hexen ONLY
-REM ECHO     no-limit    limit-removing engine ^(e.g. Crispy-Doom and above^)
-REM ECHO     boom        boom-compatibility, a set of extensions from the Boom engine
 REM ECHO     zdoom       
 REM ECHO:
 ECHO  /IWAD ^<iwad^>

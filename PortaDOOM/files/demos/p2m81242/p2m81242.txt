@@ -1,0 +1,19 @@
+              Doom
+      E2M8: Tower of Babel
+     WAD Author: id Software
+------------------------------------
+           p2m81242.lmp
+
+Pacifist in 12:42 (Also Tyson)
+
+    Kills   - 100%
+    Items   - 100%
+    Secrets - 100%
+
+Recorded with: PrBoom-plus 2.5.1.4
+-complevel 3
+
+Skill level: Ultra-Violence
+Author: 4shockblast
+
+Comments: Don't let your dreams be dreams.

@@ -7,7 +7,9 @@ $TITLE=Gameplay Mod Awards
 
 (Programming note: after years of languishing as a second class citizen, the gameplay mod award has been pluralized and expanded to its own dedicated page. Let it never be said Doomworld doesn't care about mods!)
 
-:[1] Doom Delta - _DrPyspy_
+! *NOTE:* PortaDOOM does not yet include gameplay-only mods due to limitations in PortaDOOM supporting mods without levels, but will support it in a future release.
+
+:Doom Delta - _DrPyspy_
 :===============================================================================
 With all of the power that Decorate and ACS bring, and now with the advent of the new and interesting ZScript, a lot of mods are constantly trying to out-wow each other in effects and over-the-top spectacle. Every year, we see more gameplay mods with more cool stuff, with more particles, with more fancy eye-candy. New sprites for weapons and enemies! Loud sound effects! Alt-fires! Tertiary fires! If I pack even more features into my gameplay mod, it'll be even cooler and better, right? Let me tell you about my map enhancement script.
 
@@ -19,7 +21,7 @@ In an age where people are constantly trying to outdo each other in spectacle, i
 
 ^R- _TerminusEst13_
 
-:[2] Final Doomer - _Sgt. Shivers_ & _Yholl_ et al
+:Final Doomer - _Sgt. Shivers_ & _Yholl_ et al
 :===============================================================================
 "What mapset should I play this mod with?"
 
@@ -34,7 +36,7 @@ It's difficult to make even just one set of weapons where each gun is distinct i
 ^R- _TerminusEst13_
 
 
-:[3] High Noon Drifter - _TerminusEst13_
+:High Noon Drifter - _TerminusEst13_
 :===============================================================================
 Howdy partners, _Scuba Steve_ here to spin yarns about one helluva Doom mod. Folks call her *"High Noon Drifter"* and I reckon many ya'll have played this here project. *HND*'s a complete thematic overhaul of every aspect of the player, transforming the classic Doomguy into a spaghetti western cowboy hellbent on destroying the hordes of demonic forces using a plethora of (mostly) era-appropriate weapons, as well as dark ritual magic.
 
