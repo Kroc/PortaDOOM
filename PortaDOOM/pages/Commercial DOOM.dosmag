@@ -4,7 +4,7 @@ $KEY:2=GOTO:DOOM II
 $KEY:F=GOTO:Final DOOM
 $KEY:N=GOTO:No Rest for the Living
 $KEY:M=GOTO:Master Levels
-$KEY:P=GOTO:Playstation DOOM
+$KEY:P=GOTO:PlayStation DOOM
 $KEY:6=GOTO:DOOM 64
 
 ^C:Commercial DOOM and DOOM-Clones
@@ -40,8 +40,8 @@ Whilst not running on the DOOM-engine, Wolfenstein 3D has been remade in DOOM in
 :===============================================================================
 With the success of DOOM, console ports were an inevitability. Somewhat limited as the PC was when it came to graphics and audio it none-the-less excelled in raw computational horse-power. Some truly awful ports were made to under-powered systems (such as the SNES) but out of this two gems shined in their own unique ways...
 
-:[P] Playstation DOOM & Final DOOM
-    The Playstation port played to the PSX's strengths, including coloured lighting, and made the best of the limitations with a grab-bag of levels that would fit the memory limits. 
+:[P] PlayStation DOOM & Final DOOM
+    The PlayStation port played to the PSX's strengths, including coloured lighting, and made the best of the limitations with a grab-bag of levels that would fit the memory limits. 
 
 :[6] DOOM 64
     A complete re-think of the DOOM console experience; a fresh new campaign built specifically for the N64 hardware. New enemies and weapons were created to make up for the inability to include the complete original roster. Cartridge storage ruled out CD-quality sound so a dark ambient soundtrack helped to drastically change the mood of the game.
