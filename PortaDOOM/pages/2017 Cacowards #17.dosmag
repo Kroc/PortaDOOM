@@ -5,6 +5,15 @@ $TITLE=The Side Column pt.I
 
 :-------------------------------------------------------------------------------
 
+:DID YOU KNOW...
+:===============================================================================
+- December 10th marked the 24 year anniversary of DOOM?
+- May 13th marked the 1 year anniversary of DOOM (2016)?
+- *Mordeth* and *Millennium* were still not released in 2017 despite over nineteen years of development?
+- 2017 marks the 15th anniversary for *Alien Vendetta*, once hailed by Doomworld as perhaps the last great classical megawad that would ever be made?
+- After two forks making GZDoom feasible for indie development (GLOOME and GZDoom-GPL), GZDoom took it on itself to go GPLv3 compatible?
+
+
 :NEAT STUFF SAFARI
 :===============================================================================
 Every year, there's always a giant menagerie of people releasing bigger and more impressive projects, but there's also a whole bunch of little tiny modlets and patches people make. While often not flashy or in-depth enough to win an award or get honorable mention, many times they still tweak gameplay just enough to make things... neat. 2017 is no exception, featuring a wide array of stocking stuffer mods just in time for the festive season.
@@ -35,6 +44,20 @@ $KEY:M=URL:https://www.doomworld.com/forum/topic/68161-8-16-bit-music-replacemen
 $KEY:D=URL:https://github.com/sneakernets/DMXOPL/
 $KEY:G=URL:https://www.doomworld.com/forum/topic/97388-hisymaks-genmidi-an-enhanced-genmidi-lump-for-opl-synth/
 [D: Csonicgo's DMXOPL ] meticulously tweaks the OPL3 instruments to make FM synthesis better match the classic Roland Sound Canvas, specifically designed for Doom's DMX sound library. [G: Hisymak's GENMIDI ] is a similar project that edits the GENMIDI lump to improve instruments which need improvement, and leave unchanged the instruments which are iconic to DMX and Doom MIDIs overall.
+
+
+:SORRY. IM SORRY. IM TRYING TO REMOVE IT
+:===============================================================================
+$KEY:1=URL:https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Doomworld
+$KEY:2=URL:https://en.wikipedia.org/w/index.php?title=Dril&oldid=797254824
+In August of this year, after well over a decade of successfully lying low, the official "Doomworld" Wikipedia article was finally noticed by the site's crack team of senpais tinpot pedants and [1: irrevocably deleted], rendering us officially "non-notable." On the very next day, the Wikipedia article for [2: @dril] was first created. Coincidence? I mean, yes, obviously, but still... coincidence?
+
+
+:I'M STILL BORED!
+:===============================================================================
+Delete everything from a copy of Map15 except for the Things and then create a new map around those existing Things. The map must be designed for Vavoom. The prize is your freedom.
+
+Deadline is January 21st 2018. 
 
 
 :WHAT ARE WE STILL WAITING FOR?
@@ -95,10 +118,3 @@ Does this enormous list suggest the boundless enthusiasm for Doom and its relati
 - Ultimate Doom The Way id Did
 - Vela Pax
 - WolfenDoom: Blade of Agony E3 
-
-
-:SORRY. IM SORRY. IM TRYING TO REMOVE IT
-:===============================================================================
-$KEY:1=URL:https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Doomworld
-$KEY:2=URL:https://en.wikipedia.org/w/index.php?title=Dril&oldid=797254824
-In August of this year, after well over a decade of successfully lying low, the official "Doomworld" Wikipedia article was finally noticed by the site's crack team of senpais tinpot pedants and [1: irrevocably deleted], rendering us officially "non-notable." On the very next day, the Wikipedia article for [2: @dril] was first created. Coincidence? I mean, yes, obviously, but still... coincidence?
