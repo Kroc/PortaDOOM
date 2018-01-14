@@ -6,7 +6,7 @@ files\wads\SHAREWARE\DOOM1.WAD
 files\play.bat
 files\doom.bat
 
-files\tools\**
+files\tools\xdelta3
 
 files\config\default.choco-doom*.cfg
 files\config\default.glboom-plus.cfg
