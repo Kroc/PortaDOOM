@@ -1,4 +1,4 @@
-
+﻿
 == Chocolate Doom installation ==
 
 These are instructions for how to install and set up Chocolate Doom

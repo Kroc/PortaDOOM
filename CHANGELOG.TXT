@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+14-01-18:
++ Upgraded Crispy Doom to v5.1
+
 08-01-18:
 + Added "Dark Tide" WAD page
 + Added "DOOM II: Hellscape" WAD page

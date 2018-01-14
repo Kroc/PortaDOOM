@@ -1,4 +1,4 @@
-Doom has a memorable and atmospheric soundtrack. Like many games of
+﻿Doom has a memorable and atmospheric soundtrack. Like many games of
 the era, it is MIDI-based. Chocolate Doom includes a number of
 different options for music playback, detailed below.
 
@@ -109,7 +109,8 @@ systems unless you are running as the superuser (root/Administrator).
 
 On modern Windows systems it is not possible to directly access the
 OPL chip, even when running as Administrator. Fortunately, it is
-possible to use the “ioperm.sys” driver developed for Cygwin:
+possible to use the “ioperm.sys” driver developed for Cygwin (look for
+iopermsys-0.2.1.tar.bz2):
 
   http://openwince.sourceforge.net/ioperm/
 
