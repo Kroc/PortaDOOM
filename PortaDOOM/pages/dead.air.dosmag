@@ -13,7 +13,7 @@ $KEY:D=GOTO:dead.wire
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Single map for (G)ZDoom (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to [D: "dead.wire"], with plenty of new weapons, baddies, and bizarro creep factor.
+Single map for (G)ZDoom (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to *[D] "dead.wire"*, with plenty of new weapons, baddies, and bizarro creep factor.
 
 The UAC's global news network is down for repairs following some rather unusual signal interference. As one of the company's top network engineers, it falls on your shoulders to debug the system. All in a day's work, right?
 

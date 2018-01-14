@@ -11,16 +11,16 @@ There's no other way to put it, the Doom community is an unending river. Every t
 
 $KEY:L=GOTO:lilith.pk3
 $KEY:X=URL:https://www.doomworld.com/forum/topic/96943-doom-builder-x-2134-oct23-2017-map-editor-forked-from-db2/
-_anotak_ took everyone by surprise, shocking everybody with a one-two punch. The magnificence that was *[L] lilith.pk3* is already well-documented, but then following up right afterwards with a fork of DoomBuilder, called [X: DoomBuilder X? ] Whatever is planned in the future will be great.
+_anotak_ took everyone by surprise, shocking everybody with a one-two punch. The magnificence that was *[L] lilith.pk3* is already well-documented, but then following up right afterwards with a fork of DoomBuilder, called [X: DoomBuilder X?] Whatever is planned in the future will be great.
 
 $KEY:N=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=57964
-_Captain J_ isn't technically a newcomer to the community, in that he's been an active cheerleader and a healthy art contributor to many projects. Until now, however, he's never had a project to call his own -- [N: Netronian Chaos ] is his very first mod, and it's a truly stellar gameplay mod with charming art. Keep up the great work!
+_Captain J_ isn't technically a newcomer to the community, in that he's been an active cheerleader and a healthy art contributor to many projects. Until now, however, he's never had a project to call his own -- [N: Netronian Chaos] is his very first mod, and it's a truly stellar gameplay mod with charming art. Keep up the great work!
 
 $KEY:D=GOTO:Disjunction
 Despite being primarily anonymous, _/vr/_ has started forming some notable names and creators -- _floatRand_ in particular got heads turning with *[D] Disjunction*, a fantastic mapset with just enough slaughter elements to be truly punishing. We're all looking forward to what his next project is.
 
 $KEY:O=URL:https://www.doomworld.com/forum/topic/96985-oscillation-a-9-map-boom-wad-on-idgames/
-_Forli_ slipped under a lot of people's radars, with an untitled 12-map project coming out in December of last year, when everyone was in the Cacoward mood and skipping over everything. But his next project, [O: Oscillation ], yanked the rug out from everyone by cleanly alternating between exploration-focused maps and run-and-gun maps. Whatever he does next is going to be truly unique.
+_Forli_ slipped under a lot of people's radars, with an untitled 12-map project coming out in December of last year, when everyone was in the Cacoward mood and skipping over everything. But his next project, [O: Oscillation], yanked the rug out from everyone by cleanly alternating between exploration-focused maps and run-and-gun maps. Whatever he does next is going to be truly unique.
 
 With the advent of Doom 2016 and the new Wolfensteins, the community is only going to grow bigger and bigger. While these may be our MOST promising newcomers, everyone new to the community is promising, and we look forward to what all our new blood will put out.
 
@@ -29,25 +29,25 @@ With the advent of Doom 2016 and the new Wolfensteins, the community is only goi
 :===============================================================================
 $KEY:0=URL:https://www.doomworld.com/forum/topic/95544-a-new-trick-discovery-zero-press/
 $KEY:1=URL:https://www.youtube.com/watch?v=J0hh-6eGHOs
-Would you believe 2017 was a breakout year for Doom speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in Doom 2 map07 and just flick the exit switch in 3 seconds. Duh! Named [0: zero press ] after its ubiquitous finder _ZeroMaster_ (first recorded on [1: map15 ] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
+Would you believe 2017 was a breakout year for Doom speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in Doom 2 map07 and just flick the exit switch in 3 seconds. Duh! Named [0: zero press] after its ubiquitous finder _ZeroMaster_ (first recorded on [1: map15] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
 
 $KEY:2=SHELL:demos\30nm2154\playdemo.bat
 $KEY:3=SHELL:demos\30uv1845\playdemo.bat
-We've seen another massive time cut to the Doom 2 speedrun, which currently clocks at _ZeroMaster_'s *21:54* [2: for Nightmare ] and _eLim_'s *18:45* [3: for UV]. The latter run has underwent a mindblowing change, and after being a staple for decades, map31 has been dropped out of the optimal route! The strat is still too risky for NM though.
+We've seen another massive time cut to the Doom 2 speedrun, which currently clocks at _ZeroMaster_'s *21:54* [2: for Nightmare] and _eLim_'s *18:45* [3: for UV]. The latter run has underwent a mindblowing change, and after being a staple for decades, map31 has been dropped out of the optimal route! The strat is still too risky for NM though.
 
 $KEY:4=SHELL:demos\30pl1958\playdemo.bat
 $KEY:5=SHELL:demos\30ev3858\playdemo.bat
 $KEY:6=SHELL:demos\30av9321\playdemo.bat
 $KEY:7=URL:https://www.youtube.com/watch?v=LExJMOh3TNs
-Other notable d2all speedruns have been firmly a _ZeroMaster_ domain. He has brought down the Plutonia UV speed [4: under 20 minutes ] and the Evilution UV speed [5: under 39 ]. If you're into getting old in front of the computer screen, _ZM_ has also completed his secret dream and trailblazed an [6: Alien Vendetta UV movie ] in *1:33:21*. In other news, the lands of almost-Doom have caught up with the void glide craze and the Hexen speedrun has been destroyed in [7: under 10 minutes ] by _veovis_.
+Other notable d2all speedruns have been firmly a _ZeroMaster_ domain. He has brought down the Plutonia UV speed [4: under 20 minutes] and the Evilution UV speed [5: under 39]. If you're into getting old in front of the computer screen, _ZM_ has also completed his secret dream and trailblazed an [6: Alien Vendetta UV movie] in *1:33:21*. In other news, the lands of almost-Doom have caught up with the void glide craze and the Hexen speedrun has been destroyed in [7: under 10 minutes] by _veovis_.
 
 $KEY:8=SHELL:demos\p2m81242\playdemo.bat
 $KEY:9=SHELL:demos\pa02-2057\playdemo.bat
 $KEY:I=URL:https://www.doomworld.com/forum/topic/93242-e2m8-done-passive/?do=findComment&comment=1725824
-And that's not all! 2017 has seen even more preposterous groundbreakers. In March _4shockblast_ defied lame pro-tips and completed the much-theoretized [8: pacifist run of E2M8 ]. After mere 12 minutes of passive-aggressively hugging the cyberdemon in a "frozen" state, a helpful lost soul completed all of the damaging. Then in September the impossible happened and the most agonizing challenge left has been conquered. _ZeroMaster_ recorded the fabled pa02, the [9: pacifist run of Underhalls ]. Needless to say, [I: I had to eat crow ]. Hats off to both of you!
+And that's not all! 2017 has seen even more preposterous groundbreakers. In March _4shockblast_ defied lame pro-tips and completed the much-theoretized [8: pacifist run of E2M8]. After mere 12 minutes of passive-aggressively hugging the cyberdemon in a "frozen" state, a helpful lost soul completed all of the damaging. Then in September the impossible happened and the most agonizing challenge left has been conquered. _ZeroMaster_ recorded the fabled pa02, the [9: pacifist run of Underhalls]. Needless to say, [I: I had to eat crow]. Hats off to both of you!
 
 $KEY:Y=URL:https://www.youtube.com/channel/UCqcYluu5zm7uqBNGL8kextA
-Last but not least, _ZeroMaster_ has also been proactive on the promotional side and launched a [Y: DSDA YouTube channel ] which now hosts a massive amount of the prominent speedrun records across IWADs and PWADs, all in glorious 60fps. Tell your friends!
+Last but not least, _ZeroMaster_ has also been proactive on the promotional side and launched a [Y: DSDA YouTube channel] which now hosts a massive amount of the prominent speedrun records across IWADs and PWADs, all in glorious 60fps. Tell your friends!
 
 
 :THIS YEAR IN DOOM MUSIC
@@ -55,10 +55,10 @@ Last but not least, _ZeroMaster_ has also been proactive on the promotional side
 $KEY:S=GOTO:Shadows of the Nightmare Realm
 $KEY:R=GOTO:Rise of the Wool Ball
 $KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/moonbld
-The Doom community is home to the best MIDI composition talent around, and slackers that we are, we haven't done much to chronicle it until now. 2017 has been another great year for Doom music, with several solo projects that have included soundtracks by the mappers themselves. *[S] SotNR* features intense, atmospheric tracks by _YukiRaven_ that mix ambient sounds and eerie melodies to add to the constant sense of dread. *[R] Rise of the Wool Ball*'s soundtrack represents the opposite end of the spectrum, with plenty of cute, cheerful tracks that complement the cartoony graphics. _Deadwing_'s awesome compositions for [M: Moonblood ] blend jazz, electronica, and traditional _Bobby Prince_ influences in a way that works surprisingly well for such a Plutonia-flavored megawad.
+The Doom community is home to the best MIDI composition talent around, and slackers that we are, we haven't done much to chronicle it until now. 2017 has been another great year for Doom music, with several solo projects that have included soundtracks by the mappers themselves. *[S] SotNR* features intense, atmospheric tracks by _YukiRaven_ that mix ambient sounds and eerie melodies to add to the constant sense of dread. *[R] Rise of the Wool Ball*'s soundtrack represents the opposite end of the spectrum, with plenty of cute, cheerful tracks that complement the cartoony graphics. _Deadwing_'s awesome compositions for [M: Moonblood] blend jazz, electronica, and traditional _Bobby Prince_ influences in a way that works surprisingly well for such a Plutonia-flavored megawad.
 
 $KEY:T=GOTO:TNT - Revilution
 This year's epic megawad OST is *[T] TNT: Revilution*, which features Evilution-inspired tracks from a variety of composers. There isn't a track in the lineup that's not at least fun and catchy, and there are quite a few standouts. Highlights include the return of _Jeremy Doyle_, who worked on the soundtracks for *Icarus* and *Requiem*, as well as some truly excellent stuff by _Eris Falling_, who has really come into his own as both an original composer and a remixer in the last couple of years.
 
 $KEY:V=URL:https://www.doomworld.com/forum/topic/91806-velvetic-midi-pack/#comment-1692058
-In case you missed it on the forums back at the end of last year, make sure to check out the [V: Velvetic MIDI Pack ], which features 36 tracks from various groups _KevenHEZ_ (*Nova*, *Threnody*, etc.) is involved in. The music spans multiple genres, though most of it is the sort of moody metal that many consider practically synonymous with Doom -- a great resource for future mappers, as only a couple of the tracks have found homes in Doom projects to date. 
+In case you missed it on the forums back at the end of last year, make sure to check out the [V: Velvetic MIDI Pack], which features 36 tracks from various groups _KevenHEZ_ (*Nova*, *Threnody*, etc.) is involved in. The music spans multiple genres, though most of it is the sort of moody metal that many consider practically synonymous with Doom -- a great resource for future mappers, as only a couple of the tracks have found homes in Doom projects to date. 

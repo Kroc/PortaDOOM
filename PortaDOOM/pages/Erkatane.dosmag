@@ -14,7 +14,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
 :-------------------------------------------------------------------------------
 
 $KEY:1=GOTO:DTWiD Series #02
-The main goal was to create a vanilla classic episode themed on Doom2 techbases. I was as well influenced by [1: d2twid] and 1994-1996 maps regarding to the very raw detailing employed. The maps are small to mid in size and the average enemy count is around 100 per map. There is virtually no texture alignment except for some doors and switches, taking advantage of the sector height sometimes for that work, and I made no use of support2/3 to separate different textures, using just angles as in some iwad maps. On the other hand I wanted very consistent themes so I used just 40 different textures per map as a constraint, including those for doors and keymarks as I realised some iwad maps use very few textures too.
+The main goal was to create a vanilla classic episode themed on Doom2 techbases. I was as well influenced by *[1] d2twid* and 1994-1996 maps regarding to the very raw detailing employed. The maps are small to mid in size and the average enemy count is around 100 per map. There is virtually no texture alignment except for some doors and switches, taking advantage of the sector height sometimes for that work, and I made no use of support2/3 to separate different textures, using just angles as in some iwad maps. On the other hand I wanted very consistent themes so I used just 40 different textures per map as a constraint, including those for doors and keymarks as I realised some iwad maps use very few textures too.
 
 :-------------------------------------------------------------------------------
 :[Q] Play "Erkaknee" (see description below)

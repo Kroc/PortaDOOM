@@ -10,7 +10,7 @@ $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 $KEY:N=GOTO:No End in Sight
 
-:Doom the Way id Did - The Lost Episodes            * 2016 Cacoward Winner! *
+:Doom the Way id Did: The Lost Episodes             * 2016 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ $KEY:N=GOTO:No End in Sight
 :Requires : *zdoom		Includes : *+Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-Six episodes of classic Doom maps, originally candidates for last year's [1: "Doom the Way Id Did"], arranged in an episodic format.
+Six episodes of classic Doom maps, originally candidates for last year's *[1] "Doom the Way Id Did"*, arranged in an episodic format.
 
 	(NOTE: *[P] Play* will launch DTWID-LE in GZDoom.\\See below to play with a vanilla engine)
 
@@ -132,18 +132,18 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 	The original versions of these maps can be played by loading DTWID-LX.wad, in which they'll replace the "new" ones in their respective slots. There are no guarantees of vanilla compatibility for the originals, however; some, like E2M8, have overflows, and at least one map (E3M4) is lacking an exit. Just be warned.
 
 *Note #2:
-	A few maps from previous versions have been cycled out of DTWID-LE since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
+	A few maps from previous versions have been cycled out of *DTWID-LE* since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
 
 - E1M7  *"Siege Headquarters"	by _PhobosDeimos1_
 = E1M3 of PhobosDeimos Anomaly:
-  [2] _http://static.angryscience.net/doom/pd1-anom.zip_
+  [2: http://static.angryscience.net/doom/pd1-anom.zip]
 
 - E1M8 *"Enigma"				by _NaturalTvventy
-= E1M8 of [N: No End in Sight]
+= E1M8 of *[N] No End in Sight*
 
 - E4M6  *"Forgotten Caverns"	by _NaturalTvventy_
-= E3M5 of [N: No End in Sight]
+= E3M5 of *[N] No End in Sight*
 
 - E5M7  *"Cold Steel"			by _Mr. Chris_ + _Mr. Freeze_
 = Available standalone at:
-  [3] _http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip_
+  [3: doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip]
