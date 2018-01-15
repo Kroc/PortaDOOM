@@ -5,7 +5,8 @@ REM # doom batch launcher - (c) copyright Kroc Camen 2016-2018
 REM # features:
 REM # - automatic portable config files so that you get the same configuration (per-engine) everywhere
 REM # - searches GOG & Steam installs if WAD is missing
-REM # - automatically patches DOOM 3 BFG Edition WADs 
+REM # - automatically offers to generate DOOM64.WAD from an N64 ROM
+REM # - automatically patches DOOM 3 BFG Edition WADs
 REM # - FreeDOOM substituted if commercial DOOM.WAD / DOOM2.WAD missing
 REM # - automatically includes "brightmaps.pk3" & "lights.pk3" (GZDoom) or "skulltag_actors.pk3" &
 REM     "skulltag_data.pk3" (Zandronum), placing them before the PWAD
@@ -959,7 +960,7 @@ IF NOT DEFINED USE (
 	SET "PORT_TITLE=GZDoom ^(Default^)"
 )
 
-REM # no recognised engine name?
+REM # no recognized engine name?
 IF NOT DEFINED PORT_SAVE (
 	ECHO  ERROR: "%USE%" is not a valid engine name.
 	ECHO:
@@ -1023,7 +1024,7 @@ REM ============================================================================
 :iwad
 REM # if no IWAD was specified, select the default
 IF NOT DEFINED IWAD (
-	REM # The deafault IWAD depends on engine selection
+	REM # The default IWAD depends on engine selection
 	IF "%GAME%" == "DOOM"    SET "IWAD=DOOM.WAD"
 	IF "%GAME%" == "DOOM2"   SET "IWAD=DOOM2.WAD"
 	IF "%GAME%" == "DOOM64"  SET "IWAD=DOOM64.WAD"
@@ -1075,11 +1076,13 @@ IF %ERRORLEVEL% EQU 0 (
 
 REM # IWAD is missing,
 REM # now search GOG / Steam for the IWAD:
+REM # (or DOOM 64 ROM in the case of DOOM 64)
 
 IF /I "%IWAD_NAME%" == "DOOM.WAD"     GOTO :iwad_doomu
 IF /I "%IWAD_NAME%" == "DOOM2.WAD"    GOTO :iwad_doom2
 IF /I "%IWAD_NAME%" == "TNT.WAD"      GOTO :iwad_tnt
 IF /I "%IWAD_NAME%" == "PLUTONIA.WAD" GOTO :iwad_plutonia
+IF /I "%IWAD_NAME%" == "DOOM64.WAD"   GOTO :iwad_doom64
 IF /I "%IWAD_NAME%" == "HERETIC.WAD"  GOTO :iwad_heretic
 IF /I "%IWAD_NAME%" == "HEXEN.WAD"    GOTO :iwad_hexen
 IF /I "%IWAD_NAME%" == "STRIFE1.WAD"  GOTO :iwad_strife
@@ -1191,6 +1194,48 @@ GOTO :iwad_missing
 	)
 	GOTO :iwad_check
 
+:iwad_doom64
+	REM ------------------------------------------------------------------------------------------------------------
+	REM # this implies the type of game being played is DOOM64
+	SET "GAME=DOOM64"
+	
+	REM # if DOOM64.WAD is missing, assume it has not been generated from the ROM
+	ECHO:
+	ECHO   WARNING! DOOM64.WAD needs to be generated:
+	ECHO:
+	ECHO   -- To play DOOM 64, a DOOM64.WAD file will be generated from an N64 ROM image
+	ECHO      of the game. After pressing any key, please select your ROM file, it can be
+	ECHO      of the type ".N64", ".V64" or ".Z64".
+	ECHO:
+	ECHO      press any key to continue
+	PAUSE >NUL
+	
+	REM # launch the DOOM64.WAD generator;
+	REM # the current directory needs to be that of the engine for WadGen to reference the "Content" folder
+	PUSHD "%ENGINE_DIR%"
+	WadGen.exe
+	POPD
+	
+	REM # try find DOOM64.WAD again
+	CALL :find_file
+	REM # found?
+	IF %ERRORLEVEL% EQU 0 (
+		SET IWAD_PATH=%FILE%
+		GOTO :iwad_found
+	)
+	
+	REM # DOOM64.WAD was not generated?
+	ECHO:
+	ECHO   ERROR! Could not locate DOOM64.WAD. The generation tool was cancelled or
+	ECHO   failed. Please re-run this script and select your DOOM64 N64 ROM file,
+	ECHO   or run "WadGen.exe" manually, located at:
+	ECHO:
+	ECHO       "%ENGINE_DIR%\WadGen.exe"
+	ECHO:
+	POPD
+	PAUSE
+	EXIT /B 1
+
 :iwad_heretic
 	REM ------------------------------------------------------------------------------------------------------------
 	REM # this implies the type of game being played is HERETIC
@@ -1215,6 +1260,7 @@ GOTO :iwad_missing
 		REM # check if HEXEN.WAD can be found there
 		IF EXIST "%REG%\base\HEXEN.WAD" SET "IWAD_PATH=%REG%\base\HEXEN.WAD" & GOTO :iwad_found
 	)
+	GOTO :iwad_check
 
 :iwad_strife
 	REM ------------------------------------------------------------------------------------------------------------

@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+15-01-18:
++ "doom.bat" now offers to generate "DOOM64.WAD" from an N64 ROM
+
 14-01-18:
 + Upgraded Crispy Doom to v5.1
 

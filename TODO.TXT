@@ -13,7 +13,7 @@ PortaDOOM Alpha 3:
 
 [ ] Harmony IWAD page
 [ ] Hacx IWAD page
-[ ] N64 DOOM64.WAD detection / warning
+[ ] N64 DOOM64.WAD warning on page
 [ ] Total Conversions page ...
 [ ] MegaWADs page ...
 [ ] Episodes page ...
@@ -61,11 +61,11 @@ Scripts:
 [ ] Need a "dotted tab" for contents and index pages
 
 [ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
-	
+
 [ ] Mods
 	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
         selected; e.g. "strangeaeonsexp+HighNoonDrifter"
-		
+
 [ ] DOSmag: Themes
     [ ] Fix "?" invalid character
 	[ ] Convert the statusbar/dialogue to a theme set
