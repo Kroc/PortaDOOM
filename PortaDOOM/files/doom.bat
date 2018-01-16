@@ -1375,7 +1375,7 @@ GOTO :iwad_missing
 		ECHO:
 		
 		SET "IWAD_PATH=%FREEDOOM%"
-		GOTO :wad_found
+		GOTO :iwad_found
 	)
 	
 	REM # TODO: this is where we'd substitute HERETIC.WAD for BLASPHEMER.WAD,
