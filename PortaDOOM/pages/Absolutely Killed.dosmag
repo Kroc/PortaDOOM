@@ -1,6 +1,6 @@
 $NAV=Episodes
 $KEY:P=SHELL:wads\episodes\killed\play.bat
-$KEY:1=SHELL:wads\episodes\killed\killed.txt
+$KEY:T=SHELL:wads\episodes\killed\killed.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/j-l/killed
 
 :Absolutely Killed                                  * 2016 Cacoward Winner! *
