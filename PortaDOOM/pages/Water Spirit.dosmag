@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Manbou (burabojunior)
 $KEY:P=SHELL:wads\people\burabojunior\watrsp\play.bat
-$KEY:T=SHELL:wads\people\burabojunior\watrsp\watersp.txt
+$KEY:T=SHELL:wads\people\burabojunior\watrsp\watrsp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/watrsp
 
 :Water Spirit                                    * 2017 Cacoward Runner Up! *

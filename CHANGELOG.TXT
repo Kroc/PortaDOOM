@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+16-01-18:
+* Changed "Shadow of The Wool Ball" to use ZDoom (instead of GZDoom)
+
 15-01-18:
 + "doom.bat" now offers to generate "DOOM64.WAD" from an N64 ROM
 * Fixed FreeDOOM substitution in "doom.bat"

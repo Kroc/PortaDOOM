@@ -1,6 +1,6 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\dead-air\play.bat
-$KEY:T=SHELL:wads\onesies\dead-air\dead-air.txt
+$KEY:P=SHELL:wads\onesies\dead.air\play.bat
+$KEY:T=SHELL:wads\onesies\dead.air\dead-air.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/92135-deadair-v2/
 $KEY:D=GOTO:dead.wire
 

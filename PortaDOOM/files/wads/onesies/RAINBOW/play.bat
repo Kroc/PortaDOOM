@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ gzdoom,hw /PWAD RAINBOWv1.2.pk3
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ gzdoom /PWAD RAINBOWv1.2.pk3

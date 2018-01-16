@@ -1,6 +1,6 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\njlwgzd\play.bat
-$KEY:T=SHELL:wads\onesies\njlwgzd\njlwgzd.txt
+$KEY:P=SHELL:wads\onesies\njwlgzd\play.bat
+$KEY:T=SHELL:wads\onesies\njwlgzd\njwlgzd.txt
 $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=55741
 $KEY:V=URL:https://www.youtube.com/watch?v=4I2RNWQDD5w
 
@@ -23,7 +23,7 @@ Jumping and crouching? Sure, why not? There shouldn't be anything that needs eit
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: Small Demo map called WATERLAB used to showcase a feature in Doom Legacy v1.28 [V: https://www.youtube.com/watch?v=4I2RNWQDD5w]
+*Base					: Small Demo map called WATERLAB used to showcase a feature in Doom Legacy v1.28 [V: youtube.com/watch?v=4I2RNWQDD5w]
 *Build Time				: Not sure. 3-4 weeks I think. 
 *Editor(s) used			: DeePsea, Slade, Paint Shop Pro, GoldWave, Audacity, Misfit3D, Milkshape3D, Anvil Studio, Textpad.
 *Known Bugs				: Nothing I know of.

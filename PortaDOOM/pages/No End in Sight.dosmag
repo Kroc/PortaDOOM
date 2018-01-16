@@ -1,6 +1,6 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:wads\megawads\neis\play.bat
-$KEY:T=SHELL:wads\megawads\neis\NEIS.bat
+$KEY:T=SHELL:wads\megawads\neis\NEIS.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/neis
 
 :No End in Sight                                    * 2017 Cacoward Winner! *
