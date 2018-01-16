@@ -24,7 +24,8 @@ REM ----------------------------------------------------------------------------
 ECHO:
 ECHO     Specifies the engine requirements for the game; play.bat will select the
 ECHO     compatible engines and present the user with choices. Multiple tags can be
-ECHO     included ^(up to 6^) if separated by commas ^(without spaces^), e.g. "boom,mbf".
+ECHO     included ^(up to 6^) if separated by colons ^(without spaces^),
+ECHO     e.g. "boom:mbf".
 ECHO:
 ECHO     Feature-set / tag   Description
 ECHO     -----------------------------------------------------------------------------
@@ -198,8 +199,9 @@ REM ============================================================================
 REM # engine requirements?
 IF /I "%~1" == "/REQ" (
 	REM # this needs to be broken down into particles
-	SET REQS=%~2
-	GOTO :reqs
+	CALL :reqs "%~2"
+	SHIFT & SHIFT
+	GOTO :params
 )
 REM # WAD parameter?
 IF /I "%~1" == "/IWAD" (
@@ -434,7 +436,7 @@ IF NOT "%SKILL%" == "" SET PARAMS=%PARAMS% /SKILL %SKILL%
 REM --------------------------------------------------------------------------------------------------------------------
 REM # prboom+ requirements:
 IF "%ENGINE%" == "prboom" (
-	REM # if a compatibility-level is specificed, include this for PRBoom engines
+	REM # if a compatibility-level is specified, include this for PRBoom engines
 	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
 )
 
@@ -450,10 +452,10 @@ EXIT /B
 
 :reqs
 REM ====================================================================================================================
-SHIFT
+SET REQS=%~1
 
 REM # split the requirements list by "+" (up to three)
-FOR /F "tokens=1-3 delims=," %%A IN ("%REQS%") DO (
+FOR /F "tokens=1-3 delims=:" %%A IN ("%~1") DO (
 	IF NOT "%%A" == "" CALL :req "%%A"
 	IF NOT "%%B" == "" CALL :req "%%B"
 	IF NOT "%%C" == "" CALL :req "%%C"
@@ -461,9 +463,7 @@ FOR /F "tokens=1-3 delims=," %%A IN ("%REQS%") DO (
 	IF NOT "%%E" == "" CALL :req "%%E"
 	IF NOT "%%F" == "" CALL :req "%%F"
 )
-
-SHIFT
-GOTO :params
+GOTO:EOF
 
 :req
 REM --------------------------------------------------------------------------------------------------------------------

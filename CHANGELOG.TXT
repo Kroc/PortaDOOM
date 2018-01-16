@@ -3,6 +3,8 @@
 - = Removal
 
 16-01-18:
+* Fixed "play.bat" parsing of multiple `/REQ` tags (uses ":" now),
+  using "," or ";" are treated as parameter separators in batch!
 * Changed "Shadow of The Wool Ball" to use ZDoom (instead of GZDoom)
 
 15-01-18:
