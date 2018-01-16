@@ -3,6 +3,9 @@
 - = Removal
 
 16-01-18:
++ Added `/EXEC` parameter in "play.bat" to pass through to "doom.bat"
++ Enabled bloom effect for "Shadows of the Nighmare Realm", "Void & Rainbow",
+  "dead.air", "dead.wire" and "ALIENS (TC) 2017"
 * Fixed "play.bat" parsing of multiple `/REQ` tags (uses ":" now),
   using "," or ";" are treated as parameter separators in batch!
 * Changed "Shadow of The Wool Ball" to use ZDoom (instead of GZDoom)

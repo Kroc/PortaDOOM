@@ -23,7 +23,6 @@ PortaDOOM Alpha 3:
 
 Scripts:
 ================================================================================
-[ ] Force bloom on dead.air / dead.wire / Void & Rainbow / SotNR
 [ ] Include Crispy Doom music pack?
 [ ] doom.bat : Cannot substitute IWADs when playing demos!
 

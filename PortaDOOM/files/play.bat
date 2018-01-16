@@ -17,6 +17,7 @@ ECHO     play.bat [/REQ ^<engines^>]
 ECHO              [/IWAD ^<iwad^>] [/PWAD ^<file^>]
 ECHO              [/DEH ^<file^>] [/BEX ^<file^>]
 ECHO              [/WARP ^<map-number^>] [/SKILL ^<skill-level^>]
+ECHO              [/CMPLVL ^<complevel^>] [/EXEC ^<file>]
 ECHO              [-- ^<files^>...]
 ECHO:
 ECHO  /REQ ^<tags^>
@@ -141,6 +142,11 @@ ECHO         11    = MBF
 ECHO         12-16 = PrBoom (old versions)
 ECHO         17    = Current PrBoom 
 ECHO:
+ECHO  /EXEC ^<file^>
+REM ---------------------------------------------------------------------------------
+ECHO:
+ECHO     Execute the script file.
+ECHO:
 PAUSE & EXIT /B 0
 
 REM #	choco		- ONLY chocolate-doom/heretic/hexen
@@ -192,6 +198,7 @@ SET "PARAMS="
 SET "FILES="
 SET "ENGINE="
 SET "CMPLVL="
+SET "EXEC="
 
 
 :params
@@ -252,6 +259,14 @@ REM # compatibility-level?
 IF /I "%~1" == "/CMPLVL" (
 	REM # just capture the parameter
 	SET CMPLVL=%~2
+	REM # check for any other parameters
+	SHIFT & SHIFT
+	GOTO :params
+)
+REM # execute script?
+IF /I "%~1" == "/EXEC" (
+	REM # just capture the parameter
+	SET EXEC=%~2
 	REM # check for any other parameters
 	SHIFT & SHIFT
 	GOTO :params
@@ -434,11 +449,13 @@ IF NOT "%SKILL%" == "" SET PARAMS=%PARAMS% /SKILL %SKILL%
 
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
-REM # prboom+ requirements:
+REM # PrBoom+ requirements:
 IF "%ENGINE%" == "prboom" (
 	REM # if a compatibility-level is specified, include this for PRBoom engines
 	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
 )
+REM # execute script?
+IF DEFINED EXEC SET PARAMS=%PARAMS% /EXEC %EXEC%
 
 REM # hardware or software rendering?
 REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
