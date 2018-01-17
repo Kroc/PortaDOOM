@@ -11,7 +11,7 @@ SUB refreshScreen
     drawHeader
     drawPage
     drawStatus
-    'draw the overlayed dialog box if one is currently present
+    'draw the overlaid dialog box if one is currently present
     IF dialogOn` THEN drawDialog
 
     'flip the display buffers
@@ -66,7 +66,7 @@ SUB drawHeader
         LOCATE (HEAD_TOP + 1), SCREEN_WIDTH - tab_width%
         PRINT CHR$(ASC_BOX_V);
         IF PageNum% > 1 THEN
-            COLOR Themes(PageTheme%).colorPageTab ''+ BLINK
+            COLOR Themes(PageTheme%).colorPageTab + BLINK
             PRINT CHR$(ASC_ARR_LT);
             COLOR Themes(PageTheme%).colorPageTab
         ELSE
@@ -74,7 +74,7 @@ SUB drawHeader
         END IF
         PRINT " " + tab_text$ + " ";
         IF PageNum% < PageCount% THEN
-            COLOR Themes(PageTheme%).colorPageTab ''+ BLINK
+            COLOR Themes(PageTheme%).colorPageTab + BLINK
             PRINT CHR$(ASC_ARR_RT);
             COLOR Themes(PageTheme%).colorPageTab
         ELSE
@@ -248,6 +248,8 @@ END SUB
 'draw a dialogue box, if present
 '=============================================================================
 SUB drawDialog
+    DIM x%, y%
+
     'calculate the position of the border box on screen
     DIM boxWidth%: boxWidth% = dialogWidth% + 4
     DIM boxLeft%: boxLeft% = (SCREEN_WIDTH - boxWidth%) / 2
@@ -255,25 +257,48 @@ SUB drawDialog
     DIM boxTop%: boxTop% = 1 + (SCREEN_HEIGHT - (boxHeight% + 2)) / 2
 
     'draw the dialogue border and background
-    ''COLOR HELP_FGND + BLINK, HELP_BKGD
-     COLOR HELP_FGND, HELP_BKGD
+    COLOR HELP_FGND + BLINK, HELP_BKGD
     LOCATE boxTop%, boxLeft%
     PRINT CHR$(ASC_BOX_TL) + STRING$(dialogWidth%+ 2, ASC_BOX_H) + _
           CHR$(ASC_BOX_TR);
-    DIM i%
-    FOR i% = (boxTop% + 1) TO (boxTop% + boxHeight%)
-        LOCATE i%, boxLeft%
+    FOR y% = (boxTop% + 1) TO (boxTop% + boxHeight%)
+        LOCATE y%, boxLeft%
         PRINT CHR$(ASC_BOX_V) + SPACE$(dialogWidth% + 2) + CHR$(ASC_BOX_V);
     NEXT
-    LOCATE i%, boxLeft%
+    LOCATE y%, boxLeft%
     PRINT CHR$(ASC_BOX_BL) + STRING$(dialogWidth% + 2, ASC_BOX_H) + _
           CHR$(ASC_BOX_BR);
 
     'draw the dialogue contents
     COLOR HELP_FGND, HELP_BKGD
-    FOR i% = 1 TO UBOUND(dialogLines$)
-        LOCATE boxTop% + i%, boxLeft% + 2
-        PRINT dialogLines$(i%)
+    FOR y% = 1 TO UBOUND(dialogLines$)
+        LOCATE boxTop% + y%, boxLeft% + 2
+        PRINT dialogLines$(y%)
+    NEXT
+
+    'draw the shadow around the box:
+    DIM char%
+    
+    'begin with the shadow on the side
+    LET x% = boxLeft% + boxWidth%
+    FOR y% = (boxTop% + 1) TO (boxTop% + boxHeight% + 1)
+        LET char% = SCREEN(y%, x%, 0)
+        'BUG: `SCREEN` function returns ASCII 219 when using 30 rows
+        IF char% = 219 THEN LET char% = 32
+        'create the shadow effect
+        COLOR DKGREY, BLACK
+        LOCATE y%, x%
+        PRINT CHR$(char%);
+    NEXT
+    'draw the shadow along the bottom
+    LET y% = boxTop% + boxHeight% + 2
+    FOR x% = (boxLeft% + 1) TO (boxLeft% + boxWidth%)
+        LET char% = SCREEN(y%, x%, 0)
+        'BUG: `SCREEN` function returns ASCII 219 when using 30 rows
+        IF char% = 219 THEN LET char% = 32
+        'create the shadow effect
+        COLOR DKGREY, BLACK
+        LOCATE y%, x%
+        PRINT CHR$(char%);
     NEXT
 END SUB
-
