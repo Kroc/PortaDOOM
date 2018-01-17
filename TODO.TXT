@@ -43,7 +43,6 @@ Scripts:
     For most other engines, we'll have to modify the .cfg file.
     - DOOM Retro has no setup program, will *require* the above!
 
-[ ] dosmag: Reinstate blinking with the event loop?
 [ ] dosmag: "^_^" not escaping properly
 [ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
     http://www.qb64.net/forum/index.php?topic=12306.msg108013#msg108013
@@ -58,7 +57,6 @@ Scripts:
     based on engine support -- e.g. ALIENS TC
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
      inputting text, even when using a mouse"
-[ ] Need a "dotted tab" for contents and index pages
 
 [ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 
@@ -71,8 +69,9 @@ Scripts:
 	[ ] Convert the statusbar/dialogue to a theme set
 	[ ] Allow printing of text in any theme
 	    (i.e. to allow printing of formatted text in statusbar/dialog)
-	[ ] Add shadow to dialog box
+	[X] Add shadow to dialog box
 
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
+[ ] Need a "dotted tab" for contents and index pages

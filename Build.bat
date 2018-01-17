@@ -130,11 +130,11 @@ CALL :do_cacowards2017
 CALL :do_psxdoomtc
 CALL :do_launcher
 
-REM ECHO:
-REM ECHO Complete.
-REM ECHO:
-REM PAUSE
-REM EXIT /B
+ECHO:
+ECHO Complete.
+ECHO:
+PAUSE
+EXIT /B
 
 ECHO * Make PortaDOOM ...
 REM --------------------------------------------------------------------------------------------------------------------
