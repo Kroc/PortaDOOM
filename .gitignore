@@ -7,7 +7,10 @@
 !*.md
 
 # QB64 source code files
-!*.bas
+!*.qb64
+!*.bi
+!*.bm
+!inc
 
 # include the DOSmag executable so developers wishing to
 # build their own disk-zines do not have to compile their own

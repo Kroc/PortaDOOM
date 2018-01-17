@@ -1,3 +1,8 @@
+17-JAN-18:
+* QB64 upgraded to v1.2 -- improved compilation
+* Re-instated blinking effect whilst keeping 30 rows (640x480)
+* Slight re-organisation of code
+
 28-DEC-17:
 * Increased screen height to 30 rows (640x480), though this currently
   removes the blinking text ability (this may be restored later)
