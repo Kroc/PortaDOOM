@@ -1,0 +1,240 @@
+'why isn't this built-in?
+'=============================================================================
+FUNCTION TRIM$ (text$)
+    TRIM$ = LTRIM$(RTRIM$(text$))
+END FUNCTION
+
+'convert an integer into a string and trim it
+'=============================================================================
+FUNCTION STRINT$ (number%)
+    STRINT$ = LTRIM$(STR$(number%))
+END FUNCTION
+
+'truncate a string to a maximum length, adding ellipsis if necessary
+'=============================================================================
+FUNCTION TRUNCATE$ (text$, length%)
+    IF LEN(text$) > length% THEN
+        'replace the end with an ellipsis
+        TRUNCATE$ = LEFT$(text$, length% - 3) + "..."
+    ELSE
+        'text fits, no truncation needed
+        TRUNCATE$ = text$
+    END IF
+END FUNCTION
+
+'truncate the left hand side of a string to fit a maximum length
+'=============================================================================
+FUNCTION RTRUNCATE$ (text$, length%)
+    IF LEN(text$) > length% THEN
+        'replace the beginning with an ellipsis
+        RTRUNCATE$ = "..." + RIGHT$(text$, length% - 3)
+    ELSE
+        'text fits, no truncation needed
+        RTRUNCATE$ = text$
+    END IF
+END FUNCTION
+
+'convert a UTF-8 string to an ANSI(cp437) string, with some transliteration
+'=============================================================================
+FUNCTION UTF8ANSI$ (text$)
+    DIM b~%%, c~%%, d~%% '=_UNSIGNED _BYTE
+    DIM p~& '.............=_UNSIGNED LONG
+
+    'we'll need to walk the string as bytes
+    '(this is the assumption of QB64, it doesn't handle wide-strings)
+    DIM i%
+    FOR i% = 1 TO LEN(text$)
+        'read a byte
+        b~%% = ASC(text$, i%)
+        'if byte is <128 then it's the same in ASCII/ANSI/UTF-8,
+        p~& = b~%%
+
+        IF (b~%% AND &HE0) = &HC0 THEN
+            'this is a 2-byte UTF-8 sequence;
+            '(the top three bits are "110?????")
+            'read the next byte to determine the character
+            i% = i% + 1: c~%% = ASC(text$, i%)
+            'combine the two bytes into a single (integer) character
+            p~& = (b~%% AND &H1F&) * &H40 + (c~%% AND &H3F&)
+
+        ELSEIF (b~%% AND &HF0) = &HE0 THEN
+            'this is a 3-byte UTF-8 sequence:
+            '(the top four bits are "1110????")
+            i% = i% + 1: c~%% = ASC(text$, i%)
+            i% = i% + 1: d~%% = ASC(text$, i%)
+            p~& = (b~%% and &HF) * &H1000 _
+                + (c~%% AND &H3F) * &H40 _
+                + (d~%% AND &H3F)
+        END IF
+
+        SELECT CASE p~&
+            CASE IS < 128
+                'if byte is <128 then it's the same in ASCII/ANSI/UTF-8
+                UTF8ANSI$ = UTF8ANSI$ + CHR$(b~%%)
+
+            CASE &H263A: UTF8ANSI$ = UTF8ANSI$ + CHR$(1)
+            CASE &H263B: UTF8ANSI$ = UTF8ANSI$ + CHR$(2)
+            CASE &H2665: UTF8ANSI$ = UTF8ANSI$ + CHR$(3)
+            CASE &H2666: UTF8ANSI$ = UTF8ANSI$ + CHR$(4)
+            CASE &H2663: UTF8ANSI$ = UTF8ANSI$ + CHR$(5)
+            CASE &H2660: UTF8ANSI$ = UTF8ANSI$ + CHR$(6)
+            CASE &H2022: UTF8ANSI$ = UTF8ANSI$ + CHR$(7)
+            CASE &H25D8: UTF8ANSI$ = UTF8ANSI$ + CHR$(8)
+            CASE &H25CB: UTF8ANSI$ = UTF8ANSI$ + CHR$(9)
+            CASE &H25D9: UTF8ANSI$ = UTF8ANSI$ + CHR$(10)
+            CASE &H2642: UTF8ANSI$ = UTF8ANSI$ + CHR$(11)
+            CASE &H2640: UTF8ANSI$ = UTF8ANSI$ + CHR$(12)
+            CASE &H266A: UTF8ANSI$ = UTF8ANSI$ + CHR$(13)
+            CASE &H266B: UTF8ANSI$ = UTF8ANSI$ + CHR$(14)
+            CASE &H263C: UTF8ANSI$ = UTF8ANSI$ + CHR$(15)
+            CASE &H25BA: UTF8ANSI$ = UTF8ANSI$ + CHR$(16)
+            CASE &H25C4: UTF8ANSI$ = UTF8ANSI$ + CHR$(17)
+            CASE &H2195: UTF8ANSI$ = UTF8ANSI$ + CHR$(18)
+            CASE &H203C: UTF8ANSI$ = UTF8ANSI$ + CHR$(19)
+            CASE &H00B6: UTF8ANSI$ = UTF8ANSI$ + CHR$(20)
+            CASE &H00A7: UTF8ANSI$ = UTF8ANSI$ + CHR$(21)
+            CASE &H25AC: UTF8ANSI$ = UTF8ANSI$ + CHR$(22)
+            CASE &H21A8: UTF8ANSI$ = UTF8ANSI$ + CHR$(23)
+            CASE &H2191: UTF8ANSI$ = UTF8ANSI$ + CHR$(24)
+            CASE &H2193: UTF8ANSI$ = UTF8ANSI$ + CHR$(25)
+            CASE &H2192: UTF8ANSI$ = UTF8ANSI$ + CHR$(26)
+            CASE &H2190: UTF8ANSI$ = UTF8ANSI$ + CHR$(27)
+            CASE &H221F: UTF8ANSI$ = UTF8ANSI$ + CHR$(28)
+            CASE &H2194: UTF8ANSI$ = UTF8ANSI$ + CHR$(29)
+            CASE &H25B2: UTF8ANSI$ = UTF8ANSI$ + CHR$(30)
+            CASE &H25BC: UTF8ANSI$ = UTF8ANSI$ + CHR$(31)
+            CASE &H2302: UTF8ANSI$ = UTF8ANSI$ + CHR$(127)
+            CASE &H00C7: UTF8ANSI$ = UTF8ANSI$ + CHR$(128)
+            CASE &H00FC: UTF8ANSI$ = UTF8ANSI$ + CHR$(129)
+            CASE &H00E9: UTF8ANSI$ = UTF8ANSI$ + CHR$(130)
+            CASE &H00E2: UTF8ANSI$ = UTF8ANSI$ + CHR$(131)
+            CASE &H00E4: UTF8ANSI$ = UTF8ANSI$ + CHR$(132)
+            CASE &H00E0: UTF8ANSI$ = UTF8ANSI$ + CHR$(133)
+            CASE &H00E5: UTF8ANSI$ = UTF8ANSI$ + CHR$(134)
+            CASE &H00E7: UTF8ANSI$ = UTF8ANSI$ + CHR$(135)
+            CASE &H00EA: UTF8ANSI$ = UTF8ANSI$ + CHR$(136)
+            CASE &H00EB: UTF8ANSI$ = UTF8ANSI$ + CHR$(137)
+            CASE &H00E8: UTF8ANSI$ = UTF8ANSI$ + CHR$(138)
+            CASE &H00EF: UTF8ANSI$ = UTF8ANSI$ + CHR$(139)
+            CASE &H00EE: UTF8ANSI$ = UTF8ANSI$ + CHR$(140)
+            CASE &H00EC: UTF8ANSI$ = UTF8ANSI$ + CHR$(141)
+            CASE &H00C4: UTF8ANSI$ = UTF8ANSI$ + CHR$(142)
+            CASE &H00C5: UTF8ANSI$ = UTF8ANSI$ + CHR$(143)
+            CASE &H00C9: UTF8ANSI$ = UTF8ANSI$ + CHR$(144)
+            CASE &H00E6: UTF8ANSI$ = UTF8ANSI$ + CHR$(145)
+            CASE &H00C6: UTF8ANSI$ = UTF8ANSI$ + CHR$(146)
+            CASE &H00F4: UTF8ANSI$ = UTF8ANSI$ + CHR$(147)
+            CASE &H00F6: UTF8ANSI$ = UTF8ANSI$ + CHR$(148)
+            CASE &H00F2: UTF8ANSI$ = UTF8ANSI$ + CHR$(149)
+            CASE &H00FB: UTF8ANSI$ = UTF8ANSI$ + CHR$(150)
+            CASE &H00F9: UTF8ANSI$ = UTF8ANSI$ + CHR$(151)
+            CASE &H00FF: UTF8ANSI$ = UTF8ANSI$ + CHR$(152)
+            CASE &H00D6: UTF8ANSI$ = UTF8ANSI$ + CHR$(153)
+            CASE &H00DC: UTF8ANSI$ = UTF8ANSI$ + CHR$(154)
+            CASE &H00A2: UTF8ANSI$ = UTF8ANSI$ + CHR$(155)
+            CASE &H00A3: UTF8ANSI$ = UTF8ANSI$ + CHR$(156)
+            CASE &H00A5: UTF8ANSI$ = UTF8ANSI$ + CHR$(157)
+            CASE &H20A7: UTF8ANSI$ = UTF8ANSI$ + CHR$(158)
+            CASE &H0192: UTF8ANSI$ = UTF8ANSI$ + CHR$(159)
+            CASE &H00E1: UTF8ANSI$ = UTF8ANSI$ + CHR$(160)
+            CASE &H00ED: UTF8ANSI$ = UTF8ANSI$ + CHR$(161)
+            CASE &H00F3: UTF8ANSI$ = UTF8ANSI$ + CHR$(162)
+            CASE &H00FA: UTF8ANSI$ = UTF8ANSI$ + CHR$(163)
+            CASE &H00F1: UTF8ANSI$ = UTF8ANSI$ + CHR$(164)
+            CASE &H00D1: UTF8ANSI$ = UTF8ANSI$ + CHR$(165)
+            CASE &H00AA: UTF8ANSI$ = UTF8ANSI$ + CHR$(166)
+            CASE &H00BA: UTF8ANSI$ = UTF8ANSI$ + CHR$(167)
+            CASE &H00BF: UTF8ANSI$ = UTF8ANSI$ + CHR$(168)
+            CASE &H2310: UTF8ANSI$ = UTF8ANSI$ + CHR$(169)
+            CASE &H00AC: UTF8ANSI$ = UTF8ANSI$ + CHR$(170)
+            CASE &H00BD: UTF8ANSI$ = UTF8ANSI$ + CHR$(171)
+            CASE &H00BC: UTF8ANSI$ = UTF8ANSI$ + CHR$(172)
+            CASE &H00A1: UTF8ANSI$ = UTF8ANSI$ + CHR$(173)
+            CASE &H00AB: UTF8ANSI$ = UTF8ANSI$ + CHR$(174)
+            CASE &H00BB: UTF8ANSI$ = UTF8ANSI$ + CHR$(175)
+            CASE &H2591: UTF8ANSI$ = UTF8ANSI$ + CHR$(176)
+            CASE &H2592: UTF8ANSI$ = UTF8ANSI$ + CHR$(177)
+            CASE &H2593: UTF8ANSI$ = UTF8ANSI$ + CHR$(178)
+            CASE &H2502: UTF8ANSI$ = UTF8ANSI$ + CHR$(179)
+            CASE &H2524: UTF8ANSI$ = UTF8ANSI$ + CHR$(180)
+            CASE &H2561: UTF8ANSI$ = UTF8ANSI$ + CHR$(181)
+            CASE &H2562: UTF8ANSI$ = UTF8ANSI$ + CHR$(182)
+            CASE &H2556: UTF8ANSI$ = UTF8ANSI$ + CHR$(183)
+            CASE &H2555: UTF8ANSI$ = UTF8ANSI$ + CHR$(184)
+            CASE &H2563: UTF8ANSI$ = UTF8ANSI$ + CHR$(185)
+            CASE &H2551: UTF8ANSI$ = UTF8ANSI$ + CHR$(186)
+            CASE &H2557: UTF8ANSI$ = UTF8ANSI$ + CHR$(187)
+            CASE &H255D: UTF8ANSI$ = UTF8ANSI$ + CHR$(188)
+            CASE &H255C: UTF8ANSI$ = UTF8ANSI$ + CHR$(189)
+            CASE &H255B: UTF8ANSI$ = UTF8ANSI$ + CHR$(190)
+            CASE &H2510: UTF8ANSI$ = UTF8ANSI$ + CHR$(191)
+            CASE &H2514: UTF8ANSI$ = UTF8ANSI$ + CHR$(192)
+            CASE &H2534: UTF8ANSI$ = UTF8ANSI$ + CHR$(193)
+            CASE &H252C: UTF8ANSI$ = UTF8ANSI$ + CHR$(194)
+            CASE &H251C: UTF8ANSI$ = UTF8ANSI$ + CHR$(195)
+            CASE &H2500: UTF8ANSI$ = UTF8ANSI$ + CHR$(196)
+            CASE &H253C: UTF8ANSI$ = UTF8ANSI$ + CHR$(197)
+            CASE &H255E: UTF8ANSI$ = UTF8ANSI$ + CHR$(198)
+            CASE &H255F: UTF8ANSI$ = UTF8ANSI$ + CHR$(199)
+            CASE &H255A: UTF8ANSI$ = UTF8ANSI$ + CHR$(200)
+            CASE &H2554: UTF8ANSI$ = UTF8ANSI$ + CHR$(201)
+            CASE &H2569: UTF8ANSI$ = UTF8ANSI$ + CHR$(202)
+            CASE &H2566: UTF8ANSI$ = UTF8ANSI$ + CHR$(203)
+            CASE &H2560: UTF8ANSI$ = UTF8ANSI$ + CHR$(204)
+            CASE &H2550: UTF8ANSI$ = UTF8ANSI$ + CHR$(205)
+            CASE &H256C: UTF8ANSI$ = UTF8ANSI$ + CHR$(206)
+            CASE &H2567: UTF8ANSI$ = UTF8ANSI$ + CHR$(207)
+            CASE &H2568: UTF8ANSI$ = UTF8ANSI$ + CHR$(208)
+            CASE &H2564: UTF8ANSI$ = UTF8ANSI$ + CHR$(219)
+            CASE &H2565: UTF8ANSI$ = UTF8ANSI$ + CHR$(210)
+            CASE &H2559: UTF8ANSI$ = UTF8ANSI$ + CHR$(211)
+            CASE &H2558: UTF8ANSI$ = UTF8ANSI$ + CHR$(212)
+            CASE &H2552: UTF8ANSI$ = UTF8ANSI$ + CHR$(213)
+            CASE &H2553: UTF8ANSI$ = UTF8ANSI$ + CHR$(214)
+            CASE &H256B: UTF8ANSI$ = UTF8ANSI$ + CHR$(215)
+            CASE &H256A: UTF8ANSI$ = UTF8ANSI$ + CHR$(216)
+            CASE &H2518: UTF8ANSI$ = UTF8ANSI$ + CHR$(217)
+            CASE &H250C: UTF8ANSI$ = UTF8ANSI$ + CHR$(218)
+            CASE &H2588: UTF8ANSI$ = UTF8ANSI$ + CHR$(219)
+            CASE &H2584: UTF8ANSI$ = UTF8ANSI$ + CHR$(220)
+            CASE &H258C: UTF8ANSI$ = UTF8ANSI$ + CHR$(221)
+            CASE &H2590: UTF8ANSI$ = UTF8ANSI$ + CHR$(222)
+            CASE &H2580: UTF8ANSI$ = UTF8ANSI$ + CHR$(223)
+            CASE &H03B1: UTF8ANSI$ = UTF8ANSI$ + CHR$(224)
+            CASE &H00DF: UTF8ANSI$ = UTF8ANSI$ + CHR$(225)
+            CASE &H0393: UTF8ANSI$ = UTF8ANSI$ + CHR$(226)
+            CASE &H03C0: UTF8ANSI$ = UTF8ANSI$ + CHR$(227)
+            CASE &H03A3: UTF8ANSI$ = UTF8ANSI$ + CHR$(228)
+            CASE &H03C3: UTF8ANSI$ = UTF8ANSI$ + CHR$(229)
+            CASE &H00B5: UTF8ANSI$ = UTF8ANSI$ + CHR$(230)
+            CASE &H03C4: UTF8ANSI$ = UTF8ANSI$ + CHR$(231)
+            CASE &H03A6: UTF8ANSI$ = UTF8ANSI$ + CHR$(232)
+            CASE &H0398: UTF8ANSI$ = UTF8ANSI$ + CHR$(233)
+            CASE &H03A9: UTF8ANSI$ = UTF8ANSI$ + CHR$(234)
+            CASE &H03B4: UTF8ANSI$ = UTF8ANSI$ + CHR$(235)
+            CASE &H221E: UTF8ANSI$ = UTF8ANSI$ + CHR$(236)
+            CASE &H03C6: UTF8ANSI$ = UTF8ANSI$ + CHR$(237)
+            CASE &H03B5: UTF8ANSI$ = UTF8ANSI$ + CHR$(238)
+            CASE &H2229: UTF8ANSI$ = UTF8ANSI$ + CHR$(239)
+            CASE &H2261: UTF8ANSI$ = UTF8ANSI$ + CHR$(240)
+            CASE &H00B1: UTF8ANSI$ = UTF8ANSI$ + CHR$(241)
+            CASE &H2265: UTF8ANSI$ = UTF8ANSI$ + CHR$(242)
+            CASE &H2264: UTF8ANSI$ = UTF8ANSI$ + CHR$(243)
+            CASE &H2320: UTF8ANSI$ = UTF8ANSI$ + CHR$(244)
+            CASE &H2321: UTF8ANSI$ = UTF8ANSI$ + CHR$(245)
+            CASE &H00F7: UTF8ANSI$ = UTF8ANSI$ + CHR$(246)
+            CASE &H2248: UTF8ANSI$ = UTF8ANSI$ + CHR$(247)
+            CASE &H00B0: UTF8ANSI$ = UTF8ANSI$ + CHR$(248)
+            CASE &H2219: UTF8ANSI$ = UTF8ANSI$ + CHR$(249)
+            CASE &H00B7: UTF8ANSI$ = UTF8ANSI$ + CHR$(250)
+            CASE &H221A: UTF8ANSI$ = UTF8ANSI$ + CHR$(251)
+            CASE &H207F: UTF8ANSI$ = UTF8ANSI$ + CHR$(252)
+            CASE &H00B2: UTF8ANSI$ = UTF8ANSI$ + CHR$(253)
+            CASE &H25A0: UTF8ANSI$ = UTF8ANSI$ + CHR$(254)
+            CASE &H00A0: UTF8ANSI$ = UTF8ANSI$ + CHR$(255)
+            CASE ELSE
+                'not a mappable Unicode point
+                UTF8ANSI$ = UTF8ANSI$ + CHR$(0)
+        END SELECT
+    NEXT
+END FUNCTION

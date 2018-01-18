@@ -277,15 +277,19 @@ SUB drawDialog
     NEXT
 
     'draw the shadow around the box:
+    '-------------------------------------------------------------------------
     DIM char%
     
     'begin with the shadow on the side
     LET x% = boxLeft% + boxWidth%
     FOR y% = (boxTop% + 1) TO (boxTop% + boxHeight% + 1)
         LET char% = SCREEN(y%, x%, 0)
-        'BUG: `SCREEN` function returns ASCII 219 when using 30 rows
-        IF char% = 219 THEN LET char% = 32
-        'create the shadow effect
+        'BUG: `SCREEN` returns ASCII 219 when using SCREEN 12 / 30 rows
+        IF char% = 219 THEN LET char% = ASC_SPC
+        'create the shadow effect;
+        'for already black backgrounds, use a different effect
+        IF SCREEN(y%, x%, 1) \16 = 0 THEN LET char% = 176
+        'reprint the tile with dark colours
         COLOR DKGREY, BLACK
         LOCATE y%, x%
         PRINT CHR$(char%);
@@ -294,9 +298,13 @@ SUB drawDialog
     LET y% = boxTop% + boxHeight% + 2
     FOR x% = (boxLeft% + 1) TO (boxLeft% + boxWidth%)
         LET char% = SCREEN(y%, x%, 0)
-        'BUG: `SCREEN` function returns ASCII 219 when using 30 rows
+        'BUG: `SCREEN` returns ASCII 219 when using SCREEN 12 / 30 rows
         IF char% = 219 THEN LET char% = 32
-        'create the shadow effect
+        'create the shadow effect;
+        'for already black backgrounds, use a different set of colours
+        'for already black backgrounds, use a different effect
+        IF SCREEN(y%, x%, 1) \16 = 0 THEN LET char% = 176
+        'reprint the tile with dark colours
         COLOR DKGREY, BLACK
         LOCATE y%, x%
         PRINT CHR$(char%);

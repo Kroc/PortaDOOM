@@ -19,6 +19,7 @@ CONST RED = 4 '....COLOR code for dark-red
 CONST PURPLE = 5 '.COLOR code for purple
 CONST ORANGE = 6 '.COLOR code for brown / orange
 CONST LTGREY = 7 '.COLOR code for "white" (light grey)
+
 CONST DKGREY = 8 '.COLOR code for "bright black" (dark grey), foreground ONLY
 CONST LTBLUE = 9 '.COLOR code for "bright blue", foreground ONLY
 CONST LIME = 10 '..COLOR code for "bright green", foreground ONLY
