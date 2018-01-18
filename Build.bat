@@ -375,7 +375,7 @@ ECHO Pulling DOSmag updates from GitHub:
 ECHO (working copy must be clean!)
 ECHO:
 
-git subtree pull --prefix bin\DOSmag --squash dosmag master
+git subtree pull --prefix bin/DOSmag --squash dosmag master
 
 COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe >NUL
 
@@ -390,7 +390,7 @@ CLS
 ECHO Pushing DOSmag changes to GitHub:
 ECHO:
 
-git subtree push --prefix bin\DOSmag dosmag master
+git subtree push --prefix bin/DOSmag dosmag master
 
 ECHO:
 PAUSE

@@ -31,6 +31,7 @@ Scripts:
     [ ] Hacx
     [ ] Chex / Chex3
     [ ] Adventures of Square (SHAREWARE)
+    [ ] Rise of The Wool Ball
 
 [ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.
     I.e. we need to control load order or have `/MOD` option or some-such
