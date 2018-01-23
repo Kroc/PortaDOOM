@@ -6,6 +6,11 @@
 * Fixed typo in doom.bat that was preventing anything from working!
   How did this slip through, when I tested each release??
 
+21-01-18:
+* Upgraded DOOM Retro to 2.6.4; this fixes the config-file issue so the engine
+  can be included proper now
+* DUMP3 now uses GZDoom v2.2 due to compatibility bug with later versions
+
 17-01-18:
 * QB64 upgraded to v1.2 -- improved DOSmag compilation
 * Re-instated blinking effect in DOSmag whilst keeping 30 rows (640x480)
