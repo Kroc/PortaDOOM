@@ -15,7 +15,6 @@ $KEY:M=GOTO:DTWiD Series #03
 $KEY:N=GOTO:DOOM(4) for DooM
 $KEY:O=GOTO:Doomed Space Wars
 $KEY:P=GOTO:DoomRL Arsenal
-$KEY:Q=GOTO:DUMP Episode 3
 
 ^C:INDEX :: D
 
@@ -37,4 +36,3 @@ $KEY:Q=GOTO:DUMP Episode 3
 - [N] *DOOM(4) for DooM									Mods
 - [O] *Doomed Space Wars								Episodes
 - [P] *DoomRL Arsenal									Mods
-- [Q] *DUMP Episode 3: BFG Edition						Community Projects

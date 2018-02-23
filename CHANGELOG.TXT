@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+23-02-18:
+* Removed DUMP3, it's very buggy and not worth the effort right now
+
 21-01-18:
 * Upgraded DOOM Retro to 2.6.4; this fixes the config-file issue so the engine
   can be included proper now

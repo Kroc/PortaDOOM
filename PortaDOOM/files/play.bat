@@ -17,7 +17,7 @@ ECHO     play.bat [/REQ ^<engines^>]
 ECHO              [/IWAD ^<iwad^>] [/PWAD ^<file^>]
 ECHO              [/DEH ^<file^>] [/BEX ^<file^>]
 ECHO              [/WARP ^<map-number^>] [/SKILL ^<skill-level^>]
-ECHO              [/CMPLVL ^<complevel^>] [/EXEC ^<file>]
+ECHO              [/CMPLVL ^<complevel^>] [/EXEC ^<file^>]
 ECHO              [-- ^<files^>...]
 ECHO:
 ECHO  /REQ ^<tags^>
@@ -74,6 +74,19 @@ REM ECHO:
 REM ECHO     choco       chocolate-doom/heretic/hexen ONLY
 REM ECHO     zdoom       
 REM ECHO:
+
+ECHO     This is a list of the tags associated with each engine:
+ECHO:
+ECHO       choco-doom        vanilla,deh
+ECHO       choco-heretic     vanilla,deh
+ECHO       choco-hexen       vanilla,deh
+ECHO       choco-strife      vanilla,deh
+ECHO       crispy-doom       vanilla,deh,no-limit
+ECHO       doomretro         vanilla,deh,no-limit,boom
+ECHO       doom64ex          doom64
+ECHO       zdoom             vanilla,deh,no-limit,boom,mbf,acs,decorate,udmf
+ECHO:
+
 ECHO  /IWAD ^<iwad^>
 ECHO:
 ECHO     Specifies the IWAD to use. Note that unlike "doom.bat", some shorthand terms
