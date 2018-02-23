@@ -8,6 +8,7 @@ Pages:
 [-] Index pages at the end of each Cacowards; allows the separate Cacowards
     packages to have an index
 [ ] Need launchers for bonus levels on Eternal Doom III
+[ ] Add The Given LowDetail / update its page text
 
 PortaDOOM Alpha 3:
 
@@ -32,6 +33,7 @@ Scripts:
     [ ] Chex / Chex3
     [ ] Adventures of Square (SHAREWARE)
     [ ] Rise of The Wool Ball
+    [ ] Blade of Agony? (could do with its own settings file)
 
 [ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.
     I.e. we need to control load order or have `/MOD` option or some-such
@@ -54,7 +56,7 @@ Scripts:
 [X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
     [ ] Do not allow play.bat / doom.bat select an .ipk3 / .iwad file for
         GZDoom < 3.2 or other engines?
-[ ] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
+[-] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
     based on engine support -- e.g. ALIENS TC
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
      inputting text, even when using a mouse"
@@ -66,9 +68,9 @@ Scripts:
         selected; e.g. "strangeaeonsexp+HighNoonDrifter"
 
 [ ] DOSmag: Themes
-    [ ] Fix "?" invalid character
+    [X] Fix "?" invalid character
 	[ ] Convert the statusbar/dialogue to a theme set
-	[ ] Allow printing of text in any theme
+	[-] Allow printing of text in any theme
 	    (i.e. to allow printing of formatted text in statusbar/dialog)
 	[X] Add shadow to dialog box
 

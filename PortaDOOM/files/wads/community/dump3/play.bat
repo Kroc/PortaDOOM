@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ gzdoom-22 /PWAD DUMP-3.pk3
