@@ -6,6 +6,19 @@
 * Fixed typo in doom.bat that was preventing anything from working!
   How did this slip through, when I tested each release??
 
+19-03-18:
++ PSX DOOM now resets weapons between 'episodes'
+* A new launcher is being built to solve the issue of managing mod selection &
+  compatibility. A UI interface is being built up which includes functions for
+  formatted string printing. DOSmag has been re-factored to use this, greatly
+  reducing the complexity of printing the formatted lines there
+* "The Given" updated to final release. Adds a Low-Detail mode.
+  This needs to be added to the page I think
+* mods have been moved outside of wads folder, this will help in the future
+  with the custom launcher
+* Numerous pages have minor formatting corrections to account for the different
+  method of processing
+
 23-02-18:
 * Removed DUMP3, it's very buggy and not worth the effort right now
 

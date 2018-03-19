@@ -1,10 +1,10 @@
 $NAV=Mods
-$KEY:T=SHELL:wads\mods\Doom4Doom\Readme.txt
+$KEY:T=SHELL:mods\Doom4Doom\Readme.txt
 $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DOOM(4) for DooM                                   * 2016 Cacoward Winner! *
 :===============================================================================
-								*[T] .txt [W] Website
+								 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>10>31	  Author : *Various (see credits)
 :Levels   : *None		   Modes : *Single

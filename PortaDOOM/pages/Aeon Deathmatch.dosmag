@@ -6,7 +6,7 @@ $KEY:2=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-
 
 :Aeon Deathmatch                                    * 2016 Cacoward Winner! *
 :===============================================================================
-								*[T] .txt [W] Website
+								 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>11>18	  Author : *Various (see credits)
 :Levels   : *33			   Modes : *Last Man Standing 2-64 players, Deathmatch
@@ -16,7 +16,7 @@ $KEY:2=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-
 $KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
-! Use *[D] Doomseeker* to play online and search for 'aeondm'
+! Use [D: Doomseeker] to play online and search for 'aeondm'
 
 - 33 maps suitable for Team/Last Man Standing
 - Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons

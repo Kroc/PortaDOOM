@@ -4,9 +4,9 @@ Primary purpose         : Single Player
 ===========================================================================
 Title                   : The Given
 Filename                : TheGiven.wad
-Release date            : ??????????????
+Release date            : 1/29/18
 Author                  : dobu gabu maru
-Email Address           : edemaomega@yahoo.com
+Email Address           : [redacted]
 Other Files By Author   : Saturnine Chapel, Moonlight, Panophobia.
                           Co-leader of NOVA & NOVA 2. Got a variety of
                           other maps elsewhere (MAYhems, THT, UDINO, TNT:R)
@@ -17,7 +17,8 @@ Description             : The Given is a monsterless puzzle map with an
 Additional Credits to   : Mouldy, dew, Demon of the Well, & Magnusblitz
                           for the invaluable feedback, Eris for the
                           gorgeous music, Jimmy for the excellent sprite
-                          edits, Mechadon for the sky bits.
+                          edits, Mechadon for the sky bits, and various
+                          other playtesters for additional feedback/demos.
 ===========================================================================
 * What is included *
 
@@ -54,7 +55,12 @@ Music Tracks            : All music composed by Eris Falling
                           MAP01: "The Village that Time Forgot"
                           MAP02: "Diwedh (Epilogue)"
 
+* NOTE! *
 
+If The Given plays slowly on your computer, I've also included
+TheGivenLD.wad, which is "The Given (Low Detail)". It removes ~50% 
+of the lines from the original map, so hopefully performance will be
+better/bearable.
 
 * Copyright / Permissions *
 
@@ -76,12 +82,27 @@ The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
 
 ===========================================================================
 
+THE GIVEN
+By Dobu Gabu Maru
+
+With hushed tones do the land-dwellers speak of the subterranean kingdom of
+Occula, home of the Unseen God. Legends tell of its lurid foods, crystal-
+top hills, and rivers of verdant water. But these tall tales also mention
+how the land is cursed, subject to a strange phenomenon where residents
+suddenly vanish; where they are mysteriously Taken. The denizens of Occula
+have sought tirelessly to appease the capricious nature of the Unseen God,
+adorning their houses with wood and marble to avoid Its silencing grasp.
+Perhaps the most well-known of these superstitious rituals--and the one
+that gives the land-dwellers pause when speaking of Occula--is the sad and
+brutal rite only known as The Given...
+
+(more lore can be found within the wad itself!)
+
++-+-+-+-+-+-+-+-+-+-+-+-+
+
 Author's notes: There are no difficulties in THE GIVEN so it doesn't matter
 what you "choose" on the difficulty screen with the scroll. If you get lost
 or don't know what to do, look for the red torches. There's six puzzles
 around the map that you'll need to complete in order to unlock the bridge
 to the center. Keep in mind that you shouldn't need to "guess" the solution
-to any of them. If you *still* feel lost, perhaps the symbol before the 
-bridge will point you in the right directions...
-
-I'm sorry in advance to how slow this will play on some computers!
+to any of them.

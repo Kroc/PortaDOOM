@@ -4,7 +4,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/d
 
 :Don't Be a Bitch Remastered                        * 2015 Cacoward Winner! *
 :===============================================================================
-								*[T] .txt [W] Website
+								 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2015>08>13	  Author : *Mechanix Union (see credits section)
 :Levels   : *33			   Modes : *Last Man Standing 2-12 players, Deathmatch
@@ -14,7 +14,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/d
 $KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
-! Use *[D] Doomseeker* to play online and search for 'dbabrm'
+! Use [D: Doomseeker] to play online and search for 'dbabrm'
 
 33 maps suitable for Team/Last Man Standing.
 Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons ONLY.
