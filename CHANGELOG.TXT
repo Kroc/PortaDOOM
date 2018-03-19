@@ -4,6 +4,7 @@
 
 19-03-18:
 + PSX DOOM now resets weapons between 'episodes'
++ Added bloom effect to Doomed Space Wars ("spacwars.wad")
 * A new launcher is being built to solve the issue of managing mod selection &
   compatibility. A UI interface is being built up which includes functions for
   formatted string printing. DOSmag has been re-factored to use this, greatly
