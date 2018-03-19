@@ -8,7 +8,7 @@ $TITLE=Multiplayer Awards
 $KEY:D=URL:http://doomseeker.drdteam.org/
 ! *NOTE:* PortaDOOM does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
-! Use *[D] Doomseeker* to play DOOM online
+! Use [D: Doomseeker] to play DOOM online
 
 :Pyrrhic - _hobomaster_
 :===============================================================================

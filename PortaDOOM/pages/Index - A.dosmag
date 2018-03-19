@@ -5,7 +5,7 @@ $KEY:C=GOTO:Aeon Deathmatch
 $KEY:D=GOTO:Aliens TC
 $KEY:E=GOTO:Alpha Accident - Terra Nova
 $KEY:F=GOTO:Ancient Aliens
-$KEY:G=GOTO:Master Levels #01
+$KEY:G=GOTO:Master Levels #02
 
 ^C:INDEX :: A
 

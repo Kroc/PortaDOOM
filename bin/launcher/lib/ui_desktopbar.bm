@@ -1,0 +1,87 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'=============================================================================
+FUNCTION UI.DesktopBars.Add ( _
+    row AS _UNSIGNED _BYTE, _
+    foreColor AS _UNSIGNED _BYTE, _
+    backColor AS _UNSIGNED _BYTE, _
+    textLeft AS STRING, _
+    textRight AS STRING _
+)
+    'increase the number of desktop bars defined
+    'and populate its properties
+    DIM kind_id AS _UNSIGNED LONG
+    LET kind_id = UBOUND(UI.DesktopBars) + 1
+    REDIM _PRESERVE UI.DesktopBars(1 TO kind_id) AS UIDesktopBar
+    
+    LET UI.DesktopBars(kind_id).textLeft = UI.Strings.Add(textLeft)
+    LET UI.DesktopBars(kind_id).textRight = UI.Strings.Add(textRight)
+    
+    'add the desktop bar to the draw stack
+    LET UI.DesktopBars.Add = UI.Controls.Add ( _
+        1, row, _WIDTH, 1, foreColor, backColor, _
+        UIControlKind_DesktopBar, kind_id _
+    )
+END FUNCTION
+
+'=============================================================================
+SUB UI.DesktopBars.Update ( _
+    controlID AS _UNSIGNED _BYTE, _
+    textLeft AS STRING, _
+    textRight AS STRING _
+)
+    DIM kind_id AS _UNSIGNED _BYTE
+    LET kind_id = UI.Controls(controlID).kind_id
+    
+    LET UI.Strings(UI.DesktopBars(kind_id).textLeft) = textLeft
+    LET UI.Strings(UI.DesktopBars(kind_id).textRight) = textRight
+END SUB
+
+'=============================================================================
+SUB UI.DesktopBars.Print (controlID AS _UNSIGNED _BYTE)
+    DIM x AS _UNSIGNED _BYTE
+    DIM y AS _UNSIGNED _BYTE
+    LET x = UI.Controls(controlID).x
+    LET y = UI.Controls(controlID).y
+    
+    'draw the bar background across the screen
+    LOCATE y, x
+    COLOR UI.Controls(controlID).foreColor, _
+          UI.Controls(controlID).backColor
+    PRINT SPACE$(_WIDTH);
+    
+    DIM kind_id AS _UNSIGNED _BYTE
+    LET kind_id = UI.Controls(controlID).kind_id
+    
+    DIM txtL AS STRING
+    DIM txtR AS STRING
+    LET txtL = UI.Strings(UI.DesktopBars(kind_id).textLeft)
+    LET txtR = UI.Strings(UI.DesktopBars(kind_id).textRight)
+    
+    DIM lenL AS _UNSIGNED _BYTE
+    DIM lenR AS _UNSIGNED _BYTE
+    LET lenL = LEN(txtL)
+    LET lenR = LEN(txtR)
+    
+    DIM lenW AS _UNSIGNED _BYTE
+    LET lenW = _WIDTH - 3
+    
+    'does the text even fit on the screen together?
+    IF lenL + lenR > lenW THEN
+        'if the right hand side is too long, then the left will not be
+        'displayed at all
+        IF lenW - LenR < 3 THEN LET txtL = "": LET lenL = 0
+        'is the right hand side longer than the screen?
+        IF lenR > lenW THEN LET txtR = RTRUNCATE$(txtR, lenW): LET lenR = lenW
+    END IF
+    'truncate the left hand side, according to the room the right leaves
+    IF lenL > 0 THEN
+        LET txtL = TRUNCATE$(txtL, lenW - lenR)
+        LET lenL = LEN(txtL)
+    END IF
+    
+    LOCATE y, x + 1: PRINT txtL;
+    IF lenR > 0 THEN
+        LOCATE y, _WIDTH - 1 - lenR: PRINT txtR;
+    END IF
+END SUB

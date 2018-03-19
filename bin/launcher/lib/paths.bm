@@ -1,0 +1,61 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'if there isn't, adds a slash to the end of a string
+'=============================================================================
+FUNCTION Paths.AddSlash$(path$)
+    IF ASC(path$, LEN(path$)) <> ASC_BSLASH THEN
+        Paths.AddSlash$ = path$ + "\"
+    ELSE
+        Paths.AddSlash$ = path$
+    END IF
+END FUNCTION
+
+'return the folder name from a path
+'=============================================================================
+FUNCTION Paths.GetFolderName$(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    'don't be silly
+    IF LEN(path$) = 0 THEN EXIT FUNCTION
+    IF path$ = "\" THEN EXIT FUNCTION
+    
+    'return nothing if there's no slash at all, i.e. the string is just a
+    'file-name. directories MUST end with slash; use `Paths.AddSlash` to
+    'ensure a directory is always terminated correctly
+    IF INSTR(path$, "\") = 0 THEN EXIT FUNCTION
+    
+    DIM a AS _UNSIGNED LONG
+    DIM z AS _UNSIGNED LONG
+    DIM len_path AS _UNSIGNED LONG
+    LET len_path = LEN(path$)
+    
+    'this assumes that a folder always ends with a slash, otherwise it's
+    'a file name. is the last character is already a slash?
+    IF ASC(path$, len_path) = ASC_BSLASH THEN
+        'we know the end position already,
+        'skip over to finding the beginning
+        LET z = len_path
+    ELSE
+        'walk backward through the string looking for the slash;
+        'due to the validation check at the beginning of the function,
+        'we know for certain at least one back-slash exists
+        FOR z = len_path TO 1 STEP - 1
+            IF ASC(path$, z) = ASC_BSLASH THEN EXIT FOR
+        NEXT z
+    END IF
+    
+    'we've passed the file name, walk backwards to capture the folder name
+    FOR a = z - 1 TO 0 STEP - 1
+        IF a = 0 THEN EXIT FOR
+        IF ASC(path$, a) = ASC_BSLASH THEN EXIT FOR
+    NEXT a
+    
+    'if an earlier slash was not found,
+    'then there was only one folder, e.g. "some_folder\some.file"
+    IF a = 0 THEN
+        LET Paths.GetFolderName$ = LEFT$(path$, z - 1)
+    ELSE
+        'extract the folder name from the boundaries we determined
+        LET Paths.GetFolderName$ = MID$(path$, a + 1, z - a - 1)
+    END IF
+END FUNCTION

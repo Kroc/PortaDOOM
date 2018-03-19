@@ -1,0 +1,402 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+$CONSOLE
+_CONSOLE OFF
+
+'hide the main window until we have something rendered on it first
+$SCREENHIDE
+
+'disallow resizing of the window. this adds a great deal of complexity for
+'very little gain right now and there isn't an easy way to restore a window
+'to its 1:1 size
+$RESIZE:OFF
+
+'$INCLUDE: 'lib\consts.bi'
+'$INCLUDE: 'lib\INI-Manager\ini.bi'
+'$INCLUDE: 'lib\strgui\strgui.bi'
+'$INCLUDE: 'lib\ui.bi'
+
+'==============================================================================
+
+'an array of all known feature-tags
+REDIM SHARED Tags(0) AS STRING * 16
+
+'------------------------------------------------------------------------------
+
+TYPE Game
+    id AS STRING * 32
+    title AS STRING * 64
+    iwad AS STRING * 32 '...IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
+    pwad AS STRING * 32 '...optional PWAD to play
+    cmplvl AS _BYTE '.......can be negative to specify "not given"
+    deh AS STRING * 32 '....optional DeHackEd script to load
+    bex AS STRING * 32 '....optional Boom-EXtended DeHackEd script to load
+    tags AS STRING * 128 '..comma-separated tags list the game requires
+    vid AS _UNSIGNED _BYTE 'required renderer colour bit-depth
+END TYPE
+
+'array that holds all the games defined
+REDIM SHARED Games(1) AS Game
+DIM SHARED GameCount%
+DIM SHARED game%
+
+'a two-dimensional array of game > tag-indicies; that is, the 1st dimension
+'is for each game and the second dimension covers each tag -- a value of 1
+'indicates that the game requires that tag
+REDIM SHARED GameTags(0, 0) AS _BYTE
+
+'-----------------------------------------------------------------------------
+
+'structure to store the details of an engine:
+TYPE Engine
+    'ids can be the same between multiple engines! (different versions?)
+    id AS STRING * 32
+    'these are specifically named after the INI-file param names
+    name AS STRING * 32 '..simple name, for grouping versions together
+    rank AS INTEGER 
+    title AS STRING * 64 '.on-screen "friendly name"
+    exe AS STRING * 32 '...executable file-name
+    ver AS INTEGER '.......engine's version number
+    bit AS _BYTE '.........executable architecture: 32 or 64 (bit)
+    vid AS _BYTE '.........renderer colour-depth, i.e. 8, 24, 32
+    kin AS STRING * 1 '....a marker to indicate the engine's genealogy
+    cfg AS STRING * 32 '...config file ID to use
+    save AS STRING * 32 '..save-folder name to use
+    tags AS STRING * 128 '.comma-separated tags list the engine supports
+    iwads AS STRING * 128 'semi-colon separated list of allowed IWADs
+    pwads AS STRING * 128 'semi-colon separated list of PWAD file-types
+END TYPE
+
+'array that holds all the engines detected, including 'duplicates' that
+'share the same engine-id, but differ in version / CPU-type / renderer
+REDIM SHARED Engines(1 TO 1) AS Engine
+'count of all defined engines (prior to filtering)
+DIM SHARED EngineCount%
+
+'list of compatible engines for the selected game
+REDIM SHARED EngineList(1 TO 1) AS INTEGER
+DIM SHARED EngineListCount%
+
+'loop-counter for engines and later 'currently selected' engine
+DIM SHARED engine%
+
+'a two-dimensional array of engine > tag-indicies; that is, the 1st dimension
+'is for each engine and the second dimension covers each tag. a value of 1
+'indicates that the engine uses that tag. the zeroth tag index is used to
+'shortlist engines by marking them as compatible (=1) or not (=0)
+REDIM SHARED EngineTags(0, 0) AS _BYTE
+
+'-----------------------------------------------------------------------------
+
+'generic 'index' counter
+DIM i AS _UNSIGNED LONG
+
+
+'MAIN:
+'=============================================================================
+_TITLE "PortaDOOM Launcher"
+
+'set graphics mode, screen size, colour and clear screen
+SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
+
+''DIM setting$, i%
+''DO
+''    i% = i% + 1
+''    setting$ = ENVIRON$(i%) 'get a setting from the list
+''    ECHO setting$
+''LOOP UNTIL setting$ = ""
+''ECHO "": ECHO ""
+
+'print base UI
+'-----------------------------------------------------------------------------
+DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
+DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
+LET ui_titlebar = UI.DesktopBars.Add (1, BLACK, LTGREY, _TITLE$, "")
+LET ui_statusbar = UI.DesktopBars.Add (_HEIGHT, BLACK, LTGREY, "", "")
+CALL UI.Render
+
+_SCREENSHOW
+
+DIM ui_window_wait AS _UNSIGNED _BYTE
+LET ui_window_wait = UI.Windows.Add ( _
+    (_WIDTH - 40)\2, (_HEIGHT - 3)\2, 40, 3, LTGREY, DKGREY, 1, _
+    "^{X+14}LOADING..." _
+)
+CALL UI.Render
+
+'read command-line parameters (if any)
+'=============================================================================
+'TODO: if there are no command-line parameters, we present a UI to build
+'      a custom game configuration
+IF _COMMANDCOUNT = 0 THEN
+    ''SYSTEM 1
+END IF
+
+'display help?
+'-----------------------------------------------------------------------------
+DIM cmd$
+LET cmd$ = LCASE$(COMMAND$(1))
+
+IF cmd$ = "/?" _
+OR cmd$ = "/h" _
+OR cmd$ = "/help" _
+OR cmd$ = "-?" _
+OR cmd$ = "-h" _
+OR cmd$ = "-help" _
+OR cmd$ = "--help" _
+THEN
+    SYSTEM 0
+END IF
+
+'TODO: if the first param is an INI file, look for game / mod definitions within
+
+'TODO: if the params are WAD files etc, then show a UI to build a game
+
+'read command-line switches:
+'-----------------------------------------------------------------------------
+DIM CMD_USE$ '....a specific engine-id to require
+DIM CMD_REQ$ '....a tag-list of engine requirements
+DIM CMD_32` '.....always use 32-bit executable on 64-bit system
+DIM CMD_SW` '.....require 8-bit (typically "software") rendering
+DIM CMD_DEFAULT` 'should default config file be used?
+DIM CMD_IWAD$ '...IWAD to use
+DIM CMD_PWAD$ '...optional PWAD to play
+DIM CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
+DIM CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
+DIM CMD_DEMO$ '...demo lump to play
+DIM CMD_WARP$ '...episode/map number to warp to
+DIM CMD_SKILL$ '..skill level number
+DIM CMD_CMPLVL$ '.compatibility level
+DIM CMD_EXEC$ '...extra script to execute
+
+LET i = 1
+DO WHILE COMMAND$(i) <> ""
+    SELECT CASE UCASE$(COMMAND$(i))
+        'just capture the param values, we will parse & validate later
+        CASE "/USE": LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
+        CASE "/REQ": LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
+        CASE "/32": LET CMD_32` = TRUE
+        CASE "/SW": LET CMD_SW` = TRUE
+        CASE "/DEFAULT": LET CMD_DEFAULT` = TRUE
+        CASE "/IWAD": LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
+        CASE "/PWAD": LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
+        CASE "/DEH": LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
+        CASE "/BEX": LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
+        CASE "/DEMO": LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
+        CASE "/WARP": LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
+        CASE "/SKILL": LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
+        CASE "/CMPLVL": LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
+        CASE "/EXEC": LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
+        CASE ELSE
+            'TODO: invalid param?
+            'TODO: handle file-list
+    END SELECT
+    LET i = i + 1
+LOOP
+
+'read system info:
+'-----------------------------------------------------------------------------
+'get CPU type for the system (32 / 64-bit)
+DIM CPU_BIT AS _UNSIGNED LONG
+'default to 32-bit as this will always work
+LET CPU_BIT = 32
+'check the environment variables for CPU type:
+'this one would only be true if we are a 64-bit executable also
+IF ENVIRON$("PROCESSOR_ARCHITECTURE") = "AMD64" THEN LET CPU_BIT = 64
+'detect 64-bit system from a 32-bit executable (WOW64)
+IF ENVIRON$("PROCESSOR_ARCHITEW6432") = "AMD64" THEN LET CPU_BIT = 64
+
+'directory of this executable (regardless of where it was called from)
+DIM DIR_EXE$
+LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
+
+'now is this executable running from the source code folder or from within
+'PortaDOOM's folder (as it would be in releases)? since these are different
+'directories, and the launcher operates on the assumption that it's in the
+'"PortaDOOM\files" folder, we need to re-route things when running from
+'development builds. check to see if our parent folder is not "files":
+
+IF Paths.GetFolderName$(DIR_EXE$) = "launcher" THEN
+    'change directory to the expected location
+    CHDIR "..\..\PortaDOOM\files"
+    LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
+END IF
+
+'the 'current directory' (where this executable was called *from*),
+'this will be one of the folders we check when searching for files
+DIM DIR_CUR$
+LET DIR_CUR$ = Paths.AddSlash$(_STARTDIR$)
+
+ECHO ""
+ECHO "launcher.exe : " + DIR_EXE$
+ECHO "current dir  : " + DIR_CUR$
+ECHO ""
+
+'NOTE: many doom engines save their config files in the 'current directory',
+'which is typically expected to be that of the executable. However, we want
+'to separate user-data (such as save-games) from the engines. whilst we can
+'change the save directory, config files will still be dumped in the 'current
+'directory'.
+
+'we therefore need to change the current directory and rewrite
+'all the WAD / file paths to be relative from there!
+
+'the saves folder will contain a sub-folder for each engine, and then another
+'sub-folder for the IWAD or PWAD; this is the relative path from the WAD's
+'save folder back to this executable
+DIM FIX_PATH$
+LET FIX_PATH$ = "..\..\.."
+
+'we will remember the directory of the last file
+'(used for finding side-by-side WADs)
+DIM DIR_PREV$
+'other directories that will be remembered as we go
+DIM DIR_IWAD$
+DIM DIR_PWAD$
+
+DIM CMD_PARAMS$
+DIM CMD_FILES$
+
+'=============================================================================
+
+DIM game_ini$
+LET game_ini$ = COMMAND$(1)
+
+IF game_ini$ = "" THEN
+    LET game_ini$ = DIR_EXE$ + "wads\play-doom.ini"
+END IF
+
+CALL EnumerateGameINI(game_ini$)
+CALL EnumerateEngines
+
+
+'process the gathered game / engine data:
+'=============================================================================
+'there is no simple description for this cross-referencing process...
+CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
+CALL UI.Render
+
+'find all unique tags in the Game / Engine definitions:
+DIM tag$, tag%
+
+'now that we know how many games, engines and tags there are,
+'we can set up our mappings
+REDIM SHARED GameTags(1 TO GameCount%, 1 TO UBOUND(Tags)) AS _BYTE
+REDIM SHARED EngineTags(1 TO EngineCount%, 0 TO UBOUND(Tags)) AS _BYTE
+
+'populate the game mappings:
+FOR game% = 1 TO UBOUND(Games)
+    
+    LET tag$ = SplitTags$(Games(game%).tags)
+    DO WHILE tag$ <> ""
+        'find the tag index
+        LET tag% = FindTag%(tag$)
+        'set up the game <> tag mapping
+        LET GameTags(game%, tag%) = 1
+        
+        LET tag$ = SplitTags$("")
+    LOOP
+NEXT game%
+
+'populate the engine mappings:
+FOR engine% = 1 TO UBOUND(Engines)
+    
+    LET tag$ = SplitTags$(Engines(engine%).tags)
+    DO WHILE tag$ <> ""
+        'find the tag index
+        LET tag% = FindTag%(tag$)
+        'set up the game <> tag mapping
+        LET EngineTags(engine%, tag%) = 1
+        
+        LET tag$ = SplitTags$("")
+    LOOP
+NEXT engine%
+
+'validate engine features:
+'-----------------------------------------------------------------------------
+'TODO: game selection window, if there are more than 1 games defined
+LET game% = 1
+
+ECHO "": ECHO ""
+
+'test each engine against the game's requirements:
+FOR engine% = 1 TO UBOUND(Engines)
+    ECHO ""
+    ECHO "* testing engine #" + STRINT$(engine%) + " " + Engines(engine%).id
+    
+    'is the binary compatible with this machine? (32 / 64-bit)
+    'if we are a 32-bit machine, we can't run 64-bit software
+    ECHO "- Bit:" + STRINT$(Engines(engine%).bit)
+    IF CPU_BIT = 32 AND Engines(engine%).bit = 64 THEN
+        ECHO "": ECHO "! no-match (bit): " + Engines(engine%).id
+        _CONTINUE
+    END IF
+    
+    '-------------------------------------------------------------------------
+    
+    'TODO: validate engine IWAD / PWAD support
+    
+    
+    '-------------------------------------------------------------------------
+    
+    'does this engine provide all the features required by the game?
+    '(walk along the tags on the engine)
+    FOR tag% = 1 TO UBOUND(Tags)
+        ECHO "- Tag:" + Tags(tag%) + " EngineTags=" + STRINT$(EngineTags(engine%, tag%)) + " GameTags=" + STRINT$(GameTags(game%, tag%))
+        
+        'check the game's requirement for this tag
+        SELECT CASE GameTags(game%, tag%)
+            'the *game* requires this from the engine
+            CASE 1:
+                'if the *engine* does not provide this feature,
+                'move on to the next engine
+                IF EngineTags(engine%, tag%) = 0 THEN
+                    ECHO "": ECHO "! no-match (tag): " + Engines(engine%).id
+                    '`_CONTINUE` does not support breaking nested loops
+                    LET engine% = engine% + 1: GOTO NextEngine
+                END IF
+        END SELECT
+    NEXT tag%
+    
+    '-------------------------------------------------------------------------
+    
+    'all tags have been checked, meaning that this engine is a candidate
+    LET EngineTags(engine%, 0) = 1
+    'add this tag to the valid short-list
+    LET EngineListCount% = EngineListCount% + 1
+    REDIM _PRESERVE EngineList(1 TO EngineListCount%) AS INTEGER
+    LET EngineList(EngineListCount%) = engine%
+    
+    ECHO ""
+    ECHO "match: " + Engines(engine%).id
+
+    NextEngine:
+NEXT engine%
+
+'if, after removing all incompatible engines, there remains only one,
+'we can skip over the selection process
+IF EngineListCount% = 1 THEN
+    LET Engine% = EngineList(1)
+    GOTO SummaryScreen
+END IF
+
+'select the 'best' engine by default
+LET engine% = EngineList(1)
+
+
+SummaryScreen:
+'=============================================================================
+'$INCLUDE:'launcher_summary.qb64'
+
+SYSTEM
+
+'$INCLUDE:'launcher_enum_tags.qb64'
+'$INCLUDE:'launcher_enum_games.qb64'
+'$INCLUDE:'launcher_enum_engines.qb64'
+
+'=============================================================================
+'$INCLUDE: 'lib\INI-Manager\ini.bm'
+'$INCLUDE: 'lib\strings.bm'
+'$INCLUDE: 'lib\paths.bm'
+'$INCLUDE: 'lib\strgui\strgui.bm'
+'$INCLUDE: 'lib\ui.bm'

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ no-limit /PWAD GivenRC1.wad
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ no-limit /PWAD TheGiven.wad

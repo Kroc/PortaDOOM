@@ -1,0 +1,78 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'$INCLUDE:'ui_desktopbar.bm'
+'$INCLUDE:'ui_window.bm'
+'$INCLUDE:'ui_label.bm'
+
+'=============================================================================
+FUNCTION UI.Strings.Add (newString AS STRING)
+    DIM id AS _UNSIGNED LONG
+    LET id = UBOUND(UI.Strings) + 1
+    REDIM _PRESERVE UI.Strings(1 TO id) AS STRING
+    
+    LET UI.Strings(id) = newString
+    LET UI.Strings.Add = id
+END FUNCTION
+
+
+'=============================================================================
+FUNCTION UI.Controls.Add ( _
+    x AS _UNSIGNED _BYTE, _
+    y AS _UNSIGNED _BYTE, _
+    width AS _UNSIGNED _BYTE, _
+    height AS _UNSIGNED _BYTE, _
+    foreColor AS _UNSIGNED _BYTE, _
+    backColor AS _UNSIGNED _BYTE, _
+    kind AS _UNSIGNED _BYTE, _
+    kind_id AS _UNSIGNED _BYTE _
+)
+    LET UI.Controls.index = UI.Controls.index + 1
+    LET UI.Controls(UI.Controls.index).x = x
+    LET UI.Controls(UI.Controls.index).y = y
+    LET UI.Controls(UI.Controls.index).width = width
+    LET UI.Controls(UI.Controls.index).height = height
+    LET UI.Controls(UI.Controls.index).foreColor = foreColor
+    LET UI.Controls(UI.Controls.index).backColor = backColor
+    LET UI.Controls(UI.Controls.index).kind = kind
+    LET UI.Controls(UI.Controls.index).kind_id = kind_id
+    
+    'return the control-ID just added
+    LET UI.Controls.Add = UI.Controls.index
+END SUB
+
+
+'=============================================================================
+SUB UI.Render ()
+    '''switch focus to the back-buffer
+    ''STATIC buffer%
+    ''SCREEN , , 1 - buffer%, buffer%
+    
+    'render the desktop background
+    COLOR UI.Desktop.foreColor, UI.Desktop.backColor
+    DIM i AS _UNSIGNED _BYTE
+    FOR i = 1 TO _HEIGHT
+        LOCATE i, 1: PRINT STRING$(_WIDTH, UI.Desktop.fillChar);
+    NEXT i
+    
+    DIM c AS _UNSIGNED _BYTE
+    FOR c = 1 TO UI.Controls.index
+        CALL UI.Controls.Print(c)
+    NEXT c
+    
+    ''_DISPLAY
+    
+    '''flip the display buffers
+    ''buffer% = 1 - buffer%
+    ''SCREEN , , 1 - buffer%, buffer%
+END SUB
+
+'=============================================================================
+SUB UI.Controls.Print (controlID AS _UNSIGNED _BYTE)
+    SELECT CASE UI.Controls(controlID).kind
+        CASE UIControlKind_DesktopBar: CALL UI.DesktopBars.Print (controlID)
+        CASE UIcontrolKind_Window: CALL UI.Windows.Print (controlID)
+        CASE UIControlKind_Label: CALL UI.Labels.Print (controlID)
+        CASE ELSE
+            SYSTEM 1
+    END SELECT
+END SUB

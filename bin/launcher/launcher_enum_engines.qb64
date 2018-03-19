@@ -1,0 +1,243 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'=============================================================================
+SUB EnumerateEngines ()
+    CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
+    CALL UI.Render
+    
+    LET EngineCount% = 0
+    
+    CHDIR "C:\GAMES\DOOM\PortaDOOM\files\ports"
+    'create a directory list in a file, containing only sub-folder names
+    SHELL _HIDE "DIR /AD /B > dir.tmp"
+    
+    DIM dir_handle%
+    LET dir_handle% = FREEFILE
+    OPEN "dir.tmp" FOR INPUT AS #dir_handle%
+    
+    DO WHILE EOF(dir_handle%) = FALSE
+        'read a folder-name
+        DIM folder$
+        LINE INPUT #dir_handle%, folder$
+        
+        'check for an INI file in the engine's folder
+        DIM ini_path$
+        LET ini_path$ = _CWD$ + "\" + folder$ + "\porta-doom.ini"
+        IF NOT _FILEEXISTS(ini_path$) THEN GOTO NextFolder
+        
+        'read the global values
+        DIM ini_name$
+        LET ini_name$ = ReadSetting$(ini_path$, "global", "name")
+        DIM ini_rank$
+        LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
+        
+        DIM ini_index%
+        LET ini_index% = 1
+        DO
+            DIM ini_engine$
+            LET ini_engine$ = ReadSetting$("", "engines", STRINT$(ini_index%))
+            IF ini_engine$ = "" THEN EXIT DO
+            
+            ECHO ""
+            ECHO "* " + ini_engine$
+            
+            CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", ini_engine$)
+            CALL UI.Render
+            
+            'increase the list of known engines
+            LET EngineCount% = EngineCount% + 1
+            REDIM _PRESERVE Engines(1 TO EngineCount%) AS Engine
+            LET Engines(EngineCount%).id = ini_engine$
+            
+            'read engine data from the INI file
+            DIM ini_section$
+            LET ini_section$ = "engine." + ini_engine$
+            
+            DIM ini_title$
+            LET ini_title$ = ReadSetting$("", ini_section$, "title")
+            DIM ini_exe$
+            LET ini_exe$ = ReadSetting$("", ini_section$, "exe")
+            DIM ini_ver$
+            LET ini_ver$ = ReadSetting$("", ini_section$, "ver")
+            DIM ini_bit$
+            LET ini_bit$ = ReadSetting$("", ini_section$, "bit")
+            DIM ini_vid$
+            LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
+            DIM ini_kin$
+            LET ini_kin$ = ReadSetting$("", ini_section$, "kin")
+            DIM ini_cfg$
+            LET ini_cfg$ = ReadSetting$("", ini_section$, "cfg")
+            DIM ini_save$
+            LET ini_save$ = ReadSetting$("", ini_section$, "save")
+            DIM ini_tags$
+            LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
+            DIM ini_iwads$
+            LET ini_iwads$ = ReadSetting$("", ini_section$, "iwads")
+            DIM ini_pwads$
+            LET ini_pwads$ = ReadSetting$("", ini_section$, "pwads")
+            
+            'executable architecture must be either 32 or 64-bit
+            IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
+                'TODO: output warning
+                'default to 32-bit
+                LET ini_bit$ = "32"
+            END IF
+            
+            'process the tag list
+            CALL AddTags(ini_tags$)
+            
+            LET Engines(EngineCount%).name = ini_name$
+            LET Engines(EngineCount%).rank = VAL(ini_rank$)
+            LET Engines(EngineCount%).title = ini_title$
+            LET Engines(EngineCount%).exe = ini_exe$
+            LET Engines(EngineCount%).ver = VAL(ini_ver$)
+            LET Engines(EngineCount%).bit = VAL(ini_bit$)
+            LET Engines(EngineCount%).vid = VAL(ini_vid$)
+            LET Engines(EngineCount%).kin = ini_kin$
+            LET Engines(EngineCount%).cfg = ini_cfg$
+            LET Engines(EngineCount%).save = ini_save$
+            LET Engines(EngineCount%).tags = ini_tags$
+            LET Engines(EngineCount%).iwads = ini_iwads$
+            LET Engines(EngineCount%).pwads = ini_pwads$
+            
+            LET ini_index% = ini_index% + 1
+        LOOP
+    NextFolder:
+    LOOP
+    
+    CLOSE #dir_handle%
+    KILL "dir.tmp"
+    
+    'prioritise engine list:
+    '-------------------------------------------------------------------------
+    CALL UI.DesktopBars.Update(ui_statusbar, "Sorting Engines...", ini_engine$)
+    CALL UI.Render
+    
+    '... given ten different versions of GZDoom, each with hardware/software
+    'renderers, which is the 'best' that we should default to?
+    
+    'the criteria for the 'best' engine is:
+    '- prefer engines with a higher rank
+    '- prefer engines in a higher genealogy, i.e. "G" > "Z" > "B" > "V"
+    '- prefer newer versions over older versions
+    '- prefer hardware renderers (if present) over software
+    '- prefer 64-bit (if present and machine supports it) over 32-bit
+    
+    'to whit, re-order the list of engines according to this criteria:
+    
+    DIM sorted%
+    LET sorted% = FALSE
+    DIM sortCount%
+    
+    DO WHILE sorted% = FALSE
+        LET sorted% = TRUE
+        
+        DIM i%
+        FOR i% = 2 TO EngineCount%
+            'compare the engine with the one above
+            '(A = above, B = below)
+            DIM A%, B%
+            LET A% = i% - 1
+            LET B% = i%
+            
+            'compare the engine's rank:
+            DIM rA%, rB%
+            LET rA% = Engines(A%).rank
+            LET rB% = Engines(B%).rank
+            
+            'if the engine below is of a higher rank, move it up
+            IF rB% > rA% THEN
+                SWAP Engines(A%), Engines(B%)
+                LET sortCount% = sortCount% + 1
+                LET sorted% = FALSE
+                
+            ELSEIF rB% = rA% THEN
+                'compare the two engine's genealogy:
+                DIM kA%, kB%
+                LET kA% = kinValue(Engines(A%).kin)
+                LET kB% = kinValue(Engines(B%).kin)
+                
+                'if the engine below is of a higher genealogy, move it up
+                IF kB% > kA% THEN
+                    SWAP Engines(A%), Engines(B%)
+                    LET sortCount% = sortCount% + 1
+                    LET sorted% = FALSE
+                
+                ELSEIF kB% = kA% THEN
+                    'compare the names (alphabetically sort engines)
+                    DIM nA$, nB$
+                    LET nA$ = Engines(A%).name
+                    LET nB$ = Engines(B%).name
+                    
+                    IF nB$ < nA$ THEN
+                        SWAP Engines(A%), Engines(B%)
+                        LET sortCount% = sortCount% + 1
+                        LET sorted% = FALSE
+                    
+                    ELSEIF nB$ = nA$ THEN
+                        'compare the two engine's version numbers
+                        DIM vA%, vB%
+                        LET vA% = Engines(A%).ver
+                        LET vB% = Engines(B%).ver
+                        
+                        IF vB% > vA% THEN
+                            SWAP Engines(A%), Engines(B%)
+                            LET sortCount% = sortCount% + 1
+                            LET sorted% = FALSE
+                            
+                        ELSEIF vB% = vA% THEN
+                            'compare renderer colour-depth
+                            DIM cA%, cB%
+                            LET cA% = Engines(A%).vid
+                            LET cB% = Engines(B%).vid
+                            
+                            IF cB% > cA% THEN
+                                SWAP Engines(A%), Engines(B%)
+                                LET sortCount% = sortCount% + 1
+                                LET sorted% = FALSE
+                            
+                            ELSEIF cB% = cA% THEN
+                                'compare executable CPU-type (32/64-bit)
+                                DIM xA%, xB%
+                                LET xA% = Engines(A%).bit
+                                LET xB% = Engines(B%).bit
+                                
+                                IF xB% > xA% THEN
+                                    SWAP Engines(A%), Engines(B%)
+                                    LET sortCount% = sortCount% + 1
+                                    LET sorted% = FALSE
+                                END IF
+                            END IF
+                            
+                        END IF
+                    END IF
+                END IF
+            END IF
+        NEXT i%
+        
+    LOOP
+    
+    ECHO ""
+    ECHO "sorts: " + STR$(sortCount%)
+    FOR i% = 1 TO EngineCount%
+        ECHO "- " + Engines(i%).title$
+    NEXT i%
+    ECHO ""
+    
+    CALL UI.DesktopBars.Update(ui_statusbar, "", ini_engine$)
+    CALL UI.Render
+END SUB
+
+'takes an engine 'kin' letter, e.g. "B" and converts it into a rank value
+'=============================================================================
+FUNCTION kinValue% (kin AS STRING * 1)
+    SELECT CASE kin
+        CASE "X": LET kinValue% = 1
+        CASE "V": LET kinValue% = 2
+        CASE "B": LET kinValue% = 3
+        CASE "Z": LET kinValue% = 4
+        CASE "G": LET kinValue% = 5
+        CASE ELSE
+            LET kinValue% = 0
+    END SELECT
+END FUNCTION

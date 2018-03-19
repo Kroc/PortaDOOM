@@ -1,0 +1,91 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'populate game definition from the command-line parameters
+'=============================================================================
+SUB EnumerateGameCMD ()
+END SUB
+
+'given an INI file, read game definitions from it
+'=============================================================================
+SUB EnumerateGameINI (INIFile$)
+    CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Games...", "")
+    CALL UI.Render
+    
+    DO
+        'read from the list of game-configurations defined
+        '(a single INI can define more than one game variation)
+        DIM game_id$
+        LET game_id$ = ReadSetting$(INIFile$, "games", STRINT$(GameCount% + 1))
+        'if there's no further entries, stop looking
+        IF game_id$ = "" THEN EXIT DO
+        
+        'read in the game details:
+        'TODO: validation
+        'TODO: early rejection of engines incompatible with all game defs,
+        '      e.g. 64-bit engine on a 32-bit CPU
+        DIM ini_section$
+        LET ini_section$ = "settings." + game_id$
+        DIM ini_title$
+        LET ini_title$ = ReadSetting$("", ini_section$, "title")
+        DIM ini_iwad$
+        LET ini_iwad$ = ReadSetting$("", ini_section$, "iwad")
+        DIM ini_pwad$
+        LET ini_pwad$ = ReadSetting$("", ini_section$, "pwad")
+        DIM ini_cmplvl$
+        LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
+        DIM ini_deh$
+        LET ini_deh$ = ReadSetting$("", ini_section$, "deh")
+        DIM ini_bex$
+        LET ini_bex$ = ReadSetting$("", ini_section$, "bex")
+        DIM ini_tags$
+        LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
+        DIM ini_vid$
+        LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
+        
+        CALL AddGame( _
+            game_id$, ini_title$, _
+            ini_iwad$, ini_pwad$, ini_cmplvl$, ini_deh$, ini_bex$, _
+            ini_tags$, ini_vid$ _
+        )
+    LOOP
+    
+    CALL UI.DesktopBars.Update(ui_statusbar, "", "")
+    CALL UI.Render
+END SUB
+
+'=============================================================================
+SUB AddGame ( _
+    id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
+)
+    'increase the number of games entries
+    LET GameCount% = GameCount% + 1
+    REDIM _PRESERVE Games(1 TO GameCount%) AS Game
+    LET Games(GameCount%).id = id$
+    
+    ECHO "* GAME #" + STRINT$(GameCount%) + ": " + id$
+    IF title$ <> "" THEN ECHO "- " + id$ + ".title" + CHR$(9) + title$
+    IF iwad$ <> "" THEN ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
+    IF pwad$ <> "" THEN ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
+    IF cmplvl$ <> "" THEN ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
+    IF deh$ <> "" THEN ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
+    IF bex$ <> "" THEN ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
+    IF tags$ <> "" THEN ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
+    IF vid$ <> "" THEN ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
+    
+    'process the tag list
+    CALL AddTags(tags$)
+    
+    'no problems? write the data into the engine list
+    LET Games(GameCount%).title = title$
+    LET Games(GameCount%).iwad = iwad$
+    LET Games(GameCount%).pwad = pwad$
+    IF cmplvl$ = "" THEN
+        LET Games(GameCount%).cmplvl = -1
+    ELSE
+        LET Games(GameCount%).cmplvl = VAL(cmplvl$)
+    END IF
+    LET Games(GameCount%).deh = deh$
+    LET Games(GameCount%).bex = bex$
+    LET Games(GameCount%).tags = tags$
+    LET Games(GameCount%).vid = VAL(vid$)
+END SUB
