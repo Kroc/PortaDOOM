@@ -116,6 +116,7 @@ ECHO       gzdoom-24           : GZDoom v2.4.0  ^(MAR-2017+^)
 ECHO       gzdoom-32           : GZDoom v3.2.4  ^(OCT-2017+^);
 ECHO                             versions 3.0 ^(APR-2017+^), 3.1 ^(JUN-2017+^) and 3.2.0
 ECHO                             ^(OCT-2017+^) are excluded due to a security concern
+ECHO       gzdoom-33           : GZDoom v3.3.0  ^(MAR-2018+^)
 ECHO:
 ECHO     NOTE: Additional engine resource files will be included automatically, that is
 ECHO           "brightmaps.pk3" ^& "lights.pk3" for GZDoom versions 1.0 and above, or
@@ -703,13 +704,33 @@ IF /I "%USE%" == "prboom" (
 	SET "PORT_SAVE=prboom"
 )
 IF /I "%USE%" == "gzdoom" (
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-33_%ENGINE_BIT%"
 	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
 	SET "ENGINE_KIN=Z"
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=GZDoom ^(current^)"
+)
+IF /I "%USE%" == "gzdoom-dev" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-dev_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom-dev"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=GZDoom ^(development^)"
+	SET VER_GZDOOM=33
+)
+IF /I "%USE%" == "gzdoom-33" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-33_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom-33"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=GZDoom ^(v3.3.x^)"
+	SET VER_GZDOOM=33
 )
 IF /I "%USE%" == "gzdoom-32" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
@@ -881,18 +902,6 @@ IF /I "%USE%" == "gzdoom-09" (
 	SET "PORT_TITLE=GZDoom ^(v0.9.x^)"
 	SET VER_GZDOOM=9
 )
-IF /I "%USE%" == "gzdoom-dev" (
-	REM # shh, this is a secret...
-	REM # (but you'll have to supply your own copy)
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-dev"
-	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
-	SET "ENGINE_EXE=gzdoom.exe"
-	SET "ENGINE_CFG=gzdoom"
-	SET "ENGINE_KIN=Z"
-	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=GZDoom ^(Development^)"
-	SET VER_GZDOOM=99
-)
 IF /I "%USE%" == "qzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\qzdoom_%ENGINE_BIT%"
 	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
@@ -952,7 +961,7 @@ IF /I "%USE%" == "zdoom" (
 
 REM # if an engine wasn't specified, provide a default
 IF NOT DEFINED USE (
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-32_%ENGINE_BIT%"
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-33_%ENGINE_BIT%"
 	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"

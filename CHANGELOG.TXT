@@ -6,7 +6,11 @@
 * Fixed typo in doom.bat that was preventing anything from working!
   How did this slip through, when I tested each release??
 
-19-03-18:
+26-MAR-18:
++ Added GZDoom v3.3
++ Added GZDoom-dev
+
+19-MAR-18:
 + PSX DOOM now resets weapons between 'episodes'
 + Added bloom effect to Doomed Space Wars ("spacwars.wad")
 * A new launcher is being built to solve the issue of managing mod selection &
@@ -20,20 +24,20 @@
 * Numerous pages have minor formatting corrections to account for the different
   method of processing
 
-23-02-18:
+23-FEB-18:
 * Removed DUMP3, it's very buggy and not worth the effort right now
 
-21-01-18:
+21-JAN-18:
 * Upgraded DOOM Retro to 2.6.4; this fixes the config-file issue so the engine
   can be included proper now
 * DUMP3 now uses GZDoom v2.2 due to compatibility bug with later versions
 
-17-01-18:
+17-JAN-18:
 * QB64 upgraded to v1.2 -- improved DOSmag compilation
 * Re-instated blinking effect in DOSmag whilst keeping 30 rows (640x480)
 * Slight re-organisation of DOSmag code
 
-16-01-18:
+16-JAN-18:
 + Added `/EXEC` parameter in "play.bat" to pass through to "doom.bat"
 + Enabled bloom effect for "Shadows of the Nighmare Realm", "Void & Rainbow",
   "dead.air", "dead.wire" and "ALIENS (TC) 2017"
@@ -41,111 +45,111 @@
   using "," or ";" are treated as parameter separators in batch!
 * Changed "Shadow of The Wool Ball" to use ZDoom (instead of GZDoom)
 
-15-01-18:
+15-JAN-18:
 + "doom.bat" now offers to generate "DOOM64.WAD" from an N64 ROM
 * Fixed FreeDOOM substitution in "doom.bat"
 
-14-01-18:
+14-JAN-18:
 + Upgraded Crispy Doom to v5.1
 
-08-01-18:
+08-JAN-18:
 + Added "Dark Tide" WAD page
 + Added "DOOM II: Hellscape" WAD page
 
-06-01-18:
+06-JAN-18:
 + Added "Water Spirit" WAD page
 
-05-01-18:
+05-JAN-18:
 + Added "Disjunction" WAD page
 + Added "Waterlab GZD" WAD page
 + Added "Hexen - Curse of the Lost Gods" WAD page
 * Updated GZDoom to 3.2.5
 
-04-01-18:
+04-JAN-18:
 * Engine default configuration files re-done with a new script to automatically
   modify the multitude of config files with our desired settings
 
-30-12-17:
+30-DEC-17:
 * Upgraded Chocolate Doom to 3.0
 * Changed "doom.bat" to separate different GZDoom versions' config files
 
-28-12-17:
+28-DEC-17:
 + Added STRIFE Steam / GOG detection and shareware substitution
 * "play.bat" changed to use "," as `/REQ` tag separator and new tags added
 
-24-12-17:
+24-DEC-17:
 * Fixed sound in DOOM 64 EX not working.
   Binaries were updated to fix mouse issue in Windows 10
 
-23-12-17:
+23-DEC-17:
 + Added Crispy Doom engine to "doom.bat" -- vanilla, no-limits
 + Added DOOM Retro engine to "doom.bat"  -- boom
 
-22-12-17:
+22-DEC-17:
 + Added "Return to Hadron Episode 2" WAD page
 + Added "TNT: Revilution" WAD page
 
-21-12-17:
+21-DEC-17:
 + "brightmaps.pk3" & "lights.pk3" (GZDoom), or "skulltag_actors.pk3" &
   "skulltag_data.pk3" (Zandronum) inserted automatically, before the PWAD,
   allowing these to be correctly replaced by the PWAD
 - Removed the insertion of "brightmaps.pk3" / "lights.pk3" from play.bat,
   as these would come _after_ the PWAD, causing potential problems
 
-19-12-17:
+19-DEC-17:
 + Added GZDoom versions 0.9 to 2.1!
 + Added a build target for just the launcher ("doom.bat" / "play.bat")
 + Added "Rise of the Wool Ball" WAD page
 - Removed GZDoom v3.1 due to security issue in version 3.0-3.2.3
 
-17-12-17:
+17-DEC-17:
 + Added "Stardate 20x7" WAD page
 + Added "Void and Rainbow" WAD page
 * Upgraded GZDoom to 3.2.4
 
-15-12-17:
+15-DEC-17:
 + Added "Legacy of Heroes" WAD page
 + Added "Saturnine Chapel" WAD page
 
-14-12-17:
+14-DEC-17:
 + Added "3 Heures d'agonie" series by the French Doom Community
 + Added "dead.air" WAD page
 + Added "Brigandine" WAD page
 + Added "Counterattack" WAD page
 + Added "The Given" WAD page
 
-13-12-17:
+13-DEC-17:
 * Created a Doom the Way id Did Series page set
 * Changed a number of links from `*[N] Name*` to `[N: Name]`
 
-11-12-17:
+11-DEC-17:
 + Added Cacowards 2017 build target (incomplete)
 + Added ZDoom v2.8.1 back to doom.bat, required for lilith.pk3
 + Added "Shadows of the Nightmare Realm" WAD page
 
-10-12-17:
+10-DEC-17:
 + Began work on the Cacoward 2017
 + Added "lilith.pk3" WAD page
 
-04-12-17:
+04-DEC-17:
 + Added The Darkening E2 WAD page
 * Upgraded GZDoom latest to 3.2.3
 
-01-11-17:
+01-NOV-17:
 * Moved asking user for skill-level from play.bat to doom.bat since doom.bat
   has better knowledge of what game / engine is being used
 
-29-10-17:
+29-OCT-17:
 + Added a PSX DOOM TC package
 
-23-10-17:
+23-OCT-17:
 * Updated GZDoom to 3.2.1
 * Updated Skulldash to Expanded Edition
 
-12-10-17:
+12-OCT-17:
 + Added "Aliens TC" & "Aliens (TC) 2017" WAD pages
 
-11-10-17:
+11-OCT-17:
 + IWAD, PWAD and all other files given to doom.bat are checked for in multiple
   locations, consistently. These directories are, in order of precedence:
   = The previous directory used

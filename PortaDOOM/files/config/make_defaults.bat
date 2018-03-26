@@ -327,7 +327,7 @@ CALL :make_gzdoom "gzdoom-24" "STRIFE1.WAD"
 
 :gzdoom-32
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-32.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-32.ini" GOTO :gzdoom-33
 
 ECHO * GZDoom v3.2                DOOM.WAD
 CALL :make_gzdoom "gzdoom-32" "DOOM.WAD"
@@ -337,6 +337,19 @@ ECHO * GZDoom v3.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-32" "HEXEN.WAD"
 ECHO * GZDoom v3.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-32" "STRIFE1.WAD"
+
+:gzdoom-33
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-33.ini" GOTO :gzdoom
+
+ECHO * GZDoom v3.3                DOOM.WAD
+CALL :make_gzdoom "gzdoom-33" "DOOM.WAD"
+ECHO * GZDoom v3.3                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-33" "HERETIC.WAD"
+ECHO * GZDoom v3.3                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-33" "HEXEN.WAD"
+ECHO * GZDoom v3.3                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-33" "STRIFE1.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
