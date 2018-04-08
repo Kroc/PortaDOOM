@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+08-APR-18:
+* Fixed typo in doom.bat that was preventing anything from working!
+  How did this slip through, when I tested each release??
+
 17-01-18:
 * QB64 upgraded to v1.2 -- improved DOSmag compilation
 * Re-instated blinking effect in DOSmag whilst keeping 30 rows (640x480)

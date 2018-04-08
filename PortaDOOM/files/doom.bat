@@ -1149,7 +1149,7 @@ GOTO :iwad_missing
 	)
 	REM # is GOG : DOOM 3 BFG Edition installed?
 	CALL :reg "HKLM\SOFTWARE\GOG.com\Games\1135892318" "Path"
-	IF DEFINDE REG (
+	IF DEFINED REG (
 		REM # check if DOOM2.WAD can be found there
 		REM # TODO: this WAD is broken and censored and we should patch it automatically
 		IF EXIST "%REG%\base\wads\DOOM2.WAD" SET "IWAD_PATH=%REG%\base\wads\DOOM2.WAD" & GOTO :iwad_patchbfg
