@@ -2,6 +2,11 @@
 * = Fix / Change
 - = Removal
 
+20-APR-18:
+* Updated GZDoom to v3.3.1
+* DOOM Retro updated to v2.6.9
+* Improvements to "build.bat" (zip command is more modular)
+
 26-MAR-18:
 + Added GZDoom v3.3
 + Added GZDoom-dev
