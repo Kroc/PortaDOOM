@@ -20,7 +20,7 @@ FUNCTION Paths.GetFolderName$(path$)
     IF path$ = "\" THEN EXIT FUNCTION
     
     'return nothing if there's no slash at all, i.e. the string is just a
-    'file-name. directories MUST end with slash; use `Paths.AddSlash` to
+    'file-name. directories MUST end with slash; use `Paths.AddSlash$` to
     'ensure a directory is always terminated correctly
     IF INSTR(path$, "\") = 0 THEN EXIT FUNCTION
     
@@ -58,4 +58,38 @@ FUNCTION Paths.GetFolderName$(path$)
         'extract the folder name from the boundaries we determined
         LET Paths.GetFolderName$ = MID$(path$, a + 1, z - a - 1)
     END IF
+END FUNCTION
+
+'returns the file name (including extension) from a path
+'===============================================================================
+FUNCTION Paths.GetFileName$(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    
+    DIM len_path AS _UNSIGNED LONG
+    LET len_path = LEN(path$)
+    
+    'don't be silly
+    IF len_path = 0 THEN EXIT FUNCTION
+    'if the path ends in a slash then it's a folder and there's no file-name
+    IF ASC(path$, len_path) = ASC_BSLASH THEN EXIT FUNCTION
+    
+    'return the input if there's no slash at all, i.e. the string is just a
+    'file-name. directories MUST end with slash; use `Paths.AddSlash$` to
+    'ensure a directory is always terminated correctly
+    IF INSTR(path$, "\") = 0 THEN
+        LET Paths.GetFileName$ = path$
+        EXIT FUNCTION
+    END IF
+    
+    'walk backward through the string looking for the slash;
+    'due to the validation check at the beginning of the function,
+    'we know for certain at least one back-slash exists
+    DIM i AS _UNSIGNED LONG
+    FOR i = len_path TO 1 STEP - 1
+        IF ASC(path$, i) = ASC_BSLASH THEN EXIT FOR
+    NEXT i
+    
+    'the file name is from the last slash, forward
+    LET Paths.GetFileName$ = RIGHT$(path$, len_path - i)
 END FUNCTION

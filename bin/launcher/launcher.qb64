@@ -145,6 +145,7 @@ OR cmd$ = "-h" _
 OR cmd$ = "-help" _
 OR cmd$ = "--help" _
 THEN
+    'TODO: console help
     SYSTEM 0
 END IF
 
@@ -154,20 +155,20 @@ END IF
 
 'read command-line switches:
 '-----------------------------------------------------------------------------
-DIM CMD_USE$ '....a specific engine-id to require
-DIM CMD_REQ$ '....a tag-list of engine requirements
-DIM CMD_32` '.....always use 32-bit executable on 64-bit system
-DIM CMD_SW` '.....require 8-bit (typically "software") rendering
-DIM CMD_DEFAULT` 'should default config file be used?
-DIM CMD_IWAD$ '...IWAD to use
-DIM CMD_PWAD$ '...optional PWAD to play
-DIM CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
-DIM CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
-DIM CMD_DEMO$ '...demo lump to play
-DIM CMD_WARP$ '...episode/map number to warp to
-DIM CMD_SKILL$ '..skill level number
-DIM CMD_CMPLVL$ '.compatibility level
-DIM CMD_EXEC$ '...extra script to execute
+DIM SHARED CMD_USE$ '....a specific engine-id to use
+DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
+DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
+DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
+DIM SHARED CMD_DEFAULT` 'should default config file be used?
+DIM SHARED CMD_IWAD$ '...IWAD to use
+DIM SHARED CMD_PWAD$ '...optional PWAD to play
+DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
+DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
+DIM SHARED CMD_DEMO$ '...demo lump to play
+DIM SHARED CMD_WARP$ '...episode/map number to warp to
+DIM SHARED CMD_SKILL$ '..skill level number
+DIM SHARED CMD_CMPLVL$ '.compatibility level
+DIM SHARED CMD_EXEC$ '...extra script to execute
 
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
@@ -265,6 +266,11 @@ LET game_ini$ = COMMAND$(1)
 IF game_ini$ = "" THEN
     LET game_ini$ = DIR_EXE$ + "wads\play-doom.ini"
 END IF
+
+ECHO ""
+ECHO Paths.GetFileName$(game_ini$)
+ECHO ""
+SLEEP
 
 CALL EnumerateGameINI(game_ini$)
 CALL EnumerateEngines

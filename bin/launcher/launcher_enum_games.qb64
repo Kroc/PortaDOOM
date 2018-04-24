@@ -3,6 +3,20 @@
 'populate game definition from the command-line parameters
 '=============================================================================
 SUB EnumerateGameCMD ()
+    DIM id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$
+    
+    'require "software" renderer (8-bit, 256-colours)
+    IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
+    
+    'these can be applied 1:1
+    'TODO: validation on this end, to give CMD-specific error message?
+    LET deh$ = CMD_DEH$
+    LET bex$ = CMD_BEX$
+    LET cmplvl$ = CMD_CMPLVL$
+    
+    CALL AddGame ( _
+        id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
+    )
 END SUB
 
 'given an INI file, read game definitions from it
