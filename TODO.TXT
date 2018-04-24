@@ -1,32 +1,24 @@
-Pages:
+[P0] Critical: (unstable until fixed)
 ================================================================================
-[ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
-    incompatibility with ZScript and a visual bug -- current work-around is to
-    limit it to software rendering
-[ ] Create pages for the speedruns so that the author notes can be displayed
-[ ] Help page to explain WAD page headers, glossary
+LAUNCHER:
+[ ] parse command-line params
+[ ] re-create the current UI and logic (will be replaced later)
+
+[P1] Required: (cannot be released until fixed)
+================================================================================
 [-] Index pages at the end of each Cacowards; allows the separate Cacowards
     packages to have an index
 [ ] Need launchers for bonus levels on Eternal Doom III
-[ ] Add The Given LowDetail / update its page text
+[ ] Add "The Given" LowDetail / update its page text
 
-PortaDOOM Alpha 3:
-
-[ ] Harmony IWAD page
-[ ] Hacx IWAD page
-[ ] N64 DOOM64.WAD warning on page
-[ ] Total Conversions page ...
-[ ] MegaWADs page ...
-[ ] Episodes page ...
-[ ] Onesies page ...
-[X] Community Projects page ...
-[ ] Vanilla page ...
-
-Scripts:
+[P2] Feature Enhancements:
 ================================================================================
+[ ] Updates to default configs:
+ -  [ ] Sector light mode: Standard
+ -  [ ] Disable stats (not fair for portable use on non-personal systems)
+[ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
+[ ] doom.bat : Add `-shotdir`, supported by a number of engines
 [ ] Include Crispy Doom music pack?
-[ ] doom.bat : Cannot substitute IWADs when playing demos!
-
 [ ] IWADs: (including Skill Names)
     [ ] Harmony
     [ ] Hacx
@@ -34,47 +26,45 @@ Scripts:
     [ ] Adventures of Square (SHAREWARE)
     [ ] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)
-
-[ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.
-    I.e. we need to control load order or have `/MOD` option or some-such
-
-[ ] doom.bat: Add `-shotdir`, supported by a number of engines
-
-[ ] DOOM Retro's `-config` parameter is not working
-[X] A method to inject default controls into any engine ver.
-    For Z-based engines, we can do this on the command line,
-    For most other engines, we'll have to modify the .cfg file.
-    - DOOM Retro has no setup program, will *require* the above!
-
-[ ] dosmag: "^_^" not escaping properly
-[ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
-    http://www.qb64.net/forum/index.php?topic=12306.msg108013#msg108013
-[ ] dosmag: Can we fix mousewheel scrolling with:
-    http://www.qb64.net/wiki/index.php/Controller_Devices
-[ ] "Castlevania Simon's Destiny" & "Shadow of the Wool Ball" are IWADs,
-    so require own configuration (set defaults script, GZDoom 3.2+)
-[X] GZDoom 3.2+ now supports ".iwad" & ".ipk3" extensions
-    [ ] Do not allow play.bat / doom.bat select an .ipk3 / .iwad file for
-        GZDoom < 3.2 or other engines?
 [-] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
     based on engine support -- e.g. ALIENS TC
 [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
      inputting text, even when using a mouse"
 
-[ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
+[P3] Content:
+================================================================================
+[ ] Update "Adventures of Square" to EP2
+[ ] Create pages for the speedruns so that the author notes can be displayed
+[ ] Help page to explain WAD page headers, glossary
+[ ] Harmony IWAD page
+[ ] Hacx IWAD page
+[ ] N64 DOOM64.WAD warning on page
+[ ] Total Conversions page ...
+[ ] MegaWADs page ...
+[ ] Episodes page ...
+[ ] Onesies page ...
+[-] Community Projects page ...
+[ ] Vanilla page ...
 
-[ ] Mods
-	[ ] Add /MOD option to doom.bat so as to change save-folder based on mod
-        selected; e.g. "strangeaeonsexp+HighNoonDrifter"
-
-[ ] DOSmag: Themes
-    [X] Fix "?" invalid character
-	[ ] Convert the statusbar/dialogue to a theme set
-	[-] Allow printing of text in any theme
-	    (i.e. to allow printing of formatted text in statusbar/dialog)
-	[X] Add shadow to dialog box
-
+[P4] Technical Debt: (making forward progress easier)
+================================================================================
+[ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
+    incompatibility with ZScript and a visual bug -- current work-around is to
+    limit it to software rendering
+[ ] Need a "dotted tab" for contents and index pages
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
 [ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
-[ ] Need a "dotted tab" for contents and index pages
+[ ] Convert the statusbar/dialogue to a theme set
+[ ] doom.bat : Cannot substitute IWADs when playing demos!
+[ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.
+    I.e. we need to control load order or have `/MOD` option or some-such
+[ ] A more common location for "bloom.cfg", so it doesn't have to be copied
+    everywhere?
+[ ] "Shadow of the Wool Ball" and "Blade of Agony" are IWADs,
+    so require own configuration (set defaults script, GZDoom 3.2+)
+[ ] dosmag: "^_^" not escaping properly
+[ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
+    http://www.qb64.net/forum/index.php?topic=12306.msg108013#msg108013
+[ ] dosmag: Can we fix mousewheel scrolling with:
+    http://www.qb64.net/wiki/index.php/Controller_Devices
