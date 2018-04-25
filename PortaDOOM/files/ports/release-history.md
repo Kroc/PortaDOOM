@@ -1,3 +1,34 @@
+GZDoom 3.3.2 released
+--------------------------------------------------------------------------------
+*Thu Apr 12, 2018 4:49 pm*
+
+Major Highlights
+
+* Fixed detection of .ipk7 custom IWADs
+* Restored vanilla behavior of lightning for original Hexen
+* Added loading of ZSDF lumps by full paths
+* disabled the survey code.
+* Exports `P_ActivateLine` to ZScript (along with constants for activation type)
+* Increased size of the savegame comment area.
+
+Full List
+
+* Forbade dynamic array as the return type of a function
+* Fixed detection of .ipk7 custom IWADs
+* Reintroduced discarding of custom IWAD duplicates
+* Updated zlib to 1.2.11
+* Fixed potential crash on usage of Mystic Ambit Incant
+* Fixed crash when `vid_setmode` CCMD is used from command line
+* Restored vanilla behavior of lightning for original Hexen
+* Fix mid texture rendering for self-referencing sector lines
+* Added zero initialization of implicit dynamic array items
+* Added loading of ZSDF lumps by full paths
+* Added message for absent explicitly referenced dialog file
+* disabled the survey code.
+* Exports `P_ActivateLine` to ZScript (along with constants for activation type)
+* Separated `P_ActivateLine` ZScript export into two functions, one with and one without a vector parameter.
+* Increased size of the savegame comment area.
+
 GZDoom 3.3.1 Released
 --------------------------------------------------------------------------------
 *Sun Apr 01, 2018 3:50 pm*
@@ -778,19 +809,22 @@ New features:
 
 GZDoom 2.1.1 and 1.9.1 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Feb 23, 2016 12:12
+*Tue Feb 23, 2016 12:12*
+
 These releases coincide with ZDoom 2.8.1 and bring the same fixes. In addition 2.1.1 also fixes the broken fake contrast feature in 2.1.0.
 
 2.1.1 will be the first official release that also comes as a 64 bit version
 
 GZDoom 2.1.0 and 1.9.0 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sat Feb 06, 2016 9:01
+*Sat Feb 06, 2016 9:01*
+
 Here's the new versions that coincide with ZDoom 2.8.0. Actually, these have one bug less that was fixed shortly after the ZDoom release.
 
 GZDoom 2.0.05 and 1.8.10 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Dec 21, 2014 15:29
+*Sun Dec 21, 2014 15:29*
+
 A new release is available!
 
 2.0.04 fixes most of the issues in 2.0.03 and updates to the latest ZDoom, of course.
@@ -799,7 +833,8 @@ I also decided to make another update to the 1.8 branch because 1.8.07 contained
 
 GZDoom 2.0.03 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Sep 16, 2014 8:37
+*Tue Sep 16, 2014 8:37*
+
 The first non-beta release of GZDoom 2.0 is available.
 
 2.0 is a major overhaul of the rendering system, aimed at cleaning the code base from many of the workarounds needed for non-shader-supporting hardware. It also aims at optimizing things a bit better for modern graphics hardware.
@@ -811,7 +846,8 @@ There are only a few new features here, the main goal with this version was to c
 
 GZDoom 1.8.7 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Sep 16, 2014 8:24
+*Tue Sep 16, 2014 8:24*
+
 This is the final update for GZDoom 1.x, bringing it to the latest state of ZDoom.
 
 This release is done for the sole reason that GZDoom 2.x requires OpenGL 3.0 support, so that users of older hardware (which should slowly disappear from the market) have one last chance to get the latest ZDoom features.
@@ -820,7 +856,8 @@ Future development will continue in v 2.x only.
 
 GZDoom 2.0.02 Third beta release
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Aug 19, 2014 17:32
+*Tue Aug 19, 2014 17:32*
+
 A new beta of GZDoom 2.0 is available.
 
 This restores support for OpenGL 3.3. A workaround has been added to enable the lighting code with the reduced feature set of the older hardware.
@@ -832,12 +869,13 @@ This build has been tested on NVidia hardware and on Intel GMA 4000. What I stil
 
 I need the following info:
 
-- are there any visual issues, in particular with dynamic lights?
-- how is performance compared to 1.8.6, both with lights on and off?
+* are there any visual issues, in particular with dynamic lights?
+* how is performance compared to 1.8.6, both with lights on and off?
 
 GZDoom 2.0.01 Second beta release
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Aug 03, 2014 8:43
+*Sun Aug 03, 2014 8:43*
+
 The first beta release of the new renderer is available now. Please note that this is a beta release, intended for finding bugs. It should be stable on Geforce cards but no guarantees.
 
 A few notes about compatibility:
@@ -859,7 +897,8 @@ UPDATE: The download was replaced with 2.0.01 which corrects a bug with not rend
 
 GZDoom 1.8.6 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Thu May 08, 2014 10:00
+*Thu May 08, 2014 10:00*
+
 This is just a bugfix release that addresses one critical issue with loading of 7z files.
 
 The complete list of changes from 1.8.5:
@@ -870,7 +909,8 @@ The complete list of changes from 1.8.5:
 
 GZDoom 1.8.5 released.
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sat May 03, 2014 12:32
+*Sat May 03, 2014 12:32*
+
 A new release is online.
 
 This contains all the bugfixes from the last 8 months and a few minor new features.
@@ -878,16 +918,17 @@ Please note: This is the first official release that was built with Visual Studi
 
 GZDoom 1.8.4 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Aug 27, 2013 23:07
+*Tue Aug 27, 2013 23:07*
+
 Due to a serious bug with scaled texture positioning a new release is online.
 
 Aside from that critical fix, new features include:
 
-- mod-customizable automap overlay colors
-- APROP_ViewHeight and APROP_AttackZOffset for ACS
-- Player.Aircapacity property which is used as a multiplier for the level's air supply.
-- BLOCKHITSCAN line flag
-- ACS CheckFlag function
+* mod-customizable automap overlay colors
+* APROP_ViewHeight and APROP_AttackZOffset for ACS
+* Player.Aircapacity property which is used as a multiplier for the level's air supply.
+* BLOCKHITSCAN line flag
+* ACS CheckFlag function
 
 and several other smaller additions plus more bugfixes.
 
@@ -895,44 +936,48 @@ Since my FTP problems still remain unsolved, here's the download:
 
 GZDoom 1.8.3 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Jul 28, 2013 9:46
+*Sun Jul 28, 2013 9:46*
+
 A new version has just been released.
 
 The most notable change is the ability to display sprites on the cheat (IDDT)- automap.
 Other changes include:
 
-- A_BFGSpray now can use the FOILINVUL flag on the BFGExtra actor.
-- Player.UseRange property
-- string table access for A_Print family.
-- damage type specific extreme death and crash states.
-- A_Light can now use negative light offsets in GL.
+* A_BFGSpray now can use the FOILINVUL flag on the BFGExtra actor.
+* Player.UseRange property
+* string table access for A_Print family.
+* damage type specific extreme death and crash states.
+* A_Light can now use negative light offsets in GL.
 
 Fixes include
 
-- new compatibility settings for some maps
-- fixed some damage type checks for type specific death states
+* new compatibility settings for some maps
+* fixed some damage type checks for type specific death states
 
 Due to some ISP related problems I cannot upload the new version to my server so please download it from the attachment to this post until the problem gets fixed.
 
 GZDoom 1.8.2 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Jun 23, 2013 13:58
+*Sun Jun 23, 2013 13:58*
+
 A new version is available. This is a bugfix release and fixes two problems of recent versions:
 
-- wiping the screen caused parts of the level not to be rendered
-- texture scaling was broken
+* wiping the screen caused parts of the level not to be rendered
+* texture scaling was broken
 
 IMPORTANT UPDATE: I had to make a hotfix because the savegame versioning was broken in ZDoom's initial git repository. Please upgrade immediately to 1.8.2.
 The 1.8.1 package has been deleted from the server already.
 
 GZDoom 1.8.0 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Jun 09, 2013 9:07
+*Sun Jun 09, 2013 9:07*
+
 This updates GZDoom to ZDoom version 2.7.0. Look over there for a list of new features, it's quite long...
 
 GZDoom 1.7.1 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Feb 10, 2013 10:39
+*Sun Feb 10, 2013 10:39*
+
 After a seeminly endless delay due to various problems with ZDoom's SVN code here it finally is:
 
 The new GZDoom 1.7.1.
@@ -941,34 +986,37 @@ This is mostly done to fix the problems with the new lighting mode. Of course it
 
 GZDoom 1.7.0 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Dec 23, 2012 11:59
+*Sun Dec 23, 2012 11:59*
+
 A new version is out - with a new lighting mode that's even closer to the software renderer!
 
 Other changes to the last version include:
 
-- berserk indicator on alternative HUD
-- support for BFG edition IWADs
-- sound precaching through MAPINFO
+* berserk indicator on alternative HUD
+* support for BFG edition IWADs
+* sound precaching through MAPINFO
 
 GZDoom 1.5.6 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Nov 14, 2010 13:54
+*Sun Nov 14, 2010 13:54*
+
 A new version is out!
 
 Major changes to the last version include:
 
-- customizable intermission sequences
-- more supported music formats (XMI, HMI, HMP)
-- better support of Timidity++ for extended MIDI formats
-- less quirky jumping code
-- major redesign of portal clipping. Problems with one sided lines in portals should be almost completely gone now.
+* customizable intermission sequences
+* more supported music formats (XMI, HMI, HMP)
+* better support of Timidity++ for extended MIDI formats
+* less quirky jumping code
+* major redesign of portal clipping. Problems with one sided lines in portals should be almost completely gone now.
 
 Update: 1.5.05 has been uploaded which fixes some bugs with nonstandard portals and reflective floors.
 Update2: 1.5.06 fixes a crash bug with more than 16 portals in a map.
 
 GZDoom 1.5.3 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Thu Sep 23, 2010 11:19
+*Thu Sep 23, 2010 11:19*
+
 A new release is out.
 
 The one major new feature is the improved menu code. The new menu can be fully controlled with the mouse.
@@ -977,18 +1025,20 @@ Aside from that it's mostly bugfixes related to the textured automap code that w
 
 GZDoom 1.5.2 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Fri Aug 27, 2010 23:52
+*Fri Aug 27, 2010 23:52*
+
 A new release is available.
 
 New features include:
 
-- textured automap
-- automap keys configurable in the menu and console
-- USDF support
-- FluidSynth support for MIDI playback (FluidSynth DLL not included for size reasons.)
+* textured automap
+* automap keys configurable in the menu and console
+* USDF support
+* FluidSynth support for MIDI playback (FluidSynth DLL not included for size reasons.)
 
 Bug fixes:
-- some maps with polyobjects got their geometry moved acrpss the map.
+
+* some maps with polyobjects got their geometry moved acrpss the map.
 
 UPDATE:
 
@@ -996,12 +1046,14 @@ Another release is available which fixes a recently introduced bug in ZDoom's in
 
 GZDoom 1.5.0 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Wed Aug 11, 2010 7:47
+*Wed Aug 11, 2010 7:47*
+
 This release coincides with ZDoom 2.5.0 so the main new feature is the new polyobject code. Of course all other ZDoom changes of recent months are added, too.
 
 GZDoom 1.4.8 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sat Mar 27, 2010 9:39
+*Sat Mar 27, 2010 9:39*
+
 A new version is out.
 
 Important new fixes include a critical level transition bug in Strife that made it impossible to get to the Abandoned Front Base and could cause the game to abort if you tried.
@@ -1010,39 +1062,42 @@ It also fixes an issue with item placement in maps at an angle that is not a mul
 
 UPDATE: 1.4.7 has been released. This version fixes 2 semi-critical bugs:
 
-- animations for menu textures using the original graphics names did not work
-- Strife conversations could only be initiated with shootable actors.
+* animations for menu textures using the original graphics names did not work
+* Strife conversations could only be initiated with shootable actors.
 
 UPDATE again: 1.4.8 has been released due to another bug introduced by recent ZDoom changes
 
-- picking up an invulnerability sphere while being invulnerable caused a crash.
+* picking up an invulnerability sphere while being invulnerable caused a crash.
 
 GZDoom 1.4.5 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Fri Mar 19, 2010 8:42
+*Fri Mar 19, 2010 8:42*
+
 A new version is out which includes the recent ZDoom extensions to the ambient sounds and of course all fixes and improvements from the last 2 months.
 
 If you downloaded 1.4.4 in the short time it was out please update immediately. That version has some issues which I only noticed after uploading it but before making a news post.
 
 GZDoom 1.4.3 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Fri Jan 29, 2010 23:22
+*Fri Jan 29, 2010 23:22*
+
 A new version is online.
 
 This is merely a bugfix release that addresses 2 semi-serious bugs:
 
-- shaders did not compile on ATI cards anymore
-- sprites were not properly sorted when rendering a mirror.
+* shaders did not compile on ATI cards anymore
+* sprites were not properly sorted when rendering a mirror.
 
 GZDoom 1.4.2 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Jan 24, 2010 11:05
+*Sun Jan 24, 2010 11:05*
+
 This updates GZDoom to ZDoom v2.4.1 and also fixes a few bugs:
 
-- sprite display on older graphics cards works again
-- sprites with an alpha channel again display as intended
-- Maps containing FraggleScript could crash when playing sounds
-- some rare crashes with changing a ScriptedMarine's skin.
+* sprite display on older graphics cards works again
+* sprites with an alpha channel again display as intended
+* Maps containing FraggleScript could crash when playing sounds
+* some rare crashes with changing a ScriptedMarine's skin.
 
 Important note:
 
@@ -1052,69 +1107,73 @@ In case somebody needs a specific version they can all be found and downloaded f
 
 GZDoom 1.4.1 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Tue Jan 05, 2010 10:36
+*Tue Jan 05, 2010 10:36*
+
 Version 1.4.1 is online. This is only a bugfix release that addresses several issues that have been found in 1.4.0. Here's the list of important fixes:
 
-- models did not display correctly
-- some moving cameras no longer worked.
-- some menu layout fixes
-- Strife dialogue layout fixes
-- improved precision for Floor_Waggle
-- improved performance with sprites that contain a lot of empty room on the outside.
+* models did not display correctly
+* some moving cameras no longer worked.
+* some menu layout fixes
+* Strife dialogue layout fixes
+* improved precision for Floor_Waggle
+* improved performance with sprites that contain a lot of empty room on the outside.
 
 GZDoom 1.4.0 released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Fri Jan 01, 2010 8:52
+*Fri Jan 01, 2010 8:52*
+
 To coincide with today's release of ZDoom 2.4.0 here's the latest GZDoom release.
 
 Major new features:
 
-- Monsters can no longer get stuck in each other.
-- Generalized version of A_BishopMissileWeave and A_CStaffMissileSlither, called A_Weave
-- portals can be defined with linedefs, like in Eternity.
-- Major improvement of portal robustness. All geometry lying between the camera and the portal is now discarded before being rendered so there's far less restrictions in defining a portal's layout. (OpenGL only!)
+* Monsters can no longer get stuck in each other.
+* Generalized version of A_BishopMissileWeave and A_CStaffMissileSlither, called A_Weave
+* portals can be defined with linedefs, like in Eternity.
+* Major improvement of portal robustness. All geometry lying between the camera and the portal is now discarded before being rendered so there's far less restrictions in defining a portal's layout. (OpenGL only!)
 
 Major fixes:
-- replacing puffs now gets recognized properly when checking the damage type
-- the options menu no longer gets cut off by the screen borders
-- moving a sky viewpoint now is interpolated properly (see Daedalus MAP21's intro for an example)
-- Hexen's Flechette-Grenade now gets thrown properly when viewing up or down.
+
+* replacing puffs now gets recognized properly when checking the damage type
+* the options menu no longer gets cut off by the screen borders
+* moving a sky viewpoint now is interpolated properly (see Daedalus MAP21's intro for an example)
+* Hexen's Flechette-Grenade now gets thrown properly when viewing up or down.
 
 GZDoom 1.3.17 final released
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Sun Nov 29, 2009 17:32
+*Sun Nov 29, 2009 17:32*
+
 The final release of GZDoom 1.3.17 is online.
 
 This includes all features from the recent betas plus several bug fixes from the beta testing phase.
 
-
 New features since 1.2.01:
-- load contents of directories into lump directory
-- load 7z files like Zips
-- more compression algorithms for Zip loading: Implode, Reduce, BZip2 and LZMA.
-- per-linedef texture scaling
-- limited support of MBF beta emulation features.
-- support of user-supplied texture shader effexts. There's on example file in gzdoom.pk3:
 
-Code: Select all
+* load contents of directories into lump directory
+* load 7z files like Zips
+* more compression algorithms for Zip loading: Implode, Reduce, BZip2 and LZMA.
+* per-linedef texture scaling
+* limited support of MBF beta emulation features.
+* support of user-supplied texture shader effexts. There's on example file in gzdoom.pk3:
 
-hardwareshader floor4_8 
-{
-	shader "shaders/glsl/func_wavex.fp"
-	speed 1.4
-}
+      hardwareshader floor4_8 
+      {
+          shader "shaders/glsl/func_wavex.fp"
+          speed 1.4
+      }
 
-- dynamic lights can be specified directly in DECORATE by adding 'Light("lightname") to a state definition.
-- and of course all the stuff that got added to ZDoom in recent months
+* dynamic lights can be specified directly in DECORATE by adding 'Light("lightname") to a state definition.
+* and of course all the stuff that got added to ZDoom in recent months
 
 Important bugfixes since 1.2.01:
-- burn wiping finally works without producing a white screen
-- fixed a long standing bug with sprites showing through horizon lines
+
+* burn wiping finally works without producing a white screen
+* fixed a long standing bug with sprites showing through horizon lines
 
 Improvements since 1.2.01:
-- new resource file management code for added robustness and flexibility
-- improved renderer performance. The speed hit with using 'quality' mode is mostly gone and performance overall is much better than in previous versions, in particular with NVidia based hardware.
-- major improvements of sky positioning
+
+* new resource file management code for added robustness and flexibility
+* improved renderer performance. The speed hit with using 'quality' mode is mostly gone and performance overall is much better than in previous versions, in particular with NVidia based hardware.
+* major improvements of sky positioning
 
 IMPORTANT NOTE FOR NVIDIA USERS:
 
@@ -1122,7 +1181,8 @@ You MUST update the driver to at least 191.07 for this if you want to run it wit
 
 GZDoom 1.3.04 - 1.3.13 Beta
 --------------------------------------------------------------------------------
-Post by Graf Zahl » Fri Oct 16, 2009 23:06
+*Fri Oct 16, 2009 23:06*
+
 Here's the latest beta version that includes all the latest changes. This is mostly for testing so that I can get better feedback if everything still works. I think it can be used for regular playing but please be aware that this has not been extensively tested yet.
 
 1.3.10 adds a new 'bench' command that should make running tests easier.
