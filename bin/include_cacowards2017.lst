@@ -14,7 +14,7 @@ files\config\default.prboom-plus.cfg
 files\config\default.zdoom.ini
 
 files\ports\chocolate-doom\
-files\ports\gzdoom-33_*\
+files\ports\gzdoom-34_*\
 files\ports\prboom+\
 files\ports\zdoom\
 

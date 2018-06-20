@@ -36,7 +36,7 @@ REM # <https://stackoverflow.com/a/5552995>
 SET NEWLINE=^& ECHO:
 
 REM # create the usage format string
-SET "USAGE=    doom.bat
+SET "USAGE=    doom.bat"
 SET "USAGE=%USAGE% [/USE ^<engine^>]"
 SET "USAGE=%USAGE% [/WAIT]"
 SET "USAGE=%USAGE% [/CONSOLE]"
@@ -52,7 +52,7 @@ SET "USAGE=%USAGE% [/WARP ^<map-number^>]"
 SET "USAGE=%USAGE% [/SKILL ^<skill-level^>]%NEWLINE%            "
 SET "USAGE=%USAGE% [/CMPLVL ^<complevel^>]"
 SET "USAGE=%USAGE% [/EXEC ^<file^>]%NEWLINE%            "
-SET "USAGE=%USAGE% [-- ^<files^>...]
+SET "USAGE=%USAGE% [-- ^<files^>...]"
 
 IF NOT "%~1" == "" GOTO :begin
 
@@ -117,6 +117,7 @@ ECHO       gzdoom-32           : GZDoom v3.2.4  ^(OCT-2017+^);
 ECHO                             versions 3.0 ^(APR-2017+^), 3.1 ^(JUN-2017+^) and 3.2.0
 ECHO                             ^(OCT-2017+^) are excluded due to a security concern
 ECHO       gzdoom-33           : GZDoom v3.3.0  ^(MAR-2018+^)
+ECHO       gzdoom-34           : GZDoom v3.4.1  ^(JUN-2018+^)
 ECHO:
 ECHO     NOTE: Additional engine resource files will be included automatically, that is
 ECHO           "brightmaps.pk3" ^& "lights.pk3" for GZDoom versions 1.0 and above, or
@@ -704,7 +705,7 @@ IF /I "%USE%" == "prboom" (
 	SET "PORT_SAVE=prboom"
 )
 IF /I "%USE%" == "gzdoom" (
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-33_%ENGINE_BIT%"
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-34_%ENGINE_BIT%"
 	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
 	SET "ENGINE_EXE=gzdoom.exe"
 	SET "ENGINE_CFG=gzdoom"
@@ -721,6 +722,16 @@ IF /I "%USE%" == "gzdoom-dev" (
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=GZDoom ^(development^)"
 	SET VER_GZDOOM=33
+)
+IF /I "%USE%" == "gzdoom-34" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-34_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom-34"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=GZDoom ^(v3.4.x^)"
+	SET VER_GZDOOM=34
 )
 IF /I "%USE%" == "gzdoom-33" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-33_%ENGINE_BIT%"
@@ -1777,8 +1788,9 @@ IF "%GAME%" =="DOOM64" (
 	ECHO          [3]  I Own Doom!
 	ECHO          [4]  Watch Me Die!
 	
-REM # Or Heretic:
-REM # TODO: Hexen skill level names are based on class
+REM # or Heretic:
+REM # TODO: Hexen skill level names are based on class,
+REM #       add class choice too, if not specified by parameters
 ) ELSE IF "%GAME%" == "HERETIC" (
 	ECHO          [1] Thou needeth a wet-nurse
 	ECHO          [2] Yellowbellies-r-us
@@ -1786,7 +1798,7 @@ REM # TODO: Hexen skill level names are based on class
 	ECHO          [4] Thou art a smite-meister
 	ECHO          [5] Black plague possesses thee
 
-REM # Or Strife:
+REM # or Strife:
 ) ELSE IF "%GAME%" == "STRIFE" (
 	ECHO          [1] Training
 	ECHO          [2] Rookie
@@ -1794,7 +1806,7 @@ REM # Or Strife:
 	ECHO          [4] Elite
 	ECHO          [5] Bloodbath
 
-REM # Lastly, DOOM:
+REM # lastly, DOOM:
 ) ELSE (
 	ECHO          [1]  I'm Too Young To Die
 	ECHO          [2]  Hey, Not Too Rough

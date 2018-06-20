@@ -1,3 +1,140 @@
+GZDoom 3.4.0
+--------------------------------------------------------------------------------
+*Wed Jun 06, 2018 5:24 pm*
+
+Highlights
+
+* enable `#include` support in "modeldef" files
+* removed DirectDraw and Direct3D backends, removed un-accelerated SDL framebuffer backend
+* reorganization of 2D and 3D rendering code in preparation for Vulkan in the future, performance improvements on newer hardware
+* CVAR that handles it is now `vid_rendermode` - `vid_renderer`, `swtruecolor`, and `r_polyrender` have been removed and combined into new CVAR
+* added a `lightsizefactor` command to gldefs.
+* allow animated title pics
+* Add support for Unreal Engine 1 vertex mesh format
+* added LevelLocals vec2/3Offset(Z) functions for portal-aware offsetting without needing actors
+* Add `OnGiveSecret` virtual function on `Actor` for customizing behavior of secret finding
+* `BLOCKASPLAYER` flag: treat non-player actors as blockable by "block players" lines
+* added 'revealed on automap' linedef flag, UDMF only
+* added forced automap style to linedef, UDMF only
+* Added startup song definition for custom IWADs
+* This release contains a major render optimization for highly detailed maps that may give a +20% performance improvement on Intel and AMD hardware (less on NVidia because the driver has far less overhead that could be optimized away)
+
+Notes
+
+* removed DirectDraw and Direct3D backends, removed unaccerated SDL framebuffer backend
+* reorganization of 2D and 3D rendering code in preparation for Vulkan in the future
+* renderer can now be "live switched" between the Software renderer and Hardware-accelerated OpenGL modes - like old GZDoom
+* CVAR that handles it is now 'vid_rendermode' - vid_renderer, swtruecolor, and r_polyrender have been removed and combined into new CVAR
+* include and forward declaration cleanup: lots of unused stuff removed
+* rendering settings removed from launch popup: they can now be changed dynamically in-game
+* internal level compatibility definitions are now carried out by ZScript, more level compatibility settings * have been added
+* Thread-Local Storage is now required on all compiler systems in order to use GZDoom. This means you cannot * use OpenBSD versions earlier than 6.3, and GCC is still unavailable for that platform.
+* improvements to models in Software Renderer (still in beta state, but available for experimentation, use * 'r_models')
+* Added activation type to WorldLine(Pre)Activated events
+* Added names for arguments in DStaticEventHandler class definition
+* protected critical portal data from getting written to by user code. This data is game critical and may only * be altered by code that knows what is allowed and what not.
+* added a compatibility handler for Kama Sutra MAP01's ending area.
+* fix softpoly portal crash
+* Fixed missing textures on Valhalla with hardware renderer
+* more rendering fixes for Softpoly and Hardware-OpenGL
+* fix missing fuzz initialization in softpoly
+* Removed gl_lights_checkside
+* Made 100% kills possible and unstuck imp on Valhalla map
+* added a 'lightsizefactor' command to gldefs.
+* Actor's Activation property is now stored in saved game
+* fix softpoly mirrors
+* Made 100% kills possible on Altar of Evil, easy skill
+* (internal ZScript) Add info about UseSpecial flag feature conflict above Actor.Used
+* Fixed initialization issues with dynamic lights.
+* Implemented workaround for ZScript LineTrace with 3D floors
+* Added missing commented enum entry for ETraceFlags on ZScript side
+* Only call additional LineCheck if there are 3D floors
+* Enabled playing of *gasp sound by default
+* Added startup song definition for custom IWADs
+* Fixed walkthrough blocker in Sin City 2 via compatibility entry
+* allow animated title pics.
+* don't force the renderer to remain active in windowed mode when in the background.
+* OPL Synth fix: Double-voice instruments randomly don't play second voice
+* updated LZMA library to version 18.05
+* serialize 'spawned' object flag, WorldThingDestroyed event relies on it
+* added compatibility fix for bad sector reference in Plutonia MAP11.
+* use libc++ for all targets on macOS
+* SDL: clear button state when switching from/to GUI input
+* added r_debug_draw that shows how the software renderer composes its scene (remember that Youtube video * Edward850 made?)
+* added end line to recursive sound warning
+* reduce the number of direct OpenGL calls done by the post processing steps
+* fixed calculation of glow color
+* fixed crash during autoloading of material textures
+* fixed sloped drawer crash
+* added end line to various messages so they don't screw up further output anymore
+* fixed alpha of weapon sprite.
+* added 'vid_scaletowidth' and 'vid_scaletoheight' to calculate 'vid_scalefactor' to reach a certain value on * screen dynamics (i.e. if you want 320 pixels wide, use vid_scaletowidth 320)
+* Add support for Unreal Engine 1 vertex mesh format.
+* added LevelLocals vec2/3Offset(Z) functions for portal-aware offsetting without needing actors
+* trigger WorldThingDamaged event before WorldThingDied
+* set a sane lower limit for vid_scalefactor, removed some code redundancy
+* define zdoom.rc as a proper Windows text file, stop Git from mismanaging it
+* add 'vid_showcurrentscaling' ccmd - shows both virtual and real screen resolution for the current render
+* made vr_enable_quadbuffered windows-only, some fixes to it
+* use an indexed vertex buffer to render flats
+* use triangles instead of triangle fans to render flats.
+* render sector planes in one draw call.
+* added 'revealed on automap' linedef flag, UDMF only
+* added forced automap style to linedef, UDMF only
+* added CVAR to disable WGL_EXT_swap_control_tear. ('gl_control_tear') - see commit 'cc65490' for more info
+* added a CVAR to disable per-plane rendering.
+* replaced tabs with spaces in UDMF spec
+* added new linedef properties to UDMF spec
+* fix model interpolation bug
+* fixed applying of alpha to weapon sprites
+* enable #include support in modeldef files
+* Add Line Specials Line_SetAutomapFlags, Line_SetAutomapStyle
+* force model light to be attenuated
+* restore startup game state on restart
+* fixed blinking frame after saving a game
+* when restoring a savegame with errors, show the console instead of a 'very fatal error' crash (commit * message: fixed: When deserializing the object list, the array must be nulled before using it so that a * premature abort does not end up working on random data.)
+* replace softpoly block drawers with span drawers and make them use blending rules directly from render styles
+* add dynlights to softpoly pal mode
+* fixed rendering of environment map on mirrors
+* fixed Windows XP compatibility for MSVC 2017 targets
+* limited length of server CVAR name to 63 characters
+* fixed: +DONTSPLASH disabled all terrain effects, not just the splash.
+* use a linear light ramp on the textured automap for light modes 0 and 1.
+* fix savepic render buffer issues
+* Swap front face culling for GL model drawer (CCW should be the default).
+* Added mirroring handling to software models.
+* use affine dynlights in softpoly
+* fix memory arena allocation alignment for 32 bit systems.
+* fixed: For melee attacks with a short attack range P_AimLineAttack must check for hits from above and below.
+* fixed mouse cursor positioning in menu for Cocoa backend
+* fixed linking with sanitizer(s) enabled
+* Fixed: Dehacked must not validate parameters for MBF special functions.
+* fixed - sector sounds were not translated through static portals properly
+* BLOCKASPLAYER flag: treat non-player actors as blockable by "block players" lines
+* fix crash on dying when player class has no death states
+* fix softpoly colored fog bug in the new drawers
+* fix dynlight color not being applied on sprites
+* Adds "OnGiveSecret" virtual function on Actor for customizing behavior of secret finding.
+* fix software renderer dynamic lights not working properly in mirrors
+* fixed autoaiming for unranged attacks.
+* fix null pointer crash in softpoly
+* add dynamic lights to softpoly and software renderer models
+
+GZDoom 3.4.1 Released
+--------------------------------------------------------------------------------
+*Graf Zahl » Wed Jun 13, 2018 7:05 pm*
+
+Release Notes
+
+* fixed: redirect script access to the compatflags CVARs to their internal shadow variables. This is needed so that MAPINFO settings for these flags don't get ignored.
+* fixed: flag CVars in ZScript referenced wrong addresses
+* fixed: ZScript used the wrong variable for compatflags2.
+* fixed: remove ARM specific gl_es definition since it's not even really much different from the main line definition, anyhow
+* fixed generation of brightmaps for sprites. This forgot to take the added empty border for filtering improvement into account.
+* fixed ADynamicLight's shadowmap index must be reset when loading a savegame.
+* fixed portal restoration on revisiting level in hub. - Added function to FLevelLocals to test if map is being re-entered
+* fixed crash with GL 3.x and fixed colormap active.
+
 GZDoom 3.3.2 released
 --------------------------------------------------------------------------------
 *Thu Apr 12, 2018 4:49 pm*

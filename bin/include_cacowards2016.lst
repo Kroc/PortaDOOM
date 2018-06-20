@@ -14,7 +14,7 @@ files\config\default.prboom-plus.cfg
 files\config\default.zdoom.ini
 
 files\ports\chocolate-doom\
-files\ports\gzdoom-33_*\
+files\ports\gzdoom-34_*\
 files\ports\prboom+\
 files\ports\zdoom\
 
@@ -87,7 +87,7 @@ pages\32in24-16.dosmag
 files\wads\multiplayer\32in24-16
 
 pages\DOOM(4) for DooM.dosmag
-files\wads\mods\Doom4Doom\
+files\mods\Doom4Doom\
 
 pages\Luducrium.dosmag
 files\wads\jokes\ludicrm\

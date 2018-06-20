@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+20-JUN-18:
++ Added GZDoom v3.4.1 
+
 25-APR-18:
 * Updated GZDoom to v3.3.2
 
