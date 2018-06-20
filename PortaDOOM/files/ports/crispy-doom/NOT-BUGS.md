@@ -1,4 +1,4 @@
-﻿The aim of Chocolate Doom is to behave as closely to Vanilla Doom as
+The aim of Chocolate Doom is to behave as closely to Vanilla Doom as
 possible.  As a result, you may experience problems that you would
 also experience when using Vanilla Doom.  These are not “bugs” as
 Chocolate Doom is behaving as intended.

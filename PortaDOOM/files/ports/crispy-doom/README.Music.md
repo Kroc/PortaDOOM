@@ -1,4 +1,4 @@
-﻿Doom has a memorable and atmospheric soundtrack. Like many games of
+Doom has a memorable and atmospheric soundtrack. Like many games of
 the era, it is MIDI-based. Chocolate Doom includes a number of
 different options for music playback, detailed below.
 
@@ -43,6 +43,13 @@ from the idgames archive as music/dgguspat.zip:
 Having downloaded the patches, select “GUS (emulated)” in the sound
 configuration dialog in the setup tool, and use the “GUS patch path”
 widget to enter the path to the directory containing the patch files.
+
+For the music not to sound weird, you will almost certainly want to
+load gusgonna.wad (sounds/gusgonna.zip in the idgames archive) when
+you run the game, to work around a bug in vanilla Doom's instrument
+mappings parser:
+
+  https://www.doomworld.com/idgames/sounds/gusgonna
 
 By default a GUS card with 1024KB is simulated; to simulate a 256KB,
 512KB or 768KB card instead, change the gus_ram_kb option in

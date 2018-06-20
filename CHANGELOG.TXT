@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+20-JUN-18:
++ Added GZDoom v3.4.1 
+* Updated Crispy Doom to 5.2
+
 25-APR-18:
 * Updated GZDoom to v3.3.2
 
@@ -9,6 +13,10 @@
 * Updated GZDoom to v3.3.1
 * DOOM Retro updated to v2.6.9
 * Improvements to "build.bat" (zip command is more modular)
+
+08-APR-18:
+* Fixed typo in doom.bat that was preventing anything from working!
+  How did this slip through, when I tested each release??
 
 26-MAR-18:
 + Added GZDoom v3.3

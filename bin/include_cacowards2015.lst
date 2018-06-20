@@ -13,7 +13,7 @@ files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
 
 files\ports\chocolate-doom\
-files\ports\gzdoom-33_*\
+files\ports\gzdoom-34_*\
 files\ports\prboom+\
 
 pages\Home #??.dosmag
@@ -78,7 +78,7 @@ files\wads\multiplayer\dbabrm\
 pages\ChaosCore CTF.dosmag
 files\wads\multiplayer\ChaosCoreCTFmpII-b\
 pages\DoomRL Arsenal.dosmag
-files\wads\mods\doomrl_arsenal\
+files\mods\doomrl_arsenal\
 pages\InstaDoom #??.dosmag
 files\wads\jokes\instadm\
 files\wads\jokes\instadm\filters\
