@@ -127,7 +127,7 @@ CALL UI.Render
 'read command-line parameters (if any)
 '=============================================================================
 'TODO: if there are no command-line parameters, we present a UI to build
-'      a custom game configuration
+'      a custom game configuration?
 IF _COMMANDCOUNT = 0 THEN
     ''SYSTEM 1
 END IF
