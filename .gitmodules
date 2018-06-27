@@ -1,0 +1,3 @@
+[submodule "bin/qb64"]
+	path = bin/qb64
+	url = https://github.com/Galleondragon/qb64.git

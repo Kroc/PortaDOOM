@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+27-JUN-18:
+* Switched to a Git Submodule for QB64
+
 20-JUN-18:
 + Added GZDoom v3.4.1 
 * Updated Crispy Doom to 5.2
