@@ -2,6 +2,7 @@
 *
 !.gitignore
 !.gitattributes
+!.gitmodules
 
 # the actual PortaDOOM root; this is the part that will be redistributed, the
 # root here is for build scripts / tools and project metadata / management files
