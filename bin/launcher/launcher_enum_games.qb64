@@ -3,21 +3,69 @@
 'populate game definition from the command-line parameters
 '=============================================================================
 SUB EnumerateGameCMD ()
-    DIM id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$
-    
+    DIM title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$
+
     'require "software" renderer (8-bit, 256-colours)
     IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
-    
+
+    ' if no IWAD is provided, we will default to "DOOM2"
+    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2"
+    LET iwad$ = CMD_IWAD$
+    LET title$ = GetIWADTitle$(iwad$)
+
+    LET pwad$ = CMD_PWAD$
+
+    'TODO: implement `/REQ` for requesting tags
+    LET tags$ = GetIWADTags$(iwad$)
+
     'these can be applied 1:1
     'TODO: validation on this end, to give CMD-specific error message?
     LET deh$ = CMD_DEH$
     LET bex$ = CMD_BEX$
     LET cmplvl$ = CMD_CMPLVL$
+
+    _ECHO ""
+    _ECHO "IWAD_PATH: " + FindFile$(iwad$)
+    _ECHO ""
     
     CALL AddGame ( _
-        id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
+        "cmd", title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
     )
 END SUB
+
+'gets a title for a built-in IWAD
+'=============================================================================
+FUNCTION GetIWADTitle$ (iwad$)
+    SELECT CASE UCASE$(Paths.GetFileBaseName$(iwad$))
+        CASE "DOOM"
+            LET GetIWADTitle$ = "DOOM"
+        CASE "DOOM2"
+            LET GetIWADTitle$ = "DOOM II"
+        CASE "HERETIC"
+            LET GetIWADTitle$ = "Heretic"
+        CASE "HEXEN"
+            LET GetIWADTitle$ = "Hexen: Beyond Heretic"
+        CASE "STRIFE1"
+            LET GetIWADTitle$ = "Strife: Quest for the Sigil"
+        CASE "DOOM64"
+            LET GetIWADTitle$ = "DOOM 64"
+        CASE ELSE
+            LET GetIWADTitle$ = Paths.GetFileBaseName$(iwad$)
+    END SELECT
+END FUNCTION
+
+'gets the compatibility tags for a built-in IWAD
+'=============================================================================
+FUNCTION GetIWADTags$ (iwad$)
+    SELECT CASE UCASE$(Paths.GetFileBaseName$(iwad$))
+        CASE "DOOM64"
+            'DOOM 64 does not run on a typical 'vanilla' engine
+            LET GetIWADTags$ = "doom64"
+        CASE ELSE
+            'all other built-in IWADs run on any 'vanilla'-compatible engine
+            LET GetIWADTags$ = "vanilla"
+    END SELECT
+END FUNCTION
 
 'given an INI file, read game definitions from it
 '=============================================================================
@@ -76,15 +124,15 @@ SUB AddGame ( _
     REDIM _PRESERVE Games(1 TO GameCount%) AS Game
     LET Games(GameCount%).id = id$
     
-    ECHO "* GAME #" + STRINT$(GameCount%) + ": " + id$
-    IF title$ <> "" THEN ECHO "- " + id$ + ".title" + CHR$(9) + title$
-    IF iwad$ <> "" THEN ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
-    IF pwad$ <> "" THEN ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
-    IF cmplvl$ <> "" THEN ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
-    IF deh$ <> "" THEN ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
-    IF bex$ <> "" THEN ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
-    IF tags$ <> "" THEN ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
-    IF vid$ <> "" THEN ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
+    _ECHO "* GAME #" + STRINT$(GameCount%) + ": " + id$
+    IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
+    IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
+    IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
+    IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
+    IF deh$ <> "" THEN _ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
+    IF bex$ <> "" THEN _ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
+    IF tags$ <> "" THEN _ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
+    IF vid$ <> "" THEN _ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
     
     'process the tag list
     CALL AddTags(tags$)
@@ -103,3 +151,66 @@ SUB AddGame ( _
     LET Games(GameCount%).tags = tags$
     LET Games(GameCount%).vid = VAL(vid$)
 END SUB
+
+'=============================================================================
+FUNCTION FindFile$(path$)
+    'is the given path absolute?
+    IF Paths.IsAbsolute(path$) THEN
+        'if the file doesn't exist, return null-string for error
+        IF NOT _FILEEXISTS(path$) THEN EXIT FUNCTION
+        'file exists, is absolute, no other checks needed
+        LET FindFile$ = path$
+        EXIT FUNCTION
+    END IF
+    
+    DIM testPath$
+    
+    'check previously used folder:
+    IF DIR_PREV$ <> "" THEN
+        LET testPath$ = DIR_PREV$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the 'current' directory
+    '-- i.e. the directory the launcher was called *from*
+    IF DIR_CUR$ <> "" THEN
+        LET testPath$ = DIR_CUR$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the directory where the PWAD was found
+    '(allows for easily finding WADs next to the PWAD)
+    IF DIR_PWAD$ <> "" THEN
+        LET testPath$ = DIR_PWAD$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the directory where the IWAD was found
+    '(allows for easily finding WADs next to the IWAD)
+    IF DIR_IWAD$ <> "" THEN
+        LET testPath$ = DIR_IWAD$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the base WADs directory
+    LET testPath$ = DIR_WADS$ + path$
+    GOSUB checkPath
+    
+    IF DIR_ENGINE$ <> "" THEN
+        LET testPath$ = DIR_ENGINE$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'file has not been found!
+    'return null-string for error
+    EXIT FUNCTION
+    
+checkPath:
+    'if the file doesn't exist at this path,
+    'return so somewhere else can be tried
+    IF NOT _FILEEXISTS(testPath$) THEN RETURN
+    'file found! return the valid path
+    LET FindFile$ = testPath$
+    'update the 'previous directory'
+    LET DIR_PREV$ = Paths.AddSlash$(Paths.GetFolderName$(FindFile$))
+END FUNCTION

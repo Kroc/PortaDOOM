@@ -6,7 +6,7 @@ SUB AddTags (tagList$)
     'validation: be careful of fixed-width strings
     LET tagList$ = RTRIM$(tagList$)
     
-    ECHO "* AddTags('" + tagList$ + "')"
+    _ECHO "* AddTags('" + tagList$ + "')"
     
     'the tag list will be broken into individual tags,
     'these will hold the individual tag index and name
@@ -24,7 +24,7 @@ SUB AddTags (tagList$)
         REDIM _PRESERVE Tags(1 TO tag%) AS STRING * 16
         LET Tags(tag%) = tag$
         
-        ECHO "- AddTag: #" + STRINT$(tag%) + " " + tag$
+        _ECHO "- AddTag: #" + STRINT$(tag%) + " " + tag$
         
         NextTag:
         LET tag$ = SplitTags$("")

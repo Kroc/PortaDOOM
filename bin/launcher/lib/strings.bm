@@ -4,12 +4,6 @@ DECLARE LIBRARY
     FUNCTION GetShortPathNameA (lpszLongPath AS STRING, lpszShortPath AS STRING, BYVAL cchBuffer AS LONG)
 END DECLARE
 
-'print to the console only
-'=============================================================================
-SUB ECHO (text$)
-    _DEST _CONSOLE: PRINT text$: _DEST 0
-END SUB
-
 'why isn't this built-in?
 '=============================================================================
 FUNCTION TRIM$ (text$)

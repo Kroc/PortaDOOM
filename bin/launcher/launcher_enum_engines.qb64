@@ -1,5 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'walk the ports folder and identify all engines present
 '=============================================================================
 SUB EnumerateEngines ()
     CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
@@ -7,7 +8,7 @@ SUB EnumerateEngines ()
     
     LET EngineCount% = 0
     
-    CHDIR "C:\GAMES\DOOM\PortaDOOM\files\ports"
+    CHDIR DIR_EXE$ + "ports"
     'create a directory list in a file, containing only sub-folder names
     SHELL _HIDE "DIR /AD /B > dir.tmp"
     
@@ -38,8 +39,8 @@ SUB EnumerateEngines ()
             LET ini_engine$ = ReadSetting$("", "engines", STRINT$(ini_index%))
             IF ini_engine$ = "" THEN EXIT DO
             
-            ECHO ""
-            ECHO "* " + ini_engine$
+            _ECHO ""
+            _ECHO "* " + ini_engine$
             
             CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", ini_engine$)
             CALL UI.Render
@@ -86,6 +87,7 @@ SUB EnumerateEngines ()
             'process the tag list
             CALL AddTags(ini_tags$)
             
+            LET Engines(EngineCount%).folder = folder$
             LET Engines(EngineCount%).name = ini_name$
             LET Engines(EngineCount%).rank = VAL(ini_rank$)
             LET Engines(EngineCount%).title = ini_title$
@@ -217,12 +219,12 @@ SUB EnumerateEngines ()
         
     LOOP
     
-    ECHO ""
-    ECHO "sorts: " + STR$(sortCount%)
+    _ECHO ""
+    _ECHO "sorts: " + STR$(sortCount%)
     FOR i% = 1 TO EngineCount%
-        ECHO "- " + Engines(i%).title$
+        _ECHO "- " + Engines(i%).title$
     NEXT i%
-    ECHO ""
+    _ECHO ""
     
     CALL UI.DesktopBars.Update(ui_statusbar, "", ini_engine$)
     CALL UI.Render
@@ -241,3 +243,9 @@ FUNCTION kinValue% (kin AS STRING * 1)
             LET kinValue% = 0
     END SELECT
 END FUNCTION
+
+'selects an engine for use, populating the 'current engine' variables
+'============================================================================
+SUB SelectEngine(engine%)
+    LET DIR_ENGINE$ = "files\ports\" + Engines(engine%).folder
+END SUB

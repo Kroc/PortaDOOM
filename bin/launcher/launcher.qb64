@@ -11,6 +11,10 @@ $SCREENHIDE
 'to its 1:1 size
 $RESIZE:OFF
 
+'set ALT+ENTER to switch to 4:3 aspect ratio, with anti-aliasing;
+'many thanks Fellippe Heitor for implementing this!
+_ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
+
 '$INCLUDE: 'lib\consts.bi'
 '$INCLUDE: 'lib\INI-Manager\ini.bi'
 '$INCLUDE: 'lib\strgui\strgui.bi'
@@ -51,9 +55,10 @@ REDIM SHARED GameTags(0, 0) AS _BYTE
 TYPE Engine
     'ids can be the same between multiple engines! (different versions?)
     id AS STRING * 32
+    folder AS STRING * 32 'the folder name the engine is in
     'these are specifically named after the INI-file param names
     name AS STRING * 32 '..simple name, for grouping versions together
-    rank AS INTEGER 
+    rank AS INTEGER
     title AS STRING * 64 '.on-screen "friendly name"
     exe AS STRING * 32 '...executable file-name
     ver AS INTEGER '.......engine's version number
@@ -103,16 +108,16 @@ SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 ''DO
 ''    i% = i% + 1
 ''    setting$ = ENVIRON$(i%) 'get a setting from the list
-''    ECHO setting$
+''    _ECHO setting$
 ''LOOP UNTIL setting$ = ""
-''ECHO "": ECHO ""
+''_ECHO "": _ECHO ""
 
 'print base UI
 '-----------------------------------------------------------------------------
 DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
 DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
-LET ui_titlebar = UI.DesktopBars.Add (1, BLACK, LTGREY, _TITLE$, "")
-LET ui_statusbar = UI.DesktopBars.Add (_HEIGHT, BLACK, LTGREY, "", "")
+LET ui_titlebar = UI.DesktopBars.Add(1, BLACK, LTGREY, _TITLE$, "")
+LET ui_statusbar = UI.DesktopBars.Add(_HEIGHT, BLACK, LTGREY, "", "")
 CALL UI.Render
 
 _SCREENSHOW
@@ -153,48 +158,6 @@ END IF
 
 'TODO: if the params are WAD files etc, then show a UI to build a game
 
-'read command-line switches:
-'-----------------------------------------------------------------------------
-DIM SHARED CMD_USE$ '....a specific engine-id to use
-DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
-DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
-DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
-DIM SHARED CMD_DEFAULT` 'should default config file be used?
-DIM SHARED CMD_IWAD$ '...IWAD to use
-DIM SHARED CMD_PWAD$ '...optional PWAD to play
-DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
-DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
-DIM SHARED CMD_DEMO$ '...demo lump to play
-DIM SHARED CMD_WARP$ '...episode/map number to warp to
-DIM SHARED CMD_SKILL$ '..skill level number
-DIM SHARED CMD_CMPLVL$ '.compatibility level
-DIM SHARED CMD_EXEC$ '...extra script to execute
-
-LET i = 1
-DO WHILE COMMAND$(i) <> ""
-    SELECT CASE UCASE$(COMMAND$(i))
-        'just capture the param values, we will parse & validate later
-        CASE "/USE": LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
-        CASE "/REQ": LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
-        CASE "/32": LET CMD_32` = TRUE
-        CASE "/SW": LET CMD_SW` = TRUE
-        CASE "/DEFAULT": LET CMD_DEFAULT` = TRUE
-        CASE "/IWAD": LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
-        CASE "/PWAD": LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
-        CASE "/DEH": LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
-        CASE "/BEX": LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
-        CASE "/DEMO": LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
-        CASE "/WARP": LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
-        CASE "/SKILL": LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
-        CASE "/CMPLVL": LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
-        CASE "/EXEC": LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
-        CASE ELSE
-            'TODO: invalid param?
-            'TODO: handle file-list
-    END SELECT
-    LET i = i + 1
-LOOP
-
 'read system info:
 '-----------------------------------------------------------------------------
 'get CPU type for the system (32 / 64-bit)
@@ -208,7 +171,7 @@ IF ENVIRON$("PROCESSOR_ARCHITECTURE") = "AMD64" THEN LET CPU_BIT = 64
 IF ENVIRON$("PROCESSOR_ARCHITEW6432") = "AMD64" THEN LET CPU_BIT = 64
 
 'directory of this executable (regardless of where it was called from)
-DIM DIR_EXE$
+DIM SHARED DIR_EXE$
 LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
 
 'now is this executable running from the source code folder or from within
@@ -225,13 +188,13 @@ END IF
 
 'the 'current directory' (where this executable was called *from*),
 'this will be one of the folders we check when searching for files
-DIM DIR_CUR$
+DIM SHARED DIR_CUR$
 LET DIR_CUR$ = Paths.AddSlash$(_STARTDIR$)
 
-ECHO ""
-ECHO "launcher.exe : " + DIR_EXE$
-ECHO "current dir  : " + DIR_CUR$
-ECHO ""
+_ECHO ""
+_ECHO "launcher.exe : " + DIR_EXE$
+_ECHO "current dir  : " + DIR_CUR$
+_ECHO ""
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. However, we want
@@ -250,29 +213,92 @@ LET FIX_PATH$ = "..\..\.."
 
 'we will remember the directory of the last file
 '(used for finding side-by-side WADs)
-DIM DIR_PREV$
+DIM SHARED DIR_PREV$
 'other directories that will be remembered as we go
-DIM DIR_IWAD$
-DIM DIR_PWAD$
+DIM SHARED DIR_IWAD$
+DIM SHARED DIR_PWAD$
+
+DIM SHARED DIR_WADS$
+LET DIR_WADS$ = "wads\"
+
+DIM SHARED DIR_ENGINE$
 
 DIM CMD_PARAMS$
 DIM CMD_FILES$
 
+'read command-line switches:
+'-----------------------------------------------------------------------------
+DIM SHARED CMD_USE$ '....a specific engine-id to use
+DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
+DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
+DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
+DIM SHARED CMD_DEFAULT` 'should default config file be used?
+DIM SHARED CMD_IWAD$ '...IWAD to use
+DIM SHARED CMD_PWAD$ '...optional PWAD to play
+DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
+DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
+DIM SHARED CMD_DEMO$ '...demo lump to play
+DIM SHARED CMD_WARP$ '...episode/map number to warp to
+DIM SHARED CMD_SKILL$ '..skill level number
+DIM SHARED CMD_CMPLVL$ '.compatibility level
+DIM SHARED CMD_EXEC$ '...extra script to execute
+
+LET i = 1
+_ECHO "Command Line Parameters:"
+_ECHO "========================"
+DO WHILE COMMAND$(i) <> ""
+    SELECT CASE UCASE$(COMMAND$(i))
+        'just capture the param values, we will parse & validate later
+        CASE "/USE": LET i = i + 1: LET CMD_USE$ = COMMAND$(i): _ECHO "/USE " + CMD_USE$
+        CASE "/REQ": LET i = i + 1: LET CMD_REQ$ = COMMAND$(i): _ECHO "/REQ " + CMD_REQ$
+        CASE "/32": LET CMD_32` = TRUE: LET CPU_BIT = 32: _ECHO "/32"
+        CASE "/SW": LET CMD_SW` = TRUE: _ECHO "/SW"
+        CASE "/DEFAULT": LET CMD_DEFAULT` = TRUE: _ECHO "/DEFAULT "
+        CASE "/IWAD": LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i): _ECHO "/IWAD " + CMD_IWAD$
+        CASE "/PWAD": LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i): _ECHO "/PWAD " + CMD_PWAD$
+        CASE "/DEH": LET i = i + 1: LET CMD_DEH$ = COMMAND$(i): _ECHO "/DEH " + CMD_DEH$
+        CASE "/BEX": LET i = i + 1: LET CMD_BEX$ = COMMAND$(i): _ECHO "/BEX " + CMD_BEX$
+        CASE "/DEMO": LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i): _ECHO "/DEMO " + CMD_DEMO$
+        CASE "/WARP": LET i = i + 1: LET CMD_WARP$ = COMMAND$(i): _ECHO "/WARP " + CMD_WARP$
+        CASE "/SKILL": LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i): _ECHO "/SKILL " + CMD_SKILL$
+        CASE "/CMPLVL": LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i): _ECHO "/CMPLVL " + CMD_CMPLVL$
+        CASE "/EXEC": LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i): _ECHO "/EXEC " + CMD_EXEC$
+        CASE "--"
+            'TODO: handle file list
+        CASE ELSE
+            'TODO: invalid param?
+            'TODO: handle file-list
+    END SELECT
+    LET i = i + 1
+LOOP
+_ECHO ""
+
+IF CMD_USE$ <> "" THEN
+    EnumerateGameCMD
+ELSE
+    SLEEP
+    SYSTEM 0
+END IF
+
 '=============================================================================
 
 DIM game_ini$
-LET game_ini$ = COMMAND$(1)
+REM LET game_ini$ = COMMAND$(1)
 
-IF game_ini$ = "" THEN
-    LET game_ini$ = DIR_EXE$ + "wads\play-doom.ini"
-END IF
+REM IF game_ini$ = "" THEN
+REM     LET game_ini$ = DIR_EXE$ + "wads\play-doom.ini"
+REM END IF
 
-ECHO ""
-ECHO Paths.GetFileName$(game_ini$)
-ECHO ""
-SLEEP
+REM _ECHO ""
+REM _ECHO Paths.GetFileName$(game_ini$)
+REM _ECHO ""
+REM SLEEP
 
-CALL EnumerateGameINI(game_ini$)
+REM CALL EnumerateGameINI(game_ini$)
+
+
+'=============================================================================
+
 CALL EnumerateEngines
 
 
@@ -323,18 +349,27 @@ NEXT engine%
 'TODO: game selection window, if there are more than 1 games defined
 LET game% = 1
 
-ECHO "": ECHO ""
+_ECHO "": _ECHO ""
 
 'test each engine against the game's requirements:
 FOR engine% = 1 TO UBOUND(Engines)
-    ECHO ""
-    ECHO "* testing engine #" + STRINT$(engine%) + " " + Engines(engine%).id
+    _ECHO ""
+    _ECHO "* testing engine #" + STRINT$(engine%) + " " + Engines(engine%).id
+    
+    'are we looking for a specific engine-id,
+    'e.g. the `/USE` command-line parameter
+    IF CMD_USE$ <> "" THEN
+        IF TRIM$(Engines(engine%).id) <> CMD_USE$ THEN
+            _ECHO "": _ECHO "! no-match (id): " + Engines(engine%).id
+            _CONTINUE
+        END IF
+    END IF
     
     'is the binary compatible with this machine? (32 / 64-bit)
     'if we are a 32-bit machine, we can't run 64-bit software
-    ECHO "- Bit:" + STRINT$(Engines(engine%).bit)
+    _ECHO "- Bit:" + STRINT$(Engines(engine%).bit)
     IF CPU_BIT = 32 AND Engines(engine%).bit = 64 THEN
-        ECHO "": ECHO "! no-match (bit): " + Engines(engine%).id
+        _ECHO "": _ECHO "! no-match (bit): " + Engines(engine%).id
         _CONTINUE
     END IF
     
@@ -348,7 +383,7 @@ FOR engine% = 1 TO UBOUND(Engines)
     'does this engine provide all the features required by the game?
     '(walk along the tags on the engine)
     FOR tag% = 1 TO UBOUND(Tags)
-        ECHO "- Tag:" + Tags(tag%) + " EngineTags=" + STRINT$(EngineTags(engine%, tag%)) + " GameTags=" + STRINT$(GameTags(game%, tag%))
+        _ECHO "- Tag:" + Tags(tag%) + " EngineTags=" + STRINT$(EngineTags(engine%, tag%)) + " GameTags=" + STRINT$(GameTags(game%, tag%))
         
         'check the game's requirement for this tag
         SELECT CASE GameTags(game%, tag%)
@@ -357,7 +392,7 @@ FOR engine% = 1 TO UBOUND(Engines)
                 'if the *engine* does not provide this feature,
                 'move on to the next engine
                 IF EngineTags(engine%, tag%) = 0 THEN
-                    ECHO "": ECHO "! no-match (tag): " + Engines(engine%).id
+                    _ECHO "": _ECHO "! no-match (tag): " + Engines(engine%).id
                     '`_CONTINUE` does not support breaking nested loops
                     LET engine% = engine% + 1: GOTO NextEngine
                 END IF
@@ -373,21 +408,33 @@ FOR engine% = 1 TO UBOUND(Engines)
     REDIM _PRESERVE EngineList(1 TO EngineListCount%) AS INTEGER
     LET EngineList(EngineListCount%) = engine%
     
-    ECHO ""
-    ECHO "match: " + Engines(engine%).id
+    _ECHO ""
+    _ECHO "match: " + Engines(engine%).id
 
     NextEngine:
 NEXT engine%
 
+'print a list of the candidate engines:
+_ECHO ""
+_ECHO "Candidate Engines:"
+_ECHO "------------------"
+FOR engine% = 1 TO EngineListCount%
+    _ECHO "- " + Engines(EngineList(engine%)).id + ": " + Engines(EngineList(engine%)).name
+NEXT engine%
+_ECHO ""
+
 'if, after removing all incompatible engines, there remains only one,
 'we can skip over the selection process
 IF EngineListCount% = 1 THEN
-    LET Engine% = EngineList(1)
+    LET engine% = EngineList(1)
+    SelectEngine engine%
+    
     GOTO SummaryScreen
 END IF
 
 'select the 'best' engine by default
 LET engine% = EngineList(1)
+SelectEngine engine%
 
 
 SummaryScreen:
@@ -406,3 +453,4 @@ SYSTEM
 '$INCLUDE: 'lib\paths.bm'
 '$INCLUDE: 'lib\strgui\strgui.bm'
 '$INCLUDE: 'lib\ui.bm'
+ 

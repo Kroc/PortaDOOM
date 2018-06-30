@@ -1,0 +1,2 @@
+@ECHO OFF
+launcher.exe /USE gzdoom /REQ gzdoom /32 /SW /DEFAULT /IWAD DOOM2.WAD /PWAD DTWID.WAD /DEH DeHackED.deh /WARP 22 /SKILL 4 / CMPLVL 19

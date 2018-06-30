@@ -1,12 +1,43 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'is the path absolute? i.e. "\..." or "C:\..."
+'=============================================================================
+FUNCTION Paths.IsAbsolute(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    'don't be silly
+    IF LEN(path$) = 0 THEN EXIT FUNCTION
+    
+    'begins with a slash?
+    IF ASC(path$, 1) = ASC_BSLASH THEN
+        LET Paths.IsAbsolute = TRUE
+    
+    'we don't want to check the 2nd character if there isn't one.
+    'since here it's not a slash, the path cannot be absolute
+    ELSEIF LEN(path$) < 2 THEN
+        EXIT FUNCTION
+        
+    'check the 2nd character for ":", e.g. "C:"
+    ELSEIF ASC(path$, 2) = ASC_COLON THEN
+        LET Paths.IsAbsolute = TRUE
+        
+    END IF
+END FUNCTION
+
 'if there isn't, adds a slash to the end of a string
 '=============================================================================
 FUNCTION Paths.AddSlash$(path$)
-    IF ASC(path$, LEN(path$)) <> ASC_BSLASH THEN
-        Paths.AddSlash$ = path$ + "\"
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    
+    IF LEN(path$) = 0 THEN
+        LET Paths.AddSlash$ = "\"
+    
+    ELSEIF ASC(path$, LEN(path$)) <> ASC_BSLASH THEN
+        LET Paths.AddSlash$ = path$ + "\"
+        
     ELSE
-        Paths.AddSlash$ = path$
+        LET Paths.AddSlash$ = path$
     END IF
 END FUNCTION
 
@@ -61,7 +92,7 @@ FUNCTION Paths.GetFolderName$(path$)
 END FUNCTION
 
 'returns the file name (including extension) from a path
-'===============================================================================
+'=============================================================================
 FUNCTION Paths.GetFileName$(path$)
     'just in case we're passed a fixed-length string
     LET path$ = RTRIM$(path$)
@@ -92,4 +123,42 @@ FUNCTION Paths.GetFileName$(path$)
     
     'the file name is from the last slash, forward
     LET Paths.GetFileName$ = RIGHT$(path$, len_path - i)
+END FUNCTION
+
+'returns the file name (excluding extension) from a path
+'=============================================================================
+FUNCTION Paths.GetFileBaseName$(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    
+    DIM len_path AS _UNSIGNED LONG
+    LET len_path = LEN(path$)
+    
+    'don't be silly
+    IF len_path = 0 THEN EXIT FUNCTION
+    'if the path ends in a slash then it's a folder and there's no file-name
+    IF ASC(path$, len_path) = ASC_BSLASH THEN EXIT FUNCTION
+    
+    'walk backward through the string looking for a slash since we only want
+    'the name from that point forward. if there is no slash, we'll take the
+    'name as from the start of the string
+    DIM a AS _UNSIGNED LONG
+    FOR a = len_path - 1 TO 1 STEP - 1
+        IF ASC(path$, a) = ASC_BSLASH THEN EXIT FOR
+    NEXT a
+    'this is a beautiful bit of serendipity: if the slash is found, then we
+    'want to start the file name after the slash, and if the slash is not
+    'found then the final `NEXT` ensures that the value of A is 0 and we
+    'want it to be 1 (first character)
+    LET a = a + 1
+    
+    'now walk forward looking for the dot
+    DIM z AS _UNSIGNED LONG
+    FOR z = a TO len_path
+        IF ASC(path$, z) = ASC_PERIOD THEN EXIT FOR
+    NEXT z
+    LET z = z - 1
+    
+    'slice out the string we want
+    LET Paths.GetFileBaseName$ = MID$(path$, a, z)
 END FUNCTION
