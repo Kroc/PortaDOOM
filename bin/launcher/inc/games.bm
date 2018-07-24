@@ -1,8 +1,12 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   Games_EnumerateCMD()
+'   Games_EnumerateINI(INIFile$)
+'   Games_Add(...)
+
 'populate game definition from the command-line parameters
 '=============================================================================
-SUB EnumerateGameCMD ()
+SUB Games_EnumerateCMD ()
     DIM title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$
 
     'require "software" renderer (8-bit, 256-colours)
@@ -11,12 +15,12 @@ SUB EnumerateGameCMD ()
     ' if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2"
     LET iwad$ = CMD_IWAD$
-    LET title$ = GetIWADTitle$(iwad$)
+    LET title$ = WADs_GetIWADTitle$(iwad$)
 
     LET pwad$ = CMD_PWAD$
 
     'TODO: implement `/REQ` for requesting tags
-    LET tags$ = GetIWADTags$(iwad$)
+    LET tags$ = WADs_GetIWADTags$(iwad$)
 
     'these can be applied 1:1
     'TODO: validation on this end, to give CMD-specific error message?
@@ -25,59 +29,49 @@ SUB EnumerateGameCMD ()
     LET cmplvl$ = CMD_CMPLVL$
 
     _ECHO ""
-    _ECHO "IWAD_PATH: " + FindFile$(iwad$)
+    _ECHO "IWAD_PATH: " + WADs_Find$(iwad$)
     _ECHO ""
     
-    CALL AddGame ( _
+    CALL Games_Add ( _
         "cmd", title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
     )
 END SUB
 
-'gets a title for a built-in IWAD
-'=============================================================================
-FUNCTION GetIWADTitle$ (iwad$)
-    SELECT CASE UCASE$(Paths.GetFileBaseName$(iwad$))
-        CASE "DOOM"
-            LET GetIWADTitle$ = "DOOM"
-        CASE "DOOM2"
-            LET GetIWADTitle$ = "DOOM II"
-        CASE "HERETIC"
-            LET GetIWADTitle$ = "Heretic"
-        CASE "HEXEN"
-            LET GetIWADTitle$ = "Hexen: Beyond Heretic"
-        CASE "STRIFE1"
-            LET GetIWADTitle$ = "Strife: Quest for the Sigil"
-        CASE "DOOM64"
-            LET GetIWADTitle$ = "DOOM 64"
-        CASE ELSE
-            LET GetIWADTitle$ = Paths.GetFileBaseName$(iwad$)
-    END SELECT
-END FUNCTION
-
-'gets the compatibility tags for a built-in IWAD
-'=============================================================================
-FUNCTION GetIWADTags$ (iwad$)
-    SELECT CASE UCASE$(Paths.GetFileBaseName$(iwad$))
-        CASE "DOOM64"
-            'DOOM 64 does not run on a typical 'vanilla' engine
-            LET GetIWADTags$ = "doom64"
-        CASE ELSE
-            'all other built-in IWADs run on any 'vanilla'-compatible engine
-            LET GetIWADTags$ = "vanilla"
-    END SELECT
-END FUNCTION
-
 'given an INI file, read game definitions from it
 '=============================================================================
-SUB EnumerateGameINI (INIFile$)
-    CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Games...", "")
-    CALL UI.Render
+SUB Games_EnumerateINI (INIFile$)
+    'locate the INI file:
+    '-------------------------------------------------------------------------
+    DIM path$
+    LET path$ = INIFile$
     
+    'is the given path absolute?
+    IF Paths_IsAbsolute(path$) THEN
+        'does the file exist?
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    ELSE
+        'search for the file:
+        
+        'check the 'current' directory
+        '-- i.e. the directory the launcher was called *from*
+        LET path$ = DIR_CUR$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+        
+        'check the base WADs directory
+        LET path$ = DIR_WADS$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    END IF
+    
+    'FIXME: file not found!
+    ERROR 100
+    
+readINI:
+    '-------------------------------------------------------------------------
     DO
         'read from the list of game-configurations defined
         '(a single INI can define more than one game variation)
         DIM game_id$
-        LET game_id$ = ReadSetting$(INIFile$, "games", STRINT$(GameCount% + 1))
+        LET game_id$ = ReadSetting$(path$, "games", STRINT$(GameCount% + 1))
         'if there's no further entries, stop looking
         IF game_id$ = "" THEN EXIT DO
         
@@ -104,19 +98,16 @@ SUB EnumerateGameINI (INIFile$)
         DIM ini_vid$
         LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
         
-        CALL AddGame( _
+        CALL Games_Add( _
             game_id$, ini_title$, _
             ini_iwad$, ini_pwad$, ini_cmplvl$, ini_deh$, ini_bex$, _
             ini_tags$, ini_vid$ _
         )
     LOOP
-    
-    CALL UI.DesktopBars.Update(ui_statusbar, "", "")
-    CALL UI.Render
 END SUB
 
 '=============================================================================
-SUB AddGame ( _
+SUB Games_Add ( _
     id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
 )
     'increase the number of games entries
@@ -135,7 +126,7 @@ SUB AddGame ( _
     IF vid$ <> "" THEN _ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
     
     'process the tag list
-    CALL AddTags(tags$)
+    CALL Tags_Add(tags$)
     
     'no problems? write the data into the engine list
     LET Games(GameCount%).title = title$
@@ -151,66 +142,3 @@ SUB AddGame ( _
     LET Games(GameCount%).tags = tags$
     LET Games(GameCount%).vid = VAL(vid$)
 END SUB
-
-'=============================================================================
-FUNCTION FindFile$(path$)
-    'is the given path absolute?
-    IF Paths.IsAbsolute(path$) THEN
-        'if the file doesn't exist, return null-string for error
-        IF NOT _FILEEXISTS(path$) THEN EXIT FUNCTION
-        'file exists, is absolute, no other checks needed
-        LET FindFile$ = path$
-        EXIT FUNCTION
-    END IF
-    
-    DIM testPath$
-    
-    'check previously used folder:
-    IF DIR_PREV$ <> "" THEN
-        LET testPath$ = DIR_PREV$ + path$
-        GOSUB checkPath
-    END IF
-    
-    'check the 'current' directory
-    '-- i.e. the directory the launcher was called *from*
-    IF DIR_CUR$ <> "" THEN
-        LET testPath$ = DIR_CUR$ + path$
-        GOSUB checkPath
-    END IF
-    
-    'check the directory where the PWAD was found
-    '(allows for easily finding WADs next to the PWAD)
-    IF DIR_PWAD$ <> "" THEN
-        LET testPath$ = DIR_PWAD$ + path$
-        GOSUB checkPath
-    END IF
-    
-    'check the directory where the IWAD was found
-    '(allows for easily finding WADs next to the IWAD)
-    IF DIR_IWAD$ <> "" THEN
-        LET testPath$ = DIR_IWAD$ + path$
-        GOSUB checkPath
-    END IF
-    
-    'check the base WADs directory
-    LET testPath$ = DIR_WADS$ + path$
-    GOSUB checkPath
-    
-    IF DIR_ENGINE$ <> "" THEN
-        LET testPath$ = DIR_ENGINE$ + path$
-        GOSUB checkPath
-    END IF
-    
-    'file has not been found!
-    'return null-string for error
-    EXIT FUNCTION
-    
-checkPath:
-    'if the file doesn't exist at this path,
-    'return so somewhere else can be tried
-    IF NOT _FILEEXISTS(testPath$) THEN RETURN
-    'file found! return the valid path
-    LET FindFile$ = testPath$
-    'update the 'previous directory'
-    LET DIR_PREV$ = Paths.AddSlash$(Paths.GetFolderName$(FindFile$))
-END FUNCTION

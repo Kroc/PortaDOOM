@@ -1,8 +1,12 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   Engines_Enumerate()
+'   Engines_KinValue%(kin$*1)   -> INTEGER
+'   Engines_Select()
+
 'walk the ports folder and identify all engines present
 '=============================================================================
-SUB EnumerateEngines ()
+SUB Engines_Enumerate()
     CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
     CALL UI.Render
     
@@ -85,7 +89,7 @@ SUB EnumerateEngines ()
             END IF
             
             'process the tag list
-            CALL AddTags(ini_tags$)
+            CALL Tags_Add(ini_tags$)
             
             LET Engines(EngineCount%).folder = folder$
             LET Engines(EngineCount%).name = ini_name$
@@ -156,8 +160,8 @@ SUB EnumerateEngines ()
             ELSEIF rB% = rA% THEN
                 'compare the two engine's genealogy:
                 DIM kA%, kB%
-                LET kA% = kinValue(Engines(A%).kin)
-                LET kB% = kinValue(Engines(B%).kin)
+                LET kA% = Engines_KinValue(Engines(A%).kin)
+                LET kB% = Engines_KinValue(Engines(B%).kin)
                 
                 'if the engine below is of a higher genealogy, move it up
                 IF kB% > kA% THEN
@@ -232,20 +236,21 @@ END SUB
 
 'takes an engine 'kin' letter, e.g. "B" and converts it into a rank value
 '=============================================================================
-FUNCTION kinValue% (kin AS STRING * 1)
+FUNCTION Engines_KinValue%(kin AS STRING * 1)
     SELECT CASE kin
-        CASE "X": LET kinValue% = 1
-        CASE "V": LET kinValue% = 2
-        CASE "B": LET kinValue% = 3
-        CASE "Z": LET kinValue% = 4
-        CASE "G": LET kinValue% = 5
+        CASE "X": LET Engines_KinValue% = 1
+        CASE "V": LET Engines_KinValue% = 2
+        CASE "B": LET Engines_KinValue% = 3
+        CASE "Z": LET Engines_KinValue% = 4
+        CASE "G": LET Engines_KinValue% = 5
         CASE ELSE
-            LET kinValue% = 0
+            LET Engines_KinValue% = 0
     END SELECT
 END FUNCTION
 
 'selects an engine for use, populating the 'current engine' variables
 '============================================================================
-SUB SelectEngine(engine%)
-    LET DIR_ENGINE$ = "files\ports\" + Engines(engine%).folder
+SUB Engines_Select(engine%)
+    LET DIR_ENGINE$ = DIR_PORTS$ + Engines(engine%).folder
+    LET DIR_SAVE$ = DIR_SAVES$ + Engines(engine%).save + "\"
 END SUB

@@ -1,3 +1,4 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 CONST TRUE = -1
 CONST FALSE = 0

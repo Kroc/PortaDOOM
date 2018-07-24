@@ -1,8 +1,12 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   Tags_Add(tagList$)
+'   Tags_Find%(tag$)        -> INTEGER
+'   Tags_Split$(tagList$)   -> STRING
+
 'process a comma-separated list of tags, adding them to the known tag list
 '=============================================================================
-SUB AddTags (tagList$)
+SUB Tags_Add (tagList$)
     'validation: be careful of fixed-width strings
     LET tagList$ = RTRIM$(tagList$)
     
@@ -13,11 +17,11 @@ SUB AddTags (tagList$)
     DIM tag%, tag$
     
     'prime the iterator
-    LET tag$ = SplitTags$(tagList$)
+    LET tag$ = Tags_Split$(tagList$)
     
     DO WHILE tag$ <> ""
         'check if the tag already exists:
-        IF FindTag%(tag$) <> 0 THEN GOTO NextTag
+        IF Tags_Find%(tag$) <> 0 THEN GOTO NextTag
         
         'increase the number of known tags
         LET tag% = UBOUND(Tags) + 1
@@ -27,28 +31,28 @@ SUB AddTags (tagList$)
         _ECHO "- AddTag: #" + STRINT$(tag%) + " " + tag$
         
         NextTag:
-        LET tag$ = SplitTags$("")
+        LET tag$ = Tags_Split$("")
     LOOP
 END SUB
 
 'search through the tag list and return an index number
 '=============================================================================
-FUNCTION FindTag% (tag$)
+FUNCTION Tags_Find% (tag$)
     'validation: be aware of fixed-length strings
     LET tag$ = RTRIM$(tag$)
     
-    FOR FindTag% = 1 TO UBOUND(Tags)
-        IF RTRIM$(Tags(FindTag%)) = tag$ THEN EXIT FUNCTION
+    FOR Tags_Find% = 1 TO UBOUND(Tags)
+        IF RTRIM$(Tags(Tags_Find%)) = tag$ THEN EXIT FUNCTION
     NEXT
     
     'not found
-    LET FindTag% = 0
+    LET Tags_Find% = 0
 END FUNCTION
 
 'this function, once given a list of comma-separated tags will return one tag
 'each time the function is called until none remain
 '=============================================================================
-FUNCTION SplitTags$ (tagList$)
+FUNCTION Tags_Split$ (tagList$)
     'validation: be careful of fixed-width strings
     LET tagList$ = RTRIM$(tagList$)
     
@@ -66,12 +70,12 @@ FUNCTION SplitTags$ (tagList$)
     'if there are no commas in the tag-list, it's just one tag
     IF i% = 0 THEN
         'return the final tag
-        LET SplitTags$ = list$
+        LET Tags_Split$ = list$
         'clear the remaining list
         LET list$ = ""
     ELSE
         'strip off the current tag
-        LET SplitTags$ = LEFT$(list$, i% - 1)
+        LET Tags_Split$ = LEFT$(list$, i% - 1)
         LET list$ = MID$(list$, i% + 1)
     END IF
 END FUNCTION

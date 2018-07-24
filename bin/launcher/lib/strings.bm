@@ -1,15 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-DECLARE LIBRARY
-    FUNCTION GetShortPathNameA (lpszLongPath AS STRING, lpszShortPath AS STRING, BYVAL cchBuffer AS LONG)
-END DECLARE
-
-'why isn't this built-in?
-'=============================================================================
-FUNCTION TRIM$ (text$)
-    LET TRIM$ = LTRIM$(RTRIM$(text$))
-END FUNCTION
-
 'convert an integer into a string and trim it
 '=============================================================================
 FUNCTION STRINT$ (number%)
@@ -40,24 +30,6 @@ FUNCTION RTRUNCATE$ (text$, length%)
     ELSE
         'text fits, no truncation needed
         LET RTRUNCATE$ = text$
-    END IF
-END FUNCTION
-
-'returns the 8.3 version of a file path using the Windows API,
-'note that this requires that the file exist at the given path
-'source: http://www.qbasicnews.com/dav/qb64.php
-'=============================================================================
-FUNCTION GetShortPath$ (filepath$)
-    DIM shortPathName AS STRING * 260
-    LET shortPathName = SPACE$(260)
-    DIM result&
-    LET result& = GetShortPathNameA( _
-        filepath$ + CHR$(0), shortPathName, LEN(shortPathName) _
-    )
-    IF result& > 0 THEN
-        LET GetShortPath$ = RTRIM$(shortPathName)
-    ELSE
-        LET GetShortPath$ = filepath$
     END IF
 END FUNCTION
 

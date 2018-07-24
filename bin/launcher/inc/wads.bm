@@ -1,0 +1,256 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'   WADs_GetIWADPath$(iwad$)    -> STRING
+'   WADs_GetIWADTitle$(iwad$)   -> STRING
+'   WADs_GetIWADTag$(iwad$)     -> STRING
+'   WADs_Find(iwad$)            -> STRING
+
+'locate an IWAD and return its path -- handles Steam / GOG IWADs
+'=============================================================================
+FUNCTION WADs_GetIWADPath$(iwad$)
+    'has the caller provided a file-extension?
+    DIM ext$
+    LET ext$ = Paths_GetFileExtension(iwad$)
+    
+    DIM iwad_path$
+    
+    'if the given IWAD has an extension we only need
+    'to search for one file in the usual places
+    IF ext$ <> "" THEN
+        LET iwad_path$ = WADs_Find$(iwad$)
+        'if the IWAD was not found, we'll need to search Steam / GoG
+        IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
+    ELSE
+        'TODO
+    END IF
+    
+    ' return what we've found
+    LET WADs_GetIWADPath$ = iwad_path$
+    EXIT FUNCTION
+    
+iwadSteamGOG:
+    '-------------------------------------------------------------------------
+    SELECT CASE UCASE$(Paths_GetFileName$(iwad$))
+        CASE "DOOM.WAD", "DOOMU.WAD": GOTO iwadDOOM
+        CASE "DOOM2.WAD": GOTO iwadDOOM2
+        CASE "TNT.WAD": GOTO iwadTNT
+        CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
+    END SELECT
+    
+    RETURN
+    
+iwadDOOM:
+    'try and find "DOOM.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "The Ultimate DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280", _
+        "InstallLocation", "base\DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "The Ultimate DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435827232", _
+        "Path", "DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1135892318", _
+        "Path", "base\wads\DOOM.WAD" _
+    )
+    RETURN
+    
+iwadDOOM2:
+    'try and find "DOOM2.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "DOOM II" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300", _
+        "InstallLocation", "base\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM II" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848814", _
+        "Path", "doom2\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1135892318", _
+        "Path", "base\wads\DOOM2.WAD" _
+    )
+    RETURN
+    
+iwadTNT:
+    'try and find "TNT.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "Final DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
+        "InstallLocation", "base\TNT.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "Final DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848742", _
+        "Path", "TNT\TNT.WAD" _
+    )
+    RETURN
+    
+iwadPLUTONIA:
+    'try and find "PLUTONIA.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "Final DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
+        "InstallLocation", "base\PLUTONIA.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "Final DOOM" installed?
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848742", _
+        "Path", "Plutonia\PLUTONIA.WAD" _
+    )
+    RETURN
+    
+END FUNCTION
+
+'get a path from the registry and check for a file's presence
+'=============================================================================
+FUNCTION WADs_GetRegistryPath$(key$, value$, path$)
+    DIM result$
+    
+    'read the given registry key
+    LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
+    'not there? return blank
+    IF LEN(result$) = 0 THEN EXIT FUNCTION
+    
+    'add the file-path to the base path we got from the registry
+    LET result$ = Paths_AddSlash$(result$) + path$
+    'does that file exist?
+    IF _FILEEXISTS(result$) THEN
+        'if so, return the complete path
+        LET WADs_GetRegistryPath$ = result$
+    END IF
+    
+END FUNCTION
+
+'gets a title for a built-in IWAD
+'=============================================================================
+FUNCTION WADs_GetIWADTitle$(iwad$)
+    SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        CASE "DOOM"
+            LET WADs_GetIWADTitle$ = "DOOM"
+        CASE "DOOM2"
+            LET WADs_GetIWADTitle$ = "DOOM II"
+        CASE "HERETIC"
+            LET WADs_GetIWADTitle$ = "Heretic"
+        CASE "HEXEN"
+            LET WADs_GetIWADTitle$ = "Hexen: Beyond Heretic"
+        CASE "STRIFE1"
+            LET WADs_GetIWADTitle$ = "Strife: Quest for the Sigil"
+        CASE "DOOM64"
+            LET WADs_GetIWADTitle$ = "DOOM 64"
+        CASE ELSE
+            LET WADs_GetIWADTitle$ = Paths_GetFileBaseName$(iwad$)
+    END SELECT
+END FUNCTION
+
+'gets the compatibility tags for a built-in IWAD
+'=============================================================================
+FUNCTION WADs_GetIWADTags$(iwad$)
+    SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        CASE "DOOM64"
+            'DOOM 64 does not run on a typical 'vanilla' engine
+            LET WADs_GetIWADTags$ = "doom64"
+        CASE ELSE
+            'all other built-in IWADs run on any 'vanilla'-compatible engine
+            LET WADs_GetIWADTags$ = "vanilla"
+    END SELECT
+END FUNCTION
+
+'=============================================================================
+FUNCTION WADs_Find$(path$)
+    'is the given path absolute?
+    IF Paths_IsAbsolute(path$) THEN
+        'if the file doesn't exist, return null-string for error
+        IF NOT _FILEEXISTS(path$) THEN EXIT FUNCTION
+        'file exists, is absolute, no other checks needed
+        LET WADs_Find$ = path$
+        EXIT FUNCTION
+    END IF
+    
+    DIM testPath$
+    
+    'check previously used folder:
+    IF DIR_PREV$ <> "" THEN
+        LET testPath$ = DIR_PREV$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the 'current' directory
+    '-- i.e. the directory the launcher was called *from*
+    IF DIR_CUR$ <> "" THEN
+        LET testPath$ = DIR_CUR$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the directory where the PWAD was found
+    '(allows for easily finding WADs next to the PWAD)
+    IF DIR_PWAD$ <> "" THEN
+        LET testPath$ = DIR_PWAD$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the directory where the IWAD was found
+    '(allows for easily finding WADs next to the IWAD)
+    IF DIR_IWAD$ <> "" THEN
+        LET testPath$ = DIR_IWAD$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'check the base WADs directory
+    LET testPath$ = DIR_WADS$ + path$
+    GOSUB checkPath
+    
+    'FIXME: this should be using the engines array?
+    IF DIR_ENGINE$ <> "" THEN
+        LET testPath$ = DIR_ENGINE$ + path$
+        GOSUB checkPath
+    END IF
+    
+    'file has not been found!
+    'return null-string for error
+    EXIT FUNCTION
+    
+checkPath:
+    'if the file doesn't exist at this path,
+    'return so somewhere else can be tried
+    IF NOT _FILEEXISTS(testPath$) THEN RETURN
+    'update the 'previous directory'
+    LET DIR_PREV$ = Paths_AddSlash$(Paths_GetFolderName$(testPath$))
+    'file found! return the valid path
+    LET WADs_Find$ = testPath$
+END FUNCTION

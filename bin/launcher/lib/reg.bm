@@ -1,0 +1,75 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'this code adapted from the example at:
+'http://www.qb64.org/wiki/Windows_Registry_Access
+
+'   Reg_Query$(root_key~%, sub_key$, key_value$)    -> STRING
+
+'=============================================================================
+FUNCTION Reg_Query$(root_key, sub_key$, key_value$)
+    'ensure no padding on the sub key, and null-terminate it for the WINAPI
+    LET sub_key$ = RTRIM$(sub_key$) + CHR$(0)
+    'null-terminate the value name
+    LET key_value$ = RTRIM$(key_value$) + CHR$(0)
+    
+    'the value we want could be in the 32-bit Registry
+    'or the 64-bit Registry (on a 64-bit system);
+    'begin our search in the 32-bit Registry
+    DIM mode&
+    LET mode& = KEY_WOW64_32KEY
+    GOSUB query
+    
+    'if we found what we're looking for, exit
+    IF LEN(Reg_Query$) <> 0 THEN EXIT FUNCTION
+    
+    IF CPU_BIT = 64 THEN
+        LET mode& = KEY_WOW64_64KEY
+        GOSUB query
+        _ECHO "RegQuery64: " + Reg_Query$
+    END IF
+    
+    EXIT FUNCTION
+    
+query:
+    '-------------------------------------------------------------------------
+    DIM k AS _OFFSET
+    LET k = HKEY_LOCAL_MACHINE
+    
+    DIM l AS LONG '...API result
+    DIM h AS _OFFSET 'handle to the key we're accessing
+    
+    LET l = RegOpenKeyExA( _
+        k, _OFFSET(sub_key$), 0, KEY_READ OR mode&, _OFFSET(h) _
+    )
+    IF l = 0 THEN
+        'prepare the return buffer
+        DIM dataType AS _UNSIGNED LONG
+        DIM dataBytes AS STRING
+        DIM dataLen AS _UNSIGNED LONG
+        LET dataBytes = SPACE$(260)
+        LET dataLen = LEN(dataBytes)
+        
+        'read the value
+        LET l = RegQueryValueExA( _
+            h, _OFFSET(key_value$), 0, _
+            _OFFSET(dataType), _OFFSET(dataBytes), _OFFSET(dataLen) _
+        )
+        IF l THEN
+            _ECHO "! RegQueryValueExA failed. Error: 0x" + LCASE$(HEX$(l))
+        ELSE
+            _ECHO "len: " + STRINT$(dataLen)
+            LET Reg_Query$ = RTRIM$(LEFT$(dataBytes, dataLen))
+        END IF
+        
+    ELSEIF l <> ERROR_FILE_NOT_FOUND THEN
+        _ECHO "! RegOpenKeyExA failed. Error: 0x" + LCASE$(HEX$(l))
+    END IF
+    
+    LET l = RegCloseKey(h)
+    IF l THEN
+        PRINT "! RegCloseKey failed. Error: 0x" + LCASE$(HEX$(l))
+    END IF
+    
+    RETURN
+
+END FUNCTION

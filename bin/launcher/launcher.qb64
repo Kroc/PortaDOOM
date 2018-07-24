@@ -15,153 +15,60 @@ $RESIZE:OFF
 'many thanks Fellippe Heitor for implementing this!
 _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
-'$INCLUDE: 'lib\consts.bi'
-'$INCLUDE: 'lib\INI-Manager\ini.bi'
-'$INCLUDE: 'lib\strgui\strgui.bi'
-'$INCLUDE: 'lib\ui.bi'
+'=============================================================================
 
-'==============================================================================
+'$INCLUDE:'lib\consts.bi'
+'$INCLUDE:'lib\reg.bi'
 
-'an array of all known feature-tags
-REDIM SHARED Tags(0) AS STRING * 16
+'$INCLUDE:'lib\strgui\strgui.bi'
+'$INCLUDE:'lib\ui.bi'
 
-'------------------------------------------------------------------------------
+'$INCLUDE:'lib\INI-Manager\ini.bi'
 
-TYPE Game
-    id AS STRING * 32
-    title AS STRING * 64
-    iwad AS STRING * 32 '...IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
-    pwad AS STRING * 32 '...optional PWAD to play
-    cmplvl AS _BYTE '.......can be negative to specify "not given"
-    deh AS STRING * 32 '....optional DeHackEd script to load
-    bex AS STRING * 32 '....optional Boom-EXtended DeHackEd script to load
-    tags AS STRING * 128 '..comma-separated tags list the game requires
-    vid AS _UNSIGNED _BYTE 'required renderer colour bit-depth
-END TYPE
+'=============================================================================
 
-'array that holds all the games defined
-REDIM SHARED Games(1) AS Game
-DIM SHARED GameCount%
-DIM SHARED game%
-
-'a two-dimensional array of game > tag-indicies; that is, the 1st dimension
-'is for each game and the second dimension covers each tag -- a value of 1
-'indicates that the game requires that tag
-REDIM SHARED GameTags(0, 0) AS _BYTE
-
-'-----------------------------------------------------------------------------
-
-'structure to store the details of an engine:
-TYPE Engine
-    'ids can be the same between multiple engines! (different versions?)
-    id AS STRING * 32
-    folder AS STRING * 32 'the folder name the engine is in
-    'these are specifically named after the INI-file param names
-    name AS STRING * 32 '..simple name, for grouping versions together
-    rank AS INTEGER
-    title AS STRING * 64 '.on-screen "friendly name"
-    exe AS STRING * 32 '...executable file-name
-    ver AS INTEGER '.......engine's version number
-    bit AS _BYTE '.........executable architecture: 32 or 64 (bit)
-    vid AS _BYTE '.........renderer colour-depth, i.e. 8, 24, 32
-    kin AS STRING * 1 '....a marker to indicate the engine's genealogy
-    cfg AS STRING * 32 '...config file ID to use
-    save AS STRING * 32 '..save-folder name to use
-    tags AS STRING * 128 '.comma-separated tags list the engine supports
-    iwads AS STRING * 128 'semi-colon separated list of allowed IWADs
-    pwads AS STRING * 128 'semi-colon separated list of PWAD file-types
-END TYPE
-
-'array that holds all the engines detected, including 'duplicates' that
-'share the same engine-id, but differ in version / CPU-type / renderer
-REDIM SHARED Engines(1 TO 1) AS Engine
-'count of all defined engines (prior to filtering)
-DIM SHARED EngineCount%
-
-'list of compatible engines for the selected game
-REDIM SHARED EngineList(1 TO 1) AS INTEGER
-DIM SHARED EngineListCount%
-
-'loop-counter for engines and later 'currently selected' engine
-DIM SHARED engine%
-
-'a two-dimensional array of engine > tag-indicies; that is, the 1st dimension
-'is for each engine and the second dimension covers each tag. a value of 1
-'indicates that the engine uses that tag. the zeroth tag index is used to
-'shortlist engines by marking them as compatible (=1) or not (=0)
-REDIM SHARED EngineTags(0, 0) AS _BYTE
+'$INCLUDE:'inc\tags.bi'
+'$INCLUDE:'inc\games.bi'
+'$INCLUDE:'inc\engines.bi'
 
 '-----------------------------------------------------------------------------
 
 'generic 'index' counter
 DIM i AS _UNSIGNED LONG
 
+'the folder where config files are kept
+DIM SHARED DIR_CONFIG$
+LET DIR_CONFIG$ = "config\"
 
-'MAIN:
-'=============================================================================
-_TITLE "PortaDOOM Launcher"
+'folder for the 'source ports' -- game engines
+DIM SHARED DIR_PORTS$
+LET DIR_PORTS$ = "ports\"
 
-'set graphics mode, screen size, colour and clear screen
-SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
+'folder for the user's save files
+DIM SHARED DIR_SAVES$
+LET DIR_SAVES$ = "saves\"
 
-''DIM setting$, i%
-''DO
-''    i% = i% + 1
-''    setting$ = ENVIRON$(i%) 'get a setting from the list
-''    _ECHO setting$
-''LOOP UNTIL setting$ = ""
-''_ECHO "": _ECHO ""
+'folder for external executables;
+'such as patching utilities
+DIM SHARED DIR_TOOLS$
+LET DIR_TOOLS$ = "tools\"
 
-'print base UI
-'-----------------------------------------------------------------------------
-DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
-DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
-LET ui_titlebar = UI.DesktopBars.Add(1, BLACK, LTGREY, _TITLE$, "")
-LET ui_statusbar = UI.DesktopBars.Add(_HEIGHT, BLACK, LTGREY, "", "")
-CALL UI.Render
+'folder for WADs -- the game files to play
+DIM SHARED DIR_WADS$
+LET DIR_WADS$ = "wads\"
 
-_SCREENSHOW
+'folder for demo-files (i.e. recorded runs)
+DIM SHARED DIR_DEMOS$
+LET DIR_DEMOS$ = "demos\"
 
-DIM ui_window_wait AS _UNSIGNED _BYTE
-LET ui_window_wait = UI.Windows.Add ( _
-    (_WIDTH - 40)\2, (_HEIGHT - 3)\2, 40, 3, LTGREY, DKGREY, 1, _
-    "^{X+14}LOADING..." _
-)
-CALL UI.Render
-
-'read command-line parameters (if any)
-'=============================================================================
-'TODO: if there are no command-line parameters, we present a UI to build
-'      a custom game configuration?
-IF _COMMANDCOUNT = 0 THEN
-    ''SYSTEM 1
-END IF
-
-'display help?
-'-----------------------------------------------------------------------------
-DIM cmd$
-LET cmd$ = LCASE$(COMMAND$(1))
-
-IF cmd$ = "/?" _
-OR cmd$ = "/h" _
-OR cmd$ = "/help" _
-OR cmd$ = "-?" _
-OR cmd$ = "-h" _
-OR cmd$ = "-help" _
-OR cmd$ = "--help" _
-THEN
-    'TODO: console help
-    SYSTEM 0
-END IF
-
-'TODO: if the first param is an INI file, look for game / mod definitions within
-
-'TODO: if the params are WAD files etc, then show a UI to build a game
+'folder for gameplay mods
+DIM SHARED DIR_MODS$
+LET DIR_MODS$ = "mods\"
 
 'read system info:
 '-----------------------------------------------------------------------------
 'get CPU type for the system (32 / 64-bit)
-DIM CPU_BIT AS _UNSIGNED LONG
+DIM SHARED CPU_BIT AS _UNSIGNED LONG
 'default to 32-bit as this will always work
 LET CPU_BIT = 32
 'check the environment variables for CPU type:
@@ -172,7 +79,7 @@ IF ENVIRON$("PROCESSOR_ARCHITEW6432") = "AMD64" THEN LET CPU_BIT = 64
 
 'directory of this executable (regardless of where it was called from)
 DIM SHARED DIR_EXE$
-LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
+LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 
 'now is this executable running from the source code folder or from within
 'PortaDOOM's folder (as it would be in releases)? since these are different
@@ -180,130 +87,55 @@ LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
 '"PortaDOOM\files" folder, we need to re-route things when running from
 'development builds. check to see if our parent folder is not "files":
 
-IF Paths.GetFolderName$(DIR_EXE$) = "launcher" THEN
+IF Paths_GetFolderName$(DIR_EXE$) = "launcher" THEN
     'change directory to the expected location
     CHDIR "..\..\PortaDOOM\files"
-    LET DIR_EXE$ = Paths.AddSlash$(_CWD$)
+    LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 END IF
 
 'the 'current directory' (where this executable was called *from*),
 'this will be one of the folders we check when searching for files
 DIM SHARED DIR_CUR$
-LET DIR_CUR$ = Paths.AddSlash$(_STARTDIR$)
+LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 
 _ECHO ""
 _ECHO "launcher.exe : " + DIR_EXE$
 _ECHO "current dir  : " + DIR_CUR$
 _ECHO ""
 
-'NOTE: many doom engines save their config files in the 'current directory',
-'which is typically expected to be that of the executable. However, we want
-'to separate user-data (such as save-games) from the engines. whilst we can
-'change the save directory, config files will still be dumped in the 'current
-'directory'.
 
-'we therefore need to change the current directory and rewrite
-'all the WAD / file paths to be relative from there!
+'=============================================================================
+'MAIN:
+'=============================================================================
+_TITLE "PortaDOOM Launcher"
 
-'the saves folder will contain a sub-folder for each engine, and then another
-'sub-folder for the IWAD or PWAD; this is the relative path from the WAD's
-'save folder back to this executable
-DIM FIX_PATH$
-LET FIX_PATH$ = "..\..\.."
+'set graphics mode, screen size, colour and clear screen
+SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 
-'we will remember the directory of the last file
-'(used for finding side-by-side WADs)
-DIM SHARED DIR_PREV$
-'other directories that will be remembered as we go
-DIM SHARED DIR_IWAD$
-DIM SHARED DIR_PWAD$
+'print base UI:
+DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
+DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
+LET ui_titlebar = UI.DesktopBars.Add(1, BLACK, LTGREY, _TITLE$, "")
+LET ui_statusbar = UI.DesktopBars.Add(_HEIGHT, BLACK, LTGREY, "", "...")
+CALL UI.Render
 
-DIM SHARED DIR_WADS$
-LET DIR_WADS$ = "wads\"
+_SCREENSHOW
 
-DIM SHARED DIR_ENGINE$
-
-DIM CMD_PARAMS$
-DIM CMD_FILES$
-
-'read command-line switches:
-'-----------------------------------------------------------------------------
-DIM SHARED CMD_USE$ '....a specific engine-id to use
-DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
-DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
-DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
-DIM SHARED CMD_DEFAULT` 'should default config file be used?
-DIM SHARED CMD_IWAD$ '...IWAD to use
-DIM SHARED CMD_PWAD$ '...optional PWAD to play
-DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
-DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
-DIM SHARED CMD_DEMO$ '...demo lump to play
-DIM SHARED CMD_WARP$ '...episode/map number to warp to
-DIM SHARED CMD_SKILL$ '..skill level number
-DIM SHARED CMD_CMPLVL$ '.compatibility level
-DIM SHARED CMD_EXEC$ '...extra script to execute
-
-LET i = 1
-_ECHO "Command Line Parameters:"
-_ECHO "========================"
-DO WHILE COMMAND$(i) <> ""
-    SELECT CASE UCASE$(COMMAND$(i))
-        'just capture the param values, we will parse & validate later
-        CASE "/USE": LET i = i + 1: LET CMD_USE$ = COMMAND$(i): _ECHO "/USE " + CMD_USE$
-        CASE "/REQ": LET i = i + 1: LET CMD_REQ$ = COMMAND$(i): _ECHO "/REQ " + CMD_REQ$
-        CASE "/32": LET CMD_32` = TRUE: LET CPU_BIT = 32: _ECHO "/32"
-        CASE "/SW": LET CMD_SW` = TRUE: _ECHO "/SW"
-        CASE "/DEFAULT": LET CMD_DEFAULT` = TRUE: _ECHO "/DEFAULT "
-        CASE "/IWAD": LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i): _ECHO "/IWAD " + CMD_IWAD$
-        CASE "/PWAD": LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i): _ECHO "/PWAD " + CMD_PWAD$
-        CASE "/DEH": LET i = i + 1: LET CMD_DEH$ = COMMAND$(i): _ECHO "/DEH " + CMD_DEH$
-        CASE "/BEX": LET i = i + 1: LET CMD_BEX$ = COMMAND$(i): _ECHO "/BEX " + CMD_BEX$
-        CASE "/DEMO": LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i): _ECHO "/DEMO " + CMD_DEMO$
-        CASE "/WARP": LET i = i + 1: LET CMD_WARP$ = COMMAND$(i): _ECHO "/WARP " + CMD_WARP$
-        CASE "/SKILL": LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i): _ECHO "/SKILL " + CMD_SKILL$
-        CASE "/CMPLVL": LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i): _ECHO "/CMPLVL " + CMD_CMPLVL$
-        CASE "/EXEC": LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i): _ECHO "/EXEC " + CMD_EXEC$
-        CASE "--"
-            'TODO: handle file list
-        CASE ELSE
-            'TODO: invalid param?
-            'TODO: handle file-list
-    END SELECT
-    LET i = i + 1
-LOOP
-_ECHO ""
-
-IF CMD_USE$ <> "" THEN
-    EnumerateGameCMD
-ELSE
-    SLEEP
-    SYSTEM 0
+'process command line:
+IF _COMMANDCOUNT = 0 THEN
+    'TODO: if there are no command-line parameters, we present a UI to build
+    '      a custom game configuration?
+    SYSTEM 1
 END IF
 
-'=============================================================================
+'read command-line parameters
+'$INCLUDE:'inc\cmd.bm'
 
-DIM game_ini$
-REM LET game_ini$ = COMMAND$(1)
-
-REM IF game_ini$ = "" THEN
-REM     LET game_ini$ = DIR_EXE$ + "wads\play-doom.ini"
-REM END IF
-
-REM _ECHO ""
-REM _ECHO Paths.GetFileName$(game_ini$)
-REM _ECHO ""
-REM SLEEP
-
-REM CALL EnumerateGameINI(game_ini$)
-
-
-'=============================================================================
-
-CALL EnumerateEngines
-
+'enumerate engines:
+'search through the "ports" folder for game engines and read in their details
+CALL Engines_Enumerate
 
 'process the gathered game / engine data:
-'=============================================================================
 'there is no simple description for this cross-referencing process...
 CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
 CALL UI.Render
@@ -319,28 +151,28 @@ REDIM SHARED EngineTags(1 TO EngineCount%, 0 TO UBOUND(Tags)) AS _BYTE
 'populate the game mappings:
 FOR game% = 1 TO UBOUND(Games)
     
-    LET tag$ = SplitTags$(Games(game%).tags)
+    LET tag$ = Tags_Split$(Games(game%).tags)
     DO WHILE tag$ <> ""
         'find the tag index
-        LET tag% = FindTag%(tag$)
+        LET tag% = Tags_Find%(tag$)
         'set up the game <> tag mapping
         LET GameTags(game%, tag%) = 1
         
-        LET tag$ = SplitTags$("")
+        LET tag$ = Tags_Split$("")
     LOOP
 NEXT game%
 
 'populate the engine mappings:
 FOR engine% = 1 TO UBOUND(Engines)
     
-    LET tag$ = SplitTags$(Engines(engine%).tags)
+    LET tag$ = Tags_Split$(Engines(engine%).tags)
     DO WHILE tag$ <> ""
         'find the tag index
-        LET tag% = FindTag%(tag$)
+        LET tag% = Tags_Find%(tag$)
         'set up the game <> tag mapping
         LET EngineTags(engine%, tag%) = 1
         
-        LET tag$ = SplitTags$("")
+        LET tag$ = Tags_Split$("")
     LOOP
 NEXT engine%
 
@@ -359,7 +191,7 @@ FOR engine% = 1 TO UBOUND(Engines)
     'are we looking for a specific engine-id,
     'e.g. the `/USE` command-line parameter
     IF CMD_USE$ <> "" THEN
-        IF TRIM$(Engines(engine%).id) <> CMD_USE$ THEN
+        IF _TRIM$(Engines(engine%).id) <> CMD_USE$ THEN
             _ECHO "": _ECHO "! no-match (id): " + Engines(engine%).id
             _CONTINUE
         END IF
@@ -427,30 +259,51 @@ _ECHO ""
 'we can skip over the selection process
 IF EngineListCount% = 1 THEN
     LET engine% = EngineList(1)
-    SelectEngine engine%
+    Engines_Select engine%
     
     GOTO SummaryScreen
 END IF
 
 'select the 'best' engine by default
 LET engine% = EngineList(1)
-SelectEngine engine%
+Engines_Select engine%
 
 
 SummaryScreen:
 '=============================================================================
-'$INCLUDE:'launcher_summary.qb64'
+REM '$INCLUDE:'inc\ui_summary.bm'
 
+SLEEP
 SYSTEM
 
-'$INCLUDE:'launcher_enum_tags.qb64'
-'$INCLUDE:'launcher_enum_games.qb64'
-'$INCLUDE:'launcher_enum_engines.qb64'
+launch:
+'=============================================================================
+
+'use the `START` command to launch the engine without freezing up the launcher
+LET CMD$ = "START "
+'set the directory for the game engine to assume as default
+LET CMD$ = CMD$ + "/D " + CHR$(34) + DIR_SAVE$ + CHR$(34) + " "
+
+'''specify the engine executable
+''LET CMD$ = CMD$ + CHR$(34) _
+''         + FIX_PATH$ + DIR_PORTS$ + Engines(engine%).folder + "\" _
+''         + Engines(engine%).exe + CHR$(34) + " "
+
+SLEEP
+SYSTEM
 
 '=============================================================================
-'$INCLUDE: 'lib\INI-Manager\ini.bm'
-'$INCLUDE: 'lib\strings.bm'
-'$INCLUDE: 'lib\paths.bm'
-'$INCLUDE: 'lib\strgui\strgui.bm'
-'$INCLUDE: 'lib\ui.bm'
+
+'$INCLUDE:'inc\tags.bm'
+'$INCLUDE:'inc\games.bm'
+'$INCLUDE:'inc\engines.bm'
+'$INCLUDE:'inc\wads.bm'
+
+'=============================================================================
+'$INCLUDE:'lib\INI-Manager\ini.bm'
+'$INCLUDE:'lib\strings.bm'
+'$INCLUDE:'lib\paths.bm'
+'$INCLUDE:'lib\reg.bm'
+'$INCLUDE:'lib\strgui\strgui.bm'
+'$INCLUDE:'lib\ui.bm'
  
