@@ -16,8 +16,3 @@ END TYPE
 REDIM SHARED Games(1) AS Game
 DIM SHARED GameCount%
 DIM SHARED game%
-
-'a two-dimensional array of game > tag-indicies; that is, the 1st dimension
-'is for each game and the second dimension covers each tag -- a value of 1
-'indicates that the game requires that tag
-REDIM SHARED GameTags(0, 0) AS _BYTE

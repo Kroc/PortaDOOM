@@ -4,39 +4,6 @@
 '   Games_EnumerateINI(INIFile$)
 '   Games_Add(...)
 
-'populate game definition from the command-line parameters
-'=============================================================================
-SUB Games_EnumerateCMD ()
-    DIM title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$
-
-    'require "software" renderer (8-bit, 256-colours)
-    IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
-
-    ' if no IWAD is provided, we will default to "DOOM2"
-    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2"
-    LET iwad$ = CMD_IWAD$
-    LET title$ = WADs_GetIWADTitle$(iwad$)
-
-    LET pwad$ = CMD_PWAD$
-
-    'TODO: implement `/REQ` for requesting tags
-    LET tags$ = WADs_GetIWADTags$(iwad$)
-
-    'these can be applied 1:1
-    'TODO: validation on this end, to give CMD-specific error message?
-    LET deh$ = CMD_DEH$
-    LET bex$ = CMD_BEX$
-    LET cmplvl$ = CMD_CMPLVL$
-
-    _ECHO ""
-    _ECHO "IWAD_PATH: " + WADs_Find$(iwad$)
-    _ECHO ""
-    
-    CALL Games_Add ( _
-        "cmd", title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
-    )
-END SUB
-
 'given an INI file, read game definitions from it
 '=============================================================================
 SUB Games_EnumerateINI (INIFile$)

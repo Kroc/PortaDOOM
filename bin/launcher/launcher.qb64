@@ -81,7 +81,7 @@ IF ENVIRON$("PROCESSOR_ARCHITEW6432") = "AMD64" THEN LET CPU_BIT = 64
 DIM SHARED DIR_EXE$
 LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 
-'now is this executable running from the source code folder or from within
+'now, is this executable running from the source code folder or from within
 'PortaDOOM's folder (as it would be in releases)? since these are different
 'directories, and the launcher operates on the assumption that it's in the
 '"PortaDOOM\files" folder, we need to re-route things when running from
@@ -121,7 +121,8 @@ CALL UI.Render
 
 _SCREENSHOW
 
-'process command line:
+'process command line / enumerate games:
+'-----------------------------------------------------------------------------
 IF _COMMANDCOUNT = 0 THEN
     'TODO: if there are no command-line parameters, we present a UI to build
     '      a custom game configuration?
@@ -131,55 +132,23 @@ END IF
 'read command-line parameters
 '$INCLUDE:'inc\cmd.bm'
 
-'enumerate engines:
-'search through the "ports" folder for game engines and read in their details
-CALL Engines_Enumerate
-
-'process the gathered game / engine data:
-'there is no simple description for this cross-referencing process...
-CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
-CALL UI.Render
-
-'find all unique tags in the Game / Engine definitions:
-DIM tag$, tag%
-
-'now that we know how many games, engines and tags there are,
-'we can set up our mappings
-REDIM SHARED GameTags(1 TO GameCount%, 1 TO UBOUND(Tags)) AS _BYTE
-REDIM SHARED EngineTags(1 TO EngineCount%, 0 TO UBOUND(Tags)) AS _BYTE
-
-'populate the game mappings:
-FOR game% = 1 TO UBOUND(Games)
-    
-    LET tag$ = Tags_Split$(Games(game%).tags)
-    DO WHILE tag$ <> ""
-        'find the tag index
-        LET tag% = Tags_Find%(tag$)
-        'set up the game <> tag mapping
-        LET GameTags(game%, tag%) = 1
-        
-        LET tag$ = Tags_Split$("")
-    LOOP
-NEXT game%
-
-'populate the engine mappings:
-FOR engine% = 1 TO UBOUND(Engines)
-    
-    LET tag$ = Tags_Split$(Engines(engine%).tags)
-    DO WHILE tag$ <> ""
-        'find the tag index
-        LET tag% = Tags_Find%(tag$)
-        'set up the game <> tag mapping
-        LET EngineTags(engine%, tag%) = 1
-        
-        LET tag$ = Tags_Split$("")
-    LOOP
-NEXT engine%
-
-'validate engine features:
+'select game:
 '-----------------------------------------------------------------------------
 'TODO: game selection window, if there are more than 1 games defined
 LET game% = 1
+
+'enumerate engines:
+'-----------------------------------------------------------------------------
+'search through the "ports" folder for game engines and read in their details.
+'this also builds a set of look-up tables for cross-referencing tags with
+'games and engines so that we can filter out incompatible engines
+CALL Engines_Enumerate
+
+'filter the engines to suit the chosen game:
+'-----------------------------------------------------------------------------
+'there is no simple description for this cross-referencing process...
+CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
+CALL UI.Render
 
 _ECHO "": _ECHO ""
 
@@ -215,7 +184,9 @@ FOR engine% = 1 TO UBOUND(Engines)
     'does this engine provide all the features required by the game?
     '(walk along the tags on the engine)
     FOR tag% = 1 TO UBOUND(Tags)
-        _ECHO "- Tag:" + Tags(tag%) + " EngineTags=" + STRINT$(EngineTags(engine%, tag%)) + " GameTags=" + STRINT$(GameTags(game%, tag%))
+        _ECHO "- Tag:" + Tags(tag%) _
+            + " EngineTags=" + STRINT$(EngineTags(engine%, tag%)) _
+            + " GameTags=" + STRINT$(GameTags(game%, tag%))
         
         'check the game's requirement for this tag
         SELECT CASE GameTags(game%, tag%)
@@ -278,6 +249,38 @@ SYSTEM
 
 launch:
 '=============================================================================
+
+'NOTE: many doom engines save their config files in the 'current directory',
+'which is typically expected to be that of the executable. However, we want
+'to separate user-data (such as save-games) from the engines. whilst we can
+'change the save directory, config files will still be dumped in the 'current
+'directory'.
+
+'we therefore need to change the current directory and rewrite
+'all the WAD / file paths to be relative from there!
+
+'the saves folder will contain a sub-folder for each engine,
+'and then another sub-folder for the IWAD or PWAD
+DIM SHARED DIR_SAVE$
+
+'this is the relative path from the WAD's
+'save folder back to this executable
+DIM SHARED FIX_PATH$
+LET FIX_PATH$ = "..\..\.."
+
+'we will remember the directory of the last file
+'(used for finding side-by-side WADs)
+DIM SHARED DIR_PREV$
+'other directories that will be remembered as we go
+DIM SHARED DIR_IWAD$
+DIM SHARED DIR_PWAD$
+
+'when an engine is selected, this will be the directory for it
+DIM SHARED DIR_ENGINE$
+
+DIM SHARED IWAD$
+DIM SHARED PWAD$
+
 
 'use the `START` command to launch the engine without freezing up the launcher
 LET CMD$ = "START "

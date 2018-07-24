@@ -19,11 +19,20 @@ END IF
 
 'read command-line switches:
 '=============================================================================
+'the command-line switches are to allow drop-in replacement compatibility
+'with "play.bat" / "doom.bat", the previous launcher setup. commands come
+'in two varieties: 1. commands for engine selection / compatibility:
+'
 DIM SHARED CMD_USE$ '....a specific engine-id to use
 DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
 DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
 DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
 DIM SHARED CMD_DEFAULT` 'should default config file be used?
+
+DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
+
+'and, 2. commands to specify what game to play:
+'
 DIM SHARED CMD_IWAD$ '...IWAD to use
 DIM SHARED CMD_PWAD$ '...optional PWAD to play
 DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
@@ -34,27 +43,89 @@ DIM SHARED CMD_SKILL$ '..skill level number
 DIM SHARED CMD_CMPLVL$ '.compatibility level
 DIM SHARED CMD_EXEC$ '...extra script to execute
 
+DIM cmd_hasGame` '.......flag, define game from command-line
+
 'FIXME: do not allow mix of command params & INI files?
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
         'just capture the param values, we will parse & validate later
-        CASE "/USE": LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
-        CASE "/REQ": LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
-        CASE "/32": LET CMD_32` = TRUE
-        CASE "/SW": LET CMD_SW` = TRUE
-        CASE "/DEFAULT": LET CMD_DEFAULT` = TRUE
-        CASE "/IWAD": LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
-        CASE "/PWAD": LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
-        CASE "/DEH": LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
-        CASE "/BEX": LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
-        CASE "/DEMO": LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
-        CASE "/WARP": LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
-        CASE "/SKILL": LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
-        CASE "/CMPLVL": LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
-        CASE "/EXEC": LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
+        CASE "/USE"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
+            'note that we will have to select engine(s) using this
+            LET cmd_hasEngine` = TRUE
+            
+        CASE "/REQ"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
+            'note that we will have to select engine(s) using this
+            LET cmd_hasEngine` = TRUE
+            
+        CASE "/32"
+            'set the flag to favour 32-bit binaries (on 64-bit systems);
+            'on its own, this does not select an engine
+            LET CMD_32` = TRUE
+            
+        CASE "/SW"
+            'set the flag to favour software / 8-bit rendering;
+            'on its own, this does not select an engine
+            LET CMD_SW` = TRUE
+            
+        CASE "/DEFAULT"
+            'set the flag to use the default config file;
+            'on its own, this does not select an engine
+            LET CMD_DEFAULT` = TRUE
+            
+        CASE "/IWAD"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+            
+        CASE "/PWAD"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+            
+        CASE "/DEH"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+            
+        CASE "/BEX"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+            
+        CASE "/DEMO"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+            
+        CASE "/WARP"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
+            
+        CASE "/SKILL"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
+            
+        CASE "/CMPLVL"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
+            
+        CASE "/EXEC"
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
+            
         CASE "--"
             'FIXME: handle file list
+            
         CASE ELSE
             'if an INI file is given, load the game definitions from it
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
@@ -69,41 +140,32 @@ LOOP
 _ECHO ""
 
 'is there enough parameters to define a game from the command-line?
-IF LEN(CMD_IWAD$) <> 0 _
-OR LEN(CMD_PWAD$) <> 0 _
-THEN
-    Games_EnumerateCMD
+IF cmd_hasGame` THEN
+    DIM title$, cmplvl$, deh$, bex$, tags$, vid$
+    
+    'require "software" renderer (8-bit, 256-colours)
+    IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
+
+    'if no IWAD is provided, we will default to "DOOM2"
+    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2"
+    'since the command-line doesn't provide
+    'meta-data, get that internally
+    LET title$ = WADs_GetIWADTitle$(CMD_IWAD$)
+
+    'FIXME: implement `/REQ` for requesting tags
+    LET tags$ = WADs_GetIWADTags$(CMD_IWAD$)
+
+    'these can be applied 1:1
+    'TODO: validation on this end, to give CMD-specific error message?
+    LET deh$ = CMD_DEH$
+    LET bex$ = CMD_BEX$
+    LET cmplvl$ = CMD_CMPLVL$
+
+    _ECHO ""
+    _ECHO "IWAD_PATH: " + WADs_Find$(CMD_IWAD$)
+    _ECHO ""
+    
+    CALL Games_Add ( _
+        "cmd", title$, CMD_IWAD$, CMD_PWAD$, cmplvl$, deh$, bex$, tags$, vid$ _
+    )
 END IF
-
-'=============================================================================
-
-'NOTE: many doom engines save their config files in the 'current directory',
-'which is typically expected to be that of the executable. However, we want
-'to separate user-data (such as save-games) from the engines. whilst we can
-'change the save directory, config files will still be dumped in the 'current
-'directory'.
-
-'we therefore need to change the current directory and rewrite
-'all the WAD / file paths to be relative from there!
-
-'the saves folder will contain a sub-folder for each engine,
-'and then another sub-folder for the IWAD or PWAD
-DIM SHARED DIR_SAVE$
-
-'this is the relative path from the WAD's
-'save folder back to this executable
-DIM SHARED FIX_PATH$
-LET FIX_PATH$ = "..\..\.."
-
-'we will remember the directory of the last file
-'(used for finding side-by-side WADs)
-DIM SHARED DIR_PREV$
-'other directories that will be remembered as we go
-DIM SHARED DIR_IWAD$
-DIM SHARED DIR_PWAD$
-
-'when an engine is selected, this will be the directory for it
-DIM SHARED DIR_ENGINE$
-
-DIM SHARED IWAD$
-DIM SHARED PWAD$

@@ -35,9 +35,3 @@ DIM SHARED EngineListCount%
 
 'loop-counter for engines and later 'currently selected' engine
 DIM SHARED engine%
-
-'a two-dimensional array of engine > tag-indicies; that is, the 1st dimension
-'is for each engine and the second dimension covers each tag. a value of 1
-'indicates that the engine uses that tag. the zeroth tag index is used to
-'shortlist engines by marking them as compatible (=1) or not (=0)
-REDIM SHARED EngineTags(0, 0) AS _BYTE

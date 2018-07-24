@@ -7,6 +7,8 @@
 'walk the ports folder and identify all engines present
 '=============================================================================
 SUB Engines_Enumerate()
+    DIM i AS _UNSIGNED LONG
+    
     CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
     CALL UI.Render
     
@@ -138,13 +140,12 @@ SUB Engines_Enumerate()
     DO WHILE sorted% = FALSE
         LET sorted% = TRUE
         
-        DIM i%
-        FOR i% = 2 TO EngineCount%
+        FOR i = 2 TO EngineCount%
             'compare the engine with the one above
             '(A = above, B = below)
             DIM A%, B%
-            LET A% = i% - 1
-            LET B% = i%
+            LET A% = i - 1
+            LET B% = i
             
             'compare the engine's rank:
             DIM rA%, rB%
@@ -219,17 +220,51 @@ SUB Engines_Enumerate()
                     END IF
                 END IF
             END IF
-        NEXT i%
+        NEXT i
         
     LOOP
     
     _ECHO ""
     _ECHO "sorts: " + STR$(sortCount%)
-    FOR i% = 1 TO EngineCount%
-        _ECHO "- " + Engines(i%).title$
-    NEXT i%
+    FOR i = 1 TO EngineCount%
+        _ECHO "- " + Engines(i).title$
+    NEXT i
     _ECHO ""
     
+    '-------------------------------------------------------------------------
+    
+    'create a look-up table of which engines provide which tags
+    REDIM EngineTags(1 TO EngineCount%, 0 TO UBOUND(Tags)) AS LONG
+    FOR i = 1 TO UBOUND(Engines)
+        LET tag$ = Tags_Split$(Engines(i).tags)
+        DO WHILE tag$ <> ""
+            'find the tag index
+            LET tag% = Tags_Find%(tag$)
+            'set up the game <> tag mapping
+            LET EngineTags(i, tag%) = 1
+            'get the next tag in the list
+            LET tag$ = Tags_Split$("")
+        LOOP
+    NEXT i
+    
+    'also, do this for game definitions -- this has to be done after
+    'enumerating the engines, as all unique tags will be known by then
+    REDIM GameTags(1 TO GameCount%, 1 TO UBOUND(Tags)) AS LONG
+    FOR i = 1 TO UBOUND(Games)
+        LET tag$ = Tags_Split$(Games(i).tags)
+        DO WHILE tag$ <> ""
+            'find the tag index
+            LET tag% = Tags_Find%(tag$)
+            'set up the game <> tag mapping
+            LET GameTags(i, tag%) = 1
+            'get the next tag in the list
+            LET tag$ = Tags_Split$("")
+        LOOP
+    NEXT i
+    
+    '-------------------------------------------------------------------------
+    
+    'clean-up UI
     CALL UI.DesktopBars.Update(ui_statusbar, "", ini_engine$)
     CALL UI.Render
 END SUB
