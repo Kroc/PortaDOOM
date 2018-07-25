@@ -2,41 +2,41 @@
 
 'create a new Label control and define its properties
 '=============================================================================
-FUNCTION UI.Labels.Add ( _
+FUNCTION TUI_Labels_Add ( _
     x AS _UNSIGNED _BYTE, _
     y AS _UNSIGNED _BYTE, _
     foreColor AS _UNSIGNED _BYTE, _
     caption AS STRING _
 )
     DIM kind_id AS _UNSIGNED LONG
-    LET kind_id = UBOUND(UI.Labels) + 1
-    REDIM _PRESERVE UI.Labels(1 TO kind_id) AS UILabel
+    LET kind_id = UBOUND(TUI_Labels) + 1
+    REDIM _PRESERVE TUI_Labels(1 TO kind_id) AS TUI_Label
     
     STRGUI.Begin
     STRGUI.Add caption
-    LET UI.Labels(kind_id).caption = UI.Strings.Add (STRGUI.Compile$)
+    LET TUI_Labels(kind_id).caption = TUI_Strings_Add (STRGUI.Compile$)
     
-    LET UI.Labels.Add = UI.Controls.Add ( _
+    LET TUI_Labels_Add = TUI_Controls_Add ( _
         x, y, 0, 0, foreColor, 0, _
-        UIControlKind_Label, kind_id _
+        TUI_ControlKind_Label, kind_id _
     )
 END FUNCTION
 
 '=============================================================================
-SUB UI.Labels.Print (controlID AS _UNSIGNED _BYTE)
+SUB TUI_Labels_Print (controlID AS _UNSIGNED _BYTE)
     DIM x AS _UNSIGNED _BYTE
     DIM y AS _UNSIGNED _BYTE
-    LET x = UI.Controls(controlID).x
-    LET y = UI.Controls(controlID).y
+    LET x = TUI_Controls(controlID).x
+    LET y = TUI_Controls(controlID).y
     
     LOCATE y, x
     
     'labels begin by inheriting the background colour of where they're being
     'printed; if you want to change the back-colour use the formatting codes
-    COLOR UI.Controls(controlID).foreColor, SCREEN(y, x, 1) \ 16
+    COLOR TUI_Controls(controlID).foreColor, SCREEN(y, x, 1) \ 16
     
     DIM kind_id AS _UNSIGNED _BYTE
-    LET kind_id = UI.Controls(controlID).kind_id
+    LET kind_id = TUI_Controls(controlID).kind_id
     
-    BINSTR.Print UI.Strings(UI.Labels(kind_id).caption)
+    BINSTR.Print TUI_Strings(TUI_Labels(kind_id).caption)
 END SUB

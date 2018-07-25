@@ -7,6 +7,7 @@
 '   Paths_GetFileName$          -> STRING
 '   Paths_GetFileExtension$     -> STRING
 '   Paths_GetFileBaseName$      -> STRING
+'   Paths_GetShortPath$         -> STRING
 
 DECLARE LIBRARY
 

@@ -2,7 +2,7 @@
 
 'define a "window", a box with border, background and shadow
 '=============================================================================
-FUNCTION UI.Windows.Add ( _
+FUNCTION TUI_Windows_Add ( _
     x AS _UNSIGNED _BYTE, _
     y AS _UNSIGNED _BYTE, _
     width AS _UNSIGNED _BYTE, _
@@ -14,32 +14,32 @@ FUNCTION UI.Windows.Add ( _
 )
     'increase the number of windows defined
     DIM window_id AS _UNSIGNED LONG
-    LET window_id = UBOUND(UI.Windows) + 1
-    REDIM _PRESERVE UI.Windows(1 TO window_id) AS UIWindow
+    LET window_id = UBOUND(TUI_Windows) + 1
+    REDIM _PRESERVE TUI_Windows(1 TO window_id) AS TUI_Window
     
-    LET UI.Windows(window_id).borderStyle = borderStyle
-    LET UI.Windows(window_id).decoration = UI.Strings.Add(decoration)
+    LET TUI_Windows(window_id).borderStyle = borderStyle
+    LET TUI_Windows(window_id).decoration = TUI_Strings_Add(decoration)
     
     STRGUI.Begin
     STRGUI.Add STRGUI.WINDOW$(width, height, borderStyle)
     STRGUI.Add decoration
-    LET UI.Windows(window_id).cache = UI.Strings.Add(STRGUI.Compile$)
+    LET TUI_Windows(window_id).cache = TUI_Strings_Add(STRGUI.Compile$)
     
     'add the window to the draw stack and return the control-ID
-    LET UI.Windows.Add = UI.Controls.Add ( _
+    LET TUI_Windows_Add = TUI_Controls_Add ( _
         x, y, width, height, borderColor, windowColor, _
-        UIControlKind_Window, window_id _
+        TUI_ControlKind_Window, window_id _
     )
 END SUB
 
 '=============================================================================
-SUB UI.Windows.Print (controlID AS _UNSIGNED _BYTE)
-    LOCATE UI.Controls(controlID).y, UI.Controls(controlID).x
-    COLOR UI.Controls(controlID).foreColor, _
-          UI.Controls(controlID).backColor
+SUB TUI_Windows_Print (controlID AS _UNSIGNED _BYTE)
+    LOCATE TUI_Controls(controlID).y, TUI_Controls(controlID).x
+    COLOR TUI_Controls(controlID).foreColor, _
+          TUI_Controls(controlID).backColor
     
     DIM window_id AS _UNSIGNED _BYTE
-    LET window_id = UI.Controls(controlID).kind_id
+    LET window_id = TUI_Controls(controlID).kind_id
     
-    BINSTR.Print UI.Strings(UI.Windows(window_id).cache)
+    BINSTR.Print TUI_Strings(TUI_Windows(window_id).cache)
 END SUB

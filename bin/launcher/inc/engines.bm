@@ -11,8 +11,8 @@ SUB Engines_Enumerate()
     'loop counter
     DIM i AS _UNSIGNED LONG
     
-    CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
-    CALL UI.Render
+    CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", "")
+    CALL TUI_Render
     
     LET Engines_Count = 0
     
@@ -50,8 +50,8 @@ SUB Engines_Enumerate()
             _ECHO ""
             _ECHO "* " + ini_engine$
             
-            CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", ini_engine$)
-            CALL UI.Render
+            CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", ini_engine$)
+            CALL TUI_Render
             
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
@@ -120,8 +120,8 @@ SUB Engines_Enumerate()
     
     'prioritise engine list:
     '-------------------------------------------------------------------------
-    CALL UI.DesktopBars.Update(ui_statusbar, "Sorting Engines...", ini_engine$)
-    CALL UI.Render
+    CALL TUI_DesktopBars_Update(ui_statusbar, "Sorting Engines...", ini_engine$)
+    CALL TUI_Render
     
     '... given ten different versions of GZDoom, each with hardware/software
     'renderers, which is the 'best' that we should default to?
@@ -267,8 +267,8 @@ SUB Engines_Enumerate()
     '-------------------------------------------------------------------------
     
     'clean-up UI
-    CALL UI.DesktopBars.Update(ui_statusbar, "", "")
-    CALL UI.Render
+    CALL TUI_DesktopBars_Update(ui_statusbar, "", "")
+    CALL TUI_Render
 END SUB
 
 'takes an engine 'kin' letter, e.g. "B" and converts it into a rank value
@@ -292,8 +292,8 @@ SUB Engines_Filter()
     DIM i AS _UNSIGNED LONG
     
     'there is no simple description for this cross-referencing process...
-    CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
-    CALL UI.Render
+    CALL TUI_DesktopBars_Update(ui_statusbar, "Reticulating Splines...", "")
+    CALL TUI_Render
 
     _ECHO "": _ECHO ""
 

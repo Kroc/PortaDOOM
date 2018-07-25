@@ -1,7 +1,7 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 '=============================================================================
-FUNCTION UI.DesktopBars.Add ( _
+FUNCTION TUI_DesktopBars_Add ( _
     row AS _UNSIGNED _BYTE, _
     foreColor AS _UNSIGNED _BYTE, _
     backColor AS _UNSIGNED _BYTE, _
@@ -11,52 +11,52 @@ FUNCTION UI.DesktopBars.Add ( _
     'increase the number of desktop bars defined
     'and populate its properties
     DIM kind_id AS _UNSIGNED LONG
-    LET kind_id = UBOUND(UI.DesktopBars) + 1
-    REDIM _PRESERVE UI.DesktopBars(1 TO kind_id) AS UIDesktopBar
+    LET kind_id = UBOUND(TUI_DesktopBars) + 1
+    REDIM _PRESERVE TUI_DesktopBars(1 TO kind_id) AS TUI_DesktopBar
     
-    LET UI.DesktopBars(kind_id).textLeft = UI.Strings.Add(textLeft)
-    LET UI.DesktopBars(kind_id).textRight = UI.Strings.Add(textRight)
+    LET TUI_DesktopBars(kind_id).textLeft = TUI_Strings_Add(textLeft)
+    LET TUI_DesktopBars(kind_id).textRight = TUI_Strings_Add(textRight)
     
     'add the desktop bar to the draw stack
-    LET UI.DesktopBars.Add = UI.Controls.Add ( _
+    LET TUI_DesktopBars_Add = TUI_Controls_Add ( _
         1, row, _WIDTH, 1, foreColor, backColor, _
-        UIControlKind_DesktopBar, kind_id _
+        TUI_ControlKind_DesktopBar, kind_id _
     )
 END FUNCTION
 
 '=============================================================================
-SUB UI.DesktopBars.Update ( _
+SUB TUI_DesktopBars_Update ( _
     controlID AS _UNSIGNED _BYTE, _
     textLeft AS STRING, _
     textRight AS STRING _
 )
     DIM kind_id AS _UNSIGNED _BYTE
-    LET kind_id = UI.Controls(controlID).kind_id
+    LET kind_id = TUI_Controls(controlID).kind_id
     
-    LET UI.Strings(UI.DesktopBars(kind_id).textLeft) = textLeft
-    LET UI.Strings(UI.DesktopBars(kind_id).textRight) = textRight
+    LET TUI_Strings(TUI_DesktopBars(kind_id).textLeft) = textLeft
+    LET TUI_Strings(TUI_DesktopBars(kind_id).textRight) = textRight
 END SUB
 
 '=============================================================================
-SUB UI.DesktopBars.Print (controlID AS _UNSIGNED _BYTE)
+SUB TUI_DesktopBars_Print (controlID AS _UNSIGNED _BYTE)
     DIM x AS _UNSIGNED _BYTE
     DIM y AS _UNSIGNED _BYTE
-    LET x = UI.Controls(controlID).x
-    LET y = UI.Controls(controlID).y
+    LET x = TUI_Controls(controlID).x
+    LET y = TUI_Controls(controlID).y
     
     'draw the bar background across the screen
     LOCATE y, x
-    COLOR UI.Controls(controlID).foreColor, _
-          UI.Controls(controlID).backColor
+    COLOR TUI_Controls(controlID).foreColor, _
+          TUI_Controls(controlID).backColor
     PRINT SPACE$(_WIDTH);
     
     DIM kind_id AS _UNSIGNED _BYTE
-    LET kind_id = UI.Controls(controlID).kind_id
+    LET kind_id = TUI_Controls(controlID).kind_id
     
     DIM txtL AS STRING
     DIM txtR AS STRING
-    LET txtL = UI.Strings(UI.DesktopBars(kind_id).textLeft)
-    LET txtR = UI.Strings(UI.DesktopBars(kind_id).textRight)
+    LET txtL = TUI_Strings(TUI_DesktopBars(kind_id).textLeft)
+    LET txtR = TUI_Strings(TUI_DesktopBars(kind_id).textRight)
     
     DIM lenL AS _UNSIGNED _BYTE
     DIM lenR AS _UNSIGNED _BYTE

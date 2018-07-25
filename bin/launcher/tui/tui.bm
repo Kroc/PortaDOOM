@@ -1,0 +1,80 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'$INCLUDE:'strgui\strgui.bm'
+
+'$INCLUDE:'ui_desktopbar.bm'
+'$INCLUDE:'ui_window.bm'
+'$INCLUDE:'ui_label.bm'
+
+'=============================================================================
+FUNCTION TUI_Strings_Add (newString AS STRING)
+    DIM id AS _UNSIGNED LONG
+    LET id = UBOUND(TUI_Strings) + 1
+    REDIM _PRESERVE TUI_Strings(1 TO id) AS STRING
+    
+    LET TUI_Strings(id) = newString
+    LET TUI_Strings_Add = id
+END FUNCTION
+
+
+'=============================================================================
+FUNCTION TUI_Controls_Add ( _
+    x AS _UNSIGNED _BYTE, _
+    y AS _UNSIGNED _BYTE, _
+    width AS _UNSIGNED _BYTE, _
+    height AS _UNSIGNED _BYTE, _
+    foreColor AS _UNSIGNED _BYTE, _
+    backColor AS _UNSIGNED _BYTE, _
+    kind AS _UNSIGNED _BYTE, _
+    kind_id AS _UNSIGNED _BYTE _
+)
+    LET TUI_Controls_index = TUI_Controls_index + 1
+    LET TUI_Controls(TUI_Controls_index).x = x
+    LET TUI_Controls(TUI_Controls_index).y = y
+    LET TUI_Controls(TUI_Controls_index).width = width
+    LET TUI_Controls(TUI_Controls_index).height = height
+    LET TUI_Controls(TUI_Controls_index).foreColor = foreColor
+    LET TUI_Controls(TUI_Controls_index).backColor = backColor
+    LET TUI_Controls(TUI_Controls_index).kind = kind
+    LET TUI_Controls(TUI_Controls_index).kind_id = kind_id
+    
+    'return the control-ID just added
+    LET TUI_Controls_Add = TUI_Controls_index
+END SUB
+
+
+'=============================================================================
+SUB TUI_Render ()
+    '''switch focus to the back-buffer
+    ''STATIC buffer%
+    ''SCREEN , , 1 - buffer%, buffer%
+    
+    'render the desktop background
+    COLOR TUI_Desktop_foreColor, TUI_Desktop_backColor
+    DIM i AS _UNSIGNED _BYTE
+    FOR i = 1 TO _HEIGHT
+        LOCATE i, 1: PRINT STRING$(_WIDTH, TUI_Desktop_fillChar);
+    NEXT i
+    
+    DIM c AS _UNSIGNED _BYTE
+    FOR c = 1 TO TUI_Controls_index
+        CALL TUI_Controls_Print(c)
+    NEXT c
+    
+    ''_DISPLAY
+    
+    '''flip the display buffers
+    ''buffer% = 1 - buffer%
+    ''SCREEN , , 1 - buffer%, buffer%
+END SUB
+
+'=============================================================================
+SUB TUI_Controls_Print (controlID AS _UNSIGNED _BYTE)
+    SELECT CASE TUI_Controls(controlID).kind
+        CASE TUI_ControlKind_DesktopBar: CALL TUI_DesktopBars_Print (controlID)
+        CASE TUI_ControlKind_Window: CALL TUI_Windows_Print (controlID)
+        CASE TUI_ControlKind_Label: CALL TUI_Labels_Print (controlID)
+        CASE ELSE
+            SYSTEM 1
+    END SELECT
+END SUB

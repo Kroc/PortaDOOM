@@ -17,13 +17,12 @@ _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
 '=============================================================================
 
+'$INCLUDE:'lib\INI-Manager\ini.bi'
+
 '$INCLUDE:'lib\consts.bi'
 '$INCLUDE:'lib\reg.bi'
 
-'$INCLUDE:'lib\strgui\strgui.bi'
-'$INCLUDE:'lib\ui.bi'
-
-'$INCLUDE:'lib\INI-Manager\ini.bi'
+'$INCLUDE:'tui\tui.bi'
 
 '=============================================================================
 
@@ -115,9 +114,9 @@ SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 'print base UI:
 DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
 DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
-LET ui_titlebar = UI.DesktopBars.Add(1, BLACK, LTGREY, _TITLE$, "")
-LET ui_statusbar = UI.DesktopBars.Add(_HEIGHT, BLACK, LTGREY, "", "...")
-CALL UI.Render
+LET ui_titlebar = TUI_DesktopBars_Add(1, BLACK, LTGREY, _TITLE$, "")
+LET ui_statusbar = TUI_DesktopBars_Add(_HEIGHT, BLACK, LTGREY, "", "...")
+CALL TUI_Render
 
 _SCREENSHOW
 
@@ -166,10 +165,11 @@ launch:
 '$INCLUDE:'inc\wads.bm'
 
 '=============================================================================
+
 '$INCLUDE:'lib\INI-Manager\ini.bm'
+
 '$INCLUDE:'lib\strings.bm'
 '$INCLUDE:'lib\paths.bm'
 '$INCLUDE:'lib\reg.bm'
-'$INCLUDE:'lib\strgui\strgui.bm'
-'$INCLUDE:'lib\ui.bm'
- 
+
+'$INCLUDE:'tui\tui.bm'
