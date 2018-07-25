@@ -138,6 +138,9 @@ CALL Games_Select(1)
 
 'enumerate engines:
 '-----------------------------------------------------------------------------
+CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", "")
+CALL TUI_Render
+
 'search through the "ports" folder for game engines and read in their details.
 'this also builds a set of look-up tables for cross-referencing tags with
 'games and engines so that we can filter out incompatible engines
@@ -145,6 +148,9 @@ CALL Engines_Enumerate
 
 CALL Engines_Filter
 
+'clean-up UI
+CALL TUI_DesktopBars_Update(ui_statusbar, "", "")
+CALL TUI_Render
 
 SummaryScreen:
 '=============================================================================

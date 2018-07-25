@@ -33,5 +33,9 @@ DIM SHARED Engines_Count AS LONG
 REDIM SHARED Engines_List(1 TO 1) AS INTEGER
 DIM SHARED Engines_ListCount AS LONG
 
-'loop-counter for engines and later 'currently selected' engine
+'currently selected engine index
 DIM SHARED Engines_Current AS LONG
+
+'when an engine is selected, this struct is populated to save the indirect
+'lookup of engine details via `Engines(Engines_Current)...` every time
+DIM SHARED Engines_Selected AS Engine

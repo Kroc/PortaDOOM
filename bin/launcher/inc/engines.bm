@@ -11,9 +11,6 @@ SUB Engines_Enumerate()
     'loop counter
     DIM i AS _UNSIGNED LONG
     
-    CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", "")
-    CALL TUI_Render
-    
     LET Engines_Count = 0
     
     'create a directory list in a file, containing only sub-folder names
@@ -264,11 +261,6 @@ SUB Engines_Enumerate()
         LOOP
     NEXT i
     
-    '-------------------------------------------------------------------------
-    
-    'clean-up UI
-    CALL TUI_DesktopBars_Update(ui_statusbar, "", "")
-    CALL TUI_Render
 END SUB
 
 'takes an engine 'kin' letter, e.g. "B" and converts it into a rank value
@@ -376,9 +368,9 @@ SUB Engines_Filter()
     CALL Engines_Select(Engines_List(1))
 END SUB
 
-'selects an engine for use, populating the 'current engine' variables
+'selects an engine for use, populating the 'selected engine' variables
 '============================================================================
 SUB Engines_Select(engine%)
-    LET DIR_ENGINE$ = DIR_PORTS$ + Engines(engine%).folder
-    LET DIR_SAVE$ = DIR_SAVES$ + Engines(engine%).save + "\"
+    LET Engines_Current = engine%
+    LET Engines_Selected = Engines(Engines_Current)
 END SUB

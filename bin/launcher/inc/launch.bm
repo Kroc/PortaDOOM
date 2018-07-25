@@ -1,5 +1,10 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'launch the selected game, with the selected engine, with the selected
+'parameters, any mods (if selected) and so forth. we need to build the
+'right command-line to do all of this
+
+
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. However, we want
 'to separate user-data (such as save-games) from the engines. whilst we can
@@ -28,9 +33,6 @@ DIM SHARED DIR_PWAD$
 'when an engine is selected, this will be the directory for it
 DIM SHARED DIR_ENGINE$
 
-DIM SHARED IWAD$
-DIM SHARED PWAD$
-
 '=============================================================================
 
 'use the `START` command to launch the engine without freezing up the launcher
@@ -48,6 +50,8 @@ SYSTEM
 
 'return the save path to use for the currently selected engine + game
 '============================================================================
-FUNCTION Launch_GetSavePath%()
-    'TODO
+FUNCTION Launch_GetSavePath$()
+    'save-games are separated by port (GZDoom / Zandronum &c.)
+    'and then by IWAD or PWAD (if present)
+    LET Launch_GetSavePath$ = DIR_SAVES$
 END FUNCTION
