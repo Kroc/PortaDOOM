@@ -14,5 +14,7 @@ END TYPE
 
 'array that holds all the games defined
 REDIM SHARED Games(1) AS Game
-DIM SHARED GameCount%
-DIM SHARED game%
+DIM SHARED Games_Count AS LONG
+
+'currently selected game
+DIM SHARED Games_Current AS LONG

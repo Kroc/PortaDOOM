@@ -1,0 +1,53 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'NOTE: many doom engines save their config files in the 'current directory',
+'which is typically expected to be that of the executable. However, we want
+'to separate user-data (such as save-games) from the engines. whilst we can
+'change the save directory, config files will still be dumped in the 'current
+'directory'.
+
+'we therefore need to change the current directory and rewrite
+'all the WAD / file paths to be relative from there!
+
+'the saves folder will contain a sub-folder for each engine,
+'and then another sub-folder for the IWAD or PWAD
+DIM SHARED DIR_SAVE$
+
+'this is the relative path from the WAD's
+'save folder back to this executable
+DIM SHARED FIX_PATH$
+LET FIX_PATH$ = "..\..\.."
+
+'we will remember the directory of the last file
+'(used for finding side-by-side WADs)
+DIM SHARED DIR_PREV$
+'other directories that will be remembered as we go
+DIM SHARED DIR_IWAD$
+DIM SHARED DIR_PWAD$
+
+'when an engine is selected, this will be the directory for it
+DIM SHARED DIR_ENGINE$
+
+DIM SHARED IWAD$
+DIM SHARED PWAD$
+
+'=============================================================================
+
+'use the `START` command to launch the engine without freezing up the launcher
+LET CMD$ = "START "
+'set the directory for the game engine to assume as default
+LET CMD$ = CMD$ + "/D " + CHR$(34) + DIR_SAVE$ + CHR$(34) + " "
+
+'''specify the engine executable
+''LET CMD$ = CMD$ + CHR$(34) _
+''         + FIX_PATH$ + DIR_PORTS$ + Engines(engine%).folder + "\" _
+''         + Engines(engine%).exe + CHR$(34) + " "
+
+SLEEP
+SYSTEM
+
+'return the save path to use for the currently selected engine + game
+'============================================================================
+FUNCTION Launch_GetSavePath%()
+    'TODO
+END FUNCTION

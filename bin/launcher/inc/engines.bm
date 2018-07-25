@@ -2,20 +2,22 @@
 
 '   Engines_Enumerate()
 '   Engines_KinValue%(kin$*1)   -> INTEGER
-'   Engines_Select()
+'   Engines_Filter()
+'   Engines_Select(engine%)
 
 'walk the ports folder and identify all engines present
 '=============================================================================
 SUB Engines_Enumerate()
+    'loop counter
     DIM i AS _UNSIGNED LONG
     
     CALL UI.DesktopBars.Update(ui_statusbar, "Enumerating Engines...", "")
     CALL UI.Render
     
-    LET EngineCount% = 0
+    LET Engines_Count = 0
     
-    CHDIR DIR_EXE$ + "ports"
     'create a directory list in a file, containing only sub-folder names
+    CHDIR DIR_EXE$ + "ports"
     SHELL _HIDE "DIR /AD /B > dir.tmp"
     
     DIM dir_handle%
@@ -52,9 +54,9 @@ SUB Engines_Enumerate()
             CALL UI.Render
             
             'increase the list of known engines
-            LET EngineCount% = EngineCount% + 1
-            REDIM _PRESERVE Engines(1 TO EngineCount%) AS Engine
-            LET Engines(EngineCount%).id = ini_engine$
+            LET Engines_Count = Engines_Count + 1
+            REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
+            LET Engines(Engines_Count).id = ini_engine$
             
             'read engine data from the INI file
             DIM ini_section$
@@ -93,20 +95,20 @@ SUB Engines_Enumerate()
             'process the tag list
             CALL Tags_Add(ini_tags$)
             
-            LET Engines(EngineCount%).folder = folder$
-            LET Engines(EngineCount%).name = ini_name$
-            LET Engines(EngineCount%).rank = VAL(ini_rank$)
-            LET Engines(EngineCount%).title = ini_title$
-            LET Engines(EngineCount%).exe = ini_exe$
-            LET Engines(EngineCount%).ver = VAL(ini_ver$)
-            LET Engines(EngineCount%).bit = VAL(ini_bit$)
-            LET Engines(EngineCount%).vid = VAL(ini_vid$)
-            LET Engines(EngineCount%).kin = ini_kin$
-            LET Engines(EngineCount%).cfg = ini_cfg$
-            LET Engines(EngineCount%).save = ini_save$
-            LET Engines(EngineCount%).tags = ini_tags$
-            LET Engines(EngineCount%).iwads = ini_iwads$
-            LET Engines(EngineCount%).pwads = ini_pwads$
+            LET Engines(Engines_Count).folder = folder$
+            LET Engines(Engines_Count).name = ini_name$
+            LET Engines(Engines_Count).rank = VAL(ini_rank$)
+            LET Engines(Engines_Count).title = ini_title$
+            LET Engines(Engines_Count).exe = ini_exe$
+            LET Engines(Engines_Count).ver = VAL(ini_ver$)
+            LET Engines(Engines_Count).bit = VAL(ini_bit$)
+            LET Engines(Engines_Count).vid = VAL(ini_vid$)
+            LET Engines(Engines_Count).kin = ini_kin$
+            LET Engines(Engines_Count).cfg = ini_cfg$
+            LET Engines(Engines_Count).save = ini_save$
+            LET Engines(Engines_Count).tags = ini_tags$
+            LET Engines(Engines_Count).iwads = ini_iwads$
+            LET Engines(Engines_Count).pwads = ini_pwads$
             
             LET ini_index% = ini_index% + 1
         LOOP
@@ -140,7 +142,7 @@ SUB Engines_Enumerate()
     DO WHILE sorted% = FALSE
         LET sorted% = TRUE
         
-        FOR i = 2 TO EngineCount%
+        FOR i = 2 TO Engines_Count
             'compare the engine with the one above
             '(A = above, B = below)
             DIM A%, B%
@@ -226,7 +228,7 @@ SUB Engines_Enumerate()
     
     _ECHO ""
     _ECHO "sorts: " + STR$(sortCount%)
-    FOR i = 1 TO EngineCount%
+    FOR i = 1 TO Engines_Count
         _ECHO "- " + Engines(i).title$
     NEXT i
     _ECHO ""
@@ -234,7 +236,7 @@ SUB Engines_Enumerate()
     '-------------------------------------------------------------------------
     
     'create a look-up table of which engines provide which tags
-    REDIM EngineTags(1 TO EngineCount%, 0 TO UBOUND(Tags)) AS LONG
+    REDIM EngineTags(1 TO Engines_Count, 0 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Engines)
         LET tag$ = Tags_Split$(Engines(i).tags)
         DO WHILE tag$ <> ""
@@ -249,7 +251,7 @@ SUB Engines_Enumerate()
     
     'also, do this for game definitions -- this has to be done after
     'enumerating the engines, as all unique tags will be known by then
-    REDIM GameTags(1 TO GameCount%, 1 TO UBOUND(Tags)) AS LONG
+    REDIM GameTags(1 TO Games_Count, 1 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Games)
         LET tag$ = Tags_Split$(Games(i).tags)
         DO WHILE tag$ <> ""
@@ -265,7 +267,7 @@ SUB Engines_Enumerate()
     '-------------------------------------------------------------------------
     
     'clean-up UI
-    CALL UI.DesktopBars.Update(ui_statusbar, "", ini_engine$)
+    CALL UI.DesktopBars.Update(ui_statusbar, "", "")
     CALL UI.Render
 END SUB
 
@@ -282,6 +284,97 @@ FUNCTION Engines_KinValue%(kin AS STRING * 1)
             LET Engines_KinValue% = 0
     END SELECT
 END FUNCTION
+
+'filter the engines to suit the chosen game
+'=============================================================================
+SUB Engines_Filter()
+    'loop counter
+    DIM i AS _UNSIGNED LONG
+    
+    'there is no simple description for this cross-referencing process...
+    CALL UI.DesktopBars.Update(ui_statusbar, "Reticulating Splines...", "")
+    CALL UI.Render
+
+    _ECHO "": _ECHO ""
+
+    'test each engine against the game's requirements:
+    FOR i = 1 TO UBOUND(Engines)
+        _ECHO ""
+        _ECHO "* testing engine #" + STRINT$(i) + " " + Engines(i).id
+        
+        'are we looking for a specific engine-id?
+        'e.g. the `/USE` command-line parameter
+        IF CMD_USE$ <> "" THEN
+            IF _TRIM$(Engines(i).id) <> CMD_USE$ THEN
+                _ECHO "": _ECHO "! no-match (id): " + Engines(i).id
+                _CONTINUE
+            END IF
+        END IF
+        
+        'is the binary compatible with this machine? (32 / 64-bit)
+        'if we are a 32-bit machine, we can't run 64-bit software
+        _ECHO "- Bit:" + STRINT$(Engines(i).bit)
+        IF CPU_BIT = 32 AND Engines(i).bit = 64 THEN
+            _ECHO "": _ECHO "! no-match (bit): " + Engines(i).id
+            _CONTINUE
+        END IF
+        
+        '-------------------------------------------------------------------------
+        
+        'TODO: validate engine IWAD / PWAD support
+        
+        
+        '-------------------------------------------------------------------------
+        
+        'does this engine provide all the features required by the game?
+        '(walk along the tags on the engine)
+        FOR tag% = 1 TO UBOUND(Tags)
+            _ECHO "- Tag:" + Tags(tag%) _
+                + " EngineTags=" + STRINT$(EngineTags(i, tag%)) _
+                + " GameTags=" + STRINT$(GameTags(Games_Current, tag%))
+            
+            'check the game's requirement for this tag
+            SELECT CASE GameTags(Games_Current, tag%)
+                'the *game* requires this from the engine
+                CASE 1:
+                    'if the *engine* does not provide this feature,
+                    'move on to the next engine
+                    IF EngineTags(i, tag%) = 0 THEN
+                        _ECHO "": _ECHO "! no-match (tag): " + Engines(i).id
+                        '`_CONTINUE` does not support breaking nested loops
+                        LET i = i + 1: GOTO NextEngine
+                    END IF
+            END SELECT
+        NEXT tag%
+        
+        '-------------------------------------------------------------------------
+        
+        'all tags have been checked, meaning that this engine is a candidate
+        LET EngineTags(i, 0) = 1
+        'add this tag to the valid short-list
+        LET Engines_ListCount = Engines_ListCount + 1
+        REDIM _PRESERVE Engines_List(1 TO Engines_ListCount) AS INTEGER
+        LET Engines_List(Engines_ListCount) = i
+        
+        _ECHO ""
+        _ECHO "match: " + Engines(i).id
+
+    NextEngine:
+    NEXT i
+
+    'print a list of the candidate engines:
+    _ECHO ""
+    _ECHO "Candidate Engines:"
+    _ECHO "------------------"
+    FOR i = 1 TO Engines_ListCount
+        _ECHO "- " + Engines(Engines_List(i)).id + ": " _
+            + Engines(Engines_List(i)).title
+    NEXT i
+    _ECHO ""
+    
+    'select the 'best' engine by default
+    CALL Engines_Select(Engines_List(1))
+END SUB
 
 'selects an engine for use, populating the 'current engine' variables
 '============================================================================

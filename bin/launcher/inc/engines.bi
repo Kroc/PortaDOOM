@@ -27,11 +27,11 @@ END TYPE
 'share the same engine-id, but differ in version / CPU-type / renderer
 REDIM SHARED Engines(1 TO 1) AS Engine
 'count of all defined engines (prior to filtering)
-DIM SHARED EngineCount%
+DIM SHARED Engines_Count AS LONG
 
 'list of compatible engines for the selected game
-REDIM SHARED EngineList(1 TO 1) AS INTEGER
-DIM SHARED EngineListCount%
+REDIM SHARED Engines_List(1 TO 1) AS INTEGER
+DIM SHARED Engines_ListCount AS LONG
 
 'loop-counter for engines and later 'currently selected' engine
-DIM SHARED engine%
+DIM SHARED Engines_Current AS LONG

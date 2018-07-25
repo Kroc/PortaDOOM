@@ -1,8 +1,8 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'   Games_EnumerateCMD()
 '   Games_EnumerateINI(INIFile$)
 '   Games_Add(...)
+'   Games_Select(game%)
 
 'given an INI file, read game definitions from it
 '=============================================================================
@@ -38,7 +38,7 @@ readINI:
         'read from the list of game-configurations defined
         '(a single INI can define more than one game variation)
         DIM game_id$
-        LET game_id$ = ReadSetting$(path$, "games", STRINT$(GameCount% + 1))
+        LET game_id$ = ReadSetting$(path$, "games", STRINT$(Games_Count + 1))
         'if there's no further entries, stop looking
         IF game_id$ = "" THEN EXIT DO
         
@@ -78,11 +78,11 @@ SUB Games_Add ( _
     id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
 )
     'increase the number of games entries
-    LET GameCount% = GameCount% + 1
-    REDIM _PRESERVE Games(1 TO GameCount%) AS Game
-    LET Games(GameCount%).id = id$
+    LET Games_Count = Games_Count + 1
+    REDIM _PRESERVE Games(1 TO Games_Count) AS Game
+    LET Games(Games_Count).id = id$
     
-    _ECHO "* GAME #" + STRINT$(GameCount%) + ": " + id$
+    _ECHO "* GAME #" + STRINT$(Games_Count) + ": " + id$
     IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
     IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
     IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
@@ -96,16 +96,21 @@ SUB Games_Add ( _
     CALL Tags_Add(tags$)
     
     'no problems? write the data into the engine list
-    LET Games(GameCount%).title = title$
-    LET Games(GameCount%).iwad = iwad$
-    LET Games(GameCount%).pwad = pwad$
+    LET Games(Games_Count).title = title$
+    LET Games(Games_Count).iwad = iwad$
+    LET Games(Games_Count).pwad = pwad$
     IF cmplvl$ = "" THEN
-        LET Games(GameCount%).cmplvl = -1
+        LET Games(Games_Count).cmplvl = -1
     ELSE
-        LET Games(GameCount%).cmplvl = VAL(cmplvl$)
+        LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
-    LET Games(GameCount%).deh = deh$
-    LET Games(GameCount%).bex = bex$
-    LET Games(GameCount%).tags = tags$
-    LET Games(GameCount%).vid = VAL(vid$)
+    LET Games(Games_Count).deh = deh$
+    LET Games(Games_Count).bex = bex$
+    LET Games(Games_Count).tags = tags$
+    LET Games(Games_Count).vid = VAL(vid$)
+END SUB
+
+'=============================================================================
+SUB Games_Select(game%)
+    LET Games_Current = game%
 END SUB
