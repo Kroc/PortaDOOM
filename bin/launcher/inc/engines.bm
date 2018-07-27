@@ -100,7 +100,15 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
-            LET Engines(Engines_Count).kin = ini_kin$
+            SELECT CASE ini_kin$
+                CASE "X": LET Engines(Engines_Count).kin = KIN_X
+                CASE "V": LET Engines(Engines_Count).kin = KIN_V
+                CASE "B": LET Engines(Engines_Count).kin = KIN_B
+                CASE "Z": LET Engines(Engines_Count).kin = KIN_Z
+                CASE "G": LET Engines(Engines_Count).kin = KIN_G
+                CASE ELSE
+                    LET Engines(Engines_Count).kin = 0
+            END SELECT
             LET Engines(Engines_Count).cfg = ini_cfg$
             LET Engines(Engines_Count).save = ini_save$
             LET Engines(Engines_Count).tags = ini_tags$
@@ -160,8 +168,8 @@ SUB Engines_Enumerate()
             ELSEIF rB% = rA% THEN
                 'compare the two engine's genealogy:
                 DIM kA%, kB%
-                LET kA% = Engines_KinValue(Engines(A%).kin)
-                LET kB% = Engines_KinValue(Engines(B%).kin)
+                LET kA% = Engines(A%).kin
+                LET kB% = Engines(B%).kin
                 
                 'if the engine below is of a higher genealogy, move it up
                 IF kB% > kA% THEN
@@ -262,20 +270,6 @@ SUB Engines_Enumerate()
     NEXT i
     
 END SUB
-
-'takes an engine 'kin' letter, e.g. "B" and converts it into a rank value
-'=============================================================================
-FUNCTION Engines_KinValue%(kin AS STRING * 1)
-    SELECT CASE kin
-        CASE "X": LET Engines_KinValue% = 1
-        CASE "V": LET Engines_KinValue% = 2
-        CASE "B": LET Engines_KinValue% = 3
-        CASE "Z": LET Engines_KinValue% = 4
-        CASE "G": LET Engines_KinValue% = 5
-        CASE ELSE
-            LET Engines_KinValue% = 0
-    END SELECT
-END FUNCTION
 
 'filter the engines to suit the chosen game
 '=============================================================================

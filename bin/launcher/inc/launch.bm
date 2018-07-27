@@ -4,9 +4,10 @@
 'parameters, any mods (if selected) and so forth. we need to build the
 'right command-line to do all of this
 
+'=============================================================================
 
 'NOTE: many doom engines save their config files in the 'current directory',
-'which is typically expected to be that of the executable. However, we want
+'which is typically expected to be that of the executable. however, we want
 'to separate user-data (such as save-games) from the engines. whilst we can
 'change the save directory, config files will still be dumped in the 'current
 'directory'.
@@ -14,13 +15,9 @@
 'we therefore need to change the current directory and rewrite
 'all the WAD / file paths to be relative from there!
 
-'the saves folder will contain a sub-folder for each engine,
-'and then another sub-folder for the IWAD or PWAD
-DIM SHARED DIR_SAVE$
-
 'this is the relative path from the WAD's
 'save folder back to this executable
-DIM SHARED FIX_PATH$
+DIM FIX_PATH$
 LET FIX_PATH$ = "..\..\.."
 
 'we will remember the directory of the last file
@@ -30,28 +27,115 @@ DIM SHARED DIR_PREV$
 DIM SHARED DIR_IWAD$
 DIM SHARED DIR_PWAD$
 
-'when an engine is selected, this will be the directory for it
-DIM SHARED DIR_ENGINE$
+'save file path:
+'-----------------------------------------------------------------------------
+'the "saves" folder should exist (it's part of PortaDOOM),
+'but just in case, check
+IF NOT _DIREXISTS(DIR_SAVES$) THEN
+    MKDIR (DIR_SAVES$)
+END IF
 
-'=============================================================================
+'add the save-folder name for the selected engine; there can be
+'multiple folder names and IDs for engines, such as 32/64-bit and
+'differing versions, so a common save name is provided in the INI
+DIM DIR_SAVE_ENGINE$
+LET DIR_SAVE_ENGINE$ = DIR_SAVES$ + Paths_AddSlash$(Engines_Selected.save)
 
+'does this folder exist?
+IF NOT _DIREXISTS(DIR_SAVE_ENGINE$) THEN
+    'FIXME: handle error here?
+    MKDIR (DIR_SAVE_ENGINE$)
+END IF
+
+_ECHO "DIR_ENGINE_SAVE$: " + DIR_SAVE_ENGINE$
+
+'the saves folder will contain a sub-folder for each engine (above),
+'and then another sub-folder for the IWAD or PWAD
+DIM DIR_SAVE_GAME$
+
+'if the game is using a PWAD,
+'use that name for the save folder
+IF LEN(Games_Selected.pwad) <> 0 THEN
+    LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
+        + Paths_GetFileBaseName$(Games_Selected.pwad)
+ELSE
+    'otherwise just use the IWAD name
+    LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
+        + Paths_GetFileBaseName$(Games_Selected.iwad)
+END IF
+
+'does this folder exist?
+IF NOT _DIREXISTS(DIR_SAVE_GAME$) THEN
+    'FIXME: handle error here?
+    MKDIR (DIR_SAVE_GAME$)
+END IF
+
+'ensure it ends with a slash
+'TODO: Add mod support to this
+LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
+_ECHO "DIR_SAVE_GAME$:   " + DIR_SAVE_GAME$
+
+'engine executable:
+'-----------------------------------------------------------------------------
+DIM DIR_ENGINE$
+LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.folder)
+_ECHO "DIR_ENGINE$:      " + DIR_ENGINE$
+
+'config file:
+'-----------------------------------------------------------------------------
+DIM CMD_CONFIG$
+
+'which file-extension does the engine use?
+'ZDoom-based engines use ".ini", everything else ".cfg"
+DIM cfg$
+IF Engines_Selected.kin >= KIN_Z THEN
+    LET cfg$ = ".ini"
+ELSE
+    LET cfg$ = ".cfg"
+END IF
+
+'define the default config file path, as we will need to copy this if the
+'engine's config file doesn't exist yet. note that this leaves off the
+'file extension, for now
+DIM cfg_default$
+LET cfg_default$ = DIR_CONFIG$ + "default." + _TRIM$(Engines_Selected.cfg)
+
+'was the command-line parameter given to use the default config-file?
+IF CMD_DEFAULT` THEN
+    'return the path to the default config file
+    LET CMD_CONFIG$ = cfg_default$ + cfg$
+ELSE
+    'build the path to the user's config file (for selected engine)
+    'note that this leaves off the file extension, for now
+    DIM cfg_engine$
+    LET cfg_engine$ = DIR_SAVE_ENGINE$ _
+                    + "config." + _TRIM$(Engines_Selected.cfg)
+
+    'if the user's config file doesn't exist, make a copy of the default
+    IF NOT _FILEEXISTS(cfg_engine$ + cfg$) THEN
+        'copy across the default config file
+        SHELL "COPY " _
+            + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
+            + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A"
+    END IF
+    
+    LET CMD_CONFIG$ = cfg_engine$ + cfg$
+END IF
+
+_ECHO "CMD_CONFIG$: " + CMD_CONFIG$
+
+'build command-line:
+'-----------------------------------------------------------------------------
 'use the `START` command to launch the engine without freezing up the launcher
 LET CMD$ = "START "
-'set the directory for the game engine to assume as default
-LET CMD$ = CMD$ + "/D " + CHR$(34) + DIR_SAVE$ + CHR$(34) + " "
+'set the directory for the game engine to assume as default;
+'note that from here on, all paths are relative to save folder!
+LET CMD$ = CMD$ + "/D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34) + " "
 
-'''specify the engine executable
-''LET CMD$ = CMD$ + CHR$(34) _
-''         + FIX_PATH$ + DIR_PORTS$ + Engines(engine%).folder + "\" _
-''         + Engines(engine%).exe + CHR$(34) + " "
+'specify the engine executable
+LET CMD$ = CMD$ + CHR$(34) _
+         + FIX_PATH$ + DIR_ENGINE$ + Paths_AddSlash$(Engines_Selected.exe) _
+         + CHR$(34) + " "
 
 SLEEP
 SYSTEM
-
-'return the save path to use for the currently selected engine + game
-'============================================================================
-FUNCTION Launch_GetSavePath$()
-    'save-games are separated by port (GZDoom / Zandronum &c.)
-    'and then by IWAD or PWAD (if present)
-    LET Launch_GetSavePath$ = DIR_SAVES$
-END FUNCTION

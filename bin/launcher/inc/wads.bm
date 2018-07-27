@@ -235,9 +235,9 @@ FUNCTION WADs_Find$(path$)
     LET testPath$ = DIR_WADS$ + path$
     GOSUB checkPath
     
-    'FIXME: this should be using the engines array?
-    IF DIR_ENGINE$ <> "" THEN
-        LET testPath$ = DIR_ENGINE$ + path$
+    'if an engine has been selected, check too it's folder
+    IF Engines_Selected.folder <> "" THEN
+        LET testPath$ = DIR_PORTS$ + Engines_Selected.folder + "\" + path$
         GOSUB checkPath
     END IF
     

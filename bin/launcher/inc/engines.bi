@@ -15,13 +15,19 @@ TYPE Engine
     ver AS INTEGER '.......engine's version number
     bit AS _BYTE '.........executable architecture: 32 or 64 (bit)
     vid AS _BYTE '.........renderer colour-depth, i.e. 8, 24, 32
-    kin AS STRING * 1 '....a marker to indicate the engine's genealogy
+    kin AS _BYTE '.........a marker to indicate the engine's genealogy
     cfg AS STRING * 32 '...config file ID to use
     save AS STRING * 32 '..save-folder name to use
     tags AS STRING * 128 '.comma-separated tags list the engine supports
     iwads AS STRING * 128 'semi-colon separated list of allowed IWADs
     pwads AS STRING * 128 'semi-colon separated list of PWAD file-types
 END TYPE
+
+CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla
+CONST KIN_V = 2 '"vanilla" engine; i.e. Chocolate-Doom, Crispy-Doom
+CONST KIN_B = 3 '"Boom" engine; i.e. PrBoom+, DoomRetro
+CONST KIN_Z = 4 '"ZDoom" engine; i.e. ZDoom
+CONST KIN_G = 5 '"GZDoom" engine; i.e. GZDoom, QZDoom
 
 'array that holds all the engines detected, including 'duplicates' that
 'share the same engine-id, but differ in version / CPU-type / renderer
