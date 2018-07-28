@@ -1,6 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-$CONSOLE
+$CONSOLE:ONLY
 _CONSOLE OFF
 
 'hide the main window until we have something rendered on it first
@@ -21,8 +21,6 @@ _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
 '$INCLUDE:'lib\consts.bi'
 '$INCLUDE:'lib\reg.bi'
-
-'$INCLUDE:'tui\tui.bi'
 
 '=============================================================================
 
@@ -108,17 +106,15 @@ _ECHO ""
 '=============================================================================
 _TITLE "PortaDOOM Launcher"
 
-'set graphics mode, screen size, colour and clear screen
-SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
-
-'print base UI:
-DIM SHARED ui_titlebar AS _UNSIGNED _BYTE
-DIM SHARED ui_statusbar AS _UNSIGNED _BYTE
-LET ui_titlebar = TUI_DesktopBars_Add(1, BLACK, LTGREY, _TITLE$, "")
-LET ui_statusbar = TUI_DesktopBars_Add(_HEIGHT, BLACK, LTGREY, "", "...")
-CALL TUI_Render
-
-_SCREENSHOW
+'''the default size (in char cols/rows) of the screen
+''CONST SCREEN_MODE = 0 '...text mode
+''CONST SCREEN_WIDTH = 80 '.640 width
+''CONST SCREEN_HEIGHT = 30 '480 height
+''
+'''set graphics mode, screen size, colour and clear screen
+''SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
+''
+''_SCREENSHOW
 
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
@@ -138,9 +134,6 @@ CALL Games_Select(1)
 
 'enumerate engines:
 '-----------------------------------------------------------------------------
-CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", "")
-CALL TUI_Render
-
 'search through the "ports" folder for game engines and read in their details.
 'this also builds a set of look-up tables for cross-referencing tags with
 'games and engines so that we can filter out incompatible engines
@@ -148,9 +141,6 @@ CALL Engines_Enumerate
 
 CALL Engines_Filter
 
-'clean-up UI
-CALL TUI_DesktopBars_Update(ui_statusbar, "", "")
-CALL TUI_Render
 
 SummaryScreen:
 '=============================================================================
@@ -174,5 +164,3 @@ launch:
 '$INCLUDE:'lib\strings.bm'
 '$INCLUDE:'lib\paths.bm'
 '$INCLUDE:'lib\reg.bm'
-
-'$INCLUDE:'tui\tui.bm'

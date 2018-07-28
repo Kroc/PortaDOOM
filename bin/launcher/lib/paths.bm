@@ -55,7 +55,7 @@ FUNCTION Paths_IsAbsolute(path$)
     IF LEN(path$) = 0 THEN EXIT FUNCTION
     
     'begins with a slash?
-    IF ASC(path$, 1) = ASC_BSLASH THEN
+    IF ASC(path$, 1) = 92 THEN
         LET Paths_IsAbsolute = TRUE
     
     'we don't want to check the 2nd character if there isn't one.
@@ -64,7 +64,7 @@ FUNCTION Paths_IsAbsolute(path$)
         EXIT FUNCTION
         
     'check the 2nd character for ":", e.g. "C:"
-    ELSEIF ASC(path$, 2) = ASC_COLON THEN
+    ELSEIF ASC(path$, 2) = 58 THEN
         LET Paths_IsAbsolute = TRUE
         
     END IF
@@ -81,7 +81,7 @@ FUNCTION Paths_HasExtension(path$)
     'don't be silly
     IF len_path = 0 THEN EXIT FUNCTION
     'if the path ends in a slash then it's a folder and there's no file-name
-    IF ASC(path$, len_path) = ASC_BSLASH THEN
+    IF ASC(path$, len_path) = 92 THEN
         LET Paths_HasExtension = FALSE
         EXIT FUNCTION
     END IF
@@ -91,11 +91,11 @@ FUNCTION Paths_HasExtension(path$)
     FOR z = len_path TO 1 STEP - 1
         'if we encounter a slash, we've hit the beginning of a filename,
         'there cannot be any extensions now; we allow dots in folder names
-        IF ASC(path$, z) = ASC_BSLASH THEN
+        IF ASC(path$, z) = 92 THEN
             LET Paths_HasExtension = FALSE: EXIT FUNCTION
         
         'if we encounter a dot, obviously there's an extension
-        ELSEIF ASC(path$, z) = ASC_PERIOD THEN
+        ELSEIF ASC(path$, z) = 46 THEN
             LET Paths_HasExtension = TRUE: EXIT FUNCTION
         END IF
     NEXT z
@@ -112,7 +112,7 @@ FUNCTION Paths_AddSlash$(path$)
     IF LEN(path$) = 0 THEN
         LET Paths_AddSlash$ = "\"
     
-    ELSEIF ASC(path$, LEN(path$)) <> ASC_BSLASH THEN
+    ELSEIF ASC(path$, LEN(path$)) <> 92 THEN
         LET Paths_AddSlash$ = path$ + "\"
         
     ELSE
@@ -141,7 +141,7 @@ FUNCTION Paths_GetFolderName$(path$)
     
     'this assumes that a folder always ends with a slash, otherwise it's
     'a file name. is the last character is already a slash?
-    IF ASC(path$, len_path) = ASC_BSLASH THEN
+    IF ASC(path$, len_path) = 92 THEN
         'we know the end position already,
         'skip over to finding the beginning
         LET z = len_path
@@ -150,14 +150,14 @@ FUNCTION Paths_GetFolderName$(path$)
         'due to the validation check at the beginning of the function,
         'we know for certain at least one back-slash exists
         FOR z = len_path TO 1 STEP - 1
-            IF ASC(path$, z) = ASC_BSLASH THEN EXIT FOR
+            IF ASC(path$, z) = 92 THEN EXIT FOR
         NEXT z
     END IF
     
     'we've passed the file name, walk backwards to capture the folder name
     FOR a = z - 1 TO 0 STEP - 1
         IF a = 0 THEN EXIT FOR
-        IF ASC(path$, a) = ASC_BSLASH THEN EXIT FOR
+        IF ASC(path$, a) = 92 THEN EXIT FOR
     NEXT a
     
     'if an earlier slash was not found,
@@ -182,7 +182,7 @@ FUNCTION Paths_GetFileName$(path$)
     'don't be silly
     IF len_path = 0 THEN EXIT FUNCTION
     'if the path ends in a slash then it's a folder and there's no file-name
-    IF ASC(path$, len_path) = ASC_BSLASH THEN EXIT FUNCTION
+    IF ASC(path$, len_path) = 92 THEN EXIT FUNCTION
     
     'return the input if there's no slash at all, i.e. the string is just a
     'file-name. directories MUST end with slash; use `Paths_AddSlash$` to
@@ -197,7 +197,7 @@ FUNCTION Paths_GetFileName$(path$)
     'we know for certain at least one back-slash exists
     DIM i AS _UNSIGNED LONG
     FOR i = len_path TO 1 STEP - 1
-        IF ASC(path$, i) = ASC_BSLASH THEN EXIT FOR
+        IF ASC(path$, i) = 92 THEN EXIT FOR
     NEXT i
     
     'the file name is from the last slash, forward
@@ -216,7 +216,7 @@ FUNCTION Paths_GetFileExtension$(path$)
     'don't be silly
     IF len_path = 0 THEN EXIT FUNCTION
     'if the path ends in a slash then it's a folder and there's no file-name
-    IF ASC(path$, len_path) = ASC_BSLASH THEN EXIT FUNCTION
+    IF ASC(path$, len_path) = 92 THEN EXIT FUNCTION
     
     'we want to ignore folder names that may contain periods,
     'so look for the folder slash first to isolate a file name
@@ -244,14 +244,14 @@ FUNCTION Paths_GetFileBaseName$(path$)
     'don't be silly
     IF len_path = 0 THEN EXIT FUNCTION
     'if the path ends in a slash then it's a folder and there's no file-name
-    IF ASC(path$, len_path) = ASC_BSLASH THEN EXIT FUNCTION
+    IF ASC(path$, len_path) = 92 THEN EXIT FUNCTION
     
     'walk backward through the string looking for a slash since we only want
     'the name from that point forward. if there is no slash, we'll take the
     'name as from the start of the string
     DIM a AS _UNSIGNED LONG
     FOR a = len_path - 1 TO 1 STEP - 1
-        IF ASC(path$, a) = ASC_BSLASH THEN EXIT FOR
+        IF ASC(path$, a) = 92 THEN EXIT FOR
     NEXT a
     'this is a beautiful bit of serendipity: if the slash is found, then we
     'want to start the file name after the slash, and if the slash is not
@@ -262,7 +262,7 @@ FUNCTION Paths_GetFileBaseName$(path$)
     'now walk forward looking for the dot
     DIM z AS _UNSIGNED LONG
     FOR z = a TO len_path
-        IF ASC(path$, z) = ASC_PERIOD THEN EXIT FOR
+        IF ASC(path$, z) = 46 THEN EXIT FOR
     NEXT z
     LET z = z - 1
     

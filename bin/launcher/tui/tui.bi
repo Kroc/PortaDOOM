@@ -4,18 +4,11 @@
 
 '=============================================================================
 
-'the default size (in char cols/rows) of the screen
-CONST SCREEN_MODE = 0 '...text mode
-CONST SCREEN_WIDTH = 80 '.640 width
-CONST SCREEN_HEIGHT = 30 '480 height
-
-'-----------------------------------------------------------------------------
-
 'as we can only store fixed-length strings in custom types,
 'this array acts as a pool of storage for various user-defined strings
 REDIM SHARED TUI_Strings(0 TO 0) AS STRING
 
-'=============================================================================
+'-----------------------------------------------------------------------------
 
 CONST TUI_ControlKind_None = 0
 CONST TUI_ControlKind_DesktopBar = 1

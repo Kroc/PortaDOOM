@@ -47,9 +47,6 @@ SUB Engines_Enumerate()
             _ECHO ""
             _ECHO "* " + ini_engine$
             
-            CALL TUI_DesktopBars_Update(ui_statusbar, "Enumerating Engines...", ini_engine$)
-            CALL TUI_Render
-            
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
@@ -125,9 +122,6 @@ SUB Engines_Enumerate()
     
     'prioritise engine list:
     '-------------------------------------------------------------------------
-    CALL TUI_DesktopBars_Update(ui_statusbar, "Sorting Engines...", ini_engine$)
-    CALL TUI_Render
-    
     '... given ten different versions of GZDoom, each with hardware/software
     'renderers, which is the 'best' that we should default to?
     
@@ -277,10 +271,6 @@ SUB Engines_Filter()
     'loop counter
     DIM i AS _UNSIGNED LONG
     
-    'there is no simple description for this cross-referencing process...
-    CALL TUI_DesktopBars_Update(ui_statusbar, "Reticulating Splines...", "")
-    CALL TUI_Render
-
     _ECHO "": _ECHO ""
 
     'test each engine against the game's requirements:
