@@ -5,6 +5,8 @@
 'right command-line to do all of this
 
 '=============================================================================
+'use the `START` command to launch the engine without freezing up the launcher
+LET CMD$ = "START"
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
@@ -17,8 +19,8 @@
 
 'this is the relative path from the WAD's
 'save folder back to this executable
-DIM FIX_PATH$
-LET FIX_PATH$ = "..\..\.."
+DIM SHARED FIX_PATH$
+LET FIX_PATH$ = "..\..\..\"
 
 'we will remember the directory of the last file
 '(used for finding side-by-side WADs)
@@ -27,7 +29,8 @@ DIM SHARED DIR_PREV$
 DIM SHARED DIR_IWAD$
 DIM SHARED DIR_PWAD$
 
-'save file path:
+'-----------------------------------------------------------------------------
+'[1] save game file path:
 '-----------------------------------------------------------------------------
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
@@ -46,8 +49,6 @@ IF NOT _DIREXISTS(DIR_SAVE_ENGINE$) THEN
     'FIXME: handle error here?
     MKDIR (DIR_SAVE_ENGINE$)
 END IF
-
-_ECHO "DIR_ENGINE_SAVE$: " + DIR_SAVE_ENGINE$
 
 'the saves folder will contain a sub-folder for each engine (above),
 'and then another sub-folder for the IWAD or PWAD
@@ -73,20 +74,29 @@ END IF
 'ensure it ends with a slash
 'TODO: Add mod support to this
 LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
-_ECHO "DIR_SAVE_GAME$:   " + DIR_SAVE_GAME$
 
-'engine executable:
+'set the directory for the game engine to assume as default; note that from
+'here on, all paths on the command-line are relative to save-game folder!
+LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34)
+
+'----------------------------------------------------------------------------
+'[2] engine executable:
 '-----------------------------------------------------------------------------
 DIM DIR_ENGINE$
 LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.folder)
-_ECHO "DIR_ENGINE$:      " + DIR_ENGINE$
 
-'config file:
+'add the engine executable to the command-line
+LET CMD$ = CMD$ + " " + CHR$(34) _
+         + Launch_FixPath$(DIR_ENGINE$) + RTRIM$(Engines_Selected.exe) _
+         + CHR$(34)
+
+'-----------------------------------------------------------------------------
+'[3] config file:
 '-----------------------------------------------------------------------------
 DIM CMD_CONFIG$
 
-'which file-extension does the engine use?
-'ZDoom-based engines use ".ini", everything else ".cfg"
+'which file-extension does the engine use? ZDoom-based engines
+'use ".ini", everything else ".cfg" (including DOOM64EX)
 DIM cfg$
 IF Engines_Selected.kin >= KIN_Z THEN
     LET cfg$ = ".ini"
@@ -98,44 +108,105 @@ END IF
 'engine's config file doesn't exist yet. note that this leaves off the
 'file extension, for now
 DIM cfg_default$
-LET cfg_default$ = DIR_CONFIG$ + "default." + _TRIM$(Engines_Selected.cfg)
+LET cfg_default$ = DIR_CONFIG$ + "default." + RTRIM$(Engines_Selected.cfg)
 
 'was the command-line parameter given to use the default config-file?
 IF CMD_DEFAULT` THEN
-    'return the path to the default config file
-    LET CMD_CONFIG$ = cfg_default$ + cfg$
+    'set the path to the default config file (sans-extension)
+    LET CMD_CONFIG$ = cfg_default$
 ELSE
     'build the path to the user's config file (for selected engine)
     'note that this leaves off the file extension, for now
     DIM cfg_engine$
     LET cfg_engine$ = DIR_SAVE_ENGINE$ _
-                    + "config." + _TRIM$(Engines_Selected.cfg)
+                    + "config." + RTRIM$(Engines_Selected.cfg)
 
     'if the user's config file doesn't exist, make a copy of the default
     IF NOT _FILEEXISTS(cfg_engine$ + cfg$) THEN
         'copy across the default config file
-        SHELL "COPY " _
+        'FIXME: capture error here
+        SHELL "COPY /Y " _
             + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
             + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A"
+        
+        'vanilla engines store non-original settings in an extra config file
+        IF Engines_Selected.kin = KIN_V THEN
+            'FIXME: capture error here
+            SHELL "COPY /Y " _
+                + CHR$(34) + cfg_default$ + ".extra" + cfg$ + CHR$(34) + " /A " _
+                + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A"
+        END IF
     END IF
     
-    LET CMD_CONFIG$ = cfg_engine$ + cfg$
+    LET CMD_CONFIG$ = cfg_engine$
 END IF
 
-_ECHO "CMD_CONFIG$: " + CMD_CONFIG$
+'add the command-line parameter to select the config file
+LET CMD$ = CMD$ + " -config " _
+         + CHR$(34) + Launch_FixPath$(CMD_CONFIG$) + cfg$ + CHR$(34)
 
-'build command-line:
+'vanilla engines (Chocolate-Doom, Crispy-Doom) store non-original settings
+'in an extra config file (this is why we omit the file extension until now)
+IF Engines_Selected.kin = KIN_V THEN
+    LET CMD$ = CMD$ + " -extraconfig " _
+             + CHR$(34) + FIX_PATH$ + CMD_CONFIG$ + ".extra" + cfg$ + CHR$(34)
+    
+    _ECHO " -extraconfig : " + CMD_CONFIG$ + ".extra" + cfg$
+END IF
+
+_ECHO "      -config : " + CMD_CONFIG$ + cfg$
+
 '-----------------------------------------------------------------------------
-'use the `START` command to launch the engine without freezing up the launcher
-LET CMD$ = "START "
-'set the directory for the game engine to assume as default;
-'note that from here on, all paths are relative to save folder!
-LET CMD$ = CMD$ + "/D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34) + " "
+'[4] demo playback?
+'-----------------------------------------------------------------------------
+IF LEN(CMD_DEMO$) <> 0 THEN
+    'try and find the file:
+    DIM demo$
+    'first try the special demos folder
+    LET demo$ = DIR_DEMOS$ + CMD_DEMO$
+    'if it doesn't exist there...
+    IF NOT _FILEEXISTS(demo$) THEN
+        'try the folder from which the launcher was called;
+        'e.g. if the demo file is stored alongside the PWAD
+        LET demo$ = DIR_CUR$ + CMD_DEMO$
+        IF NOT _FILEEXISTS(demo$) THEN
+            'FIXME: handle demo file missing
+        END IF
+    END IF
+    
+    'add the command-line param to play the demo
+    LET CMD$ = CMD$ + " -playdemo " _
+             + CHR$(34) + Launch_FixPath$(CMD_DEMO$) + CHR$(34)
+    _ECHO "    -playdemo : " + CMD_DEMO$
+END IF
 
-'specify the engine executable
-LET CMD$ = CMD$ + CHR$(34) _
-         + FIX_PATH$ + DIR_ENGINE$ + Paths_AddSlash$(Engines_Selected.exe) _
-         + CHR$(34) + " "
+'-----------------------------------------------------------------------------
+'[5] warp & skill:
+'-----------------------------------------------------------------------------
+'TODO
+
+'-----------------------------------------------------------------------------
+'[6] execute scripts:
+'-----------------------------------------------------------------------------
+'TODO
+
+'-----------------------------------------------------------------------------
+'[7] resolution & full-screen:
+'-----------------------------------------------------------------------------
+'TODO
+
 
 SLEEP
 SYSTEM
+
+'=============================================================================
+FUNCTION Launch_FixPath$(path$)
+    'is the path absolute?
+    IF Paths_IsAbsolute(path$) THEN
+        'even though the path is absolute, a relative path may have been
+        'appended to the end, so normalise the path regardless
+        LET Launch_FixPath$ = Paths_Canonicalize$(path$)
+    ELSE
+        LET Launch_FixPath$ = FIX_PATH$ + path$
+    END IF
+END FUNCTION

@@ -291,7 +291,7 @@ SUB Engines_Filter()
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-            IF _TRIM$(Engines(i).id) <> CMD_USE$ THEN
+            IF RTRIM$(Engines(i).id) <> CMD_USE$ THEN
                 _ECHO "": _ECHO "! no-match (id): " + Engines(i).id
                 _CONTINUE
             END IF

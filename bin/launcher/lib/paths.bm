@@ -1,5 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   Paths_Canonicalize$(path$)  -> STRING
 '   Paths_IsAbsolute(path$)     -> TRUE|FALSE
 '   Paths_HasExtension(path$)   -> TRUE|FALSE
 '   Paths_AddSlash$(path$)      -> STRING
@@ -18,6 +19,32 @@ DECLARE LIBRARY
     )
 
 END DECLARE
+
+DECLARE DYNAMIC LIBRARY "Shlwapi"
+
+    'https://docs.microsoft.com/en-gb/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea
+    FUNCTION PathCanonicalizeA& ( _
+        pszBuf AS _OFFSET, _
+        pszPath AS _OFFSET _
+    )
+    
+END DECLARE
+
+'remove ".." from paths to get to the actual destination
+'=============================================================================
+FUNCTION Paths_Canonicalize$(path$)
+    DIM buf AS STRING * 260
+    
+    IF PathCanonicalizeA&(_OFFSET(buf), _OFFSET(path$)) THEN
+        'return the new path
+        LET Paths_Canonicalize$ = RTRIM$(buf)
+    ELSE
+        'if, for whatever reason, the path would not canonicalise
+        '(too long?), return the original path, it should suffice
+        LET Paths_Canonicalize$ = path$
+    END IF
+    
+END FUNCTION
 
 'is the path absolute? i.e. "\..." or "C:\..."
 '=============================================================================
