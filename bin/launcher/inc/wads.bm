@@ -8,23 +8,13 @@
 'locate an IWAD and return its path -- handles Steam / GOG IWADs
 '=============================================================================
 FUNCTION WADs_GetIWADPath$(iwad$)
-    'has the caller provided a file-extension?
-    DIM ext$
-    LET ext$ = Paths_GetFileExtension(iwad$)
-    
+    'search for the IWAD in the usual places...
     DIM iwad_path$
+    LET iwad_path$ = WADs_Find$(iwad$)
+    'if not found, look for Steam / GOG installations...
+    IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
     
-    'if the given IWAD has an extension we only need
-    'to search for one file in the usual places
-    IF ext$ <> "" THEN
-        LET iwad_path$ = WADs_Find$(iwad$)
-        'if the IWAD was not found, we'll need to search Steam / GoG
-        IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
-    ELSE
-        'TODO
-    END IF
-    
-    ' return what we've found
+    'return what we've found
     LET WADs_GetIWADPath$ = iwad_path$
     EXIT FUNCTION
     
@@ -35,6 +25,9 @@ iwadSteamGOG:
         CASE "DOOM2.WAD": GOTO iwadDOOM2
         CASE "TNT.WAD": GOTO iwadTNT
         CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
+        CASE ELSE
+            'FIXME: handle error here
+            SYSTEM 1
     END SELECT
     
     RETURN
@@ -145,7 +138,7 @@ FUNCTION WADs_GetRegistryPath$(key$, value$, path$)
     'read the given registry key
     LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
     'not there? return blank
-    IF LEN(result$) = 0 THEN EXIT FUNCTION
+    IF result$ = "" THEN EXIT FUNCTION
     
     'add the file-path to the base path we got from the registry
     LET result$ = Paths_AddSlash$(result$) + path$

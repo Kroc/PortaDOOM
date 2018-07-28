@@ -10,4 +10,5 @@ IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 REM # compiled successfully, now run it
 launcher.exe /USE gzdoom /32 /SW /DEFAULT /IWAD DOOM2.WAD /PWAD DTWID.WAD /DEH DeHackED.deh /DEMO test.lmp /WARP 22 /SKILL 4 / CMPLVL 19
 
+ECHO: & ECHO launcher.exe terminated with status code %ERRORLEVEL%.
 PAUSE

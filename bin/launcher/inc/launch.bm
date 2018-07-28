@@ -1,10 +1,26 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'=============================================================================
 'launch the selected game, with the selected engine, with the selected
 'parameters, any mods (if selected) and so forth. we need to build the
 'right command-line to do all of this
+'
+'   [01]: save game path
+'   [02]: engine executable
+'   [03]: config file
+'   [04]: compatibility level
+'   [05]: IWAD
+'   [06]: PWAD
+'   [07]: DEH & BEX
+'   [08]: demo playback
+'   [09]: warp & skill
+'   [10]: execute scripts
+'   [11]: resolution & full-screen
 
-'=============================================================================
+_ECHO ""
+_ECHO "     PortaDOOM Launcher"
+_ECHO ""
+
 'use the `START` command to launch the engine without freezing up the launcher
 LET CMD$ = "START"
 
@@ -30,7 +46,7 @@ DIM SHARED DIR_IWAD$
 DIM SHARED DIR_PWAD$
 
 '-----------------------------------------------------------------------------
-'[1] save game file path:
+'[01] save game path:
 '-----------------------------------------------------------------------------
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
@@ -80,7 +96,7 @@ LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
 LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34)
 
 '----------------------------------------------------------------------------
-'[2] engine executable:
+'[02] engine executable:
 '-----------------------------------------------------------------------------
 DIM DIR_ENGINE$
 LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.folder)
@@ -89,9 +105,12 @@ LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.folder)
 LET CMD$ = CMD$ + " " + CHR$(34) _
          + Launch_FixPath$(DIR_ENGINE$) + RTRIM$(Engines_Selected.exe) _
          + CHR$(34)
+         
+_ECHO "         port : " + RTRIM$(Engines_Selected.title)
+_ECHO "       engine : " + DIR_ENGINE$ + RTRIM$(Engines_Selected.exe)
 
 '-----------------------------------------------------------------------------
-'[3] config file:
+'[03] config file:
 '-----------------------------------------------------------------------------
 DIM CMD_CONFIG$
 
@@ -157,7 +176,35 @@ END IF
 _ECHO "      -config : " + CMD_CONFIG$ + cfg$
 
 '-----------------------------------------------------------------------------
-'[4] demo playback?
+'[04] compatibility level:
+'-----------------------------------------------------------------------------
+IF Games_Selected.cmplvl >= 0 THEN
+    'TODO: should this only be applied to Boom-based engines?
+    LET CMD$ = CMD$ + " -complevel " + STRINT$(Games_Selected.cmplvl)
+    _ECHO "   -complevel : " + STRINT$(Games_Selected.cmplvl)
+END IF
+
+'-----------------------------------------------------------------------------
+'[05] IWAD:
+'-----------------------------------------------------------------------------
+'try and locate the IWAD path
+LET CMD_IWAD$ = WADs_GetIWADPath$(RTRIM$(Games_Selected.iwad))
+
+_ECHO "        -iwad : " + CMD_IWAD$
+
+'-----------------------------------------------------------------------------
+'[06] PWAD:
+'-----------------------------------------------------------------------------
+LET CMD_PWAD$ = RTRIM$(Games_Selected.pwad)
+
+'-----------------------------------------------------------------------------
+'[07] DEH & BEX:
+'-----------------------------------------------------------------------------
+LET CMD_DEH$ = RTRIM$(Games_Selected.deh)
+LET CMD_BEX$ = RTRIM$(Games_Selected.bex)
+
+'-----------------------------------------------------------------------------
+'[08] demo playback:
 '-----------------------------------------------------------------------------
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
@@ -181,17 +228,17 @@ IF LEN(CMD_DEMO$) <> 0 THEN
 END IF
 
 '-----------------------------------------------------------------------------
-'[5] warp & skill:
+'[09] warp & skill:
 '-----------------------------------------------------------------------------
 'TODO
 
 '-----------------------------------------------------------------------------
-'[6] execute scripts:
+'[10] execute scripts:
 '-----------------------------------------------------------------------------
 'TODO
 
 '-----------------------------------------------------------------------------
-'[7] resolution & full-screen:
+'[11] resolution & full-screen:
 '-----------------------------------------------------------------------------
 'TODO
 

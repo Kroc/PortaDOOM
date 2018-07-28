@@ -25,7 +25,6 @@ FUNCTION Reg_Query$(root_key, sub_key$, key_value$)
     IF CPU_BIT = 64 THEN
         LET mode& = KEY_WOW64_64KEY
         GOSUB query
-        _ECHO "RegQuery64: " + Reg_Query$
     END IF
     
     EXIT FUNCTION
@@ -57,8 +56,7 @@ query:
         IF l THEN
             _ECHO "! RegQueryValueExA failed. Error: 0x" + LCASE$(HEX$(l))
         ELSE
-            _ECHO "len: " + STRINT$(dataLen)
-            LET Reg_Query$ = RTRIM$(LEFT$(dataBytes, dataLen))
+            LET Reg_Query$ = RTRIM$(LEFT$(dataBytes, dataLen - 1))
         END IF
         
     ELSEIF l <> ERROR_FILE_NOT_FOUND THEN

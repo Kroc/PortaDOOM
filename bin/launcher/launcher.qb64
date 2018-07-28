@@ -1,7 +1,7 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 $CONSOLE:ONLY
-_CONSOLE OFF
+''_CONSOLE OFF
 
 'hide the main window until we have something rendered on it first
 $SCREENHIDE
@@ -140,11 +140,6 @@ CALL Games_Select(1)
 CALL Engines_Enumerate
 
 CALL Engines_Filter
-
-
-SummaryScreen:
-'=============================================================================
-REM '$INCLUDE:'inc\ui_summary.bm'
 
 launch:
 '=============================================================================
