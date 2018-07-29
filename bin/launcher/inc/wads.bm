@@ -3,6 +3,7 @@
 '   WADs_GetIWADPath$(iwad$)    -> STRING
 '   WADs_GetIWADTitle$(iwad$)   -> STRING
 '   WADs_GetIWADTag$(iwad$)     -> STRING
+'   WADs_GetPWADPath$(pwad$)    -> STRING
 '   WADs_Find(iwad$)            -> STRING
 
 'locate an IWAD and return its path -- handles Steam / GOG IWADs
@@ -182,6 +183,76 @@ FUNCTION WADs_GetIWADTags$(iwad$)
             'all other built-in IWADs run on any 'vanilla'-compatible engine
             LET WADs_GetIWADTags$ = "vanilla"
     END SELECT
+END FUNCTION
+
+'locate a PWAD and return its path -- handles Steam / GOG PWADs
+'=============================================================================
+FUNCTION WADs_GetPWADPath$(pwad$)
+    'search for the PWAD in the usual places...
+    DIM pwad_path$
+    LET pwad_path$ = WADs_Find$(pwad$)
+    'if not found, look for Steam / GOG installations...
+    IF pwad_path$ = "" THEN GOSUB findSteamGOG
+    
+    'return what we've found
+    LET WADs_GetPWADPath$ = pwad_path$
+    EXIT FUNCTION
+    
+findSteamGOG:
+    '-------------------------------------------------------------------------
+    SELECT CASE UCASE$(Paths_GetFileName$(pwad$))
+        CASE "NERVE.WAD", "NRFTL+.WAD"
+            'find "No Rest For the Living"
+            GOTO findNERVE
+            
+        CASE "ATTACK.WAD", "BLACKTWR.WAD", "BLOODSEA.WAD", "CANYON.WAD", _
+             "CATWALK.WAD", "COMBINE.WAD", "FISTULA.WAD", "GARRISON.WAD", _
+             "GERYON.WAD", "MANOR.WAD", "MEPHISTO.WAD", "MINOS.WAD", _
+             "NESSUS.WAD", "PARADOX.WAD", "SUBSPACE.WAD", "SUBTERRA.WAD", _
+             "TEETH.WAD", "TTRAP.WAD", "VESPERAS.WAD", "VIRGIL.WAD"
+            'find a WAD from The Master Levels for DOOM II
+            GOTO findMASTER
+            
+        CASE ELSE
+            'FIXME: handle error here
+            SYSTEM 1
+    END SELECT
+    
+    RETURN
+    
+findNERVE:
+    'try and find "NERVE.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET pwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\NERVE.WAD" _
+    )
+    IF LEN(pwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM 3 BFG Edition" installed?
+    LET pwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1135892318", _
+        "Path", "base\wads\NERVE.WAD" _
+    )
+    RETURN
+
+findMASTER:
+    'try and find Master Levels in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "Master Levels for DOOM II" installed?
+    LET pwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 9160", _
+        "InstallLocation", "master\wads\" + Paths_GetFileName$(pwad_path$) _
+    )
+    IF LEN(pwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM II + Final DOOM" (including Master Levels) installed?
+    LET pwad_path$ = WADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848814", _
+        "Path", "master\wads\" + Paths_GetFileName$(pwad_path$) _
+    )
+    RETURN
 END FUNCTION
 
 '=============================================================================

@@ -1,11 +1,12 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'   Paths_Canonicalize$(path$)  -> STRING
 '   Paths_IsAbsolute(path$)     -> TRUE|FALSE
-'   Paths_HasExtension(path$)   -> TRUE|FALSE
+'   Paths_Canonicalize$(path$)  -> STRING
+'   Paths_GetPath$(path$)       -> STRING
 '   Paths_AddSlash$(path$)      -> STRING
 '   Paths_GetFolderName$        -> STRING
 '   Paths_GetFileName$          -> STRING
+'   Paths_HasExtension(path$)   -> TRUE|FALSE
 '   Paths_GetFileExtension$     -> STRING
 '   Paths_GetFileBaseName$      -> STRING
 '   Paths_GetShortPath$         -> STRING
@@ -29,22 +30,6 @@ DECLARE DYNAMIC LIBRARY "Shlwapi"
     )
     
 END DECLARE
-
-'remove ".." from paths to get to the actual destination
-'=============================================================================
-FUNCTION Paths_Canonicalize$(path$)
-    DIM buf AS STRING * 260
-    
-    IF PathCanonicalizeA&(_OFFSET(buf), _OFFSET(path$)) THEN
-        'return the new path
-        LET Paths_Canonicalize$ = RTRIM$(buf)
-    ELSE
-        'if, for whatever reason, the path would not canonicalise
-        '(too long?), return the original path, it should suffice
-        LET Paths_Canonicalize$ = path$
-    END IF
-    
-END FUNCTION
 
 'is the path absolute? i.e. "\..." or "C:\..."
 '=============================================================================
@@ -70,37 +55,37 @@ FUNCTION Paths_IsAbsolute(path$)
     END IF
 END FUNCTION
 
+'remove ".." from paths to get to the actual destination
 '=============================================================================
-FUNCTION Paths_HasExtension(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
+FUNCTION Paths_Canonicalize$(path$)
+    DIM buff AS STRING * 260
     
-    DIM len_path AS _UNSIGNED LONG
-    LET len_path = LEN(path$)
-    
-    'don't be silly
-    IF len_path = 0 THEN EXIT FUNCTION
-    'if the path ends in a slash then it's a folder and there's no file-name
-    IF ASC(path$, len_path) = 92 THEN
-        LET Paths_HasExtension = FALSE
-        EXIT FUNCTION
+    IF PathCanonicalizeA&(_OFFSET(buff), _OFFSET(path$)) THEN
+        'return the new path
+        LET Paths_Canonicalize$ = RTRIM$(buff)
+    ELSE
+        'if, for whatever reason, the path would not canonicalise
+        '(too long?), return the original path, it should suffice
+        LET Paths_Canonicalize$ = path$
     END IF
     
-    'walk backwards along the string
-    DIM z AS _UNSIGNED LONG
-    FOR z = len_path TO 1 STEP - 1
-        'if we encounter a slash, we've hit the beginning of a filename,
-        'there cannot be any extensions now; we allow dots in folder names
-        IF ASC(path$, z) = 92 THEN
-            LET Paths_HasExtension = FALSE: EXIT FUNCTION
-        
-        'if we encounter a dot, obviously there's an extension
-        ELSEIF ASC(path$, z) = 46 THEN
-            LET Paths_HasExtension = TRUE: EXIT FUNCTION
-        END IF
-    NEXT z
+END FUNCTION
+
+'returns the folder-path from a file-path, i.e. remove file name if present
+'=============================================================================
+FUNCTION Paths_GetPath$(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    'don't be silly
+    IF LEN(path$) = 0 THEN EXIT FUNCTION
     
-    LET Paths_HasExtension = FALSE
+    DIM z%
+    LET z% = _INSTRREV(path$, "\")
+    'return nothing if there's no slash at all,
+    'i.e. the string is just a file-name
+    IF z% = 0 THEN EXIT FUNCTION
+    
+    LET Paths_GetPath$ = LEFT$(path$, z%)
 END FUNCTION
 
 'if there isn't, adds a slash to the end of a string
@@ -118,6 +103,7 @@ FUNCTION Paths_AddSlash$(path$)
     ELSE
         LET Paths_AddSlash$ = path$
     END IF
+    
 END FUNCTION
 
 'return the folder name from a path
@@ -202,6 +188,39 @@ FUNCTION Paths_GetFileName$(path$)
     
     'the file name is from the last slash, forward
     LET Paths_GetFileName$ = RIGHT$(path$, len_path - i)
+END FUNCTION
+
+'=============================================================================
+FUNCTION Paths_HasExtension(path$)
+    'just in case we're passed a fixed-length string
+    LET path$ = RTRIM$(path$)
+    
+    DIM len_path AS _UNSIGNED LONG
+    LET len_path = LEN(path$)
+    
+    'don't be silly
+    IF len_path = 0 THEN EXIT FUNCTION
+    'if the path ends in a slash then it's a folder and there's no file-name
+    IF ASC(path$, len_path) = 92 THEN
+        LET Paths_HasExtension = FALSE
+        EXIT FUNCTION
+    END IF
+    
+    'walk backwards along the string
+    DIM z AS _UNSIGNED LONG
+    FOR z = len_path TO 1 STEP - 1
+        'if we encounter a slash, we've hit the beginning of a filename,
+        'there cannot be any extensions now; we allow dots in folder names
+        IF ASC(path$, z) = 92 THEN
+            LET Paths_HasExtension = FALSE: EXIT FUNCTION
+        
+        'if we encounter a dot, obviously there's an extension
+        ELSEIF ASC(path$, z) = 46 THEN
+            LET Paths_HasExtension = TRUE: EXIT FUNCTION
+        END IF
+    NEXT z
+    
+    LET Paths_HasExtension = FALSE
 END FUNCTION
 
 'returns the file extension from a path, if it has a file name in it

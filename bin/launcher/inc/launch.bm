@@ -51,6 +51,7 @@ DIM SHARED DIR_PWAD$
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
 IF NOT _DIREXISTS(DIR_SAVES$) THEN
+    'TODO: handle error here?
     MKDIR (DIR_SAVES$)
 END IF
 
@@ -188,7 +189,9 @@ END IF
 '[05] IWAD:
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
+'FIXME: handle FreeDOOM replacement
 LET CMD_IWAD$ = WADs_GetIWADPath$(RTRIM$(Games_Selected.iwad))
+LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 _ECHO "        -iwad : " + CMD_IWAD$
 
@@ -196,6 +199,12 @@ _ECHO "        -iwad : " + CMD_IWAD$
 '[06] PWAD:
 '-----------------------------------------------------------------------------
 LET CMD_PWAD$ = RTRIM$(Games_Selected.pwad)
+IF CMD_PWAD$ <> "" THEN
+    LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
+    LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
+    
+    _ECHO "         pwad : " + CMD_PWAD$
+END IF
 
 '-----------------------------------------------------------------------------
 '[07] DEH & BEX:
