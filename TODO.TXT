@@ -33,6 +33,11 @@ LAUNCHER:
 
 [P3] Content:
 ================================================================================
+[ ] REKKR
+[X] InnocenceX/X2
+ -  [ ] Add option to play with PSX / Classic weapons with new launcher
+[ ] PSX Fall of Triton
+[ ] Add 3 Heures Final
 [ ] Update "Adventures of Square" to EP2
 [ ] Create pages for the speedruns so that the author notes can be displayed
 [ ] Help page to explain WAD page headers, glossary

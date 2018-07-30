@@ -1,10 +1,14 @@
 $THEME=BLUE
 $KEY:A=GOTO:Cabal Series #08
-$KEY:B=GOTO:InstaDoom
+$KEY:B=GOTO:Innocence X Series #01
+$KEY:C=GOTO:Innocence X Series #02
+$KEY:D=GOTO:InstaDoom
 
 ^C:INDEX :: I
 
 :-------------------------------------------------------------------------------
 
 - [A] *Cabal Series: Image of Evil						5 Years of Doom
-- [B] *InstaDoom										Jokes
+- [B] *Innocence X										Episodes
+- [C] *Innocence X2										Episodes
+- [D] *InstaDoom										Jokes

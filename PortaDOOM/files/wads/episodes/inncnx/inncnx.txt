@@ -1,0 +1,77 @@
+===========================================================================
+Archive Maintainer      : Update to the File.
+                          Permission has been obtained from the composer to
+                          use the tracks.
+Update to               : levels/doom2/Ports/g-i/inncnx
+Advanced engine needed  : Zdoom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Innocence X
+Filename                : inncnx.zip
+Author                  : Donnel "Jazzmaster9" Enriquez
+Email Address           : [redacted]
+
+Description             : A 10 level mapset for DooM II. This mapset was
+                          inspired by the atmosphere of Playstation Doom and
+                          Doom 64. It will feature the creepy ambient feel of
+                          Playstation DooM/Doom 64 but maintain the core
+                          gameplay of the PC version.
+
+                          Best Played through GZDoom.
+
+                          If you want the weapons to have their classic
+                          behaviour (no Recoil, etc), load this with
+                          c_weapons.wad
+
+                          Special Thanks to Aubrey Hodges for allowing me
+                          to use the Doom 64 Soundtrack for this mod.
+
+Additional Credits to   : Enjay, Scuba Steve, Kaal979, Midway, Scalliano,
+                          Eriance, osjclatchford, PRIMEVAL, wildweasel
+                          Kaiser, Agent Spork, Aubrey Hodges, Technoman,
+                          _mental_
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : C_weapons.wad (For classic Doom weapon behaviour)
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Editor(s) used          : Doom Builder, XWE, SLADE
+May Not Run With        : Non ZDoom source ports
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

@@ -1,0 +1,80 @@
+===========================================================================
+Archive Maintainer      : Update to the File.
+                          Permission has been obtained from the composer to
+                          use the tracks.
+Update to               : levels/doom2/Ports/g-i/inncnx2
+Advanced engine needed  : Zdoom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Innocence X2
+Filename                : inncnx2.zip
+Author                  : Donnel "Jazzmaster9" Enriquez
+Email Address           : [redacted]
+
+Description             : A 10 level mapset for DooM II. It is the sequel to
+                          Innocence X, This mapset was inspired by the
+                          atmosphere of Playstation Doom and Doom 64. It will
+                          feature the creepy ambient feel of Playstation
+                          DooM/Doom 64 but maintain the core gameplay of the
+                          PC version.
+
+                          Best Played through GZDoom.
+
+                          If you want the weapons to have their classic
+                          behaviour (no Recoil, etc), load this with
+                          c_weapons.wad
+
+                          Special Thanks to Aubrey Hodges for allowing to
+                          use the PSX Doom Soundtrack for this mod.
+
+Additional Credits to   : Enjay, Scuba Steve, Kaal979, Midway, Scalliano,
+                          Eriance, osjclatchford, PRIMEVAL, wildweasel
+                          Kaiser, Agent Spork, Aubrey Hodges, Technoman,
+                          mental,  Tormentor667, Vader, Monolith, Lobotomy
+                          Software, Apogee, WSJ
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : C_weapons.wad (For classic Doom weapon behaviour)
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Editor(s) used          : Doom Builder, XWE, SLADE
+May Not Run With        : Non ZDoom source ports
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

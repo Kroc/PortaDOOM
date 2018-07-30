@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+30-JUL-18:
++ Added Innocence X / X2
+
 27-JUN-18:
 * Switched to a Git Submodule for QB64
 
