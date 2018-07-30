@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'cmd.bm : read in command-line parameters
 
 'display help?
 '=============================================================================

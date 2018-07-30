@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'engines.bi : definitions for Engines (source-ports to play DOOM)
 
 'structure to store the details of an engine:
 TYPE Engine
@@ -21,6 +22,7 @@ TYPE Engine
     tags AS STRING * 128 '.comma-separated tags list the engine supports
     iwads AS STRING * 128 'semi-colon separated list of allowed IWADs
     pwads AS STRING * 128 'semi-colon separated list of PWAD file-types
+    auto AS STRING * 128 '.semi-colon separated list of WADs to always include
 END TYPE
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla

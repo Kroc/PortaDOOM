@@ -78,6 +78,8 @@ SUB Engines_Enumerate()
             LET ini_iwads$ = ReadSetting$("", ini_section$, "iwads")
             DIM ini_pwads$
             LET ini_pwads$ = ReadSetting$("", ini_section$, "pwads")
+            DIM ini_auto$
+            LET ini_auto$ = ReadSetting$("", ini_section$, "auto")
             
             'executable architecture must be either 32 or 64-bit
             IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
@@ -111,6 +113,7 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).tags = ini_tags$
             LET Engines(Engines_Count).iwads = ini_iwads$
             LET Engines(Engines_Count).pwads = ini_pwads$
+            LET Engines(Engines_Count).auto = ini_auto$
             
             LET ini_index% = ini_index% + 1
         LOOP

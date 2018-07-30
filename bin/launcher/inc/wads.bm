@@ -28,7 +28,7 @@ iwadSteamGOG:
         CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
         CASE ELSE
             'FIXME: handle error here
-            SYSTEM 1
+            ''SYSTEM 1
     END SELECT
     
     RETURN
@@ -215,7 +215,7 @@ findSteamGOG:
             
         CASE ELSE
             'FIXME: handle error here
-            SYSTEM 1
+            ''SYSTEM 1
     END SELECT
     
     RETURN

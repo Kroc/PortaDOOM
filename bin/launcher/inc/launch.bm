@@ -51,8 +51,11 @@ DIM SHARED DIR_PWAD$
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
 IF NOT _DIREXISTS(DIR_SAVES$) THEN
-    'TODO: handle error here?
+    'folder is missing? attempt to make it, but be aware
+    'of that potentially failing (read-only media?)
+    ON ERROR GOTO err_MkDir
     MKDIR (DIR_SAVES$)
+    ON ERROR GOTO 0
 END IF
 
 'add the save-folder name for the selected engine; there can be
@@ -63,8 +66,11 @@ LET DIR_SAVE_ENGINE$ = DIR_SAVES$ + Paths_AddSlash$(Engines_Selected.save)
 
 'does this folder exist?
 IF NOT _DIREXISTS(DIR_SAVE_ENGINE$) THEN
-    'FIXME: handle error here?
+    'folder is missing? attempt to make it, but be aware
+    'of that potentially failing (read-only media?)
+    ON ERROR GOTO err_MkDir
     MKDIR (DIR_SAVE_ENGINE$)
+    ON ERROR GOTO 0
 END IF
 
 'the saves folder will contain a sub-folder for each engine (above),
@@ -84,8 +90,11 @@ END IF
 
 'does this folder exist?
 IF NOT _DIREXISTS(DIR_SAVE_GAME$) THEN
-    'FIXME: handle error here?
+    'folder is missing? attempt to make it, but be aware
+    'of that potentially failing (read-only media?)
+    ON ERROR GOTO err_MkDir
     MKDIR (DIR_SAVE_GAME$)
+    ON ERROR GOTO 0
 END IF
 
 'ensure it ends with a slash
@@ -193,6 +202,8 @@ END IF
 LET CMD_IWAD$ = WADs_GetIWADPath$(RTRIM$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
+LET CMD$ = CMD$ + " -iwad " _
+         + CHR$(34) + Launch_FixPath$(CMD_IWAD$) + CHR$(34)
 _ECHO "        -iwad : " + CMD_IWAD$
 
 '-----------------------------------------------------------------------------
@@ -209,8 +220,26 @@ END IF
 '-----------------------------------------------------------------------------
 '[07] DEH & BEX:
 '-----------------------------------------------------------------------------
+'has a DEH file been specified?
 LET CMD_DEH$ = RTRIM$(Games_Selected.deh)
+IF CMD_DEH$ <> "" THEN
+    'find the DEH file
+    LET CMD_DEH$ = WADs_Find$(CMD_DEH$)
+    'add it to the command-line
+    LET CMD$ = CMD$ + " -deh " _
+             + CHR$(34) + Launch_FixPath$(CMD_DEH$) + CHR$(34)
+    'and announce
+    _ECHO "         -deh : " + CMD_DEH$
+END IF
+
 LET CMD_BEX$ = RTRIM$(Games_Selected.bex)
+IF CMD_BEX$ <> "" THEN
+    'find the BEX file
+    LET CMD_BEX$ = WADs_Find$(CMD_BEX$)
+    LET CMD$ = CMD$ + " -bex " _
+             + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
+    _ECHO "         -bex : " + CMD_BEX$
+END IF
 
 '-----------------------------------------------------------------------------
 '[08] demo playback:
@@ -252,6 +281,12 @@ END IF
 'TODO
 
 SYSTEM
+
+'=============================================================================
+
+err_MkDir:
+SYSTEM 1
+
 
 '=============================================================================
 FUNCTION Launch_FixPath$(path$)
