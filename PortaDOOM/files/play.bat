@@ -786,6 +786,15 @@ IF /I "%~1" == "gzdoom-34" (
 	SET ENGINE_DOOM64EX=0
 	SET "VER_GZDOOM=gzdoom-34"
 )
+IF /I "%~1" == "gzdoom-35" (
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_CRISPYDOOM=0
+	SET ENGINE_DOOMRETRO=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_DOOM64EX=0
+	SET "VER_GZDOOM=gzdoom-35"
+)
 REM # hardware-renderers only:
 IF /I "%~1" == "hw" (
 	REM # disable all non-hardware renderers

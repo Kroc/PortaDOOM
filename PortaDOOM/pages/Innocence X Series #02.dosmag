@@ -1,0 +1,29 @@
+$NAV=Episodes
+$KEY:P=SHELL:wads\episodes\inncnx2\play.bat
+$KEY:T=SHELL:wads\episodes\inncnx2\inncnx2.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/90561-innocence-x2-v12-now-on-idgames/
+
+:Innocence X2											(Innocence X Series)
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2016>10>11	  Author : _Jazzmaster9_
+:Levels   : *10 		   Modes : *Single
+:Requires : *zdoom		Includes : *+Sound +Music +Graphics
+:-------------------------------------------------------------------------------
+
+$KEY:X=GOTO:PlayStation DOOM
+$KEY:6=GOTO:DOOM 64
+A 10 level mapset for DooM II. This mapset was inspired by the atmosphere of *[X] PlayStation Doom* and *[6] Doom 64*. It will feature the creepy ambient feel of *PlayStation DooM* / *Doom 64* but maintain the core gameplay of the PC version.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Editor(s) used			: Doom Builder, XWE, SLADE
+*May Not Run With		: Non ZDoom source ports
+
+:Credits:
+:-------------------------------------------------------------------------------
+_Enjay_, _Scuba Steve_, _Kaal979_, _Midway_, _Scalliano_, _Eriance_, _osjclatchford_, _PRIMEVAL_, _wildweasel_, _Kaiser_, _Agent Spork_, _Aubrey Hodges_, _Technoman_, _mental_, _Tormentor667_, _Vader_, _Monolith_, _Lobotomy Software_, _Apogee_, _WSJ_
+
+Special Thanks to _Aubrey Hodges_ for allowing me to use the Doom 64 Soundtrack for this mod.

@@ -353,7 +353,7 @@ CALL :make_gzdoom "gzdoom-33" "STRIFE1.WAD"
 
 :gzdoom-34
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-34.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-34.ini" GOTO :gzdoom-35
 
 ECHO * GZDoom v3.4                DOOM.WAD
 CALL :make_gzdoom "gzdoom-34" "DOOM.WAD"
@@ -363,6 +363,19 @@ ECHO * GZDoom v3.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-34" "HEXEN.WAD"
 ECHO * GZDoom v3.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-34" "STRIFE1.WAD"
+
+:gzdoom-35
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-35.ini" GOTO :gzdoom
+
+ECHO * GZDoom v3.5                DOOM.WAD
+CALL :make_gzdoom "gzdoom-35" "DOOM.WAD"
+ECHO * GZDoom v3.5                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-35" "HERETIC.WAD"
+ECHO * GZDoom v3.5                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-35" "HEXEN.WAD"
+ECHO * GZDoom v3.5                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-35" "STRIFE1.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
@@ -562,6 +575,10 @@ REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+
+REM # disable stats collection; this might be undesirable if PortaDOOM
+REM # is being moved around multiple PCs intended for offline use
+%BIN_FART% "default.%~1.ini" "sys_statsenabled=1" "sys_statsenabled=0"
 
 REM # VSync ON
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
