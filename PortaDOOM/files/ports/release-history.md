@@ -1,3 +1,70 @@
+GZDoom 3.5.0
+--------------------------------------------------------------------------------
+*Mon Jul 30, 2018 1:49 pm*
+
+Notice: This release has been split into two. There is now a "modern" version and a "vintage" version, for older hardware. The reason for this is that some recent changes to improve performance on modern hardware resulted in quite severe slowdowns on Intel's OpenGL 2 hardware. So in order to give these users the best possible experience it was decided to provide this vintage build which adds all new non-renderer-related features with the latest state of the renderer from before the abovementioned change. The vintage version is provided thanks to the efforts of drfrag.
+
+Please note that this solution is only a temporary measure. User share of OpenGL 2 hardware had already been low when we ran our survey with GZDoom 3.3 and once this drops any further the vintage build will be discontinued. If you cannot run the main (modern) build we strongly recommend to upgrade your hardware.
+
+To get a proper baseline here this version re-enables the survey code from GZDoom 3.3 with slightly more detailed statistics. Unfortunately recent developments made the information about used graphics hardware a bit too coarse and does not really help assessing the real need and extent of providing vintage support, so this one sends a bit more detailed information about the graphics hardware being used, in particular the precise OpenGL version being used.
+You will be prompted for opt-in just as before (but your last preference will be remembered, if you ran a version that used it previously).
+
+Highlights:
+
+* (modern branch only) Fullscreen is now borderless window (which, technically, it always has been, anyhow). Removed hacks which changed the desktop resolution in order to simulate exclusive fullscreen because they were a constant stability concern.
+* (modern branch only) fixed a performance regression with the software renderer, introduced by the recent changes to the video backend in 3.4.
+* Save item statistics - Items are now saved into save games and are displayed on the statfile
+* Upgrade libADLMIDI and libOPNMIDI
+* Large number of MinGW fixes
+* add tags for all Doom and Heretic monsters for mods that reveal monster names
+* various compatibility fixes for old maps and mods
+* fixed titlepic animation
+* Custom hardware shaders now can use custom texture units
+* default to "fullscreen" display
+* fixed a potential exploit with malformed WAD files. Thanks to xanaxdev ( th0razine@ret2p.lt ) for reporting it.
+
+Details:
+
+* fixed: redirect script access to the compatflags CVARs to their internal shadow variables. This is needed so that MAPINFO settings for these flags don't get ignored.
+* enable model rendering in the software renderer
+* fixed: flag CVars in ZScript referenced wrong addresses
+* fixed: ZScript used the wrong variable for compatflags2. The variable it accessed was only the settings from the compatibility.txt lump.
+* fixed: remove ARM specific gl_es definition since it's not even really much different from the main line definition, anyhow
+* fixed generation of brightmaps for sprites. This forgot to take the added empty border for filtering improvement into account.
+* fixed: ADynamicLight's shadowmap index must be reset when loading a savegame. (this fixes lights not rendering properly when loading)
+* fixed portal restoration on revisiting level in hub. Added function to test if map is being reentered
+* (modern branch only) render refactorings and fixes, use uniform blocks for postprocessing shaders to prepare for move to vulkan
+* (modern branch only) Remove all code to handle OpenGL 2 and <3.3.
+* (modern branch only) Force render buffers to always be active
+* (modern branch only) Fullscreen is now borderless window (which, technically, it always has been, anyhow). Removed hacks which changed the desktop resolution in order to simulate exclusive fullscreen.
+* Save item statistics - Items are now saved into save games and are displayed on the statfile
+* Fixed: End of file detection in MAPINFO parser was not correct - It should check for the special "End" flag instead of trusting that if the last token was a closing brace, all was correct. This can fail if the last token in a multiline string is a brace.
+* Large number of MinGW fixes
+* Don't let DEarthquake depend on r_viewpoint. - The ticFrac value should be passed as a parameter, especially since this gets called from code that sets up r_viewpoint.
+* Fixed: DBaseStatusBar::Draw did not use its ticFrac parameter when being called from scripts - Instead it directly went to the global viewpoint again which would be inconsistent.
+* Upgrade libADLMIDI and libOPNMIDI
+* disable the wipe code entirely when a stereo3D mode is active.
+* add tags for all Doom and Heretic monsters for mods that reveal monster names
+* (Mac and Linux) fixed excess keyboard events in Cocoa and SDL backend
+* UE1 model fixes and code cleanup
+* various compatibility fixes for old maps and mods
+* player setup backdrop now uses a CC0 texture, instead of the procedural one generated from ZDoom
+* fixed titlepic animation
+* Custom hardware shaders now can use custom texture units
+* rewrite the user shader support for materials - new syntax is to create a 'Material ProcessMaterial()' function
+* re-enabled stats sending
+* (modern only) Add vid_setsize <x> <y> to adjust the window size
+* Add vid_setscale <x> <y> [bool linear] [bool fake 10:12] to adjust the virtual resolution inside the window.
+* fixed: vid_showcurrentscaling now always shows the correct window geometry and virtual scaling geometry
+* scaling code now always requires GZDoom to output at least 320x200 to prevent assertion failures
+* fixed missing decals on 3D floors with hardware renderer
+* disable any texture clamping for textures with a user shader.
+* fixed: The BossCube must account for its target being gone.
+* default to "fullscreen" display
+* fixed buffer overflow in saved game comment
+* fixed: A global variable was used to pass MeansOfDeath to ClientObituary. Now it passes this value through the intermediate Actor.Die method.
+* allow skipping optional arguments of the parent function in a virtual override definition. - This is mainly to allow retroactive addition to existing virtual functions without breaking existing content. The MeansOfDeath fix for Actor.Die would not be possible without such handling.
+
 GZDoom 3.4.0
 --------------------------------------------------------------------------------
 *Wed Jun 06, 2018 5:24 pm*

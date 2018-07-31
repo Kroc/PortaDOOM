@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+31-JUL-18:
++ Added GZDoom v3.5.0
++ Set online stats collection to off by default for GZDoom engines
+
 30-JUL-18:
 + Added Innocence X / X2
 

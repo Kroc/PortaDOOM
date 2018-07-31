@@ -4,9 +4,6 @@
 # DOSmag, our disk-zine viewer
 !DOSmag
 
-!launcher
-!launcher/**
-
 # 7Zip for producing the final slef-extracting archive
 !7za
 
