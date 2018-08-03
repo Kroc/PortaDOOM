@@ -16,7 +16,7 @@ FUNCTION WADs_GetIWADPath$(iwad$)
     IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
     
     'return what we've found
-    LET WADs_GetIWADPath$ = iwad_path$
+	LET WADs_GetIWADPath$ = iwad_path$
     EXIT FUNCTION
     
 iwadSteamGOG:
@@ -317,4 +317,35 @@ checkPath:
     LET DIR_PREV$ = Paths_AddSlash$(Paths_GetFolderName$(testPath$))
     'file found! return the valid path
     LET WADs_Find$ = testPath$
+END FUNCTION
+
+'this function, once given a list of semicolon-separated file paths will
+'return one path each time the function is called until none remain
+'=============================================================================
+FUNCTION WADs_Split$ (list$)
+    'validation: be careful of fixed-width strings
+    LET list$ = RTRIM$(list$)
+    
+    'if a list is provided, keep it for each additional call to the function
+    STATIC remaining$
+    IF list$ <> "" THEN LET remaining$ = list$
+    
+    'if no tags remain, then return nothing
+    IF remaining$ = "" THEN EXIT FUNCTION
+    
+    'find the next semicolon
+    DIM i%
+    LET i% = INSTR(1, remaining$, ";")
+    
+    'if there are no semicolons in the list, it's just one path
+    IF i% = 0 THEN
+        'return the final path
+        LET WADs_Split$ = remaining$
+        'clear the remaining list
+        LET remaining$ = ""
+    ELSE
+        'strip off the current path
+        LET WADs_Split$ = LEFT$(remaining$, i% - 1)
+        LET remaining$ = MID$(remaining$, i% + 1)
+    END IF
 END FUNCTION

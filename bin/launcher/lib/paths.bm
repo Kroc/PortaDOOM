@@ -1,9 +1,9 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 '   Paths_IsAbsolute(path$)     -> TRUE|FALSE
-'   Paths_Canonicalize$(path$)  -> STRING
 '   Paths_GetPath$(path$)       -> STRING
 '   Paths_AddSlash$(path$)      -> STRING
+'	Paths_StripSlash$(path$)	-> STRING
 '   Paths_GetFolderName$        -> STRING
 '   Paths_GetFileName$          -> STRING
 '   Paths_HasExtension(path$)   -> TRUE|FALSE
@@ -19,16 +19,6 @@ DECLARE LIBRARY
         BYVAL cchBuffer AS LONG _
     )
 
-END DECLARE
-
-DECLARE DYNAMIC LIBRARY "Shlwapi"
-
-    'https://docs.microsoft.com/en-gb/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea
-    FUNCTION PathCanonicalizeA& ( _
-        pszBuf AS _OFFSET, _
-        pszPath AS _OFFSET _
-    )
-    
 END DECLARE
 
 'is the path absolute? i.e. "\..." or "C:\..."
@@ -53,22 +43,6 @@ FUNCTION Paths_IsAbsolute(path$)
         LET Paths_IsAbsolute = TRUE
         
     END IF
-END FUNCTION
-
-'remove ".." from paths to get to the actual destination
-'=============================================================================
-FUNCTION Paths_Canonicalize$(path$)
-    DIM buff AS STRING * 260
-    
-    IF PathCanonicalizeA&(_OFFSET(buff), _OFFSET(path$)) THEN
-        'return the new path
-        LET Paths_Canonicalize$ = RTRIM$(buff)
-    ELSE
-        'if, for whatever reason, the path would not canonicalise
-        '(too long?), return the original path, it should suffice
-        LET Paths_Canonicalize$ = path$
-    END IF
-    
 END FUNCTION
 
 'returns the folder-path from a file-path, i.e. remove file name if present
@@ -104,6 +78,23 @@ FUNCTION Paths_AddSlash$(path$)
         LET Paths_AddSlash$ = path$
     END IF
     
+END FUNCTION
+
+'removes the trailing slash
+'=============================================================================
+FUNCTION Paths_StripSlash$(path$)
+	'just in case we're passed a fixed-length string
+	LET path$ = RTRIM$(path$)
+	
+	DIM len_path%
+	LET len_path% = LEN(path$)
+	
+	IF len_path% = 0 THEN EXIT FUNCTION
+	
+	IF ASC(path$, len_path%) = 92 THEN
+		LET Paths_StripSlash$ = LEFT$(path$, len_path% - 1)
+	END IF
+	
 END FUNCTION
 
 'return the folder name from a path

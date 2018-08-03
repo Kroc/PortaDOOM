@@ -10,19 +10,21 @@
 '   [03]: config file
 '   [04]: compatibility level
 '   [05]: IWAD
-'   [06]: PWAD
-'   [07]: DEH & BEX
-'   [08]: demo playback
-'   [09]: warp & skill
-'   [10]: execute scripts
-'   [11]: resolution & full-screen
+'   [06]: auto-load files
+'   [07]: PWAD
+'   [08]: DEH & BEX
+'   [09]: demo playback
+'   [10]: warp & skill
+'   [11]: execute scripts
+'   [12]: resolution & full-screen
+'   [13]: launch!
 
 _ECHO ""
 _ECHO "     PortaDOOM Launcher"
 _ECHO ""
 
 'use the `START` command to launch the engine without freezing up the launcher
-LET CMD$ = "START"
+LET CMD$ = "START " + CHR$(34) + "PortaDOOM Launcher" + CHR$(34)
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
@@ -44,6 +46,11 @@ DIM SHARED DIR_PREV$
 'other directories that will be remembered as we go
 DIM SHARED DIR_IWAD$
 DIM SHARED DIR_PWAD$
+
+'some engines require different methods of passing extra files, e.g. PWAD
+'and mods. as we go, we'll build up a list of files to include (in the right
+'order) and worry about the specific invocation at the end
+LET CMD_FILES$ = ""
 
 '-----------------------------------------------------------------------------
 '[01] save game path:
@@ -102,10 +109,11 @@ END IF
 LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
 
 'set the directory for the game engine to assume as default; note that from
-'here on, all paths on the command-line are relative to save-game folder!
-LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34)
+'here on, all paths on the command-line must be relative to save-game folder!
+LET CMD$ = CMD$ + " /D " _
+		 + CHR$(34) + Paths_StripSlash$(DIR_SAVE_GAME$) + CHR$(34)
 
-'----------------------------------------------------------------------------
+'-----------------------------------------------------------------------------
 '[02] engine executable:
 '-----------------------------------------------------------------------------
 DIM DIR_ENGINE$
@@ -207,18 +215,44 @@ LET CMD$ = CMD$ + " -iwad " _
 _ECHO "        -iwad : " + CMD_IWAD$
 
 '-----------------------------------------------------------------------------
-'[06] PWAD:
+'[06] auto-load files:
 '-----------------------------------------------------------------------------
+'any files that should be automatically included with the engine?
+'(e.g. "brightmaps.pk3", "lights.pk3")
+DIM auto_path$
+LET auto_path$ = RTRIM$(Engines_Selected.auto)
+IF auto_path$ <> "" THEN
+	'read the first file from the list
+	LET auto_path$ = WADs_Split$(auto_path$)
+	DO
+		'add the file to the ordered list to pass to the engine.
+		'note that auto-load files come before the PWAD
+		LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
+		
+		_ECHO " (auto) -file : " + DIR_ENGINE$ + auto_path$
+		
+		LET auto_path$ = WADs_Split$("")
+	LOOP WHILE auto_path$ <> ""
+END IF
+
+'-----------------------------------------------------------------------------
+'[07] PWAD:
+'-----------------------------------------------------------------------------
+'doom engines typically don't have a specific concept of a "PWAD", it's just
+'an additional file to load like any other and it's not necessarily the
+'first listed, that will likely be the auto-load files
+
 LET CMD_PWAD$ = RTRIM$(Games_Selected.pwad)
 IF CMD_PWAD$ <> "" THEN
     LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
     LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
-    
+	
+    LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
     _ECHO "         pwad : " + CMD_PWAD$
 END IF
 
 '-----------------------------------------------------------------------------
-'[07] DEH & BEX:
+'[08] DEH & BEX:
 '-----------------------------------------------------------------------------
 'has a DEH file been specified?
 LET CMD_DEH$ = RTRIM$(Games_Selected.deh)
@@ -232,17 +266,20 @@ IF CMD_DEH$ <> "" THEN
     _ECHO "         -deh : " + CMD_DEH$
 END IF
 
+'has a BEX file been specified?
 LET CMD_BEX$ = RTRIM$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
     LET CMD_BEX$ = WADs_Find$(CMD_BEX$)
+	'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
+	'and announce
     _ECHO "         -bex : " + CMD_BEX$
 END IF
 
 '-----------------------------------------------------------------------------
-'[08] demo playback:
+'[09] demo playback:
 '-----------------------------------------------------------------------------
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
@@ -266,24 +303,32 @@ IF LEN(CMD_DEMO$) <> 0 THEN
 END IF
 
 '-----------------------------------------------------------------------------
-'[09] warp & skill:
+'[10] warp & skill:
 '-----------------------------------------------------------------------------
 'TODO
 
 '-----------------------------------------------------------------------------
-'[10] execute scripts:
+'[11] execute scripts:
 '-----------------------------------------------------------------------------
 'TODO
 
 '-----------------------------------------------------------------------------
-'[11] resolution & full-screen:
+'[12] resolution & full-screen:
 '-----------------------------------------------------------------------------
+''DIM screen_width AS LONG
+''LET screen_width = _DESKTOPWIDTH
+''DIM screen_height AS LONG
+''LET screen_height = _DESKTOPHEIGHT
+''_ECHO "       -width :" + STR$(screen_width) + "  -height :" + STR$(screen_height)
+
 'TODO
 
 '-----------------------------------------------------------------------------
-'[12] launch!
+'[13] launch!
 '-----------------------------------------------------------------------------
-SHELL CMD$
+''SHELL CMD$
+_ECHO ""
+_ECHO CMD$
 
 SYSTEM
 
@@ -296,14 +341,13 @@ _ECHO ""
 SYSTEM 1
 
 
+'correct a relative path from the save-game folder
 '=============================================================================
 FUNCTION Launch_FixPath$(path$)
-    'is the path absolute?
-    IF Paths_IsAbsolute(path$) THEN
-        'even though the path is absolute, a relative path may have been
-        'appended to the end, so normalise the path regardless
-        LET Launch_FixPath$ = Paths_Canonicalize$(path$)
-    ELSE
+    'is the path relative?
+    IF NOT Paths_IsAbsolute(path$) THEN
         LET Launch_FixPath$ = FIX_PATH$ + path$
+	ELSE
+		LET Launch_FixPath$ = path$
     END IF
 END FUNCTION

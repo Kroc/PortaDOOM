@@ -43,6 +43,7 @@ DIM SHARED CMD_WARP$ '...episode/map number to warp to
 DIM SHARED CMD_SKILL$ '..skill level number
 DIM SHARED CMD_CMPLVL$ '.compatibility level
 DIM SHARED CMD_EXEC$ '...extra script to execute
+DIM SHARED CMD_FILES$ '..list of extra files to include
 
 DIM cmd_hasGame` '.......flag, define game from command-line
 
@@ -50,7 +51,6 @@ DIM cmd_hasGame` '.......flag, define game from command-line
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
-        'just capture the param values, we will parse & validate later
         CASE "/USE"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
@@ -125,16 +125,32 @@ DO WHILE COMMAND$(i) <> ""
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
             
         CASE "--"
-            'FIXME: handle file list
-            
+            'once the 'end-of-command' marker is encountered, everything
+			'that follows is a WAD file to be given to the engine; this
+			'implies that a game is to be defined
+			LET cmd_hasGame` = TRUE
+            'read in and append the remaining params
+			LET i = i + 1
+			DO WHILE COMMAND$(i) <> ""
+				LET CMD_FILES$ = CMD_FILES$ + COMMAND$(i) + ";"
+			LOOP
+			'cannot process any other commands
+			EXIT DO
+			
         CASE ELSE
             'if an INI file is given, load the game definitions from it
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
                 'attempt to locate the INI file
-                'FIXME: handle error
+                'FIXME: handle file-not-found error
                 Games_EnumerateINI(COMMAND$(i))
+			ELSE
+				'no other command / file is allowed until the
+				'end-of-command marker is encountered "--"
+				_ECHO ""
+				_ECHO "ERROR: Invalid parameters!"
+				_ECHO ""
+				SYSTEM 1
             END IF
-            'FIXME: invalid param?
     END SELECT
     LET i = i + 1
 LOOP
@@ -163,7 +179,7 @@ IF cmd_hasGame` THEN
     LET cmplvl$ = CMD_CMPLVL$
     
     CALL Games_Add ( _
-        "cmd", title$, CMD_IWAD$, CMD_PWAD$, cmplvl$, deh$, bex$, _
-        tags$, vid$ _
+        "cmd", title$, cmplvl$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
+		deh$, bex$, tags$, vid$ _
     )
 END IF

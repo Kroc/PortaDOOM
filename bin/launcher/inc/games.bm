@@ -50,12 +50,14 @@ readINI:
         LET ini_section$ = "settings." + game_id$
         DIM ini_title$
         LET ini_title$ = ReadSetting$("", ini_section$, "title")
+		DIM ini_cmplvl$
+        LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
         DIM ini_iwad$
         LET ini_iwad$ = ReadSetting$("", ini_section$, "iwad")
         DIM ini_pwad$
         LET ini_pwad$ = ReadSetting$("", ini_section$, "pwad")
-        DIM ini_cmplvl$
-        LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
+		DIM ini_files$
+		LET ini_files$ = ReadSetting$("", ini_section$, "files")
         DIM ini_deh$
         LET ini_deh$ = ReadSetting$("", ini_section$, "deh")
         DIM ini_bex$
@@ -66,8 +68,9 @@ readINI:
         LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
         
         CALL Games_Add( _
-            game_id$, ini_title$, _
-            ini_iwad$, ini_pwad$, ini_cmplvl$, ini_deh$, ini_bex$, _
+            game_id$, ini_title$, ini_cmplvl$, _
+            ini_iwad$, ini_pwad$, ini_files$, _
+			ini_deh$, ini_bex$, _
             ini_tags$, ini_vid$ _
         )
     LOOP
@@ -75,7 +78,7 @@ END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, iwad$, pwad$, cmplvl$, deh$, bex$, tags$, vid$ _
+    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid$ _
 )
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
@@ -84,9 +87,10 @@ SUB Games_Add ( _
     
     _ECHO "* GAME #" + STRINT$(Games_Count) + ": " + id$
     IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
+	IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
     IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
     IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
-    IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
+	IF files$ <> "" THEN _ECHO "- " + id$ + ".files" + CHR$(9) + files$
     IF deh$ <> "" THEN _ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
     IF bex$ <> "" THEN _ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
     IF tags$ <> "" THEN _ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
@@ -97,13 +101,14 @@ SUB Games_Add ( _
     
     'no problems? write the data into the engine list
     LET Games(Games_Count).title = title$
-    LET Games(Games_Count).iwad = iwad$
-    LET Games(Games_Count).pwad = pwad$
-    IF cmplvl$ = "" THEN
+	IF cmplvl$ = "" THEN
         LET Games(Games_Count).cmplvl = -1
     ELSE
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
+    LET Games(Games_Count).iwad = iwad$
+    LET Games(Games_Count).pwad = pwad$
+	LET Games(Games_Count).files = files$
     LET Games(Games_Count).deh = deh$
     LET Games(Games_Count).bex = bex$
     LET Games(Games_Count).tags = tags$

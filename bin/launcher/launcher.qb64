@@ -1,7 +1,7 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-$CONSOLE:ONLY
-''_CONSOLE OFF
+$CONSOLE
+_CONSOLE OFF
 
 'hide the main window until we have something rendered on it first
 $SCREENHIDE
