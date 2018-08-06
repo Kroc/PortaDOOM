@@ -386,7 +386,7 @@ EXIT /B
 
 :do_dosmag_pull
 REM ============================================================================
-REM # updates DOSmag from the GitLab repo
+REM # updates DOSmag from the GitHub repo
 
 REM # TODO: check for existence of git
 
@@ -397,7 +397,7 @@ ECHO:
 
 git subtree pull --prefix DOSmag --squash dosmag master
 
-COPY /Y "DOSmag\DOSmag.exe" PortaDOOM\PortaDOOM.exe  >NUL
+COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"  >NUL
 
 ECHO:
 PAUSE
@@ -410,7 +410,7 @@ CLS
 ECHO Pushing DOSmag changes to GitHub:
 ECHO:
 
-git subtree push --prefix bin/DOSmag dosmag master
+git subtree push --prefix DOSmag dosmag master
 
 ECHO:
 PAUSE
