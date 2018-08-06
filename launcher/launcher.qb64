@@ -73,7 +73,7 @@ LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 
 IF Paths_GetFolderName$(DIR_EXE$) = "launcher" THEN
     'change directory to the expected location
-    CHDIR "..\..\PortaDOOM\files"
+    CHDIR "..\PortaDOOM\files"
     LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 END IF
 
