@@ -1,0 +1,444 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'prints a binary string to screen
+'=============================================================================
+SUB BINSTR.Print (text$)
+    
+    DIM FStates(0 TO 255) AS _UNSIGNED _BYTE: DIM FState AS _UNSIGNED _BYTE
+    DIM BStates(0 TO 255) AS _UNSIGNED _BYTE: DIM BState AS _UNSIGNED _BYTE
+    DIM XStates(0 TO 255) AS _UNSIGNED _BYTE: DIM XState AS _UNSIGNED _BYTE
+    DIM YStates(0 TO 255) AS _UNSIGNED _BYTE: DIM YState AS _UNSIGNED _BYTE
+    'capture the current cursor state when printing begins
+    GOSUB PushFState: GOSUB PushBState
+    GOSUB PushYState: GOSUB PushXState
+    'saved X & Y states are separate from cursor states
+    DIM CRSRStates(0 TO 255, 0 TO 1) AS _UNSIGNED _BYTE
+    DIM CRSRState AS _UNSIGNED _BYTE
+    GOSUB PushCRSRState
+    
+    'the left-margin defaults to the current cursor position
+    DIM LStates(0 TO 255) AS _UNSIGNED _BYTE: DIM LState AS _UNSIGNED _BYTE
+    LET LStates(LState) = POS(0)
+    
+    '-------------------------------------------------------------------------
+    
+    DIM strlen%
+    LET strlen% = LEN(text$)
+    
+    DIM i%, char~%%, cmd~%%
+    DIM value%
+    DIM movx%%, movy%%
+    
+    'walk the string
+    FOR i% = 1 TO strlen%
+        LET char~%% = ASC(text$, i%)
+        
+        'escape marker?
+        IF char~%% = ASC_NBSP THEN
+            'next character will be the command
+            LET i% = i% + 1
+            LET cmd~%% = ASC(text$, i%)
+            SELECT CASE cmd~%%
+                
+                CASE BINSTR_COLOR '= set colours
+                    '---------------------------------------------------------
+                    'read the value byte
+                    LET value% = ASC(text$, i% + 1)
+                    'remember the current colours before changing them
+                    GOSUB PushFState
+                    GOSUB PushBState
+                    'set the colour:
+                    'bits 1-4 = foreground (0-15) + bit 5 (+16) for blinking
+                    'bits 6-8 = background (0-7)
+                    COLOR (value% AND 31), (value% AND 224) \ 32
+                    'skip over the processed command
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_FORE '= set foreground only
+                    '---------------------------------------------------------
+                    'read the value byte
+                    LET value% = ASC(text$, i% + 1)
+                    'remember the current colour before changing it
+                    GOSUB PushFState
+                    'set the colour:
+                    'bits 1-4 = foreground (0-15) + bit 5 (+16) for blinking
+                    COLOR (value% AND 31)
+                    'skip over the processed command
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_BACK '= set background only
+                    '---------------------------------------------------------
+                    'read the value byte
+                    LET value% = ASC(text$, i% + 1)
+                    'remember the current colour before changing it
+                    GOSUB PushBState
+                    'set the colour:
+                    'bits 6-8 = background (0-7)
+                    COLOR , (value% AND 224) \ 32
+                    'skip over the processed command
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_RFORE '= restore previous foreground colour
+                    '---------------------------------------------------------
+                    GOSUB PopFState
+                    
+                CASE BINSTR_RBACK '= restore previous background colour
+                    '---------------------------------------------------------
+                    GOSUB PopBState
+                
+                CASE BINSTR_SETY '=set cursor row
+                    '---------------------------------------------------------
+                    'read in the data byte with the row number
+                    DIM sety~%%
+                    LET sety~%% = ASC(text$, i% + 1)
+                    '"0" is the same as "1"
+                    IF sety~%% = 0 THEN sety~%% = 1
+                    'move the cursor relative to the original print position
+                    LOCATE YStates(0) + sety~%% - 1
+                    'skip over the data byte
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_SETX '=set cursor column
+                    '---------------------------------------------------------
+                    'read in the data byte with the column number
+                    DIM setx~%%
+                    LET setx~%% = ASC(text$, i% + 1)
+                    '"0" is the same as "1"
+                    IF setx~%% = 0 THEN setx~%% = 1
+                    'move the cursor relative to the original print position
+                    LOCATE , XStates(0) + setx~%% - 1
+                    'skip over the data byte
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_MOVY '= move cursor vertically
+                    '---------------------------------------------------------
+                    'convert unsigned byte (0-255) to signed (-127 to 128)
+                    LET movy%% = ASC(text$, i% + 1)
+                    'move the cursor vertically from current position
+                    LOCATE CSRLIN + movy%%
+                    'skip over the data byte
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_MOVX '= move cursor horizontally
+                    '---------------------------------------------------------
+                    'convert unsigned byte (0-255) to signed (-127 to 128)
+                    LET movx%% = ASC(text$, i% + 1)
+                    'move the cursor horizontally from current position
+                    LOCATE , POS(0) + movx%%
+                    'skip over the processed command
+                    LET i% = i% + 1
+                    
+                CASE BINSTR_MOVE '= move cursor horizontally and vertically
+                    '---------------------------------------------------------
+                    'convert unsigned bytes (0-255) to signed (-127 to 128)
+                    LET movy%% = ASC(text$, i% + 1)
+                    LET movx%% = ASC(text$, i% + 2)
+                    'move the cursor from current position
+                    LOCATE CSRLIN + movy%%, POS(0) + movx%%
+                    'skip over the processed command
+                    LET i% = i% + 2
+                    
+                CASE BINSTR_SVPOS: GOSUB PushCRSRState
+                CASE BINSTR_SAVEY: GOSUB PushYState
+                CASE BINSTR_SAVEX: GOSUB PushXState
+                    
+                CASE BINSTR_LDPOS: GOSUB PopCRSRState
+                CASE BINSTR_LOADY: GOSUB PopYState
+                CASE BINSTR_LOADX: GOSUB PopXState
+                
+                CASE BINSTR_SAVEL: GOSUB PushLState
+                CASE BINSTR_LOADL: GOSUB PopLState
+                
+                CASE BINSTR_NLINE '= carriage return, new line
+                    '---------------------------------------------------------
+                    'move the cursor to the next line,
+                    'starting at the left margin
+                    LOCATE CSRLIN + 1, LStates(LState)
+                    
+                CASE BINSTR_PRINT '= shadow characters
+                    '---------------------------------------------------------
+                    'read the value byte
+                    LET i% = i% + 1
+                    LET value% = ASC(text$, i%)
+                    'capture the current colours
+                    GOSUB PushFState
+                    GOSUB PushBState
+                    
+                    DEF SEG = &HB800
+                    
+                    'how many characters to reprint?
+                    DIM n%
+                    FOR n% = 1 TO value%
+                        'calculate the screen address
+                        DIM addr~%, fgbg~%%
+                        LET addr~% = ((CSRLIN - 1) * _WIDTH * 2) _
+                                   + (POS(1) * 2)
+                        
+                        'read the ASCII code, and the colours
+                        LET char~%% = PEEK(addr~%)
+                        LET fgbg~%% = PEEK(addr~% + 1)
+                        
+                        'extract the foreground / background colours
+                        DIM f~%%, b~%%, k~%%
+                        LET f~%% = fgbg~%% AND 15
+                        LET b~%% = fgbg~%% \ 16
+                        
+                        'if the background is black, the text will be black
+                        IF b~%% = 0 THEN
+                            LET f~%% = 0
+                        ELSE
+                            'darken the text colours
+                            LET b~%% = 0
+                            SELECT CASE f~%%
+                                CASE 0, 8: LET f~%% = 0
+                                CASE 1 TO 7: LET f~%% = 8
+                                CASE 9: LET f~%% = 1 ' blue
+                                CASE 10: LET f~%% = 2 'green
+                                CASE 11: LET f~%% = 3 'cyan
+                                CASE 12: LET f~%% = 4 'red
+                                CASE 13: LET f~%% = 5 'magenta
+                                CASE 14: LET f~%% = 6 'yellow
+                                CASE 15: LET f~%% = 8 'white
+                            END SELECT
+                            'blinking?
+                            IF fgbg~%% AND 128 THEN LET f~%% = f~%% + 16
+                        END IF
+                        COLOR f~%%, b~%%
+                        PRINT CHR$(char~%%);
+                    NEXT
+                    
+                    DEF SEG
+                    
+                    GOSUB PopFState
+                    GOSUB PopBState
+                    
+                CASE ELSE
+                    SCREEN 0: COLOR 1, 0: CLS
+                    PRINT "Invalid binary command: " + STRINT$(ASC(text$, i% + 1))
+                    BEEP: SLEEP: EXIT SUB
+            END SELECT
+        ELSE
+            'print the character and continue
+            PRINT CHR$(char~%%);
+        END IF
+    NEXT
+    EXIT SUB
+    
+    PushFState:
+    '-------------------------------------------------------------------------
+    'save the current foreground colour
+    LET FStates(FState) = _DEFAULTCOLOR
+    LET FState = FState + 1
+    RETURN
+    
+    PopFState:
+    '-------------------------------------------------------------------------
+    'restore the previous foreground colour
+    LET FState = FState - 1
+    COLOR FStates(FState)
+    RETURN
+    
+    PushBState:
+    '-------------------------------------------------------------------------
+    'save the current background colour
+    LET BStates(BState) = _BACKGROUNDCOLOR
+    LET BState = BState + 1
+    RETURN
+    
+    PopBState:
+    '-------------------------------------------------------------------------
+    'restore the previous background colour
+    LET BState = BState - 1
+    COLOR , BStates(BState)
+    RETURN
+    
+    PushYState:
+    '-------------------------------------------------------------------------
+    'save the current cursor Y-position
+    LET YStates(YState) = CSRLIN
+    LET YState = YState + 1
+    RETURN
+    
+    PopYState:
+    '-------------------------------------------------------------------------
+    'restore previous cursor row
+    LET YState = YState - 1
+    LOCATE YStates(YState)
+    RETURN
+    
+    PushXState:
+    '-------------------------------------------------------------------------
+    'save the current cursor X-position
+    LET XStates(XState) = POS(0)
+    LET XState = XState + 1
+    RETURN
+    
+    PopXState:
+    '-------------------------------------------------------------------------
+    'restore previous cursor column
+    LET XState = XState - 1
+    LOCATE , XStates(XState)
+    RETURN
+    
+    PushCRSRState:
+    '-------------------------------------------------------------------------
+    'save the current cursor location
+    LET CRSRStates(CRSRState, 0) = CSRLIN
+    LET CRSRStates(CRSRState, 1) = POS(0)
+    LET CRSRState = CRSRState + 1
+    RETURN
+    
+    PopCRSRState:
+    '-------------------------------------------------------------------------
+    'restore previous cursor location
+    LET CRSRState = CRSRState - 1
+    LOCATE CRSRStates(CRSRState, 0), CRSRStates(CRSRState, 1)
+    RETURN
+    
+    PushLState:
+    '-------------------------------------------------------------------------
+    'save the current cursor X-position as the left-margin
+    LET LState = LState + 1
+    LET LStates(LState) = POS(0)
+    RETURN
+    
+    PopLState:
+    '-------------------------------------------------------------------------
+    'restore previous left-margin value -- does not move cursor!
+    LET LState = LState - 1
+    RETURN
+    
+END SUB
+
+'helper function to build a binary color code
+'=============================================================================
+FUNCTION BINSTR.ESC_COLOR$ (F%, B%)
+    'foreground colour in bit 1-5 & background colour in bits 6-8
+    LET BINSTR.ESC_COLOR$ = CHR$(BINSTR_ESC) _
+        + CHR$(BINSTR_COLOR) + CHR$((F% AND 31) + ((B% AND 7) * 32))
+END FUNCTION
+
+'helper function that generates a foreground-colour command
+'=============================================================================
+FUNCTION BINSTR.ESC_FORE$ (F%)
+    LET BINSTR.ESC_FORE$ = CHR$(BINSTR_ESC) _
+        + CHR$(BINSTR_FORE) + CHR$(F% AND 31)
+END FUNCTION
+
+'helper function that generates a background-colour command
+'=============================================================================
+FUNCTION BINSTR.ESC_BACK$ (B%)
+    LET BINSTR.ESC_BACK$ = CHR$(BINSTR_ESC) _
+        + CHR$(BINSTR_BACK) + CHR$((B% AND 7) * 32)
+END FUNCTION
+
+'generates a command to restore the previous foreground colour
+'=============================================================================
+FUNCTION BINSTR.ESC_RFORE$ ()
+    LET BINSTR.ESC_RFORE$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_RFORE)
+END FUNCTION
+
+'generates a command to restore the previous background colour
+'=============================================================================
+FUNCTION BINSTR.ESC_RBACK$ ()
+    LET BINSTR.ESC_RBACK$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_RBACK)
+END FUNCTION
+
+'generate a command to set the row to a specific offset from print position
+'=============================================================================
+FUNCTION BINSTR.ESC_SETY$ (row~%%)
+    LET BINSTR.ESC_SETY$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SETY) _
+        + CHR$(row~%%)
+END FUNCTION
+
+'generate a command to set the column to a specific offset from print position
+'=============================================================================
+FUNCTION BINSTR.ESC_SETX$ (col~%%)
+    LET BINSTR.ESC_SETX$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SETX) _
+        + CHR$(col~%%)
+END FUNCTION
+
+'helper function that generates a vertical cursor movement command
+'=============================================================================
+FUNCTION BINSTR.ESC_MOVY$ (rows%%)
+    'convert from signed byte (-127 to 128) to unsigned (0-255)
+    'QB64 doesn't care about under/overflows so this maps correctly
+    DIM mov~%%
+    LET mov~%% = rows%%
+    'the `Print` routine will decode the ASCII code back into a signed byte
+    LET BINSTR.ESC_MOVY$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_MOVY) _
+        + CHR$(mov~%%)
+END FUNCTION
+
+'helper function that generates a horizontal cursor movement command
+'=============================================================================
+FUNCTION BINSTR.ESC_MOVX$ (cols%%)
+    'convert from signed byte (-127 to 128) to unsigned (0-255)
+    'QB64 doesn't care about under/overflows so this maps correctly
+    DIM mov~%%
+    LET mov~%% = cols%%
+    'the `Print` routine will decode the ASCII code back into a signed byte
+    LET BINSTR.ESC_MOVX$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_MOVX) _
+        + CHR$(mov~%%)
+END FUNCTION
+
+'helper function that generates a command to save the cursor Y-position
+'=============================================================================
+FUNCTION BINSTR.ESC_SAVEY$ ()
+    LET BINSTR.ESC_SAVEY$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SAVEY)
+END FUNCTION
+
+'helper function that generates a command to save the cursor X-position
+'=============================================================================
+FUNCTION BINSTR.ESC_SAVEX$ ()
+    LET BINSTR.ESC_SAVEX$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SAVEX)
+END FUNCTION
+
+'generates a command to load previously saved cursor Y-position
+'=============================================================================
+FUNCTION BINSTR.ESC_LOADY$ ()
+    LET BINSTR.ESC_LOADY$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_LOADY)
+END FUNCTION
+
+'generates a command to load the previously saved cursor X-position
+'=============================================================================
+FUNCTION BINSTR.ESC_LOADX$ ()
+    LET BINSTR.ESC_LOADX$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_LOADX)
+END FUNCTION
+
+'generates a command to save the current cursor location (X+Y)
+'=============================================================================
+FUNCTION BINSTR.ESC_SVPOS$ ()
+    LET BINSTR.ESC_SVPOS$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SVPOS)
+END FUNCTION
+
+'generates a command to restore the cursor to the previous location (X+Y)
+'=============================================================================
+FUNCTION BINSTR.ESC_LDPOS$ ()
+    LET BINSTR.ESC_LDPOS$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_LDPOS)
+END FUNCTION
+
+'helper function that generates a command to set the left-margin
+'=============================================================================
+FUNCTION BINSTR.ESC_SAVEL$ ()
+    LET BINSTR.ESC_SAVEL$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_SAVEL)
+END FUNCTION
+
+'generates a command to restore the previous left-margin
+'=============================================================================
+FUNCTION BINSTR.ESC_LOADL$ ()
+    LET BINSTR.ESC_LOADL$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_LOADL)
+END FUNCTION
+
+'generate a new-line command
+'=============================================================================
+FUNCTION BINSTR.ESC_NLINE$ ()
+    LET BINSTR.ESC_NLINE$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_NLINE)
+END FUNCTION
+
+'generates a command to reprint a number of characters
+'=============================================================================
+FUNCTION BINSTR.ESC_PRINT$ (n%%)
+    LET BINSTR.ESC_PRINT$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_PRINT) _
+        + CHR$(n%%)
+END FUNCTION
