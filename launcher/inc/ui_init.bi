@@ -25,6 +25,9 @@ $CONSOLE:ONLY
 'many thanks Fellippe Heitor for implementing this!
 ''_ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
+'put a name on this thing
+_TITLE "PortaDOOM Launcher"
+
 '''set graphics mode, screen size, colour and clear screen
 ''SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
 ''_SCREENSHOW

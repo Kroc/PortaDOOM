@@ -53,6 +53,12 @@ LAUNCHER:
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] "SHELL" action improvements:
+ -  [ ] add an action for launching files, rather than executing commands,
+        i.e. verify the file exists before launching
+ -  [ ] use `_DONTWAIT`
+ -  [ ] change to the directory of the file being launched.
+        this will do away with the need for "%~dp0" in "play.bat" files
 [ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
 [X] Icon for launcher.exe
  -  [ ] extra sizes: 20, 64, 96?
@@ -73,7 +79,6 @@ LAUNCHER:
 [ ] "Shadow of the Wool Ball" and "Blade of Agony" are IWADs,
     so require own configuration (set defaults script, GZDoom 3.2+)
 [ ] dosmag: "^_^" not escaping properly
-[ ] dosmag: Trap ALT+ENTER and override built in fullscreen switch with our own
     http://www.qb64.net/forum/index.php?topic=12306.msg108013#msg108013
 [ ] dosmag: Can we fix mousewheel scrolling with:
     http://www.qb64.net/wiki/index.php/Controller_Devices

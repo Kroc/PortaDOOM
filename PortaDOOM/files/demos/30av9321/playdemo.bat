@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\doom.bat" /USE prboom /IWAD DOOM2.WAD /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO 30av9321.lmp /CMPLVL 2
+@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom /IWAD DOOM2.WAD /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO 30av9321.lmp /CMPLVL 2

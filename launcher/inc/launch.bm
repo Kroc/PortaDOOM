@@ -125,6 +125,7 @@ LET CMD$ = CMD$ + " " + CHR$(34) _
          
 _ECHO "         port : " + RTRIM$(Engines_Selected.title)
 _ECHO "       engine : " + DIR_ENGINE$ + RTRIM$(Engines_Selected.exe)
+_ECHO ""
 
 '-----------------------------------------------------------------------------
 '[03] config file:
@@ -302,30 +303,60 @@ IF LEN(CMD_DEMO$) <> 0 THEN
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
-             + CHR$(34) + Launch_FixPath$(CMD_DEMO$) + CHR$(34)
-    _ECHO "    -playdemo : " + CMD_DEMO$
+             + CHR$(34) + Launch_FixPath$(demo$) + CHR$(34)
+    _ECHO "    -playdemo : " + demo$
 END IF
 
 '-----------------------------------------------------------------------------
 '[10] warp & skill:
 '-----------------------------------------------------------------------------
 'TODO
+IF CMD_WARP$ <> "" THEN
+	_ECHO ""
+	_ECHO "ERROR: /WARP unimplemented!"
+	_ECHO ""
+	SYSTEM 1
+END IF
+
+'TODO
+IF CMD_SKILL$ <> "" THEN
+	_ECHO ""
+	_ECHO "ERROR: /SKILL unimplemented!"
+	_ECHO ""
+	SYSTEM 1
+END IF
 
 '-----------------------------------------------------------------------------
 '[11] execute scripts:
 '-----------------------------------------------------------------------------
 'TODO
+IF CMD_EXEC$ <> "" THEN
+	_ECHO ""
+	_ECHO "ERROR: /EXEC unimplemented!"
+	_ECHO ""
+	SYSTEM 1
+END IF
 
 '-----------------------------------------------------------------------------
 '[12] resolution & full-screen:
 '-----------------------------------------------------------------------------
-''DIM screen_width AS LONG
-''LET screen_width = _DESKTOPWIDTH
-''DIM screen_height AS LONG
-''LET screen_height = _DESKTOPHEIGHT
-''_ECHO "       -width :" + STR$(screen_width) + "  -height :" + STR$(screen_height)
+'the full-screen parameter varies by engine-type;
+'ZDoom-based engines use `+fullscreen`:
+IF Engines_Selected.kin = KIN_Z THEN
+	LET CMD$ = CMD$ + " +fullscreen"
+ELSE
+	LET CMD$ = CMD$ + " -fullscreen"
+END IF
 
-'TODO
+DIM screen_width AS LONG
+LET screen_width = _DESKTOPWIDTH
+DIM screen_height AS LONG
+LET screen_height = _DESKTOPHEIGHT
+LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
+LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
+
+_ECHO "       -width :" + STR$(screen_width) _
+    + "  -height :" + STR$(screen_height)
 
 '-----------------------------------------------------------------------------
 '[13] launch!
@@ -334,7 +365,8 @@ _ECHO ""
 _ECHO CMD$
 _ECHO ""
 
-''SHELL CMD$
+SHELL "pause"
+SHELL CMD$
 
 SYSTEM
 
@@ -357,6 +389,8 @@ FUNCTION Launch_FixPath$(path$)
     IF NOT Paths_IsAbsolute(path$) THEN
         LET Launch_FixPath$ = FIX_PATH$ + path$
 	ELSE
+		'TODO: if the path is a sub-folder of PortaDOOM,
+		'      convert it to relative (and fix)
 		LET Launch_FixPath$ = path$
     END IF
 END FUNCTION

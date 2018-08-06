@@ -3,12 +3,12 @@
 REM # switch to the directory of this script
 PUSHD "%~dp0"
 REM # compile "launcher.exe"
-..\bin\qb64\qb64.exe -x -e -o "..\..\launcher\launcher.exe" "..\..\launcher\launcher.qb64"
+..\bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\launcher\launcher.qb64"
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
 REM # compiled successfully, now run it
-launcher.exe /IWAD DOOM2.WAD
+..\PortaDOOM\files\launcher.exe /IWAD DOOM2.WAD
 
 ECHO: & ECHO launcher.exe terminated with status code %ERRORLEVEL%.
 PAUSE

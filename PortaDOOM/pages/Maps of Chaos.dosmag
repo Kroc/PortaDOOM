@@ -1,8 +1,8 @@
 $NAV=MegaWADs
-$KEY:1=SHELL:doom.bat /USE gzdoom /PWAD megawads\MapsOfChaos\mapsofchaos.wad
-$KEY:2=SHELL:doom.bat /USE glboom /PWAD megawads\MapsOfChaos\mapsofchaos.wad
-$KEY:3=SHELL:doom.bat /USE gzdoom /PWAD megawads\MapsOfChaos\mapsofchaos-hc.wad
-$KEY:4=SHELL:doom.bat /USE glboom /PWAD megawads\MapsOfChaos\mapsofchaos-hc.wad
+$KEY:1=SHELL:launcher.exe /USE gzdoom /PWAD megawads\MapsOfChaos\mapsofchaos.wad
+$KEY:2=SHELL:launcher.exe /USE glboom /PWAD megawads\MapsOfChaos\mapsofchaos.wad
+$KEY:3=SHELL:launcher.exe /USE gzdoom /PWAD megawads\MapsOfChaos\mapsofchaos-hc.wad
+$KEY:4=SHELL:launcher.exe /USE glboom /PWAD megawads\MapsOfChaos\mapsofchaos-hc.wad
 
 :Maps of Chaos
 :===============================================================================

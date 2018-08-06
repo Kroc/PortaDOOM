@@ -1,5 +1,5 @@
 $NAV=Commercial DOOM
-$KEY:P=SHELL:doom.bat /USE doom64ex
+$KEY:P=SHELL:launcher.exe /USE doom64ex
 
 :DOOM 64
 :===============================================================================

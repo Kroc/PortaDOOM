@@ -21,10 +21,8 @@ PUSHD %~dp0
 
 REM # relative location of the saves folder (where user-configs are stored)
 SET "SAVES=..\saves"
-REM # relative path to doom.bat
-SET "DOOM=..\doom.bat"
-REM # relative path for doom.bat to get to the config folder
-SET "CONFIG=..\..\..\config"
+REM # relative path to launcher.exe
+SET "LAUNCHER=..\launcher.exe"
 
 SET BIN_FART=..\tools\fart\fart.exe --quiet --word --c-style --ignore-case --adapt --
 SET BIN_INIFILE=..\tools\inifile\inifile.exe
@@ -435,7 +433,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 REM # main keys
 %BIN_FART% "default.%~1.cfg" "key_up                        72"		"key_up                        17"
@@ -478,7 +476,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 CALL :make_boom_inject "glboom-plus"
 GOTO:EOF
 
@@ -488,7 +486,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2" & EXIT"
 CALL :make_boom_inject "prboom-plus"
 GOTO:EOF
 
@@ -519,7 +517,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 REM # graphics
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -574,7 +572,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
@@ -685,7 +683,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 REM # VSync ON
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -762,7 +760,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%DOOM%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
 
 %BIN_FART% "default.%~1.cfg" "seta \"p_usecontext\" \"0\""	"seta \"p_usecontext\" \"1\""
 %BIN_FART% "default.%~1.cfg" "seta \"st_crosshair\" \"0\""	"seta \"st_crosshair\" \"1\""

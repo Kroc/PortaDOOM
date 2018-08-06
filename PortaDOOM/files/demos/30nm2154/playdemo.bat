@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\doom.bat" /USE prboom /DEMO 30nm2154.lmp
+@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom /DEMO 30nm2154.lmp

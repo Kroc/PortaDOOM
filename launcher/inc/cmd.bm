@@ -198,7 +198,7 @@ IF cmd_hasGame` THEN
     IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
 
     'if no IWAD is provided, we will default to "DOOM2"
-    IF LEN(CMD_IWAD$) <> 0 THEN LET CMD_IWAD$ = "DOOM2.WAD"
+    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
     'since the command-line doesn't provide
     'meta-data, get that internally
     LET title$ = WADs_GetIWADTitle$(CMD_IWAD$)
