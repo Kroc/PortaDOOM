@@ -5,6 +5,7 @@
 '         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
 '         DO NOT OPEN AND SAVE THIS FILE AS UNICODE / UTF-8!
 '=============================================================================
+$EXEICON:'.\icon.ico'
 
 'set ALT+ENTER to switch to 4:3 aspect ratio, with anti-aliasing;
 'many thanks Fellippe Heitor for implementing this!

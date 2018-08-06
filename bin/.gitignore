@@ -1,14 +1,4 @@
-*
-!.gitignore
-
-# DOSmag, our disk-zine viewer
-!DOSmag
-
-# 7Zip for producing the final slef-extracting archive
-!7za
-
-# list files for 7Zip/WinRAR in the build process
-!*.lst
-
-# UPX for compressing executable files
-!upx
+# ignore folders beginning with "!"
+# (my way of including stuff not ready yet)
+\!*
+**\!*

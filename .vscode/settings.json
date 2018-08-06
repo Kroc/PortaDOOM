@@ -1,0 +1,35 @@
+{
+	"editor.rulers": [
+		80
+	],
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 8,
+	"editor.renderWhitespace": "boundary",
+	"files.exclude": {
+		"build/": true,
+		"releases/": true,
+		"**/*.wad": true,
+		"**/*.WAD": true,
+		"**/*.pk3": true,
+		"**/*.PK3": true,
+		"**/*.zip": true,
+		"**/*.ZIP": true,
+		"**/*.EXE": true,
+		"**/*.exe": true,
+		"**/*.dll": true,
+		"**/soundfonts/": true,
+		"**/*.sf2": true,
+		"**/*.SF2": true,
+		"**/*.n64": true,
+		"**/*.v64": true,
+		"**/*.z64": true,
+		"**/tranmap.dat" : true,
+		"**/stdout.txt" : true,
+		"**/stderr.txt" : true,
+		"**/CRASHLOG.TXT" : true,
+		"PortaDOOM/files/ports/*/*.txt": true,
+		"PortaDOOM/files/saves/*/": true,
+		"PortaDOOM/files/saves/.gitignore": false,
+	}
+}

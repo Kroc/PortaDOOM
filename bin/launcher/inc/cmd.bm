@@ -4,9 +4,16 @@
 'display help?
 '=============================================================================
 DIM CMD$
-LET CMD$ = LCASE$(COMMAND$(1))
+IF _COMMANDCOUNT = 0 THEN
+	'TODO: if there are no command-line parameters, we present a UI to build
+    '      a custom game configuration?
+	LET CMD$ = ""
+ELSE
+	LET CMD$ = LCASE$(COMMAND$(1))
+END IF
 
-IF CMD$ = "/?" _
+IF CMD$ = "" _
+OR CMD$ = "/?" _
 OR CMD$ = "/h" _
 OR CMD$ = "/help" _
 OR CMD$ = "-?" _
@@ -14,8 +21,35 @@ OR CMD$ = "-h" _
 OR CMD$ = "-help" _
 OR CMD$ = "--help" _
 THEN
+	DIM USAGE$
+	LET USAGE$ = "    launcher.exe"
+	LET USAGE$ = USAGE$ + " [/USE <engine>]"
+	LET USAGE$ = USAGE$ + " [/WAIT]"
+	LET USAGE$ = USAGE$ + " [/CONSOLE]"
+	LET USAGE$ = USAGE$ + " [/SW]"
+	LET USAGE$ = USAGE$ + " [/32]"
+	LET USAGE$ = USAGE$ + " [/DEFAULT]"
+	LET USAGE$ = USAGE$ + CHR$(10)+CHR$(13) + "            "
+	LET USAGE$ = USAGE$ + " [/IWAD <file>]"
+	LET USAGE$ = USAGE$ + " [/PWAD <file>]"
+	LET USAGE$ = USAGE$ + " [/DEH <file>]"
+	LET USAGE$ = USAGE$ + " [/BEX <file>]"
+	LET USAGE$ = USAGE$ + CHR$(10)+CHR$(13) + "            "
+	LET USAGE$ = USAGE$ + " [/DEMO <file>]"
+	LET USAGE$ = USAGE$ + " [/WARP <map-number>]"
+	LET USAGE$ = USAGE$ + " [/SKILL <skill-level>]"
+	LET USAGE$ = USAGE$ + CHR$(10)+CHR$(13) + "            "
+	LET USAGE$ = USAGE$ + " [/CMPLVL <complevel>]"
+	LET USAGE$ = USAGE$ + " [/EXEC <file>]"
+	LET USAGE$ = USAGE$ + CHR$(10)+CHR$(13) + "            "
+	LET USAGE$ = USAGE$ + " [-- <files>...]"
     'TODO: console help
-    SYSTEM 0
+	
+	_ECHO ""
+	_ECHO USAGE$
+	_ECHO ""
+	SHELL "PAUSE"
+    SYSTEM
 END IF
 
 'read command-line switches:

@@ -53,7 +53,10 @@ LAUNCHER:
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
-[ ] GZDoom v3.4 now uses `vid_rendermode` CVAR
+[ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
+[X] Icon for launcher.exe
+ -  [ ] extra sizes: 20, 64, 96?
+[ ] GZDoom v3.4+ now uses `vid_rendermode` CVAR
 [ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
     incompatibility with ZScript and a visual bug -- current work-around is to
     limit it to software rendering

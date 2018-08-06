@@ -57,12 +57,12 @@ LET CMD_FILES$ = ""
 '-----------------------------------------------------------------------------
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
-IF NOT _DIREXISTS(DIR_SAVES$) THEN
+IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVES$) THEN
     'folder is missing? attempt to make it, but be aware
     'of that potentially failing (read-only media?)
-    ON ERROR GOTO err_MkDir
-    MKDIR (DIR_SAVES$)
-    ON ERROR GOTO 0
+    ''ON ERROR GOTO err_MkDir
+    MKDIR (DIR_EXE$ + DIR_SAVES$)
+    ''ON ERROR GOTO 0
 END IF
 
 'add the save-folder name for the selected engine; there can be
@@ -72,12 +72,12 @@ DIM DIR_SAVE_ENGINE$
 LET DIR_SAVE_ENGINE$ = DIR_SAVES$ + Paths_AddSlash$(Engines_Selected.save)
 
 'does this folder exist?
-IF NOT _DIREXISTS(DIR_SAVE_ENGINE$) THEN
+IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVE_ENGINE$) THEN
     'folder is missing? attempt to make it, but be aware
     'of that potentially failing (read-only media?)
-    ON ERROR GOTO err_MkDir
-    MKDIR (DIR_SAVE_ENGINE$)
-    ON ERROR GOTO 0
+    ''ON ERROR GOTO err_MkDir
+    MKDIR (DIR_EXE$ + DIR_SAVE_ENGINE$)
+    ''ON ERROR GOTO 0
 END IF
 
 'the saves folder will contain a sub-folder for each engine (above),
@@ -86,7 +86,7 @@ DIM DIR_SAVE_GAME$
 
 'if the game is using a PWAD,
 'use that name for the save folder
-IF LEN(Games_Selected.pwad) <> 0 THEN
+IF RTRIM$(Games_Selected.pwad) <> "" THEN
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
         + Paths_GetFileBaseName$(Games_Selected.pwad)
 ELSE
@@ -96,22 +96,21 @@ ELSE
 END IF
 
 'does this folder exist?
-IF NOT _DIREXISTS(DIR_SAVE_GAME$) THEN
+IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVE_GAME$) THEN
     'folder is missing? attempt to make it, but be aware
     'of that potentially failing (read-only media?)
-    ON ERROR GOTO err_MkDir
-    MKDIR (DIR_SAVE_GAME$)
-    ON ERROR GOTO 0
+    ''ON ERROR GOTO err_MkDir
+    MKDIR (DIR_EXE$ + DIR_SAVE_GAME$)
+    ''ON ERROR GOTO 0
 END IF
+
+'set the directory for the game engine to assume as default; note that from
+'here on, all paths on the command-line must be relative to save-game folder!
+LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34)
 
 'ensure it ends with a slash
 'TODO: Add mod support to this
 LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
-
-'set the directory for the game engine to assume as default; note that from
-'here on, all paths on the command-line must be relative to save-game folder!
-LET CMD$ = CMD$ + " /D " _
-		 + CHR$(34) + Paths_StripSlash$(DIR_SAVE_GAME$) + CHR$(34)
 
 '-----------------------------------------------------------------------------
 '[02] engine executable:
@@ -181,6 +180,7 @@ END IF
 'add the command-line parameter to select the config file
 LET CMD$ = CMD$ + " -config " _
          + CHR$(34) + Launch_FixPath$(CMD_CONFIG$) + cfg$ + CHR$(34)
+_ECHO "      -config : " + CMD_CONFIG$ + cfg$
 
 'vanilla engines (Chocolate-Doom, Crispy-Doom) store non-original settings
 'in an extra config file (this is why we omit the file extension until now)
@@ -190,8 +190,6 @@ IF Engines_Selected.kin = KIN_V THEN
     
     _ECHO " -extraconfig : " + CMD_CONFIG$ + ".extra" + cfg$
 END IF
-
-_ECHO "      -config : " + CMD_CONFIG$ + cfg$
 
 '-----------------------------------------------------------------------------
 '[04] compatibility level:
@@ -206,7 +204,7 @@ END IF
 '[05] IWAD:
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
-'FIXME: handle FreeDOOM replacement
+'FIXME: handle FreeDOOM replacement / BFG-edition patching
 LET CMD_IWAD$ = WADs_GetIWADPath$(RTRIM$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
@@ -225,6 +223,9 @@ IF auto_path$ <> "" THEN
 	'read the first file from the list
 	LET auto_path$ = WADs_Split$(auto_path$)
 	DO
+		'FIXME: check file exists; here or at the end?
+		'TODO: other places for auto-load files?
+		
 		'add the file to the ordered list to pass to the engine.
 		'note that auto-load files come before the PWAD
 		LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
@@ -239,12 +240,13 @@ END IF
 '[07] PWAD:
 '-----------------------------------------------------------------------------
 'doom engines typically don't have a specific concept of a "PWAD", it's just
-'an additional file to load like any other and it's not necessarily the
-'first listed, that will likely be the auto-load files
+'an additional file to load like any other and it's not necessarily the first
+'listed, that will likely be the auto-load files
 
 LET CMD_PWAD$ = RTRIM$(Games_Selected.pwad)
 IF CMD_PWAD$ <> "" THEN
     LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
+	'FIXME: file missing?
     LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
 	
     LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
@@ -258,6 +260,7 @@ END IF
 LET CMD_DEH$ = RTRIM$(Games_Selected.deh)
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
+	'FIXME: file missing?
     LET CMD_DEH$ = WADs_Find$(CMD_DEH$)
     'add it to the command-line
     LET CMD$ = CMD$ + " -deh " _
@@ -270,6 +273,7 @@ END IF
 LET CMD_BEX$ = RTRIM$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
+	'FIXME: file missing?
     LET CMD_BEX$ = WADs_Find$(CMD_BEX$)
 	'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
@@ -326,9 +330,11 @@ END IF
 '-----------------------------------------------------------------------------
 '[13] launch!
 '-----------------------------------------------------------------------------
-''SHELL CMD$
 _ECHO ""
 _ECHO CMD$
+_ECHO ""
+
+''SHELL CMD$
 
 SYSTEM
 
@@ -338,6 +344,9 @@ err_MkDir:
 _ECHO ""
 _ECHO "ERROR: could not create required folder!"
 _ECHO ""
+SYSTEM 1
+
+err_fileMissing:
 SYSTEM 1
 
 

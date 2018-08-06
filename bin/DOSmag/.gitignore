@@ -12,6 +12,8 @@
 !*.bm
 !inc
 
+!icon.ico
+
 # include the DOSmag executable so developers wishing to
 # build their own disk-zines do not have to compile their own
 !DOSmag.exe

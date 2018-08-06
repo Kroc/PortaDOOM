@@ -1836,7 +1836,7 @@ IF "%WINVER%" == "5.1" GOTO :skill_xp
 
 :skill_choice
 	REM # Windows Vista and above include CHOICE again
-	CHOICE /C 123450 >NUL
+	CHOICE /C:123450 >NUL
 	REM # secret "disable all monsters" mode; can prevent levels
 	REM # from being completable and doesn't work on all engines!
 	IF %ERRORLEVEL% EQU 6 SET SKILL=0
