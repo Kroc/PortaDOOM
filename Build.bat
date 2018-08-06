@@ -91,7 +91,7 @@ IF %CMPLVL% EQU 1 (
 
 REM # include and compress the DOSmag executable
 REM ----------------------------------------------------------------------------
-COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
+COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"  >NUL 2>&1
 ECHO:
 
 IF %CMPLVL% EQU 1 (
@@ -377,7 +377,7 @@ GOTO:EOF
 :do_dosmag_copy
 REM ============================================================================
 CLS
-COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe
+COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"
 
 START "" PortaDOOM\PortaDOOM.exe
 
@@ -395,9 +395,9 @@ ECHO Pulling DOSmag updates from GitHub:
 ECHO (working copy must be clean!)
 ECHO:
 
-git subtree pull --prefix bin/DOSmag --squash dosmag master
+git subtree pull --prefix DOSmag --squash dosmag master
 
-COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe >NUL
+COPY /Y "DOSmag\DOSmag.exe" PortaDOOM\PortaDOOM.exe  >NUL
 
 ECHO:
 PAUSE

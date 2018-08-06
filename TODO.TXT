@@ -2,6 +2,7 @@
 ================================================================================
 LAUNCHER:
 [ ] parse command-line params
+ -  [ ] /EXEC
 [ ] re-create the current UI and logic (will be replaced later)
 
 [P1] Required: (cannot be released until fixed)
@@ -15,7 +16,7 @@ LAUNCHER:
 ================================================================================
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
- -  [ ] Disable stats (not fair for portable use on non-personal systems)
+ -  [X] Disable stats (not fair for portable use on non-personal systems)
 [ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 [ ] doom.bat : Add `-shotdir`, supported by a number of engines
 [ ] Include Crispy Doom music pack?
