@@ -73,6 +73,24 @@ IF "%$%" == "1" SET CMPLVL=1
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
+REM # compile the launcher
+REM ----------------------------------------------------------------------------
+ECHO:
+bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\launcher\launcher.qb64"
+REM # if that errored, pause to be able to show the error message
+IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
+
+REM # compress the launcher executable
+IF %CMPLVL% EQU 1 (
+	ECHO * Compress launcher executable
+	ECHO:
+	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
+	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
+	ECHO:
+)
+
+REM # include and compress the DOSmag executable
+REM ----------------------------------------------------------------------------
 COPY /Y bin\DOSmag\DOSmag.exe PortaDOOM\PortaDOOM.exe  >NUL 2>&1
 ECHO:
 

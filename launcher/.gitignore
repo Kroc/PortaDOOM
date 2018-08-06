@@ -1,1 +1,2 @@
+# don't include the launcher executable, we'll build that from source
 *.exe
