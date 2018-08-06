@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+06-AUG-18:
+* Update DOOM Retro to v2.7.1
+
 31-JUL-18:
 + Added GZDoom v3.5.0
 + Set online stats collection to off by default for GZDoom engines
