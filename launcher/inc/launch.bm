@@ -5,6 +5,7 @@
 'parameters, any mods (if selected) and so forth. we need to build the
 'right command-line to do all of this
 '
+'   [00]: START & /WAIT
 '   [01]: save game path
 '   [02]: engine executable
 '   [03]: config file
@@ -22,9 +23,6 @@
 _ECHO ""
 _ECHO "     PortaDOOM Launcher"
 _ECHO ""
-
-'use the `START` command to launch the engine without freezing up the launcher
-LET CMD$ = "START " + CHR$(34) + "PortaDOOM Launcher" + CHR$(34)
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
@@ -51,6 +49,18 @@ DIM SHARED DIR_PWAD$
 'and mods. as we go, we'll build up a list of files to include (in the right
 'order) and worry about the specific invocation at the end
 LET CMD_FILES$ = ""
+
+'-----------------------------------------------------------------------------
+'[00] START & /WAIT
+'-----------------------------------------------------------------------------
+'use the `START` command to launch the engine without freezing up the launcher
+LET CMD$ = "START"
+'add a window title
+LET CMD$ = CMD$ + " " + CHR$(34) + "PortaDOOM Launcher" + CHR$(34)
+'has the `/WAIT` command-line option been specified?
+IF CMD_WAIT` THEN
+	LET CMD$ = CMD$ + " /WAIT"
+END IF
 
 '-----------------------------------------------------------------------------
 '[01] save game path:
@@ -106,7 +116,7 @@ END IF
 
 'set the directory for the game engine to assume as default; note that from
 'here on, all paths on the command-line must be relative to save-game folder!
-LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_SAVE_GAME$ + CHR$(34)
+LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_EXE$ + DIR_SAVE_GAME$ + CHR$(34)
 
 'ensure it ends with a slash
 'TODO: Add mod support to this
@@ -359,13 +369,47 @@ _ECHO "       -width :" + STR$(screen_width) _
     + "  -height :" + STR$(screen_height)
 
 '-----------------------------------------------------------------------------
-'[13] launch!
+'[13] file list:
 '-----------------------------------------------------------------------------
+DIM file$
+LET file$ = CMD_FILES$
+IF file$ <> "" THEN
+	'vanilla engines use `-merge`
+	IF Engines_Selected.kin = KIN_V THEN
+		CMD$ = CMD$ + " -merge"
+	ELSE
+		CMD$ = CMD$ + " -file"
+	END IF
+	
+	'read the first file from the list
+	LET file$ = WADs_Split$(file$)
+	DO
+		'add the file to the command-line
+		LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
+		
+		LET file$ = WADs_Split$("")
+	LOOP WHILE file$ <> ""
+END IF
+
+'-----------------------------------------------------------------------------
+'[14] launch!
+'-----------------------------------------------------------------------------
+'specify the save-game directory as the 'current' directory
+'TODO: a more specific way of detecting this?
+IF Engines_Selected.name = "PrBoom+" THEN
+	LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
+ELSE
+	'all other engines use `-savedir`,
+	'except doom64x which has no support yet
+	LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
+END IF
+
 _ECHO ""
 _ECHO CMD$
 _ECHO ""
 
 SHELL "pause"
+CHDIR DIR_EXE$ + DIR_SAVE_GAME$
 SHELL CMD$
 
 SYSTEM
@@ -382,6 +426,8 @@ err_fileMissing:
 SYSTEM 1
 
 
+FUNCTION Launch_
+
 'correct a relative path from the save-game folder
 '=============================================================================
 FUNCTION Launch_FixPath$(path$)
@@ -389,8 +435,11 @@ FUNCTION Launch_FixPath$(path$)
     IF NOT Paths_IsAbsolute(path$) THEN
         LET Launch_FixPath$ = FIX_PATH$ + path$
 	ELSE
-		'TODO: if the path is a sub-folder of PortaDOOM,
-		'      convert it to relative (and fix)
-		LET Launch_FixPath$ = path$
+		'if the path is a sub-folder of PortaDOOM, convert it to relative
+		IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
+			LET Launch_FixPath$ = FIX_PATH$ + MID$(path$, LEN(DIR_EXE$) + 1)
+		ELSE
+			LET Launch_FixPath$ = path$
+		END IF
     END IF
 END FUNCTION

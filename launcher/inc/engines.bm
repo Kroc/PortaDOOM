@@ -44,9 +44,6 @@ SUB Engines_Enumerate()
             LET ini_engine$ = ReadSetting$("", "engines", STRINT$(ini_index%))
             IF ini_engine$ = "" THEN EXIT DO
             
-            _ECHO ""
-            _ECHO "* " + ini_engine$
-            
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
@@ -229,13 +226,6 @@ SUB Engines_Enumerate()
         
     LOOP
     
-    _ECHO ""
-    _ECHO "sorts: " + STR$(sortCount%)
-    FOR i = 1 TO Engines_Count
-        _ECHO "- " + Engines(i).title$
-    NEXT i
-    _ECHO ""
-    
     '-------------------------------------------------------------------------
     
     'create a look-up table of which engines provide which tags
@@ -274,23 +264,14 @@ END SUB
 SUB Engines_Filter()
     'loop counter
     DIM i AS _UNSIGNED LONG
-    
-    _ECHO "": _ECHO ""
-
+	
     'test each engine against the game's requirements:
-    FOR i = 1 TO UBOUND(Engines)
-        _ECHO ""
-        _ECHO "* testing engine #" + STRINT$(i) + " " + Engines(i).id
-        
+    FOR i = 1 TO UBOUND(Engines)    
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-			_ECHO ""
             IF RTRIM$(Engines(i).name) <> CMD_USE$ THEN
-                _ECHO "! no-match (name): " + Engines(i).name
-				
 				IF RTRIM$(Engines(i).id) <> CMD_USE$ THEN
-					_ECHO "! no-match (id): " + Engines(i).id
 					_CONTINUE
 				END IF
             END IF
@@ -298,9 +279,7 @@ SUB Engines_Filter()
         
         'is the binary compatible with this machine? (32 / 64-bit)
         'if we are a 32-bit machine, we can't run 64-bit software
-        _ECHO "- Bit:" + STRINT$(Engines(i).bit)
         IF CPU_BIT = 32 AND Engines(i).bit = 64 THEN
-            _ECHO "": _ECHO "! no-match (bit): " + Engines(i).id
             _CONTINUE
         END IF
         
@@ -314,10 +293,6 @@ SUB Engines_Filter()
         'does this engine provide all the features required by the game?
         '(walk along the tags on the engine)
         FOR tag% = 1 TO UBOUND(Tags)
-            _ECHO "- Tag:" + Tags(tag%) _
-                + " EngineTags=" + STRINT$(EngineTags(i, tag%)) _
-                + " GameTags=" + STRINT$(GameTags(Games_Current, tag%))
-            
             'check the game's requirement for this tag
             SELECT CASE GameTags(Games_Current, tag%)
                 'the *game* requires this from the engine
@@ -325,7 +300,6 @@ SUB Engines_Filter()
                     'if the *engine* does not provide this feature,
                     'move on to the next engine
                     IF EngineTags(i, tag%) = 0 THEN
-                        _ECHO "": _ECHO "! no-match (tag): " + Engines(i).id
                         '`_CONTINUE` does not support breaking nested loops
                         LET i = i + 1: GOTO NextEngine
                     END IF
@@ -340,10 +314,7 @@ SUB Engines_Filter()
         LET Engines_ListCount = Engines_ListCount + 1
         REDIM _PRESERVE Engines_List(1 TO Engines_ListCount) AS INTEGER
         LET Engines_List(Engines_ListCount) = i
-        
-        _ECHO ""
-        _ECHO "match: " + Engines(i).id
-
+		
     NextEngine:
     NEXT i
 

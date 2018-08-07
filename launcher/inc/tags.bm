@@ -10,8 +10,6 @@ SUB Tags_Add (tagList$)
     'validation: be careful of fixed-width strings
     LET tagList$ = RTRIM$(tagList$)
     
-    _ECHO "* AddTags('" + tagList$ + "')"
-    
     'the tag list will be broken into individual tags,
     'these will hold the individual tag index and name
     DIM tag%, tag$
@@ -27,8 +25,6 @@ SUB Tags_Add (tagList$)
         LET tag% = UBOUND(Tags) + 1
         REDIM _PRESERVE Tags(1 TO tag%) AS STRING * 16
         LET Tags(tag%) = tag$
-        
-        _ECHO "- AddTag: #" + STRINT$(tag%) + " " + tag$
         
         NextTag:
         LET tag$ = Tags_Split$("")

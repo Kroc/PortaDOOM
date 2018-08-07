@@ -64,9 +64,9 @@ query:
     END IF
     
     LET l = RegCloseKey(h)
-    IF l THEN
-        PRINT "! RegCloseKey failed. Error: 0x" + LCASE$(HEX$(l))
-    END IF
+    ''IF l THEN
+    ''    _ECHO "! RegCloseKey failed. Error: 0x" + LCASE$(HEX$(l))
+    ''END IF
     
     RETURN
 

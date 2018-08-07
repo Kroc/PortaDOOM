@@ -56,7 +56,7 @@ END IF
 '=============================================================================
 'the command-line switches are to allow drop-in replacement compatibility
 'with "play.bat" / "doom.bat", the previous launcher setup. commands come
-'in two varieties: 1. commands for engine selection / compatibility:
+'in three varieties: 1. commands for engine selection / compatibility:
 '
 DIM SHARED CMD_USE$ '....a specific engine-id to use
 DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
@@ -81,10 +81,17 @@ DIM SHARED CMD_FILES$ '..list of extra files to include
 
 DIM cmd_hasGame` '.......flag, define game from command-line
 
+'3. commands that affect invocation
+'
+DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
+
 'FIXME: do not allow mix of command params & INI files?
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
+		CASE "/WAIT"
+			LET CMD_WAIT` = TRUE
+			
         CASE "/USE"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
