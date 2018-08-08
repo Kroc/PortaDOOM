@@ -15,6 +15,7 @@
 '$INCLUDE:'inc\tags.bi'
 '$INCLUDE:'inc\games.bi'
 '$INCLUDE:'inc\engines.bi'
+'$INCLUDE:'inc\wads.bi'
 
 '-----------------------------------------------------------------------------
 

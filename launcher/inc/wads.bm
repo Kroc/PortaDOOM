@@ -1,10 +1,100 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   WADs_EnumerateINI(path$)
 '   WADs_GetIWADPath$(iwad$)    -> STRING
 '   WADs_GetIWADTitle$(iwad$)   -> STRING
 '   WADs_GetIWADTag$(iwad$)     -> STRING
 '   WADs_GetPWADPath$(pwad$)    -> STRING
 '   WADs_Find(iwad$)            -> STRING
+
+'given an INI file, read an IWAD definition from it
+'=============================================================================
+SUB WADs_EnumerateINI (INIFile$)
+	'locate the INI file:
+    '-------------------------------------------------------------------------
+    DIM path$
+    LET path$ = INIFile$
+    
+    'is the given path absolute?
+    IF Paths_IsAbsolute(path$) THEN
+        'does the file exist?
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    ELSE
+        'search for the file:
+        
+        'check the 'current' directory
+        '-- i.e. the directory the launcher was called *from*
+        LET path$ = DIR_CUR$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+        
+        'check the base WADs directory
+        LET path$ = DIR_WADS$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    END IF
+    
+    'FIXME: file not found!
+    ERROR 100
+    
+readINI:
+    '-------------------------------------------------------------------------
+	DIM iwad_id$
+	LET iwad_id$ = ReadSetting$(path$, "iwad", "id")
+	DIM iwad_name$
+	LET iwad_name$ = ReadSetting$("", "iwad", "name")
+	DIM iwad_title$
+	LET iwad_title$ = ReadSetting$("", "iwad", "title")
+	DIM iwad_path$
+	LET iwad_path$ = ReadSetting$("", "iwad", "path")
+	DIM iwad_tags$
+	LET iwad_tags$ = ReadSetting$("", "iwad", "tags")
+	
+	DIM iwad_skill1$
+	LET iwad_skill1$ = ReadSetting$("", "iwad.skills", "1")
+	DIM iwad_skill2$
+	LET iwad_skill2$ = ReadSetting$("", "iwad.skills", "2")
+	DIM iwad_skill3$
+	LET iwad_skill3$ = ReadSetting$("", "iwad.skills", "3")
+	DIM iwad_skill4$
+	LET iwad_skill4$ = ReadSetting$("", "iwad.skills", "4")
+	DIM iwad_skill5$
+	LET iwad_skill5$ = ReadSetting$("", "iwad.skills", "5")
+	DIM iwad_skill6$
+	LET iwad_skill6$ = ReadSetting$("", "iwad.skills", "6")
+	DIM iwad_skill7$
+	LET iwad_skill7$ = ReadSetting$("", "iwad.skills", "7")
+	DIM iwad_skill8$
+	LET iwad_skill8$ = ReadSetting$("", "iwad.skills", "8")
+	DIM iwad_skill9$
+	LET iwad_skill9$ = ReadSetting$("", "iwad.skills", "9")
+END SUB
+
+'=============================================================================
+SUB WADs_AddIWAD( _
+	id$, name$, title$, path$, tag$, skill1$, skill2$, skill3$, skill4$, _
+	skill5$, skill6$, skill7$, skill8$, skill9$ _
+)
+	'increase the number of IWAD entries
+    LET IWADs_Count = IWADs_Count + 1
+    REDIM _PRESERVE IWADs(1 TO IWADs_Count) AS IWAD
+	
+	'process the tag list
+    CALL Tags_Add(tags$)
+	
+	LET IWADs(IWADs_Count).id = STRADD&(id$)
+	LET IWADs(IWADs_Count).name = STRDADD&(name$)
+	LET IWADs(IWADs_Count).title = STRDADD&(title$)
+	LET IWADs(IWADs_Count).path = STRDADD&(path$)
+	LET IWADs(IWADs_Count).tags = STRDADD&(tags$)
+	LET IWADs(IWADs_Count).skill1 = STRDADD&(skill1$)
+	LET IWADs(IWADs_Count).skill2 = STRDADD&(skill2$)
+	LET IWADs(IWADs_Count).skill3 = STRDADD&(skill3$)
+	LET IWADs(IWADs_Count).skill4 = STRDADD&(skill4$)
+	LET IWADs(IWADs_Count).skill5 = STRDADD&(skill5$)
+	LET IWADs(IWADs_Count).skill6 = STRDADD&(skill6$)
+	LET IWADs(IWADs_Count).skill7 = STRDADD&(skill7$)
+	LET IWADs(IWADs_Count).skill8 = STRDADD&(skill8$)
+	LET IWADs(IWADs_Count).skill9 = STRDADD&(skill9$)
+END SUB
 
 'locate an IWAD and return its path -- handles Steam / GOG IWADs
 '=============================================================================

@@ -210,7 +210,7 @@ IF cmd_hasGame` THEN
     'meta-data, get that internally
     LET title$ = WADs_GetIWADTitle$(CMD_IWAD$)
 
-    'FIXME: implement `/REQ` for requesting tags
+    'FIXME: implement `/REQ` for requiring feature tags
     LET tags$ = WADs_GetIWADTags$(CMD_IWAD$)
 
     'these can be applied 1:1
