@@ -300,8 +300,8 @@ FUNCTION WADs_Find$(path$)
     GOSUB checkPath
     
     'if an engine has been selected, check too it's folder
-    IF Engines_Selected.folder <> "" THEN
-        LET testPath$ = DIR_PORTS$ + Engines_Selected.folder + "\" + path$
+    IF STRGET$(Engines_Selected.dir) <> "" THEN
+        LET testPath$ = DIR_PORTS$ + STRGET$(Engines_Selected.dir) + "\" + path$
         GOSUB checkPath
     END IF
     
@@ -323,9 +323,6 @@ END FUNCTION
 'return one path each time the function is called until none remain
 '=============================================================================
 FUNCTION WADs_Split$ (list$)
-    'validation: be careful of fixed-width strings
-    LET list$ = RTRIM$(list$)
-    
     'if a list is provided, keep it for each additional call to the function
     STATIC remaining$
     IF list$ <> "" THEN LET remaining$ = list$

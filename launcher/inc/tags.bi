@@ -3,7 +3,8 @@
 DIM SHARED tag$, tag%
 
 'an array of all known feature-tags
-REDIM SHARED Tags(0) AS STRING * 16
+'(value is an index into the string pool)
+REDIM SHARED Tags(0) AS LONG
 
 'a two-dimensional array of game/engine -> tag-indicies; that is, the 1st
 'dimension is for each game/engine and the second dimension covers each tag

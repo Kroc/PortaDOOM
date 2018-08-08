@@ -79,7 +79,9 @@ END IF
 'multiple folder names and IDs for engines, such as 32/64-bit and
 'differing versions, so a common save name is provided in the INI
 DIM DIR_SAVE_ENGINE$
-LET DIR_SAVE_ENGINE$ = DIR_SAVES$ + Paths_AddSlash$(Engines_Selected.save)
+LET DIR_SAVE_ENGINE$ = Paths_AddSlash$( _
+	DIR_SAVES$ + STRGET$(Engines_Selected.save) _
+)
 
 'does this folder exist?
 IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVE_ENGINE$) THEN
@@ -96,13 +98,13 @@ DIM DIR_SAVE_GAME$
 
 'if the game is using a PWAD,
 'use that name for the save folder
-IF RTRIM$(Games_Selected.pwad) <> "" THEN
+IF STRGET$(Games_Selected.pwad) <> "" THEN
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(Games_Selected.pwad)
+        + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
 ELSE
     'otherwise just use the IWAD name
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(Games_Selected.iwad)
+        + Paths_GetFileBaseName$(STRGET$(Games_Selected.iwad))
 END IF
 
 'does this folder exist?
@@ -126,15 +128,15 @@ LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
 '[02] engine executable:
 '-----------------------------------------------------------------------------
 DIM DIR_ENGINE$
-LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.folder)
+LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(STRGET$(Engines_Selected.dir))
 
 'add the engine executable to the command-line
 LET CMD$ = CMD$ + " " + CHR$(34) _
-         + Launch_FixPath$(DIR_ENGINE$) + RTRIM$(Engines_Selected.exe) _
+         + Launch_FixPath$(DIR_ENGINE$) + STRGET$(Engines_Selected.exe) _
          + CHR$(34)
          
-_ECHO "         port : " + RTRIM$(Engines_Selected.title)
-_ECHO "       engine : " + DIR_ENGINE$ + RTRIM$(Engines_Selected.exe)
+_ECHO "         port : " + STRGET$(Engines_Selected.title)
+_ECHO "       engine : " + DIR_ENGINE$ + STRGET$(Engines_Selected.exe)
 _ECHO ""
 
 '-----------------------------------------------------------------------------
@@ -155,7 +157,7 @@ END IF
 'engine's config file doesn't exist yet. note that this leaves off the
 'file extension, for now
 DIM cfg_default$
-LET cfg_default$ = DIR_CONFIG$ + "default." + RTRIM$(Engines_Selected.cfg)
+LET cfg_default$ = DIR_CONFIG$ + "default." + STRGET$(Engines_Selected.cfg)
 
 'was the command-line parameter given to use the default config-file?
 IF CMD_DEFAULT` THEN
@@ -166,7 +168,7 @@ ELSE
     'note that this leaves off the file extension, for now
     DIM cfg_engine$
     LET cfg_engine$ = DIR_SAVE_ENGINE$ _
-                    + "config." + RTRIM$(Engines_Selected.cfg)
+                    + "config." + STRGET$(Engines_Selected.cfg)
 
     'if the user's config file doesn't exist, make a copy of the default
     IF NOT _FILEEXISTS(cfg_engine$ + cfg$) THEN
@@ -216,9 +218,10 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-LET CMD_IWAD$ = WADs_GetIWADPath$(RTRIM$(Games_Selected.iwad))
+LET CMD_IWAD$ = WADs_GetIWADPath$(STRGET$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
+LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
 LET CMD$ = CMD$ + " -iwad " _
          + CHR$(34) + Launch_FixPath$(CMD_IWAD$) + CHR$(34)
 _ECHO "        -iwad : " + CMD_IWAD$
@@ -229,7 +232,7 @@ _ECHO "        -iwad : " + CMD_IWAD$
 'any files that should be automatically included with the engine?
 '(e.g. "brightmaps.pk3", "lights.pk3")
 DIM auto_path$
-LET auto_path$ = RTRIM$(Engines_Selected.auto)
+LET auto_path$ = STRGET$(Engines_Selected.auto)
 IF auto_path$ <> "" THEN
 	'read the first file from the list
 	LET auto_path$ = WADs_Split$(auto_path$)
@@ -254,11 +257,13 @@ END IF
 'an additional file to load like any other and it's not necessarily the first
 'listed, that will likely be the auto-load files
 
-LET CMD_PWAD$ = RTRIM$(Games_Selected.pwad)
+LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
 IF CMD_PWAD$ <> "" THEN
     LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
 	'FIXME: file missing?
     LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
+	
+	CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
 	
     LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
     _ECHO "         pwad : " + CMD_PWAD$
@@ -268,7 +273,7 @@ END IF
 '[08] DEH & BEX:
 '-----------------------------------------------------------------------------
 'has a DEH file been specified?
-LET CMD_DEH$ = RTRIM$(Games_Selected.deh)
+LET CMD_DEH$ = STRGET$(Games_Selected.deh)
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
 	'FIXME: file missing?
@@ -281,7 +286,7 @@ IF CMD_DEH$ <> "" THEN
 END IF
 
 'has a BEX file been specified?
-LET CMD_BEX$ = RTRIM$(Games_Selected.bex)
+LET CMD_BEX$ = STRGET$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
 	'FIXME: file missing?
@@ -396,7 +401,7 @@ END IF
 '-----------------------------------------------------------------------------
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
-IF Engines_Selected.name = "PrBoom+" THEN
+IF STRGET$(Engines_Selected.name) = "PrBoom+" THEN
 	LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
 	'all other engines use `-savedir`,
@@ -426,8 +431,6 @@ err_fileMissing:
 SYSTEM 1
 
 
-FUNCTION Launch_
-
 'correct a relative path from the save-game folder
 '=============================================================================
 FUNCTION Launch_FixPath$(path$)
@@ -442,4 +445,14 @@ FUNCTION Launch_FixPath$(path$)
 			LET Launch_FixPath$ = path$
 		END IF
     END IF
+END FUNCTION
+
+'if an absolute path is within PortaDOOM's folders, make it relative
+'=============================================================================
+FUNCTION Launch_ClipPath$(path$)
+	IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
+		LET Launch_ClipPath$ = MID$(path$, LEN(DIR_EXE$) + 1)
+	ELSE
+		LET Launch_ClipPath$ = path$
+	END IF
 END FUNCTION

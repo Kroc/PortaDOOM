@@ -66,7 +66,7 @@ LET ui_summary_window = UI.Windows.Add(X, Y, W, H, BLUE, AQUA, 1, temp$)
 
 DIM ui_summary_title AS _UNSIGNED _BYTE
 LET ui_summary_title = UI.Labels.Add ( _
-    X + 2, Y + 1, WHITE, Games(Games_Current).title _
+    X + 2, Y + 1, WHITE, STRGET$(Games(Games_Current).title) _
 )
 
 DIM ui_summary_selectedengine AS _UNSIGNED _BYTE
@@ -94,10 +94,10 @@ LET ui_dontcare = UI.Labels.Add (XR, Y + 7, LTGREY, "CMPLVL: ^{&FA,R12}")
 
 DIM ui_summary_iwad AS _UNSIGNED _BYTE
 LET ui_summary_iwad = UI.Labels.Add ( _
-    XR + 8, Y + 5, LIME, TRUNCATE$(RTRIM$(Games(Games_Current).iwad), 12))
+    XR + 8, Y + 5, LIME, TRUNCATE$(STRGET$(Games(Games_Current).iwad), 12))
 DIM ui_summary_pwad AS _UNSIGNED _BYTE
 LET ui_summary_pwad = UI.Labels.Add ( _
-    XR + 8, Y + 6, LIME, TRUNCATE$(RTRIM$(Games(Games_Current).pwad), 12))
+    XR + 8, Y + 6, LIME, TRUNCATE$(STRGET$(Games(Games_Current).pwad), 12))
 DIM ui_summary_cmplvl AS _UNSIGNED _BYTE
 IF Games(Games_Current).cmplvl > -1 THEN
     LET ui_summary_cmplvl = UI.Labels.Add ( _

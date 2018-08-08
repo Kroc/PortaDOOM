@@ -1,5 +1,31 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'=============================================================================
+FUNCTION STRADD&(text$)
+	'accidental nullstring?
+	IF text$ = "" THEN
+		LET STRADD& = 0
+		EXIT FUNCTION
+	END IF
+	
+	'we'll return the index of the string added
+	LET STRADD& = UBOUND(Strings) + 1
+	'increase the size of the string pool
+	REDIM _PRESERVE Strings(1 TO STRADD&) AS STRING
+	'assign the string
+	LET Strings(STRADD&) = text$
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGET$(index%)
+	'accidental nullstring?
+	IF index% = 0 THEN
+		LET STRGET$ = ""
+	ELSE
+		LET STRGET$ = Strings(index%)
+	END IF
+END FUNCTION
+
 'convert an integer into a string and trim it
 '=============================================================================
 FUNCTION STRINT$ (number%)

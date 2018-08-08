@@ -23,12 +23,12 @@ SUB Engines_Enumerate()
     
     DO WHILE EOF(dir_handle%) = FALSE
         'read a folder-name
-        DIM folder$
-        LINE INPUT #dir_handle%, folder$
+        DIM dir$
+        LINE INPUT #dir_handle%, dir$
         
         'check for an INI file in the engine's folder
         DIM ini_path$
-        LET ini_path$ = _CWD$ + "\" + folder$ + "\porta-doom.ini"
+        LET ini_path$ = _CWD$ + "\" + dir$ + "\porta-doom.ini"
         IF NOT _FILEEXISTS(ini_path$) THEN GOTO NextFolder
         
         'read the global values
@@ -47,7 +47,7 @@ SUB Engines_Enumerate()
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
-            LET Engines(Engines_Count).id = ini_engine$
+            LET Engines(Engines_Count).id = STRADD&(ini_engine$)
             
             'read engine data from the INI file
             DIM ini_section$
@@ -88,11 +88,11 @@ SUB Engines_Enumerate()
             'process the tag list
             CALL Tags_Add(ini_tags$)
             
-            LET Engines(Engines_Count).folder = folder$
-            LET Engines(Engines_Count).name = ini_name$
+            LET Engines(Engines_Count).dir = STRADD&(dir$)
+            LET Engines(Engines_Count).name = STRADD&(ini_name$)
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
-            LET Engines(Engines_Count).title = ini_title$
-            LET Engines(Engines_Count).exe = ini_exe$
+            LET Engines(Engines_Count).title = STRADD&(ini_title$)
+            LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
@@ -105,12 +105,12 @@ SUB Engines_Enumerate()
                 CASE ELSE
                     LET Engines(Engines_Count).kin = 0
             END SELECT
-            LET Engines(Engines_Count).cfg = ini_cfg$
-            LET Engines(Engines_Count).save = ini_save$
-            LET Engines(Engines_Count).tags = ini_tags$
-            LET Engines(Engines_Count).iwads = ini_iwads$
-            LET Engines(Engines_Count).pwads = ini_pwads$
-            LET Engines(Engines_Count).auto = ini_auto$
+            LET Engines(Engines_Count).cfg = STRADD&(ini_cfg$)
+            LET Engines(Engines_Count).save = STRADD&(ini_save$)
+            LET Engines(Engines_Count).tags = STRADD&(ini_tags$)
+            LET Engines(Engines_Count).iwads = STRADD&(ini_iwads$)
+            LET Engines(Engines_Count).pwads = STRADD&(ini_pwads$)
+            LET Engines(Engines_Count).auto = STRADD&(ini_auto$)
             
             LET ini_index% = ini_index% + 1
         LOOP
@@ -175,8 +175,8 @@ SUB Engines_Enumerate()
                 ELSEIF kB% = kA% THEN
                     'compare the names (alphabetically sort engines)
                     DIM nA$, nB$
-                    LET nA$ = Engines(A%).name
-                    LET nB$ = Engines(B%).name
+                    LET nA$ = STRGET$(Engines(A%).name)
+                    LET nB$ = STRGET$(Engines(B%).name)
                     
                     IF nB$ < nA$ THEN
                         SWAP Engines(A%), Engines(B%)
@@ -231,7 +231,7 @@ SUB Engines_Enumerate()
     'create a look-up table of which engines provide which tags
     REDIM EngineTags(1 TO Engines_Count, 0 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Engines)
-        LET tag$ = Tags_Split$(Engines(i).tags)
+        LET tag$ = Tags_Split$(STRGET$(Engines(i).tags))
         DO WHILE tag$ <> ""
             'find the tag index
             LET tag% = Tags_Find%(tag$)
@@ -246,7 +246,7 @@ SUB Engines_Enumerate()
     'enumerating the engines, as all unique tags will be known by then
     REDIM GameTags(1 TO Games_Count, 1 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Games)
-        LET tag$ = Tags_Split$(Games(i).tags)
+        LET tag$ = Tags_Split$(STRGET$(Games(i).tags))
         DO WHILE tag$ <> ""
             'find the tag index
             LET tag% = Tags_Find%(tag$)
@@ -270,8 +270,8 @@ SUB Engines_Filter()
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-            IF RTRIM$(Engines(i).name) <> CMD_USE$ THEN
-				IF RTRIM$(Engines(i).id) <> CMD_USE$ THEN
+            IF STRGET$(Engines(i).name) <> CMD_USE$ THEN
+				IF STRGET$(Engines(i).id) <> CMD_USE$ THEN
 					_CONTINUE
 				END IF
             END IF
@@ -319,14 +319,14 @@ SUB Engines_Filter()
     NEXT i
 
     'print a list of the candidate engines:
-    _ECHO ""
-    _ECHO "Candidate Engines:"
-    _ECHO "------------------"
-    FOR i = 1 TO Engines_ListCount
-        _ECHO "- " + Engines(Engines_List(i)).id + ": " _
-            + Engines(Engines_List(i)).title
-    NEXT i
-    _ECHO ""
+    ''_ECHO ""
+    ''_ECHO "Candidate Engines:"
+    ''_ECHO "------------------"
+    ''FOR i = 1 TO Engines_ListCount
+    ''    _ECHO "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
+    ''        + STRGET$(Engines(Engines_List(i)).title)
+    ''NEXT i
+    ''_ECHO ""
     
     'select the 'best' engine by default
     CALL Engines_Select(Engines_List(1))

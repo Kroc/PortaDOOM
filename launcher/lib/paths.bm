@@ -24,8 +24,6 @@ END DECLARE
 'is the path absolute? i.e. "\..." or "C:\..."
 '=============================================================================
 FUNCTION Paths_IsAbsolute(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
     'don't be silly
     IF LEN(path$) = 0 THEN EXIT FUNCTION
     
@@ -48,8 +46,6 @@ END FUNCTION
 'returns the folder-path from a file-path, i.e. remove file name if present
 '=============================================================================
 FUNCTION Paths_GetPath$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
     'don't be silly
     IF LEN(path$) = 0 THEN EXIT FUNCTION
     
@@ -65,8 +61,6 @@ END FUNCTION
 'if there isn't, adds a slash to the end of a string
 '=============================================================================
 FUNCTION Paths_AddSlash$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
     
     IF LEN(path$) = 0 THEN
         LET Paths_AddSlash$ = "\"
@@ -83,9 +77,6 @@ END FUNCTION
 'removes the trailing slash
 '=============================================================================
 FUNCTION Paths_StripSlash$(path$)
-	'just in case we're passed a fixed-length string
-	LET path$ = RTRIM$(path$)
-	
 	DIM len_path%
 	LET len_path% = LEN(path$)
 	
@@ -100,8 +91,6 @@ END FUNCTION
 'return the folder name from a path
 '=============================================================================
 FUNCTION Paths_GetFolderName$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
     'don't be silly
     IF LEN(path$) = 0 THEN EXIT FUNCTION
     IF path$ = "\" THEN EXIT FUNCTION
@@ -150,9 +139,6 @@ END FUNCTION
 'returns the file name (including extension) from a path
 '=============================================================================
 FUNCTION Paths_GetFileName$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
-    
     DIM len_path AS _UNSIGNED LONG
     LET len_path = LEN(path$)
     
@@ -183,9 +169,6 @@ END FUNCTION
 
 '=============================================================================
 FUNCTION Paths_HasExtension(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
-    
     DIM len_path AS _UNSIGNED LONG
     LET len_path = LEN(path$)
     
@@ -217,9 +200,6 @@ END FUNCTION
 'returns the file extension from a path, if it has a file name in it
 '=============================================================================
 FUNCTION Paths_GetFileExtension$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
-    
     DIM len_path AS _UNSIGNED LONG
     LET len_path = LEN(path$)
     
@@ -245,9 +225,6 @@ END FUNCTION
 'returns the file name (excluding extension) from a path
 '=============================================================================
 FUNCTION Paths_GetFileBaseName$(path$)
-    'just in case we're passed a fixed-length string
-    LET path$ = RTRIM$(path$)
-    
     DIM len_path AS _UNSIGNED LONG
     LET len_path = LEN(path$)
     

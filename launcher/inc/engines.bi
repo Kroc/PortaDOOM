@@ -5,24 +5,24 @@
 TYPE Engine
     'ids can be the same between multiple engines!
     'for example, when there's 32-bit and 64-bit versions
-    id AS STRING * 32
-    folder AS STRING * 32 'the folder name the engine is in
+    id AS LONG
+    dir AS LONG '...the directory name the engine is in
     
     'these are specifically named after the INI-file param names:
-    name AS STRING * 32 '..simple name, for grouping versions together
+    name AS LONG '..simple name, for grouping versions together
     rank AS INTEGER
-    title AS STRING * 64 '.on-screen "friendly name"
-    exe AS STRING * 32 '...executable file-name
-    ver AS INTEGER '.......engine's version number
-    bit AS _BYTE '.........executable architecture: 32 or 64 (bit)
-    vid AS _BYTE '.........renderer colour-depth, i.e. 8, 24, 32
-    kin AS _BYTE '.........a marker to indicate the engine's genealogy
-    cfg AS STRING * 32 '...config file ID to use
-    save AS STRING * 32 '..save-folder name to use
-    tags AS STRING * 128 '.comma-separated tags list the engine supports
-    iwads AS STRING * 128 'semi-colon separated list of allowed IWADs
-    pwads AS STRING * 128 'semi-colon separated list of PWAD file-types
-    auto AS STRING * 128 '.semi-colon separated list of WADs to always include
+    title AS LONG '.on-screen "friendly name"
+    exe AS LONG '...executable file-name
+    ver AS INTEGER 'engine's version number
+    bit AS _BYTE '..executable architecture: 32 or 64 (bit)
+    vid AS _BYTE '..renderer colour-depth, i.e. 8, 24, 32
+    kin AS _BYTE '..a marker to indicate the engine's genealogy
+    cfg AS LONG '...slug to use in the config file-name
+    save AS LONG '..save-folder name to use
+    tags AS LONG '..comma-separated tags list the engine supports
+    iwads AS LONG '.semi-colon separated list of allowed IWADs
+    pwads AS LONG '.semi-colon separated list of PWAD file-types
+    auto AS LONG '..semi-colon separated list of WADs to always include
 END TYPE
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla

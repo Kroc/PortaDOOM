@@ -83,35 +83,35 @@ SUB Games_Add ( _
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game
-    LET Games(Games_Count).id = id$
+    LET Games(Games_Count).id = STRADD&(id$)
     
-    _ECHO "* GAME #" + STRINT$(Games_Count) + ": " + id$
-    IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
-	IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
-    IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
-    IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
-	IF files$ <> "" THEN _ECHO "- " + id$ + ".files" + CHR$(9) + files$
-    IF deh$ <> "" THEN _ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
-    IF bex$ <> "" THEN _ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
-    IF tags$ <> "" THEN _ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
-    IF vid$ <> "" THEN _ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
+    ''_ECHO "* GAME #" + STRINT$(Games_Count) + ": " + id$
+    ''IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
+	''IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
+    ''IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
+    ''IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
+	''IF files$ <> "" THEN _ECHO "- " + id$ + ".files" + CHR$(9) + files$
+    ''IF deh$ <> "" THEN _ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
+    ''IF bex$ <> "" THEN _ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
+    ''IF tags$ <> "" THEN _ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
+    ''IF vid$ <> "" THEN _ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
     
     'process the tag list
     CALL Tags_Add(tags$)
     
     'no problems? write the data into the engine list
-    LET Games(Games_Count).title = title$
+    LET Games(Games_Count).title = STRADD&(title$)
 	IF cmplvl$ = "" THEN
         LET Games(Games_Count).cmplvl = -1
     ELSE
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
-    LET Games(Games_Count).iwad = iwad$
-    LET Games(Games_Count).pwad = pwad$
-	LET Games(Games_Count).files = files$
-    LET Games(Games_Count).deh = deh$
-    LET Games(Games_Count).bex = bex$
-    LET Games(Games_Count).tags = tags$
+    LET Games(Games_Count).iwad = STRADD&(iwad$)
+    LET Games(Games_Count).pwad = STRADD&(pwad$)
+	LET Games(Games_Count).files = STRADD&(files$)
+    LET Games(Games_Count).deh = STRADD&(deh$)
+    LET Games(Games_Count).bex = STRADD&(bex$)
+    LET Games(Games_Count).tags = STRADD&(tags$)
     LET Games(Games_Count).vid = VAL(vid$)
 END SUB
 
