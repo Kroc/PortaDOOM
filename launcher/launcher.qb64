@@ -15,7 +15,7 @@
 '$INCLUDE:'inc\tags.bi'
 '$INCLUDE:'inc\games.bi'
 '$INCLUDE:'inc\engines.bi'
-'$INCLUDE:'inc\wads.bi'
+'$INCLUDE:'inc\iwads.bi'
 
 '-----------------------------------------------------------------------------
 
@@ -120,6 +120,7 @@ launch:
 '$INCLUDE:'inc\tags.bm'
 '$INCLUDE:'inc\games.bm'
 '$INCLUDE:'inc\engines.bm'
+'$INCLUDE:'inc\iwads.bm'
 '$INCLUDE:'inc\wads.bm'
 
 '=============================================================================

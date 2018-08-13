@@ -50,6 +50,7 @@ DIM SHARED DIR_PWAD$
 'order) and worry about the specific invocation at the end
 LET CMD_FILES$ = ""
 
+
 '-----------------------------------------------------------------------------
 '[00] START & /WAIT
 '-----------------------------------------------------------------------------
@@ -59,6 +60,8 @@ LET CMD$ = "START"
 LET CMD$ = CMD$ + " " + CHR$(34) + "PortaDOOM Launcher" + CHR$(34)
 'has the `/WAIT` command-line option been specified?
 IF CMD_WAIT` THEN
+	'add parameter to `START` to hold until the executable closes
+	'-- note this will freeze launcher.exe!
 	LET CMD$ = CMD$ + " /WAIT"
 END IF
 
@@ -67,13 +70,7 @@ END IF
 '-----------------------------------------------------------------------------
 'the "saves" folder should exist (it's part of PortaDOOM),
 'but just in case, check
-IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVES$) THEN
-    'folder is missing? attempt to make it, but be aware
-    'of that potentially failing (read-only media?)
-    ''ON ERROR GOTO err_MkDir
-    MKDIR (DIR_EXE$ + DIR_SAVES$)
-    ''ON ERROR GOTO 0
-END IF
+CALL Launch_MkDir(DIR_EXE$ + DIR_SAVES$)
 
 'add the save-folder name for the selected engine; there can be
 'multiple folder names and IDs for engines, such as 32/64-bit and
@@ -84,13 +81,7 @@ LET DIR_SAVE_ENGINE$ = Paths_AddSlash$( _
 )
 
 'does this folder exist?
-IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVE_ENGINE$) THEN
-    'folder is missing? attempt to make it, but be aware
-    'of that potentially failing (read-only media?)
-    ''ON ERROR GOTO err_MkDir
-    MKDIR (DIR_EXE$ + DIR_SAVE_ENGINE$)
-    ''ON ERROR GOTO 0
-END IF
+CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_ENGINE$)
 
 'the saves folder will contain a sub-folder for each engine (above),
 'and then another sub-folder for the IWAD or PWAD
@@ -108,13 +99,7 @@ ELSE
 END IF
 
 'does this folder exist?
-IF NOT _DIREXISTS(DIR_EXE$ + DIR_SAVE_GAME$) THEN
-    'folder is missing? attempt to make it, but be aware
-    'of that potentially failing (read-only media?)
-    ''ON ERROR GOTO err_MkDir
-    MKDIR (DIR_EXE$ + DIR_SAVE_GAME$)
-    ''ON ERROR GOTO 0
-END IF
+CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_GAME$)
 
 'set the directory for the game engine to assume as default; note that from
 'here on, all paths on the command-line must be relative to save-game folder!
@@ -199,7 +184,7 @@ _ECHO "      -config : " + CMD_CONFIG$ + cfg$
 'in an extra config file (this is why we omit the file extension until now)
 IF Engines_Selected.kin = KIN_V THEN
     LET CMD$ = CMD$ + " -extraconfig " _
-             + CHR$(34) + FIX_PATH$ + CMD_CONFIG$ + ".extra" + cfg$ + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(CMD_CONFIG$ + ".extra" + cfg$) + CHR$(34)
     
     _ECHO " -extraconfig : " + CMD_CONFIG$ + ".extra" + cfg$
 END IF
@@ -218,7 +203,7 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-LET CMD_IWAD$ = WADs_GetIWADPath$(STRGET$(Games_Selected.iwad))
+LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
@@ -304,13 +289,13 @@ END IF
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
     DIM demo$
-    'first try the special demos folder
-    LET demo$ = DIR_DEMOS$ + CMD_DEMO$
+	'try the folder from which the launcher was called
+    LET demo$ = DIR_CUR$ + CMD_DEMO$
     'if it doesn't exist there...
     IF NOT _FILEEXISTS(demo$) THEN
-        'try the folder from which the launcher was called;
-        'e.g. if the demo file is stored alongside the PWAD
-        LET demo$ = DIR_CUR$ + CMD_DEMO$
+        'try the special demos folder
+		LET demo$ = DIR_DEMOS$ + CMD_DEMO$
+		'if it doesn't exist there...
         IF NOT _FILEEXISTS(demo$) THEN
             'FIXME: handle demo file missing
         END IF
@@ -325,20 +310,23 @@ END IF
 '-----------------------------------------------------------------------------
 '[10] warp & skill:
 '-----------------------------------------------------------------------------
-'TODO
-IF CMD_WARP$ <> "" THEN
-	_ECHO ""
-	_ECHO "ERROR: /WARP unimplemented!"
-	_ECHO ""
-	SYSTEM 1
+'TODO: ask for skill level if warp, but no skill
+
+IF Games_Selected.warp_e >= 0 OR Games_Selected.warp_m >= 0 THEN
+	DIM e$: LET e$ = STR$(Games_Selected.warp_e)
+	DIM m$: LET m$ = STR$(Games_Selected.warp_m)
+	DIM warp$
+	
+	IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
+	IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
+	
+	LET CMD$ = CMD$ + " -warp" + warp$
+	_ECHO "        -warp :" + warp$
 END IF
 
-'TODO
-IF CMD_SKILL$ <> "" THEN
-	_ECHO ""
-	_ECHO "ERROR: /SKILL unimplemented!"
-	_ECHO ""
-	SYSTEM 1
+IF Games_Selected.skill >= 0 THEN
+	LET CMD$ = CMD$ + " -skill" + STR$(Games_Selected.skill)
+	_ECHO "       -skill :" + STR$(Games_Selected.skill)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -421,15 +409,28 @@ SYSTEM
 
 '=============================================================================
 
-err_MkDir:
+errMkDir:
 _ECHO ""
 _ECHO "ERROR: could not create required folder!"
 _ECHO ""
 SYSTEM 1
-
+	
 err_fileMissing:
 SYSTEM 1
 
+'make a folder if it doesn't exist; capture errors (e.g. read-only)
+'=============================================================================
+SUB Launch_MkDir(path$)
+	ON ERROR GOTO errMkDir
+	
+	IF NOT _DIREXISTS(path$) THEN
+		'folder is missing? attempt to make it, but be aware
+		'of that potentially failing (read-only media?)
+		MKDIR (path$)
+		'no error, reset error handler
+		ON ERROR GOTO 0
+	END IF
+END SUB
 
 'correct a relative path from the save-game folder
 '=============================================================================

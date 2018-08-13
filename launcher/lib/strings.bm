@@ -1,5 +1,12 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'   STRADD&(text$)				-> LONG
+'   STRGET$(index&)				-> STRING
+'   STRINT$(number&)			-> STRING
+'   TRUNCATE$(text$, length%)	-> STRING
+'   RTRUNCATE$(text$, length%)	-> STRING
+'   UTF8ANSI$(text$)			-> STRING
+
 '=============================================================================
 FUNCTION STRADD&(text$)
 	'accidental nullstring?
@@ -17,24 +24,48 @@ FUNCTION STRADD&(text$)
 END FUNCTION
 
 '=============================================================================
-FUNCTION STRGET$(index%)
+FUNCTION STRGET$(index&)
 	'accidental nullstring?
-	IF index% = 0 THEN
+	IF index& = 0 THEN
 		LET STRGET$ = ""
 	ELSE
-		LET STRGET$ = Strings(index%)
+		LET STRGET$ = Strings(index&)
 	END IF
+END FUNCTION
+
+'is a string an integer? (only numeric digits)
+'=============================================================================
+FUNCTION ISINT(text$)
+	'nullstring?
+	IF text$ = "" THEN
+		LET ISINT = FALSE
+		EXIT FUNCTION
+	END IF
+	
+	'walk the string
+	DIM i AS LONG
+	FOR i = 1 to LEN(text$)
+		SELECT CASE ASC(text$, i)
+			CASE >= 48, <=57
+			CASE ELSE
+				'any non-number, return false
+				LET ISINT = FALSE
+				EXIT FUNCTION
+		END SELECT
+	NEXT i
+	
+	LET ISINT = TRUE
 END FUNCTION
 
 'convert an integer into a string and trim it
 '=============================================================================
-FUNCTION STRINT$ (number%)
-    LET STRINT$ = LTRIM$(STR$(number%))
+FUNCTION STRINT$(number&)
+    LET STRINT$ = LTRIM$(STR$(number&))
 END FUNCTION
 
 'truncate a string to a maximum length, adding ellipsis if necessary
 '=============================================================================
-FUNCTION TRUNCATE$ (text$, length%)
+FUNCTION TRUNCATE$(text$, length%)
     'right-trim because we might get a fixed-width string
     LET text$ = RTRIM$(text$)
     'is any truncation needed in the first place?
@@ -49,7 +80,7 @@ END FUNCTION
 
 'truncate the left hand side of a string to fit a maximum length
 '=============================================================================
-FUNCTION RTRUNCATE$ (text$, length%)
+FUNCTION RTRUNCATE$(text$, length%)
     IF LEN(text$) > length% THEN
         'replace the beginning with an ellipsis
         LET RTRUNCATE$ = "..." + RIGHT$(text$, length% - 3)
@@ -61,7 +92,7 @@ END FUNCTION
 
 'convert a UTF-8 string to an ANSI(cp437) string, with some transliteration
 '=============================================================================
-FUNCTION UTF8ANSI$ (text$)
+FUNCTION UTF8ANSI$(text$)
     DIM b~%%, c~%%, d~%% '=_UNSIGNED _BYTE
     DIM p~& '.............=_UNSIGNED LONG
 

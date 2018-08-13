@@ -25,7 +25,6 @@ THEN
 	LET USAGE$ = "    launcher.exe"
 	LET USAGE$ = USAGE$ + " [/USE <engine>]"
 	LET USAGE$ = USAGE$ + " [/WAIT]"
-	LET USAGE$ = USAGE$ + " [/CONSOLE]"
 	LET USAGE$ = USAGE$ + " [/SW]"
 	LET USAGE$ = USAGE$ + " [/32]"
 	LET USAGE$ = USAGE$ + " [/DEFAULT]"
@@ -46,7 +45,100 @@ THEN
     'TODO: console help
 	
 	_ECHO ""
+	_ECHO " Usage:"
+	_ECHO ""
 	_ECHO USAGE$
+	_ECHO ""
+	_ECHO " /USE <engine>"
+	_ECHO ""
+	_ECHO "    Which engine to use. Can be any of the following:"
+	_ECHO ""
+	_ECHO "        TODO"
+	_ECHO ""
+	_ECHO " /WAIT"
+	_ECHO ""
+	_ECHO "    Causes launcher.exe to not immediately return once the engine is launched."
+	_ECHO "    Script execution will continue only once the engine has quit."
+	_ECHO ""
+	_ECHO " /SW"
+	_ECHO ""
+	_ECHO "    Force software rendering. By default hardware rendering is used in"
+	_ECHO "    GZDoom and PRBoom+ (" + CHR$(34) + "glboom-plus.exe" + CHR$(34) + ")."
+	_ECHO ""
+	_ECHO " /32"
+	_ECHO ""
+	_ECHO "    Always use 32-bit binaries, even on a 64-bit system."
+	_ECHO ""
+	_ECHO " /DEFAULT"
+	_ECHO ""
+	_ECHO "    Loads the engine with the default config file instead of the current user"
+	_ECHO "    config file. Any changes you make to the engine's settings will be saved"
+	_ECHO "    in the default configuration file."
+	_ECHO ""
+	_ECHO " /IWAD <file>"
+	_ECHO ""
+	_ECHO "    The IWAD (Internal WAD) is the base WAD to use."
+	_ECHO ""
+	_ECHO "        TODO"
+	_ECHO ""
+	_ECHO " /PWAD <file>"
+	_ECHO ""
+	_ECHO "        TODO"
+	_ECHO ""
+	_ECHO " /DEH <file>"
+	_ECHO " /BEX <file>"
+	_ECHO ""
+	_ECHO "    Early DOOM modifications were done by way of a live patching system known as"
+	_ECHO "    DeHackEd. These " + CHR$(34) + ".deh" + CHR$(34) + " files are common, even today, as the lowest-common-"
+	_ECHO "    denominator of DOOM modding."
+	_ECHO ""
+	_ECHO "    Boom, a highly-influential early source-port, enhanced this format further"
+	_ECHO "    with " + CHR$(34) + "Boom-EXtended" + CHR$(34) + " DeHackEd files."
+	_ECHO ""
+	_ECHO "    These parameters specify a DEH or BEX file to load alongside any WADs."
+	_ECHO ""
+	_ECHO " /DEMO <file>"
+	_ECHO ""
+	_ECHO "    DOOM play sessions can be recorded and played back later. These are often"
+	_ECHO "    distributed as " + CHR$(34) + ".lmp" + CHR$(34) + " files. The /DEMO option specifies the file to play."
+	_ECHO ""
+	_ECHO " /WARP <map-number>"
+	_ECHO ""
+	_ECHO "    Warp to the given map number. For games with episodes, such as DOOM and"
+	_ECHO "    Heretic, this is in the format `e.m` where `e` is the Episode number and"
+	_ECHO "    `m` is the Map number, e.g. `/WARP 2.4`. For games without episodes like"
+	_ECHO "    DOOM II, it's just a single number e.g. `/WARP 21`"
+	_ECHO ""
+	_ECHO " /SKILL <skill-level>"
+	_ECHO ""
+	_ECHO "    Set skill (difficulty) level. This is a number nominally 1 to 5, but this"
+	_ECHO "    may vary with mods. A value of 0 disables monsters on some engines, but this"
+	_ECHO "    can sometimes prevent a level from being completable."
+	_ECHO ""
+	_ECHO " /CMPLVL <complevel>"
+	_ECHO ""
+	_ECHO "    Specifies the compatibility level, a feature provided by PrBoom+ to emulate"
+	_ECHO "    the behaviour of different versions of the DOOM executable. The complevel"
+	_ECHO "    can be:"
+	_ECHO ""
+	_ECHO "        0     = Doom v1.2"
+	_ECHO "        1     = Doom v1.666"
+	_ECHO "        2     = Doom v1.9"
+	_ECHO "        3     = Ultimate Doom & Doom95"
+	_ECHO "        4     = Final Doom"
+	_ECHO "        5     = DOSDoom"
+	_ECHO "        6     = TASDOOM"
+	_ECHO "        7     = Boom's inaccurate vanilla compatibility mode"
+	_ECHO "        8     = Boom v2.01"
+	_ECHO "        9     = Boom v2.02"
+	_ECHO "        10    = LxDoom"
+	_ECHO "        11    = MBF"
+	_ECHO "        12-16 = PrBoom (old versions)"
+	_ECHO "        17    = Current PrBoom"
+	_ECHO ""
+	_ECHO " /EXEC <file>"
+	_ECHO ""
+	_ECHO "    Execute the script file."
 	_ECHO ""
 	SHELL "PAUSE"
     SYSTEM
@@ -152,10 +244,14 @@ DO WHILE COMMAND$(i) <> ""
         CASE "/WARP"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
+			'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
             
         CASE "/SKILL"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
+			'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
             
         CASE "/CMPLVL"
             'capture the parameter that follows
@@ -164,6 +260,8 @@ DO WHILE COMMAND$(i) <> ""
         CASE "/EXEC"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
+			'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
             
         CASE "--"
             'once the 'end-of-command' marker is encountered, everything
@@ -208,10 +306,10 @@ IF cmd_hasGame` THEN
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
     'since the command-line doesn't provide
     'meta-data, get that internally
-    LET title$ = WADs_GetIWADTitle$(CMD_IWAD$)
+    LET title$ = IWADs_GetTitle$(CMD_IWAD$)
 
     'FIXME: implement `/REQ` for requiring feature tags
-    LET tags$ = WADs_GetIWADTags$(CMD_IWAD$)
+    LET tags$ = IWADs_GetTags$(CMD_IWAD$)
 
     'these can be applied 1:1
     'TODO: validation on this end, to give CMD-specific error message?
@@ -221,6 +319,6 @@ IF cmd_hasGame` THEN
     
     CALL Games_Add ( _
         "cmd", title$, cmplvl$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
-		deh$, bex$, tags$, vid$ _
+		deh$, bex$, tags$, vid$, CMD_WARP$, CMD_SKILL$ _
     )
 END IF

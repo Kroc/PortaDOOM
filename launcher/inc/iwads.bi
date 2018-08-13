@@ -1,10 +1,10 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 TYPE IWAD
-	id AS LONG
-	name AS LONG
-	title AS LONG
-	path AS LONG
+	id AS LONG '....unique identifier, short, no spaces
+	name AS LONG '..a short name, e.g. "DOOM2"
+	title AS LONG '.a more complete name, e.g. "DOOM II: Hell On Earth"
+	path AS LONG '..path of the WAD file
 	tags AS LONG '..comma-separated list of required feature-tags
 	skill1 AS LONG 'description of skill-level 1, e.g. "I'm Too Young To Die"
 	skill2 AS LONG 'description of skill-level 2, e.g. "Hey, Not Too Rough"

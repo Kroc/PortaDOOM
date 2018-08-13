@@ -48,6 +48,7 @@ readINI:
         '      e.g. 64-bit engine on a 32-bit CPU
         DIM ini_section$
         LET ini_section$ = "settings." + game_id$
+		
         DIM ini_title$
         LET ini_title$ = ReadSetting$("", ini_section$, "title")
 		DIM ini_cmplvl$
@@ -66,39 +67,93 @@ readINI:
         LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
         DIM ini_vid$
         LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
+		DIM ini_warp$
+		LET ini_warp$ = ReadSetting$("", ini_section$, "warp")
+        DIM ini_skill$
+		LET ini_skill$ = ReadSetting$("", ini_section$, "skill")
         
         CALL Games_Add( _
             game_id$, ini_title$, ini_cmplvl$, _
             ini_iwad$, ini_pwad$, ini_files$, _
 			ini_deh$, ini_bex$, _
-            ini_tags$, ini_vid$ _
+            ini_tags$, ini_vid$, _
+			ini_warp$, ini_skill$ _
         )
     LOOP
 END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid$ _
+    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid$, _
+	warp$, skill$ _
 )
+	'TODO: find the IWAD meta-data entry referred to by this game
+	
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game
     LET Games(Games_Count).id = STRADD&(id$)
     
-    ''_ECHO "* GAME #" + STRINT$(Games_Count) + ": " + id$
-    ''IF title$ <> "" THEN _ECHO "- " + id$ + ".title" + CHR$(9) + title$
-	''IF cmplvl$ <> "" THEN _ECHO "- " + id$ + ".cmplvl" + CHR$(9) + cmplvl$
-    ''IF iwad$ <> "" THEN _ECHO "- " + id$ + ".iwad" + CHR$(9) + iwad$
-    ''IF pwad$ <> "" THEN _ECHO "- " + id$ + ".pwad" + CHR$(9) + pwad$
-	''IF files$ <> "" THEN _ECHO "- " + id$ + ".files" + CHR$(9) + files$
-    ''IF deh$ <> "" THEN _ECHO "- " + id$ + ".deh" + CHR$(9) + deh$
-    ''IF bex$ <> "" THEN _ECHO "- " + id$ + ".bex" + CHR$(9) + bex$
-    ''IF tags$ <> "" THEN _ECHO "- " + id$ + ".tags" + CHR$(9) + tags$
-    ''IF vid$ <> "" THEN _ECHO "- " + id$ + ".vid" + CHR$(9) + vid$
-    
     'process the tag list
+	'(find any tags we haven't come across before)
     CALL Tags_Add(tags$)
     
+	'no warp parameter?
+	IF warp$ = "" THEN
+		'set defaults
+		LET Games(Games_Count).warp_e = -1
+		LET Games(Games_Count).warp_m = -1
+		
+	ELSE
+		'process warp parameter for episode / map number;
+		'is there a dot in the second character? (i.e. "e.m" format)
+		IF ASC(warp$, 2) = 46 THEN
+			'pick the numbers
+			DIM e$, m$
+			LET e$ = LEFT$(warp$, 1)
+			LET m$ = MID$(warp$, 3)
+			'is the first part a number?
+			IF ISINT(e$) THEN
+				'and the second part?
+				IF ISINT(m$) THEN
+					'add a warp parameter to the game
+					LET Games(Games_Count).warp_e = VAL(e$)
+					LET Games(Games_Count).warp_m = VAL(m$)
+				ELSE
+					'FIXME: not a valid warp parameter?
+					SYSTEM 1
+				END IF
+			ELSE
+				'FIXME: not a valid warp parameter?
+				SYSTEM 1
+			END IF
+		
+		'is it a map number?
+		ELSEIF ISINT(warp$) THEN
+			'add a warp parameter to the game
+			LET Games(Games_Count).warp_m = VAL(warp$)
+			
+		ELSE
+			'TODO: support map-names
+			SYSTEM 1
+		END IF
+	END IF
+	
+	'no skill parameter?
+	IF skill$ = "" THEN
+		'set default
+		LET Games(Games_Count).skill = -1
+	
+	ELSE
+		IF ISINT(skill$) THEN
+			'TODO: check 0-9
+			LET Games(Games_Count).skill = VAL(skill$)
+		ELSE
+			'FIXME: error on non-number
+			SYSTEM 1
+		END IF
+	END IF
+	
     'no problems? write the data into the engine list
     LET Games(Games_Count).title = STRADD&(title$)
 	IF cmplvl$ = "" THEN

@@ -1,0 +1,286 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+'iwads.bm : manage IWADs
+
+'IWADs in PortaDOOM are not automatically enumerated, like engines, as we
+'would technically have to search all folders in "wads/". also we have to
+'deal with IWADs missing, for when we want to search Steam / GOG installs.
+'therefore the IWAD pool of meta-data is built on-demand with files for
+'classic IWADs present
+'
+'IWADs are tricky because they represent a commonly needed resource for other
+'WADs, but are also games themselves
+
+'   IWADs_EnumerateINI(INIFile$)
+'   IWADs_Add(...)
+'   IWADs_GetPath$(iwad$)						-> STRING
+'   IWADs_GetRegistryPath$(key$, value$, path$)	-> STRING
+'   IWADs_GetTitle$(iwad$)						-> STRING
+'   IWADs_GetTags$(iwad$)						-> STRING
+
+'given an INI file, read an IWAD definition from it
+'=============================================================================
+SUB IWADs_EnumerateINI (INIFile$)
+	'locate the INI file:
+    '-------------------------------------------------------------------------
+    DIM path$
+    LET path$ = INIFile$
+    
+    'is the given path absolute?
+    IF Paths_IsAbsolute(path$) THEN
+        'does the file exist?
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    ELSE
+        'search for the file:
+        
+        'check the 'current' directory
+        '-- i.e. the directory the launcher was called *from*
+        LET path$ = DIR_CUR$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+        
+        'check the base WADs directory
+        LET path$ = DIR_WADS$ + INIFile$
+        IF _FILEEXISTS(path$) THEN GOTO readINI
+    END IF
+    
+    'FIXME: file not found!
+    ERROR 100
+    
+readINI:
+    '-------------------------------------------------------------------------
+	DIM iwad_id$
+	LET iwad_id$ = ReadSetting$(path$, "iwad", "id")
+	DIM iwad_name$
+	LET iwad_name$ = ReadSetting$("", "iwad", "name")
+	DIM iwad_title$
+	LET iwad_title$ = ReadSetting$("", "iwad", "title")
+	DIM iwad_path$
+	LET iwad_path$ = ReadSetting$("", "iwad", "path")
+	DIM iwad_tags$
+	LET iwad_tags$ = ReadSetting$("", "iwad", "tags")
+	
+	DIM iwad_skill1$
+	LET iwad_skill1$ = ReadSetting$("", "iwad.skills", "1")
+	DIM iwad_skill2$
+	LET iwad_skill2$ = ReadSetting$("", "iwad.skills", "2")
+	DIM iwad_skill3$
+	LET iwad_skill3$ = ReadSetting$("", "iwad.skills", "3")
+	DIM iwad_skill4$
+	LET iwad_skill4$ = ReadSetting$("", "iwad.skills", "4")
+	DIM iwad_skill5$
+	LET iwad_skill5$ = ReadSetting$("", "iwad.skills", "5")
+	DIM iwad_skill6$
+	LET iwad_skill6$ = ReadSetting$("", "iwad.skills", "6")
+	DIM iwad_skill7$
+	LET iwad_skill7$ = ReadSetting$("", "iwad.skills", "7")
+	DIM iwad_skill8$
+	LET iwad_skill8$ = ReadSetting$("", "iwad.skills", "8")
+	DIM iwad_skill9$
+	LET iwad_skill9$ = ReadSetting$("", "iwad.skills", "9")
+END SUB
+
+'=============================================================================
+SUB IWADs_Add( _
+	id$, name$, title$, path$, tags$, skill1$, skill2$, skill3$, skill4$, _
+	skill5$, skill6$, skill7$, skill8$, skill9$ _
+)
+	'increase the number of IWAD entries
+    LET IWADs_Count = IWADs_Count + 1
+    REDIM _PRESERVE IWADs(1 TO IWADs_Count) AS IWAD
+	
+	'process the tag list
+    CALL Tags_Add(tags$)
+	
+	LET IWADs(IWADs_Count).id = STRADD&(id$)
+	LET IWADs(IWADs_Count).name = STRADD&(name$)
+	LET IWADs(IWADs_Count).title = STRADD&(title$)
+	LET IWADs(IWADs_Count).path = STRADD&(path$)
+	LET IWADs(IWADs_Count).tags = STRADD&(tags$)
+	LET IWADs(IWADs_Count).skill1 = STRADD&(skill1$)
+	LET IWADs(IWADs_Count).skill2 = STRADD&(skill2$)
+	LET IWADs(IWADs_Count).skill3 = STRADD&(skill3$)
+	LET IWADs(IWADs_Count).skill4 = STRADD&(skill4$)
+	LET IWADs(IWADs_Count).skill5 = STRADD&(skill5$)
+	LET IWADs(IWADs_Count).skill6 = STRADD&(skill6$)
+	LET IWADs(IWADs_Count).skill7 = STRADD&(skill7$)
+	LET IWADs(IWADs_Count).skill8 = STRADD&(skill8$)
+	LET IWADs(IWADs_Count).skill9 = STRADD&(skill9$)
+END SUB
+
+'locate an IWAD and return its path -- handles Steam / GOG IWADs
+'=============================================================================
+FUNCTION IWADs_GetPath$(iwad$)
+    'search for the IWAD in the usual places...
+    DIM iwad_path$
+    LET iwad_path$ = WADs_Find$(iwad$)
+    'if not found, look for Steam / GOG installations...
+    IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
+    
+    'return what we've found
+	LET IWADs_GetPath$ = iwad_path$
+    EXIT FUNCTION
+    
+iwadSteamGOG:
+    '-------------------------------------------------------------------------
+    SELECT CASE UCASE$(Paths_GetFileName$(iwad$))
+        CASE "DOOM.WAD", "DOOMU.WAD": GOTO iwadDOOM
+        CASE "DOOM2.WAD": GOTO iwadDOOM2
+        CASE "TNT.WAD": GOTO iwadTNT
+        CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
+        CASE ELSE
+            'FIXME: handle error here
+            ''SYSTEM 1
+    END SELECT
+    
+    RETURN
+    
+iwadDOOM:
+    'try and find "DOOM.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "The Ultimate DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280", _
+        "InstallLocation", "base\DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "The Ultimate DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435827232", _
+        "Path", "DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1135892318", _
+        "Path", "base\wads\DOOM.WAD" _
+    )
+    RETURN
+    
+iwadDOOM2:
+    'try and find "DOOM2.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "DOOM II" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300", _
+        "InstallLocation", "base\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM II" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848814", _
+        "Path", "doom2\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM2.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1135892318", _
+        "Path", "base\wads\DOOM2.WAD" _
+    )
+    RETURN
+    
+iwadTNT:
+    'try and find "TNT.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "Final DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
+        "InstallLocation", "base\TNT.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "Final DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848742", _
+        "Path", "TNT\TNT.WAD" _
+    )
+    RETURN
+    
+iwadPLUTONIA:
+    'try and find "PLUTONIA.WAD" in Steam/GOG installations:
+    '-------------------------------------------------------------------------
+    'is Steam "Final DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
+        "InstallLocation", "base\PLUTONIA.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "Final DOOM" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1435848742", _
+        "Path", "Plutonia\PLUTONIA.WAD" _
+    )
+    RETURN
+    
+END FUNCTION
+
+'get a path from the registry and check for a file's presence
+'=============================================================================
+FUNCTION IWADs_GetRegistryPath$(key$, value$, path$)
+    DIM result$
+    
+    'read the given registry key
+    LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
+    'not there? return blank
+    IF result$ = "" THEN EXIT FUNCTION
+    
+    'add the file-path to the base path we got from the registry
+    LET result$ = Paths_AddSlash$(result$) + path$
+    'does that file exist?
+    IF _FILEEXISTS(result$) THEN
+        'if so, return the complete path
+        LET IWADs_GetRegistryPath$ = result$
+    END IF
+    
+END FUNCTION
+
+'gets a title for a built-in IWAD
+'=============================================================================
+FUNCTION IWADs_GetTitle$(iwad$)
+    SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        CASE "DOOM"
+            LET IWADs_GetTitle$ = "DOOM"
+        CASE "DOOM2"
+            LET IWADs_GetTitle$ = "DOOM II"
+        CASE "HERETIC"
+            LET IWADs_GetTitle$ = "Heretic"
+        CASE "HEXEN"
+            LET IWADs_GetTitle$ = "Hexen: Beyond Heretic"
+        CASE "STRIFE1"
+            LET IWADs_GetTitle$ = "Strife: Quest for the Sigil"
+        CASE "DOOM64"
+            LET IWADs_GetTitle$ = "DOOM 64"
+        CASE ELSE
+            LET IWADs_GetTitle$ = Paths_GetFileBaseName$(iwad$)
+    END SELECT
+END FUNCTION
+
+'gets the compatibility tags for a built-in IWAD
+'=============================================================================
+FUNCTION IWADs_GetTags$(iwad$)
+    SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        CASE "DOOM64"
+            'DOOM 64 does not run on a typical 'vanilla' engine
+            LET IWADs_GetTags$ = "doom64"
+        CASE ELSE
+            'all other built-in IWADs run on any 'vanilla'-compatible engine
+            LET IWADs_GetTags$ = "vanilla"
+    END SELECT
+END FUNCTION
