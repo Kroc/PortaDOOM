@@ -51,6 +51,19 @@ readINI:
 	LET iwad_id$ = ReadSetting$(path$, "iwad", "id")
 	DIM iwad_name$
 	LET iwad_name$ = ReadSetting$("", "iwad", "name")
+	
+	DIM iwad_type
+	SELECT CASE ReadSetting$(path$, "iwad", "type")
+		CASE "DOOM": LET iwad_type = TYPE_DOOM
+		CASE "DOOM2": LET iwad_type = TYPE_DOOM2
+		CASE "HERETIC": LET iwad_type = TYPE_HERETIC
+		CASE "HEXEN": LET iwad_type = TYPE_HEXEN
+		CASE "STRIFE": LET iwad_type = TYPE_STRIFE
+		CASE "DOOM64": LET iwad_type = TYPE_DOOM64
+		CASE ELSE
+			LET iwad_type = TYPE_DOOM2
+	END SELECT
+	
 	DIM iwad_title$
 	LET iwad_title$ = ReadSetting$("", "iwad", "title")
 	DIM iwad_path$
@@ -126,6 +139,9 @@ iwadSteamGOG:
         CASE "DOOM2.WAD": GOTO iwadDOOM2
         CASE "TNT.WAD": GOTO iwadTNT
         CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
+		CASE "HERETIC": GOTO iwadHERETIC
+		CASE "HEXEN": GOTO iwadHEXEN
+		CASE "STRIFE1": GOTO iwadSTRIFE
         CASE ELSE
             'FIXME: handle error here
             ''SYSTEM 1
@@ -229,6 +245,43 @@ iwadPLUTONIA:
     )
     RETURN
     
+iwadHERETIC:
+	'try and find "HERETIC.WAD" in Steam/GOG installations:
+	'-------------------------------------------------------------------------
+	'is Steam "Heretic" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2390", _
+        "InstallLocation", "base\HERETIC.WAD" _
+    )
+	RETURN
+	
+iwadHEXEN:
+	'try and find "HEXEN.WAD" in Steam/GOG installations:
+	'-------------------------------------------------------------------------
+	'is Steam "Hexen" installed?
+	LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2360", _
+        "InstallLocation", "base\HEXEN.WAD" _
+    )
+	RETURN
+	
+iwadSTRIFE:
+	'try and find "STRIFE1.WAD" in Steam/GOG installations:
+	'-------------------------------------------------------------------------
+	'is Steam "The Original Strife: Veteran Edition" installed?
+	LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 317040", _
+        "InstallLocation", "strife1.wad" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "The Original Strife: Veteran Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\GOG.com\Games\1432899949", _
+        "Path", "strife1.wad" _
+    )
+    RETURN
+	
 END FUNCTION
 
 'get a path from the registry and check for a file's presence

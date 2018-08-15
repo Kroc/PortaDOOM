@@ -4,6 +4,7 @@ TYPE Game
     id AS LONG
     title AS LONG
     iwad AS LONG '.............IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
+	type AS _BYTE '............IWAD type
     pwad AS LONG '.............PWAD to play
 	files AS LONG '............list of additional files to include
     cmplvl AS _BYTE '..........can be negative to specify "not given"

@@ -161,7 +161,23 @@ SUB Games_Add ( _
     ELSE
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
+	
     LET Games(Games_Count).iwad = STRADD&(iwad$)
+	SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+		CASE "DOOM"
+			LET Games(Games_Count).type = TYPE_DOOM
+		CASE "DOOM2", "TNT", "PLUTONIA"
+			LET Games(Games_Count).type = TYPE_DOOM2
+		CASE "HERETIC"
+			LET Games(Games_Count).type = TYPE_HERETIC
+		CASE "HEXEN"
+			LET Games(Games_Count).type = TYPE_HEXEN
+		CASE "STRIFE"
+			LET Games(Games_Count).type = TYPE_STRIFE
+		CASE "DOOM64"
+			LET Games(Games_Count).type = TYPE_DOOM64
+	END SELECT
+	
     LET Games(Games_Count).pwad = STRADD&(pwad$)
 	LET Games(Games_Count).files = STRADD&(files$)
     LET Games(Games_Count).deh = STRADD&(deh$)

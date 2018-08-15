@@ -1,8 +1,6 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
 LAUNCHER:
-[ ] parse command-line params
- -  [ ] /EXEC
 [ ] re-create the current UI and logic (will be replaced later)
 
 [P1] Required: (cannot be released until fixed)
@@ -62,7 +60,7 @@ LAUNCHER:
         this will do away with the need for "%~dp0" in "play.bat" files
 [ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
 [X] Icon for launcher.exe
- -  [ ] extra sizes: 20, 64, 96?
+ -  [ ] extra sizes: 20, 96?
 [ ] GZDoom v3.4+ now uses `vid_rendermode` CVAR
 [ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
     incompatibility with ZScript and a visual bug -- current work-around is to

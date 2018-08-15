@@ -310,9 +310,8 @@ END IF
 '-----------------------------------------------------------------------------
 '[10] warp & skill:
 '-----------------------------------------------------------------------------
-'TODO: ask for skill level if warp, but no skill
-
-IF Games_Selected.warp_e >= 0 OR Games_Selected.warp_m >= 0 THEN
+IF Games_Selected.warp_e >= 0 _
+OR Games_Selected.warp_m >= 0 THEN
 	DIM e$: LET e$ = STR$(Games_Selected.warp_e)
 	DIM m$: LET m$ = STR$(Games_Selected.warp_m)
 	DIM warp$
@@ -322,6 +321,50 @@ IF Games_Selected.warp_e >= 0 OR Games_Selected.warp_m >= 0 THEN
 	
 	LET CMD$ = CMD$ + " -warp" + warp$
 	_ECHO "        -warp :" + warp$
+	
+	'do we need to ask for a skill level?
+	IF Games_Selected.skill < 0 THEN
+		_ECHO ""
+		_ECHO "-------------------------------------------------------------------------------"
+		_ECHO ""
+		_ECHO "         CHOOSE YOUR SKILL LEVEL:"
+		_ECHO ""
+		SELECT CASE Games_Selected.type
+			CASE TYPE_HERETIC:
+				_ECHO "         [1] Thou needeth a wet-nurse"
+				_ECHO "         [2] Yellowbellies-r-us"
+				_ECHO "         [3] Bringest them oneth"
+				_ECHO "         [4] Thou art a smite-meister"
+				_ECHO "         [5] Black plague possesses thee"
+			CASE TYPE_STRIFE:
+				_ECHO "         [1] Training"
+				_ECHO "         [2] Rookie"
+				_ECHO "         [3] Veteran"
+				_ECHO "         [4] Elite"
+				_ECHO "         [5] Bloodbath"
+			CASE TYPE_DOOM64:
+				_ECHO "         [1]  Be Gentle!"
+				_ECHO "         [2]  Bring It On!"
+				_ECHO "         [3]  I Own Doom!"
+				_ECHO "         [4]  Watch Me Die!"
+			CASE ELSE:
+				_ECHO "         [1]  I'm Too Young To Die"
+				_ECHO "         [2]  Hey, Not Too Rough"
+				_ECHO "         [3]  Hurt Me Plenty"
+				_ECHO "         [4]  Ultra-Violence"
+				_ECHO "         [5]  Nightmare!"
+		END SELECT
+		_ECHO ""
+		_ECHO "-------------------------------------------------------------------------------"
+		_ECHO ""
+		
+		DIM in$
+		DO
+			_DEST _CONSOLE
+			LET in$ = INKEY$
+		LOOP WHILE ISINT(in$) = FALSE
+		_ECHO "Pressed: " + in$
+	END IF
 END IF
 
 IF Games_Selected.skill >= 0 THEN
