@@ -2,6 +2,7 @@
 
 '   WADs_GetPWADPath$(pwad$)    -> STRING
 '   WADs_Find(iwad$)            -> STRING
+'   WADs_Split$(list$)          -> STRING
 
 'locate a PWAD and return its path -- handles Steam / GOG PWADs
 '=============================================================================

@@ -10,6 +10,7 @@
 'IWADs are tricky because they represent a commonly needed resource for other
 'WADs, but are also games themselves
 
+'   IWADs_Find&(path$)							-> LONG
 '   IWADs_EnumerateINI(INIFile$)
 '   IWADs_Add(...)
 '   IWADs_GetPath$(iwad$)						-> STRING
@@ -17,13 +18,65 @@
 '   IWADs_GetTitle$(iwad$)						-> STRING
 '   IWADs_GetTags$(iwad$)						-> STRING
 
+'match an IWAD file name to its meta-data entry (load meta-data if necessary)
+'returns an index into `IWADs` array, or 0 for not-found
+'=============================================================================
+FUNCTION IWADs_Find&(file_path$)
+	_ECHO "IWADs_Find& : " + file_path$
+	
+	'note that `file_path$` could be a full path, even absolute;
+	'take just the file-name to search. it's assumed that all IWADs have
+	'have unique file-names, something the DOOM community does adhere to
+	
+	DIM file_name$
+	LET file_name$ = UCASE$(Paths_GetFileName$(file_path$))
+	
+	'if there are no IWADs defined, we'll have to go straight to disk
+	IF IWADs_Count = 0 THEN GOTO loadMetaData
+	
+	'walk through the existing IWAD records
+	'searching for the given file name
+	DIM i AS LONG
+	FOR i = 1 TO IWADs_Count
+		'get the IWAD file name from the record
+		DIM iwad_name$
+		LET iwad_name$ = UCASE$(Paths_GetFileName$(STRGET$(IWADs(i).path)))
+		'does the IWAD file-name match?
+		IF iwad_name$ = file_name$ THEN
+			'a record for this IWAD already exists,
+			'return its index
+			LET IWADs_Find& = i
+			EXIT FUNCTION
+		END IF
+	NEXT i
+	
+	'IWAD was not found!
+	
+loadMetaData:
+	'-------------------------------------------------------------------------
+	'try and locate an INI file containing IWAD meta-data
+	'TODO: do we work with the whole path, or just the file-name?
+	
+	_ECHO file_name$
+	
+	'convert the WAD file-name to an INI file-name
+	DIM ini_file$
+	LET ini_file$ = LCASE$(Paths_GetFileBaseName$(file_name$)) + ".ini"
+	
+	'load IWAD meta-data from the INI file (if present)
+	'TODO: if no IWAD meta-data file found, build some rough data ad-hoc?
+	LET IWADs_Find& = IWADs_EnumerateINI&(ini_file$)
+END FUNCTION
+
 'given an INI file, read an IWAD definition from it
 '=============================================================================
-SUB IWADs_EnumerateINI (INIFile$)
+FUNCTION IWADs_EnumerateINI&(ini_path$)
+	_ECHO "IWADs_Enumerate& : " + ini_path$
+
 	'locate the INI file:
     '-------------------------------------------------------------------------
     DIM path$
-    LET path$ = INIFile$
+    LET path$ = ini_path$
     
     'is the given path absolute?
     IF Paths_IsAbsolute(path$) THEN
@@ -34,34 +87,41 @@ SUB IWADs_EnumerateINI (INIFile$)
         
         'check the 'current' directory
         '-- i.e. the directory the launcher was called *from*
-        LET path$ = DIR_CUR$ + INIFile$
+        LET path$ = DIR_CUR$ + ini_path$
+		_ECHO path$
         IF _FILEEXISTS(path$) THEN GOTO readINI
         
         'check the base WADs directory
-        LET path$ = DIR_WADS$ + INIFile$
+        LET path$ = DIR_WADS$ + ini_path$
+		_ECHO path$
         IF _FILEEXISTS(path$) THEN GOTO readINI
     END IF
     
-    'FIXME: file not found!
-    ERROR 100
+    'file not found -- return 0
+	_ECHO "NOT FOUND!"
+    EXIT FUNCTION
     
 readINI:
     '-------------------------------------------------------------------------
 	DIM iwad_id$
 	LET iwad_id$ = ReadSetting$(path$, "iwad", "id")
+	
+	_ECHO _CWD$
+	_ECHO iwad_id$
+	
 	DIM iwad_name$
 	LET iwad_name$ = ReadSetting$("", "iwad", "name")
 	
-	DIM iwad_type
+	DIM iwad_type%%
 	SELECT CASE ReadSetting$(path$, "iwad", "type")
-		CASE "DOOM": LET iwad_type = TYPE_DOOM
-		CASE "DOOM2": LET iwad_type = TYPE_DOOM2
-		CASE "HERETIC": LET iwad_type = TYPE_HERETIC
-		CASE "HEXEN": LET iwad_type = TYPE_HEXEN
-		CASE "STRIFE": LET iwad_type = TYPE_STRIFE
-		CASE "DOOM64": LET iwad_type = TYPE_DOOM64
+		CASE "DOOM": LET iwad_type%% = TYPE_DOOM
+		CASE "DOOM2": LET iwad_type%% = TYPE_DOOM2
+		CASE "HERETIC": LET iwad_type%% = TYPE_HERETIC
+		CASE "HEXEN": LET iwad_type%% = TYPE_HEXEN
+		CASE "STRIFE": LET iwad_type%% = TYPE_STRIFE
+		CASE "DOOM64": LET iwad_type%% = TYPE_DOOM64
 		CASE ELSE
-			LET iwad_type = TYPE_DOOM2
+			LET iwad_type%% = TYPE_DOOM2
 	END SELECT
 	
 	DIM iwad_title$
@@ -89,22 +149,42 @@ readINI:
 	LET iwad_skill8$ = ReadSetting$("", "iwad.skills", "8")
 	DIM iwad_skill9$
 	LET iwad_skill9$ = ReadSetting$("", "iwad.skills", "9")
-END SUB
+	
+	LET IWADs_EnumerateINI& = IWADs_Add&( _
+		iwad_id$, iwad_name$, iwad_type%%, _
+		iwad_title$, iwad_path$, iwad_tags$, _
+		iwad_skill1$, iwad_skill2$, iwad_skill3$, iwad_skill4$, _
+		iwad_skill5$, iwad_skill6$, iwad_skill7$, iwad_skill8$, _
+		iwad_skill9$ _
+	)
+END FUNCTION
 
 '=============================================================================
-SUB IWADs_Add( _
-	id$, name$, title$, path$, tags$, skill1$, skill2$, skill3$, skill4$, _
-	skill5$, skill6$, skill7$, skill8$, skill9$ _
+FUNCTION IWADs_Add&( _
+	id$, name$, game%%, title$, path$, tags$, _
+	skill1$, skill2$, skill3$, skill4$, skill5$, _
+	skill6$, skill7$, skill8$, skill9$ _
 )
+	_ECHO "IWADs_Add&"
+	_ECHO "- id$ : " + id$
+	_ECHO "- name$ : " + name$
+	_ECHO "- game%% : " + STR$(game%%)
+	_ECHO "- title$ : " + title$
+	_ECHO "- path$ : " + path$
+	_ECHO "- tags$ : " + tags$
+	
 	'increase the number of IWAD entries
     LET IWADs_Count = IWADs_Count + 1
     REDIM _PRESERVE IWADs(1 TO IWADs_Count) AS IWAD
+	'we'll return this index
+	LET IWADs_Add& = IWADs_Count
 	
 	'process the tag list
     CALL Tags_Add(tags$)
 	
 	LET IWADs(IWADs_Count).id = STRADD&(id$)
 	LET IWADs(IWADs_Count).name = STRADD&(name$)
+	LET IWADs(IWADs_Count).type = game%%
 	LET IWADs(IWADs_Count).title = STRADD&(title$)
 	LET IWADs(IWADs_Count).path = STRADD&(path$)
 	LET IWADs(IWADs_Count).tags = STRADD&(tags$)
@@ -117,7 +197,8 @@ SUB IWADs_Add( _
 	LET IWADs(IWADs_Count).skill7 = STRADD&(skill7$)
 	LET IWADs(IWADs_Count).skill8 = STRADD&(skill8$)
 	LET IWADs(IWADs_Count).skill9 = STRADD&(skill9$)
-END SUB
+	
+END FUNCTION
 
 'locate an IWAD and return its path -- handles Steam / GOG IWADs
 '=============================================================================

@@ -203,7 +203,10 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(Games_Selected.iwad))
+DIM iwad%%
+LET iwad%% = Games_Selected.iwad
+LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs(iwad%%).path))
+''LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
@@ -360,8 +363,10 @@ OR Games_Selected.warp_m >= 0 THEN
 		
 		DIM in$
 		DO
+			_SOURCE _CONSOLE
 			_DEST _CONSOLE
-			LET in$ = INKEY$
+			LET in$ = INPUT$(1)
+			_ECHO "in: " + in$
 		LOOP WHILE ISINT(in$) = FALSE
 		_ECHO "Pressed: " + in$
 	END IF

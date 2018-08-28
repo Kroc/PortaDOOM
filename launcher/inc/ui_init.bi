@@ -11,7 +11,6 @@ $EXEICON:'.\icon\launcher.ico'
 '-----------------------------------------------------------------------------
 
 $CONSOLE:ONLY
-_DEST _CONSOLE
 ''_CONSOLE OFF
 
 'hide the main window until we have something rendered on it first

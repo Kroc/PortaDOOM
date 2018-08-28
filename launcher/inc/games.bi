@@ -3,7 +3,9 @@
 TYPE Game
     id AS LONG
     title AS LONG
-    iwad AS LONG '.............IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
+	'IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
+	'this is an index into the `IWADs` array where the meta-data is stored
+    iwad AS _BYTE
 	type AS _BYTE '............IWAD type
     pwad AS LONG '.............PWAD to play
 	files AS LONG '............list of additional files to include

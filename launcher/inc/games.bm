@@ -87,13 +87,35 @@ SUB Games_Add ( _
     id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid$, _
 	warp$, skill$ _
 )
-	'TODO: find the IWAD meta-data entry referred to by this game
-	
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game
     LET Games(Games_Count).id = STRADD&(id$)
     
+	'find the IWAD meta-data entry referred to by this game
+	DIM iwad%%
+	LET iwad%% = IWADs_Find&(iwad$)
+	LET Games(Games_Count).iwad = iwad%%
+	
+	IF iwad%% = 0 THEN
+		SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+			CASE "DOOM"
+				LET Games(Games_Count).type = TYPE_DOOM
+			CASE "DOOM2", "TNT", "PLUTONIA"
+				LET Games(Games_Count).type = TYPE_DOOM2
+			CASE "HERETIC"
+				LET Games(Games_Count).type = TYPE_HERETIC
+			CASE "HEXEN"
+				LET Games(Games_Count).type = TYPE_HEXEN
+			CASE "STRIFE"
+				LET Games(Games_Count).type = TYPE_STRIFE
+			CASE "DOOM64"
+				LET Games(Games_Count).type = TYPE_DOOM64
+		END SELECT
+	ELSE
+		LET Games(Games_Count).type = iwad%%
+	END IF
+	
     'process the tag list
 	'(find any tags we haven't come across before)
     CALL Tags_Add(tags$)
@@ -143,7 +165,7 @@ SUB Games_Add ( _
 	IF skill$ = "" THEN
 		'set default
 		LET Games(Games_Count).skill = -1
-	
+		
 	ELSE
 		IF ISINT(skill$) THEN
 			'TODO: check 0-9
@@ -161,22 +183,6 @@ SUB Games_Add ( _
     ELSE
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
-	
-    LET Games(Games_Count).iwad = STRADD&(iwad$)
-	SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
-		CASE "DOOM"
-			LET Games(Games_Count).type = TYPE_DOOM
-		CASE "DOOM2", "TNT", "PLUTONIA"
-			LET Games(Games_Count).type = TYPE_DOOM2
-		CASE "HERETIC"
-			LET Games(Games_Count).type = TYPE_HERETIC
-		CASE "HEXEN"
-			LET Games(Games_Count).type = TYPE_HEXEN
-		CASE "STRIFE"
-			LET Games(Games_Count).type = TYPE_STRIFE
-		CASE "DOOM64"
-			LET Games(Games_Count).type = TYPE_DOOM64
-	END SELECT
 	
     LET Games(Games_Count).pwad = STRADD&(pwad$)
 	LET Games(Games_Count).files = STRADD&(files$)
