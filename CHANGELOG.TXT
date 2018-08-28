@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+28-AUG-18:
+* Update DOOM Retro to v2.7.2
+* Update GZDoom to v3.5.1
+
 13-AUG-18:
 * Update Crispy-Doom to v2.3.0
 
