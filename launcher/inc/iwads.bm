@@ -90,7 +90,6 @@ FUNCTION IWADs_EnumerateINI&(ini_path$)
     END IF
     
     'file not found -- return 0
-	_ECHO "NOT FOUND!"
     EXIT FUNCTION
     
 readINI:

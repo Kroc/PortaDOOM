@@ -8,7 +8,9 @@ REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
 REM # compiled successfully, now run it
-..\PortaDOOM\files\launcher.exe /IWAD DOOM.WAD
+..\PortaDOOM\files\launcher.exe /IWAD DOOM /WARP 2.2
 
-ECHO: & ECHO launcher.exe terminated with status code %ERRORLEVEL%.
-PAUSE
+IF %ERRORLEVEL% GT 0 (
+	ECHO: & ECHO launcher.exe terminated with status code %ERRORLEVEL%.
+	PAUSE
+)

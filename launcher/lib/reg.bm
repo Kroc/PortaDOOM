@@ -54,13 +54,13 @@ query:
             _OFFSET(dataType), _OFFSET(dataBytes), _OFFSET(dataLen) _
         )
         IF l THEN
-            _ECHO "! RegQueryValueExA failed. Error: 0x" + LCASE$(HEX$(l))
+            ''_ECHO "! RegQueryValueExA failed. Error: 0x" + LCASE$(HEX$(l))
         ELSE
             LET Reg_Query$ = RTRIM$(LEFT$(dataBytes, dataLen - 1))
         END IF
         
     ELSEIF l <> ERROR_FILE_NOT_FOUND THEN
-        _ECHO "! RegOpenKeyExA failed. Error: 0x" + LCASE$(HEX$(l))
+        ''_ECHO "! RegOpenKeyExA failed. Error: 0x" + LCASE$(HEX$(l))
     END IF
     
     LET l = RegCloseKey(h)

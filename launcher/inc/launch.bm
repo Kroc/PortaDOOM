@@ -13,16 +13,17 @@
 '   [05]: IWAD
 '   [06]: auto-load files
 '   [07]: PWAD
-'   [08]: DEH & BEX
-'   [09]: demo playback
-'   [10]: warp & skill
-'   [11]: execute scripts
-'   [12]: resolution & full-screen
-'   [13]: launch!
+'   [08]: file-list
+'   [09]: DEH & BEX
+'   [10]: demo playback
+'   [11]: warp & skill
+'   [12]: execute scripts
+'   [13]: resolution & full-screen
+'   [14]: launch!
 
-_ECHO ""
-_ECHO "     PortaDOOM Launcher"
-_ECHO ""
+PRINT ""
+PRINT "     PortaDOOM Launcher"
+PRINT ""
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
@@ -120,9 +121,9 @@ LET CMD$ = CMD$ + " " + CHR$(34) _
          + Launch_FixPath$(DIR_ENGINE$) + STRGET$(Engines_Selected.exe) _
          + CHR$(34)
          
-_ECHO "         port : " + STRGET$(Engines_Selected.title)
-_ECHO "       engine : " + DIR_ENGINE$ + STRGET$(Engines_Selected.exe)
-_ECHO ""
+PRINT "         port : " + RTRUNCATE$(STRGET$(Engines_Selected.title), UI_SCREEN_WIDTH - 17)
+PRINT "       engine : " + RTRUNCATE$(DIR_ENGINE$ + STRGET$(Engines_Selected.exe), UI_SCREEN_WIDTH - 17)
+PRINT ""
 
 '-----------------------------------------------------------------------------
 '[03] config file:
@@ -178,7 +179,7 @@ END IF
 'add the command-line parameter to select the config file
 LET CMD$ = CMD$ + " -config " _
          + CHR$(34) + Launch_FixPath$(CMD_CONFIG$) + cfg$ + CHR$(34)
-_ECHO "      -config : " + CMD_CONFIG$ + cfg$
+PRINT "      -config : " + RTRUNCATE$(CMD_CONFIG$ + cfg$, UI_SCREEN_WIDTH - 17)
 
 'vanilla engines (Chocolate-Doom, Crispy-Doom) store non-original settings
 'in an extra config file (this is why we omit the file extension until now)
@@ -186,7 +187,7 @@ IF Engines_Selected.kin = KIN_V THEN
     LET CMD$ = CMD$ + " -extraconfig " _
              + CHR$(34) + Launch_FixPath$(CMD_CONFIG$ + ".extra" + cfg$) + CHR$(34)
     
-    _ECHO " -extraconfig : " + CMD_CONFIG$ + ".extra" + cfg$
+    PRINT " -extraconfig : " + RTRUNCATE$(CMD_CONFIG$ + ".extra" + cfg$, UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -195,7 +196,7 @@ END IF
 IF Games_Selected.cmplvl >= 0 THEN
     'TODO: should this only be applied to Boom-based engines?
     LET CMD$ = CMD$ + " -complevel " + STRINT$(Games_Selected.cmplvl)
-    _ECHO "   -complevel : " + STRINT$(Games_Selected.cmplvl)
+    PRINT "   -complevel : " + STRINT$(Games_Selected.cmplvl)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -212,7 +213,7 @@ LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
 LET CMD$ = CMD$ + " -iwad " _
          + CHR$(34) + Launch_FixPath$(CMD_IWAD$) + CHR$(34)
-_ECHO "        -iwad : " + CMD_IWAD$
+PRINT "        -iwad : " + RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
 
 '-----------------------------------------------------------------------------
 '[06] auto-load files:
@@ -228,11 +229,10 @@ IF auto_path$ <> "" THEN
 		'FIXME: check file exists; here or at the end?
 		'TODO: other places for auto-load files?
 		
-		'add the file to the ordered list to pass to the engine.
-		'note that auto-load files come before the PWAD
+		'add to the list of files for the command-line params
 		LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
 		
-		_ECHO " (auto) -file : " + DIR_ENGINE$ + auto_path$
+		PRINT " (auto) -file : " + RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
 		
 		LET auto_path$ = WADs_Split$("")
 	LOOP WHILE auto_path$ <> ""
@@ -252,13 +252,52 @@ IF CMD_PWAD$ <> "" THEN
     LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
 	
 	CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
-	
     LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
-    _ECHO "         pwad : " + CMD_PWAD$
+	
+    PRINT " (pwad) -file : " + RTRUNCATE$(CMD_PWAD$, UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
-'[08] DEH & BEX:
+'[08] file-list:
+'-----------------------------------------------------------------------------
+DIM file$
+LET file$ = STRGET$(Games_Selected.files)
+IF file$ <> "" THEN
+	'read the first file from the list
+	LET file$ = WADs_Split$(file$)
+	DO
+		LET file$ = Launch_ClipPath$(file$)
+		LET file$ = Launch_ClipPath$(WADs_Find$(file$))
+		'add to the list of files for the command-line params
+		LET CMD_FILES$ = CMD_FILES$ + file$ + ";"
+		'announce
+		PRINT "        -file : " + RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
+		'get the next file in the list (if any)
+		LET file$ = WADs_Split$("")
+	LOOP WHILE file$ <> ""
+END IF
+
+'add all files to the command-line
+IF CMD_FILES$ <> "" THEN
+	'vanilla engines use `-merge`
+	IF Engines_Selected.kin = KIN_V THEN
+		CMD$ = CMD$ + " -merge"
+	ELSE
+		CMD$ = CMD$ + " -file"
+	END IF
+	
+	'read the first file from the list
+	LET file$ = WADs_Split$(CMD_FILES$)
+	DO
+		'add the file to the command-line
+		LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
+		'get the next file in the list (if any)
+		LET file$ = WADs_Split$("")
+	LOOP WHILE file$ <> ""
+END IF
+
+'-----------------------------------------------------------------------------
+'[09] DEH & BEX:
 '-----------------------------------------------------------------------------
 'has a DEH file been specified?
 LET CMD_DEH$ = STRGET$(Games_Selected.deh)
@@ -270,7 +309,7 @@ IF CMD_DEH$ <> "" THEN
     LET CMD$ = CMD$ + " -deh " _
              + CHR$(34) + Launch_FixPath$(CMD_DEH$) + CHR$(34)
     'and announce
-    _ECHO "         -deh : " + Launch_ClipPath$(CMD_DEH$)
+    PRINT "         -deh : " + RTRUNCATE$(Launch_ClipPath$(CMD_DEH$), UI_SCREEN_WIDTH - 17)
 END IF
 
 'has a BEX file been specified?
@@ -283,11 +322,11 @@ IF CMD_BEX$ <> "" THEN
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
 	'and announce
-    _ECHO "         -bex : " + Launch_ClipPath$(CMD_BEX$)
+    PRINT "         -bex : " + RTRUNCATE$(Launch_ClipPath$(CMD_BEX$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
-'[09] demo playback:
+'[10] demo playback:
 '-----------------------------------------------------------------------------
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
@@ -307,11 +346,11 @@ IF LEN(CMD_DEMO$) <> 0 THEN
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
              + CHR$(34) + Launch_FixPath$(demo$) + CHR$(34)
-    _ECHO "    -playdemo : " + Launch_ClipPath$(demo$)
+    PRINT "    -playdemo : " + RTRUNCATE$(Launch_ClipPath$(demo$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
-'[10] warp & skill:
+'[11] warp & skill:
 '-----------------------------------------------------------------------------
 IF Games_Selected.warp_e >= 0 _
 OR Games_Selected.warp_m >= 0 THEN
@@ -323,73 +362,72 @@ OR Games_Selected.warp_m >= 0 THEN
 	IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
 	
 	LET CMD$ = CMD$ + " -warp" + warp$
-	_ECHO "        -warp :" + warp$
+	PRINT "        -warp :" + warp$
 	
 	'do we need to ask for a skill level?
 	IF Games_Selected.skill < 0 THEN
-		_ECHO ""
-		_ECHO "-------------------------------------------------------------------------------"
-		_ECHO ""
-		_ECHO "         CHOOSE YOUR SKILL LEVEL:"
-		_ECHO ""
+		PRINT ""
+		PRINT "-------------------------------------------------------------------------------"
+		PRINT ""
+		PRINT "         CHOOSE YOUR SKILL LEVEL:"
+		PRINT ""
 		SELECT CASE Games_Selected.type
 			CASE TYPE_HERETIC:
-				_ECHO "         [1] Thou needeth a wet-nurse"
-				_ECHO "         [2] Yellowbellies-r-us"
-				_ECHO "         [3] Bringest them oneth"
-				_ECHO "         [4] Thou art a smite-meister"
-				_ECHO "         [5] Black plague possesses thee"
+				PRINT "         [1] Thou needeth a wet-nurse"
+				PRINT "         [2] Yellowbellies-r-us"
+				PRINT "         [3] Bringest them oneth"
+				PRINT "         [4] Thou art a smite-meister"
+				PRINT "         [5] Black plague possesses thee"
 			CASE TYPE_STRIFE:
-				_ECHO "         [1] Training"
-				_ECHO "         [2] Rookie"
-				_ECHO "         [3] Veteran"
-				_ECHO "         [4] Elite"
-				_ECHO "         [5] Bloodbath"
+				PRINT "         [1] Training"
+				PRINT "         [2] Rookie"
+				PRINT "         [3] Veteran"
+				PRINT "         [4] Elite"
+				PRINT "         [5] Bloodbath"
 			CASE TYPE_DOOM64:
-				_ECHO "         [1]  Be Gentle!"
-				_ECHO "         [2]  Bring It On!"
-				_ECHO "         [3]  I Own Doom!"
-				_ECHO "         [4]  Watch Me Die!"
+				PRINT "         [1]  Be Gentle!"
+				PRINT "         [2]  Bring It On!"
+				PRINT "         [3]  I Own Doom!"
+				PRINT "         [4]  Watch Me Die!"
 			CASE ELSE:
-				_ECHO "         [1]  I'm Too Young To Die"
-				_ECHO "         [2]  Hey, Not Too Rough"
-				_ECHO "         [3]  Hurt Me Plenty"
-				_ECHO "         [4]  Ultra-Violence"
-				_ECHO "         [5]  Nightmare!"
+				PRINT "         [1]  I'm Too Young To Die"
+				PRINT "         [2]  Hey, Not Too Rough"
+				PRINT "         [3]  Hurt Me Plenty"
+				PRINT "         [4]  Ultra-Violence"
+				PRINT "         [5]  Nightmare!"
 		END SELECT
-		_ECHO ""
-		_ECHO "-------------------------------------------------------------------------------"
-		_ECHO ""
+		PRINT ""
+		PRINT "-------------------------------------------------------------------------------"
+		PRINT ""
 		
 		DIM in$
 		DO
-			_SOURCE _CONSOLE
-			_DEST _CONSOLE
-			LET in$ = INPUT$(1)
-			_ECHO "in: " + in$
+			LET in$ = INKEY$
 		LOOP WHILE ISINT(in$) = FALSE
-		_ECHO "Pressed: " + in$
+		
+		LET Games_Selected.skill = VAL(in$)
 	END IF
 END IF
 
 IF Games_Selected.skill >= 0 THEN
 	LET CMD$ = CMD$ + " -skill" + STR$(Games_Selected.skill)
-	_ECHO "       -skill :" + STR$(Games_Selected.skill)
+	PRINT "       -skill :" + STR$(Games_Selected.skill)
 END IF
 
 '-----------------------------------------------------------------------------
-'[11] execute scripts:
+'[12] execute scripts:
 '-----------------------------------------------------------------------------
 'TODO
 IF CMD_EXEC$ <> "" THEN
-	_ECHO ""
-	_ECHO "ERROR: /EXEC unimplemented!"
-	_ECHO ""
-	SYSTEM 1
+	PRINT ""
+	PRINT "ERROR: /EXEC unimplemented!"
+	PRINT ""
+	PRINT "Press Any Key to Exit"
+	SLEEP: SYSTEM 1
 END IF
 
 '-----------------------------------------------------------------------------
-'[12] resolution & full-screen:
+'[13] resolution & full-screen:
 '-----------------------------------------------------------------------------
 'the full-screen parameter varies by engine-type;
 'ZDoom-based engines use `+fullscreen`:
@@ -406,33 +444,8 @@ LET screen_height = _DESKTOPHEIGHT
 LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
 LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
 
-_ECHO "       -width :" + STR$(screen_width) _
+PRINT "       -width :" + STR$(screen_width) _
     + "  -height :" + STR$(screen_height)
-
-'-----------------------------------------------------------------------------
-'[13] file list:
-'-----------------------------------------------------------------------------
-DIM file$
-LET file$ = CMD_FILES$
-IF file$ <> "" THEN
-	'vanilla engines use `-merge`
-	IF Engines_Selected.kin = KIN_V THEN
-		CMD$ = CMD$ + " -merge"
-	ELSE
-		CMD$ = CMD$ + " -file"
-	END IF
-	
-	'read the first file from the list
-	LET file$ = WADs_Split$(file$)
-	DO
-		'announce
-		_ECHO "        -file : " + Launch_ClipPath$(file$)
-		'add the file to the command-line
-		LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
-		'get the next file in the list (if any)
-		LET file$ = WADs_Split$("")
-	LOOP WHILE file$ <> ""
-END IF
 
 '-----------------------------------------------------------------------------
 '[14] launch!
@@ -447,11 +460,11 @@ ELSE
 	LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
 END IF
 
-_ECHO ""
-_ECHO CMD$
-_ECHO ""
+PRINT ""
+PRINT CMD$
+PRINT ""
 
-SHELL "pause"
+SLEEP
 CHDIR DIR_EXE$ + DIR_SAVE_GAME$
 SHELL CMD$
 
@@ -460,10 +473,11 @@ SYSTEM
 '=============================================================================
 
 errMkDir:
-_ECHO ""
-_ECHO "ERROR: could not create required folder!"
-_ECHO ""
-SYSTEM 1
+PRINT ""
+PRINT "ERROR: could not create required folder!"
+PRINT ""
+PRINT "Press Any Key to Exit"
+SLEEP: SYSTEM 1
 	
 err_fileMissing:
 SYSTEM 1
