@@ -474,6 +474,7 @@ REM # hardware or software rendering?
 REM # doom.bat will automatically handle using prboom & gzdoom's software renderer
 IF %SW% EQU 1 SET PARAMS=%PARAMS% /SW
 
+CLS
 "%HERE%\launcher.exe" /USE %ENGINE% %PARAMS% -- %FILES%
 
 EXIT /B

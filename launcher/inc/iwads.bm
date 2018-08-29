@@ -22,8 +22,6 @@
 'returns an index into `IWADs` array, or 0 for not-found
 '=============================================================================
 FUNCTION IWADs_Find&(file_path$)
-	_ECHO "IWADs_Find& : " + file_path$
-	
 	'note that `file_path$` could be a full path, even absolute;
 	'take just the file-name to search. it's assumed that all IWADs have
 	'have unique file-names, something the DOOM community does adhere to
@@ -57,8 +55,6 @@ loadMetaData:
 	'try and locate an INI file containing IWAD meta-data
 	'TODO: do we work with the whole path, or just the file-name?
 	
-	_ECHO file_name$
-	
 	'convert the WAD file-name to an INI file-name
 	DIM ini_file$
 	LET ini_file$ = LCASE$(Paths_GetFileBaseName$(file_name$)) + ".ini"
@@ -71,8 +67,6 @@ END FUNCTION
 'given an INI file, read an IWAD definition from it
 '=============================================================================
 FUNCTION IWADs_EnumerateINI&(ini_path$)
-	_ECHO "IWADs_Enumerate& : " + ini_path$
-
 	'locate the INI file:
     '-------------------------------------------------------------------------
     DIM path$
@@ -88,12 +82,10 @@ FUNCTION IWADs_EnumerateINI&(ini_path$)
         'check the 'current' directory
         '-- i.e. the directory the launcher was called *from*
         LET path$ = DIR_CUR$ + ini_path$
-		_ECHO path$
         IF _FILEEXISTS(path$) THEN GOTO readINI
         
         'check the base WADs directory
         LET path$ = DIR_WADS$ + ini_path$
-		_ECHO path$
         IF _FILEEXISTS(path$) THEN GOTO readINI
     END IF
     
@@ -105,9 +97,6 @@ readINI:
     '-------------------------------------------------------------------------
 	DIM iwad_id$
 	LET iwad_id$ = ReadSetting$(path$, "iwad", "id")
-	
-	_ECHO _CWD$
-	_ECHO iwad_id$
 	
 	DIM iwad_name$
 	LET iwad_name$ = ReadSetting$("", "iwad", "name")
@@ -165,14 +154,6 @@ FUNCTION IWADs_Add&( _
 	skill1$, skill2$, skill3$, skill4$, skill5$, _
 	skill6$, skill7$, skill8$, skill9$ _
 )
-	_ECHO "IWADs_Add&"
-	_ECHO "- id$ : " + id$
-	_ECHO "- name$ : " + name$
-	_ECHO "- game%% : " + STR$(game%%)
-	_ECHO "- title$ : " + title$
-	_ECHO "- path$ : " + path$
-	_ECHO "- tags$ : " + tags$
-	
 	'increase the number of IWAD entries
     LET IWADs_Count = IWADs_Count + 1
     REDIM _PRESERVE IWADs(1 TO IWADs_Count) AS IWAD

@@ -270,7 +270,7 @@ IF CMD_DEH$ <> "" THEN
     LET CMD$ = CMD$ + " -deh " _
              + CHR$(34) + Launch_FixPath$(CMD_DEH$) + CHR$(34)
     'and announce
-    _ECHO "         -deh : " + CMD_DEH$
+    _ECHO "         -deh : " + Launch_ClipPath$(CMD_DEH$)
 END IF
 
 'has a BEX file been specified?
@@ -283,7 +283,7 @@ IF CMD_BEX$ <> "" THEN
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
 	'and announce
-    _ECHO "         -bex : " + CMD_BEX$
+    _ECHO "         -bex : " + Launch_ClipPath$(CMD_BEX$)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -307,7 +307,7 @@ IF LEN(CMD_DEMO$) <> 0 THEN
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
              + CHR$(34) + Launch_FixPath$(demo$) + CHR$(34)
-    _ECHO "    -playdemo : " + demo$
+    _ECHO "    -playdemo : " + Launch_ClipPath$(demo$)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -425,9 +425,11 @@ IF file$ <> "" THEN
 	'read the first file from the list
 	LET file$ = WADs_Split$(file$)
 	DO
+		'announce
+		_ECHO "        -file : " + Launch_ClipPath$(file$)
 		'add the file to the command-line
 		LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
-		
+		'get the next file in the list (if any)
 		LET file$ = WADs_Split$("")
 	LOOP WHILE file$ <> ""
 END IF

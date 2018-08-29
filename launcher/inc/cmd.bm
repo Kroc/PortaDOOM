@@ -274,7 +274,7 @@ DO WHILE COMMAND$(i) <> ""
 				'continue searching
 				LET i = i + 1
 			LOOP
-			'cannot process any other commands
+			
 			EXIT DO
 			
         CASE ELSE
@@ -294,7 +294,6 @@ DO WHILE COMMAND$(i) <> ""
     END SELECT
     LET i = i + 1
 LOOP
-_ECHO ""
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
