@@ -5,7 +5,6 @@
 'parameters, any mods (if selected) and so forth. we need to build the
 'right command-line to do all of this
 '
-'   [00]: START & /WAIT
 '   [01]: save game path
 '   [02]: engine executable
 '   [03]: config file
@@ -51,21 +50,6 @@ DIM SHARED DIR_PWAD$
 'order) and worry about the specific invocation at the end
 LET CMD_FILES$ = ""
 
-
-'-----------------------------------------------------------------------------
-'[00] START & /WAIT
-'-----------------------------------------------------------------------------
-'use the `START` command to launch the engine without freezing up the launcher
-LET CMD$ = "START"
-'add a window title
-LET CMD$ = CMD$ + " " + CHR$(34) + "PortaDOOM Launcher" + CHR$(34)
-'has the `/WAIT` command-line option been specified?
-IF CMD_WAIT` THEN
-	'add parameter to `START` to hold until the executable closes
-	'-- note this will freeze launcher.exe!
-	LET CMD$ = CMD$ + " /WAIT"
-END IF
-
 '-----------------------------------------------------------------------------
 '[01] save game path:
 '-----------------------------------------------------------------------------
@@ -102,14 +86,6 @@ END IF
 'does this folder exist?
 CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_GAME$)
 
-'set the directory for the game engine to assume as default; note that from
-'here on, all paths on the command-line must be relative to save-game folder!
-LET CMD$ = CMD$ + " /D " + CHR$(34) + DIR_EXE$ + DIR_SAVE_GAME$ + CHR$(34)
-
-'ensure it ends with a slash
-'TODO: Add mod support to this
-LET DIR_SAVE_GAME$ = Paths_AddSlash$(DIR_SAVE_GAME$)
-
 '-----------------------------------------------------------------------------
 '[02] engine executable:
 '-----------------------------------------------------------------------------
@@ -117,7 +93,7 @@ DIM DIR_ENGINE$
 LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(STRGET$(Engines_Selected.dir))
 
 'add the engine executable to the command-line
-LET CMD$ = CMD$ + " " + CHR$(34) _
+LET CMD$ = CHR$(34) _
          + Launch_FixPath$(DIR_ENGINE$) + STRGET$(Engines_Selected.exe) _
          + CHR$(34)
          
@@ -463,10 +439,20 @@ END IF
 PRINT ""
 PRINT CMD$
 PRINT ""
-
 SLEEP
+
+'set the directory for the game engine to assume as default; note that all
+'paths on the command-line must be relative to the save-game folder!
 CHDIR DIR_EXE$ + DIR_SAVE_GAME$
-SHELL CMD$
+
+'has the `/WAIT` command-line option been specified?
+IF CMD_WAIT` THEN
+	'start the engine and wait for it to close
+	SHELL CMD$
+ELSE
+	'start the engine, but continue running here
+	SHELL _DONTWAIT CMD$
+END IF
 
 SYSTEM
 
