@@ -1,4 +1,4 @@
-# ignore folders beginning with "!"
+# ignore folders beginning with "__"
 # (my way of including stuff not ready yet)
-\!*
-**\!*
+__*
+**\__*

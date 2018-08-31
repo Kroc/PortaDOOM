@@ -5,9 +5,9 @@ Desktop.ini
 Thumbs.db
 .DS_STORE
 
-# anything beginning with an exclamation mark will be excluded
-\!*
-**\!*
+# anything beginning with double-underscore will be excluded
+__*
+**\__*
 
 # don't include PortaDOOM's DOSmag as it will be pulled from the DOSmag folder
 PortaDOOM.exe

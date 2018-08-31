@@ -1,3 +1,40 @@
+GZDoom 3.5.1
+--------------------------------------------------------------------------------
+Notice: This release has been split into two. There is now a "modern" version and a "vintage" version, for older hardware. The reason for this is that some recent changes to improve performance on modern hardware resulted in quite severe slowdowns on Intel's OpenGL 2 hardware. So in order to give these users the best possible experience it was decided to provide this vintage build which adds all new non-renderer-related features with the latest state of the renderer from before the abovementioned change. The vintage version is provided thanks to the efforts of drfrag.
+
+Please note that this solution is only a temporary measure. User share of OpenGL 2 hardware had already been low when we ran our survey with GZDoom 3.3 and once this drops any further the vintage build will be discontinued. If you cannot run the main (modern) build we strongly recommend to upgrade your hardware.
+
+Please note that the survey is now closed. GZDoom 3.5.1 does not include the survey code that 3.5.0 did.
+
+Highlights:
+
+* Implemented "resolution mode selector"
+* add post processing support to the software renderer and softpoly
+* add vid_hdr cvar that enables higher than 8bpc output for monitors that support it
+* fix: softpoly TEXTURES sprites with scale of 2 are tiled
+* add dithering support to emulate higher BPC displays than your real one. this should allow smoother gradients for light fades and such.
+* Make various getter and pure-math Actor methods clearscope.
+
+Details:
+
+* add vid_hdr cvar that enables higher than 8bpc output for monitors that support it
+* fix: softpoly TEXTURES sprites with scale of 2 are tiled
+* Implemented "resolution mode selector"
+* add post processing support to the software renderer and softpoly
+* Fix model rendering only using interpolated yaw. Pitch and roll are now also interpolated.
+* add dithering support to emulate higher BPC displays than your real one. this should allow smoother gradients for light fades and such.
+* clear GLWF_TRANSLUCENT at the end of PutWall.
+* fixed FraggleScript's moving camera.
+* Make various getter and pure-math Actor methods clearscope.
+* disable runtime buffer security check in release build.
+* prohibit assignment of dynamic arrays
+* Avoid overriding vr eye-specific buffer binding during 2D rendering.
+* only render visual portals if they are front facing in softpoly
+* disable survey code, 3.5.0's is over
+* got rid of FNameNoInit and made the default constructor of FName non-initializing.
+* Add the "RightIndexOf" method to FString, which works like String.lastIndexOf from JavaScript
+* Deprecate the LastIndexOf method of StringStruct
+
 GZDoom 3.5.0
 --------------------------------------------------------------------------------
 *Mon Jul 30, 2018 1:49 pm*

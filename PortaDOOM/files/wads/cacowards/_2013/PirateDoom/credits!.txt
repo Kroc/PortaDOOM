@@ -1,0 +1,100 @@
+Pirate Doom! A GZDoom TC by Arch
+
+CREDITS:
+
+
+Rayman II textures ripped and edited by MSPaintR0cks
+
+Melee Island textures handrawn by Jochen Isensee
+
+Pirate sounds by David Ginsberg (aka Captain Morgan)
+
+coding and text review by Ed the Bat
+
+Wine and mug sprites by Blox
+
+Arachnotron's exhaust by Captain J
+
+Imp knife and Hell Knight axe concept and coding by SamVision
+
+Dynamite Launcher sprites by le_L
+
+CyberPirate belt by Jabberwock
+
+Skill level names by Ethril
+
+"Try your luck" ACS script by IBM5155 
+
+Outlaws gun sprites ripped by Dunkelschwamm 
+
+Sword sprites from Scuba Steve's Action Doom 2
+
+Player sprites from Gali's "A Fistful of Doom"
+
+Helmetless Marine skin by BlueFire88
+
+Hanging lantern sprite by Captain Red
+
+Fog, bulletpuffs and automap background from Tormentor 667's "City of the Damned: Apocalipse"
+
+Cannon sprites from Moorhuhn Piraten
+
+Minicannon sprites from Monkey Island 3
+
+Pygmy mask from "World Heroes II"
+
+Shaman skull necklace from "Street Fighter II"
+
+boss life meter by Jimmy
+
+Splashes by Enjay
+
+Revilution - Trampoline code and general help
+
+Bullet decals from Stascream's "Winter's Fury"
+
+blood from Xaser's NecroDoom
+
+Deathtrap Dungeon sounds ripped by Zero X. Diamond
+
+Original Doom and Heretic sprites by Id Software
+
+Outlaws weapon sprites, Monkey island sprites and music by LucasArts
+
+Rayman 2 textures by Ubisoft
+
+
+BETA TESTERS:
+
+Tiago Ruback, Captain J, Ravick, Slashbane and Gunpsycho
+ 
+
+MUSIC:
+
+Monkey Island series, Super Mario World, Ghosts and Goblins,
+Grim Fandango, Warcraft, Outlaws, Stan Jones, Day of the Tentacle, 
+Banjo-Kazooie, Banjo-Tooie, Mozart and special guest appearance by AC/DC.
+
+
+
+THANKS TO:
+
+Enjay - Flying hat idea, pirate sentences
+Mauricio Rocks - ACS and texture help
+Zer0 - Pirate sounds from medievil 1 & 2
+ShadesMaster - "Treasure Cove" and "Barnacle Bar" map ideas
+JabberWock - "Battleships!" map idea, Cyberpirate concept
+RV-007 - Smoking guns idea
+Obsidian - Tracer parrot idea
+lzvk25 - diablo 2 itens (iron boots)
+CodeImp for doombuilder
+Graf Zahl for GZdoom
+Randi for Zdoom
+and Kraflab, LazerLong, KingDime, Tarnsman, JohnSuitepee, Officer D, MasterHelpo, Archvile78, DeadWing and TheUACveteran for 
+their gameplay streams and videos.
+
+
+
+
+
+ 
