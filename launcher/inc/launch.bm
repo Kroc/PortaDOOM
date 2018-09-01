@@ -328,8 +328,10 @@ END IF
 '-----------------------------------------------------------------------------
 '[11] warp & skill:
 '-----------------------------------------------------------------------------
+'is a warp requested? (episode and/or map-number)
 IF Games_Selected.warp_e >= 0 _
 OR Games_Selected.warp_m >= 0 THEN
+	'compose the -warp parameter for engines:
 	DIM e$: LET e$ = STR$(Games_Selected.warp_e)
 	DIM m$: LET m$ = STR$(Games_Selected.warp_m)
 	DIM warp$
@@ -337,41 +339,70 @@ OR Games_Selected.warp_m >= 0 THEN
 	IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
 	IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
 	
+	'add to the command-line and announce
 	LET CMD$ = CMD$ + " -warp" + warp$
 	PRINT "        -warp :" + warp$
 	
 	'do we need to ask for a skill level?
+	'(warp, but no skill-level provided)
 	IF Games_Selected.skill < 0 THEN
 		PRINT ""
 		PRINT "-------------------------------------------------------------------------------"
 		PRINT ""
 		PRINT "         CHOOSE YOUR SKILL LEVEL:"
+		PRINT "         (Press numbered key)"
 		PRINT ""
-		SELECT CASE Games_Selected.type
-			CASE TYPE_HERETIC:
-				PRINT "         [1] Thou needeth a wet-nurse"
-				PRINT "         [2] Yellowbellies-r-us"
-				PRINT "         [3] Bringest them oneth"
-				PRINT "         [4] Thou art a smite-meister"
-				PRINT "         [5] Black plague possesses thee"
-			CASE TYPE_STRIFE:
-				PRINT "         [1] Training"
-				PRINT "         [2] Rookie"
-				PRINT "         [3] Veteran"
-				PRINT "         [4] Elite"
-				PRINT "         [5] Bloodbath"
-			CASE TYPE_DOOM64:
-				PRINT "         [1]  Be Gentle!"
-				PRINT "         [2]  Bring It On!"
-				PRINT "         [3]  I Own Doom!"
-				PRINT "         [4]  Watch Me Die!"
-			CASE ELSE:
-				PRINT "         [1]  I'm Too Young To Die"
-				PRINT "         [2]  Hey, Not Too Rough"
-				PRINT "         [3]  Hurt Me Plenty"
-				PRINT "         [4]  Ultra-Violence"
-				PRINT "         [5]  Nightmare!"
-		END SELECT
+		
+		'get the list of skill-levels from the IWAD meta-data;
+		'if there is none, default to DOOM's descriptions
+		IF Games_Selected.iwad = 0 _
+		OR IWADs(Games_Selected.iwad).skill1 = 0 _
+		THEN
+			PRINT "         [1]  I'm Too Young To Die"
+			PRINT "         [2]  Hey, Not Too Rough"
+			PRINT "         [3]  Hurt Me Plenty"
+			PRINT "         [4]  Ultra-Violence"
+			PRINT "         [5]  Nightmare!"
+		ELSE
+			'work through the list of IWAD skill-levels (up to 9)
+			IF IWADs(Games_Selected.iwad).skill1 > 0 THEN
+				PRINT "         [1]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill1)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill2 > 0 THEN
+				PRINT "         [2]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill2)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill3 > 0 THEN
+				PRINT "         [3]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill3)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill4 > 0 THEN
+				PRINT "         [4]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill4)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill5 > 0 THEN
+				PRINT "         [5]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill5)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill6 > 0 THEN
+				PRINT "         [6]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill6)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill7 > 0 THEN
+				PRINT "         [7]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill7)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill8 > 0 THEN
+				PRINT "         [8]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill8)
+			END IF
+			IF IWADs(Games_Selected.iwad).skill9 > 0 THEN
+				PRINT "         [9]  ";
+				PRINT STRGET$(IWADs(Games_Selected.iwad).skill9)
+			END IF
+		END IF
+		
 		PRINT ""
 		PRINT "-------------------------------------------------------------------------------"
 		PRINT ""
