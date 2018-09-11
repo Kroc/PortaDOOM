@@ -4,6 +4,7 @@
 
 11-SEP-18:
 * Updated DOOM Retro to v2.7.3
+- Removed GZDoom v0.9 (I don't think anything will require it)
 
 29-AUG-18:
 * Updated UPX to 3.9.5

@@ -100,7 +100,7 @@ CALL :make_zandronum "zandronum-2" "STRIFE1.WAD"
 
 :zandronum-3
 REM # delete the file in order to re-build it
-IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-09
+IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-10
 
 ECHO * Zandronum-3                DOOM.WAD
 CALL :make_zandronum "zandronum-3" "DOOM.WAD"
@@ -115,19 +115,6 @@ CALL :make_zandronum "zandronum-3" "STRIFE1.WAD"
 
 REM # GZDoom
 REM ============================================================================
-:gzdoom-09
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-09.ini" GOTO :gzdoom-10
-
-ECHO * GZDoom v0.9                DOOM.WAD
-CALL :make_gzdoom "gzdoom-09" "DOOM.WAD"
-ECHO * GZDoom v0.9                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-09" "HERETIC.WAD"
-ECHO * GZDoom v0.9                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-09" "HEXEN.WAD"
-ECHO * GZDoom v0.9                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-09" "STRIFE1.WAD"
-
 :gzdoom-10
 REM # delete the file in order to re-build it
 IF EXIST "default.gzdoom-10.ini" GOTO :gzdoom-11
@@ -593,7 +580,6 @@ REM # (graphics break if this is applied to earlier versions)
 %BIN_FART% "default.gzdoom-3*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
 
 REM # use "Mipmapped" for earlier versions
-%BIN_FART% "default.gzdoom-09.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 %BIN_FART% "default.gzdoom-10.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 %BIN_FART% "default.gzdoom-11.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 %BIN_FART% "default.gzdoom-12.ini" "gl_texture_filter=4" "gl_texture_filter=1"
