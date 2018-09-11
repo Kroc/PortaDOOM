@@ -68,12 +68,6 @@ ECHO:
 ECHO     "ZScript"           Brand-new scripting language to replace DECORATE in
 ECHO                         GZDoom-based engines. Present from GZDoom v3+
 ECHO:
-REM ECHO     chocolate-doom/heretic/hexen/strife     original DOOM-engine limits
-REM ECHO     prboom+                                 no-limits, boom and MBF extensions
-REM ECHO:
-REM ECHO     choco       chocolate-doom/heretic/hexen ONLY
-REM ECHO     zdoom       
-REM ECHO:
 
 ECHO     This is a list of the tags associated with each engine:
 ECHO:
@@ -161,20 +155,6 @@ ECHO:
 ECHO     Execute the script file.
 ECHO:
 PAUSE & EXIT /B 0
-
-REM #	choco		- ONLY chocolate-doom/heretic/hexen
-REM #	prboom		- requires prboom+ specifically (either HW or SW); e.g. "Comatose.wad"
-REM #	hw		- requires a hardware renderer; glboom+, gzdoom, zandronum
-REM #	sw		- requires a software renderer; choco-doom, prboom+, zdoom
-REM #	z		- requires a z-based engine; zdoom, gzdoom, zandronum
-REM #	zdoom		- zdoom based engines, i.e. zdoom, gzdoom (but not zandronum)
-REM #	gzdoom		- gzdoom only
-REM #	gzdoom-??	- gzdoom version ?? only, e.g. gzdoom-22
-REM #	doom64		- DOOM 64 EX only
-REM #	zandronum	- zandronum only (latest version)
-REM #	zandronum-2	- zandronum v2 only 
-REM #	zandronum-3	- zandronum v3 only
-
 
 :init
 REM # path of this script
@@ -442,7 +422,7 @@ IF ERRORLEVEL 2 (
 		SET "ENGINE=gzdoom"
 		SET SW=1
 	) ELSE (
-		SET "ENGINE=prboom"
+		SET "ENGINE=prboom-plus"
 	)
 	GOTO :launch
 )
@@ -463,7 +443,7 @@ IF NOT "%SKILL%" == "" SET PARAMS=%PARAMS% /SKILL %SKILL%
 :exe
 REM --------------------------------------------------------------------------------------------------------------------
 REM # PrBoom+ requirements:
-IF "%ENGINE%" == "prboom" (
+IF "%ENGINE%" == "prboom-plus" (
 	REM # if a compatibility-level is specified, include this for PRBoom engines
 	IF NOT "%CMPLVL%" == "" SET PARAMS=%PARAMS% /CMPLVL %CMPLVL%
 )
@@ -544,6 +524,15 @@ IF /I "%~1" == "bex" (
 )
 REM # requires PRBoom+ specifically:
 IF /I "%~1" == "prboom" (
+	REM # disable non PRBoom+ engines
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_CRISPYDOOM=0
+	SET ENGINE_DOOMRETRO=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_DOOM64EX=0
+)
+IF /I "%~1" == "prboom-plus" (
 	REM # disable non PRBoom+ engines
 	SET ENGINE_CHOCODOOM=0
 	SET ENGINE_CRISPYDOOM=0

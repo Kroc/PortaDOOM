@@ -32,26 +32,28 @@ SUB Engines_Enumerate()
         IF NOT _FILEEXISTS(ini_path$) THEN GOTO NextFolder
         
         'read the global values
-        DIM ini_name$
-        LET ini_name$ = ReadSetting$(ini_path$, "global", "name")
+        DIM ini_engine$
+        LET ini_engine$ = ReadSetting$(ini_path$, "global", "engine")
         DIM ini_rank$
         LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
-        
+		
         DIM ini_index%
         LET ini_index% = 1
         DO
-            DIM ini_engine$
-            LET ini_engine$ = ReadSetting$("", "engines", STRINT$(ini_index%))
-            IF ini_engine$ = "" THEN EXIT DO
+            DIM ini_id$
+            LET ini_id$ = ReadSetting$("", "engines", STRINT$(ini_index%))
+            IF ini_id$ = "" THEN EXIT DO
             
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
-            LET Engines(Engines_Count).id = STRADD&(ini_engine$)
-            
+			
+            LET Engines(Engines_Count).engine = STRADD&(LCASE$(ini_engine$))
+			LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
+			
             'read engine data from the INI file
             DIM ini_section$
-            LET ini_section$ = "engine." + ini_engine$
+            LET ini_section$ = "engine." + ini_id$
             
             DIM ini_title$
             LET ini_title$ = ReadSetting$("", ini_section$, "title")
@@ -80,7 +82,7 @@ SUB Engines_Enumerate()
             
             'executable architecture must be either 32 or 64-bit
             IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
-                'TODO: output warning
+                'TODO: output warning?
                 'default to 32-bit
                 LET ini_bit$ = "32"
             END IF
@@ -89,7 +91,6 @@ SUB Engines_Enumerate()
             CALL Tags_Add(ini_tags$)
             
             LET Engines(Engines_Count).dir = STRADD&(dir$)
-            LET Engines(Engines_Count).name = STRADD&(ini_name$)
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
             LET Engines(Engines_Count).title = STRADD&(ini_title$)
             LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
@@ -175,8 +176,8 @@ SUB Engines_Enumerate()
                 ELSEIF kB% = kA% THEN
                     'compare the names (alphabetically sort engines)
                     DIM nA$, nB$
-                    LET nA$ = STRGET$(Engines(A%).name)
-                    LET nB$ = STRGET$(Engines(B%).name)
+                    LET nA$ = STRGET$(Engines(A%).engine)
+                    LET nB$ = STRGET$(Engines(B%).engine)
                     
                     IF nB$ < nA$ THEN
                         SWAP Engines(A%), Engines(B%)
@@ -270,8 +271,8 @@ SUB Engines_Filter()
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-            IF STRGET$(Engines(i).name) <> CMD_USE$ THEN
-				IF STRGET$(Engines(i).id) <> CMD_USE$ THEN
+            IF STRGET$(Engines(i).engine) <> LCASE$(CMD_USE$) THEN
+				IF STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) THEN
 					_CONTINUE
 				END IF
             END IF
@@ -319,14 +320,14 @@ SUB Engines_Filter()
     NEXT i
 
     'print a list of the candidate engines:
-    ''_ECHO ""
-    ''_ECHO "Candidate Engines:"
-    ''_ECHO "------------------"
+    ''PRINT ""
+    ''PRINT "Candidate Engines:"
+    ''PRINT "------------------"
     ''FOR i = 1 TO Engines_ListCount
-    ''    _ECHO "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
+    ''    PRINT "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
     ''        + STRGET$(Engines(Engines_List(i)).title)
     ''NEXT i
-    ''_ECHO ""
+    ''PRINT ""
     
     'select the 'best' engine by default
     CALL Engines_Select(Engines_List(1))

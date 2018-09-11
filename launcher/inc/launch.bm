@@ -347,7 +347,7 @@ OR Games_Selected.warp_m >= 0 THEN
 	'(warp, but no skill-level provided)
 	IF Games_Selected.skill < 0 THEN
 		PRINT ""
-		PRINT "-------------------------------------------------------------------------------"
+		PRINT "--------------------------------------------------------------------------------"
 		PRINT ""
 		PRINT "         CHOOSE YOUR SKILL LEVEL:"
 		PRINT "         (Press numbered key)"
@@ -404,13 +404,20 @@ OR Games_Selected.warp_m >= 0 THEN
 		END IF
 		
 		PRINT ""
-		PRINT "-------------------------------------------------------------------------------"
-		PRINT ""
+		PRINT "         [?]";
+		'position a blinking cursor over the question-mark
+		LOCATE , POS(0)-2, 1, 0, 31
 		
 		DIM in$
 		DO
 			LET in$ = INKEY$
 		LOOP WHILE ISINT(in$) = FALSE
+		
+		'turn off the cursor
+		LOCATE ,1 , 0
+		
+		PRINT "--------------------------------------------------------------------------------"
+		PRINT ""
 		
 		LET Games_Selected.skill = VAL(in$)
 	END IF
@@ -459,7 +466,7 @@ PRINT "       -width :" + STR$(screen_width) _
 '-----------------------------------------------------------------------------
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
-IF STRGET$(Engines_Selected.name) = "PrBoom+" THEN
+IF STRGET$(Engines_Selected.engine) = "prboom-plus" THEN
 	LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
 	'all other engines use `-savedir`,
@@ -467,10 +474,12 @@ ELSE
 	LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
 END IF
 
-PRINT ""
-PRINT CMD$
-PRINT ""
-SLEEP
+IF CMD_DEBUG` THEN
+	PRINT ""
+	PRINT CMD$
+	PRINT ""
+	SLEEP
+END IF
 
 'set the directory for the game engine to assume as default; note that all
 'paths on the command-line must be relative to the save-game folder!

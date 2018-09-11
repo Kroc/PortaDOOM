@@ -7,6 +7,8 @@
 	"editor.tabSize": 8,
 	"editor.renderWhitespace": "boundary",
 	"files.exclude": {
+		"archive/": true,
+		"screenshots/": true,
 		"build/": true,
 		"releases/": true,
 		"**/*.wad": true,

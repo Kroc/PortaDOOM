@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+11-SEP-18:
+* Updated DOOM Retro to v2.7.3
+
 29-AUG-18:
 * Updated UPX to 3.9.5
 

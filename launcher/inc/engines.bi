@@ -3,13 +3,12 @@
 
 'structure to store the details of an engine:
 TYPE Engine
-    'ids can be the same between multiple engines!
-    'for example, when there's 32-bit and 64-bit versions
-    id AS LONG
+    engine AS LONG
     dir AS LONG '...the directory name the engine is in
     
+	id AS LONG
+	
     'these are specifically named after the INI-file param names:
-    name AS LONG '..simple name, for grouping versions together
     rank AS INTEGER
     title AS LONG '.on-screen "friendly name"
     exe AS LONG '...executable file-name
