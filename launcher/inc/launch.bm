@@ -183,7 +183,6 @@ END IF
 DIM iwad%%
 LET iwad%% = Games_Selected.iwad
 LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs(iwad%%).path))
-''LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(Games_Selected.iwad))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
@@ -219,7 +218,7 @@ END IF
 '-----------------------------------------------------------------------------
 'doom engines typically don't have a specific concept of a "PWAD", it's just
 'an additional file to load like any other and it's not necessarily the first
-'listed, that will likely be the auto-load files
+'listed -- that will likely be the auto-load files
 
 LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
 IF CMD_PWAD$ <> "" THEN
@@ -431,13 +430,21 @@ END IF
 '-----------------------------------------------------------------------------
 '[12] execute scripts:
 '-----------------------------------------------------------------------------
-'TODO
 IF CMD_EXEC$ <> "" THEN
-	PRINT ""
-	PRINT "ERROR: /EXEC unimplemented!"
-	PRINT ""
-	PRINT "Press Any Key to Exit"
-	SLEEP: SYSTEM 1
+	'try and find the file:
+    DIM exec$
+	'try the folder from which the launcher was called
+    LET exec$ = DIR_CUR$ + CMD_EXEC$
+    'if it doesn't exist there...
+    IF NOT _FILEEXISTS(demo$) THEN
+		'TODO: check engine folder? check config folder?
+        'FIXME: handle exec file missing
+    END IF
+    
+    'add the command-line param to play the demo
+    LET CMD$ = CMD$ + " -exec " _
+             + CHR$(34) + Launch_FixPath$(exec$) + CHR$(34)
+    PRINT "        -exec : " + RTRUNCATE$(Launch_ClipPath$(exec$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -472,6 +479,13 @@ ELSE
 	'all other engines use `-savedir`,
 	'except doom64x which has no support yet
 	LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
+END IF
+
+'DOOM 64 EX: fix for Sound Font not being found (it's looking in the 'current
+'directory' rather than the executable's directory?)
+IF STRGET$(Engines_Selected.engine) = "doom64ex" THEN
+	LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
+			        + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
 END IF
 
 IF CMD_DEBUG` THEN
