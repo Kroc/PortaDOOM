@@ -5,7 +5,7 @@ CD %~dp0
 REM # relative location of the saves folder (where user-configs are stored)
 SET "SAVES=..\saves"
 REM # relative path to launcher.exe
-SET "DOOM=..\launcher.exe"
+SET "LAUNCHER=..\launcher.exe"
 
 :menu
 REM ============================================================================
@@ -231,7 +231,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ============================================================================
 REM # launch the engine using our default config file
-CALL %LAUNCHER% /DEFAULT /WAIT /USE %~1 /IWAD %~2
+"%LAUNCHER%" /DEFAULT /WAIT /USE %~1 /IWAD %~2
 GOTO:EOF
 
 :launch_engine_sw
@@ -240,5 +240,5 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ============================================================================
 REM # launch the engine using our default config file
-CALL %LAUNCHER% /DEFAULT /WAIT /USE %~1 /SW /IWAD %~2
+"%LAUNCHER%" /DEFAULT /WAIT /USE %~1 /SW /IWAD %~2
 GOTO:EOF

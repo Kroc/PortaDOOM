@@ -420,7 +420,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # main keys
 %BIN_FART% "default.%~1.cfg" "key_up                        72"		"key_up                        17"
@@ -442,6 +442,7 @@ REM # always run
 %BIN_FART% "default.%~1.cfg" "joyb_speed                    2"		"joyb_speed                    29"
 
 REM # compatibility
+%BIN_FART% "default.%~1.extra.cfg" "fullscreen                    0"	"fullscreen                    1"
 %BIN_FART% "default.%~1.extra.cfg" "show_endoom                   1"	"show_endoom                   0"
 %BIN_FART% "default.%~1.extra.cfg" "vanilla_savegame_limit        1"	"vanilla_savegame_limit        0"
 %BIN_FART% "default.%~1.extra.cfg" "vanilla_demo_limit            1"	"vanilla_demo_limit            0"
@@ -463,7 +464,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "glboom-plus"
 GOTO:EOF
 
@@ -473,7 +474,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
 GOTO:EOF
 
@@ -504,7 +505,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT %LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # graphics
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -559,7 +560,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
@@ -669,7 +670,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # VSync ON
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -746,7 +747,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" "/WAIT /USE "%~1" /DEFAULT /IWAD "%~2" & EXIT"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 %BIN_FART% "default.%~1.cfg" "seta \"p_usecontext\" \"0\""	"seta \"p_usecontext\" \"1\""
 %BIN_FART% "default.%~1.cfg" "seta \"st_crosshair\" \"0\""	"seta \"st_crosshair\" \"1\""

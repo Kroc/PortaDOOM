@@ -451,23 +451,28 @@ END IF
 '[13] resolution & full-screen:
 '-----------------------------------------------------------------------------
 'the full-screen parameter varies by engine-type;
-'ZDoom-based engines use `+fullscreen`:
 IF Engines_Selected.kin = KIN_Z THEN
+	'ZDoom-based engines use `+fullscreen`
 	LET CMD$ = CMD$ + " +fullscreen"
 ELSE
+	'everything else `-fullscreen`
 	LET CMD$ = CMD$ + " -fullscreen"
 END IF
 
-DIM screen_width AS LONG
-LET screen_width = _DESKTOPWIDTH
-DIM screen_height AS LONG
-LET screen_height = _DESKTOPHEIGHT
-LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
-LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
+'a current bug/limitation of Choco-* engines in v3.0 is that
+'specifying the screen size forces fullscreen off
+IF Engines_Selected.kin <> KIN_V THEN
+	DIM screen_width AS LONG
+	LET screen_width = _DESKTOPWIDTH
+	DIM screen_height AS LONG
+	LET screen_height = _DESKTOPHEIGHT
 
-PRINT "       -width :" + STR$(screen_width) _
-    + "  -height :" + STR$(screen_height)
+	LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
+	LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
 
+	PRINT "       -width :" + STR$(screen_width) _
+		+ "  -height :" + STR$(screen_height)
+END IF
 '-----------------------------------------------------------------------------
 '[14] launch!
 '-----------------------------------------------------------------------------
@@ -488,10 +493,25 @@ IF STRGET$(Engines_Selected.engine) = "doom64ex" THEN
 			        + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
 END IF
 
+PRINT ""
+PRINT "   Get Psyched!"
+PRINT ""
+
 IF CMD_DEBUG` THEN
-	PRINT ""
 	PRINT CMD$
 	PRINT ""
+	PRINT ""
+	
+	LOCATE UI_SCREEN_HEIGHT, 1
+	COLOR BLACK+BLINK, WHITE
+	
+	DIM w%
+	LET w% = LEN("PRESS ANY KEY!")
+	PRINT SPACE$((UI_SCREEN_WIDTH - w%) / 2) _
+		+ "PRESS ANY KEY!" _
+		+ SPACE$((UI_SCREEN_WIDTH - w%) / 2);
+	
+	COLOR WHITE, BLACK
 	SLEEP
 END IF
 
@@ -531,9 +551,10 @@ SUB Launch_MkDir(path$)
 		'folder is missing? attempt to make it, but be aware
 		'of that potentially failing (read-only media?)
 		MKDIR (path$)
-		'no error, reset error handler
-		ON ERROR GOTO 0
 	END IF
+	
+	'reset the error handler
+	ON ERROR GOTO 0
 END SUB
 
 'correct a relative path from the save-game folder

@@ -317,12 +317,38 @@ DO WHILE COMMAND$(i) <> ""
 				PRINT ""
 				PRINT "ERROR: Invalid parameters!"
 				PRINT ""
+				PRINT COMMAND$(0)
+				PRINT ""
 				PRINT "Press Any Key to Exit"
 				SLEEP: SYSTEM 1
             END IF
     END SELECT
     LET i = i + 1
 LOOP
+
+'display the parameters used if debug is enabled
+IF CMD_DEBUG` THEN
+	PRINT ""
+	IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT`) THEN
+		PRINT "  ";
+		IF CMD_WAIT` THEN PRINT "/WAIT ";
+		IF CMD_32` THEN PRINT "/32 ";
+		IF CMD_SW` THEN PRINT "/SW ";
+		IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
+		PRINT ""
+	END IF
+	IF CMD_USE$ <> "" THEN PRINT "  /USE " + CMD_USE$
+	IF CMD_REQ$ <> "" THEN PRINT "  /REQ " + CMD_REQ$
+	IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD " + CMD_IWAD$
+	IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD " + CMD_PWAD$
+	IF CMD_DEH$ <> "" THEN PRINT "  /DEH " + CMD_DEH$
+	IF CMD_BEX$ <> "" THEN PRINT "  /BEX " + CMD_BEX$
+	IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO " + CMD_DEMO$
+	IF CMD_WARP$ <> "" THEN PRINT "  /WARP " + CMD_WARP$
+	IF CMD_SKILL$ <> "" THEN PRINT "  /WARP " + CMD_SKILL$
+	IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
+	IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC " + CMD_EXEC$
+END IF
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN

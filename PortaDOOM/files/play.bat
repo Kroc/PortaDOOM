@@ -361,7 +361,7 @@ IF %ENGINE_COUNT% EQU 1 (
 	REM # set the engine name to pass on to the doom launcher
 	IF %ENGINE_CHOCODOOM%  EQU 1 SET "ENGINE=choco-doom"
 	IF %ENGINE_CRISPYDOOM% EQU 1 SET "ENGINE=crispy-doom"
-	IF %ENGINE_PRBOOM%     EQU 1 SET "ENGINE=prboom"
+	IF %ENGINE_PRBOOM%     EQU 1 SET "ENGINE=prboom-plus"
 	IF %ENGINE_ZANDRONUM%  EQU 1 SET "ENGINE=%VER_ZANDRONUM%"
 	IF %ENGINE_GZDOOM%     EQU 1 SET "ENGINE=%VER_GZDOOM%"
 	IF %ENGINE_DOOM64EX%   EQU 1 SET "ENGINE=doom64ex"
@@ -455,7 +455,7 @@ REM # doom.bat will automatically handle using prboom & gzdoom's software render
 IF %SW% EQU 1 SET PARAMS=%PARAMS% /SW
 
 CLS
-"%HERE%\launcher.exe" /USE %ENGINE% %PARAMS% -- %FILES%
+"%HERE%\launcher.exe" /DEBUG /USE %ENGINE% %PARAMS% -- %FILES%
 
 EXIT /B
 
