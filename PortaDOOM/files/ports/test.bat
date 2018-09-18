@@ -31,9 +31,9 @@ IF %ERRORLEVEL% EQU 3  CALL ..\launcher.exe /WAIT /CONSOLE     /USE choco-hexen-
 IF %ERRORLEVEL% EQU 4  CALL ..\launcher.exe /WAIT /CONSOLE     /USE choco-strife-setup  /IWAD STRIFE1.WAD
 IF %ERRORLEVEL% EQU 5  CALL ..\launcher.exe /WAIT /CONSOLE     /USE crispy-doom-setup   /IWAD DOOM.WAD
 IF %ERRORLEVEL% EQU 6  CALL ..\launcher.exe /WAIT /CONSOLE     /USE doom64ex            /IWAD DOOM64.WAD
-IF %ERRORLEVEL% EQU 7  CALL ..\launcher.exe /WAIT /CONSOLE     /USE doomretro           /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 8  CALL ..\launcher.exe /WAIT /CONSOLE     /USE prboom              /IWAD DOOM.WAD
-IF %ERRORLEVEL% EQU 9  CALL ..\launcher.exe /WAIT /CONSOLE /SW /USE prboom              /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 7  CALL ..\launcher.exe /WAIT /CONSOLE     /USE doom-retro          /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 8  CALL ..\launcher.exe /WAIT /CONSOLE     /USE prboom-plus         /IWAD DOOM.WAD
+IF %ERRORLEVEL% EQU 9  CALL ..\launcher.exe /WAIT /CONSOLE /SW /USE prboom-plus         /IWAD DOOM.WAD
 IF %ERRORLEVEL% EQU 10 CALL ..\launcher.exe /WAIT /CONSOLE     /USE zandronum-2         /IWAD DOOM.WAD
 IF %ERRORLEVEL% EQU 11 CALL ..\launcher.exe /WAIT /CONSOLE     /USE zandronum-3         /IWAD DOOM.WAD
 IF %ERRORLEVEL% EQU 12 GOTO :gzdoom

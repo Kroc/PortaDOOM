@@ -72,11 +72,20 @@ readINI:
         DIM ini_skill$
 		LET ini_skill$ = ReadSetting$("", ini_section$, "skill")
         
+		DIM vid%
+		SELECT CASE ini_vid$
+			CASE "8": LET vid% = 8
+			CASE "16": LET vid% = 16
+			CASE "24": LET vid% = 24
+			CASE "32": LET vid% = 32
+			CASE ELSE: LET vid% = 0
+		END SELECT
+		
         CALL Games_Add( _
             game_id$, ini_title$, ini_cmplvl$, _
             ini_iwad$, ini_pwad$, ini_files$, _
 			ini_deh$, ini_bex$, _
-            ini_tags$, ini_vid$, _
+            ini_tags$, vid%, _
 			ini_warp$, ini_skill$ _
         )
     LOOP
@@ -84,7 +93,7 @@ END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid$, _
+    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid%, _
 	warp$, skill$ _
 )
     'increase the number of games entries
@@ -94,7 +103,7 @@ SUB Games_Add ( _
     
 	'find the IWAD meta-data entry referred to by this game
 	DIM iwad%%
-	LET iwad%% = IWADs_Find&(iwad$)
+	LET iwad%% = IWADs_FindMeta&(iwad$)
 	LET Games(Games_Count).iwad = iwad%%
 	
 	IF iwad%% = 0 THEN
@@ -120,47 +129,51 @@ SUB Games_Add ( _
 	'(find any tags we haven't come across before)
     CALL Tags_Add(tags$)
     
-	'no warp parameter?
-	IF warp$ = "" THEN
-		'set defaults
-		LET Games(Games_Count).warp_e = -1
-		LET Games(Games_Count).warp_m = -1
+	'set warp defaults (i.e. no warp)
+	LET Games(Games_Count).warp_e = -1
+	LET Games(Games_Count).warp_m = -1
 		
-	ELSE
-		'process warp parameter for episode / map number;
-		'is there a dot in the second character? (i.e. "e.m" format)
-		IF ASC(warp$, 2) = 46 THEN
-			'pick the numbers
-			DIM e$, m$
-			LET e$ = LEFT$(warp$, 1)
-			LET m$ = MID$(warp$, 3)
-			'is the first part a number?
-			IF ISINT(e$) THEN
-				'and the second part?
-				IF ISINT(m$) THEN
-					'add a warp parameter to the game
-					LET Games(Games_Count).warp_e = VAL(e$)
-					LET Games(Games_Count).warp_m = VAL(m$)
+	'warp parameter?
+	IF warp$ <> "" THEN
+		'if it's just a number,
+		IF ISINT(warp$) THEN
+			'add a warp parameter to the game
+			LET Games(Games_Count).warp_m = VAL(warp$)
+			GOTO skill
+		END IF
+		
+		IF LEN(warp$) > 2 THEN
+			'process warp parameter for episode / map number;
+			'is there a dot in the second character? (i.e. "e.m" format)
+			IF ASC(warp$, 2) = 46 THEN
+				'pick the numbers
+				DIM e$, m$
+				LET e$ = LEFT$(warp$, 1)
+				LET m$ = MID$(warp$, 3)
+				'is the first part a number?
+				IF ISINT(e$) THEN
+					'and the second part?
+					IF ISINT(m$) THEN
+						'add a warp parameter to the game
+						LET Games(Games_Count).warp_e = VAL(e$)
+						LET Games(Games_Count).warp_m = VAL(m$)
+						GOTO skill
+					ELSE
+						'FIXME: not a valid warp parameter?
+						SYSTEM 1
+					END IF
 				ELSE
 					'FIXME: not a valid warp parameter?
 					SYSTEM 1
 				END IF
-			ELSE
-				'FIXME: not a valid warp parameter?
-				SYSTEM 1
 			END IF
-		
-		'is it a map number?
-		ELSEIF ISINT(warp$) THEN
-			'add a warp parameter to the game
-			LET Games(Games_Count).warp_m = VAL(warp$)
-			
-		ELSE
-			'TODO: support map-names
-			SYSTEM 1
 		END IF
+			
+		'TODO: support map-names
+		SYSTEM 1
 	END IF
 	
+skill:
 	'no skill parameter?
 	IF skill$ = "" THEN
 		'set default
@@ -189,7 +202,9 @@ SUB Games_Add ( _
     LET Games(Games_Count).deh = STRADD&(deh$)
     LET Games(Games_Count).bex = STRADD&(bex$)
     LET Games(Games_Count).tags = STRADD&(tags$)
-    LET Games(Games_Count).vid = VAL(vid$)
+	
+	'don't allow vid% to be undefined
+    LET Games(Games_Count).vid = vid%
 END SUB
 
 '=============================================================================

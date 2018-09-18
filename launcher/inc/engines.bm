@@ -284,12 +284,17 @@ SUB Engines_Filter()
             _CONTINUE
         END IF
         
-        '-------------------------------------------------------------------------
+		'does the game demand a certain colour-depth? (i.e. software mode)
+		IF Games_Selected.vid > 0 THEN
+			'does the engine provide this colour depth?
+			IF Engines(i).vid <> Games_Selected.vid THEN _CONTINUE
+		END IF
+		
+        '---------------------------------------------------------------------
         
         'TODO: validate engine IWAD / PWAD support
         
-        
-        '-------------------------------------------------------------------------
+        '---------------------------------------------------------------------
         
         'does this engine provide all the features required by the game?
         '(walk along the tags on the engine)
@@ -306,8 +311,8 @@ SUB Engines_Filter()
                     END IF
             END SELECT
         NEXT tag%
-        
-        '-------------------------------------------------------------------------
+		
+        '---------------------------------------------------------------------
         
         'all tags have been checked, meaning that this engine is a candidate
         LET EngineTags(i, 0) = 1

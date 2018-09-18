@@ -2,6 +2,7 @@
 
 '   STRADD&(text$)				-> LONG
 '   STRGET$(index&)				-> STRING
+'   ISINT(text$)				-> INTEGER
 '   STRINT$(number&)			-> STRING
 '   TRUNCATE$(text$, length%)	-> STRING
 '   RTRUNCATE$(text$, length%)	-> STRING

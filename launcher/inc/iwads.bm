@@ -10,7 +10,7 @@
 'IWADs are tricky because they represent a commonly needed resource for other
 'WADs, but are also games themselves
 
-'   IWADs_Find&(path$)							-> LONG
+'   IWADs_FindMeta&(path$)						-> LONG
 '   IWADs_EnumerateINI(INIFile$)
 '   IWADs_Add(...)
 '   IWADs_GetPath$(iwad$)						-> STRING
@@ -21,7 +21,7 @@
 'match an IWAD file name to its meta-data entry (load meta-data if necessary)
 'returns an index into `IWADs` array, or 0 for not-found
 '=============================================================================
-FUNCTION IWADs_Find&(file_path$)
+FUNCTION IWADs_FindMeta&(file_path$)
 	'note that `file_path$` could be a full path, even absolute;
 	'take just the file-name to search. it's assumed that all IWADs have
 	'have unique file-names, something the DOOM community does adhere to
@@ -43,7 +43,7 @@ FUNCTION IWADs_Find&(file_path$)
 		IF iwad_name$ = file_name$ THEN
 			'a record for this IWAD already exists,
 			'return its index
-			LET IWADs_Find& = i
+			LET IWADs_FindMeta& = i
 			EXIT FUNCTION
 		END IF
 	NEXT i
@@ -61,7 +61,7 @@ loadMetaData:
 	
 	'load IWAD meta-data from the INI file (if present)
 	'TODO: if no IWAD meta-data file found, build some rough data ad-hoc?
-	LET IWADs_Find& = IWADs_EnumerateINI&(ini_file$)
+	LET IWADs_FindMeta& = IWADs_EnumerateINI&(ini_file$)
 END FUNCTION
 
 'given an INI file, read an IWAD definition from it
@@ -71,7 +71,7 @@ FUNCTION IWADs_EnumerateINI&(ini_path$)
     '-------------------------------------------------------------------------
     DIM path$
     LET path$ = ini_path$
-    
+	
     'is the given path absolute?
     IF Paths_IsAbsolute(path$) THEN
         'does the file exist?
@@ -183,23 +183,41 @@ END FUNCTION
 'locate an IWAD and return its path -- handles Steam / GOG IWADs
 '=============================================================================
 FUNCTION IWADs_GetPath$(iwad$)
-    'search for the IWAD in the usual places...
-    DIM iwad_path$
-    LET iwad_path$ = WADs_Find$(iwad$)
+	DIM iwad_path$
+	LET iwad_path$ = iwad$
+	
+	'is the given path absolute?
+    IF Paths_IsAbsolute(iwad_path$) THEN
+        'does the file exist?
+        IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+    ELSE
+        'search for the file:
+        
+        'check the 'current' directory
+        '-- i.e. the directory the launcher was called *from*
+        LET iwad_path$ = DIR_CUR$ + iwad$
+        IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+        
+        'check the base WADs directory
+        LET iwad_path$ = DIR_WADS$ + iwad$
+        IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+    END IF
+
     'if not found, look for Steam / GOG installations...
-    IF iwad_path$ = "" THEN GOSUB iwadSteamGOG
+    GOSUB iwadSteamGOG
     
+iwadFound:
     'return what we've found
 	LET IWADs_GetPath$ = iwad_path$
     EXIT FUNCTION
     
 iwadSteamGOG:
     '-------------------------------------------------------------------------
-    SELECT CASE UCASE$(Paths_GetFileName$(iwad$))
-        CASE "DOOM.WAD", "DOOMU.WAD": GOTO iwadDOOM
-        CASE "DOOM2.WAD": GOTO iwadDOOM2
-        CASE "TNT.WAD": GOTO iwadTNT
-        CASE "PLUTONIA.WAD": GOTO iwadPLUTONIA
+    SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        CASE "DOOM": GOTO iwadDOOM
+        CASE "DOOM2": GOTO iwadDOOM2
+        CASE "TNT": GOTO iwadTNT
+        CASE "PLUTONIA": GOTO iwadPLUTONIA
 		CASE "HERETIC": GOTO iwadHERETIC
 		CASE "HEXEN": GOTO iwadHEXEN
 		CASE "STRIFE1": GOTO iwadSTRIFE

@@ -83,14 +83,14 @@ REM # delete the file in order to re-build it
 IF EXIST "default.glboom-plus.cfg" GOTO :prboom-plus
 
 ECHO * PrBoom+ ^(hardware^)         DOOM.WAD
-CALL :make_boom_hw "prboom" "DOOM.WAD"
+CALL :make_boom_hw "prboom-plus" "DOOM.WAD"
 
 :prboom-plus
 REM # delete the file in order to re-build it
 IF EXIST "default.prboom-plus.cfg" GOTO :zandronum-2
 
 ECHO * PrBoom+ ^(software^)         DOOM.WAD
-CALL :make_boom_sw "prboom" "DOOM.WAD"
+CALL :make_boom_sw "prboom-plus" "DOOM.WAD"
 
 
 REM # Zandronum
@@ -529,7 +529,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT %LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # graphics
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"

@@ -202,6 +202,8 @@ DIM cmd_hasGame` '.......flag, define game from command-line
 DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
 DIM SHARED CMD_DEBUG` '..display detailed information
 
+LET CMD_DEBUG` = TRUE
+
 'FIXME: do not allow mix of command params & INI files?
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
@@ -337,31 +339,34 @@ IF CMD_DEBUG` THEN
 		IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
 		PRINT ""
 	END IF
-	IF CMD_USE$ <> "" THEN PRINT "  /USE " + CMD_USE$
-	IF CMD_REQ$ <> "" THEN PRINT "  /REQ " + CMD_REQ$
-	IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD " + CMD_IWAD$
-	IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD " + CMD_PWAD$
-	IF CMD_DEH$ <> "" THEN PRINT "  /DEH " + CMD_DEH$
-	IF CMD_BEX$ <> "" THEN PRINT "  /BEX " + CMD_BEX$
-	IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO " + CMD_DEMO$
-	IF CMD_WARP$ <> "" THEN PRINT "  /WARP " + CMD_WARP$
-	IF CMD_SKILL$ <> "" THEN PRINT "  /WARP " + CMD_SKILL$
+	IF CMD_USE$ <> "" THEN PRINT "  /USE    " + CMD_USE$
+	IF CMD_REQ$ <> "" THEN PRINT "  /REQ    " + CMD_REQ$
+	IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD   " + CMD_IWAD$
+	IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD   " + CMD_PWAD$
+	IF CMD_DEH$ <> "" THEN PRINT "  /DEH    " + CMD_DEH$
+	IF CMD_BEX$ <> "" THEN PRINT "  /BEX    " + CMD_BEX$
+	IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO   " + CMD_DEMO$
+	IF CMD_WARP$ <> "" THEN PRINT "  /WARP   " + CMD_WARP$
+	IF CMD_SKILL$ <> "" THEN PRINT "  /WARP   " + CMD_SKILL$
 	IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
-	IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC " + CMD_EXEC$
+	IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
 END IF
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
-    DIM title$, tags$, vid$
+    DIM title$, tags$, vid%
     
+	'default to no hard requirement for rendering colour-depth 
+	LET vid% = 0
     'require "software" renderer (8-bit, 256-colours)
-    IF CMD_SW` = TRUE THEN LET vid$ = "8" ELSE LET vid$ = "32"
+    IF CMD_SW` = TRUE THEN LET vid% = 8
 	
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
 	
     'since the command-line doesn't provide
     'meta-data, get that internally
+	'FIXME: use iwad meta-data instead
     LET title$ = IWADs_GetTitle$(CMD_IWAD$)
 	
     'FIXME: implement `/REQ` for requiring feature tags
@@ -369,6 +374,6 @@ IF cmd_hasGame` THEN
 	
     CALL Games_Add ( _
         "cmd", title$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
-		CMD_DEH$, CMD_BEX$, tags$, vid$, CMD_WARP$, CMD_SKILL$ _
+		CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 END IF
