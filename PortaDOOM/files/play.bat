@@ -76,7 +76,7 @@ ECHO       choco-heretic     vanilla,deh
 ECHO       choco-hexen       vanilla,deh
 ECHO       choco-strife      vanilla,deh
 ECHO       crispy-doom       vanilla,deh,no-limit
-ECHO       doomretro         vanilla,deh,no-limit,boom
+ECHO       doom-retro        vanilla,deh,no-limit,boom
 ECHO       doom64ex          doom64
 ECHO       zdoom             vanilla,deh,no-limit,boom,mbf,acs,decorate,udmf
 ECHO:
@@ -488,6 +488,26 @@ IF /I "%~1" == "choco" (
 	REM # disable non Chocolate-* engines
 	SET ENGINE_CRISPYDOOM=0
 	SET ENGINE_DOOMRETRO=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_DOOM64EX=0
+)
+REM # force crispy-doom only:
+IF /I "%~1" == "crispy-doom" (
+	REM # disable non crispy-doom engines
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_DOOMRETRO=0
+	SET ENGINE_PRBOOM=0
+	SET ENGINE_ZANDRONUM=0
+	SET ENGINE_GZDOOM=0
+	SET ENGINE_DOOM64EX=0
+)
+REM # force doom-retro only:
+IF /I "%~1" == "doom-retro" (
+	REM # disable non doom-retro engines
+	SET ENGINE_CHOCODOOM=0
+	SET ENGINE_CRISPYDOOM=0
 	SET ENGINE_PRBOOM=0
 	SET ENGINE_ZANDRONUM=0
 	SET ENGINE_GZDOOM=0

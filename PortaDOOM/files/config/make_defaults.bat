@@ -60,10 +60,20 @@ CALL :make_vanilla "choco-strife" "STRIFE1.WAD"
 
 :crispy-doom
 REM # delete the file in order to re-build it
-IF EXIST "default.crispy-doom.cfg" GOTO :glboom-plus
+IF EXIST "default.crispy-doom.cfg" GOTO :doom-retro
 
 ECHO * Crispy Doom                DOOM.WAD
 CALL :make_vanilla "crispy-doom" "DOOM.WAD"
+
+
+REM # DOOM Retro
+REM ============================================================================
+:doom-retro
+REM # delete the file in order to re-build it
+IF EXIST "default.doom-retro.cfg" GOTO :glboom-plus
+
+ECHO * DOOM Retro                 DOOM.WAD
+CALL :make_doomretro "doom-retro" "DOOM.WAD"
 
 
 REM # PrBoom+ (hardware / software)
@@ -412,6 +422,20 @@ PAUSE
 EXIT /B
 
 
+
+:make_doomretro
+REM #
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM ----------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+
+%BIN_FART% "default.%~1.cfg" "alwaysrun off"				"alwaysrun on"
+%BIN_FART% "default.%~1.cfg" "messages off"				"messages on"
+%BIN_FART% "default.%~1.cfg" "playername \"you\""			"playername \"PortaDOOM\""
+
+GOTO:EOF
 
 
 :make_vanilla

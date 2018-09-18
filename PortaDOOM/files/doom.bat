@@ -86,7 +86,7 @@ ECHO       choco-strife        : As with choco-doom, but for Strife WADs
 ECHO       choco-strife-setup  : As above, but displays configuration first
 ECHO       crispy-doom         : Fork of Chocolate Doom; 640x400, limits removed
 ECHO       crispy-doom-setup   : As above, but displays configuration first
-ECHO       doomretro           : chocolate doom, but with boom support
+ECHO       doom-retro          : chocolate doom, but with boom support
 ECHO       prboom              : PRBoom+ defaults to OpenGL. Use `/SW` for software
 ECHO       gzdoom              : GZDoom current. Use `/SW` for software rendering
 ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)
@@ -680,12 +680,12 @@ IF /I "%USE%" == "crispy-doom-setup" (
 	SET "PORT_SAVE=crispy-doom"
 	SET "PORT_TITLE=Crispy Doom ^(Setup^)"
 )
-IF /I "%USE%" == "doomretro" (
-	SET "ENGINE_DIR=%DIR_PORTS%\doomretro"
+IF /I "%USE%" == "doom-retro" (
+	SET "ENGINE_DIR=%DIR_PORTS%\doom-retro"
 	SET "ENGINE_EXE=doomretro.exe"
-	SET "ENGINE_CFG=doomretro"
+	SET "ENGINE_CFG=doom-retro"
 	SET "ENGINE_KIN=B"
-	SET "PORT_SAVE=doomretro"
+	SET "PORT_SAVE=doom-retro"
 	SET "PORT_TITLE=DOOM Retro"
 )
 IF /I "%USE%" == "prboom" (

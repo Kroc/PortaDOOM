@@ -49,6 +49,7 @@ ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Doom             DOOM.WAD
 ECHO     [P] Crispy Doom                DOOM.WAD
+ECHO     [R] DOOM Retro                 DOOM.WAD
 ECHO:
 ECHO     [H] PrBoom+ Hardware           DOOM.WAD
 ECHO     [S] PrBoom+ Software           DOOM.WAD
@@ -68,6 +69,7 @@ IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-doom-setup"     "DOOM.WAD"
 IF /I "%$%" == "P" CALL :launch_engine    "crispy-doom-setup"    "DOOM.WAD"
+IF /I "%$%" == "R" CALL :launch_engine    "doom-retro"           "DOOM.WAD"
 IF /I "%$%" == "H" CALL :launch_engine    "prboom"               "DOOM.WAD"
 IF /I "%$%" == "S" CALL :launch_engine_sw "prboom"               "DOOM.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "DOOM.WAD"
