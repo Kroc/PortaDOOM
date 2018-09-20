@@ -36,7 +36,7 @@ SUB Engines_Enumerate()
         LET ini_engine$ = ReadSetting$(ini_path$, "global", "engine")
         DIM ini_rank$
         LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
-		
+        
         DIM ini_index%
         LET ini_index% = 1
         DO
@@ -47,10 +47,10 @@ SUB Engines_Enumerate()
             'increase the list of known engines
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
-			
+            
             LET Engines(Engines_Count).engine = STRADD&(LCASE$(ini_engine$))
-			LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
-			
+            LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
+            
             'read engine data from the INI file
             DIM ini_section$
             LET ini_section$ = "engine." + ini_id$
@@ -79,6 +79,8 @@ SUB Engines_Enumerate()
             LET ini_pwads$ = ReadSetting$("", ini_section$, "pwads")
             DIM ini_auto$
             LET ini_auto$ = ReadSetting$("", ini_section$, "auto")
+            DIM ini_cmd$
+            LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
             
             'executable architecture must be either 32 or 64-bit
             IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
@@ -112,6 +114,7 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).iwads = STRADD&(ini_iwads$)
             LET Engines(Engines_Count).pwads = STRADD&(ini_pwads$)
             LET Engines(Engines_Count).auto = STRADD&(ini_auto$)
+            LET Engines(Engines_Count).cmd = STRADD&(ini_cmd$)
             
             LET ini_index% = ini_index% + 1
         LOOP
@@ -120,7 +123,7 @@ SUB Engines_Enumerate()
     
     CLOSE #dir_handle%
     KILL "dir.tmp"
-	CHDIR DIR_EXE$
+    CHDIR DIR_EXE$
     
     'prioritise engine list:
     '-------------------------------------------------------------------------
@@ -265,16 +268,16 @@ END SUB
 SUB Engines_Filter()
     'loop counter
     DIM i AS _UNSIGNED LONG
-	
+    
     'test each engine against the game's requirements:
-    FOR i = 1 TO UBOUND(Engines)    
+    FOR i = 1 TO UBOUND(Engines)
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
             IF STRGET$(Engines(i).engine) <> LCASE$(CMD_USE$) THEN
-				IF STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) THEN
-					_CONTINUE
-				END IF
+                IF STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) THEN
+                    _CONTINUE
+                END IF
             END IF
         END IF
         
@@ -284,12 +287,12 @@ SUB Engines_Filter()
             _CONTINUE
         END IF
         
-		'does the game demand a certain colour-depth? (i.e. software mode)
-		IF Games_Selected.vid > 0 THEN
-			'does the engine provide this colour depth?
-			IF Engines(i).vid <> Games_Selected.vid THEN _CONTINUE
-		END IF
-		
+        'does the game demand a certain colour-depth? (i.e. software mode)
+        IF Games_Selected.vid > 0 THEN
+            'does the engine provide this colour depth?
+            IF Engines(i).vid <> Games_Selected.vid THEN _CONTINUE
+        END IF
+        
         '---------------------------------------------------------------------
         
         'TODO: validate engine IWAD / PWAD support
@@ -311,7 +314,7 @@ SUB Engines_Filter()
                     END IF
             END SELECT
         NEXT tag%
-		
+        
         '---------------------------------------------------------------------
         
         'all tags have been checked, meaning that this engine is a candidate
@@ -320,10 +323,16 @@ SUB Engines_Filter()
         LET Engines_ListCount = Engines_ListCount + 1
         REDIM _PRESERVE Engines_List(1 TO Engines_ListCount) AS INTEGER
         LET Engines_List(Engines_ListCount) = i
-		
+        
     NextEngine:
     NEXT i
 
+    IF Engines_ListCount = 0 THEN
+        PRINT " ERROR: NO ENGINE FOUND!"
+        SLEEP
+        SYSTEM 1
+    END IF
+    
     'print a list of the candidate engines:
     ''PRINT ""
     ''PRINT "Candidate Engines:"

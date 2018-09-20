@@ -489,6 +489,11 @@ IF STRGET$(Engines_Selected.engine) = "doom64ex" THEN
 			        + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
 END IF
 
+'any engine-specific command-line params to be added?
+IF Engines_Selected.cmd <> 0 THEN
+	LET CMD$ = CMD$ + " " + STRGET$(Engines_Selected.cmd)
+END IF
+
 PRINT ""
 PRINT "   Get Psyched!"
 PRINT ""

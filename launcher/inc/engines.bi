@@ -6,8 +6,8 @@ TYPE Engine
     engine AS LONG
     dir AS LONG '...the directory name the engine is in
     
-	id AS LONG
-	
+    id AS LONG
+    
     'these are specifically named after the INI-file param names:
     rank AS INTEGER
     title AS LONG '.on-screen "friendly name"
@@ -22,6 +22,7 @@ TYPE Engine
     iwads AS LONG '.semi-colon separated list of allowed IWADs
     pwads AS LONG '.semi-colon separated list of PWAD file-types
     auto AS LONG '..semi-colon separated list of WADs to always include
+    cmd AS LONG '...additional command-line parameters to use when launching
 END TYPE
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla

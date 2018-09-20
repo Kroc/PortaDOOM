@@ -5,11 +5,11 @@
 '=============================================================================
 DIM CMD$
 IF _COMMANDCOUNT = 0 THEN
-	'TODO: if there are no command-line parameters, we present a UI to build
+    'TODO: if there are no command-line parameters, we present a UI to build
     '      a custom game configuration?
-	LET CMD$ = ""
+    LET CMD$ = ""
 ELSE
-	LET CMD$ = LCASE$(COMMAND$(1))
+    LET CMD$ = LCASE$(COMMAND$(1))
 END IF
 
 IF CMD$ = "" _
@@ -21,148 +21,148 @@ OR CMD$ = "-h" _
 OR CMD$ = "-help" _
 OR CMD$ = "--help" _
 THEN
-	DIM USAGE$
-	LET USAGE$ = "    launcher.exe"
-	LET USAGE$ = USAGE$ + " [/USE <engine>]"
-	LET USAGE$ = USAGE$ + " [/WAIT]"
-	LET USAGE$ = USAGE$ + " [/SW]"
-	LET USAGE$ = USAGE$ + " [/32]"
-	LET USAGE$ = USAGE$ + " [/DEFAULT]"
-	LET USAGE$ = USAGE$ + CHR$(10) + "            "
-	LET USAGE$ = USAGE$ + " [/IWAD <file>]"
-	LET USAGE$ = USAGE$ + " [/PWAD <file>]"
-	LET USAGE$ = USAGE$ + " [/DEH <file>]"
-	LET USAGE$ = USAGE$ + " [/BEX <file>]"
-	LET USAGE$ = USAGE$ + CHR$(10) + "            "
-	LET USAGE$ = USAGE$ + " [/DEMO <file>]"
-	LET USAGE$ = USAGE$ + " [/WARP <map-number>]"
-	LET USAGE$ = USAGE$ + " [/SKILL <skill-level>]"
-	LET USAGE$ = USAGE$ + CHR$(10) + "            "
-	LET USAGE$ = USAGE$ + " [/CMPLVL <complevel>]"
-	LET USAGE$ = USAGE$ + " [/EXEC <file>]"
-	LET USAGE$ = USAGE$ + CHR$(10) + "            "
-	LET USAGE$ = USAGE$ + " [-- <files>...]"
+    DIM USAGE$
+    LET USAGE$ = "    launcher.exe"
+    LET USAGE$ = USAGE$ + " [/USE <engine>]"
+    LET USAGE$ = USAGE$ + " [/WAIT]"
+    LET USAGE$ = USAGE$ + " [/SW]"
+    LET USAGE$ = USAGE$ + " [/32]"
+    LET USAGE$ = USAGE$ + " [/DEFAULT]"
+    LET USAGE$ = USAGE$ + CHR$(10) + "            "
+    LET USAGE$ = USAGE$ + " [/IWAD <file>]"
+    LET USAGE$ = USAGE$ + " [/PWAD <file>]"
+    LET USAGE$ = USAGE$ + " [/DEH <file>]"
+    LET USAGE$ = USAGE$ + " [/BEX <file>]"
+    LET USAGE$ = USAGE$ + CHR$(10) + "            "
+    LET USAGE$ = USAGE$ + " [/DEMO <file>]"
+    LET USAGE$ = USAGE$ + " [/WARP <map-number>]"
+    LET USAGE$ = USAGE$ + " [/SKILL <skill-level>]"
+    LET USAGE$ = USAGE$ + CHR$(10) + "            "
+    LET USAGE$ = USAGE$ + " [/CMPLVL <complevel>]"
+    LET USAGE$ = USAGE$ + " [/EXEC <file>]"
+    LET USAGE$ = USAGE$ + CHR$(10) + "            "
+    LET USAGE$ = USAGE$ + " [-- <files>...]"
     'TODO: console help
-	
-	PRINT ""
-	PRINT " Usage:"
-	PRINT ""
-	PRINT USAGE$
-	PRINT ""
-	PRINT " /USE <engine>"
-	PRINT ""
-	PRINT "    Which engine to use. Can be any of the following:"
-	PRINT ""
-	PRINT "        TODO"
-	PRINT ""
-	PRINT " /WAIT"
-	PRINT ""
-	PRINT "    Causes launcher.exe to not immediately return once the engine is launched."
-	PRINT "    Script execution will continue only once the engine has quit."
-	PRINT ""
-	PRINT " /SW"
-	PRINT ""
-	PRINT "    Force software rendering. By default hardware rendering is used in"
-	PRINT "    GZDoom and PRBoom+ (" + CHR$(34) + "glboom-plus.exe" + CHR$(34) + ")."
-	PRINT ""
-	
-	PRINT " Press Any Key to Continue..."
-	SLEEP: CLS
-	PRINT ""
-	
-	PRINT " /32"
-	PRINT ""
-	PRINT "    Always use 32-bit binaries, even on a 64-bit system."
-	PRINT ""
-	PRINT " /DEFAULT"
-	PRINT ""
-	PRINT "    Loads the engine with the default config file instead of the current user"
-	PRINT "    config file. Any changes you make to the engine's settings will be saved"
-	PRINT "    in the default configuration file."
-	PRINT ""
-	PRINT " /IWAD <file>"
-	PRINT ""
-	PRINT "    The IWAD (Internal WAD) is the base WAD to use."
-	PRINT ""
-	PRINT "        TODO"
-	PRINT ""
-	PRINT " /PWAD <file>"
-	PRINT ""
-	PRINT "        TODO"
-	PRINT ""
-	
-	PRINT " Press Any Key to Continue..."
-	SLEEP: CLS
-	PRINT ""
-	
-	PRINT " /DEH <file>"
-	PRINT " /BEX <file>"
-	PRINT ""
-	PRINT "    Early DOOM modifications were done by way of a live patching system known"
-	PRINT "    as DeHackEd. These " + CHR$(34) + ".deh" + CHR$(34) + " files are common, even today, as the"
-	PRINT "    lowest-common-denominator of DOOM modding."
-	PRINT ""
-	PRINT "    Boom, a highly-influential early source-port, enhanced this format further"
-	PRINT "    with " + CHR$(34) + "Boom-EXtended" + CHR$(34) + " DeHackEd files."
-	PRINT ""
-	PRINT "    These parameters specify a DEH or BEX file to load alongside any WADs."
-	PRINT ""
-	PRINT " /DEMO <file>"
-	PRINT ""
-	PRINT "    DOOM play sessions can be recorded and played back later. These are often"
-	PRINT "    distributed as " + CHR$(34) + ".lmp" + CHR$(34) + " files. The /DEMO option specifies the file to play."
-	PRINT ""
-	
-	PRINT " Press Any Key to Continue..."
-	SLEEP: CLS
-	PRINT ""
-	
-	PRINT " /WARP <map-number>"
-	PRINT ""
-	PRINT "    Warp to the given map number. For games with episodes, such as DOOM and"
-	PRINT "    Heretic, this is in the format `e.m` where `e` is the Episode number and"
-	PRINT "    `m` is the Map number, e.g. `/WARP 2.4`. For games without episodes like"
-	PRINT "    DOOM II, it's just a single number e.g. `/WARP 21`"
-	PRINT ""
-	PRINT " /SKILL <skill-level>"
-	PRINT ""
-	PRINT "    Set skill (difficulty) level. This is a number nominally 1 to 5, but this"
-	PRINT "    may vary with mods. A value of 0 disables monsters on some engines,"
-	PRINT "    but this can sometimes prevent a level from being completable."
-	PRINT ""
-	
-	PRINT " Press Any Key to Continue..."
-	SLEEP: CLS
-	PRINT ""
-	
-	PRINT " /CMPLVL <complevel>"
-	PRINT ""
-	PRINT "    Specifies the compatibility level, a feature provided by PrBoom+ to"
-	PRINT "    emulate the behaviour of different versions of the DOOM executable."
-	PRINT "    The complevel can be:"
-	PRINT ""
-	PRINT "        0     = Doom v1.2"
-	PRINT "        1     = Doom v1.666"
-	PRINT "        2     = Doom v1.9"
-	PRINT "        3     = Ultimate Doom & Doom95"
-	PRINT "        4     = Final Doom"
-	PRINT "        5     = DOSDoom"
-	PRINT "        6     = TASDOOM"
-	PRINT "        7     = Boom's inaccurate vanilla compatibility mode"
-	PRINT "        8     = Boom v2.01"
-	PRINT "        9     = Boom v2.02"
-	PRINT "        10    = LxDoom"
-	PRINT "        11    = MBF"
-	PRINT "        12-16 = PrBoom (old versions)"
-	PRINT "        17    = Current PrBoom"
-	PRINT ""
-	PRINT " /EXEC <file>"
-	PRINT ""
-	PRINT "    Execute the script file."
-	PRINT ""
-	
-	PRINT " Press Any Key to Exit"
-	SLEEP
+    
+    PRINT ""
+    PRINT " Usage:"
+    PRINT ""
+    PRINT USAGE$
+    PRINT ""
+    PRINT " /USE <engine>"
+    PRINT ""
+    PRINT "    Which engine to use. Can be any of the following:"
+    PRINT ""
+    PRINT "        TODO"
+    PRINT ""
+    PRINT " /WAIT"
+    PRINT ""
+    PRINT "    Causes launcher.exe to not immediately return once the engine is launched."
+    PRINT "    Script execution will continue only once the engine has quit."
+    PRINT ""
+    PRINT " /SW"
+    PRINT ""
+    PRINT "    Force software rendering. By default hardware rendering is used in"
+    PRINT "    GZDoom and PRBoom+ (" + CHR$(34) + "glboom-plus.exe" + CHR$(34) + ")."
+    PRINT ""
+    
+    PRINT " Press Any Key to Continue..."
+    SLEEP: CLS
+    PRINT ""
+    
+    PRINT " /32"
+    PRINT ""
+    PRINT "    Always use 32-bit binaries, even on a 64-bit system."
+    PRINT ""
+    PRINT " /DEFAULT"
+    PRINT ""
+    PRINT "    Loads the engine with the default config file instead of the current user"
+    PRINT "    config file. Any changes you make to the engine's settings will be saved"
+    PRINT "    in the default configuration file."
+    PRINT ""
+    PRINT " /IWAD <file>"
+    PRINT ""
+    PRINT "    The IWAD (Internal WAD) is the base WAD to use."
+    PRINT ""
+    PRINT "        TODO"
+    PRINT ""
+    PRINT " /PWAD <file>"
+    PRINT ""
+    PRINT "        TODO"
+    PRINT ""
+    
+    PRINT " Press Any Key to Continue..."
+    SLEEP: CLS
+    PRINT ""
+    
+    PRINT " /DEH <file>"
+    PRINT " /BEX <file>"
+    PRINT ""
+    PRINT "    Early DOOM modifications were done by way of a live patching system known"
+    PRINT "    as DeHackEd. These " + CHR$(34) + ".deh" + CHR$(34) + " files are common, even today, as the"
+    PRINT "    lowest-common-denominator of DOOM modding."
+    PRINT ""
+    PRINT "    Boom, a highly-influential early source-port, enhanced this format further"
+    PRINT "    with " + CHR$(34) + "Boom-EXtended" + CHR$(34) + " DeHackEd files."
+    PRINT ""
+    PRINT "    These parameters specify a DEH or BEX file to load alongside any WADs."
+    PRINT ""
+    PRINT " /DEMO <file>"
+    PRINT ""
+    PRINT "    DOOM play sessions can be recorded and played back later. These are often"
+    PRINT "    distributed as " + CHR$(34) + ".lmp" + CHR$(34) + " files. The /DEMO option specifies the file to play."
+    PRINT ""
+    
+    PRINT " Press Any Key to Continue..."
+    SLEEP: CLS
+    PRINT ""
+    
+    PRINT " /WARP <map-number>"
+    PRINT ""
+    PRINT "    Warp to the given map number. For games with episodes, such as DOOM and"
+    PRINT "    Heretic, this is in the format `e.m` where `e` is the Episode number and"
+    PRINT "    `m` is the Map number, e.g. `/WARP 2.4`. For games without episodes like"
+    PRINT "    DOOM II, it's just a single number e.g. `/WARP 21`"
+    PRINT ""
+    PRINT " /SKILL <skill-level>"
+    PRINT ""
+    PRINT "    Set skill (difficulty) level. This is a number nominally 1 to 5, but this"
+    PRINT "    may vary with mods. A value of 0 disables monsters on some engines,"
+    PRINT "    but this can sometimes prevent a level from being completable."
+    PRINT ""
+    
+    PRINT " Press Any Key to Continue..."
+    SLEEP: CLS
+    PRINT ""
+    
+    PRINT " /CMPLVL <complevel>"
+    PRINT ""
+    PRINT "    Specifies the compatibility level, a feature provided by PrBoom+ to"
+    PRINT "    emulate the behaviour of different versions of the DOOM executable."
+    PRINT "    The complevel can be:"
+    PRINT ""
+    PRINT "        0     = Doom v1.2"
+    PRINT "        1     = Doom v1.666"
+    PRINT "        2     = Doom v1.9"
+    PRINT "        3     = Ultimate Doom & Doom95"
+    PRINT "        4     = Final Doom"
+    PRINT "        5     = DOSDoom"
+    PRINT "        6     = TASDOOM"
+    PRINT "        7     = Boom's inaccurate vanilla compatibility mode"
+    PRINT "        8     = Boom v2.01"
+    PRINT "        9     = Boom v2.02"
+    PRINT "        10    = LxDoom"
+    PRINT "        11    = MBF"
+    PRINT "        12-16 = PrBoom (old versions)"
+    PRINT "        17    = Current PrBoom"
+    PRINT ""
+    PRINT " /EXEC <file>"
+    PRINT ""
+    PRINT "    Execute the script file."
+    PRINT ""
+    
+    PRINT " Press Any Key to Exit"
+    SLEEP
     SYSTEM
 END IF
 
@@ -208,12 +208,12 @@ LET CMD_DEBUG` = TRUE
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
-		CASE "/WAIT"
-			LET CMD_WAIT` = TRUE
-			
-		CASE "/DEBUG"
-			LET CMD_DEBUG` = TRUE
-			
+        CASE "/WAIT"
+            LET CMD_WAIT` = TRUE
+            
+        CASE "/DEBUG"
+            LET CMD_DEBUG` = TRUE
+            
         CASE "/USE"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
@@ -225,6 +225,10 @@ DO WHILE COMMAND$(i) <> ""
             LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
+            
+            PRINT " ERROR: `/REQ` NOT IMPLEMENTED"
+            SLEEP
+            SYSTEM 1
             
         CASE "/32"
             'set the flag to favour 32-bit binaries (on 64-bit systems);
@@ -274,13 +278,13 @@ DO WHILE COMMAND$(i) <> ""
         CASE "/WARP"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
-			'note that we will have to define a game using this
+            'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/SKILL"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
-			'note that we will have to define a game using this
+            'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/CMPLVL"
@@ -290,39 +294,39 @@ DO WHILE COMMAND$(i) <> ""
         CASE "/EXEC"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
-			'note that we will have to define a game using this
+            'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "--"
             'once the 'end-of-command' marker is encountered, everything
-			'that follows is a WAD file to be given to the engine
-			LET i = i + 1
-			DO WHILE COMMAND$(i) <> ""
-				LET CMD_FILES$ = CMD_FILES$ + COMMAND$(i) + ";"
-				' any one file implies that a game is to be defined
-				LET cmd_hasGame` = TRUE
-				'continue searching
-				LET i = i + 1
-			LOOP
-			
-			EXIT DO
-			
+            'that follows is a WAD file to be given to the engine
+            LET i = i + 1
+            DO WHILE COMMAND$(i) <> ""
+                LET CMD_FILES$ = CMD_FILES$ + COMMAND$(i) + ";"
+                ' any one file implies that a game is to be defined
+                LET cmd_hasGame` = TRUE
+                'continue searching
+                LET i = i + 1
+            LOOP
+            
+            EXIT DO
+            
         CASE ELSE
             'if an INI file is given, load the game definitions from it
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
                 'attempt to locate the INI file
                 'FIXME: handle file-not-found error
                 Games_EnumerateINI(COMMAND$(i))
-			ELSE
-				'no other command / file is allowed until the
-				'end-of-command marker is encountered "--"
-				PRINT ""
-				PRINT "ERROR: Invalid parameters!"
-				PRINT ""
-				PRINT COMMAND$(0)
-				PRINT ""
-				PRINT "Press Any Key to Exit"
-				SLEEP: SYSTEM 1
+            ELSE
+                'no other command / file is allowed until the
+                'end-of-command marker is encountered "--"
+                PRINT ""
+                PRINT "ERROR: Invalid parameters!"
+                PRINT ""
+                PRINT COMMAND$(0)
+                PRINT ""
+                PRINT "Press Any Key to Exit"
+                SLEEP: SYSTEM 1
             END IF
     END SELECT
     LET i = i + 1
@@ -330,50 +334,50 @@ LOOP
 
 'display the parameters used if debug is enabled
 IF CMD_DEBUG` THEN
-	IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT`) THEN
-		PRINT "  ";
-		IF CMD_WAIT` THEN PRINT "/WAIT ";
-		IF CMD_32` THEN PRINT "/32 ";
-		IF CMD_SW` THEN PRINT "/SW ";
-		IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
-		PRINT ""
-	END IF
-	IF CMD_USE$ <> "" THEN PRINT "  /USE    " + CMD_USE$
-	IF CMD_REQ$ <> "" THEN PRINT "  /REQ    " + CMD_REQ$
-	IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD   " + CMD_IWAD$
-	IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD   " + CMD_PWAD$
-	IF CMD_DEH$ <> "" THEN PRINT "  /DEH    " + CMD_DEH$
-	IF CMD_BEX$ <> "" THEN PRINT "  /BEX    " + CMD_BEX$
-	IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO   " + CMD_DEMO$
-	IF CMD_WARP$ <> "" THEN PRINT "  /WARP   " + CMD_WARP$
-	IF CMD_SKILL$ <> "" THEN PRINT "  /WARP   " + CMD_SKILL$
-	IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
-	IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
-	PRINT ""
+    IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT`) THEN
+        PRINT "  ";
+        IF CMD_WAIT` THEN PRINT "/WAIT ";
+        IF CMD_32` THEN PRINT "/32 ";
+        IF CMD_SW` THEN PRINT "/SW ";
+        IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
+        PRINT ""
+    END IF
+    IF CMD_USE$ <> "" THEN PRINT "  /USE    " + CMD_USE$
+    IF CMD_REQ$ <> "" THEN PRINT "  /REQ    " + CMD_REQ$
+    IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD   " + CMD_IWAD$
+    IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD   " + CMD_PWAD$
+    IF CMD_DEH$ <> "" THEN PRINT "  /DEH    " + CMD_DEH$
+    IF CMD_BEX$ <> "" THEN PRINT "  /BEX    " + CMD_BEX$
+    IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO   " + CMD_DEMO$
+    IF CMD_WARP$ <> "" THEN PRINT "  /WARP   " + CMD_WARP$
+    IF CMD_SKILL$ <> "" THEN PRINT "  /WARP   " + CMD_SKILL$
+    IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
+    IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
+    PRINT ""
 END IF
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
     DIM title$, tags$, vid%
     
-	'default to no hard requirement for rendering colour-depth 
-	LET vid% = 0
+    'default to no hard requirement for rendering colour-depth 
+    LET vid% = 0
     'require "software" renderer (8-bit, 256-colours)
     IF CMD_SW` = TRUE THEN LET vid% = 8
-	
+    
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
-	
+    
     'since the command-line doesn't provide
     'meta-data, get that internally
-	'FIXME: use iwad meta-data instead
+    'FIXME: use iwad meta-data instead
     LET title$ = IWADs_GetTitle$(CMD_IWAD$)
-	
+    
     'FIXME: implement `/REQ` for requiring feature tags
     LET tags$ = IWADs_GetTags$(CMD_IWAD$)
-	
+    
     CALL Games_Add ( _
         "cmd", title$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
-		CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
+        CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 END IF
