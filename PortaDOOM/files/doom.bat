@@ -87,7 +87,7 @@ ECHO       choco-strife-setup  : As above, but displays configuration first
 ECHO       crispy-doom         : Fork of Chocolate Doom; 640x400, limits removed
 ECHO       crispy-doom-setup   : As above, but displays configuration first
 ECHO       doom-retro          : chocolate doom, but with boom support
-ECHO       prboom              : PRBoom+ defaults to OpenGL. Use `/SW` for software
+ECHO       prboom-plus         : PRBoom+ defaults to OpenGL. Use `/SW` for software
 ECHO       gzdoom              : GZDoom current. Use `/SW` for software rendering
 ECHO       gzdoom-??           : Where ?? is a version number ^(see below^)
 ECHO       zandronum           : Zandronum current ^(2.x^)
@@ -688,7 +688,7 @@ IF /I "%USE%" == "doom-retro" (
 	SET "PORT_SAVE=doom-retro"
 	SET "PORT_TITLE=DOOM Retro"
 )
-IF /I "%USE%" == "prboom" (
+IF /I "%USE%" == "prboom-plus" (
 	SET "ENGINE_DIR=%DIR_PORTS%\prboom+"
 	REM # are we using software rendering?
 	IF %SW% EQU 1 (
@@ -703,7 +703,7 @@ IF /I "%USE%" == "prboom" (
 		SET "PORT_TITLE=PrBoom+ ^(OpenGL Renderer^)"
 	)
 	SET "ENGINE_KIN=B"
-	SET "PORT_SAVE=prboom"
+	SET "PORT_SAVE=prboom-plus"
 )
 IF /I "%USE%" == "gzdoom" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-35_%ENGINE_BIT%"
@@ -1676,7 +1676,7 @@ REM # NOTE: DOOM 64 EX does not support a save directory parameter
 REM # and will put savegames in the 'current directory'!
 
 REM # PrBoom+ uses `-save`
-IF "%PORT_SAVE%" == "prboom" (
+IF "%PORT_SAVE%" == "prboom-plus" (
 	SET PARAMS=%PARAMS% -save "."
 	ECHO         -save : %SAVES_WAD%
 	

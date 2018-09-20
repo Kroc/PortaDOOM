@@ -1,23 +1,24 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-LAUNCHER:
-[ ] Implement class selection for Hexen in launcher.exe
+[ ] LAUNCHER : FreeDOOM substitution
+[ ] LAUNCHER : DOOM64EX IWAD meta-data
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
-[-] Index pages at the end of each Cacowards; allows the separate Cacowards
-    packages to have an index
-[ ] Need launchers for bonus levels on Eternal Doom III
-[ ] Add "The Given" LowDetail / update its page text
+[ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
+[ ] LAUNCHER : Implement BFG edition patching
+[ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 
 [P2] Feature Enhancements:
 ================================================================================
+[ ] Add Eternity engine (required somewhere in the Cacowards)
 [ ] Expose GZDoom's software modes through their "porta-doom.ini" files?
+ -  [ ] will require custom params to be set from the ini file
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
-[ ] doom.bat : Handle VOICES1.WAD & SVE.WAD for STRIFE?
-[ ] doom.bat : Add `-shotdir`, supported by a number of engines
+[ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
+[ ] LAUNCHER : Add `-shotdir`, supported by a number of engines
 [ ] Include Crispy Doom music pack?
 [ ] IWADs: (including Skill Names)
     [ ] Harmony
@@ -33,10 +34,19 @@ LAUNCHER:
 
 [P3] Content:
 ================================================================================
+[ ] WolfenDOOM package
+[ ] Expand PSX DOOM Package to include:
+ -  [ ] DOOM 64 EX
+ -  [ ] DOOM 64 for DOOM II
+ -  [ ] PSX Fall of Triton -- any way to shrink this? Diff against PSXDOOM.PK3?
+ -  [X] InnocenceX/X2/X3
+     -  [ ] Add option to play with PSX / Classic weapons with new launcher
+
+[-] Index pages at the end of each Cacowards; allows the separate Cacowards
+    packages to have an index
+[ ] Need launchers for bonus levels on Eternal Doom III
+[ ] Add "The Given" LowDetail / update its page text
 [ ] REKKR
-[X] InnocenceX/X2/X3
- -  [ ] Add option to play with PSX / Classic weapons with new launcher
-[ ] PSX Fall of Triton
 [ ] Add 3 Heures Final
 [ ] Update "Adventures of Square" to EP2
 [ ] Create pages for the speedruns so that the author notes can be displayed
@@ -53,6 +63,16 @@ LAUNCHER:
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
+[ ] DOOM-Crusher : Add PKE, EPK to recognised PK3 formats
+[ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
+[ ] DOOM-Crusher : fail on "SOUND&MUSIC.WAD"
+[ ] Add engine compatibility checks for Windows version
+ -  [ ] test engines on Windows 98/Me?
+ -  [ ] test engines on Windows XP
+ -  [ ] test engines on Windows Vista?
+ -  [ ] test engines on Windows 7
+ -  [ ] test engines on Windows 8?
 [ ] "SHELL" action improvements:
  -  [ ] add an action for launching files, rather than executing commands,
         i.e. verify the file exists before launching
@@ -69,7 +89,6 @@ LAUNCHER:
 [ ] Need a "dotted tab" for contents and index pages
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
-[ ] Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] Convert the statusbar/dialogue to a theme set
 [ ] doom.bat : Cannot substitute IWADs when playing demos!
 [ ] Inclusion of RETRES.WAD in onesies\dt-lutz should be before the PWAD.

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom /IWAD PLUTONIA.WAD /DEMO 30pl1958.lmp /CMPLVL 4
+@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom-plus /IWAD PLUTONIA /DEMO 30pl1958.lmp /CMPLVL 4

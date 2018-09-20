@@ -6,6 +6,7 @@
 '   STRINT$(number&)			-> STRING
 '   TRUNCATE$(text$, length%)	-> STRING
 '   RTRUNCATE$(text$, length%)	-> STRING
+'   PAD$(text$, length%)		-> STRING
 '   UTF8ANSI$(text$)			-> STRING
 
 '=============================================================================
@@ -89,6 +90,16 @@ FUNCTION RTRUNCATE$(text$, length%)
         'text fits, no truncation needed
         LET RTRUNCATE$ = text$
     END IF
+END FUNCTION
+
+'pad a string to a number of spaces, truncating overflow
+'=============================================================================
+FUNCTION PAD$(text$, length%)
+	LET PAD$ = TRUNCATE$(text$, length%)
+	'add the remaining spaces?
+	IF LEN(PAD$) < length% THEN 
+		LET PAD$ = PAD$ + SPACE$(length% - LEN(PAD$))
+	END IF
 END FUNCTION
 
 'convert a UTF-8 string to an ANSI(cp437) string, with some transliteration

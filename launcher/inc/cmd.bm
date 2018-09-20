@@ -330,7 +330,6 @@ LOOP
 
 'display the parameters used if debug is enabled
 IF CMD_DEBUG` THEN
-	PRINT ""
 	IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT`) THEN
 		PRINT "  ";
 		IF CMD_WAIT` THEN PRINT "/WAIT ";
@@ -350,6 +349,7 @@ IF CMD_DEBUG` THEN
 	IF CMD_SKILL$ <> "" THEN PRINT "  /WARP   " + CMD_SKILL$
 	IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
 	IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
+	PRINT ""
 END IF
 
 'is there enough parameters to define a game from the command-line?

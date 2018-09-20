@@ -20,10 +20,6 @@
 '   [13]: resolution & full-screen
 '   [14]: launch!
 
-PRINT ""
-PRINT "     PortaDOOM Launcher"
-PRINT ""
-
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
 'to separate user-data (such as save-games) from the engines. whilst we can

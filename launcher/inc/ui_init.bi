@@ -8,6 +8,10 @@ CONST UI_SCREEN_MODE = 0 '...text mode
 CONST UI_SCREEN_WIDTH = 80 '.640 width
 CONST UI_SCREEN_HEIGHT = 30 '480 height
 
+'default colours
+CONST UI_BACKCOLOR = BLUE
+CONST UI_FORECOLOR = LTGREY
+
 '-----------------------------------------------------------------------------
 
 'hide the main window until we have something rendered on it first
@@ -30,4 +34,5 @@ _TITLE "PortaDOOM Launcher"
 
 'set graphics mode, screen size, colour and clear screen
 SCREEN UI_SCREEN_MODE, , 0, 0: WIDTH UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT
-_SCREENSHOW
+COLOR UI_FORECOLOR, UI_BACKCOLOR
+CLS, UI_BACKCOLOR: _SCREENSHOW

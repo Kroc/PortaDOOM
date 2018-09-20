@@ -1,9 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'$INCLUDE:'inc\ui_init.bi'
-
-'=============================================================================
-
 '$INCLUDE:'lib\INI-Manager\ini.bi'
 
 '$INCLUDE:'lib\consts.bi'
@@ -84,15 +80,17 @@ END IF
 DIM SHARED DIR_CUR$
 LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 
-''_ECHO ""
-''_ECHO "launcher.exe : " + DIR_EXE$
-''_ECHO "current dir  : " + DIR_CUR$
-''_ECHO ""
-
-
 '=============================================================================
 'MAIN:
 '=============================================================================
+'$INCLUDE:'inc\ui_init.bi'
+
+COLOR BLACK, UI_FORECOLOR
+PRINT " " + PAD$("PortaDOOM Launcher", UI_SCREEN_WIDTH - 2) + " "
+
+COLOR UI_FORECOLOR, UI_BACKCOLOR
+PRINT ""
+
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'inc\cmd.bm'

@@ -543,15 +543,6 @@ IF /I "%~1" == "bex" (
 	SET ENGINE_DOOM64EX=0
 )
 REM # requires PRBoom+ specifically:
-IF /I "%~1" == "prboom" (
-	REM # disable non PRBoom+ engines
-	SET ENGINE_CHOCODOOM=0
-	SET ENGINE_CRISPYDOOM=0
-	SET ENGINE_DOOMRETRO=0
-	SET ENGINE_ZANDRONUM=0
-	SET ENGINE_GZDOOM=0
-	SET ENGINE_DOOM64EX=0
-)
 IF /I "%~1" == "prboom-plus" (
 	REM # disable non PRBoom+ engines
 	SET ENGINE_CHOCODOOM=0
