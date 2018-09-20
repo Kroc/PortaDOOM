@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ zdoom /PWAD sp_simp.wad
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ zdoom /PWAD sp_simp.wad

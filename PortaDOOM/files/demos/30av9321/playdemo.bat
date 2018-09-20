@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom-plus /IWAD DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO 30av9321.lmp /CMPLVL 2
+@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /IWAD DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO 30av9321.lmp /CMPLVL 2

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ vanilla /PWAD STORM.WAD /WARP 9
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ vanilla /PWAD STORM.WAD /WARP 9

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ vanilla /PWAD NOSUN3.WAD
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ vanilla /PWAD NOSUN3.WAD

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\launcher.exe" /USE prboom-plus /DEMO pa02-2057.lmp /CMPLVL 2
+@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /DEMO pa02-2057.lmp /CMPLVL 2
