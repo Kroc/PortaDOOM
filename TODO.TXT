@@ -2,6 +2,8 @@
 ================================================================================
 [ ] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : DOOM64EX IWAD meta-data
+[ ] LAUNCHER : TNT, PLUTONIA IWAD meta-data
+[ ] PSX DOOM apparently not working on GZDoom >3.2.0
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
@@ -11,11 +13,11 @@
 
 [P2] Feature Enhancements:
 ================================================================================
-[ ] LAUNCHER : Generate a MAPINFO lump on-demand?
+[ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
 [ ] Add Eternity engine (required somewhere in the Cacowards)
-[-] Expose GZDoom's software modes through their "porta-doom.ini" files?
- -  [*] will require custom params to be set from the ini file
- -  [-] GZDoom v3.4+ now uses `vid_rendermode` CVAR
+[X] Expose GZDoom's software modes through their "porta-doom.ini" files?
+ -  [X] will require custom params to be set from the ini file
+ -  [X] GZDoom v3.4+ now uses `vid_rendermode` CVAR
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
@@ -65,6 +67,7 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Figure out what tags softpoly supports
 [ ] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
 [ ] DOOM-Crusher : Add PKE, EPK to recognised PK3 formats
 [ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
@@ -84,9 +87,6 @@
 [ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
 [X] Icon for launcher.exe
  -  [ ] extra sizes: 20, 96?
-[ ] Alpha Accident (2016 Cacowards runner up), requires GZDoom 2.2 due to
-    incompatibility with ZScript and a visual bug -- current work-around is to
-    limit it to software rendering
 [ ] Need a "dotted tab" for contents and index pages
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken
