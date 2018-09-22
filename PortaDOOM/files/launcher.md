@@ -42,7 +42,7 @@ Can be any of the following:
 
 ### `choco-doom`
 
-![Chocolate Doom screenshot](ports\chocolate-doom\sample.png)
+![Chocolate Doom screenshot](ports/chocolate-doom/sample.png)
 
 [Chocolate Doom](https://www.chocolate-doom.org) is an exact recreation of the original MS-DOS DOOM for modern systems, including original limitations and bugs! Its purpose is to preserve the exact behaviour of the original DOOM executable in an accessible manner so that authors can ensure compatibility without having to use DOS Box or an actual 486 PC.
 
@@ -56,7 +56,7 @@ Use `choco-doom-setup` to run the setup utility prior to launching the game.
 
 ### `choco-heretic`
 
-![Chocolate Heretic screenshot](ports\chocolate-heretic\sample.png)
+![Chocolate Heretic screenshot](ports/chocolate-heretic/sample.png)
 
 [Chocolate Heretic](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Heretic) is, like Chocolate Doom, an exact replica of the original Heretic MS-DOS executable for modern systems.
 
@@ -66,7 +66,7 @@ Use `choco-heretic-setup` to run the setup utility prior to launching the game.
 
 ### `choco-hexen`
 
-![Chocolate Hexen screenshot](ports\chocolate-hexen\sample.png)
+![Chocolate Hexen screenshot](ports/chocolate-hexen/sample.png)
 
 [Chocolate Hexen](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Hexen) is, like Chocolate Doom, an exact replica of the original Hexen MS-DOS executable for modern systems.
 
@@ -76,7 +76,7 @@ Use `choco-hexen-setup` to run the setup utility prior to launching the game.
 
 ### `choco-strife`
 
-![Chocolate Strife screenshot](ports\chocolate-strife\sample.png)
+![Chocolate Strife screenshot](ports/chocolate-strife/sample.png)
 
 [Chocolate Strife](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Strife) is, like Chocolate Doom, an exact replica of the original Strife MS-DOS executable for modern systems.
 
@@ -86,7 +86,7 @@ Use `choco-strife-setup` to run the setup utility prior to launching the game.
 
 ### `crispy-doom`
 
-![Crispy Doom screenshot](ports\crispy-doom\sample.png)
+![Crispy Doom screenshot](ports/crispy-doom/sample.png)
 
 [Crispy Doom](https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom) is a modification of Chocolate Doom to remove limits, increase resolution (to 640×400) and add new features, all while remaining faithful to original DOOM.
 
@@ -98,7 +98,7 @@ Use `crispy-doom-setup` to run the setup utility prior to launching the game.
 
 ### `doom-retro`
 
-![Doom Retro screenshot](ports\doom-retro\sample.png)
+![Doom Retro screenshot](ports/doom-retro/sample.png)
 
 [DOOM Retro](http://doomretro.com/) is a limit-removing port of Chocolate Doom that focuses on a 'nostalgic' feel, rather than hard accuracy.
 
@@ -106,7 +106,7 @@ DOOM Retro would appeal to most players as their go-to "vanilla" engine.
 
 ### `prboom-plus`
 
-![PrBoom+ (hardware) screenshot](ports\prboom+\sample-hw.png)
+![PrBoom+ (hardware) screenshot](ports/prboom+/sample-hw.png)
 
 One of the first source-ports to extend the original game was _Boom_. It added new capabilities to the DOOM map format and removed existing limits. These extensions were adopted by other engines and thus "boom" became a new base-line standard available to mappers. To this day, _boom_-format maps are still being made.
 
@@ -118,7 +118,7 @@ PrBoom+ is recommended for users with laptops, integrated graphics and systems w
 
 Use `prboom-plus-sw` (or the `/SW` switch) to use the software renderer. This is restricted to 256 colours and may be faster for systems with extremely limited OpenGL acceleration, but an otherwise adequate processor.
 
-![PrBoom+ (software) screenshot](ports\prboom+\sample-sw.png)
+![PrBoom+ (software) screenshot](ports/prboom+/sample-sw.png)
 
 ### `gzdoom`
 
@@ -156,7 +156,7 @@ Zandronum is a multi-player focused fork of GZDoom.
 
 ### `zdoom`
 
-![ZDoom screenshot](ports\zdoom\sample.png)
+![ZDoom screenshot](ports/zdoom/sample.png)
 
 `/WAIT`
 --------------------------------------------------------------------------------
