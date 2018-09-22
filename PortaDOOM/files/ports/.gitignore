@@ -4,6 +4,7 @@ gzdoom-dev/
 # exclude any screenshots
 **screenshot*
 **doom*.bmp
+**/screenshots
 
 # exclude any errant save files
 **.zds
@@ -40,3 +41,4 @@ gzdoom-dev/
 **/stderr.txt
 **/CRASHLOG.TXT
 **/*.sf2
+**/delete.me

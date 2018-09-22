@@ -89,7 +89,8 @@ COLOR BLACK, UI_FORECOLOR
 PRINT " " + PAD$("PortaDOOM Launcher", UI_SCREEN_WIDTH - 2) + " "
 
 COLOR UI_FORECOLOR, UI_BACKCOLOR
-PRINT ""
+VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
+CLS: PRINT ""
 
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------

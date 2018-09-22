@@ -46,6 +46,9 @@ DIM SHARED DIR_PWAD$
 'order) and worry about the specific invocation at the end
 LET CMD_FILES$ = ""
 
+DIM iwad%%
+LET iwad%% = Games_Selected.iwad
+
 '-----------------------------------------------------------------------------
 '[01] save game path:
 '-----------------------------------------------------------------------------
@@ -70,13 +73,14 @@ DIM DIR_SAVE_GAME$
 
 'if the game is using a PWAD,
 'use that name for the save folder
-IF STRGET$(Games_Selected.pwad) <> "" THEN
+IF Games_Selected.pwad <> 0 THEN
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
         + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
 ELSE
     'otherwise just use the IWAD name
+	
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(STRGET$(Games_Selected.iwad))
+        + Paths_GetFileBaseName$(STRGET$(IWADs(iwad%%).path))
 END IF
 
 'does this folder exist?
@@ -176,8 +180,6 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-DIM iwad%%
-LET iwad%% = Games_Selected.iwad
 LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs(iwad%%).path))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
@@ -502,6 +504,8 @@ IF CMD_DEBUG` THEN
 	PRINT CMD$
 	PRINT ""
 	PRINT ""
+	
+	VIEW PRINT
 	
 	LOCATE UI_SCREEN_HEIGHT, 1
 	COLOR BLACK+BLINK, WHITE
