@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ zdoom /PWAD sp_usimp.pk3

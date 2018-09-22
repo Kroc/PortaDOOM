@@ -1,1 +1,0 @@
-gzdoom -iwad base/main.wad -file base/data.pk3 -config base/foreverhood.ini

@@ -1,1 +1,0 @@
-start Legacy.exe -file phobiata.wad -digmusic -nocd -opengl -mb 511

@@ -1,1 +1,0 @@
-gzdoom +exec njol.cfg -file njol.wad

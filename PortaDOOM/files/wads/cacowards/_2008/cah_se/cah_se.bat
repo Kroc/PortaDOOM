@@ -1,1 +1,0 @@
-gzdoom.exe -config cah_se.ini -file cah_se.pk3 -iwad doom2.wad %1 %2 %3 %4 %5 %6 %7 %8

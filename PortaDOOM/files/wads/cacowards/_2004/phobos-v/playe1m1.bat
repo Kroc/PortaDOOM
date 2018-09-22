@@ -1,1 +1,0 @@
-doom -file phobos-v.wad -warp 1 1 -playdemo e1m1demo
