@@ -1,9 +1,8 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
 [ ] LAUNCHER : FreeDOOM substitution
-[ ] LAUNCHER : DOOM64EX IWAD meta-data
 [ ] LAUNCHER : TNT, PLUTONIA IWAD meta-data
-[ ] PSX DOOM apparently not working on GZDoom >3.2.0
+[ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================

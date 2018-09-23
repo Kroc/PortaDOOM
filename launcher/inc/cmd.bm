@@ -368,14 +368,8 @@ IF cmd_hasGame` THEN
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
     
-    'since the command-line doesn't provide
-    'meta-data, get that internally
-    'FIXME: use iwad meta-data instead
-    LET title$ = IWADs_GetTitle$(CMD_IWAD$)
-    
-    'FIXME: implement `/REQ` for requiring feature tags
-    LET tags$ = IWADs_GetTags$(CMD_IWAD$)
-    
+	'TODO: get game name / title from the IWAD meta-data
+	
     CALL Games_Add ( _
         "cmd", title$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
         CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _

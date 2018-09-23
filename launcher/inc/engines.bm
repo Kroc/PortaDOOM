@@ -4,6 +4,7 @@
 '   Engines_KinValue%(kin$*1)   -> INTEGER
 '   Engines_Filter()
 '   Engines_Select(engine%)
+'   Engines_GetType%(type$)     -> INTEGER
 
 'walk the ports folder and identify all engines present
 '=============================================================================
@@ -57,6 +58,8 @@ SUB Engines_Enumerate()
             
             DIM ini_title$
             LET ini_title$ = ReadSetting$("", ini_section$, "title")
+            DIM ini_type$
+            LET ini_type$ = ReadSetting$("", ini_section$, "type")
             DIM ini_exe$
             LET ini_exe$ = ReadSetting$("", ini_section$, "exe")
             DIM ini_ver$
@@ -73,10 +76,6 @@ SUB Engines_Enumerate()
             LET ini_save$ = ReadSetting$("", ini_section$, "save")
             DIM ini_tags$
             LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
-            DIM ini_iwads$
-            LET ini_iwads$ = ReadSetting$("", ini_section$, "iwads")
-            DIM ini_pwads$
-            LET ini_pwads$ = ReadSetting$("", ini_section$, "pwads")
             DIM ini_auto$
             LET ini_auto$ = ReadSetting$("", ini_section$, "auto")
             DIM ini_cmd$
@@ -111,8 +110,6 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).cfg = STRADD&(ini_cfg$)
             LET Engines(Engines_Count).save = STRADD&(ini_save$)
             LET Engines(Engines_Count).tags = STRADD&(ini_tags$)
-            LET Engines(Engines_Count).iwads = STRADD&(ini_iwads$)
-            LET Engines(Engines_Count).pwads = STRADD&(ini_pwads$)
             LET Engines(Engines_Count).auto = STRADD&(ini_auto$)
             LET Engines(Engines_Count).cmd = STRADD&(ini_cmd$)
             
@@ -295,10 +292,6 @@ SUB Engines_Filter()
         
         '---------------------------------------------------------------------
         
-        'TODO: validate engine IWAD / PWAD support
-        
-        '---------------------------------------------------------------------
-        
         'does this engine provide all the features required by the game?
         '(walk along the tags on the engine)
         FOR tag% = 1 TO UBOUND(Tags)
@@ -353,3 +346,29 @@ SUB Engines_Select(engine%)
     LET Engines_Current = engine%
     LET Engines_Selected = Engines(Engines_Current)
 END SUB
+
+'translates a comma-separated list of engine-types into a numeric value
+'============================================================================
+FUNCTION Engines_GetType%(type$)
+    LET type$ = "," + UCASE$(type$) + ","
+    
+    IF INSTR(type$, ",DOOM,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM
+    END IF
+    IF INSTR(type$, ",DOOM2,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM2
+    END IF
+    IF INSTR(type$, ",HERETIC,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_HERETIC
+    END IF
+    IF INSTR(type$, ",HEXEN,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_HEXEN
+    END IF
+    IF INSTR(type$, ",STRIFE,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_STRIFE
+    END IF
+    IF INSTR(type$, ",DOOM64,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM64
+    END IF
+    
+END FUNCTION

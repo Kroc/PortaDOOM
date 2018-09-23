@@ -3,20 +3,21 @@
 TYPE Game
     id AS LONG
     title AS LONG
-	'IWAD, i.e. DOOM, DOOM2, HERETIC, HEXEN etc.
-	'this is an index into the `IWADs` array where the meta-data is stored
+    
+    'this is an index into the `IWADs` array where the meta-data is stored
     iwad AS _BYTE
-	type AS _BYTE '............IWAD type
+    
+    type AS INTEGER '..........IWAD type
     pwad AS LONG '.............PWAD to play
-	files AS LONG '............list of additional files to include
+    files AS LONG '............list of additional files to include
     cmplvl AS _BYTE '..........can be negative to specify "not given"
     deh AS LONG '..............DeHackEd script to load
     bex AS LONG '..............Boom-EXtended DeHackEd script to load
     tags AS LONG '.............comma-separated tags list the game requires
     vid AS _UNSIGNED _BYTE '...renderer colour-depth required
-	warp_e AS _BYTE '..........warp to given episode number
-	warp_m AS _BYTE '..........warp to given map number
-	skill AS _BYTE '...........preset skill level
+    warp_e AS _BYTE '..........warp to given episode number
+    warp_m AS _BYTE '..........warp to given map number
+    skill AS _BYTE '...........preset skill level
 END TYPE
 
 'array that holds all the games defined

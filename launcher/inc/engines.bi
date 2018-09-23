@@ -15,6 +15,10 @@ TYPE Engine
 	'e.g. a specific version or binary such as x86/x64
     id AS LONG
     
+	'a comma-separated list of which DOOM-engines are supported by the engine.
+	'these can be any of DOOM, DOOM2, HERETIC, HEXEN, STRIFE or DOOM64
+	type AS INTEGER
+	
     'these are specifically named after the INI-file param names:
     rank AS INTEGER
     title AS LONG '.on-screen "friendly name"
@@ -26,8 +30,6 @@ TYPE Engine
     cfg AS LONG '...slug to use in the config file-name
     save AS LONG '..save-folder name to use
     tags AS LONG '..comma-separated tags list the engine supports
-    iwads AS LONG '.semi-colon separated list of allowed IWADs
-    pwads AS LONG '.semi-colon separated list of PWAD file-types
     auto AS LONG '..semi-colon separated list of WADs to always include
     cmd AS LONG '...additional command-line parameters to use when launching
 END TYPE

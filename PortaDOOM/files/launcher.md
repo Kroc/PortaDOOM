@@ -154,6 +154,8 @@ _Zandronum_ is a multi-player focused fork of _GZDoom_.
 
 ### `doom64ex`
 
+![Doom 64 Ex screenshot](ports/doom64ex/sample.png)
+
 ### `zdoom`
 
 ![ZDoom screenshot](ports/zdoom/sample.png)

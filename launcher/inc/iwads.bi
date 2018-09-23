@@ -1,16 +1,16 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 CONST TYPE_DOOM = 1
-CONST TYPE_DOOM2 = 0
-CONST TYPE_HERETIC = 2
-CONST TYPE_HEXEN = 3
-CONST TYPE_STRIFE = 4
-CONST TYPE_DOOM64 = 5
+CONST TYPE_DOOM2 = 2
+CONST TYPE_HERETIC = 4
+CONST TYPE_HEXEN = 8
+CONST TYPE_STRIFE = 16
+CONST TYPE_DOOM64 = 32
 
 TYPE IWAD
 	id AS LONG '....unique identifier, short, no spaces
 	name AS LONG '..a short name, e.g. "DOOM2"
-	type AS _BYTE '."DOOM", "DOOM2", "HERETIC", "HEXEN" or "STRIFE"
+	type AS INTEGER '"DOOM", "DOOM2", "HERETIC", "HEXEN", "STRIFE" or "DOOM64"
 	title AS LONG '.a more complete name, e.g. "DOOM II: Hell On Earth"
 	path AS LONG '..path of the WAD file
 	tags AS LONG '..comma-separated list of required feature-tags
