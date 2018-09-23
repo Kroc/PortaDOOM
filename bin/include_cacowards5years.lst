@@ -14,9 +14,9 @@ files\config\default.glboom-plus.cfg
 files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
 
-files\ports\chocolate-doom\
+files\ports\choco-doom\
 files\ports\gzdoom-35_*\
-files\ports\prboom+\
+files\ports\prboom-plus\
 
 pages\Home #??.dosmag
 pages\5 Years of Doom #??.dosmag

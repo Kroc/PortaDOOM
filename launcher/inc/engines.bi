@@ -3,9 +3,16 @@
 
 'structure to store the details of an engine:
 TYPE Engine
+	'ID of the engine as a whole, rather than a specific version
+	'e.g. "gzdoom" instead of "gzdoom-35". this is used to group
+	'together all versions of an engine under one name
     engine AS LONG
-    dir AS LONG '...the directory name the engine is in
+	
+	'the directory name the engine is in
+    dir AS LONG
     
+	'ID of the particular engine instance,
+	'e.g. a specific version or binary such as x86/x64
     id AS LONG
     
     'these are specifically named after the INI-file param names:

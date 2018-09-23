@@ -2,8 +2,8 @@
 PortaDOOM Launcher
 ================================================================================
 
-_PortaDOOM Launcher_ manages the complexities of playing custom DOOM maps and
-mods. The history of DOOM engines is [complicated and branching][1], and _PortaDOOM Launcher_ presents a single interface to selecting the desired combination of IWAD (e.g. "DOOM2.WAD"), engine (e.g. GZDoom) and any particular DOOM mods -- known as "WAD"s, which can be new maps or gameplay enhancements.
+_PortaDOOM Launcher_ manages the complexities of playing custom _DOOM_ maps and
+mods. The history of _DOOM_ engines is [complicated and branching][1], and _PortaDOOM Launcher_ presents a single interface to selecting the desired combination of IWAD (e.g. "DOOM2.WAD"), engine (e.g. _GZDoom_) and any particular _DOOM_ mods -- known as "WAD"s, which can be new maps or gameplay enhancements.
 
 [1]: https://commons.wikimedia.org/wiki/File:Doom-Ports.png
 
@@ -21,14 +21,14 @@ Example:
 
 --------------------------------------------------------------------------------
 
-In most instances, a game is inseparable from its executable and you never have to think about it. DOOM is very different. Since the release of the source code in 1997, there have been innumerable replacement engines (often known as "source-ports") to play the same game. So broad and multifarious are the ports of DOOM that it is considered to be the "Hello World" of gaming, having appeared on [digital cameras][d], [printers][p], [ATMs][a] and even [keyboards][k]. If it has a screen, it (probably) runs DOOM.
+In most instances, a game is inseparable from its executable and you never have to think about it. _DOOM_ is very different. Since the release of the source code in 1997, there have been innumerable replacement engines (often known as "source-ports") to play the same game. So broad and multifarious are the ports of _DOOM_ that it is considered to be the "Hello World" of gaming, having appeared on [digital cameras][d], [printers][p], [ATMs][a] and even [keyboards][k]. If it has a screen, it (probably) runs _DOOM_.
 
 [d]: https://www.youtube.com/watch?v=k-AnvqiKzjY
 [p]: https://www.youtube.com/watch?v=XLHx3vO7KJM
 [a]: https://www.youtube.com/watch?v=PW5ELKTivbE
 [k]: https://www.youtube.com/watch?v=GD0L46y3IqI
 
-Over time DOOM source-ports have extended the game with new features and capabilities. Playing DOOM mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
+Over time _DOOM_ source-ports have extended the game with new features and capabilities. Playing DOOM mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
 
 `/USE <engine>`
 --------------------------------------------------------------------------------
@@ -42,45 +42,45 @@ Can be any of the following:
 
 ### `choco-doom`
 
-![Chocolate Doom screenshot](ports/chocolate-doom/sample.png)
+![Chocolate Doom screenshot](ports/choco-doom/sample.png)
 
-[Chocolate Doom](https://www.chocolate-doom.org) is an exact recreation of the original MS-DOS DOOM for modern systems, including original limitations and bugs! Its purpose is to preserve the exact behaviour of the original DOOM executable in an accessible manner so that authors can ensure compatibility without having to use DOS Box or an actual 486 PC.
+[_Chocolate Doom_](https://www.chocolate-doom.org) is an exact recreation of the original MS-DOS _DOOM_ for modern systems, including original limitations and bugs! Its purpose is to preserve the exact behaviour of the original _DOOM_ executable in an accessible manner so that authors can ensure compatibility without having to use _DOS-Box_ or an actual 486 PC.
 
-Chocolate Doom does provide a number of modern conveniences, but as a pure "vanilla" source-port it does no graphical enhancements and the game is always rendered in the original 320×200 resolution.
+_Chocolate Doom_ does provide a number of modern conveniences, but as a pure "vanilla" source-port it does no graphical enhancements and the game is always rendered in the original 320×200 resolution.
 
-Chocolate Doom is preferred by purists and map authors wishing to ensure absolute compatibility.
+_Chocolate Doom_ is preferred by purists and map authors wishing to ensure absolute compatibility.
 
-Chocolate Doom can **only** run DOOM and DOOM-II type WADs, it cannot run Heretic, Hexen or Strife type WADs, see Chocolate Heretic etc. below.
+_Chocolate Doom_ can **only** run _DOOM_ and _DOOM-II_ type WADs, it cannot run _Heretic_, _Hexen_ or _Strife_ type WADs, see _Chocolate Heretic_ etc. below.
 
 Use `choco-doom-setup` to run the setup utility prior to launching the game.
 
 ### `choco-heretic`
 
-![Chocolate Heretic screenshot](ports/chocolate-heretic/sample.png)
+![Chocolate Heretic screenshot](ports/choco-heretic/sample.png)
 
-[Chocolate Heretic](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Heretic) is, like Chocolate Doom, an exact replica of the original Heretic MS-DOS executable for modern systems.
+[_Chocolate Heretic_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Heretic) is, like _Chocolate Doom_, an exact replica of the original Heretic MS-DOS executable for modern systems.
 
-Chocolate Heretic can **only** run Heretic-type WADs.
+_Chocolate Heretic_ can **only** run _Heretic_-type WADs.
 
 Use `choco-heretic-setup` to run the setup utility prior to launching the game.
 
 ### `choco-hexen`
 
-![Chocolate Hexen screenshot](ports/chocolate-hexen/sample.png)
+![Chocolate Hexen screenshot](ports/choco-hexen/sample.png)
 
-[Chocolate Hexen](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Hexen) is, like Chocolate Doom, an exact replica of the original Hexen MS-DOS executable for modern systems.
+[_Chocolate Hexen_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Hexen) is, like _Chocolate Doom_, an exact replica of the original _Hexen_ MS-DOS executable for modern systems.
 
-Chocolate Hexen can **only** run Hexen-type WADs.
+_Chocolate Hexen_ can **only** run _Hexen_-type WADs.
 
 Use `choco-hexen-setup` to run the setup utility prior to launching the game.
 
 ### `choco-strife`
 
-![Chocolate Strife screenshot](ports/chocolate-strife/sample.png)
+![Chocolate Strife screenshot](ports/choco-strife/sample.png)
 
-[Chocolate Strife](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Strife) is, like Chocolate Doom, an exact replica of the original Strife MS-DOS executable for modern systems.
+[_Chocolate Strife_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Strife) is, like _Chocolate Doom_, an exact replica of the original _Strife_ MS-DOS executable for modern systems.
 
-Chocolate Strife can **only** run Strife-type WADs.
+_Chocolate Strife_ can **only** run _Strife_-type WADs.
 
 Use `choco-strife-setup` to run the setup utility prior to launching the game.
 
@@ -88,11 +88,11 @@ Use `choco-strife-setup` to run the setup utility prior to launching the game.
 
 ![Crispy Doom screenshot](ports/crispy-doom/sample.png)
 
-[Crispy Doom](https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom) is a modification of Chocolate Doom to remove limits, increase resolution (to 640×400) and add new features, all while remaining faithful to original DOOM.
+[_Crispy Doom_](https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom) is a modification of _Chocolate Doom_ to remove limits, increase resolution (to 640×400) and add new features, all while remaining faithful to original _DOOM_.
 
-Crispy Doom would appeal to players wanting to keep the original aesthetic of DOOM whilst gaining access to the broader range of "limit-removing" WADs without dealing with the crashes and hard limits of Chocolate DOOM.
+_Crispy Doom_ would appeal to players wanting to keep the original aesthetic of _DOOM_ whilst gaining access to the broader range of "limit-removing" WADs without dealing with the crashes and hard limits of _Chocolate Doom_.
 
-Crispy Doom can **only** run DOOM and DOOM-II type WADs.
+_Crispy Doom_ can **only** run _DOOM_ and _DOOM-II_ type WADs.
 
 Use `crispy-doom-setup` to run the setup utility prior to launching the game.
 
@@ -100,25 +100,25 @@ Use `crispy-doom-setup` to run the setup utility prior to launching the game.
 
 ![Doom Retro screenshot](ports/doom-retro/sample.png)
 
-[DOOM Retro](http://doomretro.com/) is a limit-removing port of Chocolate Doom that focuses on a 'nostalgic' feel, rather than hard accuracy.
+[_DOOM Retro_](http://doomretro.com/) is a limit-removing port of _Chocolate Doom_ that focuses on a 'nostalgic' feel, rather than hard accuracy.
 
-DOOM Retro would appeal to most players as their go-to "vanilla" engine.
+_DOOM Retro_ would appeal to most players as their go-to "vanilla" engine.
 
 ### `prboom-plus`
 
-![PrBoom+ (hardware) screenshot](ports/prboom+/sample-hw.png)
+![PrBoom+ (hardware) screenshot](ports/prboom-plus/sample-hw.png)
 
-One of the first source-ports to extend the original game was _Boom_. It added new capabilities to the DOOM map format and removed existing limits. These extensions were adopted by other engines and thus "boom" became a new base-line standard available to mappers. To this day, _boom_-format maps are still being made.
+One of the first source-ports to extend the original game was _Boom_. It added new capabilities to the _DOOM_ map format and removed existing limits. These extensions were adopted by other engines and thus "boom" became a new base-line standard available to mappers. To this day, boom-format maps are still being made.
 
-[PrBoom+](http://prboom-plus.sourceforge.net/) was an offshoot of the original _Boom_ when it was discontinued. It is a speed and compatibility focused Boom engine.
+[_PrBoom+_](http://prboom-plus.sourceforge.net/) was an offshoot of the original _Boom_ when it was discontinued. It is a speed and compatibility focused "boom" engine.
 
-As well as being able to play boom-format maps that Chocolate/Crispy-Doom cannot, PrBoom+ is also incredibly fast, spitting out high frame-rates on even basic hardware.
+As well as being able to play boom-format maps that _Chocolate_/_Crispy-Doom_ cannot, _PrBoom+_ is also incredibly fast, spitting out high frame-rates on even basic hardware.
 
-PrBoom+ is recommended for users with laptops, integrated graphics and systems with outdated graphics cards.
+_PrBoom+_ is recommended for users with laptops, integrated graphics and systems with outdated graphics cards.
 
 Use `prboom-plus-sw` (or the `/SW` switch) to use the software renderer. This is restricted to 256 colours and may be faster for systems with extremely limited OpenGL acceleration, but an otherwise adequate processor.
 
-![PrBoom+ (software) screenshot](ports/prboom+/sample-sw.png)
+![PrBoom+ (software) screenshot](ports/prboom-plus/sample-sw.png)
 
 ### `gzdoom`
 
@@ -150,7 +150,7 @@ For GZDoom, specific versions can be invoked with the following:
 
 ### `zandronum`
 
-Zandronum is a multi-player focused fork of GZDoom.
+_Zandronum_ is a multi-player focused fork of _GZDoom_.
 
 ### `doom64ex`
 
@@ -183,12 +183,12 @@ IWADs are located in the "wads" folder.
 
 If this option is omitted the default IWAD will be based on the selected engine. Some engines support only a certain game, i.e.
 
-| Engine ID           | Default WAD  |
-|---------------------|--------------|
-| `chocolate-heretic` | HERETIC.WAD  |
-| `chocolate-hexen`   | HEXEN.WAD    |
-| `chocolate-strife`  | STRIFE1.WAD  |
-| `doom64ex`          | DOOM64.WAD   |
+| Engine ID       | Default WAD  |
+|-----------------|--------------|
+| `choco-heretic` | HERETIC.WAD  |
+| `choco-hexen`   | HEXEN.WAD    |
+| `choco-strife`  | STRIFE1.WAD  |
+| `doom64ex`      | DOOM64.WAD   |
 
 All other engines default to "DOOM2.WAD" as this is the most common one used for community content.
 
@@ -249,9 +249,9 @@ Whilst DOOM gameplay mods and maps work off of DOOM.WAD or DOOM2.WAD, FreeDOOM i
 
 `/DEH <file>` & `/BEX <file>`
 --------------------------------------------------------------------------------
-Early DOOM modifications were done by way of a live patching system known as "DeHackEd". These ".deh" files are common, even today, as the lowest-common-denominator of DOOM modding.
+Early DOOM modifications were done by way of a binary patching system known as "DeHackEd". These ".deh" files are common, even today, as the lowest-common-denominator of DOOM modding.
 
-Boom, a highly-influential early source-port, enhanced this format further with "Boom-EXtended" DeHackEd files.
+_Boom_, a highly-influential early source-port, enhanced this format further with "Boom-EXtended" DeHackEd files.
 
 These parameters specify a DEH or BEX file to load alongside any WADs.
 
@@ -267,11 +267,15 @@ Warp to the given map number. For games with episodes, such as DOOM and Heretic,
 
 `/SKILL <number>`
 --------------------------------------------------------------------------------
-Set skill (difficulty) level. This is a number nominally 1 to 5, but this may vary with mods. A value of 0 disables monsters on some engines, but this can sometimes prevent a level from being completable.
+Set skill (difficulty) level. This is a number nominally 1 to 5, but this may vary with mods. A value of 0 disables monsters on some engines, but this can prevent some levels from being completable.
 
 `/CMPLVL <number>`
 --------------------------------------------------------------------------------
-Specifies the compatibility level, a feature provided by PrBoom+ to emulate the behaviour of different versions of the original DOOM executable. The number can be:
+Specifies the compatibility level, a feature provided by PrBoom+ to emulate the different behaviour of different versions of the original DOOM executable and some source-ports.
+
+If the text file for a WAD tells you to use a certain "complevel" it's recommended that you use this parameter; the differences in behaviour are subtle and sometimes game-breaking.
+
+The number can be:
 
         0     = Doom v1.2
         1     = Doom v1.666

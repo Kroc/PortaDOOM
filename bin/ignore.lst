@@ -2,8 +2,7 @@ Desktop.ini
 Thumbs.db
 .*
 
-_*
-!*
+__*
 
 *.upx
 *.bak

@@ -166,10 +166,10 @@ ECHO:
 ECHO     If this option is ommitted the default IWAD will be based on the selected
 ECHO     engine. Some engines support only a certain game, i.e.
 ECHO:
-ECHO         chocolate-heretic[-setup] : HERETIC.WAD
-ECHO         chocolate-hexen[-setup]   : HEXEN.WAD
-ECHO         chocolate-strife[-setup]  : STRIFE1.WAD
-ECHO         doom64ex                  : DOOM64.WAD
+ECHO         choco-heretic[-setup] : HERETIC.WAD
+ECHO         choco-hexen[-setup]   : HEXEN.WAD
+ECHO         choco-strife[-setup]  : STRIFE1.WAD
+ECHO         doom64ex              : DOOM64.WAD
 ECHO:
 ECHO     All other engines default to DOOM2.WAD as this is the most common one used
 ECHO     for community content.
@@ -589,7 +589,7 @@ REM # (variable left empty to begin with so as to detect the absence of the engi
 SET "PORT_SAVE="
 
 IF /I "%USE%" == "choco-doom" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-doom"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-doom"
 	SET "ENGINE_EXE=chocolate-doom.exe"
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
@@ -597,7 +597,7 @@ IF /I "%USE%" == "choco-doom" (
 	SET "PORT_TITLE=Chocolate Doom"
 )
 IF /I "%USE%" == "choco-doom-setup" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-doom"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-doom"
 	SET "ENGINE_EXE=chocolate-doom-setup.exe"
 	SET "ENGINE_CFG=choco-doom"
 	SET "ENGINE_KIN=V"
@@ -605,7 +605,7 @@ IF /I "%USE%" == "choco-doom-setup" (
 	SET "PORT_TITLE=Chocolate Doom ^(Setup^)"
 )
 IF /I "%USE%" == "choco-heretic" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-heretic"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-heretic"
 	SET "ENGINE_EXE=chocolate-heretic.exe"
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
@@ -615,7 +615,7 @@ IF /I "%USE%" == "choco-heretic" (
 	SET "GAME=HERETIC"
 )
 IF /I "%USE%" == "choco-heretic-setup" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-heretic"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-heretic"
 	SET "ENGINE_EXE=chocolate-heretic-setup.exe"
 	SET "ENGINE_CFG=choco-heretic"
 	SET "ENGINE_KIN=V"
@@ -625,7 +625,7 @@ IF /I "%USE%" == "choco-heretic-setup" (
 	SET "GAME=HERETIC"
 )
 IF /I "%USE%" == "choco-hexen" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-hexen"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-hexen"
 	SET "ENGINE_EXE=chocolate-hexen.exe"
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
@@ -635,7 +635,7 @@ IF /I "%USE%" == "choco-hexen" (
 	SET "GAME=HEXEN"
 )
 IF /I "%USE%" == "choco-hexen-setup" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-hexen"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-hexen"
 	SET "ENGINE_EXE=chocolate-hexen-setup.exe"
 	SET "ENGINE_CFG=choco-hexen"
 	SET "ENGINE_KIN=V"
@@ -645,7 +645,7 @@ IF /I "%USE%" == "choco-hexen-setup" (
 	SET "GAME=HEXEN"
 )
 IF /I "%USE%" == "choco-strife" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-strife"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-strife"
 	SET "ENGINE_EXE=chocolate-strife.exe"
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
@@ -655,7 +655,7 @@ IF /I "%USE%" == "choco-strife" (
 	SET "GAME=STRIFE"
 )
 IF /I "%USE%" == "choco-strife-setup" (
-	SET "ENGINE_DIR=%DIR_PORTS%\chocolate-strife"
+	SET "ENGINE_DIR=%DIR_PORTS%\choco-strife"
 	SET "ENGINE_EXE=chocolate-strife-setup.exe"
 	SET "ENGINE_CFG=choco-strife"
 	SET "ENGINE_KIN=V"
@@ -689,7 +689,7 @@ IF /I "%USE%" == "doom-retro" (
 	SET "PORT_TITLE=DOOM Retro"
 )
 IF /I "%USE%" == "prboom-plus" (
-	SET "ENGINE_DIR=%DIR_PORTS%\prboom+"
+	SET "ENGINE_DIR=%DIR_PORTS%\prboom-plus"
 	REM # are we using software rendering?
 	IF %SW% EQU 1 (
 		REM # use software-rendering executable
@@ -913,27 +913,6 @@ IF /I "%USE%" == "gzdoom-10" (
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=GZDoom ^(v1.0.x^)"
 	SET VER_GZDOOM=10
-)
-IF /I "%USE%" == "gzdoom-09" (
-	REM # GZDoom 0.9 does not have brightmaps/lights files
-	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-09"
-	SET "ENGINE_EXE=gzdoom.exe"
-	SET "ENGINE_CFG=gzdoom-09"
-	SET "ENGINE_KIN=Z"
-	SET "PORT_SAVE=gzdoom"
-	SET "PORT_TITLE=GZDoom ^(v0.9.x^)"
-	SET VER_GZDOOM=9
-)
-IF /I "%USE%" == "qzdoom" (
-	SET "ENGINE_DIR=%DIR_PORTS%\qzdoom_%ENGINE_BIT%"
-	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
-	REM # shh, this is a secret...
-	REM # (but you'll have to supply your own copy)
-	SET "ENGINE_EXE=qzdoom.exe"
-	SET "ENGINE_CFG=qzdoom"
-	SET "ENGINE_KIN=Z"
-	SET "PORT_SAVE=qzdoom"
-	SET "PORT_TITLE=QZDoom"
 )
 IF /I "%USE%" == "zandronum" (
 	SET "ENGINE_DIR=%DIR_PORTS%\zandronum-3"
