@@ -37,6 +37,9 @@ IF EXIST "default.choco-doom.cfg" GOTO :choco-heretic
 ECHO * Chocolate Doom             DOOM.WAD
 CALL :make_vanilla "choco-doom" "DOOM.WAD"
 
+ECHO * Chocolate Doom             CHEX.WAD
+CALL :make_vanilla "choco-doom" "CHEX.WAD"
+
 :choco-heretic
 REM # delete the file in order to re-build it
 IF EXIST "default.choco-heretic.cfg" GOTO :choco-hexen
@@ -65,6 +68,9 @@ IF EXIST "default.crispy-doom.cfg" GOTO :doom-retro
 ECHO * Crispy Doom                DOOM.WAD
 CALL :make_vanilla "crispy-doom" "DOOM.WAD"
 
+ECHO * Crispy Doom                CHEX.WAD
+CALL :make_vanilla "crispy-doom" "CHEX.WAD"
+
 
 REM # DOOM Retro
 REM ============================================================================
@@ -85,12 +91,18 @@ IF EXIST "default.glboom-plus.cfg" GOTO :prboom-plus
 ECHO * PrBoom+ ^(hardware^)         DOOM.WAD
 CALL :make_boom_hw "prboom-plus" "DOOM.WAD"
 
+ECHO * PrBoom+ ^(hardware^)         CHEX.WAD
+CALL :make_boom_hw "prboom-plus" "CHEX.WAD"
+
 :prboom-plus
 REM # delete the file in order to re-build it
 IF EXIST "default.prboom-plus.cfg" GOTO :zandronum-2
 
 ECHO * PrBoom+ ^(software^)         DOOM.WAD
 CALL :make_boom_sw "prboom-plus" "DOOM.WAD"
+
+ECHO * PrBoom+ ^(software^)         CHEX.WAD
+CALL :make_boom_sw "prboom-plus" "CHEX.WAD"
 
 
 REM # Zandronum
@@ -107,6 +119,8 @@ ECHO * Zandronum-2                HEXEN.WAD
 CALL :make_zandronum "zandronum-2" "HEXEN.WAD"
 ECHO * Zandronum-2                STRIFE1.WAD
 CALL :make_zandronum "zandronum-2" "STRIFE1.WAD"
+ECHO * Zandronum-2                CHEX.WAD
+CALL :make_zandronum "zandronum-2" "CHEX.WAD"
 
 :zandronum-3
 REM # delete the file in order to re-build it
@@ -120,6 +134,8 @@ ECHO * Zandronum-3                HEXEN.WAD
 CALL :make_zandronum "zandronum-3" "HEXEN.WAD"
 ECHO * Zandronum-3                STRIFE1.WAD
 CALL :make_zandronum "zandronum-3" "STRIFE1.WAD"
+ECHO * Zandronum-3                CHEX.WAD
+CALL :make_zandronum "zandronum-3" "CHEX.WAD"
 
 
 
@@ -150,6 +166,8 @@ ECHO * GZDoom v1.1                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-11" "HEXEN.WAD"
 ECHO * GZDoom v1.1                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-11" "STRIFE1.WAD"
+ECHO * GZDoom v1.1                CHEX.WAD
+CALL :make_gzdoom "gzdoom-11" "CHEX.WAD"
 
 :gzdoom-12
 REM # delete the file in order to re-build it
@@ -163,6 +181,8 @@ ECHO * GZDoom v1.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-12" "HEXEN.WAD"
 ECHO * GZDoom v1.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-12" "STRIFE1.WAD"
+ECHO * GZDoom v1.2                CHEX.WAD
+CALL :make_gzdoom "gzdoom-12" "CHEX.WAD"
 
 :gzdoom-13
 REM # delete the file in order to re-build it
@@ -176,6 +196,8 @@ ECHO * GZDoom v1.3                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-13" "HEXEN.WAD"
 ECHO * GZDoom v1.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-13" "STRIFE1.WAD"
+ECHO * GZDoom v1.3                CHEX.WAD
+CALL :make_gzdoom "gzdoom-13" "CHEX.WAD"
 
 :gzdoom-14
 REM # delete the file in order to re-build it
@@ -189,6 +211,8 @@ ECHO * GZDoom v1.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-14" "HEXEN.WAD"
 ECHO * GZDoom v1.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-14" "STRIFE1.WAD"
+ECHO * GZDoom v1.4                CHEX.WAD
+CALL :make_gzdoom "gzdoom-14" "CHEX.WAD"
 
 :gzdoom-15
 REM # delete the file in order to re-build it
@@ -202,6 +226,8 @@ ECHO * GZDoom v1.5                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-15" "HEXEN.WAD"
 ECHO * GZDoom v1.5                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-15" "STRIFE1.WAD"
+ECHO * GZDoom v1.5                CHEX.WAD
+CALL :make_gzdoom "gzdoom-15" "CHEX.WAD"
 
 :gzdoom-16
 REM # delete the file in order to re-build it
@@ -215,6 +241,8 @@ ECHO * GZDoom v1.6                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-16" "HEXEN.WAD"
 ECHO * GZDoom v1.6                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-16" "STRIFE1.WAD"
+ECHO * GZDoom v1.6                CHEX.WAD
+CALL :make_gzdoom "gzdoom-16" "CHEX.WAD"
 
 :gzdoom-17
 REM # delete the file in order to re-build it
@@ -228,6 +256,8 @@ ECHO * GZDoom v1.7                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-17" "HEXEN.WAD"
 ECHO * GZDoom v1.7                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-17" "STRIFE1.WAD"
+ECHO * GZDoom v1.7                CHEX.WAD
+CALL :make_gzdoom "gzdoom-17" "CHEX.WAD"
 
 :gzdoom-18
 REM # delete the file in order to re-build it
@@ -241,6 +271,8 @@ ECHO * GZDoom v1.8                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-18" "HEXEN.WAD"
 ECHO * GZDoom v1.8                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-18" "STRIFE1.WAD"
+ECHO * GZDoom v1.8                CHEX.WAD
+CALL :make_gzdoom "gzdoom-18" "CHEX.WAD"
 
 :gzdoom-19
 REM # delete the file in order to re-build it
@@ -254,6 +286,8 @@ ECHO * GZDoom v1.9                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-19" "HEXEN.WAD"
 ECHO * GZDoom v1.9                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-19" "STRIFE1.WAD"
+ECHO * GZDoom v1.9                CHEX.WAD
+CALL :make_gzdoom "gzdoom-19" "CHEX.WAD"
 
 :gzdoom-20
 REM # delete the file in order to re-build it
@@ -267,6 +301,8 @@ ECHO * GZDoom v2.0                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-20" "HEXEN.WAD"
 ECHO * GZDoom v2.0                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-20" "STRIFE1.WAD"
+ECHO * GZDoom v2.0                CHEX.WAD
+CALL :make_gzdoom "gzdoom-20" "CHEX.WAD"
 
 :gzdoom-21
 REM # delete the file in order to re-build it
@@ -280,6 +316,8 @@ ECHO * GZDoom v2.1                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-21" "HEXEN.WAD"
 ECHO * GZDoom v2.1                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-21" "STRIFE1.WAD"
+ECHO * GZDoom v2.1                CHEX.WAD
+CALL :make_gzdoom "gzdoom-21" "CHEX.WAD"
 
 :gzdoom-22
 REM # delete the file in order to re-build it
@@ -293,6 +331,8 @@ ECHO * GZDoom v2.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-22" "HEXEN.WAD"
 ECHO * GZDoom v2.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-22" "STRIFE1.WAD"
+ECHO * GZDoom v2.2                CHEX.WAD
+CALL :make_gzdoom "gzdoom-22" "CHEX.WAD"
 
 :gzdoom-23
 REM # delete the file in order to re-build it
@@ -306,6 +346,8 @@ ECHO * GZDoom v2.3                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-23" "HEXEN.WAD"
 ECHO * GZDoom v2.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-23" "STRIFE1.WAD"
+ECHO * GZDoom v2.3                CHEX.WAD
+CALL :make_gzdoom "gzdoom-23" "CHEX.WAD"
 
 :gzdoom-24
 REM # delete the file in order to re-build it
@@ -319,6 +361,8 @@ ECHO * GZDoom v2.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-24" "HEXEN.WAD"
 ECHO * GZDoom v2.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-24" "STRIFE1.WAD"
+ECHO * GZDoom v2.4                CHEX.WAD
+CALL :make_gzdoom "gzdoom-24" "CHEX.WAD"
 
 :gzdoom-32
 REM # delete the file in order to re-build it
@@ -332,6 +376,8 @@ ECHO * GZDoom v3.2                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-32" "HEXEN.WAD"
 ECHO * GZDoom v3.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-32" "STRIFE1.WAD"
+ECHO * GZDoom v3.2                CHEX.WAD
+CALL :make_gzdoom "gzdoom-32" "CHEX.WAD"
 
 :gzdoom-33
 REM # delete the file in order to re-build it
@@ -345,6 +391,8 @@ ECHO * GZDoom v3.3                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-33" "HEXEN.WAD"
 ECHO * GZDoom v3.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-33" "STRIFE1.WAD"
+ECHO * GZDoom v3.3                CHEX.WAD
+CALL :make_gzdoom "gzdoom-33" "CHEX.WAD"
 
 :gzdoom-34
 REM # delete the file in order to re-build it
@@ -358,6 +406,8 @@ ECHO * GZDoom v3.4                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-34" "HEXEN.WAD"
 ECHO * GZDoom v3.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-34" "STRIFE1.WAD"
+ECHO * GZDoom v3.4                CHEX.WAD
+CALL :make_gzdoom "gzdoom-34" "CHEX.WAD"
 
 :gzdoom-35
 REM # delete the file in order to re-build it
@@ -371,6 +421,8 @@ ECHO * GZDoom v3.5                HEXEN.WAD
 CALL :make_gzdoom "gzdoom-35" "HEXEN.WAD"
 ECHO * GZDoom v3.5                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-35" "STRIFE1.WAD"
+ECHO * GZDoom v3.5                CHEX.WAD
+CALL :make_gzdoom "gzdoom-35" "CHEX.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
@@ -384,7 +436,8 @@ ECHO * GZDoom                     HEXEN.WAD
 CALL :make_gzdoom "gzdoom" "HEXEN.WAD"
 ECHO * GZDoom                     STRIFE1.WAD
 CALL :make_gzdoom "gzdoom" "STRIFE1.WAD"
-
+ECHO * GZDoom                     CHEX.WAD
+CALL :make_gzdoom "gzdoom" "CHEX.WAD"
 
 REM # ZDoom
 REM ============================================================================
@@ -400,7 +453,8 @@ ECHO * ZDoom v2.8.1               HEXEN.WAD
 CALL :make_zdoom "zdoom" "HEXEN.WAD"
 ECHO * ZDoom v2.8.1               STRIFE1.WAD
 CALL :make_zdoom "zdoom" "STRIFE1.WAD"
-
+ECHO * ZDoom v2.8.1               CHEX.WAD
+CALL :make_zdoom "zdoom" "CHEX.WAD"
 
 
 REM # DOOM 64
@@ -478,6 +532,8 @@ REM # use F12 for screen-shot
 
 REM # user-name for multi-player
 %BIN_FART% "default.%~1.extra.cfg" "player_name                   \"%USERNAME%\"" "player_name                   \"PortaDOOM\""
+REM # in Chocolate Strife there's also nickname?
+%BIN_FART% "default.choco-strife.cfg" "nickname                      \"(null)\"" "nickname                      \"PortaDOOM\""
 
 GOTO:EOF
 
@@ -574,6 +630,12 @@ IF "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
 )
+IF "%~2" == "CHEX.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
+)
 
 GOTO:EOF
 
@@ -655,6 +717,17 @@ IF "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] a=+moveleft
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
+)
+IF "%~2" == "CHEX.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
 )
 
 REM # change controls
@@ -743,6 +816,17 @@ IF "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] a=+moveleft
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
+)
+IF "%~2" == "CHEX.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
 )
 
 REM # change controls

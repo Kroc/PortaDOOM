@@ -69,6 +69,8 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
+    (for creating the default config files)
 [ ] LAUNCHER : Add a `/VER` param to select version constraints
 [ ] LAUNCHER : Figure out what tags softpoly supports
 [ ] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?

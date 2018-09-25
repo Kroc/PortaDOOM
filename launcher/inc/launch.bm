@@ -125,6 +125,7 @@ LET cfg_default$ = DIR_CONFIG$ + "default." + STRGET$(Engines_Selected.cfg)
 IF CMD_DEFAULT` THEN
     'set the path to the default config file (sans-extension)
     LET CMD_CONFIG$ = cfg_default$
+	REM LET CMD$ = CMD$ + " +quit"
 ELSE
     'build the path to the user's config file (for selected engine)
     'note that this leaves off the file extension, for now
