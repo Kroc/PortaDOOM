@@ -274,6 +274,13 @@ END IF
 '-----------------------------------------------------------------------------
 'has a DEH file been specified?
 LET CMD_DEH$ = STRGET$(Games_Selected.deh)
+
+'FIXME: conflict with existing DEH parameter
+IF Games_Selected.type = TYPE_CHEX THEN
+	LET CMD_DEH$ = "chex.deh"
+	LET CMD$ = CMD$ + " -exe chex"
+END IF
+
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
     'FIXME: file missing?

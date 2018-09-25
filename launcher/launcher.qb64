@@ -126,10 +126,10 @@ launch:
 
 '=============================================================================
 
-SUB _GL
-    IF LEN(glVersion$) > 0 THEN EXIT SUB
-    LET glVersion$ = _glGetString(_GL_VERSION)
-END SUB
+''SUB _GL
+''    IF LEN(glVersion$) > 0 THEN EXIT SUB
+''    LET glVersion$ = _glGetString(_GL_VERSION)
+''END SUB
 
 '$INCLUDE:'inc\tags.bm'
 '$INCLUDE:'inc\games.bm'

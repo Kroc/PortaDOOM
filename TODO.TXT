@@ -3,12 +3,14 @@
 [ ] LAUNCHER : FreeDOOM substitution
 [X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
+[ ] LAUNCHER : Enforce IWAD <> Engine Type, e.g. don't allow DOOM.WAD on Hexen
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
+[ ] LAUNCHER : Add FreeDOOM 1 & 2 IWAD meta-data
 
 [P2] Feature Enhancements:
 ================================================================================

@@ -124,7 +124,7 @@ SUB Games_Add ( _
                 LET Games(Games_Count).type = TYPE_DOOM64
         END SELECT
     ELSE
-        LET Games(Games_Count).type = iwad%%
+        LET Games(Games_Count).type = IWADS(iwad%%).type
     END IF
     
     'process the tag list

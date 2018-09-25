@@ -30,7 +30,7 @@ In most instances, a game is inseparable from its executable and you never have 
 
 When we talk about _DOOM_ though, particularly in the context of _PortaDOOM Launcher_, what we're really talking about is a series of games all based on the _DOOM_ engine.
 
-![The canonical 8: DOOM, DOOM2, TNT, PLUTONIA, HERETIC, HEXEN, STRIFE, and CHEX](canonical8.jpg)
+![The canonical 8: DOOM, DOOM2, TNT, PLUTONIA, HERETIC, HEXEN, STRIFE, and CHEX](canonical8.jpg "The Canonical Eight")
 
 Over time _DOOM_ source-ports have extended the game with new features and capabilities. Playing _DOOM_ mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
 
@@ -44,7 +44,7 @@ Can be any of the following:
 
 ### `choco-doom`
 
-![Chocolate Doom screenshot](ports/choco-doom/sample.png)
+![Chocolate Doom screenshot](ports/choco-doom/sample.png "Chocolate Doom playing DOOM2.WAD")
 
 [_Chocolate Doom_](https://www.chocolate-doom.org) is an exact recreation of the original MS-DOS _DOOM_ for modern systems, including original limitations and bugs! Its purpose is to preserve the exact behaviour of the original _DOOM_ executable in an accessible manner so that authors can ensure compatibility without having to use _DOS-Box_ or an actual 486 PC.
 
@@ -58,7 +58,7 @@ Use `choco-doom-setup` to run the setup utility prior to launching the game.
 
 ### `choco-heretic`
 
-![Chocolate Heretic screenshot](ports/choco-heretic/sample.png)
+![Chocolate Heretic screenshot](ports/choco-heretic/sample.png "Chocolate Heretic playing HERETIC.WAD")
 
 [_Chocolate Heretic_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Heretic) is, like _Chocolate Doom_, an exact replica of the original Heretic MS-DOS executable for modern systems.
 
