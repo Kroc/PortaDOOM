@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ vanilla /PWAD ETERNALL.WAD /DEH ETERNAL.DEH
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD ETERNALL.WAD /DEH ETERNAL.DEH

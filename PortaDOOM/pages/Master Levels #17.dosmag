@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Nessus
-$KEY:P=SHELL:play.bat /PWAD MASTER\NESSUS.WAD /WARP 7
+$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\NESSUS.WAD /WARP 7
 $KEY:T=SHELL:wads\MASTER\NESSUS.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP07:_Nessus_(Master_Levels)
 

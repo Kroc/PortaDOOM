@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ vanilla /PWAD CHORD1.WAD /WARP 25
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD CHORD1.WAD /WARP 25

@@ -2,4 +2,4 @@
 
 'since QB64 doesn't support variable-length strings in User-Defined-Types,
 'it's more flexible to use a string pool than impose limits on every string
-REDIM SHARED Strings(0) AS STRING
+REDIM SHARED Strings$(0)

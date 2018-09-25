@@ -103,6 +103,7 @@ readINI:
     DIM iwad_type%%
     SELECT CASE ReadSetting$(path$, "iwad", "type")
         CASE "DOOM": LET iwad_type%% = TYPE_DOOM
+        CASE "CHEX": LET iwad_type%% = TYPE_CHEX
         CASE "DOOM2": LET iwad_type%% = TYPE_DOOM2
         CASE "HERETIC": LET iwad_type%% = TYPE_HERETIC
         CASE "HEXEN": LET iwad_type%% = TYPE_HEXEN

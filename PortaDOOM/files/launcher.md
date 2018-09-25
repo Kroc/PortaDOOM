@@ -28,14 +28,16 @@ In most instances, a game is inseparable from its executable and you never have 
 [a]: https://www.youtube.com/watch?v=PW5ELKTivbE
 [k]: https://www.youtube.com/watch?v=GD0L46y3IqI
 
-Over time _DOOM_ source-ports have extended the game with new features and capabilities. Playing DOOM mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
+When we talk about _DOOM_ though, particularly in the context of _PortaDOOM Launcher_, what we're really talking about is a series of games all based on the _DOOM_ engine.
+
+![The canonical 8: DOOM, DOOM2, TNT, PLUTONIA, HERETIC, HEXEN, STRIFE, and CHEX](canonical8.jpg)
+
+Over time _DOOM_ source-ports have extended the game with new features and capabilities. Playing _DOOM_ mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
 
 `/USE <engine>`
 --------------------------------------------------------------------------------
 
-<!--Engines are stored in the "files\ports" folder. Note that most PortaDOOM packages do **not** include the full suite of engines; only those relevant to the particular package.
-
-Each folder within the "ports" folder will contain a "porta-doom.ini" file that provides the meta-data for each engine.-->
+<!--Engines are stored in the "files\ports" folder. Note that most PortaDOOM packages do **not** include the full suite of engines; only those relevant to the particular package.-->
 
 Which engine (a.k.a. "source-port") to use. \
 Can be any of the following:
@@ -223,6 +225,46 @@ If the given IWAD cannot be found and no PWAD is specified (see below), i.e. you
 |  Strife | STRIFE1.WAD    | STRIFE0.WAD   | Shareware version |
 
 NOTE: There was no shareware release for DOOM II.
+
+## `/DOOM`
+
+Shortcut for `/IWAD DOOM`
+
+## `/CHEX`
+
+Shortcut for `/IWAD CHEX`
+
+## `/DOOM2`
+
+Shortcut for `/IWAD DOOM2`
+
+## `/TNT`
+
+Shortcut for `/IWAD TNT`
+
+## `/PLUTONIA`
+
+Shortcut for `/IWAD PLUTONIA`
+
+## `/HERETIC`
+
+Shortcut for `/IWAD HERETIC`
+
+## `/HEXEN`
+
+Shortcut for `/IWAD HEXEN`
+
+## `/STRIFE`
+
+Shortcut for `/IWAD STRIFE1`
+
+## `/FREEDOOM1`
+
+Shortcut for `/IWAD FREEDOOM1`
+
+## `/FREEDOOM2`
+
+Shortcut for `/IWAD FREEDOOM2`
 
 ## `/PWAD <file>`
 

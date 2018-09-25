@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD breach.wad /WARP 1
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ boom /PWAD breach.wad /WARP 1

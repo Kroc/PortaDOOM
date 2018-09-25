@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Black Tower
-$KEY:P=SHELL:play.bat /PWAD MASTER\BLACKTWR.WAD /WARP 25
+$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\BLACKTWR.WAD /WARP 25
 $KEY:T=SHELL:wads\MASTER\BLACKTWR.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP25:_Black_Tower_(Master_Levels)
 

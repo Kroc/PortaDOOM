@@ -1,16 +1,21 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-CONST TYPE_DOOM = 1
-CONST TYPE_DOOM2 = 2
-CONST TYPE_HERETIC = 4
-CONST TYPE_HEXEN = 8
-CONST TYPE_STRIFE = 16
-CONST TYPE_DOOM64 = 32
+'the DOOM engine was enhanced over time. not all modern source ports support
+'these enhancements so the IWAD has to specify which original DOOM-engine it
+'was intended for
+
+CONST TYPE_DOOM = 1'....DOOM uses episodes
+CONST TYPE_CHEX = 2 '...a lightly modified DOOM engine
+CONST TYPE_DOOM2 = 4 '..DOOM2 does not use episodes
+CONST TYPE_HERETIC = 8 'HERETIC added an inventory
+CONST TYPE_HEXEN = 16 '.HEXEN added ACS scripting and classes
+CONST TYPE_STRIFE = 32 'STRIFE adds a conversation system and more
+CONST TYPE_DOOM64 = 64 'DOOM64 uses coloured lighting
 
 TYPE IWAD
 	id AS LONG '....unique identifier, short, no spaces
 	name AS LONG '..a short name, e.g. "DOOM2"
-	type AS INTEGER '"DOOM", "DOOM2", "HERETIC", "HEXEN", "STRIFE" or "DOOM64"
+	type AS INTEGER
 	title AS LONG '.a more complete name, e.g. "DOOM II: Hell On Earth"
 	path AS LONG '..path of the WAD file
 	tags AS LONG '..comma-separated list of required feature-tags

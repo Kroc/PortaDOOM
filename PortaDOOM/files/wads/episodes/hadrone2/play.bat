@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD DOOM /REQ no-limit /PWAD hadrone2.wad /WARP 2.1
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM /REQ no-limit /PWAD hadrone2.wad /WARP 2.1

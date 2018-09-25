@@ -355,6 +355,9 @@ FUNCTION Engines_GetType%(type$)
     IF INSTR(type$, ",DOOM,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM
     END IF
+    IF INSTR(type$, ",CHEX,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_CHEX
+    END IF
     IF INSTR(type$, ",DOOM2,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM2
     END IF

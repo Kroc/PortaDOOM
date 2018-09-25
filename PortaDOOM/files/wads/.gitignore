@@ -6,3 +6,7 @@
 **.N64
 **.V64
 **.Z64
+
+# DO include the CHEX.WAD patch for source-port compatibility
+# (.deh files are normally excluded)
+!chex.deh

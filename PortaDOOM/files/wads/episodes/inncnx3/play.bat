@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD DOOM2 /REQ zdoom /PWAD innocenceX3.wad
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ zdoom /PWAD innocenceX3.wad

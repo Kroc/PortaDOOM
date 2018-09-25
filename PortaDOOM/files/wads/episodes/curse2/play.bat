@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD HEXEN /REQ zdoom /PWAD curse2.pk3
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /HEXEN /REQ zdoom /PWAD curse2.pk3

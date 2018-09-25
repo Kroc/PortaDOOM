@@ -1,0 +1,46 @@
+===========================================================================
+Title                   : chex.exe dehacked patch
+Filename                : chex.deh
+Release date            : 14th Aug 2008
+Author                  : Simon Howard
+Email Address           : fraggle@gmail.com
+Other Files By Author   : greenfish.wad
+
+Description             : This is a dehacked patch designed to emulate the
+                          chex.exe executable included with Chex Quest.  It
+                          is generated from a comparison of chex.exe with
+                          Final Doom's doom2.exe.
+
+===========================================================================
+
+* Notes *
+
+The purpose of this patch is to allow Chex Quest to be played accurately with
+source ports; it will not work with Vanilla Doom and DOS dehacked, as some of
+the string and cheat replacements are longer than is possible with dehacked.
+
+Because of the limitations of dehacked, it is not possible to completely
+emulate chex.exe merely with a dehacked patch.  Although this patch takes
+care of the majority of the changes necessary, the following changes are also
+necessary to accurately emulate chex.exe:
+
+ * Monsters should not drop ammo
+ * The game should end after the fifth level, instead of the eighth.
+ * The episode selection screen should not be displayed.
+ * The level warp cheat should always warp to episode 1.
+ * The automap should show the level name for the episode 1 level,
+   eg. the displayed level name for E2M3 is the level name for 
+       E1M3.
+
+The latest version of Chocolate Doom has been extended to include a mode which
+applies these changes.
+
+* Copyright / Permissions *
+
+You may do anything you like with this file.  I don't claim any copyright
+on it.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://ftp.gamers.org/pub/idgames/ and mirrors
+

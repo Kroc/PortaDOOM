@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ boom /PWAD disjunct.wad /CMPLVL 9
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ boom /PWAD disjunct.wad /CMPLVL 9

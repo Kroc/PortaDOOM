@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /REQ no-limit /IWAD DOOM2 /PWAD 3hafinal.wad
+@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /DOOM2 /REQ no-limit /PWAD 3hafinal.wad

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /IWAD DOOM /REQ choco /PWAD DTWID-LE.wad /DEH DTWID-LE.deh
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /DOOM /REQ choco /PWAD DTWID-LE.wad /DEH DTWID-LE.deh

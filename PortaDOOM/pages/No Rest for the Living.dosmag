@@ -1,5 +1,5 @@
 $NAV=Commercial DOOM
-$KEY:P=SHELL:play.bat /REQ no-limit /PWAD NERVE.WAD
+$KEY:P=SHELL:play.bat /DOOM2 /REQ no-limit /PWAD NERVE.WAD
 $KEY:W=URL:https://doomwiki.org/wiki/No_Rest_for_the_Living
 
 :No Rest for the Living

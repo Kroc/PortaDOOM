@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Subterra
-$KEY:P=SHELL:play.bat /PWAD MASTER\SUBTERRA.WAD /WARP 1
+$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\SUBTERRA.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\SUBTERRA.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Subterra_(Master_Levels)
 

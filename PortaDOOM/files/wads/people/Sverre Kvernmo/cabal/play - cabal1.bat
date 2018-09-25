@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /REQ vanilla /PWAD FLOOD.WAD /WARP 3
+@PUSHD "%~dp0" & "..\..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD FLOOD.WAD /WARP 3

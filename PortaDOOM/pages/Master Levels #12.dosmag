@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Trapped on Titan
-$KEY:P=SHELL:play.bat /PWAD MASTER\TTRAP.WAD /WARP 1
+$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\TTRAP.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\TTRAP.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Trapped_on_Titan_(Master_Levels)
 

@@ -19,8 +19,9 @@ ECHO     [A] DOOM / DOOM II / TNT / PLUTONIA
 ECHO     [B] HERETIC
 ECHO     [C] HEXEN
 ECHO     [D] STRIFE
+ECHO     [E] CHEX
 ECHO:
-ECHO     [E] DOOM 64 ^(DOOM 64 EX^)
+ECHO     [F] DOOM 64 ^(DOOM 64 EX^)
 ECHO:
 
 SET "$="
@@ -32,9 +33,10 @@ IF /I "%$%" == "A" CALL :menu_doom
 IF /I "%$%" == "B" CALL :menu_heretic
 IF /I "%$%" == "C" CALL :menu_hexen
 IF /I "%$%" == "D" CALL :menu_strife
+IF /I "%$%" == "E" CALL :menu_chex
 
 REM # don't need a menu for DOOM 64, there's only one engine
-IF /I "%$%" == "E" CALL :launch_engine "doom64ex" "DOOM64.WAD"
+IF /I "%$%" == "F" CALL :launch_engine "doom64ex" "DOOM64.WAD"
 
 GOTO :menu
 
@@ -176,6 +178,47 @@ IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "STRIFE1.WAD"
 GOTO :menu_strife
 
 
+:menu_chex
+REM ============================================================================
+CLS
+ECHO:
+ECHO  Edit CHEX Engine Defaults:
+ECHO  ==========================
+ECHO  Select engine:
+ECHO:
+ECHO     [C] Chocolate Doom             CHEX.WAD
+ECHO     [P] Crispy Doom                CHEX.WAD
+ECHO     [R] DOOM Retro                 CHEX.WAD
+ECHO:
+ECHO     [H] PrBoom+ Hardware           CHEX.WAD
+ECHO     [S] PrBoom+ Software           CHEX.WAD
+ECHO:
+ECHO     [2] Zandronum v2               CHEX.WAD
+ECHO     [3] Zandronum v3               CHEX.WAD
+ECHO:
+ECHO     [G] GZDoom ...                 CHEX.WAD
+ECHO:
+ECHO     [Z] ZDoom                      CHEX.WAD
+ECHO:
+
+SET "$="
+SET /P "$=? "
+
+IF "%$%" == "" GOTO:EOF
+
+IF /I "%$%" == "C" CALL :launch_engine    "choco-doom-setup"     "CHEX.WAD"
+IF /I "%$%" == "P" CALL :launch_engine    "crispy-doom-setup"    "CHEX.WAD"
+IF /I "%$%" == "R" CALL :launch_engine    "doom-retro"           "CHEX.WAD"
+IF /I "%$%" == "H" CALL :launch_engine    "prboom-plus"          "CHEX.WAD"
+IF /I "%$%" == "S" CALL :launch_engine_sw "prboom-plus"          "CHEX.WAD"
+IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "CHEX.WAD"
+IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "CHEX.WAD"
+IF /I "%$%" == "G" CALL :menu_gzdoom                             "CHEX.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "CHEX.WAD"
+
+GOTO :menu_chex
+
+
 :menu_gzdoom
 REM ============================================================================
 CLS
@@ -222,8 +265,6 @@ IF /I "%$%" == "S" CALL :launch_engine    "gzdoom-34"  "%~1"
 IF /I "%$%" == "T" CALL :launch_engine    "gzdoom-35"  "%~1"
 
 GOTO :menu_gzdoom
-
-
 
 
 

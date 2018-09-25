@@ -1,7 +1,7 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
 [ ] LAUNCHER : FreeDOOM substitution
-[ ] LAUNCHER : TNT, PLUTONIA IWAD meta-data
+[X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Required: (cannot be released until fixed)
@@ -26,7 +26,8 @@
 [ ] IWADs: (including Skill Names)
     [ ] Harmony
     [ ] Hacx
-    [ ] Chex / Chex3
+    [X] Chex
+	 -  [ ] Sort out best way to handle required DEH file
     [ ] Adventures of Square (SHAREWARE)
     [ ] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)
@@ -66,6 +67,7 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Add a `/VER` param to select version constraints
 [ ] LAUNCHER : Figure out what tags softpoly supports
 [ ] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
 [ ] DOOM-Crusher : Add PKE, EPK to recognised PK3 formats

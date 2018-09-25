@@ -61,7 +61,7 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVES$)
 'differing versions, so a common save name is provided in the INI
 DIM DIR_SAVE_ENGINE$
 LET DIR_SAVE_ENGINE$ = Paths_AddSlash$( _
-	DIR_SAVES$ + STRGET$(Engines_Selected.save) _
+    DIR_SAVES$ + STRGET$(Engines_Selected.save) _
 )
 
 'does this folder exist?
@@ -78,7 +78,7 @@ IF Games_Selected.pwad <> 0 THEN
         + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
 ELSE
     'otherwise just use the IWAD name
-	
+    
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
         + Paths_GetFileBaseName$(STRGET$(IWADs(iwad%%).path))
 END IF
@@ -196,19 +196,19 @@ PRINT "        -iwad : " + RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
 DIM auto_path$
 LET auto_path$ = STRGET$(Engines_Selected.auto)
 IF auto_path$ <> "" THEN
-	'read the first file from the list
-	LET auto_path$ = WADs_Split$(auto_path$)
-	DO
-		'FIXME: check file exists; here or at the end?
-		'TODO: other places for auto-load files?
-		
-		'add to the list of files for the command-line params
-		LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
-		
-		PRINT " (auto) -file : " + RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
-		
-		LET auto_path$ = WADs_Split$("")
-	LOOP WHILE auto_path$ <> ""
+    'read the first file from the list
+    LET auto_path$ = WADs_Split$(auto_path$)
+    DO
+        'FIXME: check file exists; here or at the end?
+        'TODO: other places for auto-load files?
+        
+        'add to the list of files for the command-line params
+        LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
+        
+        PRINT " (auto) -file : " + RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
+        
+        LET auto_path$ = WADs_Split$("")
+    LOOP WHILE auto_path$ <> ""
 END IF
 
 '-----------------------------------------------------------------------------
@@ -221,12 +221,12 @@ END IF
 LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
 IF CMD_PWAD$ <> "" THEN
     LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
-	'FIXME: file missing?
+    'FIXME: file missing?
     LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
-	
-	CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
+    
+    CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
     LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
-	
+    
     PRINT " (pwad) -file : " + RTRUNCATE$(CMD_PWAD$, UI_SCREEN_WIDTH - 17)
 END IF
 
@@ -236,37 +236,37 @@ END IF
 DIM file$
 LET file$ = STRGET$(Games_Selected.files)
 IF file$ <> "" THEN
-	'read the first file from the list
-	LET file$ = WADs_Split$(file$)
-	DO
-		LET file$ = Launch_ClipPath$(file$)
-		LET file$ = Launch_ClipPath$(WADs_Find$(file$))
-		'add to the list of files for the command-line params
-		LET CMD_FILES$ = CMD_FILES$ + file$ + ";"
-		'announce
-		PRINT "        -file : " + RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
-		'get the next file in the list (if any)
-		LET file$ = WADs_Split$("")
-	LOOP WHILE file$ <> ""
+    'read the first file from the list
+    LET file$ = WADs_Split$(file$)
+    DO
+        LET file$ = Launch_ClipPath$(file$)
+        LET file$ = Launch_ClipPath$(WADs_Find$(file$))
+        'add to the list of files for the command-line params
+        LET CMD_FILES$ = CMD_FILES$ + file$ + ";"
+        'announce
+        PRINT "        -file : " + RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
+        'get the next file in the list (if any)
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 'add all files to the command-line
 IF CMD_FILES$ <> "" THEN
-	'vanilla engines use `-merge`
-	IF Engines_Selected.kin = KIN_V THEN
-		CMD$ = CMD$ + " -merge"
-	ELSE
-		CMD$ = CMD$ + " -file"
-	END IF
-	
-	'read the first file from the list
-	LET file$ = WADs_Split$(CMD_FILES$)
-	DO
-		'add the file to the command-line
-		LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
-		'get the next file in the list (if any)
-		LET file$ = WADs_Split$("")
-	LOOP WHILE file$ <> ""
+    'vanilla engines use `-merge`
+    IF Engines_Selected.kin = KIN_V THEN
+        CMD$ = CMD$ + " -merge"
+    ELSE
+        CMD$ = CMD$ + " -file"
+    END IF
+    
+    'read the first file from the list
+    LET file$ = WADs_Split$(CMD_FILES$)
+    DO
+        'add the file to the command-line
+        LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
+        'get the next file in the list (if any)
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 '-----------------------------------------------------------------------------
@@ -276,7 +276,7 @@ END IF
 LET CMD_DEH$ = STRGET$(Games_Selected.deh)
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
-	'FIXME: file missing?
+    'FIXME: file missing?
     LET CMD_DEH$ = WADs_Find$(CMD_DEH$)
     'add it to the command-line
     LET CMD$ = CMD$ + " -deh " _
@@ -289,12 +289,12 @@ END IF
 LET CMD_BEX$ = STRGET$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
-	'FIXME: file missing?
+    'FIXME: file missing?
     LET CMD_BEX$ = WADs_Find$(CMD_BEX$)
-	'add it to the command-line
+    'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
-	'and announce
+    'and announce
     PRINT "         -bex : " + RTRUNCATE$(Launch_ClipPath$(CMD_BEX$), UI_SCREEN_WIDTH - 17)
 END IF
 
@@ -304,13 +304,13 @@ END IF
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
     DIM demo$
-	'try the folder from which the launcher was called
+    'try the folder from which the launcher was called
     LET demo$ = DIR_CUR$ + CMD_DEMO$
     'if it doesn't exist there...
     IF NOT _FILEEXISTS(demo$) THEN
         'try the special demos folder
-		LET demo$ = DIR_DEMOS$ + CMD_DEMO$
-		'if it doesn't exist there...
+        LET demo$ = DIR_DEMOS$ + CMD_DEMO$
+        'if it doesn't exist there...
         IF NOT _FILEEXISTS(demo$) THEN
             'FIXME: handle demo file missing
         END IF
@@ -328,114 +328,114 @@ END IF
 'is a warp requested? (episode and/or map-number)
 IF Games_Selected.warp_e >= 0 _
 OR Games_Selected.warp_m >= 0 THEN
-	'compose the -warp parameter for engines:
-	DIM e$: LET e$ = STR$(Games_Selected.warp_e)
-	DIM m$: LET m$ = STR$(Games_Selected.warp_m)
-	DIM warp$
-	
-	IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
-	IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
-	
-	'add to the command-line and announce
-	LET CMD$ = CMD$ + " -warp" + warp$
-	PRINT "        -warp :" + warp$
-	
-	'do we need to ask for a skill level?
-	'(warp, but no skill-level provided)
-	IF Games_Selected.skill < 0 THEN
-		PRINT ""
-		PRINT "--------------------------------------------------------------------------------"
-		PRINT ""
-		PRINT "         CHOOSE YOUR SKILL LEVEL:"
-		PRINT "         (Press numbered key)"
-		PRINT ""
-		
-		'get the list of skill-levels from the IWAD meta-data;
-		'if there is none, default to DOOM's descriptions
-		IF Games_Selected.iwad = 0 _
-		OR IWADs(Games_Selected.iwad).skill1 = 0 _
-		THEN
-			PRINT "         [1]  I'm Too Young To Die"
-			PRINT "         [2]  Hey, Not Too Rough"
-			PRINT "         [3]  Hurt Me Plenty"
-			PRINT "         [4]  Ultra-Violence"
-			PRINT "         [5]  Nightmare!"
-		ELSE
-			'work through the list of IWAD skill-levels (up to 9)
-			IF IWADs(Games_Selected.iwad).skill1 > 0 THEN
-				PRINT "         [1]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill1)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill2 > 0 THEN
-				PRINT "         [2]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill2)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill3 > 0 THEN
-				PRINT "         [3]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill3)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill4 > 0 THEN
-				PRINT "         [4]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill4)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill5 > 0 THEN
-				PRINT "         [5]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill5)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill6 > 0 THEN
-				PRINT "         [6]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill6)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill7 > 0 THEN
-				PRINT "         [7]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill7)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill8 > 0 THEN
-				PRINT "         [8]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill8)
-			END IF
-			IF IWADs(Games_Selected.iwad).skill9 > 0 THEN
-				PRINT "         [9]  ";
-				PRINT STRGET$(IWADs(Games_Selected.iwad).skill9)
-			END IF
-		END IF
-		
-		PRINT ""
-		PRINT "         [?]";
-		'position a blinking cursor over the question-mark
-		LOCATE , POS(0)-2, 1, 0, 31
-		
-		DIM in$
-		DO
-			LET in$ = INKEY$
-		LOOP WHILE ISINT(in$) = FALSE
-		
-		'turn off the cursor
-		LOCATE ,1 , 0
-		
-		PRINT "--------------------------------------------------------------------------------"
-		PRINT ""
-		
-		LET Games_Selected.skill = VAL(in$)
-	END IF
+    'compose the -warp parameter for engines:
+    DIM e$: LET e$ = STR$(Games_Selected.warp_e)
+    DIM m$: LET m$ = STR$(Games_Selected.warp_m)
+    DIM warp$
+    
+    IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
+    IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
+    
+    'add to the command-line and announce
+    LET CMD$ = CMD$ + " -warp" + warp$
+    PRINT "        -warp :" + warp$
+    
+    'do we need to ask for a skill level?
+    '(warp, but no skill-level provided)
+    IF Games_Selected.skill < 0 THEN
+        PRINT ""
+        PRINT "--------------------------------------------------------------------------------"
+        PRINT ""
+        PRINT "         CHOOSE YOUR SKILL LEVEL:"
+        PRINT "         (Press numbered key)"
+        PRINT ""
+        
+        'get the list of skill-levels from the IWAD meta-data;
+        'if there is none, default to DOOM's descriptions
+        IF Games_Selected.iwad = 0 _
+        OR IWADs(Games_Selected.iwad).skill1 = 0 _
+        THEN
+            PRINT "         [1]  I'm Too Young To Die"
+            PRINT "         [2]  Hey, Not Too Rough"
+            PRINT "         [3]  Hurt Me Plenty"
+            PRINT "         [4]  Ultra-Violence"
+            PRINT "         [5]  Nightmare!"
+        ELSE
+            'work through the list of IWAD skill-levels (up to 9)
+            IF IWADs(Games_Selected.iwad).skill1 > 0 THEN
+                PRINT "         [1]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill1)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill2 > 0 THEN
+                PRINT "         [2]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill2)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill3 > 0 THEN
+                PRINT "         [3]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill3)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill4 > 0 THEN
+                PRINT "         [4]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill4)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill5 > 0 THEN
+                PRINT "         [5]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill5)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill6 > 0 THEN
+                PRINT "         [6]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill6)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill7 > 0 THEN
+                PRINT "         [7]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill7)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill8 > 0 THEN
+                PRINT "         [8]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill8)
+            END IF
+            IF IWADs(Games_Selected.iwad).skill9 > 0 THEN
+                PRINT "         [9]  ";
+                PRINT STRGET$(IWADs(Games_Selected.iwad).skill9)
+            END IF
+        END IF
+        
+        PRINT ""
+        PRINT "         [?]";
+        'position a blinking cursor over the question-mark
+        LOCATE , POS(0)-2, 1, 0, 31
+        
+        DIM in$
+        DO
+            LET in$ = INKEY$
+        LOOP WHILE ISINT(in$) = FALSE
+        
+        'turn off the cursor
+        LOCATE ,1 , 0
+        
+        PRINT "--------------------------------------------------------------------------------"
+        PRINT ""
+        
+        LET Games_Selected.skill = VAL(in$)
+    END IF
 END IF
 
 IF Games_Selected.skill >= 0 THEN
-	LET CMD$ = CMD$ + " -skill" + STR$(Games_Selected.skill)
-	PRINT "       -skill :" + STR$(Games_Selected.skill)
+    LET CMD$ = CMD$ + " -skill" + STR$(Games_Selected.skill)
+    PRINT "       -skill :" + STR$(Games_Selected.skill)
 END IF
 
 '-----------------------------------------------------------------------------
 '[12] execute scripts:
 '-----------------------------------------------------------------------------
 IF CMD_EXEC$ <> "" THEN
-	'try and find the file:
+    'try and find the file:
     DIM exec$
-	'try the folder from which the launcher was called
+    'try the folder from which the launcher was called
     LET exec$ = DIR_CUR$ + CMD_EXEC$
     'if it doesn't exist there...
     IF NOT _FILEEXISTS(demo$) THEN
-		'TODO: check engine folder? check config folder?
+        'TODO: check engine folder? check config folder?
         'FIXME: handle exec file missing
     END IF
     
@@ -450,26 +450,26 @@ END IF
 '-----------------------------------------------------------------------------
 'the full-screen parameter varies by engine-type;
 IF Engines_Selected.kin = KIN_Z THEN
-	'ZDoom-based engines use `+fullscreen`
-	LET CMD$ = CMD$ + " +fullscreen"
+    'ZDoom-based engines use `+fullscreen`
+    LET CMD$ = CMD$ + " +fullscreen"
 ELSE
-	'everything else `-fullscreen`
-	LET CMD$ = CMD$ + " -fullscreen"
+    'everything else `-fullscreen`
+    LET CMD$ = CMD$ + " -fullscreen"
 END IF
 
 'a current bug/limitation of Choco-* engines in v3.0 is that
 'specifying the screen size forces fullscreen off
 IF Engines_Selected.kin <> KIN_V THEN
-	DIM screen_width AS LONG
-	LET screen_width = _DESKTOPWIDTH
-	DIM screen_height AS LONG
-	LET screen_height = _DESKTOPHEIGHT
+    DIM screen_width AS LONG
+    LET screen_width = _DESKTOPWIDTH
+    DIM screen_height AS LONG
+    LET screen_height = _DESKTOPHEIGHT
 
-	LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
-	LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
+    LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
+    LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
 
-	PRINT "       -width :" + STR$(screen_width) _
-		+ "  -height :" + STR$(screen_height)
+    PRINT "       -width :" + STR$(screen_width) _
+        + "  -height :" + STR$(screen_height)
 END IF
 '-----------------------------------------------------------------------------
 '[14] launch!
@@ -477,23 +477,23 @@ END IF
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
 IF STRGET$(Engines_Selected.engine) = "prboom-plus" THEN
-	LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
+    LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
-	'all other engines use `-savedir`,
-	'except doom64x which has no support yet
-	LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
+    'all other engines use `-savedir`,
+    'except doom64x which has no support yet
+    LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
 END IF
 
 'DOOM 64 EX: fix for Sound Font not being found (it's looking in the 'current
 'directory' rather than the executable's directory?)
 IF STRGET$(Engines_Selected.engine) = "doom64ex" THEN
-	LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
-			        + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
+    LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
+                    + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
 END IF
 
 'any engine-specific command-line params to be added?
 IF Engines_Selected.cmd <> 0 THEN
-	LET CMD$ = CMD$ + " " + STRGET$(Engines_Selected.cmd)
+    LET CMD$ = CMD$ + " " + STRGET$(Engines_Selected.cmd)
 END IF
 
 PRINT ""
@@ -501,23 +501,23 @@ PRINT "   Get Psyched!"
 PRINT ""
 
 IF CMD_DEBUG` THEN
-	PRINT CMD$
-	PRINT ""
-	PRINT ""
-	
-	VIEW PRINT
-	
-	LOCATE UI_SCREEN_HEIGHT, 1
-	COLOR BLACK+BLINK, WHITE
-	
-	DIM w%
-	LET w% = LEN("PRESS ANY KEY!")
-	PRINT SPACE$((UI_SCREEN_WIDTH - w%) / 2) _
-		+ "PRESS ANY KEY!" _
-		+ SPACE$((UI_SCREEN_WIDTH - w%) / 2);
-	
-	COLOR WHITE, BLACK
-	SLEEP
+    PRINT CMD$
+    PRINT ""
+    PRINT ""
+    
+    VIEW PRINT
+    
+    LOCATE UI_SCREEN_HEIGHT, 1
+    COLOR BLACK+BLINK, WHITE
+    
+    DIM w%
+    LET w% = LEN("PRESS ANY KEY!")
+    PRINT SPACE$((UI_SCREEN_WIDTH - w%) / 2) _
+        + "PRESS ANY KEY!" _
+        + SPACE$((UI_SCREEN_WIDTH - w%) / 2);
+    
+    COLOR WHITE, BLACK
+    SLEEP
 END IF
 
 'set the directory for the game engine to assume as default; note that all
@@ -526,11 +526,11 @@ CHDIR DIR_EXE$ + DIR_SAVE_GAME$
 
 'has the `/WAIT` command-line option been specified?
 IF CMD_WAIT` THEN
-	'start the engine and wait for it to close
-	SHELL CMD$
+    'start the engine and wait for it to close
+    SHELL CMD$
 ELSE
-	'start the engine, but continue running here
-	SHELL _DONTWAIT CMD$
+    'start the engine, but continue running here
+    SHELL _DONTWAIT CMD$
 END IF
 
 SYSTEM
@@ -543,23 +543,23 @@ PRINT "ERROR: could not create required folder!"
 PRINT ""
 PRINT "Press Any Key to Exit"
 SLEEP: SYSTEM 1
-	
+    
 err_fileMissing:
 SYSTEM 1
 
 'make a folder if it doesn't exist; capture errors (e.g. read-only)
 '=============================================================================
 SUB Launch_MkDir(path$)
-	ON ERROR GOTO errMkDir
-	
-	IF NOT _DIREXISTS(path$) THEN
-		'folder is missing? attempt to make it, but be aware
-		'of that potentially failing (read-only media?)
-		MKDIR (path$)
-	END IF
-	
-	'reset the error handler
-	ON ERROR GOTO 0
+    ON ERROR GOTO errMkDir
+    
+    IF NOT _DIREXISTS(path$) THEN
+        'folder is missing? attempt to make it, but be aware
+        'of that potentially failing (read-only media?)
+        MKDIR (path$)
+    END IF
+    
+    'reset the error handler
+    ON ERROR GOTO 0
 END SUB
 
 'correct a relative path from the save-game folder
@@ -568,22 +568,22 @@ FUNCTION Launch_FixPath$(path$)
     'is the path relative?
     IF NOT Paths_IsAbsolute(path$) THEN
         LET Launch_FixPath$ = FIX_PATH$ + path$
-	ELSE
-		'if the path is a sub-folder of PortaDOOM, convert it to relative
-		IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
-			LET Launch_FixPath$ = FIX_PATH$ + MID$(path$, LEN(DIR_EXE$) + 1)
-		ELSE
-			LET Launch_FixPath$ = path$
-		END IF
+    ELSE
+        'if the path is a sub-folder of PortaDOOM, convert it to relative
+        IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
+            LET Launch_FixPath$ = FIX_PATH$ + MID$(path$, LEN(DIR_EXE$) + 1)
+        ELSE
+            LET Launch_FixPath$ = path$
+        END IF
     END IF
 END FUNCTION
 
 'if an absolute path is within PortaDOOM's folders, make it relative
 '=============================================================================
 FUNCTION Launch_ClipPath$(path$)
-	IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
-		LET Launch_ClipPath$ = MID$(path$, LEN(DIR_EXE$) + 1)
-	ELSE
-		LET Launch_ClipPath$ = path$
-	END IF
+    IF LEFT$(path$, LEN(DIR_EXE$)) = DIR_EXE$ THEN
+        LET Launch_ClipPath$ = MID$(path$, LEN(DIR_EXE$) + 1)
+    ELSE
+        LET Launch_ClipPath$ = path$
+    END IF
 END FUNCTION

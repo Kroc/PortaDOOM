@@ -1,5 +1,5 @@
 $NAV=Commercial DOOM
-$KEY:P=SHELL:play.bat /IWAD DOOM
+$KEY:P=SHELL:play.bat /DOOM
 $KEY:W=URL:https://doomwiki.org/wiki/Doom
 
 :The Ultimate DOOM

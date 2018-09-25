@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /IWAD DOOM /DEMO ep3-0347.lmp /CMPLVL 3
+@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /DOOM /DEMO ep3-0347.lmp /CMPLVL 3

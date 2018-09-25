@@ -211,6 +211,42 @@ IF /I "%~1" == "/IWAD" (
 	SHIFT & SHIFT
 	GOTO :params
 )
+IF /I "%~1" == "/DOOM" (
+	SET IWAD=DOOM
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/DOOM2" (
+	SET IWAD=DOOM2
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/TNT" (
+	SET IWAD=TNT
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/PLUTONIA" (
+	SET IWAD=PLUTONIA
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/HERETIC" (
+	SET IWAD=HERETIC
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/HEXEN" (
+	SET IWAD=HEXEN
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/STRIFE" (
+	SET IWAD=STRIFE1
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/FREEDOOM1" (
+	SET IWAD=FREEDOOM1
+	SHIFT & GOTO :params
+)
+IF /I "%~1" == "/FREEDOOM2" (
+	SET IWAD=FREEDOOM2
+	SHIFT & GOTO :params
+)
 IF /I "%~1" == "/PWAD" (
 	REM # just capture the parameter
 	SET PWAD=%~2

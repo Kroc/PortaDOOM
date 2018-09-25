@@ -92,6 +92,16 @@ COLOR UI_FORECOLOR, UI_BACKCOLOR
 VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
 CLS: PRINT ""
 
+DIM SHARED glVersion$
+
+''DIM start!
+''LET start! = TIMER
+''DO
+''LOOP UNTIL LEN(glVersion$) > 0 OR TIMER - start! > .3
+''
+''PRINT glVersion$
+''PRINT ""
+
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'inc\cmd.bm'
@@ -116,6 +126,11 @@ launch:
 
 '=============================================================================
 
+SUB _GL
+    IF LEN(glVersion$) > 0 THEN EXIT SUB
+    LET glVersion$ = _glGetString(_GL_VERSION)
+END SUB
+
 '$INCLUDE:'inc\tags.bm'
 '$INCLUDE:'inc\games.bm'
 '$INCLUDE:'inc\engines.bm'
@@ -124,8 +139,10 @@ launch:
 
 '=============================================================================
 
+'third-party library functions:
 '$INCLUDE:'lib\INI-Manager\ini.bm'
 
+'our library functions:
 '$INCLUDE:'lib\strings.bm'
 '$INCLUDE:'lib\paths.bm'
 '$INCLUDE:'lib\reg.bm'

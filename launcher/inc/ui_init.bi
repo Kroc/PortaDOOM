@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
-'ui.bi : define and initialise the user-interface
+'ui_init.bi : define and initialise the user-interface
 
 $EXEICON:'.\icon\launcher.ico'
 
@@ -15,7 +15,7 @@ CONST UI_FORECOLOR = LTGREY
 '-----------------------------------------------------------------------------
 
 'hide the main window until we have something rendered on it first
-$SCREENHIDE
+''$SCREENHIDE
 
 'disallow resizing of the window. this adds a great deal of complexity for
 'very little gain right now and there isn't an easy way to restore a window

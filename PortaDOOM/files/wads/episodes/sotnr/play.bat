@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\launcher.exe" /IWAD DOOM2 /USE gzdoom /PWAD sotnr.pk3 /EXEC bloom.cfg
+@PUSHD "%~dp0" & CALL "..\..\..\launcher.exe" /DOOM2 /USE gzdoom /PWAD sotnr.pk3 /EXEC bloom.cfg

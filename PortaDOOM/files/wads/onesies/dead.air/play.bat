@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ zdoom /PWAD dead-air_v2.pk3 /EXEC bloom.cfg
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ zdoom /PWAD dead-air_v2.pk3 /EXEC bloom.cfg

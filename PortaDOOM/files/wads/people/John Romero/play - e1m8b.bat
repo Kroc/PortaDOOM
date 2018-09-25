@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\play.bat" /IWAD DOOM /REQ no-limit /PWAD e1m8b.wad /WARP 1.8
+@PUSHD "%~dp0" & "..\..\..\play.bat" /DOOM /REQ no-limit /PWAD e1m8b.wad /WARP 1.8

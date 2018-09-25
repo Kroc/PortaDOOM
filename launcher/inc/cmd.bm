@@ -21,148 +21,8 @@ OR CMD$ = "-h" _
 OR CMD$ = "-help" _
 OR CMD$ = "--help" _
 THEN
-    DIM USAGE$
-    LET USAGE$ = "    launcher.exe"
-    LET USAGE$ = USAGE$ + " [/USE <engine>]"
-    LET USAGE$ = USAGE$ + " [/WAIT]"
-    LET USAGE$ = USAGE$ + " [/SW]"
-    LET USAGE$ = USAGE$ + " [/32]"
-    LET USAGE$ = USAGE$ + " [/DEFAULT]"
-    LET USAGE$ = USAGE$ + CHR$(10) + "            "
-    LET USAGE$ = USAGE$ + " [/IWAD <file>]"
-    LET USAGE$ = USAGE$ + " [/PWAD <file>]"
-    LET USAGE$ = USAGE$ + " [/DEH <file>]"
-    LET USAGE$ = USAGE$ + " [/BEX <file>]"
-    LET USAGE$ = USAGE$ + CHR$(10) + "            "
-    LET USAGE$ = USAGE$ + " [/DEMO <file>]"
-    LET USAGE$ = USAGE$ + " [/WARP <map-number>]"
-    LET USAGE$ = USAGE$ + " [/SKILL <skill-level>]"
-    LET USAGE$ = USAGE$ + CHR$(10) + "            "
-    LET USAGE$ = USAGE$ + " [/CMPLVL <complevel>]"
-    LET USAGE$ = USAGE$ + " [/EXEC <file>]"
-    LET USAGE$ = USAGE$ + CHR$(10) + "            "
-    LET USAGE$ = USAGE$ + " [-- <files>...]"
-    'TODO: console help
-    
-    PRINT ""
-    PRINT " Usage:"
-    PRINT ""
-    PRINT USAGE$
-    PRINT ""
-    PRINT " /USE <engine>"
-    PRINT ""
-    PRINT "    Which engine to use. Can be any of the following:"
-    PRINT ""
-    PRINT "        TODO"
-    PRINT ""
-    PRINT " /WAIT"
-    PRINT ""
-    PRINT "    Causes launcher.exe to not immediately return once the engine is launched."
-    PRINT "    Script execution will continue only once the engine has quit."
-    PRINT ""
-    PRINT " /SW"
-    PRINT ""
-    PRINT "    Force software rendering. By default hardware rendering is used in"
-    PRINT "    GZDoom and PRBoom+ (" + CHR$(34) + "glboom-plus.exe" + CHR$(34) + ")."
-    PRINT ""
-    
-    PRINT " Press Any Key to Continue..."
-    SLEEP: CLS
-    PRINT ""
-    
-    PRINT " /32"
-    PRINT ""
-    PRINT "    Always use 32-bit binaries, even on a 64-bit system."
-    PRINT ""
-    PRINT " /DEFAULT"
-    PRINT ""
-    PRINT "    Loads the engine with the default config file instead of the current user"
-    PRINT "    config file. Any changes you make to the engine's settings will be saved"
-    PRINT "    in the default configuration file."
-    PRINT ""
-    PRINT " /IWAD <file>"
-    PRINT ""
-    PRINT "    The IWAD (Internal WAD) is the base WAD to use."
-    PRINT ""
-    PRINT "        TODO"
-    PRINT ""
-    PRINT " /PWAD <file>"
-    PRINT ""
-    PRINT "        TODO"
-    PRINT ""
-    
-    PRINT " Press Any Key to Continue..."
-    SLEEP: CLS
-    PRINT ""
-    
-    PRINT " /DEH <file>"
-    PRINT " /BEX <file>"
-    PRINT ""
-    PRINT "    Early DOOM modifications were done by way of a live patching system known"
-    PRINT "    as DeHackEd. These " + CHR$(34) + ".deh" + CHR$(34) + " files are common, even today, as the"
-    PRINT "    lowest-common-denominator of DOOM modding."
-    PRINT ""
-    PRINT "    Boom, a highly-influential early source-port, enhanced this format further"
-    PRINT "    with " + CHR$(34) + "Boom-EXtended" + CHR$(34) + " DeHackEd files."
-    PRINT ""
-    PRINT "    These parameters specify a DEH or BEX file to load alongside any WADs."
-    PRINT ""
-    PRINT " /DEMO <file>"
-    PRINT ""
-    PRINT "    DOOM play sessions can be recorded and played back later. These are often"
-    PRINT "    distributed as " + CHR$(34) + ".lmp" + CHR$(34) + " files. The /DEMO option specifies the file to play."
-    PRINT ""
-    
-    PRINT " Press Any Key to Continue..."
-    SLEEP: CLS
-    PRINT ""
-    
-    PRINT " /WARP <map-number>"
-    PRINT ""
-    PRINT "    Warp to the given map number. For games with episodes, such as DOOM and"
-    PRINT "    Heretic, this is in the format `e.m` where `e` is the Episode number and"
-    PRINT "    `m` is the Map number, e.g. `/WARP 2.4`. For games without episodes like"
-    PRINT "    DOOM II, it's just a single number e.g. `/WARP 21`"
-    PRINT ""
-    PRINT " /SKILL <skill-level>"
-    PRINT ""
-    PRINT "    Set skill (difficulty) level. This is a number nominally 1 to 5, but this"
-    PRINT "    may vary with mods. A value of 0 disables monsters on some engines,"
-    PRINT "    but this can sometimes prevent a level from being completable."
-    PRINT ""
-    
-    PRINT " Press Any Key to Continue..."
-    SLEEP: CLS
-    PRINT ""
-    
-    PRINT " /CMPLVL <complevel>"
-    PRINT ""
-    PRINT "    Specifies the compatibility level, a feature provided by PrBoom+ to"
-    PRINT "    emulate the behaviour of different versions of the DOOM executable."
-    PRINT "    The complevel can be:"
-    PRINT ""
-    PRINT "        0     = Doom v1.2"
-    PRINT "        1     = Doom v1.666"
-    PRINT "        2     = Doom v1.9"
-    PRINT "        3     = Ultimate Doom & Doom95"
-    PRINT "        4     = Final Doom"
-    PRINT "        5     = DOSDoom"
-    PRINT "        6     = TASDOOM"
-    PRINT "        7     = Boom's inaccurate vanilla compatibility mode"
-    PRINT "        8     = Boom v2.01"
-    PRINT "        9     = Boom v2.02"
-    PRINT "        10    = LxDoom"
-    PRINT "        11    = MBF"
-    PRINT "        12-16 = PrBoom (old versions)"
-    PRINT "        17    = Current PrBoom"
-    PRINT ""
-    PRINT " /EXEC <file>"
-    PRINT ""
-    PRINT "    Execute the script file."
-    PRINT ""
-    
-    PRINT " Press Any Key to Exit"
-    SLEEP
+    'just launch the read me. this is Markdown atm and not particularly readable
+    SHELL _DONTWAIT "notepad.exe " + CHR$(34) + DIR_EXE$ + "launcher.md" + CHR$(34)
     SYSTEM
 END IF
 
@@ -245,9 +105,30 @@ DO WHILE COMMAND$(i) <> ""
             'on its own, this does not select an engine
             LET CMD_DEFAULT` = TRUE
             
-        CASE "/IWAD"
-            'capture the parameter that follows
-            LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
+        CASE "/IWAD", "/DOOM", "/CHEX", "/DOOM2", "/TNT", "/PLUTONIA", _
+             "/HERETIC", "/HEXEN", "/STRIFE", "/FREEDOOM1", "/FREEDOOM2"
+            'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
+            IF CMD_IWAD$ <> "" THEN
+                PRINT "ERROR: IWAD defined twice"
+                SYSTEM 1
+            END IF
+            
+            SELECT CASE UCASE$(COMMAND$(i))
+                CASE "/IWAD"
+                    'capture the parameter that follows
+                    LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
+                    
+                CASE "/DOOM": LET CMD_IWAD$ = "DOOM"
+                CASE "/CHEX": LET CMD_IWAD$ = "CHEX"
+                CASE "/DOOM2": LET CMD_IWAD$ = "DOOM2"
+                CASE "/TNT": LET CMD_IWAD$ = "TNT"
+                CASE "/PLUTONIA": LET CMD_IWAD$ = "PLUTONIA"
+                CASE "/HERETIC": LET CMD_IWAD$ = "HERETIC"
+                CASE "/HEXEN": LET CMD_IWAD$ = "HEXEN"
+                CASE "/STRIFE": LET CMD_IWAD$ = "STRIFE1"
+                CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOM1"
+                CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOM2"
+            END SELECT
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
@@ -368,8 +249,8 @@ IF cmd_hasGame` THEN
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
     
-	'TODO: get game name / title from the IWAD meta-data
-	
+    'TODO: get game name / title from the IWAD meta-data
+    
     CALL Games_Add ( _
         "cmd", title$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
         CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _

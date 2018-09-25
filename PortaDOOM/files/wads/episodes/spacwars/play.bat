@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /REQ z /PWAD spacwars.wad /EXEC bloom.cfg
+@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ z /PWAD spacwars.wad /EXEC bloom.cfg

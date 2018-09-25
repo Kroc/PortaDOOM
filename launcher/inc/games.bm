@@ -110,6 +110,8 @@ SUB Games_Add ( _
         SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
             CASE "DOOM"
                 LET Games(Games_Count).type = TYPE_DOOM
+            CASE "CHEX"
+                LET Games(Games_Count).type = TYPE_CHEX
             CASE "DOOM2", "TNT", "PLUTONIA"
                 LET Games(Games_Count).type = TYPE_DOOM2
             CASE "HERETIC"

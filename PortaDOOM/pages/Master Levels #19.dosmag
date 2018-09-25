@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Vesperas
-$KEY:P=SHELL:play.bat /PWAD MASTER\VESPERAS.WAD /WARP 9
+$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\VESPERAS.WAD /WARP 9
 $KEY:T=SHELL:wads\MASTER\VESPERAS.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP09:_Vesperas_(Master_Levels)
 
