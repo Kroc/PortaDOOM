@@ -1,5 +1,10 @@
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
+REM # how to store a newline character in a string, thanks to
+REM # <https://stackoverflow.com/a/5552995>
+SET NEWLINE=^& ECHO:
+
+
 CLS & TITLE Make Default Config Files
 ECHO:
 ECHO  Make Default Config Files:
@@ -485,9 +490,11 @@ REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
 
-%BIN_FART% "default.%~1.cfg" "alwaysrun off"				"alwaysrun on"
-%BIN_FART% "default.%~1.cfg" "messages off"				"messages on"
-%BIN_FART% "default.%~1.cfg" "playername \"you\""			"playername \"PortaDOOM\""
+%BIN_FART% "default.%~1.cfg" "alwaysrun off"		"alwaysrun on"
+%BIN_FART% "default.%~1.cfg" "messages off"		"messages on"
+%BIN_FART% "default.%~1.cfg" "am_rotatemode on"		"am_rotatemode off"
+%BIN_FART% "default.%~1.cfg" "playername \"you\""	"playername \"PortaDOOM\""
+REM ECHO bind 'f12' +screenshot>>"default.%~1.cfg"
 
 GOTO:EOF
 
@@ -585,7 +592,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # graphics
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -646,7 +653,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
@@ -767,7 +774,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # VSync ON
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"

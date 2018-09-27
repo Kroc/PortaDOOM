@@ -125,7 +125,6 @@ LET cfg_default$ = DIR_CONFIG$ + "default." + STRGET$(Engines_Selected.cfg)
 IF CMD_DEFAULT` THEN
     'set the path to the default config file (sans-extension)
     LET CMD_CONFIG$ = cfg_default$
-	REM LET CMD$ = CMD$ + " +quit"
 ELSE
     'build the path to the user's config file (for selected engine)
     'note that this leaves off the file extension, for now
@@ -278,8 +277,8 @@ LET CMD_DEH$ = STRGET$(Games_Selected.deh)
 
 'FIXME: conflict with existing DEH parameter
 IF Games_Selected.type = TYPE_CHEX THEN
-	LET CMD_DEH$ = "chex.deh"
-	LET CMD$ = CMD$ + " -exe chex"
+    LET CMD_DEH$ = "chex.deh"
+    LET CMD$ = CMD$ + " -exe chex"
 END IF
 
 IF CMD_DEH$ <> "" THEN
@@ -343,7 +342,7 @@ OR Games_Selected.warp_m >= 0 THEN
     
     IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
     IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
-    
+	
     'add to the command-line and announce
     LET CMD$ = CMD$ + " -warp" + warp$
     PRINT "        -warp :" + warp$
@@ -484,13 +483,23 @@ END IF
 '-----------------------------------------------------------------------------
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
-IF STRGET$(Engines_Selected.engine) = "prboom-plus" THEN
+IF LEFT$(STRGET$(Engines_Selected.engine), 11) = "prboom-plus" THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
     'all other engines use `-savedir`,
     'except doom64x which has no support yet
     LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
 END IF
+
+'where screenshots get saved varies by engine; many put them in the engine's
+'folder regardless of the 'current' directory and not all support changing the
+'directory. to the best of our ability, try to put them in the "saves/<engine>"
+'folder; one up from the 'current' directory used for save-games. we specify
+'the path fully (and not relative) in case different engines interpret the
+'relative path as from different starting directories to each other
+DIM DIR_SCREENSHOT$
+LET DIR_SCREENSHOT$ = Paths_StripSlash$(DIR_EXE$ + DIR_SAVE_ENGINE$)
+LET CMD$ = CMD$ + " -shotdir " + CHR$(34) + DIR_SCREENSHOT$ + CHR$(34)
 
 'DOOM 64 EX: fix for Sound Font not being found (it's looking in the 'current
 'directory' rather than the executable's directory?)
@@ -502,6 +511,12 @@ END IF
 'any engine-specific command-line params to be added?
 IF Engines_Selected.cmd <> 0 THEN
     LET CMD$ = CMD$ + " " + STRGET$(Engines_Selected.cmd)
+END IF
+
+'auto-quit? (ZDoom-based engines only)
+IF CMD_QUIT` THEN
+    LET CMD$ = CMD$ + " +quit"
+    PRINT "        +quit"
 END IF
 
 PRINT ""

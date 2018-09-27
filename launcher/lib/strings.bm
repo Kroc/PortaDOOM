@@ -46,17 +46,16 @@ FUNCTION ISINT(text$)
     
     'walk the string
     DIM i AS LONG
-    FOR i = 1 to LEN(text$)
-        SELECT CASE ASC(text$, i)
-            CASE >= 48, <=57
-            CASE ELSE
-                'any non-number, return false
-                LET ISINT = FALSE
-                EXIT FUNCTION
-        END SELECT
+    FOR i = 1 TO LEN(text$)
+        DIM a%%: LET a%% = ASC(text$, i)
+        IF a%% >= 48 AND a%% <=57 THEN
+            LET ISINT = -1
+        ELSE
+            'any non-number, return false
+            LET ISINT = 0
+            EXIT FUNCTION
+        END IF
     NEXT i
-    
-    LET ISINT = TRUE
 END FUNCTION
 
 'convert an integer into a string and trim it

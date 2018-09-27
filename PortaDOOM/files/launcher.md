@@ -10,9 +10,10 @@ mods. The history of _DOOM_ engines is [complicated and branching][1], and _Port
 Command-Line Usage:
 
 	launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]
-		[/IWAD <file>] [/PWAD <file>] [/DEH <file>] [/BEX <file>]
+		[/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]
+		[/PWAD <file>] [/DEH <file>] [/BEX <file>]
 		[/DEMO <file>] [/WARP <number>] [/SKILL <number>]
-		[/CMPLVL <number>] [/EXEC <file>]
+		[/CMPLVL <number>] [/EXEC <file>] [/QUIT]
 		[-- <files>...]
 
 Example:
@@ -28,9 +29,31 @@ In most instances, a game is inseparable from its executable and you never have 
 [a]: https://www.youtube.com/watch?v=PW5ELKTivbE
 [k]: https://www.youtube.com/watch?v=GD0L46y3IqI
 
-When we talk about _DOOM_ though, particularly in the context of _PortaDOOM Launcher_, what we're really talking about is a series of games all based on the _DOOM_ engine.
+When we talk about _DOOM_ though, particularly in the context of _PortaDOOM Launcher_, what we're really talking about is a series of games all based on the _DOOM_ engine. There are 8 "canonical" DOOM-engine games released during its commercial lifetime; these are:
 
-![The canonical 8: DOOM, DOOM2, TNT, PLUTONIA, HERETIC, HEXEN, STRIFE, and CHEX](canonical8.jpg "The Canonical Eight")
+![The canonical 8: DOOM, DOOM2, TNT, PLUTONIA, HERETIC, HEXEN, STRIFE, and CHEX](docs/canonical8.jpg "The Canonical Eight")
+
+- **[DOOM (1993)][doom]**: The original engine. Uses episodes
+- **[DOOM II (1994)][doom2]**: Uses continuous levels
+- **[Heretic (1994)][heretic]**: Added an inventory system to the DOOM1 engine
+- **[Hexen: Beyond Heretic (1995)][hexen]**: Added ACS scripting & poly-objects
+- **[Final DOOM][final]**
+  - **[TNT: Evilution (1996)][tnt]**: Uses a lightly modified DOOM2 engine
+  - **[The Plutonia Experiment (1996)][plutonia]**: As above
+- **[Strife: Quest for the Sigil (1996)][strife]**: Added RPG-elements like a conversation system
+- **[Chex Quest (1996)][chex]**: Lightly modified DOOM1 engine
+
+[doom]:     https://doomwiki.org/wiki/Doom
+[doom2]:    https://doomwiki.org/wiki/Doom_II
+[heretic]:  https://doomwiki.org/wiki/Heretic
+[hexen]:    https://doomwiki.org/wiki/Hexen
+[final]:    https://doomwiki.org/wiki/Final_Doom
+[tnt]:      https://doomwiki.org/wiki/TNT:_Evilution
+[plutonia]: https://doomwiki.org/wiki/The_Plutonia_Experiment
+[strife]:   https://doomwiki.org/wiki/Strife
+[chex]:     https://doomwiki.org/wiki/Chex_Quest
+
+Each of these modified the engine in their own ways and so files from one were not compatible with the other. Due to their similarities, many of the modern DOOM source-ports also support the canonical 8 (and their expansion packs).
 
 Over time _DOOM_ source-ports have extended the game with new features and capabilities. Playing _DOOM_ mods in the present day involves selecting the correct engine to match the requirements of the desired WAD.
 
@@ -44,7 +67,7 @@ Can be any of the following:
 
 ### `choco-doom`
 
-![Chocolate Doom screenshot](ports/choco-doom/sample.png "Chocolate Doom playing DOOM2.WAD")
+![Chocolate Doom screenshot](docs/choco-doom.jpg "Chocolate Doom playing DOOM2.WAD")
 
 [_Chocolate Doom_](https://www.chocolate-doom.org) is an exact recreation of the original MS-DOS _DOOM_ for modern systems, including original limitations and bugs! Its purpose is to preserve the exact behaviour of the original _DOOM_ executable in an accessible manner so that authors can ensure compatibility without having to use _DOS-Box_ or an actual 486 PC.
 
@@ -58,7 +81,7 @@ Use `choco-doom-setup` to run the setup utility prior to launching the game.
 
 ### `choco-heretic`
 
-![Chocolate Heretic screenshot](ports/choco-heretic/sample.png "Chocolate Heretic playing HERETIC.WAD")
+![Chocolate Heretic screenshot](docs/choco-heretic.jpg "Chocolate Heretic playing HERETIC.WAD")
 
 [_Chocolate Heretic_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Heretic) is, like _Chocolate Doom_, an exact replica of the original Heretic MS-DOS executable for modern systems.
 
@@ -68,7 +91,7 @@ Use `choco-heretic-setup` to run the setup utility prior to launching the game.
 
 ### `choco-hexen`
 
-![Chocolate Hexen screenshot](ports/choco-hexen/sample.png)
+![Chocolate Hexen screenshot](docs/choco-hexen.jpg "Chocolate Hexen playing HEXEN.WAD")
 
 [_Chocolate Hexen_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Hexen) is, like _Chocolate Doom_, an exact replica of the original _Hexen_ MS-DOS executable for modern systems.
 
@@ -78,7 +101,7 @@ Use `choco-hexen-setup` to run the setup utility prior to launching the game.
 
 ### `choco-strife`
 
-![Chocolate Strife screenshot](ports/choco-strife/sample.png)
+![Chocolate Strife screenshot](docs/choco-strife.jpg "Chocolate Strife playing STRIFE1.WAD")
 
 [_Chocolate Strife_](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Strife) is, like _Chocolate Doom_, an exact replica of the original _Strife_ MS-DOS executable for modern systems.
 
@@ -88,7 +111,7 @@ Use `choco-strife-setup` to run the setup utility prior to launching the game.
 
 ### `crispy-doom`
 
-![Crispy Doom screenshot](ports/crispy-doom/sample.png)
+![Crispy Doom screenshot](docs/crispy-doom.jpg "Crispy Doom playing DOOM2.WAD")
 
 [_Crispy Doom_](https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom) is a modification of _Chocolate Doom_ to remove limits, increase resolution (to 640×400) and add new features, all while remaining faithful to original _DOOM_.
 
@@ -100,7 +123,7 @@ Use `crispy-doom-setup` to run the setup utility prior to launching the game.
 
 ### `doom-retro`
 
-![Doom Retro screenshot](ports/doom-retro/sample.png)
+![Doom Retro screenshot](docs/doom-retro.jpg "DOOM Retro playing DOOM2.WAD")
 
 [_DOOM Retro_](http://doomretro.com/) is a limit-removing port of _Chocolate Doom_ that focuses on a 'nostalgic' feel, rather than hard accuracy.
 
@@ -108,7 +131,7 @@ _DOOM Retro_ would appeal to most players as their go-to "vanilla" engine.
 
 ### `prboom-plus`
 
-![PrBoom+ (hardware) screenshot](ports/prboom-plus/sample-hw.png)
+![PrBoom+ (hardware) screenshot](docs/glboom-plus.jpg)
 
 One of the first source-ports to extend the original game was _Boom_. It added new capabilities to the _DOOM_ map format and removed existing limits. These extensions were adopted by other engines and thus "boom" became a new base-line standard available to mappers. To this day, boom-format maps are still being made.
 
@@ -120,7 +143,7 @@ _PrBoom+_ is recommended for users with laptops, integrated graphics and systems
 
 Use `prboom-plus-sw` (or the `/SW` switch) to use the software renderer. This is restricted to 256 colours and may be faster for systems with extremely limited OpenGL acceleration, but an otherwise adequate processor.
 
-![PrBoom+ (software) screenshot](ports/prboom-plus/sample-sw.png)
+![PrBoom+ (software) screenshot](docs/prboom-plus.jpg)
 
 ### `gzdoom`
 
@@ -156,16 +179,15 @@ _Zandronum_ is a multi-player focused fork of _GZDoom_.
 
 ### `doom64ex`
 
-![Doom 64 Ex screenshot](ports/doom64ex/sample.png)
+![Doom 64 Ex screenshot](docs/doom64ex.jpg)
 
 ### `zdoom`
 
-![ZDoom screenshot](ports/zdoom/sample.png)
+![ZDoom screenshot](docs/zdoom.jpg)
 
 `/WAIT`
 --------------------------------------------------------------------------------
-Causes "launcher.exe" to not immediately return once the engine is launched.
-Script execution will continue only once the engine has quit.
+Causes _PortaDOOM Launcher_ to not immediately return once the engine is launched. Script execution will continue only once the engine has quit.
 
 `/SW`
 --------------------------------------------------------------------------------
@@ -230,10 +252,6 @@ NOTE: There was no shareware release for DOOM II.
 
 Shortcut for `/IWAD DOOM`
 
-## `/CHEX`
-
-Shortcut for `/IWAD CHEX`
-
 ## `/DOOM2`
 
 Shortcut for `/IWAD DOOM2`
@@ -257,6 +275,10 @@ Shortcut for `/IWAD HEXEN`
 ## `/STRIFE`
 
 Shortcut for `/IWAD STRIFE1`
+
+## `/CHEX`
+
+Shortcut for `/IWAD CHEX`
 
 ## `/FREEDOOM1`
 
@@ -339,6 +361,9 @@ The number can be:
 `/EXEC <file>`
 --------------------------------------------------------------------------------
 Execute the script file.
+
+`/QUIT`
+--------------------------------------------------------------------------------
 
 `-- <files>...`
 --------------------------------------------------------------------------------

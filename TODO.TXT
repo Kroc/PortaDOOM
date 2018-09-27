@@ -1,5 +1,6 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
+[ ] LAUNCHER : Error messages when no engines remain after filter
 [ ] LAUNCHER : FreeDOOM substitution
 [X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
@@ -7,13 +8,17 @@
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
+[ ] LAUNCHER : Implement `/REQ` to filter engines
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
-[ ] LAUNCHER : Add FreeDOOM 1 & 2 IWAD meta-data
+[X] LAUNCHER : Add FreeDOOM 1 & 2 IWAD meta-data
 
 [P2] Feature Enhancements:
 ================================================================================
+[?] LAUNCHER : Detect OpenGL version and filter engines accordingly
+    (currently an issue with this in QB64)
+[X] LAUNCHER : Add `-shotdir`, supported by a number of engines
 [ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
 [ ] Add Eternity engine (required somewhere in the Cacowards)
 [X] Expose GZDoom's software modes through their "porta-doom.ini" files?
@@ -23,7 +28,6 @@
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
 [ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
-[ ] LAUNCHER : Add `-shotdir`, supported by a number of engines
 [ ] Include Crispy Doom music pack?
 [ ] IWADs: (including Skill Names)
     [ ] Harmony
@@ -69,6 +73,7 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] DOOM Retro : Next version will support binding F12
 [ ] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
     (for creating the default config files)
 [ ] LAUNCHER : Add a `/VER` param to select version constraints

@@ -51,6 +51,8 @@ readINI:
         
         DIM ini_title$
         LET ini_title$ = ReadSetting$("", ini_section$, "title")
+        DIM ini_desc$
+        LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
         DIM ini_cmplvl$
         LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
         DIM ini_iwad$
@@ -82,7 +84,7 @@ readINI:
         END SELECT
         
         CALL Games_Add( _
-            game_id$, ini_title$, ini_cmplvl$, _
+            game_id$, ini_title$, ini_desc$, ini_cmplvl$, _
             ini_iwad$, ini_pwad$, ini_files$, _
             ini_deh$, ini_bex$, _
             ini_tags$, vid%, _
@@ -93,7 +95,7 @@ END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid%, _
+    id$, title$, desc$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid%, _
     warp$, skill$ _
 )
     'increase the number of games entries
@@ -193,6 +195,8 @@ skill:
     
     'no problems? write the data into the engine list
     LET Games(Games_Count).title = STRADD&(title$)
+    LET Games(Games_Count).desc = STRADD&(desc$)
+    
     IF cmplvl$ = "" THEN
         LET Games(Games_Count).cmplvl = -1
     ELSE

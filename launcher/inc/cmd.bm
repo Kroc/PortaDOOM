@@ -38,7 +38,6 @@ DIM SHARED CMD_USE$ '....a specific engine-id to use
 DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
 DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
 DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
-DIM SHARED CMD_DEFAULT` 'should default config file be used?
 
 DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
 
@@ -61,6 +60,8 @@ DIM cmd_hasGame` '.......flag, define game from command-line
 '
 DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
 DIM SHARED CMD_DEBUG` '..display detailed information
+DIM SHARED CMD_DEFAULT` 'should default config file be used?
+DIM SHARED CMD_QUIT` '...(ZDoom-based engines only), quit after launching
 
 LET CMD_DEBUG` = TRUE
 
@@ -69,10 +70,18 @@ LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
         CASE "/WAIT"
+            'keep launcher.exe on screen whilst the game runs
             LET CMD_WAIT` = TRUE
             
         CASE "/DEBUG"
+            'enable debugging mode; will print
+            'additional information to the screen
             LET CMD_DEBUG` = TRUE
+            
+        CASE "/QUIT"
+            'for ZDoom-based engines only (ZDoom, Zandronum, GZDoom);
+            'the engine loads and then quits. useful only for automation tasks
+            LET CMD_QUIT` = TRUE
             
         CASE "/USE"
             'capture the parameter that follows
@@ -126,8 +135,8 @@ DO WHILE COMMAND$(i) <> ""
                 CASE "/HERETIC": LET CMD_IWAD$ = "HERETIC"
                 CASE "/HEXEN": LET CMD_IWAD$ = "HEXEN"
                 CASE "/STRIFE": LET CMD_IWAD$ = "STRIFE1"
-                CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOM1"
-                CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOM2"
+                CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOOM1"
+                CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOOM2"
             END SELECT
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
@@ -215,12 +224,13 @@ LOOP
 
 'display the parameters used if debug is enabled
 IF CMD_DEBUG` THEN
-    IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT`) THEN
+    IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT` OR CMD_QUIT`) THEN
         PRINT "  ";
         IF CMD_WAIT` THEN PRINT "/WAIT ";
         IF CMD_32` THEN PRINT "/32 ";
         IF CMD_SW` THEN PRINT "/SW ";
         IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
+        IF CMD_QUIT` THEN PRINT "/QUIT ";
         PRINT ""
     END IF
     IF CMD_USE$ <> "" THEN PRINT "  /USE    " + CMD_USE$
@@ -231,7 +241,7 @@ IF CMD_DEBUG` THEN
     IF CMD_BEX$ <> "" THEN PRINT "  /BEX    " + CMD_BEX$
     IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO   " + CMD_DEMO$
     IF CMD_WARP$ <> "" THEN PRINT "  /WARP   " + CMD_WARP$
-    IF CMD_SKILL$ <> "" THEN PRINT "  /WARP   " + CMD_SKILL$
+    IF CMD_SKILL$ <> "" THEN PRINT "  /SKILL  " + CMD_SKILL$
     IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
     IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
     PRINT ""
@@ -239,7 +249,7 @@ END IF
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
-    DIM title$, tags$, vid%
+    DIM title$, tags$, vid%, desc$
     
     'default to no hard requirement for rendering colour-depth 
     LET vid% = 0
@@ -252,7 +262,7 @@ IF cmd_hasGame` THEN
     'TODO: get game name / title from the IWAD meta-data
     
     CALL Games_Add ( _
-        "cmd", title$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
+        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
         CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 END IF
