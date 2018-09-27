@@ -8,6 +8,8 @@
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
+[-] LAUNCHER : Implement game choice
+[ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement `/REQ` to filter engines
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
@@ -16,6 +18,7 @@
 
 [P2] Feature Enhancements:
 ================================================================================
+[ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
     (currently an issue with this in QB64)
 [X] LAUNCHER : Add `-shotdir`, supported by a number of engines
@@ -44,6 +47,7 @@
 
 [P3] Content:
 ================================================================================
+[ ] Move 3 Heures series to Community
 [ ] WolfenDOOM package
 [ ] Expand PSX DOOM Package to include:
  -  [ ] DOOM 64 EX
@@ -73,8 +77,9 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Add `auto` property to game INIs to load files *BEFORE* PWAD
 [ ] DOOM Retro : Next version will support binding F12
-[ ] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
+[X] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
     (for creating the default config files)
 [ ] LAUNCHER : Add a `/VER` param to select version constraints
 [ ] LAUNCHER : Figure out what tags softpoly supports
@@ -83,7 +88,6 @@
 [ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
 [ ] DOOM-Crusher : fail on "SOUND&MUSIC.WAD"
 [ ] Add engine compatibility checks for Windows version
- -  [ ] test engines on Windows 98/Me?
  -  [ ] test engines on Windows XP
  -  [ ] test engines on Windows Vista?
  -  [ ] test engines on Windows 7

@@ -47,7 +47,7 @@ readINI:
         'TODO: early rejection of engines incompatible with all game defs,
         '      e.g. 64-bit engine on a 32-bit CPU
         DIM ini_section$
-        LET ini_section$ = "settings." + game_id$
+        LET ini_section$ = "games." + game_id$
         
         DIM ini_title$
         LET ini_title$ = ReadSetting$("", ini_section$, "title")
