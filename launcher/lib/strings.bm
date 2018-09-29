@@ -21,8 +21,8 @@ FUNCTION STRADD&(text$)
     LET STRADD& = UBOUND(Strings$) + 1
     'increase the size of the string pool
     REDIM _PRESERVE Strings$(1 TO STRADD&)
-    'assign the string
-    LET Strings$(STRADD&) = text$
+    'assign the string, converting to ASNSI for clean output later
+    LET Strings$(STRADD&) = UTF8ANSI(text$)
 END FUNCTION
 
 '=============================================================================
