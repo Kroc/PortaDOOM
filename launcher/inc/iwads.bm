@@ -117,6 +117,8 @@ readINI:
     LET iwad_title$ = ReadSetting$("", "iwad", "title")
     DIM iwad_path$
     LET iwad_path$ = ReadSetting$("", "iwad", "path")
+	DIM iwad_deh$
+	LET iwad_deh$ = ReadSetting$("", "iwad", "deh")
     DIM iwad_tags$
     LET iwad_tags$ = ReadSetting$("", "iwad", "tags")
     
@@ -141,7 +143,7 @@ readINI:
     
     LET IWADs_EnumerateINI& = IWADs_Add&( _
         iwad_id$, iwad_name$, iwad_type%%, _
-        iwad_title$, iwad_path$, iwad_tags$, _
+        iwad_title$, iwad_path$, iwad_deh$, iwad_tags$, _
         iwad_skill1$, iwad_skill2$, iwad_skill3$, iwad_skill4$, _
         iwad_skill5$, iwad_skill6$, iwad_skill7$, iwad_skill8$, _
         iwad_skill9$ _
@@ -150,7 +152,7 @@ END FUNCTION
 
 '=============================================================================
 FUNCTION IWADs_Add&( _
-    id$, name$, game%, title$, path$, tags$, _
+    id$, name$, game%, title$, path$, deh$, tags$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
 )
@@ -168,6 +170,7 @@ FUNCTION IWADs_Add&( _
     LET IWADs(IWADs_Count).type = game%
     LET IWADs(IWADs_Count).title = STRADD&(title$)
     LET IWADs(IWADs_Count).path = STRADD&(path$)
+	LET IWADs(IWADs_Count).deh = STRADD&(deh$)
     LET IWADs(IWADs_Count).tags = STRADD&(tags$)
     LET IWADs(IWADs_Count).skill1 = STRADD&(skill1$)
     LET IWADs(IWADs_Count).skill2 = STRADD&(skill2$)
@@ -383,6 +386,12 @@ FUNCTION IWADs_GetRegistryPath$(key$, value$, path$)
     END IF
     
 END FUNCTION
+
+'=============================================================================
+SUB IWADs_Select(iwad%)
+    LET IWADs_Current = iwad%
+    LET IWADs_Selected = IWADs(IWADs_Current)
+END SUB
 
 '''gets a title for a built-in IWAD
 '''=============================================================================

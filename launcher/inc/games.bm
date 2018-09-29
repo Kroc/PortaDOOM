@@ -217,4 +217,6 @@ END SUB
 SUB Games_Select(game%)
     LET Games_Current = game%
     LET Games_Selected = Games(Games_Current)
+    
+    CALL IWADs_Select(Games_Selected.iwad)
 END SUB

@@ -26,9 +26,8 @@ END TYPE
 REDIM SHARED Games(1) AS Game
 DIM SHARED Games_Count AS LONG
 
-'currently selected game index
-DIM SHARED Games_Current AS LONG
-
 'when a game is selected, this struct is populated to save the indirect
 'lookup of game details via `Games(Games_Current)...` every time
 DIM SHARED Games_Selected AS Game
+'currently selected game index
+DIM SHARED Games_Current AS LONG

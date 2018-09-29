@@ -110,31 +110,31 @@ DIM SHARED glVersion$
 '-----------------------------------------------------------------------------
 'if only one game is defined, we don't need to offer a choice
 IF Games_Count =1 THEN
-	CALL Games_Select(1)
-	GOTO enumerate
+    CALL Games_Select(1)
+    GOTO enumerate
 END IF
 
 'present game selection UI:
 'walk through the list of games
 
 FOR i = 1 TO Games_Count
-	PRINT " [" + STRINT$(i) + "] ";
-	PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
-	PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
-	IF Games(i).desc <> 0 THEN
-		PRINT STRGET$(Games(i).desc)
-	END IF
-	PRINT ""
+    PRINT " [" + STRINT$(i) + "] ";
+    PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
+    IF Games(i).desc <> 0 THEN
+        PRINT STRGET$(Games(i).desc)
+    END IF
+    PRINT ""
 NEXT i
 
 choose:
 DIM key$
 DO
-	LET key$ = INKEY$
+    LET key$ = INKEY$
 LOOP WHILE ISINT(key$) = FALSE
 
 IF VAL(key$) < 1 OR VAL(key$) > Games_Count THEN
-	GOTO choose
+    GOTO choose
 END IF
 
 Games_Select(VAL(key$))

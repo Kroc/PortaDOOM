@@ -8,6 +8,7 @@
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
+[X] LAUNCHER : Add DEH support for IWADs (CHEX, REKKRSA)
 [-] LAUNCHER : Implement game choice
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement `/REQ` to filter engines
@@ -36,7 +37,6 @@
     [ ] Harmony
     [ ] Hacx
     [X] Chex
-	 -  [ ] Sort out best way to handle required DEH file
     [ ] Adventures of Square (SHAREWARE)
     [ ] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)

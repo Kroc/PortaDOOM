@@ -46,9 +46,6 @@ DIM SHARED DIR_PWAD$
 'order) and worry about the specific invocation at the end
 LET CMD_FILES$ = ""
 
-DIM iwad%%
-LET iwad%% = Games_Selected.iwad
-
 '-----------------------------------------------------------------------------
 '[01] save game path:
 '-----------------------------------------------------------------------------
@@ -80,7 +77,7 @@ ELSE
     'otherwise just use the IWAD name
     
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(STRGET$(IWADs(iwad%%).path))
+        + Paths_GetFileBaseName$(STRGET$(IWADs_Selected.path))
 END IF
 
 'does this folder exist?
@@ -96,9 +93,11 @@ LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(STRGET$(Engines_Selected.dir))
 LET CMD$ = CHR$(34) _
          + Launch_FixPath$(DIR_ENGINE$) + STRGET$(Engines_Selected.exe) _
          + CHR$(34)
-         
-PRINT "         port : " + RTRUNCATE$(STRGET$(Engines_Selected.title), UI_SCREEN_WIDTH - 17)
-PRINT "       engine : " + RTRUNCATE$(DIR_ENGINE$ + STRGET$(Engines_Selected.exe), UI_SCREEN_WIDTH - 17)
+
+COLOR YELLOW: PRINT "         port : ";: COLOR UI_FORECOLOR
+PRINT RTRUNCATE$(STRGET$(Engines_Selected.title), UI_SCREEN_WIDTH - 17)
+COLOR YELLOW: PRINT "       engine : ";: COLOR UI_FORECOLOR
+PRINT RTRUNCATE$(DIR_ENGINE$ + STRGET$(Engines_Selected.exe), UI_SCREEN_WIDTH - 17)
 PRINT ""
 
 '-----------------------------------------------------------------------------
@@ -136,14 +135,14 @@ ELSE
     IF NOT _FILEEXISTS(cfg_engine$ + cfg$) THEN
         'copy across the default config file
         'FIXME: capture error here
-        SHELL "COPY /Y " _
+        SHELL _HIDE "COPY /Y " _
             + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
             + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A"
         
         'vanilla engines store non-original settings in an extra config file
         IF Engines_Selected.kin = KIN_V THEN
             'FIXME: capture error here
-            SHELL "COPY /Y " _
+            SHELL _HIDE "COPY /Y " _
                 + CHR$(34) + cfg_default$ + ".extra" + cfg$ + CHR$(34) + " /A " _
                 + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A"
         END IF
@@ -155,7 +154,8 @@ END IF
 'add the command-line parameter to select the config file
 LET CMD$ = CMD$ + " -config " _
          + CHR$(34) + Launch_FixPath$(CMD_CONFIG$) + cfg$ + CHR$(34)
-PRINT "      -config : " + RTRUNCATE$(CMD_CONFIG$ + cfg$, UI_SCREEN_WIDTH - 17)
+COLOR YELLOW: PRINT "      -config : ";: COLOR UI_FORECOLOR
+PRINT RTRUNCATE$(CMD_CONFIG$ + cfg$, UI_SCREEN_WIDTH - 17)
 
 'vanilla engines (Chocolate-Doom, Crispy-Doom) store non-original settings
 'in an extra config file (this is why we omit the file extension until now)
@@ -163,7 +163,8 @@ IF Engines_Selected.kin = KIN_V THEN
     LET CMD$ = CMD$ + " -extraconfig " _
              + CHR$(34) + Launch_FixPath$(CMD_CONFIG$ + ".extra" + cfg$) + CHR$(34)
     
-    PRINT " -extraconfig : " + RTRUNCATE$(CMD_CONFIG$ + ".extra" + cfg$, UI_SCREEN_WIDTH - 17)
+    COLOR YELLOW: PRINT " -extraconfig : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(CMD_CONFIG$ + ".extra" + cfg$, UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -172,7 +173,9 @@ END IF
 IF Games_Selected.cmplvl >= 0 THEN
     'TODO: should this only be applied to Boom-based engines?
     LET CMD$ = CMD$ + " -complevel " + STRINT$(Games_Selected.cmplvl)
-    PRINT "   -complevel : " + STRINT$(Games_Selected.cmplvl)
+    
+    COLOR YELLOW: PRINT "   -complevel : ";: COLOR UI_FORECOLOR
+    PRINT STRINT$(Games_Selected.cmplvl)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -180,13 +183,15 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs(iwad%%).path))
+LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs_Selected.path))
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)
 LET CMD$ = CMD$ + " -iwad " _
          + CHR$(34) + Launch_FixPath$(CMD_IWAD$) + CHR$(34)
-PRINT "        -iwad : " + RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
+         
+COLOR YELLOW: PRINT "        -iwad : ";: COLOR UI_FORECOLOR
+PRINT RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
 
 '-----------------------------------------------------------------------------
 '[06] auto-load files:
@@ -205,7 +210,8 @@ IF auto_path$ <> "" THEN
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
         
-        PRINT " (auto) -file : " + RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
+        COLOR YELLOW: PRINT " (auto) -file : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
         
         LET auto_path$ = WADs_Split$("")
     LOOP WHILE auto_path$ <> ""
@@ -227,7 +233,8 @@ IF CMD_PWAD$ <> "" THEN
     CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
     LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
     
-    PRINT " (pwad) -file : " + RTRUNCATE$(CMD_PWAD$, UI_SCREEN_WIDTH - 17)
+    COLOR YELLOW: PRINT " (pwad) -file : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(CMD_PWAD$, UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -244,7 +251,8 @@ IF file$ <> "" THEN
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + file$ + ";"
         'announce
-        PRINT "        -file : " + RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
+        COLOR YELLOW: PRINT "        -file : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
         'get the next file in the list (if any)
         LET file$ = WADs_Split$("")
     LOOP WHILE file$ <> ""
@@ -275,10 +283,16 @@ END IF
 'has a DEH file been specified?
 LET CMD_DEH$ = STRGET$(Games_Selected.deh)
 
-'FIXME: conflict with existing DEH parameter
-IF Games_Selected.type = TYPE_CHEX THEN
-    LET CMD_DEH$ = "chex.deh"
-    LET CMD$ = CMD$ + " -exe chex"
+'does the IWAD provide its own DEH file?
+'CHEX.WAD does this, so does REKKR stand-alone
+IF IWADs_Selected.deh <> 0 THEN
+    'TODO: handle conflict
+    LET CMD_DEH$ = STRGET$(IWADs_Selected.deh)
+	'if this is CHEX.WAD then PrBoom+ likes a `-exe chex` parameter for
+	'demo compatibility. we don't have a generic way to sepecify this yet
+	IF UCASE$(Paths_GetFileBaseName$(CMD_IWAD$)) = "CHEX" THEN
+		LET CMD$ = CMD$ + " -exe chex"
+	END IF
 END IF
 
 IF CMD_DEH$ <> "" THEN
@@ -289,7 +303,8 @@ IF CMD_DEH$ <> "" THEN
     LET CMD$ = CMD$ + " -deh " _
              + CHR$(34) + Launch_FixPath$(CMD_DEH$) + CHR$(34)
     'and announce
-    PRINT "         -deh : " + RTRUNCATE$(Launch_ClipPath$(CMD_DEH$), UI_SCREEN_WIDTH - 17)
+    COLOR YELLOW: PRINT "         -deh : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(Launch_ClipPath$(CMD_DEH$), UI_SCREEN_WIDTH - 17)
 END IF
 
 'has a BEX file been specified?
@@ -302,7 +317,8 @@ IF CMD_BEX$ <> "" THEN
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
     'and announce
-    PRINT "         -bex : " + RTRUNCATE$(Launch_ClipPath$(CMD_BEX$), UI_SCREEN_WIDTH - 17)
+    COLOR YELLOW: PRINT "         -bex : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(Launch_ClipPath$(CMD_BEX$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -326,7 +342,9 @@ IF LEN(CMD_DEMO$) <> 0 THEN
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
              + CHR$(34) + Launch_FixPath$(demo$) + CHR$(34)
-    PRINT "    -playdemo : " + RTRUNCATE$(Launch_ClipPath$(demo$), UI_SCREEN_WIDTH - 17)
+             
+    COLOR YELLOW: PRINT "    -playdemo : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(Launch_ClipPath$(demo$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -342,10 +360,11 @@ OR Games_Selected.warp_m >= 0 THEN
     
     IF Games_Selected.warp_e >= 0 THEN LET warp$ = warp$ + e$
     IF Games_Selected.warp_m >= 0 THEN LET warp$ = warp$ + m$
-	
+    
     'add to the command-line and announce
     LET CMD$ = CMD$ + " -warp" + warp$
-    PRINT "        -warp :" + warp$
+    COLOR YELLOW: PRINT "        -warp :";: COLOR UI_FORECOLOR
+    PRINT warp$
     
     'do we need to ask for a skill level?
     '(warp, but no skill-level provided)
@@ -360,7 +379,7 @@ OR Games_Selected.warp_m >= 0 THEN
         'get the list of skill-levels from the IWAD meta-data;
         'if there is none, default to DOOM's descriptions
         IF Games_Selected.iwad = 0 _
-        OR IWADs(Games_Selected.iwad).skill1 = 0 _
+        OR IWADs_Selected.skill1 = 0 _
         THEN
             PRINT "         [1]  I'm Too Young To Die"
             PRINT "         [2]  Hey, Not Too Rough"
@@ -369,41 +388,41 @@ OR Games_Selected.warp_m >= 0 THEN
             PRINT "         [5]  Nightmare!"
         ELSE
             'work through the list of IWAD skill-levels (up to 9)
-            IF IWADs(Games_Selected.iwad).skill1 > 0 THEN
+            IF IWADs_Selected.skill1 > 0 THEN
                 PRINT "         [1]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill1)
+                PRINT STRGET$(IWADs_Selected.skill1)
             END IF
-            IF IWADs(Games_Selected.iwad).skill2 > 0 THEN
+            IF IWADs_Selected.skill2 > 0 THEN
                 PRINT "         [2]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill2)
+                PRINT STRGET$(IWADs_Selected.skill2)
             END IF
-            IF IWADs(Games_Selected.iwad).skill3 > 0 THEN
+            IF IWADs_Selected.skill3 > 0 THEN
                 PRINT "         [3]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill3)
+                PRINT STRGET$(IWADs_Selected.skill3)
             END IF
-            IF IWADs(Games_Selected.iwad).skill4 > 0 THEN
+            IF IWADs_Selected.skill4 > 0 THEN
                 PRINT "         [4]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill4)
+                PRINT STRGET$(IWADs_Selected.skill4)
             END IF
-            IF IWADs(Games_Selected.iwad).skill5 > 0 THEN
+            IF IWADs_Selected.skill5 > 0 THEN
                 PRINT "         [5]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill5)
+                PRINT STRGET$(IWADs_Selected.skill5)
             END IF
-            IF IWADs(Games_Selected.iwad).skill6 > 0 THEN
+            IF IWADs_Selected.skill6 > 0 THEN
                 PRINT "         [6]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill6)
+                PRINT STRGET$(IWADs_Selected.skill6)
             END IF
-            IF IWADs(Games_Selected.iwad).skill7 > 0 THEN
+            IF IWADs_Selected.skill7 > 0 THEN
                 PRINT "         [7]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill7)
+                PRINT STRGET$(IWADs_Selected.skill7)
             END IF
-            IF IWADs(Games_Selected.iwad).skill8 > 0 THEN
+            IF IWADs_Selected.skill8 > 0 THEN
                 PRINT "         [8]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill8)
+                PRINT STRGET$(IWADs_Selected.skill8)
             END IF
-            IF IWADs(Games_Selected.iwad).skill9 > 0 THEN
+            IF IWADs_Selected.skill9 > 0 THEN
                 PRINT "         [9]  ";
-                PRINT STRGET$(IWADs(Games_Selected.iwad).skill9)
+                PRINT STRGET$(IWADs_Selected.skill9)
             END IF
         END IF
         
@@ -429,7 +448,8 @@ END IF
 
 IF Games_Selected.skill >= 0 THEN
     LET CMD$ = CMD$ + " -skill" + STR$(Games_Selected.skill)
-    PRINT "       -skill :" + STR$(Games_Selected.skill)
+    COLOR YELLOW: PRINT "       -skill :";: COLOR UI_FORECOLOR
+    PRINT STR$(Games_Selected.skill)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -449,7 +469,9 @@ IF CMD_EXEC$ <> "" THEN
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -exec " _
              + CHR$(34) + Launch_FixPath$(exec$) + CHR$(34)
-    PRINT "        -exec : " + RTRUNCATE$(Launch_ClipPath$(exec$), UI_SCREEN_WIDTH - 17)
+             
+    COLOR YELLOW: PRINT "        -exec : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(Launch_ClipPath$(exec$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -474,9 +496,11 @@ IF Engines_Selected.kin <> KIN_V THEN
 
     LET CMD$ = CMD$ + " -width " + STRINT$(screen_width)
     LET CMD$ = CMD$ + " -height " + STRINT$(screen_height)
-
-    PRINT "       -width :" + STR$(screen_width) _
-        + "  -height :" + STR$(screen_height)
+    
+    COLOR YELLOW: PRINT "       -width :";
+    COLOR UI_FORECOLOR: PRINT STR$(screen_width);
+    COLOR YELLOW: PRINT "  -height :";
+    COLOR UI_FORECOLOR: PRINT STR$(screen_height)
 END IF
 '-----------------------------------------------------------------------------
 '[14] launch!
@@ -516,9 +540,10 @@ END IF
 'auto-quit? (ZDoom-based engines only)
 IF CMD_QUIT` THEN
     LET CMD$ = CMD$ + " +quit"
-    PRINT "        +quit"
+    COLOR YELLOW: PRINT "        +quit": COLOR UI_FORECOLOR
 END IF
 
+COLOR WHITE
 PRINT ""
 PRINT "   Get Psyched!"
 PRINT ""
