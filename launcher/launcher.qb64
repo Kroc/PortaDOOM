@@ -2,6 +2,7 @@
 
 '$INCLUDE:'lib\INI-Manager\ini.bi'
 
+'$INCLUDE:'lib\ascii.bi'
 '$INCLUDE:'lib\consts.bi'
 '$INCLUDE:'lib\strings.bi'
 '$INCLUDE:'lib\reg.bi'
@@ -117,13 +118,18 @@ END IF
 'present game selection UI:
 'walk through the list of games
 
+COLOR UI_FORECOLOR
+PRINT " Select game choice by pressing indicated number key:"
+PRINT ""
+
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "] ";: COLOR YELLOW
     PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
-	COLOR UI_FORECOLOR
+    COLOR UI_FORECOLOR
     IF Games(i).desc <> 0 THEN
-        PRINT STRGET$(Games(i).desc)
+        DIM A
+        LET A = PRINTWRAP%(2, CSRLIN, UI_SCREEN_WIDTH - 2, 5, STRGET$(Games(i).desc))
     END IF
     PRINT ""
 NEXT i
@@ -160,13 +166,66 @@ launch:
 ''    LET glVersion$ = _glGetString(_GL_VERSION)
 ''END SUB
 
+'print a message to screen, handling word-wrapping and boundaries.
+'returns the final line-count actually used
+'=============================================================================
+FUNCTION PRINTWRAP% (x~%%, y~%%, w~%%, text$)
+    LOCATE y~%%, x~%%
+    
+    DIM last_spc%, char~%%
+    DIM line_len%
+    DIM line_count%
+    LET line_count% = 1
+    
+    LET text$ = text$ + " "
+    
+    DIM i AS _UNSIGNED LONG
+    LET i = 1: LET last_spc% = 1
+    DO
+        'get a single character from the source string
+        LET char~%% = ASC(text$, i)
+        'is this a space?
+        IF char~%% = ASC_SPC THEN
+            'does the current word over-hang?
+            IF line_len% >= w~%% THEN
+                'move to the next line
+                LET y~%% = y~%% + 1
+                LOCATE y~%%, x~%%
+                
+                LET line_count% = line_count% + 1
+                
+                'print the current word & space and continue
+                PRINT MID$(text$, last_spc% + 1, i - last_spc% - 1);
+                'the length of the new line is now this word+space
+                LET line_len% = i - last_spc%
+                'set this space as the next available break-point
+                LET last_spc% = i
+            ELSE
+                PRINT MID$(text$, last_spc%, i - last_spc%);
+                
+                LET last_spc% = i
+                LET line_len% = line_len% + 1
+            END IF
+        ELSE
+            LET line_len% = line_len% + 1
+        END IF
+        
+        LET i = i + 1
+    LOOP WHILE i <= LEN(text$)
+    PRINT ""
+    
+    LET PRINTWRAP% = line_count%
+END FUNCTION
+
+'=============================================================================
+'module functions for PortaDOOM Launcher:
+'-----------------------------------------------------------------------------
 '$INCLUDE:'inc\tags.bm'
 '$INCLUDE:'inc\games.bm'
 '$INCLUDE:'inc\engines.bm'
 '$INCLUDE:'inc\iwads.bm'
 '$INCLUDE:'inc\wads.bm'
 
-'=============================================================================
 'third-party library functions:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\INI-Manager\ini.bm'
