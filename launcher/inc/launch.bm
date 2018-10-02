@@ -20,6 +20,9 @@
 '   [13]: resolution & full-screen
 '   [14]: launch!
 
+CLS
+PRINT ""
+
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want
 'to separate user-data (such as save-games) from the engines. whilst we can
@@ -502,6 +505,7 @@ IF Engines_Selected.kin <> KIN_V THEN
     COLOR YELLOW: PRINT "  -height :";
     COLOR UI_FORECOLOR: PRINT STR$(screen_height)
 END IF
+
 '-----------------------------------------------------------------------------
 '[14] launch!
 '-----------------------------------------------------------------------------
@@ -545,7 +549,7 @@ END IF
 
 COLOR WHITE
 PRINT ""
-PRINT "   Get Psyched!"
+PRINT "   GET PSYCHED!"
 PRINT ""
 
 IF CMD_DEBUG` THEN

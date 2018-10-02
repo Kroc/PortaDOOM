@@ -93,8 +93,8 @@ COLOR UI_FORECOLOR, UI_BACKCOLOR
 VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
 CLS: PRINT ""
 
-DIM SHARED glVersion$
-
+''DIM SHARED glVersion$
+''
 ''DIM start!
 ''LET start! = TIMER
 ''DO
@@ -118,6 +118,8 @@ END IF
 'present game selection UI:
 'walk through the list of games
 
+CLS
+PRINT ""
 COLOR UI_FORECOLOR
 PRINT " Select game choice by pressing indicated number key:"
 PRINT ""
@@ -129,7 +131,7 @@ FOR i = 1 TO Games_Count
     COLOR UI_FORECOLOR
     IF Games(i).desc <> 0 THEN
         DIM A
-        LET A = PRINTWRAP%(2, CSRLIN, UI_SCREEN_WIDTH - 2, 5, STRGET$(Games(i).desc))
+        LET A = PRINTWRAP%(2, CSRLIN, UI_SCREEN_WIDTH - 2, STRGET$(Games(i).desc))
     END IF
     PRINT ""
 NEXT i
