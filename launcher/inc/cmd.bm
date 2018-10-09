@@ -49,36 +49,36 @@ LET CMD_DEBUG` = TRUE
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
-		CASE "/?", "--HELP"
-cmd_help:	PRINT ""
-			PRINT " No default UI yet, use command-line parameters to invoke:"
-			PRINT ""
-			PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
-			PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
-			PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
-			PRINT "              [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
-			PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
-			PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
-			PRINT "              [-- <files>...]"
-			PRINT ""
-			PRINT ""
-			PRINT " Or press ";: COLOR AQUA: PRINT "[O]";: COLOR UI_FORECOLOR
-			PRINT " to visit the on-line documentation @"
-			COLOR LIME
-			PRINT " https://github.com/Kroc/PortaDOOM/wiki/Launcher"
-			COLOR UI_FORECOLOR
-			PRINT ""
-			COLOR WHITE
-			PRINT " Press Any Key to Exit"
-			PRINT ""
-			
-			DO: LET key$ = INKEY$: LOOP WHILE key$ = ""
-			IF key$ = "o" THEN
-				SHELL _DONTWAIT "https://github.com/Kroc/PortaDOOM/wiki/Launcher"
-			END IF
-			
-			SYSTEM
-			
+        CASE "/?", "--HELP"
+cmd_help:   PRINT ""
+            PRINT " No default UI yet, use command-line parameters to invoke:"
+            PRINT ""
+            PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
+            PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
+            PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+            PRINT "              [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+            PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
+            PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
+            PRINT "              [-- <files>...]"
+            PRINT ""
+            PRINT ""
+            PRINT " Or press ";: COLOR AQUA: PRINT "[O]";: COLOR UI_FORECOLOR
+            PRINT " to visit the on-line documentation @"
+            COLOR LIME
+            PRINT " https://github.com/Kroc/PortaDOOM/wiki/Launcher"
+            COLOR UI_FORECOLOR
+            PRINT ""
+            COLOR WHITE
+            PRINT " Press Any Key to Exit"
+            PRINT ""
+            
+            DO: LET key$ = INKEY$: LOOP WHILE key$ = ""
+            IF key$ = "o" THEN
+                SHELL _DONTWAIT "https://github.com/Kroc/PortaDOOM/wiki/Launcher"
+            END IF
+            
+            SYSTEM
+            
         CASE "/WAIT"
             'keep launcher.exe on screen whilst the game runs
             LET CMD_WAIT` = TRUE
@@ -87,9 +87,9 @@ cmd_help:	PRINT ""
             'enable debugging mode; will print
             'additional information to the screen
             LET CMD_DEBUG` = TRUE
-			'if this is the only param then nothing useful can be done,
-			'print out the command-line usage
-			GOTO cmd_help
+            'if this is the only param then nothing useful can be done,
+            'print out the command-line usage
+            IF _COMMANDCOUNT = 1 THEN GOTO cmd_help
             
         CASE "/QUIT"
             'for ZDoom-based engines only (ZDoom, Zandronum, GZDoom);

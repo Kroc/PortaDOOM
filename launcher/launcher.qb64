@@ -82,11 +82,13 @@ LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 '$INCLUDE:'inc\ui_init.bi'
 
 COLOR BLACK, UI_FORECOLOR
-PRINT " " + PAD$("PortaDOOM Launcher", UI_SCREEN_WIDTH - 2) + " "
+''PRINT " " + PAD$("PortaDOOM Launcher", UI_SCREEN_WIDTH - 2) + " "
+LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
+LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
 
 COLOR UI_FORECOLOR, UI_BACKCOLOR
 VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
-CLS: PRINT ""
+CLS 2: PRINT ""
 
 ''DIM SHARED glVersion$
 ''
@@ -113,7 +115,7 @@ END IF
 'present game selection UI:
 'walk through the list of games
 
-CLS
+CLS 2
 PRINT ""
 COLOR UI_FORECOLOR
 PRINT " Select game choice by pressing indicated number key:"

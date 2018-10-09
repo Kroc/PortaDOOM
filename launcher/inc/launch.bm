@@ -20,7 +20,7 @@
 '   [13]: resolution & full-screen
 '   [14]: launch!
 
-CLS
+CLS 2
 PRINT ""
 
 'NOTE: many doom engines save their config files in the 'current directory',
