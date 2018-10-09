@@ -18,35 +18,30 @@
 
 'generic 'index' counter
 DIM i AS _UNSIGNED LONG
+'temp variable for reading `INKEY$`
+DIM key$
 
 'the folder where config files are kept
-DIM SHARED DIR_CONFIG$
-LET DIR_CONFIG$ = "config\"
+CONST DIR_CONFIG$ = "config\"
 
 'folder for the 'source ports' -- game engines
-DIM SHARED DIR_PORTS$
-LET DIR_PORTS$ = "ports\"
+CONST DIR_PORTS$ = "ports\"
 
 'folder for the user's save files
-DIM SHARED DIR_SAVES$
-LET DIR_SAVES$ = "saves\"
+CONST DIR_SAVES$ = "saves\"
 
 'folder for external executables;
 'such as patching utilities
-DIM SHARED DIR_TOOLS$
-LET DIR_TOOLS$ = "tools\"
+CONST DIR_TOOLS$ = "tools\"
 
 'folder for WADs -- the game files to play
-DIM SHARED DIR_WADS$
-LET DIR_WADS$ = "wads\"
+CONST DIR_WADS$ = "wads\"
 
 'folder for demo-files (i.e. recorded runs)
-DIM SHARED DIR_DEMOS$
-LET DIR_DEMOS$ = "demos\"
+CONST DIR_DEMOS$ = "demos\"
 
 'folder for gameplay mods
-DIM SHARED DIR_MODS$
-LET DIR_MODS$ = "mods\"
+CONST DIR_MODS$ = "mods\"
 
 'read system info:
 '-----------------------------------------------------------------------------
@@ -137,7 +132,6 @@ FOR i = 1 TO Games_Count
 NEXT i
 
 choose:
-DIM key$
 DO
     LET key$ = INKEY$
 LOOP WHILE ISINT(key$) = FALSE
