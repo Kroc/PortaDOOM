@@ -118,7 +118,8 @@ ECHO                             versions 3.0 ^(APR-2017+^), 3.1 ^(JUN-2017+^) a
 ECHO                             ^(OCT-2017+^) are excluded due to a security concern
 ECHO       gzdoom-33           : GZDoom v3.3.0  ^(MAR-2018+^)
 ECHO       gzdoom-34           : GZDoom v3.4.1  ^(JUN-2018+^)
-ECHO       gzdoom-35           : GZDoom v3.5.0  ^(JUL-2018+^)
+ECHO       gzdoom-35           : GZDoom v3.5.1  ^(JUL-2018+^)
+ECHO       gzdoom-36           : GZDoom v3.6.0  ^(OCT-2018+^)
 ECHO:
 ECHO     NOTE: Additional engine resource files will be included automatically, that is
 ECHO           "brightmaps.pk3" ^& "lights.pk3" for GZDoom versions 1.0 and above, or
@@ -723,6 +724,16 @@ IF /I "%USE%" == "gzdoom-dev" (
 	SET "PORT_SAVE=gzdoom"
 	SET "PORT_TITLE=GZDoom ^(development^)"
 	SET VER_GZDOOM=33
+)
+IF /I "%USE%" == "gzdoom-36" (
+	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-36_%ENGINE_BIT%"
+	SET "ENGINE_INC=brightmaps.pk3 lights.pk3"
+	SET "ENGINE_EXE=gzdoom.exe"
+	SET "ENGINE_CFG=gzdoom-36"
+	SET "ENGINE_KIN=Z"
+	SET "PORT_SAVE=gzdoom"
+	SET "PORT_TITLE=GZDoom ^(v3.6.x^)"
+	SET VER_GZDOOM=36
 )
 IF /I "%USE%" == "gzdoom-35" (
 	SET "ENGINE_DIR=%DIR_PORTS%\gzdoom-35_%ENGINE_BIT%"

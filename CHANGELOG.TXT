@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+11-OCT-18:
+* Updated GZDoom to v3.6.0
+
 11-SEP-18:
 * Updated DOOM Retro to v2.7.3
 - Removed GZDoom v0.9 (I don't think anything will require it)

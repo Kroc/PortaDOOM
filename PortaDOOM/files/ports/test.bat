@@ -49,7 +49,8 @@ CLS
 ECHO:
 ECHO  GZDoom:
 ECHO:
-ECHO    [0] GZDoom v3.5.x : 32-bit      [1] GZDoom v3.5.x : 64-bit
+ECHO    [0] GZDoom v3.6.x : 32-bit      [1] GZDoom v3.6.x : 64-bit
+ECHO    [2] GZDoom v3.5.x : 32-bit      [3] GZDoom v3.5.x : 64-bit
 ECHO    [A] GZDoom v3.4.x : 32-bit      [B] GZDoom v3.4.x : 64-bit
 ECHO    [C] GZDoom v3.3.x : 32-bit      [D] GZDoom v3.3.x : 64-bit
 ECHO    [E] GZDoom v3.2.x : 32-bit      [F] GZDoom v3.2.x : 64-bit
@@ -58,16 +59,11 @@ ECHO    [I] GZDoom v2.3.x : 32-bit      [J] GZDoom v2.3.x : 64-bit
 ECHO    [K] GZDoom v2.2.x : 32-bit      [L] GZDoom v2.2.x : 64-bit
 ECHO    [M] GZDoom v2.1.x : 32-bit      [N] GZDoom v2.1.x : 64-bit
 ECHO:
-ECHO    [O] GZDoom v2.0.x
-ECHO    [P] GZDoom v1.9.x
-ECHO    [Q] GZDoom v1.8.x
-ECHO    [R] GZDoom v1.7.x
-ECHO    [S] GZDoom v1.6.x
-ECHO    [T] GZDoom v1.5.x
-ECHO    [U] GZDoom v1.4.x
-ECHO    [V] GZDoom v1.3.x
-ECHO    [W] GZDoom v1.2.x
-ECHO    [X] GZDoom v1.1.x
+ECHO    [O] GZDoom v2.0.x               [P] GZDoom v1.9.x
+ECHO    [Q] GZDoom v1.8.x               [R] GZDoom v1.7.x
+ECHO    [S] GZDoom v1.6.x               [T] GZDoom v1.5.x
+ECHO    [U] GZDoom v1.4.x               [V] GZDoom v1.3.x
+ECHO    [W] GZDoom v1.2.x               [X] GZDoom v1.1.x
 ECHO    [Y] GZDoom v1.0.x
 ECHO:
 
@@ -75,8 +71,10 @@ SET CHOICE=?
 SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
-IF /I "%CHOICE%" == "0" ..\launcher.exe /WAIT /32 /USE gzdoom-35 /IWAD DOOM2
-IF /I "%CHOICE%" == "1" ..\launcher.exe /WAIT     /USE gzdoom-35 /IWAD DOOM2
+IF /I "%CHOICE%" == "0" ..\launcher.exe /WAIT /32 /USE gzdoom-36 /IWAD DOOM2
+IF /I "%CHOICE%" == "1" ..\launcher.exe /WAIT     /USE gzdoom-36 /IWAD DOOM2
+IF /I "%CHOICE%" == "2" ..\launcher.exe /WAIT /32 /USE gzdoom-35 /IWAD DOOM2
+IF /I "%CHOICE%" == "3" ..\launcher.exe /WAIT     /USE gzdoom-35 /IWAD DOOM2
 IF /I "%CHOICE%" == "A" ..\launcher.exe /WAIT /32 /USE gzdoom-34 /IWAD DOOM2
 IF /I "%CHOICE%" == "B" ..\launcher.exe /WAIT     /USE gzdoom-34 /IWAD DOOM2
 IF /I "%CHOICE%" == "C" ..\launcher.exe /WAIT /32 /USE gzdoom-33 /IWAD DOOM2

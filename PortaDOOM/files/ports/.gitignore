@@ -42,3 +42,5 @@ gzdoom-dev/
 **/CRASHLOG.TXT
 **/*.sf2
 **/delete.me
+**/*.wopl
+**/*.wopn

@@ -1,5 +1,73 @@
+GZDoom 3.6.0
+--------------------------------------------------------------------------------
+*Wed Oct 10, 2018 9:22 pm*
+
+Highlights:
+
+* Add OBJ model support
+* added Screen.DrawThickLine for drawing lines with thickness
+* fixed: sound from poly objects through portals will now propegate properly
+* Add HITOWNER flag, when set, allows a projectile to collide with its shooter.
+* Allow LineAttack's LAF_NOINTERACT to fill FTranslatedLineTarget's information.
+* Added DMG_EXPLOSION flag.
+* Adds OnDrop virtual to inventory items. Called on the dropped item at the end of AActor::DropInventory.
+* enabled the linear shadowmap filter.
+* update xBRZ upscaler to version 1.6
+* (modern only) added 5x and 6x upscaling with xBRZ
+* Add 'normalNx' texture scaling (normal2x, 3x, 4x, 5x, and 6x) (5x and 6x only supported in modern)
+* Upgrade libADLMIDI and libOPNMIDI
+* Exports various resurrection-related functions to ZScript.
+* Fixes for Wraith Corporation WADs
+
+Details:
+
+* Additional blocking-related flags for Actor.LineTrace()
+* Added CheckReplacement to event handlers, a function inspired by its namesake in Unreal's Mutator class.
+* Add "IsFinal" parameter for CheckReplacement.
+* Add HITOWNER flag, when set, allows a projectile to collide with its shooter.
+* support static const arrays inside structs
+* prohibit assignment of dynamic arrays
+* Add ZScript method `LevelLocals.SphericalCoords`.
+* fixed: sound from poly objects through portals will now propegate properly
+* defaulted constructors and assignment operators of several trivial types.
+* removed most of the old LastIndexOf methods in FString, only leaving one for ZScript and clearly giving it a name that says it all. RIndexOf has been made the proper version of LastIndexOf internally now.
+* Added paths for all games on Steam for Linux since they now offer the ability to download all games for Proton/Wine.
+* Check ~/.steam on Linux for the config.
+* add menu sliders for `vr_ipd` and `vr_screendist`
+* added Screen.DrawThickLine for drawing lines with thickness
+* fixed: always initialize active colors in special font
+* update french language translation from Tapwave
+* Add OBJ model support
+* fixed the use of Doom-Legacy-style 3D floor lighting in light mode 8.
+* fixed math imprecisions in horizon vertex generation.
+* be more thorough with 'in menu' checks for certain protected functions.
+* Fixed code generation of infinite for loop
+* Add NewGame to EventHandler
+* Make StatusScreen::End virtual
+* Allow LineAttack's LAF_NOINTERACT to fill FTranslatedLineTarget's information.
+* Added DMG_EXPLOSION flag.
+* do not render lights from uninitialized data.
+* Adds OnDrop virtual to inventory items. Called on the dropped item at the end of AActor::DropInventory.
+* clamp the software light to never get brighter than the initial light level
+* enabled the linear shadowmap filter.
+* update xBRZ upscaler to version 1.6
+* (modern only) added 5x and 6x upscaling with xBRZ
+* Add 'normalNx' texture scaling (normal2x, 3x, 4x, 5x, and 6x) (5x and 6x only supported in modern)
+* Upgrade libADLMIDI and libOPNMIDI
+* Exports various resurrection-related functions to ZScript.
+* Computed facet normals for UE1 models were not normalized when they were supposed to.
+* removed dynamic lights from Hexen's Mana pickups.
+* fixed potential null pointer access in Hexen's spike code.
+* Fixes for Wraith Corporation WADs
+* fixed: smooth teleporters could fudge the player over an adjacent line, causing the player to appear on top of a cliff that is much higher than the original teleport.
+* fixed: MD3s with a skin-less surface left the renderer in an undefined state. The frame interpolation factor wasn't reset and rendering prematurely aborted with no chance to recover.
+
+
+
 GZDoom 3.5.1
 --------------------------------------------------------------------------------
+* Sat Aug 25, 2018 8:19 pm*
+
 Notice: This release has been split into two. There is now a "modern" version and a "vintage" version, for older hardware. The reason for this is that some recent changes to improve performance on modern hardware resulted in quite severe slowdowns on Intel's OpenGL 2 hardware. So in order to give these users the best possible experience it was decided to provide this vintage build which adds all new non-renderer-related features with the latest state of the renderer from before the abovementioned change. The vintage version is provided thanks to the efforts of drfrag.
 
 Please note that this solution is only a temporary measure. User share of OpenGL 2 hardware had already been low when we ran our survey with GZDoom 3.3 and once this drops any further the vintage build will be discontinued. If you cannot run the main (modern) build we strongly recommend to upgrade your hardware.
