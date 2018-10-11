@@ -4,8 +4,8 @@
 'read command-line switches:
 '=============================================================================
 DIM CMD$
-'TODO: if there are no command-line parameters, we present a UI to build
-'      a custom game configuration?
+'no command-line parameters? display the command-line help
+'launcher.exe does not yet provide a GUI interface without params
 IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
 
 'the command-line switches are to allow drop-in replacement compatibility
@@ -131,8 +131,16 @@ cmd_help:   PRINT ""
              "/HERETIC", "/HEXEN", "/STRIFE", "/FREEDOOM1", "/FREEDOOM2"
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN
-                PRINT "ERROR: IWAD defined twice"
-                SYSTEM 1
+				CALL ErrorScreen
+                PRINT " ERROR: IWAD defined twice"
+				PRINT ""
+				PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+					"/IWAD parameter cannot be used twice. Note that the " _
+				  + "/DOOM, /DOOM2, /TNT, /PLUTONIA, /HERETIC, /HEXEN, " _
+				  + "/STRIFE, /FREEDOOM1 & /FREEDOOM2 switches are " _
+				  + "shortcuts to /IWAD so these cannot be combined with " _
+				  + "/IWAD, or each other."
+                CALL ErrorExit
             END IF
             
             SELECT CASE UCASE$(COMMAND$(i))
@@ -223,13 +231,9 @@ cmd_help:   PRINT ""
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
-                PRINT ""
-                PRINT "ERROR: Invalid parameters!"
-                PRINT ""
-                PRINT COMMAND$(0)
-                PRINT ""
-                PRINT "Press Any Key to Exit"
-                SLEEP: SYSTEM 1
+                CALL ErrorScreen
+                PRINT " ERROR: Invalid parameters!"
+                CALL ErrorExit
             END IF
     END SELECT
     LET i = i + 1

@@ -32,10 +32,9 @@ PRINT ""
 'we therefore need to change the current directory and rewrite
 'all the WAD / file paths to be relative from there!
 
-'this is the relative path from the WAD's
-'save folder back to this executable
-DIM SHARED FIX_PATH$
-LET FIX_PATH$ = "..\..\..\"
+'this is the relative path from the WAD's save folder back to this executable.
+'in the future, we may have to vary this if some engines won't co-operate
+CONST FIX_PATH$ = "..\..\..\"
 
 'we will remember the directory of the last file
 '(used for finding side-by-side WADs)
@@ -72,13 +71,12 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_ENGINE$)
 DIM DIR_SAVE_GAME$
 
 'if the game is using a PWAD,
-'use that name for the save folder
 IF Games_Selected.pwad <> 0 THEN
+    'use that name for the save folder
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
         + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
 ELSE
     'otherwise just use the IWAD name
-    
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
         + Paths_GetFileBaseName$(STRGET$(IWADs_Selected.path))
 END IF
@@ -119,7 +117,7 @@ END IF
 
 'define the default config file path, as we will need to copy this if the
 'engine's config file doesn't exist yet. note that this leaves off the
-'file extension, for now
+'file-extension, for now as we may have to add an extra slug to the name
 DIM cfg_default$
 LET cfg_default$ = DIR_CONFIG$ + "default." + STRGET$(Engines_Selected.cfg)
 
@@ -134,20 +132,26 @@ ELSE
     LET cfg_engine$ = DIR_SAVE_ENGINE$ _
                     + "config." + STRGET$(Engines_Selected.cfg)
 
-    'if the user's config file doesn't exist, make a copy of the default
+    'if the user's config file doesn't exist,
+    'make a copy of the default:
     IF NOT _FILEEXISTS(cfg_engine$ + cfg$) THEN
         'copy across the default config file
-        'FIXME: capture error here
-        SHELL _HIDE "COPY /Y " _
+        IF _SHELLHIDE("COPY /Y " _
             + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
-            + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A"
+            + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A" _
+        ) <> 0 THEN
+            ERROR 101
+        END IF
         
         'vanilla engines store non-original settings in an extra config file
         IF Engines_Selected.kin = KIN_V THEN
             'FIXME: capture error here
-            SHELL _HIDE "COPY /Y " _
+            IF _SHELLHIDE("COPY /Y " _
                 + CHR$(34) + cfg_default$ + ".extra" + cfg$ + CHR$(34) + " /A " _
-                + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A"
+                + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A" _
+            ) <> 0 THEN
+                ERROR 101
+            END IF
         END IF
     END IF
     
@@ -174,7 +178,6 @@ END IF
 '[04] compatibility level:
 '-----------------------------------------------------------------------------
 IF Games_Selected.cmplvl >= 0 THEN
-    'TODO: should this only be applied to Boom-based engines?
     LET CMD$ = CMD$ + " -complevel " + STRINT$(Games_Selected.cmplvl)
     
     COLOR YELLOW: PRINT "   -complevel : ";: COLOR UI_FORECOLOR
@@ -291,11 +294,11 @@ LET CMD_DEH$ = STRGET$(Games_Selected.deh)
 IF IWADs_Selected.deh <> 0 THEN
     'TODO: handle conflict
     LET CMD_DEH$ = STRGET$(IWADs_Selected.deh)
-	'if this is CHEX.WAD then PrBoom+ likes a `-exe chex` parameter for
-	'demo compatibility. we don't have a generic way to sepecify this yet
-	IF UCASE$(Paths_GetFileBaseName$(CMD_IWAD$)) = "CHEX" THEN
-		LET CMD$ = CMD$ + " -exe chex"
-	END IF
+    'if this is CHEX.WAD then PrBoom+ likes a `-exe chex` parameter for
+    'demo compatibility. we don't have a generic way to sepecify this yet
+    IF UCASE$(Paths_GetFileBaseName$(CMD_IWAD$)) = "CHEX" THEN
+        LET CMD$ = CMD$ + " -exe chex"
+    END IF
 END IF
 
 IF CMD_DEH$ <> "" THEN
@@ -489,7 +492,7 @@ ELSE
 END IF
 
 'a current bug/limitation of Choco-* engines in v3.0 is that
-'specifying the screen size forces fullscreen off
+'specifying the screen size forces full-screen off
 IF Engines_Selected.kin <> KIN_V THEN
     DIM screen_width AS LONG
     LET screen_width = _DESKTOPWIDTH
@@ -510,6 +513,7 @@ END IF
 '-----------------------------------------------------------------------------
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
+'TODO: DOOM Retro will support both in the next release
 IF LEFT$(STRGET$(Engines_Selected.engine), 11) = "prboom-plus" THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
@@ -518,7 +522,7 @@ ELSE
     LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
 END IF
 
-'where screenshots get saved varies by engine; many put them in the engine's
+'where screen-shots get saved varies by engine; many put them in the engine's
 'folder regardless of the 'current' directory and not all support changing the
 'directory. to the best of our ability, try to put them in the "saves/<engine>"
 'folder; one up from the 'current' directory used for save-games. we specify
@@ -589,12 +593,10 @@ SYSTEM
 '=============================================================================
 
 errMkDir:
-PRINT ""
+CALL ErrorScreen
 PRINT "ERROR: could not create required folder!"
-PRINT ""
-PRINT "Press Any Key to Exit"
-SLEEP: SYSTEM 1
-    
+CALL ErrorExit: SYSTEM 1
+
 err_fileMissing:
 SYSTEM 1
 

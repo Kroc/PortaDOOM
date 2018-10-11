@@ -1,0 +1,41 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'clear the screen for writing an error message
+'=============================================================================
+SUB ErrorScreen()
+    'clear the screen entirely, turning it red
+    VIEW PRINT
+    CLS, RED
+    
+    'draw the title / status bars
+    COLOR BLACK, UI_FORECOLOR
+    LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
+    LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
+    
+    'set up the scrolling zone
+    COLOR YELLOW, RED
+    VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
+    CLS 2: PRINT ""
+END SUB
+
+'wait for the user to press any key to exit after an error
+'=============================================================================
+SUB ErrorExit()
+    PRINT ""
+    PRINT " Command:"
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
+    PRINT ""
+    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, COMMAND$(0) + " " + COMMAND$
+    
+    VIEW PRINT
+    LOCATE UI_SCREEN_HEIGHT, 1
+    COLOR BLACK+BLINK, WHITE
+    
+    DIM w%
+    LET w% = LEN("PRESS ANY KEY TO EXIT!")
+    PRINT SPACE$((UI_SCREEN_WIDTH - w%) / 2) _
+        + "PRESS ANY KEY TO EXIT!" _
+        + SPACE$((UI_SCREEN_WIDTH - w%) / 2);
+    
+    SLEEP: SYSTEM 1
+END SUB
