@@ -1,6 +1,10 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[ ] LAUNCHER : Error messages when no engines remain after filter
+[ ] LAUNCHER : Error messages:
+ -  [ ] When no engines remain after filter
+ -  [ ] When no game is defined on the command-line
+ -  [ ] When file is not found
+ -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
 [ ] LAUNCHER : FreeDOOM substitution
 [X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2

@@ -593,8 +593,11 @@ SYSTEM
 '=============================================================================
 
 errMkDir:
-CALL ErrorScreen
-PRINT "ERROR: could not create required folder!"
+CALL ErrorScreen("ERROR: Write Error")
+PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+    "Could not create a required folder. Ensure that the media you are " _
+  + "running launcher.exe from is not write protected, and that the " _
+  + "'files\saves' folder exists, and is writeable."
 CALL ErrorExit: SYSTEM 1
 
 err_fileMissing:

@@ -2,7 +2,7 @@
 
 'clear the screen for writing an error message
 '=============================================================================
-SUB ErrorScreen()
+SUB ErrorScreen(title$)
     'clear the screen entirely, turning it red
     VIEW PRINT
     CLS, RED
@@ -16,6 +16,12 @@ SUB ErrorScreen()
     COLOR YELLOW, RED
     VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
     CLS 2: PRINT ""
+	
+	'print the error title
+	PRINT " " + title$
+	PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_DBL_H)
+	PRINT ""
+	
 END SUB
 
 'wait for the user to press any key to exit after an error

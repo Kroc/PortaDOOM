@@ -97,20 +97,35 @@ cmd_help:   PRINT ""
             LET CMD_QUIT` = TRUE
             
         CASE "/USE"
+            'cannot be defined twice!
+            IF CMD_USE$ <> "" THEN
+                CALL ErrorScreen("ERROR: /USE Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /USE parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
             
         CASE "/REQ"
+            'cannot be defined twice!
+            IF CMD_REQ$ <> "" THEN
+                CALL ErrorScreen("ERROR: /REQ Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /REQ parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
             
-            PRINT " ERROR: `/REQ` NOT IMPLEMENTED"
-            SLEEP
-            SYSTEM 1
+            CALL ErrorScreen("ERROR: /REQ Not Implemented")
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "/REQ parameter is not yet implemented, use play.bat instead."
+            CALL ErrorExit
             
         CASE "/32"
             'set the flag to favour 32-bit binaries (on 64-bit systems);
@@ -131,15 +146,13 @@ cmd_help:   PRINT ""
              "/HERETIC", "/HEXEN", "/STRIFE", "/FREEDOOM1", "/FREEDOOM2"
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN
-				CALL ErrorScreen
-                PRINT " ERROR: IWAD defined twice"
-				PRINT ""
-				PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-					"/IWAD parameter cannot be used twice. Note that the " _
-				  + "/DOOM, /DOOM2, /TNT, /PLUTONIA, /HERETIC, /HEXEN, " _
-				  + "/STRIFE, /FREEDOOM1 & /FREEDOOM2 switches are " _
-				  + "shortcuts to /IWAD so these cannot be combined with " _
-				  + "/IWAD, or each other."
+                CALL ErrorScreen("ERROR: IWAD Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "/IWAD parameter cannot be used twice. Note that the " _
+                  + "/DOOM, /DOOM2, /TNT, /PLUTONIA, /HERETIC, /HEXEN, " _
+                  + "/STRIFE, /CHEX, /FREEDOOM1 & /FREEDOOM2 switches are " _
+                  + "shortcuts to /IWAD so these cannot be combined with " _
+                  + "/IWAD, or each other."
                 CALL ErrorExit
             END IF
             
@@ -149,13 +162,13 @@ cmd_help:   PRINT ""
                     LET i = i + 1: LET CMD_IWAD$ = COMMAND$(i)
                     
                 CASE "/DOOM": LET CMD_IWAD$ = "DOOM"
-                CASE "/CHEX": LET CMD_IWAD$ = "CHEX"
                 CASE "/DOOM2": LET CMD_IWAD$ = "DOOM2"
                 CASE "/TNT": LET CMD_IWAD$ = "TNT"
                 CASE "/PLUTONIA": LET CMD_IWAD$ = "PLUTONIA"
                 CASE "/HERETIC": LET CMD_IWAD$ = "HERETIC"
                 CASE "/HEXEN": LET CMD_IWAD$ = "HEXEN"
                 CASE "/STRIFE": LET CMD_IWAD$ = "STRIFE1"
+                CASE "/CHEX": LET CMD_IWAD$ = "CHEX"
                 CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOOM1"
                 CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOOM2"
             END SELECT
@@ -163,46 +176,110 @@ cmd_help:   PRINT ""
             LET cmd_hasGame` = TRUE
             
         CASE "/PWAD"
+            'cannot be defined twice!
+            IF CMD_PWAD$ <> "" THEN
+                CALL ErrorScreen("ERROR: /PWAD Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /PWAD parameter cannot be defined more than once. " _
+                  + "If a mod has more than one file, use the files list " _
+                  + "(after '--') to include the file; for example:"
+                PRINT ""
+                PRINT "     launcher.exe /PWAD pwad1.wad -- pwad2.wad"
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/DEH"
+            'cannot be defined twice!
+            IF CMD_DEH$ <> "" THEN
+                CALL ErrorScreen("ERROR: /DEH Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /DEH parameter cannot be defined more than once. " _
+                  + "Only one DeHackEd file can be loaded at a time."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/BEX"
+            'cannot be defined twice!
+            IF CMD_BEX$ <> "" THEN
+                CALL ErrorScreen("ERROR: /BEX Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /BEX parameter cannot be defined more than once. " _
+                   + "Only one Boom-Extended DeHackEd file can be loaded at " _
+                   + "a time."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/DEMO"
+			'cannot be defined twice!
+            IF CMD_DEMO$ <> "" THEN
+                CALL ErrorScreen("ERROR: /DEMO Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /DEMO parameter cannot be defined more than once. " _
+                  + "Only one demo file can be played back at a time. "
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/WARP"
+			'cannot be defined twice!
+            IF CMD_WARP$ <> "" THEN
+                CALL ErrorScreen("ERROR: /WARP Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /WARP parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/SKILL"
+			'cannot be defined twice!
+            IF CMD_SKILL$ <> "" THEN
+                CALL ErrorScreen("ERROR: /SKILL Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /SKILL parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
         CASE "/CMPLVL"
+			'cannot be defined twice!
+            IF CMD_CMPLVL$ <> "" THEN
+                CALL ErrorScreen("ERROR: /CMPLVL Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /CMPLVL parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
             
         CASE "/EXEC"
+			'cannot be defined twice!
+            IF CMD_EXEC$ <> "" THEN
+                CALL ErrorScreen("ERROR: /EXEC Defined Twice")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The /EXEC parameter cannot be defined more than once."
+                CALL ErrorExit
+            END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
             'note that we will have to define a game using this
@@ -231,8 +308,7 @@ cmd_help:   PRINT ""
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
-                CALL ErrorScreen
-                PRINT " ERROR: Invalid parameters!"
+                CALL ErrorScreen("ERROR: Invalid parameters!")
                 CALL ErrorExit
             END IF
     END SELECT
