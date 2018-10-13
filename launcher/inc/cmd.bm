@@ -24,6 +24,7 @@ DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
 '2. commands to specify what game to play:
 '
 DIM SHARED CMD_IWAD$ '...IWAD to use
+DIM SHARED CMD_PRE$ '....optional files to load *before* the PWAD
 DIM SHARED CMD_PWAD$ '...optional PWAD to play
 DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
 DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
@@ -58,10 +59,10 @@ cmd_help:   PRINT ""
             PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
             PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
             PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
-            PRINT "              [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+            PRINT "              [/PRE <file>]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
             PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
             PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
-            PRINT "              [-- <files>...]"
+            PRINT "              [-- <file>*]"
             PRINT ""
             PRINT ""
             PRINT " Or press ";: COLOR AQUA: PRINT "[O]";: COLOR UI_FORECOLOR
@@ -144,8 +145,8 @@ cmd_help:   PRINT ""
             'on its own, this does not select an engine
             LET CMD_DEFAULT` = TRUE
             
-        CASE "/IWAD", "/DOOM", "/CHEX", "/DOOM2", "/TNT", "/PLUTONIA", _
-             "/HERETIC", "/HEXEN", "/STRIFE", "/FREEDOOM1", "/FREEDOOM2"
+        CASE "/IWAD", "/DOOM", "/DOOM2", "/TNT", "/PLUTONIA", "/HERETIC", _
+             "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2"
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN
                 CALL ErrorScreen("ERROR: IWAD Defined Twice")
@@ -174,6 +175,13 @@ cmd_help:   PRINT ""
                 CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOOM1"
                 CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOOM2"
             END SELECT
+            'note that we will have to define a game using this
+            LET cmd_hasGame` = TRUE
+        
+        CASE "/PRE"
+            'capture the parameter that follows and append it
+            'to the list of preload files. *CAN* be defined more than once
+            LET i = i + 1: LET CMD_PRE$ = CMD_PRE$ + COMMAND$(i) + ";"
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             
@@ -354,6 +362,7 @@ IF CMD_DEBUG` THEN
     IF CMD_SKILL$ <> "" THEN PRINT "  /SKILL  " + CMD_SKILL$
     IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
     IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
+	'TODO: print out PRE$ & FILE$ list
     PRINT ""
 END IF
 
@@ -372,7 +381,7 @@ IF cmd_hasGame` THEN
     'TODO: get game name / title from the IWAD meta-data
     
     CALL Games_Add ( _
-        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, "", CMD_PWAD$, _
+        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
         CMD_FILES$, CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 END IF
