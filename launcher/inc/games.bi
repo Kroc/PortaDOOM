@@ -11,7 +11,7 @@ TYPE Game
     
     type AS INTEGER '.......IWAD type
     pwad AS LONG '..........PWAD to play
-    auto AS LONG '..........files to load *before* the PWAD
+    pre AS LONG '...........list of files to load *before* the PWAD
     files AS LONG '.........list of additional files to include
     cmplvl AS _BYTE '.......can be negative to specify "not given"
     deh AS LONG '...........DeHackEd script to load

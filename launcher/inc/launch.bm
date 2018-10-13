@@ -241,9 +241,9 @@ END IF
 'games can also specify their own files to load
 'before the PWAD as sometimes load order is sensitive
 
-IF Games_Selected.auto > 0 THEN
+IF Games_Selected.pre > 0 THEN
     'read the first file from the list
-    LET auto_path$ = STRGET$(Games_Selected.auto)
+    LET auto_path$ = STRGET$(Games_Selected.pre)
     LET auto_path$ = WADs_Split$(auto_path$)
     DO
         'locate the file according to WAD search rules
@@ -260,7 +260,6 @@ IF Games_Selected.auto > 0 THEN
         LET auto_path$ = WADs_Split$("")
     LOOP WHILE auto_path$ <> ""
 END IF
-
 
 '-----------------------------------------------------------------------------
 '[07] PWAD:
