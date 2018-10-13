@@ -87,23 +87,12 @@ LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 '$INCLUDE:'inc\ui_init.bi'
 
 COLOR BLACK, UI_FORECOLOR
-''PRINT " " + PAD$("PortaDOOM Launcher", UI_SCREEN_WIDTH - 2) + " "
 LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
 LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
 
 COLOR UI_FORECOLOR, UI_BACKCOLOR
 VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
 CLS 2: PRINT ""
-
-''DIM SHARED glVersion$
-''
-''DIM start!
-''LET start! = TIMER
-''DO
-''LOOP UNTIL LEN(glVersion$) > 0 OR TIMER - start! > .3
-''
-''PRINT glVersion$
-''PRINT ""
 
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
@@ -163,11 +152,6 @@ launch:
 '$INCLUDE:'inc\launch.bm'
 
 '=============================================================================
-
-''SUB _GL
-''    IF LEN(glVersion$) > 0 THEN EXIT SUB
-''    LET glVersion$ = _glGetString(_GL_VERSION)
-''END SUB
 
 SUB PRINTWRAP_X(x~%%, w~%%, text$)
     DIM NEWPOS%

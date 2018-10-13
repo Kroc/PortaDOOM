@@ -53,6 +53,8 @@ DO WHILE COMMAND$(i) <> ""
 cmd_help:   PRINT ""
             PRINT " No default UI yet, use command-line parameters to invoke:"
             PRINT ""
+            PRINT " launcher.exe <ini-file>"
+            PRINT ""
             PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
             PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
             PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
@@ -222,7 +224,7 @@ cmd_help:   PRINT ""
             LET cmd_hasGame` = TRUE
             
         CASE "/DEMO"
-			'cannot be defined twice!
+            'cannot be defined twice!
             IF CMD_DEMO$ <> "" THEN
                 CALL ErrorScreen("ERROR: /DEMO Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
@@ -236,7 +238,7 @@ cmd_help:   PRINT ""
             LET cmd_hasGame` = TRUE
             
         CASE "/WARP"
-			'cannot be defined twice!
+            'cannot be defined twice!
             IF CMD_WARP$ <> "" THEN
                 CALL ErrorScreen("ERROR: /WARP Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
@@ -249,7 +251,7 @@ cmd_help:   PRINT ""
             LET cmd_hasGame` = TRUE
             
         CASE "/SKILL"
-			'cannot be defined twice!
+            'cannot be defined twice!
             IF CMD_SKILL$ <> "" THEN
                 CALL ErrorScreen("ERROR: /SKILL Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
@@ -262,7 +264,7 @@ cmd_help:   PRINT ""
             LET cmd_hasGame` = TRUE
             
         CASE "/CMPLVL"
-			'cannot be defined twice!
+            'cannot be defined twice!
             IF CMD_CMPLVL$ <> "" THEN
                 CALL ErrorScreen("ERROR: /CMPLVL Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
@@ -273,7 +275,7 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
             
         CASE "/EXEC"
-			'cannot be defined twice!
+            'cannot be defined twice!
             IF CMD_EXEC$ <> "" THEN
                 CALL ErrorScreen("ERROR: /EXEC Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
@@ -308,7 +310,22 @@ cmd_help:   PRINT ""
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
-                CALL ErrorScreen("ERROR: Invalid parameters!")
+                CALL ErrorScreen("ERROR: Invalid Parameters!")
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "Unrecognised parameter: '" + COMMAND$(i) + "'." _
+                  + "The first parameter may be an INI file, otherwise " _
+                  + "only switches are allowed until the '--' marker, " _
+                  + "where upon files can be listed."
+                PRINT ""
+                PRINT " launcher.exe <ini-file>"
+                PRINT ""
+                PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
+                PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
+                PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+                PRINT "              [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+                PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
+                PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
+                PRINT "              [-- <files>...]"
                 CALL ErrorExit
             END IF
     END SELECT
@@ -355,7 +372,7 @@ IF cmd_hasGame` THEN
     'TODO: get game name / title from the IWAD meta-data
     
     CALL Games_Add ( _
-        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, CMD_FILES$, _
-        CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
+        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PWAD$, "", _
+        CMD_FILES$, CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 END IF

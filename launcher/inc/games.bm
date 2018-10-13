@@ -59,6 +59,8 @@ readINI:
         LET ini_iwad$ = ReadSetting$("", ini_section$, "iwad")
         DIM ini_pwad$
         LET ini_pwad$ = ReadSetting$("", ini_section$, "pwad")
+        DIM ini_auto$
+        LET ini_auto$ = ReadSetting$("", ini_section$, "auto")
         DIM ini_files$
         LET ini_files$ = ReadSetting$("", ini_section$, "files")
         DIM ini_deh$
@@ -85,7 +87,7 @@ readINI:
         
         CALL Games_Add( _
             game_id$, ini_title$, ini_desc$, ini_cmplvl$, _
-            ini_iwad$, ini_pwad$, ini_files$, _
+            ini_iwad$, ini_pwad$, ini_auto$, ini_files$, _
             ini_deh$, ini_bex$, _
             ini_tags$, vid%, _
             ini_warp$, ini_skill$ _
@@ -95,8 +97,8 @@ END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, desc$, cmplvl$, iwad$, pwad$, files$, deh$, bex$, tags$, vid%, _
-    warp$, skill$ _
+    id$, title$, desc$, cmplvl$, iwad$, pwad$, auto$, files$, _
+    deh$, bex$, tags$, vid%, warp$, skill$ _
 )
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
@@ -204,6 +206,7 @@ skill:
     END IF
     
     LET Games(Games_Count).pwad = STRADD&(pwad$)
+    LET Games(Games_Count).auto = STRADD&(auto$)
     LET Games(Games_Count).files = STRADD&(files$)
     LET Games(Games_Count).deh = STRADD&(deh$)
     LET Games(Games_Count).bex = STRADD&(bex$)
