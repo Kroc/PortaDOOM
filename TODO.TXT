@@ -2,7 +2,7 @@
 ================================================================================
 [ ] LAUNCHER : Error messages:
  -  [ ] When no engines remain after filter
- -  [ ] When no game is defined on the command-line
+ -  [X] When no game is defined on the command-line
  -  [ ] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
 [ ] LAUNCHER : FreeDOOM substitution

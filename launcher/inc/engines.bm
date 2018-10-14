@@ -45,16 +45,31 @@ SUB Engines_Enumerate()
             LET ini_id$ = ReadSetting$("", "engines", STRINT$(ini_index%))
             IF ini_id$ = "" THEN EXIT DO
             
-            'increase the list of known engines
-            LET Engines_Count = Engines_Count + 1
-            REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
-            
-            LET Engines(Engines_Count).engine = STRADD&(LCASE$(ini_engine$))
-            LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
-            
             'read engine data from the INI file
             DIM ini_section$
             LET ini_section$ = "engine." + ini_id$
+            
+            'if this is a 32-bit machine, we can immediately
+            'throw away any 64-bit engines:
+            
+            'read the engine's CPU-type
+            DIM ini_bit$
+            LET ini_bit$ = ReadSetting$("", ini_section$, "bit")
+            
+            'executable architecture must be either 32 or 64-bit
+            IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
+                'TODO: output warning?
+                'default to 32-bit
+                LET ini_bit$ = "32"
+            END IF
+            
+            'if this is a 32-bit machine,
+            '(or the `/32` switch was used)
+            IF CPU_BIT = 32 THEN
+                'if the engine is 64-bit, skip it entirely
+                '-- it wouldn't run on this CPU
+                IF ini_bit$ = "64" THEN GOTO NextEngine
+            END IF
             
             DIM ini_title$
             LET ini_title$ = ReadSetting$("", ini_section$, "title")
@@ -64,8 +79,6 @@ SUB Engines_Enumerate()
             LET ini_exe$ = ReadSetting$("", ini_section$, "exe")
             DIM ini_ver$
             LET ini_ver$ = ReadSetting$("", ini_section$, "ver")
-            DIM ini_bit$
-            LET ini_bit$ = ReadSetting$("", ini_section$, "bit")
             DIM ini_vid$
             LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
             DIM ini_kin$
@@ -81,15 +94,15 @@ SUB Engines_Enumerate()
             DIM ini_cmd$
             LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
             
-            'executable architecture must be either 32 or 64-bit
-            IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
-                'TODO: output warning?
-                'default to 32-bit
-                LET ini_bit$ = "32"
-            END IF
-            
             'process the tag list
             CALL Tags_Add(ini_tags$)
+            
+            'increase the list of known engines
+            LET Engines_Count = Engines_Count + 1
+            REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
+            
+            LET Engines(Engines_Count).engine = STRADD&(LCASE$(ini_engine$))
+            LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
             
             LET Engines(Engines_Count).dir = STRADD&(dir$)
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
@@ -113,6 +126,7 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).auto = STRADD&(ini_auto$)
             LET Engines(Engines_Count).cmd = STRADD&(ini_cmd$)
             
+            NextEngine:
             LET ini_index% = ini_index% + 1
         LOOP
     NextFolder:

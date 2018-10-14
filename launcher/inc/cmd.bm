@@ -12,16 +12,23 @@ IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
 'with "play.bat" / "doom.bat", the previous launcher setup. commands come
 'in three varieties:
 '
-'1. commands for engine selection / compatibility:
+'1. commands that affect invocation:
+'
+DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
+DIM SHARED CMD_DEBUG` '..display detailed information
+DIM SHARED CMD_DEFAULT` 'should default config file be used?
+DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
+DIM SHARED CMD_QUIT` '...(ZDoom-based engines only), quit after launching
+'
+'2. commands for engine selection / compatibility:
 '
 DIM SHARED CMD_USE$ '....a specific engine-id to use
 DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
-DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
 DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
 
 DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
-
-'2. commands to specify what game to play:
+'
+'3. commands to specify what game to play:
 '
 DIM SHARED CMD_IWAD$ '...IWAD to use
 DIM SHARED CMD_PRE$ '....optional files to load *before* the PWAD
@@ -37,15 +44,6 @@ DIM SHARED CMD_FILES$ '..list of extra files to include
 
 DIM cmd_hasGame` '.......flag, define game from command-line
 
-'3. commands that affect invocation
-'
-DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
-DIM SHARED CMD_DEBUG` '..display detailed information
-DIM SHARED CMD_DEFAULT` 'should default config file be used?
-DIM SHARED CMD_QUIT` '...(ZDoom-based engines only), quit after launching
-
-LET CMD_DEBUG` = TRUE
-
 'FIXME: do not allow mix of command params & INI files?
 LET i = 1
 DO WHILE COMMAND$(i) <> ""
@@ -56,13 +54,14 @@ cmd_help:   PRINT ""
             PRINT ""
             PRINT " launcher.exe <ini-file>"
             PRINT ""
-            PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
-            PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
-            PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
-            PRINT "              [/PRE <file>]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
-            PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
-            PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
-            PRINT "              [-- <file>*]"
+            PRINT " launcher.exe [/WAIT] [/DEFAULT] [/32] [/QUIT]"
+            PRINT "     [/REQ <tags> | /USE <engine>] [/SW]"
+            PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
+            PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+            PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+            PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
+            PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
+            PRINT "     [-- <file>* ]"
             PRINT ""
             PRINT ""
             PRINT " Or press ";: COLOR AQUA: PRINT "[O]";: COLOR UI_FORECOLOR
@@ -82,10 +81,6 @@ cmd_help:   PRINT ""
             
             SYSTEM
             
-        CASE "/WAIT"
-            'keep launcher.exe on screen whilst the game runs
-            LET CMD_WAIT` = TRUE
-            
         CASE "/DEBUG"
             'enable debugging mode; will print
             'additional information to the screen
@@ -93,6 +88,23 @@ cmd_help:   PRINT ""
             'if this is the only param then nothing useful can be done,
             'print out the command-line usage
             IF _COMMANDCOUNT = 1 THEN GOTO cmd_help
+            
+        CASE "/WAIT"
+            'keep launcher.exe on screen whilst the game runs
+            LET CMD_WAIT` = TRUE
+            
+        CASE "/DEFAULT"
+            'set the flag to use the default config file;
+            'on its own, this does not select an engine
+            LET CMD_DEFAULT` = TRUE
+            
+        CASE "/32"
+            'set the flag to use 32-bit binaries (on 64-bit systems);
+            'on its own, this does not select an engine
+            LET CMD_32` = TRUE
+            'this is implemented simply by tricking the program
+            'into believing the machine is on a 32-bit CPU
+            LET CPU_BIT = 32
             
         CASE "/QUIT"
             'for ZDoom-based engines only (ZDoom, Zandronum, GZDoom);
@@ -130,20 +142,10 @@ cmd_help:   PRINT ""
                 "/REQ parameter is not yet implemented, use play.bat instead."
             CALL ErrorExit
             
-        CASE "/32"
-            'set the flag to favour 32-bit binaries (on 64-bit systems);
-            'on its own, this does not select an engine
-            LET CMD_32` = TRUE
-            
         CASE "/SW"
             'set the flag to favour software / 8-bit rendering;
             'on its own, this does not select an engine
             LET CMD_SW` = TRUE
-            
-        CASE "/DEFAULT"
-            'set the flag to use the default config file;
-            'on its own, this does not select an engine
-            LET CMD_DEFAULT` = TRUE
             
         CASE "/IWAD", "/DOOM", "/DOOM2", "/TNT", "/PLUTONIA", "/HERETIC", _
              "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2"
@@ -327,13 +329,14 @@ cmd_help:   PRINT ""
                 PRINT ""
                 PRINT " launcher.exe <ini-file>"
                 PRINT ""
-                PRINT " launcher.exe [/USE <engine>] [/WAIT] [/SW] [/32] [/DEFAULT]"
-                PRINT "              [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
-                PRINT "              | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
-                PRINT "              [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
-                PRINT "              [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
-                PRINT "              [/CMPLVL <number>] [/EXEC <file>] [/QUIT]"
-                PRINT "              [-- <files>...]"
+                PRINT " launcher.exe [/WAIT] [/DEFAULT] [/32] [/QUIT]"
+                PRINT "     [/REQ <tags> | /USE <engine>] [/SW]"
+                PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
+                PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+                PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+                PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
+                PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
+                PRINT "     [-- <file>* ]"
                 CALL ErrorExit
             END IF
     END SELECT
@@ -345,9 +348,9 @@ IF CMD_DEBUG` THEN
     IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT` OR CMD_QUIT`) THEN
         PRINT "  ";
         IF CMD_WAIT` THEN PRINT "/WAIT ";
+        IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
         IF CMD_32` THEN PRINT "/32 ";
         IF CMD_SW` THEN PRINT "/SW ";
-        IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
         IF CMD_QUIT` THEN PRINT "/QUIT ";
         PRINT ""
     END IF
@@ -362,7 +365,7 @@ IF CMD_DEBUG` THEN
     IF CMD_SKILL$ <> "" THEN PRINT "  /SKILL  " + CMD_SKILL$
     IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
     IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
-	'TODO: print out PRE$ & FILE$ list
+    'TODO: print out PRE$ & FILE$ list
     PRINT ""
 END IF
 
@@ -384,4 +387,11 @@ IF cmd_hasGame` THEN
         "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
         CMD_FILES$, CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
+ELSE
+    CALL ErrorScreen("ERROR: No Game Defined")
+    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+        "Not enough information has been provided to define a game to " _
+      + "launch. One or more of the parameters /IWAD, /PRE, /PWAD, /DEH, " _
+      + "/BEX, /DEMO, /SKILL or /EXEC are required to define a game."
+    CALL ErrorExit
 END IF
