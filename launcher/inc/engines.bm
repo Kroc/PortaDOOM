@@ -280,6 +280,11 @@ SUB Engines_Filter()
     'loop counter
     DIM i AS _UNSIGNED LONG
     
+    'reset the short-list
+    '(needed so that the user can go back and select a different game choice)
+    LET Engines_ListCount = 0
+    REDIM Engines_List(0) AS INTEGER
+    
     'test each engine against the game's requirements:
     FOR i = 1 TO UBOUND(Engines)
         'are we looking for a specific engine-id?
@@ -293,10 +298,10 @@ SUB Engines_Filter()
         END IF
         
         'is the binary compatible with this machine? (32 / 64-bit)
-        'if we are a 32-bit machine, we can't run 64-bit software
-        IF CPU_BIT = 32 AND Engines(i).bit = 64 THEN
-            _CONTINUE
-        END IF
+        'if we are a 32-bit machine, we can't run 64-bit software.
+        'this has already been handling in Engine enumeration,
+        'but I will leave this here for safety
+        IF CPU_BIT = 32 AND Engines(i).bit = 64 THEN _CONTINUE
         
         'does the game demand a certain colour-depth? (i.e. software mode)
         IF Games_Selected.vid > 0 THEN
@@ -335,9 +340,13 @@ SUB Engines_Filter()
     NEXT i
 
     IF Engines_ListCount = 0 THEN
-        PRINT " ERROR: NO ENGINE FOUND!"
-        SLEEP
-        SYSTEM 1
+        'TODO: we should do something useful here instead of erroring,
+        'such as offering an open choice of engines
+        CALL ErrorScreen("ERROR: No Compatible Engine Found")
+        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            "No compatible engine could be found for the game / user " _
+          + "requirements."
+        CALL ErrorExit
     END IF
     
     'print a list of the candidate engines:

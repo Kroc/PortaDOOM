@@ -205,7 +205,7 @@ skill:
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
     
-	LET Games(Games_Count).pre = STRADD&(pre$)
+    LET Games(Games_Count).pre = STRADD&(pre$)
     LET Games(Games_Count).pwad = STRADD&(pwad$)
     LET Games(Games_Count).files = STRADD&(files$)
     LET Games(Games_Count).deh = STRADD&(deh$)

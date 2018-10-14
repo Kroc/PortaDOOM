@@ -55,7 +55,7 @@ cmd_help:   PRINT ""
             PRINT " launcher.exe <ini-file>"
             PRINT ""
             PRINT " launcher.exe [/WAIT] [/DEFAULT] [/32] [/QUIT]"
-            PRINT "     [/REQ <tags> | /USE <engine>] [/SW]"
+            PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
             PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
             PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
             PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
@@ -136,11 +136,6 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
-            
-            CALL ErrorScreen("ERROR: /REQ Not Implemented")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-                "/REQ parameter is not yet implemented, use play.bat instead."
-            CALL ErrorExit
             
         CASE "/SW"
             'set the flag to favour software / 8-bit rendering;
@@ -330,7 +325,7 @@ cmd_help:   PRINT ""
                 PRINT " launcher.exe <ini-file>"
                 PRINT ""
                 PRINT " launcher.exe [/WAIT] [/DEFAULT] [/32] [/QUIT]"
-                PRINT "     [/REQ <tags> | /USE <engine>] [/SW]"
+                PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
                 PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
                 PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
                 PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
@@ -371,7 +366,7 @@ END IF
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
-    DIM title$, tags$, vid%, desc$
+    DIM title$, vid%, desc$
     
     'default to no hard requirement for rendering colour-depth 
     LET vid% = 0
@@ -385,7 +380,7 @@ IF cmd_hasGame` THEN
     
     CALL Games_Add ( _
         "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
-        CMD_FILES$, CMD_DEH$, CMD_BEX$, tags$, vid%, CMD_WARP$, CMD_SKILL$ _
+        CMD_FILES$, CMD_DEH$, CMD_BEX$, CMD_REQ$, vid%, CMD_WARP$, CMD_SKILL$ _
     )
 ELSE
     CALL ErrorScreen("ERROR: No Game Defined")

@@ -1,10 +1,11 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
 [ ] LAUNCHER : Error messages:
- -  [ ] When no engines remain after filter
+ -  [-] When no engines remain after filter
  -  [X] When no game is defined on the command-line
  -  [ ] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
+ -  [ ] Unrecognised tag
 [ ] LAUNCHER : FreeDOOM substitution
 [X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
@@ -15,7 +16,7 @@
 [X] LAUNCHER : Add DEH support for IWADs (CHEX, REKKRSA)
 [-] LAUNCHER : Implement game choice
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
-[ ] LAUNCHER : Implement `/REQ` to filter engines
+[-] LAUNCHER : Implement `/REQ` to filter engines
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
