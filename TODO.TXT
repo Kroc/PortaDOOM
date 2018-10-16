@@ -36,6 +36,9 @@
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
+ -  [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show
+        when inputting text, even when using a mouse"
+
 [ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 [ ] Include Crispy Doom music pack?
 [ ] IWADs: (including Skill Names)
@@ -45,10 +48,6 @@
     [ ] Adventures of Square (SHAREWARE)
     [ ] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)
-[-] DEH/BEX switch in play.bat & doom.bat to be able to auto-select DEH or BEX
-    based on engine support -- e.g. ALIENS TC
-[ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show when
-     inputting text, even when using a mouse"
 
 [P3] Content:
 ================================================================================
@@ -82,7 +81,7 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
-[ ] LAUNCHER : Add `auto` property to game INIs to load files *BEFORE* PWAD
+[X] LAUNCHER : Add `auto` property to game INIs to load files *BEFORE* PWAD
 [ ] DOOM Retro : Next version will support binding F12
 [X] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
     (for creating the default config files)
@@ -93,7 +92,7 @@
 [ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
 [ ] DOOM-Crusher : fail on "SOUND&MUSIC.WAD"
 [ ] Add engine compatibility checks for Windows version
- -  [ ] test engines on Windows XP
+ -  [-] test engines on Windows XP
  -  [ ] test engines on Windows Vista?
  -  [ ] test engines on Windows 7
  -  [ ] test engines on Windows 8?

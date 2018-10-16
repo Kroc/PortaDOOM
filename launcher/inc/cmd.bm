@@ -312,6 +312,7 @@ cmd_help:   PRINT ""
                 'attempt to locate the INI file
                 'FIXME: handle file-not-found error
                 Games_EnumerateINI(COMMAND$(i))
+                GOTO cmd_done
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
@@ -390,3 +391,5 @@ ELSE
       + "/BEX, /DEMO, /SKILL or /EXEC are required to define a game."
     CALL ErrorExit
 END IF
+
+cmd_done:

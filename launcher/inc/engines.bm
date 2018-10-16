@@ -35,6 +35,8 @@ SUB Engines_Enumerate()
         'read the global values
         DIM ini_engine$
         LET ini_engine$ = ReadSetting$(ini_path$, "global", "engine")
+        DIM ini_tier$
+        LET ini_tier$ = ReadSetting$(ini_path$, "global", "tier")
         DIM ini_rank$
         LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
         
@@ -105,13 +107,19 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
             
             LET Engines(Engines_Count).dir = STRADD&(dir$)
+            SELECT CASE LCASE$(ini_tier$)
+                CASE "high": LET Engines(Engines_Count).tier = TIER_HIGH
+                CASE "medium": LET Engines(Engines_Count).tier = TIER_MEDIUM
+                CASE "low": LET Engines(Engines_Count).tier = TIER_LOW
+                'TODO: none of the above?
+            END SELECT
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
             LET Engines(Engines_Count).title = STRADD&(ini_title$)
             LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
-            SELECT CASE ini_kin$
+            SELECT CASE UCASE$(ini_kin$)
                 CASE "X": LET Engines(Engines_Count).kin = KIN_X
                 CASE "V": LET Engines(Engines_Count).kin = KIN_V
                 CASE "B": LET Engines(Engines_Count).kin = KIN_B
@@ -164,82 +172,98 @@ SUB Engines_Enumerate()
             LET A% = i - 1
             LET B% = i
             
-            'compare the engine's rank:
-            DIM rA%, rB%
-            LET rA% = Engines(A%).rank
-            LET rB% = Engines(B%).rank
+            'compare the engine's tier:
+            DIM tA%, tB%
+            LET tA% = Engines(A%).tier
+            LET tB% = Engines(B%).tier
             
-            'if the engine below is of a higher rank, move it up
-            IF rB% > rA% THEN
+            'if the engine below is of a higher tier, move it up
+            IF tB% > tA% THEN
                 SWAP Engines(A%), Engines(B%)
                 LET sortCount% = sortCount% + 1
                 LET sorted% = FALSE
+            
+            ELSEIF tB% = tA% THEN
+                'compare the engine's rank:
+                DIM rA%, rB%
+                LET rA% = Engines(A%).rank
+                LET rB% = Engines(B%).rank
                 
-            ELSEIF rB% = rA% THEN
-                'compare the two engine's genealogy:
-                DIM kA%, kB%
-                LET kA% = Engines(A%).kin
-                LET kB% = Engines(B%).kin
-                
-                'if the engine below is of a higher genealogy, move it up
-                IF kB% > kA% THEN
+                'if the engine below is of a higher rank, move it up
+                IF rB% > rA% THEN
                     SWAP Engines(A%), Engines(B%)
                     LET sortCount% = sortCount% + 1
                     LET sorted% = FALSE
-                
-                ELSEIF kB% = kA% THEN
-                    'compare the names (alphabetically sort engines)
-                    DIM nA$, nB$
-                    LET nA$ = STRGET$(Engines(A%).engine)
-                    LET nB$ = STRGET$(Engines(B%).engine)
                     
-                    IF nB$ < nA$ THEN
+                ELSEIF rB% = rA% THEN
+                    'compare the two engine's genealogy:
+                    DIM kA%, kB%
+                    LET kA% = Engines(A%).kin
+                    LET kB% = Engines(B%).kin
+                    
+                    'if the engine below is of a higher genealogy, move it up
+                    IF kB% > kA% THEN
                         SWAP Engines(A%), Engines(B%)
                         LET sortCount% = sortCount% + 1
                         LET sorted% = FALSE
                     
-                    ELSEIF nB$ = nA$ THEN
-                        'compare the two engine's version numbers
-                        DIM vA%, vB%
-                        LET vA% = Engines(A%).ver
-                        LET vB% = Engines(B%).ver
+                    ELSEIF kB% = kA% THEN
+                        'compare the names (alphabetically sort engines)
+                        DIM nA$, nB$
+                        LET nA$ = STRGET$(Engines(A%).engine)
+                        LET nB$ = STRGET$(Engines(B%).engine)
                         
-                        IF vB% > vA% THEN
+                        IF nB$ < nA$ THEN
                             SWAP Engines(A%), Engines(B%)
                             LET sortCount% = sortCount% + 1
                             LET sorted% = FALSE
+                        
+                        ELSEIF nB$ = nA$ THEN
+                            'compare the two engine's version numbers
+                            DIM vA%, vB%
+                            LET vA% = Engines(A%).ver
+                            LET vB% = Engines(B%).ver
                             
-                        ELSEIF vB% = vA% THEN
-                            'compare renderer colour-depth
-                            DIM cA%, cB%
-                            LET cA% = Engines(A%).vid
-                            LET cB% = Engines(B%).vid
-                            
-                            IF cB% > cA% THEN
+                            IF vB% > vA% THEN
                                 SWAP Engines(A%), Engines(B%)
                                 LET sortCount% = sortCount% + 1
                                 LET sorted% = FALSE
-                            
-                            ELSEIF cB% = cA% THEN
-                                'compare executable CPU-type (32/64-bit)
-                                DIM xA%, xB%
-                                LET xA% = Engines(A%).bit
-                                LET xB% = Engines(B%).bit
                                 
-                                IF xB% > xA% THEN
+                            ELSEIF vB% = vA% THEN
+                                'compare renderer colour-depth
+                                DIM cA%, cB%
+                                LET cA% = Engines(A%).vid
+                                LET cB% = Engines(B%).vid
+                                
+                                IF cB% > cA% THEN
                                     SWAP Engines(A%), Engines(B%)
                                     LET sortCount% = sortCount% + 1
                                     LET sorted% = FALSE
+                                
+                                ELSEIF cB% = cA% THEN
+                                    'compare executable CPU-type (32/64-bit)
+                                    DIM xA%, xB%
+                                    LET xA% = Engines(A%).bit
+                                    LET xB% = Engines(B%).bit
+                                    
+                                    IF xB% > xA% THEN
+                                        SWAP Engines(A%), Engines(B%)
+                                        LET sortCount% = sortCount% + 1
+                                        LET sorted% = FALSE
+                                    END IF
                                 END IF
+                                
                             END IF
-                            
                         END IF
                     END IF
                 END IF
             END IF
         NEXT i
-        
     LOOP
+    
+    ''PRINT "SORT COUNT: " + STRINT$(sortCount%)
+    ''PRINT ""
+    ''SLEEP
     
     '-------------------------------------------------------------------------
     
@@ -349,15 +373,16 @@ SUB Engines_Filter()
         CALL ErrorExit
     END IF
     
-    'print a list of the candidate engines:
+    '''print a list of the candidate engines:
     ''PRINT ""
     ''PRINT "Candidate Engines:"
     ''PRINT "------------------"
-    ''FOR i = 1 TO Engines_ListCount
+    ''FOR i = Engines_ListCount TO 1 STEP -1
     ''    PRINT "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
     ''        + STRGET$(Engines(Engines_List(i)).title)
     ''NEXT i
     ''PRINT ""
+    ''SLEEP
     
     'select the 'best' engine by default
     CALL Engines_Select(Engines_List(1))

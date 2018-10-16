@@ -20,19 +20,24 @@ TYPE Engine
     type AS INTEGER
     
     'these are specifically named after the INI-file param names:
+    tier AS INTEGER '"high", "medium" or "low" tier
     rank AS INTEGER
-    title AS LONG '.on-screen "friendly name"
-    exe AS LONG '...executable file-name
-    ver AS INTEGER 'engine's version number
-    bit AS _BYTE '..executable architecture: 32 or 64 (bit)
-    vid AS _BYTE '..renderer colour-depth, i.e. 8, 24, 32
-    kin AS _BYTE '..a marker to indicate the engine's genealogy
-    cfg AS LONG '...slug to use in the config file-name
-    save AS LONG '..save-folder name to use
-    tags AS LONG '..comma-separated tags list the engine supports
-    auto AS LONG '..semi-colon separated list of WADs to always include
-    cmd AS LONG '...additional command-line parameters to use when launching
+    title AS LONG '..on-screen "friendly name"
+    exe AS LONG '....executable file-name
+    ver AS INTEGER '.engine's version number
+    bit AS _BYTE '...executable architecture: 32 or 64 (bit)
+    vid AS _BYTE '...renderer colour-depth, i.e. 8, 24, 32
+    kin AS _BYTE '...a marker to indicate the engine's genealogy
+    cfg AS LONG '....slug to use in the config file-name
+    save AS LONG '...save-folder name to use
+    tags AS LONG '...comma-separated tags list the engine supports
+    auto AS LONG '...semi-colon separated list of WADs to always include
+    cmd AS LONG '....additional command-line parameters to use when launching
 END TYPE
+
+CONST TIER_HIGH = 3 '.."high" tier engine, ideal for discrete GPUs
+CONST TIER_MEDIUM = 2 '"medium" tier engine, ideal for integrated graphics
+CONST TIER_LOW = 1 '..."low" tier engines that retain the classic DOOM style
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla
 CONST KIN_V = 2 '"vanilla" engine; i.e. Chocolate-Doom, Crispy-Doom
