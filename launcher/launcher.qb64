@@ -98,12 +98,12 @@ CLS 2: PRINT ""
 '-----------------------------------------------------------------------------
 '$INCLUDE:'inc\cmd.bm'
 
-'select game:
+select_game:
 '-----------------------------------------------------------------------------
 'if only one game is defined, we don't need to offer a choice
 IF Games_Count =1 THEN
     CALL Games_Select(1)
-    GOTO enumerate
+    GOTO select_engine
 END IF
 
 'present game selection UI:
@@ -127,32 +127,118 @@ FOR i = 1 TO Games_Count
     PRINT ""
 NEXT i
 
-choose:
 DO
+    'read the keyboard:
     LET key$ = INKEY$
-LOOP WHILE ISINT(key$) = FALSE
+    IF key$ = "" THEN _CONTINUE
+    
+    'is it a numeric key?
+    IF ISINT(key$) = FALSE THEN
+        'no, beep, and wait again
+        BEEP: _CONTINUE
+    END IF
+    
+    'is a number within range?
+    IF VAL(key$) > 0 AND VAL(key$) <= Games_Count THEN
+        'select that game
+        Games_Select(VAL(key$))
+        EXIT DO
+    END IF
+    
+    'not a valid number key
+    BEEP
+LOOP
 
-IF VAL(key$) < 1 OR VAL(key$) > Games_Count THEN
-    GOTO choose
-END IF
-
-Games_Select(VAL(key$))
-
-
-enumerate:
+select_engine:
 '-----------------------------------------------------------------------------
 'search through the "ports" folder for game engines and read in their details.
 'this also builds a set of look-up tables for cross-referencing tags with
 'games and engines so that we can filter out incompatible engines
 CALL Engines_Enumerate
+
+'filter the known engines according to the game
+'requirements and the user's preferences
 CALL Engines_Filter
 
+'if only one engine remains, no choice needed
+IF Engines_ListCount = 1 THEN
+    CALL Engines_Select(1)
+    GOTO launch
+END IF
+
+'try and pick out the best engine for the high / medium / low tier categories
+CALL Engines_SelectTiers
+
+'present engine selection UI:
+
+CLS 2
+PRINT ""
+COLOR UI_FORECOLOR
+PRINT " Select engine choice by pressing indicated number key:"
+PRINT ""
+
+IF Engines_SelectedHigh <> 0 THEN
+    COLOR AQUA: PRINT " [H] ";: COLOR YELLOW
+    PRINT TRUNCATE$( _
+        STRGET$(Engines(Engines_SelectedHigh).title), _
+        UI_SCREEN_WIDTH - 5 - 2 _
+    )
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
+    COLOR UI_FORECOLOR
+    PRINT ""
+END IF
+
+IF Engines_SelectedMedium <> 0 THEN
+    COLOR AQUA: PRINT " [M] ";: COLOR YELLOW
+    PRINT TRUNCATE$( _
+        STRGET$(Engines(Engines_SelectedMedium).title), _
+        UI_SCREEN_WIDTH - 5 - 2 _
+    )
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
+    COLOR UI_FORECOLOR
+    PRINT ""
+END IF
+
+IF Engines_SelectedLow <> 0 THEN
+    COLOR AQUA: PRINT " [L] ";: COLOR YELLOW
+    PRINT TRUNCATE$( _
+        STRGET$(Engines(Engines_SelectedLow).title), _
+        UI_SCREEN_WIDTH - 5 - 2 _
+    )
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
+    COLOR UI_FORECOLOR
+    PRINT ""
+END IF
+
+DO
+    'read the keyboard:
+    LET key$ = INKEY$
+    IF key$ = "" THEN _CONTINUE
+    
+    SELECT CASE UCASE$(key$)
+        CASE "H"
+            IF Engines_SelectedHigh = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedHigh)
+            EXIT DO
+        CASE "M"
+            IF Engines_SelectedMedium = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedMedium)
+            EXIT DO
+        CASE "L"
+            IF Engines_SelectedLow = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedLow)
+            EXIT DO
+        CASE ELSE
+            'not a valid key
+            BEEP
+    END SELECT
+LOOP
+
 launch:
-'=============================================================================
+'-----------------------------------------------------------------------------
 '$INCLUDE:'inc\launch.bm'
 
 '=============================================================================
-
 SUB PRINTWRAP_X(x~%%, w~%%, text$)
     DIM NEWPOS%
     LET NEWPOS% = PRINTWRAP%(x~%%, CSRLIN, w~%%,text$)

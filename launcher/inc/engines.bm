@@ -107,14 +107,19 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
             
             LET Engines(Engines_Count).dir = STRADD&(dir$)
+            
             SELECT CASE LCASE$(ini_tier$)
                 CASE "high": LET Engines(Engines_Count).tier = TIER_HIGH
                 CASE "medium": LET Engines(Engines_Count).tier = TIER_MEDIUM
                 CASE "low": LET Engines(Engines_Count).tier = TIER_LOW
                 'TODO: none of the above?
             END SELECT
+            
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
             LET Engines(Engines_Count).title = STRADD&(ini_title$)
+            
+            LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
+            
             LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
@@ -150,6 +155,7 @@ SUB Engines_Enumerate()
     'renderers, which is the 'best' that we should default to?
     
     'the criteria for the 'best' engine is:
+    '- prefer engines in higher tiers, i.e. "high" > "medium" > "low"
     '- prefer engines with a higher rank
     '- prefer engines in a higher genealogy, i.e. "G" > "Z" > "B" > "V"
     '- prefer newer versions over older versions
@@ -321,6 +327,9 @@ SUB Engines_Filter()
             END IF
         END IF
         
+        'does the engine support the type of IWAD given?
+        IF (IWADs_Selected.type AND Engines(i).type) = 0 THEN _CONTINUE
+        
         'is the binary compatible with this machine? (32 / 64-bit)
         'if we are a 32-bit machine, we can't run 64-bit software.
         'this has already been handling in Engine enumeration,
@@ -353,9 +362,10 @@ SUB Engines_Filter()
         
         '---------------------------------------------------------------------
         
-        'all tags have been checked, meaning that this engine is a candidate
+        'all requirements have been checked,
+        'meaning that this engine is a candidate
         LET EngineTags(i, 0) = 1
-        'add this tag to the valid short-list
+        'add this engine to the valid short-list
         LET Engines_ListCount = Engines_ListCount + 1
         REDIM _PRESERVE Engines_List(1 TO Engines_ListCount) AS INTEGER
         LET Engines_List(Engines_ListCount) = i
@@ -379,13 +389,40 @@ SUB Engines_Filter()
     ''PRINT "------------------"
     ''FOR i = Engines_ListCount TO 1 STEP -1
     ''    PRINT "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
-    ''        + STRGET$(Engines(Engines_List(i)).title)
+    ''        + STRGET$(Engines(Engines_List(i)).title), STRINT$(Engines(Engines_List(i)).type)
+    ''    IF i MOD 24 = 0 THEN SLEEP
     ''NEXT i
     ''PRINT ""
     ''SLEEP
     
     'select the 'best' engine by default
     CALL Engines_Select(Engines_List(1))
+END SUB
+
+'============================================================================
+SUB Engines_SelectTiers()
+    'walk down the list of sort-listed engines and pick out the first
+    'of each low, medium, and high-tiered engines
+    
+    'reset the results
+    LET Engines_SelectedLow = 0
+    LET Engines_SelectedMedium = 0
+    LET Engines_SelectedHigh = 0
+    
+    'Engines_Filter must have been called,
+    'or there will not be any engines to examine!
+    IF Engines_ListCount = 0 THEN EXIT SUB
+    
+    DIM i AS LONG
+    FOR i = Engines_ListCount TO 1 STEP - 1
+        'which type of engine is this?
+        SELECT CASE Engines(Engines_List(i)).tier
+            CASE TIER_LOW: LET Engines_SelectedLow = Engines_List(i)
+            CASE TIER_MEDIUM: LET Engines_SelectedMedium = Engines_List(i)
+            CASE TIER_HIGH: LET Engines_SelectedHigh = Engines_List(i)
+        END SELECT
+    NEXT i
+    
 END SUB
 
 'selects an engine for use, populating the 'selected engine' variables
@@ -403,9 +440,6 @@ FUNCTION Engines_GetType%(type$)
     IF INSTR(type$, ",DOOM,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM
     END IF
-    IF INSTR(type$, ",CHEX,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_CHEX
-    END IF
     IF INSTR(type$, ",DOOM2,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM2
     END IF
@@ -417,6 +451,9 @@ FUNCTION Engines_GetType%(type$)
     END IF
     IF INSTR(type$, ",STRIFE,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_STRIFE
+    END IF
+    IF INSTR(type$, ",CHEX,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_CHEX
     END IF
     IF INSTR(type$, ",DOOM64,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM64

@@ -100,17 +100,17 @@ readINI:
     DIM iwad_name$
     LET iwad_name$ = ReadSetting$("", "iwad", "name")
     
-    DIM iwad_type%%
-    SELECT CASE ReadSetting$(path$, "iwad", "type")
-        CASE "DOOM": LET iwad_type%% = TYPE_DOOM
-        CASE "CHEX": LET iwad_type%% = TYPE_CHEX
-        CASE "DOOM2": LET iwad_type%% = TYPE_DOOM2
-        CASE "HERETIC": LET iwad_type%% = TYPE_HERETIC
-        CASE "HEXEN": LET iwad_type%% = TYPE_HEXEN
-        CASE "STRIFE": LET iwad_type%% = TYPE_STRIFE
-        CASE "DOOM64": LET iwad_type%% = TYPE_DOOM64
+    DIM iwad_type%
+    SELECT CASE UCASE$(ReadSetting$(path$, "iwad", "type"))
+        CASE "DOOM": LET iwad_type% = TYPE_DOOM
+        CASE "DOOM2": LET iwad_type% = TYPE_DOOM2
+        CASE "HERETIC": LET iwad_type% = TYPE_HERETIC
+        CASE "HEXEN": LET iwad_type% = TYPE_HEXEN
+        CASE "STRIFE": LET iwad_type% = TYPE_STRIFE
+		CASE "CHEX": LET iwad_type% = TYPE_CHEX
+        CASE "DOOM64": LET iwad_type% = TYPE_DOOM64
         CASE ELSE
-            LET iwad_type%% = TYPE_DOOM2
+            LET iwad_type% = TYPE_DOOM2
     END SELECT
     
     DIM iwad_title$
@@ -142,7 +142,7 @@ readINI:
     LET iwad_skill9$ = ReadSetting$("", "iwad.skills", "9")
     
     LET IWADs_EnumerateINI& = IWADs_Add&( _
-        iwad_id$, iwad_name$, iwad_type%%, _
+        iwad_id$, iwad_name$, iwad_type%, _
         iwad_title$, iwad_path$, iwad_deh$, iwad_tags$, _
         iwad_skill1$, iwad_skill2$, iwad_skill3$, iwad_skill4$, _
         iwad_skill5$, iwad_skill6$, iwad_skill7$, iwad_skill8$, _
@@ -152,7 +152,7 @@ END FUNCTION
 
 '=============================================================================
 FUNCTION IWADs_Add&( _
-    id$, name$, game%, title$, path$, deh$, tags$, _
+    id$, name$, game_type%, title$, path$, deh$, tags$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
 )
@@ -167,7 +167,7 @@ FUNCTION IWADs_Add&( _
     
     LET IWADs(IWADs_Count).id = STRADD&(id$)
     LET IWADs(IWADs_Count).name = STRADD&(name$)
-    LET IWADs(IWADs_Count).type = game%
+    LET IWADs(IWADs_Count).type = game_type%
     LET IWADs(IWADs_Count).title = STRADD&(title$)
     LET IWADs(IWADs_Count).path = STRADD&(path$)
 	LET IWADs(IWADs_Count).deh = STRADD&(deh$)
