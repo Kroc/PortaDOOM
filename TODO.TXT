@@ -9,14 +9,14 @@
 [ ] LAUNCHER : FreeDOOM substitution
 [X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
-[ ] LAUNCHER : Enforce IWAD <> Engine Type, e.g. don't allow DOOM.WAD on Hexen
+[X] LAUNCHER : Enforce IWAD <> Engine Type, e.g. don't allow DOOM.WAD on Hexen
 
 [P1] Required: (cannot be released until fixed)
 ================================================================================
 [X] LAUNCHER : Add DEH support for IWADs (CHEX, REKKRSA)
-[-] LAUNCHER : Implement game choice
+[X] LAUNCHER : Implement game choice
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
-[-] LAUNCHER : Implement `/REQ` to filter engines
+[X] LAUNCHER : Implement `/REQ` to filter engines
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
@@ -81,7 +81,9 @@
 
 [P4] Technical Debt: (making forward progress easier)
 ================================================================================
-[X] LAUNCHER : Add `auto` property to game INIs to load files *BEFORE* PWAD
+[?] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
+[ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions
+[X] LAUNCHER : Add `pre` property to game INIs to load files *BEFORE* PWAD
 [ ] DOOM Retro : Next version will support binding F12
 [X] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
     (for creating the default config files)

@@ -14,7 +14,7 @@ SUB ErrorScreen(title$)
     
     'set up the scrolling zone
     COLOR YELLOW, RED
-    VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
+    VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
     CLS 2: PRINT ""
     
     'print the error title

@@ -75,6 +75,8 @@ SUB Engines_Enumerate()
             
             DIM ini_title$
             LET ini_title$ = ReadSetting$("", ini_section$, "title")
+            DIM ini_desc$
+            LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
             DIM ini_type$
             LET ini_type$ = ReadSetting$("", ini_section$, "type")
             DIM ini_exe$
@@ -116,14 +118,16 @@ SUB Engines_Enumerate()
             END SELECT
             
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
+            
             LET Engines(Engines_Count).title = STRADD&(ini_title$)
+            LET Engines(Engines_Count).desc = STRADD&(ini_desc$)
             
             LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
-            
             LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
+            
             SELECT CASE UCASE$(ini_kin$)
                 CASE "X": LET Engines(Engines_Count).kin = KIN_X
                 CASE "V": LET Engines(Engines_Count).kin = KIN_V
@@ -133,6 +137,7 @@ SUB Engines_Enumerate()
                 CASE ELSE
                     LET Engines(Engines_Count).kin = 0
             END SELECT
+            
             LET Engines(Engines_Count).cfg = STRADD&(ini_cfg$)
             LET Engines(Engines_Count).save = STRADD&(ini_save$)
             LET Engines(Engines_Count).tags = STRADD&(ini_tags$)

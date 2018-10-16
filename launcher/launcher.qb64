@@ -91,7 +91,7 @@ LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
 LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
 
 COLOR UI_FORECOLOR, UI_BACKCOLOR
-VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 2
+VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
 CLS 2: PRINT ""
 
 'process command line / enumerate games:
@@ -118,11 +118,10 @@ PRINT ""
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "] ";: COLOR YELLOW
     PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
-    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
+    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
     COLOR UI_FORECOLOR
     IF Games(i).desc <> 0 THEN
-        DIM A
-        LET A = PRINTWRAP%(2, CSRLIN, UI_SCREEN_WIDTH - 2, STRGET$(Games(i).desc))
+        CALL PRINTWRAP_X(2, UI_SCREEN_WIDTH - 2, STRGET$(Games(i).desc))
     END IF
     PRINT ""
 NEXT i
@@ -173,41 +172,85 @@ CALL Engines_SelectTiers
 
 CLS 2
 PRINT ""
-COLOR UI_FORECOLOR
-PRINT " Select engine choice by pressing indicated number key:"
+COLOR WHITE
+PRINT " We've selected the engines compatible with your computer and the chosen game;"
+PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
+''COLOR YELLOW: PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_DBL_H)
+''PRINT ""
+COLOR UI_FORECOLOR
+
+DIM H%
 
 IF Engines_SelectedHigh <> 0 THEN
-    COLOR AQUA: PRINT " [H] ";: COLOR YELLOW
+    COLOR UI_FORECOLOR
+    PRINT " Recommended for high-end computers with a dedicated graphics card (GPU):"
+    PRINT ""
+    COLOR AQUA: PRINT "    [H]: ";: COLOR YELLOW
     PRINT TRUNCATE$( _
         STRGET$(Engines(Engines_SelectedHigh).title), _
         UI_SCREEN_WIDTH - 5 - 2 _
     )
-    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
-    COLOR UI_FORECOLOR
+    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
+    PRINT ""
+    IF Engines(Engines_SelectedHigh).desc <> 0 THEN
+        COLOR LIME
+        LET H% = PRINTWRAP%( _
+            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
+            STRGET$(Engines(Engines_SelectedHigh).desc) _
+        )
+        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
+        NEXT i
+    END IF
     PRINT ""
 END IF
 
 IF Engines_SelectedMedium <> 0 THEN
-    COLOR AQUA: PRINT " [M] ";: COLOR YELLOW
+    COLOR UI_FORECOLOR
+    PRINT " Recommended for low-end computers or laptops with integrated graphics:"
+    PRINT ""
+    COLOR AQUA: PRINT "    [M]: ";: COLOR YELLOW
     PRINT TRUNCATE$( _
         STRGET$(Engines(Engines_SelectedMedium).title), _
         UI_SCREEN_WIDTH - 5 - 2 _
     )
-    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
-    COLOR UI_FORECOLOR
+    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
+    PRINT ""
+    IF Engines(Engines_SelectedMedium).desc <> 0 THEN
+        COLOR LIME
+        LET H% = PRINTWRAP%( _
+            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
+            STRGET$(Engines(Engines_SelectedMedium).desc) _
+        )
+        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
+        NEXT i
+    END IF
     PRINT ""
 END IF
 
 IF Engines_SelectedLow <> 0 THEN
-    COLOR AQUA: PRINT " [L] ";: COLOR YELLOW
+    COLOR UI_FORECOLOR
+    PRINT " Recommended if you prefer the original chunky pixel graphics:"
+    PRINT ""
+    COLOR AQUA: PRINT "    [L]: ";: COLOR YELLOW
     PRINT TRUNCATE$( _
         STRGET$(Engines(Engines_SelectedLow).title), _
         UI_SCREEN_WIDTH - 5 - 2 _
     )
-    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, &HC4)
-    COLOR UI_FORECOLOR
+    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
     PRINT ""
+    IF Engines(Engines_SelectedLow).desc <> 0 THEN
+        COLOR LIME
+        LET H% = PRINTWRAP%( _
+            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
+            STRGET$(Engines(Engines_SelectedLow).desc) _
+        )
+        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
+        NEXT i
+    END IF
 END IF
 
 DO

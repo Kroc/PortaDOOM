@@ -23,6 +23,7 @@ TYPE Engine
     tier AS INTEGER '"high", "medium" or "low" tier
     rank AS INTEGER
     title AS LONG '..on-screen "friendly name"
+    desc AS LONG '...short description of the engine
     exe AS LONG '....executable file-name
     ver AS INTEGER '.engine's version number
     bit AS _BYTE '...executable architecture: 32 or 64 (bit)
