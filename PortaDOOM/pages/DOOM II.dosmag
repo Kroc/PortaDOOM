@@ -1,5 +1,5 @@
 $NAV=Commercial DOOM
-$KEY:P=SHELL:play.bat /DOOM2
+$KEY:P=SHELL:launcher.exe /DOOM2
 $KEY:W=URL:https://doomwiki.org/wiki/Doom_II
 
 :DOOM II

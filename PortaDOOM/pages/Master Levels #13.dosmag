@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Virgil's Lead
-$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\VIRGIL.WAD /WARP 3
+$KEY:P=SHELL:launcher.exe /DOOM2 /PWAD MASTER\VIRGIL.WAD /WARP 3
 $KEY:T=SHELL:wads\MASTER\VIRGIL.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP03:_Virgil%27s_Lead_(Master_Levels)
 

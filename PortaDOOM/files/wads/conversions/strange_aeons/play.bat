@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM /REQ zdoom /PWAD strangeaeonsexp.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ zdoom /PWAD strangeaeonsexp.pk3

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD CHORD2.WAD /WARP 26
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD CHORD2.WAD /WARP 26

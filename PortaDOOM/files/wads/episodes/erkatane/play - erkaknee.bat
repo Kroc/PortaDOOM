@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\play.bat" /DOOM2 /PWAD erkaknee.wad /DEH erkatane.deh

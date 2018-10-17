@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\play.bat" /FREEDOOM1 /REQ vanilla
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /FREEDOOM1

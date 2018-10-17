@@ -120,7 +120,7 @@ ECHO     [E]  Cacowards: 5 Years of Doom
 ECHO:
 ECHO     [P]  PSX DOOM TC
 ECHO:
-ECHO     [X]  Launcher only ^(doom.bat / play.bat^)
+ECHO     [X]  Launcher only
 ECHO:
 
 SET "$="

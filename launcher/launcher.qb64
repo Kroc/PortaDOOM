@@ -161,7 +161,7 @@ CALL Engines_Filter
 
 'if only one engine remains, no choice needed
 IF Engines_ListCount = 1 THEN
-    CALL Engines_Select(1)
+    CALL Engines_Select(Engines_List(1))
     GOTO launch
 END IF
 

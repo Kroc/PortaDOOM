@@ -1,6 +1,5 @@
 $NAV=Classical
-$KEY:P=SHELL:wads\episodes\erkatane\play - erkatane.bat
-$KEY:Q=SHELL:wads\episodes\erkatane\play - erkaknee.bat
+$KEY:P=SHELL:wads\episodes\erkatane\play.bat
 $KEY:T=SHELL:wads\episodes\erkatane\erkatane.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
 
@@ -15,10 +14,6 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
 
 $KEY:1=GOTO:DTWiD Series #02
 The main goal was to create a vanilla classic episode themed on Doom2 techbases. I was as well influenced by *[1] d2twid* and 1994-1996 maps regarding to the very raw detailing employed. The maps are small to mid in size and the average enemy count is around 100 per map. There is virtually no texture alignment except for some doors and switches, taking advantage of the sector height sometimes for that work, and I made no use of support2/3 to separate different textures, using just angles as in some iwad maps. On the other hand I wanted very consistent themes so I used just 40 different textures per map as a constraint, including those for doors and keymarks as I realised some iwad maps use very few textures too.
-
-:-------------------------------------------------------------------------------
-:[Q] Play "Erkaknee" (see description below)
-:-------------------------------------------------------------------------------
 
 This Wad additionally comes with erkaknee.wad a complete conversion of the main episode to the "knee deep in the dead" theme. I used just the shareware flats and textures, just as I did with the *favillesco episode 1*, so no crates, compohso, gray, support3 or other textures we often see in E1 styled maps, nothing wrong with that, but I wanted to keep the vibe as close as possible to the original episode, although these layouts weren't conceived as E1 maps. The conversion process was painfully surgical, I replaced all the flats and textures manually -not by a software 1 to 1 replace tool- because I had to rethink from scratch what E1 textures and flats would suit the preexisting rooms.
 

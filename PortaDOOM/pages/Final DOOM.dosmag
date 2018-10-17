@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
-$KEY:T=SHELL:play.bat /TNT
-$KEY:P=SHELL:play.bat /PLUTONIA
+$KEY:T=SHELL:launcher.exe /TNT
+$KEY:P=SHELL:launcher.exe /PLUTONIA
 $KEY:W=URL:https://doomwiki.org/wiki/Final_Doom
 
 :Final DOOM

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD venom.wad
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD venom.wad

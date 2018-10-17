@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\..\play.bat" /DOOM /REQ zdoom /PWAD DTWID-LE.wad /DEH DTWID-LE.deh
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM /REQ zdoom /PWAD DTWID-LE.wad /DEH DTWID-LE.deh

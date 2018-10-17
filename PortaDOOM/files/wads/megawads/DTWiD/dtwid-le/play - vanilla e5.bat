@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\play.bat" /DOOM /REQ choco /PWAD DTWID-E5.wad /DEH DTWID-E5.deh /WARP 1.1
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM /REQ choco /PWAD DTWID-E5.wad /DEH DTWID-E5.deh /WARP 1.1

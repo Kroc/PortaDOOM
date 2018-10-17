@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ vanilla /PWAD MORDETH.WAD /DEH MORDETH.DEH -- MDEUGRAP.WAD
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /PWAD MORDETH.WAD /DEH MORDETH.DEH -- MDEUGRAP.WAD

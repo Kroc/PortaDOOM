@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /IWAD SQUARE1 /REQ gzdoom
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /IWAD SQUARE1 /REQ gzdoom

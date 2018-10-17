@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM2 /REQ gzdoom /PWAD boa_c2.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ gzdoom /PWAD boa_c2.pk3

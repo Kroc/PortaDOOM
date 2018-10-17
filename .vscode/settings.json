@@ -36,10 +36,11 @@
 		"PortaDOOM/files/saves/*/": true,
 		"PortaDOOM/files/saves/.gitignore": false,
 	},
-	"spellright.language": "en",
+	"spellright.language": [
+		"en"
+	],
 	"spellright.documentTypes": [
 		"markdown",
-		"latex",
-		"plaintext"
+		"latex"
 	]
 }

@@ -325,10 +325,10 @@ SUB Engines_Filter()
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-            IF STRGET$(Engines(i).engine) <> LCASE$(CMD_USE$) THEN
-                IF STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) THEN
-                    _CONTINUE
-                END IF
+            IF STRGET$(Engines(i).engine) <> LCASE$(CMD_USE$) _
+               AND STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) _
+            THEN
+                _CONTINUE
             END IF
         END IF
         
@@ -377,7 +377,7 @@ SUB Engines_Filter()
         
     NextEngine:
     NEXT i
-
+    
     IF Engines_ListCount = 0 THEN
         'TODO: we should do something useful here instead of erroring,
         'such as offering an open choice of engines
@@ -400,8 +400,6 @@ SUB Engines_Filter()
     ''PRINT ""
     ''SLEEP
     
-    'select the 'best' engine by default
-    CALL Engines_Select(Engines_List(1))
 END SUB
 
 '============================================================================

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & CALL "..\..\..\play.bat" /DOOM /REQ no-limit /PWAD AA_E1.wad /DEH AA_E1.deh
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ no-limit /PWAD AA_E1.wad /DEH AA_E1.deh

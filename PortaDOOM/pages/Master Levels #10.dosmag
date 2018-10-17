@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=Subspace
-$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\SUBSPACE.WAD /WARP 1
+$KEY:P=SHELL:launcher.exe /DOOM2 /PWAD MASTER\SUBSPACE.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\SUBSPACE.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Subspace_(Master_Levels)
 

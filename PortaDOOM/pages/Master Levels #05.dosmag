@@ -1,6 +1,6 @@
 $NAV=Commercial DOOM
 $TITLE=The Combine
-$KEY:P=SHELL:play.bat /DOOM2 /PWAD MASTER\COMBINE.WAD /WARP 1
+$KEY:P=SHELL:launcher.exe /DOOM2 /PWAD MASTER\COMBINE.WAD /WARP 1
 $KEY:T=SHELL:wads\MASTER\COMBINE.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_The_Combine_(Master_Levels)
 
