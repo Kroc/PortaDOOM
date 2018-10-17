@@ -1,5 +1,7 @@
 @ECHO OFF
 
+SET "LAUNCHER=..\launcher.exe /WAIT"
+
 :menu
 CLS
 ECHO:
@@ -10,10 +12,10 @@ ECHO    [B] chocolate-heretic ^(with setup^)
 ECHO    [C] chocolate-hexen ^(with setup^)
 ECHO    [D] chocolate-strife ^(with setup^)
 ECHO    [E] crispy-doom ^(with setup^)
+ECHO    [F] DOOM Retro
 ECHO:
-ECHO    [F] DOOM 64 EX
+ECHO    [G] DOOM 64 EX
 ECHO:
-ECHO    [G] DOOM Retro
 ECHO    [H] PRBoom+ hardware            [I] PRBoom+ software
 ECHO:
 ECHO    [J] Zandronum v2.x
@@ -28,19 +30,19 @@ SET CHOICE=?
 SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
-IF /I "%CHOICE%" == "A" ..\launcher.exe /WAIT     /USE choco-doom-setup    /IWAD DOOM
-IF /I "%CHOICE%" == "B" ..\launcher.exe /WAIT     /USE choco-heretic-setup /IWAD HERETIC
-IF /I "%CHOICE%" == "C" ..\launcher.exe /WAIT     /USE choco-hexen-setup   /IWAD HEXEN
-IF /I "%CHOICE%" == "D" ..\launcher.exe /WAIT     /USE choco-strife-setup  /IWAD STRIFE1
-IF /I "%CHOICE%" == "E" ..\launcher.exe /WAIT     /USE crispy-doom-setup   /IWAD DOOM2
-IF /I "%CHOICE%" == "F" ..\launcher.exe /WAIT     /USE doom64ex            /IWAD DOOM64
-IF /I "%CHOICE%" == "G" ..\launcher.exe /WAIT     /USE doom-retro          /IWAD DOOM2
-IF /I "%CHOICE%" == "H" ..\launcher.exe /WAIT     /USE prboom-plus         /IWAD DOOM2
-IF /I "%CHOICE%" == "I" ..\launcher.exe /WAIT /SW /USE prboom-plus         /IWAD DOOM2
-IF /I "%CHOICE%" == "J" ..\launcher.exe /WAIT     /USE zandronum-2         /IWAD DOOM2
-IF /I "%CHOICE%" == "K" ..\launcher.exe /WAIT     /USE zandronum-3         /IWAD DOOM2
+IF /I "%CHOICE%" == "A" %LAUNCHER% /USE choco-doom-setup    /IWAD DOOM
+IF /I "%CHOICE%" == "B" %LAUNCHER% /USE choco-heretic-setup /IWAD HERETIC
+IF /I "%CHOICE%" == "C" %LAUNCHER% /USE choco-hexen-setup   /IWAD HEXEN
+IF /I "%CHOICE%" == "D" %LAUNCHER% /USE choco-strife-setup  /IWAD STRIFE1
+IF /I "%CHOICE%" == "E" %LAUNCHER% /USE crispy-doom-setup   /IWAD DOOM2
+IF /I "%CHOICE%" == "F" %LAUNCHER% /USE doom-retro          /IWAD DOOM2
+IF /I "%CHOICE%" == "G" %LAUNCHER% /USE doom64ex            /IWAD DOOM64
+IF /I "%CHOICE%" == "H" %LAUNCHER% /USE prboom-plus-hw      /IWAD DOOM2
+IF /I "%CHOICE%" == "I" %LAUNCHER% /USE prboom-plus-sw      /IWAD DOOM2
+IF /I "%CHOICE%" == "J" %LAUNCHER% /USE zandronum-2         /IWAD DOOM2
+IF /I "%CHOICE%" == "K" %LAUNCHER% /USE zandronum-3         /IWAD DOOM2
 IF /I "%CHOICE%" == "L" GOTO :gzdoom
-IF /I "%CHOICE%" == "Z" ..\launcher.exe /WAIT     /USE zdoom               /IWAD DOOM2
+IF /I "%CHOICE%" == "Z" %LAUNCHER% /USE zdoom               /IWAD DOOM2
 
 GOTO :menu
 
@@ -49,57 +51,52 @@ CLS
 ECHO:
 ECHO  GZDoom:
 ECHO:
-ECHO    [0] GZDoom v3.6.x : 32-bit      [1] GZDoom v3.6.x : 64-bit
-ECHO    [2] GZDoom v3.5.x : 32-bit      [3] GZDoom v3.5.x : 64-bit
-ECHO    [A] GZDoom v3.4.x : 32-bit      [B] GZDoom v3.4.x : 64-bit
-ECHO    [C] GZDoom v3.3.x : 32-bit      [D] GZDoom v3.3.x : 64-bit
-ECHO    [E] GZDoom v3.2.x : 32-bit      [F] GZDoom v3.2.x : 64-bit
-ECHO    [G] GZDoom v2.4.x : 32-bit      [H] GZDoom v2.4.x : 64-bit
-ECHO    [I] GZDoom v2.3.x : 32-bit      [J] GZDoom v2.3.x : 64-bit
-ECHO    [K] GZDoom v2.2.x : 32-bit      [L] GZDoom v2.2.x : 64-bit
-ECHO    [M] GZDoom v2.1.x : 32-bit      [N] GZDoom v2.1.x : 64-bit
+ECHO    [0] GZDoom Current 32-bit     [1] GZDoom Current 64-bit
 ECHO:
-ECHO    [O] GZDoom v2.0.x               [P] GZDoom v1.9.x
-ECHO    [Q] GZDoom v1.8.x               [R] GZDoom v1.7.x
-ECHO    [S] GZDoom v1.6.x               [T] GZDoom v1.5.x
-ECHO    [U] GZDoom v1.4.x               [V] GZDoom v1.3.x
-ECHO    [W] GZDoom v1.2.x               [X] GZDoom v1.1.x
-ECHO    [Y] GZDoom v1.0.x
+ECHO    [A] GZDoom v1.0               [B] GZDoom v1.1
+ECHO    [C] GZDoom v1.2               [D] GZDoom v1.3
+ECHO    [E] GZDoom v1.4               [F] GZDoom v1.5
+ECHO    [G] GZDoom v1.6               [H] GZDoom v1.7
+ECHO    [I] GZDoom v1.8               [J] GZDoom v1.9
+ECHO:
+ECHO    [K] GZDoom v2.0               [L] GZDoom v2.1
+ECHO    [M] GZDoom v2.2               [N] GZDoom v2.3
+ECHO    [O] GZDoom v2.4
+ECHO:
+ECHO    [P] GZDoom v3.2               [Q] GZDoom v3.3
+ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
+ECHO    [T] GZDoom v3.6
 ECHO:
 
 SET CHOICE=?
 SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
-IF /I "%CHOICE%" == "0" ..\launcher.exe /WAIT /32 /USE gzdoom-36 /IWAD DOOM2
-IF /I "%CHOICE%" == "1" ..\launcher.exe /WAIT     /USE gzdoom-36 /IWAD DOOM2
-IF /I "%CHOICE%" == "2" ..\launcher.exe /WAIT /32 /USE gzdoom-35 /IWAD DOOM2
-IF /I "%CHOICE%" == "3" ..\launcher.exe /WAIT     /USE gzdoom-35 /IWAD DOOM2
-IF /I "%CHOICE%" == "A" ..\launcher.exe /WAIT /32 /USE gzdoom-34 /IWAD DOOM2
-IF /I "%CHOICE%" == "B" ..\launcher.exe /WAIT     /USE gzdoom-34 /IWAD DOOM2
-IF /I "%CHOICE%" == "C" ..\launcher.exe /WAIT /32 /USE gzdoom-33 /IWAD DOOM2
-IF /I "%CHOICE%" == "D" ..\launcher.exe /WAIT     /USE gzdoom-33 /IWAD DOOM2
-IF /I "%CHOICE%" == "E" ..\launcher.exe /WAIT /32 /USE gzdoom-32 /IWAD DOOM2
-IF /I "%CHOICE%" == "F" ..\launcher.exe /WAIT     /USE gzdoom-32 /IWAD DOOM2
-IF /I "%CHOICE%" == "G" ..\launcher.exe /WAIT /32 /USE gzdoom-24 /IWAD DOOM2
-IF /I "%CHOICE%" == "H" ..\launcher.exe /WAIT     /USE gzdoom-24 /IWAD DOOM2
-IF /I "%CHOICE%" == "I" ..\launcher.exe /WAIT /32 /USE gzdoom-23 /IWAD DOOM2
-IF /I "%CHOICE%" == "J" ..\launcher.exe /WAIT     /USE gzdoom-23 /IWAD DOOM2
-IF /I "%CHOICE%" == "K" ..\launcher.exe /WAIT /32 /USE gzdoom-22 /IWAD DOOM2
-IF /I "%CHOICE%" == "L" ..\launcher.exe /WAIT     /USE gzdoom-22 /IWAD DOOM2
-IF /I "%CHOICE%" == "M" ..\launcher.exe /WAIT /32 /USE gzdoom-21 /IWAD DOOM2
-IF /I "%CHOICE%" == "N" ..\launcher.exe /WAIT     /USE gzdoom-21 /IWAD DOOM2
 
-IF /I "%CHOICE%" == "O" ..\launcher.exe /WAIT     /USE gzdoom-20 /IWAD DOOM2
-IF /I "%CHOICE%" == "P" ..\launcher.exe /WAIT     /USE gzdoom-19 /IWAD DOOM2
-IF /I "%CHOICE%" == "Q" ..\launcher.exe /WAIT     /USE gzdoom-18 /IWAD DOOM2
-IF /I "%CHOICE%" == "R" ..\launcher.exe /WAIT     /USE gzdoom-17 /IWAD DOOM2
-IF /I "%CHOICE%" == "S" ..\launcher.exe /WAIT     /USE gzdoom-16 /IWAD DOOM2
-IF /I "%CHOICE%" == "T" ..\launcher.exe /WAIT     /USE gzdoom-15 /IWAD DOOM2
-IF /I "%CHOICE%" == "U" ..\launcher.exe /WAIT     /USE gzdoom-14 /IWAD DOOM2
-IF /I "%CHOICE%" == "V" ..\launcher.exe /WAIT     /USE gzdoom-13 /IWAD DOOM2
-IF /I "%CHOICE%" == "W" ..\launcher.exe /WAIT     /USE gzdoom-12 /IWAD DOOM2
-IF /I "%CHOICE%" == "X" ..\launcher.exe /WAIT     /USE gzdoom-11 /IWAD DOOM2
-IF /I "%CHOICE%" == "Y" ..\launcher.exe /WAIT     /USE gzdoom-10 /IWAD DOOM2
+IF /I "%CHOICE%" == "0" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2 /32
+IF /I "%CHOICE%" == "1" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2
+
+IF /I "%CHOICE%" == "A" %LAUNCHER% /USE gzdoom-10 /IWAD DOOM2
+IF /I "%CHOICE%" == "B" %LAUNCHER% /USE gzdoom-11 /IWAD DOOM2
+IF /I "%CHOICE%" == "C" %LAUNCHER% /USE gzdoom-12 /IWAD DOOM2
+IF /I "%CHOICE%" == "D" %LAUNCHER% /USE gzdoom-13 /IWAD DOOM2
+IF /I "%CHOICE%" == "E" %LAUNCHER% /USE gzdoom-14 /IWAD DOOM2
+IF /I "%CHOICE%" == "F" %LAUNCHER% /USE gzdoom-15 /IWAD DOOM2
+IF /I "%CHOICE%" == "G" %LAUNCHER% /USE gzdoom-16 /IWAD DOOM2
+IF /I "%CHOICE%" == "H" %LAUNCHER% /USE gzdoom-17 /IWAD DOOM2
+IF /I "%CHOICE%" == "I" %LAUNCHER% /USE gzdoom-18 /IWAD DOOM2
+IF /I "%CHOICE%" == "J" %LAUNCHER% /USE gzdoom-19 /IWAD DOOM2
+
+IF /I "%CHOICE%" == "K" %LAUNCHER% /USE gzdoom-20 /IWAD DOOM2
+IF /I "%CHOICE%" == "L" %LAUNCHER% /USE gzdoom-21 /IWAD DOOM2
+IF /I "%CHOICE%" == "M" %LAUNCHER% /USE gzdoom-22 /IWAD DOOM2
+IF /I "%CHOICE%" == "N" %LAUNCHER% /USE gzdoom-23 /IWAD DOOM2
+IF /I "%CHOICE%" == "O" %LAUNCHER% /USE gzdoom-24 /IWAD DOOM2
+
+IF /I "%CHOICE%" == "P" %LAUNCHER% /USE gzdoom-32 /IWAD DOOM2
+IF /I "%CHOICE%" == "Q" %LAUNCHER% /USE gzdoom-33 /IWAD DOOM2
+IF /I "%CHOICE%" == "R" %LAUNCHER% /USE gzdoom-34 /IWAD DOOM2
+IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-35 /IWAD DOOM2
+IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-36 /IWAD DOOM2
 
 GOTO :gzdoom
