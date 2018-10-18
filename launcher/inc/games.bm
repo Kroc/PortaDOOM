@@ -76,6 +76,25 @@ readINI:
         DIM ini_skill$
         LET ini_skill$ = ReadSetting$("", ini_section$, "skill")
         
+        DIM ini_skill1$
+        LET ini_skill1$ = ReadSetting$("", ini_section$, "skill1")
+        DIM ini_skill2$
+        LET ini_skill2$ = ReadSetting$("", ini_section$, "skill2")
+        DIM ini_skill3$
+        LET ini_skill3$ = ReadSetting$("", ini_section$, "skill3")
+        DIM ini_skill4$
+        LET ini_skill4$ = ReadSetting$("", ini_section$, "skill4")
+        DIM ini_skill5$
+        LET ini_skill5$ = ReadSetting$("", ini_section$, "skill5")
+        DIM ini_skill6$
+        LET ini_skill6$ = ReadSetting$("", ini_section$, "skill6")
+        DIM ini_skill7$
+        LET ini_skill7$ = ReadSetting$("", ini_section$, "skill7")
+        DIM ini_skill8$
+        LET ini_skill8$ = ReadSetting$("", ini_section$, "skill8")
+        DIM ini_skill9$
+        LET ini_skill9$ = ReadSetting$("", ini_section$, "skill9")
+        
         DIM vid%
         SELECT CASE ini_vid$
             CASE "8": LET vid% = 8
@@ -90,7 +109,10 @@ readINI:
             ini_iwad$, ini_pre$, ini_pwad$, ini_files$, _
             ini_deh$, ini_bex$, _
             ini_tags$, vid%, _
-            ini_warp$, ini_skill$ _
+            ini_warp$, ini_skill$, _
+            ini_skill1$, ini_skill2$, ini_skill3$, ini_skill4$, _
+            ini_skill5$, ini_skill6$, ini_skill7$, ini_skill8$, _
+            ini_skill9$ _
         )
     LOOP
 END SUB
@@ -98,7 +120,9 @@ END SUB
 '=============================================================================
 SUB Games_Add ( _
     id$, title$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
-    deh$, bex$, tags$, vid%, warp$, skill$ _
+    deh$, bex$, tags$, vid%, warp$, skill$, _
+    skill1$, skill2$, skill3$, skill4$, skill5$, _
+    skill6$, skill7$, skill8$, skill9$ _
 )
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
@@ -214,6 +238,16 @@ skill:
     
     'don't allow vid% to be undefined
     LET Games(Games_Count).vid = vid%
+    
+    LET Games(Games_Count).skill1 = STRADD&(skill1$)
+    LET Games(Games_Count).skill2 = STRADD&(skill2$)
+    LET Games(Games_Count).skill3 = STRADD&(skill3$)
+    LET Games(Games_Count).skill4 = STRADD&(skill4$)
+    LET Games(Games_Count).skill5 = STRADD&(skill5$)
+    LET Games(Games_Count).skill6 = STRADD&(skill6$)
+    LET Games(Games_Count).skill7 = STRADD&(skill7$)
+    LET Games(Games_Count).skill8 = STRADD&(skill8$)
+    LET Games(Games_Count).skill9 = STRADD&(skill9$)
 END SUB
 
 '=============================================================================

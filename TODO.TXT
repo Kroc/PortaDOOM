@@ -18,6 +18,7 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
+[X] LAUNCHER : Swift Death uses its own skill names
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard

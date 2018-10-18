@@ -420,10 +420,50 @@ OR Games_Selected.warp_m >= 0 THEN
         PRINT "         (Press numbered key)"
         PRINT ""
         
+        'if the PWAD provides its own skill-levels, use those:
+        IF Games_Selected.skill1 <> 0 THEN
+            'work through the list of IWAD skill-levels (up to 9)
+            IF Games_Selected.skill1 > 0 THEN
+                PRINT "         [1]  ";
+                PRINT STRGET$(Games_Selected.skill1)
+            END IF
+            IF Games_Selected.skill2 > 0 THEN
+                PRINT "         [2]  ";
+                PRINT STRGET$(Games_Selected.skill2)
+            END IF
+            IF Games_Selected.skill3 > 0 THEN
+                PRINT "         [3]  ";
+                PRINT STRGET$(Games_Selected.skill3)
+            END IF
+            IF Games_Selected.skill4 > 0 THEN
+                PRINT "         [4]  ";
+                PRINT STRGET$(Games_Selected.skill4)
+            END IF
+            IF Games_Selected.skill5 > 0 THEN
+                PRINT "         [5]  ";
+                PRINT STRGET$(Games_Selected.skill5)
+            END IF
+            IF Games_Selected.skill6 > 0 THEN
+                PRINT "         [6]  ";
+                PRINT STRGET$(Games_Selected.skill6)
+            END IF
+            IF Games_Selected.skill7 > 0 THEN
+                PRINT "         [7]  ";
+                PRINT STRGET$(Games_Selected.skill7)
+            END IF
+            IF Games_Selected.skill8 > 0 THEN
+                PRINT "         [8]  ";
+                PRINT STRGET$(Games_Selected.skill8)
+            END IF
+            IF Games_Selected.skill9 > 0 THEN
+                PRINT "         [9]  ";
+                PRINT STRGET$(Games_Selected.skill9)
+            END IF
+            
         'get the list of skill-levels from the IWAD meta-data;
         'if there is none, default to DOOM's descriptions
-        IF Games_Selected.iwad = 0 _
-        OR IWADs_Selected.skill1 = 0 _
+        ELSEIF Games_Selected.iwad = 0 _
+            OR IWADs_Selected.skill1 = 0 _
         THEN
             PRINT "         [1]  I'm Too Young To Die"
             PRINT "         [2]  Hey, Not Too Rough"
