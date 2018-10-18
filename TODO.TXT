@@ -7,38 +7,31 @@
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
 [ ] LAUNCHER : FreeDOOM substitution
-[X] LAUNCHER : TNT, PLUTONIA IWAD meta-data
 [ ] PSX DOOM apparently not working on GZDoom >3.2
-[X] LAUNCHER : Enforce IWAD <> Engine Type, e.g. don't allow DOOM.WAD on Hexen
 
-[P1] Required: (cannot be released until fixed)
+[P1] Blocking: (cannot be released until fixed)
 ================================================================================
-[X] LAUNCHER : Add DEH support for IWADs (CHEX, REKKRSA)
-[X] LAUNCHER : Implement game choice
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
-[X] LAUNCHER : Implement `/REQ` to filter engines
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
-[X] LAUNCHER : Add FreeDOOM 1 & 2 IWAD meta-data
 
-[P2] Feature Enhancements:
+[P2] Required: (lose-ends that need tying up)
 ================================================================================
-[ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
-[?] LAUNCHER : Detect OpenGL version and filter engines accordingly
-    (currently an issue with this in QB64)
-[X] LAUNCHER : Add `-shotdir`, supported by a number of engines
-[ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
-[ ] Add Eternity engine (required somewhere in the Cacowards)
-[X] Expose GZDoom's software modes through their "porta-doom.ini" files?
- -  [X] will require custom params to be set from the ini file
- -  [X] GZDoom v3.4+ now uses `vid_rendermode` CVAR
+[ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
  -  [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show
         when inputting text, even when using a mouse"
 
+[P3] Feature Enhancements:
+================================================================================
+[ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
+[?] LAUNCHER : Detect OpenGL version and filter engines accordingly
+    (currently an issue with this in QB64)
+[ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
+[ ] Add Eternity engine (required somewhere in the Cacowards)
 [ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 [ ] Include Crispy Doom music pack?
 [ ] IWADs: (including Skill Names)
@@ -49,7 +42,7 @@
     [ ] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)
 
-[P3] Content:
+[P4] Content:
 ================================================================================
 [ ] Move 3 Heures series to Community
 [ ] WolfenDOOM package
@@ -79,7 +72,7 @@
 [-] Community Projects page ...
 [ ] Vanilla page ...
 
-[P4] Technical Debt: (making forward progress easier)
+[P5] Technical Debt: (making forward progress easier)
 ================================================================================
 [?] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
 [ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions
@@ -101,7 +94,7 @@
 [ ] "SHELL" action improvements:
  -  [ ] add an action for launching files, rather than executing commands,
         i.e. verify the file exists before launching
- -  [ ] use `_DONTWAIT`
+ -  [X] use `_DONTWAIT`
  -  [ ] change to the directory of the file being launched.
         this will do away with the need for "%~dp0" in "play.bat" files
 [ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256

@@ -4,8 +4,6 @@ $KEY:P=SHELL:wads\megawads\DTWiD\dtwid-le\play.bat
 $KEY:T=SHELL:wads\megawads\DTWiD\dtwid-le\DTWID-LE.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
 $KEY:1=PAGE:#01
-$KEY:V=SHELL:wads\megawads\DTWiD\dtwid-le\play - vanilla e1-4.bat
-$KEY:5=SHELL:wads\megawads\DTWiD\dtwid-le\play - vanilla e5.bat
 $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 $KEY:N=GOTO:No End in Sight
@@ -21,19 +19,13 @@ $KEY:N=GOTO:No End in Sight
 
 Six episodes of classic Doom maps, originally candidates for last year's *[1] "Doom the Way Id Did"*, arranged in an episodic format.
 
-	(NOTE: *[P] Play* will launch DTWID-LE in GZDoom.\\See below to play with a vanilla engine)
+*DTWID* was a long but fruitful journey, with somewhere around a hundred map submissions in total. Given the strictness of the rules, most of the maps cut were not done so for reasons of quality. On their own they're quite solid maps, deserving their own showcase. This collection, while not 100% complete, contains the vast majority of submissions to the project.
 
-DTWID was a long but fruitful journey, with somewhere around a hundred map submissions in total. Given the strictness of the rules, most of the maps cut were not done so for reasons of quality. On their own they're quite solid maps, deserving their own showcase. This collection, while not 100% complete, contains the vast majority of submissions to the project.
-
-Episodes 1-3 are an alternate take on the idea of Doom the Way Id Did, three sets of maps arranged to mimic id's original episodic styles. Several maps in these sets were very close contenders to the main project, excluded only because of withdrawals or episode length limits. You may be hard-pressed to find a difference in quality!
+Episodes 1-3 are an alternate take on the idea of *Doom the Way Id Did*, three sets of maps arranged to mimic id's original episodic styles. Several maps in these sets were very close contenders to the main project, excluded only because of withdrawals or episode length limits. You may be hard-pressed to find a difference in quality!
 
 Episode 4 follows partially in the same vein, with several maps that mimic the style of id's "Thy Flesh Consumed" and hell-themed levels filling out the rest of the roster.
 
-*[V] Play E1-E4 in Vanilla (chocolate-doom)
-
 Episode 5, "Base Instinct", is a "bonus" episode of E1/E2-style maps, and can be thought of as an alternate take on the Phobos / Deimos story. The episode can be accessed in the main game menu with either ZDoom or Eternity. For vanilla or other ports, running DTWID-E5.wad will load E5's maps in place of E1's.
-
-*[5] Play E5 in Vanilla (chocolate-doom)
 
 Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate wad is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
 

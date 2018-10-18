@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM /REQ choco /PWAD DTWID-LE.wad /DEH DTWID-LE.deh
