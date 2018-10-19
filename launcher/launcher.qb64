@@ -172,32 +172,28 @@ CALL Engines_SelectTiers
 
 CLS 2
 PRINT ""
-COLOR WHITE
+COLOR UI_FORECOLOR
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
-''COLOR YELLOW: PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_DBL_H)
-''PRINT ""
-COLOR UI_FORECOLOR
 
 DIM H%
 
-IF Engines_SelectedHigh <> 0 THEN
-    COLOR UI_FORECOLOR
-    PRINT " Recommended for high-end computers with a dedicated graphics card (GPU):"
-    PRINT ""
-    COLOR AQUA: PRINT "    [H]: ";: COLOR YELLOW
+IF Engines_SelectedUltra <> 0 THEN
+	COLOR AQUA: PRINT " [U] ULTRA: ";: COLOR YELLOW
+	PRINT "For high-end computers with dedicated graphics (GPU)"
+    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
+    COLOR WHITE
     PRINT TRUNCATE$( _
-        STRGET$(Engines(Engines_SelectedHigh).title), _
-        UI_SCREEN_WIDTH - 5 - 2 _
+        "    " + STRGET$(Engines(Engines_SelectedUltra).title), _
+        UI_SCREEN_WIDTH - 5 _
     )
-    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
     PRINT ""
-    IF Engines(Engines_SelectedHigh).desc <> 0 THEN
+    IF Engines(Engines_SelectedUltra).desc <> 0 THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedHigh).desc) _
+            STRGET$(Engines(Engines_SelectedUltra).desc) _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
@@ -206,22 +202,21 @@ IF Engines_SelectedHigh <> 0 THEN
     PRINT ""
 END IF
 
-IF Engines_SelectedMedium <> 0 THEN
-    COLOR UI_FORECOLOR
-    PRINT " Recommended for low-end computers or laptops with integrated graphics:"
-    PRINT ""
-    COLOR AQUA: PRINT "    [M]: ";: COLOR YELLOW
+IF Engines_SelectedFast <> 0 THEN
+    COLOR AQUA: PRINT " [F] FAST: ";: COLOR YELLOW
+    PRINT "For low-end computers or laptops with integrated graphics"
+    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
+    COLOR WHITE
     PRINT TRUNCATE$( _
-        STRGET$(Engines(Engines_SelectedMedium).title), _
-        UI_SCREEN_WIDTH - 5 - 2 _
+        "    " + STRGET$(Engines(Engines_SelectedFast).title), _
+        UI_SCREEN_WIDTH - 5 _
     )
-    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
     PRINT ""
-    IF Engines(Engines_SelectedMedium).desc <> 0 THEN
+    IF Engines(Engines_SelectedFast).desc <> 0 THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedMedium).desc) _
+            STRGET$(Engines(Engines_SelectedFast).desc) _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
@@ -230,22 +225,21 @@ IF Engines_SelectedMedium <> 0 THEN
     PRINT ""
 END IF
 
-IF Engines_SelectedLow <> 0 THEN
-    COLOR UI_FORECOLOR
-    PRINT " Recommended if you prefer the original chunky pixel graphics:"
-    PRINT ""
-    COLOR AQUA: PRINT "    [L]: ";: COLOR YELLOW
+IF Engines_SelectedRetro <> 0 THEN
+    COLOR AQUA: PRINT " [R] RETRO: ";: COLOR YELLOW
+    PRINT "If you prefer the original chunky pixel graphics"
+    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
+    COLOR WHITE
     PRINT TRUNCATE$( _
-        STRGET$(Engines(Engines_SelectedLow).title), _
-        UI_SCREEN_WIDTH - 5 - 2 _
+        "    " + STRGET$(Engines(Engines_SelectedRetro).title), _
+        UI_SCREEN_WIDTH - 5 _
     )
-    ''PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
     PRINT ""
-    IF Engines(Engines_SelectedLow).desc <> 0 THEN
+    IF Engines(Engines_SelectedRetro).desc <> 0 THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedLow).desc) _
+            STRGET$(Engines(Engines_SelectedRetro).desc) _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
@@ -259,17 +253,17 @@ DO
     IF key$ = "" THEN _CONTINUE
     
     SELECT CASE UCASE$(key$)
-        CASE "H"
-            IF Engines_SelectedHigh = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedHigh)
+        CASE "U"
+            IF Engines_SelectedUltra = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedUltra)
             EXIT DO
-        CASE "M"
-            IF Engines_SelectedMedium = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedMedium)
+        CASE "F"
+            IF Engines_SelectedFast = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedFast)
             EXIT DO
-        CASE "L"
-            IF Engines_SelectedLow = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedLow)
+        CASE "R"
+            IF Engines_SelectedRetro = 0 THEN BEEP: _CONTINUE
+            CALL Engines_Select(Engines_SelectedRetro)
             EXIT DO
         CASE ELSE
             'not a valid key

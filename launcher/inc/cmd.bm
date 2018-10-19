@@ -339,8 +339,6 @@ cmd_help:   PRINT ""
     LET i = i + 1
 LOOP
 
-LET CMD_DEBUG` = TRUE
-
 'display the parameters used if debug is enabled
 IF CMD_DEBUG` THEN
     IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT` OR CMD_QUIT`) THEN
@@ -396,3 +394,5 @@ ELSE
 END IF
 
 cmd_done:
+
+LET CMD_DEBUG` = TRUE

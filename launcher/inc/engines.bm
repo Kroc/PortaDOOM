@@ -111,9 +111,9 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).dir = STRADD&(dir$)
             
             SELECT CASE LCASE$(ini_tier$)
-                CASE "high": LET Engines(Engines_Count).tier = TIER_HIGH
-                CASE "medium": LET Engines(Engines_Count).tier = TIER_MEDIUM
-                CASE "low": LET Engines(Engines_Count).tier = TIER_LOW
+                CASE "ultra": LET Engines(Engines_Count).tier = TIER_ULTRA
+                CASE "fast": LET Engines(Engines_Count).tier = TIER_FAST
+                CASE "retro": LET Engines(Engines_Count).tier = TIER_RETRO
                 'TODO: none of the above?
             END SELECT
             
@@ -160,7 +160,7 @@ SUB Engines_Enumerate()
     'renderers, which is the 'best' that we should default to?
     
     'the criteria for the 'best' engine is:
-    '- prefer engines in higher tiers, i.e. "high" > "medium" > "low"
+    '- prefer engines in higher tiers, i.e. "ultra" > "fast" > "retro"
     '- prefer engines with a higher rank
     '- prefer engines in a higher genealogy, i.e. "G" > "Z" > "B" > "V"
     '- prefer newer versions over older versions
@@ -408,9 +408,9 @@ SUB Engines_SelectTiers()
     'of each low, medium, and high-tiered engines
     
     'reset the results
-    LET Engines_SelectedLow = 0
-    LET Engines_SelectedMedium = 0
-    LET Engines_SelectedHigh = 0
+    LET Engines_SelectedUltra = 0
+    LET Engines_SelectedFast = 0
+    LET Engines_SelectedRetro = 0
     
     'Engines_Filter must have been called,
     'or there will not be any engines to examine!
@@ -420,9 +420,9 @@ SUB Engines_SelectTiers()
     FOR i = Engines_ListCount TO 1 STEP - 1
         'which type of engine is this?
         SELECT CASE Engines(Engines_List(i)).tier
-            CASE TIER_LOW: LET Engines_SelectedLow = Engines_List(i)
-            CASE TIER_MEDIUM: LET Engines_SelectedMedium = Engines_List(i)
-            CASE TIER_HIGH: LET Engines_SelectedHigh = Engines_List(i)
+            CASE TIER_ULTRA: LET Engines_SelectedUltra = Engines_List(i)
+            CASE TIER_FAST: LET Engines_SelectedFast = Engines_List(i)
+            CASE TIER_RETRO: LET Engines_SelectedRetro = Engines_List(i)
         END SELECT
     NEXT i
     

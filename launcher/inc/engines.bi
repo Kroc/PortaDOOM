@@ -36,9 +36,9 @@ TYPE Engine
     cmd AS LONG '....additional command-line parameters to use when launching
 END TYPE
 
-CONST TIER_HIGH = 3 '.."high" tier engine, ideal for discrete GPUs
-CONST TIER_MEDIUM = 2 '"medium" tier engine, ideal for integrated graphics
-CONST TIER_LOW = 1 '..."low" tier engines that retain the classic DOOM style
+CONST TIER_ULTRA = 3 '"high" tier engine, ideal for discrete GPUs
+CONST TIER_FAST = 2 '."medium" tier engine, ideal for integrated graphics
+CONST TIER_RETRO = 1 '"low" tier engines that retain the classic DOOM style
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla
 CONST KIN_V = 2 '"vanilla" engine; i.e. Chocolate-Doom, Crispy-Doom
@@ -63,6 +63,7 @@ DIM SHARED Engines_Current AS LONG
 'lookup of engine details via `Engines(Engines_Current)...` every time
 DIM SHARED Engines_Selected AS Engine
 
-DIM SHARED Engines_SelectedLow AS LONG
-DIM SHARED Engines_SelectedMedium AS LONG
-DIM SHARED Engines_SelectedHigh AS LONG
+DIM SHARED Engines_SelectedUltra AS LONG
+DIM SHARED Engines_SelectedFast AS LONG
+DIM SHARED Engines_SelectedRetro AS LONG
+
