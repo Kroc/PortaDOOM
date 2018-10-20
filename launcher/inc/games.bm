@@ -1,16 +1,14 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'   Games_EnumerateINI(INIFile$)
+'   Games_EnumerateINI(ini_file$)
 '   Games_Add(...)
 '   Games_Select(game%)
 
 'given an INI file, read game definitions from it
 '=============================================================================
-SUB Games_EnumerateINI (INIFile$)
-    'locate the INI file:
-    '-------------------------------------------------------------------------
+SUB Games_EnumerateINI (ini_file$)
     DIM path$
-    LET path$ = INIFile$
+    LET path$ = ini_file$
     
     'is the given path absolute?
     IF Paths_IsAbsolute(path$) THEN
@@ -21,16 +19,19 @@ SUB Games_EnumerateINI (INIFile$)
         
         'check the 'current' directory
         '-- i.e. the directory the launcher was called *from*
-        LET path$ = DIR_CUR$ + INIFile$
+        LET path$ = DIR_CUR$ + ini_file$
         IF _FILEEXISTS(path$) THEN GOTO readINI
         
         'check the base WADs directory
-        LET path$ = DIR_WADS$ + INIFile$
+        LET path$ = DIR_WADS$ + ini_file$
         IF _FILEEXISTS(path$) THEN GOTO readINI
     END IF
     
-    'FIXME: file not found!
-    ERROR 100
+    CALL ErrorScreen("ERROR: File Not Found")
+    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+        "The file " + CHR$(34) + ini_file$ + CHR$(34) + " could not be found."
+    CALL ErrorExit
+    SYSTEM 1
     
 readINI:
     '-------------------------------------------------------------------------
@@ -115,6 +116,7 @@ readINI:
             ini_skill9$ _
         )
     LOOP
+    
 END SUB
 
 '=============================================================================

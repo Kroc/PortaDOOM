@@ -309,9 +309,9 @@ cmd_help:   PRINT ""
         CASE ELSE
             'if an INI file is given, load the game definitions from it
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
-                'attempt to locate the INI file
-                'FIXME: handle file-not-found error
                 Games_EnumerateINI(COMMAND$(i))
+                'cease any further processing
+                'TODO: error for any other params?
                 GOTO cmd_done
             ELSE
                 'no other command / file is allowed until the
@@ -339,6 +339,8 @@ cmd_help:   PRINT ""
     LET i = i + 1
 LOOP
 
+'-----------------------------------------------------------------------------
+
 'display the parameters used if debug is enabled
 IF CMD_DEBUG` THEN
     IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT` OR CMD_QUIT`) THEN
@@ -364,6 +366,8 @@ IF CMD_DEBUG` THEN
     'TODO: print out PRE$ & FILE$ list
     PRINT ""
 END IF
+
+'-----------------------------------------------------------------------------
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
@@ -394,5 +398,5 @@ ELSE
 END IF
 
 cmd_done:
-
+'-----------------------------------------------------------------------------
 LET CMD_DEBUG` = TRUE

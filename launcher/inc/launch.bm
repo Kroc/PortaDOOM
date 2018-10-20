@@ -74,11 +74,11 @@ DIM DIR_SAVE_GAME$
 IF Games_Selected.pwad <> 0 THEN
     'use that name for the save folder
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
+      + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
 ELSE
     'otherwise just use the IWAD name
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-        + Paths_GetFileBaseName$(STRGET$(IWADs_Selected.path))
+      + Paths_GetFileBaseName$(STRGET$(IWADs_Selected.path))
 END IF
 
 'does this folder exist?

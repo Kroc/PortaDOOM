@@ -118,7 +118,7 @@ FUNCTION WADs_Find$(path$)
     LET testPath$ = DIR_WADS$ + path$
     GOSUB checkPath
     
-    'if an engine has been selected, check too it's folder
+    'if an engine has been selected, check too its folder
     IF STRGET$(Engines_Selected.dir) <> "" THEN
         LET testPath$ = DIR_PORTS$ + STRGET$(Engines_Selected.dir) + "\" + path$
         GOSUB checkPath
@@ -132,10 +132,13 @@ checkPath:
     'if the file doesn't exist at this path,
     'return so somewhere else can be tried
     IF NOT _FILEEXISTS(testPath$) THEN RETURN
+    
     'update the 'previous directory'
-    LET DIR_PREV$ = Paths_AddSlash$(Paths_GetFolderName$(testPath$))
+    LET DIR_PREV$ = Paths_AddSlash$(Paths_GetPath$(testPath$))
+    
     'file found! return the valid path
     LET WADs_Find$ = testPath$
+    EXIT FUNCTION
 END FUNCTION
 
 'this function, once given a list of semicolon-separated file paths will

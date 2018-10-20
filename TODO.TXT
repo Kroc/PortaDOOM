@@ -1,16 +1,19 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
+[X] LAUNCHER : Instadm filters not loading due to not checking last WAD location
+[ ] LAUNCHER : When loading from an INI file set that as the 'current'
+    directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
  -  [-] When no engines remain after filter
  -  [X] When no game is defined on the command-line
- -  [ ] When file is not found
+ -  [-] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
-[ ] LAUNCHER : FreeDOOM substitution
 [ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
+[ ] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
@@ -28,6 +31,7 @@
 
 [P3] Feature Enhancements:
 ================================================================================
+[ ] Add Valiant: Vaccinated Edition
 [ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
     (currently an issue with this in QB64)

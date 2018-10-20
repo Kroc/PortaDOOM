@@ -165,7 +165,8 @@ IF Engines_ListCount = 1 THEN
     GOTO launch
 END IF
 
-'try and pick out the best engine for the high / medium / low tier categories
+'try and pick out the best engine for
+'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
 'present engine selection UI:
@@ -180,8 +181,8 @@ PRINT ""
 DIM H%
 
 IF Engines_SelectedUltra <> 0 THEN
-	COLOR AQUA: PRINT " [U] ULTRA: ";: COLOR YELLOW
-	PRINT "For high-end computers with dedicated graphics (GPU)"
+    COLOR AQUA: PRINT " [U] ULTRA: ";: COLOR YELLOW
+    PRINT "For high-end computers with dedicated graphics (GPU)"
     PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
     COLOR WHITE
     PRINT TRUNCATE$( _
