@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /USE prboom-plus /SW /PWAD 50shades.wad /CMPLVL 19 -- 50shades_fixes.wad
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "50shades.ini"

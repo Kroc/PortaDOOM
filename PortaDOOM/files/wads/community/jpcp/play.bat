@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ no-limit /PWAD JPCP.wad /CMPLVL 2
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "JPCP.ini"

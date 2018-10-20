@@ -21,6 +21,7 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
+[ ] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
 [X] LAUNCHER : Swift Death uses its own skill names
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
@@ -49,6 +50,7 @@
 
 [P4] Content:
 ================================================================================
+[ ] Does 20 Monsters work in ZDoom?
 [ ] Move 3 Heures series to Community
 [ ] WolfenDOOM package
 [ ] Expand PSX DOOM Package to include:
