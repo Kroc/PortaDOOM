@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\disjunct\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\disjunct\play-disjunct.ini"
 $KEY:T=SHELL:wads\episodes\disjunct\disjunct.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/disjunct
 

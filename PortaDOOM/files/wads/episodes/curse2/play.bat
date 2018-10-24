@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /HEXEN /REQ zdoom /PWAD curse2.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-curse2.ini"

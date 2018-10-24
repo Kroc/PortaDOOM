@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD disjunct.wad /CMPLVL 9
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-disjunct.ini"

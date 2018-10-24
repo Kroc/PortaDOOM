@@ -1,5 +1,5 @@
 $NAV=Community Projects
-$KEY:P=SHELL:wads\community\20_Monsters_MapPack\play.bat
+$KEY:P=SHELL:launcher.exe "wads\community\20_Monsters_MapPack\play-20_Monsters_MapPack.ini"
 $KEY:T=SHELL:wads\community\20_Monsters_MapPack\Info.txt
 $KEY:W=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
 

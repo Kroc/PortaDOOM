@@ -33,14 +33,14 @@ DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
 DIM SHARED CMD_IWAD$ '...IWAD to use
 DIM SHARED CMD_PRE$ '....optional files to load *before* the PWAD
 DIM SHARED CMD_PWAD$ '...optional PWAD to play
+DIM SHARED CMD_FILES$ '..list of extra files to include
+DIM SHARED CMD_EXEC$ '...extra script to execute
 DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
 DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
 DIM SHARED CMD_DEMO$ '...demo lump to play
 DIM SHARED CMD_WARP$ '...episode/map number to warp to
 DIM SHARED CMD_SKILL$ '..skill level number
 DIM SHARED CMD_CMPLVL$ '.compatibility level
-DIM SHARED CMD_EXEC$ '...extra script to execute
-DIM SHARED CMD_FILES$ '..list of extra files to include
 
 DIM cmd_hasGame` '.......flag, define game from command-line
 
@@ -385,8 +385,8 @@ IF cmd_hasGame` THEN
     
     CALL Games_Add ( _
         "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
-        CMD_FILES$, CMD_DEH$, CMD_BEX$, CMD_REQ$, vid%, CMD_WARP$, _
-        CMD_SKILL$, "", "", "", "", "", "", "", "", "" _
+        CMD_FILES$, CMD_EXEC$, CMD_DEH$, CMD_BEX$, CMD_REQ$, vid%, _
+        CMD_WARP$, CMD_SKILL$, "", "", "", "", "", "", "", "", "" _
     )
 ELSE
     CALL ErrorScreen("ERROR: No Game Defined")

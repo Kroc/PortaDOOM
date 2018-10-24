@@ -13,6 +13,7 @@ TYPE Game
     pwad AS LONG '..........PWAD to play
     pre AS LONG '...........list of files to load *before* the PWAD
     files AS LONG '.........list of additional files to include
+    exec AS LONG '..........script file to execute (ZDoom-based engines)
     cmplvl AS _BYTE '.......can be negative to specify "not given"
     deh AS LONG '...........DeHackEd script to load
     bex AS LONG '...........Boom-EXtended DeHackEd script to load

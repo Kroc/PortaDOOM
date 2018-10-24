@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "JPCP.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-jpcp.ini"

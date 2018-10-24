@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "20_Monsters_MapPack.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-20_Monsters_MapPack.ini"

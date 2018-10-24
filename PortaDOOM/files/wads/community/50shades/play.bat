@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "50shades.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-50shades.ini"

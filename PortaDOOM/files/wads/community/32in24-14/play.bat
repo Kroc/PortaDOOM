@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "32in24-14.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-32in24-14.ini"

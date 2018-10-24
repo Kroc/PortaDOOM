@@ -43,6 +43,11 @@ DIM SHARED DIR_PREV$
 DIM SHARED DIR_IWAD$
 DIM SHARED DIR_PWAD$
 
+'variables we use when searching for files
+'(via `WADs_Find$`)
+DIM file$
+DIM find$
+
 'some engines require different methods of passing extra files, e.g. PWAD
 'and mods. as we go, we'll build up a list of files to include (in the right
 'order) and worry about the specific invocation at the end
@@ -218,24 +223,30 @@ PRINT RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
 '-----------------------------------------------------------------------------
 'any files that should be automatically included with the engine?
 '(e.g. "brightmaps.pk3", "lights.pk3")
-DIM auto_path$
-
 IF Engines_Selected.auto > 0 THEN
     'read the first file from the list
-    LET auto_path$ = STRGET$(Engines_Selected.auto)
-    LET auto_path$ = WADs_Split$(auto_path$)
+    LET file$ = WADs_Split$(STRGET$(Engines_Selected.auto))
     DO
-        'FIXME: check file exists; here or at the end?
-        'TODO: other places for auto-load files?
+        'locate the file according to WAD search rules
+        LET find$ = WADs_Find$(file$)
+        'file missing?
+        IF find$ = "" THEN
+            CALL ErrorScreen("ERROR: File Not Found")
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The file " + CHR$(34) + file$ + CHR$(34) _
+              + " could not be found."
+            CALL ErrorExit
+        SYSTEM 1
+        END IF
         
         'add to the list of files for the command-line params
-        LET CMD_FILES$ = CMD_FILES$ + DIR_ENGINE$ + auto_path$ + ";"
+        LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
         
         COLOR YELLOW: PRINT " (auto) -file : ";: COLOR UI_FORECOLOR
-        PRINT RTRUNCATE$(Launch_ClipPath$(DIR_ENGINE$ + auto_path$), UI_SCREEN_WIDTH - 17)
+        PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
         
-        LET auto_path$ = WADs_Split$("")
-    LOOP WHILE auto_path$ <> ""
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 'games can also specify their own files to load
@@ -243,22 +254,30 @@ END IF
 
 IF Games_Selected.pre > 0 THEN
     'read the first file from the list
-    LET auto_path$ = STRGET$(Games_Selected.pre)
-    LET auto_path$ = WADs_Split$(auto_path$)
+    LET file$ = STRGET$(Games_Selected.pre)
+    LET file$ = WADs_Split$(file$)
     DO
         'locate the file according to WAD search rules
-        LET auto_path$ = WADs_GetPWADPath$(auto_path$)
-        
-        IF auto_path$ = "" THEN ERROR 101
+        LET find$ = WADs_Find$(file$)
+        'file missing?
+        IF find$ = "" THEN
+            CALL ErrorScreen("ERROR: File Not Found")
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The file " + CHR$(34) + file$ + CHR$(34) _
+              + " could not be found."
+            CALL ErrorExit
+        SYSTEM 1
+        END IF
         
         'add to the list of files for the command-line params
-        LET CMD_FILES$ = CMD_FILES$ + auto_path$ + ";"
+        LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
         
         COLOR YELLOW: PRINT " (auto) -file : ";: COLOR UI_FORECOLOR
-        PRINT RTRUNCATE$(Launch_ClipPath$(auto_path$), UI_SCREEN_WIDTH - 17)
+        PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
         
-        LET auto_path$ = WADs_Split$("")
-    LOOP WHILE auto_path$ <> ""
+        'get the next file in the list
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 '-----------------------------------------------------------------------------
@@ -267,42 +286,63 @@ END IF
 'doom engines typically don't have a specific concept of a "PWAD", it's just
 'an additional file to load like any other and it's not necessarily the first
 'listed -- that will likely be the auto-load files
-
-LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
-IF CMD_PWAD$ <> "" THEN
-    LET CMD_PWAD$ = WADs_GetPWADPath$(CMD_PWAD$)
-    'FIXME: file missing?
-    LET DIR_PWAD$ = Paths_GetPath$(CMD_PWAD$)
+IF Games_Selected.pwad <> 0 THEN
+    'search for the PWAD
+    LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
+    LET find$ = WADs_GetPWADPath$(CMD_PWAD$)
+    'file not found?
+    IF find$ = "" THEN
+        CALL ErrorScreen("ERROR: File Not Found")
+        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            "The file " + CHR$(34) + CMD_PWAD$ + CHR$(34) _
+          + " could not be found."
+        CALL ErrorExit
+        SYSTEM 1
+    END IF
     
-    CMD_PWAD$ = Launch_ClipPath$(CMD_PWAD$)
-    LET CMD_FILES$ = CMD_FILES$ + CMD_PWAD$ + ";"
+    'remember the directory of the PWAD for searching for other files
+    LET DIR_PWAD$ = Paths_GetPath$(find$)
+    
+    LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
     
     COLOR YELLOW: PRINT " (pwad) -file : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(CMD_PWAD$, UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
 '[08] file-list:
 '-----------------------------------------------------------------------------
-DIM file$
-LET file$ = STRGET$(Games_Selected.files)
-IF file$ <> "" THEN
+IF Games_Selected.files <> 0 THEN
     'read the first file from the list
-    LET file$ = WADs_Split$(file$)
+    LET file$ = WADs_Split$(STRGET$(Games_Selected.files))
     DO
-        LET file$ = Launch_ClipPath$(file$)
-        LET file$ = Launch_ClipPath$(WADs_Find$(file$))
+        'locate the file according to WAD search rules
+        LET find$ = WADs_Find$(file$)
+        'file missing?
+        IF find$ = "" THEN
+            CALL ErrorScreen("ERROR: File Not Found")
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The file " + CHR$(34) + file$ + CHR$(34) _
+              + " could not be found."
+            CALL ErrorExit
+        SYSTEM 1
+        END IF
+        
         'add to the list of files for the command-line params
-        LET CMD_FILES$ = CMD_FILES$ + file$ + ";"
+        LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
+        
         'announce
         COLOR YELLOW: PRINT "        -file : ";: COLOR UI_FORECOLOR
-        PRINT RTRUNCATE$(file$, UI_SCREEN_WIDTH - 17)
+        PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+        
         'get the next file in the list (if any)
         LET file$ = WADs_Split$("")
     LOOP WHILE file$ <> ""
 END IF
 
-'add all files to the command-line
+'add all files to the command-line:
+'(note that all these files have been located beforehand)
+'-----------------------------------------------------------------------------
 IF CMD_FILES$ <> "" THEN
     'vanilla engines use `-merge`
     IF Engines_Selected.kin = KIN_V THEN
@@ -341,28 +381,45 @@ END IF
 
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
-    'FIXME: file missing?
-    LET CMD_DEH$ = WADs_Find$(CMD_DEH$)
+    LET find$ = WADs_Find$(CMD_DEH$)
+    'file missing?
+    IF find$ = "" THEN
+        CALL ErrorScreen("ERROR: File Not Found")
+        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            "The file " + CHR$(34) + CMD_DEH$ + CHR$(34) _
+          + " could not be found."
+        CALL ErrorExit
+        SYSTEM 1
+    END IF
+    
     'add it to the command-line
     LET CMD$ = CMD$ + " -deh " _
-             + CHR$(34) + Launch_FixPath$(CMD_DEH$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce
     COLOR YELLOW: PRINT "         -deh : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(CMD_DEH$), UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
 END IF
 
 'has a BEX file been specified?
 LET CMD_BEX$ = STRGET$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
-    'FIXME: file missing?
-    LET CMD_BEX$ = WADs_Find$(CMD_BEX$)
+    LET find$ = WADs_Find$(CMD_BEX$)
+    'file missing?
+    IF find$ = "" THEN
+        CALL ErrorScreen("ERROR: File Not Found")
+        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            "The file " + CHR$(34) + CMD_BEX$ + CHR$(34) _
+          + " could not be found."
+        CALL ErrorExit
+        SYSTEM 1
+    END IF
     'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
-             + CHR$(34) + Launch_FixPath$(CMD_BEX$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce
     COLOR YELLOW: PRINT "         -bex : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(CMD_BEX$), UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -370,25 +427,29 @@ END IF
 '-----------------------------------------------------------------------------
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
-    DIM demo$
     'try the folder from which the launcher was called
-    LET demo$ = DIR_CUR$ + CMD_DEMO$
+    LET find$ = DIR_CUR$ + CMD_DEMO$
     'if it doesn't exist there...
-    IF NOT _FILEEXISTS(demo$) THEN
+    IF NOT _FILEEXISTS(find$) THEN
         'try the special demos folder
-        LET demo$ = DIR_DEMOS$ + CMD_DEMO$
+        LET find$ = DIR_DEMOS$ + CMD_DEMO$
         'if it doesn't exist there...
-        IF NOT _FILEEXISTS(demo$) THEN
-            'FIXME: handle demo file missing
+        IF NOT _FILEEXISTS(find$) THEN
+            CALL ErrorScreen("ERROR: File Not Found")
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The file " + CHR$(34) + CMD_DEMO$ + CHR$(34) _
+              + " could not be found."
+            CALL ErrorExit
+            SYSTEM 1
         END IF
     END IF
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
-             + CHR$(34) + Launch_FixPath$(demo$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
              
     COLOR YELLOW: PRINT "    -playdemo : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(demo$), UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -536,25 +597,28 @@ IF Games_Selected.skill >= 0 THEN
 END IF
 
 '-----------------------------------------------------------------------------
-'[12] execute scripts:
+'[12] execute script:
 '-----------------------------------------------------------------------------
-IF CMD_EXEC$ <> "" THEN
+IF Games_Selected.exec <> 0 THEN
     'try and find the file:
-    DIM exec$
-    'try the folder from which the launcher was called
-    LET exec$ = DIR_CUR$ + CMD_EXEC$
-    'if it doesn't exist there...
-    IF NOT _FILEEXISTS(demo$) THEN
-        'TODO: check engine folder? check config folder?
-        'FIXME: handle exec file missing
+    LET file$ = STRGET$(Games_Selected.exec)
+    LET find$ = WADs_Find$(file$)
+   'file missing?
+    IF find$ = "" THEN
+        CALL ErrorScreen("ERROR: File Not Found")
+        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            "The file " + CHR$(34) + file$ + CHR$(34) _
+          + " could not be found."
+        CALL ErrorExit
+        SYSTEM 1
     END IF
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -exec " _
-             + CHR$(34) + Launch_FixPath$(exec$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
              
     COLOR YELLOW: PRINT "        -exec : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(exec$), UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -668,18 +732,14 @@ END IF
 
 SYSTEM
 
-'=============================================================================
-
 errMkDir:
+'=============================================================================
 CALL ErrorScreen("ERROR: Write Error")
 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
     "Could not create a required folder. Ensure that the media you are " _
   + "running launcher.exe from is not write protected, and that the " _
   + "'files\saves' folder exists, and is writable."
 CALL ErrorExit: SYSTEM 1
-
-err_fileMissing:
-SYSTEM 1
 
 'make a folder if it doesn't exist; capture errors (e.g. read-only)
 '=============================================================================

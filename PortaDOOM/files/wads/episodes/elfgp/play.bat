@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /HERETIC /REQ zdoom /PWAD elfgp.wad /WARP 1.1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-elfgp.ini"

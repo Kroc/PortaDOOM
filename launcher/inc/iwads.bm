@@ -107,7 +107,7 @@ readINI:
         CASE "HERETIC": LET iwad_type% = TYPE_HERETIC
         CASE "HEXEN": LET iwad_type% = TYPE_HEXEN
         CASE "STRIFE": LET iwad_type% = TYPE_STRIFE
-		CASE "CHEX": LET iwad_type% = TYPE_CHEX
+        CASE "CHEX": LET iwad_type% = TYPE_CHEX
         CASE "DOOM64": LET iwad_type% = TYPE_DOOM64
         CASE ELSE
             LET iwad_type% = TYPE_DOOM2
@@ -117,8 +117,8 @@ readINI:
     LET iwad_title$ = ReadSetting$("", "iwad", "title")
     DIM iwad_path$
     LET iwad_path$ = ReadSetting$("", "iwad", "path")
-	DIM iwad_deh$
-	LET iwad_deh$ = ReadSetting$("", "iwad", "deh")
+    DIM iwad_deh$
+    LET iwad_deh$ = ReadSetting$("", "iwad", "deh")
     DIM iwad_tags$
     LET iwad_tags$ = ReadSetting$("", "iwad", "tags")
     
@@ -170,7 +170,7 @@ FUNCTION IWADs_Add&( _
     LET IWADs(IWADs_Count).type = game_type%
     LET IWADs(IWADs_Count).title = STRADD&(title$)
     LET IWADs(IWADs_Count).path = STRADD&(path$)
-	LET IWADs(IWADs_Count).deh = STRADD&(deh$)
+    LET IWADs(IWADs_Count).deh = STRADD&(deh$)
     LET IWADs(IWADs_Count).tags = STRADD&(tags$)
     LET IWADs(IWADs_Count).skill1 = STRADD&(skill1$)
     LET IWADs(IWADs_Count).skill2 = STRADD&(skill2$)

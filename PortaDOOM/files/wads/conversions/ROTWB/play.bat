@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /PWAD ROTWB.wad /REQ gzdoom
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "rotwb.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD d2hs-lutz.wad /BEX D2HS.bex /WARP 21
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-d2hs-lutz.ini"

@@ -1,14 +1,14 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[X] LAUNCHER : Instadm filters not loading due to not checking last WAD location
 [ ] LAUNCHER : When loading from an INI file set that as the 'current'
     directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
+ -  [ ] Unrecognised IWAD (not found and cannot be substituted)
  -  [-] When no engines remain after filter
- -  [X] When no game is defined on the command-line
- -  [-] When file is not found
+ -  [X] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
+ -  [ ] parsing INI files
 [ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Blocking: (cannot be released until fixed)
@@ -21,8 +21,8 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
+[ ] LAUNCHER : Cannot specify `/DEMO` in ini files
 [ ] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
-[X] LAUNCHER : Swift Death uses its own skill names
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard

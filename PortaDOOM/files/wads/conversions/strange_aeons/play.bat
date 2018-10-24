@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ zdoom /PWAD strangeaeonsexp.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "strange_aeons.ini"

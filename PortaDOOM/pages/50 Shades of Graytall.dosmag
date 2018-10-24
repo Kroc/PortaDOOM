@@ -1,5 +1,5 @@
 $NAV=Community Projects
-$KEY:P=SHELL:wads\community\50shades\play.bat
+$KEY:P=SHELL:launcher.exe "wads\community\50shades\play-50shades.ini"
 $KEY:T=SHELL:wads\community\50shades\50shades.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shades
 

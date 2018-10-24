@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "mutiny.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-mutiny.ini"

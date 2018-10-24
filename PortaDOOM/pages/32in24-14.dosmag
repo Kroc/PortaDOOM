@@ -1,5 +1,5 @@
 $NAV=Community Projects
-$KEY:P=SHELL:wads\community\32in24-14\play.bat
+$KEY:P=SHELL:launcher.exe "wads\community\32in24-14\play-32in24-14.ini"
 $KEY:T=SHELL:wads\community\32in24-14\32in24-14.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/32in2414
 

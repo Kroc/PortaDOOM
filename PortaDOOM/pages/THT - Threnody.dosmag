@@ -1,5 +1,5 @@
 $NAV=Community Projects
-$KEY:P=SHELL:wads\community\thtthren\play.bat
+$KEY:P=SHELL:launcher.exe "wads\community\thtthren\play-thtthren.ini"
 $KEY:T=SHELL:wads\community\thtthren\thtthren.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthren
 

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM /REQ gzdoom /PWAD AUD9.5.pk3 /BEX ATCUD19.BEX /EXEC bloom.cfg -- ATCLEV.WAD
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "aliens_tc_2017.ini"
