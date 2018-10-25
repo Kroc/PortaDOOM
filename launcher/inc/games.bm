@@ -27,10 +27,7 @@ SUB Games_EnumerateINI (ini_file$)
         IF _FILEEXISTS(path$) THEN GOTO readINI
     END IF
     
-    CALL ErrorScreen("ERROR: File Not Found")
-    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-        "The file " + CHR$(34) + ini_file$ + CHR$(34) + " could not be found."
-    CALL ErrorExit
+    CALL ErrorFileNotFound(ini_file$)
     SYSTEM 1
     
 readINI:

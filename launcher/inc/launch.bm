@@ -230,14 +230,7 @@ IF Engines_Selected.auto > 0 THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN
-            CALL ErrorScreen("ERROR: File Not Found")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-                "The file " + CHR$(34) + file$ + CHR$(34) _
-              + " could not be found."
-            CALL ErrorExit
-        SYSTEM 1
-        END IF
+        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -260,14 +253,7 @@ IF Games_Selected.pre > 0 THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN
-            CALL ErrorScreen("ERROR: File Not Found")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-                "The file " + CHR$(34) + file$ + CHR$(34) _
-              + " could not be found."
-            CALL ErrorExit
-        SYSTEM 1
-        END IF
+        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -288,17 +274,10 @@ END IF
 'listed -- that will likely be the auto-load files
 IF Games_Selected.pwad <> 0 THEN
     'search for the PWAD
-    LET CMD_PWAD$ = STRGET$(Games_Selected.pwad)
-    LET find$ = WADs_GetPWADPath$(CMD_PWAD$)
+    LET file$ = STRGET$(Games_Selected.pwad)
+    LET find$ = WADs_GetPWADPath$(file$)
     'file not found?
-    IF find$ = "" THEN
-        CALL ErrorScreen("ERROR: File Not Found")
-        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-            "The file " + CHR$(34) + CMD_PWAD$ + CHR$(34) _
-          + " could not be found."
-        CALL ErrorExit
-        SYSTEM 1
-    END IF
+    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
     
     'remember the directory of the PWAD for searching for other files
     LET DIR_PWAD$ = Paths_GetPath$(find$)
@@ -319,14 +298,7 @@ IF Games_Selected.files <> 0 THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN
-            CALL ErrorScreen("ERROR: File Not Found")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-                "The file " + CHR$(34) + file$ + CHR$(34) _
-              + " could not be found."
-            CALL ErrorExit
-        SYSTEM 1
-        END IF
+        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -381,20 +353,13 @@ END IF
 
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
-    LET find$ = WADs_Find$(CMD_DEH$)
+	LET file$ = CMD_DEH$
+    LET find$ = WADs_Find$(file$)
     'file missing?
-    IF find$ = "" THEN
-        CALL ErrorScreen("ERROR: File Not Found")
-        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-            "The file " + CHR$(34) + CMD_DEH$ + CHR$(34) _
-          + " could not be found."
-        CALL ErrorExit
-        SYSTEM 1
-    END IF
+    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
     
     'add it to the command-line
-    LET CMD$ = CMD$ + " -deh " _
-             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
+    LET CMD$ = CMD$ + " -deh " + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce
     COLOR YELLOW: PRINT "         -deh : ";: COLOR UI_FORECOLOR
     PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
@@ -404,17 +369,12 @@ END IF
 LET CMD_BEX$ = STRGET$(Games_Selected.bex)
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
-    LET find$ = WADs_Find$(CMD_BEX$)
+	LET file$ = CMD_BEX$
+    LET find$ = WADs_Find$(file$)
     'file missing?
-    IF find$ = "" THEN
-        CALL ErrorScreen("ERROR: File Not Found")
-        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-            "The file " + CHR$(34) + CMD_BEX$ + CHR$(34) _
-          + " could not be found."
-        CALL ErrorExit
-        SYSTEM 1
-    END IF
-    'add it to the command-line
+    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    
+	'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce
@@ -428,28 +388,21 @@ END IF
 IF LEN(CMD_DEMO$) <> 0 THEN
     'try and find the file:
     'try the folder from which the launcher was called
-    LET find$ = DIR_CUR$ + CMD_DEMO$
+    LET file$ = DIR_CUR$ + CMD_DEMO$
     'if it doesn't exist there...
-    IF NOT _FILEEXISTS(find$) THEN
+    IF NOT _FILEEXISTS(file$) THEN
         'try the special demos folder
-        LET find$ = DIR_DEMOS$ + CMD_DEMO$
+        LET file$ = DIR_DEMOS$ + CMD_DEMO$
         'if it doesn't exist there...
-        IF NOT _FILEEXISTS(find$) THEN
-            CALL ErrorScreen("ERROR: File Not Found")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-                "The file " + CHR$(34) + CMD_DEMO$ + CHR$(34) _
-              + " could not be found."
-            CALL ErrorExit
-            SYSTEM 1
-        END IF
+        IF NOT _FILEEXISTS(file$) THEN CALL ErrorFileNotFound(file$)
     END IF
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -playdemo " _
-             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(file$) + CHR$(34)
              
     COLOR YELLOW: PRINT "    -playdemo : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$(Launch_ClipPath$(file$), UI_SCREEN_WIDTH - 17)
 END IF
 
 '-----------------------------------------------------------------------------
@@ -604,14 +557,7 @@ IF Games_Selected.exec <> 0 THEN
     LET file$ = STRGET$(Games_Selected.exec)
     LET find$ = WADs_Find$(file$)
    'file missing?
-    IF find$ = "" THEN
-        CALL ErrorScreen("ERROR: File Not Found")
-        PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-            "The file " + CHR$(34) + file$ + CHR$(34) _
-          + " could not be found."
-        CALL ErrorExit
-        SYSTEM 1
-    END IF
+    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -exec " _

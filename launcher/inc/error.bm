@@ -45,3 +45,13 @@ SUB ErrorExit()
     
     SLEEP: SYSTEM 1
 END SUB
+
+'Display "File Not Found" error
+'=============================================================================
+SUB ErrorFileNotFound(file$)
+    CALL ErrorScreen("ERROR: File Not Found")
+    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+        "The file " + CHR$(34) + file$ + CHR$(34) _
+      + " could not be found."
+    CALL ErrorExit: SYSTEM 1
+END SUB
