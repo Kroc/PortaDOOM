@@ -13,7 +13,8 @@
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
-[ ] LAUNCHER : FreeDOOM substitution
+[-] LAUNCHER : FreeDOOM substitution
+[ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Implement BFG edition patching
@@ -21,6 +22,7 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
+[ ] LAUNCHER : Gussy up game selection (like engine selection)
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
 [ ] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
 [ ] LAUNCHER : If no IWAD given, use default for type of engine

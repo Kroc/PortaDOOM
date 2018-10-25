@@ -209,6 +209,7 @@ END IF
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
 LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs_Selected.path))
+'TODO: IWAD not found at all (no substitution)
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
 LET CMD_IWAD$ = Launch_ClipPath$(CMD_IWAD$)

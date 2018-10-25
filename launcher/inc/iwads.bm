@@ -15,8 +15,6 @@
 '   IWADs_Add(...)
 '   IWADs_GetPath$(iwad$)                       -> STRING
 '   IWADs_GetRegistryPath$(key$, value$, path$) -> STRING
-'   IWADs_GetTitle$(iwad$)                      -> STRING
-'   IWADs_GetTags$(iwad$)                       -> STRING
 
 'match an IWAD file name to its meta-data entry (load meta-data if necessary)
 'returns an index into `IWADs` array, or 0 for not-found
@@ -62,6 +60,8 @@ loadMetaData:
     'load IWAD meta-data from the INI file (if present)
     'TODO: if no IWAD meta-data file found, build some rough data ad-hoc?
     LET IWADs_FindMeta& = IWADs_EnumerateINI&(ini_file$)
+    
+    'TODO: was meta-data found?
 END FUNCTION
 
 'given an INI file, read an IWAD definition from it
@@ -261,6 +261,16 @@ iwadDOOM:
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM.WAD" _
     )
+    
+    'can't find DOOM.WAD, try FreeDOOM substitution?
+    IF LEN(iwad_path$) = 0 THEN
+        PRINT "": COLOR WHITE
+        PRINT "                WARNING: Could not locate DOOM.WAD,"
+        PRINT "                using FREEDOOM1.WAD as replacement"
+        PRINT ""
+        LET iwad_path$ = DIR_WADS$ + "conversions\freedoom\freedoom1.wad"
+    END IF
+    
     RETURN
     
 iwadDOOM2:
@@ -292,6 +302,16 @@ iwadDOOM2:
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM2.WAD" _
     )
+    
+    'can't find DOOM2.WAD, try FreeDOOM substitution?
+    IF LEN(iwad_path$) = 0 THEN
+        PRINT "": COLOR WHITE
+        PRINT "                WARNING: Could not locate DOOM2.WAD,"
+        PRINT "                using FREEDOOM2.WAD as replacement"
+        PRINT ""
+        LET iwad_path$ = DIR_WADS$ + "conversions\freedoom\freedoom2.wad"
+    END IF
+    
     RETURN
     
 iwadTNT:
