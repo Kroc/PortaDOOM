@@ -17,7 +17,7 @@
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
-[ ] LAUNCHER : Implement BFG edition patching
+[X] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 
 [P2] Required: (lose-ends that need tying up)

@@ -235,35 +235,36 @@ iwadSteamGOG:
 iwadDOOM:
     'try and find "DOOM.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
-    'is Steam "The Ultimate DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280", _
-        "InstallLocation", "base\DOOM.WAD" _
-    )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
-    
     'is GOG "The Ultimate DOOM" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\GOG.com\Games\1435827232", _
         "Path", "DOOM.WAD" _
     )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
+    IF iwad_path$ <> "" THEN RETURN
     
-    'is Steam "DOOM 3 BFG Edition" installed?
+    'is Steam "The Ultimate DOOM" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
-        "InstallLocation", "base\wads\DOOM.WAD" _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280", _
+        "InstallLocation", "base\DOOM.WAD" _
     )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
+    IF iwad_path$ <> "" THEN RETURN
     
     'is GOG "DOOM 3 BFG Edition" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM.WAD" _
     )
+    IF iwad_path$ <> "" THEN GOTO iwad_DOOM_BFG
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM.WAD" _
+    )
+    IF iwad_path$ <> "" THEN GOTO iwad_DOOM_BFG
     
     'can't find DOOM.WAD, try FreeDOOM substitution?
-    IF LEN(iwad_path$) = 0 THEN
+    IF iwad_path$ = "" THEN
         PRINT "": COLOR WHITE
         PRINT "                WARNING: Could not locate DOOM.WAD,"
         PRINT "                using FREEDOOM1.WAD as replacement"
@@ -272,39 +273,76 @@ iwadDOOM:
     END IF
     
     RETURN
+
+iwad_DOOM_BFG:
+    '-------------------------------------------------------------------------
+    'patch the DOOM BFG WADs
+    PRINT "": COLOR WHITE
+    PRINT "                DOOM 3 BFG Edition found -- automatically patching..."
+    
+    DIM bfg_path$, bfg_doom$, bfg_tool$
+    LET bfg_path$ = Paths_GetPath$(iwad_path$)
+    LET bfg_doom$ = bfg_path$ + "DOOMU_BFG_PATCHED.WAD"
+    LET bfg_tool$ = DIR_TOOLS$ + "xdelta3\"
+    
+    'if the file has already been patched in the past
+    IF _FILEEXISTS(bfg_doom$) THEN
+        'then use that
+        LET iwad_path$ = bfg_doom$
+        PRINT "                Using existing DOOMU_BFG_PATCHED.WAD"
+    ELSE
+        'do the patching:
+        IF _SHELLHIDE ( _
+            CHR$(34) + bfg_tool$ + "xdelta3-3.0.11-i686.exe" _
+          + CHR$(34) + " -d -s " + CHR$(34) + iwad_path$ + CHR$(34) + " " _
+          + CHR$(34) + bfg_tool$ + "bfg-to-ud.vcdiff" + CHR$(34) + " " _
+          + CHR$(34) + bfg_doom$ + CHR$(34) _
+        ) =0 THEN
+            'patch succeeded; use the patched WAD
+            LET iwad_path$ = bfg_doom$
+            PRINT "                Success! Using DOOMU_BFG_PATCHED.WAD"
+        ELSE
+            'failed to patch, just use unpatched WAD
+            PRINT "                Failed to patch! Falling back to DOOM.WAD"
+        END IF
+    END IF
+    
+    PRINT ""
+    RETURN
     
 iwadDOOM2:
     'try and find "DOOM2.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
-    'is Steam "DOOM II" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300", _
-        "InstallLocation", "base\DOOM2.WAD" _
-    )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
-    
     'is GOG "DOOM II" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\GOG.com\Games\1435848814", _
         "Path", "doom2\DOOM2.WAD" _
     )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
+    IF iwad_path$ <> "" THEN RETURN
     
-    'is Steam "DOOM 3 BFG Edition" installed?
+    'is Steam "DOOM II" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
-        "InstallLocation", "base\wads\DOOM2.WAD" _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300", _
+        "InstallLocation", "base\DOOM2.WAD" _
     )
-    IF LEN(iwad_path$) <> 0 THEN RETURN
+    IF iwad_path$ <> "" THEN RETURN
     
     'is GOG "DOOM 3 BFG Edition" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM2.WAD" _
     )
+    IF iwad_path$ <> "" THEN GOTO iwad_DOOM2_BFG
+    
+    'is Steam "DOOM 3 BFG Edition" installed?
+    LET iwad_path$ = IWADs_GetRegistryPath$( _
+        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
+        "InstallLocation", "base\wads\DOOM2.WAD" _
+    )
+    IF iwad_path$ <> "" THEN GOTO iwad_DOOM2_BFG
     
     'can't find DOOM2.WAD, try FreeDOOM substitution?
-    IF LEN(iwad_path$) = 0 THEN
+    IF iwad_path$ = "" THEN
         PRINT "": COLOR WHITE
         PRINT "                WARNING: Could not locate DOOM2.WAD,"
         PRINT "                using FREEDOOM2.WAD as replacement"
@@ -312,6 +350,41 @@ iwadDOOM2:
         LET iwad_path$ = DIR_WADS$ + "conversions\freedoom\freedoom2.wad"
     END IF
     
+    RETURN
+    
+iwad_DOOM2_BFG:
+    '-------------------------------------------------------------------------
+    'patch the DOOM2 BFG WADs
+    PRINT "": COLOR WHITE
+    PRINT "                DOOM 3 BFG Edition found -- automatically patching..."
+    
+    LET bfg_path$ = Paths_GetPath$(iwad_path$)
+    LET bfg_doom$ = bfg_path$ + "DOOM2_BFG_PATCHED.WAD"
+    LET bfg_tool$ = DIR_TOOLS$ + "xdelta3\"
+    
+    'if the file has already been patched in the past
+    IF _FILEEXISTS(bfg_doom$) THEN
+        'then use that
+        LET iwad_path$ = bfg_doom$
+        PRINT "                Using existing DOOM2_BFG_PATCHED.WAD"
+    ELSE
+        'do the patching:
+        IF _SHELLHIDE ( _
+            CHR$(34) + bfg_tool$ + "xdelta3-3.0.11-i686.exe" _
+          + CHR$(34) + " -d -s " + CHR$(34) + iwad_path$ + CHR$(34) + " " _
+          + CHR$(34) + bfg_tool$ + "bfg-to-1.9.vcdiff" + CHR$(34) + " " _
+          + CHR$(34) + bfg_doom$ + CHR$(34) _
+        ) =0 THEN
+            'patch succeeded; use the patched WAD
+            LET iwad_path$ = bfg_doom$
+            PRINT "                Success! Using DOOM2_BFG_PATCHED.WAD"
+        ELSE
+            'failed to patch, just use unpatched WAD
+            PRINT "                Failed to patch! Falling back to DOOM2.WAD"
+        END IF
+    END IF
+    
+    PRINT ""
     RETURN
     
 iwadTNT:
