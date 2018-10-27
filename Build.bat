@@ -73,24 +73,10 @@ IF "%$%" == "1" SET CMPLVL=1
 IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
-REM # compile the launcher
+:compress_dosmag
 REM ----------------------------------------------------------------------------
-ECHO:
-bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\launcher\launcher.qb64"
-REM # if that errored, pause to be able to show the error message
-IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
-
-REM # compress the launcher executable
-IF %CMPLVL% EQU 1 (
-	ECHO * Compress launcher executable
-	ECHO:
-	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
-	ECHO:
-)
-
 REM # include and compress the DOSmag executable
-REM ----------------------------------------------------------------------------
+REM # TODO: compile first?
 COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"  >NUL 2>&1
 ECHO:
 
@@ -99,6 +85,26 @@ IF %CMPLVL% EQU 1 (
 	ECHO:
 	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
 	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
+	ECHO:
+)
+
+:compress_launcher
+REM ----------------------------------------------------------------------------
+ECHO:
+ECHO * Compile Launcher
+ECHO:
+REM # compile the launcher
+bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\launcher\launcher.qb64"
+REM # if that errored, pause to be able to show the error message
+IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
+
+REM # compress the launcher executable
+IF %CMPLVL% EQU 1 (
+	ECHO:
+	ECHO * Compress launcher executable
+	ECHO:
+	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
+	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
 	ECHO:
 )
 
@@ -349,7 +355,8 @@ GOTO:EOF
 :do_release_launcher
 REM ============================================================================
 TITLE Creating PortaDOOM Launcher release...
-ECHO:
+SET CMPLVL=1
+CALL :compress_launcher
 CALL :do_launcher
 PAUSE & GOTO:EOF
 

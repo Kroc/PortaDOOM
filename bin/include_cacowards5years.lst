@@ -1,10 +1,10 @@
 PortaDOOM.exe
 
 files\wads\conversions\freedoom\
+files\wads\freedoom1.ini
+files\wads\freedoom2.ini
 files\wads\SHAREWARE\DOOM1.WAD
 
-files\play.bat
-files\doom.bat
 files\launcher.exe
 
 files\tools\xdelta3

@@ -1,8 +1,13 @@
 wads\conversions\freedoom\
 wads\SHAREWARE\*.WAD
+wads\MASTER\*.TXT
 
-play.bat
-doom.bat
+wads\*.ini
+
+wads\chex.deh
+wads\chexdeh.txt
+
+launcher.exe
 
 tools\**
 

@@ -22,7 +22,8 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
-[ ] LAUNCHER : Gussy up game selection (like engine selection)
+[-] LAUNCHER : Gussy up game selection (like engine selection)
+[ ] LAUNCHER : Gussy up skill selection
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
 [ ] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
@@ -34,6 +35,8 @@
 
 [P3] Feature Enhancements:
 ================================================================================
+[ ] LAUNCHER : Batch files to test engines in each engine directory
+    (will make testing on XP easier)
 [ ] Add Valiant: Vaccinated Edition
 [ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
@@ -83,15 +86,15 @@
 
 [P5] Technical Debt: (making forward progress easier)
 ================================================================================
-[?] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
+[ ] DOOM Retro : Next version will support binding F12
+[X] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
 [ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions
 [X] LAUNCHER : Add `pre` property to game INIs to load files *BEFORE* PWAD
-[ ] DOOM Retro : Next version will support binding F12
 [X] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
     (for creating the default config files)
 [ ] LAUNCHER : Add a `/VER` param to select version constraints
 [ ] LAUNCHER : Figure out what tags softpoly supports
-[ ] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
+[X] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
 [ ] DOOM-Crusher : Add PKE, EPK to recognised PK3 formats
 [ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
 [ ] DOOM-Crusher : fail on "SOUND&MUSIC.WAD"

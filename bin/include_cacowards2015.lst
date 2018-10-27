@@ -1,29 +1,31 @@
 PortaDOOM.exe
-
-files\wads\conversions\freedoom\
-
-files\play.bat
-files\doom.bat
 files\launcher.exe
 
 files\tools\xdelta3\
 
-files\config\default.choco-doom*.cfg
+files\wads\conversions\freedoom\
+files\wads\freedoom?.ini
+files\wads\doom.ini
+files\wads\doom2.ini
+
+files\ports\doom-retro\
+files\config\default.doom-retro.cfg
+
+files\ports\prboom-plus\
 files\config\default.glboom-plus.cfg
-files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
 
-files\ports\choco-doom\
-files\ports\gzdoom-35_*\
-files\ports\prboom-plus\
+files\ports\gzdoom_*\
+files\config\default.gzdoom.ini
 
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
 pages\DTWiD Series #??.dosmag
 files\wads\megawads\DTWiD\**
-pages\No Rest for the Living.dosmag
+pages\No End In Sight.dosmag
 files\wads\megawads\neis\
+pages\No Rest for the Living.dosmag
 
 files\demos\30uv2155\
 files\demos\30uv2032\

@@ -115,13 +115,22 @@ COLOR UI_FORECOLOR
 PRINT " Select game choice by pressing indicated number key:"
 PRINT ""
 
+DIM H%
 FOR i = 1 TO Games_Count
-    COLOR AQUA: PRINT " [" + STRINT$(i) + "] ";: COLOR YELLOW
+    COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";: COLOR YELLOW
     PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
-    PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
-    COLOR UI_FORECOLOR
+    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
+    COLOR LIME
     IF Games(i).desc <> 0 THEN
-        CALL PRINTWRAP_X(2, UI_SCREEN_WIDTH - 2, STRGET$(Games(i).desc))
+        COLOR LIME
+        LET H% = PRINTWRAP%( _
+            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
+            STRGET$(Games(i).desc) _
+        )
+        DIM j AS LONG
+        FOR j = CSRLIN - H% TO CSRLIN - 1
+            LOCATE j, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
+        NEXT j
     END IF
     PRINT ""
 NEXT i
@@ -177,8 +186,6 @@ COLOR UI_FORECOLOR
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
-
-DIM H%
 
 IF Engines_SelectedUltra <> 0 THEN
     COLOR AQUA: PRINT " [U] ULTRA: ";: COLOR YELLOW
