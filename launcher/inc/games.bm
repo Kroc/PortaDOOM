@@ -128,7 +128,7 @@ SUB Games_Add ( _
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game
-    LET Games(Games_Count).id = STRADD&(id$)
+    LET Games(Games_Count).id = id$
     
     'find the IWAD meta-data entry referred to by this game
     DIM iwad%%
@@ -221,8 +221,8 @@ skill:
     END IF
     
     'no problems? write the data into the engine list
-    LET Games(Games_Count).title = STRADD&(title$)
-    LET Games(Games_Count).desc = STRADD&(desc$)
+    LET Games(Games_Count).title = title$
+    LET Games(Games_Count).desc = desc$
     
     IF cmplvl$ = "" THEN
         LET Games(Games_Count).cmplvl = -1
@@ -230,26 +230,26 @@ skill:
         LET Games(Games_Count).cmplvl = VAL(cmplvl$)
     END IF
     
-    LET Games(Games_Count).pre = STRADD&(pre$)
-    LET Games(Games_Count).pwad = STRADD&(pwad$)
-    LET Games(Games_Count).files = STRADD&(files$)
-    LET Games(Games_Count).exec = STRADD&(exec$)
-    LET Games(Games_Count).deh = STRADD&(deh$)
-    LET Games(Games_Count).bex = STRADD&(bex$)
-    LET Games(Games_Count).tags = STRADD&(tags$)
+    LET Games(Games_Count).pre = pre$
+    LET Games(Games_Count).pwad = pwad$
+    LET Games(Games_Count).files = files$
+    LET Games(Games_Count).exec = exec$
+    LET Games(Games_Count).deh = deh$
+    LET Games(Games_Count).bex = bex$
+    LET Games(Games_Count).tags = tags$
     
     'don't allow vid% to be undefined
     LET Games(Games_Count).vid = vid%
     
-    LET Games(Games_Count).skill1 = STRADD&(skill1$)
-    LET Games(Games_Count).skill2 = STRADD&(skill2$)
-    LET Games(Games_Count).skill3 = STRADD&(skill3$)
-    LET Games(Games_Count).skill4 = STRADD&(skill4$)
-    LET Games(Games_Count).skill5 = STRADD&(skill5$)
-    LET Games(Games_Count).skill6 = STRADD&(skill6$)
-    LET Games(Games_Count).skill7 = STRADD&(skill7$)
-    LET Games(Games_Count).skill8 = STRADD&(skill8$)
-    LET Games(Games_Count).skill9 = STRADD&(skill9$)
+    LET Games(Games_Count).skill1 = skill1$
+    LET Games(Games_Count).skill2 = skill2$
+    LET Games(Games_Count).skill3 = skill3$
+    LET Games(Games_Count).skill4 = skill4$
+    LET Games(Games_Count).skill5 = skill5$
+    LET Games(Games_Count).skill6 = skill6$
+    LET Games(Games_Count).skill7 = skill7$
+    LET Games(Games_Count).skill8 = skill8$
+    LET Games(Games_Count).skill9 = skill9$
 END SUB
 
 '=============================================================================

@@ -119,8 +119,8 @@ FUNCTION WADs_Find$(path$)
     GOSUB checkPath
     
     'if an engine has been selected, check too its folder
-    IF Engines_Selected.dir <> 0 THEN
-        LET testPath$ = DIR_PORTS$ + STRGET$(Engines_Selected.dir) + "\" + path$
+    IF Engines_Selected.dir <> "" THEN
+        LET testPath$ = DIR_PORTS$ + Engines_Selected.dir + "\" + path$
         GOSUB checkPath
     END IF
     

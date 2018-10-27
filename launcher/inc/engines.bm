@@ -105,10 +105,10 @@ SUB Engines_Enumerate()
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
             
-            LET Engines(Engines_Count).engine = STRADD&(LCASE$(ini_engine$))
-            LET Engines(Engines_Count).id = STRADD&(LCASE$(ini_id$))
+            LET Engines(Engines_Count).engine = LCASE$(ini_engine$)
+            LET Engines(Engines_Count).id = LCASE$(ini_id$)
             
-            LET Engines(Engines_Count).dir = STRADD&(dir$)
+            LET Engines(Engines_Count).dir = dir$
             
             SELECT CASE LCASE$(ini_tier$)
                 CASE "ultra": LET Engines(Engines_Count).tier = TIER_ULTRA
@@ -119,11 +119,11 @@ SUB Engines_Enumerate()
             
             LET Engines(Engines_Count).rank = VAL(ini_rank$)
             
-            LET Engines(Engines_Count).title = STRADD&(ini_title$)
-            LET Engines(Engines_Count).desc = STRADD&(ini_desc$)
+            LET Engines(Engines_Count).title = ini_title$
+            LET Engines(Engines_Count).desc = ini_desc$
             
             LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
-            LET Engines(Engines_Count).exe = STRADD&(ini_exe$)
+            LET Engines(Engines_Count).exe = ini_exe$
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
             LET Engines(Engines_Count).bit = VAL(ini_bit$)
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
@@ -138,11 +138,11 @@ SUB Engines_Enumerate()
                     LET Engines(Engines_Count).kin = 0
             END SELECT
             
-            LET Engines(Engines_Count).cfg = STRADD&(ini_cfg$)
-            LET Engines(Engines_Count).save = STRADD&(ini_save$)
-            LET Engines(Engines_Count).tags = STRADD&(ini_tags$)
-            LET Engines(Engines_Count).auto = STRADD&(ini_auto$)
-            LET Engines(Engines_Count).cmd = STRADD&(ini_cmd$)
+            LET Engines(Engines_Count).cfg = ini_cfg$
+            LET Engines(Engines_Count).save = ini_save$
+            LET Engines(Engines_Count).tags = ini_tags$
+            LET Engines(Engines_Count).auto = ini_auto$
+            LET Engines(Engines_Count).cmd = ini_cmd$
             
             NextEngine:
             LET ini_index% = ini_index% + 1
@@ -221,8 +221,8 @@ SUB Engines_Enumerate()
                     ELSEIF kB% = kA% THEN
                         'compare the names (alphabetically sort engines)
                         DIM nA$, nB$
-                        LET nA$ = STRGET$(Engines(A%).engine)
-                        LET nB$ = STRGET$(Engines(B%).engine)
+                        LET nA$ = Engines(A%).engine
+                        LET nB$ = Engines(B%).engine
                         
                         IF nB$ < nA$ THEN
                             SWAP Engines(A%), Engines(B%)
@@ -281,7 +281,7 @@ SUB Engines_Enumerate()
     'create a look-up table of which engines provide which tags
     REDIM EngineTags(1 TO Engines_Count, 0 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Engines)
-        LET tag$ = Tags_Split$(STRGET$(Engines(i).tags))
+        LET tag$ = Tags_Split$(Engines(i).tags)
         DO WHILE tag$ <> ""
             'find the tag index
             LET tag% = Tags_Find%(tag$)
@@ -296,7 +296,7 @@ SUB Engines_Enumerate()
     'enumerating the engines, as all unique tags will be known by then
     REDIM GameTags(1 TO Games_Count, 1 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Games)
-        LET tag$ = Tags_Split$(STRGET$(Games(i).tags))
+        LET tag$ = Tags_Split$(Games(i).tags)
         DO WHILE tag$ <> ""
             'find the tag index
             LET tag% = Tags_Find%(tag$)
@@ -325,8 +325,8 @@ SUB Engines_Filter()
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
         IF CMD_USE$ <> "" THEN
-            IF STRGET$(Engines(i).engine) <> LCASE$(CMD_USE$) _
-               AND STRGET$(Engines(i).id) <> LCASE$(CMD_USE$) _
+            IF Engines(i).engine <> LCASE$(CMD_USE$) _
+               AND Engines(i).id <> LCASE$(CMD_USE$) _
             THEN
                 _CONTINUE
             END IF
@@ -393,8 +393,8 @@ SUB Engines_Filter()
     ''PRINT "Candidate Engines:"
     ''PRINT "------------------"
     ''FOR i = Engines_ListCount TO 1 STEP -1
-    ''    PRINT "- " + STRGET$(Engines(Engines_List(i)).id) + ": " _
-    ''        + STRGET$(Engines(Engines_List(i)).title), STRINT$(Engines(Engines_List(i)).type)
+    ''    PRINT "- " + Engines(Engines_List(i)).id + ": " _
+    ''        + Engines(Engines_List(i)).title, STRINT$(Engines(Engines_List(i)).type)
     ''    IF i MOD 24 = 0 THEN SLEEP
     ''NEXT i
     ''PRINT ""

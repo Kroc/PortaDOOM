@@ -6,14 +6,14 @@ TYPE Engine
     'ID of the engine as a whole, rather than a specific version
     'e.g. "gzdoom" instead of "gzdoom-35". this is used to group
     'together all versions of an engine under one name
-    engine AS LONG
+    engine AS STRING
     
     'the directory name the engine is in
-    dir AS LONG
+    dir AS STRING
     
     'ID of the particular engine instance,
     'e.g. a specific version or binary such as x86/x64
-    id AS LONG
+    id AS STRING
     
     'a comma-separated list of which DOOM-engines are supported by the engine.
     'these can be any of DOOM, CHEX, DOOM2, HERETIC, HEXEN, STRIFE or DOOM64
@@ -22,18 +22,18 @@ TYPE Engine
     'these are specifically named after the INI-file param names:
     tier AS INTEGER '"high", "medium" or "low" tier
     rank AS INTEGER
-    title AS LONG '..on-screen "friendly name"
-    desc AS LONG '...short description of the engine
-    exe AS LONG '....executable file-name
+    title AS STRING 'on-screen "friendly name"
+    desc AS STRING '.short description of the engine
+    exe AS STRING '..executable file-name
     ver AS INTEGER '.engine's version number
     bit AS _BYTE '...executable architecture: 32 or 64 (bit)
     vid AS _BYTE '...renderer colour-depth, i.e. 8, 24, 32
     kin AS _BYTE '...a marker to indicate the engine's genealogy
-    cfg AS LONG '....slug to use in the config file-name
-    save AS LONG '...save-folder name to use
-    tags AS LONG '...comma-separated tags list the engine supports
-    auto AS LONG '...semi-colon separated list of WADs to always include
-    cmd AS LONG '....additional command-line parameters to use when launching
+    cfg AS STRING '..slug to use in the config file-name
+    save AS STRING '.save-folder name to use
+    tags AS STRING '.comma-separated tags list the engine supports
+    auto AS STRING '.semi-colon separated list of WADs to always include
+    cmd AS STRING '..additional command-line parameters to use when launching
 END TYPE
 
 CONST TIER_ULTRA = 3 '"high" tier engine, ideal for discrete GPUs
