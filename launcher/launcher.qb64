@@ -8,7 +8,6 @@
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\ascii.bi'
 '$INCLUDE:'lib\consts.bi'
-'$INCLUDE:'lib\strings.bi'
 '$INCLUDE:'lib\reg.bi'
 
 'PortaDOOM Launcher declarations:
