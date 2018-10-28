@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ zdoom /PWAD innocenceX2.wad
