@@ -22,10 +22,10 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
-[-] LAUNCHER : Gussy up game selection (like engine selection)
+[X] LAUNCHER : Gussy up game selection (like engine selection)
 [ ] LAUNCHER : Gussy up skill selection
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
-[ ] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
+[X] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
@@ -35,8 +35,8 @@
 
 [P3] Feature Enhancements:
 ================================================================================
-[ ] LAUNCHER : Batch files to test engines in each engine directory
-    (will make testing on XP easier)
+[X] LAUNCHER : Batch files to test engines in each engine directory
+    (will make testing on XP easier); depends on `use` in INI files?
 [ ] Add Valiant: Vaccinated Edition
 [ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly

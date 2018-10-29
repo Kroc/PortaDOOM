@@ -1,5 +1,9 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'for speed, default to long (32-bit) for variables
+'(and function returns, if not otherwise specified)
+DEFLNG a-z
+
 'third-party library declarations:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\INI-Manager\ini.bi'

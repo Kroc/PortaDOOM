@@ -1,7 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 '   Engines_Enumerate()
-'   Engines_KinValue%(kin$*1)   -> INTEGER
 '   Engines_Filter()
 '   Engines_Select(engine%)
 '   Engines_GetType%(type$)     -> INTEGER
@@ -324,9 +323,9 @@ SUB Engines_Filter()
     FOR i = 1 TO UBOUND(Engines)
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
-        IF CMD_USE$ <> "" THEN
-            IF Engines(i).engine <> LCASE$(CMD_USE$) _
-               AND Engines(i).id <> LCASE$(CMD_USE$) _
+        IF Games_Selected.use <> "" THEN
+            IF Engines(i).engine <> Games_Selected.use _
+               AND Engines(i).id <> Games_Selected.use _
             THEN
                 _CONTINUE
             END IF

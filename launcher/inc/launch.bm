@@ -353,7 +353,7 @@ END IF
 
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
-	LET file$ = CMD_DEH$
+    LET file$ = CMD_DEH$
     LET find$ = WADs_Find$(file$)
     'file missing?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
@@ -369,12 +369,12 @@ END IF
 LET CMD_BEX$ = Games_Selected.bex
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
-	LET file$ = CMD_BEX$
+    LET file$ = CMD_BEX$
     LET find$ = WADs_Find$(file$)
     'file missing?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
     
-	'add it to the command-line
+    'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce

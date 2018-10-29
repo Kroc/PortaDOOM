@@ -14,10 +14,13 @@ TYPE Game
     pre AS STRING '.........list of files to load *before* the PWAD
     files AS STRING '.......list of additional files to include
     exec AS STRING '........script file to execute (ZDoom-based engines)
-    cmplvl AS _BYTE '.......can be negative to specify "not given"
     deh AS STRING '.........DeHackEd script to load
     bex AS STRING '.........Boom-EXtended DeHackEd script to load
-    tags AS STRING '........comma-separated tags list the game requires
+    
+    use AS STRING '.........an engine-id to use
+    tags AS STRING '........comma-separated list of tags the game requires
+    cmplvl AS _BYTE '.......can be negative to specify "not given"
+    
     vid AS _UNSIGNED _BYTE 'renderer colour-depth required
     warp_e AS _BYTE '.......warp to given episode number
     warp_m AS _BYTE '.......warp to given map number
