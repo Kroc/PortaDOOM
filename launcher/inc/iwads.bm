@@ -36,7 +36,7 @@ FUNCTION IWADs_FindMeta&(file_path$)
     FOR i = 1 TO IWADs_Count
         'get the IWAD file name from the record
         DIM iwad_name$
-        LET iwad_name$ = UCASE$(Paths_GetFileName$(STRGET$(IWADs(i).path)))
+        LET iwad_name$ = UCASE$(Paths_GetFileName$(IWADs(i).path))
         'does the IWAD file-name match?
         IF iwad_name$ = file_name$ THEN
             'a record for this IWAD already exists,
@@ -165,22 +165,22 @@ FUNCTION IWADs_Add&( _
     'process the tag list
     CALL Tags_Add(tags$)
     
-    LET IWADs(IWADs_Count).id = STRADD&(id$)
-    LET IWADs(IWADs_Count).name = STRADD&(name$)
+    LET IWADs(IWADs_Count).id = id$
+    LET IWADs(IWADs_Count).name = name$
     LET IWADs(IWADs_Count).type = game_type%
-    LET IWADs(IWADs_Count).title = STRADD&(title$)
-    LET IWADs(IWADs_Count).path = STRADD&(path$)
-    LET IWADs(IWADs_Count).deh = STRADD&(deh$)
-    LET IWADs(IWADs_Count).tags = STRADD&(tags$)
-    LET IWADs(IWADs_Count).skill1 = STRADD&(skill1$)
-    LET IWADs(IWADs_Count).skill2 = STRADD&(skill2$)
-    LET IWADs(IWADs_Count).skill3 = STRADD&(skill3$)
-    LET IWADs(IWADs_Count).skill4 = STRADD&(skill4$)
-    LET IWADs(IWADs_Count).skill5 = STRADD&(skill5$)
-    LET IWADs(IWADs_Count).skill6 = STRADD&(skill6$)
-    LET IWADs(IWADs_Count).skill7 = STRADD&(skill7$)
-    LET IWADs(IWADs_Count).skill8 = STRADD&(skill8$)
-    LET IWADs(IWADs_Count).skill9 = STRADD&(skill9$)
+    LET IWADs(IWADs_Count).title = title$
+    LET IWADs(IWADs_Count).path = path$
+    LET IWADs(IWADs_Count).deh = deh$
+    LET IWADs(IWADs_Count).tags = tags$
+    LET IWADs(IWADs_Count).skill1 = skill1$
+    LET IWADs(IWADs_Count).skill2 = skill2$
+    LET IWADs(IWADs_Count).skill3 = skill3$
+    LET IWADs(IWADs_Count).skill4 = skill4$
+    LET IWADs(IWADs_Count).skill5 = skill5$
+    LET IWADs(IWADs_Count).skill6 = skill6$
+    LET IWADs(IWADs_Count).skill7 = skill7$
+    LET IWADs(IWADs_Count).skill8 = skill8$
+    LET IWADs(IWADs_Count).skill9 = skill9$
     
 END FUNCTION
 

@@ -20,8 +20,8 @@ SUB Tags_Add (tagList$)
         
         'increase the number of known tags
         LET tag% = UBOUND(Tags) + 1
-        REDIM _PRESERVE Tags(1 TO tag%) AS LONG
-        LET Tags(tag%) = STRADD&(tag$)
+        REDIM _PRESERVE Tags(1 TO tag%) AS STRING
+        LET Tags(tag%) = tag$
         
         NextTag:
         LET tag$ = Tags_Split$("")
@@ -33,7 +33,7 @@ END SUB
 FUNCTION Tags_Find% (tag$)
     'TODO: this could be done by index only
     FOR Tags_Find% = 1 TO UBOUND(Tags)
-        IF STRGET$(Tags(Tags_Find%)) = tag$ THEN EXIT FUNCTION
+        IF Tags(Tags_Find%) = tag$ THEN EXIT FUNCTION
     NEXT
     
     'not found

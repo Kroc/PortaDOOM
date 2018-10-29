@@ -1,0 +1,1 @@
+@ECHO OFF & PUSHD "%~dp0" & "../../launcher.exe" "porta-doom.ini"

@@ -1,39 +1,11 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'   STRADD&(text$)              -> LONG
-'   STRGET$(index&)             -> STRING
 '   ISINT(text$)                -> INTEGER
 '   STRINT$(number&)            -> STRING
 '   TRUNCATE$(text$, length%)   -> STRING
 '   RTRUNCATE$(text$, length%)  -> STRING
 '   PAD$(text$, length%)        -> STRING
 '   UTF8ANSI$(text$)            -> STRING
-
-'=============================================================================
-FUNCTION STRADD&(text$)
-    'accidental nullstring?
-    IF text$ = "" THEN
-        LET STRADD& = 0
-        EXIT FUNCTION
-    END IF
-    
-    'we'll return the index of the string added
-    LET STRADD& = UBOUND(Strings$) + 1
-    'increase the size of the string pool
-    REDIM _PRESERVE Strings$(1 TO STRADD&)
-    'assign the string, converting to ASNSI for clean output later
-    LET Strings$(STRADD&) = UTF8ANSI(text$)
-END FUNCTION
-
-'=============================================================================
-FUNCTION STRGET$(index&)
-    'accidental nullstring?
-    IF index& = 0 THEN
-        LET STRGET$ = ""
-    ELSE
-        LET STRGET$ = Strings$(index&)
-    END IF
-END FUNCTION
 
 'is a string an integer? (only numeric digits)
 '=============================================================================

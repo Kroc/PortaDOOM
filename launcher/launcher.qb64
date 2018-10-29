@@ -1,5 +1,9 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'for speed, default to long (32-bit) for variables
+'(and function returns, if not otherwise specified)
+DEFLNG a-z
+
 'third-party library declarations:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\INI-Manager\ini.bi'
@@ -8,7 +12,6 @@
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\ascii.bi'
 '$INCLUDE:'lib\consts.bi'
-'$INCLUDE:'lib\strings.bi'
 '$INCLUDE:'lib\reg.bi'
 
 'PortaDOOM Launcher declarations:
@@ -118,14 +121,14 @@ PRINT ""
 DIM H%
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";: COLOR YELLOW
-    PRINT TRUNCATE$(STRGET$(Games(i).title), UI_SCREEN_WIDTH - 5 - 2)
+    PRINT TRUNCATE$(Games(i).title, UI_SCREEN_WIDTH - 5 - 2)
     PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
     COLOR LIME
-    IF Games(i).desc <> 0 THEN
+    IF Games(i).desc <> "" THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Games(i).desc) _
+            Games(i).desc _
         )
         DIM j AS LONG
         FOR j = CSRLIN - H% TO CSRLIN - 1
@@ -193,15 +196,15 @@ IF Engines_SelectedUltra <> 0 THEN
     PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
     COLOR WHITE
     PRINT TRUNCATE$( _
-        "    " + STRGET$(Engines(Engines_SelectedUltra).title), _
+        "    " + Engines(Engines_SelectedUltra).title, _
         UI_SCREEN_WIDTH - 5 _
     )
     PRINT ""
-    IF Engines(Engines_SelectedUltra).desc <> 0 THEN
+    IF Engines(Engines_SelectedUltra).desc <> "" THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedUltra).desc) _
+            Engines(Engines_SelectedUltra).desc _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
@@ -216,15 +219,15 @@ IF Engines_SelectedFast <> 0 THEN
     PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
     COLOR WHITE
     PRINT TRUNCATE$( _
-        "    " + STRGET$(Engines(Engines_SelectedFast).title), _
+        "    " + Engines(Engines_SelectedFast).title, _
         UI_SCREEN_WIDTH - 5 _
     )
     PRINT ""
-    IF Engines(Engines_SelectedFast).desc <> 0 THEN
+    IF Engines(Engines_SelectedFast).desc <> "" THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedFast).desc) _
+            Engines(Engines_SelectedFast).desc _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
@@ -239,15 +242,15 @@ IF Engines_SelectedRetro <> 0 THEN
     PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
     COLOR WHITE
     PRINT TRUNCATE$( _
-        "    " + STRGET$(Engines(Engines_SelectedRetro).title), _
+        "    " + Engines(Engines_SelectedRetro).title, _
         UI_SCREEN_WIDTH - 5 _
     )
     PRINT ""
-    IF Engines(Engines_SelectedRetro).desc <> 0 THEN
+    IF Engines(Engines_SelectedRetro).desc <> "" THEN
         COLOR LIME
         LET H% = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            STRGET$(Engines(Engines_SelectedRetro).desc) _
+            Engines(Engines_SelectedRetro).desc _
         )
         FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)

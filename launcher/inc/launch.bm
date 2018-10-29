@@ -65,7 +65,7 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVES$)
 'differing versions, so a common save name is provided in the INI
 DIM DIR_SAVE_ENGINE$
 LET DIR_SAVE_ENGINE$ = Paths_AddSlash$( _
-    DIR_SAVES$ + STRGET$(Engines_Selected.save) _
+    DIR_SAVES$ + Engines_Selected.save _
 )
 
 'does this folder exist?
@@ -76,14 +76,14 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_ENGINE$)
 DIM DIR_SAVE_GAME$
 
 'if the game is using a PWAD,
-IF Games_Selected.pwad <> 0 THEN
+IF Games_Selected.pwad <> "" THEN
     'use that name for the save folder
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-      + Paths_GetFileBaseName$(STRGET$(Games_Selected.pwad))
+      + Paths_GetFileBaseName$(Games_Selected.pwad)
 ELSE
     'otherwise just use the IWAD name
     LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-      + Paths_GetFileBaseName$(STRGET$(IWADs_Selected.path))
+      + Paths_GetFileBaseName$(IWADs_Selected.path)
 END IF
 
 'does this folder exist?
@@ -93,17 +93,17 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_GAME$)
 '[02] engine executable:
 '-----------------------------------------------------------------------------
 DIM DIR_ENGINE$
-LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(STRGET$(Engines_Selected.dir))
+LET DIR_ENGINE$ = DIR_PORTS$ + Paths_AddSlash$(Engines_Selected.dir)
 
 'add the engine executable to the command-line
 LET CMD$ = CHR$(34) _
-         + Launch_FixPath$(DIR_ENGINE$) + STRGET$(Engines_Selected.exe) _
+         + Launch_FixPath$(DIR_ENGINE$) + Engines_Selected.exe _
          + CHR$(34)
 
 COLOR YELLOW: PRINT "         port : ";: COLOR UI_FORECOLOR
-PRINT RTRUNCATE$(STRGET$(Engines_Selected.title), UI_SCREEN_WIDTH - 17)
+PRINT RTRUNCATE$(Engines_Selected.title, UI_SCREEN_WIDTH - 17)
 COLOR YELLOW: PRINT "       engine : ";: COLOR UI_FORECOLOR
-PRINT RTRUNCATE$(DIR_ENGINE$ + STRGET$(Engines_Selected.exe), UI_SCREEN_WIDTH - 17)
+PRINT RTRUNCATE$(DIR_ENGINE$ + Engines_Selected.exe, UI_SCREEN_WIDTH - 17)
 PRINT ""
 
 '-----------------------------------------------------------------------------
@@ -124,7 +124,7 @@ END IF
 'engine's config file doesn't exist yet. note that this leaves off the
 'file-extension, for now as we may have to add an extra slug to the name
 DIM cfg_default$
-LET cfg_default$ = DIR_CONFIG$ + "default." + STRGET$(Engines_Selected.cfg)
+LET cfg_default$ = DIR_CONFIG$ + "default." + Engines_Selected.cfg
 
 'was the command-line parameter given to use the default config-file?
 IF CMD_DEFAULT` THEN
@@ -134,8 +134,7 @@ ELSE
     'build the path to the user's config file (for selected engine)
     'note that this leaves off the file extension, for now
     DIM cfg_engine$
-    LET cfg_engine$ = DIR_SAVE_ENGINE$ _
-                    + "config." + STRGET$(Engines_Selected.cfg)
+    LET cfg_engine$ = DIR_SAVE_ENGINE$ + "config." + Engines_Selected.cfg
 
     'if the user's config file doesn't exist,
     'make a copy of the default:
@@ -208,7 +207,7 @@ END IF
 '-----------------------------------------------------------------------------
 'try and locate the IWAD path
 'FIXME: handle FreeDOOM replacement / BFG-edition patching
-LET CMD_IWAD$ = IWADs_GetPath$(STRGET$(IWADs_Selected.path))
+LET CMD_IWAD$ = IWADs_GetPath$(IWADs_Selected.path)
 'TODO: IWAD not found at all (no substitution)
 LET DIR_IWAD$ = Paths_GetPath$(CMD_IWAD$)
 
@@ -224,9 +223,9 @@ PRINT RTRUNCATE$(CMD_IWAD$, UI_SCREEN_WIDTH - 17)
 '-----------------------------------------------------------------------------
 'any files that should be automatically included with the engine?
 '(e.g. "brightmaps.pk3", "lights.pk3")
-IF Engines_Selected.auto > 0 THEN
+IF Engines_Selected.auto <> "" THEN
     'read the first file from the list
-    LET file$ = WADs_Split$(STRGET$(Engines_Selected.auto))
+    LET file$ = WADs_Split$(Engines_Selected.auto)
     DO
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
@@ -246,9 +245,9 @@ END IF
 'games can also specify their own files to load
 'before the PWAD as sometimes load order is sensitive
 
-IF Games_Selected.pre > 0 THEN
+IF Games_Selected.pre <> "" THEN
     'read the first file from the list
-    LET file$ = STRGET$(Games_Selected.pre)
+    LET file$ = Games_Selected.pre
     LET file$ = WADs_Split$(file$)
     DO
         'locate the file according to WAD search rules
@@ -273,9 +272,9 @@ END IF
 'doom engines typically don't have a specific concept of a "PWAD", it's just
 'an additional file to load like any other and it's not necessarily the first
 'listed -- that will likely be the auto-load files
-IF Games_Selected.pwad <> 0 THEN
+IF Games_Selected.pwad <> "" THEN
     'search for the PWAD
-    LET file$ = STRGET$(Games_Selected.pwad)
+    LET file$ = Games_Selected.pwad
     LET find$ = WADs_GetPWADPath$(file$)
     'file not found?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
@@ -292,9 +291,9 @@ END IF
 '-----------------------------------------------------------------------------
 '[08] file-list:
 '-----------------------------------------------------------------------------
-IF Games_Selected.files <> 0 THEN
+IF Games_Selected.files <> "" THEN
     'read the first file from the list
-    LET file$ = WADs_Split$(STRGET$(Games_Selected.files))
+    LET file$ = WADs_Split$(Games_Selected.files)
     DO
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
@@ -338,13 +337,13 @@ END IF
 '[09] DEH & BEX:
 '-----------------------------------------------------------------------------
 'has a DEH file been specified?
-LET CMD_DEH$ = STRGET$(Games_Selected.deh)
+LET CMD_DEH$ = Games_Selected.deh
 
 'does the IWAD provide its own DEH file?
 'CHEX.WAD does this, so does REKKR stand-alone
-IF IWADs_Selected.deh <> 0 THEN
+IF IWADs_Selected.deh <> "" THEN
     'TODO: handle conflict
-    LET CMD_DEH$ = STRGET$(IWADs_Selected.deh)
+    LET CMD_DEH$ = IWADs_Selected.deh
     'if this is CHEX.WAD then PrBoom+ likes a `-exe chex` parameter for
     'demo compatibility. we don't have a generic way to sepecify this yet
     IF UCASE$(Paths_GetFileBaseName$(CMD_IWAD$)) = "CHEX" THEN
@@ -354,7 +353,7 @@ END IF
 
 IF CMD_DEH$ <> "" THEN
     'find the DEH file
-	LET file$ = CMD_DEH$
+    LET file$ = CMD_DEH$
     LET find$ = WADs_Find$(file$)
     'file missing?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
@@ -367,15 +366,15 @@ IF CMD_DEH$ <> "" THEN
 END IF
 
 'has a BEX file been specified?
-LET CMD_BEX$ = STRGET$(Games_Selected.bex)
+LET CMD_BEX$ = Games_Selected.bex
 IF CMD_BEX$ <> "" THEN
     'find the BEX file
-	LET file$ = CMD_BEX$
+    LET file$ = CMD_BEX$
     LET find$ = WADs_Find$(file$)
     'file missing?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
     
-	'add it to the command-line
+    'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
              + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
     'and announce
@@ -436,49 +435,49 @@ OR Games_Selected.warp_m >= 0 THEN
         PRINT ""
         
         'if the PWAD provides its own skill-levels, use those:
-        IF Games_Selected.skill1 <> 0 THEN
+        IF Games_Selected.skill1 <> "" THEN
             'work through the list of IWAD skill-levels (up to 9)
-            IF Games_Selected.skill1 > 0 THEN
+            IF Games_Selected.skill1 <> "" THEN
                 PRINT "         [1]  ";
-                PRINT STRGET$(Games_Selected.skill1)
+                PRINT Games_Selected.skill1
             END IF
-            IF Games_Selected.skill2 > 0 THEN
+            IF Games_Selected.skill2 <> "" THEN
                 PRINT "         [2]  ";
-                PRINT STRGET$(Games_Selected.skill2)
+                PRINT Games_Selected.skill2
             END IF
-            IF Games_Selected.skill3 > 0 THEN
+            IF Games_Selected.skill3 <> "" THEN
                 PRINT "         [3]  ";
-                PRINT STRGET$(Games_Selected.skill3)
+                PRINT Games_Selected.skill3
             END IF
-            IF Games_Selected.skill4 > 0 THEN
+            IF Games_Selected.skill4 <> "" THEN
                 PRINT "         [4]  ";
-                PRINT STRGET$(Games_Selected.skill4)
+                PRINT Games_Selected.skill4
             END IF
-            IF Games_Selected.skill5 > 0 THEN
+            IF Games_Selected.skill5 <> "" THEN
                 PRINT "         [5]  ";
-                PRINT STRGET$(Games_Selected.skill5)
+                PRINT Games_Selected.skill5
             END IF
-            IF Games_Selected.skill6 > 0 THEN
+            IF Games_Selected.skill6 <> "" THEN
                 PRINT "         [6]  ";
-                PRINT STRGET$(Games_Selected.skill6)
+                PRINT Games_Selected.skill6
             END IF
-            IF Games_Selected.skill7 > 0 THEN
+            IF Games_Selected.skill7 <> "" THEN
                 PRINT "         [7]  ";
-                PRINT STRGET$(Games_Selected.skill7)
+                PRINT Games_Selected.skill7
             END IF
-            IF Games_Selected.skill8 > 0 THEN
+            IF Games_Selected.skill8 <> "" THEN
                 PRINT "         [8]  ";
-                PRINT STRGET$(Games_Selected.skill8)
+                PRINT Games_Selected.skill8
             END IF
-            IF Games_Selected.skill9 > 0 THEN
+            IF Games_Selected.skill9 <> "" THEN
                 PRINT "         [9]  ";
-                PRINT STRGET$(Games_Selected.skill9)
+                PRINT Games_Selected.skill9
             END IF
             
         'get the list of skill-levels from the IWAD meta-data;
         'if there is none, default to DOOM's descriptions
-        ELSEIF Games_Selected.iwad = 0 _
-            OR IWADs_Selected.skill1 = 0 _
+        ELSEIF Games_Selected.iwad > 0 _
+            OR IWADs_Selected.skill1 = "" _
         THEN
             PRINT "         [1]  I'm Too Young To Die"
             PRINT "         [2]  Hey, Not Too Rough"
@@ -487,41 +486,41 @@ OR Games_Selected.warp_m >= 0 THEN
             PRINT "         [5]  Nightmare!"
         ELSE
             'work through the list of IWAD skill-levels (up to 9)
-            IF IWADs_Selected.skill1 > 0 THEN
+            IF IWADs_Selected.skill1 <> "" THEN
                 PRINT "         [1]  ";
-                PRINT STRGET$(IWADs_Selected.skill1)
+                PRINT IWADs_Selected.skill1
             END IF
-            IF IWADs_Selected.skill2 > 0 THEN
+            IF IWADs_Selected.skill2 <> "" THEN
                 PRINT "         [2]  ";
-                PRINT STRGET$(IWADs_Selected.skill2)
+                PRINT IWADs_Selected.skill2
             END IF
-            IF IWADs_Selected.skill3 > 0 THEN
+            IF IWADs_Selected.skill3 <> "" THEN
                 PRINT "         [3]  ";
-                PRINT STRGET$(IWADs_Selected.skill3)
+                PRINT IWADs_Selected.skill3
             END IF
-            IF IWADs_Selected.skill4 > 0 THEN
+            IF IWADs_Selected.skill4 <> "" THEN
                 PRINT "         [4]  ";
-                PRINT STRGET$(IWADs_Selected.skill4)
+                PRINT IWADs_Selected.skill4
             END IF
-            IF IWADs_Selected.skill5 > 0 THEN
+            IF IWADs_Selected.skill5 <> "" THEN
                 PRINT "         [5]  ";
-                PRINT STRGET$(IWADs_Selected.skill5)
+                PRINT IWADs_Selected.skill5
             END IF
-            IF IWADs_Selected.skill6 > 0 THEN
+            IF IWADs_Selected.skill6 <> "" THEN
                 PRINT "         [6]  ";
-                PRINT STRGET$(IWADs_Selected.skill6)
+                PRINT IWADs_Selected.skill6
             END IF
-            IF IWADs_Selected.skill7 > 0 THEN
+            IF IWADs_Selected.skill7 <> "" THEN
                 PRINT "         [7]  ";
-                PRINT STRGET$(IWADs_Selected.skill7)
+                PRINT IWADs_Selected.skill7
             END IF
-            IF IWADs_Selected.skill8 > 0 THEN
+            IF IWADs_Selected.skill8 <> "" THEN
                 PRINT "         [8]  ";
-                PRINT STRGET$(IWADs_Selected.skill8)
+                PRINT IWADs_Selected.skill8
             END IF
-            IF IWADs_Selected.skill9 > 0 THEN
+            IF IWADs_Selected.skill9 <> "" THEN
                 PRINT "         [9]  ";
-                PRINT STRGET$(IWADs_Selected.skill9)
+                PRINT IWADs_Selected.skill9
             END IF
         END IF
         
@@ -553,9 +552,9 @@ END IF
 '-----------------------------------------------------------------------------
 '[12] execute script:
 '-----------------------------------------------------------------------------
-IF Games_Selected.exec <> 0 THEN
+IF Games_Selected.exec <> "" THEN
     'try and find the file:
-    LET file$ = STRGET$(Games_Selected.exec)
+    LET file$ = Games_Selected.exec
     LET find$ = WADs_Find$(file$)
    'file missing?
     IF find$ = "" THEN CALL ErrorFileNotFound(file$)
@@ -603,7 +602,7 @@ END IF
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
 'TODO: DOOM Retro will support both in the next release
-IF LEFT$(STRGET$(Engines_Selected.engine), 11) = "prboom-plus" THEN
+IF LEFT$(Engines_Selected.engine, 11) = "prboom-plus" THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
 ELSE
     'all other engines use `-savedir`,
@@ -623,14 +622,14 @@ LET CMD$ = CMD$ + " -shotdir " + CHR$(34) + DIR_SCREENSHOT$ + CHR$(34)
 
 'DOOM 64 EX: fix for Sound Font not being found (it's looking in the 'current
 'directory' rather than the executable's directory?)
-IF STRGET$(Engines_Selected.engine) = "doom64ex" THEN
+IF Engines_Selected.engine = "doom64ex" THEN
     LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
                     + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
 END IF
 
 'any engine-specific command-line params to be added?
-IF Engines_Selected.cmd <> 0 THEN
-    LET CMD$ = CMD$ + " " + STRGET$(Engines_Selected.cmd)
+IF Engines_Selected.cmd <> "" THEN
+    LET CMD$ = CMD$ + " " + Engines_Selected.cmd
 END IF
 
 'auto-quit? (ZDoom-based engines only)

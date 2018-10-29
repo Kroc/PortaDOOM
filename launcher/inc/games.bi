@@ -1,37 +1,40 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
 TYPE Game
-    id AS LONG
+    id AS STRING
     
-    title AS LONG
-    desc AS LONG '..........brief description
+    title AS STRING
+    desc AS STRING '........brief description
     
     'this is an index into the `IWADs` array where the meta-data is stored
     iwad AS _BYTE
     
     type AS INTEGER '.......IWAD type
-    pwad AS LONG '..........PWAD to play
-    pre AS LONG '...........list of files to load *before* the PWAD
-    files AS LONG '.........list of additional files to include
-    exec AS LONG '..........script file to execute (ZDoom-based engines)
+    pwad AS STRING '........PWAD to play
+    pre AS STRING '.........list of files to load *before* the PWAD
+    files AS STRING '.......list of additional files to include
+    exec AS STRING '........script file to execute (ZDoom-based engines)
+    deh AS STRING '.........DeHackEd script to load
+    bex AS STRING '.........Boom-EXtended DeHackEd script to load
+    
+    use AS STRING '.........an engine-id to use
+    tags AS STRING '........comma-separated list of tags the game requires
     cmplvl AS _BYTE '.......can be negative to specify "not given"
-    deh AS LONG '...........DeHackEd script to load
-    bex AS LONG '...........Boom-EXtended DeHackEd script to load
-    tags AS LONG '..........comma-separated tags list the game requires
+    
     vid AS _UNSIGNED _BYTE 'renderer colour-depth required
     warp_e AS _BYTE '.......warp to given episode number
     warp_m AS _BYTE '.......warp to given map number
     skill AS _BYTE '........preset skill level
     
-    skill1 AS LONG '........replacement skill level 1 name
-    skill2 AS LONG '........replacement skill level 2 name
-    skill3 AS LONG '........replacement skill level 3 name
-    skill4 AS LONG '........replacement skill level 4 name
-    skill5 AS LONG '........replacement skill level 5 name
-    skill6 AS LONG '........replacement skill level 6 name
-    skill7 AS LONG '........replacement skill level 7 name
-    skill8 AS LONG '........replacement skill level 8 name
-    skill9 AS LONG '........replacement skill level 9 name
+    skill1 AS STRING '......replacement skill level 1 name
+    skill2 AS STRING '......replacement skill level 2 name
+    skill3 AS STRING '......replacement skill level 3 name
+    skill4 AS STRING '......replacement skill level 4 name
+    skill5 AS STRING '......replacement skill level 5 name
+    skill6 AS STRING '......replacement skill level 6 name
+    skill7 AS STRING '......replacement skill level 7 name
+    skill8 AS STRING '......replacement skill level 8 name
+    skill9 AS STRING '......replacement skill level 9 name
 END TYPE
 
 'array that holds all the games defined
