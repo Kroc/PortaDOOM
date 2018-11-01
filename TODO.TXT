@@ -18,15 +18,13 @@
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
-[X] LAUNCHER : Implement BFG edition patching
 [ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
-[X] LAUNCHER : Gussy up game selection (like engine selection)
+[X] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [ ] LAUNCHER : Gussy up skill selection
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
-[X] LAUNCHER : Cannot specify `/USE` in ini files; e.g. 50shades
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
@@ -39,7 +37,6 @@
 [X] LAUNCHER : Batch files to test engines in each engine directory
     (will make testing on XP easier); depends on `use` in INI files?
 [ ] Add Valiant: Vaccinated Edition
-[ ] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
     (currently an issue with this in QB64)
 [ ] LAUNCHER : Generate a GAMEINFO lump on-demand?

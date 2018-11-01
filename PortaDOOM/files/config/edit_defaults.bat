@@ -301,7 +301,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ============================================================================
 REM # launch the engine using our default config file
-"%LAUNCHER%" /DEFAULT /WAIT /USE %~1 /IWAD %~2
+"%LAUNCHER%" /AUTO /DEFAULT /WAIT /USE %~1 /IWAD %~2
 GOTO:EOF
 
 :launch_engine_sw
@@ -310,5 +310,5 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ============================================================================
 REM # launch the engine using our default config file
-"%LAUNCHER%" /DEFAULT /WAIT /USE %~1 /SW /IWAD %~2
+"%LAUNCHER%" /AUTO /DEFAULT /WAIT /USE %~1 /SW /IWAD %~2
 GOTO:EOF

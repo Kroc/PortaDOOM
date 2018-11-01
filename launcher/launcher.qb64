@@ -103,8 +103,11 @@ CLS 2: PRINT ""
 
 select_game:
 '-----------------------------------------------------------------------------
-'if only one game is defined, we don't need to offer a choice
-IF Games_Count =1 THEN
+'if only one game is defined (or `/AUTO` is defined),
+'we don't need to offer a choice
+IF Games_Count =1 _
+OR CMD_AUTO` = TRUE _
+THEN
     CALL Games_Select(1)
     GOTO select_engine
 END IF
@@ -122,8 +125,11 @@ CALL Engines_Enumerate
 'requirements and the user's preferences
 CALL Engines_Filter
 
-'if only one engine remains, no choice needed
-IF Engines_ListCount = 1 THEN
+'if only one engine remains (or `/AUTO` is defined),
+'no choice needed
+IF Engines_ListCount = 1 _
+OR CMD_AUTO` = TRUE _
+THEN
     CALL Engines_Select(Engines_List(1))
     GOTO launch
 END IF

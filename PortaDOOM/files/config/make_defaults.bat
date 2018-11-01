@@ -538,7 +538,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 %BIN_FART% "default.%~1.cfg" "alwaysrun off"		"alwaysrun on"
 %BIN_FART% "default.%~1.cfg" "messages off"		"messages on"
@@ -555,7 +555,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 REM # main keys
 %BIN_FART% "default.%~1.cfg" "key_up                        72"		"key_up                        17"
@@ -601,7 +601,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "glboom-plus"
 GOTO:EOF
 
@@ -611,7 +611,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /SW /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
 GOTO:EOF
 
@@ -642,7 +642,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # graphics
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -709,7 +709,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
@@ -841,7 +841,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 REM # VSync ON
 %BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
@@ -940,7 +940,7 @@ REM #    %1 = engine-name
 REM #    %2 = IWAD
 REM ----------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /USE "%~1" /DEFAULT /IWAD "%~2"
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 %BIN_FART% "default.%~1.cfg" "seta \"p_usecontext\" \"0\""	"seta \"p_usecontext\" \"1\""
 %BIN_FART% "default.%~1.cfg" "seta \"st_crosshair\" \"0\""	"seta \"st_crosshair\" \"1\""
