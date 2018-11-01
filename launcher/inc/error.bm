@@ -20,7 +20,6 @@ SUB ErrorScreen(title$)
     'print the error title
     PRINT " " + title$
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_DBL_H)
-    PRINT ""
     
 END SUB
 
@@ -30,7 +29,6 @@ SUB ErrorExit()
     PRINT ""
     PRINT " Command:"
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
-    PRINT ""
     PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, COMMAND$(0) + " " + COMMAND$
     
     VIEW PRINT
