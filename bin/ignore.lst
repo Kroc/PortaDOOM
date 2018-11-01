@@ -1,16 +1,24 @@
+# Windows junk
 Desktop.ini
 Thumbs.db
+
+# git files and the like
 .*
 
+# files purposefully excluded are
+# prefixed with double-underscore
 __*
 
+# left-overs from UPX compression
 *.upx
 *.bak
 
+# N64 ROMs!
 *.n64
 *.v64
 *.z64
 
+# don't accidentally include any commercial WADs
 CHEX.WAD
 DOOM.WAD
 DOOM2.WAD

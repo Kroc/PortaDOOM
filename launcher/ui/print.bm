@@ -1,0 +1,58 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'=============================================================================
+SUB PRINTWRAP_X(x~%%, w~%%, text$)
+    DIM NEWPOS%
+    LET NEWPOS% = PRINTWRAP%(x~%%, CSRLIN, w~%%,text$)
+END SUB
+
+'print a message to screen, handling word-wrapping and boundaries.
+'returns the final line-count actually used
+'=============================================================================
+FUNCTION PRINTWRAP%(x~%%, y~%%, w~%%, text$)
+    LOCATE y~%%, x~%%
+    
+    DIM last_spc%, char~%%
+    DIM line_len%
+    DIM line_count%
+    LET line_count% = 1
+    
+    LET text$ = text$ + " "
+    
+    DIM i AS _UNSIGNED LONG
+    LET i = 1: LET last_spc% = 1
+    DO
+        'get a single character from the source string
+        LET char~%% = ASC(text$, i)
+        'is this a space?
+        IF char~%% = ASC_SPC THEN
+            'does the current word over-hang?
+            IF line_len% >= w~%% THEN
+                'move to the next line
+                LET y~%% = y~%% + 1
+                LOCATE y~%%, x~%%
+                
+                LET line_count% = line_count% + 1
+                
+                'print the current word & space and continue
+                PRINT MID$(text$, last_spc% + 1, i - last_spc% - 1);
+                'the length of the new line is now this word+space
+                LET line_len% = i - last_spc%
+                'set this space as the next available break-point
+                LET last_spc% = i
+            ELSE
+                PRINT MID$(text$, last_spc%, i - last_spc%);
+                
+                LET last_spc% = i
+                LET line_len% = line_len% + 1
+            END IF
+        ELSE
+            LET line_len% = line_len% + 1
+        END IF
+        
+        LET i = i + 1
+    LOOP WHILE i <= LEN(text$)
+    PRINT ""
+    
+    LET PRINTWRAP% = line_count%
+END FUNCTION

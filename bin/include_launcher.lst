@@ -1,3 +1,5 @@
+launcher.exe
+
 wads\conversions\freedoom\
 wads\SHAREWARE\*.WAD
 wads\MASTER\*.TXT
@@ -6,8 +8,6 @@ wads\*.ini
 
 wads\chex.deh
 wads\chexdeh.txt
-
-launcher.exe
 
 tools\**
 

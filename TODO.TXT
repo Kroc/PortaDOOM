@@ -8,11 +8,12 @@
  -  [X] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
- -  [ ] parsing INI files
+ -  [-] parsing INI files
 [ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
+[ ] LAUNCHER : UI react instantly before processing wait
 [-] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD

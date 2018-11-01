@@ -1,15 +1,15 @@
 PortaDOOM.exe
-
-files\wads\conversions\freedoom\
-
 files\launcher.exe
+
+files\wads\doom2.ini
+files\wads\conversions\freedoom\
+files\wads\conversions\PSX\
 
 files\tools\xdelta3\
 
 files\config\default.gzdoom.ini
 
-files\ports\gzdoom-35_*\
+files\ports\gzdoom_*\
 
 pages\Home #??.dosmag
 pages\PlayStation DOOM #??.dosmag
-files\wads\conversions\PSX\

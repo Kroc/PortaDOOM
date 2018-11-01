@@ -4,6 +4,9 @@
 '(and function returns, if not otherwise specified)
 DEFLNG a-z
 
+'generic 'index' counters
+DIM i, j, h, w, x, y AS _UNSIGNED LONG
+
 'third-party library declarations:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\INI-Manager\ini.bi'
@@ -22,9 +25,6 @@ DEFLNG a-z
 '$INCLUDE:'inc\iwads.bi'
 
 '=============================================================================
-
-'generic 'index' counter
-DIM i AS _UNSIGNED LONG
 
 'temp variable for reading `INKEY$`
 DIM key$
@@ -87,7 +87,7 @@ LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 '=============================================================================
 'MAIN:
 '=============================================================================
-'$INCLUDE:'inc\ui_init.bi'
+'$INCLUDE:'ui\init.bi'
 
 COLOR BLACK, UI_FORECOLOR
 LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
@@ -109,56 +109,7 @@ IF Games_Count =1 THEN
     GOTO select_engine
 END IF
 
-'present game selection UI:
-'walk through the list of games
-
-CLS 2
-PRINT ""
-COLOR UI_FORECOLOR
-PRINT " Select game choice by pressing indicated number key:"
-PRINT ""
-
-DIM H%
-FOR i = 1 TO Games_Count
-    COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";: COLOR YELLOW
-    PRINT TRUNCATE$(Games(i).title, UI_SCREEN_WIDTH - 5 - 2)
-    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
-    COLOR LIME
-    IF Games(i).desc <> "" THEN
-        COLOR LIME
-        LET H% = PRINTWRAP%( _
-            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            Games(i).desc _
-        )
-        DIM j AS LONG
-        FOR j = CSRLIN - H% TO CSRLIN - 1
-            LOCATE j, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
-        NEXT j
-    END IF
-    PRINT ""
-NEXT i
-
-DO
-    'read the keyboard:
-    LET key$ = INKEY$
-    IF key$ = "" THEN _CONTINUE
-    
-    'is it a numeric key?
-    IF ISINT(key$) = FALSE THEN
-        'no, beep, and wait again
-        BEEP: _CONTINUE
-    END IF
-    
-    'is a number within range?
-    IF VAL(key$) > 0 AND VAL(key$) <= Games_Count THEN
-        'select that game
-        Games_Select(VAL(key$))
-        EXIT DO
-    END IF
-    
-    'not a valid number key
-    BEEP
-LOOP
+'$INCLUDE:'ui\select_game.bi'
 
 select_engine:
 '-----------------------------------------------------------------------------
@@ -181,167 +132,11 @@ END IF
 'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
-'present engine selection UI:
-
-CLS 2
-PRINT ""
-COLOR UI_FORECOLOR
-PRINT " We've selected the engines compatible with your computer and the chosen game;"
-PRINT " choose an engine that suits you by pressing the indicated key below:"
-PRINT ""
-
-IF Engines_SelectedUltra <> 0 THEN
-    COLOR AQUA: PRINT " [U] ULTRA: ";: COLOR YELLOW
-    PRINT "For high-end computers with dedicated graphics (GPU)"
-    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
-    COLOR WHITE
-    PRINT TRUNCATE$( _
-        "    " + Engines(Engines_SelectedUltra).title, _
-        UI_SCREEN_WIDTH - 5 _
-    )
-    PRINT ""
-    IF Engines(Engines_SelectedUltra).desc <> "" THEN
-        COLOR LIME
-        LET H% = PRINTWRAP%( _
-            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            Engines(Engines_SelectedUltra).desc _
-        )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
-            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
-        NEXT i
-    END IF
-    PRINT ""
-END IF
-
-IF Engines_SelectedFast <> 0 THEN
-    COLOR AQUA: PRINT " [F] FAST: ";: COLOR YELLOW
-    PRINT "For low-end computers or laptops with integrated graphics"
-    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
-    COLOR WHITE
-    PRINT TRUNCATE$( _
-        "    " + Engines(Engines_SelectedFast).title, _
-        UI_SCREEN_WIDTH - 5 _
-    )
-    PRINT ""
-    IF Engines(Engines_SelectedFast).desc <> "" THEN
-        COLOR LIME
-        LET H% = PRINTWRAP%( _
-            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            Engines(Engines_SelectedFast).desc _
-        )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
-            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
-        NEXT i
-    END IF
-    PRINT ""
-END IF
-
-IF Engines_SelectedRetro <> 0 THEN
-    COLOR AQUA: PRINT " [R] RETRO: ";: COLOR YELLOW
-    PRINT "If you prefer the original chunky pixel graphics"
-    PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
-    COLOR WHITE
-    PRINT TRUNCATE$( _
-        "    " + Engines(Engines_SelectedRetro).title, _
-        UI_SCREEN_WIDTH - 5 _
-    )
-    PRINT ""
-    IF Engines(Engines_SelectedRetro).desc <> "" THEN
-        COLOR LIME
-        LET H% = PRINTWRAP%( _
-            5, CSRLIN, UI_SCREEN_WIDTH - 6, _
-            Engines(Engines_SelectedRetro).desc _
-        )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
-            LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
-        NEXT i
-    END IF
-END IF
-
-DO
-    'read the keyboard:
-    LET key$ = INKEY$
-    IF key$ = "" THEN _CONTINUE
-    
-    SELECT CASE UCASE$(key$)
-        CASE "U"
-            IF Engines_SelectedUltra = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedUltra)
-            EXIT DO
-        CASE "F"
-            IF Engines_SelectedFast = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedFast)
-            EXIT DO
-        CASE "R"
-            IF Engines_SelectedRetro = 0 THEN BEEP: _CONTINUE
-            CALL Engines_Select(Engines_SelectedRetro)
-            EXIT DO
-        CASE ELSE
-            'not a valid key
-            BEEP
-    END SELECT
-LOOP
+'$INCLUDE:'ui\select_engine.bi'
 
 launch:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'inc\launch.bm'
-
-'=============================================================================
-SUB PRINTWRAP_X(x~%%, w~%%, text$)
-    DIM NEWPOS%
-    LET NEWPOS% = PRINTWRAP%(x~%%, CSRLIN, w~%%,text$)
-END SUB
-
-'print a message to screen, handling word-wrapping and boundaries.
-'returns the final line-count actually used
-'=============================================================================
-FUNCTION PRINTWRAP%(x~%%, y~%%, w~%%, text$)
-    LOCATE y~%%, x~%%
-    
-    DIM last_spc%, char~%%
-    DIM line_len%
-    DIM line_count%
-    LET line_count% = 1
-    
-    LET text$ = text$ + " "
-    
-    DIM i AS _UNSIGNED LONG
-    LET i = 1: LET last_spc% = 1
-    DO
-        'get a single character from the source string
-        LET char~%% = ASC(text$, i)
-        'is this a space?
-        IF char~%% = ASC_SPC THEN
-            'does the current word over-hang?
-            IF line_len% >= w~%% THEN
-                'move to the next line
-                LET y~%% = y~%% + 1
-                LOCATE y~%%, x~%%
-                
-                LET line_count% = line_count% + 1
-                
-                'print the current word & space and continue
-                PRINT MID$(text$, last_spc% + 1, i - last_spc% - 1);
-                'the length of the new line is now this word+space
-                LET line_len% = i - last_spc%
-                'set this space as the next available break-point
-                LET last_spc% = i
-            ELSE
-                PRINT MID$(text$, last_spc%, i - last_spc%);
-                
-                LET last_spc% = i
-                LET line_len% = line_len% + 1
-            END IF
-        ELSE
-            LET line_len% = line_len% + 1
-        END IF
-        
-        LET i = i + 1
-    LOOP WHILE i <= LEN(text$)
-    PRINT ""
-    
-    LET PRINTWRAP% = line_count%
-END FUNCTION
 
 '=============================================================================
 'PortaDOOM Launcher declarations:
@@ -362,3 +157,4 @@ END FUNCTION
 '$INCLUDE:'lib\strings.bm'
 '$INCLUDE:'lib\paths.bm'
 '$INCLUDE:'lib\reg.bm'
+'$INCLUDE:'ui\print.bm'

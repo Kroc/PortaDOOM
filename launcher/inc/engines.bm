@@ -14,7 +14,7 @@ SUB Engines_Enumerate()
     LET Engines_Count = 0
     
     'create a directory list in a file, containing only sub-folder names
-    CHDIR DIR_EXE$ + "ports"
+    CHDIR DIR_EXE$ + DIR_PORTS$
     SHELL _HIDE "DIR /AD /B > dir.tmp"
     
     DIM dir_handle%
@@ -31,13 +31,78 @@ SUB Engines_Enumerate()
         LET ini_path$ = _CWD$ + "\" + dir$ + "\porta-doom.ini"
         IF NOT _FILEEXISTS(ini_path$) THEN GOTO NextFolder
         
-        'read the global values
+        'read the global values:
+        
         DIM ini_engine$
         LET ini_engine$ = ReadSetting$(ini_path$, "global", "engine")
+        IF ini_engine$ = "" THEN
+            CALL ErrorScreen("ERROR: Invalid INI Definition")
+            PRINT " The `[global]`->`engine` field is missing " _
+                + "from the INI file:"
+            PRINT " " + CHR$(34) _
+                + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+            PRINT ""
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The `engine` field defines the common engine-name the " _
+              + "engine being defined belongs to. For example, an `engine`" _
+              + "field of 'gzdoom' is used to group all GZDoom engines " _
+              + "together, regardless of version."
+            PRINT ""
+            PRINT " Example:"
+            PRINT ""
+            PRINT "     [global]"
+            PRINT "     engine=gzdoom"
+            CALL ErrorExit: SYSTEM 1
+        END IF
+        
         DIM ini_tier$
         LET ini_tier$ = ReadSetting$(ini_path$, "global", "tier")
+        IF ini_tier$ = "" THEN
+            CALL ErrorScreen("ERROR: Invalid INI Definition")
+            PRINT " The `[global]`->`tier` field is missing " _
+                + "from the INI file:"
+            PRINT " " + CHR$(34) _
+                + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+            PRINT ""
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The `tier` field categorizes engines into one of three 'tiers':"
+            PRINT ""
+            PRINT "     ultra = high-resolution, high-end graphics (discrete GPU)"
+            PRINT "     fast  = high-resolution but fast graphics (integrated GPU)"
+            PRINT "     retro = low-resolution, chunky graphics"
+            PRINT ""
+            PRINT " Example:"
+            PRINT ""
+            PRINT "     [global]"
+            PRINT "     engine=choco-doom"
+            PRINT "     tier=retro"
+            CALL ErrorExit: SYSTEM 1
+        END IF
+        
         DIM ini_rank$
         LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
+        IF ini_rank$ = "" THEN
+            CALL ErrorScreen("ERROR: Invalid INI Definition")
+            PRINT " The `[global]`->`rank` field is missing " _
+                + "from the INI file:"
+            PRINT " " + CHR$(34) _
+                + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+            PRINT ""
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "The `rank` field provides a means of forcing engines into " _
+              + "a certain order that cannot be expressed with the other " _
+              + "fields. For example, PrBoom+ is ranked higher than ZDoom, " _
+              + "even though ZDoom would be considered the 'better' " _
+              + "engine, because ZDoom has been discontinued."
+            PRINT ""
+            PRINT " Example:"
+            PRINT ""
+            PRINT "     [global]"
+            PRINT "     engine=prboom-plus"
+            PRINT "     tier=fast"
+            PRINT "     rank=5"
+            CALL ErrorExit: SYSTEM 1
+        END IF
         
         DIM ini_index%
         LET ini_index% = 1
