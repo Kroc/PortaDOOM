@@ -144,6 +144,32 @@ SUB Engines_Enumerate()
                 EXIT DO
             END IF
             
+            'the engine-id cannot match the global engine-id:
+            IF ini_engine$ = ini_id$ THEN
+                CALL ErrorScreen("ERROR: Invalid INI Definition")
+                PRINT " Local engine ID cannot match global engine ID, " _
+                    + "in INI file:"
+                PRINT " " + CHR$(34) _
+                   + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+                PRINT ""
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "The global engine ID is used to group multiple " _
+                  + " engine versions into a single pool, e.g. 'gzdoom'. " _
+                  + "The local engine ID defines a specific version " _
+                  + "(or invocation) of an engine, e.g. 'gzdoom-36'."
+                PRINT ""
+                PRINT " Example:"
+                PRINT
+                PRINT "     [global]"
+                PRINT "     engine=prboom-plus"
+                PRINT ""
+                PRINT "     [engines]"
+                PRINT "     1=prboom-plus-hw"
+                PRINT "     2=prboom-plus-hw"
+                GOSUB closeFile
+                CALL ErrorExit: SYSTEM 1
+            END IF
+            
             'read engine data from the INI file
             DIM ini_section$
             LET ini_section$ = "engine." + ini_id$
