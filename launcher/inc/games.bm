@@ -158,6 +158,8 @@ SUB Games_Add ( _
                 LET Games(Games_Count).type = TYPE_STRIFE
             CASE "DOOM64"
                 LET Games(Games_Count).type = TYPE_DOOM64
+            CASE "HARM1"
+                LET Games(Games_Count).type = TYPE_HARM1
         END SELECT
     ELSE
         LET Games(Games_Count).type = IWADS(iwad%%).type

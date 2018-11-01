@@ -16,7 +16,8 @@ TYPE Engine
     id AS STRING
     
     'a comma-separated list of which DOOM-engines are supported by the engine.
-    'these can be any of DOOM, CHEX, DOOM2, HERETIC, HEXEN, STRIFE or DOOM64
+    'these can be any of DOOM, CHEX, DOOM2, HERETIC, HEXEN, STRIFE, DOOM64
+    'or HARM1
     type AS INTEGER
     
     'these are specifically named after the INI-file param names:

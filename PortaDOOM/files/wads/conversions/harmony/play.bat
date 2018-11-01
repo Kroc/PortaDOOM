@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /IWAD HARM1 /REQ zdoom
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-harmony.ini"

@@ -109,6 +109,7 @@ readINI:
         CASE "STRIFE": LET iwad_type% = TYPE_STRIFE
         CASE "CHEX": LET iwad_type% = TYPE_CHEX
         CASE "DOOM64": LET iwad_type% = TYPE_DOOM64
+        CASE "HARM1": LET iwad_type% = TYPE_HARM1
         CASE ELSE
             LET iwad_type% = TYPE_DOOM2
     END SELECT

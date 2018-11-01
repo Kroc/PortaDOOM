@@ -15,13 +15,13 @@ ECHO  Edit Engine Defaults:
 ECHO  =====================
 ECHO  Select IWAD:
 ECHO:
-ECHO     [A] DOOM / DOOM II / TNT / PLUTONIA
+ECHO     [A] DOOM / DOOM2 / TNT / PLUTONIA
 ECHO     [B] HERETIC
 ECHO     [C] HEXEN
 ECHO     [D] STRIFE
 ECHO     [E] CHEX
-ECHO:
-ECHO     [F] DOOM 64 ^(DOOM 64 EX^)
+ECHO     [F] DOOM64
+ECHO     [G] HARM1
 ECHO:
 
 SET "$="
@@ -34,9 +34,9 @@ IF /I "%$%" == "B" CALL :menu_heretic
 IF /I "%$%" == "C" CALL :menu_hexen
 IF /I "%$%" == "D" CALL :menu_strife
 IF /I "%$%" == "E" CALL :menu_chex
-
 REM # don't need a menu for DOOM 64, there's only one engine
 IF /I "%$%" == "F" CALL :launch_engine "doom64ex" "DOOM64.WAD"
+IF /I "%$%" == "G" CALL :menu_harm1
 
 GOTO :menu
 
@@ -216,6 +216,33 @@ IF /I "%$%" == "G" CALL :menu_gzdoom                             "CHEX.WAD"
 IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "CHEX.WAD"
 
 GOTO :menu_chex
+
+
+:menu_harm1
+REM ============================================================================
+CLS
+ECHO:
+ECHO  Edit HARM1 Engine Defaults:
+ECHO  ===========================
+ECHO  Select engine:
+ECHO:
+ECHO     [3] Zandronum v3               HARM1.WAD
+ECHO:
+ECHO     [G] GZDoom ...                 HARM1.WAD
+ECHO:
+ECHO     [Z] ZDoom                      HARM1.WAD
+ECHO:
+
+SET "$="
+SET /P "$=? "
+
+IF "%$%" == "" GOTO:EOF
+
+IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HARM1.WAD"
+IF /I "%$%" == "G" CALL :menu_gzdoom                             "HARM1.WAD"
+IF /I "%$%" == "Z" CALL :launch_engine    "zdoom"                "HARM1.WAD"
+
+GOTO :menu_harm1
 
 
 :menu_gzdoom

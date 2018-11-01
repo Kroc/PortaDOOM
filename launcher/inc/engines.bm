@@ -633,5 +633,8 @@ FUNCTION Engines_GetType%(type$)
     IF INSTR(type$, ",DOOM64,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM64
     END IF
+    IF INSTR(type$, ",HARM1,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_HARM1
+    END IF
     
 END FUNCTION

@@ -141,6 +141,8 @@ ECHO * Zandronum-3                STRIFE1.WAD
 CALL :make_zandronum "zandronum-3" "STRIFE1.WAD"
 ECHO * Zandronum-3                CHEX.WAD
 CALL :make_zandronum "zandronum-3" "CHEX.WAD"
+ECHO * Zandronum-3                HARM1.WAD
+CALL :make_zandronum "zandronum-3" "HARM1.WAD"
 
 
 
@@ -233,6 +235,8 @@ ECHO * GZDoom v1.5                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-15" "STRIFE1.WAD"
 ECHO * GZDoom v1.5                CHEX.WAD
 CALL :make_gzdoom "gzdoom-15" "CHEX.WAD"
+ECHO * GZDoom v1.5                HARM1.WAD
+CALL :make_gzdoom "gzdoom-15" "HARM1.WAD"
 
 :gzdoom-16
 REM # delete the file in order to re-build it
@@ -248,6 +252,8 @@ ECHO * GZDoom v1.6                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-16" "STRIFE1.WAD"
 ECHO * GZDoom v1.6                CHEX.WAD
 CALL :make_gzdoom "gzdoom-16" "CHEX.WAD"
+ECHO * GZDoom v1.6                HARM1.WAD
+CALL :make_gzdoom "gzdoom-16" "HARM1.WAD"
 
 :gzdoom-17
 REM # delete the file in order to re-build it
@@ -263,6 +269,8 @@ ECHO * GZDoom v1.7                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-17" "STRIFE1.WAD"
 ECHO * GZDoom v1.7                CHEX.WAD
 CALL :make_gzdoom "gzdoom-17" "CHEX.WAD"
+ECHO * GZDoom v1.7                HARM1.WAD
+CALL :make_gzdoom "gzdoom-17" "HARM1.WAD"
 
 :gzdoom-18
 REM # delete the file in order to re-build it
@@ -278,6 +286,8 @@ ECHO * GZDoom v1.8                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-18" "STRIFE1.WAD"
 ECHO * GZDoom v1.8                CHEX.WAD
 CALL :make_gzdoom "gzdoom-18" "CHEX.WAD"
+ECHO * GZDoom v1.8                HARM1.WAD
+CALL :make_gzdoom "gzdoom-18" "HARM1.WAD"
 
 :gzdoom-19
 REM # delete the file in order to re-build it
@@ -293,6 +303,8 @@ ECHO * GZDoom v1.9                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-19" "STRIFE1.WAD"
 ECHO * GZDoom v1.9                CHEX.WAD
 CALL :make_gzdoom "gzdoom-19" "CHEX.WAD"
+ECHO * GZDoom v1.9                HARM1.WAD
+CALL :make_gzdoom "gzdoom-19" "HARM1.WAD"
 
 :gzdoom-20
 REM # delete the file in order to re-build it
@@ -308,6 +320,8 @@ ECHO * GZDoom v2.0                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-20" "STRIFE1.WAD"
 ECHO * GZDoom v2.0                CHEX.WAD
 CALL :make_gzdoom "gzdoom-20" "CHEX.WAD"
+ECHO * GZDoom v2.0                HARM1.WAD
+CALL :make_gzdoom "gzdoom-20" "HARM1.WAD"
 
 :gzdoom-21
 REM # delete the file in order to re-build it
@@ -323,6 +337,8 @@ ECHO * GZDoom v2.1                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-21" "STRIFE1.WAD"
 ECHO * GZDoom v2.1                CHEX.WAD
 CALL :make_gzdoom "gzdoom-21" "CHEX.WAD"
+ECHO * GZDoom v2.1                HARM1.WAD
+CALL :make_gzdoom "gzdoom-21" "HARM1.WAD"
 
 :gzdoom-22
 REM # delete the file in order to re-build it
@@ -338,6 +354,8 @@ ECHO * GZDoom v2.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-22" "STRIFE1.WAD"
 ECHO * GZDoom v2.2                CHEX.WAD
 CALL :make_gzdoom "gzdoom-22" "CHEX.WAD"
+ECHO * GZDoom v2.2                HARM1.WAD
+CALL :make_gzdoom "gzdoom-22" "HARM1.WAD"
 
 :gzdoom-23
 REM # delete the file in order to re-build it
@@ -353,6 +371,8 @@ ECHO * GZDoom v2.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-23" "STRIFE1.WAD"
 ECHO * GZDoom v2.3                CHEX.WAD
 CALL :make_gzdoom "gzdoom-23" "CHEX.WAD"
+ECHO * GZDoom v2.3                HARM1.WAD
+CALL :make_gzdoom "gzdoom-23" "HARM1.WAD"
 
 :gzdoom-24
 REM # delete the file in order to re-build it
@@ -368,6 +388,8 @@ ECHO * GZDoom v2.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-24" "STRIFE1.WAD"
 ECHO * GZDoom v2.4                CHEX.WAD
 CALL :make_gzdoom "gzdoom-24" "CHEX.WAD"
+ECHO * GZDoom v2.4                HARM1.WAD
+CALL :make_gzdoom "gzdoom-24" "HARM1.WAD"
 
 :gzdoom-32
 REM # delete the file in order to re-build it
@@ -383,6 +405,8 @@ ECHO * GZDoom v3.2                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-32" "STRIFE1.WAD"
 ECHO * GZDoom v3.2                CHEX.WAD
 CALL :make_gzdoom "gzdoom-32" "CHEX.WAD"
+ECHO * GZDoom v3.2                HARM1.WAD
+CALL :make_gzdoom "gzdoom-32" "HARM1.WAD"
 
 :gzdoom-33
 REM # delete the file in order to re-build it
@@ -398,6 +422,8 @@ ECHO * GZDoom v3.3                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-33" "STRIFE1.WAD"
 ECHO * GZDoom v3.3                CHEX.WAD
 CALL :make_gzdoom "gzdoom-33" "CHEX.WAD"
+ECHO * GZDoom v3.3                HARM1.WAD
+CALL :make_gzdoom "gzdoom-33" "HARM1.WAD"
 
 :gzdoom-34
 REM # delete the file in order to re-build it
@@ -413,6 +439,8 @@ ECHO * GZDoom v3.4                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-34" "STRIFE1.WAD"
 ECHO * GZDoom v3.4                CHEX.WAD
 CALL :make_gzdoom "gzdoom-34" "CHEX.WAD"
+ECHO * GZDoom v3.4                HARM1.WAD
+CALL :make_gzdoom "gzdoom-34" "HARM1.WAD"
 
 :gzdoom-35
 REM # delete the file in order to re-build it
@@ -428,6 +456,8 @@ ECHO * GZDoom v3.5                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-35" "STRIFE1.WAD"
 ECHO * GZDoom v3.5                CHEX.WAD
 CALL :make_gzdoom "gzdoom-35" "CHEX.WAD"
+ECHO * GZDoom v3.5                HARM1.WAD
+CALL :make_gzdoom "gzdoom-35" "HARM1.WAD"
 
 :gzdoom-36
 REM # delete the file in order to re-build it
@@ -443,6 +473,8 @@ ECHO * GZDoom v3.6                STRIFE1.WAD
 CALL :make_gzdoom "gzdoom-36" "STRIFE1.WAD"
 ECHO * GZDoom v3.6                CHEX.WAD
 CALL :make_gzdoom "gzdoom-36" "CHEX.WAD"
+ECHO * GZDoom v3.6                HARM1.WAD
+CALL :make_gzdoom "gzdoom-36" "HARM1.WAD"
 
 :gzdoom
 REM # delete the file in order to re-build it
@@ -458,6 +490,8 @@ ECHO * GZDoom                     STRIFE1.WAD
 CALL :make_gzdoom "gzdoom" "STRIFE1.WAD"
 ECHO * GZDoom                     CHEX.WAD
 CALL :make_gzdoom "gzdoom" "CHEX.WAD"
+ECHO * GZDoom                     HARM1.WAD
+CALL :make_gzdoom "gzdoom" "HARM1.WAD"
 
 REM # ZDoom
 REM ============================================================================
@@ -475,7 +509,8 @@ ECHO * ZDoom v2.8.1               STRIFE1.WAD
 CALL :make_zdoom "zdoom" "STRIFE1.WAD"
 ECHO * ZDoom v2.8.1               CHEX.WAD
 CALL :make_zdoom "zdoom" "CHEX.WAD"
-
+ECHO * ZDoom v2.8.1               HARM1.WAD
+CALL :make_zdoom "zdoom" "HARM1.WAD"
 
 REM # DOOM 64
 REM ============================================================================
@@ -658,6 +693,12 @@ IF "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
 )
+IF "%~2" == "HARM1.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
+)
 
 GOTO:EOF
 
@@ -750,6 +791,17 @@ IF "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
+)
+IF "%~2" == "HARM1.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] d=+moveright
 )
 
 REM # change controls
@@ -849,6 +901,17 @@ IF "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
+)
+IF "%~2" == "HARM1.WAD" (
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] d=+moveright
 )
 
 REM # change controls

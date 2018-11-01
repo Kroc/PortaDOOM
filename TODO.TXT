@@ -47,7 +47,7 @@
 [ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 [ ] Include Crispy Doom music pack?
 [ ] IWADs: (including Skill Names)
-    [ ] Harmony
+    [X] Harmony
     [ ] Hacx
     [X] Chex
     [ ] Adventures of Square (SHAREWARE)
