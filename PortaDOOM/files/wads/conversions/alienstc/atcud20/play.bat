@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "alientc.ini"
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-alientc.ini"

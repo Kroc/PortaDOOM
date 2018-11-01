@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /FREEDOOM1

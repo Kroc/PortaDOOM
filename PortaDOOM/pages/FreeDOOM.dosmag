@@ -1,16 +1,12 @@
 $NAV=Total Conversions
-$KEY:1=SHELL:wads\conversions\freedoom\play - freedoom1.bat
-$KEY:2=SHELL:wads\conversions\freedoom\play - freedoom2.bat
+$KEY:P=SHELL:wads\conversions\freedoom\play.bat
 
 ^C:FreeDOOM
 :===============================================================================
 
 Freedoom is a project to create a free content game based on the Doom engine. All material in the project is released under a modified BSD license, so other projects may reuse any of the Freedoom resources for their own purposes. In fact, this is a secondary goal of the project.
 
+*[P] Play FreeDOOM: Phase 1 & 2
+
 Freedoom: Phase 1 is made up of four chapters, and is compatible with The Ultimate Doom PWADs.
-
-*[1] Play FreeDOOM: Phase 1
-
 Freedoom: Phase 2 is an entire 32-level chapter, and is compatible with Doom II and Final Doom PWADs.
-
-*[2] Play FreeDOOM: Phase 2

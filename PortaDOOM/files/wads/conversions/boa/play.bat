@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "boa.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-boa.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "aliens_tc_2017.ini"
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-aliens_tc_2017.ini"
