@@ -225,6 +225,25 @@ SUB Engines_Enumerate()
             
             DIM ini_desc$
             LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
+            IF ini_desc$ = "" THEN
+                CALL ErrorScreen("ERROR: Invalid INI Definition")
+                PRINT " Description field missing in INI file:"
+                PRINT " " + CHR$(34) _
+                   + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+                PRINT ""
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "Engines require a description."
+                PRINT ""
+                PRINT " Example:"
+                PRINT ""
+                PRINT "     [engines.choco-doom-30]"
+                PRINT "     title=" + CHR$(34) + "Chocolate Doom" + CHR$(34)
+                PRINT "     desc=" + CHR$(34) + "A pixel-for-pixel, " _
+                    + "bug-for-bug recreation of ... " + CHR$(34)
+                GOSUB closeFile
+                CALL ErrorExit: SYSTEM 1
+            END IF
+            
             DIM ini_type$
             LET ini_type$ = ReadSetting$("", ini_section$, "type")
             DIM ini_exe$
