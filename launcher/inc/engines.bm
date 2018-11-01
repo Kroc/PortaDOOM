@@ -174,6 +174,33 @@ SUB Engines_Enumerate()
             DIM ini_section$
             LET ini_section$ = "engine." + ini_id$
             
+            'get the engine title. since this is required this will also
+            'serve to check if the section exists as it should
+            DIM ini_title$
+            LET ini_title$ = ReadSetting$("", ini_section$, "title")
+            IF ini_title$ = "" THEN
+                CALL ErrorScreen("ERROR: Invalid INI Definition")
+                PRINT " Title field (or engine section) missing, " _
+                    + "in INI file:"
+                PRINT " " + CHR$(34) _
+                   + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+                PRINT ""
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "A `title` field is required for an engine definition. " _
+                  + " This error can also occur if the engine's section " _
+                  + "cannot be found. For each local engine-id given, " _
+                  + "a `[games.engine]` section must also be given, " _
+                  + "for example:"
+                PRINT ""
+                PRINT "     [engines]"
+                PRINT "     1=choco-doom-30"
+                PRINT ""
+                PRINT "     [engines.choco-doom-30]"
+                PRINT "     title=" + CHR$(34) + "Chocolate Doom" + CHR$(34)
+                GOSUB closeFile
+                CALL ErrorExit: SYSTEM 1
+            END IF
+            
             'if this is a 32-bit machine, we can immediately
             'throw away any 64-bit engines:
             
@@ -196,8 +223,6 @@ SUB Engines_Enumerate()
                 IF ini_bit$ = "64" THEN GOTO NextEngine
             END IF
             
-            DIM ini_title$
-            LET ini_title$ = ReadSetting$("", ini_section$, "title")
             DIM ini_desc$
             LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
             DIM ini_type$
