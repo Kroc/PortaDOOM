@@ -66,8 +66,6 @@ readINI:
         
         'read in the game details:
         'TODO: validation
-        'TODO: early rejection of engines incompatible with all game defs,
-        '      e.g. 64-bit engine on a 32-bit CPU
         DIM ini_section$
         LET ini_section$ = "games." + game_id$
         
@@ -87,6 +85,15 @@ readINI:
         DIM ini_cmplvl$
         LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
         
+        DIM vid%
+        SELECT CASE ini_vid$
+            CASE "8": LET vid% = 8
+            CASE "16": LET vid% = 16
+            CASE "24": LET vid% = 24
+            CASE "32": LET vid% = 32
+            CASE ELSE: LET vid% = 0
+        END SELECT
+        
         'game files and settings:
         DIM ini_iwad$
         LET ini_iwad$ = ReadSetting$("", ini_section$, "iwad")
@@ -96,8 +103,6 @@ readINI:
         LET ini_pwad$ = ReadSetting$("", ini_section$, "pwad")
         DIM ini_files$
         LET ini_files$ = ReadSetting$("", ini_section$, "files")
-        DIM ini_exec$
-        LET ini_exec$ = ReadSetting$("", ini_section$, "exec")
         DIM ini_deh$
         LET ini_deh$ = ReadSetting$("", ini_section$, "deh")
         DIM ini_bex$
@@ -126,19 +131,15 @@ readINI:
         DIM ini_skill9$
         LET ini_skill9$ = ReadSetting$("", ini_section$, "skill9")
         
-        DIM vid%
-        SELECT CASE ini_vid$
-            CASE "8": LET vid% = 8
-            CASE "16": LET vid% = 16
-            CASE "24": LET vid% = 24
-            CASE "32": LET vid% = 32
-            CASE ELSE: LET vid% = 0
-        END SELECT
+        DIM ini_exec$
+        LET ini_exec$ = ReadSetting$("", ini_section$, "exec")
+        DIM ini_cmd$
+        LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
         
         CALL Games_Add( _
             game_id$, ini_title$, ini_desc$, ini_cmplvl$, _
             ini_iwad$, ini_pre$, ini_pwad$, ini_files$, _
-            ini_exec$, ini_deh$, ini_bex$, _
+            ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
             ini_use$, ini_tags$, vid%, _
             ini_warp$, ini_skill$, _
             ini_skill1$, ini_skill2$, ini_skill3$, ini_skill4$, _
@@ -154,7 +155,7 @@ END SUB
 '=============================================================================
 SUB Games_Add ( _
     id$, title$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
-    exec$, deh$, bex$, use$, tags$, vid%, warp$, skill$, _
+    exec$, cmd$, deh$, bex$, use$, tags$, vid%, warp$, skill$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
 )
@@ -269,6 +270,7 @@ skill:
     LET Games(Games_Count).pwad = pwad$
     LET Games(Games_Count).files = files$
     LET Games(Games_Count).exec = exec$
+    LET Games(Games_Count).cmd = cmd$
     LET Games(Games_Count).deh = deh$
     LET Games(Games_Count).bex = bex$
     LET Games(Games_Count).use = LCASE$(use$)

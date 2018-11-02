@@ -391,8 +391,9 @@ IF cmd_hasGame` THEN
     
     CALL Games_Add ( _
         "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
-        CMD_FILES$, CMD_EXEC$, CMD_DEH$, CMD_BEX$, CMD_USE$, CMD_REQ$, vid%, _
-        CMD_WARP$, CMD_SKILL$, "", "", "", "", "", "", "", "", "" _
+        CMD_FILES$, CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
+        CMD_USE$, CMD_REQ$, vid%, CMD_WARP$, CMD_SKILL$, _
+        "", "", "", "", "", "", "", "", "" _
     )
 ELSE
     CALL ErrorScreen("ERROR: No Game Defined")

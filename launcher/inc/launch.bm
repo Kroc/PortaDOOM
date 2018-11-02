@@ -16,8 +16,8 @@
 '   [09]: DEH & BEX
 '   [10]: demo playback
 '   [11]: warp & skill
-'   [12]: execute scripts
-'   [13]: resolution & full-screen
+'   [12]: resolution & full-screen
+'   [13]: execute scripts / additional commands
 '   [14]: launch!
 
 CLS 2
@@ -550,25 +550,7 @@ IF Games_Selected.skill >= 0 THEN
 END IF
 
 '-----------------------------------------------------------------------------
-'[12] execute script:
-'-----------------------------------------------------------------------------
-IF Games_Selected.exec <> "" THEN
-    'try and find the file:
-    LET file$ = Games_Selected.exec
-    LET find$ = WADs_Find$(file$)
-   'file missing?
-    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
-    
-    'add the command-line param to play the demo
-    LET CMD$ = CMD$ + " -exec " _
-             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
-             
-    COLOR YELLOW: PRINT "        -exec : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
-END IF
-
-'-----------------------------------------------------------------------------
-'[13] resolution & full-screen:
+'[12] resolution & full-screen:
 '-----------------------------------------------------------------------------
 'the full-screen parameter varies by engine-type;
 IF Engines_Selected.kin = KIN_Z THEN
@@ -594,6 +576,48 @@ IF Engines_Selected.kin <> KIN_V THEN
     COLOR UI_FORECOLOR: PRINT STR$(screen_width);
     COLOR YELLOW: PRINT "  -height :";
     COLOR UI_FORECOLOR: PRINT STR$(screen_height)
+END IF
+
+'-----------------------------------------------------------------------------
+'[13] execute script / additional commands:
+'-----------------------------------------------------------------------------
+IF Games_Selected.exec <> "" THEN
+    'try and find the file:
+    LET file$ = Games_Selected.exec
+    LET find$ = WADs_Find$(file$)
+   'file missing?
+    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    
+    'add the command-line param to play the demo
+    LET CMD$ = CMD$ + " -exec " _
+             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
+             
+    COLOR YELLOW: PRINT "        -exec : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+END IF
+
+'any engine-specific command-line params to be added?
+IF Engines_Selected.cmd <> "" THEN
+    LET CMD$ = CMD$ + " " + Engines_Selected.cmd
+    IF CMD_DEBUG` THEN
+        COLOR YELLOW: PRINT "     (engine) : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(Engines_Selected.cmd, UI_SCREEN_WIDTH - 17)
+    END IF
+END IF
+
+'any game-specific command-line params to be added?
+IF Games_Selected.cmd <> "" THEN
+    LET CMD$ = CMD$ + " " + Games_Selected.cmd
+    IF CMD_DEBUG` THEN
+        COLOR YELLOW: PRINT "       (game) : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(Games_Selected.cmd, UI_SCREEN_WIDTH - 17)
+    END IF
+END IF
+
+'auto-quit? (ZDoom-based engines only)
+IF CMD_QUIT` THEN
+    LET CMD$ = CMD$ + " +quit"
+    COLOR YELLOW: PRINT "        +quit": COLOR UI_FORECOLOR
 END IF
 
 '-----------------------------------------------------------------------------
@@ -625,17 +649,6 @@ LET CMD$ = CMD$ + " -shotdir " + CHR$(34) + DIR_SCREENSHOT$ + CHR$(34)
 IF Engines_Selected.engine = "doom64ex" THEN
     LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
                     + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
-END IF
-
-'any engine-specific command-line params to be added?
-IF Engines_Selected.cmd <> "" THEN
-    LET CMD$ = CMD$ + " " + Engines_Selected.cmd
-END IF
-
-'auto-quit? (ZDoom-based engines only)
-IF CMD_QUIT` THEN
-    LET CMD$ = CMD$ + " +quit"
-    COLOR YELLOW: PRINT "        +quit": COLOR UI_FORECOLOR
 END IF
 
 COLOR WHITE

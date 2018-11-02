@@ -84,6 +84,7 @@
 
 [P5] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : DOOM 64 RTR requires fluidsynth
 [ ] DOOM Retro : Next version will support binding F12
 [X] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
 [ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions
