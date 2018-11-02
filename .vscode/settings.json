@@ -7,6 +7,7 @@
 	"editor.tabSize": 8,
 	"editor.renderWhitespace": "boundary",
 	"files.exclude": {
+		"wiki": true,
 		"archive/": true,
 		"screenshots/": true,
 		"build/": true,
