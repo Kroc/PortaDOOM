@@ -12,6 +12,7 @@ CONST TYPE_STRIFE = 16 'STRIFE adds a conversation system and more
 CONST TYPE_CHEX = 32 '..a lightly modified DOOM engine
 CONST TYPE_DOOM64 = 64 'DOOM64 uses coloured lighting
 CONST TYPE_HARM1 = 128 'Harmony; requires ZDoom v.2.4.0 or compatible
+CONST TYPE_ROTWB = 256 'Rise Of The Wool Ball
 
 TYPE IWAD
     id AS STRING '....unique identifier, short, no spaces

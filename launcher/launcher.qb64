@@ -15,6 +15,7 @@ DIM i, j, h, w, x, y AS _UNSIGNED LONG
 '-----------------------------------------------------------------------------
 '$INCLUDE:'lib\ascii.bi'
 '$INCLUDE:'lib\consts.bi'
+'$INCLUDE:'lib\sys.bi'
 '$INCLUDE:'lib\reg.bi'
 
 'PortaDOOM Launcher declarations:
@@ -51,22 +52,6 @@ CONST DIR_DEMOS$ = "demos\"
 'folder for gameplay mods
 CONST DIR_MODS$ = "mods\"
 
-'read system info:
-'-----------------------------------------------------------------------------
-'get CPU type for the system (32 / 64-bit)
-DIM SHARED CPU_BIT AS _UNSIGNED LONG
-'default to 32-bit as this will always work
-LET CPU_BIT = 32
-'check the environment variables for CPU type:
-'this one would only be true if we are a 64-bit executable also
-IF ENVIRON$("PROCESSOR_ARCHITECTURE") = "AMD64" THEN LET CPU_BIT = 64
-'detect 64-bit system from a 32-bit executable (WOW64)
-IF ENVIRON$("PROCESSOR_ARCHITEW6432") = "AMD64" THEN LET CPU_BIT = 64
-
-'directory of this executable (regardless of where it was called from)
-DIM SHARED DIR_EXE$
-LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
-
 'now, is this executable running from the source code folder or from within
 'PortaDOOM's folder (as it would be in releases)? since these are different
 'directories, and the launcher operates on the assumption that it's in the
@@ -78,11 +63,6 @@ IF Paths_GetFolderName$(DIR_EXE$) = "launcher" THEN
     CHDIR "..\PortaDOOM\files"
     LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 END IF
-
-'the 'current directory' (where this executable was called *from*),
-'this will be one of the folders we check when searching for files
-DIM SHARED DIR_CUR$
-LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 
 '=============================================================================
 'MAIN:
@@ -163,4 +143,5 @@ launch:
 '$INCLUDE:'lib\strings.bm'
 '$INCLUDE:'lib\paths.bm'
 '$INCLUDE:'lib\reg.bm'
+'$INCLUDE:'lib\sys.bm'
 '$INCLUDE:'ui\print.bm'

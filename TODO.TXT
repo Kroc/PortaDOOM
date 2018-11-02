@@ -34,9 +34,6 @@
 
 [P3] Feature Enhancements:
 ================================================================================
-[X] LAUNCHER : Batch files to test engines in each engine directory
-    (will make testing on XP easier); depends on `use` in INI files?
-[ ] Add Valiant: Vaccinated Edition
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
     (currently an issue with this in QB64)
 [ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
@@ -48,20 +45,22 @@
     [ ] Hacx
     [X] Chex
     [ ] Adventures of Square (SHAREWARE)
-    [ ] Rise of The Wool Ball
+    [X] Rise of The Wool Ball
     [ ] Blade of Agony? (could do with its own settings file)
 
 [P4] Content:
 ================================================================================
+[ ] Add Valiant: Vaccinated Edition
 [ ] Does 20 Monsters work in ZDoom?
 [ ] Move 3 Heures series to Community
 [ ] WolfenDOOM package
 [ ] Expand PSX DOOM Package to include:
+ -  [ ] DOOM 64 RTR (GZDoom)
  -  [ ] DOOM 64 EX
  -  [ ] DOOM 64 for DOOM II
  -  [ ] PSX Fall of Triton -- any way to shrink this? Diff against PSXDOOM.PK3?
  -  [X] InnocenceX/X2/X3
-     -  [ ] Add option to play with PSX / Classic weapons with new launcher
+     -  [X] Add option to play with PSX / Classic weapons with new launcher
 
 [-] Index pages at the end of each Cacowards; allows the separate Cacowards
     packages to have an index
@@ -84,7 +83,8 @@
 
 [P5] Technical Debt: (making forward progress easier)
 ================================================================================
-[ ] LAUNCHER : DOOM 64 RTR requires fluidsynth
+[ ] LAUNCHER : get exe name from command-line instead of assuming "launcher.exe"
+[ ] LAUNCHER : DOOM 64 RTR requires fluidsynth and GZDoom v3.2
 [ ] DOOM Retro : Next version will support binding F12
 [X] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
 [ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions

@@ -636,5 +636,8 @@ FUNCTION Engines_GetType%(type$)
     IF INSTR(type$, ",HARM1,") THEN
         LET Engines_GetType% = Engines_GetType% OR TYPE_HARM1
     END IF
+    IF INSTR(type$, ",ROTWB,") THEN
+        LET Engines_GetType% = Engines_GetType% OR TYPE_ROTWB
+    END IF
     
 END FUNCTION

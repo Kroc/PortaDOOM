@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "rotwb.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-rotwb.ini"

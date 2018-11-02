@@ -1,0 +1,6 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+SUB _GL
+    IF LEN(glVersion$) > 0 THEN EXIT SUB
+    glVersion$ = _glGetString(_GL_VERSION)
+END SUB
