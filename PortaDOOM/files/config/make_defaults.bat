@@ -587,7 +587,9 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 %BIN_FART% "default.%~1.cfg" "messages off"		"messages on"
 %BIN_FART% "default.%~1.cfg" "am_rotatemode on"		"am_rotatemode off"
 %BIN_FART% "default.%~1.cfg" "playername \"you\""	"playername \"PortaDOOM\""
-REM ECHO bind 'f12' +screenshot>>"default.%~1.cfg"
+ECHO bind 'f12' +screenshot>>"default.%~1.cfg"
+
+REM # TODO: reset the stats properties
 
 GOTO:EOF
 

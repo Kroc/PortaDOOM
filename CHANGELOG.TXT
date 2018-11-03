@@ -2,6 +2,10 @@
 * = Fix / Change
 - = Removal
 
+03-NOV-18:
+* Updated DOOM Retro to v2.7.4
+  (this release allows binding the F12 key for screenshots)
+
 11-OCT-18:
 * Updated GZDoom to v3.6.0
 
