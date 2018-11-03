@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "swideath.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-swideath.ini"

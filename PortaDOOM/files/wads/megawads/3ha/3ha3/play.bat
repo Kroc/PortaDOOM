@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD 3ha3.wad
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-3ha3.ini"

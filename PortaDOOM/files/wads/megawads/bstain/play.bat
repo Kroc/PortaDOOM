@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD BStain.wad /CMPLVL 2
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-bstain.ini"

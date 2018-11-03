@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /PWAD ETERNALL.WAD /DEH ETERNAL.DEH
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-eternal.ini"

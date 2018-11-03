@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD d2twid.wad /DEH D2TWID.deh
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-d2twid.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ boom /PWAD NEIS.wad /DEH NEIS.deh
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-neis.ini"

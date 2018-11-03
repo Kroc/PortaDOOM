@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "valiant.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-valiant.ini"
