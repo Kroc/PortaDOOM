@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD legher.wad /CMPLVL 9
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-legher.ini"

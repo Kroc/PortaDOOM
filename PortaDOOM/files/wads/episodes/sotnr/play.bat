@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /USE gzdoom /PWAD sotnr.pk3 /EXEC bloom.cfg
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-sotnr.ini"

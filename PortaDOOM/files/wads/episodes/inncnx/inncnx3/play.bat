@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" inncnx3.ini
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-inncnx3.ini"

@@ -36,7 +36,7 @@
 ================================================================================
 [?] LAUNCHER : Detect OpenGL version and filter engines accordingly
     (currently an issue with this in QB64)
-[ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
+ -  [ ] Parse & compare version numbers
 [ ] Add Eternity engine (required somewhere in the Cacowards)
 [ ] LAUNCHER : Handle VOICES1.WAD & SVE.WAD for STRIFE?
 [ ] Include Crispy Doom music pack?
@@ -83,6 +83,7 @@
 
 [P5] Technical Debt: (making forward progress easier)
 ================================================================================
+[ ] LAUNCHER : Generate a GAMEINFO lump on-demand?
 [ ] LAUNCHER : get exe name from command-line instead of assuming "launcher.exe"
 [ ] LAUNCHER : DOOM 64 RTR requires fluidsynth and GZDoom v3.2
 [ ] DOOM Retro : Next version will support binding F12

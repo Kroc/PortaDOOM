@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ no-limit /PWAD hadronf.wad /WARP 1.1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-hadronf.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD sd20x7.wad /CMPLVL 19
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-sd20x7.ini"

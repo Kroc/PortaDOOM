@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /REQ zdoom /PWAD innocenceX2.wad
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-inncnx2.ini"

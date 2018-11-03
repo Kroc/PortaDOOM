@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "strange_aeons.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-strange_aeons.ini"

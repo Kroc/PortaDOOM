@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD mek-catk.wad /CMPLVL 9 -- ca_wsbar.wad
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-mek-catk.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ zdoom /PWAD spacwars.wad /EXEC bloom.cfg
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-spacwars.ini"

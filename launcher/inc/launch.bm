@@ -656,6 +656,10 @@ PRINT ""
 PRINT "   GET PSYCHED!"
 PRINT ""
 
+'introduce a brief pause and force the screen to refresh;
+'if we just launch the executable, the screen doesn't get time to update
+SLEEP 1
+
 IF CMD_DEBUG` THEN
     PRINT CMD$
     PRINT ""
@@ -666,13 +670,12 @@ IF CMD_DEBUG` THEN
     LOCATE UI_SCREEN_HEIGHT, 1
     COLOR BLACK+BLINK, WHITE
     
-    DIM w%
-    LET w% = LEN("PRESS ANY KEY!")
-    PRINT SPACE$((UI_SCREEN_WIDTH - w%) / 2) _
+    LET w = LEN("PRESS ANY KEY!")
+    PRINT SPACE$((UI_SCREEN_WIDTH - w) / 2) _
         + "PRESS ANY KEY!" _
-        + SPACE$((UI_SCREEN_WIDTH - w%) / 2);
-    
+        + SPACE$((UI_SCREEN_WIDTH - w) / 2);
     COLOR WHITE, BLACK
+    
     SLEEP
 END IF
 

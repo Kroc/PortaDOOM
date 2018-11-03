@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "skulldash.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-skulldash.ini"

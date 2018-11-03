@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "ShadowOfTheWoolBall.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-ShadowOfTheWoolBall.ini"

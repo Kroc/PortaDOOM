@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" "erkatane.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-erkatane.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ gzdoom /PWAD ge5-pd.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-ge5-pd.ini"

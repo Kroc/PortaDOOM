@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /PWAD Nihility.wad /DEH Nihility.deh /WARP 2.1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-nihility.ini"

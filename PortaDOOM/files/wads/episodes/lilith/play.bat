@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /USE zdoom /PWAD lilith.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-lilith.ini"
