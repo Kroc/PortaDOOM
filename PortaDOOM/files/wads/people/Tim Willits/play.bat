@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /PWAD RAVEN.WAD
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-raven.ini"

@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /REQ no-limit -- e1m4b.wad e1m8b.wad
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play.ini"

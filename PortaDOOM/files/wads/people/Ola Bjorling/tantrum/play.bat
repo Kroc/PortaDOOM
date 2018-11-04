@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD TANTRUM.WAD
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-tantrum.ini"

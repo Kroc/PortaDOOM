@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /PWAD MORDETH.WAD /DEH MORDETH.DEH -- MDEUGRAP.WAD
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-mordeth.ini"

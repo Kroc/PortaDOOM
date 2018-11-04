@@ -12,6 +12,8 @@
 		"screenshots/": true,
 		"build/": true,
 		"releases/": true,
+		"**/*.lmp": true,
+		"**/*.LMP": true,
 		"**/*.wad": true,
 		"**/*.WAD": true,
 		"**/*.pk3": true,

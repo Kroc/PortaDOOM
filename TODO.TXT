@@ -25,6 +25,7 @@
 [X] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [ ] LAUNCHER : Gussy up skill selection
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
+ -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard

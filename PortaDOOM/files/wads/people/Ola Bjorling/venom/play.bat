@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD venom.wad
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-venom.ini"
