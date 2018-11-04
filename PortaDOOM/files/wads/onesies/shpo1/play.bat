@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM /PWAD shpo1.wad /WARP 2.1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-shpo1.ini"

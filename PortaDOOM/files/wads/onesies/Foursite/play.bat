@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ no-limit /PWAD Foursite.wad
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-foursite.ini"

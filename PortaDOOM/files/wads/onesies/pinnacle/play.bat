@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ gzdoom /PWAD pinnacle.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-pinnacle.ini"

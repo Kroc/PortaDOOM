@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ boom /PWAD breach.wad /WARP 1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-breach.ini"

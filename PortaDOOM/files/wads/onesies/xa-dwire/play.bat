@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /REQ gzdoom /PWAD xa-dwire.wad /EXEC bloom.cfg /WARP 1
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-xa-dwire.ini"
