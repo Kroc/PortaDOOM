@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\njwlgzd\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\njwlgzd\play-njwlgzd.ini"
 $KEY:T=SHELL:wads\onesies\njwlgzd\njwlgzd.txt
 $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=55741
 $KEY:V=URL:https://www.youtube.com/watch?v=4I2RNWQDD5w

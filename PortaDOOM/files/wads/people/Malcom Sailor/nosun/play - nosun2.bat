@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD NOSUN2.WAD

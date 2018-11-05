@@ -1,6 +1,6 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\inncnx2\play.bat
-$KEY:T=SHELL:wads\episodes\inncnx2\inncnx2.txt
+$KEY:P=SHELL:launcher.exe "wads\episodes\inncnx\inncnx2\play-inncnx2.ini"
+$KEY:T=SHELL:wads\episodes\inncnx\inncnx2\inncnx2.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/90561-innocence-x2-v12-now-on-idgames/
 
 :Innocence X2											(Innocence X Series)

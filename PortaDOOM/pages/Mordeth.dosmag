@@ -1,6 +1,6 @@
 $NAV=People
 $NAV=Gaston Lahaut
-$KEY:P=SHELL:wads\people\Gaston Lahaut\play.bat
+$KEY:P=SHELL:launcher.exe "wads\people\Gaston Lahaut\play-mordeth.ini"
 $KEY:T=SHELL:wads\people\Gaston Lahaut\MORDETH.TXT
 $KEY:W=URL:http://mordeth.doomworld.com/
 

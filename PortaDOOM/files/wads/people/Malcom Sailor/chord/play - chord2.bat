@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /PWAD CHORD2.WAD /WARP 26

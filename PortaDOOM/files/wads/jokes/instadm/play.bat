@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /DOOM2 /SW /PWAD selfie.wad /DEH selfie.deh
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-instadm.ini"

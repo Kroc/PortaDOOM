@@ -656,10 +656,6 @@ PRINT ""
 PRINT "   GET PSYCHED!"
 PRINT ""
 
-'introduce a brief pause and force the screen to refresh;
-'if we just launch the executable, the screen doesn't get time to update
-SLEEP 1
-
 IF CMD_DEBUG` THEN
     PRINT CMD$
     PRINT ""
@@ -691,6 +687,10 @@ ELSE
     'start the engine, but continue running here
     SHELL _DONTWAIT CMD$
 END IF
+
+'introduce a brief pause and force the screen to refresh;
+'if we just launch the executable, the screen doesn't get time to update
+SLEEP 1
 
 SYSTEM
 

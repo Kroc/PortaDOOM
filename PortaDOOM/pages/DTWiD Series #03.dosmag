@@ -1,6 +1,6 @@
 $NAV=MegaWADs
 $TITLE=The Lost Episodes
-$KEY:P=SHELL:wads\megawads\DTWiD\dtwid-le\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\DTWiD\dtwid-le\play-dtwid-le.ini"
 $KEY:T=SHELL:wads\megawads\DTWiD\dtwid-le\DTWID-LE.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
 $KEY:1=PAGE:#01

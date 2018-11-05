@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\swideath\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\swideath\play-swideath.ini"
 $KEY:T=SHELL:wads\megawads\swideath\swideath.txt
 $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 

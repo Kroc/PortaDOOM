@@ -1,6 +1,6 @@
 $NAV=People
 $NAV=Ola Björling
-$KEY:P=SHELL:wads\people\ola bjorling\venom\play.bat
+$KEY:P=SHELL:launcher.exe "wads\people\ola bjorling\venom\play-venom.ini"
 $KEY:T=SHELL:wads\people\ola bjorling\venom\Venom.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/v-z/venom
 $KEY:E=GOTO:Eternal Doom III

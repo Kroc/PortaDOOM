@@ -1,5 +1,5 @@
 $NAV=Classical
-$KEY:P=SHELL:wads\episodes\erkatane\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\erkatane\play-erkatane.ini"
 $KEY:T=SHELL:wads\episodes\erkatane\erkatane.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/d-f/erkatane
 

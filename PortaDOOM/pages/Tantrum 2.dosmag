@@ -1,6 +1,6 @@
 $NAV=People
 $NAV=Ola Björling
-$KEY:P=SHELL:wads\people\ola bjorling\tantrum2\play.bat
+$KEY:P=SHELL:launcher.exe "wads\people\ola bjorling\tantrum2\play-tantrum2.ini"
 $KEY:T=SHELL:wads\people\ola bjorling\tantrum2\tantrum2.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum2
 

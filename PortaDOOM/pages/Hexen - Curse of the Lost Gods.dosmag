@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\curse2\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\curse2\play-curse2.ini"
 $KEY:T=SHELL:wads\episodes\curse2\curse2.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
 

@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\spacwars\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\spacwars\play-spacwars.ini"
 $KEY:T=SHELL:wads\episodes\spacwars\spacwars.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 

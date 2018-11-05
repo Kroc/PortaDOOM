@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\lilith\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\lilith\play-lilith.ini"
 $KEY:T=SHELL:wads\episodes\lilith\lilith.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/lilith
 

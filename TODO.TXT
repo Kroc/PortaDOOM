@@ -1,6 +1,6 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[ ] LAUNCHER : When loading from an INI file set that as the 'current'
+[-] LAUNCHER : When loading from an INI file set that as the 'current'
     directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
  -  [ ] Unrecognised IWAD (not found and cannot be substituted)
@@ -9,10 +9,12 @@
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
  -  [-] parsing INI files
+ -  [ ] For `/GAME` parameter
 [ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
+[ ] LAUNCHER : Rework game title/descriptions
 [ ] LAUNCHER : UI react instantly before processing wait
 [-] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
@@ -22,7 +24,6 @@
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
-[X] LAUNCHER : Add an `/AUTO` switch to skip any interaction (game selection)
 [ ] LAUNCHER : Gussy up skill selection
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
  -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
@@ -89,14 +90,9 @@
 [ ] LAUNCHER : get exe name from command-line instead of assuming "launcher.exe"
 [ ] LAUNCHER : DOOM 64 RTR requires fluidsynth and GZDoom v3.2
 [ ] DOOM Retro : Next version will support binding F12
-[X] LAUNCHER : Remove x64 binaries for all but latest GZDoom?
 [ ] LAUNCHER : Add `gzdoom-default` definitions for older GZDoom versions
-[X] LAUNCHER : Add `pre` property to game INIs to load files *BEFORE* PWAD
-[X] LAUNCHER : Add a `/QUIT` switch to auto-close the engine
-    (for creating the default config files)
 [ ] LAUNCHER : Add a `/VER` param to select version constraints
 [ ] LAUNCHER : Figure out what tags softpoly supports
-[X] LAUNCHER : Mark "*-setup.exe" and other such engines as 'invisible'?
 [ ] DOOM-Crusher : Add PKE, EPK to recognised PK3 formats
 [ ] DOSMAG : Use `KEY` functions to simplify shortcut-key handling?
 [ ] DOOM-Crusher : fail on "SOUND&MUSIC.WAD"

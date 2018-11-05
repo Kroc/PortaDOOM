@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Malcom Sailor
 $TITLE=CHORD3
-$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chord3.bat
+$KEY:P=SHELL:launcher.exe "wads\people\Malcom Sailor\chord\play-chord.ini" /GAME 5
 $KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD3.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
 
@@ -14,7 +14,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
 :Requires : *no-limit	Includes : *None
 :-------------------------------------------------------------------------------
 
-It took way too long to make. Detailed, dificult, you know the drill... just download it and play it, trust me.
+It took way too long to make. Detailed, difficult, you know the drill... just download it and play it, trust me.
 
 It requires a source port (any source port that removes VPO and HOM, ie. almost any source port) to run, though jumping etc. is cheating.
 

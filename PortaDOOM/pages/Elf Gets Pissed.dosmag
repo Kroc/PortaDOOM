@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\elfgp\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\elfgp\play-elfgp.ini"
 $KEY:T=SHELL:wads\episodes\elfgp\elfgp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 

@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\RAINBOW\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\RAINBOW\play-rainbow.ini"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/97787-void-and-rainbow/
 
 :Void and Rainbow                                   * 2017 Cacoward Winner! *

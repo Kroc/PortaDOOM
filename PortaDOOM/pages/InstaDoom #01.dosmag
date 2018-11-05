@@ -1,5 +1,5 @@
 $NAV=Jokes
-$KEY:P=SHELL:wads\jokes\instadm\play.bat
+$KEY:P=SHELL:launcher.exe "wads\jokes\instadm\play-instadm.ini"
 $KEY:T=SHELL:wads\jokes\instadm\instadm.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/combos/instadm
 

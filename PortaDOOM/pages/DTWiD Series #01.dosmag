@@ -1,6 +1,6 @@
 $NAV=MegaWADs
 $TITLE=Doom the Way id Did
-$KEY:P=SHELL:wads\megawads\DTWiD\DTWID\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\DTWiD\DTWID\play-dtwid.ini"
 $KEY:T=SHELL:wads\megawads\DTWiD\DTWID\DTWID.txt
 $KEY:W=URL:http://dtwid.herokuapp.com/
 

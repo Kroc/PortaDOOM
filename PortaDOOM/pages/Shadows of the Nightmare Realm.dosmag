@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\sotnr\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\sotnr\play-sotnr.ini"
 $KEY:T=SHELL:wads\episodes\sotnr\sotnr.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/sotnr
 

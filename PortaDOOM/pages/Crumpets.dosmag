@@ -1,7 +1,7 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\crumpets\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\crumpets\play-crumpets.ini"
 $KEY:T=SHELL:wads\episodes\crumpets\crumpets.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/crumpets
 
 :Crumpets                                        * 2015 Cacoward Runner Up! *
 :===============================================================================

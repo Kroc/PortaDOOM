@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\bstain\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\bstain\play-bstain.ini"
 $KEY:T=SHELL:wads\megawads\bstain\BStain.txt
 $KEY:I=SHELL:wads\megawads\bstain\BStainfo.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/bstain

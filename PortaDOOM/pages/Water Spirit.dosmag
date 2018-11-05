@@ -1,6 +1,6 @@
 $NAV=People
 $NAV=Manbou (burabojunior)
-$KEY:P=SHELL:wads\people\burabojunior\watrsp\play.bat
+$KEY:P=SHELL:launcher.exe "wads\people\burabojunior\watrsp\play-watrsp.ini"
 $KEY:T=SHELL:wads\people\burabojunior\watrsp\watrsp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/watrsp
 

@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Malcom Sailor
 $TITLE=NOSUN5
-$KEY:P=SHELL:wads\people\Malcom Sailor\nosun\play - nosun5.bat
+$KEY:P=SHELL:launcher.exe "wads\people\Malcom Sailor\nosun\play-nosun.ini" /GAME 5
 $KEY:T=SHELL:wads\people\Malcom Sailor\nosun\NOSUN5.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/m-o/nosun5
 

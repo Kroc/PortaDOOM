@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\conversions\boa\play.bat
+$KEY:P=SHELL:launcher.exe "wads\conversions\boa\play-boa.ini"
 $KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
 $KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt
 $KEY:W=URL:http://boa.realm667.com/

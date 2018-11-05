@@ -1,4 +1,4 @@
-$KEY:P=SHELL:wads\people\John Romero\play.bat
+$KEY:P=SHELL:launcher.exe "wads\people\John Romero\play.ini" /GAME 3
 
 :John Romero's Episode 1
 :===============================================================================

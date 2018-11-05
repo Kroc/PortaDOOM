@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\conversions\freedoom\play.bat
+$KEY:P=SHELL:launcher.exe "wads\conversions\freedoom\play-freedoom.ini"
 
 ^C:FreeDOOM
 :===============================================================================

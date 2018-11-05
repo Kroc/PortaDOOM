@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\mek-catk\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\mek-catk\play-mek-catk.ini"
 $KEY:T=SHELL:wads\episodes\mek-catk\mek-catk.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/mek-catk
 

@@ -1,4 +1,6 @@
-$KEY:P=SHELL:wads\people\Tim Willits\play.bat
+$NAV=People
+$NAV=Tim Willits
+$KEY:P=SHELL:launcher.exe "wads\people\Tim Willits\play-raven.ini"
 $KEY:T=SHELL:wads\people\Tim Willits\RAVEN.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/p-r/raven
 

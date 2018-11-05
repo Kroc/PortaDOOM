@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\ma_wrp\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\ma_wrp\play-ma_wrp.ini"
 $KEY:T=SHELL:wads\onesies\ma_wrp\ma_wrp.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/ma_wrp
 

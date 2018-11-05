@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Sverre Kvernmo
 $TITLE=We who are About to Die
-$KEY:P=SHELL:wads\people\Sverre Kvernmo\cabal\play - cabal3.bat
+$KEY:P=SHELL:launcher.exe "wads\people\Sverre Kvernmo\cabal\play-cabal.ini" /GAME 5
 $KEY:T=SHELL:wads\people\Sverre Kvernmo\cabal\CABAL.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/cabal2
 

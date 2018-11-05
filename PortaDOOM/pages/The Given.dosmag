@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\TheGiven\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\TheGiven\play-thegiven.ini"
 $KEY:T=SHELL:wads\onesies\TheGiven\TheGiven.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/95543-the-given-a-large-monsterless-puzzle-map-rc1/
 

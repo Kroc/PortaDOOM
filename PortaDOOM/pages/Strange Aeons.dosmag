@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\conversions\strange_aeons\play.bat
+$KEY:P=SHELL:launcher.exe "wads\conversions\strange_aeons\play-strange_aeons.ini"
 $KEY:T=SHELL:wads\conversions\strange_aeons\SA readme.txt
 $KEY:I=SHELL:wads\conversions\strange_aeons\Strange Aeons.pdf
 $KEY:W=URL:https://mikestoybox.net/2017/01/04/strange-aeons/

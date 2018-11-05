@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\sunlust\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\sunlust\play-sunlust.ini"
 $KEY:T=SHELL:wads\megawads\sunlust\sunlust.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sunlust
 

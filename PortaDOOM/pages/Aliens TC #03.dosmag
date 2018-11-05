@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\conversions\alienstc\ALIENS (TC) 2017\play.bat
+$KEY:P=SHELL:launcher.exe "wads\conversions\alienstc\ALIENS (TC) 2017\play-aliens_tc_2017.ini"
 $KEY:T=SHELL:wads\conversions\alienstc\ALIENS (TC) 2017\Instructions.txt
 $KEY:W=URL:http://www.moddb.com/mods/aliens-tc/
 $KEY:H=URL:https://forum.zdoom.org/viewtopic.php?f=37&t=37763

@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\SHAREWARE\adventures_of_square\play.bat
+$KEY:P=SHELL:launcher.exe "wads\SHAREWARE\adventures_of_square\play-square1.ini"
 $KEY:W=URL:http://adventuresofsquare.com
 
 :The Adventures of Square

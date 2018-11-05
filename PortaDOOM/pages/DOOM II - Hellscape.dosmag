@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\d2hs-lutz\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\d2hs-lutz\play-d2hs-lutz.ini"
 $KEY:T=SHELL:wads\episodes\d2hs-lutz\d2hs-lutz.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dhs-lutz
 

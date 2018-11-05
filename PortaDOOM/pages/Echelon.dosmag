@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\echelon\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\echelon\play-echelon.ini"
 $KEY:T=SHELL:wads\megawads\echelon\echelon.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon
 $KEY:1=URL:https://www.doomworld.com/afterglow/textures/

@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\eternal\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\eternal\play-eternal.ini"
 $KEY:T=SHELL:wads\megawads\eternal\ETERNAL.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/themes/TeamTNT/eternal/eternal
 

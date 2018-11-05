@@ -1,5 +1,5 @@
 $TITLE=Tech Gone Bad
-$KEY:P=SHELL:wads\people\John Romero\play - e1m8b.bat
+$KEY:P=SHELL:launcher.exe "wads\people\John Romero\play.ini" /GAME 2
 $KEY:T=SHELL:wads\people\John Romero\e1m8b.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m8b
 

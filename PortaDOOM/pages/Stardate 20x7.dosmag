@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\sd20x7\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\sd20x7\play-sd20x7.ini"
 $KEY:T=SHELL:wads\episodes\sd20x7\sd20x7.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/sd20x7
 

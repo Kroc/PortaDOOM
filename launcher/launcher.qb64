@@ -89,8 +89,13 @@ select_game:
 '-----------------------------------------------------------------------------
 'if only one game is defined (or `/AUTO` is defined),
 'we don't need to offer a choice
-IF Games_Count =1 _
-OR CMD_AUTO` = TRUE _
+IF CMD_GAME$ <> "" THEN
+    'TODO: all sorts of errors
+    CALL Games_Select(VAL(CMD_GAME$))
+    GOTO select_engine
+    
+ELSEIF Games_Count =1 _
+    OR CMD_AUTO` = TRUE _
 THEN
     CALL Games_Select(1)
     GOTO select_engine

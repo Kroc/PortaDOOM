@@ -1,5 +1,5 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:wads\conversions\alienstc\atcud20\play.bat
+$KEY:P=SHELL:launcher "wads\conversions\alienstc\atcud20\play-alientc.ini"
 $KEY:T=SHELL:wads\conversions\alienstc\atcud20\ALIENTC.TXT
 $KEY:W=URL:https://doomwiki.org/wiki/Aliens_TC
 

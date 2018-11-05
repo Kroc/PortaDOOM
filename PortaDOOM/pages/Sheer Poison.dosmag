@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\shpo1\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\shpo1\play-shpo1.ini"
 $KEY:T=SHELL:wads\onesies\shpo1\shpo1.txt
 $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/72721-new-song-with-level-attached/
 

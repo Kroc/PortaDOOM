@@ -1,6 +1,6 @@
 $NAV=MegaWADs
 $TITLE=3 Heures d'agonie I
-$KEY:P=SHELL:wads\megawads\3ha\3hafinal\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\3ha\3hafinal\play-3hafinal.ini"
 $KEY:T=SHELL:wads\megawads\3ha\3hafinal\3hafinal.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/3hafinal
 

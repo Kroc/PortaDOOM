@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\legher\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\legher\play-legher.ini"
 $KEY:T=SHELL:wads\episodes\legher\legher.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/legher
 

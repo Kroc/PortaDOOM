@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\Brigandine\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\Brigandine\play-brigandine.ini"
 $KEY:T=SHELL:wads\onesies\Brigandine\brigandine.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/92776-brigandine-rc2-updated-2017-05-13/
 

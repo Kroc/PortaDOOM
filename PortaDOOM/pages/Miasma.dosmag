@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\miasma\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\miasma\play-miasma.ini"
 $KEY:T=SHELL:wads\onesies\miasma\miasma.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 

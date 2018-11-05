@@ -1,5 +1,5 @@
 $NAV=MegaWADs
-$KEY:P=SHELL:wads\megawads\aaliens\play.bat
+$KEY:P=SHELL:launcher.exe "wads\megawads\aaliens\play-aaliens.ini"
 $KEY:T=SHELL:wads\megawads\aaliens\aaliens.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 

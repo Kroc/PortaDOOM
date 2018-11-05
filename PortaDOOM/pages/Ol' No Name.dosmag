@@ -1,6 +1,6 @@
 $NAV=People
 $NAV=Octavarium
-$KEY:P=SHELL:wads\people\Octavarium\Olnoname\play.bat
+$KEY:P=launcher.exe "SHELL:wads\people\Octavarium\Olnoname\play-olnoname.ini"
 $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/73125-ol-no-name-4-map-set
 
 :Ol' No Name                                     * 2015 Cacoward Runner Up! *

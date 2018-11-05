@@ -1,5 +1,5 @@
 $NAV=Onesies
-$KEY:P=SHELL:wads\onesies\dt-lutz\play.bat
+$KEY:P=SHELL:launcher.exe "wads\onesies\dt-lutz\play-dt-lutz.ini"
 $KEY:T=SHELL:wads\onesies\dt-lutz\dt-lutz.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dt-lutz
 

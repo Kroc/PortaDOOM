@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\killed\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\killed\play-killed.ini"
 $KEY:T=SHELL:wads\episodes\killed\killed.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/j-l/killed
 

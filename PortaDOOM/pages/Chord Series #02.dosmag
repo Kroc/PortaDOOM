@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Malcom Sailor
 $TITLE=CHORD2
-$KEY:P=SHELL:wads\people\Malcom Sailor\chord\play - chord2.bat
+$KEY:P=SHELL:launcher.exe "wads\people\Malcom Sailor\chord\play-chord.ini" /GAME 2
 $KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD2.TXT
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/chord2
 

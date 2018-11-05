@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:wads\episodes\aa_e1\play.bat
+$KEY:P=SHELL:launcher.exe "wads\episodes\aa_e1\play-aa_e1.ini"
 $KEY:T=SHELL:wads\episodes\aa_e1\AA_E1.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/a-c/aa_e1
 
