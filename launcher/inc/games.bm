@@ -32,6 +32,11 @@ SUB Games_EnumerateINI (ini_file$)
     
 readINI:
     '-------------------------------------------------------------------------
+    'set the INI file path as the base path
+    'TODO: add this as an additional path to check,
+    '      rather than replacing the 'current' directory
+    LET DIR_CUR$ = Paths_AddSlash$(Paths_GetPath$(path$))
+                
     DIM ini_index
     LET ini_index = 1
     DO

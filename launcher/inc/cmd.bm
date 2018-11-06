@@ -318,10 +318,6 @@ cmd_help:   PRINT ""
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
                 'load the game definitions from it
                 Games_EnumerateINI(COMMAND$(i))
-				'set the INI file path as the base path
-				'TODO: add this as an additional path to check,
-				'      rather than replacing the 'current' directory
-				LET DIR_CUR$ = Paths_AddSlash$(Paths_GetPath$(COMMAND$(i)))
                 'is there a `/GAME` parameter to auto-select a definition?
                 LET i = i + 1
                 IF UCASE$(COMMAND$(i)) = "/GAME" THEN
