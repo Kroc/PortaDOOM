@@ -1,8 +1,5 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[X] LAUNCHER : Need to `UTF8TOANSI$` the text read in from INI files!
-[X] LAUNCHER : When loading from an INI file set that as the 'current'
-    directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
  -  [ ] Unrecognised IWAD (not found and cannot be substituted)
  -  [-] When no engines remain after filter
@@ -10,7 +7,6 @@
  -  [ ] Unrecognised tag
  -  [-] parsing INI files
  -  [ ] For `/GAME` parameter
-[ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
@@ -23,6 +19,7 @@
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
 [ ] LAUNCHER : Allow backspace to previous pages
+[ ] PSX DOOM apparently not working on GZDoom >3.2
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================

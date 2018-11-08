@@ -78,9 +78,38 @@ readINI:
         DIM ini_section$
         LET ini_section$ = "games." + game_id$
         
-        'game option descriptive text:
+        'since an IWAD *must* be defined, we also use this
+        'as a check to see if the section exists
+        DIM ini_iwad$
+        LET ini_iwad$ = GetSetting$("", ini_section$, "iwad")
+        IF ini_iwad$ = "" THEN
+            CALL ErrorScreen("ERROR: Invalid INI Definition")
+            PRINT " IWAD field (or game section) missing, " _
+                + "in INI file:"
+            PRINT " " + CHR$(34) _
+               + RTRUNCATE$(path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+            PRINT ""
+            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                "An `iwad` field is required for a game definition. " _
+              + " This error can also occur if the game's section " _
+              + "cannot be found. For each local game-id given, " _
+              + "a `[games.id]` section must also be given, " _
+              + "for example:"
+            PRINT ""
+            PRINT "     [games]"
+            PRINT "     1=doom"
+            PRINT ""
+            PRINT "     [games.doom]"
+            PRINT "     iwad=DOOM"
+            CALL ErrorExit: SYSTEM 1
+        END IF
+        
+        'the game-choice name is used as a title when selected,
+        'if missing, we default to the overall game title
         DIM ini_name$
         LET ini_name$ = GetSetting$("", ini_section$, "name")
+        'the choice text. this is used to be able to provide
+        'a selection screen with the available choices
         DIM ini_desc$
         LET ini_desc$ = GetSetting$("", ini_section$, "desc")
         
@@ -104,8 +133,6 @@ readINI:
         END SELECT
         
         'game files and settings:
-        DIM ini_iwad$
-        LET ini_iwad$ = GetSetting$("", ini_section$, "iwad")
         DIM ini_pre$
         LET ini_pre$ = GetSetting$("", ini_section$, "pre")
         DIM ini_pwad$

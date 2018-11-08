@@ -189,7 +189,7 @@ SUB Engines_Enumerate()
                     "A `title` field is required for an engine definition. " _
                   + " This error can also occur if the engine's section " _
                   + "cannot be found. For each local engine-id given, " _
-                  + "a `[games.engine]` section must also be given, " _
+                  + "a `[engines.id]` section must also be given, " _
                   + "for example:"
                 PRINT ""
                 PRINT "     [engines]"
