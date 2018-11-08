@@ -2,9 +2,21 @@
 
 'present engine selection UI:
 
+VIEW PRINT
+COLOR BLACK, UI_FORECOLOR
+LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
+LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
+IF Games_Selected.name <> "" THEN
+    LOCATE 1, 2: PRINT TRUNCATE$(Games_Selected.name, UI_SCREEN_WIDTH - 2);
+ELSEIF Games_Selected.title <> "" THEN
+    LOCATE 1, 2: PRINT TRUNCATE$(Games_Selected.title, UI_SCREEN_WIDTH - 2);
+END IF
+
+COLOR UI_FORECOLOR, UI_BACKCOLOR
+VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
 CLS 2
+
 PRINT ""
-COLOR UI_FORECOLOR
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
@@ -21,11 +33,11 @@ IF Engines_SelectedUltra <> 0 THEN
     PRINT ""
     IF Engines(Engines_SelectedUltra).desc <> "" THEN
         COLOR LIME
-        LET H% = PRINTWRAP%( _
+        LET h = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
             Engines(Engines_SelectedUltra).desc _
         )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+        FOR i = CSRLIN - h - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
         NEXT i
     END IF
@@ -44,11 +56,11 @@ IF Engines_SelectedFast <> 0 THEN
     PRINT ""
     IF Engines(Engines_SelectedFast).desc <> "" THEN
         COLOR LIME
-        LET H% = PRINTWRAP%( _
+        LET h = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
             Engines(Engines_SelectedFast).desc _
         )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+        FOR i = CSRLIN - h - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
         NEXT i
     END IF
@@ -67,11 +79,11 @@ IF Engines_SelectedRetro <> 0 THEN
     PRINT ""
     IF Engines(Engines_SelectedRetro).desc <> "" THEN
         COLOR LIME
-        LET H% = PRINTWRAP%( _
+        LET h = PRINTWRAP%( _
             5, CSRLIN, UI_SCREEN_WIDTH - 6, _
             Engines(Engines_SelectedRetro).desc _
         )
-        FOR i = CSRLIN - H% - 2 TO CSRLIN - 1
+        FOR i = CSRLIN - h - 2 TO CSRLIN - 1
             LOCATE i, 2: COLOR YELLOW: PRINT CHR$(ASC_BOX_DBL_V)
         NEXT i
     END IF

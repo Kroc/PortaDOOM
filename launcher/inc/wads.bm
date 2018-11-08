@@ -93,6 +93,13 @@ FUNCTION WADs_Find$(path$)
         GOSUB checkPath
     END IF
     
+    'if game definitions were loaded
+    'from an INI file, check its path
+    IF DIR_INI$ <> "" THEN
+        LET testPath$ = DIR_INI$ + path$
+        GOSUB checkPath
+    END IF
+    
     'check the 'current' directory
     '-- i.e. the directory the launcher was called *from*
     IF DIR_CUR$ <> "" THEN

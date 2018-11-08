@@ -79,6 +79,13 @@ FUNCTION IWADs_EnumerateINI&(ini_path$)
     ELSE
         'search for the file:
         
+        'if game definitions were loaded
+        'from an INI file, check its path
+        IF DIR_INI$ <> "" THEN
+            LET path$ = DIR_INI$ + ini_path$
+            IF _FILEEXISTS(path$) THEN GOTO readINI
+        END IF
+        
         'check the 'current' directory
         '-- i.e. the directory the launcher was called *from*
         LET path$ = DIR_CUR$ + ini_path$
@@ -198,6 +205,13 @@ FUNCTION IWADs_GetPath$(iwad$)
         IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
     ELSE
         'search for the file:
+        
+        'if game definitions were loaded
+        'from an INI file, check its path
+        IF DIR_INI$ <> "" THEN
+            LET iwad_path$ = DIR_INI$ + iwad$
+            IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+        END IF
         
         'check the 'current' directory
         '-- i.e. the directory the launcher was called *from*

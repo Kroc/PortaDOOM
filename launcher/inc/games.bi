@@ -3,8 +3,11 @@
 TYPE Game
     id AS STRING
     
-    title AS STRING
-    desc AS STRING '........brief description
+    title AS STRING '.......game title; shared between all options
+    blurb AS STRING '.......overall game description
+    
+    name AS STRING '........name of this particular game option
+    desc AS STRING '........brief description of this option
     
     'this is an index into the `IWADs` array where the meta-data is stored
     iwad AS _BYTE

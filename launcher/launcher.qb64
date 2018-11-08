@@ -9,7 +9,7 @@ _LIMIT 30
 DEFLNG a-z
 
 'generic 'index' counters
-DIM i, j, h, w, x, y AS _UNSIGNED LONG
+DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
 
 'third-party library declarations:
 '-----------------------------------------------------------------------------
@@ -67,6 +67,10 @@ IF Paths_GetFolderName$(DIR_EXE$) = "launcher" THEN
     CHDIR "..\PortaDOOM\files"
     LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 END IF
+
+'when game definitions are loaded from an INI file,
+'its path is used as an additional search location
+DIM SHARED DIR_INI$
 
 '=============================================================================
 'MAIN:

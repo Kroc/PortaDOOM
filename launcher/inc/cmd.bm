@@ -387,12 +387,12 @@ LOOP
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
-    DIM title$, vid%, desc$
+    DIM vid
     
     'default to no hard requirement for rendering colour-depth 
-    LET vid% = 0
+    LET vid = 0
     'require "software" renderer (8-bit, 256-colours)
-    IF CMD_SW` = TRUE THEN LET vid% = 8
+    IF CMD_SW` = TRUE THEN LET vid = 8
     
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
@@ -400,9 +400,10 @@ IF cmd_hasGame` THEN
     'TODO: get game name / title from the IWAD meta-data
     
     CALL Games_Add ( _
-        "cmd", title$, desc$, CMD_CMPLVL$, CMD_IWAD$, CMD_PRE$, CMD_PWAD$, _
-        CMD_FILES$, CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
-        CMD_USE$, CMD_REQ$, vid%, CMD_WARP$, CMD_SKILL$, _
+        "cmd", "", "", "", "", CMD_CMPLVL$, _
+        CMD_IWAD$, CMD_PRE$, CMD_PWAD$, CMD_FILES$, _
+        CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
+        CMD_USE$, CMD_REQ$, vid, CMD_WARP$, CMD_SKILL$, _
         "", "", "", "", "", "", "", "", "" _
     )
 ELSE

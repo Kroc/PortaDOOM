@@ -7,6 +7,8 @@ files\wads\conversions\freedoom\
 files\wads\freedoom?.ini
 files\wads\doom.ini
 files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
 
 files\ports\doom-retro\
 files\config\default.doom-retro.cfg
@@ -17,12 +19,16 @@ files\config\default.prboom-plus.cfg
 
 files\ports\gzdoom_*\
 files\config\default.gzdoom.ini
+files\config\default.gzdoom-36.ini
 
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
+pages\FreeDOOM.dosmag
 pages\DTWiD Series #??.dosmag
 files\wads\megawads\DTWiD\**
+pages\3 Heures Series #??.dosmag
+files\wads\megawads\3ha\**
 pages\No End In Sight.dosmag
 files\wads\megawads\neis\
 pages\No Rest for the Living.dosmag
@@ -38,20 +44,14 @@ files\demos\ep3-347\
 files\demos\evall-4416\
 files\demos\plalln4357\
 
-pages\FreeDOOM.dosmag
-
 pages\Sunlust #??.dosmag
-files\wads\megawads\Sunlust\
+files\wads\megawads\sunlust\
 pages\Erkatane.dosmag
 files\wads\episodes\erkatane\
 pages\Skulldash.dosmag
 files\wads\conversions\SKULDASH\
 pages\Swift Death.dosmag
 files\wads\megawads\swideath\
-
-pages\3 Heures Series #??.dosmag
-files\wads\megawads\3ha\**
-
 pages\Breach.dosmag
 files\wads\onesies\breach\
 pages\Valiant.dosmag

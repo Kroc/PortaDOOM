@@ -1,6 +1,7 @@
 # Windows junk
 Desktop.ini
 Thumbs.db
+*.tmp
 
 # git files and the like
 .*
@@ -14,6 +15,7 @@ __*
 *.bak
 
 # N64 ROMs!
+# (for DOOM 64)
 *.n64
 *.v64
 *.z64
@@ -28,9 +30,9 @@ HERETIC.WAD
 HEXEN.WAD
 HEXDD.WAD
 jptr_v40.wad
+TNT.WAD
 PLUTONIA.WAD
 STRIFE1.WAD
-TNT.WAD
 VOICES.WAD
 
 NERVE.WAD

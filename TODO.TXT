@@ -1,6 +1,7 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[-] LAUNCHER : When loading from an INI file set that as the 'current'
+[ ] LAUNCHER : Need to `UTF8TOANSI$` the text read in from INI files!
+[X] LAUNCHER : When loading from an INI file set that as the 'current'
     directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
  -  [ ] Unrecognised IWAD (not found and cannot be substituted)
@@ -14,25 +15,30 @@
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
-[ ] LAUNCHER : Rework game title/descriptions
+[ ] LAUNCHER : `bit` property in game ini not being used
+[ ] LAUNCHER : Cannot specify `/DEMO` in ini files
+ -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
+[X] LAUNCHER : Rework game title/descriptions
 [ ] LAUNCHER : UI react instantly before processing wait
 [-] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found
 [ ] LAUNCHER : If no PWAD, get title / description and game meta-data from IWAD
 [ ] LAUNCHER : Implement class selection for Hexen in launcher.exe
-[ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
+[ ] LAUNCHER : Allow backspace to previous pages
 
 [P2] Required: (lose-ends that need tying up)
 ================================================================================
+[ ] LAUNCHER : Unable to 'warp' to named map; e.g. "UAC01" in cacowards/_2008/uacmnnew
 [ ] LAUNCHER : Gussy up skill selection
-[ ] LAUNCHER : Cannot specify `/DEMO` in ini files
- -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
 [ ] LAUNCHER : If no IWAD given, use default for type of engine
 [ ] Updates to default configs:
  -  [ ] Sector light mode: Standard
  -  [X] Disable stats (not fair for portable use on non-personal systems)
  -  [ ] "m_showinputgrid == '-1' allows for on-screen keyboard to never show
         when inputting text, even when using a mouse"
+[X] Icon for launcher.exe
+ -  [ ] extra sizes: 20, 96?
+[ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
 
 [P3] Feature Enhancements:
 ================================================================================
@@ -107,9 +113,6 @@
  -  [X] use `_DONTWAIT`
  -  [ ] change to the directory of the file being launched.
         this will do away with the need for "%~dp0" in "play.bat" files
-[ ] Additional PortaDOOM.exe icon sizes: 20, 24, 48, 64, 96?, 128, 256
-[X] Icon for launcher.exe
- -  [ ] extra sizes: 20, 96?
 [ ] Need a "dotted tab" for contents and index pages
 [ ] Consider right alignment from middle of line (rulers?), ">>"
 [ ] Tabs in Warning Boxes are broken

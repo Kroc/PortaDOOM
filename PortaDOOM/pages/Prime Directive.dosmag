@@ -57,7 +57,7 @@ I have also recorded a playthrough detailing how to get 100% as well as providin
 
 *REMIXING
 
-I've made no effort to ensure compatability with weapons mods, excepting the fact that I've tried to name all my things appropriately for the Gateway Experiments. I encourage you to remix this mapset to work with your favourite weapons mod and upload the result to /idgames. Don't be lazy, though. If you're going to give yourself all the massive weapons, put the work in to give the marines you face the same weapons.
+I've made no effort to ensure compatibility with weapons mods, excepting the fact that I've tried to name all my things appropriately for the Gateway Experiments. I encourage you to remix this mapset to work with your favourite weapons mod and upload the result to /idgames. Don't be lazy, though. If you're going to give yourself all the massive weapons, put the work in to give the marines you face the same weapons.
 
 Since the original release, people have complained that it doesn't work with their weapons mod. If you intend on remixing it to work with one, note that I use a custom player class and I've reimplemented the vanilla weapons to track weapon stats. 
 

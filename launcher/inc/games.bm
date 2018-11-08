@@ -32,14 +32,19 @@ SUB Games_EnumerateINI (ini_file$)
     
 readINI:
     '-------------------------------------------------------------------------
-    'set the INI file path as the base path
-    'TODO: add this as an additional path to check,
-    '      rather than replacing the 'current' directory
-    LET DIR_CUR$ = Paths_AddSlash$(Paths_GetPath$(path$))
-                
+    'do additional file searching from the INI file's path
+    LET DIR_INI$ = Paths_AddSlash$(Paths_GetPath$(path$))
+    
+    'read the game title and blurb
+    DIM ini_title$
+    LET ini_title$ = ReadSetting$(path$, "games", "title")
+    DIM ini_blurb$
+    LET ini_blurb$ = ReadSetting$(path$, "games", "blurb")
+    
+    'for now we limit game definitions to 9 since we can not provide
+    'a user-scrollable area and it also simplifies the keyboard check
     DIM ini_index
-    LET ini_index = 1
-    DO
+    FOR ini_index = 1 TO 9
         'read from the list of game-configurations defined
         '(a single INI can define more than one game variation)
         DIM game_id$
@@ -66,17 +71,16 @@ readINI:
                 PRINT "     1=doom"
                 CALL ErrorExit: SYSTEM 1
             END IF
-            EXIT DO
+            EXIT FOR
         END IF
         
         'read in the game details:
-        'TODO: validation
         DIM ini_section$
         LET ini_section$ = "games." + game_id$
         
-        'game descriptive text:
-        DIM ini_title$
-        LET ini_title$ = ReadSetting$("", ini_section$, "title")
+        'game option descriptive text:
+        DIM ini_name$
+        LET ini_name$ = ReadSetting$("", ini_section$, "name")
         DIM ini_desc$
         LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
         
@@ -142,7 +146,8 @@ readINI:
         LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
         
         CALL Games_Add( _
-            game_id$, ini_title$, ini_desc$, ini_cmplvl$, _
+            game_id$, ini_title$, ini_blurb$, ini_name$, ini_desc$, _
+            ini_cmplvl$, _
             ini_iwad$, ini_pre$, ini_pwad$, ini_files$, _
             ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
             ini_use$, ini_tags$, vid%, _
@@ -151,15 +156,13 @@ readINI:
             ini_skill5$, ini_skill6$, ini_skill7$, ini_skill8$, _
             ini_skill9$ _
         )
-        
-        LET ini_index = ini_index + 1
-    LOOP
+    NEXT
     
 END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
+    id$, title$, blurb$, name$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
     exec$, cmd$, deh$, bex$, use$, tags$, vid%, warp$, skill$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
@@ -265,6 +268,8 @@ skill:
     
     'no problems? write the data into the engine list
     LET Games(Games_Count).title = title$
+    LET Games(Games_Count).blurb = blurb$
+    LET Games(Games_Count).name = name$
     LET Games(Games_Count).desc = desc$
     
     IF cmplvl$ = "" THEN
