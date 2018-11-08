@@ -1,12 +1,11 @@
 [P0] Critical: (unstable until fixed)
 ================================================================================
-[ ] LAUNCHER : Need to `UTF8TOANSI$` the text read in from INI files!
+[X] LAUNCHER : Need to `UTF8TOANSI$` the text read in from INI files!
 [X] LAUNCHER : When loading from an INI file set that as the 'current'
     directory? (or add as another search location)
 [ ] LAUNCHER : Error messages:
  -  [ ] Unrecognised IWAD (not found and cannot be substituted)
  -  [-] When no engines remain after filter
- -  [X] When file is not found
  -  [ ] When param-value is missing, e.g. `/IWAD /PWAD ...`
  -  [ ] Unrecognised tag
  -  [-] parsing INI files
@@ -18,7 +17,6 @@
 [ ] LAUNCHER : `bit` property in game ini not being used
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
  -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
-[X] LAUNCHER : Rework game title/descriptions
 [ ] LAUNCHER : UI react instantly before processing wait
 [-] LAUNCHER : FreeDOOM substitution
 [ ] LAUNCHER : Use Shareware versions if DOOM2/HERETIC/HEXEN/STRIFE not found

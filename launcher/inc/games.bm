@@ -37,9 +37,9 @@ readINI:
     
     'read the game title and blurb
     DIM ini_title$
-    LET ini_title$ = ReadSetting$(path$, "games", "title")
+    LET ini_title$ = GetSetting$(path$, "games", "title")
     DIM ini_blurb$
-    LET ini_blurb$ = ReadSetting$(path$, "games", "blurb")
+    LET ini_blurb$ = GetSetting$(path$, "games", "blurb")
     
     'for now we limit game definitions to 9 since we can not provide
     'a user-scrollable area and it also simplifies the keyboard check
@@ -48,7 +48,7 @@ readINI:
         'read from the list of game-configurations defined
         '(a single INI can define more than one game variation)
         DIM game_id$
-        LET game_id$ = ReadSetting$(path$, "games", STRINT$(ini_index))
+        LET game_id$ = GetSetting$(path$, "games", STRINT$(ini_index))
         'if there's no further entries, stop looking
         IF game_id$ = "" THEN
             'if this is still the first check,
@@ -80,19 +80,19 @@ readINI:
         
         'game option descriptive text:
         DIM ini_name$
-        LET ini_name$ = ReadSetting$("", ini_section$, "name")
+        LET ini_name$ = GetSetting$("", ini_section$, "name")
         DIM ini_desc$
-        LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
+        LET ini_desc$ = GetSetting$("", ini_section$, "desc")
         
         'game requirements:
         DIM ini_use$
-        LET ini_use$ = ReadSetting$("", ini_section$, "use")
+        LET ini_use$ = GetSetting$("", ini_section$, "use")
         DIM ini_tags$
-        LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
+        LET ini_tags$ = GetSetting$("", ini_section$, "tags")
         DIM ini_vid$
-        LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
+        LET ini_vid$ = GetSetting$("", ini_section$, "vid")
         DIM ini_cmplvl$
-        LET ini_cmplvl$ = ReadSetting$("", ini_section$, "cmplvl")
+        LET ini_cmplvl$ = GetSetting$("", ini_section$, "cmplvl")
         
         DIM vid%
         SELECT CASE ini_vid$
@@ -105,45 +105,45 @@ readINI:
         
         'game files and settings:
         DIM ini_iwad$
-        LET ini_iwad$ = ReadSetting$("", ini_section$, "iwad")
+        LET ini_iwad$ = GetSetting$("", ini_section$, "iwad")
         DIM ini_pre$
-        LET ini_pre$ = ReadSetting$("", ini_section$, "pre")
+        LET ini_pre$ = GetSetting$("", ini_section$, "pre")
         DIM ini_pwad$
-        LET ini_pwad$ = ReadSetting$("", ini_section$, "pwad")
+        LET ini_pwad$ = GetSetting$("", ini_section$, "pwad")
         DIM ini_files$
-        LET ini_files$ = ReadSetting$("", ini_section$, "files")
+        LET ini_files$ = GetSetting$("", ini_section$, "files")
         DIM ini_deh$
-        LET ini_deh$ = ReadSetting$("", ini_section$, "deh")
+        LET ini_deh$ = GetSetting$("", ini_section$, "deh")
         DIM ini_bex$
-        LET ini_bex$ = ReadSetting$("", ini_section$, "bex")
+        LET ini_bex$ = GetSetting$("", ini_section$, "bex")
         DIM ini_warp$
-        LET ini_warp$ = ReadSetting$("", ini_section$, "warp")
+        LET ini_warp$ = GetSetting$("", ini_section$, "warp")
         DIM ini_skill$
-        LET ini_skill$ = ReadSetting$("", ini_section$, "skill")
+        LET ini_skill$ = GetSetting$("", ini_section$, "skill")
         
         DIM ini_skill1$
-        LET ini_skill1$ = ReadSetting$("", ini_section$, "skill1")
+        LET ini_skill1$ = GetSetting$("", ini_section$, "skill1")
         DIM ini_skill2$
-        LET ini_skill2$ = ReadSetting$("", ini_section$, "skill2")
+        LET ini_skill2$ = GetSetting$("", ini_section$, "skill2")
         DIM ini_skill3$
-        LET ini_skill3$ = ReadSetting$("", ini_section$, "skill3")
+        LET ini_skill3$ = GetSetting$("", ini_section$, "skill3")
         DIM ini_skill4$
-        LET ini_skill4$ = ReadSetting$("", ini_section$, "skill4")
+        LET ini_skill4$ = GetSetting$("", ini_section$, "skill4")
         DIM ini_skill5$
-        LET ini_skill5$ = ReadSetting$("", ini_section$, "skill5")
+        LET ini_skill5$ = GetSetting$("", ini_section$, "skill5")
         DIM ini_skill6$
-        LET ini_skill6$ = ReadSetting$("", ini_section$, "skill6")
+        LET ini_skill6$ = GetSetting$("", ini_section$, "skill6")
         DIM ini_skill7$
-        LET ini_skill7$ = ReadSetting$("", ini_section$, "skill7")
+        LET ini_skill7$ = GetSetting$("", ini_section$, "skill7")
         DIM ini_skill8$
-        LET ini_skill8$ = ReadSetting$("", ini_section$, "skill8")
+        LET ini_skill8$ = GetSetting$("", ini_section$, "skill8")
         DIM ini_skill9$
-        LET ini_skill9$ = ReadSetting$("", ini_section$, "skill9")
+        LET ini_skill9$ = GetSetting$("", ini_section$, "skill9")
         
         DIM ini_exec$
-        LET ini_exec$ = ReadSetting$("", ini_section$, "exec")
+        LET ini_exec$ = GetSetting$("", ini_section$, "exec")
         DIM ini_cmd$
-        LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
+        LET ini_cmd$ = GetSetting$("", ini_section$, "cmd")
         
         CALL Games_Add( _
             game_id$, ini_title$, ini_blurb$, ini_name$, ini_desc$, _

@@ -35,7 +35,7 @@ SUB Engines_Enumerate()
         '---------------------------------------------------------------------
         
         DIM ini_engine$
-        LET ini_engine$ = ReadSetting$(ini_path$, "global", "engine")
+        LET ini_engine$ = GetSetting$(ini_path$, "global", "engine")
         IF ini_engine$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`engine` field is missing " _
@@ -58,7 +58,7 @@ SUB Engines_Enumerate()
         END IF
         
         DIM ini_tier$
-        LET ini_tier$ = ReadSetting$(ini_path$, "global", "tier")
+        LET ini_tier$ = GetSetting$(ini_path$, "global", "tier")
         IF ini_tier$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`tier` field is missing " _
@@ -83,7 +83,7 @@ SUB Engines_Enumerate()
         END IF
         
         DIM ini_rank$
-        LET ini_rank$ = ReadSetting$(ini_path$, "global", "rank")
+        LET ini_rank$ = GetSetting$(ini_path$, "global", "rank")
         IF ini_rank$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`rank` field is missing " _
@@ -115,7 +115,7 @@ SUB Engines_Enumerate()
         LET ini_index% = 1
         DO
             DIM ini_id$
-            LET ini_id$ = ReadSetting$("", "engines", STRINT$(ini_index%))
+            LET ini_id$ = GetSetting$("", "engines", STRINT$(ini_index%))
             IF ini_id$ = "" THEN
                 'if this is still the first check,
                 'then no engines are defined!
@@ -177,7 +177,7 @@ SUB Engines_Enumerate()
             'get the engine title. since this is required this will also
             'serve to check if the section exists as it should
             DIM ini_title$
-            LET ini_title$ = ReadSetting$("", ini_section$, "title")
+            LET ini_title$ = GetSetting$("", ini_section$, "title")
             IF ini_title$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Title field (or engine section) missing, " _
@@ -206,7 +206,7 @@ SUB Engines_Enumerate()
             
             'read the engine's CPU-type
             DIM ini_bit$
-            LET ini_bit$ = ReadSetting$("", ini_section$, "bit")
+            LET ini_bit$ = GetSetting$("", ini_section$, "bit")
             
             'executable architecture must be either 32 or 64-bit
             IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
@@ -224,7 +224,7 @@ SUB Engines_Enumerate()
             END IF
             
             DIM ini_desc$
-            LET ini_desc$ = ReadSetting$("", ini_section$, "desc")
+            LET ini_desc$ = GetSetting$("", ini_section$, "desc")
             IF ini_desc$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Description field missing in INI file:"
@@ -245,25 +245,25 @@ SUB Engines_Enumerate()
             END IF
             
             DIM ini_type$
-            LET ini_type$ = ReadSetting$("", ini_section$, "type")
+            LET ini_type$ = GetSetting$("", ini_section$, "type")
             DIM ini_exe$
-            LET ini_exe$ = ReadSetting$("", ini_section$, "exe")
+            LET ini_exe$ = GetSetting$("", ini_section$, "exe")
             DIM ini_ver$
-            LET ini_ver$ = ReadSetting$("", ini_section$, "ver")
+            LET ini_ver$ = GetSetting$("", ini_section$, "ver")
             DIM ini_vid$
-            LET ini_vid$ = ReadSetting$("", ini_section$, "vid")
+            LET ini_vid$ = GetSetting$("", ini_section$, "vid")
             DIM ini_kin$
-            LET ini_kin$ = ReadSetting$("", ini_section$, "kin")
+            LET ini_kin$ = GetSetting$("", ini_section$, "kin")
             DIM ini_cfg$
-            LET ini_cfg$ = ReadSetting$("", ini_section$, "cfg")
+            LET ini_cfg$ = GetSetting$("", ini_section$, "cfg")
             DIM ini_save$
-            LET ini_save$ = ReadSetting$("", ini_section$, "save")
+            LET ini_save$ = GetSetting$("", ini_section$, "save")
             DIM ini_tags$
-            LET ini_tags$ = ReadSetting$("", ini_section$, "tags")
+            LET ini_tags$ = GetSetting$("", ini_section$, "tags")
             DIM ini_auto$
-            LET ini_auto$ = ReadSetting$("", ini_section$, "auto")
+            LET ini_auto$ = GetSetting$("", ini_section$, "auto")
             DIM ini_cmd$
-            LET ini_cmd$ = ReadSetting$("", ini_section$, "cmd")
+            LET ini_cmd$ = GetSetting$("", ini_section$, "cmd")
             
             'process the tag list
             CALL Tags_Add(ini_tags$)
