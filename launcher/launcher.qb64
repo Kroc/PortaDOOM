@@ -153,8 +153,8 @@ launch:
 
 'a simple wrapper function to ensure that reads from INI files
 'are converted to ANSI to avoid garbled Unicode characters
-FUNCTION GetSetting$(ini_path$, ini_section$, ini_key$)
-    LET GetSetting$ = UTF8ANSI$(ReadSetting(ini_path$, ini_section$, ini_key$))
+FUNCTION ReadIniUTF8$(ini_path$, ini_section$, ini_key$)
+    LET ReadIniUTF8$ = UTF8ANSI$(ReadSetting$(ini_path$, ini_section$, ini_key$))
 END FUNCTION
 
 'our library functions:

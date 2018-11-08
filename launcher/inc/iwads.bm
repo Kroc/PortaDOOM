@@ -102,13 +102,13 @@ FUNCTION IWADs_EnumerateINI&(ini_path$)
 readINI:
     '-------------------------------------------------------------------------
     DIM iwad_id$
-    LET iwad_id$ = GetSetting$(path$, "iwad", "id")
+    LET iwad_id$ = ReadIniUTF8$(path$, "iwad", "id")
     
     DIM iwad_name$
-    LET iwad_name$ = GetSetting$("", "iwad", "name")
+    LET iwad_name$ = ReadIniUTF8$("", "iwad", "name")
     
     DIM iwad_type%
-    SELECT CASE UCASE$(GetSetting$(path$, "iwad", "type"))
+    SELECT CASE UCASE$(ReadIniUTF8$(path$, "iwad", "type"))
         CASE "DOOM": LET iwad_type% = TYPE_DOOM
         CASE "DOOM2": LET iwad_type% = TYPE_DOOM2
         CASE "HERETIC": LET iwad_type% = TYPE_HERETIC
@@ -123,32 +123,32 @@ readINI:
     END SELECT
     
     DIM iwad_title$
-    LET iwad_title$ = GetSetting$("", "iwad", "title")
+    LET iwad_title$ = ReadIniUTF8$("", "iwad", "title")
     DIM iwad_path$
-    LET iwad_path$ = GetSetting$("", "iwad", "path")
+    LET iwad_path$ = ReadIniUTF8$("", "iwad", "path")
     DIM iwad_deh$
-    LET iwad_deh$ = GetSetting$("", "iwad", "deh")
+    LET iwad_deh$ = ReadIniUTF8$("", "iwad", "deh")
     DIM iwad_tags$
-    LET iwad_tags$ = GetSetting$("", "iwad", "tags")
+    LET iwad_tags$ = ReadIniUTF8$("", "iwad", "tags")
     
     DIM iwad_skill1$
-    LET iwad_skill1$ = GetSetting$("", "iwad.skills", "1")
+    LET iwad_skill1$ = ReadIniUTF8$("", "iwad.skills", "1")
     DIM iwad_skill2$
-    LET iwad_skill2$ = GetSetting$("", "iwad.skills", "2")
+    LET iwad_skill2$ = ReadIniUTF8$("", "iwad.skills", "2")
     DIM iwad_skill3$
-    LET iwad_skill3$ = GetSetting$("", "iwad.skills", "3")
+    LET iwad_skill3$ = ReadIniUTF8$("", "iwad.skills", "3")
     DIM iwad_skill4$
-    LET iwad_skill4$ = GetSetting$("", "iwad.skills", "4")
+    LET iwad_skill4$ = ReadIniUTF8$("", "iwad.skills", "4")
     DIM iwad_skill5$
-    LET iwad_skill5$ = GetSetting$("", "iwad.skills", "5")
+    LET iwad_skill5$ = ReadIniUTF8$("", "iwad.skills", "5")
     DIM iwad_skill6$
-    LET iwad_skill6$ = GetSetting$("", "iwad.skills", "6")
+    LET iwad_skill6$ = ReadIniUTF8$("", "iwad.skills", "6")
     DIM iwad_skill7$
-    LET iwad_skill7$ = GetSetting$("", "iwad.skills", "7")
+    LET iwad_skill7$ = ReadIniUTF8$("", "iwad.skills", "7")
     DIM iwad_skill8$
-    LET iwad_skill8$ = GetSetting$("", "iwad.skills", "8")
+    LET iwad_skill8$ = ReadIniUTF8$("", "iwad.skills", "8")
     DIM iwad_skill9$
-    LET iwad_skill9$ = GetSetting$("", "iwad.skills", "9")
+    LET iwad_skill9$ = ReadIniUTF8$("", "iwad.skills", "9")
     
     LET IWADs_EnumerateINI& = IWADs_Add&( _
         iwad_id$, iwad_name$, iwad_type%, _
