@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /TNT /DEMO 30ev3858.lmp /CMPLVL 4
+@PUSHD "%~dp0" & "..\..\launcher.exe" /AUTO /USE prboom-plus /TNT /DEMO 30ev3858.lmp /CMPLVL 4

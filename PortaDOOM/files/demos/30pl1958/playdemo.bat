@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /PLUTONIA /DEMO 30pl1958.lmp /CMPLVL 4
+@PUSHD "%~dp0" & "..\..\launcher.exe" /AUTO /USE prboom-plus /PLUTONIA /DEMO 30pl1958.lmp /CMPLVL 4

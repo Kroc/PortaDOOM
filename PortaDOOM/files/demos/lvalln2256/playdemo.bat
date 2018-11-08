@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\launcher.exe" /USE prboom-plus /DEMO 30nm2256.lmp
+@PUSHD "%~dp0" & "..\..\launcher.exe" /AUTO /USE prboom-plus /DEMO 30nm2256.lmp
