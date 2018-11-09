@@ -387,12 +387,15 @@ LOOP
 
 'is there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
-    DIM vid
+    DIM vid, bit
     
     'default to no hard requirement for rendering colour-depth 
     LET vid = 0
     'require "software" renderer (8-bit, 256-colours)
     IF CMD_SW` = TRUE THEN LET vid = 8
+    
+    LET bit = 0
+    IF CMD_32` = TRUE THEN LET bit = 32
     
     'if no IWAD is provided, we will default to "DOOM2"
     IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
@@ -403,7 +406,7 @@ IF cmd_hasGame` THEN
         "cmd", "", "", "", "", CMD_CMPLVL$, _
         CMD_IWAD$, CMD_PRE$, CMD_PWAD$, CMD_FILES$, _
         CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
-        CMD_USE$, CMD_REQ$, vid, CMD_WARP$, CMD_SKILL$, _
+        CMD_USE$, CMD_REQ$, bit, vid, CMD_WARP$, CMD_SKILL$, _
         "", "", "", "", "", "", "", "", "" _
     )
 ELSE

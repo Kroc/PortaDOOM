@@ -21,6 +21,7 @@ TYPE Game
     
     use AS STRING '.........an engine-id to use
     tags AS STRING '........comma-separated list of tags the game requires
+    bit AS _BYTE '..........required binary type
     cmplvl AS _BYTE '.......can be negative to specify "not given"
     
     exec AS STRING '........script file to execute (ZDoom-based engines)

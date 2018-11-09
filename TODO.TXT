@@ -10,7 +10,7 @@
 
 [P1] Blocking: (cannot be released until fixed)
 ================================================================================
-[ ] LAUNCHER : `bit` property in game ini not being used
+[X] LAUNCHER : `bit` property in game ini not being used
 [ ] LAUNCHER : Cannot specify `/DEMO` in ini files
  -  [ ] Add demo playback choice to "people/ola bjorling/tantrum2"
 [ ] LAUNCHER : UI react instantly before processing wait

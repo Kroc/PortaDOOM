@@ -205,23 +205,22 @@ SUB Engines_Enumerate()
             'throw away any 64-bit engines:
             
             'read the engine's CPU-type
-            DIM ini_bit$
-            LET ini_bit$ = ReadIniUTF8$("", ini_section$, "bit")
-            
-            'executable architecture must be either 32 or 64-bit
-            IF ini_bit$ <> "32" AND ini_bit$ <> "64" THEN
-                'TODO: output warning?
-                'default to 32-bit
-                LET ini_bit$ = "32"
-            END IF
-            
-            'if this is a 32-bit machine,
-            '(or the `/32` switch was used)
-            IF CPU_BIT = 32 THEN
-                'if the engine is 64-bit, skip it entirely
-                '-- it wouldn't run on this CPU
-                IF ini_bit$ = "64" THEN GOTO NextEngine
-            END IF
+            DIM ini_bit
+            SELECT CASE ReadIniUTF8$("", ini_section$, "bit")
+                CASE "64"
+                    LET ini_bit = 64
+                    'if this is a 32-bit machine (or the `/32` switch was
+                    'used) skip it entirely, it wouldn't run on this CPU
+                    IF CPU_BIT = 32 THEN GOTO NextEngine
+                    
+                CASE "32"
+                    LET ini_bit = 32
+                    
+                CASE ELSE
+                    'TODO: output error/warning?
+                    'default to 32-bit
+                    LET ini_bit = 32
+            END SELECT
             
             DIM ini_desc$
             LET ini_desc$ = ReadIniUTF8$("", ini_section$, "desc")
@@ -292,7 +291,7 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
             LET Engines(Engines_Count).exe = ini_exe$
             LET Engines(Engines_Count).ver = VAL(ini_ver$)
-            LET Engines(Engines_Count).bit = VAL(ini_bit$)
+            LET Engines(Engines_Count).bit = ini_bit
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
             
             SELECT CASE UCASE$(ini_kin$)
@@ -512,6 +511,12 @@ SUB Engines_Filter()
         'this has already been handling in Engine enumeration,
         'but I will leave this here for safety
         IF CPU_BIT = 32 AND Engines(i).bit = 64 THEN _CONTINUE
+        
+        'does the game demand a certain binary type?
+        '(this is purely for testing 32/64-bit binaries specifically)
+        IF Games_Selected.bit <> 0 THEN
+            IF Engines(i).bit <> Games_Selected.bit THEN _CONTINUE
+        END IF
         
         'does the game demand a certain colour-depth? (i.e. software mode)
         IF Games_Selected.vid > 0 THEN

@@ -118,18 +118,22 @@ readINI:
         LET ini_use$ = ReadIniUTF8$("", ini_section$, "use")
         DIM ini_tags$
         LET ini_tags$ = ReadIniUTF8$("", ini_section$, "tags")
-        DIM ini_vid$
-        LET ini_vid$ = ReadIniUTF8$("", ini_section$, "vid")
+        DIM bit
+        SELECT CASE ReadIniUTF8$("", ini_section$, "bit")
+            CASE "32": LET bit = 32
+            CASE "64": LET bit = 64
+            CASE ELSE: LET bit = 0
+        END SELECT
         DIM ini_cmplvl$
         LET ini_cmplvl$ = ReadIniUTF8$("", ini_section$, "cmplvl")
         
-        DIM vid%
-        SELECT CASE ini_vid$
-            CASE "8": LET vid% = 8
-            CASE "16": LET vid% = 16
-            CASE "24": LET vid% = 24
-            CASE "32": LET vid% = 32
-            CASE ELSE: LET vid% = 0
+        DIM vid
+        SELECT CASE ReadIniUTF8$("", ini_section$, "vid")
+            CASE "8": LET vid = 8
+            CASE "16": LET vid = 16
+            CASE "24": LET vid = 24
+            CASE "32": LET vid = 32
+            CASE ELSE: LET vid = 0
         END SELECT
         
         'game files and settings:
@@ -177,7 +181,7 @@ readINI:
             ini_cmplvl$, _
             ini_iwad$, ini_pre$, ini_pwad$, ini_files$, _
             ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
-            ini_use$, ini_tags$, vid%, _
+            ini_use$, ini_tags$, bit, vid, _
             ini_warp$, ini_skill$, _
             ini_skill1$, ini_skill2$, ini_skill3$, ini_skill4$, _
             ini_skill5$, ini_skill6$, ini_skill7$, ini_skill8$, _
@@ -190,7 +194,7 @@ END SUB
 '=============================================================================
 SUB Games_Add ( _
     id$, title$, blurb$, name$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
-    exec$, cmd$, deh$, bex$, use$, tags$, vid%, warp$, skill$, _
+    exec$, cmd$, deh$, bex$, use$, tags$, bit, vid, warp$, skill$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
 )
@@ -314,9 +318,8 @@ skill:
     LET Games(Games_Count).bex = bex$
     LET Games(Games_Count).use = LCASE$(use$)
     LET Games(Games_Count).tags = LCASE$(tags$)
-    
-    'don't allow vid% to be undefined
-    LET Games(Games_Count).vid = vid%
+    LET Games(Games_Count).bit = bit
+    LET Games(Games_Count).vid = vid
     
     LET Games(Games_Count).skill1 = skill1$
     LET Games(Games_Count).skill2 = skill2$
