@@ -1,0 +1,613 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+' ^{...}        format marker with command
+' ^{...,...}    multiple commands can be separated by commas
+
+'commands:
+'
+' &nn           insert ASCII/ANSI code given in hexadecimal 'nn'
+'
+' Fn            set foreground color to 'n' (0-16) or any of the following:
+'               - 'k'/'K' = "dark" black / "bright" black (dark-grey)
+'               - 'b'/'B' = "dark" blue / "bright" blue
+'               - 'g'/'G' = "dark" green / "bright" green (lime)
+'               - 'c'/'C' = "dark" cyan / "bright" cyan (aqua)
+'               - 'r'/'R' = "dark" red / "bright" red (rose / peach)
+'               - 'm'/'M' = "dark" magenta (purple) / "bright" magenta (pink)
+'               - 'y'/'Y' = "dark" yellow (orange) / "bright" yellow
+'               - 'w'/'W' = "dark" white (light-grey) / "bright" white
+'
+' Fn!           set foreground colour, but with blinking
+'               (not supported for backgrounds)
+'
+' Bn            set background colour to 'n' (0-7) or some of the above
+'               options used in foreground, excepting the "bright" colours
+'
+' F-            reset to previous colour;
+' B-            same with background colour
+'
+' Xn / Yn       move cursor to column/row 'n' *relative to the print position*,
+'               that is, `X5` moves to the fifth column after where the string
+'               printing began
+'
+' X+n / X-n     move cursor horizontally +/- 'n' columns
+' Y+n / Y-n     move cursor vertically +/- 'n' rows
+'
+' *X            save current X-position
+' *Y            save current Y-position
+'
+' X*            load previous X-position
+' Y*            load previous Y-position
+'
+' *%            save current cursor position (X+Y)
+' %*            restore previous cursor position
+'
+' L             set a left-hand margin
+' L-            restore the previous left-hand margin
+'
+' N             new-line, carriage-return (crsr down, return to left margin)
+'
+' ? / ?n        "shadows" the character under the cursor, i.e. change its
+'               colour to a black background with darkened text. if the
+'               background is already black, then the text is black too.
+'               if 'n' is present, that number of characters are "shadowed"
+
+'=============================================================================
+SUB STRGUI.Begin
+    LET STRGUI$ = ""
+END SUB
+
+'=============================================================================
+SUB STRGUI.Add (text$)
+    LET STRGUI$ = STRGUI$ + text$
+END SUB
+
+'=============================================================================
+SUB STRGUI.SetVar (variable$, value%)
+    LET STRGUI.Vars(ASC(variable$)) = value%
+END SUB
+
+'immediately compiles and prints the current string:
+'not recommended -- you should cache the compiled string
+'=============================================================================
+SUB STRGUI.Print ()
+    BINSTR.Print STRGUI.Compile$
+    LET STRGUI$ = ""
+END FUNCTION
+
+'compile the implicit "STRGUI$" string
+'=============================================================================
+FUNCTION STRGUI.Compile$ ()
+    LET STRGUI.Compile$ = STRGUI.CompileStr(STRGUI$)
+END FUNCTION
+
+'take a string with format codes and compile it into a binary version
+'=============================================================================
+FUNCTION STRGUI.CompileStr$ (source$)
+    DIM i%, char%, last%
+    DIM p%
+    
+    '-------------------------------------------------------------------------
+    
+    'walk through the text one character at a time
+    DIM strlen%
+    LET strlen% = LEN(source$)
+    FOR i% = 1 TO strlen%
+        'read the next character
+        LET char% = ASC(source$, i%)
+        'if this is *not* an escape code,
+        'it can be appended and we can move on
+        IF char% <> STRGUI_ESC THEN GOSUB AppendChar: _CONTINUE
+        
+        'look for the opening brace of the command-list;
+        'if missing, the ESC is written out and the brace re-assessed
+        IF ASC(source$, i% + 1) <> STRGUI_CMDBEGIN THEN _CONTINUE
+        'can skip over the escape code now
+        LET i% = i% + 2
+        
+        'process the command-list
+        GOSUB ReadCommand
+        
+    NEXT i%
+    EXIT FUNCTION
+    
+    AppendChar:
+    '-------------------------------------------------------------------------
+    'add a single character to the output binary string
+    'TODO: use an array / memory-manipulation since a compiled string
+    '      can never be much longer than its source and appending single
+    '      characters to a string is slooooooow
+    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + CHR$(char%)
+    'remember the last appended character in case of the repeat command
+    LET last% = char%
+    
+    RETURN
+    
+    ReadCommand:
+    '-------------------------------------------------------------------------
+    'the first character determines the command:
+    SELECT CASE ASC(source$, i%)
+        CASE ASC_F '= set foreground colour
+            '-----------------------------------------------------------------
+            'is the next character a letter / symbol instead of number?
+            SELECT CASE ASC(source$, i% + 1)
+                CASE ASC_LCASE + ASC_K: LET p% = 0 '"dark" black
+                CASE ASC_LCASE + ASC_B: LET p% = 1 '"dark" blue
+                CASE ASC_LCASE + ASC_G: LET p% = 2 '"dark" green
+                CASE ASC_LCASE + ASC_C: LET p% = 3 '"dark" cyan (teal)
+                CASE ASC_LCASE + ASC_R: LET p% = 4 '"dark" red
+                CASE ASC_LCASE + ASC_M: LET p% = 5 '"dark" magenta (purple)
+                CASE ASC_LCASE + ASC_Y: LET p% = 6 '"dark" yellow (orange)
+                CASE ASC_LCASE + ASC_W: LET p% = 7 '"dark" white (light-grey)
+                
+                CASE ASC_K: LET p% = 8 ' "bright" black (dark-grey)
+                CASE ASC_B: LET p% = 9 ' "bright" blue
+                CASE ASC_G: LET p% = 10 '"bright" green (lime)
+                CASE ASC_C: LET p% = 11 '"bright" cyan (aqua)
+                CASE ASC_R: LET p% = 12 '"bright" red (rose / peach)
+                CASE ASC_M: LET p% = 13 '"bright" magenta (pink)
+                CASE ASC_Y: LET p% = 14 '"bright" yellow
+                CASE ASC_W: LET p% = 15 '"bright" white
+                
+                CASE ASC_DASH '= previous foreground colour
+                    'append the binary command to restore previous colour
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_RFORE$
+                    
+                    LET i% = i% + 1 'remember to skip the command character
+                    GOTO EndCommand 'we do not want to push the colour again!
+                    
+                CASE ELSE
+                    'get a colour number
+                    GOSUB ReadParam
+                    GOTO ApplyForeground
+            END SELECT
+            
+            'skip over the letter we just used
+            LET i% = i% + 1
+            
+            ApplyForeground:
+            'for foreground letter-codes, a following
+            'exclamation point enables blinking
+            IF ASC(source$, i% + 1) = ASC_EXCL THEN
+                LET p% = p% OR 16
+                LET i% = i% + 1
+            END IF
+            'append the binary command to change colour
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                + BINSTR.ESC_FORE$(p%)
+            
+        CASE ASC_B '= set background colour
+            '-----------------------------------------------------------------
+            SELECT CASE ASC(source$, i% + 1)
+                'background colour does not support colours above 7,
+                'so a numeric parameter will always be one digit
+                CASE ASC_0, ASC_LCASE + ASC_K: LET p% = BLACK
+                CASE ASC_1, ASC_LCASE + ASC_B: LET p% = BLUE
+                CASE ASC_2, ASC_LCASE + ASC_G: LET p% = GREEN
+                CASE ASC_3, ASC_LCASE + ASC_C: LET p% = CYAN
+                CASE ASC_4, ASC_LCASE + ASC_R: LET p% = RED
+                CASE ASC_5, ASC_LCASE + ASC_M: LET p% = PURPLE
+                CASE ASC_6, ASC_LCASE + ASC_Y: LET p% = ORANGE
+                CASE ASC_7, ASC_LCASE + ASC_W: LET p% = LTGREY
+                
+                CASE ASC_AT '= variable
+                    GOSUB ReadParam
+                    'append the binary command to change colour
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_BACK$(p%)
+                    GOTO EndCommand
+                
+                CASE ASC_DASH '= previous background colour
+                    'append the binary command to restore previous colour
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_RBACK$
+                    
+                    LET i% = i% + 1 'remember to skip the command character
+                    GOTO EndCommand 'we do not want to push the colour again!
+                    
+                CASE ELSE
+                    'not one of these!??
+                    SCREEN 0, ,0, 0: COLOR 1, 0: CLS
+                    PRINT "Invalid background command parameter: ";
+                    PRINT STRINT$(char%)
+                    BEEP: SLEEP: EXIT FUNCTION
+                    
+            END SELECT
+            
+            LET i% = i% + 1
+            'append the binary command to change colour
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                + BINSTR.ESC_BACK$(p%)
+            
+        CASE ASC_PCENT '= load cursor position
+            '-----------------------------------------------------------------
+            LET i% = i% + 1
+            'append the binary command to restore the cursor location
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                + BINSTR.ESC_LDPOS$
+            
+        CASE ASC_ASTERISK '= save a value
+            '-----------------------------------------------------------------
+            SELECT CASE ASC(source$, i% + 1)
+                CASE ASC_PCENT
+                    'append the binary command to save the cursor location
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_SVPOS$
+                    
+                CASE ASC_X: GOSUB PushXPos
+                CASE ASC_Y: GOSUB PushYPos
+            END SELECT
+            LET i% = i% + 1
+            
+        CASE ASC_X '= set cursor X-position
+            '-----------------------------------------------------------------
+            SELECT CASE ASC(source$, i% + 1)
+                CASE ASC_ASTERISK
+                    'restore previously saved X-position
+                    GOSUB PopXPos
+                    LET i% = i% + 1
+                        
+                CASE ASC_PLUS
+                    'cursor to move forward;
+                    LET i% = i% + 1
+                    GOSUB ReadParam
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_MOVX$(p%)
+                    
+                CASE ASC_DASH
+                    'cursor to move backward;
+                    LET i% = i% + 1
+                    GOSUB ReadParam
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_MOVX$(-p%)
+                    
+                CASE ELSE
+                    'read a parameter value; set X to column 'n'
+                    GOSUB ReadParam
+                    'encode this in the binary string
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_SETX$(p%)
+                    
+            END SELECT
+            
+        CASE ASC_Y '= set cursor Y-position
+            '-----------------------------------------------------------------
+            SELECT CASE ASC(source$, i% + 1)
+                CASE ASC_ASTERISK
+                    'restore previously saved Y-position
+                    GOSUB PopYPos
+                    LET i% = i% + 1
+                        
+                CASE ASC_PLUS
+                    'cursor to move down;
+                    LET i% = i% + 1
+                    GOSUB ReadParam
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_MOVY$(p%)
+                    
+                CASE ASC_DASH
+                    'cursor to move up;
+                    LET i% = i% + 1
+                    GOSUB ReadParam
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_MOVY$(-p%)
+                    
+                CASE ELSE
+                    'read a parameter value; set Y to row 'n'
+                    GOSUB ReadParam
+                    'encode this in the binary string
+                    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                        + BINSTR.ESC_SETY$(p%)
+                    
+            END SELECT
+            
+        CASE ASC_R '= repeat last printed character
+            '-----------------------------------------------------------------
+            'read numerical parameter
+            GOSUB ReadParam
+            'TODO: problem if last% not set (repeat command first in string)
+            'TODO: validate p%
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                + STRING$(p% - 1, last%)
+        
+        CASE ASC_AMP '= insert given hexadecimal ASCII/ANSI code
+            '-----------------------------------------------------------------
+            'read two hex digits:
+            LET p% = VAL("&H" _
+                + CHR$(ASC(source$, i% + 1)) _
+                + CHR$(ASC(source$, i% + 2)) _
+            )
+            LET i% = i% + 2
+            'the binary string can take the code as-is
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + CHR$(p%)
+            'this also counts as 'last-printed' character
+            LET last% = p%
+            
+        CASE ASC_N '= new-line
+            '-----------------------------------------------------------------
+            LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + BINSTR.ESC_NLINE$
+            
+        CASE ASC_L '= set / reset left margin
+            '-----------------------------------------------------------------
+            'reset?
+            IF ASC(source$, i% + 1) = ASC_DASH THEN
+                LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                    + BINSTR.ESC_LOADL$
+                LET i% = i% + 1
+            ELSE
+                LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                    + BINSTR.ESC_SAVEL$
+            END IF
+            
+        CASE ASC_QMARK '= reprint character
+            '-----------------------------------------------------------------
+            'is there a value?
+            IF ASC(source$, i% + 1) >= ASC_0 AND _
+               ASC(source$, i% + 1) <= ASC_9 THEN
+                GOSUB ReadValue
+                LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                    + BINSTR.ESC_PRINT$(p%)
+            ELSE
+                LET STRGUI.CompileStr$ = STRGUI.CompileStr$ _
+                    + BINSTR.ESC_PRINT$(1)
+            END IF
+            
+    END SELECT
+    
+    EndCommand:
+    '-------------------------------------------------------------------------
+    'has the command list ended?
+    'a comma marks further commands
+    LET char% = ASC(source$, i% + 1)
+    IF char% = STRGUI_CMDSEP THEN
+        LET i% = i% + 2
+        GOTO ReadCommand
+    END IF
+    'closing brace?
+    IF char% = STRGUI_CMDEND THEN LET i% = i% + 1: RETURN
+    'not one of these!??
+    SCREEN 0, ,0, 0: COLOR 1, 0: CLS
+    PRINT "Invalid end of command character: " + CHR$(char%)
+    PRINT
+    PRINT LEFT$(source$, i%)
+    BEEP: SLEEP: EXIT FUNCTION
+    
+    ReadParam:
+    '-------------------------------------------------------------------------
+    'read a numerical / variable parameter value,
+    'returned in `p%`
+    
+    'calculations are supported, the accumulated value is calculated here
+    DIM a%: LET a% = 0
+    
+    'read the initial value
+    GOSUB ReadValue
+    'seed the accumulator
+    '(in case there's a calculation coming)
+    LET a% = p%
+    
+    'is the next character an operator? "+", "-", "*"
+    DO
+        DIM op%%
+        LET op%% = ASC(source$, i% + 1)
+        SELECT CASE op%%
+            CASE ASC_PLUS, ASC_DASH, ASC_ASTERISK
+                'read the next value
+                LET i% = i% + 1
+                GOSUB ReadValue
+                'apply the operator:
+                SELECT CASE op%%
+                    CASE ASC_PLUS: LET a% = a% + p%
+                    CASE ASC_DASH: LET a% = a% - p%
+                    CASE ASC_ASTERISK: LET a% = a% * p%
+                END SELECT
+                
+             CASE ELSE
+                'no further calculations
+                LET p% = a%
+                EXIT DO
+        END SELECT
+    LOOP
+    RETURN
+    
+    ReadValue:
+    '-------------------------------------------------------------------------
+    LET p% = 0
+    
+    'is this a variable?
+    IF ASC(source$, i% + 1) = ASC_AT THEN
+        'next character will be the variable name;
+        LET i% = i% + 2
+        'read the value of the variable
+        LET p% = STRGUI.Vars(ASC(source$, i%))
+    ELSE
+        'keep reading numerals...
+        DO
+            LET char% = ASC(source$, i% + 1)
+            IF char% < ASC_0 OR char% > ASC_9 THEN EXIT DO
+            
+            LET p% = (p% * 10) + (char% - ASC_0)
+            LET i% = i% + 1
+        LOOP
+    END IF
+    RETURN
+    
+    ReadVar:
+    '------------------------------------------------------------------------
+    'read a variable name, get its value
+    'next character will be the variable name;
+    LET i% = i% + 2
+    'read the value of the variable
+    LET p% = STRGUI.Vars(ASC(source$, i%))
+    RETURN
+    
+    PushYPos:
+    '-------------------------------------------------------------------------
+    'append the binary command to save the Y position
+    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + BINSTR.ESC_SAVEY$
+    RETURN
+    
+    PopYPos:
+    '-------------------------------------------------------------------------
+    'append the binary command to load the saved Y position
+    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + BINSTR.ESC_LOADY$
+    RETURN
+    
+    PushXPos:
+    '-------------------------------------------------------------------------
+    'append the binary command to save the X position
+    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + BINSTR.ESC_SAVEX$
+    RETURN
+    
+    PopXPos:
+    '-------------------------------------------------------------------------
+    'append the binary command to load the saved X position
+    LET STRGUI.CompileStr$ = STRGUI.CompileStr$ + BINSTR.ESC_LOADX$
+    RETURN
+    
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.F$(f%)
+    LET STRGUI.F$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+                  + "F" + LTRIM$(STR$(f%))
+    'blinking?
+    IF (f% AND 16) <> 0 THEN LET STRGUI.F$ = STRGUI.F$ + "!"
+    
+    LET STRGUI.F$ = STRGUI.F$ + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.B$(b%)
+    LET STRGUI.B$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+                  + "B" + LTRIM$(STR$(b%)) + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.FB$(f%, b%)
+    LET STRGUI.FB$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+        + "F" + LTRIM$(STR$(f%))
+    
+    'blinking?
+    IF (f% AND 16) <> 0 THEN LET STRGUI.FB$ = STRGUI.FB$ + "!"
+    
+    LET STRGUI.FB$ = STRGUI.FB$ + CHR$(STRGUI_CMDSEP) _
+        + "B" + LTRIM$(STR$(b%)) + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.X$(x%)
+    LET STRGUI.X$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+                  + "X" + LTRIM$(STR$(x%)) + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.Y$(y%)
+    LET STRGUI.Y$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+                  + "Y" + LTRIM$(STR$(y%)) + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'=============================================================================
+FUNCTION STRGUI.XY$(x%, y%)
+    LET STRGUI.XY$ = CHR$(STRGUI_ESC) + CHR$(STRGUI_CMDBEGIN) _
+                   + "X" + LTRIM$(STR$(x%)) + CHR$(STRGUI_CMDSEP) _
+                   + "Y" + LTRIM$(STR$(y%)) + CHR$(STRGUI_CMDEND)
+END FUNCTION
+
+'macro to generate the commands to draw a box
+'=============================================================================
+FUNCTION STRGUI.BOX$(w~%%, h~%%, border~%%)
+    'which border characters to use?
+    DIM TL AS STRING * 4 'top-left
+    DIM HB AS STRING * 4 'horizontal-bar
+    DIM TR AS STRING * 4 'top-right
+    DIM BL AS STRING * 4 'bottom-left
+    DIM VB AS STRING * 4 'vertical bar
+    DIM BR AS STRING * 4 'bottom-right
+    DIM SP AS STRING * 4 'space (for background, or no-border)
+    DIM RW AS STRING '    repeat command for width of box
+    
+    LET SP = "&20,"
+    SELECT CASE border~%%
+        CASE 1
+            'single border
+            LET TL = "&" + HEX$(ASC_BOX_TL) + ","
+            LET BL = "&" + HEX$(ASC_BOX_BL) + ","
+            LET HB = "&" + HEX$(ASC_BOX_H) + ","
+            LET VB = "&" + HEX$(ASC_BOX_V) + ","
+            LET TR = "&" + HEX$(ASC_BOX_TR) + ","
+            LET BR = "&" + HEX$(ASC_BOX_BR) + ","
+        CASE 2
+            'double border
+            LET TL = "&" + HEX$(ASC_BOX_DBL_TL) + ","
+            LET TR = "&" + HEX$(ASC_BOX_DBL_TR) + ","
+            LET HB = "&" + HEX$(ASC_BOX_DBL_H) + ","
+            LET VB = "&" + HEX$(ASC_BOX_DBL_V) + ","
+            LET BL = "&" + HEX$(ASC_BOX_DBL_BL) + ","
+            LET BR = "&" + HEX$(ASC_BOX_DBL_BR) + ","
+        CASE ELSE
+            'no border, use spaces
+            LET TL = SP
+            LET TR = SP
+            LET HB = SP
+            LET VB = SP
+            LET BL = SP
+            LET BR = SP
+    END SELECT
+    'define the repeat command for the width of the box
+    LET RW = "R" + STRINT$(w~%% - 2) + ","
+    
+    'set a left-margin so we can walk down the screen, keeping the left-hand
+    'X-position. we also save the cursor so that once the box is drawn we can
+    'return to the inside top-left corner
+    STRGUI.BOX$ = "^{L,*%,"
+    
+    'top-border:
+    STRGUI.BOX$ = STRGUI.BOX$ + TL + HB + RW + TR + "N,"
+    'add the middle:
+    DIM n%
+    FOR n% = 1 TO h~%% - 2
+        STRGUI.BOX$ = STRGUI.BOX$ + VB + SP + RW + VB + "N,"
+    NEXT n%
+    'bottom-border:
+    STRGUI.BOX$ = STRGUI.BOX$ + BL + HB + RW + BR
+    
+    'undo the left-margin and move the cursor to the inside of the box
+    'and set a new left-margin for the user's convenience
+    STRGUI.BOX$ = STRGUI.BOX$ + "L-,%*,X+1,Y+1,L}"
+    
+END FUNCTION
+
+'macro to generate the commands to draw a window, with shadow effect
+'=============================================================================
+FUNCTION STRGUI.WINDOW$(w~%%, h~%%, border~%%)
+    DIM W$
+    
+    'generate the box first
+    LET W$ = STRGUI.BOX$(w~%%, h~%%, border~%%)
+    'save the cursor X-position on the inside of the box because the
+    'bottom shadow will begin at this x-position
+    LET W$ = W$ + "^{*X,"
+    'save the cursor so as to return to the inside top-left corner
+    'of the box (as before) when we're all done
+    LET W$ = W$ + "*%,"
+    'move to the right-hand edge of the box and set a left margin
+    'so we can walk downwards easily
+    LET W$ = W$ + "X+" + STRINT$(w~%% - 1) + ",L,"
+    'begin drawing the shadow down the side of the box
+    DIM n~%%
+    FOR n~%% = 1 TO h~%% - 1
+        LET W$ = W$ + "?2,N,"
+    NEXT
+    'clear the margin used for the side shadow
+    LET W$ = W$ + "L-,"
+    'move to the underside of the box
+    LET W$ = W$ + "X*,?" + STRINT$(w~%% + 1) + ","
+    'return the cursor to inside the window
+    LET W$ = W$ + "%*}"
+    
+    LET STRGUI.WINDOW$ = W$
+END FUNCTION
+
+'$INCLUDE: 'binstr.bm'
