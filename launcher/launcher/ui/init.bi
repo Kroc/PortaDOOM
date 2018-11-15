@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
-'ui_init.bi : define and initialise the user-interface
+'init.bi : define and initialise the user-interface
 
 $EXEICON:'.\icon\launcher.ico'
 
@@ -30,10 +30,18 @@ _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 _TITLE "PortaDOOM Launcher"
 
 'set graphics mode, screen size, colour and clear screen
-SCREEN UI_SCREEN_MODE, , 0, 0
 WIDTH UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT
+SCREEN UI_SCREEN_MODE, , 0, 0
 COLOR UI_FORECOLOR, UI_BACKCOLOR
 CLS, UI_BACKCOLOR: _SCREENSHOW
+
+'initialise the global hot-keys
+CALL keys_Init
+'this will be displayed on the menu bar
+LET ui_menubar_right$(1) = "ESC:QUIT"
+''LET ui_menubar_right$(2) = "BKSP:BACK"
+
+CALL ui_cls
 
 '-----------------------------------------------------------------------------
 

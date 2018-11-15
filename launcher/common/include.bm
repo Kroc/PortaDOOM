@@ -1,0 +1,6 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'$INCLUDE:'strings.bm'
+'$INCLUDE:'paths.bm'
+'$INCLUDE:'reg.bm'
+'$INCLUDE:'sys.bm'

@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'tags.bm : functions for managing engine/game feature tags
 
 '   Tags_Add(tagList$)
 '   Tags_Find%(tag$)        -> INTEGER

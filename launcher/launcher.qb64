@@ -17,17 +17,15 @@ DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
 
 'our library declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'lib\ascii.bi'
-'$INCLUDE:'lib\consts.bi'
-'$INCLUDE:'lib\sys.bi'
-'$INCLUDE:'lib\reg.bi'
+'$INCLUDE:'common\include.bi'
 
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'inc\tags.bi'
-'$INCLUDE:'inc\games.bi'
-'$INCLUDE:'inc\engines.bi'
-'$INCLUDE:'inc\iwads.bi'
+'$INCLUDE:'launcher\ui_status.bi'
+'$INCLUDE:'launcher\tags.bi'
+'$INCLUDE:'launcher\games.bi'
+'$INCLUDE:'launcher\engines.bi'
+'$INCLUDE:'launcher\iwads.bi'
 
 '=============================================================================
 
@@ -75,19 +73,11 @@ DIM SHARED DIR_INI$
 '=============================================================================
 'MAIN:
 '=============================================================================
-'$INCLUDE:'ui\init.bi'
-
-COLOR BLACK, UI_FORECOLOR
-LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
-LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
-
-COLOR UI_FORECOLOR, UI_BACKCOLOR
-VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
-CLS 2: PRINT ""
+'$INCLUDE:'launcher\ui\init.bi'
 
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'inc\cmd.bm'
+'$INCLUDE:'launcher\cmd.bm'
 
 select_game:
 '-----------------------------------------------------------------------------
@@ -105,7 +95,7 @@ THEN
     GOTO select_engine
 END IF
 
-'$INCLUDE:'ui\select_game.bi'
+'$INCLUDE:'launcher\ui\select_game.bi'
 
 select_engine:
 '-----------------------------------------------------------------------------
@@ -131,21 +121,24 @@ END IF
 'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
-'$INCLUDE:'ui\select_engine.bi'
+'$INCLUDE:'launcher\ui\select_engine.bi'
 
 launch:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'inc\launch.bm'
+'$INCLUDE:'launcher\launch.bm'
 
 '=============================================================================
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'inc\error.bm'
-'$INCLUDE:'inc\tags.bm'
-'$INCLUDE:'inc\games.bm'
-'$INCLUDE:'inc\engines.bm'
-'$INCLUDE:'inc\iwads.bm'
-'$INCLUDE:'inc\wads.bm'
+'$INCLUDE:'launcher\ui_status.bm'
+'$INCLUDE:'launcher\errors.bm'
+'$INCLUDE:'launcher\tags.bm'
+'$INCLUDE:'launcher\games.bm'
+'$INCLUDE:'launcher\engines.bm'
+'$INCLUDE:'launcher\iwads.bm'
+'$INCLUDE:'launcher\wads.bm'
+'$INCLUDE:'launcher\ui_print.bm'
+'$INCLUDE:'launcher\ui_keys.bm'
 
 'third-party library functions:
 '-----------------------------------------------------------------------------
@@ -159,8 +152,4 @@ END FUNCTION
 
 'our library functions:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'lib\strings.bm'
-'$INCLUDE:'lib\paths.bm'
-'$INCLUDE:'lib\reg.bm'
-'$INCLUDE:'lib\sys.bm'
-'$INCLUDE:'ui\print.bm'
+'$INCLUDE:'common\include.bm'

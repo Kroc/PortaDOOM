@@ -1,4 +1,9 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'error.bm : some shared error handling stuff
+
+'    ErrorScreen(title$)
+'    ErrorExit()
+'    ErrorFileNotFound(file$)
 
 'clear the screen for writing an error message
 '=============================================================================

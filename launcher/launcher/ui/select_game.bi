@@ -3,22 +3,15 @@
 'present game selection UI:
 'walk through the list of games
 
-VIEW PRINT
-COLOR BLACK, UI_FORECOLOR
-LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
-LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
 IF Games(1).title <> "" THEN
-    LOCATE 1, 2: PRINT TRUNCATE$(Games(1).title, UI_SCREEN_WIDTH - 2);
+    LET ui_statusbar_left$(1) = Games(1).title
 END IF
-
-COLOR UI_FORECOLOR, UI_BACKCOLOR
-VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
-CLS 2: PRINT ""
+CALL ui_cls
 
 IF Games(1).blurb <> "" THEN
-	COLOR WHITE
-	CALL PRINTWRAP_X(2, UI_SCREEN_WIDTH - 2, Games(1).blurb)
-	PRINT ""
+    COLOR WHITE
+    CALL PRINTWRAP_X(2, UI_SCREEN_WIDTH - 2, Games(1).blurb)
+    PRINT ""
 END IF
 
 COLOR UI_FORECOLOR

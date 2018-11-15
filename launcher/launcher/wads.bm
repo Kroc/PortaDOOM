@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'wads.bm : functions for manageing WAD files
 
 '   WADs_GetPWADPath$(pwad$)    -> STRING
 '   WADs_Find(iwad$)            -> STRING

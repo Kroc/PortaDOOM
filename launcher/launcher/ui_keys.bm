@@ -1,0 +1,23 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+'initialise the custom key handling; only needed once
+'=============================================================================
+SUB keys_Init
+	'the keys are NOT enabled by default
+	
+	'ESC key:
+	KEY KEY_USER1, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_ESC)
+	ON KEY(KEY_USER1) keys_ESC: KEY(KEY_USER1) OFF
+	'BKSPC key:
+	KEY KEY_USER2, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_BKSPC)
+	ON KEY(KEY_USER2) keys_BKSPC: KEY(KEY_USER2) OFF
+END SUB
+
+'handler for when the ESC key is pressed
+SUB keys_ESC
+	SYSTEM 0
+END SUB
+
+'handler for when the BKSPC key is pressed
+SUB keys_BKSPC
+END SUB

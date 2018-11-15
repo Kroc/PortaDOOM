@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'iwads.bi : definitions for IWADs
 
 'the DOOM engine was enhanced over time. not all modern source ports support
 'these enhancements so the IWAD has to specify which original DOOM-engine it

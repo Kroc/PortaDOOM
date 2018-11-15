@@ -1,4 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+'launch.bm : build a command string to launch a DOOM engine!
 
 '=============================================================================
 'launch the selected game, with the selected engine, with the selected
@@ -20,8 +21,7 @@
 '   [13]: execute scripts / additional commands
 '   [14]: launch!
 
-CLS 2
-PRINT ""
+CALL ui_cls
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want

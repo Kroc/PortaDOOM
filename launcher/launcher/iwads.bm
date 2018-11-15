@@ -15,6 +15,7 @@
 '   IWADs_Add(...)
 '   IWADs_GetPath$(iwad$)                       -> STRING
 '   IWADs_GetRegistryPath$(key$, value$, path$) -> STRING
+'   IWADs_Select()
 
 'match an IWAD file name to its meta-data entry (load meta-data if necessary)
 'returns an index into `IWADs` array, or 0 for not-found

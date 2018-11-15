@@ -1,0 +1,89 @@
+'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+SUB ui_statusbar_update()
+    DIM i, w, h
+    
+    'unlock the scroll-region
+    VIEW PRINT
+
+    'remember current cursor location
+    DIM x, y, f, b
+    LET y = CSRLIN
+    LET x = POS(0)
+    LET f = SCREEN(y, x, 1) AND 15
+    LET b = SCREEN(y, x, 1) \ 16
+    
+    'set colour of statusbar/text
+    COLOR BLACK, UI_FORECOLOR
+    
+    'clear the top bar
+    LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
+    
+    'track the remaining space to print
+    LET w = UI_SCREEN_WIDTH - 2
+    
+    'print the right elements
+    FOR i = 1 TO 3
+        IF ui_statusbar_right$(i) <> "" THEN
+            LET w = w - LEN(ui_statusbar_right$(i))
+            LOCATE 1, 1 + w
+            PRINT ui_statusbar_right$(i);
+            LET w = w - 1
+        END IF
+    NEXT i
+    
+    LET h = 2
+    FOR i = 1 TO 10
+        IF ui_statusbar_left$(i) <> "" THEN
+            LOCATE 1, h
+            PRINT TRUNCATE$(ui_statusbar_left$(i), w);
+            LET h = h + LEN(ui_statusbar_left$(i)) + 1
+            LET w = w - LEN(ui_statusbar_left$(i)) - 1
+        END IF
+    NEXT i
+    
+    '-------------------------------------------------------------------------
+    
+    'clear the bottom bar
+    LOCATE UI_SCREEN_HEIGHT, 1
+    PRINT SPACE$(UI_SCREEN_WIDTH);
+    
+    'track the remaining space to print
+    LET w = UI_SCREEN_WIDTH - 2
+    
+    'print the right elements
+    FOR i = 1 TO 3
+        IF ui_menubar_right$(i) <> "" THEN
+            LET w = w - LEN(ui_menubar_right$(i))
+            LOCATE UI_SCREEN_HEIGHT, 1 + w
+            PRINT ui_menubar_right$(i);
+            LET w = w - 1
+        END IF
+    NEXT i
+    
+    LET h = 2
+    FOR i = 1 TO 10
+        IF ui_menubar_left$(i) <> "" THEN
+            LOCATE UI_SCREEN_HEIGHT, h
+            PRINT TRUNCATE$(ui_menubar_left$(i), w);
+            LET h = h + LEN(ui_menubar_left$(i)) + 1
+            LET w = w - LEN(ui_menubar_left$(i)) - 1
+        END IF
+    NEXT i
+    
+    '-------------------------------------------------------------------------
+    
+    'restore the cursor
+    LOCATE x, y
+    're-establish the scroll-region
+    VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
+    COLOR f, b
+END SUB
+
+'clear the screen  (keeping the statusbars)
+SUB ui_cls()
+    CLS
+    CALL ui_statusbar_update
+    COLOR UI_FORECOLOR, UI_BACKCOLOR
+    PRINT ""
+END SUB

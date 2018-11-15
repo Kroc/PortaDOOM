@@ -2,21 +2,13 @@
 
 'present engine selection UI:
 
-VIEW PRINT
-COLOR BLACK, UI_FORECOLOR
-LOCATE UI_SCREEN_HEIGHT, 1: PRINT SPACE$(UI_SCREEN_WIDTH);
-LOCATE 1, 1: PRINT SPACE$(UI_SCREEN_WIDTH)
 IF Games_Selected.name <> "" THEN
-    LOCATE 1, 2: PRINT TRUNCATE$(Games_Selected.name, UI_SCREEN_WIDTH - 2);
+    LET ui_statusbar_left$(1) = Games_Selected.name
 ELSEIF Games_Selected.title <> "" THEN
-    LOCATE 1, 2: PRINT TRUNCATE$(Games_Selected.title, UI_SCREEN_WIDTH - 2);
+    LET ui_statusbar_left$(1) = Games_Selected.title
 END IF
+CALL ui_cls
 
-COLOR UI_FORECOLOR, UI_BACKCOLOR
-VIEW PRINT 2 TO UI_SCREEN_HEIGHT - 1
-CLS 2
-
-PRINT ""
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
