@@ -1,7 +1,7 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 'init.bi : define and initialise the user-interface
 
-$EXEICON:'.\icon\launcher.ico'
+$EXEICON:'.\launcher\icon\launcher.ico'
 
 'the default size (in char cols/rows) of the screen
 CONST UI_SCREEN_MODE = 0 '...text mode
