@@ -1,7 +1,5 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'$INCLUDE: 'ascii.bi'
-
 'binary string format:
 '-----------------------------------------------------------------------------
 

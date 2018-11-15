@@ -60,7 +60,7 @@ CONST DIR_MODS$ = "mods\"
 '"PortaDOOM\files" folder, we need to re-route things when running from
 'development builds. check to see if our parent folder is not "files":
 
-IF Paths_GetFolderName$(DIR_EXE$) = "launcher" THEN
+IF Paths_GetFolderName$(DIR_EXE$) = "src" THEN
     'change directory to the expected location
     CHDIR "..\PortaDOOM\files"
     LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
@@ -88,7 +88,7 @@ IF CMD_GAME$ <> "" THEN
     CALL Games_Select(VAL(CMD_GAME$))
     GOTO select_engine
     
-ELSEIF Games_Count =1 _
+ELSEIF Games_Count = 1 _
     OR CMD_AUTO` = TRUE _
 THEN
     CALL Games_Select(1)

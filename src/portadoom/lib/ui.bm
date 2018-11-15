@@ -104,7 +104,7 @@ SUB drawHeader
         crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
     END IF
     'there could be a space between the name and page number
-    nav$ = nav$ + TRIM$(crumb$) + " "
+    nav$ = nav$ + _TRIM$(crumb$) + " "
 
     'if the page has its own title, append that
     IF PageTitle$ <> "" THEN
@@ -399,7 +399,7 @@ SUB formatLine (indent%, src$, default_theme%)
     'we need to check this after processing the warning box as a blank line
     'following a warning box must trigger the closing warning-box border
     'before adding the blank line itself
-    IF TRIM$(src$) = "" THEN
+    IF _TRIM$(src$) = "" THEN
         'output a blank line and skip any further processing
         STRGUI.Begin: LET indent% = 0
         GOSUB pushLine

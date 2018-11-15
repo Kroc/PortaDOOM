@@ -24,94 +24,8 @@ REM # -myx=9    : maximum file analysis (level 9)
 SET "ZIP_MAX=-ms=on -mqs=on -mhc=on -mx=9 -myx=9"
 SET "ZIP_MIN=-ms=off -mhc=off -mx=0 -myx=0"
 
+
 :menu
-CLS & TITLE PortaDOOM Build Tools:
-ECHO:
-ECHO  Build PortaDOOM:
-ECHO:
-ECHO     [1]  Build PortaDOOM release
-ECHO:
-ECHO  Tools:
-ECHO:
-ECHO     [2]  Update PortaDOOM with DOSmag executable
-REM ECHO     [3]  Compress executables ^(UPX^)
-ECHO:
-ECHO  Source Control:
-ECHO:
-ECHO     [8]  `git pull` DOSmag
-ECHO     [9]  `git push` DOSmag
-ECHO:
-
-SET "P="
-SET /P "$=Enter choice: "
-
-IF NOT EXIST "build" MKDIR "build"  >NUL 2>&1
-
-IF "%$%" == "1" GOTO :do_release_menu
-IF "%$%" == "2" GOTO :do_dosmag_copy
-IF "%$%" == "3" GOTO :do_upx
-IF "%$%" == "8" GOTO :do_dosmag_pull
-IF "%$%" == "9" GOTO :do_dosmag_push
-
-GOTO :menu
-
-:select_compression
-REM ============================================================================
-REM # presents a menu to select the desired compression level
-ECHO:
-ECHO  Select Compression Level:
-ECHO:
-ECHO     [0]  None
-ECHO     [1]  Maximum
-ECHO:
-SET /P "$=Enter choice: "
-
-SET CMPLVL=0
-IF "%$%" == "0" SET CMPLVL=0
-IF "%$%" == "1" SET CMPLVL=1
-
-IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
-IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
-
-:compress_dosmag
-REM ----------------------------------------------------------------------------
-REM # include and compress the DOSmag executable
-REM # TODO: compile first?
-COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"  >NUL 2>&1
-ECHO:
-
-IF %CMPLVL% EQU 1 (
-	ECHO * Compress DOSmag executable
-	ECHO:
-	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
-	ECHO:
-)
-
-:compress_launcher
-REM ----------------------------------------------------------------------------
-ECHO:
-ECHO * Compile Launcher
-ECHO:
-REM # compile the launcher
-bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\launcher\launcher.qb64"
-REM # if that errored, pause to be able to show the error message
-IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
-
-REM # compress the launcher executable
-IF %CMPLVL% EQU 1 (
-	ECHO:
-	ECHO * Compress launcher executable
-	ECHO:
-	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
-	ECHO:
-)
-
-GOTO:EOF
-
-
-:do_release_menu
 REM ============================================================================
 CLS & TITLE PortaDOOM Build Tools:
 ECHO:
@@ -140,6 +54,66 @@ IF /I "%$%" == "P" GOTO :do_release_psxdoomtc
 IF /I "%$%" == "X" GOTO :do_release_launcher
 
 GOTO :menu
+
+
+:select_compression
+REM ============================================================================
+REM # presents a menu to select the desired compression level
+ECHO:
+ECHO  Select Compression Level:
+ECHO:
+ECHO     [0]  None
+ECHO     [1]  Maximum
+ECHO:
+SET /P "$=Enter choice: "
+
+SET CMPLVL=0
+IF "%$%" == "0" SET CMPLVL=0
+IF "%$%" == "1" SET CMPLVL=1
+
+IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
+IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
+
+:compress_portadoom
+REM ----------------------------------------------------------------------------
+ECHO:
+ECHO * Compile "PortaDOOM.exe"
+ECHO:
+REM # compile source with QB64
+bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\PortaDOOM.exe" "..\..\src\portadoom.qb64"
+REM # if that errored, pause to be able to show the error message
+IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
+
+IF %CMPLVL% EQU 1 (
+	ECHO * Compress "PortaDOOM.exe"
+	ECHO:
+	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
+	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
+	ECHO:
+)
+
+:compress_launcher
+REM ----------------------------------------------------------------------------
+ECHO:
+ECHO * Compile "launcher.exe"
+ECHO:
+REM # compile the launcher
+bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\src\launcher.qb64"
+REM # if that errored, pause to be able to show the error message
+IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
+
+REM # compress the launcher executable
+IF %CMPLVL% EQU 1 (
+	ECHO:
+	ECHO * Compress "launcher.exe"
+	ECHO:
+	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
+	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
+	ECHO:
+)
+
+ECHO:
+GOTO:EOF
 
 
 :do_release_all
@@ -380,48 +354,6 @@ IF ERRORLEVEL 1 PAUSE
 POPD
 GOTO:EOF
 
-
-:do_dosmag_copy
-REM ============================================================================
-CLS
-COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"
-
-START "" PortaDOOM\PortaDOOM.exe
-
-EXIT /B
-
-
-:do_dosmag_pull
-REM ============================================================================
-REM # updates DOSmag from the GitHub repo
-
-REM # TODO: check for existence of git
-
-CLS
-ECHO Pulling DOSmag updates from GitHub:
-ECHO (working copy must be clean!)
-ECHO:
-
-git subtree pull --prefix=DOSmag --squash dosmag master
-
-COPY /Y "DOSmag\DOSmag.exe" "PortaDOOM\PortaDOOM.exe"  >NUL
-
-ECHO:
-PAUSE
-EXIT /B
-
-
-:do_dosmag_push
-REM ============================================================================
-CLS
-ECHO Pushing DOSmag changes to GitHub:
-ECHO:
-
-git subtree push --prefix=DOSmag dosmag master
-
-ECHO:
-PAUSE
-EXIT /B
 
 :do_upx
 REM ============================================================================

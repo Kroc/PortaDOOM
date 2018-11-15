@@ -5,14 +5,14 @@
 '         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
 '         DO NOT OPEN AND SAVE THIS FILE AS UNICODE / UTF-8!
 '=============================================================================
-$EXEICON:'.\icon.ico'
+$EXEICON:'.\portadoom\icon\icon.ico'
 
 'set ALT+ENTER to switch to 4:3 aspect ratio, with anti-aliasing;
 'many thanks Fellippe Heitor for implementing this!
 _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
-'$INCLUDE: 'lib\consts.bi'
-'$INCLUDE: 'lib\strgui\strgui.bi'
+'$INCLUDE: 'common\include.bi'
+'$INCLUDE: 'portadoom\lib\strgui\strgui.bi'
 
 'TODO: error check everywhere before we attempt something so that we're water-
 '      tight and can turn off the compiled-in error checking (slow)
@@ -282,7 +282,7 @@ DIM SHARED dialogText$ 'binary string of the dialogue text
 'to its 1:1 size
 $RESIZE:OFF
 
-_TITLE "DOSmag"
+_TITLE "PortaDOOM"
 
 'set graphics mode, screen size, colour and clear screen
 SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
@@ -403,7 +403,7 @@ DO
                 FOR n% = 1 TO PageKeyCount%
                     IF PageKeys(n%).keycode = keycode% THEN
                         'the action parameter is a padded string
-                        DIM param$: LET param$ = TRIM$(PageKeys(n%).param)
+                        DIM param$: LET param$ = _TRIM$(PageKeys(n%).param)
                         'which action to take?
                         SELECT CASE PageKeys(n%).action
                             CASE ACTION_GOTO
@@ -585,13 +585,13 @@ SUB loadPage (page_name$)
         'extract the page number off the end of the name
         LET page_number% = VAL(RIGHT$(page_name$, 2))
         'remove the page number from the name
-        LET file_base$ = TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
+        LET file_base$ = _TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
         LET file_path$ = pagePath$(file_base$, page_number%)
 
     ELSE
         'no page number
         LET page_number% = 0
-        LET file_base$ = TRIM$(page_name$)
+        LET file_base$ = _TRIM$(page_name$)
         LET file_path$ = pagePath$(file_base$, 0)
 
         'does the file exist?
@@ -651,7 +651,7 @@ SUB loadPage (page_name$)
             '.................................................................
             'change the theme for this page?
             DIM i%: FOR i% = LBOUND(Themes) TO UBOUND(Themes)
-                IF TRIM$(MID$(line$, 8)) = TRIM$(Themes(i%).name) THEN
+                IF _TRIM$(MID$(line$, 8)) = _TRIM$(Themes(i%).name) THEN
                     LET PageTheme = i%
                     EXIT FOR
                 END IF
@@ -660,17 +660,17 @@ SUB loadPage (page_name$)
         ELSEIF LEFT$(line$, 7) = "$TITLE=" THEN
             '.................................................................
             'title of the page, for the navigation bread crumb
-            LET PageTitle$ = TRIM$(MID$(line$, 8))
+            LET PageTitle$ = _TRIM$(MID$(line$, 8))
 
         ELSEIF LEFT$(line$, 5) = "$NAV=" THEN
             '.................................................................
             'category / folder of the page, for the navigation bread crumb
             '(if already defined, a second definition appends to the first)
             IF PageNav$ = "" THEN
-                LET PageNav$ = TRIM$(MID$(line$, 6))
+                LET PageNav$ = _TRIM$(MID$(line$, 6))
             ELSE
                 LET PageNav$ = PageNav$ + " " + CHR$(ASC_LGLLMT) + " " _
-                             + TRIM$(MID$(line$, 6))
+                             + _TRIM$(MID$(line$, 6))
             END IF
 
         ELSEIF LEFT$(line$, 5) = "$KEY:" THEN
@@ -704,16 +704,16 @@ SUB loadPage (page_name$)
             LET action$ = MID$(line$, keypos% + 1)
 
             IF LEFT$(action$, 5) = "GOTO:" THEN
-                LET param$ = TRIM$(MID$(action$, 6))
+                LET param$ = _TRIM$(MID$(action$, 6))
                 LET action% = ACTION_GOTO
             ELSEIF LEFT$(action$, 5) = "PAGE:" THEN
-                LET param$ = TRIM$(MID$(action$, 6))
+                LET param$ = _TRIM$(MID$(action$, 6))
                 LET action% = ACTION_PAGE
             ELSEIF LEFT$(action$, 6) = "SHELL:" THEN
-                LET param$ = TRIM$(MID$(action$, 7))
+                LET param$ = _TRIM$(MID$(action$, 7))
                 LET action% = ACTION_SHELL
             ELSEIF LEFT$(action$, 4) = "URL:" THEN
-                LET param$ = TRIM$(MID$(action$, 5))
+                LET param$ = _TRIM$(MID$(action$, 5))
                 LET action% = ACTION_URL
             ELSE
                 CALL fatalError( _
@@ -783,7 +783,7 @@ FUNCTION getPageName$ (page_name$)
     'is a page number attached to the name?
     IF ASC(page_name$, LEN(page_name$) - 2) = PAGE_ASC THEN
         'remove the page number from the name
-        LET getPageName$ = TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
+        LET getPageName$ = _TRIM$(LEFT$(page_name$, LEN(page_name$) - 3))
     ELSE
         LET getPageName$ = page_name$
     END IF
@@ -906,8 +906,9 @@ SUB fatalError (msg$)
 END SUB
 
 '=============================================================================
-'$INCLUDE: 'lib\strgui\strgui.bm'
+'$INCLUDE:'portadoom\lib\scroll.bm'
+'$INCLUDE:'portadoom\lib\ui.bm'
 
-'$INCLUDE: 'lib\strings.bm'
-'$INCLUDE: 'lib\scroll.bm'
-'$INCLUDE: 'lib\ui.bm'
+'$INCLUDE:'portadoom\lib\strgui\strgui.bm'
+
+'$INCLUDE:'common\include.bm'
