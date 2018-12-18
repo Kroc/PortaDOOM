@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+18-DEC-18:
+* Crispy-doom updated to v5.4
+
 17-NOV-18:
 * Updated DOOM Retro to v2.7.5
 
