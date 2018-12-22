@@ -22,6 +22,7 @@ ECHO     [D] STRIFE
 ECHO     [E] CHEX
 ECHO     [F] DOOM64
 ECHO     [G] HARM1
+ECHO     [H] SQUARE1 (GZDoom...)
 ECHO:
 
 SET "$="
@@ -37,6 +38,7 @@ IF /I "%$%" == "E" CALL :menu_chex
 REM # don't need a menu for DOOM 64, there's only one engine
 IF /I "%$%" == "F" CALL :launch_engine "doom64ex" "DOOM64.WAD"
 IF /I "%$%" == "G" CALL :menu_harm1
+IF /I "%$%" == "H" CALL :menu_gzdoom "square1.pk3"
 
 GOTO :menu
 
@@ -187,7 +189,6 @@ ECHO  ==========================
 ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Doom             CHEX.WAD
-ECHO     [P] Crispy Doom                CHEX.WAD
 ECHO:
 ECHO     [H] PrBoom+ Hardware           CHEX.WAD
 ECHO     [S] PrBoom+ Software           CHEX.WAD
@@ -206,7 +207,6 @@ SET /P "$=? "
 IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-doom-setup"     "CHEX.WAD"
-IF /I "%$%" == "P" CALL :launch_engine    "crispy-doom-setup"    "CHEX.WAD"
 IF /I "%$%" == "R" CALL :launch_engine    "doom-retro"           "CHEX.WAD"
 IF /I "%$%" == "H" CALL :launch_engine    "prboom-plus"          "CHEX.WAD"
 IF /I "%$%" == "S" CALL :launch_engine_sw "prboom-plus"          "CHEX.WAD"

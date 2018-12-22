@@ -2,6 +2,11 @@
 * = Fix / Change
 - = Removal
 
+22-DEC-18:
+* Updated Adventures of Square, added launcher IWAD detection
++ Added Adventures of Square to default config files
+- CHEX support appears to have disappeared in Crispy-Doom
+
 18-DEC-18:
 * Crispy-doom updated to v5.4
 

@@ -1,1 +1,0 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /IWAD "square1.pk3" /REQ gzdoom

@@ -75,8 +75,6 @@ IF EXIST "default.crispy-doom.cfg" GOTO :doom-retro
 
 ECHO * Crispy Doom                DOOM.WAD
 CALL :make_vanilla "crispy-doom" "DOOM.WAD"
-ECHO * Crispy Doom                CHEX.WAD
-CALL :make_vanilla "crispy-doom" "CHEX.WAD"
 ECHO ----------------------------------------
 
 
@@ -452,6 +450,9 @@ ECHO * GZDoom v3.3                HARM1.WAD
 CALL :make_gzdoom "gzdoom-33" "HARM1.WAD"
 ECHO * GZDoom v3.3                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-33" "ROTWB.WAD"
+REM # Adventures of Square support from here
+ECHO * GZDoom v3.3                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-33" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom-34
@@ -472,6 +473,8 @@ ECHO * GZDoom v3.4                HARM1.WAD
 CALL :make_gzdoom "gzdoom-34" "HARM1.WAD"
 ECHO * GZDoom v3.4                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-34" "ROTWB.WAD"
+ECHO * GZDoom v3.4                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-34" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom-35
@@ -492,6 +495,8 @@ ECHO * GZDoom v3.5                HARM1.WAD
 CALL :make_gzdoom "gzdoom-35" "HARM1.WAD"
 ECHO * GZDoom v3.5                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-35" "ROTWB.WAD"
+ECHO * GZDoom v3.5                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-35" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom-36
@@ -512,6 +517,8 @@ ECHO * GZDoom v3.6                HARM1.WAD
 CALL :make_gzdoom "gzdoom-36" "HARM1.WAD"
 ECHO * GZDoom v3.6                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-36" "ROTWB.WAD"
+ECHO * GZDoom v3.6                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-36" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom
@@ -532,6 +539,8 @@ ECHO * GZDoom                     HARM1.WAD
 CALL :make_gzdoom "gzdoom" "HARM1.WAD"
 ECHO * GZDoom                     ROTWB.WAD
 CALL :make_gzdoom "gzdoom" "ROTWB.WAD"
+ECHO * GZDoom                     SQUARE1.PK3
+CALL :make_gzdoom "gzdoom" "square1.pk3"
 ECHO ----------------------------------------
 
 REM # ZDoom
@@ -589,6 +598,10 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 %BIN_FART% "default.%~1.cfg" "playername \"you\""	"playername \"PortaDOOM\""
 ECHO bind 'f12' +screenshot>>"default.%~1.cfg"
 
+%BIN_FART% "default.%~1.cfg" ^
+	"iwadfolder \"C:\\GAMES\\GOG\\DOOM 2\\.\"" ^
+	"iwadfolder \"\""
+
 REM # TODO: reset the stats properties
 
 GOTO:EOF
@@ -636,6 +649,15 @@ REM # user-name for multi-player
 %BIN_FART% "default.%~1.extra.cfg" "player_name                   \"%USERNAME%\"" "player_name                   \"PortaDOOM\""
 REM # in Chocolate Strife there's also nickname?
 %BIN_FART% "default.choco-strife.cfg" "nickname                      \"(null)\"" "nickname                      \"PortaDOOM\""
+
+REM # Crispy Doom, annoyingly, adds these in -- another reason why I need
+REM # to make a specialised tool for programatically modifying CFG/INI files
+%BIN_FART% "default.crispy-doom.extra.cfg" ^
+	"autoload_path                 \"C:\\Users\\%USERNAME%\\AppData\\Roaming\\crispy-doom\\autoload\"" ^
+	"autoload_path                 \"\""
+%BIN_FART% "default.crispy-doom.extra.cfg" ^
+	"music_pack_path               \"C:\\Users\\%USERNAME%\\AppData\\Roaming\\crispy-doom\\music-packs\"" ^
+	"music_pack_path               \"\""
 
 GOTO:EOF
 
@@ -708,37 +730,37 @@ REM # controls
 %BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
 %BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
 
-IF "%~2" == "DOOM.WAD" (
+IF /I "%~2" == "DOOM.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] c=+crouch
 )
-IF "%~2" == "HERETIC.WAD" (
+IF /I "%~2" == "HERETIC.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] c=+crouch
 )
-IF "%~2" == "HEXEN.WAD" (
+IF /I "%~2" == "HEXEN.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] c=+crouch
 )
-IF "%~2" == "STRIFE1.WAD" (
+IF /I "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
 )
-IF "%~2" == "CHEX.WAD" (
+IF /I "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
 )
-IF "%~2" == "HARM1.WAD" (
+IF /I "%~2" == "HARM1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
@@ -782,7 +804,7 @@ REM # use "Mipmapped" for earlier versions
 %BIN_FART% "default.gzdoom-14.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 
 REM # controls
-IF "%~2" == "DOOM.WAD" (
+IF /I "%~2" == "DOOM.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
@@ -793,7 +815,7 @@ IF "%~2" == "DOOM.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] d=+moveright
 )
-IF "%~2" == "HERETIC.WAD" (
+IF /I "%~2" == "HERETIC.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
@@ -804,7 +826,7 @@ IF "%~2" == "HERETIC.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] d=+moveright
 )
-IF "%~2" == "HEXEN.WAD" (
+IF /I "%~2" == "HEXEN.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
@@ -815,7 +837,7 @@ IF "%~2" == "HEXEN.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] d=+moveright
 )
-IF "%~2" == "STRIFE1.WAD" (
+IF /I "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
@@ -826,7 +848,7 @@ IF "%~2" == "STRIFE1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
 )
-IF "%~2" == "CHEX.WAD" (
+IF /I "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
@@ -837,7 +859,7 @@ IF "%~2" == "CHEX.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
 )
-IF "%~2" == "HARM1.WAD" (
+IF /I "%~2" == "HARM1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
@@ -848,7 +870,7 @@ IF "%~2" == "HARM1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] d=+moveright
 )
-IF "%~2" == "ROTWB.WAD" (
+IF /I "%~2" == "ROTWB.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] mouse3=
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] e=+use
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] q=+zoom
@@ -858,6 +880,17 @@ IF "%~2" == "ROTWB.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] a=+moveleft
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] s=+back
 	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] d=+moveright
+)
+IF /I "%~2" == "SQUARE1.PK3" (
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] mouse3=
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] e=+use
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] q=+zoom
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] r=+reload
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] c=+crouch
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] w=+forward
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] a=+moveleft
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] s=+back
+	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] d=+moveright
 )
 
 REM # change controls

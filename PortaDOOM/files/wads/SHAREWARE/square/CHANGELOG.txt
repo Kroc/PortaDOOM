@@ -1,7 +1,64 @@
 The Adventures of Square CHANGELOG
-(C) 2014 - 2017 BigBrik Games
+(C) 2014 - 2018 BigBrik Games
 http://adventuresofsquare.com
 ----------------------------------
+
+2.0
+...
+
+- EPISODE 2, BABY!
+
+- Updated engine to GZDoom v3.3.1! This will probably invalidate your save game, though,
+  but it's totally worth it since it fixes a lot of things.
+
+- Square's jump physics have changed for the better! Fancy stuff like "ledge forgiveness"
+  and pseudo-bunnyhopping! This should make platforming a little less of a hassle.
+
+- We completely revamped the basic menu, but don't worry! You can still find the full
+  GZDoom Engine menu in the "advanced" section.
+  
+- Added a new OPL Timbre set that works (by CSonicGo). Listen to it by choosing 
+  the LIBADL MIDI Device (WOPL Bank in ADLMIDI, set by default).
+
+- Square, did you get a facelift? Yeah, the old one was getting a little worse for wear.
+  So we changed it!
+- The cake pickup was changed to be more purple, since all bonus health powerups 
+  now have a prominent purple color.
+- The pickup sound for health bonus powerups is now different from (yet similar
+  to) the original health pickup sound.
+
+- It was a bit of cheap shot to make Color Cube red shots explosive. They deal
+  lots of damage, but they no longer explode.
+- Adjusted Tritankle color to something less "friendly."
+- Paintcannon bullets now draw "blood" - makes it a tad more spectacular to use.
+- Dual Oozis, baby! Just pick up another Oozi!
+- Fixed the graphics not resetting correctly on the Hellshell Launcher after a
+  Goonade is used.
+- Due to popular (?) demand, the Defibs will electrocute you a little bit if
+  you use them underwater: 25 damage, ignore armor.
+- All "bullet" weapons are now yellow paint splatter - shotbow/quadcannon, as well
+  as Tritankles and the Destructinator.
+- Adjusted TNT Crates to be a little more damaging/useful.
+  
+- Players that respawn did not get new ID tags. This would have affected Co-op things
+  that affect player states.
+- Players now die a little differently, but this now means that you can resurrect
+  yourself now via the console command, RESURRECT.
+
+- Messages have been changed to be a little more... colorful.
+
+- Lots of changes to E1's BigBrik times.
+- E1A1 was changed a little near the water building thing - longer halls,
+  and added an outdoor jump!
+- E1A1's ending area was also changed a bit more - some switches removed or altered,
+  and you get to raise a bridge, now! Whoa!
+- E1A2 has been completely replaced. The old map is now in OLDSEWER.
+- A two gaps in an overhang window were fixed in E1A7.
+- Fixed a misaligned texture or two in E1A9.
+- Fixed Monster Blocking on the Destructinator platform in E1A9.
+- Lots of other tiny changes in thing placement around all maps.
+
+- All maps had some tweaks to Goonade placement because they are better now.
 
 1.4
 ...
