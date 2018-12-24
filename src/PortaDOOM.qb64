@@ -5,7 +5,15 @@
 '         (SOMETIMES REFERRED TO AS "DOS" OR "OEM-US" ENCODING).
 '         DO NOT OPEN AND SAVE THIS FILE AS UNICODE / UTF-8!
 '=============================================================================
-$EXEICON:'.\portadoom\icon\icon.ico'
+$EXEICON:'.\portadoom\icon\portadoom.ico'
+
+'hide the main window until we have something rendered on it first
+$SCREENHIDE
+
+'disallow resizing of the window. this adds a great deal of complexity for
+'very little gain right now and there isn't an easy way to restore a window
+'to its 1:1 size
+$RESIZE:OFF
 
 'set ALT+ENTER to switch to 4:3 aspect ratio, with anti-aliasing;
 'many thanks Fellippe Heitor for implementing this!
@@ -19,9 +27,6 @@ _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 ' $CHECKING:OFF
 
 ''ON ERROR GOTO error_handler
-
-''$CONSOLE
-''_CONSOLE ON
 
 'the default size (in char cols/rows) of the screen
 CONST SCREEN_MODE = 0
@@ -37,6 +42,7 @@ CONST CTL_HEADING = ASC_COLON '    :
 CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
 CONST CTL_ITALIC = ASC_USCORE '    _..._
+CONST CTL_TERM = ASC_BTICK '       `...`
 CONST CTL_LINE1 = ASC_EQUALS '     =
 CONST CTL_LINE2 = ASC_DASH '       -
 CONST CTL_PAREN_ON = ASC_LPAREN '  (
@@ -89,9 +95,10 @@ CONST COLOR_BGND = 0 '..background colour
 CONST COLOR_FGND = 1 '..foreground colour
 CONST COLOR_BOLD = 2 '..*bold* text
 CONST COLOR_ITALIC = 3 '_italic_ text
-CONST COLOR_HEAD = 4 '..heading and other structural elements
-CONST COLOR_PAREN = 5 '.parentheses (...)
-CONST COLOR_KEY = 6 '...key marker [...]
+CONST COLOR_TERM = 4 '..`term` text
+CONST COLOR_HEAD = 5 '..heading and other structural elements
+CONST COLOR_PAREN = 6 '.parentheses (...)
+CONST COLOR_KEY = 7 '...key marker [...]
 
 TYPE Theme
     name AS STRING * 15
@@ -99,6 +106,7 @@ TYPE Theme
     colorFore AS _BYTE
     colorBold AS _BYTE
     colorItalic AS _BYTE
+    colorTerm AS _BYTE
     colorHead AS _BYTE
     colorParen AS _BYTE
     colorKey AS _BYTE
@@ -121,6 +129,7 @@ LET Themes(THEME_HELP).colorBack = CYAN
 LET Themes(THEME_HELP).colorFore = BLACK
 LET Themes(THEME_HELP).colorBold = WHITE
 LET Themes(THEME_HELP).colorItalic = BLUE
+LET Themes(THEME_HELP).colorTerm = LTGREY
 LET Themes(THEME_HELP).colorHead = YELLOW
 LET Themes(THEME_HELP).colorParen = LTGREY
 LET Themes(THEME_HELP).colorKey = AQUA
@@ -133,6 +142,7 @@ LET Themes(THEME_WARNING).colorBack = LTGREY
 LET Themes(THEME_WARNING).colorFore = RED
 LET Themes(THEME_WARNING).colorBold = BLACK
 LET Themes(THEME_WARNING).colorItalic = DKGREY
+LET Themes(THEME_WARNING).colorTerm = RED
 LET Themes(THEME_WARNING).colorHead = RED
 LET Themes(THEME_WARNING).colorParen = RED
 LET Themes(THEME_WARNING).colorKey = PURPLE
@@ -145,6 +155,7 @@ LET Themes(THEME_BLACK).colorBack = BLACK
 LET Themes(THEME_BLACK).colorFore = DKGREY
 LET Themes(THEME_BLACK).colorBold = WHITE
 LET Themes(THEME_BLACK).colorItalic = PURPLE
+LET Themes(THEME_BLACK).colorTerm = LTGREY
 LET Themes(THEME_BLACK).colorHead = RED
 LET Themes(THEME_BLACK).colorParen = LTGREY
 LET Themes(THEME_BLACK).colorKey = YELLOW
@@ -157,6 +168,7 @@ LET Themes(THEME_BLUE).colorBack = BLUE
 LET Themes(THEME_BLUE).colorFore = LTGREY
 LET Themes(THEME_BLUE).colorBold = WHITE
 LET Themes(THEME_BLUE).colorItalic = LIME
+LET Themes(THEME_BLUE).colorTerm = CYAN
 LET Themes(THEME_BLUE).colorHead = YELLOW
 LET Themes(THEME_BLUE).colorParen = CYAN
 LET Themes(THEME_BLUE).colorKey = AQUA
@@ -169,6 +181,7 @@ LET Themes(THEME_RED).colorBack = RED
 LET Themes(THEME_RED).colorFore = LTGREY
 LET Themes(THEME_RED).colorBold = WHITE
 LET Themes(THEME_RED).colorItalic = LIME
+LET Themes(THEME_RED).colorTerm = ROSE
 LET Themes(THEME_RED).colorHead = YELLOW
 LET Themes(THEME_RED).colorParen = ROSE
 LET Themes(THEME_RED).colorKey = PINK
@@ -181,6 +194,7 @@ LET Themes(THEME_GREY).colorBack = LTGREY
 LET Themes(THEME_GREY).colorFore = DKGREY
 LET Themes(THEME_GREY).colorBold = BLACK
 LET Themes(THEME_GREY).colorItalic = PURPLE
+LET Themes(THEME_GREY).colorTerm = WHITE
 LET Themes(THEME_GREY).colorHead = BLUE
 LET Themes(THEME_GREY).colorParen = WHITE
 LET Themes(THEME_GREY).colorKey = RED
@@ -277,16 +291,13 @@ DIM SHARED dialogText$ 'binary string of the dialogue text
 
 'MAIN:
 '=============================================================================
-'disallow resizing of the window. this adds a great deal of complexity for
-'very little gain right now and there isn't an easy way to restore a window
-'to its 1:1 size
-$RESIZE:OFF
-
 _TITLE "PortaDOOM"
 
 'set graphics mode, screen size, colour and clear screen
-SCREEN SCREEN_MODE, , 0, 0: WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
-COLOR PAGE_FGND, PAGE_BKGD: CLS
+WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
+SCREEN SCREEN_MODE, , 0, 0
+COLOR PAGE_FGND, PAGE_BKGD
+CLS, PAGE_BKGD: _SCREENSHOW
 
 'display the front-page
 CALL loadPage("Home"): CALL refreshScreen

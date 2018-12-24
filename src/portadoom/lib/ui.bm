@@ -470,14 +470,15 @@ SUB formatLine (indent%, src$, default_theme%)
 
     '-------------------------------------------------------------------------
 
-    'bold / italic are only valid on word-boundaries;
+    'bold / italic / term are only valid on word-boundaries;
     'the beginning of a line is always a word-boundary
     DIM is_boundary`: LET is_boundary` = TRUE
 
-    'we need to know if a word was already bold/italic &c. when it began,
+    'we need to know if a word was already bold/italic/term &c. when it began,
     'so that if it's wrapped we can insert the format code on the new line
     DIM is_bold`, word_bold`
     DIM is_italic`, word_italic`
+    DIM is_term`, word_term`
     DIM is_paren`, word_paren`
     DIM is_key`, word_key`
 
@@ -570,29 +571,29 @@ SUB formatLine (indent%, src$, default_theme%)
                 'add the open-bracket character
                 GOSUB addChar
 
-            CASE CTL_PAREN_ON
-                '.............................................................
-                'automatic paren mode will only occur on a word boundary
-                IF is_boundary` = TRUE THEN
-                    'enable the paren mode
-                    LET is_paren` = TRUE
-                    LET word$ = word$ + "^{F@P}"
-                END IF
-                'add the parenthesis to the output
-                GOSUB addChar
-                'a word boundary occurs within the parens
-                LET is_boundary` = TRUE
-
-            CASE CTL_PAREN_OFF
-                '.............................................................
-                GOSUB addChar
-                IF is_paren` = TRUE THEN
-                    'end paren mode
-                    LET is_paren` = FALSE
-                    LET word$ = word$ + "^{F-}"
-                END IF
-                'a word boundary occurs after the parens
-                LET is_boundary` = TRUE
+''            CASE CTL_PAREN_ON
+''                '.............................................................
+''                'automatic paren mode will only occur on a word boundary
+''                IF is_boundary` = TRUE THEN
+''                    'enable the paren mode
+''                    LET is_paren` = TRUE
+''                    LET word$ = word$ + "^{F@P}"
+''                END IF
+''                'add the parenthesis to the output
+''                GOSUB addChar
+''                'a word boundary occurs within the parens
+''                LET is_boundary` = TRUE
+''
+''           CASE CTL_PAREN_OFF
+''               '.............................................................
+''               GOSUB addChar
+''               IF is_paren` = TRUE THEN
+''                   'end paren mode
+''                   LET is_paren` = FALSE
+''                   LET word$ = word$ + "^{F-}"
+''               END IF
+''               'a word boundary occurs after the parens
+''               LET is_boundary` = TRUE
 
             CASE CTL_BOLD
                 '.............................................................
@@ -614,10 +615,10 @@ SUB formatLine (indent%, src$, default_theme%)
                             GOSUB addChar
                         END IF
 
-                    CASE ASC_COMMA, ASC_COLON, ASC_SEMICOLON, ASC_PERIOD, _
-                         ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                         ASC_FSLASH, ASC_BSLASH, CTL_ITALIC, _
-                         CTL_PAREN_OFF
+                    CASE ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
+                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
+                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
+                         CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
                         'word boundary? if bold is on, flip it off
                         IF is_bold` = TRUE THEN
                             LET is_bold` = FALSE
@@ -652,10 +653,22 @@ SUB formatLine (indent%, src$, default_theme%)
                         LET src% = src% + 1: LET src_col% = src_col% + 1
                         GOSUB addChar
 
+                    CASE ASC_SPC, ASC_TAB
+                        'if followed by whitespace, then it's
+                        'assumed to be a closing italic marker
+                        IF is_italic` = TRUE THEN
+                            LET is_italic` = FALSE
+                            LET word$ = word$ + "^{F-}"
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
+
                     CASE ASC_SPC, ASC_TAB, _
-                         ASC_COMMA, ASC_COLON, ASC_SEMICOLON, ASC_PERIOD, _
-                         ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                         ASC_FSLASH, ASC_BSLASH, CTL_BOLD, CTL_PAREN_OFF
+                         ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
+                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
+                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
+                         CTL_BOLD, CTL_PAREN_ON, CTL_PAREN_OFF
                         'word boundary? if italic is on, flip it off
                         IF is_italic` = TRUE THEN
                             LET is_italic` = FALSE
@@ -681,6 +694,62 @@ SUB formatLine (indent%, src$, default_theme%)
                         END IF
                 END SELECT
 
+            CASE CTL_TERM
+                '.............................................................
+                'check the next character:
+                SELECT CASE ASC(src$, src% + 1)
+                    CASE char%
+                        'double is an escape, treat as single literal
+                        LET src% = src% + 1: LET src_col% = src_col% + 1
+                        GOSUB addChar
+
+                    CASE ASC_SPC, ASC_TAB
+                        'if followed by whitespace, then it's
+                        'assumed to be a closing term marker
+                        IF is_term` = TRUE THEN
+                            LET is_term` = FALSE
+                            LET word$ = word$ + "^{F-}"
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
+
+                    CASE ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
+                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
+                         ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
+                         CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
+                        'word boundary? if term is on, flip it off
+                        IF is_term` = TRUE THEN
+                            LET is_term` = FALSE
+                            LET word$ = word$ + "^{F-}"
+
+                        ELSEIF is_term` = FALSE THEN
+                            LET is_term` = TRUE
+                            LET word$ = word$ + "^{F@T}"
+
+                        ELSE
+                            'treat as literal
+                            GOSUB addChar
+                        END IF
+
+                    CASE ELSE
+                        'term can only be enabled at a word-boundary
+                        IF is_boundary` = TRUE THEN
+                            LET is_term` = TRUE
+                            LET word$ = word$ + "^{F@T}"
+                        ELSE
+                            'term can be disabled mid-word
+                            '(use double-backtick to escape)
+                            IF is_term` = TRUE THEN
+                                LET is_term` = FALSE
+                                LET word$ = word$ + "^{F-}"
+                            ELSE
+                                'middle of word, treat as literal
+                                GOSUB addChar
+                            END IF
+                        END IF
+                END SELECT
+
             CASE CTL_BREAK
                 '.............................................................
                 'double back-slash creates a manual line-break
@@ -700,7 +769,8 @@ SUB formatLine (indent%, src$, default_theme%)
                 GOSUB addChar
                 LET is_boundary` = TRUE
 
-            CASE ASC_FSLASH, ASC_BSLASH, ASC_DASH, ASC_COMMA, ASC_SEMICOLON
+            CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_DASH, ASC_COMMA, _
+                 ASC_SEMICOLON, CTL_PAREN_ON, CTL_PAREN_OFF
                 '.............................................................
                 'these break the word, but the character must be included
                 GOSUB addChar
@@ -788,7 +858,7 @@ SUB formatLine (indent%, src$, default_theme%)
                         LET ws% = ws% + adjust%
                         'set the next line indent to the current position
                         LET next_indent% = src_col%
-                        'clear the bold/italic state;
+                        'clear the bold/italic/term state;
                         'this removes the need for a *lot* of fiddly typing
                         IF is_bold` = TRUE THEN
                             STRGUI.Add "^{F-}"
@@ -797,6 +867,10 @@ SUB formatLine (indent%, src$, default_theme%)
                         IF is_italic` = TRUE THEN
                             STRGUI.Add "^{F-}"
                             LET is_italic` = FALSE
+                        END IF
+                        IF is_term` = TRUE THEN
+                            STRGUI.Add "^{F-}"
+                            LET is_term` = FALSE
                         END IF
                     END IF
                 END IF
@@ -891,6 +965,8 @@ SUB formatLine (indent%, src$, default_theme%)
     IF word_bold` = TRUE THEN STRGUI.Add "^{F@B}"
     'are we currently italic?
     IF word_italic` = TRUE THEN STRGUI.Add "^{F@I}"
+    'are we currently in a term?
+    IF word_term` = TRUE THEN STRGUI.Add "^{F@T}"
     'begin the line with the remaining word
     GOSUB pushWord
 
@@ -903,6 +979,7 @@ SUB formatLine (indent%, src$, default_theme%)
     'to the new line
     LET word_bold` = is_bold`
     LET word_italic` = is_italic`
+    LET word_term` = is_term`
     LET word_paren` = is_paren`
     LET word_key` = is_key`
     'we are now at the beginning of a word
@@ -950,6 +1027,7 @@ SUB formatLine (indent%, src$, default_theme%)
     STRGUI.SetVar "f", Themes(theme%).colorFore
     STRGUI.SetVar "B", Themes(theme%).colorBold
     STRGUI.SetVar "I", Themes(theme%).colorItalic
+    STRGUI.SetVar "T", Themes(theme%).colorTerm
     STRGUI.SetVar "H", Themes(theme%).colorHead
     STRGUI.SetVar "P", Themes(theme%).colorParen
     STRGUI.SetVar "K", Themes(theme%).colorKey
