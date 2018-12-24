@@ -1,0 +1,22 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\avactor\play-avactor.ini"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/101647-avactor-updated/
+
+:Avactor: End of the Fifth Circle					* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>12>15	  Author : _Eradrop_
+:Levels   : *12			   Modes : *Single
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+12 maps of jungles/temples style with huge areas and lots of details.
+All the monsters have a new skin to fit better in the environment I've built.
+
+:WAD details
+:-------------------------------------------------------------------------------
+*IWAD			: DOOM2
+*Tested with	: `PRBoom` and `Zdoom`, also been\\played with `GZDoom` couple of times
+*Build time		: about 18 months
+*New Sprites	: all the decorations, lights, obstacles and monsters

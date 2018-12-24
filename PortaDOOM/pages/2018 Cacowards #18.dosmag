@@ -1,0 +1,68 @@
+$THEME=BLACK
+$TITLE=The Side Column pt.II
+
+^C:2018 CACOWARDS :: THE SIDE COLUMN pt.II
+
+:-------------------------------------------------------------------------------
+
+:MOST PROMISING NEWCOMERS
+:===============================================================================
+It should come as no surprise to anyone that 2018 has seen yet another incredible influx of new talent. Fun fact: 8 out of 10 Cacowards and 7 out of 10 honorable mentions this year went to first-time recipients. Although most of those winners are not “newcomers” per se, it just goes to show how much the constant sea of relatively new blood does to help keep this community thriving.
+
+$KEY:D=GOTO:Demonastery
+This year’s grandest entrance was made by _Nootrac4571_, who showed up out of nowhere to release the jaw-dropping *[D] Demonastery*. Through the cloudy tubes of the internet, you could practically see everyone in the figurative room leaning over and whispering to each other: “Whoa, who is that?!” All right, _Nootrac_, you’ve got our attention – what’s next?
+
+$KEY:U=URL:https://www.doomworld.com/forum/topic/103107-cl-11-v10-u-n-w-e-l-c-o-m-e-episode-1/
+$KEY:Q=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/quirkdom
+$KEY:B=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/breathless
+$KEY:S=URL:https://www.doomworld.com/forum/topic/94050-slaughtermax-rc2-available/
+$KEY:F=URL:https://www.doomworld.com/forum/topic/103100-flotsam-12-hard-boom-compatible-maps/
+$KEY:O=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mayhem18o
+$KEY:P=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mayhem18p
+Others may have made slightly more understated splashes, but they wowed us with the quality of their work all the same. _Plusw_ appeared at the tail end of the Cacoward season with an entrancing little dreamworld called [U: Unwelcome], which combines a surrealist mood and an artsy palette with clever puzzle mechanics. If you prefer your surrealism a little more Escher and less LSD trip, you’ll want to check out _FishyClockwork_'s The [Q: Quirky Domain], which uses `GZDoom` portals to create some really mind-boggling dimensional loops. And last but not least, there’s _Nirvana_, whose standalone release [B: Breathless], along with contributions to [S: SlaughterMAX], [F: Flotsam], and [O: Mayhem Orange] and [P: Purple], have helped keep the slaughter/challenge genre moving forward to the delight and chagrin of various community factions.
+
+While these may be our MOST promising newcomers, everyone new to the community is promising, and we look forward to what all our new blood will put out. Try it! You might like it.
+
+
+:REMAKE ME A BELIEVER
+:===============================================================================
+$KEY:R=URL:https://www.doomworld.com/forum/topic/91854-v15-doom-64-retribution/
+$KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/d64d2
+Fans of `DOOM 64` are hardly lacking for options this year, as we’ve seen the release or continuation of two separate remakes of the game. [R: Doom 64: Retribution] aims to be a mostly faithful recreation of the classic `DOOM 64` experience, but with some remastering and improvements, with future plans for an all-new episode and ports of all the maps from `Absolution`. [M: Doom 64 for Doom II] is a demake that recreates the whole game within the limits of the vanilla engine but remains as true to the original level design as possible. Why pick just one? You can have your cake and eat it too.
+
+
+:THIS YEAR IN DOOM MUSIC
+:===============================================================================
+$KEY:X=GOTO:Exomoon
+If you had to name the best soundtrack this year, it would be hard to pick a favorite – so how about three? _Deadwing_'s soundtrack for *[X] Exomoon* is absolutely sublime – it’s groovy as hell, but with an underlying sadness to it that perfectly complements the strange, melancholy backstory. Like the game world itself, it’s simultaneously familiar and alien, leaving you wondering whether you’re in mourning for a whole planet’s worth of extraterrestrials you’ve never met or if the whole thing isn’t actually a lot closer to home.
+
+$KEY:K=GOTO:REKKR
+*[K] REKKR*’s soundtrack, by _HexenMapper_, is a completely different beast, channeling all the charm and earworminess of mid-'90s game music, but with enough depth to it to avoid feeling oversimplified. The distinct medieval Scottish/Celtic flavor and grim, battle-ready tone continually refuel the player’s lust for ass-kicking.
+
+$KEY:A=GOTO:Ashes 2063
+_PRIMEVAL_’s tracks for *[A] Ashes 2063* Episode 1 are also nostalgia-driven, but with a sound that’s straight out of the post-apocalyptic '80s action movies the mapset is based on. Whether it’s pumped up or slow and atmospheric, it offers all the cheesy synth and overblown reverb you could possibly need to imagine yourself as the next Road Warrior, and it adds immensely to the sense of desolation you’ll get while exploring the wastelands and burned-out cities.
+
+$KEY:I=URL:https://www.doomworld.com/forum/topic/100679-requiem-reimagined-soundtrack-released/
+$KEY:C=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/requiem
+There were plenty of other great tracks made this year, and we can’t cover them all, but we’d be remiss if we didn’t mention [I: Requiem Reimagined], a remixed and professionally recorded version of the entire soundtrack from the [C: classic megawad] by the original authors: _David “Tolwyn” Shaw_, _Mark "markklem" Klem_, and _Jeremy "JDoyle" Doyle_. It’s a must-listen for fans of the original MIDI soundtrack.
+
+
+:BIZARRO SPEEDRUNNING
+:===============================================================================
+2018 yet again pushed boundaries on the most revered runs and it's hardly surprising that _ZeroMaster010_ was driving the effort. He retook the `DOOM 2` UV-speed movie record from _eLim_ in *18:40* (lmp/YT) and improved his own `DOOM` E1 UV-speed to *4:51* (lmp/YT, *6:12* really, but `E1M8` time ignored for historic reasons).
+
+$KEY:T=URL:https://www.youtube.com/watch?v=OpmPLrpGSos
+From this point things get surreal quickly. Back in January _ZM_ conquered the last `Ultimate DOOM` pacifist challenge and exited the notoriously claustrophobic `E4M6` in *1:02:49* (lmp/YT). Spoiler: he holds the cyberdemon down in a hug for 40+ minutes while some barons shoot it until you know what. Another previously undone feat is `Evilution` Map08 pacifist in *6:11* (lmp/YT), thought unrealistic until _ZM_ discovered a void glide assisted by a pinky demon. There's also a previously unknown keygrab on `Evilution` Map01 (lmp/YT) and the French speedster _Ch0wW_ applied the zero press trick (named after guess who) to finish `DOOM 2` Map07 in just 4 seconds (lmp/YT). _ZM_ also showcased out-and-back void gliding in a few coop TAS runs, further destroying the integrity of maps themselves (`E1M6`, `E3M1`, `PL22`, Map28: YT). Last but not least, he also proved the pacifist on `DOOM 2` Map30 is technically possible with this ridiculous [T: TAS]. Don't hold your breath for unassisted variants though.
+
+$KEY:W=URL:https://www.doomworld.com/forum/topic/100389-beatfill-94-pwads-month/
+With the _zero_ tax paid, the one feat competing with his shennanigans was _Ancalagon_'s UV-max movie of `Alien Vendetta` in *4:13:37* (lmp/YT), a monstrous piece of marathon running. Worth noting is _j4rio_'s insane map-by-map Tyson crusade through `Eternal Doom` (lmps/YTs), or _Killer5_'s _Anca_-beater on the infamous `No Chance` UV-max in 34:32 (lmp/YT). Yet when it comes to defining what the community did in 2018, the biggest demo haul came from a drive to fill tables for as many 1994 wads as possible, because [W: what is "priorities"].
+
+$KEY:E=URL:https://esamarathon.com/
+$KEY:N=URL:https://www.doomworld.com/forum/topic/98640-dsdacon-2018/
+$KEY:L=URL:https://www.twingalaxies.com/feed_details.php/3499/jace-halls-1000-doom-arena-challenge-has-been-beaten-in-incredible-fashion
+$KEY:G=URL:https://gamesdonequick.com/schedule
+If you're a fan of streamed runs, you could've watched _4shockblast_ at [E: ESA Summer18] completing a RTA (Real Time Attack, utilizing saveloading) of `Scythe` and the pack of assembled `DOOM` runners had a follow-up [N: mini-con]. In more streamed news, _Jace Hall_ of Twin Galaxies ran another survival coop [L: Doom Arena Challenge] for a $1000 prize and some TG swag on a hilariously unfair map that took the winning team (_Ancalagon_, _Abyrvalg_, _Looper_) over 5 hours to complete. And next January _Dime_ returns to [G: AGDQ2019] to run both `Ultimate` and `DOOM 2`, so check that out!
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/
+:source [#: www.doomworld.com/cacowards/2018]

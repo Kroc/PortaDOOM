@@ -1,7 +1,8 @@
 $THEME=BLUE
 $KEY:A=GOTO:Master Levels #09
 $KEY:B=GOTO:PlayStation DOOM
-$KEY:C=GOTO:Prime Directive
+$KEY:C=GOTO:Preacher
+$KEY:D=GOTO:Prime Directive
 
 ^C:INDEX :: P
 
@@ -9,4 +10,5 @@ $KEY:C=GOTO:Prime Directive
 
 - [A] *Master Levels: Paradox							Commercial DOOM
 - [B] *PlayStation DOOM									Commercial DOOM
-- [C] *Prime Directive
+- [C] *Preacher											Episodes
+- [D] *Prime Directive

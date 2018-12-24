@@ -1,0 +1,31 @@
+$THEME=BLACK
+$TITLE=Multiplayer Awards
+$KEY:Q=GOTO:Quake Champions - Doom Edition
+
+^C:2018 CACOWARDS :: MULTIPLAYER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:[Q] Quake Champions: Doom Edition - _DBThanatos_ & _Michaelis_
+:===============================================================================
+Pinning down what determines the quality of a multiplayer mod is a bit of a unique beast. Whether a mod is technically good or bad is kind of irrelevant; you can be technically innovative, you can do new gameplay concepts, you can make all sorts of custom content, but in the end what matters is...whether people play it and like playing it. Community reception can make or break a mod. Sometimes they can be a resort for occasional weekend visits (`WhoDunIt`, `Push`, `Ghouls vs. Humans`), sometimes they can drift away from the mainland and sustain its own population for years (`Mega Man 8-Bit DM`). And then there's `QCDE`, which caused a plate tectonic shift so massive that it left us with an entire separate continent on which a new civilization sprung into existence.
+
+It's nigh-impossible to oversell what _DBThanatos_ and _Michaelis_ managed to pull off with `QCDE`. They've been partners-in-crime since their nearly decade-old crazy resource-hoarding simulator `Aeons of Death` (the word crime isn't used lightly here) and two years ago their team won a Cacoward for `D4D`, the conversion/demake of `Doom 2016` in `GZDoom`. Well, they've outdone themselves this time, because `QCDE` isn't merely another zeitgeist-capturing mod/conversion. The main reason why it gets a Cacoward - and why there is no other MP Cacoward this year - is because `QCDE` by and far outshines every other multiplayer effort that has come through this year.
+
+It's no secret that `QCDE`'s base gameplay takes unapologetic inspiration from the fancy new _id_ game that happens to have a similar name. You've got a set of different characters with different abilities, you've got a set of different weapons, you've got a set of different maps, go wild. You select your character, your opponent(s) selects theirs, and you all start jumping around wildly while shooting at each other. But, as `Samsara` proved years ago, that's really all you need to make something fun - and if you give the players something to build off, you can watch it expand. And expand it has. `QCDE` has spread far and wide, spawning a huge variety of different sub-mods, a completely separate community, dedicated streamed tournaments with cash prizes, and even a metal album. A metal album? Now that's something not a lot of other mods can brag about.
+
+Having fun with your mates is ultimately an extremely simple concept, and `QCDE` captures the old days of the LAN parties where everyone was yelling at each other, the spectacle of watching the Quakecon finales, all in a free mod for `Doom`. But you don't need to make something complicated to be fun, you just have to engage people. Nothing else in 2018 has come close to the community-shaking that `QCDE` has, and it's going to be around for years in the future.
+
+^R- _dew_ / _TerminusEst13_
+
+^C:DEATHMATCH AND REBIRTHMATCH
+:===============================================================================
+Spring of 2018 saw the ultimate season of World Doom League unfold (and unravel). The heavy favourites from Best Ever (_RosKing_, _Infer_, _Legion_) prevailed over surprising finalists The Phantom Troupe (_Tai_, _Caution_, _Dasten_). Then some long-running tensions flared up over accusations of unfair practices, bad blood spilled everywhere and the admins decided enough was enough and pulled the plug. With nine seasons over five years it was the second longest running competitive `DOOM` project after the IDL, coincidentally also founded by _Ralphis_. So long, and thanks for all the flags!
+
+Now that competition was dead and done, the only thing left to do was to revive it. After more than a decade of CTF leagues, the high commitment model seemed on life support (don't tell that to _Zakken_ though), so _HumanBones_ and your humble editor _dew_ began exploring new paths under the Multiplayer Doom Federation umbrella. The idea boils down to matching this scatterbrain era with attention-light, one-day pick-up tournaments that work so well for `Quake`. So far we've seen a string of newschool duel tourneys, mostly dominated by _Avernus_, and a surprisingly successful experimental FFA tournament. _Dragon_ won the latter in a dramatic fashion that had to be confirmed by tense moments of spreadsheet maths. Future plans include re-running FFA and even trying 3-way CTF!
+
+Now let's talk about the elephant in the room, somewhere to the left from here. `QCDE` successfully exploited its `Quake` roots and nurtured its own competitive scene. 2018 saw multiple duel tournaments, the most successful being TastyCups, a series of three tournaments with monetary prizes. They were broadcasted by _Jehar_, a well known veteran `Quake` caster with historic ties to the competitive `DOOM` scene. Others followed, like _BoKo_'s Wartorn Open League tournament, cast in Polish. Perhaps the strongest player of the year is _proteh_, winner of first two tourneys and second place in the other two. Then there's _Avernus_ (yes, the same) who continued improving until he won the latest tournament. _Necrophag1st_, a weathered `Quake` veteran, only played once, but when he did, _proteh_ was dethroned for the first time.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/multi/
+:source [#: www.doomworld.com/cacowards/multi]

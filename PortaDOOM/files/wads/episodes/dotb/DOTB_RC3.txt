@@ -1,0 +1,51 @@
+===========================================================================
+Advanced engine needed  : Marines Best Friend compatible source port
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : Dimension of the Boomed
+Filename                : DOTB_RC3.WAD
+Release date            : 15/10/2018
+Author                  : Stephen Wadsworth
+Other Files By Author   : Way Too Many Dead Guys, various contributions.
+Misc. Author Info       : Urthar @ Doomworld
+
+Description             : Seven delicious helpings of Quake flavoured Doom!
+
+Additional Credits to   : Shambler sprites generated from Skiffy's updated Shambler MDL.			 
+			  Spawn sprites generated from Arcane Dimensions updated Spawn MDL.
+			  Scrag sprites directly lifted from Eriance's Wicked monster.
+			  Minigun pickup sprite from Tormentor667's Minigun.
+
+Additional Thanks to	: All those at Doomworld who provided feedback and encouragement.
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOMII
+Map #                   : Map01..09
+Single Player           : Designed for
+Cooperative 2-4 Player  : Tested in solo-net
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : QUAKE textures, DOOMII sprites, QTEST sprites
+Build Time              : 2 years on and off
+Editor(s) used          : GZDoomBuilder, SLADE3, WhackEd4
+Known Bugs              : None
+May Not Run With        : Non MBF compatible source ports
+Tested With             : PrBoom+ Doom-Retro Eternity ZDoom GZDoom Zandronium

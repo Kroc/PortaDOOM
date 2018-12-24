@@ -1,20 +1,22 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Darkening Episode 2
 $KEY:B=GOTO:Dark Tide
-$KEY:C=GOTO:dead.air
-$KEY:D=GOTO:dead.wire
-$KEY:E=GOTO:Cabal Series #03
-$KEY:F=GOTO:Disjunction
-$KEY:G=GOTO:Don't Be A Bitch Remastered
-$KEY:H=GOTO:DTWiD Series #02
-$KEY:I=GOTO:DOOM 64
-$KEY:J=GOTO:DOOM II
-$KEY:K=GOTO:DOOM II - Hellscape
-$KEY:L=GOTO:DTWiD Series #01
-$KEY:M=GOTO:DTWiD Series #03
-$KEY:N=GOTO:DOOM(4) for DooM
-$KEY:O=GOTO:Doomed Space Wars
-$KEY:P=GOTO:DoomRL Arsenal
+$KEY:C=GOTO:Dark Universe Part 1
+$KEY:D=GOTO:dead.air
+$KEY:E=GOTO:dead.wire
+$KEY:F=GOTO:Cabal Series #03
+$KEY:G=GOTO:Dimension of the Boomed
+$KEY:H=GOTO:Disjunction
+$KEY:I=GOTO:Don't Be A Bitch Remastered
+$KEY:J=GOTO:DTWiD Series #02
+$KEY:K=GOTO:DOOM 64
+$KEY:L=GOTO:DOOM II
+$KEY:M=GOTO:DOOM II - Hellscape
+$KEY:N=GOTO:DTWiD Series #01
+$KEY:O=GOTO:DTWiD Series #03
+$KEY:P=GOTO:DOOM(4) for DooM
+$KEY:Q=GOTO:Doomed Space Wars
+$KEY:R=GOTO:DoomRL Arsenal
 
 ^C:INDEX :: D
 
@@ -22,17 +24,19 @@ $KEY:P=GOTO:DoomRL Arsenal
 
 - [A] *Darkening Episode 2, (The)						MegaWADs
 - [B] *Dark Tide										Onesies
-- [C] *dead.air											Onesies
-- [D] *dead.wire										Onesies
-- [E] *Cabal Series: Derelict Station					5 Years of Doom
-- [F] *Disjunction										Episodes
-- [G] *Don't Be A Bitch Remastered						Multiplayer
-- [H] *Doom 2 the Way id Did							MegaWADs
-- [I] *DOOM 64											Commercial DOOM
-- [J] *DOOM II											Commercial DOOM
-- [K] *DOOM II: Hellscape								Episodes
-- [L] *Doom the Way id Did								MegaWADs
-- [M] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [N] *DOOM(4) for DooM									Mods
-- [O] *Doomed Space Wars								Episodes
-- [P] *DoomRL Arsenal									Mods
+- [C] *Dark Universe, Part 1							Episodes
+- [D] *dead.air											Onesies
+- [E] *dead.wire										Onesies
+- [F] *Cabal Series: Derelict Station					5 Years of Doom
+- [G] *Dimension of the Boomed							Episodes
+- [H] *Disjunction										Episodes
+- [I] *Don't Be A Bitch Remastered						Multiplayer
+- [J] *Doom 2 the Way id Did							MegaWADs
+- [K] *DOOM 64											Commercial DOOM
+- [L] *DOOM II											Commercial DOOM
+- [M] *DOOM II: Hellscape								Episodes
+- [N] *Doom the Way id Did								MegaWADs
+- [O] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [P] *DOOM(4) for DooM									Mods
+- [Q] *Doomed Space Wars								Episodes
+- [R] *DoomRL Arsenal									Mods

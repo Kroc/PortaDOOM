@@ -1,0 +1,77 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\preacher\play-preacher.ini"
+$KEY:T=SHELL:wads\episodes\preacher\preacher.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/preacher
+
+:Preacher											* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>11>29	  Author : _Darch_
+:Levels   : *9			   Modes : *Single, Co-op, Deathmatch
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+`Preacher` is a 9 map `boom` compatible episode. You play as a mad preacher who hears a voice in his head impelling him to take down all evil in the World.
+
+Layouts are open and non linear, and start spots are randomized.
+
+There are graphic and sound replacements, but weapon and enemy behaviours are untouched.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: Scratch
+*Build Time				: ..
+*Editor(s) used			: `Doom Builder 2` , `Slade`, `WhackEd`, `Paint.net`, `SoundForge`
+*Known Bugs				: MAP 06 sky bugs with `PRBoom` 2.5.1.3
+*May Not Run With...	: `Chocolate Doom`
+
+:Credits
+:-------------------------------------------------------------------------------
+*Mapping				: _Darch_
+
+*Music					: Songs by Those Poor Bastards
+						  Midi music by _Darch_
+
+*Testing				: _Scifista42_, _Demonologist_
+
+*Textures from			: `Shadow of The Colossus`, `ICO`, `American Mgee's Alice`, `BitterSweet`, `Voodoo Guns`, `Sunlust`, `NeoDoom`
+
+*Sprite Credits			: `Blood`, `Powerslave`, _Darch_, _Ezepov_, _Joey TD_
+
+*Sky					: _Skillsaw_
+
+*Intermission Screen	: _Alex K_
+
+*Palette				: `Brigandine`
+
+*Sounds					: `Blood`, `DeathTrap Dungeon`
+
+*Map Listing:
+
+- MAP01 - `"Pagan Temple"`
+- MAP02 - `"Babel"`
+- MAP03 - `"Sacrificial Altar"`
+- MAP04 - `"Dark Tower"`
+- MAP05 - `"40 Days in The Desert"`
+- MAP06 - `"Noir"`
+- MAP07 - `"Sanctuary"`
+- MAP08 - `"Witch Hunt"`
+- MAP09 - `"Crown of Thorns"`
+- MAP10 - `"Judgment Day"` (credits)
+
+*Music Listing:
+
+- Title - `"Glory Amen"` by Those Poor Bastards
+- Intermisson - `"Swallowed by Sin"` by Those Poor Bastards
+- MAP01 - `"Sabbath with Organ"` by _Darch_
+- MAP02 - `"Preacher Theme"` by _Darch_
+- MAP03 - `"Die Motherfucker Die"` by _Darch_
+- MAP04 - `"Sabbath with Organ 2"` by _Darch_
+- MAP05 - `"That Arabic One"` by _Darch_
+- MAP06 - `"Black and White"` by _Darch_
+- Text Screen - `"Sacrificial Lamb"` by Those Poor Bastards
+- MAP07 - `"Memories from the Day I Died"` by _Darch_
+- MAP08 - `"Jazzy Metal"` by _Darch_
+- MAP09 - `"Colonizators"` by _Darch_
+- MAP10 - `"The Dust Storm"` by Those Poor Bastards

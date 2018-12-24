@@ -1,0 +1,41 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\dupart1\play-dupart1.ini"
+$KEY:T=SHELL:wads\episodes\dupart1\DUpart1.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dupart1
+
+:Dark Universe, Part 1								* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>04>02	  Author : _Paul "PAYLOAD4367" Dechene_
+:Levels   : *6			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+6 map pack for `GZDoom`/`DOOM2`.
+
+Small to Medium sized maps. Maps can be completed rather quickly (just find the switch that opens the exit and then find the exit), with lots of secrets, switches, scripted events, and hidden areas full of the stuff you might need to survive the next map.
+
+HMP and UV difficulties available.
+
+MOUSE LOOK REQUIRED. NO JUMPING/ CROUCHING.
+Intended for vanilla monsters and weapons but works well with most mods.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 6 months
+*Editor(s) used			: `GZDoom builder`, `Slade3`, `Corel Photo`, `Cakewalk`
+*May Not Run With		: non limit removing
+*Tested With			: `GZDoom` 2.1 / 3.0/ 3.2.4
+
+:Credits
+:-------------------------------------------------------------------------------
+- Space skyboxes by _Doomenator_
+- `Dark Forces` Textures by _A Limes Zen Sky_
+- Some middle textures from `Ancient Aliens`
+- Switches and mid textures from `NMN CORP` texture pack
+- Breakable glass textures and sprites by _enjay_ (with a great edit by _cortlong50_)
+- Sounds: _BadMojo_, Sound Ideas, _BouncyTEM_
+  Orangefreesounds.com, Free-loops.com,
+  Freesoundeffects.com (for ambient effects)

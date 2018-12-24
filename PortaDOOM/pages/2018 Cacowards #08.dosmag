@@ -1,0 +1,26 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.VI
+$KEY:6=GOTO:Struggle - Antaresian Legacy
+
+^C:2018 CACOWARDS :: TOP 10 pt.VI
+
+:-------------------------------------------------------------------------------
+
+:[6] Struggle - Antaresian Legacy - _antares031_
+:===============================================================================
+
+`Struggle` is probably the biggest, fattest project released this year. It is a full megawad (33 maps, actually) for limit removing vanilla engines that starts relatively small, but quickly expands into the 30+ minutes per map territory and after a palate-cleansing dose of early episode 3 quickies ends with some near-hour-long beasts. Solo mapper megawads are always a Herculean task, but _antares_ truly didn't hold back here. Earthly techbases, industrial complexes and outside locations, it's all eye candy. The final maps are breathtaking massive temples in the vein of _Manbou_'s single-colored ornate structures in `Water Spirit` or `A Resplendent Emerald Green` from `JPCP`.
+
+Somewhat contrasting with the modern, dare I say trending look, is _antares_' decision to touch up enemies with recoloring and mix in a bunch of guest stars from other games, mostly the _Raven_ family cousins. On top of that he replaces the entire arsenal with original sprites from new weapon toys! The result doesn't look entirely professional, but lends an entertaining charm of oldschool sprite replacement projects. Except they're no mere sprite replacements, are they?
+
+The most impressive feature of `Struggle` is the way it rebalances traditional `Doom` gameplay with deep `Dehacked` changes. Weapons behave entirely differently - damage and speed values tweaked, rocket launcher sharing ammo with the new BFG that leaves the player with tons and tons of ammo for the plasma-replacing machine gun, pistols akimbo instead of chaingun... all in all the Doomguy dishes out hurt at a much faster pace. And isn't he lucky, because the enemy ensemble got beefed up across the board as well! Even the basic zombieman poses a threat with his chaingunner-style uninterrupted burst-fire pistol. The revenant shoots non-homing but much faster rockets now. The baby spiders are hitscanners and their momma... well, let's say the odds of the Gotcha fight changed drastically. We meet invisible cacos, lizardmen shooting chains of fireballs, repurposed `Heretic` and `Hexen` antagonists and more.
+
+In this redefined battleground, _antares_ strikes a balance and our even glassier cannon hero cleaves through hordes of monsters at an improved pace, so with proper weapon selection even larger walls of meat don't get tedious to clear. I'd say `Struggle` and its new gameplay shines the most in chaotic large battles with plenty of space to dodge and enemy reinforcements teleported in whenever you look at a switch funny. And luckily enough we get plenty of that, so if you're a fan, dig in. But be warned, this is definitely not a megawad for one-sitting playthrough.
+
+^R- _dew_
+
+:===============================================================================
+*[6] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/best2/
+:source [#: www.doomworld.com/cacowards/2018/best2]

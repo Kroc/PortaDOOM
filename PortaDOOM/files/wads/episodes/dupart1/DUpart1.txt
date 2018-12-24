@@ -1,0 +1,84 @@
+===========================================================================
+Archive Maintainer      :
+Advanced engine needed  : GZDOOM
+Primary purpose         : Single play
+===========================================================================
+Title                   : DARK UNIVERSE-part 1
+Filename                : DUpart1.zip
+Release date            : 4/2/2018
+Author                  : Paul Dechene (PAYLOAD4367)
+Email Address           : [redacted]
+Other Files By Author   : Dark Encounters(32 map mega-wad) - drkenctr.zip
+                          Dark Invaders (single map) - drkinvds.zip
+                          Test Subject 43 (6 map pack) - testsb43.zip
+
+Description             : 6 map pack for GZdoom/Doom2.
+                          
+                          Small to Medium sized maps. Maps can be completed
+                          rather quickly (just find the switch that opens the
+                          exit and then find the exit), with lots of secrets,
+                          switches, scripted events, and hidden areas full of
+                          the stuff you might need to survive the next map.
+                          HMP and UV difficulties available.
+		
+                          MOUSE LOOK REQUIRED. NO JUMPING/ CROUCHING. Intended for vanilla monsters 
+                          and weapons but works well with most mods.
+
+Additional Credits to   : Space skyboxes by Doomenator.
+                          Dark Forces Textures by A Limes Zen Sky
+                          Some middle textures from Ancient Aliens
+                          Switches and mid textures from NMN CORP texture pack
+                          Breakable glass textures and sprites by enjay (with a great edit by cortlong50)
+                          Sounds: BadMojo, Sound Ideas, BouncyTEM
+                          Orangefreesounds.com, Free-loops.com, 
+                          Freesoundeffects.com (for ambient effects).
+===========================================================================
+* What is included *
+
+New levels              : 6
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP 01 - MAP 06
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 6 months
+Editor(s) used          : GZDoom builder, Slade3, Corel Photo, Cakewalk
+May Not Run With        : non limit removing
+Tested With             : GZDoom 2.1 / 3.0/ 3.2.4
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+

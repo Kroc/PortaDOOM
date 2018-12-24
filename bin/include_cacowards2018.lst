@@ -26,3 +26,18 @@ files\config\default.zdoom.ini
 
 pages\Home #??.dosmag
 pages\2018 Cacowards #??.dosmag
+
+pages\Avactor.dosmag
+files\wads\episodes\avactor\
+
+pages\Dark Universe Part 1.dosmag
+files\wads\episodes\dupart1\
+
+pages\The Adventures of Square.dosmag
+files\wads\SHAREWARE\square\
+
+pages\Preacher.dosmag
+files\wads\episodes\preacher\
+
+pages\Dimension of the Boomed.dosmag
+files\wads\episodes\dotb\

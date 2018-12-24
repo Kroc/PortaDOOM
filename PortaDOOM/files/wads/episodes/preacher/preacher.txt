@@ -1,0 +1,136 @@
+===========================================================================
+Advanced engine needed  : Boom compatible
+Primary purpose         : Single player
+===========================================================================
+
+Title                   : Preacher
+Filename                : preacher.zip
+Release date            : 11/29/18
+Author                  : Darch
+Email Address           : [redacted]
+Other Files By Author   : Pirate Doom
+                          We're All Dead Here
+Misc. Author Info       : ..
+Description             : Preacher is a 9 map boom compatible episode. You play
+                          as a mad preacher who hears a voice in his head 
+                          impelling him to take down all evil in the World.
+                          
+                          Layouts are open and non linear, and start spots are
+                          randomized.
+					  
+                          There are graphic and sound replacements, but weapon  
+                          and enemy behaviours are untouched.
+
+===========================================================================
+** Credits **
+
+Mapping                 : Darch
+
+Music                   : Songs by Those Poor Bastards
+                          Midi music by Darch
+
+Testing                 : Scifista42
+                          Demonologist
+
+Textures from           : Shadow of The Colossus
+                          ICO
+                          American Mgee's Alice
+                          BitterSweet
+                          Voodoo Guns
+                          Sunlust
+                          NeoDoom
+
+Sprite Credits          : Blood
+                          Powerslave	
+                          Darch
+                          Ezepov
+                          Joey TD
+
+Sky                     : Skillsaw
+
+Intermission Screen     : Alex K
+
+Palette                 : Brigandine
+
+Sounds                  : Blood  
+                          DeathTrap Dungeon               
+
+
+Map Listing             : MAP01 - "Pagan Temple"
+                          MAP02 - "Babel"
+                          MAP03 - "Sacrificial Altar"
+                          MAP04 - "Dark Tower"
+                          MAP05 - "40 Days in The Desert"
+                          MAP06 - "Noir"
+                          MAP07 - "Sanctuary"
+                          MAP08 - "Witch Hunt"
+                          MAP09 - "Crown of Thorns"
+                          MAP10 - "Judgment Day" (credits)
+                         
+                          
+Music Listing           : Title - "Glory Amen" by Those Poor Bastards
+                          Intermisson - "Swallowed by Sin" by Those Poor Bastards
+                          MAP01 - "Sabbath with Organ" by Darch
+                          MAP02 - "Preacher Theme" by Darch
+                          MAP03 - "Die Motherfucker Die" by Darch
+                          MAP04 - "Sabbath with Organ 2" by Darch
+                          MAP05 - "That Arabic One" by Darch
+                          MAP06 - "Black and White" by Darch
+                          Text Screen - "Sacrificial Lamb" by Those Poor Bastards
+                          MAP07 - "Memories from the Day I Died" by Darch
+                          MAP08 - "Jazzy Metal" by Darch
+                          MAP09 - "Colonizators" by Darch
+                          MAP10 - "The Dust Storm" by Those Poor Bastards
+                                
+                          
+===========================================================================
+
+* What is included *
+
+New levels              : 09
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : MAPINFO, DECALDEF, GLDEFS, etc.
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP10
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Scratch
+Build Time              : ..
+Editor(s) used          : Doom Builder 2 , Slade, WhackEd, 
+                          Paint.net, SoundForge
+Known Bugs              : MAP 06 sky bugs with PRBoom 2.5.1.3
+May Not Run With...     : Chocolate Doom
+                          
+                          
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

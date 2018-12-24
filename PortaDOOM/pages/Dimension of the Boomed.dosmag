@@ -1,0 +1,37 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\dotb\play-dotb.ini"
+$KEY:T=SHELL:wads\episodes\dotb\DOTB_RC3.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/92574-dimension-of-the-boomed/
+
+:Dimension of the Boomed							* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>10>15	  Author : _Stephen "Urthar" Wadsworth_
+:Levels   : *9 			   Modes : *Single, Co-op?
+:Requires : *mbf		Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+Seven delicious helpings of `Quake`-flavoured `DOOM`!
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: `QUAKE` textures, `DOOMII` sprites, `QTEST` sprites
+*Build Time				: 2 years on and off
+*Editor(s) used			: `GZDoomBuilder`, `SLADE3`, `WhackEd4`
+*Known Bugs				: None
+*May Not Run With		: Non `MBF` compatible source ports
+*Tested With			: `PrBoom+` `Doom-Retro` `Eternity` `ZDoom` `GZDoom` `Zandronium`
+
+:Credits
+:-------------------------------------------------------------------------------
+*Additional Credits to:
+
+- Shambler sprites generated from _Skiffy_'s updated Shambler MDL
+- Spawn sprites generated from `Arcane Dimensions` updated Spawn MDL
+- Scrag sprites directly lifted from _Eriance_'s Wicked monster
+- Minigun pickup sprite from `Tormentor667`'s Minigun
+
+*Additional Thanks to:
+
+- All those at Doomworld who provided feedback and encouragement

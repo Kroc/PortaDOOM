@@ -1,0 +1,117 @@
+$THEME=BLACK
+$TITLE=The Side Column pt.I
+
+^C:2018 CACOWARDS :: THE SIDE COLUMN pt.I
+
+:-------------------------------------------------------------------------------
+
+:DID YOU KNOW...
+:===============================================================================
+$KEY:F=URL:https://www.doomworld.com/forum/topic/98922-kristian-aro-doom-millennium-maps-mini-episode-edit-now-with-screenshots/
+- `Mordeth` was still not released in 2018\\despite over twenty years of development?
+
+- After over 20 years of development, some of the planned maps\\for `Doom Millennium` were [F: finally released]?
+
+- December 10th, 2018 marked the 25th anniversary of `DOOM`?\\...Actually, yeah, you probably did.﻿
+
+
+:PLAY IT, BUY THE BOOK
+:===============================================================================
+$KEY:G=URL:http://fabiensanglard.net/gebbdoom/
+$KEY:W=URL:https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book_Wolfenstein?id=hel6DwAAQBAJ
+$KEY:B=URL:https://en.wikipedia.org/wiki/Doom_engine#Binary_space_partitioning
+While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release date of _Fabien Sanglard_'s [G: Game Engine Black Book: DOOM], which picks up where the previous [W: Wolf3D tome] left off, and delves into the technological and historical guts of the `DOOM` engine. If you are interested in `DOOM` lore and trivia, then it is required reading. Did you know _John Carmack_'s love affair with the [B: BSP tree] didn't even begin with `DOOM` but with `Wolf3D` for SNES?... but I digress.
+
+
+:RECOMMEND ME A... COFFEE BREAK MAPSET
+:===============================================================================
+The DBP series, which ran for a good chunk of this past year, gave players a monthly dose of small mapsets featuring classic `Doom` gameplay, with an emphasis on working within a specific theme. `Monuments of Mars`, set in a series of sepiatone bases in a hellish Martian landscape, is the most free-flowing and fast-paced of the series, offering players the gameplay equivalent of flying down a steep hill on a bike. `Coffin Curse`, by contrast, used its library/crypt theme to put more emphasis on whimsical details and atmosphere, with more treacherous and gimmick-oriented gameplay to go along with it (who doesn’t love barrel-themed maps?). Either one is an excellent way to spend a lazy afternoon.
+
+
+:RECOMMEND ME A... HARDCORE CHALLENGE MAPSET
+:===============================================================================
+`Flotsam` is a set collected by maxer _MrZZul_ aka _Killer5_ and friends (_Benjogami_, _bemused_, _Scotty_, _Nirvana_, _Archi_), offering a variety of mostly short, mostly difficult maps that will appeal to the masochists and the challenge aficionados of the community.
+
+After a bout of development hell, `Slaughterfest 3` -- originally `Slaughterfest 2013` (!) -- is out, and worth a look even for intermittent players of high-bodycount stuff. Alongside the behemoths and the demanding tests, there are shorter, snappier maps that work as effective ease-ins. Devoid of the "monotextured boxes with monsters" occasionally seen in `SF2011`, `Slaughterfest 3` is a well rounded, polished set. Just don't set out for completionism unless truly motivated; it is a full megawad plus change, and there are some very long maps.
+
+
+:MINI MOD SAFARI
+:===============================================================================
+Every year, there's always a slew of people with gigantic projects that want to sweep everyone and everything away, but there's always a bunch of people that just wanna make something small. While often not big enough for awards, many times there's a handful of tiny mods that just make things...neat.
+
+$KEY:A=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59889
+- [A: autoautosave] is a must-have for anyone who frequently forgets to save across long periods of time but doesn't want to resort to savescumming, automating the saving process every X minutes under Y conditions. Extremely useful!
+
+$KEY:S=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61742
+- [S: Super Mario Agilities] is for those who like having a little more mobility options for `DOOM`, accentuating Doomguy's limited jumping and giving him the ability to leap high and even stomp on enemies!
+
+$KEY:D=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59887
+- [D: Demon Counterstrike] is simple in idea and in execution: As you go through a level, areas you've visited will have demons and small items populate in the areas again. Backtracking will now result in surprise ambushes or equipment. Fun!
+
+$KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61666
+- [L: Liquidated Doom] takes `DOOM` and sets it entirely underwater, purely through `ZScript`. Perhaps the most out-there of all the modlets on this list, but it does mix things up quite nicely.
+
+$KEY:C=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=60456
+- [C: Champions] is a small and crazy-compatible enemy mod that provides variations of existing monsters without replacing them, making for nasty surprises in otherwise-normal encounters. Neat!
+
+$KEY:I=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61047
+- For those who want to play DM maps in singleplayer, or really liked `Skulltag`'s Invasion mode, [I: Supreme Invasion] converts DM maps into pseudo-invasion maps, spawning enemies in waves to hack down the player.
+
+:DOS BOOT
+:===============================================================================
+The original DOS versions of `DOOM` may be buried, but they're not quite dead. 2018 saw small flickers of life for the executables that started it all. Espi Award Emeritus _fraggle_ has been laying the foundations for cross-port multiplayer, compatible with DOS `DOOM` over the IPX protocol(!), with a long term eye towards resurrecting the classic multiplayer frontend `DWANGO`. On-again-off-again classic EXE hacker _xttl_ returned only the other day with word of a new breakthrough: the ability to create a "loader" to patch arbitrary code into the DOS executable. Your humble webmaster _Linguica_ started his own vanilla EXE hacking hobby and managed to create a DOS EXE for `Selfie Doom` that actually saves the selfies as screenshots. Watch this space in the future - can a `DeHackEd` 4.0 be far off?
+
+
+:WHAT ARE WE STILL WAITING FOR?
+:===============================================================================
+Does this enormous list suggest the boundless enthusiasm for `DOOM` and its relations, or the hubris that will inevitably lead to the community's downfall? Is this the same boilerplate text as last year's column? The answer to at least one of these questions is "yes."
+
+- `A Boy and His Barrel`
+- `Action Doom 3`
+- `Adventures of Square E3`
+- `Amiga Demo Party`
+- `Ashes 2063 E2`
+- `Autobiographical Architecture`
+- `Back to Saturn X E3`
+- `Cereal Killer`
+- `CyberShade`
+- `Dark Universe E2`
+- `Darkmoon`
+- `Deus Vult II-2`
+- `Doom 2 the Way id Did: The Lost Episodes`
+- `DOOM GTS`
+- `Elementalism`
+- `Eviternity`
+- `Favillesco E3`
+- `Final Doom the Way id Did`
+- `Fortune's Run`
+- `Heretic: Curse of Darkness`
+- `HocusDoom`
+- `HPack`
+- `Infinite Void`
+- `Interstellar Enforcer`
+- `Kama Sutra 2`
+- `kbdoom`
+- `Lost Civilization`
+- `Mordeth E2`
+- `Necromantic Thirst`
+- `Panophobia`
+- `Perdition's Gate Resurgence`
+- `Return to Hadron E3`
+- `Return to Necropolis`
+- `Revelations of Doom`
+- `The Shores of ZDoom`
+- `Strife: Mothership`
+- `Supplice`
+- `Switcheroom 2`
+- `Tarnsman's Projectile Hell`
+- `Threshold of Pain 2`
+- `TNT 2: Devilution`
+- `UAC Ultra 2`
+- `Ultimate Doom in Name Only`
+- `Vela Pax`
+- `WolfenDoom: Blade of Agony E3`
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/
+:source [#: www.doomworld.com/cacowards/2018]

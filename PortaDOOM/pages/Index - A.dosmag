@@ -6,6 +6,7 @@ $KEY:D=GOTO:Aliens TC
 $KEY:E=GOTO:Alpha Accident - Terra Nova
 $KEY:F=GOTO:Ancient Aliens
 $KEY:G=GOTO:Master Levels #02
+$KEY:H=GOTO:Avactor
 
 ^C:INDEX :: A
 
@@ -18,3 +19,4 @@ $KEY:G=GOTO:Master Levels #02
 - [E] *Alpha Accident: Terra Nova						Episodes
 - [F] *Ancient Aliens									MegaWADs
 - [G] *Master Levels: Attack							Commercial DOOM
+- [H] *Avactor											Episodes

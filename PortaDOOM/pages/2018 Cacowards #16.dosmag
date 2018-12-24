@@ -1,0 +1,99 @@
+$THEME=BLACK
+$TITLE=Other Awards
+$KEY:T=URL:https://www.moddb.com/mods/total-chaos
+$KEY:D=URL:https://github.com/anotak/doombuilderx
+$KEY:M=GOTO:Mr. Friendly
+$KEY:R=URL:https://www.doomworld.com/profile/16250-revae/
+
+^C:2018 CACOWARDS :: OTHER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:Mordeth Award: Released project with the longest "development time"
+:===============================================================================
+:*[T] Total Chaos - _wadaholic_
+:-------------------------------------------------------------------------------
+! *NOTE:* Sorry, `Total Chaos` could not be included in `PortaDOOM` due to it being 1.5GB in size! Download it from the website by pressing [T]
+
+The earliest mentions of `Total Chaos` date back to the `ZDoom forums` in the summer of 2008. _wadaholic_ posted some proof-of-concept images of his project and how volumetric lighting and fog could be created in the `GZDoom` engine using additive sprites and textures. It was an interesting demonstration video, but countless unfinished projects have come and gone after a promising mockup. Over the course of the next decade, teaser videos, screenshots, and assets would sporadically appear on the `Total Chaos` website showcasing the progress of the project. This began in earnest starting in 2012 but interest in `Total Chaos` had waned as the `DOOM` community completely forgot about the project... it had been four years of development to this point. It was so forgotten that we completely ignored the project for our “What are we still waiting for?” featurette in every edition of the Cacowards!
+
+That all changed in 2016 when _wadaholic_, after eight years of development work, released the very first demo for `Total Chaos`. We were blindsided by the significance of this and even contemplated considering the mod for a Cacoward that year because we were almost sure it would never be completed. Fast forward another two years and, to the surprise of everyone and true to his word, _wadaholic_ released the completed version of one of the single most ambitious `DOOM` projects.
+
+Several past Mordeth award winners have had decade long development cycles, but what might be the most impressive accomplishment of `Total Chaos`’ lengthy development is the unbelievable consistency from start to finish. The concept, themes, and gameplay that _wadaholic_ laid out in that very first post in 2008 lined up exactly with what was released ten years later. In a community where projects go through numerous lead developers, level remakes, and visual redesigns, it’s a testament to the vision of its creator who stuck to his original vision and saw it brought to fruition. While `Total Chaos` challenges our general understanding of what constitutes a `DOOM` project, its lengthy development within the community leaves an indelible mark and we would never deny this project its Mordeth due.
+
+^R- _Scuba Steve_
+
+With all that said, `Total Chaos` puts us in an awkward position. While the Mordeth Award has a long and proud history, it's still not a "real" Cacoward. And while `Total Chaos` is a very intriguing project, it's not one that is even recognizably `"DOOM"` in any way. Which makes us wary to consider it for a proper Cacoward - but we still like it! So the only solution is to invent yet another new award, the possibly-reoccuring:
+
+
+:The Spaceship of Theseus: A noteworthy project that has become so removed from DOOM that we're not even sure what to consider it
+:===============================================================================
+:*[T] Total Chaos - _wadaholic_
+:-------------------------------------------------------------------------------
+There’s no denying it: `GZDoom` isn’t just a source port anymore, it’s a complete indie game making engine. If you don’t believe something with such humble beginnings can accomplish so much, check out the development of `Operation Echo`, `The Forestale`, or `Hedon`. Or better yet, play `Total Chaos`, which was released this Halloween and has already shown just how much the engine is capable of.
+
+`Total Chaos` is theoretically a `DOOM` mod – and we emphasize “theoretically” here. It’s a game developed in a source port of the `DOOM` engine, eliminating all of the features of a `DOOM`-engine game and filling in the void with all kinds of more modern features created for the port. Sprites are gone, 3D models are in. All the enemies, all the mechanics, are something you’d expect to find in a modern indie game. When we were trying to figure out what on earth to do with this strange and beautiful hybrid of a game, _Scuba Steve_ asked us: “So `Total Chaos` is the answer to the ‘`DOOM` Ship of Theseus’?” I responded that it was more like someone had taken the Ship of Theseus, sunk it, and built a spaceship in its place.
+
+Is a game like this even `DOOM` anymore? We’re gonna go with “no,” in all honesty. We could no more judge this as a Cacoward contender than we could a `DOOM 3` mod. But since it’s a game that has its roots in the `DOOM` community, and since it’s so impressive, it’s not something we’d want to ignore entirely either.
+
+“Impressive” is a word that comes up a lot when people talk about `Total Chaos`. Everything about it is deeply polished and beautifully executed (at least from the perspective of someone who rarely plays horror games). The environments are intimidating, the sound design is chilling, and many of the monsters are truly terrifying. Above all, a huge amount of love and attention has been poured into the pacing and the design and presentation of encounters. Whether you’re searching for a switch in a cavern full of sleeping spider-monsters with your radiation counter steadily ticking upward or trying to follow a hand-scrawled map through a dark network of tunnels with only your flares to save you, there are some unforgettable scares to be had here.
+
+In the meantime, you’ll be scrounging for supplies, building items, and managing space in your limited inventory, which adds another level of strategy (and worry) as you try to avoid or defeat the various horrors lurking about. The whole thing has a great sense of realism to it, a feeling of being weak against deadly opposition, that’s entirely fitting. The extensive game world also leaves you with a sense that there are some pretty deep secrets to be uncovered – and indeed, the developer has hinted that there may be a less grim ending for people who are willing to uncover all those secrets.
+
+`Total Chaos` isn’t the first fully 3D indie game made in `GZDoom`’s cybernetically augmented engine, but it’s probably the first that felt professional enough to receive widespread attention outside of the `DOOM` community – and I doubt it will be the last. It remains to be seen how `GZDoom` will compete with the commercial game making tools, but we’re looking forward to seeing how this new community evolves.
+
+^R- _Not Jabba_
+
+:Codeaward: Most noteworthy programming effort of the year
+:===============================================================================
+:*[D] Doom Builder X - _anotak_
+:-------------------------------------------------------------------------------
+One aspect of the Codeaward that makes it somewhat unusual is that it lends itself to a more forward-thinking perspective. Last year `OBLIGE` won for an effective lifetime achievement award, necessitated by the author bringing the project to a close. But in general, the Codeaward is intended to recognize something different from basically any other award we have. WADs and mods are expected to be finished before we deem them worthy for consideration - after all, they're to be judged as whole creative works on their own merits. Programming efforts like source ports and tools, on the other hand, cannot be judged in a vacuum. Their value is derived, first and foremost, from what others can do with them, now and in the future.
+
+Purely on its merits, `Doom Builder X`, by 2017 Cacoward winner _anotak_, would be a very strong contender. `Doom Builder X` is not the most feature-stuffed `DOOM` editor ever made; that title still belongs to `GZDoom Builder`, or, alternately, `GZDB-BF`, its spiritual continuation. `Doom Builder X`, however, is the only modern `DOOM` map editor dedicated primarily to making the user's experience better. _anotak_ has meticulously pored over the `Doom Builder 2` codebase to fix bugs, memory leaks, or code snarls that cause persistent slowdown. The updated editor also includes more visible quality-of-life changes such as new hotkeys, more menu options, integration of `ZokumBSP`, and the ever-useful Automap, Sound Propogation, and Sound Environment modes.
+
+However, `Doom Builder X` has added another feature this year, and one that is more potentially revolutionary than anything since the original `Doom Builder` itself. `Doom Builder X` now includes the Lua scripting language, and _anotak_ has integrated it into the editor in such a way that a user can write a Lua script to interact with the map, edit geometry, place things, calculate statistics, or basically anything else a programmer might dream up. `Doom Builder X` is not the only tool to travel this path - the newest version of swiss-army-lump-editor `SLADE` also includes the first vestiges of Lua integration, but it still remains pretty threadbare.
+
+This is where I face the most trouble in writing the Codeaward, because I feel compelled to venture into speculation. Today, on the 25th birthday of `DOOM`, I have seen tools evolve from `DEU` to `Doom Builder X` and beyond, and I feel I must predict: the greatest transformation for `DOOM` editing I foresee in the next 25 years is with the introduction of tools that harness computing power and complexity in a more robust way, be it through embedded programming languages, or machine learning, or something we don't even know about yet; and which do so with the understanding that even the most powerful tool is hobbled if it's not also a joy to use. `Doom Builder X`, especially with its Lua integration, is a glimpse of that future today, and one that I hope sees more attention and development.
+
+^R- _Linguica_
+
+
+:Machaward: Most creative, unusual, or artistically compelling project
+:===============================================================================
+:*[M] Mr. Friendly - _JP LeBreton_
+:-------------------------------------------------------------------------------
+Who has ever looked at `DOOM` and thought, “how can I make this game go from bloody and brutal to a calm and sweet adventure?”
+
+Well, several people, actually- and they totally nailed the idea. Take for example, 2017's `Kill ‘Em With Kindness`- a single level that lets you pet puppies and make flowers dance. But if you’re not quite into that level of cute, and just want to take a nice stroll through some of your favorite `DOOM` levels, there’s mods like `MooD` and `Tourism Deluxe` (`Tourism Deluxe` also by _JP LeBreton_), which allow you to take in the scenery without having to shed blood (or worrying about the exit not opening because of scripts). And for those of you into ASMR, there’s a mod just for you- put on your favorite relaxing music and bring your SSG… purely for some soothing sound bites (bytes?).
+
+But the mod that really takes the cake is a mod known simply as `Mr. Friendly`. At first, you’re dropped into the map with little to no idea what to do. You have no weapons, just a fishing pole, a grabber thing, a texture zapper, and some funny-looking goggles. All the monsters simply walk around, and if you talk to them they’ll say various little snarky quips in a text box reminiscent of what you’d see on any early 2000s-era RPG game. As you move through the map, you’ll eventually meet a monster that will give you a quest. _JP_ cleverly introduces all of his neat little gadgets through these quests, allowing the player to understand how they work, which is often appreciated when we’re used to just… well… shooting things.
+
+Probably the best thing about this mod is the fact that it doesn’t try to cover up the original assets of the map- in fact, it embraces them. It’s highly entertaining to walk up to a green armor and see it referred to it as a t-shirt (Went to Hell and Back and All I Got was This!). You can also go fishing in any body of liquid. Watch out for the dopefish!
+
+So, if you’re ever in the mood just to kick back and relax instead of kicking demon ass, give `Mr. Friendly` a whirl. It’s compatible with all of your favorite `DOOM` IWADs and most custom vanilla levels, so you can customize your experience. And with the texture sampler tool, you can even re-texture the map any way you want to- even if it’s only temporary, you can redecorate the `Entryway` or paint `E1M8` red- and not with blood.
+
+_JP LeBreton_'s long and rich history with the gaming industry has gifted us with much more than his awesome mods- he's best known for his work on `Bioshock` and `Bioshock 2`, as well as his stint at _Double Fine_, where he recently announced he would be returning to work. That might mean a halt to development of `Mr. Friendly` for the time being, but his fruitful experiments with `DOOM` modding will undoubtedly make his future professional work all the more intriguing.
+
+^R- _Major Arlene_
+
+
+:Creator of the Year
+:===============================================================================
+:[R] _Revae_
+:-------------------------------------------------------------------------------
+First of all, you’re probably wondering about the name change. Well, there’s more to life than mapping, isn’t there? Or at least, there’s more to mapping than just the maps. Level designers have always had the main 10 Cacowards as an avenue for recognition, and have always been first to get the credit for the amazing work they’ve been involved in – and they deserve every bit of their accolades. But behind those successes are also the people whose work they build upon: the music composers, the texture artists, the spriters, the gameplay modders. Making a great project is often about all of those things, and this award should be too – though of course we won’t forget about the mappers.
+
+This year’s winner, _Revae_, is the whole nine yards – mapmaker, game designer, and pixel artist. The maps alone might be enough; here’s a mapper who’s managed everything from conventional fast-paced interweaving Doomy maps to lengthy adventure maps to clever puzzles and concept maps to boss arenas all within the same game, and all with a great flair for mood and storytelling. Maps like `“Mistory”` (E2M7) and `“Seeing Red”` (E2M6) show just how good _Revae_ is at conveying a whole world of ideas without words. And speaking as a mapper, anyone who can make a game this bloody and grim but also have the player reach the secret maps by rescuing puppies is someone I want to be when I grow up.
+
+Good sprite/texture artists are also very hard to come by, and sometimes when you want something done right, you’ve got to do it yourself. _Revae_ created nearly all of the art for `REKKR`, which in and of itself is a massive undertaking – and `REKKR` is a gorgeous game as a result of that hard work. The whole neo-retro-viking-steampunk aesthetic isn’t just a coat of paint, it’s the soul of the game. Brilliantly colorful, wonderfully varied, equal parts cute and dark, and with all sorts of great world-building baked into the textures alone, it’s simultaneously like nothing you’ve ever seen before and also a clear and unmistakable homage to an entire genre and era of games. The bestiary, too, is unexpectedly expansive for a game that theoretically only has `Ultimate DOOM`’s smaller number of actors to overwrite, and each one is beautifully hand-drawn. Dear reader, do you have any idea what it takes to make a complete set of monster sprites for a `DOOM`-engine game? I mean, Jesus.
+
+But even beyond all of that, it takes a huge amount of vision to create something like `REKKR` and see it through to completion. _Revae_ announced `REKKR` in September 2016 with just a few concepts and screenshots to show and released the game a little over a year and a half later, wrangling collaborators along the way. And it’s clear that the game they made was exactly the game they wanted to make, and the execution is every bit as great as the vision.
+
+`REKKR` wasn’t made by one person alone, of course. There were several worthy guest mappers, as well as a fantastic composer and an equally fantastic sound designer. But for the incredible amount of work they put into making `REKKR` the game it is, _Revae_ is no less than the Creator of the Year. Keep up the great work!
+
+^R- _Not Jabba_
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/others/
+:source [#: www.doomworld.com/cacowards/others]

@@ -1,13 +1,17 @@
 $THEME=RED
-$TITLE=2017
-$KEY:E=GOTO:2017 Cacowards
+$TITLE=2018
+$KEY:E=GOTO:2018 Cacowards
 
-:2017 CACOWARDS :: CACO2K17
+:2018 CACOWARDS :: CACOWARDS 25
 :-------------------------------------------------------------------------------
-*[E] Enter the 2017 Cacowards 
+*[E] Enter the 2018 Cacowards 
 :===============================================================================
-*TOP TEN:* lilith.pk3: _anotak_, Shadows of the Nightmare Realm: _YukiRaven_, No End in Sight: _NaturalTvventy_, _Xaser_ & _Lutz_, Dead.air: _Xaser_, Brigandine: _Viggles_, Counterattack: _Mechadon_, Legacy of Heroes: _Gaspe_, Saturnine Chapel: _dobu gabu maru_, Stardate 20x7: _Ribbiks_, Void and Rainbow: _Serious_MOod_ - *RUNNERS UP:* Rise of the Wool Ball: _MSPaintR0cks_, Return to Hadron Episode 2: _cannonball_, TNT: Revilution: Various, Waterlab GZD: _Enjay_, Disjunction: _floatRand_, Hexen - Curse of the Lost Gods: _Kristus_, Water Spirit: _Manbou_, Hellscape: _Chris Lutz_, Dark Tide: _Chris Lutz_
+- *TOP TEN:* `Avactor`: _Eradrop_, `Dark Universe Pt.1`: _Payload4367_, `The Adventures of Square Ep.2`: _BigBrik Games_, `Preacher`: _Darch_, `Dimensions of the Boomed`: _Urthar_, `Struggle - Antaresian Legacy`: _antares031_, `REKKR`: _Revae_ (et al), `Maskim Xul`: _Obsidian_, `Doom: The Golden Souls 2`: _Batandy_, `UAC Invasion: The Supply Depot`: _DooMknight_
 
-*Multiplayer Awards:* Pyrrhic: _hobomaster_, Progressive Duel 2: _Mechanix Union_
+- *RUNNERS UP:* `Exomoon`: _Deadwing_, `Man on the Moon`: _Yugiboy85_, `Umbra of Fate`: _YukiRaven_, `Port Glacia`: _an_mutt_, `Magnolia`: - _Ribbiks_, `The Alfonzone`: _Pinchy_, `Ashes 2063 Ep.1`: _Vostyok_, `Demonastery`: _Nootrac4571_, `Doom 404`: _Capellan_, `Cryogenics`: _bemused_
 
-*Gameplay Mod Awards:* Doom Delta: _DrPyspy_, Final Doomer: _Sgt. Shivers_ & _Yholl_ &c., High Noon Drifter: _TerminusEst13_ *Codeaward:* OBLIGE: _Andrew Apted_ *Mordeth Award:* TNT: Revilution: Various *Machaward* The Given: _dobu gabu maru_ *Mapper of the Year:* _dobu gabu maru_
+- *MULTIPLAYER AWARDS:* `Quake Champions: Doom Edition`: _DBThanatos_ & _Michaelis_
+
+- *GAMEPLAY MOD AWARDS:* `Guncaster`: _Pillowblaster_ (et al), `Netronian Chaos`: _Captain J_, `GMOTA`: _Combine_Kegan_ / *MORDETH AWARD* + *THE SPACESHIP OF THESEUS*: `Total Chaos`: _wadaholic_ / *CODEAWARD:* `Doom Builder X`: _anotak_ / *MACHAWARD:* `Mr. Friendly`: _JP LeBreton_
+
+- *CREATOR OF THE YEAR:* _Revae_
