@@ -1,21 +1,28 @@
 PortaDOOM.exe
-
+files\launcher.exe
+files\tools\xdelta3\
 files\wads\conversions\freedoom\
 
-files\launcher.exe
+files\wads\freedoom?.ini
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
 
-files\tools\xdelta3\
+files\ports\doom-retro\
+files\config\default.doom-retro.cfg
 
-files\config\default.choco-doom*.cfg
+files\ports\prboom-plus\
 files\config\default.glboom-plus.cfg
-files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
+
+files\ports\gzdoom_*\
+files\config\default.gzdoom.ini
+files\config\default.gzdoom-36.ini
+
+files\ports\zdoom\*
 files\config\default.zdoom.ini
 
-files\ports\choco-doom\
-files\ports\gzdoom-35_*\
-files\ports\prboom-plus\
-files\ports\zdoom\
 
 pages\Home #??.dosmag
 pages\2017 Cacowards #??.dosmag

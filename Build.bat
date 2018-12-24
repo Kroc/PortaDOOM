@@ -33,10 +33,11 @@ ECHO  Select Release to Build:
 ECHO:
 ECHO     [A]  All
 ECHO:
-ECHO     [B]  Cacowards: 2017
-ECHO     [C]  Cacowards: 2016
-ECHO     [D]  Cacowards: 2015
-ECHO     [E]  Cacowards: 5 Years of Doom
+ECHO     [B]  Cacowards: 2018
+ECHO     [C]  Cacowards: 2017
+ECHO     [D]  Cacowards: 2016
+ECHO     [E]  Cacowards: 2015
+ECHO     [5]  Cacowards: 5 Years of Doom
 ECHO:
 ECHO     [P]  PSX DOOM TC
 ECHO:
@@ -45,13 +46,14 @@ ECHO:
 
 SET "$="
 SET /P "$=Enter choice: "
-IF /I "%$%" == "A" GOTO :do_release_all
-IF /I "%$%" == "B" GOTO :do_release_cacowards2017
-IF /I "%$%" == "C" GOTO :do_release_cacowards2016
-IF /I "%$%" == "D" GOTO :do_release_cacowards2015
-IF /I "%$%" == "E" GOTO :do_release_5yearsofdoom
-IF /I "%$%" == "P" GOTO :do_release_psxdoomtc
-IF /I "%$%" == "X" GOTO :do_release_launcher
+IF /I "%$%" == "A" CALL :do_release_all
+IF /I "%$%" == "B" CALL :do_release_cacowards "2018"
+IF /I "%$%" == "C" CALL :do_release_cacowards "2017"
+IF /I "%$%" == "D" CALL :do_release_cacowards "2016"
+IF /I "%$%" == "E" CALL :do_release_cacowards "2015"
+IF /I "%$%" == "5" CALL :do_release_5yearsofdoom
+IF /I "%$%" == "P" CALL :do_release_psxdoomtc
+IF /I "%$%" == "X" CALL :do_release_launcher
 
 GOTO :menu
 
@@ -122,9 +124,10 @@ CLS & TITLE Creating PortaDOOM release...
 CALL :select_compression
 
 CALL :do_5yearsofdoom
-CALL :do_cacowards2015
-CALL :do_cacowards2016
-CALL :do_cacowards2017
+CALL :do_cacowards "2015"
+CALL :do_cacowards "2016"
+CALL :do_cacowards "2017"
+CALL :do_cacowards "2018"
 CALL :do_psxdoomtc
 CALL :do_launcher
 
@@ -149,101 +152,36 @@ PAUSE
 EXIT /B
 
 
-:do_release_cacowards2017
+:do_release_cacowards
 REM ============================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
-CALL :do_cacowards2017
+CALL :do_cacowards "%~1"
 PAUSE & GOTO:EOF
 
-:do_cacowards2017
+:do_cacowards
 REM ----------------------------------------------------------------------------
-ECHO * Make PortaDOOM_Cacowards2017 ...
+ECHO * Make PortaDOOM_Cacowards%~1 ...
 
 REM # the archive will be built without a base folder
 PUSHD PortaDOOM
 
 REM # swap over the homepages
 REN  "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2017.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
 IF ERRORLEVEL 1 PAUSE & EXIT
+COPY "pages\PortaDOOM Cacowards %~1.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 (
+	DEL "pages\Home #01.dosmag"
+	REN "pages\Home #01.old" "Home #01.dosmag"
+	PAUSE & EXIT
+)
 
 REM # 7ZIP
 CALL :zip ^
-	..\build\PortaDOOM_Cacowards2017.7z ^
-	..\bin\include_cacowards2017.lst ^
+	..\build\PortaDOOM_Cacowards%~1.7z ^
+	..\bin\include_cacowards%~1.lst ^
 	..\bin\ignore.lst
-IF ERRORLEVEL 1 PAUSE
-
-REM # restore the original home page
-DEL "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-POPD
-GOTO:EOF
-
-
-:do_release_cacowards2016
-REM ============================================================================
-TITLE Creating PortaDOOM release...
-CALL :select_compression
-CALL :do_cacowards2016
-PAUSE & GOTO:EOF
-
-:do_cacowards2016
-REM ----------------------------------------------------------------------------
-ECHO * Make PortaDOOM_Cacowards2016 ...
-
-REM # the archive will be built without a base folder
-PUSHD PortaDOOM
-
-REM # swap over the homepages
-REN  "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2016.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-REM # 7ZIP
-CALL :zip ^
-	..\build\PortaDOOM_Cacowards2016.7z ^
-	..\bin\include_cacowards2016.lst ^
-	..\bin\ignore.lst
-IF ERRORLEVEL 1 PAUSE
-
-REM # restore the original home page
-DEL "pages\Home #01.dosmag"
-REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-POPD
-GOTO:EOF
-
-
-:do_release_cacowards2015
-REM ============================================================================
-TITLE Creating PortaDOOM release...
-CALL :select_compression
-CALL :do_cacowards2015
-PAUSE & GOTO:EOF
-
-:do_cacowards2015
-REM ----------------------------------------------------------------------------
-ECHO * Make PortaDOOM_Cacowards2015 ...
-
-REM # the archive will be built without a base folder
-PUSHD PortaDOOM
-
-REM # swap over the homepages
-REN  "pages\Home #01.dosmag" "Home #01.old"
-COPY "pages\PortaDOOM Cacowards 2015.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
-
-REM # 7ZIP
-CALL :zip ^
-	..\build\PortaDOOM_Cacowards2015.7z ^
-	..\bin\include_cacowards2015.lst ^
-	..\bin\ignore.lst
-IF ERRORLEVEL 1 PAUSE
+IF ERRORLEVEL 1 ECHO "Failure in 7Zip" & PAUSE
 
 REM # restore the original home page
 DEL "pages\Home #01.dosmag"

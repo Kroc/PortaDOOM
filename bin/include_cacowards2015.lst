@@ -1,9 +1,8 @@
 PortaDOOM.exe
 files\launcher.exe
-
 files\tools\xdelta3\
-
 files\wads\conversions\freedoom\
+
 files\wads\freedoom?.ini
 files\wads\doom.ini
 files\wads\doom2.ini
@@ -20,6 +19,10 @@ files\config\default.prboom-plus.cfg
 files\ports\gzdoom_*\
 files\config\default.gzdoom.ini
 files\config\default.gzdoom-36.ini
+
+files\ports\zdoom\*
+files\config\default.zdoom.ini
+
 
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
