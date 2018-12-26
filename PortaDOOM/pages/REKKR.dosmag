@@ -1,0 +1,53 @@
+$NAV=Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\REKKR\play-rekkr.ini"
+$KEY:T=SHELL:wads\conversions\rekkr\rekcreds.txt
+$KEY:W=URL:http://manbitesshark.com/
+
+:REKKR												* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>09>20	  Author : _Revae_ et al
+:Levels   : *27 		   Modes : *Single, Co-op?, Deathmatch
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+You are a warrior recently returned from war, only to find your hometown massacred by hellish creatures. From there you set out to find revenge
+
+:Credits
+:-------------------------------------------------------------------------------
+*Music:
+
+$KEY:M=URL:https://soundcloud.com/psllbof
+- _Tom Jensen_, AKA _HexenMapper_
+  (_thespidersrepublic@hotmail.com_)
+  [M: soundcloud.com/psllbof]
+
+*Sounds:
+
+$KEY:S=URL:http://terminusest13.tumblr.com
+- _TerminusEst13_
+  [S: terminusest13.tumblr.com]
+
+*Maps:
+
+- E1M4 - _SuperCupcakeTactics_: Blade Swamp, _Revae_: Deathmatch arena
+- E1M7 - _LupinxKassman_: Dripstone Wharf, _Revae_: Deathmatch arena
+- E2M4 - _JawsInSpace_: Initial Layout, _Revae_: Finishing
+- E2M5 - _AngrySaint_
+- E2M6 - _VelcroSasquatch_
+- E3M4 - _AD_79_: Primary, _Revae_: Secondary
+- E3M7 - _TerminusEst13_/_Jimmy_: Seige, _Revae_: Deathmatch arena
+- E4M1 - _Bzzrak_: Village of Delusion, _Revae_: Deathmatch arena
+- E4M7 - _VelcroSasquatch_
+- Rest - _Revae_
+
+*Testing:
+- _Eric_, _Sarioya_, _Hexenmapper_, _Wartorn_,\\by default everyone listed as a mapper
+
+*Thanks to:
+
+- _/vr/_ for all the fun, _Marrub_ for early `dehacked` info, _Gageat_ for the hitscan dummy idea, _Popsoap10_ for fixing the GLDEFS, and anyone who gave me advice over the last few years and I forgot (sorry)
+
+- Also Doomworld and the Zdoom forums for pointing out all the faults
+

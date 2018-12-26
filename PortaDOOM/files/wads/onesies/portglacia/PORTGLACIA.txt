@@ -1,0 +1,70 @@
+===========================================================================
+Archive Maintainer      : (special instructions if any)
+Update to               : (original filename if updating an existing file)
+Advanced engine needed  : PRBoom+
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : Port Glacia
+Filename                : PORTGLACIA.WAD
+Release date            : 19/04/2018
+Author                  : James Collins
+Email Address           : [redacted]
+Other Files By Author   : 2017 Collection
+Misc. Author Info       : I mostly just make speedmaps, and this kind of fits that.
+
+Description             : Originally a map for Jimmy's Joy Of Mapping 5, I ended up pulling it as it had gotten too large
+                          and ambitious, and its size & length would have really bogged down what was already a hefty
+                          community project. This allowed me the chance to polish the map up to a higher standard, as the
+                          original JOM project limited mapping time to only 72 hours. Most of the map was done during that
+                          period, but more time was needed to re-do a couple areas and rework some progression, as well as
+                          complete detailing and thing placement. Funny that I get ~90% of this done in 3 days, then spend
+                          the next 4 months procrastinating on getting the rest done.
+
+Additional Credits to   : Jimmy for starting Joy Of Mapping, jazz mickle for AQUATEX, the 32in24 team for some additional
+                          resources, Fuzzball for the key sprites, Dragonfly for some additional texture edits, Fusion
+                          Faktor for the modules, and everyone who provided me with feedback on getting this complete!
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 3 Days for most of the map, then 4 months "polishing"
+Editor(s) used          : GZ Doombuilder, SLADE
+Known Bugs              : Built with Extended Nodes, so whatever cannot handle that will have to do without!
+Tested With             : PrBoom-Plus 2.5.1.4; ZDoom 2.8.1
+
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY not distribute this file in any format.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites:
+FTP sites:

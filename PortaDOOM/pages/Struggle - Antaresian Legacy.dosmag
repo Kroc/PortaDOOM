@@ -1,0 +1,42 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:launcher.exe "wads\megawads\strg\play-strg.ini"
+$KEY:T=SHELL:wads\megawads\strg\STRG.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/strg
+
+:Struggle - Antaresian Legacy						* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>08>19	  Author : _antares031_
+:Levels   : *32 		   Modes : *Single, Co-op
+:Requires : *no-limit	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+`Struggle - Antaresian Legacy` is a single-player mod for `DOOM 2` with limit removing compatibility. It features new weapons and monsters replacement with `DeHacked` patch. Some of original monsters are also slightly changed, so it's recommended to check out the info below, before you play this one. Thanks, and have fun. :)
+
+P.S.: Par time is based on UV-MAX, not UV-Speed
+
+*Story:
+
+You wake up in the morning and watch the news. The newsflash reports that the demonic invasion is suddenly begun. Millions of people were killed within less than an hour, and it's getting worse. You pick up your pistol & hammer, and see what's actually going on out there. You better struggle yourself to live than just stay at home during the invasion... I guess?
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: Basically, the idea was come from 2006
+*Editor(s) used			: `Doom Builder 2`, `XWE`, `WhackEd4`, `SLADE3`, `Photoshop CS3`, `Goldwave`
+*Known Bugs				: Possible slime trails and all-ghost effect in classic ports
+*May Not Run With		: Vanilla Doom source ports
+*Tested With			: `PrBoom+` 2.5.1.5 w/ complevel 2, `GZDoom` g3.4.0 (software renderer), `ZDaemon` 1.10.04, `Zandronum` 3.0
+
+:Credits
+:-------------------------------------------------------------------------------
+*Textures				: `Alien Vendetta`, `Plutonia`, `Textures.com` (a.k.a. `CGTextures`), + _Mechadon_ for source files of the skybox of the last episode
+
+*Sound Effects			: `Cry of Fear`, `Heretic`, `Hexen`, `Doom 3 RoE`, `NavyFIELD`
+
+*Sprites				: `Heretic`, `Hexen`, `Kingdom of the Wind`, +`Smooth Doom` for rocket explosion sprites
+
+*Music					: `Fortress 2`, `Fortress 2 Blue`, `Digimon Online`, `Dragon Force: The Day 3`, _Psychedelic Eyeball_
+
+See the *[T] .txt* file for detailed credits and game-info.

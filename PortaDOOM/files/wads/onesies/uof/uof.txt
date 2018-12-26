@@ -1,0 +1,178 @@
+===========================================================================
+Archive Maintainer      :
+Update to               : Umbra of Fate
+Advanced engine needed  : GZDoom 3.4.x or higher
+Primary purpose         : Single player
+===========================================================================
+Title                   : Umbra of Fate
+Filename                : uof.pk3
+Release date            : 1 May 2018
+Author                  : Alexa "YukiRaven" Jones-Gonzales
+Email Address           : alexa@partition36.com
+Other Files By Author   : Shadows of The Nightmare Realm, Extreme Terror,
+                          One Doomed Marine, Kill
+Misc. Author Info       : Jumping and crouching are not allowed (in fact, they
+                          should already be disabled via MAPINFO).  No rocket
+                          jumping on purpose, either.  I do recommend  binding
+                          "swim up", however.
+
+                          This requires GZDoom's hardware renderer with dynamic
+                          lighting and 3D models enabled.  Enabling bloom is
+                          encouraged, but not necessary.  Shadowmaps
+                          (gl_light_shadowmap) can be used as well, but there's
+                          some visual artifacts in some places with them
+                          enabled.
+
+                          **ALWAYS LOAD LIGHTS.PK3 AND BRIGHTMAPS.PK3 ALONG WITH
+                          THIS ADDON**  These files come with GZDoom.  Failure
+                          to do so will result in the levels not looking right,
+                          or being unplayable due to being too dark.
+
+                          Mouselook is considered a requirement.
+
+                          The dmflags and dmflags2 CVars should both be set to 0
+
+Description             : A man is on vacation and is out enjoying a day of
+                          hunting while his wife and infant son are at home.
+                          After a long and boring day, he starts walking back to
+                          his car, only to discover a ravine that wasn't there
+                          before.  Feeling an unusually strong urge to find out
+                          what lurks beyond the ravine, he jumps down into it
+                          and heads out into the dark, foggy forest night.
+
+Additional Credits to   : The Elementalism team for their feedback, with a
+                          special shout out to Bauul for his playtesting.
+                          Realm667 for their repositories, my wife for helping
+                          me with the story text.
+
+                          Additional credits are listed below since they're
+                          pretty long.
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes (written by me, available at www.partition36.com)
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Some new brightmaps, a titlemap
+Other files required    : lights.pk3 and brightmaps.pk3, both of which come with
+                          GZDoom
+
+
+* Play Information *
+
+Game                    : Doom2
+Map #                   : MAP01
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes, switchable in the map itself, designed for Hard
+                          (aka, skill 3, aka UV).
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About 11 months
+Editor(s) used          : GZDoomBuilder, SLADE, GoldWave, Reaper, Renoise, The
+                          Gimp, Waddle, Emacs, some custom tools, and probably a
+                          few others.
+Known Bugs              : I've seen the PyroSuccubus monster get stuck in world
+                          geometry occasionally.  Nothing game breaking.
+May Not Run With        : Anything other than GZDoom.
+Tested With             : GZDoom 3.3.2
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse with proper credit.  Permissions have been obtained
+from original authors for any of their resources modified or included in
+this file.  All music is under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 license and is Copyright 2017
+Alexa Jones-Gonzales (the author of these levels).
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+This PWAD contains select texture(s) and flat(s) that can originally be found
+in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+This PWAD contains textures from the Quake Revitaliation Project
+(http://qrp.quakeone.com).
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://alexa.partition36.com/files/doom/
+Gopher sites: gopher://nanako.mooo.com/1/doom
+
+
+* Additional Changes from Vanilla Doom, and Things That Aren't Bugs *
+
+- The chaingun has been replaced with an MP40 for aesthetic reasons.
+
+- The chaingunners no longer drop a chaingun.  This is because of the new MP40.
+  They now drop a few ammo magazines.
+
+- Some monsters are more aggressive than their stock Doom varieties
+
+- The shotgun's pellet pattern has been changed so that it's "tighter" and no
+  longer in a flat line.
+
+
+* Additional Credits *
+
+A lot of resources were taken from Realm667's site.  I've tried to keep track of
+everything I've used, so I sincerely apologize if I miss anyone here.
+
+* The creators of gothictx.wad.
+* François-Xavier Delmotte aka OgrO_FiX for Ogro Texture Pack for Doom 2.
+* Cage, Fox666, NeuralStunner, Zero X, and Diamond for CageTex2.wad.
+* Ozymandias81 and Metal Mammoth for the Heavy Metal FAKK II textures
+* Ozymandias81 for the Undying textures
+* Ceeb for the Witchaven texture pack
+* zrrion the insect for the Chasm texture pack
+* Raccoon and ItsNatureToDie for the Stained Glass Windows texture pack
+* Esselfortium and RottKing for the Medieval texture pack
+* Mechadon for the Box 'o Skies texture pack
+* Various authors for the decoration wads: Ghastly_dragon, Yuyu3, JoeyTD, JMAA,
+  MagicWazard, Captain Toenail, Gez, ShadesMaster, Shtbag667, Lucario, Captain
+  Awesome, Xaser, Necrodome, DavidRaven, zrrion the insect, Hexx, ETTiNGRiNDER.
+* Vader, Ghastly Dragon, Keksdose, and Sandypaper for the Bruiser Demon.
+* Eriance and Ghastly Dragon for the Avatar.
+* Eriance, Blue Shadow, Keksdose, and Sandypaper for the Wicked.
+* Eriance, Dredopp, and SandyPaper for the cultist.
+* Tormentor667, Eriance, and Ghastly Dragon for the Acolyte.
+* Eriance and Ghastly Dragon for the Disciple
+* Vader and Sandypaper for the Fleshspawn
+* YuraoftheHairFan, DavidRaven, AshuraTheChimera, Espi, Ebola, and Vader for the
+  Pyro Succubus.
+
+
+* Music Information *
+
+All music was written by YukiRaven, except for the ending music, which was
+composed by Erik Satie and recorded by YukiRaven.  The song titles are as
+follows:
+
+Title music:            Untitled
+Outdoor area:           Untitled
+The temple area:        Back to Darkness
+Crypt area:             Forlasu Cxian Esperon, Cxiuj ke Enirus Cxi Tien
+Inner sanctum area:     The Umbra of Fate
+Ending music:           Gymnopedies I (Lent et douloureux) by Erik Satie
+
+Full metadata information is embedded in the Ogg files themselves.

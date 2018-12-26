@@ -1,14 +1,16 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Complete Raven Series
-$KEY:B=GOTO:Return to Hadron
-$KEY:C=GOTO:Return to Hadron Episode 2
-$KEY:D=GOTO:Rise of the Wool Ball
+$KEY:B=GOTO:REKKR
+$KEY:C=GOTO:Return to Hadron
+$KEY:D=GOTO:Return to Hadron Episode 2
+$KEY:E=GOTO:Rise of the Wool Ball
 
 ^C:INDEX :: R
 
 :-------------------------------------------------------------------------------
 
 - [A] *Raven Series, (The Complete)						5 Years of Doom
-- [B] *Return to Hadron									Episodes
-- [C] *Return to Hadron Episode 2						Episodes
-- [D] *Rise of the Wool Ball							Total Conversions
+- [B] *REKKR											Total Conversions
+- [C] *Return to Hadron									Episodes
+- [D] *Return to Hadron Episode 2						Episodes
+- [E] *Rise of the Wool Ball							Total Conversions

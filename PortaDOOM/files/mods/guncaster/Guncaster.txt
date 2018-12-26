@@ -1,0 +1,70 @@
+HOW 2 LAUNCH:
+
+Remember that you need a source port and an iwad of your choice to launch it (doom, doom2, hexen, heretic or strife will do).
+Simply drag'n'dropping the .pk3 onto .exe will do the trick. If you wanna add more, simply drag'n'drop more files you selected.
+If it errors at you, it might be the loading sequence; best to load the eventual mapsets first, then the mod itself.
+If you want to mess with that, best to make a .bat file and set things up there. For info about that, you can look it up here:
+https://zdoom.org/wiki/Installation_and_execution_of_ZDoom
+
+IF YOU PLAN ON USING ANYTHING FROM THE MOD OR MAKE SOMETHING BASED ON IT, READ THIS!
+
+The sounds aren't mine anyway, so 98% of them are free to be used (that 2% that should be asked about first is MartyKirra's or Icytux's VA).
+Just remember to credit you got it from here and the source as well, if I provided such in the SNDINFO, or if you appear to know it.
+If you happen to know the sound or the asset's source and I haven't listed it in the SNDINFO or the credit page here, drop me a PM please, so I can add it!
+Everything else that I took from somewhere or is made by someone else (unless it was made specifically for this mod) is free to be taken, since I have had taken it myself.
+
+If you'd like to use something out of the mod, I'd like to be asked first. I'll outright say weapons are probably out question, but we can negotiate.
+
+So yeah - now, just gonna credit here some peeps that are really awesome for giving or letting me steal all this shit! DOUBLE-STANDARDS, AHOY.
+(not really, but I hope to not receive cease and desist, as I did my best to not bring blasphemy upon their humble work. :P)
+
+Special thanks to the Crew that consists of DoomNukem, Stan423321, Zhs2, Cage, KeksDose, and last but not least, MartyKirra - for their assistance!
+Also, a little mention for Icytux, Jimmy, Sgt. Shivers, and Zrrion the Insect, as they're cool guys as well~
+
+Stuff in no particular order:
+
+Other stuff:
+Marrub (I kinda had extracted a hunch of KF sounds myself, but thanks to him - I actually got all of them now, and those came in handy!)
+
+Code stuff: (For more reference, the ACS source files provide info.)
+KeksDose - Lead scripting in terms of ACS, bunch of things in zscript
+Zhs2 - A good bit of essential scripting in ACS and lead in zscripting
+Stan423321 - Legacy lead of ACS scripting
+Xaser - THE GLORIOUS GIFT OF SYNTHFIRE, among being inspiration for years
+Dinosaur_Nerd\Dodopod - the whole idea for ledge climbing
+
+Sound stuff:
+Le Mudcrab\Freesound - Money pickup sounds
+Wildweasel - Gem pickup sound (Also being one of main inspirators to pick on weapon mods!)
+Icytux - Dem silly Korax sound clips you may find inside the mod, and the Possessed Ironblast voice
+Marty Kirra - Cygnis and Nithor's voice acting
+Gustaf Grefberg - Enclave OST (The game's also awesome, TRY IT, FOR DUCKS SAKE!)
+Dragonforce - Through the Fire and Flames (like you didn't see that coming for the next instance of EXTREMESPHERE, EH!?)
+
+Graphic stuff:
+Font for promotional stuff and such that I love and abuse a lot - Uberlin by Antonio Rodrigues Jr, from 1001fonts.com
+The_Funktasm - Original hands base, powersuit airstrike missiles
+KeksDose - Majority of the SFX graphics (For instance, BLUFF.png, CLOUD_01.png, lightnings, or the firebreath)
+Sgt. Shivers - Stratocaster weapon anim base for Strucker, Dreadful, Longhorn, Ironblast strat switch, Lead Ball sprites, Powersuit sleeve airstrike launch anim
+DoomNukem - Skill wheel graphics and most of the icons, new weapon graphics, Matriarch projectile
+Pillowblaster - Most of the graphic work inside the mod (Most of the new pickups, partially skill wheel graphics, Augur edits, reworked HUD, hands, decals, crosshairs, fonts, menu, refined TNT, stuff like that.)
+TheDarkArchon - Base of the HUD
+Banjo Soft.\3DRealms - Base for the new boot
+Monolith Ent. - TNT
+TheRailgunner - Dreadful recolor I salvaged for Blue Tiberium upgrade
+Marty Kirra - Logo, playerclass base
+Cage - Old Dreadful, Dreadful Strat Frames, Medbag, Armor pickups
+Blox and Scuba Steve - Uppercut base
+Lt. Blam - Augur
+Neoworm - Hitchcock's Birds ravens, Threadcutter knives, Sheeps
+Eriance aka Amuscaria - Lil' Wyvern edit from Hexen, Corpseblast spirit skull explosion
+Monolith\Blood - Skullfire (Drop fire), Corpseblast spirit skulls
+AEoD folks - Skullfire (Fire mine), Gumpop splashes
+Raven Soft. - Frostbite (Majority of projectiles)
+Maxner12 - interpic sketch
+Xaser - Thunderstruck lightnings, gumpop bubbles, statue coins
+Daniel - Annihilation projectiles
+Black Legion Development - Skypunch rings
+
+Other stuff:
+Sergeant Mark IV - Bloody mess (Hey, say what you say - he's still good at what he started with!)

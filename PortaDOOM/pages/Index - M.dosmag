@@ -1,20 +1,22 @@
 $THEME=BLUE
 $KEY:A=GOTO:Maps of Chaos
-$KEY:B=GOTO:Master Levels
-$KEY:C=GOTO:Master Levels #16
-$KEY:D=GOTO:Miasma
-$KEY:E=GOTO:Master Levels #14
-$KEY:F=GOTO:Mordeth
-$KEY:G=GOTO:Mutiny
+$KEY:B=GOTO:Maskim Xul
+$KEY:C=GOTO:Master Levels
+$KEY:D=GOTO:Master Levels #16
+$KEY:E=GOTO:Miasma
+$KEY:F=GOTO:Master Levels #14
+$KEY:G=GOTO:Mordeth
+$KEY:H=GOTO:Mutiny
 
 ^C:INDEX :: M
 
 :-------------------------------------------------------------------------------
 
 - [A] *Maps of Chaos									MegaWADs
-- [B] *Master Levels for DOOM II						Commercial DOOM
-- [C] *Master Levels: Mephisto's Maosoleum				Commercial DOOM
-- [D] *Miasma											Onesies
-- [E] *Master Levels: Minos' Judgement					Commercial DOOM
-- [F] *Mordeth											Episodes
-- [G] *Mutiny											Community Projects
+- [B] *Maskim Xul										Maskim Xul
+- [C] *Master Levels for DOOM II						Commercial DOOM
+- [D] *Master Levels: Mephisto's Maosoleum				Commercial DOOM
+- [E] *Miasma											Onesies
+- [F] *Master Levels: Minos' Judgement					Commercial DOOM
+- [G] *Mordeth											Episodes
+- [H] *Mutiny											Community Projects

@@ -1,0 +1,126 @@
+======================================================================================================================================================
+
+									Man on the Moon
+
+"Man on the Moon" is a boom compatible map that was designed in about a year (on and off, give or take a few more more months) and it is a rather large map.
+It serves as a sequel to my previously released "Travelling to the Moon" and, this time, well as the title suggests, it actually takes place on the moon (at least some 
+moon). It has more of a focus on set pieces and incidental combat rather than a succesion of arena fights. It still has a few arenas here and there but, I thought I'd mix
+things up to make it a little more interesting (hopefully). 
+
+
+The map is quite hard but, still manageable. 
+
+======================================================================================================================================================
+
+Advanced engine needed  : PRBOOM+ at the least (tested with), complevel 11 (mbf). I suppose zdoom/gzdoom is also fine
+Primary purpose         : Single player 
+
+======================================================================================================================================================
+
+Title                   : Man on the Moon
+Filename                : MOTM.wad
+Release date            : 1st of september (rc1), 9th of november (final version)
+Author                  : Yugiboy85 
+Email Address           : [redacted]
+Other Files By Author   : -E1M8RMKE.pk3
+                          -Undesird.wad
+                          -TRAVMOON.wad
+                          -CRIMSOWD.wad (my dwmp16 map but released on its own)	
+                          -Various Community projects: Dwmp13 and 16, 2048 unleashed, the upcoming "cereal killer"
+
+                          Link to my wadography (page 2 of the thread): https://www.doomworld.com/vb/post/1555215	
+
+Misc. Author Info       : French doomer 
+
+Description             : Huge space/moon map that has a main hub of sort. Non-linear (grab keys in any order, etc...). 13 secrets total
+
+Additional Credits to   :
+
+ID SOFTWARE for doom, MaxED for GZDOOM Builder and zzyxz for gzdoom builder bugfix, SlayeR for Slade 3, The people behind the CC4 texture pack, Skillsaw for letting me use
+the sexy space theme textures he used in valliant's 5th episode, alfonzo for the midi ("gutter penny"), Dragonfly for testing an older version (pre rc1), 
+JC Dorne for the dehacked boss, Vader for the boss sprites, Horrormovieguy for the chaingunner sprites (found on the realm667 forums, "the uber chaingunner"), 
+NMN and tormentor667 for the "rapid fire trooper"
+sprites (realm667 and KDIZD), Mark Quinn, Vegeta, Ghastly_dragon, MagicWazard for the "zspecshotgunner" sprites (realm667), 
+Disguise, MagicWazard, Blue Shadow for the "green key" (realm667)
+The sound edits were taken from "ancient aliens" and "eternal doom", as well as "valliant" (for the plasma gun sound).
+
+======================================================================================================================================================
+
+* What is included *
+
+New levels              : 1 
+Sounds                  : Yes - Door, lift, powerup, pickup sound 
+
+Music                   : Yes - "Gutter Penny", by Alfonzo. I asked permission to use it and he gave me the go. 
+                          There should've been a track from perturbator ("I am the night") for the zdoom/gzdoom specific music (like in the first travmoon) but, unfortunately, 
+                          i did not recieve any answer to the email I sent. Maybe I will eventually, who knows haha
+
+Graphics                : Yes - Sprite replacements for the shotgunner, former human and chaingunner (realm667), A new green keycard (realm667), textures from valliant's 5th episode
+                          mainly (with permission from skillsaw) and a few edits by myself. A few textures from the CC4 texture pack (not as much as in the first one though haha). 
+                          The boss sprites were made by vader (I don't want to spoil the boss but, you'll recognise him when you see him haha).
+
+Dehacked/BEX Patch      : Yes - Name change + Custom dehacked boss (THX ALOT JCD ^^ for that and the decorate equivalent for zdoom, etc...)
+Demos                   : No
+Other                   : No 
+Other files required    : NONE, Everything is included
+
+* Play Information *
+
+Game                    : DOOM II
+Map #                   : Map 01
+Single Player           : Designed for 
+Cooperative 2-4 Player  : Player starts + A few coop monsters/things as well as a few teleporters. Untested though. 
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes, mostly monster swaps and additional monsters in higher difficulties
+
+
+* Construction *
+
+Base                    : Everything is from scratch
+Build Time              : A year roughly (on and off, maybe more)
+Editor(s) used          : GZDoom builder, GZDoom builder BUGFIX, Slade 3, Doomword
+Known Bugs              : None gamebreaking (afaik) and maybe a few slimetrails here and there (got rid of most of them though, hopefully)
+
+May Not Run With...     : Doom95.exe, Chocolate doom. 
+
+This map was not tested with gameplay mods and thus, I don't really know if it runs with mods such as smoothdoom for example (due to the dehacked boss). You may try but, 
+I won't be responsible if things break haha. 
+
+======================================================================================================================================================
+
+* Aditional notes *
+
+The map was tested primarilly with prboom+ (2.5.1.4) and thus, is the intended port. The map runs ok in gzdoom, etc... though (not tested in zandronum).
+Due to the boss using mbf specific codepointers, unfortunately, I don't think it works in zdaemon... 
+
+Also, jumping and crouching is disabled by default and it should stay that way. The map was not designed for ports that allow these so if you encounter bugs that are the result
+of you jumping and crouching around, I will not be responsable. You are warned ;)
+
+
+
+* Copyright / Permissions *
+
+Authors MAY NOT use the contents of this file as a base for
+modification or reuse. (as far as the actual level goes at least), you can use the textures etc... with respective credits of course.  
+Permissions have been obtained from original authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Website: https://www.doomworld.com/forum/topic/95362-prboom-cl11-man-on-the-moon-travmoon-2-rc3-available/ (Screenshots + Previous versions available)
+
+* Final words *
+
+Have fun :D
+
+
+
+

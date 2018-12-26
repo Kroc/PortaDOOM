@@ -1,0 +1,69 @@
+===========================================================================
+Archive Maintainer      : This should replace the existing cryogenics.wad,
+                          includes some fixes
+Update to               : cryogenics.wad
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Cryogenics
+Filename                : Cryogenics.wad
+Release date            : 9/12/2017
+Author                  : Bemused
+Email Address           : [redacted]
+Other Files By Author   : none released
+
+Description             : Set of 4 slaughter themed maps
+
+Additional Credits to   : Benjogami for midi and some textures, Killer5 and
+                          Loveless for playtesting, Insane_gazebo for the
+                          sunder_res textures, RjY for nodebuilder config
+===========================================================================
+* What is included *
+
+New levels              : 4
+Sounds                  : No
+Music                   : Yes
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-4
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2-3 weeks per map
+Editor(s) used          : GZDB-Bugfix
+Known Bugs              : Some texture misalignments
+Tested With             : GLBoom+, PrBoom+, GZDoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use. If you remix, transform, or build upon the material, you must
+distribute your contributions under the same license as the original.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

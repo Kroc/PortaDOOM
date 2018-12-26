@@ -1,0 +1,422 @@
+These author notes are split into two sections.
+
+Section 1 provides a brief overview of the theme of each episode of the WAD, 
+the use of textures and flats to support that theme, and some MILD SPOILERS
+about the monsters and weapon types used.
+
+Section 2 provides detailed comments about the concepts and ideas behind each
+individual map in the set.  That means there are LOTS OF SPOILERS.
+
+
+
+
+************************ Section 1 : Episode Structure ************************
+
+Doom404 is split into three episodes.
+
+
+Episode 1: Real Life
+Maps: 01-06
+This episode is set in the 'real world' of the UAC technology complex.  To
+emphasise that this is a physical location, every map includes at least a 
+view of the sky, and most allow the player to venture outdoors.
+Visually these maps combine brick, technology and outdoor textures to
+provide something close to the typical 'Doom techbase' vibe.  The only
+liquid flat used is water, which is never harmful.
+This episode does not use any 'cybernetic' enemies, or cell-based weapons.
+It also does not feature any teleporters.  This was done to emphasise that
+this is the flesh and bone world.
+Map names generally refer to physical locations or to the kind of things
+IT Help Desk folks would talk about.
+
+
+Episode 2: Virtual Life
+Maps: 07-20, 31, 32
+The longest episode of Doom404 is set within the electronic confines of the
+UAC computer system.  To emphasise that this is an 'unreal' environment,
+NO maps in this chapter feature a sky.
+Texture use in this chapter is deliberately varied from map to map and
+often deliberately diverse within a single map, too.  Just about any theme
+is possible - though overt hellscapes are omitted - but you will always find
+some technological textures somewhere in each map.  You are, after all,
+inside a computer!
+Liquid flats used are slime (never harmful) and nukage (always harmful).
+This episode uses all monsters other than the Cyberdemon, and all weapons.
+Map names generally refer to the inner workings of software such as
+operating systems, or of computers themselves.
+
+
+Episode 3: After Life
+Maps: 21-30
+This episode takes the battle into the Stygian realms of the demons.  As you
+are back in a 'real' non-virtual realm at this time, all maps feature at
+least a view of the sky, as with episode 1.
+Visually these maps always contain some measure of 'hellish' textures, though
+technology is interspersed within them.  Hell has launched a cybernetic
+invasion after all, so it stands to reason they'd have plenty of technological
+resources.
+Liquid flats used are blood (never harmful) and lava (always harmful).
+This episode uses all monsters other than Keens and SS, and all weapons.
+Map names are generally bad puns about computer terms. :)
+
+
+
+
+*********************** Section 2 : Map by Map Comments ***********************
+
+Each map in Doom 404 is built around a specific concept or set of concepts.
+This might be the introduction of new monsters or new weapons, or featuring 
+a specific enemy type.  It might be a particular kind of encounter or other
+Doom engine mechanic.  It might be something to do with the layout ... but
+basically the long and the short of it is that each map has a thematic core
+to it.  That was part of the reason for the 404 line limit: by restricting 
+myself that way, it helped me to focus on the core idea of the level.
+Maps are discussed in *play order*, so 31 and 32 are discussed between maps
+15 and 16, not at the end.
+
+Reminder: LOTS OF SPOILERS below.
+
+
+Map01: Trouble Ticket
+I wanted to kick off with a silent opener; something to model the player, in
+their role as a UAC IT guy, turning up for a routine job only to find that
+something was very, very wrong.  I even worked in a mini 'jump scare' moment.
+Obviously this means the map doesn't have much replay value; unless you do it
+solonet style that is.  I figured that there wouldn't be as much atmosphere
+in a co-op game so it was better just to give you stuff to shoot :)
+As an additional note, this map, map07, and map30 each have only one secret;
+all the other maps have three each.
+
+
+Map02: Bad Signal
+This map introduces the shotgun, sergeant and imps.  My key design concept was
+to include lots of crossfire opportunities, which is why most areas of the map
+have windows that look into other parts of the map.
+This map has the first key door of the WAD, so of course I made it red as a 
+nod to e1m2.
+
+
+Map03: PEBKAC
+I figured it was time to give the player some more outdoor action, so this map
+gives us some canyon and cave style areas.  It also brings the HK and the demon
+to the dance.  I tried to give both new monsters a chance to shine.  Since 
+they are pretty tiresome enemies to kill with the pistol and and normal shotgun,
+this map also marks the debut of the SSG.
+Mmmm, the sweet, sweet SSG.
+
+
+Map04: System Access
+This map introduces both the chaingunners and the chaingun, as well as
+everyone's favourite troll monster, the spectre.  The latter enemy prompted me
+to include a major battle in an area with dim and flickering lighting, because
+it so suits that enemy.  This in turn prompted the inclusion of a secret with
+light amp goggles - not a power-up that gets used much, but one I figured
+would be of value here!
+
+
+Map05: Server Room
+The theme here is jumping and flying.  The map introduces cacos and lost souls
+as enemies, and requires the 404-Guy to do some 'flying' of his own with a
+few parkour antics.  This is the only map in episode one where there is no
+outdoor area you can enter, though you can see the outdoors from the latter
+half of the level.
+The rocket launcher makes its first appearance here, just try not to use it
+right as a lost soul gets in your face :)
+
+
+Map06: Interface
+With the arrival of the pain elemental we reach the final map in episode 1.  I
+centred this level around a large courtyard with walls around it, because I do
+love the visual of flying monsters rising up and over barriers like that.  This
+is definitely a map where you'll want to get a handle on the PEs quickly, or 
+they can really make your life difficult!
+At the climax of the map the player enters the cybernetic realm through which
+the demons have entered our world.  This is represented by a death exit (after
+all, your accumulated gear is all back in the physical realm!). 
+
+
+Map07: Firewall
+On one level, this is pretty obviously 'yet another Dead Simple clone', though
+I think it has a sting in the tail that gives it some character of its own.  It
+also has a deliberately diverse and eclectic collection of textures, including
+the wonder that is fireblu.  I really wanted to make the start of the new
+episode feel starkly different in look and feel to the first episode.
+Obviously, since this is map07, it is time for the Macubus and Arachnotron to
+join the menagerie of enemies.
+
+
+Map08: Random Access
+I wanted to continue the theme of somewhat electic texture selection here,
+which is why you see modwall and dingy brick used in close quarters.  It was
+fun to get a bit Petersen-y with my texturing.
+No new monsters or weapons make an appearance here.  Instead the gameplay
+element which I play with is the old "swarm of monsters teleport in".  I
+deliberately omitted using such mechanics up to this point.
+I included multiple teleport destinations in the hope that the exact location
+in which the monsters arrive will vary depending on the player's actions (thus
+tying back to the 'random access' name).
+
+
+Map09: Hard Drive
+It's time for Barons to make an appearance, and obviously part of what I wanted
+to do with this map was find a way to make a feature encounter with them that
+was actually fun to play.  Not an easy task given that they're slow and have
+a tediously large amount of health!
+Part of the solution is to give the player more firepower, so the plasma gun
+finally shows up here.
+Looks wise this map is more consistently-themed, with a stone and marble motif
+dominating large sections, but there are also technological sections to reflect
+the cyberspace theme.
+
+
+Map10: FAT32
+This map is all about mancubi, because puns are *awesome*.  Particularly when
+they are awful.  It was also a bit of an experiment in terms of implementing
+difficulty settings since the monster count is the same in all cases: it's the
+amount of health and ammo that varies.
+We're back to some of those deliberately clashing textural choices here, though
+I promise this is actually toned down from the first version, which was even
+more garish!
+
+
+Map11: Infinite Loop
+Some time ago I did a 'Circle of Death' style map for a speedmapping session,
+using an infinity-symbol instead of a circle.  I wasn't really happy with the
+outcome though, so I decided to make a second stab at the concept here in
+Doom404.  I like this much better.
+I should probably warn you that this level is a significant spike in difficulty
+from the average for the mapset.  There may be a point where you think the 
+'Infinite' part of the name has nothing to do with the layout, is all I'll say
+here. :)
+
+
+Map12: Machine Code
+Making Doom maps is a pretty nerdy thing to do, I think, and this may be the
+nerdiest map layout I've ever made.  Let's just say the level title here is as
+much of a pun as FAT32 was, and leave it at that.
+The goofy layout shenanigans aside, this level introduces the revenant, an 
+enemy I deliberately set out not to overuse in this set, due to the way they
+tend to get spammed around in modern WADs.  Which I understand, because they
+are highly mobile and have a good range of attacks.  I just wanted to be a bit
+different!
+
+
+Map13: Bugged
+The puns continue, as this map features Arachnotrons as a major enemy type.
+The sheer size of these guys can make them quite tough to use in maps, so it
+was fun to try and think of a layout that would be interesting to use them in,
+especially since I wanted to avoid the old standby of 'distant sniper'.
+
+
+Map14: Recycle Bin
+Finally, the Arch-Vile arrives in Doom404.  Like the revenant, I think this 
+fellow tends to get a little overused, so I wanted to use them sparingly in
+the mapset as a whole.  In this map, however, they should have something of
+a chance to shine.  It is their debut, after all!
+This map also features a rather goofy (but potentially dangerous for all that)
+opening encounter.  Mmmm, squishy!
+
+
+Map15: Password Protected
+The key concept for this level was to represent the map title by having the
+secret exit behind a (simple) logic puzzle.  So it is not enough just to have
+sharp eyes, you need a sharp mind.
+Oh, okay, you don't need all that sharp a mind, really.  This is Doom after
+all, not Puzzle Agent.  It's pretty easy to brute force a solution if you
+have any patience, and I may even have included a hint for you somewhere in
+the map ...
+
+
+Map31: Nazi Shooter!
+I've never liked the randomness of Doom 2's secrets levels featuring
+Wolfenstein stuff, so one of the things that appealed to me about having a
+'go into cyberspace' episode within this WAD was that it finally gave an
+in-game reason for there to be a Wolfenstein map.  It also meant I got to play
+with a whole bunch of textures I'd never really used before.
+Best of all, it presented me with an opportunity to be quite nerdy.  You see,
+I didn't want to just do an actual, flat Wolf3d map here, but nor did I want
+to offer nothing more than a Doom 2 map with different textures.  So I came up
+with a set of rules about how levels were made in this fictional 'Nazi Shooter!'
+game, and then stuck to them, at least in terms of what the player can see.  
+These rules were basically that the game's levels were constructed by placing 
+128 x 128 x 128 cubes, and then painting the visible sides with a texture.  That
+meant that you couldn't have doors (since they'd look odd being 128 thick!) but
+you could have elevators.
+This is the result.
+
+
+Map32: Thule
+As much fun as I had making 'Nazi Shooter!', I figured the gag was only good
+for one map, so this level quickly transitions into standard Doom 2.  Other
+than that, it's just pretty much straight up run and gun arena-style action.
+
+
+Map16: DeFrag
+As is obvious when you play it, this map is deliberately evoking e1m1, which is
+not as easy as it sounds when you only have 404 lines and can't use sky
+textures!  The BFG in the nukage pool is probably a hint that things aren't as
+Knee Deep in the Dead as they appear to be.
+I'm inordinately fond of the SSG secret in this map.  It's accessible in two
+different ways, one of them much earlier than the other, but it requires a bit
+more lateral thinking to get it via the faster route.
+
+
+Map17: CPU
+The concept for this map is that the player is now in the very core of the UAC
+computer system.  It therefore has a highly technological theme to the texture
+selection.  It's also the logical time to debut the Spider Mastermind, who is
+lurking in cyberspace to oversee the demonic plan.  Or at least, that's the
+story as it exists in my head!
+
+
+Map18: Bad Sector
+This map features damaging floors as a major motif.  Damaging floors are of
+course bad sectors to be standing in, and we thus have yet more Doom punnage to
+chuckle or groan over.
+I'm fond of one of the secrets in this map as rather than containing a power-up
+or weapon it provides the player with a key, instead.  You don't need to 
+have the key to finish the map - mandatory secrets are not cool - but having
+it allows you to get a much more tactically advantageous position in one of
+the main fights for the level.
+
+
+Map19: Crash
+My interpretation of the 'Crash' concept of this map was crushers, which to
+this point had not been used in the WAD.  That changes here, I assure you,
+though it's perhaps not such a bad thing as you might expect.
+As this was a map with sectors changing in a new way, I also thought it
+would be fun to have a room in the level completely transform between the
+first and second times the player visits it.  That required the flow of the
+map to be quite linear for the most part, but I think it's worked quite
+well overall.
+
+
+Map20: Portal
+This map is built around the exit, which is immediately *visible* to the
+player (and delightfully ugly it is too, to my mind), but very far from
+being *accessible*.
+Visually I wanted to represent the idea of a location that had been
+wracked by some kind of earthquake, or perhaps simply allowed to collapse
+into ruin for a long time.  I think it looks pretty neat.
+At the climax of the map the player enters the hellish dimension from which
+the demons originate.  This is represented by a death exit (after all, your
+gear at this point is all virtual, not real). 
+
+
+Map21: Daemon
+We're back in a physical location again, which is why this map prominently
+features outdoor areas, but it is also still a whole other dimension to the
+'real' world, as presented by the very different texture selections compared
+to episode one.
+The cyberdemon finally makes his appearance here.  I generally have not
+used boss monsters much in Doom404 since they have enough health that they
+can take some time to kill, but I wanted to make sure the big bruiser got
+at least one showing, and his location in this map makes him a constant
+presence in the map (though also potentially an inadvertent ally for a 
+canny player!).
+
+
+Map22: Terrorbyte
+This map is about dark places, spectres, and being short of all ammo other
+than rockets.  Because I am sometimes a jerk. :)
+
+
+Map23: Biomatrix
+I wanted to do a map using a combo of flesh and technology textures (a motif
+I first tried in Demonfear), and having done so, I decided to also make the
+monster load-out have a fleshy kind of vibe to it ... though one additional
+constraint on that was to avoid using monsters I planned to feature heavily
+in the next map.
+Since Arch-Viles were one of the monsters that I thought matched the theme
+of the map, I tried to make sure that the various rooms - especially the
+larger ones - had some options for cover in them, while also providing
+lots of options for how said AVs could roam around.
+
+
+Map24: Sintax
+I thought I was very funny when I came up with all the punny names for this
+episode of the WAD, but one of the things I quickly discovered is that those
+names didn't as easily translate into map concepts as did those of the first
+two episodes.  I mean, "Sintax" doesn't immediately conjure a particular
+architectural or gameplay element that might be associated with it.  So I
+thought "well, maybe it's time to just do a straight up rocky red hell map"
+and then I thought "and what if that red map was full of red monsters?"
+and you got this little charmer.
+At one point, I considered using *only* chaingunners and my beloved cacos,
+but ultimately I decided to sprinkle in a small selection of other enemies
+to provide a bit more tactical variety.
+
+
+Map25: Hexadeathimal
+Using word play on hexadecimal for the map's name obviously led to thoughts
+of using hexagonal shapes in the map layout.  Technically 16-sided shapes
+would probably be more apropos to the base of the pun, but I'm on a line
+budget here!
+I decided to emphasise use of the BFG on this map for two reasons: first
+because the player was only just getting the weapon again, after losing it
+at the start of this episode.  Second, because I've not really done a
+"mostly just the BFG" map before.
+Since I wanted to push all players - continuous and pistol start alike -
+toward using the BFG, I decided to leave only a very limited amount of
+other ammo in the map (though finding secrets can offset this somewhat),
+which means the opening of the map can optionally be a semi-Tyson style 
+of thing.
+
+
+Map26: EnCryption
+The puntastic title of this map put me in mind of a tomb-themed setting,
+and also of some kind of puzzle-based gameplay.  That's traditionally 
+meant "switch hunt" in Doom, but that is not something I much enjoy, myself,
+so I tried to do something a bit more logic-themed (as I did with map15).
+Oh, and monster-wise it seemed obvious to me what kind of enemies should
+predominate in a crypt or tomb type setting ... 
+
+
+Map27: Demesne
+I originally intended to make this an arachnotron heavy map, but then I used
+quite a few of them (plus a mama spider) in map 25, so I had to have a bit
+of a re-think on that front.  There are still a few of the baby spiders in
+the map, but it's a much more varied monster palette than originally planned.
+Overall, I rather like how this map - the design brief for which was "big hell
+fortress" came out.  I like the way the PE/Caco "bays" look, and I think the
+various waves of enemies provide for fun scrambling as they come in from a
+range of different vectors.
+
+
+Map28: Icon
+So pretty much the only thing I had in mind for this map when I started it was
+that I wanted the Icon of Sin "wall" to loom over the map, and the objective
+of the map to be to "get inside" it.  The looming part required that the map
+revolved around a large courtyard, and in order to maximise the focus on that
+courtyard, while staying true to the "get inside" concept as well, this is
+one of the few Doom404 maps to have "tennis" style progression where you run
+to one end of the map, grab a key; run to the other side of the map; grab 
+another key; then run all the way back again.
+I made the plasma gun a focal weapon for this map mostly because I hadn't
+previously done so in the set.
+
+
+Map29: Hellmaker
+For those that don't know, Hellmaker was a 90s level editor for the Mac.  And
+yes, that does mean that this level is an answer to the question asked in the
+in-game text at the end of map20 :)
+This is the monster spawner map for Doom 404, which presented some challenges
+as the spawner has some behaviour that only works on map30, and I needed to
+plan for not having it.
+Also, I didn't want to make a map that was about shooting rockets into a hole
+in a wall.  I seem to have not entirely escaped the 'shooting a wall' concept,
+to be honest, but at least it's a bit different from the normal IoS.  Because
+of that difference, I included a mandatory section earlier in the map with a 
+similar mechanic so that it should be pretty obvious what to do in the final
+fight.
+NOTE: due to limitations of the Doom engine, it is possible for monsters to
+get stuck in each other in this map.  I've tried to avoid it happening as
+much as I can, but it's impossible to 100% avoid.  This is also noted in the
+'bugs' section of the text file, but wanted to mention it here as well, in
+case you're reading this, but didn't read that.
+
+
+Map30: Terminal
+I wanted to deliberately evoke memories of the 'silent' opener with this map,
+though when the monsters finally do turn up in this one, you can be sure it's
+not just a few troopers who come out to welcome you!

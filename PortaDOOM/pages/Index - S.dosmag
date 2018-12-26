@@ -5,10 +5,11 @@ $KEY:C=GOTO:Sheer Poison
 $KEY:D=GOTO:Skulldash
 $KEY:E=GOTO:Stardate 20x7
 $KEY:F=GOTO:Strange Aeons
-$KEY:G=GOTO:Master Levels #10
-$KEY:H=GOTO:Sunlust
-$KEY:I=GOTO:Master Levels #11
-$KEY:J=GOTO:Swift Death
+$KEY:G=GOTO:Struggle - Antaresian Legacy
+$KEY:H=GOTO:Master Levels #10
+$KEY:I=GOTO:Sunlust
+$KEY:J=GOTO:Master Levels #11
+$KEY:K=GOTO:Swift Death
 
 ^C:INDEX :: S
 
@@ -20,7 +21,8 @@ $KEY:J=GOTO:Swift Death
 - [D] *Skulldash										Total Conversions
 - [E] *Stardate 20x7									Episodes
 - [F] *Strange Aeons									Total Conversions
-- [G] *Master Levels: Subspace							Commercial DOOM
-- [H] *Sunlust											MegaWADs
-- [I] *Master Levels: Subterra							Commercial DOOM
-- [J] *Switft Death										MegaWADs
+- [G] *Struggle - Antaresian Legacy						MegaWADs
+- [H] *Master Levels: Subspace							Commercial DOOM
+- [I] *Sunlust											MegaWADs
+- [J] *Master Levels: Subterra							Commercial DOOM
+- [K] *Switft Death										MegaWADs

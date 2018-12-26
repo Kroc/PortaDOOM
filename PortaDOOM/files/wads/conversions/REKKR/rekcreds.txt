@@ -1,0 +1,69 @@
+﻿﻿
+
+           ▓▓▓▓▓▓▓█  ▓▓▓▓▓▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓▓▓▓▓▓█
+           ▓▓████▓▓█ ▓▓██████ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓████▓▓█
+           ▓▓█   ▓▓█ ▓▓█      ▓▓█  ▓▓█  ▓▓█  ▓▓█  ▓▓█   ▓▓█
+           ▓▓▓▓▓▓▓█  ▓▓▓▓▓█   ▓▓▓▓▓▓█   ▓▓▓▓▓▓█   ▓▓▓▓▓▓▓█
+           ▓▓████▓▓█ ▓▓████   ▓▓███▓▓█  ▓▓███▓▓█  ▓▓████▓▓█
+           ▓▓█   ▓▓█ ▓▓█      ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█   
+           ▓▓█   ▓▓█ ▓▓▓▓▓▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█
+           ▐██   ▐██ ▐███████ ▐██   ▐██ ▐██   ▐██ ▐██   ▐██
+
+Lead/Etc: 
+Revae
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Textures/Flats:
+Beginning with "dv" or no prefix is Revae.
+
+Beginning with "ks_" are almost all edits that LupinxKassman did. 
+In particular these are wholly his:
+KS_WHL*
+KS_DOME*
+KS_SKYL*
+KS_SEC*
+KS_S2C*
+KS_SCRU*
+KS_SC2*
+KS_BEER*
+
+So if you want to use any of those I'd ask him.  Otherwise Use anything
+else for whatever, just don't sell it.  I'd appreciate it if you 
+credit.
+
+A few of the textures were taken from a high res pack I did for Thief,
+and re-shrunk down (so they more-or-less just look like Thief textures
+again).  These are: DVMETAL1,3,4, DVSTON6,7,8,9, FLAT4, and variants.
+if you want that pack it's here: 
+http://www.mediafire.com/file/gy7c9lyh7ojnegu/FAM.zip/file
+Only Bafford's is (mostly) done. Maybe I'll finish it one day...
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Music:
+Tom Jensen AKA Hexenmapper - thespidersrepublic@hotmail.com
+https://soundcloud.com/psllbof
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Sounds:
+TerminusEst13
+http://terminusest13.tumblr.com/
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Maps:
+E1M4 - SuperCupcakeTactics: Blade Swamp, Revae: Deathmatch arena
+E1M7 - LupinxKassman: Dripstone Wharf, Revae: Deathmatch arena
+E2M4 - JawsInSpace: Initial Layout, Revae: Finishing
+E2M5 - AngrySaint
+E2M6 - VelcroSasquatch
+E3M4 - AD_79: Primary, Revae:Secondary
+E3M7 - TerminusEst13/Jimmy: Siege, Revae: Deathmatch arena
+E4M1 - Bzzrak: Village of Delusion, Revae: Deathmatch arena
+E4M7 - VelcroSasquatch
+Rest - Revae
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Testing:
+Eric, Sarioya, Hexenmapper, Wartorn,
+by default everyone listed as a mapper
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Thanks to: /vr/ for all the fun, Marrub for early dehacked info, Gageat
+for the hitscan dummy idea, Popsoap10 for fixing the GLDEFS, and anyone
+who gave me advice over the last few years and I forgot (sorry).
+Also Doomworld and the Zdoom forums for pointing out all the faults.
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+manbitesshark.com

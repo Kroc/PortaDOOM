@@ -1,0 +1,255 @@
+-Introduction-
+
+First of all, hello! And second of all, thank you so much for downloading My mod, Netronian Chaos!
+
+It's been 5 years to make this mod without giving up thanks to my friends and heplful fellows of doom community.
+
+If you have feedback and such, please contact me through ZDoom Forum and let me know!
+----------------------------------------------------------------------------------------------------------------
+
+-Credits-
+
+They are all inside of this mod, but if you're kind of busy person, i just wrote them all up;
+----------------------------------------------------------------------------------------------------------------
+Scripts:
+- InsightGuy - Coding Support for the Various Ammo Icons on the HUD. Thanks, buddy!
+- WildWeasel - Massive Coding Support. Some of the codes borrowed from him with his permission.
+- Terminusest13 - Massive Coding Support, Advising. He helped me coding the mod better a lot.
+- Sgt. Shivers - Advising. My best friend also my mentor!
+- Combine Kegan - Advising. His suggestion and support helped me a lot. He's good lad!
+- DBThanatos - Coding Support. Tri-Desolator's Behavior was taken from DBThanatos with his permission. Really cool concept and the behavior!
+- SilentZora - Coding Support, Advising. Some of the codes borrowed from him with his permission. Also teached me how to code better, too!
+(Also provided me some Weapon Vacuum Fixes. I absolutely appreciate his support!!)
+- Skelegant - Coding Support. And he also gave me the full code of Sparkplug Bomb and the GLDEFS.
+- TheZombieKiller - Coding Support for the Loading Screen!
+- Enjay - The goes same for TZK.
+- Jallamann - Codding Support, Weasel told me that he is the one who made the intro cutscene for Nazis!. So yeah, much appreciated!!
+- Kinsie - A_SpawnItemEx Adjustment for robot explosion is taken from his mod called REELism.
+----------------------------------------------------------------------------------------------------------------
+Sprites:
+- Unusacies - Missile Launcher's Muzzle flash. He fixed it and looks good!
+- Skelegant - Sparkplug Bomb's Sprites.
+----------------------------------------------------------------------------------------------------------------
+Fonts:
+- Originally from Medicalat by by OSABISI YU-KI
+----------------------------------------------------------------------------------------------------------------
+Sound Effects:
+
+dDefinder1 at Fallout: New Vegas Nexus
+
+Skibadaa at Fallout 4 Nexus
+
+586 Studios
+Lynx9810
+Strelok
+DCS
+MRDeadlyFPS
+Kopter
+4Echo
+Frezixx
+Se7en.
+Navaro
+Sir Crimson
+Apocalyptic Studios
+Jack_Freedom5712
+MRDeadlyFPS
+Frezixx
+Internetianer
+Vunsunta at Gamebanana.com
+
+Good ol' Microsoft Sam
+
+Heavy Barrel
+Robocop
+Midnight Resistance by Data East
+
+Audio Library - Free Sound Effects
+Sound Effects Guy at Youtube
+
+The Ninja Kids
+Ninja Warriors
+Rastan Saga Episode III by Taito Corp
+
+Air Buster by Kaneko
+
+Zing Zing Zip by Tecmo
+
+Dr. Jekyll and Mr. Hyde by Toho
+
+freespecialeffects.co.uk
+
+alvaol62 at bsnooch.com
+
+LordMordecai's Magazine bouncing sounds from Zdoom Forum: https://forum.zdoom.org/viewtopic.php?f=60&t=51893
+
+freesfx.co.uk
+
+Meteor 2
+
+Wildweasel (Zdoom Forum's Wildweasel. Yes.)
+iimck
+willy_ineedthatapp_com
+junggle
+soundscalpel.com
+Anthousai
+Dredile
+j1987
+jeseid77
+RoganDerrick
+irrlicht
+meggiepie
+Bumblefly
+michael_kur95
+DaveOfDefeat2248
+bbrocer
+jorickhoofd
+GreenFireSound
+soundslikewillem
+BristolStories
+Cyberkineticfilms
+AGFX
+digifishmusic
+ibirdfilm
+GryffDavid
+JavierZumer
+Aegersum
+parabolix
+Hybrid_V
+Freeman213SG
+pugaeme
+qubodup
+joshuaempyre
+LittleRobotSoundFactory
+klangfabrik
+fokshtein
+EFlexTheSoundDesigner
+Wakerone
+SpliceSound
+Corsica_S
+shortshorts
+Denys
+Kinoton
+RoLL1n
+InspectorJ
+Northern_Monkey
+mensageirocs
+sarana
+Kodack
+Lord Razu
+Aegersum
+Theogobbo
+morganpurkis
+sstokes
+cetsoundcrew
+davidou
+ggctuk
+uagadugu
+Vosvoy
+sarge4267
+Isaac200000
+CosmicEmbers
+eardeer
+man
+Guardian2433
+vacuumfan7072
+h.quinius
+Speedenza
+ryansnook
+sound-ideas's
+JarAxe
+original_sound
+daveincamas
+OnlyTheGhosts
+thanvannispen
+analogchill
+mariallinas
+benjaminharveydesign at Freesound.org
+
+Shogo: Mobile Armor Division
+Blood by Monolith
+
+Rocketbirds: Hardboiled Chicken by Ratloop Asia
+
+Worms World Party by Team 17
+
+Qtest Sound effects downloaded from Quake Wiki
+
+Fallout 3
+Fallout: New Vegas by Bethesda Softworks
+
+Team Fortress 2
+Half-Life by Valve
+
+Doom by ID Software
+
+Redneck Rampage by Xatrix Entertainment
+
+From some desktop game called Toys.
+
+Atomic Bomberman by Interplay
+
+Omega Fighter by UPL
+
+C.O.W.-Boys of Moo Mesa 
+Bucky O Hare Arcade game by Konami
+
+The Punisher
+1944: The Loop Master
+Area 88 by Capcom
+
+Front Mission 1 by Square Enix
+
+The Super Dimension Fortress Macross Famicom game by Namco
+
+Dragon Ball Xenoverse 2 by Bandai Namco
+
+Mobile Suit Gundam: Gundam vs. Zeta Gundam by Bandai
+
+Return to Castle Wolfenstein
+Hexen by Raven Software
+
+Mobile Suit Gundam EP Sound Effect Disk Extracted thanks to mrmartymcflies at Tumblr! mrmartymcflies.tumblr.com/post/143187586644
+
+Sounds of the North Star, Sound Library of mine recorded from episodes of Fist of the North Star. Check this out; capncjr.tumblr.com/post/131150470591
+
+Metadoom-inspired Vanilla Sounds addon made by me. If interested, Download here!: forum.zdoom.org/viewtopic.php?f=37&t=53943
+
+The high resolution Doom sound effects pack by perkristian
+
+ww-diaz-v3 by Wildweasel
+
+Kinsie from Official Zdoom Forum Server
+
+Medicalat by by OSABISI YU-KI
+
+Mazinger Z by Banpresto
+
+Blake Stone by JAM Productions
+
+Soldier Blade by Hudson
+----------------------------------------------------------------------------------------------------------------
+Musics:
+- Mobile Suit SD Gundam: Threat of Psycho Salamander by Banpresto. I just love this kind of cheap arcade musics. Just so.
+
+- Nemesis 2 by Konami
+
+- Gradius Rebirth by Konami
+----------------------------------------------------------------------------------------------------------------
+Voices:
+- Braveman and Security - Soulpillar from Sufficient Velocity
+
+- GallantLad - kinsie from ZDoom Forum
+
+More new voices coming soon.
+----------------------------------------------------------------------------------------------------------------
+Special Thanks:
+- QuakedoomNukem Cz: He helped me/provided me some fixed spelling errors.
+----------------------------------------------------------------------------------------------------------------
+All of the Sound Effects i used and Donated voice clips for this mod goes to respectful owners. Kudos for them for awesome sounds and voices!
+
+Once again, thanks for downloading my humble childish mod. I'm going to add custom enemies later. Stay tuned!
+
+(The Mod's Version is 3.1, btw! Probably the last update it'll ever have.)
+
+
+- Doom Gameplay Mod made by Captain J -

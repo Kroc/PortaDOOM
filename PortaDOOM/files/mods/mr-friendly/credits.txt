@@ -1,0 +1,88 @@
+
+=======
+CREDITS
+=======
+
+JP LeBreton: idea & implementation
+
+ZDoom Discord: invaluable help with a plethora of ZScript issues
+The WAD Wednesday community: creative input, emotional support
+joshthenesnerd: some monster names
+My Patreon patrons: emotional and financial support
+
+
+======
+ASSETS
+======
+
+castpixel's "pixels-r-us" font:
+https://www.patreon.com/posts/16897144
+
+James Paddock's "tinyfont" and conversion of an unused Anachronox font:
+https://forum.zdoom.org/viewtopic.php?f=37&t=33409
+
+slide whistle sounds by joedeshon
+https://freesound.org/people/joedeshon/sounds/79671/
+https://freesound.org/people/joedeshon/sounds/79677/
+
+wetbelch4.wav by plingativator
+https://freesound.org/people/plingativator/sounds/101182/
+
+Chicago (original Macintosh system font) by Susan Kare
+
+2D art sampled from:
+Animal Forest (Silversea's rip)
+Castlevania: Symphony of the Night
+Chex Quest
+Chrono Trigger
+The Chaos Engine
+Commander Keen in Goodbye, Galaxy
+Descent
+Final Fantasy IV
+Heretic
+Macintosh System 1
+Monkey Island 2
+Night Shift
+Quake
+Sam & Max Hit the Road
+System Shock 2
+Ultima Underworld
+Ultima VI (the Nuvie project: http://nuvie.sourceforge.net)
+Unreal Engine 1
+Wolfenstein 3D
+
+Sounds sampled from:
+Anachronox
+"Are You Experienced?" by Jimi Hendrix
+Castlevania: Symphony of the Night
+Chrono Trigger
+Dark Castle (Atari ST)
+Dark Forces
+Day of the Tentacle
+Deus Ex
+D-Generation
+Diablo II
+Freddy Pharkas: Frontier Pharmacist
+Half-Life
+Indiana Jones and the Fate of Atlantis
+Jill of the Jungle
+Magic Carpet 2
+Rise of the Triad
+Sam & Max Hit the Road
+STALKER: Shadow of Chernobyl
+Strife
+Syndicate
+Team Fortress Classic
+Temple of Apshai Trilogy (Commodore 64)
+Thief: The Dark Project
+Windows 3.1
+
+
+==========
+SOUNDTRACK
+==========
+
+"BFG Division" MIDI arrangement by Viscra Maelstrom https://www.doomworld.com/forum/topic/89368-bfg-division-midi/
+
+"Ghosts I 1" MIDI arrangement by Daniele Gas Maffei
+

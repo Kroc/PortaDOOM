@@ -1,0 +1,105 @@
+===========================================================================
+Advanced engine needed  : None  (complevel 2)
+Primary purpose         : Single-player
+===========================================================================
+Title                   : Doom 404
+Filename                : DOOM404.WAD
+Release date            : 1 Dec 2018
+Author                  : Adam Windsor / Capellan
+Email Address           : [redacted]
+Other Files By Author   : This and that
+Misc. Author Info       : Is a rare bipedal cacodemon. 
+
+Description             : It's a sad life on the Space Marine IT Help Desk.
+                          Especially when you're stuck on the graveyard
+                          shift.  Night after night of "Did you try
+                          rebooting?"  Not exactly what you expected when
+                          you signed up.
+
+                          You figured this call would be more of the same:
+                          some garbled voice mail about "gremlins in the
+                          system".  Gremlins?  Seriously, how old is the
+                          guy who left that?  Ninety five?  He probably
+                          remembers vacuum tubes.
+
+                          Now you're here though, something isn't right.  
+                          This facility should be busy, but it's silent.
+                          Almost desolate.  You're starting to feel glad
+                          you brought that popgun they issued you with to
+                          make you look like a real soldier ...
+						  
+Additional Credits to   : SteveD, Never_Again and Demon of the Well for
+                          their playtesting efforts.
+                          Everyone else who gave feedback.
+                          Nick Baker & submerge for the textures.
+                          Alfonzo, Jimmy, PRIMEVAL & Silent Zorah for the music.
+                          iD software, of course.
+===========================================================================
+* What is included *
+
+New levels              : 32 - see D404MAPS.TXT for excessive author notes
+Sounds                  : No
+Music                   : Yes - see D404MUS.TXT for more info
+Graphics                : Nick Baker's Episode 5 textures and a lavafall
+                          texture he created.  Some textures from submerge.
+                          A couple of quick editing jobs of my own.
+Dehacked/BEX Patch      : Level names and story text only.  It's included
+                          in the wad if your port supports that, and as a
+                          separate DEH if it doesn't.
+Demos                   : Only to stop Doomguy navigating maps that aren't there
+Other                   : No
+Other files required    : No
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-32
+                          Every map was built with 404 lines or fewer, as a
+                          nod to the project name, to keep the map design 
+                          focused on the key concept for each level, and to
+                          make sure I didn't spend hours and hours noodling
+                          with detail.
+Single Player           : Designed for. Both continuous and pistol start
+                          play is supported. Play however you prefer. Pistol
+                          start is naturally a bit more difficult.  Note
+                          that for story reasons, 2 maps have death exits.
+Cooperative 2-4 Player  : Supported
+Deathmatch 2-4 Player   : Supported (intended for original deathmatch with
+                          no monsters; I've tried to do more than
+                          just dumping DM starts in there)
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Quite some time 
+Editor(s) used          : Doom Builder 2, GZDoomBuilder
+Known Bugs              : MAP07 - if you play deathmatch with monsters on,
+                          this map will break.  It is also likely to be
+                          problematic in Nightmare difficulty.
+                          MAP29 - you can get killed by the exit, depending
+                          on where you stand.  Just don't press 'use' and
+                          you will go on to map30 (pistol start, but trust
+                          me, it's only marginally tougher that way).
+May Not Run With        : The original German IWAD
+Tested With             : PrBoom+ 2.5.1.3
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

@@ -1,0 +1,46 @@
+
+3 maps with a frozen/teal aesthetic, gimmicky gameplay and rather complicated layouts.
+
+- DOOM2.WAD, prb+ complevel 9 (or equivalent)
+- HNTR and HMP are implemented
+- Maps are intended for pistol-start
+
+========
+= FAQ: =
+========
+
+Q:) Green cyberdemons?
+A:) They behave identically to normal cybs, but have 1/4th the hp.
+
+Q:) What's with all the barons?
+A:) They don't count towards kill % in this wad. If you find this distasteful then play on skill 2 where it's less of an issue.
+
+Q:) Where do I go??
+A:) Follow your heart.
+
+============
+= MAPLIST: =
+============
+
+01: "Another Place, Entirely"
+02: "Prowling Fowl"
+03: "Soria Moria"
+
+- all midi are original compositions
+
+~-= Bonus Maps =-~
+31: Swim With The Flowers
+31: \\\
+31: Puppeteer
+31: Ultimate Fisting Championship
+31: Previously
+
+============
+= CREDITS: =
+============
+
+- GoS for help with the palette, sprites, etc.
+- NiGHTMARE for the "Hellish texture pack":
+- FuzzballFox for the textures in "stonecrap.wad"
+- 40oz for a few textures from mutiny.wad
+- The 5000 people who are credited in cc4-tex and its progeny

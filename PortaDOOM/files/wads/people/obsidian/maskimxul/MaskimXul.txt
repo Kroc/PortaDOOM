@@ -1,0 +1,117 @@
+===========================================================================
+Archive Maintainer      : Please replace the previous upload of Maskim Xul
+Update to               : MaskimXul.wad
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Maskim Xul
+Filename                : MaskimXul.wad
+Release date            : 10/31/2018
+Author                  : Obsidian
+Email Address           : [redacted]
+Other Files By Author   : Search "Author: Obsidian" on the archives
+
+Misc. Author Info       : [REDACTED]
+
+Description             : A set of 3 Boom-compatible maps for Doom II (with 
+                          a decidedly Lovecraftian theme to the second
+                          and third), with epilogue maps on MAP04 and 
+                          MAP30.
+
+Credits to              : Id Software for Doom II
+                          CodeImp for Doom Builder 2
+                          Anotak for Doom Builder X
+                          SirJuddington for SLADE3
+                          Exl for WhackEd4
+                          Whoever made Paint.net for......well, that
+
+Additional credits to   : Alexander "Eternal" S., Cyriak "Mouldy" Harris,
+                          Brett "Mechadon" Harrell and the folks behind 
+                          the game "Cry of Fear" for inspiration
+                          Brett "Mechadon" Harrell for the pointers on
+                          making hilariously oversized maps
+                          SoundBlock and MrGlide for helping with the 
+                          initial boss designs
+                          Urthar for the texture warping tutorial
+                          Jimmy, Vita, Loveless, Tourniquet, rdwpa and John 
+                          Suitepee for playtesting and providing feedback
+                          MagnusBlitz, Altazimuth, Gez, SuperCupcakeTactics, 
+                          Tourniquet and Galileo31dos01 for finding bugs
+                          Other credits can be found in the CREDITS lump in 
+                          the wad. Contains spoilers!
+
+===========================================================================
+* What is included *
+
+New levels              : 5
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Blank DEMO# files
+Other                   : MAPINFO, EMAPINFO, GAMEINFO, DECORATE, DECALDEF
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP04, MAP30
+Single Player           : Designed for
+Cooperative 2-4 Player  : None
+Deathmatch 2-4 Player   : None
+Other game styles       : None
+Difficulty Settings     : None (seeing a trend here?)
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Started 27th of April, 2014
+Editor(s) used          : Doom Builder, SLADE3, WhackEd4
+Known Bugs              : -Laying multiple Jackbombs at once can 
+                          occasionally cause some of them to disappear in
+                          PrBoom+
+                          -The sprites in ZDoom's alternate HUD are
+                          somewhat jumbled due to various bits of
+                          DeHackEd tomfoolery
+                          -There is a small chance of encountering stuck 
+                          monsters in the final fight in ports that don't 
+                          enforce monster spawner telefragging: I've done 
+                          what I can to minimize the chance of it 
+                          happening, but it's still possible
+May Not Run With        : Vanilla Doom
+Tested With             : PrBoom+, ZDoom, GZDoom
+
+
+* Copyright / Permissions *
+
+Authors MAY NOT use the contents of this file as a base for modification or
+reuse, with the exception of the final boss sprites: the zip contains a 
+folder of the sprites at regular size, which can be used as long as you give 
+credit to SuperCupcakeTactics. Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+===========================================================================
+......../\........
+......./||\.......
+......//||\\......
+.....//.||.\\.....
+....//.//\\.\\....
+.../===/..\===\...
+...\===\../===/...
+....\\.\\//.//....
+.....\\.||.//.....
+......\\||//......
+.......\||/.......
+........\/........

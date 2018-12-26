@@ -1,0 +1,668 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : 
+Advanced engine needed  : GZDoom (target source port), ZDoom (discontinued)
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : The Alfonzone
+Filename                : ALFONZON.pk3
+Version                 : 1.04 (19/11/18)
+Release date            : 19/11/17
+Author                  : Pinchy, Augustus "Alfonzo" Knezevich
+Email Address           : pinchyskree@googlemail.com
+Other Files By Author   : https://docs.google.com/spreadsheets/d/1NMqRT7292CMD2sCMyf1ercmG177TkHxMbneLZM1tPYQ/
+Misc. Author Info       : https://www.twitch.tv/pinchyskree
+
+Description             : 50 map ideas inspired by 50 speedmidis created by Augustus "Alfonzo" Knezevich during 30in30 sessions with James "Jimmy" Paddock.
+			10 episodes of 5 maps with unique themes.
+						  
+"Enter the dimension of fragmented memories, where stories are currency, the more unique the better.
+
+The dark city streets, deadly old mansions and rusting industrial centers are just a front for more sinister
+purposes exploiting the local populous.
+
+Popular retreats include abandoned beaches and the rusting hulk of an ancient soviet terror.
+
+If the unforgiving frozen fortresses or hells domain where ancient magic is woven into the stone itself don't
+make you lose your mind, there's always the poisonous jungles for those who seek to harvest the dank.
+
+High tech computational wonders, the dangerous and funky machinery of space and a hope for the future lie ahead,
+off the shores of doomworld itself and into the unknown."
+
+Additional Credits to   : James "Jimmy" Paddock (programming), FuzzballFox(artwork), TerminusEst13(programming), Kurashiki(artwork), Batandy(artwork), Marrub(programming), Kinsie(programming)
+Playesters: John Suitepee, Vortale, Kingdime, bioshockfan90, rehelekretep, Zanieon, Gez, DabbingSquidward, _mental_, skepticist, Firedust
+===========================================================================
+* What is included *
+
+New levels              : 62: 49 playable, 10 intermission, 1 hub, 1 cinematic, 1 ending
+Sounds                  : Yes
+Music                   : Yes - MIDIs composed for use with Microsoft GS Wavetable Synth
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : 
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   MAP01 - Window Hopping
+			MAP02 - Market Anarchy
+			MAP03 - Tunnel Vision
+			MAP04 - About Town
+			MAP05 - Icy Hitman
+			MAP06 - Sandy Wedges
+			MAP07 - Shard Light
+			MAP08 - Desolate Flicker
+			MAP09 - Dark Souls
+			MAP10 - Rusty Ruin
+			MAP11 - Dank Memes
+			MAP12 - Mud Run
+			MAP13 - Rising Stank
+			MAP14 - Beat Down
+			MAP15 - Hard Poison
+			MAP16 - Garage Metal
+			MAP17 - Anabolic Pretzelary
+			MAP18 - Lowdown Highrise
+			MAP19 - Crane Fishing
+			MAP20 - Toxic Terror
+			MAP21 - Cross Country
+			MAP22 - Kick Starter
+			MAP23 - Tenta Cult
+			MAP24 - Evil Resident
+			MAP25 - Light Vault
+			MAP26 - Crows Haven
+			MAP27 - Graveyard Run
+			MAP28 - Ember Tears
+			MAP29 - Crushed Ice
+			MAP30 - Ultimate Bastion
+			MAP31 - Count Fronkula
+			MAP32 - Death Caverns
+			MAP33 - Bottled Peenk
+			MAP34 - Tangy Weave
+			MAP35 - Guts Palace
+			MAP36 - Al Button
+			MAP37 - Light Speed
+			MAP38 - !Solve Boontydoco
+			MAP39 - Byte Size
+			MAP40 - Electric City
+			MAP41 - Voidwarp Prototype
+			MAP42 - Acid Asteroid
+			MAP43 - Floaty Light
+			MAP44 - Jaws Industries
+			MAP45 - Plutonian Experiment
+			MAP46 - One Bookmark
+			MAP47 - Doominati Beats
+			MAP48 - The Escape
+			MAP49 - The Journey
+			MAP50 - The Alfonzone
+			MAP51 - Episode 1: Jazzy City
+			MAP52 - Episode 2: Ambient Walks
+			MAP53 - Episode 3: Caustic Jungle
+			MAP54 - Episode 4: Heavy Industry
+			MAP55 - Episode 5: Old Money
+			MAP56 - Episode 6: Mad Gothic
+			MAP57 - Episode 7: Abstract Evil
+			MAP58 - Episode 8: Component Level
+			MAP59 - Episode 9: Funky Space
+			MAP60 - Episode 10: Everything Else
+			MAP61 - Welcome To The Alfonzone
+			MAP62 - You Win!
+
+Music #                 MAP01 - 028 Wet Lunch.mid
+			MAP02 - 006 Calzone.mid
+			MAP03 - 019 Patronized in Soho.mid
+			MAP04 - 001 On The Outer.mid
+			MAP05 - 038 Ballad of Cold Egg.mid
+			MAP06 - 027 Desert Island Brainfart.mid
+			MAP07 - 047 Jesus Sandals.mid
+			MAP08 - 003 Eddie Marsan Calms Down.mid
+			MAP09 - 008 Declan.mid
+			MAP10 - 045 Inadequate Beach.mid
+			MAP11 - 007 Taiko Bile.mid
+			MAP12 - 009 Do Not Enter.mid
+			MAP13 - 005 Monkey Bomb.mid
+			MAP14 - 013 Thrummingbird.mid
+			MAP15 - 040 Shirtfront and Immigration.mid
+			MAP16 - 050 Smokestack.mid
+			MAP17 - 032 It Was Fun While It Blasted.mid
+			MAP18 - 012 Streets In Revolt.mid
+			MAP19 - 016 Doglead.mid
+			MAP20 - 037 Drug Shuttle.mid
+			MAP21 - 022 Farmhaus.mid
+			MAP22 - 004 Ant Farm for Brendt.mid
+			MAP23 - 033 Pol Pot Kettle Black.mid
+			MAP24 - 035 Call Doctor Birch, 0-800.mid
+			MAP25 - 031 The Rats of Parliament.mid
+			MAP26 - 025 Spirit of the Bitch.mid
+			MAP27 - 017 Paddywhack.mid
+			MAP28 - 014 Hammond Inferno.mid
+			MAP29 - 030 Crib Death.mid
+			MAP30 - 015 Glock On and Win
+			MAP31 - 020 The Tyranny is Real.mid
+			MAP32 - 036 Diagram.mid
+			MAP33 - 023 Brain Tumour Carousel.mid
+			MAP34 - 048 Low Fire.mid
+			MAP35 - 046 Thrash Compactor.mid
+			MAP36 - 021 Digital Bitchslap.mid
+			MAP37 - 029 Master Faster.mid
+			MAP38 - 002 Pistons of No.mid
+			MAP39 - 011 Croissant, No Success.mid
+			MAP40 - 049 Guerrilla Tech.mid
+			MAP41 - 018 Honourable Loss.mid
+			MAP42 - 044 Generico.mid
+			MAP43 - 043 Jon deLoop.mid
+			MAP44 - 034 Pen Fifteen (Days of Youth).mid
+			MAP45 - 010 Dinner on Pluto.mid
+			MAP46 - 024 Mr. Mo.mid
+			MAP47 - 026 Bad Imperative.mid
+			MAP48 - 041 Some o' That (Guilt Tofu).mid
+			MAP49 - 042 Pirate Hooker Hoedown.mid
+			MAP50 - 039 Lewis.mid
+			MAP51 - N/A
+			MAP52 - N/A
+			MAP53 - N/A
+			MAP54 - N/A
+			MAP55 - N/A
+			MAP56 - N/A
+			MAP57 - N/A
+			MAP58 - N/A
+			MAP59 - N/A
+			MAP60 - N/A
+			MAP61 - 028 Wet Lunch.mid
+			MAP62 - 028 Wet Lunch.mid
+			Title - 028 Wet Lunch.mid
+			Text Screen - liar.mid (Jmickle, Midi Year One)
+			Intermission - 
+
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : 
+Difficulty Settings     : Yes
+
+* Textures *
+
+Zoon Tex
+
+Textures: James “Jimmy” Paddock, Fuzzball, Kurashiki, Batandy
+Jimmyshards Decorate: Pinchy
+
+REDTEK (MAP43 “Floaty Light”)
+Textures: Fuzzball
+
+* Additional Textures *
+
+32in24-15_tex
+32in24-15_tex_V2
+n3txv1.2 (Nova 3)
+Alien Versus Predator
+Aquatex V6: Jmickle
+Bloody Rust 2
+cwbdoom1: 
+deConstruct: Stecki
+Fort: Jmickle
+Graphtallica #1: Sean Johnson
+Gothmash: 
+Malice: Team Epochalypse
+NMNCorp: Pawel Zarczynski
+Mortiser: Nick Baker & Sam Woodman
+Ogro: FrançoisX Delmotte
+Silver Textures: Nick Baker
+Stomper: AlterWorldRuler
+TooMuchBrown: Daniel Gimmer
+Useful Flats: Nick Baker
+SS's Texture Pack: Sailor Scout
+HEX2TEX.WAD: Raven Software, The Malice team, Nick Baker
+BAK_LEG.WAD: Raven Software, BlazingPheonix, Captain Toenail, Enjay, Esselfortium, Evil Space Tomato, Gez, 
+Neoworm, Nightmare, Pun1sh3r, Icytux, Rottking, Tormentor667, Vader, Xaser
+WintexSH.wad: Used for The Russian Speedmapping Session #17
+Walltex: http://www.telefragged.com/wally
+Equinox.wad: B.P.R.D
+darkftex.zip: Dark Forces Textures, A Limes Zen Sky
+COMPEXIT: http://findicons.com/icon/229740/gnome_session_logout
+
+* Skies *
+
+Episode 1: “PSCITYA” (City)
+Textures: plums' skystravaganza (plmsky1.wad)
+Artwork: plum
+
+Episode 2: “SUNSETSE” (Sunset Sea)
+Artwork:  Edward Musiak
+File Link: http://all-free-download.com/free-photos/download/sunset-sea_515590.html
+Texture Edit: Batandy, Pinchy
+
+Episode 3: “MONDRIGN” (Swamp)
+Textures: (mondrigan.wad)
+Artwork: jmickle66666666
+
+Episode 4: “PSSNDA” and “PSSTORM” combined
+Textures: plums' skystravaganza (plmsky1.wad)
+
+Episode 5: “PSTEHRN”
+Textures: plums' skystravaganza (plmsky1.wad)
+Texture Edit: “PSSNDAIN” Pinchy
+
+Episode 6: “SKYNDMN”
+Textures: SKYND03 with Jackie Judy Feldmanns Bonfire Night Rad39s Sims Stuff Moon edited into it 
+http://aimportantwallpapers.blogspot.co.uk/2015/08/bright-sky-with-moon.html
+Texture Edit: Pinchy
+
+Episode 7: “HELLSKY” by Mechadon
+Texture:  HELLSKY4
+
+Episode 8: “COMPCITY” Dark Forces sky edit
+Textures: SKYDF01.png
+
+Episode 9: “FUZZSPAC”
+Textures: DIRbNcT.png by Fuzzballfox
+
+Episode 10: “DOOMHAZE”
+Textures: HCLDSKY1.png by Mechadon
+
+* Sprites *
+
+Trash Can: TrashCan.wad
+
+Submitted: Lucario
+Sprites: 3D Realms (Duke Nukem 3D)
+Edited By: Pinchy (made smaller)
+
+Box: Box.wad
+
+Submitted: Captain Awesome
+Sprites: 3D Realms (Duke Nukem 3D), Captain Awesome (Edit)
+
+Palm Trees: PalmTrees.wad
+
+Submitted: CaptainToenail
+Sprites: Necrodome, Powerslave
+
+Food Items: Food.wad
+
+Submitted: DavidRaven
+Sprites: 3D Realms, Dolphman (ripper)
+
+Fire Bowl: FireBowl.wad
+
+Submitted: zrrion the insect
+Sprites: Raven Software, zrrion the insect (edit)
+
+Skull Candle: SkullCandle.wad
+
+Submitted:  Captain Toenail
+Sprites: Id Software, Captain Toenail (edit)
+
+Doom Torch Replacements: Refracture Torches.png
+
+Submitted: Refracture
+Artwork: Refracture http://forum.zdoom.org/viewtopic.php?p=767891&sid=5c889cdb8736f1130b8ea00411555236#p767891
+Sprites: Pinchy
+
+Seaweed: seaweed.wad
+
+Submitted: CaptainToenail
+Decorate: CaptainToenail
+Sprites: Exhumed
+Sprite Edit: Captain Toenail
+
+Thin Cacti: Cacti.wad
+
+Submitted: CaptainToenail
+Decorate: CaptainToenail
+Sprites: Necrodome
+
+Roof Lights: RoofLights.wad
+
+Submitted: Gez
+Decorate: Gez
+GLDefs: Gez
+Sprites: Id Software, Raven Software
+Sprite Edit: Captain Red
+
+Yellow Lamp: YellowLamp.wad
+
+Submitted: Ghastly_dragon
+Decorate: Ghastly_dragon
+GLDefs: Ghastly_dragon
+Sprites: Id Software
+
+Phantasm: Phantasm.wad
+
+Submitted: MagicWazard
+Decorate: MagicWazard
+GLDefs: MagicWazard
+Sounds: id Software, Midway Software
+Sprites: id Software
+Sprite Edit: MagicWazard
+Idea Base: Phantom from Doom RPG/Doom II RPG
+Edit to Phantom Sprite (Map 10): Pinchy
+
+Ceramic Pottery: Ceramic Potery.wad
+
+Submitted: Yuyu3
+Decorate: Yuyu3
+Sounds: Hexen
+Sprites: Hexen, Raven Software, Id Software
+Sprite Edit: Yuyu3
+Idea Base: Hexen Sprites are very dark, so i decided to colorize
+Colour correct EGIPB0 lump: Pinchy
+
+Hell Growth: HellGrowth.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Id Software
+Sprite Edit: Captain Toenail
+Idea Base: Doom alpha texture
+
+Marble Urns: MarbleUrn.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Captain Toenail
+
+Stone Heads: StoneHeads.wad
+
+Submitted: CaptainToenail
+Decorate: CaptainToenail
+Sprites: Necrodome
+SpriteEdit: CaptainToenail
+
+Skull Tree: SkullTree.wad
+
+Submitted: zrrion the insect
+Decorate: zrrion the insect
+Sprites: Doom, Heretic
+
+Dead Swamp Trees: DeadSwampTrees.wad
+
+Submitted: Gothic
+Decorate: Gothic
+Sprites: Raven Software
+
+Root Pack: RootPack.wad
+
+Submitted: Captain Awesome
+Decorate: Lucario, Captain Awesome
+Sprites: Duke Nukem 3D by 3D Realms
+Sprite Edit: Captain Awesome, Xaser
+
+Mushrooms: Mushrooms.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: ShadowCaster
+Sprite Edit: Captain Toenail
+
+Glowing Mushrooms: GlowingMushrooms.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Gldefs: Captain Toenail
+Sprites: Raven
+Sprite Edit: Captain Toenail
+
+Food: Food Barrel.wad
+
+Submitted: Yuyu3
+Decorate: Yuyu3
+Sprites: Rogue Entertainment, RpgMaker XP
+Sprite Edit: Yuyu3
+
+Bronze Lamps: BronzeLamps.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Doom
+Sprite Edit: Captain Toenail
+
+Grey Metal Barrel: GreyMetalBarrel.wad
+
+Submitted: Ghastly_dragon
+Decorate: Ghastly_dragon
+Sprites: Id Software
+
+Brown Metal Barrel: BrownMetalBarrel.wad
+
+Submitted: Ghastly_dragon
+Decorate: Ghastly_dragon
+Sprites: Id Software
+
+Small Trees and Bushes: Bushes.wad
+
+Submitted: Gothic
+Decorate: Gothic
+Sprites: id Software
+Sprite Edit: Xaser, Jimmy, Minigunner
+
+Chandelier: Chandelier.wad
+
+Original: DukeDC
+Doom Pallette Edit: Jimmy
+
+Wall Torches: WallTorches.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Doom
+Sprite Edit: Captain Toenail
+
+Winter Tree Spawner: WinterTreeSpawner.wad
+
+Submitted: Dr. Doctor
+Decorate: Dr. Doctor
+Sprites: Raven Software and Bethesda
+Sprite Edit: Dr. Doctor
+
+Crow: Crow.wad
+
+Submitted: Mor'ladim
+Decorate: Mor'ladim
+Sounds: Mor'ladim, Jojikiba (Caw sound)
+Sprites: Konami (Contra: Hard Corps)
+Sprite Edit: Mor'ladim
+
+Chandeliers: Chandelier.wad
+
+Submitted: TODM, Blue Shadow
+Decorate: TODM, Blue Shadow (Edit)
+GLDefs: TODM, bravo (Worked of his Original)
+Sounds: Petrilla Entertainment
+Sprites: Hexen
+Sprite Edit: TODM
+
+Candelabras: candlecolorvariations.wad
+
+Submitted by: theultimatefaris766.
+DECORATE by: theultimatefaris766.
+GLDEFS by: theultimatefaris766.
+Sprites: idsoftware.
+Sprites Edit: theultimatefaris766 and Bloax.
+Idea Base: idsoftware's candle and candelabra.
+
+Fire Pillar: StrifeFirePillars.wad
+
+Submitted: Gothic
+Decorate: Gothic
+GLDefs: Gothic
+Sprites: Rogue Entertainment, Raven Software
+Sprite Edit: Gothic
+Idea Base: Zrrion's Doom and Hexen Pillars
+
+Doom Statues: DoomStatues.wad
+
+Submitted: MagicWazard
+Decorate: JMAA
+GLDefs: N/A
+Sounds: N/A
+Sprites: Raven Software, id Software
+Sprite Edit: JMAA, MagicWazard (Statues); Captain Toenail, Gez, ShadesMaster, Shtbag667 (Column Variants)
+Idea Base: Statues from Hexen, Marble Column variants
+
+Bloody Chalice: BloodyChalice.wad
+
+Submitted: Ghastly_dragon
+Decorate: Ghastly_dragon
+Sprites: Id Software
+
+Marble Columns: MarbleColumns.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: id Software
+Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+Plasma Globe: PlasmaGlobe.wad
+
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Doom, Doom64, Captain Toenail
+
+Satellite Dish
+
+Sprites: 3D Realms
+
+Laboratory Glass Pack: LabGlassPack.wad
+
+Submitted: DavidRaven
+Decorate: DavidRaven
+Sprites: Raven Software, Tormentor667, DavidRaven
+Sprite Edit: DavidRaven
+Idea Base: DavidRaven
+Bushes: Bushes.wad
+
+Submitted: Gothic
+Decorate: Gothic
+Sprites: id Software
+Sprite Edit: Xaser, Jimmy, Minigunner
+
+* Fonts *
+
+MEMENTWO SMALL: MementwoSmallFont.pk3
+
+Submitted: Jimmy
+Author: Jimmy / Memento Mori 2 team
+Original font: Memento Mori 2's titlepatch font (author credits)
+
+MEMENTWO BIG: MementwoBigFont.pk3
+
+Submitted: Jimmy
+Author: Jimmy / Memento Mori 2 team
+Original font: Memento Mori 2's titlepatch font
+
+* Audio *
+
+POISONA, POISONB, POISONC
+
+http://soundbible.com/1148-Bubbling.html
+
+POISOND
+
+http://soundbible.com/1137-Bubbles.html + http://soundbible.com/1936-Crisp-Ocean-Waves.html
+
+TORCHFLA
+
+http://soundbible.com/1348-Large-Fireball.html
+
+WATERFLO
+
+http://soundbible.com/1444-Liquid.html
+
+CLOCKSTR
+
+http://soundbible.com/1617-Clock-Strikes-Twelve.html
+
+DOORBELL
+
+http://soundbible.com/1466-Doorbell.html
+
+DOORCREA
+
+https://www.freesound.org/people/InspectorJ/sounds/342554/
+
+SECALARM
+
+http://soundbible.com/287-Industrial-Alarm.html
+Edits: Concert hall review, extended length, fade out.
+
+PORTCULL
+
+https://www.freesound.org/people/Omnisis/sounds/336888/
+Edits: Crop, time warp, volume reduction, fade out.
+
+STONESLI
+
+https://freesound.org/people/Timbre/sounds/70753/
+Edits: Time warp to 4 seconds, pitch increased to 130%.
+
+https://freesound.org/people/bareform/sounds/218721/
+Edits: Volume increased to 130%.
+
+TELEBEAM
+
+https://freesound.org/people/nsstudios/sounds/344276/
+Edits: Start silence cropped, volume increased to 140%
+
+CPUALARM
+
+https://freesound.org/people/JarAxe/sounds/204425/
+Edits: Cropped, looped, fade out
+
+FOODDING
+
+https://freesound.org/people/sethlind/sounds/265012/
+Edits: Cropped, fade out
+
+GRAVITYD
+
+https://freesound.org/people/peepholecircus/sounds/169994/
+Edits: Volume increased to 177%
+
+LIFTMOVE, LIFTSTOP
+
+https://freesound.org/people/Filipe%20Chagas/sounds/91917/
+Edits: Crop, fade in
+
+DOOROUT, DOORIN
+
+https://freesound.org/people/squidge316/sounds/404921/
+Edits: Crop, volume increase to 158%, reverse
+
+FIREROAR
+
+https://freesound.org/people/hykenfreak/sounds/331621/
+Edits: Crop
+
+ARENAEND
+
+https://freesound.org/people/beman87/sounds/162849/
+Edits: Volume, crop, fade
+
+
+* Construction *
+
+Base                    : Maps: New from scratch. Midis: Enhanced speedmidis
+Build Time              : 1000+ hours
+Editor(s) used          : GZ Doom Builder, Slade 3, Photoshop 6, Goldwave, Bitmap Font Writer
+Known Bugs              : Zdoom: 3d floor sprite clipping, midtex clipping, palletisation
+May Not Run With        : 
+Tested With             : ZDoom, GZDoom
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://www.doomworld.com/files/
+FTP sites:

@@ -1,0 +1,535 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : Struggle - Antaresian Legacy
+Filename                : STRG
+Release date            : August 19. 2018
+Author                  : antares031
+Email Address           : [redacted]
+Other Files By Author   : Antaresia, Ludicrium, Harvester's Reminiscence for
+                          DMP2016, The Kerberos Complex for DMP2017, Alpha
+                          Scorpii Supercluster for Nova 3, and more levels
+                          for various community projects, such as
+                          THT:Threnody, Joy of Mapping 5, SlaughterMAX, and
+                          DyingCamel's Demons #1
+
+Description             : Struggle - Antaresian Legacy is a single-player mod
+                          for Doom 2 with limit removing compatibility. It
+                          features new weapons and monsters replacement with
+                          DeHacked patch. Some of original monsters are also
+                          slightly changed, so it's recommended to check out
+                          the info below, before you play this one. Thanks,
+                          and have fun. :)
+                          
+                          [IMPORTANT] This wad uses heavily modified DeHacked
+                          patch. So it is recommended not to use other custom
+                          gameplay patches.
+                          
+                          P.S.: Par time is based on UV-MAX, not UV-Speed
+                          
+                          P.P.S. : Please try STRG_M28.wad file, if you're
+                          having a framerate issue with MAP28.
+
+Additional Credits to   : Textures: Alien Vendetta, Plutonia, Textures.com
+                          (a.k.a. CGTextures), + Mechadon for source files of
+                          the skybox of the last episode
+                          
+                          Sound Effects: Cry of Fear, Heretic, Hexen, Doom 3
+                          RoE, NavyFIELD
+                          
+                          Sprites: Heretic, Hexen, Kingdom of the Wind,
+                          +Smooth Doom for rocket explosion sprites
+                          
+                          Music: Fortress 2, Fortress 2 Blue, Digimon Online,
+                          Dragon Force: The Day 3, Psychedelic Eyeball
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Basically, the idea was come from 2006
+Editor(s) used          : Doom Builder 2, XWE, WhackEd4, SLADE3, Photoshop
+                          CS3, Goldwave
+Known Bugs              : Possible slime trails and all-ghost effect in
+                          classic ports
+May Not Run With        : Vanilla Doom source ports
+Tested With             : PrBoom+ 2.5.1.5 w/ complevel 2
+                          GZDoom g3.4.0 (software renderer)
+                          ZDaemon 1.10.04
+                          Zandronum 3.0
+
+
+* Contents *
+
+- Release History
+- Special Thanks
+- Info
+* Story
+* Weapon replacement
+* New Monsters
+* Monster Adjustment
+* Levels (with one-line commentary)
+* UV-Max par time
+* Background music
+* Weapon models
+
+
+=== Release History ===
+
+- Beta 1 : Oct 11, 2015
+- Beta 2 : Nov 4, 2015
+- Beta 3 : Feb 26. 2016
+- Beta 4 : November 28, 2016
+- Beta 4B : Febuary 8, 2018
+- Beta 5 : March 19, 2018
+- Release Candidate 1 : June 24, 2018
+- Release Candidate 2 : June 30, 2018
+- Release Candidate 3 : August 7, 2018
+- Release Candidate 4 : August 11, 2018
+- idgames release : August 19. 2018
+
+
+=== Special Thanks ===
+
+* FDA or livestream feedback, video playthrough providers
+Deadwing, scifista42, gaspe, Dragonfly, x38_ViTa_38, loveless, Veinen,
+129thVisplane, kakhome1, Megablast, MrZzul
+
+* Suggestions, bug report providers
+Memfis, Doomkid, SuperCupcakeTactics, EffinghamHuffnagel, Fonze, 
+rhinoduck, Poohlyash, Evolution, WH-Wilou84, tmorrow, Terminus,
+Keyboard_Doomer
+
+* Doomworld Megawad Club participants (July 2018)
+Roofi, tmorrow, FrancisT18, NuMetalManiak, Forli, rehelekretep,
+Magnusblitz, TheOrganGrinder, Catpho, DavitW, Aquila Chrysaetos,
+Rayziik, Dragonfly, CPCTC, Salt-Man Z
+
+
+=== Info ===
+
+= Story =
+You wake up in the morning and watch the news.
+The newsflash reports that the demonic invasion is suddenly begun.
+Millions of people were killed within less than an hour, and it's getting worse.
+You pick up your pistol & hammer, and see what's actually going on out there.
+You better struggle yourself to live than just stay at home during the invasion... I guess?
+
+= Weapon replacement =
+0a. Ammo capacity
+- 9mm bullet: 180 (360)
+- Shells: 36 (72)
+- Grenade: 18 (36)
+- .223 cal.: 160 (320)
+
+0b. Ammo pickup
+- 9mm bullet: 12 / 60
+- Shells: 2 / 10
+- Grenade: 1 / 5
+- .223 cal.: 20 / 100
+
+1a. Hammer (replacing fist)
+- Damage is increased by twice
+- Slower firing speed
+
+1b. Drill machine (replacing chainsaw)
+- Faster firing speed
+
+2. Pistol
+- Now shoots in burst mode (2 shoots)
+- Always accurate to aiming point
+
+3a. Shotgun
+- Faster firing speed
+
+3b. Super Shotgun
+(no changes)
+
+4. Dual-Wielding Pistols (replacing chaingun)
+- Faster firing speed
+
+5. Grenade Launcher (replacing RL)
+- Deadlier projectile (Damage: 20 -> 50, Speed: 20 -> 30)
+- Slower firing speed
+
+6. Assault rifle (replacing plasma rifle)
+- Deadlier projectile (Damage: 5 -> 7, Speed: 20 -> 35)
+
+7. Leichenfaust (replacing BFG9000)
+- Like BFG9000, but with better reaction time and less projectile damage
+- Each tracer deals additional explosive damage
+- Able to keep firing without reloading sequence, if you hold down the fire button
+- Damage: 50, Speed 25
+
+
+= New Monsters =
+
+1. Chaingun Elite (replacing Wolfenstein SS)
+HP: 80 / Pain chance: 30.86%
+"Possesed by Afriest, this elite soldiers now have more health and agility,
+ shooting four super-fast energy bolts."
+
+2A. Antaresia (replacing Baron of Hell, original sprite: Ophidian from Heretic)
+HP: 650 / Pain chance: 16.80%
+"A cerulean ophidian from another dimension. First burst shots might be okay, 
+but the last blow is capable of taking a soul of unlucky victim in one shot."
+* Antaresia and Hell Knight don't provoke monster infighting each other.
+
+2B. Antaresia Elite (Special variation of Antaresia)
+HP: 800 / Pain chance: 3.13%
+"A rare monster that only appears in the last episode. It's heavily armored, and
+has much faster movement speed. It also drops a blue skull relic, once it's dead."
+
+3A. Afriest (1st Boss, o/s: Dark Bishop from Hexen)
+HP: 500 / Pain chance: 16.02%
+"You couldn't see it coming for you. A very fast and agile hunter with tons of magic.
+This is insane."
+
+3B. Afriest Statue (Special variation of Afriest)
+HP: (invulnerable)
+"A statue made out of cerulean marble from another world. One statue is capable of 
+recalling a single monster from the other dimension"
+
+3C. Afriest Turret (Special variation of Afriest)
+HP: (invulnerable)
+"Imbued with mysterious power, these statues are indestructible. Good luck."
+
+4A. Leviathan (2nd Boss, replacing Commander Keen, o/s: Heresiarch from Hexen)
+HP: 10000 / Pain chance: 4.30%
+"A vicious sorcerer with tough health and outstanding agility. He can incinerate 
+anything that blocks his way. Also, can spawn minions."
+* Some of them don't flinch by pain, but they don't spawn monsters.
+
+4B. Spectroviathan (Special variation of Leviathan)
+HP: 2800 / Pain chance: 0%
+"Leviathans managed to create transparent puppets to accomplish their goal much
+easier. Still, these creatures are unstable and fragile, compare to the originals."
+
+5. --- (Final Boss, replacing Boss Brain, o/s: Iron Lich from Heretic)
+HP: 22400 / Pain chance: 1.95%
+"Ignis Infinitus"
+
+
+= Monster Adjustment =
+
+1. Zombieman
+- Faster movement speed
+- Now shoots constantly
+- Lower pain chance
+
+2. Shotgun guy
+- Faster movement speed
+- Lower pain chance
+
+3. Heavy weapon dude
+- Faster movement speed
+- Lower pain chance
+
+4. Imp
+- Faster movement speed
+- Lower pain chance
+
+5. Demon
+- Faster movement speed
+- Lower pain chance
+
+6. Spectre
+- Replaced from Demon to Spectrocaco
+- Faster movement speed, but lesser health
+- Fireball now has faster speed with more powerful damage
+- Lower pain chance
+
+7. Lost Soul
+- Now charges attack without delay
+- Lesser health
+
+8. Cacodemon
+- Faster movement speed
+- Fireball now has faster speed with more powerful damage
+- Lower pain chance
+
+9. Hell Knight
+- Faster movement speed
+
+10. Baron of Hell
+- Replaced to Antaresia
+- Shoots burst fireballs, then fires deadly energy bolt.
+- Faster movement speed
+
+11. Arachnotron
+- Faster movement speed
+- Now shoots with a hitscan minigun
+
+12. Pain Elemental
+- Faster movement speed
+- Lesser health
+
+13. Revenant
+- Now shoots twin mini-rockets
+- Mini-rocket travels faster, but no more homing ability
+- The damage of mini-rocket is reduced
+- Lower pain chance
+
+14. Mancubus
+- Faster projectile speed
+
+15. Arch-vile
+- Now can resurrect Spider Mastermind
+- Greater pain chance
+
+16. Spider Mastermind
+- Faster movement speed
+- Health is increased from 3000 to 3300
+- Now attacks with both hitscan machinegun and deadly energy bolts
+- Faster reaction time with less pain chance
+- Now can defeat Cyberdemon in 1-on-1
+
+17. Cyberdemon
+- Faster movement speed
+- Faster projectile speed and damage, same as player's grenade
+- Now can be defeated by Spider Mastermind in 1-on-1
+
+18. Wolfenstein SS
+- Replaced to Chaingun Elite
+- Faster movent speed
+- Has more health than original HWD (70 -> 80)
+- No longer shoots hitscan attatck. Instead, he shoots four energy bolts
+
+
+= Levels (with one-line commentary) =
+
+Episode 1 - The Catastrophe Begins
+
+MAP01: At the Entrance
+- A simple, straightforward opener for a full megawad.
+
+MAP02: Ready to Survive
+- Used to have a problem with navigating around in the early version.
+
+MAP03: 3rd Supply Depot
+- One of two levels that were salvaged from Catastrophe (2013); the scrapped megawad project long ago.
+
+MAP04: Local Outpost
+- A tribute to the second level I've ever created in 2006, which was MAP02 of Catastrophe (2006. yes, there are two of them.).
+
+MAP05: Sewage Treatment
+- An another level from Catastrophe (2013). Remember that Cyberdemons also shoot the same rockets as yours.
+
+MAP06: Meet the Afriest
+- I hope you like blue textures. Spoiler alert for the final episode.
+
+MAP07: Point Foxtrot Tango
+- I apologize in advance for using tag 666/667 in MAP07.
+
+MAP08: A Forgotten Base
+- I stopped mapping and made the exit, because I was running out of ideas.
+
+MAP09: Spectre Strikes
+- Remember, there are no pinky spectres in this wad. Mind the spectrocacos.
+
+MAP10: Cerulean Ophidians
+- You can call them Ophidians, instead of Antaresias, if you want.
+
+MAP11: The Indomitable Mastermind
+- Arch-viles can resurrect Spider Masterminds in this wad.
+
+
+Episode 2 - Two Gateways to Inferno
+
+MAP12: Into the Danger
+- I apologize in advance again for a mediocre name of the level.
+
+MAP13: Military Base
+- It has a shooting range, to inform you that this is a military base.
+
+MAP14: A Ticket from Inferno
+- You need to press both Unit Switches to get a yellow keycard.
+
+MAP15A: Teleportation Delta
+- Used to have 665 monsters on UV.
+
+MAP15B: Scorching Flames
+- It was my #1 favorite unusual effect in Team Fortress 2.
+
+MAP15C: The Leviathan
+- Based on the concept of the final level of Catastrophe (2013).
+
+MAP16: Return to Earth
+- I expanded the idea of this level, and made The Kerberos Complex for DMP2017.
+
+MAP17: Infinity Edge
+- It has some miniatures of real life landmarks, and even a battleship.
+
+MAP18: Point Lima Foxtrot
+- Seriously, who's idea to put BFG for the first time in MAP18?
+
+MAP19: Teleportation Theta
+- Remember, those afriest turrets are indestructible. Don't try to shoot them.
+
+MAP20: Chorok Yeonok
+- It means "Green Purgatory" in korean. I hope you like green textures.
+
+
+Episode 3 - Antaresian Legacy
+
+MAP21: The Overture
+- I hope you like blue textures. I really hope so.
+
+MAP22: Afriests' Seminary
+- I hope you like Afrie... nevermind.
+
+MAP23: Rhabdophis Tigrinus
+- The name was from a snake, that nearly freaked me out while I was planting dummy mines near the DMZ.
+
+MAP24: The Lost Temple
+- This level introduces Antaresia Elite, which is basically a combination of Antaresia and Evil Marine from Scythe 2.
+
+MAP25: Druidia Borealis Sanctum
+- The name has references from Skyroads, Half-Life 2, and even Doom (2016).
+
+MAP26: Leviathan's Hideout
+- I became a fan of dome structure, after I designed Alpha Scorpii Supercluster for Nova 3.
+
+MAP27: Legions against One
+- Ran out of ideas for mapping, so I just made three symmetric rooms with a full of demons.
+
+MAP28: The Antaropolis
+- Inspired by "The Hags Finger" from Sunder. It also has an optional wad with less details; STRG_M28.wad.
+
+MAP29: Alpha Scorpii Monument
+- A tribute to "Misri Halek" from Alien Vendetta; my all-time favorite Doom level. It also has a super secret.
+
+MAP30: Ignis ex Antaresia
+- Par time is one minute, even shorter than the first level. Good luck.
+
+
+= UV-Max par time =
+
+MAP01 - 4:00
+MAP02 - 6:30
+MAP03 - 8:30
+MAP04 - 9:30
+MAP05 - 13:00
+MAP06 - 6:30
+MAP07 - 10:00
+MAP08 - 9:30
+MAP09 - 12:00
+MAP10 - 12:30
+MAP11 - 10:00
+
+MAP12 - 15:00
+MAP13 - 14:00
+MAP14 - 14:30
+MAP15A - 10:30
+MAP15B - 16:30
+MAP15C - 6:00
+MAP16 - 18:30
+MAP17 - 17:30
+MAP18 - 10:00
+MAP19 - 19:00
+MAP20 - 15:00
+
+MAP21 - 7:30
+MAP22 - 9:00
+MAP23 - 10:30
+MAP24 - 11:00
+MAP25 - 12:00
+MAP26 - 17:30
+MAP27 - 11:00
+MAP28 - 21:30
+MAP29 - 25:30
+MAP30 - 1:00
+
+Par of the course - 6:25:00
+
+
+= Background music =
+
+MAP01: Fortress 2 Blue - Stage00011.mid "Welcome To Skull's Hell"
+MAP02: Fortress 2 - GM09.mid
+MAP03: Digimon Online - Stage11.mid "Castle of Myotismon (original)"
+MAP04: Digimon Online - Stage10.mid "Neo Seoul (alternative)"
+MAP05: Fortress 2 Blue - Stage00007.mid "TeMP Time"
+MAP06: Fortress 2 - Stage00003.mid "The Fantastic Island"
+MAP07: Fortress 2 Blue - GM05.mid (Waiting Room Theme)
+MAP08: Fortress 2 - Stage00011.mid "The Broken City"
+MAP09: Fortress 2 Blue - Stage00013.mid "When Skull Met the Gold-Crown"
+MAP10: Digimon Online - Stage03.mid "Overturned Desert"
+MAP11: Fortress 2 Blue - Stage00002.mid "The Profound"
+MAP12: Fortress 2 - Stage00000.mid "The Hidden Stage"
+MAP13: Dragon Force: The Day 3 - STAGE03 "For the Day III"
+MAP14: Digimon Online - Stage13.mid "Castle of Myotismon (alternative)"
+MAP15: Fortress 2 Blue - Stage00011.mid "Welcome To Skull's Hell"
+MAP15B: Fortress 2 - Stage00001.mid "The Artificial satellite"
+MAP15C: Fortress 2 Blue - Stage00010.mid "Tank Slayer"
+MAP16: Fortress 2 - GM02.mid
+MAP17: Digimon Online - Stage04.mid "Neo Seoul (original)"
+MAP18: Fortress 2 Blue - GM05.mid (Waiting Room Theme v2)
+MAP19: Fortress 2 - Stage00005.mid "The Yamato Ship"
+MAP20: Fortress 2 Blue - Stage00005.mid "The Invincible"
+MAP21: Dragon Force: The Day 3 - STAGE01.mid "Grand Work Buster"
+MAP22: Fortress 2 Blue - Stage00001.mid "I Know What You Did Last Stage"
+MAP23: Fortress 2 Blue - Stage00015.mid "Egyptian Rule"
+MAP24: Fortress 2 Blue - Stage00003.mid "Saving Private Skull"
+MAP25: Psychedelic Eyeball - Bloody Skies
+MAP26: Psychedelic Eyeball - The Day of Defeat
+MAP27: Fortress 2 Blue - Stage00006.mid "Culture Shock"
+MAP28: Psychedelic Eyeball - Iceberg
+MAP29: Psychedelic Eyeball - Monuments of Treason
+MAP30: Fortress 2 Blue - Stage00010.mid "Tank Slayer"
+
+Title Screen: Fortress 2 - Stage00001.mid "The Artificial satellite"
+Intermission: Digimon Online - System02.mid "Main Theme"
+Text Screen: Dragon Force: The Day 3 - STAGE05.mid "Raspujin"
+
+
+= Weapon models =
+
+Hammer : A hammer that I bought from a hardware shop in 2002
+Drill machine : BOSCH GSR 12-1
+Pistol : Toystar Glock 17 Black
+Dual-wield mode : (same as pistol)
+Shotgun : Dongsan Model SPAS-12
+Grenade Launcher : Toystar CCM-001 Scope
+Assault rifle : Toystar K-2 Rifle
+Leichenfaust : (same as rifle)
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

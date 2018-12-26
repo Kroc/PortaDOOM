@@ -1,0 +1,61 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Demonastery
+Filename                : demonastery.wad
+Release date            : 20th October 2018
+Author                  : Nootrac4571
+Email Address           : [redacted]
+
+Description             : A medium sized, architecturally detailed
+                          single-player map which twists back in on itself
+                          several times, set in a crumbling monastery made of
+                          marble and corpses.
+
+Additional Credits to   : Jimmy (James Paddock) for the excellent music
+                          Obsidian for the DeHackEd code
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About four months on and off
+Editor(s) used          : GZDoom Builder
+Tested With             : PRBoom, PRBoom+, ZDoom, GZDoom, Eternity Engine
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
