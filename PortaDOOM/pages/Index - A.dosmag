@@ -2,11 +2,12 @@ $THEME=BLUE
 $KEY:A=GOTO:Absolutely Killed
 $KEY:B=GOTO:The Adventures of Square
 $KEY:C=GOTO:Aeon Deathmatch
-$KEY:D=GOTO:Aliens TC
-$KEY:E=GOTO:Alpha Accident - Terra Nova
-$KEY:F=GOTO:Ancient Aliens
-$KEY:G=GOTO:Master Levels #02
-$KEY:H=GOTO:Avactor
+$KEY:D=GOTO:The Alfonzone
+$KEY:E=GOTO:Aliens TC
+$KEY:F=GOTO:Alpha Accident - Terra Nova
+$KEY:G=GOTO:Ancient Aliens
+$KEY:H=GOTO:Master Levels #02
+$KEY:I=GOTO:Avactor
 
 ^C:INDEX :: A
 
@@ -15,8 +16,9 @@ $KEY:H=GOTO:Avactor
 - [A] *Absolutely Killed								Episodes
 - [B] *Adventures of Square, The						Total Conversions
 - [C] *Aeon Deathmatch									Multiplayer
-- [D] *Aliens TC										Total Conversions
-- [E] *Alpha Accident: Terra Nova						Episodes
-- [F] *Ancient Aliens									MegaWADs
-- [G] *Attack (Master Levels)							Commercial DOOM
-- [H] *Avactor											Episodes
+- [D] *Alfonzone, The									MegaWADs
+- [E] *Aliens TC										Total Conversions
+- [F] *Alpha Accident: Terra Nova						Episodes
+- [G] *Ancient Aliens									MegaWADs
+- [H] *Attack (Master Levels)							Commercial DOOM
+- [I] *Avactor											Episodes
