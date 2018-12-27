@@ -1,0 +1,27 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\portglacia\play-portglacia.ini"
+$KEY:T=SHELL:wads\onesies\portglacia\PORTGLACIA.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/portglacia
+
+:Port Glacia									 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>04>19	  Author : _an_mutt_
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *boom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+Originally a map for _Jimmy_'s `Joy Of Mapping 5`, I ended up pulling it as it had gotten too large and ambitious, and its size & length would have really bogged down what was already a hefty community project. This allowed me the chance to polish the map up to a higher standard, as the original `JOM` project limited mapping time to only 72 hours. Most of the map was done during that period, but more time was needed to re-do a couple areas and rework some progression, as well as complete detailing and thing placement. Funny that I get ~90% of this done in 3 days, then spend the next 4 months procrastinating on getting the rest done.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 3 Days for most of the map, then 4 months "polishing"
+*Editor(s) used			: `GZ Doombuilder`, `SLADE`
+*Known Bugs				: Built with Extended Nodes, so whatever cannot handle that will have to do without!
+*Tested With			: `PrBoom-Plus` 2.5.1.4; `ZDoom` 2.8.1
+
+:Credits
+:-------------------------------------------------------------------------------
+_Jimmy_ for starting `Joy Of Mapping`, _jazz mickle_ for `AQUATEX`, the _32in24 team_ for some additional resources, _Fuzzball_ for the key sprites, _Dragonfly_ for some additional texture edits, _Fusion Faktor_ for the modules, and everyone who provided me with feedback on getting this complete!
