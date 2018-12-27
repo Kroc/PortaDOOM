@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" /DOOM2 /REQ zdoom /PWAD ALFONZON_1_04.pk3
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-alfonzon.ini"
