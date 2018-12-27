@@ -1,0 +1,70 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:launcher.exe "wads\megawads\exomoon\play-exomoon.ini"
+$KEY:T=SHELL:wads\megawads\exomoon\exomoon.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/exomoon
+
+:Exomoon										 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>11>08	  Author : _Deadwing_
+:Levels   : *24			   Modes : *Single, Co-op
+:Requires : *boom		Includes : *+sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+`Exomoon` (aka `Moonblood X`) is a megawad for `Doom 2`. The levels are a mix of the original `Moonblood` with early `BTSX` levels. It has the ruins/temple theme with some exotic natural landscapes. `Scythe` and `Mano Laikas` also are a strong influence.
+
+*Story:
+
+"Humanity has been finally able to reach a new planetary system through the tele-portation device!
+
+However, recent reports show that many Union Aerospace members have been missing in the successive missions to the foreign lands! Even now, it is still unknown what lies on the other side of the teleports...
+
+As an emergency measure, the authorities activated red alert for further investigations, sending the marines for the deadly expedition!"
+
+*Features:
+
+- 24 new levels
+- 15~25 minutes to finish each
+- MBF (-complevel 11) compatibility
+- Monster attributes changes, which can be identified by the sprite changes
+- Mod support that changes monster behavior is probably very limited
+- No Jumping/Crouching
+- Simple and clean visuals: You might find it even more basic than IWADS
+- Low monster count: Each level has usually around 200 monsters, with one exception
+- Non-linearity: Not as much as `Moonblood` though
+- In a difficult scale of 0 to 5, I would rate `Exomoon` as 2.7 (`Plutonia` would be 2.5 and `Valiant` 3)
+- Small difference between the skills levels (like 15 monsters for each difficult)
+- If you die too much on UV, please, please, select a lower difficult. HMP is a blast to play and for me it's better than UV
+- Strict to safe ammo management
+- Balanced for continuous play and pistol start
+- Expect some light platforming
+- This plays very differently from `Moonblood`, but it's not necessarily better
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: `Moonblood`
+*Build Time				: 1 year and a half
+*Editor(s) used			: `Doom Builder`, `XWE`, `Photoshop`, `Cakewalk Sonar`, `Slade3` and `Whacked`
+*Known Bugs				: None
+*Tested With			: `ZDoom` 2.80, `PrBoom+` 2.5.1.3
+
+:Credits
+:-------------------------------------------------------------------------------
+$KEY:M=URL:https://www.doomworld.com/forum/topic/92795-meks-box-o-skies-v2-now-with-more-skies/?tab=comments#comment-1713907
+- The amazing statusbar was created by _galileo31dos01_
+- New skies are from [M: Mechadon's pack] 
+- New textures and resources are from _realm667_ archives
+- There's two textures that are from `Struggle`,\\which were used on maps 15 and 19
+- Some textures have been changed by myself, but none from scratch
+
+Special thanks to _rehelekretep_, _FrancisT18_, _bioshockfan90_, _NuclearPotato_ for testing the early version of the wad and giving me feedback and tips! Also thanks a lot _HAK3180_ (full youtube playthrough!), _GarrettChan_, _Memfis_, _gaspe_, _Firedust_, _Agent6_ and _Mazze_ for helping me with open beta with lots of feedback, fdas and videos!
+
+$KEY:D=URL:http://www.mediafire.com/file/c874jm3xh9qik29/exomoon-mp3.zip/file
+This wad has an mp3 version of the soundtrack, which is IMO awesome and if you want something different from the MS soundfont you should [D: download it]
+
+*Music:
+$KEY:S=URL:https://www.doomworld.com/forum/topic/100917-exomoon-sountrack-midi-pack-listen-online/
+- All songs by myself, except map 32 (which is an `Unreal` track)
+- Levels 31, 9, 12, 18, 21 are remasters from the original `Moonblood` wad
+- You can download the soundtrack separated [S: here]
