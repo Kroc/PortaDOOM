@@ -26,33 +26,33 @@ There's no silly plot, just kill stuff.
 *Build time				: Some 250 hours I guess. Hard to estimate though.
 						  A lot of that time was learning and just running around in the level. Most areas have been rebuilt about 3 times, some as much as 7, before I was satisfied.
 
-*Editor(s) used			: In the beginning I used DoomEd v2.60 beta 4 but as soon as I got EdMap 1.20 I used that one.
-						  IDBSP 1.0 was also used. (Better than 1.0.1)
-						  When the level got bigger than 150K IDBSP crashed and I had to use WARM (another bsp), but it did something strange - the map disappeared! (Not the level - the map you get when you press TAB.)
-						  Got rid of it using BSP.
+*Editor(s) used			: In the beginning I used `DoomEd` v2.60 beta 4 but as soon as I got `EdMap` 1.20 I used that one.
+						  `IDBSP` 1.0 was also used. (Better than 1.0.1)
+						  When the level got bigger than 150K `IDBSP` crashed and I had to use `WARM` (another bsp), but it did something strange - the map disappeared! (Not the level - the map you get when you press TAB.)
+						  Got rid of it using `BSP`.
 
-						  For the new version I used EdMap 1.40, EdMap 1.31, 
-						  WinDEU 5.24 and BSP 2.4 beta.
+						  For the new version I used `EdMap` 1.40, `EdMap` 1.31, 
+						  `WinDEU` 5.24 and `BSP` 2.4 beta.
 
-						  _Jim Flynn_ applied some magic with DETH 3.92.
+						  _Jim Flynn_ applied some magic with `DETH` 3.92.
 
 *Known Bugs				: Pffft, silly.
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Jeff Rabenhorst_ for the brilliant EdMap.
+- _Jeff Rabenhorst_ for the brilliant `EdMap`
 
-- _Kurt Kessler_ for a LOT of inspiration.
+- _Kurt Kessler_ for a LOT of inspiration
 
-- _Nick Baker_, _Scott Cover_, and _Mike Reid_ for testing. _Eric James Roberts_ and _Mike Watson_ for pointing out small flaws.
+- _Nick Baker_, _Scott Cover_, and _Mike Reid_ for testing. _Eric James Roberts_ and _Mike Watson_ for pointing out small flaws
 
-- id for making YEAHYEAHYEAH you know what I was going to write. 
+- _id_ for making YEAHYEAHYEAH you know what I was going to write
 
-- _Lee Killough_ for teaching me a lot about VPOs and slime-trails. Also thanks for letting me use BSP 2.4 beta.
+- _Lee Killough_ for teaching me a lot about VPOs and slime-trails. Also thanks for letting me use `BSP` 2.4 beta
 
-- _Jim Flynn_ for VERY essential help when EdMap was acting strange and screwing up my level. The level might not have been released if it wasn't for him.
+- _Jim Flynn_ for VERY essential help when `EdMap` was acting strange and screwing up my level. The level might not have been released if it wasn't for him
 
-- _Julia_.
+- _Julia_
 
 Pointless greetings to (in total lack of order):
 

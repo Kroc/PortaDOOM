@@ -1,4 +1,4 @@
-$NAV=Classical
+$NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\Nihility\play-nihility.ini"
 $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/85591-nihility-infinite-teeth-shareware-episode-v1-21/
 
@@ -8,18 +8,18 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/85591-nihility-infinite-teeth-
 :-------------------------------------------------------------------------------
 :Released : *2016>01>21	  Author : _Years_
 :Levels   : *9			   Modes : *Single, Co-op
-:Requires : *vanilla?	Includes : *+Sounds +Graphics +Patches
+:Requires : *vanilla	Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
 $KEY:1=GOTO:DTWiD Series #01
 $KEY:2=GOTO:No End in Sight
 $KEY:3=GOTO:Erkatane
 $KEY:4=GOTO:50 Shades of Graytall
-Hello everybody! I am _Years_ and I have made a vanilla E2 replacement/PC for Ultimate Doom. It's called *Nihility* and I'll hopefully one day expand it into a full 36-level megawad. It's an old-school style wad with some new and replaced monsters and weapons, inspired by the Alphas/Beta but also old-school 90's partial conversions aka Strain. If you like *[1] DTWID*, *[2] No End In Sight*, _Monti_'s *favillesco* and *[3] erkatane* episodes, and *Doom: The Lost Episode* then you might enjoy this. If you don't like abstract, explorational and moody maps (and *[4] graytall*) you should probably steer clear.
+Hello everybody! I am _Years_ and I have made a vanilla E2 replacement/PC for `Ultimate DOOM`. It's called `Nihility` and I'll hopefully one day expand it into a full 36-level megawad. It's an old-school style wad with some new and replaced monsters and weapons, inspired by the Alphas/Beta but also old-school 90's partial conversions aka Strain. If you like *[1] DTWID*, *[2] No End In Sight*, _Monti_'s `favillesco` and *[3] erkatane* episodes, and `Doom: The Lost Episode` then you might enjoy this. If you don't like abstract, explorational and moody maps (and *[4] graytall*) you should probably steer clear.
 
 *Features:
 
-- Designed and tested in and for Vanilla/Chocolate Doom (specifically -complevel 3). If you use chocodoom don't forget to turn on unlimited save file sizes due to the size of some of the maps
+- Designed and tested in and for Vanilla/`Chocolate Doom` (specifically -complevel 3). If you use `chocodoom` don't forget to turn on unlimited save file sizes due to the size of some of the maps
 - DEH file mandatory!
 - Episode 2 replacement: "Infinite Teeth", Hence a E2 inspired theme
 - 9 Levels, some quite large (8 + 1 secret)
@@ -35,13 +35,13 @@ Hello everybody! I am _Years_ and I have made a vanilla E2 replacement/PC for Ul
 :-------------------------------------------------------------------------------
 - Suicide zombie: _Tormentor667_ (Bestiary)
 - Wraith: _Ghastly_dragon_ (Bestiary)
-- Sound: Blood, Quake, Doom 3
+- Sound: `Blood`, `Quake`, `Doom 3`
 - Heresy lord: _Vader_
-- Textures: Alpha doom, No End In Sight
+- Textures: `Alpha DOOM`, `No End In Sight`
 - Rifle flash sprites - _Uboa_
-- Alpha and Beta doom for sprites
-- Sky - recoloured sky from _Romero_'s early doom material dump.
-- Text: Doom Writer
-- Ambience: Blood, Quake
+- `Alpha` and `Beta DOOM` for sprites
+- Sky - recoloured sky from _Romero_'s early `DOOM` material dump.
+- Text: `Doom Writer`
+- Ambience: `Blood`, `Quake`
 - New sound effects: me
 - If I forgot anything or anyone, let me know!

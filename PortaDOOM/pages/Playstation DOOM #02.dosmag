@@ -21,7 +21,7 @@ map12			*Deimos Lab				DOOM E2M4 (Jaguar)
 map13			*Command Center			DOOM E2M5 (Jaguar)
 map14			*Halls of the Damned	DOOM E2M6 (Jaguar)
 map15			*Spawning Vats			DOOM E2M7 (Jaguar)
-*└→* map55		*Fortress of Mystery	DOOM E2M9 (Jaguar), aka *"Dis"*
+*└→* map55		*Fortress of Mystery	DOOM E2M9 (Jaguar), aka `"Dis"`
    lost06		*Dis					DOOM E3M8, _BaronOfStuff_
 map16			*Hell Gate				DOOM E2M8 (Jaguar)
 map17			*Hell Keep				DOOM E3M1 (Jaguar)
@@ -58,7 +58,7 @@ map37			*Dead Simple			DOOM2 MAP07
 map38			*Tricks and Traps		DOOM2 MAP08
 map39			*The Pit				DOOM2 MAP09
 map40			*Refueling Base			DOOM2 MAP10
-map41			*O of Destruction!		DOOM2 MAP11, aka *"Circle of Death"*
+map41			*O of Destruction!		DOOM2 MAP11, aka `"Circle of Death"`
 map42			*The Factory			DOOM2 MAP12 
 lost07			*Downtown				DOOM2 MAP13, _DeXiaZ_
 *└→* lost65		*Betray					DOOM2 MAP33 (XBox), _DeXiaZ_

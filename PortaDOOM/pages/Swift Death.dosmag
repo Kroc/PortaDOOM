@@ -12,7 +12,7 @@ $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-Swift Death is an extremely hard megawad, calibrated for speedrunners. I recommanded for novice players to play in "easy" ("Toilet Break", or "Soft Event"). SD is realized in speedmapping sessions, for the most parts of maps. These maps are generally small, and contain on average 75 monsters. They are also compatible for the duel / deathmatch.
+`Swift Death` is an extremely hard megawad, calibrated for speedrunners. I recommanded for novice players to play in "easy" ("Toilet Break", or "Soft Event"). `SD` is realized in speedmapping sessions, for the most parts of maps. These maps are generally small, and contain on average 75 monsters. They are also compatible for the duel / deathmatch.
 
 *Story:* You are the puppet of Itanimulli. A powerful Evil God, which take pleasure to torture you. He sends you in different worlds since the eternity.  But you keep at the bottom of you a hope, to leave this hell. Because you know that in every death, you are so close to the exit.
 
@@ -20,16 +20,16 @@ Swift Death is an extremely hard megawad, calibrated for speedrunners. I recomma
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: With some enormous breaks of plenty months => 4 years
-*Editor(s) used		: DooM Builder 1.68, EXtendable Wad Editor, Adobe Photoshop CS6
+*Editor(s) used		: `DooM Builder` 1.68, `EXtendable Wad Editor`, `Adobe Photoshop CS6`
 *Known Bugs			: If you find any bugs, let me know.
 
 :Credits:
 :-------------------------------------------------------------------------------
-- id Software for Doom
-- _Pascal "CodeImp" vd Heiden_ for Doom Builder
+- _id_ Software for `Doom`
+- _Pascal "CodeImp" vd Heiden_ for `Doom Builder`
 - _Kris Kuksi_
-- The XWE team
-- The French Doom Community
+- The `XWE` team
+- The French `Doom` Community
 - _JCD_ for bugs, textures misalignments and such.
 - _JCD_, _Dislogical_, and especially _FSN76_ for some suggestions about the duel gameplay :)
 - _Ch0wW_ and _JCD_, for their incredible demos :D

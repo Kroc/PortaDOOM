@@ -12,15 +12,15 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/68215-gothic-beta-release/
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-Large hell/gothic themed map for GZDoom. Works best with the latest dev builds of GZDoom as of release - June 2015.
+Large hell/gothic themed map for `GZDoom`.
 
 :Construction:
 :-------------------------------------------------------------------------------
 *Base					: New from scratch 
 *Build Time				: On and off for 7 years
-*Editor(s) used			: Deepsea v12.15.3
+*Editor(s) used			: `Deepsea` v12.15.3
 *Known Bugs				: None 
-*May Not Run With...	: Designed for GZDoom only 
+*May Not Run With...	: Designed for `GZDoom` only 
 
 :Credits:
 :-------------------------------------------------------------------------------

@@ -12,8 +12,8 @@ $KEY:L=URL:https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-los
 :Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-*Considering that DOOM ran best on a 486 or Pentium with 4 MB of RAM,* it was then none-the-less impressive when DOOM was ported to the PlayStation in 1995. Cuts had to be made given the limits of 33 MHz and less than 1 MB of RAM, but a fine job was done in both getting the game onto PSX and making it unique to the console. Coloured lighting was added, higher colour-depth, alpha-blending and a deathmatch mode over serial link.
+*Considering that `DOOM` ran best on a 486 or Pentium with 4 MB of RAM,* it was then none-the-less impressive when `DOOM` was ported to the PlayStation in 1995. Cuts had to be made given the limits of 33 MHz and less than 1 MB of RAM, but a fine job was done in both getting the game onto PSX and making it unique to the console. Coloured lighting was added, higher colour-depth, alpha-blending and a deathmatch mode over serial link.
 
-Due to the varying demands of DOOM levels, the PlayStation instead opted for a collection of appropriately sized levels from across DOOM & DOOM II. A completely new ambient soundtrack was created to make use of the PlayStation's sound processor.
+Due to the varying demands of `DOOM` levels, the PlayStation instead opted for a collection of appropriately sized levels from across `DOOM` & `DOOM II`. A completely new ambient soundtrack was created to make use of the PlayStation's sound processor.
 
-All the changes combined make for a unique DOOM experience. Thus in 2008 _fenderc01_ set about creating a Total Conversion to accurately re-create PSX DOOM on the PC. The project was updated again in 2011 to encompass the PSX DOOM sequel Final DOOM.
+All the changes combined make for a unique `DOOM` experience. Thus in 2008 _fenderc01_ set about creating a Total Conversion to accurately re-create `PSX DOOM` on the PC. The project was updated again in 2011 to encompass the `PSX DOOM` sequel `Final DOOM`.

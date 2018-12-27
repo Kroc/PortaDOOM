@@ -12,16 +12,16 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/88555-shadow-of-the-wool-ball-
 :Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
-A cartoony doom mod that makes you shoot evil kittehs :3
+A cartoony `DOOM` mod that makes you shoot evil kittehs :3
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: started somewhere in 2013, didn't do anything from 2014 to 2015, but finished everything in 2016 :3 
-*Editor(s) used			: Doom Builder 2, XWE, Audacity, Microsoft Paint, Guitar Pro 5
+*Editor(s) used			: `Doom Builder 2`, `XWE`, `Audacity`, `Microsoft Paint`, `Guitar Pro 5`
 *Known Bugs				: there still may be a few
-*May Not Run With		: anything but ZDoom
-*Tested With			: ZDoom
+*May Not Run With		: anything but `ZDoom`
+*Tested With			: `ZDoom`
 
 :Credits
 :-------------------------------------------------------------------------------

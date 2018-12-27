@@ -12,15 +12,15 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/94330-rise-of-the-wool-ball-3-v
 :Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
-A *Rise Of The Triad* styled retro shooter with cute, but evil kittehs :3
+A `Rise Of The Triad` styled retro shooter with cute, but evil kittehs :3
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: roughly a year - started in July 2016 and finished sometime in June 2017
-*Editor(s) used			: Doom Builder 2, XWE (it was a nightmare, aaaaah), MSPaint, Guitar Pro 5
-*May Not Run With		: anything except ZDoom 2.8.1
-*Tested With			: ZDoom 2.8.1
+*Editor(s) used			: `Doom Builder 2`, `XWE` (it was a nightmare, aaaaah), `MSPaint`, `Guitar Pro 5`
+*May Not Run With		: anything except `ZDoom` 2.8.1
+*Tested With			: `ZDoom` 2.8.1
 
 :Credits
 :-------------------------------------------------------------------------------

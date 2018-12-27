@@ -25,10 +25,10 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 *Village idiot		: _SoulCircle_
 
 *Original idea		: _wildweasel_
-*Textures			: (ed.note: I have no idea who is a person and who is a company here -- send your answers in a postcard to kroc@camendesign.com)\\id Software, CC4 TexturePack, Kingpin Life of Crime, _Jimmy_, Ultimate Doom, _Cage_, _FuzzballFox_, _Nick Baker_, _Enjay_, _Malinku_, Earthquake, Blood, Skynet, Duke3D, _Kinsie_, TNT, Last Rites, Terminator: Rampage, Doom Alphas, _NecroDome_, Carmageddon
-*Sprites			: _Doom64hunter_, _Captain Toenail_, Gothic, Monolith Productions, 3D Realms, _Captain Awesome_, _Hayabusa_, _Lucario_, _Anarchist_, _Ghastly_Dragon_
-*Software			: Visual Vincent (Writer Doom)
-*Non-map music		: HyoChan - Rocks.
+*Textures			: _id Software_, `CC4 TexturePack`, `Kingpin Life of Crime`, _Jimmy_, `Ultimate Doom`, _Cage_, _FuzzballFox_, _Nick Baker_, _Enjay_, _Malinku_, _Earthquake_, `Blood`, `Skynet`, `Duke3D`, _Kinsie_, `TNT`, `Last Rites`, `Terminator: Rampage`, `Doom Alphas`, _NecroDome_, `Carmageddon`
+*Sprites			: _Doom64hunter_, _Captain Toenail_, `Gothic`, _Monolith Productions_, _3D Realms_, _Captain Awesome_, _Hayabusa_, _Lucario_, _Anarchist_, _Ghastly_Dragon_
+*Software			: _Visual Vincent_ (`Writer Doom`)
+*Non-map music		: _HyoChan_ - `Rocks`.
 
 :Map List
 :===============================================================================
@@ -41,25 +41,25 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP03		: *To Hell and Back
 *User		: _Caligari87_
-*Music		: _Nabernizer_ - Argent Facility
+*Music		: _Nabernizer_ - `Argent Facility`
 *Notes		: This is my first truely released and finished map. Glad to have finally contributed.
 :-------------------------------------------------------------------------------
 *MAP04		: *Underglow
 *User		: _Nevander_
-*Music		: Hate Machine by _Jimmy_ (30-in-30 2)
+*Music		: `Hate Machine` by _Jimmy_ (30-in-30 2)
 *Notes		: I had fun making this... you guys are probably gonna think I'm on crack or something. Lots of colored lighting is used, and so I've included a software renderer friendly version. It won't look as nice but at least everything won't look ugly. (Lud's Note: Removed software renderer friendly version. Can't jam 2 versions in one map.)
 :-------------------------------------------------------------------------------
 *MAP05		: *Wrong Direction
 *User		: _ZioMcCall_
-*Music		: Half life 2 - Song 15
+*Music		: `Half life 2` - `Song 15`
 :-------------------------------------------------------------------------------
 *MAP06		: *Polarity
 *User		: _Jimmy_
-*Music		: "Space Storm" by _Bobby Prince_ (Duke Nukem 3D soundtrack)
+*Music		: `"Space Storm"` by _Bobby Prince_ (`Duke Nukem 3D` soundtrack)
 :-------------------------------------------------------------------------------
 *MAP07		: *Arena
 *User		: _Lud_ 
-*Music		: UT'99 - Razorback
+*Music		: `UT'99` - `Razorback`
 *Notes		: Take cover.
 :-------------------------------------------------------------------------------
 *MAP08		: *The Entrance
@@ -68,12 +68,12 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP09		: *Crimes
 *User		: _Kinsie_
-*Music		: "first level" from Fears (Amiga ver.) by _Mathieu Berthaud_
+*Music		: `"first level"` from `Fears` (Amiga ver.) by _Mathieu Berthaud_
 *Notes		: Map may contain Crimes.
 :-------------------------------------------------------------------------------
 *MAP10		: *Abandoned Depot
 *User		: _Mor'ladim_
-*Music		: The Peacekeepers - Machinery
+*Music		: `The Peacekeepers` - Machinery
 *Notes		: A small, semi-detailed map with challenging gameplay in certain areas.
 :-------------------------------------------------------------------------------
 *MAP11		: *Ghosts Of Mars
@@ -82,7 +82,7 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP12		: *The Warehouse
 *User		: _Voltcom9_
-*Music 		: Ain't Going Out Like That (Cypress Hill) Instrumental
+*Music 		: `Ain't Going Out Like That` (Cypress Hill) Instrumental
 :-------------------------------------------------------------------------------
 *MAP13		: *UAC Station
 *User		: _BillGuy_
@@ -90,20 +90,20 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP14		: *Treacherous Library
 *User		: _FishyClockwork_
-*Music		: CBLOOD10 from Blood.
+*Music		: `CBLOOD10` from `Blood`.
 :-------------------------------------------------------------------------------
 *MAP15		: *Cratered
 *User		: _Tapwave_
-*Music		: Time Trax (SNES) - Level BGM 01
+*Music		: `Time Trax (SNES)` - Level BGM 01
 :-------------------------------------------------------------------------------
 *MAP16		: *The Mean Streets
 *User		: _Zero X. Diamond_
-*Music		: Curt Cool/Depth - Japanese Speedghost
-*Notes		: Tried going for a BUILD feel, think I may have gone overboard.
+*Music		: `Curt Cool/Depth` - _Japanese Speedghost_
+*Notes		: Tried going for a `BUILD` feel, think I may have gone overboard.
 :-------------------------------------------------------------------------------
 *MAP17		: *The Cauldron
 *User		: _NAG_
-*Music		: "Chief Rebel Angel" by _Entombed_
+*Music		: `"Chief Rebel Angel"` by _Entombed_
 :-------------------------------------------------------------------------------
 *MAP18		: *The Abandoned Mine Shaft
 *User		: _SoulCircle_
@@ -114,12 +114,12 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP20		: *Lava Pits
 *User		: _Gothic_
-*Music		: "Nagomi Passage" from Unreal
+*Music		: `"Nagomi Passage"` from `Unreal`
 *Notes		: This time with ammo and health pickups, as well as a new sky and a chainsaw.
 :-------------------------------------------------------------------------------
 *MAP21		: *The Wicked Sepulchre
 *User		: _Zero X. Diamond_
-*Music		: "Ass Kickin'" by _Antti Kauppila_
+*Music		: `"Ass Kickin'"` by _Antti Kauppila_
 *Notes		: _Kinsie_ says I might be a jerk, and I think he's right. Also holy shit I FINISHED A FUCKING MAP
 :-------------------------------------------------------------------------------
 *MAP22		: *UP
@@ -138,37 +138,37 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP26		: *Metropolis of Ashes
 *User		: _Deviluke Roy_ / _unRyker_
-*Music		: Korn - No Place To Hide
+*Music		: Korn - `No Place To Hide`
 :-------------------------------------------------------------------------------
 *MAP27		: *Bloodbath
 *User		: _Janus3003_
-*Music		: "Infinite" by _Tom Mustaine_ (TNT D_DEAD.mid)
+*Music		: `"Infinite"` by _Tom Mustaine_ (`TNT D_DEAD.mid`)
 :-------------------------------------------------------------------------------
 *MAP28		: *The Crucible
 *User		: _Voltcom9_
-*Music		: Return to Castle Wolfenstein - Ravaged Town
+*Music		: `Return to Castle Wolfenstein` - `Ravaged Town`
 *Notes		: Doesn't have much ammo but it was a design choice to do so :P
 :-------------------------------------------------------------------------------
 *MAP29		: *Castle Chaos
 *User		: _Crazy Toni_
-*Music		: D_E3M5 from good ol' DOOM
+*Music		: `D_E3M5` from good ol' `DOOM`
 :-------------------------------------------------------------------------------
 *MAP30		: *Woeful Hills
 *User		: _UnRyker_
-*Music		: Black Sabbath - Children of the Grave (MIDI)
+*Music		: Black Sabbath - `Children of the Grave` (MIDI)
 :-------------------------------------------------------------------------------
 *MAP31		: *Jigoku
 *User		: _Tapwave_
-*Music		: Dimension of Dreams by _Jimmy_
+*Music		: `Dimension of Dreams` by _Jimmy_
 *Notes		: Only one secret this time! The exit requires some pain.
 :-------------------------------------------------------------------------------
 *MAP32		: *Hell Crypt
 *User		: _DrPyspy_
-*Music		: Pantera - Mouth for War
+*Music		: Pantera - `Mouth for War`
 :-------------------------------------------------------------------------------
 *MAP33		: *Kill-O-Seum
 *User		: _Sgt. Shivers_
-*Music		: Soldier of Chaos - TNT
+*Music		: `Soldier of Chaos` - `TNT`
 *Notes		: Has difficulty based spawns.
 :-------------------------------------------------------------------------------
 *MAP34		: *Spawning Grounds
@@ -178,7 +178,7 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP35		: *Celestial Abominations
 *User		: _FishyClockwork_
-*Music		: CBLOOD7 from Blood
+*Music		: `CBLOOD7` from `Blood`
 :-------------------------------------------------------------------------------
 *MAP36		: *Unexpected Turn
 *User		: _leodoom85_
@@ -189,11 +189,11 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP38		: *Ascend Beyond Hell
 *User		: _leodoom85_
-*Music		: D_TENSE
+*Music		: `D_TENSE`
 :-------------------------------------------------------------------------------
 *MAP39		: *The Idol Who Twists Mortal Minds
 *User		: _lwks_
-*Music		: E1M8
+*Music		: `E1M8`
 :-------------------------------------------------------------------------------
 *MAP40		: *Symbols of the Demon
 *User		: _BillGuy_ / _leodoom85_ / _Tapwave_ / _Lud_
@@ -202,10 +202,10 @@ TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 :-------------------------------------------------------------------------------
 *MAP41		: *Where Nazis Belong
 *User		: _Zero X. Diamond_
-*Music		: Megadeth - Wake Up Dead (Aahz the Demon Cover)
+*Music		: Megadeth - `Wake Up Dead` (Aahz the Demon Cover)
 *Notes		: There's nothing more satisfying than shooting Nazis. Map completed at the last minute in less than a day!!
 :-------------------------------------------------------------------------------
 *MAP42		: *2 Minutes To Midnight
 *User		: _Zero X. Diamond_
-*Music		: "2 Minutes To Midnight" as covered by _Betrayer_ and _Gothir_
+*Music		: `"2 Minutes To Midnight"` as covered by _Betrayer_ and _Gothir_
 *Notes		: Needlessly cruel and with a two minute timer to boot.

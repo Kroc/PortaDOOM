@@ -14,7 +14,7 @@ $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 
 *SKULLDASH OVERVIEW:
 
-Welcome to Skulldash, the fast-paced speedrun arcade mod For Doom II. The objective in skulldash is to collect the Skulltokens scattered around each level to unlock the exit.
+Welcome to `Skulldash`, the fast-paced speedrun arcade mod For `Doom II`. The objective in `skulldash` is to collect the Skulltokens scattered around each level to unlock the exit.
 
 While collecting the Skulltokens you have to race against the clock, as there is a time limit to beat - all while defending yourself from the hordes of monsters from hell.
 
@@ -28,7 +28,7 @@ Fear not, however, hidden throughout most levels are many secret areas containin
 
 With twenty standard levels, four boss levels, five bonus levels, a giant level-hub (and a tutorial) you've got plenty of hours of gameplay available!
 
-Skulldash takes you to many realms & locations, including but not limited to technical bases, aztec temples, icy caverns, in a submarine, on a series of treetops, in hell, a haunted mansion, a medieval castle, a jungle altar, high in the sky and even in space!
+`Skulldash` takes you to many realms & locations, including but not limited to technical bases, aztec temples, icy caverns, in a submarine, on a series of treetops, in hell, a haunted mansion, a medieval castle, a jungle altar, high in the sky and even in space!
 
 *BOSSES, SECRETS & BONUS MAPS:
 
@@ -39,36 +39,43 @@ At the end of each Tier (except the 1st) there is an action packed boss map. Eac
 *WHAT'S NEW: (Expanded Edition)
 
 SCORING SYSTEM
+
 - Gain score by collecting tokens and killing enemies
 - Score is multiplied by 2 if you get 100% tokens!
 - Play on higher difficulties for more multipliers
 
 21 NEW LEVELS
+
 - 2 Bonus maps from original game have been replaced
 - 19 NEW maps in the Community tier
   - 2 of which are intense boss fights, good luck!
 - Including the hub map, there are 50 playable levels!
 
 MAJOR LEVEL RE-WORKS
+
 - Bosses have been improved
 - Frostbound has had a major make-over
 - General visual improvements on every level
 
 HUB MAP IMPROVED
+
 - Teleports to later tiers
 - Brand new Community Tier
 - 'Modern style' portals
 
 OPTIONS ROOM ADDED
+
 - Change your difficulty mid-game
 - Remove reflections (lag reduction)
 - View your high scores
 
 CONTINUE SCREEN ADDED
+
 - When you die you are given 5 seconds to re-try
 - Let the countdown hit 0 to return to the hub map
 
 PORTED AWAY FROM ZANDRONUM TO GZDOOM
+
 - Much more features, etc.
 
 HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
@@ -77,10 +84,10 @@ HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Over Nine Years
-*Editor(s) used			: DoomBuilder, DoomBuilder2, GZDoomBuilder, XWE, SLumpEd, Slade3, MS Paint, Adobe Fireworks, GraphicsGale, FruityLoops Trial, Photoshop
-*Known Bugs				: Hopefully none. Email any found to josh@joshuaosullivan.co.uk
-*May Not Run With		: Any port other than GZDoom - must be GZDoom 3.2.0 OR HIGHER
-*Tested With			: GZDoom 3.2.0
+*Editor(s) used			: `DoomBuilder`, `DoomBuilder2`, `GZDoomBuilder`, `XWE`, `SLumpEd`, `Slade3`, `MS Paint`, `Adobe Fireworks`, `GraphicsGale`, `FruityLoops Trial`, `Photoshop`
+*Known Bugs				: Hopefully none. Email any found to _josh@joshuaosullivan.co.uk_
+*May Not Run With		: Any port other than `GZDoom` - must be `GZDoom` 3.2.0 OR HIGHER
+*Tested With			: `GZDoom` 3.2.0
 
 :Credits:
 :-------------------------------------------------------------------------------
@@ -135,18 +142,18 @@ _kyle2959_
 
 *RESOURCES:
 
-- _Blastfrog
-- Realm667
-- Hexen II
-- Gothic DM
-- Scythe II
-- Blood
-- Skulltag
-- _TheMisterCat
-- _Scuba Steve
-- CC4-Tex
-- _Xyzzy01
-- _Dragonfly
+- _Blastfrog_
+- _Realm667_
+- `Hexen II`
+- `Gothic DM`
+- `Scythe II`
+- `Blood`
+- `Skulltag`
+- _TheMisterCat_
+- _Scuba Steve_
+- `CC4-Tex`
+- _Xyzzy01_
+- _Dragonfly_
 
 *MUSIC RESOURCES:
 
@@ -154,20 +161,20 @@ _kyle2959_
 - rock.freemidis.net
 - VGMusic.com
 - 1024.wad
-- Scythe II
-- _yakfak
-- _Aion
+- `Scythe II`
+- _yakfak_
+- _Aion_
 - Other WADs
 
 *BETATESTERS:
 
-- _YellowTail
-- _Tux
-- _Dreadopp
-- _HexaDoken
-- _Eonfge
-- _Parad0x
-- _Blastfrog
-- _antares031
-- _Phade
-- _leodoom85
+- _YellowTail_
+- _Tux_
+- _Dreadopp_
+- _HexaDoken_
+- _Eonfge_
+- _Parad0x_
+- _Blastfrog_
+- _antares031_
+- _Phade_
+- _leodoom85_

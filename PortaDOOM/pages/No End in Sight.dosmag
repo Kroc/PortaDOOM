@@ -12,10 +12,10 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/neis
 :Requires : *boom		Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-Oldschool 4-episode adventure for The Ultimate Doom, featuring some of the most devilish map design this side of 1994. 'Nuff said... ish.
+Oldschool 4-episode adventure for `The Ultimate DOOM`, featuring some of the most devilish map design this side of 1994. 'Nuff said... ish.
 
 $KEY:1=GOTO:DTWiD Series #01
-Similar to *[1] DTWID*, the spirit of id is ever-present, albeit cranked up to 11 with a devious new spin on the classic episodes' themes. Along the way, you'll enter parallel worlds, explore derelict spaceships still floating in the sky, and return to some eerily familiar locales on the far side of Phobos and beyond.
+Similar to *[1] DTWID*, the spirit of _id_ is ever-present, albeit cranked up to 11 with a devious new spin on the classic episodes' themes. Along the way, you'll enter parallel worlds, explore derelict spaceships still floating in the sky, and return to some eerily familiar locales on the far side of Phobos and beyond.
 
 *Story or something:
 
@@ -24,11 +24,10 @@ With no end in sight(tm) to the demon presence on Earth, our hero, Doomguy McDoo
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
-*Build Time				: Forever and a Half.
+*Build Time				: Forever and a Half
 *Editor(s) used			: Various
-*May Not Run With...	: Versions of Doom prior to 1.9.
-			  E4 requires a limit-removing port.
-*Known Bugs				: There's likely to be some roughness around the edges, given the wad's heritage, but hopefully nothing gamebreaking.
+*May Not Run With...	: Versions of `DOOM` prior to 1.9. E4 requires a limit-removing port
+*Known Bugs				: There's likely to be some roughness around the edges, given the wad's heritage, but hopefully nothing gamebreaking
 
 						  Special note: the normal/secret exits are NOT swapped in some E3 maps. This is NOT a bug. ;)
 
@@ -91,6 +90,6 @@ Testing & Love --------------- _Boris "dew" Klimes
 Status bar ------------------- _Steve "Kyka" Muller_, _Xaser Acheron
 Titlepic --------------------- _Xaser Acheron
 Naming Things ---------------- _Xaser Acheron
-Alpha Textures --------------- id Software, _John Romero
+Alpha Textures --------------- _id Software_, _John Romero
 Misc. Texture Edits ---------- _Emil "NaturalTvventy" Brundage_, _Xaser Acheron
-Skies ------------------------ _Sodaholic_ (E1), _Cage_ (E3), id Software (E2/E4)
+Skies ------------------------ _Sodaholic_ (E1), _Cage_ (E3), _id Software_ (E2/E4)
