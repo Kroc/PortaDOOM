@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-uof.ini"
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-uof.ini"

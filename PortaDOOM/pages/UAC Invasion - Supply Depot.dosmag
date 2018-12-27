@@ -1,0 +1,58 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\supplydp\play-supplydp.ini"
+$KEY:T=SHELL:wads\onesies\supplydp\SupplyDp.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/102152-uac-invasion-the-supply-depot/
+
+:UAC Invasion: The Supply Depot						* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>09>06	  Author : _DooMknight_
+:Levels   : *1 			   Modes : *Single, Co-op
+:Requires : *zdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+The map is about a Marine who must infiltrate a large base of the UAC corporation because there are indications that secret experiments related to portals and Satanism are taking place. The protagonist hides in a UAC truck that goes to the complex and get infiltrated.
+
+But once inside the facilities he realizes that something terrible has happened there, it seems that he is not the only unexpected visitor...
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 11 years on and off...
+*Editor(s) used			: `DoomBuilder`, `DoomBuilder 2`, `GZDoomBuilder`, `XWE`, `SLADE 3`
+*Known Bugs				: None
+*May Not Run With...	: Any non-`ZDoom` port and any `ZDoom`-based port
+
+:Credits
+:-------------------------------------------------------------------------------
+*Objects and decoration:
+- _NerdKoopa_ (Voxel vehicles)
+- _CaptainToenail_, _Necrodome_ (Small trees and bushes)
+- _Blox_ (Oldtree edits)
+- _Tormentor667_, _Gothic_ (Junk piles & UAC holograms)
+
+*Enemies:
+- _Captain Toenail_ (Pustule)
+- _Ben2k9_/_Virtue_ (Cyberbaron)
+- _Tormentor667_, _Nanami_, _Ghastly_dragon_, _Keksdose_, _Herculine_ (Afrit)
+- _Tormentor667_, _Eriance_, _Ghastly Dragon_, _RAVEN Software_ (DeathKnight)
+
+*Textures:
+- _FuzzballFox_, _Enjay_, _EarthQuake_, _CaptainToenail_, _amv2k9_,
+- _Cage_, _Zero X. Diamond_, _demo_the_man_, _MartinHowe_, _Nick Baker_
+
+*Titlepic artwork:
+- _Espen Grundetjern_
+
+*Music:
+- _Andrew G. Sega_
+- _Markus Merilainen_
+- _Patrick Phelan_
+
+*Beta testing:
+- _Degree23_, _Demonologist_, _NovaRain_, _elend_, _Phobus_, _HAK3180_, _AK-001_, _StormCatcher.77_
+
+Special thanks to my wife for her support and help these years while I was creating the map. And finally this is dedicated to my 4 months old son. I love you both!
+
+If I have forgotten someone, please let me know and I will include you in this credits section.

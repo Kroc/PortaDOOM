@@ -9,7 +9,8 @@ $KEY:G=GOTO:Struggle - Antaresian Legacy
 $KEY:H=GOTO:Master Levels #10
 $KEY:I=GOTO:Sunlust
 $KEY:J=GOTO:Master Levels #11
-$KEY:K=GOTO:Swift Death
+$KEY:K=GOTO:UAC Invasion - Supply Depot
+$KEY:L=GOTO:Swift Death
 
 ^C:INDEX :: S
 
@@ -22,7 +23,8 @@ $KEY:K=GOTO:Swift Death
 - [E] *Stardate 20x7									Episodes
 - [F] *Strange Aeons									Total Conversions
 - [G] *Struggle - Antaresian Legacy						MegaWADs
-- [H] *Master Levels: Subspace							Commercial DOOM
+- [H] *Subspace (Master Levels)							Commercial DOOM
 - [I] *Sunlust											MegaWADs
-- [J] *Master Levels: Subterra							Commercial DOOM
-- [K] *Switft Death										MegaWADs
+- [J] *Subterra (Master Levels)							Commercial DOOM
+- [K] *Supply Depot (UAC Invasion)						Onesies
+- [L] *Switft Death										MegaWADs

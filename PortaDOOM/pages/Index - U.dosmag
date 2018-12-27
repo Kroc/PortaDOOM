@@ -1,8 +1,10 @@
 $THEME=BLUE
-$KEY:A=GOTO:The Ultimate DOOM
+$KEY:A=GOTO:UAC Invasion - Supply Depot
+$KEY:B=GOTO:The Ultimate DOOM
 
 ^C:INDEX :: U
 
 :-------------------------------------------------------------------------------
 
-- [A] *Ultimate DOOM, (The)								Commercial DOOM
+- [A] *UAC Invasion: Supply Depot						Onesies
+- [B] *Ultimate DOOM, (The)								Commercial DOOM
