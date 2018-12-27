@@ -2,6 +2,7 @@ $THEME=BLUE
 $KEY:A=GOTO:Master Levels #07
 $KEY:B=GOTO:Master Levels #18
 $KEY:C=GOTO:The Given
+$KEY:D=GOTO:The Golden Souls 2
 
 ^C:INDEX :: G
 
@@ -10,5 +11,5 @@ $KEY:C=GOTO:The Given
 - [A] *Master Levels: Garrison, (The)					Commercial DOOM
 - [B] *Master Levels: Geryon							Commercial DOOM
 - [C] *The Given										Onesies
-
+- [D] *Doom: The Golden Souls 2							Total Conversions
 

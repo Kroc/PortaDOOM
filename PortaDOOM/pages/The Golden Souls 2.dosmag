@@ -1,0 +1,48 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\goldensouls2\play-goldensouls2.ini"
+$KEY:T=SHELL:wads\conversions\goldensouls2\Credits.txt
+$KEY:W=URL:https://www.moddb.com/mods/doom-the-golden-souls-2
+
+:Doom: The Golden Souls 2							* Cacoward 2018 Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>08>19	  Author : _Batandy_
+:Levels   : *32 		   Modes : *Single
+:Requires : *gzdoom		Includes : *+Music +Sounds +Graphics
+:-------------------------------------------------------------------------------
+
+`Doom: The Golden Souls 2` is the sequel of the groundbreaking `Mario`-styled hub-based mod, this time you'll travel through levels with a world map, unlocking new paths by reaching secret exits or by collecting big coins. You must retrieve 7 Golden Souls stolen by the Cyberdemon's minions in order to save the world... once again! Features a huge world map with tons of colorful and action-packed levels.
+
+:Credits
+:-------------------------------------------------------------------------------
+*Guest Maps		: _Duke_Nume_, _luigiman0640_
+*Animations		: _Sgt.Shivers_, _WildWeasel_
+*Custom Music	: _Wauterboi_
+*Custom Fonts	: _Jimmy_
+*Playtesters	: _Duke_Nume_, _Comet1337_, _a1337spy_, _Jimmy_, _Spookulongest_, _Wartorn_, _Valerie Valens_, _Combine Kegan_ , _Sgt.Shivers_
+*Models			: _Zanieon_, _Dragonfly_
+*Sprites		: _DrPySpy_, _Sgt. Shivers_ , _Virtue_, _Eriance_ ,_osjclatchford_, _Minigunner_, _Carbine Dioxide_, _Captain J_, _Amuscaria_, _Samvision_, _ClownMan_, _Ghastly Dragon_, _Keksdose_, _Sandypaper_, _Scripten_, _IMX_, _NMN_Paul_, _handbinger_, _DBThanatos_, _DIMOShunter_, _SchwarzeNacht_, _Captain Toenail_, _zrrion_, _Skelegant_, _CloneHunter_, _Infirnex_, _JoeyTD_, _HyperUltra64_, _finite_
+*Music			: _Wauterboi_, _Lucas_, _imamelia_, _Roberto Zampari_, _Jascha_, _Gamma V_, _Metaquarius_, _Coolmario_, _Toby Fox_, _Sinister Pixel_, _fluidvolt_, _Dark Mario Bros_, _Fu-SionDome_, _Exor_, _Atma_, _Wakana_, _Botcrazy_, _Pongball_, _William Kage_, _MidiGuy_, _Torchkas_, _Dan_, _larryinc64_, _Jimmy_ (SMW Central),
+*Props, Enemies	: _Ravage_, _Tormentor 667_, _Nanami_, _Ghastly Dragon_, _Flynn Taggart_, _Captain Toenail_, _Yuyu3_, _Mor'ladim_, _Ozymandias_, _Ceeb_, _Gothic_, _Reactor_, _Celianna_, _John Washburn_, _Enjay_, _KDIZD Team_, _Mancubus_, _mediocreguy_, _Eriance_, _Icytux_
+*Textures		: Zdoom Forums' Custom Texture Thread, _Blox_, _Fuzzballfox_, _abbuw_, _agaures_, _Eriance_, _DrDoctor_, _Marrub_, _MakotoNeptunus_, _Arch_, _CWolf_, _HazeBandicoot_, _ZioMcCall_, _Cage_, _Gez_, _zrrion_, _Jimmy_, _YukiHerz_, _Talon1024_, _Adam Raia_, _Mr.Enchanter_, _Enjay_, _Hipshot_, _mediocreguy_, _psyren_, _ZZYZX_, _lylejk_, _Nick Keller_
+*Translation	: _Matteo "Mattman" Dilaghi_ (French) / _Ravioli_ (Portuguese) / _Yew Larrea_ (Spanish) / _Tormentor667_ (German)
+
+*Special Thanks:
+
+- _Hellser_
+- _WildWeasel_
+- _Ral22_
+- _0bsidian_
+- _CaptainJ_
+- _Combine Kegan_
+- _HDoomguy_
+- _Jimmy_
+- _TerminusEst13_
+- _HyperUltra64_
+- _Kurashiki_
+- _MSPaintR0cks_
+- _Kinsie_
+- _MrIcarus_
+
+If I forgot anyone, please tell me and I'll add you to the list!
