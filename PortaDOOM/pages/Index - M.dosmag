@@ -1,24 +1,26 @@
 $THEME=BLUE
-$KEY:A=GOTO:Man on the Moon
-$KEY:B=GOTO:Maps of Chaos
-$KEY:C=GOTO:Maskim Xul
-$KEY:D=GOTO:Master Levels
-$KEY:E=GOTO:Master Levels #16
-$KEY:F=GOTO:Miasma
-$KEY:G=GOTO:Master Levels #14
-$KEY:H=GOTO:Mordeth
-$KEY:I=GOTO:Mutiny
+$KEY:A=GOTO:Magnolia
+$KEY:B=GOTO:Man on the Moon
+$KEY:C=GOTO:Maps of Chaos
+$KEY:D=GOTO:Maskim Xul
+$KEY:E=GOTO:Master Levels
+$KEY:F=GOTO:Master Levels #16
+$KEY:G=GOTO:Miasma
+$KEY:H=GOTO:Master Levels #14
+$KEY:I=GOTO:Mordeth
+$KEY:J=GOTO:Mutiny
 
 ^C:INDEX :: M
 
 :-------------------------------------------------------------------------------
 
-- [A] *Man on the Moon									Onesies
-- [B] *Maps of Chaos									MegaWADs
-- [C] *Maskim Xul										Maskim Xul
-- [D] *Master Levels for DOOM II						Commercial DOOM
-- [E] *Mephisto's Maosoleum (Master Levels)				Commercial DOOM
-- [F] *Miasma											Onesies
-- [G] *Minos' Judgement (Master Levels)					Commercial DOOM
-- [H] *Mordeth											Episodes
-- [I] *Mutiny											Community Projects
+- [A] *Magnolia											People
+- [B] *Man on the Moon									Onesies
+- [C] *Maps of Chaos									MegaWADs
+- [D] *Maskim Xul										Maskim Xul
+- [E] *Master Levels for DOOM II						Commercial DOOM
+- [F] *Mephisto's Maosoleum (Master Levels)				Commercial DOOM
+- [G] *Miasma											Onesies
+- [H] *Minos' Judgement (Master Levels)					Commercial DOOM
+- [I] *Mordeth											Episodes
+- [J] *Mutiny											Community Projects

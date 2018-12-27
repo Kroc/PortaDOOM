@@ -1,0 +1,40 @@
+$NAV=People
+$NAV=Ribbiks
+$KEY:P=SHELL:launcher.exe "wads\people\ribbiks\magnolia\play-magnolia.ini"
+$KEY:T=SHELL:wads\people\ribbiks\magnolia.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/100784-magnoliawad/
+
+:Magnolia										 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>06>20	  Author : _Ribbiks_
+:Levels   : *3			   Modes : *Single
+:Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+3 maps with a frozen/teal aesthetic, gimmicky gameplay and rather complicated layouts.
+
+- `DOOM2.WAD`, `prb+` complevel 9 (or equivalent)
+- HNTR and HMP are implemented
+- Maps are intended for pistol-start
+
+*FAQ:
+
+*Q: Green cyberdemons?*
+*A:* They behave identically to normal cybs, but have 1/4th the hp.
+
+*Q: What's with all the barons?*
+*A:* They don't count towards kill % in this wad. If you find this distasteful then play on skill 2 where it's less of an issue.
+
+*Q: Where do I go??*
+*A:* Follow your heart.
+
+:Credits
+:-------------------------------------------------------------------------------
+- _GoS_ for help with the palette, sprites, etc.
+- _NiGHTMARE_ for the "Hellish texture pack"
+- _FuzzballFox_ for the textures in `"stonecrap.wad"`
+- _40oz_ for a few textures from `mutiny.wad`
+- The 5000 people who are credited in `cc4-tex` and its progeny
+- all midi are original compositions
