@@ -615,10 +615,10 @@ SUB formatLine (indent%, src$, default_theme%)
                             GOSUB addChar
                         END IF
 
-                    CASE ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
-                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
-                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
-                         CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
+                    CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
+                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
+                         ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
+                         ASC_BTICK, CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
                         'word boundary? if bold is on, flip it off
                         IF is_bold` = TRUE THEN
                             LET is_bold` = FALSE
@@ -664,7 +664,7 @@ SUB formatLine (indent%, src$, default_theme%)
                             GOSUB addChar
                         END IF
 
-                    CASE ASC_SPC, ASC_TAB, _
+                    CASE ASC_SPC, ASC_TAB, ASC_PLUS, _
                          ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
                          ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
                          ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
@@ -714,10 +714,10 @@ SUB formatLine (indent%, src$, default_theme%)
                             GOSUB addChar
                         END IF
 
-                    CASE ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
-                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK, _
-                         ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
-                         CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
+                    CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
+                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
+                         ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
+                         ASC_BTICK, CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
                         'word boundary? if term is on, flip it off
                         IF is_term` = TRUE THEN
                             LET is_term` = FALSE
@@ -769,7 +769,7 @@ SUB formatLine (indent%, src$, default_theme%)
                 GOSUB addChar
                 LET is_boundary` = TRUE
 
-            CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_DASH, ASC_COMMA, _
+            CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_PLUS, ASC_COMMA, _
                  ASC_SEMICOLON, CTL_PAREN_ON, CTL_PAREN_OFF
                 '.............................................................
                 'these break the word, but the character must be included

@@ -35,17 +35,10 @@ SCREEN UI_SCREEN_MODE, , 0, 0
 COLOR UI_FORECOLOR, UI_BACKCOLOR
 CLS, UI_BACKCOLOR: _SCREENSHOW
 
-'initialise the global hot-keys
 CALL keys_Init
-'this will be displayed on the menu bar
-LET ui_menubar_right$(1) = "ESC:QUIT"
-''LET ui_menubar_right$(2) = "BKSP:BACK"
-
-CALL ui_cls
+CALL keys_Hide
 
 '-----------------------------------------------------------------------------
-
-DIM SHARED glVersion$
 
 DIM start!
 LET start! = TIMER

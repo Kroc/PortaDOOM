@@ -1,23 +1,34 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
-'initialise the custom key handling; only needed once
+'defines the custom shortcut keys, but doesn't enable them yet
 '=============================================================================
-SUB keys_Init
-	'the keys are NOT enabled by default
-	
-	'ESC key:
-	KEY KEY_USER1, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_ESC)
-	ON KEY(KEY_USER1) keys_ESC: KEY(KEY_USER1) OFF
-	'BKSPC key:
-	KEY KEY_USER2, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_BKSPC)
-	ON KEY(KEY_USER2) keys_BKSPC: KEY(KEY_USER2) OFF
+SUB keys_Init()
+    'ESC key:
+    KEY ONKEY_ESC, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_ESC)
+    KEY(ONKEY_ESC) OFF
+    'BKSPC key:
+    KEY ONKEY_BKSPC, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_BKSPC)
+    KEY(ONKEY_BKSPC) OFF
 END SUB
 
-'handler for when the ESC key is pressed
-SUB keys_ESC
-	SYSTEM 0
+'display both keys in the menu bar
+'=============================================================================
+SUB keys_Show()
+    LET ui_menubar_right$(1) = "ESC:QUIT"
+    LET ui_menubar_right$(2) = "BKSP:BACK"
+    CALL ui_statusbar_update
 END SUB
 
-'handler for when the BKSPC key is pressed
-SUB keys_BKSPC
+'=============================================================================
+SUB keys_Hide()
+    LET ui_menubar_right$(1) = ""
+    LET ui_menubar_right$(2) = ""
+    CALL ui_statusbar_update
+END SUB
+
+'=============================================================================
+SUB keys_Off()
+    KEY(ONKEY_ESC) OFF
+    KEY(ONKEY_BKSPC) OFF
+    CALL ui_statusbar_update
 END SUB

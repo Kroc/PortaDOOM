@@ -87,6 +87,9 @@ DO
     IF key$ = "" THEN _CONTINUE
     
     SELECT CASE UCASE$(key$)
+        CASE CHR$(INKEY_ESC)
+            SYSTEM 0
+            
         CASE "U"
             IF Engines_SelectedUltra = 0 THEN BEEP: _CONTINUE
             CALL Engines_Select(Engines_SelectedUltra)

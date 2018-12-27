@@ -46,6 +46,10 @@ DO
     LET key$ = INKEY$
     IF key$ = "" THEN _CONTINUE
     
+	IF ASC(key$) = INKEY_ESC THEN
+		SYSTEM 0
+	END IF
+	
     'is it a numeric key?
     IF ISINT(key$) = FALSE THEN
         'no, beep, and wait again

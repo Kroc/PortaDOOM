@@ -58,8 +58,8 @@ cmd_help:   PRINT ""
             PRINT ""
             PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/32] [/QUIT]"
             PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
-            PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
-            PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+            PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
+            PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
             PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
             PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
             PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
@@ -342,8 +342,8 @@ cmd_help:   PRINT ""
                 PRINT ""
                 PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/32] [/QUIT]"
                 PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
-                PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC"
-                PRINT "                   | /HEXEN | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+                PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
+                PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
                 PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
                 PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
                 PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
@@ -420,4 +420,4 @@ END IF
 
 cmd_done:
 '-----------------------------------------------------------------------------
-LET CMD_DEBUG` = TRUE
+''LET CMD_DEBUG` = TRUE

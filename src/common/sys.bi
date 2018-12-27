@@ -20,3 +20,5 @@ LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 'but a shortcut or batch script may be calling from a different path
 DIM SHARED DIR_CUR$
 LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
+
+DIM SHARED glVersion$

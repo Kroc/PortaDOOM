@@ -8,6 +8,8 @@
 'clear the screen for writing an error message
 '=============================================================================
 SUB ErrorScreen(title$)
+    'disable global hot-keys
+    CALL keys_off
     'clear the screen entirely, turning it red
     VIEW PRINT
     CLS, RED

@@ -21,6 +21,7 @@ DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
 
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
+'$INCLUDE:'launcher\ui_keys.bi'
 '$INCLUDE:'launcher\ui_status.bi'
 '$INCLUDE:'launcher\tags.bi'
 '$INCLUDE:'launcher\games.bi'
@@ -130,13 +131,13 @@ launch:
 '=============================================================================
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'launcher\ui_status.bm'
 '$INCLUDE:'launcher\errors.bm'
 '$INCLUDE:'launcher\tags.bm'
 '$INCLUDE:'launcher\games.bm'
 '$INCLUDE:'launcher\engines.bm'
 '$INCLUDE:'launcher\iwads.bm'
 '$INCLUDE:'launcher\wads.bm'
+'$INCLUDE:'launcher\ui_status.bm'
 '$INCLUDE:'launcher\ui_print.bm'
 '$INCLUDE:'launcher\ui_keys.bm'
 

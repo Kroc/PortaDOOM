@@ -1,5 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+'=============================================================================
 SUB ui_statusbar_update()
     DIM i, w, h
     
@@ -81,6 +82,7 @@ SUB ui_statusbar_update()
 END SUB
 
 'clear the screen  (keeping the statusbars)
+'=============================================================================
 SUB ui_cls()
     CLS
     CALL ui_statusbar_update

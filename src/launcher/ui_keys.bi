@@ -1,1 +1,4 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
+
+CONST ONKEY_ESC = KEY_USER1
+CONST ONKEY_BKSPC = KEY_USER2
