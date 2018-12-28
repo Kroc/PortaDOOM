@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /AUTO /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /USE prboom-plus /DEMO "30av-25337.lmp"

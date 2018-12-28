@@ -1,0 +1,72 @@
+Runner: Zero-Master
+IWAD: TNT.wad
+Category: UV-Pacifist
+Map: 08
+Source Port: Crispy Doom v4.3
+Time: 6:11
+
+Description:
+Thanks to keyboard_doomer for noticing the geometry here, I discovered
+some time ago that it was possible to do a void glide on a corner like
+this (on ev18) which is in the other direction (left) compared to e2m6 (right). 
+I knew the switch could be activated from the outside already because I tried to 
+find a void glide before I did the nightmare d2all. You couldn't run up or down 
+from the left side of the map so I never bothered to actually check there and 
+I didn't know it was possible at the time either.
+
+I also had no idea you could run across the void to the other side here, 
+but this being a possiblity made completing the pacifist here doable...
+as long as you could actually do the void glide.
+
+I pause at the start because it prevents me from getting thrown to 
+some random angle at the first tic. This is important because I want
+to do the exact same inputs until I reach the zombieguy, so I always
+have 91 health getting past the initial shotgunners :)
+
+To be honest I got really lucky getting past that last shotgunner, I knew if I 
+could get him infighting I could push him, but that never happend. So I was trying 
+to get some infighting with the imps and chaingunner to kill all the shotgunners. 
+I was failing too much so I decided I'd try something else which was to maybe try 
+and run around him. Then he actually got hit by someone so I could just push him through :)
+
+The setup for this trick took about 4 minutes, which wasn't even that bad.
+I'm just really happy I actually got it on the first attempt.
+
+I don't think there's much point trying to explain exactly how to do this,
+but the main idea is that you can do the void glide by simply pressing run forward.
+The only problem is that you need to be in a specific coordinate where it works.
+
+In order to find something I could do without TAS I first needed to find any
+specific coordinate that I could get to. Getting the exact YPOS is easy as I just
+need to get as close to the wall as possible. So the main problem is actually
+getting to some specific XPOS, which took a lot of work to figure out. Coordinates:
+
+XPOS = -623.000000
+YPOS = 2448.000000
+Player angle = 0
+
+Keep in mind the smallest possible change/movement is 1/256^2 or about 0.000015
+
+From using XDRE and bruteforce I found TR22 MF25 (wait until stop) TL9 MF25 (wait until stop)
+TR8 MF25 (wait until stop) and finally TL5 and run forward (MF50) from those initial coordinates
+gets you through the wall.
+
+XPOS = -632.902985
+YPOS = 2457.128311
+Player angle = 16
+
+If you are off by even 0.000015 then it doesn't work.
+
+I used novert because it's possible to do 0.000015 movements with SL2 against the wall,
+while I think MF1 didn't move at all, so it was much more difficult to do a single MF2 tic
+rather than just a SL2 tic (SL1/SR1 is impossible).
+
+Now of course not only did this trick make pacifist possible, this also opens up for a
+episode 1 run for nm100s :) You'll have a lot more resources going into stronghold as
+you can skip the whole bullshit RNG section at the end of map 08 which will kill you half 
+the time if you have good health. An even better idea would be to just do the d2all while 
+you're at it, heh.
+
+Of course I hate TNT so I won't do it, but maybe someone in the future will :)
+
+Also the pause screws up loading the demo in xdre, so the start is WT followed by 13xMF50 and then MF50 SL40...

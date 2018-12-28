@@ -1,0 +1,20 @@
+Pwad:      No Chance
+Pwad name: nochance.wad  
+Map:       01
+Skill:     4
+Category:  UV Max
+Exe:       prboom+ 2.5.1.5 -complevel 9
+
+Time:      34:32
+
+Author:    Killer5
+
+Comments:  Demo uses the fps cap in prboom+ menus.
+
+	   Here is my contribution to this wad. Times in practice range from 27:00 to 35:00. So there are a lot of things that can go better here.
+	   
+	   I eat a rocket in the 4 cyb area. Nerves finally caught up to me I guess. Luckily I survived =x.
+	   
+	   I would like to find a setup to get the mastermind to infight. Maybe waiting by the cyb in the rk area entrance and attempt to set it up there (lol).
+	   
+	   Hope whoever watches this enjoys!

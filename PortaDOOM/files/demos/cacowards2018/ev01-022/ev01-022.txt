@@ -1,0 +1,21 @@
+Runner: Zero-Master
+IWAD: TNT.wad
+Category: UV-Speed
+Map: 01
+Source Port: Crispy Doom v4.3
+
+Kills    :   30%
+Items    :   16%
+Secrets  :    0%
+Time     : 22.63
+
+Description: 
+Taking Looper's ev05 trick to the next level by doing 
+it on a wall that is at an angle + damage boost :)
+
+I came up with this some time ago and I managed to do it
+with turbo, but it seemed to be just out of reach with SR50.
+I figured a TAS might manage somehow by running into the wall
+and getting hit at a specific tic. Turns out that's not
+necessary since you can build up momentum against the wall, 
+still need to take damage afaik.

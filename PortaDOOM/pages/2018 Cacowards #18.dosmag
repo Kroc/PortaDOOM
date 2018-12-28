@@ -49,13 +49,23 @@ There were plenty of other great tracks made this year, and we can’t cover the
 
 :BIZARRO SPEEDRUNNING
 :===============================================================================
-2018 yet again pushed boundaries on the most revered runs and it's hardly surprising that _ZeroMaster010_ was driving the effort. He retook the `DOOM 2` UV-speed movie record from _eLim_ in *18:40* (lmp/YT) and improved his own `DOOM` E1 UV-speed to *4:51* (lmp/YT, *6:12* really, but `E1M8` time ignored for historic reasons).
+$KEY:1=SHELL:launcher.exe /AUTO /DOOM2 /USE prboom-plus /DEMO "demos\cacowards2018\lvall-1840\30uv1840.lmp"
+$KEY:2=SHELL:launcher.exe /AUTO /DOOM  /USE prboom-plus /DEMO "demos\cacowards2018\ep1-612\ep1-0451.lmp"
+2018 yet again pushed boundaries on the most revered runs and it's hardly surprising that _ZeroMaster010_ was driving the effort. He retook the `DOOM 2` UV-speed movie record from _eLim_ in *[1] 18:40* and improved his own `DOOM` E1 UV-speed to *[2] 4:51* (6:12 really, but `E1M8` time ignored for historic reasons).
 
+$KEY:3=SHELL:launcher.exe /AUTO /DOOM  /USE prboom-plus /DEMO "demos\cacowards2018\e4m6p6249\p4m66249.lmp"
+$KEY:4=SHELL:launcher.exe /AUTO /TNT   /USE prboom-plus /DEMO "demos\cacowards2018\ev08p611\ep08-611.lmp
+$KEY:5=SHELL:launcher.exe /AUTO /TNT   /USE prboom-plus /DEMO "demos\cacowards2018\ev01-022\ev01-022.lmp
+$KEY:6=SHELL:launcher.exe /AUTO /DOOM2 /USE prboom-plus /DEMO "demos\cacowards2018\lv07-004\lv07-004.lmp
+$KEY:Y=URL:https://www.youtube.com/watch?v=di8CktLUdC0
 $KEY:T=URL:https://www.youtube.com/watch?v=OpmPLrpGSos
-From this point things get surreal quickly. Back in January _ZM_ conquered the last `Ultimate DOOM` pacifist challenge and exited the notoriously claustrophobic `E4M6` in *1:02:49* (lmp/YT). Spoiler: he holds the cyberdemon down in a hug for 40+ minutes while some barons shoot it until you know what. Another previously undone feat is `Evilution` Map08 pacifist in *6:11* (lmp/YT), thought unrealistic until _ZM_ discovered a void glide assisted by a pinky demon. There's also a previously unknown keygrab on `Evilution` Map01 (lmp/YT) and the French speedster _Ch0wW_ applied the zero press trick (named after guess who) to finish `DOOM 2` Map07 in just 4 seconds (lmp/YT). _ZM_ also showcased out-and-back void gliding in a few coop TAS runs, further destroying the integrity of maps themselves (`E1M6`, `E3M1`, `PL22`, Map28: YT). Last but not least, he also proved the pacifist on `DOOM 2` Map30 is technically possible with this ridiculous [T: TAS]. Don't hold your breath for unassisted variants though.
+From this point things get surreal quickly. Back in January _ZM_ conquered the last `Ultimate DOOM` pacifist challenge and exited the notoriously claustrophobic `E4M6` in *[3] 1:02:49*. Spoiler: he holds the cyberdemon down in a hug for 40+ minutes while some barons shoot it until you know what. Another previously undone feat is `Evilution` Map08 pacifist in *[4] 6:11*, thought unrealistic until _ZM_ discovered a void glide assisted by a pinky demon. There's also a previously unknown *[5] keygrab* on `Evilution` Map01 and the French speedster _Ch0wW_ applied the zero press trick (named after guess who) to finish `DOOM 2` Map07 in *[6] just 4 seconds*. _ZM_ also showcased out-and-back void gliding in a few *[Y] coop TAS runs*, further destroying the integrity of maps themselves (`E1M6`, `E3M1`, `PL22`, Map28). Last but not least, he also proved the pacifist on `DOOM 2` Map30 is technically possible with this ridiculous [T: TAS]. Don't hold your breath for unassisted variants though.
 
+$KEY:7=SHELL:launcher.exe /AUTO /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /USE prboom-plus /DEMO "demos\cacowards2018\avall-41337\30av-25337.lmp"
+$KEY:8=URL:https://www.youtube.com/watch?v=fWpVI_T8JrM&list=PLTmV4zpWzC8nyEdAkk86OENZFyVwPxDUR
+$KEY:9=SHELL:launcher.exe /AUTO /DOOM2 /PWAD "people\death-destiny\nochance\nochance.wad" /USE prboom-plus /DEMO "demos\cacowards2018\nochance-3432\nochance-3432.lmp"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/100389-beatfill-94-pwads-month/
-With the _zero_ tax paid, the one feat competing with his shennanigans was _Ancalagon_'s UV-max movie of `Alien Vendetta` in *4:13:37* (lmp/YT), a monstrous piece of marathon running. Worth noting is _j4rio_'s insane map-by-map Tyson crusade through `Eternal Doom` (lmps/YTs), or _Killer5_'s _Anca_-beater on the infamous `No Chance` UV-max in 34:32 (lmp/YT). Yet when it comes to defining what the community did in 2018, the biggest demo haul came from a drive to fill tables for as many 1994 wads as possible, because [W: what is "priorities"].
+With the _zero_ tax paid, the one feat competing with his shennanigans was _Ancalagon_'s UV-max movie of `Alien Vendetta` in *[7] 4:13:37*, a monstrous piece of marathon running. Worth noting is _j4rio_'s insane map-by-map *[8] Tyson crusade* through `Eternal Doom`, or _Killer5_'s _Anca_-beater on the infamous `No Chance` UV-max in *[9] 34:32*. Yet when it comes to defining what the community did in 2018, the biggest demo haul came from a drive to fill tables for as many 1994 wads as possible, because [W: what is "priorities"].
 
 $KEY:E=URL:https://esamarathon.com/
 $KEY:N=URL:https://www.doomworld.com/forum/topic/98640-dsdacon-2018/

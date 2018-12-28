@@ -1,0 +1,52 @@
+---------------
+WAD Information
+---------------
+Title			:No Chance
+Filename		:nochance.WAD
+Release Date		:9.21.2008
+Author			:Death-Destiny
+Email Address		:brandon@doomuniverse.net
+Other Files By Author	:http://www.doomuniverse.net/DDProjects.html
+Misc. Author Info	:Sorry, that's classified information.
+Description		:This is a ridiculously difficult Boom-compatible map I made in the spirit of Erik Alm's eaxt.WAD.
+			 The only incentive for playing this map on UV is purely for the sake of the challenge and to see if you
+			 can complete a seemingly impossible task, as this map is otherwise completely unplayable or fun for any
+			 other reason. If you want a fairly upbeat, but managable challenge, play HMP. If you want a more casual
+			 run, play ITYTD or NTR.
+Additional Credits to	:Erik Alm for eaxt.WAD, as the principle behind it inspired this map.
+ 
+* What is included *
+New Levels		:1
+Sounds			:No
+Music			:Yes (I don't recognize the piece. If you know who wrote it, let me know so I can give them credit here.)
+Graphics		:Yes
+Dehacked/BEX Patch	:Yes (Internal and changes the minimap name.)
+Demos			:No
+Other			:No
+Other Files Required	:No
+
+* Play Information *
+Game			:Doom2
+Map #			:MAP01
+Single Player		:Yes
+Cooperative 2-4 Player	:Yes, it's implemented. The more, the merrier.
+Deathmatch		:No. There are better WADs to play deathmatch in than this.
+Difficulty settings	:Yes. The above description details the specifics of each setting, and which is appropriate for your interests.
+
+* Construction *
+Base			:None
+Build Time		:2 days
+Editor(s) Used		:Various
+Known Bugs		:UV is impossible
+May not run with	:...out a doggie biscuit
+Tested with		:PrBoom V2.4.8.3
+
+-----------------
+Legal Information
+-----------------
+* Copyright / Permissions *
+
+Authors MAY NOT use the contents of this file as a base for modification or reuse.
+You MAY distribute this file, provided you include this text file without modifications.
+You MAY distribute this file in any electronic format as long as you include this
+file intact. This file may not be used for commercial purposes.

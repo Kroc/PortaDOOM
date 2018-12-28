@@ -1,0 +1,76 @@
+Runner: Zero-Master
+Date: 2018-11-17
+IWAD: DOOM.wad
+Category: UV-Speed
+Map: Episode 1 (E1M1-E1M8)
+Source Port: Crispy Doom v4.3
+Time Without M8: 4:51 
+Time With    M8: 6:12 
+
+----------------------------------------------------------------
+Level			Map	Time		ep1-0500
+
+Hangar                  E1M1 -	0:12		 0:00
+Nuclear Plant  	        E1M2 -	0:23		 0:00
+Toxin Refinery 	        E1M3 -	0:41		-0:04
+Command Control		E1M4 -	0:16		-0:01
+Phobos Lab 	        E1M5 -	1:07		+0:06
+Central Processing	E1M6 -	1:00		-0:04
+Computer Station	E1M7 -	1:12		-0:03
+Phobos Anomaly		E1M8 -	1:21		+0:10
+----------------------------------------------------------------
+			TOTAL -	6:12		-0:06
+E1M8 comparison is not relevant. E1M1-E1M7 time is improved by 6 seconds.
+
+Description: 
+Real shame about E1M5, when I saw that 1:07 I was thinking I'd end demo right there.
+However I had a really good start, and then I followed it up with a pretty ok E1M6
+before getting an amazing E1M7. E1M7 uv-speed record is 1:15, of course I have the
+advantage of having weapons, but a 1:12 in an actual episode run is crazy.
+
+As always I don't do the route for E1M8 because all competition has been for
+the ExM1-ExM7 times, I think you should always get either 25 or 26 seconds on 
+E1M8 if you have 10 rockets. It takes 7 or 8 seconds to get those together with
+the soulsphere on E1M6. Of course going for the void glide is an option.
+
+I use rockets a bit differently compared to last time, and I grab an extra rocket
+in the dark room at the end of E1M5. I think this route is superior, would love
+to see someone else find improvements for E1, I'm sure there's seconds to be found
+somewhere.
+
+E1M1: I will never bother with 11 seconds here, and always reset on 13 seconds.
+
+E1M2: Good time, I sometimes take 26 seconds even and try to get a good E1M3 time.
+
+E1M3: IL record is 40, so a 41 is really good. Think I got kind of lucky with
+the early shotgun blast to the demon so I only had to shoot it once to kill it
+on the way back. 
+
+E1M4: I pretty much always get 16 seconds here, lucky to not get blocked by that 
+imp by yellow key door though.
+
+E1M5: Great run so far, getting blocked at the start by the shotgunner and the
+demon is easily avoidable, but I messed up so I was off to a bad start. At least
+I didn't get too badly blocked going for the linedef to activate the bridge.
+Yellow key door was a disaster, hardest part of the run anyways, getting up
+that elevator quickly. Then of course there was the blue key part... I didn't
+even know you could avoid waking up the spectre there, so I had to kill him
+because I messed up. The exit door was a mistake too, I didn't block the spectre
+behind me properly.
+
+Lots of time lost here.
+
+E1M6: Surprised I got 1:00 here honestly, thought it would be a lot worse.
+Thankfully the shotgunner that blocks the wall didn't shoot or something.
+I forgot what a good time here would be, I think a lot went ok here, but
+not exactly perfect.
+
+E1M7: Wow! IL record is 1:15, 3 rockets + chaingun obviously helps a lot,
+but a 1:12 in an episode attempt is crazy. As perfect as it's going to get really.
+
+E1M8: A little bit disappointed I failed that jump at the end, but I already
+lose 50 seconds or so here to the lack of rockets.
+
+I would have liked to have gotten a good E1M5 and E1M6, unfortunately it means I would 
+have to get 4:50 or lower now, which might be a bit too much for my patience these days.
+Hopefully someone else will improve it, but it's been 3 years since 4:57 already :)

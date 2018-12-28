@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /AUTO /DOOM /USE prboom-plus /DEMO "p4m66249.lmp"

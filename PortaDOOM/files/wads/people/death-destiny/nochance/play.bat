@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & "..\..\..\..\launcher.exe" "play-nochance.ini"

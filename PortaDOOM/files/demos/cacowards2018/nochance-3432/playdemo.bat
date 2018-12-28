@@ -1,0 +1,1 @@
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /AUTO /DOOM2 /PWAD "people\death-destiny\nochance\nochance.wad" /USE prboom-plus /DEMO "nochance-3432.lmp"

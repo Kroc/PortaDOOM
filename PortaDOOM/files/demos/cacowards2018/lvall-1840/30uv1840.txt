@@ -1,0 +1,194 @@
+Runner: Zero-Master
+Date: 2018-02-16
+IWAD: DOOM2.WAD
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: CrispyDoom v4.3
+Time: 18:40
+
+01	00:06	:)
+02	00:39	:|
+03	00:32	:|
+04	00:28	:)
+05	00:27	:)
+06	00:55	:))
+07	00:12	:)
+08	00:27	:)
+09	00:54	:))
+10	00:33	:)
+11	00:34	:)
+12	00:48	:((
+13	01:07	:(
+14	00:17	:))
+15	00:59	:(
+16	00:13	:))
+17	01:12	:)
+18	00:25	:(
+19	00:46	:(((
+20	00:35	:))
+21	00:12	:))
+22	00:26	:))
+23	00:43	:(
+24	00:40	:|
+25	00:44	:)
+26	00:38	:)))
+27	00:21	:)
+28	00:42	:)
+29	01:33	:)
+30	00:32	:)
+
+Description:
+I would have improved this sooner, but I had an unbelivable run of bad luck. 
+This is my 50th demo for Doom II to finish map 30 where 1 is nm100s, 18 are 30nm and 31 are 30uv.
+
+Big mistake on map 19.. maps 12 and 13 were really bad, 15 and 23 were bad.. 
+otherwise a decent ep1 with a decent end.
+
+Map 01: I never bother with 5 seconds here, part of the reason is because I start 
+with WT tic followed by MB50 tic for some reason. So I waste about 3 tics which 
+makes it more difficult.
+
+Map 02: If I had more motivation I'd go for the more aggressive strategy which is to 
+just shoot a shotgunner or two before attempting the glide. No double kills and a slow 
+glide lost me a few seconds, at least the barrels were good.
+
+Map 03: Lost either 1 or 2 seconds to missing the mega armor, only had to move forward 
+for 1 more tic before starting to strafe, so it was close.
+
+Map 04: I always get 29 seconds here, so I'm happy with 28.. though getting past the 
+demon would save another second. 
+
+Map 05: I like how this map isn't very difficult on UV unlike NM. Sometimes the zombieguys 
+wake up and block me after the elevator like this time, if they don't then 26 seconds 
+shouldn't be too hard.
+
+Map 06: I've been getting a lot of 54 seconds here, which is incredible considering I use 
+the slower jump to the exit which costs 1.25 seconds or so. 53 seconds should be no problem 
+if things go smoothly and you do the jump the usual way, but I can never do it consistently 
+for some reason. 
+
+Map 07: I don't know how many times I've shot a rocket at the second mancubus only to have 
+the rocket explode on the edge of the exit platform. I have no idea why that even happens, 
+as it's impossible if there are no monsters. 
+
+Map 08: Average time, cyberdemon started firing very quickly this time. After underhalls 
+this is the most luck based map, all because of the yellow key room. I tried a lot of 
+different things here to see if I could get something consistent, in the end I went back 
+to what I originally did and it works really well. I would love to see a better route 
+for this room as I am convinced something better exists, but I've wasted enough time on this.
+
+Also I swear I picked up those 5 rockets in the red key room.
+
+Map 09: I do a second rocket jump on this map if I have the health and rockets for it. 
+If I have a lot of health like this time I can risk doing it with 1 rocket, but I would 
+usually shoot a rocket at the imps first.. but that's not actually an option when you 
+only have 1 rocket left.
+
+For the first rocket jump I managed to do it much more reliable then before, 
+unfortunately I would often screw up my inputs when I did it quickly, so I slowed 
+it down and went with a slower setup to make sure I get it more often. Overall a 
+decent time, but I could save another 2 seconds with a quicker first RJ.
+
+Map 10: A quick setup for the blue key grab, it usually never works, but at least I never 
+skip the linedef to open up the wall which is more annoying. A SSG shot will always 
+kill a demon if it hits.. unless of course blockmaps have a thing to say about it.
+
+Map 11: My aim was bad and so I missed one of the imps twice, at least I got around 
+him anyways, though I probably lost a second.
+
+Map 12: I usually get around 43 seconds if I get the good elevator pattern, 46 seconds if not, 
+but I took the slow way around at yellow key and I got blocked by the last cacodemon for a couple 
+of seconds so I get 48s.
+
+Map 13: Bad time, but at least I didn't get blocked going for the 2 jumps which would be terrible. 
+The elevator to yellow key can either start going up or down, if it starts going up then 
+you lose 3 seconds, non-TAS it's impossible to do anything about, so 3 seconds lost. 
+
+Map 14: Really good time, though not too difficult assuming you don't get unlucky with damage taken.
+
+Map 15: I try to clear as many hitscanners as possible that are able to hit me before 
+attempting to press the switch. I still got hit and so it threw me off a bit and I could 
+have been quicker with it.. then I didn't grab the blue key because I lost some of my momentum 
+for some reason, if I changed some of the MB4X commands to MB50 I grab it easily, so a bit unlucky here. 
+
+Map 16: I mostly get 13 seconds on this map.
+
+Map 17: For this map I play a bit careful, at the start I skip a linedef so that there's 
+no chance of an imp scratching me from above. You can also grab red key and run straight 
+back while activating the linedef to the wall, however, sometimes the cacodemons can teleport 
+out of the room. I don't think it's very likely, but sooner or later the caco will teleport 
+early and hit you when trying to activate the switch behind YK door. 
+
+It's possible to save a lot more time on this map, 1:02 is my best time, but you'd have to 
+take a big risk in ignoring some of the monsters and you'd need a really quick switch press. 
+So that's impossible, but a 1:08 or so wouldn't be too difficult here.
+
+Map 18: I was telling myself I should switch to plasma instead of using the SSG, but it I decided 
+I'd go with the SSG and so I lost a second. Should always get 23-24 seconds here.
+
+Map 19: I have 2 options at the 32 unit gap which is to press strafe left for 1 tic, 
+wait, and press it again for 1 tic or to press it once for 2 tics. So when I want to 
+press it for 1 tic I sometimes accidently press it for 2 tics, which is fine as long 
+as I haven't already pressed it for 1 tic. Now what happened here is that I pressed 
+it for 1 tic, waited, then pressed it for 2 tics by accident and repeated the same 
+mistake 3 more times. Now if the spectre catches up and bites me from the side I'd 
+have to kill some 20 spectres which would obviously take forever. So naturally I tried 
+to get into the center of the 32 unit gap as quickly as possible, but then I risk the 
+chance of going past it if I'm moving too quickly. So then that happened and I wasted more time, 
+and eventually I did get bitten by the spectre.. however, it was directly from the back 
+which doesn't push me to the side, so I can still get through!
+
+Map 20: It's possible to skip the linedef to the elevator which is on the edge of the teleporter 
+by going very slowly. I try to make sure I run forward down the middle of the teleporter, as it 
+should be impossible to skip the linedef that way unless you get hit in the back by a lost soul. 
+35 seconds is perfect for me.
+
+Map 21: The only dangerous part of this map is the second glide, which I have also gotten 
+a lot better at. I am able to get it very quickly, so this map is not nearly as scary as it used to be. 
+Still though, you can get an unlucky chain of fireballs that makes it impossible.
+
+Map 22: I fire a BFG after going through the last teleporter to hopefully clear the everything that can 
+block me which worked really well, I can't really recall killing the revenant with tracers before.
+
+Map 23: I'm not sure if my previous strategy to try and keep the mancubus from being in a straight 
+line along the axis reduces the chance of him firing here. Sometimes I would test things and they 
+would work 10 times in a row, but then fail 5-10 times in a row when I try it later. Anyways the 
+barrels stayed up, but then I got blocked by the pain elemental, nothing I can do but wait for him 
+to get lost.
+
+Map 24: 40 seconds is pretty bad to be honest, I should get around 38 seconds most of the time.
+
+Map 25: Got blocked a few times so 44 instead of 43 seconds.
+
+Map 26: A cacodemon teleporting at the start is usually 50/50, it wastes a few seconds + 40 cells, 
+this time that didn't happen and I got a decent time. I think it's easier to get a better time on 
+this map on nightmare, but at least it's hard to die on UV.
+
+Map 27: I expect to get 15-19 seconds about 80% of the time, 15% of the time I expect to get 20-23 seconds. 
+The remaining 5% the vile will go full nightmare mode and do nothing but attack or run by the door 
+without opening it and eventually kill me. Maybe 1% of the time I'd expect him to go through the teleporter.
+
+Map 28: A bad start cost me a second, I mostly just get 41 seconds here otherwise.
+
+Map 29: I've had 2 attempts that should have been around a high 18:2X / low 18:3X die here. 
+The first one was to the first revenant which I could not kill with a BFG because I was lacking 
+10 cells. He hit me with a max damage projectile as I was going for the jump to the platform. 
+
+The second attempt is one of the most absurd ways I have ever lost a run, after hitting the last 
+switch and trying to get out I had a cacodemon in my path. So naturally the only solution is to 
+shoot him with a SSG to push him out of the way. I continue on and eventually get ready to do the 
+second rocket jump, and as I am moving I suddenly get blocked and pushed down into the lava. 
+I was shocked because in my mind this should be absolutely impossible, because a cacodemon cannot 
+ever start moving to that area on his own before I get there, and he would never have the time to reach it.
+
+So how did the cacodemon get there? well the SSG blast sent him flying at an incredible speed 
+and it placed him perfectly to get stuck briefly between 2 pillars in that area. He then manages 
+to get free from these 2 pillars at the perfect time to go unnoticed and just barely collides 
+with me as I got for the RJ.
+
+Plenty of cells this time made the start more comfortable, but the rest could have been better.
+
+Map 30: Anything besides an arch-vile should be fine here, though a revenant on the upper left 
+edge with a perfectly timed seeker projectile is pretty bad too.
+
+

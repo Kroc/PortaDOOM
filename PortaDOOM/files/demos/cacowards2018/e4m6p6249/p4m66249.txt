@@ -1,0 +1,77 @@
+Runner: Zero-Master
+IWAD: Doom.wad
+Category: UV-Pacifist
+Map: E4M6 (Against Thee Wickedly)
+Source Port: Crispy Doom v4.3
+
+Kills    :   50%
+Items    :    0%
+Secrets  :    0%
+Time     : 62:49
+
+Description:
+"One step closer to real pacifist entry. Who takes the next step?" - Looper
+
+Well, it took 6 years, but better late than never! Thanks to Looper for 
+showing that the cyberdemon can get stuck here.
+
+This completes the pacifist table for Ultimate Doom.
+
+A very frustrating demo to make for several reasons.
+The starting area has a lot of tight spaces with walls that
+are at an angle, several annoyingly placed monsters and even
+some damn decorations in the way. Never have I seen so many 
+elastic collisions, it's like you're a bouncing ball half the time.
+I needed to be careful before dropping down to the lava as to not 
+wake up the imp/shotgunner by the blue key since it makes things 
+a lot easier if I avoid them.
+
+Then after that bullshit you have the part where you open and close
+a door/wall for about 4 minutes almost every time. This is to clear the 
+shotgunners and as many spectres as possible. Hopefully the shotgunner
+takes down 1 of the spectres in the middle, because this lets the 
+cacodemon by the blue key out. It went really quick this time.
+
+Now there's probably a shotgunner alive by the red key area, hopefully
+he doesn't blast you with 40 damage going in and 40 damage going out.
+I run over there to wake up the cacodemons and the monsters in the 
+room next to it, which will also cause a lot of infighting.
+
+The next part is to just lure the cacodemons down to the yellow key area.
+Then you can go for the blue key, there's 2x25% health here which is really
+nice. You can also just run between the imp and the shotgunner when they 
+aren't awake. Frequently the cacodemons would catch up and block the
+way out though. 
+
+That's the easy part, then comes the hardest part, which is to clear the
+cacodemons by infighting with the barons. Unbelieveable luck this time,
+I had lots of health and I hadn't even grabbed the medikits by the 
+yellow key. Also I got lucky with all 6 cacodemons being gone.
+1 of the cacodemons always get stuck by the ledge to the cyberdemon room,
+so there's 1 unintentional telefrag. I also need to be careful not to
+wake up the 3 cacodemons that are behind the yellow key, I've screwed
+that up every single time except this one. My other attempt that reached
+red key ended because I got surprised by 2 of them out of nowhere.
+
+When you grab the red key you always wake up 1 caco and sometimes 2.
+Then there's another 2 cacodemons by the cyberdemon, now the barons can
+sometimes actually lose the fight so you want the remaining cacos to get 
+killed by the cyberdemon (both barons were at around 150 health while inital 
+health of a baron is 800). This shouldn't be too difficult, but it depends 
+on what survived in the room next to red key. I lost all momentum colliding
+with the baron at one point and then I got an elastic collision before 
+taking a melee hit, that could have killed me :)
+
+My plan at the end was obviously to have the baron the furthest away
+to kill the cyberdemon, but it turned out that he was missing a lot
+more than what I expected. My estimate went from ~2 hours to ~5 hours
+and it was already late, so I thought screw it and decided to go with
+the other baron.
+
+Now I'd say there's about an 40% chance I get screwed over there.
+If I don't get the cyberdemon stuck and the baron hits the cyberdemon
+then I am pretty much dead unless I get the cyber stuck immidiately.
+Then of course it's a bit difficult to see where the edge of the hitbox
+is so you might get hit by the baron. The easier part is to pay attention 
+to when the cyberdemon dies so you don't get hit by a follow up projectile.
+

@@ -1,0 +1,47 @@
+wad:      Alien Vendetta
+Map:       All
+Skill:     4
+Category:  UV-Max
+Exe:       PrBoom+ v2.5.1.4 krankdud's build.
+Time:      4:13:37
+
+-complevel 2
+
+Author:	   Ancalagon
+
+Since I've played this wad countless times out of trying almost every existing doom mod on it I figured I had half of the work done to max it. I don't know if I'll do this with another wad as this took quite some work to route and to run.
+
+That 10 minute map30 had me shaking on the last elevator cause I knew it was my last chance. Played the last few maps pretty safe. I think I have an ep1 run in sub 38 somewhere.
+
+MAP01 -  1:12.71 (  1:12)
+MAP02 -  2:07.94 (  3:19)
+MAP03 -  3:03.69 (  6:22)
+MAP04 -  4:47.77 ( 11:09)
+MAP05 -  2:39.91 ( 13:48)
+MAP06 -  5:19.71 ( 19:07)
+MAP07 -  2:13.71 ( 21:20)
+MAP08 -  6:24.57 ( 27:44)
+MAP09 -  4:27.97 ( 32:11)
+MAP10 -  6:12.23 ( 38:23)
+MAP11 - 10:32.89 ( 48:55)
+MAP12 -  6:48.26 ( 55:43)
+MAP13 -  8:31.97 ( 64:14)
+MAP14 - 10:34.29 ( 74:48)
+MAP15 -  6:05.69 ( 80:53)
+MAP31 -  6:38.40 ( 87:31)
+MAP32 -  6:17.77 ( 93:48) 
+MAP16 -  5:32.06 ( 99:20)
+MAP17 -  3:29.49 (102:49)  
+MAP18 - 12:22.43 (115:11)
+MAP19 -  7:47.49 (122:58)
+MAP20 - 16:46.31 (139:44)
+MAP21 -  3:15.46 (142:59)
+MAP22 -  5:00.71 (147:59)
+MAP23 -  7:03.51 (155:02)
+MAP24 -  5:35.29 (160:37)
+MAP25 - 23:31.57 (184:08)
+MAP26 - 16:32.77 (200:40)
+MAP27 - 21:35.29 (222:15)
+MAP28 - 13:31.43 (235:46)
+MAP29 -  7:59.29 (243:45)
+MAP30 -  9:52.31 (253:37)
