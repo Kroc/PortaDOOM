@@ -1,0 +1,28 @@
+$NAV=People
+$NAV=Bemused
+$KEY:P=SHELL:launcher.exe "wads\people\bemused\cryogenics\play-cryogenics.ini"
+$KEY:T=SHELL:wads\people\bemused\cryogenics\Cryogenics.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/98149-cryogenics-a-small-collection-of-random-cl9-slaughterish-maps-now-on-idgames/
+
+:Cryogenics										 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2017>12>09	  Author : _Bemused_
+:Levels   : *4			   Modes : *Single
+:Requires : *boom		Includes : *+Music
+:-------------------------------------------------------------------------------
+
+Set of 4 slaughter themed maps.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 2-3 weeks per map
+*Editor(s) used			: `GZDB-Bugfix`
+*Known Bugs				: Some texture misalignments
+*Tested With			: `GLBoom+`, `PrBoom+`, `GZDoom`
+
+:Credits
+:-------------------------------------------------------------------------------
+_Benjogami_ for midi and some textures, _Killer5_ and _Loveless_ for playtesting, _Insane_gazebo_ for the sunder_res textures, _RjY_ for nodebuilder config

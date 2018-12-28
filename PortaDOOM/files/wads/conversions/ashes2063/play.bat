@@ -1,1 +1,1 @@
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /USE gzdoom /PRE Ashes2063Maps115.wad /PWAD Ashes2063Mod115.pk3 -- CJs_WastedAshesSFXs.wad
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" "play-ashes2063.ini"

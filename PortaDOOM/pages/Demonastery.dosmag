@@ -1,0 +1,27 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\demonastery\play-demonastery.ini"
+$KEY:T=SHELL:wads\onesies\demonastery\demonastery.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/102434
+
+:Demonastery									 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>10>20	  Author : _Nootrac4571_
+:Levels   : *1			   Modes : *Single, Co-op?, Deathmatch?
+:Requires : *boom		Includes : *+Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+A medium sized, architecturally detailed single-player map which twists back in on itself several times, set in a crumbling monastery made of marble and corpses.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: About four months on and off
+*Editor(s) used			: `GZDoom Builder`
+*Tested With			: `PRBoom`, `PRBoom+`, `ZDoom`, `GZDoom`, `Eternity Engine`
+
+:Credits
+:-------------------------------------------------------------------------------
+- _Jimmy (James Paddock)_ for the excellent music
+- _Obsidian_ for the `DeHackEd` code

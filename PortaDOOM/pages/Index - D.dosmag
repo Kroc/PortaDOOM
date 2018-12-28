@@ -4,20 +4,22 @@ $KEY:B=GOTO:Dark Tide
 $KEY:C=GOTO:Dark Universe Part 1
 $KEY:D=GOTO:dead.air
 $KEY:E=GOTO:dead.wire
-$KEY:F=GOTO:Cabal Series #03
-$KEY:G=GOTO:Dimension of the Boomed
-$KEY:H=GOTO:Disjunction
-$KEY:I=GOTO:Don't Be A Bitch Remastered
-$KEY:J=GOTO:The Golden Souls 2
-$KEY:K=GOTO:DTWiD Series #02
-$KEY:L=GOTO:DOOM 64
-$KEY:M=GOTO:DOOM II
-$KEY:N=GOTO:DOOM II - Hellscape
-$KEY:O=GOTO:DTWiD Series #01
-$KEY:P=GOTO:DTWiD Series #03
-$KEY:Q=GOTO:DOOM(4) for DooM
-$KEY:R=GOTO:Doomed Space Wars
-$KEY:S=GOTO:DoomRL Arsenal
+$KEY:F=GOTO:Demonastery
+$KEY:G=GOTO:Cabal Series #03
+$KEY:H=GOTO:Dimension of the Boomed
+$KEY:I=GOTO:Disjunction
+$KEY:J=GOTO:Don't Be A Bitch Remastered
+$KEY:K=GOTO:The Golden Souls 2
+$KEY:L=GOTO:DTWiD Series #02
+$KEY:M=GOTO:DOOM 404
+$KEY:N=GOTO:DOOM 64
+$KEY:O=GOTO:DOOM II
+$KEY:P=GOTO:DOOM II - Hellscape
+$KEY:Q=GOTO:DTWiD Series #01
+$KEY:R=GOTO:DTWiD Series #03
+$KEY:S=GOTO:DOOM(4) for DooM
+$KEY:T=GOTO:Doomed Space Wars
+$KEY:U=GOTO:DoomRL Arsenal
 
 ^C:INDEX :: D
 
@@ -28,17 +30,19 @@ $KEY:S=GOTO:DoomRL Arsenal
 - [C] *Dark Universe, Part 1							Episodes
 - [D] *dead.air											Onesies
 - [E] *dead.wire										Onesies
-- [F] *Derelict Station (Cabal Series)					People
-- [G] *Dimension of the Boomed							Episodes
-- [H] *Disjunction										Episodes
-- [I] *Don't Be A Bitch Remastered						Multiplayer
-- [J] *Doom: The Golden Souls 2							Total Conversions
-- [K] *Doom 2 the Way id Did							MegaWADs
-- [L] *DOOM 64											Commercial DOOM
-- [M] *DOOM II											Commercial DOOM
-- [N] *DOOM II: Hellscape								Episodes
-- [O] *Doom the Way id Did								MegaWADs
-- [P] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [Q] *DOOM(4) for DooM									Mods
-- [R] *Doomed Space Wars								Episodes
-- [S] *DoomRL Arsenal									Mods
+- [F] *Demonastery										Onesies
+- [G] *Derelict Station (Cabal Series)					People
+- [H] *Dimension of the Boomed							Episodes
+- [I] *Disjunction										Episodes
+- [J] *Don't Be A Bitch Remastered						Multiplayer
+- [K] *Doom: The Golden Souls 2							Total Conversions
+- [L] *Doom 2 the Way id Did							MegaWADs
+- [M] *DOOM 404											MegaWADs
+- [N] *DOOM 64											Commercial DOOM
+- [O] *DOOM II											Commercial DOOM
+- [P] *DOOM II: Hellscape								Episodes
+- [Q] *Doom the Way id Did								MegaWADs
+- [R] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [S] *DOOM(4) for DooM									Mods
+- [T] *Doomed Space Wars								Episodes
+- [U] *DoomRL Arsenal									Mods

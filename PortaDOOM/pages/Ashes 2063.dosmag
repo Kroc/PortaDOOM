@@ -1,0 +1,29 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\ashes2063\play-ashes2063.ini"
+$KEY:T=SHELL:wads\conversions\ashes2063\WITNESSME.txt
+$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?f=19&t=47573
+
+:Ashes 2063										 * 2018 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>11>19	  Author : _Pinchy, Augustus "Alfonzo" Knezevich_
+:Levels   : *49			   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+	"Some time in the next century, governments and world leaders embarked on the greatest and most terrible war in our history. Although brief, what started as a local war of attrition soon raged out of control. The weapons the armies of that time wielded were incredibly powerful, reducing much of the planet to cinders. People, cities, even whole continents ceased to exist in a mere few hours.
+
+	Not content with a life of toil working the dessicated soil, or a short one fighting in the militia, you are a scavenger, junker, Stalker. The names are many, but the profession remains the same - searching the lost remnants of the old world for whatever valuables you can find. The people around you fear you for what you are and what you may someday bring back. You are a thief, a scoundrel. Without you, humanity would starve. But remember that the old world will not give up it's treasures easily. Bringing back something worth the risk is a miracle. Coming back alive is a success. Everything else is fate."
+
+:-------------------------------------------------------------------------------
+
+`Ashes` is a Post-apocalypse themed Total conversion, designed to be run in the `GZDoom` or `QZDoom` ports, and includes support for either software or hardware options. Set decades after a worldwide catastrophe has reduced most of the country to toxic wasteland, the player takes on the role of a scavenger searching the ruins of "The City", a once thriving metropolis, for valuable items. Add bands of mutant cannibals, limited ammunition, and a mysterious group of gas-mask wearing para-military types prowling the rubble.
+
+Heavily inspired by 90's FPS games, 80's post-apocalyptic movies, and a shit-ton of other references, `Ashes` will be designed to either run as a weapons mod, a map-pack, or as a full conversion, depending on the modules downloaded and run.
+
+:Credits
+:-------------------------------------------------------------------------------
+- See the *[T].txt* file for full credits
+$KEY:C=SHELL:wads\conversions\ashes2063\Credit.txt
+- *[C] credits* for _CJ_'s `Wasted Ashes SFX`

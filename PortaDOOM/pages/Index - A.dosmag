@@ -6,8 +6,9 @@ $KEY:D=GOTO:The Alfonzone
 $KEY:E=GOTO:Aliens TC
 $KEY:F=GOTO:Alpha Accident - Terra Nova
 $KEY:G=GOTO:Ancient Aliens
-$KEY:H=GOTO:Master Levels #02
-$KEY:I=GOTO:Avactor
+$KEY:H=GOTO:Ashes 2063
+$KEY:I=GOTO:Master Levels #02
+$KEY:J=GOTO:Avactor
 
 ^C:INDEX :: A
 
@@ -20,5 +21,6 @@ $KEY:I=GOTO:Avactor
 - [E] *Aliens TC										Total Conversions
 - [F] *Alpha Accident: Terra Nova						Episodes
 - [G] *Ancient Aliens									MegaWADs
-- [H] *Attack (Master Levels)							Commercial DOOM
-- [I] *Avactor											Episodes
+- [H] *Ashes 2063										Total Conversions
+- [I] *Attack (Master Levels)							Commercial DOOM
+- [J] *Avactor											Episodes

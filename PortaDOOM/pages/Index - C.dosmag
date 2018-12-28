@@ -12,7 +12,8 @@ $KEY:J=GOTO:Comatose
 $KEY:K=GOTO:Master Levels #05
 $KEY:L=GOTO:Counterattack
 $KEY:M=GOTO:Crumpets
-$KEY:N=GOTO:Hexen - Curse of the Lost Gods
+$KEY:N=GOTO:Cryogenics
+$KEY:O=GOTO:Hexen - Curse of the Lost Gods
 
 ^C:INDEX :: C
 
@@ -31,4 +32,5 @@ $KEY:N=GOTO:Hexen - Curse of the Lost Gods
 - [K] *Combine, The (Master Levels)						Commercial DOOM
 - [L] *Counterattack									Episodes
 - [M] *Crumpets											Episodes
-- [N] *Curse of the Lost Gods (Hexen)					Episodes
+- [N] *Cryogenics										People
+- [O] *Curse of the Lost Gods (Hexen)					Episodes
