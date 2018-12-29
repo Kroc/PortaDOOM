@@ -1,6 +1,6 @@
 $THEME=BLACK
 $TITLE=Multiplayer Awards
-$KEY:Q=GOTO:Quake Champions - Doom Edition
+$KEY:Q=URL:https://www.moddb.com/mods/quake-champions-doom-edition
 
 ^C:2018 CACOWARDS :: MULTIPLAYER AWARDS
 

@@ -1,0 +1,115 @@
+$THEME=BLACK
+$TITLE=Index
+
+^C:2018 CACOWARDS :: INDEX
+
+:-------------------------------------------------------------------------------
+$REM=(Indented pages are cross-references and not a direct part of Cacowards 2018)
+
+:TOP 10:
+
+$KEY:A=GOTO:Avactor
+- [A] *Avactor										_Eradrop_
+
+$KEY:B=GOTO:Dark Universe Part 1
+- [B] *Dark Universe, Part 1						_Payload4367_
+
+$KEY:C=GOTO:The Adventures of Square
+- [C] *The Adventures of Square: Episode 2			_BigBrik Games_
+
+$KEY:D=GOTO:Preacher
+- [D] *Preacher										_Darch_
+
+$KEY:E=GOTO:Dimension of the Boomed
+- [E] *Dimension of the Boomed						_Urthar_
+
+$KEY:F=GOTO:Struggle - Antaresian Legacy
+- [F] *Struggle - Antaresian Legacy					_antares031_
+
+$KEY:G=GOTO:REKKR
+- [G] *REKKR										_Revae_
+
+$KEY:H=GOTO:Maskim Xul
+- [H] *Maskim Xul									_Obsidian_
+
+$KEY:I=GOTO:The Golden Souls 2
+- [I] *Doom: The Golden Souls 2						_Batandy_
+
+$KEY:J=GOTO:UAC Invasion - Supply Depot
+- [J] *UAC Invasion: The Supply Depot				_DooMknight_
+
+:RUNNERS UP:
+
+$KEY:K=GOTO:Exomoon
+- [K] *Exomoon										_Deadwing_
+
+$KEY:L=GOTO:Man on the Moon
+- [L] *Man on the Moon								_Yugiboy85_
+
+$KEY:M=GOTO:Umbra of Fate
+- [M] *Umbra of Fate								_YukiRaven_
+
+$KEY:N=GOTO:Port Glacia
+- [N] *Port Glacia									_an_mutt_
+
+$KEY:O=GOTO:Magnolia
+- [O] *Magnolia										_Ribbiks_
+
+$KEY:P=GOTO:The Alfonzone
+- [P] *The Alfonzone								_Pinchy_
+
+$KEY:Q=GOTO:Ashes 2063
+- [Q] *Ashes 2063 Episode 1							_Vostyok_
+
+$KEY:R=GOTO:Demonastery
+- [R] *Demonastery									_Nootrac4571_
+
+$KEY:S=GOTO:DOOM 404
+- [S] *DOOM 404										_Capellan_
+
+$KEY:T=GOTO:Cryogenics
+- [T] *Cryogenics									_bemused_
+
+:MULTIPLAYER AWARDS:
+
+$KEY:U=URL:https://www.moddb.com/mods/quake-champions-doom-edition
+- [U] *Quake Champions: Doom Edition				_DBThanatos_ & _Michaelis_
+
+:GAMEPLAY MOD AWARDS:
+
+$KEY:V=GOTO:Guncaster
+- [V] *Guncaster									_Pillowblaster_
+
+$KEY:W=GOTO:Netronian Chaos
+- [W] *Netronian Chaos								_Captain J_
+
+$KEY:X=GOTO:GMOTA
+- [X] *GMOTA										_Combine_Kegan_
+
+:MORDETH AWARD:
+
+$KEY:Y=URL:https://www.moddb.com/mods/total-chaos
+- [Y] *Total Chaos									_wadaholic_
+
+:THE SPACESHIP OF THESEUS:
+
+- [Y] *Total Chaos									_wadaholic_
+
+:CODEAWARD:
+
+$KEY:Z=URL:https://github.com/anotak/doombuilderx
+- [Z] *Doom Builder X								_anotak_
+
+:MACHAWARD:
+
+$KEY:1=GOTO:Mr. Friendly
+- [1] *Mr. Friendly									_JP LeBreton_
+
+:CREATOR OF THE YEAR:
+
+$KEY:2=URL:https://www.doomworld.com/profile/16250-revae/
+- [2] _Revae_
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2018/
+:source [#: www.doomworld.com/cacowards/2018]
