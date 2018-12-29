@@ -1,3 +1,629 @@
+GZDoom 3.7.0 Released
+--------------------------------------------------------------------------------
+*Thu Dec 27, 2018 9:01 am*
+
+UDMF changes - important for editor authors!
+
+    Expand UDMF and ZScript API for side's own additive colors
+    Add 'useowncoloradd_{top,mid,bottom}' sidedef properties to the UDMF spec
+    Please be aware there are also now UDMF fields for destructible geometry. (implementation details here)
+
+Highlights
+
+    Completely revamped textures system, allowing for more future extensibility and rework, also fixes a few issues
+    add support for scaled textures in the software renderer
+    Untranslated fonts now appear as truecolor
+    Improvements to Doom64 colouring
+    Add NOFRICTION and NOFRICTIONBOUNCE flags
+    declared Actor's Morph() and UnMorph() functions virtual
+    scale factor is now applied to all scaling modes
+    add vanilla lightmode that behaves exactly as Doom's original light did
+    Cheat-enforced CVARs can now be changed in normal single player games without sv_cheats
+    Added a JIT compiler for DECORATE and ZScript which should allow some maps and mods to perform slightly, if not significantly faster in some cases 64 bit only!
+    scriptified the AltHUD
+    Many bug fixes as usual
+    Lights are now referenced by sections rather than surface, to speed up light linking. This should allow a dynamically-lit plasma bolt to pass over a 3D bridge in Frozen Time without turning the game into a slide show.
+    Many scriptifications from native code to ZScript
+    Add shader cache for Intel GPU's which should result in faster startups (especially on Windows) - first startup will still be slower, though
+    Added IsPointInMap(Vector3 p).
+    Added destructible geometry, exported to ZScript
+    Added a function to get the actor's age in ticks.
+    Added a new field to the Actor class which stores the amount of ticks passed since the game started on the moment the actor was spawned.
+    Added a function to the Actor class to get its spawn time relative to the current level.
+    Added spawn time information to the output of the "info" console command.
+    Export AllClasses
+    Update GME up to 0.6.2 version
+    changed the way alpha works on DrawLine and DrawThickLine so they're consistent
+    GL renderer is now partly multi-threaded, resulting in a 10-20% speedup, depending on a map's complexity.
+    add "neutral" gender option and better obit formatting
+
+Details
+
+    Many scriptifications from native code to ZScript
+    moved Extradata parser into MapLoader class.
+    moved slope creation functions and most initialize-time variables into MapLoader class.
+    moved the content from p_glnodes into the MapLoader class.
+    moved most content of p_setup.cpp into a MapLoader class.
+    NOFRICTION now applies to Z friction when flying or swimming
+    fixed crash in Actor.Warp() with null destination
+    remove some obsolete bit of cruft from the class type system.
+    fixed 3D floor initialization for actor spawning. - Since actors are being spawned before the renderer gets set up this needs to fully initialize the list before spawning the actors, then take it down again for creating the vertex buffer and then recreate it.
+    Expand UDMF and ZScript API for side's own additive colors
+    Add 'useowncoloradd_{top,mid,bottom}' sidedef properties to the UDMF spec
+    dynamically update polyobj lines
+    Split off all reactive functionality (pain, infighting, etc) into its own function, ReactToDamage.
+    Refactored all DamageMobj's damage <= 0 values.
+    Any unconditional cancellations now return -1. ReactToDamage will not be called if values < 0.
+    All pain/wound/target changing allowances return 0.
+    Add NOFRICTION and NOFRICTIONBOUNCE flags
+
+    NOFRICTION disables all friction effects on the thing it's set on
+    (including the speed cap from water/crouching), and NOFRICTIONBOUNCE
+    disables the "bounce off walls on an icy floor" effect on the thing
+    it's set on.
+    fix first softpoly frame being empty
+    declared Actor's Morph() and UnMorph() functions virtual
+    set vid_scalefactor to 1 when using vid_setscale
+    initialize the index field for particles.
+
+    This won't contribute to sort order so it should be the same for all particles, which it wasn't because it was never set.
+    fixed sprite sorting in the hardware renderer.
+
+    This did no longer sort sprites in the same position reliably since the feature to render sprites which only partially are inside a sector was added.
+    With this, sprites in the same position are no longer guaranteed to be added to the render list in sequence.
+    Fixed by adding an 'order' field to AActor which gets incremented with each spawned actor and reset when a new level is started.
+
+    The software renderer will also need a variation of this fix but its data no longer has access to the defining actor when being sorted, so a bit more work is needed here.
+    remove shadow acne when dynlights perfectly align with planes
+    improve softpoly 3d floor drawing somewhat
+    fixed random number generation in SpawnFizzle.
+
+    This should now produce the same value range as Hexen's original code.
+    fixed bad attempt at restoring position in A_CustomBulletAttack.
+    fix null pointer crash, replace DONT_DRAW with a boolean, make rw_pic a local variable
+    gave the strifehumanoid's burn states dynamic lights.
+
+    Unlike everything else from the IWADs this had to use the 'light' keyword in ZScript because this is merely a base class for many others and the light definitions here need to be inheritable.
+    renamed back arguments of A_FireProjectile.
+    fixed default initialization of software warp textures
+    fixed multipatch texture resolving
+    empty screenshot array is returned by base framebuffer
+    removed the redundant GetOffsetPosition export and added direct native support to its existing variants
+    cleaned up use of the random function in script files.
+
+    Many uses of random() & value have been turned into random(0, value).
+    This is not only more efficient, it also ensures better random distribution because the parameter-less variant only returns values between 0 and 255.
+    fixed the decal translation handler truncated the translation ID
+
+    This was yet another of those old misguided 16 bit space 'optimizations'.
+    fixed: The random sound handler was using 16 bit storage throughout
+
+    Changed to use 32 bit and also fixed the random number call which was using the byte value variant of the access operator, effectively limiting the number of choices to 256.
+    fixed PlayerInfo.FindMostRecentWeapon
+
+    returning multiple values from a subfunction is currently not working so this has to add an indirection.
+    a few more explicit local buffer allocations removed.
+    use a TArray to pass the screenshot buffer
+    fixed lost settings controller state upon new game
+    cleaned up player reinitialization upon new game
+    fix decals looking blackened due to low lookup table precision when alpha is zero
+    fixed: For an initial weapon pickup, sv_unlimited_pickup wasn't checked for the included ammo.
+    Export P_GetOffsetPosition and ADynamicLight::SetOffset to ZScript
+    added missing null pointer checks to cheat code.
+    Fixed the position of the soul sphere within one of the secret areas (sector 324) of Alien Vendetta MAP28.
+    removed the hasglnodes variables.
+
+    Since the software renderer also requires GL nodes now this was always true.
+    fix MemcpyCommand not using the same lines for the threads as softpoly (visible as a race condition when screenblocks didn't start at top of screen)
+    moved P_OpenMapData and related content out of p_setup.cpp.
+    made Ammo.GetParentAmmo virtual
+    vWorldNormal is not normalized but R_DoomColormap requires this
+    moved all shutdown handling for sound related resources to I_ShutdownSound instead of registering separate atterm handlers.
+    fixed: The Heretic sky height hack needs to be stored in the already created texture object as well.
+    added an option to GAMEINFO to either force or disable loading of the default lights and brightmaps.
+
+    The mod which prompted me to add this is "The Chosen" which is a Dehacked-based TC and repurposes many original actors for something entirely different.
+    The stock lights are not usable for this and would make it impossible to add a GAMEINFO lump to it because then there is no way to disable loading of lights in the startup screen.
+    remove InitSoftwareSky
+    fix sky drawer issues when not using max screenblocks
+    Add line numbers to JIT stack traces. (#667)
+    Added a function for triggering use/push specials for usage in custom monster AI.
+    Exported P_CheckFor3DFloorHit and P_CheckFor3DCeilingHit to ZScript.
+    fixed: A powered up weapon which shares its ready state with the parent but is currently in a firing sequence may not force-switch the weapon, because that will cause the sequence to run in the wrong weapon's context.
+    fixed: 'frame' in GLDEFS light definitions was case sensitive.
+    add support for writing the native call stack
+    improve the stack trace when the jit is active
+    fix r_multithreaded 0 not working
+    move more of the light calculation code to the drawerargs
+    replaced several explicit allocations with TArrays.
+    fixed: Alpha textures need to use a color's grayscale value, not their red channel.
+    fixed inconsistent dymanic lights setup with UBO
+    delay converting sprite lightlevels to a shade until we hit ColormapLight
+    delay converting wall lightlevels to a shade until we hit the drawer
+    fix heretic light torch in software renderer and remove some code duplication
+    move visibility calculation to LightVisibility
+    add support for scaled textures in the software renderer
+    use TArrays for MD3 storage.
+    fixed: For non-persistent buffers, sprite vertices need to be recalculated in the splitter code of the translucent sorter.
+    fix sky drawers not staying within their numa node
+    removed redundant std::move.
+    improved error reporting for badly defined translations.
+
+    This needs to be handled by the caller for all use cases because the translation parser lacks the context to do a proper error report.
+    fixed: sidedef-less GLWalls may not apply per-sidedef render properties.
+
+    These always come from open-sector render hacks where the renderer tries to fill in some gaps
+    fixed: Both main and worker thread were modifying the portal state.
+
+    The parts in the main thread have been offloaded to a new worker job to avoid having to use a mutex to protect the portal state.
+    fixed: no sprites were drawn in a sector if it only had ones in its sectorportal_thinglist.
+    let FxNop have a value type, even if it's just TypeError.
+    fixed two broken ScriptUtil calls in FraggleScript.
+    added a 'forceworldpanning' map flag.
+
+    Since unfortunately this cannot be set as a general default, let's at least make it as easy as possible to disable that panning+scaling madness without having to edit the texture data.
+    fixed: The light defaults were not fully deleted on an engine restart.
+    store UnchangedSpriteNames in Dehacked in a less hacky manner.
+    use a TArray in PPUniforms.
+
+    This makes the vast majority of code in that class just go away
+    handle CR_UNTRANSLATED so that it doesn't force CR_UNTRANSLATED to the palette.
+
+    Since the entire font setup is very much incapable of handling this during rendering, short of a complete rewrite, it was necessary to put the relevant code into the places which process the characters for drawing so that it can disable the translation table (which needs to be passed as raw data to the draw functions) and keep track of both the translatable and the original variant of the character graphics.
+    use TArrays for most buffers being used in the font class.
+    use a TArray to store the particles and remove all 16 bit global variables.
+
+    This means one less exit function to deal with - and these days 16 bit variables are a pointless attempt at saving space.
+    use symbolic constants for the light modes.
+    add vanilla lightmode that behaves exactly as Doom's original light did
+    enable the texture scalers in software mode.
+    code simplification.
+    fixed incorrect alignment of scaled world panned textures combined with per-sidedef scaling in the hardware renderer
+
+    This particular case incorrectly factored in the sidedef's scaling factor for how to calculate the offset.
+    Fortunately this is a very rare case - a quick check yielded no maps depending on it.
+    Should any map surface that depends on this bug a compatibility option may be needed but it doesn't seem likely that this may be the case.
+    disable music playback if WinMM stream cannot be opened
+    fixed memory leak with texture creation.
+    fixed 3D floor texture setup.
+
+    This code really makes zero sense, it looks like the cases for upper and lower texture should never be entered ever.
+    fixed invalid texture accesses in the software renderer.
+    Force node rebuild for Plutonia 2 MAP29 to fix BSP glitches
+    cleaned out the FHardwareTexture class, now that the translations are finally handled on a higher level.
+    added a number of darken2.wad maps to rebuild nodes in compatibility.txt
+    fixed crash on invoking vid_setsize CCMD with one argument
+    separated the savepic texture handler from the regular PNG texture
+
+    This was leaking memory with being handled like a regular image texture and also would prevent further changes to the in-game texture handling because the savegame picture was imposing some limitations on FPNGTexture's implementation
+    add font characters to the texture manager for easier management
+
+    These were the only non-transient textures not being handled by the texture manager which complicarted operations that require itrer
+    added a 'check only' option to CreateTexBuffer.
+
+    This is meant to calculate the content ID without constructing the texture buffer.
+    FHardwareTextureContainer.
+
+    This is essentially a stripped down version of FHardwareTexture, which can exist on the API independent size, and which stores pointers to hardware textures instead of OpenGL texture handles.
+    Force node rebuild for Plutonia 2 MAP25 to fix BSP glitches
+    print VM stack trace on startup abort exception
+    re-added PlayerInfo.BringUpWeapon (as a deprecated function for compatibility with 3.6.0 mods)
+    fixed deprecation warnings for member functions not checking the version.
+    split gl_texture_hqresize into two variables - one for mode, one for multiplier.
+    Fixed: the vid_rendermode CVAR could get wrong values.
+    fixed return value of native call to dynamic array's Reserve()
+
+    viewtopic.php?t=62841
+    server CVARs can be changed only by settings controller
+
+    Initially, settings controller flag was false by default
+    It was not touched during construction and destruction of player_t instances though
+    Now, with all members initialized in class definition, this flag must be saved and restored manually
+
+    viewtopic.php?t=62830
+    Let FSkyboxTexture map to the last defined regular texture of the same name instead of its first face
+
+    This is normally a better fallback for the software renderer.
+    Use FImageTexture for the null texture
+
+    FDummyTexture had a big problem: Whenever it was accessed by accident it crashed the app because it wasn't fully implemented.
+
+    What it should do is return empty pixels of the given size, and an unextended FImageTexture is doing just that.
+    Made SWPaletteTexture an ImageSource and let it be managed by the texture manager.
+
+    This is a lot easier to manage because the palette is just static data that can easily mimic an image.
+    implemented a proper texture composition cache.
+
+    This will mostly ensure that each patch used for composition is only loaded once and automatically unloaded once no longer needed.
+    fixed precaching to consider animations and switches
+    removed erroneous assertion - viewtopic.php?t=62815
+    fixed Actor.A_StopSound() native call - Wrong function overload was selected by compiler - viewtopic.php?t=62820
+    made some changes to the FImageSource interface that allows forwarding the bRemap0 flag, but do it so that it doesn't permanently alter how the image looks.
+
+    In ZDoom this would affect everything using a patch that got used in a front sky layer, even if the texture was totally unrelated. It is only owed to the low usability of such patches for other purposes that this hasn't caused problems.
+    changed multipatch texture composition to always composite off full source images and not do it recursively.
+
+    Previously it tried to copy all patches of composite sub-images directly onto the main image.
+    This caused massive complications throughout the entire true color texture code and made any attempt of caching the source data for composition next to impossible because the entire composition process operated on the raw data read from the texture and not some cacheable image. While this may cause more pixel data to be processed, this will be easily offset by being able to reuse patches for multiple textures, once a caching system is in place, which even for the IWADs happens quite frequently.
+
+    Removing the now unneeded arguments from the implementation also makes things a lot easier to handle.
+    reworked how the software renderer manages its textures.
+        it's no longer the main texture objects managing the pixel buffer but FSoftwareTexture.
+        create proper spans for true color textures. The paletted spans only match if the image does not have any translucent pixels.
+        create proper warp textures instead of working off the paletted variants.
+    Added Plutonia 2 MAP10 and MAP11 to the "rebuildnodes" compatibility list.
+    fixed crash with FraggleScript in Nimrod MAP02.
+    fixed broken Z coordinate in Actor.Vec3Angle() native call
+    Disable PALVERS substitution when true color rendering is active.
+    Renamed FTextureManager::GetTexture to GetTextureID
+    moved the span and swtruecolor creation code into FSoftwareTexture.
+    moved the software rendering specific parts of the sky setup to r_skyplane.cpp.
+    handle the Harmony status bar icon scaling a bit more robustly.
+
+    Considering that the physical texture size should be abstracted away from modding this needs to be done differently.
+    Doing any calculations with physical texture sizes on the mod side is only going to cause errors so this had been changed to always return scaled size.
+    add plutonia map32 to node regen compatibility - viewtopic.php?f=2&t=62777
+    fixed native calls to LevelLocals.GetUDMF*() functions
+    changing vid_scalefactor now always shows current scaling data unless it gets set to "1"
+    vid_scaletoheight/width now works in all scaling modes, and can now also scale on custom resolutions directly
+    scriptified P_CheckMeleeRange2.
+    deprecated a few functions that depend on AAPTR_* to be useful.
+    fixed: ST_FormatMapName did not clear the string it wrote to before appending text.
+    fixed: SlotPriority must be a float.
+    Enforce CheckCheatmode() for cheat-enforced CVARs, allowing them to be changed in normal single player games
+    moved a large part of the VM thunks out of p_mobj.cpp.
+    fixed: SBar_SetClipRect had a superfluous argument resulting in incorrect behavior
+    scriptified ASpecialSpot.
+    scriptified A_SpawnSingleItem, which was the last piece of native code still referencing AInventory
+    scriptified A_SelectWeapon and inlined the last remaining use of APlayerPawn::SelectWeapon.
+    scriptified A_SelectWeapon
+    The 'A' prefix has no meaning in class names on the script side - even in comments.
+    fixed max. ammo display on AltHud.
+    added missing min/max unsigned instructions for the VM.
+    always apply vid_scalefactor now, even when vid_scalemode is not 0 or 1.
+    fixed crash with weapons which remove themselves from the inventory but continue calling action functions.
+
+    This is still an error, so now this throws a meaningful exception.
+    hardened the seg integrity checks against extremely broken mods.
+
+    Temple of the Lizardmen 3 has segs lumps in every level that seem to use a different data format and are completely unusable, up to triggering undefined behavior.
+    fixed: The static variant of PClass::FindFunction may only be used for actual static variables.
+    Fix RemoveInventory not calling DetachFromOwner when an item is the first in the owner's inventory.
+    Fix CheckAddToSlots not working because it uses GetReplacement incorrectly.
+    fixed issues with Dehacked's ad-hoc script code generation
+
+        The functions had no prototype and caused crashes.
+        even after creating a prototype it didn't work because CreateAnonymousFunction was set up incorrectly for the case where a known return type was given.
+    disable alpha test on models if the renderstyle isn't STYLE_Normal
+    implemented missing 'exact' parameter for ThinkerIterator.Next.
+    fixed accidentally misnamed parameter in A_Explode.
+    started replacing direct references to class AInventory.
+
+    The easiest part was the type checks which could be changed to the name variant with a global search and replace.
+    fixed: P_PoisonPlayer and P_PoisonDamage did not check for NODAMAGE.
+    fixed: P_PoisonDamage's check for Buddha2 and the Buddha powerup were inverted.
+    fixed: P_PoisonDamage checked the modified damage instead of the raw, allowing amplifiers to boost the damage beyond telefrag and circumventing regular buddha.
+    scriptified AInventory::Tick.
+    scriptified the AutoUseHealth feature.
+
+    This again is a piece of code that reads and even writes to inventory items' properties, so better have it on the script side.
+    scriptified the decision making of the invuseall CCMD.
+
+    Custom items had no way to adjust to this - and it also was the last native access to ItemFlags.
+    scriptified P_DropItem.
+    scriptified the no-spawn flag check for armor and health items.
+    consolidated the check for "is actor an owned inventory item" into a subfunction.
+    scriptified G_PlayerFinishLevel.
+    fixed incomplete null checks in A_RadiusThrust.
+    scriptified AActor::ClearInventory
+    properly hook up the alt HUD with the status bar.
+    scriptified the last components of the alternative HUD.
+    moved the ALTHUDCF parser PClass::StaticInit, so that it gets done right after creating the actor definitions.
+
+    All left to do is not to reallocate the AltHud object for each frame but store it in a better suited place.
+    scriptified the main drawer for the in-game HUD and removed all intermediate VM calls from the native source.
+    scriptified the AltHUD
+    added the missing TNT1A0 check for icon-less keys.
+
+    Since it tries to get the icon from the spawn state it also has to check if that actually has a valid sprite.
+    Fixed A_JumpIfNoAmmo not working.
+    fixed the AngleToVector calls in stateprovider.txt.
+
+    This looks like a search & replace gone wrong.
+    Restored A_SpawnItemEx's "chance" to "failchance" to prevent mod breakage from named parameters.
+    fixed script call in PickNewWeapon.
+    scriptified invnext and invprev CCMDs.
+    moved ValidateInvFirst to the script side because this was one of the major functions that directly reference AInventory.
+    moved AInventory::DoRespawn fully to the script side.
+    made CallTryPickup a global function.
+    re-fixed the massacre fix for Dehacked-modified inventory items.
+
+    Instead of overriding the Massacre method it is preferable to clear the flags causing the bad behavior, most notably ISMONSTER.
+    scriptified GiveAmmo and the one remaining piece of native code still using it.
+    scriptified DropInventory.
+    scriptified UseInventory and several functions using the already scriptified ones,
+    scriptified TakeInventory, including the ACS/FS interfaces.
+    scriptified RemoveInventory and Inventory.OnDestroy.
+    scriptified GiveInventory and made the interface a bit more configurable by mods.
+
+    Now a child type can decide for itself how to treat 'amount'.
+    The scripting interfaces to this function in ACS and FraggleScript have been consolidated and also scriptified.
+    scriptified AddInventory.
+    added a second version of Hacx's MAP05 to the compatibility fixer list.
+    fixed character to int conversion for UTF8-characters.
+    Added a flag to make bouncing objects disappear when hitting sky surfaces
+    Exported AActor::Grind to ZScript.
+    cleaned up the sound options menu.
+
+    There were still some leftover definitions from FMod and far too many things were at the top level. Anything non-essential has been moved to the "Advanced Sound Options" submenu and the pointless sound backend switch has been removed entirely.
+    fixed declaration of ChangeStatNum.
+    use psprite renderstyle on HUD models
+    fixed: P_Recalculate3DFloors may not be called before the vertex buffer has been set up.
+    explicitly declare the constructor and destructor methods of FCheckPosition so that they get a working prototype.
+    Fixed textures on the two switches that rise from the floor in the eastern area of TNT MAP31
+    fixed spelling (mostly comments)
+    fixed the mapping of additive translucency to color-based translucency.
+
+    The destination mode sould be 'One', not 'InvSrcColor'.
+    Now both of these are available as explicit modes, not just through the optional mapping.
+    only do shade clamps if needed
+    move the jit runtime to its own file
+    use SSE for the dynlights
+    use SSE for the normal walls
+    finished adding direct native functions to vmthunks.cpp.
+    change DrawSpanOpt32 to render a scanline in multiple steps as the speed is about the same and it will make it easier to use SSE for each of the steps
+    moved VM thunks from p_sectors.cpp to a separate file and started adding direct native implementations.
+
+    For a few larger functions I took them out of sector_t and made them global functions to avoid creating more unnecessary stubs.
+    fixed handling of dummy flags.
+    allow defining flags in the script declaration of a class and do that for Weapon.
+    moved MarkPrecacheSounds completely to the script side and added native support to make this a usable feature.
+    some cleanup on the weapon slot interface.
+
+    This really shouldn't make any decisions from directly reading weapon class defaults.
+    scriptified cht_Takeweaps.
+    removed the less-parameters versions of P_SpawnPlayerMissile, because there was only one native call left to them.
+    scriptified ApplyKickback.
+    moved the kickback code in P_DamageMobj into a subfunction.
+
+    This is a first attempt to reduce the complexity of that 600+ lines monstrosity, and also a good first target for scriptification.
+    scriptified A_WeaponReady and its subfunctions.
+    fixed: When extracting a MiniBSP for polyobject rendering, the parent subsector must copy all its relevant properties to the children.
+    scriptified P_BobWeapon as a virtual function on PlayerPawn.
+    a little bit of cleanup on some code that repeatedly accessed some fields in AWeapon and produced far too many search results when looking for this.
+    removed the bot related properties from AWeapon.
+
+    This stuff is now kept locally in the bot code so that it doesn't infest the rest of the engine.
+    And please don't read the new botsupp.txt file as some new means to configure bots! This was merely done to get this data out of the way.
+    The bots are still broken beyond repair and virtually unusable, even if proper data is provided for all weapons.
+    consolidated the 3 nearly identical code fragments handling the weapon's YAdjust for the different renderers into a utility function in DPSprite.
+    exported the blood spawning part of P_LineAttack as a virtual ZScript function.
+    moved the weapon selection logic to PlayerPawn as overridable virtual functions.
+    took the weapon selection logic out of the WeaponSlots data and blocked all direct access to the weapon slots internals
+
+    This seriously needs to be independent from the data store and better abstracted. More work to come to move this to its proper place.
+    change teleport freeze handling to a player property plus virtual override on PlayerPawn for increased configurability.
+    removed MeleeWeapon flag from the tomed PhoenixRod and the fighterhammer.
+
+    In both cases, having this flag on will render the monster-backing-off-check for melee attacks ineffective because it would misinterpret these weapons as close range only - which they aren't. Even for the PhoenixRod the range is longer than what gets checked here.
+    As a consequence, the bot's check for missile shooting melee weapons has also become pointless because no such weapon is defined anymore.
+    exported one FraggleScript function for testing.
+    exported a few more weapon handling functions so that the native GetDownState stub could be removed.
+    let player_t::Resurrect use P_BringUpWeapon to raise the weapon again instead of doing it directly.
+    add monster tags (Friendly Names) for Hexen
+    tnt1a0 is not a png, rename it in gzdoom.pk3
+    scriptified A_FireBullets and A_CustomBulletAttack.
+    deleted redundant native ActivateMorphWeapon method.
+    started with a ScriptUtil class which will allow moving function implementations for ACS and FraggleScript to zscript.txt
+
+    So far 3 functions for testing implemented.
+    made ZRock4 solid like in vanilla Hexen
+    fixed: Since out types cannot be marked as such in a function prototype (as it'd cause parameter mismatches in the resolving pass) it is necessary to check the argflags as well when determining the register type.
+    Fix null pointer access in p_terrain.cpp
+    expose defaultbloodcolor to ZScript.
+    made CDoomError inherit from std::exception so that the main catch block can also deal with exceptions thrown by the STL.
+    Also do not ignore empty exception messages as irrelevant. The only irrelevant exception type is CNoRunExit.
+    fixed initialization of default parameters in dynamically created function calls like in the MENUDEF parser
+    fix a rendering glitch when changing resolution
+    add NUMA awareness to drawer threads
+    Add shader cache for Intel GPU's which should result in faster startups (especially on Windows) - first startup will still be slower, though
+    interpolate the normal for models
+    removed the quite redundant GetStateForButtonName function
+
+    Since it forwards directly to FindState and has no script bindings there is no need to keep it, it'd only complicate the full scriptification of the weapon class if it stuck around.
+    fixed some issues with the bodyque and moved this variable into FLevelLocals
+        it was never saved in savegames, leaving the state of dead bodies undefined
+        it shouldn't be subjected to pointer substitution because all it contains is old dead bodies, not live ones.
+    fixed: Ceiling render hack segments were inserted into the floor list and incorrectly rendered.
+    fixed the type checks for object arrays.
+
+    Null pointers must be allowed and non-object pointers which are not null must be explicitly checked for because the code could crash on them when performing a static_cast on an incorrect type.
+    P_Thing_Raise fixes & cleanup
+        Transfer flags directly into the function and process inside instead of the action functions
+        Pass in raiser for all function calls
+    restored the old A_Jump prototype because DECORATE needs this to parse the arguments.
+    fixed: FTexture::SmoothEdges must forward its result to the base texture in case a redirection is in effect.
+
+    Both need the bMasked flag, or some code will think that the texture is not fully opaque if no holes were found.
+    use the same formula for calculating 3DMidTex offsets as the renderer when per-sidedef scaling is used.
+    fixed stencil cap generation for old hardware and changed it so that it only gets done once for each stencil setup, not for each stencil pass.
+    fixed: CVar.ResetToDefault was missing a check for use outside of menus.
+    add warning text when falling back to the VM
+    changed PhosphorousFire.DoSpecialDamage to match SVE's handling:
+
+        Everything with a damage factor for fire only uses that.
+        Everything that bleeds takes half damage
+        Robots take quarter damage.
+    fixed: AActor' friction field was not saved
+    Readonly pointer casting now works in ZScript.
+    corrected A_DropFire for real, using the SVE source as reference.
+    fixed: A_DropFire accidentally cleared the XF_HURTSOURCE flag by setting only XF_NOSPLASH.
+    Make BounceFlags 32 bit wide.
+    BOUNCEONUNRIPPABLES flag; makes actors bounce on actors with DONTRIP flag
+    changed the stencil cap drawer to only cover the area which is actually used by the portal.
+
+    This will now both exclude floor caps when only ceiling elements are used and everything outside the bounding box of active portal lines.
+    Hopefully this is enough to fix the issues with portal caps but of course it is not foolproof if someone just makes the right setup.
+    went back to the original portal stencil setup from 3.4.0.
+
+    The main reason is to unify the portal hierarchy again. The split into a hardware independent and a hardware dependent part turned out to be unnecessary and complicated matters.
+    Another issue was that the new stencil setup code was having a few subtle problems, so this recreates the original ones with indirect API calls.
+    P_Thing_Raise returned true while P_Thing_CanRaise returned false for the condition of having no raise state. P_Thing_Raise now returns false.
+    Added RaiseActor(Actor other, int flags = 0)
+    Added CanResurrect(Actor other, bool passive)
+    fixed: ZScript's finalization code used the last parsed lump for of one translation unit as reference, not the base lump.
+
+    This resulted in incorrect messages but also could produce some more subtle errors.
+    added ZScript export for side_t::SetSpecialColor.
+    more options for Doom 64 style gradients on walls:
+
+        Colors can now be defined per sidedef, not only per sector.
+        Gradients can be selectively disabled or vertically flipped per wall tier.
+        Gradients can be clamped to their respective tier, i.e top and bottom of the tier, not the front sector defines where it starts.
+
+    The per-wall colors are implemented for hardware and softpoly renderer only, but not for the classic software renderer, because its code is far too scattered to do this efficiently.
+    Fixed: Decal generator should be taken from the current weapon instance instead of the default instance.
+    do not abort on unclosed sections.
+
+    Apparently they can indeed happen with broken map setups like isolated linedefs somewhere in the wild (see Strife MAP08.)
+    Although they are a problem for triangulation, this isn't what sections get used for currently so it's of no real concern.
+    In case this is needed later their work data gets marked as 'bad' for the time being.
+    fixed: It may happen that a degenerate subsector ends up without any section or sector. Try to assign the best fit in such a case so that the relevant pointers are not null.
+    instead of copying the sector planes to GLWall, just store pointers to the front and back sector for later use.
+
+    Until now this wasn't doable because these could have come from hw_FakeFlat which only were local copies on the stack.
+    With the recent change these faked sectors live long enough so that they can be passed around here.
+    cache the results of hw_FakeFlat for the remainder of the current scene instead of storing this in local variables.
+
+    An exception is made for the sprite drawer which needs to call this in the worker thread on some occasions for as-yet unprocessed sectors.
+    This case may not alter the cache to avoid having to add thread synchronization to it.
+
+    The main reason for this change is that pointers to such manipulated sectors can now be considered static in the renderer.
+    Due to them being short lived local buffers it was not possible to carry them along with the render data for information retrieval.
+    Added DMG_NO_ENHANCE for DamageMobj. - Disables PowerDamage's effect, similar to DMG_NO_PROTECT disabling PowerProtect.
+    replaced a few temporary allocations with TArray and added a few convenience loader functions for this.
+
+    Amazingly with today's optimizers this creates code which is just as good as doing it all manually with the added benefit of being safer.
+    hole filling subsectors must also be explicitly triangulated for the automap because they may be non-convex.
+    clear spechit before leaving P_CheckPosition.
+
+    Otherwise this may contain residual data from the last call.
+    One can only hope that this doesn't cause other side effects - this entire code is one horrendous mess of bad ideas.
+    Added IsPointInMap(Vector3 p).
+    added copyright header to p_destructible.cpp
+    fixed typo with RNG name.
+    silenced debug message in standard mode.
+    Added destructible geometry, exported to ZScript
+    fixed typo in sight checking code.
+    disabled the hack for fixing the original design of the portal in KDiZD's Z1M1.
+
+    This portal got fixed in a later re-release of KDiZD and no other portal needs this runtime fix to my knowledge.
+    The main problem here is that this runtime fix requires some manipulation of the render data that does not work anymore.
+
+    Should other maps need this fix as well they are probably best served with a compatibility entry.
+    Added a function to get the actor's age in ticks.
+    Added a new field to the Actor class which stores the amount of ticks passed since the game started on the moment the actor was spawned.
+    Added a function to the Actor class to get its spawn time relative to the current level.
+    Added spawn time information to the output of the "info" console command.
+    Extend SKYEXPLODE flag for LineAttack
+    use Xcode 10.1 for Travis CI builds
+    restored screen clear in Cocoa backend when setting video mode
+
+    This still doesn't work well in windowed mode
+    In fullscreen the effect is quite noticeable thought
+    added a method to FileReader to read the contents into an array and used it on the MIDI sources for testing.
+    added warning for constant conditional expression
+
+    ZScript code like `if (x = 0) // ...` no longer causes assertion failure in Debug but produces a warning regadless of configuration
+
+    viewtopic.php?t=62422
+    fixed potential crash when drawing status bar log
+    prevented GME compilation warning spam with Clang
+    versioned the return mismatch check to demote it to a warning for older versions than 3.7.
+    made 'return void' case a compilation error
+    added far stronger restrictions for when the Boom-Texture-Y-offset compatibility flag may trigger.
+
+    This had absolutely no sanity checks and unconditionally picked the source texture if one existed.
+    It should only be done for wall textures, only for those defined in TEXTUREx and only for those where the scale is identical with the underlying texture.
+    fixed: Do not pass Sysex messages to Windows's GS Wavetable synth.
+
+    This will totally refuse to play a MIDI if that happens.
+    Duke Nukem's Alienz.mid, which did not play before works after this change.
+    added fake vid_renderer CVAR so that mods that checked for it to determine the renderer will get 1 returned instead of 0.
+
+    The majority of mods which did such a thing checked for the hardware renderer so this should be the default.
+    fixed: P_DamageMobj should clear reactiontime only for non-players.
+
+    For players this variable has an entirely different meaning which does not agree with being modified here.
+    made DBrokenLines serializable.
+    fixed handling of wrapped midtextures to be actually useful when used in sky sectors.
+    Export AllClasses
+    Update GME up to 0.6.2 version
+    changed the way alpha works on DrawLine and DrawThickLine so they're consistent
+    Added VelIntercept.
+        Uses the same code as Thing_ProjectileIntercept to aim and move the projectile.
+            targ: The actor the caller will aim at.
+            speed: Used for calculating the new angle/pitch and adjusts the speed accordingly. Default is -1 (current speed).
+            aimpitch: If true, aims the pitch in the travelling direction. Default is true.
+            oldvel: If true, does not replace the velocity with the specified speed. Default is false.
+    Split the code from Thing_ProjectileIntercept and have that function call VelIntercept.
+    Fixed sector floor/ceiling actions not triggering in P_XYMovement
+    Introduced an enum named EventHandlerType and changed the bool argument in E_NewGame to this type.
+    Static NewGame events now fire before loading a map, and normal NewGame events fire after registering per-map handlers and before all other events.
+    Static event handlers now unregister after per-map handlers.
+    All event handlers now unregister in reverse order.
+    added a non-multithreaded option for the renderer and fixed a few places where the wrong sector was used
+
+    The render_sector is only relevant for flats, but never for walls or sprites!
+    added option to disable alpha testing for user shaders.
+    fixed missing binding of the light buffer.
+
+    I thought this wasn't needed but apparently the buffer refactoring caused this not to be done automatically anymore.
+    Best have it once at the start of each frame where the cost is negligible.
+    use standard sprite lighting for voxels.
+
+    Per-pixel lighting requires normals which voxels do not have.
+    removed memcpy workarounds from GLWall, GLFlat and GLSprite after making sure that all 3 are trivially copyable.
+    fixed error message for old OpenGL versions. There was still a mention of "with framebuffer support" which is core in 3.3.
+    added a bit of profiling code to the multithreaded parts of the renderer.
+    GL renderer is now partly multi-threaded
+    added a few comments to the renderstate to document where certain functions are used.
+    fixed stencil marking for SSAO.
+    cleanup of the buffer binding interface.
+
+    Some stuff is not really needed and the vertex buffers no longer need to insert themselves into the render state.
+    cleanup of hw_bsp.cpp.
+    add "neutral" gender option and better obit formatting
+    removed the Bind function from FFlatVertexBuffer.
+    uncoupled texture precaching from regular binding for rendering.
+
+    The precaching should not depend on code that may be subject to change.
+    basic multithreading for the render data generation.
+    do a texture check when drawing fog borders in the software renderer. this does not fix the crash issue, but mitigates it enough with a check that likely should be in place, anyhow.
+    moved the entire OpenGL backend into a separate namespace.
+    fixed dynamic light profiling counters.
+
+    The draw counters were never incremented and this should be reset only once per scene, not once per viewpoint.
+    portal refactoring
+    fix softpoly bug where sprites and translucent walls in front of models would disappear
+    portal check is overridden by a different inverted check in the software renderer
+    Cull two-sided lines using the same rules as the software renderer is using (as suspicious as they may be)
+    fixed default values for S_ChangeMusic
+
+    viewtopic.php?t=62323#p1076849
+    added a compatibility fix for Hacx's MAP05.
+
+    This is by no means perfect and looks different than what was originally intended, but at least this doesn't totally fail to render properly with the OpenGL renderer.
+    fixed: attaching a new status bar to a player now calls 'setsizeneeded' - fixes an issue where the screen geometry is out of sync with the characteristics of the new status bar.
+    fix distance attenuation for PBR materials
+    Visually align Doom 2 MAP04 crusher floors
+
+    Use Transfer_Heights to fake floors on the crusher sectors
+    Preserve line locknumber in savegames.
+    fixed: use 'setsizeneeded' more often in the scaling code. recalculating screen geometry for 2D elements when it changes never really hurts.
+    Fixed many IWAD mapping errors
+    Exported PickNewWeapon function from PlayerPawn to ZScript.
+
 GZDoom 3.6.0
 --------------------------------------------------------------------------------
 *Wed Oct 10, 2018 9:22 pm*

@@ -501,7 +501,7 @@ ECHO ----------------------------------------
 
 :gzdoom-36
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-36.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-36.ini" GOTO :gzdoom-37
 
 ECHO * GZDoom v3.6                DOOM.WAD
 CALL :make_gzdoom "gzdoom-36" "DOOM.WAD"
@@ -519,6 +519,28 @@ ECHO * GZDoom v3.6                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-36" "ROTWB.WAD"
 ECHO * GZDoom v3.6                SQUARE1.PK3
 CALL :make_gzdoom "gzdoom-36" "square1.pk3"
+ECHO ----------------------------------------
+
+:gzdoom-37
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-37.ini" GOTO :gzdoom
+
+ECHO * GZDoom v3.7                DOOM.WAD
+CALL :make_gzdoom "gzdoom-37" "DOOM.WAD"
+ECHO * GZDoom v3.7                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-37" "HERETIC.WAD"
+ECHO * GZDoom v3.7                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-37" "HEXEN.WAD"
+ECHO * GZDoom v3.7                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-37" "STRIFE1.WAD"
+ECHO * GZDoom v3.7                CHEX.WAD
+CALL :make_gzdoom "gzdoom-37" "CHEX.WAD"
+ECHO * GZDoom v3.7                HARM1.WAD
+CALL :make_gzdoom "gzdoom-37" "HARM1.WAD"
+ECHO * GZDoom v3.7                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-37" "ROTWB.WAD"
+ECHO * GZDoom v3.7                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-37" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom
