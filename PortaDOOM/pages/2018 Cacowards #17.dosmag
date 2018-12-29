@@ -7,10 +7,10 @@ $TITLE=The Side Column pt.I
 
 :DID YOU KNOW...
 :===============================================================================
-$KEY:F=URL:https://www.doomworld.com/forum/topic/98922-kristian-aro-doom-millennium-maps-mini-episode-edit-now-with-screenshots/
+$KEY:R=URL:https://www.doomworld.com/forum/topic/98922-kristian-aro-doom-millennium-maps-mini-episode-edit-now-with-screenshots/
 - `Mordeth` was still not released in 2018\\despite over twenty years of development?
 
-- After over 20 years of development, some of the planned maps\\for `Doom Millennium` were [F: finally released]?
+- After over 20 years of development, some of the planned maps\\for `Doom Millennium` were [R: finally released]?
 
 - December 10th, 2018 marked the 25th anniversary of `DOOM`?\\...Actually, yeah, you probably did.﻿
 
@@ -25,14 +25,18 @@ While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release d
 
 :RECOMMEND ME A... COFFEE BREAK MAPSET
 :===============================================================================
-The DBP series, which ran for a good chunk of this past year, gave players a monthly dose of small mapsets featuring classic `Doom` gameplay, with an emphasis on working within a specific theme. `Monuments of Mars`, set in a series of sepiatone bases in a hellish Martian landscape, is the most free-flowing and fast-paced of the series, offering players the gameplay equivalent of flying down a steep hill on a bike. `Coffin Curse`, by contrast, used its library/crypt theme to put more emphasis on whimsical details and atmosphere, with more treacherous and gimmick-oriented gameplay to go along with it (who doesn’t love barrel-themed maps?). Either one is an excellent way to spend a lazy afternoon.
+$KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dbp01
+$KEY:C=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dbp_05
+The DBP series, which ran for a good chunk of this past year, gave players a monthly dose of small mapsets featuring classic `DOOM` gameplay, with an emphasis on working within a specific theme. [M: Monuments of Mars], set in a series of sepiatone bases in a hellish Martian landscape, is the most free-flowing and fast-paced of the series, offering players the gameplay equivalent of flying down a steep hill on a bike. [C: Coffin Curse], by contrast, used its library/crypt theme to put more emphasis on whimsical details and atmosphere, with more treacherous and gimmick-oriented gameplay to go along with it (who doesn’t love barrel-themed maps?). Either one is an excellent way to spend a lazy afternoon.
 
 
 :RECOMMEND ME A... HARDCORE CHALLENGE MAPSET
 :===============================================================================
-`Flotsam` is a set collected by maxer _MrZZul_ aka _Killer5_ and friends (_Benjogami_, _bemused_, _Scotty_, _Nirvana_, _Archi_), offering a variety of mostly short, mostly difficult maps that will appeal to the masochists and the challenge aficionados of the community.
+$KEY:F=URL:https://www.doomworld.com/forum/topic/103100-flotsam-12-hard-boom-compatible-maps/
+[F: Flotsam] is a set collected by maxer _MrZZul_ aka _Killer5_ and friends (_Benjogami_, _bemused_, _Scotty_, _Nirvana_, _Archi_), offering a variety of mostly short, mostly difficult maps that will appeal to the masochists and the challenge aficionados of the community.
 
-After a bout of development hell, `Slaughterfest 3` -- originally `Slaughterfest 2013` (!) -- is out, and worth a look even for intermittent players of high-bodycount stuff. Alongside the behemoths and the demanding tests, there are shorter, snappier maps that work as effective ease-ins. Devoid of the "monotextured boxes with monsters" occasionally seen in `SF2011`, `Slaughterfest 3` is a well rounded, polished set. Just don't set out for completionism unless truly motivated; it is a full megawad plus change, and there are some very long maps.
+$KEY:3=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sf3
+After a bout of development hell, [3: Slaughterfest 3] -- originally `Slaughterfest 2013` (!) -- is out, and worth a look even for intermittent players of high-bodycount stuff. Alongside the behemoths and the demanding tests, there are shorter, snappier maps that work as effective ease-ins. Devoid of the "monotextured boxes with monsters" occasionally seen in `SF2011`, `Slaughterfest 3` is a well rounded, polished set. Just don't set out for completionism unless truly motivated; it is a full megawad plus change, and there are some very long maps.
 
 
 :MINI MOD SAFARI
@@ -51,8 +55,8 @@ $KEY:D=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59887
 $KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61666
 - [L: Liquidated Doom] takes `DOOM` and sets it entirely underwater, purely through `ZScript`. Perhaps the most out-there of all the modlets on this list, but it does mix things up quite nicely.
 
-$KEY:C=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=60456
-- [C: Champions] is a small and crazy-compatible enemy mod that provides variations of existing monsters without replacing them, making for nasty surprises in otherwise-normal encounters. Neat!
+$KEY:P=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=60456
+- [P: Champions] is a small and crazy-compatible enemy mod that provides variations of existing monsters without replacing them, making for nasty surprises in otherwise-normal encounters. Neat!
 
 $KEY:I=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61047
 - For those who want to play DM maps in singleplayer, or really liked `Skulltag`'s Invasion mode, [I: Supreme Invasion] converts DM maps into pseudo-invasion maps, spawning enemies in waves to hack down the player.

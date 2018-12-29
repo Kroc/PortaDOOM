@@ -20,8 +20,9 @@ files\ports\gzdoom_*\
 files\config\default.gzdoom.ini
 files\config\default.gzdoom-36.ini
 
-files\ports\zdoom\*
+files\ports\zdoom\
 files\config\default.zdoom.ini
+
 
 
 pages\Home #??.dosmag
