@@ -1,5 +1,13 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 
+$EXEICON:'.\launcher.ico'
+
+$VERSIONINFO:CompanyName=Camen Design
+$VERSIONINFO:FILEVERSION#=2018,12,31,0
+$VERSIONINFO:PRODUCTVERSION#=2018,12,31,0
+$VERSIONINFO:ProductName=PortaDOOM Launcher
+$VERSIONINFO:Web=https://github.com/Kroc/PortaDOOM
+
 'limit redraws to 30fps
 '(reduce CPU usage)
 _LIMIT 30

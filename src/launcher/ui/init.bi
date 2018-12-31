@@ -1,8 +1,6 @@
 'copyright (C) Kroc Camen 2018, BSD 2-clause
 'init.bi : define and initialise the user-interface
 
-$EXEICON:'.\launcher\icon\launcher.ico'
-
 'the default size (in char cols/rows) of the screen
 CONST UI_SCREEN_MODE = 0 '...text mode
 CONST UI_SCREEN_WIDTH = 80 '.640 width
@@ -27,7 +25,7 @@ $RESIZE:OFF
 _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
 'put a name on this thing
-_TITLE "PortaDOOM Launcher"
+_TITLE "PortaDOOM Launcher [v2018.12.31/0]"
 
 'set graphics mode, screen size, colour and clear screen
 WIDTH UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT
