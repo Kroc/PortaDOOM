@@ -35,7 +35,7 @@ $KEY:H=GOTO:Maskim Xul
 $KEY:I=GOTO:The Golden Souls 2
 - [I] *Doom: The Golden Souls 2						_Batandy_
 
-$KEY:J=GOTO:UAC Invasion - Supply Depot
+$KEY:J=GOTO:UAC Invasion - The Supply Depot
 - [J] *UAC Invasion: The Supply Depot				_DooMknight_
 
 :RUNNERS UP:
@@ -77,13 +77,13 @@ $KEY:U=URL:https://www.moddb.com/mods/quake-champions-doom-edition
 
 :GAMEPLAY MOD AWARDS:
 
-$KEY:V=GOTO:Guncaster
+$KEY:V=URL:URL:https://forum.zdoom.org/viewtopic.php?t=37066
 - [V] *Guncaster									_Pillowblaster_
 
-$KEY:W=GOTO:Netronian Chaos
+$KEY:W=URL:URL:https://forum.zdoom.org/viewtopic.php?t=57964
 - [W] *Netronian Chaos								_Captain J_
 
-$KEY:X=GOTO:GMOTA
+$KEY:X=URL:https://combine-kegan.itch.io/gmota
 - [X] *GMOTA										_Combine_Kegan_
 
 :MORDETH AWARD:
@@ -102,7 +102,7 @@ $KEY:Z=URL:https://github.com/anotak/doombuilderx
 
 :MACHAWARD:
 
-$KEY:1=GOTO:Mr. Friendly
+$KEY:1=URL:https://jp.itch.io/mr-friendly
 - [1] *Mr. Friendly									_JP LeBreton_
 
 :CREATOR OF THE YEAR:

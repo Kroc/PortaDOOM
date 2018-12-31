@@ -1,12 +1,14 @@
 $THEME=BLACK
 $TITLE=Gameplay Mod Awards
-$KEY:G=GOTO:Guncaster
-$KEY:N=GOTO:Netronian Chaos
-$KEY:M=GOTO:GMOTA
+$KEY:G=URL:https://forum.zdoom.org/viewtopic.php?t=37066
+$KEY:N=URL:https://forum.zdoom.org/viewtopic.php?t=57964
+$KEY:M=URL:https://combine-kegan.itch.io/gmota
 
 ^C:2018 CACOWARDS :: GAMEPLAY MOD AWARDS
 
 :-------------------------------------------------------------------------------
+! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations. A future release will add mod support! -- You can still download the mods below and run them yourself.
+
 
 :[G] Guncaster - _Pillowblaster_ et al
 :===============================================================================

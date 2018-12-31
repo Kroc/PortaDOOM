@@ -2,7 +2,7 @@ $THEME=BLACK
 $TITLE=Other Awards
 $KEY:T=URL:https://www.moddb.com/mods/total-chaos
 $KEY:D=URL:https://github.com/anotak/doombuilderx
-$KEY:M=GOTO:Mr. Friendly
+$KEY:M=URL:https://jp.itch.io/mr-friendly
 $KEY:R=URL:https://www.doomworld.com/profile/16250-revae/
 
 ^C:2018 CACOWARDS :: OTHER AWARDS
@@ -63,6 +63,8 @@ This is where I face the most trouble in writing the Codeaward, because I feel c
 :===============================================================================
 :*[M] Mr. Friendly - _JP LeBreton_
 :-------------------------------------------------------------------------------
+! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations.
+
 Who has ever looked at `DOOM` and thought, “how can I make this game go from bloody and brutal to a calm and sweet adventure?”
 
 Well, several people, actually- and they totally nailed the idea. Take for example, 2017's `Kill ‘Em With Kindness`- a single level that lets you pet puppies and make flowers dance. But if you’re not quite into that level of cute, and just want to take a nice stroll through some of your favorite `DOOM` levels, there’s mods like `MooD` and `Tourism Deluxe` (`Tourism Deluxe` also by _JP LeBreton_), which allow you to take in the scenery without having to shed blood (or worrying about the exit not opening because of scripts). And for those of you into ASMR, there’s a mod just for you- put on your favorite relaxing music and bring your SSG… purely for some soothing sound bites (bytes?).

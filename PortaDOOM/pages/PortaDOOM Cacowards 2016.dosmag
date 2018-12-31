@@ -2,15 +2,25 @@ $THEME=BLUE
 $KEY:E=GOTO:2016 Cacowards
 
 ^C:PortaDOOM Cacowards 2016
-:-------------------------------------------------------------------------------
+:===============================================================================
 ^C*Press [E] to Enter
 
 `PortaDOOM` is a self-contained `DOOM` Launcher and WAD collection presented as a '90s MS-DOS disk-zine. This is a `PortaDOOM` package containing the complete DoomWorld 2016 Cacowards. All you need to do is pick something to play and `PortaDOOM` will select the correct source-port, WADs and settings!
 
 ! *PRO TIP:* Use MOUSEWHEEL or keyboard to scroll. LEFT or RIGHT ARROW keys to change page (or right-click to advance one page). Press the indicated keys "[?]" to navigate, or F1 for a full list of controls.
 
-$KEY:F=URL:https://forum.zdoom.org/viewtopic.php?f=44&t=54628
+:FEEDBACK
+:-------------------------------------------------------------------------------
+`PortaDOOM` is continually improving - provide your feedback via these methods:
+
+$KEY:T=URL:https://twitter.com/KrocCamen
 $KEY:G=URL:https://github.com/Kroc/PortaDOOM
-`PortaDOOM` is the easiest way to just pick up and play the great diversity of `DOOM` content out there! Visit the `PortaDOOM` [F: forum thread] or [G: GitHub page] for more details, releases and feedback or mail _<kroc@camendesign.com>_
-
-
+$KEY:D=URL:https://discord.gg/AW43KF9
+$KEY:M=URL:mailto:kroc@camendesign.com?subject=PortaDOOM
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?f=44&t=54628
+$KEY:W=URL:https://www.doomworld.com/forum/topic/92031-portadoom-a-portable-wad-disk-zine/
+$KEY:C=URL:http://forum.camendesign.com/
+- [T: twitter]	: @KrocCamen / #PortaDOOM	- [Z: ZDoom Forums]
+- [G: GitHub]	: Kroc -> PortaDOOM			- [W: DoomWorld Forums]
+- [D: Discord]	: CamenDesign#portadoom		- [C: Camen Design Forums]
+- [M: email]	: kroc@camendesign.com

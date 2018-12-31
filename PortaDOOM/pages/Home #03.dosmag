@@ -17,12 +17,14 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *BEX				*Boom* Extended *DeHackEd* script. An early means of modifying the behaviour of DOOM.
 
-*Boom				An early *source-port* that expanded limits and added new capabilities to the DOOM engine. A modern version of the port is *PRBoom+*, but the boom extensions are support by most modern engines. There are many maps released even today that require "boom" compatibility.
+*Boom				An early *source-port* that expanded limits and added new capabilities to the DOOM engine. A modern version of the port is *PRBoom+*, but the boom extensions are supported by most modern engines. There are many maps released even today that require "boom" compatibility.
 
 *BSP				"Binary Space Partition", a technical aspect of how DOOM stores and renders maps. A BSP tree is a pre-calculated database of all the *linedefs* in a map, dividing the map into halves over and over until no more lines remain. This allows the DOOM engine to very quickly and easily determine what is and isn't visible from any given position, with the caveat that walls cannot move sideways, only up and down.
 
 :* C *
 :-------------------------------------------------------------------------------
+
+*Cacoward(s)		Annual awards ceremony for the best community DOOM content.
 
 *Chocolate-Doom,	*Source-ports* created by _Simon Howard_, with the purpose
 *Chocolate-Heretic,	to remain as faithful as possible to the behaviour of the
@@ -110,6 +112,10 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :-------------------------------------------------------------------------------
 :* P *
 :-------------------------------------------------------------------------------
+
+*PK3*				A modern file format for DOOM resources, supplanting *WAD*. A *PK3* is just a ZIP-file and can contain *WAD* files.
+
+*PK7*				A 7-Zip compressed *PK3* file; not common.
 
 *PLUTONIA.WAD		The *IWAD* for *The Plutonia Experiment*, part of *Final DOOM*.
 

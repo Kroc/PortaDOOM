@@ -1,7 +1,7 @@
 $NAV=People
 $NAV=Ribbiks
 $KEY:P=SHELL:launcher.exe "wads\people\ribbiks\magnolia\play-magnolia.ini"
-$KEY:T=SHELL:wads\people\ribbiks\magnolia.txt
+$KEY:T=SHELL:wads\people\ribbiks\magnolia\magnolia.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/100784-magnoliawad/
 
 :Magnolia										 * 2018 Cacoward Runner Up! *

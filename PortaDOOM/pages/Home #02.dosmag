@@ -4,6 +4,7 @@ $TITLE=Keyboard & Mouse Controls
 :Keyboard & Mouse Controls
 :===============================================================================
 
+	*Menu / Pause		_ESC_			Controls can be customized from the menu
 	*Move Forward		_W_
 	*Move Backward		_S_
 	*Strafe Left		_A_
@@ -19,6 +20,11 @@ $TITLE=Keyboard & Mouse Controls
 	*Walk				_SHIFT_			Running is automatic,
 										press _SHIFT_ to slow down
 
+	*Increase Viewport	_+_				Switches to/from status-bar & HUD
+	*Decrease Viewport	_-_				in a number of ports and controls
+										the size of the rendered view
+										(smaller is faster)
+
 :Inventory Controls:
 :-------------------------------------------------------------------------------
 Some games or WADs utilize an inventory.
@@ -27,7 +33,7 @@ Some games or WADs utilize an inventory.
 
 	*Previous Item		_[_, _MWL_		(mouse-wheel-left)
 
-	*Use Item			_ENTER_, _MWB_	(mouse-wheel-button)
+	*Use Item			_ENTER_
 
 :Optional Controls:
 :-------------------------------------------------------------------------------
