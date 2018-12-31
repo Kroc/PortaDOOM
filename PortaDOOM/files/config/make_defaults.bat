@@ -789,6 +789,9 @@ IF /I "%~2" == "HARM1.WAD" (
 	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
 )
 
+REM # automap, show item-count
+%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
+
 GOTO:EOF
 
 
@@ -824,6 +827,9 @@ REM # use "Mipmapped" for earlier versions
 %BIN_FART% "default.gzdoom-12.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 %BIN_FART% "default.gzdoom-13.ini" "gl_texture_filter=4" "gl_texture_filter=1"
 %BIN_FART% "default.gzdoom-14.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+
+REM # use "standard" light mode instead of "dark"
+%BIN_FART% "default.%~1.ini" "gl_lightmode=3" "gl_lightmode=0"
 
 REM # controls
 IF /I "%~2" == "DOOM.WAD" (
@@ -926,6 +932,9 @@ REM # change controls
 %BIN_FART% "default.%~1.ini" "gender=male" "gender=other"
 %BIN_FART% "default.%~1.ini" "name=Player" "name=PortaDOOM"
 %BIN_FART% "default.%~1.ini" "vid_cursor=None" "vid_cursor=-"
+
+REM # automap, show item-count
+%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
 
 REM # full-screen HUD
 %BIN_FART% "default.%~1.ini" "screenblocks=10" "screenblocks=11"
@@ -1041,6 +1050,9 @@ REM # full-screen HUD
 REM # HUD auto-scale
 %BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
 %BIN_FART% "default.%~1.ini" "con_scaletext=0" "con_scaletext=1"
+
+REM # automap, show item-count
+%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
 
 GOTO:EOF
 
