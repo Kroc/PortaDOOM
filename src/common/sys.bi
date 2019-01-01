@@ -21,4 +21,4 @@ LET DIR_EXE$ = Paths_AddSlash$(_CWD$)
 DIM SHARED DIR_CUR$
 LET DIR_CUR$ = Paths_AddSlash$(_STARTDIR$)
 
-DIM SHARED glVersion$
+REM DIM SHARED glVersion$

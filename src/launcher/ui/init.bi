@@ -38,11 +38,11 @@ CALL keys_Hide
 
 '-----------------------------------------------------------------------------
 
-DIM start!
-LET start! = TIMER
-DO
-LOOP UNTIL LEN(glVersion$) > 0 OR TIMER - start! > .5
-
-IF glVersion$ <> "" THEN
-    _TITLE _TITLE$ + " - OpenGL " + glVersion$
-END IF
+REM DIM start!
+REM LET start! = TIMER
+REM DO
+REM LOOP UNTIL LEN(glVersion$) > 0 OR TIMER - start! > .5
+REM 
+REM IF glVersion$ <> "" THEN
+REM     _TITLE _TITLE$ + " - OpenGL " + glVersion$
+REM END IF
