@@ -1,3 +1,28 @@
+GZDoom 3.7.1
+--------------------------------------------------------------------------------
+*Tue Jan 01, 2019 3:13 pm*
+
+Highlights
+
+    Just bug fixes
+
+Details
+
+    fixed everlasting fast projectile after hitting ceiling - Without the test for ceiling hit fast projectile could enter its Death state every tick infinitely
+    fixed crash in AutoUseStrifeHealth - The loop never checked if the item was still valid and would continue to try to use it, even after it was removed from the inventory and destroyed. As native code this just failed silently, but with the VM it needs to be explicitly checked.
+    fixed typo in sky preparation.
+    Fixed: SXF_CLEARCALLERSPECIAL cleared the spawned actor's special instead of the caller.
+    Fixed settings_controller not updating properly when a player becomes the new arbitrator in a netgame.
+    added missing return in P_RemoveThing.
+    added missing null pointer check to SBarInfo's inventory bar drawer.
+    fixed ammo check for weapon with 'uses both' flags
+    fixed SPC music loops
+    fixed precaching of switches. The backwards animation accessed the wrong array which in case of sequences with different length could crash
+    fixed missing attack sound in A_CustomPunch
+    Fixed: IsFakePain received the modified damage instead of the raw, preventing ALLOWPAIN from working as intended.
+    TNT.WAD fixes
+    Have Plutonia MAP16 pit kill player
+
 GZDoom 3.7.0 Released
 --------------------------------------------------------------------------------
 *Thu Dec 27, 2018 9:01 am*

@@ -25,7 +25,7 @@ $RESIZE:OFF
 _ALLOWFULLSCREEN _SQUAREPIXELS, _SMOOTH
 
 'put a name on this thing
-_TITLE "PortaDOOM Launcher [v2018.12.31/0]"
+_TITLE "PortaDOOM Launcher [v2018.12.31/2]"
 
 'set graphics mode, screen size, colour and clear screen
 WIDTH UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT

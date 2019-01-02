@@ -3,8 +3,8 @@
 $EXEICON:'.\portadoom.ico'
 
 $VERSIONINFO:CompanyName=Camen Design
-$VERSIONINFO:FILEVERSION#=2018,12,31,1
-$VERSIONINFO:PRODUCTVERSION#=2018,12,31,1
+$VERSIONINFO:FILEVERSION#=2018,12,31,2
+$VERSIONINFO:PRODUCTVERSION#=2018,12,31,2
 $VERSIONINFO:ProductName=PortaDOOM
 $VERSIONINFO:Web=https://github.com/Kroc/PortaDOOM
 
@@ -292,7 +292,7 @@ DIM SHARED dialogText$ 'binary string of the dialogue text
 
 'MAIN:
 '=============================================================================
-_TITLE "PortaDOOM [v2018.12.31/0]"
+_TITLE "PortaDOOM [v2018.12.31/2]"
 
 'set graphics mode, screen size, colour and clear screen
 WIDTH SCREEN_WIDTH, SCREEN_HEIGHT
