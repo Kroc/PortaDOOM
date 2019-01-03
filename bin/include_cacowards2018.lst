@@ -17,9 +17,9 @@ files\ports\prboom-plus\
 files\config\default.glboom-plus.cfg
 files\config\default.prboom-plus.cfg
 
-files\ports\gzdoom_*\
+files\ports\gzdoom-36\
 files\config\default.gzdoom.ini
-files\config\default.gzdoom-37.ini
+files\config\default.gzdoom-36.ini
 
 files\ports\zdoom\
 files\config\default.zdoom.ini
