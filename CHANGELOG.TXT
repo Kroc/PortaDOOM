@@ -2,13 +2,17 @@
 * = Fix / Change
 - = Removal
 
+22-JAN-19: v2018.12.31/3
+* Updated GZDoom to v.3.7.2
+* Move stable release back to GZDoom v3.7 (initial release had bugs)
+
 03-JAN-19: v2018.12.31/2
 * Updated GZDoom to v3.7.1 (overall)
 * Went back to GZDoom 3.6.0 for Cacowards 2018 due to ongoing reliability
   problems with GZDoom 3.7.x
 
 01-DEC-19: v2018.12.31/1
-* Fix to Launcher.exe hanging
+* Fix to Launcher.exe hanging (OpenGL detection issue)
 
 31-DEC-18: v2018.12.31/0
 + Released Cacowards 2018!

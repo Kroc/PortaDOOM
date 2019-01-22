@@ -1,3 +1,65 @@
+GZDoom 3.7.2
+--------------------------------------------------------------------------------
+*Sun Jan 20, 2019 2:31 pm*
+
+Highlights
+
+* resolution selector now sets to auto detected resolution at startup, no longer uses entries from the config file
+* committing a scaling change for fullscreen sets scaling to 1.0 to guarantee the selected number of pixels are actually used
+* add 4k UHD resolution to presets
+* More Bug Fixes
+
+Details
+
+* fixed: `ScriptUtil.PlayerAmmo` must be declared static.
+* modify the wording in the preset scaling menu to imply that all it does is pixel scaling, not change the actual screen resolution
+* resolution selector now sets to auto detected resolution at startup, no longer uses entries from the config file
+* committing a scaling change for fullscreen sets scaling to 1.0 to guarantee the selected number of pixels are actually used
+* add 4k UHD resolution to presets
+* fix spacing on one of the resolution preset entries
+* fixed: The rail attack only considered the puff's decal if it had `ALWAYSPUFF` set.
+* reverted GME Kss_Cpu.cpp to previous version (Update to GME 0.6.2 broke playback of MSX .kss files)
+* applied proper scaling type to font textures
+* fixed: application of fake contrast should never result in a light level of 0 unless the sector's own light level is 0.
+* normalize the pitch in ACS's `SetActorPitch`.
+* fixed: `TVector3::Pitch()` got the sign inverted.
+* workaround MSVC 2015 code generation issue, x64 only (With optimization turned on illegal instructions were generated for turbo CVAR handler function)
+* workaround code generation issue in `PlayerPawn.FindMostRecentWeapon()`
+* fixed default alpha for sector colors
+* fixed disappearing inventory after morphing pickup
+* fixed potentially missing event handlers
+* fixed wrong self type in `Array.Resize()`
+* unary minus operator propagates boolean operand to integer
+* fixed script line numbers after multi-line raw string literal
+* fixed incompatible commit.
+* fixed condition to produce blood splatter during line attack
+* relaxed caller type check for states modified by Dehacked
+* fix black cam texture on HUD
+* fix null pointer crash
+* Make `LevelLocals::ExecuteSpecial` return `int`
+* Fix return value of native `BuiltinCallLineSpecial`
+* Fixed multidimensional array definitions.
+* increased range of valid sound positions and velocities
+* Move receiver `NULL` check above the `orresult` check (#695) - This is to prevent a VM abort from happening here if `orresult` is false.
+* Fixed `Thing_ProjectileAimed` being broken.
+  * It was calling the fallback aiming in the wrong place when it should have been outside the speed check.
+  * Credit to _mental_ for the base code, but no gotos involved.
+* fixed the direct native variant of `DynamicLight.SetOffset`.
+* fixed: The player sound lookup would fail if a sound was only available for the last gender in the list. (This is an ancient bug, but it never registered before - only after making 'other' the default gender for nonsense input it became apparent.)
+* Default gender for sound classes should be male and not other since it could be undefined in `SNDINFO`.
+* fixed `A_Chase` default detection.
+* Add missing screenshot sRGB gamma when `vid_hdr` is active
+* Fixed: `NODAMAGE` was not accounted for with pain.
+* added missing range checks to level compatibility handler
+* force CMake to use internal asmjit. I left it in a state so that it can easily be changed back in the future.
+* fix Unix builds without backtrace functions in their libc
+  * backtrace functions are not present in all libc implementations. Cmake has
+  * module to add external libraries into build if needed so use it to fix build on
+  * Unix systems without backtrace in libc.
+* Fix `A_CustomBulletAttack`'s `spawnofs_xy` parameter
+* Since `GetParentAmmo` is now virtual, `BackpackItem` and the "give ammo" cheat should call `GetParentAmmo` to determine base ammo classes.
+* fixed memory leaks in network code.
+
 GZDoom 3.7.1
 --------------------------------------------------------------------------------
 *Tue Jan 01, 2019 3:13 pm*
