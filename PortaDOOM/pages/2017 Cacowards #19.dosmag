@@ -73,27 +73,40 @@ $KEY:U=GOTO:Dark Tide
 
 :MULTIPLAYER AWARDS:
 
-- *Pyrrhic											_hobomaster_
+$KEY:V=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/p-r/pyrrhic
+- *[V: Pyrrhic]										_hobomaster_
 
-- *Progressive Duel 2								_Mechanix Union_
+$KEY:W=URL:https://zandronum.com/forum/viewtopic.php?f=58&t=7872
+- *[W: Progressive Duel 2]							_Mechanix Union_
 
 :GAMEPLAY MOD AWARDS:
 
-- *Doom Delta										_DrPyspy_
+$KEY:X=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=52262
+- *[X: Doom Delta]									_DrPyspy_
 
-- *Final Doomer										_Sgt. Shivers_, _Yholl_, &c.
+$KEY:Y=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=55061
+- *[Y: Final Doomer]								_Sgt. Shivers_, _Yholl_, &c.
 
-- *High Noon Drifter								_TerminusEst13_
+$KEY:Z=URL:URL:https://forum.zdoom.org/viewtopic.php?t=57098
+- *[Z: High Noon Drifter]							_TerminusEst13_
 
 :CODEAWARD:
 
-- *OBLIGE											_Andrew Apted_
+$KEY:1=URL:http://oblige.sourceforge.net/
+- *[1: OBLIGE]										_Andrew Apted_
 
 :MORDETH AWARD:
 
-- [O] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
+$REM=This is purposefully duplicated for visual consistency
+$KEY:2=GOTO:TNT - Revilution
+- [2] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
 
 :MACHAWARD:
 
-$KEY:V=GOTO:The Given
-- [V] *The Given									_dobu gabu maru_
+$KEY:3=GOTO:The Given
+- [3] *The Given									_dobu gabu maru_
+
+:MAPPER OF THE YEAR:
+
+$KEY:4=URL:https://www.doomworld.com/profile/13035-dobu-gabu-maru/?do=content&type=forums_topic&change_section=1
+- [4: dobu gabu maru]

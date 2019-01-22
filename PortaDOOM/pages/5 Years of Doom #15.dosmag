@@ -5,7 +5,7 @@ $TITLE=Sverre Kvernmo
 
 :-------------------------------------------------------------------------------
 
-_Sverre Kvernmo_ stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. _Sverre_, however, is no stranger to change: years ago, he would have never expected to be working under contract for id Software. Before working with _Romero_ and crew, not counting a brief stint with Xatrix making Redneck Rampage, _Sverre_ was a prominent Doomer, creating numerous levels for id's Doom 2 add-on product "The Master Levels," as well as three for the much-revered Doom megawad Eternal Doom.
+_Sverre Kvernmo_ stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. _Sverre_, however, is no stranger to change: years ago, he would have never expected to be working under contract for id Software. Before working with _Romero_ and crew, not counting a brief stint with Xatrix making Redneck Rampage, _Sverre_ was a prominent Doomer, creating numerous levels for id's Doom 2 add-on product "The Master Levels", as well as three for the much-revered Doom megawad Eternal Doom.
 
 :-------------------------------------------------------------------------------
 
@@ -83,11 +83,11 @@ _Sverre		I basically did all the original art, or everything that wasn't snatche
 
 :-------------------------------------------------------------------------------
 
-*Doomworld	On your Eternal Doom level "Time Gate," there are two portals at the end which exit the level. Was there originally another idea for one of those two portals? What happened to that idea?
+*Doomworld	On your Eternal Doom level "Time Gate", there are two portals at the end which exit the level. Was there originally another idea for one of those two portals? What happened to that idea?
 
 _Sverre		Yes, there was a third "wrong gate" initially but I eventually had to axe it. What the third gate did was time-warp you one hour back in time (the Timegate control-panel texture refelected this at the time), basically restarting the Timegate level. However, because of the archaic ways the Doom-effects work (I used a secret-level exit on a level where it wasn't supposed to be used) there was no way to ensure this would always be the outcome. Only if you played the level without saving at all would this effect be ensured (and since I rarely saved my game while playtesting my levels it took me a while to figure out that it didn't work right). Since it was the last two weeks of production I had no time to make a third area once the bug was flushed out. :/
 
-*Doomworld	Did the sheer size of another of your Eternal levels, "Darkdome," present any problems? Was the level originally supposed to be any bigger?
+*Doomworld	Did the sheer size of another of your Eternal levels, "Darkdome", present any problems? Was the level originally supposed to be any bigger?
 
 _Sverre		Did I ever? I had a heap of problems with both Nucleus and Darkdome, because of the limitation of the save-game buffer. Both levels were about 20% bigger at their largest state, and I think I still have "full versions" backed up somewhere. As with any level designer, my heart would bleed every time I had to axe something, so those two levels are a study in how much you can cram into a Doom level and still having it run stable. If you load up the maps in an editor you'll see that all of the "effect-sectors" oustide of the normal map are triangles, not squares. The reason for this is simple, a triangular sector takes up less memory than a square one, having one less side-def. Similarily I would axe "three stim-packs and two hellknights" to add "25% health-box and a Baron" in stead, just to save the space. Anal? Yes.
 

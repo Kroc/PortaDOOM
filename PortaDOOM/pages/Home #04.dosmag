@@ -16,7 +16,7 @@ Credits for individual WADs are provided on each page but where a mod is used br
 
 :Crispy Doom - <github.com/fabiangreffrath/crispy-doom>
 :===============================================================================
-*"Crispy Doom is a friendly fork of Chocolate Doom that provides a higher display resolution, removes the static limits of the Doom engine and offers further optional visual, tactical and physical enhancements while remaining entirely config file, savegame, netplay and demo compatible with the original."
+*"Crispy Doom is a friendly fork of Chocolate Doom that provides a higher display resolution, removes the static limits of the Doom engine and offers further optional visual, tactical and physical enhancements while remaining entirely config file, savegame, netplay and demo compatible with the original".
 
 By _Fabian Greffrath_.
 
@@ -67,7 +67,7 @@ _Tim Willits_
 
 :DOOM-Retro - <doomretro.com>
 :===============================================================================
-*"The classic, refined DOOM source port."
+*"The classic, refined DOOM source port".
 
 By _Brad Harding_.
 
@@ -77,7 +77,7 @@ Copyright _TeamTNT_, _iD software_: _Ty Halderman_ (`TNT: Evilution`), _Dario Ca
 
 :FreeDOOM - <freedoom.github.io>
 :===============================================================================
-*"The Freedoom project aims to create a complete free content game based on the Doom engine."
+*"The Freedoom project aims to create a complete free content game based on the Doom engine".
 
 :GZDoom - <gzdoom.drdteam.org>
 :===============================================================================
@@ -96,13 +96,13 @@ By _Andrey Budko (entryway)_.
 
 :QB64 - <qb64.org>
 :===============================================================================
-*"QB64 is a modern extended BASIC+OpenGL language that retains QB4.5/QBasic compatibility and compiles native binaries for Windows, Linux and macOS."
+*"QB64 is a modern extended BASIC+OpenGL language that retains QB4.5/QBasic compatibility and compiles native binaries for Windows, Linux and macOS".
 
 `PortaDOOM`'s viewer and launcher are written with QB64.
 
 :xdelta - <xdelta.com>
 :===============================================================================
-*"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams."
+*"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams".
 
 `Xdelta` is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _<github.com/Doom-Utils/iwad-patches>_.
 
