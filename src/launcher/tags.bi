@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
 'tags.bi : definitions for engine/game feature tags
 
 DIM SHARED tag$, tag%

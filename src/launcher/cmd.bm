@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
 'cmd.bm : read in command-line parameters
 
 'read command-line switches:
@@ -391,10 +391,12 @@ IF cmd_hasGame` THEN
     
     'default to no hard requirement for rendering colour-depth 
     LET vid = 0
-    'require "software" renderer (8-bit, 256-colours)
+    'require "software" renderer? (8-bit, 256-colours)
     IF CMD_SW` = TRUE THEN LET vid = 8
     
+    'default to no hard requirement for binary-type
     LET bit = 0
+    'force 32-bit?
     IF CMD_32` = TRUE THEN LET bit = 32
     
     'if no IWAD is provided, we will default to "DOOM2"

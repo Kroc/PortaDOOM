@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
 
 'present game selection UI:
 'walk through the list of games

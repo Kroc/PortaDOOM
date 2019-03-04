@@ -1,4 +1,5 @@
-@ECHO OFF
+:: PortaDOOM, copyright (C) Kroc Camen 2016-2019, BSD 2-clause
+@ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
 SET "LAUNCHER=..\launcher.exe /WAIT"
 
@@ -65,7 +66,7 @@ ECHO    [O] GZDoom v2.4
 ECHO:
 ECHO    [P] GZDoom v3.2               [Q] GZDoom v3.3
 ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
-ECHO    [T] GZDoom v3.6               [U] GZDoom v3.6
+ECHO    [T] GZDoom v3.6               [U] GZDoom v3.7
 ECHO:
 
 SET CHOICE=?
