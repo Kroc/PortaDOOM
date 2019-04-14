@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+14-APR-19:
+* Updated GZDoom to 4.0.0
+
 09-MAR-19:
 * Updated Crispy-Doom to v5.5.1
 * Updated DOOM-Retro to v2.8.1
