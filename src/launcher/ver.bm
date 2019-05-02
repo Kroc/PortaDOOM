@@ -1,0 +1,64 @@
+'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
+'ver.bm : version number handling functions
+
+'=============================================================================
+SUB STR2VER(verstr$, ver AS VerNum)
+    DIM count%, find%, num%
+    'any periods at all?
+    IF INSTR(1, verstr$, ".") = 0 THEN
+        LET ver.major = VAL(verstr$)
+        EXIT SUB
+    END IF
+    DO
+        'find the next period (if any)
+        find% = INSTR(1, verstr$, ".")
+        'a period was found
+        IF find% THEN
+            'extract the number
+            LET num% = VAL(LEFT$(verstr$, find% - 1))
+            'trim the string accordingly
+            LET verstr$ = MID$(verstr$, find% + 1)
+            'store the number
+            SELECT CASE count%
+                CASE 0: LET ver.major = num%
+                CASE 1: LET ver.minor = num%
+                CASE 2: LET ver.patch = num%
+                CASE 3: LET ver.build = num%
+                CASE 4:
+                    EXIT DO
+            END SELECT
+            LET count% = count% + 1
+        END IF
+    LOOP UNTIL find% = 0
+END SUB
+
+'=============================================================================
+FUNCTION VER2STR$(ver AS VerNum)
+    LET VER2STR$ = STRINT$(ver.major) + "." _
+                 + STRINT$(ver.minor) + "." _
+                 + STRINT$(ver.patch) + "." _
+                 + STRINT$(ver.build)
+END FUNCTION
+
+'=============================================================================
+FUNCTION VER2INT&(ver as VerNum)
+    DIM verstr$
+    
+    SELECT EVERYCASE true
+        CASE ver.major > 0
+            LET verstr$ = STR$(ver.major)
+        CASE ver.minor < 10
+            LET verstr$ = verstr$ + "0" + STR$(ver.minor)
+        CASE ver.minor >= 10
+            LET verstr$ = verstr$ + STR$(ver.minor)
+        CASE ver.patch < 10
+            LET verstr$ = verstr$ + "0" + STR$(ver.patch)
+        CASE ver.patch >= 10
+            LET verstr$ = verstr$ + STR$(ver.patch)
+        CASE ver.build < 10
+            LET verstr$ = verstr$ + "0" + STR$(ver.build)
+        CASE ver.build >= 10
+            LET verstr$ = verstr$ + STR$(ver.build)
+    END SELECT
+    LET VER2INT& = VAL(verstr$)
+END FUNCTION

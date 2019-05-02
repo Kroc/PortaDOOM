@@ -2,6 +2,9 @@
 * = Fix / Change
 - = Removal
 
+02-MAY-19:
+* Updated GZDoom to 4.1.0
+
 14-APR-19:
 * Updated GZDoom to 4.0.0
 

@@ -524,7 +524,7 @@ ECHO ----------------------------------------
 
 :gzdoom-37
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-37.ini" GOTO :gzdoom-40
+IF EXIST "default.gzdoom-37.ini" GOTO :gzdoom-41
 
 ECHO * GZDoom v3.7                DOOM.WAD
 CALL :make_gzdoom "gzdoom-37" "DOOM.WAD"
@@ -544,26 +544,26 @@ ECHO * GZDoom v3.7                SQUARE1.PK3
 CALL :make_gzdoom "gzdoom-37" "square1.pk3"
 ECHO ----------------------------------------
 
-:gzdoom-40
+:gzdoom-41
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-40.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-41.ini" GOTO :gzdoom
 
-ECHO * GZDoom v4.0                DOOM.WAD
-CALL :make_gzdoom "gzdoom-40" "DOOM.WAD"
-ECHO * GZDoom v4.0                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-40" "HERETIC.WAD"
-ECHO * GZDoom v4.0                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-40" "HEXEN.WAD"
-ECHO * GZDoom v4.0                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-40" "STRIFE1.WAD"
-ECHO * GZDoom v4.0                CHEX.WAD
-CALL :make_gzdoom "gzdoom-40" "CHEX.WAD"
-ECHO * GZDoom v4.0                HARM1.WAD
-CALL :make_gzdoom "gzdoom-40" "HARM1.WAD"
-ECHO * GZDoom v4.0                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-40" "ROTWB.WAD"
-ECHO * GZDoom v4.0                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-40" "square1.pk3"
+ECHO * GZDoom v4.1                DOOM.WAD
+CALL :make_gzdoom "gzdoom-41" "DOOM.WAD"
+ECHO * GZDoom v4.1                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-41" "HERETIC.WAD"
+ECHO * GZDoom v4.1                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-41" "HEXEN.WAD"
+ECHO * GZDoom v4.1                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-41" "STRIFE1.WAD"
+ECHO * GZDoom v4.1                CHEX.WAD
+CALL :make_gzdoom "gzdoom-41" "CHEX.WAD"
+ECHO * GZDoom v4.1                HARM1.WAD
+CALL :make_gzdoom "gzdoom-41" "HARM1.WAD"
+ECHO * GZDoom v4.1                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-41" "ROTWB.WAD"
+ECHO * GZDoom v4.1                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-41" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom
@@ -843,6 +843,7 @@ REM # (graphics break if this is applied to earlier versions)
 %BIN_FART% "default.gzdoom-19.ini" "gl_texture_filter=4" "gl_texture_filter=5"
 %BIN_FART% "default.gzdoom-2*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
 %BIN_FART% "default.gzdoom-3*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
+%BIN_FART% "default.gzdoom-4*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
 
 REM # use "Mipmapped" for earlier versions
 %BIN_FART% "default.gzdoom-10.ini" "gl_texture_filter=4" "gl_texture_filter=1"

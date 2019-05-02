@@ -26,7 +26,7 @@ TYPE Engine
     title AS STRING 'on-screen "friendly name"
     desc AS STRING '.short description of the engine
     exe AS STRING '..executable file-name
-    ver AS INTEGER '.engine's version number
+    ver AS VerNum '..engine's version number
     bit AS _BYTE '...executable architecture: 32 or 64 (bit)
     vid AS _BYTE '...renderer colour-depth, i.e. 8, 24, 32
     kin AS _BYTE '...a marker to indicate the engine's genealogy

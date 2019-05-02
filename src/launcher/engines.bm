@@ -266,6 +266,7 @@ SUB Engines_Enumerate()
             DIM ini_cmd$
             LET ini_cmd$ = ReadIniUTF8$("", ini_section$, "cmd")
             
+            '-------------------------------------------------------------------
             'process the tag list
             CALL Tags_Add(ini_tags$)
             
@@ -292,7 +293,10 @@ SUB Engines_Enumerate()
             
             LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
             LET Engines(Engines_Count).exe = ini_exe$
-            LET Engines(Engines_Count).ver = VAL(ini_ver$)
+            
+            'deconstruct the version string into component numbers
+            CALL STR2VER(ini_ver$, Engines(Engines_Count).ver)
+            
             LET Engines(Engines_Count).bit = ini_bit
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
             
@@ -396,16 +400,16 @@ SUB Engines_Enumerate()
                         
                         ELSEIF nB$ = nA$ THEN
                             'compare the two engine's version numbers
-                            DIM vA%, vB%
-                            LET vA% = Engines(A%).ver
-                            LET vB% = Engines(B%).ver
+                            DIM vA&, vB&
+                            LET vA& = VER2INT&(Engines(A%).ver)
+                            LET vB& = VER2INT&(Engines(B%).ver)
                             
-                            IF vB% > vA% THEN
+                            IF vB& > vA& THEN
                                 SWAP Engines(A%), Engines(B%)
                                 LET sortCount% = sortCount% + 1
                                 LET sorted% = FALSE
                                 
-                            ELSEIF vB% = vA% THEN
+                            ELSEIF vB& = vA& THEN
                                 'compare renderer colour-depth
                                 DIM cA%, cB%
                                 LET cA% = Engines(A%).vid
@@ -471,7 +475,6 @@ SUB Engines_Enumerate()
             LET tag$ = Tags_Split$("")
         LOOP
     NEXT i
-    
     EXIT SUB
     
 closeFile:
