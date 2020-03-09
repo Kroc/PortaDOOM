@@ -9,6 +9,9 @@ IF /I "%PROCESSOR_ARCHITECTURE%" == "AMD64" SET WINBIT=64 & REM # Regular x64
 REM # 32-bit CMD running on a 64-bit system (WOW64)
 IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64
 
+REM # location of QB64 executable
+SET BIN_QB64=bin\qb64\qb64.exe
+
 REM # select 7Zip executable
 IF %WINBIT% EQU 64 SET BIN_7ZA="%~dp0bin\7za\7za_x64.exe"
 IF %WINBIT% EQU 32 SET BIN_7ZA="%~dp0bin\7za\7za.exe"
@@ -83,7 +86,7 @@ ECHO:
 ECHO * Compile "PortaDOOM.exe"
 ECHO:
 REM # compile source with QB64
-bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\PortaDOOM.exe" "..\..\src\portadoom.qb64"
+%BIN_QB64% -x -e -o "..\..\PortaDOOM\PortaDOOM.exe" "..\..\src\portadoom.qb64"
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
@@ -101,7 +104,7 @@ ECHO:
 ECHO * Compile "launcher.exe"
 ECHO:
 REM # compile the launcher
-bin\qb64\qb64.exe -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\src\launcher.qb64"
+%BIN_QB64% -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\src\launcher.qb64"
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
