@@ -28,6 +28,7 @@ TYPE Game
     cmd AS STRING '.........additional command-line parameters to add
     
     vid AS _UNSIGNED _BYTE 'renderer colour-depth required
+    map AS STRING '.........warp to a specific map name
     warp_e AS _BYTE '.......warp to given episode number
     warp_m AS _BYTE '.......warp to given map number
     skill AS _BYTE '........preset skill level

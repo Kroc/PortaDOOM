@@ -67,7 +67,7 @@ ECHO:
 ECHO    [P] GZDoom v3.2               [Q] GZDoom v3.3
 ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
 ECHO    [T] GZDoom v3.6               [U] GZDoom v3.7
-ECHO 	[V] GZDoom v4.1
+ECHO 	[V] GZDoom v4.1               [W] GZDoom v4.2
 ECHO:
 
 SET CHOICE=?
@@ -102,5 +102,6 @@ IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-35 /IWAD DOOM2
 IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-36 /IWAD DOOM2
 IF /I "%CHOICE%" == "U" %LAUNCHER% /USE gzdoom-37 /IWAD DOOM2
 IF /I "%CHOICE%" == "V" %LAUNCHER% /USE gzdoom-41 /IWAD DOOM2
+IF /I "%CHOICE%" == "W" %LAUNCHER% /USE gzdoom-42 /IWAD DOOM2
 
 GOTO :gzdoom

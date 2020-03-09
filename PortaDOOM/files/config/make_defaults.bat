@@ -546,7 +546,7 @@ ECHO ----------------------------------------
 
 :gzdoom-41
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-41.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-41.ini" GOTO :gzdoom-42
 
 ECHO * GZDoom v4.1                DOOM.WAD
 CALL :make_gzdoom "gzdoom-41" "DOOM.WAD"
@@ -564,6 +564,28 @@ ECHO * GZDoom v4.1                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-41" "ROTWB.WAD"
 ECHO * GZDoom v4.1                SQUARE1.PK3
 CALL :make_gzdoom "gzdoom-41" "square1.pk3"
+ECHO ----------------------------------------
+
+:gzdoom-42
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-42.ini" GOTO :gzdoom
+
+ECHO * GZDoom v4.2                DOOM.WAD
+CALL :make_gzdoom "gzdoom-42" "DOOM.WAD"
+ECHO * GZDoom v4.2                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-42" "HERETIC.WAD"
+ECHO * GZDoom v4.2                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-42" "HEXEN.WAD"
+ECHO * GZDoom v4.2                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-42" "STRIFE1.WAD"
+ECHO * GZDoom v4.2                CHEX.WAD
+CALL :make_gzdoom "gzdoom-42" "CHEX.WAD"
+ECHO * GZDoom v4.2                HARM1.WAD
+CALL :make_gzdoom "gzdoom-42" "HARM1.WAD"
+ECHO * GZDoom v4.2                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-42" "ROTWB.WAD"
+ECHO * GZDoom v4.2                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-42" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom
@@ -691,6 +713,7 @@ REM # use F12 for screen-shot
 %BIN_FART% "default.%~1.extra.cfg" "key_menu_screenshot           0"	"key_menu_screenshot           88"
 
 REM # user-name for multi-player
+REM # TODO: crispy-doom 5.6 now uses a randomly generated name
 %BIN_FART% "default.%~1.extra.cfg" "player_name                   \"%USERNAME%\"" "player_name                   \"PortaDOOM\""
 REM # in Chocolate Strife there's also nickname?
 %BIN_FART% "default.choco-strife.cfg" "nickname                      \"(null)\"" "nickname                      \"PortaDOOM\""
@@ -698,10 +721,10 @@ REM # in Chocolate Strife there's also nickname?
 REM # Crispy Doom, annoyingly, adds these in -- another reason why I need
 REM # to make a specialised tool for programatically modifying CFG/INI files
 %BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"autoload_path                 \"C:\\Users\\%USERNAME%\\AppData\\Roaming\\crispy-doom\\autoload\"" ^
+	"autoload_path                 \"%APPDATA%\\crispy-doom\\autoload\"" ^
 	"autoload_path                 \"\""
 %BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"music_pack_path               \"C:\\Users\\%USERNAME%\\AppData\\Roaming\\crispy-doom\\music-packs\"" ^
+	"music_pack_path               \"%APPDATA%\\crispy-doom\\music-packs\"" ^
 	"music_pack_path               \"\""
 
 GOTO:EOF
