@@ -20,8 +20,10 @@ PRINT ""
 
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";
-    REM PRINT TRUNCATE$(Games(i).title, UI_SCREEN_WIDTH - 5 - 2)
-    REM PRINT " " + CHR$(214) + STRING$(UI_SCREEN_WIDTH - 3, ASC_BOX_H)
+    IF Games(i).name <> "" THEN
+        COLOR WHITE
+        PRINT TRUNCATE$(Games(i).name, UI_SCREEN_WIDTH - 5 - 2);
+    END IF
     IF Games(i).desc <> "" THEN
         COLOR LIME
         LET h = PRINTWRAP%( _

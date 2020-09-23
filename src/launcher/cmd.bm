@@ -400,13 +400,15 @@ IF cmd_hasGame` THEN
     IF CMD_32` = TRUE THEN LET bit = 32
     
     'if no IWAD is provided, we will default to "DOOM2"
-    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2.WAD"
+    IF CMD_IWAD$ = "" THEN LET CMD_IWAD$ = "DOOM2"
     
     'TODO: get game name / title from the IWAD meta-data
+    DIM CMD_IWAD%%
+    LET CMD_IWAD%% = IWADs_FindMeta&(CMD_IWAD$)
     
     CALL Games_Add ( _
         "cmd", "", "", "", "", CMD_CMPLVL$, _
-        CMD_IWAD$, CMD_PRE$, CMD_PWAD$, CMD_FILES$, _
+        CMD_IWAD%%, CMD_PRE$, CMD_PWAD$, CMD_FILES$, _
         CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
         CMD_USE$, CMD_REQ$, bit, vid, CMD_WARP$, CMD_SKILL$, _
         "", "", "", "", "", "", "", "", "" _

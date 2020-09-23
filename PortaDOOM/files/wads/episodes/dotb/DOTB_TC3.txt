@@ -1,0 +1,57 @@
+===========================================================================
+Advanced engine needed  : GZDoom or Zandronium
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : Dimension of the Boomed (True Colour)
+Filename                : DOTB_TC3.WAD
+Release date            : 25/10/2018
+Author                  : Stephen Wadsworth
+Other Files By Author   : Way Too Many Dead Guys, various contributions.
+Misc. Author Info       : Urthar @ Doomworld
+
+Description             : The ZDoom Mod friendly version of DOTB.
+			  Load this mapset first, and your mod of choice second.
+
+Additional Credits to   : Shambler sprites generated from Skiffy's updated Shambler MDL.			 
+			  Spawn sprites generated from Arcane Dimensions updated Spawn MDL.
+			  Scrag sprites directly lifted from Eriance's Wicked monster.
+			  Minigun pickup sprite from Tormentor667's Minigun.
+
+Midi			: Parallel Dimensions, Retribution Dawns - Silent Zorah
+			  Burial Chamber - Nabernizer
+			  Become The Hunted, Barons Province, The Ravens Nest - Jimmy
+			  Egypt, Demetria  - Ribbiks
+
+Additional Thanks to	: All those at Doomworld who provided feedback and encouragement.
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOMII
+Map #                   : Map01..09
+Single Player           : Designed for
+Cooperative 2-4 Player  : Tested in solo-net
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : QUAKE textures, DOOMII sprites, QTEST sprites
+Build Time              : 2 years on and off
+Editor(s) used          : GZDoomBuilder, SLADE3, WhackEd4
+Known Bugs              : None
+May Not Run With        : Non ZDoom compatible source ports
+Tested With             : QZDoom GZDoom Zandronium

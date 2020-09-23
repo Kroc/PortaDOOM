@@ -11,12 +11,12 @@ files\tools\xdelta3
 
 files\config\default.choco-doom*.cfg
 files\config\default.glboom-plus.cfg
-files\config\default.gzdoom.ini
 files\config\default.prboom-plus.cfg
+files\config\default.gzdoom.ini
 
 files\ports\choco-doom\
-files\ports\gzdoom-37_*\
 files\ports\prboom-plus\
+files\ports\gzdoom_*\
 
 pages\Home #??.dosmag
 pages\5 Years of Doom #??.dosmag

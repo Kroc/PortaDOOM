@@ -35,14 +35,23 @@ readINI:
     '-------------------------------------------------------------------------
     'do additional file searching from the INI file's path
     LET DIR_INI$ = Paths_AddSlash$(Paths_GetPath$(path$))
-    
+
     'read the game title and blurb
     DIM ini_title$
-    LET ini_title$ = ReadIniUTF8$(path$, "games", "title")
+    LET ini_title$ = ReadIniUTF8$(path$, "shared", "title")
     DIM ini_blurb$
-    LET ini_blurb$ = ReadIniUTF8$(path$, "games", "blurb")
+    LET ini_blurb$ = ReadIniUTF8$(path$, "shared", "blurb")
     
-    'for now we limit game definitions to 9 since we can not provide
+    'a place to store shared properties for all game definitions
+    DIM shared_ini AS Game
+    
+    'is there a shared IWAD definition?
+    LET shared_ini.iwad = IWADs_FindMeta&( _
+        ReadIniUTF8$(path$, "shared", "iwad") _
+    )
+    LET shared_ini.pwad = ReadIniUTF8$(path$, "shared", "pwad")
+    
+    'for now we limit game definitions to 9 since we cannot provide
     'a user-scrollable area and it also simplifies the keyboard check
     DIM ini_index
     FOR ini_index = 1 TO 9
@@ -82,8 +91,8 @@ readINI:
         'since an IWAD *must* be defined, we also use this
         'as a check to see if the section exists
         DIM ini_iwad$
-        LET ini_iwad$ = ReadIniUTF8$("", ini_section$, "iwad")
-        IF ini_iwad$ = "" THEN
+        LET ini_iwad$ = ReadIniUTF8$(path$, ini_section$, "iwad")
+        IF ini_iwad$ = "" AND shared_ini.iwad = 0 THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " IWAD field (or game section) missing, " _
                 + "in INI file:"
@@ -105,31 +114,37 @@ readINI:
             CALL ErrorExit: SYSTEM 1
         END IF
         
+        'find the IWAD meta-data entry referred to by this game
+        DIM ini_iwad%%
+        LET ini_iwad%% = IWADs_FindMeta&(ini_iwad$)
+        'fall-back to the shared IWAD definition (if present)
+        IF ini_iwad%% = 0 THEN LET ini_iwad%% = shared_ini.iwad
+        
         'the game-choice name is used as a title when selected,
         'if missing, we default to the overall game title
         DIM ini_name$
-        LET ini_name$ = ReadIniUTF8$("", ini_section$, "name")
+        LET ini_name$ = ReadIniUTF8$(path$, ini_section$, "name")
         'the choice text. this is used to be able to provide
         'a selection screen with the available choices
         DIM ini_desc$
-        LET ini_desc$ = ReadIniUTF8$("", ini_section$, "desc")
+        LET ini_desc$ = ReadIniUTF8$(path$, ini_section$, "desc")
         
         'game requirements:
         DIM ini_use$
-        LET ini_use$ = ReadIniUTF8$("", ini_section$, "use")
+        LET ini_use$ = ReadIniUTF8$(path$, ini_section$, "use")
         DIM ini_tags$
-        LET ini_tags$ = ReadIniUTF8$("", ini_section$, "tags")
+        LET ini_tags$ = ReadIniUTF8$(path$, ini_section$, "tags")
         DIM bit
-        SELECT CASE ReadIniUTF8$("", ini_section$, "bit")
+        SELECT CASE ReadIniUTF8$(path$, ini_section$, "bit")
             CASE "32": LET bit = 32
             CASE "64": LET bit = 64
             CASE ELSE: LET bit = 0
         END SELECT
         DIM ini_cmplvl$
-        LET ini_cmplvl$ = ReadIniUTF8$("", ini_section$, "cmplvl")
+        LET ini_cmplvl$ = ReadIniUTF8$(path$, ini_section$, "cmplvl")
         
         DIM vid
-        SELECT CASE ReadIniUTF8$("", ini_section$, "vid")
+        SELECT CASE ReadIniUTF8$(path$, ini_section$, "vid")
             CASE "8": LET vid = 8
             CASE "16": LET vid = 16
             CASE "24": LET vid = 24
@@ -139,48 +154,48 @@ readINI:
         
         'game files and settings:
         DIM ini_pre$
-        LET ini_pre$ = ReadIniUTF8$("", ini_section$, "pre")
+        LET ini_pre$ = ReadIniUTF8$(path$, ini_section$, "pre")
         DIM ini_pwad$
-        LET ini_pwad$ = ReadIniUTF8$("", ini_section$, "pwad")
+        LET ini_pwad$ = ReadIniUTF8$(path$, ini_section$, "pwad")
         DIM ini_files$
-        LET ini_files$ = ReadIniUTF8$("", ini_section$, "files")
+        LET ini_files$ = ReadIniUTF8$(path$, ini_section$, "files")
         DIM ini_deh$
-        LET ini_deh$ = ReadIniUTF8$("", ini_section$, "deh")
+        LET ini_deh$ = ReadIniUTF8$(path$, ini_section$, "deh")
         DIM ini_bex$
-        LET ini_bex$ = ReadIniUTF8$("", ini_section$, "bex")
+        LET ini_bex$ = ReadIniUTF8$(path$, ini_section$, "bex")
         DIM ini_warp$
-        LET ini_warp$ = ReadIniUTF8$("", ini_section$, "warp")
+        LET ini_warp$ = ReadIniUTF8$(path$, ini_section$, "warp")
         DIM ini_skill$
-        LET ini_skill$ = ReadIniUTF8$("", ini_section$, "skill")
+        LET ini_skill$ = ReadIniUTF8$(path$, ini_section$, "skill")
         
         DIM ini_skill1$
-        LET ini_skill1$ = ReadIniUTF8$("", ini_section$, "skill1")
+        LET ini_skill1$ = ReadIniUTF8$(path$, ini_section$, "skill1")
         DIM ini_skill2$
-        LET ini_skill2$ = ReadIniUTF8$("", ini_section$, "skill2")
+        LET ini_skill2$ = ReadIniUTF8$(path$, ini_section$, "skill2")
         DIM ini_skill3$
-        LET ini_skill3$ = ReadIniUTF8$("", ini_section$, "skill3")
+        LET ini_skill3$ = ReadIniUTF8$(path$, ini_section$, "skill3")
         DIM ini_skill4$
-        LET ini_skill4$ = ReadIniUTF8$("", ini_section$, "skill4")
+        LET ini_skill4$ = ReadIniUTF8$(path$, ini_section$, "skill4")
         DIM ini_skill5$
-        LET ini_skill5$ = ReadIniUTF8$("", ini_section$, "skill5")
+        LET ini_skill5$ = ReadIniUTF8$(path$, ini_section$, "skill5")
         DIM ini_skill6$
-        LET ini_skill6$ = ReadIniUTF8$("", ini_section$, "skill6")
+        LET ini_skill6$ = ReadIniUTF8$(path$, ini_section$, "skill6")
         DIM ini_skill7$
-        LET ini_skill7$ = ReadIniUTF8$("", ini_section$, "skill7")
+        LET ini_skill7$ = ReadIniUTF8$(path$, ini_section$, "skill7")
         DIM ini_skill8$
-        LET ini_skill8$ = ReadIniUTF8$("", ini_section$, "skill8")
+        LET ini_skill8$ = ReadIniUTF8$(path$, ini_section$, "skill8")
         DIM ini_skill9$
-        LET ini_skill9$ = ReadIniUTF8$("", ini_section$, "skill9")
+        LET ini_skill9$ = ReadIniUTF8$(path$, ini_section$, "skill9")
         
         DIM ini_exec$
-        LET ini_exec$ = ReadIniUTF8$("", ini_section$, "exec")
+        LET ini_exec$ = ReadIniUTF8$(path$, ini_section$, "exec")
         DIM ini_cmd$
-        LET ini_cmd$ = ReadIniUTF8$("", ini_section$, "cmd")
+        LET ini_cmd$ = ReadIniUTF8$(path$, ini_section$, "cmd")
         
         CALL Games_Add( _
             game_id$, ini_title$, ini_blurb$, ini_name$, ini_desc$, _
             ini_cmplvl$, _
-            ini_iwad$, ini_pre$, ini_pwad$, ini_files$, _
+            ini_iwad%%, ini_pre$, ini_pwad$, ini_files$, _
             ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
             ini_use$, ini_tags$, bit, vid, _
             ini_warp$, ini_skill$, _
@@ -194,7 +209,7 @@ END SUB
 
 '=============================================================================
 SUB Games_Add ( _
-    id$, title$, blurb$, name$, desc$, cmplvl$, iwad$, pre$, pwad$, files$, _
+    id$, title$, blurb$, name$, desc$, cmplvl$, iwad%%, pre$, pwad$, files$, _
     exec$, cmd$, deh$, bex$, use$, tags$, bit, vid, warp$, skill$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
@@ -203,14 +218,10 @@ SUB Games_Add ( _
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game
     LET Games(Games_Count).id = id$
-    
-    'find the IWAD meta-data entry referred to by this game
-    DIM iwad%%
-    LET iwad%% = IWADs_FindMeta&(iwad$)
     LET Games(Games_Count).iwad = iwad%%
     
     IF iwad%% = 0 THEN
-        SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
+        SELECT CASE UCASE$(Paths_GetFileBaseName$(IWADs(iwad%%).path))
             CASE "DOOM"
                 LET Games(Games_Count).type = TYPE_DOOM
             CASE "CHEX"

@@ -21,6 +21,9 @@
 'returns an index into `IWADs` array, or 0 for not-found
 '=============================================================================
 FUNCTION IWADs_FindMeta&(file_path$)
+    'quick-out for in-lining
+    IF file_path$ = "" THEN EXIT FUNCTION
+
     'note that `file_path$` could be a full path, even absolute;
     'take just the file-name to search. it's assumed that all IWADs have
     'have unique file-names, something the DOOM community does adhere to
