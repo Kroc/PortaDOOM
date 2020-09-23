@@ -5,7 +5,7 @@
 'these enhancements so the IWAD has to specify which original DOOM-engine it
 'was intended for
 
-CONST TYPE_DOOM = 1'....DOOM uses episodes
+CONST TYPE_DOOM = 1 '...DOOM uses episodes
 CONST TYPE_DOOM2 = 2 '..DOOM2 does not use episodes
 CONST TYPE_HERETIC = 4 'HERETIC added an inventory
 CONST TYPE_HEXEN = 8 '..HEXEN added ACS scripting and classes

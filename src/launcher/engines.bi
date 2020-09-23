@@ -15,16 +15,16 @@ TYPE Engine
     'e.g. a specific version or binary such as x86/x64
     id AS STRING
     
+    title AS STRING 'on-screen "friendly name"
+    desc AS STRING '.short description of the engine
+    
     'a comma-separated list of which DOOM-engines are supported by the engine.
     'these can be any of DOOM, CHEX, DOOM2, HERETIC, HEXEN, STRIFE, DOOM64
     'or HARM1
     type AS INTEGER
     
-    'these are specifically named after the INI-file param names:
     tier AS INTEGER '"high", "medium" or "low" tier
     rank AS INTEGER
-    title AS STRING 'on-screen "friendly name"
-    desc AS STRING '.short description of the engine
     exe AS STRING '..executable file-name
     ver AS VerNum '..engine's version number
     bit AS _BYTE '...executable architecture: 32 or 64 (bit)
@@ -43,7 +43,7 @@ CONST TIER_RETRO = 1 '"low" tier engines that retain the classic DOOM style
 
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla
 CONST KIN_V = 2 '"vanilla" engine; i.e. Chocolate-Doom, Crispy-Doom
-CONST KIN_B = 3 '"Boom" engine; i.e. PrBoom+, DoomRetro
+CONST KIN_B = 3 '"Boom" engine; i.e. PrBoom+, DOOM-Retro
 CONST KIN_Z = 4 '"ZDoom" engine; i.e. ZDoom
 CONST KIN_G = 5 '"GZDoom" engine; i.e. GZDoom, QZDoom
 

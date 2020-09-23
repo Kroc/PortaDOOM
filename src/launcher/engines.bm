@@ -35,10 +35,9 @@ SUB Engines_Enumerate()
         
         'read the global values:
         '---------------------------------------------------------------------
-        
-        DIM ini_engine$
-        LET ini_engine$ = ReadIniUTF8$(ini_path$, "global", "engine")
-        IF ini_engine$ = "" THEN
+        DIM shared_engine$
+        LET shared_engine$ = ReadIniUTF8$(ini_path$, "global", "engine")
+        IF  shared_engine$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`engine` field is missing " _
                 + "from the INI file:"
@@ -59,9 +58,12 @@ SUB Engines_Enumerate()
             CALL ErrorExit: SYSTEM 1
         END IF
         
-        DIM ini_tier$
-        LET ini_tier$ = ReadIniUTF8$(ini_path$, "global", "tier")
-        IF ini_tier$ = "" THEN
+        DIM shared_type$
+        LET shared_type$ = ReadIniUTF8$(ini_path$, "global", "type")
+        
+        DIM shared_tier$
+        LET shared_tier$ = ReadIniUTF8$(ini_path$, "global", "tier")
+        IF  shared_tier$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`tier` field is missing " _
                 + "from the INI file:"
@@ -84,9 +86,9 @@ SUB Engines_Enumerate()
             CALL ErrorExit: SYSTEM 1
         END IF
         
-        DIM ini_rank$
-        LET ini_rank$ = ReadIniUTF8$(ini_path$, "global", "rank")
-        IF ini_rank$ = "" THEN
+        DIM shared_rank$
+        LET shared_rank$ = ReadIniUTF8$(ini_path$, "global", "rank")
+        IF  shared_rank$ = "" THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " The `[global]`->`rank` field is missing " _
                 + "from the INI file:"
@@ -110,15 +112,35 @@ SUB Engines_Enumerate()
             CALL ErrorExit: SYSTEM 1
         END IF
         
+        DIM shared_exe$
+        LET shared_exe$ = ReadIniUTF8$(ini_path$, "global", "exe")
+        DIM shared_ver$
+        LET shared_ver$ = ReadIniUTF8$(ini_path$, "global", "ver")
+        DIM shared_bit$
+        LET shared_bit$ = ReadIniUTF8$(ini_path$, "global", "bit")
+        DIM shared_vid$
+        LET shared_vid$ = ReadIniUTF8$(ini_path$, "global", "vid")
+        DIM shared_kin$
+        LET shared_kin$ = ReadIniUTF8$(ini_path$, "global", "kin")
+        DIM shared_cfg$
+        LET shared_cfg$ = ReadIniUTF8$(ini_path$, "global", "cfg")
+        DIM shared_save$
+        LET shared_save$ = ReadIniUTF8$(ini_path$, "global", "save")
+        DIM shared_tags$
+        LET shared_tags$ = ReadIniUTF8$(ini_path$, "global", "tags")
+        DIM shared_auto$
+        LET shared_auto$ = ReadIniUTF8$(ini_path$, "global", "auto")
+        DIM shared_cmd$
+        LET shared_cmd$ = ReadIniUTF8$(ini_path$, "global", "cmd")
+            
         'read each engine definition:
         '---------------------------------------------------------------------
-        
         DIM ini_index%
         LET ini_index% = 1
         DO
             DIM ini_id$
             LET ini_id$ = ReadIniUTF8$("", "engines", STRINT$(ini_index%))
-            IF ini_id$ = "" THEN
+            IF  ini_id$ = "" THEN
                 'if this is still the first check,
                 'then no engines are defined!
                 IF ini_index% = 1 THEN
@@ -147,7 +169,7 @@ SUB Engines_Enumerate()
             END IF
             
             'the engine-id cannot match the global engine-id:
-            IF ini_engine$ = ini_id$ THEN
+            IF shared_engine$ = ini_id$ THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Local engine ID cannot match global engine ID, " _
                     + "in INI file:"
@@ -167,7 +189,7 @@ SUB Engines_Enumerate()
                 PRINT ""
                 PRINT "     [engines]"
                 PRINT "     1=prboom-plus-hw"
-                PRINT "     2=prboom-plus-hw"
+                PRINT "     2=prboom-plus-sw"
                 GOSUB closeFile
                 CALL ErrorExit: SYSTEM 1
             END IF
@@ -180,7 +202,7 @@ SUB Engines_Enumerate()
             'serve to check if the section exists as it should
             DIM ini_title$
             LET ini_title$ = ReadIniUTF8$("", ini_section$, "title")
-            IF ini_title$ = "" THEN
+            IF  ini_title$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Title field (or engine section) missing, " _
                     + "in INI file:"
@@ -203,30 +225,9 @@ SUB Engines_Enumerate()
                 CALL ErrorExit: SYSTEM 1
             END IF
             
-            'if this is a 32-bit machine, we can immediately
-            'throw away any 64-bit engines:
-            
-            'read the engine's CPU-type
-            DIM ini_bit
-            SELECT CASE ReadIniUTF8$("", ini_section$, "bit")
-                CASE "64"
-                    LET ini_bit = 64
-                    'if this is a 32-bit machine (or the `/32` switch was
-                    'used) skip it entirely, it wouldn't run on this CPU
-                    IF CPU_BIT = 32 THEN GOTO NextEngine
-                    
-                CASE "32"
-                    LET ini_bit = 32
-                    
-                CASE ELSE
-                    'TODO: output error/warning?
-                    'default to 32-bit
-                    LET ini_bit = 32
-            END SELECT
-            
             DIM ini_desc$
             LET ini_desc$ = ReadIniUTF8$("", ini_section$, "desc")
-            IF ini_desc$ = "" THEN
+            IF  ini_desc$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Description field missing in INI file:"
                 PRINT " " + CHR$(34) _
@@ -247,10 +248,13 @@ SUB Engines_Enumerate()
             
             DIM ini_type$
             LET ini_type$ = ReadIniUTF8$("", ini_section$, "type")
+            'TODO:allow local tier, rank?
             DIM ini_exe$
             LET ini_exe$ = ReadIniUTF8$("", ini_section$, "exe")
             DIM ini_ver$
             LET ini_ver$ = ReadIniUTF8$("", ini_section$, "ver")
+            DIM ini_bit$
+            LET ini_bit$ = ReadIniUTF8$("", ini_section$, "bit")
             DIM ini_vid$
             LET ini_vid$ = ReadIniUTF8$("", ini_section$, "vid")
             DIM ini_kin$
@@ -274,32 +278,57 @@ SUB Engines_Enumerate()
             LET Engines_Count = Engines_Count + 1
             REDIM _PRESERVE Engines(1 TO Engines_Count) AS Engine
             
-            LET Engines(Engines_Count).engine = LCASE$(ini_engine$)
+            LET Engines(Engines_Count).engine = LCASE$(shared_engine$)
             LET Engines(Engines_Count).id = LCASE$(ini_id$)
-            
             LET Engines(Engines_Count).dir = dir$
-            
-            SELECT CASE LCASE$(ini_tier$)
-                CASE "ultra": LET Engines(Engines_Count).tier = TIER_ULTRA
-                CASE "fast": LET Engines(Engines_Count).tier = TIER_FAST
-                CASE "retro": LET Engines(Engines_Count).tier = TIER_RETRO
-                'TODO: none of the above?
-            END SELECT
-            
-            LET Engines(Engines_Count).rank = VAL(ini_rank$)
             
             LET Engines(Engines_Count).title = ini_title$
             LET Engines(Engines_Count).desc = ini_desc$
             
+            IF ini_type$ = "" THEN LET ini_type$ = shared_type$
+            IF ini_type$ = "" THEN SYSTEM 9
             LET Engines(Engines_Count).type = Engines_GetType%(ini_type$)
+            
+            SELECT CASE LCASE$(shared_tier$)
+                CASE "ultra": LET Engines(Engines_Count).tier = TIER_ULTRA
+                CASE "fast": LET Engines(Engines_Count).tier = TIER_FAST
+                CASE "retro": LET Engines(Engines_Count).tier = TIER_RETRO
+                CASE ELSE
+                    'TODO: none of the above?
+                    SYSTEM 99
+            END SELECT
+            
+            LET Engines(Engines_Count).rank = VAL(shared_rank$)
+            
+            IF ini_exe$ = "" THEN LET ini_exe$ = shared_exe$
+            IF ini_exe$ = "" THEN SYSTEM 9
             LET Engines(Engines_Count).exe = ini_exe$
             
             'deconstruct the version string into component numbers
+            IF ini_ver$ = "" THEN LET ini_ver$ = shared_ver$
             CALL STR2VER(ini_ver$, Engines(Engines_Count).ver)
             
-            LET Engines(Engines_Count).bit = ini_bit
+            IF ini_bit$ = "" THEN LET ini_bit$ = shared_bit$
+            IF ini_bit$ = "" THEN SYSTEM 9
+            SELECT CASE ini_bit$
+                CASE "64"
+                    LET Engines(Engines_Count).bit = 64
+                    'if this is a 32-bit machine (or the `/32` switch was
+                    'used) skip it entirely, it wouldn't run on this CPU
+                    IF CPU_BIT = 32 THEN GOTO NextEngine
+                    
+                CASE ELSE
+                    'TODO: error for invalid choice?
+                    LET Engines(Engines_Count).bit = 32
+                    
+            END SELECT
+            
+            IF ini_vid$ = "" THEN LET ini_vid$ = shared_vid$
+            IF ini_vid$ = "" THEN SYSTEM 9
             LET Engines(Engines_Count).vid = VAL(ini_vid$)
             
+            IF ini_kin$ = "" THEN LET ini_kin$ = shared_kin$
+            IF ini_kin$ = "" THEN SYSTEM 9
             SELECT CASE UCASE$(ini_kin$)
                 CASE "X": LET Engines(Engines_Count).kin = KIN_X
                 CASE "V": LET Engines(Engines_Count).kin = KIN_V
@@ -310,10 +339,17 @@ SUB Engines_Enumerate()
                     LET Engines(Engines_Count).kin = 0
             END SELECT
             
+            IF ini_cfg$ = "" THEN LET ini_cfg$ = shared_cfg$
+            IF ini_cfg$ = "" THEN SYSTEM 9
             LET Engines(Engines_Count).cfg = ini_cfg$
+            IF ini_save$ = "" THEN LET ini_save$ = shared_save$
+            IF ini_save$ = "" THEN SYSTEM 9
             LET Engines(Engines_Count).save = ini_save$
+            IF ini_tags$ = "" THEN LET ini_tags$ = shared_tags$
             LET Engines(Engines_Count).tags = ini_tags$
+            IF ini_auto$ = "" THEN LET ini_auto$ = shared_auto$
             LET Engines(Engines_Count).auto = ini_auto$
+            IF ini_cmd$ = "" THEN LET ini_cmd$ = shared_cmd$
             LET Engines(Engines_Count).cmd = ini_cmd$
             
             NextEngine:

@@ -42,7 +42,8 @@ readINI:
     DIM ini_blurb$
     LET ini_blurb$ = ReadIniUTF8$(path$, "shared", "blurb")
     
-    'a place to store shared properties for all game definitions
+    'a place to store shared properties for all
+    'game definitions within this INI file
     DIM shared_ini AS Game
     
     'is there a shared IWAD definition?
