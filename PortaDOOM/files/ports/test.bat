@@ -67,7 +67,7 @@ ECHO:
 ECHO    [P] GZDoom v3.2               [Q] GZDoom v3.3
 ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
 ECHO    [T] GZDoom v3.6               [U] GZDoom v3.7
-ECHO 	[V] GZDoom v4.1               [W] GZDoom v4.2
+ECHO    [V] GZDoom v4.1               [W] GZDoom v4.2
 ECHO    [X] GZDoom v4.3               [Y] GZDoom v4.4
 ECHO:
 
