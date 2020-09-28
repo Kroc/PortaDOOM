@@ -1,11 +1,11 @@
 'INI Manager
-'Fellippe Heitor, 2017 - fellippe@qb64.org - @fellippeheitor
+'Fellippe Heitor, 2017-2019 - fellippe@qb64.org - @fellippeheitor
 
 'This file isn't required to be at the top of your programs,
 'unless you intend to use OPTION _EXPLICIT
 
 'Global variables declaration
-DIM currentIniFileName$
+DIM currentIniFileName$, LoadedFiles$
 DIM currentIniFileLOF AS _UNSIGNED LONG
 DIM IniWholeFile$
 DIM IniSectionData$
@@ -17,4 +17,5 @@ DIM IniLF$
 DIM IniDisableAutoCommit
 DIM IniCODE
 DIM IniAllowBasicComments
+DIM IniForceReload
 

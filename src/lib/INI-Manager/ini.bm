@@ -78,8 +78,8 @@ SUB IniDeleteKey (file$, __section$, __key$)
     SHARED IniLF$, IniWholeFile$, IniSectionData$
     SHARED IniLastSection$, IniLastKey$, IniNewFile$
 
-    DIM tempValue$, fileNum AS INTEGER
-    DIM section$, key$, thisLine$
+    DIM tempValue$
+    DIM section$, key$
     DIM FoundLF AS _UNSIGNED LONG
 
     IniCODE = 0
@@ -128,6 +128,7 @@ END SUB
 SUB IniCommit
     SHARED currentIniFileName$, IniWholeFile$, currentIniFileLOF AS _UNSIGNED LONG
     SHARED IniNewFile$, IniDisableAutoCommit, IniCODE
+    SHARED LoadedFiles$
 
     IF currentIniFileName$ = "" THEN IniCODE = 18: EXIT SUB
 
@@ -135,8 +136,17 @@ SUB IniCommit
     currentIniFileLOF = LEN(IniNewFile$)
 
     IF NOT IniDisableAutoCommit THEN
-        DIM fileNum AS INTEGER
-        fileNum = FREEFILE
+        DIM fileNum AS INTEGER, findFile AS INTEGER
+
+        'search LoadedFiles$, so we use the same file handle every time
+        findFile = INSTR(LoadedFiles$, "@" + currentIniFileName$ + "@")
+        IF findFile = 0 THEN
+            fileNum = FREEFILE
+            LoadedFiles$ = LoadedFiles$ + "@" + MKI$(fileNum) + "@" + currentIniFileName$ + "@"
+        ELSE
+            fileNum = CVI(MID$(LoadedFiles$, findFile - 2, 2))
+            CLOSE fileNum
+        END IF
 
         OPEN currentIniFileName$ FOR BINARY AS #fileNum
 
@@ -147,7 +157,8 @@ SUB IniCommit
         END IF
 
         PUT #fileNum, 1, IniNewFile$
-        CLOSE #fileNum
+        CLOSE #fileNum 'flush
+        OPEN currentIniFileName$ FOR BINARY AS #fileNum 'keep open
     END IF
 END SUB
 
@@ -162,6 +173,7 @@ FUNCTION IniGetSection$ (__section$)
 
     DIM section$, foundSection AS _UNSIGNED LONG, endSection AS _UNSIGNED LONG
     DIM i AS _UNSIGNED LONG, Bracket1 AS _UNSIGNED LONG, sectionStart AS _UNSIGNED LONG
+    DIM inQuote AS _BYTE
 
     section$ = IniFormatSection$(__section$)
     IF IniCODE THEN EXIT FUNCTION
@@ -196,10 +208,21 @@ FUNCTION IniGetSection$ (__section$)
             IF foundSection > 0 THEN
                 'we found it; time to identify where this section ends
                 '(either another [section] or the end of the file
-                Bracket1 = INSTR(sectionStart + 1, IniWholeFile$, "[")
+                Bracket1 = sectionStart
+                checkAgain:
+                Bracket1 = INSTR(Bracket1 + 1, IniWholeFile$, "[")
+
                 IF Bracket1 > 0 THEN
+                    'found a bracket; check if it's inside quotes
+                    inQuote = 0
+                    FOR i = 1 TO Bracket1 - 1
+                        IF ASC(IniWholeFile$, i) = 34 THEN inQuote = NOT inQuote
+                    NEXT
+                    IF inQuote THEN GOTO checkAgain
+
                     FOR i = Bracket1 - 1 TO 1 STEP -1
                         IF ASC(IniWholeFile$, i) = 10 THEN endSection = i + 1 - LEN(IniLF$): EXIT FOR
+                        IF ASC(IniWholeFile$, i) = 61 THEN GOTO checkAgain 'bracket is inside a key's value
                         IF i <= foundSection THEN EXIT FOR
                     NEXT
                     IniGetSection$ = MID$(IniWholeFile$, foundSection, endSection - foundSection)
@@ -378,7 +401,7 @@ SUB WriteSetting (file$, __section$, __key$, __value$)
     SHARED IniLF$, IniWholeFile$, IniSectionData$
     SHARED IniLastSection$, IniLastKey$, IniNewFile$
 
-    DIM tempValue$, section$, key$, value$, thisLine$
+    DIM tempValue$, section$, key$, value$
 
     IniCODE = 0
 
@@ -450,9 +473,9 @@ SUB WriteSetting (file$, __section$, __key$, __value$)
         IniCODE = 0
         IF LCASE$(IniLastSection$) = LCASE$(section$) THEN
             'find this section$ in the current ini file;
-            DIM Bracket1 AS _UNSIGNED LONG, Bracket2 AS _UNSIGNED LONG, foundSection$
+            DIM Bracket1 AS _UNSIGNED LONG
             DIM beginSection AS _UNSIGNED LONG, endSection AS _UNSIGNED LONG
-            DIM currentPos AS _UNSIGNED LONG, i AS _UNSIGNED LONG
+            DIM i AS _UNSIGNED LONG
 
             beginSection = 0
             endSection = 0
@@ -531,17 +554,55 @@ SUB WriteSetting (file$, __section$, __key$, __value$)
     END IF
 END SUB
 
+SUB IniSetForceReload (state AS _BYTE)
+    SHARED IniForceReload
+    IF state THEN
+        IniForceReload = -1
+    ELSE
+        IniForceReload = 0
+    END IF
+END SUB
+
+SUB IniClose
+    SHARED IniDisableAutoCommit, currentIniFileName$
+    SHARED LoadedFiles$
+    DIM findFile AS INTEGER, fileNum AS INTEGER
+
+    IF currentIniFileName$ = "" THEN EXIT SUB
+
+    'search LoadedFiles$, so we use the same file handle every time
+    findFile = INSTR(LoadedFiles$, "@" + currentIniFileName$ + "@")
+    IF findFile = 0 THEN
+        'not open; nothing to close
+        EXIT SUB
+    ELSE
+        fileNum = CVI(MID$(LoadedFiles$, findFile - 2, 2))
+        CLOSE fileNum
+    END IF
+
+    IniDisableAutoCommit = 0
+    IniCommit
+
+    currentIniFileName$ = ""
+END SUB
+
 SUB IniLoad (file$)
     SHARED IniCODE, currentIniFileName$, IniLF$, IniWholeFile$
     SHARED currentIniFileLOF AS _UNSIGNED LONG
-
-    DIM fileNum AS INTEGER
+    SHARED IniForceReload
+    SHARED LoadedFiles$
+    DIM fileNum AS INTEGER, findFile AS INTEGER
 
     'Error messages are returned with IniCODE
-    'Error descriptions can be fetched with function IniINFO$(IniCODE)
+    'Error descriptions can be fetched with function IniINFO$
     IniCODE = 0
 
     IF file$ <> "" AND currentIniFileName$ <> file$ THEN currentIniFileName$ = ""
+
+    IF IniForceReload AND LEN(currentIniFileName$) > 0 THEN
+        file$ = currentIniFileName$
+        currentIniFileName$ = ""
+    END IF
 
     'Passing an empty file$ is allowed if user already
     'passed a valid file in this session.
@@ -550,18 +611,24 @@ SUB IniLoad (file$)
         IF _FILEEXISTS(file$) THEN
             currentIniFileName$ = file$
 
+            'add to LoadedFiles$, so we use the same file handle every time
+            findFile = INSTR(LoadedFiles$, "@" + file$ + "@")
+            IF findFile = 0 THEN
+                fileNum = FREEFILE
+                LoadedFiles$ = LoadedFiles$ + "@" + MKI$(fileNum) + "@" + file$ + "@"
+            ELSE
+                fileNum = CVI(MID$(LoadedFiles$, findFile - 2, 2))
+            END IF
+
             'Load file into memory
-            fileNum = FREEFILE
+            CLOSE fileNum
             OPEN currentIniFileName$ FOR BINARY AS #fileNum
             currentIniFileLOF = LOF(fileNum)
             IniWholeFile$ = SPACE$(currentIniFileLOF)
             GET #fileNum, 1, IniWholeFile$
-            CLOSE #fileNum
 
             'Check if this ini file uses CRLF or LF
             IF INSTR(IniWholeFile$, CHR$(13)) THEN IniLF$ = CHR$(13) + CHR$(10) ELSE IniLF$ = CHR$(10)
-
-            'IF RIGHT$(IniWholeFile$, 2) <> IniLF$ THEN IniWholeFile$ = IniWholeFile$ + IniLF$
         ELSE
             IniFileNotFound:
             IniCODE = 1
@@ -602,12 +669,17 @@ FUNCTION IniNextKey$
 
     tempKey$ = LTRIM$(RTRIM$(MID$(IniSectionData$ + tempLF$, position + 1, Equal - position - 1)))
 
+    IF INSTR(tempKey$, CHR$(10)) > 0 THEN
+        position = position + INSTR(tempKey$, CHR$(10)) + 1
+        tempKey$ = MID$(tempKey$, INSTR(tempKey$, CHR$(10)) + 1)
+    END IF
+
     DO WHILE LEFT$(tempKey$, LEN(IniLF$)) = IniLF$
         tempKey$ = MID$(tempKey$, LEN(IniLF$) + 1)
         position = position + LEN(IniLF$)
     LOOP
 
-    position = INSTR(position, IniSectionData$ + tempLF$, IniLF$) + 1
+    position = INSTR(position + 1, IniSectionData$ + tempLF$, IniLF$)
 
     IF LEFT$(tempKey$, 1) = ";" OR LEFT$(tempKey$, 1) = "'" OR INSTR(tempKey$, "[") > 0 OR INSTR(tempKey$, "]") > 0 OR INSTR(tempKey$, "=") > 0 THEN
         GOTO FindKey
@@ -627,7 +699,7 @@ FUNCTION IniNextSection$ (file$)
 
     IniCODE = 0
 
-    DIM section$, foundSection AS _UNSIGNED LONG, endSection AS _UNSIGNED LONG
+    DIM foundSection AS _UNSIGNED LONG, endSection AS _UNSIGNED LONG
     DIM i AS _UNSIGNED LONG, Bracket1 AS _UNSIGNED LONG, Bracket2 AS _UNSIGNED LONG
 
     FindNext:

@@ -1,5 +1,5 @@
 'iniman - command line utility to edit/view .ini files
-'based on INI Manager - Fellippe Heitor, 2017
+'based on INI Manager - Fellippe Heitor, 2017-2019
 'fellippe@qb64.org - @FellippeHeitor
 OPTION _EXPLICIT
 
@@ -12,16 +12,13 @@ IF _COMMANDCOUNT = 0 OR COMMAND$(1) = "/?" OR COMMAND$(1) = "-?" OR LCASE$(COMMA
     Usage
 END IF
 
-IF NOT _FILEEXISTS(COMMAND$(1)) THEN
-    PRINT "File not found."
-    SYSTEM
-END IF
-
 DIM file$, a$
 file$ = COMMAND$(1)
 
 SELECT CASE LCASE$(COMMAND$(2))
     CASE "", "-read", "read", "-r", "r"
+        checkFile
+
         IF _COMMANDCOUNT = 4 THEN
             PRINT ReadSetting(file$, COMMAND$(3), COMMAND$(4))
         ELSE
@@ -35,6 +32,7 @@ SELECT CASE LCASE$(COMMAND$(2))
             LOOP
         END IF
     CASE "-write", "write", "-w", "w"
+        IF LCASE$(RIGHT$(file$, 4)) <> ".ini" THEN file$ = file$ + ".ini"
         IF _COMMANDCOUNT >= 4 THEN
             WriteSetting file$, COMMAND$(3), COMMAND$(4), COMMAND$(5)
             PRINT ReadSetting(file$, COMMAND$(3), COMMAND$(4))
@@ -42,6 +40,8 @@ SELECT CASE LCASE$(COMMAND$(2))
             Usage
         END IF
     CASE "-delete", "delete", "-d", "d"
+        checkFile
+
         IF _COMMANDCOUNT = 3 THEN
             IniDeleteSection file$, COMMAND$(3)
         ELSEIF _COMMANDCOUNT = 4 THEN
@@ -50,18 +50,24 @@ SELECT CASE LCASE$(COMMAND$(2))
             Usage
         END IF
     CASE "-sort", "sort", "-s", "s"
+        checkFile
+
         IF _COMMANDCOUNT = 3 THEN
             IniSortSection file$, COMMAND$(3)
         ELSE
             Usage
         END IF
     CASE "-move", "move", "-m", "m"
+        checkFile
+
         IF _COMMANDCOUNT = 5 THEN
             IniMoveKey file$, COMMAND$(3), COMMAND$(4), COMMAND$(5)
         ELSE
             Usage
         END IF
     CASE "-sections", "sections", "-se", "se"
+        checkFile
+
         IF _COMMANDCOUNT = 2 THEN
             DO
                 PRINT IniNextSection$(file$)
@@ -79,7 +85,7 @@ SYSTEM IniCODE
 
 SUB Usage
     PRINT "iniman - INI manager"
-    PRINT "by Fellippe Heitor, 2017"
+    PRINT "by Fellippe Heitor, 2017-2019"
     PRINT
     PRINT "Usage:"
     PRINT
@@ -92,6 +98,18 @@ SUB Usage
     PRINT
     PRINT "If a section or key name contains spaces, enclose it in quotation marks."
     SYSTEM
+END SUB
+
+SUB checkFile
+    SHARED file$
+    IF NOT _FILEEXISTS(file$) THEN
+        IF NOT _FILEEXISTS(file$ + ".ini") THEN
+            PRINT "File not found."
+            SYSTEM
+        ELSE
+            file$ = file$ + ".ini"
+        END IF
+    END IF
 END SUB
 
 '$include:'ini.bm'

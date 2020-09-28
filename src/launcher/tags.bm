@@ -1,9 +1,16 @@
 'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
 'tags.bm : functions for managing engine/game feature tags
 
+'   Tags_Clear
 '   Tags_Add(tagList$)
 '   Tags_Find%(tag$)        -> INTEGER
 '   Tags_Split$(tagList$)   -> STRING
+
+' remove all tags
+'=============================================================================
+SUB Tags_Clear
+    REDIM Tags(0) AS STRING
+END SUB
 
 'process a comma-separated list of tags, adding them to the known tag list
 '=============================================================================

@@ -14,6 +14,7 @@ SUB Engines_Enumerate()
     DIM i AS _UNSIGNED LONG
     
     LET Engines_Count = 0
+    CALL Tags_Clear
     
     'create a directory list in a file, containing only sub-folder names
     CHDIR DIR_EXE$ + DIR_PORTS$
@@ -139,7 +140,7 @@ SUB Engines_Enumerate()
         LET ini_index% = 1
         DO
             DIM ini_id$
-            LET ini_id$ = ReadIniUTF8$("", "engines", STRINT$(ini_index%))
+            LET ini_id$ = ReadIniUTF8$(ini_path$, "engines", STRINT$(ini_index%))
             IF  ini_id$ = "" THEN
                 'if this is still the first check,
                 'then no engines are defined!
@@ -201,7 +202,7 @@ SUB Engines_Enumerate()
             'get the engine title. since this is required this will also
             'serve to check if the section exists as it should
             DIM ini_title$
-            LET ini_title$ = ReadIniUTF8$("", ini_section$, "title")
+            LET ini_title$ = ReadIniUTF8$(ini_path$, ini_section$, "title")
             IF  ini_title$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Title field (or engine section) missing, " _
@@ -226,7 +227,7 @@ SUB Engines_Enumerate()
             END IF
             
             DIM ini_desc$
-            LET ini_desc$ = ReadIniUTF8$("", ini_section$, "desc")
+            LET ini_desc$ = ReadIniUTF8$(ini_path$, ini_section$, "desc")
             IF  ini_desc$ = "" THEN
                 CALL ErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " Description field missing in INI file:"
@@ -247,28 +248,28 @@ SUB Engines_Enumerate()
             END IF
             
             DIM ini_type$
-            LET ini_type$ = ReadIniUTF8$("", ini_section$, "type")
+            LET ini_type$ = ReadIniUTF8$(ini_path$, ini_section$, "type")
             'TODO:allow local tier, rank?
             DIM ini_exe$
-            LET ini_exe$ = ReadIniUTF8$("", ini_section$, "exe")
+            LET ini_exe$ = ReadIniUTF8$(ini_path$, ini_section$, "exe")
             DIM ini_ver$
-            LET ini_ver$ = ReadIniUTF8$("", ini_section$, "ver")
+            LET ini_ver$ = ReadIniUTF8$(ini_path$, ini_section$, "ver")
             DIM ini_bit$
-            LET ini_bit$ = ReadIniUTF8$("", ini_section$, "bit")
+            LET ini_bit$ = ReadIniUTF8$(ini_path$, ini_section$, "bit")
             DIM ini_vid$
-            LET ini_vid$ = ReadIniUTF8$("", ini_section$, "vid")
+            LET ini_vid$ = ReadIniUTF8$(ini_path$, ini_section$, "vid")
             DIM ini_kin$
-            LET ini_kin$ = ReadIniUTF8$("", ini_section$, "kin")
+            LET ini_kin$ = ReadIniUTF8$(ini_path$, ini_section$, "kin")
             DIM ini_cfg$
-            LET ini_cfg$ = ReadIniUTF8$("", ini_section$, "cfg")
+            LET ini_cfg$ = ReadIniUTF8$(ini_path$, ini_section$, "cfg")
             DIM ini_save$
-            LET ini_save$ = ReadIniUTF8$("", ini_section$, "save")
+            LET ini_save$ = ReadIniUTF8$(ini_path$, ini_section$, "save")
             DIM ini_tags$
-            LET ini_tags$ = ReadIniUTF8$("", ini_section$, "tags")
+            LET ini_tags$ = ReadIniUTF8$(ini_path$, ini_section$, "tags")
             DIM ini_auto$
-            LET ini_auto$ = ReadIniUTF8$("", ini_section$, "auto")
+            LET ini_auto$ = ReadIniUTF8$(ini_path$, ini_section$, "auto")
             DIM ini_cmd$
-            LET ini_cmd$ = ReadIniUTF8$("", ini_section$, "cmd")
+            LET ini_cmd$ = ReadIniUTF8$(ini_path$, ini_section$, "cmd")
             
             '-------------------------------------------------------------------
             'process the tag list
@@ -479,6 +480,13 @@ SUB Engines_Enumerate()
     
     ''PRINT "SORT COUNT: " + STRINT$(sortCount%)
     ''PRINT ""
+    ''PRINT "Sorted Engine List:"
+    ''PRINT "-------------------"
+    ''FOR i = 1 TO Engines_Count
+    ''    PRINT "- " + Engines(i).id, VER2STR$(Engines(i).ver), STR$(VER2INT&(Engines(i).ver))
+    ''    IF i MOD 24 = 0 THEN SLEEP
+    ''NEXT i
+    ''PRINT ""
     ''SLEEP
     
     '-------------------------------------------------------------------------
@@ -611,8 +619,7 @@ SUB Engines_Filter()
     ''PRINT "Candidate Engines:"
     ''PRINT "------------------"
     ''FOR i = Engines_ListCount TO 1 STEP -1
-    ''    PRINT "- " + Engines(Engines_List(i)).id + ": " _
-    ''        + Engines(Engines_List(i)).title, STRINT$(Engines(Engines_List(i)).type)
+    ''    PRINT "- " + Engines(Engines_List(i)).id,, Engines(Engines_List(i)).tier
     ''    IF i MOD 24 = 0 THEN SLEEP
     ''NEXT i
     ''PRINT ""
