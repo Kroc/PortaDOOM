@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
 'iwads.bi : definitions for IWADs
 
 'the DOOM engine was enhanced over time. not all modern source ports support

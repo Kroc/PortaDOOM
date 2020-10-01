@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2019, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
 
 'this code adapted from the example at:
 'http://www.qb64.org/wiki/Windows_Registry_Access
