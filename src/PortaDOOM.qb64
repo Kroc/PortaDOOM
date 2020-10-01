@@ -315,16 +315,13 @@ DO
         DIM wheel%: LET wheel% = _MOUSEWHEEL
         IF wheel% <> 0 THEN
             'scroll up or  down?
-            IF wheel% = 1 THEN CALL scrollDown ELSE CALL scrollUp
+            IF wheel% > 0 THEN CALL scrollDown ELSE CALL scrollUp
         END IF
 
         'right-click?
         IF _MOUSEBUTTON(2) = TRUE THEN
             CALL nextPage
         END IF
-
-        'clear the mouse buffer
-        DO WHILE _MOUSEINPUT: LOOP
     LOOP
 
     DIM key$: LET key$ = UCASE$(INKEY$)
