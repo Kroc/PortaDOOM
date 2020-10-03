@@ -21,7 +21,7 @@
 '   [13]: execute scripts / additional commands
 '   [14]: launch!
 
-CALL ui_cls
+CALL UI_ClearScreen
 
 'NOTE: many doom engines save their config files in the 'current directory',
 'which is typically expected to be that of the executable. however, we want

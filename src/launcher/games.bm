@@ -33,6 +33,9 @@ SUB Games_EnumerateINI (ini_file$)
     
 readINI:
     '-------------------------------------------------------------------------
+    LET ui_statusbar_left$(1) = "parsing games..."
+    CALL UIStatusbar_Update
+    
     'do additional file searching from the INI file's path
     LET DIR_INI$ = Paths_AddSlash$(Paths_GetPath$(path$))
 
@@ -85,6 +88,8 @@ readINI:
             EXIT FOR
         END IF
         
+        LET ui_statusbar_right$(1) = game_id$
+        
         'read in the game details:
         DIM ini_section$
         LET ini_section$ = "games." + game_id$
@@ -93,7 +98,7 @@ readINI:
         'as a check to see if the section exists
         DIM ini_iwad$
         LET ini_iwad$ = ReadIniUTF8$(path$, ini_section$, "iwad")
-        IF ini_iwad$ = "" AND shared_ini.iwad = 0 THEN
+        IF  ini_iwad$ = "" AND shared_ini.iwad = 0 THEN
             CALL ErrorScreen("ERROR: Invalid INI Definition")
             PRINT " IWAD field (or game section) missing, " _
                 + "in INI file:"
@@ -125,6 +130,14 @@ readINI:
         'if missing, we default to the overall game title
         DIM ini_name$
         LET ini_name$ = ReadIniUTF8$(path$, ini_section$, "name")
+        
+        IF ini_name$ = "" THEN 
+            LET ui_statusbar_left$(2) = ini_title$
+        ELSE
+            LET ui_statusbar_left$(2) = ini_name$
+        END IF
+        CALL UIStatusbar_Update
+        
         'the choice text. this is used to be able to provide
         'a selection screen with the available choices
         DIM ini_desc$
@@ -206,6 +219,10 @@ readINI:
         )
     NEXT
     
+    LET ui_statusbar_left$(1) = ""
+    LET ui_statusbar_left$(2) = ""
+    LET ui_statusbar_right$(1) = ""
+    CALL UIStatusbar_Update
 END SUB
 
 '=============================================================================
@@ -214,7 +231,7 @@ SUB Games_Add ( _
     exec$, cmd$, deh$, bex$, use$, tags$, bit, vid, warp$, skill$, _
     skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
-)
+)   
     'increase the number of games entries
     LET Games_Count = Games_Count + 1
     REDIM _PRESERVE Games(1 TO Games_Count) AS Game

@@ -83,7 +83,7 @@ DIM SHARED DIR_INI$
 '=============================================================================
 'MAIN:
 '=============================================================================
-'$INCLUDE:'launcher\ui\init.bi'
+'$INCLUDE:'launcher\ui\ui_init.bi'
 
 'process command line / enumerate games:
 '-----------------------------------------------------------------------------
@@ -105,7 +105,9 @@ THEN
     GOTO select_engine
 END IF
 
-'$INCLUDE:'launcher\ui\select_game.bi'
+'$INCLUDE:'launcher\ui\ui_select_game.bi'
+
+'$INCLUDE:'launcher\ui\ui_select_previous.bi'
 
 select_engine:
 '-----------------------------------------------------------------------------
@@ -131,7 +133,7 @@ END IF
 'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
-'$INCLUDE:'launcher\ui\select_engine.bi'
+'$INCLUDE:'launcher\ui\ui_select_engine.bi'
 
 launch:
 '-----------------------------------------------------------------------------

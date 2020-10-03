@@ -2,12 +2,16 @@
 
 'present engine selection UI:
 
+CALL UIStatusbar_Clear
+CALL UIMenubar_Clear
+
 IF Games_Selected.name <> "" THEN
-    LET ui_statusbar_left$(1) = Games_Selected.name
+    LET ui_menubar_left$(1) = Games_Selected.name
 ELSEIF Games_Selected.title <> "" THEN
-    LET ui_statusbar_left$(1) = Games_Selected.title
+    LET ui_menubar_left$(1) = Games_Selected.title
 END IF
-CALL ui_cls
+
+CALL UI_ClearScreen
 
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
@@ -89,6 +93,11 @@ DO
     SELECT CASE UCASE$(key$)
         CASE CHR$(INKEY_ESC)
             SYSTEM 0
+            
+        CASE CHR$(INKEY_BKSPC)
+            'back out of engine selection, and return to game selection
+            'TODO: this should not be possible, if there is only one game
+            GOTO select_game
             
         CASE "U"
             IF Engines_SelectedUltra = 0 THEN BEEP: _CONTINUE

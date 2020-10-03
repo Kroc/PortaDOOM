@@ -10,6 +10,9 @@
 'walk the ports folder and identify all engines present
 '=============================================================================
 SUB Engines_Enumerate()
+    LET ui_statusbar_left$(1) = "Parsing engines:"
+    CALL UIStatusbar_Update
+
     'loop counter
     DIM i AS _UNSIGNED LONG
     
@@ -226,6 +229,10 @@ SUB Engines_Enumerate()
                 CALL ErrorExit: SYSTEM 1
             END IF
             
+            LET ui_statusbar_right$(1) = ini_id$
+            LET ui_statusbar_left$(2) = ini_title$
+            CALL UIStatusbar_Update
+            
             DIM ini_desc$
             LET ini_desc$ = ReadIniUTF8$(ini_path$, ini_section$, "desc")
             IF  ini_desc$ = "" THEN
@@ -359,6 +366,11 @@ SUB Engines_Enumerate()
     NextFolder:
     LOOP
     GOSUB closeFile
+    
+    LET ui_statusbar_right$(1) = ""
+    LET ui_statusbar_left$(2) = ""
+    LET ui_statusbar_left$(1) = "Prioritizing engines..."
+    CALL UIStatusbar_Update
     
     'prioritise engine list:
     '-------------------------------------------------------------------------
@@ -519,6 +531,9 @@ SUB Engines_Enumerate()
             LET tag$ = Tags_Split$("")
         LOOP
     NEXT i
+    
+    LET ui_statusbar_left$(1) = ""
+    CALL UIStatusbar_Update
     EXIT SUB
     
 closeFile:

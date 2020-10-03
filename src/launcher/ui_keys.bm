@@ -16,19 +16,19 @@ END SUB
 SUB keys_Show()
     LET ui_menubar_right$(1) = "ESC:QUIT"
     LET ui_menubar_right$(2) = "BKSP:BACK"
-    CALL ui_statusbar_update
+    CALL UIMenubar_Update
 END SUB
 
 '=============================================================================
 SUB keys_Hide()
     LET ui_menubar_right$(1) = ""
     LET ui_menubar_right$(2) = ""
-    CALL ui_statusbar_update
+    CALL UIMenubar_Update
 END SUB
 
 '=============================================================================
 SUB keys_Off()
     KEY(ONKEY_ESC) OFF
     KEY(ONKEY_BKSPC) OFF
-    CALL ui_statusbar_update
+    CALL UIMenubar_Update
 END SUB

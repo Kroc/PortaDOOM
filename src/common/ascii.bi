@@ -185,6 +185,9 @@ CONST ASC_BOX_VL = &HB4 '......vertical line, with left-hand horizontal join
 CONST ASC_BOX_HB = &HC2 '......horizontal line, with bottom vertical join
 CONST ASC_BOX_HT = &HC1 '......horizontal line, with top vertical join
 
+CONST ASC_BOX_V_DBL_HR = &HC6 'vert. line, with right-hand horz. double-line
+CONST ASC_BOX_V_DBL_HL = &HB5 'vert. line, with left-hand horz. double-line
+
 CONST ASC_BOX_DBL_H = &HCD '...horizontal double-line
 CONST ASC_BOX_DBL_V = &HBA '...vertical double-line
 CONST ASC_BOX_DBL_TL = &HC9 '..top-left double-line corner

@@ -1,12 +1,15 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
 
 'present game selection UI:
-'walk through the list of games
+
+CALL UIStatusbar_Clear
+CALL UIMenubar_Clear
 
 IF Games(1).title <> "" THEN
-    LET ui_statusbar_left$(1) = Games(1).title
+    LET ui_menubar_left$(1) = Games(1).title
 END IF
-CALL ui_cls
+
+CALL UI_ClearScreen
 
 IF Games(1).blurb <> "" THEN
     COLOR WHITE
@@ -18,11 +21,13 @@ COLOR UI_FORECOLOR
 PRINT " Select game choice by pressing indicated number key:"
 PRINT ""
 
+'walk through the list of games
+
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";
     IF Games(i).name <> "" THEN
         COLOR WHITE
-        PRINT TRUNCATE$(Games(i).name, UI_SCREEN_WIDTH - 5 - 2);
+        PRINT TRUNCATE$(Games(i).name, UI_SCREEN_WIDTH - 5 - 2)
     END IF
     IF Games(i).desc <> "" THEN
         COLOR LIME
