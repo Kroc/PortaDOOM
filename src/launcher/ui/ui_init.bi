@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'init.bi : define and initialise the user-interface
+'ui_init.bi : define and initialise the user-interface
 
 'the default size (in char cols/rows) of the screen
 CONST UI_SCREEN_MODE = 0 '...text mode
@@ -33,8 +33,8 @@ SCREEN UI_SCREEN_MODE, , 0, 0
 COLOR UI_FORECOLOR, UI_BACKCOLOR
 CALL UI_ClearScreen: _SCREENSHOW
 
-CALL keys_Init
-CALL keys_Hide
+CALL UIKeys_Init
+CALL UIKeys_Hide
 
 '-----------------------------------------------------------------------------
 

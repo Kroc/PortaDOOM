@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'select_previous.bi: select last-used engine, or choose another
+'ui_select_previous.bi : select last-used engine, or choose another
 
 CALL UIStatusbar_Clear
 LET ui_statusbar_right$(1) = "ENTER:play"

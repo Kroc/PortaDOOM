@@ -1,6 +1,21 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'app_select_game.bi : present game selection UI
 
-'present game selection UI:
+select_game:
+'-----------------------------------------------------------------------------
+'if only one game is defined (or `/AUTO` is defined),
+'we don't need to offer a choice
+IF CMD_GAME$ <> "" THEN
+    'TODO: all sorts of errors
+    CALL Games_Select(VAL(CMD_GAME$))
+    GOTO select_engine
+    
+ELSEIF Games_Count = 1 _
+    OR CMD_AUTO` = TRUE _
+THEN
+    CALL Games_Select(1)
+    GOTO select_engine
+END IF
 
 CALL UIStatusbar_Clear
 CALL UIMenubar_Clear
@@ -22,7 +37,7 @@ PRINT " Select game choice by pressing indicated number key:"
 PRINT ""
 
 'walk through the list of games
-
+'-----------------------------------------------------------------------------
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";
     IF Games(i).name <> "" THEN

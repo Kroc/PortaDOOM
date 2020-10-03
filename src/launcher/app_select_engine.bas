@@ -1,7 +1,31 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'app_select_engine.bi : present engine selection UI
 
-'present engine selection UI:
+select_engine:
+'-----------------------------------------------------------------------------
+'search through the "ports" folder for game engines and read in their details.
+'this also builds a set of look-up tables for cross-referencing tags with
+'games and engines so that we can filter out incompatible engines
+CALL Engines_Enumerate
 
+'filter the known engines according to the game
+'requirements and the user's preferences
+CALL Engines_Filter
+
+'if only one engine remains (or `/AUTO` is defined),
+'no choice needed
+IF Engines_ListCount = 1 _
+OR CMD_AUTO` = TRUE _
+THEN
+    CALL Engines_Select(Engines_List(1))
+    GOTO launch
+END IF
+
+'try and pick out the best engine for
+'the ultra / fast / retro tier categories
+CALL Engines_SelectTiers
+
+'-----------------------------------------------------------------------------
 CALL UIStatusbar_Clear
 CALL UIMenubar_Clear
 

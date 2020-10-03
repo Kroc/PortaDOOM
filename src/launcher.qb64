@@ -30,8 +30,8 @@ DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
 '$INCLUDE:'launcher\ver.bi'
-'$INCLUDE:'launcher\ui_keys.bi'
-'$INCLUDE:'launcher\ui_status.bi'
+'$INCLUDE:'launcher\ui\ui_keys.bi'
+'$INCLUDE:'launcher\ui\ui_status.bi'
 '$INCLUDE:'launcher\tags.bi'
 '$INCLUDE:'launcher\games.bi'
 '$INCLUDE:'launcher\engines.bi'
@@ -85,72 +85,24 @@ DIM SHARED DIR_INI$
 '=============================================================================
 '$INCLUDE:'launcher\ui\ui_init.bi'
 
-'process command line / enumerate games:
-'-----------------------------------------------------------------------------
-'$INCLUDE:'launcher\cmd.bm'
-
-select_game:
-'-----------------------------------------------------------------------------
-'if only one game is defined (or `/AUTO` is defined),
-'we don't need to offer a choice
-IF CMD_GAME$ <> "" THEN
-    'TODO: all sorts of errors
-    CALL Games_Select(VAL(CMD_GAME$))
-    GOTO select_engine
-    
-ELSEIF Games_Count = 1 _
-    OR CMD_AUTO` = TRUE _
-THEN
-    CALL Games_Select(1)
-    GOTO select_engine
-END IF
-
-'$INCLUDE:'launcher\ui\ui_select_game.bi'
-
-'$INCLUDE:'launcher\ui\ui_select_previous.bi'
-
-select_engine:
-'-----------------------------------------------------------------------------
-'search through the "ports" folder for game engines and read in their details.
-'this also builds a set of look-up tables for cross-referencing tags with
-'games and engines so that we can filter out incompatible engines
-CALL Engines_Enumerate
-
-'filter the known engines according to the game
-'requirements and the user's preferences
-CALL Engines_Filter
-
-'if only one engine remains (or `/AUTO` is defined),
-'no choice needed
-IF Engines_ListCount = 1 _
-OR CMD_AUTO` = TRUE _
-THEN
-    CALL Engines_Select(Engines_List(1))
-    GOTO launch
-END IF
-
-'try and pick out the best engine for
-'the ultra / fast / retro tier categories
-CALL Engines_SelectTiers
-
-'$INCLUDE:'launcher\ui\ui_select_engine.bi'
-
-launch:
-'-----------------------------------------------------------------------------
-'$INCLUDE:'launcher\launch.bm'
+'$INCLUDE:'launcher\app_cmd.bas'
+'$INCLUDE:'launcher\app_select_game.bas'
+''$INCLUDE:'launcher\app_select_previous.bas'
+'$INCLUDE:'launcher\app_select_engine.bas'
+'$INCLUDE:'launcher\app_launch.bas'
 
 '=============================================================================
 'PortaDOOM Launcher declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'launcher\errors.bm'
+'$INCLUDE:'launcher\ui\ui_error.bm'
 '$INCLUDE:'launcher\tags.bm'
 '$INCLUDE:'launcher\games.bm'
 '$INCLUDE:'launcher\engines.bm'
 '$INCLUDE:'launcher\iwads.bm'
 '$INCLUDE:'launcher\wads.bm'
-'$INCLUDE:'launcher\ui_status.bm'
-'$INCLUDE:'launcher\ui_print.bm'
-'$INCLUDE:'launcher\ui_keys.bm'
+'$INCLUDE:'launcher\ui\ui_status.bm'
+'$INCLUDE:'launcher\ui\ui_print.bm'
+'$INCLUDE:'launcher\ui\ui_keys.bm'
 '$INCLUDE:'launcher\ver.bm'
 
 'third-party library functions:

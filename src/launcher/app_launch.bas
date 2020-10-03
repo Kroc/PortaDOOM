@@ -1,6 +1,7 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'launch.bm : build a command string to launch a DOOM engine!
+'app_launch.bm : build a command string to launch a DOOM engine!
 
+launch:
 '=============================================================================
 'launch the selected game, with the selected engine, with the selected
 'parameters, any mods (if selected) and so forth. we need to build the
@@ -144,14 +145,14 @@ ELSE
             + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
             + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A" _
         ) <> 0 THEN
-            CALL ErrorScreen("ERROR: Write Error")
+            CALL UIErrorScreen("ERROR: Write Error")
             PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                 "Could not copy the default config file '" _
               + cfg_default$ + cfg$ + "' to the user config file '" _
               + cfg_engine$ + cfg$ + "'. Ensure that the media you are " _
               + "running launcher.exe from is not write protected, and " _
               + "that the 'files\saves' folder exists, and is writable."
-            CALL ErrorExit: SYSTEM 1
+            CALL UIErrorExit: SYSTEM 1
         END IF
         
         'vanilla engines store non-original settings in an extra config file
@@ -160,7 +161,7 @@ ELSE
                 + CHR$(34) + cfg_default$ + ".extra" + cfg$ + CHR$(34) + " /A " _
                 + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A" _
             ) <> 0 THEN
-                CALL ErrorScreen("ERROR: Write Error")
+                CALL UIErrorScreen("ERROR: Write Error")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "Could not copy the default config file '" _
                   + cfg_default$ + ".extra" + cfg$ + "' to the user " _
@@ -168,7 +169,7 @@ ELSE
                   + "'. Ensure that the media you are running " _ 
                   + "launcher.exe from is not write protected, and that " _
                   + "the 'files\saves' folder exists, and is writable."
-                CALL ErrorExit: SYSTEM 1
+                CALL UIErrorExit: SYSTEM 1
             END IF
         END IF
     END IF
@@ -230,7 +231,7 @@ IF Engines_Selected.auto <> "" THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+        IF find$ = "" THEN CALL UIError_FileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -253,7 +254,7 @@ IF Games_Selected.pre <> "" THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+        IF find$ = "" THEN CALL UIError_FileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -277,7 +278,7 @@ IF Games_Selected.pwad <> "" THEN
     LET file$ = Games_Selected.pwad
     LET find$ = WADs_GetPWADPath$(file$)
     'file not found?
-    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
     
     'remember the directory of the PWAD for searching for other files
     LET DIR_PWAD$ = Paths_GetPath$(find$)
@@ -298,7 +299,7 @@ IF Games_Selected.files <> "" THEN
         'locate the file according to WAD search rules
         LET find$ = WADs_Find$(file$)
         'file missing?
-        IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+        IF find$ = "" THEN CALL UIError_FileNotFound(file$)
         
         'add to the list of files for the command-line params
         LET CMD_FILES$ = CMD_FILES$ + find$ + ";"
@@ -356,7 +357,7 @@ IF CMD_DEH$ <> "" THEN
     LET file$ = CMD_DEH$
     LET find$ = WADs_Find$(file$)
     'file missing?
-    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
     
     'add it to the command-line
     LET CMD$ = CMD$ + " -deh " + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
@@ -372,7 +373,7 @@ IF CMD_BEX$ <> "" THEN
     LET file$ = CMD_BEX$
     LET find$ = WADs_Find$(file$)
     'file missing?
-    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
     
     'add it to the command-line
     LET CMD$ = CMD$ + " -bex " _
@@ -394,7 +395,7 @@ IF LEN(CMD_DEMO$) <> 0 THEN
         'try the special demos folder
         LET file$ = DIR_DEMOS$ + CMD_DEMO$
         'if it doesn't exist there...
-        IF NOT _FILEEXISTS(file$) THEN CALL ErrorFileNotFound(file$)
+        IF NOT _FILEEXISTS(file$) THEN CALL UIError_FileNotFound(file$)
     END IF
     
     'add the command-line param to play the demo
@@ -586,7 +587,7 @@ IF Games_Selected.exec <> "" THEN
     LET file$ = Games_Selected.exec
     LET find$ = WADs_Find$(file$)
    'file missing?
-    IF find$ = "" THEN CALL ErrorFileNotFound(file$)
+    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
     
     'add the command-line param to play the demo
     LET CMD$ = CMD$ + " -exec " _
@@ -696,12 +697,12 @@ SYSTEM
 
 errMkDir:
 '=============================================================================
-CALL ErrorScreen("ERROR: Write Error")
+CALL UIErrorScreen("ERROR: Write Error")
 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
     "Could not create a required folder. Ensure that the media you are " _
   + "running launcher.exe from is not write protected, and that the " _
   + "'files\saves' folder exists, and is writable."
-CALL ErrorExit: SYSTEM 1
+CALL UIErrorExit: SYSTEM 1
 
 'make a folder if it doesn't exist; capture errors (e.g. read-only)
 '=============================================================================

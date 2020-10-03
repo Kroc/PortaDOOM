@@ -28,7 +28,7 @@ SUB Games_EnumerateINI (ini_file$)
         IF _FILEEXISTS(path$) THEN GOTO readINI
     END IF
     
-    CALL ErrorFileNotFound(ini_file$)
+    CALL UIError_FileNotFound(ini_file$)
     SYSTEM 1
     
 readINI:
@@ -68,7 +68,7 @@ readINI:
             'if this is still the first check,
             'then no games are defined!
             IF ini_index = 1 THEN
-                CALL ErrorScreen("ERROR: Invalid INI Definition")
+                CALL UIErrorScreen("ERROR: Invalid INI Definition")
                 PRINT " No games defined in the INI file:"
                 PRINT " " + CHR$(34) _
                     + RTRUNCATE$(path$, UI_SCREEN_WIDTH - 2) _
@@ -83,7 +83,7 @@ readINI:
                 PRINT ""
                 PRINT "     [games]"
                 PRINT "     1=doom"
-                CALL ErrorExit: SYSTEM 1
+                CALL UIErrorExit: SYSTEM 1
             END IF
             EXIT FOR
         END IF
@@ -99,7 +99,7 @@ readINI:
         DIM ini_iwad$
         LET ini_iwad$ = ReadIniUTF8$(path$, ini_section$, "iwad")
         IF  ini_iwad$ = "" AND shared_ini.iwad = 0 THEN
-            CALL ErrorScreen("ERROR: Invalid INI Definition")
+            CALL UIErrorScreen("ERROR: Invalid INI Definition")
             PRINT " IWAD field (or game section) missing, " _
                 + "in INI file:"
             PRINT " " + CHR$(34) _
@@ -117,7 +117,7 @@ readINI:
             PRINT ""
             PRINT "     [games.doom]"
             PRINT "     iwad=DOOM"
-            CALL ErrorExit: SYSTEM 1
+            CALL UIErrorExit: SYSTEM 1
         END IF
         
         'find the IWAD meta-data entry referred to by this game

@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'error.bm : some shared error handling stuff
+'ui_error.bm : graphical error-handling
 
 '    ErrorScreen(title$)
 '    ErrorExit()
@@ -7,9 +7,9 @@
 
 'clear the screen for writing an error message
 '=============================================================================
-SUB ErrorScreen(title$)
+SUB UIErrorScreen(title$)
     'disable global hot-keys
-    CALL keys_off
+    CALL UIKeys_Off
     'clear the screen entirely, turning it red
     VIEW PRINT
     CLS, RED
@@ -32,7 +32,7 @@ END SUB
 
 'wait for the user to press any key to exit after an error
 '=============================================================================
-SUB ErrorExit()
+SUB UIErrorExit()
     PRINT ""
     PRINT " Command:"
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
@@ -53,10 +53,10 @@ END SUB
 
 'Display "File Not Found" error
 '=============================================================================
-SUB ErrorFileNotFound(file$)
-    CALL ErrorScreen("ERROR: File Not Found")
+SUB UIError_FileNotFound(file$)
+    CALL UIErrorScreen("ERROR: File Not Found")
     PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
         "The file " + CHR$(34) + file$ + CHR$(34) _
       + " could not be found."
-    CALL ErrorExit: SYSTEM 1
+    CALL UIErrorExit: SYSTEM 1
 END SUB

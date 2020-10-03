@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'cmd.bm : read in command-line parameters
+'app_cmd.bm : read in command-line parameters
 
 'read command-line switches:
 '=============================================================================
@@ -120,10 +120,10 @@ cmd_help:   PRINT ""
         CASE "/USE"
             'cannot be defined twice!
             IF CMD_USE$ <> "" THEN
-                CALL ErrorScreen("ERROR: /USE Defined Twice")
+                CALL UIErrorScreen("ERROR: /USE Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /USE parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
@@ -133,10 +133,10 @@ cmd_help:   PRINT ""
         CASE "/REQ"
             'cannot be defined twice!
             IF CMD_REQ$ <> "" THEN
-                CALL ErrorScreen("ERROR: /REQ Defined Twice")
+                CALL UIErrorScreen("ERROR: /REQ Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /REQ parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
@@ -152,14 +152,14 @@ cmd_help:   PRINT ""
              "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2"
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN
-                CALL ErrorScreen("ERROR: IWAD Defined Twice")
+                CALL UIErrorScreen("ERROR: IWAD Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "/IWAD parameter cannot be used twice. Note that the " _
                   + "/DOOM, /DOOM2, /TNT, /PLUTONIA, /HERETIC, /HEXEN, " _
                   + "/STRIFE, /CHEX, /FREEDOOM1 & /FREEDOOM2 switches are " _
                   + "shortcuts to /IWAD so these cannot be combined with " _
                   + "/IWAD, or each other."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             
             SELECT CASE UCASE$(COMMAND$(i))
@@ -191,14 +191,14 @@ cmd_help:   PRINT ""
         CASE "/PWAD"
             'cannot be defined twice!
             IF CMD_PWAD$ <> "" THEN
-                CALL ErrorScreen("ERROR: /PWAD Defined Twice")
+                CALL UIErrorScreen("ERROR: /PWAD Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /PWAD parameter cannot be defined more than once. " _
                   + "If a mod has more than one file, use the files list " _
                   + "(after '--') to include the file; for example:"
                 PRINT ""
                 PRINT "     launcher.exe /PWAD pwad1.wad -- pwad2.wad"
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
@@ -208,11 +208,11 @@ cmd_help:   PRINT ""
         CASE "/DEH"
             'cannot be defined twice!
             IF CMD_DEH$ <> "" THEN
-                CALL ErrorScreen("ERROR: /DEH Defined Twice")
+                CALL UIErrorScreen("ERROR: /DEH Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /DEH parameter cannot be defined more than once. " _
                   + "Only one DeHackEd file can be loaded at a time."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
@@ -222,12 +222,12 @@ cmd_help:   PRINT ""
         CASE "/BEX"
             'cannot be defined twice!
             IF CMD_BEX$ <> "" THEN
-                CALL ErrorScreen("ERROR: /BEX Defined Twice")
+                CALL UIErrorScreen("ERROR: /BEX Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /BEX parameter cannot be defined more than once. " _
                    + "Only one Boom-Extended DeHackEd file can be loaded at " _
                    + "a time."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
@@ -237,11 +237,11 @@ cmd_help:   PRINT ""
         CASE "/DEMO"
             'cannot be defined twice!
             IF CMD_DEMO$ <> "" THEN
-                CALL ErrorScreen("ERROR: /DEMO Defined Twice")
+                CALL UIErrorScreen("ERROR: /DEMO Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /DEMO parameter cannot be defined more than once. " _
                   + "Only one demo file can be played back at a time. "
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
@@ -251,10 +251,10 @@ cmd_help:   PRINT ""
         CASE "/WARP"
             'cannot be defined twice!
             IF CMD_WARP$ <> "" THEN
-                CALL ErrorScreen("ERROR: /WARP Defined Twice")
+                CALL UIErrorScreen("ERROR: /WARP Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /WARP parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
@@ -264,10 +264,10 @@ cmd_help:   PRINT ""
         CASE "/SKILL"
             'cannot be defined twice!
             IF CMD_SKILL$ <> "" THEN
-                CALL ErrorScreen("ERROR: /SKILL Defined Twice")
+                CALL UIErrorScreen("ERROR: /SKILL Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /SKILL parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
@@ -277,10 +277,10 @@ cmd_help:   PRINT ""
         CASE "/CMPLVL"
             'cannot be defined twice!
             IF CMD_CMPLVL$ <> "" THEN
-                CALL ErrorScreen("ERROR: /CMPLVL Defined Twice")
+                CALL UIErrorScreen("ERROR: /CMPLVL Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /CMPLVL parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
@@ -288,10 +288,10 @@ cmd_help:   PRINT ""
         CASE "/EXEC"
             'cannot be defined twice!
             IF CMD_EXEC$ <> "" THEN
-                CALL ErrorScreen("ERROR: /EXEC Defined Twice")
+                CALL UIErrorScreen("ERROR: /EXEC Defined Twice")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "The /EXEC parameter cannot be defined more than once."
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
             'capture the parameter that follows
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
@@ -331,7 +331,7 @@ cmd_help:   PRINT ""
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
-                CALL ErrorScreen("ERROR: Invalid Parameters!")
+                CALL UIErrorScreen("ERROR: Invalid Parameters!")
                 PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
                     "Unrecognised parameter: '" + COMMAND$(i) + "'." _
                   + "The first parameter may be an INI file, otherwise " _
@@ -348,7 +348,7 @@ cmd_help:   PRINT ""
                 PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
                 PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
                 PRINT "     [-- <file>* ]"
-                CALL ErrorExit
+                CALL UIErrorExit
             END IF
     END SELECT
     LET i = i + 1
@@ -414,12 +414,12 @@ IF cmd_hasGame` THEN
         "", "", "", "", "", "", "", "", "" _
     )
 ELSE
-    CALL ErrorScreen("ERROR: No Game Defined")
+    CALL UIErrorScreen("ERROR: No Game Defined")
     PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
         "Not enough information has been provided to define a game to " _
       + "launch. One or more of the parameters /IWAD, /PRE, /PWAD, /DEH, " _
       + "/BEX, /DEMO, /SKILL or /EXEC are required to define a game."
-    CALL ErrorExit
+    CALL UIErrorExit
 END IF
 
 cmd_done:

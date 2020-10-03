@@ -2,7 +2,7 @@
 
 'defines the custom shortcut keys, but doesn't enable them yet
 '=============================================================================
-SUB keys_Init()
+SUB UIKeys_Init()
     'ESC key:
     KEY ONKEY_ESC, CHR$(KEYFLAG_NONE) + CHR$(KEYCODE_ESC)
     KEY(ONKEY_ESC) OFF
@@ -13,21 +13,21 @@ END SUB
 
 'display both keys in the menu bar
 '=============================================================================
-SUB keys_Show()
+SUB UIKeys_Show()
     LET ui_menubar_right$(1) = "ESC:QUIT"
     LET ui_menubar_right$(2) = "BKSP:BACK"
     CALL UIMenubar_Update
 END SUB
 
 '=============================================================================
-SUB keys_Hide()
+SUB UIKeys_Hide()
     LET ui_menubar_right$(1) = ""
     LET ui_menubar_right$(2) = ""
     CALL UIMenubar_Update
 END SUB
 
 '=============================================================================
-SUB keys_Off()
+SUB UIKeys_Off()
     KEY(ONKEY_ESC) OFF
     KEY(ONKEY_BKSPC) OFF
     CALL UIMenubar_Update
