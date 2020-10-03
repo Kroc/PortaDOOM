@@ -1,3 +1,7 @@
+# anything beginning with double-underscore will be excluded
+__*
+**\__*
+
 build
 releases
 archive

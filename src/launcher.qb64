@@ -21,7 +21,7 @@ DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
 
 'third-party library declarations:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'lib\INI-Manager\ini.bi'
+'$INCLUDE:'launcher\lib\INI-Manager\ini.bi'
 
 'our library declarations:
 '-----------------------------------------------------------------------------
@@ -107,7 +107,7 @@ DIM SHARED DIR_INI$
 
 'third-party library functions:
 '-----------------------------------------------------------------------------
-'$INCLUDE:'lib\INI-Manager\ini.bm'
+'$INCLUDE:'launcher\lib\INI-Manager\ini.bm'
 
 'a simple wrapper function to ensure that reads from INI files
 'are converted to ANSI to avoid garbled Unicode characters
