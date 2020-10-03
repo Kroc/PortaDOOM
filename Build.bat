@@ -86,7 +86,10 @@ ECHO:
 ECHO * Compile "PortaDOOM.exe"
 ECHO:
 REM # compile source with QB64
-%BIN_QB64% -x -e -o "..\..\PortaDOOM\PortaDOOM.exe" "..\..\src\portadoom.qb64"
+%BIN_QB64% -x -e -o ^
+	"..\..\PortaDOOM\PortaDOOM.exe" ^
+	"..\..\src\portadoom.qb64"
+
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
@@ -94,7 +97,7 @@ IF %CMPLVL% EQU 1 (
 	ECHO * Compress "PortaDOOM.exe"
 	ECHO:
 	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute PortaDOOM\PortaDOOM.exe
+	%BIN_UPX% --ultra-brute "PortaDOOM\PortaDOOM.exe"
 	ECHO:
 )
 
@@ -104,7 +107,10 @@ ECHO:
 ECHO * Compile "launcher.exe"
 ECHO:
 REM # compile the launcher
-%BIN_QB64% -x -e -o "..\..\PortaDOOM\files\launcher.exe" "..\..\src\launcher.qb64"
+%BIN_QB64% -x -e -o ^
+	"..\..\PortaDOOM\files\launcher.exe" ^
+	"..\..\src\launcher.qb64"
+
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 
@@ -147,7 +153,8 @@ REM # 7ZIP
 %BIN_7ZA% a ^
 	-bso0 -bsp1 -r %ZIP_LVL% -stl ^
 	-xr@bin\ignore.lst ^
-	-- build\PortaDOOM.7z PortaDOOM
+	-- "build\PortaDOOM.7z" ^
+	"PortaDOOM"
 
 ECHO:
 ECHO Complete.
@@ -182,9 +189,10 @@ IF ERRORLEVEL 1 (
 
 REM # 7ZIP
 CALL :zip ^
-	..\build\PortaDOOM_Cacowards%~1.7z ^
-	..\bin\include_cacowards%~1.lst ^
-	..\bin\ignore.lst
+	"..\build\PortaDOOM_Cacowards%~1.7z" ^
+	"..\bin\include_cacowards%~1.lst" ^
+	"..\bin\ignore.lst"
+
 IF ERRORLEVEL 1 ECHO "Failure in 7Zip" & PAUSE
 
 REM # restore the original home page
@@ -218,9 +226,10 @@ IF ERRORLEVEL 1 PAUSE & EXIT
 
 REM # 7ZIP
 CALL :zip ^
-	..\build\PortaDOOM_5YearsOfDoom.7z ^
-	..\bin\include_cacowards5years.lst ^
-	..\bin\ignore.lst
+	"..\build\PortaDOOM_5YearsOfDoom.7z" ^
+	"..\bin\include_cacowards5years.lst" ^
+	"..\bin\ignore.lst"
+
 IF ERRORLEVEL 1 PAUSE
 
 REM # restore the original home page
@@ -254,9 +263,10 @@ IF ERRORLEVEL 1 PAUSE & EXIT
 
 REM # 7ZIP
 CALL :zip ^
-	..\build\PortaDOOM_PSXDOOMTC.7z ^
-	..\bin\include_psxdoomtc.lst ^
-	..\bin\ignore.lst
+	"..\build\PortaDOOM_PSXDOOMTC.7z" ^
+	"..\bin\include_psxdoomtc.lst" ^
+	"..\bin\ignore.lst"
+
 IF ERRORLEVEL 1 PAUSE
 
 REM # restore the original home page
@@ -288,9 +298,10 @@ PUSHD PortaDOOM\files
 REM # Launcher is always maximum compression
 REM # as it doesn't use the PortaDOOM executable
 CALL :zip ^
-	..\..\build\PortaDOOM_Launcher.7z ^
-	..\..\bin\include_launcher.lst ^
-	..\..\bin\ignore.lst
+	"..\..\build\PortaDOOM_Launcher.7z" ^
+	"..\..\bin\include_launcher.lst" ^
+	"..\..\bin\ignore.lst"
+
 IF ERRORLEVEL 1 PAUSE
 
 POPD

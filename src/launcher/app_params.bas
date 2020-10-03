@@ -1,9 +1,10 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'app_cmd.bm : read in command-line parameters
+'app_params.bas : read in command-line parameters, enumerate environment
 
 'read command-line switches:
 '=============================================================================
 DIM CMD$
+
 'no command-line parameters? display the command-line help
 'launcher.exe does not yet provide a GUI interface without params
 IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
@@ -364,7 +365,7 @@ LOOP
 
 '-----------------------------------------------------------------------------
 
-'is there enough parameters to define a game from the command-line?
+'are there enough parameters to define a game from the command-line?
 IF cmd_hasGame` THEN
     DIM vid, bit
     

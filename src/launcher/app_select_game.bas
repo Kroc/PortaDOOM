@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'app_select_game.bi : present game selection UI
+'app_select_game.bas : present game selection UI
 
 select_game:
 '-----------------------------------------------------------------------------

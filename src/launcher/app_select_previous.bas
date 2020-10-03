@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'ui_select_previous.bi : select last-used engine, or choose another
+'ui_select_previous.bas : select last-used engine, or choose another
 
 select_previous:
 '-----------------------------------------------------------------------------

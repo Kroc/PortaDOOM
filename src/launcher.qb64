@@ -85,7 +85,7 @@ DIM SHARED DIR_INI$
 '=============================================================================
 '$INCLUDE:'launcher\ui\ui_init.bi'
 
-'$INCLUDE:'launcher\app_cmd.bas'
+'$INCLUDE:'launcher\app_params.bas'
 '$INCLUDE:'launcher\app_select_game.bas'
 ''$INCLUDE:'launcher\app_select_previous.bas'
 '$INCLUDE:'launcher\app_select_engine.bas'

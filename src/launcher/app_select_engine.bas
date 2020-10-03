@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'app_select_engine.bi : present engine selection UI
+'app_select_engine.bas : present engine selection UI
 
 select_engine:
 '-----------------------------------------------------------------------------

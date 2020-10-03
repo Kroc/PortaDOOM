@@ -1,5 +1,5 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
-'app_launch.bm : build a command string to launch a DOOM engine!
+'app_launch.bas : build a command string to launch a DOOM engine!
 
 launch:
 '=============================================================================
