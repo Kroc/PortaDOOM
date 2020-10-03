@@ -1,13 +1,24 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
 'ui_error.bm : graphical error-handling
 
-'    ErrorScreen(title$)
-'    ErrorExit()
-'    ErrorFileNotFound(file$)
+'    UIErrorScreen(err_title$, err_message$)
+'    UIErrorScreen_Begin(err_title$)
+'    UIErrorScreen_Exit()
+'    UIError_FileNotFound(err_file$)
+
+'clear the screen, display an error message, and end the program
+'=============================================================================
+SUB UIErrorScreen(err_title$, err_message$)
+    CALL UIErrorScreen_Begin (err_title$)
+    IF err_message$ <> "" THEN
+        CALL PRINTWRAP_X (2, UI_SCREEN_WIDTH - 2, err_message$)
+    END IF
+    CALL UIErrorScreen_End
+END SUB
 
 'clear the screen for writing an error message
 '=============================================================================
-SUB UIErrorScreen(title$)
+SUB UIErrorScreen_Begin(err_title$)
     'disable global hot-keys
     CALL UIKeys_Off
     'clear the screen entirely, turning it red
@@ -25,14 +36,14 @@ SUB UIErrorScreen(title$)
     CLS 2: PRINT ""
     
     'print the error title
-    PRINT " " + title$
+    PRINT " " + err_title$
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_DBL_H)
     
 END SUB
 
 'wait for the user to press any key to exit after an error
 '=============================================================================
-SUB UIErrorExit()
+SUB UIErrorScreen_End()
     PRINT ""
     PRINT " Command:"
     PRINT " " + STRING$(UI_SCREEN_WIDTH - 2, ASC_BOX_H)
@@ -53,10 +64,10 @@ END SUB
 
 'Display "File Not Found" error
 '=============================================================================
-SUB UIError_FileNotFound(file$)
-    CALL UIErrorScreen("ERROR: File Not Found")
-    PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
-        "The file " + CHR$(34) + file$ + CHR$(34) _
-      + " could not be found."
-    CALL UIErrorExit: SYSTEM 1
+SUB UIError_FileNotFound(err_file$)
+    CALL UIErrorScreen( _
+        "ERROR: File Not Found", _
+        "The file " + CHR$(34) + err_file$ + CHR$(34) _
+      + " could not be found." _
+    )
 END SUB

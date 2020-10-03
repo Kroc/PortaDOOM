@@ -145,14 +145,14 @@ ELSE
             + CHR$(34) + cfg_default$ + cfg$ + CHR$(34) + " /A " _
             + CHR$(34) + cfg_engine$ + cfg$ + CHR$(34) + " /A" _
         ) <> 0 THEN
-            CALL UIErrorScreen("ERROR: Write Error")
-            PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+            CALL UIErrorScreen( _
+                "ERROR: Write Error", _
                 "Could not copy the default config file '" _
               + cfg_default$ + cfg$ + "' to the user config file '" _
               + cfg_engine$ + cfg$ + "'. Ensure that the media you are " _
               + "running launcher.exe from is not write protected, and " _
-              + "that the 'files\saves' folder exists, and is writable."
-            CALL UIErrorExit: SYSTEM 1
+              + "that the 'files\saves' folder exists, and is writable." _
+            )
         END IF
         
         'vanilla engines store non-original settings in an extra config file
@@ -161,15 +161,15 @@ ELSE
                 + CHR$(34) + cfg_default$ + ".extra" + cfg$ + CHR$(34) + " /A " _
                 + CHR$(34) + cfg_engine$ + ".extra" + cfg$ + CHR$(34) + " /A" _
             ) <> 0 THEN
-                CALL UIErrorScreen("ERROR: Write Error")
-                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                CALL UIErrorScreen( _
+                    "ERROR: Write Error", _
                     "Could not copy the default config file '" _
                   + cfg_default$ + ".extra" + cfg$ + "' to the user " _
                   + "config file '" + cfg_engine$ + ".extra" + cfg$ _
                   + "'. Ensure that the media you are running " _ 
                   + "launcher.exe from is not write protected, and that " _
-                  + "the 'files\saves' folder exists, and is writable."
-                CALL UIErrorExit: SYSTEM 1
+                  + "the 'files\saves' folder exists, and is writable." _
+                )
             END IF
         END IF
     END IF
@@ -187,7 +187,8 @@ PRINT RTRUNCATE$(CMD_CONFIG$ + cfg$, UI_SCREEN_WIDTH - 17)
 'in an extra config file (this is why we omit the file extension until now)
 IF Engines_Selected.kin = KIN_V THEN
     LET CMD$ = CMD$ + " -extraconfig " _
-             + CHR$(34) + Launch_FixPath$(CMD_CONFIG$ + ".extra" + cfg$) + CHR$(34)
+             + CHR$(34) + Launch_FixPath$(CMD_CONFIG$ + ".extra" + cfg$) _
+             + CHR$(34)
     
     COLOR YELLOW: PRINT " -extraconfig : ";: COLOR UI_FORECOLOR
     PRINT RTRUNCATE$(CMD_CONFIG$ + ".extra" + cfg$, UI_SCREEN_WIDTH - 17)
@@ -697,12 +698,12 @@ SYSTEM
 
 errMkDir:
 '=============================================================================
-CALL UIErrorScreen("ERROR: Write Error")
-PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+CALL UIErrorScreen( _
+    "ERROR: Write Error", _
     "Could not create a required folder. Ensure that the media you are " _
   + "running launcher.exe from is not write protected, and that the " _
-  + "'files\saves' folder exists, and is writable."
-CALL UIErrorExit: SYSTEM 1
+  + "'files\saves' folder exists, and is writable." _
+)
 
 'make a folder if it doesn't exist; capture errors (e.g. read-only)
 '=============================================================================

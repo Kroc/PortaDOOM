@@ -26,6 +26,8 @@ END IF
 
 CALL UI_ClearScreen
 
+'-----------------------------------------------------------------------------
+
 IF Games(1).blurb <> "" THEN
     COLOR WHITE
     CALL PRINTWRAP_X(2, UI_SCREEN_WIDTH - 2, Games(1).blurb)
@@ -37,7 +39,7 @@ PRINT " Select game choice by pressing indicated number key:"
 PRINT ""
 
 'walk through the list of games
-'-----------------------------------------------------------------------------
+'
 FOR i = 1 TO Games_Count
     COLOR AQUA: PRINT " [" + STRINT$(i) + "]: ";
     IF Games(i).name <> "" THEN
@@ -62,6 +64,8 @@ FOR i = 1 TO Games_Count
     END IF
     PRINT ""
 NEXT i
+
+'-----------------------------------------------------------------------------
 
 DO
     'read the keyboard:

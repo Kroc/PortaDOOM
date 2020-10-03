@@ -1,6 +1,9 @@
 'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
 'ui_select_previous.bi : select last-used engine, or choose another
 
+select_previous:
+'-----------------------------------------------------------------------------
+
 CALL UIStatusbar_Clear
 LET ui_statusbar_right$(1) = "ENTER:play"
 
@@ -12,6 +15,8 @@ ELSEIF Games_Selected.title <> "" THEN
 END IF
 
 CALL UI_ClearScreen
+
+'-----------------------------------------------------------------------------
 
 PRINT " Press ";: COLOR AQUA: PRINT "[RETURN]";: COLOR UI_FORECOLOR
 PRINT " to play using the same engine as the last time"
@@ -51,6 +56,8 @@ NEXT i
 
 PRINT " " + CHR$(ASC_BOX_BL) + STRING$(UI_SCREEN_WIDTH - 5, ASC_BOX_H);
 PRINT CHR$(ASC_BOX_BR)
+
+'-----------------------------------------------------------------------------
 
 DO
     'read the keyboard:

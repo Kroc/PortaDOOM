@@ -25,6 +25,7 @@ END IF
 'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
+'setup UI:
 '-----------------------------------------------------------------------------
 CALL UIStatusbar_Clear
 CALL UIMenubar_Clear
@@ -37,6 +38,8 @@ END IF
 
 CALL UI_ClearScreen
 
+'draw UI:
+'-----------------------------------------------------------------------------
 PRINT " We've selected the engines compatible with your computer and the chosen game;"
 PRINT " choose an engine that suits you by pressing the indicated key below:"
 PRINT ""
@@ -109,6 +112,8 @@ IF Engines_SelectedRetro <> 0 THEN
     END IF
 END IF
 
+'handle input:
+'-----------------------------------------------------------------------------
 DO
     'read the keyboard:
     LET key$ = INKEY$
