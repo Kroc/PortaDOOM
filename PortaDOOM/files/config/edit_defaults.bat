@@ -264,7 +264,7 @@ ECHO  [N] v2.2		[O] v2.3	[P] v2.4
 ECHO  [Q] v3.2		[R] v3.3	[S] v3.4
 ECHO  [T] v3.5		[U] v3.6	[V] v3.7
 ECHO  [W] v4.1          [X] v4.2	[Y] v4.3
-ECHO  [Z] v4.4
+ECHO  [Z] v4.4		[0] v4.5
 ECHO:
 
 SET "$="
@@ -298,6 +298,7 @@ IF /I "%$%" == "W" CALL :launch_engine    "gzdoom-41"  "%~1"
 IF /I "%$%" == "X" CALL :launch_engine    "gzdoom-42"  "%~1"
 IF /I "%$%" == "Y" CALL :launch_engine    "gzdoom-43"  "%~1"
 IF /I "%$%" == "Z" CALL :launch_engine    "gzdoom-44"  "%~1"
+IF /I "%$%" == "0" CALL :launch_engine    "gzdoom-45"  "%~1"
 
 GOTO :menu_gzdoom
 
