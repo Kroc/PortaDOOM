@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 
 $EXEICON:'.\portadoom.ico'
 
@@ -830,9 +830,9 @@ SUB launchURL (url$)
     '      padding and border will be added automatically
     LET dialogWidth = 64
     
-    STRGUI.Begin
-    STRGUI.Add "Do you want to launch the following URL^{N}"
-    STRGUI.Add "in your default web browser?^{N,N}"
+    CALL STRGUI_Begin
+    STRGUI_Add "Do you want to launch the following URL^{N}"
+    STRGUI_Add "in your default web browser?^{N,N}"
     LET dialogHeight = 3
 
     'the URL will likely need to be line-wrapped;
@@ -843,7 +843,7 @@ SUB launchURL (url$)
 
     DIM i%
     FOR i% = 1 TO urlLines%
-        STRGUI.Add " ^{Fb}" + _
+        STRGUI_Add " ^{Fb}" + _
             MID$(url$, urlWidth% * (i% - 1) + 1, urlWidth%) + "^{F-,N}"
     NEXT i%
     

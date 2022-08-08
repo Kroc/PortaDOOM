@@ -1,0 +1,75 @@
+https://zdoom.org/downloads
+
+
+GOLDEN SOULS 2 - 1.4
+
+WARNING
+
+Save files are NOT compatible between different versions of the mod.
+
+_____________Changelog___________________________________________________
+
+
+Changelog
+
+
+___Map Changes____
+
+-MAP01 "Green Plains
+*Removed teleport from the second coin, added some platforms to jump back to the bridge.
+
+-MAP06 "Calescent Castle"
+*Tweaked Big Coin jumping section near indoor moving block
+*Tweaked hallway after the cannons
+*Removed the Red Plant in the final section before the boss door
+
+-MAP19 "Pumpkin Pathway"
+*A sign now informs the player that there are in fact 3 secret exits in this map.
+
+-MAP21 "Venom Villa"
+*Fixed being able to jump through small holes in the wall and break the switch puzzle (Thanks, Icarus!)
+
+-MAP22 "Fort Phantom"
+*Reworked section with moving spike pillars to be less frustrating
+
+-MAP23 "Pretty Petals Peak"
+*Fixed Exit switch not using the correct texture
+
+-MAP24 "Mount Mirror"
+*Tweaked final platforming section so it requires less precision (Near the Mancubus spawn)
+
+-MAP31 "Crescent Moon Manor"
+*Fixed door texture alignment in the first outdoor section
+
+-MAP32 "Tower Rewot"
+*Added some pillars in the inverted starting section that make it easier to reach the doors 
+
+-MAP39 "Demonic Den"
+*Fixed exit using wrong switch texture
+
+-MAP44 "Silhouette Sunset
+*Tree near the first checkpoint now correctly display as pitch black like the rest of the map
+*Fixed the placement of several ceiling plants in the underwater section
+*Fixed vine hole not displaying the correct skybox in the underwater section
+
+-MAP47 "Spider Mansion"
+*Fixed alignment of several wooden ceilings
+
+-Hell World Map
+*Fixed texture alignment near slopes
+___General___
+
+*Vader is in the game credits under the Sprites section (he was credited as KDIZD team and not individually before)
+
+___Balance Changes___
+
+-Regular Enemies
+*Several enemies must now be in a certain range to shoot at you (No more getting shot by random projectiles across the map!)
+*Cactuses now ignore the +FASTMONSTERS flag
+*Spike Throwers' don't disappear anymore after their gib death animation.
+
+-Bosses
+*A certain Cyberdemon servant now has half the health he had before (Not spoilers!)
+*Final Boss and several other bosses now ignore +FASTMONSTERS flag
+*Final Boss can no longer spawn Hierophants and Revenants
+*Final Boss can no longer be stunlocked with the Star Starshooter's Alt Fire

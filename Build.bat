@@ -1,4 +1,4 @@
-:: PortaDOOM, copyright (C) Kroc Camen 2016-2020, BSD 2-clause
+:: PortaDOOM, copyright (C) Kroc Camen 2016-2021, BSD 2-clause
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 PUSHD %~dp0
 
@@ -14,7 +14,7 @@ SET BIN_QB64=bin\qb64\qb64.exe
 
 REM # select 7Zip executable
 IF %WINBIT% EQU 64 SET BIN_7ZA="%~dp0bin\7za\7za_x64.exe"
-IF %WINBIT% EQU 32 SET BIN_7ZA="%~dp0bin\7za\7za.exe"
+IF %WINBIT% EQU 32 SET BIN_7ZA="%~dp0bin\7za\7za_x86.exe"
 REM # location of UPX executable
 REM # (for compression EXE files)
 SET BIN_UPX="%~dp0bin\upx\upx.exe"

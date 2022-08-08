@@ -1,13 +1,8 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'app_select_engine.bas : present engine selection UI
 
 select_engine:
 '-----------------------------------------------------------------------------
-'search through the "ports" folder for game engines and read in their details.
-'this also builds a set of look-up tables for cross-referencing tags with
-'games and engines so that we can filter out incompatible engines
-CALL Engines_Enumerate
-
 'filter the known engines according to the game
 'requirements and the user's preferences
 CALL Engines_Filter
@@ -18,6 +13,8 @@ IF Engines_ListCount = 1 _
 OR CMD_AUTO` = TRUE _
 THEN
     CALL Engines_Select(Engines_List(1))
+    'note that this skips the saving of the launch
+    'parameters to the user INI file
     GOTO launch
 END IF
 

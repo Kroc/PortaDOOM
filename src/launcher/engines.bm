@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'engines.bm : functions for handling engines (DOOM source ports)
 
 '   Engines_Enumerate()
@@ -678,34 +678,18 @@ END SUB
 'translates a comma-separated list of engine-types into a numeric value
 '============================================================================
 FUNCTION Engines_GetType%(type$)
+    DIM r%: LET r% = 0
     LET type$ = "," + UCASE$(type$) + ","
     
-    IF INSTR(type$, ",DOOM,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM
-    END IF
-    IF INSTR(type$, ",DOOM2,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM2
-    END IF
-    IF INSTR(type$, ",HERETIC,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_HERETIC
-    END IF
-    IF INSTR(type$, ",HEXEN,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_HEXEN
-    END IF
-    IF INSTR(type$, ",STRIFE,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_STRIFE
-    END IF
-    IF INSTR(type$, ",CHEX,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_CHEX
-    END IF
-    IF INSTR(type$, ",DOOM64,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_DOOM64
-    END IF
-    IF INSTR(type$, ",HARM1,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_HARM1
-    END IF
-    IF INSTR(type$, ",ROTWB,") THEN
-        LET Engines_GetType% = Engines_GetType% OR TYPE_ROTWB
-    END IF
+    IF INSTR(type$, ",DOOM,") THEN LET r% = r% OR TYPE_DOOM
+    IF INSTR(type$, ",DOOM2,") THEN LET r% = r% OR TYPE_DOOM2
+    IF INSTR(type$, ",HERETIC,") THEN LET r% = r% OR TYPE_HERETIC
+    IF INSTR(type$, ",HEXEN,") THEN LET r% = r% OR TYPE_HEXEN
+    IF INSTR(type$, ",STRIFE,") THEN LET r% = r% OR TYPE_STRIFE
+    IF INSTR(type$, ",CHEX,") THEN LET r% = r% OR TYPE_CHEX
+    IF INSTR(type$, ",DOOM64,") THEN LET r% = r% OR TYPE_DOOM64
+    IF INSTR(type$, ",HARM1,") THEN LET r% = r% OR TYPE_HARM1
+    IF INSTR(type$, ",ROTWB,") THEN LET r% = r% OR TYPE_ROTWB
     
+    LET Engines_GetType% = r%
 END FUNCTION

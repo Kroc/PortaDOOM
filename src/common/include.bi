@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'include.bi : library headers
 
 '$INCLUDE:'ascii.bi'

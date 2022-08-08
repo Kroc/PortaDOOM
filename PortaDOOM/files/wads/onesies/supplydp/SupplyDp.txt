@@ -1,63 +1,66 @@
 ===========================================================================
-Archive Maintainer      : 
-Update to               : 
+Update to               : 01/03/19
 Advanced engine needed  : ZDoom 2.8.1 or later (GZDoom recommended)
-Primary purpose         : Single Player
+Primary purpose         : Single play
 ===========================================================================
 Title                   : UAC Invasion: The Supply Depot
-Filename                : SupplyDepotBeta.rar
+Filename                : SupplyDp.zip
 Release date            : 06/09/18
 Author                  : DooMknight
 Email Address           : [redacted]
 Other Files By Author   : Europe, The power supply [Remake], Vanilla Sky
-
-
 Misc. Author Info       : Another old Spanish DooM fan
 
-Description             : The map is about a Marine who must infiltrate a large
-						  base of the UAC corporation because there are indications
-						  that secret experiments related to portals and Satanism
-						  are taking place. The protagonist hides in a UAC truck
-						  that goes to the complex and get infiltrated.
-						  But once inside the facilities he realizes that something
-						  terrible has happened there, it seems that he is not the 
-						  only unexpected visitor...
+Description             : The map is about a marine who must infiltrate a UAC
+                          Corporation large base because there are
+                          indications that dangerous secret experiments
+                          related to portals and Satanism are taking place.
+                          The protagonist is hidden in a truck of the UAC
+                          that goes to the complex getting to enter without
+                          major problems. But once inside the facilities he
+                          realizes that something terrible has happened
+                          there, it seems that he is not the only unexpected
+                          visitor...
 
 Additional Credits to   : Objects and decoration:
-						  NerdKoopa (Voxel vehicles)
-						  CaptainToenail, Necrodome (Small trees and bushes)
-						  Blox (Oldtree edits)
-						  Tormentor667, Gothic (Junk piles & UAC holograms)
-						  
-						  Enemies:
-						  Captain Toenail (Pustule)						  
-						  Ben2k9/Virtue (Cyberbaron)
-						  Tormentor667, Nanami, Ghastly_dragon, Keksdose, Herculine (Afrit)
-						  Tormentor667, Eriance, Ghastly Dragon, RAVEN Software (DeathKnight)
-						  
-						  Textures:
-						  FuzzballFox, Enjay, EarthQuake, CaptainToenail, amv2k9,
-						  Cage, Zero X. Diamond, demo_the_man, MartinHowe, Nick Baker
-						  
-						  Titlepic artwork:
-						  Espen Grundetjern
-						  
-						  Music:
-						  Andrew G. Sega
-						  Markus Merilainen
-						  Patrick Phelan
-						  
-						  Beta testing:
-						  Degree23, Demonologist, NovaRain, elend, Phobus,
-						  HAK3180, AK-001, StormCatcher.77
-						  
-						  Special thanks to my wife for her support and help 
-						  these years while I was creating the map.
-						  And finally this is dedicated to my 4 months old son.
-						  I love you both!
-						  
-						  If I have forgotten someone, please let me know and
-						  I will include you in this credits section.
+                          NerdKoopa (Voxel vehicles)
+                          CaptainToenail, Necrodome (Small trees and bushes)
+                          Blox (Oldtree edits)
+                          Tormentor667, Gothic (Junk piles & UAC holograms)
+                          
+                          Enemies:
+                          Captain Toenail(Pustule)
+                          Ben2k9/Virtue(Cyberbaron)
+                          Tormentor667, Nanami, Ghastly_dragon, Keksdose,
+                          Herculine (Afrit)
+                          Tormentor667, Eriance, Ghastly Dragon, RAVEN
+                          Software (DeathKnight)
+                          
+                          Textures:
+                          FuzzballFox, Enjay, EarthQuake, CaptainToenail,
+                          amv2k9,Cage, Zero X. Diamond, demo_the_man,
+                          MartinHowe, Nick Baker
+                          
+                          Titlepic artwork:
+                          Espen Grundetjern
+                          
+                          Music:
+                          Andrew G. Sega
+                          Markus Merilainen
+                          Patrick Phelan
+                          						  
+                          Beta testing:
+                          Degree23, Demonologist, NovaRain, elend, Phobus,
+                          HAK3180, AK-001, StormCatcher.77
+                          
+                          Special thanks to my wife for her support and help
+                          these years while I was creating the map.
+                          And finally this is dedicated to my 4 months old
+                          son.
+                          I love you both!
+                          
+                          If I have forgotten someone, please let me know and
+                          I will include you in this credits section.
 ===========================================================================
 * What is included *
 
@@ -67,16 +70,17 @@ Music                   : Yes
 Graphics                : Yes
 Dehacked/BEX Patch      : No
 Demos                   : No
-Other                   : DECORATE, ANIMDEF, MUSINFO, SNDINFO, ZMAPINFO, GAMEINFO, GLDEFS
+Other                   : DECORATE, ANIMDEF, MUSINFO, SNDINFO, ZMAPINFO,
+                          GAMEINFO, GLDEFS
 Other files required    : None
 
 
 * Play Information *
 
-Game                    : DOOM2
+Game                    : Doom 2
 Map #                   : MAP01
 Single Player           : Designed for
-Cooperative 2-4 Player	: Supported
+Cooperative 2-4 Player  : Designed for
 Deathmatch 2-4 Player   : No
 Other game styles       : None
 Difficulty Settings     : Yes
@@ -86,25 +90,28 @@ Difficulty Settings     : Yes
 
 Base                    : New from scratch
 Build Time              : 11 years on and off...
-Editor(s) used          : DoomBuilder, DoomBuilder 2, GZDoomBuilder, XWE, SLADE 3
-Known Bugs              : None
-May Not Run With...     : Any non-ZDoom port and any ZDoom-based port
+Editor(s) used          : DoomBuilder, DoomBuilder 2, GZDoomBuilder, XWE,
+                          SLADE 3
+Known Bugs              : In the toxic flooded area there is an IMP that
+                          never attacks the player
+May Not Run With        : Any non-ZDoom port and any ZDoom-based port
+Tested With             : GZDoom
 
 
 * Copyright / Permissions *
 
-Authors MAY use the contents of this file as a base for
-modification or reuse. Permissions have been obtained from original 
-authors for any of their resources modified or included in this file.
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
 
-You MAY distribute this file, provided you include this text file, with
-no modifications.  You may distribute this file in any electronic
-format (BBS, Diskette, CD, etc) as long as you include this file 
-intact.  I have received permission from the original authors of any
-modified or included content in this file to allow further distribution.
-
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
 
 * Where to get the file that this text file describes *
 
-The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
 Web sites: https://drive.google.com/file/d/1IwkDTCv02omDynOThit4JQCNkm10nrSQ/view?usp=sharing

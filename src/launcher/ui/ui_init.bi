@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'ui_init.bi : define and initialise the user-interface
 
 'the default size (in char cols/rows) of the screen

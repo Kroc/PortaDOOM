@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'tags.bm : functions for managing engine/game feature tags
 
 '   Tags_Clear
@@ -39,13 +39,17 @@ END SUB
 'search through the tag list and return an index number
 '=============================================================================
 FUNCTION Tags_Find% (tag$)
-    'TODO: this could be done by index only
-    FOR Tags_Find% = 1 TO UBOUND(Tags)
-        IF Tags(Tags_Find%) = tag$ THEN EXIT FUNCTION
+    'default not found
+    LET Tags_Find% = 0
+    
+    DIM i%
+    FOR i% = 1 TO UBOUND(Tags)
+        IF Tags(i%) = tag$ THEN
+            LET Tags_Find% = i%
+            EXIT FUNCTION
+        END IF
     NEXT
     
-    'not found
-    LET Tags_Find% = 0
 END FUNCTION
 
 'this function, once given a list of comma-separated tags will return one tag

@@ -12,8 +12,8 @@ FUNCTION TUI_Labels_Add ( _
     LET kind_id = UBOUND(TUI_Labels) + 1
     REDIM _PRESERVE TUI_Labels(1 TO kind_id) AS TUI_Label
     
-    STRGUI.Begin
-    STRGUI.Add caption
+    CALL STRGUI_Begin
+    STRGUI_Add caption
     LET TUI_Labels(kind_id).caption = TUI_Strings_Add (STRGUI.Compile$)
     
     LET TUI_Labels_Add = TUI_Controls_Add ( _
@@ -38,5 +38,5 @@ SUB TUI_Labels_Print (controlID AS _UNSIGNED _BYTE)
     DIM kind_id AS _UNSIGNED _BYTE
     LET kind_id = TUI_Controls(controlID).kind_id
     
-    BINSTR.Print TUI_Strings(TUI_Labels(kind_id).caption)
+    CALL BINSTR_Print(TUI_Strings(TUI_Labels(kind_id).caption))
 END SUB

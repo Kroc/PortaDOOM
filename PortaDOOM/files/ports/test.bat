@@ -52,7 +52,7 @@ CLS
 ECHO:
 ECHO  GZDoom:
 ECHO:
-ECHO    [0] GZDoom Current 32-bit     [1] GZDoom Current 64-bit
+ECHO    [0] GZDoom Current
 ECHO:
 ECHO    [A] GZDoom v1.0               [B] GZDoom v1.1
 ECHO    [C] GZDoom v1.2               [D] GZDoom v1.3
@@ -69,7 +69,8 @@ ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
 ECHO    [T] GZDoom v3.6               [U] GZDoom v3.7
 ECHO    [V] GZDoom v4.1               [W] GZDoom v4.2
 ECHO    [X] GZDoom v4.3               [Y] GZDoom v4.4
-ECHO    [Z] GZDoom v4.5
+ECHO    [Z] GZDoom v4.5               [6] GZDoom v4.6
+ECHO    [7] GZDoom v4.7               [8] GZDoom v4.8
 ECHO:
 
 SET CHOICE=?
@@ -77,8 +78,7 @@ SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
 
-IF /I "%CHOICE%" == "0" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2 /32
-IF /I "%CHOICE%" == "1" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2
+IF /I "%CHOICE%" == "0" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2
 
 IF /I "%CHOICE%" == "A" %LAUNCHER% /USE gzdoom-10 /IWAD DOOM2
 IF /I "%CHOICE%" == "B" %LAUNCHER% /USE gzdoom-11 /IWAD DOOM2
@@ -103,10 +103,14 @@ IF /I "%CHOICE%" == "R" %LAUNCHER% /USE gzdoom-34 /IWAD DOOM2
 IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-35 /IWAD DOOM2
 IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-36 /IWAD DOOM2
 IF /I "%CHOICE%" == "U" %LAUNCHER% /USE gzdoom-37 /IWAD DOOM2
+
 IF /I "%CHOICE%" == "V" %LAUNCHER% /USE gzdoom-41 /IWAD DOOM2
 IF /I "%CHOICE%" == "W" %LAUNCHER% /USE gzdoom-42 /IWAD DOOM2
 IF /I "%CHOICE%" == "X" %LAUNCHER% /USE gzdoom-43 /IWAD DOOM2
 IF /I "%CHOICE%" == "Y" %LAUNCHER% /USE gzdoom-44 /IWAD DOOM2
 IF /I "%CHOICE%" == "Z" %LAUNCHER% /USE gzdoom-45 /IWAD DOOM2
+IF /I "%CHOICE%" == "6" %LAUNCHER% /USE gzdoom-46 /IWAD DOOM2
+IF /I "%CHOICE%" == "7" %LAUNCHER% /USE gzdoom-47 /IWAD DOOM2
+IF /I "%CHOICE%" == "8" %LAUNCHER% /USE gzdoom-48 /IWAD DOOM2
 
 GOTO :gzdoom

@@ -634,7 +634,7 @@ ECHO ----------------------------------------
 
 :gzdoom-45
 REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-45.ini" GOTO :gzdoom
+IF EXIST "default.gzdoom-45.ini" GOTO :gzdoom-46
 
 ECHO * GZDoom v4.5                DOOM.WAD
 CALL :make_gzdoom "gzdoom-45" "DOOM.WAD"
@@ -652,6 +652,72 @@ ECHO * GZDoom v4.5                ROTWB.WAD
 CALL :make_gzdoom "gzdoom-45" "ROTWB.WAD"
 ECHO * GZDoom v4.5                SQUARE1.PK3
 CALL :make_gzdoom "gzdoom-45" "square1.pk3"
+ECHO ----------------------------------------
+
+:gzdoom-46
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-46.ini" GOTO :gzdoom-47
+
+ECHO * GZDoom v4.6                DOOM.WAD
+CALL :make_gzdoom "gzdoom-46" "DOOM.WAD"
+ECHO * GZDoom v4.6                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-46" "HERETIC.WAD"
+ECHO * GZDoom v4.6                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-46" "HEXEN.WAD"
+ECHO * GZDoom v4.6                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-46" "STRIFE1.WAD"
+ECHO * GZDoom v4.6                CHEX.WAD
+CALL :make_gzdoom "gzdoom-46" "CHEX.WAD"
+ECHO * GZDoom v4.6                HARM1.WAD
+CALL :make_gzdoom "gzdoom-46" "HARM1.WAD"
+ECHO * GZDoom v4.6                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-46" "ROTWB.WAD"
+ECHO * GZDoom v4.6                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-46" "square1.pk3"
+ECHO ----------------------------------------
+
+:gzdoom-47
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-47.ini" GOTO :gzdoom-48
+
+ECHO * GZDoom v4.7                DOOM.WAD
+CALL :make_gzdoom "gzdoom-47" "DOOM.WAD"
+ECHO * GZDoom v4.7                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-47" "HERETIC.WAD"
+ECHO * GZDoom v4.7                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-47" "HEXEN.WAD"
+ECHO * GZDoom v4.7                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-47" "STRIFE1.WAD"
+ECHO * GZDoom v4.7                CHEX.WAD
+CALL :make_gzdoom "gzdoom-47" "CHEX.WAD"
+ECHO * GZDoom v4.7                HARM1.WAD
+CALL :make_gzdoom "gzdoom-47" "HARM1.WAD"
+ECHO * GZDoom v4.7                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-47" "ROTWB.WAD"
+ECHO * GZDoom v4.7                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-47" "square1.pk3"
+ECHO ----------------------------------------
+
+:gzdoom-48
+REM # delete the file in order to re-build it
+IF EXIST "default.gzdoom-48.ini" GOTO :gzdoom
+
+ECHO * GZDoom v4.8                DOOM.WAD
+CALL :make_gzdoom "gzdoom-48" "DOOM.WAD"
+ECHO * GZDoom v4.8                HERETIC.WAD
+CALL :make_gzdoom "gzdoom-48" "HERETIC.WAD"
+ECHO * GZDoom v4.8                HEXEN.WAD
+CALL :make_gzdoom "gzdoom-48" "HEXEN.WAD"
+ECHO * GZDoom v4.8                STRIFE1.WAD
+CALL :make_gzdoom "gzdoom-48" "STRIFE1.WAD"
+ECHO * GZDoom v4.8                CHEX.WAD
+CALL :make_gzdoom "gzdoom-48" "CHEX.WAD"
+ECHO * GZDoom v4.8                HARM1.WAD
+CALL :make_gzdoom "gzdoom-48" "HARM1.WAD"
+ECHO * GZDoom v4.8                ROTWB.WAD
+CALL :make_gzdoom "gzdoom-48" "ROTWB.WAD"
+ECHO * GZDoom v4.8                SQUARE1.PK3
+CALL :make_gzdoom "gzdoom-48" "square1.pk3"
 ECHO ----------------------------------------
 
 :gzdoom
@@ -784,13 +850,15 @@ REM # TODO: crispy-doom 5.6 now uses a randomly generated name
 REM # in Chocolate Strife there's also nickname?
 %BIN_FART% "default.choco-strife.cfg" "nickname                      \"(null)\"" "nickname                      \"PortaDOOM\""
 
+SET "APPDATAESC=%APPDATA:\=\\%"
+
 REM # Crispy Doom, annoyingly, adds these in -- another reason why I need
 REM # to make a specialised tool for programatically modifying CFG/INI files
 %BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"autoload_path                 \"%APPDATA%\\crispy-doom\\autoload\"" ^
+	"autoload_path                 \"%APPDATAESC%\\crispy-doom\\autoload\"" ^
 	"autoload_path                 \"\""
 %BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"music_pack_path               \"%APPDATA%\\crispy-doom\\music-packs\"" ^
+	"music_pack_path               \"%APPDATAESC%\\crispy-doom\\music-packs\"" ^
 	"music_pack_path               \"\""
 
 GOTO:EOF

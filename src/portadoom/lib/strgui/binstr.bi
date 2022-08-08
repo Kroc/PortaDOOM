@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 
 'binary string format:
 '-----------------------------------------------------------------------------
@@ -61,4 +61,4 @@ CONST BINSTR_NLINE = &HD
 
 'command: reprint character under cursor
 'data byte follows with number of characters to reprint
-CONST BINSTR_PRINT = &HB1
+CONST BINSTR_ECHO = &HB1

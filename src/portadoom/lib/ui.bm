@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2016-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2016-2021, BSD 2-clause
 
 'does a complete redraw of the screen
 '=============================================================================
@@ -27,58 +27,58 @@ SUB drawHeader
     DIM n%
 
     'clear the existing page line (title and page count)
-    STRGUI.Begin
-    STRGUI.SetVar "b", Themes(Themes(PageTheme%).themeHeader).colorBack
-    STRGUI.SetVar "f", Themes(Themes(PageTheme%).themeHeader).colorPageTab
-    STRGUI.SetVar "H", Themes(Themes(PageTheme%).themeHeader).colorHead
-    STRGUI.SetVar "B", Themes(Themes(PageTheme%).themeHeader).colorBold
-    STRGUI.SetVar "p", Themes(PageTheme%).colorPageTab
-    STRGUI.SetVar "!", Themes(PageTheme%).colorPageTab + BLINK
-    STRGUI.SetVar "t", Themes(PageTheme%).colorBack
-    STRGUI.SetVar "W", SCREEN_WIDTH
+    CALL STRGUI_Begin
+    STRGUI_SetVar "b", Themes(Themes(PageTheme%).themeHeader).colorBack
+    STRGUI_SetVar "f", Themes(Themes(PageTheme%).themeHeader).colorPageTab
+    STRGUI_SetVar "H", Themes(Themes(PageTheme%).themeHeader).colorHead
+    STRGUI_SetVar "B", Themes(Themes(PageTheme%).themeHeader).colorBold
+    STRGUI_SetVar "p", Themes(PageTheme%).colorPageTab
+    STRGUI_SetVar "!", Themes(PageTheme%).colorPageTab + BLINK
+    STRGUI_SetVar "t", Themes(PageTheme%).colorBack
+    STRGUI_SetVar "W", SCREEN_WIDTH
     
     'set background colour, blank one line
-    STRGUI.Add "^{F@f,B@b,&20,R@W}"
+    STRGUI_Add "^{F@f,B@b,&20,R@W}"
     'draw the background tab bar's edge
-    STRGUI.Add "^{&CD,R@W}"
+    STRGUI_Add "^{&CD,R@W}"
     'draw the foreground tab bar's edge
-    STRGUI.Add "^{F@p,B@t,&CD,R@W}"
+    STRGUI_Add "^{F@p,B@t,&CD,R@W}"
 
     'draw the page number tab
     '-------------------------------------------------------------------------
     IF PageCount% > 1 THEN
         DIM tab_text$
-        tab_text$ = "pg. " + STRINT$(PageNum%) _
-                  + " of " + STRINT$(PageCount%)
+        LET tab_text$ = "pg. " + STRINT$(PageNum%) _
+                      + " of " + STRINT$(PageCount%)
 
         'generate the tab graphic (according to the width of the title text)
         DIM text_len%
-        text_len% = LEN(tab_text$)
-        STRGUI.SetVar "T", text_len%
+        LET text_len% = LEN(tab_text$)
+        STRGUI_SetVar "T", text_len%
         
         DIM tab_width%
-        tab_width% = text_len% + 6
-        STRGUI.SetVar "w", tab_width%
+        LET tab_width% = text_len% + 6
+        STRGUI_SetVar "w", tab_width%
         
         
-        STRGUI.Add "^{X*,Y*,X+@W-@w-1,L}"
-        STRGUI.Add "^{&DA,&C4,R@w-2,&BF,N}"
-        STRGUI.Add "^{&B3}"
+        STRGUI_Add "^{X*,Y*,X+@W-@w-1,L}"
+        STRGUI_Add "^{&DA,&C4,R@w-2,&BF,N}"
+        STRGUI_Add "^{&B3}"
         
         'blinking left arrow if there's other pages
         IF PageNum% > 1 _
-            THEN STRGUI.Add "^{F@!,&1B,F-} " _
-            ELSE STRGUI.Add "  "
+            THEN STRGUI_Add "^{F@!,&1B,F-} " _
+            ELSE STRGUI_Add "  "
         'the "page. 1 of 1" text
-        STRGUI.Add tab_text$
+        STRGUI_Add tab_text$
         'blinking right arrow if there's other pages
         IF PageNum% < PageCount% _
-            THEN STRGUI.Add " ^{F@!,&1A,F-}" _
-            ELSE STRGUI.Add "  "
+            THEN STRGUI_Add " ^{F@!,&1A,F-}" _
+            ELSE STRGUI_Add "  "
         
-        STRGUI.Add "^{&B3}"
+        STRGUI_Add "^{&B3}"
         'connect the tab to the page space below
-        STRGUI.Add "^{N,&BE,&20,R@w-2,&D4}"
+        STRGUI_Add "^{N,&BE,&20,R@w-2,&D4}"
     END IF
     
     LOCATE HEAD_TOP, 1
@@ -88,52 +88,52 @@ SUB drawHeader
     '-------------------------------------------------------------------------
     DIM nav$, crumb$
     'begin with the 'root' mark
-    nav$ = " " + CHR$(ASC_DIAMOND) + " "
+    LET nav$ = " " + CHR$(ASC_DIAMOND) + " "
 
     'is there a parent category / folder?
     IF PageNav$ <> "" THEN
-        nav$ = nav$ + PageNav$ + " " + CHR$(ASC_LGLLMT) + " "
+        LET nav$ = nav$ + PageNav$ + " " + CHR$(ASC_LGLLMT) + " "
     END IF
 
     'get the name of the page from the history stack
-    crumb$ = historyPages$(historyDepth%)
+    LET crumb$ = historyPages$(historyDepth%)
     'if it has a page number on the end, this can be removed
     'when we're display names on the breadcrumb
     IF ASC(crumb$, LEN(crumb$) - 2) = PAGE_ASC THEN
         'remove the page number from the name
-        crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
+        LET crumb$ = LEFT$(crumb$, LEN(crumb$) - 3)
     END IF
     'there could be a space between the name and page number
-    nav$ = nav$ + _TRIM$(crumb$) + " "
+    LET nav$ = nav$ + _TRIM$(crumb$) + " "
 
     'if the page has its own title, append that
     IF PageTitle$ <> "" THEN
-        nav$ = nav$ + ": " + PageTitle$ + " "
+        LET nav$ = nav$ + ": " + PageTitle$ + " "
     END IF
 
     'prevent the breadcrumb from being too long
-    nav$ = RTRUNCATE$(nav$, SCREEN_WIDTH - tab_width% - 3)
+    LET nav$ = RTRUNCATE$(nav$, SCREEN_WIDTH - tab_width% - 3)
     
-    STRGUI.Begin
-    STRGUI.SetVar "n", LEN(nav$)
-    STRGUI.Add "^{F@f,B@b}"
-    STRGUI.Add "^{&C4,R@n,&BF}"
+    CALL STRGUI_Begin
+    STRGUI_SetVar "n", LEN(nav$)
+    STRGUI_Add "^{F@f,B@b}"
+    STRGUI_Add "^{&C4,R@n,&BF}"
     
-    STRGUI.Add "^{N,F@H}"
+    STRGUI_Add "^{N,F@H}"
     'walk the breadcrumb string and pick out the separators
     FOR n% = 1 TO LEN(nav$)
         DIM char%: char% = ASC(nav$, n%)
         SELECT CASE char%
-            CASE ASC_DIAMOND: STRGUI.Add "^{F@B,&04,F-}"
-            CASE ASC_LGLLMT: STRGUI.Add "^{F@B,&AE,F-}"
-            CASE ELSE: STRGUI.Add CHR$(ASC(nav$, n%))
+            CASE ASC_DIAMOND: STRGUI_Add "^{F@B,&04,F-}"
+            CASE ASC_LGLLMT: STRGUI_Add "^{F@B,&AE,F-}"
+            CASE ELSE: STRGUI_Add CHR$(ASC(nav$, n%))
         END SELECT
     NEXT n%
 
-    STRGUI.Add "^{F-,&D4}"
+    CALL STRGUI_Add("^{F-,&D4}")
     
     LOCATE HEAD_TOP, 1
-    STRGUI.Print
+    CALL STRGUI.Print
     
 END SUB
 
@@ -160,7 +160,7 @@ SUB drawPage
         IF PageLine% + n% > PageLineCount% THEN EXIT FOR
         LOCATE (PAGE_TOP + n%), 2
         COLOR Themes(PageTheme).colorFore , Themes(PageTheme).colorBack
-        BINSTR.Print PageLines$(PageLine% + n%)
+        CALL BINSTR_Print(PageLines$(PageLine% + n%))
     NEXT
 
     _CONTROLCHR ON
@@ -184,21 +184,21 @@ SUB drawScrollbar
     LET thumblen! = (PAGE_HEIGHT / PageLineCount%) * PAGE_HEIGHT
 
     'be doubly sure this is in range...
-    IF thumblen! < 1 THEN thumblen! = 1
-    IF thumblen! > PAGE_HEIGHT THEN thumblen! = PAGE_HEIGHT
+    IF thumblen! < 1 THEN LET thumblen! = 1
+    IF thumblen! > PAGE_HEIGHT THEN LET thumblen! = PAGE_HEIGHT
 
     'and where vertically the thumb is located
     DIM thumbpos!
     IF PageLine% = 0 THEN
-        thumbpos! = 0
+        LET thumbpos! = 0
     ELSE
-        thumbpos! = (PAGE_HEIGHT / PageLineCount%) * PageLine%
+        LET thumbpos! = (PAGE_HEIGHT / PageLineCount%) * PageLine%
     END IF
 
     'be doubly sure this is in range...
     IF thumbpos! < 0 THEN thumbpos! = 0
     IF thumbpos! + thumblen! > PAGE_HEIGHT THEN
-        thumbpos! = PAGE_HEIGHT - thumblen!
+        LET thumbpos! = PAGE_HEIGHT - thumblen!
     END IF
 
     'draw the thumb
@@ -244,11 +244,11 @@ SUB drawStatus
         _CONTROLCHR ON
     END IF
     
-    ''STRGUI.Begin
-    ''STRGUI.Add STRGUI.WINDOW$(70, 24, 0)
-    ''STRGUI.Add "^{&FE} HELP :: KEYS^{N}"
-    ''STRGUI.Add "^{*%,X-1}_^{R70}"
-    ''STRGUI.Add "^{%*}"
+    ''CALL STRGUI_Begin
+    ''STRGUI_Add STRGUI.WINDOW$(70, 24, 0)
+    ''STRGUI_Add "^{&FE} HELP :: KEYS^{N}"
+    ''STRGUI_Add "^{*%,X-1}_^{R70}"
+    ''STRGUI_Add "^{%*}"
     ''
     ''LOCATE 4,(SCREEN_WIDTH - 70) \ 2
     ''COLOR HELP_FGND, HELP_BKGD
@@ -268,25 +268,28 @@ SUB drawDialog
     DIM boxTop%: boxTop% = 1 + (SCREEN_HEIGHT - boxHeight%) / 2
 
     'draw the dialogue box
-    STRGUI.Begin
-    STRGUI.SetVar "!", HELP_FGND + BLINK
-    STRGUI.SetVar "f", HELP_FGND
-    STRGUI.SetVar "b", HELP_BKGD
-    STRGUI.SetVar "w", boxWidth%
+    CALL STRGUI_Begin
+    CALL STRGUI_SetVar("!", HELP_FGND + BLINK)
+    CALL STRGUI_SetVar("f", HELP_FGND)
+    CALL STRGUI_SetVar("b", HELP_BKGD)
+    CALL STRGUI_SetVar("w", boxWidth%)
     
-    STRGUI.Add "^{F@f,B@b}"
-    STRGUI.Add STRGUI.WINDOW$(boxWidth%, boxHeight%, 1)
+    CALL STRGUI_Add("^{F@f,B@b}")
+    CALL STRGUI_Add(STRGUI.WINDOW$(boxWidth%, boxHeight%, 1))
     
-    STRGUI.Add "^{X+1,L}"
-    STRGUI.Add dialogText$
+    CALL STRGUI_Add("^{X+1,L}")
+    CALL STRGUI_Add(dialogText$)
     
     'divider line for buttons
-    STRGUI.Add "^{X-2,&C3,&C4,R@w-2,&B4,N}"
+    CALL STRGUI_Add("^{X-2,&C3,&C4,R@w-2,&B4,N}")
     
-    STRGUI.Add SPACE$(dialogWidth - 17) + "^{FW,FC}[Y]^{F-} YES^{F-} or ^{FW,FC}[N]^{F-} NO^{F-}"
+    CALL STRGUI_Add( _
+        SPACE$(dialogWidth - 17) + _
+        "^{FW,FC}[Y]^{F-} YES^{F-} or ^{FW,FC}[N]^{F-} NO^{F-}" _
+    )
     
     LOCATE boxTop%, boxLeft%
-    STRGUI.Print
+    CALL STRGUI.Print
 END SUB
 
 'convert a line of DOSmag semantic-formatted text to strgui-encoded text
@@ -324,11 +327,11 @@ SUB formatLine (indent%, src$, default_theme%)
     'clear the strgui string builder; this will be the current line of text
     'being formatted; since the input string may be longer than the allowed
     'line width, multiple output lines may need to be produced
-    STRGUI.Begin
+    CALL STRGUI_Begin
     
     'set a strgui variable for the current line-length. this will be used
     'for drawing borders according to the width of the page
-    STRGUI.SetVar "w", line_width%
+    CALL STRGUI_SetVar("w", line_width%)
     
     'visual length of the line being built (sans format-codes)
     DIM line_len%: LET line_len% = 0
@@ -363,16 +366,16 @@ SUB formatLine (indent%, src$, default_theme%)
             'toggle the 'warning box' state
             LET is_warn` = TRUE
             'switch the warning colours, draw the top-border
-            STRGUI.Add " ^{B@b,F@!,&DA,&C4,R@w-4,&BF}"
+            CALL STRGUI_Add(" ^{B@b,F@!,&DA,&C4,R@w-4,&BF}")
             'dispatch the top-border line and continue with intended line
             GOSUB addLine
         END IF
         
         'switch to the warning colours, draw the border, internal space
         'and jump back to the inside of the box for further printing
-        STRGUI.Add " ^{F@f,B@b,F@!,&B3,F-}"
-        STRGUI.Add " ^{*X,&20,R@w-6}"
-        STRGUI.Add " ^{F@!,&B3,F-,X*}"
+        CALL STRGUI_Add(" ^{F@f,B@b,F@!,&B3,F-}")
+        CALL STRGUI_Add(" ^{*X,&20,R@w-6}")
+        CALL STRGUI_Add(" ^{F@!,&B3,F-,X*}")
         
         'reduce the width of the line to account
         'for the box borders when word-wrapping
@@ -386,7 +389,7 @@ SUB formatLine (indent%, src$, default_theme%)
         LET theme% = Themes(theme%).themeWarning: GOSUB switchTheme
         
         'switch to the warning colours and draw the bottom border
-        STRGUI.Add " ^{B@b,F@!,&C0,&C4,R@w-4,&D9}"
+        CALL STRGUI_Add(" ^{B@b,F@!,&C0,&C4,R@w-4,&D9}")
         
         'dispatch the bottom-border line and continue with intended line
         GOSUB addLine
@@ -401,7 +404,7 @@ SUB formatLine (indent%, src$, default_theme%)
     'before adding the blank line itself
     IF _TRIM$(src$) = "" THEN
         'output a blank line and skip any further processing
-        STRGUI.Begin: LET indent% = 0
+        CALL STRGUI_Begin: LET indent% = 0
         GOSUB pushLine
         EXIT SUB
     END IF
@@ -414,7 +417,7 @@ SUB formatLine (indent%, src$, default_theme%)
        ASC(src$, src% + 1) = ASC_SPC _
     THEN
         'add the bullet point to the line
-        STRGUI.Add "^{F@B,&07,F-} "
+        CALL STRGUI_Add("^{F@B,&07,F-} ")
         LET line_len% = line_len% + 2
         
         'increase the indent (for wrapped lines) to after the bullet
@@ -451,15 +454,15 @@ SUB formatLine (indent%, src$, default_theme%)
         'skip the heading marker
         LET src% = src% + 1: LET src_col% = src_col% + 1
         'set the heading colour
-        STRGUI.Add "^{F@H}"
+        CALL STRGUI_Add("^{F@H}")
         'check for the dividing lines
         IF ASC(src$, src%) = CTL_LINE1 _
         OR ASC(src$, src%) = CTL_LINE2 _
         THEN
             'TODO: what a mess
-            IF ASC(src$, src%) = CTL_LINE1 THEN STRGUI.Add CHR$(ASC_BOX_DBL_H)
-            IF ASC(src$, src%) = CTL_LINE2 THEN STRGUI.Add CHR$(ASC_BOX_H)
-            STRGUI.Add "^{R" + STRINT$(line_width% - line_len%) + "}"
+            IF ASC(src$, src%) = CTL_LINE1 THEN STRGUI_Add CHR$(ASC_BOX_DBL_H)
+            IF ASC(src$, src%) = CTL_LINE2 THEN STRGUI_Add CHR$(ASC_BOX_H)
+            CALL STRGUI_Add("^{R" + STRINT$(line_width% - line_len%) + "}")
             'ignore the rest of the line!
             GOSUB addLine: EXIT SUB
         ELSE
@@ -520,7 +523,7 @@ SUB formatLine (indent%, src$, default_theme%)
                 'to the beginning of the new line, indentation has already
                 'been handled
                 IF line_len% > 0 THEN
-                    STRGUI.Add " "
+                    CALL STRGUI_Add(" ")
                     LET line_len% = line_len% + 1
                 END IF
             ELSE
@@ -861,22 +864,22 @@ SUB formatLine (indent%, src$, default_theme%)
                         'clear the bold/italic/term state;
                         'this removes the need for a *lot* of fiddly typing
                         IF is_bold` = TRUE THEN
-                            STRGUI.Add "^{F-}"
+                            CALL STRGUI_Add("^{F-}")
                             LET is_bold` = FALSE
                         END IF
                         IF is_italic` = TRUE THEN
-                            STRGUI.Add "^{F-}"
+                            CALL STRGUI_Add("^{F-}")
                             LET is_italic` = FALSE
                         END IF
                         IF is_term` = TRUE THEN
-                            STRGUI.Add "^{F-}"
+                            CALL STRGUI_Add("^{F-}")
                             LET is_term` = FALSE
                         END IF
                     END IF
                 END IF
 
                 'append the white-space to the current line
-                STRGUI.Add SPACE$(ws%)
+                CALL STRGUI_Add(SPACE$(ws%))
                 LET line_len% = line_len% + ws%
 
             CASE ELSE
@@ -927,7 +930,7 @@ SUB formatLine (indent%, src$, default_theme%)
     pushWord:
     '-------------------------------------------------------------------------
     'add the word to the end of the line:
-    STRGUI.Add word$
+    CALL STRGUI_Add(word$)
     LET line_len% = line_len% + word_len%
     RETURN
     
@@ -945,28 +948,28 @@ SUB formatLine (indent%, src$, default_theme%)
     'currently in a warning-box?
     IF is_warn` = TRUE THEN
         'switch the warning colours
-        STRGUI.Add " ^{F@f,B@b}"
+        CALL STRGUI_Add(" ^{F@f,B@b}")
         'draw the box background and return to the inside
-        STRGUI.Add "^{F@!,&B3,F-} "
-        STRGUI.Add "^{*X,&20,R@w-6} "
-        STRGUI.Add "^{F@!,&B3,F-}"
-        STRGUI.Add "^{X*}" '< jump back to the inside of the box
+        CALL STRGUI_Add("^{F@!,&B3,F-} ")
+        CALL STRGUI_Add("^{*X,&20,R@w-6} ")
+        CALL STRGUI_Add("^{F@!,&B3,F-}")
+        CALL STRGUI_Add("^{X*}") '< jump back to the inside of the box
         'reduce the width of the line to account
         'for the box borders when word-wrapping
         LET line_width% = line_width% - 6
     END IF
     'is this a heading we're processing?
-    IF is_heading` = TRUE THEN STRGUI.Add "^{F@H}"
+    IF is_heading` = TRUE THEN CALL STRGUI_Add("^{F@H}")
     'are we currently in parentheses?
-    IF word_paren` = TRUE THEN STRGUI.Add "^{F@P}"
+    IF word_paren` = TRUE THEN CALL STRGUI_Add("^{F@P}")
     'in key mode?
-    IF word_key` = TRUE THEN STRGUI.Add "^{F@K}"
+    IF word_key` = TRUE THEN CALL STRGUI_Add("^{F@K}")
     'are we currently bold?
-    IF word_bold` = TRUE THEN STRGUI.Add "^{F@B}"
+    IF word_bold` = TRUE THEN CALL STRGUI_Add("^{F@B}")
     'are we currently italic?
-    IF word_italic` = TRUE THEN STRGUI.Add "^{F@I}"
+    IF word_italic` = TRUE THEN CALL STRGUI_Add("^{F@I}")
     'are we currently in a term?
-    IF word_term` = TRUE THEN STRGUI.Add "^{F@T}"
+    IF word_term` = TRUE THEN CALL STRGUI_Add("^{F@T}")
     'begin the line with the remaining word
     GOSUB pushWord
 
@@ -996,11 +999,11 @@ SUB formatLine (indent%, src$, default_theme%)
         'does the line need to be centred?
         IF align% = FORMAT_CENTER THEN
             'pad the left-side with enough spaces to centre the text
-            STRGUI$ = SPACE$((line_width% - line_len%) / 2) + STRGUI$
+            LET STRGUI$ = SPACE$((line_width% - line_len%) / 2) + STRGUI$
 
         ELSEIF align% = FORMAT_RIGHT THEN
             'pad the left-side with enough spaces to fit-right
-            STRGUI$ = SPACE$(line_width% - line_len%) + STRGUI$
+            LET STRGUI$ = SPACE$(line_width% - line_len%) + STRGUI$
         END IF
     END IF
 
@@ -1014,7 +1017,7 @@ SUB formatLine (indent%, src$, default_theme%)
     LET PageLines$(PageLineCount%) = STRGUI.Compile$
     'start a fresh line
     LET line_len% = 0
-    STRGUI.Begin
+    CALL STRGUI_Begin
 
     RETURN
     
@@ -1023,15 +1026,15 @@ SUB formatLine (indent%, src$, default_theme%)
     'when themes are changed, we change the colour variables.
     'since the binary string is only compiled at the end of the line,
     'this implies that the only one theme can be used per-line
-    STRGUI.SetVar "b", Themes(theme%).colorBack
-    STRGUI.SetVar "f", Themes(theme%).colorFore
-    STRGUI.SetVar "B", Themes(theme%).colorBold
-    STRGUI.SetVar "I", Themes(theme%).colorItalic
-    STRGUI.SetVar "T", Themes(theme%).colorTerm
-    STRGUI.SetVar "H", Themes(theme%).colorHead
-    STRGUI.SetVar "P", Themes(theme%).colorParen
-    STRGUI.SetVar "K", Themes(theme%).colorKey
-    STRGUI.SetVar "!", Themes(theme%).colorFore + BLINK
+    CALL STRGUI_SetVar("b", Themes(theme%).colorBack)
+    CALL STRGUI_SetVar("f", Themes(theme%).colorFore)
+    CALL STRGUI_SetVar("B", Themes(theme%).colorBold)
+    CALL STRGUI_SetVar("I", Themes(theme%).colorItalic)
+    CALL STRGUI_SetVar("T", Themes(theme%).colorTerm)
+    CALL STRGUI_SetVar("H", Themes(theme%).colorHead)
+    CALL STRGUI_SetVar("P", Themes(theme%).colorParen)
+    CALL STRGUI_SetVar("K", Themes(theme%).colorKey)
+    CALL STRGUI_SetVar("!", Themes(theme%).colorFore + BLINK)
     
     RETURN
     

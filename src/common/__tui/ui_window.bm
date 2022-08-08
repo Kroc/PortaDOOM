@@ -20,9 +20,9 @@ FUNCTION TUI_Windows_Add ( _
     LET TUI_Windows(window_id).borderStyle = borderStyle
     LET TUI_Windows(window_id).decoration = TUI_Strings_Add(decoration)
     
-    STRGUI.Begin
-    STRGUI.Add STRGUI.WINDOW$(width, height, borderStyle)
-    STRGUI.Add decoration
+    CALL STRGUI_Begin
+    STRGUI_Add STRGUI.WINDOW$(width, height, borderStyle)
+    STRGUI_Add decoration
     LET TUI_Windows(window_id).cache = TUI_Strings_Add(STRGUI.Compile$)
     
     'add the window to the draw stack and return the control-ID
@@ -41,5 +41,5 @@ SUB TUI_Windows_Print (controlID AS _UNSIGNED _BYTE)
     DIM window_id AS _UNSIGNED _BYTE
     LET window_id = TUI_Controls(controlID).kind_id
     
-    BINSTR.Print TUI_Strings(TUI_Windows(window_id).cache)
+    CALL BINSTR_Print(TUI_Strings(TUI_Windows(window_id).cache))
 END SUB

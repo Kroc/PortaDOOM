@@ -53,17 +53,17 @@
 '               if 'n' is present, that number of characters are "shadowed"
 
 '=============================================================================
-SUB STRGUI.Begin
+SUB STRGUI_Begin
     LET STRGUI$ = ""
 END SUB
 
 '=============================================================================
-SUB STRGUI.Add (text$)
+SUB STRGUI_Add (text$)
     LET STRGUI$ = STRGUI$ + text$
 END SUB
 
 '=============================================================================
-SUB STRGUI.SetVar (variable$, value%)
+SUB STRGUI_SetVar (variable$, value%)
     LET STRGUI.Vars(ASC(variable$)) = value%
 END SUB
 
@@ -71,7 +71,7 @@ END SUB
 'not recommended -- you should cache the compiled string
 '=============================================================================
 SUB STRGUI.Print ()
-    BINSTR.Print STRGUI.Compile$
+    CALL BINSTR_Print(STRGUI.Compile$)
     LET STRGUI$ = ""
 END FUNCTION
 

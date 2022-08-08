@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'iwads.bm : manage IWADs
 
 'IWADs in PortaDOOM are not automatically enumerated, like engines, as we
@@ -7,8 +7,8 @@
 'therefore the IWAD pool of meta-data is built on-demand with files for
 'classic IWADs present
 '
-'IWADs are tricky because they represent a commonly needed resource for other
-'WADs, but are also games themselves
+'IWADs are tricky because they represent a commonly needed resource
+'for other WADs, but are also games themselves
 
 '   IWADs_FindMeta&(path$)                      -> LONG
 '   IWADs_EnumerateINI(INIFile$)
@@ -274,14 +274,14 @@ iwadDOOM:
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM.WAD" _
     )
-    IF iwad_path$ <> "" THEN GOTO iwad_DOOM_BFG
+    IF iwad_path$ <> "" THEN GOTO iwadDOOM_BFG
     
     'is Steam "DOOM 3 BFG Edition" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
         "InstallLocation", "base\wads\DOOM.WAD" _
     )
-    IF iwad_path$ <> "" THEN GOTO iwad_DOOM_BFG
+    IF iwad_path$ <> "" THEN GOTO iwadDOOM_BFG
     
     'can't find DOOM.WAD, try FreeDOOM substitution?
     IF iwad_path$ = "" THEN
@@ -294,7 +294,7 @@ iwadDOOM:
     
     RETURN
 
-iwad_DOOM_BFG:
+iwadDOOM_BFG:
     '-------------------------------------------------------------------------
     'patch the DOOM BFG WADs
     PRINT "": COLOR WHITE
@@ -352,14 +352,14 @@ iwadDOOM2:
         "SOFTWARE\GOG.com\Games\1135892318", _
         "Path", "base\wads\DOOM2.WAD" _
     )
-    IF iwad_path$ <> "" THEN GOTO iwad_DOOM2_BFG
+    IF iwad_path$ <> "" THEN GOTO iwadDOOM2_BFG
     
     'is Steam "DOOM 3 BFG Edition" installed?
     LET iwad_path$ = IWADs_GetRegistryPath$( _
         "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
         "InstallLocation", "base\wads\DOOM2.WAD" _
     )
-    IF iwad_path$ <> "" THEN GOTO iwad_DOOM2_BFG
+    IF iwad_path$ <> "" THEN GOTO iwadDOOM2_BFG
     
     'can't find DOOM2.WAD, try FreeDOOM substitution?
     IF iwad_path$ = "" THEN
@@ -372,7 +372,7 @@ iwadDOOM2:
     
     RETURN
     
-iwad_DOOM2_BFG:
+iwadDOOM2_BFG:
     '-------------------------------------------------------------------------
     'patch the DOOM2 BFG WADs
     PRINT "": COLOR WHITE

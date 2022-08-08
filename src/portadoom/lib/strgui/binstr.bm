@@ -1,8 +1,8 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 
 'prints a binary string to screen
 '=============================================================================
-SUB BINSTR.Print (text$)
+SUB BINSTR_Print (text$)
     
     DIM FStates(0 TO 255) AS _UNSIGNED _BYTE: DIM FState AS _UNSIGNED _BYTE
     DIM BStates(0 TO 255) AS _UNSIGNED _BYTE: DIM BState AS _UNSIGNED _BYTE
@@ -155,7 +155,7 @@ SUB BINSTR.Print (text$)
                     'starting at the left margin
                     LOCATE CSRLIN + 1, LStates(LState)
                     
-                CASE BINSTR_PRINT '= shadow characters
+                CASE BINSTR_ECHO '= shadow characters
                     '---------------------------------------------------------
                     'read the value byte
                     LET i% = i% + 1
@@ -439,6 +439,6 @@ END FUNCTION
 'generates a command to reprint a number of characters
 '=============================================================================
 FUNCTION BINSTR.ESC_PRINT$ (n%%)
-    LET BINSTR.ESC_PRINT$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_PRINT) _
+    LET BINSTR.ESC_PRINT$ = CHR$(BINSTR_ESC) + CHR$(BINSTR_ECHO) _
         + CHR$(n%%)
 END FUNCTION

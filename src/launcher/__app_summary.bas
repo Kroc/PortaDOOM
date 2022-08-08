@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 
 '=============================================================================
 'cache the summary screen base UI
@@ -14,47 +14,47 @@ LET Y = 3: LET X = 3
 LET W = 75: LET H = 25
 
 'prepare our window decorations (custom drawing)
-STRGUI.Begin
-STRGUI.SetVar "w", W
-STRGUI.SetVar "h", H
+CALL STRGUI_Begin
+STRGUI_SetVar "w", W
+STRGUI_SetVar "h", H
 
 'title divider:
-STRGUI.Add "^{X2,Y2,L}"
-STRGUI.Add "^{X0,Y3,&C6,&CD,R@w-2,&B5}"
+STRGUI_Add "^{X2,Y2,L}"
+STRGUI_Add "^{X0,Y3,&C6,&CD,R@w-2,&B5}"
 'footer divider:
-STRGUI.Add "^{X0,Y@h-2,&C6,&CD,R@w-2,&B5,N}"
+STRGUI_Add "^{X0,Y@h-2,&C6,&CD,R@w-2,&B5,N}"
 
 'right-hand column:
 'define the width of the column
 DIM CW AS _UNSIGNED _BYTE: LET CW = 22
-STRGUI.SetVar "c", CW
+STRGUI_SetVar "c", CW
 
 'draw the border down the screen
-STRGUI.Add "^{Y3,X@w-@c-1}"
-STRGUI.Add "^{L,&D1,N}"
+STRGUI_Add "^{Y3,X@w-@c-1}"
+STRGUI_Add "^{L,&D1,N}"
 'walk down the screen drawing the vertical line
 'TODO: need a vertical drawing mode to make this easier
-FOR i = 1 to H - 6: STRGUI.Add "^{&B3,N}": NEXT i
-STRGUI.Add "^{&CF,L-}"
+FOR i = 1 to H - 6: STRGUI_Add "^{&B3,N}": NEXT i
+STRGUI_Add "^{&CF,L-}"
 
 'engine:
 'return to the top of the window
-STRGUI.Add "^{X3,Y6}"
+STRGUI_Add "^{X3,Y6}"
 
-STRGUI.SetVar "e", W - CW - 6
-STRGUI.Add "^{Fk,Bw,&20,R@e,Bb,&DC,B-,N}"
-STRGUI.Add "^{B-,&20,&DF,R@w-@c-6,F-,N}"
+STRGUI_SetVar "e", W - CW - 6
+STRGUI_Add "^{Fk,Bw,&20,R@e,Bb,&DC,B-,N}"
+STRGUI_Add "^{B-,&20,&DF,R@w-@c-6,F-,N}"
 
-STRGUI.Add "^{FW,&7F,F-,FW} ^{L}"
-STRGUI.Add "An exact recreation of the original DOOM as it^{N}"
-STRGUI.Add "was in 1993. Renders at 320 x 200 resolution,^{N}"
-STRGUI.Add "regardless of desktop resolution."
-STRGUI.Add "^{F-,L-,N,N}"
+STRGUI_Add "^{FW,&7F,F-,FW} ^{L}"
+STRGUI_Add "An exact recreation of the original DOOM as it^{N}"
+STRGUI_Add "was in 1993. Renders at 320 x 200 resolution,^{N}"
+STRGUI_Add "regardless of desktop resolution."
+STRGUI_Add "^{F-,L-,N,N}"
 
 'mods:
-STRGUI.Add "^{X0,&C3,&C4,R@w-@c-3,&B4,N}"
-STRGUI.Add "^{N,N}"
-STRGUI.Add "^{FW}No selected mods.^{F-,N,N}"
+STRGUI_Add "^{X0,&C3,&C4,R@w-@c-3,&B4,N}"
+STRGUI_Add "^{N,N}"
+STRGUI_Add "^{FW}No selected mods.^{F-,N,N}"
 
 DIM temp$
 LET temp$ = STRGUI$

@@ -63,4 +63,4 @@ CONST BINSTR_NLINE = &HD
 
 'command: reprint character under cursor
 'data byte follows with number of characters to reprint
-CONST BINSTR_PRINT = &HB1
+CONST BINSTR_ECHO = &HB1

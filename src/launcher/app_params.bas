@@ -1,5 +1,8 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'app_params.bas : read in command-line parameters, enumerate environment
+
+LET ui_statusbar_left$(1) = "Parsing Parameters..."
+CALL UI_ClearScreen
 
 'read command-line switches:
 '=============================================================================
@@ -403,5 +406,10 @@ ELSE
 END IF
 
 cmd_done:
-'-----------------------------------------------------------------------------
+'=============================================================================
 ''LET CMD_DEBUG` = TRUE
+
+'search through the "ports" folder for game engines and read in their details.
+'this also builds a set of look-up tables for cross-referencing tags with
+'games and engines so that we can filter out incompatible engines
+CALL Engines_Enumerate

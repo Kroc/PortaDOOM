@@ -1,5 +1,10 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 'app_launch.bas : build a command string to launch a DOOM engine!
+
+save_params:
+'=============================================================================
+'save the selected engine & parameters to the user INI file, to offer
+'the player to re-use the previous engine setup in the future
 
 launch:
 '=============================================================================

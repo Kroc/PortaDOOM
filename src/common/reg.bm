@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2020, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
 
 'this code adapted from the example at:
 'http://www.qb64.org/wiki/Windows_Registry_Access
@@ -7,6 +7,8 @@
 
 '=============================================================================
 FUNCTION Reg_Query$(root_key, sub_key$, key_value$)
+    DIM R$
+    
     'ensure no padding on the sub key, and null-terminate it for the WINAPI
     LET sub_key$ = RTRIM$(sub_key$) + CHR$(0)
     'null-terminate the value name
@@ -20,13 +22,17 @@ FUNCTION Reg_Query$(root_key, sub_key$, key_value$)
     GOSUB query
     
     'if we found what we're looking for, exit
-    IF LEN(Reg_Query$) <> 0 THEN EXIT FUNCTION
+    IF LEN(R$) <> 0 THEN
+        LET Reg_Query$ = R$
+        EXIT FUNCTION
+    END IF
     
     IF CPU_BIT = 64 THEN
         LET mode& = KEY_WOW64_64KEY
         GOSUB query
     END IF
     
+    LET Reg_Query$ = R$
     EXIT FUNCTION
     
 query:
@@ -56,7 +62,7 @@ query:
         IF l THEN
             ''_ECHO "! RegQueryValueExA failed. Error: 0x" + LCASE$(HEX$(l))
         ELSE
-            LET Reg_Query$ = RTRIM$(LEFT$(dataBytes, dataLen - 1))
+            LET R$ = RTRIM$(LEFT$(dataBytes, dataLen - 1))
         END IF
         
     ELSEIF l <> ERROR_FILE_NOT_FOUND THEN
