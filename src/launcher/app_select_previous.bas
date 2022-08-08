@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
 'ui_select_previous.bas : select last-used engine, or choose another
 
 select_previous:

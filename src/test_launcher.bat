@@ -1,4 +1,4 @@
-:: PortaDOOM, copyright (C) Kroc Camen 2016-2021, BSD 2-clause
+:: PortaDOOM, copyright (C) Kroc Camen 2016-2022, BSD 2-clause
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
 REM # switch to the directory of this script

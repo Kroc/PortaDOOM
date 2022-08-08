@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
 'engines.bi : definitions for Engines (source-ports to play DOOM)
 
 'structure to store the details of an engine:

@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
 
 CONST ONKEY_ESC = KEY_USER1
 CONST ONKEY_BKSPC = KEY_USER2

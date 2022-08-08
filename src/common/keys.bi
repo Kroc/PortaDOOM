@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
 
 'the `KEY` and `ON KEY` functions take a built-in key identifier given below.
 'for any other key, a `KEY_USER*` constant should be given

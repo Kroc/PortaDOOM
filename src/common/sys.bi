@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2021, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
 
 'get CPU type for the system (32 / 64-bit)
 DIM SHARED CPU_BIT AS _UNSIGNED LONG
