@@ -1,2 +1,5 @@
 # allow the inclusion of executables in the tools directory
 !*.exe
+
+# except our own config.exe which will be built from source
+config.exe

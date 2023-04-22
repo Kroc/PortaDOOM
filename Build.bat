@@ -18,6 +18,7 @@ IF %WINBIT% EQU 32 SET BIN_7ZA="%~dp0bin\7za\7za_x86.exe"
 REM # location of UPX executable
 REM # (for compression EXE files)
 SET BIN_UPX="%~dp0bin\upx\upx.exe"
+SET "UPX_ULTRA=%BIN_UPX% --all-methods --all-filters --ultra-brute"
 
 REM # define ZIP compression profiles:
 REM # -ms=on    : solid-mode on (default)
@@ -97,7 +98,7 @@ IF %CMPLVL% EQU 1 (
 	ECHO * Compress "PortaDOOM.exe"
 	ECHO:
 	DEL PortaDOOM\PortaDOOM.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute "PortaDOOM\PortaDOOM.exe"
+	%UPX_ULTRA% "PortaDOOM\PortaDOOM.exe"
 	ECHO:
 )
 
@@ -120,7 +121,31 @@ IF %CMPLVL% EQU 1 (
 	ECHO * Compress "launcher.exe"
 	ECHO:
 	DEL PortaDOOM\files\launcher.upx  >NUL 2>&1
-	%BIN_UPX% --ultra-brute PortaDOOM\files\launcher.exe
+	%UPX_ULTRA% PortaDOOM\files\launcher.exe
+	ECHO:
+)
+
+:compress_config
+REM ----------------------------------------------------------------------------
+ECHO:
+ECHO * Compile "config.exe"
+ECHO:
+
+REM # compile the config editor
+%BIN_QB64% -x -e -o ^
+	"..\..\PortaDOOM\files\tools\config.exe" ^
+	"..\..\src\config.qb64"
+
+REM # if that errored, pause to be able to show the error message
+IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
+
+REM # compress the config executable
+IF %CMPLVL% EQU 1 (
+	ECHO:
+	ECHO * Compress "config.exe"
+	ECHO:
+	DEL PortaDOOM\files\tools\config.upx  >NUL 2>&1
+	%UPX_ULTRA% PortaDOOM\files\tools\config.exe
 	ECHO:
 )
 
@@ -322,9 +347,7 @@ ECHO:
 SET "FILES="
 
 FOR /R ".\PortaDOOM\files\ports" %%F IN (*.exe) DO (
-	REM # test if the executable is already compressed
 	SET EXE_FILE=%%~F
-	SET "EXE_INFO="
 	CALL :upx
 )
 
@@ -334,10 +357,11 @@ PAUSE & GOTO:EOF
 :upx
 REM ----------------------------------------------------------------------------
 REM # check if the file is already compressed
+SET "EXE_INFO="
 FOR /F "delims=" %%G IN ('%BIN_UPX% -qqq -l "%EXE_FILE%"') DO @SET EXE_INFO=%%G
 REM # if not compressed, run UPX on the executable
 IF "%EXE_INFO%" == "" (
-	%BIN_UPX% --all-methods --all-filters --ultra-brute "%EXE_FILE%"
+	%UPX_ULTRA% "%EXE_FILE%"
 )
 GOTO:EOF
 

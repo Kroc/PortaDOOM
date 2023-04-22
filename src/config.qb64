@@ -1,0 +1,119 @@
+'copyright (C) Kroc Camen 2022, BSD 2-clause
+
+$CONSOLE:ONLY
+
+'for speed, default to long (32-bit) for variables
+'(and function returns, if not otherwise specified)
+DEFLNG a-z
+
+'generic 'index' counters
+DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
+
+DIM SECTION$ 'current section
+
+'=============================================================================
+'$INCLUDE:'common\include.bi'
+
+'no command-line parameters? display the command-line help
+IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
+
+DIM SHARED CMD_FILE$
+DIM SHARED CMD_ACTION$
+DIM SHARED CMD1$, CMD2$, CMD3$
+DIM SHARED CMD_SECTION$
+DIM SHARED CMD_FIELD$
+DIM SHARED CMD_VALUE$
+
+IF UCASE$(COMMAND$(1)) = "/?" THEN
+cmd_help:
+    PRINT ""
+    PRINT " CONFIG.EXE <file> <action> [action-params...]"
+    PRINT ""
+    PRINT " CONFIG.EXE <file> ADD [section] <field-name> [value]"
+    PRINT ""
+    PRINT " CONFIG.EXE <file> DEL <section>"
+    PRINT " CONFIG.EXE <file> DEL [section] <field-name>"
+    PRINT ""
+    PRINT " CONFIG.EXE <file> SET [section] <field-name> <value>"
+    
+    COLOR WHITE
+    PRINT ""
+    PRINT " Press Any Key to Exit"
+    PRINT ""
+    
+    DO: LOOP WHILE INKEY$ = "": SYSTEM
+END IF
+
+LET CMD_FILE$ = COMMAND$(1)
+IF CMD_FILE$ = "" THEN SYSTEM 1
+
+PRINT "FILE: " + CMD_FILE$
+
+LET CMD_ACTION$ = UCASE$(COMMAND$(2))
+IF CMD_ACTION$ = "" THEN SYSTEM 2
+
+PRINT "ACTION: " + CMD_ACTION$
+
+'we don't know the meaning of the following params yet,
+'so capture them to temporary names
+LET CMD1$ = COMMAND$(3)
+LET CMD2$ = COMMAND$(4)
+LET CMD3$ = COMMAND$(5)
+
+SELECT CASE CMD_ACTION$
+    CASE "ADD":
+        'is a section name specified?
+        IF LEFT$(CMD1$, 1) = "[" THEN
+            LET CMD_SECTION$ = CMD1$
+            LET CMD_FIELD$ = CMD2$
+            LET CMD_VALUE$ = CMD3$
+        ELSE
+            LET CMD_FIELD$ = CMD1$
+            LET CMD_VALUE$ = CMD2$
+        END IF
+END SELECT
+
+'=============================================================================
+'is the given path absolute?
+DIM in_file$, out_file$
+IF Paths_IsAbsolute(CMD_FILE$) THEN
+    LET in_file$ = CMD_FILE$
+    LET out_file$ = in_file$ + ".bak"
+ELSE
+    LET in_file$ = DIR_CUR$ + CMD_FILE$
+    LET out_file$ = in_file$ + ".bak"
+END IF
+
+PRINT "in:  " + in_file$
+PRINT "out: " + out_file$
+
+IF NOT _FILEEXISTS(in_file$) THEN SYSTEM 3
+
+'read the input file
+DIM INFILE: LET INFILE=FREEFILE
+OPEN in_file$ FOR BINARY AS #INFILE
+
+DIM OUTFILE: LET OUTFILE=FREEFILE
+OPEN out_file$ FOR BINARY ACCESS WRITE AS #OUTFILE
+
+LET SECTION$ = ""
+
+DO UNTIL EOF(INFILE)
+
+DIM LINE$
+LINE INPUT #INFILE, LINE$
+
+'a blank line (signals end of section)
+IF _TRIM$(LINE$) = "" THEN
+END IF
+'is this a section header?
+IF LEFT$(LINE$, 1) = "[" THEN
+    LET SECTION$ = _TRIM$(LINE$)
+END IF
+
+LOOP
+CLOSE #INFILE
+CLOSE #OUTFILE
+SYSTEM
+
+'$INCLUDE:'common\include.bm'
