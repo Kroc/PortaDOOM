@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2023, BSD 2-clause
 'app_params.bas : read in command-line parameters, enumerate environment
 
 LET ui_statusbar_left$(1) = "Parsing Parameters..."

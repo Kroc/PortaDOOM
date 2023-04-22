@@ -1,4 +1,4 @@
-:: PortaDOOM, copyright (C) Kroc Camen 2016-2020, BSD 2-clause
+:: PortaDOOM, copyright (C) Kroc Camen 2016-2023, BSD 2-clause
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
 SET "LAUNCHER=..\launcher.exe /WAIT"

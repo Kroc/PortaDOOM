@@ -1,4 +1,4 @@
-'copyright (C) Kroc Camen 2018-2022, BSD 2-clause
+'copyright (C) Kroc Camen 2018-2023, BSD 2-clause
 'app_launch.bas : build a command string to launch a DOOM engine!
 
 save_params:
