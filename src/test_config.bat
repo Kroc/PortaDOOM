@@ -4,7 +4,7 @@
 REM # switch to the directory of this script
 PUSHD "%~dp0"
 
-SET CONFIG_EXE=PortaDOOM\files\tools\config.exe
+SET CONFIG_EXE=PortaDOOM\files\config\config.exe
 
 REM # compile "config.exe"
 ..\bin\qb64\qb64.exe -x -e ^

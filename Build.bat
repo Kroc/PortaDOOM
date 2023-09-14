@@ -133,7 +133,7 @@ ECHO:
 
 REM # compile the config editor
 %BIN_QB64% -x -e -o ^
-	"..\..\PortaDOOM\files\tools\config.exe" ^
+	"..\..\PortaDOOM\files\config\config.exe" ^
 	"..\..\src\config.qb64"
 
 REM # if that errored, pause to be able to show the error message
@@ -144,8 +144,8 @@ IF %CMPLVL% EQU 1 (
 	ECHO:
 	ECHO * Compress "config.exe"
 	ECHO:
-	DEL PortaDOOM\files\tools\config.upx  >NUL 2>&1
-	%UPX_ULTRA% PortaDOOM\files\tools\config.exe
+	DEL PortaDOOM\files\config\config.upx  >NUL 2>&1
+	%UPX_ULTRA% PortaDOOM\files\config\config.exe
 	ECHO:
 )
 

@@ -36,6 +36,9 @@ PortaDOOM.exe
 # do not include executables
 **.exe
 **.dll
+# except executables used to modify config files
+# (config.exe is built from source)
+!files/config/fart.exe
 
 # do not include misc archive files
 **.zip

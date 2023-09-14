@@ -31,8 +31,8 @@ SET "SAVES=..\saves"
 REM # relative path to launcher.exe
 SET "LAUNCHER=..\launcher.exe"
 
-SET BIN_CONFIG=..\tools\config.exe
-SET BIN_FART=..\tools\fart\fart.exe --quiet --word --c-style --ignore-case --adapt --
+SET BIN_CONFIG=config.exe
+SET BIN_FART=fart.exe --quiet --word --c-style --ignore-case --adapt --
 
 
 REM # Chocolate Doom / Crispy Doom
@@ -314,9 +314,19 @@ REM #    %2 = IWAD
 REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
-CALL :make_boom_inject "glboom-plus"
-GOTO:EOF
 
+CALL :make_boom_inject "glboom-plus"
+
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+
+REM # turn off texture filtering
+%CONFIG_DEFAULT% SET "gl_texture_filter" "3"
+%CONFIG_DEFAULT% SET "gl_sprite_filter" "3"
+%CONFIG_DEFAULT% SET "gl_patch_filter" "0"
+%CONFIG_DEFAULT% SET "gl_texture_filter_anisotropic" "4"
+
+GOTO:EOF
 
 :make_boom_sw
 REM #===========================================================================
@@ -328,24 +338,18 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
 GOTO:EOF
 
-
 :make_boom_inject
 REM #---------------------------------------------------------------------------
-REM # turn off texture filtering
-%BIN_FART% "default.%~1.cfg" "gl_texture_filter             5"		"gl_texture_filter             3"
-%BIN_FART% "default.%~1.cfg" "gl_sprite_filter              1"		"gl_sprite_filter              3"
-%BIN_FART% "default.%~1.cfg" "gl_patch_filter               1"		"gl_patch_filter               0"
-%BIN_FART% "default.%~1.cfg" "gl_texture_filter_anisotropic     3"	"gl_texture_filter_anisotropic     4"
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
 
-%BIN_FART% "default.%~1.cfg" "key_use                   0x20"		"key_use                   0x65"
-
-%BIN_FART% "default.%~1.cfg" "key_spy                   0xd8"		"key_spy                   0x2a"
-%BIN_FART% "default.%~1.cfg" "key_screenshot            0x2a"		"key_screenshot            0xd8"
-
-%BIN_FART% "default.%~1.cfg" "hudadd_crosshair              0"		"hudadd_crosshair              1"
-%BIN_FART% "default.%~1.cfg" "hudadd_secretarea             0"		"hudadd_secretarea             1"
-%BIN_FART% "default.%~1.cfg" "mouse_doubleclick_as_use      1"		"mouse_doubleclick_as_use      0"
-%BIN_FART% "default.%~1.cfg" "movement_mouselook            0"		"movement_mouselook            1"
+%CONFIG_DEFAULT% SET "key_use" "0x65"
+%CONFIG_DEFAULT% SET "key_spy" "0x2a"
+%CONFIG_DEFAULT% SET "key_screenshot" "0xd8"
+%CONFIG_DEFAULT% SET "hudadd_crosshair" "1"
+%CONFIG_DEFAULT% SET "hudadd_secretarea" "1"
+%CONFIG_DEFAULT% SET "mouse_doubleclick_as_use" "0"
+%CONFIG_DEFAULT% SET "movement_mouselook" "1"
 
 GOTO:EOF
 

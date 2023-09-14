@@ -35,13 +35,24 @@ cmd_help:
     PRINT ""
     PRINT " CONFIG.EXE <file> DEL <field-name>"
     PRINT " CONFIG.EXE <file> DEL [<section>] <field-name>"
-    PRINT " CONFIG.EXE <file> DEL [<section>]"
     PRINT ""
     SYSTEM
 END IF
 
 LET CMD_FILE$ = COMMAND$(1)
 IF CMD_FILE$ = "" THEN SYSTEM 1
+REM # .ini or .cfg?
+REM # INI files use "field=value",
+REM # CFG files use "field value"
+DIM INI_CFG$: LET INI_CFG$ = UCASE$(RIGHT$(CMD_FILE$, 4))
+DIM IS_INI%: LET IS_INI% = (INI_CFG$ = ".INI")
+DIM IS_CFG%: LET IS_CFG% = (INI_CFG$ = ".CFG")
+IF NOT (IS_INI% OR IS_CFG%) THEN
+    SYSTEM 2
+END IF
+
+DIM EQ$
+IF IS_INI% THEN EQ$ = "=" ELSE EQ$ = " "
 
 REM PRINT "FILE    : " + CMD_FILE$
 
@@ -51,7 +62,7 @@ IF CMD_ACTION$ <> "SET" _
     AND CMD_ACTION$ <> "DEL" _
 THEN
     PRINT "Action parameter must be either SET or DEL."
-    SYSTEM 2
+    SYSTEM 3
 END IF
 
 REM PRINT "ACTION  : " + CMD_ACTION$
@@ -91,7 +102,7 @@ END IF
 REM PRINT "IN      : " + in_file$
 REM PRINT "OUT     : " + out_file$
 
-IF NOT _FILEEXISTS(in_file$) THEN SYSTEM 3
+IF NOT _FILEEXISTS(in_file$) THEN SYSTEM 4
 
 '=============================================================================
 'read the input file
@@ -118,16 +129,17 @@ WHILE LOF(INFILE) AND NOT EOF(INFILE)
     LINE INPUT #INFILE, LINE$
     REM PRINT ">" + LINE$
     
-    'a blank line (signals end of section)
-    IF _TRIM$(LINE$) = "" THEN
+    'a blank line signals end of section
+    '(this does not apply to CFG files)
+    IF IS_INI% AND _TRIM$(LINE$) = "" THEN
         '---------------------------------------------------------------------
         'are we adding a value?
         IF CMD_ACTION$ = "SET" _
-        AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
+            AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
         THEN
             'append the new field+value
             '(the blank line will be written before we loop)
-            PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+            PRINT #OUTFILE, CMD_FIELD$ + EQ$ + CMD_VALUE$
             'clear the action so that no more modifying is done
             LET CMD_ACTION$ = ""
             
@@ -136,7 +148,8 @@ WHILE LOF(INFILE) AND NOT EOF(INFILE)
         LET SECTION$ = ""
     
     'is this a section header?
-    ELSEIF LEFT$(_TRIM$(LINE$), 1) = "[" THEN
+    '(this does not apply to CFG files)
+    ELSEIF IS_INI% AND LEFT$(_TRIM$(LINE$), 1) = "[" THEN
         '---------------------------------------------------------------------
         'if moving from no-section to a section,
         'check to see if we first need to add a value
@@ -146,7 +159,7 @@ WHILE LOF(INFILE) AND NOT EOF(INFILE)
             AND CMD_FIELD$ <> "" _
         THEN
             'append the new field+value
-            PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+            IF IS_INI% THEN PRINT #OUTFILE, CMD_FIELD$ + EQ$ + CMD_VALUE$
             'must be blank line between sections!
             PRINT #OUTFILE, ""
         
@@ -168,11 +181,11 @@ WHILE LOF(INFILE) AND NOT EOF(INFILE)
         END IF
 
     'is this a field+value?
-    ELSEIF INSTR(LINE$, "=") >0 THEN
+    ELSEIF INSTR(LINE$, EQ$) >0 THEN
         '---------------------------------------------------------------------
         'split the field and value
-        LET FIELD$ = _TRIM$(LEFT$(LINE$, INSTR(LINE$, "=")-1))
-        LET VALUE$ = _TRIM$(MID$(LINE$, INSTR(LINE$, "=")+1))
+        LET FIELD$ = _TRIM$(LEFT$(LINE$, INSTR(LINE$, EQ$)-1))
+        LET VALUE$ = _TRIM$(MID$(LINE$, INSTR(LINE$, EQ$)+1))
         
         'is this the field we're updating?
         '---------------------------------------------------------------------
@@ -183,7 +196,7 @@ WHILE LOF(INFILE) AND NOT EOF(INFILE)
             REM PRINT "FROM    : " + LINE$
             
             'rewrite the line to include the new value
-            LET LINE$ = FIELD$ + "=" + CMD_VALUE$
+            LET LINE$ = FIELD$ + EQ$ + CMD_VALUE$
             'don't repeat the action
             LET CMD_ACTION$ = ""
             
@@ -218,7 +231,7 @@ IF CMD_ACTION$ = "SET" THEN
     'if a section is required, add that first
     'so long as the file didn't end on that section
     IF CMD_SECTION$ <> "" _
-    AND LCASE$(CMD_SECTION$) <> LCASE$(SECTION$) _
+        AND LCASE$(CMD_SECTION$) <> LCASE$(SECTION$) _
     THEN
         'must be a blank line between the last section and the new one
         '(this might leave multiple blank lines if there were trailing blanks)
@@ -230,16 +243,14 @@ IF CMD_ACTION$ = "SET" THEN
     'don't write a field/value if only creating a new section
     IF CMD_FIELD$ <> "" THEN
         'add the field and value
-        PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+        PRINT #OUTFILE, CMD_FIELD$ + EQ$ + CMD_VALUE$
         'mark action as done
         LET CMD_ACTION$ = ""
     END IF
 END IF
 
 'did no change occur?
-IF CMD_ACTION$ <> "" THEN
-    REM PRINT "NO CHANGE!"
-END IF
+REM IF CMD_ACTION$ <> "" THEN PRINT "NO CHANGE!"
 
 CLOSE #OUTFILE
 CLOSE #INFILE
