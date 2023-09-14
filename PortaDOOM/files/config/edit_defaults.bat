@@ -10,20 +10,20 @@ SET "LAUNCHER=..\launcher.exe"
 
 :menu
 REM ============================================================================
-CLS
+CLS & TITLE Edit Engine Defaults
 ECHO:
 ECHO  Edit Engine Defaults:
 ECHO  =====================
 ECHO  Select IWAD:
 ECHO:
-ECHO     [A] DOOM / DOOM2 / TNT / PLUTONIA
-ECHO     [B] HERETIC
-ECHO     [C] HEXEN
-ECHO     [D] STRIFE
-ECHO     [E] CHEX
-ECHO     [F] DOOM64
-ECHO     [G] HARM1
-ECHO     [H] SQUARE1 (GZDoom...)
+ECHO     [D] DOOM / DOOM2 / TNT / PLUTONIA
+ECHO     [H] HERETIC
+ECHO     [X] HEXEN
+ECHO     [S] STRIFE
+ECHO     [C] CHEX
+ECHO     [6] DOOM64 (Doom64ex)
+ECHO     [M] HARM1
+ECHO     [Q] SQUARE1 (GZDoom...)
 ECHO:
 
 SET "$="
@@ -31,15 +31,15 @@ SET /P "$=? "
 
 IF "%$%" == "" EXIT /B
 
-IF /I "%$%" == "A" CALL :menu_doom
-IF /I "%$%" == "B" CALL :menu_heretic
-IF /I "%$%" == "C" CALL :menu_hexen
-IF /I "%$%" == "D" CALL :menu_strife
-IF /I "%$%" == "E" CALL :menu_chex
+IF /I "%$%" == "D" CALL :menu_doom
+IF /I "%$%" == "H" CALL :menu_heretic
+IF /I "%$%" == "X" CALL :menu_hexen
+IF /I "%$%" == "S" CALL :menu_strife
+IF /I "%$%" == "C" CALL :menu_chex
 REM # don't need a menu for DOOM 64, there's only one engine
-IF /I "%$%" == "F" CALL :launch_engine "doom64ex" "DOOM64.WAD"
-IF /I "%$%" == "G" CALL :menu_harm1
-IF /I "%$%" == "H" CALL :menu_gzdoom "square1.pk3"
+IF /I "%$%" == "6" CALL :launch_engine "doom64ex" "DOOM64.WAD"
+IF /I "%$%" == "M" CALL :menu_harm1
+IF /I "%$%" == "Q" CALL :menu_gzdoom "square1.pk3"
 
 GOTO :menu
 
@@ -254,18 +254,18 @@ ECHO  Edit DOOM Engine Defaults:
 ECHO  ==========================
 ECHO  Select GZDoom engine:
 ECHO:
-ECHO  [A] GZDoom, current
+ECHO  [Z] GZDoom, current
 ECHO:
-ECHO  [B] v1.0		[C] v1.1	[D] v1.2
-ECHO  [E] v1.3		[F] v1.4	[G] v1.5
-ECHO  [H] v1.6		[I] v1.7	[J] v1.8
-ECHO  [K] v1.9		[L] v2.0	[M] v2.1
-ECHO  [N] v2.2		[O] v2.3	[P] v2.4
-ECHO  [Q] v3.2		[R] v3.3	[S] v3.4
-ECHO  [T] v3.5		[U] v3.6	[V] v3.7
-ECHO  [W] v4.1          [X] v4.2	[Y] v4.3
-ECHO  [Z] v4.4		[0] v4.5	[1] v4.6
-ECHO  [2] v4.7          [3] v4.8
+ECHO  [0] v1.0		[1] v1.1	[2] v1.2
+ECHO  [3] v1.3		[4] v1.4	[5] v1.5
+ECHO  [6] v1.6		[7] v1.7	[8] v1.8
+ECHO  [9] v1.9		[A] v2.0	[B] v2.1
+ECHO  [C] v2.2		[D] v2.3	[E] v2.4
+ECHO  [F] v3.2		[G] v3.3	[H] v3.4
+ECHO  [I] v3.5		[J] v3.6	[K] v3.7
+ECHO  [L] v4.1		[M] v4.2	[N] v4.3
+ECHO  [O] v4.4		[P] v4.5	[Q] v4.6
+ECHO  [R] v4.7		[S] v4.8
 ECHO:
 
 SET "$="
@@ -273,36 +273,36 @@ SET /P "$=? "
 
 IF "%$%" == "" GOTO:EOF
 
-IF /I "%$%" == "A" CALL :launch_engine    "gzdoom"     "%~1"
-IF /I "%$%" == "B" CALL :launch_engine    "gzdoom-10"  "%~1"
-IF /I "%$%" == "C" CALL :launch_engine    "gzdoom-11"  "%~1"
-IF /I "%$%" == "D" CALL :launch_engine    "gzdoom-12"  "%~1"
-IF /I "%$%" == "E" CALL :launch_engine    "gzdoom-13"  "%~1"
-IF /I "%$%" == "F" CALL :launch_engine    "gzdoom-14"  "%~1"
-IF /I "%$%" == "G" CALL :launch_engine    "gzdoom-15"  "%~1"
-IF /I "%$%" == "H" CALL :launch_engine    "gzdoom-16"  "%~1"
-IF /I "%$%" == "I" CALL :launch_engine    "gzdoom-17"  "%~1"
-IF /I "%$%" == "J" CALL :launch_engine    "gzdoom-18"  "%~1"
-IF /I "%$%" == "K" CALL :launch_engine    "gzdoom-19"  "%~1"
-IF /I "%$%" == "L" CALL :launch_engine    "gzdoom-20"  "%~1"
-IF /I "%$%" == "M" CALL :launch_engine    "gzdoom-21"  "%~1"
-IF /I "%$%" == "N" CALL :launch_engine    "gzdoom-22"  "%~1"
-IF /I "%$%" == "O" CALL :launch_engine    "gzdoom-23"  "%~1"
-IF /I "%$%" == "P" CALL :launch_engine    "gzdoom-24"  "%~1"
-IF /I "%$%" == "Q" CALL :launch_engine    "gzdoom-32"  "%~1"
-IF /I "%$%" == "R" CALL :launch_engine    "gzdoom-33"  "%~1"
-IF /I "%$%" == "S" CALL :launch_engine    "gzdoom-34"  "%~1"
-IF /I "%$%" == "T" CALL :launch_engine    "gzdoom-35"  "%~1"
-IF /I "%$%" == "U" CALL :launch_engine    "gzdoom-36"  "%~1"
-IF /I "%$%" == "V" CALL :launch_engine    "gzdoom-37"  "%~1"
-IF /I "%$%" == "W" CALL :launch_engine    "gzdoom-41"  "%~1"
-IF /I "%$%" == "X" CALL :launch_engine    "gzdoom-42"  "%~1"
-IF /I "%$%" == "Y" CALL :launch_engine    "gzdoom-43"  "%~1"
-IF /I "%$%" == "Z" CALL :launch_engine    "gzdoom-44"  "%~1"
-IF /I "%$%" == "0" CALL :launch_engine    "gzdoom-45"  "%~1"
-IF /I "%$%" == "1" CALL :launch_engine    "gzdoom-46"  "%~1"
-IF /I "%$%" == "2" CALL :launch_engine    "gzdoom-47"  "%~1"
-IF /I "%$%" == "3" CALL :launch_engine    "gzdoom-48"  "%~1"
+IF /I "%$%" == "Z" CALL :launch_engine    "gzdoom"     "%~1"
+IF /I "%$%" == "0" CALL :launch_engine    "gzdoom-10"  "%~1"
+IF /I "%$%" == "1" CALL :launch_engine    "gzdoom-11"  "%~1"
+IF /I "%$%" == "2" CALL :launch_engine    "gzdoom-12"  "%~1"
+IF /I "%$%" == "3" CALL :launch_engine    "gzdoom-13"  "%~1"
+IF /I "%$%" == "4" CALL :launch_engine    "gzdoom-14"  "%~1"
+IF /I "%$%" == "5" CALL :launch_engine    "gzdoom-15"  "%~1"
+IF /I "%$%" == "6" CALL :launch_engine    "gzdoom-16"  "%~1"
+IF /I "%$%" == "7" CALL :launch_engine    "gzdoom-17"  "%~1"
+IF /I "%$%" == "8" CALL :launch_engine    "gzdoom-18"  "%~1"
+IF /I "%$%" == "9" CALL :launch_engine    "gzdoom-19"  "%~1"
+IF /I "%$%" == "A" CALL :launch_engine    "gzdoom-20"  "%~1"
+IF /I "%$%" == "B" CALL :launch_engine    "gzdoom-21"  "%~1"
+IF /I "%$%" == "C" CALL :launch_engine    "gzdoom-22"  "%~1"
+IF /I "%$%" == "D" CALL :launch_engine    "gzdoom-23"  "%~1"
+IF /I "%$%" == "E" CALL :launch_engine    "gzdoom-24"  "%~1"
+IF /I "%$%" == "F" CALL :launch_engine    "gzdoom-32"  "%~1"
+IF /I "%$%" == "G" CALL :launch_engine    "gzdoom-33"  "%~1"
+IF /I "%$%" == "H" CALL :launch_engine    "gzdoom-34"  "%~1"
+IF /I "%$%" == "I" CALL :launch_engine    "gzdoom-35"  "%~1"
+IF /I "%$%" == "J" CALL :launch_engine    "gzdoom-36"  "%~1"
+IF /I "%$%" == "K" CALL :launch_engine    "gzdoom-37"  "%~1"
+IF /I "%$%" == "L" CALL :launch_engine    "gzdoom-41"  "%~1"
+IF /I "%$%" == "M" CALL :launch_engine    "gzdoom-42"  "%~1"
+IF /I "%$%" == "N" CALL :launch_engine    "gzdoom-43"  "%~1"
+IF /I "%$%" == "O" CALL :launch_engine    "gzdoom-44"  "%~1"
+IF /I "%$%" == "P" CALL :launch_engine    "gzdoom-45"  "%~1"
+IF /I "%$%" == "Q" CALL :launch_engine    "gzdoom-46"  "%~1"
+IF /I "%$%" == "R" CALL :launch_engine    "gzdoom-47"  "%~1"
+IF /I "%$%" == "S" CALL :launch_engine    "gzdoom-48"  "%~1"
 
 GOTO :menu_gzdoom
 

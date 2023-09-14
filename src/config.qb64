@@ -1,6 +1,7 @@
 'copyright (C) Kroc Camen 2023, BSD 2-clause
 
 $CONSOLE:ONLY
+$CHECKING:OFF
 
 'for speed, default to long (32-bit) for variables
 '(and function returns, if not otherwise specified)
@@ -8,8 +9,6 @@ DEFLNG a-z
 
 'generic 'index' counters
 DIM i, j, k, h, w, x, y AS _UNSIGNED LONG
-
-DIM SECTION$ 'current section
 
 '=============================================================================
 '$INCLUDE:'common\include.bi'
@@ -20,39 +19,42 @@ IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
 DIM SHARED CMD_FILE$
 DIM SHARED CMD_ACTION$
 DIM SHARED CMD1$, CMD2$, CMD3$
-DIM SHARED CMD_SECTION$
-DIM SHARED CMD_FIELD$
-DIM SHARED CMD_VALUE$
+DIM SHARED CMD_SECTION$ '       section filter
+DIM SHARED CMD_FIELD$ '         field name
+DIM SHARED CMD_VALUE$ '         field value
 
 IF UCASE$(COMMAND$(1)) = "/?" THEN
 cmd_help:
+    PRINT "Usage:"
     PRINT ""
-    PRINT " CONFIG.EXE <file> <action> [action-params...]"
+    PRINT " CONFIG.EXE <file> <action> <action-params...>"
     PRINT ""
-    PRINT " CONFIG.EXE <file> ADD [section] <field-name> [value]"
+    PRINT " CONFIG.EXE <file> SET [<section>]"
+    PRINT " CONFIG.EXE <file> SET <field-name> <value>"
+    PRINT " CONFIG.EXE <file> SET [<section>] <field-name> <value>"
     PRINT ""
-    PRINT " CONFIG.EXE <file> DEL <section>"
-    PRINT " CONFIG.EXE <file> DEL [section] <field-name>"
+    PRINT " CONFIG.EXE <file> DEL <field-name>"
+    PRINT " CONFIG.EXE <file> DEL [<section>] <field-name>"
+    PRINT " CONFIG.EXE <file> DEL [<section>]"
     PRINT ""
-    PRINT " CONFIG.EXE <file> SET [section] <field-name> <value>"
-    
-    COLOR WHITE
-    PRINT ""
-    PRINT " Press Any Key to Exit"
-    PRINT ""
-    
-    DO: LOOP WHILE INKEY$ = "": SYSTEM
+    SYSTEM
 END IF
 
 LET CMD_FILE$ = COMMAND$(1)
 IF CMD_FILE$ = "" THEN SYSTEM 1
 
-PRINT "FILE: " + CMD_FILE$
+REM PRINT "FILE    : " + CMD_FILE$
 
 LET CMD_ACTION$ = UCASE$(COMMAND$(2))
 IF CMD_ACTION$ = "" THEN SYSTEM 2
+IF CMD_ACTION$ <> "SET" _
+    AND CMD_ACTION$ <> "DEL" _
+THEN
+    PRINT "Action parameter must be either SET or DEL."
+    SYSTEM 2
+END IF
 
-PRINT "ACTION: " + CMD_ACTION$
+REM PRINT "ACTION  : " + CMD_ACTION$
 
 'we don't know the meaning of the following params yet,
 'so capture them to temporary names
@@ -60,18 +62,20 @@ LET CMD1$ = COMMAND$(3)
 LET CMD2$ = COMMAND$(4)
 LET CMD3$ = COMMAND$(5)
 
-SELECT CASE CMD_ACTION$
-    CASE "ADD":
-        'is a section name specified?
-        IF LEFT$(CMD1$, 1) = "[" THEN
-            LET CMD_SECTION$ = CMD1$
-            LET CMD_FIELD$ = CMD2$
-            LET CMD_VALUE$ = CMD3$
-        ELSE
-            LET CMD_FIELD$ = CMD1$
-            LET CMD_VALUE$ = CMD2$
-        END IF
-END SELECT
+'is a section name specified?
+IF LEFT$(CMD1$, 1) = "[" THEN
+    LET CMD_SECTION$ = CMD1$
+    LET CMD_FIELD$   = CMD2$
+    LET CMD_VALUE$   = CMD3$
+ELSE
+    LET CMD_SECTION$ = ""
+    LET CMD_FIELD$   = CMD1$
+    LET CMD_VALUE$   = CMD2$
+END IF
+
+REM PRINT "SECTION : " + CMD_SECTION$
+REM PRINT "FIELD   : " + CMD_FIELD$
+REM PRINT "VALUE   : " + CMD_VALUE$
 
 '=============================================================================
 'is the given path absolute?
@@ -84,36 +88,169 @@ ELSE
     LET out_file$ = in_file$ + ".bak"
 END IF
 
-PRINT "in:  " + in_file$
-PRINT "out: " + out_file$
+REM PRINT "IN      : " + in_file$
+REM PRINT "OUT     : " + out_file$
 
 IF NOT _FILEEXISTS(in_file$) THEN SYSTEM 3
 
+'=============================================================================
 'read the input file
 DIM INFILE: LET INFILE=FREEFILE
-OPEN in_file$ FOR BINARY AS #INFILE
+OPEN in_file$ FOR BINARY ACCESS READ AS #INFILE
 
 DIM OUTFILE: LET OUTFILE=FREEFILE
-OPEN out_file$ FOR BINARY ACCESS WRITE AS #OUTFILE
+OPEN out_file$ FOR OUTPUT ACCESS WRITE AS #OUTFILE
 
+DIM SECTION$ 'current section in the file being read
 LET SECTION$ = ""
+DIM FIELD$
+LET FIELD$ = ""
+DIM VALUE$
+LET VALUE$ = ""
 
-DO UNTIL EOF(INFILE)
+'read lines until we hit the end of the file
+'BUG: EOF does not return true for a file of zero-length!
+WHILE LOF(INFILE) AND NOT EOF(INFILE)
 
-DIM LINE$
-LINE INPUT #INFILE, LINE$
+    'QB64 documentation says that LINE INPUT is faster in binary mode
+    'TODO: is this compatible with \n endings?
+    DIM LINE$
+    LINE INPUT #INFILE, LINE$
+    REM PRINT ">" + LINE$
+    
+    'a blank line (signals end of section)
+    IF _TRIM$(LINE$) = "" THEN
+        '---------------------------------------------------------------------
+        'are we adding a value?
+        IF CMD_ACTION$ = "SET" _
+        AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
+        THEN
+            'append the new field+value
+            '(the blank line will be written before we loop)
+            PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+            'clear the action so that no more modifying is done
+            LET CMD_ACTION$ = ""
+            
+        END IF
+        'clear current section
+        LET SECTION$ = ""
+    
+    'is this a section header?
+    ELSEIF LEFT$(_TRIM$(LINE$), 1) = "[" THEN
+        '---------------------------------------------------------------------
+        'if moving from no-section to a section,
+        'check to see if we first need to add a value
+        IF CMD_ACTION$ = "SET" _
+            AND LCASE$(CMD_SECTION$) = "" _
+            AND LCASE$(SECTION$) = "" _
+            AND CMD_FIELD$ <> "" _
+        THEN
+            'append the new field+value
+            PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+            'must be blank line between sections!
+            PRINT #OUTFILE, ""
+        
+            'clear the command so that we don't try appending
+            'the value to the end of the file
+            LET CMD_ACTION$ = ""
+        END IF
+        
+        'set the current SECTION
+        LET SECTION$ = _TRIM$(LINE$)
+        'adding a section and the section already exists?
+        IF CMD_ACTION$ = "SET" _
+            AND CMD_FIELD$ = "" _
+            AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
+        THEN
+            'clear the command so that we don't try appending
+            'the section to the end of the file
+            LET CMD_ACTION$ = ""
+        END IF
 
-'a blank line (signals end of section)
-IF _TRIM$(LINE$) = "" THEN
+    'is this a field+value?
+    ELSEIF INSTR(LINE$, "=") >0 THEN
+        '---------------------------------------------------------------------
+        'split the field and value
+        LET FIELD$ = _TRIM$(LEFT$(LINE$, INSTR(LINE$, "=")-1))
+        LET VALUE$ = _TRIM$(MID$(LINE$, INSTR(LINE$, "=")+1))
+        
+        'is this the field we're updating?
+        '---------------------------------------------------------------------
+        IF CMD_ACTION$ = "SET" _
+            AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
+            AND LCASE$(CMD_FIELD$) = LCASE$(FIELD$) _
+        THEN
+            REM PRINT "FROM    : " + LINE$
+            
+            'rewrite the line to include the new value
+            LET LINE$ = FIELD$ + "=" + CMD_VALUE$
+            'don't repeat the action
+            LET CMD_ACTION$ = ""
+            
+            REM PRINT "TO      : " + LINE$
+        
+        'deleting a field?
+        '---------------------------------------------------------------------
+        ELSEIF CMD_ACTION$ = "DEL" _
+            AND LCASE$(CMD_SECTION$) = LCASE$(SECTION$) _
+            AND LCASE$(CMD_FIELD$) = LCASE$(FIELD$) _
+        THEN
+            REM PRINT "DELETE  : " + LINE$
+                        
+            'don't repeat the action
+            LET CMD_ACTION$ = ""
+            'do not write this line out,
+            'but don't leave a blank line either!
+            _CONTINUE
+            
+        END IF
+    END IF
+
+lineout:
+    'add the line to the output file
+    PRINT #OUTFILE, LINE$
+WEND
+
+'if we reach the end of the file and the section/value hasn't been added yet,
+'then do so now (CMD_ACTION$ is cleared once the change has been done)
+'-----------------------------------------------------------------------------
+IF CMD_ACTION$ = "SET" THEN
+    'if a section is required, add that first
+    'so long as the file didn't end on that section
+    IF CMD_SECTION$ <> "" _
+    AND LCASE$(CMD_SECTION$) <> LCASE$(SECTION$) _
+    THEN
+        'must be a blank line between the last section and the new one
+        '(this might leave multiple blank lines if there were trailing blanks)
+        PRINT #OUTFILE, ""
+        PRINT #OUTFILE, CMD_SECTION$
+        'mark action as done
+        LET CMD_ACTION$ = ""
+    END IF
+    'don't write a field/value if only creating a new section
+    IF CMD_FIELD$ <> "" THEN
+        'add the field and value
+        PRINT #OUTFILE, CMD_FIELD$ + "=" + CMD_VALUE$
+        'mark action as done
+        LET CMD_ACTION$ = ""
+    END IF
 END IF
-'is this a section header?
-IF LEFT$(LINE$, 1) = "[" THEN
-    LET SECTION$ = _TRIM$(LINE$)
+
+'did no change occur?
+IF CMD_ACTION$ <> "" THEN
+    REM PRINT "NO CHANGE!"
 END IF
 
-LOOP
-CLOSE #INFILE
 CLOSE #OUTFILE
+CLOSE #INFILE
+
+'swap the new file and the old one:
+'=============================================================================
+'delete the original (the modified is still on disk)
+KILL in_file$
+NAME out_file$ AS in_file$
+
+REM PRINT ""
 SYSTEM
 
 '$INCLUDE:'common\include.bm'

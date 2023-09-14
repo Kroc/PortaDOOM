@@ -25,17 +25,18 @@ PAUSE>NUL
 
 PUSHD %~dp0
 
-REM # relative location of the saves folder (where user-configs are stored)
+REM # relative location of the saves folder
+REM # (where user-configs are stored)
 SET "SAVES=..\saves"
 REM # relative path to launcher.exe
 SET "LAUNCHER=..\launcher.exe"
 
+SET BIN_CONFIG=..\tools\config.exe
 SET BIN_FART=..\tools\fart\fart.exe --quiet --word --c-style --ignore-case --adapt --
-SET BIN_INIFILE=..\tools\inifile\inifile.exe
 
 
 REM # Chocolate Doom / Crispy Doom
-REM ============================================================================
+REM #===========================================================================
 :choco-doom
 REM # delete the file in order to re-build it
 IF EXIST "default.choco-doom.cfg" GOTO :choco-heretic
@@ -80,7 +81,7 @@ ECHO ----------------------------------------
 
 
 REM # DOOM Retro
-REM ============================================================================
+REM #===========================================================================
 :doom-retro
 REM # delete the file in order to re-build it
 IF EXIST "default.doom-retro.cfg" GOTO :glboom-plus
@@ -91,7 +92,7 @@ ECHO ----------------------------------------
 
 
 REM # PrBoom+ (hardware / software)
-REM ============================================================================
+REM #===========================================================================
 :glboom-plus
 REM # delete the file in order to re-build it
 IF EXIST "default.glboom-plus.cfg" GOTO :prboom-plus
@@ -113,7 +114,7 @@ ECHO ----------------------------------------
 
 
 REM # Zandronum
-REM ============================================================================
+REM #===========================================================================
 :zandronum-2
 REM # delete the file in order to re-build it
 IF EXIST "default.zandronum-2.ini" GOTO :zandronum-3
@@ -132,7 +133,7 @@ ECHO ----------------------------------------
 
 :zandronum-3
 REM # delete the file in order to re-build it
-IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-10
+IF EXIST "default.zandronum-3.ini" GOTO :gzdoom-all
 
 ECHO * Zandronum-3                DOOM.WAD
 CALL :make_zandronum "zandronum-3" "DOOM.WAD"
@@ -150,600 +151,42 @@ ECHO ----------------------------------------
 
 
 REM # GZDoom
-REM ============================================================================
-:gzdoom-10
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-10.ini" GOTO :gzdoom-11
+REM #===========================================================================
+:gzdoom-all
+CALL :gzdoom_any 99
+CALL :gzdoom_any 48
+CALL :gzdoom_any 47
+CALL :gzdoom_any 46
+CALL :gzdoom_any 45
+CALL :gzdoom_any 44
+CALL :gzdoom_any 43
+CALL :gzdoom_any 42
+CALL :gzdoom_any 41
+CALL :gzdoom_any 37
+CALL :gzdoom_any 36
+CALL :gzdoom_any 35
+CALL :gzdoom_any 34
+CALL :gzdoom_any 33
+CALL :gzdoom_any 32
+CALL :gzdoom_any 24
+CALL :gzdoom_any 23
+CALL :gzdoom_any 22
+CALL :gzdoom_any 21
+CALL :gzdoom_any 20
+CALL :gzdoom_any 19
+CALL :gzdoom_any 18
+CALL :gzdoom_any 17
+CALL :gzdoom_any 16
+CALL :gzdoom_any 15
+CALL :gzdoom_any 14
+CALL :gzdoom_any 13
+CALL :gzdoom_any 12
+CALL :gzdoom_any 11
+CALL :gzdoom_any 10
 
-ECHO * GZDoom v1.0                DOOM.WAD
-CALL :make_gzdoom "gzdoom-10" "DOOM.WAD"
-ECHO * GZDoom v1.0                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-10" "HERETIC.WAD"
-ECHO * GZDoom v1.0                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-10" "HEXEN.WAD"
-ECHO * GZDoom v1.0                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-10" "STRIFE1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-11
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-11.ini" GOTO :gzdoom-12
-
-ECHO * GZDoom v1.1                DOOM.WAD
-CALL :make_gzdoom "gzdoom-11" "DOOM.WAD"
-ECHO * GZDoom v1.1                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-11" "HERETIC.WAD"
-ECHO * GZDoom v1.1                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-11" "HEXEN.WAD"
-ECHO * GZDoom v1.1                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-11" "STRIFE1.WAD"
-ECHO * GZDoom v1.1                CHEX.WAD
-CALL :make_gzdoom "gzdoom-11" "CHEX.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-12
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-12.ini" GOTO :gzdoom-13
-
-ECHO * GZDoom v1.2                DOOM.WAD
-CALL :make_gzdoom "gzdoom-12" "DOOM.WAD"
-ECHO * GZDoom v1.2                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-12" "HERETIC.WAD"
-ECHO * GZDoom v1.2                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-12" "HEXEN.WAD"
-ECHO * GZDoom v1.2                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-12" "STRIFE1.WAD"
-ECHO * GZDoom v1.2                CHEX.WAD
-CALL :make_gzdoom "gzdoom-12" "CHEX.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-13
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-13.ini" GOTO :gzdoom-14
-
-ECHO * GZDoom v1.3                DOOM.WAD
-CALL :make_gzdoom "gzdoom-13" "DOOM.WAD"
-ECHO * GZDoom v1.3                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-13" "HERETIC.WAD"
-ECHO * GZDoom v1.3                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-13" "HEXEN.WAD"
-ECHO * GZDoom v1.3                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-13" "STRIFE1.WAD"
-ECHO * GZDoom v1.3                CHEX.WAD
-CALL :make_gzdoom "gzdoom-13" "CHEX.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-14
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-14.ini" GOTO :gzdoom-15
-
-ECHO * GZDoom v1.4                DOOM.WAD
-CALL :make_gzdoom "gzdoom-14" "DOOM.WAD"
-ECHO * GZDoom v1.4                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-14" "HERETIC.WAD"
-ECHO * GZDoom v1.4                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-14" "HEXEN.WAD"
-ECHO * GZDoom v1.4                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-14" "STRIFE1.WAD"
-ECHO * GZDoom v1.4                CHEX.WAD
-CALL :make_gzdoom "gzdoom-14" "CHEX.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-15
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-15.ini" GOTO :gzdoom-16
-
-ECHO * GZDoom v1.5                DOOM.WAD
-CALL :make_gzdoom "gzdoom-15" "DOOM.WAD"
-ECHO * GZDoom v1.5                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-15" "HERETIC.WAD"
-ECHO * GZDoom v1.5                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-15" "HEXEN.WAD"
-ECHO * GZDoom v1.5                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-15" "STRIFE1.WAD"
-ECHO * GZDoom v1.5                CHEX.WAD
-CALL :make_gzdoom "gzdoom-15" "CHEX.WAD"
-REM # from GZDoom v1.5 we gain supprto for Harmony.
-REM # technically v1.4 supports it, but it doesn't
-REM # populate the config defaults as expected
-ECHO * GZDoom v1.5                HARM1.WAD
-CALL :make_gzdoom "gzdoom-15" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-16
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-16.ini" GOTO :gzdoom-17
-
-ECHO * GZDoom v1.6                DOOM.WAD
-CALL :make_gzdoom "gzdoom-16" "DOOM.WAD"
-ECHO * GZDoom v1.6                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-16" "HERETIC.WAD"
-ECHO * GZDoom v1.6                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-16" "HEXEN.WAD"
-ECHO * GZDoom v1.6                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-16" "STRIFE1.WAD"
-ECHO * GZDoom v1.6                CHEX.WAD
-CALL :make_gzdoom "gzdoom-16" "CHEX.WAD"
-ECHO * GZDoom v1.6                HARM1.WAD
-CALL :make_gzdoom "gzdoom-16" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-17
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-17.ini" GOTO :gzdoom-18
-
-ECHO * GZDoom v1.7                DOOM.WAD
-CALL :make_gzdoom "gzdoom-17" "DOOM.WAD"
-ECHO * GZDoom v1.7                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-17" "HERETIC.WAD"
-ECHO * GZDoom v1.7                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-17" "HEXEN.WAD"
-ECHO * GZDoom v1.7                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-17" "STRIFE1.WAD"
-ECHO * GZDoom v1.7                CHEX.WAD
-CALL :make_gzdoom "gzdoom-17" "CHEX.WAD"
-ECHO * GZDoom v1.7                HARM1.WAD
-CALL :make_gzdoom "gzdoom-17" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-18
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-18.ini" GOTO :gzdoom-19
-
-ECHO * GZDoom v1.8                DOOM.WAD
-CALL :make_gzdoom "gzdoom-18" "DOOM.WAD"
-ECHO * GZDoom v1.8                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-18" "HERETIC.WAD"
-ECHO * GZDoom v1.8                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-18" "HEXEN.WAD"
-ECHO * GZDoom v1.8                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-18" "STRIFE1.WAD"
-ECHO * GZDoom v1.8                CHEX.WAD
-CALL :make_gzdoom "gzdoom-18" "CHEX.WAD"
-ECHO * GZDoom v1.8                HARM1.WAD
-CALL :make_gzdoom "gzdoom-18" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-19
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-19.ini" GOTO :gzdoom-20
-
-ECHO * GZDoom v1.9                DOOM.WAD
-CALL :make_gzdoom "gzdoom-19" "DOOM.WAD"
-ECHO * GZDoom v1.9                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-19" "HERETIC.WAD"
-ECHO * GZDoom v1.9                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-19" "HEXEN.WAD"
-ECHO * GZDoom v1.9                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-19" "STRIFE1.WAD"
-ECHO * GZDoom v1.9                CHEX.WAD
-CALL :make_gzdoom "gzdoom-19" "CHEX.WAD"
-ECHO * GZDoom v1.9                HARM1.WAD
-CALL :make_gzdoom "gzdoom-19" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-20
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-20.ini" GOTO :gzdoom-21
-
-ECHO * GZDoom v2.0                DOOM.WAD
-CALL :make_gzdoom "gzdoom-20" "DOOM.WAD"
-ECHO * GZDoom v2.0                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-20" "HERETIC.WAD"
-ECHO * GZDoom v2.0                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-20" "HEXEN.WAD"
-ECHO * GZDoom v2.0                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-20" "STRIFE1.WAD"
-ECHO * GZDoom v2.0                CHEX.WAD
-CALL :make_gzdoom "gzdoom-20" "CHEX.WAD"
-ECHO * GZDoom v2.0                HARM1.WAD
-CALL :make_gzdoom "gzdoom-20" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-21
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-21.ini" GOTO :gzdoom-22
-
-ECHO * GZDoom v2.1                DOOM.WAD
-CALL :make_gzdoom "gzdoom-21" "DOOM.WAD"
-ECHO * GZDoom v2.1                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-21" "HERETIC.WAD"
-ECHO * GZDoom v2.1                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-21" "HEXEN.WAD"
-ECHO * GZDoom v2.1                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-21" "STRIFE1.WAD"
-ECHO * GZDoom v2.1                CHEX.WAD
-CALL :make_gzdoom "gzdoom-21" "CHEX.WAD"
-ECHO * GZDoom v2.1                HARM1.WAD
-CALL :make_gzdoom "gzdoom-21" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-22
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-22.ini" GOTO :gzdoom-23
-
-ECHO * GZDoom v2.2                DOOM.WAD
-CALL :make_gzdoom "gzdoom-22" "DOOM.WAD"
-ECHO * GZDoom v2.2                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-22" "HERETIC.WAD"
-ECHO * GZDoom v2.2                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-22" "HEXEN.WAD"
-ECHO * GZDoom v2.2                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-22" "STRIFE1.WAD"
-ECHO * GZDoom v2.2                CHEX.WAD
-CALL :make_gzdoom "gzdoom-22" "CHEX.WAD"
-ECHO * GZDoom v2.2                HARM1.WAD
-CALL :make_gzdoom "gzdoom-22" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-23
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-23.ini" GOTO :gzdoom-24
-
-ECHO * GZDoom v2.3                DOOM.WAD
-CALL :make_gzdoom "gzdoom-23" "DOOM.WAD"
-ECHO * GZDoom v2.3                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-23" "HERETIC.WAD"
-ECHO * GZDoom v2.3                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-23" "HEXEN.WAD"
-ECHO * GZDoom v2.3                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-23" "STRIFE1.WAD"
-ECHO * GZDoom v2.3                CHEX.WAD
-CALL :make_gzdoom "gzdoom-23" "CHEX.WAD"
-ECHO * GZDoom v2.3                HARM1.WAD
-CALL :make_gzdoom "gzdoom-23" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-24
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-24.ini" GOTO :gzdoom-32
-
-ECHO * GZDoom v2.4                DOOM.WAD
-CALL :make_gzdoom "gzdoom-24" "DOOM.WAD"
-ECHO * GZDoom v2.4                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-24" "HERETIC.WAD"
-ECHO * GZDoom v2.4                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-24" "HEXEN.WAD"
-ECHO * GZDoom v2.4                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-24" "STRIFE1.WAD"
-ECHO * GZDoom v2.4                CHEX.WAD
-CALL :make_gzdoom "gzdoom-24" "CHEX.WAD"
-ECHO * GZDoom v2.4                HARM1.WAD
-CALL :make_gzdoom "gzdoom-24" "HARM1.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-32
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-32.ini" GOTO :gzdoom-33
-
-ECHO * GZDoom v3.2                DOOM.WAD
-CALL :make_gzdoom "gzdoom-32" "DOOM.WAD"
-ECHO * GZDoom v3.2                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-32" "HERETIC.WAD"
-ECHO * GZDoom v3.2                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-32" "HEXEN.WAD"
-ECHO * GZDoom v3.2                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-32" "STRIFE1.WAD"
-ECHO * GZDoom v3.2                CHEX.WAD
-CALL :make_gzdoom "gzdoom-32" "CHEX.WAD"
-ECHO * GZDoom v3.2                HARM1.WAD
-CALL :make_gzdoom "gzdoom-32" "HARM1.WAD"
-REM # Rise Of The Wool Ball detected as an IWAD here
-ECHO * GZDoom v3.2                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-32" "ROTWB.WAD"
-ECHO ----------------------------------------
-
-:gzdoom-33
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-33.ini" GOTO :gzdoom-34
-
-ECHO * GZDoom v3.3                DOOM.WAD
-CALL :make_gzdoom "gzdoom-33" "DOOM.WAD"
-ECHO * GZDoom v3.3                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-33" "HERETIC.WAD"
-ECHO * GZDoom v3.3                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-33" "HEXEN.WAD"
-ECHO * GZDoom v3.3                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-33" "STRIFE1.WAD"
-ECHO * GZDoom v3.3                CHEX.WAD
-CALL :make_gzdoom "gzdoom-33" "CHEX.WAD"
-ECHO * GZDoom v3.3                HARM1.WAD
-CALL :make_gzdoom "gzdoom-33" "HARM1.WAD"
-ECHO * GZDoom v3.3                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-33" "ROTWB.WAD"
-REM # Adventures of Square support from here
-ECHO * GZDoom v3.3                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-33" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-34
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-34.ini" GOTO :gzdoom-35
-
-ECHO * GZDoom v3.4                DOOM.WAD
-CALL :make_gzdoom "gzdoom-34" "DOOM.WAD"
-ECHO * GZDoom v3.4                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-34" "HERETIC.WAD"
-ECHO * GZDoom v3.4                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-34" "HEXEN.WAD"
-ECHO * GZDoom v3.4                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-34" "STRIFE1.WAD"
-ECHO * GZDoom v3.4                CHEX.WAD
-CALL :make_gzdoom "gzdoom-34" "CHEX.WAD"
-ECHO * GZDoom v3.4                HARM1.WAD
-CALL :make_gzdoom "gzdoom-34" "HARM1.WAD"
-ECHO * GZDoom v3.4                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-34" "ROTWB.WAD"
-ECHO * GZDoom v3.4                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-34" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-35
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-35.ini" GOTO :gzdoom-36
-
-ECHO * GZDoom v3.5                DOOM.WAD
-CALL :make_gzdoom "gzdoom-35" "DOOM.WAD"
-ECHO * GZDoom v3.5                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-35" "HERETIC.WAD"
-ECHO * GZDoom v3.5                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-35" "HEXEN.WAD"
-ECHO * GZDoom v3.5                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-35" "STRIFE1.WAD"
-ECHO * GZDoom v3.5                CHEX.WAD
-CALL :make_gzdoom "gzdoom-35" "CHEX.WAD"
-ECHO * GZDoom v3.5                HARM1.WAD
-CALL :make_gzdoom "gzdoom-35" "HARM1.WAD"
-ECHO * GZDoom v3.5                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-35" "ROTWB.WAD"
-ECHO * GZDoom v3.5                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-35" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-36
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-36.ini" GOTO :gzdoom-37
-
-ECHO * GZDoom v3.6                DOOM.WAD
-CALL :make_gzdoom "gzdoom-36" "DOOM.WAD"
-ECHO * GZDoom v3.6                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-36" "HERETIC.WAD"
-ECHO * GZDoom v3.6                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-36" "HEXEN.WAD"
-ECHO * GZDoom v3.6                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-36" "STRIFE1.WAD"
-ECHO * GZDoom v3.6                CHEX.WAD
-CALL :make_gzdoom "gzdoom-36" "CHEX.WAD"
-ECHO * GZDoom v3.6                HARM1.WAD
-CALL :make_gzdoom "gzdoom-36" "HARM1.WAD"
-ECHO * GZDoom v3.6                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-36" "ROTWB.WAD"
-ECHO * GZDoom v3.6                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-36" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-37
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-37.ini" GOTO :gzdoom-41
-
-ECHO * GZDoom v3.7                DOOM.WAD
-CALL :make_gzdoom "gzdoom-37" "DOOM.WAD"
-ECHO * GZDoom v3.7                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-37" "HERETIC.WAD"
-ECHO * GZDoom v3.7                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-37" "HEXEN.WAD"
-ECHO * GZDoom v3.7                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-37" "STRIFE1.WAD"
-ECHO * GZDoom v3.7                CHEX.WAD
-CALL :make_gzdoom "gzdoom-37" "CHEX.WAD"
-ECHO * GZDoom v3.7                HARM1.WAD
-CALL :make_gzdoom "gzdoom-37" "HARM1.WAD"
-ECHO * GZDoom v3.7                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-37" "ROTWB.WAD"
-ECHO * GZDoom v3.7                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-37" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-41
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-41.ini" GOTO :gzdoom-42
-
-ECHO * GZDoom v4.1                DOOM.WAD
-CALL :make_gzdoom "gzdoom-41" "DOOM.WAD"
-ECHO * GZDoom v4.1                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-41" "HERETIC.WAD"
-ECHO * GZDoom v4.1                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-41" "HEXEN.WAD"
-ECHO * GZDoom v4.1                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-41" "STRIFE1.WAD"
-ECHO * GZDoom v4.1                CHEX.WAD
-CALL :make_gzdoom "gzdoom-41" "CHEX.WAD"
-ECHO * GZDoom v4.1                HARM1.WAD
-CALL :make_gzdoom "gzdoom-41" "HARM1.WAD"
-ECHO * GZDoom v4.1                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-41" "ROTWB.WAD"
-ECHO * GZDoom v4.1                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-41" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-42
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-42.ini" GOTO :gzdoom-43
-
-ECHO * GZDoom v4.2                DOOM.WAD
-CALL :make_gzdoom "gzdoom-42" "DOOM.WAD"
-ECHO * GZDoom v4.2                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-42" "HERETIC.WAD"
-ECHO * GZDoom v4.2                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-42" "HEXEN.WAD"
-ECHO * GZDoom v4.2                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-42" "STRIFE1.WAD"
-ECHO * GZDoom v4.2                CHEX.WAD
-CALL :make_gzdoom "gzdoom-42" "CHEX.WAD"
-ECHO * GZDoom v4.2                HARM1.WAD
-CALL :make_gzdoom "gzdoom-42" "HARM1.WAD"
-ECHO * GZDoom v4.2                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-42" "ROTWB.WAD"
-ECHO * GZDoom v4.2                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-42" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-43
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-43.ini" GOTO :gzdoom-44
-
-ECHO * GZDoom v4.3                DOOM.WAD
-CALL :make_gzdoom "gzdoom-43" "DOOM.WAD"
-ECHO * GZDoom v4.3                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-43" "HERETIC.WAD"
-ECHO * GZDoom v4.3                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-43" "HEXEN.WAD"
-ECHO * GZDoom v4.3                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-43" "STRIFE1.WAD"
-ECHO * GZDoom v4.3                CHEX.WAD
-CALL :make_gzdoom "gzdoom-43" "CHEX.WAD"
-ECHO * GZDoom v4.3                HARM1.WAD
-CALL :make_gzdoom "gzdoom-43" "HARM1.WAD"
-ECHO * GZDoom v4.3                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-43" "ROTWB.WAD"
-ECHO * GZDoom v4.3                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-43" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-44
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-44.ini" GOTO :gzdoom-45
-
-ECHO * GZDoom v4.4                DOOM.WAD
-CALL :make_gzdoom "gzdoom-44" "DOOM.WAD"
-ECHO * GZDoom v4.4                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-44" "HERETIC.WAD"
-ECHO * GZDoom v4.4                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-44" "HEXEN.WAD"
-ECHO * GZDoom v4.4                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-44" "STRIFE1.WAD"
-ECHO * GZDoom v4.4                CHEX.WAD
-CALL :make_gzdoom "gzdoom-44" "CHEX.WAD"
-ECHO * GZDoom v4.4                HARM1.WAD
-CALL :make_gzdoom "gzdoom-44" "HARM1.WAD"
-ECHO * GZDoom v4.4                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-44" "ROTWB.WAD"
-ECHO * GZDoom v4.4                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-44" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-45
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-45.ini" GOTO :gzdoom-46
-
-ECHO * GZDoom v4.5                DOOM.WAD
-CALL :make_gzdoom "gzdoom-45" "DOOM.WAD"
-ECHO * GZDoom v4.5                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-45" "HERETIC.WAD"
-ECHO * GZDoom v4.5                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-45" "HEXEN.WAD"
-ECHO * GZDoom v4.5                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-45" "STRIFE1.WAD"
-ECHO * GZDoom v4.5                CHEX.WAD
-CALL :make_gzdoom "gzdoom-45" "CHEX.WAD"
-ECHO * GZDoom v4.5                HARM1.WAD
-CALL :make_gzdoom "gzdoom-45" "HARM1.WAD"
-ECHO * GZDoom v4.5                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-45" "ROTWB.WAD"
-ECHO * GZDoom v4.5                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-45" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-46
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-46.ini" GOTO :gzdoom-47
-
-ECHO * GZDoom v4.6                DOOM.WAD
-CALL :make_gzdoom "gzdoom-46" "DOOM.WAD"
-ECHO * GZDoom v4.6                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-46" "HERETIC.WAD"
-ECHO * GZDoom v4.6                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-46" "HEXEN.WAD"
-ECHO * GZDoom v4.6                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-46" "STRIFE1.WAD"
-ECHO * GZDoom v4.6                CHEX.WAD
-CALL :make_gzdoom "gzdoom-46" "CHEX.WAD"
-ECHO * GZDoom v4.6                HARM1.WAD
-CALL :make_gzdoom "gzdoom-46" "HARM1.WAD"
-ECHO * GZDoom v4.6                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-46" "ROTWB.WAD"
-ECHO * GZDoom v4.6                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-46" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-47
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-47.ini" GOTO :gzdoom-48
-
-ECHO * GZDoom v4.7                DOOM.WAD
-CALL :make_gzdoom "gzdoom-47" "DOOM.WAD"
-ECHO * GZDoom v4.7                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-47" "HERETIC.WAD"
-ECHO * GZDoom v4.7                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-47" "HEXEN.WAD"
-ECHO * GZDoom v4.7                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-47" "STRIFE1.WAD"
-ECHO * GZDoom v4.7                CHEX.WAD
-CALL :make_gzdoom "gzdoom-47" "CHEX.WAD"
-ECHO * GZDoom v4.7                HARM1.WAD
-CALL :make_gzdoom "gzdoom-47" "HARM1.WAD"
-ECHO * GZDoom v4.7                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-47" "ROTWB.WAD"
-ECHO * GZDoom v4.7                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-47" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom-48
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom-48.ini" GOTO :gzdoom
-
-ECHO * GZDoom v4.8                DOOM.WAD
-CALL :make_gzdoom "gzdoom-48" "DOOM.WAD"
-ECHO * GZDoom v4.8                HERETIC.WAD
-CALL :make_gzdoom "gzdoom-48" "HERETIC.WAD"
-ECHO * GZDoom v4.8                HEXEN.WAD
-CALL :make_gzdoom "gzdoom-48" "HEXEN.WAD"
-ECHO * GZDoom v4.8                STRIFE1.WAD
-CALL :make_gzdoom "gzdoom-48" "STRIFE1.WAD"
-ECHO * GZDoom v4.8                CHEX.WAD
-CALL :make_gzdoom "gzdoom-48" "CHEX.WAD"
-ECHO * GZDoom v4.8                HARM1.WAD
-CALL :make_gzdoom "gzdoom-48" "HARM1.WAD"
-ECHO * GZDoom v4.8                ROTWB.WAD
-CALL :make_gzdoom "gzdoom-48" "ROTWB.WAD"
-ECHO * GZDoom v4.8                SQUARE1.PK3
-CALL :make_gzdoom "gzdoom-48" "square1.pk3"
-ECHO ----------------------------------------
-
-:gzdoom
-REM # delete the file in order to re-build it
-IF EXIST "default.gzdoom.ini" GOTO :zdoom
-
-ECHO * GZDoom                     DOOM.WAD
-CALL :make_gzdoom "gzdoom" "DOOM.WAD"
-ECHO * GZDoom                     HERETIC.WAD
-CALL :make_gzdoom "gzdoom" "HERETIC.WAD"
-ECHO * GZDoom                     HEXEN.WAD
-CALL :make_gzdoom "gzdoom" "HEXEN.WAD"
-ECHO * GZDoom                     STRIFE1.WAD
-CALL :make_gzdoom "gzdoom" "STRIFE1.WAD"
-ECHO * GZDoom                     CHEX.WAD
-CALL :make_gzdoom "gzdoom" "CHEX.WAD"
-ECHO * GZDoom                     HARM1.WAD
-CALL :make_gzdoom "gzdoom" "HARM1.WAD"
-ECHO * GZDoom                     ROTWB.WAD
-CALL :make_gzdoom "gzdoom" "ROTWB.WAD"
-ECHO * GZDoom                     SQUARE1.PK3
-CALL :make_gzdoom "gzdoom" "square1.pk3"
-ECHO ----------------------------------------
 
 REM # ZDoom
-REM ============================================================================
+REM #===========================================================================
 :zdoom
 REM # delete the file in order to re-build it
 IF EXIST "default.zdoom.ini" GOTO :doom64
@@ -762,8 +205,9 @@ ECHO * ZDoom v2.8.1               HARM1.WAD
 CALL :make_zdoom "zdoom" "HARM1.WAD"
 ECHO ----------------------------------------
 
+
 REM # DOOM 64
-REM ============================================================================
+REM #===========================================================================
 :doom64
 REM # delete the file in order to re-build it
 IF EXIST "default.doom64ex.cfg" GOTO :exit
@@ -782,12 +226,11 @@ PAUSE
 EXIT /B
 
 
-
 :make_doomretro
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
@@ -807,10 +250,10 @@ GOTO:EOF
 
 
 :make_vanilla
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
@@ -865,27 +308,29 @@ GOTO:EOF
 
 
 :make_boom_hw
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "glboom-plus"
 GOTO:EOF
 
+
 :make_boom_sw
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
 GOTO:EOF
 
+
 :make_boom_inject
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # turn off texture filtering
 %BIN_FART% "default.%~1.cfg" "gl_texture_filter             5"		"gl_texture_filter             3"
 %BIN_FART% "default.%~1.cfg" "gl_sprite_filter              1"		"gl_sprite_filter              3"
@@ -906,343 +351,300 @@ GOTO:EOF
 
 
 :make_zandronum
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
+SET DEFAULT_INI="default.%~1.ini"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
+
 REM # graphics
-%BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
-%BIN_FART% "default.%~1.ini" "crosshair=0" "crosshair=2"
-%BIN_FART% "default.%~1.ini" "cl_stfullscreenhud=true" "cl_stfullscreenhud=false"
-%BIN_FART% "default.%~1.ini" "con_scaletext_usescreenratio=false" "con_scaletext_usescreenratio=true"
-%BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
-%BIN_FART% "default.%~1.ini" "vid_cursor=None" "vid_cursor=-"
-%BIN_FART% "default.%~1.ini" "con_scaletext=false" "con_scaletext=true"
-%BIN_FART% "default.%~1.ini" "con_virtualheight=480" "con_virtualheight=360"
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_renderer" "1"
+
+REM # in Zandronum 2, these settings are in global, rather than per-game
+IF [%~1] == [zandronum-2] %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
+IF [%~1] == [zandronum-2] %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
+
+REM # from here, settings are separated per game IWAD
+IF /I "%~2" == "DOOM.WAD"	SET "SECTION=Doom"
+IF /I "%~2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
+IF /I "%~2" == "HEXEN.WAD" 	SET "SECTION=Hexen"
+IF /I "%~2" == "STRIFE1.WAD" 	SET "SECTION=Strife"
+IF /I "%~2" == "CHEX.WAD" 	SET "SECTION=Chex"
+IF /I "%~2" == "HARM1.WAD" 	SET "SECTION=Harmony"
+REM # shorthand for the game-specific section
+SET CONSOLE_VARS="[%SECTION%.ConsoleVariables]"
+
+REM # in Zandronum 3, these settings are per-game instead of global
+IF [%~1] == [zandronum-3] %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshair" "2"
+IF [%~1] == [zandronum-3] %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "false"
+IF [%~1] == [zandronum-3] %CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "-"
+
+REM # scaling of hud / message text
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "cl_stfullscreenhud" "false"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_scaletext" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_scaletext_usescreenratio" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_virtualwidth" "640"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_virtualheight" "368"
+REM # automap, show item-count
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_showitems" "true"
 
 REM # player set up
-%BIN_FART% "default.%~1.ini" "gender=male" "gender=Other"
-%BIN_FART% "default.%~1.ini" "name=Player" "name=PortaDOOM"
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "gender" "other"
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "name" "PortaDOOM"
 
 REM # controls
-%BIN_FART% "default.%~1.ini" "mouse2=+strafe" "mouse2=+altattack"
-%BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
-%BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
-
-IF /I "%~2" == "DOOM.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] c=+crouch
-)
-IF /I "%~2" == "HERETIC.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] c=+crouch
-)
-IF /I "%~2" == "HEXEN.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] c=+crouch
-)
-IF /I "%~2" == "STRIFE1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
-)
-IF /I "%~2" == "CHEX.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
-)
-IF /I "%~2" == "HARM1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
-)
-
-REM # automap, show item-count
-%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "mouse2" "+altattack"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "space" "+jump"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "f12" "screenshot"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "e" "+use"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "q" "+zoom"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "r" "+reload"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "c" "+crouch"
+%CONFIG_DEFAULT% DEL "[%SECTION%.Bindings]" "mouse3"
 
 GOTO:EOF
 
 
+:gzdoom_any
+REM #===========================================================================
+REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
+REM #	      99 = default (i.e. "gzdoom.ini")
+REM #---------------------------------------------------------------------------
+IF %~1 EQU 99 SET "INI=gzdoom"
+IF %~1 LSS 99 SET "INI=gzdoom-%~1"
+SET DEFAULT_INI="default.%INI%.ini"
+
+SET "VER=%~1"
+IF %~1 EQU 99 SET "VER=    "
+IF %~1 LSS 99 SET "VER=v%VER:~0,1%.%VER:~1,1%"
+
+REM # delete the file in order to re-build it
+IF EXIST %DEFAULT_INI% GOTO:EOF
+
+ECHO * GZDoom %VER%                DOOM.WAD
+CALL :make_gzdoom %~1 "DOOM.WAD"
+ECHO * GZDoom %VER%                HERETIC.WAD
+CALL :make_gzdoom %~1 "HERETIC.WAD"
+ECHO * GZDoom %VER%                HEXEN.WAD
+CALL :make_gzdoom %~1 "HEXEN.WAD"
+ECHO * GZDoom %VER%                STRIFE1.WAD
+CALL :make_gzdoom %~1 "STRIFE1.WAD"
+REM # Chex support first appears in v1.1
+IF %~1 GEQ 11 (
+	ECHO * GZDoom %VER%                CHEX.WAD
+	CALL :make_gzdoom %~1 "CHEX.WAD"
+)
+REM # from GZDoom v1.5 we gain support for Harmony.
+REM # technically v1.4 supports it, but it doesn't
+REM # populate the config defaults as expected
+IF %~1 GEQ 15 (
+	ECHO * GZDoom %VER%                HARM1.WAD
+	CALL :make_gzdoom %~1 "HARM1.WAD"
+)
+REM # Rise Of The Wool Ball support from v3.2 onwards
+IF %~1 GEQ 32 (
+	ECHO * GZDoom %VER%                ROTWB.WAD
+	CALL :make_gzdoom %~1 "ROTWB.WAD"
+)
+REM # Adventures of Square support from v3.3 onwards
+IF %~1 GEQ 33 (
+	ECHO * GZDoom %VER%                SQUARE1.PK3
+	CALL :make_gzdoom %~1 "SQUARE1.PK3"
+)
+ECHO ----------------------------------------
+GOTO:EOF
+
+
 :make_gzdoom
-REM #
-REM #    %1 = engine-name
+REM #===========================================================================
+REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
+REM #	      99 = default (i.e. "gzdoom.ini")
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
+IF %~1 EQU 99 SET "INI=gzdoom"
+IF %~1 LSS 99 SET "INI=gzdoom-%~1"
+SET DEFAULT_INI="default.%INI%.ini"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
+
 REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
-%BIN_FART% "default.%~1.ini" "sys_statsenabled=1" "sys_statsenabled=0"
-
+REM # (this first appeared in v4.2 and appears now and again)
+IF %~1 GEQ 42 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
 REM # VSync ON
-%BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
+REM # "fullscreen" field is used before v4.4
+REM # (fullscreen isn't default from v2.2 to v3.4)
+IF %~1 LSS 44 %CONFIG_DEFAULT% SET "[GlobalSettings]" "fullscreen" "true"
+REM # from v4.4 the field has changed to "vid_fullscreen"
+IF %~1 GEQ 44 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_fullscreen" "true"
 
 REM # Texture Filtering: Nearest (Linear Mipmap) is supported from v1.5 onwards;
 REM # (graphics break if this is applied to earlier versions)
-%BIN_FART% "default.gzdoom.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-15.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-16.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-17.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-18.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-19.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-2*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-3*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-%BIN_FART% "default.gzdoom-4*.ini" "gl_texture_filter=4" "gl_texture_filter=5"
-
+IF %~1 GEQ 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "5"
 REM # use "Mipmapped" for earlier versions
-%BIN_FART% "default.gzdoom-10.ini" "gl_texture_filter=4" "gl_texture_filter=1"
-%BIN_FART% "default.gzdoom-11.ini" "gl_texture_filter=4" "gl_texture_filter=1"
-%BIN_FART% "default.gzdoom-12.ini" "gl_texture_filter=4" "gl_texture_filter=1"
-%BIN_FART% "default.gzdoom-13.ini" "gl_texture_filter=4" "gl_texture_filter=1"
-%BIN_FART% "default.gzdoom-14.ini" "gl_texture_filter=4" "gl_texture_filter=1"
+IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "1"
+REM # enable cross-hair, type 2 (this is in GlobalSettings before v1.5)
+IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
+REM # full-screen HUD (this is in GlobalSettings before v1.3)
+IF %~1 LSS 13 %CONFIG_DEFAULT% SET "[GlobalSettings]" "screenblocks" "11"
+REM # cross hair 1:1 pixels (no-scale), added in v1.2
+IF %~1 GEQ 12 (
+	REM # moved from GlobalSettings to per-game in v.1.5
+	IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
+)
+
+REM # mouse-look by default
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "freelook" "true"
+REM # always run
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "cl_run" "true"
+REM # do not attempt to locate IWAD (we always provide it)
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
+
+REM # from here, settings are separated per game IWAD
+IF /I "%~2" == "DOOM.WAD"	SET "SECTION=Doom"
+IF /I "%~2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
+IF /I "%~2" == "HEXEN.WAD" 	SET "SECTION=Hexen"
+IF /I "%~2" == "STRIFE1.WAD" 	SET "SECTION=Strife"
+IF /I "%~2" == "CHEX.WAD" 	SET "SECTION=Chex"
+IF /I "%~2" == "HARM1.WAD" 	SET "SECTION=Harmony"
+IF /I "%~2" == "ROTWB.WAD" 	SET "SECTION=WoolBall"
+IF /I "%~2" == "SQUARE1.PK3" 	SET "SECTION=Square"
+REM # shorthand for the game-specific section
+SET CONSOLE_VARS="[%SECTION%.ConsoleVariables]"
 
 REM # use "standard" light mode instead of "dark"
-%BIN_FART% "default.%~1.ini" "gl_lightmode=3" "gl_lightmode=0"
-
-REM # controls
-IF /I "%~2" == "DOOM.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] d=+moveright
-)
-IF /I "%~2" == "HERETIC.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] d=+moveright
-)
-IF /I "%~2" == "HEXEN.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] d=+moveright
-)
-IF /I "%~2" == "STRIFE1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
-)
-IF /I "%~2" == "CHEX.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
-)
-IF /I "%~2" == "HARM1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] d=+moveright
-)
-IF /I "%~2" == "ROTWB.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [WoolBall.Bindings] d=+moveright
-)
-IF /I "%~2" == "SQUARE1.PK3" (
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Square.Bindings] d=+moveright
-)
-
-REM # change controls
-%BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
-%BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
-%BIN_FART% "default.%~1.ini" "mouse2=+strafe" "mouse2=+altattack"
-
-%BIN_FART% "default.%~1.ini" "freelook=false" "freelook=true"
-%BIN_FART% "default.%~1.ini" "cl_run=false" "cl_run=true"
-%BIN_FART% "default.%~1.ini" "queryiwad=true" "queryiwad=false"
-%BIN_FART% "default.%~1.ini" "gender=male" "gender=other"
-%BIN_FART% "default.%~1.ini" "name=Player" "name=PortaDOOM"
-%BIN_FART% "default.%~1.ini" "vid_cursor=None" "vid_cursor=-"
-
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "gl_lightmode" "0"
 REM # automap, show item-count
-%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
-
-REM # full-screen HUD
-%BIN_FART% "default.%~1.ini" "screenblocks=10" "screenblocks=11"
-REM # HUD auto-scale (v2.1<)
-%BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_showitems" "true"
+REM # use system mouse cursor (cursor was added in v1.5)
+IF %~1 GEQ 15 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "-"
+REM # full-screen HUD (this is per-game from v1.3)
+IF %~1 GEQ 13 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "screenblocks" "11"
+REM # UI scale defaults to 2 between v2.2 & v3.x
+REM # this is better set to 0 (auto), which is the default from v4+
+IF %~1 GEQ 22 IF %~1 LSS 40 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "uiscale" "0"
+REM # HUD auto-scale (v2.1-)
+IF %~1 LEQ 21 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "true"
 REM # HUD auto-scale (v2.2+)
-%BIN_FART% "default.%~1.ini" "hud_scale=0" "hud_scale=-1"
+IF %~1 GEQ 22 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "-1"
 REM # status bar auto-scale
-%BIN_FART% "default.%~1.ini" "st_scale=0" "st_scale=-1"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "st_scale" "-1"
 REM # there's no auto message-scale, 2 makes it readable without being too big
-%BIN_FART% "default.%~1.ini" "con_scaletext=0" "con_scaletext=2"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_scaletext" "2"
+REM # enable cross-hair, type 2 (this is per-game from v1.5)
+IF %~1 GEQ 15 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshair" "2"
+REM # cross hair 1:1 pixels (no-scale), becomes per-game in v1.5
+REM # from v1.2 to v2.1 it is a boolean true/false value
+IF %~1 GEQ 15 IF %~1 LEQ 21 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "false"
+REM # in v2.2+ it becomes a value
+IF %~1 GEQ 15 IF %~1 GEQ 22 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "0"
 
-REM # enable cross-hair (type 2)
-%BIN_FART% "default.%~1.ini" "crosshair=0" "crosshair=2"
-REM # cross hair 1:1 pixels (no-scale)
-%BIN_FART% "default.%~1.ini" "crosshairscale=1" "crosshairscale=0"
+REM # set controls:
+REM # NOTE: from GZDoom v4.0+, fields are capitalised
+IF %~1 GEQ 40 (
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "E" "+use"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Q" "+zoom"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "R" "+reload"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "C" "+crouch"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "W" "+forward"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "A" "+moveleft"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "S" "+back"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "D" "+moveright"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Space" "+jump"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "F12" "screenshot"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Mouse2" "+altattack"
+) ELSE (
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "e" "+use"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "q" "+zoom"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "r" "+reload"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "c" "+crouch"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "w" "+forward"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "a" "+moveleft"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "s" "+back"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "d" "+moveright"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "space" "+jump"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "f12" "screenshot"
+	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "mouse2" "+altattack"
+)
+REM # unbind mouse-forward
+%CONFIG_DEFAULT% DEL "[%SECTION%.Bindings]" "mouse3"
+
+REM # define player:
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "name" "PortaDOOM"
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "gender" "other"
 
 GOTO:EOF
 
 
 :make_zdoom
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
-REM # VSync ON
-%BIN_FART% "default.%~1.ini" "vid_vsync=false" "vid_vsync=true"
+SET DEFAULT_INI="default.%~1.ini"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
 
-REM # controls
-IF "%~2" == "DOOM.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Doom.Bindings] d=+moveright
-)
-IF "%~2" == "HERETIC.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Heretic.Bindings] d=+moveright
-)
-IF "%~2" == "HEXEN.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Hexen.Bindings] d=+moveright
-)
-IF "%~2" == "STRIFE1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Strife.Bindings] d=+moveright
-)
-IF "%~2" == "CHEX.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Chex.Bindings] d=+moveright
-)
-IF "%~2" == "HARM1.WAD" (
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] mouse3=
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] e=+use
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] q=+zoom
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] r=+reload
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] c=+crouch
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] w=+forward
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] a=+moveleft
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] s=+back
-	%BIN_INIFILE% "default.%~1.ini" [Harmony.Bindings] d=+moveright
-)
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "cl_run" "true"
 
-REM # change controls
-%BIN_FART% "default.%~1.ini" "space=+use" "space=+jump"
-%BIN_FART% "default.%~1.ini" "f12=spynext" "f12=screenshot"
-%BIN_FART% "default.%~1.ini" "mouse2=+strafe" "mouse2=+altattack"
-
-%BIN_FART% "default.%~1.ini" "cl_run=false" "cl_run=true"
-%BIN_FART% "default.%~1.ini" "queryiwad=true" "queryiwad=false"
-%BIN_FART% "default.%~1.ini" "gender=male" "gender=other"
-%BIN_FART% "default.%~1.ini" "name=Player" "name=PortaDOOM"
-%BIN_FART% "default.%~1.ini" "vid_cursor=None" "vid_cursor=-"
+REM # from here, settings are separated per game IWAD
+IF /I "%~2" == "DOOM.WAD"	SET "SECTION=Doom"
+IF /I "%~2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
+IF /I "%~2" == "HEXEN.WAD" 	SET "SECTION=Hexen"
+IF /I "%~2" == "STRIFE1.WAD" 	SET "SECTION=Strife"
+IF /I "%~2" == "CHEX.WAD" 	SET "SECTION=Chex"
+IF /I "%~2" == "HARM1.WAD" 	SET "SECTION=Harmony"
+REM # shorthand for the game-specific section
+SET CONSOLE_VARS="[%SECTION%.ConsoleVariables]"
 
 REM # full-screen HUD
-%BIN_FART% "default.%~1.ini" "screenblocks=10" "screenblocks=11"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "screenblocks" "11"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "-"
 REM # HUD auto-scale
-%BIN_FART% "default.%~1.ini" "hud_scale=false" "hud_scale=true"
-%BIN_FART% "default.%~1.ini" "con_scaletext=0" "con_scaletext=1"
-
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_scaletext" "1"
 REM # automap, show item-count
-%BIN_FART% "default.%~1.ini" "am_showitems=false" "am_showitems=true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_showitems" "true"
+
+REM # define player:
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "name" "PortaDOOM"
+%CONFIG_DEFAULT% SET "[%SECTION%.Player]" "gender" "other"
+
+REM # change controls
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "space" "+jump"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "f12" "screenshot"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "mouse2" "+altattack"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "e" "+use"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "q" "+zoom"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "r" "+reload"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "c" "+crouch"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "w" "+forward"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "a" "+moveleft"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "s" "+back"
+%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "d" "+moveright"
+%CONFIG_DEFAULT% DEL "[%SECTION%.Bindings]" "mouse3"
 
 GOTO:EOF
 
 
 :make_doom64
-REM #
+REM #===========================================================================
 REM #    %1 = engine-name
 REM #    %2 = IWAD
-REM ----------------------------------------------------------------------------
+REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
