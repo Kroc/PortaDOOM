@@ -16,8 +16,8 @@ ECHO  Delete any of these files to re-generate them with this script.
 ECHO:
 ECHO  This script will launch each engine and game combination to populate the
 ECHO  config files with defaults. YOU DO NOT NEED TO CHANGE ANY SETTINGS --
-ECHO  JUST QUIT EACH ENGINE AS IT APPEARS. This script will inject the config
-ECHO  changes afterward.
+ECHO  JUST QUIT (ALT+F4) EACH ENGINE FROM THE TITLE SCREEN AS IT APPEARS.
+ECHO  This script will inject the config changes afterwards.
 ECHO:
 ECHO  When ready to begin, press any key.
 ECHO:
@@ -234,17 +234,19 @@ REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
-%BIN_FART% "default.%~1.cfg" "alwaysrun off"		"alwaysrun on"
-%BIN_FART% "default.%~1.cfg" "messages off"		"messages on"
-%BIN_FART% "default.%~1.cfg" "am_rotatemode on"		"am_rotatemode off"
-%BIN_FART% "default.%~1.cfg" "playername \"you\""	"playername \"PortaDOOM\""
-ECHO bind 'f12' +screenshot>>"default.%~1.cfg"
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
 
-%BIN_FART% "default.%~1.cfg" ^
-	"iwadfolder \"C:\\GAMES\\GOG\\DOOM 2\\.\"" ^
-	"iwadfolder \"\""
+%CONFIG_DEFAULT% SET "alwaysrun" "on"
+%CONFIG_DEFAULT% SET "messages" "on"
+%CONFIG_DEFAULT% SET "am_rotatemode" "off"
+%CONFIG_DEFAULT% SET "playername" """PortaDOOM"""
+REM # TODO: is this relative to the EXE or to the current directory?
+%CONFIG_DEFAULT% SET "iwadfolder" """..\..\wads"""
+ECHO bind F12 +screenshot>>%DEFAULT_CFG%
 
-REM # TODO: reset the stats properties
+REM # TODO: reset the stats properties?
+%CONFIG_DEFAULT% SET "runs" "0"
 
 GOTO:EOF
 
@@ -257,52 +259,51 @@ REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
-REM # main keys
-%BIN_FART% "default.%~1.cfg" "key_up                        72"		"key_up                        17"
-%BIN_FART% "default.%~1.cfg" "key_down                      80"		"key_down                      31"
-%BIN_FART% "default.%~1.cfg" "key_strafeleft                51"		"key_strafeleft                30"
-%BIN_FART% "default.%~1.cfg" "key_straferight               52"		"key_straferight               32"
-%BIN_FART% "default.%~1.cfg" "key_use                       57"		"key_use                       18"
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+SET EXTRA_CFG="default.%~1.extra.cfg"
+SET CONFIG_EXTRA=%BIN_CONFIG% %EXTRA_CFG%
 
+REM # main keys
+%CONFIG_DEFAULT% SET "key_up" "17"
+%CONFIG_DEFAULT% SET "key_down" "31"
+%CONFIG_DEFAULT% SET "key_strafeleft" "30"
+%CONFIG_DEFAULT% SET "key_straferight" "32"
+%CONFIG_DEFAULT% SET "key_use" "18"
 REM # mouse-movement off
-%BIN_FART% "default.%~1.extra.cfg" "novert                        0"	"novert                        1"
-%BIN_FART% "default.%~1.cfg" "mouseb_strafe                 1"		"mouseb_strafe                 -1"
-%BIN_FART% "default.%~1.cfg" "mouseb_forward                2"		"mouseb_forward                -1"
+%CONFIG_EXTRA% SET "novert" "1"
+%CONFIG_DEFAULT% SET "mouseb_strafe" "-1"
+%CONFIG_DEFAULT% SET "mouseb_forward" "-1"
 REM # mouse controls
-%BIN_FART% "default.%~1.extra.cfg" "mouseb_prevweapon             -1"	"mouseb_prevweapon             4"
-%BIN_FART% "default.%~1.extra.cfg" "mouseb_nextweapon             -1"	"mouseb_nextweapon             3"
-%BIN_FART% "default.%~1.extra.cfg" "dclick_use                    1"	"dclick_use                    0"
+%CONFIG_EXTRA% SET "mouseb_prevweapon" "4"
+%CONFIG_EXTRA% SET "mouseb_nextweapon" "3"
+%CONFIG_EXTRA% SET "dclick_use" "0"
 
 REM # always run
-%BIN_FART% "default.%~1.cfg" "joyb_speed                    2"		"joyb_speed                    29"
+%CONFIG_DEFAULT% SET "joyb_speed" "29"
 
 REM # compatibility
-%BIN_FART% "default.%~1.extra.cfg" "fullscreen                    0"	"fullscreen                    1"
-%BIN_FART% "default.%~1.extra.cfg" "show_endoom                   1"	"show_endoom                   0"
-%BIN_FART% "default.%~1.extra.cfg" "vanilla_savegame_limit        1"	"vanilla_savegame_limit        0"
-%BIN_FART% "default.%~1.extra.cfg" "vanilla_demo_limit            1"	"vanilla_demo_limit            0"
-%BIN_FART% "default.%~1.extra.cfg" "png_screenshots               0"	"png_screenshots               1"
+%CONFIG_EXTRA% SET "fullscreen" "1"
+%CONFIG_EXTRA% SET "show_endoom" "0"
+%CONFIG_EXTRA% SET "vanilla_savegame_limit" "0"
+%CONFIG_EXTRA% SET "vanilla_demo_limit" "0"
+%CONFIG_EXTRA% SET "png_screenshots" "1"
 
 REM # use F12 for screen-shot
-%BIN_FART% "default.%~1.extra.cfg" "key_spy                       88"	"key_spy                       0"
-%BIN_FART% "default.%~1.extra.cfg" "key_menu_screenshot           0"	"key_menu_screenshot           88"
+%CONFIG_EXTRA% SET "key_spy" "0"
+%CONFIG_EXTRA% SET "key_menu_screenshot" "88"
 
 REM # user-name for multi-player
-REM # TODO: crispy-doom 5.6 now uses a randomly generated name
-%BIN_FART% "default.%~1.extra.cfg" "player_name                   \"%USERNAME%\"" "player_name                   \"PortaDOOM\""
+REM # (crispy-doom 5.6+ uses a randomly generated name)
+%CONFIG_EXTRA% SET "player_name" """PortaDOOM"""
 REM # in Chocolate Strife there's also nickname?
-%BIN_FART% "default.choco-strife.cfg" "nickname                      \"(null)\"" "nickname                      \"PortaDOOM\""
+IF [%~1] == [choco-strife] %CONFIG_DEFAULT% SET "nickname" """PortaDOOM"""
 
 SET "APPDATAESC=%APPDATA:\=\\%"
 
-REM # Crispy Doom, annoyingly, adds these in -- another reason why I need
-REM # to make a specialised tool for programatically modifying CFG/INI files
-%BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"autoload_path                 \"%APPDATAESC%\\crispy-doom\\autoload\"" ^
-	"autoload_path                 \"\""
-%BIN_FART% "default.crispy-doom.extra.cfg" ^
-	"music_pack_path               \"%APPDATAESC%\\crispy-doom\\music-packs\"" ^
-	"music_pack_path               \"\""
+REM # Crispy Doom, annoyingly, adds these in
+IF [%~1] == [crispy-doom] %CONFIG_EXTRA% SET "autoload_path" """autoload"""
+IF [%~1] == [crispy-doom] %CONFIG_EXTRA% SET "music_pack_path" """music-packs"""
 
 GOTO:EOF
 
