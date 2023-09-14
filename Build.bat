@@ -12,9 +12,8 @@ IF /I "%PROCESSOR_ARCHITEW6432%" == "AMD64" SET WINBIT=64
 REM # location of QB64 executable
 SET BIN_QB64=bin\qb64\qb64.exe
 
-REM # select 7Zip executable
-IF %WINBIT% EQU 64 SET BIN_7ZA="%~dp0bin\7za\7za_x64.exe"
-IF %WINBIT% EQU 32 SET BIN_7ZA="%~dp0bin\7za\7za_x86.exe"
+REM # location of 7Zip executable
+SET BIN_7ZA="%~dp0bin\7za\7za.exe"
 REM # location of UPX executable
 REM # (for compression EXE files)
 SET BIN_UPX="%~dp0bin\upx\upx.exe"
@@ -60,7 +59,7 @@ IF /I "%$%" == "5" CALL :do_release_5yearsofdoom
 IF /I "%$%" == "P" CALL :do_release_psxdoomtc
 IF /I "%$%" == "X" CALL :do_release_launcher
 
-GOTO :menu
+GOTO:EOF
 
 
 :select_compression

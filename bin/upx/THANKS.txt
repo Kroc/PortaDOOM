@@ -1,14 +1,14 @@
-                 ooooo     ooo ooooooooo.   ooooooo  ooooo
-                 `888'     `8' `888   `Y88.  `8888    d8'
-                  888       8   888   .d88'    Y888..8P
-                  888       8   888ooo88P'      `8888'
-                  888       8   888            .8PY888.
-                  `88.    .8'   888           d8'  `888b
-                    `YbodP'    o888o        o888o  o88888o
+                 ooooo     ooo  ooooooooo.  ooooooo  ooooo
+                 `888'     `8'  `888   `Y88. `8888    d8'
+                  888       8    888   .d88'   Y888..8P
+                  888       8    888ooo88P'     `8888'
+                  888       8    888           .8PY888.
+                  `88.    .8'    888          d8'  `888b
+                    `YbodP'     o888o       o888o  o88888o
 
 
                     The Ultimate Packer for eXecutables
-   Copyright (c) 1996-2020 Markus Oberhumer, Laszlo Molnar & John Reiser
+   Copyright (c) 1996-2023 Markus Oberhumer, Laszlo Molnar & John Reiser
                            https://upx.github.io
 
 
@@ -41,12 +41,14 @@ Joergen Ibsen <jibz@hotmail.com> and d'b
   for the relocation & address optimization ideas
 John S. Fine <johnfine@erols.com>
   for the new version of the dos/exe decompressor
+Kornel Pal
+  for the EFI support
 Lukundoo <Lukundoo@softhome.net>
   for beta testing
 Michael Devore
   for initial dos/exe device driver support
 Oleg V. Volkov <rover@lglobus.ru>
-  for various FreeBSD specific informations
+  for various FreeBSD specific information
 The Owl & G-RoM
   for the --compress-icons fix
 Ralph Roth <RalphRoth@gmx.net>
@@ -55,7 +57,6 @@ Salvador Eduardo Tropea
   for beta testing
 Stefan Widmann
   for the win32/pe TLS callback support
-The WINE project (http://www.winehq.com/)
+The WINE project (https://www.winehq.com/)
   for lots of useful information found in their PE loader sources
 Natascha
-

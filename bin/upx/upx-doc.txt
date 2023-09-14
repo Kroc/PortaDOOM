@@ -6,7 +6,7 @@ SYNOPSIS
 
 ABSTRACT
                         The Ultimate Packer for eXecutables
-       Copyright (c) 1996-2020 Markus Oberhumer, Laszlo Molnar & John Reiser
+       Copyright (c) 1996-2023 Markus Oberhumer, Laszlo Molnar & John Reiser
                                https://upx.github.io
 
     UPX is a portable, extendable, high-performance executable packer for
@@ -15,69 +15,52 @@ ABSTRACT
     executables suffer no memory overhead or other drawbacks for most of the
     formats supported, because of in-place decompression.
 
-    While you may use UPX freely for both non-commercial and commercial
-    executables (for details see the file LICENSE), we would highly
-    appreciate if you credit UPX and ourselves in the documentation,
-    possibly including a reference to the UPX home page. Thanks.
-
-    [ Using UPX in non-OpenSource applications without proper credits is
-    considered not politically correct ;-) ]
-
 DISCLAIMER
-    UPX comes with ABSOLUTELY NO WARRANTY; for details see the file LICENSE.
-
-    This is the first production quality release, and we plan that future
-    1.xx releases will be backward compatible with this version.
+    UPX comes with ABSOLUTELY NO WARRANTY; for details see the file COPYING.
 
     Please report all problems or suggestions to the authors. Thanks.
+
+SECURITY CONTEXT
+    IMPORTANT NOTE: UPX inherits the security context of any files it
+    handles.
+
+    This means that packing, unpacking, or even testing or listing a file
+    requires the same security considerations as actually executing the
+    file.
+
+    Use UPX on trusted files only!
 
 DESCRIPTION
     UPX is a versatile executable packer with the following features:
 
-      - excellent compression ratio: compresses better than zip/gzip,
+      - secure: as UPX is documented Open Source since many years any relevant
+          Security/Antivirus software is able to peek inside UPX compressed
+          apps to verify them
+
+      - excellent compression ratio: typically compresses better than Zip,
           use UPX to decrease the size of your distribution !
 
-      - very fast decompression: about 10 MiB/sec on an ancient Pentium 133,
-          about 200 MiB/sec on an Athlon XP 2000+.
+      - very fast decompression: more than 500 MB/sec on any reasonably modern
+          machine
 
       - no memory overhead for your compressed executables for most of the
-          supported formats
+          supported formats because of in-place decompression
 
-      - safe: you can list, test and unpack your executables
+      - safe: you can list, test and unpack your executables.
           Also, a checksum of both the compressed and uncompressed file is
           maintained internally.
 
-      - universal: UPX can pack a number of executable formats:
-          * atari/tos
-          * bvmlinuz/386    [bootable Linux kernel]
-          * djgpp2/coff
-          * dos/com
-          * dos/exe
-          * dos/sys
-          * linux/386
-          * linux/elf386
-          * linux/sh386
-          * ps1/exe
-          * rtm32/pe
-          * tmt/adam
-          * vmlinuz/386     [bootable Linux kernel]
-          * vmlinux/386
-          * watcom/le (supporting DOS4G, PMODE/W, DOS32a and CauseWay)
-          * win32/pe (exe and dll)
-          * win64/pe (exe and dll)
-          * arm/pe (exe and dll)
-          * linux/elfamd64
-          * linux/elfppc32
-          * mach/elfppc32
+      - universal: UPX can pack a number of executable formats, including
+          Windows programs and DLLs, macOS apps and Linux executables
 
       - portable: UPX is written in portable endian-neutral C++
 
       - extendable: because of the class layout it's very easy to support
           new executable formats or add new compression algorithms
 
-      - free: UPX can be distributed and used freely. And from version 0.99
-          the full source code of UPX is released under the GNU General Public
-          License (GPL) !
+      - free: UPX is distributed with full source code under the GNU General
+          Public License v2+, with special exceptions granting the free usage
+          for commercial programs
 
     You probably understand now why we call UPX the "*ultimate*" executable
     packer.
@@ -122,7 +105,11 @@ OPTIONS
     time - any further compress-decompress steps should then yield
     byte-identical results as compared to the first decompressed version.]
 
-    [ ...to be written... - type `upx --help' for now ]
+    -k: keep backup files
+
+    -o file: write output to file
+
+    [ ...more docs need to be written... - type `upx --help' for now ]
 
 COMPRESSION LEVELS & TUNING
     UPX offers ten different compression levels from -1 to -9, and --best.
@@ -143,7 +130,15 @@ COMPRESSION LEVELS & TUNING
 
     Quick info for achieving the best compression ratio:
 
-    *   Try upx --brute myfile.exe or even upx --ultra-brute myfile.exe.
+    *   Try upx --brute --no-lzma myfile.exe or even upx --ultra-brute
+        --no-lzma myfile.exe.
+
+    *   The option --lzma enables LZMA compression, which compresses better
+        but is *significantly slower* at decompression. You probably do not
+        want to use it for large files.
+
+        (Note that --lzma is automatically enabled by --all-methods and
+        --brute, use --no-lzma to override.)
 
     *   Try if --overlay=strip works.
 
@@ -158,7 +153,7 @@ OVERLAY HANDLING OPTIONS
     UPX handles overlays like many other executable packers do: it simply
     copies the overlay after the compressed image. This works with some
     files, but doesn't work with others, depending on how an application
-    actually accesses this overlayed data.
+    actually accesses this overlaid data.
 
       --overlay=copy    Copy any extra data attached to the file. [DEFAULT]
 
@@ -168,7 +163,7 @@ OVERLAY HANDLING OPTIONS
 
       --overlay=skip    Refuse to compress any program which has an overlay.
 
-ENVIRONMENT
+ENVIRONMENT VARIABLE
     The environment variable UPX can hold a set of default options for UPX.
     These options are interpreted first and can be overwritten by explicit
     command line parameters. For example:
@@ -191,8 +186,8 @@ NOTES FOR THE SUPPORTED EXECUTABLE FORMATS
     This is the executable format used by the Atari ST/TT, a Motorola 68000
     based personal computer which was popular in the late '80s. Support of
     this format is only because of nostalgic feelings of one of the authors
-    and serves no practical purpose :-). See http://www.freemint.de for more
-    info.
+    and serves no practical purpose :-). See https://freemint.github.io for
+    more info.
 
     Packed programs will be byte-identical to the original after
     uncompression. All debug information will be stripped, though.
@@ -592,7 +587,7 @@ NOTES FOR THE SUPPORTED EXECUTABLE FORMATS
 
   NOTES FOR PS1/EXE
     This is the executable format used by the Sony PlayStation (PSone), a
-    Mips R3000 based gaming console which is popular since the late '90s.
+    MIPS R3000 based gaming console which is popular since the late '90s.
     Support of this format is very similar to the Atari one, because of
     nostalgic feelings of one of the authors.
 
@@ -823,22 +818,25 @@ AUTHORS
      Jens Medoch <jssg@users.sourceforge.net>
 
 COPYRIGHT
-    Copyright (C) 1996-2020 Markus Franz Xaver Johannes Oberhumer
+    Copyright (C) 1996-2023 Markus Franz Xaver Johannes Oberhumer
 
-    Copyright (C) 1996-2020 Laszlo Molnar
+    Copyright (C) 1996-2023 Laszlo Molnar
 
-    Copyright (C) 2000-2020 John F. Reiser
+    Copyright (C) 2000-2023 John F. Reiser
 
-    Copyright (C) 2002-2020 Jens Medoch
+    Copyright (C) 2002-2023 Jens Medoch
 
-    This program may be used freely, and you are welcome to redistribute it
-    under certain conditions.
+    UPX is distributed with full source code under the terms of the GNU
+    General Public License v2+; either under the pure GPLv2+ (see the file
+    COPYING), or (at your option) under the GPLv+2 with special exceptions
+    and restrictions granting the free usage for all binaries including
+    commercial programs (see the file LICENSE).
 
     This program is distributed in the hope that it will be useful, but
     WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the UPX License
-    Agreement for more details.
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    You should have received a copy of the UPX License Agreement along with
-    this program; see the file LICENSE. If not, visit the UPX home page.
+    You should have received a copy of the UPX License Agreements along with
+    this program; see the files COPYING and LICENSE. If not, visit the UPX
+    home page.
 

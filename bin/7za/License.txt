@@ -3,7 +3,7 @@
       License for use and distribution
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      Copyright (C) 1999-2022 Igor Pavlov.
+      Copyright (C) 1999-2023 Igor Pavlov.
 
       7-Zip Extra files are under the GNU LGPL license.
 
@@ -11,6 +11,9 @@
       Notes: 
         You can use 7-Zip Extra on any computer, including a computer in a commercial 
         organization. You don't need to register or pay for 7-Zip.
+
+      It is allowed to digitally sign DLL files included into this package
+      with arbitrary signatures of third parties."
 
 
       GNU LGPL information
