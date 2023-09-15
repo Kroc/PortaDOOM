@@ -1,9 +1,8 @@
 PortaDOOM.exe
 files\launcher.exe
 files\tools\xdelta3\
-files\wads\conversions\freedoom\
 
-files\wads\freedoom?.ini
+@files\wads\conversions\freedoom\include.lst
 files\wads\doom.ini
 files\wads\doom2.ini
 files\wads\tnt.ini
@@ -16,7 +15,7 @@ files\ports\prboom-plus\
 files\config\default.glboom-plus.cfg
 files\config\default.prboom-plus.cfg
 
-files\ports\gzdoom_*\
+files\ports\gzdoom-*\
 files\config\default.gzdoom.ini
 
 files\ports\zdoom\

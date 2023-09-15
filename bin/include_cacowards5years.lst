@@ -1,8 +1,6 @@
 PortaDOOM.exe
 
-files\wads\conversions\freedoom\
-files\wads\freedoom1.ini
-files\wads\freedoom2.ini
+@files\wads\conversions\freedoom\include.lst
 files\wads\SHAREWARE\DOOM1.WAD
 
 files\launcher.exe
@@ -16,7 +14,7 @@ files\config\default.gzdoom.ini
 
 files\ports\choco-doom\
 files\ports\prboom-plus\
-files\ports\gzdoom_*\
+files\ports\gzdoom-*\
 
 pages\Home #??.dosmag
 pages\5 Years of Doom #??.dosmag

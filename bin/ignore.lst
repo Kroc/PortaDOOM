@@ -10,6 +10,9 @@ Thumbs.db
 # prefixed with double-underscore
 __*
 
+# don't include the list files
+*.lst
+
 # left-overs from UPX compression
 *.upx
 *.bak

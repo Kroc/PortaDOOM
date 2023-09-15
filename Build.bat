@@ -28,6 +28,9 @@ REM # -myx=9    : maximum file analysis (level 9)
 SET "ZIP_MAX=-ms=on -mqs=on -mhc=on -mx=9 -myx=9"
 SET "ZIP_MIN=-ms=off -mhc=off -mx=0 -myx=0"
 
+REM # our include batch file concatenates 7-zip list files
+SET INCLUDE="%~dp0bin\include.bat"
+
 
 :menu
 REM ============================================================================
@@ -201,7 +204,12 @@ ECHO * Make PortaDOOM_Cacowards%~1 ...
 REM # the archive will be built without a base folder
 PUSHD PortaDOOM
 
-REM # swap over the homepages
+REM # swap over the homepages:
+IF EXIST "pages\Home #01.old" (
+	DEL "pages\Home #01.dosmag"
+	REN "pages\Home #01.old" "Home #01.dosmag"
+)
+
 REN  "pages\Home #01.dosmag" "Home #01.old"
 IF ERRORLEVEL 1 PAUSE & EXIT
 COPY "pages\PortaDOOM Cacowards %~1.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
@@ -211,10 +219,14 @@ IF ERRORLEVEL 1 (
 	PAUSE & EXIT
 )
 
+REM # build the include list
+CALL %INCLUDE% "..\bin\include_cacowards%~1.lst" > "..\build\include.lst"
+IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+
 REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_Cacowards%~1.7z" ^
-	"..\bin\include_cacowards%~1.lst" ^
+	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
 IF ERRORLEVEL 1 ECHO "Failure in 7Zip" & PAUSE
@@ -244,14 +256,23 @@ REM # the archive will be built without a base folder
 PUSHD PortaDOOM
 
 REM # swap over the homepages
+IF EXIST "pages\Home #01.old" (
+	DEL "pages\Home #01.dosmag"
+	REN "pages\Home #01.old" "Home #01.dosmag"
+)
+
 REN  "pages\Home #01.dosmag" "Home #01.old"
 COPY "pages\PortaDOOM Cacowards 5 Years of Doom.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
 IF ERRORLEVEL 1 PAUSE & EXIT
 
+REM # build the include list
+CALL %INCLUDE% "..\bin\include_cacowards5years.lst" > "..\build\include.lst"
+IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+
 REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_5YearsOfDoom.7z" ^
-	"..\bin\include_cacowards5years.lst" ^
+	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
 IF ERRORLEVEL 1 PAUSE
@@ -281,14 +302,23 @@ REM # the archive will be built without a base folder
 PUSHD PortaDOOM
 
 REM # swap over the homepages
+IF EXIST "pages\Home #01.old" (
+	DEL "pages\Home #01.dosmag"
+	REN "pages\Home #01.old" "Home #01.dosmag"
+)
+
 REN  "pages\Home #01.dosmag" "Home #01.old"
 COPY "pages\PortaDOOM PSX DOOM TC.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
 IF ERRORLEVEL 1 PAUSE & EXIT
 
+REM # build the include list
+CALL %INCLUDE% "..\bin\include_psxdoomtc.lst" > "..\build\include.lst"
+IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+
 REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_PSXDOOMTC.7z" ^
-	"..\bin\include_psxdoomtc.lst" ^
+	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
 IF ERRORLEVEL 1 PAUSE
@@ -379,6 +409,7 @@ REM # -bsp1     : display only progress
 REM # -r        : recurse sub-directories
 REM # -stl      : sets the archive's timestamp to that of the latest file
 REM # -xr...    : exclude files (recursively)
-%BIN_7ZA% a -bso0 -bsp1 %ZIP_LVL% -stl -xr@%3 -i@%2 -- %1
+REM # -ir...    : include files
+%BIN_7ZA% a -bso0 -bsp1 %ZIP_LVL% -stl -xr@%3 -ir@%2 -- %1
 REM # return the error code from 7Zip
 EXIT /B %ERRORLEVEL%

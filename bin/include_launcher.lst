@@ -1,6 +1,6 @@
 launcher.exe
 
-wads\conversions\freedoom\
+@files\wads\conversions\freedoom\include.lst
 wads\SHAREWARE\*.WAD
 wads\MASTER\*.TXT
 
