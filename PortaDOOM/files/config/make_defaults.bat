@@ -99,8 +99,6 @@ IF EXIST "default.glboom-plus.cfg" GOTO :prboom-plus
 
 ECHO * PrBoom+ ^(hardware^)         DOOM.WAD
 CALL :make_boom_hw "prboom-plus" "DOOM.WAD"
-ECHO * PrBoom+ ^(hardware^)         CHEX.WAD
-CALL :make_boom_hw "prboom-plus" "CHEX.WAD"
 
 :prboom-plus
 REM # delete the file in order to re-build it
@@ -108,8 +106,6 @@ IF EXIST "default.prboom-plus.cfg" GOTO :zandronum-2
 
 ECHO * PrBoom+ ^(software^)         DOOM.WAD
 CALL :make_boom_sw "prboom-plus" "DOOM.WAD"
-ECHO * PrBoom+ ^(software^)         CHEX.WAD
-CALL :make_boom_sw "prboom-plus" "CHEX.WAD"
 ECHO ----------------------------------------
 
 
@@ -318,12 +314,12 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 CALL :make_boom_inject "glboom-plus"
 
-SET DEFAULT_CFG="default.%~1.cfg"
+SET DEFAULT_CFG="default.glboom-plus.cfg"
 SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
 
 REM # turn off texture filtering
-%CONFIG_DEFAULT% SET "gl_texture_filter" "3"
-%CONFIG_DEFAULT% SET "gl_sprite_filter" "3"
+%CONFIG_DEFAULT% SET "gl_texture_filter" "2"
+%CONFIG_DEFAULT% SET "gl_sprite_filter" "2"
 %CONFIG_DEFAULT% SET "gl_patch_filter" "0"
 %CONFIG_DEFAULT% SET "gl_texture_filter_anisotropic" "4"
 
@@ -337,6 +333,7 @@ REM #---------------------------------------------------------------------------
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
+
 GOTO:EOF
 
 :make_boom_inject
