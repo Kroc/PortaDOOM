@@ -247,7 +247,7 @@ iwadSteamGOG:
         CASE "STRIFE1": GOTO iwadSTRIFE
         CASE ELSE
             'FIXME: handle error here
-            ''SYSTEM 1
+            SYSTEM 999
     END SELECT
     
     RETURN

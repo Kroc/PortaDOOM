@@ -1,0 +1,3 @@
+# minimum number of MBF-compatible engines to include
+@files\ports\doom-retro.lst
+@files\ports\gzdoom.lst

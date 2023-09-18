@@ -17,7 +17,7 @@ END SUB
 SUB Tags_Add (tagList$)
     'the tag list will be broken into individual tags,
     'these will hold the individual tag index and name
-    DIM tag%, tag$
+    DIM tag_count%, tag$
     
     'prime the iterator
     LET tag$ = Tags_Split$(tagList$)
@@ -27,11 +27,11 @@ SUB Tags_Add (tagList$)
         IF Tags_Find%(tag$) <> 0 THEN GOTO NextTag
         
         'increase the number of known tags
-        LET tag% = UBOUND(Tags) + 1
-        REDIM _PRESERVE Tags(1 TO tag%) AS STRING
-        LET Tags(tag%) = tag$
+        LET tag_count% = UBOUND(Tags) + 1
+        REDIM _PRESERVE Tags(1 TO tag_count%) AS STRING
+        LET Tags(tag_count%) = tag$
         
-        NextTag:
+    NextTag:
         LET tag$ = Tags_Split$("")
     LOOP
 END SUB

@@ -4,17 +4,11 @@ PortaDOOM.exe
 files\wads\SHAREWARE\DOOM1.WAD
 
 files\launcher.exe
-
 files\tools\xdelta3
 
-files\config\default.choco-doom*.cfg
-files\config\default.glboom-plus.cfg
-files\config\default.prboom-plus.cfg
-files\config\default.gzdoom.ini
-
-files\ports\choco-doom\
-files\ports\prboom-plus\
-files\ports\gzdoom-*\
+@files\ports\choco-doom.lst
+@files\ports\gzdoom.lst
+@files\ports\prboom-plus.lst
 
 pages\Home #??.dosmag
 pages\5 Years of Doom #??.dosmag

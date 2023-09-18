@@ -1,0 +1,6 @@
+files\ports\choco-hexen\
+files\config\default.choco-hexen.cfg
+files\config\default.choco-hexen.extra.cfg
+
+# which IWADs this engine supports:
+files\wads\hexen.ini

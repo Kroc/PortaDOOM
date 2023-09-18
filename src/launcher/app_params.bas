@@ -21,16 +21,17 @@ IF _COMMANDCOUNT = 0 THEN GOTO cmd_help
 DIM SHARED CMD_DEBUG` '..display detailed information
 DIM SHARED CMD_WAIT` '...stall the launcher whilst the game is running
 DIM SHARED CMD_AUTO` '...no user-interaction -- choose automatically
-DIM SHARED CMD_GAME$ '...game index to select automatically
 DIM SHARED CMD_DEFAULT` 'should default config file be used?
-DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
 DIM SHARED CMD_QUIT` '...(ZDoom-based engines only), quit after launching
+DIM SHARED CMD_INI$ '....use an INI file for all the game definitions
+DIM SHARED CMD_GAME$ '...game index (in INI file) to select automatically
 '
 '2. commands for engine selection / compatibility:
 '
 DIM SHARED CMD_USE$ '....a specific engine-id to use
 DIM SHARED CMD_REQ$ '....a tag-list of engine requirements
 DIM SHARED CMD_SW` '.....require 8-bit (typically "software") rendering
+DIM SHARED CMD_32` '.....always use 32-bit executable on 64-bit system
 
 DIM cmd_hasEngine` '.....flag, select engine(s) from command-line
 '
@@ -55,13 +56,14 @@ LET i = 1
 DO WHILE COMMAND$(i) <> ""
     SELECT CASE UCASE$(COMMAND$(i))
         CASE "/?", "--HELP"
+            '-----------------------------------------------------------------
 cmd_help:   PRINT ""
             PRINT " No default UI yet, use command-line parameters to invoke:"
             PRINT ""
             PRINT " launcher.exe <ini-file> [/GAME <number>]"
             PRINT ""
-            PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/32] [/QUIT]"
-            PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
+            PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/QUIT]"
+            PRINT "     [/REQ <tags>] [/USE <engine>] [/SW] [/32]"
             PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
             PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
             PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
@@ -88,40 +90,59 @@ cmd_help:   PRINT ""
             SYSTEM
             
         CASE "/DEBUG"
+            '-----------------------------------------------------------------
             'enable debugging mode; will print
             'additional information to the screen
             LET CMD_DEBUG` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/DEBUG"
             'if this is the only param then nothing useful can be done,
             'print out the command-line usage
             IF _COMMANDCOUNT = 1 THEN GOTO cmd_help
             
         CASE "/WAIT"
+            '-----------------------------------------------------------------
             'keep launcher.exe on screen whilst the game runs
             LET CMD_WAIT` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/WAIT"
             
         CASE "/AUTO"
+            '-----------------------------------------------------------------
             'no user-interaction, choose automatically
             LET CMD_AUTO` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/AUTO"
             
         CASE "/DEFAULT"
+            '-----------------------------------------------------------------
             'set the flag to use the default config file;
             'on its own, this does not select an engine
             LET CMD_DEFAULT` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/DEFAULT"
             
         CASE "/32"
+            '-----------------------------------------------------------------
             'set the flag to use 32-bit binaries (on 64-bit systems);
             'on its own, this does not select an engine
             LET CMD_32` = TRUE
             'this is implemented simply by tricking the program
             'into believing the machine is on a 32-bit CPU
             LET CPU_BIT = 32
+            'log command switch
+            REM PRINT #LOGFILE, "/32"
             
         CASE "/QUIT"
+            '-----------------------------------------------------------------
             'for ZDoom-based engines only (ZDoom, Zandronum, GZDoom);
             'the engine loads and then quits. useful only for automation tasks
             LET CMD_QUIT` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/QUIT"
             
         CASE "/USE"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_USE$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /USE Defined Twice", _
@@ -131,8 +152,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_USE$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/USE " + CMD_USE$
             
         CASE "/REQ"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_REQ$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /REQ Defined Twice", _
@@ -142,14 +166,20 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_REQ$ = COMMAND$(i)
             'note that we will have to select engine(s) using this
             LET cmd_hasEngine` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/REQ " + CMD_REQ$
             
         CASE "/SW"
+            '-----------------------------------------------------------------
             'set the flag to favour software / 8-bit rendering;
             'on its own, this does not select an engine
             LET CMD_SW` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/SW"
             
         CASE "/IWAD", "/DOOM", "/DOOM2", "/TNT", "/PLUTONIA", "/HERETIC", _
              "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2"
+            '-----------------------------------------------------------------
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: IWAD Defined Twice", _
@@ -177,15 +207,25 @@ cmd_help:   PRINT ""
             END SELECT
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM IF CMD_IWAD$ <> "" THEN
+            REM     PRINT #LOGFILE, "/IWAD " + CMD_IWAD$
+            REM ELSE
+            REM     PRINT #LOGFILE, UCASE$(COMMAND$(i))
+            REM END IF
         
         CASE "/PRE"
+            '-----------------------------------------------------------------
             'capture the parameter that follows and append it
             'to the list of preload files. *CAN* be defined more than once
             LET i = i + 1: LET CMD_PRE$ = CMD_PRE$ + COMMAND$(i) + ";"
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/PRE " + COMMAND$(i)
             
         CASE "/PWAD"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_PWAD$ <> "" THEN
                 CALL UIErrorScreen_Begin("ERROR: /PWAD Defined Twice")
@@ -201,8 +241,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_PWAD$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/PWAD " + CMD_PWAD$
             
         CASE "/DEH"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_DEH$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /DEH Defined Twice", _
@@ -213,8 +256,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/DEH " + CMD_DEH$
             
         CASE "/BEX"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_BEX$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /BEX Defined Twice", _
@@ -226,8 +272,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/BEX " + CMD_BEX$
             
         CASE "/DEMO"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_DEMO$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /DEMO Defined Twice", _
@@ -238,8 +287,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_DEMO$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/DEMO " + CMD_DEMO$
             
         CASE "/WARP"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_WARP$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /WARP Defined Twice", _
@@ -249,8 +301,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_WARP$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/WARP " + CMD_WARP$
             
         CASE "/SKILL"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_SKILL$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /SKILL Defined Twice", _
@@ -260,8 +315,11 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_SKILL$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/SKILL " + CMD_SKILL$
             
         CASE "/CMPLVL"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_CMPLVL$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /CMPLVL Defined Twice", _
@@ -269,8 +327,11 @@ cmd_help:   PRINT ""
             )
             'capture the parameter that follows
             LET i = i + 1: LET CMD_CMPLVL$ = COMMAND$(i)
+            'log command switch
+            REM PRINT #LOGFILE, "/CMPLVL " + CMD_CMPLVL$
             
         CASE "/EXEC"
+            '-----------------------------------------------------------------
             'cannot be defined twice!
             IF CMD_EXEC$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: /EXEC Defined Twice", _
@@ -280,14 +341,31 @@ cmd_help:   PRINT ""
             LET i = i + 1: LET CMD_EXEC$ = COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
+            'log command switch
+            REM PRINT #LOGFILE, "/EXEC " + CMD_EXEC$
+        
+        CASE "/GAME"
+            '-----------------------------------------------------------------
+            'cannot be defined twice!
+            IF CMD_GAME$ <> "" THEN CALL UIErrorScreen( _
+                "ERROR: /GAME Defined Twice", _
+                "The /GAME parameter cannot be defined more than once." _
+            )
+            'capture the parameter that follows
+            LET i = i + 1: LET CMD_GAME$ = COMMAND$(i)
+            'log command switch
+            REM PRINT #LOGFILE, "/GAME " + CMD_GAME$
             
         CASE "--"
+            '-----------------------------------------------------------------
             'once the 'end-of-command' marker is encountered, everything
             'that follows is a WAD file to be given to the engine
             LET i = i + 1
             DO WHILE COMMAND$(i) <> ""
                 LET CMD_FILES$ = CMD_FILES$ + COMMAND$(i) + ";"
-                ' any one file implies that a game is to be defined
+                'log command switch
+                REM PRINT #LOGFILE, " -- " + COMMAND$(i)
+                'any one file implies that a game is to be defined
                 LET cmd_hasGame` = TRUE
                 'continue searching
                 LET i = i + 1
@@ -299,18 +377,16 @@ cmd_help:   PRINT ""
             '-----------------------------------------------------------------
             'if an INI file is given,
             IF UCASE$(Paths_GetFileExtension$(COMMAND$(i))) = "INI" THEN
-                'load the game definitions from it
-                Games_EnumerateINI(COMMAND$(i))
-                'is there a `/GAME` parameter to auto-select a definition?
-                LET i = i + 1
-                IF UCASE$(COMMAND$(i)) = "/GAME" THEN
-                    LET i = i + 1
-                    LET CMD_GAME$ = COMMAND$(i)
-                    'TODO: Error if value is missing
-                END IF
-                'cease any further processing
-                'TODO: error for any other params?
-                GOTO cmd_done
+                'cannot be defined twice!
+                IF CMD_INI$ <> "" THEN CALL UIErrorScreen( _
+                    "ERROR: Cannot use more than one INI file", _
+                    "Only one INI file can be used to define parameters." _
+                )
+                'hold the filename for later
+                LET CMD_INI$ = COMMAND$(i)
+                'log command switch
+                REM PRINT #LOGFILE, "INI: " + CMD_INI$
+                
             ELSE
                 'no other command / file is allowed until the
                 'end-of-command marker is encountered "--"
@@ -337,34 +413,12 @@ cmd_help:   PRINT ""
     LET i = i + 1
 LOOP
 
+'was an INI file provided to define parameters?
 '-----------------------------------------------------------------------------
-
-'''display the parameters used if debug is enabled
-''IF CMD_DEBUG` THEN
-''    IF (CMD_WAIT` OR CMD_32` OR CMD_SW` OR CMD_DEFAULT` OR CMD_QUIT`) THEN
-''        PRINT "  ";
-''        IF CMD_WAIT` THEN PRINT "/WAIT ";
-''        IF CMD_AUTO` THEN PRINT "/AUTO ";
-''        IF CMD_DEFAULT` THEN PRINT "/DEFAULT ";
-''        IF CMD_32` THEN PRINT "/32 ";
-''        IF CMD_SW` THEN PRINT "/SW ";
-''        IF CMD_QUIT` THEN PRINT "/QUIT ";
-''        PRINT ""
-''    END IF
-''    IF CMD_USE$ <> "" THEN PRINT "  /USE    " + CMD_USE$
-''    IF CMD_REQ$ <> "" THEN PRINT "  /REQ    " + CMD_REQ$
-''    IF CMD_IWAD$ <> "" THEN PRINT "  /IWAD   " + CMD_IWAD$
-''    IF CMD_PWAD$ <> "" THEN PRINT "  /PWAD   " + CMD_PWAD$
-''    IF CMD_DEH$ <> "" THEN PRINT "  /DEH    " + CMD_DEH$
-''    IF CMD_BEX$ <> "" THEN PRINT "  /BEX    " + CMD_BEX$
-''    IF CMD_DEMO$ <> "" THEN PRINT "  /DEMO   " + CMD_DEMO$
-''    IF CMD_WARP$ <> "" THEN PRINT "  /WARP   " + CMD_WARP$
-''    IF CMD_SKILL$ <> "" THEN PRINT "  /SKILL  " + CMD_SKILL$
-''    IF CMD_CMPLVL$ <> "" THEN PRINT "  /CMPLVL " + CMD_CMPLVL$
-''    IF CMD_EXEC$ <> "" THEN PRINT "  /EXEC   " + CMD_EXEC$
-''    'TODO: print out PRE$ & FILE$ list
-''    PRINT ""
-''END IF
+IF CMD_INI$ <> "" THEN
+    Games_EnumerateINI(CMD_INI$)
+    GOTO cmd_done
+END IF
 
 '-----------------------------------------------------------------------------
 
@@ -407,7 +461,7 @@ END IF
 
 cmd_done:
 '=============================================================================
-''LET CMD_DEBUG` = TRUE
+REM LET CMD_DEBUG` = TRUE
 
 'search through the "ports" folder for game engines and read in their details.
 'this also builds a set of look-up tables for cross-referencing tags with

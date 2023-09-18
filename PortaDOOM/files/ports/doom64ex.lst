@@ -1,0 +1,5 @@
+files\ports\doom64ex\
+files\config\default.doom64ex.cfg
+
+# which IWADs this engine supports:
+files\wads\doom64.ini

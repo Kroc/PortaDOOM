@@ -519,7 +519,7 @@ SUB Engines_Enumerate()
     
     'also, do this for game definitions -- this has to be done after
     'enumerating the engines, as all unique tags will be known by then
-    REDIM GameTags(1 TO Games_Count, 1 TO UBOUND(Tags)) AS LONG
+    REDIM GameTags(1 TO Games_Count, 0 TO UBOUND(Tags)) AS LONG
     FOR i = 1 TO UBOUND(Games)
         LET tag$ = Tags_Split$(Games(i).tags)
         DO WHILE tag$ <> ""

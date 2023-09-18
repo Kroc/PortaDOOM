@@ -1,0 +1,10 @@
+files\ports\crispy-doom\
+files\config\default.crispy-doom.cfg
+files\config\default.crispy-doom.extra.cfg
+
+# which IWADs this engine supports:
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
+files\wads\chex.ini

@@ -312,6 +312,7 @@ SUB Games_Add ( _
     END IF
     
 skill:
+    '-------------------------------------------------------------------------
     'no skill parameter?
     IF skill$ = "" THEN
         'set default

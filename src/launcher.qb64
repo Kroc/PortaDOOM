@@ -80,6 +80,14 @@ END IF
 'its path is used as an additional search location
 DIM SHARED DIR_INI$
 
+'logging:
+REM DIM SHARED IS_LOG% '    if logging is enabled
+REM DIM SHARED LOGFILE '    log file handle
+REM LET IS_LOG% = TRUE
+REM 
+REM LET LOGFILE = FREEFILE
+REM OPEN "launcher.log" FOR OUTPUT ACCESS WRITE AS #LOGFILE
+
 '=============================================================================
 'MAIN:
 '=============================================================================

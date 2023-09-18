@@ -1,0 +1,10 @@
+files\ports\prboom-plus\
+files\config\default.prboom-plus.cfg
+files\config\default.glboom-plus.cfg
+
+# which IWADs this engine supports:
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
+files\wads\chex.ini

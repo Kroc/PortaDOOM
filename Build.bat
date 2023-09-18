@@ -33,7 +33,7 @@ SET INCLUDE="%~dp0bin\include.bat"
 
 
 :menu
-REM ============================================================================
+REM # ==========================================================================
 CLS & TITLE PortaDOOM Build Tools:
 ECHO:
 ECHO  Select Release to Build:
@@ -66,7 +66,7 @@ GOTO:EOF
 
 
 :select_compression
-REM ============================================================================
+REM # ==========================================================================
 REM # presents a menu to select the desired compression level
 ECHO:
 ECHO  Select Compression Level:
@@ -84,7 +84,7 @@ IF %CMPLVL% EQU 0 SET "ZIP_LVL=%ZIP_MIN%"
 IF %CMPLVL% EQU 1 SET "ZIP_LVL=%ZIP_MAX%"
 
 :compress_portadoom
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO:
 ECHO * Compile "PortaDOOM.exe"
 ECHO:
@@ -105,7 +105,7 @@ IF %CMPLVL% EQU 1 (
 )
 
 :compress_launcher
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO:
 ECHO * Compile "launcher.exe"
 ECHO:
@@ -128,7 +128,7 @@ IF %CMPLVL% EQU 1 (
 )
 
 :compress_config
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO:
 ECHO * Compile "config.exe"
 ECHO:
@@ -156,7 +156,7 @@ GOTO:EOF
 
 
 :do_release_all
-REM ============================================================================
+REM # ==========================================================================
 CLS & TITLE Creating PortaDOOM release...
 CALL :select_compression
 
@@ -175,7 +175,7 @@ PAUSE
 EXIT /B
 
 ECHO * Make PortaDOOM ...
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 REM # 7ZIP
 %BIN_7ZA% a ^
 	-bso0 -bsp1 -r %ZIP_LVL% -stl ^
@@ -191,14 +191,14 @@ EXIT /B
 
 
 :do_release_cacowards
-REM ============================================================================
+REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_cacowards "%~1"
 PAUSE & GOTO:EOF
 
 :do_cacowards
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO * Make PortaDOOM_Cacowards%~1 ...
 
 REM # the archive will be built without a base folder
@@ -211,17 +211,17 @@ IF EXIST "pages\Home #01.old" (
 )
 
 REN  "pages\Home #01.dosmag" "Home #01.old"
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 COPY "pages\PortaDOOM Cacowards %~1.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
 IF ERRORLEVEL 1 (
 	DEL "pages\Home #01.dosmag"
 	REN "pages\Home #01.old" "Home #01.dosmag"
-	PAUSE & EXIT
+	POPD & PAUSE & EXIT
 )
 
 REM # build the include list
 CALL %INCLUDE% "..\bin\include_cacowards%~1.lst" > "..\build\include.lst"
-IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # 7ZIP
 CALL :zip ^
@@ -229,26 +229,26 @@ CALL :zip ^
 	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
-IF ERRORLEVEL 1 ECHO "Failure in 7Zip" & PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # restore the original home page
 DEL "pages\Home #01.dosmag"
 REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 POPD
 GOTO:EOF
 
 
 :do_release_5yearsofdoom
-REM ============================================================================
+REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_5yearsofdoom
 PAUSE & GOTO:EOF
 
 :do_5yearsofdoom
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO * Make PortaDOOM_5YearsOfDoom ...
 DEL build\PortaDOOM_5YearsOfDoom.7z  >NUL 2>&1
 
@@ -263,11 +263,11 @@ IF EXIST "pages\Home #01.old" (
 
 REN  "pages\Home #01.dosmag" "Home #01.old"
 COPY "pages\PortaDOOM Cacowards 5 Years of Doom.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # build the include list
 CALL %INCLUDE% "..\bin\include_cacowards5years.lst" > "..\build\include.lst"
-IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # 7ZIP
 CALL :zip ^
@@ -275,26 +275,26 @@ CALL :zip ^
 	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
-IF ERRORLEVEL 1 PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # restore the original home page
 DEL "pages\Home #01.dosmag"
 REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 POPD
 GOTO:EOF
 
 
 :do_release_psxdoomtc
-REM ============================================================================
+REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_psxdoomtc
 PAUSE & GOTO:EOF
 
 :do_psxdoomtc
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO * Make PortaDOOM_PSXDOOMTC ...
 DEL build\PortaDOOM_PSXDOOMTC.7z  >NUL 2>&1
 
@@ -309,11 +309,11 @@ IF EXIST "pages\Home #01.old" (
 
 REN  "pages\Home #01.dosmag" "Home #01.old"
 COPY "pages\PortaDOOM PSX DOOM TC.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # build the include list
 CALL %INCLUDE% "..\bin\include_psxdoomtc.lst" > "..\build\include.lst"
-IF ERRORLEVEL 1 ECHO Failure building include list & PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # 7ZIP
 CALL :zip ^
@@ -321,19 +321,19 @@ CALL :zip ^
 	"..\build\include.lst" ^
 	"..\bin\ignore.lst"
 
-IF ERRORLEVEL 1 PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 REM # restore the original home page
 DEL "pages\Home #01.dosmag"
 REN "pages\Home #01.old" "Home #01.dosmag"
-IF ERRORLEVEL 1 PAUSE & EXIT
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 POPD
 GOTO:EOF
 
 
 :do_release_launcher
-REM ============================================================================
+REM # ==========================================================================
 TITLE Creating PortaDOOM Launcher release...
 SET CMPLVL=1
 CALL :compress_launcher
@@ -341,7 +341,7 @@ CALL :do_launcher
 PAUSE & GOTO:EOF
 
 :do_launcher
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 ECHO * Make PortaDOOM_Launcher ...
 DEL build\PortaDOOM_Launcher.7z  >NUL 2>&1
 
@@ -356,14 +356,14 @@ CALL :zip ^
 	"..\..\bin\include_launcher.lst" ^
 	"..\..\bin\ignore.lst"
 
-IF ERRORLEVEL 1 PAUSE
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
 POPD
 GOTO:EOF
 
 
 :do_upx
-REM ============================================================================
+REM # ==========================================================================
 CLS & TITLE UPX Compress DOOM Engines...
 ECHO:
 ECHO Compress DOOM Engines using UPX:
@@ -384,7 +384,7 @@ ECHO:
 PAUSE & GOTO:EOF
 
 :upx
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 REM # check if the file is already compressed
 SET "EXE_INFO="
 FOR /F "delims=" %%G IN ('%BIN_UPX% -qqq -l "%EXE_FILE%"') DO @SET EXE_INFO=%%G
@@ -395,7 +395,7 @@ IF "%EXE_INFO%" == "" (
 GOTO:EOF
 
 :zip
-REM ----------------------------------------------------------------------------
+REM # --------------------------------------------------------------------------
 REM # run a zip-compression command;
 REM # assumes `ZIP_LVL` has been set
 REM #

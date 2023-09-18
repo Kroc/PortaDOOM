@@ -2,38 +2,46 @@ PortaDOOM.exe
 files\launcher.exe
 files\tools\xdelta3\
 
-@files\wads\conversions\freedoom\include.lst
-files\wads\doom.ini
-files\wads\doom2.ini
-files\wads\tnt.ini
-files\wads\plutonia.ini
-
-files\ports\doom-retro\
-files\config\default.doom-retro.cfg
-
-files\ports\prboom-plus\
-files\config\default.glboom-plus.cfg
-files\config\default.prboom-plus.cfg
-
-files\ports\gzdoom-*\
-files\config\default.gzdoom.ini
-
-files\ports\zdoom\
-files\config\default.zdoom.ini
-
-
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
-pages\FreeDOOM.dosmag
-pages\DTWiD Series #??.dosmag
-files\wads\megawads\DTWiD\**
-pages\3 Heures Series #??.dosmag
-files\wads\megawads\3ha\**
-pages\No End In Sight.dosmag
-files\wads\megawads\neis\
-pages\No Rest for the Living.dosmag
+# page 2:
+@files\wads\conversions\freedoom\include.lst
+# page 3:
+@files\wads\megawads\sunlust\include.lst
+# page 4:
+@files\wads\episodes\erkatane\include.lst
+# page 5:
+@files\wads\conversions\SKULDASH\include.lst
+# page 6:
+@files\wads\megawads\swideath\include.lst
+# page 7:
+@files\wads\onesies\breach\include.lst
+# page 8:
+@files\wads\megawads\valiant\include.lst
+# page 9:
+@files\wads\community\50shades\include.lst
+# page 10:
+@files\wads\onesies\shpo1\include.lst
+# page 11:
+@files\wads\onesies\xa-dwire\include.lst
+# page 12:
+@files\wads\episodes\hadron\include.lst
+# page 13:
+@files\wads\episodes\spacwars\include.lst
+@files\wads\episodes\crumpets\include.lst
+@files\wads\episodes\ge5-pd\include.lst
+@files\wads\onesies\pinnacle\include.lst
+@files\wads\people\Octavarium\Olnoname\include.lst
+@files\wads\community\32in24-14\include.lst
+# page 14:
+@files\wads\multiplayer\dbabrm\include.lst
+@files\wads\multiplayer\ChaosCoreCTFmpII-b\include.lst
+# page 15:
+@files\mods\doomrl_arsenal\include.lst
+@files\wads\jokes\instadm\include.lst
 
+# page 17:
 files\demos\30uv2155\
 files\demos\30uv2032\
 files\demos\30uv1959\
@@ -44,45 +52,3 @@ files\demos\ep1-457\
 files\demos\ep3-347\
 files\demos\evall-4416\
 files\demos\plalln4357\
-
-pages\Sunlust #??.dosmag
-files\wads\megawads\sunlust\
-pages\Erkatane.dosmag
-files\wads\episodes\erkatane\
-pages\Skulldash.dosmag
-files\wads\conversions\SKULDASH\
-pages\Swift Death.dosmag
-files\wads\megawads\swideath\
-pages\Breach.dosmag
-files\wads\onesies\breach\
-pages\Valiant.dosmag
-files\wads\megawads\valiant\
-pages\50 Shades of Graytall.dosmag
-files\wads\community\50shades\
-pages\Sheer Poison.dosmag
-files\wads\onesies\shpo1\
-pages\dead.wire.dosmag
-files\wads\onesies\xa-dwire\
-pages\Return to Hadron.dosmag
-files\wads\episodes\hadron\
-pages\Doomed Space Wars.dosmag
-files\wads\episodes\spacwars\
-pages\Crumpets.dosmag
-files\wads\episodes\crumpets\
-pages\Prime Directive.dosmag
-files\wads\episodes\ge5-pd\**
-pages\Pinnacle of Darkness.dosmag
-files\wads\onesies\pinnacle\**
-pages\Ol' No Name.dosmag
-files\wads\people\Octavarium\Olnoname\
-pages\32in24-14.dosmag
-files\wads\community\32in24-14\
-pages\Don't Be A Bitch Remastered.dosmag
-files\wads\multiplayer\dbabrm\
-pages\ChaosCore CTF.dosmag
-files\wads\multiplayer\ChaosCoreCTFmpII-b\
-pages\DoomRL Arsenal.dosmag
-files\mods\doomrl_arsenal\
-pages\InstaDoom #??.dosmag
-files\wads\jokes\instadm\
-files\wads\jokes\instadm\filters\

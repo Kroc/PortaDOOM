@@ -1,0 +1,6 @@
+# include the shared config tools
+files\config\make_defaults.bat
+files\config\edit_defaults.bat
+files\config\config.exe
+files\config\fart.exe
+files\config\*.url

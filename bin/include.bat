@@ -6,7 +6,7 @@ REM # if a line is prefixed by "@" this file is considered a nested list
 
 :list
 REM # ==========================================================================
-IF NOT EXIST "%~1" EXIT /B 1
+IF NOT EXIST "%~1" ECHO Could not find list file %~1 >&2 & EXIT /B 1
 
 REM ECHO "FILE: %~1"
 FOR /F "tokens=* usebackq eol=#" %%F IN ( "%~1" ) DO CALL :item "%%~F"
