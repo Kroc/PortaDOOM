@@ -270,6 +270,7 @@ REM # mouse-movement off
 %CONFIG_EXTRA% SET "novert" "1"
 %CONFIG_DEFAULT% SET "mouseb_strafe" "-1"
 %CONFIG_DEFAULT% SET "mouseb_forward" "-1"
+%CONFIG_DEFAULT% SET "mouseb_speed" "0"
 REM # mouse controls
 %CONFIG_EXTRA% SET "mouseb_prevweapon" "4"
 %CONFIG_EXTRA% SET "mouseb_nextweapon" "3"
