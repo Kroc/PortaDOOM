@@ -27,14 +27,14 @@ IF UCASE$(COMMAND$(1)) = "/?" THEN
 cmd_help:
     PRINT "Usage:"
     PRINT ""
-    PRINT " CONFIG.EXE <file> <action> <action-params...>"
+    PRINT " CFGINI.EXE <file> <action> <action-params...>"
     PRINT ""
-    PRINT " CONFIG.EXE <file> SET [<section>]"
-    PRINT " CONFIG.EXE <file> SET <field-name> <value>"
+    PRINT " CFGINI.EXE <file> SET [<section>]"
+    PRINT " CFGINI.EXE <file> SET <field-name> <value>"
     PRINT " CONFIG.EXE <file> SET [<section>] <field-name> <value>"
     PRINT ""
-    PRINT " CONFIG.EXE <file> DEL <field-name>"
-    PRINT " CONFIG.EXE <file> DEL [<section>] <field-name>"
+    PRINT " CFGINI.EXE <file> DEL <field-name>"
+    PRINT " CFGINI.EXE <file> DEL [<section>] <field-name>"
     PRINT ""
     SYSTEM
 END IF
@@ -44,9 +44,9 @@ IF CMD_FILE$ = "" THEN SYSTEM 1
 REM # .ini or .cfg?
 REM # INI files use "field=value",
 REM # CFG files use "field value"
-DIM INI_CFG$: LET INI_CFG$ = UCASE$(RIGHT$(CMD_FILE$, 4))
-DIM IS_INI%: LET IS_INI% = (INI_CFG$ = ".INI")
-DIM IS_CFG%: LET IS_CFG% = (INI_CFG$ = ".CFG")
+DIM CFG_INI$: LET CFG_INI$ = UCASE$(RIGHT$(CMD_FILE$, 4))
+DIM IS_INI%: LET IS_INI% = (CFG_INI$ = ".INI")
+DIM IS_CFG%: LET IS_CFG% = (CFG_INI$ = ".CFG")
 IF NOT (IS_INI% OR IS_CFG%) THEN
     SYSTEM 2
 END IF

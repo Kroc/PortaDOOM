@@ -127,16 +127,16 @@ IF %CMPLVL% EQU 1 (
 	ECHO:
 )
 
-:compress_config
+:compress_cfgini
 REM # --------------------------------------------------------------------------
 ECHO:
-ECHO * Compile "config.exe"
+ECHO * Compile "cfgini.exe"
 ECHO:
 
 REM # compile the config editor
 %BIN_QB64% -x -e -o ^
-	"..\..\PortaDOOM\files\config\config.exe" ^
-	"..\..\src\config.qb64"
+	"..\..\PortaDOOM\files\config\cfgini.exe" ^
+	"..\..\src\cfgini.qb64"
 
 REM # if that errored, pause to be able to show the error message
 IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
@@ -144,10 +144,10 @@ IF ERRORLEVEL 1 POPD & PAUSE & GOTO:EOF
 REM # compress the config executable
 IF %CMPLVL% EQU 1 (
 	ECHO:
-	ECHO * Compress "config.exe"
+	ECHO * Compress "cfgini.exe"
 	ECHO:
-	DEL PortaDOOM\files\config\config.upx  >NUL 2>&1
-	%UPX_ULTRA% PortaDOOM\files\config\config.exe
+	DEL PortaDOOM\files\config\cfgini.upx  >NUL 2>&1
+	%UPX_ULTRA% PortaDOOM\files\config\cfgini.exe
 	ECHO:
 )
 

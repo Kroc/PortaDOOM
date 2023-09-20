@@ -31,7 +31,7 @@ SET "SAVES=..\saves"
 REM # relative path to launcher.exe
 SET "LAUNCHER=..\launcher.exe"
 
-SET BIN_CONFIG=config.exe
+SET BIN_CFGINI=cfgini.exe
 SET BIN_FART=fart.exe --quiet --word --c-style --ignore-case --adapt --
 
 
@@ -231,7 +231,7 @@ REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 SET DEFAULT_CFG="default.%~1.cfg"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 
 %CONFIG_DEFAULT% SET "alwaysrun" "on"
 %CONFIG_DEFAULT% SET "messages" "on"
@@ -256,9 +256,9 @@ REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 
 SET DEFAULT_CFG="default.%~1.cfg"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 SET EXTRA_CFG="default.%~1.extra.cfg"
-SET CONFIG_EXTRA=%BIN_CONFIG% %EXTRA_CFG%
+SET CONFIG_EXTRA=%BIN_CFGINI% %EXTRA_CFG%
 
 REM # main keys
 %CONFIG_DEFAULT% SET "key_up" "17"
@@ -315,7 +315,7 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "glboom-plus"
 
 SET DEFAULT_CFG="default.glboom-plus.cfg"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 
 REM # turn off texture filtering
 %CONFIG_DEFAULT% SET "gl_texture_filter" "2"
@@ -339,7 +339,7 @@ GOTO:EOF
 :make_boom_inject
 REM #---------------------------------------------------------------------------
 SET DEFAULT_CFG="default.%~1.cfg"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_CFG%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 
 %CONFIG_DEFAULT% SET "key_use" "0x65"
 %CONFIG_DEFAULT% SET "key_spy" "0x2a"
@@ -361,7 +361,7 @@ REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 SET DEFAULT_INI="default.%~1.ini"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
 REM # graphics
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
@@ -472,7 +472,7 @@ REM #---------------------------------------------------------------------------
 IF %~1 EQU 99 SET "INI=gzdoom"
 IF %~1 LSS 99 SET "INI=gzdoom-%~1"
 SET DEFAULT_INI="default.%INI%.ini"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
 REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
@@ -596,7 +596,7 @@ REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2" /QUIT
 
 SET DEFAULT_INI="default.%~1.ini"
-SET CONFIG_DEFAULT=%BIN_CONFIG% %DEFAULT_INI%
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
