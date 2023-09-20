@@ -233,12 +233,14 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
 SET DEFAULT_CFG="default.%~1.cfg"
 SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 
+%CONFIG_DEFAULT% SET "vid_vsync" "on"
+%CONFIG_DEFAULT% SET "vid_widescreen" "on"
 %CONFIG_DEFAULT% SET "alwaysrun" "on"
 %CONFIG_DEFAULT% SET "messages" "on"
 %CONFIG_DEFAULT% SET "am_rotatemode" "off"
 %CONFIG_DEFAULT% SET "playername" """PortaDOOM"""
 REM # TODO: is this relative to the EXE or to the current directory?
-%CONFIG_DEFAULT% SET "iwadfolder" """..\..\wads"""
+%CONFIG_DEFAULT% SET "wadfolder" """..\..\wads"""
 ECHO bind F12 +screenshot>>%DEFAULT_CFG%
 
 REM # TODO: reset the stats properties?

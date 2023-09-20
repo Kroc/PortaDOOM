@@ -190,6 +190,7 @@ ECHO  ==========================
 ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Doom             CHEX.WAD
+ECHO     [R] DOOM Retro                 DOOM.WAD
 ECHO:
 ECHO     [H] PrBoom+ Hardware           CHEX.WAD
 ECHO     [S] PrBoom+ Software           CHEX.WAD
