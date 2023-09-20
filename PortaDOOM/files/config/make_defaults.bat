@@ -150,6 +150,7 @@ REM # GZDoom
 REM #===========================================================================
 :gzdoom-all
 CALL :gzdoom_any 99
+CALL :gzdoom_any 49
 CALL :gzdoom_any 48
 CALL :gzdoom_any 47
 CALL :gzdoom_any 46
@@ -483,7 +484,10 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
 REM # (this first appeared in v4.2 and appears now and again)
-IF %~1 GEQ 42 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
+IF %~1 GEQ 42 IF %~1 LSS 49 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
+REM # different field name for v4.9, because of course it is
+IF %~1 GEQ 49 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled49" "0"
+
 REM # VSync ON
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
 REM # "fullscreen" field is used before v4.4
