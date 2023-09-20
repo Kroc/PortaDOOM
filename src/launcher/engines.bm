@@ -588,6 +588,15 @@ SUB Engines_Filter()
             IF Engines(i).vid <> Games_Selected.vid THEN _CONTINUE
         END IF
         
+        'if this is a GZDoom engine, is it the correct version?
+        IF Games_Selected.gzdoom_id <> "" THEN
+            IF Engines(i).engine = "gzdoom" _
+                AND LCASE$(Engines(i).id) <> LCASE$(Games_Selected.gzdoom_id) _
+            THEN
+                _CONTINUE
+            END IF
+        END IF
+        
         '---------------------------------------------------------------------
         
         'does this engine provide all the features required by the game?
@@ -629,16 +638,18 @@ SUB Engines_Filter()
         )
     END IF
     
-    '''print a list of the candidate engines:
-    ''PRINT ""
-    ''PRINT "Candidate Engines:"
-    ''PRINT "------------------"
-    ''FOR i = Engines_ListCount TO 1 STEP -1
-    ''    PRINT "- " + Engines(Engines_List(i)).id,, Engines(Engines_List(i)).tier
-    ''    IF i MOD 24 = 0 THEN SLEEP
-    ''NEXT i
-    ''PRINT ""
-    ''SLEEP
+    'print a list of the candidate engines:
+    REM IF CMD_DEBUG` THEN
+    REM     PRINT ""
+    REM     PRINT "Candidate Engines:"
+    REM     PRINT "------------------"
+    REM     FOR i = Engines_ListCount TO 1 STEP -1
+    REM         PRINT "- " + Engines(Engines_List(i)).id,, Engines(Engines_List(i)).tier
+    REM         IF i MOD 24 = 0 THEN SLEEP
+    REM     NEXT i
+    REM     PRINT ""
+    REM     SLEEP
+    REM END IF
     
 END SUB
 

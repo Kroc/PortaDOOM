@@ -166,6 +166,9 @@ readINI:
             CASE ELSE: LET vid = 0
         END SELECT
         
+        DIM gzdoom_id$
+        LET gzdoom_id$ = ReadIniUTF8$(path$, ini_section$, "gzdoom-id")
+        
         'game files and settings:
         DIM ini_pre$
         LET ini_pre$ = ReadIniUTF8$(path$, ini_section$, "pre")
@@ -211,7 +214,7 @@ readINI:
             ini_cmplvl$, _
             ini_iwad%%, ini_pre$, ini_pwad$, ini_files$, _
             ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
-            ini_use$, ini_tags$, bit, vid, _
+            ini_use$, ini_tags$, bit, vid, gzdoom_id$, _
             ini_warp$, ini_skill$, _
             ini_skill1$, ini_skill2$, ini_skill3$, ini_skill4$, _
             ini_skill5$, ini_skill6$, ini_skill7$, ini_skill8$, _
@@ -228,8 +231,8 @@ END SUB
 '=============================================================================
 SUB Games_Add ( _
     id$, title$, blurb$, name$, desc$, cmplvl$, iwad%%, pre$, pwad$, files$, _
-    exec$, cmd$, deh$, bex$, use$, tags$, bit, vid, warp$, skill$, _
-    skill1$, skill2$, skill3$, skill4$, skill5$, _
+    exec$, cmd$, deh$, bex$, use$, tags$, bit, vid, gzdoom_id$, _
+    warp$, skill$, skill1$, skill2$, skill3$, skill4$, skill5$, _
     skill6$, skill7$, skill8$, skill9$ _
 )   
     'increase the number of games entries
@@ -351,6 +354,7 @@ skill:
     LET Games(Games_Count).tags = LCASE$(tags$)
     LET Games(Games_Count).bit = bit
     LET Games(Games_Count).vid = vid
+    LET Games(Games_Count).gzdoom_id = gzdoom_id$
     
     LET Games(Games_Count).skill1 = skill1$
     LET Games(Games_Count).skill2 = skill2$

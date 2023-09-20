@@ -1,3 +1,5 @@
 pages\50 Shades of Graytall.dosmag
 files\wads\community\50shades\
-@files\ports\req-boom.lst
+# requires a boom-compatible software-renderer
+@files\ports\prboom-plus.lst
+@files\ports\zdoom.lst

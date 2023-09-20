@@ -195,6 +195,10 @@ REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_cacowards "%~1"
+
+ECHO:
+ECHO Complete.
+ECHO:
 PAUSE & GOTO:EOF
 
 :do_cacowards
@@ -245,6 +249,10 @@ REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_5yearsofdoom
+
+ECHO:
+ECHO Complete.
+ECHO:
 PAUSE & GOTO:EOF
 
 :do_5yearsofdoom
@@ -291,6 +299,10 @@ REM # ==========================================================================
 TITLE Creating PortaDOOM release...
 CALL :select_compression
 CALL :do_psxdoomtc
+
+ECHO:
+ECHO Complete.
+ECHO:
 PAUSE & GOTO:EOF
 
 :do_psxdoomtc
@@ -338,6 +350,10 @@ TITLE Creating PortaDOOM Launcher release...
 SET CMPLVL=1
 CALL :compress_launcher
 CALL :do_launcher
+
+ECHO:
+ECHO Complete.
+ECHO:
 PAUSE & GOTO:EOF
 
 :do_launcher

@@ -13,14 +13,14 @@ $KEY:E=GOTO:2017 Cacowards
 :-------------------------------------------------------------------------------
 `PortaDOOM` is continually improving - provide your feedback via these methods:
 
-$KEY:T=URL:https://twitter.com/KrocCamen
+$KEY:F=URL:https://mstdn.social/@Kroc
 $KEY:G=URL:https://github.com/Kroc/PortaDOOM
-$KEY:D=URL:https://discord.gg/AW43KF9
+$KEY:D=URL:https://discord.gg/RkYDKEV
 $KEY:M=URL:mailto:kroc@camendesign.com?subject=PortaDOOM
 $KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?f=44&t=54628
 $KEY:W=URL:https://www.doomworld.com/forum/topic/92031-portadoom-a-portable-wad-disk-zine/
 $KEY:C=URL:http://forum.camendesign.com/
-- [T: twitter]	: @KrocCamen / #PortaDOOM	- [Z: ZDoom Forums]
-- [G: GitHub]	: Kroc -> PortaDOOM			- [W: Doomworld Forums]
-- [D: Discord]	: CamenDesign#portadoom		- [C: Camen Design Forums]
-- [M: email]	: kroc@camendesign.com
+- [F: fediverse] : @Kroc / #PortaDOOM	    - [Z: ZDoom Forums]
+- [G: GitHub]	 : Kroc -> PortaDOOM			- [W: Doomworld Forums]
+- [D: Discord]	 : CamenDesign#portadoom		- [C: Camen Design Forums]
+- [M: email]	 : kroc@camendesign.com

@@ -447,7 +447,8 @@ IF cmd_hasGame` THEN
         "cmd", "", "", "", "", CMD_CMPLVL$, _
         CMD_IWAD%%, CMD_PRE$, CMD_PWAD$, CMD_FILES$, _
         CMD_EXEC$, "", CMD_DEH$, CMD_BEX$, _
-        CMD_USE$, CMD_REQ$, bit, vid, CMD_WARP$, CMD_SKILL$, _
+        CMD_USE$, CMD_REQ$, bit, vid, "", _
+        CMD_WARP$, CMD_SKILL$, _
         "", "", "", "", "", "", "", "", "" _
     )
 ELSE

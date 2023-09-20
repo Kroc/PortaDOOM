@@ -23,11 +23,9 @@ TYPE Game
     tags AS STRING '........comma-separated list of tags the game requires
     bit AS _BYTE '..........required binary type
     cmplvl AS _BYTE '.......can be negative to specify "not given"
-    
-    exec AS STRING '........script file to execute (ZDoom-based engines)
-    cmd AS STRING '.........additional command-line parameters to add
-    
     vid AS _UNSIGNED _BYTE 'renderer colour-depth required
+    gzdoom_id AS STRING '...if GZDoom is selected, what version to use
+    
     map AS STRING '.........warp to a specific map name
     warp_e AS _BYTE '.......warp to given episode number
     warp_m AS _BYTE '.......warp to given map number
@@ -42,6 +40,9 @@ TYPE Game
     skill7 AS STRING '......replacement skill level 7 name
     skill8 AS STRING '......replacement skill level 8 name
     skill9 AS STRING '......replacement skill level 9 name
+    
+    exec AS STRING '........script file to execute (ZDoom-based engines)
+    cmd AS STRING '.........additional command-line parameters to add
 END TYPE
 
 'array that holds all the games defined

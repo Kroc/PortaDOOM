@@ -42,6 +42,8 @@ pages\2015 Cacowards #??.dosmag
 @files\wads\jokes\instadm\include.lst
 
 # page 17:
+# (all demos require prboom-plus)
+@files\ports\prboom-plus.lst
 files\demos\30uv2155\
 files\demos\30uv2032\
 files\demos\30uv1959\
