@@ -9,7 +9,7 @@ Thumbs.db
 __*
 **\__*
 
-# don't include PortaDOOM's DOSmag as it will be pulled from the DOSmag folder
+# PortaDOOM will be built from source
 PortaDOOM.exe
 
 # ignore UPX temporary files if left behind
@@ -37,7 +37,7 @@ PortaDOOM.exe
 **.exe
 **.dll
 # except executables used to modify config files
-# (config.exe is built from source)
+# (cfgini.exe is built from source)
 !files/config/fart.exe
 
 # do not include misc archive files

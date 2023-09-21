@@ -69,8 +69,8 @@ config.cfg
 launcher.cfg
 
 # other
-tranmap.dat
-stdout.txt
-stderr.txt
-CRASHLOG.TXT
-fm_banks
+*/tranmap.dat
+*/stdout.txt
+*/stderr.txt
+*/CRASHLOG.TXT
+*/fm_banks/
