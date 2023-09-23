@@ -1,5 +1,5 @@
 pages\Doomed Space Wars.dosmag
 files\wads\episodes\spacwars\
 # requires ZDoom or contemporary GZDoom version
-@files\ports\gzdoom-18.lst
-@files\ports\zdoom.lst
+@files\ports\use=gzdoom-18.lst
+@files\ports\use=zdoom.lst

@@ -333,7 +333,15 @@ SUB Engines_Enumerate()
             
             IF ini_vid$ = "" THEN LET ini_vid$ = shared_vid$
             IF ini_vid$ = "" THEN SYSTEM 9
-            LET Engines(Engines_Count).vid = VAL(ini_vid$)
+            DIM vid AS _BYTE
+            SELECT CASE ini_vid$
+                CASE "8": LET vid = 8
+                CASE "16": LET vid = 16
+                CASE "24": LET vid = 24
+                CASE "32": LET vid = 32
+                CASE ELSE: LET vid = 0
+            END SELECT
+            LET Engines(Engines_Count).vid = vid
             
             IF ini_kin$ = "" THEN LET ini_kin$ = shared_kin$
             IF ini_kin$ = "" THEN SYSTEM 9
@@ -369,7 +377,7 @@ SUB Engines_Enumerate()
     
     LET ui_statusbar_right$(1) = ""
     LET ui_statusbar_left$(2) = ""
-    LET ui_statusbar_left$(1) = "Prioritizing engines..."
+    LET ui_statusbar_left$(1) = "Reticulating Splines..."
     CALL UIStatusbar_Update
     
     'prioritise engine list:
@@ -386,6 +394,16 @@ SUB Engines_Enumerate()
     '- prefer 64-bit (if present and machine supports it) over 32-bit
     
     'to whit, re-order the list of engines according to this criteria:
+    
+    REM PRINT ""
+    REM PRINT "Unsorted Engine List:"
+    REM PRINT "---------------------"
+    REM FOR i = 1 TO Engines_Count
+    REM     PRINT "- " + Engines(i).id, VER2STR$(Engines(i).ver), STR$(VER2INT&(Engines(i).ver))
+    REM     IF i MOD 24 = 0 THEN SLEEP
+    REM NEXT i
+    REM PRINT ""
+    REM SLEEP
     
     DIM sorted%
     LET sorted% = FALSE
@@ -490,16 +508,16 @@ SUB Engines_Enumerate()
         NEXT i
     LOOP
     
-    ''PRINT "SORT COUNT: " + STRINT$(sortCount%)
-    ''PRINT ""
-    ''PRINT "Sorted Engine List:"
-    ''PRINT "-------------------"
-    ''FOR i = 1 TO Engines_Count
-    ''    PRINT "- " + Engines(i).id, VER2STR$(Engines(i).ver), STR$(VER2INT&(Engines(i).ver))
-    ''    IF i MOD 24 = 0 THEN SLEEP
-    ''NEXT i
-    ''PRINT ""
-    ''SLEEP
+    REM PRINT "SORT COUNT: " + STRINT$(sortCount%)
+    REM PRINT ""
+    REM PRINT "Sorted Engine List:"
+    REM PRINT "-------------------"
+    REM FOR i = 1 TO Engines_Count
+    REM     PRINT "- " + Engines(i).id, VER2STR$(Engines(i).ver), STR$(VER2INT&(Engines(i).ver))
+    REM     IF i MOD 24 = 0 THEN SLEEP
+    REM NEXT i
+    REM PRINT ""
+    REM SLEEP
     
     '-------------------------------------------------------------------------
     
@@ -557,14 +575,14 @@ SUB Engines_Filter()
     
     'test each engine against the game's requirements:
     FOR i = 1 TO UBOUND(Engines)
+        
         'are we looking for a specific engine-id?
         'e.g. the `/USE` command-line parameter
-        IF Games_Selected.use <> "" THEN
-            IF Engines(i).engine <> Games_Selected.use _
-               AND Engines(i).id <> Games_Selected.use _
-            THEN
-                _CONTINUE
-            END IF
+        IF Games_Selected.use <> "" _
+            AND Engines(i).engine <> Games_Selected.use _
+            AND Engines(i).id <> Games_Selected.use _
+        THEN
+            _CONTINUE
         END IF
         
         'does the engine support the type of IWAD given?
@@ -583,18 +601,17 @@ SUB Engines_Filter()
         END IF
         
         'does the game demand a certain colour-depth? (i.e. software mode)
-        IF Games_Selected.vid > 0 THEN
+        IF Games_Selected.vid <> 0 THEN
             'does the engine provide this colour depth?
             IF Engines(i).vid <> Games_Selected.vid THEN _CONTINUE
         END IF
         
         'if this is a GZDoom engine, is it the correct version?
-        IF Games_Selected.gzdoom_id <> "" THEN
-            IF Engines(i).engine = "gzdoom" _
-                AND LCASE$(Engines(i).id) <> LCASE$(Games_Selected.gzdoom_id) _
-            THEN
-                _CONTINUE
-            END IF
+        IF Games_Selected.gzdoom_id <> "" _
+            AND Engines(i).engine = "gzdoom" _
+            AND LCASE$(Engines(i).id) <> LCASE$(Games_Selected.gzdoom_id) _
+        THEN
+            _CONTINUE
         END IF
         
         '---------------------------------------------------------------------
@@ -610,7 +627,7 @@ SUB Engines_Filter()
                     'move on to the next engine
                     IF EngineTags(i, tag%) = 0 THEN
                         '`_CONTINUE` does not support breaking nested loops
-                        LET i = i + 1: GOTO NextEngine
+                        GOTO NextEngine
                     END IF
             END SELECT
         NEXT tag%

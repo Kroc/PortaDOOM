@@ -1,0 +1,8 @@
+# minimum number of vanilla-compatible engines to include
+# (ZDoom and Zandronum are purposefully excluded,
+#  these should only be used for specific compatibility)
+@files\ports\use=choco-doom.lst
+@files\ports\use=crispy-doom.lst
+@files\ports\use=prboom-plus.lst
+@files\ports\use=doom-retro.lst
+@files\ports\use=gzdoom.lst

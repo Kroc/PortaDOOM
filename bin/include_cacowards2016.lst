@@ -3,19 +3,49 @@ files\launcher.exe
 files\tools\xdelta3\
 
 @files\wads\conversions\freedoom\include.lst
-files\wads\doom.ini
-files\wads\doom2.ini
-files\wads\tnt.ini
-files\wads\plutonia.ini
-
-@files\ports\doom-retro.lst
-@files\ports\prboom-plus.lst
-@files\ports\gzdoom.lst
-@files\ports\zdoom.lst
 
 pages\Home #??.dosmag
 pages\2016 Cacowards #??.dosmag
 
+# page 3:
+@files\wads\people\John Romero\include.lst
+# page 4:
+@files\wads\megawads\aaliens\include.lst
+# page 5:
+@files\wads\episodes\Nihility\include.lst
+# page 6:
+@files\wads\community\mutiny\include.lst
+# page 7:
+@files\wads\episodes\killed\include.lst
+# page 8: 
+@files\wads\episodes\elfgp\include.lst
+# page 9:
+@files\wads\onesies\comatose\include.lst
+# page 10:
+@files\wads\onesies\miasma\include.lst
+# page 11:
+@files\wads\episodes\aa_e1\include.lst
+# page 12:
+@files\wads\community\jpcp\include.lst
+# page 13:
+pages\Blade of Agony.dosmag
+# page 14:
+@files\wads\onesies\ma_wrp\include.lst
+@files\wads\community\thtthren\include.lst
+@files\wads\megawads\bstain\include.lst
+@files\wads\conversions\strange_aeons\include.lst
+@files\wads\megawads\echelon\include.lst
+@files\wads\conversions\ShadowOfTheWoolBall\include.lst
+# page 15:
+@files\wads\multiplayer\aeondm\include.lst
+@files\wads\multiplayer\32in24-16\include.lst
+# page 16:
+@files\mods\Doom4Doom\include.lst
+@files\wads\megawads\DTWiD\include.lst
+@files\wads\jokes\ludicrm\include.lst
+
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
 files\demos\e1nm0639\
 files\demos\ep2-403\
 files\demos\e2nm0452\
@@ -27,62 +57,3 @@ files\demos\lvalls4752\
 files\demos\evalln8336\
 files\demos\lvall-1951\
 files\demos\30uv1936\
-
-pages\John Romero's Episode 1 #??.dosmag
-files\wads\people\John Romero\
-pages\Ancient Aliens.dosmag
-files\wads\megawads\aaliens\
-pages\Nihility.dosmag
-files\wads\episodes\Nihility\
-
-pages\DTWiD Series #??.dosmag
-files\wads\megawads\DTWiD\**
-pages\No End in Sight.dosmag
-files\wads\megawads\neis\
-pages\Erkatane.dosmag
-files\wads\episodes\erkatane\
-pages\50 Shades of Graytall.dosmag
-files\wads\community\50shades\
-
-pages\Mutiny.dosmag
-files\wads\community\mutiny\
-pages\Absolutely Killed.dosmag
-files\wads\episodes\killed\
-pages\Elf Gets Pissed.dosmag
-files\wads\episodes\elfgp\
-pages\Comatose.dosmag
-files\wads\onesies\comatose\
-pages\Miasma.dosmag
-files\wads\onesies\miasma\
-pages\Alpha Accident - Terra Nova.dosmag
-files\wads\episodes\aa_e1\
-pages\Japanese Community Project.dosmag
-files\wads\community\jpcp\
-pages\Blade of Agony.dosmag
-files\wads\conversions\boa\
-pages\Warp House.dosmag
-files\wads\onesies\ma_wrp\
-pages\THT - Threnody.dosmag
-files\wads\community\thtthren\
-pages\Bloodstain #??.dosmag
-files\wads\megawads\bstain\
-pages\Strange Aeons.dosmag
-files\wads\conversions\strange_aeons\
-pages\Echelon.dosmag
-files\wads\megawads\echelon\
-pages\Shadow Of The Wool Ball.dosmag
-files\wads\conversions\ShadowOfTheWoolBall\
-pages\Aeon Deathmatch.dosmag
-files\wads\multiplayer\aeondm\
-
-pages\Don't Be a Bitch Remastered.dosmag
-files\wads\multiplayer\dbabrm\
-
-pages\32in24-16.dosmag
-files\wads\multiplayer\32in24-16
-
-pages\DOOM(4) for DooM.dosmag
-files\mods\Doom4Doom\
-
-pages\Luducrium.dosmag
-files\wads\jokes\ludicrm\

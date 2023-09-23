@@ -1,0 +1,4 @@
+files\mods\HighNoonDrifter\
+# contemporary version of GZDoom is v3.2
+# but it freezes a lot for me, so use v3.3
+@files\ports\use=gzdoom-33.lst

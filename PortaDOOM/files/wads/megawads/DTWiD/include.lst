@@ -1,0 +1,4 @@
+pages\DTWiD Series #??.dosmag
+files\wads\megawads\DTWiD\
+# by requiring "boom" we include DOOM-Retro & GZDoom, which we need
+@files\ports\req=boom.lst

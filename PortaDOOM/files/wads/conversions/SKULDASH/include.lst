@@ -1,4 +1,4 @@
 pages\Skulldash.dosmag
 files\wads\conversions\SKULDASH\
 # use GZDoom v3.2 specifically to guarantee compatibility
-@files\ports\gzdoom-32.lst
+@files\ports\use=gzdoom-32.lst

@@ -44,8 +44,8 @@ CONST TIER_RETRO = 1 '"low" tier engines that retain the classic DOOM style
 CONST KIN_X = 1 'kex engine; i.e. DOOM64. *NOT* vanilla
 CONST KIN_V = 2 '"vanilla" engine; i.e. Chocolate-Doom, Crispy-Doom
 CONST KIN_B = 3 '"Boom" engine; i.e. PrBoom+, DOOM-Retro
-CONST KIN_Z = 4 '"ZDoom" engine; i.e. ZDoom
-CONST KIN_G = 5 '"GZDoom" engine; i.e. GZDoom, QZDoom
+CONST KIN_Z = 4 '"ZDoom" engine; i.e. ZDoom, Zandronum
+CONST KIN_G = 5 '"GZDoom" engine; i.e. GZDoom
 
 'array that holds all the engines detected, including 'duplicates' that
 'share the same engine-id, but differ in version / CPU-type / renderer

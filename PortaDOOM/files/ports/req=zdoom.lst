@@ -1,0 +1,5 @@
+# minimum number of zdoom-compatible engines to include
+# (Zandronum is purposefully excluded as this should
+#  only be used for specific compatibility)
+@files\ports\use=zdoom.lst
+@files\ports\use=gzdoom.lst

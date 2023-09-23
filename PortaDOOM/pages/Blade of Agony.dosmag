@@ -1,12 +1,12 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:launcher.exe "wads\conversions\boa\play-boa.ini"
-$KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
-$KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt
+$REM:$KEY:P=SHELL:launcher.exe "wads\conversions\boa\play-boa.ini"
+$REM:$KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
+$REM:$KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt
 $KEY:W=URL:http://boa.realm667.com/
 
 :WolfenDoom: Blade of Agony                         * 2016 Cacoward Winner! *
 :===============================================================================
-*[P] Play						 *[T] .txt [C] Credits [W] Website
+								 *[W] Website
 :-------------------------------------------------------------------------------
 :Released : *2016>05>20	  Author : _Daniel "Tormentor667" Gimmer_ et al
 :Levels   : *20			   Modes : *Single, Co-op
@@ -26,8 +26,8 @@ You are Cpt. William "B.J." Blazkowicz, an Allied spy, a fearless risk-taker, an
 :Construction
 :-------------------------------------------------------------------------------
 *Base				: From scratch
-					  Inspired by WolfenDoom from _Laz Rojas_
-					  Gameplay vaguely based on Nazis by _Wildweasel_
+					  Inspired by `WolfenDoom` from _Laz Rojas_
+					  Gameplay vaguely based on `Nazis` by _Wildweasel_
 
 *Build Time			: 12th of January 2015 to 13th of November 2016 (Chapter 1)
 					  13th of November 2016 to 20th of May 2017 (Chapter 2)
@@ -38,11 +38,11 @@ You are Cpt. William "B.J." Blazkowicz, an Allied spy, a fearless risk-taker, an
 
 *Special Thanks:
 
-- _Laz Rojas_ for WolfenDoom
+- _Laz Rojas_ for `WolfenDoom`
 
 - _Graf Zahl_ for GZDoom
 - _randy_ for ZDoom
 - _MaxED_ for GZDoom Builder
 - _Gez_ for Slade
 
-- id software for Doom and Wolfenstein 3D
+- _id software_ for `Doom` and `Wolfenstein 3D`

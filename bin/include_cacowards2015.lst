@@ -2,11 +2,11 @@ PortaDOOM.exe
 files\launcher.exe
 files\tools\xdelta3\
 
+@files\wads\conversions\freedoom\include.lst
+
 pages\Home #??.dosmag
 pages\2015 Cacowards #??.dosmag
 
-# page 2:
-@files\wads\conversions\freedoom\include.lst
 # page 3:
 @files\wads\megawads\sunlust\include.lst
 # page 4:
@@ -43,7 +43,7 @@ pages\2015 Cacowards #??.dosmag
 
 # page 17:
 # (all demos require prboom-plus)
-@files\ports\prboom-plus.lst
+@files\ports\use=prboom-plus.lst
 files\demos\30uv2155\
 files\demos\30uv2032\
 files\demos\30uv1959\

@@ -1,3 +1,4 @@
 pages\dead.wire.dosmag
 files\wads\onesies\xa-dwire\
-@files\ports\gzdoom-18.lst
+# use specifically GZDoom v1.8
+@files\ports\use=gzdoom-18.lst

@@ -1,5 +1,0 @@
-# minimum number of no-limit engines to include
-@files\ports\crispy-doom.lst
-@files\ports\prboom-plus.lst
-@files\ports\doom-retro.lst
-@files\ports\gzdoom.lst

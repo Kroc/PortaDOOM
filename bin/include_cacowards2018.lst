@@ -9,10 +9,10 @@ files\wads\tnt.ini
 files\wads\plutonia.ini
 files\wads\square1.ini
 
-@files\ports\doom-retro.lst
-@files\ports\prboom-plus.lst
-@files\ports\gzdoom.lst
-@files\ports\zdoom.lst
+@files\ports\use=doom-retro.lst
+@files\ports\use=prboom-plus.lst
+@files\ports\use=gzdoom.lst
+@files\ports\use=zdoom.lst
 
 pages\Home #??.dosmag
 pages\2018 Cacowards #??.dosmag

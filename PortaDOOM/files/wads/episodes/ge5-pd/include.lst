@@ -1,3 +1,4 @@
 pages\Prime Directive.dosmag
 files\wads\episodes\ge5-pd\
-@files\ports\gzdoom-20.lst
+# use specifically GZDoom v2.0
+@files\ports\use=gzdoom-20.lst

@@ -1,3 +1,4 @@
 pages\Pinnacle of Darkness.dosmag
 files\wads\onesies\pinnacle\
-@files\ports\gzdoom-21.lst
+# use specifically GZDoom v2.1
+@files\ports\use=gzdoom-21.lst

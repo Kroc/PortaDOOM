@@ -1,0 +1,5 @@
+# minimum number of MBF-compatible engines to include
+# (ZDoom and Zandronum are purposefully excluded,
+#  these should only be used for specific compatibility)
+@files\ports\use=doom-retro.lst
+@files\ports\use=gzdoom.lst

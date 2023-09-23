@@ -1,0 +1,5 @@
+# engines that support HERETIC.WAD
+# (ZDoom and Zandronum are purposefully excluded,
+#  these should only be used for specific compatibility)
+@files\ports\use=choco-heretic.lst
+@files\ports\use=gzdoom.lst

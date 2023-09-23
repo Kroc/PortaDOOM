@@ -157,13 +157,13 @@ readINI:
         DIM ini_cmplvl$
         LET ini_cmplvl$ = ReadIniUTF8$(path$, ini_section$, "cmplvl")
         
-        DIM vid
+        DIM ini_vid
         SELECT CASE ReadIniUTF8$(path$, ini_section$, "vid")
-            CASE "8": LET vid = 8
-            CASE "16": LET vid = 16
-            CASE "24": LET vid = 24
-            CASE "32": LET vid = 32
-            CASE ELSE: LET vid = 0
+            CASE "8": LET ini_vid = 8
+            CASE "16": LET ini_vid = 16
+            CASE "24": LET ini_vid = 24
+            CASE "32": LET ini_vid = 32
+            CASE ELSE: LET ini_vid = 0
         END SELECT
         
         DIM gzdoom_id$
@@ -214,7 +214,7 @@ readINI:
             ini_cmplvl$, _
             ini_iwad%%, ini_pre$, ini_pwad$, ini_files$, _
             ini_exec$, ini_cmd$, ini_deh$, ini_bex$, _
-            ini_use$, ini_tags$, bit, vid, gzdoom_id$, _
+            ini_use$, ini_tags$, bit, ini_vid, gzdoom_id$, _
             ini_warp$, ini_skill$, _
             ini_skill1$, ini_skill2$, ini_skill3$, ini_skill4$, _
             ini_skill5$, ini_skill6$, ini_skill7$, ini_skill8$, _

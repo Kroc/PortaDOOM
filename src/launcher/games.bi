@@ -23,7 +23,7 @@ TYPE Game
     tags AS STRING '........comma-separated list of tags the game requires
     bit AS _BYTE '..........required binary type
     cmplvl AS _BYTE '.......can be negative to specify "not given"
-    vid AS _UNSIGNED _BYTE 'renderer colour-depth required
+    vid AS _BYTE '..........renderer colour-depth required
     gzdoom_id AS STRING '...if GZDoom is selected, what version to use
     
     map AS STRING '.........warp to a specific map name

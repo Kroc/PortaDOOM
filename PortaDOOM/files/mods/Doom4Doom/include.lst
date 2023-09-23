@@ -1,0 +1,4 @@
+pages\DOOM(4) for DooM.dosmag
+files\mods\Doom4Doom\
+# requires GZDoom v2.2+ but mod-matching is not implemented yet
+#@files\ports\use=gzdoom-22
