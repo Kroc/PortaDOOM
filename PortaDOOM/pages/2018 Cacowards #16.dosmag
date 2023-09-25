@@ -11,7 +11,7 @@ $KEY:R=URL:https://www.doomworld.com/profile/16250-revae/
 
 :Mordeth Award: Released project with the longest "development time"
 :===============================================================================
-:*[T] Total Chaos - _wadaholic_
+:*[T: Total Chaos] - _wadaholic_
 :-------------------------------------------------------------------------------
 ! *NOTE:* Sorry, `Total Chaos` could not be included in `PortaDOOM` due to it being 1.5GB in size! Download it from the website by pressing [T]
 
@@ -28,7 +28,7 @@ With all that said, `Total Chaos` puts us in an awkward position. While the Mord
 
 :The Spaceship of Theseus: A noteworthy project that has become so removed from DOOM that we're not even sure what to consider it
 :===============================================================================
-:*[T] Total Chaos - _wadaholic_
+:*[T: Total Chaos] - _wadaholic_
 :-------------------------------------------------------------------------------
 There’s no denying it: `GZDoom` isn’t just a source port anymore, it’s a complete indie game making engine. If you don’t believe something with such humble beginnings can accomplish so much, check out the development of `Operation Echo`, `The Forestale`, or `Hedon`. Or better yet, play `Total Chaos`, which was released this Halloween and has already shown just how much the engine is capable of.
 
@@ -46,7 +46,7 @@ In the meantime, you’ll be scrounging for supplies, building items, and managi
 
 :Codeaward: Most noteworthy programming effort of the year
 :===============================================================================
-:*[D] Doom Builder X - _anotak_
+:*[D: Doom Builder X] - _anotak_
 :-------------------------------------------------------------------------------
 One aspect of the Codeaward that makes it somewhat unusual is that it lends itself to a more forward-thinking perspective. Last year `OBLIGE` won for an effective lifetime achievement award, necessitated by the author bringing the project to a close. But in general, the Codeaward is intended to recognize something different from basically any other award we have. WADs and mods are expected to be finished before we deem them worthy for consideration - after all, they're to be judged as whole creative works on their own merits. Programming efforts like source ports and tools, on the other hand, cannot be judged in a vacuum. Their value is derived, first and foremost, from what others can do with them, now and in the future.
 
@@ -61,7 +61,7 @@ This is where I face the most trouble in writing the Codeaward, because I feel c
 
 :Machaward: Most creative, unusual, or artistically compelling project
 :===============================================================================
-:*[M] Mr. Friendly - _JP LeBreton_
+:*[M: Mr. Friendly] - _JP LeBreton_
 :-------------------------------------------------------------------------------
 ! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations.
 
@@ -82,7 +82,7 @@ _JP LeBreton_'s long and rich history with the gaming industry has gifted us wit
 
 :Creator of the Year
 :===============================================================================
-:[R] _Revae_
+:[R: _Revae_]
 :-------------------------------------------------------------------------------
 First of all, you’re probably wondering about the name change. Well, there’s more to life than mapping, isn’t there? Or at least, there’s more to mapping than just the maps. Level designers have always had the main 10 Cacowards as an avenue for recognition, and have always been first to get the credit for the amazing work they’ve been involved in – and they deserve every bit of their accolades. But behind those successes are also the people whose work they build upon: the music composers, the texture artists, the spriters, the gameplay modders. Making a great project is often about all of those things, and this award should be too – though of course we won’t forget about the mappers.
 
@@ -98,4 +98,4 @@ But even beyond all of that, it takes a huge amount of vision to create somethin
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/cacowards/2018/others/
-:source [#: www.doomworld.com/cacowards/others]
+:source [#: www.doomworld.com/cacowards/2018/others/]

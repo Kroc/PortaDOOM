@@ -31,18 +31,18 @@ $KEY:0=URL:https://www.doomworld.com/forum/topic/95544-a-new-trick-discovery-zer
 $KEY:1=URL:https://www.youtube.com/watch?v=J0hh-6eGHOs
 Would you believe 2017 was a breakout year for `DOOM` speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in `DOOM 2` map07 and just flick the exit switch in 3 seconds. Duh! Named [0: zero press] after its ubiquitous finder _ZeroMaster_ (first recorded on [1: map15] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
 
-$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\30nm2154\30nm2154.lmp"
-$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\30uv1845\30uv1845.lmp"
+$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\0nm2154\30nm2154.lmp"
+$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\30uv1845\30uv1845.lmp"
 We've seen another massive time cut to the `DOOM 2` speedrun, which currently clocks at _ZeroMaster_'s *[2] 21:54* for Nightmare and _eLim_'s *[3] 18:45* for UV. The latter run has underwent a mindblowing change, and after being a staple for decades, map31 has been dropped out of the optimal route! The strat is still too risky for NM though.
 
-$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /PLUTONIA /DEMO "demos\30pl1958\30pl1958.lmp" /CMPLVL 4
-$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT      /DEMO "demos\30ev3858\30ev3858.lmp" /CMPLVL 4
+$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /PLUTONIA /DEMO "demos\cacowards2017\30pl1958\30pl1958.lmp" /CMPLVL 4
+$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT      /DEMO "demos\cacowards2017\30ev3858\30ev3858.lmp" /CMPLVL 4
 $KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2    /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO "demos\30av9321\30av9321.lmp" /CMPLVL 2
 $KEY:7=URL:https://www.youtube.com/watch?v=LExJMOh3TNs
 Other notable d2all speedruns have been firmly a _ZeroMaster_ domain. He has brought down the `Plutonia` UV speed [4: under 20 minutes] and the `Evilution` UV speed [5: under 39]. If you're into getting old in front of the computer screen, _ZM_ has also completed his secret dream and trailblazed an [6: Alien Vendetta UV movie] in *1:33:21*. In other news, the lands of almost-`DOOM` have caught up with the void glide craze and the `Hexen` speedrun has been destroyed in [7: under 10 minutes] by _veovis_.
 
-$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\p2m81242\p2m81242.lmp"   /CMPLVL 3
-$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\pa02-2057\pa02-2057.lmp" /CMPLVL 2
+$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2017\p2m81242\p2m81242.lmp"   /CMPLVL 3
+$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\pa02-2057\pa02-2057.lmp" /CMPLVL 2
 $KEY:I=URL:https://www.doomworld.com/forum/topic/93242-e2m8-done-passive/?do=findComment&comment=1725824
 And that's not all! 2017 has seen even more preposterous groundbreakers. In March _4shockblast_ defied lame pro-tips and completed the much-theoretized [8: pacifist run of E2M8]. After mere 12 minutes of passive-aggressively hugging the Cyberdemon in a "frozen" state, a helpful lost soul completed all of the damaging. Then in September the impossible happened and the most agonizing challenge left has been conquered. _ZeroMaster_ recorded the fabled pa02, the [9: pacifist run of Underhalls]. Needless to say, [I: I had to eat crow]. Hats off to both of you!
 

@@ -46,14 +46,4 @@ pages\Blade of Agony.dosmag
 
 # (all demos require prboom-plus)
 @files\ports\use=prboom-plus.lst
-files\demos\e1nm0639\
-files\demos\ep2-403\
-files\demos\e2nm0452\
-files\demos\ep3n421\
-files\demos\ep4-413\
-files\demos\ep4n654\
-files\demos\lvalln2256\
-files\demos\lvalls4752\
-files\demos\evalln8336\
-files\demos\lvall-1951\
-files\demos\30uv1936\
+files\demos\cacowards2016\

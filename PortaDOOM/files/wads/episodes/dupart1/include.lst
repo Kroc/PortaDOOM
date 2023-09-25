@@ -1,0 +1,4 @@
+pages\Dark Universe Part 1.dosmag
+files\wads\episodes\dupart1\
+# use GZDoom v3.2 specifically
+@files\ports\use=gzdoom-32.lst

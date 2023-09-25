@@ -10,7 +10,7 @@ $KEY:M=URL:https://combine-kegan.itch.io/gmota
 ! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations. A future release will add mod support! -- You can still download the mods below and run them yourself.
 
 
-:[G] Guncaster - _Pillowblaster_ et al
+:[G: Guncaster] - _Pillowblaster_ et al
 :===============================================================================
 Many yonks ago, `Aeons of Death` struggled with the question of "at what point should you actually stop putting stuff into a gameplay mod?" Even now, it's difficult to really pinpoint when a gameplay mod can be considered "complete." There's always another extra feature you can add, another weapon, another item, another thing, and as it goes on it becomes increasingly tough to have content mesh and feel consistent throughout play.
 
@@ -22,7 +22,7 @@ The scope that `Guncaster` covers is truly gargantuan, and not a single part of 
 
 ^R- _TerminusEst13_
 
-:[N] Netronian Chaos - _Captain J_
+:[N: Netronian Chaos] - _Captain J_
 :===============================================================================
 _Captain J_ is a long-running cheerleader in the `ZDoom` community, and was mentioned last year as one of the Most Promising Newcomers with his debut project `Netronian Chaos`. Featuring a cute art style and a lot of promise, it seemed like an auspicious modding start. The end of 2018 has rolled in, and what seemed to be has come true for sure.
 
@@ -36,7 +36,7 @@ _Captain J_ goes far beyond the call of duty in creating a unique mod that looks
 
 ^R- _TerminusEst13_
 
-:[M] GMOTA - _Combine_Kegan_
+:[M: GMOTA] - _Combine_Kegan_
 :===============================================================================
 For posterity's sake, first things out of the way. Yes, _Kegan_ is a friend of mine and I like the stuff he makes, so I'm pretty biased. On the other hand, I'm the only gameplay mod writer available right at this moment and holy shit have you played `GMOTA` yet?
 
@@ -52,4 +52,4 @@ There is a primal joy to be had in screaming while charging into a gigantic mob 
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/cacowards/2018/gameplay/
-:source [#: www.doomworld.com/cacowards/gameplay]
+:source [#: www.doomworld.com/cacowards/2018/gameplay/]

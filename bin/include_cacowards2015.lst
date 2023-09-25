@@ -44,13 +44,4 @@ pages\2015 Cacowards #??.dosmag
 # page 17:
 # (all demos require prboom-plus)
 @files\ports\use=prboom-plus.lst
-files\demos\30uv2155\
-files\demos\30uv2032\
-files\demos\30uv1959\
-files\demos\30nm2721\
-files\demos\ep2-0327\
-files\demos\ep4-0342\
-files\demos\ep1-457\
-files\demos\ep3-347\
-files\demos\evall-4416\
-files\demos\plalln4357\
+files\demos\cacowards2015\

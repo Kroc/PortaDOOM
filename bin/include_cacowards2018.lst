@@ -3,84 +3,44 @@ files\launcher.exe
 files\tools\xdelta3\
 
 @files\wads\conversions\freedoom\include.lst
-files\wads\doom.ini
-files\wads\doom2.ini
-files\wads\tnt.ini
-files\wads\plutonia.ini
-files\wads\square1.ini
-
-@files\ports\use=doom-retro.lst
-@files\ports\use=prboom-plus.lst
-@files\ports\use=gzdoom.lst
-@files\ports\use=zdoom.lst
 
 pages\Home #??.dosmag
 pages\2018 Cacowards #??.dosmag
 
-pages\Avactor.dosmag
-files\wads\episodes\avactor\
+# page 3:
+@files\wads\episodes\avactor\include.lst
+# page 4:
+@files\wads\episodes\dupart1\include.lst
+# page 5:
+@files\wads\SHAREWARE\square\include.lst
+# page 6:
+@files\wads\episodes\preacher\include.lst
+# page 7:
+@files\wads\episodes\dotb\include.lst
+# page 8:
+@files\wads\megawads\strg\include.lst
+# page 9:
+@files\wads\conversions\REKKR\include.lst
+# page 10:
+@files\wads\people\obsidian\maskimxul\include.lst
+# page 11:
+@files\wads\conversions\goldensouls2\include.lst
+# page 12:
+@files\wads\onesies\supplydp\include.lst
+# page 13:
+@files\wads\megawads\exomoon\include.lst
+@files\wads\onesies\motm\include.lst
+@files\wads\onesies\uof\include.lst
+@files\wads\onesies\portglacia\include.lst
+@files\wads\people\ribbiks\magnolia\include.lst
+@files\wads\megawads\alfonzon\include.lst
+@files\wads\conversions\Ashes2063Enriched\include.lst
+@files\wads\onesies\demonastery\include.lst
+@files\wads\megawads\doom404\include.lst
+@files\wads\people\bemused\cryogenics\include.lst
 
-pages\Dark Universe Part 1.dosmag
-files\wads\episodes\dupart1\
-
-pages\The Adventures of Square.dosmag
-files\wads\SHAREWARE\square\
-
-pages\Preacher.dosmag
-files\wads\episodes\preacher\
-
-pages\Dimension of the Boomed.dosmag
-files\wads\episodes\dotb\
-
-pages\Struggle - Antaresian Legacy.dosmag
-files\wads\megawads\strg\
-
-pages\REKKR.dosmag
-files\wads\conversions\REKKR\
-
-pages\Maskim Xul.dosmag
-files\wads\people\obsidian\maskimxul\
-
-pages\The Golden Souls 2.dosmag
-files\wads\conversions\goldensouls2\
-
-pages\UAC Invasion - The Supply Depot.dosmag
-files\wads\onesies\supplydp\
-
-
-
-pages\Exomoon.dosmag
-files\wads\megawads\exomoon\
-
-pages\Man on the Moon.dosmag
-files\wads\onesies\motm\
-
-pages\Umbra of Fate.dosmag
-files\wads\onesies\uof\
-
-pages\Port Glacia.dosmag
-files\wads\onesies\portglacia\
-
-pages\Magnolia.dosmag
-files\wads\people\ribbiks\magnolia\
-
-pages\The Alfonzone.dosmag
-files\wads\megawads\alfonzon\
-
-pages\Ashes 2063.dosmag
-files\wads\conversions\ashes2063
-
-pages\Demonastery.dosmag
-files\wads\onesies\demonastery\
-
-pages\DOOM 404.dosmag
-files\wads\megawads\doom404\
-
-pages\Cryogenics.dosmag
-files\wads\people\bemused\cryogenics\
-
-
-
-files\demos\cacowards2018\
-files\wads\megawads\av\
-files\wads\people\death-destiny\nochance\
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
+files\demos\cacowards2015\
+@files\wads\megawads\av\include.lst
+@files\wads\people\death-destiny\nochance\include.lst

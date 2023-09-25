@@ -1,11 +1,10 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:launcher.exe "wads\conversions\ashes2063\play-ashes2063.ini"
-$KEY:T=SHELL:wads\conversions\ashes2063\WITNESSME.txt
-$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?f=19&t=47573
+$KEY:P=SHELL:launcher.exe "wads\conversions\Ashes2063Enriched\play-ashes2063.ini"
+$KEY:W=URL:https://www.moddb.com/mods/ashes-2063
 
 :Ashes 2063										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						 *[T] .txt [W] Website
+*[P] Play						 *[W] Website
 :-------------------------------------------------------------------------------
 :Released : *2018>11>19	  Author : _Pinchy, Augustus "Alfonzo" Knezevich_
 :Levels   : *49			   Modes : *Single, Co-op
@@ -21,9 +20,3 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?f=19&t=47573
 `Ashes` is a Post-apocalypse themed Total conversion, designed to be run in the `GZDoom` or `QZDoom` ports, and includes support for either software or hardware options. Set decades after a worldwide catastrophe has reduced most of the country to toxic wasteland, the player takes on the role of a scavenger searching the ruins of "The City", a once thriving metropolis, for valuable items. Add bands of mutant cannibals, limited ammunition, and a mysterious group of gas-mask wearing para-military types prowling the rubble.
 
 Heavily inspired by 90's FPS games, 80's post-apocalyptic movies, and a shit-ton of other references, `Ashes` will be designed to either run as a weapons mod, a map-pack, or as a full conversion, depending on the modules downloaded and run.
-
-:Credits
-:-------------------------------------------------------------------------------
-- See the *[T].txt* file for full credits
-$KEY:C=SHELL:wads\conversions\ashes2063\Credit.txt
-- *[C] credits* for _CJ_'s `Wasted Ashes SFX`
