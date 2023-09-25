@@ -4,109 +4,103 @@ $TITLE=Index
 ^C:2017 CACOWARDS :: INDEX
 
 :-------------------------------------------------------------------------------
-(Indented pages are cross-references and not a direct part of Cacowards 2017)
 
 :TOP TEN:
 
-$KEY:A=GOTO:lilith.pk3
-- [A] *lilith.pk3 									_anotak_
+$KEY:1=GOTO:lilith.pk3
+- [1] *lilith.pk3 									_anotak_
 
-$KEY:B=GOTO:Shadows of the Nightmare Realm
-- [B] *Shadows of the Nightmare Realm				_YukiRaven 
+$KEY:2=GOTO:Shadows of the Nightmare Realm
+- [2] *Shadows of the Nightmare Realm				_YukiRaven 
 
-$KEY:C=GOTO:No End in Sight
-$KEY:D=GOTO:DTWiD Series
-- [C] *No End in Sight								_Years_
-   └→ [D] *Doom the Way id Did Series				Various
+$KEY:3=GOTO:No End in Sight
+- [3] *No End in Sight								_Years_
 
-$KEY:E=GOTO:dead.air
-$KEY:F=GOTO:dead.wire
-- [E] *dead.air										_Xaser_
-   └→ [F] *dead.wire								_Xaser_
+$KEY:4=GOTO:dead.air
+- [4] *dead.air										_Xaser_
 
-$KEY:G=GOTO:Brigandine
-- [G] *Brigandine									_Viggles_
+$KEY:5=GOTO:Brigandine
+- [5] *Brigandine									_Viggles_
 
-$KEY:H=GOTO:Counterattack
-- [H] *Counterattack								_Mechadon_
+$KEY:6=GOTO:Counterattack
+- [6] *Counterattack								_Mechadon_
 
-$KEY:I=GOTO:Legacy of Heroes
-- [I] *Legacy of Heroes								_Gaspe_
+$KEY:7=GOTO:Legacy of Heroes
+- [7] *Legacy of Heroes								_Gaspe_
 
-$KEY:J=GOTO:Saturnine Chapel
-- [J] *Saturnine Chapel								_dobu gabu maru_
+$KEY:8=GOTO:Saturnine Chapel
+- [8] *Saturnine Chapel								_dobu gabu maru_
 
-$KEY:K=GOTO:Stardate 20x7
-- [K] *Stardate 20x7								_Ribbiks_
+$KEY:9=GOTO:Stardate 20x7
+- [9] *Stardate 20x7								_Ribbiks_
 
-$KEY:L=GOTO:Void and Rainbow
-- [L] *Void and Rainbow								_Serious_MOod_
+$KEY:0=GOTO:Void and Rainbow
+- [0] *Void and Rainbow								_Serious_MOod_
 
 :RUNNERS UP:
 
-$KEY:M=GOTO:Rise of the Wool Ball
-- [M] *Rise of the Wool Ball						_MSPaintR0cks_
+$KEY:A=GOTO:Rise of the Wool Ball
+- [A] *Rise of the Wool Ball						_MSPaintR0cks_
 
-$KEY:N=GOTO:Return to Hadron Episode 2
-- [N] *Return to Hadron Episode 2					_cannonball_
+$KEY:B=GOTO:Return to Hadron Episode 2
+- [B] *Return to Hadron Episode 2					_cannonball_
 
-$KEY:O=GOTO:TNT - Revilution
-- [O] *TNT: Revilution								Various
+$KEY:C=GOTO:TNT - Revilution
+- [C] *TNT: Revilution								Various
 
-$KEY:P=GOTO:Waterlab GZD
-- [P] *Waterlab GZD									_Enjay_
+$KEY:D=GOTO:Waterlab GZD
+- [D] *Waterlab GZD									_Enjay_
 
-$KEY:Q=GOTO:Disjunction
-- [Q] *Disjunction									_floatRand_
+$KEY:E=GOTO:Disjunction
+- [E] *Disjunction									_floatRand_
 
-$KEY:R=GOTO:Hexen - Curse of the Lost Gods
-- [R] *Hexen: Curse of the Lost Gods				_Kristus_
+$KEY:F=GOTO:Hexen - Curse of the Lost Gods
+- [F] *Hexen: Curse of the Lost Gods				_Kristus_
 
-$KEY:S=GOTO:Water Spirit
-- [S] *Water Spirit									_Manbou_
+$KEY:G=GOTO:Water Spirit
+- [G] *Water Spirit									_Manbou_
 
-$KEY:T=GOTO:DOOM II - Hellscape
-- [T] *DOOM II: Hellscape							_Chris Lutz_
+$KEY:H=GOTO:DOOM II - Hellscape
+- [H] *DOOM II: Hellscape							_Chris Lutz_
 
-$KEY:U=GOTO:Dark Tide
-- [U] *Dark Tide									_Chris Lutz_
+$KEY:I=GOTO:Dark Tide
+- [I] *Dark Tide									_Chris Lutz_
 
 :MULTIPLAYER AWARDS:
 
-$KEY:V=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/p-r/pyrrhic
-- *[V: Pyrrhic]										_hobomaster_
+$KEY:J=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/p-r/pyrrhic
+- *[J: Pyrrhic]										_hobomaster_
 
-$KEY:W=URL:https://zandronum.com/forum/viewtopic.php?f=58&t=7872
-- *[W: Progressive Duel 2]							_Mechanix Union_
+$KEY:K=URL:https://zandronum.com/forum/viewtopic.php?f=58&t=7872
+- *[K: Progressive Duel 2]							_Mechanix Union_
 
 :GAMEPLAY MOD AWARDS:
 
-$KEY:X=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=52262
-- *[X: Doom Delta]									_DrPyspy_
+$KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=52262
+- *[L: Doom Delta]									_DrPyspy_
 
-$KEY:Y=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=55061
-- *[Y: Final Doomer]								_Sgt. Shivers_, _Yholl_, &c.
+$KEY:M=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=55061
+- *[M: Final Doomer]								_Sgt. Shivers_, _Yholl_, &c.
 
-$KEY:Z=URL:URL:https://forum.zdoom.org/viewtopic.php?t=57098
-- *[Z: High Noon Drifter]							_TerminusEst13_
+$KEY:N=URL:URL:https://forum.zdoom.org/viewtopic.php?t=57098
+- *[N: High Noon Drifter]							_TerminusEst13_
 
 :CODEAWARD:
 
-$KEY:1=URL:http://oblige.sourceforge.net/
-- *[1: OBLIGE]										_Andrew Apted_
+$KEY:O=URL:http://oblige.sourceforge.net/
+- *[O: OBLIGE]										_Andrew Apted_
 
 :MORDETH AWARD:
 
-$REM=This is purposefully duplicated for visual consistency
-$KEY:2=GOTO:TNT - Revilution
-- [2] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
+$KEY:P=GOTO:TNT - Revilution
+- [P] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
 
 :MACHAWARD:
 
-$KEY:3=GOTO:The Given
-- [3] *The Given									_dobu gabu maru_
+$KEY:Q=GOTO:The Given
+- [Q] *The Given									_dobu gabu maru_
 
 :MAPPER OF THE YEAR:
 
-$KEY:4=URL:https://www.doomworld.com/profile/13035-dobu-gabu-maru/?do=content&type=forums_topic&change_section=1
-- [4: dobu gabu maru]
+$KEY:R=URL:https://www.doomworld.com/profile/13035-dobu-gabu-maru/?do=content&type=forums_topic&change_section=1
+- [R: dobu gabu maru]

@@ -13,7 +13,7 @@ $KEY:H=URL:https://forum.zdoom.org/viewtopic.php?t=57098
 ! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations. A future release will add mod support! -- You can still download the mods below and run them yourself.
 
 
-:[D] Doom Delta - _DrPyspy_
+:[D: Doom Delta] - _DrPyspy_
 :===============================================================================
 With all of the power that `Decorate` and `ACS` bring, and now with the advent of the new and interesting `ZScript`, a lot of mods are constantly trying to out-wow each other in effects and over-the-top spectacle. Every year, we see more gameplay mods with more cool stuff, with more particles, with more fancy eye-candy. New sprites for weapons and enemies! Loud sound effects! Alt-fires! Tertiary fires! If I pack even more features into my gameplay mod, it'll be even cooler and better, right? Let me tell you about my map enhancement script.
 
@@ -21,13 +21,11 @@ Meanwhile, the most impressive thing about `Doom Delta` is that... well, at firs
 
 The developmental history of `DOOM` has been incredibly well-storied, and there have been many avenues where making a different decision on a matter would have resulted in a wildly different game. `Doom Delta` is a "What if?" version taking a glance at these different paths, merging together cut content from the `DOOM` alphas/betas and specifications from the `DOOM Bible` to piece together a `DOOM` that was released in an alternate dimension. The `DOOM` 0.3 Alpha helmet hud is recreated here to full glorious effect (complete with heart rate monitor and on-screen automap), and mingles alongside the playable quartet of characters from the `DOOM Bible`, the Christmas BFG from the press release Beta, and more. Nearly every notable bit of tech, scrapped sprite, or difference in `DOOM`'s early history has been acknowledged in some way and merged seamlessly into the traditional `DOOM` gameplay; even with the Lost Souls using ranged attacks, the Imps throwing plasma, score items strewn throughout the maps, and the introduction of the Dark Claw and Unmaker, it still feels 100% like... some strange version of `DOOM`.
 
-$KEY:1=GOTO:DTWiD Series #01
-$KEY:2=GOTO:DTWiD Series #02
-In an age where people are constantly trying to outdo each other in spectacle, it says a lot to make something that "feels" simple. In this way, `Doom Delta` ends up being the gameplay mod equivalent of the *[1] DTWID* / *[2] D2TWID* projects -- it may not be the flashiest or most attention-grabbing project out there, but for people who genuinely love `DOOM` and the history behind it, it's probably one of the finest.
+In an age where people are constantly trying to outdo each other in spectacle, it says a lot to make something that "feels" simple. In this way, `Doom Delta` ends up being the gameplay mod equivalent of the `DTWID` / `D2TWID` projects -- it may not be the flashiest or most attention-grabbing project out there, but for people who genuinely love `DOOM` and the history behind it, it's probably one of the finest.
 
 ^R- _TerminusEst13_
 
-:[F] Final Doomer - _Sgt. Shivers_ & _Yholl_ et al
+:[F: Final Doomer] - _Sgt. Shivers_ & _Yholl_ et al
 :===============================================================================
 
 	*"What mapset should I play this mod with?"
@@ -43,7 +41,7 @@ It's difficult to make even just one set of weapons where each gun is distinct i
 ^R- _TerminusEst13_
 
 
-:[H] High Noon Drifter - _TerminusEst13_
+:[H: High Noon Drifter] - _TerminusEst13_
 :===============================================================================
 Howdy partners, _Scuba Steve_ here to spin yarns about one helluva `DOOM` mod. Folks call her `"High Noon Drifter"` and I reckon many ya'll have played this here project. `HND`'s a complete thematic overhaul of every aspect of the player, transforming the classic Doomguy into a spaghetti western cowboy hellbent on destroying the hordes of demonic forces using a plethora of (mostly) era-appropriate weapons, as well as dark ritual magic.
 

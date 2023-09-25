@@ -4,7 +4,7 @@
 	],
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
-	"editor.tabSize": 8,
+	"editor.tabSize": 4,
 	"editor.renderWhitespace": "boundary",
 	"files.exclude": {
 		"wiki": true,

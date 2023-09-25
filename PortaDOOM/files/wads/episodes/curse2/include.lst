@@ -1,0 +1,4 @@
+pages\Hexen - Curse of the Lost Gods.dosmag
+files\wads\episodes\curse2\
+# even though this is Hexen-based, requires ZDoom+
+@files\ports\req=zdoom.lst

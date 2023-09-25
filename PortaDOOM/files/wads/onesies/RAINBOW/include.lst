@@ -1,0 +1,4 @@
+pages\Void and Rainbow.dosmag
+files\wads\onesies\RAINBOW\
+# works ONLY on GZDoom v3.2!
+@files\ports\use=gzdoom-32.lst

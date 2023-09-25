@@ -3,19 +3,45 @@ files\launcher.exe
 files\tools\xdelta3\
 
 @files\wads\conversions\freedoom\include.lst
-files\wads\doom.ini
-files\wads\doom2.ini
-files\wads\tnt.ini
-files\wads\plutonia.ini
-
-@files\ports\use=doom-retro.lst
-@files\ports\use=prboom-plus.lst
-@files\ports\use=gzdoom.lst
-@files\ports\use=zdoom.lst
 
 pages\Home #??.dosmag
 pages\2017 Cacowards #??.dosmag
 
+# page 3:
+@files\wads\episodes\lilith\include.lst
+# page 4:
+@files\wads\episodes\sotnr\include.lst
+# page 5:
+@files\wads\megawads\neis\include.lst
+# page 6:
+@files\wads\onesies\dead.air\include.lst
+# page 7:
+@files\wads\onesies\Brigandine\include.lst
+# page 8:
+@files\wads\episodes\mek-catk\include.lst
+# page 9:
+@files\wads\episodes\legher\include.lst
+# page 10:
+@files\wads\onesies\satchap\include.lst
+# page 11:
+@files\wads\episodes\sd20x7\include.lst
+# page 12:
+@files\wads\onesies\RAINBOW\include.lst
+# page 13:
+@files\wads\conversions\ROTWB\include.lst
+@files\wads\episodes\hadrone2\include.lst
+@files\wads\megawads\tntr\include.lst
+@files\wads\onesies\njwlgzd\include.lst
+@files\wads\episodes\disjunct\include.lst
+@files\wads\episodes\curse2\include.lst
+@files\wads\people\burabojunior\watrsp\include.lst
+@files\wads\episodes\d2hs-lutz\include.lst
+@files\wads\onesies\dt-lutz\include.lst
+# page 15:
+@files\wads\onesies\TheGiven\include.lst
+
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
 files\demos\30nm2154\
 files\demos\30uv1845\
 files\demos\30pl1958\
@@ -24,55 +50,3 @@ files\demos\30av9321\
 files\wads\megawads\av\
 files\demos\p2m81242\
 files\demos\pa02-2057\
-
-pages\lilith.pk3.dosmag
-files\wads\episodes\lilith\
-pages\Shadows of the Nightmare Realm.dosmag
-files\wads\episodes\sotnr\
-
-pages\DTWiD Series #??.dosmag
-files\wads\megawads\DTWiD\**
-pages\No End in Sight.dosmag
-files\wads\megawads\neis\
-
-pages\dead.air.dosmag
-files\wads\onesies\dead.air\
-pages\dead.wire.dosmag
-files\wads\onesies\xa-dwire
-
-pages\Brigandine.dosmag
-files\wads\onesies\Brigandine\
-pages\Counterattack.dosmag
-files\wads\episodes\mek-catk\
-pages\Legacy of Heroes.dosmag
-files\wads\episodes\legher\
-pages\Saturnine Chapel.dosmag
-files\wads\onesies\satchap\
-pages\Stardate 20x7.dosmag
-files\wads\episodes\sd20x7\
-pages\Void and Rainbow.dosmag
-files\wads\onesies\RAINBOW\
-
-pages\Rise of the Wool Ball.dosmag
-files\wads\conversions\ROTWB\
-pages\Shadow Of The Wool Ball.dosmag
-files\wads\conversions\ShadowOfTheWoolBall\
-
-pages\Return to Hadron Episode 2.dosmag
-files\wads\episodes\hadrone2\
-pages\TNT - Revilution.dosmag
-files\wads\megawads\tntr\
-pages\Waterlab GZD.dosmag
-files\wads\onesies\njwlgzd\
-pages\Disjunction.dosmag
-files\wads\episodes\disjunct\
-pages\Hexen - Curse of the Lost Gods.dosmag
-files\wads\episodes\curse2\
-pages\Water Spirit.dosmag
-files\wads\people\burabojunior\watrsp\
-pages\DOOM II - Hellscape.dosmag
-files\wads\episodes\d2hs-lutz\
-pages\Dark Tide.dosmag
-files\wads\onesies\dt-lutz\
-pages\The Given.dosmag
-files\wads\onesies\TheGiven\

@@ -4,94 +4,81 @@ $TITLE=Index
 ^C:2016 CACOWARDS :: INDEX
 
 :-------------------------------------------------------------------------------
-(Indented pages are cross-references and not a direct part of Cacowards 2016)
 
 :TOP TEN:
 
-$KEY:A=GOTO:John Romero's Episode 1 #03
-- [A] *Tech Gone Bad* 								_John Romero_
+$KEY:0=GOTO:John Romero's Episode 1 #03
+- [0] *Tech Gone Bad* 								_John Romero_
 
-$KEY:B=GOTO:Ancient Aliens
-- [B] *Ancient Aliens								_Paul "skillsaw" DeBruyne_
+$KEY:1=GOTO:Ancient Aliens
+- [1] *Ancient Aliens								_Paul "skillsaw" DeBruyne_
 
-$KEY:C=GOTO:Nihility
-$KEY:D=GOTO:DTWiD Series
-$KEY:E=GOTO:No End in Sight
-$KEY:F=GOTO:Erkatane
-$KEY:G=GOTO:50 Shades of Graytall
-- [C] *Nihility: Infinite Teeth						_Years_
-   └→ [D] *Doom the Way id Did Series				Various
-      [E] *No End in Sight							_Emil_, _Xaser_, _Chris Lutz_
-      [F] *Erkatane									_Nicolas Monti_
-      [G] *50 Shades of Graytall					Various
+$KEY:2=GOTO:Nihility
+- [2] *Nihility: Infinite Teeth						_Years_
 
-$KEY:H=GOTO:Mutiny
-- [H] *Mutiny										Various
+$KEY:3=GOTO:Mutiny
+- [3] *Mutiny										Various
 
-$KEY:I=GOTO:Absolutely Killed
-- [I] *Absolutely Killed							_Ryath_/_scwiba_
+$KEY:4=GOTO:Absolutely Killed
+- [4] *Absolutely Killed							_Ryath_/_scwiba_
 
-$KEY:J=GOTO:Elf Gets Pissed
-- [J] *Elf Gets Pissed								_RottKing_
+$KEY:5=GOTO:Elf Gets Pissed
+- [5] *Elf Gets Pissed								_RottKing_
 
-$KEY:K=GOTO:Comatose
-- [K] *Comatose										_Lainos_
+$KEY:6=GOTO:Comatose
+- [6] *Comatose										_Lainos_
 
-$KEY:L=GOTO:Miasma
-- [L] *Miasma										_tourniquet_
+$KEY:7=GOTO:Miasma
+- [7] *Miasma										_tourniquet_
 
-$KEY:M=GOTO:Alpha Accident - Terra Nova
-- [M] *Alpha Accident: Terra Nova					_Wraith777_
+$KEY:8=GOTO:Alpha Accident - Terra Nova
+- [8] *Alpha Accident: Terra Nova					_Wraith777_
 
-$KEY:N=GOTO:Japanese Community Project
-- [N] *Japanese Community Project					Various
+$KEY:9=GOTO:Japanese Community Project
+- [9] *Japanese Community Project					Various
 
-$KEY:O=GOTO:Blade of Agony
-- [O] *WolfenDoom - Blade of Agony Ep.1				_Daniel Gimmer_ et al
+$KEY:X=GOTO:Blade of Agony
+- [X] *WolfenDoom - Blade of Agony Ep.1				_Daniel Gimmer_ et al
 
 :RUNNERS UP:
 
-$KEY:P=GOTO:Warp House
-- [P] *Warp House									_Ed C._
+$KEY:A=GOTO:Warp House
+- [A] *Warp House									_Ed C._
 
-$KEY:Q=GOTO:THT - Threnody
-- [Q] *THT: Threnody								Various
+$KEY:B=GOTO:THT - Threnody
+- [C] *THT: Threnody								Various
 
-$KEY:R=GOTO:Bloodstain
-- [R] *Bloodstain									_Pavel 'Pipicz' Tvrzník_
+$KEY:D=GOTO:Bloodstain
+- [D] *Bloodstain									_Pavel 'Pipicz' Tvrzník_
 
-$KEY:S=GOTO:Strange Aeons
-- [S] *Strange Aeons								_Impie_
+$KEY:E=GOTO:Strange Aeons
+- [E] *Strange Aeons								_Impie_
 
-$KEY:T=GOTO:Echelon
-- [T] *Echelon										_Sverre Andre Kvernmo_
+$KEY:F=GOTO:Echelon
+- [F] *Echelon										_Sverre Andre Kvernmo_
 
-$KEY:U=GOTO:Shadow of the Wool Ball
-- [U] *Shadow of the Wool Ball						_MSPaintR0cks_
+$KEY:G=GOTO:Shadow of the Wool Ball
+- [G] *Shadow of the Wool Ball						_MSPaintR0cks_
 
 :MULTIPLAYER AWARDS:
 
-$KEY:V=GOTO:Aeon Deathmatch
-$KEY:W=GOTO:Don't Be a Bitch Remastered
-- [V] *AeonDM										_Mechanix Union_
-   └→ [W] *Don't Be a Bitch Remastered				_Mechanix Union_
+$KEY:H=GOTO:Aeon Deathmatch
+- [H] *AeonDM										_Mechanix Union_
 
-$KEY:X=GOTO:32in24-16
-- [X] *32in24-16									_YEDS gang_
+$KEY:I=GOTO:32in24-16
+- [I] *32in24-16									_YEDS gang_
 
 :BEST GAMEPLAY MOD:
 
-$KEY:Y=GOTO:DOOM(4) for DooM
-- [Y] *Doom 4 Doom									_DBThanatos_ et al.
+$KEY:J=GOTO:DOOM(4) for DooM
+- [J] *Doom 4 Doom									_DBThanatos_ et al.
 
 :MORDETH AWARD:
 
-$KEY:Z=GOTO:DTWiD Series #03
-- [Z] *Doom the Way id Did - The Lost Episodes		Various
-   └→ [D] *Doom the Way id Did Series				Various
-      [E] *No End in Sight							_Emil_, _Xaser_, _Chris Lutz_
+$KEY:K=GOTO:DTWiD Series #03
+- [K] *Doom the Way id Did - The Lost Episodes		Various
 
 :MOCKAWARD:
 
-$KEY:1=GOTO:Luducrium
-- [1] *Luducrium									_antares031_
+$KEY:L=GOTO:Luducrium
+- [L] *Luducrium									_antares031_

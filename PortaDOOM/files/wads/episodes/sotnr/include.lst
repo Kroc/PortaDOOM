@@ -1,0 +1,4 @@
+pages\Shadows of the Nightmare Realm.dosmag
+files\wads\episodes\sotnr\
+# requires GZDoom v2.4+
+@files\ports\use=gzdoom-24.lst

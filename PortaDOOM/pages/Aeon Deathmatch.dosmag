@@ -1,8 +1,7 @@
 $NAV=Multiplayer
 $KEY:T=SHELL:wads\multiplayer\aeondm\aeondm.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
-$KEY:1=GOTO:Don't Be A Bitch Remastered
-$KEY:2=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic
+$KEY:1=URL:http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic
 
 :Aeon Deathmatch                                    * 2016 Cacoward Winner! *
 :===============================================================================
@@ -21,7 +20,7 @@ $KEY:D=URL:http://doomseeker.drdteam.org/
 - 33 maps suitable for Team/Last Man Standing
 - Recommended to use Eon Weapons, ClassicLMS, or Vanilla weapons
 - Different skill levels change the weapons. Nightmare for Eon Weapons, vanilla the rest
-- Recommended to run with *[1] DbabRM*
+- Recommended to run with `DbabRM`
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -39,7 +38,7 @@ $KEY:D=URL:http://doomseeker.drdteam.org/
 *Special Thanks:
 
 - _Jan Van der Veken_, _Espi_, _Nightmare_, _Cage_, _Eriance_, _Vader_, _Dr3k_, _GothicDM_, _CounterStrike_, _David Gevert_, _DrDoctor_, _Ola Bjorn_?
-- The many unspecified authors of the Ocarina of Time Community Retexture Project which can be found [2: here]: http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic*
+- The many unspecified authors of the Ocarina of Time Community Retexture Project which can be found [1: here]: http://www.emutalk.net/threads/51481-Zelda-Ocarina-of-time-Community-Retexture-Project-V6-Development-Topic*
 - _Esselfortium_ and _Mechadon_ (SpaceDm9 Resources), _Skillsaw_ (Ancient Aliens Textures), _[IFOC]75_, _Chukker_ and _Arch129_ (for the Chex Quest Green Metal textures), _Eriance_ made the sprites for the abyss hornet that's in the Hive map, Kingpin textures (_R667_), _KDiZD Team_ for the sitting corpses in Aeon 19, Mojang for Minecraft textures, Quake 1-3, Blood, Shadow Warrior, Space Engine for the skyboxes
 - Star Trek: TNG, American Mcgee's "Alice", Dr Dre for the "High Powered" Beat
 - We apologize for anybody's resources used but not properly credited

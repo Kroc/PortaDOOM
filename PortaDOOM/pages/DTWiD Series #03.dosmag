@@ -6,7 +6,6 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
 $KEY:1=PAGE:#01
 $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
-$KEY:N=GOTO:No End in Sight
 
 :Doom the Way id Did: The Lost Episodes             * 2016 Cacoward Winner! *
 :===============================================================================
@@ -131,10 +130,10 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
   [2: http://static.angryscience.net/doom/pd1-anom.zip]
 
 - E1M8 *"Enigma"				by _NaturalTvventy
-= E1M8 of *[N] No End in Sight*
+= E1M8 of `No End in Sight`
 
 - E4M6  *"Forgotten Caverns"	by _NaturalTvventy_
-= E3M5 of *[N] No End in Sight*
+= E3M5 of `No End in Sight`
 
 - E5M7  *"Cold Steel"			by _Mr. Chris_ + _Mr. Freeze_
 = Available standalone at:

@@ -3,7 +3,7 @@ $TITLE=A Useful DOOM Glossary
 
 :A Useful DOOM Glossary
 :===============================================================================
-Early 90s computer limits and over 20 years of community-driven history will naturally generate a lot of unique language! Here's a list of the most pertinent terms you'll come across throughout PortaDOOM.
+Early 90s computer limits and over 20 years of community-driven history will naturally generate a lot of unique language! Here's a list of the most pertinent terms you'll come across throughout `PortaDOOM`.
 
 :* # *
 :-------------------------------------------------------------------------------
@@ -31,6 +31,8 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 *Chocolate-Hexen,	original MS-DOS executables for DOOM, *Heretic*, *Hexen* &
 *Chocolate-Strife	*Strife*, including *visplane* limits.
 
+*Crispy-Doom*		A *source-port* based on *Chocolate-Doom* by _Fabian Greffrath_ that increases resolution and removes the hard engine limits in the original game.
+
 :* D *
 :-------------------------------------------------------------------------------
 
@@ -44,7 +46,9 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *DOOM2.WAD			The *WAD* (package) file containing all the data/sound/graphic resources for DOOM II. This is the most common *IWAD* used for community content (*PWAD*).
 
-*DOOM-Clone			The term "First Person Shooter" didn't exist at the launch of DOOM in 1993 because DOOM is what popularised the genre in the first place. For a long time FPSes were called "DOOM-clones". It's only with the advent of story-driven narrative (i.e. Half Life) that the term FPS took hold.
+*DOOM-Clone			The term "First Person Shooter" didn't exist at the launch of DOOM in 1993 because DOOM is what popularised the genre in the first place. For a long time FPSes were called "DOOM-clones". It's only with the advent of story-driven narratives (e.g. Half Life) that the term FPS took hold.
+
+*DOOM Retro			A *source port* by _Brad Harding_ that retains the old-school look but greatly polishes and modernises the experience. Includes support for *Boom* and *MBF*/*MBF21*
 
 :* E *
 :-------------------------------------------------------------------------------
@@ -60,7 +64,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *GLBoom+			The hardware-accelerated OpenGL version of *PRBoom+*.
 
-*GZDoom				A modern *source port* with many additional capabilites including 3D floors, 3D models and enhanced OpenGL graphics. Created and maintained by _Graf Zahl_. See also *ZDoom*.
+*GZDoom				A modern *source port* with many additional capabilities including 3D floors, 3D models and enhanced OpenGL graphics. Created and maintained by _Graf Zahl_. See also *ZDoom*.
 
 :* H *
 :-------------------------------------------------------------------------------
@@ -68,7 +72,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 *Hall of Mirrors,
 *HOM				A visual glitch caused by surfaces without a texture assigned, showing the frame-buffer underneath; an infinite-mirror like effect of previous frames.
 
-*Heretic			High-fantasy commercial *'doom-clone'* released Decemeber 1994. Notable for adding an inventory system to the DOOM engine.
+*Heretic			High-fantasy commercial *'doom-clone'* released December 1994. Notable for adding an inventory system to the DOOM engine.
 
 *Hexen				Sequel to *Heretic* released October 1995. Created *ACS* for defining interactivity. Notable for its "hub" system that let you choose the order of maps to play.
 
@@ -82,16 +86,16 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :* J *
 :-------------------------------------------------------------------------------
 
-*Joke WAD			A *WAD* created as an ironic or satiric joke, the most famous of which is probably *NUTS.WAD*.
+*Joke WAD			A *WAD* created as an ironic or satiric joke, the most famous of which is probably *NUTS.WAD*. See also *terrywads*; troll WADs.
 
 :* K *
 :-------------------------------------------------------------------------------
 :* L *
 :-------------------------------------------------------------------------------
 
-*Linedef			Technical detail of DOOM mapping, a linedef is a line between two points in a map. Meta-data known as a *sidedef* determines if the line is a wall (and which textures to use) or a division between two *segments*
+*Linedef			Technical detail of DOOM mapping, a linedef is a line between two points in a map. Meta-data known as a *sidedef* determines if the line is a wall (and which textures to use) or a division between two *segments*.
 
-*Lump, LMP			A block of data in a *WAD* file, e.g. a single texture, a sound, a map and so on. Often abbreviated "LMP"
+*Lump, LMP			A block of data in a *WAD* file, e.g. a single texture, a sound, a map and so on. Often abbreviated "LMP".
 
 :* M *
 :-------------------------------------------------------------------------------
@@ -100,6 +104,8 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 *for DOOM II		Expansion pack for DOOM II released December 1995 consisting of 21 extra-difficult levels created by the community.
 
 *MBF				"Marine's Best Friend", a *source-port* that came after *boom*. Extended some limits and *DeHackEd* support further. Most modern engines support the MBF additions.
+
+*MBF21*				A 2021 update to the *MBF* spec to increase capabilities and fix limitations so that authors still have an option for advanced, non scripting-based, mapping.
 
 *MegaWAD			A single *WAD* containing 15 or more maps. Typically the work of multiple mappers, a megawad can take years to make and perfect. Depending on the level of divergence from standard DOOM gameplay a megawad might be classed as a *total conversion*.
 
@@ -143,7 +149,9 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :* T *
 :-------------------------------------------------------------------------------
 
-*TeamTNT			A team of mappers founded by _Ty Halderman_. TeamTNT created *TNT: Evilution* and *The Plutonia Experiment*, the *megawads* that made up *Final DOOM*. Also responsible for the highly influential *"boom"* *source-port*
+*TeamTNT			A team of mappers founded by _Ty Halderman_. TeamTNT created *TNT: Evilution* and *The Plutonia Experiment*, the *megawads* that made up *Final DOOM*. Also responsible for the highly influential *"boom"* *source-port*.
+
+*Terrywad*			Troll *WADs* designed to annoy or otherwise harass players, usually consisting of jump-scares and sometimes even ZIP-bombs. Tangentially related to *Joke WADs*.
 
 *The Ultimate DOOM	Commercial re-release of the original DOOM with an additional episode "Thy Flesh Consumed".
 
@@ -167,7 +175,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :* W *
 :-------------------------------------------------------------------------------
 
-*WAD				"Where's All the Data", a file format DOOM uses for packaging together all the resources (*Lumps*) of a game. See also *IWAD* & *PWAD*
+*WAD				"Where's All the Data", a file format DOOM uses for packaging together all the resources (*Lumps*) of a game. See also *IWAD* & *PWAD*.
 
 :* X *
 :-------------------------------------------------------------------------------
