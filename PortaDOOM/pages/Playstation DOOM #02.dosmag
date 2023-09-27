@@ -4,6 +4,8 @@ $NAV=Total Conversions
 *NOTE:* Maps marked by "*└→*" are secret levels accessible from the previous level. After completing a secret level you will be transported to the next level. Secret levels can contain secret levels!
 
 :Name			Title					Source, Authors
+:===============================================================================
+:The Ultimate DOOM
 :-------------------------------------------------------------------------------
 map01			*Hangar					DOOM E1M1 (Jaguar)
 map02			*Plant					DOOM E1M2 (Jaguar)
@@ -48,6 +50,8 @@ lost05			*And Hell Followed		DOOM E4M7, _Avoozl_
 *└→* map30		*Threshold of Pain		PSX Only
 map28			*Unto The Cruel			DOOM E4M8
 :-------------------------------------------------------------------------------
+: DOOM II: Hell on Earth
+:-------------------------------------------------------------------------------
 map31			*Entryway				DOOM2 MAP01
 map32			*Underhalls				DOOM2 MAP02
 map33			*The Gauntlet			DOOM2 MAP03
@@ -85,6 +89,8 @@ lost12			*The Living End			DOOM2 MAP29, _Salahmander2_
 map54			*Redemption Denied		PSX Only
 lost61c			*Icon of Sin			DOOM2 MAP30, _BaronOfStuff_
 :-------------------------------------------------------------------------------
+: The Master Levels
+:-------------------------------------------------------------------------------
 map61			*Attack					Master Levels
 map62			*Virgil					Master Levels
 map63			*Canyon					Master Levels
@@ -106,7 +112,9 @@ map73			*Vesperas				Master Levels
 lost18			*Black Keep				Master Levels (Black Tower), _DeXiaZ_
 lost19			*Elevator to Hell		Master Levels, _pcorf_
 *└→* lost68		*Bad Dream				Master Levels, _BaronOfStuff_
-:-------------------------------------------------------------------------------  
+:-------------------------------------------------------------------------------
+: Final DOOM: TNT
+:-------------------------------------------------------------------------------
 map74			*System Control			TNT MAP01
 map75			*Human Barbecue			TNT MAP02
 lost20			*Power Control			TNT MAP03, _Salahmander2_
@@ -141,7 +149,9 @@ lost36			*Mount Pain				TNT MAP27, _DeXiaZ_
 map84			*Heck					TNT MAP28
 lost37			*River Styx				TNT MAP29, _Cryo_
 lost61a			*Last Call				TNT MAP30, _BaronOfStuff_
-:-------------------------------------------------------------------------------  
+:-------------------------------------------------------------------------------
+: Final DOOM: The Plutonia Experiment
+:-------------------------------------------------------------------------------
 map85			*Congo					Plutonia MAP01
 lost38			*Well of Souls			Plutonia MAP02, _Dragonsbrethren_
 map86			*Aztec					Plutonia MAP03

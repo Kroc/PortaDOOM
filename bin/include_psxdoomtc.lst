@@ -1,15 +1,18 @@
 PortaDOOM.exe
 files\launcher.exe
-
-files\wads\doom2.ini
-@files\wads\conversions\freedoom\include.lst
-files\wads\conversions\PSX\
-
 files\tools\xdelta3\
 
-files\config\default.gzdoom.ini
-
-files\ports\gzdoom_*\
+# include FreeDOOM (does not include any engines)
+@files\wads\conversions\freedoom\include.lst
 
 pages\Home #??.dosmag
 pages\PlayStation DOOM #??.dosmag
+
+# use only GZDoom!
+@files\ports\use=gzdoom.lst
+
+# only DOOM2 IWAD required
+files\wads\doom2.ini
+
+files\wads\conversions\PSX\
+
