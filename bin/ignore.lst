@@ -60,7 +60,7 @@ skins/
 default.cfg
 chocolate-*.cfg
 glboom-plus.cfg
-gzdoom-*.ini
+gzdoom*.ini
 prboom-plus.cfg
 zdoom-*.ini
 zandronum-*.ini

@@ -1,0 +1,12 @@
+files\ports\gzdoom-103\
+files\config\default.gzdoom-103.ini
+
+# which IWADs this engine supports:
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
+files\wads\heretic.ini
+files\wads\hexen.ini
+files\wads\strife1.ini
+files\wads\chex.ini

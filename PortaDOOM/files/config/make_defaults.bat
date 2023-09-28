@@ -149,37 +149,38 @@ ECHO ----------------------------------------
 REM # GZDoom
 REM #===========================================================================
 :gzdoom-all
-CALL :gzdoom_any 99
-CALL :gzdoom_any 49
-CALL :gzdoom_any 48
-CALL :gzdoom_any 47
-CALL :gzdoom_any 46
-CALL :gzdoom_any 45
-CALL :gzdoom_any 44
-CALL :gzdoom_any 43
-CALL :gzdoom_any 42
-CALL :gzdoom_any 41
-CALL :gzdoom_any 37
-CALL :gzdoom_any 36
-CALL :gzdoom_any 35
-CALL :gzdoom_any 34
-CALL :gzdoom_any 33
-CALL :gzdoom_any 32
-CALL :gzdoom_any 24
-CALL :gzdoom_any 23
-CALL :gzdoom_any 22
-CALL :gzdoom_any 21
-CALL :gzdoom_any 20
-CALL :gzdoom_any 19
-CALL :gzdoom_any 18
-CALL :gzdoom_any 17
-CALL :gzdoom_any 16
-CALL :gzdoom_any 15
-CALL :gzdoom_any 14
-CALL :gzdoom_any 13
-CALL :gzdoom_any 12
-CALL :gzdoom_any 11
-CALL :gzdoom_any 10
+CALL :gzdoom_any 999
+CALL :gzdoom_any 410
+CALL :gzdoom_any 409
+CALL :gzdoom_any 408
+CALL :gzdoom_any 407
+CALL :gzdoom_any 406
+CALL :gzdoom_any 405
+CALL :gzdoom_any 404
+CALL :gzdoom_any 403
+CALL :gzdoom_any 402
+CALL :gzdoom_any 401
+CALL :gzdoom_any 307
+CALL :gzdoom_any 306
+CALL :gzdoom_any 305
+CALL :gzdoom_any 304
+CALL :gzdoom_any 303
+CALL :gzdoom_any 302
+CALL :gzdoom_any 204
+CALL :gzdoom_any 203
+CALL :gzdoom_any 202
+CALL :gzdoom_any 201
+CALL :gzdoom_any 200
+CALL :gzdoom_any 109
+CALL :gzdoom_any 108
+CALL :gzdoom_any 107
+CALL :gzdoom_any 106
+CALL :gzdoom_any 105
+CALL :gzdoom_any 104
+CALL :gzdoom_any 103
+CALL :gzdoom_any 102
+CALL :gzdoom_any 101
+CALL :gzdoom_any 100
 
 
 REM # ZDoom
@@ -420,47 +421,50 @@ GOTO:EOF
 :gzdoom_any
 REM #===========================================================================
 REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
-REM #	      99 = default (i.e. "gzdoom.ini")
+REM #	      999 = default (i.e. "gzdoom.ini")
 REM #---------------------------------------------------------------------------
-IF %~1 EQU 99 SET "INI=gzdoom"
-IF %~1 LSS 99 SET "INI=gzdoom-%~1"
+IF %~1 EQU 999 SET "INI=gzdoom"
+IF %~1 LSS 999 SET "INI=gzdoom-%~1"
 SET DEFAULT_INI="default.%INI%.ini"
 
 SET "VER=%~1"
-IF %~1 EQU 99 SET "VER=    "
-IF %~1 LSS 99 SET "VER=v%VER:~0,1%.%VER:~1,1%"
+IF %~1 EQU 999 SET "VER=     "
+REM # (if the middle digit is 0, remove it, i.e. 401 = "v4.1")
+IF %~1 LSS 999 IF "%VER:~1,1%" == "0" SET "VER=%VER:~0,1%%VER:~2,1% "
+REM # construct a printable version number
+IF %~1 LSS 999 SET "VER=v%VER:~0,1%.%VER:~1,2%"
 
 REM # delete the file in order to re-build it
 IF EXIST %DEFAULT_INI% GOTO:EOF
 
-ECHO * GZDoom %VER%                DOOM.WAD
+ECHO * GZDoom %VER%               DOOM.WAD
 CALL :make_gzdoom %~1 "DOOM.WAD"
-ECHO * GZDoom %VER%                HERETIC.WAD
+ECHO * GZDoom %VER%               HERETIC.WAD
 CALL :make_gzdoom %~1 "HERETIC.WAD"
-ECHO * GZDoom %VER%                HEXEN.WAD
+ECHO * GZDoom %VER%               HEXEN.WAD
 CALL :make_gzdoom %~1 "HEXEN.WAD"
-ECHO * GZDoom %VER%                STRIFE1.WAD
+ECHO * GZDoom %VER%               STRIFE1.WAD
 CALL :make_gzdoom %~1 "STRIFE1.WAD"
 REM # Chex support first appears in v1.1
-IF %~1 GEQ 11 (
-	ECHO * GZDoom %VER%                CHEX.WAD
+IF %~1 GEQ 101 (
+	ECHO * GZDoom %VER%               CHEX.WAD
 	CALL :make_gzdoom %~1 "CHEX.WAD"
 )
 REM # from GZDoom v1.5 we gain support for Harmony.
 REM # technically v1.4 supports it, but it doesn't
 REM # populate the config defaults as expected
-IF %~1 GEQ 15 (
-	ECHO * GZDoom %VER%                HARM1.WAD
+IF %~1 GEQ 105 (
+	ECHO * GZDoom %VER%               HARM1.WAD
 	CALL :make_gzdoom %~1 "HARM1.WAD"
 )
 REM # Rise Of The Wool Ball support from v3.2 onwards
-IF %~1 GEQ 32 (
-	ECHO * GZDoom %VER%                ROTWB.WAD
+IF %~1 GEQ 302 (
+	ECHO * GZDoom %VER%               ROTWB.WAD
 	CALL :make_gzdoom %~1 "ROTWB.WAD"
 )
 REM # Adventures of Square support from v3.3 onwards
-IF %~1 GEQ 33 (
-	ECHO * GZDoom %VER%                SQUARE1.PK3
+IF %~1 GEQ 303 (
+	ECHO * GZDoom %VER%               SQUARE1.PK3
 	CALL :make_gzdoom %~1 "SQUARE1.PK3"
 )
 ECHO ----------------------------------------
@@ -470,11 +474,11 @@ GOTO:EOF
 :make_gzdoom
 REM #===========================================================================
 REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
-REM #	      99 = default (i.e. "gzdoom.ini")
+REM #	      999 = default (i.e. "gzdoom.ini")
 REM #    %2 = IWAD
 REM #---------------------------------------------------------------------------
-IF %~1 EQU 99 SET "INI=gzdoom"
-IF %~1 LSS 99 SET "INI=gzdoom-%~1"
+IF %~1 EQU 999 SET "INI=gzdoom"
+IF %~1 LSS 999 SET "INI=gzdoom-%~1"
 SET DEFAULT_INI="default.%INI%.ini"
 SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
@@ -484,31 +488,31 @@ START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
 REM # (this first appeared in v4.2 and appears now and again)
-IF %~1 GEQ 42 IF %~1 LSS 49 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
+IF %~1 GEQ 402 IF %~1 LSS 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
 REM # different field name for v4.9, because of course it is
-IF %~1 GEQ 49 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled49" "0"
+IF %~1 EQU 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled49" "0"
 
 REM # VSync ON
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
 REM # "fullscreen" field is used before v4.4
 REM # (fullscreen isn't default from v2.2 to v3.4)
-IF %~1 LSS 44 %CONFIG_DEFAULT% SET "[GlobalSettings]" "fullscreen" "true"
+IF %~1 LSS 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "fullscreen" "true"
 REM # from v4.4 the field has changed to "vid_fullscreen"
-IF %~1 GEQ 44 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_fullscreen" "true"
+IF %~1 GEQ 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_fullscreen" "true"
 
 REM # Texture Filtering: Nearest (Linear Mipmap) is supported from v1.5 onwards;
 REM # (graphics break if this is applied to earlier versions)
-IF %~1 GEQ 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "5"
+IF %~1 GEQ 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "5"
 REM # use "Mipmapped" for earlier versions
-IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "1"
+IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "1"
 REM # enable cross-hair, type 2 (this is in GlobalSettings before v1.5)
-IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
+IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
 REM # full-screen HUD (this is in GlobalSettings before v1.3)
-IF %~1 LSS 13 %CONFIG_DEFAULT% SET "[GlobalSettings]" "screenblocks" "11"
+IF %~1 LSS 103 %CONFIG_DEFAULT% SET "[GlobalSettings]" "screenblocks" "11"
 REM # cross hair 1:1 pixels (no-scale), added in v1.2
-IF %~1 GEQ 12 (
+IF %~1 GEQ 102 (
 	REM # moved from GlobalSettings to per-game in v.1.5
-	IF %~1 LSS 15 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
+	IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
 )
 
 REM # mouse-look by default
@@ -535,16 +539,16 @@ REM # use "standard" light mode instead of "dark"
 REM # automap, show item-count
 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_showitems" "true"
 REM # use system mouse cursor (cursor was added in v1.5)
-IF %~1 GEQ 15 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "-"
+IF %~1 GEQ 105 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "-"
 REM # full-screen HUD (this is per-game from v1.3)
-IF %~1 GEQ 13 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "screenblocks" "11"
+IF %~1 GEQ 103 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "screenblocks" "11"
 REM # UI scale defaults to 2 between v2.2 & v3.x
 REM # this is better set to 0 (auto), which is the default from v4+
-IF %~1 GEQ 22 IF %~1 LSS 40 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "uiscale" "0"
+IF %~1 GEQ 202 IF %~1 LSS 400 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "uiscale" "0"
 REM # HUD auto-scale (v2.1-)
-IF %~1 LEQ 21 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "true"
+IF %~1 LEQ 201 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "true"
 REM # HUD auto-scale (v2.2+)
-IF %~1 GEQ 22 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "-1"
+IF %~1 GEQ 202 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "hud_scale" "-1"
 REM # status bar auto-scale
 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "st_scale" "-1"
 REM # there's no auto message-scale, 2 makes it readable without being too big
@@ -553,13 +557,13 @@ REM # enable cross-hair, type 2 (this is per-game from v1.5)
 IF %~1 GEQ 15 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshair" "2"
 REM # cross hair 1:1 pixels (no-scale), becomes per-game in v1.5
 REM # from v1.2 to v2.1 it is a boolean true/false value
-IF %~1 GEQ 15 IF %~1 LEQ 21 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "false"
+IF %~1 GEQ 105 IF %~1 LEQ 201 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "false"
 REM # in v2.2+ it becomes a value
-IF %~1 GEQ 15 IF %~1 GEQ 22 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "0"
+IF %~1 GEQ 105 IF %~1 GEQ 202 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "0"
 
 REM # set controls:
 REM # NOTE: from GZDoom v4.0+, fields are capitalised
-IF %~1 GEQ 40 (
+IF %~1 GEQ 400 (
 	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "E" "+use"
 	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Q" "+zoom"
 	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "R" "+reload"
