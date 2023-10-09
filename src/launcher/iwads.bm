@@ -17,19 +17,19 @@
 '   IWADs_GetRegistryPath$(key$, value$, path$) -> STRING
 '   IWADs_Select()
 
-'match an IWAD file name to its meta-data entry (load meta-data if necessary)
+'match an IWAD name to its meta-data entry (load meta-data if necessary)
 'returns an index into `IWADs` array, or 0 for not-found
 '=============================================================================
-FUNCTION IWADs_FindMeta&(file_path$)
+FUNCTION IWADs_FindMeta&(iwad$)
     'quick-out for in-lining
-    IF file_path$ = "" THEN EXIT FUNCTION
+    IF iwad$ = "" THEN EXIT FUNCTION
 
     'note that `file_path$` could be a full path, even absolute;
     'take just the file-name to search. it's assumed that all IWADs have
     'have unique file-names, something the DOOM community does adhere to
     
     DIM file_name$
-    LET file_name$ = UCASE$(Paths_GetFileName$(file_path$))
+    LET file_name$ = UCASE$(Paths_GetFileName$(iwad$))
     
     'if there are no IWADs defined, we'll have to go straight to disk
     IF IWADs_Count = 0 THEN GOTO loadMetaData
@@ -63,6 +63,7 @@ loadMetaData:
     
     'load IWAD meta-data from the INI file (if present)
     'TODO: if no IWAD meta-data file found, build some rough data ad-hoc?
+    'TODO: check the current INI file when reading from a game definition
     LET IWADs_FindMeta& = IWADs_EnumerateINI&(ini_file$)
     
     'TODO: was meta-data found?
@@ -122,6 +123,7 @@ readINI:
         CASE "DOOM64": LET iwad_type% = TYPE_DOOM64
         CASE "HARM1": LET iwad_type% = TYPE_HARM1
         CASE "ROTWB": LET iwad_type% = TYPE_ROTWB
+        CASE "IWAD", "IPK3": LET iwad_type% = TYPE_IPK3
         CASE ELSE
             LET iwad_type% = TYPE_DOOM2
     END SELECT
@@ -203,39 +205,52 @@ FUNCTION IWADs_GetPath$(iwad$)
     DIM iwad_path$
     LET iwad_path$ = iwad$
     
+    'look for an IWAD ini file that gives the path
+    DIM iwad_id&
+    LET iwad_id& = IWADs_FindMeta&(iwad$)
+    IF iwad_id& > 0 THEN
+        'use the IWAD path given in the IWAD ini definition
+        LET iwad$ = IWADs(iwad_id&).path
+    END IF
+    
     'is the given path absolute?
-    IF Paths_IsAbsolute(iwad_path$) THEN
+    IF Paths_IsAbsolute(iwad$) THEN
         'does the file exist?
-        IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
-    ELSE
-        'search for the file:
-        
-        'if game definitions were loaded
-        'from an INI file, check its path
-        IF DIR_INI$ <> "" THEN
-            LET iwad_path$ = DIR_INI$ + iwad$
-            IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+        IF _FILEEXISTS(iwad$) THEN
+            LET IWADs_GetPath$ = iwad$
+            EXIT FUNCTION
         END IF
-        
-        'check the 'current' directory
-        '-- i.e. the directory the launcher was called *from*
-        LET iwad_path$ = DIR_CUR$ + iwad$
-        IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
-        
-        'check the base WADs directory
-        LET iwad_path$ = DIR_WADS$ + iwad$
+    END IF
+    
+    'search for the file:
+    
+    'if game definitions were loaded
+    'from an INI file, check its path
+    IF DIR_INI$ <> "" THEN
+        LET iwad_path$ = DIR_INI$ + iwad$
         IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
     END IF
     
+    'check the 'current' directory
+    '-- i.e. the directory the launcher was called *from*
+    LET iwad_path$ = DIR_CUR$ + iwad$
+    IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+    
+    'check the base WADs directory
+    LET iwad_path$ = DIR_WADS$ + iwad$
+    IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
+    
+    PRINT iwad_path$: SLEEP
+    
     'if not found, look for Steam / GOG installations...
-    GOSUB iwadSteamGOG
+    GOSUB iwadInstalled
     
 iwadFound:
     'return what we've found
     LET IWADs_GetPath$ = iwad_path$
     EXIT FUNCTION
     
-iwadSteamGOG:
+iwadInstalled:
     '-------------------------------------------------------------------------
     SELECT CASE UCASE$(Paths_GetFileBaseName$(iwad$))
         CASE "DOOM": GOTO iwadDOOM
@@ -246,8 +261,14 @@ iwadSteamGOG:
         CASE "HEXEN": GOTO iwadHEXEN
         CASE "STRIFE1": GOTO iwadSTRIFE
         CASE ELSE
-            'FIXME: handle error here
-            SYSTEM 999
+            CALL UIErrorScreen_Begin("ERROR: IWAD Not Found!")
+                PRINT " The IWAD file:"
+                PRINT ""
+                PRINT " " + CHR$(34) _
+                   + RTRUNCATE$(iwad$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+                PRINT ""
+                PRINT " Could not be found."
+                CALL UIErrorScreen_End
     END SELECT
     
     RETURN

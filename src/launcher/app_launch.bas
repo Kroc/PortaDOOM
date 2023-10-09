@@ -251,7 +251,7 @@ END IF
 
 'games can also specify their own files to load
 'before the PWAD as sometimes load order is sensitive
-
+'-----------------------------------------------------------------------------
 IF Games_Selected.pre <> "" THEN
     'read the first file from the list
     LET file$ = Games_Selected.pre

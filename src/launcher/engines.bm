@@ -136,7 +136,7 @@ SUB Engines_Enumerate()
         LET shared_auto$ = ReadIniUTF8$(ini_path$, "global", "auto")
         DIM shared_cmd$
         LET shared_cmd$ = ReadIniUTF8$(ini_path$, "global", "cmd")
-            
+        
         'read each engine definition:
         '---------------------------------------------------------------------
         DIM ini_index%
@@ -309,7 +309,23 @@ SUB Engines_Enumerate()
             LET Engines(Engines_Count).rank = VAL(shared_rank$)
             
             IF ini_exe$ = "" THEN LET ini_exe$ = shared_exe$
-            IF ini_exe$ = "" THEN SYSTEM 9
+            IF ini_exe$ = "" THEN
+                CALL UIErrorScreen_Begin("ERROR: Invalid INI Definition")
+                PRINT " Type field missing in INI file:"
+                PRINT " " + CHR$(34) _
+                   + RTRUNCATE$(ini_path$, UI_SCREEN_WIDTH - 2) + CHR$(34)
+                PRINT ""
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "Engines require a type. The type is a combination of " _
+                    + "which IWADs are supported by the engine and can be " _
+                    + "any, all, or none of the following:"
+                PRINT ""
+                PRINTWRAP_X 2, UI_SCREEN_WIDTH - 2, _
+                    "DOOM, DOOM2, HERETIC, HEXEN, STRIFE, CHEX, HARM1, " _
+                    + "ROTWB, SQUARE1, IPK3, DOOM64"
+                GOSUB closeFile
+                CALL UIErrorScreen_End
+            END IF
             LET Engines(Engines_Count).exe = ini_exe$
             
             'deconstruct the version string into component numbers
@@ -317,7 +333,7 @@ SUB Engines_Enumerate()
             CALL STR2VER(ini_ver$, Engines(Engines_Count).ver)
             
             IF ini_bit$ = "" THEN LET ini_bit$ = shared_bit$
-            IF ini_bit$ = "" THEN SYSTEM 9
+            IF ini_bit$ = "" THEN LET ini_bit$ = "32"
             SELECT CASE ini_bit$
                 CASE "64"
                     LET Engines(Engines_Count).bit = 64
@@ -332,7 +348,7 @@ SUB Engines_Enumerate()
             END SELECT
             
             IF ini_vid$ = "" THEN LET ini_vid$ = shared_vid$
-            IF ini_vid$ = "" THEN SYSTEM 9
+            IF ini_vid$ = "" THEN LET ini_vid$ = "32"
             DIM vid AS _BYTE
             SELECT CASE ini_vid$
                 CASE "8": LET vid = 8
@@ -354,12 +370,15 @@ SUB Engines_Enumerate()
                 CASE ELSE
                     LET Engines(Engines_Count).kin = 0
             END SELECT
-            
+            'if no config name slug is given, use the engine's ID which
+            'typically includes the version number, e.g. "gzdoom-410"
             IF ini_cfg$ = "" THEN LET ini_cfg$ = shared_cfg$
-            IF ini_cfg$ = "" THEN SYSTEM 9
+            IF ini_cfg$ = "" THEN LET ini_cfg$ = ini_id$
             LET Engines(Engines_Count).cfg = ini_cfg$
+            'if no save path slug is given use the engine name which is
+            'usually shared across versions, e.g. "gzdoom"
             IF ini_save$ = "" THEN LET ini_save$ = shared_save$
-            IF ini_save$ = "" THEN SYSTEM 9
+            IF ini_save$ = "" THEN LET ini_save$ = shared_engine$
             LET Engines(Engines_Count).save = ini_save$
             IF ini_tags$ = "" THEN LET ini_tags$ = shared_tags$
             LET Engines(Engines_Count).tags = ini_tags$
@@ -709,15 +728,18 @@ FUNCTION Engines_GetType%(type$)
     DIM r%: LET r% = 0
     LET type$ = "," + UCASE$(type$) + ","
     
-    IF INSTR(type$, ",DOOM,") THEN LET r% = r% OR TYPE_DOOM
-    IF INSTR(type$, ",DOOM2,") THEN LET r% = r% OR TYPE_DOOM2
+    IF INSTR(type$, ",DOOM,"   ) THEN LET r% = r% OR TYPE_DOOM
+    IF INSTR(type$, ",DOOM2,"  ) THEN LET r% = r% OR TYPE_DOOM2
     IF INSTR(type$, ",HERETIC,") THEN LET r% = r% OR TYPE_HERETIC
-    IF INSTR(type$, ",HEXEN,") THEN LET r% = r% OR TYPE_HEXEN
-    IF INSTR(type$, ",STRIFE,") THEN LET r% = r% OR TYPE_STRIFE
-    IF INSTR(type$, ",CHEX,") THEN LET r% = r% OR TYPE_CHEX
-    IF INSTR(type$, ",DOOM64,") THEN LET r% = r% OR TYPE_DOOM64
-    IF INSTR(type$, ",HARM1,") THEN LET r% = r% OR TYPE_HARM1
-    IF INSTR(type$, ",ROTWB,") THEN LET r% = r% OR TYPE_ROTWB
+    IF INSTR(type$, ",HEXEN,"  ) THEN LET r% = r% OR TYPE_HEXEN
+    IF INSTR(type$, ",STRIFE," ) THEN LET r% = r% OR TYPE_STRIFE
+    IF INSTR(type$, ",CHEX,"   ) THEN LET r% = r% OR TYPE_CHEX
+    IF INSTR(type$, ",DOOM64," ) THEN LET r% = r% OR TYPE_DOOM64
+    IF INSTR(type$, ",HARM1,"  ) THEN LET r% = r% OR TYPE_HARM1
+    IF INSTR(type$, ",ROTWB,"  ) THEN LET r% = r% OR TYPE_ROTWB
+    'custom IWAD/IPK3 support, added in GZDoom v3.2
+    IF INSTR(type$, ",IWAD,"   ) THEN LET r% = r% OR TYPE_IPK3
+    IF INSTR(type$, ",IPK3,"   ) THEN LET r% = r% OR TYPE_IPK3
     
     LET Engines_GetType% = r%
 END FUNCTION

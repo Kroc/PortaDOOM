@@ -6,18 +6,27 @@
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
 	"editor.renderWhitespace": "boundary",
+	"[bat]": {
+		"editor.tabSize": 8
+	},
 	"files.exclude": {
 		"wiki": true,
 		"archive/": true,
 		"screenshots/": true,
 		"build/": true,
 		"releases/": true,
+		// why isn't this case insensitive!?
 		"**/*.lmp": true,
 		"**/*.LMP": true,
 		"**/*.wad": true,
 		"**/*.WAD": true,
+		"**/*.iwad": true,
+		"**/*.IWAD": true,
 		"**/*.pk3": true,
 		"**/*.PK3": true,
+		"**/*.ipk3": true,
+		"**/*.pk7": true,
+		"**/*.ipk7": true,
 		"**/*.epk": true,
 		"**/*.EPK": true,
 		"**/*.pke": true,

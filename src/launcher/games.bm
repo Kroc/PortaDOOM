@@ -261,6 +261,8 @@ SUB Games_Add ( _
                 LET Games(Games_Count).type = TYPE_HARM1
             CASE "ROTWB"
                 LET Games(Games_Count).type = TYPE_ROTWB
+            CASE "IWAD", "IPK3"
+                LET Games(Games_Count).type = TYPE_IPK3
         END SELECT
     ELSE
         LET Games(Games_Count).type = IWADS(iwad%%).type

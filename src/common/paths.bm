@@ -233,28 +233,20 @@ FUNCTION Paths_GetFileBaseName$(path$)
     'if the path ends in a slash then it's a folder and there's no file-name
     IF ASC(path$, len_path) = 92 THEN EXIT FUNCTION
     
-    'walk backward through the string looking for a slash since we only want
-    'the name from that point forward. if there is no slash, we'll take the
-    'name as from the start of the string
-    DIM a AS _UNSIGNED LONG
-    FOR a = len_path - 1 TO 1 STEP - 1
-        IF ASC(path$, a) = 92 THEN EXIT FOR
-    NEXT a
-    'this is a beautiful bit of serendipity: if the slash is found, then we
-    'want to start the file name after the slash, and if the slash is not
-    'found then the final `NEXT` ensures that the value of A is 0 and we
-    'want it to be 1 (first character)
-    LET a = a + 1
+    'slice out any path, leaving only the file name
+    LET path$ = MID$(path$, _INSTRREV(path$, "\") + 1)
     
-    'now walk forward looking for the dot
-    DIM z AS _UNSIGNED LONG
-    FOR z = a TO len_path
-        IF ASC(path$, z) = 46 THEN EXIT FOR
-    NEXT z
-    LET z = z - 1
-    
-    'slice out the string we want
-    LET Paths_GetFileBaseName$ = MID$(path$, a, z)
+    'check for the last dot in the filename as the filename may contain
+    'more than one dot and we only want to remove the last part
+    DIM z%
+    LET z% = _INSTRREV(path$, ".")
+    IF z% <> 0 THEN
+        'return only the name portion
+        LET Paths_GetFileBaseName$ = MID$(path$, 1, z%-1)
+    ELSE
+        'there being no dot, the whole is the filename
+        LET Paths_GetFileBaseName$ = path$
+    END IF
 END FUNCTION
 
 'returns the 8.3 version of a file path using the Windows API,

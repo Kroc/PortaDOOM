@@ -1,8 +1,11 @@
 # DO NOT INCLUDE WADs, it would balloon the repository to many gigs
 # Download a PortaDOOM release and unzip it into your repository to get the WADs
 **.wad
+**.iwad
 **.pk3
+**.ipk3
 **.pk7
+**.ipk7
 **.N64
 **.V64
 **.Z64

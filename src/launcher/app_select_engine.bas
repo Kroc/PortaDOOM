@@ -10,7 +10,7 @@ CALL Engines_Filter
 'if only one engine remains (or `/AUTO` is defined),
 'no choice needed
 IF Engines_ListCount = 1 _
-OR CMD_AUTO` = TRUE _
+    OR CMD_AUTO` = TRUE _
 THEN
     CALL Engines_Select(Engines_List(1))
     'note that this skips the saving of the launch

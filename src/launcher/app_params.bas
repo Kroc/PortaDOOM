@@ -65,7 +65,7 @@ cmd_help:   PRINT ""
             PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/QUIT]"
             PRINT "     [/REQ <tags>] [/USE <engine>] [/SW] [/32]"
             PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
-            PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+            PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 | /DOOM64]"
             PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
             PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
             PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
@@ -178,15 +178,16 @@ cmd_help:   PRINT ""
             REM PRINT #LOGFILE, "/SW"
             
         CASE "/IWAD", "/DOOM", "/DOOM2", "/TNT", "/PLUTONIA", "/HERETIC", _
-             "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2"
+             "/HEXEN", "/STRIFE", "/CHEX", "/FREEDOOM1", "/FREEDOOM2", _
+             "/DOOM64"
             '-----------------------------------------------------------------
             'you can't define an IWAD twice, e.g. `/IWAD DOOM /HEXEN`
             IF CMD_IWAD$ <> "" THEN CALL UIErrorScreen( _
                 "ERROR: IWAD Defined Twice", _
                 "/IWAD parameter cannot be used twice. Note that the " _
               + "/DOOM, /DOOM2, /TNT, /PLUTONIA, /HERETIC, /HEXEN, " _
-              + "/STRIFE, /CHEX, /FREEDOOM1 & /FREEDOOM2 switches are " _
-              + "shortcuts to /IWAD so these cannot be combined with " _
+              + "/STRIFE, /CHEX, /FREEDOOM1, /FREEDOOM2 & /DOOM64 switches " _
+              + "are shortcuts to /IWAD so these cannot be combined with " _
               + "/IWAD, or each other." _
             )
             SELECT CASE UCASE$(COMMAND$(i))
@@ -204,6 +205,7 @@ cmd_help:   PRINT ""
                 CASE "/CHEX": LET CMD_IWAD$ = "CHEX"
                 CASE "/FREEDOOM1": LET CMD_IWAD$ = "FREEDOOM1"
                 CASE "/FREEDOOM2": LET CMD_IWAD$ = "FREEDOOM2"
+                CASE "/DOOM64": LET CMD_IWAD$ = "DOOM64"
             END SELECT
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
@@ -402,7 +404,7 @@ cmd_help:   PRINT ""
                 PRINT " launcher.exe [/WAIT] [/AUTO] [/DEFAULT] [/32] [/QUIT]"
                 PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
                 PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
-                PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 ]"
+                PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 | /DOOM64]"
                 PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
                 PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
                 PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
@@ -414,16 +416,14 @@ cmd_help:   PRINT ""
 LOOP
 
 'was an INI file provided to define parameters?
-'-----------------------------------------------------------------------------
+'
 IF CMD_INI$ <> "" THEN
+    '-------------------------------------------------------------------------
     Games_EnumerateINI(CMD_INI$)
-    GOTO cmd_done
-END IF
-
-'-----------------------------------------------------------------------------
 
 'are there enough parameters to define a game from the command-line?
-IF cmd_hasGame` THEN
+ELSEIF cmd_hasGame` THEN
+    '-------------------------------------------------------------------------
     DIM vid, bit
     
     'default to no hard requirement for rendering colour-depth 
@@ -452,6 +452,7 @@ IF cmd_hasGame` THEN
         "", "", "", "", "", "", "", "", "" _
     )
 ELSE
+    '-------------------------------------------------------------------------
     CALL UIErrorScreen( _
         "ERROR: No Game Defined", _
         "Not enough information has been provided to define a game to " _
@@ -460,7 +461,6 @@ ELSE
     )
 END IF
 
-cmd_done:
 '=============================================================================
 REM LET CMD_DEBUG` = TRUE
 
