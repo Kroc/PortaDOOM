@@ -1,0 +1,28 @@
+$NAV=Total Conversions
+$REM=LOCATE AND GENERATE DOOM64.IWAD FIRST!
+$KEY:P=SHELL:"wads\conversions\DOOMCE\doom64-install.bat"
+$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+
+:DOOM 64 CE + Lost Levels + Bonus Campaigns
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2021>12>08	  Author : _molecicco_, Various
+:Levels   : *lots		   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
+:-------------------------------------------------------------------------------
+
+:Included Maps:
+
+- *The Absolution/DOOM 64:* The original campaign. The maps included here are based on conversions made by _Nevander_ for `Doom 64: Retribution`
+
+- *The Lost Levels:* These maps are exclusive to `Doom 64`'s 2020 remaster by _Nightdive_. They are only available if the included installer finds a valid installation of the 2020 release
+
+- *The Doomsday Levels:* Maps that were exclusive to _Kaiser_'s 2003's _Absolution TC_ and its _Outcast Levels_ expansion, merged into a single episode
+
+- *Redemption Denied:* A 2005 mapset by _Steven Searle_ and _AgentSpork_ for the `Absolution TC`. The maps included here are based on conversions made by _Nevander_ for `Doom 64: Retribution`
+
+- *The Reckoning:* A 2008 mapset by _Steven Searle_ for the `Absolution TC`. These maps included here are based on conversions made by _thexgiddoomerx_ for *Doom 64 EX*
+
+- *Bonus maps:* `Waste Processing` and `Mining Front` by _Maverick_ and `Temple Ruins` and `Temple Grounds` by _Henri Leto_, standalone maps made for the `Absolution TC`, are included. They are based on conversion made by _thexgiddoomerx_ for *Doom 64 EX*

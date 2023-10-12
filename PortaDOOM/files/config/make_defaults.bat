@@ -467,6 +467,13 @@ IF %~1 GEQ 303 (
 	ECHO * GZDoom %VER%               SQUARE1.PK3
 	CALL :make_gzdoom %~1 "SQUARE1.PK3"
 )
+REM # DOOM64 CE (v3.7.1) support from v4.10 onwards
+IF %~1 GEQ 410 (
+	ECHO * GZDoom %VER%               DOOM64.IWAD
+	REM # use the IWAD .ini file that contains a game definition to
+	REM # include DOOM64.CE.PK3; DOOM64.IWAD cannot run alone
+	CALL :make_gzdoom %~1 "..\wads\conversions\DOOMCE\doom64ce.ini"
+)
 ECHO ----------------------------------------
 GOTO:EOF
 
@@ -482,8 +489,13 @@ IF %~1 LSS 999 SET "INI=gzdoom-%~1"
 SET DEFAULT_INI="default.%INI%.ini"
 SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
-REM # launch the engine to generate new default config files
-START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
+REM # if the IWAD is an INI file, launch using the INI file
+IF /I "%~x2" == ".ini" (
+	START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /DEFAULT /QUIT "%~2"
+) ELSE (
+	REM # launch the engine to generate new default config files
+	START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
+)
 
 REM # disable stats collection; this might be undesirable if PortaDOOM
 REM # is being moved around multiple PCs intended for offline use
@@ -523,14 +535,18 @@ REM # do not attempt to locate IWAD (we always provide it)
 %CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
 
 REM # from here, settings are separated per game IWAD
-IF /I "%~2" == "DOOM.WAD"	SET "SECTION=Doom"
-IF /I "%~2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
-IF /I "%~2" == "HEXEN.WAD" 	SET "SECTION=Hexen"
-IF /I "%~2" == "STRIFE1.WAD" 	SET "SECTION=Strife"
-IF /I "%~2" == "CHEX.WAD" 	SET "SECTION=Chex"
-IF /I "%~2" == "HARM1.WAD" 	SET "SECTION=Harmony"
-IF /I "%~2" == "ROTWB.WAD" 	SET "SECTION=WoolBall"
-IF /I "%~2" == "SQUARE1.PK3" 	SET "SECTION=Square"
+SET "SECTION="
+IF /I "%~nx2" == "DOOM.WAD"	SET "SECTION=Doom"
+IF /I "%~nx2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
+IF /I "%~nx2" == "HEXEN.WAD" 	SET "SECTION=Hexen"
+IF /I "%~nx2" == "STRIFE1.WAD" 	SET "SECTION=Strife"
+IF /I "%~nx2" == "CHEX.WAD" 	SET "SECTION=Chex"
+IF /I "%~nx2" == "HARM1.WAD" 	SET "SECTION=Harmony"
+IF /I "%~nx2" == "ROTWB.WAD" 	SET "SECTION=WoolBall"
+IF /I "%~nx2" == "SQUARE1.PK3" 	SET "SECTION=Square"
+REM # (for DOOM 64 CE in GZDoom v4.10+)
+IF /I "%~nx2" == "DOOM64CE.INI"	SET "SECTION=doom64"
+IF "%SECTION%" == "" ECHO ERROR & PAUSE
 REM # shorthand for the game-specific section
 SET CONSOLE_VARS="[%SECTION%.ConsoleVariables]"
 

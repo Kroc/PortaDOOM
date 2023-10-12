@@ -1,0 +1,65 @@
+$NAV=Total Conversions
+$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+$KEY:1=PAGE:#02
+$KEY:2=PAGE:#03
+$KEY:3=PAGE:#04
+
+:DOOM CE: PSX TC & D64 Retribution, overhauled!
+:===============================================================================
+*[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+This mod builds on the existing total conversions of `PlayStation DOOM` and `DOOM 64 for GZDoom`, `PSX DOOM TC` and `DOOM 64 Retribution`, to take advantage of the latest *GZDoom* versions and adds many features that make them more faithful but were impossible to implement at their time of release. To achieve this, a large amount of the code has been adapted from *GEC Master Edition* (also known as *DZDoom*), while looking at the reverse engineered code and existing source ports of these games for reference.
+
+Press [→] (change page) to view details on each included game,
+or select from below:
+
+[1] *PSX DOOM CE + Lost Levels + Bonus Campaigns
+	:---------------------------------------------------------------------------
+	The original `PlayStation DOOM`, expanded to include the missing PC levels + the addon campaigns `No Rest For the Living` & `Sigil`
+
+[2] *PSX Final DOOM CE + Master Levels + Lost Levels
+	:---------------------------------------------------------------------------
+	The original `PlayStation Final DOOM`, expanded to include the missing PC levels and the complete `Master Levels`
+
+[3] *DOOM 64 CE + Lost Levels + Bonus Campaigns
+	:---------------------------------------------------------------------------
+	The original `DOOM 64`, expanded to include the _Nightdive_ remaster levels (if present) + three extra community campaigns
+
+:Feature Presets:
+:===============================================================================
+Since almost every feature is optional, the mod contains four presets for different levels of enabled "enhancements". They can be selected by going into the *Features Menu* and choosing *Features Preset*. It is recommended to choose one before you start a new game.
+
+- *Faithful:* Features will be set as faithful as possible to the original
+
+- *Faithful Enhanced:* Some enhancements such as smooth animations, ambient sounds, gore and particles trails will be enabled, but gameplay will remain faithful to the original
+
+- *Modern (default):* More features including subtle gameplay changes will be enabled. Some monsters that weren't available in the console campaigns (Arch-Viles, etc) are also added
+
+- *Experimental:* Same as Modern, but with new visuals and music style will change over time. In `PSX DOOM`, some monsters will have the same speed as in PC `DOOM`
+
+:Highlights:
+:===============================================================================
+- `PSX DOOM` software lighting emulation (brightness fades with distance)
+- `DOOM 64` with gradient and additive lighting. Can also be enabled in `PSX DOOM` too to give it a different look
+- Addons to restore the `PSX DOOM` aspect ratio and to use the Nintendo 64's 3-Point filter
+- The mod is powered by *ZScript* to make it more accurate to the original.
+- `PSX DOOM TC Lost Levels` can be integrated into the regular episodes to provide the full PC level set
+- Bonus episodes and maps for `DOOM 64` from the `Absolution TC` era
+- Customizable speeds: approximate them to the slower framerate of the originals or make them faster for a bigger challenge
+- Option to restore Arch-Viles in `PSX DOOM`, Spider Masterminds in `PSX FINAL DOOM`, `Absolution TC` exclusive monsters and `Doom 2` monsters (Revenants, Arch-Viles, etc) in `DOOM 64`
+- The Red and Green Demon Keys exclusive to the `Outcast Levels TC` are included in that episode
+- Choose to play with the dark ambient Console soundtrack, the action oriented PC soundtrack, or both, in which action fades into ambient after the music finishes
+- AI interpolated `DOOM 64` animations and `Smooth Doom` adapted to `PSX DOOM`
+- 2x AI upscaled textures.
+- PBR materials.
+- Brightmaps for sprites and textures.
+- Play with a fullscreen hud styled like `DOOM 64` or the default *GZDoom* hud
+- Ambient sounds for decorations (torches, barrels, etc)
+- Enemies and the player produce footstep sounds
+- Optional story texts taken from the manuals or readme files if they were fanmade
+- Two new difficulties: Nightmare/Hardcore is UV with fast monsters and no respawns, and Ultra-Nightmare/Doomslayer is a modified version of the difficulty introduced in `DOOM 64: Retribution`
+- Integrates `Nashgore` with slight tweaks and bug fixes
+- Higher quality and more varied sound effects
+- High quality soundtracks
+- Many more miscellaneous small details

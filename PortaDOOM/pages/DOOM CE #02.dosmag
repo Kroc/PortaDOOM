@@ -1,0 +1,25 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini" /GAME 1
+$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+
+:PSX DOOM CE + Lost Levels + Bonus Campaigns
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2021>12>08	  Author : _molecicco_, Various
+:Levels   : *lots		   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
+:-------------------------------------------------------------------------------
+
+:Included Maps:
+
+- *Evil Unleashed/Ultimate DOOM:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
+
+- *Sigil:* Same as `Sigil 1.2` by _John Romero_, but with colored lighting
+
+- *Hell on Earth/DOOM II:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
+
+- *No Rest For The Living:* A reimagination of the Xbox mapset. The maps included here are based on conversions by _Dexiaz_ and _Salahmander2_ for the `PSX Doom TC`
+
+- *Bonus maps:* `Tech Gone Bad` and `Phobos Mission Control` by _BlackxZodiac13_, originally created for the `PSX Doom TC` (based on the maps by _John Romero_)

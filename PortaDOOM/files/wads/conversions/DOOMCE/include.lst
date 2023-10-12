@@ -1,0 +1,5 @@
+pages\DOOM CE #??.dosmag
+files\wads\conversions\DOOMCE\
+
+# requires GZDoom v.410+
+@files\ports\use=gzdoom-410.lst

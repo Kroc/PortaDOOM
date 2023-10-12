@@ -47,6 +47,7 @@ ECHO     [E]  Cacowards: 2015
 ECHO     [5]  Cacowards: 5 Years of Doom
 ECHO:
 ECHO     [P]  PSX DOOM TC
+ECHO     [Q]  DOOM CE
 ECHO:
 ECHO     [X]  Launcher only
 ECHO:
@@ -60,6 +61,7 @@ IF /I "%$%" == "D" CALL :do_release_cacowards "2016"
 IF /I "%$%" == "E" CALL :do_release_cacowards "2015"
 IF /I "%$%" == "5" CALL :do_release_5yearsofdoom
 IF /I "%$%" == "P" CALL :do_release_psxdoomtc
+IF /I "%$%" == "Q" CALL :do_release_doomce
 IF /I "%$%" == "X" CALL :do_release_launcher
 
 GOTO:EOF
@@ -166,6 +168,7 @@ CALL :do_cacowards "2016"
 CALL :do_cacowards "2017"
 CALL :do_cacowards "2018"
 CALL :do_psxdoomtc
+CALL :do_doomce
 CALL :do_launcher
 
 ECHO:
@@ -179,7 +182,7 @@ REM # --------------------------------------------------------------------------
 REM # 7ZIP
 %BIN_7ZA% a ^
 	-bso0 -bsp1 -r %ZIP_LVL% -stl ^
-	-xr@bin\ignore.lst ^
+	-xr@bin\exclude.lst ^
 	-- "build\PortaDOOM.7z" ^
 	"PortaDOOM"
 
@@ -231,7 +234,7 @@ REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_Cacowards%~1.7z" ^
 	"..\build\include.lst" ^
-	"..\bin\ignore.lst"
+	"..\bin\exclude.lst"
 
 IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
@@ -281,7 +284,7 @@ REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_5YearsOfDoom.7z" ^
 	"..\build\include.lst" ^
-	"..\bin\ignore.lst"
+	"..\bin\exclude.lst"
 
 IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
@@ -331,7 +334,57 @@ REM # 7ZIP
 CALL :zip ^
 	"..\build\PortaDOOM_PSXDOOMTC.7z" ^
 	"..\build\include.lst" ^
-	"..\bin\ignore.lst"
+	"..\bin\exclude.lst"
+
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
+
+REM # restore the original home page
+DEL "pages\Home #01.dosmag"
+REN "pages\Home #01.old" "Home #01.dosmag"
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
+
+POPD
+GOTO:EOF
+
+
+:do_release_doomce
+REM # ==========================================================================
+TITLE Creating PortaDOOM release...
+CALL :select_compression
+CALL :do_doomce
+
+ECHO:
+ECHO Complete.
+ECHO:
+PAUSE & GOTO:EOF
+
+:do_doomce
+REM # --------------------------------------------------------------------------
+ECHO * Make PortaDOOM_DOOMCE ...
+DEL build\PortaDOOM_DOOMCE.7z  >NUL 2>&1
+
+REM # the archive will be built without a base folder
+PUSHD PortaDOOM
+
+REM # swap over the homepages
+IF EXIST "pages\Home #01.old" (
+	DEL "pages\Home #01.dosmag"
+	REN "pages\Home #01.old" "Home #01.dosmag"
+)
+
+REN  "pages\Home #01.dosmag" "Home #01.old"
+COPY "pages\PortaDOOM DOOM CE.dosmag" "pages\Home #01.dosmag"  >NUL 2>&1
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
+
+REM # build the include list
+CALL %INCLUDE% "..\bin\include_doomce.lst" > "..\build\include.lst"
+IF ERRORLEVEL 1 POPD & PAUSE & EXIT
+
+REM # 7ZIP
+CALL :zip ^
+	"..\build\PortaDOOM_DOOMCE.7z" ^
+	"..\build\include.lst" ^
+	"..\bin\exclude.lst"
 
 IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
@@ -370,7 +423,7 @@ REM # as it doesn't use the PortaDOOM executable
 CALL :zip ^
 	"..\..\build\PortaDOOM_Launcher.7z" ^
 	"..\..\bin\include_launcher.lst" ^
-	"..\..\bin\ignore.lst"
+	"..\..\bin\exclude.lst"
 
 IF ERRORLEVEL 1 POPD & PAUSE & EXIT
 
@@ -417,7 +470,7 @@ REM # assumes `ZIP_LVL` has been set
 REM #
 REM #	%1	= archive path
 REM #	%2	= include list, e.g. "include.lst"
-REM #	%3	= ignore list, e.g. "ignore.lst"
+REM #	%3	= exclude list, e.g. "exclude.lst"
 
 REM # a         : add to archive
 REM # -bso0     : disable message output

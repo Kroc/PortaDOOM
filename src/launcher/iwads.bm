@@ -240,8 +240,6 @@ FUNCTION IWADs_GetPath$(iwad$)
     LET iwad_path$ = DIR_WADS$ + iwad$
     IF _FILEEXISTS(iwad_path$) THEN GOTO iwadFound
     
-    PRINT iwad_path$: SLEEP
-    
     'if not found, look for Steam / GOG installations...
     GOSUB iwadInstalled
     

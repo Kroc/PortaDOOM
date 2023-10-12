@@ -42,6 +42,11 @@ NERVE.WAD
 NRFTL+.WAD
 MASTER/*.wad
 
+# do not include the automatically generated IWAD!
+DOOM64.IWAD
+# do not include this file as it's built automatically from DOOM64.IWAD
+DOOM64.CE.Maps.LostLevels.pk3
+
 # don't include any save-files
 saves/*
 

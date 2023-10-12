@@ -1,7 +1,7 @@
 $NAV=Total Conversions
-$REM:$KEY:P=SHELL:launcher.exe "wads\conversions\boa\play-boa.ini"
-$REM:$KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
-$REM:$KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt
+$REM=$KEY:P=SHELL:launcher.exe "wads\conversions\boa\play-boa.ini"
+$REM=$KEY:T=SHELL:wads\conversions\boa\wolf_boa.txt
+$REM=$KEY:C=SHELL:wads\conversions\boa\wolf_boa_cr.txt
 $KEY:W=URL:http://boa.realm667.com/
 
 :WolfenDoom: Blade of Agony                         * 2016 Cacoward Winner! *

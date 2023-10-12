@@ -1,0 +1,23 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini" /GAME 2
+$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+
+:PSX Final DOOM CE + Master Levels + Lost Levels
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2021>12>08	  Author : _molecicco_, Various
+:Levels   : *lots		   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
+:-------------------------------------------------------------------------------
+
+:Included Maps:
+
+- *Master Levels:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
+
+- *TNT: Evilution:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
+
+- *The Plutonia Experiment:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
+
+- *Bonus maps:* `DeXiaZ's Mausoleum` by _Dexiaz_ and `Last Gateway to Sin` by _BaronOfStuff_, originally created for the `PSX Doom TC`

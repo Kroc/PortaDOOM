@@ -13,13 +13,14 @@ $KEY:K=GOTO:The Golden Souls 2
 $KEY:L=GOTO:DTWiD Series #02
 $KEY:M=GOTO:DOOM 404
 $KEY:N=GOTO:DOOM 64
-$KEY:O=GOTO:DOOM II
-$KEY:P=GOTO:DOOM II - Hellscape
-$KEY:Q=GOTO:DTWiD Series #01
-$KEY:R=GOTO:DTWiD Series #03
-$KEY:S=GOTO:DOOM(4) for DooM
-$KEY:T=GOTO:Doomed Space Wars
-$KEY:U=GOTO:DoomRL Arsenal
+$KEY:O=GOTO:DOOM CE
+$KEY:P=GOTO:DOOM II
+$KEY:Q=GOTO:DOOM II - Hellscape
+$KEY:R=GOTO:DTWiD Series #01
+$KEY:S=GOTO:DTWiD Series #03
+$KEY:T=GOTO:DOOM(4) for DooM
+$KEY:U=GOTO:Doomed Space Wars
+$KEY:V=GOTO:DoomRL Arsenal
 
 ^C:INDEX :: D
 
@@ -39,10 +40,11 @@ $KEY:U=GOTO:DoomRL Arsenal
 - [L] *Doom 2 the Way id Did							MegaWADs
 - [M] *DOOM 404											MegaWADs
 - [N] *DOOM 64											Commercial DOOM
-- [O] *DOOM II											Commercial DOOM
-- [P] *DOOM II: Hellscape								Episodes
-- [Q] *Doom the Way id Did								MegaWADs
-- [R] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [S] *DOOM(4) for DooM									Mods
-- [T] *Doomed Space Wars								Episodes
-- [U] *DoomRL Arsenal									Mods
+- [O] *DOOM CE											Total Conversions
+- [P] *DOOM II											Commercial DOOM
+- [Q] *DOOM II: Hellscape								Episodes
+- [R] *Doom the Way id Did								MegaWADs
+- [S] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [T] *DOOM(4) for DooM									Mods
+- [U] *Doomed Space Wars								Episodes
+- [V] *DoomRL Arsenal									Mods
