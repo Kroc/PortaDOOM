@@ -94,6 +94,7 @@ ECHO  =============================
 ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Heretic          HERETIC.WAD
+ECHO     [P] Crispy Heretic             HERETIC.WAD
 ECHO:
 ECHO     [2] Zandronum v2               HERETIC.WAD
 ECHO     [3] Zandronum v3               HERETIC.WAD
@@ -109,6 +110,7 @@ SET /P "$=? "
 IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-heretic-setup"  "HERETIC.WAD"
+IF /I "%$%" == "P" CALL :launch_engine    "crispy-heretic-setup" "HERETIC.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HERETIC.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HERETIC.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HERETIC.WAD"
@@ -126,6 +128,7 @@ ECHO  ===========================
 ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Hexen            HEXEN.WAD
+ECHO     [P] Crispy Hexen               HEXEN.WAD
 ECHO:
 ECHO     [2] Zandronum v2               HEXEN.WAD
 ECHO     [3] Zandronum v3               HEXEN.WAD
@@ -141,6 +144,7 @@ SET /P "$=? "
 IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-hexen-setup"    "HEXEN.WAD"
+IF /I "%$%" == "P" CALL :launch_engine    "crispy-hexen-setup"   "HEXEN.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HEXEN.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HEXEN.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HEXEN.WAD"
@@ -158,6 +162,7 @@ ECHO  ============================
 ECHO  Select engine:
 ECHO:
 ECHO     [C] Chocolate Strife           STRIFE1.WAD
+ECHO     [P] Crispy Strife              STRIFE1.WAD
 ECHO:
 ECHO     [2] Zandronum v2               STRIFE1.WAD
 ECHO     [3] Zandronum v3               STRIFE1.WAD
@@ -173,6 +178,7 @@ SET /P "$=? "
 IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-strife-setup"   "STRIFE1.WAD"
+IF /I "%$%" == "P" CALL :launch_engine    "crispy-strife-setup"  "STRIFE1.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "STRIFE1.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "STRIFE1.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "STRIFE1.WAD"

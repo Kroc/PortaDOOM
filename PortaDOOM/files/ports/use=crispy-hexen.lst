@@ -1,0 +1,6 @@
+files\ports\crispy-hexen\
+files\config\default.crispy-hexen.cfg
+files\config\default.crispy-hexen.extra.cfg
+
+# which IWADs this engine supports:
+files\wads\hexen.ini

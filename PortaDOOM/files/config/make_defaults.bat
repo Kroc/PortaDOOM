@@ -73,10 +73,34 @@ ECHO ----------------------------------------
 
 :crispy-doom
 REM # delete the file in order to re-build it
-IF EXIST "default.crispy-doom.cfg" GOTO :doom-retro
+IF EXIST "default.crispy-doom.cfg" GOTO :crispy-heretic
 
 ECHO * Crispy Doom                DOOM.WAD
-CALL :make_vanilla "crispy-doom" "DOOM.WAD"
+CALL :make_crispy "crispy-doom" "DOOM.WAD"
+ECHO ----------------------------------------
+
+:crispy-heretic
+REM # delete the file in order to re-build it
+IF EXIST "default.crispy-heretic.cfg" GOTO :crispy-hexen
+
+ECHO * Crispy Heretic             HERETIC.WAD
+CALL :make_crispy "crispy-heretic" "HERETIC.WAD"
+ECHO ----------------------------------------
+
+:crispy-hexen
+REM # delete the file in order to re-build it
+IF EXIST "default.crispy-hexen.cfg" GOTO :crispy-strife
+
+ECHO * Crispy Hexen               HEXEN.WAD
+CALL :make_crispy "crispy-hexen" "HEXEN.WAD"
+ECHO ----------------------------------------
+
+:crispy-strife
+REM # delete the file in order to re-build it
+IF EXIST "default.crispy-strife.cfg" GOTO :doom-retro
+
+ECHO * Crispy Strife              STRIFE1.WAD
+CALL :make_crispy "crispy-strife" "STRIFE1.WAD"
 ECHO ----------------------------------------
 
 
@@ -252,6 +276,26 @@ REM # TODO: reset the stats properties?
 GOTO:EOF
 
 
+:make_crispy
+REM #===========================================================================
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM #---------------------------------------------------------------------------
+REM # handle as choco first
+CALL :make_vanilla "%~1" "%~2"
+
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
+SET EXTRA_CFG="default.%~1.extra.cfg"
+SET CONFIG_EXTRA=%BIN_CFGINI% %EXTRA_CFG%
+
+REM # Crispy Doom/Heretic/Hexen/Strife, annoyingly, adds these in
+%CONFIG_EXTRA% SET "autoload_path" """autoload"""
+%CONFIG_EXTRA% SET "music_pack_path" """music-packs"""
+
+GOTO:EOF
+
+
 :make_vanilla
 REM #===========================================================================
 REM #    %1 = engine-name
@@ -298,14 +342,8 @@ REM # use F12 for screen-shot
 REM # user-name for multi-player
 REM # (crispy-doom 5.6+ uses a randomly generated name)
 %CONFIG_EXTRA% SET "player_name" """PortaDOOM"""
-REM # in Chocolate Strife there's also nickname?
-IF [%~1] == [choco-strife] %CONFIG_DEFAULT% SET "nickname" """PortaDOOM"""
-
-SET "APPDATAESC=%APPDATA:\=\\%"
-
-REM # Crispy Doom, annoyingly, adds these in
-IF [%~1] == [crispy-doom] %CONFIG_EXTRA% SET "autoload_path" """autoload"""
-IF [%~1] == [crispy-doom] %CONFIG_EXTRA% SET "music_pack_path" """music-packs"""
+REM # in Strife there's also nickname?
+IF [%~2] == [STRIFE1.WAD] %CONFIG_DEFAULT% SET "nickname" """PortaDOOM"""
 
 GOTO:EOF
 

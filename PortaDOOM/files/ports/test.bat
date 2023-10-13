@@ -8,21 +8,25 @@ CLS
 ECHO:
 ECHO  Engine Test:
 ECHO:
-ECHO    [A] chocolate-doom ^(with setup^)
-ECHO    [B] chocolate-heretic ^(with setup^)
-ECHO    [C] chocolate-hexen ^(with setup^)
-ECHO    [D] chocolate-strife ^(with setup^)
-ECHO    [E] crispy-doom ^(with setup^)
-ECHO    [F] DOOM Retro
+ECHO    [1] chocolate-doom ^(with setup^)
+ECHO    [2] chocolate-heretic ^(with setup^)
+ECHO    [3] chocolate-hexen ^(with setup^)
+ECHO    [4] chocolate-strife ^(with setup^)
+ECHO    [5] crispy-doom ^(with setup^)
+ECHO    [6] crispy-heretic ^(with setup^)
+ECHO    [7] crispy-hexen ^(with setup^)
+ECHO    [8] crispy-strife ^(with setup^)
 ECHO:
-ECHO    [G] DOOM 64 EX
+ECHO    [R] DOOM Retro
 ECHO:
-ECHO    [H] PRBoom+ hardware            [I] PRBoom+ software
+ECHO    [X] DOOM 64 EX
 ECHO:
-ECHO    [J] Zandronum v2.x
-ECHO    [K] Zandronum v3.x
+ECHO    [P] PRBoom+ hardware            [Q] PRBoom+ software
 ECHO:
-ECHO    [L] GZDoom ...
+ECHO    [M] Zandronum v2.x
+ECHO    [N] Zandronum v3.x
+ECHO:
+ECHO    [G] GZDoom ...
 ECHO:
 ECHO    [Z] ZDoom v2.8.1
 ECHO:
@@ -31,18 +35,27 @@ SET CHOICE=?
 SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
-IF /I "%CHOICE%" == "A" %LAUNCHER% /USE choco-doom-setup    /IWAD DOOM
-IF /I "%CHOICE%" == "B" %LAUNCHER% /USE choco-heretic-setup /IWAD HERETIC
-IF /I "%CHOICE%" == "C" %LAUNCHER% /USE choco-hexen-setup   /IWAD HEXEN
-IF /I "%CHOICE%" == "D" %LAUNCHER% /USE choco-strife-setup  /IWAD STRIFE1
-IF /I "%CHOICE%" == "E" %LAUNCHER% /USE crispy-doom-setup   /IWAD DOOM2
-IF /I "%CHOICE%" == "F" %LAUNCHER% /USE doom-retro          /IWAD DOOM2
-IF /I "%CHOICE%" == "G" %LAUNCHER% /USE doom64ex            /IWAD DOOM64
-IF /I "%CHOICE%" == "H" %LAUNCHER% /USE prboom-plus-hw      /IWAD DOOM2
-IF /I "%CHOICE%" == "I" %LAUNCHER% /USE prboom-plus-sw      /IWAD DOOM2
-IF /I "%CHOICE%" == "J" %LAUNCHER% /USE zandronum-2         /IWAD DOOM2
-IF /I "%CHOICE%" == "K" %LAUNCHER% /USE zandronum-3         /IWAD DOOM2
-IF /I "%CHOICE%" == "L" GOTO :gzdoom
+IF /I "%CHOICE%" == "1" %LAUNCHER% /USE choco-doom-setup     /IWAD DOOM
+IF /I "%CHOICE%" == "2" %LAUNCHER% /USE choco-heretic-setup  /IWAD HERETIC
+IF /I "%CHOICE%" == "3" %LAUNCHER% /USE choco-hexen-setup    /IWAD HEXEN
+IF /I "%CHOICE%" == "4" %LAUNCHER% /USE choco-strife-setup   /IWAD STRIFE1
+IF /I "%CHOICE%" == "5" %LAUNCHER% /USE crispy-doom-setup    /IWAD DOOM2
+IF /I "%CHOICE%" == "6" %LAUNCHER% /USE crispy-heretic-setup /IWAD HERETIC
+IF /I "%CHOICE%" == "7" %LAUNCHER% /USE crispy-hexen-setup   /IWAD HEXEN
+IF /I "%CHOICE%" == "8" %LAUNCHER% /USE crispy-strife-setup  /IWAD STRIFE1
+
+IF /I "%CHOICE%" == "R" %LAUNCHER% /USE doom-retro           /IWAD DOOM2
+
+IF /I "%CHOICE%" == "X" %LAUNCHER% /USE doom64ex             /IWAD DOOM64
+
+IF /I "%CHOICE%" == "P" %LAUNCHER% /USE prboom-plus-hw       /IWAD DOOM2
+IF /I "%CHOICE%" == "Q" %LAUNCHER% /USE prboom-plus-sw       /IWAD DOOM2
+
+IF /I "%CHOICE%" == "M" %LAUNCHER% /USE zandronum-2          /IWAD DOOM2
+IF /I "%CHOICE%" == "N" %LAUNCHER% /USE zandronum-3          /IWAD DOOM2
+
+IF /I "%CHOICE%" == "G" GOTO :gzdoom
+
 IF /I "%CHOICE%" == "Z" %LAUNCHER% /USE zdoom               /IWAD DOOM2
 
 GOTO :menu
