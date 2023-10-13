@@ -3,7 +3,7 @@ $KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini" /GAME 1
 $KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 
-:PSX DOOM CE + Lost Levels + Bonus Campaigns
+:PSX DOOM CE + Lost Levels + No Rest For The Living
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
@@ -15,8 +15,6 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 :Included Maps:
 
 - *Evil Unleashed/Ultimate DOOM:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
-
-- *Sigil:* Same as `Sigil 1.2` by _John Romero_, but with colored lighting
 
 - *Hell on Earth/DOOM II:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
 

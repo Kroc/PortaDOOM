@@ -1,5 +1,5 @@
-files\config\default.gzdoom.ini
-@files\ports\use=gzdoom-411.lst
+files\ports\gzdoom-411\
+files\config\default.gzdoom-411.ini
 
 # which IWADs this engine supports:
 files\wads\doom.ini

@@ -150,6 +150,7 @@ REM # GZDoom
 REM #===========================================================================
 :gzdoom-all
 CALL :gzdoom_any 999
+CALL :gzdoom_any 411
 CALL :gzdoom_any 410
 CALL :gzdoom_any 409
 CALL :gzdoom_any 408
@@ -420,7 +421,7 @@ GOTO:EOF
 
 :gzdoom_any
 REM #===========================================================================
-REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
+REM #    %1 = version-number (i.e. "gzdoom-nnn.ini")
 REM #	      999 = default (i.e. "gzdoom.ini")
 REM #---------------------------------------------------------------------------
 IF %~1 EQU 999 SET "INI=gzdoom"
@@ -467,8 +468,8 @@ IF %~1 GEQ 303 (
 	ECHO * GZDoom %VER%               SQUARE1.PK3
 	CALL :make_gzdoom %~1 "SQUARE1.PK3"
 )
-REM # DOOM64 CE (v3.7.1) support from v4.10 onwards
-IF %~1 GEQ 410 (
+REM # DOOM64 CE (v3.8.0) support from v4.11 onwards
+IF %~1 GEQ 411 (
 	ECHO * GZDoom %VER%               DOOM64.IWAD
 	REM # use the IWAD .ini file that contains a game definition to
 	REM # include DOOM64.CE.PK3; DOOM64.IWAD cannot run alone
@@ -544,7 +545,7 @@ IF /I "%~nx2" == "CHEX.WAD" 	SET "SECTION=Chex"
 IF /I "%~nx2" == "HARM1.WAD" 	SET "SECTION=Harmony"
 IF /I "%~nx2" == "ROTWB.WAD" 	SET "SECTION=WoolBall"
 IF /I "%~nx2" == "SQUARE1.PK3" 	SET "SECTION=Square"
-REM # (for DOOM 64 CE in GZDoom v4.10+)
+REM # (for DOOM 64 CE in GZDoom v4.11+)
 IF /I "%~nx2" == "DOOM64CE.INI"	SET "SECTION=doom64"
 IF "%SECTION%" == "" ECHO ERROR & PAUSE
 REM # shorthand for the game-specific section

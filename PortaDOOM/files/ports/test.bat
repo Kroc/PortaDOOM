@@ -52,25 +52,27 @@ CLS
 ECHO:
 ECHO  GZDoom:
 ECHO:
-ECHO    [0] GZDoom Current
+ECHO    [Z] GZDoom Current
 ECHO:
-ECHO    [A] GZDoom v1.0               [B] GZDoom v1.1
-ECHO    [C] GZDoom v1.2               [D] GZDoom v1.3
-ECHO    [E] GZDoom v1.4               [F] GZDoom v1.5
-ECHO    [G] GZDoom v1.6               [H] GZDoom v1.7
-ECHO    [I] GZDoom v1.8               [J] GZDoom v1.9
+ECHO    [0] GZDoom v1.0               [1] GZDoom v1.1
+ECHO    [2] GZDoom v1.2               [3] GZDoom v1.3
+ECHO    [4] GZDoom v1.4               [5] GZDoom v1.5
+ECHO    [6] GZDoom v1.6               [7] GZDoom v1.7
+ECHO    [8] GZDoom v1.8               [9] GZDoom v1.9
 ECHO:
-ECHO    [K] GZDoom v2.0               [L] GZDoom v2.1
-ECHO    [M] GZDoom v2.2               [N] GZDoom v2.3
-ECHO    [O] GZDoom v2.4
+ECHO    [A] GZDoom v2.0               [B] GZDoom v2.1
+ECHO    [C] GZDoom v2.2               [D] GZDoom v2.3
+ECHO    [E] GZDoom v2.4
 ECHO:
-ECHO    [P] GZDoom v3.2               [Q] GZDoom v3.3
-ECHO    [R] GZDoom v3.4               [S] GZDoom v3.5
-ECHO    [T] GZDoom v3.6               [U] GZDoom v3.7
-ECHO    [V] GZDoom v4.1               [W] GZDoom v4.2
-ECHO    [X] GZDoom v4.3               [Y] GZDoom v4.4
-ECHO    [Z] GZDoom v4.5               [6] GZDoom v4.6
-ECHO    [7] GZDoom v4.7               [8] GZDoom v4.8
+ECHO    [F] GZDoom v3.2               [G] GZDoom v3.3
+ECHO    [H] GZDoom v3.4               [I] GZDoom v3.5
+ECHO    [J] GZDoom v3.6               [K] GZDoom v3.7
+ECHO    [L] GZDoom v4.1               [M] GZDoom v4.2
+ECHO    [N] GZDoom v4.3               [O] GZDoom v4.4
+ECHO    [P] GZDoom v4.5               [Q] GZDoom v4.6
+ECHO    [R] GZDoom v4.7               [S] GZDoom v4.8
+ECHO    [T] GZDoom v4.9               [U] GZDoom v4.10
+ECHO    [V] GZDoom v4.11
 ECHO:
 
 SET CHOICE=?
@@ -78,39 +80,42 @@ SET /P "CHOICE=? "
 
 IF /I "%CHOICE%" == "?" GOTO :menu
 
-IF /I "%CHOICE%" == "0" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2
+IF /I "%CHOICE%" == "Z" %LAUNCHER% /USE gzdoom-default /IWAD DOOM2
 
-IF /I "%CHOICE%" == "A" %LAUNCHER% /USE gzdoom-10 /IWAD DOOM2
-IF /I "%CHOICE%" == "B" %LAUNCHER% /USE gzdoom-11 /IWAD DOOM2
-IF /I "%CHOICE%" == "C" %LAUNCHER% /USE gzdoom-12 /IWAD DOOM2
-IF /I "%CHOICE%" == "D" %LAUNCHER% /USE gzdoom-13 /IWAD DOOM2
-IF /I "%CHOICE%" == "E" %LAUNCHER% /USE gzdoom-14 /IWAD DOOM2
-IF /I "%CHOICE%" == "F" %LAUNCHER% /USE gzdoom-15 /IWAD DOOM2
-IF /I "%CHOICE%" == "G" %LAUNCHER% /USE gzdoom-16 /IWAD DOOM2
-IF /I "%CHOICE%" == "H" %LAUNCHER% /USE gzdoom-17 /IWAD DOOM2
-IF /I "%CHOICE%" == "I" %LAUNCHER% /USE gzdoom-18 /IWAD DOOM2
-IF /I "%CHOICE%" == "J" %LAUNCHER% /USE gzdoom-19 /IWAD DOOM2
+IF /I "%CHOICE%" == "0" %LAUNCHER% /USE gzdoom-100 /IWAD DOOM2
+IF /I "%CHOICE%" == "1" %LAUNCHER% /USE gzdoom-101 /IWAD DOOM2
+IF /I "%CHOICE%" == "2" %LAUNCHER% /USE gzdoom-102 /IWAD DOOM2
+IF /I "%CHOICE%" == "3" %LAUNCHER% /USE gzdoom-103 /IWAD DOOM2
+IF /I "%CHOICE%" == "4" %LAUNCHER% /USE gzdoom-104 /IWAD DOOM2
+IF /I "%CHOICE%" == "5" %LAUNCHER% /USE gzdoom-105 /IWAD DOOM2
+IF /I "%CHOICE%" == "6" %LAUNCHER% /USE gzdoom-106 /IWAD DOOM2
+IF /I "%CHOICE%" == "7" %LAUNCHER% /USE gzdoom-107 /IWAD DOOM2
+IF /I "%CHOICE%" == "8" %LAUNCHER% /USE gzdoom-108 /IWAD DOOM2
+IF /I "%CHOICE%" == "9" %LAUNCHER% /USE gzdoom-109 /IWAD DOOM2
 
-IF /I "%CHOICE%" == "K" %LAUNCHER% /USE gzdoom-20 /IWAD DOOM2
-IF /I "%CHOICE%" == "L" %LAUNCHER% /USE gzdoom-21 /IWAD DOOM2
-IF /I "%CHOICE%" == "M" %LAUNCHER% /USE gzdoom-22 /IWAD DOOM2
-IF /I "%CHOICE%" == "N" %LAUNCHER% /USE gzdoom-23 /IWAD DOOM2
-IF /I "%CHOICE%" == "O" %LAUNCHER% /USE gzdoom-24 /IWAD DOOM2
+IF /I "%CHOICE%" == "A" %LAUNCHER% /USE gzdoom-200 /IWAD DOOM2
+IF /I "%CHOICE%" == "B" %LAUNCHER% /USE gzdoom-201 /IWAD DOOM2
+IF /I "%CHOICE%" == "C" %LAUNCHER% /USE gzdoom-202 /IWAD DOOM2
+IF /I "%CHOICE%" == "D" %LAUNCHER% /USE gzdoom-203 /IWAD DOOM2
+IF /I "%CHOICE%" == "E" %LAUNCHER% /USE gzdoom-204 /IWAD DOOM2
 
-IF /I "%CHOICE%" == "P" %LAUNCHER% /USE gzdoom-32 /IWAD DOOM2
-IF /I "%CHOICE%" == "Q" %LAUNCHER% /USE gzdoom-33 /IWAD DOOM2
-IF /I "%CHOICE%" == "R" %LAUNCHER% /USE gzdoom-34 /IWAD DOOM2
-IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-35 /IWAD DOOM2
-IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-36 /IWAD DOOM2
-IF /I "%CHOICE%" == "U" %LAUNCHER% /USE gzdoom-37 /IWAD DOOM2
+IF /I "%CHOICE%" == "F" %LAUNCHER% /USE gzdoom-302 /IWAD DOOM2
+IF /I "%CHOICE%" == "G" %LAUNCHER% /USE gzdoom-303 /IWAD DOOM2
+IF /I "%CHOICE%" == "H" %LAUNCHER% /USE gzdoom-304 /IWAD DOOM2
+IF /I "%CHOICE%" == "I" %LAUNCHER% /USE gzdoom-305 /IWAD DOOM2
+IF /I "%CHOICE%" == "J" %LAUNCHER% /USE gzdoom-306 /IWAD DOOM2
+IF /I "%CHOICE%" == "K" %LAUNCHER% /USE gzdoom-307 /IWAD DOOM2
 
-IF /I "%CHOICE%" == "V" %LAUNCHER% /USE gzdoom-41 /IWAD DOOM2
-IF /I "%CHOICE%" == "W" %LAUNCHER% /USE gzdoom-42 /IWAD DOOM2
-IF /I "%CHOICE%" == "X" %LAUNCHER% /USE gzdoom-43 /IWAD DOOM2
-IF /I "%CHOICE%" == "Y" %LAUNCHER% /USE gzdoom-44 /IWAD DOOM2
-IF /I "%CHOICE%" == "Z" %LAUNCHER% /USE gzdoom-45 /IWAD DOOM2
-IF /I "%CHOICE%" == "6" %LAUNCHER% /USE gzdoom-46 /IWAD DOOM2
-IF /I "%CHOICE%" == "7" %LAUNCHER% /USE gzdoom-47 /IWAD DOOM2
-IF /I "%CHOICE%" == "8" %LAUNCHER% /USE gzdoom-48 /IWAD DOOM2
+IF /I "%CHOICE%" == "L" %LAUNCHER% /USE gzdoom-401 /IWAD DOOM2
+IF /I "%CHOICE%" == "M" %LAUNCHER% /USE gzdoom-402 /IWAD DOOM2
+IF /I "%CHOICE%" == "N" %LAUNCHER% /USE gzdoom-403 /IWAD DOOM2
+IF /I "%CHOICE%" == "O" %LAUNCHER% /USE gzdoom-404 /IWAD DOOM2
+IF /I "%CHOICE%" == "P" %LAUNCHER% /USE gzdoom-405 /IWAD DOOM2
+IF /I "%CHOICE%" == "Q" %LAUNCHER% /USE gzdoom-406 /IWAD DOOM2
+IF /I "%CHOICE%" == "R" %LAUNCHER% /USE gzdoom-407 /IWAD DOOM2
+IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-408 /IWAD DOOM2
+IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-409 /IWAD DOOM2
+IF /I "%CHOICE%" == "U" %LAUNCHER% /USE gzdoom-410 /IWAD DOOM2
+IF /I "%CHOICE%" == "V" %LAUNCHER% /USE gzdoom-411 /IWAD DOOM2
 
 GOTO :gzdoom
