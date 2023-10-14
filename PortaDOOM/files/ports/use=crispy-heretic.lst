@@ -1,6 +1,3 @@
 files\ports\crispy-heretic\
 files\config\default.crispy-heretic.cfg
 files\config\default.crispy-heretic.extra.cfg
-
-# which IWADs this engine supports:
-files\wads\heretic.ini

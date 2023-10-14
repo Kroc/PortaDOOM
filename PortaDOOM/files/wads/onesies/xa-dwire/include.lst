@@ -2,3 +2,4 @@ pages\dead.wire.dosmag
 files\wads\onesies\xa-dwire\
 # use specifically GZDoom v1.8
 @files\ports\use=gzdoom-108.lst
+files\wads\doom2.ini

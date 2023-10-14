@@ -2,3 +2,4 @@ pages\Waterlab GZD.dosmag
 files\wads\onesies\njwlgzd\
 # requires GZDoom v2.4+
 @files\ports\use=gzdoom-204.lst
+files\wads\doom2.ini

@@ -2,3 +2,4 @@ pages\Prime Directive.dosmag
 files\wads\episodes\ge5-pd\
 # use specifically GZDoom v2.0
 @files\ports\use=gzdoom-200.lst
+files\wads\doom2.ini

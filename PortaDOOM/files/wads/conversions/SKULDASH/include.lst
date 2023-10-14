@@ -2,3 +2,4 @@ pages\Skulldash.dosmag
 files\wads\conversions\SKULDASH\
 # use GZDoom v3.2 specifically to guarantee compatibility
 @files\ports\use=gzdoom-302.lst
+files\wads\doom2.ini

@@ -1,6 +1,3 @@
 files\ports\crispy-strife\
 files\config\default.crispy-strife.cfg
 files\config\default.crispy-strife.extra.cfg
-
-# which IWADs this engine supports:
-files\wads\strife1.ini

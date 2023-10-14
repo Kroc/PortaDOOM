@@ -4,3 +4,4 @@
 @files\ports\use=choco-heretic.lst
 @files\ports\use=crispy-heretic.lst
 @files\ports\use=gzdoom.lst
+files\wads\heretic.ini

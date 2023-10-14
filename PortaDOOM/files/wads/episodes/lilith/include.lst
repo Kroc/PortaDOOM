@@ -2,3 +2,4 @@ pages\lilith.pk3.dosmag
 files\wads\episodes\lilith\
 # REQUIRES ZDOOM, NO OTHER ENGINE WORKS!
 @files\ports\use=zdoom.lst
+files\wads\doom2.ini

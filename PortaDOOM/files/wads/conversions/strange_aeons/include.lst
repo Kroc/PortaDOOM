@@ -2,6 +2,7 @@ pages\Strange Aeons.dosmag
 files\wads\conversions\strange_aeons\
 # requires a ZDoom engine
 @files\ports\req=zdoom.lst
+files\wads\doom.ini
 # comes with option for High Noon Drifter mod
 # (that will require GZDoom in its include)
 @files\mods\HighNoonDrifter\include.lst

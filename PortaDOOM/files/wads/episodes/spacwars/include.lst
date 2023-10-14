@@ -3,3 +3,4 @@ files\wads\episodes\spacwars\
 # requires ZDoom or contemporary GZDoom version
 @files\ports\use=gzdoom-108.lst
 @files\ports\use=zdoom.lst
+files\wads\doom2.ini

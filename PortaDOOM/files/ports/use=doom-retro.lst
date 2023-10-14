@@ -1,8 +1,2 @@
 files\ports\doom-retro\
 files\config\default.doom-retro.cfg
-
-# which IWADs this engine supports:
-files\wads\doom.ini
-files\wads\doom2.ini
-files\wads\tnt.ini
-files\wads\plutonia.ini

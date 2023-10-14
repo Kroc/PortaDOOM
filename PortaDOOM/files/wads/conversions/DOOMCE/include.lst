@@ -3,3 +3,6 @@ files\wads\conversions\DOOMCE\
 
 # requires GZDoom v.411+
 @files\ports\use=gzdoom-411.lst
+
+# requires DOOM2.WAD (for PSX DOOM)
+files\wads\doom2.ini

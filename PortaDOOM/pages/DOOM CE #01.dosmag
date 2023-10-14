@@ -40,6 +40,8 @@ Since almost every feature is optional, the mod contains four presets for differ
 
 :Highlights:
 :===============================================================================
+(not all are included in PortaDOOM)
+
 - `PSX DOOM` software lighting emulation (brightness fades with distance)
 - `DOOM 64` with gradient and additive lighting. Can also be enabled in `PSX DOOM` too to give it a different look
 - Addons to restore the `PSX DOOM` aspect ratio and to use the Nintendo 64's 3-Point filter
@@ -51,9 +53,7 @@ Since almost every feature is optional, the mod contains four presets for differ
 - The Red and Green Demon Keys exclusive to the `Outcast Levels TC` are included in that episode
 - Choose to play with the dark ambient Console soundtrack, the action oriented PC soundtrack, or both, in which action fades into ambient after the music finishes
 - AI interpolated `DOOM 64` animations and `Smooth Doom` adapted to `PSX DOOM`
-- 2x AI upscaled textures.
-- PBR materials.
-- Brightmaps for sprites and textures.
+- Brightmaps for sprites and textures
 - Play with a fullscreen hud styled like `DOOM 64` or the default *GZDoom* hud
 - Ambient sounds for decorations (torches, barrels, etc)
 - Enemies and the player produce footstep sounds

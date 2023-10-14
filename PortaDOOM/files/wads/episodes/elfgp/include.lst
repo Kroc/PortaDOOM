@@ -1,4 +1,5 @@
 pages\Elf Gets Pissed.dosmag
 files\wads\episodes\elfgp\
-# use only Heretic-compatible engines!
-@files\ports\iwad=heretic.lst
+# even though this is Heretic-based, requires ZDoom+
+@files\ports\req=zdoom.lst
+files\wads\heretic.ini

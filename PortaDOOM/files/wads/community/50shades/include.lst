@@ -3,3 +3,4 @@ files\wads\community\50shades\
 # requires a boom-compatible *software*-renderer
 @files\ports\use=prboom-plus.lst
 @files\ports\use=zdoom.lst
+files\wads\doom2.ini
