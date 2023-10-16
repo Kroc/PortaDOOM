@@ -1,0 +1,130 @@
+- PSX FINAL DOOM CE / MAIN CREDITS -
+
+PSX DOOM TC Team
+	PSX DOOM TC v135 - https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/
+	PSX The Lost Levels v2017-4-9 - https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-lost-levels/
+
+DerTodIstEinDandy
+	Icon of Sin Fix - https://www.doomworld.com/forum/post/1843285
+
+ScottGray
+	MAP65 Fix - https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/?do=findComment&comment=1757157
+
+Gerardo194, Erick194, Chris194
+	DOOM Master Edition - https://www.doomworld.com/forum/topic/94139-update-v2-psxdoom-psxfinaldoom-doom64-on-gzdoom-gec-master-edition-dec-17-2018/
+
+id Software
+	The Ultimate DOOM, DOOM II & FINAL DOOM
+
+Williams
+	PSX FINAL DOOM
+
+Molecicco
+	PSX FINAL DOOM CE
+
+- PSX FINAL DOOM CE / RESOURCE CREDITS -
+*Many have been modified or adapted to fit this mod.
+
+Agent_Ash
+	Beautiful Doom - https://forum.zdoom.org/viewtopic.php?t=50004
+
+Bifurcator Studios
+	MURK - https://www.moddb.com/mods/murk
+
+BouncyTEM
+	Computer Machines - https://www.realm667.com/en/sound-factory-82669/others-mainmenu-172-25111#info
+
+D4D Development Group
+	D4D - https://www.moddb.com/mods/d4d-doom4-for-doom
+
+DBThanatos
+	Death Foretold - https://www.moddb.com/mods/death-foretold
+
+Denis Belmondo
+	ZScript Particle-Based Tracers - https://forum.zdoom.org/viewtopic.php?f=37&t=56821
+	Global Footsteps - https://forum.zdoom.org/viewtopic.php?f=105&t=60401
+
+Doomkid
+	DoomGuy Variants - https://forum.zdoom.org/viewtopic.php?f=37&t=62324
+
+Ezepov
+	Doom Skyboxes for GZDoom - https://forum.zdoom.org/viewtopic.php?f=46&t=53873
+
+Gerardo194, Erick194, Chris194
+	Wolfenstein SS Sound - https://www.doomworld.com/forum/topic/101161-gec-master-edition-psx-doom-for-the-playstation-beta-4-released-11162022/
+
+Gifty
+	Smooth Doom - https://forum.zdoom.org/viewtopic.php?t=45550
+	Dead Marine - https://forum.zdoom.org/viewtopic.php?t=58521
+
+Heliokabale
+	Icon of Sin Model - https://forum.zdoom.org/viewtopic.php?p=778849#p778849
+
+Kinsie
+	FancyWorld - https://forum.zdoom.org/viewtopic.php?f=46&t=56139
+
+MXDash
+	Improved Crash Sounds - https://www.moddb.com/mods/classic-doom-and-quake-voices
+
+Nash Muhandes
+	Nash's Gore Mod - https://forum.zdoom.org/viewtopic.php?t=62641
+
+osjclatchford
+	Icon of Sin 3D Blinking - https://www.moddb.com/mods/osjcs-doom-major-crisis/downloads/icon-of-sin-3d
+
+Pixel Eater
+	Icon of Sin 3D Reskin - https://forum.zdoom.org/viewtopic.php?f=60&t=36497&start=120
+	DPWipe - https://forum.zdoom.org/viewtopic.php?f=15&t=6247
+	Vanilla Essence - https://forum.zdoom.org/viewtopic.php?t=59412
+
+Pompous Seed
+	Doom with Sprinkles - https://forum.zdoom.org/viewtopic.php?f=43&t=64173
+
+Scuba Steve
+	Widescreen Replacements - https://forum.zdoom.org/viewtopic.php?f=46&t=67843&start=105#p1147818
+	Master Levels Widescreen Pics - https://www.doomworld.com/forum/topic/118804-master-levels-for-doom-ii-25th-anniversary-midi-pack/?do=findComment&comment=2252002
+
+Sergeant_Mark_IV
+	Ketchup Gore Mod - http://www.moddb.com/mods/brutal-doom/addons/ketchup-v5-gore-mod
+
+SidDoyle
+	Droplets - https://forum.zdoom.org/viewtopic.php?f=46&t=46509
+
+Sketchpunk Labs
+	Noise Distortion Fire - https://github.com/sketchpunk/FunWithWebGL2/tree/master/lesson_076_noise_distortion_fire
+
+Skulltag Team
+	Skulltag
+
+sylandro
+	StatsKeeper - https://forum.zdoom.org/viewtopic.php?f=37&t=56600
+	Resurrect - https://forum.zdoom.org/viewtopic.php?f=37&t=56903
+
+TheZombieKiller
+	BD Kick Attack - https://forum.zdoom.org/viewtopic.php?f=3&t=37949
+
+Virtue
+	DoomGirl Skin v2.0 - https://forum.zdoom.org/viewtopic.php?f=37&t=45175	
+
+z86
+	Particle Fire Enhancer Mod - https://forum.zdoom.org/viewtopic.php?f=46&t=28547
+
+ZionDreamTeam
+	ZION HD - https://www.moddb.com/mods/doom4-emulation
+
+- PSX FINAL DOOM CE / MUSIC CREDITS -
+
+Aubrey Hodges
+	PSX FINAL DOOM Original Soundtrack
+
+Peter
+	Master Levels for Doom II: 25th Anniversary MIDI Pack - https://www.doomworld.com/forum/topic/118804-master-levels-for-doom-ii-25th-anniversary-midi-pack/
+
+Cammy & Various
+	TNT: Evilution MIDI Pack - https://www.doomworld.com/forum/topic/121711-tnt-evilution-midi-pack-v10-released/
+
+Jimmy & Various
+	Plutonia MIDI Pack - https://www.doomworld.com/idgames/music/plutmidi
+
+Robert Prince
+	DOOM Unreleased Tracks - https://rome.ro/news/2015/12/16/doom-archaeology

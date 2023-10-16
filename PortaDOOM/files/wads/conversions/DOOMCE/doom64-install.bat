@@ -4,6 +4,7 @@ cd %~dp0
 setlocal ENABLEDELAYEDEXPANSION
 set patchdir=patcher
 if exist "%patchdir%\tmp" rmdir /q/s "%patchdir%\tmp"
+SET ERROR=0
 
 :wadfind
 echo Searching for DOOM64.WAD...
@@ -74,19 +75,19 @@ goto :success
 :failpatch
 echo [91mCould not generate DOOM64.IWAD. Make sure your Steam DOOM 64 WAD has not been manually modified before running this patch.[0m
 echo.
-PAUSE
+SET ERROR=1 & PAUSE
 goto :end
 
 :failassemble
 echo [91mCould not assemble the Lost Levels. Make sure your Steam DOOM 64 WAD has not been manually modified before running this patch.[0m
 echo.
-PAUSE
+SET ERROR=1 & PAUSE
 goto :end
 
 :notfound
 echo [91mFailed to find DOOM64.WAD. Make sure the Steam version of DOOM 64 is installed or copy its DOOM64.WAD in the same folder as this batch file.[0m
 echo.
-PAUSE
+SET ERROR=1 & PAUSE
 goto :end
 
 :success
@@ -95,8 +96,7 @@ echo.
 echo If gzdoom is installed elsewhere, copy the IWAD and PK3s to its location or the paths configured in its [IWADSearch.Directories] and [FileSearch.Directories].[0m
 echo.
 
-CALL %~dp0play.bat /GAME 3
-
 :end
 if exist "%patchdir%\tmp" rmdir /q/s "%patchdir%\tmp"
+EXIT /B %ERROR%
 REM pause

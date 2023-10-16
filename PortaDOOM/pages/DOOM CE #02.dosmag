@@ -1,11 +1,12 @@
 $NAV=Total Conversions
-$KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini" /GAME 1
-$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini"
+$KEY:R=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:C=SHELL:"wads\conversions\DOOMCE\credits-doom-ce.txt"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 
 :PSX DOOM CE + Lost Levels + No Rest For The Living
 :===============================================================================
-*[P] Play						 *[T] .txt [W] Website
+*[P] Play						 *[R] Readme [C] Credits [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2021>12>08	  Author : _molecicco_, Various
 :Levels   : *lots		   Modes : *Single, Co-op
@@ -21,3 +22,10 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 - *No Rest For The Living:* A reimagination of the Xbox mapset. The maps included here are based on conversions by _Dexiaz_ and _Salahmander2_ for the `PSX Doom TC`
 
 - *Bonus maps:* `Tech Gone Bad` and `Phobos Mission Control` by _BlackxZodiac13_, originally created for the `PSX Doom TC` (based on the maps by _John Romero_)
+
+:Community Campaigns:
+
+$KEY:1=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini" /GAME 2
+[1] *PlayStation DOOM Reloaded
+	:-----------------------------------------------------------------------
+	Two all-new 33-map campaigns in the `PSX DOOM` style created by _RHG 45_ and _Yikesdude754_

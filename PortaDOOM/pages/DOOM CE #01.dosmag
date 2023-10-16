@@ -1,33 +1,55 @@
 $NAV=Total Conversions
-$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:R=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
-$KEY:1=PAGE:#02
-$KEY:2=PAGE:#03
-$KEY:3=PAGE:#04
+$KEY:M=URL:https://www.moddb.com/mods/doom-ce/
+$KEY:A=PAGE:#02
+$KEY:B=PAGE:#03
+$KEY:C=PAGE:#04
 
 :DOOM CE: PSX TC & D64 Retribution, overhauled!
 :===============================================================================
-*[T] .txt [W] Website
+*[R] Readme [W] Website (Doomworld) [M] Website (ModDB)
 :-------------------------------------------------------------------------------
 This mod builds on the existing total conversions of `PlayStation DOOM` and `DOOM 64 for GZDoom`, `PSX DOOM TC` and `DOOM 64 Retribution`, to take advantage of the latest *GZDoom* versions and adds many features that make them more faithful but were impossible to implement at their time of release. To achieve this, a large amount of the code has been adapted from *GEC Master Edition* (also known as *DZDoom*), while looking at the reverse engineered code and existing source ports of these games for reference.
 
 Press [→] (change page) to view details on each included game,
 or select from below:
 
-[1] *PSX DOOM CE + Lost Levels + No Rest For The Living
-	:---------------------------------------------------------------------------
+[A] *PSX DOOM CE + Lost Levels + No Rest For The Living
+	:===========================================================================
 	The original `PlayStation DOOM`, expanded to include the missing PC levels + the XBOX addon campaign `No Rest For The Living`
 
-[2] *PSX Final DOOM CE + Lost Levels + Master Levels
+ *└→* *PlayStation DOOM Reloaded
 	:---------------------------------------------------------------------------
+	Two all-new 33-map campaigns in the `PSX DOOM` style created by _RHG 45_ and _Yikesdude754_
+
+[B] *PSX Final DOOM CE + Lost Levels + Master Levels
+	:===========================================================================
 	The original `PlayStation Final DOOM`, expanded to include the missing PC levels and the complete `Master Levels`
 
-[3] *DOOM 64 CE + Lost Levels + Bonus Campaigns
+ *└→* *PSX Final DOOM CE: Plutonia 2 & Plutonia Revisited Community Project
 	:---------------------------------------------------------------------------
+	Two campaigns adapted to `PSX DOOM` by _Cryo_
+
+[C] *DOOM 64 CE + Lost Levels + Bonus Campaigns
+	:===========================================================================
 	The original `DOOM 64`, expanded to include the _Nightdive_ remaster levels (if present) + three extra community campaigns
 
-:Feature Presets:
+ *└→* *Knee Deep in the Dead (Episode 1) for DOOM 64
+	:---------------------------------------------------------------------------
+	PC `DOOM`'s `Episode 1` redesigned for `DOOM 64` by _z0k_!
+
+ *└→* *PSX DOOM 64
+	:---------------------------------------------------------------------------
+	Play `PSX DOOM CE` with `DOOM 64` gameplay and textures!
+
+ *└→* *PSX Final DOOM 64
+	:---------------------------------------------------------------------------
+	Play `PSX Final DOOM CE` with `DOOM 64` gameplay and textures!
+
 :===============================================================================
+:Feature Presets:
+:-------------------------------------------------------------------------------
 Since almost every feature is optional, the mod contains four presets for different levels of enabled "enhancements". They can be selected by going into the *Features Menu* and choosing *Features Preset*. It is recommended to choose one before you start a new game.
 
 - *Faithful:* Features will be set as faithful as possible to the original
@@ -39,8 +61,8 @@ Since almost every feature is optional, the mod contains four presets for differ
 - *Experimental:* Same as Modern, but with new visuals and music style will change over time. In `PSX DOOM`, some monsters will have the same speed as in PC `DOOM`
 
 :Highlights:
-:===============================================================================
-(not all are included in PortaDOOM)
+:-------------------------------------------------------------------------------
+(not all are included in *PortaDOOM*)
 
 - `PSX DOOM` software lighting emulation (brightness fades with distance)
 - `DOOM 64` with gradient and additive lighting. Can also be enabled in `PSX DOOM` too to give it a different look

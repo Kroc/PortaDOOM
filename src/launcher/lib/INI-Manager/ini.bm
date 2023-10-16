@@ -346,11 +346,11 @@ FUNCTION ReadSetting$ (file$, __section$, __key$)
                     tempValue$ = LEFT$(tempValue$, Quote - 1)
                 END IF
             ELSE
-                IF IniAllowBasicComments THEN Comment = INSTR(tempValue$, "'") 'BASIC style comments accepted
-                IF Comment = 0 THEN Comment = INSTR(tempValue$, ";")
-                IF Comment > 0 THEN
-                    tempValue$ = LTRIM$(RTRIM$(LEFT$(tempValue$, Comment - 1)))
-                END IF
+                REM IF IniAllowBasicComments THEN Comment = INSTR(tempValue$, "'") 'BASIC style comments accepted
+                REM IF Comment = 0 THEN Comment = INSTR(tempValue$, ";")
+                REM IF Comment > 0 THEN
+                REM     tempValue$ = LTRIM$(RTRIM$(LEFT$(tempValue$, Comment - 1)))
+                REM END IF
             END IF
         ELSE
             IniCODE = 2

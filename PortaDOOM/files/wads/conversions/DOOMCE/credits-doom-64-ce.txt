@@ -1,0 +1,156 @@
+- DOOM 64 CE / MAIN CREDITS -
+
+Nevander
+	DOOM 64: Retribution v1.5 - https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/
+
+Gerardo194, Erick194, Chris194
+	DOOM Master Edition - https://www.doomworld.com/forum/topic/94139-update-v2-psxdoom-psxfinaldoom-doom64-on-gzdoom-gec-master-edition-dec-17-2018/
+
+Nightdive Studios
+	The Lost Levels - https://store.steampowered.com/app/1148590/DOOM_64/
+
+Kaiser
+	The Absolution TC - http://www.doom2.net/doomdepot/abs-about.html
+
+Steven Searle, Melissa McGee, Henri Leto, Maverick
+	Absolution TC Custom Maps - http://www.classicdoom.com/hosted/psyren/d64tc-cm.htm
+
+thexgiddoomerx
+	Outcast Levels (and Other TC Maps) for DOOM 64 EX - https://www.tapatalk.com/groups/doom64ex/outcast-redemption-denied-and-reckonking-maps-upda-t191.html
+
+Midway
+	DOOM 64
+
+Molecicco
+	DOOM 64 CE
+	
+Play Testers
+	86232and
+	Crob4r
+	Immorpher
+	Moki
+	Steppskie
+	Styd051
+	Zoya
+
+- DOOM 64 CE / RESOURCE CREDITS -
+*Many have been modified or adapted to fit this mod.
+
+BeardedDoomGuy
+	Widescreen Ending Art - https://twitter.com/beardeddoomguy/status/1461906280029769728
+
+Bifurcator Studios
+	MURK - https://www.moddb.com/mods/murk
+
+Boondorl
+	Doom 64 Classic - https://www.doomworld.com/forum/topic/106749-doom-64-classic-a-gameplay-overhaul-for-doom-64-retribution/
+
+BouncyTEM
+	Computer Machines - https://www.realm667.com/en/sound-factory-82669/others-mainmenu-172-25111#info
+
+Clehpton
+	Mugshot Replacement - https://twitter.com/clehpton/status/1639996661966553088
+
+Craneo
+	Archvile Fire, Evil Eye, Hanging Twitch, Head Candles, Tech Pillar, Spawn Shot, Spider Mastermind Sprites - https://forum.zdoom.org/viewtopic.php?f=37&t=65146&p=1108947
+	
+Craneo & Korp
+	Chaingunner Sprites - https://forum.zdoom.org/viewtopic.php?f=37&t=65146&p=1108947
+	
+Cyanide
+	Shades of Doom - https://forum.zdoom.org/viewtopic.php?f=43&t=57310&sid=5dee40171c03735ed8e7f82c8fb3d2d5
+
+D4D Development Group
+	D4D - https://www.moddb.com/mods/d4d-doom4-for-doom
+
+DBThanatos
+	Death Foretold - https://www.moddb.com/mods/death-foretold
+
+December Man
+	Cosmetic Doom - https://forum.zdoom.org/viewtopic.php?f=46&t=32622
+
+Denis Belmondo
+	Global Footsteps - https://forum.zdoom.org/viewtopic.php?f=105&t=60401
+
+DrDoctor
+	A bunch of Doom 64 Sprites - https://forum.zdoom.org/viewtopic.php?f=37&t=54369
+
+DrPySpy
+	Archvile and Revenant sprites - https://forum.zdoom.org/viewtopic.php?f=37&t=68009
+
+Footman
+	Doom 64 Stuff - https://forum.zdoom.org/viewtopic.php?f=45&t=24952&sid=ba4cef670a5d475e2825c364b874189b
+	Doom 64 TC Exclusive Maps - https://www.tapatalk.com/groups/doom64ex/doom-64-tc-exclusive-maps-t1.html
+
+Gerardo194, Erick194, Chris194
+	Wolfenstein SS Sound - https://www.doomworld.com/forum/topic/101161-gec-master-edition-psx-doom-for-the-playstation-beta-4-released-11162022/
+
+Gibbon
+	The one true TESTA0 - https://github.com/atsb/Doom64EX-Plus/commit/1f2019ccea50cc1ade7c4002ccd9fc951e92b6dc
+
+Gifty
+	Dead Marine - https://forum.zdoom.org/viewtopic.php?t=58521
+
+Immorpher
+	Morph64
+	High Quality Cloud Texture
+	Lost Levels Introduction Text
+
+Kinsie
+	FancyWorld - https://forum.zdoom.org/viewtopic.php?f=46&t=56139
+
+Nash Muhandes
+	Nash's Gore Mod - https://forum.zdoom.org/viewtopic.php?t=62641
+
+NightFright
+	Smooth Weapons Enhanced - https://forum.zdoom.org/viewtopic.php?f=43&t=32628
+
+Pixel Eater
+	DPWipe - https://forum.zdoom.org/viewtopic.php?f=15&t=6247
+	Vanilla Essence - https://forum.zdoom.org/viewtopic.php?t=59412
+
+Pompous Seed
+	Doom with Sprinkles - https://forum.zdoom.org/viewtopic.php?f=43&t=64173
+
+Sergeant_Mark_IV
+	Brutal DOOM 64 - http://www.moddb.com/mods/brutal-doom-64
+	Ketchup Gore Mod - http://www.moddb.com/mods/brutal-doom/addons/ketchup-v5-gore-mod
+
+Sgt. Shivers
+	Final Doomer + - https://forum.zdoom.org/viewtopic.php?f=43&t=55061
+
+SFJake
+	Doom 64 Absolution MP - http://sfjake.byethost7.com/doom64.html?i=1
+
+SidDoyle
+	Droplets - https://forum.zdoom.org/viewtopic.php?f=46&t=46509
+
+Sketchpunk Labs
+	Noise Distortion Fire - https://github.com/sketchpunk/FunWithWebGL2/tree/master/lesson_076_noise_distortion_fire
+
+sylandro
+	StatsKeeper - https://forum.zdoom.org/viewtopic.php?f=37&t=56600
+	Resurrect - https://forum.zdoom.org/viewtopic.php?f=37&t=56903
+
+Velaron
+	Wolfenstein 3D HQ Sprites - https://forum.zdoom.org/viewtopic.php?f=37&t=52873
+
+z86
+	Particle Fire Enhancer Mod - https://forum.zdoom.org/viewtopic.php?f=46&t=28547
+	
+ZionDreamTeam
+	ZION HD - https://www.moddb.com/mods/doom4-emulation
+
+- DOOM 64 CE / MUSIC CREDITS -
+
+Aubrey Hodges
+	DOOM 64 Original Soundtrack
+
+Various
+	Doom 64 for Doom II Soundtrack - https://www.doomworld.com/idgames/levels/doom2/megawads/d64d2
+
+northivanastan & Various
+	Ultimate MIDI Pack - https://www.doomworld.com/forum/topic/120788-milestone-2-ultimate-midi-pack-a-community-music-replacement-for-the-original-doom/
+
+Doomkid & Various
+	.MID the way id did - https://www.doomworld.com/forum/topic/117225-mid-the-way-id-did-doom-2-soundtrack-replacement-wip/

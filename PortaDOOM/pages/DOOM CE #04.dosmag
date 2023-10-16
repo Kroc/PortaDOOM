@@ -1,17 +1,26 @@
 $NAV=Total Conversions
-$REM=LOCATE AND GENERATE DOOM64.IWAD FIRST!
-$KEY:P=SHELL:"wads\conversions\DOOMCE\doom64-install.bat"
-$KEY:T=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$REM=NOTE: LOCATE AND GENERATE DOOM64.IWAD FIRST!
+$KEY:P=SHELL:"wads\conversions\DOOMCE\play-doom-64-ce.bat"
+$KEY:R=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
+$KEY:C=SHELL:"wads\conversions\DOOMCE\credits-doom-64-ce.txt"
 $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 
 :DOOM 64 CE + Lost Levels + Bonus Campaigns
 :===============================================================================
-*[P] Play						 *[T] .txt [W] Website
+*[P] Play						 *[R] Readme [C] Credits [W] Website
 :-------------------------------------------------------------------------------
 :Released : *2021>12>08	  Author : _molecicco_, Various
 :Levels   : *lots		   Modes : *Single, Co-op
 :Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
 :-------------------------------------------------------------------------------
+
+$KEY:G=URL:https://www.gog.com/game/doom_64
+$KEY:S=URL:https://store.steampowered.com/app/1148590/DOOM_64/
+$KEY:E=URL:https://store.epicgames.com/p/doom-64
+$REM=
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE DOOM 64!
+! :-----------------------------------------------------------------------------
+! If you own _"DOOM 64"_, on [G: GOG], [S: Steam] or [E: Epic Games] and have it installed, it will be detected automatically
 
 :Included Maps:
 
@@ -26,3 +35,20 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 - *The Reckoning:* A 2008 mapset by _Steven Searle_ for the `Absolution TC`. These maps included here are based on conversions made by _thexgiddoomerx_ for *Doom 64 EX*
 
 - *Bonus maps:* `Waste Processing` and `Mining Front` by _Maverick_ and `Temple Ruins` and `Temple Grounds` by _Henri Leto_, standalone maps made for the `Absolution TC`, are included. They are based on conversion made by _thexgiddoomerx_ for *Doom 64 EX*
+
+:Community Campaigns:
+
+$KEY:1=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-64-ce.ini" /GAME 2
+$KEY:2=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-64-ce.ini" /GAME 3
+$KEY:3=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-64-ce.ini" /GAME 4
+[1] *Knee Deep in the Dead (Episode 1) for DOOM 64
+	:---------------------------------------------------------------------------
+	PC `DOOM`'s `Episode 1` converted to `DOOM 64` aesthetics by _z0k_!
+
+[2] *PSX DOOM 64
+	:---------------------------------------------------------------------------
+	Play `PSX DOOM` with `DOOM 64` gameplay and textures!
+
+[3] *PSX Final DOOM 64
+	:---------------------------------------------------------------------------
+	Play `PSX Final DOOM` with `DOOM 64` gameplay and textures!

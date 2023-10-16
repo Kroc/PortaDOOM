@@ -5,12 +5,12 @@
 '=============================================================================
 SUB scrollDown
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     'can't scroll if already at the bottom
     DIM pageBottom%
     pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
-    IF PageLine% = pageBottom% THEN BEEP: EXIT SUB
+    IF PageLine% = pageBottom% THEN scrollBeep: EXIT SUB
 
     'move the page
     PageLine% = PageLine% + 3
@@ -23,10 +23,10 @@ END SUB
 '=============================================================================
 SUB scrollUp
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     'can't scroll up if already at the top
-    IF PageLine% = 1 THEN BEEP: EXIT SUB
+    IF PageLine% = 1 THEN scrollBeep: EXIT SUB
 
     'move the page
     PageLine% = PageLine% - 3
@@ -39,14 +39,14 @@ END SUB
 '=============================================================================
 SUB scrollPageDown
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     '(can't scroll past the last line of text)
     DIM pageBottom%
     pageBottom% = PageLineCount% - PAGE_HEIGHT + 1
 
     'can't scroll down if at the bottom already
-    IF PageLine% = pageBottom% THEN BEEP: EXIT SUB
+    IF PageLine% = pageBottom% THEN scrollBeep: EXIT SUB
     'move the page and redraw
     PageLine% = PageLine% + PAGE_HEIGHT
     IF PageLine% > pageBottom% THEN PageLine% = pageBottom%
@@ -57,10 +57,10 @@ END SUB
 '=============================================================================
 SUB scrollPageUp
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     'can't scroll up if at the top already
-    IF PageLine% = 1 THEN BEEP: EXIT SUB
+    IF PageLine% = 1 THEN scrollBeep: EXIT SUB
     'move the page and redraw
     PageLine% = PageLine% - PAGE_HEIGHT
     IF PageLine% < 1 THEN PageLine% = 1
@@ -71,7 +71,7 @@ END SUB
 '=============================================================================
 SUB scrollTop
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     PageLine% = 1
     refreshScreen
@@ -81,7 +81,7 @@ END SUB
 '=============================================================================
 SUB scrollBottom
     'can't scroll if there is no scrollbar!
-    IF PageLineCount% <= PAGE_HEIGHT THEN BEEP: EXIT SUB
+    IF PageLineCount% <= PAGE_HEIGHT THEN scrollBeep: EXIT SUB
 
     PageLine% = PageLineCount% - PAGE_HEIGHT + 1
     refreshScreen
@@ -110,4 +110,13 @@ SUB scrollTo (line_num%)
     refreshScreen
 END SUB
 
-
+'beep when hitting scroll limits, but only once
+'=============================================================================
+SUB scrollBeep
+    STATIC BeepLine% 'last scroll position that caused the beep
+    
+    IF PageLine% <> BeepLine% THEN
+        LET BeepLine% = PageLine%
+        BEEP
+    END IF
+END SUB
