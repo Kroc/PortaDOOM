@@ -1,13 +1,18 @@
 $THEME=RED
-$TITLE=5 Years of Doom
-$KEY:E=GOTO:5 Years of Doom
+$TITLE=10 Years of Doom
+$KEY:E=GOTO:10 Years of Doom
 
-:THE CACOWARDS :: 5 YEARS OF DOOM
+:THE CACOWARDS :: 10 YEARS OF DOOM
 :-------------------------------------------------------------------------------
-*[E] Enter "5 Years of Doom" 
+*[E] Enter "10 Years of Doom" 
 :===============================================================================
-Set the wayback machine to 1998, to simpler times and smaller communities. It's just 5 years since DOOM landed and nobody is aware just how far this unstoppable juggernaut is going to go in the future.
 
-:ARTICLES:		*"The Doom Bible"*, *"The Top Ten Doom Level Makers"*,\\*"ZDoom Preview"*, *"glDoom Preview"*
+:ARTICLES:
 
-:INTERVIEWS:	_John Romero_, _Ty Halderman_, _Justin Fisher_, _Tim Willits_, _Dario Casali_, _Bow_ (Banjo Software), _Anthony Czerwonka_, _Iikka Keranen_, _Harry Teasley_, _Sverre Kvernmo_, _John Bye_, _T. Eliot Cannon_, _Mike Gummelt_, _Joel Huenik_
+- *"The Art of Demo Making"*
+- *"A (slightly condensed) Genealogy of Doom Source Ports"*
+- *"Ten Years of WADS"*
+- The Lighter Side - *"The Doom Comic"*
+- The Lighter Side - *"Top 10 Infamous Wads"*
+- The Lighter Side - *"Start to Crate"*
+- *"Ten Years of /newstuff"* - The /newstuff Chronicles #159

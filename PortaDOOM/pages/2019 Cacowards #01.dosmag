@@ -1,0 +1,48 @@
+$THEME=BLACK
+$TITLE=Introduction
+
+^C:CACOWARDS - CELEBRATING THE BEST OF DOOM IN 2019
+
+:-------------------------------------------------------------------------------
+
+:Table of Contents:
+$KEY:E=PAGE:#02
+$KEY:T=PAGE:#03
+$KEY:R=PAGE:#13
+$KEY:M=PAGE:#14
+$KEY:G=PAGE:#15
+$KEY:O=PAGE:#16
+$KEY:S=PAGE:#17
+$KEY:I=PAGE:#19
+
+ -     *Introduction* ............................................... pg.1
+ - [E] *Espi Lifetime Award for Achievement* ........................ pg.2
+ - [T] *Top Ten pt.I-X* ............................................. pg.3-12
+ - [R] *Runners Up* ................................................. pg.13
+ - [M] *Multiplayer Awards* ......................................... pg.14
+ - [G] *Gameplay Mod Awards* ........................................ pg.15
+ - [O] *Other Awards* ............................................... pg.16
+ - [S] *The Side Column pt.I-II* .................................... pg.17-18
+ - [I] *Index* ...................................................... pg.19
+
+:-------------------------------------------------------------------------------
+
+^C:INVOCATION
+
+*The sugar rush of Doom's 25th anniversary has worn off,* and we've arrived at the much more pedestrian 26th anniversary. There were some whispers that maybe the Doom community's collective output would take a breather in 2019 - but, if anything, the opposite has occurred, and we have a bumper crop of Cacoward picks this year once again.
+
+$KEY:1=URL:https://terminusest13.itch.io/hellshots-golf
+In programming news, _TerminusEst13_ has moved onto greener... [1: greens?]... and has also moved on from Cacowarding. Since the rest of the team are all Doomworld purist snobs, we have enlisted the help of _Marisa Kirisame_ to enlighten and inform us all on the state of affairs on the Z-side of the community. Please bid her welcome!
+
+^R- _Linguica_
+
+:-------------------------------------------------------------------------------
+
+^C:SHAMELESS ADVERTISEMENT
+
+$KEY:2=URL:https://www.doomworld.com/25years/the-roots-of-doom-mapping/
+As the final torrent of content for our 25 Years of Doom celebration, we are also proud to present [2: The Roots of Doom Mapping: An Evolution of Level Design Through the Most Influential WADs Ever Made]. It is a 30,000-word dissertation on the history of Doom WADcraft, from 1994 to the present, brought to you by _Not Jabba_.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/
+:source [#: www.doomworld.com/cacowards/2019/]

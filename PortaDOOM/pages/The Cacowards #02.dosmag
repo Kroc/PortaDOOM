@@ -1,17 +1,17 @@
 $THEME=RED
-$TITLE=2018
-$KEY:E=GOTO:2018 Cacowards
+$TITLE=2019
+$KEY:E=GOTO:2019 Cacowards
 
-:2018 CACOWARDS :: CACOWARDS 25
+:2019 CACOWARDS :: CELEBRATING THE BEST OF DOOM IN 2019
 :-------------------------------------------------------------------------------
-*[E] Enter the 2018 Cacowards 
+*[E] Enter the 2019 Cacowards 
 :===============================================================================
-- *TOP TEN:* `Avactor`: _Eradrop_, `Dark Universe Pt.1`: _Payload4367_, `The Adventures of Square Ep.2`: _BigBrik Games_, `Preacher`: _Darch_, `Dimensions of the Boomed`: _Urthar_, `Struggle - Antaresian Legacy`: _antares031_, `REKKR`: _Revae_ (et al), `Maskim Xul`: _Obsidian_, `Doom: The Golden Souls 2`: _Batandy_, `UAC Invasion: The Supply Depot`: _DooMknight_
+- *TOP TEN:* `Eviternity`: _Dragonfly_ (et al), `Verdant Citadel`: _exl_, `Paradise`: _Tango_, `Hell Forged`: _Amuscaria_, `Finely Crafted Fetish Film`: _Ribbiks_, `Hocus Pocus Doom`: _rf_, `Shotgun Symphony`: _Steve D_, `Lost Civilization`: _Jaska_, `Remnant`: _Aurelius_, `The Wayfarer`: _Not Jabba_
 
-- *RUNNERS UP:* `Exomoon`: _Deadwing_, `Man on the Moon`: _Yugiboy85_, `Umbra of Fate`: _YukiRaven_, `Port Glacia`: _an_mutt_, `Magnolia`: - _Ribbiks_, `The Alfonzone`: _Pinchy_, `Ashes 2063 Ep.1`: _Vostyok_, `Demonastery`: _Nootrac4571_, `Doom 404`: _Capellan_, `Cryogenics`: _bemused_
+- *RUNNERS UP:* `Infraworld: The Hatehammer`: _StormCatcher.77_, `Lunar Catastrophe`: _Miss Bubbles_ & _Count651_, `The Slaughter Spectrum`: _Bridgeburner56_, `Darkest Room`: _Paul977_, `Cyb's Freaky Colonoscopy`: _Big Ol Billy_ (et al), `Alienated`: _Lorenz0_, `Doom Zero`: _DASI-I_, `Entropy`: _Nirvana_, `Sigil`: _John Romero_, `Doom 3: Phobos`: _Team Future_
 
-- *MULTIPLAYER AWARDS:* `Quake Champions: Doom Edition`: _DBThanatos_ & _Michaelis_
+- *MULTIPLAYER AWARDS:* `32in24-17`: _YEDS Team_, `NeomDM`: _Machanix Union_
 
-- *GAMEPLAY MOD AWARDS:* `Guncaster`: _Pillowblaster_ (et al), `Netronian Chaos`: _Captain J_, `GMOTA`: _Combine_Kegan_ / *MORDETH AWARD* + *THE SPACESHIP OF THESEUS*: `Total Chaos`: _wadaholic_ / *CODEAWARD:* `Doom Builder X`: _anotak_ / *MACHAWARD:* `Mr. Friendly`: _JP LeBreton_
+- *GAMEPLAY MOD AWARDS:* `Doom 4 Vanilla`: _Noiser_ (et al), `Lt. Typhon`: _Skelegant_, `NAKU NARU`: _Naku Team_ / *MORDETH AWARD:* `Sonic Robo Blast 2`: _Sonic Team Jr._ / *THE SPACESHIP OF THESEUS:* `Hedon`: _Zan_ / *CODEAWARD:* `Doom Neural Upscale 2X`: _hidfan_ (et al) / *MACHAWARD:* Mikoportals: _Mikolah_
 
-- *CREATOR OF THE YEAR:* _Revae_
+- *CREATOR OF THE YEAR:* _Ola "ukiro" Björling_

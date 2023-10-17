@@ -40,10 +40,11 @@ ECHO  Select Release to Build:
 ECHO:
 ECHO     [A]  All
 ECHO:
-ECHO     [B]  Cacowards: 2018
-ECHO     [C]  Cacowards: 2017
-ECHO     [D]  Cacowards: 2016
-ECHO     [E]  Cacowards: 2015
+ECHO     [B]  Cacowards: 2019
+ECHO     [C]  Cacowards: 2018
+ECHO     [D]  Cacowards: 2017
+ECHO     [E]  Cacowards: 2016
+ECHO     [F]  Cacowards: 2015
 ECHO     [5]  Cacowards: 5 Years of Doom
 ECHO:
 ECHO     [P]  PSX DOOM TC
@@ -55,10 +56,11 @@ ECHO:
 SET "$="
 SET /P "$=Enter choice: "
 IF /I "%$%" == "A" CALL :do_release_all
-IF /I "%$%" == "B" CALL :do_release_cacowards "2018"
-IF /I "%$%" == "C" CALL :do_release_cacowards "2017"
-IF /I "%$%" == "D" CALL :do_release_cacowards "2016"
-IF /I "%$%" == "E" CALL :do_release_cacowards "2015"
+IF /I "%$%" == "B" CALL :do_release_cacowards "2019"
+IF /I "%$%" == "C" CALL :do_release_cacowards "2018"
+IF /I "%$%" == "D" CALL :do_release_cacowards "2017"
+IF /I "%$%" == "E" CALL :do_release_cacowards "2016"
+IF /I "%$%" == "F" CALL :do_release_cacowards "2015"
 IF /I "%$%" == "5" CALL :do_release_5yearsofdoom
 IF /I "%$%" == "P" CALL :do_release_psxdoomtc
 IF /I "%$%" == "Q" CALL :do_release_doomce
@@ -167,6 +169,7 @@ CALL :do_cacowards "2015"
 CALL :do_cacowards "2016"
 CALL :do_cacowards "2017"
 CALL :do_cacowards "2018"
+CALL :do_cacowards "2019"
 CALL :do_psxdoomtc
 CALL :do_doomce
 CALL :do_launcher

@@ -1,7 +1,7 @@
 pages\DOOM CE #??.dosmag
 files\wads\conversions\DOOMCE\
 
-# requires GZDoom v.411+
+# requires GZDoom v4.11+
 @files\ports\use=gzdoom-411.lst
 
 # requires DOOM2.WAD (for PSX DOOM)
