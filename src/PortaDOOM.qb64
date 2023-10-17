@@ -330,7 +330,7 @@ DO
         DIM keycode%: LET keycode% = ASC(key$)
 
         'ESC - quit instantly
-        IF keycode% = ASC_ESC THEN SYSTEM
+        IF keycode% = ASC_ESC THEN CALL exitYN
 
         'special key?
         IF keycode% = 0 THEN
@@ -884,6 +884,101 @@ SUB launchURL (url$)
                             _FULLSCREEN _OFF
                         END IF
                     END IF
+            END SELECT
+
+            'clear the keyboard buffer
+            DO WHILE INKEY$ <> "": LOOP
+        END IF
+    LOOP
+
+    LET dialogOn` = FALSE
+    CALL refreshScreen
+END SUB
+
+'display a confirmation screen for exiting (ESC)
+'=============================================================================
+SUB exitYN
+    'set the width of the dialogue box
+    'NOTE: this is the internal width, 'width of text',
+    '      padding and border will be added automatically
+    LET dialogWidth = 32
+    CALL STRGUI_Begin
+    
+    DIM msg$
+    LET dialogHeight = 3
+    RANDOMIZE TIMER
+    SELECT CASE INT(RND * 15)
+    CASE 0:
+        LET msg$ = "Are you sure you want to quit^{N}this great game?"
+    CASE 1:
+        LET msg$ = "Please don't leave, there's^{N}more demons to toast!"
+    CASE 2:
+        LET msg$ = "Let's beat it -- this is^{N}turning into a bloodbath!"
+    CASE 3:
+        LET msg$ = "I wouldn't leave if I were you.^{N}Windows is much worse."
+    CASE 4:
+        LET msg$ = "You're trying to say you like^{N}Windows better than me, right?"
+    CASE 5:
+        LET msg$ = "Don't leave yet -- there's a^{N}demon around that corner!"
+    CASE 6:
+        LET msg$ = "Ya know, next time you come^{N}in here I'm gonna toast ya."
+    CASE 7:
+        LET msg$ = "Go ahead and leave.^{N}See if I care."
+    CASE 8:
+        LET msg$ = "You want to quit?^{N}Then, thou hast lost an eighth!"
+    CASE 9:
+        LET msg$ = "Don't go now, there's^{N}a dimensional shambler^{N}waiting in Explorer!"
+        LET dialogHeight = 4
+    CASE 10:
+        LET msg$ = "Get outta here and go back^{N}to your boring programs"
+    CASE 11:
+        LET msg$ = "If I were your boss, I'd^{N}deathmatch ya in a minute!"
+    CASE 12:
+        LET msg$ = "Look, bud. you leave now and^{N}you forfeit your body count!"
+    CASE 13:
+        LET msg$ = "Just leave. when you come back,^{N}I'll be waiting with a bat."
+    CASE 14:
+        LET msg$ = "You're lucky I don't smack you^{N}for thinking about leaving."
+    END SELECT
+    STRGUI_Add msg$ + "^{N,N}"
+
+    LET dialogText$ = STRGUI.Compile$
+    
+    LET dialogOn` = TRUE
+    CALL refreshScreen
+    BEEP
+
+    '-------------------------------------------------------------------------
+    DO
+        'limit this processing loop to 30 fps to reduce CPU usage
+        _LIMIT 30
+        'wait for any key press
+        SLEEP
+
+        DIM key$: key$ = INKEY$
+        IF key$ <> "" THEN
+            SELECT CASE ASC(UCASE$(key$))
+                CASE ASC_Y
+                    'close the program
+                    SYSTEM
+
+                'allow switching fullscreen during dialog
+                CASE 0
+                    IF ASC(key$, 2) = ASC_F11 THEN
+                        'flip the full-screen mode
+                        IF _FULLSCREEN = 0 THEN
+                            'use 1:1 pixel sizing as best as possible;
+                            '(the other option blurs the picture)
+                            _FULLSCREEN _SQUAREPIXELS
+                        ELSE
+                            _FULLSCREEN _OFF
+                        END IF
+                    END IF
+                
+                CASE ELSE
+                    'any non-Y key is treated as NO!
+                    'return to main screen
+                    EXIT DO
             END SELECT
 
             'clear the keyboard buffer
