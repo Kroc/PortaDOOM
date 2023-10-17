@@ -1,0 +1,324 @@
+﻿===========================================================================
+Advanced engine needed  : PrBoom+ or GZdoom.
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Eviternity (Final version)
+Filename                : Eviternity.zip
+Release date            : February 10th, 2019
+Author                  : Dragonfly et al
+Email Address           : [redacted]
+Other Files By Author   : Skulldash, Order of the Odonata, many contributions
+                          to other projects over the years.
+Misc. Author Info       : Web & Graphic Designer, Amateur Drummer, Doom
+                          Mapper since 2005.
+
+Description             : Eviternity is a megawad comprised of six 5-map
+                          episodes (called Chapters) plus two secret maps.
+                          This project exclusively uses OTEX, a brand new
+                          high quality texture pack by ukiro.
+                          
+                          Eviternity's six chapters explore a series of
+                          unique and varied themes, each featuring classic
+                          gameplay with an interest in making each map hold
+                          its own unique identity and personality. The
+                          themes are "Medieval", "Techbase", "Icy Castles",
+                          "Industrial / Brutalism", "Hell / Gore / Alien" and
+                          "Heaven".
+                          
+                          This project was created as a birthday gift to
+                          Doom, which is celebrating its 25th birthday the day
+                          this was first released ("RC1", Released on December
+                          10th, 2018. The texture pack used in this project,
+                          OTEX, was also released on the same day - so please
+                          do not use Eviternity as a base for your wads & mods.
+                          While mostly being a "Dragonfly project", with 24
+                          maps being made or heavily worked on by myself, I
+                          present to you a mighty lineup of well-known guest
+                          mappers who have crafted beautiful and fun levels.
+
+                          This version includes a large amount of bug fixes and
+                          tweaks compared to the original Release Candidate 1.
+                          
+                          I hope you enjoy Eviternity, thanks for downloading
+                          & playing!
+
+Additional Credits to   : Those who mapped for Eviternity are as follows:
+                          
+                          MAP04, MAP09:
+                          James "Jimmy" Paddock
+                          (MAP04 is a collaboration with Dragonfly)
+                          
+                          MAP10:
+                          Derek "Afterglow" MacDonald
+                          (A Dragonfly map with a detail pass by Afterglow)
+                          
+                          MAP13, MAP18:
+                          James "an_mutt" Collins
+                          (MAP13 and MAP18 are collaborations with Dragonfly)
+                          
+                          MAP14:
+                          Seongbae "antares031" Park
+                          
+                          MAP15:
+                          AtroNx
+                          
+                          MAP19:
+                          StormCatcher.77
+                          
+                          MAP24:
+                          Brett "Mechadon" Harrell 
+                          
+                          MAP26:
+                          Xaser Acheron
+                          
+                          MAP29:
+                          Tristan "Eris Falling" Clark
+                          (MAP29 is a collaboration with Dragonfly)
+                          
+                          MAP31:
+                          Paul "skillsaw" DeBruyne
+                          
+                          MAP32:
+                          Ola "ukiro" Björling
+                          
+                          All other maps: Joshua "Dragonfly" O'Sullivan
+                           
+                          ---- 
+                          
+                          In the music department we have some talented
+                          members of the community. Some music is bespoke,
+                          and others are previously made pieces music that
+                          suited the maps perfectly. The music credits are as
+                          follows:
+                          
+                          MAP01: Midnight Call - Mark Klem
+                          
+                          MAP02: Octarine - Jimmy
+                          
+                          MAP03: Fluid Motion - Jimmy
+                          
+                          MAP04: Ancient Sovereigns - Jimmy
+                          
+                          MAP05: Sacred Light - Jimmy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP06: Digital Bitchslap - Alfonzo
+                          
+                          MAP07: Pistons - Jimmy
+                          
+                          MAP08: Gutter Penny - Alfonzo
+                          
+                          MAP09: Wheezer - Alfonzo
+                          
+                          MAP10: Motion Machine - Jimmy
+                          
+                          MAP11: ice.mid - Dial Up For Murder
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP12: Gemstones - Jimmy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP13: Polar Expedition - Stewboy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP14: Frozen Wilderness - Tristan "Eris Falling"
+                          Clark
+                          
+                          MAP15: Restless Restless - Stewboy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP16: All Systems Agogo - Alfonzo
+                          
+                          MAP17: Rotted Roots - Jimmy
+                          
+                          MAP18: Impermanence - Brayden "AD_79" Hart
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP19: Brutal Schism - Jimmy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP20: Thanatos - Tristan "Eris Falling" Clark
+                          
+                          MAP21: Everything Explodes - Jimmy
+                          *MODIFIED FOR EVITERNITY*
+                          
+                          MAP22: Waves of Intrigue (v2) - Kyle "Nabernizer"
+                          Dobson
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP23: Pearlescent - Jimmy
+                          
+                          MAP24: Ghostgrinder - Jimmy
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP25: Slave - Jimmy - MIDI Rendition of a song by
+                          Leprous
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP26: Gonzu - Kniggit
+                          
+                          MAP27: Imaginarium - Stewboy
+                          
+                          MAP28: Temporal Tower - Pokémon Mystery Dungeon
+                          
+                          MAP29: The Godhood Suite (Full) - Jimmy
+                          
+                          MAP30: Eviternity - Tristan "Eris Falling" Clark
+                          *BESPOKE FOR EVITERNITY*
+                          
+                          MAP31: Land of Able - Mark Klem
+                          
+                          MAP32: Epitome XIV - Yash Bhandari - MIDI Rendition
+                          of a song by Blut Aus Nord - Converted by Scotty
+                          *CONVERTED FOR EVITERNITY*
+                          
+                          Intermission / End Game Screens: Death's Toll -
+                          Stewboy
+                          
+                          Title Screen: Entering Eternity - Jimmy
+                          *BESPOKE FOR EVITERNITY*
+						  
+                          ----
+                          
+                          This project has had various assets made for it
+                          and/or borrowed from other works. Thanks to the
+                          extra support from the following people:
+                          
+                          Cage
+                          M_Doom & TITLEPIC graphics
+                          
+                          ukiro
+                          Multiple requests for OTEX, Tree Sprites,
+                          Archangelus sound effect voice "acting",
+                          various sprite edits
+                          
+                          CWolf
+                          Firestick replacements
+                          
+                          FuzzballFox
+                          Keycard Graphics
+                          
+                          Bauul & Jimmy
+                          general WAD management and double-checking
+                          
+                          antares031
+                          DeHackEd / DECORATE wizardry and management
+                          
+                          Gutawer & josh771
+                          snow scripts for Episode 3 in GZDoom
+                          
+                          Kristus
+                          BOSSBACK picture
+
+                          id Software, Raven Software, Wolfendoom
+                          Cyber Baron Sprites - Sourced from the Realm667
+                          Bestiary: "Cybruiser" - Edited by Xaser
+                          
+                          id Software, Blizzard Entertainment, Vader
+                          Terminator Sprites - Sourced from the Realm667
+                          Bestiary: "Terminator" - Chaingun sourced from here
+                          for the above edits by Xaser
+                          
+                          Raven Software, Antares031
+                          Arachnotron / Elite Chaingunner Bullet Sprites
+                          
+                          SD EnterNET (edited by Antares031)
+                          Arachnotron / Elite Chaingunner Bullet Sound
+                          
+                          Amuscaria (Formerly Eriance)
+                          Nightmare Demon Sprites & Sounds - Sourced from
+                          Hellforged - Edited by Eris Falling
+                          
+                          Amuscaria (Formerly Eriance) & Vader
+                          Astral Cacodemon Sprites - Sourced from the
+                          Realm667 Bestiary: "Poe"
+                          
+                          Raven Software & Midway
+                          Astral Cacodemon Sounds - Sourced from the Realm667
+                          Bestiary: "Poe"
+                          
+                          Jimmy - The Font
+                          Based on the font 'Voice In My Head' by Chequered
+                          Ink
+                          
+                          Clay
+                          Archangelus Sprites
+                          
+                          Raven Software
+                          Archangelus Sounds - Sourced from Hexen
+                          Chandalier sprites
+                          
+                          Bauul
+                          GLDEFS
+
+                          Eric T
+                          Archangelus sound processing & mix
+                          
+                          Cyano Blugron & Bauul
+                          Teleporter particle effects
+                          
+                          Aquila Chrysaetos
+                          Knows his way around a nodebuilder and probably
+                          killed 1000+ slime trails!
+                          
+                          Viewers of Dragonfly's Stream
+                          I thank you all for providing me seemingly
+                          unlimited motivation! <3
+
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : A few enhancements for GZDoom utilising ACS and
+                          ZScript.
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 11 Months (9 months initial build, 2 for final)
+Editor(s) used          : GZDoomBuilder-Bugfix, SLADE3, Numerous external
+                          tools for graphics and additional lumps
+Known Bugs              : None (We hope!)
+May Not Run With        : Any port not specified below. 
+Tested With             : Primary engines: GZDoom 3.7.1, PrBoom+ 2.5.1.5
+                          Should also work: Eternity 4.00, Doom Retro 2.8
+                          NOTE: GLBoom breaks skies but works other than
+                          that. You may play in other ports but
+                          compatability is not guaranteed.
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Please do not redistribute the material in any form other than its original
+presentation, with this credits file intact and unedited.
+
+If you remix, transform, or build upon the material, you may not distribute
+the modified material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://www.dfdoom.com/project/eviternity/
+FTP sites: None

@@ -5,9 +5,10 @@ $KEY:C=GOTO:Echelon
 $KEY:D=GOTO:Elf Gets Pissed
 $KEY:E=GOTO:Erkatane
 $KEY:F=GOTO:Eternal Doom III
-$KEY:G=GOTO:Cabal Series #07
-$KEY:H=GOTO:Exomoon
-$KEY:H=GOTO:Master Levels #21
+$KEY:G=GOTO:Eviternity
+$KEY:H=GOTO:Cabal Series #07
+$KEY:I=GOTO:Exomoon
+$KEY:J=GOTO:Master Levels #21
 
 ^C:INDEX :: E
 
@@ -19,7 +20,7 @@ $KEY:H=GOTO:Master Levels #21
 - [D] *Elf Gets Pissed (Hexen)							Episodes
 - [E] *Erkatane											Episodes
 - [F] *Eternal Doom III									MegaWADs
-- [G] *Eye of the Storm (Cabal Series)					People
-- [H] *Exomoon											MegaWADs
-- [I] *Express Elevator to Hell, The (Master Levels)	Commercial DOOM
-
+- [G] *Eviternity										MegaWADs
+- [H] *Eye of the Storm (Cabal Series)					People
+- [I] *Exomoon											MegaWADs
+- [J] *Express Elevator to Hell, The (Master Levels)	Commercial DOOM

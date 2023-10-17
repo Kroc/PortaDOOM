@@ -1,0 +1,536 @@
+                                 EVITERNITY
+                               v1.0 Changelog
+===========================================================================
+Changes since RC1:
+
+GENERAL
+-------
+
+    SETTINGS & HOUSEKEEPING
+    -----------------------
+    · By popular demand, infinite height is no longer enforced in GZDoom.
+    · The pistol has been sped up and its recoil removed, making your life
+      slightly easier until you pick up something better.
+    · For GZDoom we added a weather toggle to the menu (go to Options, then
+      "Eviternity Options" at the bottom).
+    · Map title callout no longer displays on TITLEMAP.
+    · Fixed death exit transitions borking up skill levels in GZDoom.
+    · Added episode selections for Eternity Engine.
+    · DEHACKED is now even more compatible with Doom Retro. Thanks to Brad 
+      for his help!
+    · Speaking of DEHACKED, there were two such lumps in RC1 and one was 
+      empty, causing issues in some ports. It’s been removed.
+    · Custom enemies are now shown after you beat the game in GZDoom.
+
+    GRAPHICS & ART
+    ----------------
+    · Intermission map titles/backgrounds for maps 20, 24, and 26 has been
+      updated.
+    · There’s now some story/lore/poetry! Intermission texts have been
+      added, huge thanks to Bauul for his efforts with this.
+    · Map title cards for map31 and map32 were switched. Fixed this and
+      also in ZMAPINFO.
+    · Made text color of episode selection in gzdoom white, to match the
+      rest of things.
+    · Removed grey bar from top of GZDoom's loading screen.
+    · Adjusted Y offset on the custom short torches so they don’t appear do
+      be gliding around.
+    · Changed the final frame of the astral cacodemon death so its corpse
+      is lower: This makes it more obviously dead and obstructs the view
+      less.
+    · A new COLORMAP is used that improves software rendering.
+    · Some of the skies have been adjusted to tile (or tile better)
+      vertically.
+    · Replaced the vanilla single rocket sprite with one that doesn’t use
+      the green range—Eviternity’s change to teal stood out a little too
+      much in that one.
+    · There’s now a proper BOSSBACK lump after you finish the  last level,
+      massive thanks to Kristus for his stunning effort with this one!
+
+    MONSTERS
+    --------
+    · Astral cacodemon fire changed so center fireball isn’t doubled,
+      making it slightly less lethal. Instead center projectile is a
+      cacodemon fireball.
+    · Annihilator (Baron replacement) had health lowered from 1400 to 1100,
+      and the delay to chaingun firing increased from 16 to 20 game tics.
+    · The Nightmare demon had its health lowered from 400 to 300, making it
+      a little less of a bully.
+    · The Archangelus (final boss) had extensive work done:
+    · Entirely new set of sprites thanks to an absolutely stunning effort
+      by Clay!
+    · All new sounds via ukiro and Eric T.
+    · Increased the HP of first phase from 9300 to 10000.
+    · Increased the HP second phase from 3500 to 5000.
+    · Added a new attack for Archangelus' second phase.
+    · Fixed an issue that Archangelus's arch-vile attack has lesser delay
+      in DECORATE.
+    · Added new death effect.
+
+LEVELS
+------
+
+    MAP01
+    -----
+    · Changed FLAT on top of switch in the tar pit to a black metal instead
+      of the rock texture it had before.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP02
+    -----
+    · Massive amounts of rock texture alignment, and setting proper
+      unpegging to make this possible. 
+    · Backpack changed to berserk.
+
+    MAP03
+    -----
+    · Fixed alignments in the tower with the chaingunner.
+    · Changed exit sign to the bigger variant and lowered it so it’s more
+      visible once everything is lowered.
+    · Changed the light effect for the exit sign to use lines 213/261 for
+      light transfers instead of height tricks.
+    · Monster teleporters fixed so nothing gets stuck.
+    · SSG secret added.
+
+    MAP04
+    -----
+    · Various cliff alignment fixes.
+    · Fixed tree clipping issues outdoors in software renderers, this
+      required some extra sectors and I changed one tree to a smaller one.
+      There’s more that could be fixed here but it’s kinda “good enough”
+      now.
+    · The see-through waterfall needed some Y offset fixing on the inside.
+    · Added some slight variations in bookshelf texture use in the library.
+    · Altered some flags for variety.
+    · Fixed stuck shotgunners.
+
+    MAP05
+    -----
+    · Death exit fixed.
+    · One of the side room with the 2x2 teleporters had the wrong ceiling.
+    · Plenty of texture alignment on the stairs.
+    · Slight variety added to the use of bookshelf textures.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP06
+    -----
+    · The midtex bar in the alley in from the big open arena caused an
+      upper texture to look weird, fixed this.
+    · Minor rock alignments.
+    · A hell knight in the outdoor area is often not woken up by the
+      player, so moved him a little bit. 
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP07
+    -----
+    · The chaingunners on the gray brick ledge somehow needed more room to
+      wake up in gzdoom. This was fixed for two of them but the third stood
+      in a place that didn’t let itself be rearranged as easily without
+      breaking the pattern. So I deleted him, leaving only two chaingunners.
+    · Aligned some texture near the red teleporter in the water.
+    · Fixed Y alignment in sector 728.
+    · Final room needed some upper unpegged for some linedefs in the OSPRTB
+      support beams.
+    · 242’ed the slight floor indent in the corridors into the exit room.
+      Zzul had complained about the unevenness on his stream.
+    · Sector 203 and 206 had their ceiling FLAT change to fit the texture
+      better (they’re doors, so only visible when opened)
+
+    MAP08
+    -----
+    · The pillars that raise towards yellow key had all their lines as
+      action 123 (lift) which I removed: It was residue from an older
+      version of the mechanism.
+    · It was possible to raise the caco and chaingunner platforms platforms
+      by the YK multiple times. Switched to voodoo solution.
+    · Some slight light level tuning to appease software rendering.
+    · Texture alignment stuff.
+
+    MAP09
+    -----
+    · A midtexture was only applied on one side of an impassable line (but
+      that could be seen from both sides), so fixed this and changed to a
+      taller texture since some stairs blocked the view of the original
+      low rail.
+    · Minor alignment fixes.
+
+    MAP10
+    -----
+    · Death exit fixed.
+    · linedefs 3763, 3749 middle texture (chainlink fence) needed Y offset
+      fix to close a gap.
+    · Added lights around the switches for the crusher/spider mastermind
+      section since a lot of people missed them in the dark. 
+
+    MAP11
+    -----
+    · Exit switch changed to 3 switches due to multi key being broken in
+      PrBoom+.
+    · Added block monster to the outer rim of an ice stalagmite so monsters
+      don’t get pushed up it. (sector 436.)
+    · Massive amounts of texture alignment.
+    · Monster teleporters for the ending sometimes got blocked, making 100%
+      kills impossible. These are much more reliable now, everything
+      teleports in eventually even if they’re blocked repeatedly.
+    · Added more health in northern section.
+
+    MAP12
+    -----
+    · Lots of texture alignment.
+    · It was possible to get locked out via AV jump, so now the bars raise
+      higher to prevent this.
+    · Outside the building some trees would clip through the floor in a
+      weird way, nudged them around to avoid this.
+    · Made some icicle walls impassable.
+    · Fixed stuck arachnotron.
+    · Made switch in 'chandelier room' more noticable.
+    · Hid an Arch-Vile which was visible through a wall.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP13
+    -----
+    · Loads of alignment fixes.
+    · The bars guarding the switch that raises exit bridge had scroll
+      applied to them—adjusted the voodoo setup to avoid this.
+    · The flickering fire in the hall with the carpet was looking bad in
+      software rendering, so brightened the fire texture to fix it.
+    · Moved Line Action 219 (tag 47) from linedef 6093 to linedefs 5711,
+      5677, 5713 and 5720.
+    · Moved Line Action 24728 (tag 55) from deleted linedef in sector 158
+      to linedefs 913, 1023, 968, 1041, 570, 1083, and 1078.
+    · Raised brightness of sector 1275 to 255 and applied sector effect 8
+      (light glow).
+    · Made linedefs 1140 and 1138 impassable.
+    · Fixed incorrectly lower unpegged walls at the SSG secret.
+
+    MAP14
+    -----
+    · Fixed the bug where two Former Captains don't spawn, after the red
+      keycard door is opened.
+    · Fixed the glitch with ice flats, which had different behavior than
+      intended in PrBoom+ source port.
+    · Fixed minor visual issues, like a wall-clipping tree and a notable
+      slime trail.
+    · Fixed the glitch in yellow skull key area, where the monsters could
+      break blocking-bars.
+    · Lowered the overall difficulty of the level, especially with the
+      arena encounters.
+
+    MAP15
+    -----
+    · Death exit fixed.
+    · Added fireplaces to western corridor.
+    · Changed clock fight into a faster, slaughter-ish version.
+    · Changed yellow key fight.
+    · Bridge section reworked to avoid silent teleport issues.
+    · Exit location made clearer.
+    · Texture adjustments.
+    · Added all the missing sky tags. 
+    · Automap cleaned 100%.
+    · Added a bit more detail.
+    · Casted all the shadows.
+    · Fixed all the possible HOMS.
+    · Fixed all the possible soft locks.
+    · Rebuilt secret megasphere fight.
+    · Added stairs in the secret megasphere room so that the player doesn't
+      have to walk all the way through the castle in order to land properly
+      where the powerup is placed.
+    · Can now be completed with 100%/100%/100%, items are no longer stuck
+      in the voodoo rooms.
+
+    MAP16
+    -----
+    · Texture alignment pass, minor stuff only.
+    · There was some use of line texture splitting alignment trickery that
+      isn't needed anymore as there are proper texture versions for those
+      sizes now.
+    · Some detail work for light cast from lamps.
+
+    MAP17
+    -----
+    · Deleted 5 imps that were doubled, so stuck in-game.
+    · Small texture alignments.
+
+    MAP18
+    -----
+    · Monster teleporters fixed so nothing gets stuck.
+    · Lower unpegged door tracks at the exit.
+
+    MAP19
+    -----
+    · Plenty of little texture alignment fixes.
+    · Softlock possible right at the start, moved some sectors to solve it.
+    · Another possible softlock in sector 6511 fixed by narrowing it. 
+    · Fixed a third soft lock possible when jumping out a window.
+    · A wall could be clipped through, now flagged as impassable.
+    · Added teleporter shortcuts on coop that become accessible from the
+      start as you progress. This way killed teammates won’t have to
+      backtrack for as long. 
+    · Final fight got renovated so it won't break.
+    · All sky transfers redone to make sure every tag is covered.
+    · Some decorative wall alcoves were flagged impassable to make
+      navigating less janky.
+    · A lost souls trap could be avoided entirely, moved the trigger so
+      they always wake up.
+    · Under some conditions a floor lowering would not change its FLAT,
+      this was fixed.
+    · The first set of crushers by the orange lasers are a bit of a nasty
+      surprise, so some armor + health added so the player can take at
+      least one hit and survive.
+
+    MAP20
+    -----
+    · Plenty of alignment fixes.
+    · Death exit fixed.
+    · Soulsphere secret marked as secret.
+    · Resolved a possible soft lock by the blue armor.
+    · Resolved a possible soft lock in the vats around the soulsphere.
+    · Coop had a mastermind teleport in that was stuck, replaced with
+      eight (!) annihilators on UV.
+    · Added 3 extra rad suits for coop.
+
+    MAP21
+    -----
+    · Texture alignment fixes.
+    · Replaced early backpack secret with SSG for reduced 'grind'.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP22
+    -----
+    · Demon arena triggers are no longer skippable.
+    · Lots of alignment fixes.
+    · prevented Mastermind teleporter being blocked.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP23
+    -----
+    · Texture alignment pass. Hopefully all rising/lowering sectors still
+      have their unpegging set right still.
+    · Added more annihilators for coop.
+    · The switch that lowers exit teleporters now also opens doors for
+      backtracking (secret hunting).
+    · Changed the sky.
+
+    MAP24
+    -----
+    · Minor texture alignment.
+    · There were two automap items, but you can only pick up one per level,
+      making 100% items impossible. 
+    · The soulsphere secret could not be attained in GZDoom due to how it
+      handles property transfers for sectors. This was resolved so 100%
+      secrets is now possible in GZDoom.
+
+    MAP25
+    -----
+    · Death exit fixed.
+    · Brightened slightly for better visuals in software rendering.
+    · Monster count doubled on coop.
+    · Minor alignments.
+    · Made outside void -20% health so you die if you somehow get tossed
+      out by an arch vile.
+    · Changed the encounter to be harder. Also enforced 1 cyber on easy, 2
+      on medium, and 3 on hard.
+    · Monster teleporters fixed so nothing gets stuck.
+
+    MAP26
+    -----
+    · trimmed off some bleeding edges of the start teleporter pad (vanilla/
+      boom flat rendering edge bleed).
+    · Alignment fixes.
+    · block monster lines around the big pit.
+    · Coop ammo added.
+
+    MAP27
+    -----
+    · Lots of texture alignment.
+    · Soulsphere secret had two sectors marked as secret, and you could
+      accidentally miss one. So level now has 3 secrets instead of 4.
+
+    MAP28
+    -----
+    · Changed exit to three individual switches since PRBoom+ can’t
+      handle triple key switches (it only works for all 6 keys).
+    · This used a bunch of STARTAN2 in areas the player couldn’t see, but
+      replaced it to make sure there are no issues with PNAMES lump
+      shenanigans.
+    · Minor alignment fixes
+
+    MAP29
+    -----
+    · Texture alignment, primarily in cave section.
+    · Visual changes in caves and throne room.
+    · Last fight shouldn't be broken anymore.
+    · Unobtainable secret megaarmor removed.
+    · Nightmare Demons in the astral horde fight now spawn from the same
+      place as the astral Cacodemons, nor should they fail now.
+    · Megasphere secret in Tarworld now collapses when you pick it up, as
+      does the staircase next to it when you hit that first switch in this
+      area.
+
+    MAP30
+    -----
+    · Changed 20 imps to astral cacodemons.
+    · Monster teleporters fixed so nothing gets stuck.
+    · Also see changes to the Archangelus in the monsters section.
+
+    MAP31
+    -----
+    · Fixed door to be red key and not blue.
+    · Updated exit to lead to super secret exit, so once you go to 31 you
+      also get 32 automatically. (This seems to have already been the case
+      but there was a regular exit line in there too.)
+    · Moved an awkwardly placed torch.
+    · Tiny texture alignment fixes.
+
+    MAP32
+    -----
+    Overall:
+        · Some extra sectors were previously marked secret by mistake,
+          making 100% impossible.
+        · Lots of little tweaks for all skill settings.
+        · Lots of little thing placement tweaks.
+
+    Lava room (between blue and yellow buildings):
+        · Alignment pass.
+        · Moved armor so you have to climb up to it instead of grabbing
+          from below.
+        · The megasphere was still possible to grab without triggering the
+          secret to count, should hopefully be fixed once and for all.
+
+    Red building:
+        · After the Cyberdemon at the end of the serpentine bridge a
+          Mancubus teleports in. I made this a bit more robust as it was
+          possible to block it before.
+        · Northeastern side, there’s a switch guarded by two Hell Knights
+          that lowers a wall, but coming from the other direction this wall
+          is lowered by a walk-over line, leaving the switch useless (and
+          thus confusing). Changed this so the switch disappears once
+          pressed OR line walked over.
+        · Similarly, made it slightly less confusing to come from the
+          north-western side (where there’s mancs) by adding a switch and
+          making sure stuff opens/disappears in a more logical way.
+        · Switch by the revenants on the crate platform was a bit unclear
+          to some people. Teleporting in an Arch Vile to signal its
+          purpose, and also because I’m an asshole who loves Arch Viles.
+        · The switch that turns of the last set of lasers before you can
+          raise the “lipstick” platforms wasn’t clear, so teleporting in
+          some revenants to lead the player through this progression.
+        · Switch that raises the “lipsticks” was toggled to start in an ON
+          stage instead, as that is more consistent with the rest of the
+          room.
+        · Made Mancubus-guarded berserk a non secret.
+        · The eastern side, outdoors: Removed the soulsphere and added
+          other health bonuses instead, as there’s a megasphere secret up
+          in the rocky bits and the two spheres felt too close together.
+
+    Green building:
+        · Outside this, facing the main lava lake, there were two medikits.
+          Moved those to where the Mancubi are on the red building side,
+          and added a third.
+        · With some obscure routing it was possible to jump into the window
+          with the revenants and get stuck. Now fenced off.
+        · Added some barrels scattered throughout.
+        · Minor monster placement tweaks.
+        · In the lava “sewers” I added a bunch of former humans when the
+          outer walls lower, because why not.
+        · Added some stimpaks on the upper “balcony” overlooking lava and
+          green tower.
+        · Also on this upper balcony, made it so the imps don’t take the
+          elevator down. (It was always empty up here before, since they
+          always found their way to the lift.)
+        · The BFG sequence had a revenant changed to an Arch Vile and added
+          an Annihilator teleporting in. Also added health + armor here.
+        · BFG was somehow only present on UV.
+        · The easternmost switch to raise access to the green bridge was
+          pressable from below.
+        · Added some detail above the blue key door that leads in here, to
+          better denote this as “green building” (without using the same
+          light trim technique everywhere).
+        · Changed megasphere secret to soulsphere and made it slightly
+          harder to spot.
+        · The ceiling openings on the inside got a green light trim.
+        · In the room with three lowering stairs, the door to the central
+          switch was moved back from the bars so you can’t open the door
+          while the bars are still up.
+
+    Pink building:
+        · Tweaked difficulties a little.
+        · The green armor at the top wasn’t included on all skills, now it
+          is.
+        · Added a couple more hell knights on coop.
+        · Added a berserk and some rockets by the Mancubi on the little
+          platform outside.
+        · Added a little detail to the plasma rifle room.
+
+    Orange building:
+        · Switch at the bottom hexagonal room (that crushes Arch Viles) now
+          starts in the off state.
+        · The above mentioned switch now opens the bottom door with the SSG,
+          instead of the top one doing that, more directly leading the user
+          to start the Arch Vile crushers.
+
+    Yellow building:
+        · Key can no longer be grabbed through the lasers.
+        · Altered Arch Vile fight to more strictly enforce doing it from
+          within the “safe room”.
+        · Safe room had a rocket launcher only on easy skill, changed it to
+          all skills.
+        · Made sure there’s 10 Arch Viles on HMP too, but added more health
+          for that skill.
+        · Added a secret with some health bonuses.
+        · Made rock climb up from yellow area a bit less obvious.
+        · When you exit towards green building area there’s an Arachnotron
+          now.
+
+    Serpentine path:
+        · Sky clipping perspective possible from lava path up above switch
+          is now fixed.
+        · The caves leading up to here were tweaked so the plasma is now
+          only available if entering from the pink building. If you come
+          the other way you presumably already have the plasma from the
+          orange building.
+        · In the caves leading here you could make an alternate jump to
+          where a revenant is; elevated that to force the intended route.
+        · The revenant that is revealed when you hit the switch (to start
+          the shooting switch sequence) could be reached before the switch.
+          It’s now hidden entirely until you flip the switch and bring up
+          the Mancubi.
+        · The Cyberdemon can now walk out onto the path a little bit,
+          making the fight a bit more interesting.
+        · If you come from the lava path (southwest), the bars with the
+          teleporting Arachnotron now lower once you’ve shot the 10
+          switches, in addition to defeating the lasers in front of the
+          red building entrance.
+
+    Blue building:
+        · Added a blue light trim to more clearly indicate it’s the blue
+          building.
+        · Fourth switch in the arms extending out, the one that makes the
+          secret megasphere available, was changed from blue to white to
+          signal that it’s different.
+        · Moved plasma rifle and tweaked ammo balance a bit.
+        · The laser switch now reveals two Revenants on UV, to make it ever
+          so slightly less easy to cheese. But still kinda easy.
+        · Added second Arch Vile after blue key fight (UV only).
+        · If you come to this through the “back door exit” from the yellow
+          building, jumping over the start area, you can now enter the blue
+          building instead of facing a dead end.
+        · Lowered the risk of soft lock in coop, but if a single player
+          goes in and is killed by the Arch Vile before the switch is
+          flipped, it’s still locked...
+
+    Final fight:
+        · Some slight tweaks to the final black rock area to lead the
+          player better.
+        · On the rock climb up to the black tower, the megasphere is now a
+          secret (and the path to it more hidden).
+        · Some people had trouble figuring out the last jump sequence, so a
+          single health bonus is added as a hint.
+        · Tried to guide the user to find the switch raising the platforms
+          a bit easier, some had trouble understanding where to go.
+        · Redesigned final fight completely. Extensively reworked the room
+          too.
+        · Added an elevator from the final room so you can get out at the
+          end if you want to explore more, such as to find secrets. (Thanks
+          for this idea, floatrand!)
+
