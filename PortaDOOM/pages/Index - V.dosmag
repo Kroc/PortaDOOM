@@ -1,9 +1,10 @@
 $THEME=BLUE
 $KEY:A=GOTO:Valiant
 $KEY:B=GOTO:Venom
-$KEY:C=GOTO:Master Levels #19
-$KEY:D=GOTO:Master Levels #13
-$KEY:E=GOTO:Void and Rainbow
+$KEY:C=GOTO:Verdant Citadel
+$KEY:D=GOTO:Master Levels #19
+$KEY:E=GOTO:Master Levels #13
+$KEY:F=GOTO:Void and Rainbow
 
 ^C:INDEX :: V
 
@@ -11,6 +12,7 @@ $KEY:E=GOTO:Void and Rainbow
 
 - [A] *Valiant											MegaWADs
 - [B] *Venom											5 Years of Doom
-- [C] *Vesperas (Mater Levels)							Commercial DOOM
-- [D] *Virgil's Lead (Mater Levels)						Commercial DOOM
-- [E] *Void and Rainbow									Onesies
+- [C] *Verdant Citadel									Onesies
+- [D] *Vesperas (Mater Levels)							Commercial DOOM
+- [E] *Virgil's Lead (Mater Levels)						Commercial DOOM
+- [F] *Void and Rainbow									Onesies

@@ -1,0 +1,48 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\vercit\play-vercit.ini"
+$KEY:T=SHELL:wads\onesies\vercit\vercit.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/vercit
+
+:Verdant Citadel                                    * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>05>17	  Author :  _Dennis "Exl" Meuwissen_
+:Levels   : *1			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+You've reached the shore of the Verdant Citadel, a stone bulwark on an island in an endless sea. It is inhabited by undead demonic caretakers who are responsible for keeping blood-thirsty, pain-delivering space marines like you from gaining a foothold. But that's never given you any pause before...
+
+Narrative fluff aside, I wanted to get better at non-linear layouts so ended up making this map. It is about as non-linear as I could stand to make it, and as a result there are a few ways to approach it. Some routes are a little easier, some a little harder. Playtime is estimated between 25 and 35 minutes at Ultra-Violence.
+
+The color grading effect used by this map might not work well on some hardware \ software. If the title map's colors are distorted or you just want to disable it, there is an option to do so in the Display options > Hardware renderer > Postprocessing menu, or you can set the r_colorgrading console variable to false.
+
+Jumping and crouching are disabled through MAPINFO as the map is not designed with those options in mind, but freelook is available.
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: Did not keep track, but seemed like ages
+*Editor(s) used			: *GZDoom Builder Bugfix*, *SLADE*, *Photoshop*, *Audacity
+*Known Bugs				: Some minor visual glitches related to things moving between sector portals may occur. Versions of *GZDoom* prior to 4.0.0 will exhibit a monster behaviour bug during the last part of the map
+*Tested With			: *GZDoom* 4.0.0 in hardware accelerated mode. Also works well with the Vulkan renderer since *GZDoom* version 4.1.2
+
+:Credits
+:-------------------------------------------------------------------------------
+$KEY:1=URL:https://soundcloud.com/khydrodjent-1
+$KEY:2=URL:https://www.doomworld.com/forum/topic/102599
+$KEY:3=URL:https://www.shadertoy.com/view/MdlXz8
+$REM=
+- Tree sprites by _osjclatchford_
+- Tree sprites by _Raven Software_
+- Various textures from `Gothic DM`
+- "City of Ruins" and "Titan" by _KhydroDjent_
+  [1: https://soundcloud.com/khydrodjent-1]
+- _DooMAD_ for textures from his `StalungCraeft` texture pack
+  [2: https://www.doomworld.com/forum/topic/102599]
+- Water caustics shader by _Dave Hoskins_
+  [3: https://www.shadertoy.com/view/MdlXz8]
+- _Bethesda Studios_ for ambient sound effects
+- Special thanks to all playtesters:
+  __metal__, _AL-97_, _Benjogami_, _BlackFish_, _CyberDreams_, _deathzero021_, _DooMAD_, _elend_, _Enjay_, _Gez_, _Kroc_, _Malefication_, _neoworm_, _Odorousbag87_, _ReaperAA_, _seed_, _SpockRC_, _Suitepee_, _tmorrow_, _Yugiboy85_

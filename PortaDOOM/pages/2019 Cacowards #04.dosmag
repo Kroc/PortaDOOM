@@ -1,0 +1,26 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.II
+$KEY:2=GOTO:Verdant Citadel
+
+^C:2019 CACOWARDS :: TOP 10 pt.II
+
+:-------------------------------------------------------------------------------
+
+:[2] `Verdant Citadel` - _exl_
+:===============================================================================
+
+Nestled onto a lush green island surrounded by a shimmering ocean, this behemoth stone fortress stretches to the ominous star-filled skies, oozing with demons and mystery. Aiming to make something "non-linear", _exl_ does that and much more, mastering exploratory gameplay while simultaneously giving the player a lot of ass to kick. Your mission is simple: gather four keys and make your way to the dock that you see on the other side of the island in order to leave. However, this task is anything but easy.
+
+The fortress itself is essentially a tri-level, each floor holding a unique set of encounters and challenges. _Exl_ uses space well both vertically and horizontally, this being most evident in the middle floor. You’re peppered from above every now and again by the odd imp, shotgunner, or revenant, just enough to keep you on your toes and keep you looking for the next place to go. This map is absolutely teeming with secrets -- it's wise to explore every nook and cranny for valuable health, ammo, and armor. You'll need it for the battles ahead. The use of sloping and 3D techniques are done in a realistic and practical way, never feeling superfluous or self-indulgent. Every linedef seems to have purpose here.
+
+As you weave your way through, the encounters get slowly more difficult, but the progression is completely smooth and natural, so much so that it's nearly undetectable to the average player. Though incidental combat may not sound so exciting, _exl_ makes it feel natural and fresh, placing monsters in patrols that are perfect for keeping you engaged as you roam the stone halls. One of the more notable fights is the one down by the shoreline after navigating a particularly tough set of sewers. After picking up yet another key, you're faced with a much larger horde of enemies, including an angry cyberdemon, chasing you back through the sewers and leaving you hoping you'll get out alive.
+
+Once you complete the task of navigating through the fortress and gathering the keys, what comes next can only be described as a very tense descent. As the elevator you step onto descends, each stop brings you to a floor of surprises, many of them nasty. Keep your head, though, and you'll come to your escape from this hellish place. One can only wonder though, as you pick up the armor from someone so close to making it out—is this the end of the journey…or only the beginning?
+
+^R- _Major Arlene_
+
+:===============================================================================
+*[2] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/best1/
+:source [#: www.doomworld.com/cacowards/2019/best1/]
