@@ -1,0 +1,7 @@
+pages\Paradise.dosmag
+files\wads\conversions\paradise\
+# supports both GZDoom v4.1 (specifically)
+@files\ports\use=gzdoom-401.lst
+# and ZDoom v2.8.1
+@files\ports\use=zdoom.lst
+files\wads\DOOM2.ini

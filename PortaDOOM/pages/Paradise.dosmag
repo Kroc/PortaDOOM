@@ -1,0 +1,658 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\paradise\play-paradise.ini"
+$KEY:T=SHELL:wads\conversions\paradise\paradise-v2.1.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/106058
+
+:Paradise                                           * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2020>10>11	  Author : _Tango_
+:Levels   : *33			   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+`Paradise` is a *GZDoom* TC, with a primary 7-map campaign, in addition to a 25-map episode of bonus maps. This version 2.1 release is a refinement of the 2019 2.0 release, adding *ZDoom* 2.8.1 and *Zandronum* compatibility, as well as adding coop multiplayer balance changes to the primary campaign (but not the bonus maps).
+
+Hardware-accelerated rendering mode strongly recommended, both for visual and performance reasons. Make sure you bind your reload key! Be sure to check out the "Mod Options" section in the main menu for options to customize your experience.
+
+The primary `Paradise` campaign contains 5 standard maps, and 2 secret maps. The bonus episode, selectable from the main menu, contains 25 maps that are either speedmaps or rejects of mine from the last few years, that would otherwise go unreleased. The bonus episode is therefore of notably lower quality than the primary campaign; players should proceed at their own risk when playing the bonus episode!
+
+`Paradise` features a greatly modified and expanded bestiary and arsenal, along with a number of other gameplay and visual changes. Gibs and alternate monster deaths, de-randomized monster and player damage, instant weapon switching, and built-in (optional) pistol starts are among some of the changes included in `Paradise`. See section "GAMEPLAY CHANGES" below for more information on these changes.
+
+All maps in `Paradise` have been balanced for pistol starts, but playing continuous is perfectly valid too. All maps in `Paradise` have been balanced accordingly for each skill level, though the bonus maps have received much less gameplay tuning than the primary campaign.
+
+`Paradise` is inherently unfriendly to custom gameplay mods due to its extensive gameplay changes. Proceed at your own risk if coupling `Paradise` with other gameplay mods. However, players are more than welcome to create their own patches or versions of `Paradise` that are mod-friendly, given that `Paradise` can be modified / remixed / reuploaded without permission. See section "EXTENDED CREDITS" below for more information.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: `map03` is based on pieces of _ZaBigBoss_' `Back to Thunder Road`
+*Build Time				: hundreds of hours
+*Editor(s) used			: *GZDoom Builder*, *SLADE 3*, *Aseprite*, *MAME*, *Imagetool*, *LoopingAudioConverter*, *Paint.net*
+*Tested With			: *GZDoom* 4.0.0, *Zandronum* 3.0, and *ZDoom* 2.8.1
+
+:ADDITIONAL INFO
+:===============================================================================
+:A. PROJECT INFORMATION:
+:-------------------------------------------------------------------------------
+`Paradise` is result of my vision to combine modern gameplay mod capabilities with challenging, tightly-balanced gameplay. There is a great volume of fun, challenging work out there for vanilla or limit-removing `Doom` (`Sunlust` and `Resurgence` being among my favorites), but I've come across very few maps that retain that style of gameplay that I enjoy while also making use of the new capabilities that *(G)ZDoom* affords. `Paradise` is my response to that (perceived) absence.
+
+$KEY:S=URL:https://www.doomworld.com/forum/topic/109107
+The gameplay mod built in to `Paradise` (which is called `Supercharge`, and has been [S: released standalone on the Doomworld forums]) was heavily inspired by `Complex Doom`, and for that I owe _Daedalus_ (creator of `Complex Doom`) a huge thanks, because Paradise would not exist without that inspiration.
+
+Many of the new monsters featured in `Paradise` were built to introduce new, novel behavior into `Doom` that, in turn, introduced the potential for new, novel gameplay and combat scenarios.
+
+Compared to the 2019 v2 release, v2.1 has a number of small tweaks across the maps in the main episode, along with new multiplayer items and monsters in the main episode. Note that the bonus maps do not have any new multiplayer balancing - if you are going to play those maps in coop, proceed at your own risk!
+
+Compared to the 2018 v1 release, Paradise v2 has 4 new main episode maps, along with all the new bonus maps, as well as a number of other gameplay changes, custom options, and more.
+
+:B. RECOMMENDED COMPANION MODS:
+:-------------------------------------------------------------------------------
+`Paradise` will likely break if you try to run it with other gameplay mods. However, many modern quality-of-life mods work perfectly fine with `Paradise`,
+and are in fact recommended if you fancy them. Here are some mods that I frequently use when playing Paradise:
+
+$KEY:1=URL:https://forum.zdoom.org/viewtopic.php?t=55048
+- `Damnums` (by _Xaser_):
+  URL: [1: https://forum.zdoom.org/viewtopic.php?t=55048]
+
+$KEY:2=URL:https://forum.zdoom.org/viewtopic.php?t=55413
+- `Tilt++` (by _Nash_):
+  URL: [2: https://forum.zdoom.org/viewtopic.php?t=55413]
+
+$KEY:3=URL:https://forum.zdoom.org/viewtopic.php?t=60784
+- `Target Spy` (by _m8f_):
+  URL: [3: https://forum.zdoom.org/viewtopic.php?t=60784]
+
+:C. GAMEPLAY CHANGES:
+:-------------------------------------------------------------------------------
+*GENERAL:
+
+- Gibs and alternative deaths for monsters across the board. Which death animation plays is often dependent on the type of weapon used to kill the monster, as well as the distance. No hitboxes though - this is all purely cosmetic
+- 2 new HUDs (one minimal, one expanded), which can be cycled using the plus (+) and minus (-) keys by default
+- Bullet casings, terrain splashes, per-item pickup sounds, color-coded pickup messages, etc
+- Automatic pistol starts if enabled in the options menu (Main Menu → Options → Paradise Options → Pistol start)
+- De-randomized damage for monsters and players alike. Every attack now does set pre-set amount of damage. In the case of most monster attacks, their new damage values are the average of what their old, randomized values would be. In the case of the player, any weapon changes not significantly altered from vanilla tend to do more on the upper end of the previous random scale, rather than the average.
+
+*NEW MENU OPTIONS:
+
+New options are accessible via Main Menu → Mod Options, which are primarily cosmetic.
+
+*WEAPONS:
+
+- Fist: No major changes
+- Chainsaw: Triggering the Cyber Baron’s pain state with a chainsaw is a guaranteed disarm. Damage has been increased. No other major changes
+- Pistol: Shots are much more powerful, and much faster, than vanilla, but at the cost of having to reload every 8 bullets
+- Shotgun: Fires faster, has tighter horizontal spread but with equal vertical spread. Can fire 8 shells before reload
+- Super Shotgun: Slightly tighter horizontal spread, and a few frames faster at firing too. Really powerful as a combo-ender (ie 4 scrap shell shots into instant SSG) thanks to instant weapon switching
+- (NEW) Scrap Gun: Projectile shotgun. Does a ton of damage up close, but its extreme spread makes it unideal for anything but short-range
+- Chaingun → Assault Rifle: Fires in 3 round bursts, and reloads after 45 shots. Bullets are significantly more powerful than the vanilla Chaingun
+- Rocket Launcher: Significantly increased rate of fire, and faster projectile speed. The cost is that splash damage, and therefore overall damage, are nerfed. Direct hits therefore are much more important. Works well as both a combo starter and ender
+- Plasma Rifle: Reloads every 40 shots. Otherwise, quite similar to its vanilla counterpart in terms of damage output and speed. Used in only in the bonus maps
+- BFG9000: No major changes
+
+Note that there is a menu option to enable automatic reloading when a weapon becomes empty (Main Menu → Mod Options → Auto reload weapons on empty).
+
+*MONSTERS:
+
+- (NEW) Diabolist: Fiery-red cousin of the Archvile. Summons exploding plumes of fire beneath the player’s feet that linger for a few moments for area-denial. Punishes you for not watching your footwork
+- (NEW) Tortured Soul: Similar to a Cacodemon, but releases out lingering toxic clouds, which damage players and other monsters alike, upon pain and death. Think of them like flying barrels
+- (NEW) Pyro Demon: A hell-knight variant whose projectile explodes into small chunks of fire that linger on the ground upon impact. Lingering fire is constant but low damage, for area denial
+- Archvile → Exile: 100 more HP than vanilla. Otherwise purely a cosmetic change
+- Baron of Hell → Cyber Baron: Has a chance to fire a rocket out of its rocket arm, in addition to its regular green fireball attack. Once under ~50% health, a strong attack (anything but a pistol/AR attack basically) will destroy its rocket arm, leaving it with only the green fireball attack. Its rockets (which are now distinct from player rockets) deal slightly less damage and have a smaller explosion radius than vanilla
+- Zombieman → Plasma Zombie: Fires two shots of plasma instead of a single hitscan bullet
+- Cyberdemon: Has 25% less health than vanilla, and is now susceptible to explosion/radius damage. Its rockets (which are now distinct from player rockets) deal slightly less damage and have a smaller explosion radius than vanilla
+- Demon → MechaDemon: Walks and bites faster than its vanilla counterpart. During its attack animation, takes increased damage.
+- Cacodemon: Fires slower projectiles than its vanilla counterpart. During its attack animation, takes increased damage
+- Imp: Fires slightly faster projectile than its vanilla counterpart
+- Lost Soul: Significantly less HP than its vanilla counterpart
+- Pain Elemental: Has a small, damaging explosion upon death, to make it slightly less safe to stay in its face to block Lost Souls from spawning upon death
+- Mancubus → Behemoth: Same stats as its vanilla counterpart, but fires its projectiles out of its cannons now, rather than the center of its body, making the projectiles a little tougher to dodge
+- Arachnotron → Fusionite: Same stats as its vanilla counterpart, but fires its projectiles in strings of 4 with a small gap in between each bunch
+
+:D. MAP INFO:
+:-------------------------------------------------------------------------------
+Below are some notes on the history of each map, along with each map's music credits. This information is really not much more than trivia, and is not required to play `Paradise`.
+
+* Title music: "Do U R [Staff Roll]" from `Grounseed`
+* Intermission music: "Flashback [Ranking]" from `Armed Police Batrider`
+
+*MAP01: Sewer Surfing
+
+Music: "Chasing Gang, Need 4 Speed [Stage 5 Highway]" from `Armed Police Batrider`
+Alt midi music: ??? from `Descent`
+
+This map was the last map created for v1 of `Paradise`. After player feedback on the v1 iteration, I reworked this map to be a more gentle introduction to the episode, while still being able to retain most of the map structure and pathing. I intended to completely replace this map with a new one for v2, but as I was nearing completion on the replacement-to-be, I decided that a simple rework of the existing MAP01 would serve as a better opener for Paradise than the new map.
+
+*MAP02: Acid Jungle
+
+Music: "Easy To Go [Stage 1 Manhattan City]" from `Armed Police Batrider`
+Alt MIDI music: "Web Spider" from `Mega Man X4`
+
+This map was originally a speedmap from 2014 for an unfinished MBF project that I began working on after `Mayan Mishap`. The project never progressed substantially beyond the single speedmap, so I eventually repurposed it for `Paradise` later.
+
+The map has received some minor visual and gameplay adjustments from v1, but not a lot was changed.
+
+*MAP03: Hyper Safari
+
+Music: "Night Sweeper (Stage 7)" from `Hyper Duel`
+Alt MIDI music: "Departure" from `Duke Nukem 3D`
+
+This map is originally based off map01 in _ZaBigBoss_' `Back to Thunder Road` (2016), though there's not much left here from that map. Initially my plan was to take that map01, scale it up slightly, and add some jungle visuals, but it quickly turned into a much larger map as I developed the jungle theme further and further.
+
+The map has received some minor visual changes from its v1 iteration, as well as a number of gameplay changes that significantly tone down the difficulty. The original v1 map was admittedly pretty bonkers on UV.
+
+*MAP04: Emerald Babylon
+
+Music: "Degeneracy" from `Battle Garegga`
+Alt MIDI music: "Plantation Crash" from `Zone 66`
+
+New to v2. The first half of the map is based on a speedmap I did after creating `Paradise` v1 (that speedmap is included in the bonus episode as `MAP53`). Adapting the speedmap into the `Paradise` theme was essentially the catalyst for creating `Paradise` v2.
+
+*MAP05: A Sickly Earth
+
+Music: "The Red Naval Port" from `19XX: The War Against Destiny`
+Alt MIDI music: "Credits" from `Descent II`
+
+New to v2. This map is a mish-mash of reworked and retuned speedmaps, though a few areas are brand new.
+
+The creation of this map turned out to be a real struggle. Some parts, such as the central jungle area and the main diamond Archvile fight in the north, were created without too much second thought, but every other area of the map went through at least 2 completely different iterations that I scrapped. At one point I considered giving up on this map and just making `MAP04` the last main map in `Paradise` v2. I'm very glad that I keep going though, because this turned out to be my favorite map in the whole thing, both in terms of gameplay and visuals.What's not to love about fights with gaggles of Diabolists and multiple Cyberdemons??
+
+*MAP31: Forbidden Zone
+
+Music: "Sacred Cave" / "Forbidden Area" from `Castlevania Aria of Sorrow`
+
+New to v2, though this map was teased at the end of `Paradise` v1. The gameplay concept for the first room was heavily inspired by a speedmap by _rdwpa_, but all fights in the map were planned out textually on paper before I started actually making the map in *Doom Builder*. The two secret fights were added quite late in the map's development.
+
+*MAP32: A Portrait of Flames
+
+Music: "Portrait of a Ghost Ship" from `Castlevania Rondo of Blood`
+
+New to v2, and also based entirely off a speedmap from late 2018 (included in the bonus episode as `MAP56`). This and `MAP31` were initially to be part of a totally separate, non-`Paradise` episode, but I struggled to create / finish other maps in the episode, and instead included these maps here as secret maps to help break up the jungle theme from the main maps.
+
+:BONUS MAPS:
+
+This bonus episode is comprised of speedmaps and other scrapped maps of mine from the last few years. Some of these bonus maps have received substantial work on them to make them more polished in terms of both visuals and gameplay, but generally, they are of far lesser quality than the main `Paradise` episode.
+
+All bonus maps are playable from start to finish (pistol-starts intended), and have received some gameplay tuning across difficulty levels. Most bonus maps titles are just their development titles (mostly 30mXX from my 30+ minute speedmap series, or spdXX from my older general speedmap series).
+
+!!!! Please play these bonus maps at your own risk !!!
+
+They are intended to be fun, but nothing is guaranteed. As with the main `Paradise` maps, feel free to rip anything from these maps.
+
+*MAP33: 30m14b
+
+Music: "Cemetery" from `Castlevania Rondo of Blood`
+
+Originally a ~30 minute speedmap, significantly reworked and overhauled into its current state. Very heavily inspired by _Gusta_'s work in `Plutonia 2`. This was another map that was intended to be in a separate gothic-themed episode along with `MAP31` and `MAP32`. I ended up feeling kind of lukewarm about this map's gameplay after finishing this rework, but I'm pretty happy with the visuals at least.
+
+*MAP34: Sightless Nest (30m31)
+
+Music: `MAP16` from `TNT: Evilution`
+
+Heavily inspired by `MAP32` of `Sunlust`, as the texturing and music would suggest. I speedmapped this layout in a few hours, then came back many months later to put some finishing touches on the layout and add all the gameplay. Kind of basic in design I guess, but I really enjoy how the fights turned out here.
+
+*MAP35: 30m24
+
+Music: "Degeneracy" from `Battle Garegga`
+
+Heavily inspired by `MAP18` of `Resurgence`.
+
+*MAP36: spd02
+
+Music: "Simon's Theme" from `Super Castlevania IV`
+
+A pretty old speedmap, dating back to early 2017. The music of `Castlevania IV` has been a pretty big influence on my mapping at times, as its usage in this map and a few other bonus maps might suggest. For release in this bonus episode, I made some quick edits to the map and added monsters, though it's admittedly a pretty barebones effort.
+
+*MAP37: unholy02
+
+Music: "Pillared Corridor" from `Super Castlevania IV`
+
+Plucked from a 3-map speedmap episode called _"Unholy"_, whose other maps are elsewhere in this bonus episode. Built around the idea for a fight that forces the player to dance around on a tight catwalk while dodging Diabolist fire.
+
+*MAP38: spd04
+
+Music: "Forest of Monsters" from `Super Castlevania IV`
+
+Another older speedmap. The layout itself has been completed for a few years, but I never implemented gameplay in the map until recently, after deciding to release it as part of this bonus episode. "Starlit library" is a theme I'd very much love to explore more in the future.
+
+*MAP39: 30m5
+
+Music: "Rusty Nails" by _Jimmy_, from `Speed of Doom`
+
+Inspired by _Hobomaster_'s maps.
+
+*MAP40: 30m3
+
+Music: "Wily Stage 1 - Entrance" from `Mega Man 7`
+
+Inspired by the end of MAP01 of Combat Shock 2.
+
+*MAP41: spd17
+
+Music: ??? from `Descent`
+
+Older speedmap inspired by _Richard Wiles_' `"dickie"` series.
+
+*MAP42: 30m26
+
+Music: "Nesting in the Sands" from `Contra III: The Alien Wars`
+
+Vaguely inspired by _TimeOfDeath_'s `ESP2`.
+
+*MAP43: 30m10
+
+Music: "Underground Reservoir" from `Castlevania Aria of Sorrow`
+
+Another green hell / gothic speedmap from around the time I was working on `MAP31` and interested in that theme.
+
+*MAP44: 1ntru
+
+Music: "Splash Down!! ~Planet Undertow~" from `Ristar`
+
+Originally made ~2011, as a speedmap for _1ntru_'s birthday. Was going to be part of a 32-map Boom megawad that I intended to make at the time, but didn't get very far with.
+
+*MAP45: utow02
+
+Music: "Clock Tower Casualty" from `Castlevania Harmony of Dissonance`
+
+Made around the same time as `MAP44`.
+
+*MAP46: unholy03
+
+Music: "Den" from `Castlevania Dracula X`
+
+Unfinished finale from speedmap episode _"Unholy"_. The map is still completely playable and exitable, but past the first fight, the player can run straight to the exit. I'd still like to expand on this map sometime in the future, because this music track is too good to not use in a big slaughtermap.
+
+*MAP47: unholy01
+
+Music: "Dracula's Theme" from `Super Castlevania IV`
+
+First map of _"Unholy"_, and pretty underwhelming. Conceptually it's ok I think: player approaches spooky gothic structure from the dark forest, and does some battle in the dark interior, with windows out into the foreboding sunset, etc. But I wasn't able to do the concept justice with the short time that I gave myself to make the map - though I imagine I'd still struggle to do it justice even with ample time.
+
+*MAP48: 30m30
+
+Music: "Map C" from `Super Castlevania IV`
+
+Inspired by _Jodwin_'s `MAP29` in `Claustrophobia 1024 2: The Mystery of Too Many Maps`.
+
+*MAP49: 30m21
+
+Music: "Stage 2" from `Dragon Saber`
+
+This speedmap was an experiment with ice physics, to explore the viability of fights designed around such physics. I think there's still some potential, but I don't know that this map really ended up being a compelling demonstration of the idea. It's got a cool music track though, at the very least.
+
+*MAP50: 30m9
+
+Music: "Hot Head Bop" from `Donkey Kong Country II`
+
+Speedmap for me to experiment with the scrap gun and catwalks.
+
+*MAP51: python
+
+Music: ??? from `Descent`
+
+Quite heavily inspired by `Sunder` map01, as the map name, music, and visuals suggest. Also served as a playground for the scrap gun. I like the first room a lot, but I'm pretty lukewarm on the rest of it.
+
+*MAP52: 30m8
+
+Music: "Lunatic Pandora" from `Final Fantasy VIII`
+
+Another scrap gun experiment. Unlike most of the other 30mXX speedmaps that ended up taking more than 30 minutes to make, I think this map stayed within or was quite close to the 30 minute limit.
+
+*MAP53: 30m19
+
+Music: "Underground Reservoir" from `Castlevania Aria of Sorrow`
+
+Semi-speedmap inspired by _Death-Destiny_'s map `No Chance`. I used this map as
+basically a testing ground for a bunch of fight ideas, some of which ended up getting used in the main `Paradise` episode.
+
+*MAP54: 30m1
+
+Music: ??? (taken from `D2XGold`; probably a metal song from the 90s)
+
+Straightforward slaughter speedmap, inspired by an image I saw in the Post Your Doom Picture thread on Doomworld at some point.
+
+*MAP55: 30m42
+
+Music: "Dilemma" from `Chrono Cross`
+
+Inspired by some of _Mechadon_'s progress screenshots on `Supplice` that he shared sometime in 2019. This was originally going to possibly be the start of another main episode `Paradise` map, but I pretty quickly gave up on the map. Near the end of `Paradise` v2 development, I gave the map a visual overhaul, changing it from the `Paradise` dark metal theme to this BSTONE-heavy theme. I'm not too fond of the map's gameplay, but the visual overhaul was a good means of theme exploration.
+
+*MAP56: 30m2
+
+Music: "Wily Stage 3 - Walk the Invisible" from `Mega Man 7`
+
+Inspired by `MAP10` of `Unidoom DM 3` (`UDM3`). In terms of gameplay, I started with the idea of alternating Diabolist / Archvile turrets that the player has to play around, and built the rest of the map from there. Made in ~45 minutes.
+
+This map was later revamped and turned into `MAP32`.
+
+*MAP57: 30m25
+
+Music: "Credits" from `Descent II`
+
+Inspired by the maps in _TimeOfDeath_'s `ESP2`, as well as one of _rdwpa_'s speedmaps. Probably took around an hour for the initial version. The driving gameplay concept was a small arena that slowly revealed and reconnected to itself.
+
+This map was later used as the basis for the main outdoor area in `MAP05`.
+
+:E. EXTENDED CREDITS:
+:-------------------------------------------------------------------------------
+For reuse of anything you see below that is done or modified by `Tango`, no credit to `Tango` is necessary. However, please still credit the original author(s) of the content modified by `Tango`.
+
+*MAPPING INSPIRATION:
+
+Format is author name followed by, in parentheses, any specific mapsets that provided inspiration, if applicable.
+
+* _Chris Lutz_ (`Doom II: Hellscape`)
+* _Joshy_ (`Resurgence`, `Speed of Doom`)
+* _Darkwave0000_ (`Speed of Doom`)
+* _NoReason_ (`Disparate Realities`)
+* _Paul977_ (`Black Room`, `Secret Energy`)
+* _Ribbiks_ (`Sunlust`)
+* _Dannebubinga_ (`Sunlust`, `Combat Shock 2`)
+* _Benjogami_
+* _bemused_ (`Flotsam`)
+* _Scotty_
+* _dobu gabu maru_
+* _rdwpa_
+* _Mechadon_
+
+*OTHER INSPIRATION:
+
+_Daedalus_:
+	for making `Complex Doom`, which was a major catalyst for me creating the gameplay mod included in this set
+
+_Yuzo Koshiro_:
+	for composing the excellent `Streets of Rage 1 & 2` soundtracks, which I listened to for many hours while creating these maps
+
+_Tsukumo Hyakutaro_:
+	for composing the soundtracks of `Hyper Duel` and `Thunder Force V`, both of which provided massive inspiration for v2 of `Paradise`
+
+_Purple Motion_:
+	for composing the tracker module "Seaside Hotel 2 - rooms", which was my original inspiration back in 2012 for creating beachy maps. I still have a `Skulltag` / *Zandronum* invasion map somewhere that uses this track and should probably be released at some point...
+
+*MAPPING CREDITS:
+
+All maps are original works by _Tango_, with the exception of `map03`, which is
+based on `map01` of the excellent `Back to Thunder Road`, by _ZaBigBoss_.
+
+*PLAYTESTING CREDITS:
+
+The list below includes players that specifically asked to playtest, along with others that provided feedback either via forums, Twitter, or by recording their playthroughs on Twitch / YouTube. In no particular order:
+
+	_Nevanos_, _NoReason_, _Captain Caleb_, _Major Arlene_, _Vyre_, _Bridgeburner_, _Zaranell_, _Killer5_ aka _MrZzul_, _FoxPlays_, _Xenaero_, _00_Zombie_00_, _DavidN_, _Archanhell_, _Rathori_, _koren_, _Gez_, _Lorenz0_, _Odorousbag87_, _chowbar_, _Fatalis_, _Mere_Duke_, _NPC_CO8ALT_, _Charles G. Kucharzak_, _Logo Renard_
+
+The feedback provided by these folks was immensely helpful, and I owe them greatly for their patience and willingness to help. I want to specially thank _Vyre_ for playtesting so extensively, and doing so for multiple iterations of `Paradise` v2.
+
+*TEXTURE CREDITS:
+
+	_Fredrik Johansson_, _NiGHTMARE_, _Espi_, _Eriance_, _Fredrik Johansson_, _Janitor_, _DaGGeR_, _Ola Bjorling_, _Vader_, _XDelusion_, _esselfortium_, _RottKing_, _Nuxius_, _Afterglow_, _AgentSpork_, _Enjay_, _Huy Pham_, _SargeBaldy_, _Tormentor667_, The `GothicDM` Team, The `Requiem` Team, The `Eternal Doom` Team, _id Software_, _Raven Software_, _Rogue Entertainment_, _Jimmy_, _Mechadon_, _NokturnuS_, _FuzzballFox_, _EarthQuake_, _CaptainToenail_, _MartinHowe_, _Kyka_, _Malinku_, _Gothic_, _Jaska_
+
+Texture resources that were made (via modification) by _Tango_ which you DO NOT
+need to credit _Tango_ for but SHOULD still credit the original authors of the
+resources:
+
+- dark metal texture recolors
+- beachy sand flats
+- vine + rock composite textures
+- recolored/more vibrant grass textures
+
+
+*OTHER (RESOURCE) CREDITS:
+
+*_Tango_:
+- new caco sprite modifications
+- brightmaps for any other sprites you don't see credited elsewhere
+- one-armed cyber baron sprites
+- gib spawners (just the generic spawners;
+  all other gib stuff is credited to _Sergeant Mark IV_)
+- pyro pemon gib sprites
+
+*_RonnieJamesDiner_:
+- Spider Mastermind firing code changes
+
+*_Ultra64_:
+- Scrap Gun sprites
+
+*_Aurelius_:
+- Scrap Gun sprite edits
+
+*_Sapfiar_:
+- all of the Supercharge-specific GLDEFS for monsters and projectiles and items
+
+*The Denizens of the ZDoom Wiki:
+- various code samples and instructions on how to do things in *ZDoom*.
+  you are all stars in my book
+
+*_Blue Shadow_, _Gez_:
+- various code help provided on the *ZDoom* forums.
+  thank you both for everything you do for the community
+
+*_ZZYZX_ and all past / present *GZ/Doom Builder* contributors:
+- creating / maintaining *GZDoom Builder* (and its forks),
+ which was used for nearly all of the mapping done here
+
+*_Graf Zahl_ and all *G/ZDoom* contributors:
+- creating *G/ZDoom*, which this work would not be possible without
+
+*_Simon Judd_ and all SLADE contributors:
+- creating *SLADE*, which was used for 100% of the resource management
+
+*_Tormentor667_:
+- sparkle sprites and code
+
+*_Per Kristian_:
+- Smooth weapon sprites, which are the basis of many (all?) of the weapon sprites contained here
+- HQ `Doom` iwad sounds
+
+*_Nmn_:
+- base of the SSG sprites from `Stomper`
+
+*_NightFright_:
+- "Improving PerK's smooth animations mod" mod, which was the code basis and original sprite source for all the weapons done by _Uzver_ (see below)
+
+$KEY:U=URL:https://forum.zdoom.org/viewtopic.php?f=37&t=31875
+*_Uzver_:
+- code basis and original sprite source for weapons
+  (see [U: https://forum.zdoom.org/viewtopic.php?f=37&t=31875]);
+  much of the work done here was built upon or unused by _Tango_, however
+
+*_Z86_:
+- Smoother chainsaw, smooth BFG sprites
+
+*_Blox_:
+- Improved gloved fists
+
+*_Virtue_:
+- iwad texture and flat brightmaps
+- pickup, decor, player, chaingunguy, cyberdemon, cacodemon, pain elemental, hell knight brightmaps
+
+*_Gifty_ (`Smooth Doom`):
+- barrel sprites and brightmaps
+- cyberdemon smooth death animation sprites
+- cacodemon alternate death sprites
+  (modified by _Tango_ to fit new Caco sprites)
+- smooth key/skull key sprites and code
+- smooth revenant projectile sprites and code
+- smooth baron ball sprites and code
+- smooth soulsphere sprites and code
+- smooth armor bonus sprites
+
+$KEY:D=URL:https://www.doomworld.com/forum/topic/98165
+*_Gifty_: ([D: DeadMarinev0.9.4.pk3])
+- new blood decals
+- blood decal code
+
+*_TiberiumSoul_ (`Insanity's Requiem` Mk. 2):
+- scrap gun sounds
+
+*_Deadalus_ (`Complex Doom`):
+- fusionite brightmaps
+- behemoth brightmaps
+- exile brightmaps
+- exile sprites
+- Tortured Soul projectile sprites (slight modifications by _Tango_)
+- blood sprites and code
+- bullet tracer sprites
+- bullet tracer code reference
+- bullet puff sprites
+- lost soul alternate sounds (currently disabled though)
+- pistol sound effects
+- pistol, shotgun, super shotgun, assault rifle, plasma gun sprites
+- pistol, shotgun, super shotgun, assault rifle, scrap gun code reference
+- pyro demon sounds
+- draugr sounds
+
+*_Jekyll Grim Payne_ (`Beautiful Doom`):
+- bullet casing code (slight modifications by _Tango_),
+  bullet casing sprites
+- the two unused sounds in /sounds/bounce
+
+*_Xaser_:
+- Tortured Soul DECORATE basis
+
+*_Dreadopp_:
+- Tortured Soul GLDEFS
+
+*_Assmaster_:
+- Tortured Soul sprites
+
+*_id Software_:
+- Tortured Soul sounds and sprite basis
+- Cacodemon Vortex ball death sound
+- health bonus pickup sound (`PSX Doom`)
+- Dark Imp sounds (`PSX Doom`)
+
+*_zrrion the insect_:
+- clip sprites
+
+*_Banjo Software_, _Raven Software_, _Rogue Entertainment_, _Eriance_ / _Amuscaria_:
+- Cacodemon Vortex ball see sound
+
+*_Amuscaria_ (formerly _Eriance_):
+- Cacodemon Vortex ball sprites
+- Behemoth sprites
+- Fusionite sprites
+- Draugr sprites
+- diabolist sprites
+- warlock code basis
+- warlock sounds
+- warlock sprite edit
+
+*_Amuscaria_, _Maelstrom_:
+- Pyro Demon sprites
+
+*_Maelstrom_:
+- Pyro Demon code base
+
+*_Jimmy_:
+- Agathodemon sprites
+
+*_Raven Software_:
+- warlock sprite basis
+- warlock sounds
+
+*_Ben2k9_:
+- cyber baron sprite edit
+
+*_Ghastly Dragon_:
+- warlock gldefs
+
+*_IMX_:
+- imp sprites
+- demon sprites
+
+_40oz_:
+- base for the new caco sprites
+- smooth liquid sprites (VAVA##)
+
+*_Sergeant Mark IV_:
+- hell knight alt deaths
+- the general gibs system (taken and modified from `ketchupv5`)
+- lost soul gib sprites
+- plasma zombie alt death sprites (modified by _Tango_ but based on altdeaths from the `Brutal Doom` zombieman sprites)
+
+*_Gifty_, _Vdude_
+- red-blooded versions of smooth hell knight original death
+
+*_Capcom_ (`Megaman X5`):
+- secret sound effect
+
+*_Yuzo Koshiro_ (`Streets of Rage 2`):
+- menu, intermission sound effects
+
+*_Konami_ (`Castlevania: Symphony of the Night`):
+- barrel hit sounds
+- draugr skull bouncing sound
+- pyro demon fade sounds
+
+*`NOVA2.wad`:
+- TNQ* textures and flats (see GOTHIC folders for each). the filename prefixes show they were added by _tourniquet_, but not sure who actually made all those flats
+
+*_silentzorah_ (`Doomzone`):
+- DROK* rocket sprites (specifically comes from `dzmod3.wad` contained within `doomzone.pk3`)
+
+*_Revenant100_:
+- cyberdemon sprites from `Doom 2 Minor Sprite Fixing Project`
+
+*_Captain Toenail_, _Ghastly_dragon_:
+- plasma zombie sprites (downloaded from _realm667_)
+
+*`Doom Roguelike Monster Expansion`:
+- Cacodemon projectile trail; credits from that wad's section
+  ("Hell Crusader AKA Paladin") that includes these sprites:
+  "Sprites by _Id Software_, _Raven Software_, _Wolfendoom_, _Eriance_, _Vader_, _HorrorMovieGuy_, _Finalizer_, whoever made the ST Grenade"
+
+*_Huy Pham_:
+- white candle sprites (CANDA0)
+
+*_Yholl_, _SoloSpaghetti_, _Sgt. Shivers_, _amv2k9_, _Kyle873_ and _Seryder_ (`DoomRL Arsenal Monster Pack`):
+- Diabolist altdeath2 sprites. I could not find more specific credits of who edited these sprites specifically
+
+*_Id Software_, _Monolith Games_:
+- Pyro Demon sounds
+
+*_Skelegant_:
+- Machinegunguy code base, sprite modifications, sounds
+
+*_David G_:
+- Machinegunguy sprite modifications
+
+*_DustedPandemonic_:
+- key pickup sounds from `Pandemonia-v1.0.1.pk3`;
+  pretty sure original source is `Quake 1` though
+- all ammo and backpack pickup sounds from `Pandemonia-v1.0.1.pk3` and `Pandemonia-v1.1beta1.pk3`
+
+$KEY:M=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=63901
+*_Cybermeme_ ([M: Cyber's Monster Randomizer])
+- draugr death sound. I don't remember where all the other draugr sounds came from :(
+
+$KEY:R=URL:https://www.doomworld.com/forum/topic/103955
+*_Boondorl_ ([R: Doom Rebalanced 1.0]):
+- influence for the Scrapgun spawner code that fixes autoaim for the gun
+
+*_TeamTNT_ (`retres.wad`):
+- base for the slightly edited new index font used in the custom status bar
+
+*_m8f_ (`idclever-starter-0.5.1.pk3`):
+- the code for the pistol start logic, which I gutted and trimmed down a bit (full credit still goes to _m8f_ though)
+
+*_Raven_, _Ettingrinder_, the `Hexen 64` devs:
+- hexen tree variant sprites
+
+*_whirledtsar_:
+- hexen tree variant code
+
+*`randomons-v1.2.5.0.pk3` (part of `Dusted's Clusterfuck I` think?):
+- player rocket explosion sounds
+
+*_Enjay_:
+- tree sprites (TangoGreenTree 3 - 6)
+
+$KEY:B=URL:https://forum.zdoom.org/viewtopic.php?t=64299
+*_DrVenom8_, _NightFright_, _TheUnbeholden_, _Virtue_ ([B: Brightmaps Plus])
+- spider mastermind brightmaps
+
+*_Legendary_, _Sentey_, _Strathos_, _Blood_, _Overlord_, _Arkore_ (`lca-v1.5.8.pk3`):
+- BFG fire sound
+
+A huge thanks to everyone responsible for the resources used in this wad, and an equally huge thanks to everyone that was helpful with playtesting and gave me feedback. There are no doubt a handful of people that I'm forgetting, but my thanks go out to everyone that took the time to play this mod.
