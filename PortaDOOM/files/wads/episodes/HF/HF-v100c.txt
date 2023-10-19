@@ -1,0 +1,69 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : Hell-Forged v1.00b
+Advanced engine needed  : GZDOOM 4.1+ in Hardware/Open GL mode.
+Primary purpose         : Single + Coop play
+===========================================================================
+Title                   : Hell-Forged
+Filename                : HF-v100c.zip
+Release date            : 12/31/2019
+Author                  : Eric Ou (Amuscaria)
+Email Address           : Eriance@gmail.com
+Other Files By Author   : Demon Eclipse
+Misc. Author Info       : 
+
+Description             : Hell-Forged is a reboot of Demon Eclipse's Episode 
+			  2. It no longer directly relates to the story in 
+			  Doom 1, as the original project did. Instead it 
+			  takes place on a different medieval human world 
+			  where Hell has begun its invasion. It is, however, 
+			  a sequel to DE-EP2, chronologically.
+
+Additional Credits to   : Comet1337 & BlueShadow for their ZScripts.
+			  Hell-Forged Testers (See full credits list)			   
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : none
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : HF1Mx
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Doom 2 and from scratch.
+Build Time              : ~2 years.
+Editor(s) used          : GZDoom Builder, Slade 3, Photoshop CC, ZBrush
+Known Bugs              : none
+May Not Run With        : GZDoom versions below v4.1.
+Tested With             : GZDoom 4.2.3
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/
+Web sites: https://forum.zdoom.org/viewtopic.php?f=19&t=13397
+

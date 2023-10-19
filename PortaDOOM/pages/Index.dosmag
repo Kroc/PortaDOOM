@@ -17,6 +17,7 @@ $KEY:D=GOTO:Index - D
 $KEY:E=GOTO:Index - E
 $KEY:F=GOTO:Index - F
 $KEY:G=GOTO:Index - G
+$KEY:H=GOTO:Index - H
 $KEY:I=GOTO:Index - I
 $KEY:L=GOTO:Index - L
 $KEY:M=GOTO:Index - M
@@ -96,6 +97,7 @@ $KEY:W=GOTO:Index - W
 	- *Doom 2 the Way id Did							DTWiD Series
 	- *DOOM 404
 	- *DOOM 64
+	- *DOOM CE
 	- *DOOM II
 	- *DOOM II: Hellscape
 	- *Doom the Way id Did								DTWiD Series
@@ -111,6 +113,7 @@ $KEY:W=GOTO:Index - W
 	- *Elf Gets Pissed (Hexen)
 	- *Erkatane
 	- *Eternal Doom III
+	- *Eviternity
 	- *Eye of the Storm									Cabal Series
 	- *Exomoon
 	- *Express Elevator to Hell, The					Master Levels
@@ -125,6 +128,9 @@ $KEY:W=GOTO:Index - W
 	- *Geryon											Master Levels
 	- *Given, The
 	- *Golden Souls 2, The
+
+   [H]
+    - *Hell Forged										Episodes
 
    [I]
 	- *Image of Evil, The								Cabal Series
@@ -164,6 +170,7 @@ $KEY:W=GOTO:Index - W
 	- *Ol' No Name
 
    [P]
+	- *Paradise
 	- *Paradox											Master Levels
 	- *PlayStation DOOM
 	- *Port Glacia
@@ -208,6 +215,7 @@ $KEY:W=GOTO:Index - W
    [V]
 	- *Valiant
 	- *Venom
+	- *Verdant Citadel
 	- *Vesperas											Master Levels
 	- *Virgil's Lead									Master Levels
 	- *Void and Rainbow

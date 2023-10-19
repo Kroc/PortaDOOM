@@ -1,0 +1,29 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\HF\play-hf.ini"
+$KEY:T=SHELL:wads\episodes\HF\HF-v100c.txt
+$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=13397
+
+:Hell Forged                                        * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt (v1.0) [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>12>31	  Author : _Amuscaria_
+:Levels   : *10			   Modes : *Single, Co-op, Deathmatch
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+`Hell-Forged` is a reboot of Demon Eclipse's Episode 2. It no longer directly relates to the story in `Doom 1`, as the original project did. Instead it takes place on a different medieval human world where Hell has begun its invasion. It is, however, a sequel to `DE-EP2`, chronologically.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: Doom 2 and from scratch
+*Build Time				: ~2 years
+*Editor(s) used			: *GZDoom Builder*, *SLADE* 3, *Photoshop CC*, *ZBrush*
+*Known Bugs				: None
+*May Not Run With...	: *GZDoom* versions below v4.1
+*Tested With...			: *GZDoom* 4.2.3
+
+:Credits:
+:-------------------------------------------------------------------------------
+- _Comet1337_ & _BlueShadow_ for their ZScripts.
+- `Hell-Forged` Testers (See [W: full credits list])
