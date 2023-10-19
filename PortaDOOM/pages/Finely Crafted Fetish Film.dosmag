@@ -1,0 +1,59 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\fcff\play-fcff.ini"
+$KEY:T=SHELL:wads\episodes\fcff\finely_crafted_text_file.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/104608
+
+:Finely Crafted Fetish Film                         * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>02>13?  Author : _Ribbiks_
+:Levels   : *7			   Modes : *Single, ?
+:Requires : *boom		Includes : *?
+:-------------------------------------------------------------------------------
+
+`Finely Crafted Fetish Film` is a set of 7 boom-compatible maps for `Doom2` with a focus on puzzles and unusual layouts. Shoutout to _anotak_ and the lua functionality that is now part of *Doombuilder X*, without which this mapset wouldn't exist.
+
+The maps themselves feature a mixture of puzzle and combat elements: block pushing, switch / elevator setups, monster manipulation, platforming, and some normal slaughter fights here and there. Please consult the following chart to identify which maps may align with your interests:
+
+*MAPS:
+
+01 : *   : Yesterday's --- Ave
+02 : *** : Smelling Faintly Of Roses
+03 : **  : Don't Look Back
+04 : *** : Flower Child
+05 : **  : I Know A Ghost,
+06 : *   : Confession
+07 : **  : Mechanical Embrace
+
+* : puzzle-factor, as determined by our top puzzle quantification experts
+
+*MIDI:
+
+01 :: "Jincuba" by _Benjamin Lewis_
+02 :: "Come to My Circle, Chichiburrin" by _Zan-zan-zawa-veia_
+03 :: "Clouds" by _Sambi Katano_
+04 :: "Grosstown Traffic" by _Zan-zan-zawa-veia_
+05 :: "Niko" by _Garret Thomson_
+06 :: "Cross" by _Zan-zan-zawa-veia_
+07 :: "Strange Times" by _Robert Inventor_
+TP :: "Pixie Dust" by _Zan-zan-zawa-veia_
+IP :: "Strolling Away From A Dark And Dangerous Place" by _Robert Inventor_
+
+*EXTRA NOTES:
+
+- Some optional content in this wad is either one-shot only, or require speedrunning techniques to access (SR50, glides, etc). Expect to miss secrets in a blind playthrough
+- Tested in: *prb+* 2.5.1.5 -complevel 9, *zdoom* 2.8.1
+- zdoom flags: "boom (strict)", "Monsters get stuck over dropoffs" set to YES (required for map01 red key puzzle)
+
+*Thanks to:
+
+- _anotak_: DBX scripting development & support
+- _GrainOfSalt_: statbar gfx
+
+*Various textures ripped from:
+
+- `bauhaus.wad` (so by extension `avp2tex`, _dukeres_)
+- _NiGHTMARE_'s Hellish texture pack
+- `cc4-tex.wad`, you know the drill
+- `doomcity.wad`

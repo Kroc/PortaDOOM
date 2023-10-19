@@ -1,14 +1,16 @@
 $THEME=BLUE
 $KEY:A=GOTO:Final DOOM
-$KEY:B=GOTO:Master Levels #06
-$KEY:C=GOTO:FreeDOOM
+$KEY:B=GOTO:Finely Crafted Fetish Film
+$KEY:C=GOTO:Master Levels #06
+$KEY:D=GOTO:FreeDOOM
 
 ^C:INDEX :: F
 
 :-------------------------------------------------------------------------------
 
 - [A] *Final DOOM										Commercial DOOM
-- [B] *Fistula, The (Master Levels)						Commercial DOOM
-- [C] *FreeDOOM											Total Conversions
+- [B] *Finely Crafted Fetish Film						Episodes
+- [C] *Fistula, The (Master Levels)						Commercial DOOM
+- [D] *FreeDOOM											Total Conversions
 
 
