@@ -2,15 +2,16 @@ $THEME=BLUE
 $KEY:A=GOTO:Shadow Of The Wool Ball
 $KEY:B=GOTO:Shadows of the Nightmare Realm
 $KEY:C=GOTO:Sheer Poison
-$KEY:D=GOTO:Skulldash
-$KEY:E=GOTO:Stardate 20x7
-$KEY:F=GOTO:Strange Aeons
-$KEY:G=GOTO:Struggle - Antaresian Legacy
-$KEY:H=GOTO:Master Levels #10
-$KEY:I=GOTO:Sunlust
-$KEY:J=GOTO:Master Levels #11
-$KEY:K=GOTO:UAC Invasion - Supply Depot
-$KEY:L=GOTO:Swift Death
+$KEY:D=GOTO:Shotgun Symphony
+$KEY:E=GOTO:Skulldash
+$KEY:F=GOTO:Stardate 20x7
+$KEY:G=GOTO:Strange Aeons
+$KEY:H=GOTO:Struggle - Antaresian Legacy
+$KEY:I=GOTO:Master Levels #10
+$KEY:J=GOTO:Sunlust
+$KEY:K=GOTO:Master Levels #11
+$KEY:L=GOTO:UAC Invasion - Supply Depot
+$KEY:M=GOTO:Swift Death
 
 ^C:INDEX :: S
 
@@ -18,13 +19,14 @@ $KEY:L=GOTO:Swift Death
 
 - [A] *Shadow Of The Wool Ball							Total Conversions
 - [B] *Shadows of the Nightmare Realm					Episodes
-- [C] *Sheer Poison										Onesies
-- [D] *Skulldash										Total Conversions
-- [E] *Stardate 20x7									Episodes
-- [F] *Strange Aeons									Total Conversions
-- [G] *Struggle - Antaresian Legacy						MegaWADs
-- [H] *Subspace (Master Levels)							Commercial DOOM
-- [I] *Sunlust											MegaWADs
-- [J] *Subterra (Master Levels)							Commercial DOOM
-- [K] *Supply Depot (UAC Invasion)						Onesies
-- [L] *Swift Death										MegaWADs
+- [C] *Shotgun Symphony									Episodes
+- [D] *Sheer Poison										Onesies
+- [E] *Skulldash										Total Conversions
+- [F] *Stardate 20x7									Episodes
+- [G] *Strange Aeons									Total Conversions
+- [H] *Struggle - Antaresian Legacy						MegaWADs
+- [I] *Subspace (Master Levels)							Commercial DOOM
+- [J] *Sunlust											MegaWADs
+- [K] *Subterra (Master Levels)							Commercial DOOM
+- [L] *Supply Depot (UAC Invasion)						Onesies
+- [M] *Swift Death										MegaWADs

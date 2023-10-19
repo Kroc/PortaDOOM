@@ -1,0 +1,120 @@
+===========================================================================
+Advanced engine needed  : Boom Compatible
+Primary purpose         : Single play 
+===========================================================================
+Title                   : Shotgun Symphony
+Version                 : 1.0
+Filename                : sgnsym.zip
+Release date            : 1/5/19
+Author                  : Steve Duff aka Steve D
+Email Address           : [redacted]
+Other Files By Author   : 7 maps in Realm of Chaos megawad (rlmchaos.zip)
+                          Abcess    (Abcess.zip)
+                          Disraeli  (Disraeli.zip) 
+                          Elfstomp! (Elfstomp.zip) 
+                          Elfkill   (Elfkill.zip)
+                          Don't Touch That Dial! in Doomword Mega Project 2013 (dmp2013.zip)
+                          Heat Miser in MAYhem 2048 (mayhem14.zip)
+                          Blood Factory and Abandoned Port in TNT:Revilution (tntr.zip)
+                          Ancient Base in Doomworld Mega Project 2016 (dmp2016.zip)
+Misc. Author Info       : I've played Doom on Amigas
+
+Description             : An oldschool mapset for E1 of Ultimate Doom, in the combined E1/E2 style
+                          of Fava Beans, but much more violent. Mapset is optimized for pistol start, 
+                          though there are occasional goodies for continuous players. Every map exits
+                          directly into the next, creating a single, giant facility. 
+
+Story                   : You have received orders to investigate the giant UAC complex on Phobos.
+                          Expect extreme enemy resistence from the moment you arrive. They are waiting
+                          for you. You will find a new and powerful enemy caged in the final stage
+                          of the first complex. Do not try to kill it. Instead, journey through
+                          later stages of the vast, interconnected facility. We believe you can find
+                          a way to attack it from behind, when you have stronger weapons. 
+
+
+Special Notes for       : Note 1: Please do not kill the caged Cyberdemon in E1M1. The story of the   
+Maxers and                mapset is that you will see it again in E1M8. 99% Kills means you have  
+Speedrunners              maxed E1M1.
+                          Note 2: In E1M4, you can look through a window and see a BFG on a tall 
+                          column. You cannot reach that BFG in E1M4, it can only be accessed in a
+                          secret area of E1M5. Yes, you are literally looking into E1M5 from E1M4.
+                          There is also an inaccessible Medikit in that area.  
+
+Additional Credits to   : Paul Davidson for Hellmaker, CodeImp for Doom Builder, and id for
+                          Doom, of course
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Ultimate Doom
+Map #                   : E1M1 - E1M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only - untested
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes 
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Eons
+Editor(s) used          : Hellmaker v. 1.2B2, Doom Builder 2, GZDoom Builder, Slade 3, XWE 1.16,
+                          Paint Shop Pro 9
+Known Bugs              : None
+May Not Run With        : Duke Nukem 3D
+Tested With             : PrBoom 2.5.1.3 & 2.5.1.4, GZDoom 2.1.1 and 3.6
+
+
+* Many thanks to my playtesters *
+
+1998: Rob Berkowitz
+
+2014: 7hm, Cynical, Demon of The Well, dobu gabu maru, Glaice, Magnusblitz, marineController,
+      plums, scifista42, Suitepee, Veinen 
+
+2016: Capellan, Cynical, Doomkid, Firedust, pcorf, rdwpa
+
+
+* Map Listing *
+
+E1M1 - A Lazy Day On Phobos
+E1M2 - Guts In A Blender
+E1M3 - Bureau Of Bad Ideas
+E1M4 - Have Some Fava Beans
+E1M5 - Urban Sprawl
+E1M6 - Pumping Station Hoedown
+E1M7 - This Is My Shotgun
+E1M8 - Big Boss Blood Salad
+E1M9 - The Miley Cyrus Concert
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+

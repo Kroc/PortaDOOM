@@ -1,0 +1,49 @@
+Shotgun Symphony:History
+
+21 years in the making! ;)
+
+Inspired by Knee Deep in The Dead and Fava Beans.
+
+E1M1:A Lazy Day On Phobos
+I started this map in Autumn of 1997. Shadowcasting was inspired by E1M7 of Jan van der Veken's Dawn Of The Dead.
+Map was finished by winter of 1997. It's been cleaned up since then, but gameplay is almost unchanged, except 
+for being harder at the end. Originally, the episode was supposed to end in the large open area you teleport to,
+which means that E1M8 would take place there. After you killed the Barons, the outer walls would lower and you'd
+have to face a Cyberdemon and a Spider Mastermind. Instead, I decided to shrink this area and use it as the central 
+hub between several maps.
+
+E1M2:Guts In A Blender
+Started in Summer of 1997 as a Doom 2 map in the E1 style. Converted to Ultimate Doom in January of '98 and added
+to this episode. Difficulty was recently spiked in a couple areas as a result of playtester comments.
+
+E1M3:Bureau Of Bad Ideas
+Started in winter of 1997 and finished by spring 1998. This is meant to be a trickier map in terms of secrets, 
+including the secret exit. Fairly significant changes were made after dobu gabu maru and Demon Of The Well said
+it didn't have enough action, with three areas receiving a difficulty spike.
+
+E1M4:Have Some Fava Beans
+Started sometime in 1998 but was only 45% complete when I stopped mapping in 2003. This was intended to be the 
+most homagey map to Fava Beans, in this case, to E1M2. You'll see where. Map was finally finished sometime in 2013.
+
+E1M5:Urban Sprawl
+Started sometime in 1998. Because I love "Suspense" so much, this map was intended from the start to be gigantic,
+so I could wander around in it a long time and enjoy the music. Map was 95% complete in 2000, and finally completed
+in 2013. No one found the path to the BFG secret during testing. Hint: think of E1M7 of Fava Beans.
+
+E1M6:Pumping Station Hoedown
+Started in either 1998 or 1999, this map was about 40% complete in 2000. I simply ran out of ideas, until I thought
+of making a ginormous pump room in 2011. I'm guessing it's the biggest pump room in Doom history. ;)
+
+E1M7:This Is My Shotgun
+First of the brand-new maps, this was done in December, 2013, and is so far the largest map I've completed in a 
+single month. 
+
+E1M8:Big Boss Blood Salad
+Second of the new maps, this was completed in January-February of 2013. I was trying for a new, very nasty
+wrinkle on the good old Baron slaughter. I also wanted it to be an actual, full map.
+
+E1M9:The Miley Cyrus Concert
+The final new map, this probably dates from March, 2013. It's a pretty tough crowd at the Miley Cyrus Concert. I'm
+a Miley fan and I thought this would be a good place to send the Miley haterz for punishment. ;D
+
+ 
