@@ -1,0 +1,67 @@
+===========================================================================
+Update to               : ports
+Advanced engine needed  : Gzdoom 4.2.1 or later
+Primary purpose         : Single play
+===========================================================================
+Title                   : HocusDoom
+Filename                : hocus.pk3
+Release date            : December 2019
+Author                  : Ravage
+Email Address           : [redacted]
+Other Files By Author   : Mapgame
+
+Description             : Hocusdoom is a Total Conversion for Doom 2 that
+                          attempts to bring Hocus Pocus, a sidescrolling game
+                          by Apogee Software into the third dimension in a
+                          dazzling new adventure!
+
+Additional Credits to   : see HOCREDIT.TXT
+===========================================================================
+* What is included *
+
+New levels              : 40 levels
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2009-2019
+Editor(s) used          : Slade3, GzdoomBuilder
+Known Bugs              : Does not work with Brutal Doom
+Tested With             : Gzdoom 4.2.1 or later
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format.
+If you do so, you must give appropriate credit, provide a link to the
+license, and indicate if changes were made. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or your
+use. You may not use the material for commercial purposes. If you remix,
+transform, or build upon the material, you may not distribute the modified
+material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

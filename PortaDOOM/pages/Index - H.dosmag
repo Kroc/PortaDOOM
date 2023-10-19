@@ -1,8 +1,10 @@
 $THEME=BLUE
 $KEY:A=GOTO:Hell Forged
+$KEY:B=GOTO:Hocus Pocus Doom
 
 ^C:INDEX :: H
 
 :-------------------------------------------------------------------------------
 
-- [H] *Hell Forged										Episodes
+- [A] *Hell Forged										Episodes
+- [B] *Houcs Pocus Doom									Total Conversions

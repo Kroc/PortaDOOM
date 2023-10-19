@@ -1,0 +1,44 @@
+=================================================================
+Hocus Doom Credits
+=================================================================
+
+Project lead, mapper, graphics, compilation - Ravage
+
+-----------------------------------------------------------------
+Games/Resources:
+-----------------------------------------------------------------
+iD Software - Doom
+Apogee/Moonlight Software - Hocus Pocus, Blake Stone
+Epic Megagames - Jazz Jackrabbit, Jill of the Jungle, Tyrian
+D'India Software - Darkwolf
+Raven Software - Shadowcaster/Hexen textures & sprites
+Psygnosis - Hexx: Heresy of the Wizard textures & sprites
+
+-----------------------------------------------------------------
+Scripting:
+-----------------------------------------------------------------
+Kate - Scripting
+Gez - Scripting
+Gutawer - Zscript
+Hisymak - GENMIDI & resource tool for Hocus Pocus
+Blue Shadow - Zscript
+Kinsie - Zscript
+
+-----------------------------------------------------------------
+Sprites/Graphics:
+-----------------------------------------------------------------
+Captain Q - Sprite work
+Osjclatchford - Sprites (power wand base)
+Scuba Steve - Apogee Card & general cheerleedering
+CGA Gillian Seed - ENDOOM, proofreading, music fixes
+
+-----------------------------------------------------------------
+Testing:
+-----------------------------------------------------------------
+Strigon
+Captain Q
+
+-----------------------------------------------------------------
+A Pun:
+-----------------------------------------------------------------
+SaintAbsol

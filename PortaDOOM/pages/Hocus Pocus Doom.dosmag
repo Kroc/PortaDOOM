@@ -1,0 +1,63 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\hocus\play-hocus.ini"
+$KEY:T=SHELL:wads\conversions\hocus\HOCUS.TXT
+$KEY:C=SHELL:wads\conversions\hocus\HOCREDIT.TXT
+$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=45804
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/hocus
+
+:Hocus Pocus Doom                                   * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website [I] idGames
+:-------------------------------------------------------------------------------
+:Released : *2019>12>07	  Author : <Ravage>
+:Levels   : *40			   Modes : *Single
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+`Hocusdoom` is a Total Conversion for `Doom 2` that attempts to bring `Hocus Pocus`, a sidescrolling game by <Apogee Software> into the third dimension in a dazzling new adventure!
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 2009-2019
+*Editor(s) used			: *Slade3*, *GzdoomBuilder*
+*May Not Run With...	: Does not work with `Brutal Doom`
+*Tested With...			: *Gzdoom* 4.2.1 or later
+
+:Credits:
+:===============================================================================
+Project lead, mapper, graphics, compilation - <Ravage>
+
+:Games/Resources:
+:-------------------------------------------------------------------------------
+- <iD Software> - `Doom`
+- <Apogee>/<Moonlight Software> - `Hocus Pocus`, `Blake Stone`
+- <Epic Megagames> - `Jazz Jackrabbit`, `Jill of the Jungle`, `Tyrian`
+- <D'India Software> - `Darkwolf`
+- <Raven Software> - `Shadowcaster`/`Hexen` textures & sprites
+- <Psygnosis> - `Hexx: Heresy of the Wizard` textures & sprites
+
+:Scripting:
+:-------------------------------------------------------------------------------
+- <Kate> - Scripting
+- <Gez> - Scripting
+- <Gutawer> - Zscript
+- <Hisymak> - GENMIDI & resource tool for `Hocus Pocus`
+- <Blue Shadow> - Zscript
+- <Kinsie> - Zscript
+
+:Sprites/Graphics:
+:-------------------------------------------------------------------------------
+- <Captain Q> - Sprite work
+- <Osjclatchford> - Sprites (power wand base)
+- <Scuba Steve> - "Apogee Card" & general cheerleedering
+- <CGA Gillian Seed> - ENDOOM, proofreading, music fixes
+
+:Testing:
+:-------------------------------------------------------------------------------
+- <Strigon>
+- <Captain Q>
+
+:A Pun:
+:-------------------------------------------------------------------------------
+- <SaintAbsol>
