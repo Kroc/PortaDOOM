@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/exomoon
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>11>08	  Author : _Deadwing_
+:Released : *2018>11>08	  Author : <Deadwing>
 :Levels   : *24			   Modes : *Single, Co-op
 :Requires : *boom		Includes : *+sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -51,14 +51,14 @@ As an emergency measure, the authorities activated red alert for further investi
 
 :Credits
 :-------------------------------------------------------------------------------
-$KEY:M=URL:https://www.doomworld.com/forum/topic/92795-meks-box-o-skies-v2-now-with-more-skies/?tab=comments#comment-1713907
-- The amazing statusbar was created by _galileo31dos01_
+$KEY:M=URL:https://www.doomworld.com/forum/topic/92795
+- The amazing statusbar was created by <galileo31dos01>
 - New skies are from [M: Mechadon's pack] 
-- New textures and resources are from _realm667_ archives
+- New textures and resources are from <realm667> archives
 - There's two textures that are from `Struggle`,\\which were used on maps 15 and 19
 - Some textures have been changed by myself, but none from scratch
 
-Special thanks to _rehelekretep_, _FrancisT18_, _bioshockfan90_, _NuclearPotato_ for testing the early version of the wad and giving me feedback and tips! Also thanks a lot _HAK3180_ (full youtube playthrough!), _GarrettChan_, _Memfis_, _gaspe_, _Firedust_, _Agent6_ and _Mazze_ for helping me with open beta with lots of feedback, fdas and videos!
+Special thanks to <rehelekretep>, <FrancisT18>, <bioshockfan90>, <NuclearPotato> for testing the early version of the wad and giving me feedback and tips! Also thanks a lot <HAK3180> (full youtube playthrough!), <GarrettChan>, <Memfis>, <gaspe>, <Firedust>, <Agent6> and <Mazze> for helping me with open beta with lots of feedback, fdas and videos!
 
 $KEY:D=URL:http://www.mediafire.com/file/c874jm3xh9qik29/exomoon-mp3.zip/file
 This wad has an mp3 version of the soundtrack, which is IMO awesome and if you want something different from the MS soundfont you should [D: download it]

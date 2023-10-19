@@ -31,110 +31,110 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
-*Build Time				: Years in the making. Longer counting _Xaser_'s period of compile-idleness
+*Build Time				: Years in the making. Longer counting <Xaser>'s period of compile-idleness
 *Editor(s) used			: Various
 *May Not Run With...	: Versions of Doom prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------
 *Project Founder:
-	_Hellbent_
+	<Hellbent>
 
 *"Lost Episode" organizer:
-	_Xaser_ (the lazy barstid!)
+	<Xaser> (the lazy barstid!)
 
 *Artist:
-	_Kracov_ (TITLEPIC)
+	<Kracov> (TITLEPIC)
 
 *Mappers:
-	_40oz_, _Alfonzo_, _C3ON9_, _Captain Toenail_, _Mr. Chris_, _Daimon_, _Doomhero85_, _Ellmo_, _Foodles_, _Hellbent_, _Hobomaster_, _Mr. Freeze_, _Matt534dog_, _Marcaek_, _Marnetmar_, _Megasphere_, _MithranDenizen_, _NaturalTvventy_, _Phobosdeimos1_, _Shadesmaster_, _Taedium_, _UltimateLorenzo_, _XenoNemesis_
+	<40oz>, <Alfonzo>, <C3ON9>, <Captain Toenail>, <Mr. Chris>, <Daimon>, <Doomhero85>, <Ellmo>, <Foodles>, <Hellbent>, <Hobomaster>, <Mr. Freeze>, <Matt534dog>, <Marcaek>, <Marnetmar>, <Megasphere>, <MithranDenizen>, <NaturalTvventy>, <Phobosdeimos1>, <Shadesmaster>, <Taedium>, <UltimateLorenzo>, <XenoNemesis>
 
 *Random Testing:
-	_Esselfortium_ (v1 playtesting)
-	_rhinoduck_ (tons o' fixes)
+	<Esselfortium> (v1 playtesting)
+	<rhinoduck> (tons o' fixes)
 	All the fine folk who played the wad on ZDaemon TNS. Whoop!
 
 *Map Credits:
 
-- E1M1  *"Security Outpost"		by _Hobomaster_ + _40oz_
-- E1M2  *"Supply Station"		by _UltimateLorenzo_
-- E1M3  *"Nukage Dump"			by _Mr. Chris_
-- E1M4  *"Quarantine Zone"		by _UltimateLorenzo_
-- E1M5  *"Kepler Dorsum"		by _Alfonzo_
-- E1M6  *"Pumping Station"		by _MithranDenizen_
-- E1M7  *"Transport Hub"		by _40oz_
-- E1M8  *"Darkside Lab"			by _Xaser_
-- E1M9  *"Relay Station"		by _Marcaek_
+- E1M1  *"Security Outpost"		by <Hobomaster> + <40oz>
+- E1M2  *"Supply Station"		by <UltimateLorenzo>
+- E1M3  *"Nukage Dump"			by <Mr. Chris>
+- E1M4  *"Quarantine Zone"		by <UltimateLorenzo>
+- E1M5  *"Kepler Dorsum"		by <Alfonzo>
+- E1M6  *"Pumping Station"		by <MithranDenizen>
+- E1M7  *"Transport Hub"		by <40oz>
+- E1M8  *"Darkside Lab"			by <Xaser>
+- E1M9  *"Relay Station"		by <Marcaek>
 
-- E2M1  *"Biosphere"			by _UltimateLorenzo_
-- E2M2  *"Cooling Towers"		by _40oz_
-- E2M3  *"Infirmary"			by _Marnetmar_
-- E2M4  *"Waste Treatment"		by _Ellmo_
-- E2M5  *"Logistics Facility"	by _Megasphere_
-- E2M6  *"Rend of Misery"		by _Ellmo_
-- E2M7  *"Dark Passage"			by _Mr. Chris_ + _PhobosDeimos1_ + _Marnetmar_
-- E2M8* *"The Gate"				by _Marnetmar_ + _Xaser_
-- E2M9  *"Petersen Station"		by _Daimon (Walter Confalonieri)_
+- E2M1  *"Biosphere"			by <UltimateLorenzo>
+- E2M2  *"Cooling Towers"		by <40oz>
+- E2M3  *"Infirmary"			by <Marnetmar>
+- E2M4  *"Waste Treatment"		by <Ellmo>
+- E2M5  *"Logistics Facility"	by <Megasphere>
+- E2M6  *"Rend of Misery"		by <Ellmo>
+- E2M7  *"Dark Passage"			by <Mr. Chris> + <PhobosDeimos1> + <Marnetmar>
+- E2M8* *"The Gate"				by <Marnetmar> + <Xaser>
+- E2M9  *"Petersen Station"		by <Daimon (Walter Confalonieri)>
 
-- E3M1* *"Hell Breach"			by _Daimon_ + _Marcaek_
-- E3M2* *"Manufactorium"		by _Marcaek_
-- E3M3  *"Necromanteion"		by _Foodles_
-- E3M4* *"Tartarus"				by _XenoNemesis_ + _Xaser_
-- E3M5  *"Purgatorio"			by _40oz_
-- E3M6  *"Stygian Caverns"		by _Icytux_
-- E3M7* *"Sheol's Descent"		by _General Rainbow Bacon_ + _Xaser_
-- E3M8* *"Ninth Circle"			by |_Marnetmar_\\(original by _Marnetmar_ + _Mr. Freeze_)
-- E3M9  *"Weeping Hollow"		by _Alfonzo_ + _Marnetmar_ + _Xaser_
+- E3M1* *"Hell Breach"			by <Daimon> + <Marcaek>
+- E3M2* *"Manufactorium"		by <Marcaek>
+- E3M3  *"Necromanteion"		by <Foodles>
+- E3M4* *"Tartarus"				by <XenoNemesis> + <Xaser>
+- E3M5  *"Purgatorio"			by <40oz>
+- E3M6  *"Stygian Caverns"		by <Icytux>
+- E3M7* *"Sheol's Descent"		by <General Rainbow Bacon> + <Xaser>
+- E3M8* *"Ninth Circle"			by |<Marnetmar>\\(original by <Marnetmar> + <Mr. Freeze>)
+- E3M9  *"Weeping Hollow"		by <Alfonzo> + <Marnetmar> + <Xaser>
 
-- E4M1  *"Bridge to Nowhere"	by _Captain Toenail_ + _Traversd_
-- E4M2* *"Demonic Halls"		by _C30N9_ + _Xaser_
-- E4M3  *"Despair"				by _Captain Toenail_
-- E4M4  *"Phlegethon"			by _Captain Toenail_
-- E4M5  *"Diabolico"			by _Megasphere_
-- E4M6* *"The Mourning Halls"	by |_Marnetmar_ + _Alfonzo_\\(original by _General Rainbow Bacon_)
-- E4M7* *"Babel's Gate"			by _Matt534Dog_ + _Xaser_
-- E4M8* *"Temple Guardian"		by _Taedium_
-- E4M9  *"Bean Oversight"		by _Marcaek_
+- E4M1  *"Bridge to Nowhere"	by <Captain Toenail> + <Traversd>
+- E4M2* *"Demonic Halls"		by <C30N9> + <Xaser>
+- E4M3  *"Despair"				by <Captain Toenail>
+- E4M4  *"Phlegethon"			by <Captain Toenail>
+- E4M5  *"Diabolico"			by <Megasphere>
+- E4M6* *"The Mourning Halls"	by |<Marnetmar> + <Alfonzo>\\(original by <General Rainbow Bacon>)
+- E4M7* *"Babel's Gate"			by <Matt534Dog> + <Xaser>
+- E4M8* *"Temple Guardian"		by <Taedium>
+- E4M9  *"Bean Oversight"		by <Marcaek>
 
-- E5M1  *"Landing Zone"			by _Ellmo_
-- E5M2  *"Observatory"			by _Marnetmar_ + _Hellbent_
-- E5M3* *"Recycling Plant"		by _Marnetmar_ + _Xaser_
-- E5M4* *"Phobos Garrison"		by _40oz_
-- E5M5  *"Science Facility"		by _40oz_
-- E5M6  *"Disposal Area"		by _Marcaek_
-- E5M7  *"Sanguine Refinery"	by _ShadesMaster_
-- E5M8* *"Like Rotten Meat"		by _Marnetmar_
-- E5M9* *"Wayward Outpost"		by _Marcaek_
-- E5M0  *"Starport"				by _Marnetmar_ + _Xaser_
+- E5M1  *"Landing Zone"			by <Ellmo>
+- E5M2  *"Observatory"			by <Marnetmar> + <Hellbent>
+- E5M3* *"Recycling Plant"		by <Marnetmar> + <Xaser>
+- E5M4* *"Phobos Garrison"		by <40oz>
+- E5M5  *"Science Facility"		by <40oz>
+- E5M6  *"Disposal Area"		by <Marcaek>
+- E5M7  *"Sanguine Refinery"	by <ShadesMaster>
+- E5M8* *"Like Rotten Meat"		by <Marnetmar>
+- E5M9* *"Wayward Outpost"		by <Marcaek>
+- E5M0  *"Starport"				by <Marnetmar> + <Xaser>
 
-- E6M1  *"Deja Vu"				by _Marnetmar_
-- E6M2  *"Intrusion Zone"		by _UltimateLorenzo_
-- E6M3  *"The Pain Yards"		by _40oz_
-- E6M4  *"Deimos Fortress"		by _Matt534Dog_
-- E6M5  *"Pit of Despair"		by _Ellmo_
-- E6M6  *"Anomaly of Evil"		by _Toenail_
-- E6M7  *"Land of Awe"			by _C30N9_
-- E6M8  *"Malebolge"			by _Marcaek_
-- E6M9  *"Hell's Mosh Pit"		by _Hellbent_
+- E6M1  *"Deja Vu"				by <Marnetmar>
+- E6M2  *"Intrusion Zone"		by <UltimateLorenzo>
+- E6M3  *"The Pain Yards"		by <40oz>
+- E6M4  *"Deimos Fortress"		by <Matt534Dog>
+- E6M5  *"Pit of Despair"		by <Ellmo>
+- E6M6  *"Anomaly of Evil"		by <Toenail>
+- E6M7  *"Land of Awe"			by <C30N9>
+- E6M8  *"Malebolge"			by <Marcaek>
+- E6M9  *"Hell's Mosh Pit"		by <Hellbent>
 
 *Note:
-	Maps marked with an asterisk (**) have been modified "in post" to some extent for either quality revamp or bugfixing reasons. All post-production on these maps was done by _Xaser_, except for E3M1 (done by _Marcaek_), E4M6 (a brand-new map by _Marnetmar_ & _Alfonzo_ that's loosely based on a layout originally by _General Rainbow Bacon_), and E3M8 (a new map by _Marnetmar_ replacing his original submission, "Nucleo Interno").
+	Maps marked with an asterisk (**) have been modified "in post" to some extent for either quality revamp or bugfixing reasons. All post-production on these maps was done by <Xaser>, except for E3M1 (done by <Marcaek>), E4M6 (a brand-new map by <Marnetmar> & <Alfonzo> that's loosely based on a layout originally by <General Rainbow Bacon>), and E3M8 (a new map by <Marnetmar> replacing his original submission, "Nucleo Interno").
 
 	The original versions of these maps can be played by loading DTWID-LX.wad, in which they'll replace the "new" ones in their respective slots. There are no guarantees of vanilla compatibility for the originals, however; some, like E2M8, have overflows, and at least one map (E3M4) is lacking an exit. Just be warned.
 
 *Note #2:
 	A few maps from previous versions have been cycled out of *DTWID-LE* since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
 
-- E1M7  *"Siege Headquarters"	by _PhobosDeimos1_
+- E1M7  *"Siege Headquarters"	by <PhobosDeimos1>
 = E1M3 of PhobosDeimos Anomaly:
   [2: http://static.angryscience.net/doom/pd1-anom.zip]
 
-- E1M8 *"Enigma"				by _NaturalTvventy
+- E1M8 *"Enigma"				by <NaturalTvventy>
 = E1M8 of `No End in Sight`
 
-- E4M6  *"Forgotten Caverns"	by _NaturalTvventy_
+- E4M6  *"Forgotten Caverns"	by <NaturalTvventy>
 = E3M5 of `No End in Sight`
 
-- E5M7  *"Cold Steel"			by _Mr. Chris_ + _Mr. Freeze_
+- E5M7  *"Cold Steel"			by <Mr. Chris> + <Mr. Freeze>
 = Available standalone at:
   [3: doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip]

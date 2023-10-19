@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>04>26	  Author : _John Romero_
+:Released : *2016>04>26	  Author : <John Romero>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch
 :Requires : *no-limit	Includes : *None
 :-------------------------------------------------------------------------------
@@ -16,9 +16,9 @@ With the Toxin Refinery in the rear-view, you make your way to Phobos Mission Co
 
 :Credits
 :-------------------------------------------------------------------------------
-_Tom Hall_ originally created the framework for `E1M4`. It makes sense that if I was creating an entire `E1` of just my work, this would be the level I would remake.
+<Tom Hall> originally created the framework for `E1M4`. It makes sense that if I was creating an entire `E1` of just my work, this would be the level I would remake.
 
-- _John C._, _Adrian C._, _Tom H._, _Kevin C._, _Sandy P._, _Dave T._
-- _Pascal "CodeImp" vd Heiden_ for Doom Builder
+- <John C.>, <Adrian C.>, <Tom H.>, <Kevin C.>, <Sandy P.>, <Dave T.>
+- <Pascal "CodeImp" vd Heiden> for Doom Builder
 - The Doomworld Community
-- _Linguica_, _Matthias Worch_ and _Ian Dunbar_ for Testing 
+- <Linguica>, <Matthias Worch> and <Ian Dunbar> for Testing 

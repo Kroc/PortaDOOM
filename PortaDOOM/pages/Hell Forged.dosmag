@@ -7,7 +7,7 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 :===============================================================================
 *[P] Play						 *[T] .txt (v1.0) [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2019>12>31	  Author : _Amuscaria_
+:Released : *2019>12>31	  Author : <Amuscaria>
 :Levels   : *10			   Modes : *Single, Co-op, Deathmatch
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -25,5 +25,5 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 
 :Credits:
 :-------------------------------------------------------------------------------
-- _Comet1337_ & _BlueShadow_ for their ZScripts.
+- <Comet1337> & <BlueShadow> for their ZScripts.
 - `Hell-Forged` Testers (See [W: full credits list])

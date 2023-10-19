@@ -6,29 +6,29 @@ $KEY:A=GOTO:Aliens TC
 
 :-------------------------------------------------------------------------------
 
-The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer time, that's an eon. However, any gamer who was around back then, or any gamer who has played the conversion since, remembers it intensely. Who can forget the suspense of the first level which, in a stroke of genius, was completely devoid of enemies? Or the frantic pace of the later levels where the player hurried to destroy the alien eggs before they had a chance to hatch? ALIENS-TC struck a nerve in the gaming community which, since then, has seldom been touched. Its creator, _Justin Fisher_, is still reeling from the enormous shockwave that his creation created. Why did he make it? What's he doing now? Read on!
+The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer time, that's an eon. However, any gamer who was around back then, or any gamer who has played the conversion since, remembers it intensely. Who can forget the suspense of the first level which, in a stroke of genius, was completely devoid of enemies? Or the frantic pace of the later levels where the player hurried to destroy the alien eggs before they had a chance to hatch? ALIENS-TC struck a nerve in the gaming community which, since then, has seldom been touched. Its creator, <Justin Fisher>, is still reeling from the enormous shockwave that his creation created. Why did he make it? What's he doing now? Read on!
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	When did you first play Doom?
 
-_Justin		Late December, 1993. I managed to play for three hours before stopping because my nerves were shot and I couldn't stop shaking. Now, my hands don't even ever tremble; the only other time I've been left shaking was when I was hit by a car. That's how a gaming session should be!
+<Justin>	Late December, 1993. I managed to play for three hours before stopping because my nerves were shot and I couldn't stop shaking. Now, my hands don't even ever tremble; the only other time I've been left shaking was when I was hit by a car. That's how a gaming session should be!
 
 *Doomworld	How long after you started to play Doom did you become interested in making levels?
 
-_Justin		The instant I heard that there were people making level editors. That was probably 3-4 months later. I spent the rest of the day wandering aimlessly, thinking furiously about what could do what, and how this or that could work, and heaps of other stuff. Then I realised I had better find out a bit more about what the editors were actually capable of changing. Having played a lot of doom over those last few months, I had a very good idea of what the engine could do, but no idea of how much could be edited. As it turned out, not only were the things I expected possible, but most of what I hoped for as well.
+<Justin>	The instant I heard that there were people making level editors. That was probably 3-4 months later. I spent the rest of the day wandering aimlessly, thinking furiously about what could do what, and how this or that could work, and heaps of other stuff. Then I realised I had better find out a bit more about what the editors were actually capable of changing. Having played a lot of doom over those last few months, I had a very good idea of what the engine could do, but no idea of how much could be edited. As it turned out, not only were the things I expected possible, but most of what I hoped for as well.
 
 *Doomworld	How did you get the idea for Aliens-TC? Were you inspired by anything?
 
-_Justin		Within five minutes of my first game, I thought Doom could make a great Aliens-style game, mainly because the atmosphere was so similar. Perhaps I had watched the film recently, I don't know. As one of my favourites, it would have occurred to me anyway. Probably my biggest inspiration (other than the film) was the experience of my first game of Doom.
+<Justin>	Within five minutes of my first game, I thought Doom could make a great Aliens-style game, mainly because the atmosphere was so similar. Perhaps I had watched the film recently, I don't know. As one of my favourites, it would have occurred to me anyway. Probably my biggest inspiration (other than the film) was the experience of my first game of Doom.
 
 *Doomworld	Since you were basically making the first TC ever, were you in any way uneasy about what you would be capable of doing and how well it would turn out?
 
-_Justin		I was sometimes a bit worried as to whether I could ever finish it. But I was keeping up with what other people were making, which was quite reassuring (even back then, poor wads outnumbered good ones quite considerably).
+<Justin>	I was sometimes a bit worried as to whether I could ever finish it. But I was keeping up with what other people were making, which was quite reassuring (even back then, poor wads outnumbered good ones quite considerably).
 
 *Doomworld	Was Aliens-TC a completely one-man project? I.E. did you make every single level, texture, graphic, sound, etc?
 
-_Justin		I offered the secret level to a friend (_Richard Love_) who was getting into level editing, and the video-captured image at the end of the game involved a friend of a friend with a video blaster (and he also operated that when I was capturing images of the queen model), but other than those exceptions, everything was done by me.
+<Justin>	I offered the secret level to a friend (<Richard Love>) who was getting into level editing, and the video-captured image at the end of the game involved a friend of a friend with a video blaster (and he also operated that when I was capturing images of the queen model), but other than those exceptions, everything was done by me.
 
 			Another great thing about Aliens-TC was its Dehacked work. Dying aliens could spray bio-acid, eggs hatched, proximity indicators flashed, voices spoke at key moments. Was the Dehacking completely original as well, or did you follow someone else's lead?
 
@@ -36,7 +36,7 @@ _Justin		I offered the secret level to a friend (_Richard Love_) who was getting
 
 *Doomworld	How long did Aliens-TC take from start to finish? How many man-hours would you guess went into its creation?
 
-_Justin		About six months start to finish. Regarding hours, I have no idea. Years ago I had a go at estimating this, and rapidly came to the conclusion that I Did Not Want To Know. A terrifying number of hours :-) The work involved in the conversion was also increased by the changing technology. I had to rework the levels about three times I think. The biggest reworking was from when dehacked came out - practically everything had to be changed as I was now able to create new types of monster, scenery, etc., and did so. Doom itself was also changing, which didn't help things.
+<Justin>	About six months start to finish. Regarding hours, I have no idea. Years ago I had a go at estimating this, and rapidly came to the conclusion that I Did Not Want To Know. A terrifying number of hours :-) The work involved in the conversion was also increased by the changing technology. I had to rework the levels about three times I think. The biggest reworking was from when dehacked came out - practically everything had to be changed as I was now able to create new types of monster, scenery, etc., and did so. Doom itself was also changing, which didn't help things.
 
 			Especially my attempts to make Aliens-TC a conversion that was simple to find, download, easy and reliable to install, etc., were completely foiled. Even the filename on the FTP site was wrong because the first upload attempt failed, and I couldn't upload over it, thus leaving a corrupt file instead of Aliens-TC (which briefly increased speculation that it was all a hoax :-)
 
@@ -44,29 +44,29 @@ _Justin		About six months start to finish. Regarding hours, I have no idea. Year
 
 *Doomworld	Where did you get the balls to not put a single enemy in the first level?
 
-_Justin		Good question. I'm not sure. It was an idea that worked for so many reasons that it had to go in. I knew it would fail for some players, but for those for whom it worked, it would __really__ work. I tried to ensure it would not be perceived as a faulty wad, probably with reasonable success.
+<Justin>	Good question. I'm not sure. It was an idea that worked for so many reasons that it had to go in. I knew it would fail for some players, but for those for whom it worked, it would *really* work. I tried to ensure it would not be perceived as a faulty wad, probably with reasonable success.
 
 			There were a few things I wanted to do that I didn't have the balls for, but with 20/20 hindsight based on the reaction to the things I did do, I can see that they would have gone down well. Knowing this has given me much more confidence in my ideas.
 
 *Doomworld	What sort of things were you not man enough to include? :)
 
-_Justin		More deviation from the traditional kill & collect design of levels. I was really uncertain about the reception Med Labs would get - it's almost impossible to survive unless you know what you're meant to be doing, and what you're meant to be doing is different from the normal level. As it turned out, it was far and away the favourite level for a lot of players.
+<Justin>	More deviation from the traditional kill & collect design of levels. I was really uncertain about the reception Med Labs would get - it's almost impossible to survive unless you know what you're meant to be doing, and what you're meant to be doing is different from the normal level. As it turned out, it was far and away the favourite level for a lot of players.
 
 *Doomworld	Have you ever read any of the Doom editing books in the bookstore? How did it make you feel to see your TC mentioned and/or reviewed and/or placed on the CD included?
 
-_Justin		Usually quite good! :-) Most commercial CD's shied away from it for copyright reasons, so it was less affected than some by the "put a ftp-dump of wads onto CD and make a quick buck" people, and due to the scope, more likely to get discussed/reviewed and distributed with respect (ie all files present, credit given, etc.)
+<Justin>	Usually quite good! :-) Most commercial CD's shied away from it for copyright reasons, so it was less affected than some by the "put a ftp-dump of wads onto CD and make a quick buck" people, and due to the scope, more likely to get discussed/reviewed and distributed with respect (ie all files present, credit given, etc.)
 
 *Doomworld	By your own count, how many times were you asked to have Aliens-TC included on commercial works like books or level compilation CDs?
 
-_Justin		Err, I have no idea. I'd guess 2-8. The people most likely to ask are usually also the people most likely to avoid it for copyright reasons.
+<Justin>	Err, I have no idea. I'd guess 2-8. The people most likely to ask are usually also the people most likely to avoid it for copyright reasons.
 
 *Doomworld	Were you ever asked to join any other Doom projects after Aliens-TC?
 
-_Justin		Yep, but there is a long list of reasons why I didn't want to take any up.
+<Justin>	Yep, but there is a long list of reasons why I didn't want to take any up.
 
 *Doomworld	Strangely enough, Aliens-TC was both your first and last work for Doom, not including the unfinished WAD you later released which mainly showcased effects like your M.C. Escher-inspired level. Why did you "burn out" so soon?
 
-_Justin		I wanted to do another conversion, and had planned and designed a fair bit of it before I realised that the time was past. It would probably take me another six months to do the conversion, and by that time, Doom/Doom2 would be on the way out. My main love is for creating worlds, and it was more inviting to wait for the next generation of game/world engine than to spend it with Doom/2 again.
+<Justin>	I wanted to do another conversion, and had planned and designed a fair bit of it before I realised that the time was past. It would probably take me another six months to do the conversion, and by that time, Doom/Doom2 would be on the way out. My main love is for creating worlds, and it was more inviting to wait for the next generation of game/world engine than to spend it with Doom/2 again.
 
 			But while the game ideas for my next conversion could be kept, the technical ones were only relevant to Doom/2, and as I saw more and more wads doing the same things over and over again, and regularly heard people complaining about how you couldn't make a decent level because everything had already been done in Doom nine times over, it seemed a waste to keep the ideas to myself. Hence the Nemisis.wad you mention above. I also love doing the impossible, so seeing a discussion about how an Escher-style room in Doom ‘would be cool but impossible' was cool :-)
 
@@ -78,17 +78,17 @@ _Justin		I wanted to do another conversion, and had planned and designed a fair 
 
 *Doomworld	What happened to the supplement with "The episode map at the end of each level, a better smartgun explosion, lots more destroyable scenery, an egg-laying queen hanging from the nest roof, A proper sky texture, better sounds, lots of things...?"
 
-_Justin		Err, yeah… The cat ate it...
+<Justin>	Err, yeah… The cat ate it...
 
-			At the end of six months of Aliens-TC, I didn't want to touch it with a barge pole. I was sick of it and wanted a break. Now, over four years later, I _might_ have had a long enough break, but I've also decided to never base my work on someone else's intellectual property. Obviously there are big advantages to using such a great (and popular) theme, but the disadvantages are greater (and less obvious in the beginning :-)
+			At the end of six months of Aliens-TC, I didn't want to touch it with a barge pole. I was sick of it and wanted a break. Now, over four years later, I <might> have had a long enough break, but I've also decided to never base my work on someone else's intellectual property. Obviously there are big advantages to using such a great (and popular) theme, but the disadvantages are greater (and less obvious in the beginning :-)
 
 *Doomworld	That almost sounds like you might get around to finishing it...?
 
-_Justin		Nope. No chance. (Unless someone pays me obscene amounts of money to do it :-) My reasons would in some ways be different now, but still nearly as strong.
+<Justin>	Nope. No chance. (Unless someone pays me obscene amounts of money to do it :-) My reasons would in some ways be different now, but still nearly as strong.
 
 *Doomworld	Aliens-TC is easily one of the most-loved and most-played Doom WADs of all time. Even people who have forgotten Doom long ago in favor of newer games can still vividly remember their first time playing Aliens-TC. Did you ever expect it to have the impact that it did?
 
-_Justin		No. Not even close. As it was nearing completion, I did think it was better than almost everything else out there at the time, so I thought it would have a comfortably warm reception, but I was a little off the mark...
+<Justin>	No. Not even close. As it was nearing completion, I did think it was better than almost everything else out there at the time, so I thought it would have a comfortably warm reception, but I was a little off the mark...
 
 			(In the week following the anticipated release of Doom2, more of the newsgroup discussion was about Aliens-TC than Doom2).
 
@@ -100,7 +100,7 @@ _Justin		No. Not even close. As it was nearing completion, I did think it was be
 
 *Doomworld	Speaking of which, is it true that you were approached by Dreamworks Interactive and offered a position on the team creating the game "Trespasser?" If so, why did you turn it down?
 
-_Justin		I got quite a few offers from various companies, most of which I turned down because I wanted to finish my degree, but there was also a conflict between my not wishing to relocate across the world to somewhere where I know no-one, and my wishing to be more than a little cog in a big machine - to have at least reasonable creative input. The problem with this is that unlike a lot of assigned tasks, creatively working with others requires a lot of contact and communication. Which in turn works best when you're in the same room as the people you're brainstorming (or whatever) with.
+<Justin>	I got quite a few offers from various companies, most of which I turned down because I wanted to finish my degree, but there was also a conflict between my not wishing to relocate across the world to somewhere where I know no-one, and my wishing to be more than a little cog in a big machine - to have at least reasonable creative input. The problem with this is that unlike a lot of assigned tasks, creatively working with others requires a lot of contact and communication. Which in turn works best when you're in the same room as the people you're brainstorming (or whatever) with.
 
 			Anyway, back to Dreamworks, I don't remember the offer, but I read an article where they mentioned that the reason I declined was that I wanted to finish my degree, which I guess confirms that they did ask me :-)
 
@@ -108,7 +108,7 @@ _Justin		I got quite a few offers from various companies, most of which I turned
 
 *Doomworld	Has anything ever happened to you in Real Life due to Aliens-TC?
 
-_Justin		The main thing would be the job offers I got from game companies, and perhaps the odd situation when someone recognised my name and isn't quite sure how to react :-). I did some writing for Doom editing books, and a graphics library of sprites, textures, flats, etc. for one (another way of getting some unused ideas out of my system).
+<Justin>	The main thing would be the job offers I got from game companies, and perhaps the odd situation when someone recognised my name and isn't quite sure how to react :-). I did some writing for Doom editing books, and a graphics library of sprites, textures, flats, etc. for one (another way of getting some unused ideas out of my system).
 
 			After finishing my degree last year, I got in contact again with a company that had recently offered a job, and it looked to be just what I wanted; allowing me to work without relocating, creative input, and so on. So I now work for Mad Genius Software, (and it's a great job with fantastic people :-)
 
@@ -118,17 +118,17 @@ _Justin		The main thing would be the job offers I got from game companies, and p
 
 *Doomworld	How often have you been subject to name-recognition due to Aliens-TC? What sort of reaction did the surprised party display?
 
-_Justin		Not often. Usually my name would preceed me. Eg at a LAN gathering or whatever, people who hadn't met me would be usually aware via mutually known gamers who I was or that I was there. The Doom core of our city all spent a lot (euphimism) of time on a BBS (because it was the first to allow four way Doom locally via modem), so most gamers knew me before they met me.
+<Justin>	Not often. Usually my name would preceed me. Eg at a LAN gathering or whatever, people who hadn't met me would be usually aware via mutually known gamers who I was or that I was there. The Doom core of our city all spent a lot (euphimism) of time on a BBS (because it was the first to allow four way Doom locally via modem), so most gamers knew me before they met me.
 
 			As to the reactions; usually a sort of indecision on how to react, usually opting for polite, safe, compliments about ATC :) Probably the worst bit (for me) is when someone would like me to look at a level they've made and give comment. This is bad because frequently, it's quite obvious that no matter what I say, or how I qualify it, my words are going to be taken way of of proportion, especially anything that might be interpretable as a criticism...
 
 *Doomworld	Is it one of the "best things you've ever done" because of the fame and fortune, or for other reasons?
 
-_Justin		Mainly because it not only got me into the game industry, but got me more or less where I wanted to go. Without it, getting a job would not have been a problem, but I would have been highly unlikely to have gotten a job that I enjoy. Having a job that I enjoy is worth almost anything :-)
+<Justin>	Mainly because it not only got me into the game industry, but got me more or less where I wanted to go. Without it, getting a job would not have been a problem, but I would have been highly unlikely to have gotten a job that I enjoy. Having a job that I enjoy is worth almost anything :-)
 
 *Doomworld	What was one of the strangest pieces of mail you ever received pertaining to Aliens-TC?
 
-_Justin		Before I had released A-TC, I had released some screenshots and announced it, but was having difficulty getting it uploaded to a FTP site. (I was also sick of the whole thing, and so not putting much time and effort into overcoming this). Anyway, this resulted in someone sending me mail just to let me know that he could see that Aliens-TC was a hoax, and I was a loser and should get lost (or words to that effect).
+<Justin>	Before I had released A-TC, I had released some screenshots and announced it, but was having difficulty getting it uploaded to a FTP site. (I was also sick of the whole thing, and so not putting much time and effort into overcoming this). Anyway, this resulted in someone sending me mail just to let me know that he could see that Aliens-TC was a hoax, and I was a loser and should get lost (or words to that effect).
 
 			Apparently the screenshots really did look too good to be true, which was a good feeling. (I didn't reply incidentally. Perhaps it would have been fun to have replied with an ambiguous admission of crime a few hours after uploading it...)
 
@@ -142,7 +142,7 @@ _Justin		Before I had released A-TC, I had released some screenshots and announc
 
 *Doomworld	Are there any particularly interesting stories about the making of Aliens-TC you'd like to share?
 
-_Justin		Your intensive research might have uncovered this one already, as I think I've mentioned it before, but I had trouble getting Aliens-TC beta tested. It was at a stage where I was aware that a few of the technical things I was doing were unique to A-TC, so I didn't want them getting out until the release. Hence I didn't want too many people to be playing it. My brother and sister (I was living at home at the time) were prime candidates because they were already in the same building, and they loved/liked (respectively) Doom. The trouble was they were very reluctant to playtest for me. I didn't know why - I thought my doom conversion worked quite well, looked good, and so on. So I just bugged and badgered them into testing for me. One day, nearing the end of the six months, _Richard_'s wad (for the secret level) was ready to playtest.
+<Justin>	Your intensive research might have uncovered this one already, as I think I've mentioned it before, but I had trouble getting Aliens-TC beta tested. It was at a stage where I was aware that a few of the technical things I was doing were unique to A-TC, so I didn't want them getting out until the release. Hence I didn't want too many people to be playing it. My brother and sister (I was living at home at the time) were prime candidates because they were already in the same building, and they loved/liked (respectively) Doom. The trouble was they were very reluctant to playtest for me. I didn't know why - I thought my doom conversion worked quite well, looked good, and so on. So I just bugged and badgered them into testing for me. One day, nearing the end of the six months, <Richard>'s wad (for the secret level) was ready to playtest.
 
 			So I sat down to play it.
 			And it scared the hell out of me...
@@ -151,18 +151,18 @@ _Justin		Your intensive research might have uncovered this one already, as I thi
 
 			A few months before that happened, I demonstrated Aliens-TC (in much cruder form) at a local sci-fi convention. That was a lot of fun.
 
-			(Death-match also tends to run in your favour when you are the only player who knows exactly where __not__ to go in levels that are unfamiliar to the other players :-)
+			(Death-match also tends to run in your favour when you are the only player who knows exactly where *not* to go in levels that are unfamiliar to the other players :-)
 
-			_Terry Pratchett_ managed to find enough time between other activities to get killed, and a good time was had by all. As interesting stories go, this is very much in the "you had to be there" category :-)
+			<Terry Pratchett> managed to find enough time between other activities to get killed, and a good time was had by all. As interesting stories go, this is very much in the "you had to be there" category :-)
 
 			Hmm, I think I watched "Aliens" over 20 times during the making of Aliens-TC. That's worrying in itself - that's almost a full working week...
 
 *Doomworld	At the sci-fi convention, did anybody there have any idea what you were talking about or what you were doing? :)
 
-_Justin		Sort of. The concept of Doom editing had begun to crop up here and there, so while not many people had tried it, a fair few knew about it or had heard of it (editing, not ATC).
+<Justin>	Sort of. The concept of Doom editing had begun to crop up here and there, so while not many people had tried it, a fair few knew about it or had heard of it (editing, not ATC).
 
 			There was enough working that the people who had played Doom thought it was great. People who had never seen Doom before probably didn't notice the difference :-)
 
 *Doomworld	Have you kept up with Dooming news in any way after you removed yourself from the Doom scene?
 
-_Justin		Not really. Every now and then I poke around a few newsgroups or websites, (usually as a result of coming across something about Aliens-TC) but not enough to be up with it.
+<Justin>	Not really. Every now and then I poke around a few newsgroups or websites, (usually as a result of coming across something about Aliens-TC) but not enough to be up with it.

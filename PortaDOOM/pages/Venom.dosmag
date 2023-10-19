@@ -9,7 +9,7 @@ $KEY:E=GOTO:Eternal Doom III
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1998>03>27	  Author : _Ola Björling_
+:Released : *1998>03>27	  Author : <Ola Björling>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
@@ -38,8 +38,8 @@ This is a HARD level. Hard and big. You'll probably want to save quite a lot, an
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Jeff Rabenhurst_ for the incredibly nice `EdMap`
-- _id_ for _DOOM_ and its sequels
-- _UrHash_ for picking on me enough to ever finish this level :)
-- _UrHash_ (again) , _Nick Baker_ and _Chrozoron_ for playtesting.
+- <Jeff Rabenhurst> for the incredibly nice `EdMap`
+- <id> for `DOOM` and its sequels
+- <UrHash> for picking on me enough to ever finish this level :)
+- <UrHash> (again) , <Nick Baker> and <Chrozoron> for playtesting.
 - All my friends in real life for being... er.. well, friends.

@@ -20,7 +20,7 @@ $KEY:R=URL:https://www.doomworld.com/forum/topic/98922-kristian-aro-doom-millenn
 $KEY:G=URL:http://fabiensanglard.net/gebbdoom/
 $KEY:W=URL:https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book_Wolfenstein?id=hel6DwAAQBAJ
 $KEY:B=URL:https://en.wikipedia.org/wiki/Doom_engine#Binary_space_partitioning
-While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release date of _Fabien Sanglard_'s [G: Game Engine Black Book: DOOM], which picks up where the previous [W: Wolf3D tome] left off, and delves into the technological and historical guts of the `DOOM` engine. If you are interested in `DOOM` lore and trivia, then it is required reading. Did you know _John Carmack_'s love affair with the [B: BSP tree] didn't even begin with `DOOM` but with `Wolf3D` for SNES?... but I digress.
+While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release date of <Fabien Sanglard>'s [G: Game Engine Black Book: DOOM], which picks up where the previous [W: Wolf3D tome] left off, and delves into the technological and historical guts of the `DOOM` engine. If you are interested in `DOOM` lore and trivia, then it is required reading. Did you know <John Carmack>'s love affair with the [B: BSP tree] didn't even begin with `DOOM` but with `Wolf3D` for SNES?... but I digress.
 
 
 :RECOMMEND ME A... COFFEE BREAK MAPSET
@@ -33,7 +33,7 @@ The DBP series, which ran for a good chunk of this past year, gave players a mon
 :RECOMMEND ME A... HARDCORE CHALLENGE MAPSET
 :===============================================================================
 $KEY:F=URL:https://www.doomworld.com/forum/topic/103100-flotsam-12-hard-boom-compatible-maps/
-[F: Flotsam] is a set collected by maxer _MrZZul_ aka _Killer5_ and friends (_Benjogami_, _bemused_, _Scotty_, _Nirvana_, _Archi_), offering a variety of mostly short, mostly difficult maps that will appeal to the masochists and the challenge aficionados of the community.
+[F: Flotsam] is a set collected by maxer <MrZZul> aka <Killer5> and friends (<Benjogami>, <bemused>, <Scotty>, <Nirvana>, <Archi>), offering a variety of mostly short, mostly difficult maps that will appeal to the masochists and the challenge aficionados of the community.
 
 $KEY:3=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sf3
 After a bout of development hell, [3: Slaughterfest 3] -- originally `Slaughterfest 2013` (!) -- is out, and worth a look even for intermittent players of high-bodycount stuff. Alongside the behemoths and the demanding tests, there are shorter, snappier maps that work as effective ease-ins. Devoid of the "monotextured boxes with monsters" occasionally seen in `SF2011`, `Slaughterfest 3` is a well rounded, polished set. Just don't set out for completionism unless truly motivated; it is a full megawad plus change, and there are some very long maps.
@@ -63,7 +63,7 @@ $KEY:I=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61047
 
 :DOS BOOT
 :===============================================================================
-The original DOS versions of `DOOM` may be buried, but they're not quite dead. 2018 saw small flickers of life for the executables that started it all. Espi Award Emeritus _fraggle_ has been laying the foundations for cross-port multiplayer, compatible with DOS `DOOM` over the IPX protocol(!), with a long term eye towards resurrecting the classic multiplayer frontend `DWANGO`. On-again-off-again classic EXE hacker _xttl_ returned only the other day with word of a new breakthrough: the ability to create a "loader" to patch arbitrary code into the DOS executable. Your humble webmaster _Linguica_ started his own vanilla EXE hacking hobby and managed to create a DOS EXE for `Selfie Doom` that actually saves the selfies as screenshots. Watch this space in the future - can a `DeHackEd` 4.0 be far off?
+The original DOS versions of `DOOM` may be buried, but they're not quite dead. 2018 saw small flickers of life for the executables that started it all. Espi Award Emeritus <fraggle> has been laying the foundations for cross-port multiplayer, compatible with DOS `DOOM` over the IPX protocol(!), with a long term eye towards resurrecting the classic multiplayer frontend `DWANGO`. On-again-off-again classic EXE hacker <xttl> returned only the other day with word of a new breakthrough: the ability to create a "loader" to patch arbitrary code into the DOS executable. Your humble webmaster <Linguica> started his own vanilla EXE hacking hobby and managed to create a DOS EXE for `Selfie Doom` that actually saves the selfies as screenshots. Watch this space in the future - can a `DeHackEd` 4.0 be far off?
 
 
 :WHAT ARE WE STILL WAITING FOR?

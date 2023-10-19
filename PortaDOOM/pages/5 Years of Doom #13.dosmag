@@ -5,88 +5,88 @@ $TITLE=Iikka Keranen
 
 :-------------------------------------------------------------------------------
 
-When you hear of _Iikka Keranen_, you probably immediately think of his well-known and well-loved series of Quake levels which got him a job at ION Storm, where he currently works on Anachronox. Or maybe you think of Airquake, the TC for which _Iikka_ did all the mapping, modeling, skinning, coding, etc etc. However, _Iikka_'s first kick-ass game add-ons came packaged in the form of Doom levels. In several well-known Doom addons such as Dystopia 3 or the Addictive series of deathmatch levels, _Iikka_ worked his patented breed of magic, stunning the Dooming world with not only his great level design but also his capability to stretch the Doom engine to do things no one had ever believed even remotely possible.
+When you hear of <Iikka Keranen>, you probably immediately think of his well-known and well-loved series of Quake levels which got him a job at ION Storm, where he currently works on Anachronox. Or maybe you think of Airquake, the TC for which <Iikka> did all the mapping, modeling, skinning, coding, etc etc. However, <Iikka>'s first kick-ass game add-ons came packaged in the form of Doom levels. In several well-known Doom addons such as Dystopia 3 or the Addictive series of deathmatch levels, <Iikka> worked his patented breed of magic, stunning the Dooming world with not only his great level design but also his capability to stretch the Doom engine to do things no one had ever believed even remotely possible.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	How did you first hear about, and then get hooked on Doom?
 
-_Iikka		Somebody brought it to the computer class... I ended up building Doom levels at the lab till 10pm almost every weekday as I didn't have a Doom-capable computer at home yet :)
+<Iikka>		Somebody brought it to the computer class... I ended up building Doom levels at the lab till 10pm almost every weekday as I didn't have a Doom-capable computer at home yet :)
 
 *Doomworld	What was it in Doom that made you want to create add-ons for it?
 
-_Iikka		Um, how about the fact that it was possible? Also, it gave me a lot more freedom than other editable games of the time, as it wasn't based on "blocks" of any kind..
+<Iikka>		Um, how about the fact that it was possible? Also, it gave me a lot more freedom than other editable games of the time, as it wasn't based on "blocks" of any kind..
 
 *Doomworld	What work have you done for Doom? How did you get involved?
 
-_Iikka		A lot... Probably 25 Doom DM levels that never got any "press" since they weren't released on the net (I didn't have a net connection.. But we had a LAN at school), and then a large number of single player and DM levels in various Doom2 projects.
+<Iikka>		A lot... Probably 25 Doom DM levels that never got any "press" since they weren't released on the net (I didn't have a net connection.. But we had a LAN at school), and then a large number of single player and DM levels in various Doom2 projects.
 
-			I got more "involved" after releasing my first Doom2 single player level on the internet (on "wad of the week" page of now forgotten _Thomas Giboney_), which got me into contact with _Adelusion_ and we started Dystopia3... The rest is history.
+			I got more "involved" after releasing my first Doom2 single player level on the internet (on "wad of the week" page of now forgotten <Thomas Giboney>), which got me into contact with <Adelusion> and we started Dystopia3... The rest is history.
 
 *Doomworld	Which ones of those WADs are you most proud of?
 
-_Iikka		Dystopia3 is my most important work for various reasons... During its development _Adel_ and I devised most of the "3D" tricks ever used in Doom engine, and I learned to make game textures. (Also I think it had the first non-standard use of the "Romero Head" explosion effect)
+<Iikka>		Dystopia3 is my most important work for various reasons... During its development <Adel> and I devised most of the "3D" tricks ever used in Doom engine, and I learned to make game textures. (Also I think it had the first non-standard use of the "Romero Head" explosion effect)
 
-*Doomworld	From all the special effects created for Doom most are from your hand, as well as _Adel_'s. What made you strive to create these effects?
+*Doomworld	From all the special effects created for Doom most are from your hand, as well as <Adel>'s. What made you strive to create these effects?
 
-_Iikka		I seem to always try and top id's original work and do something that'll be really supported in their next generation of engines :) (Bridges in D2/Quake, Quake2-style stuff in Quake, and now round/organic stuff in Anachronox (Q2 engine)/Q3)
+<Iikka>		I seem to always try and top id's original work and do something that'll be really supported in their next generation of engines :) (Bridges in D2/Quake, Quake2-style stuff in Quake, and now round/organic stuff in Anachronox (Q2 engine)/Q3)
 
 *Doomworld	What is your favorite special effect you made for Doom?
 
-_Iikka		It would be the 3d crossing hallways aka. perfect multiple floors, with two areas on top of each other with floor/ceiling texture between them.. I can't remember if I actually ever used it in a released wad (maybe in Requiem Map08?), but I used a variation I called "really deep water effect" (as opposed to the standard "deep water effect") in a DM level that was mostly underwater :)
+<Iikka>		It would be the 3d crossing hallways aka. perfect multiple floors, with two areas on top of each other with floor/ceiling texture between them.. I can't remember if I actually ever used it in a released wad (maybe in Requiem Map08?), but I used a variation I called "really deep water effect" (as opposed to the standard "deep water effect") in a DM level that was mostly underwater :)
 
 *Doomworld	Were there any special effects you really strived to make but couldn't quite figure out?
 
-_Iikka		The only ones that proved undoable were things related to angled surfaces. Making tiny steps without the lower texture works to an extent, but it's not nearly perfect.
+<Iikka>		The only ones that proved undoable were things related to angled surfaces. Making tiny steps without the lower texture works to an extent, but it's not nearly perfect.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	Recently, a guy has announced his creation of a 5-story 3D bridge in Doom, outdoing your incredible-for-the-time 2-story and 3-story bridges by quite a large margin. Any comments? :)
 
-_Iikka		I think I talked to the guy in emails... I had plans to make 4- and 5-story bridges myself, but really had no reason for that. It can be done with the exact same principle as any two-story system.
+<Iikka>		I think I talked to the guy in emails... I had plans to make 4- and 5-story bridges myself, but really had no reason for that. It can be done with the exact same principle as any two-story system.
 
 *Doomworld	Is there a life after Doom? More significantly, what have you done with your editing skills after you left Doom? I know you did some work on Quake... how did that happen?
 
-_Iikka		I would say "some" is an understatement here. Even though I earned my "skillz" on Doom engines, a lot of my best work happened on Quake.
+<Iikka>		I would say "some" is an understatement here. Even though I earned my "skillz" on Doom engines, a lot of my best work happened on Quake.
 
 *Doomworld	Although Quake is 3D as opposed to Doom's 2.5D, what game was the most fun to create stuff for?
 
-_Iikka		I would say it was Quake. I absolutely love the fact that it was completely designed to be expandable, you could really write your own game with QC (as I did ;), and still not have to hack the exe file etc.
+<Iikka>		I would say it was Quake. I absolutely love the fact that it was completely designed to be expandable, you could really write your own game with QC (as I did ;), and still not have to hack the exe file etc.
 
 *Doomworld	Honestly, don't you think Quake's rocket launcher looks like a mechanical penis?
 
-_Iikka		What do you mean, it isn't a mechanical penis?
+<Iikka>		What do you mean, it isn't a mechanical penis?
 
 *Doomworld	How did you become professionally involved in the game industry?
 
-_Iikka		My Quake levels (yes, the blue ones) caught people's attention at ION. (And God knows how many other companies)
+<Iikka>		My Quake levels (yes, the blue ones) caught people's attention at ION. (And God knows how many other companies)
 
 *Doomworld	How is it like working for a big name game company?
 
-_Iikka		Um, pretty much like working for a small name game company, I guess. Or kinda like making add-on levels, except the game engine is changing all the time and you have to follow a plot :)
+<Iikka>		Um, pretty much like working for a small name game company, I guess. Or kinda like making add-on levels, except the game engine is changing all the time and you have to follow a plot :)
 
-*Doomworld	Is _Romero_ really a cheap camping bastard during deathmatch?
+*Doomworld	Is <Romero> really a cheap camping bastard during deathmatch?
 
-_Iikka		I have played DM against him for maybe 15 minutes total (and it was a 8-player game), so can't really say much. People at ION don't exactly play games all the time.
+<Iikka>		I have played DM against him for maybe 15 minutes total (and it was a 8-player game), so can't really say much. People at ION don't exactly play games all the time.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	Recently we've seen a lot of designers walk out on ION Storm, apparently to start their own company. How does that affect you personally?
 
-_Iikka		Hmm... I hope I'll get a raise for this... just kidding. I won't comment on that, most of them weren't from Anachronox team anyway.
+<Iikka>		Hmm... I hope I'll get a raise for this... just kidding. I won't comment on that, most of them weren't from Anachronox team anyway.
 
 *Doomworld	Are you keeping in touch with the Doom scene, or old Doom buddies?
 
-_Iikka		Sorry, I would have to guess. I've kinda slipped away from Doom scene lately. :(
+<Iikka>		Sorry, I would have to guess. I've kinda slipped away from Doom scene lately. :(
 
 *Doomworld	Why are we Doomers so "weird" for still sticking to the Dictator-for-life of all games? :)
 
-_Iikka		Bah, nothing weird about that. Some people are sticking to things like Zork ;)
+<Iikka>		Bah, nothing weird about that. Some people are sticking to things like Zork ;)
 
 *Doomworld	What do you think of Doom's current position in the 'gaming world', after the release of the source code? Could you have surmised Doom is so very much alive even today?
 
-_Iikka		I think it's in a very cool position, as now everyone can hack it like they want. It will probably start up a lot of young game programmers who can learn the basics of 3d games from it. Also it's probably the best game whose source code is freely available, so I'm not surprised about the sudden "boom" of new Doom versions.
+<Iikka>		I think it's in a very cool position, as now everyone can hack it like they want. It will probably start up a lot of young game programmers who can learn the basics of 3d games from it. Also it's probably the best game whose source code is freely available, so I'm not surprised about the sudden "boom" of new Doom versions.
 
 *Doomworld	How do you see the future of Doom, supposing you think it still has one?
 
-_Iikka		It does have a future... I don't really play it anymore (but then again I don't play anything else either cos I don't have too much spare time), but it's still one of the most fun LAN games around. And now we can get things like CTF and other variations to spice it up. I don't think it would "die" very soon.
+<Iikka>		It does have a future... I don't really play it anymore (but then again I don't play anything else either cos I don't have too much spare time), but it's still one of the most fun LAN games around. And now we can get things like CTF and other variations to spice it up. I don't think it would "die" very soon.

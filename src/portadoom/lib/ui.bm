@@ -483,6 +483,7 @@ SUB formatLine (indent%, src$, default_theme%)
     DIM is_italic`, word_italic`
     DIM is_term`, word_term`
     DIM is_paren`, word_paren`
+    DIM is_name`, word_name`
     DIM is_key`, word_key`
 
     'process text:
@@ -512,6 +513,37 @@ SUB formatLine (indent%, src$, default_theme%)
                 LET word$ = word$ + "^{F-}"
                 'a word boundary occurs after the closing bracket
                 LET is_key` = FALSE
+                LET is_boundary` = TRUE
+
+            ELSEIF char% = ASC_SPC THEN
+                'append the current word (this will word-wrap as necessary)
+                'if the line wrapped exactly the space will not be needed,
+                'and this GOSUB call will not return here!
+                GOSUB addWord
+                'if the line wrapped, we don't want to add the whitespace
+                'to the beginning of the new line, indentation has already
+                'been handled
+                IF line_len% > 0 THEN
+                    CALL STRGUI_Add(" ")
+                    LET line_len% = line_len% + 1
+                END IF
+            ELSE
+                'any other character, add as is
+                GOSUB addChar
+            END IF
+            'process next letter...
+            _CONTINUE
+        END IF
+        
+        'within name no formatting occurs!
+        IF is_name` = TRUE THEN
+            'is this the end of the name?
+            IF char% = CTL_NAME_OFF THEN
+                'add the control code for display
+                '(the angle-bracket isn't displayed)
+                LET word$ = word$ + "^{F-}"
+                'a word boundary occurs after the closing angle-bracket
+                LET is_name` = FALSE
                 LET is_boundary` = TRUE
 
             ELSEIF char% = ASC_SPC THEN
@@ -573,6 +605,14 @@ SUB formatLine (indent%, src$, default_theme%)
                 END IF
                 'add the open-bracket character
                 GOSUB addChar
+
+            CASE CTL_NAME_ON
+                '.............................................................
+                'enable the paren mode
+                '(no word boundary is required)
+                LET is_name` = TRUE
+                'change the colour
+                LET word$ = word$ + "^{F@I}"
 
 ''            CASE CTL_PAREN_ON
 ''                '.............................................................

@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>12>04	  Author : _Matt "cannonball" Powell_
+:Released : *2016>12>04	  Author : <Matt "cannonball" Powell>
 :Levels   : *9			   Modes : *Single, Co-op
 :Requires : *no-limit	Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ A week had followed since a single hero had breached through a portal into the r
 :Map List:
 :-------------------------------------------------------------------------------
 *E2M1 - Flesh Start
-(Music used - `Into _Sandy_'s City` by _Robert Prince_)
+(Music used - `Into <Sandy>'s City` by <Robert Prince>)
 
 This one falls into the vague resembles of the original E2M1 from `Concerned`, visually however this has a solid theme of stone2 mixed with some occasional browns and corruption. 
 
@@ -41,12 +41,12 @@ A new map from scratch, I kept to the theme of the previous two, though the map 
 The start will be very familiar as it is based off the start area from Infirmary from `Concerned`. The rest takes on similar themes to the same said map, but expanded and has a much higher level of interconnectivity as well as a degree of non-linearity. I really wanted to get a map where marble textures dominated and this is it.
 
 *E2M5
-(Music used - `Mystic's Glance` by _David Shaw_, `Requiem` Map05)
+(Music used - `Mystic's Glance` by <David Shaw>, `Requiem` Map05)
 
 This map was made from scratch, the idea from the E2M5 of `Concerned` was scrapped and replaced with a fairly compact and violent E2 styled corrupt tech base. The hunt for the secret exit brings its rewards, but also some hairy moments.
 
 *E2M6 - Aqueduct of Agony
-(Music used - `Sinister` by _Robert Prince_, default track)
+(Music used - `Sinister` by <Robert Prince>, default track)
 
 I really liked the theme of E2M6 from `Concerned`, but the map layout sucked, so here is a map with a even higher percentage of damaging floor, a layout which tends to favour roaming monsters and throw a cyber right at the start. Have fun and don't dawdle, I didn't place that many rad-suits :P
 
@@ -56,7 +56,7 @@ I really liked the theme of E2M6 from `Concerned`, but the map layout sucked, so
 So it typical tradition, here is a huge map in the Map07 slot. The start to feel familiar but has been expanded to give a more airy feel. Expect to be pressurised from start to finish, but hopefully this isn't too overwhelming and the majority of the combat is more incidental here, a difference that can be seen across most of this set in comparison to Concerned.
 
 *E2M8 - Ground Zero
-(Music used - `Stigmatism` by _Primeval_)
+(Music used - `Stigmatism` by <Primeval>)
 
 I didn't want to make a map that was too long, or as short as the original, so here is a showdown deep underground where the hell armys are first attacking the base. I just hope the madness isn't too much here.
 
@@ -76,7 +76,7 @@ The initial design for this one was made when the DWMC played `Hell Revealed`, s
 
 :Credits:
 :-------------------------------------------------------------------------------
-- _ID Games_ for `DOOM`
-- _Tourniquet_ for alpha testing
+- <ID Games> for `DOOM`
+- <Tourniquet> for alpha testing
 - The artists/games/tv shows for which the music for this wad comes from
 - The People from doomworld who actually tested this and helped to implement better gameplay

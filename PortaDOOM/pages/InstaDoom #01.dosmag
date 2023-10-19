@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/combos/instadm
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>07	  Author : _Linguica
+:Released : *2015>12>07	  Author : <Linguica>
 :Levels   : *None		   Modes : *Single, Co-op
 :Requires : *Vanilla	Includes : *+Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -31,4 +31,4 @@ ALSO ALSO INCLUDES: InstaDoom DLC Pack 1! Is Instagram too "mainstream" for your
 
 :Credits
 :-------------------------------------------------------------------------------
-_Mike12_ for lots of help with the Doomguy HUD graphics. _Scuba Steve_ for the third-person Doomguy poses. The _Chainsmokers_ and midimusic.de for the tunes. The Freedoom project for the Python scripts to generate the custom palettes and colormaps.
+<Mike12> for lots of help with the Doomguy HUD graphics. <Scuba Steve> for the third-person Doomguy poses. The <Chainsmokers> and midimusic.de for the tunes. The Freedoom project for the Python scripts to generate the custom palettes and colormaps.

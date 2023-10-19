@@ -7,14 +7,14 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>02>18	  Author : _RottKing_
+:Released : *2016>02>18	  Author : <RottKing>
 :Levels   : *9			   Modes : *Single, Co-op
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"Heretic: Shadow of the Serpent Riders"_ on [S: Steam] it will be detected automatically, otherwise place the file in the _"files\wads"_ folder.
+! If you own `"Heretic: Shadow of the Serpent Riders"` on [S: Steam] it will be detected automatically, otherwise place the file in the _"files\wads"_ folder.
 $KEY:S=URL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
 
 An episode 1 replacement for Heretic.

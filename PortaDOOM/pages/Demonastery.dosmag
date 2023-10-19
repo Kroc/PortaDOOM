@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/102434
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>10>20	  Author : _Nootrac4571_
+:Released : *2018>10>20	  Author : <Nootrac4571>
 :Levels   : *1			   Modes : *Single, Co-op?, Deathmatch?
 :Requires : *boom		Includes : *+Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -23,5 +23,5 @@ A medium sized, architecturally detailed single-player map which twists back in 
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Jimmy (James Paddock)_ for the excellent music
-- _Obsidian_ for the `DeHackEd` code
+- <Jimmy (James Paddock)> for the excellent music
+- <Obsidian> for the `DeHackEd` code

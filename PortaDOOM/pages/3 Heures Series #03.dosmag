@@ -28,45 +28,45 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
 :Credits
 :-------------------------------------------------------------------------------
 Project Leader:
-	- _JC_
+	- <JC>
 
 Level Designer :
-	- _Ch0wW
-	- _Darkwave0000
-	- _Datacore
-	- _franckFRAG
-	- _Jambon
-	- _JC
-	- _Memfis
-	- _Necrotikflesh
-	- _NilsTheRed
-	- _Oxyde
-	- _Roofi
-	- _[WH]-Wilou84
+	- <Ch0wW>
+	- <Darkwave0000>
+	- <Datacore>
+	- <franckFRAG>
+	- <Jambon>
+	- <JC>
+	- <Memfis>
+	- <Necrotikflesh>
+	- <NilsTheRed>
+	- <Oxyde>
+	- <Roofi>
+	- <[WH]-Wilou84>
 
 Skys:
-	- _franckFRAG_
+	- <franckFRAG>
 
 GFX:
-	- _franckFRAG_
-	- _JC_ (HUD Numbers + Map Names)
+	- <franckFRAG>
+	- <JC> (HUD Numbers + Map Names)
 
 Demos:
-	- _JC_
+	- <JC>
 
 Testing:
-	- _Ch0wW_
-	- _Datacore_
-	- _FranckFRAG_
-	- _JC_
-	- _Oxyde_
-	- _Roofi_
-	- _[WH]-Wilou84_
+	- <Ch0wW>
+	- <Datacore>
+	- <FranckFRAG>
+	- <JC>
+	- <Oxyde>
+	- <Roofi>
+	- <[WH]-Wilou84>
 
 :Map List
 :===============================================================================
 *MAP01				: Négligence
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3H00
 *Editor(s) used		: Doom Builder 1.6 ; XWE
 *Music track		: 32in24-10 MAP15
@@ -75,7 +75,7 @@ Testing:
 *Author comments	: none
 :-------------------------------------------------------------------------------
 *MAP02				: Atterrissage
-*Author(s)			: _Roofi_
+*Author(s)			: <Roofi>
 *Build time			: 3h20
 *Editor(s) used		: Gzdoombuilder + Slade
 *Music track		: Cyber Rainforce - mobility battle
@@ -84,34 +84,34 @@ Testing:
 *Author comments	: A grey-base themed level. A short and not very difficult map inspired of E1M1.
 :-------------------------------------------------------------------------------
 *MAP03				: Séréna, reviens, on t'aime
-*Author(s)			: _Jambon_
+*Author(s)			: <Jambon>
 *Build time			: Around 3 hours
 *Editor(s) used		: GZDoomBuilder, TuxGuitar
 *Music track		: A slighty edited midi version of Command & Conquer Red Alert 2 - Blow It Up
 *Bugs				: None known
 *Inspiration		: Shadow Warrior Twin Dragon - Secret Garden
-*Author comments	: A non-symetrical map, wow. Thanks to _Wilou_ for the help.
+*Author comments	: A non-symetrical map, wow. Thanks to <Wilou> for the help.
 :-------------------------------------------------------------------------------
 *MAP04				: Réacteur Chimique
-*Author(s)			: _Nils "NilsTheRed" Vandamme_
+*Author(s)			: <Nils "NilsTheRed" Vandamme>
 *Build time			: 2h 59min 34s :p
 *Editor(s) used		: DoomBuilder 2, Slade 3
-*Music track		: warfare.mid (composed by _Franck Klepacki_ for Command & Conquer, found in midi at www.mirsoft.info )
+*Music track		: warfare.mid (composed by <Franck Klepacki> for Command & Conquer, found in midi at www.mirsoft.info )
 *Bugs				: No bugs discovered yet
 *Inspiration		: When I dream of Doom while sleeping, completed with parts influenced by the others 3hA episodes
-*Author comments	: I would like to thank Id software for Doom, all the members of the CFD, my family, and every music composer for their amazing tracks I've listened while creating this map (_Basil Poledouris_ and _Franck Klepacki_ in fact :D)
+*Author comments	: I would like to thank Id software for Doom, all the members of the CFD, my family, and every music composer for their amazing tracks I've listened while creating this map (<Basil Poledouris> and <Franck Klepacki> in fact :D)
 :-------------------------------------------------------------------------------
 *MAP05				: Violently Imply
-*Author(s)			: _christophe "Necrotikflesh" Calamoneri_
+*Author(s)			: <christophe "Necrotikflesh" Calamoneri>
 *Build time			: +3h30
 *Editor(s) used		: Doom Builder 1
-*Music track		: Lost Soul - _Thyrbse_ (https://thyrbse.nn.fi/oldschool/midi.zip)
+*Music track		: Lost Soul - <Thyrbse> (https://thyrbse.nn.fi/oldschool/midi.zip)
 *Bugs				: none knows
 *Inspiration		: none
 *Author comments	: violent and funky
 :-------------------------------------------------------------------------------
 *MAP06				: Ombres Boueuses
-*Author(s)			: _Maxime "Datacore" Bisiaux_
+*Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 3H00 
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Doom 2 Map03
@@ -120,7 +120,7 @@ Testing:
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP07				: Six Seulement
-*Author(s)			: _Oxyde_
+*Author(s)			: <Oxyde>
 *Build time			: 4 hours +
 *Editor(s) used		: Doom Builder 1.68, XWE
 *Music track		: The End is Nigh - Plutonia 2 OST
@@ -129,34 +129,34 @@ Testing:
 *Author comments	: This map went through countless development steps. At first I wanted it to be flesh and metal, then a Plutonia themed level, then a GW2 looking one, and it went like that for several hours before I made my mind with the theme. Map's name reflects it's potential gameplay, and refers to a long lost project of mine.
 :-------------------------------------------------------------------------------
 *MAP08				: Storm Warning
-*Author(s)			: _Memfis_
+*Author(s)			: <Memfis>
 *Build time			: 3 hours, then some time to get rid of the HOMs and add difficulty settings and multiplayer stuff.
 *Editor(s) used		: GZDoom Builder, XWE
-*Music track		: Sorry I don't remember, it's from some CTF wad. _Sicamore_ knows for sure.
+*Music track		: Sorry I don't remember, it's from some CTF wad. <Sicamore> knows for sure.
 *Bugs				: Maaaybe HOMs if you try really hard to find them.
-*Inspiration		: _Erik Alm_'s, _Michael Krause_'s and _Chris Christenson_'s maps.
+*Inspiration		: <Erik Alm>'s, <Michael Krause>'s and <Chris Christenson>'s maps.
 *Author comments	: Just a simple ocean base. I tried to put enough HP for semi-aggressive play.
 :-------------------------------------------------------------------------------
 *MAP09				: Entrepôt
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 4h
 *Editor(s) used		: Gzdoom Builder
-*Music track		: A Number Of Ennemies by _Cyber-Rainforce_
+*Music track		: A Number Of Ennemies by <Cyber-Rainforce>
 *Bugs				: None.
-*Inspiration		: Ultimate Doom & _FranckFRAG_ :D
+*Inspiration		: Ultimate Doom & <FranckFRAG> :D
 *Author comments	: Circles and monsters !
 :-------------------------------------------------------------------------------
 *MAP10				: Jessie
-*Author(s)			: _William "[WH]-Wilou84" Huber_
+*Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: N/A
 *Editor(s) used		: Doom Builder 1.68, Adobe Photoshop CS5.1, Paint.NET
-*Music track		: "Getaway" by _Stuart Rynn_
+*Music track		: "Getaway" by <Stuart Rynn>
 *Bugs				: None known. 
 *Inspiration		: Suspended in Dusk, Speed of Doom map 16
-*Author comments	: Been quite a long time I wanted to try a techbase map with a few red textures in-between grey and black. These edits from _NiGHTMARE_ were just so tempting to use :) This one's rather easy-ish and was intended for the ending of the first episode. Texture credits: Dusk, _NiGHTMARE_, _[WH]-Wilou84_
+*Author comments	: Been quite a long time I wanted to try a techbase map with a few red textures in-between grey and black. These edits from <NiGHTMARE> were just so tempting to use :) This one's rather easy-ish and was intended for the ending of the first episode. Texture credits: Dusk, <NiGHTMARE>, <[WH]-Wilou84>
 :-------------------------------------------------------------------------------
 *MAP11				: Ca tombe Satan s'en tape
-*Author(s)			: _Jambon_
+*Author(s)			: <Jambon>
 *Build time			: Around 3 hours, obviously
 *Editor(s) used		: GZDoomBuilder, Doom Builder, Slade, TuxGuitar, GIMP
 *Music track		: An edited midi version of Pachelbel's canon
@@ -165,7 +165,7 @@ Testing:
 *Author comments	: A monotextured symetric map, because that's my speciality
 :-------------------------------------------------------------------------------
 *MAP12				: Spirale
-*Author(s)			: _Maëllig "Ch0wW" DESMOTTES_
+*Author(s)			: <Maëllig "Ch0wW" DESMOTTES>
 *Build time			: 3h, Additionnal hour for the details/testing
 *Editor(s) used		: GZDoom Builder
 *Music track		: Havana Smooth - ROTT
@@ -174,16 +174,16 @@ Testing:
 *Author comments	: This map is an entire backtracing map. Each part of the map is making you go to another part, and coming back to open another part of the map, and so on.
 :-------------------------------------------------------------------------------
 *MAP13				: Funeste Rendez-vous
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3H00
 *Editor(s) used		: Doom Builder 1.6 ; XWE
 *Music track		: Zone300 MAP03
 *Bugs				: Exit plateform isn't bugged.
-*Inspiration		: There is a trap which inspired by AHAHAC.wad, made by _Memfis_.
+*Inspiration		: There is a trap which inspired by AHAHAC.wad, made by <Memfis>.
 *Author comments	: I wished to make a pretty fun puzzle map. I didn't have anything to say.
 :-------------------------------------------------------------------------------
 *MAP14				: Epsilon indi
-*Author(s)			: _Maxime "Datacore" Bisiaux_
+*Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 2H55
 *Editor(s) used		: Doom builder 1.68
 *Music track		: Fradm1_.wad map01
@@ -192,7 +192,7 @@ Testing:
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP15				: Ile paradisiaque
-*Author(s)			: _Roofi_
+*Author(s)			: <Roofi>
 *Build time			: 3h30 (without counting bug-fixing...)
 *Editor(s) used		: GZdoombuilder for the map , Slade for the music.
 *Music track		: Detana!! Twinbee - level 1 
@@ -201,7 +201,7 @@ Testing:
 *Author comments	: This is my first map on Gzdoombuilder and the third map for the project. This map is more open than the previous ones and longer too.
 :-------------------------------------------------------------------------------
 *MAP16				: Infligeance
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3 hours + extra for the calibrating gameplay.
 *Editor(s) used		: Doom Builder 1.6, XWE.
 *Music track		: Sorry I don't remember.
@@ -210,7 +210,7 @@ Testing:
 *Author comments	: Archeviles keep this base for a picnic with your friends.
 :-------------------------------------------------------------------------------
 *MAP17				: Chlorophyll
-*Author(s)			: _Maxime "Datacore" Bisiaux_
+*Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 2H55 
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Alt Map06
@@ -219,16 +219,16 @@ Testing:
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP18				: Nassima
-*Author(s)			: _William "[WH]-Wilou84" Huber_
+*Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: Way more than 3 hours all things considered, heh
 *Editor(s) used		: Doom Builder 1.68, Adobe Photoshop CS5.1, Paint.NET
-*Music track		: "Assault" by _Maxime Tondreau_
+*Music track		: "Assault" by <Maxime Tondreau>
 *Bugs				: In vanilla ports, the composite textures got screwed up. I'll get around to fix them somehow.
 *Inspiration		: Stardate 20X6
-*Author comments	: An attempt at making something small yet enjoyable for 3ha3. As usual, I failed hard at trying to finish the map under the time limit. Texture credits: Dusk, _NiGHTMARE_, _Gez_, _[WH]-Wilou84_
+*Author comments	: An attempt at making something small yet enjoyable for 3ha3. As usual, I failed hard at trying to finish the map under the time limit. Texture credits: Dusk, <NiGHTMARE>, <Gez>, <[WH]-Wilou84>
 :-------------------------------------------------------------------------------
 *MAP19				: Déficience Aiguë
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3++
 *Music track		: Sunlust - map19
 *Bugs				: none
@@ -236,7 +236,7 @@ Testing:
 *Author comments	: just two words: brutal map.
 :-------------------------------------------------------------------------------
 *MAP20				: Donjon sanglant
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3h30
 *Editor(s) used		: Gzdoom Builder 2.3.0.2393
 *Music track		: Battlefront (long version) by Cyber-Rainforce
@@ -245,7 +245,7 @@ Testing:
 *Author comments	: Too much symmetry in that map ...
 :-------------------------------------------------------------------------------
 *MAP21				: Apero d'enfer
-*Author(s)			: _Roofi_
+*Author(s)			: <Roofi>
 *Build time			: ~3h20 (without counting bug-fixing...)
 *Editor(s) used		: Gzdoombuilder + Slade
 *Music track		: Doom - E3M3
@@ -254,16 +254,16 @@ Testing:
 *Author comments	: The gameplay and the architecture are inspired of Ultimate doom's third episode. There are no monsters from Doom 2 and no SSG.
 :-------------------------------------------------------------------------------
 *MAP22				: Autel Ecarlate
-*Author(s)			: _Nils "NilsTheRed" Vandamme_
+*Author(s)			: <Nils "NilsTheRed" Vandamme>
 *Build time			: 3 hours
 *Editor(s) used		: DoomBuilder 2, Slade 3
-*Music track		: linefire.mid from Command & Conquer originaly composed by _Franck Klepacki_, found on www.mirsoft.info
+*Music track		: linefire.mid from Command & Conquer originaly composed by <Franck Klepacki>, found on www.mirsoft.info
 *Bugs				: nothing found sofar
 *Inspiration		: Scythe, the previous 3 heures d'Agonie and maybe a bit of Utnt...
 *Author comments	: Thank to the authors of "Who killed captain Alex" to have made such a good which provided an excellent working sonor background while making this map ! And thank to all the members of the CFD for being awesome !
 :-------------------------------------------------------------------------------
 *MAP23				: Hemoglobin
-*Author(s)			: _Maxime "Datacore" Bisiaux_
+*Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 2h55 
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Sihr2fix.wad Map01
@@ -272,25 +272,25 @@ Testing:
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP24				: Les terres de l'enfer
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3h00
 *Editor(s) used		: Gzdoom Builder
-*Music track		: Facing Evil by _Jimmy_
+*Music track		: Facing Evil by <Jimmy>
 *Bugs				: None.
 *Inspiration		: Doom's Episode 3 :p
 *Author comments	: Some shores of hell :D
 :-------------------------------------------------------------------------------
 *MAP25				: Helldoors
-*Author(s)			: _Maëllig "Ch0wW" DESMOTTES_
+*Author(s)			: <Maëllig "Ch0wW" DESMOTTES>
 *Build time			: 4 hours
 *Editor(s) used		: Doom Builder 2
 *Music track		: Floghorn - Duke Nukem 3D
 *Bugs				: None afaik.
 *Inspiration		: Hell!
-*Author comments	: My first map done 5 days after the announcement of 3 Heures d'Agonie 3. It was kinda different than what I usually did on 3HA2. At least I had a lot of enjoyment doing this map. Be careful of the possible traps inside the map! Thanks to _Oxyde_, _JCD_ and the 3HA3 team to review the map too. 
+*Author comments	: My first map done 5 days after the announcement of 3 Heures d'Agonie 3. It was kinda different than what I usually did on 3HA2. At least I had a lot of enjoyment doing this map. Be careful of the possible traps inside the map! Thanks to <Oxyde>, <JCD> and the 3HA3 team to review the map too. 
 :-------------------------------------------------------------------------------
 *MAP26				: Empire of Dirt
-*Author(s)			: _Memfis_
+*Author(s)			: <Memfis>
 *Build time			: Pretty much exactly 3 hours, including vanilla testing and stuff
 *Editor(s) used		: GZDoom Builder, XWE
 *Music track		: "Fretless Salsa" from Age of Empires
@@ -299,7 +299,7 @@ Testing:
 *Author comments	: A quick carnage in hell, name is kinda stolen from a Nine Inch Nails song...
 :-------------------------------------------------------------------------------
 *MAP27				: La Géhenne Rouge
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3 hours.
 *Editor(s) used		: Doom Builder 1.6, XWE
 *Music track		: 50shades map06
@@ -308,16 +308,16 @@ Testing:
 *Author comments	: This map looks like the map29 from Swift Death, but this map is more accessible.
 :-------------------------------------------------------------------------------
 *MAP28				: Véro
-*Author(s)			: _William "[WH]-Wilou84" Huber_
+*Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: N/A
 *Editor(s) used		: Doom Builder 1.68, Adobe Photoshop CS5.1, Paint.NET
-*Music track		: "Ambience II" by _Metabolist_, from Hell Revealed II
+*Music track		: "Ambience II" by <Metabolist>, from Hell Revealed II
 *Bugs				: Maybe some HOMs in the yellow door area.
 *Inspiration		: Death-Destiny's Abyssion, Sunlust map 17
-*Author comments	: I tried something different this time: a map without any of the Shotguns ( and no RL either ) and an early focus on the Chainsaw. The map is fairly hard and quickly escalates into madness territory once you get to the cell weapons, so good luck. Texture credits: _Cage_, _DefconRazor32_ ( Doom II Recolored ), _Eriance_, GothicTX / _Adelusion_, _NiGHTMARE_, Raven Software
+*Author comments	: I tried something different this time: a map without any of the Shotguns ( and no RL either ) and an early focus on the Chainsaw. The map is fairly hard and quickly escalates into madness territory once you get to the cell weapons, so good luck. Texture credits: <Cage>, <DefconRazor32> ( Doom II Recolored ), <Eriance>, GothicTX / <Adelusion>, <NiGHTMARE>, Raven Software
 :-------------------------------------------------------------------------------
 *MAP29				: Serment de Noirceur
-*Author(s)			: _Darkwave0000_
+*Author(s)			: <Darkwave0000>
 *Build time			: 3.5 hours
 *Editor(s) used		: Doom Builder 2, Slade 3
 *Music track		: "Shadow Wood" from Hexen
@@ -326,28 +326,28 @@ Testing:
 *Author comments	: This is the fastest map that I am ever completing because I am not skilled in mapping quickly, so I am quite proud of this map. I was using many detailed sketches and a couple of attempts to complete the map quickly. Hopefully it is a fun map to finish this WAD and you will enjoy it.
 :-------------------------------------------------------------------------------
 *MAP30				: 3 heures d'agonie 3
-*Author(s)			: _franckFRAG_, _JC_, _William "[WH]-Wilou84" Huber_
+*Author(s)			: <franckFRAG>, <JC>, <William "[WH]-Wilou84" Huber>
 *Build time			: 3h each
 *Editor(s) used		: Doom builder 1.68, Gzdoom Builder
-*Music track		: The Forgotten God by _Eris Falling_
+*Music track		: The Forgotten God by <Eris Falling>
 *Bugs				: Some HOMs in the starting area, Final Boss can't be killed with complevel > 9
 *Inspiration		: ?
 *Author comments	: ?
 :-------------------------------------------------------------------------------
 *MAP31				: Eau trouble
-*Author(s)			: _Roofi_
+*Author(s)			: <Roofi>
 *Build time			: 3h10 (without counting bug-fixing)
 *Editor(s) used		: Doombuilder2 + Slade
-*Music track		: Dilapidated village - _Cyber Rainforce_
+*Music track		: Dilapidated village - <Cyber Rainforce>
 *Bugs				: The sail of the boat may be buggy on Chocolate Doom.
 *Inspiration		: Dire Dire Docks level of Super Mario 64.
 *Author comments	: I had a lot of inspiration. I think it's one of my best maps. I also manage to not take too much time.
 :-------------------------------------------------------------------------------
 *MAP32				: Doom deux
-*Author(s)			: _Oxyde_
+*Author(s)			: <Oxyde>
 *Build time			: 3.5 hours +
 *Editor(s) used		: Doom Builder 1.68, XWE, GZDoom Builder
 *Music track		: PRKDOOM.wad - Entryway
 *Bugs				: None that I know of
 *Inspiration		: Doom 2 Map01 remake of all hell. :)
-*Author comments	: Thank to _JCD_ for finishing that one up .:D
+*Author comments	: Thank to <JCD> for finishing that one up .:D

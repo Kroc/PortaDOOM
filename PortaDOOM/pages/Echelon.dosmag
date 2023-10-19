@@ -8,7 +8,7 @@ $KEY:1=URL:https://www.doomworld.com/afterglow/textures/
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>11>28	  Author : _Sverre Andre Kvernmo_, aka _Soundblock_
+:Released : *2016>11>28	  Author : <Sverre Andre Kvernmo>, aka <Soundblock>
 :Levels   : *30			   Modes : *Single, Co-op, Deathmatch
 :Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -29,6 +29,6 @@ Feel free to use jump and duck if you so please, but these new functions aren't 
 
 :Credits
 :-------------------------------------------------------------------------------
-*Additional credits to	: _Noisyvelvet_, for breathing life into the monsters. _Fonze_, for playing the beta and giving invaluable feedback. _Xaser_, for rescuing the wad for posterity (fixed ZDoom crash bug) Doomworld.com in general, Echelon post contributors in particular.
+*Additional credits to	: <Noisyvelvet>, for breathing life into the monsters. <Fonze>, for playing the beta and giving invaluable feedback. <Xaser>, for rescuing the wad for posterity (fixed *ZDoom* crash bug) <Doomworld.com> in general, `Echelon` post contributors in particular.
 
 *Texture credits		: About half the featured textures were done by me for this project but I also lifted a lot from "Community Chest 4" and "The Afterglow Collection"; [1: www.doomworld.com/afterglow/textures/] Some textures used from the "Crucified Dreams" project. "Eternal Doom" material also used, some of which I created myself. More complete texture credits at the end of the [T: doc].

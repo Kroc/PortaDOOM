@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/95543-the-given-a-large-monster
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>08>15?  Author : _dobu gabu maru_
+:Released : *2017>08>15?  Author : <dobu gabu maru>
 :Levels   : *1			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -22,11 +22,11 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/95543-the-given-a-large-monster
 *Known Bugs				: Some ports will struggle with the map.
 *May Not Run With		: Engines that don't support extended nodes.
 *Tested With			: `Zdoom` 2.6.1, `PrBoom+` 2.5.1, `GZDoom` 3.1
-*Music Tracks			: All music composed by _Eris Falling_
+*Music Tracks			: All music composed by <Eris Falling>
 						  Title Screen: `"Raglavar (Introduction)"`
 						  MAP01: `"The Village that Time Forgot"`
 						  MAP02: `"Diwedh (Epilogue)"`
 
 :Credits
 :-------------------------------------------------------------------------------
-_Mouldy_, _dew_, _Demon of the Well_, & _Magnusblitz_ for the invaluable feedback, _Eris_ for the gorgeous music, _Jimmy_ for the excellent sprite edits, _Mechadon_ for the sky bits.
+<Mouldy>, <dew>, <Demon of the Well>, & <Magnusblitz> for the invaluable feedback, <Eris> for the gorgeous music, <Jimmy> for the excellent sprite edits, <Mechadon> for the sky bits.

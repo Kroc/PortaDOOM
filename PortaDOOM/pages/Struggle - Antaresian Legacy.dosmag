@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/strg
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>08>19	  Author : _antares031_
+:Released : *2018>08>19	  Author : <antares031>
 :Levels   : *32 		   Modes : *Single, Co-op
 :Requires : *no-limit	Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -31,12 +31,12 @@ You wake up in the morning and watch the news. The newsflash reports that the de
 
 :Credits
 :-------------------------------------------------------------------------------
-*Textures				: `Alien Vendetta`, `Plutonia`, `Textures.com` (a.k.a. `CGTextures`), + _Mechadon_ for source files of the skybox of the last episode
+*Textures				: `Alien Vendetta`, `Plutonia`, <Textures.com> (a.k.a. <CGTextures>), + <Mechadon> for source files of the skybox of the last episode
 
 *Sound Effects			: `Cry of Fear`, `Heretic`, `Hexen`, `Doom 3 RoE`, `NavyFIELD`
 
 *Sprites				: `Heretic`, `Hexen`, `Kingdom of the Wind`, +`Smooth Doom` for rocket explosion sprites
 
-*Music					: `Fortress 2`, `Fortress 2 Blue`, `Digimon Online`, `Dragon Force: The Day 3`, _Psychedelic Eyeball_
+*Music					: `Fortress 2`, `Fortress 2 Blue`, `Digimon Online`, `Dragon Force: The Day 3`, <Psychedelic Eyeball>
 
 See the *[T] .txt* file for detailed credits and game-info.

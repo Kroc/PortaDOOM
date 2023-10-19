@@ -8,7 +8,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 :===============================================================================
 *[P] Play						 *[R] Readme [C] Credits [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2021>12>08	  Author : _molecicco_, Various
+:Released : *2021>12>08	  Author : <molecicco>, Various
 :Levels   : *lots		   Modes : *Single, Co-op
 :Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
 :-------------------------------------------------------------------------------
@@ -21,11 +21,11 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 
 - *The Plutonia Experiment:* PSX campaign. The maps included here are based on conversions made for the `PSX Doom TC`. Maps that were absent from the original console release come from the `PSX Doom Lost Levels` community project
 
-- *Bonus maps:* `DeXiaZ's Mausoleum` by _Dexiaz_ and `Last Gateway to Sin` by _BaronOfStuff_, originally created for the `PSX Doom TC`
+- *Bonus maps:* `DeXiaZ's Mausoleum` by <Dexiaz> and `Last Gateway to Sin` by <BaronOfStuff>, originally created for the `PSX Doom TC`
 
 :Community Campaigns:
 
 $KEY:1=SHELL:launcher.exe "wads\conversions\DOOMCE\play-final-doom-ce.ini" /GAME 2
 [1] *PSX Final DOOM CE: Plutonia 2 & Plutonia Revisited Community Project
 	:---------------------------------------------------------------------------
-	Two campaigns adapted to `PSX DOOM` by _Cryo_
+	Two campaigns adapted to `PSX DOOM` by <Cryo>

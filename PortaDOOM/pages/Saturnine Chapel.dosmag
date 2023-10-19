@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/satchap
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>01>13	  Author : _dobu gabu maru_
+:Released : *2017>01>13	  Author : <dobu gabu maru>
 :Levels   : *2			   Modes : *Single, Co-op?
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -34,4 +34,4 @@ Entry from *"Rending of the Veil: Journals and Diaries from the Astral Plane"*, 
 *Known Bugs				: Slime trails everywhere
 *May Not Run With		: Any port that does not support extended nodes, old ports of `PrBoom`/`Zdoom`
 *Tested With			: `Zdoom` 2.6.1, `PrBoom` 2.5.0, `PrBoom+` 2.5.1
-*Music track			: "Egypt" by _Ribbiks_
+*Music track			: "Egypt" by <Ribbiks>

@@ -26,49 +26,49 @@ A gameplay mod bringing some of the Doom4 mechanics and its weapons, with mods i
 
 :Credits
 :-------------------------------------------------------------------------------
-_Neccronixis_		: Creator of all the Doom 4 weapon sprites & doomdoll pickup and animation.
+<Neccronixis>		: Creator of all the Doom 4 weapon sprites & doomdoll pickup and animation.
 
-_DBThanatos_		: Project idea and direction. Import, offseting, renaming all of Neccronixis' weapon sprites. Edited all muzleflash sprites from the weapons. Created base functional code of all weapons. Doom4 sound ripping, conversion and processing. Created voxels for: ammo pickups, health pickups, armor pickups, chaingun pickup and it's holograph version, all holo system mod/upgrades and cursor. Created sprites for all voxels DBT made. Coding and adding all decals for monsters and weapons. Coded all monsters. Titlemap. Menu graphics and design. Implementation of DoomDoll and grenade system. "Roach" monster recolor (which was used as D4D imp). Game balance. Resource gatherer and organizer. Final polishing of visual effects.
+<DBThanatos>		: Project idea and direction. Import, offseting, renaming all of Neccronixis' weapon sprites. Edited all muzleflash sprites from the weapons. Created base functional code of all weapons. Doom4 sound ripping, conversion and processing. Created voxels for: ammo pickups, health pickups, armor pickups, chaingun pickup and it's holograph version, all holo system mod/upgrades and cursor. Created sprites for all voxels DBT made. Coding and adding all decals for monsters and weapons. Coded all monsters. Titlemap. Menu graphics and design. Implementation of DoomDoll and grenade system. "Roach" monster recolor (which was used as D4D imp). Game balance. Resource gatherer and organizer. Final polishing of visual effects.
 
-_Major Cooke_		: Design, creation and implementation of the "Holo upgrade system". General overhaul of the weapon code to enable "hold altfire to ready mod". Creator of the BFG tracers and electric effects. Creator of almost all particle effects, including bullet tracers, pickup trails and just about every single fancy particle system found in here. Finetunning most of the DECORATE code. Deprecation of many ACS based systems and ported them to DECORATE. Implementation of "Double Double Trouble Trouble" (double supershotgun) via overlays. Behavior and visual effects of syphon grenade explosion. Coder for spawned Holo-player. Developed and implemented Half Life-like laser for Gauss Cannon, Static Rifle and many more. Created the Carrion Cannon. General DECORATE & ZScript mastermind.
+<Major Cooke>		: Design, creation and implementation of the "Holo upgrade system". General overhaul of the weapon code to enable "hold altfire to ready mod". Creator of the BFG tracers and electric effects. Creator of almost all particle effects, including bullet tracers, pickup trails and just about every single fancy particle system found in here. Finetunning most of the DECORATE code. Deprecation of many ACS based systems and ported them to DECORATE. Implementation of "Double Double Trouble Trouble" (double supershotgun) via overlays. Behavior and visual effects of syphon grenade explosion. Coder for spawned Holo-player. Developed and implemented Half Life-like laser for Gauss Cannon, Static Rifle and many more. Created the Carrion Cannon. General DECORATE & ZScript mastermind.
 
-_Michaelis_			: Ripping, conversion and processing of graphics for the Heads Up Display. Implementation of reticles specific to each weapon/demon, including the charging animations. Ripping/processing/implementation of blood elements in the hud (along with cacodemon HUD hits). Implementation of multi jump and ledge grabbing. Added powerups and situation-aware crates. General SBARINFO & ACS mastermind.
+<Michaelis>			: Ripping, conversion and processing of graphics for the Heads Up Display. Implementation of reticles specific to each weapon/demon, including the charging animations. Ripping/processing/implementation of blood elements in the hud (along with cacodemon HUD hits). Implementation of multi jump and ledge grabbing. Added powerups and situation-aware crates. General SBARINFO & ACS mastermind.
 
-_ZZYZX_				: Making shaders for glory kill effect, shaders for holographic effect. Current internal dev working on top secret stuff.
+<ZZYZX>				: Making shaders for glory kill effect, shaders for holographic effect. Current internal dev working on top secret stuff.
 
 *Special Credits:
 
-_Roxas_				: Creator of the weapon voxels minus the "chaingun". Teaching me how to do voxels from scratch.
+<Roxas>				: Creator of the weapon voxels minus the "chaingun". Teaching me how to do voxels from scratch.
 
-_Xaser_				: Assistance to create the Titlemap. General advisor. Fine tuning of weapon animations.
+<Xaser>				: Assistance to create the Titlemap. General advisor. Fine tuning of weapon animations.
 
-_HorrorMovieGuy_	: Doom 64 Pinky with classic Doom's color pallete, glory kill base system.
+<HorrorMovieGuy>	: Doom 64 Pinky with classic Doom's color pallete, glory kill base system.
 
-_The Zombie Killer_	: Footsteps scripting system & sounds.
+<The Zombie Killer>	: Footsteps scripting system & sounds.
 
-_BeardedDoomGuy_	: Creating the "Demon tears mug" image.
+<BeardedDoomGuy>	: Creating the "Demon tears mug" image.
 
-_Zanieon_			: Bullet tracer model & texture, 1st iteration of Baron sounds. Baron of Hell and Hell Knight sprites.
+<Zanieon>			: Bullet tracer model & texture, 1st iteration of Baron sounds. Baron of Hell and Hell Knight sprites.
 
-_Phobos867_			: D4 Imp sprite, modified from the "Roach" monster and Cacodemon sprite.
+<Phobos867>			: D4 Imp sprite, modified from the "Roach" monster and Cacodemon sprite.
 
-_MW-21_				: Sound contributions for Archvile and Arachnotron.
+<MW-21>				: Sound contributions for Archvile and Arachnotron.
 
-_Nightquaker_		: Chainsaw ammo meters fix
+<Nightquaker>		: Chainsaw ammo meters fix
 
 *Other credits: 
 
-_Amuscaria_			: Monster sprites for Arachnotron, Archvile, Hell Mancubus, Baron of Hell, Pain Elemental. All from Demon Eclipse.
+<Amuscaria>			: Monster sprites for Arachnotron, Archvile, Hell Mancubus, Baron of Hell, Pain Elemental. All from Demon Eclipse.
 
-_Voxelbro_			: AllMap, RadSuit & Berserk voxels
+<Voxelbro>			: AllMap, RadSuit & Berserk voxels
 
-_ScubaSteve_		: First person Mancubus weapons
+<ScubaSteve>		: First person Mancubus weapons
 
-_Mike12_			: First person Revenant cannons
+<Mike12>			: First person Revenant cannons
 
 id Software			: Quake 4 / Doom 2016 sounds and graphics
 
-_Flying Wild Hog_	: Hard Reset sounds
+<Flying Wild Hog>	: Hard Reset sounds
 
 Activision			: Battlezone I & II sounds
 
@@ -78,35 +78,35 @@ Blizzard			: Diablo II Sound (just one!)
 
 *Beta Testers:
 
-- _3xlneed
-- _BeardedDoomGuy
-- _Colossus
-- _Hellser
-- _iSpook
-- _JonnyTheWolf
-- _Matsilagi
-- _TheZombieKiller
-- _TiberiumSoul
-- _DoomKrakken
-- _Snivyus
-- _MW-21
-- _Hellstorm Archon
-- _TheZombieKiller
+- <3xlneed>
+- <BeardedDoomGuy>
+- <Colossus>
+- <Hellser>
+- <iSpook>
+- <JonnyTheWolf>
+- <Matsilagi>
+- <TheZombieKiller>
+- <TiberiumSoul>
+- <DoomKrakken>
+- <Snivyus>
+- <MW-21>
+- <Hellstorm Archon>
+- <TheZombieKiller>
 
 *For monsters from Realm667:
 
 - "Roach" (base sprite for Imp)
-  Sprites: _vader_
-  Sprite Edit: _Ghastly_dragon_, _Mike12_
+  Sprites: <vader>
+  Sprite Edit: <Ghastly_dragon>, <Mike12>
 
 - "Psychic soul" (Lost Soul replacement)
   Sprites: Id Software
-  Sprite Edit: _Neoworm_, _Maelstrom_
+  Sprite Edit: <Neoworm>, <Maelstrom>
 
 - "Blasterborg" (Shotgun Guy replacement)
   Sprites: Id Software, 3D Realms
-  Sprite Edit: _Neoworm_
+  Sprite Edit: <Neoworm>
 
 - "Rapid fire trooper" (Zombieman replacement)
   Sprites: Id Software
-  Sprite Edit: _NMN_, _Tormentor667_
+  Sprite Edit: <NMN>, <Tormentor667>

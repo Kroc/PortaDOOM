@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dupart1
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>04>02	  Author : _Paul "PAYLOAD4367" Dechene_
+:Released : *2018>04>02	  Author : <Paul "PAYLOAD4367" Dechene>
 :Levels   : *6			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -31,11 +31,11 @@ Intended for vanilla monsters and weapons but works well with most mods.
 
 :Credits
 :-------------------------------------------------------------------------------
-- Space skyboxes by _Doomenator_
-- `Dark Forces` Textures by _A Limes Zen Sky_
+- Space skyboxes by <Doomenator>
+- `Dark Forces` Textures by <A Limes Zen Sky>
 - Some middle textures from `Ancient Aliens`
 - Switches and mid textures from `NMN CORP` texture pack
-- Breakable glass textures and sprites by _enjay_ (with a great edit by _cortlong50_)
-- Sounds: _BadMojo_, Sound Ideas, _BouncyTEM_
+- Breakable glass textures and sprites by <enjay> (with a great edit by <cortlong50>)
+- Sounds: <BadMojo>, Sound Ideas, <BouncyTEM>
   Orangefreesounds.com, Free-loops.com,
   Freesoundeffects.com (for ambient effects)

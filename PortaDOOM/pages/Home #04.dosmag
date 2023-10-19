@@ -10,40 +10,40 @@ Credits for individual WADs are provided on each page but where a mod is used br
 
 :Chocolate Doom / Heretic / Hexen / Strife - <chocolate-doom.org>
 :===============================================================================
-`Chocolate Doom` is written by _Simon Howard_, with extensive help from many other people who have provided patches, bug reports and suggestions.
+`Chocolate Doom` is written by <Simon Howard>, with extensive help from many other people who have provided patches, bug reports and suggestions.
 
-`Chocolate Strife` was developed by _James Haley_ and _Samuel Villarreal_ as part of a painstaking reverse engineering project.
+`Chocolate Strife` was developed by <James Haley> and <Samuel Villarreal> as part of a painstaking reverse engineering project.
 
 :Crispy Doom - <github.com/fabiangreffrath/crispy-doom>
 :===============================================================================
 *"Crispy Doom is a friendly fork of Chocolate Doom that provides a higher display resolution, removes the static limits of the Doom engine and offers further optional visual, tactical and physical enhancements while remaining entirely config file, savegame, netplay and demo compatible with the original".
 
-By _Fabian Greffrath_.
+By <Fabian Greffrath>.
 
 :DOOM, DOOM II
 :===============================================================================
-Copyright _iD software_: _Adrian Carmack_, _American McGee_, _Dave Taylor_, _John Carmack_, _John Romero_, _Kevin Cloud_, _Rob Prince_, _Sandy Peterson_, _Shawn Green_ and _Tom Hall_.
+Copyright <iD software>: <Adrian Carmack>, <American McGee>, <Dave Taylor>, <John Carmack>, <John Romero>, <Kevin Cloud>, <Rob Prince>, <Sandy Peterson>, <Shawn Green> and <Tom Hall>.
 
 :DOOM II: No Rest for the Living
 :===============================================================================
-Copyright _Nerve Software_: _Richard Heath_ and _Russell Meakim_.
+Copyright <Nerve Software>: <Richard Heath> and <Russell Meakim>.
 
 :DOOM II: The Master Levels
 :===============================================================================
-Copyright _iD software_, contributors:
+Copyright <iD software>, contributors:
 
-_John Anderson (Dr.Sleep)
+<John Anderson (Dr.Sleep)>
 	`Geryon: 6th Canto of Inferno` (GERYON.WAD)
 	`Minos' Judgement: 4th Canto of Inferno` (MINOS.WAD)
 	`Nessus: 5th Canto of Inferno` (NESSUS.WAD)
 	`Vesperas: 7th Canto of Inferno` (VESPERAS.WAD)
 	`Virgil's Lead: 3rd Canto of Inferno` (VIRGIL.WAD)
 
-_Jim Flynn
+<Jim Flynn>
 	`Titan Manor` (MANOR.WAD)
 	`Trapped on Titan` (TTRAP.WAD)
 
-_Christen Klie
+<Christen Klie>
 	`The Catwalk` (CATWALK.WAD)
 	`The Combine` (COMBINE.WAD)
 	`The Fistula` (FISTULA.WAD)
@@ -51,17 +51,17 @@ _Christen Klie
 	`Subspace` (SUBSPACE.WAD)
 	`Subterra` (SUBTERRA.WAD)
 
-_Sverre André Kvernmo (Cranium)
+<Sverre André Kvernmo (Cranium)>
 	`Black Tower` (BLACKTWR.WAD)
 	`Bloodsea Keep` (BLOODSEA.WAD)
 	`Mephisto's Maosoleum` (MEPHISTO.WAD)
 	`The Express Elevator to Hell` (TEETH.WAD)
 	`Bad Dream` (TEETH.WAD)
 
-_Tom Mustaine_
+<Tom Mustaine>
 	`Paradox` (PARADOX.WAD)
 
-_Tim Willits_
+<Tim Willits>
 	`Attack` (ATTACK.WAD)
 	`Canyon` (CANYON.WAD)
 
@@ -69,11 +69,11 @@ _Tim Willits_
 :===============================================================================
 *"The classic, refined DOOM source port".
 
-By _Brad Harding_.
+By <Brad Harding>.
 
 :Final DOOM
 :===============================================================================
-Copyright _TeamTNT_, _iD software_: _Ty Halderman_ (`TNT: Evilution`), _Dario Casali_ (`The Plutonia Experiment`), _Jonathan El-Bizri_, _Josh Martel_, _L.A. Sieben_, _Tom Mustaine_ and the team at _iD software_.
+Copyright <TeamTNT>, <iD software>: <Ty Halderman> (`TNT: Evilution`), <Dario Casali> (`The Plutonia Experiment`), <Jonathan El-Bizri>, <Josh Martel>, <L.A. Sieben>, <Tom Mustaine> and the team at <iD software>.
 
 :FreeDOOM - <freedoom.github.io>
 :===============================================================================
@@ -81,18 +81,18 @@ Copyright _TeamTNT_, _iD software_: _Ty Halderman_ (`TNT: Evilution`), _Dario Ca
 
 :GZDoom - <gzdoom.drdteam.org>
 :===============================================================================
-By _Graf Zahl_ and contributors.
+By <Graf Zahl> and contributors.
 
 :PortaDOOM - <github.com/Kroc/PortaDOOM>
 :===============================================================================
-`PortaDOOM` is the work of _Kroc Camen_ and contributors and made possible only by the awesomeness of the `DOOM` community.
+`PortaDOOM` is the work of <Kroc Camen> and contributors and made possible only by the awesomeness of the `DOOM` community.
 
 The WADs distributed with `PortaDOOM` may not match their original source downloads (i.e. checksum) due to extra compression applied by `DOOM-Crusher`, a tool for automatically optimizing WAD files and resources:
-_<github.com/Kroc/DOOM-Crusher>_.
+_github.com/Kroc/DOOM-Crusher_.
 
 :PRBoom+ - <prboom-plus.sourceforge.net>
 :===============================================================================
-By _Andrey Budko (entryway)_.
+By <Andrey Budko (entryway)>.
 
 :QB64 - <qb64.org>
 :===============================================================================
@@ -104,17 +104,17 @@ By _Andrey Budko (entryway)_.
 :===============================================================================
 *"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams".
 
-`Xdelta` is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _<github.com/Doom-Utils/iwad-patches>_.
+`Xdelta` is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _github.com/Doom-Utils/iwad-patches_.
 
 :Zandronum - <zandronum.com>
 :===============================================================================
-- _Torr Samaho_ - Lead Developer
-- _Blzut3_ - Port, `Doomseeker` Developer, Webmaster
-- _Dusk_ - Port Developer, Forum Moderator
-- _Edward-san_ - Tester
-- _bond_ - IDE Developer
-- _Zalewa_ - `Doomseeker` Developer
+- <Torr Samaho> - Lead Developer
+- <Blzut3> - Port, `Doomseeker` Developer, Webmaster
+- <Dusk> - Port Developer, Forum Moderator
+- <Edward-san> - Tester
+- <bond> - IDE Developer
+- <Zalewa> - `Doomseeker` Developer
 
 :ZDoom - <zdoom.org>
 :===============================================================================
-By _Randy Heit_, _Christoph Oelckers (Graf Zahl)_ & _Braden Obrzut (Blzut3)_.
+By <Randy Heit>, <Christoph Oelckers (Graf Zahl)> & <Braden Obrzut (Blzut3)>.

@@ -6,7 +6,7 @@ $KEY:4=SHELL:launcher.exe /USE glboom /PWAD megawads\MapsOfChaos\mapsofchaos-hc.
 
 :Maps of Chaos
 :===============================================================================
-:Released : *2012>05>27	  Author : _Glaice_
+:Released : *2012>05>27	  Author : <Glaice>
 :Levels   : *32			   Modes : *Single, Co-op
 :Requires : *boom		Includes : *None
 :-------------------------------------------------------------------------------
@@ -36,4 +36,4 @@ For enough enemies to slow down your computer...
 
 
 $KEY:W=URL:http://forum.zdoom.org/viewtopic.php?t=32929
-[W] WAD source: _<forum.zdoom.org/viewtopic.php?t=32929>_
+[W] WAD source: _forum.zdoom.org/viewtopic.php?t=32929_

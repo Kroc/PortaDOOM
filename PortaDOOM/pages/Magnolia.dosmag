@@ -8,7 +8,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/100784-magnoliawad/
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>06>20	  Author : _Ribbiks_
+:Released : *2018>06>20	  Author : <Ribbiks>
 :Levels   : *3			   Modes : *Single
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -32,9 +32,9 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/100784-magnoliawad/
 
 :Credits
 :-------------------------------------------------------------------------------
-- _GoS_ for help with the palette, sprites, etc.
-- _NiGHTMARE_ for the "Hellish texture pack"
-- _FuzzballFox_ for the textures in `"stonecrap.wad"`
-- _40oz_ for a few textures from `mutiny.wad`
+- <GoS> for help with the palette, sprites, etc.
+- <NiGHTMARE> for the "Hellish texture pack"
+- <FuzzballFox> for the textures in `"stonecrap.wad"`
+- <40oz> for a few textures from `mutiny.wad`
 - The 5000 people who are credited in `cc4-tex` and its progeny
 - all midi are original compositions

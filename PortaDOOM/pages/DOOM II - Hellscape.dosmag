@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dhs-lutz
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>02>17	  Author : _Chris Lutz_ of The Chaos Crew
+:Released : *2017>02>17	  Author : <Chris Lutz> of The Chaos Crew
 :Levels   : *9			   Modes : *Single
 :Requires : *boom		Includes : *None
 :-------------------------------------------------------------------------------
@@ -28,6 +28,6 @@ What you really need to run this level is a BOOM/MBF-compatible, limit-removing 
 :Credits
 :-------------------------------------------------------------------------------
 - id Software
-- _dew_, for going WAY above and beyond
-- _40oz_, _joe-ilya_, _Dime_ for beta-testing
+- <dew>, for going WAY above and beyond
+- <40oz>, <joe-ilya>, <Dime> for beta-testing
 - www.Doomworld.com for forums, hosting, and community

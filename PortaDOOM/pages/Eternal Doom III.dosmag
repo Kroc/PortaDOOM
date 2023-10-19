@@ -78,64 +78,64 @@ PortaDOOM has included Team Eternal's DeHackEd script to improve the play experi
 
 Enjoy!
 
-_Rich �Weeds� Nagel_ - Team Eternal 
+<Rich "Weeds" Nagel> - Team Eternal 
 
 :Map List
 :-------------------------------------------------------------------------------
 *Eternal Levels											*Eternal Music
 
 :Map:	Name:					Author:					Music score:
-														by _Rich �Weeds� Nagel_
+														by <Rich "Weeds" Nagel>
 *Eternal I
 
-Map01	Genesis					_Alex Mayberry_			Searching!
-Map02	Tower of Hell			_Adam Landefeld_		Deathmarch Reprise
-Map03	Inter-Base				_Dia Westerteicher_		Mission Possible
-Map04	Nucleus					_Sverre Kvernmo_		Suspense!
-Map05	Time Gate				_Sverre Kvernmo_		Eternal Doom
-Map06	Pathos					_Alex Mayberry_			Mysterious
-Map07	The Abbey				_Paul Schmitz_			Barabbas
-Map08	Woodhead				_Dia Westerteicher_		Spectres
-Map09	Forlorn Fortress		_Chris Couleur_			Hellspawn
-Map10	Crimson Tide			_Kathy_ & _David Bruni_	Suspense Reprise
-Map11	Dawn of the Dead		_Chris Couleur_			The Lost Souls
-Map12	Darkdome				_Sverre Kvernmo_		Death March
+Map01	Genesis					<Alex Mayberry>			Searching!
+Map02	Tower of Hell			<Adam Landefeld>		Deathmarch Reprise
+Map03	Inter-Base				<Dia Westerteicher>		Mission Possible
+Map04	Nucleus					<Sverre Kvernmo>		Suspense!
+Map05	Time Gate				<Sverre Kvernmo>		Eternal Doom
+Map06	Pathos					<Alex Mayberry>			Mysterious
+Map07	The Abbey				<Paul Schmitz>			Barabbas
+Map08	Woodhead				<Dia Westerteicher>		Spectres
+Map09	Forlorn Fortress		<Chris Couleur>			Hellspawn
+Map10	Crimson Tide			<Kathy> & <David Bruni>	Suspense Reprise
+Map11	Dawn of the Dead		<Chris Couleur>			The Lost Souls
+Map12	Darkdome				<Sverre Kvernmo>		Death March
 
 *Eternal II
 
-Map13	Drop 'Em!				_Dia Westerteicher		Instant Death!
-Map14	Pistol Only				_Dia Westerteicher		Fugue In A Minor
-Map15*	Halls of Disarray		_Matt Bollier			Cacophage
-Map16	Guardstation			_Adam Landefeld			Impending Death
-Map17	The Crypt				_Dia Westerteicher		InDIAn Song
-Map18	Stands					_Dave Brachman			Death Assured
-Map19	Warheros				_Chris Couleur			Psychopathic Evil
-Map20	Silures					_Bob Evans				Simple Death
-Map21	Fire and Stone			_Adam Landefeld			The Battle
-Map22	The Seeker				_Chris Couleur			Death In D Minor
-Map23	Time Gate 2				_Dia Westerteicher		Trooper Procession
-Map24	Rainbow Bridge			_Chris Couleur			Hell's Bells
-Map25	Beginner's End			_Jim Flynn				Death Jam
-Map26	No Parking				_Jim Flynn				Doomin'
-Map27*	Credits					_Dia Westerteicher		Eternal Medley
+Map13	Drop 'Em!				<Dia Westerteicher>		Instant Death!
+Map14	Pistol Only				<Dia Westerteicher>		Fugue In A Minor
+Map15*	Halls of Disarray		<Matt Bollier>			Cacophage
+Map16	Guardstation			<Adam Landefeld>			Impending Death
+Map17	The Crypt				<Dia Westerteicher>		InDIAn Song
+Map18	Stands					<Dave Brachman>			Death Assured
+Map19	Warheros				<Chris Couleur>			Psychopathic Evil
+Map20	Silures					<Bob Evans>				Simple Death
+Map21	Fire and Stone			<Adam Landefeld>			The Battle
+Map22	The Seeker				<Chris Couleur>			Death In D Minor
+Map23	Time Gate 2				<Dia Westerteicher>		Trooper Procession
+Map24	Rainbow Bridge			<Chris Couleur>			Hell's Bells
+Map25	Beginner's End			<Jim Flynn>				Death Jam
+Map26	No Parking				<Jim Flynn>				Doomin'
+Map27*	Credits					<Dia Westerteicher>		Eternal Medley
 
 * Halls of Disarray has moved to Map32 in Eternal III
   Credits has become a standalone bonus level in Eternal III
 
-Thanks to _David Bruni_ for his contributions to Warheroes.
+Thanks to <David Bruni> for his contributions to Warheroes.
 
 *Eternal III
 
-Map15	Celebration of Evil		_Adam Landefeld			DETH Bells
-Map31	Monster Mansion			_Jim Flynn				UAC 5-0
+Map15	Celebration of Evil		<Adam Landefeld>			DETH Bells
+Map31	Monster Mansion			<Jim Flynn>				UAC 5-0
 
-Map27	Paldorian				_Dave Brachman			Barabbas Reprise
-Map28	Timeslip				_Paul Schmitz			War Cry
-Map29	Dominion				_Chris Couleur			Death Assured Reprise
-Map30	Excalibur				_Bob Evans				Death Sword
+Map27	Paldorian				<Dave Brachman>			Barabbas Reprise
+Map28	Timeslip				<Paul Schmitz>			War Cry
+Map29	Dominion				<Chris Couleur>			Death Assured Reprise
+Map30	Excalibur				<Bob Evans>				Death Sword
 
-Map33	CyberSweeper			_Jim Flynn				Cyber Hunt
-Map34	Credits					_Ty Halderman			Eternal Medley
+Map33	CyberSweeper			<Jim Flynn>				Cyber Hunt
+Map34	Credits					<Ty Halderman>			Eternal Medley
 
 *General Music
 
@@ -143,7 +143,7 @@ Main Menu Screen								Introduction To Death
 Between Map Status Screens						Intermission From Death
 Episode Transition Storyline Screens			Intermission From Death II
 
-Shell welcome sound by _Rich �Weeds� Nagel_
+Shell welcome sound by <Rich "Weeds" Nagel>
 
 All music was composed on a Creative Labs' WaveBlaster I and an AWE-32, an 8mb EMU Technologies soundbank loaded into 8mb of on-board AWE-32 ram, a Casio CZ-1 keyboard (yeah I know it's old, damn thing weighs a ton too <g>), and using Twelve Tone Systems' Cakewalk Professional v3.01.
 
@@ -151,70 +151,70 @@ All music was composed on a Creative Labs' WaveBlaster I and an AWE-32, an 8mb E
 :-------------------------------------------------------------------------------
 These are the people that you can thank for taking up all that space on your hard-disk. In alphabetical order:
 
-_Matt Bollier_			: Level Designer
-_Dave Brachman_			: Level Designer
+<Matt Bollier>			: Level Designer
+<Dave Brachman>			: Level Designer
 						  Play-tester
-*_David_ & _Kathy Bruni	: Level Designers
-_Christopher Couleur_	: Level Designer
+*<David> & <Kathy Bruni>	: Level Designers
+<Christopher Couleur>	: Level Designer
 						  Play-tester
-_Yonatan Donner_		: EDIII quick demo team manager
+<Yonatan Donner>		: EDIII quick demo team manager
 						  Play-tester
-_Bob (Odessa) Evans_	: Level Designer
+<Bob (Odessa) Evans>	: Level Designer
 						  Graphics for EDIII
-_Jim Flynn_				: Level Designer
+<Jim Flynn>				: Level Designer
 						  Installation and shell for EDII and EDIII
 						  Custom tools
-_Stan (SkullBane) Gula_	: EDII and EDIII Solution demo maker
+<Stan (SkullBane) Gula>	: EDII and EDIII Solution demo maker
 						  Play-tester
 						  Quality control for EDII and EDIII
-_Ty Halderman_			: Project manager for EDIII
+<Ty Halderman>			: Project manager for EDIII
 						  Wad builder for EDIII
-_Sverre Andre Kvernmo_	: Main Graphic Artist,
+<Sverre Andre Kvernmo>	: Main Graphic Artist,
 						  EDI Solution demo maker
 						  Play-tester
 						  Level Designer
-_Adam Landefeld_		: Installation and menu for EDI
+<Adam Landefeld>		: Installation and menu for EDI
 						  Play-tester
 						  Level Designer
-_Alex Mayberry_			: Producer
+<Alex Mayberry>			: Producer
 						  Assistant Graphic Artist
 						  Play-tester
 						  Level Designer
-_Rich �Weeds� Nagel_	: Music
+<Rich "Weeds" Nagel>	: Music
 						  Play-test support
-_Paul Schmitz_			: Project Manager/Producer EDI
+<Paul Schmitz>			: Project Manager/Producer EDI
 						  Bug Killer
 						  Play-tester
 						  Level Designer
-_Dia Westerteicher_		: Project Manager/Producer EDII
+<Dia Westerteicher>		: Project Manager/Producer EDII
 						  Bug Killer
 						  Play-tester
 						  Level designer
-_Peter Zahner_			: Technical Support
+<Peter Zahner>			: Technical Support
 						  Quality Control for EDI
 						  Play-tester
-_Play Testers_			: _Tom Apel_
-						  _David Armstrong_
-						  _Cerri James Stian Bergum Hammond_
-						  _David Brachman_
-						  _Derek (NFSfreak) Cadwell_
-						  _Stan Gula_
-						  _Torgeir Von Knag_
-						  _Robyn Michelle Lorber_
-						  _Erling Paulsen_
-						  _Juergen Petz_
-						  _Don Webb_ of Bakersfield
-						  _Adrian Worthey_
-						  _Baard Zakariassen_
-						  _Heather_
+<Play Testers>			: <Tom Apel>
+						  <David Armstrong>
+						  <Cerri James Stian Bergum Hammond>
+						  <David Brachman>
+						  <Derek (NFSfreak) Cadwell>
+						  <Stan Gula>
+						  <Torgeir Von Knag>
+						  <Robyn Michelle Lorber>
+						  <Erling Paulsen>
+						  <Juergen Petz>
+						  <Don Webb> of Bakersfield
+						  <Adrian Worthey>
+						  <Baard Zakariassen>
+						  <Heather>
 *Thanx to				: id Software
 						  Raven Software
-						  _Olivier Montanuy_ (DEUTEX, DEUSF)
-						  _Colin Reed_, _Lee Killough_ (BSP)
-						  _Antony Burden_ (DETH)
+						  <Olivier Montanuy> (DEUTEX, DEUSF)
+						  <Colin Reed>, <Lee Killough> (BSP)
+						  <Antony Burden> (DETH)
 						  Sensor Based Sysems (DeePBSP, DeeP)
-						  _Marc Rousseau_ (ZenNode)
-						  _Jens Hykkelbjerg_ (RMB)
-						  _Ben Morris_ (DCK 3.X)
-						  _John Williston_ (WadAuthor)
-						  _Scott (Psycho) Warren_
+						  <Marc Rousseau> (ZenNode)
+						  <Jens Hykkelbjerg> (RMB)
+						  <Ben Morris> (DCK 3.X)
+						  <John Williston> (WadAuthor)
+						  <Scott (Psycho) Warren>

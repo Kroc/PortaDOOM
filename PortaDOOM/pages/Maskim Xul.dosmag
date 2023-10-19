@@ -8,7 +8,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/97780-maskim-xul-what-the-heck-
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>10>31	  Author : _Obsidian_
+:Released : *2018>10>31	  Author : <Obsidian>
 :Levels   : *5			   Modes : *Single
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -28,19 +28,19 @@ Tested With				: `PrBoom+`, `ZDoom`, `GZDoom`
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Id Software_ for `DOOM II`
-- _CodeImp_ for `Doom Builder 2`
-- _Anotak_ for `Doom Builder X`
-- _SirJuddington_ for `SLADE3`
-- _Exl_ for `WhackEd4`
+- <Id Software> for `DOOM II`
+- <CodeImp> for `Doom Builder 2`
+- <Anotak> for `Doom Builder X`
+- <SirJuddington> for `SLADE3`
+- <Exl> for `WhackEd4`
 - Whoever made `Paint.net` for......well, that
 
 *Additional credits to:
 
-- _Alexander "Eternal" S._, _Cyriak "Mouldy" Harris_, _Brett "Mechadon" Harrell_ and the folks behind the game `"Cry of Fear"` for inspiration
-- _Brett "Mechadon" Harrell_ for the pointers on making hilariously oversized maps
-- _SoundBlock_ and _MrGlide_ for helping with the initial boss designs
-- _Urthar_ for the texture warping tutorial
-- _Jimmy_, _Vita_, _Loveless_, _Tourniquet_, _rdwpa_ and _John Suitepee_ for playtesting and providing feedback
-- _MagnusBlitz_, _Altazimuth_, _Gez_, _SuperCupcakeTactics_, _Tourniquet_ and _Galileo31dos01_ for finding bugs
+- <Alexander "Eternal" S.>, <Cyriak "Mouldy" Harris>, <Brett "Mechadon" Harrell> and the folks behind the game `"Cry of Fear"` for inspiration
+- <Brett "Mechadon" Harrell> for the pointers on making hilariously oversized maps
+- <SoundBlock> and <MrGlide> for helping with the initial boss designs
+- <Urthar> for the texture warping tutorial
+- <Jimmy>, <Vita>, <Loveless>, <Tourniquet>, <rdwpa> and <John Suitepee> for playtesting and providing feedback
+- <MagnusBlitz>, <Altazimuth>, <Gez>, <SuperCupcakeTactics>, <Tourniquet> and <Galileo31dos01> for finding bugs
 - Other credits can be found in the CREDITS lump in the wad.\\Contains spoilers!

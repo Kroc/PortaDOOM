@@ -8,14 +8,14 @@ $KEY:W=URL:https://doomwiki.org/wiki/MAP01:_Titan_Manor_(Master_Levels)
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1995>12>26	  Author : _Jim Flynn_
+:Released : *1995>12>26	  Author : <Jim Flynn>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla	Includes : *+Graphics
 :-------------------------------------------------------------------------------
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "MANOR.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM II + Final DOOM"_ on [G: GOG] or _"DOOM Classic Complete"_ on [S: Steam] it will be detected automatically, otherwise place the file in the "files\wads\MASTER" folder.
+! If you own `"DOOM II + Final DOOM"` on [G: GOG] or `"DOOM Classic Complete"` on [S: Steam] it will be detected automatically, otherwise place the file in the "files\wads\MASTER" folder.
 $KEY:G=URL:https://www.gog.com/game/doom_ii_final_doom
 $KEY:S=URL:http://store.steampowered.com/sub/18397/
 
@@ -31,11 +31,11 @@ A strange and enigmatic building on a moon of Saturn contains the latest in alie
 
 :Credits:
 :-------------------------------------------------------------------------------
-- _Brendon Wyber_ and _Raphael Quinet_ for DEU-GCC
-- _Antony Burden_ and _Simon Oke_ for DETH
-- _Colin Reed_ for BSP1.2x
-- _Olivier Montanuy_ for DeuTex 3.1
-- _HevKev (Kevin McGrail)_ for the DeuTex Manual
-- _Jens Hykkelbjerg_ for RMB
-- Those folks at ID, for Doom, and especially _Shawn Green_ for his encouragement and helpful comments.
-- Playtesters: _Peter Zahner_, _John Keary_, _Matt Jonelis_, _Dr Sleep_
+- <Brendon Wyber> and <Raphael Quinet> for DEU-GCC
+- <Antony Burden> and <Simon Oke> for DETH
+- <Colin Reed> for BSP1.2x
+- <Olivier Montanuy> for DeuTex 3.1
+- <HevKev (Kevin McGrail)> for the DeuTex Manual
+- <Jens Hykkelbjerg> for RMB
+- Those folks at ID, for Doom, and especially <Shawn Green> for his encouragement and helpful comments.
+- Playtesters: <Peter Zahner>, <John Keary>, <Matt Jonelis>, <Dr Sleep>

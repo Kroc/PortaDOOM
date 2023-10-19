@@ -12,200 +12,200 @@ $KEY:W=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-CONTEXT/BACKSTORY/WHATEVER: Because I have been asked one too many times about why the project only has 20 monsters, well, here's the story: _wildweasel_ challenged _ztktx_ to make a map with no more than 20 monsters in it and nothing stronger than a Caco. Why? _Ztktx_ is famous for his ridiculously bad maps with couple of square rooms and thousands of monsters. Almost all of his maps are nearly unbeatable. Of course, he did all this for the lulz, but we kept believing that he'd improve. This community project started after said challenge, which I was sure _zktkx_ would not accept. I decided to accept it on my behalf, so here you are, reading this!
+CONTEXT/BACKSTORY/WHATEVER: Because I have been asked one too many times about why the project only has 20 monsters, well, here's the story: <wildweasel> challenged <ztktx> to make a map with no more than 20 monsters in it and nothing stronger than a Caco. Why? <Ztktx> is famous for his ridiculously bad maps with couple of square rooms and thousands of monsters. Almost all of his maps are nearly unbeatable. Of course, he did all this for the lulz, but we kept believing that he'd improve. This community project started after said challenge, which I was sure <zktkx> would not accept. I decided to accept it on my behalf, so here you are, reading this!
 
 TL;DR It was not my idea for the challenge to have 20 monsters, okay?
 
 :Credits
 :-------------------------------------------------------------------------------
-*Project lead		: _Lud_
-*Co-leaders			: _Tapwave_, _BillGuy_
-*Top guns			: _leodoom85_, _Zero X. Diamond_, _FishyClockwork_
-*Honorable mentions	: _Vostyok_, _unRyker_
-*Village idiot		: _SoulCircle_
+*Project lead		: <Lud>
+*Co-leaders			: <Tapwave>, <BillGuy>
+*Top guns			: <leodoom85>, <Zero X. Diamond>, <FishyClockwork>
+*Honorable mentions	: <Vostyok>, <unRyker>
+*Village idiot		: <SoulCircle>
 
-*Original idea		: _wildweasel_
-*Textures			: _id Software_, `CC4 TexturePack`, `Kingpin Life of Crime`, _Jimmy_, `Ultimate DOOM`, _Cage_, _FuzzballFox_, _Nick Baker_, _Enjay_, _Malinku_, _Earthquake_, `Blood`, `Skynet`, `Duke3D`, _Kinsie_, `TNT`, `Last Rites`, `Terminator: Rampage`, `DOOM Alphas`, _NecroDome_, `Carmageddon`
-*Sprites			: _Doom64hunter_, _Captain Toenail_, `Gothic`, _Monolith Productions_, _3D Realms_, _Captain Awesome_, _Hayabusa_, _Lucario_, _Anarchist_, _Ghastly_Dragon_
-*Software			: _Visual Vincent_ (`Writer Doom`)
-*Non-map music		: _HyoChan_ - `Rocks`.
+*Original idea		: <wildweasel>
+*Textures			: <id Software>, `CC4 TexturePack`, `Kingpin Life of Crime`, <Jimmy>, `Ultimate DOOM`, <Cage>, <FuzzballFox>, <Nick Baker>, <Enjay>, <Malinku>, <Earthquake>, `Blood`, `Skynet`, `Duke3D`, <Kinsie>, `TNT`, `Last Rites`, `Terminator: Rampage`, `DOOM Alphas`, <NecroDome>, `Carmageddon`
+*Sprites			: <Doom64hunter>, <Captain Toenail>, `Gothic`, <Monolith Productions>, <3D Realms>, <Captain Awesome>, <Hayabusa>, <Lucario>, <Anarchist>, <Ghastly_Dragon>
+*Software			: <Visual Vincent> (`Writer Doom`)
+*Non-map music		: <HyoChan> - `Rocks`.
 
 :Map List
 :===============================================================================
 *MAP01		: *The Beginning
-*User		: _leodoom85_
+*User		: <leodoom85>
 *Quote		: "This is just the beginning".
 :-------------------------------------------------------------------------------
 *MAP02		: *Ambush Facility
-*User		: _Lil'Devil_
+*User		: <Lil'Devil>
 :-------------------------------------------------------------------------------
 *MAP03		: *To Hell and Back
-*User		: _Caligari87_
-*Music		: _Nabernizer_ - `Argent Facility`
+*User		: <Caligari87>
+*Music		: <Nabernizer> - `Argent Facility`
 *Notes		: This is my first truely released and finished map. Glad to have finally contributed.
 :-------------------------------------------------------------------------------
 *MAP04		: *Underglow
-*User		: _Nevander_
-*Music		: `Hate Machine` by _Jimmy_ (30-in-30 2)
+*User		: <Nevander>
+*Music		: `Hate Machine` by <Jimmy> (30-in-30 2)
 *Notes		: I had fun making this... you guys are probably gonna think I'm on crack or something. Lots of colored lighting is used, and so I've included a software renderer friendly version. It won't look as nice but at least everything won't look ugly. (Lud's Note: Removed software renderer friendly version. Can't jam 2 versions in one map.)
 :-------------------------------------------------------------------------------
 *MAP05		: *Wrong Direction
-*User		: _ZioMcCall_
+*User		: <ZioMcCall>
 *Music		: `Half life 2` - `Song 15`
 :-------------------------------------------------------------------------------
 *MAP06		: *Polarity
-*User		: _Jimmy_
-*Music		: `"Space Storm"` by _Bobby Prince_ (`Duke Nukem 3D` soundtrack)
+*User		: <Jimmy>
+*Music		: `"Space Storm"` by <Bobby Prince> (`Duke Nukem 3D` soundtrack)
 :-------------------------------------------------------------------------------
 *MAP07		: *Arena
-*User		: _Lud_ 
+*User		: <Lud>
 *Music		: `UT'99` - `Razorback`
 *Notes		: Take cover.
 :-------------------------------------------------------------------------------
 *MAP08		: *The Entrance
-*User		: _isaacpop23_
+*User		: <isaacpop23>
 *Notes		: I probably focused too much on detailing the map rather than making it good.
 :-------------------------------------------------------------------------------
 *MAP09		: *Crimes
-*User		: _Kinsie_
-*Music		: `"first level"` from `Fears` (Amiga ver.) by _Mathieu Berthaud_
+*User		: <Kinsie>
+*Music		: `"first level"` from `Fears` (Amiga ver.) by <Mathieu Berthaud>
 *Notes		: Map may contain Crimes.
 :-------------------------------------------------------------------------------
 *MAP10		: *Abandoned Depot
-*User		: _Mor'ladim_
+*User		: <Mor'ladim>
 *Music		: `The Peacekeepers` - Machinery
 *Notes		: A small, semi-detailed map with challenging gameplay in certain areas.
 :-------------------------------------------------------------------------------
 *MAP11		: *Ghosts Of Mars
-*User		: _Vostyok_
-*Music		: Custom track by _Glaice_/_Mr.Chris_
+*User		: <Vostyok>
+*Music		: Custom track by <Glaice>/<Mr.Chris>
 :-------------------------------------------------------------------------------
 *MAP12		: *The Warehouse
-*User		: _Voltcom9_
+*User		: <Voltcom9>
 *Music 		: `Ain't Going Out Like That` (Cypress Hill) Instrumental
 :-------------------------------------------------------------------------------
 *MAP13		: *UAC Station
-*User		: _BillGuy_
+*User		: <BillGuy>
 *Music		: Custom MIDI
 :-------------------------------------------------------------------------------
 *MAP14		: *Treacherous Library
-*User		: _FishyClockwork_
+*User		: <FishyClockwork>
 *Music		: `CBLOOD10` from `Blood`.
 :-------------------------------------------------------------------------------
 *MAP15		: *Cratered
-*User		: _Tapwave_
+*User		: <Tapwave>
 *Music		: `Time Trax (SNES)` - Level BGM 01
 :-------------------------------------------------------------------------------
 *MAP16		: *The Mean Streets
-*User		: _Zero X. Diamond_
-*Music		: `Curt Cool/Depth` - _Japanese Speedghost_
+*User		: <Zero X. Diamond>
+*Music		: `Curt Cool/Depth` - <Japanese Speedghost>
 *Notes		: Tried going for a `BUILD` feel, think I may have gone overboard.
 :-------------------------------------------------------------------------------
 *MAP17		: *The Cauldron
-*User		: _NAG_
-*Music		: `"Chief Rebel Angel"` by _Entombed_
+*User		: <NAG>
+*Music		: `"Chief Rebel Angel"` by <Entombed>
 :-------------------------------------------------------------------------------
 *MAP18		: *The Abandoned Mine Shaft
-*User		: _SoulCircle_
+*User		: <SoulCircle>
 *Notes		: The story is ingame. Jumping is encouraged, crouching is needed in the end.
 :-------------------------------------------------------------------------------
 *MAP19		: *Want A Piece Of Me
-*User		: _UnTrustable_
+*User		: <UnTrustable>
 :-------------------------------------------------------------------------------
 *MAP20		: *Lava Pits
-*User		: _Gothic_
+*User		: <Gothic>
 *Music		: `"Nagomi Passage"` from `Unreal`
 *Notes		: This time with ammo and health pickups, as well as a new sky and a chainsaw.
 :-------------------------------------------------------------------------------
 *MAP21		: *The Wicked Sepulchre
-*User		: _Zero X. Diamond_
-*Music		: `"Ass Kickin'"` by _Antti Kauppila_
-*Notes		: _Kinsie_ says I might be a jerk, and I think he's right. Also holy shit I FINISHED A FUCKING MAP
+*User		: <Zero X. Diamond>
+*Music		: `"Ass Kickin'"` by <Antti Kauppila>
+*Notes		: <Kinsie> says I might be a jerk, and I think he's right. Also holy shit I FINISHED A FUCKING MAP
 :-------------------------------------------------------------------------------
 *MAP22		: *UP
-*User		: _UnTrustable_
+*User		: <UnTrustable>
 *Notes		: Be quick at the end, don't hesitate at the end-room. You need your precious time.
 :-------------------------------------------------------------------------------
 *MAP23		: *UAC Research Facilities
-*User		: _Titan314_
+*User		: <Titan314>
 :-------------------------------------------------------------------------------
 *MAP24		: *Doomja Vu
-*User		: _Luigi2600_
+*User		: <Luigi2600>
 :-------------------------------------------------------------------------------
 *MAP25		: *Tremors
-*User		: _Vostyok_
+*User		: <Vostyok>
 *Notes		: It's got deathmatch starts (why not), and is pretty nasty in UV. Quite short as well I suppose, but you can still get around some of the traps if you're clever.
 :-------------------------------------------------------------------------------
 *MAP26		: *Metropolis of Ashes
-*User		: _Deviluke Roy_ / _unRyker_
+*User		: <Deviluke Roy> / <unRyker>
 *Music		: Korn - `No Place To Hide`
 :-------------------------------------------------------------------------------
 *MAP27		: *Bloodbath
-*User		: _Janus3003_
-*Music		: `"Infinite"` by _Tom Mustaine_ (`TNT D_DEAD.mid`)
+*User		: <Janus3003>
+*Music		: `"Infinite"` by <Tom Mustaine> (`TNT D_DEAD.mid`)
 :-------------------------------------------------------------------------------
 *MAP28		: *The Crucible
-*User		: _Voltcom9_
+*User		: <Voltcom9>
 *Music		: `Return to Castle Wolfenstein` - `Ravaged Town`
 *Notes		: Doesn't have much ammo but it was a design choice to do so :P
 :-------------------------------------------------------------------------------
 *MAP29		: *Castle Chaos
-*User		: _Crazy Toni_
+*User		: <Crazy Toni>
 *Music		: `D_E3M5` from good ol' `DOOM`
 :-------------------------------------------------------------------------------
 *MAP30		: *Woeful Hills
-*User		: _UnRyker_
+*User		: <UnRyker>
 *Music		: Black Sabbath - `Children of the Grave` (MIDI)
 :-------------------------------------------------------------------------------
 *MAP31		: *Jigoku
-*User		: _Tapwave_
-*Music		: `Dimension of Dreams` by _Jimmy_
+*User		: <Tapwave>
+*Music		: `Dimension of Dreams` by <Jimmy>
 *Notes		: Only one secret this time! The exit requires some pain.
 :-------------------------------------------------------------------------------
 *MAP32		: *Hell Crypt
-*User		: _DrPyspy_
+*User		: <DrPyspy>
 *Music		: Pantera - `Mouth for War`
 :-------------------------------------------------------------------------------
 *MAP33		: *Kill-O-Seum
-*User		: _Sgt. Shivers_
+*User		: <Sgt. Shivers>
 *Music		: `Soldier of Chaos` - `TNT`
 *Notes		: Has difficulty based spawns.
 :-------------------------------------------------------------------------------
 *MAP34		: *Spawning Grounds
-*User		: _BillGuy_
+*User		: <BillGuy>
 *Music		: Custom MIDI
 *Notes		: :)
 :-------------------------------------------------------------------------------
 *MAP35		: *Celestial Abominations
-*User		: _FishyClockwork_
+*User		: <FishyClockwork>
 *Music		: `CBLOOD7` from `Blood`
 :-------------------------------------------------------------------------------
 *MAP36		: *Unexpected Turn
-*User		: _leodoom85_
+*User		: <leodoom85>
 :-------------------------------------------------------------------------------
 *MAP37		: *Sacrifices
-*User		: _BillGuy_
+*User		: <BillGuy>
 *Music		: Custom MIDI
 :-------------------------------------------------------------------------------
 *MAP38		: *Ascend Beyond Hell
-*User		: _leodoom85_
+*User		: <leodoom85>
 *Music		: `D_TENSE`
 :-------------------------------------------------------------------------------
 *MAP39		: *The Idol Who Twists Mortal Minds
-*User		: _lwks_
+*User		: <lwks>
 *Music		: `E1M8`
 :-------------------------------------------------------------------------------
 *MAP40		: *Symbols of the Demon
-*User		: _BillGuy_ / _leodoom85_ / _Tapwave_ / _Lud_
+*User		: <BillGuy> / <leodoom85> / <Tapwave> / <Lud>
 *Music		: Custom MIDI
-*Notes		: TOOK ME LONG ENOUGH! -_Lud_
+*Notes		: TOOK ME LONG ENOUGH! -<Lud>
 :-------------------------------------------------------------------------------
 *MAP41		: *Where Nazis Belong
-*User		: _Zero X. Diamond_
+*User		: <Zero X. Diamond>
 *Music		: Megadeth - `Wake Up Dead` (Aahz the Demon Cover)
 *Notes		: There's nothing more satisfying than shooting Nazis. Map completed at the last minute in less than a day!!
 :-------------------------------------------------------------------------------
 *MAP42		: *2 Minutes To Midnight
-*User		: _Zero X. Diamond_
-*Music		: `"2 Minutes To Midnight"` as covered by _Betrayer_ and _Gothir_
+*User		: <Zero X. Diamond>
+*Music		: `"2 Minutes To Midnight"` as covered by <Betrayer> and <Gothir>
 *Notes		: Needlessly cruel and with a two minute timer to boot.

@@ -7,12 +7,12 @@ $KEY:W=URL:https://www.doomworld.com/vb/wads-mods/74767-xasermap-dead-wire/
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>09>26	  Author : _Xaser Acheron_
+:Released : *2015>09>26	  Author : <Xaser Acheron>
 :Levels   : *1			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Single map for GZDoom (Doom 2), made for _Tormentor667_'s Doomja Vu. Creepazoid atmosphere with custom weapons / enemy edits. 'Nuff said.
+Single map for GZDoom (Doom 2), made for <Tormentor667>'s Doomja Vu. Creepazoid atmosphere with custom weapons / enemy edits. 'Nuff said.
 
 You are an engineer employed by the UAC to investigate the source of a strange signal originating from an abandoned facility.
 
@@ -20,7 +20,7 @@ This wad tells the tale of what happens next...
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: _Tormentor667_'s Doomja Vu base map, which in turn is based on Ultimate Doom's E1M7. Little remains aside from a vague sense of layout.
+*Base					: <Tormentor667>'s Doomja Vu base map, which in turn is based on Ultimate Doom's E1M7. Little remains aside from a vague sense of layout.
 *Build Time				: 3-ish (rather sleepless) days.
 *Editor(s) used			: GZDoom Builder, SLADE3
 *May Not Run With...	: ZDoom/GZDoom's software renderer. Use GL and enable dynamic lights.
@@ -28,31 +28,31 @@ This wad tells the tale of what happens next...
 :Credits:
 :-------------------------------------------------------------------------------
 *Map:
-- _Tormentor667_ (and kinda id Software) for the base, o'course
-- _Xaser_ made the rest oh no
+- <Tormentor667> (and kinda id Software) for the base, o'course
+- <Xaser> made the rest oh no
 
 *Textures:
-- a bunch from *Chasm: The Rift*, ripped by _zrrion the insect_
-- couple by _Ed Cripps_ (DECOTX**), from Putrefier
+- a bunch from *Chasm: The Rift*, ripped by <zrrion the insect>
+- couple by <Ed Cripps> (DECOTX**), from Putrefier
 - a few xasery things (TSTATIC**)
 - some space sky from somewhere
  
 *Music:
-- "dead.wire" by _BouncyTEM_ (original track)
-- "theme" by _Mortimer Twang_ (from Modarchive)
+- "dead.wire" by <BouncyTEM> (original track)
+- "theme" by <Mortimer Twang> (from Modarchive)
  
 *Sounds:
-- HQ doom sounds by _Per Kristian Risvik_
-- M16 firing sound by _Kate_
+- HQ doom sounds by <Per Kristian Risvik>
+- M16 firing sound by <Kate>
 - Laser and HRC firing sounds from Descent 2
  
 *Weapons:
-- M16 sprites from Terminator Rampage, edited by _JoeyTD_ and _Xim_
-- Laser sprites by _FuzzballFox_ (?)
-- HRC sprites by _zrrion the insect_
-- Rifle and Flamethrower borrowed from ZDCMP2, but _Xaser_ made those anyway
-- _Xaser_ did weaponcodings all around
+- M16 sprites from Terminator Rampage, edited by <JoeyTD> and <Xim>
+- Laser sprites by <FuzzballFox> (?)
+- HRC sprites by <zrrion the insect>
+- Rifle and Flamethrower borrowed from ZDCMP2, but <Xaser> made those anyway
+- <Xaser> did weaponcodings all around
  
 *Misc.Sprites:
-- Torches by _ravage (rf)_
-- Candelabra by _zrrion the insect_
+- Torches by <ravage (rf)>
+- Candelabra by <zrrion the insect>

@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>02>03?  Author : _Thomas "tourniquet" Seifert_
+:Released : *2016>02>03?  Author : <Thomas "tourniquet" Seifert>
 :Levels   : *1			   Modes : *Single, Co-op
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -25,15 +25,15 @@ One fairly large and complex map. Difficulty should be more on the challenging s
 :Credits
 :-------------------------------------------------------------------------------
 - Id Games for Doom
-- _Archi_, _Killer5_ and _Ribbiks_ for playtesting
+- <Archi>, <Killer5> and <Ribbiks> for playtesting
 - People at Doomworld for additional feedback
 
 *Sprites:
-- Chaingunner skin by _TheDarkArchon_
+- Chaingunner skin by <TheDarkArchon>
 - Tree Sprite taken from Retres.wad
 - Various Keys taken from Realm6667
 
 *Music Credit: 
 - Title: "Press Fire" from Shadow of the Beast 2
-- Map1: "The Mucus Flow" by _B.P.R.D_
+- Map1: "The Mucus Flow" by <B.P.R.D>
 - Intermission: "Save Room" from Resident Evil 1

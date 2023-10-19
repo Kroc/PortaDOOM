@@ -8,7 +8,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1996>08>04	  Author : _Ola Björling_
+:Released : *1996>08>04	  Author : <Ola Björling>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
@@ -28,11 +28,11 @@ Lots of different brick walls and corroded metal. Dark, (not TOO dark) sunset-li
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Jeff Rabenhurst_ for the brilliant `EdMap` 1.40
-- _id_ for making that game, what's it called... :) 
+- <Jeff Rabenhurst> for the brilliant `EdMap` 1.40
+- <id> for making that game, what's it called... :) 
 
-I think this level is at least as good as any other I have ever played, even though this is only my second release level. Lots of inspiration from _Andre Sverre Kvernmo_, one of the `"The Master Levels"` authors. His level `"The Image Of Evil"` is an incredible piece of art, but not much fun to play...
+I think this level is at least as good as any other I have ever played, even though this is only my second release level. Lots of inspiration from <Andre Sverre Kvernmo>, one of the `"The Master Levels"` authors. His level `"The Image Of Evil"` is an incredible piece of art, but not much fun to play...
 
 I also got some inspiration from the `Quake` Screenshots.
 
-_Jeff_, please make `EdMap` able to deal with maps bigger than 150K! It keeps hanging up! (Even though I have 629K free!)
+<Jeff>, please make *EdMap* able to deal with maps bigger than 150K! It keeps hanging up! (Even though I have 629K free!)

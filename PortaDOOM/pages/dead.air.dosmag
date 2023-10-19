@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/92135-deadair-v2/
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>12>27	  Author : _Xaser Acheron_
+:Released : *2017>12>27	  Author : <Xaser Acheron>
 :Levels   : *1			   Modes : *Single
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -27,41 +27,41 @@ This map tells the tale of what happens next...
 
 :Credits:
 :-------------------------------------------------------------------------------
-- _Xaser_ (das me)
+- <Xaser> (das me)
   mapping, music (original score yay!), actor code, going insane
 
-- _RNG Breadbug_
+- <RNG Breadbug>
   weapon, enemy, and prop sprites + a shitton of inspiration!
 
-- _ijon tichy_
+- <ijon tichy>
   quake-style grenade code, from Samsara
 
-- _Alfonzo_ & _dew_
+- <Alfonzo> & <dew>
   early testing and nitpickeroonies
 
-- _BouncyTEM_
+- <BouncyTEM>
   testing n' support n' the Fusion Mortar concept ;D
 
-- _rf`_ (_ravage_)
+- <rf`> (<ravage>)
   AM-Driver explosion sprites (or at least the rip :P)
   
-- _Amuscaria_ (nee _Eriance_)
+- <Amuscaria> (nee <Eriance>)
   Nail projectile sprites, "Grafter" base sprite
 
-- _Cage_, _NiGHTMARE_, _zrrion the insect_, & _NMN_
+- <Cage>, <NiGHTMARE>, <zrrion the insect>, & <NMN>
   Textures of Awesome
 
-- _Enjay_
+- <Enjay>
   the kickass palette, from his Marine Assault mod
 
-- _FuzzballFox_
+- <FuzzballFox>
   Flickering computer textures (FF****), Mosaic texture
 
-- _illuknisaa_
+- <illuknisaa>
   End room computer textures (ILLU**)
 
-- _Abbuw_
+- <Abbuw>
   TV texture (ABBUWTV**)
 
-- _GreenActionFootage_
+- <GreenActionFootage>
   TV turn off animation

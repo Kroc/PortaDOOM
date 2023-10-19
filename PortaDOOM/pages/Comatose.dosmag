@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/comatose
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>19	  Author : _Lainos_
+:Released : *2015>12>19	  Author : <Lainos>
 :Levels   : *1			   Modes : *Single
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -25,6 +25,6 @@ A limit of sidedefs in LR format is achieved here, so it is not possible to draw
 
 :Credits
 :-------------------------------------------------------------------------------
-- _lafoxxx_, _Vlad Guardian_, _[LeD]Jake Crusher_ and others
+- <lafoxxx>, <Vlad Guardian>, <[LeD]Jake Crusher> and others
 - All authors, whose resources I used
 - Music from: Portal (game), Parasite Eve (game)

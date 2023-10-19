@@ -8,97 +8,97 @@ $TITLE=Index
 :TOP TEN:
 
 $KEY:1=GOTO:lilith.pk3
-- [1] *lilith.pk3 									_anotak_
+- [1] *lilith.pk3 									<anotak>
 
 $KEY:2=GOTO:Shadows of the Nightmare Realm
-- [2] *Shadows of the Nightmare Realm				_YukiRaven 
+- [2] *Shadows of the Nightmare Realm				<YukiRaven >
 
 $KEY:3=GOTO:No End in Sight
-- [3] *No End in Sight								_Years_
+- [3] *No End in Sight								<Years>
 
 $KEY:4=GOTO:dead.air
-- [4] *dead.air										_Xaser_
+- [4] *dead.air										<Xaser>
 
 $KEY:5=GOTO:Brigandine
-- [5] *Brigandine									_Viggles_
+- [5] *Brigandine									<Viggles>
 
 $KEY:6=GOTO:Counterattack
-- [6] *Counterattack								_Mechadon_
+- [6] *Counterattack								<Mechadon>
 
 $KEY:7=GOTO:Legacy of Heroes
-- [7] *Legacy of Heroes								_Gaspe_
+- [7] *Legacy of Heroes								<Gaspe>
 
 $KEY:8=GOTO:Saturnine Chapel
-- [8] *Saturnine Chapel								_dobu gabu maru_
+- [8] *Saturnine Chapel								<dobu gabu maru>
 
 $KEY:9=GOTO:Stardate 20x7
-- [9] *Stardate 20x7								_Ribbiks_
+- [9] *Stardate 20x7								<Ribbiks>
 
 $KEY:0=GOTO:Void and Rainbow
-- [0] *Void and Rainbow								_Serious_MOod_
+- [0] *Void and Rainbow								<Serious_MOod>
 
 :RUNNERS UP:
 
 $KEY:A=GOTO:Rise of the Wool Ball
-- [A] *Rise of the Wool Ball						_MSPaintR0cks_
+- [A] *Rise of the Wool Ball						<MSPaintR0cks>
 
 $KEY:B=GOTO:Return to Hadron Episode 2
-- [B] *Return to Hadron Episode 2					_cannonball_
+- [B] *Return to Hadron Episode 2					<cannonball>
 
 $KEY:C=GOTO:TNT - Revilution
 - [C] *TNT: Revilution								Various
 
 $KEY:D=GOTO:Waterlab GZD
-- [D] *Waterlab GZD									_Enjay_
+- [D] *Waterlab GZD									<Enjay>
 
 $KEY:E=GOTO:Disjunction
-- [E] *Disjunction									_floatRand_
+- [E] *Disjunction									<floatRand>
 
 $KEY:F=GOTO:Hexen - Curse of the Lost Gods
-- [F] *Hexen: Curse of the Lost Gods				_Kristus_
+- [F] *Hexen: Curse of the Lost Gods				<Kristus>
 
 $KEY:G=GOTO:Water Spirit
-- [G] *Water Spirit									_Manbou_
+- [G] *Water Spirit									<Manbou>
 
 $KEY:H=GOTO:DOOM II - Hellscape
-- [H] *DOOM II: Hellscape							_Chris Lutz_
+- [H] *DOOM II: Hellscape							<Chris Lutz>
 
 $KEY:I=GOTO:Dark Tide
-- [I] *Dark Tide									_Chris Lutz_
+- [I] *Dark Tide									<Chris Lutz>
 
 :MULTIPLAYER AWARDS:
 
 $KEY:J=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/p-r/pyrrhic
-- *[J: Pyrrhic]										_hobomaster_
+- *[J: Pyrrhic]										<hobomaster>
 
 $KEY:K=URL:https://zandronum.com/forum/viewtopic.php?f=58&t=7872
-- *[K: Progressive Duel 2]							_Mechanix Union_
+- *[K: Progressive Duel 2]							<Mechanix Union>
 
 :GAMEPLAY MOD AWARDS:
 
 $KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=52262
-- *[L: Doom Delta]									_DrPyspy_
+- *[L: Doom Delta]									<DrPyspy>
 
 $KEY:M=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=55061
-- *[M: Final Doomer]								_Sgt. Shivers_, _Yholl_, &c.
+- *[M: Final Doomer]								<Sgt. Shivers>, <Yholl>, &c.
 
 $KEY:N=URL:URL:https://forum.zdoom.org/viewtopic.php?t=57098
-- *[N: High Noon Drifter]							_TerminusEst13_
+- *[N: High Noon Drifter]							<TerminusEst13>
 
 :CODEAWARD:
 
 $KEY:O=URL:http://oblige.sourceforge.net/
-- *[O: OBLIGE]										_Andrew Apted_
+- *[O: OBLIGE]										<Andrew Apted>
 
 :MORDETH AWARD:
 
 $KEY:P=GOTO:TNT - Revilution
-- [P] *TNT2: Revilution								_Team TNT 2_ & _Team TNT:R_
+- [P] *TNT2: Revilution								<Team TNT 2> & <Team TNT:R>
 
 :MACHAWARD:
 
 $KEY:Q=GOTO:The Given
-- [Q] *The Given									_dobu gabu maru_
+- [Q] *The Given									<dobu gabu maru>
 
 :MAPPER OF THE YEAR:
 

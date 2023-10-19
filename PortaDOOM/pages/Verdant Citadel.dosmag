@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/vercit
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2019>05>17	  Author :  _Dennis "Exl" Meuwissen_
+:Released : *2019>05>17	  Author :  <Dennis "Exl" Meuwissen>
 :Levels   : *1			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -34,15 +34,15 @@ $KEY:1=URL:https://soundcloud.com/khydrodjent-1
 $KEY:2=URL:https://www.doomworld.com/forum/topic/102599
 $KEY:3=URL:https://www.shadertoy.com/view/MdlXz8
 $REM=
-- Tree sprites by _osjclatchford_
-- Tree sprites by _Raven Software_
+- Tree sprites by <osjclatchford>
+- Tree sprites by <Raven Software>
 - Various textures from `Gothic DM`
-- "City of Ruins" and "Titan" by _KhydroDjent_
+- "City of Ruins" and "Titan" by <KhydroDjent>
   [1: https://soundcloud.com/khydrodjent-1]
-- _DooMAD_ for textures from his `StalungCraeft` texture pack
+- <DooMAD> for textures from his `StalungCraeft` texture pack
   [2: https://www.doomworld.com/forum/topic/102599]
-- Water caustics shader by _Dave Hoskins_
+- Water caustics shader by <Dave Hoskins>
   [3: https://www.shadertoy.com/view/MdlXz8]
-- _Bethesda Studios_ for ambient sound effects
+- <Bethesda Studios> for ambient sound effects
 - Special thanks to all playtesters:
-  __metal__, _AL-97_, _Benjogami_, _BlackFish_, _CyberDreams_, _deathzero021_, _DooMAD_, _elend_, _Enjay_, _Gez_, _Kroc_, _Malefication_, _neoworm_, _Odorousbag87_, _ReaperAA_, _seed_, _SpockRC_, _Suitepee_, _tmorrow_, _Yugiboy85_
+  <_metal_>, <AL-97>, <Benjogami>, <BlackFish>, <CyberDreams>, <deathzero021>, <DooMAD>, <elend>, <Enjay>, <Gez>, <Kroc>, <Malefication>, <neoworm>, <Odorousbag87>, <ReaperAA>, <seed>, <SpockRC>, <Suitepee>, <tmorrow>, <Yugiboy85>

@@ -13,7 +13,7 @@ $KEY:W=URL:https://doomwiki.org/wiki/Doom
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "DOOM.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"Ultimate DOOM"_, _"DOOM Classic Complete"_ or _"DOOM 3 BFG Edition"_ on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file in the "files\wads" folder. You can play without owning DOOM, but will be limited to the Shareware release containing the first episode.
+! If you own `"Ultimate DOOM"`, `"DOOM Classic Complete"` or `"DOOM 3 BFG Edition"` on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file in the "files\wads" folder. You can play without owning DOOM, but will be limited to the Shareware release containing the first episode.
 $KEY:G=URL:https://www.gog.com/game/the_ultimate_doom
 $KEY:S=URL:http://store.steampowered.com/sub/18397/
 

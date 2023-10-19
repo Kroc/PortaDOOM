@@ -7,7 +7,7 @@ $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>07>23	  Author : _Ethan Watson aka GooberMan_
+:Released : *2015>07>23	  Author : <Ethan Watson aka GooberMan>
 :Levels   : *9			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Graphics
 :-------------------------------------------------------------------------------
@@ -106,4 +106,4 @@ Once again, this is being released under a Creative Commons licence. This gives 
 :Credits:
 :-------------------------------------------------------------------------------
 $KEY:L=SHELL:wads\episodes\ge5-pd\licenses.txt
-An extensive list of credits is kept in *[L] licenses.txt*. Shout outs to _Randi_, _Graf_, _Enjay_, _Nash_, _Xaser_, _ReX_, _wildweasel_, _Gez_, _Blzut3_, _Kinsie_, _Jimmy_, _Edward850_, _grouchbag_, _scalliano_, and other `ZDoom` forums/IRC people I've missed.
+An extensive list of credits is kept in *[L] licenses.txt*. Shout outs to <Randi>, <Graf>, <Enjay>, <Nash>, <Xaser>, <ReX>, <wildweasel>, <Gez>, <Blzut3>, <Kinsie>, <Jimmy>, <Edward850>, <grouchbag>, <scalliano>, and other *ZDoom* forums/IRC people I've missed.

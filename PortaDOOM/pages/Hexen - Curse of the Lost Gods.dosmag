@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>06>07	  Author : _Kristian 'Kristus' Käll_
+:Released : *2017>06>07	  Author : <Kristian 'Kristus' Käll>
 :Levels   : *5			   Modes : *Single, Co-op
 :Requires : *zdoom		Includes : *+Sounds +Graphics
 :-------------------------------------------------------------------------------
@@ -24,13 +24,13 @@ An expansion episode for Hexen, taking place long after the events of the origin
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Khorus_, for playtesting and comments
-- _St. Alfonzo_, for playtesting and comments
-- _Gez_ for helping with decorate
-- Fighter widescreen punch sprites by _MG_Man_
-- Cleric widescreen fire sprites by _Neoworm_
-- All other widescreen weapon sprite mods by _Doorhenge_
-- _Entryway_ for making and helping with HexenP hacking
-- _Vermil_ for Doomsday code help
-- _John Romero_ for Heretic and Hexen
+- <Khorus>, for playtesting and comments
+- <St. Alfonzo>, for playtesting and comments
+- <Gez> for helping with decorate
+- Fighter widescreen punch sprites by <MG_Man>
+- Cleric widescreen fire sprites by <Neoworm>
+- All other widescreen weapon sprite mods by <Doorhenge>
+- <Entryway> for making and helping with HexenP hacking
+- <Vermil> for Doomsday code help
+- <John Romero> for Heretic and Hexen
 - ID and Raven of course for the games

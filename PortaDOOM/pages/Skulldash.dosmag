@@ -7,7 +7,7 @@ $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>20>22	  Author : _Joshua 'Dragonfly' O'Sullivan_
+:Released : *2017>20>22	  Author : <Joshua 'Dragonfly' O'Sullivan>
 :Levels   : *50			   Modes : *Single, Co-op
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -93,16 +93,16 @@ HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 :-------------------------------------------------------------------------------
 *MAPPERS:
 
-_Dragonfly_
+<Dragonfly>
 - ALL MAPS, Except the following:
 
-_Capt. J3_
+<Capt. J3>
 - Water Facility
 
-_Slyor 64_
+<Slyor 64>
 - 1st half of Frostbound
 
-_Remmirath_
+<Remmirath>
 - Token Refinery
 - Mayan Mayhem
 - Outpost 25/A Foundry
@@ -110,71 +110,71 @@ _Remmirath_
 - The Nightmare Realm
 - The Skyhold
 
-_Dreadopp_
+<Dreadopp>
 - World Devastation
 
-_Tormentor667_
+<Tormentor667>
 - Sekhmet's Fury
 
-_Bauul_
+<Bauul>
 - Mournful Dawn
 
-_Jimmy_
+<Jimmy>
 - The Cauldron
 
-_Xyzzy01_
+<Xyzzy01>
 - Abstract Zone
 
-_AtroNx_
+<AtroNx>
 - Molten Core
 
-_Poohlyash_
+<Poohlyash>
 - Whiteout
 
-_kyle2959_
+<kyle2959>
 - Fight Club
 
 *SCRIPTERS:
 
-- _Dragonfly_
-- _HexaDoken_
-- _Remmirath_
+- <Dragonfly>
+- <HexaDoken>
+- <Remmirath>
 
 *RESOURCES:
 
-- _Blastfrog_
-- _Realm667_
+- <Blastfrog>
+- <Realm667>
 - `Hexen II`
 - `Gothic DM`
 - `Scythe II`
 - `Blood`
 - `Skulltag`
-- _TheMisterCat_
-- _Scuba Steve_
+- <TheMisterCat>
+- <Scuba Steve>
 - `CC4-Tex`
-- _Xyzzy01_
-- _Dragonfly_
+- <Xyzzy01>
+- <Dragonfly>
 
 *MUSIC RESOURCES:
 
-- _Jimmy
+- <Jimmy>
 - rock.freemidis.net
 - VGMusic.com
 - 1024.wad
 - `Scythe II`
-- _yakfak_
-- _Aion_
+- <yakfak>
+- <Aion>
 - Other WADs
 
 *BETATESTERS:
 
-- _YellowTail_
-- _Tux_
-- _Dreadopp_
-- _HexaDoken_
-- _Eonfge_
-- _Parad0x_
-- _Blastfrog_
-- _antares031_
-- _Phade_
-- _leodoom85_
+- <YellowTail>
+- <Tux>
+- <Dreadopp>
+- <HexaDoken>
+- <Eonfge>
+- <Parad0x>
+- <Blastfrog>
+- <antares031>
+- <Phade>
+- <leodoom85>

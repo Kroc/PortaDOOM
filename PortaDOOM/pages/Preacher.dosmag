@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/preacher
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>11>29	  Author : _Darch_
+:Released : *2018>11>29	  Author : <Darch>
 :Levels   : *9			   Modes : *Single, Co-op, Deathmatch
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -28,20 +28,20 @@ There are graphic and sound replacements, but weapon and enemy behaviours are un
 
 :Credits
 :-------------------------------------------------------------------------------
-*Mapping				: _Darch_
+*Mapping				: <Darch>
 
-*Music					: Songs by Those Poor Bastards
-						  Midi music by _Darch_
+*Music					: Songs by <Those Poor Bastards>
+						  Midi music by <Darch>
 
-*Testing				: _Scifista42_, _Demonologist_
+*Testing				: <Scifista42>, <Demonologist>
 
 *Textures from			: `Shadow of The Colossus`, `ICO`, `American Mgee's Alice`, `BitterSweet`, `Voodoo Guns`, `Sunlust`, `NeoDoom`
 
-*Sprite Credits			: `Blood`, `Powerslave`, _Darch_, _Ezepov_, _Joey TD_
+*Sprite Credits			: `Blood`, `Powerslave`, <Darch>, <Ezepov>, <Joey TD>
 
-*Sky					: _Skillsaw_
+*Sky					: <Skillsaw>
 
-*Intermission Screen	: _Alex K_
+*Intermission Screen	: <Alex K>
 
 *Palette				: `Brigandine`
 
@@ -64,14 +64,14 @@ There are graphic and sound replacements, but weapon and enemy behaviours are un
 
 - Title - `"Glory Amen"` by Those Poor Bastards
 - Intermisson - `"Swallowed by Sin"` by Those Poor Bastards
-- MAP01 - `"Sabbath with Organ"` by _Darch_
-- MAP02 - `"Preacher Theme"` by _Darch_
-- MAP03 - `"Die Motherfucker Die"` by _Darch_
-- MAP04 - `"Sabbath with Organ 2"` by _Darch_
-- MAP05 - `"That Arabic One"` by _Darch_
-- MAP06 - `"Black and White"` by _Darch_
+- MAP01 - `"Sabbath with Organ"` by <Darch>
+- MAP02 - `"Preacher Theme"` by <Darch>
+- MAP03 - `"Die Motherfucker Die"` by <Darch>
+- MAP04 - `"Sabbath with Organ 2"` by <Darch>
+- MAP05 - `"That Arabic One"` by <Darch>
+- MAP06 - `"Black and White"` by <Darch>
 - Text Screen - `"Sacrificial Lamb"` by Those Poor Bastards
-- MAP07 - `"Memories from the Day I Died"` by _Darch_
-- MAP08 - `"Jazzy Metal"` by _Darch_
-- MAP09 - `"Colonizators"` by _Darch_
+- MAP07 - `"Memories from the Day I Died"` by <Darch>
+- MAP08 - `"Jazzy Metal"` by <Darch>
+- MAP09 - `"Colonizators"` by <Darch>
 - MAP10 - `"The Dust Storm"` by Those Poor Bastards

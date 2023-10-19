@@ -7,12 +7,12 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/104608
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2019>02>13?  Author : _Ribbiks_
+:Released : *2019>02>13?  Author : <Ribbiks>
 :Levels   : *7			   Modes : *Single, ?
 :Requires : *boom		Includes : *?
 :-------------------------------------------------------------------------------
 
-`Finely Crafted Fetish Film` is a set of 7 boom-compatible maps for `Doom2` with a focus on puzzles and unusual layouts. Shoutout to _anotak_ and the lua functionality that is now part of *Doombuilder X*, without which this mapset wouldn't exist.
+`Finely Crafted Fetish Film` is a set of 7 boom-compatible maps for `Doom2` with a focus on puzzles and unusual layouts. Shoutout to <anotak> and the lua functionality that is now part of *Doombuilder X*, without which this mapset wouldn't exist.
 
 The maps themselves feature a mixture of puzzle and combat elements: block pushing, switch / elevator setups, monster manipulation, platforming, and some normal slaughter fights here and there. Please consult the following chart to identify which maps may align with your interests:
 
@@ -30,15 +30,15 @@ The maps themselves feature a mixture of puzzle and combat elements: block pushi
 
 *MIDI:
 
-01 :: "Jincuba" by _Benjamin Lewis_
-02 :: "Come to My Circle, Chichiburrin" by _Zan-zan-zawa-veia_
-03 :: "Clouds" by _Sambi Katano_
-04 :: "Grosstown Traffic" by _Zan-zan-zawa-veia_
-05 :: "Niko" by _Garret Thomson_
-06 :: "Cross" by _Zan-zan-zawa-veia_
-07 :: "Strange Times" by _Robert Inventor_
-TP :: "Pixie Dust" by _Zan-zan-zawa-veia_
-IP :: "Strolling Away From A Dark And Dangerous Place" by _Robert Inventor_
+01 :: "Jincuba" by <Benjamin Lewis>
+02 :: "Come to My Circle, Chichiburrin" by <Zan-zan-zawa-veia>
+03 :: "Clouds" by <Sambi Katano>
+04 :: "Grosstown Traffic" by <Zan-zan-zawa-veia>
+05 :: "Niko" by <Garret Thomson>
+06 :: "Cross" by <Zan-zan-zawa-veia>
+07 :: "Strange Times" by <Robert Inventor>
+TP :: "Pixie Dust" by <Zan-zan-zawa-veia>
+IP :: "Strolling Away From A Dark And Dangerous Place" by <Robert Inventor>
 
 *EXTRA NOTES:
 
@@ -48,12 +48,12 @@ IP :: "Strolling Away From A Dark And Dangerous Place" by _Robert Inventor_
 
 *Thanks to:
 
-- _anotak_: DBX scripting development & support
-- _GrainOfSalt_: statbar gfx
+- <anotak>: DBX scripting development & support
+- <GrainOfSalt>: statbar gfx
 
 *Various textures ripped from:
 
-- `bauhaus.wad` (so by extension `avp2tex`, _dukeres_)
-- _NiGHTMARE_'s Hellish texture pack
+- `bauhaus.wad` (so by extension `avp2tex`, <dukeres>)
+- <NiGHTMARE>'s Hellish texture pack
 - `cc4-tex.wad`, you know the drill
 - `doomcity.wad`

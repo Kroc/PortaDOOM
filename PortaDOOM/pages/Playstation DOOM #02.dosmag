@@ -24,12 +24,12 @@ map13			*Command Center			DOOM E2M5 (Jaguar)
 map14			*Halls of the Damned	DOOM E2M6 (Jaguar)
 map15			*Spawning Vats			DOOM E2M7 (Jaguar)
 *└→* map55		*Fortress of Mystery	DOOM E2M9 (Jaguar), aka `"Dis"`
-   lost06		*Dis					DOOM E3M8, _BaronOfStuff_
+   lost06		*Dis					DOOM E3M8, <BaronOfStuff>
 map16			*Hell Gate				DOOM E2M8 (Jaguar)
 map17			*Hell Keep				DOOM E3M1 (Jaguar)
-lost01			*Forsaken Keep			DOOM E3M1, _NoneeLlama_
-lost02			*Slough of Despair		DOOM E3M2, _NoneeLlama_
-*└→* lost62		*Warrens				DOOM E3M9, _NoneeLlama_, _Salahmander2_
+lost01			*Forsaken Keep			DOOM E3M1, <NoneeLlama>
+lost02			*Slough of Despair		DOOM E3M2, <NoneeLlama>
+*└→* lost62		*Warrens				DOOM E3M9, <NoneeLlama>, <Salahmander2>
 map18			*Pandemonium			DOOM E3M3
 map19			*House of Pain			DOOM E3M4
 map20			*Unholy Cathedral		DOOM E3M5
@@ -43,10 +43,10 @@ map25			*Perfect Hatred			DOOM E4M2
    *└→* map57	*The Marshes			PSX Only
 map26			*Sever the Wicked		DOOM E4M3
 map27			*Unruly Evil			DOOM E4M4
-lost03			*They Will Repent		DOOM E4M5, _fenderc01_
-lost04			*Against Thee Wickedly	DOOM E4M6, _DeXiaZ_
-*└→* lost63		*Lost Sewers			DOOM E1M10 (XBox), _BaronOfStuff_
-lost05			*And Hell Followed		DOOM E4M7, _Avoozl_
+lost03			*They Will Repent		DOOM E4M5, <fenderc01>
+lost04			*Against Thee Wickedly	DOOM E4M6, <DeXiaZ>
+*└→* lost63		*Lost Sewers			DOOM E1M10 (XBox), <BaronOfStuff>
+lost05			*And Hell Followed		DOOM E4M7, <Avoozl>
 *└→* map30		*Threshold of Pain		PSX Only
 map28			*Unto The Cruel			DOOM E4M8
 :-------------------------------------------------------------------------------
@@ -64,30 +64,30 @@ map39			*The Pit				DOOM2 MAP09
 map40			*Refueling Base			DOOM2 MAP10
 map41			*O of Destruction!		DOOM2 MAP11, aka `"Circle of Death"`
 map42			*The Factory			DOOM2 MAP12 
-lost07			*Downtown				DOOM2 MAP13, _DeXiaZ_
-*└→* lost65		*Betray					DOOM2 MAP33 (XBox), _DeXiaZ_
+lost07			*Downtown				DOOM2 MAP13, <DeXiaZ>
+*└→* lost65		*Betray					DOOM2 MAP33 (XBox), <DeXiaZ>
 map43			*The Inmost Dens		DOOM2 MAP14
-lost08			*Industrial Zone		DOOM2 MAP15, _DeXiaZ_
-*└→* lost66		*The Castle				DOOM2 MAP31, _BaronOfStuff_
-   *└→* lost67	*The Escape				DOOM2 MAP32, _BaronOfStuff_
+lost08			*Industrial Zone		DOOM2 MAP15, <DeXiaZ>
+*└→* lost66		*The Castle				DOOM2 MAP31, <BaronOfStuff>
+   *└→* lost67	*The Escape				DOOM2 MAP32, <BaronOfStuff>
 map44			*Suburbs				DOOM2 MAP16
 *└→* map58		*The Mansion			PSX Only
    *└→* map59	*Club DOOM				PSX Only
 map45			*Tenements				DOOM2 MAP17
 map46			*The Courtyard			DOOM2 MAP18
 map47			*The Citadel			DOOM2 MAP19
-lost09			*Gotcha!				DOOM2 MAP20, _DeXiaZ_
+lost09			*Gotcha!				DOOM2 MAP20, <DeXiaZ>
 map48			*Nirvana				DOOM2 MAP21
 map49			*The Catacombs			DOOM2 MAP22
 map50			*Barrels of Fun			DOOM2 MAP23
-lost10			*The Chasm				DOOM2 MAP24, _fenderc01_, _Salahmander2_
+lost10			*The Chasm				DOOM2 MAP24, <fenderc01>, <Salahmander2>
 map51			*Bloodfalls				DOOM2 MAP25
 map52			*The Abandoned Mines	DOOM2 MAP26
 map53			*Monster Condo			DOOM2 MAP27
-lost11			*The Spirit World		DOOM2 MAP28, _Salahmander2_
-lost12			*The Living End			DOOM2 MAP29, _Salahmander2_
+lost11			*The Spirit World		DOOM2 MAP28, <Salahmander2>
+lost12			*The Living End			DOOM2 MAP29, <Salahmander2>
 map54			*Redemption Denied		PSX Only
-lost61c			*Icon of Sin			DOOM2 MAP30, _BaronOfStuff_
+lost61c			*Icon of Sin			DOOM2 MAP30, <BaronOfStuff>
 :-------------------------------------------------------------------------------
 : The Master Levels
 :-------------------------------------------------------------------------------
@@ -97,92 +97,92 @@ map63			*Canyon					Master Levels
 map64			*Combine				Master Levels
 map65			*Catwalk				Master Levels
 map66			*Fistula				Master Levels
-lost13			*Garrison				Master Levels, _DeXiaZ_
-lost14			*Titan Manor			Master Levels, _DeXiaZ_
+lost13			*Garrison				Master Levels, <DeXiaZ>
+lost14			*Titan Manor			Master Levels, <DeXiaZ>
 map67			*Geryon					Master Levels
 map68			*Minos					Master Levels
-lost15			*Trapped on Titan		Master Levels, _DeXiaZ_
-lost16			*Bloodsea Keep			Master Levels, _Dragonsbrethren_
-lost17			*Mephisto's Mausoleum	Master Levels, _DeXiaZ_
+lost15			*Trapped on Titan		Master Levels, <DeXiaZ>
+lost16			*Bloodsea Keep			Master Levels, <Dragonsbrethren>
+lost17			*Mephisto's Mausoleum	Master Levels, <DeXiaZ>
 map69			*Nessus					Master Levels
 map70			*Paradox				Master Levels
 map71			*Subspace				Master Levels
 map72			*Subterra				Master Levels
 map73			*Vesperas				Master Levels
-lost18			*Black Keep				Master Levels (Black Tower), _DeXiaZ_
-lost19			*Elevator to Hell		Master Levels, _pcorf_
-*└→* lost68		*Bad Dream				Master Levels, _BaronOfStuff_
+lost18			*Black Keep				Master Levels (Black Tower), <DeXiaZ>
+lost19			*Elevator to Hell		Master Levels, <pcorf>
+*└→* lost68		*Bad Dream				Master Levels, <BaronOfStuff>
 :-------------------------------------------------------------------------------
 : Final DOOM: TNT
 :-------------------------------------------------------------------------------
 map74			*System Control			TNT MAP01
 map75			*Human Barbecue			TNT MAP02
-lost20			*Power Control			TNT MAP03, _Salahmander2_
+lost20			*Power Control			TNT MAP03, <Salahmander2>
 map76			*Wormhole				TNT MAP04
-lost21			*Hanger					TNT MAP05, _DeXiaZ_
-lost22			*Open Season			TNT MAP06, _Avoozl_
-lost23			*Prison					TNT MAP07, _DeXiaZ_
-lost24			*Metal					TNT MAP08, _DeXiaZ_
-lost25			*Stronghold				TNT MAP09, _Salahmander2_
-lost26			*Redemption				TNT MAP10, _BaronOfStuff_
-*└→* lost73		*The Innermost Dens		Reject Master Level TWM01,\\_Eris Falling_
+lost21			*Hanger					TNT MAP05, <DeXiaZ>
+lost22			*Open Season			TNT MAP06, <Avoozl>
+lost23			*Prison					TNT MAP07, <DeXiaZ>
+lost24			*Metal					TNT MAP08, <DeXiaZ>
+lost25			*Stronghold				TNT MAP09, <Salahmander2>
+lost26			*Redemption				TNT MAP10, <BaronOfStuff>
+*└→* lost73		*The Innermost Dens		Reject Master Level TWM01,\\<Eris Falling>
    lost17d		*DeXiaZ's Mausoleum		Master Levels (original MEPHISTO.WAD)
-lost27			*Storage Facility		TNT MAP11, _DeXiaZ_
+lost27			*Storage Facility		TNT MAP11, <DeXiaZ>
 map77			*Crater					TNT MAP12
 map78			*Nukage Processing		TNT MAP13
-lost28			*Steel Works			TNT MAP14, _pcorf_
-lost29			*Dead Zone				TNT MAP15, _Salahmander2_
-*└→* lost69		*Pharaoh				TNT MAP31, _Eris Falling_
-   *└→* lost70	*Caribbean				TNT MAP32, _DeXiaZ_
+lost28			*Steel Works			TNT MAP14, <pcorf>
+lost29			*Dead Zone				TNT MAP15, <Salahmander2>
+*└→* lost69		*Pharaoh				TNT MAP31, <Eris Falling>
+   *└→* lost70	*Caribbean				TNT MAP32, <DeXiaZ>
 map79			*Deepest Reaches		TNT MAP16
 map80			*Processing Area		TNT MAP17
-lost30			*Mill					TNT MAP18, _DeXiaZ_
-lost31			*Shipping/Respawning	TNT MAP19, _DeXiaZ_
-lost32			*Central Processing		TNT MAP20, _DeXiaZ_
-lost33			*Administration Center	TNT MAP21, _pcorf_
-lost34			*Habitat				TNT MAP22, _DeXiaZ_
+lost30			*Mill					TNT MAP18, <DeXiaZ>
+lost31			*Shipping/Respawning	TNT MAP19, <DeXiaZ>
+lost32			*Central Processing		TNT MAP20, <DeXiaZ>
+lost33			*Administration Center	TNT MAP21, <pcorf>
+lost34			*Habitat				TNT MAP22, <DeXiaZ>
 map81			*Lunar Mining Project	TNT MAP23
 map82			*Quarry					TNT MAP24
-lost35			*Baron's Den			TNT MAP25, _Avoozl_
+lost35			*Baron's Den			TNT MAP25, <Avoozl>
 map83			*Ballistyx				TNT MAP26
-lost36			*Mount Pain				TNT MAP27, _DeXiaZ_
+lost36			*Mount Pain				TNT MAP27, <DeXiaZ>
 map84			*Heck					TNT MAP28
-lost37			*River Styx				TNT MAP29, _Cryo_
-lost61a			*Last Call				TNT MAP30, _BaronOfStuff_
+lost37			*River Styx				TNT MAP29, <Cryo>
+lost61a			*Last Call				TNT MAP30, <BaronOfStuff>
 :-------------------------------------------------------------------------------
 : Final DOOM: The Plutonia Experiment
 :-------------------------------------------------------------------------------
 map85			*Congo					Plutonia MAP01
-lost38			*Well of Souls			Plutonia MAP02, _Dragonsbrethren_
+lost38			*Well of Souls			Plutonia MAP02, <Dragonsbrethren>
 map86			*Aztec					Plutonia MAP03
-lost39			*Caged					Plutonia MAP04, _Dragonsbrethren_
+lost39			*Caged					Plutonia MAP04, <Dragonsbrethren>
 map87			*Ghost Town				Plutonia MAP05
 map88			*Baron's Lair			Plutonia MAP06
-lost40			*Caughtyard				Plutonia MAP07, _Eris Falling_
-lost41			*Realm					Plutonia MAP08, _Salahmander2_
-lost42			*Abattoire				Plutonia MAP09, _Salahmander2_
+lost40			*Caughtyard				Plutonia MAP07, <Eris Falling>
+lost41			*Realm					Plutonia MAP08, <Salahmander2>
+lost42			*Abattoire				Plutonia MAP09, <Salahmander2>
 map90			*Onslaught				Plutonia MAP10
-lost43			*Hunted					Plutonia MAP11, _DeXiaZ_
-lost44			*Speed					Plutonia MAP12, _DeXiaZ_
-lost45			*The Crypt				Plutonia MAP13, _Salahmander2_
-lost46			*Genesis				Plutonia MAP14, _Salahmander2_
-lost47			*The Twilight			Plutonia MAP15, _DeXiaZ_
-*└→* lost71		*Cyberden				Plutonia MAP31, _BaronOfStuff_
-   lost72		*Go 2 It				Plutonia MAP32, _BaronOfStuff_
-   lost61		*Last Gateway of Sin	lost61a, b & c combined, _BaronOfStuff_
-lost48			*The Omen				Plutonia MAP16, _DeXiaZ_
-lost49			*Compound				Plutonia MAP17, _Salahmander2_
-lost50			*Neurosphere			Plutonia MAP18, _Eris Falling_
-lost51			*NME					Plutonia MAP19, _Salahmander2_
+lost43			*Hunted					Plutonia MAP11, <DeXiaZ>
+lost44			*Speed					Plutonia MAP12, <DeXiaZ>
+lost45			*The Crypt				Plutonia MAP13, <Salahmander2>
+lost46			*Genesis				Plutonia MAP14, <Salahmander2>
+lost47			*The Twilight			Plutonia MAP15, <DeXiaZ>
+*└→* lost71		*Cyberden				Plutonia MAP31, <BaronOfStuff>
+   lost72		*Go 2 It				Plutonia MAP32, <BaronOfStuff>
+   lost61		*Last Gateway of Sin	lost61a, b & c combined, <BaronOfStuff>
+lost48			*The Omen				Plutonia MAP16, <DeXiaZ>
+lost49			*Compound				Plutonia MAP17, <Salahmander2>
+lost50			*Neurosphere			Plutonia MAP18, <Eris Falling>
+lost51			*NME					Plutonia MAP19, <Salahmander2>
 map89			*The Death Domain		Plutonia MAP20
-lost52			*Slayer					Plutonia MAP21, _Salahmander2_
-lost53			*Impossible Mission		Plutonia MAP22, _DeXiaZ_
-lost54			*Tombstone				Plutonia MAP23, _BaronOfStuff_
-lost55			*The Final Frontier		Plutonia MAP24, _Salahmander2_
-lost56			*Temple of Darkness		Plutonia MAP25, _Salahmander2_
-lost57			*Bunker					Plutonia MAP26, _DeXiaZ_
-lost58			*Anti-Christ			Plutonia MAP27, _Salahmander2_
-lost59			*The Sewers				Plutonia MAP28, _DeXiaZ_
-lost60			*Odyssey of Noises		Plutonia MAP29, _Nuxius_, _DeXiaZ_
-lost61b			*Gateway of Hell		Plutonia MAP30, _BaronOfStuff_
-$REM=lost64		*Fear					DOOM, _fenderc01_
+lost52			*Slayer					Plutonia MAP21, <Salahmander2>
+lost53			*Impossible Mission		Plutonia MAP22, <DeXiaZ>
+lost54			*Tombstone				Plutonia MAP23, <BaronOfStuff>
+lost55			*The Final Frontier		Plutonia MAP24, <Salahmander2>
+lost56			*Temple of Darkness		Plutonia MAP25, <Salahmander2>
+lost57			*Bunker					Plutonia MAP26, <DeXiaZ>
+lost58			*Anti-Christ			Plutonia MAP27, <Salahmander2>
+lost59			*The Sewers				Plutonia MAP28, <DeXiaZ>
+lost60			*Odyssey of Noises		Plutonia MAP29, <Nuxius>, <DeXiaZ>
+lost61b			*Gateway of Hell		Plutonia MAP30, <BaronOfStuff>
+$REM=lost64		*Fear					DOOM, <fenderc01>

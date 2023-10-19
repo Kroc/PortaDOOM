@@ -5,17 +5,17 @@ $TITLE=Sverre Kvernmo
 
 :-------------------------------------------------------------------------------
 
-_Sverre Kvernmo_ stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. _Sverre_, however, is no stranger to change: years ago, he would have never expected to be working under contract for id Software. Before working with _Romero_ and crew, not counting a brief stint with Xatrix making Redneck Rampage, _Sverre_ was a prominent Doomer, creating numerous levels for id's Doom 2 add-on product "The Master Levels", as well as three for the much-revered Doom megawad Eternal Doom.
+<Sverre Kvernmo> stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. <Sverre>, however, is no stranger to change: years ago, he would have never expected to be working under contract for id Software. Before working with <Romero> and crew, not counting a brief stint with Xatrix making Redneck Rampage, <Sverre> was a prominent Doomer, creating numerous levels for id's Doom 2 add-on product "The Master Levels", as well as three for the much-revered Doom megawad Eternal Doom.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	What was your first Doom experience?
 
-_Sverre		Hmm, that was back in the spring of 94. I was still a loyal Amiga user (hey, it was huge in Europe!) and was calling all my friends who were turning to the PC traitors. One particularily traitorous friend called me one day and told me he'd got a new game that was absolutely unbelievable. I'd seen Wolfenstein, so when he told me it was the same guys that made this Doom game I was more than a little interested. To make that long story short I later saw that game and it pretty much took my breath away. My first battle-memory is me in e1m1 (Ultra Violence), strafing back and forth like a moron trying to take out the two Shotgun-dudes up on the balcony in the first room. I thought the faster I moved the harder it would be for them to hit me... heh.
+<Sverre>		Hmm, that was back in the spring of 94. I was still a loyal Amiga user (hey, it was huge in Europe!) and was calling all my friends who were turning to the PC traitors. One particularily traitorous friend called me one day and told me he'd got a new game that was absolutely unbelievable. I'd seen Wolfenstein, so when he told me it was the same guys that made this Doom game I was more than a little interested. To make that long story short I later saw that game and it pretty much took my breath away. My first battle-memory is me in e1m1 (Ultra Violence), strafing back and forth like a moron trying to take out the two Shotgun-dudes up on the balcony in the first room. I thought the faster I moved the harder it would be for them to hit me... heh.
 
 *Doomworld	How long did it take you to start making levels?
 
-_Sverre		That same friend who introduced me to Doom told me there was such a thing as an editor for it. Now, I figured I knew a thing or two about editing games already. Ever since Lode Runner my favourite games had always been the kind that that allowed you to somehow modify them. If there wasn't an editor for the games my hacker friend would sometimes throw one together. The games I had previously "edited" were Lode Runner, Boulder Dash, Spelunker, Racing Destruction Kit, Wizards of "Something", Graphic Adventure Creator, Dungeon Master and a couple of other I don't remember the names of. If those titles don't look familiar its because you didn't have a C=64/Amiga. :)
+<Sverre>		That same friend who introduced me to Doom told me there was such a thing as an editor for it. Now, I figured I knew a thing or two about editing games already. Ever since Lode Runner my favourite games had always been the kind that that allowed you to somehow modify them. If there wasn't an editor for the games my hacker friend would sometimes throw one together. The games I had previously "edited" were Lode Runner, Boulder Dash, Spelunker, Racing Destruction Kit, Wizards of "Something", Graphic Adventure Creator, Dungeon Master and a couple of other I don't remember the names of. If those titles don't look familiar its because you didn't have a C=64/Amiga. :)
 
 			Anyways, my friend told me there was an editor for Doom. I flat out didn't believe him at first, since in my experience the more complex games' never allowed you to change much of the original content, much less allow you to create whole new levels. Since Doom was the most complex game I had laid my eyes on I could not conceive of the fact there was an editor that gave you "full access" to it. I figured I'd be able to change the location of items, monsters, etc. Big deal. After getting my hands on a buggy beta of "DoomED, The Real Thing" (nope, I didn't start with DEU) I had to concede. I instantly threw my old Amiga out, and put in an order for a Dx-2 66.
 
@@ -23,115 +23,115 @@ _Sverre		That same friend who introduced me to Doom told me there was such a thi
 
 *Doomworld	Is it true that you actually turned in a Doom level of your university campus for a project?
 
-_Sverre		Eh, yes. I was spending all my free time in DEU by this point, so that was the only way I was going to be able to hand in any project that semester. :)
+<Sverre>		Eh, yes. I was spending all my free time in DEU by this point, so that was the only way I was going to be able to hand in any project that semester. :)
 
 *Doomworld	I suppose you deleted that WAD long ago...?
 
-_Sverre		I haven't seen them (2 levels) in years, but I think it is on a hard-disk that got screwed up about 2 years back. I've been wanting to try and restore that HD since it has a lot of old Doom & other maps I started but never finished... (including an Eternal map with an effect I believe hasn't been done before, called "Starscraper"...) Problem is it'll cost me a four-figured number to have it repaired and I'm not in the Ferrari-league of game-people... :/
+<Sverre>		I haven't seen them (2 levels) in years, but I think it is on a hard-disk that got screwed up about 2 years back. I've been wanting to try and restore that HD since it has a lot of old Doom & other maps I started but never finished... (including an Eternal map with an effect I believe hasn't been done before, called "Starscraper"...) Problem is it'll cost me a four-figured number to have it repaired and I'm not in the Ferrari-league of game-people... :/
 
 *Doomworld	Your name is mentioned on the splash screen for DETH. What did you do to help with this level editor?
 
-_Sverre		_Anthony Burden_ and I got in touch after I asked for a couple of changes to DETH, and he kept me on as a sort of "beta-tester with whistles". Basically I got to ask for any feature I wanted and he got to implement them. I don't remember all the suggestions of mine that went in, but one was the "Doom Map view" which shows you what the level is going to look like in Doom's auto-map. That caame in handy for maps like "Cabal7, The Face of Evil". We later found out that he drove by my house every day to work(!). We didn't even know we were on the same continent until that happened. Obviously he started coming by, mainly to see how I used the editor and we even started on a Hexen project together where he did the scripting and I the level editing. Although I made a few maps for it it never got released/completed.
+<Sverre>		<Anthony Burden> and I got in touch after I asked for a couple of changes to DETH, and he kept me on as a sort of "beta-tester with whistles". Basically I got to ask for any feature I wanted and he got to implement them. I don't remember all the suggestions of mine that went in, but one was the "Doom Map view" which shows you what the level is going to look like in Doom's auto-map. That caame in handy for maps like "Cabal7, The Face of Evil". We later found out that he drove by my house every day to work(!). We didn't even know we were on the same continent until that happened. Obviously he started coming by, mainly to see how I used the editor and we even started on a Hexen project together where he did the scripting and I the level editing. Although I made a few maps for it it never got released/completed.
 
 *Doomworld	How were you selected for the Master Levels?
 
-_Sverre		I bugged id until they realised the only way they were going to get any work done was by hiring me.
+<Sverre>		I bugged id until they realised the only way they were going to get any work done was by hiring me.
 
 *Doomworld	Could you be a little more specific in what exactly happened? :P
 
-_Sverre		Actually its a really long story that probably would make this interview completely unreadable. I did give _Henrik Larsen_ over at The Master Levels FAQ the whole story, so if you wanna know, check it out over there...
+<Sverre>		Actually its a really long story that probably would make this interview completely unreadable. I did give <Henrik Larsen> over at The Master Levels FAQ the whole story, so if you wanna know, check it out over there...
 
 *Doomworld	How many levels did you create for consideration?
 
-_Sverre		I already had about six levels or so that were complete, but not on the net (therefore valid for consideration). I handed in a total of 12 maps, from which five were selected.
+<Sverre>		I already had about six levels or so that were complete, but not on the net (therefore valid for consideration). I handed in a total of 12 maps, from which five were selected.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	What happened to those levels which were not accepted?
 
-_Sverre		They're all included in my freeware Cabal1-7 series.
+<Sverre>		They're all included in my freeware Cabal1-7 series.
 
 *Doomworld	What was your inspiration behind the Cabal series?
 
-_Sverre		Beyond my obsession with Doom-editing, the drive was to create a full 32-level episode, with a semblance of a story-line and solid thematic levels with some new design-twists.
+<Sverre>		Beyond my obsession with Doom-editing, the drive was to create a full 32-level episode, with a semblance of a story-line and solid thematic levels with some new design-twists.
 
-			Wait... did you ever play the upgraded versions of my Cabal levels? Those that are only available on Compuserve right now? It just occurred to me that none of those ever made it to ftp.cdrom.com and that any reviews made (or __not__ made ;) were of redundant versions of my levels... The ones on CiS had major bug-fixes and a few added areas, etc (one of the ftp versions had so little ammo it was almost impossible to finish). The Cabal zip-files on Compuserve also includes demos of me finishing the levels, on skill 4. Bet you never knew about those, huh?
+			Wait... did you ever play the upgraded versions of my Cabal levels? Those that are only available on Compuserve right now? It just occurred to me that none of those ever made it to ftp.cdrom.com and that any reviews made (or _not_ made ;) were of redundant versions of my levels... The ones on CiS had major bug-fixes and a few added areas, etc (one of the ftp versions had so little ammo it was almost impossible to finish). The Cabal zip-files on Compuserve also includes demos of me finishing the levels, on skill 4. Bet you never knew about those, huh?
 
 *Doomworld	Sorry, I dropped CiS a long time ago. Speaking of which, when did you join Compuserve and discover the Action Games forum?
 
-_Sverre		That was the fall of '94, my first year in Bristol, England. A friend was already hooked up on CiS and it seemed cool at the time. It actually WAS cool at the time since many of the early-day gurus hung out there...
+<Sverre>		That was the fall of '94, my first year in Bristol, England. A friend was already hooked up on CiS and it seemed cool at the time. It actually WAS cool at the time since many of the early-day gurus hung out there...
 
 *Doomworld	Such as?
 
-_Sverre		Besides id's early presence (mostly _Shawn Green_) there were such prominent names as _John "Dr Sleep" Anderson_, _Alex Mayberry_ (Xatrix's ex-lead level designer), _Richard "Graymatter" Gray_ (yep, different nickname for the _Levelord_ back then), _Mal Blackwell_, _Stormin' Norman_, _Anthony Burden_, that _DeeP_ guy (ugh) and several others that for whatever reason chose not to go full-time into the game industry, including the whole of the Eternal team. Oh, and the best female level designer I know of, _Lisa Moore_. She rocks, check her stuff out.
+<Sverre>		Besides id's early presence (mostly <Shawn Green>) there were such prominent names as <John "Dr Sleep" Anderson>, <Alex Mayberry> (Xatrix's ex-lead level designer), <Richard "Graymatter" Gray> (yep, different nickname for the <Levelord> back then), <Mal Blackwell>, <Stormin' Norman>, <Anthony Burden>, that <DeeP> guy (ugh) and several others that for whatever reason chose not to go full-time into the game industry, including the whole of the Eternal team. Oh, and the best female level designer I know of, <Lisa Moore>. She rocks, check her stuff out.
 
 *Doomworld	How was Eternal Doom first started?
 
-_Sverre		I wasn't in during the first 6 months, but I believe it was started by _Jim Flynn_ and _John Anderson_. There was little "real" progress in the first months of development, but when _Paul Schmitz_ took over the reins as project leader things started taking off...
+<Sverre>		I wasn't in during the first 6 months, but I believe it was started by <Jim Flynn> and <John Anderson>. There was little "real" progress in the first months of development, but when <Paul Schmitz> took over the reins as project leader things started taking off...
 
 *Doomworld	How did you get involved in Eternal Doom?
 
-_Sverre		Ehrm... Let me see. I guess I was contacted by _Jim_ (I already knew him from the Master levels) who invited me in, after my work had been "dissected" by the other members.
+<Sverre>		Ehrm... Let me see. I guess I was contacted by <Jim> (I already knew him from the Master levels) who invited me in, after my work had been "dissected" by the other members.
 
 *Doomworld	Did you only make three levels for Eternal Doom, or were there any that were not included?
 
-_Sverre		Yep, only three. There were a couple of others that I started that never got done, including a "crashed" space-ship that was to be the first level. However _Jim_ made some comment about the wall-textures looking like melted ice cream or something, and that sort of killed my interest in that level. Damn you _Jim_!!!!! The funny thing is that while Nucleus (Map 05) and Darkdome (Map 12) took me almost 2 years to do from start to finish (not kidding), Timegate (Map 04) took only two weeks. We basically needed a time-gate level to fit the story line and I slapped that one together using a few unused ideas from other levels. The bugger is that I've had a lot of feedback from people who prefer Timegate over the other two. What a waste of time, eh?
+<Sverre>		Yep, only three. There were a couple of others that I started that never got done, including a "crashed" space-ship that was to be the first level. However <Jim> made some comment about the wall-textures looking like melted ice cream or something, and that sort of killed my interest in that level. Damn you <Jim>!!!!! The funny thing is that while Nucleus (Map 05) and Darkdome (Map 12) took me almost 2 years to do from start to finish (not kidding), Timegate (Map 04) took only two weeks. We basically needed a time-gate level to fit the story line and I slapped that one together using a few unused ideas from other levels. The bugger is that I've had a lot of feedback from people who prefer Timegate over the other two. What a waste of time, eh?
 
 *Doomworld	Apparently, many of the textures in Eternal Doom were of your own creation. Has this graphical talent helped you in your current work at ION Storm?
 
-_Sverre		I basically did all the original art, or everything that wasn't snatched from Hexen or some other internet-wad. I did over 600 textures for that one, I believe. That experience did help a bit here at Ion, especially during the beginning of Daikatana when each level designer didn't have assigned texture artists. Nowadays there's no use for my 2D skills since the texture guys here have talents far beyond mine.
+<Sverre>		I basically did all the original art, or everything that wasn't snatched from Hexen or some other internet-wad. I did over 600 textures for that one, I believe. That experience did help a bit here at Ion, especially during the beginning of Daikatana when each level designer didn't have assigned texture artists. Nowadays there's no use for my 2D skills since the texture guys here have talents far beyond mine.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	On your Eternal Doom level "Time Gate", there are two portals at the end which exit the level. Was there originally another idea for one of those two portals? What happened to that idea?
 
-_Sverre		Yes, there was a third "wrong gate" initially but I eventually had to axe it. What the third gate did was time-warp you one hour back in time (the Timegate control-panel texture refelected this at the time), basically restarting the Timegate level. However, because of the archaic ways the Doom-effects work (I used a secret-level exit on a level where it wasn't supposed to be used) there was no way to ensure this would always be the outcome. Only if you played the level without saving at all would this effect be ensured (and since I rarely saved my game while playtesting my levels it took me a while to figure out that it didn't work right). Since it was the last two weeks of production I had no time to make a third area once the bug was flushed out. :/
+<Sverre>		Yes, there was a third "wrong gate" initially but I eventually had to axe it. What the third gate did was time-warp you one hour back in time (the Timegate control-panel texture refelected this at the time), basically restarting the Timegate level. However, because of the archaic ways the Doom-effects work (I used a secret-level exit on a level where it wasn't supposed to be used) there was no way to ensure this would always be the outcome. Only if you played the level without saving at all would this effect be ensured (and since I rarely saved my game while playtesting my levels it took me a while to figure out that it didn't work right). Since it was the last two weeks of production I had no time to make a third area once the bug was flushed out. :/
 
 *Doomworld	Did the sheer size of another of your Eternal levels, "Darkdome", present any problems? Was the level originally supposed to be any bigger?
 
-_Sverre		Did I ever? I had a heap of problems with both Nucleus and Darkdome, because of the limitation of the save-game buffer. Both levels were about 20% bigger at their largest state, and I think I still have "full versions" backed up somewhere. As with any level designer, my heart would bleed every time I had to axe something, so those two levels are a study in how much you can cram into a Doom level and still having it run stable. If you load up the maps in an editor you'll see that all of the "effect-sectors" oustide of the normal map are triangles, not squares. The reason for this is simple, a triangular sector takes up less memory than a square one, having one less side-def. Similarily I would axe "three stim-packs and two hellknights" to add "25% health-box and a Baron" in stead, just to save the space. Anal? Yes.
+<Sverre>		Did I ever? I had a heap of problems with both Nucleus and Darkdome, because of the limitation of the save-game buffer. Both levels were about 20% bigger at their largest state, and I think I still have "full versions" backed up somewhere. As with any level designer, my heart would bleed every time I had to axe something, so those two levels are a study in how much you can cram into a Doom level and still having it run stable. If you load up the maps in an editor you'll see that all of the "effect-sectors" oustide of the normal map are triangles, not squares. The reason for this is simple, a triangular sector takes up less memory than a square one, having one less side-def. Similarily I would axe "three stim-packs and two hellknights" to add "25% health-box and a Baron" in stead, just to save the space. Anal? Yes.
 
 *Doomworld	Ooo... where? Are you sure? Can I have them? :)
 
-_Sverre		They're on that old broken d: disk. You can have them if you pay for my HD-repair! ;)
+<Sverre>		They're on that old broken d: disk. You can have them if you pay for my HD-repair! ;)
 
 *Doomworld	I have also heard that you are quite the deathmatcher. Did you ever win any Doom DM tournaments? How do you compare to your ION Storm colleagues?
 
-_Sverre		Doom was and is the best 1 on 1 game in the world, no competition. I managed to win the United Kingdom deathmatch championship and was shipped off to Seattle to "beat the yanks", at Deathmatch 95. Well, that obviously didn't happen (or I'd be _Thresh_ now ;), but I got to the 2nd round where I was beat pretty good by one of the two finalists (not _Thresh_, the other guy:). There are some awesome Doomers here at Ion, but no one I can't beat regularily. Games between me and _Natas_ or _Voin_ can turn any which way. _Romero_'s a walkover though. ;)
+<Sverre>		Doom was and is the best 1 on 1 game in the world, no competition. I managed to win the United Kingdom deathmatch championship and was shipped off to Seattle to "beat the yanks", at Deathmatch 95. Well, that obviously didn't happen (or I'd be <Thresh> now ;), but I got to the 2nd round where I was beat pretty good by one of the two finalists (not <Thresh>, the other guy:). There are some awesome Doomers here at Ion, but no one I can't beat regularily. Games between me and <Natas> or <Voin> can turn any which way. <Romero>'s a walkover though. ;)
 
 *Doomworld	Before being hired by ION Storm, had you ever made a Quake level, or was your sole experience with Doom and Build levels?
 
-_Sverre		While working on Redneck Rampage I goofed around with "Quest" on my spare time, but lost all my first levels in a hard-disk wipe right before starting at Ion. :O
+<Sverre>		While working on Redneck Rampage I goofed around with "Quest" on my spare time, but lost all my first levels in a hard-disk wipe right before starting at Ion. :O
 
 *Doomworld	Have you ever had any urges to make another Doom WAD in any capacity?
 
-_Sverre		All the time! DETH is on my hard disk right now. I doubt I will ever get around to it, unless I find some unexpected free-time, but you never know. Once that creative bug takes a hold its not like I have a choice in the matter. The sectors just start making themselves...
+<Sverre>		All the time! DETH is on my hard disk right now. I doubt I will ever get around to it, unless I find some unexpected free-time, but you never know. Once that creative bug takes a hold its not like I have a choice in the matter. The sectors just start making themselves...
 
 *Doomworld	What do you think you'd be doing right now if not for Doom?
 
-_Sverre		Uhm, I'd probably be cleaning windows on the weekdays, getting drunk on the weekends and generally be one bitter Norwegian.
+<Sverre>		Uhm, I'd probably be cleaning windows on the weekdays, getting drunk on the weekends and generally be one bitter Norwegian.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	And now some unrelated questions. Here's a photo someone took of your workspace at ION Storm a while back. Are those Redneck Rampage and The Master Levels in the corner?
 
-_Sverre		That's my huge collection of full-game titles I've completed work on. Hopefully Daikatana will be up there before the turn of the century! <:O
+<Sverre>		That's my huge collection of full-game titles I've completed work on. Hopefully Daikatana will be up there before the turn of the century! <:O
 
 *Doomworld	What's with all the Doom figurines on top of the monitor?
 
-_Sverre		Heh, funny you should ask that. The pewters are arranged according to the my personal opinion of the monster's toughness. The marine is at the very end (next to the Cyberdemon) because he's the one who's kicked my ass the most. This will of course make no sense to someone who hasn't seen the picture of the pewters. :/
+<Sverre>		Heh, funny you should ask that. The pewters are arranged according to the my personal opinion of the monster's toughness. The marine is at the very end (next to the Cyberdemon) because he's the one who's kicked my ass the most. This will of course make no sense to someone who hasn't seen the picture of the pewters. :/
 
 *Doomworld	Do you still enjoy Carlsberg beer?
 
-_Sverre		Carlsberg, er sannsynligvis verdens beste oel! Jo-hooo!
+<Sverre>		Carlsberg, er sannsynligvis verdens beste oel! Jo-hooo!
 
 *Doomworld	"Carlsberg makes me sassy, livid, and liable to ogle beasts of burden! Woo-hoo!"
 
-_Sverre		Shiet! I didn't know you spoke Norwegian! Er du paa bittet?
+<Sverre>		Shiet! I didn't know you spoke Norwegian! Er du paa bittet?
 
-*Doomworld	Um... yes. And last but not least... "What is _Sverre_ doing on Daikatana right now? Hasn't he had enough time to build his nine levels or so?" (Note: question asked previous to _Sverre_'s departure from ION Storm, but it's still interesting :))
+*Doomworld	Um... yes. And last but not least... "What is <Sverre> doing on Daikatana right now? Hasn't he had enough time to build his nine levels or so?" (Note: question asked previous to <Sverre>'s departure from ION Storm, but it's still interesting :))
 
-_Sverre		I'm sure a lot of people must be wondering about this, I know I do sometimes. ;) For those interested I'll try and explain. First off, designing levels for an incomplete game is a lot more time-consuming than doing freeware maps for already released games, or levels for an add-on pack. This sounds like a wimpy statement, but I do miss the "old days" of having everything on one plate from the moment you start the level. We're working with a changing game, which opens up a large can-o-worms. Here are some of those worms:
+<Sverre>		I'm sure a lot of people must be wondering about this, I know I do sometimes. ;) For those interested I'll try and explain. First off, designing levels for an incomplete game is a lot more time-consuming than doing freeware maps for already released games, or levels for an add-on pack. This sounds like a wimpy statement, but I do miss the "old days" of having everything on one plate from the moment you start the level. We're working with a changing game, which opens up a large can-o-worms. Here are some of those worms:
 
 			1) Tools progress. When we first started making Daikatana maps we had no rotation of brushes, no carving tool, no models (decorative or otherwise) to put in the game and compile times were outrageous (3-4 days wasn't unusual). As the tools got better we had to update our maps as the old ones were no longer technically sound.
 
@@ -139,10 +139,10 @@ _Sverre		I'm sure a lot of people must be wondering about this, I know I do some
 
 			3) Level-effects evolve. When we started out making the game we had a bunch of ideas for level-effects that were to go in the game. Coming up with ideas is of course a much quicker process than implementing them, so you're stuck with two options. One, you design with only what effects you have at the time and run the risk of your level not being cutting-edge on the effects side, or you later have to re-design it to fit the new effects. Two, you try to guess how the ideas will be implemented. This is obviously an inaccurate science and often lead to just as much work as re-implementing an effect later. My point is once again, we're working with an unfinished product, where we can't pick and choose from the game's final palette. This point is why id's own Doom maps are inferior to many of the later freeware-designs, or why there was only one level (well I only found one) in Quake 2 that had the cool "rising water" effect, etc.
 
-			4) AI. As any level designer knows, the way the monsters behave will dramatically change the way your level is made. Well, for the longest time there was absolutely __no__ AI, and even now the AI isn't 100% done. We keep finding areas the side-kicks have problems with, which in the worst cases means a map must be heavily re-designed. We also have to make changes as new monster behaviours are completed, in order to best take advantage of their combat patterns.
+			4) AI. As any level designer knows, the way the monsters behave will dramatically change the way your level is made. Well, for the longest time there was absolutely _no_ AI, and even now the AI isn't 100% done. We keep finding areas the side-kicks have problems with, which in the worst cases means a map must be heavily re-designed. We also have to make changes as new monster behaviours are completed, in order to best take advantage of their combat patterns.
 
 			What this boils down to is that even though the architecture of the maps were finished relatively early we end up constantly updating the levels, to keep them up to speed with what the game can do. Playing catch-up with other games is another bad habit that slows things down, and is best avoided. These problems are of course present with all games, but I think we've had a particular issue with this on Daikatana. The team was after all assembled hastily and there has been a lot of flux on the roster. We're a strong group now though and the team has definitely learnt some valueable lessons on what order to complete tasks for future projects...
 
 *Doomworld	Whoo, that's a lot of readin'.
 
-_Sverre		This is a monster now, an absolute monster. Be sure to include pictures of naked women or no one will read it. ;)
+<Sverre>		This is a monster now, an absolute monster. Be sure to include pictures of naked women or no one will read it. ;)

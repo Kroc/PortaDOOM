@@ -26,12 +26,12 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *Cacoward(s)		Annual awards ceremony for the best community DOOM content.
 
-*Chocolate-Doom,	*Source-ports* created by _Simon Howard_, with the purpose
+*Chocolate-Doom,	*Source-ports* created by <Simon Howard>, with the purpose
 *Chocolate-Heretic,	to remain as faithful as possible to the behaviour of the
 *Chocolate-Hexen,	original MS-DOS executables for DOOM, *Heretic*, *Hexen* &
 *Chocolate-Strife	*Strife*, including *visplane* limits.
 
-*Crispy-Doom*		A *source-port* based on *Chocolate-Doom* by _Fabian Greffrath_ that increases resolution and removes the hard engine limits in the original game.
+*Crispy-Doom*		A *source-port* based on *Chocolate-Doom* by <Fabian Greffrath> that increases resolution and removes the hard engine limits in the original game.
 
 :* D *
 :-------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *DOOM-Clone			The term "First Person Shooter" didn't exist at the launch of DOOM in 1993 because DOOM is what popularised the genre in the first place. For a long time FPSes were called "DOOM-clones". It's only with the advent of story-driven narratives (e.g. Half Life) that the term FPS took hold.
 
-*DOOM Retro			A *source port* by _Brad Harding_ that retains the old-school look but greatly polishes and modernises the experience. Includes support for *Boom* and *MBF*/*MBF21*
+*DOOM Retro			A *source port* by <Brad Harding> that retains the old-school look but greatly polishes and modernises the experience. Includes support for *Boom* and *MBF*/*MBF21*
 
 :* E *
 :-------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *GLBoom+			The hardware-accelerated OpenGL version of *PRBoom+*.
 
-*GZDoom				A modern *source port* with many additional capabilities including 3D floors, 3D models and enhanced OpenGL graphics. Created and maintained by _Graf Zahl_. See also *ZDoom*.
+*GZDoom				A modern *source port* with many additional capabilities including 3D floors, 3D models and enhanced OpenGL graphics. Created and maintained by <Graf Zahl>. See also *ZDoom*.
 
 :* H *
 :-------------------------------------------------------------------------------
@@ -149,7 +149,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 :* T *
 :-------------------------------------------------------------------------------
 
-*TeamTNT			A team of mappers founded by _Ty Halderman_. TeamTNT created *TNT: Evilution* and *The Plutonia Experiment*, the *megawads* that made up *Final DOOM*. Also responsible for the highly influential *"boom"* *source-port*.
+*TeamTNT			A team of mappers founded by <Ty Halderman>. TeamTNT created *TNT: Evilution* and *The Plutonia Experiment*, the *megawads* that made up *Final DOOM*. Also responsible for the highly influential *"boom"* *source-port*.
 
 *Terrywad*			Troll *WADs* designed to annoy or otherwise harass players, usually consisting of jump-scares and sometimes even ZIP-bombs. Tangentially related to *Joke WADs*.
 
@@ -186,6 +186,6 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *Zandronum			A strongly multi-player focused *source port*, based on an older version of *GZDoom*.
 
-*ZDoom				A software-rendering *source port* with numerous additional enhancements. Written by _Randy Heit_, _Graf Zahl_ & _Braden Obrzut (Blzut3)_. It was discontinued in 2017. *GZDoom* is based on ZDoom and its software-renderer is an exact replica of ZDoom.
+*ZDoom				A software-rendering *source port* with numerous additional enhancements. Written by <Randy Heit>, <Graf Zahl> & <Braden Obrzut (Blzut3)>. It was discontinued in 2017. *GZDoom* is based on ZDoom and its software-renderer is an exact replica of ZDoom.
 
 *ZScript			Recent low-level scripting language in *GZDoom* designed to enhance and replace many numerous historical scripting systems in use including *ACS*, *DeHackEd* & *DECORATE*.

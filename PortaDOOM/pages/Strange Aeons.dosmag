@@ -8,7 +8,7 @@ $KEY:W=URL:https://mikestoybox.net/2017/01/04/strange-aeons/
 :===============================================================================
 *[P] Play						 *[T] .txt [I] Info (.pdf) [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>05>10?  Author : _Impie_
+:Released : *2016>05>10?  Author : <Impie>
 :Levels   : *45			   Modes : *Single
 :Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -27,17 +27,17 @@ See the included [I: info .pdf] for story and further instructions.
 
 :Credits
 :-------------------------------------------------------------------------------
-- Map Design & Story: _Impie_
+- Map Design & Story: <Impie>
 - Textures and Sounds: `Chasm: The Rift`
-- Texture Ripper: _zrrion the insect_
-- Additional Assets: _zrrion the insect_, _JoeyTD_, _WildWeasel_, _Captain Ventris_, _Ghastly Dragon_, _Eriance_, _Blue Shadow_, _MagicWazard_, _Tormentor667_, _Virtue_, _Dr. Doctor_, _Vader_, _Gez_, _Melvin_, _Xaser_, _Icytux_, _Xim_, _Psyren_, _Captain Toenail_, _François-Xavier Delmotte_
+- Texture Ripper: <zrrion the insect>
+- Additional Assets: <zrrion the insect>, <JoeyTD>, <WildWeasel>, <Captain Ventris>, <Ghastly Dragon>, <Eriance>, <Blue Shadow>, <MagicWazard>, <Tormentor667>, <Virtue>, <Dr. Doctor>, <Vader>, <Gez>, <Melvin>, <Xaser>, <Icytux>, <Xim>, <Psyren>, <Captain Toenail>, <François-Xavier Delmotte>
 - Music: `Chasm: The Rift`, `SystemShock2`, `Death Mask`, `F.E.A.R`
-- Intermission Art: _Michael Whelan_, _David Demaret_, _Lee Edwards_
+- Intermission Art: <Michael Whelan>, <David Demaret>, <Lee Edwards>
 
 *Special Thanks:
 
-- _Scifista_ for answering my incessant questions
-- Doomworld for keeping Doom alive
-- Realm667 for the awesome stuff
-- _kmxexii_, _Skepticist_, and _SuitePee_ for playtesting
-- _Ed the Bat_ forcompiling the pk3 with filters
+- <Scifista> for answering my incessant questions
+- <Doomworld> for keeping `Doom` alive
+- <Realm667> for the awesome stuff
+- <kmxexii>, <Skepticist>, and <SuitePee> for playtesting
+- <Ed the Bat> forcompiling the pk3 with filters

@@ -8,7 +8,7 @@ $KEY:H=URL:https://forum.zdoom.org/viewtopic.php?f=37&t=37763
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2017>01>23	  Author : _Kontra Kommando_
+:Released : *2017>01>23	  Author : <Kontra Kommando>
 :Levels   : *11			   Modes : *Single
 :Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -30,136 +30,136 @@ This modification was made for free, and will never be monetized by the contribu
 Original concept of Xenomorph by H.R.Giger
 
 *ALIENS: THE ULTIMATE DOOM
-*AUTHOR: _KONTRA KOMMANDO_
+*AUTHOR: <KONTRA KOMMANDO>
 *2014-2017
 
-- Item replacements by _Kontra Kommando_
-- Clutter, and lighting items by _Kontra Kommando_
-- Battle-spawners, and immersive map generator by _Kontra Kommando_
+- Item replacements by <Kontra Kommando>
+- Clutter, and lighting items by <Kontra Kommando>
+- Battle-spawners, and immersive map generator by <Kontra Kommando>
 
-- Gore Decorate: _Kontra Kommando_ and _Sergeant_Mark_IV_
-- Gib sprites by _Kontra Kommando_
-- Blood sprites by _Kontra Kommando_ and _Sergeant_Mark_IV_
+- Gore Decorate: <Kontra Kommando> and <Sergeant_Mark_IV>
+- Gib sprites by <Kontra Kommando>
+- Blood sprites by <Kontra Kommando> and <Sergeant_Mark_IV>
 
 - Software used: Photoshop 2015, Gimp 2, XWE, Slade, Doombuilder 2, MSPaint
 
 - Bounce Sound from clutter objects taken from Battle Grounds
-- This mod utilized the Dark Doom lighting mod, by _SidDoyle_
-- The beam flashlight method is the same used by _The Zombie Killer_ and can be found [H: here]
-- Motion tracker original codes by _Doomero21_.\\Modified version by _Endless123_ and _jdredalert_
-- Special thanks to _Endless123_ & _Valherran_
+- This mod utilized the Dark Doom lighting mod, by <SidDoyle>
+- The beam flashlight method is the same used by <The Zombie Killer> and can be found [H: here]
+- Motion tracker original codes by <Doomero21>.\\Modified version by <Endless123> and <jdredalert>
+- Special thanks to <Endless123> & <Valherran>
 
-- Aliens (TC) by _Justin Fisher_ 1994
+- Aliens (TC) by <Justin Fisher> 1994
 
 :Enemies
 
 *Xenomorph Warrior:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_, _Sergeant_Mark_IV_, _jdredalert_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>, <Sergeant_Mark_IV>, <jdredalert>
 
 *Xenomorph Drone:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_, _Sergeant_Mark_IV_, _jdredalert_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>, <Sergeant_Mark_IV>, <jdredalert>
 
 *Xenomorph Runner:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_, _Sergeant_Mark_IV_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>, <Sergeant_Mark_IV>
 
 *Xenomorph Queen:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_, _Sergeant_Mark_IV_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>, <Sergeant_Mark_IV>
 
 *Facehugger & Egg:
-- Sprites: _Justin Fisher_
-- Decorate: _Kontra Kommando_, _Sergeant_Mark_IV_
+- Sprites: <Justin Fisher>
+- Decorate: <Kontra Kommando>, <Sergeant_Mark_IV>
 
 *Colonial Marines:
-- Sprites: _Kontra Kommando_, _Sergeant_Mark_IV_
-- Decorate: _Kontra Kommando_, _jdredalert_, _Sergeant_Mark_IV_
+- Sprites: <Kontra Kommando>, <Sergeant_Mark_IV>
+- Decorate: <Kontra Kommando>, <jdredalert>, <Sergeant_Mark_IV>
 
 *Predator:
-- Sprites: _NeoWorm_
-- Decorate: _Sergeant_Mark_IV_, _jdredalert_, _Endless123_, _Kontra Kommando_
+- Sprites: <NeoWorm>
+- Decorate: <Sergeant_Mark_IV>, <jdredalert>, <Endless123>, <Kontra Kommando>
 
 *Combat Synthetic:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_, _jdredalert_, _Sergeant_Mark_IV_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>, <jdredalert>, <Sergeant_Mark_IV>
 
 :Weapons
 
-- Original weapon sprites ripped by _Sergeant_Mark_IV_ from Aliens Online (Kesmai Studios), except the M4A3 Pistol
-- Explosions and Pulse Grenades by _Sergeant_Mark_IV_
-- All Hands by _Mike12_
+- Original weapon sprites ripped by <Sergeant_Mark_IV> from Aliens Online (Kesmai Studios), except the M4A3 Pistol
+- Explosions and Pulse Grenades by <Sergeant_Mark_IV>
+- All Hands by <Mike12>
 
 *Shotgun:
-- Decorate: _jdredalert_
-- Sprites: _zirius1994_
-- Sound: _jdredalert_
+- Decorate: <jdredalert>
+- Sprites: <zirius1994>
+- Sound: <jdredalert>
 
 *Smartgun:
-- Decorate: _jdredalert_, _Sergeant_Mark_IV_
-- Sprite Edit: _Sergeant_Mark_IV_, _Kontra Kommando_, _jdredalert_
-- Sound: _jdredalert_
+- Decorate: <jdredalert>, <Sergeant_Mark_IV>
+- Sprite Edit: <Sergeant_Mark_IV>, <Kontra Kommando>, <jdredalert>
+- Sound: <jdredalert>
 
 *M4A3 Pistol:
-- Decorate: _jdredalert_
-- Sprites: _jdredalert_ (sprite edit), _Mike12_, 3DRealms
-- Sound: _jdredalert_
+- Decorate: <jdredalert>
+- Sprites: <jdredalert> (sprite edit), <Mike12>, 3DRealms
+- Sound: <jdredalert>
 
 *HK VP-70 Pistol:
-- Decorate: _jdredalert_
-- Sprites: _jdredalert_ (sprite edit), _Mike12_, Gearbox Software
-- Sound: _jdredalert_
+- Decorate: <jdredalert>
+- Sprites: <jdredalert> (sprite edit), <Mike12>, Gearbox Software
+- Sound: <jdredalert>
 
 *.50 AE Pistol:
-- Decorate: _jdredalert_
-- Sprites _Des_Kotes_, _Uboa_ (muzzle flash)
+- Decorate: <jdredalert>
+- Sprites <Des_Kotes>, <Uboa> (muzzle flash)
 - Sound: Infinity Ward
 
 *Tactical Pulse Rifle:
-- Decorate: _jdredalert_
-- Sprites: _jdredalert_
-- Sound: _jdredalert_
+- Decorate: <jdredalert>
+- Sprites: <jdredalert>
+- Sound: <jdredalert>
 
 *M240 Flamethrower:
-- Decorate: _Alexander_, _Xim_, _jdredalert_
-- Sprite Edit: _Paul_, _Kontra Kommando_, _jdredalert_
-- Sounds: Raven Software, _jdredalert_
+- Decorate: <Alexander>, <Xim>, <jdredalert>
+- Sprite Edit: <Paul>, <Kontra Kommando>, <jdredalert>
+- Sounds: Raven Software, <jdredalert>
 
 *Pulse Rifle:
-- Decorate: _jdredalert_, _Kontra Kommando_
-- Sprite Edit: _Kontra Kommando_, _jdredalert_
-- Sound: _jdredalert_
+- Decorate: <jdredalert>, <Kontra Kommando>
+- Sprite Edit: <Kontra Kommando>, <jdredalert>
+- Sound: <jdredalert>
 
 *Minigun:
-- Decorate: _jdredalert_
+- Decorate: <jdredalert>
 - Sprites: Doom 2.5 Team, Hellstorm Archon
-- Sounds: id Software, _jdredalert_
+- Sounds: id Software, <jdredalert>
 
 *M41A/2 Pulse Rifle:
-- Decorate: _jdredalert_
-- Sprite Edit: _jdredalert_
-- Sound: _jdredalert_
+- Decorate: <jdredalert>
+- Sprite Edit: <jdredalert>
+- Sound: <jdredalert>
 
 :Items
 
-- Custom HUD & Doomguy Face by _Kontra Kommando_
-- Pickup sprites and hud icons by _HellcatX_, _jdredalert_, _Kontra Kommando_, _Sergeant_Mark_IV_
-- Weapon Box and Ripley's Pulse Rifle boxes sprites by _Bloody Acid_
+- Custom HUD & Doomguy Face by <Kontra Kommando>
+- Pickup sprites and hud icons by <HellcatX>, <jdredalert>, <Kontra Kommando>, <Sergeant_Mark_IV>
+- Weapon Box and Ripley's Pulse Rifle boxes sprites by <Bloody Acid>
 
 *Flares:
-- Decorate: _scalliano_, _Kontra Kommando_
-- Sprites: _Kontra Kommando_
+- Decorate: <scalliano>, <Kontra Kommando>
+- Sprites: <Kontra Kommando>
 - Sounds: Raven Software
 
 *Ape Suit Armor:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>
 
 *Colonial Marine Armour:
-- Sprites: _Kontra Kommando_
-- Decorate: _Kontra Kommando_
+- Sprites: <Kontra Kommando>
+- Decorate: <Kontra Kommando>
 
 
-- Particles and projectiles by _Sergeant_Mark_IV_
-- Auto Turret sprites by _MarlboroMike2100_
+- Particles and projectiles by <Sergeant_Mark_IV>
+- Auto Turret sprites by <MarlboroMike2100>

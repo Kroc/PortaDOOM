@@ -26,22 +26,22 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/3hafina
 
 :Credits
 :-------------------------------------------------------------------------------
-_JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Franckfrag_, _Subject_119_, _Oxyde_
+<JC>, <Zyklonb>, <Darkwave0000>, <Necrotikflesh>, <Impulse>, <[WH]-Wilou84>, <Franckfrag>, <Subject_119>, <Oxyde>
 
 :Map List
 :===============================================================================
 *MAP01				: Upsilon-Synth
-*Author(s)			: _William Huber_ ( _[WH]-Wilou84_ )
+*Author(s)			: <William Huber> ( <[WH]-Wilou84> )
 *Build time			: 5 hours
-*Editor(s) used		: Doom Builder 1.68, Adobe Photoshop CS 5.5, XWE 1.16
-*Music track		: "Hiding the Secrets " by _Bobby Prince_ ( Doom E1M8 )
+*Editor(s) used		: *Doom Builder* 1.68, *Adobe Photoshop CS* 5.5, *XWE* 1.16
+*Music track		: "Hiding the Secrets" by <Bobby Prince> ( `Doom E1M8` )
 *Bugs 				: Hopefully none
 *Inspiration		: Nothing in particular... The visual theme may evoke Suspended in Dusk, I guess
 *Author comments	: My second offering for this project. Upsilon-Synth is a short, brutal map made with The Ultimate Doom in mind. It should provide a solid warm-up for the megawad.
-*Additional credits	: _Adelusion_, _Afterglow_ & The GothicTX team. _Cage_, _Eriance_, _Espi_, _Esselfortium_ (Written permission has been obtained from _esselfortium_ to use his textures. However, please note that you MAY NOT use these textures in your own projects), _Nick Baker_, _Nihilism Unlimited_, _Speedy_ ( CR8 texture pack )
+*Additional credits	: <Adelusion>, <Afterglow> & The GothicTX team. <Cage>, <Eriance>, <Espi>, <Esselfortium> (Written permission has been obtained from <esselfortium> to use his textures. However, please note that you MAY NOT use these textures in your own projects), <Nick Baker>, <Nihilism Unlimited>, <Speedy> ( CR8 texture pack )
 :-------------------------------------------------------------------------------
 *MAP02				: Unité de Traitement
-*Author(s)			: _Riad ''ZyklonB'' Cherigui_
+*Author(s)			: <Riad "ZyklonB" Cherigui>
 *Build time			: Less than 2 Hours
 *Editor(s) used		: Doom builder 1.68
 *Music track		: Doom II Map02...
@@ -50,7 +50,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: A Square polygon with a square shape as a main hall and some corridors -- A very simple map overall, but remmember to not step on those good old slime pits, you might not get out off 'em! Still, this map is pretty easy...
 :-------------------------------------------------------------------------------
 *MAP03				: Cubicombe
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 1 hour
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -59,13 +59,13 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Very little map, which ended in a few seconds Smile Adapted for the duel.
 :-------------------------------------------------------------------------------
 *MAP04				: Petite Mort
-*Author(s)			: _Christophe "Necrotikflesh" Calamoneri_
+*Author(s)			: <Christophe "Necrotikflesh" Calamoneri>
 *Build time			: 2h45
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: d_e2m6
 :-------------------------------------------------------------------------------
 *MAP05				: Experience Interdite
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: DOOM2 Map05
@@ -74,7 +74,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: gl :)
 :-------------------------------------------------------------------------------
 *MAP06				: Embuscades
-*Author(s)			: _Gwenvael Le Bihan_ (_subject_119_)
+*Author(s)			: <Gwenvael Le Bihan> (<subject_119>)
 *Build time			: between 3 and 4 hours
 *Editor(s) used		: Doom builder 2.1.1.1466
 *Music track		: Doom II map18
@@ -83,7 +83,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: my map is short and easy, but i hope you'll like it
 :-------------------------------------------------------------------------------
 *MAP07				: Chambre des supplices
-*Author(s)			: _Riad ''ZyklonB'' Cherigui_
+*Author(s)			: <Riad "ZyklonB" Cherigui>
 *Build time			: 2 Hours and Half
 *Editor(s) used		: Doom builder 1.68
 *Music track		: MIDI version of the Amiga game "Shadow of the Beast" Cavern's theme
@@ -92,7 +92,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: What's more annoying than a corridor full of shotgunner? A cross-shaped corridor full off shotgunner AND Mancubus! Just don't let them burn your brand new kevlar pants if you want to get out off here in one bit. The best map I've made for this Megawad IMO.
 :-------------------------------------------------------------------------------
 *MAP08				: Canyon
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Unused Doom music (un19)
@@ -100,7 +100,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP09				: Zone85
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: DOOM2 Map09
@@ -109,7 +109,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Be ingenious :)
 :-------------------------------------------------------------------------------
 *MAP10				: Surchauffe
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Hr2's Map19
@@ -117,7 +117,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP11				: Obscurite
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Brit10 Map03
@@ -126,7 +126,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: If you like Pown imp with RL ! Enjoy :)
 :-------------------------------------------------------------------------------
 *MAP12				: Fourbe
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 2 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -135,7 +135,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Hard for the beginning, it is necessary to negotiate the traps. Adapted for the duel.
 :-------------------------------------------------------------------------------
 *MAP13				: Le Souterrain
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Unused Doom music (un20)
@@ -143,7 +143,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: zdctfmp map15
 :-------------------------------------------------------------------------------
 *MAP14				: L'Arene de la Douleur -
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: HR2
@@ -152,7 +152,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: I think its a nice challenge for Novice to survive on this
 :-------------------------------------------------------------------------------
 *MAP15				: Secteur Delta
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Unused Doom music (un51)
@@ -160,7 +160,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP16				: Metalocauste
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 2 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -169,13 +169,13 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Map rather fun, possibility to take two differents roads, warning for crushers !! Adapted for the duel.
 :-------------------------------------------------------------------------------
 *MAP17				: Place Abandonnée
-*Author(s)			: _Christophe "Necrotikflesh" Calamoneri_
+*Author(s)			: <Christophe "Necrotikflesh" Calamoneri>
 *Build time			: 3h20
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: dmap10
 :-------------------------------------------------------------------------------
 *MAP18				: Stupide Dilemme
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -184,7 +184,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: My first map for 3ha, slightly awkward in her conception. Adapted for the duel.
 :-------------------------------------------------------------------------------
 *MAP19				: Terrible Technologies
-*Author(s)			: _Arnaud "Oxyde" Florian_
+*Author(s)			: <Arnaud "Oxyde" Florian>
 *Build time			: 9 hours
 *Editor(s) used		: Doom Builder 1.68 & XWE
 *Music track		: zdctfmp map27 - Exophase III
@@ -194,7 +194,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Additional credits	: zdectf team ( textures )
 :-------------------------------------------------------------------------------
 *MAP20				: Archeologie
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Unused Doom music (un42)
@@ -202,7 +202,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP21				: On t'as eu !
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_) (its an abandon map created by _MC Arm_ for the Deathmatch's Wad: ''Rage07.wad'' i added Things, monsters , End's Sectors and Archviles's Sectors).
+*Author(s)			: <Maxime Bisiaux> (<Datacore>) (its an abandon map created by <MC Arm> for the Deathmatch's Wad: ''Rage07.wad'' i added Things, monsters , End's Sectors and Archviles's Sectors).
 *Build time			: 1 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: DOOM2 Map30.
@@ -211,7 +211,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Adapted for the deathmatch.
 :-------------------------------------------------------------------------------
 *MAP22				: Désastre
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 2 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -220,13 +220,13 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Map of simple conception. adapted for 1-on-1 duels.
 :-------------------------------------------------------------------------------
 *MAP23				: Après Les Restes
-*Author(s)			: _Christophe "Necrotikflesh" Calamoneri_
+*Author(s)			: <Christophe "Necrotikflesh" Calamoneri>
 *Build time			: 2h50
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: dmap07
 :-------------------------------------------------------------------------------
 *MAP24				: Ruin-Tech
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: Duke nukem 3D - Plasma 
@@ -234,7 +234,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP25				: Le "Q"
-*Author(s)			: _franckFRAG_
+*Author(s)			: <franckFRAG>
 *Build time			: 2 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Requiem's music.
@@ -243,7 +243,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Map of simple conception. Adapted for the duel.
 :-------------------------------------------------------------------------------
 *MAP26				: Le Village Maudit
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 2 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: rjumpq.wad Map08
@@ -252,17 +252,17 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: My First Hellish maps for 3HA.
 :-------------------------------------------------------------------------------
 *MAP27				: Sang Innocent
-*Author(s)			: _William Huber_ ( _[WH]-Wilou84_ )
+*Author(s)			: <William Huber> ( <[WH]-Wilou84> )
 *Build time			: 4, maybe 5 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
-*Music track		: "Dance of Death" by _Sam Woodman_ ( Hell Revealed II Map06 )
+*Music track		: "Dance of Death" by <Sam Woodman> ( Hell Revealed II Map06 )
 *Bugs				: Hopefully none
 *Inspiration		: Hell Revealed II, Quake
 *Author comments	: A tight arena with a few deadly traps. This level was made a few days after Quake's 12th birthday, so I had to pay a tribute of some sort.
-*Additional credits	: _Adelusion_, _Afterglow_ & The GothicTX team. _Cage_, _Eriance_, _Espi_, _Esselfortium_ (Written permission has been obtained from _esselfortium_ to use his textures. However, please note that you MAY NOT use these textures in your own projects), _Nick Baker_, _Nihilism Unlimited_, _Speedy_ ( CR8 texture pack )
+*Additional credits	: <Adelusion>, <Afterglow> & The GothicTX team. <Cage>, <Eriance>, <Espi>, <Esselfortium> (Written permission has been obtained from <esselfortium> to use his textures. However, please note that you MAY NOT use these textures in your own projects), <Nick Baker>, <Nihilism Unlimited>, <Speedy> ( CR8 texture pack )
 :-------------------------------------------------------------------------------
 *MAP28				: Impulsion
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3,5 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: DOOM E1M8
@@ -271,16 +271,16 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Can you do a UV MAX There ? :D
 :-------------------------------------------------------------------------------
 *MAP29				: Dernier Voeu
-*Author(s)			: _Darkwave0000_
+*Author(s)			: <Darkwave0000>
 *Build time			: 7 hours
 *Editor(s) used 	: Doom Builder 2
 *Music track		: From Tides 2
 *Bugs				: Visspite overflow and possible seg and visplane overflows.
 *Inspiration		: No specific inspiration.
-*Author comments	: This is a large map with many enemies. Hopefully it is enjoyable. ^^_^^
+*Author comments	: This is a large map with many enemies. Hopefully it is enjoyable n_n
 :-------------------------------------------------------------------------------
 *MAP30				: Quarante-deux
-*Author(s)			: _JC_
+*Author(s)			: <JC>
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68, XWE 1.16
 *Music track		: Doom Endgame Music
@@ -288,7 +288,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Inspiration		: New from scratch
 :-------------------------------------------------------------------------------
 *MAP31				: Casemate
-*Author(s)			: _Riad ''ZyklonB'' Cherigui_
+*Author(s)			: <Riad "ZyklonB" Cherigui>
 *Build time			: 3 Hours
 *Editor(s) used		: Doom builder 1.68
 *Music track		: MIDI version of the Amiga game "Alien Breed: Tower Assault" Title screen music
@@ -297,7 +297,7 @@ _JC_, _Zyklonb_, _Darkwave0000_, _Necrotikflesh_, _Impulse_, _[WH]-Wilou84_, _Fr
 *Author comments	: Welcome to my lair! Be my guest! Another day, another cry. But remmember -- Shoot or DIE!!! ? Just try your best to avoid the showers, they smell a bit... :P
 :-------------------------------------------------------------------------------
 *MAP32				: Ta Mitralleuse
-*Author(s)			: _Maxime Bisiaux_ (_Datacore_)
+*Author(s)			: <Maxime Bisiaux> (<Datacore>)
 *Build time			: 3 hours
 *Editor(s) used		: Doom Builder 1.68
 *Music track		: rjumpq.wad map 01

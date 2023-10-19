@@ -8,7 +8,7 @@ $KEY:W=URL:http://boa.realm667.com/
 :===============================================================================
 								 *[W] Website
 :-------------------------------------------------------------------------------
-:Released : *2016>05>20	  Author : _Daniel "Tormentor667" Gimmer_ et al
+:Released : *2016>05>20	  Author : <Daniel "Tormentor667" Gimmer> et al
 :Levels   : *20			   Modes : *Single, Co-op
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -26,8 +26,8 @@ You are Cpt. William "B.J." Blazkowicz, an Allied spy, a fearless risk-taker, an
 :Construction
 :-------------------------------------------------------------------------------
 *Base				: From scratch
-					  Inspired by `WolfenDoom` from _Laz Rojas_
-					  Gameplay vaguely based on `Nazis` by _Wildweasel_
+					  Inspired by `WolfenDoom` from <Laz Rojas>
+					  Gameplay vaguely based on `Nazis` by <Wildweasel>
 
 *Build Time			: 12th of January 2015 to 13th of November 2016 (Chapter 1)
 					  13th of November 2016 to 20th of May 2017 (Chapter 2)
@@ -38,11 +38,11 @@ You are Cpt. William "B.J." Blazkowicz, an Allied spy, a fearless risk-taker, an
 
 *Special Thanks:
 
-- _Laz Rojas_ for `WolfenDoom`
+- <Laz Rojas> for `WolfenDoom`
 
-- _Graf Zahl_ for GZDoom
-- _randy_ for ZDoom
-- _MaxED_ for GZDoom Builder
-- _Gez_ for Slade
+- <Graf Zahl> for GZDoom
+- <randy> for ZDoom
+- <MaxED> for GZDoom Builder
+- <Gez> for Slade
 
-- _id software_ for `Doom` and `Wolfenstein 3D`
+- <id software> for `Doom` and `Wolfenstein 3D`

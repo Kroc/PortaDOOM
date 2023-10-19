@@ -8,7 +8,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum2
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1998>08>15	  Author : _Ola Björling_
+:Released : *1998>08>15	  Author : <Ola Björling>
 :Levels   : *1			   Modes : *Single
 :Requires : *vanilla	Includes : *None
 :-------------------------------------------------------------------------------
@@ -34,26 +34,26 @@ There's no silly plot, just kill stuff.
 						  For the new version I used `EdMap` 1.40, `EdMap` 1.31, 
 						  `WinDEU` 5.24 and `BSP` 2.4 beta.
 
-						  _Jim Flynn_ applied some magic with `DETH` 3.92.
+						  <Jim Flynn> applied some magic with `DETH` 3.92.
 
 *Known Bugs				: Pffft, silly.
 
 :Credits
 :-------------------------------------------------------------------------------
-- _Jeff Rabenhorst_ for the brilliant `EdMap`
+- <Jeff Rabenhorst> for the brilliant `EdMap`
 
-- _Kurt Kessler_ for a LOT of inspiration
+- <Kurt Kessler> for a LOT of inspiration
 
-- _Nick Baker_, _Scott Cover_, and _Mike Reid_ for testing. _Eric James Roberts_ and _Mike Watson_ for pointing out small flaws
+- <Nick Baker>, <Scott Cover>, and <Mike Reid> for testing. <Eric James Roberts> and <Mike Watson> for pointing out small flaws
 
-- _id_ for making YEAHYEAHYEAH you know what I was going to write
+- <id> for making YEAHYEAHYEAH you know what I was going to write
 
-- _Lee Killough_ for teaching me a lot about VPOs and slime-trails. Also thanks for letting me use `BSP` 2.4 beta
+- <Lee Killough> for teaching me a lot about VPOs and slime-trails. Also thanks for letting me use `BSP` 2.4 beta
 
-- _Jim Flynn_ for VERY essential help when `EdMap` was acting strange and screwing up my level. The level might not have been released if it wasn't for him
+- <Jim Flynn> for VERY essential help when *EdMap* was acting strange and screwing up my level. The level might not have been released if it wasn't for him
 
-- _Julia_
+- <Julia>
 
 Pointless greetings to (in total lack of order):
 
-_Tom "Mystican" Robinson_, _Mike "Cyberdemon" Watson_, _Nick "NiGHTMARE" Baker_, _Jonas "Chrozoron" Feragen_, _Gaston "Mordeth" Lahaut_, _Eric James "Ricrob" Roberts_, _Malcolm Sailor_, _Scott "Covaro" Cover_, _Andrew "Linguica" Stine_, _Mike "Prower" Reid_ and all those other oddballs hanging in EFnet #DOOM2. You're all guilty for making my phonebills so darn big. I'll make you pay.
+<Tom "Mystican" Robinson>, <Mike "Cyberdemon" Watson>, <Nick "NiGHTMARE" Baker>, <Jonas "Chrozoron" Feragen>, <Gaston "Mordeth" Lahaut>, <Eric James "Ricrob" Roberts>, <Malcolm Sailor>, <Scott "Covaro" Cover>, <Andrew "Linguica" Stine>, <Mike "Prower" Reid> and all those other oddballs hanging in EFnet #DOOM2. You're all guilty for making my phonebills so darn big. I'll make you pay.

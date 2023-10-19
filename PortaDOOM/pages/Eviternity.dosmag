@@ -8,18 +8,18 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/evitern
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website [I] idGames
 :-------------------------------------------------------------------------------
-:Released : *2019>02>10	  Author : _Dragonfly_ et al
+:Released : *2019>02>10	  Author : <Dragonfly> et al
 :Levels   : *32			   Modes : *Single, Co-op
 :Requires : *boom		Includes : *+Music +Sounds +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-`Eviternity` is a megawad comprised of six 5-map episodes (called Chapters) plus two secret maps. This project exclusively uses OTEX, a brand new high quality texture pack by _ukiro_.
+`Eviternity` is a megawad comprised of six 5-map episodes (called Chapters) plus two secret maps. This project exclusively uses `OTEX`, a brand new high quality texture pack by <ukiro>.
 
 `Eviternity`'s six chapters explore a series of unique and varied themes, each featuring classic gameplay with an interest in making each map hold its own unique identity and personality. The themes are "Medieval", "Techbase", "Icy Castles", "Industrial / Brutalism", "Hell / Gore / Alien" and "Heaven".
 
 This project was created as a birthday gift to `Doom`, which is celebrating its 25th birthday the day this was first released ("RC1"), Released on December 10th, 2018. The texture pack used in this project, OTEX, was also released on the same day - so please do not use `Eviternity` as a base for your wads & mods.
 
-While mostly being a "_Dragonfly_ project", with 24 maps being made or heavily worked on by myself, I present to you a mighty lineup of well-known guest mappers who have crafted beautiful and fun levels.
+While mostly being a "<Dragonfly> project", with 24 maps being made or heavily worked on by myself, I present to you a mighty lineup of well-known guest mappers who have crafted beautiful and fun levels.
 
 This version includes a large amount of bug fixes and tweaks compared to the original Release Candidate 1.
 
@@ -40,191 +40,191 @@ I hope you enjoy `Eviternity`, thanks for downloading & playing!
 :-------------------------------------------------------------------------------
 Those who mapped for Eviternity are as follows:
 
-*MAP04, MAP09:			_James "Jimmy" Paddock_
-						(MAP04 is a collaboration with _Dragonfly_)
+*MAP04, MAP09:			<James "Jimmy" Paddock>
+						(MAP04 is a collaboration with <Dragonfly>)
 
-*MAP10:					_Derek "Afterglow" MacDonald_
-						(A _Dragonfly_ map with a detail pass by _Afterglow_)
+*MAP10:					<Derek "Afterglow" MacDonald>
+						(A <Dragonfly> map with a detail pass by <Afterglow>)
 
-*MAP13, MAP18:			_James "an_mutt" Collins_
-						(MAP13 and MAP18 are collaborations with _Dragonfly_)
+*MAP13, MAP18:			<James "an_mutt" Collins>
+						(MAP13 and MAP18 are collaborations with <Dragonfly>)
 
-*MAP14:					_Seongbae "antares031" Park_
+*MAP14:					<Seongbae "antares031" Park>
 
-*MAP15:					_AtroNx_
+*MAP15:					<AtroNx>
 
-*MAP19:					_StormCatcher.77_
+*MAP19:					<StormCatcher.77>
 
-*MAP24:					_Brett "Mechadon" Harrell_
+*MAP24:					<Brett "Mechadon" Harrell>
 
-*MAP26:					_Xaser Acheron_
+*MAP26:					<Xaser Acheron>
 
-*MAP29:					_Tristan "Eris Falling" Clark_
-						(MAP29 is a collaboration with _Dragonfly_)
+*MAP29:					<Tristan "Eris Falling" Clark>
+						(MAP29 is a collaboration with <Dragonfly>)
 
-*MAP31:					_Paul "skillsaw" DeBruyne_
+*MAP31:					<Paul "skillsaw" DeBruyne>
 
-*MAP32:					_Ola "ukiro" Björling_
+*MAP32:					<Ola "ukiro" Björling>
 
-*All other maps: 		_Joshua "Dragonfly" O'Sullivan_
+*All other maps: 		<Joshua "Dragonfly" O'Sullivan>
 
 :Music Credits
 :-------------------------------------------------------------------------------
 In the music department we have some talented members of the community. Some music is bespoke, and others are previously made pieces music that suited the maps perfectly. The music credits are as follows:
 
-*MAP01:					"Midnight Call" - _Mark Klem_
+*MAP01:					"Midnight Call" - <Mark Klem>
 
-*MAP02: 				"Octarine" - _Jimmy_
+*MAP02: 				"Octarine" - <Jimmy>
 
-*MAP03:					"Fluid Motion" - _Jimmy_
+*MAP03:					"Fluid Motion" - <Jimmy>
 
-*MAP04: 				"Ancient Sovereigns" - _Jimmy_
+*MAP04: 				"Ancient Sovereigns" - <Jimmy>
 
-*MAP05:					"Sacred Light" - _Jimmy_
+*MAP05:					"Sacred Light" - <Jimmy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP06: 				"Digital Bitchslap" - _Alfonzo_
+*MAP06: 				"Digital Bitchslap" - <Alfonzo>
 
-*MAP07:					"Pistons" - _Jimmy_
+*MAP07:					"Pistons" - <Jimmy>
 
-*MAP08:					"Gutter Penny" - _Alfonzo_
+*MAP08:					"Gutter Penny" - <Alfonzo>
 
-*MAP09:					"Wheezer" - _Alfonzo_
+*MAP09:					"Wheezer" - <Alfonzo>
 
-*MAP10:					"Motion Machine" - _Jimmy_
+*MAP10:					"Motion Machine" - <Jimmy>
 
-*MAP11:					"ice.mid" - _Dial Up For Murder_
+*MAP11:					"ice.mid" - <Dial Up For Murder>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP12:					"Gemstones" - _Jimmy_
+*MAP12:					"Gemstones" - <Jimmy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP13:					"Polar Expedition" - _Stewboy_
+*MAP13:					"Polar Expedition" - <Stewboy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP14:					"Frozen Wilderness" - _Tristan "Eris Falling" Clark_
+*MAP14:					"Frozen Wilderness" - <Tristan "Eris Falling" Clark>
 
-*MAP15:					"Restless Restless" - _Stewboy_
+*MAP15:					"Restless Restless" - <Stewboy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP16:					"All Systems Agogo" - _Alfonzo_
+*MAP16:					"All Systems Agogo" - <Alfonzo>
 
-*MAP17:					"Rotted Roots" - _Jimmy_
+*MAP17:					"Rotted Roots" - <Jimmy>
 
-*MAP18:					"Impermanence" - _Brayden "AD_79" Hart_
+*MAP18:					"Impermanence" - <Brayden "AD_79" Hart>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP19:					"Brutal Schism" - _Jimmy_
+*MAP19:					"Brutal Schism" - <Jimmy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP20:					"Thanatos" - _Tristan "Eris Falling" Clark_
+*MAP20:					"Thanatos" - <Tristan "Eris Falling" Clark>
 
-*MAP21:					"Everything Explodes" - _Jimmy_
+*MAP21:					"Everything Explodes" - <Jimmy>
 						*MODIFIED FOR EVITERNITY*
 
-*MAP22:					"Waves of Intrigue" (v2) - _Kyle "Nabernizer" Dobson_
+*MAP22:					"Waves of Intrigue" (v2) - <Kyle "Nabernizer" Dobson>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP23:					"Pearlescent" - _Jimmy_
+*MAP23:					"Pearlescent" - <Jimmy>
 
-*MAP24:					"Ghostgrinder" - _Jimmy_
+*MAP24:					"Ghostgrinder" - <Jimmy>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP25:					"Slave" - _Jimmy_ - MIDI Rendition of a song by _Leprous_
+*MAP25:					"Slave" - <Jimmy> - MIDI Rendition of a song by <Leprous>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP26:					"Gonzu" - _Kniggit_
+*MAP26:					"Gonzu" - <Kniggit>
 
-*MAP27:					"Imaginarium" - _Stewboy_
+*MAP27:					"Imaginarium" - <Stewboy>
 
 *MAP28:					"Temporal Tower" - Pokémon Mystery Dungeon
 
-*MAP29:					"The Godhood Suite" (Full) - _Jimmy_
+*MAP29:					"The Godhood Suite" (Full) - <Jimmy>
 
-*MAP30:					"Eviternity" - _Tristan "Eris Falling" Clark_
+*MAP30:					"Eviternity" - <Tristan "Eris Falling" Clark>
 						*BESPOKE FOR EVITERNITY*
 
-*MAP31:					"Land of Able" - _Mark Klem_
+*MAP31:					"Land of Able" - <Mark Klem>
 
-*MAP32:					"Epitome XIV" - _Yash Bhandari_ - MIDI Rendition of a song by _Blut Aus Nord_ - Converted by _Scotty_
+*MAP32:					"Epitome XIV" - <Yash Bhandari> - MIDI Rendition of a song by <Blut Aus Nord> - Converted by <Scotty>
 						*CONVERTED FOR EVITERNITY*
 
 *Intermission /
-*End Game Screens:		"Death's Toll" - _Stewboy_
+*End Game Screens:		"Death's Toll" - <Stewboy>
 
-*Title Screen:			"Entering Eternity" - _Jimmy_
+*Title Screen:			"Entering Eternity" - <Jimmy>
 						*BESPOKE FOR EVITERNITY*
 
 :Asset Credits:
 :-------------------------------------------------------------------------------
 This project has had various assets made for it and/or borrowed from other works. Thanks to the extra support from the following people:
 
-_Cage_:
+<Cage>:
 - M_Doom & TITLEPIC graphics
 
-_ukiro_:
+<ukiro>:
 - Multiple requests for OTEX, Tree Sprites, Archangelus sound effect voice "acting", various sprite edits
 
-_CWolf_:
+<CWolf>:
 - Firestick replacements
 
-_FuzzballFox_:
+<FuzzballFox>:
 - Keycard Graphics
 
-_Bauul_ & _Jimmy_:
+<Bauul> & <Jimmy>:
 - General WAD management and double-checking
 
-_antares031_:
+<antares031>:
 - DeHackEd / DECORATE wizardry and management
 
-_Gutawer_ & _josh771_:
+<Gutawer> & <josh771>:
 - Snow scripts for Episode 3 in *GZDoom*
 
-_Kristus_:
+<Kristus>:
 - BOSSBACK picture
 
-_id Software_, _Raven Software_, `Wolfendoom`:
-- Cyber Baron Sprites - Sourced from the _Realm667_ Bestiary: "Cybruiser" - Edited by _Xaser_
+<id Software>, <Raven Software>, `Wolfendoom`:
+- Cyber Baron Sprites - Sourced from the <Realm667> Bestiary: "Cybruiser" - Edited by <Xaser>
 
-_id Software_, _Blizzard Entertainment_, _Vader_:
-- Terminator Sprites - Sourced from the _Realm667_ Bestiary: "Terminator" - Chaingun sourced from here for the above edits by _Xaser_
+<id Software>, <Blizzard Entertainment>, <Vader>:
+- Terminator Sprites - Sourced from the <Realm667> Bestiary: "Terminator" - Chaingun sourced from here for the above edits by <Xaser>
 
-_Raven Software_, _Antares031_:
+<Raven Software>, <Antares031>:
 - Arachnotron / Elite Chaingunner Bullet Sprites
 
-_SD EnterNET_ (edited by _Antares031_)
+<SD EnterNET> (edited by <Antares031>)
 - Arachnotron / Elite Chaingunner Bullet Sound
 
-_Amuscaria_ (Formerly _Eriance_):
-- Nightmare Demon Sprites & Sounds - Sourced from `Hellforged` - Edited by _Eris Falling_
+<Amuscaria> (Formerly <Eriance>):
+- Nightmare Demon Sprites & Sounds - Sourced from `Hellforged` - Edited by <Eris Falling>
 
-_Amuscaria_ (Formerly _Eriance_) & _Vader_
-- Astral Cacodemon Sprites - Sourced from the _Realm667_ Bestiary: "Poe"
+<Amuscaria> (Formerly <Eriance>) & <Vader>
+- Astral Cacodemon Sprites - Sourced from the <Realm667> Bestiary: "Poe"
 
-_Raven Software_ & _Midway_:
-- Astral Cacodemon Sounds - Sourced from the _Realm667_ Bestiary: "Poe"
+<Raven Software> & <Midway>:
+- Astral Cacodemon Sounds - Sourced from the <Realm667> Bestiary: "Poe"
 
-_Jimmy_:
+<Jimmy>:
 - The Font. Based on the font 'Voice In My Head' by Chequered Ink
 
-_Clay_:
+<Clay>:
 - Archangelus Sprites
 
-_Raven Software_:
+<Raven Software>:
 - Archangelus Sounds - Sourced from `Hexen`
 - Chandalier sprites
 
-_Bauul_
+<Bauul>
 - GLDEFS
 
-_Eric T_
+<Eric T>
 - Archangelus sound processing & mix
 
-_Cyano Blugron_ & _Bauul_
+<Cyano Blugron> & <Bauul>
 - Teleporter particle effects
 
-_Aquila Chrysaetos_
+<Aquila Chrysaetos>
 - Knows his way around a nodebuilder and probably killed 1000+ slime trails!
 
-Viewers of _Dragonfly_'s Stream:
+Viewers of <Dragonfly>'s Stream:
 - I thank you all for providing me seemingly unlimited motivation! <3

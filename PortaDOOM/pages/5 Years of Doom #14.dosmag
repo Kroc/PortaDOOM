@@ -5,110 +5,110 @@ $TITLE=Harry Teasley
 
 :-------------------------------------------------------------------------------
 
-_Harry Teasley_ is currently enjoying his stint at Valve Software, which has just shipped their first title, Half-Life. The game has received rave reviews and has been called the most involving and enthralling game since Doom's release five years ago. However, Half-Life was not _Harry_'s first involvement with a first-person shooter. Anyone who has played the PlayStation or Nintendo 64 versions of Doom has seen _Harry_'s handiwork -- working with Midway Home Entertainment, he helped create the smash-hit console versions of the game we all know and love.
+<Harry Teasley> is currently enjoying his stint at Valve Software, which has just shipped their first title, Half-Life. The game has received rave reviews and has been called the most involving and enthralling game since Doom's release five years ago. However, Half-Life was not <Harry>'s first involvement with a first-person shooter. Anyone who has played the PlayStation or Nintendo 64 versions of Doom has seen <Harry>'s handiwork -- working with Midway Home Entertainment, he helped create the smash-hit console versions of the game we all know and love.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	When was the first time you ever played Doom?
 
-_Harry		I guess it was soon after the shareware was released. _Sandy Petersen_ gave me a call and told be to try it out, that it was quite fun. I don't think he had any idea what sort of effect that call would have on my life.
+<Harry>		I guess it was soon after the shareware was released. <Sandy Petersen> gave me a call and told be to try it out, that it was quite fun. I don't think he had any idea what sort of effect that call would have on my life.
 
 			From his description, it sounded like Wolfenstein3D with new textures. I was mildly interested, but it didn't **sound** like a big deal. I installed it and was bowled over. I became obsessed with Doom for a long time.
 
-*Doomworld	**cough** _Sandy Petersen_ called you to recommend it? How were you affiliated with the id boys in the pre-Doom days?
+*Doomworld	**cough** <Sandy Petersen> called you to recommend it? How were you affiliated with the id boys in the pre-Doom days?
 
-_Harry		_Sandy_ and I worked together at MicroProse, before he went to id. We were bridge partners, and good friends (well, **were** bridge partners, **are** good friends.)
+<Harry>		<Sandy> and I worked together at MicroProse, before he went to id. We were bridge partners, and good friends (well, **were** bridge partners, **are** good friends.)
 
 *Doomworld	How did you get your job at Midway?
 
-_Harry		I left MicroProse in 1993 and decided to get a job in an area of the country that had year-round motorcycle weather. I interviewed at Leland Interactive Media (they've changed names twice now, changed ownership once), and got the job in San Diego.
+<Harry>		I left MicroProse in 1993 and decided to get a job in an area of the country that had year-round motorcycle weather. I interviewed at Leland Interactive Media (they've changed names twice now, changed ownership once), and got the job in San Diego.
 
 *Doomworld	How did you become involved in PSX Doom?
 
-_Harry		I happened to be working at Williams Entertainment (now Midway Home Entertainment) as an artist and designer, and our company made the deal to do some console ports of Doom. I was playing and editing Doom very heavily, and so it was natural that I get involved with these projects.
+<Harry>		I happened to be working at Williams Entertainment (now Midway Home Entertainment) as an artist and designer, and our company made the deal to do some console ports of Doom. I was playing and editing Doom very heavily, and so it was natural that I get involved with these projects.
 
 *Doomworld	How long was the development of PSX Doom?
 
-_Harry		Hmmm, just shy of a year, I think.
+<Harry>		Hmmm, just shy of a year, I think.
 
 *Doomworld	Was an entirely new engine coded, or was the Doom source code utilized?
 
-_Harry		Basically both, I think. The renderer was completely redone, and a lot of optimizations were made to get the game to run on the PSX console.
+<Harry>		Basically both, I think. The renderer was completely redone, and a lot of optimizations were made to get the game to run on the PSX console.
 
 *Doomworld	Who decided which levels would be included in the PSX port?
 
-_Harry		Mostly I did, with the help of the other designers. We went through all the published versions of Doom, and weeded out those maps that would not work under the constraints of the PlayStation. Given the CD format, we really wanted to include as much as we could, and ended up putting 59 maps into the final game.
+<Harry>		Mostly I did, with the help of the other designers. We went through all the published versions of Doom, and weeded out those maps that would not work under the constraints of the PlayStation. Given the CD format, we really wanted to include as much as we could, and ended up putting 59 maps into the final game.
 
 *Doomworld	How much had to be sacrificed in the PSX port in order to keep speed up?
 
-_Harry		Not much. Things are done very differently on the PlayStation as opposed to the PC, so there was a lot of work in converting things, and manipulating things, but not a lot of throwing away of things. Some areas in maps had to simplified, and some monsters had to be removed from certain areas, but on the whole, all "sacrifices" were made so as to minimize the impact on gameplay. Few things ended up being removed completely.
+<Harry>		Not much. Things are done very differently on the PlayStation as opposed to the PC, so there was a lot of work in converting things, and manipulating things, but not a lot of throwing away of things. Some areas in maps had to simplified, and some monsters had to be removed from certain areas, but on the whole, all "sacrifices" were made so as to minimize the impact on gameplay. Few things ended up being removed completely.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	I was always under the impression that the PSX Doom port used the virgin Doom graphics with no alterations. Am I wrong on this? What sort of graphical enhancements were added?
 
-_Harry		The graphics were reduced: the textures chopped down in size, the sprites, monsters, and weapons reduced in size. We added colored lighting and moodier music. Sometimes animations had frames cut. Making these changes such that no one really noticed was my job.
+<Harry>		The graphics were reduced: the textures chopped down in size, the sprites, monsters, and weapons reduced in size. We added colored lighting and moodier music. Sometimes animations had frames cut. Making these changes such that no one really noticed was my job.
 
 *Doomworld	So what exactly was your contribution to the PSX port?
 
-_Harry		I converted all the art, converted a couple dozen of the maps, and added a new map. _Tim_, _Danny_, and _Randy_ (the other designers) did the rest of the maps, and each added their own new map.
+<Harry>		I converted all the art, converted a couple dozen of the maps, and added a new map. <Tim>, <Danny>, and <Randy> (the other designers) did the rest of the maps, and each added their own new map.
 
 *Doomworld	How did you move from the PSX port to the N64 port? Were they done by the same company?
 
-_Harry		Yes, Williams did both versions (although I left Williams before the N64 version was finished.) We started the N64 conversion before the PSX one, actually, although production on the PSX took over precedence at some point in development. The N64 was a much more ambitious project, and involved a lot more work, while the PSX was out in the market and we wanted to be there quickly.
+<Harry>		Yes, Williams did both versions (although I left Williams before the N64 version was finished.) We started the N64 conversion before the PSX one, actually, although production on the PSX took over precedence at some point in development. The N64 was a much more ambitious project, and involved a lot more work, while the PSX was out in the market and we wanted to be there quickly.
 
 *Doomworld	Did working on the PSX port help you in creating the N64 port?
 
-_Harry		Yes, mostly in understanding the gameplay effects of decisions you can make. No decision on a game happens in isolation: every decision you make in, say, art affects game design, and affects how the programmer will write code, which will affect other decisions further down the line, etc. Some ambitious game design ideas didn't survive because of the experience we gained doing the PSX port.
+<Harry>		Yes, mostly in understanding the gameplay effects of decisions you can make. No decision on a game happens in isolation: every decision you make in, say, art affects game design, and affects how the programmer will write code, which will affect other decisions further down the line, etc. Some ambitious game design ideas didn't survive because of the experience we gained doing the PSX port.
 
 *Doomworld	What was the original Doom64 going to be like and how much that made it to the final product?
 
-_Harry		That's tough to say. The original intention was to take advantage of the power of the N64, being a much stronger platform than the original 386 that Doom ran on. We wanted to take Doom and give it a new look, but still make it recognizably Doom in appearance and feel. That was a pretty broad notion for the port, and arguably it is all reflected in the final product.
+<Harry>		That's tough to say. The original intention was to take advantage of the power of the N64, being a much stronger platform than the original 386 that Doom ran on. We wanted to take Doom and give it a new look, but still make it recognizably Doom in appearance and feel. That was a pretty broad notion for the port, and arguably it is all reflected in the final product.
 
 *Doomworld	What prompted the decision to create all-new artwork?
 
-_Harry		There were a lot of versions of Doom out there, and the N64 was a new console that really wanted to stand out as unique. We felt that we took and extended the artwork of the original Doom in the PSX version as far as it would go, and that to make the N64 version something truly new and exciting, we would need a new look.
+<Harry>		There were a lot of versions of Doom out there, and the N64 was a new console that really wanted to stand out as unique. We felt that we took and extended the artwork of the original Doom in the PSX version as far as it would go, and that to make the N64 version something truly new and exciting, we would need a new look.
 
 *Doomworld	Whose decision was it to make all new levels instead just reworking id's original levels for the new engine?
 
-_Harry		The team made that decision. We were going with new looks for the original monsters, and new textures, so new levels was the logical decision to make. We wanted to make a game that would appeal to folks who had never played Doom, as well as give Doom veterans something new to see and do.
+<Harry>		The team made that decision. We were going with new looks for the original monsters, and new textures, so new levels was the logical decision to make. We wanted to make a game that would appeal to folks who had never played Doom, as well as give Doom veterans something new to see and do.
 
 *Doomworld	How much guidance did you have from id Software while creating Doom64?
 
-_Harry		_Aaron_, the programmer, worked closely with _John Carmack_ to optimize the code for both the PSX and N64 platforms. For the designers and artists that worked on both projects, we made sure id approved of the changes we made.
+<Harry>		<Aaron>, the programmer, worked closely with <John Carmack> to optimize the code for both the PSX and N64 platforms. For the designers and artists that worked on both projects, we made sure id approved of the changes we made.
 
 :-------------------------------------------------------------------------------
 
 *Doomworld	As long as you were creating entirely new "looks" for the Doom monsters, why didn't you go the whole nine yards and make them polygons as well?
 
-_Harry		That would radically affected gameplay (like I said before, decisions don't happen in isolation.) One of the major gameplay differences between Doom and Quake, was, for me, large numbers of monsters vs smaller numbers of monsters. We wanted the Doom gameplay, which meant situations where you could be mowing down dozens and dozens of demons and lost souls with the plasma gun.... you can't get dozens and dozens of (good-looking) polygonal demons and lost souls on screen at once, with lots of plasma gun effects.
+<Harry>		That would radically affected gameplay (like I said before, decisions don't happen in isolation.) One of the major gameplay differences between Doom and Quake, was, for me, large numbers of monsters vs smaller numbers of monsters. We wanted the Doom gameplay, which meant situations where you could be mowing down dozens and dozens of demons and lost souls with the plasma gun.... you can't get dozens and dozens of (good-looking) polygonal demons and lost souls on screen at once, with lots of plasma gun effects.
 
 			At least, you couldn't at the time: it takes some time for coders to get familiar with a console, familiar enough to pull off really sophisticated tricks. The first generation of games on a platform are never as technically accomplished as subsequent generations, because it takes a lot of experience with the hardware to learn what it can do.
 
 *Doomworld	Was an entirely new engine used for Doom64 or was the Doom source code used?
 
-_Harry		Same setup as the PSX: much was new, much was culled from the original source and optimized specifically for the N64 hardware.
+<Harry>		Same setup as the PSX: much was new, much was culled from the original source and optimized specifically for the N64 hardware.
 
 *Doomworld	One level in particular that impressed me was the third level 'Engineering'. In it, there is a central room in which the blue key appears, then the red key, and finally a weapon. Historically, you can only have monsters teleport in. Why did you choose to let items teleport as well?
 
-_Harry		I didn't do that map, so I can't comment on that situation specifically, but I recall when we talked about doing things like teleporting other objects. We thought it would be a good way to change the players' expectations, changing the rules about the way things happen.
+<Harry>		I didn't do that map, so I can't comment on that situation specifically, but I recall when we talked about doing things like teleporting other objects. We thought it would be a good way to change the players' expectations, changing the rules about the way things happen.
 
 *Doomworld	Why was there no Archvile in PSX Doom?
 
-_Harry		The archvile had twice as many frames of animation as any other monster, and we just couldn't do him justice on the PSX. Couldn't lose his attack, and couldn't lose his ressurecting power. He was just too big to include.
+<Harry>		The archvile had twice as many frames of animation as any other monster, and we just couldn't do him justice on the PSX. Couldn't lose his attack, and couldn't lose his ressurecting power. He was just too big to include.
 
 *Doomworld	Why were new enemies and weapons introduced into the PSX/N64 versions of Doom, such as the "Nightmare Spectre" in PSX Doom and the "Nightmare Imp", "Mother of all Demons", and a laser weapon in N64 Doom?
 
-_Harry		To add variety, give veterans something new to see, and to take advantage of some capabilities of the platforms we were using.
+<Harry>		To add variety, give veterans something new to see, and to take advantage of some capabilities of the platforms we were using.
 
 *Doomworld	What prompted the decision to create all-new artwork in Doom64?
 
-_Harry		There were a lot of versions of Doom out there, and the N64 was a new console that really wanted to stand out as unique. We felt that we took and extended the artwork of the original Doom in the PSX version as far as it would go, and that to make the N64 version something truly new and exciting, we would need a new look.
+<Harry>		There were a lot of versions of Doom out there, and the N64 was a new console that really wanted to stand out as unique. We felt that we took and extended the artwork of the original Doom in the PSX version as far as it would go, and that to make the N64 version something truly new and exciting, we would need a new look.
 
 *Doomworld	Do you feel that your work on two separate Doom ports was responsible for your landing a job at Valve Software?
 
-_Harry		I think they helped. I got a lot of experience working on the various aspects of each game, and more than having each game on my resume, I think Valve was more interested in the things I learned and the experience I brought because of those games.
+<Harry>		I think they helped. I got a lot of experience working on the various aspects of each game, and more than having each game on my resume, I think Valve was more interested in the things I learned and the experience I brought because of those games.
 
 *Doomworld	During the creation of Half-Life, were there any aspects of Doom that the team wished to incorporate into the game?
 
-_Harry		Most definitely: we wanted to scare you like Doom did. Doom was a huge influence on most of us, and we really look on Doom as a brilliant achievement. It fathered the first-person shooter industry.
+<Harry>		Most definitely: we wanted to scare you like Doom did. Doom was a huge influence on most of us, and we really look on Doom as a brilliant achievement. It fathered the first-person shooter industry.

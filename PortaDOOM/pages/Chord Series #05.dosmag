@@ -9,7 +9,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2000>09>05	  Author : _Malcom Sailor_
+:Released : *2000>09>05	  Author : <Malcom Sailor>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch
 :Requires : *no-limit	Includes : *None
 :-------------------------------------------------------------------------------
@@ -31,6 +31,6 @@ It requires a source port (any source port that removes VPO and HOM, ie. almost 
 :-------------------------------------------------------------------------------
 All the usual suspects plus:
 
-- _Matt Dixon_ and _Martin Friberg_ for testing/input throughout the maps development.
-- _Myk Helnyte_ and _Anthony soto_ for additional playtesting.
-- _Eric james roberts_ for offering to feature it on his page.
+- <Matt Dixon> and <Martin Friberg> for testing/input throughout the maps development.
+- <Myk Helnyte> and <Anthony soto> for additional playtesting.
+- <Eric james roberts> for offering to feature it on his page.

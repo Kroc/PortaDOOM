@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/100574-updated-umbra-of-fate-v1
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>05>01	  Author : _Alexa "YukiRaven" Jones-Gonzales_
+:Released : *2018>05>01	  Author : <Alexa "YukiRaven" Jones-Gonzales>
 :Levels   : *1			   Modes : *Single
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
@@ -25,40 +25,40 @@ A man is on vacation and is out enjoying a day of hunting while his wife and inf
 
 :Credits
 :-------------------------------------------------------------------------------
-- The `Elementalism` team for their feedback,\\with a special shout out to _Bauul_ for his playtesting
-- _Realm667_ for their repositories,\\my wife for helping me with the story text
+- The `Elementalism` team for their feedback,\\with a special shout out to <Bauul> for his playtesting
+- <Realm667> for their repositories,\\my wife for helping me with the story text
 
-A lot of resources were taken from _Realm667_'s site. I've tried to keep track of everything I've used, so I sincerely apologize if I miss anyone here.
+A lot of resources were taken from <Realm667>'s site. I've tried to keep track of everything I've used, so I sincerely apologize if I miss anyone here.
 
 - The creators of `gothictx.wad`
-- _François-Xavier Delmotte_ aka _OgrO_FiX_ for `Ogro Texture Pack` for `DOOM 2`
-- _Cage_, _Fox666_, _NeuralStunner_, _Zero X_, and _Diamond_ for `CageTex2.wad`
-- _Ozymandias81_ and _Metal Mammoth_ for the `Heavy Metal FAKK II` textures
-- _Ozymandias81_ for the `Undying` textures
-- _Ceeb_ for the `Witchaven` texture pack
-- _zrrion the insect_ for the `Chasm` texture pack
-- _Raccoon_ and _ItsNatureToDie_ for the Stained Glass Windows texture pack
-- _Esselfortium_ and _RottKing_ for the Medieval texture pack
-- _Mechadon_ for the Box 'o Skies texture pack
-- Various authors for the decoration wads: _Ghastly_dragon_, _Yuyu3_, _JoeyTD_, _JMAA_, _MagicWazard_, _Captain Toenail_, _Gez_, _ShadesMaster_, _Shtbag667_, _Lucario_, _Captain Awesome_, _Xaser_, _Necrodome_, _DavidRaven_, _zrrion the insect_, _Hexx_, _ETTiNGRiNDER_
-- _Vader_, _Ghastly Dragon_, _Keksdose_, and _Sandypaper_ for the Bruiser Demon
-- _Eriance_ and _Ghastly Dragon_ for the Avatar
-- _Eriance_, _Blue Shadow_, _Keksdose_, and _Sandypaper_ for the Wicked
-- _Eriance_, _Dredopp_, and _SandyPaper_ for the cultist
-- _Tormentor667_, _Eriance_, and _Ghastly Dragon_ for the Acolyte
-- _Eriance_ and _Ghastly Dragon_ for the Disciple
-- _Vader_ and _Sandypaper_ for the Fleshspawn
-- _YuraoftheHairFan_, _DavidRaven_, _AshuraTheChimera_, _Espi_, _Ebola_, and _Vader_ for the Pyro Succubus
+- <François-Xavier Delmotte> aka <OgrO_FiX> for `Ogro Texture Pack` for `DOOM 2`
+- <Cage>, <Fox666>, <NeuralStunner>, <Zero X>, and <Diamond> for `CageTex2.wad`
+- <Ozymandias81> and <Metal Mammoth> for the `Heavy Metal FAKK II` textures
+- <Ozymandias81> for the `Undying` textures
+- <Ceeb> for the `Witchaven` texture pack
+- <zrrion the insect> for the `Chasm` texture pack
+- <Raccoon> and <ItsNatureToDie> for the Stained Glass Windows texture pack
+- <Esselfortium> and <RottKing> for the Medieval texture pack
+- <Mechadon> for the Box 'o Skies texture pack
+- Various authors for the decoration wads: <Ghastly_dragon>, <Yuyu3>, <JoeyTD>, <JMAA>, <MagicWazard>, <Captain Toenail>, <Gez>, <ShadesMaster>, <Shtbag667>, <Lucario>, <Captain Awesome>, <Xaser>, <Necrodome>, <DavidRaven>, <zrrion the insect>, <Hexx>, <ETTiNGRiNDER>
+- <Vader>, <Ghastly Dragon>, <Keksdose>, and <Sandypaper> for the Bruiser Demon
+- <Eriance> and <Ghastly Dragon> for the Avatar
+- <Eriance>, <Blue Shadow>, <Keksdose>, and <Sandypaper> for the Wicked
+- <Eriance>, <Dredopp>, and <SandyPaper> for the cultist
+- <Tormentor667>, <Eriance>, and <Ghastly Dragon> for the Acolyte
+- <Eriance> and <Ghastly Dragon> for the Disciple
+- <Vader> and <Sandypaper> for the Fleshspawn
+- <YuraoftheHairFan>, <DavidRaven>, <AshuraTheChimera>, <Espi>, <Ebola>, and <Vader> for the Pyro Succubus
 
 *Music:
 
-All music was written by _YukiRaven_, except for the ending music, which was composed by _Erik Satie_ and recorded by _YukiRaven_. The song titles are as follows:
+All music was written by <YukiRaven>, except for the ending music, which was composed by <Erik Satie> and recorded by <YukiRaven>. The song titles are as follows:
 
 - *Title music			: Untitled
 - *Outdoor area			: Untitled
 - *The temple area		: Back to Darkness
 - *Crypt area			: Forlasu Cxian Esperon, Cxiuj ke Enirus Cxi Tien
 - *Inner sanctum area	: The Umbra of Fate
-- *Ending music			: Gymnopedies I (Lent et douloureux) by _Erik Satie_
+- *Ending music			: Gymnopedies I (Lent et douloureux) by <Erik Satie>
 
 Full metadata information is embedded in the Ogg files themselves.

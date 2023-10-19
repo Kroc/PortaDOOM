@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>02>07	  Author :  _Paul "skillsaw" DeBruyne_
+:Released : *2015>02>07	  Author :  <Paul "skillsaw" DeBruyne>
 :Levels   : *32			   Modes : *Single, Co-op
 :Requires : *MBF		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -29,55 +29,55 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 :Credits
 :-------------------------------------------------------------------------------
 *Special Thanks:
-	Special thanks to _dew_, _esselfortium_, _Seele00TextOnly_ and _Tarnsman_ for testing, quality control, criticism, and technical advice, and also for being chill dudes. Thanks so much for your help!
+	Special thanks to <dew>, <esselfortium>, <Seele00TextOnly> and <Tarnsman> for testing, quality control, criticism, and technical advice, and also for being chill dudes. Thanks so much for your help!
 
 	Special thanks to the creators and maintainers of utilities, source ports, and wikis, without which this project wouldn't have been possible.
 
 	Special thanks to the `Doom` community as a whole, but especially the Doomworld forums and `#doomtwid` for making me feel at home.
 
 *Texture Credits:
-	_NiGHTMARE_, _Espi_, _Eriance_, _Fredrik Johansson_, _Janitor_, _DaGGeR_, _Ola Björling_, _Vader_, _XDelusion_, _esselfortium_, _RottKing_, _Nuxius_, _Afterglow_, _AgentSpork_, _Enjay_, _Huy Pham_, _SargeBaldy_, _Tormentor667_, _Iikka Keranen_, _Cage_, _FuzzballFox_, _zrrion the insect_, _Nightfall_, _Blue Shadow_, _skillsaw_, _GothicDM Team_, _Eternal Doom Team_, _id Software_, _Raven Software_, _Rogue Entertainment_, _Valve Software_
+	<NiGHTMARE>, <Espi>, <Eriance>, <Fredrik Johansson>, <Janitor>, <DaGGeR>, <Ola Björling>, <Vader>, <XDelusion>, <esselfortium>, <RottKing>, <Nuxius>, <Afterglow>, <AgentSpork>, <Enjay>, <Huy Pham>, <SargeBaldy>, <Tormentor667>, <Iikka Keranen>, <Cage>, <FuzzballFox>, <zrrion the insect>, <Nightfall>, <Blue Shadow>, <skillsaw>, <GothicDM Team>, <Eternal Doom Team>, <id Software>, <Raven Software>, <Rogue Entertainment>, <Valve Software>
 
 *Sprite Credits:
-	_NMN_, _Eriance_, _Jimmy_, _Yurithehairfan_, _Huy Pham_, _IMX_, _Vader_, _Neoworm_, _Cyb_, _Icytux_, _Captain Toenail_, _Maelstrom_, _Tormentor667_, _skillsaw_, _id Software_, _Raven Software_, _3d Realms_
+	<NMN>, <Eriance>, <Jimmy>, <Yurithehairfan>, <Huy Pham>, <IMX>, <Vader>, <Neoworm>, <Cyb>, <Icytux>, <Captain Toenail>, <Maelstrom>, <Tormentor667>, <skillsaw>, <id Software>, <Raven Software>, <3d Realms>
 
 *Fonts:
-	_AgentSpork_
+	<AgentSpork>
 
 *Palette:
-	Uses red range from `32in24-13` palette by _esselfortium_
+	Uses red range from `32in24-13` palette by <esselfortium>
 
 *GLDefs:
-	_Gez_
+	<Gez>
 
 *Misc Graphics, Splash Screens, Status Bar:
-	_skillsaw_
+	<skillsaw>
 
 *Music Credits:
-	MAP01 - `"air.mid"` (_Stewboy_)
-	MAP02 - `"coldwires.mid"` (_Stewboy_)
-	MAP03 - `"window.mid"` (_Stewboy_)
-	MAP04 - `"river.mid"` (_Stewboy_)
-	MAP05 - `"core.mid"` (_Stewboy_)
-	MAP06 - `"Water World"` (_Bobby Prince_)
-	MAP07 - `"Aliens, Say Your Prayers"` (_Bobby Prince_)
-	MAP08 - `"Astral Dreadnought"` (_Jimmy_)
-	MAP09 - `"Dark Angel"` (_Jimmy_)
-	MAP10 - `"Fallen Sun"` (_Jimmy_)
-	MAP11 - `"Cataclysmic Impact"` (_Jimmy_)
-	MAP12 - `"Flatulence Protocol"` (_Jimmy_)
-	MAP13 - `"Postmodern Muck"` (_Jimmy_)
-	MAP14 - `"rustybridge.mid"` (_Stewboy_)
-	MAP15 - `"Goin' Down the Fast Way"` (_Lee Jackson_)
-	MAP16 - `"skytemple.mid"` (_Stewboy_)
-	MAP17 - `"Stealth Mode"` (_Jimmy_)
-	MAP18 - `"Prototype (extended) ft. Stuart Rynn"` (_Jimmy_)
-	MAP19 - `"Sunset Over Babylon"` (_Jimmy_)
-	MAP20 - `"Anchor"` (_Mark Klem_)
-	MAP21 - `"Points of View"` (_Jimmy_)
-	MAP22 - `"Baron's Province"` (_Jimmy_)
-	MAP23 - `"Industrial"` (_SlayeR_)
-	MAP24 - `"Frivolous Encounter"` (_Mark Klem_)
+	MAP01 - `"air.mid"` (<Stewboy>)
+	MAP02 - `"coldwires.mid"` (<Stewboy>)
+	MAP03 - `"window.mid"` (<Stewboy>)
+	MAP04 - `"river.mid"` (<Stewboy>)
+	MAP05 - `"core.mid"` (<Stewboy>)
+	MAP06 - `"Water World"` (<Bobby Prince>)
+	MAP07 - `"Aliens, Say Your Prayers"` (<Bobby Prince>)
+	MAP08 - `"Astral Dreadnought"` (<Jimmy>)
+	MAP09 - `"Dark Angel"` (<Jimmy>)
+	MAP10 - `"Fallen Sun"` (<Jimmy>)
+	MAP11 - `"Cataclysmic Impact"` (<Jimmy>)
+	MAP12 - `"Flatulence Protocol"` (<Jimmy>)
+	MAP13 - `"Postmodern Muck"` (<Jimmy>)
+	MAP14 - `"rustybridge.mid"` (<Stewboy>)
+	MAP15 - `"Goin' Down the Fast Way"` (<Lee Jackson>)
+	MAP16 - `"skytemple.mid"` (<Stewboy>)
+	MAP17 - `"Stealth Mode"` (<Jimmy>)
+	MAP18 - `"Prototype (extended) ft. Stuart Rynn"` (<Jimmy>)
+	MAP19 - `"Sunset Over Babylon"` (<Jimmy>)
+	MAP20 - `"Anchor"` (<Mark Klem>)
+	MAP21 - `"Points of View"` (<Jimmy>)
+	MAP22 - `"Baron's Province"` (<Jimmy>)
+	MAP23 - `"Industrial"` (<SlayeR>)
+	MAP24 - `"Frivolous Encounter"` (<Mark Klem>)
 	MAP25 - `"Death Scythe"` (`Gundam Wing: Endless Duel`)
 	MAP26 - `"On Space Station"` (`Gundam Wing: Endless Duel`)
 	MAP27 - `"Epyon"` (`Gundam Wing: Endless Duel`)
@@ -85,12 +85,12 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 	MAP29 - `"Mercurius / Vayeate"` (`Gundam Wing: Endless Duel`)
 	MAP30 - `"End Credits"` (`Thunder Force 4`) and
 			`"Antarctic"` (`Gundam Wing: Endless Duel`)
-	MAP31 - `"stars.mid"` (_Stewboy_)
-	MAP32 - `"Aztec Gods"` (_Jimmy_)
+	MAP31 - `"stars.mid"` (<Stewboy>)
+	MAP32 - `"Aztec Gods"` (<Jimmy>)
 
 	*Intermission  - `"Character Select"` (`Gundam Wing: Endless Duel`)
 	*Title         - `"Versus Screen"` (`Gundam Wing: Endless Duel`)
 	*Text screen   - `"Credits"` (`Gundam Wing: Endless Duel`)
 
 *Sound Credits:
-	_Jimmy_, _Eriance_, _Xaser_, _Monolith Games_, _Croteam_, _id Software_, _3d Realms_
+	<Jimmy>, <Eriance>, <Xaser>, <Monolith Games>, <Croteam>, <id Software>, <3d Realms>

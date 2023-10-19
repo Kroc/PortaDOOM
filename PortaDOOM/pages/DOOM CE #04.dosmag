@@ -9,7 +9,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/126183
 :===============================================================================
 *[P] Play						 *[R] Readme [C] Credits [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2021>12>08	  Author : _molecicco_, Various
+:Released : *2021>12>08	  Author : <molecicco>, Various
 :Levels   : *lots		   Modes : *Single, Co-op
 :Requires : *gzdoom		Includes : *+Sound +Music +Graphics +Patches, +Demos
 :-------------------------------------------------------------------------------
@@ -20,21 +20,21 @@ $KEY:E=URL:https://store.epicgames.com/p/doom-64
 $REM=
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE DOOM 64!
 ! :-----------------------------------------------------------------------------
-! If you own _"DOOM 64"_, on [G: GOG], [S: Steam] or [E: Epic Games] and have it installed, it will be detected automatically
+! If you own <"DOOM 64">, on [G: GOG], [S: Steam] or [E: Epic Games] and have it installed, it will be detected automatically
 
 :Included Maps:
 
-- *The Absolution/DOOM 64:* The original campaign. The maps included here are based on conversions made by _Nevander_ for `Doom 64: Retribution`
+- *The Absolution/DOOM 64:* The original campaign. The maps included here are based on conversions made by <Nevander> for `Doom 64: Retribution`
 
-- *The Lost Levels:* These maps are exclusive to `Doom 64`'s 2020 remaster by _Nightdive_. They are only available if the included installer finds a valid installation of the 2020 release
+- *The Lost Levels:* These maps are exclusive to `Doom 64`'s 2020 remaster by <Nightdive>. They are only available if the included installer finds a valid installation of the 2020 release
 
-- *The Doomsday Levels:* Maps that were exclusive to _Kaiser_'s 2003's _Absolution TC_ and its _Outcast Levels_ expansion, merged into a single episode
+- *The Doomsday Levels:* Maps that were exclusive to <Kaiser>'s 2003's <Absolution TC> and its <Outcast Levels> expansion, merged into a single episode
 
-- *Redemption Denied:* A 2005 mapset by _Steven Searle_ and _AgentSpork_ for the `Absolution TC`. The maps included here are based on conversions made by _Nevander_ for `Doom 64: Retribution`
+- *Redemption Denied:* A 2005 mapset by <Steven Searle> and <AgentSpork> for the `Absolution TC`. The maps included here are based on conversions made by <Nevander> for `Doom 64: Retribution`
 
-- *The Reckoning:* A 2008 mapset by _Steven Searle_ for the `Absolution TC`. These maps included here are based on conversions made by _thexgiddoomerx_ for *Doom 64 EX*
+- *The Reckoning:* A 2008 mapset by <Steven Searle> for the `Absolution TC`. These maps included here are based on conversions made by <thexgiddoomerx> for *Doom 64 EX*
 
-- *Bonus maps:* `Waste Processing` and `Mining Front` by _Maverick_ and `Temple Ruins` and `Temple Grounds` by _Henri Leto_, standalone maps made for the `Absolution TC`, are included. They are based on conversion made by _thexgiddoomerx_ for *Doom 64 EX*
+- *Bonus maps:* `Waste Processing` and `Mining Front` by <Maverick> and `Temple Ruins` and `Temple Grounds` by <Henri Leto>, standalone maps made for the `Absolution TC`, are included. They are based on conversion made by <thexgiddoomerx> for *Doom 64 EX*
 
 :Community Campaigns:
 
@@ -43,7 +43,7 @@ $KEY:2=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-64-ce.ini" /GAME 3
 $KEY:3=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-64-ce.ini" /GAME 4
 [1] *Knee Deep in the Dead (Episode 1) for DOOM 64
 	:---------------------------------------------------------------------------
-	PC `DOOM`'s `Episode 1` converted to `DOOM 64` aesthetics by _z0k_!
+	PC `DOOM`'s `Episode 1` converted to `DOOM 64` aesthetics by <z0k>!
 
 [2] *PSX DOOM 64
 	:---------------------------------------------------------------------------

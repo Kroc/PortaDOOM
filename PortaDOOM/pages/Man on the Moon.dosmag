@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/motm
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2018>11>09	  Author : _Yugiboy85_
+:Released : *2018>11>09	  Author : <Yugiboy85>
 :Levels   : *1			   Modes : *Single, Co-op
 :Requires : *mbf		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -24,4 +24,4 @@ Huge space/moon map that has a main hub of sort. Non-linear (grab keys in any or
 
 :Credits
 :-------------------------------------------------------------------------------
-_ID SOFTWARE_ for `DOOM`, _MaxED_ for `GZDOOM Builder` and _zzyxz_ for `gzdoom builder bugfix`, _SlayeR_ for `Slade 3`, The people behind the `CC4 texture pack`, _Skillsaw_ for letting me use the sexy space theme textures he used in `valliant`'s 5th episode, _alfonzo_ for the midi (`"gutter penny"`), _Dragonfly_ for testing an older version (pre rc1), _JC Dorne_ for the `dehacked` boss, _Vader_ for the boss sprites, _Horrormovieguy_ for the chain-gunner sprites (found on the _realm667_ forums, "the uber chaingunner"), _NMN_ and _tormentor667_ for the "rapid fire trooper" sprites (_realm667_ and `KDIZD`), _Mark Quinn_, _Vegeta_, _Ghastly_dragon_, _MagicWazard_ for the "zspecshotgunner" sprites (_realm667_), _Disguise_, _MagicWazard_, _Blue Shadow_ for the "green key" (_realm667_). The sound edits were taken from `"ancient aliens"` and `"eternal doom"`, as well as `"valliant"` (for the plasma gun sound).
+<ID SOFTWARE> for `DOOM`, <MaxED> for `GZDOOM Builder` and <zzyxz> for `gzdoom builder bugfix`, <SlayeR> for `Slade 3`, The people behind the `CC4 texture pack`, <Skillsaw> for letting me use the sexy space theme textures he used in `valliant`'s 5th episode, <alfonzo> for the midi (`"gutter penny"`), <Dragonfly> for testing an older version (pre rc1), <JC Dorne> for the `dehacked` boss, <Vader> for the boss sprites, <Horrormovieguy> for the chain-gunner sprites (found on the <realm667> forums, "the uber chaingunner"), <NMN> and <tormentor667> for the "rapid fire trooper" sprites (<realm667> and `KDIZD`), <Mark Quinn>, <Vegeta>, <Ghastly_dragon>, <MagicWazard> for the "zspecshotgunner" sprites (<realm667>), <Disguise>, <MagicWazard>, <Blue Shadow> for the "green key" (<realm667>). The sound edits were taken from `"ancient aliens"` and `"eternal doom"`, as well as `"valliant"` (for the plasma gun sound).

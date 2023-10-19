@@ -7,7 +7,7 @@ $KEY:W=URL:https://doomwiki.org/wiki/Aliens_TC
 :===============================================================================
 *[P] Play						 *[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *1994>11>03	  Author : _Justin Fisher_
+:Released : *1994>11>03	  Author : <Justin Fisher>
 :Levels   : *11			   Modes : *Single, Deathmatch
 :Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ The Missions - Each level roughly corresponds to a part of the film (ALIENS. If 
 
 *Level 2	: Atmospheric Processor; find the colonists, their PDTs indicate they are all deep in the lower levels of the plant.
 
-*Level 3	: Medlabs & Operations; seal off medlabs and operations closing the security doors and blowing away whatever gets through. Caution - there are too many aliens to take out yourself so __use__ the security doors and don't be afraid to retreat (stealth is a good idea). When Medlabs is secure, crawl down the main pipeline to the landing pad. (to patch in the colony transmitter.)
+*Level 3	: Medlabs & Operations; seal off medlabs and operations closing the security doors and blowing away whatever gets through. Caution - there are too many aliens to take out yourself so _use_ the security doors and don't be afraid to retreat (stealth is a good idea). When Medlabs is secure, crawl down the main pipeline to the landing pad. (to patch in the colony transmitter.)
 
 *Level 4	: Escape from Medlabs; like a normal DOOM level, retreat from medlabs and try to get to the landing pads. 
 
@@ -92,11 +92,11 @@ The derelict alien host ship. This level was made by Richard Love, hence is the 
 
 There is no unstable nukage in Aliens, the nearest thing is filthy water. Hence barrels do NOT explode (I know you'll all hate that one, but I had no choice - Doom just doesn't have enough damage frames.), and lakes of water will not harm you either. Sorry :)
 
-That's all you __need__ to know.
+That's all you _need_ to know.
 
 The Aliens - There are five main types; Warriors, Drones, Queens, Face Huggers, and Eggs. Be warned, the aliens have extremely corrosive internal fluids, if you fill them with too much lead or grenades, the result will be a shower of lethal bio-acid. Eggs hatch, so shoot them quick. Drones can spit bio-acid at you (I put that in for more variety, it can get monotonous if all the foes are too similar), you've proved yourselves to dangerous to the hive to be captured, the warriors will just concentrate on ripping you to shreds, but that doesn't mean a frontal assault...
 
-Proximity indicators - These are blue panels inset in the walls of some levels. When you walk past one, two red lights flash back and forth for 30 seconds. These are for Deathmatch. I like __big__ D-match levels, the concept of The Hunt, the problem is, players leave so little evidence of passage - the occasional sound, or corpse (which could have been there since who knows when.) The proximity indicators just make the hunting a little easier (and introduce new tactics with players who use them).
+Proximity indicators - These are blue panels inset in the walls of some levels. When you walk past one, two red lights flash back and forth for 30 seconds. These are for Deathmatch. I like _big_ D-match levels, the concept of The Hunt, the problem is, players leave so little evidence of passage - the occasional sound, or corpse (which could have been there since who knows when.) The proximity indicators just make the hunting a little easier (and introduce new tactics with players who use them).
 
 Speaking of Deathmatch....
 
@@ -134,33 +134,33 @@ LOTS of things. The episode map at the end of each level, a better smartgun expl
 
 Weird and inconsistent things:
 
-I ran out of graphics and Things when making this conversion, the result is massive and chaotic frame table patches (so I could steal every sprite not otherwise in use), if you want to see how DOOM runs without the graphics patches, but __with__ the .EXE patches, just run DOOM instead of ALIEN. The results are... strange
+I ran out of graphics and Things when making this conversion, the result is massive and chaotic frame table patches (so I could steal every sprite not otherwise in use), if you want to see how DOOM runs without the graphics patches, but _with_ the .EXE patches, just run DOOM instead of ALIEN. The results are... strange
 
 *Thanks to:
 (in no particular order)
 
 - Me - For doing all the hard work!\\(Nobody reads this bit anyway, so why not :-)
-- _Richard Love_ - For creating level 9, (the secret level) and the textures peculiar to it.
-- _Olivier Montanuy_ - For writing the ALIENS-TC install program, and writing DeuSF.
-- _Cale McCallum_ - For fixing ALIENS-TC so it works with Ultimate DOOM, and a couple of other misc. things (demos, sound, etc.).
-- _Glenn Fisher_ - For writing the custom editors, and the ALIENTC.EXE file.
-- _Darryn Pat_ - For the use of the Video Blaster (to scan the queen model).
-- _Darryn Yee_ - For supplying all sorts of things necessary for scanning a model, including his home :-)
-- _Jordan Yee_ - For supplying the model alien queen to be scanned.
-- My 486 - For being so reliable, fast and having 24 bit graphics Vesa is an absolute _must_.
-- _Morpheus_ - For sending me node builders, and giving me extra D/L time on his BBS.
-- _IKON Attendants_ - For giving the beta a thorough play testing. (It's much better now) :-)
+- <Richard Love> - For creating level 9, (the secret level) and the textures peculiar to it.
+- <Olivier Montanuy> - For writing the ALIENS-TC install program, and writing DeuSF.
+- <Cale McCallum> - For fixing ALIENS-TC so it works with Ultimate DOOM, and a couple of other misc. things (demos, sound, etc.).
+- <Glenn Fisher> - For writing the custom editors, and the ALIENTC.EXE file.
+- <Darryn Pat> - For the use of the Video Blaster (to scan the queen model).
+- <Darryn Yee> - For supplying all sorts of things necessary for scanning a model, including his home :-)
+- <Jordan Yee> - For supplying the model alien queen to be scanned.
+- My 486 - For being so reliable, fast and having 24 bit graphics Vesa is an absolute <must>.
+- <Morpheus> - For sending me node builders, and giving me extra D/L time on his BBS.
+- <IKON Attendants> - For giving the beta a thorough play testing. (It's much better now) :-)
 - Id Software - Take a guess... a wild stab in the dark, you shouldn't miss at point blank.
-- _Terry Pratchett_ - For giving DOOM exemption from the idea that VR should complement rather than replace reality.
-- _Brent Hall_ - The Indigo marine in the two player demo.
+- <Terry Pratchett> - For giving DOOM exemption from the idea that VR should complement rather than replace reality.
+- <Brent Hall> - The Indigo marine in the two player demo.
 - The authors of all the editors, viewers, node builders, hacks, FAQ's, out there. 
 - The many people who have aided by telling me where I could find various utilities, giving me new editors etc.
 - To anyone even remotely connected with this, who would like a mention. (That was it. Oh, you blinked?)
 - Me, Again...
 
-BTW, if anyone is interested in what I'm doing next (The hope is that everyone says "WOW, this guy is a GENIUS!, I can't __wait__ to see what he does next... :-)" ), but if anyone __is__ interested, with the advent of Doom v1.666, which allows 64 instead of just 16 two-sided linedefs, it's time to make some M C Escher style rooms, probably as a part of a larger wad loosely based on the film "Labyrinth" (no, I have no idea how you spell it) where they can form rooms of Jareths castle.
+BTW, if anyone is interested in what I'm doing next (The hope is that everyone says "WOW, this guy is a GENIUS!, I can't _wait_ to see what he does next... :-)" ), but if anyone _is_ interested, with the advent of Doom v1.666, which allows 64 instead of just 16 two-sided linedefs, it's time to make some M C Escher style rooms, probably as a part of a larger wad loosely based on the film "Labyrinth" (no, I have no idea how you spell it) where they can form rooms of Jareths castle.
 
-Another thing I would like to do is actually make a wad which uses the __original__ DOOM textures, they are incredible graphics and it seems such a shame to continually over-write them, and I'm sure I can use them in ways people never thought of before. (no offence all you level builders, but in my (not excessively vast) experience of PWAD levels, the true DOOM levels, especially episode one, still reign supreme in pure imagination). Especially when you compare them to the ever growing number of PWADs that are just based on a simplistic concept, ie when viewed in automap, the rooms form words, or the whole wad is so repetitive that you only need to see a tiny bit to be able to draw the whole thing - a circle divided into pie slices, four rooms that connect through the middle (popular idea in many D-match wads, the reason invariably being "equal starting points" (I prefer more varied hunting grounds). etc.
+Another thing I would like to do is actually make a wad which uses the _original_ DOOM textures, they are incredible graphics and it seems such a shame to continually over-write them, and I'm sure I can use them in ways people never thought of before. (no offence all you level builders, but in my (not excessively vast) experience of PWAD levels, the true DOOM levels, especially episode one, still reign supreme in pure imagination). Especially when you compare them to the ever growing number of PWADs that are just based on a simplistic concept, ie when viewed in automap, the rooms form words, or the whole wad is so repetitive that you only need to see a tiny bit to be able to draw the whole thing - a circle divided into pie slices, four rooms that connect through the middle (popular idea in many D-match wads, the reason invariably being "equal starting points" (I prefer more varied hunting grounds). etc.
 
 As you can see from reading this, I really like interesting locations and architecture, (rather than levels made up of rooms connected by doors and corridors, of which I am often guilty) Even with it's limits, DOOM can make fantastic worlds, places that have never existed, or ever will. The power to experience a world of your own creation is what I like about making DOOM locations, (and I'm getting better too :-), I know a few will disagree - there are many PWAD levels in which the effort has been put into game play, rather than environment, leaving default textures, not worrying about unpegging doorways etc. I hope ALIENS-TC has a high level of both elements, let me know what you thought. 
 
