@@ -1,0 +1,28 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.VIII
+$KEY:8=GOTO:Lost Civilization
+
+^C:2019 CACOWARDS :: TOP 10 pt.VIII
+
+:-------------------------------------------------------------------------------
+
+:[8] `Lost Civilization` - <Jaska>
+:===============================================================================
+
+`Doom` and "realism" have had a long and troubled romance; about equal parts knife and spoon, let us say. Since the earliest days of PWADing, the community has produced no shortage of content aiming to believably recreate real-world locations of all descriptions in idtech1—offices, schools, (MY)houses, churches, sewers, villages, even proper cityscapes, to name but a few. While there's something intrinsically appealing about the promise of immersion that this style of design offers, in practice, the fast action on which `Doom` is broadly founded and the mundane necessities of realistic design are often like oil and water. Nevertheless, enterprising WADmakers have been finding ways to have their cake and eat it too in this regard for years now, such that we even have a pet term for that peculiarly endearing intersection of representational design with `Doom`-y moon-logic: "Doomcute".
+
+`Lost Civilization`, then, is not merely Doomcute, but goddamned Doomsexy, a passionate rendezvous of sumptuous, travelogue-perfect scenery with sultry freeform bloodletting, set against the outwardly idyllic backdrop of a nameless society gone to (demon)seed and overrun by undead; the Summer of Love as directed by Lucio Fulci, if you will. The mapset opens with the protagonist clandestinely landing on the rocky coast of an outlying island, beginning an odyssey of travel by any means necessary along the archipelago and ultimately towards the secret nestled in the mountains at the heart of the mainland. Along the way, you'll navigate rolling hills, sunny coasts, sweeping river valleys, ancient vernal forests, hidden bogs, and other equally enchanting natural settings, punctuated by stopovers in abandoned resorts, ruined towns and villages, derelict industrial complexes, secluded manors and sundry other bastions of humanity, each location seguing seamlessly into the next.
+
+Though the breathtaking landscape is here the most immediately arresting aspect, <Jaska> has proven not just a master of vista but also of small-scale mise-en-scène and environmental storytelling, using meticulous texture and prop work together with clever visual and physical interconnection to lend the setting an uncannily credible lived-in feeling. While undeniably beautiful, the true triumph of `LC`'s design is that the fun and fluidity of its action is never sacrificed on the altar of visual fidelity, a feat <Jaska> accomplishes through sage focus on the core strengths of the `Doom` engine -- fast movement, infinite draw distance, accommodation for a functionally limitless number of active actors, etc. -- and tailoring his setting's lush visual presentation to them, rather than the other way around. Thus, `LC` is characterized by largely unfettered outdoor romping and climbing rather than stodgy room-clearing, skillfully using indoor or otherwise more constrained segments for pacing, with a perfect twist of the unexpected in its story to avoid ever becoming too predictable.
+
+As a natural extension of this incredibly rich environmental design, `LC` is also one of the most genuinely non-linear mapsets in memory. Because the great majority of its real estate is not merely eye-candy, but an interwoven series of actual playable spaces with countless obvious and not-so-obvious connections between them, the possibilities for approaching a given level are nearly unparalleled in scope, especially with a handful of its centerpiece maps being large enough to accommodate several "normal" maps within themselves. Yet, there's hardly any slog—the largely "vérité" staging of encounters and spacious, robust topography readily allow for boundless mixing and matching of combat tactics and playstyles, while a staunch commitment to optionality in progression throughout bespeaks a designer confident enough in the appeal of the world he's created not to insist that you tour every nook and cranny of it, though many players will probably want to!
+
+`Doom`'s answer to magical realism, `Lost Civilization` is an immersive and unforgettable trip, and a rare gem in which the adventure you'll have while playing can truly be called your own.
+
+^R- <Demon of the Well>
+
+:===============================================================================
+*[8] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/best3/
+:source [#: www.doomworld.com/cacowards/2019/best3/]

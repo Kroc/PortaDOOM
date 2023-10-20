@@ -1,0 +1,44 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:launcher.exe "wads\megawads\joi_lstcv\play-joi_lstcv15.ini"
+$KEY:T=SHELL:wads\megawads\joi_lstcv\joi_lstcv15.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/105215
+
+:Lost Civilization                                  * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>12>16	  Author : <Jaakko "Jaska" Impola> (<JOI> in maps)
+:Levels   : *22			   Modes : *Single
+:Requires : *boom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+*Story:* A civilization was collapsed as people got into religion of "ignorant egoistic idiotism". Genetically modified cattle and food turned the people and animals to agressive zombies. But there were few survivors. How they weren't affected?
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: From scratch
+*Build Time				: 2016-2019
+*Editor(s) used			: *GZDoomBuilder*, *GZDB bugfix*, *Slade*, *GIMP*, *Notepad*
+*Known Bugs				: Some minor sky cutouts, GOR3A0 sinks into ceiling on *prBoom* (2.5.1.4). Propably some texture misalignments
+*Tested With...			: *GZDoom*, ran through with *prboom-plus*-2.5.1.4
+						  Note to *Zdaemon* users:
+						  "heap size for *zdaemon* servers is defaulted to 10 
+						   so I had to increase it to 20"
+*May Not Run With...	: Ports without *Boom* support
+
+:Credits:
+:-------------------------------------------------------------------------------
+- Thanks to doomworld community for help
+- Thanks to maintainers of utilities and source ports, tutorials and wikis
+- Thanks for all playtesters for great and helpful feedback
+- Thanks to all for great textures and graphics
+
+*Credits (music):
+$KEY:1=URL:http://www.lynnemusic.com/midi.html
+
+- <Jimmy> & <Björn Lynne>:
+  [1: http://www.lynnemusic.com/midi.html]
+
+*Credits (textures, graphics):
+
+- See *[T] .txt* file
