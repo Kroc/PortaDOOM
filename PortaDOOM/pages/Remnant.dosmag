@@ -1,0 +1,45 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\remnant\play-remnant.ini"
+$KEY:T=SHELL:wads\onesies\remnant\remnant.TXT
+$KEY:W=URL:https://www.doomworld.com/forum/topic/109217
+
+:Remnant                                            * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>10>19	  Author : <Aurelius>
+:Levels   : *1			   Modes : *Single
+:Requires : *no-limit	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+`Remnant` is a large limit-removing map for `Doom 2`, using the `OTEX` texture pack by <ukiro> and centered around creating a vanilla-ish gameplay experience within a detailed, atmospheric setting.
+
+The map features large open environments, both outdoors and indoors, with medieval and hellish elements combined with lush and organic outdoor scenery. Encounters can often be approched from different perspectives, and the open environments give way for momentum based battles that take advantage of said open space.
+
+While the monster count may be high, the map is not designed as a slaughtermap; monster encounters are situated evenly along the length of the playthrough.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch 
+*Build Time				: ~3 months
+*Editor(s) used			: *GZDoomBuilder Bugfix*, *Slade3*, *WhackEd 4*
+*Known Bugs				: None 
+*May Not Run With...	: *Doom Retro* (3.0.3 or older), *Chocolate Doom*, Vanilla
+*Tested With			: *Crispy Doom* 5.5.2 to 5.6.3 
+						  *PrBoom+* 2.5.1.4 (complevel 9)
+						  *Eternity Engine* 4.00.00
+						  *GZDoom* 4.1.3
+						  *ZDoom* 2.8.1
+
+:Credits:
+:-------------------------------------------------------------------------------
+- Textures by <ukiro> (`OTEX` 1.0)
+- Tree sprites by <Enjay>
+- Dual pistol based on the Angles pistol by <Ghastly_dragon> and <JoeyTD> (<Realm667>)
+- Chaingun sprites by <Urthar> (`DotB`), with pickup sprite by <Tormentor 667> and SFX from `Quake 4` by <Raven Software>
+- BFG10K by <Ghastly_dragon>, <Eriance> and <The Skulltag Team> (<Realm667>)
+- Secondary boss "Cardinal" sprites based on the Dark Cardinal by <zrrion the insect>, <Jimmy>, <Espi>, <Ebola> (<Realm667>), with SFX by <Blizzard> (`Diablo`)
+- Final boss "Master" based on the Haedexebus by <Ozymandias81>, <DeVloek>, <Eriance>, <yuraofthehairfan> and <zrrion the insect> (<Realm667>)
+- Various sprites and SFX from `Heretic` and `Hexen`
+- A vanilla `Doom` conveyor belt prefab by <Linguica>
+- The song "Corrupt, doomed" courtesy of <Teemu "Forchion" Mastovaara>. The song can be used unaltered, but if there is a desire to alter it, please contact him at _teemumas(at)hotmail.com_

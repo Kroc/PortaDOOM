@@ -1,0 +1,95 @@
+===========================================================================
+Advanced engine needed  : Limit-removing
+Primary purpose         : Single play
+===========================================================================
+Title                   : Remnant
+Filename                : remnant.wad
+Release date            : Oct 29, 2019
+Author                  : Aurelius
+Email Address           : [redacted]
+Other Files By Author   : Nothing worth mentioning.
+Misc. Author Info       : Been mapping on/off for almost 15 years (mostly off),
+                          but never really finished a project. After playing
+                          Eviternity and some 2018 Cacoaward winners, I felt 
+                          like getting back into it. Beyond video games,
+                          I teach mathematics to high school kids.
+
+Description             : Remnant is a large limit-removing map for Doom 2, 
+                          using the OTEX texture pack by ukiro and centered 
+                          around creating a vanilla-ish gameplay experience 
+                          within a detailed, atmospheric setting. The map
+                          features large open environments, both outdoors and 
+                          indoors, with medieval and hellish elements combined
+                          with lush and organic outdoor scenery. Encounters 
+                          can often be approched from different perspectives, 
+                          and the open environments give way for momentum based 
+                          battles that take advantage of said open space. While 
+                          the monster count may be high, the map is not designed 
+                          as a slaughtermap; monster encounters are situated 
+                          evenly along the length of the playthrough.
+
+Additional Credits to   : Textures by ukiro (OTEX 1.0)
+                          Tree sprites by Enjay
+                          Dual pistol based on the Angles pistol by Ghastly_dragon and JoeyTD (Realm667)
+                          Chaingun sprites by Urthar (DotB), with pickup sprite by Tormentor 667 and SFX from Quake 4 by Raven Software
+                          BFG10K by Ghastly_dragon, Eriance and The Skulltag Team (Realm667)
+                          Secondary boss "Cardinal" sprites based on the Dark Cardinal by zrrion the insect, Jimmy, Espi, Ebola (Realm667), with SFX by Blizzard (Diablo)
+                          Final boss "Master" based on the Haedexebus by Ozymandias81, DeVloek, Eriance, yuraofthehairfan and zrrion the insect (Realm667)
+                          Various sprites and SFX from Heretic and Hexen
+                          A vanilla Doom conveyor belt prefab by Linguica
+                          The song "Corrupt, doomed" courtesy of Teemu "Forchion" Mastovaara. The song can be used unaltered, but if there is a desire to alter it, please contact him at teemumas(at)hotmail.com.	  
+
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : ~3 months
+Editor(s) used          : GZDoomBuilder Bugfix, Slade3, WhackEd 4
+May Not Run With        : Doom Retro (3.0.3 or older), Chocolate Doom, Vanilla
+Tested With             : Crispy Doom 5.5.2 to 5.6.3 
+                          PrBoom+ 2.5.1.4 (complevel 9)
+                          Eternity Engine 4.00.00
+                          GZDoom 4.1.3
+                          ZDoom 2.8.1
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
