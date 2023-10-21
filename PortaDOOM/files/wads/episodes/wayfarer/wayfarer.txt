@@ -1,0 +1,81 @@
+===========================================================================
+Advanced engine needed  : GZDoom
+Primary purpose         : Singleplayer/Coop
+===========================================================================
+Title                   : The Wayfarer v1.2
+Filename                : wayfarer.wad
+Release date            : June 14, 2019
+Author                  : Not Jabba
+Email Address           : aaron.redfern@gmail.com
+
+Description             : The Wayfarer is a full 9-map episode for Heretic that includes
+			  two new enemies, two new artifacts, a new weapon, plenty of 
+			  custom decorations and textures, custom bosses, and more.
+
+			  The episode includes a built-in gameplay mod that rebalances
+			  Heretic in ways that are mostly subtle but make the game a
+			  lot more engaging to play. Many enemy attacks are more 
+			  dangerous, and most of the player's weapons are more powerful,
+			  allowing certain weapons to have more useful combat niches and
+			  eliminating the grindiness associated with vanilla Heretic's 
+			  weapon/monster balance. See wayfarer_info.txt for more 
+			  information, including the story, tips on playing the episode,
+			  a rundown of the new enemies/items, and a complete list
+			  of gameplay modifications.
+
+Additional Credits to   : See wayfarer_info.txt for full credits.
+			  
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+===========================================================================
+* Play Information *
+
+Game                    : Heretic
+Map #                   : E1M1-E1M9
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+===========================================================================
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A bit over two years 
+Editor(s) used          : Slade 3, Doom Builder 2, Doom Builder X
+Known Bugs              : None
+May Not Run With        : Anything other than ZDoom/GZDoom.
+Tested With             : GZDoom 4.3.3, 4.7.1. Any relatively recent
+			  version of the ports should be fine.
+
+===========================================================================
+* Copyright / Permissions *
+
+Authors MAY NOT use the maps as a base for modification or reuse.
+
+Authors MAY use any non-map resources as a base for modification or reuse.
+Permissions have been obtained from original authors for any of their resources 
+modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact. I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

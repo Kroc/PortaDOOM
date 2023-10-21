@@ -1,0 +1,133 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\wayfarer\play-wayfarer.ini"
+$KEY:T=SHELL:wads\episodes\wayfarer\wayfarer.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/104838
+$KEY:2=PAGE:#02
+
+:The Wayfarer                                       * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>06>14	  Author : <Not Jabba>
+:Levels   : *9			   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+`The Wayfarer` is a full 9-map episode for `Heretic` that includes two new enemies, two new artifacts, a new weapon, plenty of custom decorations and textures, custom bosses, and more.
+
+$KEY:G=URL:https://gog.com/game/heretic_shadow_of_the_serpent_riders
+$KEY:S=URL:https://store.steampowered.com/app/2390/
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
+! :-----------------------------------------------------------------------------
+! If you own _"Heretic: Shadow of the Serpent Riders"_ on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file "HERETIC.WAD" in the "files\wads" folder.
+
+The episode includes a built-in gameplay mod that rebalances `Heretic` in ways that are mostly subtle but make the game a lot more engaging to play. Many enemy attacks are more dangerous, and most of the player's weapons are more powerful, allowing certain weapons to have more useful combat niches and eliminating the grindiness associated with vanilla `Heretic`'s weapon/monster balance. See *[2] page 2* for more information, including the story, tips on playing the episode, a rundown of the new enemies/items, and a complete list of gameplay modifications.
+
+:Update!
+:-------------------------------------------------------------------------------
+Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering with this update for a while to address bug reports and various little things that have bothered me about the episode. Most importantly, it fixes the badly bugged Lightbringer behavior caused in more recent versions of *GZDoom*. As a result, it is no longer compatible with *ZDoom* 2.8.1, but should work with any recent build of *GZDoom*. The other biggest change is better and more consistent balance for the lower difficulty settings. Here's a more complete list of changes:
+
+- Fixed various minor bugs that have been found / reported, mostly texturing errors and a couple potential softlocks
+- Added armor and sometimes health (and occasional monster placement tweaks) to skills 1-3 in conjunction with fully retesting each skill setting, with the goal of making each feel fully consistent and properly targeted toward an intended audience
+- Added some more detailing to a few parts of `M1` and `M2` that felt bare and inconsistent compared to the rest of the episode
+- `M2`, better conveyance for a switch in the dock area
+- `M2`, fixed the MIDI to loop properly in recent versions of *GZDoom* (thanks to <Volasaurus> for the fix)
+- `M3`, better conveyance for the Green Key
+- `M3`, the boss guarding the megasecret is now a Maulotaur on all skill settings, because the Liches on lower settings felt dumbed down; on skill 4, it's now two Maulotaurs
+- `M4`, fixed a lift to behave more intuitively
+- `M9`, fixed monsters not dying when they fell into the abyss
+- `M6`, gave the boss arena a little more space to move around in
+- `M7`, fixed monsters piling up in a southeast room (with another set of chaotic monster teleport dispensers, a la the other three corners)
+- `M7`, the Green Key battle now has an Enchanted Shield on all difficulty settings, making it reliably beatable
+- Added ACS script in nearly all maps that alerts off-map monsters of your existence. In other words, you can't avoid monster teleports by not shooting anymore
+- Rocastus and the High Disciple (second form) each have 500 less health (now 2000 for Rocastus, 2500 for the High Disciple)
+- Chaos Serpent fireballs have a slower movement speed and are easier to dodge; used the red Serpent from `Faithless Trilogy` as the reference for the new speed
+- Fixed dynamic lights for the Chaos Serpent fireballs
+- Improved the Lightbringer pickup sprite
+- Smoother weapon animations code for the Lightbringer, thanks to <Xtyfe> on ZDoom Forums
+- Fixed the Lightbringer's ripper / bounce behavior to work properly in recent versions of *GZDoom*
+- Nitrogolem projectiles have a reduced sound rolloff so they're not so loud, as in recent `Wayfarer's Tome` builds
+- Fixed the Staff melee range (regular, zerked, Tomed), as in recent `Wayfarer's Tome` builds
+- Fixed the Gargoyle's charge attack behavior, as in recent `Wayfarer's Tome` builds
+- Added improvements to how the Maulotaur's ground crawler deals damage, as in recent `Wayfarer's Tome` builds
+- Disciples drop a version of the Sigil of Power that doesn't count as an item, as in `Wayfarer's Tome`
+- Added an alternate version version of the Chaos Serpent that doesn't drop any items, and replaced all turreted Chaos Serpents with this version
+- Fixed DECALDEF, as in recent `Wayfarer's Tome` builds
+- Fixed KEYCONF hotkey bindings, as in recent `Wayfarer's Tome` builds
+- Added the Automatic Wand Start / Crossbow Start options, as in `Wayfarer's Tome`. These are in the main menu under "Wayfarer Options"
+- Removed the unused MIDI files from the WAD itself; they can still be found in the zip download
+- Provided a better explanation of difficulty settings in the included *[2] textfile*
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch 
+*Build Time				: A bit over two years 
+*Editor(s) used			: *Slade 3*, *Doom Builder 2*, *Doom Builder X*
+*Known Bugs				: None 
+*May Not Run With...	: Anything other than *ZDoom*/*GZDoom*
+*Tested With...			: *GZDoom* 4.3.3, 4.7.1. Any relatively recent version of the ports should be fine
+
+:Credits
+:-------------------------------------------------------------------------------
+*Mapping, gameplay rebalance, new items, story:
+- <Not Jabba>
+
+*Textures:
+- `Baker's Legacy`
+- `Hexen`
+- <Fuzzball>
+- <Ichor>
+- <ETTiNGRiNDER>
+- Medieval Texture Pack
+- Forcefields, waterfalls, weapon/armor racks,\\minor edits / recolors by <Not Jabba>
+
+*Skies:
+- <Mechadon>
+
+*Decorations:
+- `Hexen`
+- Fire Bowl and Fire Pillars by <zrrion the insect>
+- D'Sparil Statue by <Captain Toenail>
+- Hanging skull clusters by <Soundblock>, from `Echelon` (edited by <Not Jabba>)
+- Inkwell, Minor edits/recolors by <Not Jabba>
+
+*Weapons:
+- Lightbringer by <Ghastly_dragon>, <Xaser>, <Zero Prophet>, <Neoworm>, <Eriance>, and <NeuralStunner>; additional sound from <Captain Toenail>'s `Apotheosis`
+- Weapon sprite brightmaps and smoother Hellstaff animation by <Spadger>
+- Staff animations by <OSJC>
+- Sound edits by <Xaser>
+- Phoenix Rod replacement sounds from `Hexen 2`
+
+*Monsters:
+- Butcher (Serpent Keeper) by <Rolls> and <Ghastly_dragon>
+- Juggernaut (Rocastus) by <Captain Toenail>
+- Disciple (High Disciple) by <Eriance> and <Ghastly_dragon>
+- Sound edits by <Xaser>
+- Additional Decorate / balancing by <Not Jabba>
+
+*Music:
+- E1M1: "Coldwater" by <Viscra Maelstrom>
+- E1M2: "Low Fire" by <Alfonzo>
+- E1M3: Lands_76.mid from <Lands of Lore>
+- E1M4: "Ominous Wind" by <Viscra Maelstrom>,
+        with inspiration from "Guardhouse" by <James Paddock>
+- E1M5: "The Hordes of Caoimhin" by <Viscra Maelstrom>
+- E1M9: `Freedoom E3M8` by <Blueworrior>
+- E1M6: "Unsanctified Grounds" by <Viscra Maelstrom>
+- E1M7: "Curse of the Avenger" by <Viscra Maelstrom>
+- E1M8: "Gateway" by <Viscra Maelstrom>
+- Title: "The Wayfarer" by <Viscra Maelstrom>
+- Intermission: "Herian Winter" by <Viscra Maelstrom>
+- Story: "What Lies Beyond" by <Viscra Maelstrom>
+
+*Primary Playtesting:
+- <Fonze>, <rdwpa>
+
+*Special Thanks:
+- <RottKing> for miscellaneous gameplay fixes and tweaks from `Elf Gets Pissed`
+- <MorbidBrute> for `Emerald Bathhouse`, which provided general inspiration and texture choices for `E1M2` and `E1M3`
+- <Kristus> for the KEYCONF from `Curse of D'Sparil`
+- <NAL> for the Future TimeSplitters Regular font,\\which is used in the titlepic
+- <Gez>, <Graf Zahl>, and <Spadger> for help with Decorate
+- <Dragonfly>, <anotak>, <Arctangent>, <jmickle>, <Spadger>,\\and <Bloodshedder> for help with ACS
+- <Boris>, <Da Werecat>, <fluffyshambler>, <FrancisT18>, <Gez>, <Ichor>, <Jimmy>, <MorbidBrute>, and <Spadger> for additional playtesting and bug catching

@@ -118,14 +118,15 @@ TYPE Theme
     themeWarning AS _BYTE 'which theme to switch to for warning boxes
 END TYPE
 
-DIM SHARED Themes(0 TO 5) AS Theme
+DIM SHARED Themes(0 TO 6) AS Theme
 
 CONST THEME_HELP = 0
 CONST THEME_WARNING = 1
 CONST THEME_BLACK = 2
 CONST THEME_BLUE = 3
 CONST THEME_RED = 4
-CONST THEME_GREY = 5
+CONST THEME_GREEN = 5
+CONST THEME_GREY = 6
 
 LET Themes(THEME_HELP).name = "HELP"
 LET Themes(THEME_HELP).colorBack = CYAN
@@ -191,6 +192,19 @@ LET Themes(THEME_RED).colorKey = PINK
 LET Themes(THEME_RED).colorPageTab = ROSE
 LET Themes(THEME_RED).themeHeader = THEME_BLUE
 LET Themes(THEME_RED).themeWarning = THEME_WARNING
+
+LET Themes(THEME_GREEN).name = "GREEN"
+LET Themes(THEME_GREEN).colorBack = GREEN
+LET Themes(THEME_GREEN).colorFore = LIME
+LET Themes(THEME_GREEN).colorBold = WHITE
+LET Themes(THEME_GREEN).colorItalic = BLUE
+LET Themes(THEME_GREEN).colorTerm = AQUA
+LET Themes(THEME_GREEN).colorHead = YELLOW
+LET Themes(THEME_GREEN).colorParen = ROSE
+LET Themes(THEME_GREEN).colorKey = AQUA
+LET Themes(THEME_GREEN).colorPageTab = LIME
+LET Themes(THEME_GREEN).themeHeader = THEME_BLUE
+LET Themes(THEME_GREEN).themeWarning = THEME_WARNING
 
 LET Themes(THEME_GREY).name = "GREY"
 LET Themes(THEME_GREY).colorBack = LTGREY

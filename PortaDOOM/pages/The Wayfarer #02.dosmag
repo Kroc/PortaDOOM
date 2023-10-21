@@ -1,0 +1,165 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\wayfarer\play-wayfarer.ini"
+$KEY:T=SHELL:wads\episodes\wayfarer\wayfarer.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/104838
+
+:1. Notes About Playing `The Wayfarer`
+:===============================================================================
+:1.1. Compatibility and Settings
+:-------------------------------------------------------------------------------
+
+Jumping and Crouching are not intended and have been disabled. If you wish to re-enable them, you can do this from the Gameplay Options menu in *GZDoom*. I've done my best to make sure you can't cause game-breaking bugs or leave the playable area, but you may be able to skip certain areas or get some secrets more easily than intended if you jump / crouch. You're on an honor system; please don't abuse these features and then complain about it.
+
+I've primarily playtested these maps in *ZDoom* 2.8.1 and in *GZDoom* with software rendering and dynamic lights off, so the lighting and other visual features are geared toward that. I would suggest using software or truecolor software mode unless you have a strong preference for OpenGL.
+
+:1.2. Difficulty Levels
+:-------------------------------------------------------------------------------
+
+Difficulty settings have been fully tested and are designed as follows:
+
+- *Skill 1 / Skill 2:* Intended for very casual play with saves or semi-casual without. Generally designed around the idea that if someone I know who isn't a gamer wants to see my maps, they will have a viable skill setting, and skill 1 in particular can be seen as a "story mode". Resources are highly abundant, and inventory items are just for fun, never important for winning
+
+- *Skill 3:* Designed to keep the adrenaline up but not be too strenuous. The average experienced `Doom` player shouldn't have much trouble beating the maps, and shouldn't have to worry much about managing inventory items mid-combat
+
+- *Skill 4:* Challenging, especially in the later levels. This is the primary setting for experienced `Doom` players seeking a challenge (e.g., those who play `Speed of Doom` or `Valiant` on UV) and is preferable to skill 5 for a first playthrough. Managing inventory items mid-combat is important in the tougher battles, and you should be reasonably familiar with the behavior of `Heretic`'s items and Tomed weapons, as strategic thinking is required
+
+- *Skill 5:* An extra challenge for players who find Skill 4 too comfortable. For those who are unfamiliar with `Heretic`, enemies do not respawn as they do in `Doom`'s Nightmare setting, but all enemies and enemy projectiles are faster. Gameplay is not tested / balanced for this setting.
+
+:1.3. Tips and Strategies
+:-------------------------------------------------------------------------------
+
+In creating `The Wayfarer`, I've tried to get the most out of what `Heretic` has to offer, and although you can get pretty far with just the standard weapons and `Doom` tactics, it's important to understand that extra bit of mechanical depth that `Heretic` has. In particular, if you're playing on a higher difficulty setting, you'll need to be familiar with the inventory system and how to use the items, as well as the Tomed weapons.
+
+*TIP:* If you play with a mouse, I recommend binding the mouse wheel to scroll through your inventory items, and if you have a gaming mouse, bind one of the extra buttons to select/use items. This makes it a lot easier to manage your inventory during combat. You can also bind hotkeys to specific inventory items in the controls menu.
+
+Aside from the portable health items, the most important item in the game is the Tome of Power (and its non-inventoried equivalent, the Sigil of Power). By giving all of your weapons more powerful attacks, it can give you an edge in a difficult fight, save you when you're backed into a corner, or just let you plow ahead more quickly by slicing a path through the opposition. The cool thing about Tomed weapons is that each one has a distinct niche, and each one is extremely powerful in the right situation. Don't assume that because one of them seems more powerful, it will always be the best choice for a given situation.
+
+- *Tomed Elven Wand:* Essentially a weak rapid-fire hitscan shotgun. Though it's much more potent compared to the regular Wand, it will be largely obsolete if you have any other ranged weapon. It's not as powerful as the Tomed Crossbow, but it has the benefit of being a hitscan attack and is fairly likely to stunlock enemies.
+
+- *Tomed Crossbow:* A projectile auto-shotgun that puts out damage in a narrow fan shape. Because its damage is concentrated, it's a good choice for taking down powerful enemies, mowing through closely packed groups, or cleaning up the remnants of a bigger fight.
+
+- *Tomed Dragon Claw:* Fires relatively slowly, but is extremely good for crowd control. Its attack is effectively a hitscan, but on impact, it fires out ripper projectiles in multiple directions. If you can aim it into the middle of a cluster of enemies, it will damage many of them at once; if you've got enemies all around you, it offers good damage coverage over a wide area. Because of its high-damage hitscan attack, it's usually the best Tomed weapon against flying enemies.
+
+- *Tomed Hellstaff:* Fires a fairly powerful heat-seeking projectile that creates a rainstorm of damaging energy projectiles on impact. Only two rainstorms can exist at a time, so the best use is usually to fire off two shots to create a defensive wall and then switch to a different weapon. However, sustained fire from this weapon is pretty powerful if you don't have a better option.
+
+- *Tomed Phoenix Rod:* A short-range but extremely powerful flamethrower that melts enemies like butter. Though its limited range makes it difficult to use when you're under heavy fire, it's a very good weapon for eliminating powerful individual enemies quickly or clearing an escape path, and it has a high chance of stunlocking.
+
+- *Tomed Lightbringer:* Essentially a BFG, but easier and more intuitive to control. It charges up and fires BFG-style tracers, hitting a large number of enemies at once. Good for breaking up large numbers of enemies very quickly if they are in a concentrated arrangement, dealing a killing blow to multiple scattered enemies, or dealing massive damage to a single enemy.
+
+- *Tomed Gauntlets of the Necromancer:* A utility weapon that drains health from enemies and gives it to the player. The usefulness of such a weapon should be obvious. It has a longer range than the standard Gauntlets.
+
+- *The Morph Ovum and Time Bomb of the Ancients* are good support items if you can afford to juggle them. The Morph Ovum in particular can be the difference between life and death if you are cornered, since it immediately renders most enemies completely harmless. Firing off several Morph Ovums or carpet bombing with Time Bombs while simultaneously using Tomed Weapons can result in mind-boggling amounts of damage to your unfortunate enemies.
+
+- *The Shadowsphere* is essentially a limited invincibility powerup that comes at the cost of making enemies aim erratically, like `Doom`'s invisibility sphere. It makes the player immune to red and green Undead Warrior axes and the ice attacks from Iron Liches. Most importantly, it foils the tracking ability of Iron Lich tornadoes, making them effectively useless. Since it makes the player nearly immune to two common enemies, it can be used strategically to make certain battles much less dangerous.
+
+:2. The World of The Wayfarer
+:===============================================================================
+:2.1. Story
+:-------------------------------------------------------------------------------
+
+Your name is Corvus, and because no one has spoken it in so long that you have nearly forgotten, it has become a watchword within your soul, an object of great importance to you. But among the servants of D'Sparil, who still sometimes speak the old tongues of men, you are known simply as the Wayfarer. To them, you are an almost mythical figure, a force of aimless, wandering retribution, leaving behind a weave of destruction like a termite boring endless paths through a wooden wall. You have destroyed their master, and they no longer know what you seek.
+
+What you desire is a purpose: a ragged band of survivors to unite, or perhaps, failing that, some other realm to protect, some greater vengeance to bring down upon the demons that still stalk among the stars. But though you have crossed the continents of the Seven Nations and forayed into far stranger realms, you cannot find another living soul -- only an empire of soulless husks and mindless automatons, hunkered into an endless succession of dark fortresses and ruined cities.
+
+You have all but abandoned hope when you come across the first sign: a campfire, weeks old and all but buried. Casting about, you pick up the trail, a series of signals that have been left for only a master tracker to find. You follow the trail for many days, at last finding the source among the broken cliffs of a secluded seaside. She is an old ranger, a Sidhe like yourself, and she is in her final hours, the wound in her side reeking of foul poison.
+
+Before she succumbs, she tells you all she knows: across the water lies the Onyx Citadel, the greatest of D'Sparil's fortresses in this realm. Somewhere within its walls, the High Disciple of D'Sparil keeps the Serpent Gate, the path by which D'Sparil and his brothers came to the world and by which the two elder Serpent Riders left in search of other conquests.
+
+The old ranger has hidden a boat in the rocks below. It is small, but you will need stealth to make the crossing without being overcome on the water. And so you make the journey, following the path the old ranger laid out for you. Beyond the Bridge of Karazan is a small port, weakly defended, and if you can gain a foothold there, the way to the citadel will be open to you. You float into the harbor in total silence, oars shipped, cloaked in shadows, barely daring to breathe. But at last, you stand upon the docks.
+
+You take a deep breath, mourning for the old ranger, and for all of your people who are lost. But you also feel a fire burning deep inside you, and you know that nothing will stop you from slaying the High Disciple and claiming the Serpent Gate. And then, the world of Parthoris and the stars themselves will be at your fingertips.
+
+:2.2. New Artifacts
+:-------------------------------------------------------------------------------
+
+*Sigil of Power:* Created by the Serpent Rider and his minions as an answer to the Sidhe elves' Tome of Power, this corrupt artifact bears the sulphurous scent of evil. Nonetheless, it remains quite useful in battle, and marauding Sidhe should not be averse to using the artifact against its creators. It grants all of the same weapon powerups as the Tome of Power, but activates immediately on pickup and lasts for 15 seconds instead of 40.
+
+*Might of Tysonius:* This artifact was the prized creation of the warrior-mage Tysonius, who preferred to face his opponents head-on but was not above magically augmenting his own abilities beforehand. Upon pickup, it instantly grants 25 health and increases the damage of the Staff as though it were Tomed for the duration of the level. (Note: this augmented Staff does not hit ghost enemies; Tyson players can still hit ghosts using the Wand, Gauntlets, or Tomed Staff.)
+
+:2.3. New Weapons
+:-------------------------------------------------------------------------------
+
+*Lightbringer:* Legend has it that the Lightbringer was gifted to the Sidhe by gods from another world. Whatever its origins, it is the most powerful weapon the Sidhe possessed, and much was written of its greater elegance and effectiveness compared to the human-made Firemace. The weapon fires bolts of magical light that pierce through multiple enemies and ricochet off of walls, making it very effective against large groups of foes or for dealing repeated damage to more powerful enemies in enclosed spaces. When Tomed, the weapon delivers a searing swath of damage designed to melt the flesh off of nearly every enemy in sight.
+
+:2.4. New Enemies
+:-------------------------------------------------------------------------------
+
+*Serpent Keeper:* The Onyx Citadel is home to D'Sparil's serpent breeding program, and these powerful once-human warriors remain devoted to the daily care and breeding of the beasts, regarding it as the key to their dead master's legacy. In battle, they are relentless and deadly, particularly owing to their ability to put on bursts of extra speed without warning. They are magically immune to the fireballs of the Chaos Serpents.
+
+*Lesser Chaos Serpent:* During the conquest, these monstrous reptilian creatures were often found at the front lines of D'Sparil's armies, where they sowed terror among the Serpent Rider's enemies. Now, however, they are more likely to be seen wandering the grounds of their master's many fortresses, where they enjoy the privileges of treasured pets -- albeit treasured pets that are violently unpredictable and extremely dangerous even to their own allies. Though they are somewhat weaker in constitution than D'Sparil's mount, their fire-spewing abilities are considerably more impressive, making them formidable foes.
+
+*Rocastus:* Rocastus is a true believer. His devotion and his skill in service to D'Sparil were so great that the Serpent Rider granted him true immortality, rather than the sham of unlife that served as the "reward" for his lesser servants -- though arguably this is because Rocastus had no shred of humanity that could be robbed from him. Though his duties as head serpent keeper have kept him near the grounds of the Onyx Citadel, he knows that you killed his master and wants nothing more than to destroy you. Beware, lest you be crushed between his gauntleted fists.
+
+*Greater Chaos Serpent:* Occasionally, the serpent breeding program produces specimens that are vastly more powerful than the common Chaos Serpent. D'Sparil used one such creature as a mount. Another dwells at the Onyx Citadel, under the personal care of Rocastus.
+
+*The High Disciple of D'Sparil:* Entrenched within the Onyx Citadel, the High Disciple is now the de facto ruler of all that was once D'Sparil's domain. Little is known about him, but it was rumored (in the time when there were still living tongues to spread rumors) that his abilities nearly rivaled those of D'Sparil himself. Defeating him will be no easy task, as he will not only be well guarded, but will also deploy a variety of powerful magic against you.
+
+:3. Changes From `Heretic`
+:===============================================================================
+
+In addition to the new content listed above, I have implemented a variety of mostly minor tweaks to the game, which are intended to make the gameplay smoother, improve the overall balance, fix a few weird design choices that could be considered features but are probably bugs, and so on. The goal of these design tweaks, along with the new additions to the bestiary and arsenal, is to make the game more fun to play and easier for level designers to work with. The following is a complete list of changes.
+
+*Player Weapons:
+- The Staff uses custom animations by <OSJC> that make it feel more like a weapon and less like a cattle prod
+- The Staff has a longer melee range
+- The Tomed Staff is significantly more powerful, and it now hits ghost enemies
+- The Gauntlets are slightly more powerful and are more likely to stunlock enemies
+- The Elven Wand's shot is now a bit more powerful. Both the un-Tomed and Tomed versions of the Wand fire slightly faster
+- The Ethereal Crossbow has been beefed up to feel more like a true shotgun weapon. It now has four side bolts instead of two, and the side bolts do more damage. To compensate, the weapon is slower to refire. The Tomed version does slightly more damage as well
+- The Hellstaff does slightly more damage with each shot, and its projectiles are now heat-seeking
+- The Hellstaff's animation is less jerky and more in line with the firing speed of the weapon
+- The Tomed Hellstaff's projectile rain lasts longer, and the rain projectiles no longer knock enemies back. This allows enemies to enter the storm, dramatically increasing the weapon's effectiveness. To compensate, the weapon now uses 10 ammo per shot instead of 5
+- The Tomed Phoenix Rod is more powerful to provide better compensation for its short range. It also has less knockback when it hits enemies
+- The range of the Tomed Phoenix Rod has been increased somewhat, though it is still a short-range weapon
+- The Tomed Phoenix Rod has had its attack behavior rewritten to eliminate the unpleasant hardcoding. It no longer transfers the player's momentum to the projectile (meaning that you can now aim and dodge at the same time), and it depletes ammo steadily over time instead of the wonky vanilla behavior where it depleted one ammo for each time you hold down fire and then forced the weapon to shut down periodically
+- Following <RottKing>'s lead from `Elf Gets Pissed`, the Lightbringer has been added to the game as a replacement for the Firemace. The Firemace hasn't been overwritten, meaning that you can place both weapons on a map or cheat in the Firemace if desired
+- The Firemace (if used) spawns 100 percent of the time instead of 75 percent. It can also be placed at multiple locations in the same level, rather than randomly spawning in only one location
+- The Firemace (if used) does about 50 percent more damage. The damage of the main sphere projectiles has been increased, while the occasional larger splitting spheres are the same as before
+- The large Dragon Claw ammo orb now gives 30 ammo instead of 25
+- The brightness levels of various weapons have been customized / fixed. Most weapons use the set of custom brightmaps from `Elf Gets Pissed`. The Tomed Staff and Tomed Gauntlets are bright even when idle to reflect the electrical energy around them. All ammo pickups are now bright
+
+*Artifacts:
+- The Chaos Device no longer transfers between levels
+- You can now carry up to 25 Time Bombs of the Ancients, instead of the default maximum of 16
+- Time Bombs of the Ancients no longer count toward item percentage
+- The Ring of Invulnerability and Chaos Device are now bright
+- The Morph Ovum uses custom brightmaps so that the electrical energy around the artifact is always bright
+
+*Enemies:
+- The Gargoyle fireball, Undead Warrior green axe, Weredragon fireball, both Ophidian projectiles, and the Maulotaur's small spreading fireballs all do slightly more damage. The Weredragon fireball and both Ophidian projectiles are slightly faster
+- The Maulotaur's ground crawler attack delivers damage a bit differently. In vanilla Heretic, a direct frontal hit does low damage, and the residual fire trail does massive damage. With the mod, a direct frontal hit does full damage, and the residual fire trail's damage is reduced a bit; it's still very powerful, but easier to tank a hit if you have armor
+- The Maulotaur's melee attack deals splash damage within a tight radius, significantly increasing the overall power of the attack
+- The Weredragon's melee attack does significantly more damage, and its melee range is a bit longer
+- The Weredragon has higher health (300 instead of 220) to help it function as more of a tank enemy
+- The weaker melee Gargoyle variant uses its charge attack slightly more often
+- The Nitrogolem and Undead Warrior have slightly less health (Note: the Nitrogolem Ghost and Undead Warrior Ghost still have the same health as in vanilla `Heretic`)
+- The Ophidian and Maulotaur have less health
+- The Weredragon's fireball and contrail are now bright, and the Weredragon lights up when firing
+- The Disciple lights up during its attack windup and death
+- The Sabreclaw and Iron Lich light up during death
+- The Sabreclaw, Weredragon, and Ophidian have slightly higher mass
+- The Iron Lich has significantly higher mass
+- All Golem/Nitrogolem variants have slightly reduced speed
+- Gargoyles and Fire Gargoyles will no longer infight with each other
+- Golems, Golem Ghosts, Nitrogolems, and Nitrogolem Ghosts will no longer infight with each other
+- Enemies no longer infight with the Iron Lich
+- The Weredragon drops five Crossbow bolts instead of ten
+- The Ophidian drops one Phoenix Rod ammo instead of five
+- The Maulotaur drops a large Phoenix Rod ammo instead of a small one that somehow gives 10 ammo
+- The Sabreclaw is less likely to drop Hellstaff runes, and the dropped runes provide 10 ammo instead of 20
+- The Disciple now potentially drops the Sigil of Power instead of the Tome of Power
+- The Maulotaur's Mystic Urn drop is rarer (about 25 percent as likely as before)
+- Ghost enemies and players using the Shadowsphere are now immune to the ice shards from the Iron Lich ice ball. Previously, they were immune to the ice ball but not the shards
+
+*Sounds:
+- The sound "rolloff" range (the distance at which sounds begin to diminish in volume) has been increased to 200, as in `Doom`. Previously it was 0, which is why `Heretic` sounds so weirdly quiet. Sounds for the Iron Lich, Lesser Chaos Serpent, Phoenix Rod explosion, and Time Bomb of the Ancients explosion have a longer rolloff/max distance beyond the new default ranges. The scream from the Nitrogolem's projectile has a shorter rolloff/max distance to so it doesn't get too annoying but you can still tell when it's coming at you
+- The Staff previously had a swinging sound built into its hit sound, and played nothing when it missed. Now, it plays a swinging sound whenever it is used, with a separate sound for impact
+- The Tomed Wand fire and Hellstaff fire sounds have been edited to sound more powerful
+- The Phoenix Rod fire and Phoenix Rod impact sounds have been replaced with more powerful sounds
+- The Gargoyle/Fire Gargoyle now has separate sounds for its regular and gib deaths
+- The Nitrogolem now plays sounds when it charges up and when it fires
+- The Fire Gargoyle, Nitrogolem, Disciple, Weredragon, Ophidian, Iron Lich, and Maulotaur projectiles now have impact sounds
+
+*Graphics/Miscellaneous:
+- Water flats now tile properly, without a sharp seam around the edges
+- Removed a stray floating pixel from the Weredragon corpse

@@ -12,14 +12,20 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
 :Requires : *zdoom		Includes : *+Sounds +Graphics
 :-------------------------------------------------------------------------------
 
-An expansion episode for Hexen, taking place long after the events of the original.
+An expansion episode for `Hexen`, taking place long after the events of the original.
+
+$KEY:G=URL:https://gog.com/game/hexen_beyond_heretic
+$KEY:S=URL:https://store.steampowered.com/app/2360/
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HEXEN.WAD":
+! :-----------------------------------------------------------------------------
+! If you own _"Hexen: Beyond Heretic"_ on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file "HEXEN.WAD" in the "files\wads" folder.
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: From scratch
 *Build Time				: On and off for about a year
-*Editor(s) used			: DB, DB2, XWE, ZENNODE, ACC
-*May Not Run With...	: Anything not Zdoom compatibl.
+*Editor(s) used			: *DB*, *DB2*, *XWE*, *ZENNODE*, *ACC*
+*May Not Run With...	: Anything not *Zdoom* compatible
 *Known Bugs				: None that are I am aware of
 
 :Credits
@@ -31,6 +37,6 @@ An expansion episode for Hexen, taking place long after the events of the origin
 - Cleric widescreen fire sprites by <Neoworm>
 - All other widescreen weapon sprite mods by <Doorhenge>
 - <Entryway> for making and helping with HexenP hacking
-- <Vermil> for Doomsday code help
-- <John Romero> for Heretic and Hexen
-- ID and Raven of course for the games
+- <Vermil> for *Doomsday* code help
+- <John Romero> for `Heretic` and `Hexen`
+- <ID> and <Raven> of course for the games

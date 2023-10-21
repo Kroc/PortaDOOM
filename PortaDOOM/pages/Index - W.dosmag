@@ -3,7 +3,8 @@ $KEY:A=GOTO:Warp House
 $KEY:B=GOTO:Cabal Series #03
 $KEY:C=GOTO:Waterlab GZD
 $KEY:D=GOTO:Water Spirit
-$KEY:E=GOTO:Cabal Series #06
+$KEY:E=GOTO:The Wayfarer
+$KEY:F=GOTO:Cabal Series #06
 
 ^C:INDEX :: W
 
@@ -13,4 +14,5 @@ $KEY:E=GOTO:Cabal Series #06
 - [B] *Watchtower, The (Cabal Series)					People
 - [C] *Waterlab GZD										Onesies
 - [D] *Water Spirit										People
-- [E] *We Who are About to Die (Cabal Series)			People
+- [E] *Wayfarer, The									Episodes
+- [F] *We Who are About to Die (Cabal Series)			People
