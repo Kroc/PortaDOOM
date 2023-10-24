@@ -3,6 +3,7 @@ $KEY:A=GOTO:Legacy of Heroes
 $KEY:B=GOTO:lilith.pk3
 $KEY:C=GOTO:Lost Cvilization
 $KEY:D=GOTO:Luducrium
+$KEY:E=GOTO:Lunar Catastrophe
 
 ^C:INDEX :: L
 
@@ -12,3 +13,4 @@ $KEY:D=GOTO:Luducrium
 - [B] *lilith.pk3										Episodes
 - [C] *Lost Civilization								MegaWADs
 - [D] *Luducrium										Jokes
+- [E] *Lunar Catastrophe								MegaWADs

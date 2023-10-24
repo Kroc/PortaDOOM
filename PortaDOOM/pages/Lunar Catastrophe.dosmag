@@ -1,0 +1,83 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:launcher.exe "wads\megawads\lunar\play-lunar.ini"
+$KEY:T=SHELL:wads\megawads\lunar\Lunar.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/103629
+
+:Lunar Catastrophe                                  * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2018>12>30	  Author : <Miss Bubbles> & <Count651>
+:Levels   : *36			   Modes : *Single, Co-op, Deathmatch
+:Requires : *gzdoom		Includes : *+Graphics
+:-------------------------------------------------------------------------------
+
+These maps are without a doubt strongly influenced by the original game. We aimed to emulate each developer's mapping style when appropriate and the overall feeling of playing the original `Doom`, but of course we took some liberties along the way and added in our own touches. We hope you enjoy the levels!
+
+Let us know what you think over at [W: Doomworld]!
+
+:---
+
+This wad is intended to be played without jumping or crouching!
+
+Each level contains deathmatch spawns, and some levels contain multiplayer tagged weaponry for deathmatch and co-op purposes. The entire wad is mapped with co-op in mind, so hopefully there should never be any issues with getting locked out of areas or being unable to progress because someone died. However, not every damaging pit can be climbed out of once you fall in, so watch out!
+
+Each level has its own par time as well!
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch 
+*Build Time				: About 2 years off and on (see below)
+*Editor(s) used			: *DoomBuilder*, *Gimp*, *Paint* and DoomWord
+*Known Bugs				: None that we know of aside from the occasional slimetrail
+*Tested With...			: *ZDoom*
+
+:Map Credits:
+:-------------------------------------------------------------------------------
+*Episode One
+
+`E1M1` - <Sam>
+`E1M2` - <Sam>
+`E1M3` - <Sam>
+`E1M4` - <Sam>
+`E1M5` - <Sam>
+`E1M6` - <Sam>
+`E1M7` - <Sam>
+`E1M8` - <Sam> & <Derek>
+`E1M9` - <Sam>
+
+*Episode Two
+
+`E2M1` - <Derek>
+`E2M2` - <Sam>
+`E2M3` - <Sam> & <Derek>
+`E2M4` - <Derek>
+`E2M5` - <Derek>
+`E2M6` - <Derek>
+`E2M7` - <Derek>
+`E2M8` - <Derek>
+`E2M9` - <Derek>
+
+*Episode Three
+
+`E3M1` - <Sam>
+`E3M2` - <Sam>
+`E3M3` - <Sam> & <Derek>
+`E3M4` - <Sam> & <Derek>
+`E3M5` - <Derek>
+`E3M6` - <Sam>
+`E3M7` - <Derek>
+`E3M8` - <Sam>
+`E3M9` - <Derek>
+
+*Episode Four
+
+`E4M1` - <Derek>
+`E4M2` - <Sam>
+`E4M3` - <Sam>
+`E4M4` - <Derek>
+`E4M5` - <Derek>
+`E4M6` - <Derek>
+`E4M7` - <Sam>
+`E4M8` - <Derek>
+`E4M9` - <Sam> & <Derek>
