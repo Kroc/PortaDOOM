@@ -4,14 +4,15 @@ $KEY:B=GOTO:Shadows of the Nightmare Realm
 $KEY:C=GOTO:Sheer Poison
 $KEY:D=GOTO:Shotgun Symphony
 $KEY:E=GOTO:Skulldash
-$KEY:F=GOTO:Stardate 20x7
-$KEY:G=GOTO:Strange Aeons
-$KEY:H=GOTO:Struggle - Antaresian Legacy
-$KEY:I=GOTO:Master Levels #10
-$KEY:J=GOTO:Sunlust
-$KEY:K=GOTO:Master Levels #11
-$KEY:L=GOTO:UAC Invasion - Supply Depot
-$KEY:M=GOTO:Swift Death
+$KEY:F=GOTO:The Slaughter Spectrum
+$KEY:G=GOTO:Stardate 20x7
+$KEY:H=GOTO:Strange Aeons
+$KEY:I=GOTO:Struggle - Antaresian Legacy
+$KEY:J=GOTO:Master Levels #10
+$KEY:K=GOTO:Sunlust
+$KEY:L=GOTO:Master Levels #11
+$KEY:M=GOTO:UAC Invasion - Supply Depot
+$KEY:N=GOTO:Swift Death
 
 ^C:INDEX :: S
 
@@ -22,11 +23,12 @@ $KEY:M=GOTO:Swift Death
 - [C] *Shotgun Symphony									Episodes
 - [D] *Sheer Poison										Onesies
 - [E] *Skulldash										Total Conversions
-- [F] *Stardate 20x7									Episodes
-- [G] *Strange Aeons									Total Conversions
-- [H] *Struggle - Antaresian Legacy						MegaWADs
-- [I] *Subspace (Master Levels)							Commercial DOOM
-- [J] *Sunlust											MegaWADs
-- [K] *Subterra (Master Levels)							Commercial DOOM
-- [L] *Supply Depot (UAC Invasion)						Onesies
-- [M] *Swift Death										MegaWADs
+- [F] *Slaughter Spectrum, The							People
+- [G] *Stardate 20x7									Episodes
+- [H] *Strange Aeons									Total Conversions
+- [I] *Struggle - Antaresian Legacy						MegaWADs
+- [J] *Subspace (Master Levels)							Commercial DOOM
+- [K] *Sunlust											MegaWADs
+- [L] *Subterra (Master Levels)							Commercial DOOM
+- [M] *Supply Depot (UAC Invasion)						Onesies
+- [N] *Swift Death										MegaWADs

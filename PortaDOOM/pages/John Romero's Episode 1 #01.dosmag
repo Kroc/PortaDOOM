@@ -1,3 +1,4 @@
+$NAV=People
 $KEY:P=SHELL:launcher.exe "wads\people\John Romero\play.ini" /GAME 3
 
 :John Romero's Episode 1
