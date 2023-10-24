@@ -2,7 +2,7 @@ $NAV=People
 $NAV=Obsidian
 $KEY:P=SHELL:launcher.exe "wads\people\obsidian\maskimxul\play-maskimxul.ini"
 $KEY:T=SHELL:wads\people\obsidian\maskimxul\MaskimXul.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/97780-maskim-xul-what-the-heck-what-is-this-doing-on-the-front-page/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/97780
 
 :Maskim Xul											* 2018 Cacoward Winner! *
 :===============================================================================

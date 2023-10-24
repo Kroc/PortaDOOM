@@ -1,7 +1,7 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\uof\play-uof.ini"
 $KEY:T=SHELL:wads\onesies\uof\uof.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/100574-updated-umbra-of-fate-v12-8-nov-2018/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/100574
 
 :Umbra of Fate									 * 2018 Cacoward Runner Up! *
 :===============================================================================

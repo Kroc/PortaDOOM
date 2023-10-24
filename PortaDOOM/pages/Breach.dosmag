@@ -1,7 +1,7 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\breach\play-breach.ini"
 $KEY:T=SHELL:wads\onesies\breach\breach.txt
-$KEY:W=URL:https://www.doomworld.com/vb/wads-mods/71430-breach-updated-to-beta3/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/71430
 
 :Breach                                             * 2015 Cacoward Winner! *
 :===============================================================================

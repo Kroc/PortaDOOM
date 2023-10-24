@@ -1,6 +1,6 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\Nihility\play-nihility.ini"
-$KEY:W=URL:https://www.doomworld.com/vb/wads-mods/85591
+$KEY:W=URL:https://www.doomworld.com/forum/topic/85591
 
 :Nihility                                           * 2016 Cacoward Winner! *
 :===============================================================================

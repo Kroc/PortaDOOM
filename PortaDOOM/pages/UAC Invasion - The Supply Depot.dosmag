@@ -1,7 +1,7 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\supplydp\play-supplydp.ini"
 $KEY:T=SHELL:wads\onesies\supplydp\SupplyDp.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/102152-uac-invasion-the-supply-depot/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/102152
 
 :UAC Invasion: The Supply Depot						* Cacoward 2018 Winner! *
 :===============================================================================

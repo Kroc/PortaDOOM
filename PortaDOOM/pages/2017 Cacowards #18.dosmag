@@ -10,7 +10,7 @@ $TITLE=The Side Column pt.II
 There's no other way to put it, the `DOOM` community is an unending river. Every time someone leaves or moves on, we've got someone new with bright eyes, new ideas, fresh plans, interesting mods. It's like a miniature circle of life, really.
 
 $KEY:L=GOTO:lilith.pk3
-$KEY:X=URL:https://www.doomworld.com/forum/topic/96943-doom-builder-x-2134-oct23-2017-map-editor-forked-from-db2/
+$KEY:X=URL:https://www.doomworld.com/forum/topic/96943
 <anotak> took everyone by surprise, shocking everybody with a one-two punch. The magnificence that was *[L] lilith.pk3* is already well-documented, but then following up right afterwards with a fork of `DoomBuilder`, called [X: DoomBuilder X] Whatever is planned in the future will be great.
 
 $KEY:N=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=57964
@@ -19,7 +19,7 @@ $KEY:N=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=57964
 $KEY:D=GOTO:Disjunction
 Despite being primarily anonymous, </vr/> has started forming some notable names and creators -- <floatRand> in particular got heads turning with *[D] Disjunction*, a fantastic mapset with just enough slaughter elements to be truly punishing. We're all looking forward to what his next project is.
 
-$KEY:O=URL:https://www.doomworld.com/forum/topic/96985-oscillation-a-9-map-boom-wad-on-idgames/
+$KEY:O=URL:https://www.doomworld.com/forum/topic/96985
 <Forli> slipped under a lot of people's radars, with an untitled 12-map project coming out in December of last year, when everyone was in the Cacoward mood and skipping over everything. But his next project, [O: Oscillation], yanked the rug out from everyone by cleanly alternating between exploration-focused maps and run-and-gun maps. Whatever he does next is going to be truly unique.
 
 With the advent of `DOOM 2016` and the new `Wolfensteins`, the community is only going to grow bigger and bigger. While these may be our MOST promising newcomers, everyone new to the community is promising, and we look forward to what all our new blood will put out.
@@ -27,7 +27,7 @@ With the advent of `DOOM 2016` and the new `Wolfensteins`, the community is only
 
 :PRESSED FOR TIME
 :===============================================================================
-$KEY:0=URL:https://www.doomworld.com/forum/topic/95544-a-new-trick-discovery-zero-press/
+$KEY:0=URL:https://www.doomworld.com/forum/topic/95544
 $KEY:1=URL:https://www.youtube.com/watch?v=J0hh-6eGHOs
 Would you believe 2017 was a breakout year for `DOOM` speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in `DOOM 2` map07 and just flick the exit switch in 3 seconds. Duh! Named [0: zero press] after its ubiquitous finder <ZeroMaster> (first recorded on [1: map15] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
 
@@ -43,7 +43,7 @@ Other notable d2all speedruns have been firmly a <ZeroMaster> domain. He has bro
 
 $KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2017\p2m81242\p2m81242.lmp"   /CMPLVL 3
 $KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\pa02-2057\pa02-2057.lmp" /CMPLVL 2
-$KEY:I=URL:https://www.doomworld.com/forum/topic/93242-e2m8-done-passive/?do=findComment&comment=1725824
+$KEY:I=URL:https://www.doomworld.com/forum/topic/93242/?do=findComment&comment=1725824
 And that's not all! 2017 has seen even more preposterous groundbreakers. In March <4shockblast> defied lame pro-tips and completed the much-theoretized [8: pacifist run of E2M8]. After mere 12 minutes of passive-aggressively hugging the Cyberdemon in a "frozen" state, a helpful lost soul completed all of the damaging. Then in September the impossible happened and the most agonizing challenge left has been conquered. <ZeroMaster> recorded the fabled pa02, the [9: pacifist run of Underhalls]. Needless to say, [I: I had to eat crow]. Hats off to both of you!
 
 $KEY:Y=URL:https://www.youtube.com/channel/UCqcYluu5zm7uqBNGL8kextA
@@ -60,5 +60,5 @@ The `DOOM` community is home to the best MIDI composition talent around, and sla
 $KEY:T=GOTO:TNT - Revilution
 This year's epic megawad OST is *[T] TNT: Revilution*, which features `Evilution`-inspired tracks from a variety of composers. There isn't a track in the lineup that's not at least fun and catchy, and there are quite a few standouts. Highlights include the return of <Jeremy Doyle>, who worked on the soundtracks for `Icarus` and `Requiem`, as well as some truly excellent stuff by <Eris Falling>, who has really come into his own as both an original composer and a remixer in the last couple of years.
 
-$KEY:V=URL:https://www.doomworld.com/forum/topic/91806-velvetic-midi-pack/#comment-1692058
+$KEY:V=URL:https://www.doomworld.com/forum/topic/91806/#comment-1692058
 In case you missed it on the forums back at the end of last year, make sure to check out the [V: Velvetic MIDI Pack], which features 36 tracks from various groups <KevenHEZ> (`Nova`, `Threnody`, etc.) is involved in. The music spans multiple genres, though most of it is the sort of moody metal that many consider practically synonymous with `DOOM` -- a great resource for future mappers, as only a couple of the tracks have found homes in `DOOM` projects to date. 

@@ -1,7 +1,7 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\inncnx\inncnx1\play-inncnx1.ini"
 $KEY:T=SHELL:wads\episodes\inncnx\inncnx1\inncnx.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/87187-innocence-x-v12-now-on-idgames/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/87187
 
 :Innocence X											(Innocence X Series)
 :===============================================================================

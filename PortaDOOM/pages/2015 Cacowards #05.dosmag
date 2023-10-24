@@ -2,7 +2,7 @@ $THEME=BLACK
 $TITLE=Top 10 pt.III
 $KEY:3=GOTO:Skulldash
 $REM=Include this WAD
-$KEY:G=URL:https://www.doomworld.com/forum/topic/69813-doom-the-golden-souls-even-more-definitive-edition-released/
+$KEY:G=URL:https://www.doomworld.com/forum/topic/69813
 
 ^C:2015 CACOWARDS :: TOP 10 pt.III
 

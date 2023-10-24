@@ -1,7 +1,7 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\dotb\play-dotb.ini"
 $KEY:T=SHELL:wads\episodes\dotb\DOTB_RC3.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/92574-dimension-of-the-boomed/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/92574
 
 :Dimension of the Boomed							* Cacoward 2018 Winner! *
 :===============================================================================

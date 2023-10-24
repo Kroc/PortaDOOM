@@ -1,7 +1,7 @@
 $THEME=BLACK
 $TITLE=Top 10 pt.I
 $KEY:1=GOTO:Sunlust
-$KEY:S=URL:https://www.doomworld.com/vb/thread/46002
+$KEY:S=URL:https://www.doomworld.com/forum/topic/46002
 
 ^C:2015 CACOWARDS :: TOP 10 pt.I
 

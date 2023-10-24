@@ -1,7 +1,7 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\RAINBOW\play-rainbow.ini"
 $KEY:T=SHELL:wads\onesies\RAINBOW\RAINBOW(GZD3.2.0).txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/97787-void-and-rainbow/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/97787
 
 :Void and Rainbow                                   * 2017 Cacoward Winner! *
 :===============================================================================

@@ -22,28 +22,28 @@ Every year, there's always a giant menagerie of people releasing bigger and more
 $KEY:K=URL:https://twitter.com/Toooooasty/status/911084904095420417
 [K: Kanalang] is a interesting way to work around the lack of support for non-roman characters in `DOOM`. By replacing individual letter graphics with different Japanese characters, our friends across the ocean and aspiring weebs can chat together. Neat!
 
-$KEY:F=URL:https://www.doomworld.com/forum/topic/97101-floaterswad-lol-no-gravity-for-the-mon-mons/
+$KEY:F=URL:https://www.doomworld.com/forum/topic/97101
 [F: floaters.wad] is a simple concept: All monsters spawn on the ceiling, all monsters can fly. This radically changes the dynamic of maps right away, and if you play on a source port with freelook every map becomes skeet shooting!
 
-$KEY:C=URL:https://www.doomworld.com/forum/topic/93946-calico-10-beta/
+$KEY:C=URL:https://www.doomworld.com/forum/topic/93946
 $KEY:P=URL:https://en.wikipedia.org/wiki/Porting
 Long-time community member <Quasar> painstakingly translated the `Jaguar DOOM` source code back into a PC-friendly format to release [C: Calico], the first ever `Jaguar DOOM` source port, and one of the few ports ever to actually qualify for the name under the usual software definition of [P: "port"].
 
-$KEY:I=URL:https://www.doomworld.com/forum/topic/93569-idle-doom-tech-breakthrough-final-version/
+$KEY:I=URL:https://www.doomworld.com/forum/topic/93569
 [I: Idle Doom] is a Cookie Clicker-style idle game, taking the waiting gameplay and making it about killing demons instead of gathering grandmothers.
 
-$KEY:A=URL:https://www.doomworld.com/forum/topic/93650-antrywey-small-vanilla-level/
+$KEY:A=URL:https://www.doomworld.com/forum/topic/93650
 [A: Linguica's Antrywey] is a small vanilla `DOOM` WAD that... isn't even a WAD but is actually a savegame?
 
-$KEY:L=URL:https://www.doomworld.com/forum/topic/97468-low-res-doom/
+$KEY:L=URL:https://www.doomworld.com/forum/topic/97468
 $KEY:V=URL:https://forum.zdoom.org/viewtopic.php?f=46&t=58059
 $KEY:S=URL:https://www.doomworld.com/files/file/16510-pc-speaker-simulation/
-$KEY:B=URL:https://www.doomworld.com/forum/topic/97515-8-bit-blood-used-ketchup/
-$KEY:M=URL:https://www.doomworld.com/forum/topic/68161-8-16-bit-music-replacements/
+$KEY:B=URL:https://www.doomworld.com/forum/topic/97515
+$KEY:M=URL:https://www.doomworld.com/forum/topic/68161
 [L: Low-Res Doom], [V: Voxel Chibi Doom], [S: PC Speaker Simulation], [B: 8-bit blood], and [M: 8-bit Music] all combine together to create a unique look for `DOOM`. While plenty of jokes have been made about the indie faux-retro art style, it does have a charm to it.
 
 $KEY:D=URL:https://github.com/sneakernets/DMXOPL/
-$KEY:H=URL:https://www.doomworld.com/forum/topic/97388-hisymaks-genmidi-an-enhanced-genmidi-lump-for-opl-synth/
+$KEY:H=URL:https://www.doomworld.com/forum/topic/97388
 [D: Csonicgo's DMXOPL] meticulously tweaks the OPL3 instruments to make FM synthesis better match the classic Roland Sound Canvas, specifically designed for `DOOM`'s DMX sound library. [H: Hisymak's GENMIDI] is a similar project that edits the GENMIDI lump to improve instruments which need improvement, and leave unchanged the instruments which are iconic to DMX and `DOOM` MIDIs overall.
 
 

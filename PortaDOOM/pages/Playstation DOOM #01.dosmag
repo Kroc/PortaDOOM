@@ -1,7 +1,7 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\PSX\play-psx.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-version-2135-now-released/
-$KEY:L=URL:https://www.doomworld.com/forum/topic/84850-released-psx-doom-the-lost-levels/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/57957
+$KEY:L=URL:https://www.doomworld.com/forum/topic/84850
 
 :PlayStation DOOM (The Total Conversion) + The Lost Levels
 :===============================================================================

@@ -1,7 +1,7 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\doom404\play-doom404.ini"
 $KEY:T=SHELL:wads\megawads\doom404\doom404.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/102536-doom-404-complevel-2-megawad-now-on-idgames/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/102536
 
 :DOOM 404										 * 2018 Cacoward Runner Up! *
 :===============================================================================

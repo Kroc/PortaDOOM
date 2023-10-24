@@ -1,7 +1,7 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\ROTWB\play-rotwb.ini"
 $KEY:T=SHELL:wads\conversions\ROTWB\Readme.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/94330-rise-of-the-wool-ball-3-v12-now-gzdoom-compatible/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/94330
 
 :Rise of the Wool Ball                           * 2017 Cacoward Runner Up! *
 :===============================================================================

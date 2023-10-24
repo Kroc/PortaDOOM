@@ -1,7 +1,7 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\xa-dwire\play-xa-dwire.ini"
 $KEY:T=SHELL:wads\onesies\xa-dwire\xa-dwire.txt
-$KEY:W=URL:https://www.doomworld.com/vb/wads-mods/74767-xasermap-dead-wire/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/74767
 
 :dead.wire                                          * 2015 Cacoward Winner! *
 :===============================================================================

@@ -2,7 +2,7 @@ $NAV=People
 $NAV=Bemused
 $KEY:P=SHELL:launcher.exe "wads\people\bemused\cryogenics\play-cryogenics.ini"
 $KEY:T=SHELL:wads\people\bemused\cryogenics\Cryogenics.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/98149-cryogenics-a-small-collection-of-random-cl9-slaughterish-maps-now-on-idgames/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/98149
 
 :Cryogenics										 * 2018 Cacoward Runner Up! *
 :===============================================================================

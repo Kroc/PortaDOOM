@@ -1,6 +1,6 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\avactor\play-avactor.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/101647-avactor-updated/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/101647
 
 :Avactor: End of the Fifth Circle					* Cacoward 2018 Winner! *
 :===============================================================================

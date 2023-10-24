@@ -1,7 +1,7 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\tntr\play-tntr.ini"
 $KEY:T=SHELL:wads\megawads\tntr\TNTR.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/85791-tnt-revilution-final-release-now-on-id-games/
+$KEY:W=URL:https://www.doomworld.com/forum/topic/85791
 
 :TNT: Revilution                                 * 2017 Cacoward Runner Up! *
 :===============================================================================
