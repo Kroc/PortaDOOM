@@ -1,0 +1,74 @@
+===========================================================================
+Author                  : StormCatcher.77
+Email Address           : stormcatcher.77@yandex.ru
+Discord                 : StormCatcher.77#0440
+===========================================================================
+Title                   : Infraworld - The Hatehammer
+Filename                : infra01.wad
+Advanced engine needed	: Boom
+Primary purpose         : Single play
+===========================================================================
+
+===== Description =========================================================
+
+> Large-scale and long-term map, originally developed for the "Nova III"
+  project. Visually made in infernal and gothic styles. The map structure 
+  is designed to give the player freedom to choose the path to explore 
+  locations and make the game experience more unique and unpredictable.
+
+> The main goal is to explore the Hell, to find six yellow skull keys,
+  with which you can get out of this place. The player can choose 
+  between HMP and UV. Cooperative support is very experimental.
+
+> My special thanks to Serious_MOod, FoxPlay's, Chaingunner, Void_Weaver,
+  Newb, MyNameIs and skepticist for testing and helping with bugfixing.
+
+===== What is included ====================================================
+
+New levels              : 1
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+===== Play Information ====================================================
+
+Game                    : Doom 2
+Map #                   : MAP01
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : No
+
+===== Construction ========================================================
+
+Base                    : New from scratch
+Editor(s) used          : GZDoom Builder Bugfix R3058, Slade 3.1.1.4
+Testing:	        : PrBoom Plus 2.5.1.3, GZDoom 4.0.0
+Build Time              : From 12th September 2018 to 08th June 2019
+Release date            : 2019, June 08
+Last update             : 2020, April 05
+
+===== Used Resources ======================================================
+
+> Nova III Resource Pack
+> Community Chest 4 Texture Pack
+> Sky texture by Dragonfly
+> MIDI track: Catamenia - In The Void
+
+===== Copyright / Permissions =============================================
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.

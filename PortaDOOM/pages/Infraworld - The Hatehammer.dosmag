@@ -1,0 +1,34 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\infraworld\play-infraworld.ini"
+$KEY:T=SHELL:wads\onesies\infraworld\infra01.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/107367
+
+:Infraworld: The Hatehammer                         * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>06>08	  Author : <StormCatcher.77>
+:Levels   : *1			   Modes : *Single, Co-op
+:Requires : *gzdoom		Includes : *+Music +Graphics
+:-------------------------------------------------------------------------------
+
+Large-scale and long-term map, originally developed for the `"Nova III"` project. Visually made in infernal and gothic styles. The map structure is designed to give the player freedom to choose the path to explore locations and make the game experience more unique and unpredictable.
+
+The main goal is to explore the Hell, to find six yellow skull keys, with which you can get out of this place. The player can choose between HMP and UV. Cooperative support is very experimental.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch 
+*Build Time				: From 12th September 2018 to 08th June 2019
+*Editor(s) used			: *GZDoom Builder Bugfix* R3058, *Slade* 3.1.1.4
+*Tested With...			: *PrBoom Plus* 2.5.1.3, *GZDoom* 4.0.0
+
+:Credits:
+:-------------------------------------------------------------------------------
+My special thanks to <Serious_MOod>, <FoxPlay>'s, Chaingunner, <Void_Weaver>, <Newb>, <MyNameIs> and <skepticist> for testing and helping with bugfixing.
+
+*Used Resources:
+- `Nova III` Resource Pack
+- `Community Chest 4` Texture Pack
+- Sky texture by <Dragonfly>
+- MIDI track: Catamenia - In The Void

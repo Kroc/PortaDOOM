@@ -1,14 +1,16 @@
 $THEME=BLUE
 $KEY:A=GOTO:Cabal Series #08
-$KEY:B=GOTO:Innocence X Series #01
-$KEY:C=GOTO:Innocence X Series #02
-$KEY:D=GOTO:InstaDoom
+$KEY:B=GOTO:Infraworld - The Hatehammer
+$KEY:C=GOTO:Innocence X Series #01
+$KEY:D=GOTO:Innocence X Series #02
+$KEY:E=GOTO:InstaDoom
 
 ^C:INDEX :: I
 
 :-------------------------------------------------------------------------------
 
 - [A] *Image of Evil (Cabal Series)						People
-- [B] *Innocence X										Episodes
-- [C] *Innocence X2										Episodes
-- [D] *InstaDoom										Jokes
+- [B] *Infraworld: The Hatehammer						Onesies
+- [C] *Innocence X										Episodes
+- [D] *Innocence X2										Episodes
+- [E] *InstaDoom										Jokes
