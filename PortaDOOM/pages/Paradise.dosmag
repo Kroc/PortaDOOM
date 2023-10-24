@@ -80,7 +80,7 @@ New options are accessible via Main Menu → Mod Options, which are primarily co
 *WEAPONS:
 
 - Fist: No major changes
-- Chainsaw: Triggering the Cyber Baron’s pain state with a chainsaw is a guaranteed disarm. Damage has been increased. No other major changes
+- Chainsaw: Triggering the Cyber Baron's pain state with a chainsaw is a guaranteed disarm. Damage has been increased. No other major changes
 - Pistol: Shots are much more powerful, and much faster, than vanilla, but at the cost of having to reload every 8 bullets
 - Shotgun: Fires faster, has tighter horizontal spread but with equal vertical spread. Can fire 8 shells before reload
 - Super Shotgun: Slightly tighter horizontal spread, and a few frames faster at firing too. Really powerful as a combo-ender (ie 4 scrap shell shots into instant SSG) thanks to instant weapon switching
@@ -94,7 +94,7 @@ Note that there is a menu option to enable automatic reloading when a weapon bec
 
 *MONSTERS:
 
-- (NEW) Diabolist: Fiery-red cousin of the Archvile. Summons exploding plumes of fire beneath the player’s feet that linger for a few moments for area-denial. Punishes you for not watching your footwork
+- (NEW) Diabolist: Fiery-red cousin of the Archvile. Summons exploding plumes of fire beneath the player's feet that linger for a few moments for area-denial. Punishes you for not watching your footwork
 - (NEW) Tortured Soul: Similar to a Cacodemon, but releases out lingering toxic clouds, which damage players and other monsters alike, upon pain and death. Think of them like flying barrels
 - (NEW) Pyro Demon: A hell-knight variant whose projectile explodes into small chunks of fire that linger on the ground upon impact. Lingering fire is constant but low damage, for area denial
 - Archvile → Exile: 100 more HP than vanilla. Otherwise purely a cosmetic change
