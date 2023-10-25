@@ -1,0 +1,84 @@
+$NAV=Onesies
+$KEY:P=SHELL:launcher.exe "wads\onesies\droom\play-droom.ini"
+$KEY:T=SHELL:wads\onesies\droom\DRoom.txt
+$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/droom
+
+:Darkest Room                                    * 2019 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>07>14	  Author : <Paolo M.> aka <Paul977>
+:Levels   : *1			   Modes : *Single
+:Requires : *boom		Includes : *+Music
+:-------------------------------------------------------------------------------
+
+Tech-bases installed into black, gray and green caverns.
+
+This map is designed to be difficult\\(harder then my previous maps).
+
+I suggest to start on HMP and, eventually,\\give UV a try when you know well the map.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: Hours
+*Editor(s) used			: *Doom Builder 2*, *SLADE 3*, *WhackEd4*
+*Known Bugs				: -
+*May Not Run With...	: *Chocolate doom*, *Crispy doom*
+*Tested With...			: *PrBoom+*-2.5.1.4, *GZDoom*
+
+:Credits:
+:-------------------------------------------------------------------------------
+$KEY:F=GOTO:Finely Crafted Fetish Film
+- <id Software> and the authors of *DB2*, *SLADE 3*, *WhackEd4*
+- <Ribbiks> for creating the low life green cybers presents in this map, which I taked from [F] `finely_crafted_fetish_film.wad`
+- <Mechadon> for the sky textures (check *Additional Resources* below for a full list of all the textures used)
+- <FanTazTiCxD>, <seed>, <WH-Wilou84>, <Suitepee>, <gaspe>, <koren>, <NoisyVelvet> from Doomworld for playtesting and imputs
+
+*Additional Resources:
+
+- `cc4-tex.wad`, `GOTHICTX.WAD`, `aa-tex.wad`, `box o skies`, `Bloodstain`, `Alien Vendetta`, `Speed of Doom`
+
+*Credits list:
+
+- <NiGHTMARE>
+- <Espi>
+- <Eriance>
+- <Fredrik Johansson>
+- <Janitor>
+- <DaGGeR>
+- <Ola Bjorling>
+- <Vader>
+- <XDelusion>
+- <esselfortium>
+- <RottKing>
+- <Nuxius>
+- <Afterglow>
+- <AgentSpork>
+- <RottKing>
+- <Enjay>
+- <Huy Pham>
+- <SargeBaldy>
+- <Tormentor667>
+- The `GothicDM` Team
+- The `Requiem` Team
+- The `Eternal Doom` Team
+- <id Software>
+- <Raven Software>
+- <Rogue Entertainment>
+- <3D Realms Entertainment>
+- <LucasArts>
+- <H. R. Giger> (converted by <Stephen Renton>)
+- `Alien Vendetta` team
+- `Speed of Doom` team, <Joshy> and <Darkwave0000>
+- <Pavel Tvrzník> (<Pipicz>) of `Bloodstain`
+- `Ancient Aliens` team
+
+- This PWAD contains select texture(s) and flat(s) that can originally be found in `GothicDM` or `Gothic2`. Credit and thanks go out to the artist(s) of said flat(s) and texture(s) and also to the rest of the <Gothic Crew> (1997/98). The ORIGINAL `GothicDM(2).ZIP` can be found at the idGames Archives. Each said PKZIP archive contains thirty-two professional quality levels and music found at your favorite idGames FTP mirror:
+$KEY:1=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothicdm
+$KEY:2=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothic2
+
+	[1: idgames/levels/doom2/deathmatch/megawads/gothicdm.zip]
+	[2: idgames/levels/doom2/deathmatch/megawads/gothic2.zip]
+
+- Credits goes to all the authors of the textures used in this wad

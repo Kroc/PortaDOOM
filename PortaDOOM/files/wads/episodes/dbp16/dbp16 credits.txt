@@ -1,0 +1,130 @@
+=============
+DBP16 CREDITS
+=============
+
+----
+MAPS
+----
+
+01 "Complications" (Big Ol' Billy)
+02 "If It's Yellow..." (Big Ol' Billy)
+03 "Ad Asspera Ad Asstra" (Dmdr)
+04 "Baphometic Butt Cramp" (WalterC)
+05 "Kerplop!" (Big Ol' Billy)
+06 "Lumbar" (Scrangus McBrickdad)
+07 "The Runs" (Vertigo and Zedonk)
+08 "Voided" (Dmdr)
+09 "Intestinal Altitude" (Glenzinho)
+10 "Distending Carnage" (Hardcore_gamer)
+11 "Rumours of Tumors" (Big Ol' Billy)
+12 "Healing Nicely" (Big Ol' Billy) 
+
+
+-----
+MUSIC
+-----
+
+MAP01 (D_RUNNIN): "2nd Movement of Sinister Footwear" | Frank Zappa
+MAP02 (D_STALKS): "Alien Breakdown" | Toe Jam & Earl | seq. drumnbach
+MAP03 (D_COUNTD): "Sappers & Moles" | yakfak
+MAP04 (D_BETWEE): CHRIS.IMID ("that midi you most probably heard in any 1994 map")
+MAP05 (D_DOOM): "Big Earl Bump" | Toe Jam & Earl | seq. Jarel Jones
+MAP06 (D_THE_DA): "DK Rap" | Donkey Kong 64
+MAP07 (D_SHAWN): "Disco" | Vectorman (Geneis) | seq. Rashaed Smith
+MAP08 (D_DDTBLU): "Underground Vault" | Vectorman (Geneis) | seq. Bonyea Killebrew
+MAP09 (D_IN_CIT): "Splinter Town" | Puggsy (Genesis)
+MAP10 (D_DEAD): ?
+MAP11 (D_STLKS2): "Uncertain" | Bio Menace | Bobby Prince
+MAP12 (D_THEDA2): "Zombie goes shopping" | mouldy | Going Down
+
+Title (D_DM2TTL): "Hungry Freaks Daddy" | Frank Zappa	
+Intermission (D_DM2INT): "Let's Make the Water Turn Black" | Frank Zappa
+Text intermission (D_README): "Robot 9-12" | Dr. Robotnik's Mean Bean Machine | seq. Magnus Andersson
+
+
+---
+SFX
+---
+
+DSDOROPN	Duke Nukem 3D
+DSDORCLS	Duke Nukem 3D
+DSBDOPN		Duke Nukem 3D, Gun Commando 
+DSBDCLS		Duke Nukem 3D, Gun Commando 
+DSPSTART	Blood
+DSPSTOP		Duke Nukem 3D
+DSSTNMOV	Blood
+DSSSIT		Deathtrap Dungeons
+DSSSDTH		Deathtrap Dungeons
+DSBOSPIT	Doom, Deathtrap Dungeons
+
+
+--------
+GRAPHICS
+--------
+
+INTERPIC	DBP12, https://www.vailhealth.org/about/master-facility-plan
+
+-------
+SPRITES
+-------
+
+SMRT*		ojclatchford
+SMBT*		ojclatchford
+SMGT*		ojclatchford
+COL1-4*		Demonastery
+TBLU*		Demonastery, Doom
+TRED*		Demonastery, Doom
+SMITA0		Demonastery
+TRE1A0		DBP14
+TRE2A0		DBP14
+COL5*		Skelegant
+TGRN*		Supercupcaketactics
+BBRNA0		Supercupcaketactics
+SSWVA-J*	Head Monster (Realm 667) + Mud Golem (Shadowcaster)
+SSWVAM*		Head Monster (Realm 667)
+SSWVK,L*	Supercupcaketactics
+SSWVN-V*	Heretic
+KEENA-F*	Heretic
+PINV*		Duke Nukem 3D, Doom
+
+
+--------
+TEXTURES
+--------
+
+GUTSKY		DoomRPG
+CACOR/G		MISCTEX (an_mutt)		
+INTRO0		DBP14
+INTRO3-6	Duke Nukem 3D		
+INTRO8		DBP08
+INTRO11		DoomRPG
+INTRO14		Borat (2006), Evgeniy Pyrch (https://www.artstation.com/artwork/yb4y1Q)
+INTRO16		Duke Nukem 3D
+INTRO18		Hellfire Dreams
+INTRO19		Duke Nukem 3D
+CACOCOLA	DBP10
+
+RP2_*		DBP12
+WFALL*		DBP04
+D16TEK02-27	DBP08
+D16TEK28-56	DBP04
+D16TEK57	System Shock 2
+D16GUT01-03	Doom, JOM4
+D16GUT04-09	Doom, Demonastery
+D16GUT17-23	DBP08
+D16GUT23-39	DBP15
+D16GUT40	Demonastery
+D16MID01-02	DBP08
+D16MID07	Demonastery
+D16MID09	Demonastery
+D16MID11	DBP08
+D16MID12	System Shock 2
+
+DRPG*		DoomRPG
+DEMONA*		Demonastery
+JX*			Scrangus McBrickdad
+PLUT*		Plutonia
+	
+
+--------------------------------------------
+other graphics, edits, etc. by Big Ol' Billy

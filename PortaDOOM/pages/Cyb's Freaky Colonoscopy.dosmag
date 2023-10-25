@@ -1,0 +1,23 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\dbp16\play-dbb16.ini"
+$KEY:C=SHELL:wads\episodes\dbp16\dbp16 credits.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/109554
+
+:Cyb's Freaky Colonoscopy                        * 2019 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[C] Credits [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>10>05?  Author : <Big Ol' Billy>
+:Levels   : *11			   Modes : *Single
+:Requires : *no-limit	Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+! Did you know that Ass Demons are one of the leading causes of death
+! for cybernetically enhanced demons over 3,000 eons of age?
+!\\
+! That's why prevention is key! Come by the UAC medical labs and we'll have our 'crack' team of researchers examine that sweet cyber booty.
+! If we find any of those pesky colon critters, we can send our specially trained microscopic space marine medics in. Of course, if our boys get turned into possessed zombiemen, we might have to take more... drastic... measures.
+!\\
+! Don't worry, though, Mars has universal Hell-th care!"
+
+`Cyb's Freaky Colonoscopy` is a limit-removing medical documentary of the various doctors and nurses from Doomer Boards, led by <Big Ol' Billy>. With 11 levels of carnage, it's the biggest, baddest and grossest `DBP` adventure yet! Shoutout to the two members making their `DBP` debut: <Hardcore_gamer> and <dmdr>!

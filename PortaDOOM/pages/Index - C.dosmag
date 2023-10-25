@@ -14,6 +14,7 @@ $KEY:L=GOTO:Counterattack
 $KEY:M=GOTO:Crumpets
 $KEY:N=GOTO:Cryogenics
 $KEY:O=GOTO:Hexen - Curse of the Lost Gods
+$KEY:P=GOTO:Cyb's Freaky Colonoscopy
 
 ^C:INDEX :: C
 
@@ -34,3 +35,4 @@ $KEY:O=GOTO:Hexen - Curse of the Lost Gods
 - [M] *Crumpets											Episodes
 - [N] *Cryogenics										People
 - [O] *Curse of the Lost Gods (Hexen)					Episodes
+- [P] *Cyb's Freaky Colonoscopy							Episodes

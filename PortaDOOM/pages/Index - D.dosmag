@@ -1,50 +1,52 @@
 $THEME=BLUE
 $KEY:A=GOTO:The Darkening Episode 2
-$KEY:B=GOTO:Dark Tide
-$KEY:C=GOTO:Dark Universe Part 1
-$KEY:D=GOTO:dead.air
-$KEY:E=GOTO:dead.wire
-$KEY:F=GOTO:Demonastery
-$KEY:G=GOTO:Cabal Series #03
-$KEY:H=GOTO:Dimension of the Boomed
-$KEY:I=GOTO:Disjunction
-$KEY:J=GOTO:Don't Be A Bitch Remastered
-$KEY:K=GOTO:The Golden Souls 2
-$KEY:L=GOTO:DTWiD Series #02
-$KEY:M=GOTO:DOOM 404
-$KEY:N=GOTO:DOOM 64
-$KEY:O=GOTO:DOOM CE
-$KEY:P=GOTO:DOOM II
-$KEY:Q=GOTO:DOOM II - Hellscape
-$KEY:R=GOTO:DTWiD Series #01
-$KEY:S=GOTO:DTWiD Series #03
-$KEY:T=GOTO:DOOM(4) for DooM
-$KEY:U=GOTO:Doomed Space Wars
-$KEY:V=GOTO:DoomRL Arsenal
+$KEY:B=GOTO:Darkest Room
+$KEY:C=GOTO:Dark Tide
+$KEY:D=GOTO:Dark Universe Part 1
+$KEY:E=GOTO:dead.air
+$KEY:F=GOTO:dead.wire
+$KEY:G=GOTO:Demonastery
+$KEY:H=GOTO:Cabal Series #03
+$KEY:I=GOTO:Dimension of the Boomed
+$KEY:J=GOTO:Disjunction
+$KEY:K=GOTO:Don't Be A Bitch Remastered
+$KEY:L=GOTO:The Golden Souls 2
+$KEY:M=GOTO:DTWiD Series #02
+$KEY:N=GOTO:DOOM 404
+$KEY:O=GOTO:DOOM 64
+$KEY:P=GOTO:DOOM CE
+$KEY:Q=GOTO:DOOM II
+$KEY:R=GOTO:DOOM II - Hellscape
+$KEY:S=GOTO:DTWiD Series #01
+$KEY:T=GOTO:DTWiD Series #03
+$KEY:U=GOTO:DOOM(4) for DooM
+$KEY:V=GOTO:Doomed Space Wars
+$KEY:W=GOTO:DoomRL Arsenal
 
 ^C:INDEX :: D
 
 :-------------------------------------------------------------------------------
 
 - [A] *Darkening Episode 2, The							MegaWADs
-- [B] *Dark Tide										Onesies
-- [C] *Dark Universe, Part 1							Episodes
-- [D] *dead.air											Onesies
-- [E] *dead.wire										Onesies
-- [F] *Demonastery										Onesies
-- [G] *Derelict Station (Cabal Series)					People
-- [H] *Dimension of the Boomed							Episodes
-- [I] *Disjunction										Episodes
-- [J] *Don't Be A Bitch Remastered						Multiplayer
-- [K] *Doom: The Golden Souls 2							Total Conversions
-- [L] *Doom 2 the Way id Did							MegaWADs
-- [M] *DOOM 404											MegaWADs
-- [N] *DOOM 64											Commercial DOOM
-- [O] *DOOM CE											Total Conversions
-- [P] *DOOM II											Commercial DOOM
-- [Q] *DOOM II: Hellscape								Episodes
-- [R] *Doom the Way id Did								MegaWADs
-- [S] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [T] *DOOM(4) for DooM									Mods
-- [U] *Doomed Space Wars								Episodes
-- [V] *DoomRL Arsenal									Mods
+- [B] *Darkest Room										Onesies
+- [C] *Dark Tide										Onesies
+- [D] *Dark Universe, Part 1							Episodes
+- [E] *dead.air											Onesies
+- [F] *dead.wire										Onesies
+- [G] *Demonastery										Onesies
+- [H] *Derelict Station (Cabal Series)					People
+- [I] *Dimension of the Boomed							Episodes
+- [J] *Disjunction										Episodes
+- [K] *Don't Be A Bitch Remastered						Multiplayer
+- [L] *Doom: The Golden Souls 2							Total Conversions
+- [M] *Doom 2 the Way id Did							MegaWADs
+- [N] *DOOM 404											MegaWADs
+- [O] *DOOM 64											Commercial DOOM
+- [P] *DOOM CE											Total Conversions
+- [Q] *DOOM II											Commercial DOOM
+- [R] *DOOM II: Hellscape								Episodes
+- [S] *Doom the Way id Did								MegaWADs
+- [T] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [U] *DOOM(4) for DooM									Mods
+- [V] *Doomed Space Wars								Episodes
+- [W] *DoomRL Arsenal									Mods
