@@ -1,0 +1,31 @@
+$NAV=MegaWADs
+$KEY:P=SHELL:launcher.exe "wads\megawads\doomzero\play-doomzero.ini"
+$KEY:T=SHELL:wads\megawads\doomzero\DoomZero.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/109216
+
+:Doom Zero                                       * 2019 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>09>30	  Author : <DASI-I>
+:Levels   : *32			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+A concept of a possible third installment in `Final Doom`. Fully *DOS* compatible. `Doom Zero` brings things back to the basics and expands on the gameplay without requiring an advanced modern source port.
+
+The maps follow a philosophy of level design that was practiced by the original authors of `Doom` without blatantly copying elements of said authors, and also putting a little more emphases on level navigation and puzzle solving.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch 
+*Build Time				: 4 years
+*Editor(s) used			: *Doom Builder 2*, *Slade*, *Adobe Fireworks*, *WhackEd4*, *Dehacked*, *Audacity*, *Nero Wave Editor*
+*Known Bugs				: none (unless running other mods)
+*Tested With...			: *MS-DOS* original, *ZDoom*, *GZDoom*, *Chocolate Doom*, *PRBoom+*
+
+:Credits:
+:-------------------------------------------------------------------------------
+$KEY:1=URL:http://zorasoft.net/prjdoom.html
+- Modified music for map01 & map29 originating from the website:
+  Project Doom [1: http://zorasoft.net/prjdoom.html]

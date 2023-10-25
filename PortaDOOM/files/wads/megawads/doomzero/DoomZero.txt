@@ -1,0 +1,95 @@
+===========================================================================
+        WARNING: Not compatible with other mods (even minor mods)
+===========================================================================
+Version                 : ver. 3.0
+Advanced engine needed  : no
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Doom Zero
+Filename                : DOOMZERO.WAD, DOOMZERO.DEH
+Release date            : 24 Aug 2021
+Author                  : Christopher Golden
+Other Files By Author   : DOOMHACK.EXE, DOOMZERO.BAT, DoomZeroHQMusic.WAD
+
+
+Description             : A concept of a possible third installment in Final
+                          Doom. Fully DOS compatible. Doom Zero brings things
+                          back to the basics and expands on the gameplay
+                          without requiring an advanced modern source port.
+                          
+                          The maps follow a philosophy of level design that
+                          was practiced by the original authors of Doom
+                          without blatantly copying elements of said authors,
+                          and also putting a little more emphases on level
+                          navigation and puzzle solving.
+
+
+--- How to launch ---   : For source ports:
+			  use both DOOMZERO.WAD and DOOMZERO.DEH.
+			  It won't run properly without the DEH file.
+			  
+			  For MS-DOS:
+			  type DOOMZERO then press Enter
+			  (version 1.9 of Doom2.wad is requred, 
+			   even for Chocolate Doom users)
+
+			  DoomZeroHQMusic.WAD is optional for better music.
+			  download now available at: 
+			  https://www.moddb.com/mods/doom-zero/downloads
+
+
+Additional Credits      : modified music for map01 & map29 originating from
+                          the website: Project Doom
+                          (http://zorasoft.net/prjdoom.html)
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : Yes (use both DOOMZERO.WAD and DOOMZERO.DEH)
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Other mods              : No (not even minor mods)
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 4 years
+Editor(s) used          : Doom Builder 2, Slade, Adobe Fireworks, WhackEd4,
+                          Dehacked, Audacity, Nero Wave Editor
+Known Bugs              : none (unless running other mods)
+Tested With             : MS-DOS original, ZDoom, GZDoom, Chocolate Doom,
+			  PRBoom+
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
