@@ -1,0 +1,120 @@
+===========================================================================
+Primary purpose         : Single play
+===========================================================================
+Title                   : Entropy
+Filename                : Entropy.wad
+Release date            : 17/4/2019
+Author                  : Nirvana
+Email Address           : [redacted]
+Other Files By Author   : Breathless, Autumn Equinox, Lilac Anomaly,
+                          Snowblast, Smallfry
+
+Description             : Entropy is a large and challenging Boom compatible
+                          (cl9) slaughter map with a gold and orange theme.
+                          There are two main routes to take from the start,
+                          one for plasma and the other for rockets, both must
+                          be completed in order to finish the map, so your
+                          decision wont leave you without one weapon. There
+                          are 3 new keycards that replace the skull keys,
+                          each of which will require you to beat a difficult
+                          encounter to get. Once you have all 3 you can get
+                          the BFG and will be rewarded with something...else.
+                          The map has been completed without BFG and without
+                          secrets to ensure it is balanced. Many of the
+                          fights will require some puzzling out before you
+                          can complete them. Sometimes this means simply
+                          pushing a switch when you otherwise wouldn't and
+                          other times it can mean something else entirely.
+                          
+                          This is a long and difficult map, but the other
+                          difficulties have been balanced in the hopes that
+                          people will use them. I would highly recommend that
+                          people play this map in a GL port like GLBoom or
+                          GZDoom as there are a few spots where software
+                          struggles FPS-wise. The map is still playable in
+                          Prboom-Plus but can get jittery in some of the more
+                          open areas.
+                          
+                          Here is a rough guide:
+                          
+                          UV - I like challenging slaughter maps and enjoy
+                          being punished for my mistakes and having to learn
+                          from them. I like figuring out strategies to
+                          complete fights. 
+                          
+                          HMP - I like challenging slaughter maps but I still
+                          want to feel in control when I play.
+                          
+                          HNTR - I prefer run and gun gameplay with the odd
+                          slaughter encounter thrown in. I still enjoy a
+                          challenge now and then.
+                          
+                          Most fights are beatable in a variety of different
+                          ways, so try stuff out! Remember to look for
+                          secrets! 
+
+Additional Credits to   : Insane_Gazebo for the titlepic
+                          Scotty for the HUD
+                          Pinchy for Pinchtex
+                          Eradrop for his revenant/pain elemental sprites
+                          from Avactor
+                          Ribbiks for providing an extended version of the
+                          map's original midi.
+                          Bemused for his hours of work on
+                          nodebuilders;
+                          
+                          My playtesters:
+                          Ancalagon, Insane_Gazebo, Archi, Killer5, Nevanos,
+                          Loveless, Bemused
+===========================================================================
+* What is included *
+
+New levels              : 2
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 6 months on and off (no idea in hours)
+Editor(s) used          : GzDoom Builder (Bugfix), Slade, Photoshop
+Known Bugs              : Some FPS issues still remain in certain areas for
+                          lower end machines. GLBoom is recommended.
+May Not Run With        : ZDaemon, ZDoom
+Tested With             : Prboom-Plus, Glboom-Plus, GzDoom, ZDoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://www.dropbox.com/s/x54jnxyjcxhym7e/Entropy.wad?dl=0
