@@ -1,0 +1,33 @@
+$NAV=Episodes
+$KEY:P=SHELL:launcher.exe "wads\episodes\alienated\play-alienated.ini"
+$KEY:T=SHELL:wads\episodes\alienated\alienated.txt
+$KEY:W=URL:https://www.doomworld.com/forum/topic/108865
+
+:Alienated                                       * 2019 Cacoward Runner Up! *
+:===============================================================================
+*[P] Play						 *[T] .txt [W] Website
+:-------------------------------------------------------------------------------
+:Released : *2019>09>08	  Author : <Michal "Lorenzo" Kurowski>
+:Levels   : *10			   Modes : *Single, Co-op
+:Requires : *zdoom		Includes : *+Music +Graphics
+:-------------------------------------------------------------------------------
+
+`Alienated` is a 10-level wad made for *GZDoom* and *Zandronum*. It features levels of varying size and difficulty, all made with the `Ancient Aliens` texture pack. There are 9 regular levels and one secret map, accessible from map06.
+
+The wad is meant to be played with dynamic lights turned on. Freelook is recommended, but not required. No jumping or crouching. Do not use vanilla or software in the sector light mode settings, as these options can mess with certain tricks used in map08 and ruin the experience for you.
+
+:Construction:
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: Almost a year
+*Editor(s) used			: *GZDoomBuilder*
+*Known Bugs				: One crucial switch in map03 doesn't work if you have "all special lines block use" enabled in your compatibility settings
+*May Not Run With...	: Non-*zdoom* based ports
+*Tested With:			: *GZDoom* 4.2.0, *Zandronum* 3.0
+
+:Credits:
+:-------------------------------------------------------------------------------
+- To <Ugibugi> for collaboration on map06 and playtesting
+- To <Malefication>, <HAK3108>, <Immorpher> for playtesting
+- To <Elend> for creating the M_DOOM image
+- `Ancient Aliens` texture pack for resources

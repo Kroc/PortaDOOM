@@ -1,0 +1,108 @@
+===========================================================================
+Advanced engine needed  : Zdoom
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Alienated
+Filename                : alienated.zip
+Release date            : Original Release: 08/09/2019
+			  1.1 Update: 01/07/2023
+Author                  : Michal ''Lorenzo'' Kurowski
+Email Address           : [redacted]
+Other Files By Author   : NoMonochrome
+                          Scattered Ashes
+                          The Oasis
+
+Description             : Alienated is a 10-level wad made for GZDoom and
+                          Zandronum. It features levels of varying size and
+                          difficulty, all made with the Ancient Aliens
+                          texture pack. There are 9 regular levels and one
+                          secret map, accessible from map06.
+                          
+                           
+                          
+                          The wad is meant to be played with dynamic lights
+                          turned on. Freelook is recommended, but not
+                          required. No jumping or crouching. Do not use
+                          vanilla or software in the sector light mode
+                          settings, as these options can mess with certain
+                          tricks used in map08 and ruin the experience for
+                          you.
+
+			  This 1.1 update contains updates to textures only.
+
+Additional Credits to   : To Ugibugi for collaboration on map06 and
+                          playtesting.
+                          To Malefication, HAK3108, Immorpher for
+                          playtesting.
+                          To Elend for creating the M_DOOM image.
+						  Ancient Aliens texture pack for resources.
+						  
+===========================================================================
+* What is included *
+
+New levels              : 10
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01 - 09, 31
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Almost a year
+Editor(s) used          : GZDoomBuilder
+Known Bugs              : One crucial switch in map03 doesn't work if you
+                          have ''all special lines block use'' enabled in
+                          your compatibility settings.
+May Not Run With        : Non-zdoom based ports
+Tested With             : GZDoom 4.2.0, Zandronum 3.0
+
+* Disclaimer *
+	
+NOTE: GOTHICTX.txt requests that the below disclaimer not be modified, but cdrom.com isn't around anymore. 
+	Replace the links in the disclaimer with the following respectively: 
+	https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothicdm 
+	https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothic2
+		  
+	* DISCLAIMER *
+	This PWAD contains select texture(s) and flat(s) that can originally be found
+	in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+	flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+	ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+	contains thirty-two professional quality levels and music.
+	http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+	http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://www.doomworld.com/forum/topic/108865-rc3-release-alienated-10-levels-for-gzdoom/

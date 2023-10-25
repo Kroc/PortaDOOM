@@ -3,12 +3,13 @@ $KEY:A=GOTO:Absolutely Killed
 $KEY:B=GOTO:The Adventures of Square
 $KEY:C=GOTO:Aeon Deathmatch
 $KEY:D=GOTO:The Alfonzone
-$KEY:E=GOTO:Aliens TC
-$KEY:F=GOTO:Alpha Accident - Terra Nova
-$KEY:G=GOTO:Ancient Aliens
-$KEY:H=GOTO:Ashes 2063
-$KEY:I=GOTO:Master Levels #02
-$KEY:J=GOTO:Avactor
+$KEY:E=GOTO:Alienated
+$KEY:F=GOTO:Aliens TC
+$KEY:GF=GOTO:Alpha Accident - Terra Nova
+$KEY:H=GOTO:Ancient Aliens
+$KEY:I=GOTO:Ashes 2063
+$KEY:J=GOTO:Master Levels #02
+$KEY:K=GOTO:Avactor
 
 ^C:INDEX :: A
 
@@ -18,9 +19,10 @@ $KEY:J=GOTO:Avactor
 - [B] *Adventures of Square, The						Total Conversions
 - [C] *Aeon Deathmatch									Multiplayer
 - [D] *Alfonzone, The									MegaWADs
-- [E] *Aliens TC										Total Conversions
-- [F] *Alpha Accident: Terra Nova						Episodes
-- [G] *Ancient Aliens									MegaWADs
-- [H] *Ashes 2063										Total Conversions
-- [I] *Attack (Master Levels)							Commercial DOOM
-- [J] *Avactor											Episodes
+- [E] *Alienated										Episodes
+- [F] *Aliens TC										Total Conversions
+- [G] *Alpha Accident: Terra Nova						Episodes
+- [H] *Ancient Aliens									MegaWADs
+- [I] *Ashes 2063										Total Conversions
+- [J] *Attack (Master Levels)							Commercial DOOM
+- [K] *Avactor											Episodes
