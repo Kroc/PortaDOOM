@@ -19,7 +19,9 @@ $KEY:G=URL:https://gog.com/game/heretic_shadow_of_the_serpent_riders
 $KEY:S=URL:https://store.steampowered.com/app/2390/
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own _"Heretic: Shadow of the Serpent Riders"_ on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file "HERETIC.WAD" in the "files\wads" folder.
+! If you own _"Heretic: Shadow of the Serpent Riders"_ on [G: GOG] or
+! [S: Steam] it will be detected automatically, otherwise place the
+! file "HERETIC.WAD" in the "files\wads" folder.
 
 The episode includes a built-in gameplay mod that rebalances `Heretic` in ways that are mostly subtle but make the game a lot more engaging to play. Many enemy attacks are more dangerous, and most of the player's weapons are more powerful, allowing certain weapons to have more useful combat niches and eliminating the grindiness associated with vanilla `Heretic`'s weapon/monster balance. See *[2] page 2* for more information, including the story, tips on playing the episode, a rundown of the new enemies/items, and a complete list of gameplay modifications.
 
