@@ -51,14 +51,21 @@ FOR i = 1 TO Games_Count
         LET h = PRINTWRAP%( _
             7, CSRLIN, UI_SCREEN_WIDTH - 8, _
             Games(i).desc _
-        ) - 1
+        )
         LET k = CSRLIN - h
-        FOR j = k TO CSRLIN - 1
+        IF Games(i).name = "" THEN LET k = k + 1
+        LET l = CSRLIN - 1
+        FOR j = k TO l
             LOCATE j, 3: COLOR YELLOW
-            IF j = k THEN
-                PRINT CHR$(214)
+            REM IF j = k THEN
+            REM     PRINT CHR$(210)
+            REM ELSE
+            REM     PRINT CHR$(ASC_BOX_DBL_V)
+            REM END IF
+            IF j = l THEN
+                PRINT CHR$(192)
             ELSE
-                PRINT CHR$(ASC_BOX_DBL_V)
+                PRINT CHR$(ASC_BOX_V)
             END IF
         NEXT j
     END IF

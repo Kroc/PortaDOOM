@@ -12,6 +12,9 @@ __*
 
 # don't include the list files
 *.lst
+# test.bat for each engine
+# (should be included for all-engines pack)
+files\ports\*\test.bat
 
 # left-overs from UPX compression
 *.upx
@@ -37,10 +40,10 @@ TNT.WAD
 PLUTONIA.WAD
 STRIFE1.WAD
 VOICES.WAD
-
 NERVE.WAD
 NRFTL+.WAD
 MASTER/*.wad
+SIGIL_SHREDS*
 
 # do not include the automatically generated IWAD!
 DOOM64.IWAD

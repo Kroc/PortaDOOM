@@ -36,3 +36,5 @@ pages\2019 Cacowards #??.dosmag
 @files\wads\episodes\alienated\include.lst
 @files\wads\megawads\doomzero\include.lst
 @files\wads\onesies\entropy\include.lst
+# page 14:
+@files\wads\episodes\sigil\include.lst
