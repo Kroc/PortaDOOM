@@ -1,0 +1,70 @@
+$THEME=BLACK
+$TITLE=Multiplayer Awards
+$KEY:1=URL:https://doomwiki.org/wiki/32in24-17:_3_Flags_3_Furious
+$KEY:2=URL:https://doomwiki.org/wiki/Neon_Deathmatch
+$KEY:3=PAGE:#03
+$KEY:4=PAGE:#14
+
+^C:2019 CACOWARDS :: MULTIPLAYER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:[1: 32in24-17] - <YEDS Team>
+:===============================================================================
+
+Much like the other awarded team, <YEDS> is a repeat offender in this section. In fact, both eclipse even the likes of <skillsaw> and <Eternal> for most Cacowards in history. Unlike <MXU> though, it takes a lot of stars aligning for `32in24` to hit a homerun. This year, <YEDS>'s leader <Shaikoten> made sure there would be little doubt.
+
+`32in24` is a traditional mapping session in which the good people of Doomworld get a poorly pre-announced 24-hour limit to hand in maps on a given topic, and they go to town to hopefully create at least 32 maps to fill a megawad. Then the layouts are examined and collaboratively improved via expert feedback and playtest sessions over the next week or two. Then the result is presented to the public, and everyone fears but expects the crickets of disappointment.
+
+In a year of plot twists for MP, `32in24` led the way. The session was more or less commissioned by <Multiplayer Doom Federation>'s leader <HumanBones> and his desire to revive, hold on to your chairs, 3-way CTF. In past decades disregarded as a gimmick game mode, it was given a test run by the <MDF>, and the results were in: the mode is competitively viable, but it needs better maps than the crap available so far. And since the only bolted-down rule was 3-fold symmetry, who else could provide surprisingly inventive genius than the unwashed hordes of Doomworld?
+
+After years of indifference to his own child project, <Shaikoten> made sure this time the production pipeline was prepared for the insanely short development process and mappers were treated like royalty. `32in24` was just the third project to be given access to <ukiro>'s beautiful `OTEX` texture pack, and additional texture variants for team colour symmetry were created on the fly. Testing sessions for feedback were planned weeks in advance. There was a design document and a strict timetable.
+
+The results were amazing. Traditional participants like <Mechadon>, <Xaser> or <Marcaek> provided expected highlights, but even relative newcomers like <DJV> or worst contributed maps that by now have already been played in <MDF>'s tournaments with plenty of success. In a casual CTF session, the wad is confidently playable into its first 20-25 maps, which is a success rate unseen since at least `32in24-13`, or perhaps ever.
+
+It is truly exciting that the project managed to beat back the insinuations that 3-way CTF was "not a real mode," and it was fascinating to watch mappers wrestle successfully with the demanding task of 3-fold symmetry. It was also amazing to see teams win by a hair's breadth in a dedicated tournament. Live long and prosper!
+
+^R- <dew>
+
+:[2: NeonDM] - <Mechanix Union>
+:===============================================================================
+
+Guess who's back? The <Mechanix Union> led by <Decay>, MP Doom's Eminem if Eminem was still relevant, returned in full strength after a lull year with perhaps their most impressive offering yet.
+
+`NeonDM` presents fifteen meticulously detailed and balanced deathmatch maps for *Zandronum* that take liberties with its advanced 3D floors and hardware graphics support. There's a major twist this time, however. <MXU> joined forces with <Dragonfly>, the mad mapping genius behind `Skulldash` and [3] `Eviternity`! And that's not even the twist I wanted to bring up first! What sets this project truly apart is that every map has different item placement for SIX difficulty levels representing support for different game modes. If we apply [4] `Sigil` maths, that brings us to a 90-map ultramegawad, right?
+
+$KEY:5=URL:https://zandronum.com/forum/viewtopic.php?t=5344
+$KEY:6=URL:https://www.moddb.com/mods/death-foretold
+$KEY:7=URL:https://doomwiki.org/wiki/Quake_Champions:_Doom_Edition
+As usual with <MXU>, the maps were primarily designed around the [5: Eon Weapons] mod, the current defacto go-to standard of Doomified `Quake`-like arsenal. Predictably, another skill targets vanilla weapons, but the ride gets wild from this point on. I will graciously ignore the gimmick all-BFG placement and move to two very exciting options: items for [6: Death Foretold] and [7: Quake Champions: Doom Edition]. The comets of yesteryear definitely deserve some mapping love, and as far as I know, the latter is already in use by the mod's dedicated community. The last skill, best suited for duels, is basically the vanilla placement again, but this time with an invisibility sphere plopped in as a central power item. Once, I coined this the predator mode, <MXU> went with "Neon Hunter." The most maligned powerup in `Doom` creates a shocking imbalance of control, and whoever currently holds it dominates the map mercilessly, forcing the opponent to hide in mud and wait for a chance to turn the tables.
+
+The dev team made sure both the gameplay and artistic side are well represented. Verticality and room-over-room design are front and center again. Tweaking and playtesting was going on for months and the maps are very varied, so players are unlikely to get fatigued by sameiness à la `Greenwar`. <Decay>, <Razgriz>, <killerkouhai>, <Dragonfly> and the rest of the team also created the prettiest, sparkliest mapset of their stable yet, often inspired by <esselfortium>'s "Blade Runner but tidied up" `SpaceDM9` NeoTokyo-style. You know, aesthetics.
+
+This year's different in other aspects as well. Usually I try to predict success for projects, but `NeonDM` has already made it into tournament rotations and casual play sessions. There is little to fear about its future. And I could get through a Cacoward article for <MXU> without joking about jokes made the last time.
+
+^R- <dew>
+
+^C:DEVVIE DOES DALLAS
+:===============================================================================
+
+$KEY:A=URL:https://www.toornament.com/en_US/tournaments/2481004498679693312/information
+$KEY:B=URL:https://www.twitch.tv/videos/457889287?t=04h57m30s
+$KEY:C=URL:https://www.twitch.tv/videos/458284745?t=05h56m42s
+For deathmatch, 2019 was the most active competitive season in at least 5 years. And just like during the 20th anniversary, it was crowned by an official <id>-organized `Doom` / *Odamex* tournament at QuakeCon. Three, in fact. Day 1 started with a [A: 2v2 team deathmatch tourney], and it was a vicious, lopsided affair. 2013 QCon finalists <JKist3> and <DevastatioN> teamed up and [B: mercilessly crushed all opposition]. Day 2 followed with an [C: FFA challenge], a surprising yet exciting entry that accommodated a wider skill spectrum of participants. Sadly, it became obvious the administration did not have experience with running such a broad, chaotic event. Qualification rules were a bit undercooked, and one group ended up following a different map progression, which led to some players getting an advantage and revisiting the same map. <Devastation>, nearly eliminated in the previous round, turned things around in the 8-player finale on `Dwango5 map01` and secured a second victory. Second came <Discoryne>, with <Renegade>'s <Goblin> in third to complete a surprising medal trio.
+
+$KEY:D=URL:https://www.toornament.com/en_US/tournaments/2481018509643907072/information
+$KEY:E=URL:https://www.twitch.tv/videos/458743204?t=07h41m29s
+Day 3 was reserved for the [D: duel tournament], and this time <Dev> was [E: the bookies' favourite]. The <Renegade> clan had some dark horses in the tourney this year in <RosKing> and <JWarrier>, with the latter very nearly eliminating <JKist> in the semis with just seconds to go. Alas, no cigar, and last QCon's winner secured a rematch against <Dev>. It became obvious in the ssl2 opener that there wasn't going to be shot-for-shot parity, and <JKist> had to use +back tactics and trickery to tie the game in a dramatic `d5m1` bout, but then <Devastation> pounced again in the tiebreaker on the simplistic `d5m7`. That's triple gold for this year's dominant force, <Devastation>. Shout-out to <Jehar> for casting and <BlackRose> and <sponge> for organization!
+
+$KEY:F=URL:https://doomfederation.com/
+$KEY:G=URL:https://www.youtube.com/channel/UCE927NkGX71Qc_tjel0q4zg
+$KEY:H=URL:https://www.buzzsprout.com/275463
+$KEY:I=URL:https://doomfederation.com/podcasts/
+$KEY:J=URL:https://zandronum.com/forum/viewtopic.php?f=42&t=9522
+$KEY:K=URL:https://zandronum.com/forum/viewtopic.php?f=42&t=9650
+$KEY:L=URL:https://zandronum.com/forum/viewtopic.php?f=32&t=9676
+In non-QuakeCon news, the [F: Multiplayer Doom Federation] churned out tourney after tourney across all three major online ports (*Odamex*, *Zandronum*, *Zdaemon*) for the entire year, [G: including] its return to organized CTF, a slew of FFA challengers and 3-way tourneys, and another Push tourney. <MDF>'s <HumanBones> also connected with the arena shooter-centric [H: In The Keep] podcast, and they started running their own series, [I: Doom` Is Dead?] On the *Zandronum*-specific side of community, `QC:DE` still [J: chugs] [K: on], and we may see it survive the game it mimics. <Zakken> also continued with his CTF-centric [L: leagues] and mini-tourneys. Overall activity doesn't seem to be abating, and even *Odamex* might be getting its own CTF league back, so 2020 should be another hot year.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/multi/
+:source [#: www.doomworld.com/cacowards/2019/multi/]
