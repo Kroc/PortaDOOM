@@ -234,18 +234,19 @@ FUNCTION Paths_GetFileBaseName$(path$)
     IF ASC(path$, len_path) = 92 THEN EXIT FUNCTION
     
     'slice out any path, leaving only the file name
-    LET path$ = MID$(path$, _INSTRREV(path$, "\") + 1)
+    DIM out_path$
+    LET out_path$ = MID$(path$, _INSTRREV(path$, "\") + 1)
     
     'check for the last dot in the filename as the filename may contain
     'more than one dot and we only want to remove the last part
     DIM z%
-    LET z% = _INSTRREV(path$, ".")
+    LET z% = _INSTRREV(out_path$, ".")
     IF z% <> 0 THEN
         'return only the name portion
-        LET Paths_GetFileBaseName$ = MID$(path$, 1, z%-1)
+        LET Paths_GetFileBaseName$ = MID$(out_path$, 1, z%-1)
     ELSE
         'there being no dot, the whole is the filename
-        LET Paths_GetFileBaseName$ = path$
+        LET Paths_GetFileBaseName$ = out_path$
     END IF
 END FUNCTION
 
