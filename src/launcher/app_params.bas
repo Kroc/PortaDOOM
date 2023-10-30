@@ -42,8 +42,8 @@ DIM SHARED CMD_PRE$ '....optional files to load *before* the PWAD
 DIM SHARED CMD_PWAD$ '...optional PWAD to play
 DIM SHARED CMD_FILES$ '..list of extra files to include
 DIM SHARED CMD_EXEC$ '...extra script to execute
-DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file to include
-DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file to include
+DIM SHARED CMD_DEH$ '....optional ".DEH" (DeHackEd) file(s) to include
+DIM SHARED CMD_BEX$ '....optional ".BEX" (Boom-EXtneded DeHackEd) file(s)
 DIM SHARED CMD_DEMO$ '...demo lump to play
 DIM SHARED CMD_WARP$ '...episode/map number to warp to
 DIM SHARED CMD_SKILL$ '..skill level number
@@ -66,7 +66,7 @@ cmd_help:   PRINT ""
             PRINT "     [/REQ <tags>] [/USE <engine>] [/SW] [/32]"
             PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
             PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 | /DOOM64]"
-            PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+            PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>]* [/BEX <file>]*"
             PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
             PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
             PRINT "     [-- <file>* ]"
@@ -248,14 +248,10 @@ cmd_help:   PRINT ""
             
         CASE "/DEH"
             '-----------------------------------------------------------------
-            'cannot be defined twice!
-            IF CMD_DEH$ <> "" THEN CALL UIErrorScreen( _
-                "ERROR: /DEH Defined Twice", _
-                "The /DEH parameter cannot be defined more than once. " _
-              + "Only one DeHackEd file can be loaded at a time." _
-            )
+            'append semi-colon if multiple DEH files
+            IF CMD_DEH$ <> "" THEN LET CMD_DEH$ = CMD_DEH$ + ";"
             'capture the parameter that follows
-            LET i = i + 1: LET CMD_DEH$ = COMMAND$(i)
+            LET i = i + 1: LET CMD_DEH$ = CMD_DEH$ + COMMAND$(i)
             'note that we will have to define a game using this
             LET cmd_hasGame` = TRUE
             'log command switch
@@ -263,13 +259,8 @@ cmd_help:   PRINT ""
             
         CASE "/BEX"
             '-----------------------------------------------------------------
-            'cannot be defined twice!
-            IF CMD_BEX$ <> "" THEN CALL UIErrorScreen( _
-                "ERROR: /BEX Defined Twice", _
-                "The /BEX parameter cannot be defined more than once. " _
-              + "Only one Boom-Extended DeHackEd file can be loaded at " _
-              + "a time." _
-            )
+            'append semi-colon if multiple BEX files
+            IF CMD_BEX$ <> "" THEN LET CMD_BEX$ = CMD_BEX$ + ";"
             'capture the parameter that follows
             LET i = i + 1: LET CMD_BEX$ = COMMAND$(i)
             'note that we will have to define a game using this
@@ -405,7 +396,7 @@ cmd_help:   PRINT ""
                 PRINT "     [/REQ <tags>] [/USE <engine>] [/SW]"
                 PRINT "     [/IWAD <file> | /DOOM | /DOOM2 | /TNT | /PLUTONIA | /HERETIC | /HEXEN"
                 PRINT "                   | /STRIFE | /CHEX | /FREEDOOM1 | /FREEDOOM2 | /DOOM64]"
-                PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>] [/BEX <file>]"
+                PRINT "     [/PRE <file> ]* [/PWAD <file>] [/DEH <file>]* [/BEX <file>]*"
                 PRINT "     [/DEMO <file>] [/WARP <number>] [/SKILL <number>]"
                 PRINT "     [/CMPLVL <number>] [/EXEC <file>] "
                 PRINT "     [-- <file>* ]"

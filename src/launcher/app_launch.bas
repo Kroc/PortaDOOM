@@ -343,13 +343,10 @@ END IF
 '-----------------------------------------------------------------------------
 '[09] DEH & BEX:
 '-----------------------------------------------------------------------------
-'has a DEH file been specified?
-LET CMD_DEH$ = Games_Selected.deh
-
 'does the IWAD provide its own DEH file?
 'CHEX.WAD does this, so does REKKR stand-alone
 IF IWADs_Selected.deh <> "" THEN
-    'TODO: handle conflict
+    'the IWAD's DEH should probably come first
     LET CMD_DEH$ = IWADs_Selected.deh
     'if this is CHEX.WAD then PrBoom+ likes a `-exe chex` parameter for
     'demo compatibility. we don't have a generic way to sepecify this yet
@@ -358,35 +355,62 @@ IF IWADs_Selected.deh <> "" THEN
     END IF
 END IF
 
+'has a DEH file been specified?
+IF Games_Selected.deh <> "" THEN
+    'if an IWAD DEH is already provided, append to the list
+    IF CMD_DEH$ <> "" THEN LET CMD_DEH$ = CMD_DEH$ + ";"
+    'append the game's DEH file(s)
+    LET CMD_DEH$ = CMD_DEH$ + Games_Selected.deh
+END IF
+
+'any DEH files at all?
 IF CMD_DEH$ <> "" THEN
-    'find the DEH file
+    'read the first file from the list;
+    'although rare, multiple DEH files are supported (e.g. DOOM 4 VANILLA)
     LET file$ = CMD_DEH$
-    LET find$ = WADs_Find$(file$)
-    'file missing?
-    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
-    
-    'add it to the command-line
-    LET CMD$ = CMD$ + " -deh " + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
-    'and announce
-    COLOR YELLOW: PRINT "         -deh : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+    LET file$ = WADs_Split$(file$)
+    'the command line only needs `-deh` once, so do that first
+    LET CMD$ = CMD$ + " -deh"
+    DO
+        'locate the file according to WAD search rules
+        LET find$ = WADs_Find$(file$)
+        'file missing?
+        IF find$ = "" THEN CALL UIError_FileNotFound(file$)
+        
+        'add it to the command-line
+        LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
+        'and announce
+        COLOR YELLOW: PRINT "         -deh : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+        
+        'get the next DEH file in the list
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 'has a BEX file been specified?
 LET CMD_BEX$ = Games_Selected.bex
 IF CMD_BEX$ <> "" THEN
-    'find the BEX file
+    'read the first file from the list
     LET file$ = CMD_BEX$
-    LET find$ = WADs_Find$(file$)
-    'file missing?
-    IF find$ = "" THEN CALL UIError_FileNotFound(file$)
-    
-    'add it to the command-line
-    LET CMD$ = CMD$ + " -bex " _
-             + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
-    'and announce
-    COLOR YELLOW: PRINT "         -bex : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+    LET file$ = WADs_Split$(file$)
+    'the command line only needs `-deh` once, so do that first
+    LET CMD$ = CMD$ + " -bex"
+    DO
+        'locate the file according to WAD search rules
+        LET find$ = WADs_Find$(file$)
+        'file missing?
+        IF find$ = "" THEN CALL UIError_FileNotFound(file$)
+        
+        'add it to the command-line
+        LET CMD$ = CMD$ + " " + CHR$(34) + Launch_FixPath$(find$) + CHR$(34)
+        'and announce
+        COLOR YELLOW: PRINT "         -bex : ";: COLOR UI_FORECOLOR
+        PRINT RTRUNCATE$(Launch_ClipPath$(find$), UI_SCREEN_WIDTH - 17)
+        
+        'get the next BEX file in the list
+        LET file$ = WADs_Split$("")
+    LOOP WHILE file$ <> ""
 END IF
 
 '-----------------------------------------------------------------------------

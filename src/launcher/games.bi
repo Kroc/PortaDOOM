@@ -16,8 +16,8 @@ TYPE Game
     pwad AS STRING '........PWAD to play
     pre AS STRING '.........list of files to load *before* the PWAD
     files AS STRING '.......list of additional files to include
-    deh AS STRING '.........DeHackEd script to load
-    bex AS STRING '.........Boom-EXtended DeHackEd script to load
+    deh AS STRING '.........DeHackEd script(s) to load
+    bex AS STRING '.........Boom-EXtended DeHackEd script(s) to load
     
     use AS STRING '.........an engine-id to use
     tags AS STRING '........comma-separated list of tags the game requires
