@@ -60,7 +60,6 @@ SUB drawHeader
         LET tab_width% = text_len% + 6
         STRGUI_SetVar "w", tab_width%
         
-        
         STRGUI_Add "^{X*,Y*,X+@W-@w-1,L}"
         STRGUI_Add "^{&DA,&C4,R@w-2,&BF,N}"
         STRGUI_Add "^{&B3}"
@@ -1004,6 +1003,8 @@ SUB formatLine (indent%, src$, default_theme%)
     IF word_paren` = TRUE THEN CALL STRGUI_Add("^{F@P}")
     'in key mode?
     IF word_key` = TRUE THEN CALL STRGUI_Add("^{F@K}")
+    'in name mode?
+    IF word_name` = TRUE THEN CALL STRGUI_Add("^{F@I}")
     'are we currently bold?
     IF word_bold` = TRUE THEN CALL STRGUI_Add("^{F@B}")
     'are we currently italic?
@@ -1025,6 +1026,7 @@ SUB formatLine (indent%, src$, default_theme%)
     LET word_term` = is_term`
     LET word_paren` = is_paren`
     LET word_key` = is_key`
+    LET word_name` = is_name`
     'we are now at the beginning of a word
     LET is_boundary` = TRUE
 
