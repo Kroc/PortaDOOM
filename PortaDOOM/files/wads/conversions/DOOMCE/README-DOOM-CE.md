@@ -41,7 +41,6 @@ Special thanks to Immorpher and the members of the [DOOM 64 Discord](https://dis
 ### PSX DOOM CE
 
 - **Evil Unleashed/Ultimate DOOM:** PSX campaign. The maps included here are based on conversions made for the PSX Doom TC. Maps that were absent from the original console release come from the PSX Doom Lost Levels community project.
-- **Sigil:** Same as Sigil 1.2 by John Romero, but with colored lighting.
 - **Hell on Earth/DOOM II:** PSX campaign. The maps included here are based on conversions made for the PSX Doom TC. Maps that were absent from the original console release come from the PSX Doom Lost Levels community project.
 - **No Rest For The Living:** A reimagination of the Xbox mapset. The maps included here are based on conversions by Dexiaz and Salahmander2 for the PSX Doom TC.
 - **Bonus maps:** Tech Gone Bad and Phobos Mission Control by BlackxZodiac13, originally created for the PSX Doom TC (based on the maps by John Romero).
@@ -83,7 +82,7 @@ There's two download flavors: Lite and Full.
 
 **Lite** is just the base mod for those who don't want any additional features other than those built inside the mod.
 
-**Full** is a massive ~1GB download because it bundles several addon pk3s that get automatically loaded when starting the mod. Each can be safely deleted or moved to a different folder to skip auto-loading them if you prefer not using it.
+**Full** is a massive ~700MB download because it bundles several addon pk3s that get automatically loaded when starting the mod. Each can be safely deleted or moved to a different folder to skip auto-loading them if you prefer not using it.
 
 - **Maps.LostLevels:** Adds missing PC levels into the PSX DOOM campaign, and the 2020 bonus episode into DOOM 64.
 - **BGM.Extended:** Extended, higher quality Console soundtrack by Aubrey Hodges. Some bonus tracks are also mapped to some maps when this is present.
@@ -92,7 +91,6 @@ There's two download flavors: Lite and Full.
 - **GFX.Extra:** Smoothened wall/floor animations, glowing floors, and liquids will produce splashes.
 - **GFX.Parallax:** Adds a 3D-like relief effect to liquids.
 - **GFX.PBR:** Changes how textures react to lighting. Gives a glossy or metallic effect to textures.
-- **GFX.Upscale:** 2x AI upscaled textures. The result was not always the best, so if you don't like it you can remove it.
 - **SFX.HQ:** Upscaled, higher quality sounds and adds some additional sounds to some monsters.
 
 ### Optional addons
@@ -150,23 +148,25 @@ First, extract the zip file into a new folder. Then, follow the installation ins
 
 ### Do you need the GZDoom binaries bundled with the mod?
 
-No. I have only bundled them for convenience, the source code has not been altered.
+No. I only bundled it for convenience, its source code has not been modified.
 
 ### How can I make the game look more like the original versions?
 
-Go to the `Features` menu, and change the preset to `Faithful` or `Faithful Enhanced`. Play the Lite version of the game (or remove all addon pk3s) so that upscales, extra music and other optional stuff doesn't get loaded.
+Go to the `Features` menu, and change the preset to `Faithful`. Play the Lite version of the game (or remove all addon pk3s) so that upscales, extra music and other optional stuff doesn't get loaded. Manually add AspectRatio.pk3 to the load order if you are playing PSX DOOM or 3PointFilter.pk3 if you are playing DOOM 64.
+
+If you want to take it even further, enable the Low Resolution Shader in the Features menu, then enable GZDoom's Full Options Menu, go to Set Video Mode, disable Rendering Interpolation, change Force Aspect Ratio to 4:3 and set Forced Ratio Style to Letterbox.
 
 ### There's too many settings in the Features menu, what does each one mean?
 
 I suggest you choose one of the existing default presets and start from there if you want additional tweaks.
 
-### Why am I not seeing any changes ingame after changing settings in the Features menu?
+### Why am I not seeing any changes in-game after changing settings in the Features menu?
 
 Most require reloading the level to take effect. You'll need to complete the current level or restart the game.
 
 ### The levels are too dark, how can I increase brightness?
 
-There is an `Overall Brightness` slider in the `Features` menu. I recommend you use this instead of GZDoom's gamma settings because it will preserve the colors better.
+There is an `Overall Brightness` slider in the `Features` menu. I recommend you use this instead of GZDoom's gamma settings because it preserves the colors better.
 
 ### How can I increase the UI size?
 
@@ -202,45 +202,48 @@ It's the indicator that shows from which direction you took damage. You can disa
 
 If it's too much for your computer, try running with the Faithful preset without any addons loaded. You can also try GZDoom's GLES renderer, but some visual effects will not work as intended.
 
-## What GZDoom sector light mode should I use?
+### Can I play this with Voxel Doom?
 
-The mod defaults to Standard, and this mod is designed to work for it. Any other sector light modes will look darker than intended.
+[Voxel Doom II](https://www.moddb.com/mods/voxel-doom-ii) is compatible with PSX DOOM, but you must make a small edit to its file. You must open cheello_voxels_v2_1.pk3 (make a backup copy first), and rename the directory *filter/doom.id* to *filter/doom.ce*. Inside CE, you must disable Smooth Monsters for it to work properly. A caveat is that monsters will revert back to their Doom II timings and behavior instead of how they are in Psx Doom.
+
+### Can I play this with \<x\> mod?
+
+Since the mod runs on the latest GZDoom (4.10+), that means that it is compatible with other mods. It's been tested with Corruption Cards, Project Brutality, QC:DE, Death Foretold, Embers of Armageddon, Guncaster, Trailblazer, GMOTA, Russian Overkill, Complex Doom, Legendoom Lite, Pandemonia, and many others. NOTE: Support is more limited in Doom 64 because most mods assume Doom 2 textures and Doom 2's actor heights.
+
+### Can I play this in Delta Touch or GZDoom VR?
+
+Yes, as long as their upstream GZDoom version is compatible with this mod (4.10+). Though I haven't tested them personally, many others have reported playing in mobile or VR without problems.
 
 ### Is this multiplayer compatible?
 
-Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). All maps support coop, but the DOOM 64 levels have some progression bugs with more than one player.
+Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). All maps support coop, but the DOOM 64 levels have some progression issues with more than one player due to how the maps were designed.
 
 ### What third-party tools were used to create the assets?
 
 I used Substance Alchemist for the PBR textures and ESRGAN (multiple models) for the upscales. To create the smooth DOOM 64 animations, I used DAIN.
 
-### Why are the SIGIL levels the same as in PC DOOM?
+### What happened to the Upscaled Textures and Arranged Soundtrack addons?
 
-I did not have time to alter the SIGIL maps to approximate them to how they would look in the PSX. In their current form, they only have colored lighting, reverbs and one or two changed monsters.
+I removed them from the Full download because I wasn't satisfied with how they were. You can still download them separately from the Addons tab.
+
+### Why were the SIGIL levels removed?
+
+They were just placeholders and not true efforts to make them in the same style as the other PSX maps. I hope to include them again after GEC Master Edition leaves beta, since that mod includes proper conversions.
 
 ### How did you port the DOOM 64 levels?
 
-I built my own toolchain. First, a tool that parses the original map data and convert it to UDMF compatible with DZDoom. I then converted or copied as much as I could from DZDoom to ZScript, ACS and custom shaders in this mod. Finally I wrote some additional ZScript scripts that post-process the maps and "understand" some of the custom UDMF properties my tools use.
+I built my own toolchain. First, a tool that parses the original map data and convert it to UDMF compatible with DZDoom. I then brought as much as I could from DZDoom into ZScript, ACS and custom shaders in this mod. Finally I wrote some additional ZScript scripts that post-process the maps and "understand" some of the custom UDMF properties my tools use.
 
 Since not everything is possible in GZDoom, the biggest challenges were:
 
-- Creating custom textures for all the flipped textures and switch overlays. I ended up making a script for it.
+- Creating custom textures for all the flipped textures and switch overlays. I ended up making a script for it. Canvas textures were not an option because you can't apply materials to them.
 - Approximate the line/sector special behavior and speed.
-- Supporting additive flashes without editing the maps. The current implementation is very hacky and not very faithful.
 - Converting the fake 3D floor effect. GZDoom provides some ways to make it work, but they don't work in all cases, forcing me to replace them with 3D floors.
-- Making everything fit using DOOM 64: Retribution as a base. It clearly wasn't intended for this and many approaches that could have worked more naturally if the original maps were used. Many additional workarounds had to be taken, for example, to support the 3D floors it uses.
-
-### How did you add gradient lighting to DOOM 64: Retribution?
-
-The goal was to add it without touching the maps included in the WAD.
-
-My first attempt was parsing the original map data using ZScript and applying the gradient data sector by sector. This worked terribly, because Retribution has changed many sector and line indexes so they no longer match with the original maps. It also added many additional ones.
-
-To make it work, I had to develop an external tool that would heuristically match the original map data with Retribution's map data, and produce lumps that have matching indices with Retribution's maps, which are then processed by the ZScript described in the last paragraph. Those are the ones that are bundled in the mod.
+- Making everything fit using DOOM 64: Retribution as a base. It clearly wasn't intended for this and many approaches that could have worked more naturally if the original maps were used. Many additional workarounds had to be taken, for example, to support the 3D floors it uses. In the end I think it was worth it, because most people enjoy the small quality of life changes from Retribution.
 
 ### How can I access the DOOM 64 "Fun" maps?
 
-You need to beat the secret level Hectic to unlock the Bonus Fun Maps episode.
+You need to beat the secret level Hectic to unlock the Bonus Maps episode.
 
 ### What is the meaning of CE in the title?
 
@@ -250,7 +253,7 @@ There is no specific meaning, but here are some ideas: Custom Edition, Console E
 
 - [PSX DOOM TC](https://www.doomworld.com/forum/topic/57957-psx-doomfinal-doom-tc-legacy-tc-see-first-post-for-details/)
 - [DOOM 64 Retribution](https://www.doomworld.com/forum/topic/91854-v15-doom-64-retribution/)
-- [GEC Master Edition](https://www.doomworld.com/forum/topic/101161-gec-master-edition-psx-doom-for-the-playstation-1102019-beta-3-release-now-are-you-ready-for-more-action/)
+- [GEC Master Edition](https://www.doomworld.com/forum/topic/94139-update-v2-psxdoom-psxfinaldoom-doom64-on-gzdoom-gec-master-edition-dec-17-2018/)
 - [PsyDoom](https://github.com/BodbDearg/PsyDoom)
 - [DOOM64 EX](https://doom64ex.wordpress.com/)
 - [PSXDOOM-RE](https://github.com/Erick194/PSXDOOM-RE)
@@ -258,6 +261,28 @@ There is no specific meaning, but here are some ideas: Custom Edition, Console E
 - [DOOM64-RE](https://github.com/Erick194/DOOM64-RE)
 
 ## Changelog
+
+### 3.8.1
+
+- 64: Replaced GZDoom lightning flashes with a custom thinker that behaves like the original.
+- 64: Added an option to toggle lightning flashes on sectors that have a sky ceiling.
+- 64: Re-added the Night Crawler grenade bounce sound in the HQ SFX addon.
+- 64: Fixed the low resolution shader aspect ratio being off by one pixel.
+- Both: Fixed the screen wipe effect making a bright flash on certain video cards.
+- Both: Removed weapon recoil for the smooth Plasma Rifle.
+- Both: Updated the bundled GZDoom to 4.11.1.
+
+### 3.8.0
+
+- PSX: Removed the Sigil episode.  It is now provided as an optional download in ModDB's addons tab.
+- PSX: Removed brightmaps for FACE01, FACE02 and FACE03 textures.
+- 64: Implemented emulation of linear fog fades.
+- Both: Added an option to emulate playing on the original resolution.
+- Both: Due to changes in the latest GZDoom version, light modes can no longer be changed through the Features menu.
+- Both: Added an option to toggle PSX gamma correction.
+- Both: Upscales are no longer bundled with the Full version and instead are provided as a separete download. They are still auto-loaded if present.
+- Both: Fixed compatibility with GZDoom 4.11.
+- Both: Updated the bundled GZDoom to 4.11.
 
 ### 3.7.1
 
