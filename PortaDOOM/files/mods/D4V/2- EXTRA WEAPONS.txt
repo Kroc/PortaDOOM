@@ -1,0 +1,60 @@
+
+DOOM 4 VANILLA - HOW TO LOAD THE EXTRA WEAPONS
+__________________________________________________________________
+
+D4V 2.0 added 8 optional weapons that can be individually picked to replace the regular ones - so you will be able to build your own set mixing the new with the regular ones. Each weapon changes the gameplay in some way, with some degree of CONS and PROS in regard to the regular ones.
+
+The correct way to load these weapons may change from port to port. Here some examples:
+
+
+
+================================================
+For any port that isn't ZDoom-based or Eternity:
+================================================
+You need to use command lines or a launcher like ZDL. Just choose any DEH weapon you want to replace and add them at the end of the line 
+
+- for example: 
+crispy-doom -file SCYTHE.WAD D4V.WAD -nodeh -deh D4V.deh  2_MARKV.deh 3_REAPER.deh (...)
+- - - 
+>>> The -nodeh parameter after D4V.WAD is very important, don't forget it <<<
+
+You can also open the bat files included here to add your weapons.
+
+-----------------
+-----------------
+!!! ATTENTION !!!
+-----------------
+-----------------
+
+The VORTEX RIFLE uses a very specific code to work and for that reason will not run on every port. 
+It will work fine on MS-DOS, Chocolate, Crispy Doom and ZDoom-based ports (ZDoom, GZDoom, Zandronum). 
+I also made two specific versions that will run on default prBOOM+ (use VORTEX_prBOOM+.deh) and Doom Retro (use VORTEX_DoomRetro.deh). You can try one of these on other ports as well. 
+
+If anything goes wrong contact the port developers.
+
+================================================
+For ZDOOM-based ports (GZDoom, ZDoom, Zandronum)
+================================================
+DON'T LOAD the additional DEHs files.
+Just run the mod as normal (only the D4V.wad) and go to the options menu.
+
+You will see a new option called "D4V - WEAPON SETUP" where you can select your weapon.
+
+
+
+======================
+For MS-DOS (DOOM2.WAD)
+======================
+For vanilla Doom, download the MS-DOS EDITION. You will see that the launcher used to select maps have a new option made to set your weapons. You can also access this menu typing WEAPONS.BAT
+
+If you use another executable that isn't the one included on MS-DOS EDITION you may have to apply the Dehacked files manually.
+ 
+
+
+===============
+Eternity Engine
+===============
+On Eternity you will have to remove the DEHACKED lump on D4V.WAD using a program like Slade. 
+The Vortex Rifle will not work here, unfortunately.
+
+

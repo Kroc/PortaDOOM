@@ -1,0 +1,66 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\D4V\play-d4v.ini"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/108725
+
+:EXTRA-WEAPONS:
+:===============================================================================
+Version 2.0 also added 8 new weapons (including the Gauss Cannon) that can be individually picked to replace the regular ones:
+
+! *NOTE:* Alternative weapons can be switched on-the-fly in *GZDoom* by bringing up the menu (ESC) and selecting "Weapons". Loading alternative weapons for other ports requires changing the executable invocation, which is not available in *PortaDOOM* for now
+
+:VORTEX RIFLE - SLOT 01:
+:-------------------------------------------------------------------------------
+It's a one-hit weapon with perfect accuracy, made for precision shots. It fires all your bullets at once. The more bullets you have, more chance to kill your enemy.
+
+*PROS:	You can use it to aim or kill multiple enemies in a row
+*CONS:	You have one chance to hit your target and you will lose all your bullets. The weapon may look OP, but the lack of ammo can screw you over. Use it wisely
+
+:MARK V PISTOL - SLOT 02:
+:-------------------------------------------------------------------------------
+This weapon uses a chargeable energy. You can aim and hold your fire with it.
+
+*PROS:	It's stronger than the regular pistol
+*CONS:	It's a lot slower as well
+
+:HELLSHOT - SLOT 03:
+:-------------------------------------------------------------------------------
+Fire a single-shot with two bolts at the same time. The first one is a strong concentrated shot, the second is more open, closer to a shotgun shot.
+
+*PROS:	You can easily pierce weaker enemies. Deals more damage than a shotgun. The first bolt is accurate and can be used to snipe weaker enemies
+*CONS:	The fire-rate is a lot slower than the shotgun, making you more vulnerable between each shot
+
+:THE REAPER - SLOT 03:
+:-------------------------------------------------------------------------------
+It shoots three-times in a row, making it a rapid-fire shotgun weapon. If you decide to concentrate all the shots on a single enemy, it will deal the same amount of damage of a SSG.
+
+*PROS:	Instead of using all the shots on the same enemy, you can spread the damage on more than one target and with relatively good accuracy
+*CONS:	If you miss one of the shots, you will not only waste your ammo but also a good amount of damage. The impact is not as immediate as a SSG shot
+
+:HEAVY ASSAULT RIFLE - SLOT 04:
+:-------------------------------------------------------------------------------
+Precise shooting without the need of waiting. Snipe-tapping is 100% accurate.
+
+*PROS:	You can tap your fire to snipe enemies or conserve ammo. There is no cooldown animation, making it a better option for weapon-switching
+*CONS:	It's weaker than the chaingun, with slower fire-rate (but it's still more powerful than the regular chaingun from `Doom 2`)
+
+:GRENADE LAUNCHER - SLOT 05:
+:-------------------------------------------------------------------------------
+Launch grenades that flies on an arc movement (it will affect Cyberdemons as well) The pick-up ammo gives 2 grenades instead of one.
+
+*PROS:	A lot faster than the Rocket Launcher, better control of splash-damage that can be used to hit specific targets or to fire down on holes
+*CONS:	It's short ranged, limiting his use against far-away enemies. The grenade impact deals less damage than a rocket
+
+:LIGHTING GUN - SLOT 06:
+:-------------------------------------------------------------------------------
+A precise bolt of energy that can reach enemies at distance or kill them faster when close to them.
+
+*PROS:	Very powerful, can stun and kill enemies very quickly. A mix of hitscan and projectile
+*CONS:	Consumes a lot of energy and It's easy to waste ammo unnecessarily. You will need a good amount of cells for an effective use of it
+
+:GAUSS CANNON - SLOT 07:
+:-------------------------------------------------------------------------------
+Extremely powerful mid-range weapon that can destroy a single demon with just one shot. it's a bit volatile due to splash-damage, so you may need some time to master it.
+
+*PROS:	A strong blast of energy that can be used to dispatch big enemies almost instantly, dealing a huge amount of damage. Shot with immediate impact - you don't have to wait for projectiles. Consumes less ammo than a BFG shot
+*CONS:	Doesn't have tracers like the BFG 9000 - it's not very effective against large groups of enemies. You have to be precise with your shots
+

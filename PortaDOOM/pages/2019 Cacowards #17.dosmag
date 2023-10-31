@@ -1,0 +1,29 @@
+$THEME=BLACK
+$TITLE=Gameplay Mod Awards
+$KEY:1=GOTO:DOOM 4 VANILLA
+
+^C:2019 CACOWARDS :: GAMEPLAY MOD AWARDS
+
+:-------------------------------------------------------------------------------
+
+:[1] `Doom 4 Vanilla` - <Noiser> et al
+:===============================================================================
+
+`Doom 4 Vanilla` seems almost inevitable in retrospect. It is a purely vanilla-compatible `Doom 2` gameplay mod, in the form of a PWAD and mandatory *DeHackEd* patch(es), that re-implements (de-makes?) a surprisingly comprehensive swath of `Doom 2016` into `Doom 1994`'s even more retro-FPS style. It is a masterpiece of design within incredibly strict limitations. It is basically perfect.
+
+*DeHackEd*, as a tool, occupied an odd niche. It draped a friendly GUI over a rudimentary binary executable patcher. Comparing it to the Game Genie is not entirely wrong. A major limitation to *DeHackEd* was that it could not create anything "new" within the `Doom` engine. Everything was, quite literally, a remix. The user had access to precisely 966 animation frames, which is what `Doom 2` used for its own animations; the player could reorder and reassign those frames, and tweak various numerical values, but the overall scope was limited to what the vanilla engine allowed.
+
+$KEY:K=URL:https://www.youtube.com/watch?v=gsvdMzfFNdQ
+In the pre-source code days, *DeHackEd*'s broad and yet limited nature was, in my view, a boon to the `Doom` community. It let modders hack and remix the `Doom` gameplay variables, but kept them grounded. Anything modders made would be fundamentally "Doomy", but people nevertheless stretched what they had to the limit. An unintended consequence of this is that `Doom` gameplay mods were almost unheard of prior to the source port era. Insofar as *DeHackEd* was used for major endeavors, it was mostly confined to "TCs" (total conversions), bookended by 1994's `ALIENS TC` and 1999's `Batman Doom`, which strained against the usual `Doom` gameplay rather than embracing it. There was no reason people couldn't have made gameplay mods in the 1990s... but beyond [K: "Kill Barney"] style WADs, almost nobody thought to do it. It wasn't until the source port era of the 2000s, when limits receded, that the creative niche began to flourish.
+
+`Doom 4 Vanilla`, then, is uncanny. It's a perfectly vanilla-compatible `Doom` WAD that could have been created in the 1990s; at the same time, it would have been impossible for it to have existed in the 1990s. Beyond its modern gameplay mod character, it includes every modern cross-port nicety you could ask for. Another core feature is the altered palette / colormap to create vanilla compatible brightmaps, which is not strictly new (`Strife` included colormap tricks) but which is done in an incredibly thorough and impressive manner. I have not even mentioned the incorporation of "alternate loadouts" via *DeHackEd* sub-patches, which is a simple answer to a question nobody had thought to ask before.
+
+The one fault I could possibly mention is <Noiser>'s refusal to anticipate the future with `Doom Eternal`'s reintroduction of the Pain Elemental. The current refashioning of the enemy into a Gore Nest, while clever, is perhaps too clever by half in turning the monster into a stationary noisy bullet sponge, disturbing the peace in any maps it inhabits. Restoring the PE to its rightful place in the menagerie would eliminate that pain point.
+
+`Doom 4 Vanilla` harnesses all of the knowledge about gameplay modding, and all of the vanilla editing trickery, that has been accumulated in the decades since `Doom`'s release. After 25 years of `Doom 2` modding, it is the first of its kind, and it's hard to see how it could be topped.
+
+^R- <Linguica>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/gameplay/
+:source [#: www.doomworld.com/cacowards/2019/gameplay/]

@@ -1,0 +1,143 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\D4V\play-d4v.ini"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/108725
+
+:ENEMIES
+:===============================================================================
+:Possessed:
+:-------------------------------------------------------------------------------
+Replacing the Zombieman, the Possessed ones are slow and can only attack when closer to the player. It's the weakest enemy in the game, however he attacks almost instantly, causing some distress if you're low on health.
+
+*Abilities:
+- Melee: Scratch
+
+:Security:
+:-------------------------------------------------------------------------------
+Probably the only enemy unchanged from vanilla, behaving exactly like the normal shotgunner. He will drop his weapon when killed.
+
+*Abilities:
+- Attack: Shotgun fire
+
+:Imp:
+:-------------------------------------------------------------------------------
+It's a lot faster compared to the original one, being able to avoid your shots just moving around. His fireballs are also faster and deals more damage.
+
+*Abilities:
+- Melee: Scratch
+- Attack: Fireball
+
+:Pinky:
+:-------------------------------------------------------------------------------
+The Pinky Demon can charge at high speed, glowing his face when running towards you. You can see him in the dark when that happens.
+
+*Abilities:
+- Melee: Bite
+- Attack: Charge attack
+
+:Lost Soul:
+:-------------------------------------------------------------------------------
+They have less health and will explode after touching you, however his blast will damage the player twice. When attacking, his flames changes from blue to red.
+
+*Abilities:
+- Attack: Suicidal charge
+- Dead: Explosion
+
+:Hell Razer:
+:-------------------------------------------------------------------------------
+Replacing the Chaingunner, the Hell Razer will fire a deadly beam that can drain your health in a matter of seconds. You can deal with him paying attention to the sound he makes when charging his weapon.
+
+*Abilities:
+- Attack: Energy beam
+- Pain: Quick retaliation
+
+:Cacodemon:
+:-------------------------------------------------------------------------------
+More aggressive than before, Cacodemons have the lowest "reaction time", meaning that he will shot his projectiles more ofter. He will also instantly shot you after activating his Pain State.
+
+*Abilities:
+- Melee: Bite
+- Attack: Fireball
+- Pain: Quick retaliation 
+
+:Hell Knight:
+:-------------------------------------------------------------------------------
+Powerful melee enemies that can charge at you and unleash a sequential number of punches. If you provoke him (activating his Pain State), he will blast the ground furiously, hitting enemies at distance (so he can fight back when unable to reach you).
+
+*Abilities:
+- Melee: Punch
+- Attack: Lunge attack
+- Pain: Ground pound
+
+:Mancubus:
+:-------------------------------------------------------------------------------
+The regular Mancubus can perform three different attacks: The first one is his well known attack with projectiles - unchanged from vanilla. However, if you get too close, he will use his flamethrower, quickly draining your health. On Pain State, he will perform a "mixed attack", shooting 2 projectiles and the flamethrower at the same time.
+
+*Abilities:
+- Melee: Flamethrower
+- Attack: Big fireballs
+- Pain: Fireballs + flamethrower
+
+:Cyber-Mancubus:
+:-------------------------------------------------------------------------------
+This one has an area-denial attack, shooting volatile projectiles that stays on the ground for a while and them explodes, damaging everything around him. His armor also gives immunity against splash damage, protecting him from his own explosions. If you get too close, he will grunt and perform a blast attack shooting his cannons at the ground. On pain-state, he will fire his regular projectiles but at a higher speed.
+
+*Abilities:
+- Melee: Ground blast
+- Attack: Explosive plasma
+- Pain: Quick retaliation
+
+:Revenant:
+:-------------------------------------------------------------------------------
+Revenants are back with jetpacks! He can use them in different ways. With his regular attack, he will just plain in position and fire two homing projectiles (that are faster, but causes less damage). However, after going through his Pain State, he may move with his jetpack, boosting his speed dramatically and allowing him to find another position to attack or avoid your shoots.
+
+*Abilities:
+- Melee: Punch
+- Attack: Hover + Homing fire
+- Pain: Jetpack boost + Homing fire
+
+:Gore Nest:
+:-------------------------------------------------------------------------------
+A link to the inner depths of hell, the portals opened by Gore Nests are wide enough to be used by Lost Souls. Acting as an stationary version of Pain Elemental, the Gore Nests are very durable - when destroyed, they spawn more souls by activating two times their death sequence. Don’t worry though, most of them explode right after birth, resulting on an intense death animation.
+
+*Abilities:
+- Attack: Spawn a Lost Soul
+- Dead: Spawn multiple Lost Souls (2x)
+
+:Summoner:
+:-------------------------------------------------------------------------------
+Replacing the Arch-vile, Summoners are very, very fast. She can insta-move (or "teleport" if you wish) going from different positions in a matter of seconds. Also can burst a huge barrage of homing projectiles and resurrect "summon" other enemies next to their dead bodies. Thankfully, she also have less HP than an Arch-Vile and a higher pain chance.
+
+*Abilities:
+- Chase: Insta-moving
+- Attack: Projectile barrage
+- Special: Summoning (reviving)
+
+:Baron of Hell:
+:-------------------------------------------------------------------------------
+Barons are extremely dangerous. They can mix the charge attack from Hell Knights with the explosive projectiles from Cyber-Mancubi. He is also immune to pain stunning and it’s extremely fast. With an aggressive behavior, Barons of Hell can easily outstanding the player. Be careful and try to keep distance!
+
+*Abilities:
+- Melee: Punch
+- Attack: Explosive shots
+- Attack: Lunge attack
+- Pain: Inverted sequence
+
+:Cyberdemon:
+:-------------------------------------------------------------------------------
+Big, unpredictable and very powerful. The Balgaar Cybie have a big amount of health and four different abilities: The unchanged missile attack from vanilla, the blade attack that shot at three different directions and a volley of homing missiles. He can also boost his speed similar to the Revenant, but in a more menacing way.
+
+*Abilities:
+- Attack: Cyberdemon missiles
+- Attack: Fire blade attack
+- Attack: Homing missiles
+- Pain: Rush (speed boost)
+
+:Spider Mastermind:
+:-------------------------------------------------------------------------------
+Have 3 different attacks that gets more and more dangerous. The first is a fast-paced attack with smaller projectiles, than she uses a spread attack with multi-directional projectiles + a single homing missile. Finally she finishes with his “telekinetic” attack (that it’s just his habitual hitscan from vanilla). If you activate her pain-state, she will resets this pattern from the beginning, giving you some time before going back to the hitscan phase.
+
+*Abilities:
+- Attack: Multiple shooting
+- Attack: Spread shooting + Homing missile
+- Attack: Telekinesis
+- Pain: Quick retaliation

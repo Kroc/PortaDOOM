@@ -9,7 +9,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/103629
 :-------------------------------------------------------------------------------
 :Released : *2018>12>30	  Author : <Miss Bubbles> & <Count651>
 :Levels   : *36			   Modes : *Single, Co-op, Deathmatch
-:Requires : *gzdoom		Includes : *+Graphics
+:Requires : *no-limit	Includes : *+Graphics
 :-------------------------------------------------------------------------------
 
 These maps are without a doubt strongly influenced by the original game. We aimed to emulate each developer's mapping style when appropriate and the overall feeling of playing the original `Doom`, but of course we took some liberties along the way and added in our own touches. We hope you enjoy the levels!

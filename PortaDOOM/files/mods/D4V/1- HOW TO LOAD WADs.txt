@@ -1,0 +1,63 @@
+
+DOOM 4 VANILLA - HOW TO PLAY OTHER MAPS
+
+__________________________________________________________________
+
+==================
+1 - COMMAND-LINES
+==================
+
+To play custom maps in ports like Crispy Doom or prBoom+, the recommended way is using command-lines.
+To do that, you can:
+
+1. Use a launcher like ZDL
+2. Make a .BAT file (you can use the notepad for that) typing this command line:
+
+--------------------------------------------------------
+[SOURCE-PORT] -file [PWAD] D4V.WAD -nodeh -deh D4V.deh 
+--------------------------------------------------------
+
+
+For example:
+---------------------------------------------------------
+crispy-doom -file SCYTHE.WAD D4V.WAD -nodeh -deh D4V.deh 
+---------------------------------------------------------
+
+You need to load the files in that order or the mod will not work as intended. 
+D4V.WAD, D4V.DEH and your BAT must be on the same folder of your port. 
+ 
+You will see the DOOM 2016 TITLE SCREEN if everything goes right.
+
+
+
+
+__________________________________________________________________
+
+===========
+2 - GZDOOM
+===========
+
+Command-lines can be used by ZDoom family ports as well, or you can "drag & drop" the files.
+
+"Drag & drop" will only work for ZDoom\GZDoom or Zandronum. 
+If you prefer that way, the LAST thing to select (and drop) is the custom map.
+
+Again: You will see the DOOM 2016 TITLE SCREEN if everything goes right.
+
+
+
+__________________________________________________________________
+
+================
+3 - MAP07 FIXES
+================
+
+If you want to play with one of the Map07 fixes, this is the right order:
+------------------------------------------------------------------
+[SOURCE-PORT] -file [PWAD] D4V.wad [MAP07fix] -nodeh -deh D4V.deh 
+------------------------------------------------------------------
+
+For example:
+------------------------------------------------------------------
+crispy-doom -file SCYTHE.WAD D4V.wad FSCYTHE.WAD -nodeh -deh D4V.deh 
+------------------------------------------------------------------

@@ -7,27 +7,27 @@ files\tools\xdelta3\
 pages\Home #??.dosmag
 pages\2019 Cacowards #??.dosmag
 
-# page 3:
+# page 3: winner 1
 @files\wads\megawads\eviternity\include.lst
-# page 4:
+# page 4: winner 2
 @files\wads\onesies\vercit\include.lst
-# page 5:
+# page 5: winner 3
 @files\wads\conversions\paradise\include.lst
-# page 6:
+# page 6: winner 4
 @files\wads\episodes\HF\include.lst
-# page 7:
+# page 7: winner 5
 @files\wads\episodes\fcff\include.lst
-# page 8:
+# page 8: winner 6
 @files\wads\conversions\hocus\include.lst
-# page 9:
+# page 9: winner 7
 @files\wads\episodes\sgnsym\include.lst
-# page 10:
+# page 10: winner 8
 @files\wads\megawads\joi_lstcv\include.lst
-# page 11:
+# page 11: winner 9
 @files\wads\onesies\remnant\include.lst
-# page 12:
+# page 12: winner 10
 @files\wads\episodes\wayfarer\include.lst
-# page 13:
+# page 13: runners up
 @files\wads\onesies\infraworld\include.lst
 @files\wads\megawads\lunar\include.lst
 @files\wads\people\Bridgeburner56\tss\include.lst
@@ -36,5 +36,7 @@ pages\2019 Cacowards #??.dosmag
 @files\wads\episodes\alienated\include.lst
 @files\wads\megawads\doomzero\include.lst
 @files\wads\onesies\entropy\include.lst
-# page 14:
+# page 14: runner up spotlight I
 @files\wads\episodes\sigil\include.lst
+# page 17: gameplay mods
+@files\mods\D4V\include.lst

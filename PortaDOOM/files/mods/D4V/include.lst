@@ -1,0 +1,7 @@
+pages\DOOM 4 VANILLA #??.dosmag
+files\mods\D4V\
+@files\ports\req=vanilla.lst
+files\wads\DOOM.ini
+files\wads\DOOM2.ini
+files\wads\TNT.ini
+files\wads\PLUTONIA.ini

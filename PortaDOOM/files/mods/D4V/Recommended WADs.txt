@@ -1,0 +1,46 @@
+This is a small list of some of my favorite maps to play with D4V. 
+It's just a personal unfinished list, there are tons of other maps out there you can play as well!
+
+----------------------------------------------
+Please, read the " HOW TO LOAD WADs.txt" first
+----------------------------------------------
+
+LEXICON:
+
+Vanilla: Works on any port, including Chocolate Doom and the original MS-DOS executable
+Limit-removing: You will need at least Crispy-Doom to run it as intended
+Boom: You will need a Boom-compatible port like Prboom+, Eternity or Doom Retro
+ 
+
+VANILLA:
+- Scythe
+- Khorus Speedy Shit
+- Interception
+- Doom Core
+- Doom 2 The Way id Did*
+- Zone 300
+- Reverie
+- Nex Credo
+- Eternally Yours
+- TNT Revilution*
+- 3 Heures d'agonie 3
+ 
+LIMIT-REMOVING:
+- BACULUS
+- Vile Flesh
+- No Rest for the Living**
+- Unholy Realms
+ 
+BOOM:
+- Moonblood*
+- Whispers of Satan
+- Speed of Doom
+
+* Needs the -nodeh parameter to work as intended. Some ports like GZDoom doesn't seems to have this paramater, so you will have  to remove the DEHACKED file from the custom mapset (the file causing the conflict). You can use a program called Slade to do that.
+** Use D4V-Lite to remove the Map07 bypasser
+
+--------------------------
+NOTES:
+ 
+- If you don't like the process to remove conflicting files from wads (like Moonblood or D2TWID), the best you can do is talk to the GZDoom developers to see if they can add the "-nodeh" parameter, which is the easiest way to play two wads with conflicting data.
+

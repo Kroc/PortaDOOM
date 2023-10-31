@@ -1,0 +1,49 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\D4V\play-d4v.ini"
+$KEY:W=URL:https://www.doomworld.com/forum/topic/108725
+
+:DOOM 4 VANILLA                                     * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[W] Website
+:-------------------------------------------------------------------------------
+:Released : *2016>10>31	  Author : *<Noiser> et al
+:Levels   : *None		   Modes : *Single
+:Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches
+:-------------------------------------------------------------------------------
+
+*aka `Doom 2016` the Way 1993 Did It
+
+After almost two years, I'm proud to announce my biggest project so far: It's a gameplay mod inspired by `Doom 2016`, made to be compatible with any source-port (or without any of them).
+
+100% vanilla compatible and full of *dehacked* tricks! All under the limitations of the original *Doom2.exe*.
+
+:FEATURES
+:===============================================================================
+*New demon abilities:
+- Mancubi with flamethrowers, Revenants using jetpacks, charging Pinkies, insta-moving Summoners... all the good stuff!
+
+*Tough weaponry:
+- As the 2x faster Chaingun, the Super Chainsaw that can kill almost any demon, a "glory-killing" sequence of punches and weapons with faster animations. Visually, it’s a mix of the original sprites by <Neccronixis> with some details from <Franco Tieppo>'s version
+
+*Extra-weapons:
+$KEY:3=PAGE:#03
+- Version 2.0 also added 8 new weapons (including the Gauss Cannon) that can be individually picked to replace the regular ones; see *[3] page 3*
+
+*A refined set of enemy sprites:
+$KEY:2=PAGE:#02
+- At least a better job compared to my initial attempts from 2016, some of them reworked from scratch. You can see the full bestiary on *[2] page 2*
+
+*The Doom4mator:
+- An extensive change of textures\flats to set any map on a `Doom 2016` mood, including foundries on the surface of Mars or Hellish canyons filled with toxic goo
+
+*Powered by DMXOPL:
+- The amazing soundbank made by <Csonicgo>. Listen to a new selection of tracks (a few of them from `Doom 2016`) with improved OPL instruments. Perfect for some heavy djent riffs!
+
+*Unusual vanilla effects:
+- Brightmaps for sprites and textures
+- Blood splats on floors
+- A custom palette with vivid tones
+- New COLORMAP tint effects
+- Aligned weapons when fired
+- Quick-weapon switching
+- Monsters with multiple abilities

@@ -1,0 +1,77 @@
+===========================================================================
+Advanced engine needed  : Vanilla
+Primary purpose         : Single play
+===========================================================================
+Title                   : BACULUS
+Filename                : BACrc1
+Author                  : Glen Christie (Crunchynut44)
+Email Address           : glen.christie@hotmail.com
+
+Description             : An entire megawad from scratch inspired by the
+                          likes of Scythe, Plutonia 2 and many many more. An
+                          easy going mapset compared to whats out there,
+                          designed to appeal to anyone looking for a relaxing
+                          general play through.
+                          
+                          The making of this WAD has been a hell of a journey
+                          for me, from very humble begginings this mapset has
+                          been through one serious development hell. Years
+                          and years of slowly getting better at mapping and
+                          writing music that is far beyond the scope of these
+                          levels now, but im still very happy with the result
+                          even if its aged.
+                          
+                          Anyway, enjoy!
+
+Additional Credits to   : Keyboard_doomer for the extensive testing,
+                          galileo31dos01 for some new graphics including the
+                          fancy new HUD and TeamTNT/Stewboy/Jimmy to whom I
+                          pilfered some MIDIs from, cheers fellas!
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 7 - 8 years
+Editor(s) used          : DB2, Slade
+May Not Run With        : Chocolate Doom (Visiplane errors)
+Tested With             : Zandronum 3, PrBoom+ 2.5.1.4
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

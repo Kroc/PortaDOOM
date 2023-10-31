@@ -12,17 +12,18 @@ $KEY:J=GOTO:Disjunction
 $KEY:K=GOTO:Don't Be A Bitch Remastered
 $KEY:L=GOTO:The Golden Souls 2
 $KEY:M=GOTO:DTWiD Series #02
-$KEY:N=GOTO:DOOM 404
-$KEY:O=GOTO:DOOM 64
-$KEY:P=GOTO:DOOM CE
-$KEY:Q=GOTO:DOOM II
-$KEY:R=GOTO:DOOM II - Hellscape
-$KEY:S=GOTO:DTWiD Series #01
-$KEY:T=GOTO:DTWiD Series #03
-$KEY:U=GOTO:DOOM(4) for DooM
-$KEY:V=GOTO:Doomed Space Wars
-$KEY:W=GOTO:DoomRL Arsenal
-$KEY:X=GOTO:Doom Zero
+$KEY:N=GOTO:DOOM 4 VANILLA
+$KEY:O=GOTO:DOOM 404
+$KEY:P=GOTO:DOOM 64
+$KEY:Q=GOTO:DOOM CE
+$KEY:R=GOTO:DOOM II
+$KEY:S=GOTO:DOOM II - Hellscape
+$KEY:T=GOTO:DTWiD Series #01
+$KEY:U=GOTO:DTWiD Series #03
+$KEY:V=GOTO:DOOM(4) for DooM
+$KEY:W=GOTO:Doomed Space Wars
+$KEY:X=GOTO:DoomRL Arsenal
+$KEY:Y=GOTO:Doom Zero
 
 ^C:INDEX :: D
 
@@ -41,14 +42,15 @@ $KEY:X=GOTO:Doom Zero
 - [K] *Don't Be A Bitch Remastered						Multiplayer
 - [L] *Doom: The Golden Souls 2							Total Conversions
 - [M] *Doom 2 the Way id Did							MegaWADs
-- [N] *DOOM 404											MegaWADs
-- [O] *DOOM 64											Commercial DOOM
-- [P] *DOOM CE											Total Conversions
-- [Q] *DOOM II											Commercial DOOM
-- [R] *DOOM II: Hellscape								Episodes
-- [S] *Doom the Way id Did								MegaWADs
-- [T] *Doom the Way id Did - The Lost Episodes			MegaWADs
-- [U] *DOOM(4) for DooM									Mods
-- [V] *Doomed Space Wars								Episodes
-- [W] *DoomRL Arsenal									Mods
-- [X] *Doom Zero										MegaWADs
+- [N] *DOOM 4 VANILLA									Mods
+- [O] *DOOM 404											MegaWADs
+- [P] *DOOM 64											Commercial DOOM
+- [Q] *DOOM CE											Total Conversions
+- [R] *DOOM II											Commercial DOOM
+- [S] *DOOM II: Hellscape								Episodes
+- [T] *Doom the Way id Did								MegaWADs
+- [U] *Doom the Way id Did - The Lost Episodes			MegaWADs
+- [V] *DOOM(4) for DooM									Mods
+- [W] *Doomed Space Wars								Episodes
+- [X] *DoomRL Arsenal									Mods
+- [Y] *Doom Zero										MegaWADs
