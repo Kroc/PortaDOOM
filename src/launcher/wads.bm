@@ -1,13 +1,14 @@
 'copyright (C) Kroc Camen 2018-2023, BSD 2-clause
 'wads.bm : functions for managing WAD files
 
-'   WADs_GetPWADPath$(pwad$)                    -> STRING
-'   WADs_Find(iwad$)                            -> STRING
-'   WADs_Split$(list$)                          -> STRING
-'   WADs_GetRegistryPath$(key$, value$, path$)  -> STRING
-'   WADs_GetGOGFile$(gog_id$, path$)            -> STRING
-'   WADs_GetSteamPath                           -> STRING
-'   WADs_GetSteamFile$(app_id$, name$, path$)   -> STRING
+'   WADs_GetPWADPath$(pwad$)                                    -> STRING
+'   WADs_Find(iwad$)                                            -> STRING
+'   WADs_Split$(list$)                                          -> STRING
+'   WADs_GetGOGFilePath$(gog_id$, path$)                        -> STRING
+'   WADs_GetGOGFileByRef(out_path$, gog_id$, path$)             -> BOOL
+'   WADs_GetSteamPath                                           -> STRING
+'   WADs_GetSteamFilePath$(app_id$, name$, path$)               -> STRING
+'   WADs_GetSteamFileByRef(out_path$, app_id$, name$, path$)    -> BOOL
 
 'locate a PWAD and return its path -- handles Steam / GOG PWADs
 '=============================================================================
@@ -48,39 +49,39 @@ findNERVE:
     'try and find "NERVE.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "DOOM 3 BFG Edition" installed?
-    LET pwad_path$ = WADs_GetGOGFile$( _
+    IF WADs_GetGOGFileByRef(pwad_path$, _
         GOG_DOOM3BFG_ID, "base\wads\NERVE.WAD" _
-    )
-    IF LEN(pwad_path$) <> 0 THEN RETURN
+    ) THEN RETURN
     
     'is Steam "DOOM 3 BFG Edition" installed?
-    LET pwad_path$ = WADs_GetSteamFile$( _
+    IF WADs_GetSteamFileByRef(pwad_path$, _
         STEAM_DOOM3BFG_ID, STEAM_DOOM3BFG_NAME, _
         "base\wads\NERVE.WAD" _
-    )
+    ) THEN RETURN
+    
+    'retuen pwad_path$ = ""
     RETURN
 
 findMASTER:
     'try and find Master Levels in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "DOOM II + Final DOOM" (including Master Levels) installed?
-    LET pwad_path$ = WADs_GetGOGFile$( _
+    IF WADs_GetGOGFileByRef(pwad_path$, _
         GOG_DOOM2M_ID,  "master\wads\" + Paths_GetFileName$(pwad_path$) _
-    )
-    IF LEN(pwad_path$) <> 0 THEN RETURN
+    ) THEN RETURN
     
     'is Steam "Master Levels for DOOM II" installed?
-    LET pwad_path$ = WADs_GetSteamFile$( _
+    IF WADs_GetSteamFileByRef(pwad_path$, _
         STEAM_DOOM2M_ID, STEAM_DOOM2M_NAME, _
         "master\wads\" + Paths_GetFileName$(pwad_path$) _
-    )
-    IF LEN(pwad_path$) <> 0 THEN RETURN
-    
+    ) THEN RETURN
     'is Steam "DOOM II Enhanced" installed?
-    LET pwad_path$ = WADs_GetSteamFile$( _
+    IF WADs_GetSteamFileByRef(pwad_path$, _
         STEAM_DOOM2E_ID, STEAM_DOOM2E_NAME, _
         "masterbase\master\wads\" + Paths_GetFileName$(pwad_path$) _
-    )
+    ) THEN RETURN
+    
+    'return pwad_path$ = ""
     RETURN
 
 END FUNCTION
@@ -189,32 +190,33 @@ END FUNCTION
 
 'get a path from the registry and check for a file's presence
 '=============================================================================
-FUNCTION WADs_GetRegistryPath$(key$, value$, path$)
-    DIM result$
-    
-    'read the given registry key
-    LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
-    'not there? return blank
-    IF result$ = "" THEN EXIT FUNCTION
-    
-    'add the file-path to the base path we got from the registry
-    LET result$ = Paths_AddSlash$(result$) + path$
-    'does that file exist?
-    IF _FILEEXISTS(result$) THEN
-        'if so, return the complete path
-        LET WADs_GetRegistryPath$ = result$
-    END IF
-    
-END FUNCTION
+REM FUNCTION WADs_GetRegistryPath$(key$, value$, path$)
+REM     DIM result$
+REM     
+REM     'read the given registry key
+REM     LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
+REM     'not there? return blank
+REM     IF result$ = "" THEN EXIT FUNCTION
+REM     
+REM     'add the file-path to the base path we got from the registry
+REM     LET result$ = Paths_AddSlash$(result$) + path$
+REM     'does that file exist?
+REM     IF _FILEEXISTS(result$) THEN
+REM         'if so, return the complete path
+REM         LET WADs_GetRegistryPath$ = result$
+REM     END IF
+REM     
+REM END FUNCTION
 
 'search for a file from a GOG game
 '=============================================================================
-FUNCTION WADs_GetGOGFile$(gog_id$, path$)
+FUNCTION WADs_GetGOGFilePath$(gog_id$, path$)
     DIM result$
     
     'read the relevant registry key for a GOG game
     LET result$ = Reg_Query$( _
-        HKEY_LOCAL_MACHINE, "SOFTWARE\GOG.com\Games\" + gog_id$, "Path" _
+        HKEY_LOCAL_MACHINE, _
+        "SOFTWARE\GOG.com\Games\" + gog_id$, "Path" _
     )
     'not there? return blank
     IF result$ = "" THEN EXIT FUNCTION
@@ -224,9 +226,20 @@ FUNCTION WADs_GetGOGFile$(gog_id$, path$)
     'does that file exist?
     IF _FILEEXISTS(result$) THEN
         'if so, return the complete path
-        LET WADs_GetGOGFile$ = result$
+        LET WADs_GetGOGFilePath$ = result$
     END IF
     
+END FUNCTION
+
+'search for a file from a GOG game
+'(note that out_path$ is BYREF!)
+'=============================================================================
+FUNCTION WADs_GetGOGFileByRef(out_path$, gog_id$, path$)
+    'attempt to find the file;
+    'gives the full path if found, otherwise empty-string
+    LET out_path$ = WADs_GetGOGFilePath$(gog_id$, path$)
+    'if found, return true!
+    IF out_path$ <> "" THEN LET WADs_GetGOGFileByRef = TRUE
 END FUNCTION
 
 'retrieve the Steam base path
@@ -255,7 +268,7 @@ END FUNCTION
 
 'search for a file from a Steam game
 '=============================================================================
-FUNCTION WADs_GetSteamFile$(app_id$, name$, path$)
+FUNCTION WADs_GetSteamFilePath$(app_id$, name$, path$)
     DIM result$
     
     'try reading from the uninstall entry (often excluded nowadays!)
@@ -279,7 +292,18 @@ FUNCTION WADs_GetSteamFile$(app_id$, name$, path$)
     'build the full file path
     LET result$ = Paths_AddSlash$(result$) + path$
     'return the full path if the file exists (otherwise empty-string)
-    IF _FILEEXISTS(result$) THEN LET WADs_GetSteamFile$ = result$
+    IF _FILEEXISTS(result$) THEN LET WADs_GetSteamFilePath$ = result$
     
+END FUNCTION
+
+'search for a file from a Steam game
+'(note that out_path$ is BYREF!)
+'=============================================================================
+FUNCTION WADs_GetSteamFileByRef(out_path$, app_id$, name$, path$)
+    'attempt to find the file;
+    'gives the full path if found, otherwise empty-string
+    LET out_path$ = WADs_GetSteamFilePath$(app_id$, name$, path$)
+    'if found, return true!
+    IF out_path$ <> "" THEN LET WADs_GetSteamFileByRef = TRUE
 END FUNCTION
 

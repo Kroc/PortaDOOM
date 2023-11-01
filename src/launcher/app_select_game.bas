@@ -1,8 +1,84 @@
 'copyright (C) Kroc Camen 2018-2023, BSD 2-clause
 'app_select_game.bas : present game selection UI
 
-select_game:
+'detect Steam/GOG WADs:
+'=============================================================================
+IF FALSE THEN
+CALL UIStatusbar_Clear
+CALL UIMenubar_Clear
+CALL UI_ClearScreen
+
+DIM wad_path$
+COLOR YELLOW: PRINT " DOOM.WAD": COLOR LTGREY
 '-----------------------------------------------------------------------------
+'GOG: The Ultimate DOOM
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOMU_ID, "DOOM.WAD" _
+) THEN PRINT " - " + wad_path$
+'GOG: DOOM I Enhanced
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOMUE_ID, "DOOM_Data\StreamingAssets\doom.wad" _
+) THEN PRINT " - " + wad_path$
+'GOG: DOOM 3 BFG Edition
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOM3BFG_ID, "base\wads\DOOM.WAD" _
+) THEN PRINT " - " + wad_path$
+'Steam: The Ultimate DOOM
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOMU_ID, STEAM_DOOMU_NAME, _
+    "base\DOOM.WAD" _
+) THEN PRINT " - " + wad_path$
+'Steam: DOOM I Enhanced
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOMUE_ID, STEAM_DOOMUE_NAME, _
+    "DOOM_Data\StreamingAssets\doom.wad" _
+) THEN PRINT " - " + wad_path$
+'Steam: DOOM 3 BFG Edition
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOM3BFG_ID, STEAM_DOOM3BFG_NAME, _
+    "base\wads\DOOM.WAD" _
+) THEN PRINT " - " + wad_path$
+'-----------------------------------------------------------------------------
+COLOR YELLOW: PRINT " DOOM2.WAD": COLOR LTGREY
+'-----------------------------------------------------------------------------
+'GOG: DOOM II + Master Levels
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOM2M_ID, "doom2\DOOM2.WAD" _
+) THEN PRINT " - " + wad_path$
+'GOG: DOOM II Enhanced
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOM2E_ID, "DOOM II_Data\StreamingAssets\doom2.wad" _
+) THEN PRINT " - " + wad_path$
+'GOG: DOOM 3 BFG Edition
+IF WADs_GetGOGFileByRef(wad_path$, _
+    GOG_DOOM3BFG_ID, "base\wads\DOOM2.WAD" _
+) THEN PRINT " - " + wad_path$
+'Steam: DOOM 2
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOM2_ID, STEAM_DOOM2_NAME, _
+    "base\DOOM2.WAD" _
+) THEN PRINT " - " + wad_path$
+'Steam: Master Levels for DOOM II
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOM2M_ID, STEAM_DOOM2M_NAME, _
+    "doom2\DOOM2.WAD" _
+) THEN PRINT " - " + wad_path$
+'Steam: DOOM II Enhanced
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOM2E_ID, STEAM_DOOM2E_NAME, _
+    "DOOM II_Data\StreamingAssets\doom2.wad" _
+) THEN PRINT " - " + wad_path$
+'Steam: DOOM 3 BFG Edition
+IF WADs_GetSteamFileByRef(wad_path$, _
+    STEAM_DOOM3BFG_ID, STEAM_DOOM3BFG_NAME, _
+    "base\wads\DOOM2.WAD" _
+) THEN PRINT " - " + wad_path$
+
+SLEEP
+END IF
+
+select_game:
+'=============================================================================
 'if only one game is defined (or `/AUTO` is defined),
 'we don't need to offer a choice
 IF CMD_GAME$ <> "" THEN
@@ -79,10 +155,10 @@ DO
     LET key$ = INKEY$
     IF key$ = "" THEN _CONTINUE
     
-	IF ASC(key$) = INKEY_ESC THEN
-		SYSTEM 0
-	END IF
-	
+    IF ASC(key$) = INKEY_ESC THEN
+        SYSTEM 0
+    END IF
+    
     'is it a numeric key?
     IF ISINT(key$) = FALSE THEN
         'no, beep, and wait again
