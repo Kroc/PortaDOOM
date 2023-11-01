@@ -4,6 +4,7 @@
 '   Paths_GetPath$(path$)       -> STRING
 '   Paths_AddSlash$(path$)      -> STRING
 '   Paths_StripSlash$(path$)    -> STRING
+'   Paths_FlipSlash$(path$)     -> STRING
 '   Paths_GetFolderName$        -> STRING
 '   Paths_GetFileName$          -> STRING
 '   Paths_HasExtension(path$)   -> TRUE|FALSE
@@ -77,15 +78,30 @@ END FUNCTION
 'removes the trailing slash
 '=============================================================================
 FUNCTION Paths_StripSlash$(path$)
-	DIM len_path%
-	LET len_path% = LEN(path$)
-	
-	IF len_path% = 0 THEN EXIT FUNCTION
-	
-	IF ASC(path$, len_path%) = 92 THEN
-		LET Paths_StripSlash$ = LEFT$(path$, len_path% - 1)
-	END IF
-	
+    DIM len_path%
+    LET len_path% = LEN(path$)
+    
+    IF len_path% = 0 THEN EXIT FUNCTION
+    
+    IF ASC(path$, len_path%) = 92 THEN
+        LET Paths_StripSlash$ = LEFT$(path$, len_path% - 1)
+    END IF
+    
+END FUNCTION
+
+'replace forward-slashes with Windows' back-slashes
+'=============================================================================
+FUNCTION Paths_FlipSlash$(path$)
+    DIM i%, out$
+    LET out$ = path$
+    
+l:  LET i% = INSTR("/", out$)
+    IF i% > 0 THEN
+        LET out$ = LEFT$(out$, i%-1) + "\" + MID$(out$, i%+1)
+        GOTO l
+    END IF
+    
+    LET Paths_FlipSlash$ = out$
 END FUNCTION
 
 'return the folder name from a path

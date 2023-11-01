@@ -38,6 +38,7 @@ LET IniAllowBasicComments = 0
 '$INCLUDE:'launcher\games.bi'
 '$INCLUDE:'launcher\engines.bi'
 '$INCLUDE:'launcher\iwads.bi'
+'$INCLUDE:'launcher\wads.bi'
 
 '=============================================================================
 

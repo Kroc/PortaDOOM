@@ -14,7 +14,6 @@
 '   IWADs_EnumerateINI(INIFile$)
 '   IWADs_Add(...)
 '   IWADs_GetPath$(iwad$)                       -> STRING
-'   IWADs_GetRegistryPath$(key$, value$, path$) -> STRING
 '   IWADs_Select()
 
 'match an IWAD name to its meta-data entry (load meta-data if necessary)
@@ -274,42 +273,51 @@ iwadInstalled:
 iwadDOOM:
     'try and find "DOOM.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
-    'is GOG "DOOM I Enhanced" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\2015545325", _
-        "Path", "DOOM_Data\StreamingAssets\doom.wad" _
+    'is GOG "The Ultimate DOOM" installed?
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOMU_ID, "DOOM.WAD" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
-    'is GOG "The Ultimate DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1435827232", _
-        "Path", "DOOM.WAD" _
+    'is GOG "DOOM I Enhanced" installed?
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOMUE_ID, "DOOM_Data\StreamingAssets\doom.wad" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
     'is Steam "The Ultimate DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2280", _
-        "InstallLocation", "base\DOOM.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOMU_ID, STEAM_DOOMU_NAME, _
+        "base\DOOM.WAD" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
+    'is Steam "DOOM I Enhanced" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOMUE_ID, STEAM_DOOMUE_NAME, _
+        "DOOM_Data\StreamingAssets\doom.wad" _
+    )
+    IF iwad_path$ <> "" THEN RETURN
+    
+    
+    'IF NO OTHER OPTION REMAINS, FALL BACK TO DOOM 3
+    'this is not ideal, because the WAD needs patching
+    '-------------------------------------------------------------------------
     'is GOG "DOOM 3 BFG Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1135892318", _
-        "Path", "base\wads\DOOM.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOM3BFG_ID, "base\wads\DOOM.WAD" _
     )
     IF iwad_path$ <> "" THEN GOTO iwadDOOM_BFG
     
     'is Steam "DOOM 3 BFG Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
-        "InstallLocation", "base\wads\DOOM.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM3BFG_ID, STEAM_DOOM3BFG_NAME, _
+        "base\wads\DOOM.WAD" _
     )
     IF iwad_path$ <> "" THEN GOTO iwadDOOM_BFG
     
     'can't find DOOM.WAD, try FreeDOOM substitution?
+    '-------------------------------------------------------------------------
     IF iwad_path$ = "" THEN
         PRINT "": COLOR WHITE
         PRINT "                WARNING: Could not locate DOOM.WAD,"
@@ -359,38 +367,53 @@ iwadDOOM_BFG:
 iwadDOOM2:
     'try and find "DOOM2.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
+    'is GOG "DOOM II + Master Levels" installed?
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOM2M_ID, "doom2\DOOM2.WAD" _
+    )
+    IF iwad_path$ <> "" THEN RETURN
+    
     'is GOG "DOOM II Enhanced" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1426071866", _
-        "Path", "DOOM II_Data\StreamingAssets\doom2.wad" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOM2E_ID, "DOOM II_Data\StreamingAssets\doom2.wad" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
-    'is GOG "DOOM II" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1435848814", _
-        "Path", "doom2\DOOM2.WAD" _
+    'is Steam "DOOM 2" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM2_ID, STEAM_DOOM2_NAME, _
+        "base\DOOM2.WAD" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
-    'is Steam "DOOM II" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2300", _
-        "InstallLocation", "base\DOOM2.WAD" _
+    'is Steam "Master Levels for DOOM II" installed?
+    '(this also contains a copy of DOOM2.WAD)
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM2M_ID, STEAM_DOOM2M_NAME, _
+        "doom2\DOOM2.WAD" _
     )
     IF iwad_path$ <> "" THEN RETURN
     
+    'is Steam "DOOM II Enhanced" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM2E_ID, STEAM_DOOM2E_NAME, _
+        "DOOM II_Data\StreamingAssets\doom2.wad" _
+    )
+    IF iwad_path$ <> "" THEN RETURN
+    
+    'IF NO OTHER OPTION REMAINS, FALL BACK TO DOOM 3 BFG
+    'this is not ideal, because the WAD needs patching
+    '-------------------------------------------------------------------------
     'is GOG "DOOM 3 BFG Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1135892318", _
-        "Path", "base\wads\DOOM2.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_DOOM3BFG_ID, "base\wads\DOOM2.WAD" _
     )
     IF iwad_path$ <> "" THEN GOTO iwadDOOM2_BFG
     
     'is Steam "DOOM 3 BFG Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 208200", _
-        "InstallLocation", "base\wads\DOOM2.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM3BFG_ID, STEAM_DOOM3BFG_NAME, _
+        "base\wads\DOOM2.WAD" _
     )
     IF iwad_path$ <> "" THEN GOTO iwadDOOM2_BFG
     
@@ -444,16 +467,22 @@ iwadTNT:
     'try and find "TNT.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "Final DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1435848742", _
-        "Path", "TNT\TNT.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_FDOOM_ID, "TNT\TNT.WAD" _
     )
     IF LEN(iwad_path$) <> 0 THEN RETURN
     
     'is Steam "Final DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
-        "InstallLocation", "base\TNT.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_FDOOM_ID, STEAM_FDOOM_NAME, _
+        "base\TNT.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "DOOM II Enhanced" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM2E_ID, STEAM_DOOM2E_NAME, _
+        "finaldoombase\TNT.WAD" _
     )
     RETURN
     
@@ -461,34 +490,38 @@ iwadPLUTONIA:
     'try and find "PLUTONIA.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "Final DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1435848742", _
-        "Path", "Plutonia\PLUTONIA.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_FDOOM_ID, "Plutonia\PLUTONIA.WAD" _
     )
     IF LEN(iwad_path$) <> 0 THEN RETURN
     
     'is Steam "Final DOOM" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2290", _
-        "InstallLocation", "base\PLUTONIA.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_FDOOM_ID, STEAM_FDOOM_NAME, _
+        "base\PLUTONIA.WAD" _
     )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
     
+    'is Steam "DOOM II Enhanced" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_DOOM2E_ID, STEAM_DOOM2E_NAME, _
+        "finaldoombase\PLUTONIA.WAD" _
+    )
     RETURN
     
 iwadHERETIC:
     'try and find "HERETIC.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "Heretic" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1290366318", _
-        "Path", "HERETIC.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_HERETIC_ID, "HERETIC.WAD" _
     )
     IF LEN(iwad_path$) <> 0 THEN RETURN
     
     'is Steam "Heretic" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2390", _
-        "InstallLocation", "base\HERETIC.WAD" _
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        STEAM_HERETIC_ID, STEAM_HERETIC_NAME, _
+        "base\HERETIC.WAD" _
     )
     RETURN
     
@@ -496,16 +529,28 @@ iwadHEXEN:
     'try and find "HEXEN.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "Hexen" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1247951670", _
-        "Path", "HEXEN.WAD" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_HEXEN_ID, "HEXEN.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is GOG "Hexen: Deathkings of the Dark Citadel" installed?
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_HEXENDD_ID, "HEXEN.WAD" _
     )
     IF LEN(iwad_path$) <> 0 THEN RETURN
     
     'is Steam "Hexen" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2360", _
-        "InstallLocation", "base\HEXEN.WAD" _
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_HEXEN_ID, STEAM_HEXEN_NAME, _
+        "base\HEXEN.WAD" _
+    )
+    IF LEN(iwad_path$) <> 0 THEN RETURN
+    
+    'is Steam "Hexen: Deathkings of the Dark Citadel" installed?
+    LET iwad_path$ = WADs_GetSteamFile$( _
+        STEAM_HEXENDD_ID, STEAM_HEXENDD_NAME, _
+        "base\HEXEN.WAD" _
     )
     RETURN
     
@@ -513,40 +558,18 @@ iwadSTRIFE:
     'try and find "STRIFE1.WAD" in Steam/GOG installations:
     '-------------------------------------------------------------------------
     'is GOG "The Original Strife: Veteran Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\GOG.com\Games\1432899949", _
-        "Path", "strife1.wad" _
+    LET iwad_path$ = WADs_GetGOGFile$( _
+        GOG_STRIFEVE_ID, "strife1.wad" _
     )
     IF LEN(iwad_path$) <> 0 THEN RETURN
     
     'is Steam "The Original Strife: Veteran Edition" installed?
-    LET iwad_path$ = IWADs_GetRegistryPath$( _
-        "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 317040", _
-        "InstallLocation", "strife1.wad" _
+    LET iwad_path$ = WADs_GetRegistryPath$( _
+        STEAM_STRIFEVE_ID, STEAM_STRIFEVE_NAME, "strife1.wad" _
     )
     
     RETURN
-    
-END FUNCTION
 
-'get a path from the registry and check for a file's presence
-'=============================================================================
-FUNCTION IWADs_GetRegistryPath$(key$, value$, path$)
-    DIM result$
-    
-    'read the given registry key
-    LET result$ = Reg_Query$(HKEY_LOCAL_MACHINE, key$, value$)
-    'not there? return blank
-    IF result$ = "" THEN EXIT FUNCTION
-    
-    'add the file-path to the base path we got from the registry
-    LET result$ = Paths_AddSlash$(result$) + path$
-    'does that file exist?
-    IF _FILEEXISTS(result$) THEN
-        'if so, return the complete path
-        LET IWADs_GetRegistryPath$ = result$
-    END IF
-    
 END FUNCTION
 
 '=============================================================================
