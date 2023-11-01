@@ -2,11 +2,19 @@
 User visible changes for UPX
 ==================================================================
 
+Changes in 4.2.1 (01 Nov 2023):
+  * linux: /proc/self/exe now is optional
+  * windows: use SetFileTime to preserve sub-second file timestamps
+  * official Windows builds: revert activeCodePage change introduced in 4.2.0
+  * bug fixes - see https://github.com/upx/upx/milestone/14
+
 Changes in 4.2.0 (26 Oct 2023):
   * win32/pe and win64/pe: stricter relocation checks; please report regressions
+  * unix: use utimensat to preserve sub-second file timestamps
   * new option '--link' to preserve hard-links (Unix only; use with care)
   * add support for NO_COLOR env var; see https://no-color.org/
   * disable macOS support until we fix compatibility with macOS 13+
+  * official Windows builds: set activeCodePage to UTF-8
   * bug fixes - see https://github.com/upx/upx/milestone/13
 
 Changes in 4.1.0 (08 Aug 2023):
