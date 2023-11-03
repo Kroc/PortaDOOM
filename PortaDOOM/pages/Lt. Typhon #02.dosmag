@@ -1,0 +1,130 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\TYPHON\play-typhon.ini"
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=64378
+
+:WEAPONS
+:===============================================================================
+:All weapons:
+:-------------------------------------------------------------------------------
+- *Zoom:* Mighty Boot (kick in the air to dropkick, kick while ducking to megaman slide)
+
+:Plutonium handler:
+:-------------------------------------------------------------------------------
+Very strong and slow, protects from damaging floors and lets you jump higher. Punch slime barrels to pick them up! Deselecting will drop the barrel.
+
+*- Alt:* Shield + charged punch
+*- Reload:* Self destruct
+
+:Fists:
+:-------------------------------------------------------------------------------
+Very powerful, will speed up if fire is held.
+
+- *Alt:* Charged uppercut
+  Punch cyberdemon/revenant rockets to grab and throw them back!
+- *Taunt:* Dents your opponents ego and stuns them for a few seconds. Upgrade with bio punch/Sirius beam (found randomly replacing the plutonium handler and berserk)
+
+:Sirius:
+:-------------------------------------------------------------------------------
+Typhon's orbital laser cannon. Targeted with the nerve endings in her empty eye socket, it follows whichever enemy you aim it at and lets loose a searing beam of energy.
+
+:Bio Shock Punch:
+:-------------------------------------------------------------------------------
+Turn your enemies into walking time bombs. Can be charged to do a flurry of jabs.
+
+:Automag:
+:-------------------------------------------------------------------------------
+Strong, accurate but kinda slow.
+
+- *Alt:* Tap to fire stunning shot, charge to fire bio blast
+
+:Shotgun:
+:-------------------------------------------------------------------------------
+Fairly accurate, rips stuff up good.
+
+- *Alt:* Hold to chuck a big slug, tap to whap enemies with the shotty's stock
+
+:Sawnoff:
+:-------------------------------------------------------------------------------
+Inaccurate but very powerful at close range.
+
+- *Alt:* Barfs dragon's breath shells
+
+:Machine gun:
+:-------------------------------------------------------------------------------
+Decently accurate, fairly strong.
+
+- *Alt:* Fires a grenade
+
+:Gatling gun:
+:-------------------------------------------------------------------------------
+Pretty accurate, strong as fuck.
+
+Pick up two to dual wield and kill everything (burns through cells and bullets real fast tho).
+
+:Rocket launcher:
+:-------------------------------------------------------------------------------
+Strong but dangerous at close range.
+
+- *Alt:* Fires a stronger missile for twice the ammo
+
+:Pulse rifle:
+:-------------------------------------------------------------------------------
+Fast demon-melting action.
+
+- *Alt:* Shoots a piercing, slightly explosive beam
+
+:FuckOff Gun 25000:
+:-------------------------------------------------------------------------------
+Kills stuff good.
+
+- *Alt:* Kills stuff gooder
+
+:Old BFG9000:
+:-------------------------------------------------------------------------------
+Fires like the doom alpha bfg.
+
+- *Alt:* Plasma shotgun
+
+:Hand of Diana:
+:-------------------------------------------------------------------------------
+Similar to the FOG25000 but hitscan.
+
+:Demonic shotgun:
+:-------------------------------------------------------------------------------
+Pukes bloody giblets all over your enemies.
+
+- *Alt:* Tumor grenade
+
+:Strange Rifle:
+:-------------------------------------------------------------------------------
+Created by The Artificer, this gun has no obvious weapon mechanisms but somehow fires like a faster plasma rifle. Very odd.
+
+- *Alt:* Fire a splinter missile that bursts into treats (tap alt to detonate)
+
+:Outsider revolver:
+:-------------------------------------------------------------------------------
+Accurate and incredibly powerful, dangerous to use at close range.
+
+- *Alt:* Fire six shots at once and kill everything
+
+:Dumbbells:
+:-------------------------------------------------------------------------------
+Heave a dumbbell at whoever's stupid enough to get in the way. Can be charged.
+
+- *Alt:* Flex on your enemies and build up armor points
+
+:Munchy:
+:-------------------------------------------------------------------------------
+Punch to throw them at your foes, altfire to pet the caco.
+
+:POWERUPS
+:===============================================================================
+- *Medikits/stimpacks:* Will heal you up to 100%, above which will only give half the original hp
+- *Gold armor:* Protects you from all damage but will wear out
+- *Flesh armor:* Gives you 100 armor and temporarily protects you from most damage (as well as slowly regenerating your bio energy)
+- *Berserk:* Speeds up your punch and powers up your uppercut.
+- *MRE:* Use to restore 200 hp.
+- *Cigar:* Slowly regenerates armor and bio energy, and takes a little health. You can still lose hp but will not die while using it, so it's a perfect last resort for maps fulla demons
+- *Grappling hooks:* Use to shoot them into the ceiling. Press use on their chain to climb. Can be used under ceilings or sky, but not while huggin a wall or they'll stick to that instead.
+- *Bio powerups:* Unlock superpowers that let you kill stuff deader!
+- *Outsider Sigil:* Very rare, use to attain Burning Angel form for 60 seconds!

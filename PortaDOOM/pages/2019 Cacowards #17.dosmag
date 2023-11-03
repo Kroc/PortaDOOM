@@ -1,6 +1,7 @@
 $THEME=BLACK
 $TITLE=Gameplay Mod Awards
 $KEY:1=GOTO:DOOM 4 VANILLA
+$KEY:2=GOTO:Lt. Typhon
 
 ^C:2019 CACOWARDS :: GAMEPLAY MOD AWARDS
 
@@ -23,6 +24,38 @@ The one fault I could possibly mention is <Noiser>'s refusal to anticipate the f
 `Doom 4 Vanilla` harnesses all of the knowledge about gameplay modding, and all of the vanilla editing trickery, that has been accumulated in the decades since `Doom`'s release. After 25 years of `Doom 2` modding, it is the first of its kind, and it's hard to see how it could be topped.
 
 ^R- <Linguica>
+
+:[2] `Lt. Typhon` - <Skelegant>
+:===============================================================================
+
+In this day and age, gameplay mods are a dime a dozen, so to truly shine out there it helps to have some personality, and boy does this one have it. The mod puts us in the ass-kicking boots of the eponymous Typhon, a beefy, absolute badass of a woman, armed and ready to kill some demons, and for that task she sure has some fine guns.
+
+Yes, if there's one aspect where the mod truly shines is in how its various weapons feel to use. The punchy fire sounds, the recoil, and of course how easily they tear through demons. Now, this ain't another one of those over-the-top OP explosion-fest types like `Russian Overkill`, although it does feature some jaw-droppingly excessive superweapons; most of the arsenal is "strong but balanced". Apart from the usual standard weapons for each slot (and a starting pistol that sadly seems to suffer from the typical issue of becoming kinda useless when you get anything else), there's alternate spawns, such as a very fleshy-looking alternate SSG, which fires bouncing gibs, of all things, a bigass machine gun that somehow can be dual wielded (oh my), or even a couple extras that can replace some powerups. For even more ways to deal the pain, all weapons come with secondary fire modes, and a quick kick too, just in case.
+
+But what about other items? Well, while most of them are pretty much unchanged save for some added visual flair, there's also some neat usables, like cigars you can smoke to get bonus armour in exchange for health, MREs you can chow down on when you need a full heal (with a very rare variant that comes with a little review and all, as a wink to a certain YouTuber), and the kind of awkward to use "jet-powered anchors" that let you climb up anywhere you want.
+
+And when I thought the mod couldn't impress me more, I find out that some things can be picked up and thrown by punching them, including a couple projectiles (yes, you can just go up and yoink a Cybie's rocket and then yeet it back, though the timing is rather tight). Oh yeah, and the berserk. While its usual replacement is nice and all, with added music to set the mood for the impending smackdown, there's also the rare melee upgrades, with the first of them allowing you to go all Fist of the North Star on enemies. But wait, there's more! Faster punches, shooting balls of energy, orbital strikes, oh my... It just keeps on going. By the way, did I mention there's baby Cacos? Because there are baby Cacos, and you can pet them!
+
+This has been one hell of a ride, overall. I tip my witch hat to <Skelegant>, and I can't wait to see what else she can come up with next.
+
+^R- <Marisa Kirisame>
+
+:[3] `NAKU-NARU` - <Naku Team>
+:===============================================================================
+
+The mod is pretty light in terms of story: You are a man possessed by a vengeful oni, and your mission is to slaughter all demons and restore peace. Now, I know this is starting to sound very Anime and I won't lie, yeah, it pretty much is. But don't worry, there ain't no waifus or anything to see here.
+
+The first thing I've got to mention about it is just how it FEELS. Fast guns, strong feedback, barely any downtime when reloading or switching weapons, plus increased mobility. All of this turns into a specific blend of non-stop action that you can't help but get lost in. During my initial run I was set to just play for a while to see what this was all about, but before I noticed, the sun had already come down and I had sunk several hours into the deed.
+
+There isn't much to see in terms of items -- most changes are cosmetic other than berserk being swapped out for a double-damage power, which also makes you GO FAST.
+
+Where this truly shines is in its weaponry. Most of the arsenal is composed of ballistic weaponry of increasing power, with just a couple exceptions. Starting up, you've got a fancy slicey-dicey staff, which cuts through flesh like it's nothing (and is available as a quick melee for all one-handed guns moving up), and a revolver that makes quick work of any lower-tier enemies (and kicks like a mule). Moving on up, we get a very beefy sounding lever-action shotgun (the good ol' model 1887, complete with fancy spin), truly a mighty boomstick, I must say. Slot 4 gets an SMG, which rapidly unloads lead into demon's faces and is perfect for quick bursts while on the run.
+
+Not much is changed in slot 5, although this new rocket launcher does have some very welcome added "oomph" to make it feel stronger. Lovers of fine dakka will rejoice at the sight of the light machine gun in slot 6, with a damage output as strong as its mighty recoil. Also sharing slot 6 is a nice and strong bolt-action rifle, complete with a bayonet and corresponding altfire (which when held gives you a nice speed boost to make a dash towards the enemy, sometimes accompanied by a warcry). And last but not least, we finally reach the BFG slot, and what lies here I think I'd best not talk too much about—don't wanna spoil it. Its ammunition is scarce, but it REALLY does kill enemies DEAD on a direct hit.
+
+Each and every one of these weapons has its specific use, and the act of rapidly switching between them depending on the situation is something that will come naturally to players. It's not something that happens very often with other mods, where once you've found "the one" it will be used on everything until it runs dry. Much care seems to have been put into balance here, and that's something I greatly appreciate. My congratulations to <Team Naku> for their fine work—keep it up!
+
+^R- <Marisa Kirisame>
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/cacowards/2019/gameplay/

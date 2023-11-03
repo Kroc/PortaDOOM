@@ -1,0 +1,70 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\TYPHON\play-typhon.ini"
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=64378
+
+:Lt. Typhon                                         * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[Z] ZDoom-Forum
+:-------------------------------------------------------------------------------
+:Released : *2019>04>20	  Author : <Skelegant>
+:Levels   : *None		   Modes : *Single, Co-op, Deathmatch
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Scripts
+:-------------------------------------------------------------------------------
+
+A `Final Doomer`-esque mod starring a battlescarred badass with ridiculous firepower! While not as overpowered as `Russian Overkill` or `Baradoom`, it makes `Plutonia` less of a bullshit challenge, while adding a few challenges of its own. Mancubus fireballs burst into a hail of flame, revenant rockets are a little faster and home better but can be shot out of the air if your aim is good (and grabbed too!) Cyberdemon rockets are faster and can also be grabbed, but only if your timing's just right.
+
+Backpacks provide ammo as well as rocket powered grappling hooks and a rich, lung-destroying cigar that'll buff your armor but lower your HP (as well as make you look badass as fuck)
+
+Most weapons have an altfire so be sure to bind that before playing if you haven't already (*PortaDOOM:* right mouse click)
+
+:Story:
+:-------------------------------------------------------------------------------
+Lt. Typhon was the textbook definition of a good soldier: patriotic, equally loved and feared by her platoon, ripped as all hell, and ready to throw down for her nation.
+
+That all changed when she accidentally uncovered a plot devised by her superiors to turn the entire Amazon jungle into a giant military base/nuke launch site. After a heated confrontation ending in Typhon throwing her captain through a window, she was shipped off to the Mars settlement to cool down.
+Her days there were spent working out, reading Soldier of Fortune, and watching her beloved Earth through the anti-asteroid cannon's scope.
+
+When the UAC bases on Phobos and Deimos were breached by Hell's armies, Typhon hijacked a military transport ship and joined the human resistance. After Hell's forces were seemingly defeated, Typhon returned to the Mars colony and settled down to some Earth-watching, only to find the planet shrouded in red smoke and puckered with fire. The motherfuckers were so sore about losing they'd invaded Earth! Furious, Typhon set the nearest teleporter's co-ords to Earth and leaped in, emerging in the Amazon. Armed with only her fists and her trusty 1911, Typhon roared defiance against Hell and flung herself into the demon-infested jungle.
+
+:Credits:
+:===============================================================================
+*Mug sprites:
+- Sprites: <id Software>
+- Sprite Edit: <Lynn Forest>, <Xaser>, <Alice James>, <Skelegant>
+
+*Weapon sprites:
+- Sprites: <id Software>, <Skelegant>, <Neoworm>
+- Sprite Edit: <Skelegant>, <Captain J>, <lossforwords>
+
+*Player sounds* from `Skyrim`
+*Melee sounds* from `Combined_Arms` (originally from `DRLA` and `Mortal Kombat`)
+
+*Misc sounds:
+- `Quake 3`
+- `BadMojo`
+- `Mortal Kombat X`
+- `Half-Life`
+- `Half-life 2`
+- `Wolfenstein 09`
+- `Street Fighter 5`
+- `Contra 3`
+
+*Fonts:* <Blue Shadow>, <Jimmy>
+
+- SUPERM1: <Red MarKer> - DMC 12 gauge
+- SUPERM2: <d.notive> - Streets of Passion
+- SUPERM3: <Carpenter Brut> - Hairspray Hurricane
+- SUPERM4: <Carpenter Brut> - Meet Matt Stryker
+- SUPERM5: <Dance with the Dead> - From Hell
+- SUPERM6: <Dance with the Dead> - Go!
+- Intro/between maps: <Hexenkraft> - Diabolus ex Nihilo
+- Ending: <VHS Glitch> - Iron Pumper
+- BURNPOW: <Mercenary> - Burning Angel
+
+*Special thanks:
+- <Yholl>
+- <Prettyfist>
+- <Combine_Kegan>
+- <Darsycho>
+- <Captain J>
+- <Marty>

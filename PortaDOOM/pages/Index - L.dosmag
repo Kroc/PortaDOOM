@@ -2,8 +2,9 @@ $THEME=BLUE
 $KEY:A=GOTO:Legacy of Heroes
 $KEY:B=GOTO:lilith.pk3
 $KEY:C=GOTO:Lost Cvilization
-$KEY:D=GOTO:Luducrium
-$KEY:E=GOTO:Lunar Catastrophe
+$KEY:D=GOTO:Lt. Typhon
+$KEY:E=GOTO:Luducrium
+$KEY:F=GOTO:Lunar Catastrophe
 
 ^C:INDEX :: L
 
@@ -12,5 +13,6 @@ $KEY:E=GOTO:Lunar Catastrophe
 - [A] *Legacy of Heroes									Episodes
 - [B] *lilith.pk3										Episodes
 - [C] *Lost Civilization								MegaWADs
-- [D] *Luducrium										Jokes
-- [E] *Lunar Catastrophe								MegaWADs
+- [D] *Lt. Typhon										Mods
+- [E] *Luducrium										Jokes
+- [F] *Lunar Catastrophe								MegaWADs
