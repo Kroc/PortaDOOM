@@ -1,24 +1,26 @@
 $THEME=BLUE
-$KEY:A=GOTO:Master Levels #17
-$KEY:B=GOTO:Nihility
-$KEY:C=GOTO:No End in Sight
-$KEY:D=GOTO:No Rest for the Living
-$KEY:E=GOTO:NoSun Series #01
-$KEY:F=GOTO:NoSun Series #02
-$KEY:G=GOTO:NoSun Series #03
-$KEY:H=GOTO:NoSun Series #04
-$KEY:I=GOTO:NoSun Series #05
+$KEY:A=GOTO:NAKU-NARU
+$KEY:B=GOTO:Master Levels #17
+$KEY:C=GOTO:Nihility
+$KEY:D=GOTO:No End in Sight
+$KEY:E=GOTO:No Rest for the Living
+$KEY:F=GOTO:NoSun Series #01
+$KEY:G=GOTO:NoSun Series #02
+$KEY:H=GOTO:NoSun Series #03
+$KEY:I=GOTO:NoSun Series #04
+$KEY:J=GOTO:NoSun Series #05
 
 ^C:INDEX :: N
 
 :-------------------------------------------------------------------------------
 
-- [A] *Nessus (Master Levels)							Commercial DOOM
-- [B] *Nihility											Episodes
-- [C] *No End in Sight									MegaWADs
-- [D] *No Rest for the Living							Commercial DOOM
-- [E] *NOSUN (NoSun Series)								People
-- [F] *NOSUN2 (NoSun Series)							People
-- [G] *NOSUN3 (NoSun Series)							People
-- [H] *NOSUN4 (NoSun Series)							People
-- [I] *NOSUN5 (NoSun Series)							People
+- [A] *NAKU-NARU										Mods
+- [B] *Nessus (Master Levels)							Commercial DOOM
+- [C] *Nihility											Episodes
+- [D] *No End in Sight									MegaWADs
+- [E] *No Rest for the Living							Commercial DOOM
+- [F] *NOSUN (NoSun Series)								People
+- [G] *NOSUN2 (NoSun Series)							People
+- [H] *NOSUN3 (NoSun Series)							People
+- [I] *NOSUN4 (NoSun Series)							People
+- [J] *NOSUN5 (NoSun Series)							People

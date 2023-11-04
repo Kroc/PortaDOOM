@@ -1,0 +1,92 @@
+$NAV=Mods
+$KEY:P=SHELL:launcher.exe "mods\naku-naru\play-naku-naru.ini"
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=65276
+
+:NAKU-NARU                                          * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play						 *[Z] ZDoom-Forum
+:-------------------------------------------------------------------------------
+:Released : *2019>07>06	  Author : <Naku Team>
+:Levels   : *None		   Modes : *Single, ...?
+:Requires : *gzdoom		Includes : *+Weapons
+:-------------------------------------------------------------------------------
+
+`Naku-Naru` is a weapons mod that puts you in the shoes of a man possessed by a Japanese Oni Demon, called upon to beat the demons back into hell and restore peace.
+
+:Story:
+:-------------------------------------------------------------------------------
+In the dark corners of hell, objects of immense power are held to never be wielded by mortals again.
+
+In the haste of exploring Hell, mortals had discovered once again discovered these tomes of might, unknowing to their effects.
+
+Following the Invasion, Man had discovered the true might of hell and it's denizens. Your understanding of this situation is clear.
+
+Now is time to strike. The beasts have claimed stake across the surface of Deimos, Phobos, and even The Earth itself.
+
+You understand your role, my servant. Now, Take upon yourself these tomes of power and be given the gift of eternity.
+
+Become, the Naku-Naru. He who is without.
+
+:Weapons:
+:-------------------------------------------------------------------------------
+*Notes:
+
+- Altfire will melee with all one-handed weapons,\\as well as type 99's bayonet
+- Zooming with two-handed weapons (besides ARs/LMGs)\\will aim down sights or scopes
+
+*1 - Crescent Staff
+
+From the darkest, deepest depths of the underworld, this blade of woe will make even the cruelest of monsters quiver in terror from its great power.
+It's small enough to have another weapon in hand and still use, but with such a punch most enemies will falter quickly to its might. Keep it close in hand.
+
+*2 - Miroku Police .38 Special
+
+Formerly a popular police revolver, The Miroku is a Solid, Accurate .38 Special Revolver similar to iconic Colt .38 Revolvers like the Model 10.
+Not a particularly legendary weapon, but one which will serve its duty nonetheless.
+
+*3 - Chiappa Model 1887 Shotgun
+
+Come with me, if you want to live.
+
+6 rounds, 6 chances to hit something. The Model 1887 is legendary for its size and power, and makes a great onscreen profile. Incredibly powerful up close, but ineffective at larger ranges, this powerhouse will generally make quick work of most enemies you come across. Unfortunately not magazine fed, it requires that you reload each round individually.
+
+*3 - Stoeger 12 Gauge Shotgun
+
+A classic American double barreled shotgun. Only holds 2 rounds at a time but does a devastating amount of damage up close. Has a trigger for each barrel. You are unable to use a melee weapon with it, at the cost of being able to fire both barrels at once.
+
+*4 - Minebea PM-9.
+
+Popular with both the Japanese Armed Forces and the Yakuza, the Minebea PM-9 is a highly effective and fast-firing SMG. A variant of the legendary Uzi, it's fire rate is somewhere between the mini and micro.
+
+1100 RPM is little to snuff, especially in such a compact size. Small enough to use in one hand, it's highly effective for crowd control, and allows you to slice up any nearby enemies if they get too close.
+
+*5 - Carl Gustav M2.
+
+pop, BOOM!
+
+Made initially for an anti-tank purpose, the Carl-Gustav is a light, modern rocket launcher. Of course, due to it's sheer size, you're not able to melee while using it, but this is little issue. Probably the most economical choice for crowd control.
+
+*6 - Arisaka Type 99.
+
+Powerful, if a little slow to fire and load, the Type 99 is iconic for its use in the Pacific theatre. As with most examples, this variant comes with a bayonet. Since it's so large, you can't really use your blade one-handed, so having its bayonet is incredibly helpful in regards to close enemies. Banzai charging included!
+
+*6 - Nambu Type 99 LMG.
+
+A relic from a different era, with an unusual top-loading mechanism, The Nambu Type-99 LMG is a large, somewhat unwieldy weapon. Slow to fire, with heavy recoil, the Type-99 LMG punches hard and takes no prisoners. 7.7x58mm served in full-auto fire is nothing to snuff at, especially at around 550 RPM. While not as tactical or modern as it's newer alternative, it holds a higher magazine capacity and fires a bigger calibre, at the cost of larger recoil.
+
+*6 - Howa Type 89 Assault Rifle (Optional)
+
+A weapon for a more modern age, the Type 89 is a compact and formidable Assault Rifle that takes elements from overseas designs in a uniquely Japanese package. Lower Capacity and with less penetrative power than it's older alternative, but with an increased rate of fire and significantly lower recoil.
+
+*7 - Yorick
+
+Let me see. (takes the skull) Alas, poor Yorick!
+
+I knew him, Horatio, a fellow of infinite jest, of most excellent fancy. He hath borne me on his back a thousand times, and now, how abhorred in my imagination it is!
+
+Very Limited Inventory Space due to sheer power, Use very carefully.
+Does an Immense amount of Damage in a Single attack.
+
+:Credits:
+:-------------------------------------------------------------------------------
+See the [Z: ZDoom forums] page for up-to-date credits.

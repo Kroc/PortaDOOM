@@ -1,0 +1,7 @@
+pages\NAKU-NARU.dosmag
+files\mods\naku-naru\
+@files\ports\use=gzdoom-401.lst
+files\wads\DOOM.ini
+files\wads\DOOM2.ini
+files\wads\TNT.ini
+files\wads\PLUTONIA.ini
