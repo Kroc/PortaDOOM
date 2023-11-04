@@ -1,0 +1,8 @@
+addons/
+models/
+logs/
+*.dat
+*.dta
+
+config.cfg
+latest-log.txt

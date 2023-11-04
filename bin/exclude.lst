@@ -50,16 +50,22 @@ DOOM64.IWAD
 # do not include this file as it's built automatically from DOOM64.IWAD
 DOOM64.CE.Maps.LostLevels.pk3
 
+# sonic robo blast 2
+# (the engine is in the WADs folder, so lots to exclude)
+latest-log.txt
+logs/
+addons/
+gamedata.dat
+
 # don't include any save-files
 saves/*
+# exclude any errant save files
+*.zds
+*.dsg
 
 # exclude any screenshots
 *screenshot*
 *doom*.bmp
-
-# exclude any errant save files
-*.zds
-*.dsg
 
 # exclude Zandronum's skins folder
 skins/
@@ -72,7 +78,7 @@ gzdoom*.ini
 prboom-plus.cfg
 zdoom-*.ini
 zandronum-*.ini
-# (DOOM 64 EX)
+# (DOOM 64 EX, SRB2)
 config.cfg
 launcher.cfg
 

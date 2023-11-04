@@ -1,0 +1,55 @@
+$THEME=BLACK
+$TITLE=Other Awards
+$REM=we have to set the working directory, or the log-files go in "/files"!
+$KEY:1=SHELL:ECHO Launching... && START "" /D "wads\conversions\srb2" /B srb2win.exe
+
+^C:2019 CACOWARDS :: OTHER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:Mordeth Award: Released project with the longest "development time"
+:===============================================================================
+:[1] `Sonic Robo Blast 2` - <Sonic Team Junior>
+:-------------------------------------------------------------------------------
+
+$KEY:A=URL:https://mb.srb2.org/showthread.php?t=37674
+$KEY:B=URL:https://doomwiki.org/wiki/Doom_Legacy
+Some history for our readers: the Mordeth Award isn't simply about "taking a long time", but rather about the story of a project's development -- in this case, a story older than some of the adults reading this article. For more than twenty years an evolving team of dedicated Sonic the Hedgehog fans have been hammering, chiseling, grinding, and hacking away at the ancient *Doom Legacy* port in an effort to create the most classically faithful 3D Sonic game. What a hell of a journey it's been. In 1997, <SSNTails> was working on a ridiculously amateurish `Doom` TC aptly named [A: "Sonic Doom 2"] which was little more than MS paint sprites and some forgettable beginner maps -- bog standard for an era of Mad Lib total conversions. That all changed when the community got their hands on the `Doom` source code and the 1998 release of one of the premier ports, [B: Doom Legacy]. Boasting mouselook, jumping, high resolutions, and the eventual implementation of 3D floors, it was easy to see why <SSNTails> used this as the base to build `Sonic Robo Blast 2`.
+
+For the next two decades, lead developers would come and go, but a growing core of passionate Sonic fans ensured the project was always moving towards a completed state. As development on `Sonic Robo Blast 2` progressed, the `Doom` and `SRB2` communities diverged in much the same way as any ring species might in classical biology; they became so disparate, there was nothing in common between either of them. Despite the differences, both communities evolved in parallel; they cultivated detailed wikis, analyzed gameplay mechanics, encouraged criticism, and welcomed newcomers. The independent spirit that drives both communities has created two completely different, thriving cultures with deep talent pools and a passion almost unrivaled by other games.
+
+$KEY:C=URL:https://mb.srb2.org/showthread.php?t=43708
+So why now, two decades later, did we decide to officially acknowledge `Sonic Robo Blast 2`? As if preordained by the gaming gods, the largest update in the mod's history coincided with this year's Cacowards. Quite the capstone to a game that began life as a `Doom` mod but has since spawned its own modding community complete with a fully featured [C: Kart Racer]! `Sonic Robo Blast 2` is overflowing with professionalism; the soundtrack is a masterpiece of original, Sonic-themed music, and every map is wonderfully realized. I never knew how much I needed a Sonic zone dedicated to the deserts of Wile E. Coyote until I played `Arid Canyon Zone`, complete with painted false tunnels and precariously balancing stones. But where EVERY official Sonic game of the past 15 years has failed to capture the magic of the original series, <Sonic Team Junior> discovered the secret that has eluded <SEGA>... quality mapping.
+
+The original `Sonic the Hedgehog` was a delicate balance between fast movement and exploration -- something lost in the "must go fast" releases since the early 2000s. However, `SRB2` allows players the ability to use Sonic's outrageous speed to traverse the maps while simultaneously rewarding players who take the time to slow down and explore -- there are dozens of unlockable characters and maps hidden throughout the game. Gone are the linear maps of recent Sonic games; instead, you'll find dozens of branching paths that provide countless unique play-throughs.
+
+Maybe it's fitting that the best `Sonic the Hedgehog` game in recent memory found its way by emulating the nonlinear mapping of `Doom` and unleashing the creative power of a fanatic base who perfectly distilled the classic gameplay into the modern era. If the `Doom` community can inspire `Doom 2016`, maybe there's hope <SEGA> can be inspired by `Sonic Robo Blast 2`. While it might have taken 21 years to get to this point, the final product was worth the wait... especially for fans of `Sonic the Hedgehog`.
+
+^R- <Scuba Steve>
+
+:The Spaceship of Theseus: A noteworthy project that has become so removed from DOOM that we're not even sure what to consider it
+:===============================================================================
+:[2]
+:-------------------------------------------------------------------------------
+
+
+:Codeaward: Most noteworthy programming effort of the year
+:===============================================================================
+:[3]
+:-------------------------------------------------------------------------------
+
+
+:Machaward: Most creative, unusual, or artistically compelling project
+:===============================================================================
+:[4]
+:-------------------------------------------------------------------------------
+
+
+:Creator of the Year
+:===============================================================================
+:[5]
+:-------------------------------------------------------------------------------
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/others/
+:source [#: www.doomworld.com/cacowards/2019/others/]
