@@ -1,0 +1,63 @@
+$NAV=Total Conversions
+$KEY:P=SHELL:launcher.exe "wads\conversions\Hedon\play-hedon.ini"
+$KEY:1=SHELL:"wads\conversions\Hedon\1_Manual_Launch&Setup.pdf"
+$KEY:2=SHELL:"wads\conversions\Hedon\2_Manual_Gameplay.pdf"
+$KEY:W=URL:https://zanthebonebreaker.itch.io/hedon
+
+:Hedon (Demo)                                       * 2019 Cacoward Winner! *
+:===============================================================================
+*[P] Play                        *[W] Website* Manual:[1] *Setup [2] Gameplay
+:-------------------------------------------------------------------------------
+:Released : *2019>04>12	  Author : <Zan>
+:Levels   : *10			   Modes : *Single, Co-op?
+:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
+:-------------------------------------------------------------------------------
+
+Zan and her orc blood sisters must fight to save their homeland from the forces of chaos! Immerse yourself in a crystalpunk underworld where the rich lore, atmosphere, exploration and puzzles of classic RPGs and adventure games blend with the visceral combat of the 90s' shooters.
+
+$KEY:G=URL:https://www.gog.com/game/hedon
+$KEY:S=URL:https://store.steampowered.com/app/1072150/Hedon/
+! *PortaDOOM* includes the free, first half of `Hedon`. Purchase the game on [G: GOG] or [S: Steam] to get `Hedon Bloodrite` (Hedon I & II) which is much improved over the older demo build.
+
+`Hedon Bloodrite` merges `Hedon I` and `II` into an entirely hand crafted 20+ hours singleplayer experience inspired by not only the best retro FPS games of the 90s, but also games like `Arx Fatalis` and `Thief`. `Hedon` mixes high octane action with exploration and puzzle solving, creating a challenge that encourages creativity and wit.
+
+- *An exotic world of lore and secrets
+
+  Embark on an adventure across an underground world where ancient and medieval civilizations meet with uncanny crystal-powered technologies.
+
+- *A dark, eerily comfy atmosphere
+
+  Immerse yourself in the whistling of cave drafts and the humming of the mossy crystals as you ponder your next move.
+
+- *Brutal, gory, fast-paced combat
+
+  Shatter your foes with a lined-up axe throw, lob acid at them from your potion launcher or ignite them with the flamethrower included into your goblin-crafted shotgun.
+
+- *Complex, non-linear, handmade levels
+
+  Sharpen your wits and your sense of exploration - there won't be many arrows to point you through the mysteries of the Underworld.
+
+- *A touch of RPG (Bloodrite-only)
+
+  Travel between `Hexen`-style level clusters, interact with a variety of characters, complete secondary and hidden quests, and watch some of your deeds and approaches have an impact on the world.
+
+- *Good company (Bloodrite-mostly)
+
+  Lead the orc daughters of the Iron Division to victory. They will prove their worth when fighting alongside you against the armies of chaos.
+
+- *A multi-genre soundtrack
+
+  Going from tense to serene ambient, with occasional kicks of heavy metal. All spiced up with a few Alexander Brandon tracks that never made it in Unreal and Deus Ex!
+
+- *Six difficulty levels
+
+  Changing not only the damage taken or how many progression clues you get but also the individual monster and item placement of each map.
+  And don't forget the Bearzerk difficulty that completely changes the gameplay by swapping your regular arsenal with special melee weapons.
+
+- *Fully moddable
+
+  You can mod and make maps for Hedon just as easily as you can for Doom.
+
+- *DRM free
+
+  You buy it, you own it.

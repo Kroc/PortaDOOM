@@ -462,69 +462,165 @@ REM #===========================================================================
 REM #    %1 = version-number (i.e. "gzdoom-nnn.ini")
 REM #	      999 = default (i.e. "gzdoom.ini")
 REM #---------------------------------------------------------------------------
-IF %~1 EQU 999 SET "INI=gzdoom"
-IF %~1 LSS 999 SET "INI=gzdoom-%~1"
+REM # get the GZDoom config file name for the given version number
+SET VER=%~1
+IF %VER% EQU 999 SET "INI=gzdoom"
+IF %VER% LSS 999 SET "INI=gzdoom-%VER%"
 SET DEFAULT_INI="default.%INI%.ini"
 
-SET "VER=%~1"
-IF %~1 EQU 999 SET "VER=     "
-REM # (if the middle digit is 0, remove it, i.e. 401 = "v4.1")
-IF %~1 LSS 999 IF "%VER:~1,1%" == "0" SET "VER=%VER:~0,1%%VER:~2,1% "
-REM # construct a printable version number
-IF %~1 LSS 999 SET "VER=v%VER:~0,1%.%VER:~1,2%"
-
-REM # delete the file in order to re-build it
+REM # (delete the file in order to re-build it)
 IF EXIST %DEFAULT_INI% GOTO:EOF
 
-ECHO * GZDoom %VER%               DOOM.WAD
+REM # build pretty-print version string, i.e. "v4.9" rather than "409"
+SET "STR=%VER%"
+IF %VER% EQU 999 SET "STR=     "
+REM # (if the middle digit is 0, remove it, i.e. 401 = "v4.1")
+IF %VER% LSS 999 IF "%STR:~1,1%" == "0" SET "STR=%STR:~0,1%%STR:~2,1% "
+REM # construct a printable version number
+IF %VER% LSS 999 SET "STR=v%STR:~0,1%.%STR:~1,2%"
+
+REM # launch first with DOOM to create the default config file;
+REM #---------------------------------------------------------------------------
+ECHO * GZDoom %STR%               DOOM.WAD
 CALL :make_gzdoom %~1 "DOOM.WAD"
-ECHO * GZDoom %VER%               HERETIC.WAD
-CALL :make_gzdoom %~1 "HERETIC.WAD"
-ECHO * GZDoom %VER%               HEXEN.WAD
-CALL :make_gzdoom %~1 "HEXEN.WAD"
-ECHO * GZDoom %VER%               STRIFE1.WAD
-CALL :make_gzdoom %~1 "STRIFE1.WAD"
+
+REM # change global properties so they don't have to be repeated for each WAD
+REM #---------------------------------------------------------------------------
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
+
+REM # disable stats collection; this might be undesirable if PortaDOOM
+REM # is being moved around multiple PCs intended for offline use
+REM # (this first appeared in v4.2 and appears now and again)
+IF %VER% GEQ 402 IF %VER% LSS 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
+REM # different field name for v4.9, because of course it is
+IF %VER% EQU 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled49" "0"
+
+REM # VSync ON
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
+REM # "fullscreen" field is used before v4.4
+REM # (fullscreen isn't default from v2.2 to v3.4)
+IF %VER% LSS 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "fullscreen" "true"
+REM # from v4.4 the field has changed to "vid_fullscreen"
+IF %VER% GEQ 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_fullscreen" "true"
+
+REM # Texture Filtering: Nearest (Linear Mipmap) is supported from v1.5 onwards;
+REM # (graphics break if this is applied to earlier versions)
+IF %VER% GEQ 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "5"
+REM # use "Mipmapped" for earlier versions
+IF %VER% LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "1"
+REM # enable cross-hair, type 2 (this is in GlobalSettings before v1.5)
+IF %VER% LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
+REM # full-screen HUD (this is in GlobalSettings before v1.3)
+IF %VER% LSS 103 %CONFIG_DEFAULT% SET "[GlobalSettings]" "screenblocks" "11"
+REM # cross hair 1:1 pixels (no-scale), added in v1.2
+REM # (moved from GlobalSettings to per-game in v.1.5)
+IF %VER% GEQ 102 IF %VER% LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
+
+REM # mouse-look by default
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "freelook" "true"
+REM # always run
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "cl_run" "true"
+REM # do not attempt to locate IWAD (we always provide it)
+%CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
+
+REM # continue with the other supported WADs...
+REM #---------------------------------------------------------------------------
+ECHO * GZDoom %STR%               HERETIC.WAD
+CALL :make_gzdoom %VER% "HERETIC.WAD"
+ECHO * GZDoom %STR%               HEXEN.WAD
+CALL :make_gzdoom %VER% "HEXEN.WAD"
+ECHO * GZDoom %STR%               STRIFE1.WAD
+CALL :make_gzdoom %VER% "STRIFE1.WAD"
 REM # Chex support first appears in v1.1
-IF %~1 GEQ 101 (
-	ECHO * GZDoom %VER%               CHEX.WAD
-	CALL :make_gzdoom %~1 "CHEX.WAD"
+IF %VER% GEQ 101 (
+	ECHO * GZDoom %STR%               CHEX.WAD
+	CALL :make_gzdoom %VER% "CHEX.WAD"
 )
 REM # from GZDoom v1.5 we gain support for Harmony.
 REM # technically v1.4 supports it, but it doesn't
 REM # populate the config defaults as expected
 IF %~1 GEQ 105 (
-	ECHO * GZDoom %VER%               HARM1.WAD
-	CALL :make_gzdoom %~1 "HARM1.WAD"
+	ECHO * GZDoom %STR%               HARM1.WAD
+	CALL :make_gzdoom %VER% "HARM1.WAD"
 )
 REM # Rise Of The Wool Ball support from v3.2 onwards
 IF %~1 GEQ 302 (
-	ECHO * GZDoom %VER%               ROTWB.WAD
-	CALL :make_gzdoom %~1 "ROTWB.WAD"
+	ECHO * GZDoom %STR%               ROTWB.WAD
+	CALL :make_gzdoom %VER% "ROTWB.WAD"
 )
 REM # Adventures of Square support from v3.3 onwards
 IF %~1 GEQ 303 (
-	ECHO * GZDoom %VER%               SQUARE1.PK3
-	CALL :make_gzdoom %~1 "SQUARE1.PK3"
+	ECHO * GZDoom %STR%               SQUARE1.PK3
+	CALL :make_gzdoom %VER% "SQUARE1.PK3"
 )
-REM # DOOM64 CE (v3.8.0) support from v4.11 onwards
-IF %~1 GEQ 411 (
-	ECHO * GZDoom %VER%               DOOM64.IWAD
+REM # Hedon demo uses GZDoom v3.4 and needs its own settings
+IF %VER% EQU 304 CALL :gzdoom_hedon
+REM # DOOM64 CE (v3.8.0+) support for v4.11 only:
+REM # (the DOOM64 CE INI file will force v4.11)
+IF %VER% EQU 411 (
+	ECHO * GZDoom %STR%               DOOM64.IWAD
 	REM # use the IWAD .ini file that contains a game definition to
-	REM # include DOOM64.CE.PK3; DOOM64.IWAD cannot run alone
-	CALL :make_gzdoom %~1 "..\wads\conversions\DOOMCE\doom64ce.ini"
+	REM # include DOOM64.CE.PK3 -- DOOM64.IWAD cannot run alone
+	CALL :make_gzdoom %VER% "..\wads\conversions\DOOMCE\doom64ce.ini"
 )
 ECHO ----------------------------------------
+GOTO:EOF
+
+:gzdoom_hedon:
+REM #---------------------------------------------------------------------------
+REM # specifics for Hedon which needs additional default bindings
+REM #---------------------------------------------------------------------------
+ECHO * GZDoom %STR%               HEDON.IPK3
+REM # populate GZDoom defaults in the INI for Hedon IPK3
+CALL :make_gzdoom %VER% "..\wads\conversions\Hedon\hedon.ini"
+
+REM # use the character for the player data:
+%CONFIG_DEFAULT% SET "[Hedon.Player]" "name" "Zan"
+%CONFIG_DEFAULT% SET "[Hedon.Player]" "gender" "female"
+
+REM # Hedon specific console variables:
+SET CONSOLE_VARS="[Hedon.ConsoleVariables]"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "snd_pitched" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "dimcolor" "00 00 00"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "dimamount" "0.296875"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "gl_spriteclip" "3"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairgrow" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscale" "0.20000000298023224"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshair" "0"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "r_deathcamera" "true"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "cl_rockettrails" "2"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "gl_lightmode" "3"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "vid_cursor" "None"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "con_notifytime" "5"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_unexploredsecretcolor" "ff 00 ff"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_secretsectorcolor" "f3 73 17"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_fdwallcolor" "50 4a 41"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "am_showkeys" "false"
+%CONFIG_DEFAULT% SET %CONSOLE_VARS% "gl_menu_blur" "1"
+
+REM # key bindings:
+%CONFIG_DEFAULT% SET "[Hedon.Hedon_keysection.Bindings]" "t" "QuickTimeShard"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "enter" "invquery"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "ctrl" "+crouch"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "f" "invuse"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "z" "invprev"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "x" "invnext"
+%CONFIG_DEFAULT% SET "[Hedon.Bindings]" "kp1" "chase"
+
 GOTO:EOF
 
 
 :make_gzdoom
 REM #===========================================================================
-REM #    %1 = version-number (i.e. "gzdoom-nn.ini")
+REM #    %1 = version-number (i.e. "gzdoom-nnn.ini")
 REM #	      999 = default (i.e. "gzdoom.ini")
 REM #    %2 = IWAD
 REM #---------------------------------------------------------------------------
-IF %~1 EQU 999 SET "INI=gzdoom"
-IF %~1 LSS 999 SET "INI=gzdoom-%~1"
+SETLOCAL
+
+SET "VER=%~1"
+IF %VER% EQU 999 SET "INI=gzdoom"
+IF %VER% LSS 999 SET "INI=gzdoom-%VER%"
 SET DEFAULT_INI="default.%INI%.ini"
 SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_INI%
 
@@ -536,44 +632,7 @@ IF /I "%~x2" == ".ini" (
 	START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE %INI% /DEFAULT /IWAD "%~2" /QUIT
 )
 
-REM # disable stats collection; this might be undesirable if PortaDOOM
-REM # is being moved around multiple PCs intended for offline use
-REM # (this first appeared in v4.2 and appears now and again)
-IF %~1 GEQ 402 IF %~1 LSS 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled" "0"
-REM # different field name for v4.9, because of course it is
-IF %~1 EQU 409 %CONFIG_DEFAULT% SET "[GlobalSettings]" "sys_statsenabled49" "0"
-
-REM # VSync ON
-%CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_vsync" "true"
-REM # "fullscreen" field is used before v4.4
-REM # (fullscreen isn't default from v2.2 to v3.4)
-IF %~1 LSS 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "fullscreen" "true"
-REM # from v4.4 the field has changed to "vid_fullscreen"
-IF %~1 GEQ 404 %CONFIG_DEFAULT% SET "[GlobalSettings]" "vid_fullscreen" "true"
-
-REM # Texture Filtering: Nearest (Linear Mipmap) is supported from v1.5 onwards;
-REM # (graphics break if this is applied to earlier versions)
-IF %~1 GEQ 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "5"
-REM # use "Mipmapped" for earlier versions
-IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "gl_texture_filter" "1"
-REM # enable cross-hair, type 2 (this is in GlobalSettings before v1.5)
-IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshair" "2"
-REM # full-screen HUD (this is in GlobalSettings before v1.3)
-IF %~1 LSS 103 %CONFIG_DEFAULT% SET "[GlobalSettings]" "screenblocks" "11"
-REM # cross hair 1:1 pixels (no-scale), added in v1.2
-IF %~1 GEQ 102 (
-	REM # moved from GlobalSettings to per-game in v.1.5
-	IF %~1 LSS 105 %CONFIG_DEFAULT% SET "[GlobalSettings]" "crosshairscale" "false"
-)
-
-REM # mouse-look by default
-%CONFIG_DEFAULT% SET "[GlobalSettings]" "freelook" "true"
-REM # always run
-%CONFIG_DEFAULT% SET "[GlobalSettings]" "cl_run" "true"
-REM # do not attempt to locate IWAD (we always provide it)
-%CONFIG_DEFAULT% SET "[GlobalSettings]" "queryiwad" "false"
-
-REM # from here, settings are separated per game IWAD
+REM # settings are separated per game IWAD
 SET "SECTION="
 IF /I "%~nx2" == "DOOM.WAD"	SET "SECTION=Doom"
 IF /I "%~nx2" == "HERETIC.WAD" 	SET "SECTION=Heretic"
@@ -583,7 +642,9 @@ IF /I "%~nx2" == "CHEX.WAD" 	SET "SECTION=Chex"
 IF /I "%~nx2" == "HARM1.WAD" 	SET "SECTION=Harmony"
 IF /I "%~nx2" == "ROTWB.WAD" 	SET "SECTION=WoolBall"
 IF /I "%~nx2" == "SQUARE1.PK3" 	SET "SECTION=Square"
-REM # (for DOOM 64 CE in GZDoom v4.11+)
+REM # (for Hedon in GZDoom v3.4)
+IF /I "%~nx2" == "HEDON.INI"	SET "SECTION=Hedon"
+REM # (for DOOM 64 CE in GZDoom v4.11)
 IF /I "%~nx2" == "DOOM64CE.INI"	SET "SECTION=doom64"
 IF "%SECTION%" == "" ECHO ERROR & PAUSE
 REM # shorthand for the game-specific section
@@ -618,31 +679,29 @@ IF %~1 GEQ 105 IF %~1 GEQ 202 %CONFIG_DEFAULT% SET %CONSOLE_VARS% "crosshairscal
 
 REM # set controls:
 REM # NOTE: from GZDoom v4.0+, fields are capitalised
-IF %~1 GEQ 400 (
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "E" "+use"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Q" "+zoom"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "R" "+reload"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "C" "+crouch"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "W" "+forward"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "A" "+moveleft"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "S" "+back"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "D" "+moveright"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Space" "+jump"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "F12" "screenshot"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Mouse2" "+altattack"
-) ELSE (
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "e" "+use"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "q" "+zoom"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "r" "+reload"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "c" "+crouch"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "w" "+forward"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "a" "+moveleft"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "s" "+back"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "d" "+moveright"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "space" "+jump"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "f12" "screenshot"
-	%CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "mouse2" "+altattack"
-)
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "E" "+use"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Q" "+zoom"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "R" "+reload"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "C" "+crouch"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "W" "+forward"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "A" "+moveleft"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "S" "+back"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "D" "+moveright"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Space" "+jump"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "F12" "screenshot"
+IF %~1 GEQ 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "Mouse2" "+altattack"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "e" "+use"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "q" "+zoom"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "r" "+reload"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "c" "+crouch"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "w" "+forward"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "a" "+moveleft"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "s" "+back"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "d" "+moveright"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "space" "+jump"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "f12" "screenshot"
+IF %~1 LSS 400 %CONFIG_DEFAULT% SET "[%SECTION%.Bindings]" "mouse2" "+altattack"
+
 REM # unbind mouse-forward
 %CONFIG_DEFAULT% DEL "[%SECTION%.Bindings]" "mouse3"
 
@@ -650,6 +709,7 @@ REM # define player:
 %CONFIG_DEFAULT% SET "[%SECTION%.Player]" "name" "PortaDOOM"
 %CONFIG_DEFAULT% SET "[%SECTION%.Player]" "gender" "other"
 
+ENDLOCAL
 GOTO:EOF
 
 

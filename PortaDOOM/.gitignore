@@ -33,6 +33,10 @@ PortaDOOM.exe
 **.lmp
 **.acs
 
+# in-folder GZDoom config files
+**/gzdoom-*.ini
+**/gzdoom.ini
+
 # do not include executables
 **.exe
 **.dll

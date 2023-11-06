@@ -1,0 +1,18 @@
+Q: I am getting an error when I launch the .exe, what should I do?
+A: Make sure you haven't tampered with any file/tried to run the game on your own engine version etc. and make sure that you downloaded the version corresponding to your operating system.
+
+Q: The graphics look messed up and sprites are missing, what's wrong?
+A: You most likely have a fairly old graphic card (ie. AMD ATI 45xx) or your drivers are not up to date. Unfortunately there isn't much that can be done besides trying to update your drivers or graphic card.
+
+Q: Why is there no weapon mapped to 4?
+A: The weapon for that slot will be available in Chapter II, should it be developed.
+
+Q: I can no longer see pickup and query messages, what happened?
+A: You've probably pressed F7 by accident, press it again for them to show.
+
+Q: Why am I stuck in sprint mode?
+A: You accidentally pressed caps lock, press it again.
+
+Q: Rotating doors have missing top/bottom textures? Is this a bug?
+A: It's an engine limitation and unfortunately not much can be done about it.
+

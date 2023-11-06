@@ -62,6 +62,9 @@ saves/*
 # exclude any errant save files
 *.zds
 *.dsg
+# in-folder GZDoom config files
+gzdoom-*.ini
+gzdoom.ini
 
 # exclude any screenshots
 *screenshot*

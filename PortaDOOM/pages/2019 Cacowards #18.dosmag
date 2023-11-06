@@ -1,7 +1,10 @@
 $THEME=BLACK
 $TITLE=Other Awards
-$REM=we have to set the working directory, or the log-files go in "/files"!
+$REM=# we have to set the working directory, or the log-files go in "/files"!
 $KEY:1=SHELL:ECHO Launching... && START "" /D "wads\conversions\srb2" /B srb2win.exe
+$KEY:2=GOTO:Hedon
+$KEY:3=URL:https://www.doomworld.com/forum/topic/99021
+$KEY:4=URL:https://www.doomworld.com/forum/post/1933484
 
 ^C:2019 CACOWARDS :: OTHER AWARDS
 
@@ -9,7 +12,7 @@ $KEY:1=SHELL:ECHO Launching... && START "" /D "wads\conversions\srb2" /B srb2win
 
 :Mordeth Award: Released project with the longest "development time"
 :===============================================================================
-:[1] `Sonic Robo Blast 2` - <Sonic Team Junior>
+:[1: Play] `Sonic Robo Blast 2` - <Sonic Team Junior>
 :-------------------------------------------------------------------------------
 
 $KEY:A=URL:https://mb.srb2.org/showthread.php?t=37674
@@ -29,26 +32,89 @@ Maybe it's fitting that the best `Sonic the Hedgehog` game in recent memory foun
 
 :The Spaceship of Theseus: A noteworthy project that has become so removed from DOOM that we're not even sure what to consider it
 :===============================================================================
-:[2]
+:[2] `Hedon` - <Zan>
 :-------------------------------------------------------------------------------
 
+$KEY:D=URL:https://www.moddb.com/mods/total-chaos
+`Hedon` is a lot closer to `Doom` than [D: last year's recipient of this award], which isn't saying much -- hell, `Clive Barker's Undying` feels more like `Doom` than `Total Chaos` does. That said, it's still a far cry from your typical total conversion.
+
+`Hedon` plays like a cross between one of the old *Build Engine* games and `Arx Fatalis`, with a bit of `Hexen` thrown in for good measure. The art style is somewhere between soft cartooniness and hand-painted artisanry, with a huge cast of hand-drawn characters and objects and a vivid color palette that includes a whole lot of green -- and although there's not a lot of "detail" in the modern `Doom` sense, the world is saturated with details: every object feels hand-placed, every room thoughtfully designed, and the caverns are permeated with lore and character. The gameplay combines swift, vicious bursts of combat with a `Heretic`-like tactical inventory system and item-building / interactive object quests that add variety to the level progression. The level design strikes a fine balance of requiring keen observational awareness vs. providing you with landmarks and scattered clues, and a similarly fine balance between linear core progression vs. optional areas. In other words, the map design flows around the storytelling -- and the game tells a bloody, harrowing, remarkably detailed story that commands far more emotional investment than I ever would have expected.
+
+One of the best things about the game is its weapon / monster balance, which is far more functional and entertaining than the uneven content of *Build* games like `Blood` or `Shadow Warrior`. Almost all of the ranged weapons are in the same damage tier as `Doom`'s SSG and rocket launcher, but with their own niches and useful alt-fires, and the enemies tend to be squishy. This means that most of the weapons in the game will gib half the bestiary, and the large amount of attention <Zan> gave to flying body parts and alternate death sequences makes the game feel wonderfully splattery. There's something incredibly satisfying about ripping an enemy in half with an axe throw, comboing with another weapon as you run to grab the axe, and then repeating the throw on your next unfortunate target – and the weapon switching is smooth as silk, too.
+
+$KEY:E=URL:https://www.gog.com/game/hedon
+$KEY:F=URL:https://store.steampowered.com/app/1072150/Hedon/
+What's really interesting about `Hedon` as a case study is that it exists entirely outside of the `Doom` community, and within the realm of indie retro FPS games – and it seems to be holding its own out there. The 1.2 version that I played was (and still is) freeware, but the more up-to-date version (which includes an all-new melee weapon set exclusive to the new Bearzerk difficulty setting) is now available for sale on multiple platforms. Although [D: Total Chaos], `Adventures of Square`, and other free games have already shown that *GZDoom* is viable as a hobbyist's game maker, `Hedon` represents a major watershed for the port; it's the first indie *GZDoom* game to enjoy some measure of commercial success in a glutted market dominated by professional game makers and licensed engines. I went into this game thinking that it would be somewhat generic, perhaps "good enough", but it turned out to be one of the coolest things I played all year. I believe that it's well worth the asking price, and if you're interested in continued updates, you might consider showing it some love on [E: GOG] or [F: Steam].
+
+^R- <Not Jabba>
 
 :Codeaward: Most noteworthy programming effort of the year
 :===============================================================================
-:[3]
+:[3: Doom Neural Upscale 2X] - <hidfan> et al
 :-------------------------------------------------------------------------------
 
+In 1993 `Doom` was a technological marvel -- in 2019 it's an old blocky *DOS* game. For many of us, the low-resolution sprites are part of its charm, but many members of the community have spent nearly two decades attempting to take Doom's pixelated artwork and increase its fidelity for modern hardware. Yet every attempt has run into the same basic problem: how do you create data where none exists?
+
+There are essentially three methods to accomplish this task…
+
+- Have an artist redraw the sprite
+- Replace the sprites with something new
+- Use a computer algorithm to fill in the missing data
+
+$KEY:G=URL:https://forum.zdoom.org/viewtopic.php?f=45&t=30879
+Method 1 has yielded some decent results over the years, but the problem is simply the sheer scope of redrawing every sprite in the game; there are more than two thousand art assets in `Doom 2`, ranging from static textures to menu graphics -- the archvile alone has almost 150 frames of animation! No project using this method has ever come close to completion, generally languishing after some promising initial results ([G: Doom Sprite HD]).
+
+$KEY:H=URL:https://dengine.net/addons
+Method 2 would be how the *Doomsday* engine gained infamy as the first port to offer 3D model replacements for every sprite in the game ([H: JDoom Resource Pack]). The problem with this method was twofold; modeling, texturing, and animating quality models is difficult, and there just aren't enough artists in our community capable of doing this. More importantly, the essence of the `Doom` sprites is lost in the translation to 3D, as artists are forced to create their own interpretations of <id>'s original creations.
+
+Method 3 solved the problem of method 1 by automating the process of upscaling artwork, but unfortunately, computers simply weren't particularly good at extrapolating data compared to a talented artist. Early attempts using 2XSal, HQ2x, or a generic bicubic blurring resulted in what you might expect; blurry or mushy sprites.
+
+There was simply no way to recover the data lost when <id Software> compressed the original artwork... until recent advances in machine learning algorithms turned this notion on its head. Within the last five years, AI technology has radically improved and can restore lost data from essentially nowhere. <hidfan> of the Doomworld forums was the first to apply such techniques to `Doom`'s sprites, creating the first of its kind, high resolution remake of `Doom`. The results are unbelievable. By sticking to a 2X scaling, and layering and editing outputs from multiple neural net upscalers, the results retain the grungy-lo-fi aesthetic of the original artwork. Everything looks "right", just higher resolution.
+
+$KEY:I=URL:https://www.doomworld.com/forum/topic/108930
+Leveraging neural nets has essentially solved the two obstacles of upscaling: automating the daunting task of improving hundreds or thousands of sprites, and recovering that missing data without overly blurring or smoothing the art. Member <kcghost> has chained together available tools for an [I: automated script] to perform neural net upscales on arbitrary PWADs, with reasonable results. Some challenges remain -- neural nets easily recover data from `Doom`'s scanned models (mancubus, archvile, revenant) and reasonably recover data from clay models (doomguy, cyberdemon), but they struggle with `Doom`'s pixel art (pinky, imp) -- but who knows for how long, since the algorithms continue to get better! As we speak, neural networks are still being improved and learning how to better interpret missing data as well as interpolating animation frames... `Doom` never looked so good.
+
+^R- <Scuba Steve>
 
 :Machaward: Most creative, unusual, or artistically compelling project
 :===============================================================================
-:[4]
+:[4: Mikoportals] - <Mikolah>
 :-------------------------------------------------------------------------------
 
+The mikoportal is the first totally new vanilla `Doom` editing trick in years, if not decades. Originally discovered by community member <Mikolah>, the trick was first shared in a semi-private *Discord* server in November 2018. I soon posted a thread about it on the Doomworld forums to bring it to wider attention.
+
+$KEY:J=URL:https://www.youtube.com/watch?v=BePtsISQQpk
+The trick is astonishingly simple. The `Doom` engine limits sector heights to a 16-bit value, which corresponds to a height range from -32768 to 32767. Apparently, before late 2018, no one had thought to ask: what if Doomguy falls onto a floor of the absolute minimum height level? Due to the vagaries of the `Doom` engine, it attempts to calculate Doomguy's new position by subtracting below the absolute minimum, underflowing the variable and making the engine think Doomguy is very high up. The `Doom` engine automatically notices Doomguy is inside the ceiling, and silently moves him down below it. The effect is that falling onto the minimum-height floor acts as a, well, [J: portal], and Doomguy falls out of the ceiling.
+
+$KEY:K=URL:https://doomwiki.org/wiki/Voodoo_doll
+$KEY:L=URL:https://doomwiki.org/wiki/Voodoo_script
+$KEY:M=URL:https://doomwiki.org/wiki/Vanilla_conveyor
+The trick was researched through 2019. People soon realized that [K: voodoo dolls] were subject to mikoportals, and when pushed off a ledge, they would continue to endlessly fall through the mikoportal and "slide" along their original trajectory. This provided a path to implement one of the `Doom` community's cleverest tricks: [L: voodoo scripts]. *Boom*-compatible PWADs have used voodoo dolls riding on conveyor belts for decades to add flair to maps by having them trigger a series of line actions. But with a community-iterated Rube Goldberg contraption of mikoportals and voodoo dolls and crushers and barrels, it's now possible to embed a [M: "vanilla conveyor"] into a `Doom` level -- and they are already appearing in the wild.
+
+The mikoportal has already proven to be the biggest advance in vanilla `Doom` mapping since *ChocoRenderLimits* and the *Visplane Explorer* plugin. The Machaward was conceived as an award for something that "breaks the barriers" of what we consider as a `Doom` project. The mikoportal quite literally overflows a barrier, and has enabled a new trick in the vanilla mapping arsenal in the process. It's not something we ever expected to consider for the Machaward, which in a way, is the greatest argument on its behalf.
+
+^R- <Linguica>
 
 :Creator of the Year
 :===============================================================================
-:[5]
+:[5] <Ola "ukiro" Björling>
 :-------------------------------------------------------------------------------
+
+A realist might have thought the door shut on <Ola Björling> over a decade ago, back when 2000's classic `The Darkening 2` was the last line in his bio, he had finished university and moved on to a time-consuming career, and new projects were teased but ultimately fated to crumble. But all doors in this community are flagged "repeatable-use" if you don't burn bridges; and just as <Viggles> rose from his decades-long slumber with `Breach` of all things; and just as <Romero> returned with `Tech Gone Bad` a quarter century after, you know, authoring the game; <Ola "ukiro" Björling> has stormed back, chariots and lightning in tow, with his best work ever, a texture resource that contains the cosmos within its checksums, one of the `Doom` modding scene's finest artistic achievements yet: `OTEX`.
+
+15 years in the making, `OTEX` is such a big deal not only because it is a triumph in isolation, but also because it is unprecedented. See, in the '90s, if you wanted to use custom textures as a mapper without the backing of a team, you drew, adapted, borrowed, or took pictures of them yourself. Results, understandably, could be spotty, once the novelty goggles were shed; successes could be charming, but were rarely outright attractive.
+
+The '00s saw the rise of dedicated packs, crafted by people like <Afterglow> and the `Gothic DM` team, who trained their efforts on compiling resources so that mappers, who cared more about mapping, either wouldn't have to or could focus more on individualized art. These worked well (and still do), but the packs were invariably modest in scope, or as with `Eternal Doom`'s resource pack, stamped a highly particular thematic signature on any maps to use them.
+
+The tide truly shifted with `CC4-tex` and its direct predecessors, later in the '00s, which assembled into a single bundle many of the decade's best assets. Mappers now had an all-in-one pack large and versatile enough to provide a sturdy base for anything they might work on. Countless wads (along with `CC4` of course) would draw from it, famous examples being `Vanguard`, `Sunlust`, and `JPCP`. Again, it can't be overstated how so many maps -- from ambitious odyssey to throwaway exercise -- rely for a creative jolt on the custom assets that exist, how the modding community has remained charged with life in part because of the roughly bi-decadal churn in this supply, so that even working with stock `Doom` textures becomes an act of rediscovery rather than of necessary restraint.
+
+But holy shit what a go-to `CC4-tex` became. Inertia chugs ahead, but momentum doesn't. Eventually it felt overused and stale. Besides, the bar had risen. The megawad `Back to Saturn X`, fueled by the astonishing work of <esselfortium>, set a new standard for generalist textures. To match up to its proprietary resources proved impossible without painstaking labor: curation from countless outside sources (the most artful releases of <Alexander "Eternal" S.>), or a plunge into talented, sharp-eyed DIY-ism (recent <Ribbiks>).
+
+Enter `OTEX`. To enter the world of `OTEX` is to feast eyes on thousands of immaculately sculpted assets -- yes, "sculpted," as careful attention to bumpmaps grants many of the 2D surfaces a convincing illusion of 3D depth -- most of which are adapted from real-life photo sources, all of which rate alongside `BTSX e2`'s as the finest the community has made. It is to enter, all at once, the settings it can depict, from grimy techbases, to icy wilderness, to alien hell, to heaven on Earth, to Art Deco, to Cambodian ruins, to castles and palaces, to forests and deserts and inns and parlors and space stations and astral crypts -- not to mention all the oddball themes one could dream up already, now with a snazzier look. It is to enter a future already preluded by many of this year's standouts, and much else in the pipeline or swirling around above in the primordial ooze of creation, waiting to fall in. `OTEX`'s late push towards public release in 2018 was conducted in lockstep with `Eviternity`'s own, a form of battle-testing that offered a real-time canvas, buffed rougher patches in coverage, and inspired unforgettable designs, such as the signature hanging chains. <Björling>'s eye for practicality, and his devotion to unpacking <id Software> whiz <Adrian Carmack>'s techniques, explains why `OTEX` remains `Doom`-like in spirit even as a glance suggests something inconceivably far; art is cut from the mundane -- doors, switches, light panels, familiar icons -- and the mystical alike, until they dovetail and whirl into one gorgeous storm. It is almost a given that the '20s modding scene will owe a sizable part of its output to <ukiro>'s work, which would be enough, alone, to earn him Creator of the Year honors.
+
+To add yet more, though, his is the mind behind map32 of `Eviternity`, `"Anagnorisis"`, an endlessly sprawling adventure considered by fellow panelist <Not Jabba> the finest map in the wad, and praised abundantly by many other players, showing that <Ola>'s world-building chops have not come to rest since `The Darkening 2` all the way back then, but rather soared.
+
+^R- <rd.>
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/cacowards/2019/others/

@@ -1,0 +1,4 @@
+pages\Hedon.dosmag
+files\wads\conversions\Hedon\
+@files\ports\use=gzdoom-304.lst
+# uses its own IWAD definition

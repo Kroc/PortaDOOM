@@ -24,6 +24,7 @@ ECHO     [C] CHEX
 ECHO     [6] DOOM64 (Doom64ex)
 ECHO     [M] HARM1
 ECHO     [Q] SQUARE1 (GZDoom...)
+ECHO     [N] HEDON (GZDoom v3.4)
 ECHO:
 
 SET "$="
@@ -40,6 +41,8 @@ REM # don't need a menu for DOOM 64, there's only one engine
 IF /I "%$%" == "6" CALL :launch_engine "doom64ex" "DOOM64.WAD"
 IF /I "%$%" == "M" CALL :menu_harm1
 IF /I "%$%" == "Q" CALL :menu_gzdoom "square1.pk3"
+REM # Hedon demo for GZDoom v3.4 only
+IF /I "%$%" == "N" CALL :launch_engine "gzdoom-304" "..\wads\conversions\Hedon\hedon.ini"
 
 GOTO :menu
 

@@ -607,7 +607,7 @@ SUB formatLine (indent%, src$, default_theme%)
 
             CASE CTL_NAME_ON
                 '.............................................................
-                'enable the paren mode
+                'enable the name mode
                 '(no word boundary is required)
                 LET is_name` = TRUE
                 'change the colour

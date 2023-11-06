@@ -1,0 +1,27 @@
+File: Hedon.ipk3
+File source: https://zanthebonebreaker.itch.io/hedon
+Email: hedongame@yahoo.com
+Homepage: https://www.patreon.com/hedon
+
+Copyright (C) 2016-2019 Zan.
+All rights reserved.*
+
+*With the exception of sound files found in the sounds folder (including the ones created by the game author from scratch) which fall under GNU General Public License 3.0 (GPL)
+and the sound/music files which are reserved to their respective authors as following:
+
+HTrack01.ogg, HTrack02.ogg, HTrack03.ogg, HTrack04.ogg, HTrack05.ogg, HTrack06.ogg, HTrack13.ogg, HTrack14.ogg, HTrack15.ogg, HTrack17.ogg - Copyright (C) 2017-2019 Akhzul 
+
+Underwrl2.ogg, HTrack08.ogg, HTrack12.ogg, HTrack16.ogg, HTrak18A.ogg - (C) 2018 Materia Collective LLC under exclusive license from Alexander Brandon 
+
+UnsngFoe.ogg, HTrack00.ogg, HTrack07.ogg, HTrack09.ogg, HTrack20.ogg - Copyright (C) 2013-2019 Breathelast
+
+TeleWarp.ogg, HTrack10.ogg, HTrack11.ogg, HTrak11B.ogg - Copyright (C) 2011-2019 Methadone Skies
+
+Undrwrld.ogg, HTrack19.ogg - Copyright (C) 2018-2019 Shivaxi, Xenofish
+
+
+
+Permissions have been obtained from original authors for any of their resources modified or included in this file. 
+
+Additional credit links:
+Lara Sluyter - https://www.youtube.com/channel/UCejRwWhTN76XWgNVNU_ZExA
