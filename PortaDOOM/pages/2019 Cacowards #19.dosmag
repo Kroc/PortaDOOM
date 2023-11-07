@@ -1,0 +1,105 @@
+$THEME=BLACK
+$TITLE=The Side Column pt.I
+
+^C:2019 CACOWARDS :: THE SIDE COLUMN pt.I
+
+:-------------------------------------------------------------------------------
+
+:DID YOU KNOW...
+:===============================================================================
+- `Mordeth` was still not released in 2019 despite over twenty-one years of development?
+
+- `Doom Eternal` was supposed to have been released three weeks ago?
+
+- December 10th marked the 26 year anniversary of `Doom`?
+
+
+:WILLITS WILLS IT
+:===============================================================================
+This July, <Tim Willits> stunned the faithful by announcing that he was leaving <id Software> after 24 years. This was noteworthy in part because <Willits> was one of only two "old school" <id> employees remaining at the company (well, three if you count <id> mom <Donna Jackson>). Although <Willits> wasn't present for the original halcyon days of `Doom` and `Doom 2`, he did join in time for `Ultimate Doom`, `the Master Levels`, and obviously, `Quake` and beyond. His departure leaves <Kevin Cloud> as the last man standing.
+
+$KEY:A=URL:https://5years.doomworld.com/topten/winners/timwillits/
+<Willits> joined <id> in 1995 through a vaguely confusing series of events that involved working at <Rogue Entertainment>, who rented a suite down the hall from <id Software> in the infamous Black Cube, on the FPS-RPG `"Strife"`, which was produced by <id Software>. Originally <Willits> seems to have been a hired hand to help a distressed project over the finish line, but as *Masters of Doom* put it, "he overachieved as best he could" and soon got hired at <id> full time. This impressed your 17 year old humble webmaster enough to list <Willits> at [A: #10 on his list] of the ten best mappers of all time (as of 1998).
+
+$KEY:B=URL:https://www.doomworld.com/idgames/levels/doom2/p-r/raven
+<Willits>'s classic-`Doom` community output was over by this point. The bulk of his output was in the [B: Raven] series, co-authored by his sister, <Theresa Chasar>; <Chasar> also apparently co-created `E4M5`: `They Will Repent` in `The Ultimate Doom`, which has led Doomers over the years to wonder how much credit she ought to be receiving for his early output. (<Chasar> also appears as a named character in the <Tim Willits>-designed `Doom 3`, where her head is torn off within 10 seconds, so there's that.)
+
+$KEY:C=URL:https://rome.ro/news/2017/8/30/multiplayer-only-maps
+$KEY:D=URL:https://twitter.com/americanmcgee/status/903034599600619520
+$KEY:E=URL:https://www.shacknews.com/article/101179
+$KEY:F=URL:https://twitter.com/ThatTomHall/status/903301411588288512
+In the years following, <Willits> was a company guy, doing press as needed but otherwise keeping a pretty low profile. One of the few exceptions was on the rare occasion that <Willits> raised the ire of the old <id> guys, most notably back in 2017 when <Willits> claimed to have invented the idea of dedicated deathmatch maps, leading to a shower of boos from [C: John Romero], [D: American McGee], [E: John Carmack], and [F: Tom Hall].
+
+$KEY:G=URL:https://static.doomworld.com/pages_media/7_goldy.jpg
+Those sorts of comments didn't do much to help the general impression that <Willits> had strayed from his roots as a designer - he had long been the studio director at <id Software> since the not terribly well received `RAGE`, which he headed up as creative director; few on the outside seemed to know how much, if any, design work he was doing anymore on projects he headed up like `Quake Champions`. The news that he'll be joining the C-suite at <Saber Interactive> as "Chief Creative Officer" suggests his trajectory towards being more of a suit is well under way (and not the [G: Goldy Gopher] kind).
+
+
+:RECOMMEND ME A... HARDCORE CHALLENGE MAPSET
+:===============================================================================
+$KEY:H=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/noye
+When speedrunners gather to craft maps aligned with their tastes, shrugging at accessibility and typical vectors of appeal, you get a collection of bizarro vignettes like [H: NoYe]. Inside: platforming, speed tests, void-glide fetishism, puzzles, scroller platforming, Tyson tests, `Chasm` platforming, cyb obstacle courses, rocket-boost platforming, avant-garde combat -- and yeah, some good ol' slaughter. Few will find enjoyment in all of this; it is very much a set to pick and choose, and then cherish what you like.
+
+$KEY:I=URL:https://www.doomworld.com/forum/topic/110060
+[I: Wormwood] is a two-map Halloween brunch by <Grain of Salt> and <Ribbiks>. <Grain of Salt> cleanses your palate with a high-adrenaline appetizer testing general awareness and demanding mechanically sound play. Then, with a suspicious grin, <Ribbiks> carts out the main course, a monstrosity that is possibly still alive and certainly didn't pass the health inspection. A nonlinear welter of cruel fights, with an especially obnoxious closer, there is much room for routing and practice. You will need it.
+
+
+:WHAT ARE WE STILL WAITING FOR?
+:===============================================================================
+Does this enormous list suggest the boundless enthusiasm for `Doom` and its relations, or the hubris that will inevitably lead to the community's downfall? Is this the same boilerplate text as last year's column? The answer to at least one of these questions is "yes".
+
+- `A Boy and His Barrel`
+- `Abandon`
+- `Action Doom 3
+- `Adventures of Square E3
+- `Age of Hell`
+- `Amiga Demo Party`
+- `Ashes 2063 E2`
+- `Autobiographical Architecture`
+- `Back to Saturn X E3`
+- `Cereal Killer`
+- `Cipher`
+- `CyberShade`
+- `Dancing in the Abyss`
+- `Dark Universe E2`
+- `Darkmoon`
+- `Deus Vult II-2`
+- `Doom 2 the Way id Did: The Lost Episodes`
+- `Doom: The Golden Souls 3`
+- `Elementalism`
+- `Favillesco E3`
+- `Final Doom the Way id Did`
+- `Fortune's Run`
+- `Happy Time Circus 3`
+- `Heretic: Curse of Darkness`
+- `HPack`
+- `Interstellar Enforcer`
+- `Kama Sutra 2`
+- `Kuroneko Project`
+- `Mordeth E2`
+- `Necromantic Thirst`
+- `Ozonia`
+- `Panophobia`
+- `Perdition's Gate Resurgence`
+- `Plutonia 3`
+- `The Realm of Z-Magic`
+- `Refracted Reality`
+- `Return to Hadron E3`
+- `Return to Necropolis`
+- `Revelations of Doom`
+- `The Shores of ZDoom`
+- `Strife: Mothership`
+- `Sunder` (v2)
+- `Super Mayhem 17: The Lost Levels`
+- `Supplice`
+- `Switcheroom 2`
+- `Tarnsman's Projectile Hell`
+- `Threshold of Pain 2`
+- `TNT 2: Devilution`
+- `UAC Ultra 2`
+- `Ultimate Doom in Name Only`
+- `Vela Pax`
+- `WolfenDoom: Blade of Agony E3`
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/
+:source [#: www.doomworld.com/cacowards/2019/]

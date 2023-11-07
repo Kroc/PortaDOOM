@@ -1,0 +1,58 @@
+$THEME=BLACK
+$TITLE=The Side Column pt.II
+
+^C:2019 CACOWARDS :: THE SIDE COLUMN pt.II
+
+:-------------------------------------------------------------------------------
+
+:MOST PROMISING NEWCOMERS
+:===============================================================================
+$KEY:A=PAGE:#11
+$KEY:B=GOTO:The Slaughter Spectrum
+$KEY:C=GOTO:Lunar Catastrophe
+We've got another whole boatload of newcomers this year, the best of which are more than just promising and have already been awarded for their debut or almost-debut projects. There's <Aurelius>, who blew everyone away with the release of [A] `Remnant`, a huge single map that seems to excel at everything. There’s <Bridgeburner56>, whose screenshot-posting, attention-getting cloud presence at last coalesced into the storm that is [B] `The Slaughter Spectrum`, and who already seems to be gathering a new school of mapping disciples. There's mapper couple <Miss Bubbles> and <Count651>, who completed `the Ultimate Doom` throwback megawad [C] `Lunar Catastrophe` this year and have teased a very promising `Doom 2`-based sequel.
+
+$KEY:D=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/hurt
+$KEY:E=URL:https://www.doomworld.com/idgames/levels/doom/Ports/p-r/phobosdemi
+$KEY:F=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/drfv
+$KEY:G=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/die
+But beyond these folks, there are others whose work didn't quite make the awards -- people whose ambition and developing skills have already proven that they're worth keeping an eye on, and who seem poised to sweep us off our feet after they iron out a few kinks. <elend>'s [D: Hurt] combines *GZDoom* features with stock textures to deliver impressive architectural grandeur along with some pretty deep exploration and a lot of atmosphere. <RustyGold> followed up the 2018 release of `Phobos: The Doomed Moon` with the second part of the trilogy, [E: Deimos: The Damned Moon], which experiments with heavy incidental combat against the backdrop of super moody lighting and surprising, beautifully detailed locales. And <NoReason> offers a double helping of hardcore combat puzzles in [F: Disparate Realities] and [G: Death in Excess], which contain some mind-bogglingly huge battles along with more typical `Sunlust`-inspired fare.
+
+In the speedrunning field, total newcomer <depr4vity> became the fourth person ever to beat `Hangar` in 8 seconds on a no-monsters run, and has swept the rest of the single-level no-monster runs in what the speedrunning members of our team have described as a "rampage", beating lots of long-standing records in the process.
+
+While these may be our MOST promising newcomers, everyone new to the community is promising, and we look forward to what all our new blood will put out. Try it! You might like it.
+
+
+:QUAKECON AHOY
+:===============================================================================
+QuakeCon 2019, also advertised as "DoomCon", lived up to its name as the largest physical meetup of Doomworld-adjacent people on record. Among those Doing Dallas were <Quasar>, <Xaser>, <Altazimuth>, <Kaiser>, <esselfortium>, <Jimmy>, <MTrop>, <Dime>, <Csonicgo>, <Pavera>, <TDF>, <HumanBones>, <Revenant>, <dew>, <Carnevil>, <Linguica> and more. The promise of juicy `Doom`-related happenings (which turned out to be more smoke than fire, alas) brought out the faithful like never before, and possibly never again, barring a RomeroCon in not so sunny Galway, Ireland.
+
+$KEY:H=URL:https://static.doomworld.com/pages_media/7_donna.jpg
+$KEY:I=URL:https://static.doomworld.com/pages_media/7_idguys1.jpg
+$KEY:J=URL:https://static.doomworld.com/pages_media/7_idguys2.jpg
+$KEY:K=URL:https://doomwiki.org/wiki/Hissy
+$KEY:L=URL:https://static.doomworld.com/pages_media/7_hissy.jpg
+Despite a tepid official keynote (spotting <Todd Howard> in the audience was equally exciting to the trickle of new information on tap), the Doomworld crew made their own excitement, quickly recognizing and buttonholing [H: long-time id mom Donna Jackson] into an extended conversation, where she continually brought up <John Romero> with the tones of awe and terror your chronicler would normally associate with Bart Simpson's ex-babysitters. [I: At various times] the Doomworld crew also [J: snagged the collars] of head <id> honchos <Marty Stratton> and <Hugo Martin>, mostly to relate to them all our extremely well thought out suggestions for `Doom Eternal`, and how our original-content do-not-steal fursonas should appear in the game, etc. Everyone's favorite caco [K: Hissy] also made a [L: rare personal appearance], and she changed hands to our new resident hogger, <Kaiser>.
+
+$KEY:M=URL:https://static.doomworld.com/pages_media/7_zine.jpg
+In the leadup to QuakeCon, as a larf, we suggested to <Scuba Steve> that it would be neat if there was some sort of physical DoomCon "zine" -- and lo and behold, [M: such a zine materialized] through <Scuba Steve>'s sheer force of will, with a full complement of articles and activities, and immediately became a collector's item among the congoers. (No, you may not see it.)
+
+$KEY:N=URL:https://static.doomworld.com/pages_media/7_cake.jpg
+$KEY:O=URL:https://www.youtube.com/watch?v=XvutrQoIAEM
+$KEY:P=URL:https://static.doomworld.com/pages_media/7_birthday.jpg
+As <esselfortium>'s birthday also coincided with the event, QuakeCon 2019 also featured the world's first, and hopefully only, [N: Post Hell cake], explicitly designed after a [O: horrible old meme] that inspired a horrible looping music file in Doomworld's Post Hell of yonder. The [P: birthday party] also featured livestreamed `Doom` speedruns as well as live demonstrations of unreleased WADs and other assorted top-secret curios. In other words, it was an unqualified success.
+
+
+:PORTING FORWARD
+:===============================================================================
+One major QuakeCon announcement was a new batch of official `Doom` versions -- this time spanning the current generation of consoles as well as mobile devices.
+
+The new official ports are... weird. To be clear, they are still `Doom` at their core; one look at the (soon to be perfectly synced) demo loop should say as much. The games have been virtualized into a library and shoved inside *Unity*, much like Luke Skywalker inside the butchered Tauntaun, using its warmth and, uh, API hooks to stay alive. This is not entirely new; the last generation of `BFG Edition` "`Doom Classic`" ports were similarly suspended within an *idTech5* framework at the time.
+
+At launch, the ports were... well... Not Good, with weird mistimed music and bafflingly bad screen scaling (not to mention the BethesdaNet fiasco). Over time, they have improved, and are on track to improve more, as <id Software> seems genuinely determined to provide support and polish for them going forward. The developers have even been willing to listen to feedback, which is extremely promising.
+
+The elephant in the room, however, is the GPL, and the apparently permanent refusal of the modern <Bethesda>-owned <id> to acknowledge its fruits. This is a shame; the capital-b Best official `Doom` port of all time was to *iOS*, when <John Carmack> ported the *glBoom* source code, resplendent with its perfect vanilla compatibility and perfectly faithful hardware renderer. That was the power of open source to make all software, everywhere, better -- but under <Bethesda>'s reign, the licensing and profiting morass of the GPL has made all such source ports off limits, and left us with <id>'s own creaking, bespoke codebase, running a source port that lacks some basic optimizations that have been universal in GPL ports for decades. It's a frustrating state of affairs, but there is cause for optimism that the community spirit will continue to seep into the official product.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/
+:source [#: www.doomworld.com/cacowards/2019/]

@@ -1,0 +1,71 @@
+$THEME=BLACK
+$TITLE=The Side Column pt.III
+
+^C:2019 CACOWARDS :: THE SIDE COLUMN pt.III
+
+:-------------------------------------------------------------------------------
+
+:SPEEDRUNNING 3.0
+:===============================================================================
+$KEY:A=URL:https://www.doomworld.com/forum/topic/55591/?do=findComment&comment=2044834
+$KEY:B=URL:https://dsdarchive.com/
+Let us begin on a bittersweet note. On November 12th, <Andy Olivera> [a: announced] he was stepping down from maintaining the demo archive, exactly 11 years after he took up the mantle from <Opulent>. He recently finished merging P-DANG demos into the archive, and with the Compet-N and Czech-N archives already done, he decided his mission was over. Luckily, the transition will be silky smooth this time, because <Andy>'s successors <kraflab> and <ZeroMaster010> have already gone official with [B: DSDA "3.0"] in all its spartan glory. Thank you for your service, and may the new generation live up to your standard!
+
+$KEY:C=URL:https://www.twitch.tv/doomspeeddemos
+Speaking of <ZeroMaster>, on September 1st his [C: Doom Speed Demos] Twitch channel went up. What's the big deal? It plays randomly selected demos from the archive 24/7. If you want to get serenaded into sleep by the ASMR tingling of SSG reloads, or you need monster pain sounds to increase your work productivity, here's your best chance! In the unfiltered *PRBoom+* software renderer, as God in Texas intended.
+
+$KEY:D=URL:https://www.youtube.com/watch?v=oGEAQAXZKBw
+$KEY:E=URL:https://www.doomworld.com/forum/topic/55589/?do=findComment&comment=1992355
+The biggest speedrunning news is <Looper>'s grand comeback. The man that kicked off the great IWAD-running resurgence in 2010 with his status quo-shattering 23:25 on `Doom` 2 UV retook the record in early July with [D: 18:31], improving <eLim>'s standing time by 2 seconds. And he went on quite a [E: tear through Doom 2] in general.
+
+$KEY:F=URL:https://www.youtube.com/watch?v=1UkeFwJ-yHI
+$KEY:G=URL:https://www.youtube.com/watch?v=9MnFyHjgJgk
+$KEY:H=URL:https://www.youtube.com/watch?v=GlCfkKZC874
+$KEY:I=URL:https://www.youtube.com/watch?v=B968JxfmTOc
+The other usual suspects didn't slack off either. <4shockblast> sho-, um, stunned the world by achieving the fabled [F: 8-second UV-speed] of `e1m1`. <ZeroMaster> embarrassed the rising DoomTube star <decino> with the first-ever pacifist completion of [G: Plutonia map07], 4 days after <decino> put it on [H: "the impossible list"]. <ZM> also discovered a new type of architecture permitting void glides, which he showcased on the OG void run in [I: e2m6], though previous record holder <JCD> has improved it by 2 seconds since then.
+
+$KEY:J=URL:https://www.youtube.com/playlist?list=PLg_b5Q5uBiq6_mw_PJyMB71qdMRlz-ZHu
+$KEY:K=URL:https://gamesdonequick.com/
+$KEY:L=URL:https://www.youtube.com/watch?v=LeLzijSyHYw
+This year's most notable livestreamed runs include QuakeCon's [J: chained runs] of all the `Doom` games, with <Dime> in the cockpit for the most important entries, and [K: GDQ]'s [L: community spotlight event] with <Ancalagon>'s heroics in `Crumpets` and `Sunlust` `map29`.
+
+$KEY:M=URL:https://www.youtube.com/watch?v=bIhpw7eJ2Wg
+$KEY:N=URL:https://www.youtube.com/watch?v=L9_uWGXP_Pw
+$KEY:O=URL:https://www.youtube.com/watch?v=DGBMO6kuHQc
+$KEY:1=PAGE:#03
+Finally, some recommended watching for the `Doom` festivities, showcasing some of the best and hardest of 2019's UV Maxing: <Ancalagon>'s `Dimensions` `map03` in [M: 17:56], <0xf00ba12>'s `Plutonia` `map32` [N: sub-3:00], and <Nevanos>'s cray-cray [O: 6-hr marathon] of [1] `Eviternity` (which sadly misses *a* monster).
+
+
+:THE TWENTY-TENS'S TEXTURE TREATS
+:===============================================================================
+<rd> here. As the decade comes to an end, now is a great time for a retrospective on its smaller or more obscure texture packs. We'll focus on resources not already mainstays of the <Realm667> repository.
+
+$KEY:P=URL:http://esselfortium.net/wasd/32in24-15_tex_v2.zip
+[P: 32in24-15_tex] is <esselfortium>'s tune-up of `CC4-tex`, a close kin that trades in the kludgiest textures for expanded Egypt and snow sets, and buffs coverage elsewhere. `CC4-tex` is long overdue its pension, so if you like the aesthetics, retire it and give the younger forms a go instead.
+
+$KEY:Q=URL:https://www.dropbox.com/s/g1jekgx9smgyjww/jimmytex.wad?dl=0
+$KEY:R=PAGE:#02
+$KEY:S=URL:https://www.doomworld.com/forum/topic/84555
+[Q: Jimmytex] is an expanding pack of concoctions by <Jimmy> (duh), this year's super versatile *[R] Espi recipient*. Many are variants and Frankensteins of stock `Doom 1` & `2` textures, trafficking in that joyful recognition of familiar patches in fresh forms. His [S: Zoontex] is full of lurid liquids and recolors, especially suited to exotic and magical settings.
+
+$KEY:T=URL:https://www.doomworld.com/forum/topic/90900
+On that note, his [T: "Post your Doom textures!"] thread has been an underground hotspot of sorts, one worth keeping tabs on. The beauty is that well-known texture artists (Nightmare, Afterglow, Cage) have contributed lots, but an enormous cast of forum-goers has taken part, getting work to a comparably high standard through focused tinkering. Without the burden of practicality, wacky ideas are common, and many are pretty cool.
+
+$KEY:U=URL:https://www.doomworld.com/forum/topic/93638
+[U: A similar Heretic/Hexen thread] serves the same role for `Doom`'s sister games. Where `Doom 2` patchwork is the art of playful remixing, <Raven> pastiches, in augmenting an infamously narrow base set, feel essential and fundamental -- like relatives of the originals that could have, or even should have, been there all along.
+
+$KEY:V=URL:https://www.doomworld.com/forum/topic/72609
+Over the last few years, [V: Gothic has gifted us packs] that touch on rarer styles like those of `Mutiny` and `Perdition's Gate`, which is a wonderful angle to take. I'm very curious what will come next.
+
+$KEY:6=PAGE:#08
+$KEY:W=URL:https://www.dropbox.com/s/bsal00537kuythr/rfhelltx.wad?dl=0
+<rf>, of `Mapgame` and [6] `Hocus Doom` fame, has assembled the fantastic [W: rfhelltx], which would be right at home in the shores of hell or any number of utterly gross `Doom 2` settings. I'm not exaggerating. Some of this is nasty.
+
+$KEY:X=URL:https://www.doomworld.com/applications/core/interface/file/attachment.php?id=70881
+[X: Greenwar2-tex] is a personal favorite, packed with gems that have featured in standout 2010s releases, from `Mayan Mishap` to `Ancient Aliens`. Highlights include extensive Incan and Meso assets, dark versions of `Doom 2`'s mansion and cement themes, and nifty-looking rocks and landscapes.
+
+There is lots more if you dig around for it. Have fun.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2019/
+:source [#: www.doomworld.com/cacowards/2019/]
