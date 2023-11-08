@@ -304,6 +304,8 @@ DIM SHARED dialogOn`
 DIM SHARED dialogWidth AS _UNSIGNED _BYTE
 DIM SHARED dialogHeight AS _UNSIGNED _BYTE
 DIM SHARED dialogText$ 'binary string of the dialogue text
+'enable/disable the presence of dialog options ("Y" / "N")
+DIM SHARED dialogYN`
 
 
 'MAIN:
@@ -866,6 +868,7 @@ SUB launchURL (url$)
     LET dialogText$ = STRGUI.Compile$
     
     LET dialogOn` = TRUE
+    LET dialogYN` = TRUE
     CALL refreshScreen
 
     '-------------------------------------------------------------------------
@@ -879,6 +882,12 @@ SUB launchURL (url$)
         IF key$ <> "" THEN
             SELECT CASE ASC(UCASE$(key$))
                 CASE ASC_Y
+                    'change the dialog to show "launching..."
+                    LET dialogText$ = "        Launching URL..."
+                    LET dialogWidth = 32
+                    LET dialogHeight = 1
+                    LET dialogYN` = FALSE
+                    CALL refreshScreen
                     'launch the URL
                     SHELL url$
                     'return the main screen
@@ -961,6 +970,7 @@ SUB exitYN
     LET dialogText$ = STRGUI.Compile$
     
     LET dialogOn` = TRUE
+    LET dialogYN` = TRUE
     CALL refreshScreen
     BEEP
 

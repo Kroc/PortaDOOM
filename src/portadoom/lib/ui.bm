@@ -263,7 +263,12 @@ SUB drawDialog
     'calculate the position of the border box on screen
     DIM boxWidth%: boxWidth% = dialogWidth + 4
     DIM boxLeft%: boxLeft% = (SCREEN_WIDTH - boxWidth%) / 2
-    DIM boxHeight%: boxHeight% = dialogHeight + 4
+    DIM boxHeight%
+    IF dialogYN` THEN
+        boxHeight% = dialogHeight + 4
+    ELSE
+        boxHeight% = dialogHeight + 2
+    END IF
     DIM boxTop%: boxTop% = 1 + (SCREEN_HEIGHT - boxHeight%) / 2
 
     'draw the dialogue box
@@ -279,13 +284,16 @@ SUB drawDialog
     CALL STRGUI_Add("^{X+1,L}")
     CALL STRGUI_Add(dialogText$)
     
-    'divider line for buttons
-    CALL STRGUI_Add("^{X-2,&C3,&C4,R@w-2,&B4,N}")
-    
-    CALL STRGUI_Add( _
-        SPACE$(dialogWidth - 17) + _
-        "^{FW,FC}[Y]^{F-} YES^{F-} or ^{FW,FC}[N]^{F-} NO^{F-}" _
-    )
+    'is there a choice?
+    IF dialogYN` THEN
+        'divider line for buttons
+        CALL STRGUI_Add("^{X-2,&C3,&C4,R@w-2,&B4,N}")
+        'right-align the Y/N prompt
+        CALL STRGUI_Add( _
+            SPACE$(dialogWidth - 17) + _
+            "^{FW,FC}[Y]^{F-} YES^{F-} or ^{FW,FC}[N]^{F-} NO^{F-}" _
+        )
+    END IF
     
     LOCATE boxTop%, boxLeft%
     CALL STRGUI.Print
