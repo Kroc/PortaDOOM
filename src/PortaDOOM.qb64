@@ -466,13 +466,8 @@ DO
                                 EXIT FOR
 
                             CASE ACTION_SHELL
-                                'switch to the files directory
-                                DIM cwd$: LET cwd$ = _CWD$
-                                CHDIR "files"
-                                'exeute the shell command
-                                SHELL param$
-                                'return to the previous directory
-                                CHDIR cwd$
+                                CALL exec(param$)
+                                EXIT FOR
 
                             CASE ACTION_URL
                                 CALL launchURL(param$)
@@ -916,6 +911,53 @@ SUB launchURL (url$)
         END IF
     LOOP
 
+    LET dialogOn` = FALSE
+    CALL refreshScreen
+END SUB
+
+'execute an action (i.e. shell)
+'=============================================================================
+SUB exec(cmd$)
+    'display the shell dialogue to warn that PortaDOOM will be frozen
+    
+    'set the width of the dialogue box
+    'NOTE: this is the internal width, 'width of text',
+    '      padding and border will be added automatically
+    LET dialogWidth = 64
+    
+    CALL STRGUI_Begin
+    STRGUI_Add "Launching shell command:^{N,N}"
+    LET dialogHeight = 2
+
+    'the cmd will likely need to be line-wrapped;
+    'how many lines will it take?
+    DIM cmdWidth%: LET cmdWidth% = dialogWidth - 2
+    DIM cmdLines%: LET cmdLines% = _CEIL(LEN(cmd$) / cmdWidth%)
+    LET dialogHeight = dialogHeight + cmdLines%
+
+    DIM i%
+    FOR i% = 1 TO cmdLines%
+        STRGUI_Add " ^{Fb}" + _
+            MID$(cmd$, cmdWidth% * (i% - 1) + 1, cmdWidth%) + "^{F-,N}"
+    NEXT i%
+    
+    STRGUI_Add "^{N}WARNING: PortaDOOM will remain frozen until the program is quit!"
+    LET dialogHeight = dialogHeight + 2
+    
+    LET dialogText$ = STRGUI.Compile$
+    LET dialogYN` = FALSE
+    LET dialogOn` = TRUE
+    CALL refreshScreen
+    
+    'switch to the files directory
+    DIM cwd$: LET cwd$ = _CWD$
+    CHDIR "files"
+    'exeute the shell command
+    SHELL cmd$
+    'return to the previous directory
+    CHDIR cwd$
+    
+    'clear the dialog
     LET dialogOn` = FALSE
     CALL refreshScreen
 END SUB
