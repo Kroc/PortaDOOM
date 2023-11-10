@@ -150,6 +150,12 @@ First, extract the zip file into a new folder. Then, follow the installation ins
 
 No. I only bundled it for convenience, its source code has not been modified.
 
+### What is the difference between this and Retribution or the PSX TC?
+
+A lot of the internals are different and work much closer to the original games. Instead of being an approximation based on what the author felt right, a lot has been adapted from reverse engineered source code into ZScript.
+
+Save for a few exceptions, the maps are the same as in Retribution and the PSX TC, but have been modified to better match the originals, for example correcting sector colors and light specials. Things such as editor numbers and unique textures have been carried over, so custom maps designed for them should also be compatible. The reason why Retribution maps were used instead of making new conversions from scratch is that the they contain small quality of life improvements that are almost unanimously preferred.
+
 ### How can I make the game look more like the original versions?
 
 Go to the `Features` menu, and change the preset to `Faithful`. Play the Lite version of the game (or remove all addon pk3s) so that upscales, extra music and other optional stuff doesn't get loaded. Manually add AspectRatio.pk3 to the load order if you are playing PSX DOOM or 3PointFilter.pk3 if you are playing DOOM 64.
@@ -172,12 +178,16 @@ There is an `Overall Brightness` slider in the `Features` menu. I recommend you 
 
 GZDoom sets the default UI scale to match your current resolution. If you wish to enlarge it, go to `Options > Scaling Options` and change the `User Interface Scale`.
 
+### Why does the HUD looks stretched vertically?
+
+GZDoom has an option called `HUD preserves aspect ratio`, make sure it is *disabled*. That option is only intended for PC Doom and will make the HUD scale incorrectly with these mods.
+
 ### The wrong music is playing. How can I change it?
 
 In the `Features` menu, go to `Audio Features` and change the `Music Type`.
 
-- Choosing `Computer` will only play action based tracks.
-- Choosing `Console` will only play dark ambient tracks.
+- Choosing `Computer` will only play action based tracks (PC style).
+- Choosing `Console` will only play dark ambient tracks (the original soundtrack).
 - If `Play Both Music Styles` is enabled, the PC track will play for `Minimum Seconds Playing Before Music Changes` and then fade to the Console track.
 
 ### What are the differences between the two new difficulties?
@@ -204,7 +214,7 @@ If it's too much for your computer, try running with the Faithful preset without
 
 ### Can I play this with Voxel Doom?
 
-[Voxel Doom II](https://www.moddb.com/mods/voxel-doom-ii) is compatible with PSX DOOM, but you must make a small edit to its file. You must open cheello_voxels_v2_1.pk3 (make a backup copy first), and rename the directory *filter/doom.id* to *filter/doom.ce*. Inside CE, you must disable Smooth Monsters for it to work properly. A caveat is that monsters will revert back to their Doom II timings and behavior instead of how they are in Psx Doom.
+[Voxel Doom II](https://www.moddb.com/mods/voxel-doom-ii) is compatible with PSX DOOM, but you must make a small edit to its file. You must open cheello_voxels_v2_1.pk3 (make a backup copy first), and rename the directory *filter/doom.id* to *filter/doom.ce*. Then you can load it on top of CE, but you must disable Smooth Monsters for it to work properly. A caveat is that monsters will revert back to their Doom II timings and behavior instead of how they are in Psx Doom.
 
 ### Can I play this with \<x\> mod?
 
@@ -216,7 +226,7 @@ Yes, as long as their upstream GZDoom version is compatible with this mod (4.10+
 
 ### Is this multiplayer compatible?
 
-Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). All maps support coop, but the DOOM 64 levels have some progression issues with more than one player due to how the maps were designed.
+Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). All maps support coop, but you may encounter softlocks in DOOM 64 because those maps were not designed to be multiplayer compatible.
 
 ### What third-party tools were used to create the assets?
 
@@ -247,7 +257,7 @@ You need to beat the secret level Hectic to unlock the Bonus Maps episode.
 
 ### What is the meaning of CE in the title?
 
-There is no specific meaning, but here are some ideas: Custom Edition, Console Edition, Compilation Edition, Console Enhanced, etc.
+There is no specific meaning, but I've seen it called Custom Edition, Complete Edition, Console Edition, Compilation Edition, Console Enhanced, etc.
 
 ## Links
 
@@ -261,6 +271,21 @@ There is no specific meaning, but here are some ideas: Custom Edition, Console E
 - [DOOM64-RE](https://github.com/Erick194/DOOM64-RE)
 
 ## Changelog
+
+### 3.8.2
+
+- PSX: [Dis] Fixed the Spiderdemon not spawning in multiplayer mode.
+- PSX: [Fear] Removed a multiplayer-only pillar decoration that caused a softlock in cooperative mode.
+- PSX: Lowered the intensity of some decoration brightmaps and tweaked some dynamic lights to blend better with the psx gamma correction.
+- 64: Fixed spawned keys not staying on the level after being picked in cooperative mode.
+- 64: Fixed weapon special action triggers not activating if the player already owns the weapon in cooperative mode.
+- 64: [Alpha Quadrant] Fixed a possible softlock after being locked inside an arena in cooperative mode.
+- 64: [Research Lab] Fixed a possible softlock after being locked inside an arena in cooperative mode.
+- 64: [Terror Core] Fixed a possible softlock after being locked inside an arena in cooperative mode.
+- 64: [Unholy Temple] Fixed a possible softlock after being locked inside an arena in cooperative mode.
+- Both: Fixed the light amp goggles effect being too bright if PSX gamma correction is enabled.
+- Both: Fixed hud notifications disappearing earlier than they should if another notification took their place.
+- Both: Updated the bundled GZDoom to 4.11.3.
 
 ### 3.8.1
 

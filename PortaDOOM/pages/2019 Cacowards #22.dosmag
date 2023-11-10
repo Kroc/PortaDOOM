@@ -90,8 +90,7 @@ $KEY:O=GOTO:NAKU-NARU
 
 :MORDETH AWARD:
 
-$REM=# we have to set the working directory, or the log-files go in "/files"!
-$KEY:P=SHELL:ECHO Launching... && START "" /D "wads\conversions\srb2" /B srb2win.exe
+$KEY:P=SHELL:"wads\conversions\srb2\play.bat"
 - [P] *Sonic Robo Blast 2							<Sonic Team Junior>
 
 :THE SPACESHIP OF THESEUS:

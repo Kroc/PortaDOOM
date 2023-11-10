@@ -1,7 +1,6 @@
 $THEME=BLACK
 $TITLE=Other Awards
-$REM=# we have to set the working directory, or the log-files go in "/files"!
-$KEY:1=SHELL:ECHO Launching... && START "" /D "wads\conversions\srb2" /B srb2win.exe
+$KEY:1=SHELL:"wads\conversions\srb2\play.bat"
 $KEY:2=GOTO:Hedon
 $KEY:3=URL:https://www.doomworld.com/forum/topic/99021
 $KEY:4=URL:https://www.doomworld.com/forum/post/1933484
