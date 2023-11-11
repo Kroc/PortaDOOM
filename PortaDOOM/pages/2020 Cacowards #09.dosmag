@@ -1,0 +1,29 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.VII
+$KEY:7=GOTO:Mutabor
+
+^C:2020 CACOWARDS :: TOP 10 pt.VII
+
+:-------------------------------------------------------------------------------
+
+:[7] `Mutabor` - <tourniquet>
+:===============================================================================
+
+$KEY:A=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
+Not so much a sequel as a spiritual successor to 2016's [A: Miasma], <Tourniquet>'s `Mutabor` is a meditative sojourn amidst the skeletal skyline of an unnamed civilization fallen victim to a hubristic lack of contingency planning for such mundane post-industrial inevitabilities as leaky pipes, substructural subsidence, and aggressive insurgence by carnivorous horrors from beyond the veil. All slimefalls, silent smokestacks, and decaying skyscrapers teetering like so many precariously placed Jenga blocks, one does not simply walk through `Mutabor`'s world; rather, you tend to plummet through it, ever deeper into its murky depths, only to find yourself climbing back above the clouds sometime later, often ending up a stone's throw away from where you began, as the crow flies.
+
+In this, `Mutabor` represents the culmination of a design philosophy which its author has been experimenting with for some time now, whereby the core of the game is made more by the environment, and the player's navigation of it, than by the artifacts and creatures it hosts. This is not to say that there's no visceral action to be had, mind; biomechanical apex predators are ever-lurking and ready to strike at critical moments throughout the journey, and bloodthirsty mobs can emerge seemingly from nowhere through sly structural shifts, particularly in the deeper reaches. Yet, even at its most intense, the action takes on a primarily ambient role, serving to underscore the radically vertical geometry, and to act as a breadcrumb trail through a deeply non-linear layout hosting dozens of overlapping and intersecting progression strings, three distinct yet carefully interwoven paths to the exit, and a wealth of hidden areas and optional exploration.
+
+Yes, this can all be rather bewildering, and becoming lost at some point is, for most players, all but inevitable. But therein lies the beauty: while the grand scheme of the map can be difficult to see until after the fact, progression in the moment is almost never a hassle, being meticulously crafted to respond dynamically to the unique travails of each player, from those as surefooted as mountain goats who'll stick entirely to the high ground, to the most avid spelunkers who will insist on stepping off of every ledge as a matter of principle. It's a very complex and challenging environment to navigate and keep one's bearings in, true, but also an equally inviting and flexible one, as there really is no wrong way to go about plumbing its many secrets.
+
+This essential mutability extends even to the in-game skill settings themselves. Rather than approaching this in the typical way, where each setting is a nominally more or less challenging iteration of a single adventure, Tourniquet has ingeniously used each of the three "core" settings to present three markedly different experiences, via drastically altering not only item and actor placements but also the player's starting point in the map. HMP, the default setting, is the most openly approachable, offering an empowering lean towards heavier weaponry and almost immediately positioning the player at a nexus with boundless progression choices. UV, interestingly, is more of a longform/slow-burn experience, starting the marine at a remote point on the periphery and initially emphasizing methodical exploration and secret-hunting before eventually escalating to serious fireworks by journey's end. HNTR, normally the "easy" setting, has been replaced with "Onslaught!" mode, which sees a minigun-wielding protagonist deep in the ruins attacked from all sides from the outset, the smoggy air soon thick with the stench of blood and cordite.
+
+Concluding with a short puzzlemap, of all things, as a quirky coda, `Mutabor` is an engrossing and inspiring example of what is possible in classic `Doom` level design, and a trip worth taking again and again.
+
+^R- <Demon of the Well>
+
+:===============================================================================
+*[7] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best2/
+:source [#: www.doomworld.com/cacowards/2020/best2/]

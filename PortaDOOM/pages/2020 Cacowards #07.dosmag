@@ -1,0 +1,29 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.V
+$KEY:5=GOTO:Running Late 2
+
+^C:2020 CACOWARDS :: TOP 10 pt.V
+
+:-------------------------------------------------------------------------------
+
+:[5] `Running Late 2` - <A2Rob>
+:===============================================================================
+
+If you've ever had a job with a lengthy commute, you know lots can go wrong heading there: a traffic jam, a pounding headache, a relentless demonic invasion that threatens to leave the whole planet a scarred, lifeless husk -- or, worse, maybe you overslept and had to rush your shower. Sometimes stuff just happens. Unfortunately, for most people in the current global economy, days off are an unthinkable luxury in the face of common hassles. So you roll up your sleeves, adjust your heels, and get on with your day.
+
+$KEY:A=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/runlate
+As the protagonist of `Running Late 2`, <A2Rob>'s sequel to [A: a very promising first mapset], you find yourself in this unenviable position: a security guard starting a new job after their old workplace outright blew up. (Escorting out a misbehaving Icon of Sin is always dangerous.)
+
+You can think of `Running Late 2` as a screwy spin-off of early 2010s hits like `Vanguard` and `Resurgence`. It has the blocky architecture, the cheery popping colors, and the simple eye-pleasing shapes, which all combine for a comfy lo-fi look. Usually that mode is geared towards abstraction -- areas that are "video game spaces" instead of representing anything too specific -- but <A2Rob>'s unusual move was to pair that core with a playful narrative and a heavy dose of environmental storytelling. Along with the cleanly designed abstract spaces (there are still lots of those), you tour areas like conference rooms, looping highways, and kendo dojos. If you didn't pack breakfast, you might be teased by soda machines, cups of coffee, and... giant fish. This synthesis fits common wisdom: despite over a quarter-century plus of fan-modding, a whole lot of formulas, many that wouldn't seem too alien, haven't been mined much. You can put a new twist on anything. You can twirl it until it becomes a chaotic mess that accretes back into something cool. A lot can be said for plunging into the unknown, even if that's right next door.
+
+After storming through oil rigs, rail stations, and carpeted headquarters -- where one moment you are fending off gaggles of belligerent revenants and hell knights who had no scheduled appointment, and another you are looking at really cute "employee of the month" posters -- you eventually make it downtown. Here, a lot of the megawad's traits and tropes melt into a high-octane big city brawl against the worst of hell, from street-sweeper Spiderdemons to hundreds of Imps you can pulp into gib smoothies. `Running Late 2` takes cues from the crunchiness and player-empowering intensity of early <skillsaw>, and serves up all sorts of pressure cookers and freewheeling brawls. The demons are as likely to be asshole supervisors, lording over you with tactical advantages (and knowledge of your browsing history), as they are to be comically inept popcorn that melts to your big guns. But be wary. The moment you take a gang of basic zombies too lightly is when they get incensed and papercut you to death.
+
+At the end, you're a lone nighttime worker in a faintly lit grid of cubicles, hunched over a computer that just crashed. It is quiet and still and empty, well, except for that giant fleet of Imps pouring in. There has been a minor security breach, and you're on the clock. But even after you clear out these nincompoops, your job isn't done. Rip and tear... a shitload of old invoices. The only way out is through... Mike's cubicle (and he's an asshole).
+
+^R- <rd.>
+
+:===============================================================================
+*[5] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best2/
+:source [#: www.doomworld.com/cacowards/2020/best2/]
