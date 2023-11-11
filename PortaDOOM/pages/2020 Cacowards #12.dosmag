@@ -1,0 +1,30 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.X
+$KEY:0=GOTO:
+
+^C:2020 CACOWARDS :: TOP 10 pt.X
+
+:-------------------------------------------------------------------------------
+
+:[0] `Faithless Trilogy` - <Jimmy>
+:===============================================================================
+
+<Jimmy>'s design process for `Faithless Trilogy` was well documented. He carefully picked out elements from `Heretic` and `Hexen`, gave it some thought -- and then chucked them in a cauldron in the spooky gothic castle he lords over. After reading from a spellbook and tossing in a rat or two for flavor, the pulsing, glowing mass was finally downloaded onto a USB stick, where it became a trio of hub-based `Heretic` episodes that builds on the stronger aspects of both games.
+
+`Heretic`, for example, had an amazing idea with the Morph Ovum, a rare artifact that can transmogrify a pack of intimidating foul-breathed beasts into small clucking chickens (be cautious, they can still peck you for like 1 damage). `Faithless Trilogy` makes this even better -- it's now a common artifact.
+
+`Hexen` puzzles often conjure horrific notions of endless switch hunts, not to mention repeated jokes like "you have solved 1/2000th of the puzzle". <Jimmy> wants you to succeed. His puzzles are rarely arcane or padded, and convenient messages signpost cause and effect across distant hub-linked maps.
+
+The original games, especially `Heretic`, had a limited range of themes, but the realms of `Faithless Trilogy` expand on the gloomy dungeons and stone fortresses with a wider assortment of elegantly crafted medieval-mystical settings. As a taste, you travel through farm villages with coops of chickens (probably Morph Ovum victims in a past life), peaceful mountain lands with bamboo and chirping birds, vibrant elemental realms with rivers that glow as if enchanted -- with new enemies, themed to fit, adding to the `Heretic` and `Hexen` cast.
+
+When the trilogy swings into full gear in the second episode, Merciless, you are fighting in chambers of gold coins, panic-dodging Iron Lich tornadoes as your footfalls clink metallically. You don't just find switches to progress; you smash huge musical gongs and light fires and freeze blocks of melting ice. You are keeping an eye open for puzzle totems like gears to repair machinery, for keys that unlock optional chests that give you powerful items -- which includes lots and lots of new artifacts that jell excellently with the originals. I haven't even gotten to the new weapons. I'll tease you: later on, you gain the ability to spawn a friendly transient army to shred your enemies. For every moment you're embroiled in a frantic battle -- chased by a raving mob out to slice or roast or poison or freeze you, desperately evading a speedster miniboss with its lethal, colorful attacks -- there is a moment of quietly retracing your path through the wildlife and the weather, or piecing the scraps of a puzzle or progression together. Your best tool isn't always one of those big enchanted rods stuffed in your cloak; sometimes it's your noggin.
+
+This blend of experiences, from slow burns to intense firestorms, is `Faithless`'s signature, and its artful orchestration is the source of its best stretches. The appeal becomes beautifully clear in episode two's hub map, an iron stronghold that dwarfs you and fills you with a cosmic sense of biting off more than you can chew. Secrets could hide behind every musty bookshelf. Balconies loom alarmingly high overhead. Great gates block off caves that branch endlessly through slime and shadow. Like much of the trilogy, it's engineered not just to be dramatically conquered, but to be methodically unraveled.
+
+^R- <rd.>
+
+:===============================================================================
+*[0] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best3/
+:source [#: www.doomworld.com/cacowards/2020/best3/]

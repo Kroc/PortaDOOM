@@ -1,0 +1,30 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.VIII
+$KEY:8=GOTO:Three Is a Crowd
+
+^C:2020 CACOWARDS :: TOP 10 pt.VIII
+
+:-------------------------------------------------------------------------------
+
+:[8] `Three Is a Crowd` - <Scypek2>
+:===============================================================================
+
+Playing games like `Doom`, it's easy to imagine yourself as a lone survivor, a killing machine with nothing to lose and no goal but revenge. But when the apocalypse hits and your friends are sitting across the table from you, are you going to have their back?
+
+$KEY:A=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/gd
+$KEY:B=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/alt
+`Three Is a Crowd` starts off with a trio* of protagonists who happen to be playing off-brand Scrabble when the demons come knocking. You eventually step into the shoes of all three soldiers as they set off on different paths, each one driven to save the other two and all of them willing to go to any lengths for the sake of friendship. The narrative that unfolds is sometimes goofy, sometimes heartwarming, sometimes tragic, sometimes driven by tense rage and sometimes by terror, all of it delivered with a knack for storytelling that rivals anything in [A: Going Down] or [B: A.L.T.] Every time your characters cross paths is like a moment you've been waiting for all your life, and even the Icon of Sin is a genuine character, appearing again and again to counter your strategies at every turn until its last card is played.
+
+In the process, the megawad throws out every convention in the playbook. The first protagonist cockily grabs all the weapons in the armory, but then promptly loses them in an interdimensional gateway and is forced to tackle a map that includes no weapons or ammo whatsoever, followed by one that revolves around the rocket launcher in close quarters. The dramatic hostility of the first five maps or so will threaten to turn many players away, but I recommend sticking it out and appreciating the rough parts from a story perspective; the rest of the megawad just gets better and better. By map 06, as you watch an entire building rise out of the ground, make a D-Day run on a turreted Mancubus through a field of obstacles, brave a rooftop duel with a Cyberdemon, and catch your first of many glimpses of the architect of all your suffering, you start to realize the mapper is really on to something. Before the final rocket lands, you'll ally with an Imp, navigate a nearly invisible otherworld where paths unfold out of thin air, and chase after a door that won't stop running away from you. There's a map where everything plunges into darkness unless you keep hitting the pads that turn the lights back on, and another where the exit is accessible right at the start, but you have to deal with the whole rest of the map just to be able to survive it. Sometimes the quirks are just silly goals the author set to spur their creativity, like "what if there were seven doors on one wall and only one other exit?"
+
+Although its difficulty curve is anything but linear and a handful of maps are strikingly sadistic, the vast majority of the megawad is as fun as it is dramatically engaging -- and it's always at least one of the two. Any mapset that can be this whimsical and silly and deadly serious and tear-jerkingly emotional all at the same time is a winner in my book. `3IaC` is the rarest of PWADs -- one that explores the territory beyond "level design" in a meaningful way, that delves into a broader range of feelings and experiences rather than trying to give players more of what they think they want. Because life isn't just about slaughtering demons: it's about the people you love, the frustration of things not going according to plan, the feeling of victory that comes after real struggle, the sacrifices you're willing to make, and the games of Scrabble you play along the way.
+
+* or triad, if you prefer that interpretation.
+
+^R- <Not Jabba>
+
+:===============================================================================
+*[8] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best3/
+:source [#: www.doomworld.com/cacowards/2020/best3/]
