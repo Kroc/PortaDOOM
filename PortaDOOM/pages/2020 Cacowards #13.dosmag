@@ -1,0 +1,73 @@
+$THEME=BLACK
+$TITLE=Runners Up pt.I
+$KEY:1=GOTO:Tartarus
+$KEY:2=GOTO:Mapwich 2
+$KEY:3=GOTO:Shrine 2
+$KEY:4=GOTO:Technicolor Antichrist Box
+$KEY:5=GOTO:Return to Hadron E3 - Slayer's Swansong
+$KEY:6=GOTO:Criticality
+
+^C:2020 CACOWARDS :: RUNNERS UP pt.I
+
+:-------------------------------------------------------------------------------
+
+:[1] `Tartarus` - <RonnieJamesDiner>
+:===============================================================================
+
+Amongst a bloody red mist lies a demonic expanse of stone and marble, hiding secrets within and along the dizzying cliffs. At its core, a crater, still searing hot, serves as a puzzling centerpiece to this mysterious fortress. 
+
+`Tartarus` features a great marriage of classical exploratory gameplay, slaughtery setpieces and stunning aesthetics, all coming together to tell a story of a dark and strange realm surrounded by monolithic pillars and fiery stones. <RonnieJamesDiner> weaves an intricate layout that feels free and easy to move through at first glance -- but don't be fooled, this is no walk in the hellish park. From `Remnant`-inspired bloody wells full of zombies to precarious walkways set ablaze by Arch-Viles, be sure your steps are swift and accurate -- there is no rest to be found here, and there will be a demon lurking around every corner.
+
+Without a doubt, this fantastic map is worth playing many times over, with many secrets hidden in every corner and gameplay that keeps you wishing for more. Don't be shy -- jump down the bloody falls and find out for yourself.
+
+^R- <Major Arlene>
+
+:[2] `Mapwich 2` - Various
+:===============================================================================
+
+$KEY:A=URL:https://doom.ukiro.com/about-otex/
+$KEY:B=URL:https://www.doomworld.com/forum/topic/109107
+`Mapwich 2` is that most elusive and legendary of creatures -- a community megawad for *GZDoom* -- and by far the most consistently excellent and successful one ever made, at that. Perhaps surprisingly, the reason it's so good is that it enthusiastically embraces the huge amount of style variance that being a *GZDoom* community megawad ultimately demands. It's not total anarchy -- the project's directorial vision not only pairs two mappers together to collaborate on each map, but also adds in [A: OTEX] and the manic fury of the [B: Supercharge] mod to help the whole thing jell. Even so, it's the chaos of the set that makes it so exciting, like the usual community project's box-of-chocolates gestalt cranked up to eleven.
+
+$KEY:C=URL:https://www.doomworld.com/forum/topic/101647
+Among the highlights are a story-driven map where you hunt for collectible figurines, a parkour-filled adventure with a goofy gib-spraying climax at a beautiful temple, a giant [C: Avactor]-esque Ziggurat in a dense jungle, a slaughtery plunge into a massive cave in the depths of the earth, and extreme jumping challenges with bounce pads, along with tons of fast-paced action, surprising twists, and combat puzzles throughout. With so much freedom to create however they wanted, the large cast of mappers ensured that every environment offers new ideas, right up through <Bridgeburner> and <Dragonfly>'s masterful conclusion. The set's wild incongruities suggest the same kind of freedom for the player: play different maps on different skill settings, skip the ones you don't like -- there aren't any rules. Just have fun.
+
+^R- <Not Jabba>
+
+:[3] `Shrine 2` - <scumhead> and <Mengo923>
+:===============================================================================
+
+A lot of <Scumhead>'s work has the feel of a 2D dungeon side-scroller of yore, ported faithfully to three dimensions. `Shrine II` pairs that schema with hand-drawn Lovecraftian horror. The grotesque-cute enemies are hard to shake from memory months later, like the whistling hangmen: haloed flying sacs with nothing but mouths and tentacles, spewing rings of energy as they drag a hapless victim by rope. Sound design is on point, and the OST is a great fit, always stoking the surreal mood just right. An issue is that level design can feel rushed, but when it peaks, the realms of `Shrine II` are captivating, with mist-soaked forests home to bizarre creatures as tall as buildings, and voidscapes of floating chessboards and playing cards -- the world literally toying with you. The adventure plays out as a rapid-fire procession of nightmares, unimaginably far from a universe that even contains home, while managing to be comfy at the same time.
+
+^R- <rd.>
+
+:[4] `Technicolor Antichrist Box` - <Major Arlene>
+:===============================================================================
+
+Somewhere in a deranged corner of the cosmos is the universe's most violent rave party, the foremost stylish bloodbath for up-and-coming demigods to get together and do shots, so to speak. This floating techgoth citadel is saturated with vibrant cyan and magenta, but it's the hints of a broader setting that are the icing on the cake, the lush gardens perched at the edge of pink acid lakes and the hovering walkways that make you wonder what the place is really doing way out here in the nebula-lit void of space. `TAB` was the first (though not the last) third-party map I've played that fully grasps the finesse of <Tango>'s [B: Supercharge] mod and its high-powered, splattery feel, which allows this map to achieve nirvana as it ascends to an orgy of rockets and flying gibs over and over again. Ammo is abundant and DPS is extravagant, but the monster deployment is pretty intense hammer-and-anvil stuff, and so regardless of difficulty setting, the whole map is a rollercoaster, more fun and ultraviolent than harsh. I have to give props to <Redneckerz> here for framing it perfectly: Someone comes along and asks you what the face of `Doom` mapping looks like in 2020? This is it.
+
+^R- <Not Jabba>
+
+:[5] `Return to Hadron E3: Slayer's Swansong` - <cannonball>
+:===============================================================================
+
+$KEY:D=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadron
+$KEY:E=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
+<Cannonball>'s perpetually encrimsoned [D: Return to Hadron] [E: series] is back for another round of slyly irreverent carnage-soaked catharsis, rife with buckets of blood, gallons of guts, and ridiculous kill-streaks that would see the most unapologetic of grindhouse maestros flush with envy (and perhaps a tinge of arousal). Pure action from literally the very first second until the wet thud of the final carcass hitting the floor, fielding only a handful of carefully timed pensive/ominous moments, this is easily among the most unabashedly combat-driven offerings of a year which has seen many artists exploring in the direction of chilled-out escapism or brooding atmospherics, and is all the more intoxicating as a result.
+
+Compared to the environmental gimmickry of `E2` or the meandering brawls of `E1`, the maps here are tighter, leaner, and above all faster than ever before, with laser-focused layouts designed to effortlessly toss and tumble the titular Slayer and the relentless monster-mash together like unstable ingredients in some explosive cocktail. Here, the whole world is an arena, and indeed, it's illustrative to observe just how convincingly the original game, in the right hands, can stack up against the `Doom` franchise's 2020 entry as a gleefully feverish rip-and-tear-athon.
+
+If, as the name suggests, this truly is the swansong for one of the decade's most purely fun series, it's more than worthy of the mantle. Still, I doubt I'd be alone in saying that I'd be all-in for a fourth return to Hadron (aka Thy Scalp Turned Into a Moderately Gaudy Tea-Cozy), should that bloody, glorious day ever come.
+
+^R- <Demon of the Well>
+
+:[6] `Criticality` - <Scotty>
+:===============================================================================
+
+In a dark and iron-clad base lurks some of the most daring and deadly fights this year has seen to date. <Scotty>'s `Criticality` features a labyrinthian and winding layout, each pass through its slimy and grimy halls revealing more and more fun...and danger. Don't worry, you won't be hidden underground forever -- <Scotty> brilliantly opens the map up to gorgeously dangerous stony spaces when you're just about ready for some fresh air -- but there's no escape just yet. Bringing the best of *Boom*'s timeless sensibilities, `Criticality` turns you towards behemoth concrete structures, housing its own "Circle of Death" as just one of the features in this massive map, all leading up to one of the most demented games of peek-a-boo ever seen. If this sounds scary, don't fret -- <Scotty> has taken great pains to ensure that players of all skill levels can experience the wholesome, slaughtery goodness that awaits them in the dark depths.
+
+^R- <Major Arlene>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/
+:source [#: www.doomworld.com/cacowards/2020/]

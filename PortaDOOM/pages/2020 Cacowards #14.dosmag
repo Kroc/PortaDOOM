@@ -1,0 +1,71 @@
+$THEME=BLACK
+$TITLE=Runners Up pt.II
+$KEY:7=GOTO:Freaky Panties 2 - Boxers or Briefs
+$KEY:8=GOTO:25 Years on Earth
+$KEY:9=GOTO:180 Minutes Pour Vivre
+$KEY:0=GOTO:Gods & Guardians
+$KEY:1=GOTO:Abysm 2 - Infernal Contract
+$KEY:2=GOTO:Intergalactic Xenology
+
+^C:2020 CACOWARDS :: RUNNERS UP pt.II
+
+:-------------------------------------------------------------------------------
+
+:[7] `Freaky Panties 2: Boxers or Briefs` - <Remilia Scarlet>
+:===============================================================================
+
+$KEY:A=URL:https://forum.zdoom.org/viewtopic.php?t=55741
+As far as *GZDoom* maps go, `Freaky Panties 2` is more old-school than most of what we've seen in the past few years, but like any good retro take, it succeeds by improving on its inspirations. Each of <Remilia>'s projects feels different from the last, and `FP2` is her sleekest and fastest map to date, sustaining its flow via a flawless interplay of setup and action that's as trancelike as the author's own custom music track. Its linear base-delving gameplay and small but flavorful selection of custom monsters remind me of [A: Waterlab GZD], creating that same sense of immersive realism that goes hand in hand with the simplicity of the architecture and combat... but with a greater sense of movement to it, a constant dodging and cornering and counterattacking that makes you feel like you're gliding six inches off the floor for the entire map. Though it's one of the smallest and most accessible entries in this year's awards, that dynamic element keeps it interesting, and its many multi-angled brawls lead nicely into a pair of extended boss fights that feel like a catharsis -- a thumping, feel-good, power-trip ending to the trance that left me almost breathless.
+
+^R- <Not Jabba>
+
+:[8] `25 Years on Earth` - <Phobus>
+:===============================================================================
+
+$KEY:B=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/scythe
+$KEY:C=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/vile
+$KEY:D=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/dmonfear
+Initially meant to celebrate `Doom 2`'s quarter-century anniversary, `25 Years on Earth` had its release delayed while <Phobus> -- long-time veteran and an ever-reliable contributor to community projects -- put on the finishing touches (more like "26 Years" huh). It was worth it. The end result is a grab-bag of nostalgic goodness that hops between the feel of classics like [B: Scythe], [C: Vile Flesh], and [D: Demonfear], and tosses in a bit of the original games. It pulls that off more through style and form than direct homage; for better or worse, no `Hangar` zigzag slimepaths make cameos in your living room. Any wad with a "We Built This City (on Rock and Roll)" midi can't be taking itself overly seriously. So it's fitting that you're never more than a few maps from toilets and beds, from switches that exist just to toggle the lights, or from whimsical settings: houses, restaurants, spaceships, you name it. Most maps stay brief and leisurely as they explore different gimmicks and concepts, which forms a pleasant and satisfying baseline. But be vigilant; before you get too complacent, an intense trap or a harder map might spring up to keep you sharp.
+
+^R- <rd.>
+
+:[9] `180 Minutes Pour Vivre` - <The French Doom Community>
+:===============================================================================
+
+$KEY:E=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
+The French `Doom` community know their way around speedy, fun maps -- just take for example the [E: 3 Heures d'Agonie] series. In the spirit of this set comes `180 Minutes Pour Vivre` -- and though many of these maps are speedmaps, there is no sacrifice of style or fun to be found here. This limit-removing set has a map for almost everyone's taste, ranging from bite-sized techbases to monolithic and sprawling gothic castles. This set doesn't reinvent the wheel -- rather, it gives it some snazzy white-walled tires and some shiny new rims. Gameplay in each map is always full of fun surprises, with help from some custom monsters that keep encounters fresh and interesting. Most notable is the end of the set: the penultimate map, "Xanthophobie" by <WH-Wilou84>, pulling serious `Sunder` vibes with ultra-violent arenas; and the end map, "Celui-Qui-Voit-Les-Mondes", bringing a terrifying new take on the typical Icon of Sin fight. No matter your gameplay style, `180 Minutes` has a map for you.
+
+^R- <Major Arlene>
+
+:[0] `Gods & Guardians` - <Wraith777>
+:===============================================================================
+
+`Gods & Guardians` is an adventuresome episode of six maps (plus change), offering proudly vintage fare crafted to modern standards of sophistication. Indeed, of all of our top selections this year, there is perhaps no other PWAD which is more faithful to the simultaneously time-lost and timeless experience of playing pure, classic `Doom II` as it was, is, and shall be.
+
+Far from the realm of simple pastiche, these maps belie their author's nascent penchant for expansive, complex layouts that communicate an engrossing sense of place and purpose that subtly shines through in spite of (or perhaps because of...?) the comfortable cloak of halcyon-days visual abstraction that they wear. Touching with equal aplomb on well-loved thematic tropes specific to the original game and on broader, more imaginative ideas alike, `G&G` is an exciting and unpredictable journey through what may at first seem very familiar terrain, offering something of substance to players of almost all stripes, both old and new.
+
+Naturally, `G&G` is above all a very nostalgically inclined work, replete with loving references to the original <id> mappers and contemporaries (all made explicit in the bonus credits map, which itself offers more than meets the eye). But, while this alone is likely enough to guarantee it a certain core audience, what makes it truly special is its use of these artistic touchstones as a jumping-off point for something fresh and original, showing that in `Doom` the past is, as ever, well and truly alive.
+
+^R- <Demon of the Well>
+
+:[1] `Abysm 2: Infernal Contract` - <jazzmaster9>
+:===============================================================================
+
+$KEY:F=URL:https://forum.zdoom.org/viewtopic.php?f=19&t=62970
+Hidden past the reaches of the city of Hadria lies an army of dangerous demons threatening to turn life upside down for the citizens. It is your sworn duty to protect them as a Mercenary of the Iron Cross. <Jazzmaster>'s thrilling sequel to [F: Abysm: Dawn of Innocence] has turned `Doom` into the ultimate adventure, with unforgettable characters and a driving plot to keep them safe. `Abysm 2: Infernal Contract` takes its inspiration from ARPG greats such as `Diablo`, `Dark Souls` and `Strife` and turns it into a decadent run-and-gun adventure; tons of detail building the City of Hadria high and hellish. With an original score by <John S. Weekley> (<PRIMEVAL>) backing beautiful but deadly landscapes and charming towns, there's no end to what fun and troublesome escapades await you. A fully fleshed-out bestiary and custom weapons keep the action properly paced and with little pause. Hadria is waiting for its hero -- and the risk is well worth the rewards.
+
+^R- <Major Arlene>
+
+:[2] `Intergalactic Xenology` - <Dreadopp> and <Lord_Z>
+:===============================================================================
+
+$KEY:G=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
+These days, a good chunk of what makes the awards and runners-up list has shades of big or cryptic or difficult, which is not a requirement as much as a byproduct of so many capable creators setting off in those directions. `Intergalactic Xenology`, a familiar space-faring tale of Egypt-loving aliens, turns on the afterburners and zooms off the other way. It doesn't want to break new ground, mapping limits, or your keyboard -- it's just fun, pretty, and undeniably good. Using assets from [G: Ancient Aliens], it depicts a breezy journey through memorable settings: like map02: "Human Aquarium", a submerged prison with walls that radiate the deep teal of the sea, and the finale "The Clouds Have Eyes", a floating city imbued with mystical energy, lying dormant until the wrong person stumbles by.
+
+In looks, it's a spiritual blend of much of the last decade; besides the `AA-tex`, there are references to modern classics like `Valiant` and `Eviternity`. But aside from some late-game arena brawls, `Intergalactic Xenology` rarely ratchets up the intensity to the frenzied heights of its influences. If you want, you can blaze through these maps like a space marauder in a rush to some kind of, uh, space appointment. You can also light a cigar, take in the sights, and have chill fights against the not-so-friendly local Cacodemons. Your call.
+
+^R- <rd.>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/
+:source [#: www.doomworld.com/cacowards/2020/]
