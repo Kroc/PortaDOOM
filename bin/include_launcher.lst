@@ -1,6 +1,4 @@
-launcher.exe
-
-@files\wads\conversions\freedoom\include.lst
+@files\launcher.lst
 wads\SHAREWARE\*.WAD
 wads\MASTER\*.TXT
 

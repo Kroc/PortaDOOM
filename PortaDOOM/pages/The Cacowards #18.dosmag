@@ -1,18 +1,7 @@
 $THEME=RED
-$TITLE=10 Years of Doom
-$KEY:E=GOTO:10 Years of Doom
+$TITLE=2004
 
-:THE CACOWARDS :: 10 YEARS OF DOOM
+:2004 CACOWARDS :: THE 11TH ANNUAL CACOWARDS
 :-------------------------------------------------------------------------------
-*[E] Enter "10 Years of Doom" 
-:===============================================================================
 
-:ARTICLES:
-
-- *"The Art of Demo Making"*
-- *"A (slightly condensed) Genealogy of Doom Source Ports"*
-- *"Ten Years of WADS"*
-- The Lighter Side - *"The Doom Comic"*
-- The Lighter Side - *"Top 10 Infamous Wads"*
-- The Lighter Side - *"Start to Crate"*
-- *"Ten Years of /newstuff"* - The /newstuff Chronicles #159
+^C*Coming in a later PortaDOOM release!

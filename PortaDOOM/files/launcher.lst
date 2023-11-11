@@ -1,0 +1,10 @@
+# the minimum needed for the launcher;
+# the games add the engines required
+
+PortaDOOM.exe
+files\launcher.exe
+# patches for DOOM 3 BFG Edition WADs
+files\tools\xdelta3\
+
+# (does not include any engines)
+@files\wads\conversions\freedoom\include.lst

@@ -8,107 +8,107 @@ $REM=(Indented pages are cross-references and not a direct part of Cacowards 201
 
 :TOP 10:
 
-$KEY:A=GOTO:Avactor
-- [A] *Avactor										<Eradrop>
+$KEY:1=GOTO:Avactor
+- [1] *Avactor										<Eradrop>
 
-$KEY:B=GOTO:Dark Universe Part 1
-- [B] *Dark Universe, Part 1						<Payload4367>
+$KEY:2=GOTO:Dark Universe Part 1
+- [2] *Dark Universe, Part 1						<Payload4367>
 
-$KEY:C=GOTO:The Adventures of Square
-- [C] *The Adventures of Square: Episode 2			<BigBrik Games>
+$KEY:3=GOTO:The Adventures of Square
+- [3] *The Adventures of Square: Episode 2			<BigBrik Games>
 
-$KEY:D=GOTO:Preacher
-- [D] *Preacher										<Darch>
+$KEY:4=GOTO:Preacher
+- [4] *Preacher										<Darch>
 
-$KEY:E=GOTO:Dimension of the Boomed
-- [E] *Dimension of the Boomed						<Urthar>
+$KEY:5=GOTO:Dimension of the Boomed
+- [5] *Dimension of the Boomed						<Urthar>
 
-$KEY:F=GOTO:Struggle - Antaresian Legacy
-- [F] *Struggle - Antaresian Legacy					<antares031>
+$KEY:6=GOTO:Struggle - Antaresian Legacy
+- [6] *Struggle - Antaresian Legacy					<antares031>
 
-$KEY:G=GOTO:REKKR
-- [G] *REKKR										<Revae>
+$KEY:7=GOTO:REKKR
+- [7] *REKKR										<Revae>
 
-$KEY:H=GOTO:Maskim Xul
-- [H] *Maskim Xul									<Obsidian>
+$KEY:8=GOTO:Maskim Xul
+- [8] *Maskim Xul									<Obsidian>
 
-$KEY:I=GOTO:The Golden Souls 2
-- [I] *Doom: The Golden Souls 2						<Batandy>
+$KEY:9=GOTO:The Golden Souls 2
+- [9] *Doom: The Golden Souls 2						<Batandy>
 
-$KEY:J=GOTO:UAC Invasion - The Supply Depot
-- [J] *UAC Invasion: The Supply Depot				<DooMknight>
+$KEY:0=GOTO:UAC Invasion - The Supply Depot
+- [0] *UAC Invasion: The Supply Depot				<DooMknight>
 
 :RUNNERS UP:
 
-$KEY:K=GOTO:Exomoon
-- [K] *Exomoon										<Deadwing>
+$KEY:A=GOTO:Exomoon
+- [A] *Exomoon										<Deadwing>
 
-$KEY:L=GOTO:Man on the Moon
-- [L] *Man on the Moon								<Yugiboy85>
+$KEY:B=GOTO:Man on the Moon
+- [B] *Man on the Moon								<Yugiboy85>
 
-$KEY:M=GOTO:Umbra of Fate
-- [M] *Umbra of Fate								<YukiRaven>
+$KEY:C=GOTO:Umbra of Fate
+- [C] *Umbra of Fate								<YukiRaven>
 
-$KEY:N=GOTO:Port Glacia
-- [N] *Port Glacia									<an_mutt>
+$KEY:D=GOTO:Port Glacia
+- [D] *Port Glacia									<an_mutt>
 
-$KEY:O=GOTO:Magnolia
-- [O] *Magnolia										<Ribbiks>
+$KEY:E=GOTO:Magnolia
+- [E] *Magnolia										<Ribbiks>
 
-$KEY:P=GOTO:The Alfonzone
-- [P] *The Alfonzone								<Pinchy>
+$KEY:F=GOTO:The Alfonzone
+- [F] *The Alfonzone								<Pinchy>
 
-$KEY:Q=GOTO:Ashes 2063
-- [Q] *Ashes 2063 Episode 1							<Vostyok>
+$KEY:G=GOTO:Ashes 2063
+- [G] *Ashes 2063 Episode 1							<Vostyok>
 
-$KEY:R=GOTO:Demonastery
-- [R] *Demonastery									<Nootrac4571>
+$KEY:H=GOTO:Demonastery
+- [H] *Demonastery									<Nootrac4571>
 
-$KEY:S=GOTO:DOOM 404
-- [S] *DOOM 404										<Capellan>
+$KEY:I=GOTO:DOOM 404
+- [I] *DOOM 404										<Capellan>
 
-$KEY:T=GOTO:Cryogenics
-- [T] *Cryogenics									<bemused>
+$KEY:J=GOTO:Cryogenics
+- [J] *Cryogenics									<bemused>
 
 :MULTIPLAYER AWARDS:
 
-$KEY:U=URL:https://www.moddb.com/mods/quake-champions-doom-edition
-- [U] *Quake Champions: Doom Edition				<DBThanatos> & <Michaelis>
+$KEY:K=URL:https://www.moddb.com/mods/quake-champions-doom-edition
+- [K] *Quake Champions: Doom Edition				<DBThanatos> & <Michaelis>
 
 :GAMEPLAY MOD AWARDS:
 
-$KEY:V=URL:https://forum.zdoom.org/viewtopic.php?t=37066
-- [V] *Guncaster									<Pillowblaster>
+$KEY:L=URL:https://forum.zdoom.org/viewtopic.php?t=37066
+- [L] *Guncaster									<Pillowblaster>
 
-$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=57964
-- [W] *Netronian Chaos								<Captain J>
+$KEY:M=URL:https://forum.zdoom.org/viewtopic.php?t=57964
+- [M] *Netronian Chaos								<Captain J>
 
-$KEY:X=URL:https://combine-kegan.itch.io/gmota
-- [X] *GMOTA										<Combine_Kegan>
+$KEY:N=URL:https://combine-kegan.itch.io/gmota
+- [N] *GMOTA										<Combine_Kegan>
 
 :MORDETH AWARD:
 
-$KEY:Y=URL:https://www.moddb.com/mods/total-chaos
-- [Y] *Total Chaos									<wadaholic>
+$KEY:O=URL:https://www.moddb.com/mods/total-chaos
+- [O] *Total Chaos									<wadaholic>
 
 :THE SPACESHIP OF THESEUS:
 
-- [Y] *Total Chaos									<wadaholic>
+- [O] *Total Chaos									<wadaholic>
 
 :CODEAWARD:
 
-$KEY:Z=URL:https://github.com/anotak/doombuilderx
-- [Z] *Doom Builder X								<anotak>
+$KEY:P=URL:https://github.com/anotak/doombuilderx
+- [P] *Doom Builder X								<anotak>
 
 :MACHAWARD:
 
-$KEY:1=URL:https://jp.itch.io/mr-friendly
-- [1] *Mr. Friendly									<JP LeBreton>
+$KEY:Q=URL:https://jp.itch.io/mr-friendly
+- [Q] *Mr. Friendly									<JP LeBreton>
 
 :CREATOR OF THE YEAR:
 
-$KEY:2=URL:https://www.doomworld.com/profile/16250-revae/
-- [2] <Revae>
+$KEY:R=URL:https://www.doomworld.com/profile/16250-revae/
+- [R] <Revae>
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/cacowards/2018/

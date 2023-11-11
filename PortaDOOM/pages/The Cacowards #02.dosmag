@@ -1,17 +1,15 @@
 $THEME=RED
-$TITLE=2019
-$KEY:E=GOTO:2019 Cacowards
+$TITLE=2020
+$KEY:E=GOTO:2020 Cacowards
 
-:2019 CACOWARDS :: CELEBRATING THE BEST OF DOOM IN 2019
+:2020 CACOWARDS :: PHOBOS ANOMALY EDITION Version 2.020
 :-------------------------------------------------------------------------------
-*[E] Enter the 2019 Cacowards 
+*[E] Enter the 2020 Cacowards 
 :===============================================================================
-- *TOP TEN:* `Eviternity`: <Dragonfly> (et al), `Verdant Citadel`: <exl>, `Paradise`: <Tango>, `Hell Forged`: <Amuscaria>, `Finely Crafted Fetish Film`: <Ribbiks>, `Hocus Pocus Doom`: <rf>, `Shotgun Symphony`: <Steve D>, `Lost Civilization`: <Jaska>, `Remnant`: <Aurelius>, `The Wayfarer`: <Not Jabba>
+- *TOP TEN:* `Antaresian Reliquary`: <antares031> */* `Abandon`: <bemused>, <Benjogami> & <Scotty> */* `Rowdy Rudy 2: Powertrip`: <Doomkid> et al */* `Ar Luminae`: <Aurelius> & <JustCallMeKaito> */* `Running Late 2`: <A2Rob> */* `Bastion of Chaos`: <Bridgeburner56> */* `Mutabor`: <tourniquet> */* `Three Is a Crowd`: <Scypek2> */* `Syringe`: <Pavera>, <Tarnsman>, <Marcaek>, <Xaser> */* `Faithless Trilogy`: <Jimmy>
 
-- *RUNNERS UP:* `Infraworld: The Hatehammer`: <StormCatcher.77>, `Lunar Catastrophe`: <Miss Bubbles> & <Count651>, `The Slaughter Spectrum`: <Bridgeburner56>, `Darkest Room`: <Paul977>, `Cyb's Freaky Colonoscopy`: <Big Ol Billy> (et al), `Alienated`: <Lorenz0>, `Doom Zero`: <DASI-I>, `Entropy`: <Nirvana>, `Sigil`: <John Romero>, `Doom 3: Phobos`: <Team Future>
+- *RUNNERS UP:* `Tartarus`: <RonnieJamesDiner> */* `Mapwich 2`: Various */* `Shrine 2`: <scumhead> & <Mengo923> */* `Technicolor Antichrist Box`: <Major Arlene> */* `Return to Hadron E3`: <cannonball> */* `Criticality`: <Scotty> */* `Freaky Panties 2`: <Remilia Scarlet> */* `25 Years on Earth`: <Phobus> */* `180 Minutes Pour Vivre`: The French `Doom` Community */* `Gods & Guardians`: <Wraith777> */* `Abysm 2: Infernal Contract`: <jazzmaster9> */* `Intergalactic Xenology`: <Dreadopp> & <Lord_Z>
 
-- *MULTIPLAYER AWARDS:* `32in24-17`: <YEDS Team>, `NeomDM`: <Machanix Union>
+- *GAMEPLAY MOD AWARDS:* `Nobody Told Me About id`: <CantSleep>, `Treasure Tech`: <HyperUltra64>, `SWWM GZ`: <Marisa Kirisame> */* *MORDETH AWARD:* "Pacifist" Speedrunning */* *ODYSSEY OF NOISES:* The Coming Hour - Bastion of Chaos OST, <PRIMEVAL> */* *CODEAWARD:* `The Unity Port`: <Mike "sponge" Rubits> et al */* *MACHAWARD:* Arbitrary Code Execution: <kgsws>
 
-- *GAMEPLAY MOD AWARDS:* `Doom 4 Vanilla`: <Noiser> (et al), `Lt. Typhon`: <Skelegant>, `NAKU NARU`: <Naku Team> / *MORDETH AWARD:* `Sonic Robo Blast 2`: <Sonic Team Jr.> / *THE SPACESHIP OF THESEUS:* `Hedon`: <Zan> / *CODEAWARD:* `Doom Neural Upscale 2X`: <hidfan> (et al) / *MACHAWARD:* Mikoportals: <Mikolah>
-
-- *CREATOR OF THE YEAR:* <Ola "ukiro" Björling>
+- *CREATOR OF THE YEAR:* <Bridgeburner56>

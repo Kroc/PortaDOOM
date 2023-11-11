@@ -1,17 +1,17 @@
 $THEME=RED
-$TITLE=2016
-$KEY:E=GOTO:2016 Cacowards #01
+$TITLE=2017
+$KEY:E=GOTO:2017 Cacowards
 
-:2016 CACOWARDS :: THE 13TH CACOWARDS
+:2017 CACOWARDS :: CACO2K17
 :-------------------------------------------------------------------------------
-*[E] Enter the 2016 Cacowards 
+*[E] Enter the 2017 Cacowards 
 :===============================================================================
-- *TOP TEN:* `Tech Gone Bad`: <John Romero>, `Ancient Aliens`: <Paul "skillsaw" DeBruyne>, `Nihility: Infinite Teeth`: <Years>, `Mutiny`: Various, `Absolutely Killed`: <Ryath>/<scwiba>, `Elf Gets Pissed`: <RottKing>, `Comatose`: <Lainos>, `Miasma`: <tourniquet>, `Alpha Accident: Terra Nova`: <Wraith777>, `Japanese Community Project`: Various, `WolfenDoom - Blade of Agony Ep.1`: <Daniel "Tormentor667" Gimmer> (et al)
+- *TOP TEN:* `lilith.pk3`: <anotak>, `Shadows of the Nightmare Realm`: <YukiRaven>, `No End in Sight`: <NaturalTvventy>, <Xaser> & <Lutz>, `Dead.air`: <Xaser>, `Brigandine`: <Viggles>, `Counterattack`: <Mechadon>, `Legacy of Heroes`: <Gaspe>, `Saturnine Chapel`: <dobu gabu maru>, `Stardate 20x7`: <Ribbiks>, `Void and Rainbow`: <Serious_MOod>
 
-- *RUNNERS UP:* `Warp House`: <Ed C.>, `THT: Threnody`: Various, `Bloodstain`: <Pavel 'Pipicz' Tvrzník>, `Strange Aeons`: <Impie>, `Echelon`: <Sverre Andre Kvernmo>, `Shadow of the Wool Ball`: <MSPaintR0cks>
+- *RUNNERS UP:* `Rise of the Wool Ball`: <MSPaintR0cks>, `Return to Hadron Ep.2`: <cannonball>, `TNT: Revilution`: Various, `Waterlab GZD`: <Enjay>, `Disjunction`: <floatRand>, `Hexen - Curse of the Lost Gods`: <Kristus>, `Water Spirit`: <Manbou>, `Hellscape`: <Chris Lutz>, `Dark Tide`: <Chris Lutz>
 
-- *MULTIPLAYER AWARDS:* `AeonDM`: <Mechanix Union>, `32in24-16`: <YEDS gang>
+- *MULTIPLAYER AWARDS:* `Pyrrhic`: <hobomaster>, `Progressive Duel 2`: <Mechanix Union>
 
-- *BEST GAMEPLAY MOD:* `Doom 4 Doom`: <DBThanatos> (et al) / *MORDETH AWARD:* `Doom the Way id Did - The Lost Episodes`: Various / *MOCKAWARD:* `Ludicrium`: <antares031>
+- *GAMEPLAY MOD AWARDS:* `Doom Delta`: <DrPyspy>, `Final Doomer`: <Sgt. Shivers> & <Yholl> &c., `High Noon Drifter`: <TerminusEst13> / *CODEAWARD:* `OBLIGE`: <Andrew Apted> / *MORDETH AWARD:* `TNT: Revilution`: Various / *MACHAWARD:* `The Given`: <dobu gabu maru>
 
-- *MAPPER OF THE YEAR:* <Lainos>
+- *MAPPER OF THE YEAR:* <dobu gabu maru>

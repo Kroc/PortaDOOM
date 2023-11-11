@@ -1,10 +1,5 @@
-PortaDOOM.exe
-
-@files\wads\conversions\freedoom\include.lst
+@files\launcher.lst
 files\wads\SHAREWARE\DOOM1.WAD
-
-files\launcher.exe
-files\tools\xdelta3
 
 @files\ports\use=choco-doom.lst
 @files\ports\use=gzdoom.lst

@@ -1,9 +1,4 @@
-PortaDOOM.exe
-files\launcher.exe
-files\tools\xdelta3\
-
-# include FreeDOOM (does not include any engines)
-@files\wads\conversions\freedoom\include.lst
+@files\launcher.lst
 
 pages\Home #??.dosmag
 pages\DOOM CE #??.dosmag

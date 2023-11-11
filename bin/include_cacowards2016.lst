@@ -1,8 +1,4 @@
-PortaDOOM.exe
-files\launcher.exe
-files\tools\xdelta3\
-
-@files\wads\conversions\freedoom\include.lst
+@files\launcher.lst
 
 pages\Home #??.dosmag
 pages\2016 Cacowards #??.dosmag

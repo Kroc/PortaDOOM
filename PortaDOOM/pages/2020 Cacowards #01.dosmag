@@ -1,0 +1,45 @@
+$THEME=BLACK
+$TITLE=Introduction
+
+^C:CACOWARDS :: PHOBOS ANOMALY EDITION Version 2.020
+
+:-------------------------------------------------------------------------------
+
+:Table of Contents:
+$KEY:E=PAGE:#02
+$KEY:T=PAGE:#03
+$KEY:R=PAGE:#13
+$KEY:U=PAGE:#14
+$KEY:M=PAGE:#16
+$KEY:G=PAGE:#17
+$KEY:O=PAGE:#18
+$KEY:S=PAGE:#19
+$KEY:I=PAGE:#22
+
+ -     *Introduction* ............................................... pg.1
+ - [E] *Espi Lifetime Award for Achievement* ........................ pg.2
+ - [T] *Top Ten pt.I-X* ............................................. pg.3-12
+ - [R] *Runners Up* ................................................. pg.13
+ - [U] *Runner Up Spotlight I-II* ................................... pg.14-15
+ - [M] *Multiplayer Awards* ......................................... pg.16
+ - [G] *Gameplay Mod Awards* ........................................ pg.17
+ - [O] *Other Awards* ............................................... pg.18
+ - [S] *The Side Column pt.I-III* ................................... pg.19-21
+ - [I] *Index* ...................................................... pg.21
+
+:-------------------------------------------------------------------------------
+
+^C:INVOCATION
+
+*2020 has presented unique challenges for us all.* Since the world events first coming to a head in March, the battle lines have been drawn between two opposing factions -- those willing to listen to the professional expertise of people in positions of authority, and those who would rather go with their gut and insist that the so-called "experts" were full of it. I refer, of course, to the March 20 release of `Doom Eternal`, and its (spoiler warning, I guess) revelation that the Doom Slayer was, in fact, literally one and the same person as the original Doomguy of old; versus those who refuse to accept this plot retcon as legitimate.
+
+$KEY:A=URL:https://www.doomworld.com/10years/
+$KEY:B=URL:https://www.doomworld.com/10years/doomcomic/
+$KEY:C=URL:https://knowyourmeme.com/photos/749281-rip-and-tear
+I feel a weird sort of personal responsibility for part of this, given that our very own [A: Ten Years of Doom] celebration was in part a smokescreen for widely disseminating [B: Doom comic book scans]. Would `Doom Eternal`'s throughline of Doomguy Lore, hitting all possible references, exist without Doomworld's pernicious spread of the `Doom` comic as a source of [C: memery]? The world will never know, I suppose. Personally I was, at first, not thrilled to learn that the Doom Slayer is in fact the actual literal Doomguy after being fed through a god machine, and after `Doom 64` and the `Doom` comic to boot, and that "rip and tear" is now canonical dialogue for the formerly taciturn Doomguy. (And for that matter, whither `Doom 3`?) But especially with the recent release of `The Ancient Gods Part 1`, it has been made abundantly clear that <id>'s intent is to focus on the cartoony pulp aspects, and I've gotten over my initial reticence. Perhaps in the light of other 2020 world events, I've learned to embrace the intentional stupidity, given the widespread nature of the unintentional variety.
+
+^R- <Linguica>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/
+:source [#: www.doomworld.com/cacowards/2020/]
