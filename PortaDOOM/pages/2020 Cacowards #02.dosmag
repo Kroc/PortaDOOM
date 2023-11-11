@@ -1,0 +1,39 @@
+$THEME=BLACK
+$TITLE=Espi Award for Lifetime Achievement
+
+^C:2020 CACOWARDS :: ESPI AWARD FOR LIFETIME ACHIEVEMENT
+
+:-------------------------------------------------------------------------------
+
+^C:<James "Quasar" Haley>
+
+$KEY:A=URL:https://doomwiki.org/wiki/SMMU
+$KEY:B=URL:https://eternity.youfailit.net/
+Checking my email archive, the oldest conversation I could find with <Quasar> dates back to 1999. He had just made the decision to adopt [A: SMMU] as the foundation for `Eternity TC`. That was to become the [B: Eternity Engine], an often-overlooked source port that maintains a small but dedicated fanbase. I watched over the next few years as <Quasar> diligently and patiently ironed out all my sloppy coding mistakes from the *SMMU* codebase, and I learned to appreciate the value of that kind of diligence and patience for myself.
+
+$KEY:C=URL:https://www.chocolate-doom.org/wiki/index.php/Chocolate_Strife
+$KEY:D=URL:https://doomworld.com/20years/lifetime.php
+$KEY:E=URL:https://doomwiki.org/wiki/Strife_source_code
+Sometimes it seems like fate keeps bringing me and <Quasar> back together. In 2010 he started work on [C: Chocolate Strife] (along with previous Espi award winner [D: Samuel "Kaiser" Villareal]) and I was able to watch that same diligence applied again, this time to the challenge of reconstructing the `Strife` source code. Unlike all the other `Doom` engine games, you see, [E: Strife's source code] has never been released. It's suspected that it has been lost, perhaps forever.
+
+It's difficult to explain the challenge of a reverse engineering project like this in a way that non-programmers can appreciate. Imagine thousands and thousands of pages of bare CPU instructions, with no names or comments to explain their purpose, what they do or how they all fit together. In the end it took <Quasar> and <Kaiser> three years to fully complete the work. While we don't have a copy of the original `Strife` source code, thanks to them we now have the next best thing, recreating it in exacting detail.
+
+$KEY:F=URL:https://doomwiki.org/wiki/Strife:_Veteran_Edition
+$KEY:G=URL:https://www.escapistmagazine.com/doom-64-getting-new-chapter-with-re-release-this-month/
+The work didn't go unnoticed. In 2014 <Nightdive Studios> quickly hired the pair to produce [F: Strife: Veteran Edition] based on their work, and it's hard to imagine a more loving tribute to the original game. `Veteran Edition` is a port that oozes quality baked through it, with an attention to detail that shows its authors truly cared about what they were doing. Clearly <Nightdive> were impressed too, because the pair have been working for them ever since. When `Doom 64` saw a multi-platform re-release [G: earlier this year], some familiar names appeared in the press.
+
+$KEY:H=URL:https://doomwiki.org/wiki/Calico
+Meanwhile, <Quasar> has continued to contribute off-the-clock and it's clear that his experiences have given him a taste for tricky reverse engineering work. [H: Calico] is his ongoing port of `Jaguar Doom` (probably the definitive console version of `Doom`) that again has involved painstaking conversion of assembly language routines into C so that it can be made to run on modern systems.
+
+$KEY:I=URL:https://web.archive.org/web/20080704134000/https://www.doomworld.com/eternity/letter.html
+$KEY:J=URL:https://doomwiki.org/wiki/Raven_source_code_licensing
+$KEY:K=URL:https://doomwiki.org/wiki/Doom_Wiki:Departure_from_Wikia
+These technical feats would be impressive enough but over the past 20 years I've come to know <Quasar> as a man who always stands up for what's right, mobilising the community when necessary to fix wrongs. Back in 2006 he organised an [I: open letter] and petition that gained over 800 signatures to solve the [J: Raven source code licensing issue]; it's thanks to him that today the `Heretic` and `Hexen` source codes are true free software. Then in 2011 he organised the *Doom Wiki* to [K: become independent]; almost 10 years later as so many websites become unusable due to ad bloat, having this important resource standing free as an independent site seems like such an important and forward-thinking move. And of course it's <Quasar> who today works to keep the site running and the lights on.
+
+Above all, I know <Quasar> as a person who loves `Doom` in all its variants and spinoffs and has done a tremendous amount to keep it and the community alive for all these years. It gives me great pleasure to see him appropriately recognised for it.
+
+^R- <fraggle>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/lifetime/
+:source [#: www.doomworld.com/cacowards/2020/lifetime/]

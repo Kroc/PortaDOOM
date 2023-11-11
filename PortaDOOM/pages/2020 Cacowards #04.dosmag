@@ -1,0 +1,27 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.II
+$KEY:2=GOTO:Abandon
+
+^C:2020 CACOWARDS :: TOP 10 pt.II
+
+:-------------------------------------------------------------------------------
+
+:[2] `Abandon` - <bemused>, <Benjogami>, <Scotty>
+:===============================================================================
+
+A great cauldron of pitch, meant to immolate the corpse of a titan. A mass mausoleum for the victims a 1000-year plague, pulsing with their despair and hate. A sacrificial altar the size of a city, in supplication to mad Outer Gods. You are in all of these places, and others darker still. You are ready to fight and kill, but you know that even if your body leaves here, the rest of you never will. Abandon all hope.
+
+$KEY:A=URL:https://www.doomworld.com/forum/topic/46002
+Like [A: Sunder] before it, `Abandon` is immediately arresting to behold, though in a way which is divergent from many of the other visual powerhouses this year, even those in a broadly similar idiom (`Bastion of Chaos`, `Technicolor Antichrist Box`, etc.). Part of this is likely simple port spec, but there's something more fundamental to it than that. The sombre vistas under funereal skies, the sordid burrows steeped in shadow...all exude an air of evil, of spiritual decay and rot. The art achievement of `Abandon` is in utilizing the *idtech1* engine and its particular capabilities -- infinite draw distance, the gloom inherent to simulated contrast, functionally infinite vertical variation, a potential dynamism of any particular sector -- to achieve a sense of sinister, unfeeling vastness and latent malice which is only enhanced by the visual abstraction. Far from merely looking the part, though, the environs of `Abandon` are legitimately perilous, rife with baffling geometry and shattered terrain which suspends much of the journey over inescapable abysses of fire, poison, or ichor, with the slightest misstep spelling a horrible demise. The sense of oppression is deep enough to drown in, though in its way, it's also intoxicating.
+
+Awe-inspiringly ominous as these settings are, this is only half the story. These insane edifices and nightmarish necropolises are all host to fights worthy of their demented splendor; if what you want is blood and death and death and blood and ululating hordes and screaming guns and apocalypse without and eschaton within until there is nothing left but the husk of you, barely standing atop a mountain of corpses, howling under the light of dead stars as they in turn howl silently back, well... you've come to the right place! As a longtime fan and student of the slaughter genre, I'm confident that there currently is no finer encapsulation of its ins and outs to be had. Again, the most obvious stylistic comparisons are to Sunder, and particularly that mapset's weaponization of its terrain as the player's true nemesis, but `Abandon`'s endless feast of fights seems to touch lovingly upon nearly every notable trope in the "slaughter" and "gauntlet" playbooks from the dawn of the style up until the present, while outright inventing dozens more over the course of its lengthy 17-map duration. "New life from old", indeed.
+
+All of this goes without saying, of course, that this an extremely difficult, demanding, and time-intensive endeavor, requiring a deep knowledge of the esoterica of the genre (or a willingness to learn through countless failures, if nothing else). It's the veritable antithesis of a "casual playthrough", though I'm told its air of incredible spectacle is engrossing enough to make it enjoyable for a certain temperament in a godmode playthrough, or even in "-nomonsters" mode. Regardless, it will not be for everyone, not even after the introduction of support for skill settings (and co-op compatibility) in a planned update. To a significant portion of the playerbase, the design philosophy which `Abandon` so passionately exemplifies represents a wanton hyperbolic processing of the game, far beyond anything its original creators could have ever intended or imagined, leaving it a monstrous and mindless caricature of itself. They are half correct: `Abandon` is undeniably monstrous, in both contour and animus. It's also anything *but* mindless, a masterclass in turning everything that makes `Doom` the game that it is up to 11, creating an experience that is as immersive and exhilarating as it is oppressive and unforgiving.
+
+^R- <Demon of the Well>
+
+:===============================================================================
+*[2] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best1/
+:source [#: www.doomworld.com/cacowards/2020/best1/]

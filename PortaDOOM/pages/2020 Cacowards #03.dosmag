@@ -1,0 +1,34 @@
+$THEME=BLACK
+$TITLE=Top 10 pt.I
+$KEY:1=GOTO:Antaresian Reliquary
+
+^C:2020 CACOWARDS :: TOP 10 pt.I
+
+:-------------------------------------------------------------------------------
+
+:[1] `Antaresian Reliquary` - <antares031>
+:===============================================================================
+
+"The Doomworld Mega Project", which has no standards for entry, has a simple draw: the haven it gives mappers who just want to contribute to a project, without stressing about fit or quality. Similarly, events like <DyingCamel>'s "Demons", which do have standards, place far more weight on community involvement and won't reject shakier maps if an honest effort was made, which is entirely fair. Being a fan and participant of them, I want to emphasize that relaxed activities like these are great. Obscure sets like <JP LeBreton>'s "WAD Wednesday Anniversary" series have some of my favorite maps. A small side effect, though, is that standouts can lose themselves in the shuffle.
+
+$KEY:A=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/strg
+With that in mind, the premise of Antaresian Reliquary, a compilation of pretty damn good community project maps by antares031, is simple. Now, after you tell her that he is good -- and also mention that he's the creator of the megawad [A: Struggle], which was awarded a 2018 Cacoward -- your grandma no longer has to download many separate wads to track his maps down. "Fuck yeah, this is my shit!!!" she emails in response.
+
+$KEY:B=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/scythe2
+$KEY:C=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/gd
+$KEY:D=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/eye
+$KEY:E=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/breach
+$KEY:F=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/satchap
+The compilation, which covers a wide range of themes, has a strong bond in <antares031>'s distinctive style. It's a lot like <Erik Alm>'s of [B: Scythe 2], plunged into a reality distorter that makes everything larger and more intricate, more screwy and messed-up. These maximalist tendencies peak in "Purgatorial Technologies", a fleshy nightmare of sentient skin and intestines overrunning what was once a functional research facility (the UAC were giant idiots as usual). As <mouldy>'s celebrated megawad [C: Going Down] and standalone map [D: The Eye] both showed, this "Shores of Hell"-like conceit can be amazing with half the detail. In <antares031>'s world, though, everything is fractured and twisted. Walls crack, and flesh spills through the gaps. Heaps of meat encase equipment that holds onto functionality, barely, in faint flickers. Above, in the ugly mass of flesh, large eyes peer down blankly. There is a sense that if you stood still long enough, the mass of flesh would spread to assimilate you too. It's uncanny and gross and legitimately cool. These days, creators like <Xaser> and the `BTSX` crew excel at crafting beauty with masterful visual economy, which I love too, but maps that aspire to the intricacy of [E: Breach] or [F: Saturnine Chapel] are rare and precious.
+
+<antares031>'s philosophy is all action, everywhere. The `Reliquary` takes after the high-paced slaughter-lite of many of today's popular megawads, and cranks up the "comical carnage" dial to the max. You'll be racing around, chewing stuff up with your new buffed weapons: like the machinegun you start with instead of a pistol, or a super chaingun that feels like it could carve through walls. At any given moment, a colorful cast of monsters might be out for you, bouncing you from one safe pocket of air to another, but you'll never be too far from those medkits that will keep you gasping for one more breath.
+
+That intensity makes the difficulty options very relevant. HNTR offers a well-balanced experience comparable to many wads on UV. If you play this, lose no sleep over "missing out on the full experience"; it's fun, and on the main maps, it keeps around two-thirds of UV's monsters. HMP is somewhere in the middle of that and UV, which at times is extremely chaotic, almost reveling in its extravagance. That can make for more adrenaline rushes and cinematic sights, but expect some abrasiveness as a trade-off.
+
+^R- <rd.>
+
+:===============================================================================
+*[1] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/best1/
+:source [#: www.doomworld.com/cacowards/2020/best1/]
