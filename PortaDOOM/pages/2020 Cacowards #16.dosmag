@@ -1,0 +1,68 @@
+$THEME=BLACK
+$TITLE=Multiplayer Awards
+$KEY:1=URL:https://www.doomworld.com/forum/topic/91785
+$KEY:2=URL:https://www.doomworld.com/forum/topic/117847
+
+^C:2020 CACOWARDS :: MULTIPLAYER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:[1: DoomWare] - <Buu342>
+:===============================================================================
+
+Multiplayer `Doom` is intense. It plays as a game in which glass cannons on rocket rollerblades zoom around the maps with impossible velocity and kill each other in the blink of an eye thanks to an absurdly deadly arsenal. It requires unbroken focus that leads to physical exertion. Games often end on a bitter note as the winner jumps on the table, pantless, bragging about last night's escapades with the opponent's mother, while the loser complains of lag and plots a revenge worse than anything in The Princess Bride. `Doom` was designed that way, that was <Romero>'s groove. But it can be a bit much in these trouble times, right? What if the intensity went away for a while?
+
+`DoomWare` is a "party game" for up to 16 players based off <Nintendo>'s `WarioWare` series, and the knowledgeable reader already understands what that means... minigames. Very short, rapidly changing minigames of varied genre, length, difficulty, relation to `Doom` and level of absurdity. Players may get dropped into a small deathmatch area and duke it out with a single life each, or they may kart race on a rainbow circuit. Or a bunch of Cyberdemons can be dropped into the players' starting area and it's time to dodge rockets. There are obstacle courses, survival scenarios, memory games and also a whole bunch of comically simple rounds that instruct you to not equip the chainsaw. Which you promptly do, because three rounds ago you were instructed to equip the plasma rifle -- and failed, because you panicked and forgot what the plasma bind is. But now I'm spoiling a bit, as <Buu> recommends that first-time players should go in with minimum knowledge about the wad. Perhaps avoid telling your friends what you're setting up for them, but tell them to turn their music on, it's actually important for at least one minigame.
+
+One game consists of 25 rounds by default, each round randomized from a pool of 100 planned minigames (as of writing this, there are 90). Every few rounds the tempo of the minigames increases, with difficulty level also affecting game speed. This creates pressure and leads to hilarious mistakes as some challenges end in mere seconds. Some rounds give points to everyone who completed a task, e.g. completed a kart race, or jumped into water in time. Some award just the winner, and some split the points in other ways, like the DM arena which turns every frag into a point. Usually there's also a Mario-like mushroom pickup to be collected for bonus points. But the last piece to the competitive aspect of the game is, of course, the glory of pettiness. Many of the survival and obstacle rounds equip you with the `Heretic` staff that can push other players just a little bit... which is more than enough in a `Chasm`-style ledge race.
+
+$KEY:A=URL:https://zandronum.com/forum/viewtopic.php?t=119
+`DoomWare` isn't the first project ever that tried to port `WarioWare` into `Doom` or minigames in general, a notable example being [A: Icon of Party]. However, the others lacked the rapid-fire pace of the `Ware`-style, because they'd either chain the tasks into one long obstacle course, or play one minigame per map. In comparison, the entirety of `DoomWare` happens on one giant map split into small separate arenas, and the logic is operated by a humongous blob of *ACS* scripting currently OVER 9000 lines long and meticulously commented (coder's heart flutters). This allows for smooth and fast transitions between the rounds and keeping track of the overall score.
+
+Most importantly, `DoomWare` is a wellspring of lighthearted fun, and it is as entertaining as you and your friends allow it be. While not a true party game in the sense of sitting on one couch and passing over controllers, it absolutely is a voice chat game, because you need to yell at your friend how much you hate them for pushing you into lava. The project isn't entirely finalized just yet, and <Buu> plans to add more minigames, fix bugs and tweak balance, but four years from its first public beta it's more than enough to win the crowds, and the prize.
+
+^R- <dew>
+
+:[2: Progressive Duel 3] - <Ru5tK1ng>, <Hatred> et al
+:===============================================================================
+
+The final episode of the series that won a Cacoward in 2017 was released with little fanfare in early November, but its offering of 14 new maps that bring the total to 30 is impossible to ignore. In a sense it's more of the same, but when "the same" is increasingly refined, yet highly compact 3D architecture, and the team settling into confidence about the new meta brought by customized weapons and armor mechanics... well, that's it. That's coming as close as possible to the ephemeral ideal of carrying newschool, `Quake 3 Arena`-style, full 3D gameplay over to `Doom`, and why wouldn't you want more of that.
+
+To reiterate, `ProgDuel` is a *Zandronum* mapset taking full advantage of its features, including 3D floors. It incorporates the `Eon Weapons` mod, which tweaks some existing `Doom` weapons (slightly stronger SG, faster CG) while adding `Quake`-based arsenal such as the lightning gun, railgun or the grenade launcher. The `EW` guns have been balanced for years to adjust them to the quirks of `Doom`/*Zandronum*, so you're guaranteed the most consistent weapon set outside of the `Doom` weapons themselves. Furthermore, `PD3` finalizes the armor stacking model, so your garden variety of green and blue gets expanded with yellow and red, the latter going up to 83% damage reduction! With lesser armor pickups repairing the greater ones, this is potentially more powerful than a megasphere, and introduces rarely seen map control tactics.
+
+These maps are the culmination of years of experience and, erm, progress. Two chief contributors, <Rust> and <Hatred>, reunited after their 2013(!) `EonDM` project. <Rust>'s brother <Razgriz> has been a staple of <MXU> projects such as `DBAB` (2015) and `AeonDM` (2016). Newcomers <Dragonfly> and <killerkouhai> cut their teeth on `NeonDM` (2019). The team clearly found a working formula and proves year after year that there is a middle ground between the spartan minimalism of `Dwangos` and overboard environmental detail of `Crucified Dreams`.
+
+<Dragonfly> is the most adventurous with his themes and colors while keeping conservative with very clean 3D design, small practical jump pads and trademark architecture for major boost items. <Rust> gravitates towards rectangular areas with 3D walkways, interconnecting lifts and a surprising amount of experimental horror effects such as fog and spooky sounds. <Razgriz> keeps his texture themes utilitarian while giving more open space than the average, potentially creating chaotic, unrelenting rhythm. Everyone's beloved returning oldschooler <Hatred> provides a set most clearly inspired by lessons of `Q3A` and `UT`, both in theme and layout. You'll know those winding staircases. The closing guest map by <KK> feels very much like a throwback to `NeonDM`, underlining the <MXU> legacy.
+
+It remains to be seen which maps become true hits, because the tastes of the DM community are largely inscrutable, but `PD3` seems properly seasoned and digestible. Might as well be all of them.
+
+^R- <dew>
+
+^C:TAKING A DOOM CONFERENCE CALL
+:===============================================================================
+
+The MP community saw a high tide of interest in competitive play in 2020, but there were three unquestionable highlights of the year.
+
+$KEY:B=URL:https://www.doomfederation.com/kingdimes-take-the-crown-doom-ii-duel-tournament-1500-cash-prize/
+$KEY:C=URL:https://www.doomfederation.com/
+$KEY:D=URL:https://www.doomfederation.com/denzoa-wins-kingdimes-take-the-crown-duel-tournament/
+$KEY:E=URL:https://www.twitch.tv/tastyspleentv
+$KEY:F=URL:https://inthekeep.com/
+February and March were dedicated to the unprecedented [B: Take The Crown] duel championship. Borne out of cooperation between <Dime> and the [C: Multiplayer Doom Federation], it spanned across four weeks of qualifier tournaments that seeded players into the $1500 prize pool grand final. The port of choice was *Zandronum* and the map pool was fresh and non-traditional, yet it proved to be one of the most high-profile tourneys of the decade. [D: In the end] it was decisively dominated by <Denzoa>, who managed an almost perfect map score, followed by <Langrenus>, the human aimbot, <Renegades> clan powerhouse <Jwarrier>, and <Dant3> in fourth, a big Russian surprise who upset some big names on the way to the semis. Shoutouts to <Jehar> of [E: TastySpleen], <Motherload> of [F: InTheKeep] and <Xenaero> for stream coverage!
+
+$KEY:G=URL:https://doomleague.org/
+$KEY:H=URL:https://doomleague.org/schedule/
+$KEY:I=URL:https://www.youtube.com/watch?v=BY7_V5w0tIQ
+June and July was in the sign of the [G: World Doom League], the *Odamex* CTF event returning from its hiatus since winter 2018. Participation was extraordinary and allowed for 10 stacked teams, with many veteran names making a comeback. The main season played out as a [H: shortened round robin league] with 5 randomized match-ups. The two board leaders then managed to clear out the playoffs and progress into the finals, where the second overall <Tais Only Fans> (<Tai>, <Edd>, <Dastan> & <Galactus>) wanted to repay their only loss to the undefeated <Best Ever> (<RosKing>, <Acc>, <Skullrush> & <TMD>). In a [I: dramatic 5 round battle], <BE> prevailed and secured their captain a second consecutive title.
+
+$KEY:J=URL:https://www.doomfederation.com/take-the-crown-ffa-tournament/
+$KEY:K=URL:https://bethesda.net/en/article/1WzGhljdKSqzGv7bQb2GVf/full-quakecon-at-home-stream-schedule
+$KEY:L=URL:https://docs.google.com/spreadsheets/d/1djgwW5ECUK0zJpDLgNChUpLWLrkH6_Kv-vUNxK_-x3Q/edit#gid=0
+$KEY:M=URL:https://www.doomfederation.com/langrenus-wins-take-the-crown-ffa-tournament/
+Then August culminated on the same day as the WDL finals with another [J: Take The Crown event]. This time the gang teamed up with <tokyopunchout>, <id>'s community manager, and `Doom` made it to [K: Quakecon@Home], the social distancing online variant of the annual Dallas convention. The $750 prize pool free-for-all DM tourney on *Odamex* started the previous day with an enormous, 70+ player, 7-hour [L: elimination stage]. The gruesome groupstage set out to simulate the quirky, random opponent nature of FFAs, but it also succeeded in giving people more `Doom` than they ever wanted. The top 8 players progressed to the finals, and then <Langrenus> dismantled them live on <Bethesda>'s twitch channel, with a rarely seen [M: 7 wins out of 8 maps]. The rest fought evenly in a close contest, and only the last map decided that <Proteh> placed 2nd, with <Infer> closing out the medal spots.
+
+May 2021 be as prosperous, just maybe less anxious.
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/multi/
+:source [#: www.doomworld.com/cacowards/2020/multi/]
