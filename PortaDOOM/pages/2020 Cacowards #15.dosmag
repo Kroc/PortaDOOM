@@ -1,0 +1,89 @@
+$THEME=BLACK
+$TITLE=Special Features
+
+^C:2020 CACOWARDS :: SPECIAL FEATURES
+
+:-------------------------------------------------------------------------------
+
+:A TOUR OF COMMUNITY ACTIVITY
+:===============================================================================
+
+$KEY:A=URL:https://www.doomworld.com/forum/topic/116321
+$KEY:B=URL:https://www.doomworld.com/forum/topic/113803
+Hey, <rd> here. The larger `Doom` community's yearly output is unrelenting, to a degree that outpaces the growing number of sidebar features and Honorable Mentions. Notable deeper cuts are often overshadowed. This little feature is intended as a spotlight on quirkier bits worth remembering: [A: like a map crafted entirely out of] the infamous livestream antagonist FIREBLU, monster attacks and all; or [B: third-person perspective GZDoom minigames] that leverage scripting in clever ways.
+
+$KEY:C=URL:https://www.doomworld.com/forum/topic/117348
+`Doom -1` was an experiment in incremental design by committee. The premise is simple: one member shared a barebones map on the Doomworld forums, with an open invitation for anyone to download it, pitch in edits, and upload the result -- rinse and repeat. Over 500 edits later, dozens of contributors having joined the fray, a full megawad had come to life. It's disjointed and messy, but it is playable, an accomplishment in itself given the piecemeal construction. At the time of writing, the megawad is [C: undergoing bugfixes].
+
+$KEY:D=URL:https://forum.zdoom.org/viewtopic.php?f=42&t=66255
+You can count the household-name wads for `Hexen` on one finger. That already would make [D: Realms of Cronos], a hub-based community project on ZDF, special -- even if it didn't have some really impressive maps. "Path of Hei'an" is a stunning facsimile of an old Chinese mountain village on a rainy day, with immaculately crafted polygonal architecture: rotating water wheels, majestic stilt houses, ornate watch towers, a... is that a panda? And "Felstoy Abbey", an opulent web of forts and chapels and palaces sprawling through a water-carved world, soaks you in its gloom. It's one of those megamaps that, when you're inside it, feels limitless.
+
+$KEY:E=URL:https://freds72.itch.io/poom
+With [E: Poom], a recreation of `Doom` through the stringent '80s hardware limitations of the *PICO-8* engine, <freds72> bottles up the magic of reexperiencing this old game for the first time, clunky controls included. A lot is off-kilter, from the textures to the background music, but it's still unmistakably `Doom`. Early opposition consists largely of grainy off-model shotgunners, but the cast gradually diversifies. Clocking in at around a half hour, `Poom` is a wonderful portal into a hypothetical past.
+
+$KEY:F=SHELL:"..\pages\images\jimmy.jpg"
+$KEY:G=URL:https://www.doomworld.com/forum/topic/117935
+$KEY:H=URL:https://www.doomworld.com/forum/topic/117945
+One of the numerous draws of the `Doom` engine is its affinity for representation. Some years back, <kmxexii> coined the term "Doomcute" to describe props like toilets and cars and fish, made out of sectors just like ordinary level geometry rather than imported as sprites or models. Topically, [F: Jimmy] assembled my favorite `Doom` list of the year: [G: a rundown of his top 25 Doom ships], hitting wads like `Rekkr`, `BTSX`, `The Golden Souls`, and (unsurprisingly) `Pirate Doom`. This thread inspired both a [H: boat-themed community project], currently in beta, and a follow-up list on 25 infamously obscure secrets. Let's hope 2021 brings more of these features.
+
+$KEY:I=URL:https://www.moddb.com/mods/national-videogame-museum/news/national-videogame-museum-wad-officially-released
+Speaking of props, someone(TM) also recreated the National Videogame Museum tour [I: entirely in the Doom engine]. Crafted out of both photos and sector art, it is comprehensive. A YouTuber was able to tour the exhibit virtually, strafing around consoles and arcade machines and shelves of games and equipment, getting lost in deep explanations of the arcana. In this *GZDoom*-compatible tour, the other visitors are far more likely, compared to the real thing, to belch fireballs or hurl homing missiles at you. Rude, but the lowest skill setting guarantees a peaceful visit if you only want to look around.
+
+$KEY:J=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/violence
+Also speaking of props, some of the year's heroes went unsung in the main awards, and I'd feel bad if they were overlooked. The multi-talented <Big Ol Billy> had stellar work scattered across too many community projects to count. He placed very high on our internal Creator of the Year shortlist, in an almost unprecedented way for someone who didn't win an award. <AD_79> -- the mapper of 2015's smooth synthwave-infused [J: Violence] -- has turned into a very capable composer in his own right, shown by contributions to the OSTs for `Akeldama` and `1000 Lines 2`.
+
+:-------------------------------------------------------------------------------
+
+2020 was described on Doomworld as the "year of the megawad", an observation backed by a lot of truth. Along with the award winners and extra spotlights, if you are in for the longer haul you could do worse than to flip through and find something to your liking among Happy, `CPD`, `Akeldama`, `Interception II`, `Modest Mapping Challenge`, `Mayhem 2020`, `Nova III`, `Texture Extravaganza`, `Oops: All Techbase`, `Magic Doom`, `the 64 KB Challenge`, `Team Rocket 2`, and (an incomplete RC of) `Refracted Reality`. The story of `Doom` this year is inextricably bound to this work.
+
+$KEY:K=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/akeldama
+The hefty [K: Akeldama] is a must-play for avowed fans of classics like `Memento Mori` and `Requiem`. It had a lot of buzz on Doomworld, thanks to its reliable infusion of that oldschool energy into big, polished adventure maps packed with hundreds of enemies, all under the catchy riffs and moody jams of its community-made soundtrack. Whether through project-leader <valkiriforce>'s stewardship or some kinship of spirit everyone latched onto, it looks and feels the part, although some will wish the bulk was broken up by shorter pacer maps.
+
+$KEY:L=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/nova3
+[L: Nova III] is one of those community projects you could describe as a box of chocolates in `Doom` format, in flavors like Hell fortresses, swampy jungles, and moonbases. As a precaution, I would suggest making sure you are alone, and have napkins to wipe off your monitor, if you try to literally eat it. The third edition was designated as a return to `Nova`'s roots as more of a novice exercise -- after `Nova II` had the likes of <Ribbiks> and <mouldy> sneak in -- but `Nova III`'s alumni, which includes authors like <Nanka Kurashiki> and <antares031>, grew into quite the star-studded bunch anyway.
+
+^R- <rd.>
+
+
+:MOST PROMISING NEWCOMERS
+:===============================================================================
+
+Writing this feature always feels a little strange, as year after year, complete newcomers find their way into the main awards -- folks like <RonnieJamesDiner> clearly need no encouragement from us and would warrant more attention here if they weren't already covered elsewhere. But this year, it feels like there's tons of great opportunity to use it for its intended purpose: cheering on people who didn't quite make it this time but excited us with the promise of what they're capable of.
+
+$KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/happy
+<Zolgia108>'s [M: Happy] is basically a post-mortem acid trip through various psychedelic realms, which represent spiritual and psychological aspects of the protagonist's search for peace in the afterlife. The author's creativity extends to fight dynamics as well, creating a full *GZDoom*-enabled package that's quite a bit different from any mapping norm that currently exists.
+
+$KEY:N=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/cpd
+$KEY:O=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/vile
+Starting your mapping career with a one-person megawad is one of Doomworld's most time-honored and questionable traditions, but sometimes it turns out great. <Cheesewheel>'s [N: CPD] has been almost constantly compared to the venerable [O: Vile Flesh] for its grand scale and strong sense of place, but it also offers a striking variety of gameplay scenarios that will no doubt make the author a force to be reckoned with in years to come.
+
+$KEY:P=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2
+Rather than strike out on a solo project, <DFF> became heavily involved in a couple of big community megawads, starting off with a bang in [K: Akeldama] with the fast, intense "Bunker Hill" (map 05) and one share of the intriguing `Meggido`-style secret map "Make Believe" (map 31). They also became one of the driving forces behind [P: Interception 2], creating or co-creating many of the best maps in the megawad, including my favorite, "Cargo Cult" (map 27).
+
+$KEY:Q=URL:https://www.doomworld.com/forum/topic/117620
+Last but not least among the single-player crowd, there's <Egg Boy>, whose mapset [Q: Cold Front] only takes about half an hour to play but is pure joy. These maps show an extremely strong grasp of fundamentals, with excellent pacing and architecture throughout, but it's the unique theme -- a combination of icy winter and Egyptian ruins -- that makes the set especially memorable.
+
+In the speedrunning field, <Daerik> is a newcomer who's already racking up impressive UV-maxes, including ones for two staggeringly difficult maps, `Dimensions` map 32 and `Finely Crafted Fetish Film` map 07. He's done full UV-maxes of both `Valiant` and `Ancient Aliens`, as well as one for `Eviternity` map 32 in just under half an hour, handily surmounting a previous 43-minute record that was already considered impressively fast. And then there was that `Sunlust` run...
+
+^R- <Not Jabba>
+
+
+:THY PRESS CONSUMED
+:===============================================================================
+
+$KEY:R=URL:https://windward.dk/TDR/?page_id=991
+While */newstuff* hasn't had the same traction it used to, there's still threads floating around on Doomworld that seek to give balanced, honest, and sometimes personal reviews of all kinds of WADs, from the new to the old. And of course, there's still us Cacowards folks doing our thing here, but for those who seek to have all of the fun and educational reviews and articles in one place, and on a more regular basis, the wait is now over. Enter: [R: Doom Master Wadazine].
+
+The DMW got its start this year in July with a 34-page issue, the first of <Endless>'s efforts to create something fresh and new for the community to read, in a fun and organized format. While it was an impressive feat for someone to write all that on their own, <Endless> wasn't satisfied -- he kept going and kept building upon the Wadazine, adding graphic artists, editors, and more reviewers. Now, all kinds of community members bring their insights to the table, spotlighting great WADs both new and old, along with fantastic educational pieces on everything from source ports to simple mapping tricks. And, nodding its head to the */newstuff* forum threads of the past, the Wadazine brings out a mighty list each issue of new things that have made their way onto the scene.
+
+When it comes to `Doom`, there's too many great names to count, but the Wadazine has at least begun by bringing great and insightful interviews with greats from the community, and even beyond -- <Randy Linden>, <Bridgeburner56>, <Obsidian>, <jazzmaster9>, <Looper>, and <Kaiser>. These industry greats giving their knowledge and insight into what they do and how they do it is nothing short of a treat. From mappers to speedrunners, there's always a new surprise in each issue to explore.
+
+Above all, the Wadazine has really gone a long way in really making it feel like the gaming magazines of yesteryear -- there's full-page ads, both humorous and informative; minigames, reader-submitted content of `Doom` screenshots, and even reader surveys to bring the interactivity of the 'zine to the next level.
+
+The Wadazine team's enthusiasm for `Doom` and their dedication to bringing fresh new content has been evident and growing with each iteration of the 'zine. From the first to the latest issue, they've continued to show that they're passionate about bringing the dying art of the gaming magazine back to life.
+
+^R- <Major Arlene>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/special/
+:source [#: www.doomworld.com/cacowards/2020/special/]
