@@ -1,0 +1,81 @@
+$THEME=BLACK
+$TITLE=Gameplay Mod Awards
+$KEY:1=GOTO:
+$KEY:2=GOTO:
+$KEY:3=GOTO:
+
+^C:2020 CACOWARDS :: GAMEPLAY MOD AWARDS
+
+:-------------------------------------------------------------------------------
+
+:[1] `Nobody Told Me About id` - <CantSleep>
+:===============================================================================
+
+(RESPONSIBLE DISCLOSURE: The writer of this writeup contributed some cosmetic stuff to this mod because he liked it so darn much. He claims no responsibility over any of the actual important fun stuff, and the Cacowards committee chose this mod to be awarded before he came on board.)
+
+Modders have been making efforts to smush *BUILD Engine* games, especially `Duke Nukem 3D`, into `Doom` from the moment that such games were released. Some of those, like `Samsara`, are well-regarded and well-loved, while others less so. `Nobody Told Me About Id` takes a slightly different path, in that it instead attempts to integrate the spirit of those *BUILD Engine* games into `Doom`, rather than their literal contents. The end results are a wonderful mashup that does a great job of blending two distinct styles together, while also being damn fun to play in its own right.
+
+While there are obvious things to copy from *BUILD* games like their non-centered weapons, excessive gibs and accompanying voiceovers, what really marks `NTMAI` as a true passion project is all the little details it attempts to replicate. From the less inertia-effected player movement, to your aim getting kicked downwards briefly when landing from a decent height, all the way to the Shotgun Guy and Chaingunner now being palette swaps of the Zombieman's sprites, this is a project by someone who loves and understands these games and all their warts and foibles, and who clearly had a blast translating those elements to work within `Doom`'s maps and universe.
+
+`NTMAI` adds some dynamism to the traditional bestiary. Possessed-class enemies duck behind cover and occasionally throw a grenade to keep you on your toes. Imps and Pinkies jump around and become considerably more agile. Revenants use jetpacks to assault you with homing missiles from awkward angles. And in keeping with the theme, everything hits just that little bit harder -- the skin-of-the-teeth playstyle of *BUILD* games has been translated over well, and you'll be hunting for health more frequently than normal.
+
+There are two weapon sets to choose from. The Classic weapon set hews close to the `Doom` defaults, with a couple of *BUILD*-style twists like pistol reloading and a couple of alt-fire modes, while the Alternate weapon set takes staples from various *BUILD* engine games and blends them into the `Doom` style. These don't all work quite as well as their Classic counterparts, and generally trend to being more situational, but there are more hits than misses among the bunch.
+
+Powerups are kept mostly the same, except that some are now inventory items that can be toggled at will. Radiation suits turn on and off automatically as you enter and leave damaging sectors, which is a nice practical touch. The one addition is the new Portable Medkit, which replaces Soulspheres in secret areas and works pretty much exactly as you'd remember from every *BUILD* game. On that note, the spawning of different items in secret areas (including secondary ammo types for alternate-fires) is a great touch and one that really encourages poking around trying to find every corner of each map.
+
+Many gameplay mods are increasingly becoming complete reinventions, pretty much entire new games sitting parasitically atop `Doom`'s time-tested library of maps. `Nobody Told Me About Id` is more of a remix of `Doom`'s traditional gameplay in the style of the games it inspired, lacking some of the flashiness and CPU-stomping particle effects of its peers. The degree to which its gameplay comes together, though, combined with its obvious love of the source material, shines through and turns it into a great alternate-history version of `Doom` from 1996, creating an excellent way to kick ass and chew bubblegum take names on your next playthrough.
+
+^R- <Kinsie>
+
+:[2] `Treasure Tech` - <HyperUltra64>
+:===============================================================================
+
+Many gameplay mods aim to recreate the experience of another game within the confines of `Doom`, and more crucially, its many thousands of custom maps. In most cases, those recreations are based on other FPS games (often `Doom`'s contemporaries, but "demakes" of newer games are increasingly common) as it's easier to reimagine and remix their mechanics into a `Doom` gameplay context. So to see a gameplay mod that aims to blend `Doom`'s guns-and-demons aesthetic with, of all the things, `Wario Land 4` on the Game Boy Advance, is eye-opening to say the least. Even more eye-opening is that it pulls it off and makes it work. With aplomb, even.
+
+If I had to use a single word to define this mod, it'd be "kinetic". Everything is built around providing satisfying feedback to the player. Monsters are flung around by even pistol shots, coins and other valuables scattered in their wake. Weapons animate snappily with recoil sharp enough to push the player backwards. Upgrades (for you can spend your ill-gotten gains on such things) provide audiovisual feedback of their newfound power to the player, beyond just increasing some stat somewhere. It all feels satisfying with just the right amount of weight, backed by some great pixel art and a cartoony sense of humour that goes down a treat, using its influences from <Nintendo>'s stranger franchise to provide a different, more cartoon-slapstick take on silliness than many other `Doom` mods.
+
+The arsenal in `Treasure Tech` takes some interesting (and often welcome) twists and turns beyond the `Doom` tradition, with some interesting alt-fires that in many cases emphasise `Unreal Tournament`-inspired "shoot out an explosive, then shoot that explosive with another shot type to make it blow up way bigger" trick shots. One of the bigger breaks from tradition is that melee is actually quite useful, with an assortment of capabilities. Shoulder charges provide bursts of damaging momentum that can punt enemies out of the way (especially flying enemies, even more so after a few upgrades!) Ground slams control and scatter crowds, with a side of squishing any poor bastard directly underneath you. Grabbing and hurling nearby barrels provides an immensely satisfying way of turning an encounter's tide. And if there aren't any barrels around? Punch an enemy into a goofy, `Street Fighter`-esque stunned state and grab them instead!
+
+All of this combines into a wonderfully fast-paced style of combat. Shoulder charging into the fray, crash-tackling a Pain Elemental to hurl at a passing Revenant before turning to drop a oversized cartoon bomb in the middle of a crowd, ready to be shot to trigger an eruption of flying, bug-eyed bodies, shiny trinkets and the occasional tombstone. It's... a little overpowered in Ye Olde IWAD Maps, sure, but as the power scale has ramped up in custom maps over the years, I feel like it evens out.
+
+`Treasure Tech` is a well-designed, quirky gameplay mod that drips with polish and presents an abundance of fun new ways to fight through maps, but the single included map teases a greater future: A short tutorial level is included, hinting at the possibilities of extending the mod out into a full TC with even more `Wario Land` elements like Switch Blocks and end-of-level escape sequences. Gameplay mods rarely-if-ever getting their own accompanying mapsets has been a bugbear of mine for years now, so I'm pretty hyped to hear that <Ultra64> and his team are planning on making good on this promise with the upcoming `Treasure Tech Land`. And if it delivers on even half the potential that this gameplay mod suggests? I guess we'll see you back here in a couple of years time, then...
+
+^R- <Kinsie>
+
+:[3] `SWWM GZ` - <Marisa Kirisame>
+:===============================================================================
+
+Over the last decade or so, *GZDoom*'s modding abilities have grown and evolved practically exponentially, like a black hole sucking in all matter surrounding it, except instead of matter it's vaguely documented scripting functions. As these features have been added, gameplay modders have worked hard to use them, sometimes even in the intended fashion, with many past winners in this category showing off all sorts of impressive tricks to find the ever-changing limits and bend `Doom` into new, interesting and increasingly pretzel-esque shapes. `SWWM GZ` (`Some Weird Weapons Mod for GZDoom`) continues in this proud tradition to proudly demonstrate The New Possible while also being a damn fine blastfest to boot.
+
+`SWWM` is a showcase for the latest in *GZDoom*'s *ZScript* capabilities -- pretty much every single trick in the book is used in one way or another to change things that have traditionally been unchangeable without delving into the realm of gross, unmaintainable workarounds. These range from UI polish like completely changing how pickup messages, obituaries and such are displayed, to clever gameplay changes like a rechargeable battery to resurrect yourself on the spot if you don't feel like reloading a saved game, all the way through to using a 25-barrel shotgun to blast locked doors clean in half if key-hunting feels like too much effort.
+
+`SWWM` started as an `Unreal Tournament` mod many moons ago, and the *GZDoom* version's aesthetics carry the spirit and feel of that era well. Models are chunky and low-poly without looking ugly, avoiding some of the mistakes that many modern attempts at retro-styled FPSes tend to trip over. The textures are serviceable, roughly on par with the `UT99` mods that inspired it, and the animations are better than you'd expect, with a decent amount of weight and a decent number of cute touches like unique weapon-admiring animations if you try to reload with a full mag. The UI is crisp and clean, eschewing the pixel-art details of traditional `Doom` HUDs for a crisp blend of flat colours and gentle gradients that looks decidedly modern. Audio is probably the weakest link, but it doesn't get annoying, and a regular stream of Japanese Robot Shit-Talking keeps things interesting.
+
+As for those weapons I keep mentioning... They're an explosively enjoyable bunch, with pretty much every single weapon having some sort of weird gimmick attached, ranging from explosive reloads to multiple alternate ammo types, all the way through to one specific weapon having a reload system so elaborate and customizable that it pauses the game and brings up a special menu. Jetpacking around the map, blasting open key doors and exploding anything that moves in a variety of ways is fun as hell; The arsenal is intended to be explosively overpowered, but I personally found it to be a good balance of over-the-top carnage without hurling challenge out the window, and combining it with larger, more horde-filled maps is an absolute winner (especially if you can resist the temptation to break map scripting on a whim!).
+
+There's a lot that I haven't been able to get around to here, from the codex full of reams of entirely ignorable lore (such are the ways of Cool `Doom` Mod OCs), to the shop system for refilling your arsenal, to the ability to befriend Cacodemons by way of headpats, but I've already written far too much for one page. If you want to see what *GZDoom*'s capable of in bending the game into esoteric new forms of `Doom` But Also Not, you owe it to yourself to give `SWWM` a spin before all the mainstream gaming websites find it and simultaneously praise it while also insisting on crediting its author as "Someone".
+
+^R- <Kinsie>
+
+
+:MINI MOD SAFARI
+:===============================================================================
+
+Hello there, this is <Marisa Kirisame> and you're reading the 2020 mini mod safari. Although this year has given us some hardships to deal with, it is important to push on and keep doing what we love. If your passion is Dooming, then that's what we're all about over here. Anyway, without further ado, here are some little things to check out that may spice up your playthroughs.
+
+$KEY:4=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=68723
+[4: DoomGals]: Companion mods have become quite popular since that little blendery of `Doom Eternal` and `Animal Crossing`, with the release of the "Isabelle Companion Mod". Ever since then, a whole boom came about. This one, in particular, is worth checking out. Coming from renown retro shooter fanartist and hoagie appreciator <Substance20>, we've got his demon gals teaming up to beat up baddies alongside you. There is a twist, however, in that they aren't as nigh-invulnerable as in other mods of this style, so it won't feel like an instant easy-mode switch to have it around. Every now and then you may need to throw a juicy hoagie their way to get them back into the fray. Delicious.
+
+$KEY:5=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=67054
+[5: War Trophies]: You like stats? You wanna see all them numbers? You desire deep down to be validated and given arbitrary scores and rankings for all the demon slaying you're doing out there? Then this mod is for you. Even though this mod is entirely cosmetic and does not affect gameplay in any shape or form, it still gives you a sense of accomplishment, seeing how far you can rack up experience and climb those ranks.
+
+$KEY:6=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=67939
+[6: Corruption Cards]: Let's be honest, who doesn't love a challenge every now and then? Well, this mod gives us just that and more. At the start of each map, you are given three choices, three "cards", one of which you must choose to keep on going, that will permanently alter your experience. A must have if you like a good surprise.
+
+$KEY:7=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=68471
+$KEY:8=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=68532
+[7: Deformed Doom] & [8: Big Doom]: Following the release of *GZDoom* 4.3, some of us insane *ZScript* magicians discovered that there was now a way to alter map geometry on load, giving us the ability to twist and stretch maps to our wicked desires. Sure, it could also be used to maybe fix bugs and whatnot in old maps that no one else touches, but as someone who loves this sort of insanity (and has taken part in contributing to it), the real fun is right here. Do note however that these can easily make maps unbeatable if you crank the settings too hard (unless that's what you want).
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/gameplay/
+:source [#: www.doomworld.com/cacowards/2020/gameplay/]
