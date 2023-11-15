@@ -1,0 +1,133 @@
+$THEME=BLACK
+$TITLE=Other Awards
+$KEY:2=URL:https://www.youtube.com/watch?v=CQ6X0XnoTJ4
+$KEY:3=URL:https://doomwiki.org/wiki/Doom_Classic_Unity_port
+$KEY:4=URL:https://www.doomworld.com/forum/topic/117123
+
+^C:2020 CACOWARDS :: OTHER AWARDS
+
+:-------------------------------------------------------------------------------
+
+:Mordeth Award: Released project with the longest "development time"
+:===============================================================================
+:1: "Pacifist" Speedrunning - The `Doom` community
+:-------------------------------------------------------------------------------
+
+$KEY:A=URL:https://dsdarchive.com/
+The past year saw many turbulent events. Empires diminished, the entire world shackled at home, a new `Doom` game released. Many celebrities perished far too soon, many others got suspended from Twitter for a week, at one point the Sun nearly collided with the Moon in the sky. But all that drama pales in comparison with the `Doom` speedrunning community agreeing -- more or less -- to revise the rules for pacifist runs. Indeed, ever since the first ecumenical councils there hasn't been such a dramatic, controversial shift in doctrine. The new definition as stated by the [A: Doom Speed Demo Archive] reads:
+
+	*UV Pacifist: Exit as fast as possible on skill 4, without hurting monsters either directly or indirectly (no barrels).
+
+Heavy. Unlike other categories, the pacifist monster roster includes the Icon of Sin and Lost Souls. Simple enough otherwise: don't shoot the gun, exit the map. Why then the decades of blood feuds and conversations stalled in the trenches of flamewar? The devil... is in the intent.
+
+$KEY:B=URL:https://www.cl.cam.ac.uk/~fms27/dht/design/pacifist/
+$KEY:C=URL:https://www.cl.cam.ac.uk/~fms27/dht/dht5/
+$KEY:D=URL:https://www.doom.com.hr/
+$KEY:E=URL:https://www.doom.com.hr/index.php?page=compet-n_rules
+$KEY:F=URL:https://www.doom.com.hr/forum/viewtopic.php?p=1234#p1234
+The wording hasn't changed much, but ever since the category [B: was conceived] under the [C: Doom Honorific Titles] league in 1997, there's always been an accompanying paragraph that explains the particularities. You can explode barrels, unless they hurt monsters. You can lure monsters to infight with your fancy footwork. You can't -- wait, why can you telefrag monsters, but aren't allowed to crush them? DHT's successor [D: Compet-N] tried to finetune this internal clash between the spirit and the [E: letter of the law] and introduced the [F: concept of intent]. If you didn't mean to telefrag the monster because you didn't see it, or it walked into a crusher long after you left the room, it's not your fault. The Pope of Compet-N, <Adam Hegyi>, ruled with wisdom and iron fist, deciding on a case-by-case basis for every run or newly discovered issue.
+
+$KEY:G=URL:https://www.youtube.com/watch?v=sGagxg7cyN0
+But one day around 2004 he vanished, and the community was suddenly left without an undisputed authority. And then PWAD running exploded into popularity and corner cases became so common that they started undermining the entire category. Maps used the [G: Romero head telefrag exit]. Combinations of crushers and barrels were a conflicted grey area. Is it an "unintentional" telefrag if I close my eyes before a teleport? Additionally, the DSDA started seeing heavier traffic than the limited map pool of C-N. Demos couldn't all be watched and verified by the archivists, and most were filed according to description claims. This led to accumulation of errors, mostly for a surprising reason: runners knew they were taking a risk stepping into teleporters and classified their runs as the less strict UV-Speed if an accident happened, despite "no intent" under the C-N rule. And some never bothered to tag their UV-Speed records as also-pacifist at all.
+
+$KEY:H=URL:https://www.doomworld.com/forum/topic/117014
+$KEY:I=URL:https://dsdarchive.com/intro
+$KEY:J=URL:https://github.com/kraflab/dsda-doom
+This paralysis lasted over 19 years, until the most recent [H: debate] made a breakthrough and agreed to remove intent out of pacifist, or die trying. Every particular sub-issue turned into a yes/no question, ensuring no chance of a full consensus. The hardcore holdouts might never accept all of the bitterly argued points; however, the admins of the DSDA perceived the majority swinging towards a robust, if ethically questionable [I: result]: full amnesty for all telefrags and crusher damage. The slight breach of the original spirit allowed one low-key advantage that clinched the deal: it is programmatically traceable, as proven by the newborn [J: dsda-doom port] and its analysis options. In effect, the entire pacifist sub-archive can be cleaned up and maintained automatically. That's right, gentlefolks, we've automated the pearly gates.
+
+^R- <dew>
+
+
+:Odyssey of Noises - Best original soundtrack for a Doom project
+:===============================================================================
+:[2: The Coming Hour] - `Bastion of Chaos` OST - <PRIMEVAL>
+:-------------------------------------------------------------------------------
+
+The map `Bastion of Chaos`, as you'll presumably have learned earlier in these (un)hallowed pages, is a massive, brooding edifice hovering in a perpetual crimson-dawned netherspace ominously poised between this and countless other realms, equal parts cathedral, citadel, and military garrison for Hell's roiling hordes. The track itself takes shape as a ten-minute opus of dramatic and unmistakably gothic heavy metal. Evoking both a measured, trancelike air of twistedly exultant reverie through use of overlapping galleries of faux-Latinate choir paired with thin sheets of subtle ambience, and a driving, warlike sense of aggression through very direct, yet effective electric guitar work, "The Coming Hour" expertly matches the dual nature of the setting it's paired with.
+
+The sense of careful composition at play here should not be understated, particularly as we are dealing with a piece built from modern, high-fidelity digital samples rather than the simpler and arguably more immediately flexible and expressive MIDI format traditional to `Doom`. "The Coming Hour" consists of two major movements and a brief intermezzo of paraschizoid muttering and whispering (which is the segment you'll hear on the WAD's title screen, incidentally). The first of these, used generally (though not exclusively) as the level's default/ambient theme for exploration and travel between areas, is heavily gothic in tone and textural in approach, placing the choir elements up front relative to a baseline of downtuned rifflets, variously supplemented with echoing acoustic strums and church-organ as well as an untethered, slightly meandering locution of wah-pedaled lead guitar hovering over all like a looming angel of death.
+
+This is the part of the track that most sold me on it as the inaugural selection for our new soundtrack award, but it certainly would not be complete in effect without the track's second half, which brings the modern metal rhythm section to the fore, focusing on cinderblock-drop guitar breakdowns accented by histrionic escalations from organ and choir, essentially flipping the tone of the sermon from "hellfire" to "brimstone." And, say, is that a reference to <Bobby Prince>'s timeless "Sign of Evil" I hear? Deliciously doomed and Doomy alike, I tell you.
+
+It's one thing to be a great tune in its own right, but as a fully bespoke composition for the map in which it appears, "The Coming Hour" takes on the additional challenge of meshing with a complex, action-heavy, and quite protracted map in an intimate way, a challenge to which it rises beautifully. Even in its most modern forms, `Doom` is not a very rigidly scripted or choreographed game at the most structured of times, and `Bastion of Chaos` constantly vacillates, sometimes quite harshly, between brooding procession through its cavernous chambers and sudden outbursts of intense and often opulent violence, and <Primeval>'s track has an answer and a ready accompaniment for all of this, regardless of which movement of the song is currently scripted to run in the level (and this situational in-level scripting is for the most part quite well-judged, to <Bridgeburner56>'s credit). It is for this, for suiting such a dramatic, multi-faceted map not only in general mood but also in varying pace and finer texture, that "The Coming Hour" is the inaugural Odyssey of Noises. Hail! \m/
+
+^R- <Demon of the Well>
+
+
+:Codeaward: Most noteworthy programming effort of the year
+:===============================================================================
+:[3: The Unity Port] - <Mike "sponge" Rubits> et al
+:-------------------------------------------------------------------------------
+
+First released in July 2019, the *"Unity port"* is the colloquial name for the official <Nerve Software>-developed port of the classic `Doom`s to modern systems, using the *Unity* engine as a cross-platform substrate. At this time last year we mentioned the *Unity port* in less than glowing terms, with the caveat that the port was hamstrung by its legal inability to benefit from the decades of source port development, as Free software may not flow upstream back into a commercial product. I lamented that this licensing firewall would prevent the *Unity port* from becoming truly interesting.
+
+What I failed to anticipate was that under the post-release guiding hand of long time <id> employee <Mike "sponge" Rubits> and the stewardship of <Kevin Cloud>, <id Software> might turn to unorthodox methods. Faced with the prospect of the official port seeming old and creaky next to its Free Software forebears, <id> simply paid `Doom` source port developers to relicense their code. In the last year the *Unity port* has seen the addition of frame interpolation and proper widescreen support, contributed by <AlexMax>. Even more astonishingly, it added support for *DeHackEd* patches, courtesy of <fraggle>.
+
+These additions have turned the *Unity port* into something both with modern niceties and extreme faithfulness to the original *DOS* game. One of <sponge>'s priorities has been ensuring that every single gameplay quirk the `Doom` demo format relies upon has remained pure and untouched. This ensures, for instance, that the title screen demo reel plays out identically to how it did in 1995. It also means that the *Unity port* functions almost as a new "reference port" a la *Chocolate*/*Crispy Doom*, with almost perfectly anal-retentive attention to detail -- up to and including new widescreen art assets.
+
+The glow-up on the *Unity port* would have been impressive enough if it had stopped there. Perhaps most important, however, has been the addition of an integrated menu system for browsing and downloading "Add-Ons", aka `Doom` WADs. I can't say for sure this is the first `Doom` port ever to integrate a WAD browser / downloader, but it's certainly the highest profile one, advertising those WADs to a huge new audience who likely would have never stumbled across them otherwise. Will we see future `Doom` projects pitched as "official add-on bait"?
+
+$KEY:K=URL:https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor
+There are, of course, numerous limitations. [K: One does not simply] download any myhouse.wad out there -- <id> has constructed its own walled garden of consecrated WADs, drip-feeding new (well, "new") releases periodically. These have spanned the gamut from fairly run of the mill mapsets to entirely new, uh, games, since a total conversion like `REKKR` can't be fairly classified as anything less. <id> also requires the written legal consent of everyone involved. For a long-lasting community like `Doom`'s, that means attempts to add certain "classic" projects are likely foreclosed, where an author has passed away or is otherwise unreachable. Perhaps most notable on this list of untouchables is the *Boom* source port itself, and its toolkit of "*Boom*-compatible" features. A huge percentage of post-source-release `Doom` WADs are probably permanently excluded from the Add-Ons library, absent a heroic reverse-engineering effort -- but after what I've seen from the port this year, I won't call it impossible.
+
+^R- <Linguica>
+
+
+:Machaward: Most creative, unusual, or artistically compelling project
+:===============================================================================
+:[4: Arbitrary Code Execution] - <kgsws>
+:-------------------------------------------------------------------------------
+
+Finding an arbitrary code execution (ACE) exploit in a program is the holy grail for any determined hacker. In general, this requires finding a bug allowing a user to shim in their own code somehow -- either by loading their own data, or as any long time GDQ watcher knows by now, even by coding it in with controller button presses.
+
+$KEY:L=URL:https://nvd.nist.gov/vuln/detail/CVE-2020-15007
+Perhaps 2020 left hackers with a lot of extra computer time, because the dam broke this year for `Doom` ACE exploit shenanigans. In June of this year, longtime community member <Revenant> poked at the `Doom` source code and realized she could feed the `Doom` engine a specially constructed .cfg file, overflowing a buffer and letting her [L: pwn the system]. The method was somewhat arcane, however, requiring use of the little-known "-config" command line option, and was not further pursued.
+
+$KEY:M=URL:https://github.com/kgsws/doom_ace
+Only a few months later in September, <kgsws> also cracked the code. The first revelation was that the [M: savegame loading code] could be coerced into running an ACE exploit through clever construction. <kgsws> went above and beyond the "Hello world" style proof of concept by coding classic calculator game `Snake` directly onto the `Doom` HUD. Again, however, this required an obscure "-loadgame" command, so while it proved the point, it was less beautiful than it could be.
+
+$KEY:N=URL:https://github.com/kgsws/doom_ace/tree/doom2_ace
+At that stage a less inspired hacker might call it a day, having definitively pwned *DOS* `Doom`. <kgsws> continued searching, however, and soon weaponized [N: another vulnerability inside the WAD loading code]. This new technique allowed all of the trickery to be esconsed inside a "normal" PWAD and loaded using the normal "-file" command.
+
+The consequences of this are potentially enormous. The classic tool *DeHackEd* was developed in 1994 because hackers quickly grew frustrated with `Doom`'s set-in-stone gameplay variables and paged through `Doom`'s binary code to document a set of integers and text strings that could be safely overwritten. A `Doom` ACE exploit, on the other hand, allows a hacker to run absolutely any code at all. Mouselook and colored lighting? Sure. A *DECORATE* parser? Why not? Maybe someone will eventually stick `Quake` inside of a `Doom` WAD. What's to stop them? An ACE exploit means that literally anything can be done in a *DOS* `Doom` mod now, provided a person is willing to go to the effort to implement it.
+
+What does this mean for `Doom` modding? Probably not much, really, since who's playing `Doom` under *DOS* anymore? Perhaps a functional *DECORATE* parser in *DOS* `Doom` will eventually shame other source ports into adopting it as a cross platform standard, but anything could happen. A working, documented ACE exploit also means that running `Doom` in a *DOSBox* directory alongside other sensitive files could even potentially be a security risk. It is, however, profoundly cool.
+
+^R- <Linguica>
+
+
+:Creator of the Year
+:===============================================================================
+:5: <Bridgeburner56>
+:-------------------------------------------------------------------------------
+
+$KEY:O=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/joymaps6
+From the very beginning of his `Doom` career, <Bridgeburner> has aimed far and high to create some of the most aesthetically pleasing and ass-kicking maps possible. His very first publicly released map in [O: Joy of Mapping 6] quickly established that he was in no way new to the game -- in truth, he's been mapping about 15 years on and off, mostly honing his skills outside of the community. But since 2018, he's grown his mapping skills in the public eye, and at an incredibly voracious rate, at that.
+
+$KEY:P=URL:https://www.doomworld.com/forum/topic/106310
+$KEY:Q=URL:https://www.doomworld.com/25years/the-roots-of-doom-mapping/
+His first real break, however, came in May of 2019, with his first solo release, [P: The Slaughter Spectrum]. Five beautiful, incredible, mind-bending maps that stood to challenge just what was thought to be possible with `Doom` -- in <Bridge>'s case, the sky (or the void) couldn't even hold him back. <Bridgeburner>'s style and mapping prowess on full display, each map filled with incredible, behemoth architecture but detailed to razor-sharp precision, it was enough to spawn a whole new era in mapping -- the Nouveau-Hardcore era, as <Not Jabba> detailed in [Q: The Roots of Doom Mapping]'s Chapter 11 last year.
+
+$KEY:R=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/1klinecp
+$KEY:S=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/1klinecp2
+When he wasn't smashing record linedef counts while creating his incredible UDMF works, he was sharpening his teeth in other formats. `1000 Line Community Projects` [R: 1] and [S: 2] both afforded him the opportunity to create his signature flavor of hardcore combat while remaining within both vanilla limits and a mere 1000 lines. His participation in <DyingCamel>'s `Demons 3`, a *Boom*-format set, proved that <Bridgeburner> is no less than a mapping machine -- not bound by formats or time limits when it comes to just how far he can push the editor.
+
+$KEY:T=URL:https://www.doomworld.com/forum/topic/107249/?tab=comments#comment-2003892
+Then came... [T: The Mapwich].
+
+The `Mapwich`'s premise of randomly assigned pairs of mappers was at first daunting, but <Bridgeburner> lead it with style, setting an example with <General Roasterock> in his usual over-the-top mapping style. What lessons he learned in the first iteration carried over into `Mapwich 2: The Mapwitchening`, even despite several challenges faced with the use of a different source port and the addition of a gameplay mod. His pairing with fellow mapping legend <Dragonfly> produced one of the best mapping collaborations in 2020, `"Knowledge Is Power"`. A true exploratory masterpiece, this sprawling iron fortress nestled into blood-filled caves holds some of the most brutal and brilliant fights in the set, a direct result of some of the best brains in modern `Doom` mapping being put together.
+
+With all of 2020's craziness with quarantines and isolation, the self-proclaimed "mad mapper" did what he does best -- created something truly mad. Entering: `Bastion of Chaos`. A true culmination of all that he's learned in the past two years of his career, <Bridge> goes all out in this epic adventure of a map, which contains equal parts terrifying gameplay and beautiful vistas. This black and red marble monstrosity leaves the player often running towards its red seas for reprieve, but there is none to be found -- <Bridge> leaves nothing to chance and no mercy at any point, the thunderous cries of demons echoing large within its great halls. This only a small taste of what's to come -- and what's that, you might ask?
+
+$KEY:U=URL:https://www.doomworld.com/forum/topic/99983
+An [U: Age of Hell] is coming.
+
+What started off as an inkling of an idea 10 years ago has now gained a life of its own, a cavalcade of some of the most talented `Doom` mappers, spriters, musicians, and graphics artists this side of Hell marching to the beat of <Bridgeburner>'s thunderous drums. With gorgeous paladin-inspired weapons and some of the most mind-blowing mapping seen to date, `Age of Hell` has quickly become one of the most ambitious total conversions the `Doom` community has seen -- and it hasn't even been released yet.
+
+What makes <Bridgeburner> truly stand head and shoulders above the rest, however, is his leadership and sense of community. His *Discord* server, the Hellforge, has grown to over 1000 members over the course of two years, and has become a haven for all those who love `Doom`. Several incredible projects have been nurtured there, including the Hellforge's own `Mapwich 1` and `2`, and <RonnieJamesDiner>'s `Tartarus`. The Hellforged Speedmapping sessions have also been in full force this year -- low-key, 2-hour sessions every month or so, giving mappers both new and experienced a chance to show off what they can build quickly. Whether it's through his streams, through his *Discord* server, or among the seemingly hundreds of other places he can be found, <Bridge> is always ready with sage and practical mapping advice, or simply a word of encouragement when one really needs it. Without a doubt, <Bridgeburner> is a force to be reckoned with, bringing a new age of mapping with him.
+
+^R- <Major Arlene>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/cacowards/2020/others/
+:source [#: www.doomworld.com/cacowards/2020/others/]
