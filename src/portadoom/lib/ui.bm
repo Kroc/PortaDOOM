@@ -305,8 +305,8 @@ SUB formatLine (indent%, src$, default_theme%)
     
     'always right-trim a line as this can cause unexpected wrapping
     LET src$ = RTRIM$(src$)
-    'length of the input string; further down, we'll add a terminating space
-    'to allow look-ahead, but this value won't change
+    'length of the input string; further down, we'll add a terminating
+    'space to allow look-ahead, but this value won't change
     DIM src_len%: LET src_len% = LEN(src$)
 
     'define the width of the line for word-wrapping: (sans-indent)
@@ -480,21 +480,21 @@ SUB formatLine (indent%, src$, default_theme%)
 
     '-------------------------------------------------------------------------
 
-    'bold / italic / term are only valid on word-boundaries;
+    'bold / italic / cite are only valid on word-boundaries;
     'the beginning of a line is always a word-boundary
     DIM is_boundary`: LET is_boundary` = TRUE
 
-    'we need to know if a word was already bold/italic/term &c. when it began,
+    'we need to know if a word was already bold/italic/cite &c. when it began,
     'so that if it's wrapped we can insert the format code on the new line
     DIM is_bold`, word_bold`
     DIM is_italic`, word_italic`
-    DIM is_term`, word_term`
-    DIM is_paren`, word_paren`
+    DIM is_cite`, word_cite`
     DIM is_name`, word_name`
     DIM is_key`, word_key`
 
     'process text:
     FOR src% = src% TO src_len%
+        '=====================================================================
         'get current character in the source line
         LET char% = ASC(src$, src%)
         'this moves the column in the source text forward, however
@@ -512,6 +512,7 @@ SUB formatLine (indent%, src$, default_theme%)
         END IF
 
         'within key link text no formatting occurs!
+        '---------------------------------------------------------------------
         IF is_key` = TRUE THEN
             'is this the end of the key text?
             IF char% = CTL_KEY_OFF THEN
@@ -542,7 +543,8 @@ SUB formatLine (indent%, src$, default_theme%)
             _CONTINUE
         END IF
         
-        'within name no formatting occurs!
+        'within <person name> no formatting occurs!
+        '---------------------------------------------------------------------
         IF is_name` = TRUE THEN
             'is this the end of the name?
             IF char% = CTL_NAME_OFF THEN
@@ -573,6 +575,8 @@ SUB formatLine (indent%, src$, default_theme%)
             _CONTINUE
         END IF
 
+        'normal body text...
+        '---------------------------------------------------------------------
         SELECT CASE char%
             CASE CTL_INDENT
                 '.............................................................
@@ -615,35 +619,11 @@ SUB formatLine (indent%, src$, default_theme%)
 
             CASE CTL_NAME_ON
                 '.............................................................
-                'enable the name mode
+                'enable the person name mode
                 '(no word boundary is required)
                 LET is_name` = TRUE
                 'change the colour
-                LET word$ = word$ + "^{F@I}"
-
-''            CASE CTL_PAREN_ON
-''                '.............................................................
-''                'automatic paren mode will only occur on a word boundary
-''                IF is_boundary` = TRUE THEN
-''                    'enable the paren mode
-''                    LET is_paren` = TRUE
-''                    LET word$ = word$ + "^{F@P}"
-''                END IF
-''                'add the parenthesis to the output
-''                GOSUB addChar
-''                'a word boundary occurs within the parens
-''                LET is_boundary` = TRUE
-''
-''           CASE CTL_PAREN_OFF
-''               '.............................................................
-''               GOSUB addChar
-''               IF is_paren` = TRUE THEN
-''                   'end paren mode
-''                   LET is_paren` = FALSE
-''                   LET word$ = word$ + "^{F-}"
-''               END IF
-''               'a word boundary occurs after the parens
-''               LET is_boundary` = TRUE
+                LET word$ = word$ + "^{F@N}"
 
             CASE CTL_BOLD
                 '.............................................................
@@ -668,7 +648,7 @@ SUB formatLine (indent%, src$, default_theme%)
                     CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
                          ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
                          ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
-                         ASC_BTICK, CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
+                         ASC_BTICK, CTL_ITALIC, ASC_LPAREN, ASC_RPAREN
                         'word boundary? if bold is on, flip it off
                         IF is_bold` = TRUE THEN
                             LET is_bold` = FALSE
@@ -718,7 +698,7 @@ SUB formatLine (indent%, src$, default_theme%)
                          ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
                          ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
                          ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
-                         CTL_BOLD, CTL_PAREN_ON, CTL_PAREN_OFF
+                         CTL_BOLD, ASC_LPAREN, ASC_RPAREN
                         'word boundary? if italic is on, flip it off
                         IF is_italic` = TRUE THEN
                             LET is_italic` = FALSE
@@ -744,7 +724,7 @@ SUB formatLine (indent%, src$, default_theme%)
                         END IF
                 END SELECT
 
-            CASE CTL_TERM
+            CASE CTL_CITE
                 '.............................................................
                 'check the next character:
                 SELECT CASE ASC(src$, src% + 1)
@@ -755,9 +735,9 @@ SUB formatLine (indent%, src$, default_theme%)
 
                     CASE ASC_SPC, ASC_TAB
                         'if followed by whitespace, then it's
-                        'assumed to be a closing term marker
-                        IF is_term` = TRUE THEN
-                            LET is_term` = FALSE
+                        'assumed to be a closing cite marker
+                        IF is_cite` = TRUE THEN
+                            LET is_cite` = FALSE
                             LET word$ = word$ + "^{F-}"
                         ELSE
                             'treat as literal
@@ -767,15 +747,15 @@ SUB formatLine (indent%, src$, default_theme%)
                     CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
                          ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
                          ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
-                         ASC_BTICK, CTL_ITALIC, CTL_PAREN_ON, CTL_PAREN_OFF
-                        'word boundary? if term is on, flip it off
-                        IF is_term` = TRUE THEN
-                            LET is_term` = FALSE
+                         ASC_BTICK, CTL_ITALIC, ASC_LPAREN, ASC_RPAREN
+                        'word boundary? if cite is on, flip it off
+                        IF is_cite` = TRUE THEN
+                            LET is_cite` = FALSE
                             LET word$ = word$ + "^{F-}"
 
-                        ELSEIF is_term` = FALSE THEN
-                            LET is_term` = TRUE
-                            LET word$ = word$ + "^{F@T}"
+                        ELSEIF is_cite` = FALSE THEN
+                            LET is_cite` = TRUE
+                            LET word$ = word$ + "^{F@C}"
 
                         ELSE
                             'treat as literal
@@ -783,15 +763,15 @@ SUB formatLine (indent%, src$, default_theme%)
                         END IF
 
                     CASE ELSE
-                        'term can only be enabled at a word-boundary
+                        'cite can only be enabled at a word-boundary
                         IF is_boundary` = TRUE THEN
-                            LET is_term` = TRUE
-                            LET word$ = word$ + "^{F@T}"
+                            LET is_cite` = TRUE
+                            LET word$ = word$ + "^{F@C}"
                         ELSE
-                            'term can be disabled mid-word
+                            'cite can be disabled mid-word
                             '(use double-backtick to escape)
-                            IF is_term` = TRUE THEN
-                                LET is_term` = FALSE
+                            IF is_cite` = TRUE THEN
+                                LET is_cite` = FALSE
                                 LET word$ = word$ + "^{F-}"
                             ELSE
                                 'middle of word, treat as literal
@@ -820,7 +800,7 @@ SUB formatLine (indent%, src$, default_theme%)
                 LET is_boundary` = TRUE
 
             CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_PLUS, ASC_COMMA, _
-                 ASC_SEMICOLON, CTL_PAREN_ON, CTL_PAREN_OFF
+                 ASC_SEMICOLON, ASC_LPAREN, ASC_RPAREN
                 '.............................................................
                 'these break the word, but the character must be included
                 GOSUB addChar
@@ -908,7 +888,7 @@ SUB formatLine (indent%, src$, default_theme%)
                         LET ws% = ws% + adjust%
                         'set the next line indent to the current position
                         LET next_indent% = src_col%
-                        'clear the bold/italic/term state;
+                        'clear the bold/italic/cite state;
                         'this removes the need for a *lot* of fiddly typing
                         IF is_bold` = TRUE THEN
                             CALL STRGUI_Add("^{F-}")
@@ -918,9 +898,9 @@ SUB formatLine (indent%, src$, default_theme%)
                             CALL STRGUI_Add("^{F-}")
                             LET is_italic` = FALSE
                         END IF
-                        IF is_term` = TRUE THEN
+                        IF is_cite` = TRUE THEN
                             CALL STRGUI_Add("^{F-}")
-                            LET is_term` = FALSE
+                            LET is_cite` = FALSE
                         END IF
                     END IF
                 END IF
@@ -1007,18 +987,16 @@ SUB formatLine (indent%, src$, default_theme%)
     END IF
     'is this a heading we're processing?
     IF is_heading` = TRUE THEN CALL STRGUI_Add("^{F@H}")
-    'are we currently in parentheses?
-    IF word_paren` = TRUE THEN CALL STRGUI_Add("^{F@P}")
     'in key mode?
     IF word_key` = TRUE THEN CALL STRGUI_Add("^{F@K}")
-    'in name mode?
-    IF word_name` = TRUE THEN CALL STRGUI_Add("^{F@I}")
+    'in person name mode?
+    IF word_name` = TRUE THEN CALL STRGUI_Add("^{F@N}")
     'are we currently bold?
     IF word_bold` = TRUE THEN CALL STRGUI_Add("^{F@B}")
     'are we currently italic?
     IF word_italic` = TRUE THEN CALL STRGUI_Add("^{F@I}")
-    'are we currently in a term?
-    IF word_term` = TRUE THEN CALL STRGUI_Add("^{F@T}")
+    'in cite?
+    IF word_cite` = TRUE THEN CALL STRGUI_Add("^{F@C}")
     'begin the line with the remaining word
     GOSUB pushWord
 
@@ -1031,10 +1009,9 @@ SUB formatLine (indent%, src$, default_theme%)
     'to the new line
     LET word_bold` = is_bold`
     LET word_italic` = is_italic`
-    LET word_term` = is_term`
-    LET word_paren` = is_paren`
-    LET word_key` = is_key`
+    LET word_cite` = is_cite`
     LET word_name` = is_name`
+    LET word_key` = is_key`
     'we are now at the beginning of a word
     LET is_boundary` = TRUE
 
@@ -1080,9 +1057,9 @@ SUB formatLine (indent%, src$, default_theme%)
     CALL STRGUI_SetVar("f", Themes(theme%).colorFore)
     CALL STRGUI_SetVar("B", Themes(theme%).colorBold)
     CALL STRGUI_SetVar("I", Themes(theme%).colorItalic)
-    CALL STRGUI_SetVar("T", Themes(theme%).colorTerm)
+    CALL STRGUI_SetVar("C", Themes(theme%).colorCite)
+    CALL STRGUI_SetVar("N", Themes(theme%).colorName)
     CALL STRGUI_SetVar("H", Themes(theme%).colorHead)
-    CALL STRGUI_SetVar("P", Themes(theme%).colorParen)
     CALL STRGUI_SetVar("K", Themes(theme%).colorKey)
     CALL STRGUI_SetVar("!", Themes(theme%).colorFore + BLINK)
     

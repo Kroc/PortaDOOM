@@ -43,11 +43,9 @@ CONST CTL_HEADING = ASC_COLON '    :
 CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
 CONST CTL_ITALIC = ASC_USCORE '    _..._
-CONST CTL_TERM = ASC_BTICK '       `...`
+CONST CTL_CITE = ASC_BTICK '       `...`
 CONST CTL_LINE1 = ASC_EQUALS '     =
 CONST CTL_LINE2 = ASC_DASH '       -
-CONST CTL_PAREN_ON = ASC_LPAREN '  (
-CONST CTL_PAREN_OFF = ASC_RPAREN ' )
 CONST CTL_NAME_ON = ASC_LT '       <
 CONST CTL_NAME_OFF = ASC_GT '      >
 CONST CTL_KEY_ON = ASC_LSQB '      [
@@ -99,20 +97,20 @@ CONST COLOR_FGND = 1 '..foreground colour
 CONST COLOR_BOLD = 2 '..*bold* text
 CONST COLOR_ITALIC = 3 '_italic_ text
 CONST COLOR_TERM = 4 '..`term` text
-CONST COLOR_HEAD = 5 '..heading and other structural elements
-CONST COLOR_PAREN = 6 '.parentheses (...)
+CONST COLOR_NAME = 5 '..person <name>
+CONST COLOR_HEAD = 6 '..heading and other structural elements
 CONST COLOR_KEY = 7 '...key marker [...]
 
 TYPE Theme
     name AS STRING * 15
     colorBack AS _BYTE
     colorFore AS _BYTE
-    colorBold AS _BYTE
-    colorItalic AS _BYTE
-    colorTerm AS _BYTE
+    colorBold AS _BYTE '...*bold*
+    colorItalic AS _BYTE '.._italic_
+    colorCite AS _BYTE '...`cite`
+    colorName AS _BYTE '...<name>
+    colorKey AS _BYTE '....[key]
     colorHead AS _BYTE
-    colorParen AS _BYTE
-    colorKey AS _BYTE
     colorPageTab AS _BYTE 'foreground colour of the page tab border
     themeHeader AS _BYTE '.which theme to get the header colours from
     themeWarning AS _BYTE 'which theme to switch to for warning boxes
@@ -133,9 +131,9 @@ LET Themes(THEME_HELP).colorBack = CYAN
 LET Themes(THEME_HELP).colorFore = BLACK
 LET Themes(THEME_HELP).colorBold = WHITE
 LET Themes(THEME_HELP).colorItalic = BLUE
-LET Themes(THEME_HELP).colorTerm = LTGREY
+LET Themes(THEME_HELP).colorCite = LTGREY
+LET Themes(THEME_HELP).colorName = BLUE
 LET Themes(THEME_HELP).colorHead = YELLOW
-LET Themes(THEME_HELP).colorParen = LTGREY
 LET Themes(THEME_HELP).colorKey = AQUA
 LET Themes(THEME_HELP).colorPageTab = BLACK
 LET Themes(THEME_HELP).themeHeader = THEME_RED
@@ -146,9 +144,9 @@ LET Themes(THEME_WARNING).colorBack = LTGREY
 LET Themes(THEME_WARNING).colorFore = RED
 LET Themes(THEME_WARNING).colorBold = BLACK
 LET Themes(THEME_WARNING).colorItalic = DKGREY
-LET Themes(THEME_WARNING).colorTerm = RED
+LET Themes(THEME_WARNING).colorCite = RED
+LET Themes(THEME_WARNING).colorName = DKGREY
 LET Themes(THEME_WARNING).colorHead = RED
-LET Themes(THEME_WARNING).colorParen = RED
 LET Themes(THEME_WARNING).colorKey = PURPLE
 LET Themes(THEME_WARNING).colorPageTab = RED
 LET Themes(THEME_WARNING).themeHeader = THEME_RED
@@ -158,10 +156,10 @@ LET Themes(THEME_BLACK).name = "BLACK"
 LET Themes(THEME_BLACK).colorBack = BLACK
 LET Themes(THEME_BLACK).colorFore = DKGREY
 LET Themes(THEME_BLACK).colorBold = WHITE
-LET Themes(THEME_BLACK).colorItalic = PURPLE
-LET Themes(THEME_BLACK).colorTerm = LTGREY
+LET Themes(THEME_BLACK).colorItalic = LTGREY
+LET Themes(THEME_BLACK).colorCite = PURPLE
+LET Themes(THEME_BLACK).colorName = ROSE
 LET Themes(THEME_BLACK).colorHead = RED
-LET Themes(THEME_BLACK).colorParen = LTGREY
 LET Themes(THEME_BLACK).colorKey = YELLOW
 LET Themes(THEME_BLACK).colorPageTab = PINK
 LET Themes(THEME_BLACK).themeHeader = THEME_RED
@@ -172,9 +170,9 @@ LET Themes(THEME_BLUE).colorBack = BLUE
 LET Themes(THEME_BLUE).colorFore = LTGREY
 LET Themes(THEME_BLUE).colorBold = WHITE
 LET Themes(THEME_BLUE).colorItalic = LIME
-LET Themes(THEME_BLUE).colorTerm = CYAN
+LET Themes(THEME_BLUE).colorCite = CYAN
+LET Themes(THEME_BLUE).colorName = LIME
 LET Themes(THEME_BLUE).colorHead = YELLOW
-LET Themes(THEME_BLUE).colorParen = CYAN
 LET Themes(THEME_BLUE).colorKey = AQUA
 LET Themes(THEME_BLUE).colorPageTab = AQUA
 LET Themes(THEME_BLUE).themeHeader = THEME_RED
@@ -185,9 +183,9 @@ LET Themes(THEME_RED).colorBack = RED
 LET Themes(THEME_RED).colorFore = LTGREY
 LET Themes(THEME_RED).colorBold = WHITE
 LET Themes(THEME_RED).colorItalic = ROSE
-LET Themes(THEME_RED).colorTerm = LIME
+LET Themes(THEME_RED).colorCite = LIME
+LET Themes(THEME_RED).colorName = ROSE
 LET Themes(THEME_RED).colorHead = YELLOW
-LET Themes(THEME_RED).colorParen = ROSE
 LET Themes(THEME_RED).colorKey = PINK
 LET Themes(THEME_RED).colorPageTab = ROSE
 LET Themes(THEME_RED).themeHeader = THEME_BLUE
@@ -198,9 +196,9 @@ LET Themes(THEME_GREEN).colorBack = GREEN
 LET Themes(THEME_GREEN).colorFore = LIME
 LET Themes(THEME_GREEN).colorBold = WHITE
 LET Themes(THEME_GREEN).colorItalic = BLUE
-LET Themes(THEME_GREEN).colorTerm = AQUA
+LET Themes(THEME_GREEN).colorCite = AQUA
+LET Themes(THEME_GREEN).colorName = BLUE
 LET Themes(THEME_GREEN).colorHead = YELLOW
-LET Themes(THEME_GREEN).colorParen = ROSE
 LET Themes(THEME_GREEN).colorKey = AQUA
 LET Themes(THEME_GREEN).colorPageTab = LIME
 LET Themes(THEME_GREEN).themeHeader = THEME_BLUE
@@ -211,15 +209,18 @@ LET Themes(THEME_GREY).colorBack = LTGREY
 LET Themes(THEME_GREY).colorFore = DKGREY
 LET Themes(THEME_GREY).colorBold = BLACK
 LET Themes(THEME_GREY).colorItalic = PURPLE
-LET Themes(THEME_GREY).colorTerm = WHITE
+LET Themes(THEME_GREY).colorCite = WHITE
+LET Themes(THEME_GREY).colorName = PURPLE
 LET Themes(THEME_GREY).colorHead = BLUE
-LET Themes(THEME_GREY).colorParen = WHITE
 LET Themes(THEME_GREY).colorKey = RED
 LET Themes(THEME_GREY).colorPageTab = RED
 LET Themes(THEME_GREY).themeHeader = THEME_RED
 LET Themes(THEME_GREY).themeWarning = THEME_RED
 
 CONST THEME_DEFAULT = THEME_RED
+
+'constants used for the screen-drawing functions
+'$INCLUDE: 'portadoom\lib\ui.bi'
 
 'page data:
 '-----------------------------------------------------------------------------
