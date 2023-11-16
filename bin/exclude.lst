@@ -2,6 +2,8 @@
 Desktop.ini
 Thumbs.db
 *.tmp
+# Mac / Linux junk
+__MACOSX
 
 # git files and the like
 .*

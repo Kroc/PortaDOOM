@@ -4,15 +4,17 @@ Primary purpose         : Single player
 ===========================================================================
 Title                   : Breach
 Filename                : breach.wad
-Release date            : 2015-12—28
+Release date            : 2017-12-29
 Author                  : Viggles
 Email Address           : alun.bestor@gmail.com
-Other Files By Author   : A handful of enthusiastically bad deathmatch wads
-                          from the early 90s.
-Misc. Author Info       : I make mobile games for a living and develop
+Other Files By Author   : Brigandine (2017 Cacoward winner) and a handful
+                          of enthusiastically bad deathmatch wads from the
+                          early 90s.
+                          
+Misc. Author Info       : I’m an iOS developer for a living and make
                           Boxer (http://boxerapp.com), a DOSBox emulator
-                          port for OS X. This is my first Doom map in about
-                          20 years. (Christ.)
+                          port for OS X. This was my first Doom map in
+                          about 20 years.
 
 Description             : Sprawling techbase medley with surreal interludes
                           in hell. Assume the usual twaddle about
@@ -30,19 +32,20 @@ Description             : Sprawling techbase medley with surreal interludes
                           the second half at some point before the Earth
                           finally plunges into the Sun.)
 
-Additional Credits      : Jani Saarijärvi for playtesting and invaluable
+Additional Credits      : Music by Conelrad: http://conelrad.co.uk
+                          Jani Saarijärvi for playtesting and invaluable
                           design advice.
                           The Doomworld forums for playtesting and vital
                           criticism.
-                          My wife, for her ”unending patience" (her words).
+                          My wife, for her unending patience.
 
 ===========================================================================
 * What is included *
 
 New levels              : 1
 Sounds                  : No
-Music                   : No
-Graphics                : A couple of all-black textures
+Music                   : Yes (OGG format)
+Graphics                : 99% vanilla plus a couple of all-black textures
 Dehacked/BEX Patch      : No
 Demos                   : No
 Other                   : No
@@ -79,9 +82,9 @@ Known Bugs              : Slow loading and poor performance in Doomsday.
                           A few slime trails here and there.
 May Not Run With        : Vanilla/Chocolate Doom, insufficiently
                           limit-removing ports.
-Tested With             : ZDoom 2.7.1, Zandronum 2.0 and 3.0alpha,
-                          Doom Retro 1.9, PrBoom+ 2.5.1.2,
-		           Eternity 3.34.37, Doomsday 1.15.0
+Tested With             : ZDoom 2.7.1, GZDoom 1.9.1, Zandronum 3.0alpha,
+                          Doom Retro 2.5, PrBoom+ 2.5.1.5,
+                          Eternity 3.34.37, Doomsday 1.15.0
 
 
 
@@ -106,6 +109,13 @@ http://washboardabs.net/doom/breach/breach-latest.zip
 
 ===========================================================================
 * Version History *
+
+idgames release (2017-12-29):
+- Music by Conelrad: http://conelrad.co.uk
+- New titlepic.
+- Obsessive-compulsive texture realignment.
+- Tidied up fussy architecture.
+- Made automap more readable.
 
 beta4 (2015-12-28):
 - Tweaked some encounters to increase challenge.

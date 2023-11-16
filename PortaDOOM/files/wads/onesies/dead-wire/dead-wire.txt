@@ -4,8 +4,9 @@ Advanced engine required: GZDoom
 ===========================================================================
 Title                   : dead.wire
 Filename                : xa-dwire.wad
-Release date            : 9/26/2015
-Version                 : 1.0
+Release date            : 12/30/2017
+Original Release date   : 9/26/2015
+Version                 : 1.1
 Author                  : Xaser Acheron
 Email Address           : xaser.88@gmail.com
 
@@ -49,7 +50,7 @@ Difficulty Settings     : Maybe
 Base                    : Tormentor667's Doomja Vu base map, which in turn
                           is based on Ultimate Doom's E1M7. Little remains
                           aside from a vague sense of layout.
-Build Time              : 3-ish (rather sleepless) days.
+Build Time              : 3-ish (rather sleepless) days + a few tweak-hours
 Editor(s) used          : GZDoom Builder, SLADE3
 May Not Run With...     : ZDoom/GZDoom's software renderer. Use GL and
                           enable dynamic lights.
@@ -101,6 +102,6 @@ Diskette, CD, etc) as long as you include this file intact.
 ===========================================================================
 * Where to get the file that this text file describes *
 
-http://static.angrysience.net/pub/doom/
-http://idgames.doomworld.com
+https://static.angrysience.net/pub/doom/
+https://idgames.doomworld.com
 in your brain

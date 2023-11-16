@@ -6,7 +6,9 @@ Primary purpose         : Single player
 
 Title                   : Ancient Aliens
 Filename                : aaliens.zip
-Release date            : May 8, 2016
+Release date            : May 8, 2016 (version 1)
+			  December 30, 2022 (version 1.1)
+			  March 16, 2023 (version 1.2)
 Author                  : Paul "skillsaw" DeBruyne
 Email Address           : [redacted]
 Other Files By Author   : Sector 666 (666.zip)
@@ -26,7 +28,11 @@ Other Files By Author   : Sector 666 (666.zip)
                           
 Misc. Author Info       : Makes maps for Doom
 
-Description             : Ancient Aliens is a megawad featuring 32 colorful,
+Description             : Demos recorded with the original release of Ancient Aliens are compatible with this update.
+			  Version 1.1 includes updates to textures. Version 1.2 includes an update to fix a MAP24 crash 
+			  in Eternity caused by mistakenly rebuilding the nodes in MAP24.
+
+			  Ancient Aliens is a megawad featuring 32 colorful,
                           action-packed maps for Boom compatible ports.
                           
                           Go on a journey to discover the truth about the 
@@ -34,6 +40,8 @@ Description             : Ancient Aliens is a megawad featuring 32 colorful,
                           
                           I'm not saying it was aliens, but... the truth
                           is out there.
+						  
+						  
 
 ===========================================================================
 
@@ -101,7 +109,6 @@ Texture Credits         : NiGHTMARE
                           Roger Ritenour
                           Spackle
                           Tarnsman
-                          lupinx-Kassman
                           skillsaw
                           GothicDM Team
                           Eternal Doom Team
@@ -110,6 +117,25 @@ Texture Credits         : NiGHTMARE
                           Raven Software
                           Rogue Entertainment
                           Valve Software
+			  lupinx-Kassman (see LKTex for details on individual resources)
+			  Greenwar 2 Texture Contributors
+			  Risen
+Texture Credits 
+from prior versions     : Hacx 2.0 Team
+			  Afro Samurai: Resurrection team
+			  xymonau
+			  Lars Petersson
+			  Jim Flynn
+			  Capcom
+			  Tears for Fears album logo
+			  William Neal
+			  Gary Cowles
+			  NASA Expedition 20 crew
+			  Shamus Young
+			  Jessica D
+			  Justin Fisher
+			  LucasArts
+
 
 Sprite Credits          : Eriance                        
                           Virtue
@@ -216,6 +242,33 @@ Music Listing           : MAP01 - "Flee"
 
                           https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost                       
                           
+Additional Credits and Special Thanks
+from lupinx-Kassman  	: Thanks to Skillsaw for helping finish the map when the deadline was looming. 
+			  He designed the areas starting from the red key door which includes the windy bridge and islands connected to it, 
+			  the vile fight arena in the "lower" section of the level, 
+			  the set of ring teleports in the lower section that lead to the exit, and the exit staircase
+			  arena with the revenants that leads to the final arena along with the surrounding UFOs. 
+			  He also retextured various areas, made gameplay additions and fixes, and
+			  added extra detail throughout the map. And though I added the saucer intro, the saucer design is based on his 
+			  numerous saucers throughout the megawad. Thanks to Jim Flynn, Bob Reganess, and Roger Ritenour who were major influences
+			  for me at the time. The first mega armor platform after ascending the rope is a rough reference to the megasphere lift 
+			  in Jim Flynn's "Trapped on Titan" map. The "Aboo Ocean" name in MAP24's intro blurb is a reference 
+			  to aboocean.wad (the filename for Bob Reganess's "Shoreleave" episode). The wooden ladders used throughout MAP24 are like 
+			  the wooden ladder used in Roger Ritenour's EarthZD. Thanks to the bands
+			  Emerson, Lake & Palmer, and Tears for Fears whom I listened to while 
+			  working on the map. Their album iconagraphy could originally be found as the Tarkus tank
+			  in the plasma rifle secret in MAP24, and the Tears for Fears sun symbol used in intro screen and
+			  as part of the "Gateway of Knowledge" at the end of the map in prior versions of the map. The sector-based shadow 
+			  is still in the shape of the Tears for Fears logo. Didn't want to risk disrupting speedruns by altering the shadow 
+			  to match the new sun emblem, so now its permanent memory of what once was. The plasma gun secret's TV is the TV
+			  from Spackle's YakWorld. The bed was originally going to be a reference to a bed from Dino T. Manzella's Townhouses map, 
+			  though it ended up becoming a reference to my dumb real-life avocado colored bed at the time. 
+			  The small ceiling hand sector near the intro of MAP24 is based on a low-scale image of 3d_molier's cartoon hand 3d model.
+			  The visual trick of the moving prisoner was inspired by a similar trick used in Hugo Elias's McFearsm.wad.
+			  Thanks to Sega's Sonic the Hedgehog 3 for "Sky Santuary Zone"
+			  Epic's Unreal Gold, and iD's Quake 3 which were large inspirations for the theme of MAP24. All resources in this wad prefixed 
+			  with "KS_" are described individually in detail in OldResourceCredits.txt of LKTex. 
+
 ===========================================================================
 
 * What is included *
@@ -253,6 +306,22 @@ May Not Run With...     : Gameplay mods that change the palette or don't
                           
                           If you encounter garbled texture graphics while 
                           using a mod try changing the load order.
+	
+* Disclaimer *
+	
+NOTE: GOTHICTX.txt requests that the below disclaimer not be modified, but cdrom.com isn't around anymore. 
+	Replace the links in the disclaimer with the following respectively: 
+	https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothicdm 
+	https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothic2
+		  
+	* DISCLAIMER *
+	This PWAD contains select texture(s) and flat(s) that can originally be found
+	in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+	flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+	ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+	contains thirty-two professional quality levels and music.
+	http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+	http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
                          
 
 * Copyright / Permissions *

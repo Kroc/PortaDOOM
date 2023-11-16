@@ -1,6 +1,6 @@
 $NAV=Onesies
-$KEY:P=SHELL:launcher.exe "wads\onesies\xa-dwire\play-xa-dwire.ini"
-$KEY:T=SHELL:wads\onesies\xa-dwire\xa-dwire.txt
+$KEY:P=SHELL:launcher.exe "wads\onesies\dead-wire\play-dead-wire.ini"
+$KEY:T=SHELL:wads\onesies\dead-wire\dead-wire.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/74767
 
 :dead.wire                                          * 2015 Cacoward Winner! *
