@@ -42,7 +42,7 @@ CONST CTL_RIGHT = ASC_R '          ^R - right alignment
 CONST CTL_HEADING = ASC_COLON '    :
 CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
-CONST CTL_ITALIC = ASC_USCORE '    _..._
+CONST CTL_TERM = ASC_USCORE '      _..._
 CONST CTL_CITE = ASC_BTICK '       `...`
 CONST CTL_LINE1 = ASC_EQUALS '     =
 CONST CTL_LINE2 = ASC_DASH '       -
@@ -95,8 +95,8 @@ DIM SHARED StatusHeight%%: StatusHeight%% = 0
 CONST COLOR_BGND = 0 '..background colour
 CONST COLOR_FGND = 1 '..foreground colour
 CONST COLOR_BOLD = 2 '..*bold* text
-CONST COLOR_ITALIC = 3 '_italic_ text
-CONST COLOR_TERM = 4 '..`term` text
+CONST COLOR_TERM = 3 '.._term_ name
+CONST COLOR_CITE = 4 '..`cite` text
 CONST COLOR_NAME = 5 '..person <name>
 CONST COLOR_HEAD = 6 '..heading and other structural elements
 CONST COLOR_KEY = 7 '...key marker [...]
@@ -105,12 +105,12 @@ TYPE Theme
     name AS STRING * 15
     colorBack AS _BYTE
     colorFore AS _BYTE
-    colorBold AS _BYTE '...*bold*
-    colorItalic AS _BYTE '.._italic_
-    colorCite AS _BYTE '...`cite`
-    colorName AS _BYTE '...<name>
+    colorBold AS _BYTE '....*bold*
+    colorTerm AS _BYTE '...._term_ name
+    colorCite AS _BYTE '...`cite` text
+    colorName AS _BYTE '...person <name>
     colorKey AS _BYTE '....[key]
-    colorHead AS _BYTE
+    colorHead AS _BYTE '...headings and other structural elements
     colorPageTab AS _BYTE 'foreground colour of the page tab border
     themeHeader AS _BYTE '.which theme to get the header colours from
     themeWarning AS _BYTE 'which theme to switch to for warning boxes
@@ -130,7 +130,7 @@ LET Themes(THEME_HELP).name = "HELP"
 LET Themes(THEME_HELP).colorBack = CYAN
 LET Themes(THEME_HELP).colorFore = BLACK
 LET Themes(THEME_HELP).colorBold = WHITE
-LET Themes(THEME_HELP).colorItalic = BLUE
+LET Themes(THEME_HELP).colorTerm = BLUE
 LET Themes(THEME_HELP).colorCite = LTGREY
 LET Themes(THEME_HELP).colorName = BLUE
 LET Themes(THEME_HELP).colorHead = YELLOW
@@ -143,7 +143,7 @@ LET Themes(THEME_WARNING).name = "WARNING"
 LET Themes(THEME_WARNING).colorBack = LTGREY
 LET Themes(THEME_WARNING).colorFore = RED
 LET Themes(THEME_WARNING).colorBold = BLACK
-LET Themes(THEME_WARNING).colorItalic = DKGREY
+LET Themes(THEME_WARNING).colorTerm = DKGREY
 LET Themes(THEME_WARNING).colorCite = RED
 LET Themes(THEME_WARNING).colorName = DKGREY
 LET Themes(THEME_WARNING).colorHead = RED
@@ -156,9 +156,9 @@ LET Themes(THEME_BLACK).name = "BLACK"
 LET Themes(THEME_BLACK).colorBack = BLACK
 LET Themes(THEME_BLACK).colorFore = DKGREY
 LET Themes(THEME_BLACK).colorBold = WHITE
-LET Themes(THEME_BLACK).colorItalic = LTGREY
-LET Themes(THEME_BLACK).colorCite = PURPLE
-LET Themes(THEME_BLACK).colorName = ROSE
+LET Themes(THEME_BLACK).colorTerm = LTGREY
+LET Themes(THEME_BLACK).colorCite = ROSE
+LET Themes(THEME_BLACK).colorName = PURPLE
 LET Themes(THEME_BLACK).colorHead = RED
 LET Themes(THEME_BLACK).colorKey = YELLOW
 LET Themes(THEME_BLACK).colorPageTab = PINK
@@ -169,7 +169,7 @@ LET Themes(THEME_BLUE).name = "BLUE"
 LET Themes(THEME_BLUE).colorBack = BLUE
 LET Themes(THEME_BLUE).colorFore = LTGREY
 LET Themes(THEME_BLUE).colorBold = WHITE
-LET Themes(THEME_BLUE).colorItalic = LIME
+LET Themes(THEME_BLUE).colorTerm = LIME
 LET Themes(THEME_BLUE).colorCite = CYAN
 LET Themes(THEME_BLUE).colorName = LIME
 LET Themes(THEME_BLUE).colorHead = YELLOW
@@ -182,7 +182,7 @@ LET Themes(THEME_RED).name = "RED"
 LET Themes(THEME_RED).colorBack = RED
 LET Themes(THEME_RED).colorFore = LTGREY
 LET Themes(THEME_RED).colorBold = WHITE
-LET Themes(THEME_RED).colorItalic = ROSE
+LET Themes(THEME_RED).colorTerm = ROSE
 LET Themes(THEME_RED).colorCite = LIME
 LET Themes(THEME_RED).colorName = ROSE
 LET Themes(THEME_RED).colorHead = YELLOW
@@ -195,7 +195,7 @@ LET Themes(THEME_GREEN).name = "GREEN"
 LET Themes(THEME_GREEN).colorBack = GREEN
 LET Themes(THEME_GREEN).colorFore = LIME
 LET Themes(THEME_GREEN).colorBold = WHITE
-LET Themes(THEME_GREEN).colorItalic = BLUE
+LET Themes(THEME_GREEN).colorTerm = BLUE
 LET Themes(THEME_GREEN).colorCite = AQUA
 LET Themes(THEME_GREEN).colorName = BLUE
 LET Themes(THEME_GREEN).colorHead = YELLOW
@@ -208,7 +208,7 @@ LET Themes(THEME_GREY).name = "GREY"
 LET Themes(THEME_GREY).colorBack = LTGREY
 LET Themes(THEME_GREY).colorFore = DKGREY
 LET Themes(THEME_GREY).colorBold = BLACK
-LET Themes(THEME_GREY).colorItalic = PURPLE
+LET Themes(THEME_GREY).colorTerm = PURPLE
 LET Themes(THEME_GREY).colorCite = WHITE
 LET Themes(THEME_GREY).colorName = PURPLE
 LET Themes(THEME_GREY).colorHead = BLUE

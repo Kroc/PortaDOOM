@@ -8,7 +8,7 @@ CONST CTL_RIGHT = ASC_R '          ^R - right alignment
 CONST CTL_HEADING = ASC_COLON '    :
 CONST CTL_BULLET = ASC_DASH '      - (bullet point)
 CONST CTL_BOLD = ASC_ASTERISK '    *...*
-CONST CTL_ITALIC = ASC_USCORE '    _..._
+CONST CTL_TERM = ASC_USCORE '      _..._
 CONST CTL_CITE = ASC_BTICK '       `...`
 CONST CTL_LINE1 = ASC_EQUALS '     =
 CONST CTL_LINE2 = ASC_DASH '       -
