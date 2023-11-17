@@ -48,7 +48,7 @@ ECHO     [F]  Cacowards: 2016
 ECHO     [G]  Cacowards: 2015
 ECHO     [5]  Cacowards: 5 Years of Doom
 ECHO:
-ECHO     [P]  PSX DOOM TC
+REM ECHO     [P]  PSX DOOM TC
 ECHO     [Q]  DOOM CE
 ECHO:
 ECHO     [X]  Launcher only
@@ -64,7 +64,7 @@ IF /I "%$%" == "E" CALL :do_release_cacowards "2017"
 IF /I "%$%" == "F" CALL :do_release_cacowards "2016"
 IF /I "%$%" == "G" CALL :do_release_cacowards "2015"
 IF /I "%$%" == "5" CALL :do_release_5yearsofdoom
-IF /I "%$%" == "P" CALL :do_release_psxdoomtc
+REM IF /I "%$%" == "P" CALL :do_release_psxdoomtc
 IF /I "%$%" == "Q" CALL :do_release_doomce
 IF /I "%$%" == "X" CALL :do_release_launcher
 
@@ -173,7 +173,7 @@ CALL :do_cacowards "2017"
 CALL :do_cacowards "2018"
 CALL :do_cacowards "2019"
 CALL :do_cacowards "2020"
-CALL :do_psxdoomtc
+REM CALL :do_psxdoomtc
 CALL :do_doomce
 CALL :do_launcher
 

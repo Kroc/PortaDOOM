@@ -1,10 +1,9 @@
 $THEME=BLUE
 $KEY:A=GOTO:Paradise
 $KEY:B=GOTO:Master Levels #09
-$KEY:C=GOTO:PlayStation DOOM
-$KEY:D=GOTO:Port Glacia
-$KEY:E=GOTO:Preacher
-$KEY:F=GOTO:Prime Directive
+$KEY:C=GOTO:Port Glacia
+$KEY:D=GOTO:Preacher
+$KEY:E=GOTO:Prime Directive
 
 ^C:INDEX :: P
 
@@ -12,7 +11,6 @@ $KEY:F=GOTO:Prime Directive
 
 - [A] *Paradise											Total Conversions
 - [B] *Paradox (Master Levels)							Commercial DOOM
-- [C] *PlayStation DOOM									Commercial DOOM
-- [D] *Port Glacia										Onesies
-- [E] *Preacher											Episodes
-- [F] *Prime Directive									Episodes
+- [C] *Port Glacia										Onesies
+- [D] *Preacher											Episodes
+- [E] *Prime Directive									Episodes

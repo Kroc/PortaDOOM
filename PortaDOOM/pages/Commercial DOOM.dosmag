@@ -4,7 +4,7 @@ $KEY:2=GOTO:DOOM II
 $KEY:F=GOTO:Final DOOM
 $KEY:N=GOTO:No Rest for the Living
 $KEY:M=GOTO:Master Levels
-$KEY:P=GOTO:PlayStation DOOM
+$KEY:P=GOTO:DOOM CE
 $KEY:6=GOTO:DOOM 64
 
 ^C:Commercial DOOM and DOOM-Clones
