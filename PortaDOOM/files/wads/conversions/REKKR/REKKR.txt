@@ -1,0 +1,88 @@
+===========================================================================
+Uploader note           : This is a minor update to 1.16 which replaces
+                          three accidentally-included IWAD flats with
+                          solid-color graphics, thus fully legalizing the
+                          package. It also includes the REK_CREDS.txt file
+                          found in its website's packages so you can see
+                          who did each level and so on.
+                          
+                          This patch was supplied by Revae and is uploaded
+                          with his permission.
+Uploaded on             : 8/20/2019
+Uploaded by             : The Green Herring
+===========================================================================
+Archive Maintainer      : Try not to worry so much.
+Update to               : 1.16a
+Advanced engine needed  : None
+Primary purpose         : Single play
+===========================================================================
+Title                   : REKKR
+Filename                : REKKR.wad
+Release date            : 7/9/2018
+Author                  : Revae
+Email Address           : [redacted]
+Other Files By Author   : Nothing you would know.
+Misc. Author Info       : 165 lbs, all 10 fingers, can juggle
+
+Description             : REKKR is a total conversion for Ultimate Doom v1.9
+
+Additional Credits to   : Music: Tom Jensen
+                          Sounds: TerminusEst13
+                          Mapping: AngrySaint, Bzzrak, AD_79, lupinx-Kassman
+                          Velcrosasquatch, SuperCupcakeTactics, Jaws In Space
+                          Jimmy, TerminusEst13
+                          Testing: Eric, Sarioya, Hexenmapper, Wartorn, 
+                          everyone listed as a mapper
+                          
+===========================================================================
+* What is included *
+
+New levels              : 36
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : All
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Years
+Editor(s) used          : GZDoombuilder, Slade, WhackEd4, Various 2D/3D
+                          packages
+Known Bugs              : Nothing important that I'm aware of.
+May Not Run With        : No legs
+Tested With             : Chocolate Doom, GZDoom, Zandronum, PRBoom(+),Eternity
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: manbitesshark.com
