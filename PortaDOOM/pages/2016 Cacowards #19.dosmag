@@ -8,77 +8,77 @@ $TITLE=Index
 :TOP TEN:
 
 $KEY:0=GOTO:John Romero's Episode 1 #03
-- [0] *Tech Gone Bad* 								<John Romero>
+- [0] `Tech Gone Bad` 								<John Romero>
 
 $KEY:1=GOTO:Ancient Aliens
-- [1] *Ancient Aliens								<Paul "skillsaw" DeBruyne>
+- [1] `Ancient Aliens`								<Paul "skillsaw" DeBruyne>
 
 $KEY:2=GOTO:Nihility
-- [2] *Nihility: Infinite Teeth						<Years>
+- [2] `Nihility: Infinite Teeth`					<Years>
 
 $KEY:3=GOTO:Mutiny
-- [3] *Mutiny										Various
+- [3] `Mutiny`										Various
 
 $KEY:4=GOTO:Absolutely Killed
-- [4] *Absolutely Killed							<Ryath>/<scwiba>
+- [4] `Absolutely Killed`							<Ryath>/<scwiba>
 
 $KEY:5=GOTO:Elf Gets Pissed
-- [5] *Elf Gets Pissed								<RottKing>
+- [5] `Elf Gets Pissed`								<RottKing>
 
 $KEY:6=GOTO:Comatose
-- [6] *Comatose										<Lainos>
+- [6] `Comatose`									<Lainos>
 
 $KEY:7=GOTO:Miasma
-- [7] *Miasma										<tourniquet>
+- [7] `Miasma`										<tourniquet>
 
 $KEY:8=GOTO:Alpha Accident - Terra Nova
-- [8] *Alpha Accident: Terra Nova					<Wraith777>
+- [8] `Alpha Accident: Terra Nova`					<Wraith777>
 
 $KEY:9=GOTO:Japanese Community Project
-- [9] *Japanese Community Project					Various
+- [9] `Japanese Community Project`					Various
 
 $KEY:X=GOTO:Blade of Agony
-- [X] *WolfenDoom - Blade of Agony Ep.1				<Daniel Gimmer> et al
+- [X] `WolfenDoom: Blade of Agony Ep.1`				<Daniel Gimmer> et al
 
 :RUNNERS UP:
 
 $KEY:A=GOTO:Warp House
-- [A] *Warp House									<Ed C.>
+- [A] `Warp House`									<Ed C.>
 
 $KEY:B=GOTO:THT - Threnody
-- [C] *THT: Threnody								Various
+- [C] `THT: Threnody`								Various
 
 $KEY:D=GOTO:Bloodstain
-- [D] *Bloodstain									<Pavel 'Pipicz' Tvrzník>
+- [D] `Bloodstain`									<Pavel 'Pipicz' Tvrzník>
 
 $KEY:E=GOTO:Strange Aeons
-- [E] *Strange Aeons								<Impie>
+- [E] `Strange Aeons`								<Impie>
 
 $KEY:F=GOTO:Echelon
-- [F] *Echelon										<Sverre Andre Kvernmo>
+- [F] `Echelon`										<Sverre Andre Kvernmo>
 
 $KEY:G=GOTO:Shadow of the Wool Ball
-- [G] *Shadow of the Wool Ball						<MSPaintR0cks>
+- [G] `Shadow of the Wool Ball`						<MSPaintR0cks>
 
 :MULTIPLAYER AWARDS:
 
 $KEY:H=GOTO:Aeon Deathmatch
-- [H] *AeonDM										<Mechanix Union>
+- [H] `AeonDM`										<Mechanix Union>
 
 $KEY:I=GOTO:32in24-16
-- [I] *32in24-16									<YEDS gang>
+- [I] `32in24-16`									<YEDS gang>
 
 :BEST GAMEPLAY MOD:
 
 $KEY:J=GOTO:DOOM(4) for DooM
-- [J] *Doom 4 Doom									<DBThanatos> et al.
+- [J] `Doom 4 Doom`									<DBThanatos> et al.
 
 :MORDETH AWARD:
 
 $KEY:K=GOTO:DTWiD Series #03
-- [K] *Doom the Way id Did - The Lost Episodes		Various
+- [K] `Doom the Way id Did: The Lost Episodes`		Various
 
 :MOCKAWARD:
 
 $KEY:L=GOTO:Luducrium
-- [L] *Luducrium									<antares031>
+- [L] `Luducrium`									<antares031>

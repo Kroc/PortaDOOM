@@ -8,48 +8,49 @@ $TITLE=The Side Column pt.II
 :Did You Know...
 :===============================================================================
 
-- *December 10th marked the 23 year anniversary of DOOM?
+- *December 10th marked the 23 year anniversary of `DOOM`?
 
-- *January 4th marked the 2-year anniversary of Urban Brawl: Dead of Winter?
+- *January 4th marked the 2-year anniversary of `Urban Brawl: Dead of Winter`?
 
-- *Mordeth and Millennium were still not released in 2016 despite over eighteen years of development?
+- *`Mordeth` and `Millennium` were still not released in 2016 despite over eighteen years of development?
 
 
 :THE CHRONICLES OF ZEROMASTER
 :===============================================================================
-This used to be the speedrunning section, but it turned a bit one key. Zero key? The Overlord of Naught decided to complete an IWAD grandslam and at various points of this year added the following records to his previous hoard:
+This used to be the speedrunning section, but it turned a bit one key. <Zero> key? The Overlord of Naught decided to complete an IWAD grandslam and at various points of this year added the following records to his previous hoard:
 
 $KEY:1=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\e1nm0639\e1nm0639.lmp" /CMPLVL 3
-- [1] `Doom E1 NM` in *6:39*/*7:52*\\(without/with the boss map... historic reasons)
+- [1] `Doom E1` NM in *6:39*/*7:52*\\(without/with the boss map... historic reasons)
 $KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\ep2-403\ep2-0323.lmp"  /CMPLVL 3
-- [2] `Doom E2 UV` in *3:23*/*4:03*
+- [2] `Doom E2` UV in *3:23*/*4:03*
 $KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\e2nm0452\e2nm0452.lmp" /CMPLVL 3
-- [3] `Doom E2 NM` in *3:45*/*5:25*
+- [3] `Doom E2` NM in *3:45*/*5:25*
 $KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\ep3n421\e3nm0408.lmp"  /CMPLVL 3
-- [4] `Doom E3 NM` in *4:08*/*4:21*
+- [4] `Doom E3` NM in *4:08*/*4:21*
 $KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\ep4-413\ep4-311.lmp"   /CMPLVL 3
-- [5] `Doom E4 UV` in *3:11*/*4:13*
+- [5] `Doom E4` UV in *3:11*/*4:13*
 $KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2016\ep4n654\e4nm0542.lmp"  /CMPLVL 3
-- [6] `Doom E4 NM` in *5:42*/*6:54*
+- [6] `Doom E4` NM in *5:42*/*6:54*
 $KEY:7=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvalln2256\30nm2256.lmp"
-- utterly insane [7] `Doom 2 NM` in *22:56*
+- utterly insane [7] `Doom 2` NM in *22:56*
 $KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvalls4752\30ns4752.lmp"
-- [8] `Doom 2 NM100S` in *47:52*
+- [8] `Doom 2` NM100S in *47:52*
 $KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT   /DEMO "demos\cacowards2016\evalln8336\30tn8336.lmp" /CMPLVL 4
-- [9] first time ever `TNT NM` in *1:23:36*
+- [9] first time ever `TNT` NM in *1:23:36*
 $KEY:0=URL:https://www.youtube.com/watch?v=NqYH27_4ZPk
 - [0: Hexen on Berserker] in *26:45*
 
 $KEY:A=URL:https://www.youtube.com/watch?v=P6J352J_RG8
-I won't even bother to comment in depth. To set the hurdle even higher, he was also the first player to ever beat Doom 2016 on Ultra Nightmare!
+I won't even bother to comment in depth. To set the hurdle even higher, he was also the first player to ever beat `Doom 2016` on Ultra Nightmare!
 [A: Multitasking!]
 
 $KEY:B=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvall-1951\30uv1951.lmp" /CMPLVL 2 /SKILL 4 /WARP 21
 $KEY:C=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\30uv1936\30uv1936.lmp"   /CMPLVL 2
-The beacon of hope in all this booooring one-man rampage came in October when <eLim> beat perhaps the most prestigious record and improved Doom 2 UV to 19:51, including a *[B] brand new shortcut on map21*. But <ZeroMaster> wouldn't allow such excitement and *[C] posted a rebuttal* in 19:36 yesterday, making me rewrite this article, goddamit. I'll be wise to your tricks next year, <ZM>!
+The beacon of hope in all this booooring one-man rampage came in October when <eLim> beat perhaps the most prestigious record and improved `Doom 2` UV to 19:51, including a *[B] brand new shortcut on `map21`*. But <ZeroMaster> wouldn't allow such excitement and *[C] posted a rebuttal* in 19:36 yesterday, making me rewrite this article, goddamit. I'll be wise to your tricks next year, <ZM>!
 
 $KEY:D=URL:https://www.youtube.com/watch?v=Y9Di39wwAmY
-Now let's all watch a keyboard-only player <SAV88> utterly destroy all of the mouse noobs on Alien Vendetta [D: map20 max].
+Now let's all watch a keyboard-only player <SAV88> utterly destroy all of the mouse noobs on `Alien Vendetta` [D: map20 max].
+
 
 :NEAT STUFF SAFARI
 :===============================================================================
@@ -65,7 +66,7 @@ $KEY:G=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/cr-maze
 [G: The Crystal Maze] is a recreation of a classic 90s British gameshow put in the engine, having the player traverse an ominous obstacle course while completing objectives and puzzles.
 
 $KEY:H=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=53250
-[H: The Retro Shader] is one of many customizable GZDoom shaders released this year, providing a nice crunch to the visuals. Perfect either for faux-retro escapades or for indie cred.
+[H: The Retro Shader] is one of many customizable _GZDoom_ shaders released this year, providing a nice crunch to the visuals. Perfect either for faux-retro escapades or for indie cred.
 
 $KEY:I=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=51425
 $KEY:J=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=53107
@@ -77,6 +78,7 @@ $KEY:L=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=51988
 
 $KEY:M=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=52757
 [M: WadSmoosh] takes all of the classic iwads and merges them all together into one singular .pk3, with all unique content separated and each of the campaigns separated into different episodes. Useful!
+
 
 :I'M STILL BORED!
 :===============================================================================
