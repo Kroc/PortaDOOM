@@ -548,14 +548,15 @@ IF %~1 GEQ 302 (
 	ECHO * GZDoom %STR%               ROTWB.WAD
 	CALL :make_gzdoom %VER% "ROTWB.WAD"
 )
-REM # Adventures of Square support from v3.3 onwards
-IF %~1 GEQ 303 (
+REM # Hedon demo uses GZDoom v3.4 and needs its own settings
+IF %VER% EQU 304 CALL :gzdoom_hedon
+REM # Adventures of Square (ep2) support from v4.1 onwards
+REM # (previous version was for v3.3 onwards)
+IF %~1 GEQ 401 (
 	ECHO * GZDoom %STR%               SQUARE1.PK3
 	CALL :make_gzdoom %VER% "SQUARE1.PK3"
 )
-REM # Hedon demo uses GZDoom v3.4 and needs its own settings
-IF %VER% EQU 304 CALL :gzdoom_hedon
-REM # DOOM64 CE (v3.8.0+) support for v4.11 only:
+REM # DOOM64 CE (v3.8.0+) support for GZDoom v4.11 only:
 REM # (the DOOM64 CE INI file will force v4.11)
 IF %VER% EQU 411 (
 	ECHO * GZDoom %STR%               DOOM64.IWAD

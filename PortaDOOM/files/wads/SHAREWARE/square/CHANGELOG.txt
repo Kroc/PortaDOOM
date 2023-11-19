@@ -1,7 +1,85 @@
 The Adventures of Square CHANGELOG
-(C) 2014 - 2018 BigBrik Games
+(C) 2014 - 2019 BigBrik Games
 http://adventuresofsquare.com
 ----------------------------------
+
+2.1
+...
+
+Major
+
+- Upgraded GZDoom engine to v4.1.3. Time marches on! (This will affect your existing 
+  config - you may need to reset it).
+
+- Fixed the crash that occurs when dropping a crate that is picked up.
+- Fixed the "multiplayer desync" that occurred when a player jumped. Yeah, I know. Very
+  confusing.
+
+- Changed some menu fonts to include lower-case letters, and tweaked some messages for 
+  aesthetic reasons!
+
+- All sound is now compressed! Smaller download, and not too much different with the sound 
+  quality!
+
+For Modders (and MDK)
+
+- The Air Control constant that makes Square "more platform-y" is now applied to ALL maps
+  including new ones, so you don't have to replace an existing map in order to get it.
+  It also shouldn't interfere with custom Air Control, if set via MAPINFO.
+
+- The entirety of Square's actor code has been updated to ZScript. No more DECORATE.
+  Be aware that this may affect some existing mods.
+  
+- Added "Effect Zone" scripts to the global library - this can be a big help for
+  turning ambient effects on and off as players move through your maps.
+  
+Weapons
+  
+- The Hellshell Launcher no longer fires if you switch to it while holding down the
+  fire button (for safety reasons).
+- Adjusted the accuracy of the single Oozi (now about as accurate as the Quadcannon).
+- Weapon projectile offsets were adjusted due to rendering issues.
+
+- Fixed the "Hot Sauce Keeping Invulnerability Between Maps" bug.
+
+Maps
+
+- Fixed up E1 maps - misalignments, added "Effect Zones" for performance reasons.
+- Fixed up E2 maps - misalignments, added "Effect Zones" as well.
+- Changed how non-bubbly lava damages players (more forgiving).
+
+- E2A1 had an intermission camera that was stuck to the ceiling. Awkward!
+- Fixed some navigational issues on E2A2.
+- Goodbye, giant Orange Building in E2A3 that added 5 to 10 min. of unnecessary
+  play time.
+- E2A5's small jelly cubes were terrible. So we made them bigger!
+- E2A6's mandatory tent was opened. Too many players missed it, and we didn't convey
+  its "openability" enough. Our bad.
+- Moved an Envirosuit in E2A6.
+- Made bubbly lava not bubbly on E2A6.
+- Made the Pyramid Key in E2A6 a bit tougher to speedrun to.
+- E2A7's yellow armor was too easy to jump to, and completely broke sequence too easily.
+- Gave E1A10 a facelift of sorts.
+- Some Thing Flag fixes on E2A10.
+- E2A11 has some more graphical acoutrement.
+- The secret exit to E2A12 is a little easier to get to.
+- Hello, DM05! So THAT'S where the Orange Building in E2A3 went!
+- Added DM06.
+
+Monsters
+
+- Made the Eyescreamer a bit heavier so he doesn't go flying too fast when getting shot.
+- The Oozi Jerk has a small delay before firing plus a warning sound.
+- Jetpack Jerks now have a small delay before firing.
+- Ovolt/airvolt death explosions have a smaller radius and deal less damage. 
+  However, the Revolt death is a little larger and more damaging!
+
+Misc.
+
+- Some shootable, non-threatening objects drew Autoaim fire. This has been fixed.
+- The "Bubbling Goop" effect never turned off its ambient noise if deactivated.
+- Removed "Hardware Gamma" from the menu. It is obsolete.
+
 
 2.0
 ...
