@@ -8,105 +8,105 @@ $TITLE=Index
 :TOP 10:
 
 $KEY:1=GOTO:Eviternity
-- [1] *Eviternity									<Dragonfly> et al
+- [1] `Eviternity`									<Dragonfly> et al
 
 $KEY:2=GOTO:Verdant Citadel
-- [2] *Verdant Citadel								<exl>
+- [2] `Verdant Citadel`								<exl>
 
 $KEY:3=GOTO:Paradise
-- [3] *Paradis										<Tango>
+- [3] `Paradise`									<Tango>
 
 $KEY:4=GOTO:Hell Forged
-- [4] *Hell Forged									<Amuscaria>
+- [4] `Hell Forged`									<Amuscaria>
 
 $KEY:5=GOTO:Finely Crafted Fetish Film
-- [5] *Finely Crafted Fetish Film					<Ribbiks>
+- [5] `Finely Crafted Fetish Film`					<Ribbiks>
 
 $KEY:6=GOTO:Hocus Pocus Doom
-- [6] *Hocus Pocus Doom								<rf`>
+- [6] `Hocus Pocus Doom`							<rf`>
 
 $KEY:7=GOTO:Shotgun Symphony
-- [7] *Shotgun Symphony								<Steve D>
+- [7] `Shotgun Symphony`							<Steve D>
 
 $KEY:8=GOTO:Lost Civilization
-- [8] *Lost Civilization							<Jaska>
+- [8] `Lost Civilization`							<Jaska>
 
 $KEY:9=GOTO:Remnant
-- [9] *Remnant										<Aurelius>
+- [9] `Remnant`										<Aurelius>
 
 $KEY:0=GOTO:The Wayfarer
-- [0] *The Wayfarer									<Not Jabba>
+- [0] `The Wayfarer`								<Not Jabba>
 
 :RUNNERS UP:
 
 $KEY:A=GOTO:Infraworld - The Hatehammer
-- [A] *Infraworld: The Hatehammer					<StormCatcher.77>
+- [A] `Infraworld: The Hatehammer`					<StormCatcher.77>
 
 $KEY:B=GOTO:Lunar Catastrophe
-- [B] *Lunar Catastrophe							<MissBubbles> & <Count651>
+- [B] `Lunar Catastrophe`							<MissBubbles> & <Count651>
 
 $KEY:C=GOTO:The Slaughter Spectrum
-- [C] *The Slaughter Spectrum						<Bridgeburner56>
+- [C] `The Slaughter Spectrum`						<Bridgeburner56>
 
 $KEY:D=GOTO:Darkest Room
-- [D] *Darkest Room									<Paul977>
+- [D] `Darkest Room`								<Paul977>
 
 $KEY:E=GOTO:Cyb's Freaky Colonoscopy
-- [E] *Cyb's Freaky Colonoscopy						<Big Ol Billy> et al
+- [E] `Cyb's Freaky Colonoscopy`					<Big Ol Billy> et al
 
 $KEY:F=GOTO:Alienated
-- [F] *Alienated									<Lorenz0>
+- [F] `Alienated`									<Lorenz0>
 
 $KEY:G=GOTO:Doom Zero
-- [G] *Doom Zero									<DASI-I>
+- [G] `Doom Zero`									<DASI-I>
 
 $KEY:H=GOTO:Entropy
-- [H] *Entropy										<Nirvana>
+- [H] `Entropy`										<Nirvana>
 
 $KEY:I=GOTO:SIGIL
-- [I] *SIGIL										<John Romero>
+- [I] `SIGIL`										<John Romero>
 
 $KEY:J=URL:http://tfuture.org/phobos/
-- [J] *DOOM 3: Phobos								<Team Future>
+- [J: DOOM 3: Phobos]								<Team Future>
 
 :MULTIPLAYER AWARDS:
 
 $KEY:K=URL:https://doomwiki.org/wiki/32in24-17:_3_Flags_3_Furious
-- [K] *32in24-17									<YEDS Team>
+- [K: 32in24-17]									<YEDS Team>
 
 $KEY:L=URL:https://doomwiki.org/wiki/Neon_Deathmatch
-- [L] *NeonDM										<Mechanix Union>
+- [L: NeonDM]										<Mechanix Union>
 
 :GAMEPLAY MOD AWARDS:
 
 $KEY:M=GOTO:DOOM 4 VANILLA
-- [M] *DOOM 4 VANILLA								<Noiser> et al
+- [M] `DOOM 4 VANILLA`								<Noiser> et al
 
 $KEY:N=GOTO:Lt. Typhon
-- [N] *Lt. Typhon									<Skelegant>
+- [N] `Lt. Typhon`									<Skelegant>
 
 $KEY:O=GOTO:NAKU-NARU
-- [O] *NAKU-NARU									<Naku Team>
+- [O] `NAKU-NARU`									<Naku Team>
 
 :MORDETH AWARD:
 
 $KEY:P=SHELL:"wads\conversions\srb2\play.bat"
-- [P] *Sonic Robo Blast 2							<Sonic Team Junior>
+- [P] `Sonic Robo Blast 2`							<Sonic Team Junior>
 
 :THE SPACESHIP OF THESEUS:
 
 $KEY:Q=GOTO:Hedon
-- [Q] *Hedon										<Zan>
+- [Q] `Hedon`										<Zan>
 
 :CODEAWARD:
 
 $KEY:R=URL:https://www.doomworld.com/forum/topic/99021
-- [R] *Doom Neural Upscale 2X						<Hidfan> et al
+- [R: Doom Neural Upscale 2X]						<Hidfan> et al
 
 :MACHAWARD:
 
 $KEY:S=URL:https://www.doomworld.com/forum/post/1933484
-- [S] *Mikoportals									<Mikolah>
+- [S: Mikoportals]									<Mikolah>
 
 :CREATOR OF THE YEAR:
 
