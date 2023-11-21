@@ -18,5 +18,8 @@ What is `dead.wire`? Is it any more dangerous than a live.wire? It's certainly m
 
 ^R- <Alfonzo>
 
-:-------------------------------------------------------------------------------
+:===============================================================================
 *[9] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/22years/best3.php
+:source [#: www.doomworld.com/22years/best3.php]

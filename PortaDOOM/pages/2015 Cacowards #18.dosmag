@@ -78,3 +78,7 @@ $KEY:I=GOTO:DoomRL Arsenal
 
 $KEY:J=GOTO:InstaDoom
 - [J] `InstaDoom`									<Linguica>
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/22years/
+:source [#: www.doomworld.com/22years/]
