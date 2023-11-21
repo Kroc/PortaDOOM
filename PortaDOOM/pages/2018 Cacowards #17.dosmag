@@ -27,7 +27,7 @@ While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release d
 :===============================================================================
 $KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dbp01
 $KEY:C=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dbp_05
-The DBP series, which ran for a good chunk of this past year, gave players a monthly dose of small mapsets featuring classic `DOOM` gameplay, with an emphasis on working within a specific theme. [M: Monuments of Mars], set in a series of sepiatone bases in a hellish Martian landscape, is the most free-flowing and fast-paced of the series, offering players the gameplay equivalent of flying down a steep hill on a bike. [C: Coffin Curse], by contrast, used its library/crypt theme to put more emphasis on whimsical details and atmosphere, with more treacherous and gimmick-oriented gameplay to go along with it (who doesn't love barrel-themed maps?). Either one is an excellent way to spend a lazy afternoon.
+The `DBP` series, which ran for a good chunk of this past year, gave players a monthly dose of small mapsets featuring classic `DOOM` gameplay, with an emphasis on working within a specific theme. [M: Monuments of Mars], set in a series of sepiatone bases in a hellish Martian landscape, is the most free-flowing and fast-paced of the series, offering players the gameplay equivalent of flying down a steep hill on a bike. [C: Coffin Curse], by contrast, used its library/crypt theme to put more emphasis on whimsical details and atmosphere, with more treacherous and gimmick-oriented gameplay to go along with it (who doesn't love barrel-themed maps?). Either one is an excellent way to spend a lazy afternoon.
 
 
 :RECOMMEND ME A... HARDCORE CHALLENGE MAPSET
@@ -41,7 +41,7 @@ After a bout of development hell, [3: Slaughterfest 3] -- originally `Slaughterf
 
 :MINI MOD SAFARI
 :===============================================================================
-Every year, there's always a slew of people with gigantic projects that want to sweep everyone and everything away, but there's always a bunch of people that just wanna make something small. While often not big enough for awards, many times there's a handful of tiny mods that just make things...neat.
+Every year, there's always a slew of people with gigantic projects that want to sweep everyone and everything away, but there's always a bunch of people that just wanna make something small. While often not big enough for awards, many times there's a handful of tiny mods that just make things... neat.
 
 $KEY:A=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59889
 - [A: autoautosave] is a must-have for anyone who frequently forgets to save across long periods of time but doesn't want to resort to savescumming, automating the saving process every X minutes under Y conditions. Extremely useful!
@@ -53,7 +53,7 @@ $KEY:D=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59887
 - [D: Demon Counterstrike] is simple in idea and in execution: As you go through a level, areas you've visited will have demons and small items populate in the areas again. Backtracking will now result in surprise ambushes or equipment. Fun!
 
 $KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61666
-- [L: Liquidated Doom] takes `DOOM` and sets it entirely underwater, purely through `ZScript`. Perhaps the most out-there of all the modlets on this list, but it does mix things up quite nicely.
+- [L: Liquidated Doom] takes `DOOM` and sets it entirely underwater, purely through _ZScript_. Perhaps the most out-there of all the modlets on this list, but it does mix things up quite nicely.
 
 $KEY:P=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=60456
 - [P: Champions] is a small and crazy-compatible enemy mod that provides variations of existing monsters without replacing them, making for nasty surprises in otherwise-normal encounters. Neat!
@@ -63,7 +63,7 @@ $KEY:I=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61047
 
 :DOS BOOT
 :===============================================================================
-The original DOS versions of `DOOM` may be buried, but they're not quite dead. 2018 saw small flickers of life for the executables that started it all. Espi Award Emeritus <fraggle> has been laying the foundations for cross-port multiplayer, compatible with DOS `DOOM` over the IPX protocol(!), with a long term eye towards resurrecting the classic multiplayer frontend `DWANGO`. On-again-off-again classic EXE hacker <xttl> returned only the other day with word of a new breakthrough: the ability to create a "loader" to patch arbitrary code into the DOS executable. Your humble webmaster <Linguica> started his own vanilla EXE hacking hobby and managed to create a DOS EXE for `Selfie Doom` that actually saves the selfies as screenshots. Watch this space in the future - can a `DeHackEd` 4.0 be far off?
+The original _DOS_ versions of `DOOM` may be buried, but they're not quite dead. 2018 saw small flickers of life for the executables that started it all. _Espi Award_ Emeritus <fraggle> has been laying the foundations for cross-port multiplayer, compatible with _DOS_ `DOOM` over the IPX protocol(!), with a long term eye towards resurrecting the classic multiplayer frontend _DWANGO_. On-again-off-again classic EXE hacker <xttl> returned only the other day with word of a new breakthrough: the ability to create a "loader" to patch arbitrary code into the _DOS_ executable. Your humble webmaster <Linguica> started his own vanilla EXE hacking hobby and managed to create a _DOS_ EXE for `Selfie Doom` that actually saves the selfies as screenshots. Watch this space in the future -- can a _DeHackEd_ 4.0 be far off?
 
 
 :WHAT ARE WE STILL WAITING FOR?

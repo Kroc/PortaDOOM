@@ -9,101 +9,101 @@ $REM=(Indented pages are cross-references and not a direct part of Cacowards 201
 :TOP 10:
 
 $KEY:1=GOTO:Avactor
-- [1] *Avactor										<Eradrop>
+- [1] `Avactor`										<Eradrop>
 
 $KEY:2=GOTO:Dark Universe Part 1
-- [2] *Dark Universe, Part 1						<Payload4367>
+- [2] `Dark Universe, Part 1`						<Payload4367>
 
 $KEY:3=GOTO:The Adventures of Square
-- [3] *The Adventures of Square: Episode 2			<BigBrik Games>
+- [3] `The Adventures of Square: Episode 2`			<BigBrik Games>
 
 $KEY:4=GOTO:Preacher
-- [4] *Preacher										<Darch>
+- [4] `Preacher`									<Darch>
 
 $KEY:5=GOTO:Dimension of the Boomed
-- [5] *Dimension of the Boomed						<Urthar>
+- [5] `Dimension of the Boomed`						<Urthar>
 
 $KEY:6=GOTO:Struggle - Antaresian Legacy
-- [6] *Struggle - Antaresian Legacy					<antares031>
+- [6] `Struggle - Antaresian Legacy`				<antares031>
 
 $KEY:7=GOTO:REKKR
-- [7] *REKKR										<Revae>
+- [7] `REKKR`										<Revae>
 
 $KEY:8=GOTO:Maskim Xul
-- [8] *Maskim Xul									<Obsidian>
+- [8] `Maskim Xul`									<Obsidian>
 
 $KEY:9=GOTO:The Golden Souls 2
-- [9] *Doom: The Golden Souls 2						<Batandy>
+- [9] `Doom: The Golden Souls 2`					<Batandy>
 
 $KEY:0=GOTO:UAC Invasion - The Supply Depot
-- [0] *UAC Invasion: The Supply Depot				<DooMknight>
+- [0] `UAC Invasion: The Supply Depot`				<DooMknight>
 
 :RUNNERS UP:
 
 $KEY:A=GOTO:Exomoon
-- [A] *Exomoon										<Deadwing>
+- [A] `Exomoon`										<Deadwing>
 
 $KEY:B=GOTO:Man on the Moon
-- [B] *Man on the Moon								<Yugiboy85>
+- [B] `Man on the Moon`								<Yugiboy85>
 
 $KEY:C=GOTO:Umbra of Fate
-- [C] *Umbra of Fate								<YukiRaven>
+- [C] `Umbra of Fate`								<YukiRaven>
 
 $KEY:D=GOTO:Port Glacia
-- [D] *Port Glacia									<an_mutt>
+- [D] `Port Glacia`									<an_mutt>
 
 $KEY:E=GOTO:Magnolia
-- [E] *Magnolia										<Ribbiks>
+- [E] `Magnolia`									<Ribbiks>
 
 $KEY:F=GOTO:The Alfonzone
-- [F] *The Alfonzone								<Pinchy>
+- [F] `The Alfonzone`								<Pinchy>
 
 $KEY:G=GOTO:Ashes 2063
-- [G] *Ashes 2063 Episode 1							<Vostyok>
+- [G] `Ashes 2063 Episode 1`						<Vostyok>
 
 $KEY:H=GOTO:Demonastery
-- [H] *Demonastery									<Nootrac4571>
+- [H] `Demonastery`									<Nootrac4571>
 
 $KEY:I=GOTO:DOOM 404
-- [I] *DOOM 404										<Capellan>
+- [I] `DOOM 404`									<Capellan>
 
 $KEY:J=GOTO:Cryogenics
-- [J] *Cryogenics									<bemused>
+- [J] `Cryogenics`									<bemused>
 
 :MULTIPLAYER AWARDS:
 
 $KEY:K=URL:https://www.moddb.com/mods/quake-champions-doom-edition
-- [K] *Quake Champions: Doom Edition				<DBThanatos> & <Michaelis>
+- [K] `Quake Champions: Doom Edition`				<DBThanatos> & <Michaelis>
 
 :GAMEPLAY MOD AWARDS:
 
 $KEY:L=URL:https://forum.zdoom.org/viewtopic.php?t=37066
-- [L] *Guncaster									<Pillowblaster>
+- [L] `Guncaster`									<Pillowblaster>
 
 $KEY:M=URL:https://forum.zdoom.org/viewtopic.php?t=57964
 - [M] *Netronian Chaos								<Captain J>
 
 $KEY:N=URL:https://combine-kegan.itch.io/gmota
-- [N] *GMOTA										<Combine_Kegan>
+- [N] `GMOTA`										<Combine_Kegan>
 
 :MORDETH AWARD:
 
 $KEY:O=URL:https://www.moddb.com/mods/total-chaos
-- [O] *Total Chaos									<wadaholic>
+- [O] `Total Chaos`									<wadaholic>
 
 :THE SPACESHIP OF THESEUS:
 
-- [O] *Total Chaos									<wadaholic>
+- [O] `Total Chaos`									<wadaholic>
 
 :CODEAWARD:
 
 $KEY:P=URL:https://github.com/anotak/doombuilderx
-- [P] *Doom Builder X								<anotak>
+- [P] `Doom Builder X`								<anotak>
 
 :MACHAWARD:
 
 $KEY:Q=URL:https://jp.itch.io/mr-friendly
-- [Q] *Mr. Friendly									<JP LeBreton>
+- [Q] `Mr. Friendly`								<JP LeBreton>
 
 :CREATOR OF THE YEAR:
 
