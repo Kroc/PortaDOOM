@@ -11,16 +11,16 @@ There's no other way to put it, the `DOOM` community is an unending river. Every
 
 $KEY:L=GOTO:lilith.pk3
 $KEY:X=URL:https://www.doomworld.com/forum/topic/96943
-<anotak> took everyone by surprise, shocking everybody with a one-two punch. The magnificence that was *[L] lilith.pk3* is already well-documented, but then following up right afterwards with a fork of `DoomBuilder`, called [X: DoomBuilder X] Whatever is planned in the future will be great.
+<anotak> took everyone by surprise, shocking everybody with a one-two punch. The magnificence that was [L] `lilith.pk3` is already well-documented, but then following up right afterwards with a fork of _DoomBuilder_, called [X: DoomBuilder X] Whatever is planned in the future will be great.
 
 $KEY:N=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=57964
 <Captain J> isn't technically a newcomer to the community, in that he's been an active cheerleader and a healthy art contributor to many projects. Until now, however, he's never had a project to call his own -- [N: Netronian Chaos] is his very first mod, and it's a truly stellar gameplay mod with charming art. Keep up the great work!
 
 $KEY:D=GOTO:Disjunction
-Despite being primarily anonymous, </vr/> has started forming some notable names and creators -- <floatRand> in particular got heads turning with *[D] Disjunction*, a fantastic mapset with just enough slaughter elements to be truly punishing. We're all looking forward to what his next project is.
+Despite being primarily anonymous, </vr/> has started forming some notable names and creators -- <floatRand> in particular got heads turning with [D] `Disjunction`, a fantastic mapset with just enough slaughter elements to be truly punishing. We're all looking forward to what his next project is.
 
 $KEY:O=URL:https://www.doomworld.com/forum/topic/96985
-<Forli> slipped under a lot of people's radars, with an untitled 12-map project coming out in December of last year, when everyone was in the Cacoward mood and skipping over everything. But his next project, [O: Oscillation], yanked the rug out from everyone by cleanly alternating between exploration-focused maps and run-and-gun maps. Whatever he does next is going to be truly unique.
+<Forli> slipped under a lot of people's radars, with an untitled 12-map project coming out in December of last year, when everyone was in the _Cacoward_ mood and skipping over everything. But his next project, [O: Oscillation], yanked the rug out from everyone by cleanly alternating between exploration-focused maps and run-and-gun maps. Whatever he does next is going to be truly unique.
 
 With the advent of `DOOM 2016` and the new `Wolfensteins`, the community is only going to grow bigger and bigger. While these may be our MOST promising newcomers, everyone new to the community is promising, and we look forward to what all our new blood will put out.
 
@@ -29,11 +29,11 @@ With the advent of `DOOM 2016` and the new `Wolfensteins`, the community is only
 :===============================================================================
 $KEY:0=URL:https://www.doomworld.com/forum/topic/95544
 $KEY:1=URL:https://www.youtube.com/watch?v=J0hh-6eGHOs
-Would you believe 2017 was a breakout year for `DOOM` speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in `DOOM 2` map07 and just flick the exit switch in 3 seconds. Duh! Named [0: zero press] after its ubiquitous finder <ZeroMaster> (first recorded on [1: map15] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
+Would you believe 2017 was a breakout year for `DOOM` speedrunning? Well, it took just over two decades, but it has finally been discovered that Doomguy can walk up to that center platform in `DOOM 2` `map07` and just flick the exit switch in 3 seconds. Duh! Named [0: zero press] after its ubiquitous finder <ZeroMaster> (first recorded on [1: map15] here), the trick has upset the status quo and led to the obliteration of many **cough** optimal records.
 
 $KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\0nm2154\30nm2154.lmp"
 $KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2017\30uv1845\30uv1845.lmp"
-We've seen another massive time cut to the `DOOM 2` speedrun, which currently clocks at <ZeroMaster>'s *[2] 21:54* for Nightmare and <eLim>'s *[3] 18:45* for UV. The latter run has underwent a mindblowing change, and after being a staple for decades, map31 has been dropped out of the optimal route! The strat is still too risky for NM though.
+We've seen another massive time cut to the `DOOM 2` speedrun, which currently clocks at <ZeroMaster>'s *[2] 21:54* for Nightmare and <eLim>'s *[3] 18:45* for UV. The latter run has underwent a mindblowing change, and after being a staple for decades, `map31` has been dropped out of the optimal route! The strat is still too risky for NM though.
 
 $KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /PLUTONIA /DEMO "demos\cacowards2017\30pl1958\30pl1958.lmp" /CMPLVL 4
 $KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT      /DEMO "demos\cacowards2017\30ev3858\30ev3858.lmp" /CMPLVL 4
@@ -55,10 +55,10 @@ Last but not least, <ZeroMaster> has also been proactive on the promotional side
 $KEY:S=GOTO:Shadows of the Nightmare Realm
 $KEY:R=GOTO:Rise of the Wool Ball
 $KEY:M=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/moonbld
-The `DOOM` community is home to the best MIDI composition talent around, and slackers that we are, we haven't done much to chronicle it until now. 2017 has been another great year for `DOOM` music, with several solo projects that have included soundtracks by the mappers themselves. *[S] SotNR* features intense, atmospheric tracks by <YukiRaven> that mix ambient sounds and eerie melodies to add to the constant sense of dread. *[R] Rise of the Wool Ball*'s soundtrack represents the opposite end of the spectrum, with plenty of cute, cheerful tracks that complement the cartoony graphics. <Deadwing>'s awesome compositions for [M: Moonblood] blend jazz, electronica, and traditional <Bobby Prince> influences in a way that works surprisingly well for such a `Plutonia`-flavored megawad.
+The `DOOM` community is home to the best MIDI composition talent around, and slackers that we are, we haven't done much to chronicle it until now. 2017 has been another great year for `DOOM` music, with several solo projects that have included soundtracks by the mappers themselves. [S] `SotNR` features intense, atmospheric tracks by <YukiRaven> that mix ambient sounds and eerie melodies to add to the constant sense of dread. [R] `Rise of the Wool Ball`'s soundtrack represents the opposite end of the spectrum, with plenty of cute, cheerful tracks that complement the cartoony graphics. <Deadwing>'s awesome compositions for [M: Moonblood] blend jazz, electronica, and traditional <Bobby Prince> influences in a way that works surprisingly well for such a `Plutonia`-flavored megawad.
 
 $KEY:T=GOTO:TNT - Revilution
-This year's epic megawad OST is *[T] TNT: Revilution*, which features `Evilution`-inspired tracks from a variety of composers. There isn't a track in the lineup that's not at least fun and catchy, and there are quite a few standouts. Highlights include the return of <Jeremy Doyle>, who worked on the soundtracks for `Icarus` and `Requiem`, as well as some truly excellent stuff by <Eris Falling>, who has really come into his own as both an original composer and a remixer in the last couple of years.
+This year's epic megawad OST is [T] `TNT: Revilution`, which features `Evilution`-inspired tracks from a variety of composers. There isn't a track in the lineup that's not at least fun and catchy, and there are quite a few standouts. Highlights include the return of <Jeremy Doyle>, who worked on the soundtracks for `Icarus` and `Requiem`, as well as some truly excellent stuff by <Eris Falling>, who has really come into his own as both an original composer and a remixer in the last couple of years.
 
 $KEY:V=URL:https://www.doomworld.com/forum/topic/91806/#comment-1692058
 In case you missed it on the forums back at the end of last year, make sure to check out the [V: Velvetic MIDI Pack], which features 36 tracks from various groups <KevenHEZ> (`Nova`, `Threnody`, etc.) is involved in. The music spans multiple genres, though most of it is the sort of moody metal that many consider practically synonymous with `DOOM` -- a great resource for future mappers, as only a couple of the tracks have found homes in `DOOM` projects to date. 

@@ -8,63 +8,63 @@ $TITLE=Index
 :TOP TEN:
 
 $KEY:1=GOTO:lilith.pk3
-- [1] *lilith.pk3 									<anotak>
+- [1] `lilith.pk3` 									<anotak>
 
 $KEY:2=GOTO:Shadows of the Nightmare Realm
-- [2] *Shadows of the Nightmare Realm				<YukiRaven >
+- [2] `Shadows of the Nightmare Realm`				<YukiRaven >
 
 $KEY:3=GOTO:No End in Sight
-- [3] *No End in Sight								<Years>
+- [3] `No End in Sight`								<Years>
 
 $KEY:4=GOTO:dead.air
-- [4] *dead.air										<Xaser>
+- [4] `dead.air`									<Xaser>
 
 $KEY:5=GOTO:Brigandine
-- [5] *Brigandine									<Viggles>
+- [5] `Brigandine`									<Viggles>
 
 $KEY:6=GOTO:Counterattack
-- [6] *Counterattack								<Mechadon>
+- [6] `Counterattack`								<Mechadon>
 
 $KEY:7=GOTO:Legacy of Heroes
-- [7] *Legacy of Heroes								<Gaspe>
+- [7] `Legacy of Heroes`							<Gaspe>
 
 $KEY:8=GOTO:Saturnine Chapel
-- [8] *Saturnine Chapel								<dobu gabu maru>
+- [8] `Saturnine Chapel`							<dobu gabu maru>
 
 $KEY:9=GOTO:Stardate 20x7
-- [9] *Stardate 20x7								<Ribbiks>
+- [9] `Stardate 20x7`								<Ribbiks>
 
 $KEY:0=GOTO:Void and Rainbow
-- [0] *Void and Rainbow								<Serious_MOod>
+- [0] `Void and Rainbow`							<Serious_MOod>
 
 :RUNNERS UP:
 
 $KEY:A=GOTO:Rise of the Wool Ball
-- [A] *Rise of the Wool Ball						<MSPaintR0cks>
+- [A] `Rise of the Wool Ball`						<MSPaintR0cks>
 
 $KEY:B=GOTO:Return to Hadron Episode 2
-- [B] *Return to Hadron Episode 2					<cannonball>
+- [B] `Return to Hadron Episode 2`					<cannonball>
 
 $KEY:C=GOTO:TNT - Revilution
-- [C] *TNT: Revilution								Various
+- [C] `TNT: Revilution`								Various
 
 $KEY:D=GOTO:Waterlab GZD
-- [D] *Waterlab GZD									<Enjay>
+- [D] `Waterlab GZD`								<Enjay>
 
 $KEY:E=GOTO:Disjunction
-- [E] *Disjunction									<floatRand>
+- [E] `Disjunction`									<floatRand>
 
 $KEY:F=GOTO:Hexen - Curse of the Lost Gods
-- [F] *Hexen: Curse of the Lost Gods				<Kristus>
+- [F] `Hexen: Curse of the Lost Gods`				<Kristus>
 
 $KEY:G=GOTO:Water Spirit
-- [G] *Water Spirit									<Manbou>
+- [G] `Water Spirit`								<Manbou>
 
 $KEY:H=GOTO:DOOM II - Hellscape
-- [H] *DOOM II: Hellscape							<Chris Lutz>
+- [H] `DOOM II: Hellscape`							<Chris Lutz>
 
 $KEY:I=GOTO:Dark Tide
-- [I] *Dark Tide									<Chris Lutz>
+- [I] `Dark Tide`									<Chris Lutz>
 
 :MULTIPLAYER AWARDS:
 
@@ -93,12 +93,12 @@ $KEY:O=URL:http://oblige.sourceforge.net/
 :MORDETH AWARD:
 
 $KEY:P=GOTO:TNT - Revilution
-- [P] *TNT2: Revilution								<Team TNT 2> & <Team TNT:R>
+- [P] `TNT2: Revilution`							<Team TNT 2> & <Team TNT:R>
 
 :MACHAWARD:
 
 $KEY:Q=GOTO:The Given
-- [Q] *The Given									<dobu gabu maru>
+- [Q] `The Given`									<dobu gabu maru>
 
 :MAPPER OF THE YEAR:
 
