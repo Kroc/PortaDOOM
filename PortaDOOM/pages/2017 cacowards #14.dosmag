@@ -5,7 +5,7 @@ $TITLE=Multiplayer Awards
 
 :-------------------------------------------------------------------------------
 $KEY:S=URL:http://doomseeker.drdteam.org/
-! `NOTE:` PortaDOOM does not include multiplayer-only maps!
+! `NOTE:` {PortaDOOM} does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use [S: Doomseeker] to play DOOM online
 
@@ -30,7 +30,7 @@ The same could be said about the presentation -- it's spartan, functional, but j
 $KEY:2=URL:https://doomwiki.org/wiki/Progressive_Duel_2
 The <Mechanix Union> is back with another newschool deathmatch mapset, and thus with deterministic inevitability we find ourselves here again. I nearly started with a joke about having to check my previous jokes, but then I checked them and realized I already used that line last year. Anyone feeling déjà vu yet?
 
-<RustKing> and company have assembled 16 maps that do exactly what is said on the tin. They're designed primarily for duel, but in almost exact opposite to `Pyrrhic`, they heavily abuse advanced port mechanics of _Zandronum_. That includes 3D floors, reliance on jumping, mouselook, item respawn, or custom weapons. This makes `Prog 2` an extension of <MXU>'s previous award-winning projects (`DBAB`, `AeonDM`), but where free-for-all and last man standing gamemodes followed the feature-rich format naturally, newschool duel has been an overlooked, unwanted baby for years. Sure, you can play 1-on-1 `"judas23"` with mouselook, but 1) it wasn't designed for it, so you're forcing a more or less square peg into a round hole, and 2) you'll be playing with a bot, because everyone else will be busy rolling their eyes into their skulls.
+<RustKing> and company have assembled 16 maps that do exactly what is said on the tin. They're designed primarily for duel, but in almost exact opposite to `Pyrrhic`, they heavily abuse advanced port mechanics of {Zandronum}. That includes 3D floors, reliance on jumping, mouselook, item respawn, or custom weapons. This makes `Prog 2` an extension of <MXU>'s previous award-winning projects (`DBAB`, `AeonDM`), but where free-for-all and last man standing gamemodes followed the feature-rich format naturally, newschool duel has been an overlooked, unwanted baby for years. Sure, you can play 1-on-1 `"judas23"` with mouselook, but 1) it wasn't designed for it, so you're forcing a more or less square peg into a round hole, and 2) you'll be playing with a bot, because everyone else will be busy rolling their eyes into their skulls.
 
 Not to say there weren't maps designed specifically for NS in the past, but they're few and far between, and they tend to aim at wildly different set of advanced features. This is where `Prog 2` fills a potential gap in the market - after testing the grounds with its smaller prequel, <Rust> and friends established their feature base and mapped specifically for it. This helps tremendously in giving the gameplay proper tone and pace, its own identity instead of just a half-assed attempt at mimicking `Quake` in `DOOM`. `Quake` does get mimicked to a degree, however. All the platform hopping and rocket flicking aside, the mapset is reliant on <MXU>'s `Eon Weapons`, a set of custom weapons including the lightning gun, the railgun, and even a surprisingly decent grenade launcher. Classic `DOOM` weapons are adjusted to fit in, e.g. sped up rockets and chainguns. There's also a novel and fairly complex system of "stackable" armor, so new pickups don't simply overwrite your current one. The set is included with the maps this time, creating a true standalone project/game mode.
 
@@ -51,7 +51,7 @@ The Fall season is currently in its final stage, with the results of [C: the sem
 
 $KEY:E=URL:https://zandronum.com/forum/viewtopic.php?f=32&t=8538
 $KEY:F=URL:http://challonge.com/ss5hpe2y
-_WDL_ had company this year when <Decay> organized [E: ZTDM], a surprisingly successful and well-populated 2-v-2 TDM tournament bridging _Zandronum_ and _Doomworld_. With all of the Doomworldians properly destroyed well before the final stages, [F: the tournament playoffs] ended in a pair of very exciting semi-finals and a slightly one-sided final in which <Dragon> and <D'Sparil> defeated <Ivan> and <Decay>.
+_WDL_ had company this year when <Decay> organized [E: ZTDM], a surprisingly successful and well-populated 2-v-2 TDM tournament bridging {Zandronum} and _Doomworld_. With all of the Doomworldians properly destroyed well before the final stages, [F: the tournament playoffs] ended in a pair of very exciting semi-finals and a slightly one-sided final in which <Dragon> and <D'Sparil> defeated <Ivan> and <Decay>.
 
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/24years/multi.php

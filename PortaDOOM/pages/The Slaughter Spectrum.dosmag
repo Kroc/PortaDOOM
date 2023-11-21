@@ -18,11 +18,11 @@ Map playstyle is generally light to moderate level slaughter (it has been compar
 
 Thanks to the `Refracted Reality` team for letting the resources be used for this mapset. These maps were made for that project and the aesthetic concepts are inspired by that project and wouldn't exist without it. Everyone should give that `Refracted Reality` a play through when it released.
 
-These maps are pretty resource intensive. If you can only run the vintage *GZDoom* it is unlikely that you will be able to run these maps very well. I get a minimum of 60 fps and the dedicated test team generally came back with no issues performance wise. If there is enough demand I may do a version for people with lower end rigs but these are designed to push the limits of the port to a degree. *GZDoom* 4.1.1 or higher is recommended although a lot of early testing was done on 3.7.2. If you are having issues make sure you check your version (one of the testers was unknowingly using 3.3.2. Funnily enough they struggled at first).
+These maps are pretty resource intensive. If you can only run the vintage _GZDoom_ it is unlikely that you will be able to run these maps very well. I get a minimum of 60 fps and the dedicated test team generally came back with no issues performance wise. If there is enough demand I may do a version for people with lower end rigs but these are designed to push the limits of the port to a degree. _GZDoom_ 4.1.1 or higher is recommended although a lot of early testing was done on 3.7.2. If you are having issues make sure you check your version (one of the testers was unknowingly using 3.3.2. Funnily enough they struggled at first).
 
 *Map 01: The Palace of the Black Singularity
 
-Relatively easy and free flowing map that goes out with a bang. Some trickery included. This was the first map I made for this and was originally almost twice the size (130k linedefs at it's fattest). However *GZdoom* loading times were abysmal even on powerful rigs so a chunk was removed and stowed away for a rainy day (Some of you will remember the infamous jellyfish room). This map has some of my favourite light sequences to date.
+Relatively easy and free flowing map that goes out with a bang. Some trickery included. This was the first map I made for this and was originally almost twice the size (130k linedefs at it's fattest). However _GZdoom_ loading times were abysmal even on powerful rigs so a chunk was removed and stowed away for a rainy day (Some of you will remember the infamous jellyfish room). This map has some of my favourite light sequences to date.
 
 *Map 02: Crimson Chaos
 

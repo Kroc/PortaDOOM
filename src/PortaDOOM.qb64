@@ -1059,6 +1059,12 @@ SUB exitYN
     CALL refreshScreen
 END SUB
 
+'show the glossary screen for the terms on screen
+'=============================================================================
+SUB showGlossery
+    
+END SUB
+
 'show an error screen and stop the program
 '=============================================================================
 SUB fatalError (msg$)

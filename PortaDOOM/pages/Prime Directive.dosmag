@@ -32,11 +32,11 @@ The likelihood of making another episode of `The Gateway Experiments` after this
 
 *GZDOOM:
 
-This mapset is targeting `GZDoom` exclusively. Lighting and sloped 3D floors are used all over the place.
+This mapset is targeting _GZDoom_ exclusively. Lighting and sloped 3D floors are used all over the place.
 
 *SPACE STATION OMEGA
 
-Of course, the fact that `Space Station Omega` is a ten year old WAD these days tells me that there's a chance not many would have played it. I've taken the opportunity to repackage and give it a HD remix of sorts. The conversation scripts have been updated to use the new `Prime Directive` framework (mostly), and as `PD` targets `GZDoom` exclusively I've also redone the station lighting. It's darker and relies on GL lights. As such, light now becomes an important visual clue as to what's going on. Hear a gunshot or a teleport? If you see light nearby, now's the time to get shooty.
+Of course, the fact that `Space Station Omega` is a ten year old WAD these days tells me that there's a chance not many would have played it. I've taken the opportunity to repackage and give it a HD remix of sorts. The conversation scripts have been updated to use the new `Prime Directive` framework (mostly), and as `PD` targets _GZDoom_ exclusively I've also redone the station lighting. It's darker and relies on GL lights. As such, light now becomes an important visual clue as to what's going on. Hear a gunshot or a teleport? If you see light nearby, now's the time to get shooty.
 
 Aside from the lighting and conversation scripting updates, you shouldn't notice any real differences - the map plays exactly as it did ten years ago. Sure to be the most controversial change is that Elaine is now ACTUALLY represented by a female marine skin. I know, right?
 
@@ -47,7 +47,7 @@ Suffice to say if you play through `Space Station Omega` again it will have a su
 *DEVELOPMENT HISTORY
 
 $KEY:A=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=35115
-I've kept an extensive development diary on the `ZDoom` forums. Point your browser to [A: forum.zdoom.org/viewtopic.php?f=19&t=35115]
+I've kept an extensive development diary on the _ZDoom_ forums. Point your browser to [A: forum.zdoom.org/viewtopic.php?f=19&t=35115]
 
 $KEY:B=URL:https://drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM
 I've also kept extensive revisions on my Google Drive. If seeing how this mod progressed is of interest to you, point your browser to [B: drive.google.com/folderview?id=0BwyzBGIW1RhvYnlMSnByRGxqWnM]. This may not stay up forever, I'd need to be running out of space on my drive to get rid of it though.
@@ -81,7 +81,7 @@ Once again, this is being released under a Creative Commons licence. This gives 
 
 *Q: Where's the detailz?
 
-*A:* In another castle. I've focused purely on gameplay and story with this release, and relied on 3D models for detail. `GZDoom`'s dynamic lights already incur a performance (as such I've had to split geometry up to get better performance) so I really didn't want to go overboard on the detail. Also, I'm a programmer, not an artist. I don't have the patience to perfect visual details.
+*A:* In another castle. I've focused purely on gameplay and story with this release, and relied on 3D models for detail. _GZDoom_'s dynamic lights already incur a performance (as such I've had to split geometry up to get better performance) so I really didn't want to go overboard on the detail. Also, I'm a programmer, not an artist. I don't have the patience to perfect visual details.
 
 *Q: Cutscenes really what is this `Call of Duty` how do I skip this shit 0/10 worst WAD ever would not recommend
 
@@ -99,11 +99,11 @@ Once again, this is being released under a Creative Commons licence. This gives 
 :-------------------------------------------------------------------------------
 *Base					: Mostly from scratch. Spot the skybox reuse
 *Build Time				: Started on December 26, 2012. Finished June 2015. There was about five months of work in total
-*Tool(s) used*			: `GZDoom Builder`, `SLADE 3`, `GIMP`, `Audacity`, `PSPad`
+*Tool(s) used*			: _GZDoom Builder_, _SLADE3_, _GIMP_, _Audacity_, _PSPad_
 *Known Bugs				: It's probably possible to desynchronise a few things
 *Will Not Run With...	: `Brutal Doom` or any other weapons mods. Remix this project yourself if you want it to work with your favourite weapons mod. Because I won't
 
 :Credits:
 :-------------------------------------------------------------------------------
 $KEY:L=SHELL:wads\episodes\ge5-pd\licenses.txt
-An extensive list of credits is kept in *[L] licenses.txt*. Shout outs to <Randi>, <Graf>, <Enjay>, <Nash>, <Xaser>, <ReX>, <wildweasel>, <Gez>, <Blzut3>, <Kinsie>, <Jimmy>, <Edward850>, <grouchbag>, <scalliano>, and other *ZDoom* forums/IRC people I've missed.
+An extensive list of credits is kept in *[L] licenses.txt*. Shout outs to <Randi>, <Graf>, <Enjay>, <Nash>, <Xaser>, <ReX>, <wildweasel>, <Gez>, <Blzut3>, <Kinsie>, <Jimmy>, <Edward850>, <grouchbag>, <scalliano>, and other _ZDoom_ forums/IRC people I've missed.

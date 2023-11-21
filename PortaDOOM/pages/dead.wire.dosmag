@@ -22,8 +22,8 @@ This wad tells the tale of what happens next...
 :-------------------------------------------------------------------------------
 *Base					: <Tormentor667>'s Doomja Vu base map, which in turn is based on Ultimate Doom's E1M7. Little remains aside from a vague sense of layout.
 *Build Time				: 3-ish (rather sleepless) days.
-*Editor(s) used			: GZDoom Builder, SLADE3
-*May Not Run With...	: ZDoom/GZDoom's software renderer. Use GL and enable dynamic lights.
+*Editor(s) used			: _GZDoom Builder_, _SLADE3_
+*May Not Run With...	: {ZDoom}/_GZDoom_'s software renderer. Use GL and enable dynamic lights.
 
 :Credits:
 :-------------------------------------------------------------------------------

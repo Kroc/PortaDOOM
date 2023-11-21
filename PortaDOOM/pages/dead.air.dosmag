@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/92135
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Single map for (G)ZDoom (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to `"dead.wire"`, with plenty of new weapons, baddies, and bizarro creep factor.
+Single map for _(G)ZDoom_ (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to `"dead.wire"`, with plenty of new weapons, baddies, and bizarro creep factor.
 
 The UAC's global news network is down for repairs following some rather unusual signal interference. As one of the company's top network engineers, it falls on your shoulders to debug the system. All in a day's work, right?
 
@@ -22,8 +22,8 @@ This map tells the tale of what happens next...
 :-------------------------------------------------------------------------------
 *Base					: Record scratch.
 *Build Time				: 2 weeks for the contest draft; many months polish.
-*Editor(s) used			: GZDoom Builder, SLADE3
-*May Not Run With...	: Non-ZDoom stuff. Software renderer is supported, but GL is recommended for better color fidelity.
+*Editor(s) used			: _GZDoom Builder_, _SLADE3_
+*May Not Run With...	: Non-{ZDoom} stuff. Software renderer is supported, but GL is recommended for better color fidelity.
 
 :Credits:
 :-------------------------------------------------------------------------------

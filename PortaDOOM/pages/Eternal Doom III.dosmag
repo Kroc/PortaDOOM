@@ -55,13 +55,13 @@ There will be hell to pay...
 
 :DeHackEd Patch:
 :-------------------------------------------------------------------------------
-PortaDOOM has included Team Eternal's DeHackEd script to improve the play experience. Bear in mind that all of the playability of the game will be the same, only certain text and cheat codes have been modified:
+{PortaDOOM} has included <Team Eternal>'s _DeHackEd_ script to improve the play experience. Bear in mind that all of the playability of the game will be the same, only certain text and cheat codes have been modified:
 
  1: The startup screen's text has been modified.
 
  2: When you hit <tab> to go to map view from
     within the game, the text will now reflect
-    the Eternal Doom III level's name.
+    the `Eternal Doom III` level's name.
 
  3: The cheat codes have been modified. Simply
     type "TE" for the prefix of the cheat instead

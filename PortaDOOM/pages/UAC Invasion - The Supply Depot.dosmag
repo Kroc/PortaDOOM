@@ -20,9 +20,9 @@ But once inside the facilities he realizes that something terrible has happened 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 11 years on and off...
-*Editor(s) used			: `DoomBuilder`, `DoomBuilder 2`, `GZDoomBuilder`, `XWE`, `SLADE 3`
+*Editor(s) used			: _DoomBuilder_, _DoomBuilder 2_, _GZDoomBuilder_, _XWE_, _SLADE3_
 *Known Bugs				: None
-*May Not Run With...	: Any non-`ZDoom` port and any `ZDoom`-based port
+*May Not Run With...	: Any non-{ZDoom} port and any {ZDoom}-based port
 
 :Credits
 :-------------------------------------------------------------------------------

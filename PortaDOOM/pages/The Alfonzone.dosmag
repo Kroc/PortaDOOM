@@ -23,15 +23,15 @@ Popular retreats include abandoned beaches and the rusting hulk of an ancient so
 
 If the unforgiving frozen fortresses or hells domain where ancient magic is woven into the stone itself don't make you lose your mind, there's always the poisonous jungles for those who seek to harvest the dank.
 
-High tech computational wonders, the dangerous and funky machinery of space and a hope for the future lie ahead, off the shores of doomworld itself and into the unknown."
+High tech computational wonders, the dangerous and funky machinery of space and a hope for the future lie ahead, off the shores of _Doomworld_ itself and into the unknown."
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: Maps: New from scratch. Midis: Enhanced speedmidis
 *Build Time				: 1000+ hours
-*Editor(s) used			: `GZ Doom Builder`, `Slade 3`, `Photoshop 6`, `Goldwave`, `Bitmap Font Writer`
-*Known Bugs				: `Zdoom`: 3d floor sprite clipping, midtex clipping, palletisation
-*Tested With			: `ZDoom`, `GZDoom`
+*Editor(s) used			: _GZ Doom Builder_, _SLADE3_, _Photoshop 6_, _Goldwave_, _Bitmap Font Writer_
+*Known Bugs				: {ZDoom}: 3d floor sprite clipping, midtex clipping, palletisation
+*Tested With			: {ZDoom}, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------

@@ -18,10 +18,10 @@ A man is on vacation and is out enjoying a day of hunting while his wife and inf
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: About 11 months
-*Editor(s) used			: `GZDoomBuilder`, `SLADE`, `GoldWave`, `Reaper`, `Renoise`, `The Gimp`, `Waddle`, `Emacs`, some custom tools, and probably a few others
+*Editor(s) used			: _GZDoomBuilder_, _SLADE_, _GoldWave_, _Reaper_, _Renoise_, _The GIMP_, _Waddle_, _Emacs_, some custom tools, and probably a few others
 *Known Bugs				: I've seen the PyroSuccubus monster get stuck in world geometry occasionally. Nothing game breaking
-*May Not Run With		: Anything other than `GZDoom`
-*Tested With			: `GZDoom` 3.3.2
+*May Not Run With		: Anything other than _GZDoom_
+*Tested With			: _GZDoom_ 3.3.2
 
 :Credits
 :-------------------------------------------------------------------------------

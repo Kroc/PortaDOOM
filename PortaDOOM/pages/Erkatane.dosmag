@@ -21,9 +21,9 @@ This Wad additionally comes with erkaknee.wad a complete conversion of the main 
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: 1.5 months, on and off (from 7/4/2015 to 8/8/2015 for the main episode and 2 weeks more for testing and the E1 remake)
-*Editor(s) used		: Doombuilder, Slade, Doomword.
-*Known Bugs			: Map09 may crash on vanilla when crossing some linedefs due to very tall sectors. I'd recommend saving before taking big jumps, otherwise it's fully compatible.
-*Tested With		: Chocolate doom (if something is broken using another port, blame that port, because this is a vanilla wad\\;).
+*Editor(s) used		: _Doombuilder_, _SLADE_, _Doomword_
+*Known Bugs			: Map09 may crash on vanilla when crossing some linedefs due to very tall sectors. I'd recommend saving before taking big jumps, otherwise it's fully compatible
+*Tested With		: {Chocolate Doom} (if something is broken using another port, blame that port, because this is a vanilla wad\\;)
 
 :Credits
 :-------------------------------------------------------------------------------

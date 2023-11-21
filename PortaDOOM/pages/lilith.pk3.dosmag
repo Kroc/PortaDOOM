@@ -19,16 +19,16 @@ even if you've never been diagnosed, please be stop playing this wad if you enco
 
 i tried very hard to avoid anything that would cause physical discomfort but everyone is different
 
-this wad does not work with qz/gz/zandronum as it relies on the old zdoom software renderer and other quirks specific to zdoom (or zdoomLE). you need 2.8.1 or newer
+this wad does not work with _qz_/_gz_/_zandronum_ as it relies on the old _zdoom_ software renderer and other quirks specific to _zdoom_ (or _zdoomLE_). you need 2.8.1 or newer
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New + heavily altered doom2.wad assets
 *Build Time				: Months
-*Editor(s) used			: Audacity, Doom Builder 2, FL Studio, Hexplorer, Notepad++, SLADE, Visual Studio, XWE
+*Editor(s) used			: _Audacity_, _Doom Builder 2_, _FL Studio_, _Hexplorer_, _Notepad++_, _SLADE_, _Visual Studio_, _XWE_
 *Known Bugs				: ALL OF THEM
-*May Not Run With		: QZDoom/GZDoom/Zandronum
-*Tested With			: ZDoom 2.8.1
+*May Not Run With		: _QZDoom_/_GZDoom_/_Zandronum_
+*Tested With			: {ZDoom} 2.8.1
 
 :Credits
 :-------------------------------------------------------------------------------

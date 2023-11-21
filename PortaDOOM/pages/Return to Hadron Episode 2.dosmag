@@ -69,14 +69,14 @@ The initial design for this one was made when the DWMC played `Hell Revealed`, s
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 1 year (A hiatus of a few months occurred during the summer)
-*Editor(s) used			: `Doom builder 2` and `Slade 3`
+*Editor(s) used			: _Doom builder 2_ and _SLADE3_
 *Known Bugs				: Not any I have found. There are likely to be visplane overflows in Vanilla.
 *May Not Run With		: Vanilla
-*Tested With			: `Pr-boom plus` V2.5.1.4
+*Tested With			: _Pr-boom plus_ V2.5.1.4
 
 :Credits:
 :-------------------------------------------------------------------------------
 - <ID Games> for `DOOM`
 - <Tourniquet> for alpha testing
 - The artists/games/tv shows for which the music for this wad comes from
-- The People from doomworld who actually tested this and helped to implement better gameplay
+- The People from _Doomworld_ who actually tested this and helped to implement better gameplay

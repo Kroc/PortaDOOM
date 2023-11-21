@@ -84,10 +84,10 @@ HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Over Nine Years
-*Editor(s) used			: `DoomBuilder`, `DoomBuilder2`, `GZDoomBuilder`, `XWE`, `SLumpEd`, `Slade3`, `MS Paint`, `Adobe Fireworks`, `GraphicsGale`, `FruityLoops Trial`, `Photoshop`
+*Editor(s) used			: _DoomBuilder_, _DoomBuilder2_, _GZDoomBuilder_, _XWE_, _SLumpEd_, _SLADE3_, _MS Paint_, _Adobe Fireworks_, _GraphicsGale_, _FruityLoops Trial_, _Photoshop_
 *Known Bugs				: Hopefully none. Email any found to _josh@joshuaosullivan.co.uk_
-*May Not Run With		: Any port other than `GZDoom` - must be `GZDoom` 3.2.0 OR HIGHER
-*Tested With			: `GZDoom` 3.2.0
+*May Not Run With		: Any port other than _GZDoom_ - must be _GZDoom_ 3.2.0 OR HIGHER
+*Tested With			: _GZDoom_ 3.2.0
 
 :Credits:
 :-------------------------------------------------------------------------------

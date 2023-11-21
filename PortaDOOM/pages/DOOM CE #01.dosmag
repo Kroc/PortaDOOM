@@ -8,9 +8,9 @@ $KEY:C=PAGE:#04
 
 :DOOM CE: PSX TC & D64 Retribution, overhauled!
 :===============================================================================
-*[R] Readme [W] Website (Doomworld) [M] Website (ModDB)
+*[R] Readme [W] Website (_Doomworld_) [M] Website (_ModDB_)
 :-------------------------------------------------------------------------------
-This mod builds on the existing total conversions of `PlayStation DOOM` and `DOOM 64 for GZDoom`, `PSX DOOM TC` and `DOOM 64 Retribution`, to take advantage of the latest *GZDoom* versions and adds many features that make them more faithful but were impossible to implement at their time of release. To achieve this, a large amount of the code has been adapted from *GEC Master Edition* (also known as *DZDoom*), while looking at the reverse engineered code and existing source ports of these games for reference.
+This mod builds on the existing total conversions of `PlayStation DOOM` and `DOOM 64 for GZDoom`, `PSX DOOM TC` and `DOOM 64 Retribution`, to take advantage of the latest _GZDoom_ versions and adds many features that make them more faithful but were impossible to implement at their time of release. To achieve this, a large amount of the code has been adapted from _GEC Master Edition_ (also known as _DZDoom_), while looking at the reverse engineered code and existing source ports of these games for reference.
 
 Press [→] (change page) to view details on each included game,
 or select from below:
@@ -62,7 +62,7 @@ Since almost every feature is optional, the mod contains four presets for differ
 
 :Highlights:
 :-------------------------------------------------------------------------------
-(not all are included in *PortaDOOM*)
+(not all are included in {PortaDOOM})
 
 - `PSX DOOM` software lighting emulation (brightness fades with distance)
 - `DOOM 64` with gradient and additive lighting. Can also be enabled in `PSX DOOM` too to give it a different look
@@ -76,7 +76,7 @@ Since almost every feature is optional, the mod contains four presets for differ
 - Choose to play with the dark ambient Console soundtrack, the action oriented PC soundtrack, or both, in which action fades into ambient after the music finishes
 - AI interpolated `DOOM 64` animations and `Smooth Doom` adapted to `PSX DOOM`
 - Brightmaps for sprites and textures
-- Play with a fullscreen hud styled like `DOOM 64` or the default *GZDoom* hud
+- Play with a fullscreen hud styled like `DOOM 64` or the default _GZDoom_ hud
 - Ambient sounds for decorations (torches, barrels, etc)
 - Enemies and the player produce footstep sounds
 - Optional story texts taken from the manuals or readme files if they were fanmade

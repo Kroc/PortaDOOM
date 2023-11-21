@@ -21,9 +21,9 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
 *Base					: New from scratch
 *Build Time				: 2 years & 3 months
 *Editor(s) used			: See map list
-*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on chocolate-doom. DEMO123 desynch on DOS
+*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on {Chocolate Doom}. DEMO123 desynch on DOS
 *May Not Run With		: Heretic
-*Tested With			: Prboom-Plus 2.5.1.4, Zdaemon 1.10b7, Doom2.exe
+*Tested With			: Prboom-Plus 2.5.1.4, {ZDaemon} 1.10b7, Doom2.exe
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ Testing:
 *MAP02				: Atterrissage
 *Author(s)			: <Roofi>
 *Build time			: 3h20
-*Editor(s) used		: Gzdoombuilder + Slade
+*Editor(s) used		: Gzdoombuilder + _SLADE_
 *Music track		: Cyber Rainforce - mobility battle
 *Bugs				: No bug found. 
 *Inspiration		: Some Base Ganymede's maps , E1M1 , the music.
@@ -95,7 +95,7 @@ Testing:
 *MAP04				: Réacteur Chimique
 *Author(s)			: <Nils "NilsTheRed" Vandamme>
 *Build time			: 2h 59min 34s :p
-*Editor(s) used		: DoomBuilder 2, Slade 3
+*Editor(s) used		: DoomBuilder 2, _SLADE3_
 *Music track		: warfare.mid (composed by <Franck Klepacki> for Command & Conquer, found in midi at www.mirsoft.info )
 *Bugs				: No bugs discovered yet
 *Inspiration		: When I dream of Doom while sleeping, completed with parts influenced by the others 3hA episodes
@@ -158,7 +158,7 @@ Testing:
 *MAP11				: Ca tombe Satan s'en tape
 *Author(s)			: <Jambon>
 *Build time			: Around 3 hours, obviously
-*Editor(s) used		: GZDoomBuilder, Doom Builder, Slade, TuxGuitar, GIMP
+*Editor(s) used		: _GZDoomBuilder_, _Doom Builder_, _SLADE_, _TuxGuitar_, _GIMP_
 *Music track		: An edited midi version of Pachelbel's canon
 *Bugs				: None known
 *Inspiration		: /
@@ -194,8 +194,8 @@ Testing:
 *MAP15				: Ile paradisiaque
 *Author(s)			: <Roofi>
 *Build time			: 3h30 (without counting bug-fixing...)
-*Editor(s) used		: GZdoombuilder for the map , Slade for the music.
-*Music track		: Detana!! Twinbee - level 1 
+*Editor(s) used		: _GZdoombuilder_ for the map, _SLADE_ for the music.
+*Music track		: Detana!! Twinbee - level 1
 *Bugs				: I don't know , please notify me.
 *Inspiration		: The music itself and some classic outdoor maps.
 *Author comments	: This is my first map on Gzdoombuilder and the third map for the project. This map is more open than the previous ones and longer too.
@@ -247,7 +247,7 @@ Testing:
 *MAP21				: Apero d'enfer
 *Author(s)			: <Roofi>
 *Build time			: ~3h20 (without counting bug-fixing...)
-*Editor(s) used		: Gzdoombuilder + Slade
+*Editor(s) used		: Gzdoombuilder + _SLADE_
 *Music track		: Doom - E3M3
 *Bugs				: Some textures misalignments 
 *Inspiration		: Doom's third episode for the theme + map E3M1 for the beginning
@@ -256,8 +256,8 @@ Testing:
 *MAP22				: Autel Ecarlate
 *Author(s)			: <Nils "NilsTheRed" Vandamme>
 *Build time			: 3 hours
-*Editor(s) used		: DoomBuilder 2, Slade 3
-*Music track		: linefire.mid from Command & Conquer originaly composed by <Franck Klepacki>, found on www.mirsoft.info
+*Editor(s) used		: DoomBuilder 2, _SLADE3_
+*Music track		: linefire.mid from `Command & Conquer` originaly composed by <Franck Klepacki>, found on www.mirsoft.info
 *Bugs				: nothing found sofar
 *Inspiration		: Scythe, the previous 3 heures d'Agonie and maybe a bit of Utnt...
 *Author comments	: Thank to the authors of "Who killed captain Alex" to have made such a good which provided an excellent working sonor background while making this map ! And thank to all the members of the CFD for being awesome !
@@ -319,7 +319,7 @@ Testing:
 *MAP29				: Serment de Noirceur
 *Author(s)			: <Darkwave0000>
 *Build time			: 3.5 hours
-*Editor(s) used		: Doom Builder 2, Slade 3
+*Editor(s) used		: Doom Builder 2, _SLADE3_
 *Music track		: "Shadow Wood" from Hexen
 *Bugs				: N/a
 *Inspiration		: N/a
@@ -337,9 +337,9 @@ Testing:
 *MAP31				: Eau trouble
 *Author(s)			: <Roofi>
 *Build time			: 3h10 (without counting bug-fixing)
-*Editor(s) used		: Doombuilder2 + Slade
+*Editor(s) used		: Doombuilder2 + _SLADE_
 *Music track		: Dilapidated village - <Cyber Rainforce>
-*Bugs				: The sail of the boat may be buggy on Chocolate Doom.
+*Bugs				: The sail of the boat may be buggy on {Chocolate Doom}
 *Inspiration		: Dire Dire Docks level of Super Mario 64.
 *Author comments	: I had a lot of inspiration. I think it's one of my best maps. I also manage to not take too much time.
 :-------------------------------------------------------------------------------

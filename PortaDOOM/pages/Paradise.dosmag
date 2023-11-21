@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/106058
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-`Paradise` is a *GZDoom* TC, with a primary 7-map campaign, in addition to a 25-map episode of bonus maps. This version 2.1 release is a refinement of the 2019 2.0 release, adding *ZDoom* 2.8.1 and *Zandronum* compatibility, as well as adding coop multiplayer balance changes to the primary campaign (but not the bonus maps).
+`Paradise` is a _GZDoom_ TC, with a primary 7-map campaign, in addition to a 25-map episode of bonus maps. This version 2.1 release is a refinement of the 2019 2.0 release, adding {ZDoom} 2.8.1 and {Zandronum} compatibility, as well as adding coop multiplayer balance changes to the primary campaign (but not the bonus maps).
 
 Hardware-accelerated rendering mode strongly recommended, both for visual and performance reasons. Make sure you bind your reload key! Be sure to check out the "Mod Options" section in the main menu for options to customize your experience.
 
@@ -28,14 +28,14 @@ All maps in `Paradise` have been balanced for pistol starts, but playing continu
 :-------------------------------------------------------------------------------
 *Base					: `map03` is based on pieces of <ZaBigBoss>' `Back to Thunder Road`
 *Build Time				: hundreds of hours
-*Editor(s) used			: *GZDoom Builder*, *SLADE 3*, *Aseprite*, *MAME*, *Imagetool*, *LoopingAudioConverter*, *Paint.net*
-*Tested With			: *GZDoom* 4.0.0, *Zandronum* 3.0, and *ZDoom* 2.8.1
+*Editor(s) used			: _GZDoom Builder_, _SLADE3_, _Aseprite_, _MAME_, _Imagetool_, _LoopingAudioConverter_, _Paint.net_
+*Tested With			: _GZDoom_ 4.0.0, _Zandronum_ 3.0, and {ZDoom} 2.8.1
 
 :ADDITIONAL INFO
 :===============================================================================
 :A. PROJECT INFORMATION:
 :-------------------------------------------------------------------------------
-`Paradise` is result of my vision to combine modern gameplay mod capabilities with challenging, tightly-balanced gameplay. There is a great volume of fun, challenging work out there for vanilla or limit-removing `Doom` (`Sunlust` and `Resurgence` being among my favorites), but I've come across very few maps that retain that style of gameplay that I enjoy while also making use of the new capabilities that *(G)ZDoom* affords. `Paradise` is my response to that (perceived) absence.
+`Paradise` is result of my vision to combine modern gameplay mod capabilities with challenging, tightly-balanced gameplay. There is a great volume of fun, challenging work out there for vanilla or limit-removing `Doom` (`Sunlust` and `Resurgence` being among my favorites), but I've come across very few maps that retain that style of gameplay that I enjoy while also making use of the new capabilities that _(G)ZDoom_ affords. `Paradise` is my response to that (perceived) absence.
 
 $KEY:S=URL:https://www.doomworld.com/forum/topic/109107
 The gameplay mod built in to `Paradise` (which is called `Supercharge`, and has been [S: released standalone on the Doomworld forums]) was heavily inspired by `Complex Doom`, and for that I owe <Daedalus> (creator of `Complex Doom`) a huge thanks, because Paradise would not exist without that inspiration.
@@ -310,7 +310,7 @@ basically a testing ground for a bunch of fight ideas, some of which ended up ge
 
 Music: ??? (taken from `D2XGold`; probably a metal song from the 90s)
 
-Straightforward slaughter speedmap, inspired by an image I saw in the Post Your Doom Picture thread on Doomworld at some point.
+Straightforward slaughter speedmap, inspired by an image I saw in the Post Your Doom Picture thread on _Doomworld_ at some point.
 
 *MAP55: 30m42
 
@@ -419,23 +419,23 @@ resources:
 *<Sapfiar>:
 - all of the Supercharge-specific GLDEFS for monsters and projectiles and items
 
-*The Denizens of the ZDoom Wiki:
-- various code samples and instructions on how to do things in *ZDoom*.
+*The Denizens of the _ZDoom_ Wiki:
+- various code samples and instructions on how to do things in {ZDoom}.
   you are all stars in my book
 
 *<Blue Shadow>, <Gez>:
-- various code help provided on the *ZDoom* forums.
+- various code help provided on the _ZDoom_ forums.
   thank you both for everything you do for the community
 
-*<ZZYZX> and all past / present *GZ/Doom Builder* contributors:
-- creating / maintaining *GZDoom Builder* (and its forks),
+*<ZZYZX> and all past / present _GZ/Doom Builder_ contributors:
+- creating / maintaining _GZDoom Builder_ (and its forks),
  which was used for nearly all of the mapping done here
 
-*<Graf Zahl> and all *G/ZDoom* contributors:
-- creating *G/ZDoom*, which this work would not be possible without
+*<Graf Zahl> and all _G/ZDoom_ contributors:
+- creating _G/ZDoom_, which this work would not be possible without
 
-*<Simon Judd> and all SLADE contributors:
-- creating *SLADE*, which was used for 100% of the resource management
+*<Simon Judd> and all _SLADE_ contributors:
+- creating _SLADE_, which was used for 100% of the resource management
 
 *<Tormentor667>:
 - sparkle sprites and code

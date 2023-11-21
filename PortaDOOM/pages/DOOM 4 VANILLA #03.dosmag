@@ -6,7 +6,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/108725
 :===============================================================================
 Version 2.0 also added 8 new weapons (including the Gauss Cannon) that can be individually picked to replace the regular ones:
 
-! *NOTE:* Alternative weapons can be switched on-the-fly in *GZDoom* by bringing up the menu (ESC) and selecting "Weapons". Loading alternative weapons for other ports requires changing the executable invocation, which is not available in *PortaDOOM* for now
+! *NOTE:* Alternative weapons can be switched on-the-fly in _GZDoom_ by bringing up the menu (ESC) and selecting "Weapons". Loading alternative weapons for other ports requires changing the executable invocation, which is not available in {PortaDOOM} for now
 
 :VORTEX RIFLE - SLOT 01:
 :-------------------------------------------------------------------------------

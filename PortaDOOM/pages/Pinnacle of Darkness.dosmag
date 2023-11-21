@@ -12,15 +12,15 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/68215
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-Large hell/gothic themed map for *GZDoom*.
+Large hell/gothic themed map for _GZDoom_.
 
 :Construction:
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: On and off for 7 years
-*Editor(s) used			: *Deepsea* v12.15.3
+*Editor(s) used			: _Deepsea_ v12.15.3
 *Known Bugs				: None
-*May Not Run With...	: Designed for *GZDoom* only
+*May Not Run With...	: Designed for _GZDoom_ only
 
 :Credits:
 :-------------------------------------------------------------------------------

@@ -30,8 +30,8 @@ Entry from *"Rending of the Veil: Journals and Diaries from the Astral Plane"*, 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Two months
-*Editor(s) used			: `Doom Builder 2`
+*Editor(s) used			: _Doom Builder 2_
 *Known Bugs				: Slime trails everywhere
-*May Not Run With		: Any port that does not support extended nodes, old ports of `PrBoom`/`Zdoom`
-*Tested With			: `Zdoom` 2.6.1, `PrBoom` 2.5.0, `PrBoom+` 2.5.1
+*May Not Run With		: Any port that does not support extended nodes, old ports of _PrBoom_/{ZDoom}
+*Tested With			: {ZDoom} 2.6.1, _PrBoom_ 2.5.0, _PrBoom+_ 2.5.1
 *Music track			: "Egypt" by <Ribbiks>

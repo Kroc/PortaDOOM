@@ -24,10 +24,10 @@ Along with its experiments on the teleportation, the UAC on Earth started to mak
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: I don't know exactly, approximately 10 months
-*Editor(s) used			: Doom Builder 2, Slade3, Gimp 2
+*Editor(s) used			: _Doom Builder 2_, _SLADE3_, _GIMP_ 2
 *Known Bugs				: some little slime trails and some textures misalignments have probably remained, MAP08 bridge may have some homs if you use a GL port
 *May Not Run With		: Vanilla
-*Tested With			: PrBoom+ 2.5.1.4 with complevel 9
+*Tested With			: _PrBoom+_ 2.5.1.4 with complevel 9
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -48,4 +48,4 @@ The Return texture pack, Hexen, Heretic, Quake 1, Hexen 2, Gothictx, <Plum>'s Sk
 		  Message: Eternal Doom -  MAP15
 		  Intermission: Eternal Doom - Intermission
 
-And thanks to the guys at Doomworld for their support and assistance.
+And thanks to the guys at _Doomworld_ for their support and assistance.

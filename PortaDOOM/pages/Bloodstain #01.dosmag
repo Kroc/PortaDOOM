@@ -24,11 +24,11 @@ It ought to be just another boring workday of a UAC space marine. You were sent 
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: About 5 years (depends on what you consider to be the start)
-*Editor(s) used		: Doombuilder 1/2, XWE, Slade 3, MS Paint
+*Editor(s) used		: _Doombuilder_ 1/2, _XWE_, _SLADE3_, _MS Paint_
 *Known Bugs			: Some slime trails
 					  Intended map32 sky texture is displayed only by ports that support MAPINFO
 *May Not Run With	: DOOM2.exe
-*Tested With		: PrBoom-Plus 2.5.1.3, ZDoom 2.3.1
+*Tested With		: _PrBoom-Plus_ 2.5.1.3, {ZDoom} 2.3.1
 
 :Credits
 :-------------------------------------------------------------------------------

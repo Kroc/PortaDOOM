@@ -103,7 +103,9 @@ FUNCTION STRGUI.CompileStr$ (source$)
         
         'look for the opening brace of the command-list;
         'if missing, the ESC is written out and the brace re-assessed
-        IF ASC(source$, i% + 1) <> STRGUI_CMDBEGIN THEN _CONTINUE
+        IF ASC(source$, i% + 1) <> STRGUI_CMDBEGIN THEN
+            GOSUB AppendChar: _CONTINUE
+        END IF
         'can skip over the escape code now
         LET i% = i% + 2
         

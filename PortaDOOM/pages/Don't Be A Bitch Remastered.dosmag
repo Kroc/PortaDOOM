@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/d
 :-------------------------------------------------------------------------------
 
 $KEY:D=URL:http://doomseeker.drdteam.org/
-! *NOTE:* PortaDOOM does not include multiplayer-only maps!
+! *NOTE:* {PortaDOOM} does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use [D: Doomseeker] to play online and search for 'dbabrm'
 

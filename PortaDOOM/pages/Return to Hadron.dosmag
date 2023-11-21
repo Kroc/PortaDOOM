@@ -65,10 +65,10 @@ I remade the main playing area into something more modern, this map plays very v
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: 3 months
-*Editor(s) used		: `Doom builder 2` and `Slade 3`
+*Editor(s) used		: _Doom builder 2_ and _SLADE3_
 *Known Bugs			: Not any I have found. There are likely to be visplane overflows in Vanilla
 *May Not Run With	: Vanilla
-*Tested With		: `Pr-boom plus` V2.5.1.3
+*Tested With		: _Pr-boom plus_ V2.5.1.3
 
 :Credits:
 :-------------------------------------------------------------------------------

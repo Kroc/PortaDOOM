@@ -486,444 +486,497 @@ SUB formatLine (indent%, src$, default_theme%)
 
     'we need to know if a word was already bold/term/cite &c. when it began,
     'so that if it's wrapped we can insert the format code on the new line
-    DIM is_bold`, word_bold`
-    DIM is_term`, word_term`
-    DIM is_cite`, word_cite`
-    DIM is_name`, word_name`
-    DIM is_key`, word_key`
+    DIM is_bold`, word_bold` '*...*
+    DIM is_cite`, word_cite` '`...`
+    DIM is_term`, word_term` '_..._,
+    DIM is_defn`, word_defn` '{...}
+    DIM is_name`, word_name` '<...>
+    DIM is_key`, word_key` '  [...]
 
-    'process text:
-    FOR src% = src% TO src_len%
-        '=====================================================================
-        'get current character in the source line
-        LET char% = ASC(src$, src%)
-        'this moves the column in the source text forward, however
-        'if this is a tab character this will be adjusted further down
-        '(this is why src% and src_col% may not be the same)
-        LET src_col% = src_col% + 1
+doChar:
+    '=========================================================================
+    'get current character in the source line
+    LET char% = ASC(src$, src%)
+    'this moves the column in the source text forward, however
+    'if this is a tab character this will be adjusted elsewhere
+    '(this is why src% and src_col% may not be the same)
+    LET src_col% = src_col% + 1
 
-        'null is given by UTF8ANSI$ to mark unusable UTF8 characters
-        IF char% = 0 THEN
-            'add a blinking question mark to highlight errant null chars
-            LET word$ = word$ + "^{Br,FY!}?^{F-,B-}"
-            LET word_len% = word_len% + 1
-            LET is_boundary` = FALSE
-            _CONTINUE
+    'null is given by UTF8ANSI$ to mark unusable UTF8 characters
+    IF char% = 0 THEN
+        'add a blinking question mark to highlight errant null chars
+        LET word$ = word$ + "^{Br,FY!}?^{F-,B-}"
+        LET word_len% = word_len% + 1
+        LET is_boundary` = FALSE
+        GOTO nextChar
+    END IF
+
+    'within key link text no formatting occurs!
+    '-------------------------------------------------------------------------
+    IF is_key` = TRUE THEN
+        'is this the end of the key text?
+        IF char% = CTL_KEY_OFF THEN
+            'add the closing bracket and control code for display
+            GOSUB addChar
+            LET word$ = word$ + "^{F-}"
+            'a word boundary occurs after the closing bracket
+            LET is_key` = FALSE
+            LET is_boundary` = TRUE
+
+        ELSEIF char% = ASC_SPC THEN
+            'append the current word (this will word-wrap as necessary)
+            'if the line wrapped exactly the space will not be needed,
+            'and this GOSUB call will not return here!
+            GOSUB addWord
+            'if the line wrapped, we don't want to add the whitespace
+            'to the beginning of the new line, indentation has already
+            'been handled
+            IF line_len% > 0 THEN
+                CALL STRGUI_Add(" ")
+                LET line_len% = line_len% + 1
+            END IF
+        ELSE
+            'any other character, add as is
+            GOSUB addChar
         END IF
+        'process next letter...
+        GOTO nextChar
+    END IF
+    
+    'within <person name> no formatting occurs!
+    '-------------------------------------------------------------------------
+    IF is_name` = TRUE THEN
+        'is this the end of the name?
+        IF char% = CTL_NAME_OFF THEN
+            'add the control code for display
+            '(the angle-bracket isn't displayed)
+            LET word$ = word$ + "^{F-}"
+            'a word boundary occurs after the closing angle-bracket
+            LET is_name` = FALSE
+            LET is_boundary` = TRUE
 
-        'within key link text no formatting occurs!
-        '---------------------------------------------------------------------
-        IF is_key` = TRUE THEN
-            'is this the end of the key text?
-            IF char% = CTL_KEY_OFF THEN
-                'add the closing bracket and control code for display
+        ELSEIF char% = ASC_SPC THEN
+            'append the current word (this will word-wrap as necessary)
+            'if the line wrapped exactly the space will not be needed,
+            'and this GOSUB call will not return here!
+            GOSUB addWord
+            'if the line wrapped, we don't want to add the whitespace
+            'to the beginning of the new line, indentation has already
+            'been handled
+            IF line_len% > 0 THEN
+                CALL STRGUI_Add(" ")
+                LET line_len% = line_len% + 1
+            END IF
+        ELSE
+            'any other character, add as is
+            GOSUB addChar
+        END IF
+        'process next letter...
+        GOTO nextChar
+    END IF
+
+    'within {definition} no formatting occurs!
+    '-------------------------------------------------------------------------
+    IF is_defn` = TRUE THEN
+        'is this the end of the name?
+        IF char% = CTL_DEFN_OFF THEN
+            REM 'insert the definition marker
+            REM LET char% = ASC_CARET
+            REM GOSUB addChar
+            'add the control code for display
+            '(the curly-brace isn't displayed)
+            LET word$ = word$ + "^{F-}"
+            'a word boundary occurs after the closing curly-brace
+            LET is_defn` = FALSE
+            LET is_boundary` = TRUE
+
+        ELSEIF char% = ASC_SPC THEN
+            'append the current word (this will word-wrap as necessary)
+            'if the line wrapped exactly the space will not be needed,
+            'and this GOSUB call will not return here!
+            GOSUB addWord
+            'if the line wrapped, we don't want to add the whitespace
+            'to the beginning of the new line, indentation has already
+            'been handled
+            IF line_len% > 0 THEN
+                CALL STRGUI_Add(" ")
+                LET line_len% = line_len% + 1
+            END IF
+        ELSE
+            'any other character, add as is
+            GOSUB addChar
+        END IF
+        'process next letter...
+        GOTO nextChar
+    END IF
+
+    'normal body text...
+    '-------------------------------------------------------------------------
+    SELECT CASE char%
+        CASE CTL_INDENT:
+            '.................................................................
+            'set the following indent to the current position
+            LET next_indent% = line_len% + word_len%
+            'word-break immediately
+            GOSUB addWord
+
+        CASE CTL_HEADING:
+            '.................................................................
+            'look for the " : " pattern
+            IF ( _
+                ASC(src$, src% - 1) = ASC_SPC OR _
+                ASC(src$, src% - 1) = ASC_TAB _
+            ) AND ( _
+                ASC(src$, src% + 1) = ASC_SPC OR _
+                ASC(src$, src% + 1) = ASC_TAB _
+            ) THEN
+                'push the colon alone
                 GOSUB addChar
-                LET word$ = word$ + "^{F-}"
-                'a word boundary occurs after the closing bracket
-                LET is_key` = FALSE
-                LET is_boundary` = TRUE
-
-            ELSEIF char% = ASC_SPC THEN
-                'append the current word (this will word-wrap as necessary)
-                'if the line wrapped exactly the space will not be needed,
-                'and this GOSUB call will not return here!
                 GOSUB addWord
-                'if the line wrapped, we don't want to add the whitespace
-                'to the beginning of the new line, indentation has already
-                'been handled
-                IF line_len% > 0 THEN
-                    CALL STRGUI_Add(" ")
-                    LET line_len% = line_len% + 1
-                END IF
+
+                'set the indent to the current position
+                LET next_indent% = line_len% + word_len% + 1
             ELSE
-                'any other character, add as is
                 GOSUB addChar
             END IF
-            'process next letter...
-            _CONTINUE
-        END IF
-        
-        'within <person name> no formatting occurs!
-        '---------------------------------------------------------------------
-        IF is_name` = TRUE THEN
-            'is this the end of the name?
-            IF char% = CTL_NAME_OFF THEN
-                'add the control code for display
-                '(the angle-bracket isn't displayed)
-                LET word$ = word$ + "^{F-}"
-                'a word boundary occurs after the closing angle-bracket
-                LET is_name` = FALSE
-                LET is_boundary` = TRUE
 
-            ELSEIF char% = ASC_SPC THEN
-                'append the current word (this will word-wrap as necessary)
-                'if the line wrapped exactly the space will not be needed,
-                'and this GOSUB call will not return here!
-                GOSUB addWord
-                'if the line wrapped, we don't want to add the whitespace
-                'to the beginning of the new line, indentation has already
-                'been handled
-                IF line_len% > 0 THEN
-                    CALL STRGUI_Add(" ")
-                    LET line_len% = line_len% + 1
-                END IF
-            ELSE
-                'any other character, add as is
-                GOSUB addChar
+        CASE CTL_KEY_ON:
+            '.................................................................
+            'don't allow within "_term_"
+            IF is_term` = FALSE THEN
+                'enable the key mode and change the colour
+                LET is_key` = TRUE
+                LET word$ = word$ + "^{F@K}"
             END IF
-            'process next letter...
-            _CONTINUE
-        END IF
+            'add the open-bracket character
+            GOSUB addChar
 
-        'normal body text...
-        '---------------------------------------------------------------------
-        SELECT CASE char%
-            CASE CTL_INDENT
-                '.............................................................
-                'set the following indent to the current position
-                LET next_indent% = line_len% + word_len%
-                'word-break immediately
-                GOSUB addWord
+        CASE CTL_NAME_ON:
+            '.................................................................
+            'enable the person name mode
+            '(no word boundary is required)
+            LET is_name` = TRUE
+            'change the colour
+            LET word$ = word$ + "^{F@N}"
 
-            CASE CTL_HEADING
-                '.............................................................
-                'look for the " : " pattern
-                IF ( _
-                    ASC(src$, src% - 1) = ASC_SPC OR _
-                    ASC(src$, src% - 1) = ASC_TAB _
-                ) AND ( _
-                    ASC(src$, src% + 1) = ASC_SPC OR _
-                    ASC(src$, src% + 1) = ASC_TAB _
-                ) THEN
-                    'push the colon alone
-                    GOSUB addChar
-                    GOSUB addWord
+        CASE CTL_DEFN_ON:
+            '.................................................................
+            'enable the definition name mode
+            '(no word boundary is required)
+            LET is_defn` = TRUE
+            'change the colour
+            LET word$ = word$ + "^{F@T}"
+            REM 'insert the definition marker
+            REM LET char% = 4
+            REM GOSUB addChar
 
-                    'set the indent to the current position
-                    LET next_indent% = line_len% + word_len% + 1
-                ELSE
-                    GOSUB addChar
-                END IF
-
-            CASE CTL_KEY_ON
-                '.............................................................
-                'don't allow within "_term_"
-                IF is_term` = FALSE THEN
-                    'enable the key mode and change the colour
-                    LET is_key` = TRUE
-                    LET word$ = word$ + "^{F@K}"
-                    LET word_len% = word_len% + 1
-                END IF
-                'add the open-bracket character
-                GOSUB addChar
-
-            CASE CTL_NAME_ON
-                '.............................................................
-                'enable the person name mode
-                '(no word boundary is required)
-                LET is_name` = TRUE
-                'change the colour
-                LET word$ = word$ + "^{F@N}"
-
-            CASE CTL_BOLD
-                '.............................................................
-                'check the next character:
-                SELECT CASE ASC(src$, src% + 1)
-                    CASE char%
-                        'double is an escape, treat as single literal
-                        LET src% = src% + 1: LET src_col% = src_col% + 1
-                        GOSUB addChar
-
-                    CASE ASC_SPC, ASC_TAB
-                        'if followed by whitespace, then it's
-                        'assumed to be a closing bold marker
-                        IF is_bold` = TRUE THEN
-                            LET is_bold` = FALSE
-                            LET word$ = word$ + "^{F-}"
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
-                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
-                         ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
-                         ASC_BTICK, CTL_TERM, ASC_LPAREN, ASC_RPAREN
-                        'word boundary? if bold is on, flip it off
-                        IF is_bold` = TRUE THEN
-                            LET is_bold` = FALSE
-                            LET word$ = word$ + "^{F-}"
-
-                        ELSEIF is_bold` = FALSE THEN
-                            LET is_bold` = TRUE
-                            LET word$ = word$ + "^{F@B}"
-
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ELSE
-                        'bold can only be enabled at a word-boundary
-                        IF is_boundary` = TRUE THEN
-                            LET is_bold` = TRUE
-                            LET word$ = word$ + "^{F@B}"
-                        ELSE
-                            'middle of word, treat as literal
-                            GOSUB addChar
-                        END IF
-                END SELECT
-
-            CASE CTL_TERM
-                '.............................................................
-                'check the next character:
-                SELECT CASE ASC(src$, src% + 1)
-                    CASE char%
-                        'double is an escape, treat as single literal
-                        LET src% = src% + 1: LET src_col% = src_col% + 1
-                        GOSUB addChar
-
-                    CASE ASC_SPC, ASC_TAB
-                        'if followed by whitespace, then it's
-                        'assumed to be a closing term marker
-                        IF is_term` = TRUE THEN
-                            LET is_term` = FALSE
-                            LET word$ = word$ + "^{F-}"
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ASC_SPC, ASC_TAB, ASC_PLUS, _
-                         ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
-                         ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
-                         ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
-                         CTL_BOLD, ASC_LPAREN, ASC_RPAREN
-                        'word boundary? if term is on, flip it off
-                        IF is_term` = TRUE THEN
-                            LET is_term` = FALSE
-                            LET word$ = word$ + "^{F-}"
-
-                        ELSEIF is_term` = FALSE THEN
-                            LET is_term` = TRUE
-                            LET word$ = word$ + "^{F@T}"
-
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ELSE
-                        'term can only be enabled at a word-boundary
-                        IF is_boundary` = TRUE THEN
-                            LET is_term` = TRUE
-                            LET word$ = word$ + "^{F@T}"
-                        ELSE
-                            'middle of word, treat as literal
-                            GOSUB addChar
-                        END IF
-                END SELECT
-
-            CASE CTL_CITE
-                '.............................................................
-                'check the next character:
-                SELECT CASE ASC(src$, src% + 1)
-                    CASE char%
-                        'double is an escape, treat as single literal
-                        LET src% = src% + 1: LET src_col% = src_col% + 1
-                        GOSUB addChar
-
-                    CASE ASC_SPC, ASC_TAB
-                        'if followed by whitespace, then it's
-                        'assumed to be a closing cite marker
-                        IF is_cite` = TRUE THEN
-                            LET is_cite` = FALSE
-                            LET word$ = word$ + "^{F-}"
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
-                         ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
-                         ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
-                         ASC_BTICK, CTL_TERM, ASC_LPAREN, ASC_RPAREN
-                        'word boundary? if cite is on, flip it off
-                        IF is_cite` = TRUE THEN
-                            LET is_cite` = FALSE
-                            LET word$ = word$ + "^{F-}"
-
-                        ELSEIF is_cite` = FALSE THEN
-                            LET is_cite` = TRUE
-                            LET word$ = word$ + "^{F@C}"
-
-                        ELSE
-                            'treat as literal
-                            GOSUB addChar
-                        END IF
-
-                    CASE ELSE
-                        'cite can only be enabled at a word-boundary
-                        IF is_boundary` = TRUE THEN
-                            LET is_cite` = TRUE
-                            LET word$ = word$ + "^{F@C}"
-                        ELSE
-                            'cite can be disabled mid-word
-                            '(use double-backtick to escape)
-                            IF is_cite` = TRUE THEN
-                                LET is_cite` = FALSE
-                                LET word$ = word$ + "^{F-}"
-                            ELSE
-                                'middle of word, treat as literal
-                                GOSUB addChar
-                            END IF
-                        END IF
-                END SELECT
-
-            CASE CTL_BREAK
-                '.............................................................
-                'double back-slash creates a manual line-break
-                IF ASC(src$, src% + 1) = CTL_BREAK THEN
-                    LET char% = 0: GOSUB addWord: GOSUB lineBreak
-                    'ignore the second slash
+        CASE CTL_BOLD:
+            '.................................................................
+            'check the next character:
+            SELECT CASE ASC(src$, src% + 1)
+                CASE char%:
+                    'double is an escape, treat as single literal
                     LET src% = src% + 1: LET src_col% = src_col% + 1
-                ELSE
-                    'treat as normal
                     GOSUB addChar
-                END IF
 
-            CASE ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK
-                '.............................................................
-                'some punctuation is a word-boundary, but not a word-break;
-                'e.g. "_bob_'s burgers"
-                GOSUB addChar
-                LET is_boundary` = TRUE
+                CASE ASC_SPC, ASC_TAB:
+                    'if followed by whitespace, then it's
+                    'assumed to be a closing bold marker
+                    IF is_bold` = TRUE THEN
+                        LET is_bold` = FALSE
+                        LET word$ = word$ + "^{F-}"
+                    ELSE
+                        'treat as literal
+                        GOSUB addChar
+                    END IF
 
-            CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_PLUS, ASC_COMMA, _
-                 ASC_SEMICOLON, ASC_LPAREN, ASC_RPAREN
-                '.............................................................
-                'these break the word, but the character must be included
-                GOSUB addChar
-                'append the word to the line and continue
-                GOSUB addWord
+                CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
+                     ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
+                     ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
+                     ASC_BTICK, CTL_TERM, ASC_LPAREN, ASC_RPAREN:
+                    'word boundary? if bold is on, flip it off
+                    IF is_bold` = TRUE THEN
+                        LET is_bold` = FALSE
+                        LET word$ = word$ + "^{F-}"
 
-            CASE ASC_SPC, ASC_TAB
-                '.............................................................
-                'append the current word (this will word-wrap as necessary)
-                'if the line wrapped exactly the space will not be needed,
-                'and this GOSUB call will not return here!
-                GOSUB addWord
-                'if the line wrapped, we don't want to add the whitespace
-                'to the beginning of the new line, indentation has already
-                'been handled
-                IF line_len% = 0 THEN _CONTINUE
-
-                'the source column has already been moved forward by one,
-                'but this might be wrong due to a tab character
-                LET src_col% = src_col% - 1
-
-                'batch together any contiguous white-space
-                DIM ws%: LET ws% = 0 'number of spaces
-                'this will be used to calculate the difference between
-                'the on-screen column and the column in the source text
-                DIM adjust%: LET adjust% = 0
-                'two spaces will cause a column sync, but a single tab
-                'will always cause a column sync even if the tab character
-                'only ends up expanding to one space
-                DIM is_sync`: LET is_sync` = FALSE
-                DO
-                    'if this is a tab
-                    IF ASC(src$, src%) = ASC_TAB THEN
-                        'walk along the tab-stops
-                        DIM t%: LET t% = 1
-                        DO
-                            'if this tab-stop comes after the current column
-                            IF (t% * TAB_SIZE) > src_col% THEN
-                                'calc the number of spaces
-                                'to reach the tab stop
-                                LET adjust% = (t% * TAB_SIZE) - src_col%
-                                EXIT DO
-                            END IF
-                            LET t% = t% + 1
-                        LOOP
-                        'move things along
-                        LET src_col% = src_col% + adjust%
-                        LET ws% = ws% + adjust%
-                        'a tab always causes a column-sync,
-                        'even if the tab only expands to one space
-                        LET is_sync` = TRUE
+                    ELSEIF is_bold` = FALSE THEN
+                        LET is_bold` = TRUE
+                        LET word$ = word$ + "^{F@B}"
 
                     ELSE
-                        'not a tab, just a space
-                        LET ws% = ws% + 1
-                        LET src_col% = src_col% + 1
-                        'columns will sync after two or more spaces
-                        IF ws% > 1 THEN LET is_sync` = TRUE
+                        'treat as literal
+                        GOSUB addChar
                     END IF
 
-                    'was this the last character in the line?
-                    IF src% = src_len% THEN EXIT DO
-                    'is the next character not white-space?
-                    IF ASC(src$, src% + 1) <> ASC_SPC AND _
-                       ASC(src$, src% + 1) <> ASC_TAB _
-                    THEN
-                        EXIT DO
+                CASE ELSE
+                    'bold can only be enabled at a word-boundary
+                    IF is_boundary` = TRUE THEN
+                        LET is_bold` = TRUE
+                        LET word$ = word$ + "^{F@B}"
+                    ELSE
+                        'middle of word, treat as literal
+                        GOSUB addChar
                     END IF
-                    'get next character in the source line
-                    LET src% = src% + 1
-                LOOP
+            END SELECT
+        
+        CASE CTL_TERM
+            '.................................................................
+            'check the next character:
+            SELECT CASE ASC(src$, src% + 1)
+                CASE char%:
+                    'double is an escape, treat as single literal
+                    LET src% = src% + 1: LET src_col% = src_col% + 1
+                    GOSUB addChar
 
-                'if there's more than one space, resync the columns
-                IF src% <= src_len% - 1 THEN
-                    IF is_sync` = TRUE _
-                    OR ( _
-                        (ASC(src$, src% + 1) = ASC_COLON) AND _
-                        (ASC(src$, src% + 2) = ASC_SPC) _
-                    ) THEN
-                        'calculate the difference between the source column,
-                        'and the screen column (no formatting marks)
-                        LET adjust% = src_col% - (line_len% + indent% + ws%)
-                        'adjust the whitespace to match the source column,
-                        'rather than the screen one
-                        LET ws% = ws% + adjust%
-                        'set the next line indent to the current position
-                        LET next_indent% = src_col%
-                        'clear the bold/term/cite state;
-                        'this removes the need for a *lot* of fiddly typing
-                        IF is_bold` = TRUE THEN
-                            CALL STRGUI_Add("^{F-}")
-                            LET is_bold` = FALSE
-                        END IF
-                        IF is_term` = TRUE THEN
-                            CALL STRGUI_Add("^{F-}")
-                            LET is_term` = FALSE
-                        END IF
+                CASE ASC_SPC, ASC_TAB:
+                    'if followed by whitespace, then it's
+                    'assumed to be a closing term marker
+                    IF is_term` = TRUE THEN
+                        LET is_term` = FALSE
+                        LET word$ = word$ + "^{F-}"
+                    ELSE
+                        'treat as literal
+                        GOSUB addChar
+                    END IF
+
+                CASE ASC_SPC, ASC_TAB, ASC_PLUS, _
+                     ASC_COMMA, ASC_DASH, ASC_COLON, ASC_SEMICOLON, _
+                     ASC_PERIOD, ASC_APOS, ASC_EXCL, ASC_QMARK, _
+                     ASC_SMARK, ASC_FSLASH, ASC_BSLASH, ASC_BTICK, _
+                     CTL_BOLD, ASC_LPAREN, ASC_RPAREN:
+                    'word boundary? if term is on, flip it off
+                    IF is_term` = TRUE THEN
+                        LET is_term` = FALSE
+                        LET word$ = word$ + "^{F-}"
+
+                    ELSEIF is_term` = FALSE THEN
+                        LET is_term` = TRUE
+                        LET word$ = word$ + "^{F@T}"
+
+                    ELSE
+                        'treat as literal
+                        GOSUB addChar
+                    END IF
+
+                CASE ELSE
+                    'term can only be enabled at a word-boundary
+                    IF is_boundary` = TRUE THEN
+                        LET is_term` = TRUE
+                        LET word$ = word$ + "^{F@T}"
+                    ELSE
+                        'middle of word, treat as literal
+                        GOSUB addChar
+                    END IF
+            END SELECT
+
+        CASE CTL_CITE:
+            '.................................................................
+            'check the next character:
+            SELECT CASE ASC(src$, src% + 1)
+                CASE char%:
+                    'double is an escape, treat as single literal
+                    LET src% = src% + 1: LET src_col% = src_col% + 1
+                    GOSUB addChar
+
+                CASE ASC_SPC, ASC_TAB:
+                    'if followed by whitespace, then it's
+                    'assumed to be a closing cite marker
+                    IF is_cite` = TRUE THEN
+                        LET is_cite` = FALSE
+                        LET word$ = word$ + "^{F-}"
+                    ELSE
+                        'treat as literal
+                        GOSUB addChar
+                    END IF
+
+                CASE ASC_PLUS, ASC_COMMA, ASC_DASH, ASC_COLON, _
+                     ASC_SEMICOLON, ASC_PERIOD, ASC_APOS, ASC_EXCL, _
+                     ASC_QMARK, ASC_SMARK, ASC_FSLASH, ASC_BSLASH, _
+                     ASC_BTICK, CTL_TERM, ASC_LPAREN, ASC_RPAREN:
+                    'word boundary? if cite is on, flip it off
+                    IF is_cite` = TRUE THEN
+                        LET is_cite` = FALSE
+                        LET word$ = word$ + "^{F-}"
+
+                    ELSEIF is_cite` = FALSE THEN
+                        LET is_cite` = TRUE
+                        LET word$ = word$ + "^{F@C}"
+
+                    ELSE
+                        'treat as literal
+                        GOSUB addChar
+                    END IF
+
+                CASE ELSE
+                    'cite can only be enabled at a word-boundary
+                    IF is_boundary` = TRUE THEN
+                        LET is_cite` = TRUE
+                        LET word$ = word$ + "^{F@C}"
+                    ELSE
+                        'cite can be disabled mid-word
+                        '(use double-backtick to escape)
                         IF is_cite` = TRUE THEN
-                            CALL STRGUI_Add("^{F-}")
                             LET is_cite` = FALSE
+                            LET word$ = word$ + "^{F-}"
+                        ELSE
+                            'middle of word, treat as literal
+                            GOSUB addChar
                         END IF
                     END IF
+            END SELECT
+
+        CASE CTL_BREAK:
+            '.................................................................
+            'double back-slash creates a manual line-break
+            IF ASC(src$, src% + 1) = CTL_BREAK THEN
+                LET char% = 0: GOSUB addWord: GOSUB lineBreak
+                'ignore the second slash
+                LET src% = src% + 1: LET src_col% = src_col% + 1
+            ELSE
+                'treat as normal
+                GOSUB addChar
+            END IF
+
+        CASE ASC_APOS, ASC_EXCL, ASC_QMARK, ASC_SMARK:
+            '.................................................................
+            'some punctuation is a word-boundary, but not a word-break;
+            'e.g. "_bob_'s burgers"
+            GOSUB addChar
+            LET is_boundary` = TRUE
+
+        CASE ASC_DASH, ASC_FSLASH, ASC_BSLASH, ASC_PLUS, ASC_COMMA, _
+             ASC_SEMICOLON, ASC_LPAREN, ASC_RPAREN:
+            '.................................................................
+            'these break the word, but the character must be included
+            GOSUB addChar
+            'append the word to the line and continue
+            GOSUB addWord
+
+        CASE ASC_SPC, ASC_TAB:
+            '.................................................................
+            'append the current word (this will word-wrap as necessary)
+            'if the line wrapped exactly the space will not be needed,
+            'and this GOSUB call will not return here!
+            GOSUB addWord
+            'if the line wrapped, we don't want to add the whitespace
+            'to the beginning of the new line, indentation has already
+            'been handled
+            IF line_len% = 0 THEN GOTO nextChar
+
+            'the source column has already been moved forward by one,
+            'but this might be wrong due to a tab character
+            LET src_col% = src_col% - 1
+
+            'batch together any contiguous white-space
+            DIM ws%: LET ws% = 0 'number of spaces
+            'this will be used to calculate the difference between
+            'the on-screen column and the column in the source text
+            DIM adjust%: LET adjust% = 0
+            'two spaces will cause a column sync, but a single tab
+            'will always cause a column sync even if the tab character
+            'only ends up expanding to one space
+            DIM is_sync`: LET is_sync` = FALSE
+            DO
+                'if this is a tab
+                IF ASC(src$, src%) = ASC_TAB THEN
+                    'walk along the tab-stops
+                    DIM t%: LET t% = 1
+                    DO
+                        'if this tab-stop comes after the current column
+                        IF (t% * TAB_SIZE) > src_col% THEN
+                            'calc the number of spaces
+                            'to reach the tab stop
+                            LET adjust% = (t% * TAB_SIZE) - src_col%
+                            EXIT DO
+                        END IF
+                        LET t% = t% + 1
+                    LOOP
+                    'move things along
+                    LET src_col% = src_col% + adjust%
+                    LET ws% = ws% + adjust%
+                    'a tab always causes a column-sync,
+                    'even if the tab only expands to one space
+                    LET is_sync` = TRUE
+
+                ELSE
+                    'not a tab, just a space
+                    LET ws% = ws% + 1
+                    LET src_col% = src_col% + 1
+                    'columns will sync after two or more spaces
+                    IF ws% > 1 THEN LET is_sync` = TRUE
                 END IF
 
-                'append the white-space to the current line
-                CALL STRGUI_Add(SPACE$(ws%))
-                LET line_len% = line_len% + ws%
+                'was this the last character in the line?
+                IF src% = src_len% THEN EXIT DO
+                'is the next character not white-space?
+                IF ASC(src$, src% + 1) <> ASC_SPC AND _
+                   ASC(src$, src% + 1) <> ASC_TAB _
+                THEN
+                    EXIT DO
+                END IF
+                'get next character in the source line
+                LET src% = src% + 1
+            LOOP
 
-            CASE ELSE
-                '.............................................................
-                'add character to current word
-                GOSUB addChar
+            'if there's more than one space, resync the columns
+            IF src% <= src_len% - 1 THEN
+                IF is_sync` = TRUE _
+                OR ( _
+                    (ASC(src$, src% + 1) = ASC_COLON) AND _
+                    (ASC(src$, src% + 2) = ASC_SPC) _
+                ) THEN
+                    'calculate the difference between the source column,
+                    'and the screen column (no formatting marks)
+                    LET adjust% = src_col% - (line_len% + indent% + ws%)
+                    'adjust the whitespace to match the source column,
+                    'rather than the screen one
+                    LET ws% = ws% + adjust%
+                    'set the next line indent to the current position
+                    LET next_indent% = src_col%
+                    'clear the bold/term/cite state;
+                    'this removes the need for a *lot* of fiddly typing
+                    IF is_bold` = TRUE THEN
+                        CALL STRGUI_Add("^{F-}")
+                        LET is_bold` = FALSE
+                    END IF
+                    IF is_term` = TRUE THEN
+                        CALL STRGUI_Add("^{F-}")
+                        LET is_term` = FALSE
+                    END IF
+                    IF is_cite` = TRUE THEN
+                        CALL STRGUI_Add("^{F-}")
+                        LET is_cite` = FALSE
+                    END IF
+                END IF
+            END IF
 
-        END SELECT
-    NEXT
+            'append the white-space to the current line
+            CALL STRGUI_Add(SPACE$(ws%))
+            LET line_len% = line_len% + ws%
 
-    'add this word to the last line
+        CASE ELSE
+            '.................................................................
+            'add character to current word
+            GOSUB addChar
+
+    END SELECT
+   
+nextChar:
+    '-------------------------------------------------------------------------
+    'move to the next character
+    LET src% = src% + 1
+    'end of file? stop everything and exit
+    IF src% <= src_len% THEN GOTO doChar
+
+endOfFile:
+    '-------------------------------------------------------------------------
+    'add the unfinished word to the last line
     GOSUB addWord
     IF line_len% > 0 THEN GOSUB addLine
 
     EXIT SUB
 
-    addChar:
+addChar:
     '-------------------------------------------------------------------------
     'add the current character to the current word
     LET word$ = word$ + CHR$(char%): LET word_len% = word_len% + 1
@@ -932,7 +985,7 @@ SUB formatLine (indent%, src$, default_theme%)
 
     RETURN
 
-    addWord:
+addWord:
     '-------------------------------------------------------------------------
     'if the current word fits the line, we can line-break:
     IF line_len% + word_len% = line_width% THEN
@@ -954,14 +1007,14 @@ SUB formatLine (indent%, src$, default_theme%)
     GOSUB pushWord
     GOTO newWord
 
-    pushWord:
+pushWord:
     '-------------------------------------------------------------------------
     'add the word to the end of the line:
     CALL STRGUI_Add(word$)
     LET line_len% = line_len% + word_len%
     RETURN
     
-    lineBreak:
+lineBreak:
     '-------------------------------------------------------------------------
     'line has wrapped, dispatch the current line:
     GOSUB addLine
@@ -995,12 +1048,13 @@ SUB formatLine (indent%, src$, default_theme%)
     IF word_bold` = TRUE THEN CALL STRGUI_Add("^{F@B}")
     'are we currently in a term?
     IF word_term` = TRUE THEN CALL STRGUI_Add("^{F@T}")
+    IF word_defn` = TRUE THEN CALL STRGUI_Add("^{F@T}")
     'in cite?
     IF word_cite` = TRUE THEN CALL STRGUI_Add("^{F@C}")
     'begin the line with the remaining word
     GOSUB pushWord
 
-    newWord:
+newWord:
     '-------------------------------------------------------------------------
     'clear the 'current' word
     LET word$ = "": LET word_len% = 0
@@ -1009,6 +1063,7 @@ SUB formatLine (indent%, src$, default_theme%)
     'to the new line
     LET word_bold` = is_bold`
     LET word_term` = is_term`
+    LET word_defn` = is_defn`
     LET word_cite` = is_cite`
     LET word_name` = is_name`
     LET word_key` = is_key`
@@ -1017,7 +1072,7 @@ SUB formatLine (indent%, src$, default_theme%)
 
     RETURN
 
-    addLine:
+addLine:
     '-------------------------------------------------------------------------
     'do we need to apply centre / right-alignment?
     'the line will need to be shorter than the screen for this to work
@@ -1034,7 +1089,7 @@ SUB formatLine (indent%, src$, default_theme%)
         END IF
     END IF
 
-    pushLine:
+pushLine:
     '-------------------------------------------------------------------------
     'add the line to the array of screen-ready converted lines:
     'increase the number of lines stored
@@ -1048,7 +1103,7 @@ SUB formatLine (indent%, src$, default_theme%)
 
     RETURN
     
-    switchTheme:
+switchTheme:
     '-------------------------------------------------------------------------
     'when themes are changed, we change the colour variables.
     'since the binary string is only compiled at the end of the line,

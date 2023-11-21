@@ -11,38 +11,38 @@ $KEY:I=GOTO:Index
 
 ^C:PortaDOOM Alpha 3
 :-------------------------------------------------------------------------------
-*Prepare yourself for a huge dump of DOOM's intense, buttock-clenching action! It's a good thing we're providing the entertainment because you're going to be sat in one place for a looong time... Now where's the bog roll?*
+*Prepare yourself for a huge dump of `DOOM`'s intense, buttock-clenching action! It's a good thing we're providing the entertainment because you're going to be sat in one place for a looong time... Now where's the bog roll?*
 
 ! *PRO TIP:* Use MOUSEWHEEL or keyboard to scroll. LEFT or RIGHT ARROW keys to change page (or right-click to advance one page). Press the indicated keys "[?]" to navigate, or F1 for a full list of controls.
 
 :[D] Commercial DOOM ...
-	The commercial DOOM-engine releases that defined the DOOM saga:
-	DOOM, DOOM II, Final DOOM, Heretic, Hexen, Strife, Chex & more!
+	The commercial `DOOM`-engine releases that defined the `DOOM` saga:
+	`DOOM`, `DOOM II`, `Final DOOM`, `Heretic`, `Hexen`, `Strife`, `Chex` & more!
 
 :[C] The Cacowards ...
-	The annual competition for DOOM creations. Quality, and variety, gauranteed.
+	The annual competition for `DOOM` creations. Quality, and variety, guaranteed.
 
 :[T] Total Conversions ...
-	When is DOOM not DOOM? When it's been totally converted to something else; it's like getting a brand-new '90s FPS every time, from pirates to anthropomorphic squares.
+	When is `DOOM` not `DOOM`? When it's been totally converted to something else; it's like getting a brand-new '90s FPS every time, from pirates to anthropomorphic squares.
 
 :[M] MegaWADs ...
-	DOOM, but with all new levels. If you're looking for more regular DOOM gameplay, each megawad provides a complete new single-player episode of 15 or more maps.
+	`DOOM`, but with all new levels. If you're looking for more regular `DOOM` gameplay, each megawad provides a complete new single-player episode of ~15 or more maps.
 
 :[O] Onesies ...
-	When authors put everything they've got into a single map you're sure to get something good. 
+	When authors put everything they've got into a single map you're sure to get something good.
 
 :[P] Community Projects ...
 	Somebody comes up with an idea, and everybody contributes a map! Insanity, and awesomeness, ensues.
 
 $REM=$KEY:E=GOTO:Episodes
 $REM=:[E] Episodes ...
-$REM=    Shorter, more tighter experiences in the 5 - 15 map range.
+$REM=    Shorter, more tighter experiences in the 5 - 14 map range.
 $REM=
 :[V] The Vanilla Sundae Experience ...
-	For the die-hard doomer -- a series of vanilla-compatible WADs played the way they were meant to be.
+	For the die-hard doomer -- a series of {vanilla}-compatible {WAD}s played the way they were meant to be.
 
 :[I] The Index
-	Every WAD in PortaDOOM in a list!
+	Every {WAD} in {PortaDOOM} in a list!
 
 :===============================================================================
-^C*What else should go here? Send feedback to _kroc@camendesign.com_
+^C*What else should go here? Send feedback to <kroc@camendesign.com>

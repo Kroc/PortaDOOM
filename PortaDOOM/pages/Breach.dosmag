@@ -19,7 +19,7 @@ This was an exercise in using the original `Doom 2` textures and specials to bui
 
 (This represents about half of the map I had planned before I hit the seg limit; I may finish the second half at some point before the Earth finally plunges into the Sun.)
 
-*Notes:* Moderate difficulty and designed for rambo-style play, so don't be shy. Mouselook not required. Jumping disabled in *ZDoom* ports to prevent some sequence-breaking. (Sorry!)
+*Notes:* Moderate difficulty and designed for rambo-style play, so don't be shy. Mouselook not required. Jumping disabled in {ZDoom} ports to prevent some sequence-breaking. (Sorry!)
 
 100% completionists: there are several areas you cannot return to after leaving them. These areas contain no items however, and any monsters you encounter within them will always get killed or follow you out.
 
@@ -27,13 +27,13 @@ This was an exercise in using the original `Doom 2` textures and specials to bui
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: About 5 months spread over 1.5 years.
-*Editor(s) used		: *Doombuilder 2*, *GZDoomBuilder* 2.3, *Slade 3*
-*Known Bugs			: Slow loading and poor performance in *Doomsday*. A few slime trails here and there
-*May Not Run With	: Vanilla/*Chocolate Doom*, insufficiently limit-removing ports
-*Tested With		: *ZDoom* 2.7.1, *GZDoom* 1.9.1 and 3.0alpha, *Doom Retro* 1.9, *PrBoom+* 2.5.1.2, *Eternity* 3.34.37, *Doomsday* 1.15.0
+*Editor(s) used		: _Doombuilder 2_, _GZDoomBuilder_ 2.3, _Slade 3_
+*Known Bugs			: Slow loading and poor performance in _Doomsday_. A few slime trails here and there
+*May Not Run With	: Vanilla/{Chocolate Doom}, insufficiently limit-removing ports
+*Tested With		: {ZDoom} 2.7.1, _GZDoom_ 1.9.1 and 3.0alpha, {DOOM Retro} 1.9, _PrBoom+_ 2.5.1.2, {Eternity} 3.34.37, _Doomsday_ 1.15.0
 
 :Credits:
 :-------------------------------------------------------------------------------
 - <Jani Saarijärvi> for playtesting and invaluable design advice
-- The Doomworld forums for playtesting and vital criticism
+- The _Doomworld_ forums for playtesting and vital criticism
 - My wife, for her "unending patience" (her words)

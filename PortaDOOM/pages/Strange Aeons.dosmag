@@ -21,9 +21,9 @@ See the included [I: info .pdf] for story and further instructions.
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: The summer of 2015 (further playtests and maps in 2016)
-*Editor(s) used		: `DoomBuilder 2`, `Slade`, `XWE`
+*Editor(s) used		: _DoomBuilder 2_, _SLADE_, _XWE_
 *Known Bugs			: None Yet (crosses fingers)
-*Tested With		: `ZDoom`
+*Tested With		: {ZDoom}
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ See the included [I: info .pdf] for story and further instructions.
 *Special Thanks:
 
 - <Scifista> for answering my incessant questions
-- <Doomworld> for keeping `Doom` alive
+- _Doomworld_ for keeping `Doom` alive
 - <Realm667> for the awesome stuff
 - <kmxexii>, <Skepticist>, and <SuitePee> for playtesting
 - <Ed the Bat> forcompiling the pk3 with filters

@@ -18,15 +18,15 @@ One fairly large and complex map. Difficulty should be more on the challenging s
 :-------------------------------------------------------------------------------
 *Base				: New from scratch 
 *Build Time			: ~3 Months
-*Editor(s) used		: Doombuilder 2, Slade 3
-*May Not Run With	: ZDaemon due to extended nodes
-*Tested With		: Prboom+ 2.5.1.4, Zdoom 2.7.1
+*Editor(s) used		: _Doombuilder 2_, _SLADE3_
+*May Not Run With	: {ZDaemon} due to extended nodes
+*Tested With		: _Prboom+_ 2.5.1.4, {ZDoom} 2.7.1
 
 :Credits
 :-------------------------------------------------------------------------------
 - Id Games for Doom
 - <Archi>, <Killer5> and <Ribbiks> for playtesting
-- People at Doomworld for additional feedback
+- People at _Doomworld_ for additional feedback
 
 *Sprites:
 - Chaingunner skin by <TheDarkArchon>

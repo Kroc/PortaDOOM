@@ -13,16 +13,16 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 A gameplay mod bringing some of the Doom4 mechanics and its weapons, with mods included.
 
-! *NOTE:* PortaDOOM does not yet include Doom 4 Doom due to limitations supporting gameplay-only mods without levels, but will support it in a future release.
+! *NOTE:* {PortaDOOM} does not yet include `DOOM(4) DooM` due to limitations supporting gameplay-only mods without levels, but will support it in a future release.
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base				: New from scratch 
 *Build Time			: Something like 6 months
-*Editor(s) used		: Slade, Programmer's notepad, GIMP, Audacity, Notepad++, Paint.net, FL Studio, GitKraken
-*Known Bugs			: Sometimes glory kills will only do a quick punch of death instead of the GK animation. Mastermind GK will never show full animation due to tech limitations. Sometimes glory killing will make monsters clip through walls, floors or celings while being executed. If you use GZDoom devbuilds, HUD elements might look off. GZDoom 2.2 is recommended.
-*May Not Run With	: GZDoom current devbuilds. Will NOT work with Zandronum. It might run in ZDoom but it will look like crap due to color limitations.
-*Tested With		: GZDoom v2.2
+*Editor(s) used		: _SLADE_, _Programmer's Notepad_, _GIMP_, _Audacity_, _Notepad++_, _Paint.net_, _FL Studio_, _GitKraken_
+*Known Bugs			: Sometimes glory kills will only do a quick punch of death instead of the GK animation. Mastermind GK will never show full animation due to tech limitations. Sometimes glory killing will make monsters clip through walls, floors or celings while being executed. If you use _GZDoom_ devbuilds, HUD elements might look off. _GZDoom_ 2.2 is recommended.
+*May Not Run With	: _GZDoom_ current devbuilds. Will NOT work with _Zandronum_. It might run in _ZDoom_ but it will look like crap due to color limitations.
+*Tested With		: _GZDoom_ v2.2
 
 :Credits
 :-------------------------------------------------------------------------------

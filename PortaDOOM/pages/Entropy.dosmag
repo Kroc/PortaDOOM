@@ -18,7 +18,7 @@ There are two main routes to take from the start, one for plasma and the other f
 
 The map has been completed without BFG and without secrets to ensure it is balanced. Many of the fights will require some puzzling out before you can complete them. Sometimes this means simply pushing a switch when you otherwise wouldn't and other times it can mean something else entirely.
 
-This is a long and difficult map, but the other difficulties have been balanced in the hopes that people will use them. I would highly recommend that people play this map in a GL port like *GLBoom* or *GZDoom* as there are a few spots where software struggles FPS-wise. The map is still playable in *Prboom-Plus* but can get jittery in some of the more open areas.
+This is a long and difficult map, but the other difficulties have been balanced in the hopes that people will use them. I would highly recommend that people play this map in a GL port like _GLBoom_ or _GZDoom_ as there are a few spots where software struggles FPS-wise. The map is still playable in _Prboom-Plus_ but can get jittery in some of the more open areas.
 
 Here is a rough guide:
 
@@ -34,10 +34,10 @@ Most fights are beatable in a variety of different ways, so try stuff out! Remem
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 6 months on and off (no idea in hours)
-*Editor(s) used			: *GzDoom Builder* (Bugfix), *Slade*, *Photoshop*
-*Known Bugs				: Some FPS issues still remain in certain areas for lower end machines. *GLBoom* is recommended
-*May Not Run With...	: *ZDaemon*, *ZDoom*
-*Tested With...			: *Prboom-Plus*, *Glboom-Plus*, *GzDoom*, *ZDoom*
+*Editor(s) used			: _GZDoom Builder_ (Bugfix), _SLADE_, _Photoshop_
+*Known Bugs				: Some FPS issues still remain in certain areas for lower end machines. _GLBoom_ is recommended
+*May Not Run With...	: {ZDaemon}, {ZDoom}
+*Tested With...			: _Prboom-Plus_, _Glboom-Plus_, _GZDoom_, {ZDoom}
 
 :Credits:
 :-------------------------------------------------------------------------------

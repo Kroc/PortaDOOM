@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dupart1
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-6 map pack for `GZDoom`/`DOOM2`.
+6 map pack for _GZDoom_/`DOOM2`.
 
 Small to Medium sized maps. Maps can be completed rather quickly (just find the switch that opens the exit and then find the exit), with lots of secrets, switches, scripted events, and hidden areas full of the stuff you might need to survive the next map.
 
@@ -25,9 +25,9 @@ Intended for vanilla monsters and weapons but works well with most mods.
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 6 months
-*Editor(s) used			: `GZDoom builder`, `Slade3`, `Corel Photo`, `Cakewalk`
+*Editor(s) used			: _GZDoom builder_, _SLADE3_, _Corel Photo_, _Cakewalk_
 *May Not Run With		: non limit removing
-*Tested With			: `GZDoom` 2.1 / 3.0/ 3.2.4
+*Tested With			: _GZDoom_ 2.1 / 3.0 / 3.2.4
 
 :Credits
 :-------------------------------------------------------------------------------

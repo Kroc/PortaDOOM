@@ -18,10 +18,10 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 :-------------------------------------------------------------------------------
 *Base					: Doom 2 and from scratch
 *Build Time				: ~2 years
-*Editor(s) used			: *GZDoom Builder*, *SLADE* 3, *Photoshop CC*, *ZBrush*
+*Editor(s) used			: _GZDoom Builder_, _SLADE3_, _Photoshop CC_, _ZBrush_
 *Known Bugs				: None
-*May Not Run With...	: *GZDoom* versions below v4.1
-*Tested With...			: *GZDoom* 4.2.3
+*May Not Run With...	: _GZDoom_ versions below v4.1
+*Tested With...			: _GZDoom_ 4.2.3
 
 :Credits:
 :-------------------------------------------------------------------------------

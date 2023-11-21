@@ -24,10 +24,10 @@ You wake up in the morning and watch the news. The newsflash reports that the de
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Basically, the idea was come from 2006
-*Editor(s) used			: `Doom Builder 2`, `XWE`, `WhackEd4`, `SLADE3`, `Photoshop CS3`, `Goldwave`
+*Editor(s) used			: _Doom Builder 2_, _XWE_, _WhackEd4_, _SLADE3_, _Photoshop CS3_, _Goldwave_
 *Known Bugs				: Possible slime trails and all-ghost effect in classic ports
-*May Not Run With		: Vanilla Doom source ports
-*Tested With			: `PrBoom+` 2.5.1.5 w/ complevel 2, `GZDoom` g3.4.0 (software renderer), `ZDaemon` 1.10.04, `Zandronum` 3.0
+*May Not Run With		: Vanilla `Doom` source ports
+*Tested With			: _PrBoom+_ 2.5.1.5 w/ complevel 2, _GZDoom_ g3.4.0 (software renderer), {ZDaemon} 1.10.04, _Zandronum_ 3.0
 
 :Credits
 :-------------------------------------------------------------------------------

@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/108865
 :Requires : *zdoom		Includes : *+Music +Graphics
 :-------------------------------------------------------------------------------
 
-`Alienated` is a 10-level wad made for *GZDoom* and *Zandronum*. It features levels of varying size and difficulty, all made with the `Ancient Aliens` texture pack. There are 9 regular levels and one secret map, accessible from map06.
+`Alienated` is a 10-level wad made for _GZDoom_ and {Zandronum}. It features levels of varying size and difficulty, all made with the `Ancient Aliens` texture pack. There are 9 regular levels and one secret map, accessible from map06.
 
 The wad is meant to be played with dynamic lights turned on. Freelook is recommended, but not required. No jumping or crouching. Do not use vanilla or software in the sector light mode settings, as these options can mess with certain tricks used in map08 and ruin the experience for you.
 
@@ -20,10 +20,10 @@ The wad is meant to be played with dynamic lights turned on. Freelook is recomme
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Almost a year
-*Editor(s) used			: *GZDoomBuilder*
+*Editor(s) used			: _GZDoomBuilder_
 *Known Bugs				: One crucial switch in map03 doesn't work if you have "all special lines block use" enabled in your compatibility settings
-*May Not Run With...	: Non-*zdoom* based ports
-*Tested With:			: *GZDoom* 4.2.0, *Zandronum* 3.0
+*May Not Run With...	: Non-{ZDoom} based ports
+*Tested With:			: _GZDoom_ 4.2.0, _Zandronum_ 3.0
 
 :Credits:
 :-------------------------------------------------------------------------------

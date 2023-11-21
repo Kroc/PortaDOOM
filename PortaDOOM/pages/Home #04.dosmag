@@ -10,13 +10,13 @@ Credits for individual WADs are provided on each page but where a mod is used br
 
 :Chocolate Doom / Heretic / Hexen / Strife - <chocolate-doom.org>
 :===============================================================================
-`Chocolate Doom` is written by <Simon Howard>, with extensive help from many other people who have provided patches, bug reports and suggestions.
+{Chocolate Doom} is written by <Simon Howard>, with extensive help from many other people who have provided patches, bug reports and suggestions.
 
-`Chocolate Strife` was developed by <James Haley> and <Samuel Villarreal> as part of a painstaking reverse engineering project.
+{Chocolate Strife} was developed by <James Haley> and <Samuel Villarreal> as part of a painstaking reverse engineering project.
 
 :Crispy Doom - <github.com/fabiangreffrath/crispy-doom>
 :===============================================================================
-*"Crispy Doom is a friendly fork of Chocolate Doom that provides a higher display resolution, removes the static limits of the Doom engine and offers further optional visual, tactical and physical enhancements while remaining entirely config file, savegame, netplay and demo compatible with the original".
+"{Crispy Doom} is a friendly fork of {Chocolate Doom} that provides a higher display resolution, removes the static limits of the `Doom` engine and offers further optional visual, tactical and physical enhancements while remaining entirely config file, savegame, netplay and demo compatible with the original".
 
 By <Fabian Greffrath>.
 
@@ -65,7 +65,7 @@ Copyright <iD software>, contributors:
 	`Attack` (ATTACK.WAD)
 	`Canyon` (CANYON.WAD)
 
-:DOOM-Retro - <doomretro.com>
+:DOOM Retro - <doomretro.com>
 :===============================================================================
 *"The classic, refined DOOM source port".
 
@@ -85,9 +85,9 @@ By <Graf Zahl> and contributors.
 
 :PortaDOOM - <github.com/Kroc/PortaDOOM>
 :===============================================================================
-`PortaDOOM` is the work of <Kroc Camen> and contributors and made possible only by the awesomeness of the `DOOM` community.
+{PortaDOOM} is the work of <Kroc Camen> and contributors and made possible only by the awesomeness of the `DOOM` community.
 
-The WADs distributed with `PortaDOOM` may not match their original source downloads (i.e. checksum) due to extra compression applied by `DOOM-Crusher`, a tool for automatically optimizing WAD files and resources:
+The WADs distributed with {PortaDOOM} may not match their original source downloads (i.e. checksum) due to extra compression applied by {DOOM-Crusher}, a tool for automatically optimizing WAD files and resources:
 _github.com/Kroc/DOOM-Crusher_.
 
 :PRBoom+ - <prboom-plus.sourceforge.net>
@@ -98,22 +98,22 @@ By <Andrey Budko (entryway)>.
 :===============================================================================
 *"QB64 is a modern extended BASIC+OpenGL language that retains QB4.5/QBasic compatibility and compiles native binaries for Windows, Linux and macOS".
 
-`PortaDOOM`'s viewer and launcher are written with QB64.
+{PortaDOOM}'s viewer and launcher are written with {QB64}.
 
 :xdelta - <xdelta.com>
 :===============================================================================
 *"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams".
 
-`Xdelta` is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _github.com/Doom-Utils/iwad-patches_.
+{Xdelta} is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _github.com/Doom-Utils/iwad-patches_.
 
 :Zandronum - <zandronum.com>
 :===============================================================================
 - <Torr Samaho> - Lead Developer
-- <Blzut3> - Port, `Doomseeker` Developer, Webmaster
+- <Blzut3> - Port, {Doomseeker} Developer, Webmaster
 - <Dusk> - Port Developer, Forum Moderator
 - <Edward-san> - Tester
 - <bond> - IDE Developer
-- <Zalewa> - `Doomseeker` Developer
+- <Zalewa> - {Doomseeker} Developer
 
 :ZDoom - <zdoom.org>
 :===============================================================================

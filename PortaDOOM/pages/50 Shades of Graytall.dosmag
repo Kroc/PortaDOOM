@@ -18,7 +18,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shade
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: Longer than it should have been
-*Editor(s) used		: DB2, SLADE, GIMP
+*Editor(s) used		: _DB2_, _SLADE_, _GIMP_
 *Known Bugs			: visual tricks are broken in OpenGL.\\Play software, don't be a scrub
 *May Not Run With	: Boom incompatible ports
 *Tested With		: PrBoom+ cl9

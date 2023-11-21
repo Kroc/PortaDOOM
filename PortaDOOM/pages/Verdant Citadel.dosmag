@@ -24,9 +24,9 @@ Jumping and crouching are disabled through MAPINFO as the map is not designed wi
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Did not keep track, but seemed like ages
-*Editor(s) used			: *GZDoom Builder Bugfix*, *SLADE*, *Photoshop*, *Audacity
-*Known Bugs				: Some minor visual glitches related to things moving between sector portals may occur. Versions of *GZDoom* prior to 4.0.0 will exhibit a monster behaviour bug during the last part of the map
-*Tested With			: *GZDoom* 4.0.0 in hardware accelerated mode. Also works well with the Vulkan renderer since *GZDoom* version 4.1.2
+*Editor(s) used			: _GZDoom Builder Bugfix_, _SLADE_, _Photoshop_, _Audacity_
+*Known Bugs				: Some minor visual glitches related to things moving between sector portals may occur. Versions of _GZDoom_ prior to 4.0.0 will exhibit a monster behaviour bug during the last part of the map
+*Tested With			: _GZDoom_ 4.0.0 in hardware accelerated mode. Also works well with the Vulkan renderer since _GZDoom_ version 4.1.2
 
 :Credits
 :-------------------------------------------------------------------------------

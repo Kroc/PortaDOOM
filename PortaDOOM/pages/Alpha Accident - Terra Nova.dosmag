@@ -33,12 +33,12 @@ Set on Mars during horrific events on it's moons another marine is stranded on o
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: 3 years (or 1,5 without long pauses)
-*Editor(s) used		: Doom Builder v.1.68, XWE, Whacked2, Dehacked 3.0
-*Known Bugs			: in ZDoom v.2.8.1 and earlier objects appear in front container sprite after loading a savegame; otherwise, nothing critical
+*Editor(s) used		: _Doom Builder_ v.1.68, _XWE_, _Whacked2_, _Dehacked_ 3.0
+*Known Bugs			: in {ZDoom} v.2.8.1 and earlier objects appear in front container sprite after loading a savegame; otherwise, nothing critical
 
-*May Not Run With	: Chocholate doom (some maps may cause savegame or visplane errors)
+*May Not Run With	: _Chocholate doom_ (some maps may cause savegame or visplane errors)
 
-*Tested With		: Tested in DosBOx with AA_E1.exe, prboom+ v.2.5.1.3, zdoom v.2.8.1
+*Tested With		: Tested in _DosBOx_ with AA_E1.exe, _prboom+_ v.2.5.1.3, {ZDoom} v.2.8.1
 
 :Credits
 :-------------------------------------------------------------------------------

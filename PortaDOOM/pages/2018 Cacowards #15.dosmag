@@ -7,7 +7,7 @@ $KEY:M=URL:https://combine-kegan.itch.io/gmota
 ^C:2018 CACOWARDS :: GAMEPLAY MOD AWARDS
 
 :-------------------------------------------------------------------------------
-! *SO SORRY*; `PortaDOOM` doesn't yet support gameplay mods due to current launcher limitations. A future release will add mod support! -- You can still download the mods below and run them yourself.
+! *SO SORRY*; {PortaDOOM} doesn't yet support gameplay mods due to current launcher limitations. A future release will add mod support! -- You can still download the mods below and run them yourself.
 
 
 :[G: Guncaster] - <Pillowblaster> et al
@@ -24,7 +24,7 @@ The scope that `Guncaster` covers is truly gargantuan, and not a single part of 
 
 :[N: Netronian Chaos] - <Captain J>
 :===============================================================================
-<Captain J> is a long-running cheerleader in the _ZDoom_ community, and was mentioned last year as one of the _Most Promising Newcomers_ with his debut project `Netronian Chaos`. Featuring a cute art style and a lot of promise, it seemed like an auspicious modding start. The end of 2018 has rolled in, and what seemed to be has come true for sure.
+<Captain J> is a long-running cheerleader in the {ZDoom} community, and was mentioned last year as one of the _Most Promising Newcomers_ with his debut project `Netronian Chaos`. Featuring a cute art style and a lot of promise, it seemed like an auspicious modding start. The end of 2018 has rolled in, and what seemed to be has come true for sure.
 
 From first glance, the most defining aspect of `Netronian Chaos` is its unique graphical style, lovingly described as _"MSPaint"_ by the author and undoubtedly invoking jealousy in anyone else who has worked with _MSPaint_. Items, weapons, and even an entire enemy roster(!!!) have been painstakingly sprited in a simplistic cartoony art-style, making for a bright and colorful sci-fi world that's both cute and incredibly dangerous to wade through. More significantly, however, is that it allows important actors to pop out instantly in the typical `Doom` texture environment, making sure that the player is always aware of their presence.
 

@@ -12,16 +12,16 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/j-l/killed
 :Requires : *no-limit	Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
 
-A full episode of short, concept-oriented maps for Ultimate Doom. 
-Beware: Not your traditional Doom WAD.
+A full episode of short, concept-oriented maps for `Ultimate Doom`.
+Beware: Not your traditional `Doom` WAD.
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: Primarily over six weeks (January and February 2016) with playtesting and polishing throughout March
-*Editor(s) used		: Doom Builder 1.68, SLADE3, Doom Writer
+*Editor(s) used		: _Doom Builder_ 1.68, _SLADE3_, _Doom Writer_
 *Known Bugs			: None
-*Tested With		: PrBoom+ (complevel 2), Eternity, ZDoom
+*Tested With		: _PrBoom+_ (complevel 2), {Eternity}, {ZDoom}
 
 :Map List
 :-------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ Beware: Not your traditional Doom WAD.
 
 :Credits
 :-------------------------------------------------------------------------------
-- id Software, <CodeImp>, <SlayeR>, and <Visual Vincent> -- creators of Doom Builder, SLADE, and Doom Writer
+- id Software, <CodeImp>, <SlayeR>, and <Visual Vincent> -- creators of _Doom Builder_, _SLADE_, and _Doom Writer_
 - TITLEPIC font, "You Murderer", by <Nate Piekos>
 
 *Playtesters:

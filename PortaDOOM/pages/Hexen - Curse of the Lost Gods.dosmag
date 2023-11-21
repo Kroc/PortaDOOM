@@ -25,7 +25,7 @@ $KEY:S=URL:https://store.steampowered.com/app/2360/
 *Base					: From scratch
 *Build Time				: On and off for about a year
 *Editor(s) used			: *DB*, *DB2*, *XWE*, *ZENNODE*, *ACC*
-*May Not Run With...	: Anything not *Zdoom* compatible
+*May Not Run With...	: Anything not {ZDoom} compatible
 *Known Bugs				: None that are I am aware of
 
 :Credits

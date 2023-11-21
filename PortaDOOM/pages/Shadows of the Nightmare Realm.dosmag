@@ -38,10 +38,10 @@ One last thing, if you want to change levels, you'll want to do so in the consol
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: A bit over a year, on and off
-*Editor(s) used			: `GZDoomBuilder`, `SLADE`, `GoldWave`, `Reaper`, `Renoise`, `The Gimp`, `Blender`, some custom tools, and probably a few others
+*Editor(s) used			: _GZDoomBuilder_, _SLADE_, _GoldWave_, _Reaper_, _Renoise_, _The Gimp_, _Blender_, some custom tools, and probably a few others
 *Known Bugs				: None that I'm aware of
-*May Not Run With		: `GZDoom` versions earlier than v2.4, or anything other than `GZDoom`
-*Tested With			: `GZDoom` 2.4, `GZDoom` 3.0
+*May Not Run With		: _GZDoom_ versions earlier than v2.4, or anything other than `GZDoom`
+*Tested With			: _GZDoom_ 2.4, _GZDoom_ 3.0
 
 :Credits
 :-------------------------------------------------------------------------------

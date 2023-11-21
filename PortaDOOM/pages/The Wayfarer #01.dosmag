@@ -27,13 +27,13 @@ The episode includes a built-in gameplay mod that rebalances `Heretic` in ways t
 
 :Update!
 :-------------------------------------------------------------------------------
-Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering with this update for a while to address bug reports and various little things that have bothered me about the episode. Most importantly, it fixes the badly bugged Lightbringer behavior caused in more recent versions of *GZDoom*. As a result, it is no longer compatible with *ZDoom* 2.8.1, but should work with any recent build of *GZDoom*. The other biggest change is better and more consistent balance for the lower difficulty settings. Here's a more complete list of changes:
+Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering with this update for a while to address bug reports and various little things that have bothered me about the episode. Most importantly, it fixes the badly bugged Lightbringer behavior caused in more recent versions of _GZDoom_. As a result, it is no longer compatible with {ZDoom} 2.8.1, but should work with any recent build of _GZDoom_. The other biggest change is better and more consistent balance for the lower difficulty settings. Here's a more complete list of changes:
 
 - Fixed various minor bugs that have been found / reported, mostly texturing errors and a couple potential softlocks
 - Added armor and sometimes health (and occasional monster placement tweaks) to skills 1-3 in conjunction with fully retesting each skill setting, with the goal of making each feel fully consistent and properly targeted toward an intended audience
 - Added some more detailing to a few parts of `M1` and `M2` that felt bare and inconsistent compared to the rest of the episode
 - `M2`, better conveyance for a switch in the dock area
-- `M2`, fixed the MIDI to loop properly in recent versions of *GZDoom* (thanks to <Volasaurus> for the fix)
+- `M2`, fixed the MIDI to loop properly in recent versions of _GZDoom_ (thanks to <Volasaurus> for the fix)
 - `M3`, better conveyance for the Green Key
 - `M3`, the boss guarding the megasecret is now a Maulotaur on all skill settings, because the Liches on lower settings felt dumbed down; on skill 4, it's now two Maulotaurs
 - `M4`, fixed a lift to behave more intuitively
@@ -46,8 +46,8 @@ Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering 
 - Chaos Serpent fireballs have a slower movement speed and are easier to dodge; used the red Serpent from `Faithless Trilogy` as the reference for the new speed
 - Fixed dynamic lights for the Chaos Serpent fireballs
 - Improved the Lightbringer pickup sprite
-- Smoother weapon animations code for the Lightbringer, thanks to <Xtyfe> on ZDoom Forums
-- Fixed the Lightbringer's ripper / bounce behavior to work properly in recent versions of *GZDoom*
+- Smoother weapon animations code for the Lightbringer, thanks to <Xtyfe> on {ZDoom} Forums
+- Fixed the Lightbringer's ripper / bounce behavior to work properly in recent versions of _GZDoom_
 - Nitrogolem projectiles have a reduced sound rolloff so they're not so loud, as in recent `Wayfarer's Tome` builds
 - Fixed the Staff melee range (regular, zerked, Tomed), as in recent `Wayfarer's Tome` builds
 - Fixed the Gargoyle's charge attack behavior, as in recent `Wayfarer's Tome` builds
@@ -64,10 +64,10 @@ Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch 
 *Build Time				: A bit over two years 
-*Editor(s) used			: *Slade 3*, *Doom Builder 2*, *Doom Builder X*
+*Editor(s) used			: _SLADE3_, _Doom Builder 2_, _Doom Builder X_
 *Known Bugs				: None 
-*May Not Run With...	: Anything other than *ZDoom*/*GZDoom*
-*Tested With...			: *GZDoom* 4.3.3, 4.7.1. Any relatively recent version of the ports should be fine
+*May Not Run With...	: Anything other than {ZDoom}/_GZDoom_
+*Tested With...			: _GZDoom_ 4.3.3, 4.7.1. Any relatively recent version of the ports should be fine
 
 :Credits
 :-------------------------------------------------------------------------------

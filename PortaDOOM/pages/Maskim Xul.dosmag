@@ -19,21 +19,21 @@ A set of 3 `Boom`-compatible maps for `Doom II` (with a decidedly Lovecraftian t
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Started 27th of April, 2014
-*Editor(s) used			: `Doom Builder`, `SLADE3`, `WhackEd4`
-*Known Bugs				: Laying multiple Jackbombs at once can occasionally cause some of them to disappear in `PrBoom+`
-						- The sprites in `ZDoom`'s alternate HUD are somewhat jumbled due to various bits of `DeHackEd` tomfoolery
+*Editor(s) used			: _Doom Builder_, _SLADE3_, _WhackEd4_
+*Known Bugs				: Laying multiple Jackbombs at once can occasionally cause some of them to disappear in _PrBoom+_
+						- The sprites in {ZDoom}'s alternate HUD are somewhat jumbled due to various bits of _DeHackEd_ tomfoolery
 						- There is a small chance of encountering stuck monsters in the final fight in ports that don't enforce monster spawner telefragging: I've done what I can to minimize the chance of it happening, but it's still possible
 May Not Run With		: Vanilla `DOOM`
-Tested With				: `PrBoom+`, `ZDoom`, `GZDoom`
+Tested With				: _PrBoom+_, {ZDoom}, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------
 - <Id Software> for `DOOM II`
-- <CodeImp> for `Doom Builder 2`
-- <Anotak> for `Doom Builder X`
-- <SirJuddington> for `SLADE3`
-- <Exl> for `WhackEd4`
-- Whoever made `Paint.net` for......well, that
+- <CodeImp> for _Doom Builder 2_
+- <Anotak> for _Doom Builder X_
+- <SirJuddington> for _SLADE3_
+- <Exl> for _WhackEd4_
+- Whoever made _Paint.net_ for... well, that
 
 *Additional credits to:
 

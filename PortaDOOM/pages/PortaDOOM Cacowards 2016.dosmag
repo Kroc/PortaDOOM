@@ -5,13 +5,13 @@ $KEY:E=GOTO:2016 Cacowards
 :===============================================================================
 ^C*Press [E] to Enter
 
-`PortaDOOM` is a self-contained `DOOM` Launcher and WAD collection presented as a '90s MS-DOS disk-zine. This is a `PortaDOOM` package containing the complete Doomworld 2016 Cacowards. All you need to do is pick something to play and `PortaDOOM` will select the correct source-port, WADs and settings!
+{PortaDOOM} is a self-contained `DOOM` Launcher and WAD collection presented as a '90s MS-DOS disk-zine. This is a {PortaDOOM} package containing the complete _Doomworld_ 2016 _Cacowards_. All you need to do is pick something to play and {PortaDOOM} will select the correct source-port, WADs and settings!
 
 ! *PRO TIP:* Use MOUSEWHEEL or keyboard to scroll. LEFT or RIGHT ARROW keys to change page (or right-click to advance one page). Press the indicated keys "[?]" to navigate, or F1 for a full list of controls.
 
 :FEEDBACK
 :-------------------------------------------------------------------------------
-`PortaDOOM` is continually improving - provide your feedback via these methods:
+{PortaDOOM} is continually improving - provide your feedback via these methods:
 
 $KEY:F=URL:https://mstdn.social/@Kroc
 $KEY:G=URL:https://github.com/Kroc/PortaDOOM

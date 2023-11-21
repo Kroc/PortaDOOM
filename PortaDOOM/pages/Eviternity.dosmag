@@ -29,12 +29,12 @@ I hope you enjoy `Eviternity`, thanks for downloading & playing!
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 11 Months (9 months initial build, 2 for final)
-*Editor(s) used			: *GZDoomBuilder-Bugfix*, *SLADE3*, Numerous external tools for graphics and additional lumps
+*Editor(s) used			: _GZDoomBuilder-Bugfix_, _SLADE3_, Numerous external tools for graphics and additional lumps
 *Known Bugs				: None (We hope!)
 *May Not Run With...	: Any port not specified below
-*Tested With...			: Primary engines: *GZDoom* 3.7.1, *PrBoom+* 2.5.1.5
-						  Should also work: *Eternity* 4.00, *Doom Retro* 2.8
-						  NOTE: *GLBoom* breaks skies but works other than that. You may play in other ports but compatibility is not guaranteed.
+*Tested With...			: Primary engines: _GZDoom_ 3.7.1, _PrBoom+_ 2.5.1.5
+						  Should also work: {Eternity} 4.00, {DOOM Retro} 2.8
+						  NOTE: _GLBoom_ breaks skies but works other than that. You may play in other ports but compatibility is not guaranteed.
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -178,7 +178,7 @@ This project has had various assets made for it and/or borrowed from other works
 - DeHackEd / DECORATE wizardry and management
 
 <Gutawer> & <josh771>:
-- Snow scripts for Episode 3 in *GZDoom*
+- Snow scripts for Episode 3 in _GZDoom_
 
 <Kristus>:
 - BOSSBACK picture

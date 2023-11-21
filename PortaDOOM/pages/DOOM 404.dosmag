@@ -30,7 +30,7 @@ Now you're here though, something isn't right. This facility should be busy, but
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Quite some time 
-*Editor(s) used			: `Doom Builder 2`, `GZDoomBuilder`
+*Editor(s) used			: _Doom Builder 2_, _GZDoomBuilder_
 *Known Bugs				: MAP07 - if you play deathmatch with monsters on, this map will break. It is also likely to be problematic in Nightmare difficulty.
 						- MAP29 - you can get killed by the exit, depending on where you stand. Just don't press 'use' and you will go on to map30 (pistol start, but trust me, it's only marginally tougher that way).
 *May Not Run With		: The original German IWAD

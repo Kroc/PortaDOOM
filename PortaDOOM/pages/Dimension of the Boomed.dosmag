@@ -16,12 +16,12 @@ Seven delicious helpings of `Quake`-flavoured `DOOM`!
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: `QUAKE` textures, `DOOMII` sprites, `QTEST` sprites
+*Base					: `QUAKE` textures, `DOOM II` sprites, `QTEST` sprites
 *Build Time				: 2 years on and off
-*Editor(s) used			: `GZDoomBuilder`, `SLADE3`, `WhackEd4`
+*Editor(s) used			: _GZDoomBuilder_, _SLADE3_, _WhackEd4_
 *Known Bugs				: None
-*May Not Run With		: Non `MBF` compatible source ports
-*Tested With			: `PrBoom+` `Doom-Retro` `Eternity` `ZDoom` `GZDoom` `Zandronium`
+*May Not Run With		: Non _MBF_ compatible source ports
+*Tested With			: _PrBoom+_, {DOOM Retro}, {Eternity}, {ZDoom}, _GZDoom_, _Zandronium_
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -34,4 +34,4 @@ Seven delicious helpings of `Quake`-flavoured `DOOM`!
 
 *Additional Thanks to:
 
-- All those at Doomworld who provided feedback and encouragement
+- All those at _Doomworld_ who provided feedback and encouragement

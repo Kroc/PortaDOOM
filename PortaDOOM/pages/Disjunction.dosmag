@@ -16,7 +16,7 @@ A small mapset containing 11 thematically and visually diverse maps.
 Bit challenging, but hope you have fun!
 
 I would love to receive some hard spanking for whatever bugs, errors and mistakes in maps, as well as critique from gameplay/visual perspective.
-Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify me. The conveyors unfortunately don't function properly on ZDaemon, so have that in mind.
+Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify me. The conveyors unfortunately don't function properly on {ZDaemon}, so have that in mind.
 
 1.01 - quick fixes
 1.10 - alterations to maps 04 and 06.
@@ -25,9 +25,9 @@ Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: dunno
-*Editor(s) used			: GZDoomBuilder, Slade3
-*May Not Run With		: ZDaemon
-*Tested With			: GZDoom/Pr-Boom
+*Editor(s) used			: _GZDoomBuilder_, _SLADE3_
+*May Not Run With		: {ZDaemon}
+*Tested With			: _GZDoom_/_Pr-Boom_
 
 :Credits
 :-------------------------------------------------------------------------------

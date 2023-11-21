@@ -3,7 +3,7 @@ $TITLE=A Useful DOOM Glossary
 
 :A Useful DOOM Glossary
 :===============================================================================
-Early 90s computer limits and over 20 years of community-driven history will naturally generate a lot of unique language! Here's a list of the most pertinent terms you'll come across throughout `PortaDOOM`.
+Early 90s computer limits and over 20 years of community-driven history will naturally generate a lot of unique language! Here's a list of the most pertinent terms you'll come across throughout {PortaDOOM}.
 
 :* # *
 :-------------------------------------------------------------------------------
@@ -142,7 +142,7 @@ Early 90s computer limits and over 20 years of community-driven history will nat
 
 *Sidedef			Technical detail of DOOM mapping, a sidedef is meta-data added to a *linedef* to select which textures should be displayed on the wall.
 
-*Source port		After the DOOM source code was made available, the game engine was ported to numerous platforms and expanded to include new features. The most popular ports are *GZDoom*, *PRBoom+*, *Zandronum* and *Chocolate-Doom*.
+*Source port		After the DOOM source code was made available, the game engine was ported to numerous platforms and expanded to include new features. The most popular ports are *GZDoom*, *PRBoom+*, {Zandronum} and *Chocolate-Doom*.
 
 *Strife				Commercial RPG/FPS hybrid released May 1996. Notable for adding RPG elements and a conversation system to the DOOM engine.
 

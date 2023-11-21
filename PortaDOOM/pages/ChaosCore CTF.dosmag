@@ -12,7 +12,7 @@ $KEY:W=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 :-------------------------------------------------------------------------------
 
 $KEY:D=URL:http://doomseeker.drdteam.org/
-! *NOTE:* PortaDOOM does not include multiplayer-only maps!
+! *NOTE:* {PortaDOOM} does not include multiplayer-only maps!
 ! :-----------------------------------------------------------------------------
 ! Use [D: Doomseeker] to play online and search for 'ChaosCoreCTF'
 
@@ -20,7 +20,7 @@ $KEY:D=URL:http://doomseeker.drdteam.org/
 
 *Base				: New from scratch
 *Build Time			: 2011 - Current
-*Editor(s) used		: DoomBuilder, DoomBuilder2, GZDoom Builder, SLADE, XWE
+*Editor(s) used		: _DoomBuilder_, _DoomBuilder2_, _GZDoom Builder_, _SLADE_, _XWE_
 *Known Bugs			: None that we know of
 
 :Credits
