@@ -22,5 +22,8 @@ While it may just as easily be a nod to the WAD's tortured development cycle, I 
 
 ^R- <Alfonzo>
 
-:-------------------------------------------------------------------------------
+:===============================================================================
 *[3] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/24years/best1.php
+:source [#: www.doomworld.com/24years/best1.php]

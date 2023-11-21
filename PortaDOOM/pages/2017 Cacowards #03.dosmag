@@ -21,5 +21,8 @@ It all comes together to perfectly replicate that adventurous feeling of crawlin
 
 ^R- <TerminusEst13>
 
-:-------------------------------------------------------------------------------
+:===============================================================================
 *[1] View WAD Page
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/24years/best1.php
+:source [#: www.doomworld.com/24years/best1.php]

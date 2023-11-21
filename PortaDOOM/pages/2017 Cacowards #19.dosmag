@@ -104,3 +104,7 @@ $KEY:Q=GOTO:The Given
 
 $KEY:R=URL:https://www.doomworld.com/profile/13035-dobu-gabu-maru/?do=content&type=forums_topic&change_section=1
 - [R: dobu gabu maru]
+
+:-------------------------------------------------------------------------------
+$KEY:#=URL:https://www.doomworld.com/24years/
+:source [#: www.doomworld.com/24years/]
