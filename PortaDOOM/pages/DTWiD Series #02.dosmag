@@ -1,12 +1,13 @@
-$NAV=MegaWADs
+$NAV=Community Projects
 $TITLE=Doom 2 the Way id Did
-$KEY:P=SHELL:launcher.exe "wads\megawads\DTWiD\D2TWID\play-d2twid.ini"
-$KEY:T=SHELL:wads\megawads\DTWiD\D2TWID\D2TWID.txt
-$KEY:W=URL:http://d2twid.herokuapp.com/
+$KEY:P=SHELL:launcher.exe "wads\community\DTWiD\d2twid\play-d2twid.ini"
+$KEY:T=SHELL:wads\community\DTWiD\d2twid\D2TWID.txt
+$KEY:W=URL:https://doomwiki.org/wiki/Doom_2_the_Way_id_Did
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/d2twid
 
 :Doom 2 the Way id Did                              * 2013 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] doomwiki [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2013>11>07	  Author : *Various (see credits)
 :Levels   : *32			   Modes : *Single, Co-op, Deathmatch
@@ -14,9 +15,9 @@ $KEY:W=URL:http://d2twid.herokuapp.com/
 :-------------------------------------------------------------------------------
 
 $KEY:1=PAGE:#01
-Doom II The Way id Did is the long awaited sequel to 2011's *[1] Doom The Way id Did*. It comprises 32 levels that endeavor to both look and play as though they've come from Dallas, 1994, from the very toiling hands of <Sandy>, <John> and <American>.
+`Doom II The Way id Did` is the long awaited sequel to 2011's [1] `Doom The Way id Did`. It comprises 32 levels that endeavor to both look and play as though they've come from Dallas, 1994, from the very toiling hands of <Sandy>, <John> and <American>.
 
-The idea was originally kicked about by <Jason Root> aka <Hellbent>, whose passion for the game and knack for growing enthusiasm resulted in one of the most successful community collaborations in _Doomworld_ history -- not to mention an impressive collection of more than 100 total submissions. While not quite as successful as the first project in this regard, painstaking lengths have been made by those involved to ensure that D2TWiD is as true a doppelganger of id's Doom 2 as it could ever be. And we hope that you agree! Enjoy!
+The idea was originally kicked about by <Jason Root> aka <Hellbent>, whose passion for the game and knack for growing enthusiasm resulted in one of the most successful community collaborations in _Doomworld_ history -- not to mention an impressive collection of more than 100 total submissions. While not quite as successful as the first project in this regard, painstaking lengths have been made by those involved to ensure that `D2TWiD` is as true a doppelganger of <id>'s `Doom 2` as it could ever be. And we hope that you agree! Enjoy!
 
 :Par Times
 :-------------------------------------------------------------------------------
@@ -40,7 +41,7 @@ The idea was originally kicked about by <Jason Root> aka <Hellbent>, whose passi
 *Base					: New from scratch
 *Build Time				: 2-ish years! Gads!
 *Editor(s) used			: Various
-*May Not Run With...	: Versions of Doom 2 prior to 1.9
+*May Not Run With...	: Versions of `Doom 2` prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -53,7 +54,7 @@ The idea was originally kicked about by <Jason Root> aka <Hellbent>, whose passi
 *Special Thanks:
 <Dew>, <xfing>, <Blackgaze>, <Hellbent>, <Zodiac>, <Kracov>, <Marnetmar>
 
-And thanks to all the Doom community testers!
+And thanks to all the `Doom` community testers!
 
 *Map Credits:
 

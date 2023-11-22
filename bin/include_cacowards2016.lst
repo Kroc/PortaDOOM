@@ -37,7 +37,7 @@ pages\Blade of Agony.dosmag
 @files\wads\multiplayer\32in24-16\include.lst
 # page 16:
 @files\mods\Doom4Doom\include.lst
-@files\wads\megawads\DTWiD\include.lst
+@files\wads\community\DTWiD\include.lst
 @files\wads\jokes\ludicrm\include.lst
 
 # (all demos require prboom-plus)

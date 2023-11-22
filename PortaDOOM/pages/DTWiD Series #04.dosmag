@@ -1,0 +1,52 @@
+$NAV=Community Projects
+$TITLE=Ultimate Doom the Way id Did
+$KEY:P=SHELL:launcher.exe "wads\community\DTWiD\udtwid\play-udtwid.ini"
+$KEY:T=SHELL:wads\community\DTWiD\udtwid\UDTWiD.txt
+$KEY:W=URL:https://doomwiki.org/wiki/Ultimate_Doom_the_Way_id_Did
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/s-u/udtwid
+
+:Ultimate Doom the Way id Did
+:===============================================================================
+*[P] Play						*[T] .txt [W] doomwiki [i] idgames
+:-------------------------------------------------------------------------------
+:Released : *2019>02>16	  Author : *Various (see credits)
+:Levels   : *9			   Modes : *Single, Co-op
+:Requires : *vanilla	Includes : *+Graphics +Patches +Demos
+:-------------------------------------------------------------------------------
+
+The Ultimate instalment in the `TWiD` series of WADs, comprising nine levels that were designed by a hand-picked team to both look and play as though they came from the minds of <Romero>, <McGee>, <Green>, <Anderson> and <Willits>.
+
+Liberties have been taken to ensure a mostly authentic experience that is a little more consistent in its difficulty than the original, but no less varied and surprising. Expect devilish designs and unforgiving traps.
+
+Expect `Thy Flesh Consumed` :)
+
+:Map List
+:-------------------------------------------------------------------------------
+`E4M1: "Into The Grave"`		- <Pavera>		(as <John Romero>)
+`E4M2: "Vile Affections"`		- <Rottking>	(as <American McGee>)
+`E4M3: "Earth, Blood and Fire"`	- <Purist>		(as <American McGee>)
+`E4M4: "Unclean Spirits"`		- <Marcaek>		(as <Shawn Green>)
+`E4M5: "Doctrines of Devils"`	- <Gifty>		(as <Sandy Petersen>)
+`E4M6: "Molten Gods"`			- <Tarnsman>	(as <John Romero>)
+`E4M7: "Hand of the Heathen"`	- <Alfonzo>		(as <John Anderson>)
+`E4M8: "An End to Darkness"`	- <Xaser>		(as <John Anderson>)
+`E4M9: "Terror"`				- <Use3d>		(as <Tim Willits>)
+
+:Construction
+:-------------------------------------------------------------------------------
+*Base					: New from scratch
+*Build Time				: 4.5 years
+*Editor(s) used			: _GZ_/_Doom Builder_/_2_, {SLADE}, _WhackEd_
+*Known Bugs:			: Lowered sound attenuation in `E4M8` leads to clipping in {Chocolate Doom} and other ports that emulate this behavior.
+                        - _GLBoom_ may suffer sky clipping issues in select areas
+                        - Texture misalignment, inconsistent pegging, flashing light effects with no neighbouring control sector etc.. Left in as part of our Leave It In policy
+*Tested With:			: {Chocolate Doom} 2.0, _PrBoom+_ 2.5.1.4, _GZDoom_ 3.5.1
+
+:Credits
+:-------------------------------------------------------------------------------
+*Project Manager		: <Alfonzo>
+*Playtesters			: <Doomworld Ironman League>
+*Artists				: <Fuzzball>
+						  <Kracov>
+						  <Xaser>
+*Level Names			: <King James>

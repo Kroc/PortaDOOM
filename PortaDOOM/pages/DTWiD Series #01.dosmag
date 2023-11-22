@@ -1,27 +1,28 @@
-$NAV=MegaWADs
+$NAV=Community Projects
 $TITLE=Doom the Way id Did
-$KEY:P=SHELL:launcher.exe "wads\megawads\DTWiD\DTWID\play-dtwid.ini"
-$KEY:T=SHELL:wads\megawads\DTWiD\DTWID\DTWID.txt
-$KEY:W=URL:http://dtwid.herokuapp.com/
+$KEY:P=SHELL:launcher.exe "wads\community\DTWiD\dtwid\play-dtwid.ini"
+$KEY:T=SHELL:wads\community\DTWiD\dtwid\DTWID.txt
+$KEY:W=URL:https://doomwiki.org/wiki/Doom_the_Way_id_Did
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/megawads/dtwid
 
 :Doom the Way id Did                                * 2012 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] doomwiki [i] idgames
 :-------------------------------------------------------------------------------
 :Released : *2011>12>10	  Author : *Various (see credits)
 :Levels   : *27			   Modes : *Single, Co-op, Deathmatch
 :Requires : *vanilla	Includes : *+Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-At some point in time I got the idea that it would be really fun if <John Romero> dusted off the ol' doom editor and made another map for Doom episode 1 for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know.
+At some point in time I got the idea that it would be really fun if <John Romero> dusted off the ol' doom editor and made another map for `Doom episode 1` for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know.
 
 This project asks the contributors to carefully study the original maps and try to make them as <John Romero> and <Sandy Petersen> did.
 
-The guiding principle in the project is to pretend that id Software initially intended to release Doom as a three episode, 30 level game, but somehow lost three levels; one from each episode.
+The guiding principle in the project is to pretend that <id Software> initially intended to release `Doom` as a three episode, 30 level game, but somehow lost three levels; one from each episode.
 
 The mappers for the project are trying to create those lost tenth levels, except we are extending this concept to be a full 3 episode replacement.
 
-Our goal is to make the 'lost' maps as authentically as possible to be convincingly mistaken for original levels from the game, to recreate Doom the Way id Did.
+Our goal is to make the 'lost' maps as authentically as possible to be convincingly mistaken for original levels from the game, to recreate "`Doom` the Way <id> Did".
 
 - <Hellbent>
 
@@ -33,7 +34,7 @@ Our goal is to make the 'lost' maps as authentically as possible to be convincin
 - HMP difficulty
 - 4 runs per map (mean average is used)
 
-NOTE from <St. Alfonzo>: "I took the fastest available route for each map, killing only those monsters that got in my way or proved too great a threat to ignore. If I became low on health, ammo or armor I would seek out items only if they were immediately accessible. I ignored all secrets - including those most convenient - and did not exploit design flaws that would aid in improving my time".
+NOTE from <St. Alfonzo>: "I took the fastest available route for each map, killing only those monsters that got in my way or proved too great a threat to ignore. If I became low on health, ammo or armor I would seek out items only if they were immediately accessible. I ignored all secrets -- including those most convenient -- and did not exploit design flaws that would aid in improving my time".
 
  E1M1 - 0:30            E2M1 - 0:45             E3M1 - 1:15
  E1M2 - 1:00            E2M2 - 2:30             E3M2 - 2:00
@@ -50,7 +51,7 @@ NOTE from <St. Alfonzo>: "I took the fastest available route for each map, killi
 *Base					: New from scratch
 *Build Time				: 1 year (over 3 years if you count the project's unofficial start in '08!)
 *Editor(s) used			: Various
-*May Not Run With...	: Versions of Doom prior to 1.9
+*May Not Run With...	: Versions of `Doom` prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------

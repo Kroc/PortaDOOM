@@ -1,0 +1,100 @@
+===========================================================================
+Primary purpose         : Single+Coop play
+Advanced engine needed  : No
+===========================================================================
+
+Title                   : Ultimate Doom The Way id Did
+Filename                : UDTWiD.wad
+Release date            : 02/16/2019
+Author                  : Various
+Email Address           : [redacted]
+Other Files By Author   : DTWiD.wad, D2TWiD.wad, DTWiD-LE.wad
+Misc. Author Info       : Scroll Down For Screenshots
+
+Description             : The Ultimate instalment in the TWiD series of WADs,
+                          comprising nine levels that were designed by a hand-picked
+                          team to both look and play as though they came from the
+                          minds of Romero, McGee, Green, Anderson and Willits. *
+
+                          Liberties have been taken to ensure a mostly authentic
+                          experience that is a little more consistent in its
+                          difficulty than the original, but no less varied and
+                          surprising. Expect devilish designs and unforgiving traps.
+                          Expect Thy Flesh Consumed :)
+
+Additional Credits to   : Project Manager    - Alfonzo
+                        : Playtesters        - Doomworld Ironman League
+                        : Artists            - Fuzzball
+                                               Kracov
+                                               Xaser
+
+                        : Level Names        - King James
+
+===========================================================================
+
+* What's Included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : E4M1 - E4M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 4.5 years
+Editor(s) used          : GZ/Doom Builder/2, Slade, WhackEd
+Known Bugs              : Lowered sound attenuation in E4M8 leads to clipping in
+                          Chocolate Doom and other ports that emulate this behavior.
+
+                        : GLBoom may suffer sky clipping issues in select areas.
+
+                        : Texture misalignment, inconsistent pegging, flashing light
+                          effects with no neighbouring control sector etc.. Left in
+                          as part of our Leave It In™ policy.
+
+Tested With             : Chocolate Doom 2.0, PrBoom+ 2.5.1.4, GZDoom 3.5.1
+
+===========================================================================
+
+* Map List *
+
+E4M1: Into The Grave		- Pavera	(as John Romero)	
+E4M2: Vile Affections		- Rottking	(as American McGee)
+E4M3: Earth, Blood and Fire	- Purist	(as American McGee)
+E4M4: Unclean Spirits		- Marcaek	(as Shawn Green)
+E4M5: Doctrines of Devils	- Gifty		(as Sandy Petersen) *
+E4M6: Molten Gods		- Tarnsman	(as John Romero)
+E4M7: Hand of the Heathen	- Alfonzo	(as John Anderson)
+E4M8: An End to Darkness	- Xaser		(as John Anderson)
+E4M9: Terror			- Use3d		(as Tim Willits)
+
+===========================================================================
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

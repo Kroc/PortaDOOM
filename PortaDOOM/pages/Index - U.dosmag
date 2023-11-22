@@ -1,7 +1,8 @@
 $THEME=BLUE
 $KEY:A=GOTO:UAC Invasion - The Supply Depot
 $KEY:B=GOTO:The Ultimate DOOM
-$KEY:C=GOTO:Umbra of Fate
+$KEY:C=GOTO:DTWiD Series #04
+$KEY:D=GOTO:Umbra of Fate
 
 ^C:INDEX :: U
 
@@ -9,4 +10,5 @@ $KEY:C=GOTO:Umbra of Fate
 
 - [A] *UAC Invasion: The Supply Depot					Onesies
 - [B] *Ultimate DOOM, The								Commercial DOOM
-- [C] *Umbra of Fate									Onesies
+- [C] *Ultimate Doom the Way id Did						Community Projects
+- [D] *Umbra of Fate									Onesies
