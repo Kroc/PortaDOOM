@@ -1,6 +1,6 @@
 $NAV=Onesies
-$KEY:P=SHELL:launcher.exe "wads\onesies\dead.air\play-dead-air.ini"
-$KEY:T=SHELL:wads\onesies\dead.air\dead-air.txt
+$KEY:P=SHELL:launcher.exe "wads\onesies\dead-air\play-dead-air.ini"
+$KEY:T=SHELL:wads\onesies\dead-air\dead-air.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/92135
 
 :dead.air                                           * 2017 Cacoward Winner! *
@@ -12,7 +12,8 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/92135
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Single map for _(G)ZDoom_ (Doom 2), made for the Vinesauce mapping contest. Spiritual sequel to `"dead.wire"`, with plenty of new weapons, baddies, and bizarro creep factor.
+$KEY:D=GOTO:dead.wire
+Single map for _(G)ZDoom_ (`Doom 2`), made for the _Vinesauce mapping contest_. Spiritual sequel to [D] `dead.wire`, with plenty of new weapons, baddies, and bizarro creep factor.
 
 The UAC's global news network is down for repairs following some rather unusual signal interference. As one of the company's top network engineers, it falls on your shoulders to debug the system. All in a day's work, right?
 

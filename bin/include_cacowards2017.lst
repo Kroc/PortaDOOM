@@ -7,10 +7,10 @@ pages\2017 Cacowards #??.dosmag
 @files\wads\episodes\lilith\include.lst
 # page 4:
 @files\wads\episodes\sotnr\include.lst
-# page 5:
+# page 5: (NB: NEIS includes DTWiD Series)
 @files\wads\megawads\neis\include.lst
-# page 6:
-@files\wads\onesies\dead.air\include.lst
+# page 6: (NB: dead.air includes dead.wire)
+@files\wads\onesies\dead-air\include.lst
 # page 7:
 @files\wads\onesies\brigandine\include.lst
 # page 8:

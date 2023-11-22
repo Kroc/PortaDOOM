@@ -9,7 +9,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/95543
 :-------------------------------------------------------------------------------
 :Released : *2017>08>15?  Author : <dobu gabu maru>
 :Levels   : *1			   Modes : *Single
-:Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches +Demos
+:Requires : *no-limit	Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
 `The Given` is a monsterless puzzle map with an emphasis on exploration.
@@ -17,15 +17,15 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/95543
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
-*Build Time				: ~80 hours.
+*Build Time				: ~80 hours
 *Editor(s) used			: _Doom Builder 2_
 *Known Bugs				: Some ports will struggle with the map.
-*May Not Run With		: Engines that don't support extended nodes.
+*May Not Run With		: Engines that don't support extended nodes
 *Tested With			: _ZDoom_ 2.6.1, _PrBoom+_ 2.5.1, _GZDoom_ 3.1
 *Music Tracks			: All music composed by <Eris Falling>
-						  Title Screen: `"Raglavar (Introduction)"`
-						  MAP01: `"The Village that Time Forgot"`
-						  MAP02: `"Diwedh (Epilogue)"`
+						  Title Screen: "Raglavar (Introduction)"
+						  MAP01: "The Village that Time Forgot"
+						  MAP02: "Diwedh (Epilogue)"
 
 :Credits
 :-------------------------------------------------------------------------------

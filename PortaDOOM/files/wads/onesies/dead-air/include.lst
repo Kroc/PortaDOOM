@@ -1,0 +1,7 @@
+pages\dead.air.dosmag
+files\wads\onesies\dead-air\
+@files\ports\req=zdoom.lst
+files\wads\doom2.ini
+
+# dead.air includes a link to dead.wire!
+@files\wads\onesies\dead.wire\include.lst
