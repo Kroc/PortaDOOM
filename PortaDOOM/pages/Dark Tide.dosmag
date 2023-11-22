@@ -14,7 +14,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dt-lutz
 
 A sprawling coastal castle swarming with Hellspawn
 
-What you really need to run this level is a BOOM/MBF-compatable, limit-removing source port. I did 98% of my testing with {ZDoom}, so that is what I recommend, but have verified it also runs with PrBoom 2.4.8.1. Also, there are two other things I should mention:
+What you really need to run this level is a BOOM/MBF-compatable, limit-removing source port. I did 98% of my testing with _ZDoom_, so that is what I recommend, but have verified it also runs with PrBoom 2.4.8.1. Also, there are two other things I should mention:
 
 - NO JUMPING!  Jumping is for losers.
 - This level is a LOT easier if you can run under/over sprites\\(but not impossible if you can't).

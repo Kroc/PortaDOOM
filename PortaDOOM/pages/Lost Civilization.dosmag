@@ -21,8 +21,8 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/105215
 *Editor(s) used			: _GZDoomBuilder_, _GZDB bugfix_, _SLADE_, _GIMP_, _Notepad_
 *Known Bugs				: Some minor sky cutouts, GOR3A0 sinks into ceiling on _prBoom_ (2.5.1.4). Propably some texture misalignments
 *Tested With...			: _GZDoom_, ran through with _prboom-plus_-2.5.1.4
-						  Note to {Zdaemon} users:
-						  "heap size for {ZDaemon} servers is defaulted to 10 
+						  Note to _ZDemon_ users:
+						  "heap size for _ZDaemon_ servers is defaulted to 10 
 						   so I had to increase it to 20"
 *May Not Run With...	: Ports without _Boom_ support
 

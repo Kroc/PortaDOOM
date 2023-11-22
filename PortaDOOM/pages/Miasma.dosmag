@@ -19,8 +19,8 @@ One fairly large and complex map. Difficulty should be more on the challenging s
 *Base				: New from scratch 
 *Build Time			: ~3 Months
 *Editor(s) used		: _Doombuilder 2_, _SLADE3_
-*May Not Run With	: {ZDaemon} due to extended nodes
-*Tested With		: _Prboom+_ 2.5.1.4, {ZDoom} 2.7.1
+*May Not Run With	: _ZDaemon_ due to extended nodes
+*Tested With		: _Prboom+_ 2.5.1.4, _ZDoom_ 2.7.1
 
 :Credits
 :-------------------------------------------------------------------------------

@@ -161,7 +161,7 @@ $TITLE=Ty Halderman
 
        <Ty>	Don't know. We want to start at a higher design point than that, and work that out as we get into more specific implementation. There will be subteams working on different aspects. I don't think we are thinking of DDF (a definition technique) as being the same as scripting (an action modification technique) anyway.
 
-*Doomworld	<Randy Heit>'s {ZDoom} is planning, in its next version, to include full _Boom_ support. It also has or will have other such features as mlook, high resolutions, jumping, limited TCP/IP, and colored lighting. While the Boom source was released for just such a purpose, do you feel that other source ports such as {ZDoom}, if allowed access to all of your source code, will make the merger either less necessary or less wanted?
+*Doomworld	<Randy Heit>'s _ZDoom_ is planning, in its next version, to include full _Boom_ support. It also has or will have other such features as mlook, high resolutions, jumping, limited TCP/IP, and colored lighting. While the Boom source was released for just such a purpose, do you feel that other source ports such as _ZDoom_, if allowed access to all of your source code, will make the merger either less necessary or less wanted?
 
        <Ty>	Not at all. We welcome this sort of thing, and as you say, that's why we released our source. We've learned a few things from Randy and others too.
 

@@ -24,7 +24,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 
 						  `Valiant` will not run with versions of _PrBoom-plus_ lower than 2.5.1.4, or any port without support for _MBF_ code pointers OR _DECORATE_, or on any port that does not support _ZDBSP_ extended nodes.
 
-						  {ZDoom}, _GZDoom_, _PrBoom-plus_ (complevel 11), {Eternity}, or {Zandronum} are recommended.
+						  _ZDoom_, _GZDoom_, _PrBoom-plus_ (complevel 11), _Eternity_, or _Zandronum_ are recommended.
 
 :Credits
 :-------------------------------------------------------------------------------

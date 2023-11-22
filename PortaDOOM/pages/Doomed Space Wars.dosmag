@@ -12,9 +12,9 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of {ZDoom}'s special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
+Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of _ZDoom_'s special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
 
-Also in addition are 9 new monsters thanks to {ZDoom}'s _DECORATE_ feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
+Also in addition are 9 new monsters thanks to _ZDoom_'s _DECORATE_ feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
 
 :FEATURES:
 :-------------------------------------------------------------------------------
@@ -29,8 +29,8 @@ Also in addition are 9 new monsters thanks to {ZDoom}'s _DECORATE_ feature and a
 - An original .mp3 soundtrack of dramatic orchestral music
 - Hundreds of additional and new textures
 - All difficulty levels
-- All levels are {ZDoom} "`Doom` in `Hexen`" Format
-- Designed for {ZDoom} compatible source ports
+- All levels are _ZDoom_ "`Doom` in `Hexen`" Format
+- Designed for _ZDoom_ compatible source ports
 
 :STORY:
 :-------------------------------------------------------------------------------
@@ -123,12 +123,12 @@ In addition to the familiar foes you will encounter are some new beasts.
 *Build Time			: Bloody took forever (about 21 months)
 *Editor(s) used		: _Doom Builder_, _XWE_, _SLADE_, _Cakewalk Sonar_ (composing music), _FL_Studio_ (composing and mixing music)
 *Known Bugs			: Hopefully none.
-*May Not Run With	: Non {ZDoom} compatible ports.
-*Tested With		: {ZDoom}, _GZDoom_
+*May Not Run With	: Non _ZDoom_ compatible ports.
+*Tested With		: _ZDoom_, _GZDoom_
 
 :Credits:
 :-------------------------------------------------------------------------------
-<id> for `Doom`/`Doom 2`, <Randy Heit> for {ZDoom}, <Codeimp> for _Doom Builder_, <LucasArts> for the `Dark Forces` textures, and my wife for putting up with my creative ways, phew.
+<id> for `Doom`/`Doom 2`, <Randy Heit> for _ZDoom_, <Codeimp> for _Doom Builder_, <LucasArts> for the `Dark Forces` textures, and my wife for putting up with my creative ways, phew.
 
 *MUSIC CREDITS:
 

@@ -43,7 +43,7 @@ IP :: "Strolling Away From A Dark And Dangerous Place" by <Robert Inventor>
 *EXTRA NOTES:
 
 - Some optional content in this wad is either one-shot only, or require speedrunning techniques to access (SR50, glides, etc). Expect to miss secrets in a blind playthrough
-- Tested in: _prb+_ 2.5.1.5 -complevel 9, {ZDoom} 2.8.1
+- Tested in: _prb+_ 2.5.1.5 -complevel 9, _ZDoom_ 2.8.1
 - _zdoom_ flags: "boom (strict)", "Monsters get stuck over dropoffs" set to YES (required for map01 red key puzzle)
 
 *Thanks to:

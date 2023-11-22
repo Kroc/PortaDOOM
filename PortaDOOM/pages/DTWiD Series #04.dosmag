@@ -36,11 +36,11 @@ Expect `Thy Flesh Consumed` :)
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 4.5 years
-*Editor(s) used			: _GZ_/_Doom Builder_/_2_, {SLADE}, _WhackEd_
-*Known Bugs:			: Lowered sound attenuation in `E4M8` leads to clipping in {Chocolate Doom} and other ports that emulate this behavior.
+*Editor(s) used			: _GZ_/_Doom Builder_/_2_, _SLADE_, _WhackEd_
+*Known Bugs:			: Lowered sound attenuation in `E4M8` leads to clipping in _Chocolate Doom_ and other ports that emulate this behavior.
                         - _GLBoom_ may suffer sky clipping issues in select areas
                         - Texture misalignment, inconsistent pegging, flashing light effects with no neighbouring control sector etc.. Left in as part of our Leave It In policy
-*Tested With:			: {Chocolate Doom} 2.0, _PrBoom+_ 2.5.1.4, _GZDoom_ 3.5.1
+*Tested With:			: _Chocolate Doom_ 2.0, _PrBoom+_ 2.5.1.4, _GZDoom_ 3.5.1
 
 :Credits
 :-------------------------------------------------------------------------------

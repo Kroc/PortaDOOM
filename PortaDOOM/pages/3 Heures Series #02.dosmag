@@ -21,9 +21,9 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha2
 *Base					: New from scratch
 *Build Time				: 11 months
 *Editor(s) used			: See map list
-*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on {Chocolate Doom}
+*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on _Chocolate Doom_
 *May Not Run With		: Heretic
-*Tested With			: PrBoom 2.5.0, Prboom-Plus 2.5.1.3, {ZDaemon} 1.10b, Doom2.exe
+*Tested With			: PrBoom 2.5.0, Prboom-Plus 2.5.1.3, _ZDaemon_ 1.10b, Doom2.exe
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Build time			: Well, it took me a little less than 3 hours to build this map entirely, but I'm lazy, and it took me two whole months to finally add monsters and items...
 *Editor(s) used		: Doom Buider 1.68; XWE
 *Music track		: DOOM - Remix from PRJDOOM.wad ; A somewhat punchy remix of the original music from Map05 of Doom 2 (D_DOOM). I really like this remake project, you should download it! ;)
-*Bugs				: None that I am aware of that can break gameplay. OpenGL rendering engine like GLBoom or {Zandronum} might be a bit buggy with vanilla effects.
+*Bugs				: None that I am aware of that can break gameplay. OpenGL rendering engine like GLBoom or _Zandronum_ might be a bit buggy with vanilla effects.
 *Inspiration		: Doom 2 Map02 actually was a big part of inspiration for this map, as I felt it was a great theme for a second map. Greenwar 2 also helped a lot there; I had plenty of ideas but Doom 2 stock textures didn't really bring the feel I wanted to give this map. The combination of the two ended quite well.
 *Author comments	: Not much to say here except that I really like this one (and I never really like my maps, so there's something going on here). I think it's a good Map02 for a full-scale megawad and should be played like what it's meant to be: A simple and a bit linear level with no deadly traps... except for multiplayer.
 *Additional credits	: <JCD> because he wanted me to finish the map so bad that he even added a first batch of monsters to make it somewhat playable. His placement wasn't optimized though.

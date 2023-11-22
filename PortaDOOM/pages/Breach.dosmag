@@ -7,7 +7,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/71430
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>12>28	  Author : <Viggles>
+:Released : *2015>12>28	  Author : *<Viggles>
 :Levels   : *1			   Modes : *Single
 :Requires : *zdoom		Includes : *+Music
 :-------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ This was an exercise in using the original `Doom 2` textures and specials to bui
 
 (This represents about half of the map I had planned before I hit the seg limit; I may finish the second half at some point before the Earth finally plunges into the Sun.)
 
-*Notes:* Moderate difficulty and designed for rambo-style play, so don't be shy. Mouselook not required. Jumping disabled in {ZDoom} ports to prevent some sequence-breaking. (Sorry!)
+*Notes:* Moderate difficulty and designed for rambo-style play, so don't be shy. Mouselook not required. Jumping disabled in _ZDoom_ ports to prevent some sequence-breaking. (Sorry!)
 
 100% completionists: there are several areas you cannot return to after leaving them. These areas contain no items however, and any monsters you encounter within them will always get killed or follow you out.
 
@@ -27,10 +27,10 @@ This was an exercise in using the original `Doom 2` textures and specials to bui
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: About 5 months spread over 1.5 years.
-*Editor(s) used		: _Doombuilder 2_, _GZDoomBuilder_ 2.3, _Slade 3_
+*Editor(s) used		: _Doombuilder 2_, _GZDoomBuilder_ 2.3, _SLADE3_
 *Known Bugs			: Slow loading and poor performance in _Doomsday_. A few slime trails here and there
-*May Not Run With	: Vanilla/{Chocolate Doom}, insufficiently limit-removing ports
-*Tested With		: {ZDoom} 2.7.1, _GZDoom_ 1.9.1 and 3.0alpha, {DOOM Retro} 1.9, _PrBoom+_ 2.5.1.2, {Eternity} 3.34.37, _Doomsday_ 1.15.0
+*May Not Run With	: Vanilla/_Chocolate Doom_, insufficiently limit-removing ports
+*Tested With		: _ZDoom_ 2.7.1, _GZDoom_ 1.9.1 and 3.0alpha, _DOOM Retro_ 1.9, _PrBoom+_ 2.5.1.2, _Eternity_ 3.34.37, _Doomsday_ 1.15.0
 
 :Credits:
 :-------------------------------------------------------------------------------

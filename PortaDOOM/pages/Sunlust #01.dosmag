@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sunlust
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-`Sunlust` is a set of 32 boom-compatible maps for `Doom II`, designed to be played from pistol start. The maps meander through a range of themes, from traditional bases and temples to abstract hellish, void, and tech aesthetics. UV is designed primarily for ubermensch `doom`-gods, thus we encourage most players to start off on HMP or lower.
+`Sunlust` is a set of 32 _boom_-compatible maps for `Doom II`, designed to be played from pistol start. The maps meander through a range of themes, from traditional bases and temples to abstract hellish, void, and tech aesthetics. UV is designed primarily for ubermensch `doom`-gods, thus we encourage most players to start off on HMP or lower.
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -22,5 +22,5 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sunlust
 
 :Credits
 :-------------------------------------------------------------------------------
-<franckFRAG> for the sexy M_DOOM pic.
-For playtesting and other credits see page 2.
+- <franckFRAG> for the sexy M_DOOM pic
+- For playtesting and other credits see page 2

@@ -62,7 +62,7 @@ Since almost every feature is optional, the mod contains four presets for differ
 
 :Highlights:
 :-------------------------------------------------------------------------------
-(not all are included in {PortaDOOM})
+(not all are included in _PortaDOOM_)
 
 - `PSX DOOM` software lighting emulation (brightness fades with distance)
 - `DOOM 64` with gradient and additive lighting. Can also be enabled in `PSX DOOM` too to give it a different look

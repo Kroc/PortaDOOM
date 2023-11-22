@@ -30,8 +30,8 @@ High tech computational wonders, the dangerous and funky machinery of space and 
 *Base					: Maps: New from scratch. Midis: Enhanced speedmidis
 *Build Time				: 1000+ hours
 *Editor(s) used			: _GZ Doom Builder_, _SLADE3_, _Photoshop 6_, _Goldwave_, _Bitmap Font Writer_
-*Known Bugs				: {ZDoom}: 3d floor sprite clipping, midtex clipping, palletisation
-*Tested With			: {ZDoom}, _GZDoom_
+*Known Bugs				: _ZDoom_: 3d floor sprite clipping, midtex clipping, palletisation
+*Tested With			: _ZDoom_, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------

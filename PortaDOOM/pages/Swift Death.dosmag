@@ -7,7 +7,7 @@ $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------
-:Released : *2015>11>11	  Author : <franckFRAG> (guest mappers: <JCD> & <Memfis>)
+:Released : *2015>11>11	  Author : *<franckFRAG> (guest mappers: <JCD> & <Memfis>)
 :Levels   : *32			   Modes : *Single, Co-op, Deathmatch
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
@@ -20,15 +20,15 @@ $KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/megawads/swideath
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: With some enormous breaks of plenty months => 4 years
-*Editor(s) used		: `DooM Builder` 1.68, `EXtendable Wad Editor`, `Adobe Photoshop CS6`
-*Known Bugs			: If you find any bugs, let me know.
+*Editor(s) used		: _DooM Builder_ 1.68, _EXtendable Wad Editor_, _Adobe Photoshop CS6_
+*Known Bugs			: If you find any bugs, let me know
 
 :Credits:
 :-------------------------------------------------------------------------------
 - <id Software> for `Doom`
-- <Pascal "CodeImp" vd Heiden> for *Doom Builder*
+- <Pascal "CodeImp" vd Heiden> for _Doom Builder_
 - <Kris Kuksi>
-- The *XWE* team
+- The _XWE_ team
 - The French `Doom` Community
 - <JCD> for bugs, textures misalignments and such.
 - <JCD>, <Dislogical>, and especially <FSN76> for some suggestions about the duel gameplay :)

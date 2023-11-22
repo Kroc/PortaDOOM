@@ -21,7 +21,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/95543
 *Editor(s) used			: _Doom Builder 2_
 *Known Bugs				: Some ports will struggle with the map.
 *May Not Run With		: Engines that don't support extended nodes.
-*Tested With			: {ZDoom} 2.6.1, _PrBoom+_ 2.5.1, _GZDoom_ 3.1
+*Tested With			: _ZDoom_ 2.6.1, _PrBoom+_ 2.5.1, _GZDoom_ 3.1
 *Music Tracks			: All music composed by <Eris Falling>
 						  Title Screen: `"Raglavar (Introduction)"`
 						  MAP01: `"The Village that Time Forgot"`

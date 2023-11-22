@@ -36,8 +36,8 @@ Most fights are beatable in a variety of different ways, so try stuff out! Remem
 *Build Time				: 6 months on and off (no idea in hours)
 *Editor(s) used			: _GZDoom Builder_ (Bugfix), _SLADE_, _Photoshop_
 *Known Bugs				: Some FPS issues still remain in certain areas for lower end machines. _GLBoom_ is recommended
-*May Not Run With...	: {ZDaemon}, {ZDoom}
-*Tested With...			: _Prboom-Plus_, _Glboom-Plus_, _GZDoom_, {ZDoom}
+*May Not Run With...	: _ZDaemon_, _ZDoom_
+*Tested With...			: _Prboom-Plus_, _Glboom-Plus_, _GZDoom_, _ZDoom_
 
 :Credits:
 :-------------------------------------------------------------------------------

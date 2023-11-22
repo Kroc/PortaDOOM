@@ -24,12 +24,12 @@ While the monster count may be high, the map is not designed as a slaughtermap; 
 *Build Time				: ~3 months
 *Editor(s) used			: _GZDoomBuilder Bugfix_, _SLADE3_, _WhackEd 4_
 *Known Bugs				: None
-*May Not Run With...	: {DOOM Retro} (3.0.3 or older), {Chocolate Doom}, Vanilla
+*May Not Run With...	: _DOOM Retro_ (3.0.3 or older), _Chocolate Doom_, Vanilla
 *Tested With			: _Crispy Doom_ 5.5.2 to 5.6.3
 						  _PrBoom+_ 2.5.1.4 (complevel 9)
 						  _Eternity Engine_ 4.00.00
 						  _GZDoom_ 4.1.3
-						  {ZDoom} 2.8.1
+						  _ZDoom_ 2.8.1
 
 :Credits:
 :-------------------------------------------------------------------------------

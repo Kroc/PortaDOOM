@@ -12,80 +12,80 @@ $KEY:W=URL:http://joshuaosullivan.co.uk/skulldash/
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-*SKULLDASH OVERVIEW:
+:SKULLDASH OVERVIEW:
 
-Welcome to `Skulldash`, the fast-paced speedrun arcade mod For `Doom II`. The objective in `skulldash` is to collect the Skulltokens scattered around each level to unlock the exit.
+Welcome to `Skulldash`, the fast-paced speedrun arcade mod For `Doom II`. The objective in `Skulldash` is to collect the Skulltokens scattered around each level to unlock the exit.
 
 While collecting the Skulltokens you have to race against the clock, as there is a time limit to beat - all while defending yourself from the hordes of monsters from hell.
 
-*FAST PACED GAMEPLAY:
+:FAST PACED GAMEPLAY:
 
 While on the hunt for the hundreds of Skulltokens scattered across the various realms, you're having to race against the clock! Failure to beat the level in the permitted time will cause you, the player, to be splattered into many pieces.
 
 Fear not, however, hidden throughout most levels are many secret areas containing blue Skulltokens, which add a precious five seconds to the clock.
 
-*LARGE LEVEL SELECTION:
+:LARGE LEVEL SELECTION:
 
 With twenty standard levels, four boss levels, five bonus levels, a giant level-hub (and a tutorial) you've got plenty of hours of gameplay available!
 
 `Skulldash` takes you to many realms & locations, including but not limited to technical bases, aztec temples, icy caverns, in a submarine, on a series of treetops, in hell, a haunted mansion, a medieval castle, a jungle altar, high in the sky and even in space!
 
-*BOSSES, SECRETS & BONUS MAPS:
+:BOSSES, SECRETS & BONUS MAPS:
 
-Every level has a plethora of secret areas, containing bonus equipment and Skulltokens - keep your eye out if you want to go for 100% completion - when you 100% a full tier of levels, you unlock a bonus level!
+Every level has a plethora of secret areas, containing bonus equipment and Skulltokens -- keep your eye out if you want to go for 100% completion -- when you 100% a full tier of levels, you unlock a bonus level!
 
 At the end of each Tier (except the 1st) there is an action packed boss map. Each boss is found in an environment crafted around their strengths and weaknesses. Bosses are often accompanied by hordes of hellspawn to assist them in taking you out. Prepare yourself to face the Lava Golem, the Dark Inquisitor, the Gate Keeper & the Overlord!
 
-*WHAT'S NEW: (Expanded Edition)
+:WHAT'S NEW: (Expanded Edition)
 
-SCORING SYSTEM
+*SCORING SYSTEM
 
 - Gain score by collecting tokens and killing enemies
 - Score is multiplied by 2 if you get 100% tokens!
 - Play on higher difficulties for more multipliers
 
-21 NEW LEVELS
+*21 NEW LEVELS
 
 - 2 Bonus maps from original game have been replaced
 - 19 NEW maps in the Community tier
   - 2 of which are intense boss fights, good luck!
 - Including the hub map, there are 50 playable levels!
 
-MAJOR LEVEL RE-WORKS
+*MAJOR LEVEL RE-WORKS
 
 - Bosses have been improved
 - Frostbound has had a major make-over
 - General visual improvements on every level
 
-HUB MAP IMPROVED
+*HUB MAP IMPROVED
 
 - Teleports to later tiers
 - Brand new Community Tier
 - 'Modern style' portals
 
-OPTIONS ROOM ADDED
+*OPTIONS ROOM ADDED
 
 - Change your difficulty mid-game
 - Remove reflections (lag reduction)
 - View your high scores
 
-CONTINUE SCREEN ADDED
+*CONTINUE SCREEN ADDED
 
 - When you die you are given 5 seconds to re-try
 - Let the countdown hit 0 to return to the hub map
 
-PORTED AWAY FROM ZANDRONUM TO GZDOOM
+*PORTED AWAY FROM _ZANDRONUM_ TO _GZDOOM_
 
 - Much more features, etc.
 
-HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
+*HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 
 :Construction:
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Over Nine Years
 *Editor(s) used			: _DoomBuilder_, _DoomBuilder2_, _GZDoomBuilder_, _XWE_, _SLumpEd_, _SLADE3_, _MS Paint_, _Adobe Fireworks_, _GraphicsGale_, _FruityLoops Trial_, _Photoshop_
-*Known Bugs				: Hopefully none. Email any found to _josh@joshuaosullivan.co.uk_
+*Known Bugs				: Hopefully none. Email any found to <josh@joshuaosullivan.co.uk>
 *May Not Run With		: Any port other than _GZDoom_ - must be _GZDoom_ 3.2.0 OR HIGHER
 *Tested With			: _GZDoom_ 3.2.0
 
@@ -97,42 +97,42 @@ HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 - ALL MAPS, Except the following:
 
 <Capt. J3>
-- Water Facility
+- `"Water Facility"`
 
 <Slyor 64>
-- 1st half of Frostbound
+- 1st half of `"Frostbound"`
 
 <Remmirath>
-- Token Refinery
-- Mayan Mayhem
-- Outpost 25/A Foundry
-- Luminescence
-- The Nightmare Realm
-- The Skyhold
+- `"Token Refinery"`
+- `"Mayan Mayhem"`
+- `"Outpost 25"`/`"A Foundry"`
+- `"Luminescence"`
+- `"The Nightmare Realm"`
+- `"The Skyhold"`
 
 <Dreadopp>
-- World Devastation
+- `"World Devastation"`
 
 <Tormentor667>
-- Sekhmet's Fury
+- `"Sekhmet's Fury"`
 
 <Bauul>
-- Mournful Dawn
+- `"Mournful Dawn"`
 
 <Jimmy>
-- The Cauldron
+- `"The Cauldron"`
 
 <Xyzzy01>
-- Abstract Zone
+- `"Abstract Zone"`
 
 <AtroNx>
-- Molten Core
+- `"Molten Core"`
 
 <Poohlyash>
-- Whiteout
+- `"Whiteout"`
 
 <kyle2959>
-- Fight Club
+- `"Fight Club"`
 
 *SCRIPTERS:
 
@@ -158,9 +158,9 @@ HUNDREDS OF MINOR TWEAKS AND IMPROVEMENTS
 *MUSIC RESOURCES:
 
 - <Jimmy>
-- rock.freemidis.net
-- VGMusic.com
-- 1024.wad
+- <rock.freemidis.net>
+- <VGMusic.com>
+- `1024.wad`
 - `Scythe II`
 - <yakfak>
 - <Aion>

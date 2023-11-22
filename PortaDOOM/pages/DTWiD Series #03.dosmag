@@ -4,9 +4,6 @@ $KEY:P=SHELL:launcher.exe "wads\community\DTWiD\dtwid-le\play-dtwid-le.ini"
 $KEY:T=SHELL:wads\community\DTWiD\dtwid-le\DTWID-LE.txt
 $KEY:W=URL:https://doomwiki.org/wiki/Doom_the_Way_id_Did:_The_Lost_Episodes
 $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
-$KEY:1=PAGE:#01
-$KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
-$KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 
 :Doom the Way id Did: The Lost Episodes             * 2016 Cacoward Winner! *
 :===============================================================================
@@ -17,6 +14,7 @@ $KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/colds
 :Requires : *zdoom		Includes : *+Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
+$KEY:1=PAGE:#01
 Six episodes of classic `Doom` maps, originally candidates for last year's [1] `"Doom the Way Id Did"`, arranged in an episodic format.
 
 `DTWID` was a long but fruitful journey, with somewhere around a hundred map submissions in total. Given the strictness of the rules, most of the maps cut were not done so for reasons of quality. On their own they're quite solid maps, deserving their own showcase. This collection, while not 100% complete, contains the vast majority of submissions to the project.
@@ -25,7 +23,7 @@ Six episodes of classic `Doom` maps, originally candidates for last year's [1] `
 
 `Episode 4` follows partially in the same vein, with several maps that mimic the style of <id>'s `"Thy Flesh Consumed"` and hell-themed levels filling out the rest of the roster.
 
-`Episode 5`, "Base Instinct", is a "bonus" episode of `E1`/`E2`-style maps, and can be thought of as an alternate take on the Phobos / Deimos story. The episode can be accessed in the main game menu with either {ZDoom} or {Eternity}. For vanilla or other ports, running `DTWID-E5.wad` will load `E5`'s maps in place of `E1`'s.
+`Episode 5`, "Base Instinct", is a "bonus" episode of `E1`/`E2`-style maps, and can be thought of as an alternate take on the Phobos / Deimos story. The episode can be accessed in the main game menu with either _ZDoom_ or _Eternity_. For vanilla or other ports, running `DTWID-E5.wad` will load `E5`'s maps in place of `E1`'s.
 
 Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate wad is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
 
@@ -34,7 +32,7 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 *Base					: New from scratch
 *Build Time				: Years in the making. Longer counting <Xaser>'s period of compile-idleness
 *Editor(s) used			: Various
-*May Not Run With...	: Versions of Doom prior to 1.9
+*May Not Run With...	: Versions of `Doom` prior to 1.9
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -53,7 +51,7 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 *Random Testing:
 	<Esselfortium> (v1 playtesting)
 	<rhinoduck> (tons o' fixes)
-	All the fine folk who played the wad on {ZDaemon} TNS. Whoop!
+	All the fine folk who played the wad on _ZDaemon_ TNS. Whoop!
 
 *Map Credits:
 
@@ -126,6 +124,7 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 *Note #2:
 	A few maps from previous versions have been cycled out of *DTWID-LE* since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
 
+$KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 - E1M7  *"Siege Headquarters"	by <PhobosDeimos1>
 = E1M3 of PhobosDeimos Anomaly:
   [2: http://static.angryscience.net/doom/pd1-anom.zip]
@@ -136,6 +135,7 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 - E4M6  *"Forgotten Caverns"	by <NaturalTvventy>
 = E3M5 of `No End in Sight`
 
+$KEY:3=URL:http://www.doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip
 - E5M7  *"Cold Steel"			by <Mr. Chris> + <Mr. Freeze>
 = Available standalone at:
   [3: doomworld.com/idgames/index.php?file=levels/doom/a-c/coldstel.zip]

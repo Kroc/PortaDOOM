@@ -21,10 +21,10 @@ A set of 3 `Boom`-compatible maps for `Doom II` (with a decidedly Lovecraftian t
 *Build Time				: Started 27th of April, 2014
 *Editor(s) used			: _Doom Builder_, _SLADE3_, _WhackEd4_
 *Known Bugs				: Laying multiple Jackbombs at once can occasionally cause some of them to disappear in _PrBoom+_
-						- The sprites in {ZDoom}'s alternate HUD are somewhat jumbled due to various bits of _DeHackEd_ tomfoolery
+						- The sprites in _ZDoom_'s alternate HUD are somewhat jumbled due to various bits of _DeHackEd_ tomfoolery
 						- There is a small chance of encountering stuck monsters in the final fight in ports that don't enforce monster spawner telefragging: I've done what I can to minimize the chance of it happening, but it's still possible
 May Not Run With		: Vanilla `DOOM`
-Tested With				: _PrBoom+_, {ZDoom}, _GZDoom_
+Tested With				: _PrBoom+_, _ZDoom_, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------

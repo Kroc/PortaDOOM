@@ -20,7 +20,7 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/hocus
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 2009-2019
-*Editor(s) used			: {SLADE3}, _GzdoomBuilder_
+*Editor(s) used			: _SLADE3_, _GzdoomBuilder_
 *May Not Run With...	: Does not work with `Brutal Doom`
 *Tested With...			: _Gzdoom_ 4.2.1 or later
 

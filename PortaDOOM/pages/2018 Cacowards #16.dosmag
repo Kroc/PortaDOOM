@@ -13,9 +13,9 @@ $KEY:R=URL:https://www.doomworld.com/profile/16250-revae/
 :===============================================================================
 :*[T: Total Chaos] - <wadaholic>
 :-------------------------------------------------------------------------------
-! *NOTE:* Sorry, `Total Chaos` could not be included in {PortaDOOM} due to it being 1.5GB in size! Download it from the website by pressing [T]
+! *NOTE:* Sorry, `Total Chaos` could not be included in _PortaDOOM_ due to it being 1.5GB in size! Download it from the website by pressing [T]
 
-The earliest mentions of `Total Chaos` date back to the {ZDoom} forums in the summer of 2008. <wadaholic> posted some proof-of-concept images of his project and how volumetric lighting and fog could be created in the _GZDoom_ engine using additive sprites and textures. It was an interesting demonstration video, but countless unfinished projects have come and gone after a promising mockup. Over the course of the next decade, teaser videos, screenshots, and assets would sporadically appear on the `Total Chaos` website showcasing the progress of the project. This began in earnest starting in 2012 but interest in `Total Chaos` had waned as the `DOOM` community completely forgot about the project... it had been four years of development to this point. It was so forgotten that we completely ignored the project for our "What are we still waiting for?" featurette in every edition of the _Cacowards_!
+The earliest mentions of `Total Chaos` date back to the _ZDoom_ forums in the summer of 2008. <wadaholic> posted some proof-of-concept images of his project and how volumetric lighting and fog could be created in the _GZDoom_ engine using additive sprites and textures. It was an interesting demonstration video, but countless unfinished projects have come and gone after a promising mockup. Over the course of the next decade, teaser videos, screenshots, and assets would sporadically appear on the `Total Chaos` website showcasing the progress of the project. This began in earnest starting in 2012 but interest in `Total Chaos` had waned as the `DOOM` community completely forgot about the project... it had been four years of development to this point. It was so forgotten that we completely ignored the project for our "What are we still waiting for?" featurette in every edition of the _Cacowards_!
 
 That all changed in 2016 when <wadaholic>, after eight years of development work, released the very first demo for `Total Chaos`. We were blindsided by the significance of this and even contemplated considering the mod for a _Cacoward_ that year because we were almost sure it would never be completed. Fast forward another two years and, to the surprise of everyone and true to his word, <wadaholic> released the completed version of one of the single most ambitious `DOOM` projects.
 
@@ -63,7 +63,7 @@ This is where I face the most trouble in writing the _Codeaward_, because I feel
 :===============================================================================
 :*[M: Mr. Friendly] - <JP LeBreton>
 :-------------------------------------------------------------------------------
-! *SO SORRY*; {PortaDOOM} doesn't yet support gameplay mods due to current launcher limitations.
+! *SO SORRY*; _PortaDOOM_ doesn't yet support gameplay mods due to current launcher limitations.
 
 Who has ever looked at `DOOM` and thought, "how can I make this game go from bloody and brutal to a calm and sweet adventure?"
 

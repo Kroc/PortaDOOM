@@ -20,7 +20,7 @@ There is no way to exit to MAP31, so you will have to warp to it in order to pla
 
 Note that MAP06 and MAP30 are not meant to be a part of the main campaign. MAP06 is for story purposes for ports that can't display the ending text. MAP30 is there as a way to keep the game from (potentially) crashing because I replaced some of the IoS things in the DEHACKED (its also a dumb in-joke).
 
-Also note that you shouldn't use jumping or crouching in these maps. It has been disabled in {ZDoom}, but some ports will still allow it. If you do use jumping or crouching, you may break the maps. Mouselook is ok but it may make certain secret triggers easier than intended.
+Also note that you shouldn't use jumping or crouching in these maps. It has been disabled in _ZDoom_, but some ports will still allow it. If you do use jumping or crouching, you may break the maps. Mouselook is ok but it may make certain secret triggers easier than intended.
 
 *Story:
 
@@ -35,25 +35,25 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 *Base					: From scratch
 *Build Time				: 6 months
 *Editor(s) used			: _GZDoom Builder_, _SLADE_, _GIMP_, _WhackEd4_, _Notepad++_, _Sid2Mid_
-*Known Bugs				: In MAP01, the Red Keycard crusher section doesn't time properly in {ZDoom} because of some difference with voodoo doll scrollers. It doesn't break the sequence, it just makes it possible to get stuck under one of them if your not careful. Sorry I couldn't figure out a way to fix this :(
+*Known Bugs				: In MAP01, the Red Keycard crusher section doesn't time properly in _ZDoom_ because of some difference with voodoo doll scrollers. It doesn't break the sequence, it just makes it possible to get stuck under one of them if your not careful. Sorry I couldn't figure out a way to fix this :(
 
 						- In MAP04, at the Yellow Skull fight, a large section of the floor lowers into some steps. Monsters like to get stuck on the edges and I don't know of a good way to get around this. So use it to your advantage I guess.
 
-						- The final boss's death & sight sounds don't play at full volume (this is fixed in {ZDoom}).
+						- The final boss's death & sight sounds don't play at full volume (this is fixed in _ZDoom_).
 
 						- Multi-part lifts are used in numerous places throughout all of the maps. I have tried to mitigate the possibility of them breaking as much as possible. But a busted lift is still something that may happen.
 
-						- The wide-screen statusbar graphic replacement currently doesn't look right in {Zandronum} 2.1.2, {Odamex}, and {DOOM Retro} (and maybe others).
+						- The wide-screen statusbar graphic replacement currently doesn't look right in _Zandronum_ 2.1.2, _Odamex_, and _DOOM Retro_ (and maybe others).
 
 						- Some of the later maps may cause lag in certain ports and/or on certain machines.
 
 						- There are probably lots of little slimetrails in many of the maps. Don't worry, they won't hurt you.
 
-*May Not Run With		: Non-Boom compatible ports and/or ports that can't run maps with {ZDoom}'s extended node format.
+*May Not Run With		: Non-Boom compatible ports and/or ports that can't run maps with _ZDoom_'s extended node format.
 
 						- Gameplay altering mods may encounter conflicts from the DEHACKED and DECORATE. So run them at your own risk.
 
-*Tested With			: _PrBoom+_, {ZDoom}, _GZDoom_, and {Eternity}
+*Tested With			: _PrBoom+_, _ZDoom_, _GZDoom_, and _Eternity_
 
 :Credits
 :-------------------------------------------------------------------------------

@@ -21,9 +21,9 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
 *Base					: New from scratch
 *Build Time				: 2 years & 3 months
 *Editor(s) used			: See map list
-*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on {Chocolate Doom}. DEMO123 desynch on DOS
+*Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on _Chocolate Doom_. DEMO123 desynch on DOS
 *May Not Run With		: Heretic
-*Tested With			: Prboom-Plus 2.5.1.4, {ZDaemon} 1.10b7, Doom2.exe
+*Tested With			: Prboom-Plus 2.5.1.4, _ZDaemon_ 1.10b7, Doom2.exe
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -339,7 +339,7 @@ Testing:
 *Build time			: 3h10 (without counting bug-fixing)
 *Editor(s) used		: Doombuilder2 + _SLADE_
 *Music track		: Dilapidated village - <Cyber Rainforce>
-*Bugs				: The sail of the boat may be buggy on {Chocolate Doom}
+*Bugs				: The sail of the boat may be buggy on _Chocolate Doom_
 *Inspiration		: Dire Dire Docks level of Super Mario 64.
 *Author comments	: I had a lot of inspiration. I think it's one of my best maps. I also manage to not take too much time.
 :-------------------------------------------------------------------------------

@@ -25,10 +25,10 @@ Feel free to use jump and duck if you so please, but these new functions aren't 
 *Build Time				: Started life as Project PAR, back in 2013. Morphed into Echelon. Portions of the wad's architecture date back as far as 1996. I.e. Map 12 started life as a reject for Eternal Doom MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff.
 *Editor(s) used			: _GZDoomBuilder_, _SLADE_ v3.0.2, _Photoshop Elements_
 *Known Bugs				: There are some "slime" artifacts along the way, here and there.
-*May Not Run With...	: Other `Doom` source ports than {ZDoom}. Maps 28 & 29 are high detail and may not run well on slower PCs.
+*May Not Run With...	: Other `Doom` source ports than _ZDoom_. Maps 28 & 29 are high detail and may not run well on slower PCs.
 
 :Credits
 :-------------------------------------------------------------------------------
-*Additional credits to	: <Noisyvelvet>, for breathing life into the monsters. <Fonze>, for playing the beta and giving invaluable feedback. <Xaser>, for rescuing the wad for posterity (fixed {ZDoom} crash bug) <Doomworld.com> in general, `Echelon` post contributors in particular.
+*Additional credits to	: <Noisyvelvet>, for breathing life into the monsters. <Fonze>, for playing the beta and giving invaluable feedback. <Xaser>, for rescuing the wad for posterity (fixed _ZDoom_ crash bug) <Doomworld.com> in general, `Echelon` post contributors in particular.
 
 *Texture credits		: About half the featured textures were done by me for this project but I also lifted a lot from "Community Chest 4" and "The Afterglow Collection"; [1: www.doomworld.com/afterglow/textures/] Some textures used from the "Crucified Dreams" project. "Eternal Doom" material also used, some of which I created myself. More complete texture credits at the end of the [T: doc].

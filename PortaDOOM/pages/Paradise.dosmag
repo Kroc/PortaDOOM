@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/106058
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-`Paradise` is a _GZDoom_ TC, with a primary 7-map campaign, in addition to a 25-map episode of bonus maps. This version 2.1 release is a refinement of the 2019 2.0 release, adding {ZDoom} 2.8.1 and {Zandronum} compatibility, as well as adding coop multiplayer balance changes to the primary campaign (but not the bonus maps).
+`Paradise` is a _GZDoom_ TC, with a primary 7-map campaign, in addition to a 25-map episode of bonus maps. This version 2.1 release is a refinement of the 2019 2.0 release, adding _ZDoom_ 2.8.1 and _Zandronum_ compatibility, as well as adding coop multiplayer balance changes to the primary campaign (but not the bonus maps).
 
 Hardware-accelerated rendering mode strongly recommended, both for visual and performance reasons. Make sure you bind your reload key! Be sure to check out the "Mod Options" section in the main menu for options to customize your experience.
 
@@ -29,7 +29,7 @@ All maps in `Paradise` have been balanced for pistol starts, but playing continu
 *Base					: `map03` is based on pieces of <ZaBigBoss>' `Back to Thunder Road`
 *Build Time				: hundreds of hours
 *Editor(s) used			: _GZDoom Builder_, _SLADE3_, _Aseprite_, _MAME_, _Imagetool_, _LoopingAudioConverter_, _Paint.net_
-*Tested With			: _GZDoom_ 4.0.0, _Zandronum_ 3.0, and {ZDoom} 2.8.1
+*Tested With			: _GZDoom_ 4.0.0, _Zandronum_ 3.0, and _ZDoom_ 2.8.1
 
 :ADDITIONAL INFO
 :===============================================================================
@@ -420,7 +420,7 @@ resources:
 - all of the Supercharge-specific GLDEFS for monsters and projectiles and items
 
 *The Denizens of the _ZDoom_ Wiki:
-- various code samples and instructions on how to do things in {ZDoom}.
+- various code samples and instructions on how to do things in _ZDoom_.
   you are all stars in my book
 
 *<Blue Shadow>, <Gez>:

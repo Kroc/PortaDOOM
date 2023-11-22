@@ -23,7 +23,7 @@ This map tells the tale of what happens next...
 *Base					: Record scratch.
 *Build Time				: 2 weeks for the contest draft; many months polish.
 *Editor(s) used			: _GZDoom Builder_, _SLADE3_
-*May Not Run With...	: Non-{ZDoom} stuff. Software renderer is supported, but GL is recommended for better color fidelity.
+*May Not Run With...	: Non-_ZDoom_ stuff. Software renderer is supported, but GL is recommended for better color fidelity.
 
 :Credits:
 :-------------------------------------------------------------------------------

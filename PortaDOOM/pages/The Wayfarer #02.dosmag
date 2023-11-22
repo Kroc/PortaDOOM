@@ -10,7 +10,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/104838
 
 Jumping and Crouching are not intended and have been disabled. If you wish to re-enable them, you can do this from the Gameplay Options menu in _GZDoom_. I've done my best to make sure you can't cause game-breaking bugs or leave the playable area, but you may be able to skip certain areas or get some secrets more easily than intended if you jump / crouch. You're on an honor system; please don't abuse these features and then complain about it.
 
-I've primarily playtested these maps in {ZDoom} 2.8.1 and in _GZDoom_ with software rendering and dynamic lights off, so the lighting and other visual features are geared toward that. I would suggest using software or truecolor software mode unless you have a strong preference for OpenGL.
+I've primarily playtested these maps in _ZDoom_ 2.8.1 and in _GZDoom_ with software rendering and dynamic lights off, so the lighting and other visual features are geared toward that. I would suggest using software or truecolor software mode unless you have a strong preference for OpenGL.
 
 :1.2. Difficulty Levels
 :-------------------------------------------------------------------------------

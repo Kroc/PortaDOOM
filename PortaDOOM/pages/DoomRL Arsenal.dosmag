@@ -11,10 +11,10 @@ $KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 :Requires : *zdoom		Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-! *NOTE:* {PortaDOOM} does not yet include `DoomRL Arsenal` due to limitations supporting gameplay-only mods without levels, but will support it in a future release.
+! *NOTE:* _PortaDOOM_ does not yet include `DoomRL Arsenal` due to limitations supporting gameplay-only mods without levels, but will support it in a future release.
 $REM=!WARNING: This mod requires binding some extra keys. Go to "Customize Controls" in the menu and set the DoomRL-A specific keys.
 
-This mod was inspired by the fantastic Doom Roguelike made by <Kornel Kisielewicz>. While playing DoomRL, I felt that some of the mechanics used in it could be brought over and incorporated into Doom, and started brainstorming for months on exactly how to go about it using what I know of {ZDoom} _DECORATE_ coding. The end result is great for blasting through a megawad with a friend, supporting each other with each classes unique abilities and having something to work towards past just finding the BFG9000. Almost all the glorious weaponry from DoomRL makes an appearance here. I hope you enjoy this mod as much as I have enjoyed making it.
+This mod was inspired by the fantastic Doom Roguelike made by <Kornel Kisielewicz>. While playing DoomRL, I felt that some of the mechanics used in it could be brought over and incorporated into Doom, and started brainstorming for months on exactly how to go about it using what I know of _ZDoom_ _DECORATE_ coding. The end result is great for blasting through a megawad with a friend, supporting each other with each classes unique abilities and having something to work towards past just finding the BFG9000. Almost all the glorious weaponry from DoomRL makes an appearance here. I hope you enjoy this mod as much as I have enjoyed making it.
 
 :NEW WEAPON SYSTEM
 :-------------------------------------------------------------------------------
