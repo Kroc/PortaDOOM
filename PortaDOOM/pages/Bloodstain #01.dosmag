@@ -36,74 +36,74 @@ It ought to be just another boring workday of a UAC space marine. You were sent 
 
 TITLEPIC, INTERPIC, CREDIT, BOSSBACK, M_DOOM
 
-Statusbar based on original Doom2 textures.
-Big Statusbar numbers come from Scythe 2.
+Statusbar based on original `Doom2` textures.
+Big Statusbar numbers come from `Scythe 2`.
 
 Regarding textures, there are a few, but they are mostly based on already existing textures by various authors.
 
-Bloodstain was compiled with textures from the following sources:
+`Bloodstain` was compiled with textures from the following sources:
 
-- Ultimate Doom
-- Heretic & Hexen
-- Quake & Quake 2
-- Final Doom
-- Requiem
-- Alien Vendetta
-- Plutonia 2
-- Scythe 2
-- Speed of Doom
-- 5th Episode Texture Pack
-- Gothic Texture Pack
-- DarkBase Texture Pack
-- Doom Potpourri Texs
-- Recolored Doom Texture Pack
+- `Ultimate Doom`
+- `Heretic` & `Hexen`
+- `Quake` & `Quake 2`
+- `Final Doom`
+- `Requiem`
+- `Alien Vendetta`
+- `Plutonia 2`
+- `Scythe 2`
+- `Speed of Doom`
+- `5th Episode` Texture Pack
+- `Gothic` Texture Pack
+- `DarkBase` Texture Pack
+- `Doom Potpourri` Texs
+- `Recolored Doom` Texture Pack
 
 It is quite possible I have forgot about something, in such case I apologize and please let me know and I'll add whatever is missing :-)
 
 *Music:
 
-There are no original MIDI tracks in Bloodstain, all tracks are collected from various sources (origin of some is unknown or I don't simply remember it, in that case I'm sorry; if you recognize any of those tracks, please let me know):
+There are no original MIDI tracks in `Bloodstain`, all tracks are collected from various sources (origin of some is unknown or I don't simply remember it, in that case I'm sorry; if you recognize any of those tracks, please let me know):
 
-- Title - Cradle of Filth - Darkness Our Bride
+- Title - Cradle of Filth - "Darkness Our Bride"
 - Intermission - Unknown T_T
-- Reading - Cradle of Filth - One Final Graven Kiss
+- Reading - Cradle of Filth - "One Final Graven Kiss"
 
-- MAP01 - Plutonia 2 (unused track)
-- MAP02 - Nine Inch Nails - Dead Souls
-- MAP03 - ZDCTF
-- MAP04 - Plutonia 2
-- MAP05 - Blur - Woo Hoo!
-- MAP06 - Quake 2
+- MAP01 - `Plutonia 2` (unused track)
+- MAP02 - Nine Inch Nails - "Dead Souls"
+- MAP03 - `ZDCTF`
+- MAP04 - `Plutonia 2`
+- MAP05 - Blur - "Woo Hoo!"
+- MAP06 - `Quake 2`
 
-- MAP07 - Rammstein - Du Hast
-- MAP08 - Scythe 2 (track's origin unknown)
-- MAP09 - Jenesis (TNT remix)
-- MAP10 - Rise of the Triad
-- MAP11 - Plutonia 2
+- MAP07 - Rammstein - "Du Hast"
+- MAP08 - `Scythe 2` (track's origin unknown)
+- MAP09 - `Jenesis` (`TNT` remix)
+- MAP10 - `Rise of the Triad`
+- MAP11 - `Plutonia 2`
 
-- MAP12 - Alien Vendetta (track's origin unknown)
-- MAP13 - Plutonia Revisited
-- MAP14 - Heretic
-- MAP15 - Alien Vendetta (track's origin unknown)
-- MAP16 - Hell Revealed 2
-- MAP17 - ZDCTF
-- MAP18 - Quake 2
-- MAP19 - Requiem
-- MAP20 - Dimensions of Time (track's origin unknown)
+- MAP12 - `Alien Vendetta` (track's origin unknown)
+- MAP13 - `Plutonia Revisited`
+- MAP14 - `Heretic`
+- MAP15 - `Alien Vendetta` (track's origin unknown)
+- MAP16 - `Hell Revealed 2`
+- MAP17 - `ZDCTF`
+- MAP18 - `Quake 2`
+- MAP19 - `Requiem`
+- MAP20 - `Dimensions of Time` (track's origin unknown)
 
-- MAP21 - Cradle of Filth - Heaven Torn Asunder
-- MAP22 - Requiem
-- MAP23 - Plutonia 2
-- MAP24 - TNT
-- MAP25 - Plutonia Revisited
+- MAP21 - Cradle of Filth - "Heaven Torn Asunder"
+- MAP22 - `Requiem`
+- MAP23 - `Plutonia 2`
+- MAP24 - `TNT`
+- MAP25 - `Plutonia Revisited`
 - MAP26 - Halloween
-- MAP27 - Community Chest 3 (Ultimate Doom remix)
-- MAP28 - Metal Gear Solid
-- MAP29 - Hell Revealed 2
-- MAP30 - Cradle of Filth - From the Cradle to Enslave
+- MAP27 - `Community Chest 3` (`Ultimate Doom` remix)
+- MAP28 - `Metal Gear Solid`
+- MAP29 - `Hell Revealed 2`
+- MAP30 - Cradle of Filth - "From the Cradle to Enslave"
 
-- MAP31 - Rise of the Triad
-- MAP32 - Scythe 2 (track's origin unknown)
+- MAP31 - `Rise of the Triad`
+- MAP32 - `Scythe 2` (track's origin unknown)
 
 *Testers:
 - <Pavel "Pipicz" Tvrzník> (yeah, that's probably me :-D)
@@ -120,5 +120,5 @@ Also thanks to everyone for playing it and for any feedback :-) And, if you feel
 
 In case you would really mean it:
 
-- *PayPal:* Pipicz@seznam.cz
+- *PayPal:* <Pipicz@seznam.cz>
 - *Bank account:* 250661012/0300

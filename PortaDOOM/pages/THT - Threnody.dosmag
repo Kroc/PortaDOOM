@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/thtthre
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Demos
 :-------------------------------------------------------------------------------
 
-<Ty Halderman>, the essential pillar of the `Doom` community, passed away in 2015. He is greatly missed and his contributions to the `Doom` scene have helped keep this old game alive and kicking. This project tries to honor <Ty> with levels that pay tribute to his work be it in the form of his levels or contribution to the `Boom` sourceport.
+<Ty Halderman>, the essential pillar of the `Doom` community, passed away in 2015. He is greatly missed and his contributions to the `Doom` scene have helped keep this old game alive and kicking. This project tries to honor <Ty> with levels that pay tribute to his work be it in the form of his levels or contribution to the _Boom_ sourceport.
 
 $KEY:1=URL:https://www.doomworld.com/forum/topic/74184
 For more information on <Ty> go to [1: this website], which has links to everything you need to know about him as well as the community's condolences.
@@ -24,7 +24,7 @@ There are 20 levels in this megawad along with plenty of new music and awesome n
 
 *Story:
 
-One of the more important and highly secret UAC installations has been severely compromised by a demonic invasion from Hell. There are reports of near complete annihilation of all personnel, however the worst part is, that it is now painfully clear that the UAC executives screwed up as they stationed one the military's top generals there to oversee the completion of a multitude of secret projects. The UAC knew that these installations would be a high priority target for the next attack from Hell and sending the decorated general there - well knowing that an attack was imminent - was a bad move. The general is a skilled soldier and is most likely still alive and held as prisoner; Hell knows better than to kill him. His last transmission was sent from inside a spacecraft. It is unknown whether or not he made it off the ground. You, being one of the best and most lethal weapons of the UAC, have been tasked to go to the planet in search of answers and to bring the general home should he still be alive. If not, then your mission is clear: Kill everything and avenge the general.
+One of the more important and highly secret UAC installations has been severely compromised by a demonic invasion from Hell. There are reports of near complete annihilation of all personnel, however the worst part is, that it is now painfully clear that the UAC executives screwed up as they stationed one the military's top generals there to oversee the completion of a multitude of secret projects. The UAC knew that these installations would be a high priority target for the next attack from Hell and sending the decorated general there -- well knowing that an attack was imminent -- was a bad move. The general is a skilled soldier and is most likely still alive and held as prisoner; Hell knows better than to kill him. His last transmission was sent from inside a spacecraft. It is unknown whether or not he made it off the ground. You, being one of the best and most lethal weapons of the UAC, have been tasked to go to the planet in search of answers and to bring the general home should he still be alive. If not, then your mission is clear: Kill everything and avenge the general.
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ One of the more important and highly secret UAC installations has been severely 
 *How To Run The File	: Anyway you prefer, like:
 						  "prboom.exe -iwad doom2.wad -file thtthren.wad"
 
-*Important Note			: The maps use sky transfers so for the best and intended experience use `PrBoom+` ver. 2.5.1.4 with -complevel 9
+*Important Note			: The maps use sky transfers so for the best and intended experience use _PrBoom+_ ver. 2.5.1.4 with -complevel 9
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ One of the more important and highly secret UAC installations has been severely 
 - <Chris Hansen>
 
 *Level design:
-- <Angry Saint>, <antares031>, <Chris Hansen>, <Didy>, <dobu gabu maru>, <Doomkid>, <Fonze>, <Gothic>, <joe-ilya>, <Philip "Liberation" Brown>, <Mechadon>, <Mithran Denizen>, <Paul Corfiatis> and <Z0k>		
+- <Angry Saint>, <antares031>, <Chris Hansen>, <Didy>, <dobu gabu maru>, <Doomkid>, <Fonze>, <Gothic>, <joe-ilya>, <Philip "Liberation" Brown>, <Mechadon>, <Mithran Denizen>, <Paul Corfiatis> and <Z0k>
 
 *Music by:
 - <Alfonzo>, <CCR Inc.> <Doomhuntress>, <Digimon Online>, <Eris Falling>, <Gridlock>, <Jimmy>, <JDoyle>, <Joe Satriani>, <KevinHEZ>, <King Diamond>, <Metroid>, <Paul D>, <Paul Corfiatis> and <Vital>

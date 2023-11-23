@@ -25,7 +25,7 @@ Six episodes of classic `Doom` maps, originally candidates for last year's [1] `
 
 `Episode 5`, "Base Instinct", is a "bonus" episode of `E1`/`E2`-style maps, and can be thought of as an alternate take on the Phobos / Deimos story. The episode can be accessed in the main game menu with either _ZDoom_ or _Eternity_. For vanilla or other ports, running `DTWID-E5.wad` will load `E5`'s maps in place of `E1`'s.
 
-Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate wad is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
+Episode 6, "The Final Gate", is a Z/Eternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate wad is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -117,16 +117,16 @@ Episode 6, "The Final Gate", is a ZEternity-exclusive "Boss Rush" episode consis
 - E6M9  *"Hell's Mosh Pit"		by <Hellbent>
 
 *Note:
-	Maps marked with an asterisk (**) have been modified "in post" to some extent for either quality revamp or bugfixing reasons. All post-production on these maps was done by <Xaser>, except for E3M1 (done by <Marcaek>), E4M6 (a brand-new map by <Marnetmar> & <Alfonzo> that's loosely based on a layout originally by <General Rainbow Bacon>), and E3M8 (a new map by <Marnetmar> replacing his original submission, "Nucleo Interno").
+	Maps marked with an asterisk (**) have been modified "in post" to some extent for either quality revamp or bugfixing reasons. All post-production on these maps was done by <Xaser>, except for E3M1 (done by <Marcaek>), E4M6 (a brand-new map by <Marnetmar> & <Alfonzo> that's loosely based on a layout originally by <General Rainbow Bacon>), and E3M8 (a new map by <Marnetmar> replacing his original submission, `"Nucleo Interno"`).
 
-	The original versions of these maps can be played by loading DTWID-LX.wad, in which they'll replace the "new" ones in their respective slots. There are no guarantees of vanilla compatibility for the originals, however; some, like E2M8, have overflows, and at least one map (E3M4) is lacking an exit. Just be warned.
+	The original versions of these maps can be played by loading `DTWID-LX.wad`, in which they'll replace the "new" ones in their respective slots. There are no guarantees of vanilla compatibility for the originals, however; some, like E2M8, have overflows, and at least one map (E3M4) is lacking an exit. Just be warned.
 
 *Note #2:
-	A few maps from previous versions have been cycled out of *DTWID-LE* since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
+	A few maps from previous versions have been cycled out of `DTWID-LE` since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
 
 $KEY:2=URL:http://static.angryscience.net/doom/pd1-anom.zip
 - E1M7  *"Siege Headquarters"	by <PhobosDeimos1>
-= E1M3 of PhobosDeimos Anomaly:
+= E1M3 of `PhobosDeimos Anomaly`:
   [2: http://static.angryscience.net/doom/pd1-anom.zip]
 
 - E1M8 *"Enigma"				by <NaturalTvventy>
