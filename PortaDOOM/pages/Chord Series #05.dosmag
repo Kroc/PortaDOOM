@@ -22,15 +22,15 @@ It requires a source port (any source port that removes VPO and HOM, ie. almost 
 :-------------------------------------------------------------------------------
 *Base					: From scratch.
 *Build Time				: A long, long time.
-*Editor(s) used			: Dck 3.62 By Ben Morris
-*Nodebuilders			: Bsp 5.0 By Lee Killough and Colin Phipps
-						  RMB 2.1 By Jens Hykkelbjerg
+*Editor(s) used			: _Dck_ 3.62 By <Ben Morris>
+*Nodebuilders			: _Bsp_ 5.0 By <Lee Killough> and <Colin Phipps>
+						  _RMB_ 2.1 By <Jens Hykkelbjerg>
 *Known Bugs				: There are a few occasional errors in monster behaviour, but these are bugs in the source ports and not in my level. It took me a lot of effort and annoyance to finally figure that out. (Ie. Cacos getting stuck on top of each other and monsters falling off tall ledges, hopefully someday this stuff will get fixed!)
 
 :Credits
 :-------------------------------------------------------------------------------
 All the usual suspects plus:
 
-- <Matt Dixon> and <Martin Friberg> for testing/input throughout the maps development.
-- <Myk Helnyte> and <Anthony soto> for additional playtesting.
-- <Eric james roberts> for offering to feature it on his page.
+- <Matt Dixon> and <Martin Friberg> for testing/input throughout the maps development
+- <Myk Helnyte> and <Anthony soto> for additional playtesting
+- <Eric james roberts> for offering to feature it on his page

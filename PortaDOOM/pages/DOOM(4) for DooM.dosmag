@@ -66,7 +66,7 @@ A gameplay mod bringing some of the Doom4 mechanics and its weapons, with mods i
 
 <Mike12>			: First person Revenant cannons
 
-id Software			: `Quake 4` / `Doom 2016` sounds and graphics
+<id Software>		: `Quake 4` / `Doom 2016` sounds and graphics
 
 <Flying Wild Hog>	: Hard Reset sounds
 
@@ -100,13 +100,13 @@ Blizzard			: `Diablo II` Sound (just one!)
   Sprite Edit: <Ghastly_dragon>, <Mike12>
 
 - "Psychic soul" (Lost Soul replacement)
-  Sprites: <Id Software>
+  Sprites: <id Software>
   Sprite Edit: <Neoworm>, <Maelstrom>
 
 - "Blasterborg" (Shotgun Guy replacement)
-  Sprites: <Id Software>, <3D Realms>
+  Sprites: <id Software>, <3D Realms>
   Sprite Edit: <Neoworm>
 
 - "Rapid fire trooper" (Zombieman replacement)
-  Sprites: <Id Software>
+  Sprites: <id Software>
   Sprite Edit: <NMN>, <Tormentor667>

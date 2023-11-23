@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
 :Requires : *no-limit	Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
 
-A episode 2 replacement for the `Ultimate DOOM`, set in the location where `Concerned`'s E2 took place. The development of this wad however was entirely from scratch, there are some resembles to the original maps here and there and some hold similar themes to their counterparts. The gameplay is fairly challenging on UV, especially the second half of the wad.
+A episode 2 replacement for the `Ultimate DOOM`, set in the location where `Concerned`'s E2 took place. The development of this WAD however was entirely from scratch, there are some resembles to the original maps here and there and some hold similar themes to their counterparts. The gameplay is fairly challenging on UV, especially the second half of the WAD.
 
 *Story:
 
@@ -76,7 +76,7 @@ The initial design for this one was made when the DWMC played `Hell Revealed`, s
 
 :Credits:
 :-------------------------------------------------------------------------------
-- <ID Games> for `DOOM`
+- <id Software> for `DOOM`
 - <Tourniquet> for alpha testing
-- The artists/games/tv shows for which the music for this wad comes from
+- The artists/games/tv shows for which the music for this WAD comes from
 - The People from _Doomworld_ who actually tested this and helped to implement better gameplay

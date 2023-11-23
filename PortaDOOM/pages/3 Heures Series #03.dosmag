@@ -99,7 +99,7 @@ Testing:
 *Music track		: warfare.mid (composed by <Franck Klepacki> for Command & Conquer, found in midi at www.mirsoft.info )
 *Bugs				: No bugs discovered yet
 *Inspiration		: When I dream of Doom while sleeping, completed with parts influenced by the others 3hA episodes
-*Author comments	: I would like to thank Id software for Doom, all the members of the CFD, my family, and every music composer for their amazing tracks I've listened while creating this map (<Basil Poledouris> and <Franck Klepacki> in fact :D)
+*Author comments	: I would like to thank <id Software> for `Doom`, all the members of the CFD, my family, and every music composer for their amazing tracks I've listened while creating this map (<Basil Poledouris> and <Franck Klepacki> in fact :D)
 :-------------------------------------------------------------------------------
 *MAP05				: Violently Imply
 *Author(s)			: <christophe "Necrotikflesh" Calamoneri>
@@ -132,7 +132,7 @@ Testing:
 *Author(s)			: <Memfis>
 *Build time			: 3 hours, then some time to get rid of the HOMs and add difficulty settings and multiplayer stuff.
 *Editor(s) used		: GZDoom Builder, XWE
-*Music track		: Sorry I don't remember, it's from some CTF wad. <Sicamore> knows for sure.
+*Music track		: Sorry I don't remember, it's from some CTF WAD. <Sicamore> knows for sure.
 *Bugs				: Maaaybe HOMs if you try really hard to find them.
 *Inspiration		: <Erik Alm>'s, <Michael Krause>'s and <Chris Christenson>'s maps.
 *Author comments	: Just a simple ocean base. I tried to put enough HP for semi-aggressive play.
@@ -179,16 +179,16 @@ Testing:
 *Editor(s) used		: Doom Builder 1.6 ; XWE
 *Music track		: Zone300 MAP03
 *Bugs				: Exit plateform isn't bugged.
-*Inspiration		: There is a trap which inspired by AHAHAC.wad, made by <Memfis>.
+*Inspiration		: There is a trap which inspired by `AHAHAC.wad`, made by <Memfis>.
 *Author comments	: I wished to make a pretty fun puzzle map. I didn't have anything to say.
 :-------------------------------------------------------------------------------
 *MAP14				: Epsilon indi
 *Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 2H55
 *Editor(s) used		: Doom builder 1.68
-*Music track		: Fradm1_.wad map01
+*Music track		: `Fradm1_.wad` map01
 *Bugs				: None
-*Inspiration		: Fradm1_.wad
+*Inspiration		: `Fradm1_.wad`
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP15				: Ile paradisiaque
@@ -266,9 +266,9 @@ Testing:
 *Author(s)			: <Maxime "Datacore" Bisiaux>
 *Build time			: 2h55 
 *Editor(s) used		: Doom Builder 1.68
-*Music track		: Sihr2fix.wad Map01
+*Music track		: `Sihr2fix.wad` Map01
 *Bugs				: Hopefully none
-*Inspiration		: Sihr2fix.wad
+*Inspiration		: `Sihr2fix.wad`
 *Author comments	: None
 :-------------------------------------------------------------------------------
 *MAP24				: Les terres de l'enfer
@@ -347,7 +347,7 @@ Testing:
 *Author(s)			: <Oxyde>
 *Build time			: 3.5 hours +
 *Editor(s) used		: Doom Builder 1.68, XWE, GZDoom Builder
-*Music track		: PRKDOOM.wad - Entryway
+*Music track		: `PRKDOOM.wad` - Entryway
 *Bugs				: None that I know of
 *Inspiration		: Doom 2 Map01 remake of all hell. :)
 *Author comments	: Thank to <JCD> for finishing that one up .:D

@@ -24,7 +24,7 @@ The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer tim
 
 *Doomworld	Since you were basically making the first TC ever, were you in any way uneasy about what you would be capable of doing and how well it would turn out?
 
-<Justin>	I was sometimes a bit worried as to whether I could ever finish it. But I was keeping up with what other people were making, which was quite reassuring (even back then, poor wads outnumbered good ones quite considerably).
+<Justin>	I was sometimes a bit worried as to whether I could ever finish it. But I was keeping up with what other people were making, which was quite reassuring (even back then, poor WADs outnumbered good ones quite considerably).
 
 *Doomworld	Was Aliens-TC a completely one-man project? I.E. did you make every single level, texture, graphic, sound, etc?
 
@@ -44,7 +44,7 @@ The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer tim
 
 *Doomworld	Where did you get the balls to not put a single enemy in the first level?
 
-<Justin>	Good question. I'm not sure. It was an idea that worked for so many reasons that it had to go in. I knew it would fail for some players, but for those for whom it worked, it would *really* work. I tried to ensure it would not be perceived as a faulty wad, probably with reasonable success.
+<Justin>	Good question. I'm not sure. It was an idea that worked for so many reasons that it had to go in. I knew it would fail for some players, but for those for whom it worked, it would *really* work. I tried to ensure it would not be perceived as a faulty WAD, probably with reasonable success.
 
 			There were a few things I wanted to do that I didn't have the balls for, but with 20/20 hindsight based on the reaction to the things I did do, I can see that they would have gone down well. Knowing this has given me much more confidence in my ideas.
 
@@ -54,7 +54,7 @@ The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer tim
 
 *Doomworld	Have you ever read any of the Doom editing books in the bookstore? How did it make you feel to see your TC mentioned and/or reviewed and/or placed on the CD included?
 
-<Justin>	Usually quite good! :-) Most commercial CD's shied away from it for copyright reasons, so it was less affected than some by the "put a ftp-dump of wads onto CD and make a quick buck" people, and due to the scope, more likely to get discussed/reviewed and distributed with respect (ie all files present, credit given, etc.)
+<Justin>	Usually quite good! :-) Most commercial CD's shied away from it for copyright reasons, so it was less affected than some by the "put a ftp-dump of WADs onto CD and make a quick buck" people, and due to the scope, more likely to get discussed/reviewed and distributed with respect (ie all files present, credit given, etc.)
 
 *Doomworld	By your own count, how many times were you asked to have Aliens-TC included on commercial works like books or level compilation CDs?
 
@@ -68,7 +68,7 @@ The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer tim
 
 <Justin>	I wanted to do another conversion, and had planned and designed a fair bit of it before I realised that the time was past. It would probably take me another six months to do the conversion, and by that time, Doom/Doom2 would be on the way out. My main love is for creating worlds, and it was more inviting to wait for the next generation of game/world engine than to spend it with Doom/2 again.
 
-			But while the game ideas for my next conversion could be kept, the technical ones were only relevant to Doom/2, and as I saw more and more wads doing the same things over and over again, and regularly heard people complaining about how you couldn't make a decent level because everything had already been done in Doom nine times over, it seemed a waste to keep the ideas to myself. Hence the Nemisis.wad you mention above. I also love doing the impossible, so seeing a discussion about how an Escher-style room in Doom ‘would be cool but impossible' was cool :-)
+			But while the game ideas for my next conversion could be kept, the technical ones were only relevant to Doom/2, and as I saw more and more WADs doing the same things over and over again, and regularly heard people complaining about how you couldn't make a decent level because everything had already been done in Doom nine times over, it seemed a waste to keep the ideas to myself. Hence the `Nemisis.wad` you mention above. I also love doing the impossible, so seeing a discussion about how an Escher-style room in Doom ‘would be cool but impossible' was cool :-)
 
 			It's probably more accurate to say I moved out rather than burned out. I still love creating worlds, and still create them, just no-longer for Doom.
 
@@ -142,7 +142,7 @@ The Doom add-on [A: ALIENS-TC] was released over four years ago. In computer tim
 
 *Doomworld	Are there any particularly interesting stories about the making of Aliens-TC you'd like to share?
 
-<Justin>	Your intensive research might have uncovered this one already, as I think I've mentioned it before, but I had trouble getting Aliens-TC beta tested. It was at a stage where I was aware that a few of the technical things I was doing were unique to A-TC, so I didn't want them getting out until the release. Hence I didn't want too many people to be playing it. My brother and sister (I was living at home at the time) were prime candidates because they were already in the same building, and they loved/liked (respectively) Doom. The trouble was they were very reluctant to playtest for me. I didn't know why - I thought my doom conversion worked quite well, looked good, and so on. So I just bugged and badgered them into testing for me. One day, nearing the end of the six months, <Richard>'s wad (for the secret level) was ready to playtest.
+<Justin>	Your intensive research might have uncovered this one already, as I think I've mentioned it before, but I had trouble getting Aliens-TC beta tested. It was at a stage where I was aware that a few of the technical things I was doing were unique to A-TC, so I didn't want them getting out until the release. Hence I didn't want too many people to be playing it. My brother and sister (I was living at home at the time) were prime candidates because they were already in the same building, and they loved/liked (respectively) Doom. The trouble was they were very reluctant to playtest for me. I didn't know why - I thought my doom conversion worked quite well, looked good, and so on. So I just bugged and badgered them into testing for me. One day, nearing the end of the six months, <Richard>'s WAD (for the secret level) was ready to playtest.
 
 			So I sat down to play it.
 			And it scared the hell out of me...

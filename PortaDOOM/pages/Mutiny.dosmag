@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
 :Requires : *no-limit	Includes : *+Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-`Mutiny` is a 16-level, Limit Removing Community Project Episode for `Doom 2` intended to be the spiritual successor of late 90's cyberpunk themed wads such as `STRAIN`, `Hacx`, `Nimrod`, `Dystopia 3`, and `Perdition's Gate`. It features new colorful, high contrast, (intentionally retro) textures inspired by the works of <Iika Keranen> and <Anthony Czerwonka>, complete with plenty radioactive signs, warning stripes, computers, slime, and rust.
+`Mutiny` is a 16-level, Limit Removing Community Project Episode for `Doom 2` intended to be the spiritual successor of late 90's cyberpunk themed WADs such as `STRAIN`, `Hacx`, `Nimrod`, `Dystopia 3`, and `Perdition's Gate`. It features new colorful, high contrast, (intentionally retro) textures inspired by the works of <Iika Keranen> and <Anthony Czerwonka>, complete with plenty radioactive signs, warning stripes, computers, slime, and rust.
 
 *Story:
 
@@ -22,7 +22,7 @@ It's 2028 AD. You're an elite cyborg marine. The UAC has risen as the most power
 :-------------------------------------------------------------------------------
 `Mutiny` is a _Doomworld_ Community Project lead by <Jon "40oz" Vail>. Below is a list of all the community members that contributed to `Mutiny`'s success. Without their help and invaluable input this project would not have been completed.
 
-Special Thanks to <id software>, <John Romero> for releasing unused `Doom 2` resources in December of 2015, The <Alpha Dog Alliance>, for `STRAIN`, <Iika Keranen> and <Anthony Czerwonka> for `Dystopia 3`, The <Nimrod Team> for `Nimrod`, <Wraith Corporation> for `Perdition's Gate`, <Banjo Software> for `Hacx`, and the many `Doom` marines whose continued interest in `Mutiny` helped push it to completion.
+Special Thanks to <id Software>, <John Romero> for releasing unused `Doom 2` resources in December of 2015, The <Alpha Dog Alliance>, for `STRAIN`, <Iika Keranen> and <Anthony Czerwonka> for `Dystopia 3`, The <Nimrod Team> for `Nimrod`, <Wraith Corporation> for `Perdition's Gate`, <Banjo Software> for `Hacx`, and the many `Doom` marines whose continued interest in `Mutiny` helped push it to completion.
 
 Additional Special thanks goes to <dt_>, <AD_79>, <MrGlide>, and <traversd>, for investing so much time and dedication into the project and who were particularly helpful in contributing to the projects success. Congratulations on your newborn son, <MrGlide>! I hope your son Nicholas gets better, <traversd>!
 
@@ -56,8 +56,8 @@ Additional Special thanks goes to <dt_>, <AD_79>, <MrGlide>, and <traversd>, for
 :Graphics
 
 - *Title Picture:* <MrGlide>, <40oz>
-- *Textures:* id software, <40oz>, <Gothic>, <Jmickle666666666>, and <nxGangrel>
-- *Other Graphics:* id software, <Jmickle666666666>, <40oz>, and <Doomkid>
+- *Textures:* <id Software>, <40oz>, <Gothic>, <Jmickle666666666>, and <nxGangrel>
+- *Other Graphics:* <id Software>, <Jmickle666666666>, <40oz>, and <Doomkid>
 
 All graphics and textures used in `Mutiny` are made from scratch or use `Doom` or `Doom 2` assets as a base. The green crosses on the health items are compliant with the Geneva Convention's request to developers to not misuse the protected red cross symbol. And it looks cool.
 

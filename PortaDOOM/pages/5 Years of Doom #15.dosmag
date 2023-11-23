@@ -5,7 +5,7 @@ $TITLE=Sverre Kvernmo
 
 :-------------------------------------------------------------------------------
 
-<Sverre Kvernmo> stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. <Sverre>, however, is no stranger to change: years ago, he would have never expected to be working under contract for id Software. Before working with <Romero> and crew, not counting a brief stint with Xatrix making Redneck Rampage, <Sverre> was a prominent Doomer, creating numerous levels for id's Doom 2 add-on product "The Master Levels", as well as three for the much-revered Doom megawad Eternal Doom.
+<Sverre Kvernmo> stunned the gaming world recently when he and upwards of seven cohorts seemingly spontaneously resigned from ION Storm, where he had been working on Daikatana for over a year and a half. <Sverre>, however, is no stranger to change: years ago, he would have never expected to be working under contract for <id Software>. Before working with <Romero> and crew, not counting a brief stint with Xatrix making Redneck Rampage, <Sverre> was a prominent Doomer, creating numerous levels for <id>'s Doom 2 add-on product "The Master Levels", as well as three for the much-revered Doom megawad Eternal Doom.
 
 :-------------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ $TITLE=Sverre Kvernmo
 
 *Doomworld	How were you selected for the Master Levels?
 
-<Sverre>		I bugged id until they realised the only way they were going to get any work done was by hiring me.
+<Sverre>		I bugged <id> until they realised the only way they were going to get any work done was by hiring me.
 
 *Doomworld	Could you be a little more specific in what exactly happened? :P
 
@@ -63,7 +63,7 @@ $TITLE=Sverre Kvernmo
 
 *Doomworld	Such as?
 
-<Sverre>		Besides id's early presence (mostly <Shawn Green>) there were such prominent names as <John "Dr Sleep" Anderson>, <Alex Mayberry> (Xatrix's ex-lead level designer), <Richard "Graymatter" Gray> (yep, different nickname for the <Levelord> back then), <Mal Blackwell>, <Stormin' Norman>, <Anthony Burden>, that <DeeP> guy (ugh) and several others that for whatever reason chose not to go full-time into the game industry, including the whole of the Eternal team. Oh, and the best female level designer I know of, <Lisa Moore>. She rocks, check her stuff out.
+<Sverre>		Besides <id>'s early presence (mostly <Shawn Green>) there were such prominent names as <John "Dr Sleep" Anderson>, <Alex Mayberry> (Xatrix's ex-lead level designer), <Richard "Graymatter" Gray> (yep, different nickname for the <Levelord> back then), <Mal Blackwell>, <Stormin' Norman>, <Anthony Burden>, that <DeeP> guy (ugh) and several others that for whatever reason chose not to go full-time into the game industry, including the whole of the Eternal team. Oh, and the best female level designer I know of, <Lisa Moore>. She rocks, check her stuff out.
 
 *Doomworld	How was Eternal Doom first started?
 
@@ -79,7 +79,7 @@ $TITLE=Sverre Kvernmo
 
 *Doomworld	Apparently, many of the textures in Eternal Doom were of your own creation. Has this graphical talent helped you in your current work at ION Storm?
 
-<Sverre>		I basically did all the original art, or everything that wasn't snatched from Hexen or some other internet-wad. I did over 600 textures for that one, I believe. That experience did help a bit here at Ion, especially during the beginning of Daikatana when each level designer didn't have assigned texture artists. Nowadays there's no use for my 2D skills since the texture guys here have talents far beyond mine.
+<Sverre>		I basically did all the original art, or everything that wasn't snatched from `Hexen` or some other internet-WAD. I did over 600 textures for that one, I believe. That experience did help a bit here at Ion, especially during the beginning of Daikatana when each level designer didn't have assigned texture artists. Nowadays there's no use for my 2D skills since the texture guys here have talents far beyond mine.
 
 :-------------------------------------------------------------------------------
 
@@ -137,7 +137,7 @@ $TITLE=Sverre Kvernmo
 
 			2) Technology changes. We switched from the Quake 1 engine to Quake 2 in the middle of the project. The new renderer worked quite a bit different from the old one, so changes in face-counts made many maps redundant. Frequently, areas had to be rebuilt or scrapped altogether.
 
-			3) Level-effects evolve. When we started out making the game we had a bunch of ideas for level-effects that were to go in the game. Coming up with ideas is of course a much quicker process than implementing them, so you're stuck with two options. One, you design with only what effects you have at the time and run the risk of your level not being cutting-edge on the effects side, or you later have to re-design it to fit the new effects. Two, you try to guess how the ideas will be implemented. This is obviously an inaccurate science and often lead to just as much work as re-implementing an effect later. My point is once again, we're working with an unfinished product, where we can't pick and choose from the game's final palette. This point is why id's own Doom maps are inferior to many of the later freeware-designs, or why there was only one level (well I only found one) in Quake 2 that had the cool "rising water" effect, etc.
+			3) Level-effects evolve. When we started out making the game we had a bunch of ideas for level-effects that were to go in the game. Coming up with ideas is of course a much quicker process than implementing them, so you're stuck with two options. One, you design with only what effects you have at the time and run the risk of your level not being cutting-edge on the effects side, or you later have to re-design it to fit the new effects. Two, you try to guess how the ideas will be implemented. This is obviously an inaccurate science and often lead to just as much work as re-implementing an effect later. My point is once again, we're working with an unfinished product, where we can't pick and choose from the game's final palette. This point is why <id>'s own Doom maps are inferior to many of the later freeware-designs, or why there was only one level (well I only found one) in Quake 2 that had the cool "rising water" effect, etc.
 
 			4) AI. As any level designer knows, the way the monsters behave will dramatically change the way your level is made. Well, for the longest time there was absolutely _no_ AI, and even now the AI isn't 100% done. We keep finding areas the side-kicks have problems with, which in the worst cases means a map must be heavily re-designed. We also have to make changes as new monster behaviours are completed, in order to best take advantage of their combat patterns.
 

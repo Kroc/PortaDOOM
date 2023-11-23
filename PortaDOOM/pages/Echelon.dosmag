@@ -12,23 +12,23 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon
 :Requires : *zdoom		Includes : *+Sound +Music +Graphics
 :-------------------------------------------------------------------------------
 
-A 30-map mega wad. Yes! Finally made one... The project's chief goal was to create a full set of bite-sized maps. Some maps grew a little larger. A reimagining of the Doom II storyline.
+A 30-map mega WAD. Yes! Finally made one... The project's chief goal was to create a full set of bite-sized maps. Some maps grew a little larger. A reimagining of the Doom II storyline.
 
 *Play Notes:
 
-Feel free to use jump and duck if you so please, but these new functions aren't neccessary to finish the maps. Some shortcuts may be obtained this way. This wad is deemed complete and is not in beta, but any bug reports of note will likely spur an update. I don't predict very many changes at this point.
+Feel free to use jump and duck if you so please, but these new functions aren't neccessary to finish the maps. Some shortcuts may be obtained this way. This WAD is deemed complete and is not in beta, but any bug reports of note will likely spur an update. I don't predict very many changes at this point.
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New verteces, linedefs and sectors from scratch. 3 originally sprited monsters. Bunches of both new and reused textures.
-*Build Time				: Started life as `Project PAR`, back in 2013. Morphed into `Echelon`. Portions of the wad's architecture date back as far as 1996. I.e. Map 12 started life as a reject for `Eternal Doom` MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff
+*Build Time				: Started life as `Project PAR`, back in 2013. Morphed into `Echelon`. Portions of the WAD's architecture date back as far as 1996. I.e. Map 12 started life as a reject for `Eternal Doom` MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff
 *Editor(s) used			: _GZDoomBuilder_, _SLADE_ v3.0.2, _Photoshop Elements_
 *Known Bugs				: There are some "slime" artifacts along the way, here and there
 *May Not Run With...	: Other `Doom` source ports than _ZDoom_. Maps 28 & 29 are high detail and may not run well on slower PCs
 
 :Credits
 :-------------------------------------------------------------------------------
-*Additional credits to	: <Noisyvelvet>, for breathing life into the monsters. <Fonze>, for playing the beta and giving invaluable feedback. <Xaser>, for rescuing the wad for posterity (fixed _ZDoom_ crash bug) _Doomworld.com_ in general, `Echelon` post contributors in particular.
+*Additional credits to	: <Noisyvelvet>, for breathing life into the monsters. <Fonze>, for playing the beta and giving invaluable feedback. <Xaser>, for rescuing the WAD for posterity (fixed _ZDoom_ crash bug) _Doomworld.com_ in general, `Echelon` post contributors in particular.
 
 $KEY:1=URL:https://www.doomworld.com/afterglow/textures/
 *Texture credits		: About half the featured textures were done by me for this project but I also lifted a lot from `Community Chest 4` and [1: The Afterglow Collection]. Some textures used from the `Crucified Dreams` project. `Eternal Doom` material also used, some of which I created myself. More complete texture credits at the end of the [T: doc].

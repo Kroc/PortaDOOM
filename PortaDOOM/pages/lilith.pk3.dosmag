@@ -15,15 +15,15 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/lilith
 i like to keep my doom 2 installation floppies attached to my computer with magnets so i don't lose them
 
 some can experience seizures when exposed to flashing lights or other visual stimuli.
-even if you've never been diagnosed, please be stop playing this wad if you encounter disorientation, lightheadedness, altered vision, involuntary twitching/jerking movements, or momentary loss of awareness/consciousness.
+even if you've never been diagnosed, please be stop playing this WAD if you encounter disorientation, lightheadedness, altered vision, involuntary twitching/jerking movements, or momentary loss of awareness/consciousness.
 
 i tried very hard to avoid anything that would cause physical discomfort but everyone is different
 
-this wad does not work with _qz_/_gz_/_zandronum_ as it relies on the old _zdoom_ software renderer and other quirks specific to _zdoom_ (or _zdoomLE_). you need 2.8.1 or newer
+this WAD does not work with _qz_/_gz_/_zandronum_ as it relies on the old _zdoom_ software renderer and other quirks specific to _zdoom_ (or _zdoomLE_). you need 2.8.1 or newer
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: New + heavily altered doom2.wad assets
+*Base					: New + heavily altered `doom2.wad` assets
 *Build Time				: Months
 *Editor(s) used			: _Audacity_, _Doom Builder 2_, _FL Studio_, _Hexplorer_, _Notepad++_, _SLADE_, _Visual Studio_, _XWE_
 *Known Bugs				: ALL OF THEM

@@ -89,7 +89,7 @@ Textures & Flats:
 	- <Eriance> ( Demon Eclipse )
 	- <François-Xavier Delmotte> ( Ogro )
 	- <Huy Pham>
-	- Id Software ( Quake )
+	- <id Software> ( Quake )
 	- <Martin Howe> ( The Panels of Peril )
 	- <NiGHTMARE>
 	- <NokturnuS>
@@ -127,7 +127,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Bugs				: ???
 *Inspiration		: Doom II Map05 & Doom e1m5
 *Author comments	: \o/
-*Additional credits	: id & DoomFrance
+*Additional credits	: <id> & DoomFrance
 :-------------------------------------------------------------------------------
 *MAP04				: Entraxe
 *Author(s)			: <franckFRAG>
@@ -172,7 +172,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Author(s)			: <Oxyde>
 *Build time			: Well, it took me a little less than 3 hours to build this map entirely, but I'm lazy, and it took me two whole months to finally add monsters and items...
 *Editor(s) used		: Doom Buider 1.68; XWE
-*Music track		: DOOM - Remix from PRJDOOM.wad ; A somewhat punchy remix of the original music from Map05 of Doom 2 (D_DOOM). I really like this remake project, you should download it! ;)
+*Music track		: DOOM - Remix from `PRJDOOM.wad` ; A somewhat punchy remix of the original music from Map05 of Doom 2 (D_DOOM). I really like this remake project, you should download it! ;)
 *Bugs				: None that I am aware of that can break gameplay. OpenGL rendering engine like GLBoom or _Zandronum_ might be a bit buggy with vanilla effects.
 *Inspiration		: Doom 2 Map02 actually was a big part of inspiration for this map, as I felt it was a great theme for a second map. Greenwar 2 also helped a lot there; I had plenty of ideas but Doom 2 stock textures didn't really bring the feel I wanted to give this map. The combination of the two ended quite well.
 *Author comments	: Not much to say here except that I really like this one (and I never really like my maps, so there's something going on here). I think it's a good Map02 for a full-scale megawad and should be played like what it's meant to be: A simple and a bit linear level with no deadly traps... except for multiplayer.
@@ -235,7 +235,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Bugs				: ???
 *Inspiration		: e4m5
 *Author comments	: \o__
-*Additional credits	: id & DoomFrance
+*Additional credits	: <id> & DoomFrance
 :-------------------------------------------------------------------------------
 *MAP15				: Les comtes de la crypte
 *Author(s)			: <Jean "Jambon" Bon>
@@ -322,7 +322,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Music track		: Subway (E3L4) from Duke Nukem 3D Atomic Edition
 *Bugs				: None that I am aware of that can break gameplay.
 *Inspiration		: None, I just loaded Builder with the idea of making a map that uses marble type of textures.
-*Author comments	: I'm really happy of that one. I think the texturing isn't bad, and overall gameplay forces a slow progress while forcing the player to not let his guard down. I'm also happier because this map is my first ever with a hellish theme, and the first ever map of 3HA2! For the record, <JCD> and I were discussing about a new wad we could work on, we came to the conclusion that another episode of 3HA was a good idea. I started this map right after our little chat, made in less than 3 hours!
+*Author comments	: I'm really happy of that one. I think the texturing isn't bad, and overall gameplay forces a slow progress while forcing the player to not let his guard down. I'm also happier because this map is my first ever with a hellish theme, and the first ever map of 3HA2! For the record, <JCD> and I were discussing about a new WAD we could work on, we came to the conclusion that another episode of 3HA was a good idea. I started this map right after our little chat, made in less than 3 hours!
 *Additional credits	: <Xsnake>, <Fsn76> for the ressources of ZDECTFMP3 that I used in this map.
 :-------------------------------------------------------------------------------
 *MAP24				: Supplice Claustrophobe
@@ -333,7 +333,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Bugs				: ???
 *Inspiration		: Doom 3 - Hell
 *Author comments	: __o/
-*Additional credits	: id & DoomFrance
+*Additional credits	: <id> & DoomFrance
 :-------------------------------------------------------------------------------
 *MAP25				: Crise Infernale
 *Author(s)			: <franckFRAG>
@@ -361,7 +361,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *Music track		: Goin' down the fast way from Rise of the Triad.
 *Bugs				: None that I am aware of that can break gameplay.
 *Inspiration		: None, I just loaded Builder with the idea of making a map that uses marble type of textures, like Map22.
-*Author comments	: 3HA2 is a wad of firsts to me, because this map is my first ever map with a somewhat slaughterish type of gameplay. Tons of monsters, little space and little time... Enjoy!
+*Author comments	: 3HA2 is a WAD of firsts to me, because this map is my first ever map with a somewhat slaughterish type of gameplay. Tons of monsters, little space and little time... Enjoy!
 *Additional credits	: <Xsnake>, <Fsn76> for the ressources of ZDECTFMP3 that I used in this map.
 :-------------------------------------------------------------------------------
 *MAP28				: Gutter Grave

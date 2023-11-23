@@ -70,13 +70,13 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 						- Vargskelethor Vinesauce mushroom texture is by <Joel> (with slight edits by me to get it to look decent in the Doom palette).
 
 *Sprite Credits			: *Gate Master Sprites:
-						  id Software
-						  3DRealms
+						  <id Software>
+						  <3DRealms>
 						  <Jimmy91>
 						  <Jimmy>
 
 						- *Skull Turret Sprites:
-						  id Software
+						  <id Software>
 						  <Mechadon>
 
 						- *Bubble Ship Sprites:
@@ -86,7 +86,7 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 $KEY:D=URL:http://bmf.php5.cz/bmf03.php?filename=dragon.bmf&t=DRAGON
 *Graphic Credits		: <Mechadon>
 
-						- id Software
+						- <id Software>
 
 						- TITLEPIC city skyline comes from the game "Last Resort" by SNK.
 
@@ -131,7 +131,7 @@ $KEY:D=URL:http://bmf.php5.cz/bmf03.php?filename=dragon.bmf&t=DRAGON
 						- Castcall music - "D_MAP99.mid"
 						  (<Marc Pullen>, from Crucified Dreams)
 
-*Sound Credits			: id Software
+*Sound Credits			: <id Software>
 						- Monolith Productions
 						- <Brian Goble>
 

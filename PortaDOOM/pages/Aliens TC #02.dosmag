@@ -85,7 +85,7 @@ The derelict alien host ship. This level was made by Richard Love, hence is the 
 
 *Extra Levels:
 
-(E3M1)		: Originally part of E2M5 D-match wad, the wad was so huge it didn't run at a playable speed, let alone networked. I split it, and made this half a level on it's own. Play this on Ultra Violence to see what yer made of! It's probably the hardest level, even I find this one a challenge.
+(E3M1)		: Originally part of E2M5 D-match WAD, the WAD was so huge it didn't run at a playable speed, let alone networked. I split it, and made this half a level on it's own. Play this on Ultra Violence to see what yer made of! It's probably the hardest level, even I find this one a challenge.
 
 (E3M2)		: Level one with a slightly larger populace...\\Just a bit o' fun.
 
@@ -150,7 +150,7 @@ I ran out of graphics and Things when making this conversion, the result is mass
 - My 486 - For being so reliable, fast and having 24 bit graphics Vesa is an absolute <must>.
 - <Morpheus> - For sending me node builders, and giving me extra D/L time on his BBS.
 - <IKON Attendants> - For giving the beta a thorough play testing. (It's much better now) :-)
-- Id Software - Take a guess... a wild stab in the dark, you shouldn't miss at point blank.
+- <id Software> - Take a guess... a wild stab in the dark, you shouldn't miss at point blank.
 - <Terry Pratchett> - For giving DOOM exemption from the idea that VR should complement rather than replace reality.
 - <Brent Hall> - The Indigo marine in the two player demo.
 - The authors of all the editors, viewers, node builders, hacks, FAQ's, out there. 
@@ -158,9 +158,9 @@ I ran out of graphics and Things when making this conversion, the result is mass
 - To anyone even remotely connected with this, who would like a mention. (That was it. Oh, you blinked?)
 - Me, Again...
 
-BTW, if anyone is interested in what I'm doing next (The hope is that everyone says "WOW, this guy is a GENIUS!, I can't _wait_ to see what he does next... :-)" ), but if anyone _is_ interested, with the advent of Doom v1.666, which allows 64 instead of just 16 two-sided linedefs, it's time to make some M C Escher style rooms, probably as a part of a larger wad loosely based on the film "Labyrinth" (no, I have no idea how you spell it) where they can form rooms of Jareths castle.
+BTW, if anyone is interested in what I'm doing next (The hope is that everyone says "WOW, this guy is a GENIUS!, I can't _wait_ to see what he does next... :-)" ), but if anyone _is_ interested, with the advent of Doom v1.666, which allows 64 instead of just 16 two-sided linedefs, it's time to make some M C Escher style rooms, probably as a part of a larger WAD loosely based on the film "Labyrinth" (no, I have no idea how you spell it) where they can form rooms of Jareths castle.
 
-Another thing I would like to do is actually make a wad which uses the _original_ DOOM textures, they are incredible graphics and it seems such a shame to continually over-write them, and I'm sure I can use them in ways people never thought of before. (no offence all you level builders, but in my (not excessively vast) experience of PWAD levels, the true DOOM levels, especially episode one, still reign supreme in pure imagination). Especially when you compare them to the ever growing number of PWADs that are just based on a simplistic concept, ie when viewed in automap, the rooms form words, or the whole wad is so repetitive that you only need to see a tiny bit to be able to draw the whole thing - a circle divided into pie slices, four rooms that connect through the middle (popular idea in many D-match wads, the reason invariably being "equal starting points" (I prefer more varied hunting grounds). etc.
+Another thing I would like to do is actually make a WAD which uses the _original_ DOOM textures, they are incredible graphics and it seems such a shame to continually over-write them, and I'm sure I can use them in ways people never thought of before. (no offence all you level builders, but in my (not excessively vast) experience of PWAD levels, the true DOOM levels, especially episode one, still reign supreme in pure imagination). Especially when you compare them to the ever growing number of PWADs that are just based on a simplistic concept, ie when viewed in automap, the rooms form words, or the whole WAD is so repetitive that you only need to see a tiny bit to be able to draw the whole thing - a circle divided into pie slices, four rooms that connect through the middle (popular idea in many D-match wads, the reason invariably being "equal starting points" (I prefer more varied hunting grounds). etc.
 
 As you can see from reading this, I really like interesting locations and architecture, (rather than levels made up of rooms connected by doors and corridors, of which I am often guilty) Even with it's limits, DOOM can make fantastic worlds, places that have never existed, or ever will. The power to experience a world of your own creation is what I like about making DOOM locations, (and I'm getting better too :-), I know a few will disagree - there are many PWAD levels in which the effort has been put into game play, rather than environment, leaving default textures, not worrying about unpegging doorways etc. I hope ALIENS-TC has a high level of both elements, let me know what you thought. 
 

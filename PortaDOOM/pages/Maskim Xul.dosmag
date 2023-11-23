@@ -28,7 +28,7 @@ Tested With				: _PrBoom+_, _ZDoom_, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------
-- <Id Software> for `DOOM II`
+- <id Software> for `DOOM II`
 - <CodeImp> for _Doom Builder 2_
 - <Anotak> for _Doom Builder X_
 - <SirJuddington> for _SLADE3_
@@ -43,4 +43,4 @@ Tested With				: _PrBoom+_, _ZDoom_, _GZDoom_
 - <Urthar> for the texture warping tutorial
 - <Jimmy>, <Vita>, <Loveless>, <Tourniquet>, <rdwpa> and <John Suitepee> for playtesting and providing feedback
 - <MagnusBlitz>, <Altazimuth>, <Gez>, <SuperCupcakeTactics>, <Tourniquet> and <Galileo31dos01> for finding bugs
-- Other credits can be found in the CREDITS lump in the wad.\\Contains spoilers!
+- Other credits can be found in the CREDITS lump in the WAD.\\Contains spoilers!

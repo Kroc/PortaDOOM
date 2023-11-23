@@ -20,7 +20,7 @@ This mod was inspired by the fantastic Doom Roguelike made by <Kornel Kisielewic
 :-------------------------------------------------------------------------------
 In addition to standard Doom weapons, new weapons of various rarities appear throughout the game. Find a minigun or a missile launcher and deliver some major damage! Find a unique weapon, and you'll be grinning as you paste demons across the walls! The higher class of weapon spawn, the higher chance of exotic or unique weaponry.
 
-You'll have to make some hard choices, though, as you can only carry 6 weapons at any time. Advanced functions will tell you what keys you need to press, but the Zoom key (which has been renamed to Drop Item.) functions as a Drop key instead of a, well, zoom key. Drop DRLA specific items with it, so you can be sure to carry only what you want with you. Press Zoom twice to drop a weapon, as a precaution against accidentally dropping a valuable weapon. I'd like to thank <Wildweasel> for his ww-magop.wad and it's weapon mechanic, which I based this system off of.
+You'll have to make some hard choices, though, as you can only carry 6 weapons at any time. Advanced functions will tell you what keys you need to press, but the Zoom key (which has been renamed to Drop Item.) functions as a Drop key instead of a, well, zoom key. Drop DRLA specific items with it, so you can be sure to carry only what you want with you. Press Zoom twice to drop a weapon, as a precaution against accidentally dropping a valuable weapon. I'd like to thank <Wildweasel> for his `ww-magop.wad` and it's weapon mechanic, which I based this system off of.
 
 Most weapons that appear in this mod are based off the DoomRL weapons, but are not perfect reproductions. In fact, some weapons are entirely different altogether! Weapons also now have magazines, requiring reloading, and may also be slower or less accurate than standard Doom weapons. Don't worry, because there's more to weapons than just firing them!
 
@@ -467,15 +467,15 @@ The first two pages of the Armor/Class Hud show the stats of your currently worn
 
 And some companies for making a lot of stuff in the first place.
 
-- Monolith Productions
-- Lobotomy Software
-- 3d Realms
-- Epic Games
-- Banjo Software
-- Infinity Ward
-- Id Software
-- Valve Software
-- STUDIO RADI-8
+- <Monolith Productions>
+- <Lobotomy Software>
+- <3d Realms>
+- <Epic Games>
+- <Banjo Software>
+- <Infinity Ward>
+- <id Software>
+- <Valve Software>
+- <STUDIO RADI-8>
 
 <KINSIE> GAVE ME SOUNDS AND I CAN'T BE BOTHERED SORTING THEM
 I HAVE CODE TO UNFUCK AND MONSTERS TO EMIT

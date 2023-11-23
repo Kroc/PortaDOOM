@@ -15,17 +15,17 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le
 :-------------------------------------------------------------------------------
 
 $KEY:1=PAGE:#01
-Six episodes of classic `Doom` maps, originally candidates for last year's [1] `"Doom the Way Id Did"`, arranged in an episodic format.
+Six episodes of classic `Doom` maps, originally candidates for last year's [1] `"Doom the Way id Did"`, arranged in an episodic format.
 
 `DTWID` was a long but fruitful journey, with somewhere around a hundred map submissions in total. Given the strictness of the rules, most of the maps cut were not done so for reasons of quality. On their own they're quite solid maps, deserving their own showcase. This collection, while not 100% complete, contains the vast majority of submissions to the project.
 
-`Episodes 1-3` are an alternate take on the idea of `Doom the Way Id Did`, three sets of maps arranged to mimic <id>'s original episodic styles. Several maps in these sets were very close contenders to the main project, excluded only because of withdrawals or episode length limits. You may be hard-pressed to find a difference in quality!
+`Episodes 1-3` are an alternate take on the idea of `Doom the Way id Did`, three sets of maps arranged to mimic <id>'s original episodic styles. Several maps in these sets were very close contenders to the main project, excluded only because of withdrawals or episode length limits. You may be hard-pressed to find a difference in quality!
 
 `Episode 4` follows partially in the same vein, with several maps that mimic the style of <id>'s `"Thy Flesh Consumed"` and hell-themed levels filling out the rest of the roster.
 
 `Episode 5`, "Base Instinct", is a "bonus" episode of `E1`/`E2`-style maps, and can be thought of as an alternate take on the Phobos / Deimos story. The episode can be accessed in the main game menu with either _ZDoom_ or _Eternity_. For vanilla or other ports, running `DTWID-E5.wad` will load `E5`'s maps in place of `E1`'s.
 
-Episode 6, "The Final Gate", is a Z/Eternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate wad is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
+Episode 6, "The Final Gate", is a Z/Eternity-exclusive "Boss Rush" episode consisting of E*M8 candidates. No separate WAD is provided, as MAPINFO is required to make the boss exits work, though the individual maps are vanilla compatible for those willing to put the maps in the correct slots.
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Episode 6, "The Final Gate", is a Z/Eternity-exclusive "Boss Rush" episode consi
 *Random Testing:
 	<Esselfortium> (v1 playtesting)
 	<rhinoduck> (tons o' fixes)
-	All the fine folk who played the wad on _ZDaemon_ TNS. Whoop!
+	All the fine folk who played the WAD on _ZDaemon_ TNS. Whoop!
 
 *Map Credits:
 

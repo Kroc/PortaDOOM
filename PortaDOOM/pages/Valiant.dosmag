@@ -16,7 +16,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: Maps and _DeHackEd_ new from scratch; texture wad based on `CC4-tex`
+*Base					: Maps and _DeHackEd_ new from scratch; texture WAD based on `CC4-tex`
 *Build Time				: Three years, off and on
 *Editor(s) used			: _Doom Builder_, _SLADE_, _WhackEd_, _GIMP_, _Notepad++_
 *Known Bugs				: There is a graphical glitch with the final boss that occurs only in non-_DECORATE_ based ports, due to certain hard coded behaviours.

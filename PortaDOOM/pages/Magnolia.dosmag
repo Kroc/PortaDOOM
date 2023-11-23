@@ -25,7 +25,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/100784
 *A:* They behave identically to normal cybs, but have 1/4th the hp.
 
 *Q: What's with all the barons?*
-*A:* They don't count towards kill % in this wad. If you find this distasteful then play on skill 2 where it's less of an issue.
+*A:* They don't count towards kill % in this WAD. If you find this distasteful then play on skill 2 where it's less of an issue.
 
 *Q: Where do I go??*
 *A:* Follow your heart.
@@ -34,7 +34,7 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/100784
 :-------------------------------------------------------------------------------
 - <GoS> for help with the palette, sprites, etc.
 - <NiGHTMARE> for the "Hellish texture pack"
-- <FuzzballFox> for the textures in `"stonecrap.wad"`
+- <FuzzballFox> for the textures in `stonecrap.wad`
 - <40oz> for a few textures from `mutiny.wad`
 - The 5000 people who are credited in `cc4-tex` and its progeny
 - all midi are original compositions
