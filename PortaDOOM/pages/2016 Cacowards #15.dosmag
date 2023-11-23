@@ -1,13 +1,13 @@
 $THEME=BLACK
 $TITLE=Multiplayer Awards
-$KEY:1=GOTO:Aeon Deathmatch
-$KEY:2=GOTO:32in24-16
+$KEY:1=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
+$KEY:2=URL:https://www.doomworld.com/forum/topic/91306
 
 ^C:2016 CACOWARDS :: MULTIPLAYER AWARDS
 
 :-------------------------------------------------------------------------------
 
-:[1] `AeonDM` - <Mechanix Union>
+:[1: AeonDM] - <Mechanix Union>
 :===============================================================================
 `AeonDM` is the latest project of the <Mechanix Union>, and these guys got just so damn good at the whole process of assembling quality MP maps that I had to double check so that my quips about them bagging another _Cacoward_ wouldn't be the same as last year.
 
@@ -19,7 +19,7 @@ This optimistic attitude stems from <MXU>'s proper development cycle that puts l
 
 ^R- <dew>
 
-:[2] `32in24-16` - <YEDS gang>
+:[2: 32in24-16] - <YEDS gang>
 :===============================================================================
 In the 16th episode, the <YEDS gang> learns to overcome unexpected adversities with the power of teamwork.
 

@@ -3,7 +3,7 @@ $KEY:P=SHELL:launcher.exe "wads\onesies\supplydp\play-supplydp.ini"
 $KEY:T=SHELL:wads\onesies\supplydp\SupplyDp.txt
 $KEY:W=URL:https://www.doomworld.com/forum/topic/102152
 
-:UAC Invasion: The Supply Depot						* Cacoward 2018 Winner! *
+:UAC Invasion: The Supply Depot						* 2018 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------

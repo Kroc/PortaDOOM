@@ -12,19 +12,19 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/aaliens
 :Requires : *boom		Includes : *+Music +Sounds +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-Ancient Aliens is a megawad featuring 32 colorful, action-packed maps for Boom compatible ports.
+`Ancient Aliens` is a megawad featuring 32 colorful, action-packed maps for _Boom_ compatible ports.
 
-Go on a journey to discover the truth about the enigmatic origins of human civilization... 
+Go on a journey to discover the truth about the enigmatic origins of human civilization...
 
 I'm not saying it was aliens, but... the truth is out there.
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: Texture wad based on 32in24-14 resource
+*Base					: Texture wad based on `32in24-14` resource
 *Build Time				: 15 months
 *Editor(s) used			: _Doom Builder 2_, _GZDoom Builder_, _SLADE_, _WhackEd_, _GIMP_, _Notepad++_
 *Known Bugs				: None
-*May Not Run With...	: Gameplay mods that change the palette or don't use .png graphics. If you encounter garbled texture graphics while using a mod try changing the load order.
+*May Not Run With...	: Gameplay mods that change the palette or don't use .png graphics. If you encounter garbled texture graphics while using a mod try changing the load order
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -84,13 +84,13 @@ I'm not saying it was aliens, but... the truth is out there.
 						  <Tarnsman>
 						  <lupinx-Kassman>
 						  <skillsaw>
-						  GothicDM Team
-						  Eternal Doom Team
-						  id Software
-						  Ion Storm
-						  Raven Software
-						  Rogue Entertainment
-						  Valve Software
+						  `GothicDM` Team
+						  `Eternal Doom` Team
+						  <id Software>
+						  <Ion Storm>
+						  <Raven Software>
+						  <Rogue Entertainment>
+						  <Valve Software>
 
 *Sprite Credits			: <Eriance>
 						  <Virtue>
@@ -98,14 +98,14 @@ I'm not saying it was aliens, but... the truth is out there.
 						  <CeeJay>
 						  <Tormentor667>
 						  <skillsaw>
-						  3d Realms
+						  <3d Realms>
 
 *Fonts					: <Mechadon>
 
 *Status Bar Font		: <AgentSpork>
 
 *Palette				: <skillsaw>
-						  (purple range is from BTSX)
+						  (purple range is from `BTSX`)
 
 *ENDOOM					: <Altazimuth>
 
@@ -119,9 +119,9 @@ I'm not saying it was aliens, but... the truth is out there.
 *Screens, Status Bar	: <skillsaw>
 
 *Sound Credits			: <Eriance>
-						  Raven Software
-						  Rogue Entertainment
-						  http://www.freesfx.co.uk 
+						  <Raven Software>
+						  <Rogue Entertainment>
+						  <http://www.freesfx.co.uk>
 
 :Map List
 :-------------------------------------------------------------------------------
@@ -196,8 +196,8 @@ I'm not saying it was aliens, but... the truth is out there.
 - Title - *"Welcome to Egypt"*
 - Text screen - *"Martian Blues"*
 
-The full Ancient Aliens OST is available on
+The full `Ancient Aliens` OST is available on
 <Stewboy>'s bandcamp:
 
-$KEY:B=URL:https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost 
+$KEY:B=URL:https://stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost
 [B: stuartrynn.bandcamp.com/album/doom-ancient-aliens-ost]

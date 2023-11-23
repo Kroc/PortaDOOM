@@ -19,6 +19,7 @@ $KEY:F=GOTO:Index - F
 $KEY:G=GOTO:Index - G
 $KEY:H=GOTO:Index - H
 $KEY:I=GOTO:Index - I
+$KEY:J=GOTO:Index - J
 $KEY:L=GOTO:Index - L
 $KEY:M=GOTO:Index - M
 $KEY:N=GOTO:Index - N
@@ -147,6 +148,9 @@ $KEY:W=GOTO:Index - W
 	- *Innocence X										Innocence X Series
 	- *Innocence X2										Innocence X Series
 	- *InstaDoom
+
+   [J]
+    - *Japanese Community Project
 
    [L]
 	- *Legacy of Heroes

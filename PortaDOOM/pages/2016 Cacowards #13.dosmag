@@ -1,15 +1,16 @@
 $THEME=BLACK
 $TITLE=Top 10 pt.X
-$KEY:0=GOTO:Blade of Agony
+$KEY:0=URL:https://boa.realm667.com/
 
 ^C:2016 CACOWARDS :: TOP 10 pt.X
 
 :-------------------------------------------------------------------------------
 
-:[0] `WolfenDoom: Blade of Agony Ep.1` - <Daniel "Tormentor667" Gimmer> et al
+:[0: WolfenDoom: Blade of Agony Ep.1] - <Daniel "Tormentor667" Gimmer> et al
 :===============================================================================
+! *NOTE:* Sorry, `Blade of Agony` could not be included in _PortaDOOM_ due to it being 1GB in size! Download it from the website by pressing [0]
 
-On this, the thirteenth year of these awards, I have awakened from my slumber to ensure greatness is, once again, recognized. My hand-selected 'A' team of Cacoward replacements seriously contemplated snubbing `Blade of Agony: Episode 1`, arguing it had "dull and uninspiring combat" with an aesthetic "all over the place, mixing models and `Wolfenstein 3D` sprites". Let me tell you why all of them were wrong.
+On this, the thirteenth year of these awards, I have awakened from my slumber to ensure greatness is, once again, recognized. My hand-selected 'A' team of _Cacoward_ replacements seriously contemplated snubbing `Blade of Agony: Episode 1`, arguing it had "dull and uninspiring combat" with an aesthetic "all over the place, mixing models and `Wolfenstein 3D` sprites". Let me tell you why all of them were wrong.
 
 One of the biggest criticisms of `Blade of Agony` was the gameplay. Does `Blade of Agony` have dull combat? Probably?... but that opinion comes from a community that has spent the better part of two decades dissecting the core gameplay of `DOOM` and distilling it into perfect mapsets like `BTSX` and `Ancient Aliens`. I'm not ready to claim we've reached "peak `Doom`", and I believe the community's best work still lies ahead, but when your friend asks, with utmost surprise, "people are still modding `DOOM`?" and wants to see what people are creating, you ultimately have to show them projects like `Blade of Agony`.
 
@@ -20,7 +21,7 @@ Right from the start it's clear; this isn't `DOOM`, and that's not a bad thing. 
 ^R- <Scuba Steve>
 
 :===============================================================================
-*[0] View WAD Page
+*[0: View Website]
 :-------------------------------------------------------------------------------
 $KEY:#=URL:https://www.doomworld.com/23years/best3.php
 :source [#: www.doomworld.com/23years/best3.php]

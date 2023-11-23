@@ -24,7 +24,7 @@ pages\2016 Cacowards #??.dosmag
 # page 12:
 @files\wads\community\jpcp\include.lst
 # page 13:
-pages\Blade of Agony.dosmag
+# (blade of agony too large to be included)
 # page 14:
 @files\wads\onesies\ma_wrp\include.lst
 @files\wads\community\thtthren\include.lst
@@ -32,9 +32,6 @@ pages\Blade of Agony.dosmag
 @files\wads\conversions\strange_aeons\include.lst
 @files\wads\megawads\echelon\include.lst
 @files\wads\conversions\ShadowOfTheWoolBall\include.lst
-# page 15:
-@files\wads\multiplayer\aeondm\include.lst
-@files\wads\multiplayer\32in24-16\include.lst
 # page 16:
 @files\mods\Doom4Doom\include.lst
 @files\wads\community\DTWiD\include.lst

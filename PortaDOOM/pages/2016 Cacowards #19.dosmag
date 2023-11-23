@@ -37,8 +37,8 @@ $KEY:8=GOTO:Alpha Accident - Terra Nova
 $KEY:9=GOTO:Japanese Community Project
 - [9] `Japanese Community Project`					Various
 
-$KEY:X=GOTO:Blade of Agony
-- [X] `WolfenDoom: Blade of Agony Ep.1`				<Daniel Gimmer> et al
+$KEY:X=URL:https://boa.realm667.com/
+- [X: WolfenDoom: Blade of Agony Ep.1]				<Daniel Gimmer> et al
 
 :RUNNERS UP:
 
@@ -62,11 +62,11 @@ $KEY:G=GOTO:Shadow of the Wool Ball
 
 :MULTIPLAYER AWARDS:
 
-$KEY:H=GOTO:Aeon Deathmatch
-- [H] `AeonDM`										<Mechanix Union>
+$KEY:H=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/megawads/aeondm
+- [H: AeonDM]										<Mechanix Union>
 
-$KEY:I=GOTO:32in24-16
-- [I] `32in24-16`									<YEDS gang>
+$KEY:I=URL:https://www.doomworld.com/forum/topic/91306
+- [I: 32in24-16]									<YEDS gang>
 
 :BEST GAMEPLAY MOD:
 

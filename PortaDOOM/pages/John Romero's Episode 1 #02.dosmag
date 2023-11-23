@@ -13,13 +13,13 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
 :Requires : *no-limit	Includes : *None
 :-------------------------------------------------------------------------------
 
-With the Toxin Refinery in the rear-view, you make your way to Phobos Mission Control where the computers crunching the data from the Phobos Anomaly are located. You need to use them to gain access to the Phobos Lab, but remember hearing that the computers were tied into all areas of the installation and that you never knew when the environment around you would change. You need to keep your eyes alert to all movement - this place is not what it seems...
+With the `"Toxin Refinery"` in the rear-view, you make your way to `"Phobos Mission Control"` where the computers crunching the data from the `"Phobos Anomaly"` are located. You need to use them to gain access to the `"Phobos Lab"`, but remember hearing that the computers were tied into all areas of the installation and that you never knew when the environment around you would change. You need to keep your eyes alert to all movement -- this place is not what it seems...
 
 :Credits
 :-------------------------------------------------------------------------------
 <Tom Hall> originally created the framework for `E1M4`. It makes sense that if I was creating an entire `E1` of just my work, this would be the level I would remake.
 
 - <John C.>, <Adrian C.>, <Tom H.>, <Kevin C.>, <Sandy P.>, <Dave T.>
-- <Pascal "CodeImp" vd Heiden> for Doom Builder
+- <Pascal "CodeImp" vd Heiden> for _Doom Builder_
 - The _Doomworld_ Community
-- <Linguica>, <Matthias Worch> and <Ian Dunbar> for Testing 
+- <Linguica>, <Matthias Worch> and <Ian Dunbar> for Testing

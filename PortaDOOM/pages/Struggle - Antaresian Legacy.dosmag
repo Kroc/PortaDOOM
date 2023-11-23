@@ -3,7 +3,7 @@ $KEY:P=SHELL:launcher.exe "wads\megawads\strg\play-strg.ini"
 $KEY:T=SHELL:wads\megawads\strg\STRG.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/strg
 
-:Struggle - Antaresian Legacy						* Cacoward 2018 Winner! *
+:Struggle - Antaresian Legacy						* 2018 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------

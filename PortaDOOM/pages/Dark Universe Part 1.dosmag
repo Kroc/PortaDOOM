@@ -3,7 +3,7 @@ $KEY:P=SHELL:launcher.exe "wads\episodes\dupart1\play-dupart1.ini"
 $KEY:T=SHELL:wads\episodes\dupart1\DUpart1.txt
 $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dupart1
 
-:Dark Universe, Part 1								* Cacoward 2018 Winner! *
+:Dark Universe, Part 1								* 2018 Cacoward Winner! *
 :===============================================================================
 *[P] Play						*[T] .txt [W] Website
 :-------------------------------------------------------------------------------

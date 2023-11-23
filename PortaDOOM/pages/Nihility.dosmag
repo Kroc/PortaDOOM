@@ -11,16 +11,16 @@ $KEY:W=URL:https://www.doomworld.com/forum/topic/85591
 :Requires : *vanilla	Includes : *+Sounds +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Hello everybody! I am <Years> and I have made a vanilla E2 replacement/PC for `Ultimate DOOM`. It's called `Nihility` and I'll hopefully one day expand it into a full 36-level megawad. It's an old-school style wad with some new and replaced monsters and weapons, inspired by the Alphas/Beta but also old-school 90's partial conversions aka `Strain`. If you like `DTWID`, `No End In Sight`, <Monti>'s `favillesco` and `erkatane` episodes, and `Doom: The Lost Episode` then you might enjoy this. If you don't like abstract, explorational and moody maps (and `graytall`) you should probably steer clear.
+Hello everybody! I am <Years> and I have made a vanilla `E2` replacement/PC for `Ultimate DOOM`. It's called `Nihility` and I'll hopefully one day expand it into a full 36-level megawad. It's an old-school style wad with some new and replaced monsters and weapons, inspired by the Alphas/Beta but also old-school 90's partial conversions aka `Strain`. If you like `DTWID`, `No End In Sight`, <Monti>'s `favillesco` and `erkatane` episodes, and `Doom: The Lost Episode` then you might enjoy this. If you don't like abstract, explorational and moody maps (and graytall) you should probably steer clear.
 
 *Features:
 
 - Designed and tested in and for Vanilla/_Chocolate Doom_ (specifically -complevel 3). If you use _Chocolate Doom_ don't forget to turn on unlimited save file sizes due to the size of some of the maps
-- DEH file mandatory!
-- `Episode 2` replacement: "Infinite Teeth", Hence a `E2` inspired theme
+- _DEH_ file mandatory!
+- `Episode 2` replacement: `"Infinite Teeth"`, Hence a `E2` inspired theme
 - 9 Levels, some quite large (8 + 1 secret)
 - medium-high difficulty (different difficulty levels are provided)
-- New and replaced monsters added via DEH, including baron variants, the rapid-fire imp, the wraith and kamikaze zombies.
+- New and replaced monsters added via _DEH_, including baron variants, the rapid-fire imp, the wraith and kamikaze zombies.
 - Weapons slightly modified: Pistol replaced with the Alpha 0.4 rifle which is faster and perfectly accurate. Bayonet replaces fist, also slightly faster (so it is easier to time). Bullet capacity increased to 600. New textures for nearly all the other weapons, but generally unchanged behaviour
 - no music (yet...), instead I rely ambient sounds and drones (The alphas never had music...)
 - new graphics, textures, decorations etc.
@@ -37,7 +37,7 @@ Hello everybody! I am <Years> and I have made a vanilla E2 replacement/PC for `U
 - Rifle flash sprites - <Uboa>
 - `Alpha` and `Beta DOOM` for sprites
 - Sky - recoloured sky from <Romero>'s early `DOOM` material dump.
-- Text: `Doom Writer`
+- Text: _Doom Writer_
 - Ambience: `Blood`, `Quake`
 - New sound effects: me
 - If I forgot anything or anyone, let me know!

@@ -1,0 +1,8 @@
+$THEME=BLUE
+$KEY:A=GOTO:Japanese Community Project
+
+^C:INDEX :: J
+
+:-------------------------------------------------------------------------------
+
+- [A] *Japanese Community Project						Community Projects
