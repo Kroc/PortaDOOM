@@ -12,7 +12,7 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
 :Requires : *no-limit	Includes : *+Patches +Demos
 :-------------------------------------------------------------------------------
 
-A episode 2 replacement for the `Ultimate DOOM`, set in the location where `Concerned`'s E2 took place. The development of this WAD however was entirely from scratch, there are some resembles to the original maps here and there and some hold similar themes to their counterparts. The gameplay is fairly challenging on UV, especially the second half of the WAD.
+An `Episode 2` replacement for the `Ultimate DOOM`, set in the location where `Concerned`'s E2 took place. The development of this WAD however was entirely from scratch, there are some resembles to the original maps here and there and some hold similar themes to their counterparts. The gameplay is fairly challenging on UV, especially the second half of the WAD.
 
 *Story:
 
@@ -20,57 +20,57 @@ A week had followed since a single hero had breached through a portal into the r
 
 :Map List:
 :-------------------------------------------------------------------------------
-*E2M1 - Flesh Start
-(Music used - `Into <Sandy>'s City` by <Robert Prince>)
+*E2M1: "Flesh Start"
+(Music used - "Into <Sandy>'s City" by <Robert Prince>)
 
-This one falls into the vague resembles of the original E2M1 from `Concerned`, visually however this has a solid theme of stone2 mixed with some occasional browns and corruption. 
+This one falls into the vague resembles of the original E2M1 from `Concerned`, visually however this has a solid theme of stone2 mixed with some occasional browns and corruption.
 
-*E2M2 - Logistics Complex
-(Music used -  `Death's Bells` from `TNT Evilution`)
+*E2M2: "Logistics Complex"
+(Music used - "Death's Bells" from `TNT Evilution`)
 
-This was made from Scratch, the visual theme is similar to E2M1 and some of the themes from the original can be found here, including a few crates in the red key area.
+This was made from Scratch, the visual theme is similar to `E2M1` and some of the themes from the original can be found here, including a few crates in the red key area.
 
-*E2M3 - Comm Centre
-(Music used - `Cold Subtleness` from `TNT Evilution`)
+*E2M3: "Comm Centre"
+(Music used - "Cold Subtleness" from `TNT Evilution`)
 
-A new map from scratch, I kept to the theme of the previous two, though the map has a dual personality, a fairly clean but dark E1 tech section at the start and a more corrupt and brown theme in the second half. The flashing red lights I really liked and tried to present them as transmitters, I don't know it actually looks believable or not, They make appearances in maps further on.
+A new map from scratch, I kept to the theme of the previous two, though the map has a dual personality, a fairly clean but dark `E1` tech section at the start and a more corrupt and brown theme in the second half. The flashing red lights I really liked and tried to present them as transmitters, I don't know it actually looks believable or not, They make appearances in maps further on.
 
-*E2M4
-(Music used - `Mist Ache` from `Rise of the Triad`)
+*E2M4:
+(Music used - "Mist Ache" from `Rise of the Triad`)
 
 The start will be very familiar as it is based off the start area from Infirmary from `Concerned`. The rest takes on similar themes to the same said map, but expanded and has a much higher level of interconnectivity as well as a degree of non-linearity. I really wanted to get a map where marble textures dominated and this is it.
 
-*E2M5
-(Music used - `Mystic's Glance` by <David Shaw>, `Requiem` Map05)
+*E2M5:
+(Music used - "Mystic's Glance" by <David Shaw>, `Requiem` Map05)
 
-This map was made from scratch, the idea from the E2M5 of `Concerned` was scrapped and replaced with a fairly compact and violent E2 styled corrupt tech base. The hunt for the secret exit brings its rewards, but also some hairy moments.
+This map was made from scratch, the idea from the E2M5 of `Concerned` was scrapped and replaced with a fairly compact and violent `E2` styled corrupt tech base. The hunt for the secret exit brings its rewards, but also some hairy moments.
 
-*E2M6 - Aqueduct of Agony
-(Music used - `Sinister` by <Robert Prince>, default track)
+*E2M6: "Aqueduct of Agony"
+(Music used - "Sinister" by <Robert Prince>, default track)
 
 I really liked the theme of E2M6 from `Concerned`, but the map layout sucked, so here is a map with a even higher percentage of damaging floor, a layout which tends to favour roaming monsters and throw a cyber right at the start. Have fun and don't dawdle, I didn't place that many rad-suits :P
 
-*E2M7 - Core Processor
-(Music Used - `Horizon` from `TNT Evilution`)
+*E2M7: "Core Processor"
+(Music Used - "Horizon" from `TNT Evilution`)
 
-So it typical tradition, here is a huge map in the Map07 slot. The start to feel familiar but has been expanded to give a more airy feel. Expect to be pressurised from start to finish, but hopefully this isn't too overwhelming and the majority of the combat is more incidental here, a difference that can be seen across most of this set in comparison to Concerned.
+So it typical tradition, here is a huge map in the Map07 slot. The start to feel familiar but has been expanded to give a more airy feel. Expect to be pressurised from start to finish, but hopefully this isn't too overwhelming and the majority of the combat is more incidental here, a difference that can be seen across most of this set in comparison to `Concerned`.
 
-*E2M8 - Ground Zero
-(Music used - `Stigmatism` by <Primeval>)
+*E2M8: "Ground Zero"
+(Music used - "Stigmatism" by <Primeval>)
 
-I didn't want to make a map that was too long, or as short as the original, so here is a showdown deep underground where the hell armys are first attacking the base. I just hope the madness isn't too much here.
+I didn't want to make a map that was too long, or as short as the original, so here is a showdown deep underground where the hell armies are first attacking the base. I just hope the madness isn't too much here.
 
-*E2M9 - Descent into Darkness
-(Music Used - `Adagio for strings` from `Rise of the Triad`)
+*E2M9: "Descent into Darkness"
+(Music Used - "Adagio for strings" from `Rise of the Triad`)
 
-The initial design for this one was made when the DWMC played `Hell Revealed`, so here is an `Ultimate DOOM` version. The darkness theme from E2M9 of `Concerned` has stayed though here.
+The initial design for this one was made when the _DWMC_ played `Hell Revealed`, so here is an `Ultimate DOOM` version. The darkness theme from E2M9 of `Concerned` has stayed though here.
 
 :Construction:
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 1 year (A hiatus of a few months occurred during the summer)
 *Editor(s) used			: _Doom builder 2_ and _SLADE3_
-*Known Bugs				: Not any I have found. There are likely to be visplane overflows in Vanilla.
+*Known Bugs				: Not any I have found. There are likely to be visplane overflows in Vanilla
 *May Not Run With		: Vanilla
 *Tested With			: _Pr-boom plus_ V2.5.1.4
 

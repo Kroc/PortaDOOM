@@ -119,7 +119,7 @@ Below are some notes on the history of each map, along with each map's music cre
 *MAP01: Sewer Surfing
 
 Music: "Chasing Gang, Need 4 Speed [Stage 5 Highway]" from `Armed Police Batrider`
-Alt midi music: ??? from `Descent`
+Alt MIDI music: ??? from `Descent`
 
 This map was the last map created for v1 of `Paradise`. After player feedback on the v1 iteration, I reworked this map to be a more gentle introduction to the episode, while still being able to retain most of the map structure and pathing. I intended to completely replace this map with a new one for v2, but as I was nearing completion on the replacement-to-be, I decided that a simple rework of the existing MAP01 would serve as a better opener for Paradise than the new map.
 

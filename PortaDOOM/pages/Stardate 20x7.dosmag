@@ -31,7 +31,7 @@ Explore a mostly-purple world of villages, space bases, temples, and beyond!! Th
 :-------------------------------------------------------------------------------
 - <Esselfortium>: Sexy base textures
 - <40oz>: For some recolored `UAC Ultra` assets
-- <NiGHTMARE>: Resources from his `"Hellish texture pack"`
+- <NiGHTMARE>: Resources from his `Hellish texture pack`
 - Here's the obligatory list that accompanies any `cc4-tex` assets:
 
   <NiGHTMARE> / <Espi> / <Eriance> / <Fredrik Johansson> / <Janitor> / <DaGGeR> / <Ola Bjorling> / <Vader> / <XDelusion> / <esselfortium> / <RottKing> / <Nuxius> / <Afterglow> / <AgentSpork> / <Enjay> / <Huy Pham> / <SargeBaldy> / <Tormentor667> / The `GothicDM` Team / The `Requiem` Team / The `Eternal Doom` Team / <id Software> / <Raven Software> / <Rogue Entertainment> / <3D Realms Entertainment> / <LucasArts> / <H.R.Giger> (converted by <Stephen Renton>)
@@ -48,59 +48,59 @@ Explore a mostly-purple world of villages, space bases, temples, and beyond!! Th
 
 :Map List
 :===============================================================================
-$KEY:L=URL:http://www.ultimate-guitar.com/forum/showthread.php?t=1615822
 :MAP01	: Sun/Moon/Stars
 :-------------------------------------------------------------------------------
-*Music	: `"The Journey"` by <Kafiolet>, rearranged by <Ribbiks>.
-		  This midi is a frankenstein rearrangement of an interesting composition called `"The Journey"` by the user <Kafiolet> over on Ultimate Guitar forums. I edited it without his permission, I'm a bad person, my apologies. As consolation here's a [L: link to the forum thread] where I ripped the song.
+$KEY:L=URL:http://www.ultimate-guitar.com/forum/showthread.php?t=1615822
+*Music	: "The Journey" by <Kafiolet>, rearranged by <Ribbiks>.
+		  This MIDI is a frankenstein rearrangement of an interesting composition called "The Journey" by the user <Kafiolet> over on Ultimate Guitar forums. I edited it without his permission, I'm a bad person, my apologies. As consolation here's a [L: link to the forum thread] where I ripped the song.
 *About	: A leisurely camping getaway with your heterosexual life-partner Chris is abruptly cut short by a gaggle of imps. When you come to you find the town isn't quite how you remember it...
 :-------------------------------------------------------------------------------
 :MAP02	: Eastern Sun
 :-------------------------------------------------------------------------------
-*Music	: `"Eastern Sun"` by <SeraphSnake>
+*Music	: "Eastern Sun" by <SeraphSnake>
 *About	: Your adventure lands you in a cavernous grassy complex ornamented with mysterious bits of technological riffraff. There must be something going on under the surface...
 :-------------------------------------------------------------------------------
 :MAP03	: Amethyst III
 :-------------------------------------------------------------------------------
-*Music	: `"Funky Stars"` by <Quasar of Sanxion>, sequenced by <James Paddock>
+*Music	: "Funky Stars" by <Quasar of Sanxion>, sequenced by <James Paddock>
 *About	: Launched into space! Specifically, to the prequel of `"Amethyst 4: In Space"` and perhaps `"Amethyst: In The Hood"` later down the line. It's a cramped and tightly interwoven space station, chock full of bring-your-cpu-to-a-crawl decor. A brief affair.
 :-------------------------------------------------------------------------------
 :MAP04	: Velvet Blood Mission
 :-------------------------------------------------------------------------------
-*Music	: `"Psylocke Theme"` from `X-men Mutant Apocalypse`, rearranged by <Ribbiks>
+*Music	: "Psylocke Theme" from `X-men Mutant Apocalypse`, rearranged by <Ribbiks>
 *About	: Welcome to the blood bank, Senator Trent.
 :-------------------------------------------------------------------------------
 :MAP05	: Sphinx Rising
 :-------------------------------------------------------------------------------
-*Music	: `"Arcadia, Arcadia Demade"` by <John Weekly> (<PRIMEVAL>)
+*Music	: "Arcadia, Arcadia Demade" by <John Weekly> (<PRIMEVAL>)
 *About	: An ominous tech-complex ensconced in the violet core of an alien planet, where the rocks are bleeding...
 :-------------------------------------------------------------------------------
 :MAP06	: The Other Side
 :-------------------------------------------------------------------------------
-*Music	: `"Ivor Tower"` from the game `"Secret of Evermore"`
+*Music	: "Ivor Tower" from the game `Secret of Evermore`
 *About	: You seemed to have slipped into another dimension entirely. Mysterious techno-ruins adrift in an ocean of Ribena. Proto-slaughter set-pieces aplenty, you know the drill...
 :-------------------------------------------------------------------------------
 :MAP07	: Lotus Keep
 :-------------------------------------------------------------------------------
-*Music	: `"Collosia, Chamber 2"` from the game `"Secret of Evermore"`
+*Music	: "Collosia, Chamber 2" from the game `Secret of Evermore`
 *About	: A cramped and prickly sequence of hair-triggered skirmishes stuffed into the windy innards of a dark alien temple.
 :-------------------------------------------------------------------------------
 :MAP08	: Grand Ballroom
 :-------------------------------------------------------------------------------
-*Music	: Midi rendition of `"Abyss"` by <DJ Taka>, rearranged by <Ribbiks>
+*Music	: MIDI rendition of "Abyss" by <DJ Taka>, rearranged by <Ribbiks>
 *About	: A hardcore frolic in an expansive pandimensional dance hall.
 :-------------------------------------------------------------------------------
 :MAP09	: Do You Believe?
 :-------------------------------------------------------------------------------
-*Music	: `"It's in C-minor too?"` by <Ribbiks>
+*Music	: "It's in C-minor too?" by <Ribbiks>
 *About	: You've reached the HEART of it all. The usual suspects line the walls of this twisted menagerie of slaughter set-pieces and nonsensical puzzles. Do you believe?
 :-------------------------------------------------------------------------------
 :MAP31	: Hopscotch
 :-------------------------------------------------------------------------------
-*Music	: `"Ocean"` from the game `Vectorman`
+*Music	: "Ocean" from the game `Vectorman`
 *About	: The files are inside the computer.
 :-------------------------------------------------------------------------------
 :MAP32	: Issai Perfect
 :-------------------------------------------------------------------------------
-*Music	: `"Think About Me"` - Artful Dodger /\\`"Manoria Cathedral"` from the game `Crono Trigger`
+*Music	: "Think About Me" - Artful Dodger /\\"Manoria Cathedral" from the game `Crono Trigger`
 *About	: A brief hunk of slaughter. A partial reinvisioning of an old map of mine called `cg.wad` that probably no one has played.

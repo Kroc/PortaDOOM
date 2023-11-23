@@ -16,10 +16,10 @@ A small mapset containing 11 thematically and visually diverse maps.
 Bit challenging, but hope you have fun!
 
 I would love to receive some hard spanking for whatever bugs, errors and mistakes in maps, as well as critique from gameplay/visual perspective.
-Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify me. The conveyors unfortunately don't function properly on _ZDaemon_, so have that in mind.
+Maps should be _Boom_-compatible (complv 9), but if issues arise, please notify me. The conveyors unfortunately don't function properly on _ZDaemon_, so have that in mind.
 
 1.01 - quick fixes
-1.10 - alterations to maps 04 and 06.
+1.10 - alterations to maps 04 and 06
 
 :Construction
 :-------------------------------------------------------------------------------
@@ -31,23 +31,23 @@ Maps should be Boom-compatible ( complv 9 ), but if issues arise, please notify 
 
 :Credits
 :-------------------------------------------------------------------------------
-- cc4tex, compiled by <Esselfortium>. Some custom textures added.
+- `cc4tex`, compiled by <Esselfortium>. Some custom textures added
 
 *Music:
 
-- Title: The Shade by <Cyber Rainforce>
-- Intermission: Storm by <Cyber Rainforce>
-- 01: Jazz Castle ( Jazz Jackrabbit 2 ), sequenced by <MaliceX>
-- 02: Volcano ( Megaman Zero 3 ), sequenced by <King Meteor>.
-- 03: Submerged Memory from Mega Man Zero 3  ( midi by <King Meteor> )
-- 04: Sorrow by <Cyber Rainforce>
-- 05: Top Floor ( Castlevania: Aria Of Sorrow ), sequenced by <Jorge D. Fuentes>
-- 06: Lower Brinstar - MGS remix ( Super Metroid ), sequenced by <King Meteor>
-- 07: Battle ( Parasite Eve ), sequenced by ???
-- 08: Nuts N Bolts from Donkey Kong Country 3 ( midi by <JILost> )
-- 09: Hi-Depth Elevator by <Cyber Rainforce>
-- 10: From Shadowgate (NES), midi remix by <John Kuzma> (<Wraith Arranged>), additional changes by <Benjogami>
-- 11: MAP15 theme remix from Icarus: Alien Vanguard
+- Title: "The Shade" by <Cyber Rainforce>
+- Intermission: "Storm" by <Cyber Rainforce>
+- 01: "Jazz Castle" (`Jazz Jackrabbit 2`), sequenced by <MaliceX>
+- 02: "Volcano" (`Megaman Zero 3`), sequenced by <King Meteor>.
+- 03: "Submerged Memory" from `Mega Man Zero 3` (MIDI by <King Meteor>)
+- 04: "Sorrow" by <Cyber Rainforce>
+- 05: "Top Floor" (`Castlevania: Aria Of Sorrow`), sequenced by <Jorge D. Fuentes>
+- 06: "Lower Brinstar - MGS remix" (`Super Metroid`), sequenced by <King Meteor>
+- 07: "Battle" (`Parasite Eve`), sequenced by ???
+- 08: "Nuts N Bolts" from `Donkey Kong Country 3` ( MIDI by <JILost> )
+- 09: "Hi-Depth Elevator" by <Cyber Rainforce>
+- 10: From `Shadowgate` (NES), MIDI remix by <John Kuzma> (<Wraith Arranged>), additional changes by <Benjogami>
+- 11: MAP15 theme remix from `Icarus: Alien Vanguard`
 
 *Special thanks to:
 - <Dew>

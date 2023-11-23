@@ -13,7 +13,7 @@ $KEY:V=URL:https://www.youtube.com/watch?v=4I2RNWQDD5w
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-A map inspired by a feature (and demo map) that originally appeared in/for `Doom Legacy v1.28`. Far too much metal texturing.
+A map inspired by a feature (and demo map) that originally appeared in/for `Doom Legacy` v1.28. Far too much metal texturing.
 
 For a long time I've been interested in a feature that existed for a few versions of `Doom Legacy` and then vanished. The feature was translucent water that warped the view through the water giving a more convincing effect than is usually seen in `Doom`. There was also a demo map that showcased the feature. As demo maps often are, it was a simple affair with no real gameplay.
 
@@ -23,10 +23,10 @@ Jumping and crouching? Sure, why not? There shouldn't be anything that needs eit
 
 :Construction
 :-------------------------------------------------------------------------------
-*Base					: Small Demo map called `WATERLAB` used to showcase a feature in `Doom Legacy v1.28` [V: youtube.com/watch?v=4I2RNWQDD5w]
+*Base					: Small Demo map called `"WATERLAB"` used to showcase a feature in `Doom Legacy` v1.28 [V: youtube.com/watch?v=4I2RNWQDD5w]
 *Build Time				: Not sure. 3-4 weeks I think. 
-*Editor(s) used			: _DeePsea_, _SLADE_, _Paint Shop Pro_, _GoldWave_, _Audacity_, _Misfit3D_, _Milkshape3D_, _Anvil Studio_, _Textpad_.
-*Known Bugs				: Nothing I know of.
+*Editor(s) used			: _DeePsea_, _SLADE_, _Paint Shop Pro_, _GoldWave_, _Audacity_, _Misfit3D_, _Milkshape3D_, _Anvil Studio_, _Textpad_
+*Known Bugs				: Nothing I know of
 *May Not Run With		: Anything other than _GZdoom_ 2.4.0+
 *Tested With			: _GZdoom_ 2.4.0 pre releases
 

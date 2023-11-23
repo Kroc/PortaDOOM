@@ -24,7 +24,7 @@ $KEY:S=URL:https://store.steampowered.com/app/2360/
 :-------------------------------------------------------------------------------
 *Base					: From scratch
 *Build Time				: On and off for about a year
-*Editor(s) used			: *DB*, *DB2*, *XWE*, *ZENNODE*, *ACC*
+*Editor(s) used			: _DB_, _DB2_, _XWE_, _ZENNODE_, _ACC_
 *May Not Run With...	: Anything not _ZDoom_ compatible
 *Known Bugs				: None that are I am aware of
 
@@ -37,6 +37,6 @@ $KEY:S=URL:https://store.steampowered.com/app/2360/
 - Cleric widescreen fire sprites by <Neoworm>
 - All other widescreen weapon sprite mods by <Doorhenge>
 - <Entryway> for making and helping with HexenP hacking
-- <Vermil> for *Doomsday* code help
+- <Vermil> for _Doomsday_ code help
 - <John Romero> for `Heretic` and `Hexen`
 - <id> and <Raven> of course for the games

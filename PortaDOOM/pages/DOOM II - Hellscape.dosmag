@@ -12,22 +12,22 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/dhs-lutz
 :Requires : *boom		Includes : *None
 :-------------------------------------------------------------------------------
 
-A re-imagining those Doom II levels that take place in Hell (21-30). As such, these maps will probably be a lot more entertaining if you have a reasonable working knowledge of the original IWAD levels...
+A re-imagining those `Doom II` levels that take place in Hell (21-30). As such, these maps will probably be a lot more entertaining if you have a reasonable working knowledge of the original IWAD levels...
 
-What you really need to run this level is a BOOM/MBF-compatible, limit-removing source port. I did 98% of my testing with _ZDoom_, so that is what I recommend, but have verified it also runs with _PrBoom_ 2.4.8.1. Also, there are two other things I should mention:
-- NO JUMPING! Jumping is for losers.
-- These levels are a LOT easier if you can run under/over sprites (but not impossible if you can't); still, if you have the option to turn off infinitely-tall actors, I highly recommend you do so.
+What you really need to run this level is a _BOOM_/_MBF_-compatible, limit-removing source port. I did 98% of my testing with _ZDoom_, so that is what I recommend, but have verified it also runs with _PrBoom_ 2.4.8.1. Also, there are two other things I should mention:
+- NO JUMPING! Jumping is for losers
+- These levels are a LOT easier if you can run under/over sprites (but not impossible if you can't); still, if you have the option to turn off infinitely-tall actors, I highly recommend you do so
 
 :Construction
 :-------------------------------------------------------------------------------
 *Base					: New level from scratch
-*Editors used			: DoomBuilder2, Whacked, WinTex
+*Editors used			: _DoomBuilder2_, _Whacked_, _WinTex_
 *Known Bugs				: None that I know of
-*Build Time				: Beats me. A long time.
+*Build Time				: Beats me. A long time
 
 :Credits
 :-------------------------------------------------------------------------------
 - <id Software>
 - <dew>, for going WAY above and beyond
 - <40oz>, <joe-ilya>, <Dime> for beta-testing
-- www.Doomworld.com for forums, hosting, and community
+- _Doomworld_ for forums, hosting, and community

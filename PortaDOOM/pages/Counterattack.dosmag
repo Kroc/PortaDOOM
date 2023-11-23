@@ -12,13 +12,13 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/mek-catk
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Counterattack is a 7-map mini episode for Doom II. Each map was designed to be played from pistol-start; continuous play is fine but will make the play through much easier. This map set originally started out as a single map contribution to the Vinesauce map contest held in 2016 by <Joel "Vargskelethor">. The map in question (MAP02) was started on in early September, and finished on September 9th. Afterwards, I officially started the project on October 10th (shortly after finishing MAP04).
+`Counterattack` is a 7-map mini episode for `Doom II`. Each map was designed to be played from pistol-start; continuous play is fine but will make the play through much easier. This map set originally started out as a single map contribution to the _Vinesauce map contest_ held in 2016 by <Joel "Vargskelethor">. The map in question (MAP02) was started on in early September, and finished on September 9th. Afterwards, I officially started the project on October 10th (shortly after finishing MAP04).
 
-My goal with this project was to exercise with the Doom II texture assets, and to create some maps for practice. All maps use stock Doom II textures (aside from skies and minor extras). The maps are medium-to-large in size and have many different paths that you can take. Replayability was a design goal I tried to aim for. Difficulty is somewhat middling, but should ramp up a bit towards the end.
+My goal with this project was to exercise with the `Doom II` texture assets, and to create some maps for practice. All maps use stock `Doom II` textures (aside from skies and minor extras). The maps are medium-to-large in size and have many different paths that you can take. Replayability was a design goal I tried to aim for. Difficulty is somewhat middling, but should ramp up a bit towards the end.
 
 There is no way to exit to MAP31, so you will have to warp to it in order to play it. There is a secret exit in MAP31 that leads to MAP32, so have fun hunting for it!
 
-Note that MAP06 and MAP30 are not meant to be a part of the main campaign. MAP06 is for story purposes for ports that can't display the ending text. MAP30 is there as a way to keep the game from (potentially) crashing because I replaced some of the IoS things in the DEHACKED (its also a dumb in-joke).
+Note that MAP06 and MAP30 are not meant to be a part of the main campaign. MAP06 is for story purposes for ports that can't display the ending text. MAP30 is there as a way to keep the game from (potentially) crashing because I replaced some of the IoS things in the _DEHACKED_ (its also a dumb in-joke).
 
 Also note that you shouldn't use jumping or crouching in these maps. It has been disabled in _ZDoom_, but some ports will still allow it. If you do use jumping or crouching, you may break the maps. Mouselook is ok but it may make certain secret triggers easier than intended.
 
@@ -35,7 +35,7 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 *Base					: From scratch
 *Build Time				: 6 months
 *Editor(s) used			: _GZDoom Builder_, _SLADE_, _GIMP_, _WhackEd4_, _Notepad++_, _Sid2Mid_
-*Known Bugs				: In MAP01, the Red Keycard crusher section doesn't time properly in _ZDoom_ because of some difference with voodoo doll scrollers. It doesn't break the sequence, it just makes it possible to get stuck under one of them if your not careful. Sorry I couldn't figure out a way to fix this :(
+*Known Bugs				: In MAP01, the Red Keycard crusher section doesn't time properly in _ZDoom_ because of some difference with voodoo doll scrollers. It doesn't break the sequence, it just makes it possible to get stuck under one of them if you're not careful. Sorry I couldn't figure out a way to fix this :(
 
 						- In MAP04, at the Yellow Skull fight, a large section of the floor lowers into some steps. Monsters like to get stuck on the edges and I don't know of a good way to get around this. So use it to your advantage I guess.
 
@@ -49,9 +49,9 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 
 						- There are probably lots of little slimetrails in many of the maps. Don't worry, they won't hurt you.
 
-*May Not Run With		: Non-Boom compatible ports and/or ports that can't run maps with _ZDoom_'s extended node format.
+*May Not Run With		: Non-_Boom_ compatible ports and/or ports that can't run maps with _ZDoom_'s extended node format.
 
-						- Gameplay altering mods may encounter conflicts from the DEHACKED and DECORATE. So run them at your own risk.
+						- Gameplay altering mods may encounter conflicts from the _DEHACKED_ and _DECORATE_. So run them at your own risk.
 
 *Tested With			: _PrBoom+_, _ZDoom_, _GZDoom_, and _Eternity_
 
@@ -63,11 +63,11 @@ Also note that you shouldn't use jumping or crouching in these maps. It has been
 
 						- Both sky textures for MAP05 were edited from stock space images from NASA.
 
-						- MAP32 textures come from the game "The Adventures of MicroMan, Adventure 1: Crazy Computers" by Brian Goble. I ripped and edited them to work in Doom.
+						- MAP32 textures come from the game `The Adventures of MicroMan, Adventure 1: Crazy Computers` by <Brian Goble>. I ripped and edited them to work in `Doom`.
 
 						- COOP sign is an edit of the Doom exit sign.
 
-						- Vargskelethor Vinesauce mushroom texture is by <Joel> (with slight edits by me to get it to look decent in the Doom palette).
+						- Vargskelethor Vinesauce mushroom texture is by <Joel> (with slight edits by me to get it to look decent in the `Doom` palette).
 
 *Sprite Credits			: *Gate Master Sprites:
 						  <id Software>
@@ -88,81 +88,81 @@ $KEY:D=URL:http://bmf.php5.cz/bmf03.php?filename=dragon.bmf&t=DRAGON
 
 						- <id Software>
 
-						- TITLEPIC city skyline comes from the game "Last Resort" by SNK.
+						- TITLEPIC city skyline comes from the game `Last Resort` by <SNK>.
 
-						- CWILV and M_DOOM font comes from a font set called "Dragon" and comes from [D: this link] (with no credit given): 
+						- CWILV and M_DOOM font comes from a font set called "Dragon" and comes from [D: this link] (with no credit given)
 
-						- MAP32 CWILV comes from "The Adventures of Microman" by <Brain Goble>.
+						- MAP32 CWILV comes from `The Adventures of Microman` by <Brain Goble>.
 
 
-*Music Credits			: MAP01 - "Central Command" 
-						  (<Deadwing>, from Moonblood Midi Pack)
+*Music Credits			: MAP01 - "Central Command"
+						  (<Deadwing>, from `Moonblood MIDI Pack`)
 
-						- MAP02 - "Lands_17.mid" 
-						  (<Frank Klepacki>, from Lands of Lore)
+						- MAP02 - "Lands_17.mid"
+						  (<Frank Klepacki>, from `Lands of Lore`)
 
 						- MAP03 - "D_STLKS2.mid"
-						  (<Marc Pullen>, from Crucified Dreams)
+						  (<Marc Pullen>, from `Crucified Dreams`)
 
-						- MAP04 - "Fight the Logic If You Can" 
-						  (<Chris Laverdure>, from Alien Vendetta)
+						- MAP04 - "Fight the Logic If You Can"
+						  (<Chris Laverdure>, from `Alien Vendetta`)
 
-						- MAP05 - "Kar2explor.mid" 
-						  (<Eric Brosius> & <Terri Brosius>, from Terra Nova: Strike Force Centauri)
+						- MAP05 - "Kar2explor.mid"
+						  (<Eric Brosius> & <Terri Brosius>, from `Terra Nova: Strike Force Centauri`)
 
 						- MAP06 - Intermission music - "D_MAP99.mid"
-						  (<Marc Pullen>, from Crucified Dreams)
+						  (<Marc Pullen>, from `Crucified Dreams`)
 
-						- MAP30 - "CHARMENU.mid" 
-						  (<Dan Kehler> & <Victor Crews>, from The Realm)
+						- MAP30 - "CHARMENU.mid"
+						  (<Dan Kehler> & <Victor Crews>, from `The Realm`)
 
-						- MAP31 - "Field Wandering" 
-						  (<Psychedelic Eyeball>, from the Max Project)
+						- MAP31 - "Field Wandering"
+						  (<Psychedelic Eyeball>, from the `Max Project`)
 
 						- MAP32 - "Micromidi" 
-						  (Original track by <John "Cotichelli" Ames>, from The Adventures of MicroMan. Recomposed to midi by <James "Jimmy" Paddock>)
+						  (Original track by <John "Cotichelli" Ames>, from `The Adventures of MicroMan`. Recomposed to MIDI by <James "Jimmy" Paddock>)
 
 						- Title music - "D_MAP98.mid"
-						  (<Nicklas Linnes>, from Crucified Dreams)
+						  (<Nicklas Linnes>, from `Crucified Dreams`)
 
 						- Intermission music - "D_MAP99.mid"
-						  (<Marc Pullen>, from Crucified Dreams)
+						  (<Marc Pullen>, from `Crucified Dreams`)
 
 						- Castcall music - "D_MAP99.mid"
-						  (<Marc Pullen>, from Crucified Dreams)
+						  (<Marc Pullen>, from `Crucified Dreams`)
 
 *Sound Credits			: <id Software>
-						- Monolith Productions
+						- <Monolith Productions>
 						- <Brian Goble>
 
 *Testers/Demo Recorders	: <00_Zombie_00>
-						- Cage
-						- dew
-						- Fonze
-						- JCD
-						- Killer5
-						- leodoom85
-						- Memfis
-						- rdwpa
-						- tourniquet
-						- Vargskelethor
-						- Veinen
-						- WH-Wilou84
-						- Xenaero
+						- <Cage>
+						- <dew>
+						- <Fonze>
+						- <JCD>
+						- <Killer5>
+						- <leodoom85>
+						- <Memfis>
+						- <rdwpa>
+						- <tourniquet>
+						- <Vargskelethor>
+						- <Veinen>
+						- <WH-Wilou84>
+						- <Xenaero>
 
-*Special Thanks			: <Joel "Vargskelethor"> for doing the Vinesauce Doom mapping contest which spawned this project! And for making me laugh my ass off for the past couple of years :D
+*Special Thanks			: <Joel "Vargskelethor"> for doing the _Vinesauce Doom mapping contest_ which spawned this project! And for making me laugh my ass off for the past couple of years :D
 
-						- <Jimmy91> for surprising me with a recomposed music track of The Adventures of MicroMan! Thanks a ton man, it really made me smile :D
+						- <Jimmy91> for surprising me with a recomposed music track of `The Adventures of MicroMan`! Thanks a ton man, it really made me smile :D
 
-						- <Fonze> for his early testing and feedback.
+						- <Fonze> for his early testing and feedback
 
-						- <dew> for using his expertise to give me some excellent feedback and demos to help me out.
+						- <dew> for using his expertise to give me some excellent feedback and demos to help me out
 
-						- <Wildweasel> for the tip on how to make the statusbar wide-screen friendly.
+						- <Wildweasel> for the tip on how to make the statusbar wide-screen friendly
 
-						- <floatRand> for spotting a really terrible bug in MAP01 (resulting in me making a quick fix).
+						- <floatRand> for spotting a really terrible bug in MAP01 (resulting in me making a quick fix)
 
-						- Everyone at _Doomworld_ and _ZDoom_ who recorded demos, videos, and streamed the beta and gave me feedback.
+						- Everyone at _Doomworld_ and _ZDoom_ who recorded demos, videos, and streamed the beta and gave me feedback
 
 						- All of the fine folks in the Doom community who help keep the game alive and keep me entertained and inspired!
 
