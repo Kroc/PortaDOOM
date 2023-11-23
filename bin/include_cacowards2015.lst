@@ -30,9 +30,6 @@ pages\2015 Cacowards #??.dosmag
 @files\wads\onesies\pinnacle\include.lst
 @files\wads\people\Octavarium\Olnoname\include.lst
 @files\wads\community\32in24-14\include.lst
-# page 14:
-@files\wads\multiplayer\dbabrm\include.lst
-@files\wads\multiplayer\ChaosCoreCTFmpII-b\include.lst
 # page 15:
 @files\mods\doomrl_arsenal\include.lst
 @files\wads\jokes\instadm\include.lst

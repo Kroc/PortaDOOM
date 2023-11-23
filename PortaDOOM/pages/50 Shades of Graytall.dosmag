@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shade
 :Requires : *boom		Includes : *+Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-50 Shades of Graytall is a project designed around creating maps with interesting architecture and gameplay despite being limited to a selection of arguably hideous textures. Started in response to a silly post made in the Editing forum which led I and several others to attempt maps using the (slightly edited) rules in the post, hoping the result would be decent. Eventually opened up to the community and here we are! Hope you enjoy the maps and if you don't hey Doom projects cant be graytall the time.
+`50 Shades of Graytall` is a project designed around creating maps with interesting architecture and gameplay despite being limited to a selection of arguably hideous textures. Started in response to a silly post made in the Editing forum which led I and several others to attempt maps using the (slightly edited) rules in the post, hoping the result would be decent. Eventually opened up to the community and here we are! Hope you enjoy the maps and if you don't hey Doom projects cant be graytall the time.
 
 :Construction:
 :-------------------------------------------------------------------------------
@@ -20,8 +20,8 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/50shade
 *Build Time			: Longer than it should have been
 *Editor(s) used		: _DB2_, _SLADE_, _GIMP_
 *Known Bugs			: visual tricks are broken in OpenGL.\\Play software, don't be a scrub
-*May Not Run With	: Boom incompatible ports
-*Tested With		: PrBoom+ cl9
+*May Not Run With	: _Boom_ incompatible ports
+*Tested With		: _PrBoom+_ cl9
 
 :Credits:
 :-------------------------------------------------------------------------------

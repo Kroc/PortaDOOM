@@ -59,15 +59,15 @@ $KEY:F=GOTO:32in24-14
 
 :MULTIPLAYER AWARDS:
 
-$KEY:G=GOTO:Don't Be A Bitch Remastered
+$KEY:G=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
 - [G] `Don't Be A Bitch Remastered`					<Mechanix Union>
 
-$KEY:H=GOTO:ChaosCore CTF
-- [H] `ChaosCore CTF`								<RoSKing> et al.
+$KEY:H=URL:https://zandronum.com/forum/viewtopic.php?t=5977
+- [H: ChaosCore CTF]								<RoSKing> et al.
 
 :MORDETH AWARD:
 
-- [H] `ChaosCore CTF`								<RoSKing> et al.
+- [H: ChaosCore CTF]								<RoSKing> et al.
 
 :BEST GAMEPLAY MOD:
 

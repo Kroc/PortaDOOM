@@ -1,13 +1,13 @@
 $THEME=BLACK
 $TITLE=Multiplayer Awards
-$KEY:1=GOTO:Don't Be a Bitch Remastered
-$KEY:2=GOTO:ChaosCore CTF
+$KEY:1=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
+$KEY:2=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 
 ^C:2015 CACOWARDS :: MULTIPLAYER AWARDS
 
 :-------------------------------------------------------------------------------
 
-:[1] `Don't Be A Bitch Remastered` - <Mechanix Union>
+:[1: Don't Be A Bitch Remastered] - <Mechanix Union>
 :===============================================================================
 The <Mechanix Union> are no strangers to this page, so it probably won't surprise anyone that they're bagging another award this year. After `RageCTF` and (by association) `EonDM` they're back with `Don't Be A Bitch, Remastered`. The expressively-named project is technically a mere update to its slightly older predecessor, `DBAB Last Man Standing 3`, but as the superior version of the two it gets the nod instead. As the previous title suggests, the team made a foray into the lands of LMS and <Team LMS>. Unlike deathmatch, your goal isn't getting the highest frag count, but pulling a Highlander and winning by default. Though the goal is complicated by a limited pool of lives (usually one), you start with the entire weapon loadout (sans BFG) to compensate. It's a fun gamemode that has managed to hang around for years without achieving the crazy popularity of CTF or Survival, but also without falling into the ditch of oblivion like `Skulltag` (the gamemode) or `Deathball` (the thing nobody's heard of).
 
@@ -19,7 +19,7 @@ I could talk for hours about the trappings of `DOOM`'s short-range, slow-project
 
 ^R- <dew>
 
-:[2] `ChaosCore CTF` - <RoSKing> et al.
+:[2: ChaosCore CTF] - <RoSKing> et al.
 :===============================================================================
 "B-but it's not even finished yet", you might say. Well, I for one am done waiting. The release candidates have been, uhm, released this year, so let's get this over with. `ChaosCore` has been the dream project and the soul rot of <Ros>, his <Renegades> clan buddies, and assorted friends for years. There's also an endless stream of players who helped test these CTF maps over and over, so a large part of the target crowd is already fairly familiar with important parts of this mapset, sometimes heralded as the last big CTF project. That moniker is debatable, of course, but it does seem to end the era of (former) IDL players getting very serious about mapping for the most noble of game modes.
 

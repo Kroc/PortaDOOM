@@ -1,7 +1,7 @@
 $THEME=BLACK
 $TITLE=Other Awards
 $KEY:1=GOTO:DoomRL Arsenal
-$KEY:2=GOTO:ChaosCore CTF
+$KEY:2=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 $KEY:3=GOTO:InstaDoom
 $KEY:4=URL:https://www.doomworld.com/idgames/index.php?search=1&field=author&word=dannebubinga&sort=time&order=asc&page=1
 
@@ -34,7 +34,7 @@ For folks looking for a bit more of a roguelike bent to their `DOOM` experience.
 
 :Mordeth Award - Released project with the longest "development time"
 :===============================================================================
-*[2] `ChaosCore CTF` - <RoSKing> et al.
+*[2: ChaosCore CTF] - <RoSKing> et al.
 :-------------------------------------------------------------------------------
 ...we meet again. Hoo boy, where to begin? I don't even know. The alpha versions were actually called `"ChaosCore 2"`, but the original was never officially released, and the final (quote unquote, heh) product cannibalizes a few of its maps without referencing the numbering. This puts the project as far back as 2009, which is the date of my `ccorectfmp1a.wad`, but probably even further. Goddamit, these layouts are ancient! And as I mentioned, this isn't even the final version, and there are still 20 maps in various state of completion to haunt us for years to come.
 

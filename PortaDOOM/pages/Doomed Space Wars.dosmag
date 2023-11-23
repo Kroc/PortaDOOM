@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/s-u/spacwars
 :Requires : *zdoom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-Doomed Space Wars is a Star Wars-inspired mapset but with mostly Doom enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of _ZDoom_'s special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
+`Doomed Space Wars` is a Star Wars-inspired mapset but with mostly `Doom` enemies and weapons. There are 9 levels divided into 3x 3 level mini episodes and 3 secret levels. At the end of each 3 level mini episode there is a boss. Every map is huge and takes advantages of _ZDoom_'s special features such as 3D floors and reverb. Also there are tons of secrets and a few top secret Easter eggs. The aim for the level design was realism and a dark atmosphere, with huge height variations and a semi linear overlapping progression. I focused hard on lighting and architecture to create a super realistic environment to go with challenging gameplay but there are no slaughtermaps, sorry guys. Also included are 10 exclusive Deathmatch levels.
 
 Also in addition are 9 new monsters thanks to _ZDoom_'s _DECORATE_ feature and also I cannot forget the totally original orchestral soundtrack composed by me with the songs in .mp3 format.
 
@@ -70,34 +70,34 @@ In addition to the familiar foes you will encounter are some new beasts.
 :SINGLE PLAYER LEVELS:
 :-------------------------------------------------------------------------------
 *RED ZONE (Boss Spider Mastermind)
-- MAP01: Command Admin 
-- MAP02: Chiron Sector 
-- MAP03: Imperial Stronghold (Secret exit to MAP10)
+- MAP01: "Command Admin"
+- MAP02: "Chiron Sector"
+- MAP03: "Imperial Stronghold" (Secret exit to MAP10)
 *BLUE ZONE (Boss Cyberdemons)
-- MAP04: Central Labs
-- MAP05: Laser Power Generator
-- MAP06: Dynamics Processing
+- MAP04: "Central Labs"
+- MAP05: "Laser Power Generator"
+- MAP06: "Dynamics Processing"
 *GREEN ZONE (Boss Chaos Elemental)
-- MAP07: Stardate Constitution (Secret exit to MAP11)
-- MAP08: Star Tomb
-- MAP09: The Chaos Machine
+- MAP07: "Stardate Constitution" (Secret exit to MAP11)
+- MAP08: "Star Tomb"
+- MAP09: "The Chaos Machine"
 *SECRET LEVELS
-- MAP10: Rusted Mystery 
-- MAP11: Defragmentation Continuum (Secret exit to MAP12)
-- MAP12: Hitler's Theatre
+- MAP10: "Rusted Mystery"
+- MAP11: "Defragmentation Continuum" (Secret exit to MAP12)
+- MAP12: "Hitler's Theatre"
 
 :DEATHMATCH LEVELS:
 :-------------------------------------------------------------------------------
-- MAP40: The Exitprize
-- MAP41: Slime Vault
-- MAP42: Symmetric Symphony
-- MAP43: Spacegammon
-- MAP44: Space Combat
-- MAP45: Three Bridges
-- MAP46: Walking The Red Dwarf
-- MAP47: Pursuit
-- MAP48: Space DWANGO
-- MAP49: Mira
+- MAP40: "The Exitprize"
+- MAP41: "Slime Vault"
+- MAP42: "Symmetric Symphony"
+- MAP43: "Spacegammon"
+- MAP44: "Space Combat"
+- MAP45: "Three Bridges"
+- MAP46: "Walking The Red Dwarf"
+- MAP47: "Pursuit"
+- MAP48: "Space DWANGO"
+- MAP49: "Mira"
 
 :LEVEL PROGRESSION:
 :-------------------------------------------------------------------------------
@@ -132,22 +132,23 @@ In addition to the familiar foes you will encounter are some new beasts.
 
 *MUSIC CREDITS:
 
-- TITLE: |Battle Strength (<Paul Corfiatis> 2014, inspired by Star Wars main theme)
-- INTERMISSION: |Sith Kugla Remix (Inspired by Doom Intermission, Imperial March and Shpongle Mrs Kugla, Remixed by <Paul Corfiatis> 2014)
-- README: Sith March (<Paul Corfiatis> 2014)
-- ENDING THEME: Space Wars 8 bit remix (<Paul Corfiatis>)
-- MAP01: Amongst The Stars (<Paul Corfiatis> 2014)
-- MAP02: Space Pioneer (<Paul Corfiatis> 2010)
-- MAP03: Running For Cover (<Paul Corfiatis> 2014)
-- MAP04: Preparing For Battle (<Paul Corfiatis> 2014)
-         Get Them! (<Robert Bobby Prince> 1992, used in top secret area)
-- MAP05: Fighting For Survival (<Paul Corfiatis> 2014)
-         Paradise (<Paul Corfiatis> 2011, used in top secret area)
-- MAP06: Intergalactic Intensity (<Paul Corfiatis> 2014)
-- MAP07: Intense Moments (<Paul Corfiatis> 2015)
-- MAP08: Voyager (<Paul Corfiatis> 2001, revised 2015)
-         Message to the Archvile dramatic orchestral battle remix (Remixed by <Paul Corfiatis> 2015)
-- MAP09: The End of Chaos (<Paul Corfiatis> 2015)
-- MAP10: Dark Matter (<Paul Corfiatis> 2014)
-- MAP11: Endless Terror (<Paul Corfiatis> 2014)
-- MAP12: Raja Ram's String Bling (Remixed by <Paul Corfiatis> 2014)
+- TITLE: |"Battle Strength" (<Paul Corfiatis> 2014, inspired by Star Wars main theme)
+- INTERMISSION:
+         "Sith Kugla Remix" (Inspired by "Doom Intermission", "Imperial March" and "Shpongle Mrs Kugla", Remixed by <Paul Corfiatis> 2014)
+- README: "Sith March" (<Paul Corfiatis> 2014)
+- ENDING THEME: "Space Wars 8 bit remix" (<Paul Corfiatis>)
+- MAP01: "Amongst The Stars" (<Paul Corfiatis> 2014)
+- MAP02: "Space Pioneer" (<Paul Corfiatis> 2010)
+- MAP03: "Running For Cover" (<Paul Corfiatis> 2014)
+- MAP04: "Preparing For Battle" (<Paul Corfiatis> 2014)
+         "Get Them!" (<Robert Bobby Prince> 1992, used in top secret area)
+- MAP05: "Fighting For Survival" (<Paul Corfiatis> 2014)
+         "Paradise" (<Paul Corfiatis> 2011, used in top secret area)
+- MAP06: "Intergalactic Intensity" (<Paul Corfiatis> 2014)
+- MAP07: "Intense Moments" (<Paul Corfiatis> 2015)
+- MAP08: "Voyager" (<Paul Corfiatis> 2001, revised 2015)
+         "Message to the Archvile dramatic orchestral battle remix" (Remixed by <Paul Corfiatis> 2015)
+- MAP09: "The End of Chaos" (<Paul Corfiatis> 2015)
+- MAP10: "Dark Matter" (<Paul Corfiatis> 2014)
+- MAP11: "Endless Terror" (<Paul Corfiatis> 2014)
+- MAP12: "Raja Ram's String Bling" (Remixed by <Paul Corfiatis> 2014)

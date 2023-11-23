@@ -2,19 +2,18 @@ $THEME=BLUE
 $KEY:A=GOTO:Cabal Series
 $KEY:B=GOTO:Master Levels #03
 $KEY:C=GOTO:Master Levels #04
-$KEY:D=GOTO:ChaosCore CTF
-$KEY:E=GOTO:Chord Series #01
-$KEY:F=GOTO:Chord Series #02
-$KEY:G=GOTO:Chord Series #03
-$KEY:H=GOTO:Chord Series #04
-$KEY:I=GOTO:Chord Series #05
-$KEY:J=GOTO:Comatose
-$KEY:K=GOTO:Master Levels #05
-$KEY:L=GOTO:Counterattack
-$KEY:M=GOTO:Crumpets
-$KEY:N=GOTO:Cryogenics
-$KEY:O=GOTO:Hexen - Curse of the Lost Gods
-$KEY:P=GOTO:Cyb's Freaky Colonoscopy
+$KEY:D=GOTO:Chord Series #01
+$KEY:E=GOTO:Chord Series #02
+$KEY:F=GOTO:Chord Series #03
+$KEY:G=GOTO:Chord Series #04
+$KEY:H=GOTO:Chord Series #05
+$KEY:I=GOTO:Comatose
+$KEY:J=GOTO:Master Levels #05
+$KEY:K=GOTO:Counterattack
+$KEY:L=GOTO:Crumpets
+$KEY:M=GOTO:Cryogenics
+$KEY:N=GOTO:Hexen - Curse of the Lost Gods
+$KEY:O=GOTO:Cyb's Freaky Colonoscopy
 
 ^C:INDEX :: C
 
@@ -23,16 +22,15 @@ $KEY:P=GOTO:Cyb's Freaky Colonoscopy
 - [A] *Cabal Series										People
 - [B] *Canyon (Master Levels)							Commercial DOOM
 - [C] *Catwalk, The (Master Levels)						Commercial DOOM
-- [D] *ChaosCore CTF									Multiplayer
-- [E] *CHORD1 (Chord Series)							People
-- [F] *CHORD2 (Chord Series)							People
-- [G] *CHORD_NG (Chord Series)							People
-- [H] *CHORDG (Chord Series)							People
-- [I] *CHORD3 (Chord Series)							People
-- [J] *Comatose											Onesies
-- [K] *Combine, The (Master Levels)						Commercial DOOM
-- [L] *Counterattack									Episodes
-- [M] *Crumpets											Episodes
-- [N] *Cryogenics										People
-- [O] *Curse of the Lost Gods (Hexen)					Episodes
-- [P] *Cyb's Freaky Colonoscopy							Episodes
+- [D] *CHORD1 (Chord Series)							People
+- [E] *CHORD2 (Chord Series)							People
+- [F] *CHORD_NG (Chord Series)							People
+- [G] *CHORDG (Chord Series)							People
+- [H] *CHORD3 (Chord Series)							People
+- [I] *Comatose											Onesies
+- [J] *Combine, The (Master Levels)						Commercial DOOM
+- [K] *Counterattack									Episodes
+- [L] *Crumpets											Episodes
+- [M] *Cryogenics										People
+- [N] *Curse of the Lost Gods (Hexen)					Episodes
+- [O] *Cyb's Freaky Colonoscopy							Episodes

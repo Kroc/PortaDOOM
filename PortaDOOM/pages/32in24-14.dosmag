@@ -12,7 +12,7 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/32in241
 :Requires : *boom		Includes : *+Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-"...It was the pinnacle of burgerdom. Finally, the long summer's study in Aberdonian cuisine and bovine mating rituals had yielded of a supple, juicy tower clad with buns too good to slap and the fattest sow the YEDS had ever sewn. The chief engineer-turned-overlord of foodstuffs, Percival Mechacook, deemed it necessary to awaken Shaitoken from his long winter's slumber to celebrate this yuletide achievement. Together, they would drive the Yeoman Engineers of Software and Design into a golden age of quality dining and unencumbered festivity. Christmas would take on a whole new meaning, and this time there would be no mistakes...
+"...It was the pinnacle of burgerdom. Finally, the long summer's study in Aberdonian cuisine and bovine mating rituals had yielded of a supple, juicy tower clad with buns too good to slap and the fattest sow the <YEDS> had ever sewn. The chief engineer-turned-overlord of foodstuffs, Percival Mechacook, deemed it necessary to awaken Shaitoken from his long winter's slumber to celebrate this yuletide achievement. Together, they would drive the <Yeoman Engineers of Software and Design> into a golden age of quality dining and unencumbered festivity. Christmas would take on a whole new meaning, and this time there would be no mistakes...
 
 The burger was transported cross-country with 48 (respectably delicious) dummy-meals for protection. It was these meals that prevented the dreaded Hamburglar from eating everything in the back of the truck, his gristly whiskers lapping up the meat with fevered relish. Instead, the disgusting tramp of a man was only able to consume a whole 7 of the burgers before his stomach gave way and he was forced to ship the rest of them to his top secret Threecock Christmas Facilities for quality assessment.
 
@@ -25,16 +25,16 @@ One of these facilities now houses The Prize... but how long before it goes bad,
 	And what happened then? Well... in _Doomworld_ they say,
 	That the Hamburglars hidden penis grew three sizes that day!
 
-And then he was arrested for lewd conduct with Joe-Ilya in the men's room of a McDonalds. The Yeoman Engineers and Designers of Software carried out the arrest and swiftly carried out a military tribunal. Hampton C. Burglar was found guilty of billions of counts of burger larceny and poorly concealing his penis in the titlepic and sentenced to death by firing squad.
+And then he was arrested for lewd conduct with Joe-Ilya in the men's room of a McDonalds. The <Yeoman Engineers and Designers of Software> carried out the arrest and swiftly carried out a military tribunal. Hampton C. Burglar was found guilty of billions of counts of burger larceny and poorly concealing his penis in the titlepic and sentenced to death by firing squad.
 
 :Construction
 :-------------------------------------------------------------------------------
 $KEY:E=URL:https://en.wikipedia.org/wiki/Category:Lists_of_insects
-*Base					: Some maps new from scratch, others based on layouts from previous 32in24s.
+*Base					: Some maps new from scratch, others based on layouts from previous `32in24`s
 *Build Time				: One day for layouts, a week for refining, followed by a couple lazy weeks of bugfixes
 *Editor(s) used			: Pretty much all of them.
 *Known Bugs				: [E: en.wikipedia.org/wiki/Category:Lists_of_insects]
-*May Not Run With...	: Scissors.
+*May Not Run With...	: Scissors
 
 :Credits
 :-------------------------------------------------------------------------------
@@ -132,46 +132,46 @@ The levels in this iteration of the series are:
 - MAP01: kof98
 - MAP02: *"If You Love Christmas So Much Why Don't You Merry It"* by <Jimmy>
 - MAP03: *"Ryuichi_Sakamoto_Merry_christmas_mr_lawrence1.mid"*
-- MAP04: David Hasselhoff - I've Been Looking for Freedom
-- MAP05: Snow Go theme from Crash Bandicoot (edited by <FuzzballFox>)
-- MAP06: King Diamond - A mansion in the darkness
+- MAP04: David Hasselhoff - "I've Been Looking for Freedom"
+- MAP05: "Snow Go" theme from `Crash Bandicoot` (edited by <FuzzballFox>)
+- MAP06: King Diamond - "A mansion in the darkness"
 - MAP07: *"Blizzard"* by <Jimmy>
 - MAP08: *"SNES_Toki_Memo_Lonely_Christmas.mid"*
 - MAP09: *"Pursuit"* by <stewboy (Forty-Two)>
 - MAP10: *"Lost In Place (Lippeth)"*
-- MAP11: Chapel of Dissonance, from Castlevania: Harmony of Dissonance
-- MAP12: "9:00 AM" from Animal Crossing: City Folk, arranged by <Andrew Shand>
+- MAP11: "Chapel of Dissonance", from `Castlevania: Harmony of Dissonance`
+- MAP12: "9:00 AM" from `Animal Crossing: City Folk`, arranged by <Andrew Shand>
 - MAP13: *"Time Bomb"* by <Jimmy>
-- MAP14: TNT MAP20
-- MAP15: Whatever song is in 32in24-4 map13
-- MAP16: Rihanna - Shut up and drive
+- MAP14: `TNT` MAP20
+- MAP15: Whatever song is in `32in24-4` map13
+- MAP16: Rihanna - "Shut up and drive"
 - MAP17: ???
-- MAP18: Ice Cap Act 2 from Sanic3
-- MAP19: Shade Man's stage from Megaman 7, sequenced by <Jarel Jones>
+- MAP18: "Ice Cap Act 2" from `Sanic3`
+- MAP19: Shade Man's stage from `Megaman 7`, sequenced by <Jarel Jones>
 - MAP20: some bagpipe remix of a papa roach song
-- MAP21: Descent Level 13 (Europa Mining Colony)
+- MAP21: `Descent` Level 13 ("Europa Mining Colony")
 - MAP22: ???
 - MAP23: *"Walking in a Winter Wonderland"*,
          arranged by Roland Corporation in 1991
-- MAP24: *"Fillmore"* from ActRaiser
-- MAP25: Ristar, Planet Freon: Act 1 - *"Ring Rink"*
-- MAP26: Descent Level 12 (Callisto Tower Colony)
-- MAP27: Weird Al Yankovic - Jurassic Park
-- MAP28: Ending Music from Bomberman Hero, sequenced by <Jace>
-- MAP29: *"Tidal Tempest: Present"* from Sonic CD, sequenced by <King Meteor>
-- MAP30: Junior - Mama Used to Say
+- MAP24: *"Fillmore"* from `ActRaiser`
+- MAP25: `Ristar`, Planet Freon: Act 1 - *"Ring Rink"*
+- MAP26: `Descent` Level 12 ("Callisto Tower Colony")
+- MAP27: Weird Al Yankovic - "Jurassic Park"
+- MAP28: Ending Music from `Bomberman Hero`, sequenced by <Jace>
+- MAP29: *"Tidal Tempest: Present"* from `Sonic CD`, sequenced by <King Meteor>
+- MAP30: Junior - "Mama Used to Say"
 - MAP31: something from *"SUPER DODGEBALL"*
-- MAP32: Opposing Bloodlines, from Castlevania: Rondo of Blood
-- MAP33: *"Bloodpool"* from Actraiser, sequenced by <PJ Barnes>
-- MAP34: Ice Palace theme from Secret of Mana (sequenced by <Teck>)
-- MAP35: *"Jolly Egyptian"* by Blackfish
+- MAP32: "Opposing Bloodlines", from `Castlevania: Rondo of Blood`
+- MAP33: *"Bloodpool"* from `Actraiser`, sequenced by <PJ Barnes>
+- MAP34: Ice Palace theme from `Secret of Mana` (sequenced by <Teck>)
+- MAP35: *"Jolly Egyptian"* by <Blackfish>
 - MAP36: some midi of *"the 12 days of Christmas"*
-- MAP37: sangy2.mid from NOVA: The Birth
-- MAP38: The Police - Every Breath You Take
-- MAP39: Weezer - Hash Pipe
-- MAP40: Green Day - Brain Stew
-- MAP41: Blade Man theme from Mega Man 10
-- MAP42: Take That - Patience
+- MAP37: "sangy2.mid" from `NOVA: The Birth`
+- MAP38: The Police - "Every Breath You Take"
+- MAP39: Weezer - "Hash Pipe"
+- MAP40: Green Day - "Brain Stew"
+- MAP41: Blade Man theme from `Mega Man 10`
+- MAP42: Take That - "Patience"
 - ReadM: DETUNED DRAGONFORCE OH GOD
 
 :Additional Credits to:
