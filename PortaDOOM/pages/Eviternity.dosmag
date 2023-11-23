@@ -1,12 +1,12 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\eviternity\play-eviternity.ini"
 $KEY:T=SHELL:wads\megawads\eviternity\Eviternity.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/103425
+$KEY:D=URL:https://www.doomworld.com/forum/topic/103425
 $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/eviternity
 
 :Eviternity                                         * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website [I] idGames
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>02>10	  Author : <Dragonfly> et al
 :Levels   : *32			   Modes : *Single, Co-op

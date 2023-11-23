@@ -1,11 +1,11 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\echelon\play-echelon.ini"
 $KEY:T=SHELL:wads\megawads\echelon\echelon.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/echelon
 
 :Echelon                                         * 2016 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2016>11>28	  Author : <Sverre Andre Kvernmo>, aka <Soundblock>
 :Levels   : *30			   Modes : *Single, Co-op, Deathmatch

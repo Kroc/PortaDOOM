@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\sgnsym\play-sgnsym.ini"
 $KEY:T=SHELL:wads\episodes\sgnsym\Sgnsym.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/s-u/sgnsym
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/s-u/sgnsym
 
 :Shotgun Symphony                                   * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>01>05	  Author : <Steve Duff> aka <Steve D>
 :Levels   : *9			   Modes : *Single

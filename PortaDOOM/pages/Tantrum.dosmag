@@ -2,11 +2,11 @@ $NAV=People
 $NAV=Ola Björling
 $KEY:P=SHELL:launcher.exe "wads\people\ola bjorling\tantrum\play-tantrum.ini"
 $KEY:T=SHELL:wads\people\ola bjorling\tantrum\TANTRUM.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/s-u/tantrum
 
 :Tantrum                                                  * 5 Years of Doom *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *1996>08>04	  Author : <Ola Björling>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch

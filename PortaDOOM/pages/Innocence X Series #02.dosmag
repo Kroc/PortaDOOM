@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\inncnx\inncnx2\play-inncnx2.ini"
 $KEY:T=SHELL:wads\episodes\inncnx\inncnx2\inncnx2.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/90561
+$KEY:D=URL:https://www.doomworld.com/forum/topic/90561
 
 :Innocence X2											(Innocence X Series)
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2016>10>11	  Author : <Jazzmaster9>
 :Levels   : *10 		   Modes : *Single

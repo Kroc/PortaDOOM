@@ -2,19 +2,18 @@ $NAV=MegaWADs
 $TITLE=3 Heures d'agonie III
 $KEY:P=SHELL:launcher.exe "wads\megawads\3ha\3ha3\play-3ha3.ini"
 $KEY:T=SHELL:wads\megawads\3ha\3ha3\3ha3.txt
-$KEY:I=SHELL:wads\megawads\3ha\3ha3\3ha3info.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha3
 
 :3 Heures d'agonie III
 :===============================================================================
-*[P] Play						*[T] .txt [I] info [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2017>04>06	  Author : *Various (see credits)
 :Levels   : *32			   Modes : *Single, Co-op
 :Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-*3 Heures d'agonie 3* is a collection of 32 vanilla speedmaps designed by members of the French Doom Community. The general rule was that each map layout was to be made within a time limit of 3 hours.
+`3 Heures d'agonie 3` is a collection of 32 vanilla speedmaps designed by members of the French Doom Community. The general rule was that each map layout was to be made within a time limit of 3 hours.
 
 :Construction
 :-------------------------------------------------------------------------------

@@ -3,11 +3,11 @@ $REM=NOTE: LOCATE AND GENERATE DOOM64.IWAD FIRST!
 $KEY:P=SHELL:"wads\conversions\DOOMCE\play-doom-64-ce.bat"
 $KEY:R=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
 $KEY:C=SHELL:"wads\conversions\DOOMCE\credits-doom-64-ce.txt"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+$KEY:D=URL:https://www.doomworld.com/forum/topic/126183
 
 :DOOM 64 CE + Lost Levels + Bonus Campaigns
 :===============================================================================
-*[P] Play						*[R] Readme [C] Credits [W] Website
+*[P] Play						*[R] Readme [C] Credits [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2021>12>08	  Author : <molecicco>, Various
 :Levels   : *lots		   Modes : *Single, Co-op

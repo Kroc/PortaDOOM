@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\dotb\play-dotb.ini"
 $KEY:T=SHELL:wads\episodes\dotb\DOTB_RC3.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/92574
+$KEY:D=URL:https://www.doomworld.com/forum/topic/92574
 
 :Dimension of the Boomed							* 2018 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2018>10>15	  Author : <Stephen "Urthar" Wadsworth>
 :Levels   : *9 			   Modes : *Single, Co-op?

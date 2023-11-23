@@ -13,7 +13,7 @@ $KEY:W=URL:http://mordeth.doomworld.com/
 :Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-The first six levels of the Mordeth TC, with lots of new monsters and great playability! Please refer to the [W: Mordeth Home Page] for extensive information about all features.
+The first six levels of the `Mordeth` TC, with lots of new monsters and great playability! Please refer to the [W: Mordeth Home Page] for extensive information about all features.
 
 ! *NOTE:* Due to the way `Mordeth` was originally compiled, _PortaDOOM_ does not yet support running `Mordeth` in _Chocolate Doom_ ("vanilla").
 
@@ -29,6 +29,6 @@ Find your way through infernal forts and take the fight to Hell, again. Battle y
 
 :Credits
 :-------------------------------------------------------------------------------
-<Joel Huenink> for lending me the intermission music.
-The creators of those lovely 3D games.
-Unknown author of the hero-wearing-glasses gfx.
+- <Joel Huenink> for lending me the intermission music
+- The creators of those lovely 3D games
+- Unknown author of the hero-wearing-glasses gfx

@@ -1,10 +1,10 @@
 $NAV=Mods
 $KEY:T=SHELL:mods\doomrl_arsenal\Credits.txt
-$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=37044
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 
 :DoomRL Arsenal                                     * 2015 Cacoward Winner! *
 :===============================================================================
-								*[T] .txt [W] Website
+								*[T] .txt [Z] ZDoomForum
 :-------------------------------------------------------------------------------
 :Released : *2013>08>14+  Author : <Yholl> *et al. (see credits)
 :Levels   : *None		   Modes : *Single, Co-op

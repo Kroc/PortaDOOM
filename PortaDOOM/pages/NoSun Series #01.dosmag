@@ -3,12 +3,12 @@ $NAV=Malcom Sailor
 $TITLE=NOSUN
 $KEY:P=SHELL:launcher.exe "wads\people\Malcom Sailor\nosun\play-nosun.ini" /GAME 1
 $KEY:T=SHELL:wads\people\Malcom Sailor\nosun\NOSUNUP.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/m-o/nosun
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/m-o/nosun
 $KEY:R=GOTO:The Complete Raven Series
 
 :NOSUN.WAD                                                * 5 Years of Doom *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *1997>04>25	  Author : <Malcom Sailor>
 :Levels   : *1			   Modes : *Single, Co-op

@@ -3,11 +3,11 @@ $NAV=Malcom Sailor
 $TITLE=CHORD3
 $KEY:P=SHELL:launcher.exe "wads\people\Malcom Sailor\chord\play-chord.ini" /GAME 5
 $KEY:T=SHELL:wads\people\Malcom Sailor\chord\CHORD3.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/chord3
 
 :CHORD3.WAD                                               * 5 Years of Doom *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2000>09>05	  Author : <Malcom Sailor>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch

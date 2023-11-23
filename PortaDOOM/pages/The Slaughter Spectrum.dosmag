@@ -1,11 +1,11 @@
 $NAV=People
 $NAV=Bridgeburner56
 $KEY:P=SHELL:launcher.exe "wads\people\Bridgeburner56\tss\play-tss.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/106310
+$KEY:D=URL:https://www.doomworld.com/forum/topic/106310
 
 :The Slaughter Spectrum                          * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[W] Website
+*[P] Play						*[D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2019>05>15	  Author : <Bridgeburner56>
 :Levels   : *5			   Modes : *Single

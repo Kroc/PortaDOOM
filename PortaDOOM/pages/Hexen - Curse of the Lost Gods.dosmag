@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\curse2\play-curse2.ini"
 $KEY:T=SHELL:wads\episodes\curse2\curse2.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/hexen/a-c/curse2
 
 :Hexen: Curse of the Lost Gods                   * 2017 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2017>06>07	  Author : <Kristian 'Kristus' Käll>
 :Levels   : *5			   Modes : *Single, Co-op

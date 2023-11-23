@@ -1,11 +1,13 @@
 $NAV=Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\REKKR\play-rekkr.ini"
 $KEY:T=SHELL:wads\conversions\rekkr\rekcreds.txt
-$KEY:W=URL:http://manbitesshark.com/
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/megawads/rekkr
+$KEY:G=URL:https://www.gog.com/game/rekkr_sunken_land
+$KEY:S=URL:https://store.steampowered.com/app/1715690/REKKR_Sunken_Land/
 
 :REKKR												* Cacoward 2018 Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames [G] GoG [S] Steam
 :-------------------------------------------------------------------------------
 :Released : *2018>09>20	  Author : <Revae> et al
 :Levels   : *27 		   Modes : *Single, Co-op?, Deathmatch
@@ -25,9 +27,7 @@ $KEY:M=URL:https://soundcloud.com/psllbof
 
 *Sounds:
 
-$KEY:S=URL:http://terminusest13.tumblr.com
 - <TerminusEst13>
-  [S: terminusest13.tumblr.com]
 
 *Maps:
 

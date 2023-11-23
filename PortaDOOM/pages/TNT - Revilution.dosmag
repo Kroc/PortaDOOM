@@ -1,11 +1,11 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\tntr\play-tntr.ini"
 $KEY:T=SHELL:wads\megawads\tntr\TNTR.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/85791
+$KEY:D=URL:https://www.doomworld.com/forum/topic/85791
 
 :TNT: Revilution                                 * 2017 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2017>05>29	  Author : Various (see credits below)
 :Levels   : *32			   Modes : *Single, Co-op, Deathmatch

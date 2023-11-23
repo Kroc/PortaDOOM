@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\miasma\play-miasma.ini"
 $KEY:T=SHELL:wads\onesies\miasma\miasma.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/miasma
 
 :Miasma                                             * 2016 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [W] idgames
 :-------------------------------------------------------------------------------
 :Released : *2016>02>03?  Author : <Thomas "tourniquet" Seifert>
 :Levels   : *1			   Modes : *Single, Co-op

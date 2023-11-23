@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\pinnacle\play-pinnacle.ini"
 $KEY:T=SHELL:wads\onesies\pinnacle\pinnacle.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/68215
+$KEY:D=URL:https://www.doomworld.com/forum/topic/68215
 
 :Pinnacle of Darkness                            * 2015 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2015>06>17	  Author : <Hobomaster22>
 :Levels   : *1			   Modes : *Single, Co-op

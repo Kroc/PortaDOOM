@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\droom\play-droom.ini"
 $KEY:T=SHELL:wads\onesies\droom\DRoom.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/droom
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/droom
 
 :Darkest Room                                    * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>07>14	  Author : <Paolo M.> aka <Paul977>
 :Levels   : *1			   Modes : *Single

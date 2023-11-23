@@ -2,11 +2,11 @@ $NAV=People
 $NAV=Ribbiks
 $KEY:P=SHELL:launcher.exe "wads\people\ribbiks\magnolia\play-magnolia.ini"
 $KEY:T=SHELL:wads\people\ribbiks\magnolia\magnolia.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/100784
+$KEY:D=URL:https://www.doomworld.com/forum/topic/100784
 
 :Magnolia										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2018>06>20	  Author : <Ribbiks>
 :Levels   : *3			   Modes : *Single

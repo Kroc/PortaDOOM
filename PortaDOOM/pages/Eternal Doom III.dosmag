@@ -1,18 +1,18 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\eternal\play-eternal.ini"
 $KEY:T=SHELL:wads\megawads\eternal\ETERNAL.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/themes/TeamTNT/eternal/eternal
+$KEY:I=URL:https://www.doomworld.com/idgames/themes/TeamTNT/eternal/eternal
 
 :Eternal Doom III
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *1997>11>26	  Author : *Various (see credits)
 :Levels   : *34			   Modes : *Single, Co-op
 :Requires : *vanilla	Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-*Features: (over Eternal Doom II)
+*Features: (over Eternal `Doom II`)
 
 - 6 new single-player levels, two bonus levels
 - All difficulty settings

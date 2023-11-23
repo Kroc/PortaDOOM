@@ -1,11 +1,11 @@
 $NAV=Community Projects
 $KEY:P=SHELL:launcher.exe "wads\community\20_Monsters_MapPack\play-20_Monsters_MapPack.ini"
 $KEY:T=SHELL:wads\community\20_Monsters_MapPack\Info.txt
-$KEY:W=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
+$KEY:Z=URL:http://forum.zdoom.org/viewtopic.php?f=19&t=54247
 
 :20 Monsters
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [Z] ZDoomForum
 :-------------------------------------------------------------------------------
 :Released : *2016>03>24	  Author : *Various (see Credits)
 :Levels   : *42			   Modes : *Single

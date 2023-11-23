@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\shpo1\play-shpo1.ini"
 $KEY:T=SHELL:wads\onesies\shpo1\shpo1.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/72721
+$KEY:D=URL:https://www.doomworld.com/forum/topic/72721
 
 :Sheer Poison                                       * 2015 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2015>05>11	  Author : <Zan-zan-zawa-veia>
 :Levels   : *1			   Modes : *Single

@@ -2,11 +2,11 @@ $NAV=People
 $TITLE=Phobos Mission Control
 $KEY:P=SHELL:launcher.exe "wads\people\John Romero\play.ini" /GAME 1
 $KEY:T=SHELL:wads\people\John Romero\e1m4b.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b
 
 :Phobos Mission Control
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2016>04>26	  Author : <John Romero>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch

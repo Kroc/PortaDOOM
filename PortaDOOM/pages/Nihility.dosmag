@@ -1,10 +1,10 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\Nihility\play-nihility.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/85591
+$KEY:D=URL:https://www.doomworld.com/forum/topic/85591
 
 :Nihility                                           * 2016 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[W] Website
+*[P] Play						*[D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2016>01>21	  Author : <Years>
 :Levels   : *9			   Modes : *Single, Co-op

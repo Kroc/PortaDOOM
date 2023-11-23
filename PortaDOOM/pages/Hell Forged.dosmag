@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\HF\play-hf.ini"
 $KEY:T=SHELL:wads\episodes\HF\HF-v100c.txt
-$KEY:W=URL:https://forum.zdoom.org/viewtopic.php?t=13397
+$KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 
 :Hell Forged                                        * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt (v1.0) [W] Website
+*[P] Play						*[T] .txt [Z] ZDoomForum
 :-------------------------------------------------------------------------------
 :Released : *2019>12>31	  Author : <Amuscaria>
 :Levels   : *10			   Modes : *Single, Co-op, Deathmatch

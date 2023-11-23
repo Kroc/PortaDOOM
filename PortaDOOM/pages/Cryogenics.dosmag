@@ -2,11 +2,11 @@ $NAV=People
 $NAV=Bemused
 $KEY:P=SHELL:launcher.exe "wads\people\bemused\cryogenics\play-cryogenics.ini"
 $KEY:T=SHELL:wads\people\bemused\cryogenics\Cryogenics.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/98149
+$KEY:D=URL:https://www.doomworld.com/forum/topic/98149
 
 :Cryogenics										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						 *[T] .txt [W] Website
+*[P] Play						 *[T] .txt [D] doomworld
 :-------------------------------------------------------------------------------
 :Released : *2017>12>09	  Author : <Bemused>
 :Levels   : *4			   Modes : *Single
@@ -19,9 +19,9 @@ Set of 4 slaughter themed maps.
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 2-3 weeks per map
-*Editor(s) used			: `GZDB-Bugfix`
+*Editor(s) used			: _GZDB-Bugfix_
 *Known Bugs				: Some texture misalignments
-*Tested With			: `GLBoom+`, `PrBoom+`, `GZDoom`
+*Tested With			: _GLBoom+_, _PrBoom+_, _GZDoom_
 
 :Credits
 :-------------------------------------------------------------------------------

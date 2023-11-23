@@ -1,11 +1,11 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\ShadowOfTheWoolBall\play-ShadowOfTheWoolBall.ini"
 $KEY:T=SHELL:wads\conversions\ShadowOfTheWoolBall\ShadowOfTheWoolBall_Readme.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/88555
+$KEY:D=URL:https://www.doomworld.com/forum/topic/88555
 
 :Shadow Of The Wool Ball                         * 2016 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2016>06>09	  Author : <MSPaintR0cks> aka <WatchDaToast>
 :Levels   : *18			   Modes : *Single

@@ -2,11 +2,11 @@ $NAV=People
 $NAV=Tim Willits
 $KEY:P=SHELL:launcher.exe "wads\people\Tim Willits\play-raven.ini"
 $KEY:T=SHELL:wads\people\Tim Willits\RAVEN.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/p-r/raven
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/p-r/raven
 
 :The Complete Raven Series                                * 5 years of Doom *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *1995>12>04	  Author : *<Tim Willits> & <Theresa Chasar>
 :Levels   : *11			   Modes : *Single, Deathmatch

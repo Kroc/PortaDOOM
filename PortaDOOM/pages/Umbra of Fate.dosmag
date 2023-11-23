@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\uof\play-uof.ini"
 $KEY:T=SHELL:wads\onesies\uof\uof.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/100574
+$KEY:D=URL:https://www.doomworld.com/forum/topic/100574
 
 :Umbra of Fate									 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2018>05>01	  Author : <Alexa "YukiRaven" Jones-Gonzales>
 :Levels   : *1			   Modes : *Single

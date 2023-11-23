@@ -1,10 +1,10 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\avactor\play-avactor.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/101647
+$KEY:D=URL:https://www.doomworld.com/forum/topic/101647
 
 :Avactor: End of the Fifth Circle					* Cacoward 2018 Winner! *
 :===============================================================================
-*[P] Play						*[W] Website
+*[P] Play						*[D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2018>12>15	  Author : <Eradrop>
 :Levels   : *12			   Modes : *Single
@@ -16,7 +16,7 @@ All the monsters have a new skin to fit better in the environment I've built.
 
 :WAD details
 :-------------------------------------------------------------------------------
-*IWAD			: DOOM2
+*IWAD			: `DOOM2`
 *Tested with	: _PRBoom_ and _ZDoom_, also been\\played with _GZDoom_ couple of times
 *Build time		: about 18 months
 *New Sprites	: all the decorations, lights, obstacles and monsters

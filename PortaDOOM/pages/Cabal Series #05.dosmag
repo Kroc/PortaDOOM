@@ -3,11 +3,11 @@ $NAV=Sverre Kvernmo
 $TITLE=Temple of Death
 $KEY:P=SHELL:launcher.exe "wads\people\Sverre Kvernmo\cabal\play-cabal.ini" /GAME 4
 $KEY:T=SHELL:wads\people\Sverre Kvernmo\cabal\CABAL.TXT
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/cabal2
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/a-c/cabal2
 
 :Temple of Death                                               (Cabal Series)
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *1995>11>08	  Author : <Sverre André Kvernmo>
 :Levels   : *1			   Modes : *Single, Co-op, Deathmatch

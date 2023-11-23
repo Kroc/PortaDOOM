@@ -1,10 +1,10 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\Ashes2063Enriched\play-ashes2063.ini"
-$KEY:W=URL:https://www.moddb.com/mods/ashes-2063
+$KEY:M=URL:https://www.moddb.com/mods/ashes-2063
 
 :Ashes 2063										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[W] Website
+*[P] Play						*[M] ModDB
 :-------------------------------------------------------------------------------
 :Released : *2018>11>19	  Author : <Pinchy, Augustus "Alfonzo" Knezevich>
 :Levels   : *49			   Modes : *Single, Co-op

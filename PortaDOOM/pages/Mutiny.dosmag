@@ -1,11 +1,11 @@
 $NAV=Community Projects
 $KEY:P=SHELL:launcher.exe "wads\community\mutiny\play-mutiny.ini"
 $KEY:T=SHELL:wads\community\mutiny\mutiny.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny
 
 :Mutiny                                             * 2016 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2016>09>13	  Author : Various (see Credits)
 :Levels   : *16			   Modes : *Single, Co-op, Deathmatch

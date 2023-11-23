@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\hadrone2\play-hadrone2.ini"
 $KEY:T=SHELL:wads\episodes\hadrone2\Hadrone2.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/g-i/hadrone2
 
 :Return to Hadron 2: The Collider's new clothes  * 2017 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2016>12>04	  Author : <Matt "cannonball" Powell>
 :Levels   : *9			   Modes : *Single, Co-op

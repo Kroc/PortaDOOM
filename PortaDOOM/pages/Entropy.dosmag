@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\entropy\play-entropy.ini"
 $KEY:T=SHELL:wads\onesies\entropy\Entropy.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/entropy
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/entropy
 
 :Entropy                                         * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>04>17	  Author : <Nirvana>
 :Levels   : *2			   Modes : *Single

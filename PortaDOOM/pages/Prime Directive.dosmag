@@ -1,11 +1,11 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\ge5-pd\play-ge5-pd.ini"
 $KEY:T=SHELL:wads\episodes\ge5-pd\ge5-pd.txt
-$KEY:W=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
+$KEY:I=URL:http://www.doomworld.com/idgames/levels/doom2/Ports/g-i/ge5-pd
 
 :Prime Directive                                 * 2015 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2015>07>23	  Author : <Ethan Watson aka GooberMan>
 :Levels   : *9			   Modes : *Single

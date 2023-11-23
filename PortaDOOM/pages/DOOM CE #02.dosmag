@@ -2,11 +2,11 @@ $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\DOOMCE\play-doom-ce.ini"
 $KEY:R=SHELL:"wads\conversions\DOOMCE\README-DOOM-CE.md"
 $KEY:C=SHELL:"wads\conversions\DOOMCE\credits-doom-ce.txt"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/126183
+$KEY:D=URL:https://www.doomworld.com/forum/topic/126183
 
 :PSX DOOM CE + Lost Levels + No Rest For The Living
 :===============================================================================
-*[P] Play						*[R] Readme [C] Credits [W] Website
+*[P] Play						*[R] Readme [C] Credits [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2021>12>08	  Author : <molecicco>, Various
 :Levels   : *lots		   Modes : *Single, Co-op

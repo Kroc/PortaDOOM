@@ -1,11 +1,11 @@
 $NAV=Jokes
 $KEY:P=SHELL:launcher.exe "wads\jokes\ludicrm\play-ludicrm.ini"
 $KEY:T=SHELL:wads\jokes\ludicrm\ludicrm.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/j-l/ludicrm
 
 :Luducrium                                          * 2016 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2015>12>08	  Author : <antares031>
 :Levels   : *6			   Modes : *Single

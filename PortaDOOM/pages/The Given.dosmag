@@ -1,11 +1,11 @@
 $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\TheGiven\play-thegiven.ini"
 $KEY:T=SHELL:wads\onesies\TheGiven\TheGiven.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/95543
+$KEY:D=URL:https://www.doomworld.com/forum/topic/95543
 
 :The Given                                          * 2017 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2017>08>15?  Author : <dobu gabu maru>
 :Levels   : *1			   Modes : *Single

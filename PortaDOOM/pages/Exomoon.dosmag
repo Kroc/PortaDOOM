@@ -1,11 +1,11 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\exomoon\play-exomoon.ini"
 $KEY:T=SHELL:wads\megawads\exomoon\exomoon.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/exomoon
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/exomoon
 
 :Exomoon										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2018>11>08	  Author : <Deadwing>
 :Levels   : *24			   Modes : *Single, Co-op

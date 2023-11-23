@@ -1,11 +1,11 @@
 $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\doom404\play-doom404.ini"
 $KEY:T=SHELL:wads\megawads\doom404\doom404.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/102536
+$KEY:D=URL:https://www.doomworld.com/forum/topic/102536
 
 :DOOM 404										 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2018>12>01	  Author : <Capellan>
 :Levels   : *32			   Modes : *Single, Co-op, Deathmatch

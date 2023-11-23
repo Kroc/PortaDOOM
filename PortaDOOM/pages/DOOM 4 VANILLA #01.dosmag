@@ -1,10 +1,10 @@
 $NAV=Mods
 $KEY:P=SHELL:launcher.exe "mods\D4V\play-d4v.ini"
-$KEY:W=URL:https://www.doomworld.com/forum/topic/108725
+$KEY:D=URL:https://www.doomworld.com/forum/topic/108725
 
 :DOOM 4 VANILLA                                     * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[W] Website
+*[P] Play						*[D] doomworld
 :-------------------------------------------------------------------------------
 :Released : *2016>10>31	  Author : *<Noiser> et al
 :Levels   : *None		   Modes : *Single

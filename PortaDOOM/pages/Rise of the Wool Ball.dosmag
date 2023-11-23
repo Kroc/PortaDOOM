@@ -1,11 +1,11 @@
 $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\ROTWB\play-rotwb.ini"
 $KEY:T=SHELL:wads\conversions\ROTWB\Readme.txt
-$KEY:W=URL:https://www.doomworld.com/forum/topic/94330
+$KEY:D=URL:https://www.doomworld.com/forum/topic/94330
 
 :Rise of the Wool Ball                           * 2017 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [W] Website
+*[P] Play						*[T] .txt [D] Doomworld
 :-------------------------------------------------------------------------------
 :Released : *2017>06>09	  Author : <MSPaintR0cks>
 :Levels   : *18			   Modes : *Single
