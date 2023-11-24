@@ -942,7 +942,7 @@ SUB exec(cmd$)
             MID$(cmd$, cmdWidth% * (i% - 1) + 1, cmdWidth%) + "^{F-,N}"
     NEXT i%
     
-    STRGUI_Add "^{N}WARNING: PortaDOOM will remain frozen until the program is quit!"
+    STRGUI_Add "^{N}WARNING: PortaDOOM will remain frozen until the launcher quits!"
     LET dialogHeight = dialogHeight + 2
     
     LET dialogText$ = STRGUI.Compile$
