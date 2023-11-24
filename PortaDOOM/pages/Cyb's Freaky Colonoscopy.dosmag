@@ -1,5 +1,5 @@
 $NAV=Episodes
-$KEY:P=SHELL:launcher.exe "wads\episodes\dbp16\play-dbb16.ini"
+$KEY:P=SHELL:launcher.exe "wads\episodes\dbp16\play-dbp16.ini"
 $KEY:C=SHELL:wads\episodes\dbp16\dbp16 credits.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/109554
 
