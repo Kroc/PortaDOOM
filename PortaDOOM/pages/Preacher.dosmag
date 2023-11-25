@@ -12,7 +12,7 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/preacher
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches +Demos
 :-------------------------------------------------------------------------------
 
-`Preacher` is a 9 map `boom` compatible episode. You play as a mad preacher who hears a voice in his head impelling him to take down all evil in the World.
+`Preacher` is a 9 map _Boom_ compatible episode. You play as a mad preacher who hears a voice in his head impelling him to take down all evil in the World.
 
 Layouts are open and non linear, and start spots are randomized.
 
@@ -62,16 +62,16 @@ There are graphic and sound replacements, but weapon and enemy behaviours are un
 
 *Music Listing:
 
-- Title - `"Glory Amen"` by Those Poor Bastards
-- Intermisson - `"Swallowed by Sin"` by Those Poor Bastards
-- MAP01 - `"Sabbath with Organ"` by <Darch>
-- MAP02 - `"Preacher Theme"` by <Darch>
-- MAP03 - `"Die Motherfucker Die"` by <Darch>
-- MAP04 - `"Sabbath with Organ 2"` by <Darch>
-- MAP05 - `"That Arabic One"` by <Darch>
-- MAP06 - `"Black and White"` by <Darch>
-- Text Screen - `"Sacrificial Lamb"` by Those Poor Bastards
-- MAP07 - `"Memories from the Day I Died"` by <Darch>
-- MAP08 - `"Jazzy Metal"` by <Darch>
-- MAP09 - `"Colonizators"` by <Darch>
-- MAP10 - `"The Dust Storm"` by Those Poor Bastards
+- Title - "Glory Amen" by Those Poor Bastards
+- Intermisson - "Swallowed by Sin" by Those Poor Bastards
+- MAP01 - "Sabbath with Organ" by <Darch>
+- MAP02 - "Preacher Theme" by <Darch>
+- MAP03 - "Die Motherfucker Die" by <Darch>
+- MAP04 - "Sabbath with Organ 2" by <Darch>
+- MAP05 - "That Arabic One" by <Darch>
+- MAP06 - "Black and White" by <Darch>
+- Text Screen - "Sacrificial Lamb" by Those Poor Bastards
+- MAP07 - "Memories from the Day I Died" by <Darch>
+- MAP08 - "Jazzy Metal" by <Darch>
+- MAP09 - "Colonizators" by <Darch>
+- MAP10 - "The Dust Storm" by Those Poor Bastards

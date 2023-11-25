@@ -30,19 +30,20 @@ Inspired by `Crucified Dreams`, `BTSX Episode 2`, `Gravity Rush`, `Doom 2016` an
 						  _Crispy Doom_ 3.4
 						  _PrBoom+_ 2.5.1.5 (-complevel 2 and default)
 						  _Eternity_ 3.40.46
-*Build Playlist			: Die Antwoord - Raging Zef Boner
-						  Grimes - Kill v Maim
-						  Saint Saviour - Jennifer
-						  Yamantaka // Sonic Titan - Whalesong
-						  Trentemøller - The Mash and the Fury
-						  Leftfield - Bad Radio
-						  Orbital - The Box (Part Two)
-						  Scratch Massive - Paris
-						  Bohannon - Summertime Groove
-						  Betty Davis - Nasty Gal
-						  Florence + The Machine - Spectrum
-						  Stan Rogers - Fisherman's Wharf
-						  Chelsea Wolfe - Lone
+*Build Playlist			: Die Antwoord - "Raging Zef Boner"
+						  Grimes - "Kill v Maim"
+						  Saint Saviour - "Jennifer"
+						  Yamantaka // Sonic Titan - "Whalesong"
+$REM=Sorry, no "ø" in CP437, Trentemøller
+						  Trentemoller - "The Mash and the Fury"
+						  Leftfield - "Bad Radio"
+						  Orbital - "The Box (Part Two)"
+						  Scratch Massive - "Paris"
+						  Bohannon - "Summertime Groove"
+						  Betty Davis - "Nasty Gal"
+						  Florence + The Machine - "Spectrum"
+						  Stan Rogers - "Fisherman's Wharf"
+						  Chelsea Wolfe - "Lone"
 
 :Credits
 :-------------------------------------------------------------------------------

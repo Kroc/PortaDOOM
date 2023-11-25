@@ -26,7 +26,7 @@ As an emergency measure, the authorities activated red alert for further investi
 
 - 24 new levels
 - 15~25 minutes to finish each
-- MBF (-complevel 11) compatibility
+- _MBF_ (-complevel 11) compatibility
 - Monster attributes changes, which can be identified by the sprite changes
 - Mod support that changes monster behavior is probably very limited
 - No Jumping/Crouching
