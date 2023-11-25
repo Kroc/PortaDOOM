@@ -41,7 +41,7 @@ Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering 
 - `M6`, gave the boss arena a little more space to move around in
 - `M7`, fixed monsters piling up in a southeast room (with another set of chaotic monster teleport dispensers, à la the other three corners)
 - `M7`, the Green Key battle now has an Enchanted Shield on all difficulty settings, making it reliably beatable
-- Added ACS script in nearly all maps that alerts off-map monsters of your existence. In other words, you can't avoid monster teleports by not shooting anymore
+- Added _ACS_ script in nearly all maps that alerts off-map monsters of your existence. In other words, you can't avoid monster teleports by not shooting anymore
 - Rocastus and the High Disciple (second form) each have 500 less health (now 2000 for Rocastus, 2500 for the High Disciple)
 - Chaos Serpent fireballs have a slower movement speed and are easier to dodge; used the red Serpent from `Faithless Trilogy` as the reference for the new speed
 - Fixed dynamic lights for the Chaos Serpent fireballs
@@ -105,7 +105,7 @@ Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering 
 - Juggernaut (Rocastus) by <Captain Toenail>
 - Disciple (High Disciple) by <Eriance> and <Ghastly_dragon>
 - Sound edits by <Xaser>
-- Additional Decorate / balancing by <Not Jabba>
+- Additional _DECORATE_ / balancing by <Not Jabba>
 
 *Music:
 - E1M1: "Coldwater" by <Viscra Maelstrom>
@@ -130,6 +130,6 @@ Three years later, `The Wayfarer` has been updated to v1.2! I've been tinkering 
 - <MorbidBrute> for `Emerald Bathhouse`, which provided general inspiration and texture choices for `E1M2` and `E1M3`
 - <Kristus> for the KEYCONF from `Curse of D'Sparil`
 - <NAL> for the Future TimeSplitters Regular font,\\which is used in the titlepic
-- <Gez>, <Graf Zahl>, and <Spadger> for help with Decorate
-- <Dragonfly>, <anotak>, <Arctangent>, <jmickle>, <Spadger>,\\and <Bloodshedder> for help with ACS
+- <Gez>, <Graf Zahl>, and <Spadger> for help with _DECORATE_
+- <Dragonfly>, <anotak>, <Arctangent>, <jmickle>, <Spadger>,\\and <Bloodshedder> for help with _ACS_
 - <Boris>, <Da Werecat>, <fluffyshambler>, <FrancisT18>, <Gez>, <Ichor>, <Jimmy>, <MorbidBrute>, and <Spadger> for additional playtesting and bug catching

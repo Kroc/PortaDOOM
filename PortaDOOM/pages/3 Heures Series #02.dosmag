@@ -22,7 +22,7 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/megawads/3ha2
 *Editor(s) used			: See map list
 *Known Bugs				: There are inevitable HOMs and possibly VPO's we might've overlooked. VPO can occur with noclip running on _Chocolate Doom_
 *May Not Run With		: Heretic
-*Tested With			: PrBoom 2.5.0, Prboom-Plus 2.5.1.3, _ZDaemon_ 1.10b, Doom2.exe
+*Tested With			: _PrBoom_ 2.5.0, _Prboom-Plus_ 2.5.1.3, _ZDaemon_ 1.10b, _DOOM2.EXE_
 
 :Credits
 :-------------------------------------------------------------------------------

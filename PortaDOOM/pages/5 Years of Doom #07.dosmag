@@ -17,7 +17,7 @@ $TITLE=Ty Halderman
 
        <Ty>	Well, the members of the doom-editing mailing list began talking about doing a big WAD ("The WAD" originally), in either late '94 or early '95. I show an email from <Romero> in February '95 telling us how it'll never be worth doing because Quake will be out in the fall and we'll never look at DOOM again. Heh. 
 
-			There were two camps, one of which wanted to make something with the DOOM2 engine, same sprites, etc., and the second group that wanted sprite changes, Dehacked mods, etc. The first group was known as the Alpha group, the second as Beta. The Beta project never happened, and we became the Alpha project. I see references in January '95 to "TNT" but I can't find mail or memory that's clearer than that. I don't really remember at what point we became known as "TeamTNT", but we had to form The TeamTNT Trust when we needed a legal entity to deal with <id Software> for Final DOOM.
+			There were two camps, one of which wanted to make something with the DOOM2 engine, same sprites, etc., and the second group that wanted sprite changes, _DeHackEd_ mods, etc. The first group was known as the Alpha group, the second as Beta. The Beta project never happened, and we became the Alpha project. I see references in January '95 to "TNT" but I can't find mail or memory that's clearer than that. I don't really remember at what point we became known as "TeamTNT", but we had to form The TeamTNT Trust when we needed a legal entity to deal with <id Software> for Final DOOM.
 
 			It was very different from projects today, where a logo, team name, web site and announcement are made first, and then the search for members and talent begins.
 
@@ -175,9 +175,9 @@ $TITLE=Ty Halderman
 
        <Ty>	Yes, it's always been a complete conversion--all monsters, sounds, music, textures, etc.
 
-*Doomworld	Was Ragnarok always scheduled to be a Dehacked/source modded TC?
+*Doomworld	Was Ragnarok always scheduled to be a _DeHackEd_/source modded TC?
 
-       <Ty>	We've always been going to do a complete mod, including EXE. Our philosophy on Evilution and Icarus was to not use Dehacked, but Ragnarok is totally different. Besides, nowadays you can either make your own engine or load .DEH/.BEX files at the command line, so it's not the taboo thing it once was.
+       <Ty>	We've always been going to do a complete mod, including EXE. Our philosophy on Evilution and Icarus was to not use _DeHackEd_, but Ragnarok is totally different. Besides, nowadays you can either make your own engine or load .DEH/.BEX files at the command line, so it's not the taboo thing it once was.
 
 *Doomworld	How much of Ragnarok would you say is done?
 

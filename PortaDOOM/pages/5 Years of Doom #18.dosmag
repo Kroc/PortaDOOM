@@ -5,7 +5,7 @@ $TITLE=Mike Gummelt
 
 :-------------------------------------------------------------------------------
 
-<Mike Gummelt> currently works at Raven Software, where he has helped with the creation of Hexen II and most recently Heretic II. His Big Break, however, came as a direct result of his hacking such games as Doom. Known for his masterful work with the source-hacking program Dehacked, <Mike Gummelt> was able to literally create whole new worlds within the confines of the Doom engine. <Gummelt> is most well-known for his Doom TC Aliens Doom III, which recreated the Aliens experience complete with all-new weapon and monster behaviors, such as hatching eggs, placable land mines, and computer-controlled marines which would help the player on his mission.
+<Mike Gummelt> currently works at Raven Software, where he has helped with the creation of Hexen II and most recently Heretic II. His Big Break, however, came as a direct result of his hacking such games as Doom. Known for his masterful work with the source-hacking program _DeHackEd_, <Mike Gummelt> was able to literally create whole new worlds within the confines of the Doom engine. <Gummelt> is most well-known for his Doom TC Aliens Doom III, which recreated the Aliens experience complete with all-new weapon and monster behaviors, such as hatching eggs, placable land mines, and computer-controlled marines which would help the player on his mission.
 
 :-------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ $TITLE=Mike Gummelt
 
 <Mike>		Yes, the Aliens-TC is the mod that got me into editing and is probably most responsible for me being where I am today.
 
-*Doomworld	How much time did you spend learning Dehacked? Did it come naturally, or did you put in long hours testing new effects?
+*Doomworld	How much time did you spend learning _DeHackEd_? Did it come naturally, or did you put in long hours testing new effects?
 
 <Mike>		It was a long process. I learned by doing and by downloading every resource I could about hacking Doom. I checked out other people's mods at first to see what could be done, but eventually I just went through listing every pointer and what it seemed to do and experimented and came up with some cool stuff. A lot of the more interesting things were results of playing around, like the helper marines, medics, eggs that spit facehuggers, chestbursters, spreading fire and Jonesy the cat (you'd chase him around to catch him- when you touched him, you'd pick him up (he was really the yellow key but could run around and hiss)...
 
@@ -43,7 +43,7 @@ $TITLE=Mike Gummelt
 
 :-------------------------------------------------------------------------------
 
-*Doomworld	In my interview with <Joel Huenik>, he mentioned that you helped create some Dehacked effects for his conversion "All Hell's Breaking Loose." How did you get involved with that? Were there any particular things you did in that that you still think notable?
+*Doomworld	In my interview with <Joel Huenik>, he mentioned that you helped create some _DeHackEd_ effects for his conversion "All Hell's Breaking Loose." How did you get involved with that? Were there any particular things you did in that that you still think notable?
 
 <Mike>		Hmm... honestly, his name sounds familiar, but I'm not familiar with the conversion (I have a horrible long-term memory)... it might be that he asked me for advice or how to do some of the specific hacks I did in my mods, or I might have just given him permission to take anything he wanted from my .DEHs (I never understood the attitude of not sharing in the Doom community)...
 
@@ -71,7 +71,7 @@ $TITLE=Mike Gummelt
 
 *Doomworld	Do you think your Dooming days have helped you any in your current position?
 
-<Mike>		Absolutely! While I had made games in high school on my C-128, I probably never would have gotten into programming ever again if it hadn't been for DeHackEd, Aliens-TC, WinTex and all the other great utilities and resources and all the great people out there who made them. I seriously wouldn't be where I am today and in the profession I'm in if it weren't for Doom and all the great people in the editing community.
+<Mike>		Absolutely! While I had made games in high school on my C-128, I probably never would have gotten into programming ever again if it hadn't been for _DeHackEd_, Aliens-TC, WinTex and all the other great utilities and resources and all the great people out there who made them. I seriously wouldn't be where I am today and in the profession I'm in if it weren't for Doom and all the great people in the editing community.
 
 *Doomworld	Where do you think you'd be right now if not for Doom?
 
