@@ -26,7 +26,7 @@ This was an exercise in using the original `Doom 2` textures and specials to bui
 :-------------------------------------------------------------------------------
 *Base				: New from scratch
 *Build Time			: About 5 months spread over 1.5 years.
-*Editor(s) used		: _Doombuilder 2_, _GZDoomBuilder_ 2.3, _SLADE3_
+*Editor(s) used		: _Doom Builder 2_, _GZDoom Builder_ 2.3, _SLADE3_
 *Known Bugs			: Slow loading and poor performance in _Doomsday_. A few slime trails here and there
 *May Not Run With	: Vanilla/_Chocolate Doom_, insufficiently limit-removing ports
 *Tested With		: _ZDoom_ 2.7.1, _GZDoom_ 1.9.1 and 3.0alpha, _DOOM Retro_ 1.9, _PrBoom+_ 2.5.1.2, _Eternity_ 3.34.37, _Doomsday_ 1.15.0

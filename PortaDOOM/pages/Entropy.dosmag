@@ -12,9 +12,9 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/entropy
 :Requires : *boom		Includes : *+Sounds +Music +Graphics +Patches
 :-------------------------------------------------------------------------------
 
-`Entropy` is a large and challenging *Boom* compatible (cl9) slaughter map with a gold and orange theme.
+`Entropy` is a large and challenging _Boom_ compatible (cl9) slaughter map with a gold and orange theme.
 
-There are two main routes to take from the start, one for plasma and the other for rockets, both must be completed in order to finish the map, so your decision wont leave you without one weapon. There are 3 new keycards that replace the skull keys, each of which will require you to beat a difficult encounter to get. Once you have all 3 you can get the BFG and will be rewarded with something...else.
+There are two main routes to take from the start, one for plasma and the other for rockets, both must be completed in order to finish the map, so your decision wont leave you without one weapon. There are 3 new keycards that replace the skull keys, each of which will require you to beat a difficult encounter to get. Once you have all 3 you can get the BFG and will be rewarded with something... else.
 
 The map has been completed without BFG and without secrets to ensure it is balanced. Many of the fights will require some puzzling out before you can complete them. Sometimes this means simply pushing a switch when you otherwise wouldn't and other times it can mean something else entirely.
 
@@ -34,7 +34,7 @@ Most fights are beatable in a variety of different ways, so try stuff out! Remem
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 6 months on and off (no idea in hours)
-*Editor(s) used			: _GZDoom Builder_ (Bugfix), _SLADE_, _Photoshop_
+*Editor(s) used			: _GZDoom Builder-Bugfix_, _SLADE_, _Photoshop_
 *Known Bugs				: Some FPS issues still remain in certain areas for lower end machines. _GLBoom_ is recommended
 *May Not Run With...	: _ZDaemon_, _ZDoom_
 *Tested With...			: _Prboom-Plus_, _Glboom-Plus_, _GZDoom_, _ZDoom_

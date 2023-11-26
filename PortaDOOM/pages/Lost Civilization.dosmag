@@ -18,7 +18,7 @@ $KEY:D=URL:https://www.doomworld.com/forum/topic/105215
 :-------------------------------------------------------------------------------
 *Base					: From scratch
 *Build Time				: 2016-2019
-*Editor(s) used			: _GZDoomBuilder_, _GZDB bugfix_, _SLADE_, _GIMP_, _Notepad_
+*Editor(s) used			: _GZDoom Builder_, _GZDB-Bugfix_, _SLADE_, _GIMP_, _Notepad_
 *Known Bugs				: Some minor sky cutouts, GOR3A0 sinks into ceiling on _prBoom_ (2.5.1.4). Propably some texture misalignments
 *Tested With...			: _GZDoom_, ran through with _prboom-plus_-2.5.1.4
 						  Note to _ZDemon_ users:

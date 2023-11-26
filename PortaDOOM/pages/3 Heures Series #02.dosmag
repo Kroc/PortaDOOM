@@ -101,7 +101,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP01				: Crash
 *Author(s)			: <Ch0wW>
 *Build time			: 3 hours for the layout only, additionnal 2 hours for only texturing
-*Editor(s) used		: Doom Builder 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ 2.1.2.1553
 *Music track		: RUN AGADIO (Rise of the Triad)
 *Bugs				: None afaik
 *Inspiration		: Well, Quake 2 the beginning of the map, hence the name.
@@ -111,7 +111,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP02				: Malevolence
 *Author(s)			: <Le Bihan Gwenvaël> (<Subject_119>)
 *Build time			: 3 hours and a few minutes for bug fixing
-*Editor(s) used		: Doom Builder V. 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ V. 2.1.2.1553
 *Music track		: d_stalks
 *Bugs				: None
 *Inspiration		: Doom II
@@ -121,7 +121,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP03				: Sombre angoisse
 *Author(s)			: <Datacore>
 *Build time			: 3H
-*Editor(s) used		: XWE, Doombuilder 1
+*Editor(s) used		: _XWE_, _Doom Builder_ 1
 *Music track		: Doom e1m5
 *Bugs				: ???
 *Inspiration		: Doom II Map05 & Doom e1m5
@@ -131,7 +131,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP04				: Entraxe
 *Author(s)			: <franckFRAG>
 *Build time			: 3 hours
-*Editor(s) used		: Doom Builder 1.68
+*Editor(s) used		: _Doom Builder_ 1.68
 *Music track		: from "Zone300", composed by <Paul Corfiatis>
 *Bugs				: none
 *Inspiration		: map13 of "Swift Death"
@@ -141,7 +141,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP05				: Visions
 *Author(s)			: <Ch0wW>
 *Build time			: 3 hours for the layout only, additionnal 6 hours for texturing and polishing
-*Editor(s) used		: Doom Builder 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ 2.1.2.1553
 *Music track		: Duke Nukem 3D - Episode 2 Music (Pissed!)
 *Bugs				: None afaik
 *Inspiration		: A way to make transition, and to preview a little how maps would look like soon
@@ -151,16 +151,16 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP06				: Processus Logique
 *Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: ... :/
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, Adobe Photoshop CS 5.5
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _Adobe Photoshop CS_ 5.5
 *Music track		: Memento Mori II Map 25's theme by <Mark Klem>, apparently a merge of two songs, "Time Runner" and "Dredge ( Extended Version )".
 *Bugs				: None known
 *Inspiration		: Nothing in particular... The ending part with Arachnotrons is a variation of the ending of Plutonia map 07. Visually speaking, the STARTAN variant texture alignment is obviously inspired by <Espi>.
-*Author comments	: A small techbase level set within a rusty UAC base overrun by evil forces. This is my third and supposedly last contribution to 3HA II. After playing the first few maps of <Vordakk>'s very nice "Flashback to Hell" mapset, I somehow got an urge to create a "casual" map for Doom II, something with a more laid-back gameplay (compared to my other two maps in this set I mean), so I quickly picked up a theme and a MIDI file, drew a layout, opened Doom Builder, and then this thing appeared. As for UV Max gameplay, this is nothing more than your typical "run for the Super Shotgun, clean house" Doom II level.
+*Author comments	: A small techbase level set within a rusty UAC base overrun by evil forces. This is my third and supposedly last contribution to 3HA II. After playing the first few maps of <Vordakk>'s very nice "Flashback to Hell" mapset, I somehow got an urge to create a "casual" map for Doom II, something with a more laid-back gameplay (compared to my other two maps in this set I mean), so I quickly picked up a theme and a MIDI file, drew a layout, opened _Doom Builder_, and then this thing appeared. As for UV Max gameplay, this is nothing more than your typical "run for the Super Shotgun, clean house" Doom II level.
 :-------------------------------------------------------------------------------
 *MAP07				: Merciless Flow
 *Author(s)			: <Memfis>
 *Build time			: 2 hours 15 minutes but modified a bit afterwards
-*Editor(s) used		: Doom Builder 1.68, GZDoom Builder 1.14, XWE 1.16
+*Editor(s) used		: _Doom Builder_ 1.68, _GZDoom Builder_ 1.14, _XWE_ 1.16
 *Music track		: "Chant" from Rise of the Triad, composed by <Lee Jackson>
 *Bugs				: I spent some time trying to get rid of all HOMs\VPOs, but a very little almost unnoticeable HOM is still possible in one place if you try hard to find it. The texture alignment is not perfect perhaps but it's oldschool. :p
 *Inspiration		: The main area is taken from a very old map idea of mine, maybe 5 years old. I envisioned a big water base with multiple levels that you would have to conquer one-by-one, but in the end it has only 2 levels. Some ammo alcoves and the mancubus "tower" were inspired by <Darkwave0000>'s style.
@@ -170,7 +170,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP08				: Simple souterrain
 *Author(s)			: <Oxyde>
 *Build time			: Well, it took me a little less than 3 hours to build this map entirely, but I'm lazy, and it took me two whole months to finally add monsters and items...
-*Editor(s) used		: Doom Buider 1.68; XWE
+*Editor(s) used		: _Doom Builder_ 1.68; _XWE_
 *Music track		: DOOM - Remix from `PRJDOOM.wad` ; A somewhat punchy remix of the original music from Map05 of Doom 2 (D_DOOM). I really like this remake project, you should download it! ;)
 *Bugs				: None that I am aware of that can break gameplay. OpenGL rendering engine like GLBoom or _Zandronum_ might be a bit buggy with vanilla effects.
 *Inspiration		: Doom 2 Map02 actually was a big part of inspiration for this map, as I felt it was a great theme for a second map. Greenwar 2 also helped a lot there; I had plenty of ideas but Doom 2 stock textures didn't really bring the feel I wanted to give this map. The combination of the two ended quite well.
@@ -180,7 +180,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP09				: Generator Of Death
 *Author(s)			: <Sid Zetmeck>
 *Build time			: 3h00
-*Editor(s) used		: Doom Builder 2
+*Editor(s) used		: _Doom Builder 2_
 *Music track		: "Violence In Your Mind" by <Sid Zetmeck>
 *Bugs				: none
 *Inspiration		: Ultimate Doom, Doom II
@@ -190,7 +190,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP10				: Culture et Confiture de Mobs
 *Author(s)			: <Jean "Jambon" Bon>
 *Build time			: Around 2h45 for gameplay, then 0h30 of fixes, detailling & difficulty setting
-*Editor(s) used		: Doom Builder 2, TuxGuitar
+*Editor(s) used		: _Doom Builder 2_, _TuxGuitar_
 *Music track		: Edited version of La Bohème, by <Aznavour>. Support him: www.charlesaznavour.com
 *Bugs				: None, I hope.
 *Inspiration		: None.
@@ -200,7 +200,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP11				: Cendres Humaines
 *Author(s)			: <JC>
 *Build time			: 2 hours
-*Editor(s) used		: Doom builder 1.68
+*Editor(s) used		: _Doom Builder_ 1.68
 *Music track		: Oww! - Rise of the Triad
 *Bugs				: None
 *Inspiration		: rjspace ?
@@ -209,7 +209,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP12				: Wrong Address
 *Author(s)			: <Memfis>
 *Build time			: about 2 hours and 30 minutes
-*Editor(s) used		: Doom Builder 1.68, XWE
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_
 *Music track		: Track02 from Al Unser Jr. Arcade Racing
 *Bugs				: Hopefully none!
 *Inspiration		: <Nathan Lineback>'s Marswar
@@ -219,7 +219,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP13				: Traumateck
 *Author(s)			: <franckFRAG>
 *Build time			: 3 hours
-*Editor(s) used		: Doom Builder 1.68
+*Editor(s) used		: _Doom Builder_ 1.68
 *Music track		: from "Zone300", composed by <Paul Corfiatis>
 *Bugs				: none
 *Inspiration		: map13 of "Swift Death" too x)
@@ -229,7 +229,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP14				: Sarcasmes Malsains
 *Author(s)			: <Datacore>
 *Build time			: 3H
-*Editor(s) used		: XWE, DoomBuilder 1
+*Editor(s) used		: _XWE_, _Doom Builder_ 1
 *Music track		: Doom e4m6
 *Bugs				: ???
 *Inspiration		: e4m5
@@ -239,7 +239,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP15				: Les comtes de la crypte
 *Author(s)			: <Jean "Jambon" Bon>
 *Build time			: Around 3 hours for gameplay, then 1 hour of "detailling"
-*Editor(s) used		: _Doom builder 2_, _SLADE_
+*Editor(s) used		: _Doom Builder 2_, _SLADE_
 *Music track		: Edited MIDI version of Kerfautras, by <Matmatah>. Support them: http://www.matmatah.com/
 *Bugs				: None, I hope.
 *Inspiration		: None.
@@ -248,7 +248,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP16				: Vile Sombre
 *Author(s)			: <JC>
 *Build time			: 3 hours
-*Editor(s) used		: Doom Builder 1.68
+*Editor(s) used		: _Doom Builder_ 1.68
 *Music track		: Street Fighter II - Ryu Theme
 *Bugs				: None
 *Inspiration		: <FranckFRAG> map's :p
@@ -258,7 +258,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP17				: InfiltrAction
 *Author(s)			: <Ch0wW>
 *Build time			: 3 hours for the layout only, additionnal 4 hours for texturing
-*Editor(s) used		: Doom Builder 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ 2.1.2.1553
 *Music track		: Smooth Havana (Rise of the Triad)
 *Bugs				: None afaik
 *Inspiration		: A design of a weapon for another game (Propulsion, check it out soon on Android's PlayStore!)
@@ -268,7 +268,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP18				: Somewhere in the Slime Ocean
 *Author(s)			: <Plut>
 *Build time			: 3 hours for layout and monster placement and about 1 hour for few details, some gameplay correctings and multiplayer support.
-*Editor(s) used		: GZDoom Builder, XWE
+*Editor(s) used		: _GZDoom Builder_, _XWE_
 *Music track		: "Drips" by <Stuart Rynn> (Speed of Doom MAP08)
 *Bugs				: Hopefully none
 *Inspiration		: Speed of Doom MAP08, Kama Sutra MAP08
@@ -278,7 +278,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP19				: Brexin
 *Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: Less than 4 hours
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, Adobe Photoshop CS 5.5
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _Adobe Photoshop CS_ 5.5
 *Music track		: "Last Wish" by <Grave>, from Hell Revealed II Map 24
 *Bugs				: None known. Thanks to <Memfis> for his help.
 *Inspiration		: Hell Revealed II Maps 24 and 25
@@ -287,7 +287,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP20				: Charnage
 *Author(s)			: <Ch0wW>
 *Build time			: 3 hours for the layout only, additionnal 2 hours for only texturing
-*Editor(s) used		: Doom Builder 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ 2.1.2.1553
 *Music track		: D_READ_M (DooM 2)
 *Bugs				: None afaik
 *Inspiration		: Nothing; in DooM, castles are so popular !
@@ -297,7 +297,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP21				: Diabolic Patterns
 *Author(s)			: Memfis
 *Build time			: 3 hours
-*Editor(s) used		: Doom Builder 1.68, XWE
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_
 *Music track		: A song found on the FTP of old Plutonia 2, not sure who made it exactly.
 *Bugs				: Hopefully none!
 *Inspiration		: Plutonia obviously, particularly the start of map24. Not much else really.
@@ -307,7 +307,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP22				: Vaine Tentative
 *Author(s)			: <NilsTheRed>
 *Build time			: 3 hours
-*Editor(s) used		: Doom builder 2
+*Editor(s) used		: _Doom Builder_ 2
 *Music track		: RuneV2.mid ,from Quake 64, composed by <Aubrey Hodges>
 *Bugs				: ???
 *Inspiration		: some screens from other maps of the project
@@ -317,17 +317,17 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP23				: Enceinte infernale
 *Author(s)			: <Oxyde>
 *Build time			: 2h55; Achievement unlocked!
-*Editor(s) used		: Doom Builder 1.68 & XWE
+*Editor(s) used		: _Doom Builder_ 1.68 & _XWE_
 *Music track		: Subway (E3L4) from Duke Nukem 3D Atomic Edition
 *Bugs				: None that I am aware of that can break gameplay.
-*Inspiration		: None, I just loaded Builder with the idea of making a map that uses marble type of textures.
+*Inspiration		: None, I just loaded _Builder_ with the idea of making a map that uses marble type of textures.
 *Author comments	: I'm really happy of that one. I think the texturing isn't bad, and overall gameplay forces a slow progress while forcing the player to not let his guard down. I'm also happier because this map is my first ever with a hellish theme, and the first ever map of 3HA2! For the record, <JCD> and I were discussing about a new WAD we could work on, we came to the conclusion that another episode of 3HA was a good idea. I started this map right after our little chat, made in less than 3 hours!
 *Additional credits	: <Xsnake>, <Fsn76> for the ressources of ZDECTFMP3 that I used in this map.
 :-------------------------------------------------------------------------------
 *MAP24				: Supplice Claustrophobe
 *Author(s)			: <Datacore>
 *Build time			: 3H
-*Editor(s) used		: XWE, DoomBuilder 1
+*Editor(s) used		: _XWE_, _Doom Builder_ 1
 *Music track		: And The Bloodshed Began Map 12
 *Bugs				: ???
 *Inspiration		: Doom 3 - Hell
@@ -337,7 +337,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP25				: Crise Infernale
 *Author(s)			: <franckFRAG>
 *Build time			: 3 hours
-*Editor(s) used		: Doom Builder 1.68
+*Editor(s) used		: _Doom Builder_ 1.68
 *Music track		: from "Zone300", composed by <Paul Corfiatis>
 *Bugs				: none
 *Inspiration		: map29 of "Swift Death"
@@ -347,7 +347,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP26				: Pacte de Noirceur
 *Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: ~5 hours... Which means I failed again
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, Adobe Photoshop CS 5.5
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _Adobe Photoshop CS_ 5.5
 *Music track		: "Cavern", by <Stuart "Stewboy" Rynn>, from Speed of Doom Map 24
 *Bugs				: None known
 *Inspiration		: Some <Darkwave0000> maps
@@ -356,17 +356,17 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP27				: Passage a vide
 *Author(s)			: <Oxyde>
 *Build time			: 3h10; Achievement unlocked!
-*Editor(s) used		: Doom Builder 1.68 & XWE
+*Editor(s) used		: _Doom Builder_ 1.68 & _XWE_
 *Music track		: Goin' down the fast way from Rise of the Triad.
 *Bugs				: None that I am aware of that can break gameplay.
-*Inspiration		: None, I just loaded Builder with the idea of making a map that uses marble type of textures, like Map22.
+*Inspiration		: None, I just loaded _Builder_ with the idea of making a map that uses marble type of textures, like Map22.
 *Author comments	: 3HA2 is a WAD of firsts to me, because this map is my first ever map with a somewhat slaughterish type of gameplay. Tons of monsters, little space and little time... Enjoy!
 *Additional credits	: <Xsnake>, <Fsn76> for the ressources of ZDECTFMP3 that I used in this map.
 :-------------------------------------------------------------------------------
 *MAP28				: Gutter Grave
 *Author(s)			: <Darkwave0000>
 *Build time			: 3 hours for layout + gameplay, 7 hours for architecture + details
-*Editor(s) used		: Doom Builder 2.1.2.1553
+*Editor(s) used		: _Doom Builder_ 2.1.2.1553
 *Music track		: "Premonition"
 *Bugs				: Savegame Buffer Overrun, Vissprite Overflow
 *Inspiration		: Plutonium Winds MAP14, Resurgence MAP18, Stardate 20x6 MAP06
@@ -376,7 +376,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP29				: Chair brûlante
 *Author(s)			: <JC>
 *Build time			: 4 Hours
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, The Gimp 2
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _The Gimp_ 2
 *Music track		: Duke Nukem 3D - Plasma
 *Bugs				: None
 *Inspiration		: Some random hell levels
@@ -385,7 +385,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP30				: 3 Heures d'Agonie 2
 *Author(s)			: <JC>
 *Build time			: 4 hours
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, The Gimp 2
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _The Gimp_ 2
 *Music track		: Mist ache - Rise of the Triad
 *Bugs				: The Boss texture have some visual issues :/
 *Inspiration		: BTSX ep2 Hubs ? :D
@@ -395,7 +395,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP31				: Dextromethorphane 84%
 *Author(s)			: <William "[WH]-Wilou84" Huber>
 *Build time			: Roughly 5 hours, planning and testing excluded
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, Adobe Photoshop CS 5.5
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _Adobe Photoshop CS_ 5.5
 *Music track		: "Trilemma", by <James "Jimmy91" Paddock>, from Claustrophobia 1024. Been a long time I wanted to use a <Jimmy91> tune.
 *Bugs				: Some HOMs may be seen here and there in the large area that contains both keys
 *Inspiration		: The yellow / grey theme with a hint of green at the top comes from the packaging of a bottle of Vicks cough syrup I had to use last winter. Yep.
@@ -404,7 +404,7 @@ Many immeasurable thanks to those credited for their contribution and support to
 *MAP32				: Safe Zone
 *Author(s)			: <JC>
 *Build time			: 3 Hours
-*Editor(s) used		: Doom Builder 1.68, XWE 1.16, The Gimp 2, RMB v3.0
+*Editor(s) used		: _Doom Builder_ 1.68, _XWE_ 1.16, _The Gimp_ 2, _RMB_ v3.0
 *Music track		: Run Like Smeg - Rise of the Triad
 *Bugs				: None
 *Inspiration		: RMB tool :D

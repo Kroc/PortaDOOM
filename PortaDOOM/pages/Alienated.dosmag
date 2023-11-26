@@ -20,7 +20,7 @@ The WAD is meant to be played with dynamic lights turned on. Freelook is recomme
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Almost a year
-*Editor(s) used			: _GZDoomBuilder_
+*Editor(s) used			: _GZDoom Builder_
 *Known Bugs				: One crucial switch in map03 doesn't work if you have "all special lines block use" enabled in your compatibility settings
 *May Not Run With...	: Non-_ZDoom_ based ports
 *Tested With:			: _GZDoom_ 4.2.0, _Zandronum_ 3.0

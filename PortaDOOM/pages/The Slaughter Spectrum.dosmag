@@ -20,29 +20,29 @@ Thanks to the `Refracted Reality` team for letting the resources be used for thi
 
 These maps are pretty resource intensive. If you can only run the vintage _GZDoom_ it is unlikely that you will be able to run these maps very well. I get a minimum of 60 fps and the dedicated test team generally came back with no issues performance wise. If there is enough demand I may do a version for people with lower end rigs but these are designed to push the limits of the port to a degree. _GZDoom_ 4.1.1 or higher is recommended although a lot of early testing was done on 3.7.2. If you are having issues make sure you check your version (one of the testers was unknowingly using 3.3.2. Funnily enough they struggled at first).
 
-*Map 01: The Palace of the Black Singularity
+*Map 01: "The Palace of the Black Singularity"
 
-Relatively easy and free flowing map that goes out with a bang. Some trickery included. This was the first map I made for this and was originally almost twice the size (130k linedefs at it's fattest). However _GZdoom_ loading times were abysmal even on powerful rigs so a chunk was removed and stowed away for a rainy day (Some of you will remember the infamous jellyfish room). This map has some of my favourite light sequences to date.
+Relatively easy and free flowing map that goes out with a bang. Some trickery included. This was the first map I made for this and was originally almost twice the size (130k linedefs at it's fattest). However _GZDoom_ loading times were abysmal even on powerful rigs so a chunk was removed and stowed away for a rainy day (Some of you will remember the infamous jellyfish room). This map has some of my favourite light sequences to date.
 
-*Map 02: Crimson Chaos
+*Map 02: "Crimson Chaos"
 
-This map was heavily planned on paper before a line was drawn on *GZDB* and is largely the same as what the original layout was. However you could hold the entire map within your steely gaze when the first map draft was completed (not good for fps). The map was then chopped up into 3 pieces and linked with line portals to create the effect of a winding journey while being actually playable (credit to <Cyano> for that idea). This map uses more portal trickery during combat with a fair degree of success. Portals have inbuilt issues (sound clipping, dumb AI) but I'm calling it a success.
+This map was heavily planned on paper before a line was drawn on _GZDB_ and is largely the same as what the original layout was. However you could hold the entire map within your steely gaze when the first map draft was completed (not good for fps). The map was then chopped up into 3 pieces and linked with line portals to create the effect of a winding journey while being actually playable (credit to <Cyano> for that idea). This map uses more portal trickery during combat with a fair degree of success. Portals have inbuilt issues (sound clipping, dumb AI) but I'm calling it a success.
 
-*Map 03: Where Dragons Dwell
+*Map 03: "Where Dragons Dwell"
 
 This map was originally meant to be made by someone else who could no longer participate and at the time there was a looming deadline. So <Cyano> and I decided to collab on a map and the idea was a shortish, but heavy slaughter map (I used `Sunlust` map 18 as a reference). <Cyano> started the ball rolling and I took it across the finish line. The result is a very punchy map that I believe is the best of the set. Lessons learned from `POTBS` and `CC` made for a better initial design and having <Cyano>'s input made for a different perspective leading to a higher quality map. The final area was heavily inspired by `Amid Evil` and yes it's named after a Gojira Song \m/
 
-*Map 04: Void Noir
+*Map 04: "Void Noir"
 
 So this is where things get a bit different. A seed of an idea from <Cyano> that I then went a bit crazy with. This was also a map meant to be made by someone else with even less time to make a replacement so I went with a very short but highly experimental concept map that deeply explores how line portals can be used to build non euclidean geometry and be specifically built around in combat situations, not just as another monster dispenser. By far and away the most polarising map in the set. People either think it is a fantastic idea and want to see more or they absolutely hate it. Fortunately for those who hate it, it is really short. Oozing atmosphere and genuinely eerie I really enjoyed making this one and listening to people test it in voice chat was greatly satisfying ;p
 
-*Map 05: The Infinite Void
+*Map 05: "The Infinite Void"
 
 This was designed to be the hub map for `RR`. I can't really do anything with it so I'm chucking it here as a 'bonus' map. No combat, nothing to do, not finished (optimisation in particular). It is a rather striking map and contains one hell of a floor flat changing script (probably easier done with shaders but _ACS_ for the win). Jokingly referred to as "The Spirograph Map" I did things here that would never be practical in a combat map but being a hub various artistic ideas could be explored. The centre of the map was to be the boss arena for the end of `RR`.
 
 :Special thanks to:
 :-------------------------------------------------------------------------------
-- <Cyano Blugron> for helping with `Where Dragons Dwell`, extensive testing, ideas sounding board, and being a generally awesome human. These maps wouldn't be what they are today with out you
+- <Cyano Blugron> for helping with `"Where Dragons Dwell"`, extensive testing, ideas sounding board, and being a generally awesome human. These maps wouldn't be what they are today with out you
 
 - <Clay> for sexy af models and decals (the saviour of fps) and generally letting me chew your ear off
 

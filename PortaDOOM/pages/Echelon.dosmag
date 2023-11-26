@@ -22,7 +22,7 @@ Feel free to use jump and duck if you so please, but these new functions aren't 
 :-------------------------------------------------------------------------------
 *Base					: New verteces, linedefs and sectors from scratch. 3 originally sprited monsters. Bunches of both new and reused textures.
 *Build Time				: Started life as `Project PAR`, back in 2013. Morphed into `Echelon`. Portions of the WAD's architecture date back as far as 1996. I.e. Map 12 started life as a reject for `Eternal Doom` MAP 01 and MAP 29 was embarked upon in late 1998. Pieces of map throughout also contain some older stuff
-*Editor(s) used			: _GZDoomBuilder_, _SLADE_ v3.0.2, _Photoshop Elements_
+*Editor(s) used			: _GZDoom Builder_, _SLADE_ v3.0.2, _Photoshop Elements_
 *Known Bugs				: There are some "slime" artifacts along the way, here and there
 *May Not Run With...	: Other `Doom` source ports than _ZDoom_. Maps 28 & 29 are high detail and may not run well on slower PCs
 

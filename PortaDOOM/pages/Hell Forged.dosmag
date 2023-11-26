@@ -12,11 +12,11 @@ $KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-`Hell-Forged` is a reboot of Demon Eclipse's Episode 2. It no longer directly relates to the story in `Doom 1`, as the original project did. Instead it takes place on a different medieval human world where Hell has begun its invasion. It is, however, a sequel to `DE-EP2`, chronologically.
+`Hell-Forged` is a reboot of <Demon Eclipse>'s Episode 2. It no longer directly relates to the story in `Doom 1`, as the original project did. Instead it takes place on a different medieval human world where Hell has begun its invasion. It is, however, a sequel to `DE-EP2`, chronologically.
 
 :Construction:
 :-------------------------------------------------------------------------------
-*Base					: Doom 2 and from scratch
+*Base					: `Doom 2` and from scratch
 *Build Time				: ~2 years
 *Editor(s) used			: _GZDoom Builder_, _SLADE3_, _Photoshop CC_, _ZBrush_
 *Known Bugs				: None
@@ -25,5 +25,5 @@ $KEY:Z=URL:https://forum.zdoom.org/viewtopic.php?t=13397
 
 :Credits:
 :-------------------------------------------------------------------------------
-- <Comet1337> & <BlueShadow> for their ZScripts.
-- `Hell-Forged` Testers (See [W: full credits list])
+- <Comet1337> & <BlueShadow> for their _ZScripts_
+- `Hell-Forged` Testers (See [Z: full credits list])

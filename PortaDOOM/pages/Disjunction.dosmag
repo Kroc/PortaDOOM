@@ -25,7 +25,7 @@ Maps should be _Boom_-compatible (complv 9), but if issues arise, please notify 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: dunno
-*Editor(s) used			: _GZDoomBuilder_, _SLADE3_
+*Editor(s) used			: _GZDoom Builder_, _SLADE3_
 *May Not Run With		: _ZDaemon_
 *Tested With			: _GZDoom_/_Pr-Boom_
 

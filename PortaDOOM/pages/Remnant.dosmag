@@ -22,7 +22,7 @@ While the monster count may be high, the map is not designed as a slaughtermap; 
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: ~3 months
-*Editor(s) used			: _GZDoomBuilder Bugfix_, _SLADE3_, _WhackEd 4_
+*Editor(s) used			: _GZDoom Builder-Bugfix_, _SLADE3_, _WhackEd 4_
 *Known Bugs				: None
 *May Not Run With...	: _DOOM Retro_ (3.0.3 or older), _Chocolate Doom_, Vanilla
 *Tested With			: _Crispy Doom_ 5.5.2 to 5.6.3
@@ -42,4 +42,4 @@ While the monster count may be high, the map is not designed as a slaughtermap; 
 - Final boss "Master" based on the Haedexebus by <Ozymandias81>, <DeVloek>, <Eriance>, <yuraofthehairfan> and <zrrion the insect> (<Realm667>)
 - Various sprites and SFX from `Heretic` and `Hexen`
 - A vanilla `Doom` conveyor belt prefab by <Linguica>
-- The song "Corrupt, doomed" courtesy of <Teemu "Forchion" Mastovaara>. The song can be used unaltered, but if there is a desire to alter it, please contact him at _teemumas(at)hotmail.com_
+- The song "Corrupt, doomed" courtesy of <Teemu "Forchion" Mastovaara>. The song can be used unaltered, but if there is a desire to alter it, please contact him at <teemumas(at)hotmail.com>

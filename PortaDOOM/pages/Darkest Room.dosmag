@@ -24,7 +24,7 @@ I suggest to start on HMP and, eventually,\\give UV a try when you know well the
 *Build Time				: Hours
 *Editor(s) used			: _Doom Builder 2_, _SLADE3_, _WhackEd4_
 *Known Bugs				: -
-*May Not Run With...	: _Chocolate doom_, _Crispy doom_
+*May Not Run With...	: _Chocolate Doom_, _Crispy doom_
 *Tested With...			: _PrBoom+_-2.5.1.4, _GZDoom_
 
 :Credits:
@@ -74,7 +74,7 @@ $KEY:F=GOTO:Finely Crafted Fetish Film
 - <Pavel Tvrzník> (<Pipicz>) of `Bloodstain`
 - `Ancient Aliens` team
 
-- This PWAD contains select texture(s) and flat(s) that can originally be found in `GothicDM` or `Gothic2`. Credit and thanks go out to the artist(s) of said flat(s) and texture(s) and also to the rest of the <Gothic Crew> (1997/98). The ORIGINAL `GothicDM(2).ZIP` can be found at the idGames Archives. Each said PKZIP archive contains thirty-two professional quality levels and music found at your favorite idGames FTP mirror:
+- This PWAD contains select texture(s) and flat(s) that can originally be found in `GothicDM` or `Gothic2`. Credit and thanks go out to the artist(s) of said flat(s) and texture(s) and also to the rest of the <Gothic Crew> (1997/98). The ORIGINAL `GothicDM(2).ZIP` can be found at the _idgames_ archives. Each said PKZIP archive contains thirty-two professional quality levels and music found at your favorite _idgames_ FTP mirror:
 $KEY:1=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothicdm
 $KEY:2=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/megawads/gothic2
 

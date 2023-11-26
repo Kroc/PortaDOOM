@@ -29,7 +29,7 @@ I hope you enjoy `Eviternity`, thanks for downloading & playing!
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 11 Months (9 months initial build, 2 for final)
-*Editor(s) used			: _GZDoomBuilder-Bugfix_, _SLADE3_, Numerous external tools for graphics and additional lumps
+*Editor(s) used			: _GZDoom Builder-Bugfix_, _SLADE3_, Numerous external tools for graphics and additional lumps
 *Known Bugs				: None (We hope!)
 *May Not Run With...	: Any port not specified below
 *Tested With...			: Primary engines: _GZDoom_ 3.7.1, _PrBoom+_ 2.5.1.5
@@ -38,7 +38,7 @@ I hope you enjoy `Eviternity`, thanks for downloading & playing!
 
 :Credits
 :-------------------------------------------------------------------------------
-Those who mapped for Eviternity are as follows:
+Those who mapped for `Eviternity` are as follows:
 
 *MAP04, MAP09:			<James "Jimmy" Paddock>
 						(MAP04 is a collaboration with <Dragonfly>)
@@ -163,7 +163,7 @@ This project has had various assets made for it and/or borrowed from other works
 - M_Doom & TITLEPIC graphics
 
 <ukiro>:
-- Multiple requests for OTEX, Tree Sprites, Archangelus sound effect voice "acting", various sprite edits
+- Multiple requests for `OTEX`, Tree Sprites, Archangelus sound effect voice "acting", various sprite edits
 
 <CWolf>:
 - Firestick replacements
@@ -205,7 +205,7 @@ This project has had various assets made for it and/or borrowed from other works
 - Astral Cacodemon Sounds - Sourced from the <Realm667> Bestiary: "Poe"
 
 <Jimmy>:
-- The Font. Based on the font 'Voice In My Head' by Chequered Ink
+- The Font. Based on the font 'Voice In My Head' by <Chequered Ink>
 
 <Clay>:
 - Archangelus Sprites

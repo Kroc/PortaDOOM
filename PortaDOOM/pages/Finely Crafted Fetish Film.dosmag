@@ -12,19 +12,19 @@ $KEY:D=URL:https://www.doomworld.com/forum/topic/104608
 :Requires : *boom		Includes : *?
 :-------------------------------------------------------------------------------
 
-`Finely Crafted Fetish Film` is a set of 7 boom-compatible maps for `Doom2` with a focus on puzzles and unusual layouts. Shoutout to <anotak> and the lua functionality that is now part of *Doombuilder X*, without which this mapset wouldn't exist.
+`Finely Crafted Fetish Film` is a set of 7 _Boom_-compatible maps for `Doom2` with a focus on puzzles and unusual layouts. Shoutout to <anotak> and the _Lua_ functionality that is now part of _Doom Builder X_, without which this mapset wouldn't exist.
 
 The maps themselves feature a mixture of puzzle and combat elements: block pushing, switch / elevator setups, monster manipulation, platforming, and some normal slaughter fights here and there. Please consult the following chart to identify which maps may align with your interests:
 
 *MAPS:
 
-01 : *   : Yesterday's --- Ave
-02 : *** : Smelling Faintly Of Roses
-03 : **  : Don't Look Back
-04 : *** : Flower Child
-05 : **  : I Know A Ghost,
-06 : *   : Confession
-07 : **  : Mechanical Embrace
+01 : *   : "Yesterday's --- Ave"
+02 : *** : "Smelling Faintly Of Roses"
+03 : **  : "Don't Look Back"
+04 : *** : "Flower Child"
+05 : **  : "I Know A Ghost,"
+06 : *   : "Confession"
+07 : **  : "Mechanical Embrace"
 
 * : puzzle-factor, as determined by our top puzzle quantification experts
 
@@ -48,7 +48,7 @@ IP :: "Strolling Away From A Dark And Dangerous Place" by <Robert Inventor>
 
 *Thanks to:
 
-- <anotak>: DBX scripting development & support
+- <anotak>: _DBX_ scripting development & support
 - <GrainOfSalt>: statbar gfx
 
 *Various textures ripped from:

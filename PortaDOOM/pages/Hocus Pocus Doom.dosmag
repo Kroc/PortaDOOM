@@ -20,9 +20,9 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/hocus
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: 2009-2019
-*Editor(s) used			: _SLADE3_, _GzdoomBuilder_
+*Editor(s) used			: _SLADE3_, _GZDoom Builder_
 *May Not Run With...	: Does not work with `Brutal Doom`
-*Tested With...			: _Gzdoom_ 4.2.1 or later
+*Tested With...			: _GZDoom_ 4.2.1 or later
 
 :Credits:
 :===============================================================================
@@ -41,10 +41,10 @@ Project lead, mapper, graphics, compilation - <Ravage>
 :-------------------------------------------------------------------------------
 - <Kate> - Scripting
 - <Gez> - Scripting
-- <Gutawer> - Zscript
+- <Gutawer> - _ZScript_
 - <Hisymak> - GENMIDI & resource tool for `Hocus Pocus`
-- <Blue Shadow> - Zscript
-- <Kinsie> - Zscript
+- <Blue Shadow> - _ZScript_
+- <Kinsie> - _ZScript_
 
 :Sprites/Graphics:
 :-------------------------------------------------------------------------------

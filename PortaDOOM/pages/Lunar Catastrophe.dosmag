@@ -14,7 +14,7 @@ $KEY:D=URL:https://www.doomworld.com/forum/topic/103629
 
 These maps are without a doubt strongly influenced by the original game. We aimed to emulate each developer's mapping style when appropriate and the overall feeling of playing the original `Doom`, but of course we took some liberties along the way and added in our own touches. We hope you enjoy the levels!
 
-Let us know what you think over at [W: Doomworld]!
+Let us know what you think over at [D: Doomworld]!
 
 :---
 
@@ -28,7 +28,7 @@ Each level has its own par time as well!
 :-------------------------------------------------------------------------------
 *Base					: New from scratch 
 *Build Time				: About 2 years off and on (see below)
-*Editor(s) used			: _DoomBuilder_, _Gimp_, _Paint_ and _DoomWord_
+*Editor(s) used			: _Doom Builder_, _GIMP_, _Paint_ and _DoomWord_
 *Known Bugs				: None that we know of aside from the occasional slimetrail
 *Tested With...			: _ZDoom_
 

@@ -104,7 +104,7 @@ _PortaDOOM_'s viewer and launcher are written with _QB64_.
 :===============================================================================
 *"Xdelta version 3 is a C library and command-line tool for delta compression using VCDIFF/RFC 3284 streams".
 
-_Xdelta_ is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by _github.com/Doom-Utils/iwad-patches_.
+_Xdelta_ is used to patch IWADs to canonical versions, i.e. remove censoring from `DOOM 3 BFG Edition`'s WADs. The patches themselves are provided by <github.com/Doom-Utils/iwad-patches>.
 
 :Zandronum - <zandronum.com>
 :===============================================================================

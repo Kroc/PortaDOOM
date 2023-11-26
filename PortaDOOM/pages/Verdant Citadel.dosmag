@@ -12,7 +12,7 @@ $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/v-z/vercit
 :Requires : *gzdoom		Includes : *+Sounds +Music +Graphics
 :-------------------------------------------------------------------------------
 
-You've reached the shore of the Verdant Citadel, a stone bulwark on an island in an endless sea. It is inhabited by undead demonic caretakers who are responsible for keeping blood-thirsty, pain-delivering space marines like you from gaining a foothold. But that's never given you any pause before...
+You've reached the shore of the `Verdant Citadel`, a stone bulwark on an island in an endless sea. It is inhabited by undead demonic caretakers who are responsible for keeping blood-thirsty, pain-delivering space marines like you from gaining a foothold. But that's never given you any pause before...
 
 Narrative fluff aside, I wanted to get better at non-linear layouts so ended up making this map. It is about as non-linear as I could stand to make it, and as a result there are a few ways to approach it. Some routes are a little easier, some a little harder. Playtime is estimated between 25 and 35 minutes at Ultra-Violence.
 
@@ -24,7 +24,7 @@ Jumping and crouching are disabled through MAPINFO as the map is not designed wi
 :-------------------------------------------------------------------------------
 *Base					: New from scratch
 *Build Time				: Did not keep track, but seemed like ages
-*Editor(s) used			: _GZDoom Builder Bugfix_, _SLADE_, _Photoshop_, _Audacity_
+*Editor(s) used			: _GZDoom Builder-Bugfix_, _SLADE_, _Photoshop_, _Audacity_
 *Known Bugs				: Some minor visual glitches related to things moving between sector portals may occur. Versions of _GZDoom_ prior to 4.0.0 will exhibit a monster behaviour bug during the last part of the map
 *Tested With			: _GZDoom_ 4.0.0 in hardware accelerated mode. Also works well with the Vulkan renderer since _GZDoom_ version 4.1.2
 
