@@ -2,10 +2,11 @@ $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\breach\play-breach.ini"
 $KEY:T=SHELL:wads\onesies\breach\breach.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/71430
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/breach
 
 :Breach                                             * 2015 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2015>12>28	  Author : *<Viggles>
 :Levels   : *1			   Modes : *Single
