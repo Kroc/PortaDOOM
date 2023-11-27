@@ -1,0 +1,122 @@
+===========================================================================
+Advanced engine needed  : none, runs with doom2.exe v1.9 or any port
+Primary purpose         : Single+Coop play
+===========================================================================
+
+Title                   : Scythe
+Filename                : scythe.wad
+Release date            :  
+Author                  : Erik Alm, with guest mapper Kim "Torn" Bach
+Email Address           : erik_a80@hotmail.com (Erik)
+Other Files By Author   : quite a bunch, http://www.doom2.net/~erik/ 
+Misc. Author Info       : 22 year old Doomer (Erik), A somewhat younger Doomer (Torn)
+
+Description             : A 32 level megawad for doom2. This megawad doesn't have perfect 
+		          texture alignment, insane detail and fantasticly hard gameplay.
+			  Instead it focuses on small fun maps to blast through without much
+ 			  thought about defense. The difficulty rises steadily as you go through
+			  the maps and the last few should challenge even the best.
+
+Additional Credits to   : id software, Fredrik Johansson (textures), ZarcyB (titlepic)
+			  Chris "Ryback" Ratcliff (map30 idea). Drew "stx-Vile" Dewore (testing)
+			  All other testers too, thanks!
+===========================================================================
+* What is included *
+New levels              : Yes, all new levels by Erik Alm (and map31 by Kim "Torn" Bach)
+Sounds                  : No
+Music                   : Yes, musics selected by Qwerty, Torn and myself.
+Graphics                : Sky textures from doom and dark covenant.
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   :  
+			   
+* Play Information *
+Game                    : DOOM2
+Map #                   : Map01-32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes 
+Deathmatch 2-4 Player   : Not recommended.
+
+Difficulty Settings     : Yes
+
+For veteran doomers, I suggest playing e1 and e2 on uv -fast and e3 on uv if you want
+a good challenge. You will get stripped of all weapons every 10 maps anyway so it's 
+doesn't matter if you quit and use -warp 21 to get to ep3 for example.
+
+For good doomers (like the most of you out there I guess), I suggest playing the whole
+thing on skill 4 (ultra violence). It will get hard towards the end.
+
+For average, casual doomers, I suggest playing e1 and e2 on uv and e3 on hmp.
+
+For newbies (like there are any) and weak players, I suggest playing e1 and e2
+on hmp and e3 on hntr (skill 2).
+
+
+* Construction *
+Base                    : New levels from scratch
+Build Time              : 25 days of building, 25 days of slacking off.
+Editor(s) used          : Deth, Warm, Deutex  
+
+Known Bugs              : Texture alignment bugs. Map28 uses a voodoo doll effect which 
+ 			  will not work in legacy, the map is still completable though.
+			    
+May Not Run With...     : Unreal 2
+
+Lame story (tm):
+You are a space marine yadayada... A time anomaly has been detected and there
+seems to be demons traveling to earth from the future!1 Your job is to travel to
+various places to find out where this time anomaly is and then stop the demonic Invasion.
+The list of places includes military and scientific bases, factories, cities and other
+misc locations. Who knows where you'll end up...
+
+ep1
+Map01 - Get going! - very easy
+Map02 - Punchline - very easy
+Map03 - Up and around - easy
+Map04 - lost warehouse - very easy
+Map05 - Slimy tunnels - easy
+Map06 - Pressure point - medium
+Map07 - Deadly - medium
+Map08 - Garden base - medium
+Map09 - Computer storage - easy
+Map10 - the Lords - medium
+
+ep2
+Map11 - Sneak peak - medium/hard
+Map12 - Walk in the park - medium
+Map13 - Subverted base - easy
+Map14 - Power outage - easy
+Map15 - Blood bath - medium
+Map16 - Burial grounds - medium
+Map17 - Book Lords - medium/hard
+Map18 - M/S Futura - medium
+Map19 - 3000 AD - medium
+Map20 - The starport - medium/hard
+
+ep3
+Map21 - Solitude - hard, step down in skill if you die a lot here or in the following 2 maps.
+Map22 - Despair - hard
+Map23 - Anger - hard
+Map24 - Hatred - hard
+Map25 - Envy - medium
+Map26 - Fear - hard, insane monster density.
+Map27 - Terror - hard
+Map28 - Run from it - hard, keep running or you'll die. UV not recommended for keyboarders.
+Map29 - Hell on earth - hard
+Map30 - Fire and ice - extremely hard, watch out so you dont get telefragged :P
+
+secret maps
+Map31 - I dunno Torn - by Torn - medium
+Map32 - Enoz Soahc - hard
+ 			   
+
+* Copyright / Permissions *
+Authors (may NOT) use the contents of this file as a base for
+modification or reuse.   
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. This file may not be used for any commercial purposes without the
+author's agreement.* Where to get the file that this text file describes *
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+ 

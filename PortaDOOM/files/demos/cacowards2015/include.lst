@@ -1,0 +1,5 @@
+files\demos\cacowards2015\
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
+# additional PWADs:
+@files\wads\megawads\scythe\include.lst

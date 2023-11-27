@@ -27,20 +27,24 @@ Don't let the prospect of a re-release or the redundancy of "The Original" prefi
 
 :Zero Seconds
 :===============================================================================
-$KEY:1=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv2155\30uv2155.LMP"   /CMPLVL 2
-$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv2032\30uv2032.LMP"   /CMPLVL 2
-$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv1959\30uv1959.LMP"   /CMPLVL 2
-$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30nm2721\30nm2721.lmp"   /CMPLVL 2
-$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2015\ep2-0327\ep2-0327.lmp"   /CMPLVL 3
-$KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2015\ep4-0342\ep4-0342.lmp"   /CMPLVL 3
-$KEY:7=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2015\ep1-457\ep1-0457.lmp"    /CMPLVL 3
-$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM  /DEMO "demos\cacowards2015\ep3-347\ep3-0347.lmp"    /CMPLVL 3
-$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT   /DEMO "demos\cacowards2015\evall-4416\30ev4416.lmp" /CMPLVL 4
-<ZeroMaster> had a very busy year raising the bar on `DOOM` speedrunning. The war for `DOOM II` UV marched on immediately after last year's _Cacowards_, with <Looper> sounding the [1: first shot] with more than a minute's worth of improvement at 21:55. <ZM> [2: followed] some time later with 20:32, which <Looper> beat, but <ZeroMaster> [3: countered] in the best way possible, by pushing the time below the unthinkable 20 minute barrier at 19:59. What a battle! He also went so far as to make a bit of a clean sweep, [4: taking] the `DOOM II` Nightmare record (27:21) on two occasions with a bit of back-and-forth between himself and <eLim>; [5: besting DOOM's E2] by two seconds (3:27); [6: throttling the E4 record] by 37 (3:42); shaving [7: three seconds off of E1] (4:57); [8: ending E3] at a whopping one second improvement (3:47); and [9: eking out] a sixteen second victory (44:16) over <j4rio>'s `TNT: Evilution` record.
+!*Offline Replays!*
+!:---
+!_PortaDOOM_ includes these speedruns as replay files that can be watched in-engine -- use keys [End] or [PgDn] to skip a level, [,] to slow down playback, [.] to speed up, and [/] to reset to normal speed
+
+$KEY:1=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv2155\30uv2155.LMP" /CMPLVL 2
+$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv2032\30uv2032.LMP" /CMPLVL 2
+$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30uv1959\30uv1959.LMP" /CMPLVL 2
+$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2015\30nm2721\30nm2721.lmp" /CMPLVL 2
+$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2015\ep2-0327\ep2-0327.lmp" /CMPLVL 3
+$KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2015\ep4-0342\ep4-0342.lmp" /CMPLVL 3
+$KEY:7=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2015\ep1-457\ep1-0457.lmp" /CMPLVL 3
+$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2015\ep3-347\ep3-0347.lmp" /CMPLVL 3
+$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT /DEMO "demos\cacowards2015\evall-4416\30ev4416.lmp" /CMPLVL 4
+<ZeroMaster> had a very busy year raising the bar on `DOOM` speedrunning. The war for `DOOM II` UV marched on immediately after last year's _Cacowards_, with <Looper> sounding the [1: first shot] with more than a minute's worth of improvement at *21:55*. <ZM> [2: followed] some time later with *20:32*, which <Looper> beat, but <ZeroMaster> [3: countered] in the best way possible, by pushing the time below the unthinkable 20 minute barrier at *19:59*. What a battle! He also went so far as to make a bit of a clean sweep, [4: taking] the `DOOM II` Nightmare record (*27:21*) on two occasions with a bit of back-and-forth between himself and <eLim>; [5: besting DOOM's E2] by two seconds (*3:27*); [6: throttling the E4 record] by 37 (*3:42*); shaving [7: three seconds off of E1] (*4:57*); [8: ending E3] at a whopping one second improvement (*3:47*); and [9: eking out] a sixteen second victory (*44:16*) over <j4rio>'s `TNT: Evilution` record.
 
 $KEY:0=SHELL:launcher.exe /AUTO /USE prboom-plus /PLUTONIA /DEMO "demos\cacowards2015\plalln4357\30pn4357.lmp" /CMPLVL 4
-$KEY:A=URL:https://www.youtube.com/watch?v=BI_pGsOVW2s
-Of course, the absolute craziest thing was the establishment of the [0: Plutonia Nightmare record], which didn't even exist until June of this year -- 43:57 of nail-biting, plasma-spouting, wild-ass action, not to mention wresting the [A: Scythe UV-speed record] from <Dime> at a solid 14:53. Best of luck to anyone who wants to chase these records down, and thank you, <ZeroMaster>, for some incredible performances.
+$KEY:A=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /PWAD "megawads\scythe\SCYTHE.WAD" /DEMO "demos\cacowards2015\scall-1453\sc30-1453.lmp" /CMPLVL 2
+Of course, the absolute craziest thing was the establishment of the [0: Plutonia Nightmare record], which didn't even exist until June of this year -- *43:57* of nail-biting, plasma-spouting, wild-ass action, not to mention wresting the [A: Scythe UV-speed record] from <Dime> at a solid *14:53*. Best of luck to anyone who wants to chase these records down, and thank you, <ZeroMaster>, for some incredible performances.
 
 
 :Pelican of the Hour

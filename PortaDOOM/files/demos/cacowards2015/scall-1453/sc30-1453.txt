@@ -1,0 +1,151 @@
+Runner: Zero-Master
+Date: 2015-01-17 00:00
+WAD: SCYTHE.wad
+Category: UV-Speed
+Map: Movie 1-30
+Source Port: Competition Doom v2.0.2.1
+Time: 14:53 (15:07.00)
+
+MAP 	Time	
+01	00:14	:((
+02	00:16	:(
+03	00:31	:(
+04	00:20	:))
+05	00:22	:)
+06	00:27	:))
+07	00:04	:|
+08	00:20	:)
+09	00:25	:))
+10	00:23	:((
+11	00:16	:|
+12	00:28	:((
+13	00:37	:)
+14	00:44	:|
+15	00:23	:((
+16	00:33	:))
+17	00:41	:((
+18	00:24	:)
+19	00:33	:)))
+20	00:52	:))
+21	00:42	:(((
+22	01:02	:((
+23	00:04	:))
+24	00:45	:)
+25	00:17	:)
+26	01:06	:((
+27	00:16	:)
+28	00:31	:(
+29	00:40	:|
+30	00:37	:)
+
+
+Description:
+My first scythe exit.
+
+After working on Doom 2 I wanted a break and moved onto Final Doom: TNT Evilution, 
+but then I needed a break from that as well (haven't done a single attempt yet, just planning\routing)
+so I moved onto Scythe. Scythe is a very short wad, and it also has several easy maps, and
+some difficult ones (map 3, 17, 21, 24). It's a lot of fun to run scythe compared to the IWADs, 
+since you don't have to reset on map 2-4 all the time, even though map 3 can be quite a pain.
+
+For Scythe I was only looking for an exit, as I think there would be a good chance for it to go sub 15.
+Which is why I don't reset at all, no matter how bad things go, though in the end I was quite close to going above 15.
+
+I think Scythe can go much further, sub 14 minutes shouldn't be very difficult if you use more aggressive strategies. 
+Map 17 has been a huge pain for me, even though I have no trouble with it when I practiced it, but
+since it got me so often in single segment I just played very safe this time. There are other places
+where I put in safer strategies which shouldn't really be necessary. 
+
+I would like to thank 4shockblast, just a day ago I asked him if he had tried to find a consistent setup 
+for the red key grab on map 13, it then only took him like 5 minutes before he found a spot that requires just 
+forward movement. This saves around 10 seconds for me, which also pushes this time below 15 minutes!
+
+
+Map 01: 14 seconds is terrible, future runs should just reset if 13 seconds or higher.
+
+Map 02: I'm not a big fan of tyson, again a terrible time.
+
+Map 03: Just happy to get through this map, most runs die on this map, you can save at least 5 seconds.
+
+Map 04: 20 seconds is better than what I usually get.
+
+Map 05: I try to make this jump straight away, and I usually pick up the berserk pack to kill some spectres
+since they will sometimes block you from below when going over to YK door.
+
+Map 06: Went really well, I have a pretty good setup for the jump in the middle of the map, 
+but sometimes you can get blocked by the hellknight or the demon, which is quite annoying.
+
+Map 07: For some reason this rocket jump scares me, even though it's very easy compared to the
+ones you find in say doom 2 or plutonia. I guess it's just the lack of a proper setup and just going
+for it that scares me.
+
+Map 08: A nice skip here, not a difficult trick, but I fail quite often here as well when I play like shit.
+Just get the right position and SR50, at least it's only map 8 and not like map 24 (chasm) of doom 2 where the run ends if you fail.
+
+Map 09: Good time, I usually don't mess this map up.
+
+Map 10: Earlier this day I failed this trick, I thought to myself I would practice it to make sure that I never failed it again.
+I found a good setup for it, but because I bounced off the wall and didn't manage to find a certain pixel I got delayed enough
+to miss the damn elevator...
+
+Map 11: Could be better.
+
+Map 12: Horrible time, what the hell was up with that damn manc, just like map 16 he just managed to block the whole way.
+
+Map 13: Pretty neat key grab trick, again thanks to 4shockblast for the setup, works every time, overall time could still be better.
+
+Map 14: heh, 2% health. 
+
+Map 15: I fell down here, wasn't sure if I should go back through teleporter or open gate. Went for the gate and got lucky
+that one of the zombiemen or so shot the arch vile, terrible time.
+
+Map 16: Also a difficult map sometimes, I hate it when you get this kind of nightmare arch vile who just keeps on attacking.
+
+Map 17: This damn map... 41 seconds is terrible, easy to save 10 seconds here, I just didn't want to end my runs here anymore.
+
+Map 18: Decent, I drag the manc out while I go for soulsphere.
+
+Map 19: I should really study the TAS runs more often, then I would have discovered this amazing trick earlier. 
+Amazing time on this map, got the invurnability through the wall and arch vile attacked me relatively quickly.
+
+Map 20: Just rocket and plasma spam down everything since you die anyways.
+
+Map 21: 42 seconds... hah, yeah, I guess this is the biggest time loss. I grab soulsphere because it increases my chances,
+though I might have been better off without it this time... when I was stuck by the door I was pretty much saying:
+hurry up and kill me already.
+
+Map 22: Another garbage time, and a lot closer than it needed to be. To anyone else that runs this wad, 
+you should avoid shooting the middle sector, as it teleports in some spectres etc, which can be used to block the cyberdemon.
+It also triggers the arch vile and baron teleport in the RK room. So, this map should be done in sub 50 seconds every time
+without much trouble.
+
+Map 23: Awesome cooperation from this arch vile.
+
+Map 24: Very scary map for me, I have just settled with the fact that I will lose runs to that cyberdemon...
+and this should really have been a dead run right there, as he did actually hit me. I don't know how I made it through.
+
+Map 25: Nice skip here, I also just wait for the demon to get a bit further away from the door.
+
+Map 26: Mancubi... lose some weight, please, and let me through. You're supposed to just run straight past everything
+and get to the exit without giving the cyberdemons a chance to attack, but I had to go for the invurnability this time.
+
+Map 27: Rocket jump here because it's consistent, you can do without but I don't know of any setup for it. 
+Also possible to do second rocket jump for the megasphere if you want some armor for the next maps.
+
+Map 28: Almost failed this map, unbelievable.
+
+Map 29: Just lost a run on this map like an hour before this run, that run was 3 seconds faster up to this map.
+The arch vile ran all the way to the right and I couldn't get up, this time it went better.
+
+Map 30: Straightforward map, once I got past the YK room with full health I knew it was over. 
+Still the cyberdemon at the start can really mess you up.
+
+
+I really enjoyed this WAD, but I don't think I will be going for a better time anytime soon, 
+at least not until someone else improves it, which I am sure won't take too long, but even then I want to focus on iwads. 
+Thanks to Dime, since most of my run is based upon sc30-1621. Also thanks to Akse for his amazing TAS run, wish I saw it sooner.
+
+I will move back to TNT and try to make some final adjustments to the route before I go for 30ev attempts. 
+I'll probably do some 30uv attempts as well, just to not get too bored of TNT.
+
+

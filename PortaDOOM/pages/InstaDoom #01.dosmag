@@ -31,4 +31,5 @@ ALSO ALSO INCLUDES: InstaDoom DLC Pack 1! Is Instagram too "mainstream" for your
 
 :Credits
 :-------------------------------------------------------------------------------
-<Mike12> for lots of help with the Doomguy HUD graphics. <Scuba Steve> for the third-person Doomguy poses. The <Chainsmokers> and midimusic.de for the tunes. The Freedoom project for the Python scripts to generate the custom palettes and colormaps.
+$KEY:F=GOTO:FreeDOOM
+<Mike12> for lots of help with the Doomguy HUD graphics. <Scuba Steve> for the third-person Doomguy poses. The <Chainsmokers> and midimusic.de for the tunes. The [F] `Freedoom` project for the Python scripts to generate the custom palettes and colormaps.

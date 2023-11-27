@@ -385,13 +385,23 @@ REM #---------------------------------------------------------------------------
 SET DEFAULT_CFG="default.%~1.cfg"
 SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
 
-%CONFIG_DEFAULT% SET "key_use" "0x65"
-%CONFIG_DEFAULT% SET "key_spy" "0x2a"
-%CONFIG_DEFAULT% SET "key_screenshot" "0xd8"
+REM # common settings
 %CONFIG_DEFAULT% SET "hudadd_crosshair" "1"
 %CONFIG_DEFAULT% SET "hudadd_secretarea" "1"
 %CONFIG_DEFAULT% SET "mouse_doubleclick_as_use" "0"
 %CONFIG_DEFAULT% SET "movement_mouselook" "1"
+%CONFIG_DEFAULT% SET "key_use" "0x65"
+%CONFIG_DEFAULT% SET "key_screenshot" "0xd8"
+%CONFIG_DEFAULT% SET "key_spy" "0x2a"
+REM # set demo recording keys
+%CONFIG_DEFAULT% SET "key_speedup" "0x2e"
+%CONFIG_DEFAULT% SET "key_speeddown" "0x2c"
+%CONFIG_DEFAULT% SET "key_speeddefault" "0x2f"
+%CONFIG_DEFAULT% SET "key_walkcamera" "0x3b"
+%CONFIG_DEFAULT% SET "key_showalive" "0x27"
+%CONFIG_DEFAULT% SET "key_reverse" "0x12a"
+%CONFIG_DEFAULT% SET "key_flyup" "0x12b"
+%CONFIG_DEFAULT% SET "key_flydown" "0x12d"
 
 GOTO:EOF
 

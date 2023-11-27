@@ -60,7 +60,7 @@ $KEY:F=GOTO:32in24-14
 :MULTIPLAYER AWARDS:
 
 $KEY:G=URL:https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/d-f/dbabrm
-- [G] `Don't Be A Bitch Remastered`					<Mechanix Union>
+- [G: Don't Be A Bitch Remastered]					<Mechanix Union>
 
 $KEY:H=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 - [H: ChaosCore CTF]								<RoSKing> et al.
@@ -71,8 +71,8 @@ $KEY:H=URL:https://zandronum.com/forum/viewtopic.php?t=5977
 
 :BEST GAMEPLAY MOD:
 
-$KEY:I=GOTO:DoomRL Arsenal
-- [I] `DoomRL Arsenal`								<Yholl> et al.
+$KEY:I=URL:https://forum.zdoom.org/viewtopic.php?t=37044
+- [I: DoomRL Arsenal]								<Yholl> et al.
 
 :MOCKAWARD:
 
