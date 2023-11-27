@@ -36,7 +36,5 @@ pages\2016 Cacowards #??.dosmag
 @files\mods\Doom4Doom\include.lst
 @files\wads\community\DTWiD\include.lst
 @files\wads\jokes\ludicrm\include.lst
-
-# (all demos require prboom-plus)
-@files\ports\use=prboom-plus.lst
-files\demos\cacowards2016\
+# page 18:
+@files\demos\cacowards2016\include.lst

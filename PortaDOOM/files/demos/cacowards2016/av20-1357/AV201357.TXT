@@ -1,0 +1,45 @@
+This is a Doom LMP Entry
+
+AV201357.ZIP
+
+	AV201357.TXT
+	AV201357.LMP - UV Max
+
+Recorded using GLBoom-Plus v2.5.1.4 -complevel 2
+               (Doom2 Version 1.9 compatibility)
+
+1152x864, gamma level 4, capped framerate
+HUD used (timer, monster counter)
+
+Alien Vendetta - Level 20 - Misri Halek
+
+=---+------+---=	Old records: 15:13 by j4rio
+Kills       100%	             16:36 by me
+Items       100%	             17:41 by Tatsurd-cacocaco 
+Secrets     100%	             18:40 by Tatsurd-cacocaco
+			             19:51 by Jim "Xit Vono" Leonard
+TIME       13:57	             22:29 by Radek Pecka
+=---+------+---=
+
+Demo entry #147
+
+Description:
+
+Yes, revisiting the grandest AV map was on my to-do list for quite a long time.
+I wanted to get rid of that half-assed 16:36 record (done in December 2010 by
+the poor old version of me). Soon after I started my recording sessions, j4rio
+uploaded his exceptionally strong, truly modern-class 15:13 run. Some of my last
+ideas came to his mind as well, such as using the first BFG shot on knights.
+
+Third valid exit in 15 days of recording tries (first two were 14:09 and 14:08).
+Still several hells of a lot of slow shaky actions and messy shots, but nothing
+terribly sucky (even though I felt that this attempt will be a typical failed
+garbage). A few entertaining near-death scenes made me keep it. Gameplay is
+basically linear and has a low proportion of infights, plus j4rio's strategy was
+already very well thought, so I'm satisfied despite a not-so-high percentage of
+time improvement :)
+
+
+
+Author: SAV88 (Artem V. S.)
+Done November 11, 2016, 16:21:51

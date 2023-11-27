@@ -7,7 +7,7 @@ $TITLE=Espi Award for Lifetime Achievement
 
 ^C:<Doug "Opulent" Merrill> and <Andy Olivera>
 
-$KEY:A=URL:http://doomedsda.us/
+$KEY:A=URL:https://dsdarchive.com/
 Two years ago <Ty Halderman> was awarded in a large part for his silent, faithful service to the community as the maintainer of the _/idgames_ archive. This year we'd like to recognize the merits of two men behind an archive of a different sort, the [A: DooMed Speed Demos Archive]. Speedrunning has always been an integral part of `DOOM`'s lasting appeal, and on the other hand `DOOM` itself helped immensely to popularize the concept of beating games fast. But this is not a story of the first chaotic days of glory and its pioneers both celebrated and forgotten; it's about where all the demo recordings ended up eventually. Over the years the archive has become the undisputed backbone of the speedrunning community, and thus this year's _Espi Award for Lifetime Achievement_ goes to _DSDA_'s founder, <Doug "Opulent" Merrill>, and his successor and the current manager, <Andy Olivera>.
 
 :<Doug "Opulent" Merrill>:
@@ -15,14 +15,14 @@ Two years ago <Ty Halderman> was awarded in a large part for his silent, faithfu
 By his own words, <Opulent> used to be one of the biggest FPS demo freaks in the world. The _/idgames_ archive reveals a fair amount of mostly deathmatch-oriented contributions under his name, but it was his passion for collecting demo recordings of various FPS games that drove him, with `DOOM` and `Quake II` at the top of his interests. As the story goes, the clones fell into obscurity and `DOOM` only became stronger over time, and <Doug> decided to help with that. In the early days of _Doomworld_ he would often enthusiastically talk up demos he'd watched and praise the skill of the players involved, and he'd urge others to share their own recordings.
 
 $KEY:B=URL:https://www.doomworld.com/sda/news.htm
-$KEY:C=URL:http://www.doom2.net/compet-n/index.cgi
+$KEY:C=URL:https://doomwiki.org/wiki/Compet-n
 On September 9, 2000, <Opulent> got access to his own FTP folder on _Doomworld_, and thus the [B: SDA] was born. This was an age when everyone and their grandma still ran a "Doom shrine" on their _Geocities_ page, including a set of demos of themselves beating their "MYHOUSE.WAD" map, and maybe some IWAD levels as well. It was also a time when [C: Compet-N] was in full swing and legendary Doomgods kept outperforming each other with stunning runs on the select few competitive mapsets. <Opulent> threw a different pitch that's best summed up by himself:
 
 	*"Again, I encourage anyone to submit a demo. ... It can be of you on your level on skill 2 using _Jdoom_. I do have preferences (see info page), but overall anything goes".
 
-$KEY:D=URL:http://doomedsda.us/player1lmps.html
-$KEY:E=URL:http://doomedsda.us/top20.html
-Where most went for elitism and bragging, <Opulent> encouraged sharing any humble performance, as long as it is interesting to someone. He also strongly encouraged demoing on the multitude of PWADs out there, and he led the effort by recording for the legion of newly released WADs of the early naughties. To this day [D: he shared] over 900 demos spanning 94 hours of gameplay, a feat that easily qualifies him for the [E: top 10 players of all times] in both regards.
+$KEY:D=URL:https://dsdarchive.com/players/opulent
+$KEY:E=URL:https://dsdarchive.com/players/opulent/stats
+Where most went for elitism and bragging, <Opulent> encouraged sharing any humble performance, as long as it is interesting to someone. He also strongly encouraged demoing on the multitude of PWADs out there, and he led the effort by recording for the legion of newly released WADs of the early naughties. To this day [D: he shared] over 900 demos spanning 94 hours of gameplay, a feat that easily qualifies him for the [E: top 10 players of all times] in both regards. (ed: at time of this writing)
 
 $KEY:F=URL:https://www.doomworld.com/sda/x2.htm
 Then the random enthusiasts of the Wide Web slowly faded away and their [F: little fansites] with them. Of that list, only sites hosted by _Doomworld_, <BahdKo>'s _doom2.net_ or <Ledmeister> still exist, but even those eventually became dormant mementos of the glory days. In stark contrast, <Opulent> kept promoting speedrunning on _Doomworld_, and in September 2003 he and <Graham "Grazza" Burgess> became the moderators of the newly opened _Doom Speed Demos_ forum section. Originally he intended to keep the demos posted there separate from the _DSDA_ site, but when the forum attachment feature stopped working reliably by the end of the year, Doug started manually uploading all demos linked in the forum or sent to him by other means to the FTP and reposting the links. This insane and no doubt exhausting mission lasted for four years, and needless to say <Opulent>'s post count exploded as PWAD recording became increasingly popular.
@@ -34,7 +34,7 @@ All things come to an end eventually and during 2006, after getting dogged by la
 $KEY:G=URL:https://www.doomworld.com/forum/topic/55591
 On November 14th, 2008, <Andy Olivera> [G: posted a thread] announcing the _DSDA_ was newly reopened (for two days already). He migrated the site to its current location, improved the frankly historical web design of the _SDA_, and most importantly added a database backend. Everything was modernized, categorized, and tabulated.
 
-$KEY:H=URL:http://doomedsda.us/player59lmps.html
+$KEY:H=URL:https://dsdarchive.com/players/andy_olivera/stats
 Of course <Andy> was no newbie who'd fell out of the sky. He is a veteran in his own regard, and since his mid-90's beginnings he amassed [H: recording totals] of nearly 300 demos and over 32 hours of gameplay. He specializes in tool-assisted demos and became particularly famous in the speedruning community for his unhumanly smooth and efficient slow-motion max runs. His rare mapping adventures also include a notable entry, as he's credited for several `Hell Revealed II` maps.
 
 $KEY:I=URL:https://www.doomworld.com/publicdang/
