@@ -14,6 +14,12 @@ $KEY:D=URL:https://www.doomworld.com/forum/topic/85791
 
 `TNT: Revilution` is a fan made community project that acts as a sequel to <TeamTNT>'s `Evilution`. The goal of this project was to capture the spirit of what made `Evilution` so great, while at the same time bringing the quality of the visuals & game play up to modern standards.
 
+$KEY:G=URL:https://www.gog.com/game/doom_ii
+$KEY:S=URL:https://store.steampowered.com/app/2300/DOOM_II/
+! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TNT.WAD":
+! :-----------------------------------------------------------------------------
+! If you own either `"Final Doom"` or `"DOOM II Enhanced"` on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file _"TNT.WAD"_ in the _"files\wads"_ folder.
+
 *Story:
 
 With the death of the Demon-Spitter, the army of the damned loses their gateway to our world, and they slowly evaporate around you, writhing with screams of agony. Then, everything is silent, and the hellish red sky and the stench of sulphur fade away almost as if nothing had ever happened at all.

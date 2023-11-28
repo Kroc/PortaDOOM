@@ -1038,12 +1038,9 @@ lineBreak:
         'for the box borders when word-wrapping
         LET line_width% = line_width% - 6
     END IF
+    '(the order of these determine the which takes priority when nested)
     'is this a heading we're processing?
     IF is_heading` = TRUE THEN CALL STRGUI_Add("^{F@H}")
-    'in key mode?
-    IF word_key` = TRUE THEN CALL STRGUI_Add("^{F@K}")
-    'in person name mode?
-    IF word_name` = TRUE THEN CALL STRGUI_Add("^{F@N}")
     'are we currently bold?
     IF word_bold` = TRUE THEN CALL STRGUI_Add("^{F@B}")
     'are we currently in a term?
@@ -1051,6 +1048,10 @@ lineBreak:
     IF word_defn` = TRUE THEN CALL STRGUI_Add("^{F@T}")
     'in cite?
     IF word_cite` = TRUE THEN CALL STRGUI_Add("^{F@C}")
+    'in key mode?
+    IF word_key` = TRUE THEN CALL STRGUI_Add("^{F@K}")
+    'in person name mode?
+    IF word_name` = TRUE THEN CALL STRGUI_Add("^{F@N}")
     'begin the line with the remaining word
     GOSUB pushWord
 

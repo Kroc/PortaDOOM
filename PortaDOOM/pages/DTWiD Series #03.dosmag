@@ -124,10 +124,10 @@ Episode 6, "The Final Gate", is a Z/Eternity-exclusive "Boss Rush" episode consi
 *Note #2:
 	A few maps from previous versions have been cycled out of `DTWID-LE` since they appear in other places, in order to avoid map duplication (and because there were a few more maps that resurfaced). The old maps along with the releases in which they currently reside are:
 
-$KEY:1=URL:https://www.doomworld.com/idgames/levels/doom/p-r/pd1-anom
+$KEY:2=URL:https://www.doomworld.com/idgames/levels/doom/p-r/pd1-anom
 - E1M7  *"Siege Headquarters"	by <PhobosDeimos1>
 = E1M3 of `PhobosDeimos Anomaly`:
-  [1: www.doomworld.com/idgames/levels/doom/p-r/pd1-anom]
+  [2: www.doomworld.com/idgames/levels/doom/p-r/pd1-anom]
 
 - E1M8 *"Enigma"				by <NaturalTvventy>
 = E1M8 of `No End in Sight`
@@ -135,7 +135,7 @@ $KEY:1=URL:https://www.doomworld.com/idgames/levels/doom/p-r/pd1-anom
 - E4M6  *"Forgotten Caverns"	by <NaturalTvventy>
 = E3M5 of `No End in Sight`
 
-$KEY:2=URL:https://www.doomworld.com/idgames/levels/doom/a-c/coldstel
+$KEY:3=URL:https://www.doomworld.com/idgames/levels/doom/a-c/coldstel
 - E5M7  *"Cold Steel"			by <Mr. Chris> + <Mr. Freeze>
 = Available standalone at:
-  [2: www.doomworld.com/idgames/levels/doom/a-c/coldstel]
+  [3: www.doomworld.com/idgames/levels/doom/a-c/coldstel]

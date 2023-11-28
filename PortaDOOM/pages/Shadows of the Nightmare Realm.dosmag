@@ -40,7 +40,7 @@ One last thing, if you want to change levels, you'll want to do so in the consol
 *Build Time				: A bit over a year, on and off
 *Editor(s) used			: _GZDoom Builder_, _SLADE_, _GoldWave_, _Reaper_, _Renoise_, _The Gimp_, _Blender_, some custom tools, and probably a few others
 *Known Bugs				: None that I'm aware of
-*May Not Run With		: _GZDoom_ versions earlier than v2.4, or anything other than `GZDoom`
+*May Not Run With		: _GZDoom_ versions earlier than v2.4, or anything other than _GZDoom_
 *Tested With			: _GZDoom_ 2.4, _GZDoom_ 3.0
 
 :Credits
@@ -76,4 +76,4 @@ The song titles are as follows:
 *Level 2				: "The Temple of Death"
 *Level 3				: "Stay"
 
-Full metadata information is embedded in the Ogg files themselves.
+Full metadata information is embedded in the OGG files themselves.
