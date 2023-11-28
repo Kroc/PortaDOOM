@@ -42,12 +42,12 @@ I was always a fan of NS duels, if only someone did them justice. Having a large
 :RED VS. BLUE, TO THE DEATH
 :===============================================================================
 $KEY:A=URL:http://doomleague.org/
-$KEY:B=URL:http://doomleague.org/games/?game=141
-Competitive deathmatching isn't dead yet! [A: World Doom League] completed the Winter season with a final clash of two most dominant teams, in which <AVC>'s <Techno Vikings> (<Caution>, <Xenaero>, <Ghostkiller>) defeated the late <DemonSphere>'s <The Dream Team> (<turSKA>, <D'Sparil>, <Denzoa>) in increasingly tense [B: four rounds].
+$REM=$KEY:B=URL:http://doomleague.org/games/?game=141
+Competitive deathmatching isn't dead yet! [A: World Doom League] completed the Winter season with a final clash of two most dominant teams, in which <AVC>'s <Techno Vikings> (<Caution>, <Xenaero>, <Ghostkiller>) defeated the late <DemonSphere>'s <The Dream Team> (<turSKA>, <D'Sparil>, <Denzoa>) in increasingly tense four rounds.
 
 $KEY:C=URL:http://doomleague.org/forums/index.php/topic,954.0.html
-$KEY:D=URL:https://gaming.youtube.com/c/DoomleagueOrg/
-The Fall season is currently in its final stage, with the results of [C: the semi-finals] unknown to this author at the moment of writing. [D: Watch out] for that potential <Ralphis> comeback!
+$REM=$KEY:D=URL:https://gaming.youtube.com/c/DoomleagueOrg/
+The Fall season is currently in its final stage, with the results of [C: the semi-finals] unknown to this author at the moment of writing. Watch out for that potential <Ralphis> comeback!
 
 $KEY:E=URL:https://zandronum.com/forum/viewtopic.php?f=32&t=8538
 $KEY:F=URL:http://challonge.com/ss5hpe2y

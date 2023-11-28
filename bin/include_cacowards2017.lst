@@ -35,8 +35,5 @@ pages\2017 Cacowards #??.dosmag
 @files\wads\onesies\dt-lutz\include.lst
 # page 15:
 @files\wads\onesies\TheGiven\include.lst
-
-# (all demos require prboom-plus)
-@files\ports\use=prboom-plus.lst
-files\demos\cacowards2017\
-files\wads\megawads\av\
+# page 18:
+@files\demos\cacowards2017\include.lst

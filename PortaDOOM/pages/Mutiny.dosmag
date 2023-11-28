@@ -28,22 +28,22 @@ Additional Special thanks goes to <dt_>, <AD_79>, <MrGlide>, and <traversd>, for
 
 :Maps
 
-- MAP01: "Surface"................ <Fonze>, <Jimmy>, and <40oz>
-- MAP02: "Shipyard"............... <Pinchy> and <Tarnsman>
-- MAP03: "Crossbug"............... <MrGlide> and <Ribbiks>
-- MAP04: "Warzone"................ <joe-ilya>, <AD_79>, and <40oz>
-- MAP05: "Slums".................. <dt_>
-- MAP06: "Faceless Corporation"... <Angry Saint>, <Corsair>, and <dt_>
-- MAP07: "Bunker Base"............ <40oz>
-- MAP08: "Compactor".............. <Pavera> and <jmickle66666666>
-- MAP09: "Construction Site"...... <Impboy4>, <Doomkid>, and <dt_>
-- MAP10: "Generator".............. <scifista42>, <NoneeLlama>, and <dt_>
-- MAP11: "The Furnaces"........... <AD_79> and <40oz>
-- MAP12: "Wildcard"............... <purist> and <traversd>
-- MAP13: "Laboratory"............. <Egregor> and <40oz>
-- MAP14: "The Firewall"........... <AD_79> and <Breezeep>
-- MAP15: "Breaching The Unknown".. <KevinHEZ> and <dt_>
-- MAP31: "The Brain".............. <40oz>
+- *MAP01:* `"Surface"`................ <Fonze>, <Jimmy>, and <40oz>
+- *MAP02:* `"Shipyard"`............... <Pinchy> and <Tarnsman>
+- *MAP03:* `"Crossbug"`............... <MrGlide> and <Ribbiks>
+- *MAP04:* `"Warzone"`................ <joe-ilya>, <AD_79>, and <40oz>
+- *MAP05:* `"Slums"`.................. <dt_>
+- *MAP06:* `"Faceless Corporation"`... <Angry Saint>, <Corsair>, and <dt_>
+- *MAP07:* `"Bunker Base"`............ <40oz>
+- *MAP08:* `"Compactor"`.............. <Pavera> and <jmickle66666666>
+- *MAP09:* `"Construction Site"`...... <Impboy4>, <Doomkid>, and <dt_>
+- *MAP10:* `"Generator"`.............. <scifista42>, <NoneeLlama>, and <dt_>
+- *MAP11:* `"The Furnaces"`........... <AD_79> and <40oz>
+- *MAP12:* `"Wildcard"`............... <purist> and <traversd>
+- *MAP13:* `"Laboratory"`............. <Egregor> and <40oz>
+- *MAP14:* `"The Firewall"`........... <AD_79> and <Breezeep>
+- *MAP15:* `"Breaching The Unknown"`.. <KevinHEZ> and <dt_>
+- *MAP31:* `"The Brain"`.............. <40oz>
 
 *Special Thanks to:
 
@@ -67,24 +67,24 @@ All graphics and textures used in `Mutiny` are made from scratch or use `Doom` o
 
   "`Mutiny` definitely comes across as a call-back to the vibrant, colour-rich mapsets of the late '90s like `STRAIN`, and so within the limits of `30in30` I tried to pick out tracks that would pair with this imagining. <Jimmy>'s speedier compos tend toward strong refrains and structures -- sometimes cheesy, sometimes ill-suited for `Doom` -- so there was plenty of opportunity to fashion something unique using angry, guitar-driven tracks and some pop-like elements, without going overboard. I think it worked out okay!"
 
-*Music List:
+:Music List
 
-- title - <Conker_64> `Contra 3: Alien Wars` Intro Music
-- map01 - <jdagenet>
-- map02 - <Jimmy> "Drop The Wombat"
-- map03 - <Jimmy> "Torsal Torsion"
-- map04 - <Jimmy> "Tar"
-- map05 - <Jimmy> "Cyanide Downpour"
-- map06 - <Jimmy> "CHaRybdIS"
-- map07 - <Jimmy> "Destruct"
-- map08 - <jmickle66666666> "Take these pills and be who you are"
-- map09 - <Doomkid>
-- map10 - <Jimmy> "Stairway Fairway"
-- map11 - <Jimmy> "Potioneer"
-- map12 - <Jimmy> "Gatorade Nightmare"
-- map13 - <Jimmy> "Delay(0); Restart;"
-- map14 - <Jimmy> "Iodine"
-- map15 - <KevinHEZ>
-- map31 - <Viscra Maelstrom> "Welcome to the New World
-- inter - <Leo Sieben> "Sadistic"
-- mread - <Tom Mustaine> "Horizon"
+- *title* - <Conker_64> `Contra 3: Alien Wars` Intro Music
+- *map01* - <jdagenet>
+- *map02* - <Jimmy> "Drop The Wombat"
+- *map03* - <Jimmy> "Torsal Torsion"
+- *map04* - <Jimmy> "Tar"
+- *map05* - <Jimmy> "Cyanide Downpour"
+- *map06* - <Jimmy> "CHaRybdIS"
+- *map07* - <Jimmy> "Destruct"
+- *map08* - <jmickle66666666> "Take these pills and be who you are"
+- *map09* - <Doomkid>
+- *map10* - <Jimmy> "Stairway Fairway"
+- *map11* - <Jimmy> "Potioneer"
+- *map12* - <Jimmy> "Gatorade Nightmare"
+- *map13* - <Jimmy> "Delay(0); Restart;"
+- *map14* - <Jimmy> "Iodine"
+- *map15* - <KevinHEZ>
+- *map31* - <Viscra Maelstrom> "Welcome to the New World
+- *inter* - <Leo Sieben> "Sadistic"
+- *mread* - <Tom Mustaine> "Horizon"

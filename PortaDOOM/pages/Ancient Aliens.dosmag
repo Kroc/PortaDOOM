@@ -125,76 +125,76 @@ I'm not saying it was aliens, but... the truth is out there.
 
 :Map List
 :-------------------------------------------------------------------------------
-- MAP01 - *"The Ancient Navajo Wolf Warp"* by <skillsaw>
-- MAP02 - *"Sanctum of the Wastes"* by <skillsaw>
-- MAP03 - *"Arachnotron Arrival"* by <skillsaw>
-- MAP04 - *"Bad Medicine Men"* by <skillsaw>
-- MAP05 - *"Last Refuge of the Anasazi"* by <skillsaw>
-- MAP06 - *"Sinkhole Showdown"* by <skillsaw>
-- MAP07 - *"Dare to Fly Where Eagles Soar"* by <skillsaw>
-- MAP08 - *"Ancient Aliens"* by <skillsaw>
-- MAP09 - *"The Nectar Flow"* by <Joshy>
-- MAP10 - *"Gift of Denial"* by <skillsaw>
-- MAP11 - *"On the Origin of Spacies"* by <skillsaw>
-- MAP12 - *"Magenta Heat"* by <skillsaw>
-- MAP13 - *"Polychromatic Terrace"* by <skillsaw>
-- MAP14 - *"Blazing Boulevard"* by <skillsaw>
-- MAP15 - *"Wormhole Junction"* by <skillsaw>
-- MAP16 - *"Leave Your Sol Behind"* by <skillsaw>
-- MAP17 - *"Daylight Under a Dark Sol"* by <skillsaw>
-- MAP18 - *"Illuminati Revealed"* by <skillsaw>
-- MAP19 - *"Crash Landing"* by <skillsaw>
-- MAP20 - *"Code"* by <AD_79>
-- MAP21 - *"Cyberbullying: Beyond Earth"* by <skillsaw>
-- MAP22 - *"Acerola-Orion"* by <esselfortium>
-- MAP23 - *"Trinary Temple"* by <Pinchy>
-- MAP24 - *"Culture Shock"* by <lupinx-Kassman> (additional mapping by <skillsaw>)
-- MAP25 - *"Xenoarboreum"* by <skillsaw>
-- MAP26 - *"Egyptian Metaphysics"* by <Tarnsman>
-- MAP27 - *"Kingdom of the Crystal Skulls"* by <skillsaw>
-- MAP28 - *"Floating Arena"* by <Joshy>
-- MAP29 - *"The Ones Behind It All"* by <skillsaw>
-- MAP30 - *"The End"* by <skillsaw>
-- MAP31 - *"Grey Dwarf"* by <stewboy>
-- MAP32 - *"Ossuarium Exoterre"* by <skillsaw>
+- *MAP01* - `"The Ancient Navajo Wolf Warp"` by <skillsaw>
+- *MAP02* - `"Sanctum of the Wastes"` by <skillsaw>
+- *MAP03* - `"Arachnotron Arrival"` by <skillsaw>
+- *MAP04* - `"Bad Medicine Men"` by <skillsaw>
+- *MAP05* - `"Last Refuge of the Anasazi"` by <skillsaw>
+- *MAP06* - `"Sinkhole Showdown"` by <skillsaw>
+- *MAP07* - `"Dare to Fly Where Eagles Soar"` by <skillsaw>
+- *MAP08* - `"Ancient Aliens"` by <skillsaw>
+- *MAP09* - `"The Nectar Flow"` by <Joshy>
+- *MAP10* - `"Gift of Denial"` by <skillsaw>
+- *MAP11* - `"On the Origin of Spacies"` by <skillsaw>
+- *MAP12* - `"Magenta Heat"` by <skillsaw>
+- *MAP13* - `"Polychromatic Terrace"` by <skillsaw>
+- *MAP14* - `"Blazing Boulevard"` by <skillsaw>
+- *MAP15* - `"Wormhole Junction"` by <skillsaw>
+- *MAP16* - `"Leave Your Sol Behind"` by <skillsaw>
+- *MAP17* - `"Daylight Under a Dark Sol"` by <skillsaw>
+- *MAP18* - `"Illuminati Revealed"` by <skillsaw>
+- *MAP19* - `"Crash Landing"` by <skillsaw>
+- *MAP20* - `"Code"` by <AD_79>
+- *MAP21* - `"Cyberbullying: Beyond Earth"` by <skillsaw>
+- *MAP22* - `"Acerola-Orion"` by <esselfortium>
+- *MAP23* - `"Trinary Temple"` by <Pinchy>
+- *MAP24* - `"Culture Shock"` by <lupinx-Kassman> (additional mapping by <skillsaw>)
+- *MAP25* - `"Xenoarboreum"` by <skillsaw>
+- *MAP26* - `"Egyptian Metaphysics"` by <Tarnsman>
+- *MAP27* - `"Kingdom of the Crystal Skulls"` by <skillsaw>
+- *MAP28* - `"Floating Arena"` by <Joshy>
+- *MAP29* - `"The Ones Behind It All"` by <skillsaw>
+- *MAP30* - `"The End"` by <skillsaw>
+- *MAP31* - `"Grey Dwarf"` by <stewboy>
+- *MAP32* - `"Ossuarium Exoterre"` by <skillsaw>
 
 :Music Listing
 :-------------------------------------------------------------------------------
-- MAP01 - *"Flee"*
-- MAP02 - *"The Incessant Flow of Time"*
-- MAP03 - *"Depth Charge"*
-- MAP04 - *"Desk Lamp"*
-- MAP05 - *"Toejazz"*
-- MAP06 - *"Roof"*
-- MAP07 - *"Featherfall"*
-- MAP08 - *"Hell Jungle"*
-- MAP09 - *"The Demon's Serenade"*
-- MAP10 - *"Vase"*
-- MAP11 - *"Space Train"*
-- MAP12 - *"Web of Steel"*
-- MAP13 - *"Gold Rush"*
-- MAP14 - *"Moonwalk"*
-- MAP15 - *"Hypercube"*
-- MAP16 - *"Space Jiggle"*
-- MAP17 - *"Other Side of the Moon"*
-- MAP18 - *"Trapeze"*
-- MAP19 - *"Long Night"*
-- MAP20 - *"20 GOTO 10"*
-- MAP21 - *"Basement"*
-- MAP22 - *"The Last Dance"*
-- MAP23 - *"The Greater Good"*
-- MAP24 - *"Imaginarium"*
-- MAP25 - *"Alien Forest"*
-- MAP26 - *"Tales of Old"*
-- MAP27 - *"Garden of Lost Souls"*
-- MAP28 - *"Gigabridge"*
-- MAP29 - *"Colliding Nebulae"*
-- MAP30 - *"Yuletide"*
-- MAP31 - *"Tribal Dance"*
-- MAP32 - *"Birdsong"*
-- Intermission - *"Concentration"*
-- Title - *"Welcome to Egypt"*
-- Text screen - *"Martian Blues"*
+- *MAP01* - "Flee"
+- *MAP02* - "The Incessant Flow of Time"
+- *MAP03* - "Depth Charge"
+- *MAP04* - "Desk Lamp"
+- *MAP05* - "Toejazz"
+- *MAP06* - "Roof"
+- *MAP07* - "Featherfall"
+- *MAP08* - "Hell Jungle"
+- *MAP09* - "The Demon's Serenade"
+- *MAP10* - "Vase"
+- *MAP11* - "Space Train"
+- *MAP12* - "Web of Steel"
+- *MAP13* - "Gold Rush"
+- *MAP14* - "Moonwalk"
+- *MAP15* - "Hypercube"
+- *MAP16* - "Space Jiggle"
+- *MAP17* - "Other Side of the Moon"
+- *MAP18* - "Trapeze"
+- *MAP19* - "Long Night"
+- *MAP20* - "20 GOTO 10"
+- *MAP21* - "Basement"
+- *MAP22* - "The Last Dance"
+- *MAP23* - "The Greater Good"
+- *MAP24* - "Imaginarium"
+- *MAP25* - "Alien Forest"
+- *MAP26* - "Tales of Old"
+- *MAP27* - "Garden of Lost Souls"
+- *MAP28* - "Gigabridge"
+- *MAP29* - "Colliding Nebulae"
+- *MAP30* - "Yuletide"
+- *MAP31* - "Tribal Dance"
+- *MAP32* - "Birdsong"
+- *Intermission* - "Concentration"
+- *Title* - "Welcome to Egypt"
+- *Text screen* - "Martian Blues"
 
 The full `Ancient Aliens` OST is available on
 <Stewboy>'s bandcamp:

@@ -1,6 +1,6 @@
 $THEME=BLACK
 $TITLE=Other Awards
-$KEY:1=GOTO:DOOM(4) for DooM
+$KEY:1=URL:https://forum.zdoom.org/viewtopic.php?t=37044
 $KEY:2=GOTO:DTWiD Series #03
 $KEY:3=GOTO:Luducrium
 $KEY:4=URL:https://www.doomworld.com/idgames/index.php?search=1&field=author&word=Lainos&sort=time&order=desc&page=1
@@ -11,7 +11,7 @@ $KEY:4=URL:https://www.doomworld.com/idgames/index.php?search=1&field=author&wor
 
 :Best Gameplay Mod:
 :===============================================================================
-*[1] `Doom 4 Doom` - <DBThanatos> et al.
+*[1: Doom 4 Doom] - <DBThanatos> et al.
 :-------------------------------------------------------------------------------
 You might have heard somewhere along the line, but there's a new `DOOM` game that came out. Damndest thing, eh?
 

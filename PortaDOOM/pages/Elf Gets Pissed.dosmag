@@ -1,7 +1,7 @@
 $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\elfgp\play-elfgp.ini"
 $KEY:T=SHELL:wads\episodes\elfgp\elfgp.txt
-$KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 :Elf Gets Pissed                                    * 2016 Cacoward Winner! *
 :===============================================================================
@@ -14,10 +14,11 @@ $KEY:W=URL:https://www.doomworld.com/idgames/levels/heretic/Ports/elfgp
 
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "HERETIC.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own `"Heretic: Shadow of the Serpent Riders"` on [S: Steam] it will be detected automatically, otherwise place the file in the _"files\wads"_ folder.
 $KEY:S=URL:http://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/
+$KEY:G=URL:https://www.gog.com/game/heretic_shadow_of_the_serpent_riders
+! If you own `"Heretic"` on [S: Steam] or [G: GoG] it will be detected automatically, otherwise please place "HERETIC.WAD" in the _"files\wads"_ folder.
 
-An episode 1 replacement for Heretic.
+An episode 1 replacement for `Heretic`.
 
 :Construction
 :-------------------------------------------------------------------------------

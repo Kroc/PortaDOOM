@@ -43,20 +43,21 @@ My only real contribution to the 2017 Cacowards appears to be my endeavoring to 
 ^C:THE SKY MAY BE
 :===============================================================================
 
-$KEY:A=URL:http://doomleague.org/forums/index.php/topic,914.0.html
-In September, we lost one of the all-time great `DOOM` players with the passing of <DemonSphere>. Although not a significant personality on _Doomworld_ itself, <DemonSphere> was [A: highly renowned] throughout the greater competitive `DOOM` community.
+$REM=Doom League forums are gone? (or require login?)
+$KEY:1=URL:https://web.archive.org/web/20171101031834/https://doomleague.org/forums/index.php/topic,914.0.html
+In September, we lost one of the all-time great `DOOM` players with the passing of <DemonSphere>. Although not a significant personality on _Doomworld_ itself, <DemonSphere> was [1: highly renowned] throughout the greater competitive `DOOM` community.
 
-$KEY:B=URL:https://doomwiki.org/wiki/20th_Anniversary_Doom_Challenge
-<DemonSphere> won countless duel, FFA, and CTF competitions. At the time of his passing, he was one of the greatest duel players in the Americas and arguably the top all-around player in the world. His favorite maps were `"Moo2D"` and `"Judas23"`. In 2013, he competed in the [B: 20th Anniversary DOOM Challenge] at Quakecon where he placed third. It was after this event that he vowed to never lose on `"Judas23"` again and subsequently developed into one of the best to ever play the game.
+$KEY:2=URL:https://doomwiki.org/wiki/20th_Anniversary_Doom_Challenge
+<DemonSphere> won countless duel, FFA, and CTF competitions. At the time of his passing, he was one of the greatest duel players in the Americas and arguably the top all-around player in the world. His favorite maps were `"Moo2D"` and `"Judas23"`. In 2013, he competed in the [2: 20th Anniversary DOOM Challenge] at Quakecon where he placed third. It was after this event that he vowed to never lose on `"Judas23"` again and subsequently developed into one of the best to ever play the game.
 
-$KEY:C=URL:http://doomleague.org/
-$KEY:D=URL:https://docs.google.com/spreadsheets/d/1aNmdUyvBTXN732ONNwZ1l-PrUBxSSLIFK0OjdNBfkrM/
-$KEY:E=URL:https://www.youtube.com/c/DoomleagueOrg
-<DemonSphere> was also one of the inaugural captains of the [C: World Doom League], a competitive CTF league that succeeded the _IDL_. He was one of the only players to captain a team during every season that he participated, and he did it with great success. His skill, charisma, and high `DOOM` IQ helped lead his teams to two consecutive championship title berths during his final two seasons. He held a 17-15-3 (.529) record in the regular season and, even after missing a season since his passing, he remains [D: near the top] of all statistical averages for defensive players. He was also a regular guest on [E: WDL Radio], a live weekly recap show which features analysis, opinions, and predictions over a group webcam.
+$KEY:3=URL:http://doomleague.org/
+$KEY:4=URL:https://docs.google.com/spreadsheets/d/1aNmdUyvBTXN732ONNwZ1l-PrUBxSSLIFK0OjdNBfkrM/
+$KEY:5=URL:https://www.youtube.com/playlist?list=PLAWZY2OfbF2x16Gw1umBytrATqP2s_dMc
+<DemonSphere> was also one of the inaugural captains of the [3: World Doom League], a competitive CTF league that succeeded the _IDL_. He was one of the only players to captain a team during every season that he participated, and he did it with great success. His skill, charisma, and high `DOOM` IQ helped lead his teams to two consecutive championship title berths during his final two seasons. He held a 17-15-3 (.529) record in the regular season and, even after missing a season since his passing, he remains [4: near the top] of all statistical averages for defensive players. He was also a regular guest on [5: WDL Radio], a live weekly recap show which features analysis, opinions, and predictions over a group webcam.
 
-$KEY:F=URL:http://doomedsda.us/player569lmps.html
-$KEY:G=URL:http://doomedsda.us/wad947m120.html
-Outside of online multiplayer, <DemonSphere> also displayed his incredible talents with the occasional speedrun. According to the [F: Doomed Speed Demo Archives], <DemonSphere> currently holds the `DOOM 1 Episode 2` Nightmare Speed world record at [G: 4:47]. Outside of `Doom`, <DemonSphere> enjoyed playing the `Quake` series, `Counter-Strike: GO`, and `PlayerUnknown's Battlegrounds`.
+$KEY:6=URL:https://dsdarchive.com/players/demonsphere
+$KEY:7=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "cacowards2016\ep2n447\ep2n0447.lmp" /CMPLVL 2
+Outside of online multiplayer, <DemonSphere> also displayed his incredible talents with the occasional speedrun. According to the [6: Doomed Speed Demo Archives], <DemonSphere> currently holds the `DOOM 1 Episode 2` Nightmare Speed world record at [7: 4:47]. Outside of `Doom`, <DemonSphere> enjoyed playing the `Quake` series, `Counter-Strike: GO`, and `PlayerUnknown's Battlegrounds`.
 
 Besides his endless list of `DOOM` accomplishments, <DemonSphere> was best known to those around him for being a genuinely great and funny person. His willingness to befriend and teach new players, combined with his humbleness and friendly disposition, helped define him as a pillar of our community. Beyond the confines of the internet, some of us had an opportunity to spend face time with on <DemonSphere> several occasions. He was a really fun guy and always added to the party.
 

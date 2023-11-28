@@ -1,0 +1,44 @@
+Runner: DemonSphere
+IWAD: DOOM.wad
+Category: NM-Speed
+Map: Episode 2 (E2M1-E2M8)
+Source Port: Competition Doom v2.0.3.2
+Time Without M8: 3:55 
+Time With    M8: 4:47 
+
+----------------------------------------------------------------
+Level			Map	Time		
+
+Deimos Anomaly		E2M1 -	0:40		
+Containment Area	E2M2 -	0:16		
+Refinery		E2M3 -	0:35		
+Deimos Lab		E2M4 -	0:44		
+Command Center		E2M5 -	0:35		
+Halls of the Damned	E2M6 -	0:43		
+Spawning Vats		E2M7 -	0:22		
+Tower of Babel		E2M8 -	0:52		
+----------------------------------------------------------------
+			TOTAL -	4:47		
+Description: I never want to see E2M1 again. I did use -longtics
+
+E2M1: This run would be a lot more fun and make me burn out a lot less often if this map did
+not exist
+I got very lucky 
+
+E2M2: Nothing interesting to say.
+
+E3M3: I find this level to be more difficult than it really should be, I usually died
+right into the room after blue door, or to caco in exit room
+
+E2M4: I died to the barons to many times to count here, or just simply fell off on the
+raising platform to the soulsphere trying to be to fast.
+E2M5: Map usually goes pretty well, I had been getting caught on the imps the last few runs.
+
+E2M6: I really suck at the voidglide, or glides in general. switch press with no vert movement
+is nice though
+
+E2M7: I usually screw this rjump u took extra time grabbing rockets.
+
+E2M8: I always get turned around on this map with as to where the cyberdemon is. 
+
+Still plenty of time that can be saved, but the first maps are no fun at all.
