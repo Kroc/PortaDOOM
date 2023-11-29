@@ -1,0 +1,140 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : Dimensions
+Filename                : dmnsns.wad
+Release date            : 9/6/2017
+Author                  : Killer5
+Email Address           : [redacted]
+Other Files By Author   : Eviscerate (DMP2017), Aztec Ruin (Mayhem 2017), 
+						  Power Overwhelming (SlaughterMAX)
+Misc. Author Info       : N/A
+
+Description             : 5 maps designed for PrBoom+ complevel 9. Play on HNTR
+						  or HMP. I spent the vast majority of time working on
+						  HNTR and HMP for maps 01-03. UV is an extra special
+						  difficulty that most likely only I will find fun.
+						  
+						  Maps31 and 32:
+						  These two maps are special bonus maps. Only UV is
+						  implemented for Map31. Map32 has HNTR, HMP, and UV
+						  implemented but I recommend almost everyone play HNTR
+						  on Map32.
+						  
+						  Difficulty descriptions:
+						  HNTR: I dont really play slaughter/I rarely play slaughter
+						  
+						  HMP: I like slaughter maps but it definitely isnt my primary focus.
+						  
+						  UV: I love going up against overwhelming odds, fighting
+						  tens (sometimes hundreds) of cybs/viles at a time, pain elemental 
+						  swarms, Reality category of speedrunning.
+						  
+						  Due to the nature of these maps I recommend playing with infinite
+						  height off in ZDoom based ports due to the flying monster behavior
+						  mixed with high ceilings. These maps were designed for PrBoom+ cl9
+						  which has vanilla flying monster behavior.
+						  
+						  Because of my mapping preferences play in software mode for best
+						  visual results!
+
+Additional Credits to   : none
+===========================================================================
+* What is included *
+
+New levels              : 5
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-03, 31, 32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time				: Few months on and off
+Editor(s) used          : GZDB, Slade3, Doom Writer, MS Paint
+Known Bugs              : none
+May Not Run With        : ZDoom-derived ports
+Tested With             : PrBoom+ 2.5.1.4 complevel 9, PrBoom+ 2.5.1.5 complevel 9
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes. If you remix, transform, or build upon the
+material, you must distribute your contributions under the same license as
+the original.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+Textures:
+- Thanks to those that made cc4-tex:
+---- NiGHTMARE
+---- Espi
+---- Eriance
+---- Fredrik Johansson
+---- Janitor
+---- DaGGeR
+---- Ola Bjorling
+---- Vader
+---- XDelusion
+---- esselfortium
+---- RottKing
+---- Nuxius
+---- Afterglow
+---- AgentSpork
+---- RottKing
+---- Enjay
+---- Huy Pham
+---- SargeBaldy
+---- Tormentor667
+---- The GothicDM Team
+---- The Requiem Team
+---- The Eternal Doom Team
+---- id Software
+---- Raven Software
+---- Rogue Entertainment
+---- 3D Realms Entertainment
+---- LucasArts
+---- H. R. Giger (converted by Stephen Renton)
+
+Testers:
+- Archi
+- Bemused
+- Benjogami
+- JohnSuitepee
+- Loveless
+- Megablast98
+- Nevanos
+- Nine Inch Heels
+- rdwpa
+- Ribbiks
+- Scotty
+
+

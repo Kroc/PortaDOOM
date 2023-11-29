@@ -1,0 +1,25 @@
+Runner: Zero-Master
+Date: 2019-09-20
+IWAD: doom.wad
+Category: UV-Pacifist
+Map: E2M6
+Tools: Crispy Doom v4.3
+Time: 0:17.97
+
+Description:
+With the recent interest in this level I decided I'd try to work some magic
+and attempt to find a way to get this void glide with some sort of method...
+I did not expect to find anything, but I did! :)
+
+There's pretty much 3 parts to this level, press the switch and get the rocket 
+launcher without getting blocked too much, void glide quickly and press the switch 
+quickly. 
+
+I got 18 seconds without too much effort, I knew I had to go for 17. While
+it didn't take a crazy amount of time to get 17 seconds, I'm not the one
+with enough patience to manage a better time than this. It's possible to
+save several seconds if you just get everything perfectly, but the chance
+of that is so extremely low that I don't see this one ever being truly optimized. 
+
+Before I saw the final time I knew it was going to be super close, I really
+felt that was just a tic under 18 seconds, which it actually was, crazy.

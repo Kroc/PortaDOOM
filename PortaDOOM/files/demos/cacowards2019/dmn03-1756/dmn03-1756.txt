@@ -1,0 +1,12 @@
+wad:       Dimensions
+Map:       03
+Skill:     4
+Category:  UV-Max
+Exe:       PrBoom+ v2.5.1.4 krankdud's build.
+Time:      17:56
+
+-complevel 9
+
+Author:	   Ancalagon
+
+Porbably one of the hardest maps I've ever maxed, every trap is just evil and has a chance to kill me. Main show stoppers were the initial rev wave and the secret bfg fight, and the underground area had about 30-40% consistency. The end is just evil with the caco corpses inevitably blocking your view, 9 attempts got to that area, a bit on the unlucky side as in practice I managed to do it more often than 1/9.

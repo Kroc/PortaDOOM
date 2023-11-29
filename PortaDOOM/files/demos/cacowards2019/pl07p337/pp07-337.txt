@@ -1,0 +1,18 @@
+Runner: Zero-Master
+Date: 2019-09-08
+IWAD: plutonia.wad
+Category: UV-Pacifist
+Map: 07
+Tools: Crispy Doom v4.3
+Time: 3:37
+
+Description:
+After watching a youtube video by decino regarding challenges thought to be impossible
+I decided I'd have a closer look at this one. I will admit I would have done this much
+sooner if I had known how easy it would be, it just looked nearly impossible to do without
+TAS since the chaingunner seems so vulnerable and there's nothing to kill the mancs.
+
+It's possible to wake up a baron by firing and standing on the starting stairs, and if 
+you are left with 2 mancs you could manage to get them killed with the baron. However,
+you can get mancs stuck by getting close enough to them and the chaingunner can
+stand in a spot where he cannot get hit. So in the end I didn't even need the baron :)

@@ -1,0 +1,25 @@
+General Info
+
+    PWAD: Final Doom: The Plutonia Experiment (plutonia.wad)
+     Map: Go 2 It (32)
+   Skill: 4
+Category: UV-Max
+     EXE: DOOM2 v1.9f via DOSBox v0.74, using novert.exe
+  Author: 0xf00ba12
+
+Run Info
+
+   Kills: 115%
+   Items: 100%
+ Secrets: 100%
+    Time: 2:58
+
+Comments
+
+The map needs no introduction. It's a classic. I wanted to record in the most vanilla environment available to me (inspired by Tatsurd-cacocaco's latest killing spree in The Ultimate Doom) and exit under three minutes, a goal stx-Vile (my main inspiration) was originally aiming for. 
+
+As expected, two of the areas in the map sacked a majority of the runs. Quick kills for the hallway Cyber trolls was a must, which also included avoiding getting stuck in their death animations (laugh as I fail this towards the end). The cleanup outdoors was the even bigger hurdle and was usually exciting given the random Archie survivors. I eventually gave up staying pacifist during the initial dash to the blue key and tried to kill/soften what I could, ideally taking out at least one Cybie along the way. Being proactive here instead of reactive made grinding all the more bearable later on in what turned out to be an odyssey of attempts.
+
+I was originally not going to submit this to DSDA, but this run is backed by a legacy of knowledge not my own. It only feels right to honor that by putting it with all the demos that preceded it.
+
+Thanks to Milo Casali and to the many runners who took part in wrecking this map down to where it is now.

@@ -41,3 +41,15 @@ pages\2019 Cacowards #??.dosmag
 # page 18: other awards
 @files\wads\conversions\srb2\include.lst
 @files\wads\conversions\Hedon\include.lst
+# page 19:
+pages\images\goldy.jpg
+# page 20:
+pages\images\donna.jpg
+pages\images\idguys1.jpg
+pages\images\idguys2.jpg
+pages\images\hissy.jpg
+pages\images\zine.jpg
+pages\images\cake.jpg
+pages\images\birthday.jpg
+# page 21:
+@files\demos\cacowards2019\include.lst

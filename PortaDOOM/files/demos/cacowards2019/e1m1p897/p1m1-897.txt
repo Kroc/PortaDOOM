@@ -1,0 +1,27 @@
+             Doom
+         E1M1: Hangar
+    WAD Author: id Software
+------------------------------------
+          p1m1-897.lmp
+
+UV-Speed in 0:08.97
+
+    Kills   - 6%
+    Items   - 5%
+    Secrets - 0%
+
+Recorded with: PrBoom-plus 2.5.1.4
+-complevel 3
+
+Skill level: Ultra-Violence
+Author: 4shockblast
+
+Comments: I was going to make a really angry textfile, and after tens of thousands of futile attempts, it's hard not to be quite frustrated, but over time I did discover numerous minor improvements on this that really made this much more feasible in the final result. Little movement updates here and there make a huge difference, and my key attempts were really in the past few hours (couple 9.00s, couple near 8s that messed up the exit, etc.). That said, this run had far from perfect movement (counterbalanced by some nice boosts from the monster shots). Still, don't try this at home kids. Or at work. Or really anywhere.
+
+But if you do choose to try it, really be mindful of your movement, even small adjustments could improve your chances tremendously. One major thing to look into is a closer cut on the turn into the zigzag room; this was Looper's suggestion, and it's probably possible, but the luck needed for it is too much for me; the monsters in that room are rarely awake in my experience, and if the shotgun guy near the window doesn't awaken, you're in trouble. But in any case, here are the little things I discovered that helped me specifically (your mileage may vary):
+  - Start movement: how you do the (massively painful) quickstart is super important; with the right movement, you will find that neither monster in the bridge area later on awakens, leading to a clear path
+  - Pistol shot at the start: doesn't awaken anything in the bridge area because the monsters there are deaf I think, but happens to give me better RNG there.
+  - Turn to the bridge area: I take it pretty wide, but just today I realized that it's super important to try and cut it as early as possible even with the wide turn; it saves 2-3 tics easy on average
+  - Second-to-last door: found that it's much faster for me not to crash into it even if I lose all speed doing so which is something I might want; trying to be more careful there is faster.
+
+The exit room is a real bitch to do fast, so I was never consistent, but practicing that is important. Overall, there's still a ton of RNG, and you need to be really fast to have a chance at 8s, but there's a lot of fine detail to the run that really makes it much easier if you know what to do it.

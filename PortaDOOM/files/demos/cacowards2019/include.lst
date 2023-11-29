@@ -1,0 +1,5 @@
+files\demos\cacowards2019\
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
+# additional PWADs:
+@files\wads\people\Killer5\dmnsns\include.lst

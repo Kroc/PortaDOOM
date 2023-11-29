@@ -1,0 +1,137 @@
+Game:           CrispyDoom v5.5.2
+Category:       UV-Speed
+Mission:        map01-30
+Skill:          4
+
+	     	PR in 30uv (~ = not exactly sure, but at least that fast)
+LV01 - 0:06	0:05
+LV02 - 0:37	0:29
+Lv03 - 0:31	0:28
+LV04 - 0:27	0:25
+Lv05 - 0:28	0:25
+Lv06 - 0:53	0:50
+Lv07 - 0:12	0:11
+Lv08 - 0:27	0:23
+Lv09 - 1:00	0:54
+Lv10 - 0:33	0:29
+Lv11 - 0:33	0:31
+Lv12 - 0:51	0:44~
+Lv13 - 1:02	0:58
+Lv14 - 0:19	0:16
+Lv15 - 1:00	0:54~
+Lv16 - 0:15	0:11
+Lv17 - 1:11	1:09~
+Lv18 - 0:23	0:23
+Lv19 - 0:42	0:39
+Lv20 - 0:35	0:35
+Lv21 - 0:13	0:11
+Lv22 - 0:23	0:23~
+Lv23 - 0:39	0:39
+Lv24 - 0:36	0:35 (in 30UV! not IL :---D)
+Lv25 - 0:43	0:42~
+Lv26 - 0:43	0:39~
+Lv27 - 0:17	0:16~
+Lv28 - 0:43	0:40
+Lv29 - 1:39	1:34~
+Lv30 - 0:30	0:30
+      -----
+     |18:31|
+      -----
+
+
+LV01:
+6 is good enough.
+
+LV02:
+Goal is to get sub 40 or 40 if map01 in 5s.
+
+LV03:
+Basic good time.
+
+LV04:
+Im happy with 27.
+
+LV05:
+This is just fine.
+
+LV06:
+53 is solid time.
+
+LV07:
+12 seconds is very nice.
+
+LV08:
+RNG heavy map. Quite happy with 27 because sometimes you get absolutely horrible times here.
+
+LV09:
+1:00 not too happy about, but got blocked by one hell knight which was a quite big time loss.
+
+LV10:
+The Cyber Demon said "You shall pass :)".
+
+LV11:
+33 seconds is allright for a movie run.
+
+LV12:
+Quite slow map. The cacodemon room didn't go so well.
+
+LV13:
+1:02 is very nice
+
+LV14:
+I almost messed up the rocket jump but somehow didn't fall and 19 is allright though I think 18 is average when
+nothing special happens.
+
+LV15:
+1:00 is quite average time.
+
+LV16:
+This one should be 13 or 14 seconds but fine, 15 seconds is fine.
+
+LV17:
+Very nice switch trick/zero-press/impse glide/phantom press/extended switch press/long switch/far switch.
+The 20 cells at the end became quite useful in map26/27/28 because I missed the 100 cells in map25.
+
+LV18:
+23 quite solid.
+
+LV19:
+42 is allright.
+
+LV20:
+35 is only one second slower than IL record so nothing to complaing here.
+
+LV21:
+I think 13s is quite 'basic' time here with monsters, assuming you don't get pushed by the imps, meaning the map
+goes as planned.
+
+LV22:
+Bad time. Kappa.
+
+LV23:
+Finally got the 39 seconds in this map. It went extremely smooth overall. Didn't take any damage.
+
+LV24:
+36 is very nice. Didn't take any damage.
+
+LV25:
+High HP so only thing that matters is the +100 cells, but didn't get the grab.
+
+LV26:
+Had to use a bit less cells because I missed the cells.
+
+LV27:
+Very nice Barney. Kappa //
+
+LV28:
+43 is allright, especially with only one BFG shot.
+
+LV29:
+Here I went for safe strats because I knew I can get the WR without the first RJ. I was quite
+shaky here but fine. I was thinking that 1:40 is my goal here in order to have a chance for the
+record.
+
+LV30:
+Got the 30 seconds finally. Didn't miss it by a frame this time.
+
+Author: Looper (04.07.2019, 18:31-18:56)

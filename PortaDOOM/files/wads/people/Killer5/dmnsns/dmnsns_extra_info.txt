@@ -1,0 +1,65 @@
+********************
+~~~~ Dimensions ~~~~
+********************
+
+TITLE MIDI: 'Mezame' - Mai Hime
+INTERMISSION MIDI: 'The Final Battle' - Nostradameus
+
+MAP01: The Burning Legion
+MIDI: 'Absence Of Light' - Symphony X
+Description:
+	I wanted to make a map where the only limiting factor is the player.
+	This map stays out of the players way and allows the player to kill
+	stuff as fast as the player's skill permits. UV is comically difficult
+	compared to HNTR, HMP and is a very different experience all together.
+	Good Luck!
+
+
+MAP02: Walking In The Void
+MIDI: 'Watch Your Step' - Doom 64
+Description:
+	Inspired by my CS:S bhop days. I wanted to see platforms where the player
+	needs to look up to see where the player should step next. Also there is a
+	really fun gimmick fight after the player gets the bfg. Definitely one of my
+	favorite encounters I have come up with. On UV it is by design that there is
+	no hp in the ssg/rocket battle.
+
+
+MAP03: Omega-Minor
+MIDI: 'SA-X Approach' - Metroid Fusion, 'Suspense Remix' - Bobby Prince (original artist)
+Description:
+	Inspired by Slimer from Ghostbusters.. Slimer is green.. so I made a green map :P. 
+	There are two well hidden elaborate secret fights in this map. I wanted to design something where 
+	the players choices during play of a map directly impacts all the later fights in the map.
+	
+	Have fun!
+
+
+MAP31: School's Out For Summer
+MIDI: 'Bergschrund' - James Paddock
+Description:
+	Only UV is implemented.
+	
+	A map designed to be played without any regard for your own survival.
+	
+	Par time for UV-Max is 4:00.
+
+
+MAP32: Bone-Nanza
+MIDI: 'Legion Of Fear' - Knightrider Of Doom
+Description:
+	A very early map of mine that I decided to include. This map consists of three practice encounters
+	I came up with to improve my playing in specific aspects.
+	
+	You should never be looking away from the cybs during the platforms fight.
+	
+	The finale is hilariously over the top.
+	
+	I suggest players play on HNTR or HMP.
+
+
+
+
+
+
+

@@ -27,19 +27,19 @@ While these may be our MOST promising newcomers, everyone new to the community i
 :===============================================================================
 QuakeCon 2019, also advertised as "DoomCon", lived up to its name as the largest physical meetup of _Doomworld_-adjacent people on record. Among those Doing Dallas were <Quasar>, <Xaser>, <Altazimuth>, <Kaiser>, <esselfortium>, <Jimmy>, <MTrop>, <Dime>, <Csonicgo>, <Pavera>, <TDF>, <HumanBones>, <Revenant>, <dew>, <Carnevil>, <Linguica> and more. The promise of juicy `Doom`-related happenings (which turned out to be more smoke than fire, alas) brought out the faithful like never before, and possibly never again, barring a RomeroCon in not so sunny Galway, Ireland.
 
-$KEY:H=URL:https://static.doomworld.com/pages_media/7_donna.jpg
-$KEY:I=URL:https://static.doomworld.com/pages_media/7_idguys1.jpg
-$KEY:J=URL:https://static.doomworld.com/pages_media/7_idguys2.jpg
+$KEY:H=SHELL:"..\pages\images\donna.jpg"
+$KEY:I=SHELL:"..\pages\images\idguys1.jpg"
+$KEY:J=SHELL:"..\pages\images\idguys2.jpg"
 $KEY:K=URL:https://doomwiki.org/wiki/Hissy
-$KEY:L=URL:https://static.doomworld.com/pages_media/7_hissy.jpg
+$KEY:L=SHELL:"..\pages\images\hissy.jpg"
 Despite a tepid official keynote (spotting <Todd Howard> in the audience was equally exciting to the trickle of new information on tap), the _Doomworld_ crew made their own excitement, quickly recognizing and buttonholing [H: long-time <id> mom Donna Jackson] into an extended conversation, where she continually brought up <John Romero> with the tones of awe and terror your chronicler would normally associate with Bart Simpson's ex-babysitters. [I: At various times] the _Doomworld_ crew also [J: snagged the collars] of head <id> honchos <Marty Stratton> and <Hugo Martin>, mostly to relate to them all our extremely well thought out suggestions for `Doom Eternal`, and how our original-content do-not-steal fursonas should appear in the game, etc. Everyone's favorite caco [K: Hissy] also made a [L: rare personal appearance], and she changed hands to our new resident hogger, <Kaiser>.
 
-$KEY:M=URL:https://static.doomworld.com/pages_media/7_zine.jpg
+$KEY:M=SHELL:"..\pages\images\zine.jpg"
 In the leadup to QuakeCon, as a larf, we suggested to <Scuba Steve> that it would be neat if there was some sort of physical DoomCon "zine" -- and lo and behold, [M: such a zine materialized] through <Scuba Steve>'s sheer force of will, with a full complement of articles and activities, and immediately became a collector's item among the congoers. (No, you may not see it.)
 
-$KEY:N=URL:https://static.doomworld.com/pages_media/7_cake.jpg
+$KEY:N=SHELL:"..\pages\images\cake.jpg"
 $KEY:O=URL:https://www.youtube.com/watch?v=XvutrQoIAEM
-$KEY:P=URL:https://static.doomworld.com/pages_media/7_birthday.jpg
+$KEY:P=SHELL:"..\pages\images\birthday.jpg"
 As <esselfortium>'s birthday also coincided with the event, QuakeCon 2019 also featured the world's first, and hopefully only, [N: Post Hell cake], explicitly designed after a [O: horrible old meme] that inspired a horrible looping music file in _Doomworld_'s Post Hell of yonder. The [P: birthday party] also featured livestreamed `Doom` speedruns as well as live demonstrations of unreleased WADs and other assorted top-secret curios. In other words, it was an unqualified success.
 
 

@@ -14,26 +14,31 @@ Let us begin on a bittersweet note. On November 12th, <Andy Olivera> [a: announc
 $KEY:C=URL:https://www.twitch.tv/doomspeeddemos
 Speaking of <ZeroMaster>, on September 1st his [C: Doom Speed Demos] Twitch channel went up. What's the big deal? It plays randomly selected demos from the archive 24/7. If you want to get serenaded into sleep by the ASMR tingling of SSG reloads, or you need monster pain sounds to increase your work productivity, here's your best chance! In the unfiltered _PRBoom+_ software renderer, as God in Texas intended.
 
-$KEY:D=URL:https://www.youtube.com/watch?v=oGEAQAXZKBw
-$KEY:E=URL:https://www.doomworld.com/forum/topic/55589/?do=findComment&comment=1992355
-The biggest speedrunning news is <Looper>'s grand comeback. The man that kicked off the great IWAD-running resurgence in 2010 with his status quo-shattering 23:25 on `Doom` 2 UV retook the record in early July with [D: 18:31], improving <eLim>'s standing time by 2 seconds. And he went on quite a [E: tear through Doom 2] in general.
+!*Offline Replays!*
+!:------------------------------------------------------------------------------
+!_PortaDOOM_ includes these speedruns as replay files that can be watched in-engine -- use keys [End] or [PgDn] to skip a level, [,] to slow down playback, [.] to speed up, and [/] to reset to normal speed
 
-$KEY:F=URL:https://www.youtube.com/watch?v=1UkeFwJ-yHI
-$KEY:G=URL:https://www.youtube.com/watch?v=9MnFyHjgJgk
+$KEY:D=SHELL:launcher.exe /AUTO /DOOM2 /USE prboom-plus /DEMO "cacowards2019\lvall-1831\30uv1831.lmp" /CMPLVL 2
+$KEY:E=URL:https://www.doomworld.com/forum/topic/55589/?do=findComment&comment=1992355
+The biggest speedrunning news is <Looper>'s grand comeback. The man that kicked off the great IWAD-running resurgence in 2010 with his status quo-shattering *23:25* on `Doom` 2 UV retook the record in early July with [D: 18:31], improving <eLim>'s standing time by 2 seconds. And he went on quite a [E: tear through Doom 2] in general.
+
+$KEY:F=SHELL:launcher.exe /AUTO /DOOM /USE prboom-plus /DEMO "cacowards2019\e1m1p897\p1m1-897.lmp" /CMPLVL 3
+$KEY:G=SHELL:launcher.exe /AUTO /PLUTONIA /USE prboom-plus /DEMO "cacowards2019\pl07p337\pp07-337.lmp" /CMPLVL 4
 $KEY:H=URL:https://www.youtube.com/watch?v=GlCfkKZC874
-$KEY:I=URL:https://www.youtube.com/watch?v=B968JxfmTOc
-The other usual suspects didn't slack off either. <4shockblast> sho-, um, stunned the world by achieving the fabled [F: 8-second UV-speed] of `e1m1`. <ZeroMaster> embarrassed the rising DoomTube star <decino> with the first-ever pacifist completion of [G: Plutonia map07], 4 days after <decino> put it on [H: "the impossible list"]. <ZM> also discovered a new type of architecture permitting void glides, which he showcased on the OG void run in [I: e2m6], though previous record holder <JCD> has improved it by 2 seconds since then.
+$KEY:I=SHELL:launcher.exe /AUTO /DOOM /USE prboom-plus /DEMO "cacowards2019\e2m6p017\p2m6-017.lmp" /CMPLVL 3
+The other usual suspects didn't slack off either. <4shockblast> sho-, um, stunned the world by achieving the fabled [F: 8-second UV-speed] of `e1m1`. <ZeroMaster> embarrassed the rising DoomTube star <decino> with the first-ever pacifist completion of [G: Plutonia map07], 4 days after <decino> put it on [H: "the impossible list"]. <ZM> also discovered a new type of architecture permitting void glides, which he showcased on the OG void run in [I: E2M6], though previous record holder <JCD> has improved it by 2 seconds since then.
 
 $KEY:J=URL:https://www.youtube.com/playlist?list=PLg_b5Q5uBiq6_mw_PJyMB71qdMRlz-ZHu
 $KEY:K=URL:https://gamesdonequick.com/
 $KEY:L=URL:https://www.youtube.com/watch?v=LeLzijSyHYw
 This year's most notable livestreamed runs include QuakeCon's [J: chained runs] of all the `Doom` games, with <Dime> in the cockpit for the most important entries, and [K: GDQ]'s [L: community spotlight event] with <Ancalagon>'s heroics in `Crumpets` and `Sunlust` `map29`.
 
-$KEY:M=URL:https://www.youtube.com/watch?v=bIhpw7eJ2Wg
-$KEY:N=URL:https://www.youtube.com/watch?v=L9_uWGXP_Pw
-$KEY:O=URL:https://www.youtube.com/watch?v=DGBMO6kuHQc
+$KEY:M=SHELL:launcher.exe /AUTO /DOOM2 /PWAD "people\Killer5\dmnsns\dmnsns.wad" /USE prboom-plus /DEMO "cacowards2019\dmn03-1756\dmn03-1756.lmp" /CMPLVL 9
+$KEY:N=SHELL:launcher.exe /AUTO /PLUTONIA /USE prboom-plus /DEMO "cacowards2019\pl32-258\pl32-258.lmp" /CMPLVL 4
+$KEY:O=SHELL:launcher.exe /AUTO /DOOM2 /PWAD "megawads\eviternity\Eviternity.wad" /USE prboom-plus /DEMO "cacowards2019\evitall-55407\evi-35407.lmp"
+$KEY:Y=URL:https://www.youtube.com/watch?v=DGBMO6kuHQc
 $KEY:1=PAGE:#03
-Finally, some recommended watching for the `Doom` festivities, showcasing some of the best and hardest of 2019's UV Maxing: <Ancalagon>'s `Dimensions` `map03` in [M: 17:56], <0xf00ba12>'s `Plutonia` `map32` [N: sub-3:00], and <Nevanos>'s cray-cray [O: 6-hr marathon] of [1] `Eviternity` (which sadly misses *a* monster).
+Finally, some recommended watching for the `Doom` festivities, showcasing some of the best and hardest of 2019's UV Maxing: <Ancalagon>'s `Dimensions` `map03` in [M: 17:56], <0xf00ba12>'s `Plutonia` `map32` [N: sub-3:00], and <Nevanos>'s cray-cray [O: 6-hr marathon] ([Y: YouTube]) of [1] `Eviternity` (which sadly misses *a* monster). 
 
 
 :THE TWENTY-TENS'S TEXTURE TREATS
