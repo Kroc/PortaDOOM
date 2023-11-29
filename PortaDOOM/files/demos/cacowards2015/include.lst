@@ -3,3 +3,7 @@ files\demos\cacowards2015\
 @files\ports\use=prboom-plus.lst
 # additional PWADs:
 @files\wads\megawads\scythe\include.lst
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\plutonia.ini
+files\wads\tnt.ini

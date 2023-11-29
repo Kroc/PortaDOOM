@@ -3,3 +3,6 @@ files\demos\cacowards2019\
 @files\ports\use=prboom-plus.lst
 # additional PWADs:
 @files\wads\people\Killer5\dmnsns\include.lst
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\plutonia.ini

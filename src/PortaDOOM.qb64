@@ -956,7 +956,7 @@ SUB exec(cmd$)
     DIM cwd$: LET cwd$ = _CWD$
     CHDIR "files"
     'exeute the shell command
-    SHELL "START " + CHR$(ASC_SMARK) + CHR$(ASC_SMARK)+ " " + cmd$
+    SHELL _DONTWAIT cmd$
     'return to the previous directory
     CHDIR cwd$
     

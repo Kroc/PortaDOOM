@@ -74,6 +74,9 @@ gzdoom.ini
 
 # exclude Zandronum's skins folder
 skins/
+# DOOM retro's folders
+autoload/
+console/
 
 # exclude user configs
 default.cfg
