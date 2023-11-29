@@ -34,9 +34,5 @@ pages\2018 Cacowards #??.dosmag
 @files\wads\onesies\demonastery\include.lst
 @files\wads\megawads\doom404\include.lst
 @files\wads\people\bemused\cryogenics\include.lst
-
-# (all demos require prboom-plus)
-@files\ports\use=prboom-plus.lst
-files\demos\cacowards2015\
-@files\wads\megawads\av\include.lst
-@files\wads\people\death-destiny\nochance\include.lst
+# page 18:
+@files\demos\cacowards2018\include.lst

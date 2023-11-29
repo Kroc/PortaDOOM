@@ -2,10 +2,11 @@ $NAV=Onesies
 $KEY:P=SHELL:launcher.exe "wads\onesies\demonastery\play-demonastery.ini"
 $KEY:T=SHELL:wads\onesies\demonastery\demonastery.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/102434
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/demonastery
 
 :Demonastery									 * 2018 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2018>10>20	  Author : <Nootrac4571>
 :Levels   : *1			   Modes : *Single, Co-op?, Deathmatch?

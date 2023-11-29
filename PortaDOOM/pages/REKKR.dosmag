@@ -1,6 +1,6 @@
 $NAV=Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\REKKR\play-rekkr.ini"
-$KEY:T=SHELL:wads\conversions\rekkr\rekcreds.txt
+$KEY:T=SHELL:wads\conversions\rekkr\REK_CREDS.txt
 $KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/megawads/rekkr
 $KEY:G=URL:https://www.gog.com/game/rekkr_sunken_land
 $KEY:S=URL:https://store.steampowered.com/app/1715690/REKKR_Sunken_Land/

@@ -1,0 +1,6 @@
+files\demos\cacowards2018\
+# (all demos require prboom-plus)
+@files\ports\use=prboom-plus.lst
+# additional PWADs:
+@files\wads\megawads\av\include.lst
+@files\wads\people\death-destiny\nochance\include.lst

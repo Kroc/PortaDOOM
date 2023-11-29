@@ -18,7 +18,7 @@ $KEY:R=URL:https://www.doomworld.com/forum/topic/98922
 :PLAY IT, BUY THE BOOK
 :===============================================================================
 $KEY:G=URL:http://fabiensanglard.net/gebbdoom/
-$KEY:W=URL:https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book_Wolfenstein?id=hel6DwAAQBAJ
+$KEY:W=URL:https://fabiensanglard.net/gebbwolf3d/
 $KEY:B=URL:https://en.wikipedia.org/wiki/Doom_engine#Binary_space_partitioning
 While December 10, 2018 is the 25th birthday of `DOOM`, it is also the release date of <Fabien Sanglard>'s [G: Game Engine Black Book: DOOM], which picks up where the previous [W: Wolf3D tome] left off, and delves into the technological and historical guts of the `DOOM` engine. If you are interested in `DOOM` lore and trivia, then it is required reading. Did you know <John Carmack>'s love affair with the [B: BSP tree] didn't even begin with `DOOM` but with `Wolf3D` for SNES?... but I digress.
 
@@ -38,28 +38,6 @@ $KEY:F=URL:https://www.doomworld.com/forum/topic/103100
 $KEY:3=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/sf3
 After a bout of development hell, [3: Slaughterfest 3] -- originally `Slaughterfest 2013` (!) -- is out, and worth a look even for intermittent players of high-bodycount stuff. Alongside the behemoths and the demanding tests, there are shorter, snappier maps that work as effective ease-ins. Devoid of the "monotextured boxes with monsters" occasionally seen in `SF2011`, `Slaughterfest 3` is a well rounded, polished set. Just don't set out for completionism unless truly motivated; it is a full megawad plus change, and there are some very long maps.
 
-
-:MINI MOD SAFARI
-:===============================================================================
-Every year, there's always a slew of people with gigantic projects that want to sweep everyone and everything away, but there's always a bunch of people that just wanna make something small. While often not big enough for awards, many times there's a handful of tiny mods that just make things... neat.
-
-$KEY:A=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59889
-- [A: autoautosave] is a must-have for anyone who frequently forgets to save across long periods of time but doesn't want to resort to savescumming, automating the saving process every X minutes under Y conditions. Extremely useful!
-
-$KEY:S=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61742
-- [S: Super Mario Agilities] is for those who like having a little more mobility options for `DOOM`, accentuating Doomguy's limited jumping and giving him the ability to leap high and even stomp on enemies!
-
-$KEY:D=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=59887
-- [D: Demon Counterstrike] is simple in idea and in execution: As you go through a level, areas you've visited will have demons and small items populate in the areas again. Backtracking will now result in surprise ambushes or equipment. Fun!
-
-$KEY:L=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61666
-- [L: Liquidated Doom] takes `DOOM` and sets it entirely underwater, purely through _ZScript_. Perhaps the most out-there of all the modlets on this list, but it does mix things up quite nicely.
-
-$KEY:P=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=60456
-- [P: Champions] is a small and crazy-compatible enemy mod that provides variations of existing monsters without replacing them, making for nasty surprises in otherwise-normal encounters. Neat!
-
-$KEY:I=URL:https://forum.zdoom.org/viewtopic.php?f=43&t=61047
-- For those who want to play DM maps in singleplayer, or really liked _Skulltag_'s Invasion mode, [I: Supreme Invasion] converts DM maps into pseudo-invasion maps, spawning enemies in waves to hack down the player.
 
 :DOS BOOT
 :===============================================================================

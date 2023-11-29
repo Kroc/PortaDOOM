@@ -21,7 +21,8 @@ Having fun with your mates is ultimately an extremely simple concept, and `QCDE`
 ^C:DEATHMATCH AND REBIRTHMATCH
 :===============================================================================
 $KEY:W=URL:http://doomleague.org/
-$KEY:P=URL:http://doomleague.org/forums/index.php?topic=1013.0
+$REM=$KEY:P=URL:http://doomleague.org/forums/index.php?topic=1013.0
+$KEY:P=URL:https://web.archive.org/web/20181127144034/doomleague.org/forums/index.php?topic=1013.0
 Spring of 2018 saw the ultimate season of [W: World Doom League] unfold (and unravel). The heavy favourites from <Best Ever> (<RosKing>, <Infer>, <Legion>) [P: prevailed] over surprising finalists <The Phantom Troupe> (<Tai>, <Caution>, <Dasten>). Then some long-running tensions flared up over accusations of unfair practices, bad blood spilled everywhere and the admins decided enough was enough and pulled the plug. With nine seasons over five years it was the second longest running competitive `DOOM` project after the _IDL_, coincidentally also founded by <Ralphis>. So long, and thanks for all the flags!
 
 $KEY:Z=URL:https://zandronum.com/forum/viewtopic.php?t=9362
