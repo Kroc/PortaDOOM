@@ -22,6 +22,18 @@ END IF
 'the ultra / fast / retro tier categories
 CALL Engines_SelectTiers
 
+'if only 1 category remains, select that by default
+DIM has_ultra%, has_fast%, has_retro%
+IF Engines_SelectedUltra <> 0 THEN has_ultra% = 1
+IF Engines_SelectedFast  <> 0 THEN has_fast%  = 1
+IF Engines_SelectedRetro <> 0 THEN has_retro% = 1
+IF (has_ultra% + has_fast% + has_retro%) = 1 THEN
+    IF has_ultra% = 1 THEN CALL Engines_Select(Engines_SelectedUltra)
+    IF has_fast%  = 1 THEN CALL Engines_Select(Engines_SelectedFast)
+    IF has_retro% = 1 THEN CALL Engines_Select(Engines_SelectedRetro)
+    GOTO launch
+END IF
+
 'setup UI:
 '-----------------------------------------------------------------------------
 CALL UIStatusbar_Clear
