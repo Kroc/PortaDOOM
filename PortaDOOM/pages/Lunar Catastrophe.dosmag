@@ -2,10 +2,11 @@ $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\lunar\play-lunar.ini"
 $KEY:T=SHELL:wads\megawads\lunar\Lunar.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/103629
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom/Ports/megawads/lunar
 
 :Lunar Catastrophe                               * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2018>12>30	  Author : <Miss Bubbles> & <Count651>
 :Levels   : *36			   Modes : *Single, Co-op, Deathmatch

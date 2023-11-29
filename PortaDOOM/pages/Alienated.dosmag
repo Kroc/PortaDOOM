@@ -2,10 +2,11 @@ $NAV=Episodes
 $KEY:P=SHELL:launcher.exe "wads\episodes\alienated\play-alienated.ini"
 $KEY:T=SHELL:wads\episodes\alienated\alienated.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/108865
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/a-c/alienated
 
 :Alienated                                       * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>09>08	  Author : <Michal "Lorenzo" Kurowski>
 :Levels   : *10			   Modes : *Single, Co-op

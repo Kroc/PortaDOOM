@@ -2,10 +2,11 @@ $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\doomzero\play-doomzero.ini"
 $KEY:T=SHELL:wads\megawads\doomzero\DoomZero.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/109216
+$KEY:M=URL:https://www.moddb.com/mods/doom-zero/downloads
 
 :Doom Zero                                       * 2019 Cacoward Runner Up! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [M] ModDB
 :-------------------------------------------------------------------------------
 :Released : *2019>09>30	  Author : <DASI-I>
 :Levels   : *32			   Modes : *Single, Co-op

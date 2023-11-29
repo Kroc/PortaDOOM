@@ -18,7 +18,7 @@ $KEY:G=URL:https://www.gog.com/game/doom_ii
 $KEY:S=URL:https://store.steampowered.com/app/2300/DOOM_II/
 ! *NOTE:* REQUIRES COMMERCIALLY-AVAILABLE "TNT.WAD":
 ! :-----------------------------------------------------------------------------
-! If you own either `"Final Doom"` or `"DOOM II Enhanced"` on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file _"TNT.WAD"_ in the _"files\wads"_ folder.
+! If you own `"Final Doom"` or `"DOOM II Enhanced"` on [G: GOG] or [S: Steam] it will be detected automatically, otherwise place the file _"TNT.WAD"_ in the _"files\wads"_ folder.
 
 *Story:
 

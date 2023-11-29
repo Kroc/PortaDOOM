@@ -2,10 +2,11 @@ $NAV=MegaWADs
 $KEY:P=SHELL:launcher.exe "wads\megawads\joi_lstcv\play-joi_lstcv15.ini"
 $KEY:T=SHELL:wads\megawads\joi_lstcv\joi_lstcv15.txt
 $KEY:D=URL:https://www.doomworld.com/forum/topic/105215
+$KEY:I=URL:https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/joi_lstcv15
 
 :Lost Civilization                                  * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play						*[T] .txt [D] Doomworld
+*[P] Play						*[T] .txt [D] Doomworld [I] idgames
 :-------------------------------------------------------------------------------
 :Released : *2019>12>16	  Author : <Jaakko "Jaska" Impola> (<JOI> in maps)
 :Levels   : *22			   Modes : *Single
@@ -34,10 +35,12 @@ $KEY:D=URL:https://www.doomworld.com/forum/topic/105215
 - Thanks to all for great textures and graphics
 
 *Credits (music):
-$KEY:1=URL:http://www.lynnemusic.com/midi.html
+$REM=was https://lynnemusic.com/midi.html
+$REM=now https://lynnemusic.com/retro-amiga-and-game-soundtracks-albums/ ?
+$KEY:1=URL:http://www.lynnemusic.com
 
 - <Jimmy> & <Björn Lynne>:
-  [1: http://www.lynnemusic.com/midi.html]
+  [1: http://www.lynnemusic.com]
 
 *Credits (textures, graphics):
 

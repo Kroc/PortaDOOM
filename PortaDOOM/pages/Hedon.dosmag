@@ -2,11 +2,11 @@ $NAV=Total Conversions
 $KEY:P=SHELL:launcher.exe "wads\conversions\Hedon\play-hedon.ini"
 $KEY:1=SHELL:"wads\conversions\Hedon\1_Manual_Launch&Setup.pdf"
 $KEY:2=SHELL:"wads\conversions\Hedon\2_Manual_Gameplay.pdf"
-$KEY:W=URL:https://zanthebonebreaker.itch.io/hedon
+$KEY:O=URL:https://zanthebonebreaker.itch.io/hedon
 
 :Hedon (Demo)                                       * 2019 Cacoward Winner! *
 :===============================================================================
-*[P] Play                        *[W] Website* Manual: [1] *Setup [2] Gameplay
+*[P] Play                        *[O] itch.io* Manual: [1] *Setup [2] Gameplay
 :-------------------------------------------------------------------------------
 :Released : *2019>04>12	  Author : <Zan>
 :Levels   : *10			   Modes : *Single, Co-op?
