@@ -459,49 +459,49 @@ OR Games_Selected.warp_m >= 0 THEN
     '(warp, but no skill-level provided)
     IF Games_Selected.skill < 0 THEN
         PRINT ""
-        PRINT "--------------------------------------------------------------------------------"
+        PRINT STRING$(80, ASC_BOX_H)
         PRINT ""
-        PRINT "         CHOOSE YOUR SKILL LEVEL:"
-        PRINT "         (Press numbered key)"
+        COLOR YELLOW: PRINT "         CHOOSE YOUR SKILL LEVEL:"
+        COLOR WHITE: PRINT "         (Press numbered key)"
         PRINT ""
         
         'if the PWAD provides its own skill-levels, use those:
         IF Games_Selected.skill1 <> "" THEN
             'work through the list of IWAD skill-levels (up to 9)
             IF Games_Selected.skill1 <> "" THEN
-                PRINT "         [1]  ";
+                COLOR AQUA: PRINT "         [1]  ";
                 PRINT Games_Selected.skill1
             END IF
             IF Games_Selected.skill2 <> "" THEN
-                PRINT "         [2]  ";
+                COLOR AQUA: PRINT "         [2]  ";
                 PRINT Games_Selected.skill2
             END IF
             IF Games_Selected.skill3 <> "" THEN
-                PRINT "         [3]  ";
+                COLOR AQUA: PRINT "         [3]  ";
                 PRINT Games_Selected.skill3
             END IF
             IF Games_Selected.skill4 <> "" THEN
-                PRINT "         [4]  ";
+                COLOR AQUA: PRINT "         [4]  ";
                 PRINT Games_Selected.skill4
             END IF
             IF Games_Selected.skill5 <> "" THEN
-                PRINT "         [5]  ";
+                COLOR AQUA: PRINT "         [5]  ";
                 PRINT Games_Selected.skill5
             END IF
             IF Games_Selected.skill6 <> "" THEN
-                PRINT "         [6]  ";
+                COLOR AQUA: PRINT "         [6]  ";
                 PRINT Games_Selected.skill6
             END IF
             IF Games_Selected.skill7 <> "" THEN
-                PRINT "         [7]  ";
+                COLOR AQUA: PRINT "         [7]  ";
                 PRINT Games_Selected.skill7
             END IF
             IF Games_Selected.skill8 <> "" THEN
-                PRINT "         [8]  ";
+                COLOR AQUA: PRINT "         [8]  ";
                 PRINT Games_Selected.skill8
             END IF
             IF Games_Selected.skill9 <> "" THEN
-                PRINT "         [9]  ";
+                COLOR AQUA: PRINT "         [9]  ";
                 PRINT Games_Selected.skill9
             END IF
             
@@ -510,6 +510,7 @@ OR Games_Selected.warp_m >= 0 THEN
         ELSEIF Games_Selected.iwad > 0 _
             OR IWADs_Selected.skill1 = "" _
         THEN
+            COLOR AQUA
             PRINT "         [1]  I'm Too Young To Die"
             PRINT "         [2]  Hey, Not Too Rough"
             PRINT "         [3]  Hurt Me Plenty"
@@ -518,45 +519,47 @@ OR Games_Selected.warp_m >= 0 THEN
         ELSE
             'work through the list of IWAD skill-levels (up to 9)
             IF IWADs_Selected.skill1 <> "" THEN
-                PRINT "         [1]  ";
+                COLOR AQUA: PRINT "         [1]  ";
                 PRINT IWADs_Selected.skill1
             END IF
             IF IWADs_Selected.skill2 <> "" THEN
-                PRINT "         [2]  ";
+                COLOR AQUA: PRINT "         [2]  ";
                 PRINT IWADs_Selected.skill2
             END IF
             IF IWADs_Selected.skill3 <> "" THEN
-                PRINT "         [3]  ";
+                COLOR AQUA: PRINT "         [3]  ";
                 PRINT IWADs_Selected.skill3
             END IF
             IF IWADs_Selected.skill4 <> "" THEN
-                PRINT "         [4]  ";
+                COLOR AQUA: PRINT "         [4]  ";
                 PRINT IWADs_Selected.skill4
             END IF
             IF IWADs_Selected.skill5 <> "" THEN
-                PRINT "         [5]  ";
+                COLOR AQUA: PRINT "         [5]  ";
                 PRINT IWADs_Selected.skill5
             END IF
             IF IWADs_Selected.skill6 <> "" THEN
-                PRINT "         [6]  ";
+                COLOR AQUA: PRINT "         [6]  ";
                 PRINT IWADs_Selected.skill6
             END IF
             IF IWADs_Selected.skill7 <> "" THEN
-                PRINT "         [7]  ";
+                COLOR AQUA: PRINT "         [7]  ";
                 PRINT IWADs_Selected.skill7
             END IF
             IF IWADs_Selected.skill8 <> "" THEN
-                PRINT "         [8]  ";
+                COLOR AQUA: PRINT "         [8]  ";
                 PRINT IWADs_Selected.skill8
             END IF
             IF IWADs_Selected.skill9 <> "" THEN
-                PRINT "         [9]  ";
+                COLOR AQUA: PRINT "         [9]  ";
                 PRINT IWADs_Selected.skill9
             END IF
         END IF
         
+        COLOR AQUA
         PRINT ""
         PRINT "         [?]";
+        COLOR UI_FORECOLOR
         'position a blinking cursor over the question-mark
         LOCATE , POS(0)-2, 1, 0, 31
         
@@ -567,7 +570,7 @@ OR Games_Selected.warp_m >= 0 THEN
         'turn off the cursor
         LOCATE ,1 , 0
         
-        PRINT "--------------------------------------------------------------------------------"
+        PRINT STRING$(80, ASC_BOX_H)
         PRINT ""
         
         LET Games_Selected.skill = VAL(key$)
