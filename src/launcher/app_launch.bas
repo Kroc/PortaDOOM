@@ -694,12 +694,6 @@ IF Games_Selected.cmd <> "" THEN
     END IF
 END IF
 
-'auto-quit? (ZDoom-based engines only)
-IF CMD_QUIT` THEN
-    LET CMD$ = CMD$ + " +quit"
-    COLOR YELLOW: PRINT "        +quit": COLOR UI_FORECOLOR
-END IF
-
 '-----------------------------------------------------------------------------
 '[14] launch!
 '-----------------------------------------------------------------------------
@@ -709,13 +703,17 @@ END IF
 IF LEFT$(Engines_Selected.engine, 11) = "prboom-plus" THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
     COLOR YELLOW: PRINT "        -save : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(DIR_SAVE_GAME$, UI_SCREEN_WIDTH - 17)
+    PRINT RTRUNCATE$( _
+        DIR_SAVE_ENGINE$ + DIR_SAVE_GAME$ + "\", UI_SCREEN_WIDTH - 17 _
+    )
 ELSE
     'all other engines use `-savedir`,
     'except doom64x which has no support yet
     LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
     COLOR YELLOW: PRINT "     -savedir : ";: COLOR UI_FORECOLOR
-    PRINT RTRUNCATE$(DIR_SAVE_GAME$, UI_SCREEN_WIDTH - 17)
+    PRINT TRUNCATE$( _
+        DIR_SAVE_ENGINE$ + DIR_SAVE_GAME$ + "\", UI_SCREEN_WIDTH - 17 _
+    )
 END IF
 
 'where screen-shots get saved varies by engine; many put them in the engine's
@@ -733,6 +731,12 @@ LET CMD$ = CMD$ + " -shotdir " + CHR$(34) + DIR_SCREENSHOT$ + CHR$(34)
 IF Engines_Selected.engine = "doom64ex" THEN
     LET CMD$ = CMD$ + " -setvars s_soundfont " + CHR$(34) _
                     + Launch_FixPath$(DIR_ENGINE$ + "DOOMSND.SF2") + CHR$(34)
+END IF
+
+'auto-quit? (ZDoom-based engines only)
+IF CMD_QUIT` THEN
+    LET CMD$ = CMD$ + " +quit"
+    COLOR YELLOW: PRINT "        +quit": COLOR UI_FORECOLOR
 END IF
 
 COLOR WHITE
