@@ -2,3 +2,10 @@ files\mods\HighNoonDrifter\
 # contemporary version of GZDoom is v3.2
 # but it freezes a lot for me, so use v3.3
 @files\ports\use=gzdoom-303.lst
+# referenced IWADs in the sample list
+files\wads\doom.ini
+files\wads\doom2.ini
+files\wads\tnt.ini
+files\wads\plutonia.ini
+files\wads\freedoom1.ini
+files\wads\freedoom2.ini
