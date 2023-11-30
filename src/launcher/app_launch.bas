@@ -80,20 +80,66 @@ CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_ENGINE$)
 'the saves folder will contain a sub-folder for each engine (above),
 'and then another sub-folder for the IWAD or PWAD
 DIM DIR_SAVE_GAME$
+LET DIR_SAVE_GAME$ = ""
 
-'if the game is using a PWAD,
-IF Games_Selected.pwad <> "" THEN
-    'use that name for the save folder
-    LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
-      + Paths_GetFileBaseName$(Games_Selected.pwad)
-ELSE
-    'otherwise just use the IWAD name
-    LET DIR_SAVE_GAME$ = DIR_SAVE_ENGINE$ _
+'pre:
+'-----------------------------------------------------------------------------
+'if there are pre-files, include those in the save-slug
+IF Games_Selected.pre <> "" THEN
+    'there may be multiple...
+    'read the first file from the list
+    LET file$ = Games_Selected.pre
+    LET file$ = WADs_Split$(file$)
+    DO
+        'strip any path + extension and add to the list
+        LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + Paths_GetFileBaseName$(file$)
+        'get the next file in the list
+        LET file$ = WADs_Split$("")
+        'if there is more, add a separator
+        IF file$ <> "" THEN LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + "-"
+    LOOP WHILE file$ <> ""
+END IF
+
+'IWAD / PWAD:
+'-----------------------------------------------------------------------------
+'only include the IWAD name if there is no PWAD
+'e.g. we want to use "scythe" instead of "doom2-scythe"
+IF Games_Selected.pwad = "" THEN
+    'if there were pre-files, a separator is needed
+    IF DIR_SAVE_GAME$ <> "" THEN LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + "-"
+    'append the IWAD name
+    LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ _
       + Paths_GetFileBaseName$(IWADs_Selected.path)
+ELSE
+    'if there were pre-files, a separator is needed
+    IF DIR_SAVE_GAME$ <> "" THEN LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + "-"
+    'append the PWAD name
+    LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ _
+      + Paths_GetFileBaseName$(Games_Selected.pwad)
+END IF
+
+'files:
+'-----------------------------------------------------------------------------
+'any files to include after the IWAD/PWAD?
+IF Games_Selected.files <> "" THEN
+    'add a separator after the IWAD/PWAD
+    LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + "-"
+    'there may be multiple files,
+    'read the first file from the list
+    LET file$ = Games_Selected.files
+    LET file$ = WADs_Split$(file$)
+    DO
+        'strip any path + extension and add to the list
+        LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + Paths_GetFileBaseName$(file$)
+        'get the next file in the list
+        LET file$ = WADs_Split$("")
+        'if there is more, add a separator
+        IF file$ <> "" THEN LET DIR_SAVE_GAME$ = DIR_SAVE_GAME$ + "-"
+    LOOP WHILE file$ <> ""
 END IF
 
 'does this folder exist?
-CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_GAME$)
+CALL Launch_MkDir(DIR_EXE$ + DIR_SAVE_ENGINE$ + DIR_SAVE_GAME$)
 
 '-----------------------------------------------------------------------------
 '[02] engine executable:
@@ -662,10 +708,14 @@ END IF
 'TODO: DOOM Retro will support both in the next release
 IF LEFT$(Engines_Selected.engine, 11) = "prboom-plus" THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
+    COLOR YELLOW: PRINT "        -save : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(DIR_SAVE_GAME$, UI_SCREEN_WIDTH - 17)
 ELSE
     'all other engines use `-savedir`,
     'except doom64x which has no support yet
     LET CMD$ = CMD$ + " -savedir " + CHR$(34) + "." + CHR$(34)
+    COLOR YELLOW: PRINT "     -savedir : ";: COLOR UI_FORECOLOR
+    PRINT RTRUNCATE$(DIR_SAVE_GAME$, UI_SCREEN_WIDTH - 17)
 END IF
 
 'where screen-shots get saved varies by engine; many put them in the engine's
@@ -711,7 +761,7 @@ END IF
 
 'set the directory for the game engine to assume as default; note that all
 'paths on the command-line must be relative to the save-game folder!
-CHDIR DIR_EXE$ + DIR_SAVE_GAME$
+CHDIR DIR_EXE$ + DIR_SAVE_ENGINE$ + DIR_SAVE_GAME$
 
 'has the `/WAIT` command-line option been specified?
 IF CMD_WAIT` THEN
