@@ -280,6 +280,7 @@ SUB Engines_Enumerate()
             
             '-------------------------------------------------------------------
             'process the tag list
+            CALL Tags_Add(shared_tags$)
             CALL Tags_Add(ini_tags$)
             
             'increase the list of known engines
