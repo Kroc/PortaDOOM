@@ -1,0 +1,89 @@
+===========================================================================
+Advanced engine needed  : Limit-removing. Developed using GZDoom.
+Primary purpose         : Single player, Co-op, and Deathmatch
+===========================================================================
+Title                   : SIGIL II
+Filename                : SIGIL_II_V1_0.WAD
+Release date            : December 10, 2023
+Author                  : John Romero
+Email Address           : john@romero.com
+Other Files By Author   : DOOM1.WAD, DOOM.WAD, DOOM2.WAD, E1M4b.WAD, E1M8b.WAD, SIGIL_V1_21.WAD
+Misc. Author Info       : Co-founder of id Software, creator of DOOM
+
+Description             : Embark on a nostalgic nightmare: Immerse yourself in the dark,
+			  demonic world of DOOM like never before. John Romero, the
+			  original Icon of Sin, takes you on a terrifying journey to
+			  commemorate the 30th anniversary of this legendary, first-person
+			  shooter. SIGIL II is DOOM's unofficial sixth episode.
+
+			  Upon breaching the pentagram of invulnerability in the final
+			  moments of SIGIL, Episode Five, you find yourself not on a
+			  victorious journey back to save Earth, but caught in Baphomet's
+			  cunning snare, catapulted into a new, grotesque domain of
+			  relentless torment, unending demon hordes, and an onslaught of
+			  heavy metal mayhem!
+
+Additional Credits to   : MIDI: James Paddock
+			  Cover: Christopher Lovell
+			  Tech Experts: Flambeau, UberGewei, dew, Keyboard_Doomer, AF-Domains, Xaser
+			  Logo: Sara Mena
+			  Producer: Brenda Romero
+			  Social: Maezza Romero
+			  Thanks to Sponge
+
+			  Ultimate Doom Builder
+			  SLADE3
+			  DoomTools: https://mtrop.github.io/DoomTools/
+			  WhackEd4 (successor to DeHackEd)
+			  wadptr: https://soulsphere.org/projects/wadptr/
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : DeHackEd lump
+Demos                   : Yes
+Other                   : none
+Other files required    : none
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E6M1 through E6M9
+Single Player           : Designed for Single Player
+Cooperative 2-4 Player  : Designed for 4 Players
+Deathmatch 2-4 Player   : Designed for 4 Players
+Other game styles       : none
+Difficulty Settings     : Yes, all of them
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : One year, 2023
+Editor(s) used          : Ultimate Doom Builder
+Known Bugs              : Some engines do not support episode 6
+May Not Run With        : Ports that don't support episode 6
+Tested With             : Tested on DSDA-Doom, Crispy Doom, Eternity, ZDaemon
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse without explicit permission of the original mappers.  Permissions
+have been obtained from original authors for any of their resources modified
+or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: romero.com

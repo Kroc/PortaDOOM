@@ -174,6 +174,7 @@ REM # GZDoom
 REM #===========================================================================
 :gzdoom-all
 CALL :gzdoom_any 999
+CALL :gzdoom_any 412
 CALL :gzdoom_any 411
 CALL :gzdoom_any 410
 CALL :gzdoom_any 409

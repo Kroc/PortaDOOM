@@ -1,4 +1,4 @@
-:: PortaDOOM, copyright (C) Kroc Camen 2016-2023, BSD 2-clause
+:: PortaDOOM, copyright (C) Kroc Camen 2016-2024, BSD 2-clause
 @ECHO OFF & SETLOCAL ENABLEEXTENSIONS DISABLEDELAYEDEXPANSION
 
 SET "LAUNCHER=..\launcher.exe /WAIT"
@@ -85,7 +85,7 @@ ECHO    [N] GZDoom v4.3               [O] GZDoom v4.4
 ECHO    [P] GZDoom v4.5               [Q] GZDoom v4.6
 ECHO    [R] GZDoom v4.7               [S] GZDoom v4.8
 ECHO    [T] GZDoom v4.9               [U] GZDoom v4.10
-ECHO    [V] GZDoom v4.11
+ECHO    [V] GZDoom v4.11              [W] GZDoom v4.12
 ECHO:
 
 SET CHOICE=?
@@ -130,5 +130,6 @@ IF /I "%CHOICE%" == "S" %LAUNCHER% /USE gzdoom-408 /IWAD DOOM2
 IF /I "%CHOICE%" == "T" %LAUNCHER% /USE gzdoom-409 /IWAD DOOM2
 IF /I "%CHOICE%" == "U" %LAUNCHER% /USE gzdoom-410 /IWAD DOOM2
 IF /I "%CHOICE%" == "V" %LAUNCHER% /USE gzdoom-411 /IWAD DOOM2
+IF /I "%CHOICE%" == "W" %LAUNCHER% /USE gzdoom-412 /IWAD DOOM2
 
 GOTO :gzdoom
