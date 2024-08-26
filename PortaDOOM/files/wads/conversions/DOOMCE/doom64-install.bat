@@ -8,21 +8,9 @@ if exist "%patchdir%\tmp" rmdir /q/s "%patchdir%\tmp"
 :wadfind
 echo Searching for DOOM64.WAD...
 echo.
-
-for /F "usebackq tokens=3*" %%A in (`REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 1148590" /v InstallLocation 2^> nul`) do (
+for /F "usebackq tokens=3*" %%A in (`REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 1148590" /v InstallLocation`) do (
     set appdir=%%A %%B
 )
-for /F "usebackq tokens=3*" %%A in (`REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\GOG.com\Games\1456611261" /v path 2^> nul `) do (
-    set appdir=%%A %%B
-)
-for /F "tokens=*" %%A in ('%patchdir%\jq\jq.exe -r ".InstallationList[] | select(.AppName == \"5b60142e120c4f2d88027595c21d4a04\").InstallLocation" %programdata%\Epic\UnrealEngineLauncher\LauncherInstalled.dat') do (
-    echo %%A
-    set appdir=%%A
-)
-for /F "usebackq tokens=3*" %%A IN (`REG QUERY "HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages\BethesdaSoftworks.Doom641997_2.0.0.0_x64__3275kfvn8vcwc" /v PackageRootFolder 2^> nul`) do (
-    set appdir=%%A %%B\
-)
-
 if not exist "%appdir%\DOOM64.WAD" set appdir=.
 if not exist "%appdir%\DOOM64.WAD" goto notfound
 echo DOOM64.WAD found at "%appdir%"
@@ -46,20 +34,26 @@ echo.
 if exist DOOM64.CE.Maps.LostLevels.pk3 goto alreadyassembled
 set waddir=%patchdir%\tmp\wad
 set zipdir=%patchdir%\tmp\ce
-set mapdir=%zipdir%\maps
+set mapdir=%zipdir%\MAPS
+set lumpdir=%zipdir%\FILTER\game-doom
 mkdir "%waddir%"
 mkdir "%mapdir%"
+mkdir "%lumpdir%"
 "%patchdir%\wadex\wadex.exe" E "%appdir%\DOOM64.WAD" "%waddir%"
 set /a c=1
 for /L %%M IN (34,1,40) DO (
     echo Processing MAP%%M...
     echo.
-    "%patchdir%\flips\flips.exe" -a "%patchdir%\LOST0!c!.BPS" "%waddir%\MAP%%M" "%mapdir%\lost0!c!.wad"
+    "%patchdir%\flips\flips.exe" -a "%patchdir%\LOST0!c!.BPS" "%waddir%\MAP%%M" "%mapdir%\LOST0!c!.WAD"
     if not exist "%mapdir%\LOST0!c!.WAD" goto failassemble
     mkdir "%waddir%\LOST0!c!"
     "%patchdir%\wadex\wadex.exe" E "%waddir%\MAP%%M" "%waddir%\LOST0!c!"
+    "%patchdir%\flips\flips.exe" -a "%patchdir%\S_LOST0!c!.BPS" "%waddir%\LOST0!c!\SECTORS" "%lumpdir%\S_LOST0!c!"
+    move "%waddir%\LOST0!c!\LINEDEFS" "%lumpdir%\I_LOST0!c!"
+    move "%waddir%\LOST0!c!\LIGHTS" "%lumpdir%\L_LOST0!c!"
     set /a c=c+1
 )
+copy "%patchdir%\LOST00.wad" "%mapdir%"
 echo Creating PK3...
 echo.
 "%patchdir%\7za\7za.exe" a -tzip DOOM64.CE.Maps.LostLevels.pk3 ".\%zipdir%\*"
@@ -82,7 +76,7 @@ echo.
 goto :end
 
 :notfound
-echo [91mFailed to find DOOM64.WAD. Make sure the Steam version of DOOM 64 is installed or copy its DOOM64.WAD in the same folder as this batch file.[0m
+echo [91mFailed to find DOOM64.WAD. Make sure a compatible version of DOOM 64 is installed or copy its DOOM64.WAD to the same folder as this batch file.[0m
 echo.
 goto :end
 

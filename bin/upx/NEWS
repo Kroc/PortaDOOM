@@ -2,6 +2,9 @@
 User visible changes for UPX
 ==================================================================
 
+Changes in 4.2.4 (09 May 2024):
+  * bug fixes - see https://github.com/upx/upx/milestone/17
+
 Changes in 4.2.3 (27 Mar 2024):
   * bug fixes - see https://github.com/upx/upx/milestone/16
 

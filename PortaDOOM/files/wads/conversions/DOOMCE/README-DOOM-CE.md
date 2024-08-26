@@ -14,7 +14,7 @@ Special thanks to Immorpher and the members of the [DOOM 64 Discord](https://dis
 
 - PSX DOOM software lighting emulation (brightness fades with distance).
 - DOOM 64 with gradient and additive lighting. Can also be enabled in PSX DOOM too to give it a different look.
-- Addons to restore the PSX DOOM aspect ratio and to use the Nintendo 64's 3-Point filter.
+- Options to restore the PSX DOOM aspect ratio or to use the Nintendo 64's 3-Point filter.
 - The mod is powered by ZScript to make it more accurate to the original.
 - PSX DOOM TC Lost Levels can be integrated into the regular episodes to provide the full PC level set.
 - Bonus episodes and maps for DOOM 64 from the Absolution TC era.
@@ -54,9 +54,9 @@ Special thanks to Immorpher and the members of the [DOOM 64 Discord](https://dis
 
 ### DOOM 64 CE
 
-- **The Absolution/DOOM 64:** The original campaign. The maps included here are based on conversions made by Nevander for Doom 64: Retribution.
+- **The Absolution/DOOM 64:** The original campaign.
 - **The Lost Levels:** These maps are exclusive to Doom 64's 2020 remaster by Nightdive. They are only available if the included installer finds a valid installation of the 2020 release.
-- **The Doomsday Levels:** Maps that were exclusive to Kaiser's 2003's Absolution TC and its Outcast Levels expansion, merged into a single episode.
+- **The Doomsday Levels:** Maps that were exclusive to Kaiser's 2003's Absolution TC and its Outcast Levels expansion, merged into a single episode. The maps included here are based on conversions made by Nevander for Doom 64: Retribution.
 - **Redemption Denied:** A 2005 mapset by Steven Searle and AgentSpork for the Absolution TC. The maps included here are based on conversions made by Nevander for Doom 64: Retribution.
 - **The Reckoning:** A 2008 mapset by Steven Searle for the Absolution TC. These maps included here are based on conversions made by thexgiddoomerx for Doom 64 EX.
 - **Bonus maps:** Waste Processing and Mining Front by Maverick and Temple Ruins and Temple Grounds by Henri Leto, standalone maps made for the Absolution TC, are included. They are based on conversion made by thexgiddoomerx for Doom 64 EX.
@@ -92,13 +92,6 @@ There's two download flavors: Lite and Full.
 - **GFX.Parallax:** Adds a 3D-like relief effect to liquids.
 - **GFX.PBR:** Changes how textures react to lighting. Gives a glossy or metallic effect to textures.
 - **SFX.HQ:** Upscaled, higher quality sounds and adds some additional sounds to some monsters.
-
-### Optional addons
-
-Some addons are not loaded automatically but provide extra features. To load them, drag and drop the pk3 files into the exe or use the [command line](https://zdoom.org/wiki/Command_line_parameters). They are compatible with both PSX DOOM and DOOM 64:
-
-- **AspectRatio**: Applies the horizontally stretched aspect ratio of PSX DOOM.
-- **3PointFilter**: Applies the Nintendo 64's 3-Point filter to textures.
 
 ## Disclaimer
 
@@ -154,13 +147,17 @@ No. I only bundled it for convenience, its source code has not been modified.
 
 A lot of the internals are different and work much closer to the original games. Instead of being an approximation based on what the author felt right, a lot has been adapted from reverse engineered source code into ZScript.
 
-Save for a few exceptions, the maps are the same as in Retribution and the PSX TC, but have been modified to better match the originals, for example correcting sector colors and light specials. Things such as editor numbers and unique textures have been carried over, so custom maps designed for them should also be compatible. The reason why Retribution maps were used instead of making new conversions from scratch is that the they contain small quality of life improvements that are almost unanimously preferred.
+Maps that come from Retribution and the PSX TC have been modified to better match the originals, for example correcting sector colors and light specials. Things such as editor numbers and unique textures have been carried over, so custom maps designed for them should also be compatible. The Retribution version of the Doomsday Levels and Redemption Denied were used instead of making new conversions from scratch because they contain small quality of life improvements that are almost unanimously preferred.
 
 ### How can I make the game look more like the original versions?
 
-Go to the `Features` menu, and change the preset to `Faithful`. Play the Lite version of the game (or remove all addon pk3s) so that upscales, extra music and other optional stuff doesn't get loaded. Manually add AspectRatio.pk3 to the load order if you are playing PSX DOOM or 3PointFilter.pk3 if you are playing DOOM 64.
+Go to the `Features` menu, and change the preset to `Faithful`. Play the Lite version of the game (or remove all addon pk3s) so that upscales, extra music and other optional stuff doesn't get loaded.
 
 If you want to take it even further, enable the Low Resolution Shader in the Features menu, then enable GZDoom's Full Options Menu, go to Set Video Mode, disable Rendering Interpolation, change Force Aspect Ratio to 4:3 and set Forced Ratio Style to Letterbox.
+
+### Which rendering API should I use?
+
+Ideally only Vulkan or OpenGL should be used. OpenGL ES is only partially supported because it disables shader based effects which this mod relies heavily upon, even on its most faithful settings. It should only be used as a compromise if your hardware has problems running on the other backends.
 
 ### There's too many settings in the Features menu, what does each one mean?
 
@@ -208,10 +205,6 @@ In the `Features` menu, go to `Audio Features` and change the `Music Type`.
 
 It's the indicator that shows from which direction you took damage. You can disable it in `Features` > `Interface Features` > `Damage Direction Indicator`.
 
-### The mod runs too slow, or doesn't run at all. Is there anything I can do?
-
-If it's too much for your computer, try running with the Faithful preset without any addons loaded. You can also try GZDoom's GLES renderer, but some visual effects will not work as intended.
-
 ### Can I play this with Voxel Doom?
 
 [Voxel Doom II](https://www.moddb.com/mods/voxel-doom-ii) is compatible with PSX DOOM, but you must make a small edit to its file. You must open cheello_voxels_v2_1.pk3 (make a backup copy first), and rename the directory *filter/doom.id* to *filter/doom.ce*. Then you can load it on top of CE, but you must disable Smooth Monsters for it to work properly. A caveat is that monsters will revert back to their Doom II timings and behavior instead of how they are in Psx Doom.
@@ -226,7 +219,7 @@ Yes, as long as their upstream GZDoom version is compatible with this mod (4.10+
 
 ### Is this multiplayer compatible?
 
-Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). All maps support coop, but you may encounter softlocks in DOOM 64 because those maps were not designed to be multiplayer compatible.
+Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). PSX maps are coop-friendly. DOOM 64 does not support coop, but if you download the Retribution maps addon there is partial support (there may be softlocks since they haven't been thoroughly tested).
 
 ### What third-party tools were used to create the assets?
 
@@ -255,6 +248,10 @@ Since not everything is possible in GZDoom, the biggest challenges were:
 
 You need to beat the secret level Hectic to unlock the Bonus Maps episode.
 
+### What do the red and green artifacts DOOM 64's Outcast levels do?
+
+The Red Artifact consumes player health to slow down all enemies for a short period of time. The Green Artifact is used to spawn platforms that slowly levitate upwards.
+
 ### What is the meaning of CE in the title?
 
 There is no specific meaning, but I've seen it called Custom Edition, Complete Edition, Console Edition, Compilation Edition, Console Enhanced, etc.
@@ -272,11 +269,45 @@ There is no specific meaning, but I've seen it called Custom Edition, Complete E
 
 ## Changelog
 
+## 3.9.2
+
+- 64: Fixed monsters not respawning if respawning is force-enabled through gzdoom's options.
+- 64: [In the Void] Fixed the wrong type of demon key spawning in the map.
+- PSX: [Unto the Cruel] Fixed the level only appearing after Fear when the Lost Levels addon is loaded.
+- PSX: Implemented PSX exclusive light specials to allow for future map conversions. The current campaign does not use them.
+- Both: Fixed monsters not respawning if the 'always respawn' gameplay option is enabled.
+- Both: Updated the bundled GZDoom to 4.12.2. The minimum required version is still 4.10.
+
+## 3.9.1
+
+- PSX: [Last Gateway to Sin] Fixed the level not loading.
+- 64: Fixed vertical doors moving unintended sectors in rare cases.
+- 64: Fixed some middle textures not appearing on older converted maps.
+- Both: Fixed shaders not applying to textures when the PBR addon is loaded.
+
+### 3.9.0
+
+- PSX: [The Castle] Added missing multiplayer flags to teleport destinations.
+- PSX: [Gotcha!] Added missing multiplayer flags to all things in the level.
+- PSX: [Tech Gone Bad] Added missing multiplayer flags to all things in the level.
+- PSX: Fixed brightmap for the MARBFACE texture.
+- PSX: Added an option to toggle scene pixel ratio correction.
+- PSX: Fixed scaling of the PSX hud weapon style.
+- PSX: Fixed weapon psprites appearing brighter than they should.
+- PSX: Fixed the wrong key icon blinking in rare cases.
+- 64: Replaced Retribution's MAP01-MAP32 with new map conversions that are more accurate to the originals.
+- 64: Fixed the Unmaker not firing automatically after repeatedly holding the fire button too fast.
+- 64: Moved the Forbidden Deeper level slot after Darkened.
+- Both: Added an option to toggle the Nintendo 64's three point filter.
+- Both: Removed the AspectRatio and 3PointFilter addons since their functionality is now included in the main mod.
+- Both: Fixed a crash that could happen after friendly monsters kill another monster.
+- Both: Freelook is now disabled when the Faithful preset is selected.
+
 ### 3.8.2
 
+- PSX: Lowered the intensity of some decoration brightmaps and tweaked some dynamic lights to blend better with the psx gamma correction.
 - PSX: [Dis] Fixed the Spiderdemon not spawning in multiplayer mode.
 - PSX: [Fear] Removed a multiplayer-only pillar decoration that caused a softlock in cooperative mode.
-- PSX: Lowered the intensity of some decoration brightmaps and tweaked some dynamic lights to blend better with the psx gamma correction.
 - 64: Fixed spawned keys not staying on the level after being picked in cooperative mode.
 - 64: Fixed weapon special action triggers not activating if the player already owns the weapon in cooperative mode.
 - 64: [Alpha Quadrant] Fixed a possible softlock after being locked inside an arena in cooperative mode.
