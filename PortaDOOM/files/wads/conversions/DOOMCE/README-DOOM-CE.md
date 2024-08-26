@@ -145,9 +145,9 @@ No. I only bundled it for convenience, its source code has not been modified.
 
 ### What is the difference between this and Retribution or the PSX TC?
 
-A lot of the internals are different and work much closer to the original games. Instead of being an approximation based on what the author felt right, a lot has been adapted from reverse engineered source code into ZScript.
+A lot of the internals are different and work much closer to the original games. Instead of being an approximation based on what the author felt right, a lot has been adapted from reverse engineered source code into ZScript. As of version 3.10, the main campaigns are new conversions made from scratch that are more faithful to the originals.
 
-Maps that come from Retribution and the PSX TC have been modified to better match the originals, for example correcting sector colors and light specials. Things such as editor numbers and unique textures have been carried over, so custom maps designed for them should also be compatible. The Retribution version of the Doomsday Levels and Redemption Denied were used instead of making new conversions from scratch because they contain small quality of life improvements that are almost unanimously preferred.
+Maps that come from Retribution (Outcast Levels, Redemption Denied) and the PSX TC (Lost Levels) have been modified to better match the originals, for example correcting sector colors and light specials. Things such as editor numbers and unique textures have been carried over, so custom maps designed for them should be compatible.
 
 ### How can I make the game look more like the original versions?
 
@@ -158,6 +158,10 @@ If you want to take it even further, enable the Low Resolution Shader in the Fea
 ### Which rendering API should I use?
 
 Ideally only Vulkan or OpenGL should be used. OpenGL ES is only partially supported because it disables shader based effects which this mod relies heavily upon, even on its most faithful settings. It should only be used as a compromise if your hardware has problems running on the other backends.
+
+### What GZDoom compatibility settings should I use?
+
+The defaults are compatflags = 0 and compatflags2 = 256. Resetting them to Default is also fine. Be careful with changing them to Strict, as they will cause some map triggers to not work.
 
 ### There's too many settings in the Features menu, what does each one mean?
 
@@ -219,7 +223,7 @@ Yes, as long as their upstream GZDoom version is compatible with this mod (4.10+
 
 ### Is this multiplayer compatible?
 
-Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). PSX maps are coop-friendly. DOOM 64 does not support coop, but if you download the Retribution maps addon there is partial support (there may be softlocks since they haven't been thoroughly tested).
+Yes, but using GZDoom's peer-to-peer support ([Wiki](https://zdoom.org/wiki/Command_line_parameters#Multiplayer_options)). PSX maps are coop-friendly. DOOM 64 levels were not designed with multiplayer in mind, so there may be softlocks. The Retribution maps addon (separate download) have some quality of life modifications that improve coop support, but may still contain issues.
 
 ### What third-party tools were used to create the assets?
 
@@ -248,7 +252,7 @@ Since not everything is possible in GZDoom, the biggest challenges were:
 
 You need to beat the secret level Hectic to unlock the Bonus Maps episode.
 
-### What do the red and green artifacts DOOM 64's Outcast levels do?
+### What do the red and green artifacts in DOOM 64's Outcast levels do?
 
 The Red Artifact consumes player health to slow down all enemies for a short period of time. The Green Artifact is used to spawn platforms that slowly levitate upwards.
 
@@ -269,12 +273,67 @@ There is no specific meaning, but I've seen it called Custom Edition, Complete E
 
 ## Changelog
 
+## 3.10.1
+
+- Both: Made brightmaps be filtered if the N64 Texture Filter setting is enabled.
+- PSX: Fixed some midtextures being rendered unintentionally.
+- PSX: Fixed multiplayer-only things not spawning.
+- PSX: [Deimos Anomaly] Added missing textures to the back side of a wall that lowers around the final teleport.
+- PSX: [Deimos Lab] Fixed a line having a wrong action in the pillar room with two crushed bodies.
+- PSX: [Deimos Lab] Fixed a missing texture on a platform that raises up when you step off of it.
+- PSX: [Command Center] Fixed a trap pillar containing a Baron not lowering.
+- PSX: [House of Pain] Removed an unintended door line action that caused a ceiling to collapse permanently.
+- PSX: [Unholy Cathedral] Fixed a secret door not opening because it required the player to walk across its line.
+- PSX: [Unholy Cathedral] Fixed a missing wall texture when the ceiling closes in the trap door with the BFG.
+- PSX: [Dead Simple] Hid a deathmatch only door at the northwest of the map.
+- PSX: [Tricks and Traps] Flagged the southeast corner wall in the southeast room to display it as a solid wall on the automap.
+- PSX: [The Factory] Removed a tag from a teleporter sector in the south building which was causing the ceiling to raise.
+- PSX: [The Factory] Removed unneeded actions from walls next to the switch in the slime floor room.
+- PSX: [Suburbs] Changed the floor texture in the southwest monster closet since it is visible through the opening in the wall.
+- PSX: [The Citadel] Fixed an elevator not working properly in the north east corner of the central courtyard.
+- PSX: [The Citadel] Fixed the southwest teleporter in the teleporter room not working on easier skills.
+- PSX: [The Citadel] Fixed a medikit floating in the air in the central courtyard when the switch beside the rocket launcher is pressed.
+- PSX: [The Citadel] Fixed a cacodemon stuck in the ceiling in the northwest building by making the room the same height as the PC version.
+- PSX: [The Catacombs] Fixed a missing texture at the back side of a bridge leading to the rocket launcher.
+- PSX: [Monster Condo] Fixed a switch in the northeast room not showing as usable on the automap.
+- PSX: [Monster Condo] Fixed a line incorrectly flagged as impassable in the northeast room.
+- PSX: [Nessus] Fixed the BFG secret being inaccessible by transferring it to a neighboring sector.
+- PSX: [Subspace] Removed unintended actions from lines neighboring a switch which lowers the blue key platform.
+- PSX: [Wormhole] Fixed the brightness for the central weapon pedestals in the starting room and alternate version.
+- PSX: [Nukage Processing] Fixed the nukage tank in the east area not damaging the player.
+- PSX: [Deepest Reaches] Moved stuck imps in a platform in the westmost room.
+- PSX: [Lunar Mining Project] Fixed a missing texture on a small lip in the mines.
+- PSX: [Lunar Mining Project] Moved a non-working teleport destination thing to its destination sector.
+- PSX: [Ballistyx] Fixed some monsters not teleporting in at the start by moving the teleport destinations a little.
+- PSX: [Ballistyx] Fixed a door which is supposed to open when going up the first set of steps at the start of the map.
+- PSX: [Ballistyx] Removed unintended line actions from door tracks from a monster closet in the south cave (near the blood pool and blue key).
+- PSX: [Heck] Removed some multiplayer-only bloody hook decorations.
+- PSX: [Heck] Restored false walls in the marble maze.
+- PSX: [Baron's Lair] Fixed some ceiling and flat texture alignments.
+- PSX: [Baron's Lair] Increased the light level of deathmatch starts and hid some deathmatch only lines.
+- PSX: [The Death Domain] Fixed being able to close the blue door permanently from the opposite side of it.
+- PSX: [The Death Domain] Fixed a secret area containing Megaarmor armor being completely inaccessible.
+- PSX: [The Death Domain] Fixed the railing next to the stairs in the northeast room (with invisibility power up) being walk-through.
+- PSX: [The Death Domain] Made the barrier to the blue key lower along with the platform above to make it obtainable without strafe jumping.
+- 64: Fixed dynamic lights for exploding barrels.
+
+## 3.10.0
+
+- PSX: Replaced the PSX TC's MAP01-MAP59 (Doom) and MAP01-MAP30 (Final Doom) with new map conversions that are more accurate to the originals.
+- PSX: Fixed menus being colored black if using a language different than English.
+- 64: Fixed Cacodemon fireballs being transparent despite having transparency disabled.
+- 64: Made regular reverb environments more noticeable.
+- Both: Fixed cooperative games crashing when entering a level that resets player inventories.
+- Both: Improved compatibility with mods that replace actors via the RandomSpawner class or using the replaces keyword. Unique flags will now transfer to them correctly, except to things spawned by dummy actors (usually implemented by mods to randomize spawns).
+- Both: Improved compatibility with mods that implement custom difficulties.
+- Both: Fixed the mod not working with latest gzdoom builds (4.13-dev).
+
 ## 3.9.2
 
-- 64: Fixed monsters not respawning if respawning is force-enabled through gzdoom's options.
-- 64: [In the Void] Fixed the wrong type of demon key spawning in the map.
 - PSX: [Unto the Cruel] Fixed the level only appearing after Fear when the Lost Levels addon is loaded.
 - PSX: Implemented PSX exclusive light specials to allow for future map conversions. The current campaign does not use them.
+- 64: Fixed monsters not respawning if respawning is force-enabled through gzdoom's options.
+- 64: [In the Void] Fixed the wrong type of demon key spawning in the map.
 - Both: Fixed monsters not respawning if the 'always respawn' gameplay option is enabled.
 - Both: Updated the bundled GZDoom to 4.12.2. The minimum required version is still 4.10.
 
