@@ -35,18 +35,18 @@ Would you believe 2017 was a breakout year for `DOOM` speedrunning? Well, it too
 !:------------------------------------------------------------------------------
 !_PortaDOOM_ includes these speedruns as replay files that can be watched in-engine -- use keys [End] or [PgDn] to skip a level, [,] to slow down playback, [.] to speed up, and [/] to reset to normal speed
 
-$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "cacowards2017\30nm2154\30nm2154.lmp"
-$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "cacowards2017\30uv1845\30uv1845.lmp"
+$KEY:2=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "cacowards2017\30nm2154\30nm2154.lmp"
+$KEY:3=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "cacowards2017\30uv1845\30uv1845.lmp"
 We've seen another massive time cut to the `DOOM 2` speedrun, which currently clocks at <ZeroMaster>'s *[2] 21:54* for Nightmare and <eLim>'s *[3] 18:45* for UV. The latter run has underwent a mindblowing change, and after being a staple for decades, `map31` has been dropped out of the optimal route! The strat is still too risky for NM though.
 
-$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /PLUTONIA /DEMO "cacowards2017\30pl1958\30pl1958.lmp" /CMPLVL 4
-$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT /DEMO "cacowards2017\30ev3858\30ev3858.lmp" /CMPLVL 4
-$KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO "cacowards2017\30av9321\30av9321.lmp" /CMPLVL 2
+$KEY:4=SHELL:launcher.exe /AUTO /USE dsda-doom /PLUTONIA /DEMO "cacowards2017\30pl1958\30pl1958.lmp" /CMPLVL 4
+$KEY:5=SHELL:launcher.exe /AUTO /USE dsda-doom /TNT /DEMO "cacowards2017\30ev3858\30ev3858.lmp" /CMPLVL 4
+$KEY:6=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO "cacowards2017\30av9321\30av9321.lmp" /CMPLVL 2
 $KEY:7=URL:https://www.youtube.com/watch?v=LExJMOh3TNs
 Other notable d2all speedruns have been firmly a <ZeroMaster> domain. He has brought down the `Plutonia` UV speed [4: under 20 minutes] and the `Evilution` UV speed [5: under 39]. If you're into getting old in front of the computer screen, <ZM> has also completed his secret dream and trailblazed an [6: Alien Vendetta UV movie] in *1:33:21*. In other news, the lands of almost-`DOOM` have caught up with the void glide craze and the `Hexen` speedrun has been destroyed in [7: under 10 minutes] by <veovis>.
 
-$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "cacowards2017\p2m81242\p2m81242.lmp" /CMPLVL 3
-$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "cacowards2017\pa02-2057\pa02-2057.lmp" /CMPLVL 2
+$KEY:8=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "cacowards2017\p2m81242\p2m81242.lmp" /CMPLVL 3
+$KEY:9=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "cacowards2017\pa02-2057\pa02-2057.lmp" /CMPLVL 2
 $KEY:I=URL:https://www.doomworld.com/forum/topic/93242/?do=findComment&comment=1725824
 And that's not all! 2017 has seen even more preposterous groundbreakers. In March <4shockblast> defied lame pro-tips and completed the much-theoretized [8: pacifist run of E2M8]. After mere 12 minutes of passive-aggressively hugging the Cyberdemon in a "frozen" state, a helpful lost soul completed all of the damaging. Then in September the impossible happened and the most agonizing challenge left has been conquered. <ZeroMaster> recorded the fabled pa02, the [9: pacifist run of Underhalls]. Needless to say, [I: I had to eat crow]. Hats off to both of you!
 

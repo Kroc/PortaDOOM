@@ -77,10 +77,13 @@ skins/
 # DOOM retro's folders
 autoload/
 console/
+# DSDA's stats
+dsda_doom_data/
 
 # exclude user configs
 default.cfg
 chocolate-*.cfg
+dsda-doom.cfg
 glboom-plus.cfg
 gzdoom*.ini
 prboom-plus.cfg
@@ -91,7 +94,7 @@ config.cfg
 launcher.cfg
 
 # other
-*/tranmap.dat
+*/tranmap*
 */stdout.txt
 */stderr.txt
 */CRASHLOG.TXT

@@ -23,23 +23,23 @@ This used to be the speedrunning section, but it turned a bit one key. <Zero> ke
 !:------------------------------------------------------------------------------
 !_PortaDOOM_ includes these speedruns as replay files that can be watched in-engine -- use keys [End] or [PgDn] to skip a level, [,] to slow down playback, [.] to speed up, and [/] to reset to normal speed
 
-$KEY:1=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\e1nm0639\e1nm0639.lmp" /CMPLVL 3
+$KEY:1=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\e1nm0639\e1nm0639.lmp" /CMPLVL 3
 - [1] `Doom E1` NM in *6:39*/*7:52*\\(without/with the boss map... historic reasons)
-$KEY:2=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\ep2-403\ep2-0323.lmp" /CMPLVL 3
+$KEY:2=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\ep2-403\ep2-0323.lmp" /CMPLVL 3
 - [2] `Doom E2` UV in *3:23*/*4:03*
-$KEY:3=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\e2nm0452\e2nm0452.lmp" /CMPLVL 3
+$KEY:3=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\e2nm0452\e2nm0452.lmp" /CMPLVL 3
 - [3] `Doom E2` NM in *3:45*/*5:25*
-$KEY:4=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\ep3n421\e3nm0408.lmp" /CMPLVL 3
+$KEY:4=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\ep3n421\e3nm0408.lmp" /CMPLVL 3
 - [4] `Doom E3` NM in *4:08*/*4:21*
-$KEY:5=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\ep4-413\ep4-311.lmp" /CMPLVL 3
+$KEY:5=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\ep4-413\ep4-311.lmp" /CMPLVL 3
 - [5] `Doom E4` UV in *3:11*/*4:13*
-$KEY:6=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM /DEMO "demos\cacowards2016\ep4n654\e4nm0542.lmp" /CMPLVL 3
+$KEY:6=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM /DEMO "demos\cacowards2016\ep4n654\e4nm0542.lmp" /CMPLVL 3
 - [6] `Doom E4` NM in *5:42*/*6:54*
-$KEY:7=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvalln2256\30nm2256.lmp"
+$KEY:7=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "demos\cacowards2016\lvalln2256\30nm2256.lmp"
 - utterly insane [7] `Doom 2` NM in *22:56*
-$KEY:8=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvalls4752\30ns4752.lmp"
+$KEY:8=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "demos\cacowards2016\lvalls4752\30ns4752.lmp"
 - [8] `Doom 2` NM100S in *47:52*
-$KEY:9=SHELL:launcher.exe /AUTO /USE prboom-plus /TNT /DEMO "demos\cacowards2016\evalln8336\30tn8336.lmp" /CMPLVL 4
+$KEY:9=SHELL:launcher.exe /AUTO /USE dsda-doom /TNT /DEMO "demos\cacowards2016\evalln8336\30tn8336.lmp" /CMPLVL 4
 - [9] first time ever `TNT` NM in *1:23:36*
 $KEY:0=URL:https://www.youtube.com/watch?v=NqYH27_4ZPk
 - [0: Hexen on Berserker] in *26:45*
@@ -48,11 +48,11 @@ $KEY:A=URL:https://www.youtube.com/watch?v=P6J352J_RG8
 I won't even bother to comment in depth. To set the hurdle even higher, he was also the first player to ever beat `Doom 2016` on Ultra Nightmare!
 [A: Multitasking!]
 
-$KEY:B=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\lvall-1951\30uv1951.lmp" /CMPLVL 2 /SKILL 4 /WARP 21
-$KEY:C=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /DEMO "demos\cacowards2016\30uv1936\30uv1936.lmp" /CMPLVL 2
+$KEY:B=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "demos\cacowards2016\lvall-1951\30uv1951.lmp" /CMPLVL 2 /SKILL 4 /WARP 21
+$KEY:C=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /DEMO "demos\cacowards2016\30uv1936\30uv1936.lmp" /CMPLVL 2
 The beacon of hope in all this booooring one-man rampage came in October when <eLim> beat perhaps the most prestigious record and improved `Doom 2` UV to *19:51*, including a [B: brand new shortcut on map21]. But <ZeroMaster> wouldn't allow such excitement and [C: posted a rebuttal] in *19:36* yesterday, making me rewrite this article, goddamit. I'll be wise to your tricks next year, <ZM>!
 
-$KEY:D=SHELL:launcher.exe /AUTO /USE prboom-plus /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO "cacowards2016\av20-1357\av201357.lmp" /CMPLVL 2
+$KEY:D=SHELL:launcher.exe /AUTO /USE dsda-doom /DOOM2 /PWAD "megawads\av\AV.WAD" /DEH "AV.DEH" /DEMO "cacowards2016\av20-1357\av201357.lmp" /CMPLVL 2
 Now let's all watch a keyboard-only player <SAV88> utterly destroy all of the mouse noobs on `Alien Vendetta` [D: map20 max].
 
 

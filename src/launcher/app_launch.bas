@@ -677,6 +677,7 @@ IF Games_Selected.exec <> "" THEN
 END IF
 
 'any engine-specific command-line params to be added?
+'-----------------------------------------------------------------------------
 IF Engines_Selected.cmd <> "" THEN
     LET CMD$ = CMD$ + " " + Engines_Selected.cmd
     IF CMD_DEBUG` THEN
@@ -686,6 +687,7 @@ IF Engines_Selected.cmd <> "" THEN
 END IF
 
 'any game-specific command-line params to be added?
+'-----------------------------------------------------------------------------
 IF Games_Selected.cmd <> "" THEN
     LET CMD$ = CMD$ + " " + Games_Selected.cmd
     IF CMD_DEBUG` THEN
@@ -699,8 +701,9 @@ END IF
 '-----------------------------------------------------------------------------
 'specify the save-game directory as the 'current' directory
 'TODO: a more specific way of detecting this?
-'TODO: DOOM Retro will support both in the next release
-IF LEFT$(Engines_Selected.engine, 11) = "prboom-plus" THEN
+IF LEFT$(Engines_Selected.engine, 11) = "prboom-plus" _
+OR LEFT$(Engines_Selected.engine, 9)  = "dsda-doom" _
+THEN
     LET CMD$ = CMD$ + " -save " + CHR$(34) + "." + CHR$(34)
     COLOR YELLOW: PRINT "        -save : ";: COLOR UI_FORECOLOR
     PRINT RTRUNCATE$( _

@@ -1,6 +1,6 @@
 files\demos\cacowards2016\
-# (all demos require prboom-plus)
-@files\ports\use=prboom-plus.lst
+# (all demos require dsda-doom)
+@files\ports\use=dsda-doom.lst
 # additional PWADs:
 @files\wads\megawads\av\include.lst
 files\wads\doom.ini

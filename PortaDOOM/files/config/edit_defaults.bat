@@ -59,6 +59,7 @@ ECHO     [C] Chocolate Doom             DOOM.WAD
 ECHO     [P] Crispy Doom                DOOM.WAD
 ECHO     [R] DOOM Retro                 DOOM.WAD
 ECHO:
+ECHO     [D] DSDA-Doom                  DOOM.WAD
 ECHO     [H] PrBoom+ Hardware           DOOM.WAD
 ECHO     [S] PrBoom+ Software           DOOM.WAD
 ECHO:
@@ -78,6 +79,7 @@ IF "%$%" == "" GOTO:EOF
 IF /I "%$%" == "C" CALL :launch_engine    "choco-doom-setup"     "DOOM.WAD"
 IF /I "%$%" == "P" CALL :launch_engine    "crispy-doom-setup"    "DOOM.WAD"
 IF /I "%$%" == "R" CALL :launch_engine    "doom-retro"           "DOOM.WAD"
+IF /I "%$%" == "D" CALL :launch_engine    "dsda-doom"            "DOOM.WAD"
 IF /I "%$%" == "H" CALL :launch_engine    "prboom-plus"          "DOOM.WAD"
 IF /I "%$%" == "S" CALL :launch_engine_sw "prboom-plus"          "DOOM.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "DOOM.WAD"
@@ -99,6 +101,8 @@ ECHO:
 ECHO     [C] Chocolate Heretic          HERETIC.WAD
 ECHO     [P] Crispy Heretic             HERETIC.WAD
 ECHO:
+ECHO     [D] DSDA-Doom                  DOOM.WAD
+ECHO:
 ECHO     [2] Zandronum v2               HERETIC.WAD
 ECHO     [3] Zandronum v3               HERETIC.WAD
 ECHO:
@@ -114,6 +118,7 @@ IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-heretic-setup"  "HERETIC.WAD"
 IF /I "%$%" == "P" CALL :launch_engine    "crispy-heretic-setup" "HERETIC.WAD"
+IF /I "%$%" == "D" CALL :launch_engine    "dsda-doom"            "HERETIC.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HERETIC.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HERETIC.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HERETIC.WAD"
@@ -133,6 +138,8 @@ ECHO:
 ECHO     [C] Chocolate Hexen            HEXEN.WAD
 ECHO     [P] Crispy Hexen               HEXEN.WAD
 ECHO:
+ECHO     [D] DSDA-Doom                  DOOM.WAD
+ECHO:
 ECHO     [2] Zandronum v2               HEXEN.WAD
 ECHO     [3] Zandronum v3               HEXEN.WAD
 ECHO:
@@ -148,6 +155,7 @@ IF "%$%" == "" GOTO:EOF
 
 IF /I "%$%" == "C" CALL :launch_engine    "choco-hexen-setup"    "HEXEN.WAD"
 IF /I "%$%" == "P" CALL :launch_engine    "crispy-hexen-setup"   "HEXEN.WAD"
+IF /I "%$%" == "D" CALL :launch_engine    "dsda-doom"            "HEXEN.WAD"
 IF /I "%$%" == "2" CALL :launch_engine    "zandronum-2"          "HEXEN.WAD"
 IF /I "%$%" == "3" CALL :launch_engine    "zandronum-3"          "HEXEN.WAD"
 IF /I "%$%" == "G" CALL :menu_gzdoom                             "HEXEN.WAD"

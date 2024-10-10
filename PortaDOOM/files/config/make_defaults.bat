@@ -108,12 +108,23 @@ REM # DOOM Retro
 REM #===========================================================================
 :doom-retro
 REM # delete the file in order to re-build it
-IF EXIST "default.doom-retro.cfg" GOTO :glboom-plus
+IF EXIST "default.doom-retro.cfg" GOTO :dsda-doom
 
 ECHO * DOOM Retro                 DOOM.WAD
 CALL :make_doomretro "doom-retro" "DOOM.WAD"
 ECHO ----------------------------------------
 
+
+REM # DSDA-Doom
+REM #===========================================================================
+:dsda-doom
+REM # delete the file in order to re-build it
+IF EXIST "default.dsda-doom.cfg" GOTO :glboom-plus
+
+REM # even though DSDA-Doom supports Heretic and Hexen,
+REM # they don't add anything unique to the config file
+ECHO * DSDA-Doom                    DOOM.WAD
+CALL :make_dsda "dsda-doom" "DOOM.WAD"
 
 REM # PrBoom+ (hardware / software)
 REM #===========================================================================
@@ -349,6 +360,26 @@ IF [%~2] == [STRIFE1.WAD] %CONFIG_DEFAULT% SET "nickname" """PortaDOOM"""
 GOTO:EOF
 
 
+:make_dsda
+REM #===========================================================================
+REM #    %1 = engine-name
+REM #    %2 = IWAD
+REM #---------------------------------------------------------------------------
+REM # launch the engine to generate new default config files
+START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /DEFAULT /IWAD "%~2"
+
+CALL :make_boom_inject "dsda-doom"
+
+SET DEFAULT_CFG="default.dsda-doom.cfg"
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
+
+REM # DSDA-specific settings
+%CONFIG_DEFAULT% SET "dsda_player_name" """PortaDOOM"""
+%CONFIG_DEFAULT% SET "allow_freelook" "1"
+
+GOTO:EOF
+
+
 :make_boom_hw
 REM #===========================================================================
 REM #    %1 = engine-name
@@ -368,7 +399,7 @@ REM # turn off texture filtering
 %CONFIG_DEFAULT% SET "gl_patch_filter" "0"
 %CONFIG_DEFAULT% SET "gl_texture_filter_anisotropic" "4"
 
-GOTO:EOF
+GOTO :make_boom
 
 :make_boom_sw
 REM #===========================================================================
@@ -379,17 +410,10 @@ REM # launch the engine to generate new default config files
 START "" /WAIT "%LAUNCHER%" /WAIT /AUTO /USE "%~1" /SW /DEFAULT /IWAD "%~2"
 CALL :make_boom_inject "prboom-plus"
 
-GOTO:EOF
-
-:make_boom_inject
+:make_boom
 REM #---------------------------------------------------------------------------
-SET DEFAULT_CFG="default.%~1.cfg"
-SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
+REM # shared between boom_hw and boom_sw
 
-REM # common settings
-%CONFIG_DEFAULT% SET "hudadd_crosshair" "1"
-%CONFIG_DEFAULT% SET "hudadd_secretarea" "1"
-%CONFIG_DEFAULT% SET "mouse_doubleclick_as_use" "0"
 %CONFIG_DEFAULT% SET "movement_mouselook" "1"
 %CONFIG_DEFAULT% SET "key_use" "0x65"
 %CONFIG_DEFAULT% SET "key_screenshot" "0xd8"
@@ -403,6 +427,18 @@ REM # set demo recording keys
 %CONFIG_DEFAULT% SET "key_reverse" "0x12a"
 %CONFIG_DEFAULT% SET "key_flyup" "0x12b"
 %CONFIG_DEFAULT% SET "key_flydown" "0x12d"
+
+GOTO:EOF
+
+:make_boom_inject
+REM #---------------------------------------------------------------------------
+SET DEFAULT_CFG="default.%~1.cfg"
+SET CONFIG_DEFAULT=%BIN_CFGINI% %DEFAULT_CFG%
+
+REM # common settings
+%CONFIG_DEFAULT% SET "hudadd_crosshair" "1"
+%CONFIG_DEFAULT% SET "hudadd_secretarea" "1"
+%CONFIG_DEFAULT% SET "mouse_doubleclick_as_use" "0"
 
 GOTO:EOF
 

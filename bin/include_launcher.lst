@@ -2,10 +2,18 @@
 wads\SHAREWARE\*.WAD
 wads\MASTER\*.TXT
 
-wads\*.ini
-
+# a change in 7-zip seems to take "wads\*.ini" to include all sub-folders
+# including "megawads", "community", "episodes" etc.
+wads\chex.ini
 wads\chex.deh
 wads\chexdeh.txt
+wads\doom.ini
+wads\doom2.ini
+wads\plutonia.ini
+wads\tnt.ini
+wads\heretic.ini
+wads\hexen.ini
+wads\strife1.ini
 
 tools\**
 

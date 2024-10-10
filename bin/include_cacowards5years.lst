@@ -3,7 +3,7 @@ files\wads\SHAREWARE\DOOM1.WAD
 
 @files\ports\use=choco-doom.lst
 @files\ports\use=gzdoom.lst
-@files\ports\use=prboom-plus.lst
+@files\ports\use=dsda-doom.lst
 
 pages\Home #??.dosmag
 pages\5 Years of Doom #??.dosmag

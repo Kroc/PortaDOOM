@@ -1,7 +1,8 @@
 # minimum number of no-limit engines to include
-# (ZDoom and Zandronum are purposefully excluded,
-#  these should only be used for specific compatibility)
+# - ZDoom and Zandronum are purposefully excluded,
+#   these should only be used for specific compatibility
+# - DSDA-Doom has superceded PrBoom+
 @files\ports\use=crispy-doom.lst
-@files\ports\use=prboom-plus.lst
+@files\ports\use=dsda-doom.lst
 @files\ports\use=doom-retro.lst
 @files\ports\use=gzdoom.lst

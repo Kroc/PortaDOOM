@@ -1,6 +1,6 @@
 files\demos\cacowards2019\
-# (all demos require prboom-plus)
-@files\ports\use=prboom-plus.lst
+# (all demos require dsda-doom)
+@files\ports\use=dsda-doom.lst
 # additional PWADs:
 @files\wads\people\Killer5\dmnsns\include.lst
 files\wads\doom.ini

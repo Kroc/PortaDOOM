@@ -21,6 +21,7 @@ ECHO    [R] DOOM Retro
 ECHO:
 ECHO    [X] DOOM 64 EX
 ECHO:
+ECHO    [D] DSDA-Doom
 ECHO    [P] PRBoom+ hardware            [Q] PRBoom+ software
 ECHO:
 ECHO    [M] Zandronum v2.x
@@ -48,6 +49,7 @@ IF /I "%CHOICE%" == "R" %LAUNCHER% /USE doom-retro           /IWAD DOOM2
 
 IF /I "%CHOICE%" == "X" %LAUNCHER% /USE doom64ex             /IWAD DOOM64
 
+IF /I "%CHOICE%" == "D" %LAUNCHER% /USE dsda-doom            /IWAD DOOM2
 IF /I "%CHOICE%" == "P" %LAUNCHER% /USE prboom-plus-hw       /IWAD DOOM2
 IF /I "%CHOICE%" == "Q" %LAUNCHER% /USE prboom-plus-sw       /IWAD DOOM2
 

@@ -1,2 +1,2 @@
 :: PortaDOOM, copyright (C) Kroc Camen 2016-2023, BSD 2-clause
-@PUSHD "%~dp0" & "..\..\..\launcher.exe" /AUTO /DOOM2 /PWAD "people\Killer5\dmnsns\dmnsns.wad" /USE prboom-plus /DEMO dmn03-1756.lmp /CMPLVL 9
+@PUSHD "%~dp0" & "..\..\..\launcher.exe" /AUTO /DOOM2 /PWAD "people\Killer5\dmnsns\dmnsns.wad" /USE dsda-doom /DEMO dmn03-1756.lmp /CMPLVL 9

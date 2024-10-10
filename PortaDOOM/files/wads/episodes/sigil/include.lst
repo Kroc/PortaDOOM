@@ -1,9 +1,4 @@
 pages\SIGIL.dosmag
 files\wads\episodes\sigil\
-# due to many ports not supporting an episode 5,
-# we have to manually select engine
-@files\ports\use=gzdoom.lst
-@files\ports\use=prboom-plus.lst
-@files\ports\use=doom-retro.lst
-@files\ports\use=crispy-doom.lst
+@files\ports\req=no-limit.lst
 files\wads\DOOM.ini

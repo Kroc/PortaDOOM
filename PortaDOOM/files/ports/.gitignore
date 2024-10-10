@@ -1,44 +1,47 @@
 # exclude any screenshots
-**screenshot*
-**doom*.bmp
-**/screenshots
+*screenshot*
+*doom*.bmp
+screenshots/
 
 # exclude any errant save files
-**.zds
-**.dsg
+*.zds
+*.dsg
 
 # exclude Zandronum's skins folder
-**/skins/
+skins/
 
 # exclude any possible DOOM64 ROMs/WADs
-**.N64
-**.V64
-**.Z64
-**/DOOM64.WAD
+*.N64
+*.V64
+*.Z64
+DOOM64.WAD
 # DOOM 64 Sound Font, as exported by wadgen.exe
-**/DOOMSND.SF2
+DOOMSND.SF2
 
 # exclude user configs
-**/default.cfg
-**/chocolate-*.cfg
-**/crispy-*.cfg
-**/doomretro.cfg
-**/glboom-plus.cfg
-**/gzdoom-*.ini
-**/prboom-plus.cfg
-**/zdoom-*.ini
-**/zandronum-*.ini
+default.cfg
+chocolate-*.cfg
+crispy-*.cfg
+doomretro.cfg
+dsda-doom.cfg
+glboom-plus.cfg
+gzdoom-*.ini
+prboom-plus.cfg
+zdoom-*.ini
+zandronum-*.ini
 # (DOOM 64 EX)
-**/config.cfg
-**/launcher.cfg
+config.cfg
+launcher.cfg
 
 # other
-**/tranmap.dat
-**/stdout.txt
-**/stderr.txt
-**/CRASHLOG.TXT
-**/*.sf2
-**/delete.me
-**/*.wopl
-**/*.wopn
-**/fm_banks
+tranmap*
+stdout.txt
+stderr.txt
+CRASHLOG.TXT
+*.sf2
+delete.me
+*.wopl
+*.wopn
+fm_banks/
+dsda_doom_data/
+autoload/
